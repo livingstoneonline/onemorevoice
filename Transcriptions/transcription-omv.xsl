@@ -80,7 +80,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="transcription style" style="background:#{$body-color};">
+		<div class="transcription style-omv" style="background:#{$body-color};">
 
 			<div class="TEI" style="background:#{$body-color};">
 				<div class="item-details">

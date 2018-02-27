@@ -1,1 +1,12 @@
 1) Not necessary to encode extra space at end of pages.
+2) Don't use rend="right" and rend="center" to place things on page. Instead use a combo of 
+<space extent="1" unit="words"/>
+<space extent="1" unit="chars"/>
+Getting it roughly to the proper spot via "words" then fine tune with "chars"
+3) Add one <lb/> for blank pages:
+<lb/><!-- blank page AM -->
+4) If you need to indent an entire <p> put <space> before the <p> and the whole paragraph will indent:
+<space extent="10" unit="words"/><space extent="2" unit="chars"/><p>
+Note: This will also indent the first line extra, per normal indentation. If you don't want the first line to indent, use "no-indent" etc.
+Also note: Therefore, no need to indent each line of the paragraph separately.
+Also note: This doesn't work with <ab>. We'll figure out a solution for that when we come to a case of it.

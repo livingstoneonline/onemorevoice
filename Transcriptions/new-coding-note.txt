@@ -1,0 +1,12 @@
+1) Not necessary to encode extra space at end of pages.
+
+2) Don't use rend="left", rend="right" and rend="center" to place things on page. So, in other words, no <p rend="right">, <lb rend="right"/>, <seg rend="right"> etc.
+Instead use a combo of: 
+<space extent="1" unit="words"/>
+<space extent="1" unit="chars"/>
+Getting it roughly to the proper spot via "words" then fine tune with "chars". If something is left, no rend is necessary. The only exception for this is milestone, where you can use center and right to position shorter lines across the page. See liv_000074_0003 for an example of this.
+
+3) Add one <lb/> for blank pages:
+<lb/><!-- blank page AM -->
+
+4) I added the value dotted-underline for @rend. It's techically "dashed" but gives us what we need.

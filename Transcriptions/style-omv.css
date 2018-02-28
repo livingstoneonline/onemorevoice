@@ -376,6 +376,10 @@ div.transcription.style-omv .center {
 	text-indent:0;
 	margin-left:2.7em;
 }
+
+div.transcription.style-omv .dottedunderline {
+	border-bottom:1px dashed;
+}
 div.transcription.style-omv .doubleunderline {
 	border-bottom:3px double;
 }
@@ -387,7 +391,7 @@ div.transcription.style-omv .italic {
 	font-style:italic;
 }
 div.transcription.style-omv .large {
-	font-size:120%;
+	font-size:1.1em;
 }
 div.transcription.style-omv .overline {
 	text-decoration:overline;
@@ -473,10 +477,10 @@ div.transcription.style-omv .blue {
 	color:blue;
 }
 div.transcription.style-omv .blue.black {
-	color:#454668;
+	color:#245a82;
 }
 div.transcription.style-omv .brown {
-	color:brown;
+	color:#664d36;
 }
 div.transcription.style-omv .gray {
 	color:#706f6a;

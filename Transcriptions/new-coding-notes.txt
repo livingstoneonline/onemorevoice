@@ -3,15 +3,22 @@
 2) Don't use rend="left", rend="right" and rend="center" to place things on page. So, in other words, no <p rend="right">, <lb rend="right"/>, <seg rend="right"> etc.
 Instead use a combo of: 
 <space extent="1" unit="words"/>
+and
 <space extent="1" unit="chars"/>
-Getting it roughly to the proper spot via "words" then fine tune with "chars". If something is left, no rend is necessary. The only exception for this is milestone, where you can use center and right to position shorter lines across the page. See liv_000074_0003 for an example of this.
+Get it roughly to the proper spot via "words" then fine tune with "chars". If something is left, no rend is necessary. The only exception for this is milestone, where you can use center and right to position shorter lines across the page. See liv_000074_0003 for an example of this.
 
 3) Add one <lb/> for blank pages:
 <lb/><!-- blank page AM -->
 
-4) I added the value "dotted-underline" for @rend, so you can now use this value. It's techically "dashed" but gives us what we need.
+4) I added the value "dotted-underline" for @rend, so you can now use this value.
 
-5) We are now using <roleName> for things like Dr., Mr., Lieut, Sultan (including Sultan of Zanzibar), etc. when these words are used as someone's title. If it's a reference to the occupation (rather than someone's title), then it's <term type="occupation">
+5) We are now using <roleName> for things like Dr., Mr., Lieut, Sultan (including Sultan of Zanzibar), etc. when these words are used as someone's title. If it's a reference to the occupation (rather than someone's title), then it's <term type="occupation">. So look at these examples:
+
+<persName><roleName>Sultan</roleName> Mboura</persName>
+
+and
+
+<persName>Mboura</persName> is the <term type="occupation">Sultan</term>
 
 6) When a hyphen is added at the end or beginning of a line when a word is broken over two lines, use <seg type="hyphen"> to mark it:
 
@@ -34,6 +41,6 @@ And do this when the hyphen is a non-standard kind, as in the second line of the
 
 8) We now using <seg type="metamark"> for carets and similar:
 
-<w>Lawa<add place="above">m<seg type="metamark">/</seg><!-- Note this new coding. AW --></add>ba</w>
+<w>Lawa<add place="above">m<seg type="metamark">/</seg></add>ba</w>
 
-This comes from liv_000074_0001
+This example comes from liv_000074_0001.

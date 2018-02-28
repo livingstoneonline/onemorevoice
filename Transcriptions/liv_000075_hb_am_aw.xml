@@ -53,11 +53,12 @@
                     </msIdentifier>
                     <physDesc>
                         <handDesc><!-- Add <handNote>s if needed. -->
+                            <handNote xml:id="JW"><label>Jacob Wainwright</label> Jacob Wainwright.</handNote>
                             <handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                             <handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown
                                 but is probably a member of staff at DLC.</handNote>
-                            <handNote xml:id="JW"><label>Jacob Wainwright</label> Jacob Wainwright.</handNote>
+                            <handNote xml:id="U3"><label>Unknown Hand</label> This hand is unknown.</handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
@@ -92,8 +93,10 @@
 			<div hand="#U1" rend="brown">
 
 	<pb facs="liv_000075_0001" n="0001"/>
-<lb/><p rend="center">The Character of <term type="ethnic-group">Wabisa tribe</term> - <seg rend="right gray" hand="#U2">833</seg> <!-- mark to the right of the 833 might be a page number AM --></p>
-<lb/><p>The <term type="ethnic-group">Wabisas</term> are one of the bow &amp; arrow tribes.
+<lb/><space extent="11" unit="words"/><space extent="4" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="1" unit="chars"/> <add rend="small diagonal" hand="#JW" place="inspace">1</add></fw> <!-- mark to the right of the 833 might be a page number AM --><!-- I think it is a "1" and in JW's hand, so have coded it that way. See also pages 3 and 5. AW -->
+<lb/><space extent="2" unit="words"/><p>The Character of <term type="ethnic-group">Wabisa Tribe</term> -</p>
+<lb/>
+<lb/><p rend="no-indent">The <term type="ethnic-group">Wabisas</term> are one of the bow &amp; arrow tribes.
 <lb/>Some of them use spears without shields. They are
 <lb/><choice><sic>defficient</sic><corr>deficient</corr></choice> in courage, cleanliness, and <choice><sic>honest</sic><corr>honesty</corr></choice>. <gap agent="hole"/>In
 <lb/>some part of the country industrious people are to <!-- geog:  -->
@@ -124,13 +127,13 @@
 <lb/>or less important, their banks are covered with <w>im<supplied>-</supplied></w> <!-- Not sure how to treat this "im"? There's a catch word a the top left of next page, but the whole word is written in the first line, so should this be sic/corr-ed out?? HB --> <!-- I don't know - refer to Adrian AM -->
 
 	<pb facs="liv_000075_0002" n="0002"/>
-<lb/><seg rend="left">=im=</seg>
+<lb/><seg>=im=</seg>
 <lb/>impenetrable thick wood, in which the natives <!-- So not tagging natives as orgName, or does this stay? HB --> <!-- I think you're right not to tag it AM --><!-- Correct. AW -->
 <lb/>themselves stores their whole provisions; which in the
 <lb/>time of war are useful to them. Some dig wells &amp;
 <lb/>bury their <term type="plant_foodstuff">corn</term> in it. The country of <region>Fipa</region> is very <!-- Not sure if Fippa/Fipa is correct? HB -->
 <lb/><w>mount<add place="above">a</add>inous</w>. The rivers &amp; productions are same as
-<lb/>in <hi rend="dotted-line"><region><choice><orig>Maronigoo</orig><reg>Marungu</reg></choice></region></hi>. <term type="plant_foodstuff">Rice</term> is unknown except where there <!-- The spelling again is questionable, plus there doesn't seem to be a rend for dotted-underline, so put this as placeholder. HB -->
+<lb/>in <hi rend="dotted-underline"><region><choice><orig>Maronigoo</orig><reg>Marungu</reg></choice></region></hi>. <term type="plant_foodstuff">Rice</term> is unknown except where there <!-- The spelling again is questionable, plus there doesn't seem to be a rend for dotted-underline, so put this as placeholder. HB --><!-- I've introducted "dotted-underline" so you can now use it. AW -->
 <lb/>are <w>re<add place="above">si</add>dences</w> of caravan from <region>the coast</region><!-- geog: -->. In the <w>cen-
 <lb break="no"/>ter</w> of the region, there are very large <choice><sic>fertil</sic><corr>fertile</corr></choice> districts <!-- geog:  -->
 <lb/>of immense level and almost uncovered with wood
@@ -157,10 +160,11 @@
 <lb/>in <settlement type="town"><hi rend="underline"><w>Un<del type="cancelled">a</del>yanyembe</w></hi></settlement> for the sake of business, or</p>
 			</div>
 
-            <div hand="#JW" rend="blue">
+            <div hand="#JW" rend="blue black">
 
 	<pb facs="liv_000075_0003" n="0003"/>
-<lb/><p rend="center">The account of the country of <region>Unyamwezi</region><!-- mark to the right of the main text might be a page number AM --></p>
+<lb/><space extent="13" unit="words"/><space extent="4" unit="chars"/><fw><add rend="small diagonal brown" hand="#JW" place="inspace">1</add></fw>
+<lb/><space extent="1" unit="words"/><space extent="0" unit="chars"/><p>The account of the country of <region>Unyamwezi</region><!-- mark to the right of the main text might be a page number AM --><!-- See page 1 and previous line. AW --></p>
 <lb/>
 <lb/><p rend="no-indent">The country of <region>Unyamwezi</region> is well <choice><sic>cutivated</sic><corr>cultivated</corr></choice> and the deserts
 <lb/>are covered with peculiar trees (called <term type="plant">Majombo</term>) these trees
@@ -192,7 +196,7 @@
 <lb/>
 
 	<pb facs="liv_000075_0004" n="0004"/>
-<lb/><p><space extent="9" unit="words"/><add rend="right gray" hand="#U2">833</add></p>
+<lb/><space extent="13" unit="words"/><space extent="0" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
 <lb/><p rend="no-indent">As to our march when we <choice><sic>firs</sic><corr>first</corr></choice> entered in country of <region>Ugogo</region>
 <lb/>on the <date when="1874-02-28">ending of the month of February</date> we came to the
 <lb/>frontiers of <region>Ugogo</region> the name of the <term type="occupation">chief</term> of the place is -
@@ -223,7 +227,7 @@
 <lb/>people of an inferior <term type="occupation">chief</term> to pay them some custom
 
 	<pb facs="liv_000075_0005" n="0005"/>
-<lb/><space extent="9" unit="words"/><add rend="right gray" hand="#U2">833</add>
+<lb/><space extent="11" unit="words"/><space extent="1" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="2" unit="chars"/> <add rend="small diagonal gray" hand="#JW" place="inspace">2</add></fw>
 <lb/>which we did with great willingness, and on <date when="1874-01-15">the day
 <lb/>following</date> Early in the morning we started, and scarcely
 <lb/>marched about an hour we <choice><sic>we</sic><corr/></choice> again made to halt
@@ -255,7 +259,7 @@
 <lb/><choice><sic>which</sic><corr/></choice> we found many animals, as <term type="animal">mules</term>, <term type="animal">Zebra</term>
 
 	<pb facs="liv_000075_0006" n="0006"/>
-<lb/><space extent="9" unit="words"/><add rend="right gray" hand="#U2">833</add>
+<lb/><space extent="12" unit="words"/><space extent="0" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
 <lb/>and large herds of other animals: after 5 <choice><sic>hours</sic><corr>hours'</corr></choice> march
 <lb/>we halted to have a dinner only for a time and at
 <lb/>one <choice><sic>o,clock</sic><corr>o'clock</corr></choice> we resumed our march. <choice><sic>about</sic><corr>About</corr></choice> 5 <choice><sic>o,clock</sic><corr>o'clock</corr></choice>

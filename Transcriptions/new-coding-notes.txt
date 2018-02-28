@@ -31,3 +31,9 @@ And do this when the hyphen is a non-standard kind, as in the second line of the
 7) For catch words (see top of liv_000074_0005 for an example) code as follows:
 
 <seg type="catch">sleep</seg>
+
+8) We now using <seg type="metamark"> for carets and similar:
+
+<w>Lawa<add place="above">m<seg type="metamark">/</seg><!-- Note this new coding. AW --></add>ba</w>
+
+This comes from liv_000074_0001

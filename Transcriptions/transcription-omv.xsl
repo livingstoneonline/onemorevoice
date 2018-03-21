@@ -39,8 +39,8 @@
 				<meta charset="UTF-8"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
-				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/style-omv.css"/>-->
-				<link rel="stylesheet" type="text/css" href="style-omv.css"/>
+				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/style-omv.css"/>
+				<!--<link rel="stylesheet" type="text/css" href="style-omv.css"/>-->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
 				</title>
@@ -85,7 +85,7 @@
 			<div class="TEI" style="background:#{$body-color};">
 				<div class="item-details">
 				<span class="title"><!--<span class="bold">Title:</span><xsl:text> </xsl:text>--><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></span><br/>
-				<span class="author"><!--<span class="bold">Creator(s):</span><xsl:text> </xsl:text>--><xsl:value-of select="//teiHeader//titleStmt/author" separator=", "/></span><br/>
+				<span class="author"><!--<span class="bold">Creator(s):</span><xsl:text> </xsl:text>--><xsl:value-of select="//teiHeader//titleStmt/author" separator="; "/></span><br/>
 				<span class="project-id"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></span><br/>
 				<span class="project-id"><span class="bold">Place of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></span><br/>
 				<!--<span class="project-id"><span class="bold">Date(s) of composition:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//bibl[@type='sourceMetadata']/date[@type='composition']"/></span><br/>

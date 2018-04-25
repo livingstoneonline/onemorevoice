@@ -40,15 +40,14 @@
       <!--XPATH OF WHAT WE ARE TRYING TO FIND: CHANGE THIS!-->
 	  <!-- Attribute and value = geogName[@type='forest'] -->
 	  <!-- without attributes: $docs//region[not(@*)] -->
-            <xsl:variable name="xpath" select="$docs//term"/>      
+            <xsl:variable name="xpath" select="$docs//term[@type='occupation']"/>      
       
 			<!-- 
 				Run for these:
 
 					bibl[not(@type)]
 					bloc
-					country
-					foreign
+					country[not(@type='repository')]	
 					geogName
 					orgName
 					persName
@@ -57,6 +56,7 @@
 					roleName
 					settlement[not(@type='repository')]
 					term
+					foreign
 			 -->
 
             

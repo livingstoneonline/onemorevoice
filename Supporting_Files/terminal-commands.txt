@@ -15,8 +15,8 @@ java -jar saxon9he.jar -it:main -o:outputFilename.htm -xsl:listelements.xsl file
 
 x-path list for Mac
 -------------------
-for file in *.xml; do java -jar saxon9he.jar -it:main -s:$file -xsl:find-xpath.xsl -o:list.html; done
-java -jar saxon9he.jar -it:main -s:$file -xsl:find-xpath.xsl -o:list.html
+for file in *.xml; do java -jar saxon9he.jar -it:main -s:$file -xsl:find-xpath.xsl -o:list/list.html; done
+java -jar saxon9he.jar -it:main -s:$file -xsl:find-xpath.xsl -o:list/list.html
 
 x-path list for PC
 ------------------

@@ -456,14 +456,14 @@ div.transcription.style-omv .above,
 div.transcription.style-omv .sup,
 div.transcription.style-omv .top {
 	/* Move the superscripted text up */
-	top:-0.35em;
+	top:-0.50em;
 }
 div.transcription.style-omv .below,
 div.transcription.style-omv .bottom,
 div.transcription.style-omv .sub {
 	/* Move the subscripted text down, but only
      half as far down as the superscript moved up */
-	bottom:-0.25em;
+	bottom:-0.50em;
 }
 div.transcription.style-omv .true {
 	display:inline-block;
@@ -544,8 +544,8 @@ div.transcription.style-omv p .metamark {
 	text-indent:0px;
 }
 div.transcription.style-omv .metamark {
-	color:#666666;
-	border-bottom:1px #666666 dotted;
+	/*color:#666666;
+	border-bottom:1px #666666 dotted;*/
 }
 div.transcription.style-omv .foreign,
 div.transcription.style-omv .geogName,

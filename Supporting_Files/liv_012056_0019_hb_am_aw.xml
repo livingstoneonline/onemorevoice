@@ -91,9 +91,9 @@
 
 
 	<pb facs="liv_012056_0019" n="0019"/>
-<lb/><fw><add place="marginleft">(<del type="strikethrough">5</del>) 9</add></fw> 
+<lb/><fw rend="small"><add place="marginleft">(<del type="strikethrough">5</del>)9</add></fw> 
 <lb/><p rend="no-indent">There was <add place="below">^</add> <add place="above">one night</add> hanging in the <term type="occupation">Cook</term>'s house,
-<lb/>a leg of a <term type="animal">goat</term>. <persName>Manlidi</persName> <persName><roleName>Major</roleName>
+<lb/>a leg of a <term type="animal">goat</term>. <space extent="2" unit="chars"/><persName>Manlidi</persName> <persName><roleName>Major</roleName>
 <lb/>Barttelot</persName>'s boy crept round to this hut
 <lb/>at night and cut off a small piece
 <lb/>of the <term type="foodstuff">meat</term>; whilst thus engaged <persName>Nubi</persName>
@@ -116,7 +116,7 @@
 
 
 	<pb facs="liv_012056_0021" n="0021"/>
-<lb/><fw><add place="marginleft">(10)</add></fw> 
+<lb/><fw rend="small"><add place="marginleft">(10)</add></fw> 
 <lb/>there was a cry from the <term type="occupation">cook</term> that the
 <lb/><term type="foodstuff">meat</term> was missing and <persName><roleName>Major</roleName> Barttelot</persName>
 <lb/>sounded the call &amp; had everybody in
@@ -144,7 +144,7 @@
 
 
 	<pb facs="liv_012056_0023" n="0023"/>
-<lb/><fw><add place="marginleft">(<del type="cancelled">7</del>) 11</add></fw> 
+<lb/><fw rend="small"><add place="marginleft">(<del type="cancelled">7</del>)11</add></fw> 
 <lb/>when his present wounds had healed.
 <lb/>After a few days <persName>Nubi</persName>, dreading to
 <lb/>face a repetition of the inhumanity
@@ -171,8 +171,8 @@
 
 
 	<pb facs="liv_012056_0025" n="0025"/>
-<lb/><fw><add place="marginleft">(<del type="strikethrough">8</del>) 12</add></fw> 
-<lb/><p rend="no-indent">After a delay of many months <persName>Tippu
+<lb/><fw rend="small"><add place="marginleft">(<del type="strikethrough">8</del>)12</add></fw> 
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>After a delay of many months <persName>Tippu
 <lb/>Tib</persName> finally supplied men - about 400 -
 <lb/>to carry the loads of the Rear Column
 <lb/>of the <orgName><persName>Emin Bey</persName> Relief Expedition</orgName> - The
@@ -182,11 +182,11 @@
 <lb/>deal of stores which could not be
 <lb/>carried, owing to there being an insufficient
 <lb/>number of men., were given to <persName>Tippu Tib</persName>
-<lb/>- <term type="plant_foodstuff">Rice</term> previously bought from the <orgName>Arabs</orgName>
+<lb/><add place="marginleft">-</add> <term type="plant_foodstuff">Rice</term> previously bought from the <orgName>Arabs</orgName>
 <lb/>at <geogName type="waterfalls"><persName>Stanley</persName> Falls</geogName> was denied the
 <lb/>sick blacks of the <orgName>Expedition</orgName> but <!-- As per new guidelines I'm not coding "sick blacks", correct? HB --><!-- Yes AM --><!-- Ditto AW -->
 <lb/>now made a present of to <persName>Tippu
-<lb/>Tib</persName>. <space extent="3" unit="chars"/><persName>Tippu Tib</persName> cautioned the <term type="occupation">Major</term> to be
+<lb/>Tib</persName>. <seg rend="small"><space extent="3" unit="chars"/><persName>Tippu Tib</persName> cautioned the <term type="occupation">Major</term> to be
 <lb/>very careful in his <choice><sic>dealing's</sic><corr>dealings</corr></choice> with the <term type="ethnic-group">Manyema people</term>
 <lb/>"they were not so servile or so devoted as the <orgName>Zanzibaris</orgName> <!-- Not sure about Zanzibaris? HB --><!-- changed to orgName since I think they were recruited from different tribes in Zanzibar AM --><!-- Yes, plus probably people of mixed origin from Zanzibar. In any case, orgName is correct. AW -->
 <lb/>they were <foreign xml:lang="und">washinzi</foreign> (bush people)<supplied>"</supplied> said <persName>Tippu Tib</persName> -
@@ -194,7 +194,7 @@
 <lb/>the greatest patience &amp; tact in dealing with them. When they
 <lb/>are tired or sick you must attend to them &amp; not abandon
 <lb/>them - If you lose your temper and beat them they
-<lb/>will all run away -"
+<lb/>will all run away -"</seg><!-- The text on the last part of the page looks decidedly smaller to me, so I've put it in a <seg rend="small"> tag. AW -->
 
 
 	<pb facs="liv_012056_0026" n="0026"/>
@@ -203,22 +203,22 @@
 
 
 	<pb facs="liv_012056_0027" n="0027"/>
-<lb/><fw><add place="marginleft">(<del type="cancelled">9</del>) 13</add></fw> 
+<lb/><fw rend="small"><add place="inspace">(<del type="cancelled">9</del>)13</add></fw> 
 <lb/><add place="above">"</add><!-- placement of the quote is upper left and has got mixed up with the running header on the previous line. Adrian could you check this? AM--><!--  I've used the <add> tag to note this. In theory, this could also be an "11" for the running header, but that seems less likely. AW -->and do not in any way molest their
 <lb/>women as this is their most sensitive
-<lb/>point; The <term type="ethnic-group">Manyema</term> <add place="above" rend="gray" hand="#U"><term type="ethnic-group">Manyuema</term></add>, when properly <!-- As this is the only time he corrects himself with Manyema, I'm not sure if he meant that correction to run throughout? HB --><!-- I don't think he is correcting himself at all as it looks to be in a different handwriting. I have removed the sic/corr because my understanding is that we only use it for corrections we are applying. Adrian can you look at how I've coded this? AM --><!-- Agreed. It looks like this is in another hand, so the way it's done now looks good to me. AW -->
+<lb/>point; The <term type="ethnic-group">Manyema</term> <add place="above" rend="gray" hand="#U"><term type="ethnic-group"><choice><sic>manyuema</sic><corr>Manyuema</corr></choice></term></add>, when properly <!-- As this is the only time he corrects himself with Manyema, I'm not sure if he meant that correction to run throughout? HB --><!-- I don't think he is correcting himself at all as it looks to be in a different handwriting. I have removed the sic/corr because my understanding is that we only use it for corrections we are applying. Adrian can you look at how I've coded this? AM --><!-- Agreed. It looks like this is in another hand, so the way it's done now looks good to me. AW -->
 <lb/>treated, are brave and faithful <hi rend="underline">"</hi>
-<lb/><del type="strikethrough">A</del> One of <choice><sic><persName>Tippu Tib</persName>s</sic><corr><persName>Tippu Tib</persName>'s</corr></choice> <term type="occupation">officers</term> <persName><unclear cert="medium">Mwini
-<lb/>Schumali</unclear></persName> was appointed by <persName>Tippu
+<lb/><del type="strikethrough">A</del> One of <choice><sic><persName>Tippu Tib</persName>s</sic><corr><persName>Tippu Tib</persName>'s</corr></choice> <term type="occupation">officers</term> <persName>Mwini
+<lb/>Schumali</persName> was appointed by <persName>Tippu
 <lb/>Tib</persName> to be the "<foreign xml:lang="und">mampara</foreign>" (<term type="occupation">head man</term><supplied>)</supplied>
 <lb/>of the <orgName><term type="ethnic-group">Manyema</term> <term type="occupation">carriers</term></orgName> - <persName>Tippu
 <lb/>Tib</persName> told <persName>Barttelot</persName> that if he had
 <lb/>any complaint to make he was
 <lb/>to do so through <persName>Mwini Schumali</persName>
 <lb/>who was thoroughly conversant with 
-<lb/>these people &amp; <w>w<subst><del>as</del><add place="inspace"><unclear cert="medium">ould</unclear></add></subst></w> <add place="inspace">be</add><!-- still unclear - I think it looks as though someone has tried to change the "was" to "would be" but has not done it correctly AM --><!-- I agree with your reading Anne, so I'm changing the encoding to reflect this. AW --> thus able to settle
+<lb/>these people &amp; <w>w<subst><del>as</del><add place="inspace" rend="small"><unclear cert="medium">ould</unclear></add></subst></w> <add place="inspace" rend="small">be</add><!-- still unclear - I think it looks as though someone has tried to change the "was" to "would be" but has not done it correctly AM --><!-- I agree with your reading Anne, so I'm changing the encoding to reflect this. AW --> thus able to settle
 <lb/>any disagreement more easily than
-<lb/>the <term type="occupation">Major</term> himself.</p> 
+<lb/><add place="inspace" rend="small">the <term type="occupation">Major</term> himself.</add></p><!-- Looks like this line was forgotten then crammed into available space, so I've coded it thus. AW --> 
 <lb/><p rend="no-indent">Just before leaving <placeName>Yambuya</placeName>
 <lb/><orgName><roleName>Major</roleName> Barttelot</orgName> called together all
 
@@ -229,22 +229,21 @@
 
 
 	<pb facs="liv_012056_0029" n="0029"/>
-<lb/><fw><add place="marginleft">(<del type="cancelled">10</del>) 14</add></fw> 
+<lb/><fw rend="small"><add place="marginleft">(<del type="cancelled">10</del>)14</add></fw> 
 <lb/>the <del type="strikethrough"><orgName>Zanzibari</orgName></del> <orgName><add place="above"><term type="ethnic-group">Manyema</term></add> <term type="occupation">headmen</term></orgName> &amp; told them
 <lb/>that he was about to start for
 <lb/><unclear cert="low"><placeName>Wadelai</placeName></unclear> &amp; that he intended taking
 <lb/>another route which was a shorter
 <lb/>way to reach <persName>Emin</persName> than that
-<lb/>taken by <persName>Stanley</persName> - <persName>Mwini
+<lb/>taken by <persName>Stanley</persName> - <space extent="2" unit="chars"/><persName>Mwini
 <lb/>Schumali</persName> was excluded from this
-<lb/>council, <choice><sic>altho</sic><corr>although</corr></choice> <persName>Tippu Tib</persName> had
+<lb/>council, <choice><orig>altho</orig><reg>although</reg></choice> <persName>Tippu Tib</persName> had
 <lb/>distinctly appointed this man to be
 <lb/><term type="occupation">chief</term> of the men supplied by <persName>Tippu</persName>
 <lb/>- This meeting between the <term type="occupation">major</term> &amp;
 <lb/>his <term type="occupation">headmen</term> was held in secret
-<lb/>no other white men being present</p>
-<lb/>
-<lb/><p>- When the rear guard, now
+<lb/>no other white men being present</p><!-- There's about half a space empty line below this, but I'm not sure it's worth coding, so I've removed the coding. AW -->
+<lb/><p>When the rear guard, now
 <lb/>augmented by the men sent
 <lb/>by <persName>Tippu Tib</persName>, actually did leave
 
@@ -255,8 +254,7 @@
 
 
 	<pb facs="liv_012056_0031" n="0031"/>
-<lb/><fw><add place="marginleft">15</add></fw> 
-<lb/><placeName>Yambuya</placeName> <persName>Barttelot</persName> <choice><abbr>march'd</abbr><expan>marched</expan></choice> ahead
+<lb/><fw rend="small"><add place="marginleft above">15</add></fw> <placeName>Yambuya</placeName> <persName>Barttelot</persName> <choice><abbr>march'd</abbr><expan>marched</expan></choice> ahead
 <lb/>with his compass in hand saying
 <lb/>that he himself would show the
 <lb/>way; but eventually after two or
@@ -269,7 +267,7 @@
 <lb/>to retire &amp; bring up the rear -
 <lb/><persName>Mwini Schumali</persName> then told the
 <lb/><term type="occupation">Major</term> that <persName>Tippu Tib</persName> had said
-<lb/>"that the <term type="ethnic-group">Manyemas</term> were to follow
+<lb/><seg rend="black large">"</seg>that the <term type="ethnic-group">Manyemas</term> were to follow
 <lb/>in <persName>Stanley</persName>'s path<supplied>"</supplied> &amp; when the <term type="occupation">Major</term>
 <lb/>deviated from this the <term type="ethnic-group">Manyemas</term>
 
@@ -280,7 +278,7 @@
 
 
 	<pb facs="liv_012056_0033" n="0033"/>
-<lb/><fw><add place="marginleft">16</add></fw>
+<lb/><fw rend="small"><add place="marginleft">16</add></fw>
 <lb/>were to return back, <persName>Tippu Tib</persName>
 <lb/>had said that "he had given
 <lb/>his promise to <persName>Stanley</persName> before the
@@ -288,7 +286,7 @@
 <lb/>of <geogName type="island">Zanzibar</geogName> and he did not
 <lb/>consider himself bound to supply
 <lb/><term type="occupation">carriers</term> for another <choice><sic>whiteman's</sic><corr>white man's</corr></choice> <!-- Again, I'm not coding whiteman as per new coding rules, correct? HB --><!-- Yes, but it possibly needs a correction for being quoted as one word - Adrian could you please check this? AM --><!-- The current coding looks good to me. AW -->
-<lb/>personal <orgName>Expeditions</orgName> - The object
+<lb/>personal <orgName>Expeditions</orgName> - <space extent="1" unit="chars"/>The object
 <lb/>of the rear column was to reach
 <lb/><persName>Stanley</persName> and the quickest and
 <lb/>easiest way to do this was

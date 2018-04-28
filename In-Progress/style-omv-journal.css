@@ -26,14 +26,14 @@ div.transcription-viewer-content.style {
 
 /* 1. Textual divisions */
 
-div.transcription.style-omv {	
-	margin-left: auto;
+div.transcription.style-omv {
+	margin-left:auto;
 	margin-right:auto;
 	padding-left:2.5em;
 	padding-right:2.5em;
-	text-align:center;
 	max-width:27em;
 	min-width:27em;
+	text-align:center;
 	font-family:"source sans pro", calibri, arial, helvetica, sans-serif;
 	font-size:16px;
 	/*white-space:nowrap;*/
@@ -57,7 +57,6 @@ div.transcription.style-omv .item-details {
 div.transcription.style-omv div.body {
 	display:block;
 	padding-bottom:2.4em;
-	/*padding-left:3.5em;*/
 }
 div.transcription.style-omv .front,
 div.transcription.style-omv .back {
@@ -71,7 +70,6 @@ div.transcription.style-omv .title {
 	display:block;
 	text-align:center;
 	margin-bottom:-0.5em;
-	/*padding-left:2.5em;*/
 	font-size:1.4em;
 	font-variant:small-caps;
 }
@@ -79,7 +77,6 @@ div.transcription.style-omv .author {
 	display:block;
 	text-align:center;
 	margin-bottom:.5em;
-	/*padding-left:2.5em;*/
 	font-size:1.2em;
 	font-style:italic;
 }
@@ -104,13 +101,11 @@ div.transcription.style-omv hr.title-section {
 	border-top:1px solid #666666;	
 	margin-top:-0.4em;
 	margin-bottom:-0.4em;
-	/*margin-left:3.5em;*/
 }
 div.transcription.style-omv .project-id,
 div.transcription.style-omv .project-encoding,
 div.transcription.style-omv .encoding-standard {
 	display:inline-block;
-	/*padding-left:4em;*/
 	padding-bottom:.4em;
 	font-size:.9em;
 	line-height:170%;
@@ -251,6 +246,9 @@ div.transcription.style-omv .quarterline {
 	border:0;
 	border-top:1px solid #58484b;
 }
+div.transcription.style-omv .halfline.quarterline {
+	width: 22.5em !important;
+}
 div.transcription.style-omv .second-line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
@@ -278,9 +276,6 @@ div.transcription.style-omv .third-line {
 
 /* 5. p, ab, head, note, fw */
 
-div.transcription.style-omv p {
-	/*margin-right:2em;*/
-}/*Needed so that the text doesn't run up against the right edge in the viewer.*/
 div.transcription.style-omv .p {
 	display:inline-block;
 	text-indent:25px;
@@ -288,13 +283,9 @@ div.transcription.style-omv .p {
 	margin-bottom:0;	
 }
 div.transcription.style-omv .p.noindent,
+div.transcription.style-omv .p.center,
 div.transcription.style-omv .p.right {
 	text-indent:0 !important;
-}
-div.transcription.style-omv .p.center{
-	text-indent:0;
-	text-align:center !important;
-	display:block;
 }
 div.transcription.style-omv .p.right {
 	margin-left:6em !important;
@@ -314,11 +305,13 @@ div.transcription.style-omv .note {
 	display:inline;
 }
 div.transcription.style-omv .fw {
-	font-size:.9em;
 	text-indent:0 !important;
 	display:block;
 	text-align:center;
 	margin-bottom:.5em;
+}
+div.transcription.style-omv .fw .center {
+	display:inline
 }
 div.transcription.style-omv .fw.pageno {
 	text-indent:0 !important;
@@ -387,7 +380,9 @@ div.transcription.style-omv .caps {
 }
 div.transcription.style-omv .center {
 	text-indent:0;
-	text-align:center !important;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
 	display:block;
 }
 
@@ -419,7 +414,7 @@ div.transcription.style-omv .overline.underline {
 }
 div.transcription.style-omv .right {
 	text-indent:0;
-	margin-left:4em;
+	float:right;
 }
 div.transcription.style-omv .small {
 	font-size:.85em;

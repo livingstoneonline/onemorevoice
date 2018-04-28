@@ -39,7 +39,7 @@
 				<meta charset="UTF-8"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
-				<link rel="stylesheet" type="text/css" href="style-omv-journal.css"/>
+				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/style-omv-journal.css"/>
 				<!--<link rel="stylesheet" type="text/css" href="style-omv.css"/>-->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>

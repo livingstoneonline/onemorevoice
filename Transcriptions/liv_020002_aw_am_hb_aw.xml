@@ -86,6 +86,8 @@
         </revisionDesc>
     </teiHeader>
 
+<!-- The sic/corr tags are a bit overused in this file and need to be reduced later. It's clear that the prose is trying to capture the narrator's form of speaking, so it's not really a matter of errors and corrections. AW -->
+
     <text>
        	<body><!-- Change; this is the color of the MS page; value can be any color --><!-- No need to specify if it's white. AW -->
 			<div rend="black" hand="BG"><!-- Change; this is the color of the writing; only use auto-suggested values -->
@@ -143,7 +145,7 @@ me in morning and give me <bibl>letter</bibl>, and I open and <choice><sic>fine<
 <p rend="center"><figure/> 
 <lb/><seg rend="small"><persName>Tippu Tib</persName>.</seg></p>
 
-<p rend="no-indent"><persName>Wasamgora</persName> and cannibals. Pigmies have no big knife, [and bring other natives] because they got knives to cut <term type="animal">elephant</term>. Now this big <choice><sic>natuve</sic><corr>native</corr></choice> he come cut all <term type="foodstuff">meat</term> and divide, and <choice><sic>taker</sic><corr>take</corr></choice> half, and half he leave to pigmies. These cannibals (<foreign xml:lang="und">Wasamgora</foreign><!-- Not sure if this should be tagged as we don't tag cannibals, or if should just be foreign tag. HB --><!-- Good question. It depends on this is a specific ethnic group being invoked or an African word for "cannibal." I've coded as if it were the latter, and I've removed orgName. AW -->) eat man the same they eat <term type="foodstuff">beef</term> and <term type="foodstuff">mutton</term>. And we have cannibal man, he belong to <persName>Emin Pasha</persName>, and his name we call <persName>Binsa</persName>. <persName>Emin Pasha</persName> give him to <persName><roleName><choice><sic>Docter</sic><corr>Doctor</corr></choice></roleName> Junker</persName> and <choice><sic>taker</sic><corr>take</corr></choice> to <geogName type="island">Zanzibar</geogName>, and he went with us in <bloc>Africa</bloc>. He is not cannibal now.</p>
+<p rend="no-indent"><orgName>Wasamgora</orgName> and cannibals. Pigmies have no big knife, [and bring other natives] because they got knives to cut <term type="animal">elephant</term>. Now this big <choice><sic>natuve</sic><corr>native</corr></choice> he come cut all <term type="foodstuff">meat</term> and divide, and <choice><sic>taker</sic><corr>take</corr></choice> half, and half he leave to pigmies. These cannibals (<orgName>Wasamgora</orgName><!-- Not sure if this should be tagged as we don't tag cannibals, or if should just be foreign tag. HB --><!-- Good question. It depends on this is a specific ethnic group being invoked (or generic group) or an African word for "cannibal." I've coded as if it were a generic group, and I've removed orgName. AW -->) eat man the same they eat <term type="foodstuff">beef</term> and <term type="foodstuff">mutton</term>. And we have cannibal man, he belong to <persName>Emin Pasha</persName>, and his name we call <persName>Binsa</persName>. <persName>Emin Pasha</persName> give him to <persName><roleName><choice><sic>Docter</sic><corr>Doctor</corr></choice></roleName> Junker</persName> and <choice><sic>taker</sic><corr>take</corr></choice> to <geogName type="island">Zanzibar</geogName>, and he went with us in <bloc>Africa</bloc>. He is not cannibal now.</p>
 
 	<pb facs="liv_020002_0004" n="0004"/>
 <fw><seg rend="left">798</seg> <seg rend="center smallcaps"><bibl>THE STORY OF MY LIFE</bibl>.</seg></fw> 

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-journal.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020002"><!-- Change @xml:id -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Story of My Life</title><!-- Change -->
+                <title type="alternate">The Story of My Life, August 1891</title><!-- Change; note addition of date -->
+				<author>Saleh Bin Osman</author>
+                <author>[Glave, Edward J., 1863-1895]</author><!-- Change -->
+                <principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="AM">
+                    <name>Anne Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+				<respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Livingstone Online</authority>
+                <publisher>University of Maryland Libraries</publisher>
+                <pubPlace>College Park, MD, USA</pubPlace>
+                <date>2018</date><!-- Change if necessary -->
+                <idno type="LEAP-ID">liv_020002</idno><!-- Change -->
+            </publicationStmt>
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<title>St. Nicholas: An Illustrated Magazine for Young Folks</title>
+						<editor>Mary Mapes Dodge</editor>
+						<imprint>
+							<biblScope unit="vol">18</biblScope>
+							<biblScope unit="pages">795-98</biblScope>
+							<pubPlace>New York; London</pubPlace>
+							<publisher>The Century Co.; T. Fisher Unwin</publisher>
+							<date>August 1891</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                    <title>The Story of My Life</title><!-- Change -->
+					<author xml:id="SBO">Saleh Bin Osman</author><!-- Change -->
+                	<author xml:id="EJG">[Glave, Edward J., 1863-1895]</author><!-- Change -->
+                    <date type="composition" when="1891-08">August 1891</date><!-- Change, including attributes -->
+                    <placeName type="focusRegion">West and Central Africa</placeName><!-- Change -->
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry --> 
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+                <language ident="und">Undetermined</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Change @when, @who, and work description below. -->
+			<!-- Note that @who initials are taken from <respStmt> above -->
+			<!-- Add new <change> elements below as needed. -->
+			<!-- Note that the most recent <change> should always be placed first, at the top -->
+            <change when="2018-07-25" who="#AW">Change sic/corr to orig/reg</change>
+            <change when="2018-07-18" who="#AW">Coding review</change>
+            <change when="2018-07-10" who="#HB">Proofing and TEI encoding</change>
+            <change when="2018-06-23" who="#AM">Transcription amendments and TEI encoding</change>
+            <change when="2018-01-31" who="#AW">OCR Conversion and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+<!-- In theroy, this document has a lot of errors in it that normally we would code with sic/corr. However, it's clear that in this instance, the original c19 editors deliberately left the language as is, in order to capture Osman's voice. Close reading of the errors shows, indeed, that there is a specific pattern of which words are misspelled and that such mispelling is confined on the whole to only a few words that repeat over and over. As a result, we've deviated from usual practice by using orig/reg for such errors (to faciliate searching) rather than sic/corr, which would have been to pedantic and against the spirit of what's going on in this text. Only in a few cases, where there is an obvious typographical error, we have used sic/corr. AW -->
+
+    <text>
+       	<body><!-- Change; this is the color of the MS page; value can be any color --><!-- No need to specify if it's white. AW -->
+			<div rend="black" hand="BG"><!-- Change; this is the color of the writing; only use auto-suggested values -->
+
+	<pb facs="liv_020002_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
+<head><bibl>THE STORY OF MY LIFE</bibl>.</head>
+<p rend="center small italic">(As told by <persName>Saleh</persName> and recorded in shorthand.)</p>
+
+<lb/><p rend="center"><figure/></p>
+
+<lb/><p rend="center smallcaps"><persName>SALEH BIN OSMAN</persName>.</p>
+
+<lb/><p>I BORN in <date when="1871-07-09">July 9, 1871</date>. My mother was dead when I three years old. When I was one year older, I go to my mother sister, and stay with her. When I get four year old, my father send me school to read <bibl>Koran</bibl>, and then when I seven year old I begin to read the <bibl>Bible</bibl>, and finish when I eight year old the <bibl>Bible</bibl>. The <term type="occupation">schoolmaster</term> name is "<persName>Shayhah</persName>"; over in 
+
+<cb/>
+<country>America</country> you call him <term type="occupation">schoolmaster</term>. He change my name and call him "<persName>Saleh</persName>," mean "<term type="foodstuff">honey</term>"; and when I ten year old, I finish all school and went to my father, and <choice><orig>taker</orig><reg>took</reg></choice> me one year to stay with my father. When I get ten year, he <choice><orig>taker</orig><reg>took</reg></choice> me travel to <country>India</country>, <settlement type="city">Bombay</settlement>, <settlement type="city">Calcutta</settlement>, <placeName>Bungola</placeName>, and come back to <geogName type="island">Zanzibar</geogName>.</p>
+
+<lb/><p>He <choice><orig>asker</orig><reg>asked</reg></choice> me, "Which <choice><orig>kine</orig><reg>kind</reg></choice> business you
+<fw rend="center small">795</fw>
+
+	<pb facs="liv_020002_0002" n="0002"/>
+<fw><seg rend="left">796</seg> <seg rend="center smallcaps"><bibl>THE STORY OF MY LIFE</bibl>.</seg> <seg rend="right small"><date when="1891-08">[AUG.</date></seg></fw>
+like?" I say, "l <choice><orig>liker</orig><reg>like</reg></choice> make shop, <term type="foodstuff">fruit</term>-shop"; and then he give me 40 dollar, and I go to my <choice><orig>fren</orig><reg>friend</reg></choice> [friend] and he give 40 dollar, and then to <choice><abbr>'nother</abbr><expan>another</expan></choice> <choice><orig>fren</orig><reg>friend</reg></choice>, he give 40 dollar, and then we make <choice><orig>bisness</orig><reg>business</reg></choice>. We sell <term type="plant_foodstuff"><choice><orig>cokenuts</orig><reg>coconuts</reg></choice></term>, <term type="plant_foodstuff">orange</term>, and <term type="plant_foodstuff">mango</term>, and sweet <term type="plant_foodstuff">lemon</term>. And then my <choice><orig>fren</orig><reg>friend</reg></choice> he <choice><abbr>tol'</abbr><expan>told</expan></choice> me "This <choice><orig>maker</orig><reg>makes</reg></choice> dirty <choice><orig>bisness</orig><reg>business</reg></choice>, much better to buy boat, a little rowboat," and we pay 200 dollar, and that 's<!-- should the extra space be removed Adrian? AM --> all money we got.</p>
+
+<lb/><p>When <term type="nationality"><choice><abbr>'Merican</abbr><expan>American</expan></choice></term> <foreign xml:lang="und">manwah</foreign> [man-of-war] come, we bring people down; and next time we went to go, the sea very bad, and boat he go down, and one my <choice><orig>fren</orig><reg>friends</reg></choice> no swim, he wear heavy jacket, and he go down dead. And we swim to <foreign xml:lang="und">manwah</foreign><!-- hyphen removed as word was split over 2 lines in the pdf, but not here AM -->, and <choice><abbr>'nother</abbr><expan>another</expan></choice> boat he come and bring us to shore, and all people say my fault, because I at the head of the <choice><orig>bisness</orig><reg>business</reg></choice>, and I mad. And he say I be <choice><orig>liker</orig><reg>likely</reg></choice> to get a <choice><abbr>plent'</abbr><expan>plenty</expan></choice> money quick! And my father was cross-to me because all people say that my fault. I run away and went to <geogName type="island"><choice><orig>Malagascar</orig><reg>Madagascar</reg></choice></geogName> [<geogName type="island">Madagascar</geogName>]; and all money I get I got 20 rupee [rupee, 40 <choice><abbr>cts</abbr><expan>cents</expan></choice>.j in my pocket.</p>
+
+<lb/><p>When we <choice><abbr>'rive</abbr><expan>arrive</expan></choice> to <geogName type="island"><choice><orig>Malagascar</orig><reg>Madagascar</reg></choice></geogName>, we stop at <placeName>Noosbay</placeName>. All <term type="nationality">French</term> people, and <term type="occupation">master</term> <choice><orig>asker</orig><reg>asked</reg></choice> me for passage. I <choice><sic>broke</sic><corr>spoke</corr></choice><!-- probably should be "spoke" AM --><!-- Agreed, so have changed. HB --><!-- Agreed. AW --> French. I say, "How much?" He say, "Twenty rupee," and I say, "That 's<!-- as above, remove space? AM --> all money I got." He say, "I don't care, I want twenty rupee, now, quick!" I give it him, and I don't got any money in my pocket. And I went in police station, and soon I see myself, and I set down and cry. When <term type="occupation">watchman</term> come, <choice><orig>asker</orig><reg>asked</reg></choice> me, "Why you cry?" He think somebody beat me. I told I cry because I no home this country <!-- geog: Madagascar -->, no <choice><orig>fren</orig><reg>friends</reg></choice>. He <choice><orig>asker</orig><reg>asked</reg></choice> me what language speak. I say, "I speak Arab"; and he laugh me, and say you can't go far, we no speak Arab in this country [<geogName type="island">Madagascar</geogName>]. I stayed there till half-past five, and see him, he bring in tin, a small tin <choice><orig>liker</orig><reg>like</reg></choice> a cup, and it inside no <term type="plant_foodstuff">sugar</term>, no <term type="foodstuff">milk</term>. A piece <term type="foodstuff">bread</term> he <choice><orig>giver</orig><reg>gave</reg></choice> me, and said, "That all I have in my supper. Have no better supper." And I say, "Thank you to God, and thank you to yourself." And then he show me place and say, "You go down there." In evening rain come and <choice><orig>sundercome</orig><reg>thunder come</reg></choice> [thunder come], and I fright. And I don't got blanket, don't got pillow<!-- this word is hyphenated in the pdf as it is at the end of a line but not here in transcription where it is all one line, OCR creates space for hyphen - I have removed this space. Correct? AM -->, just sleep in <choice><orig>groun</orig><reg>ground</reg></choice>. And when rain come, and I up and I sit down, and I cry.</p>
+
+<lb/><p>In morning I went to <placeName><term type="nationality">French</term> town</placeName>, and I 
+
+<cb/>
+see big big man, and he say to me, "Hello, boy! what you do here?" Because he know me very well, because I dress different; I dress <geogName type="island">Zanzibar</geogName> dress. He say, "You <orgName><geogName type="island">Zanzibar</geogName> boy</orgName>." I said, "Yes. I don't know anybody here." He say, "Come with me." And I go to him. And he told me, "I want you to go to my wife, and carry bag, and to go with her all places she go, when she go for walk." This man <term type="person">Frenchman</term>. He name <persName><roleName><orig><reg>Admirally</reg><corr>Admiral</corr></orig></roleName> Pierre</persName>. He fight in <geogName type="island"><choice><orig>Malagascar</orig><reg>Madagascar</reg></choice></geogName><!-- as above, hyphen/space removed AM -->. And he <choice><orig>taker</orig><reg>took</reg></choice> me in his <foreign xml:lang="und">manwah</foreign>, and <choice><orig>taker</orig><reg>took</reg></choice> me to his wife; and she be glad. She say, "I tried to find <orgName><geogName type="island">Zanzibar</geogName> boy</orgName> when I there, to teacher me <geogName type="island">Zanzibar</geogName> language."</p>
+
+<lb/><p>Half-past four we went down shore, in town, and she buy too much <choice><orig>cloths</orig><reg>clothes</reg></choice>, and <choice><orig>guve</orig><reg>gave</reg></choice> to me, and she told to me, "I want you to throw <choice><abbr>'way</abbr><expan>away</expan></choice> dirty <choice><orig>cloths</orig><reg>clothes</reg></choice> you got." And I throw <choice><abbr>'way</abbr><expan>away</expan></choice>, and dress fine.</p>
+
+<lb/><p>We sail from <placeName>Noosbay</placeName> to <placeName>Junka</placeName>, and we fight there for seven day. That was the native <geogName type="island"><choice><orig>Malagascar</orig><reg>Madagascar</reg></choice></geogName><!-- as above, hyphen/space removed AM -->, called "<persName>Hover</persName>"; yellow, <choice><orig>liker</orig><reg>like</reg></choice> <term type="people">Chinese</term>. Got two name, the other name we call him "<persName>Wambalambo</persName>." When we fight we stay there for two <choice><abbr>mont's</abbr><expan>months</expan></choice>. And <persName><roleName>Madam</roleName> Pierre</persName> she show very <choice><orig>kine</orig><reg>kind</reg></choice> for me, <choice><orig>liker</orig><reg>like</reg></choice> my mother. And then I teach her in <geogName type="island">Zanzibar</geogName> tongue for two <choice><abbr>mont's</abbr><expan>months</expan></choice>, and then she <choice><orig>speaker</orig><reg>speaks</reg></choice> me very well. When I say something to her she <choice><abbr>understan'</abbr><expan>understands</expan></choice>. And then she <choice><orig>asker</orig><reg>asked</reg></choice> me everything <choice><abbr>'bout</abbr><expan>about</expan></choice> myself, <choice><abbr>an'</abbr><expan>and</expan></choice> I told her how I come. She said, "I am very sorry for you, I <choice><orig>maker</orig><reg>make</reg></choice> you happy just <choice><orig>liker</orig><reg>like</reg></choice> mother." And then she say, "I want you <choice><orig>teacher</orig><reg>teach</reg></choice> me Zanzibar language, and I want you learn <choice><orig>Malagascar</orig><reg>Madagascar</reg></choice>, because when <roleName><choice><orig>Admirally</orig><reg>Admiral</reg></choice></roleName> go home he will want you <term type="occupation">interpreter</term>, and on <foreign xml:lang="und">manwah</foreign>."</p>
+
+<lb/><p>He got two boys, and he say, "Now, <persName>Saleh</persName>, you <choice><orig>taker</orig><reg>take</reg></choice> walk with these boys every day and they teacher you. You go down city, and they tell you name everything." One boy told me something<!-- as above, hyphen/space removed AM --> and I put down Arab, and I learn quick in four months. And <roleName>Madam</roleName> go home, and she say, "<roleName><choice><orig>Admirally</orig><reg>Admiral</reg></choice></roleName>, <choice><orig>taker</orig><reg>take</reg></choice> care <persName>Saleh</persName>, he good boy." And then my <choice><orig>bisness</orig><reg>business</reg></choice> was carry <roleName><choice><orig>Admirally</orig><reg>Admiral</reg></choice></roleName>'s rifle and glass when we go in shore. And on <foreign xml:lang="und">manwah</foreign><!-- previously hyphenated AM --> I have nothing do, and sit down and eat and dress nice. And then he call me, "<persName>Saleh</persName>, my boy," in <geogName type="island">Zanzibar</geogName> language, because he speak Zanzibar first class. One day he call
+
+
+	<pb facs="liv_020002_0003" n="0003"/>
+<fw><seg rend="left smallcaps"><date when="1891-08">1891.]</date></seg> <seg rend="center smallcaps"><bibl>THE STORY OF MY LIFE</bibl>.</seg> <seg rend="right">797</seg></fw>
+me in morning and give me <bibl>letter</bibl>, and I open and <choice><orig>fine</orig><reg>find</reg></choice> <roleName>Madam</roleName>'s picture and little gold ring.</p>
+
+<lb/><p><roleName>Madam</roleName> go home, write <roleName><choice><orig>Admirally</orig><reg>Admiral</reg></choice></roleName>, "Please bring <persName>Saleh</persName> home, we show people, and we send him back to <geogName type="island">Zanzibar</geogName>." One day in morning he called me, we go shoot <term type="animal">guinea-fowl</term>, and <choice><orig>taker</orig><reg>take</reg></choice> clean and bring to <roleName>Madam</roleName> when we go to <country>France</country>. And we went there and shoot one, and he send me look for it, and he forget I there, and he shoot and his bullets come through my ear, and I fall down and cry loud, and he come and <choice><orig>looker</orig><reg>look</reg></choice>, and then throw <choice><abbr>'way</abbr><expan>away</expan></choice> his gun, and call somebody <choice><orig>taker</orig><reg>take</reg></choice> me <choice><abbr>'way</abbr><expan>away</expan></choice> to <foreign xml:lang="und">manwah</foreign>. And he <choice><orig>taker</orig><reg>took</reg></choice> care for me, and when I get better he finish his business himself, and we sail for <settlement type="city">Marseilles</settlement>, <country>France</country>. And then he <choice><orig>ketch</orig><reg>catch</reg></choice> <term type="ailment">fever</term> in sea, and when he go to <settlement type="city">Marseilles</settlement> he sick seven day, and he dead. And his wife she was good to me and <choice><abbr>sen'</abbr><expan>sent</expan></choice> me back to <geogName  type="island">Zanzibar</geogName>.</p>
+
+<lb/><p>I was glad to go back, but I was sorry to lose <roleName><choice><orig>Admirally</orig><reg>Admiral</reg></choice></roleName> because he was good to me. I was glad to go home, but l was sorry to leave <roleName>Madam</roleName> because she <choice><orig>nicer</orig><reg>nice</reg></choice> lady.</p>
+
+<lb/><p>That all my story travel in <geogName type="island"><choice><orig>Malagascar</orig><reg>Madagascar</reg></choice></geogName> with <roleName><choice><orig>Admirally</orig><reg>Admiral</reg></choice></roleName>.</p>
+
+<lb/><p>My uncle, <persName>Tippu Tib</persName>, told me much about <persName><roleName>Mis'r</roleName> Stanley</persName>. He know him. He <persName><roleName>Mis'r</roleName> Stanley</persName>'s <choice><orig>fren</orig><reg>friend</reg></choice>. When <persName><roleName>Mis'r</roleName> Stanley</persName> <choice><abbr>'rive</abbr><expan>arrived</expan></choice> in <geogName type="island">Zanzibar</geogName><!-- as above, hyphen/space removed AM -->, that <choice><orig>maker</orig><reg>made</reg></choice> me to go with him in <bloc>Africa</bloc> because I think I travel all same <choice><orig>liker</orig><reg>like</reg></choice> I travel in <geogName type="island"><choice><orig>Malagascar</orig><reg>Madagascar</reg></choice></geogName>. I find <persName><roleName>Mis'r</roleName> Stanley</persName> <choice><abbr>nices'</abbr><expan>nicest</expan></choice> man I ever see. He is strong man, and very clever man. He is a very good shot. He is strong for march. He is clever for caravan. He has six hundred twenty-one <orgName>Zanzibars</orgName>, and all <choice><orig>liker</orig><reg>like</reg></choice> him, all <choice><orig>speaker</orig><reg>speak</reg></choice> good for him. He think all time for his people. This Dark Forest, we don't have <choice><abbr>car'age</abbr><expan>carriage</expan></choice> there, no <term type="animal">horse</term>, no <term type="animal">donkey</term>, no <term type="animal">camel</term>, no railway, you know very well. This travel everybody<!-- as above, hyphen/space removed AM --> must carry his rifle, his <choice><orig>cloths</orig><reg>clothes</reg></choice>, tent, and ammunition. And this Dark Forest, all bush and trees very very high, -- big! People live in this Dark Forest, cannibals and <orgName>pigmies</orgName>. This <!-- I believe we are no longer using orgName for cannibals, but not sure if pygmies should be tagged? HB --><!-- Sure. AW -->
+
+<cb/>little people, this pigmies are <choice><abbr>'bout</abbr><expan>about</expan></choice> two feet and half big. The pigmies not strong <choice><abbr>'nough</abbr><expan>enough</expan></choice> <choice><sic>for</sic><corr>to</corr></choice> grow anything. They <choice><orig>maker</orig><reg>make</reg></choice> iron, they <choice><orig>maker</orig><reg>make</reg></choice> fine <choice><orig>powsen</orig><reg>poison</reg></choice> [poison], and they go round <term type="animal">elephant</term><!-- as above, hyphen/space removed AM -->, because they so small he no see them, and they shoot him in eyes with <choice><orig>powsen</orig><reg>poison</reg></choice> arrow, and before long he fall down dead. And they go to village and call big <choice><orig>natuve</orig><reg>native</reg></choice>, we call </p> <!-- Not sure this end of p tag or cb/ab? HB --><!-- This is needed in order to get the image coded below in place, so leave as is. AW -->
+
+<p rend="center"><figure/> 
+<lb/><seg rend="small"><persName>Tippu Tib</persName>.</seg></p>
+
+<p rend="no-indent"><orgName>Wasamgora</orgName> and cannibals. Pigmies have no big knife, [and bring other natives] because they got knives to cut <term type="animal">elephant</term>. Now this big <choice><orig>natuve</orig><reg>native</reg></choice> he come cut all <term type="foodstuff">meat</term> and divide, and <choice><orig>taker</orig><reg>take</reg></choice> half, and half he leave to pigmies. These cannibals (<orgName>Wasamgora</orgName><!-- Not sure if this should be tagged as we don't tag cannibals, or if should just be foreign tag. HB --><!-- Good question. It depends on this is a specific ethnic group being invoked (or generic group) or an African word for "cannibal." I've coded as if it were a generic group, and I've removed orgName. AW -->) eat man the same they eat <term type="foodstuff">beef</term> and <term type="foodstuff">mutton</term>. And we have cannibal man, he belong to <persName>Emin Pasha</persName>, and his name we call <persName>Binsa</persName>. <persName>Emin Pasha</persName> give him to <persName><roleName><choice><orig>Docter</orig><reg>Doctor</reg></choice></roleName> Junker</persName> and <choice><orig>taker</orig><reg>take</reg></choice> to <geogName type="island">Zanzibar</geogName>, and he went with us in <bloc>Africa</bloc>. He is not cannibal now.</p>
+
+	<pb facs="liv_020002_0004" n="0004"/>
+<fw><seg rend="left">798</seg> <seg rend="center smallcaps"><bibl>THE STORY OF MY LIFE</bibl>.</seg></fw> 
+<p>I think <persName><roleName>Mis'r</roleName> Stanley</persName> is very fine man. We lose many people in Dark Forest for hunger. I don't forget why I say <persName><roleName>Mis'r</roleName> Stanley</persName> is very fine man, he think for his people more than for himself. One day he told me, "I think I <choice><orig>liker</orig><reg>like</reg></choice> my people very much, because my people is my home. If I lose my people I can't go anywhere<!-- as above, hyphen/space removed AM -->." All native in <bloc>Africa</bloc> <choice><orig>liker</orig><reg>like</reg></choice> <persName><roleName>Mis'r</roleName> Stanley</persName>. <choice><abbr>Ev'rything</abbr><expan>Everything</expan></choice> he want and do, he call his people, <choice><orig>asker</orig><reg>ask</reg></choice> first. And me sure many people say <persName><roleName>Mis'r</roleName> Stanley</persName> bad man -- all <choice><abbr>je'lus</abbr><expan>jealous</expan></choice>, have nothing in head, all head full <supplied cert="high">of</supplied> <term type="insect">flies</term>. I see six hundred people myself <choice><orig>liker</orig><reg>like</reg></choice> <persName><roleName>Mis'r</roleName> Stanley</persName>, speak well for him. I been three year and half with him, he teach me very well. I enjoy my travel with him. He bring me back to <geogName type="island">Zanzibar</geogName>, home. I <choice><orig>asker</orig><reg>asked</reg></choice> him to come to <bloc>Europe</bloc> with him. I come for good time with him in <bloc>Europe</bloc>. He is here July, and have wife, good heart and fine looking. We all went through <bloc>Europe</bloc>, <country>France</country>, <country>Germany</country>, <country>Italy</country>, <country><choice><abbr>Switz'land</abbr><expan>Switzerland</expan></choice></country>, come back 
+
+<cb/>to <settlement type="city">London</settlement> and went to <country><choice><abbr>Scotlan'</abbr><expan>Scotland</expan></choice></country> and <country><choice><abbr>Irelan'</abbr><expan>Ireland</expan></choice></country> and all over <country><choice><abbr>Englan'</abbr><expan>England</expan></choice></country>. He <choice><orig>taker</orig><reg>took</reg></choice> me over here to <country><choice><abbr>'Merica</abbr><expan>America</expan></choice></country> now, and I <choice><orig>liker</orig><reg>like</reg></choice> <country><choice><abbr>'Merica</abbr><expan>America</expan></choice></country> very much. I think there is nice ladies in <country><choice><abbr>'Merica</abbr><expan>America</expan></choice></country>. And I think there is nice boys and girls. I think they have nice schools in <country><choice><abbr>'Merica</abbr><expan>America</expan></choice></country>. I believe this is a rich country. <!-- geog: America --> I been in <settlement type="city">New York</settlement>, <region>Brooklyn</region>, <region>New Jersey</region>, <settlement type="city">Springfield</settlement>, <settlement type="city">Boston</settlement>, <settlement type="city">Worcester</settlement>, <settlement type="city">Providence</settlement>, <settlement type="city">Chelsea</settlement>, <settlement type="city">Rochester</settlement>, <settlement type="city">Buffalo</settlement>, <settlement type="city">Cleveland</settlement>, <settlement type="city">Chicago</settlement>, and too many places in all the country <!-- geog: America --> that no have time to say, and I forget his name.</p>
+
+<lb/><p>I have no time to tell you how good time I have this country <!-- geog: America -->. I like this country <!-- geog: America --> very much. I write book in Arab, and I go to publish<!-- as above, hyphen/space removed AM --> when I go home. I have no time tell you how fine ladies this country. <!-- geog: America --> How fine boys. I'm<!-- as above, remove space? AM --><!-- Yep. Done. AW --> sure I got something to say when I get home. <choice><abbr>Goo'-bye</abbr><expan>Good-bye</expan></choice>. I sail Wednesday to <country><choice><abbr>Englan'</abbr><expan>England</expan></choice></country>. Soon as I get to <country><choice><abbr>Englan'</abbr><expan>England</expan></choice></country> I go home to <geogName type="island">Zanzibar</geogName>.</p>
+
+<lb/><p rend="center"><seg rend="smallcaps"><persName>SALEH BIN OSMAN</persName>,</seg>
+<lb/><seg rend="right small italic">Of the <orgName><persName>Stanley</persName> Expedition for the Relief of <persName>Emin Pasha</persName></orgName>.</seg></p>
+<lb/>
+<lb/><milestone unit="section" rend="quarter-line small center"/>
+
+			</div>
+		</body>	
+
+    </text>
+</TEI>

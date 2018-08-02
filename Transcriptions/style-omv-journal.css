@@ -7,7 +7,7 @@ Table of Contents
 2. Letters 
 3. pb, lb, linenumber 
 4. Milestone and lines 
-5. p, ab, note, fw 
+5. p, ab, note, fw, column break, footnotes 
 6. del, unclear, gap, space 
 7. Editorial 
 8. @rend classes (except lines, page placement, colors) 
@@ -275,7 +275,7 @@ div.transcription.style-omv-journal .third-line {
 }
 
 
-/* 5. p, ab, head, note, fw, column break */
+/* 5. p, ab, head, note, fw, column break, footnotes */
 
 div.transcription.style-omv-journal .p {
 	display:inline-block;
@@ -400,8 +400,9 @@ div.transcription.style-omv-journal .tripleunderline {
 	border-bottom:4px double;
 	text-decoration:underline;
 }
-div.transcription.style-omv-journal .tripleunderline {
+div.transcription.style-omv-journal .indent {
 	text-indent:25px;
+}
 div.transcription.style-omv-journal .italic {
 	font-style:italic;
 }
@@ -529,7 +530,6 @@ div.transcription.style-omv-journal .yellow {
 
 /* 11. Lists and Tables */
 div.transcription.style-omv-journal .list {
-	display:block;
 }
 div.transcription.style-omv-journal table {
 	font-size:.85em;

@@ -80,7 +80,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="transcription style-omv" style="background:#{$body-color};">
+		<div class="transcription style-omv-journal" style="background:#{$body-color};">
 
 			<div class="TEI" style="background:#{$body-color};">
 				<div class="item-details">
@@ -604,7 +604,7 @@
 	</xsl:template>
 
 	<xsl:template match="note">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}">[<xsl:apply-templates/>]</span>
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="note[ancestor::add[@place='marginleft']]" priority="10">

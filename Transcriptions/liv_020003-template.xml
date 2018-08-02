@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="transcription-omv-journal.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-journal.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020003"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
@@ -86,12 +86,23 @@
     </teiHeader>
 
 
+<!-- Note: This text has the feature of having an extra space or two anytime there is a new sentence, but I don't think we need to reproduce that unless, Heather and Anne, you do? AW -->
+
     <text>
        	<body><!-- Change; this is the color of the MS page; value can be any color --><!-- No need to specify if it's white. AW -->
 			<div rend="black" hand="BG"><!-- Change; this is the color of the writing; only use auto-suggested values -->
 
 	<pb facs="liv_020003_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
 <fw><seg rend="center"><bibl><hi rend="smallcaps">Mr. MacQueen's</hi> <hi rend="italic">Notes on African Geography</hi></bibl>.</seg> <seg rend="right">371</seg></fw>
+<lb/><!-- Text from previous article omitted here. AW -->
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/><milestone unit="section" rend="quarter-line small center"/>
+<lb/><milestone unit="section" rend="quarter-line small center"/>
+<lb/>
 
 <head>VI.&#8212;<hi rend="italic"><bibl>Notes on African Geography</bibl>; communicated by</hi> <hi rend="smallcaps">Mr. MacQueen</hi>.</head>
 			
@@ -112,7 +123,7 @@ distance, they crossed a small ri;er called Mazinga.<ref target="#note_03">&#135
 up at the village of Qua, which is the principality of a tribe called
 Mazeamoo.<ref target="#note_04">&#167;</ref><!-- This one came up via OCR, so I didn't look up the unicode. AW --> The next day travelled, about the same distance, to
 Beonee;<ref target="#note_05">||</ref> and the next day to a village called Ma Kunda<ref target="#note_06">&#182;</ref>
--during this journey crossed over a hill: next stage arrived at
+&#8212;during this journey crossed over a hill: next stage arrived at
 Konjee, and then at Moktanero, near which is a river about 200
 yards broad, infested with alligators and hippopotami. The next
 night slept at Deejamora; the next stage passed under a high
@@ -123,12 +134,12 @@ at Datomee Passi11g between two high hills at this place there
 is another tribe called Koto.<ref target="#note_07">**</ref> Again slept at Zohgomero, where</p>
 <lb/>
 <lb/><milestone unit="section" rend="line"/>
-<lb/><note rend="small">
-<space extent="2" unit="chars"/><note xml:id="note_01">* Mono-moezi.&#8212;<!-- This is em-dash. AW --><hi rend="smallcaps">Ed</hi>.</note> <note xml:id="note_02">&#134; Buro-maji, Buro-water.Mono-moezi.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<lb/><note rend="small"><!-- Using <space/> between each note in the next few lines is the path of least resistance, so that's what I've done. AW -->
+<note xml:id="note_01" rend="indent">* Mono-moezi.&#8212;<!-- This is em-dash. AW --><hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_02">&#134; Buro-maji, Buro-water.Mono-moezi.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
 <lb/><note rend="indent" xml:id="note_03">&#135; The name Mazinga may be correct, but it is nevertheless to be suspected, since
 the tract described is inhabited by the Mazingea.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-<note xml:id="note_04">&#167; Mazimo.&#8212;<hi rend="smallcaps">Ed</hi>.</note><note xml:id="note_05">||<!-- I found the special character for this one (&#9553;), but doing two lines like this works better actually. AW --> Bióui.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-<lb/><note xml:id="note_06">&#182; Macunda.&#8212;<hi rend="smallcaps">Ed</hi>.</note><note xml:id="note_07">**  N'eutu.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_04" rend="indent"  >&#167; Mazimo.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="3" unit="words"/><note xml:id="note_05">||<!-- I found the special character for this one (&#9553;), but doing two lines like this works better actually. AW --> Bióui.&#8212;<hi rend="smallcaps">Ed</hi>.<space extent="8" unit="words"/></note>
+<lb/><note xml:id="note_06" rend="indent"  >&#182; Macunda.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_07">**  N'eutu.&#8212;<hi rend="smallcaps">Ed</hi>.<space extent="8" unit="words"/></note>
 </note>
 
 	<pb facs="liv_020003_0002" n="0002"/>
@@ -174,14 +185,15 @@ as before; thence Ogaree 3 clays, where there is a very large river
 called Magrazie, with numerous hippopotami in it. Frnm this
 place to the Grand Lake is 12 days, through a country called
 Olia, a plain level country: on the banks of the lake is the great
-Sultan of the l\1anumuse (Mono-moezi), whose minister's name is
+Sultan of the Manumuse (Mono-moezi), whose minister's name is
 Kegaw; the appearance of the people near the lake is that of the
 A byssinians. The whole time from the shore of Africa being 140</p>
 <lb/>
 <lb/><milestone unit="section" rend="line"/>
 <lb/><note rend="small">
-<note xml:id="note_08">*  Wamiva.&#8212;<hi rend="smallcaps">Ed</hi>.</note><note xml:id="note_09">&#134;  M'Sagara.&#8212;<hi rend="smallcaps">Ed</hi>.</note><note xml:id="note_10">&#135; Wohaha.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_08" rend="indent">*  Wamiva.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_09">&#134;  M'Sagara.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_10">&#135; Wohaha.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
 </note>
+<space/>
 
 
 	<pb facs="liv_020003_0003" n="0003"/>
@@ -231,15 +243,14 @@ stories, nor is there any chimney. Dogs are very numerous and
 troublesome, some of a very large kind.</p>
 <lb/>
 <lb/><milestone unit="section" rend="line"/>
-<lb/><note rend="small">
-<note xml:id="note_11">* Ferasalah, 1 farsalah= 20 rotl.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<lb/><note rend="small"><space extent="3" unit="words"/><note xml:id="note_11" rend="indent">* Ferasalah, 1 farsalah= 20 rotl.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
 </note>
 
 	<pb facs="liv_020003_0004" n="0004"/>
 <fw><seg rend="left">374</seg>	<seg rend="center"><hi rend="italic"><bibl>African Geography</bibl>.</hi></seg></fw>
 <p>Does not know in what direction the great body of the lake extends,
 but thinks to the westward of S.</p>
-<p>N. B.-The Masogra ri,,er, here<ref target="#note_12">*</ref> mentioned, is no doubt the
+<p>N. B.&#8212;The Masogra ri,,er, here<ref target="#note_12">*</ref> mentioned, is no doubt the
 Luffia or Cuavo, but named the Masogre or Masagora,<ref target="#note_13">&#134;</ref> from
 the country of this name, which country is situated in 7° 25' S. lat.,
 and betwixt 36° and 37° E. long.</p>
@@ -284,8 +295,8 @@ it lies three or four hours on the ground before melting. Plenty of</p>
 <lb/>
 <lb/><milestone unit="section" rend="line"/>
 <lb/><note rend="small">
-<note xml:id="note_12">*  Where?&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-<note xml:id="note_13">&#134;  The name here intended is M'Sagara, in about 8°S. and 35°E.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_12" rend="indent">*  Where?&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_13" rend="indent">&#134;  The name here intended is M'Sagara, in about 8°S. and 35°E.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
 </note>
 
 
@@ -312,11 +323,11 @@ corn and Indian corn ; plenty of yams and sweet potatoes of a description
 resembling beet-root.</p>
 <p>They have as many wives as they like: the king has ten, or
 more. ThPy have many slaves, which are either bought or takPn
-in war. There are also plenty of yellow and brown people-God
+in war. There are also plenty of yellow and brown people&#8212;God
 made them as well as the blacks: the brown or red coloured
 people come with camels to buy slaves, &amp;c.; these red people
 bring the camels in order to carry themselves and their goods.
-His country made war with different nations-one called Koome,
+His country made war with different nations&#8212;one called Koome,
 another Korre, a third Komante, and a fourth Juke: the latter are
 marked like the New Zealanders. All these nations are black,
 and speak different languages. In his country they make images
@@ -340,17 +351,22 @@ the sun being to the N. or the S. of the road.</p>
 
 	<pb facs="liv_020003_0006" n="0006"/>
 <fw><seg rend="left">376</seg>	<seg rend="center"><hi rend="italic"><bibl>African Geography</bibl>.</hi></seg></fw>
-<p>The following is a more particular description of his route:&#8212;</p>
+<p>The following is a more particular description of his route:&#8212;
+<list rend="small">
+<lb/><space extent="4" unit="words"/><item><seg rend="right"><hi rend="smallcaps">Days.</hi><space extent="6" unit="words"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Kimcoul to Uppe <seg rend="right">.<space extent="1" unit="words"/>.<space extent="3" unit="chars"/>1<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Uppe to Auzilliga <seg rend="right">.<space extent="1" unit="words"/>.<space extent="3" unit="chars"/>1<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Auzilliga to Ocoom <seg rend="right">.<space extent="1" unit="words"/>.<space extent="3" unit="chars"/>7 <space extent="1" unit="chars"/> (long journeys.)<space extent="4" unit="chars"/><space extent="1" unit="words"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Ocoom to Mousookko <seg rend="right">.<space extent="3" unit="chars"/>4<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Mousookko to Ungwa <seg rend="right">.<space extent="3" unit="chars"/>6<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Ungwa to Uvangah <seg rend="right">.<space extent="1" unit="words"/>.<space extent="2" unit="chars"/>30 <space extent="1" unit="chars"/>(constant travel.)<space extent="3" unit="chars"/><space extent="1" unit="words"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Uvangah to Umblisse <seg rend="right">.<space extent="3" unit="chars"/>9<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item>Umblisse to New Calabar <seg rend="right">.<space extent="3" unit="chars"/>10<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item><seg rend="right">&#8212;<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+<lb/><space extent="4" unit="words"/><item><space extent="5" unit="words"/>Total <seg rend="right">.<space extent="3" unit="chars"/>68<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
+</list></p>
 
-<p>Kimcoul to U ppe
-U ppe to Auzilliga
-Auzilliga to Ocoom
-Ocoom to Mousookko
-Mousookko to Ungwa
-Ungwa to Uvangah .
-Uvangah to Umblisse
-Umblisse to New Calabar •
-Total
+<!-- 
 Days.
 I
 l
@@ -360,7 +376,8 @@ l
 30 ( constant travel.)
 9
 10
-68 days.</p>
+68 days.
+ -->
 
 <p>Uppe is 1 day from the great river Ayah. At Auzilliga there
 is a considerable river, but smaller than the Ayah: it runs westward

@@ -40,7 +40,7 @@
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/style-omv-journal.css"/>
-				<!--<link rel="stylesheet" type="text/css" href="style-omv.css"/>-->
+				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
 				</title>
@@ -565,7 +565,7 @@
 	<!-- For "lb" see above -->
 
 	<xsl:template match="list">
-		<span class="list" title="list">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>

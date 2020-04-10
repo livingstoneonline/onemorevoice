@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv.xsl" type="text/xsl"?>-->
-<?xml-stylesheet href="transcription-omv.xsl" type="text/xsl"?>
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv.xsl" type="text/xsl"?>
+<!--<?xml-stylesheet href="transcription-omv.xsl" type="text/xsl"?>-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000074"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Extract from Diary</title><!-- Change -->
-                <title type="alternate">Extract from Diary, May-June 1873</title><!-- Change; note addition of date -->
+                <title type="alternative">Extract from Diary, May-June 1873</title><!-- Change; note addition of date -->
                 <author>Wainwright, Jacob, ?-1892</author><!-- Change -->
                 <principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM">
@@ -38,7 +38,7 @@
             </titleStmt>
             <publicationStmt>
                 <authority>Livingstone Online</authority>
-                <publisher>University of Maryland Libraries</publisher>
+                <!-- An imprint of Livingstone Online --><publisher>University of Maryland Libraries</publisher>
                 <pubPlace>College Park, MD, USA</pubPlace>
                 <date>2018</date><!-- Change if necessary -->
                 <idno type="LEAP-ID">liv_000074</idno><!-- Change -->
@@ -46,8 +46,8 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <country  type="repository">United Kingdom</country><!-- Change as needed -->
-                        <settlement type="repository">Blantyre</settlement><!-- Change as needed --><!-- Added @type='repository' here. AW -->
+                        <country>United Kingdom</country><!-- Change as needed -->
+                        <settlement>Blantyre</settlement><!-- Change as needed --><!-- Added @type='repository' here. AW -->
                         <repository>David Livingstone Centre</repository><!-- Change as needed -->
                         <idno type="shelfmark">801</idno><!-- Change as needed -->
                     </msIdentifier>

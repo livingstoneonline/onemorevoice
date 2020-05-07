@@ -70,6 +70,7 @@
 			<!-- Note that @who initials are taken from <respStmt> above -->
 			<!-- Add new <change> elements below as needed. -->
 			<!-- Note that the most recent <change> should always be placed first, at the top -->
+			<change when="2020-05-07" who="#AW">Standardize TEI</change>
             <change when="2018-03-04" who="#AW">Further editing</change>
             <change when="2018-03-03" who="#AM">Proofing</change>
             <change when="2018-03-01" who="#AW">Transcription and TEI encoding</change>
@@ -81,17 +82,17 @@
 			<div rend="brown black"><!-- Change; this is the color of the writing; only use auto-suggested values -->
 
 	<pb facs="liv_000085_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
-<lb/><p rend="no-indent"><add place="marginleft" hand="#U" rend="blue black diagonal">836</add><!-- Inside white sticker --> <space extent="1" unit="words"/><space extent="1" unit="chars"/><settlement type="village">Ukhonongo</settlement> <date when="1873-10">October 1873</date><!-- Text goes here --></p>
+<lb/><p rend="no-indent"><add place="marginleft" hand="#U" rend="blue black diagonal">836</add><!-- Inside white sticker --> <space extent="1" unit="words"/><space extent="1" unit="chars"/><settlement>Ukhonongo</settlement> <date when="1873-10">October 1873</date><!-- Text goes here --></p>
 <lb/>
 <lb/><p>Sir</p>
 <lb/><p><space extent="1" unit="words"/>We have <choice><sic>heared</sic><corr>heard</corr></choice> in the month
 <lb/>of <date when="1873-08">August</date> that you have started from
-<lb/><geogName type="island">Zanzibar</geogName> for <settlement type="town"><choice><sic>Unyenyembe</sic><corr>Unyanyembe</corr></choice></settlement>, and again
+<lb/><geogName>Zanzibar</geogName> for <settlement><choice><sic>Unyenyembe</sic><corr>Unyanyembe</corr></choice></settlement>, and again
 <lb/>and again<!-- Not sure if this repetition is a mistake or choice, so leaving as is. AW --><!-- Yes I agree it should be left as it is AM --> lately we have <choice><sic>heared</sic><corr>heard</corr></choice> your<!-- see next comment - if that is correct then 'your' would make more sense AM --><!-- Agree. See next comment, so left this as "your". AW -->
-<lb/><choice><sic>arrivel</sic><corr>arrival</corr></choice><!-- Adrian, the word looks more like 'arrival' to me - usually a 'd' has a backward curl AM --><!-- On reviewing this, I've come to believe that he's simply misspelled arrival as arrivel, so have coded to reflect that. AW --> - your father<!-- David Livingstone --> died by <term type="ailment">disease</term>
-<lb/>beyond the <region>country of <term type="ethnic-group">Bisa</term></region>, but we have
+<lb/><choice><sic>arrivel</sic><corr>arrival</corr></choice><!-- Adrian, the word looks more like 'arrival' to me - usually a 'd' has a backward curl AM --><!-- On reviewing this, I've come to believe that he's simply misspelled arrival as arrivel, so have coded to reflect that. AW --> - your father<!-- David Livingstone --> died by disease
+<lb/>beyond the <region>country of <term type="collective">Bisa</term></region>, but we have
 <lb/>carried the corpse with us, 10 of our <term type="occupation">soldiers</term>
-<lb/>are lost and some have died. Our <w>h<subst><del>a</del><add place="over-text">u</add></subst>n<add place="above">ger</add></w>
+<lb/>are lost and some have died. Our <w>h<del>a</del><add place="over-text">u</add>n<add place="above">ger</add></w>
 <lb/>presses us to ask you<!-- Adrian, the text does not include the word 'for', but should it be supplied to make more grammatical sense? AM --><!-- I'm hesitant to include it as a matter of practice as if we start doing that then to be consistent we should add words every time they're missing. So unless supplying something is absolutely essential to clarifying context, I suggest we avoid doing it. AW  --> some clothes
 <lb/>to buy provision for our <term type="occupation">soldiers</term>.
 <lb/>And we should have an answer that
@@ -99,9 +100,9 @@
 <lb/>guns or not, and if you permit us
 <lb/>to fire guns, then send some powder
 <lb/>We have <choice><sic>wrote</sic><corr>written</corr></choice> these few words in the place 
-<lb/>of <persName><roleName>Sultan</roleName> or <roleName>king</roleName> Mbowra</persName></p>
-<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="1" unit="chars"/>The <persName><roleName>writer</roleName> Jacob Wainwright</persName></p>
-<lb/><p rend="no-indent"><space extent="6" unit="words"/><space extent="1" unit="chars"/><hi rend="double-underline"><orgName><persName><roleName>D<hi rend="sup dotted-underline">r</hi></roleName> Livingstone</persName> <choice><abbr>Exped</abbr><expan>Expedition</expan></choice></orgName></hi></p>
+<lb/>of <persName>Sultan or king Mbowra</persName></p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="1" unit="chars"/>The writer <persName>Jacob Wainwright</persName></p>
+<lb/><p rend="no-indent"><space extent="6" unit="words"/><space extent="1" unit="chars"/><hi rend="double-underline"><orgName><persName>D<hi rend="sup dotted-underline">r</hi> Livingstone</persName> <choice><abbr>Exped</abbr><expan>Expedition</expan></choice></orgName></hi></p>
 
 
 			</div>

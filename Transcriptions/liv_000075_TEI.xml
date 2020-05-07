@@ -82,6 +82,7 @@
 			<!-- Note that @who initials are taken from <respStmt> above -->
 			<!-- Add new <change> elements below as needed. -->
 			<!-- Note that the most recent <change> should always be placed first, at the top -->
+			<change when="2020-05-07" who="#AW">Standardize TEI</change>
 			<change when="2018-02-27" who="#AW">Coding review</change>
             <change when="2018-02-17" who="#AM">Proofing</change>
             <change when="2018-01-31" who="#HB">Transcription and TEI encoding</change>
@@ -94,18 +95,18 @@
 
 	<pb facs="liv_000075_0001" n="0001"/>
 <lb/><space extent="11" unit="words"/><space extent="4" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="1" unit="chars"/> <add rend="small diagonal" hand="#JW" place="inspace">1</add></fw> <!-- mark to the right of the 833 might be a page number AM --><!-- I think it is a "1" and in JW's hand, so have coded it that way. See also pages 3 and 5. AW -->
-<lb/><p rend="no-indent"><space extent="3" unit="words"/>The Character of <term type="ethnic-group"><choice><orig>Wabisa</orig><reg>Bisa</reg></choice> Tribe</term> -</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/>The Character of <term type="collective"><choice><orig>Wabisa</orig><reg>Bisa</reg></choice> Tribe</term> -</p>
 <lb/>
-<lb/><p rend="no-indent">The <term type="ethnic-group"><choice><orig>Wabisas</orig><reg>Bisa</reg></choice></term> are one of the bow &amp; arrow tribes.
+<lb/><p rend="no-indent">The <term type="collective"><choice><orig>Wabisas</orig><reg>Bisa</reg></choice></term> are one of the bow &amp; arrow tribes.
 <lb/>Some of them use spears without shields. They are
-<lb/><choice><sic>defficient</sic><corr>deficient</corr></choice> in courage, cleanliness, and <choice><sic>honest</sic><corr>honesty</corr></choice>. <gap agent="hole"/>In
+<lb/><choice><sic>defficient</sic><corr>deficient</corr></choice> in courage, cleanliness, and <choice><sic>honest</sic><corr>honesty</corr></choice>. <gap/>In
 <lb/>some part of the country industrious people are to <!-- geog:  -->
-<lb/>be found in agriculturing. The principal <term type="plant_foodstuff">corn</term>
-<lb/>are <term type="plant_foodstuff"><choice><orig>meze</orig><reg>maize</reg></choice></term><!-- more likely to be meze or maize? Have tagged meze as an alternative AM --><!-- See how I've fixed this. In short, I think he didn't know how to spell maize so did his best to sound it out. AW --> or <term type="plant_foodstuff"><term type="nationality">Indian</term> corn</term>, <term type="plant_foodstuff">millet</term>, <term type="plant_foodstuff">Ulazi</term> (a kind of <!-- Wasn't sure if "Indian" would be considered ethnic group as well? HB --><!-- I think ethnic group refers only to African tribes AM --><!-- That's correct & nationality is correct here. AW -->
-<lb/><term type="plant_foodstuff">corn</term> with small round seed). Numerous <term type="plant_foodstuff">beans</term> of
-<lb/>different sorts are to be found; but <term type="plant_foodstuff">rice</term> is not to be
-<lb/>found in any part. <term type="plant_foodstuff">Cucumber</term>, <term type="plant_foodstuff">pumpkin</term>, in some parts
-<lb/><term type="plant_foodstuff"><choice><sic>bannanas</sic><corr>bananas</corr></choice></term>, <term type="plant_foodstuff">sweet potatoes</term> &amp; some <term type="plant_foodstuff">esculent roots</term>. They
+<lb/>be found in agriculturing. The principal <term type="foodstuff">corn</term>
+<lb/>are <term type="foodstuff"><choice><orig>meze</orig><reg>maize</reg></choice></term><!-- more likely to be meze or maize? Have tagged meze as an alternative AM --><!-- See how I've fixed this. In short, I think he didn't know how to spell maize so did his best to sound it out. AW --> or <term type="foodstuff"><term type="collective">Indian</term> corn</term>, <term type="foodstuff">millet</term>, <term type="foodstuff">Ulazi</term> (a kind of <!-- Wasn't sure if "Indian" would be considered ethnic group as well? HB --><!-- I think ethnic group refers only to African tribes AM --><!-- That's correct & nationality is correct here. AW -->
+<lb/><term type="foodstuff">corn</term> with small round seed). Numerous <term type="foodstuff">beans</term> of
+<lb/>different sorts are to be found; but <term type="foodstuff">rice</term> is not to be
+<lb/>found in any part. <term type="foodstuff">Cucumber</term>, <term type="foodstuff">pumpkin</term>, in some parts
+<lb/><term type="foodstuff"><choice><sic>bannanas</sic><corr>bananas</corr></choice></term>, <term type="foodstuff">sweet potatoes</term> &amp; some <term type="foodstuff">esculent roots</term>. They
 <lb/>generally never build permanent habitations like
 <lb/>other <choice><sic>other</sic><corr/></choice> nations, in two years or four the houses
 <lb/>are abandoned to inhabit another place. When they
@@ -114,7 +115,7 @@
 <lb/>trees. Every sort of beads are useful <choice><sic>on</sic><corr>in</corr></choice> this region - <!-- geog:  -->
 <lb/>lead, &amp; even shells are both used for exchange.</p>
 <lb/><p rend="no-indent">The people are so ignorant that they take the <choice><sic>tins'</sic><corr>tin</corr></choice>
-<lb/>pieces for lead. When they, their <term type="occupation">sultan</term> dies, <supplied cert="high">they</supplied> never
+<lb/>pieces for lead. When they, their <term type="occupation">sultan</term> dies, <supplied>they</supplied> never
 <lb/>bury him in the same day. After 15 or some days
 <lb/>passes away and in the meantime a large or deep
 <lb/>sounded <choice><sic>drums</sic><corr>drum</corr></choice> is beating at <choice><sic>interval</sic><corr>intervals</corr></choice> of every <w>mi<seg type="hyphen">-</seg>
@@ -131,47 +132,47 @@
 <lb/>impenetrable thick wood, in which the natives <!-- So not tagging natives as orgName, or does this stay? HB --> <!-- I think you're right not to tag it AM --><!-- Correct. AW -->
 <lb/>themselves stores their whole provisions; which in the
 <lb/>time of war are useful to them. Some dig wells &amp;
-<lb/>bury their <term type="plant_foodstuff">corn</term> in it. The country of <region>Fipa</region> is very <!-- Not sure if Fippa/Fipa is correct? HB --><!-- Looks OK to me. AW -->
+<lb/>bury their <term type="foodstuff">corn</term> in it. The country of <region>Fipa</region> is very <!-- Not sure if Fippa/Fipa is correct? HB --><!-- Looks OK to me. AW -->
 <lb/><w>mount<add place="above">a</add>inous</w>. The rivers &amp; productions are same as
-<lb/>in <hi rend="dotted-underline"><region><choice><orig>Maronigoo</orig><reg>Marungu</reg></choice></region></hi>. <term type="plant_foodstuff">Rice</term> is unknown except where there <!-- The spelling again is questionable, plus there doesn't seem to be a rend for dotted-underline, so put this as placeholder. HB --><!-- I've introducted "dotted-underline" so you can now use it. AW -->
+<lb/>in <hi rend="dotted-underline"><region><choice><orig>Maronigoo</orig><reg>Marungu</reg></choice></region></hi>. <term type="foodstuff">Rice</term> is unknown except where there <!-- The spelling again is questionable, plus there doesn't seem to be a rend for dotted-underline, so put this as placeholder. HB --><!-- I've introducted "dotted-underline" so you can now use it. AW -->
 <lb/>are <w>re<add place="above">si</add>dences</w> of caravan from the <region>coast</region><!-- geog: -->. In the <w>cen<seg type="hyphen">-</seg>
 <lb break="no"/>ter</w> of the region, there are very large <choice><sic>fertil</sic><corr>fertile</corr></choice> districts <!-- geog:  -->
 <lb/>of immense level and almost uncovered with wood
 <lb/>commanding tiresome &amp; gloominess to the eyes. On the
 <lb/><date when="1873-10-08">8<hi rend="sup underline">th</hi> day of October</date> we arrived in the country called
 <lb/><hi rend="underline"><region>Unkonongs</region></hi> or <hi rend="underline"><region><choice><orig>Unyawezi</orig><reg>Unyamwezi</reg></choice></region></hi>. When we had reached <!-- Again, not sure if normalizations should be happening, or if these are similar but different names than I've come across. HB --><!-- Similarly I have used Roy Bridges' spelling to normalize the 2nd name AM --><!-- What Anne's done looks good to me. AW -->
-<lb/>in the <settlement type="town">town of <persName><roleName>Sultan</roleName> <hi rend="underline">Mboura</hi></persName></settlement>, hearing the
+<lb/>in the <settlement>town of <persName>Sultan <hi rend="underline">Mboura</hi></persName></settlement>, hearing the
 <lb/>interesting news, about the arrival of <persName>Oswell 
 <lb/><choice><orig>Livingston</orig><reg>Livingstone</reg></choice></persName>, the son of great <choice><sic>explourer</sic><corr>explorer</corr></choice> we wrote
-<lb/>him a <bibl>letter</bibl> for <settlement type="town">Unyemnyeambe</settlement>. After some
+<lb/>him a <bibl>letter</bibl> for <settlement>Unyemnyeambe</settlement>. After some
 <lb/>days when the <term type="occupation">messenger</term> returned to us <w>infor<seg type="hyphen">-</seg>
-<lb break="no"/>med</w> us, that he was not <persName><roleName>D<hi rend="sup underline">r</hi></roleName> <choice><orig>Livingston</orig><reg>Livingstone</reg></choice></persName>'s son
-<lb/>but <choice><sic>other</sic><corr>another</corr></choice> different gentleman by name of <persName><roleName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice></roleName>
+<lb break="no"/>med</w> us, that he was not <persName>D<hi rend="sup underline">r</hi> <choice><orig>Livingston</orig><reg>Livingstone</reg></choice></persName>'s son
+<lb/>but <choice><sic>other</sic><corr>another</corr></choice> different gentleman by name of <persName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice>
 <lb/>Cameron</persName>. When we heard this our hearts sunk
 <lb/>within us, or we rather were in <choice><sic>dispair</sic><corr>despair</corr></choice>. But
-<lb/><persName><roleName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice></roleName> Cameron</persName> had rescued us by sending
+<lb/><persName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice> Cameron</persName> had rescued us by sending
 <lb/>a bale of cloth and two tins of gun-powder.
-<lb/>Nearly at the beginning we at <hi rend="underline"><settlement type="town">Unyanyembe</settlement></hi>
-<lb/><persName><roleName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice></roleName> Cameron</persName> had accompanied two gentlemen
-<lb/><persName><roleName>M<hi rend="sup">r</hi></roleName> Moffie</persName> &amp; <persName><roleName>D<hi rend="sup underline">r</hi></roleName> Dillon</persName> the <choice><sic>later</sic><corr>latter</corr></choice> died or killed
-<lb/>himself with a gun, when he was suffering with <supplied cert="high">a</supplied>
-<lb/><term type="ailment">painful disease in his <unclear cert="low">hents</unclear></term> &amp; was buried <date when="1873-11-24"><choice><abbr>Nov<hi rend="sup underline">r</hi></abbr><expan>November</expan></choice>
+<lb/>Nearly at the beginning we at <hi rend="underline"><settlement>Unyanyembe</settlement></hi>
+<lb/><persName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice> Cameron</persName> had accompanied two gentlemen
+<lb/><persName>M<hi rend="sup">r</hi> Moffie</persName> &amp; <persName>D<hi rend="sup underline">r</hi> Dillon</persName> the <choice><sic>later</sic><corr>latter</corr></choice> died or killed
+<lb/>himself with a gun, when he was suffering with <supplied>a</supplied>
+<lb/>painful disease in his <unclear>hents</unclear> &amp; was buried <date when="1873-11-24"><choice><abbr>Nov<hi rend="sup underline">r</hi></abbr><expan>November</expan></choice>
 <lb/>24<hi rend="sup underline">th</hi> 1873</date>. We had spent half a month or more
-<lb/>in <settlement type="town"><hi rend="underline"><w>Un<del type="cancelled">a</del>yanyembe</w></hi></settlement> for the sake of business, or</p>
+<lb/>in <settlement><hi rend="underline"><w>Un<del>a</del>yanyembe</w></hi></settlement> for the sake of business, or</p>
 			</div>
 
             <div hand="#JW" rend="blue black">
 
 	<pb facs="liv_000075_0003" n="0003"/>
 <lb/><space extent="13" unit="words"/><space extent="4" unit="chars"/><fw><add rend="small diagonal brown" hand="#JW" place="inspace">1</add></fw>
-<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="0" unit="chars"/>The account of the country of <region>Unyamwezi</region><!-- mark to the right of the main text might be a page number AM --><!-- See page 1 and previous line. AW --></p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>The account of the country of <region>Unyamwezi</region><!-- mark to the right of the main text might be a page number AM --><!-- See page 1 and previous line. AW --></p>
 <lb/>
 <lb/><p rend="no-indent">The country of <region>Unyamwezi</region> is well <choice><sic>cutivated</sic><corr>cultivated</corr></choice> and the deserts
 <lb/>are covered with peculiar trees (called <term type="plant">Majombo</term>) these trees
 <lb/><choice><sic>is</sic><corr>are</corr></choice> very useful to the inhabitants, it <choice><sic>afords</sic><corr>affords</corr></choice> them not
 <lb/>only timber for building houses; but the most durable
 <lb/>bark which they strip from them are made into immense
-<lb/>bound baskets to preserve <term type="plant_foodstuff">corn</term> which answered the <w>pur<seg type="hyphen">-</seg>
+<lb/>bound baskets to preserve <term type="foodstuff">corn</term> which answered the <w>pur<seg type="hyphen">-</seg>
 <lb break="no"/>pose</w> of barns. And again the bark can be turned into
 <lb/>round smaller boxes, strong ropes, prepared garments which
 <lb/>the inhabitants wear, and may be also turned into many
@@ -195,32 +196,32 @@
 <!--<lb/><lb/><lb/>-->
 
 	<pb facs="liv_000075_0004" n="0004"/>
-<lb/><space extent="13" unit="words"/><space extent="0" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
+<lb/><space extent="13" unit="words"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
 <lb/><p rend="no-indent">As to our march when we <choice><sic>firs</sic><corr>first</corr></choice> entered in country of <region>Ugogo</region>
 <lb/>on the <date when="1874-02-28">ending of the month of February</date> we came to the
 <lb/>frontiers of <region>Ugogo</region> the name of the <term type="occupation">chief</term> of the place is -
-<lb/><persName><unclear cert="medium">Chiwiye</unclear></persName>, his city is situated on the river <geogName type="river">Mdabooro</geogName>.
+<lb/><persName><unclear>Chiwiye</unclear></persName>, his city is situated on the river <geogName>Mdabooro</geogName>.
 <lb/>Here the tribute was paid. <date when="1874-01-01">January 1<hi rend="sup underline">st</hi></date><supplied>.</supplied> Early in the
-<lb/>morning we started to a city called <settlement type="city">Koho</settlement>, here the
+<lb/>morning we started to a city called <settlement>Koho</settlement>, here the
 <lb/>tribute paid, in the night when we were asleep, a
 <lb/><term type="animal">she bear</term> <choice><sic>attacke</sic><corr>attacked</corr></choice> or <choice><sic>cought</sic><corr>caught</corr></choice> by the head one of the
 <lb/><term type="animal">dogs</term> of the people in our caravan, and when the
 <lb/>screaming of <choice><sic>of</sic><corr/></choice> the <term type="animal">dog</term> was heard the <term type="animal">bear</term> was
 <lb/>shot dead <choice><sic>in</sic><corr>on</corr></choice> the spot, but the <term type="animal">dog</term> had <choice><sic>recieved</sic><corr>received</corr></choice> a very
 <lb/>severe wound by the bite. <date when="1874-01-02">2<hi rend="sup">nd</hi> January</date> To a town
-<lb/>called <settlement type="town">Seke</settlement>, the third tribute or custom. here <choice><sic>wet</sic><corr>we met</corr></choice> 
-<lb/>a very large caravan from <geogName type="island">Zanzibar</geogName>. <date when="1874-01-04">4<hi rend="sup underline">th</hi> January</date>
-<lb/><choice><sic>arrived</sic><corr>Arrived</corr></choice> to a town called <settlement type="town">Kanyenye</settlement> in the centre of
+<lb/>called <settlement>Seke</settlement>, the third tribute or custom. here <choice><sic>wet</sic><corr>we met</corr></choice> 
+<lb/>a very large caravan from <geogName>Zanzibar</geogName>. <date when="1874-01-04">4<hi rend="sup underline">th</hi> January</date>
+<lb/><choice><sic>arrived</sic><corr>Arrived</corr></choice> to a town called <settlement>Kanyenye</settlement> in the centre of
 <lb/><region>Ugogo</region> here the 4<hi rend="sup underline">th</hi> tribute was paid. This <term type="occupation">King</term> or <term type="occupation">sultan</term>
-<lb/><app><rdg cert="medium"><choice><sic>its</sic><corr>is</corr></choice></rdg><rdg cert="low"><choice><sic>its</sic><corr>it's</corr></choice></rdg></app><!-- prefer 2nd alternative i.e. "is" makes more sense AM --><!-- I added @cert to distiguish and also switched order to put the prefered first. AW --> said that he is the greatest in <region>Ugogo</region>. This <add place="above"><unclear cert="medium">may</unclear></add> we
+<lb/><app><rdg><choice><sic>its</sic><corr>is</corr></choice></rdg><rdg><choice><sic>its</sic><corr>it's</corr></choice></rdg></app><!-- prefer 2nd alternative i.e. "is" makes more sense AM --><!-- I added @cert to distiguish and also switched order to put the prefered first. AW --> said that he is the greatest in <region>Ugogo</region>. This <add place="above"><unclear>may</unclear></add> we
 <lb/>had received a very heavy rain in the centre of <region>Ugogo</region><supplied>.</supplied>
 <lb/>It was about 6 <choice><sic>o,clock</sic><corr>o'clock</corr></choice> in the evening, hails also
 <lb/>fell accompanied with the rain, some of which were
-<lb/>so large as compared to <supplied cert="high">a</supplied> <term type="animal">hen</term>'s <term type="foodstuff">egg</term>. <choice><sic>the</sic><corr>The</corr></choice> violence of the
+<lb/>so large as compared to <supplied>a</supplied> <term type="animal">hen</term>'s <term type="foodstuff">egg</term>. <choice><sic>the</sic><corr>The</corr></choice> violence of the
 <lb/>wind came from <choice><abbr>N.E.</abbr><expan>North East</expan></choice> directions but it was much
 <lb/>inferior to what is called hurricane. <date when="1874-01-07">7<hi rend="sup underline">th</hi> <choice><abbr>Jan.</abbr><expan>January</expan></choice></date> <choice><sic>to</sic><corr>To</corr></choice> the
 <lb/><persName>Magomba</persName>'s son <date when="1874-01-08">8<hi rend="sup underline">th</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> Started morning early and 
-<lb/>went encamped in the <unclear cert="medium"><choice><sic>deset</sic><corr>desert</corr></choice></unclear>. <date when="1874-01-14">14<hi rend="sup underline">th</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> <choice><sic>we</sic><corr>We</corr></choice> had a
+<lb/>went encamped in the <unclear><choice><sic>deset</sic><corr>desert</corr></choice></unclear>. <date when="1874-01-14">14<hi rend="sup underline">th</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> <choice><sic>we</sic><corr>We</corr></choice> had a
 <lb/>mind to travel as far as to the other frontier
 <lb/>but we were <choice><sic>interupted</sic><corr>interrupted</corr></choice> and made to halt by the
 <lb/>people of an inferior <term type="occupation">chief</term> to pay them some custom
@@ -231,7 +232,7 @@
 <lb/>following</date> Early in the morning we started, and scarcely
 <lb/>marched about an hour we <choice><sic>we</sic><corr/></choice> again made to halt
 <lb/>for the same purpose of tribute to which we <choice><sic>we</sic><corr/></choice> did
-<lb/>On <date when="1874-01-15">the same day</date> we resumed our march to the <persName><roleName>King</roleName>
+<lb/>On <date when="1874-01-15">the same day</date> we resumed our march to the <persName>King
 <lb/>Mawala</persName> the most thorny part of the country. <choice><sic>some</sic><corr>Some</corr></choice> <!-- geog: Ugogo -->
 <lb/>clothes and also two guns, gunpowder, shots, gun-flint
 <lb/>and bullets were sent to the <term type="occupation">king</term> <choice><sic>acording</sic><corr>according</corr></choice> to his <w>de<supplied><seg type="hyphen">-</seg></supplied>
@@ -243,22 +244,22 @@
 <lb/>any work of that sort instead. <date when="1874-01-18">18<hi rend="sup underline">th</hi> January</date> -
 <lb/>Slept in the <w>dese<add place="above">r</add>t</w>, in the dry seasons the water is
 <lb/>by no means found in this <w>dese<add place="above">r</add>t</w>. <date when="1874-01-19">19<hi rend="sup underline">th</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> <choice><sic>arrived</sic><corr>Arrived</corr></choice> in
-<lb/>a small town <choice><sic>call</sic><corr>called</corr></choice> <settlement type="town">Chunyu</settlement>, but the inhabitants
+<lb/>a small town <choice><sic>call</sic><corr>called</corr></choice> <settlement>Chunyu</settlement>, but the inhabitants
 <lb/>live in the hills<supplied>.</supplied> <date when="1874-01-20">20<hi rend="sup underline">th</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> Started early in the
 <lb/>morning and about 5 <choice><sic>hours</sic><corr>hours'</corr></choice> march arrived in
-<lb/>town called <settlement type="town">Mpwapwa</settlement>, we took our lodging
+<lb/>town called <settlement>Mpwapwa</settlement>, we took our lodging
 <lb/>under the shady tree, here we met a <orgName>European</orgName> residing
-<lb/>in <settlement type="town">Mpwapwa</settlement> he seems to be <supplied cert="high">a</supplied> good and kind <choice><sic>gentlemen</sic><corr>gentleman</corr></choice>
-<lb/>for he made good reception to <persName><roleName>Mr</roleName> Moffie</persName>. <date when="1874-01-21"><choice><sic>the</sic><corr>The</corr></choice> next
-<lb/>day</date> we sent some of our men to <geogName type="island">Zanzibar</geogName> with
+<lb/>in <settlement>Mpwapwa</settlement> he seems to be <supplied>a</supplied> good and kind <choice><sic>gentlemen</sic><corr>gentleman</corr></choice>
+<lb/>for he made good reception to <persName>Mr Moffie</persName>. <date when="1874-01-21"><choice><sic>the</sic><corr>The</corr></choice> next
+<lb/>day</date> we sent some of our men to <geogName>Zanzibar</geogName> with
 <lb/><bibl>letters to the <term type="occupation">consul</term></bibl> to give him the news of our
 <lb/>coming. <date when="1874-01-22"><choice><abbr>Jan</abbr><expan>January</expan></choice> 22<hi rend="sup underline">nd</hi></date> <choice><sic>arrived</sic><corr>Arrived</corr></choice> in a town <choice><sic>a town</sic><corr/></choice> --
-<lb/><unclear cert="low"><settlement type="town">Toohugwe</settlement></unclear>, on which famine <choice><sic>prevales</sic><corr>prevails</corr></choice><supplied>.</supplied> <date when="1874-01-23">23<hi rend="sup underline">rd</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date>
+<lb/><unclear><settlement>Toohugwe</settlement></unclear>, on which famine <choice><sic>prevales</sic><corr>prevails</corr></choice><supplied>.</supplied> <date when="1874-01-23">23<hi rend="sup underline">rd</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date>
 <lb/><choice><sic>started</sic><corr>Started</corr></choice> early and crossed a flat plain on which
 <lb/><choice><sic>which</sic><corr/></choice> we found many animals, as <term type="animal">mules</term>, <term type="animal">Zebra</term>
 
 	<pb facs="liv_000075_0006" n="0006"/>
-<lb/><space extent="12" unit="words"/><space extent="0" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
+<lb/><space extent="12" unit="words"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
 <lb/>and large herds of other animals: after 5 <choice><sic>hours</sic><corr>hours'</corr></choice> march
 <lb/>we halted to have a dinner only for a time and at
 <lb/>one <choice><sic>o,clock</sic><corr>o'clock</corr></choice> we resumed our march. <choice><sic>about</sic><corr>About</corr></choice> 5 <choice><sic>o,clock</sic><corr>o'clock</corr></choice>
@@ -266,8 +267,8 @@
 <lb/>but the water was very far to a great distance.
 <lb/><date when="1874-01-24">24<hi rend="sup underline">th</hi> <choice><abbr>Jan.</abbr><expan>January</expan></choice></date> Early <unclear><choice><sic>started</sic><corr>start</corr></choice></unclear> and after crossing a very
 <lb/>rugged mountainous road arrived in a town called
-<lb/><settlement type="town">Kitangay</settlement> were found a large trading caravan
-<lb/>waiting the arrival of others from <geogName type="island">Zanzibar</geogName>, when
+<lb/><settlement>Kitangay</settlement> were found a large trading caravan
+<lb/>waiting the arrival of others from <geogName>Zanzibar</geogName>, when
 <lb/>had approached the town, they came and <choice><sic>meet</sic><corr>met</corr></choice> us
 <lb/>with usual drum and a trumpet or horn in the
 <lb/>dead of night when we were <choice><sic>quiet</sic><corr>quite</corr></choice> asleep in our huts
@@ -279,7 +280,7 @@
 <lb/>hour for some of us were behind. <date when="1874-01-30">30<hi rend="sup underline">th</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> <choice><sic>in</sic><corr>In</corr></choice> a village
 <lb/><date when="1874-01-31">31<hi rend="sup underline">st</hi> <choice><abbr>Jan</abbr><expan>January</expan></choice></date> <choice><sic>in</sic><corr>In</corr></choice> a village.</p>
 <lb/><p rend="no-indent"><date when="1874-02-01">February 1<hi rend="sup underline">st</hi></date> Leaving <placeName>Usagar</placeName> arrived to frontiers of
-<lb/><placeName>Uzigua</placeName> on the river <geogName type="river">Mkata</geogName> or <geogName type="river">Wame</geogName> at this time
+<lb/><placeName>Uzigua</placeName> on the river <geogName>Mkata</geogName> or <geogName>Wame</geogName> at this time
 <lb/>we found the river swelled or over flowed its banks <!-- geog: Mkata or Wame -->
 <lb/>and the former <app><rdg><choice><sic>bridge were</sic><corr>bridges were</corr></choice></rdg><rdg><choice><sic>bridge were</sic><corr>bridge was</corr></choice></rdg></app> washed away, by the violence
 <lb/>and rapid stream, and now <add place="below">^</add> <add place="above">we</add> were obliged to build a new

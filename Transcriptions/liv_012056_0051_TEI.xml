@@ -7,7 +7,7 @@
         <fileDesc>
             <titleStmt>
                 <title>Testimony (English Translation of Swahili Manuscript)</title><!-- Change -->
-                <title type="alternate">Testimony (English Translation of Swahili Manuscript), 12 November 1890</title><!-- Change; note addition of date -->
+                <title type="alternative">Testimony (English Translation of Swahili Manuscript), 12 November 1890</title><!-- Change; note addition of date -->
 				<author>Saleh Bin Osman</author>
                 <author>Glave, Edward J., 1863-1895</author><!-- Change -->
                 <principal>Adrian S. Wisnicki</principal>
@@ -79,6 +79,7 @@
 			<!-- Note that @who initials are taken from <respStmt> above -->
 			<!-- Add new <change> elements below as needed. -->
 			<!-- Note that the most recent <change> should always be placed first, at the top -->
+			<change when="2020-05-07" who="#AW">Standardize TEI</change>
 			<change when="2018-06-16" who="#AW">Coding review</change>
             <change when="2018-05-20" who="#AM">Proofing</change>
             <change when="2018-05-14" who="#HB">Transcription and TEI encoding</change>
@@ -96,7 +97,7 @@
 <lb/>their guns and wanted to fight the
 <lb/><orgName>Manyema</orgName> but <persName>Bonny</persName> interfered <!-- Not sure if this is Bonny or another name?? HB --><!-- Bonny is correct AM -->
 <lb/>and quiet was restored -</p>
-<lb/><p rend="no-indent"><add place="marginleft">-</add><persName>Sanga</persName> ran away to the <geogName type="waterfall">Falls</geogName> - <!-- geog: Stanley Falls -->
+<lb/><p rend="no-indent"><add place="marginleft">-</add><persName>Sanga</persName> ran away to the <geogName>Falls</geogName> - <!-- geog: Stanley Falls -->
 <lb/>and gave himself up to <persName>Tippu Tib</persName>
 <lb/>In the Evening of <persName>Barttelot</persName>'s death
 <lb/>both <orgName>Zanzibaris</orgName> &amp; <orgName>Londanese</orgName> danced
@@ -111,18 +112,18 @@
 
 	<pb facs="liv_012056_0053" n="0053"/>
 <lb/><fw rend="small"><add place="marginleft">26</add></fw>
-<lb/><p rend="no-indent"><add place="marginleft">.</add> <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> hearing<!-- Adrian could you check this - I think the 1st alternative is more likely AM --><!-- Yes, I think it's hearing. The "h" looks just like the "h" in "had" a few lines down. I removing that <app><rdg> coding. AW --> of the <roleName>Major</roleName>'s death
+<lb/><p rend="no-indent"><add place="marginleft">.</add> <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> hearing<!-- Adrian could you check this - I think the 1st alternative is more likely AM --><!-- Yes, I think it's hearing. The "h" looks just like the "h" in "had" a few lines down. I removing that <app><rdg> coding. AW --> of the Major's death
 <lb/>repaired to <persName>Tippu Tib</persName> &amp; demanded that
 <lb/><persName>Sanga</persName> should be executed which was <!-- unclear should have "super-low" as an option...I have no idea what that word is! HB --><!-- I think it is "executed" AM --><!-- I agree with Anne. AW -->
 <lb/>duly carried out - The <orgName>Arabs</orgName> said
 <lb/>they were very sorry but <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName>
-<lb/>remarked that "<persName><roleName>Major</roleName> Barttelot</persName>
+<lb/>remarked that "<persName>Major Barttelot</persName>
 <lb/>had killed himself"- one old <orgName>Arab</orgName>
 <lb/><persName>Salim Masoodi</persName> stated that according
 <lb/>to their own custom <persName>Sanga</persName> ought
 <lb/>not to die - "a man who <choice><sic>illtreats</sic><corr>ill-treats</corr></choice>
 <lb/>another man's wife is liable to
-<lb/>death by the<del><gap extent="1" unit="chars"/></del><!-- looks as though a character or 2 were scored out here - unsure - Adrian could you look at this? AM --><!-- Fixed. AW --> <w><subst><del><gap extent="2" unit="chars"/></del><add place="over-text">wo</add></subst>man's</w> husband
+<lb/>death by the<del><gap extent="1" unit="chars"/></del><!-- looks as though a character or 2 were scored out here - unsure - Adrian could you look at this? AM --><!-- Fixed. AW --> <w><del><gap extent="2" unit="chars"/></del><add place="over-text">wo</add>man's</w> husband
 <lb/>who however is not <choice><sic>punishd</sic><corr>punished</corr></choice>
 <lb/><add place="marginleft">,</add> the indignity offered to the woman
 <lb/>being sufficient reason to acquit him
@@ -133,17 +134,17 @@
 	<pb facs="liv_012056_0055" n="0055"/>
 <lb/><fw rend="small"><add place="marginleft">27</add></fw>
 <lb/>this is the spirit of the <orgName>Arab</orgName> and
-<lb/><orgName>Swahili</orgName> law, but the <roleName>major</roleName> being <!-- Not sure if the nationality tag is the right one here? HB --><!-- it's not a nationality - can be a language, people or culture - I changed the tag to <orgName> AM --><!-- Anne is correct. AW -->
+<lb/><orgName>Swahili</orgName> law, but the major being <!-- Not sure if the nationality tag is the right one here? HB --><!-- it's not a nationality - can be a language, people or culture - I changed the tag to <orgName> AM --><!-- Anne is correct. AW -->
 <lb/>a <choice><sic>whiteman</sic><corr>white man</corr></choice> the law became <w>in<seg type="hyphen">-</seg>
 <lb break="no"/>applicable</w> -</p>
-<lb/><p><space extent="2" unit="chars"/>After the <roleName>Major</roleName>'s death the
+<lb/><p><space extent="2" unit="chars"/>After the Major's death the
 <lb/>whole <orgName>Expedition</orgName> became disorganized
 <lb/>&amp; the <orgName><choice><sic>Manyema's</sic><corr>Manyemas</corr></choice></orgName> deserted on all sides
 <lb/>from <placeName>Banalya</placeName>, and when <persName>Stanley</persName>
 <lb/>returned he found <persName>Bonny</persName> the
 <lb/>sole <choice><sic>whiteman</sic><corr>white man</corr></choice> in command
 <lb/>&amp; a few wretched <orgName>Zanzibaris</orgName> who
-<lb/>were covered with <term type="ailment">sores</term> &amp; reduced
+<lb/>were covered with sores &amp; reduced
 <lb/>to mere skeletons by the many
 <lb/>months of <choice><sic>illtreatment</sic><corr>ill-treatment</corr></choice> &amp; hunger; not
 <lb/>one of them was able to carry a
@@ -155,19 +156,19 @@
 <lb/><fw rend="small"><add place="marginleft">28</add></fw>
 <lb/>load.</p>
 <lb/><p>. <persName>Ludi</persName> <choice><sic><persName>Barttelot</persName>s</sic><corr><persName>Barttelot</persName>'s</corr></choice> little boy was
-<lb/>suffering from a <term type="ailment">festering wound</term> on
+<lb/>suffering from a festering wound on
 <lb/>the leg which he had received from
-<lb/>a kick by the <roleName>Major</roleName> - He was going
-<lb/>to wash the <roleName>Major</roleName>'s feet one day
+<lb/>a kick by the Major - He was going
+<lb/>to wash the Major's feet one day
 <lb/>and had taken off one sock and
 <lb/>boot but the water proved too
-<lb/>cold and <persName>Barttelot</persName> <del type="strikethrough">which</del> resented
+<lb/>cold and <persName>Barttelot</persName> <del>which</del> resented
 <lb/>this by kicking <persName>Ludi</persName> with his heavy
 <lb/>boot cutting the boy's shin to the
 <lb/>bone, &amp; making a wound which
 <lb/>the <choice><sic>boys</sic><corr>boy's</corr></choice> impoverished condition <unclear>som</unclear>
-<lb/><unclear><gap extent="1" unit="words"/></unclear><!-- still unclear - I do not think it is "condensed" AM --><!-- Can't read it either, so have coded accordingly. This could also be the second part of the last word on the previous line, which is also unclear (and so coded) in my reading. AW --> in <term type="ailment">festering sore</term> from
-<lb/>which the <del type="cancelled">boy</del> eventually died.</p>
+<lb/><unclear><gap extent="1" unit="words"/></unclear><!-- still unclear - I do not think it is "condensed" AM --><!-- Can't read it either, so have coded accordingly. This could also be the second part of the last word on the previous line, which is also unclear (and so coded) in my reading. AW --> in festering sore from
+<lb/>which the <del>boy</del> eventually died.</p>
 
 	<pb facs="liv_012056_0058" n="0058"/>
 <lb/><!-- blank page HB -->
@@ -176,7 +177,7 @@
 <lb/><fw rend="small"><add place="marginleft">29</add></fw>
 <lb/><p rend="no-indent"><add place="marginleft">.</add> The <orgName>Zanzibaris</orgName> &amp; <orgName>Arabs</orgName> said that
 <lb/>had there been a man in command
-<lb/>at <settlement type="village">Yambuya</settlement> who had exercised
+<lb/>at <settlement>Yambuya</settlement> who had exercised
 <lb/>due tact in dealing with the <orgName>Arabs</orgName>
 <lb/>and had that man been honest <space extent="2" unit="chars"/>of
 <lb/>purpose and capable of proving
@@ -220,16 +221,16 @@
 <lb/>alleviate the sufferings of the <orgName>Zanzabaris</orgName>
 <lb/>&amp; protested against <choice><sic><persName>Barttelot</persName>s</sic><corr><persName>Barttelot</persName>'s</corr></choice> inhuman
 <lb/>conduct - but he was confined to
-<lb/>his bed by <term type="ailment">severe sickness</term> and
+<lb/>his bed by severe sickness and
 <lb/><persName>Barttelot</persName> ordered that none of the
 <lb/><orgName>Zanzibaris</orgName> were to visit his hut -</p>
 <lb/><p rend="no-indent"><add place="marginleft">.</add> <persName>Bonny</persName> also made a protest &amp;
-<lb/>in one <choice><sic>occassion</sic><corr>occasion</corr></choice> the <roleName>Major</roleName> ordered
+<lb/>in one <choice><sic>occassion</sic><corr>occasion</corr></choice> the Major ordered
 <lb/>the <orgName>Londanese</orgName> to arrest <persName>Bonny</persName>
 <lb/>for insubordination he having
 <lb/>prevented <persName>Barttelot</persName> by force
 <lb/>from striking someone; But
-<lb/>the <orgName>Londanese</orgName> did not obey <unclear cert="medium">so</unclear><!-- could be "so" --><!-- "So" looks more likely so I've changed to that, but left the <unclear> tag. AW --> <persName>Bonny</persName>
+<lb/>the <orgName>Londanese</orgName> did not obey <unclear>so</unclear><!-- could be "so" --><!-- "So" looks more likely so I've changed to that, but left the <unclear> tag. AW --> <persName>Bonny</persName>
 <lb/>threatened to defend themselves -</p>
 
 	<pb facs="liv_012056_0064" n="0064"/>
@@ -241,18 +242,18 @@
 	<pb facs="liv_012056_0065" n="0065"/>
 <lb/><fw rend="small"><add place="marginleft"><hi rend="underline">32</hi></add></fw>
 <lb/><p rend="no-indent">The above <app><rdg>narration</rdg><rdg>narrative</rdg></app> is supplied
-<lb/>by <persName>Saleh Bin Osman</persName>, <persName><roleName>Mr</roleName> Stanley</persName>'s
+<lb/>by <persName>Saleh Bin Osman</persName>, <persName>Mr Stanley</persName>'s
 <lb/><orgName><orgName>Zanzibari</orgName> <term type="occupation">servant</term></orgName>, he tells his story
 <lb/><add place="marginleft">of</add> what he learned, concerning these
 <lb/>events, from <orgName>Zanzibaris</orgName>, <orgName>Arabs</orgName>
 <lb/><orgName>Manyemas</orgName>, &amp; <orgName>Londanese</orgName> who
 <lb/>witnessed the different events enumerated</p>
-<lb/><p rend="no-indent">I have carefully translated from <unclear cert="low">Ki-Swahili</unclear><!-- still unclear - Ki-Swahili? --><!-- Yep. AW -->
+<lb/><p rend="no-indent">I have carefully translated from <unclear>Ki-Swahili</unclear><!-- still unclear - Ki-Swahili? --><!-- Yep. AW -->
 <lb/><persName>Saleh</persName>'s words &amp; do hereby solemnly
 <lb/>declare that I have truthfully
 <lb/>worded all he said</p>
 <lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/><date when="1890-11-12"><choice><abbr>Nov</abbr><expan>November</expan></choice> 12. <choice><abbr>90</abbr><expan>1890</expan></choice>.</date></p>
-<lb/><p><space extent="1" unit="words"/><space extent="3" unit="chars"/><settlement type="city">New York</settlement></p>
+<lb/><p><space extent="1" unit="words"/><space extent="3" unit="chars"/><settlement>New York</settlement></p>
 <lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/><persName>E. J Glave</persName>.</p>
 <lb/><p rend="no-indent"><hi rend="underline">Witnesses</hi></p>
 <lb/><p rend="no-indent"><space extent="1" unit="chars"/><persName>John B. Ritche</persName>

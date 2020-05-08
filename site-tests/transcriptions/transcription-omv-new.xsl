@@ -30,23 +30,23 @@
 
 	<!-- When not producing full HTML files, this template could be removed but javascript and CSS will need to be copied to correct location. -->
 	<xsl:template match="/">
-		<xsl:variable name="body-color">
+		<!--<xsl:variable name="body-color">
 			<xsl:apply-templates select="//body/@n[1]"/>
-		</xsl:variable>
+		</xsl:variable>-->
 		<html>
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<meta charset="UTF-8"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/style-omv.css"/>
+				<link rel="stylesheet" type="text/css" href="style-omv-new.css"/>
 				<!--<link rel="stylesheet" type="text/css" href="style-omv.css"/>-->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
 				</title>
 				<!--<link type="text/css" rel="stylesheet" href="http://jamescummings.github.io/LEAP/style.css"/>-->
 			</head>
-			<body style="background:#{$body-color};">
+			<body><!-- style="background:#{$body-color};" -->
 				<xsl:apply-templates select="TEI"/>
 			</body>
 		</html>
@@ -80,7 +80,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="transcription style-omv" style="background:#{$body-color};">
+		<div class="transcription style-omv"><!-- style="background:#{$body-color};" -->
 
 			<div class="TEI" style="background:#{$body-color};">
 				<div class="item-details">

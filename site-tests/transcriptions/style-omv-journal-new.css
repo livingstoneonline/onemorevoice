@@ -22,15 +22,21 @@ body.non-embedded-transcription,
 div.transcription-viewer-content.style {
 	background:#ccc2b2;
 }
-
+body {
+	padding-top:2em;
+	padding-bottom:2em;
+}
 
 /* 1. Textual divisions */
 
 div.transcription.style-omv-journal {
 	margin-left:auto;
 	margin-right:auto;
-	padding-left:2.5em;
-	padding-right:2.5em;
+	padding-top:1.5em;
+	padding-left:4em;
+	padding-right:4em;
+	border:1px gray solid;
+	border-radius:25px;
 	max-width:27em;
 	min-width:27em;
 	text-align:center;

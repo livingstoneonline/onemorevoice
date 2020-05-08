@@ -32,16 +32,20 @@ div.transcription.style-omv {
 	text-align:center;
 	font-family:"source sans pro", calibri, arial, helvetica, sans-serif;
 	font-size:16px;
+	padding-top:2em;
+	padding-bottom:2em;
 	/*white-space:nowrap;*/
 }
 div.transcription.style-omv .TEI {
 	display:inline-block;
 	white-space:nowrap;
-	padding-top:.5em;
+	padding-top:2em;
+	padding-bottom:2em;
 	padding-left:1em;
-	padding-right:1em;
+	padding-right:3.5em;
 	text-align:left;
 	background:#ccc2b2;
+	border-radius:25px;
 }
 /*
 @media all and (max-width:768px)  {
@@ -56,7 +60,7 @@ div.transcription.style-omv .item-details {
 }
 div.transcription.style-omv div.body {
 	display:block;
-	padding-bottom:2.4em;
+	/*padding-bottom:2.4em;*/
 	padding-left:3.5em;
 }
 div.transcription.style-omv .front,

@@ -98,8 +98,8 @@ display:inline-block;
 
 /* Links inside the navbar */
 .navbar a {
-color:black;
-font-size:1.2em;
+color:black !important;
+font-size:1.3em;
 font-weight:bold;
 text-decoration:none;
 padding:10px 10px;
@@ -135,7 +135,7 @@ text-decoration:none;
 
 /* Add a white background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-color:white;
+color:white !important;
 background-color:#424242;
 }
 
@@ -171,7 +171,7 @@ text-align:left;
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-color:black;
+color:black !important;
 background-color:#c9c9c9;
 }
 
@@ -179,7 +179,6 @@ background-color:#c9c9c9;
 /*Headings & Lines*/
 
 h1 {
-font-size:2.3em;
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -189,8 +188,8 @@ font-size:1.75em;
 
 h3 {
 font-size:.85em;
-font-family:Geneva, Tahoma, sans-serif;
 font-weight:300;
+font-family:Geneva, Tahoma, sans-serif;
 }
 
 hr {
@@ -279,6 +278,10 @@ a:hover {
 color:#e4524b;
 }
 
+.currentLink {
+   color: #640200;
+}
+
 
 /*Mobile*/
 
@@ -290,10 +293,14 @@ margin-left:auto;
 margin-right:auto;
 }
 h1 {
-font-size:2.1em;
+font-size:1.9em;
 }
 h2 {
-font-size:1.50em;
+font-size:1.25em;
+}
+h3 {
+font-size:.75em;
+font-weight:300;
 }
 }
 
@@ -305,10 +312,14 @@ margin-left:auto;
 margin-right:auto;
 }
 h1 {
-font-size:2.3em;
+font-size:2.1em;
 }
 h2 {
-font-size:1.75em;
+font-size:1.50em;
+}
+h3 {
+font-size:.8em;
+font-weight:300;
 }
 }
 
@@ -318,6 +329,16 @@ body {
 width:85%;
 margin-left:auto;
 margin-right:auto;
+}
+h1 {
+font-size:2.3em;
+}
+h2 {
+font-size:1.75em;
+}
+h3 {
+font-size:.85em;
+font-weight:300;
 }
 }
 

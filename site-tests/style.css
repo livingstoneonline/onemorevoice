@@ -24,7 +24,6 @@ margin-bottom:-1em;
 }*/
 
 .title, /*.links,*/ .footer {
-font-weight:bold;
 text-align:center;
 line-height:1.6em;
 }
@@ -32,6 +31,7 @@ line-height:1.6em;
 .title {
 /*margin-left:-10px;
 margin-right:-10px;*/
+font-weight:bold;
 padding-left:0.3em;
 padding-right:0.3em;
 /*padding-top:.4em;*/
@@ -47,7 +47,7 @@ padding-right:1em;
 }
 
 .footer {
-font-size:.8em;
+font-size:.85em;
 padding-top:.5em;
 }
 
@@ -75,6 +75,7 @@ padding-bottom:1em;
 
  /* Navbar container */
 .navbar {
+font-size:.9em;
 background-color:white;
 overflow:hidden;
 }
@@ -172,21 +173,23 @@ background-color:#c9c9c9;
 /*Headings & Lines*/
 
 h1 {
-font-size:1.9em;
-font-family:Verdana;
+font-size:2em;
+font-family:Palatino;
 }
 
 h2 {
 font-size:1.75em;
-font-family:Palatino;
 }
 
 h3 {
-font-size:1em;
+font-size:.9em;
 }
 
 hr {
 width:100%;
+background-color:gray; 
+height:1px; 
+border:0; 
 }
 
 .thick {
@@ -260,7 +263,7 @@ text-decoration:underline;
 }*/
 
 a, a:visited {
-color:#00a8e1;
+/*color:#00a8e1;*/
 text-decoration:none;
 }
 
@@ -279,7 +282,7 @@ margin-left:auto;
 margin-right:auto;
 }
 h1 {
-font-size:1.7em;
+font-size:2em;
 }
 h2 {
 font-size:1.50em;
@@ -294,7 +297,7 @@ margin-left:auto;
 margin-right:auto;
 }
 h1 {
-font-size:1.9em;
+font-size:2.2em;
 }
 h2 {
 font-size:1.75em;

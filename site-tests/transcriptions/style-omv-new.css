@@ -45,7 +45,8 @@ div.transcription.style-omv .TEI {
 	padding-right:3.5em;
 	text-align:left;
 	background:#ccc2b2;
-	border-radius:25px;
+	border: 1px gray solid;
+	/*border-radius:25px;*/
 }
 /*
 @media all and (max-width:768px)  {
@@ -102,13 +103,13 @@ div.transcription.style-omv .idno {
 	line-height:1.7;
 }
 div.transcription.style-omv hr.title-section {
-	width:27em;
+	/*width:27em;*/
 	height:0;
 	border:0;
 	border-top:1px solid #666666;	
 	margin-top:-0.4em;
 	margin-bottom:-0.4em;
-	margin-left:3.5em;
+	/*margin-left:3.5em;*/
 }
 div.transcription.style-omv .project-id,
 div.transcription.style-omv .project-encoding,
@@ -166,7 +167,7 @@ div.transcription.style-omv .pb-title:hover {
 	cursor:pointer;
 }
 div.transcription.style-omv .pb-title:first-of-type {
-	margin-top:0;
+	/*margin-top:0;*/
 }
 div.transcription.style-omv .lb {
 	display:block;

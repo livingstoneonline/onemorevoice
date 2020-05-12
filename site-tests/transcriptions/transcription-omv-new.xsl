@@ -95,12 +95,12 @@
 				<span class="project-id"><span class="bold">Digital edition and date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></span><br/>
 				<span class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></span><br/>
 				<span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span><br/>
-				<span class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></span><br/>
+				<span class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></span><!--<br/>-->
 				<!--<xsl:value-of select="//revisionDesc/change/date[not(.=preceding::date)]" separator=", "/>-->
 				<!--<span class="project-encoding"><span class="bold">Encoding conversion</span><xsl:text>: James Cummings (2015-03-02)</xsl:text></span><br/>
 				<span class="project-encoding"><span class="bold">Encoding review</span><xsl:text>: Lauren Geiger (2016-2017)</xsl:text></span><br/>
-				<span class="encoding-standard"><span class="bold">Encoding standardization</span><xsl:text>: Adrian S. Wisnicki (2015-2017)</xsl:text></span><br/>--><br/>
-					<hr class="title-section"/><br/>
+				<span class="encoding-standard"><span class="bold">Encoding standardization</span><xsl:text>: Adrian S. Wisnicki (2015-2017)</xsl:text></span><br/>--><!--<br/>-->
+					<!--<hr class="title-section"/><br/>-->
 				</div>
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>
@@ -616,6 +616,8 @@
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
 		<div class="page">
+			<br/><br/><br/>
+			<hr class="title-section"/>
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>
 			</span>
@@ -623,7 +625,17 @@
 		</div>
 	</xsl:template>
 
+	<xsl:template match="div/pb[1]" priority="10">
+		<br/><br/>
+		<hr class="title-section"/>
+		<span class="pb-title">
+			<xsl:value-of select="@n"/>
+		</span>
+	</xsl:template>
+
 	<xsl:template match="pb">
+		<br/><br/><br/>
+		<hr class="title-section"/>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -631,6 +643,8 @@
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
+		<br/><br/><br/>
+		<hr class="title-section"/>
 		<br/><span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
 		</span>

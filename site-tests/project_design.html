@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html>
+
+<head>
+    <title>Project Design | One More Voice</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="Project Design page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons,periodical poetry index,alex gil,jentry sayers,roopika risam,susan edwards,data preservation standards,fieldwork of empire,github" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="texts.html">texts</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">concepts
+					<i class="fa fa-caret-down"></i>
+				</button>
+                    <div class="dropdown-content">
+                        <a href="analytical_priorities.html">analytical priorities</a>
+                        <a href="project_design.html">project design</a>
+                        <a href="coding_guidelines.html">coding guidelines</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">misc
+					<i class="fa fa-caret-down"></i>
+				</button>
+                    <div class="dropdown-content">
+                        <a href="project_team.html">project team</a>
+                        <a href="bibliography.html">bibliography</a>
+                        <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a>                        
+                        <a href="mailto:awisnicki@yahoo.com">contact</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="title">
+        <img class="image" src="images/2.1-Slug-Map.jpg" alt="A processed spectral image of a page of David Livingstone's 1871 Field Diary. Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/). In addition to writing from Livingstone (throughout the page, rendered in various shades of blue) and the British Consul at Zanzibar John Kirk (at center of the page, rendered in black), this page contains an additional five lines of text (rendered in dark gray). Three of these are in Arabic and two in Nagari, the conventional script for Sanskrit as well as Hindi and Marathi. Further discussion of this page can be found here (https://livingstoneonline.org/spectral-imaging/livingstones-manuscript-structure#link9), while natural light and processed spectral images of the whole manuscript can be found here (https://livingstoneonline.org/system/ajax?page=0&sort=asc&order=Date%28s%29&view_pid=liv%3A000096&view_page=1). This page offers a good example of how a manuscript produced within the context of the British Empire and normally attributed to a single author (in this case, David Livingstone) can in fact contain unattributed writing from others, including non-European individuals." title="A processed spectral image of a page of David Livingstone's 1871 Field Diary. Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/). In addition to writing from Livingstone (throughout the page, rendered in various shades of blue) and the British Consul at Zanzibar John Kirk (at center of the page, rendered in black), this page contains an additional five lines of text (rendered in dark gray). Three of these are in Arabic and two in Nagari, the conventional script for Sanskrit as well as Hindi and Marathi. Further discussion of this page can be found here (https://livingstoneonline.org/spectral-imaging/livingstones-manuscript-structure#link9), while natural light and processed spectral images of the whole manuscript can be found here (https://livingstoneonline.org/system/ajax?page=0&sort=asc&order=Date%28s%29&view_pid=liv%3A000096&view_page=1). This page offers a good example of how a manuscript produced within the context of the British Empire and normally attributed to a single author (in this case, David Livingstone) can in fact contain unattributed writing from others, including non-European individuals." />
+        <h1>One More Voice</h1>
+        <hr />
+        <h3 class="italic">Lost Voices from the British Empire's Archives</h3>
+    </div>
+    <div class="main">
+
+		<p><span class="bold site-blue">Project Design</span></p>
+
+		<p><span class="italic">One More Voice</span> is a critical intervention because the project engages with literary and historical scholarship in a manner that <a href="analytical_priorities.html">shifts critical debate</a> in new directions. The project also models a way of encouraging new scholarship while bringing it to <a href="index.html">other practitioners and the public</a> at a time when funding options may suddenly be curtailed and normal publishing practices disrupted. Our project’s design both animates and contributes to this critical intervention through the application of minimal computing, a low-tech strategy for digital humanities development that has gained considerable traction among practitioners in recent years. A fundamental element of minimal computing lies in its emphasis on creating digital projects that rely on reduced resource use, as in the early case of the <a href="http://periodicalpoetry.org/">Periodical Poetry Index</a> (2010-present) and as later elaborated in work by <a href="https://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner/">Alex Gil</a>, <a href="https://go-dh.github.io/mincomp/thoughts/2016/10/02/minimal-definitions/">Jentry Sayers</a>, <a href="https://dh2017.adho.org/abstracts/196/196.pdf">Roopika Risam and Susan Edwards</a>, and others.</p>
+
+		<p>By building on such work, our team has been able to develop a publication method that is self-empowering and replicable, that allows for contributions from scholars with a range of technical competencies, and that results in online scholarship that can be consulted from a wide variety of devices and by individuals with varying degrees of bandwidth. The approach is also cost effective as it prioritizes the reuse of existing digital materials and tools, thereby enabling us to work quickly, while making it possible to develop as much of the site “in-house” as possible. Additionally, minimal computing has enabled our team to create a project that is easy to maintain and sustain long-term because of its small digital footprint and simplified file structure. Finally, our publication method underscores the long-term value of relevant prior work because the method shows that such work can be extended into new contexts, not all of them anticipated by the original creators.</p>
+
+		<p>In practical terms, we have built the <span class="italic">One More Voice</span> site through a combination of basic steps and strategic choices:</p>
+
+		<ul>
+			<li>Our site consists of a few basic file types, among them HTML, CSS, XML, PDF, and JPEG. This limited array of file types has enabled us to minimize our digital footprint, while mainly sticking to formats that often serve as universal standards for data preservation.</li>
+			<li>The foundational HTML and CSS site files have been appropriated from Adrian S. Wisnicki’s <a href="https://awisnicki.github.io/fieldwork_of_empire/">Fieldwork of Empire</a> minimal computing website (2019), a site Wisnicki <a href="https://awisnicki.github.io/fieldwork_of_empire/about.html">expressly built</a> to serve as a prototype for the present site.</li>
+			<li>By positioning <span class="italic">One More Voice </span>as a sibling or “imprint” site of <a href="https://livingstoneonline.org/">Livingstone Online</a>, we have made it possible to draw on the latter's primary materials as needed.</li>
+			<li>We have used open online repositories like the <a href="https://archive.org/">Internet Archive</a> and <a href="https://www.hathitrust.org/">HaithiTrust</a> to supplement the materials available from <span class="italic">Livingstone Online</span>.</li>
+			<li>We have streamlined the existing <span class="italic">Livingstone Online</span> <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines">coding guidelines</a> to create the coding guidelines for the <span class="italic">One More Voice</span> site.</li>
+			<li>Hosting on <a href="https://github.com/">GitHub</a> has eliminated publication costs while also exposing our underlying site files and allowing them to be used separately from the site if needed.</li>
+		</ul>
+
+		<p>The <span class="italic">One More Voice</span> site thus forgoes a variety of digital bells and whistles and instead relies on the strengths of simplified web development and reuse of previously developed and refined digital resources. Doing so has allowed us to start up quickly, work at a manageable scale, and produce quality scholarship, even if its scope at present remains limited. Beginning the project in this way also means that we have a solid foundation that can be scaled up in the future should we wish to take our project in more complex directions.</p>
+
+		<hr class="narrow-hr" />
+        
+        <p class="citation"><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball, Jared McDonald, and Mary Borgo Ton. "Project Design." <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, 2020. Web. <a href="project_design.html">http://onemorevoice.org/project_design.html</a>.</p>
+
+        <p class="caption"><span class="bold">Header image</span>: Jacob Erhardt, Johann Rebmann, Augustus Petermann, and C. Hellfarth, “Sizze Einer Karte Eines Theils von Ost u. Central Afrika Mit Angabe Der Wahrscheinlichen Lage u. Ausdehnung Des See’s von Uniamesi Nebs Bezeichnung Der Crenzen u. Wohnsitze Der Verschiedenen Völker Sowie Der Caravanen Strassen Nach Dem Innern” (1856). Courtesy of University College London Science Library. German missionaries and geographers produced this map and published it in a nineteenth-century German geographical journal, yet a series of unnamed Arab and African travelers provided much of the original data on which the map is based. The contributions of such non-European informants in a European publication such as this have historically gone uncredited, a type of practice that the <span class="italic">One More Voice</span> project seeks to challenge and change.</p>
+
+        <div class="footer">
+            <hr />
+                    <p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

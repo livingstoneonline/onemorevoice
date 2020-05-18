@@ -23,8 +23,8 @@ div.transcription-viewer-content.style {
 	background:#ccc2b2;
 }
 body {
-	padding-top:2em;
-	padding-bottom:2em;
+	/*padding-top:2em;
+	padding-bottom:2em;*/
 }
 
 /* 1. Textual divisions */
@@ -32,15 +32,15 @@ body {
 div.transcription.style-omv-journal {
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:1.5em;
-	padding-left:4em;
-	padding-right:4em;
-	border:1px gray solid;
-	/*border-radius:25px;*/
-	max-width:27em;
-	min-width:27em;
+	/*padding-top:1.5em;*/
+	/*padding-left:4em;
+	padding-right:4em;*/
+	/*border:1px gray solid;
+	border-radius:25px;*/
+	max-width:33em;
+	/*min-width:40em;*/
 	text-align:center;
-	font-family:"source sans pro", calibri, arial, helvetica, sans-serif;
+	font-family:Georgia, 'Times New Roman', Times, serif;
 	font-size:16px;
 	/*white-space:nowrap;*/
 }
@@ -56,9 +56,11 @@ div.transcription.style-omv-journal .TEI {
 }
 */
 div.transcription.style-omv-journal .item-details {
-	max-width:27em;
-	min-width:27em;
+	max-width:33em;
+	font-size:.95em;
+	/*min-width:27em;*/
 	white-space:normal;
+	/*line-height:1.8em;*/
 }
 div.transcription.style-omv-journal div.body {
 	display:block;
@@ -72,19 +74,27 @@ div.transcription.style-omv-journal .back {
 
 /* 1.5. Title section */
 
-div.transcription.style-omv-journal .title {
-	display:block;
+div.transcription.style-omv-journal .item-title {
+	/*display:block;
 	text-align:center;
 	margin-bottom:-0.5em;
 	font-size:1.4em;
-	font-variant:small-caps;
+	font-variant:small-caps;*/
+	font-size:1em;
+	padding-bottom:1em;
+	color:#2e68ac;
+	font-weight:bold;
 }
 div.transcription.style-omv-journal .author {
+	/*font-size:.95em;
+	padding-bottom:1em;
 	display:block;
-	text-align:center;
-	margin-bottom:.5em;
-	font-size:1.2em;
-	font-style:italic;
+	text-align:center;*/
+	/*margin-bottom:.5em;
+	font-size:1.2em;*/
+	/*font-style:italic;*/
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+}
 }
 div.transcription.style-omv-journal .authority {
 	font-size:.9em;
@@ -94,7 +104,7 @@ div.transcription.style-omv-journal .pub-date {
 	font-size:.9em;
 }
 div.transcription.style-omv-journal a:link {
-	color:#428bca !important;
+	color:#2e68ac !important;
 }
 div.transcription.style-omv-journal .idno {
 	font-size:.9em;
@@ -108,13 +118,14 @@ div.transcription.style-omv-journal hr.title-section {
 	margin-top:-0.4em;
 	margin-bottom:-0.4em;
 }
+
 div.transcription.style-omv-journal .project-id,
 div.transcription.style-omv-journal .project-encoding,
 div.transcription.style-omv-journal .encoding-standard {
-	display:inline-block;
-	padding-bottom:.4em;
-	font-size:.9em;
-	line-height:170%;
+	/*display:inline-block;*/
+	/*padding-bottom:.4em;*/
+	font-size:.95em;
+	/*line-height:170%;*/
 }
 div.transcription.style-omv-journal .project-encoding {
 	line-height:140% !important;
@@ -584,3 +595,43 @@ div.transcription.style-omv-journal .term-ailment,
 div.transcription.style-omv-journal .term-tribe {
 	border-bottom:2px #428bca dotted; /* change to 1px */
 }
+
+
+/* -------------------------------*/
+
+
+div.transcription.style-omv-journal h1 {
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+div.transcription.style-omv-journal h2 {
+font-size:1.75em;
+}
+
+div.transcription.style-omv-journal h3 {
+font-size:.9em;
+font-weight:300;
+font-family:Arial, Geneva, Tahoma, sans-serif;
+}
+
+div.transcription.style-omv-journal .title {
+/*margin-left:-10px;
+margin-right:-10px;*/
+font-weight:bold;
+padding-left:0.3em;
+padding-right:0.3em;
+/*padding-top:.4em;*/
+padding-bottom:1em;
+text-align:center;
+line-height:1.6em;
+}
+
+div.transcription.style-omv-journal .title hr {
+width:100%;
+background-color:gray; 
+height:1px; 
+border:0; 
+}
+
+
+

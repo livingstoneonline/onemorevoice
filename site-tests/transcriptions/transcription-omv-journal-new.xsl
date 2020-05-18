@@ -83,12 +83,54 @@
 		<div class="transcription style-omv-journal"><!-- style="background:#{$body-color};" -->
 
 			<div class="TEI" style="background:#{$body-color};">
+
+    <!--<div class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="texts.html">texts</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">concepts
+					<i class="fa fa-caret-down"></i>
+				</button>
+                    <div class="dropdown-content">
+                        <a href="analytical_priorities.html">analytical priorities</a>
+                        <a href="project_design.html">project design</a>
+                        <a href="coding_guidelines.html">coding guidelines</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">misc
+					<i class="fa fa-caret-down"></i>
+				</button>
+                    <div class="dropdown-content">
+                        <a href="contributors.html">contributors</a>
+                        <a href="bibliography.html">bibliography</a>
+                        <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a>                        
+                        <a href="mailto:awisnicki@yahoo.com">contact</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>-->
+    <div class="title"> 
+        <h1>One More Voice</h1>
+        <hr />
+        <h3 class="italic">Critically-edited Primary Text</h3>
+    </div>
+
 				<div class="item-details">
-				<span class="title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></span><br/>
-				<span class="author"><xsl:value-of select="//teiHeader//titleStmt/author" separator="; "/></span><br/>
-				<span class="project-id"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></span><br/>
-				<span class="project-id"><span class="bold">Region(s) of Focus:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='focusRegion']" separator=", "/></span><br/>
-				<span class="project-id"><span class="bold">Journal:</span>
+				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
+
+				<p class="project-id"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
+
+				<p class="project-id"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
+
+				<!--<p class="project-id"><span class="bold">Region(s) of Focus:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='focusRegion']" separator=", "/></p>-->
+
+				<p class="project-id"><span class="bold">Publication details:</span>
 				<xsl:text> </xsl:text>
 				<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
 				<xsl:text>, </xsl:text>
@@ -97,12 +139,12 @@
 				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/date"/>
 				<xsl:text>): </xsl:text>
 				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='pages']"/>
-				</span><br/>
-				<span class="project-id"><span class="bold">Digital edition and date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></span><br/>
-				<span class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></span><br/>
-				<span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span><br/>
-				<span class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></span><br/>
-				<span class="project-id"><span class="bold">Production note</span>: The <span class="italic">One More Voice</span> project team used the following steps to produce this critical edition of the text: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">Livingstone Online</span><xsl:text> </xsl:text><a href="http://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines" target="_blank">TEI P5 encoding guidelines</a>.</span><!--<br/>-->
+				</p>
+				<p class="project-id"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+				<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>
+				<p><span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span></p>
+				<p class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
+				<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p><!--<br/>-->
 				<!--<xsl:value-of select="//revisionDesc/change/date[not(.=preceding::date)]" separator=", "/>-->
 				<!--<span class="project-encoding"><span class="bold">Encoding conversion</span><xsl:text>: James Cummings (2015-03-02)</xsl:text></span><br/>
 				<span class="project-encoding"><span class="bold">Encoding review</span><xsl:text>: Lauren Geiger (2016-2017)</xsl:text></span><br/>

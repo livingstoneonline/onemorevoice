@@ -40,6 +40,7 @@
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-journal-new.css"/>
+				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>							
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
@@ -82,45 +83,46 @@
 		</xsl:variable>
 		<div class="transcription style-omv-journal"><!-- style="background:#{$body-color};" -->
 
-			<div class="TEI" style="background:#{$body-color};">
-
-<!--<div class="navbar">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="texts.html">texts</a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">concepts
-					<i class="fa fa-caret-down"></i>
-				</button>
-                    <div class="dropdown-content">
-                        <a href="analytical_priorities.html">analytical priorities</a>
-                        <a href="project_design.html">project design</a>
-                        <a href="coding_guidelines.html">coding guidelines</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">misc
-					<i class="fa fa-caret-down"></i>
-				</button>
-                    <div class="dropdown-content">
-                        <a href="contributors.html">contributors</a>
-                        <a href="bibliography.html">bibliography</a>
-                        <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a>                        
-                        <a href="mailto:awisnicki@yahoo.com">contact</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>-->
-    
+			<div class="navbar">
+        			<ul>
+			            <li><a href="index.html">home</a></li>
+            			<li><a href="texts.html">texts</a></li>
+			            <li>
+            			    <div class="dropdown">
+			                    <button class="dropbtn">concepts
+								<i class="fa fa-caret-down"></i>
+							</button>
+            			        <div class="dropdown-content">
+                        			<a href="analytical_priorities.html">analytical priorities</a>
+			                        <a href="project_design.html">project design</a>
+            			            <a href="coding_guidelines.html">coding guidelines</a>
+			                    </div>
+            			    </div>
+			            </li>
+			            <li>
+            			    <div class="dropdown">
+			                    <button class="dropbtn">misc
+								<i class="fa fa-caret-down"></i>
+							</button>
+            			        <div class="dropdown-content">
+                        			<a href="contributors.html">contributors</a>
+			                        <a href="bibliography.html">bibliography</a>
+            			            <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a>                        
+                        			<a href="mailto:awisnicki@yahoo.com">contact</a>
+			                    </div>
+            			    </div>
+			            </li>
+			        </ul>
+			    </div> 
+			       
 			    <div class="title"> 
+			    <img class="image" src="" alt="" title="" />
         			<h1>One More Voice</h1>
         			<hr />
         			<h3 class="italic">Critically-edited Primary Text</h3>
     			</div>
+
+			<div class="TEI" style="background:#{$body-color};">
 
 				<div class="item-details">
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>

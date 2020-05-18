@@ -115,11 +115,12 @@
             </li>
         </ul>
     </div>-->
-    <div class="title"> 
-        <h1>One More Voice</h1>
-        <hr />
-        <h3 class="italic">Critically-edited Primary Text</h3>
-    </div>
+    
+			    <div class="title"> 
+        			<h1>One More Voice</h1>
+        			<hr />
+        			<h3 class="italic">Critically-edited Primary Text</h3>
+    			</div>
 
 				<div class="item-details">
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
@@ -140,17 +141,19 @@
 				<xsl:text>): </xsl:text>
 				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='pages']"/>
 				</p>
+				
 				<p class="project-id"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+				
 				<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>
+				
 				<p><span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span></p>
+				
 				<p class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
+				
 				<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p><!--<br/>-->
-				<!--<xsl:value-of select="//revisionDesc/change/date[not(.=preceding::date)]" separator=", "/>-->
-				<!--<span class="project-encoding"><span class="bold">Encoding conversion</span><xsl:text>: James Cummings (2015-03-02)</xsl:text></span><br/>
-				<span class="project-encoding"><span class="bold">Encoding review</span><xsl:text>: Lauren Geiger (2016-2017)</xsl:text></span><br/>
-				<span class="encoding-standard"><span class="bold">Encoding standardization</span><xsl:text>: Adrian S. Wisnicki (2015-2017)</xsl:text></span><br/>--><!--<br/>-->
-					<!--<hr class="title-section"/><br/>-->
+				
 				</div>
+				
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>
 					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -219,7 +222,6 @@
 		</xsl:attribute>
 	</xsl:template>
 
-
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
@@ -264,7 +266,6 @@
 	<xsl:template match="choice">
 		<xsl:apply-templates/>
 	</xsl:template>
-
 	
 	<xsl:template match="choice/sic">
 			<xsl:variable name="choice-orig-sic">
@@ -287,23 +288,11 @@
 				</xsl:otherwise>
 			</xsl:choose>			
 			</xsl:variable>
-			<!--<xsl:if test="../corr">
-				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="../corr"/></xsl:attribute>
-			</xsl:if>-->
-		<span class="sic diplomatic">
-			<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
-			<xsl:apply-templates/>
-		</span>
+			<span class="sic diplomatic">
+				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
+				<xsl:apply-templates/>
+			</span>
 	</xsl:template>
-
-	<!--<xsl:template match="choice/corr">
-		<span class="corr edited hidden">
-			<xsl:if test="../sic">
-				<xsl:attribute name="title">sic: <xsl:value-of select="../sic"/></xsl:attribute>
-			</xsl:if>
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>-->
 
 	<!-- "Choice" variants begin here -->
 
@@ -391,7 +380,6 @@
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
-
 
 	<!-- Start of addSpan/anchor -->
 
@@ -487,17 +475,6 @@
 	<!-- For "facsimile" see above -->
 
 	<!-- For "front" see above -->
-
-	<!--<xsl:template match="figure">
-		<xsl:choose>
-		<xsl:when test="head">
-			<span class="figure" title="{concat('&quot;', head, '.&quot; ', figDesc)}">{figure}</span>
-		</xsl:when>
-		<xsl:otherwise>
-			<span class="figure" title="{figDesc}">{figure}</span>
-		</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>--><!-- Replaced with templated provided by James Cummings -->
 
 	<xsl:template match="figure">
 		<!-- newFigDesc goes away and applies templates to content to get it into a single dedupped string -->
@@ -633,16 +610,6 @@
 				<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
 			</xsl:otherwise>
 		</xsl:choose>
-			<!--<xsl:if test="@*">
-				<xsl:attribute name="title">
-					<xsl:value-of select="concat(name(), ': ')"/>
-					<xsl:for-each select="@*">
-						<xsl:sort/>
-						<xsl:value-of select="concat(name(),': ', ., '; ')"/>
-					</xsl:for-each>
-				</xsl:attribute>
-			</xsl:if>
-		</hr>-->
 	</xsl:template>
 
 	<xsl:template match="note">

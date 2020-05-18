@@ -84,7 +84,7 @@
 
 			<div class="TEI" style="background:#{$body-color};">
 
-    <!--<div class="navbar">
+<!--<div class="navbar">
         <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="texts.html">texts</a></li>
@@ -144,13 +144,15 @@
 				
 				<p class="project-id"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 				
-				<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>
+				<!--<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>-->
 				
 				<p><span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span></p>
 				
 				<p class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
 				
-				<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p><!--<br/>-->
+				<!--<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>--><br/>
+				
+				<hr class="title-section"/>
 				
 				</div>
 				
@@ -638,7 +640,7 @@
 	<xsl:template match="jc:page">
 		<div class="page">
 			<br/><br/><br/>
-			<hr class="title-section"/>
+			<!--<hr class="title-section"/>-->
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>
 			</span>
@@ -647,8 +649,7 @@
 	</xsl:template>
 
 	<xsl:template match="div/pb[1]" priority="10">
-		<br/><br/>
-		<hr class="title-section"/>
+		<!--<hr class="title-section"/>-->
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -656,7 +657,7 @@
 
 	<xsl:template match="pb">
 		<br/><br/><br/>
-		<hr class="title-section"/> 
+		<!--<hr class="title-section"/>-->
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -665,7 +666,7 @@
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<br/><br/><br/>
-		<hr class="title-section"/>
+		<!--<hr class="title-section"/>-->
 		<br/>
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>

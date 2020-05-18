@@ -47,6 +47,7 @@ div.transcription.style-omv-journal {
 div.transcription.style-omv-journal .TEI {
 	display:block;
 	text-align:justify;
+	/*text-align-last:justify;*/
 	padding-top:.5em;
 }
 /*
@@ -105,6 +106,9 @@ div.transcription.style-omv-journal .pub-date {
 }
 div.transcription.style-omv-journal a:link {
 	color:#2e68ac !important;
+}
+div.transcription.style-omv-journal a:hover {
+	color:#e4524b !important;
 }
 div.transcription.style-omv-journal .idno {
 	font-size:.9em;
@@ -379,7 +383,7 @@ div.transcription.style-omv-journal .verticalSpace {
 
 div.transcription.style-omv-journal .sic,
 div.transcription.style-omv-journal .corr {
-	border-bottom:2px #B33B24 dotted;
+	border-bottom:2px #e4524b dotted;
 }
 div.transcription.style-omv-journal .abbr,
 div.transcription.style-omv-journal .expan {

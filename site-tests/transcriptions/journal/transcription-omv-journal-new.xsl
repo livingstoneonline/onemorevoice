@@ -4,16 +4,17 @@
 	xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:jc="http://james.blushingbunny.net/ns.html"
 	xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs xd tei jc"
 	version="2.0">
+<!-- /*xmlns="http://www.w3.org/TR/REC-html40"*/ -->
 	<xd:doc scope="stylesheet">
 		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> Adrian S. Wisnicki</xd:p>
 			<xd:p>Rewire LO XSL to Create OMV XSL</xd:p>
 			<xd:p>May 2020</xd:p>
+			<xd:p>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</xd:p>
 		</xd:desc>
 	</xd:doc>
 	
-	<xsl:output method="xml" indent="no" />
-	<!-- It's necessary that this be "no" or otherwise extra space is kicked in when there are two <span>s in a row. It also appearst to solve other minor formatting issues -->
+	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
 	<xsl:param name="page" select="'0001'"/>
@@ -33,7 +34,8 @@
 			<head>
 				<meta charset="UTF-8"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-journal-new.css"/>
-				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>							
+				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>
+				<link rel="stylesheet" type="text/css" href="style-omv-mobile.css"/>						
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
@@ -75,7 +77,7 @@
 		</xsl:variable>
 		<div class="transcription"><!-- style="background:#{$body-color};" -->
 
-			<!--<div class="navbar">
+			<div class="navbar">
         			<ul>
 			            <li><a href="index.html">home</a></li>
             			<li><a href="texts.html">texts</a></li>
@@ -105,7 +107,7 @@
             			    </div>
 			            </li>
 			        </ul>
-			    </div>-->
+			    </div>
 			       
 			<div class="title"> 
 			    <img class="image" src="" alt="" title="" />
@@ -116,32 +118,28 @@
     			
     		<div class="item-details">
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
-
-				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
-
+				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
 				<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
-
-				<!--<p class="project-id"><span class="bold">Region(s) of Focus:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='focusRegion']" separator=", "/></p>-->
-
-				<p class="item-spec"><span class="bold">Publication details:</span>
-				<xsl:text> </xsl:text>
-				<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
-				<xsl:text> </xsl:text>
-				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='vol']"/>
-				<xsl:text> (</xsl:text>
-				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/date"/>
-				<xsl:text>): </xsl:text>
-				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='pages']"/>
+				<p class="item-spec"><span class="bold">Publication details:</span><xsl:text> </xsl:text>
+					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
+					<xsl:text> </xsl:text>
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='vol']"/>
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/date"/>
+					<xsl:text>): </xsl:text>
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='pages']"/>
 				</p>
-				
-				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-							
+				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+				<p class="item-spec"><span class="bold">Edition license:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability"/></p>
 				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-				
 				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
+				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
 			</div>
 
-			<hr class="narrow-hr"/>
+
+<!-- <a href="{@target}"> -->
+
+			<hr/>
 
 			<div class="TEI"><!-- style="background:#{$body-color};" -->	
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -161,12 +159,20 @@
 				</xsl:choose>
 			</div>
 			
-			<div class="item-details">
-
-				<!--<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>-->				
-				<!--<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>-->
-
+			<div class="item-details caption">
+				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web.</p>	
+				<p class="item-spec"><span class="bold">Production note</span>: The editors produced this critical edition with the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>
 			</div>
+			
+			<div class="footer">
+            	<hr />
+            	<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
+        	</div>
+			
 		</div>
 	</xsl:template>
 
@@ -230,7 +236,6 @@
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
 			<xsl:apply-templates/>
 		</div>
-		<br/>
 	</xsl:template>
 
 	<xsl:template match="lb">

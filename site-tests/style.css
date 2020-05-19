@@ -316,47 +316,14 @@ color:#e4524b;
 
 /*Mobile*/
 
-/* iPhone 5s: More than or equal to 320px */ 
-@media only screen and (min-width:320px) {
+/* iPad Air: More than or equal to 768px */
+@media only screen and (min-width:768px) {
 body {
-width:100%;
+width:80%;
+max-width:40em;
 margin-left:auto;
 margin-right:auto;
-}
-h1 {
-font-size:1.9em;
-}
-h2 {
-font-size:1.25em;
-}
-h3 {
-font-size:.8em;
-font-weight:300;
-}
-.narrow-hr {
-width:70%;
-}
-}
-
-/* iPhone 6+: More than or equal to 414px */
-@media only screen and (min-width:414px) {
-body {
-width:93%;
-margin-left:auto;
-margin-right:auto;
-}
-h1 {
-font-size:2.1em;
-}
-h2 {
-font-size:1.50em;
-}
-h3 {
-font-size:.85em;
-font-weight:300;
-}
-.narrow-hr {
-width:60%;
+font-size:1em;
 }
 }
 
@@ -382,13 +349,50 @@ width:50%;
 }
 }
 
-/* iPad Air: More than or equal to 768px */
-@media only screen and (min-width:768px) {
+/* iPhone 6+: More than or equal to 414px */
+@media only screen and (min-width:414px) {
 body {
-width:80%;
-max-width:40em;
+width:93%;
 margin-left:auto;
 margin-right:auto;
-font-size:1em;
+}
+h1 {
+font-size:2.1em;
+}
+h2 {
+font-size:1.50em;
+}
+h3 {
+font-size:.85em;
+font-weight:300;
+}
+.narrow-hr {
+width:60%;
 }
 }
+
+/* iPhone 5s: More than or equal to 320px */ 
+@media only screen and (min-width:320px) {
+body {
+width:100%;
+margin-left:auto;
+margin-right:auto;
+}
+h1 {
+font-size:1.9em;
+}
+h2 {
+font-size:1.25em;
+}
+h3 {
+font-size:.8em;
+font-weight:300;
+}
+.narrow-hr {
+width:70%;
+}
+}
+
+
+
+

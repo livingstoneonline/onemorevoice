@@ -126,7 +126,7 @@
 				<p class="item-spec"><span class="bold">Publication details:</span>
 				<xsl:text> </xsl:text>
 				<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
-				<xsl:text>, </xsl:text>
+				<xsl:text> </xsl:text>
 				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='vol']"/>
 				<xsl:text> (</xsl:text>
 				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/date"/>
@@ -139,13 +139,11 @@
 				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 				
 				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
-				
 			</div>
 
 			<hr class="narrow-hr"/>
 
-			<div class="TEI"><!-- style="background:#{$body-color};" -->
-				
+			<div class="TEI"><!-- style="background:#{$body-color};" -->	
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>
 					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">

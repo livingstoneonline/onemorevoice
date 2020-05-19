@@ -6,18 +6,13 @@
 	version="2.0">
 	<xd:doc scope="stylesheet">
 		<xd:desc>
-			<xd:p><xd:b>Author:</xd:b> James Cummings</xd:p>
-			<xd:p>First attempt at LEAP to HTML conversion</xd:p>
-			<xd:p>Updated in Feb/Mar 2015.</xd:p>
-		</xd:desc>
-		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> Adrian S. Wisnicki</xd:p>
-			<xd:p>Extensive revisions</xd:p>
-			<xd:p>Updated in Aug 2016.</xd:p>
+			<xd:p>Rewire LO XSL to Create OMV XSL</xd:p>
+			<xd:p>May 2020</xd:p>
 		</xd:desc>
 	</xd:doc>
 	
-	<xsl:output method="xml" indent="no"/>
+	<xsl:output method="xml" indent="no" />
 	<!-- It's necessary that this be "no" or otherwise extra space is kicked in when there are two <span>s in a row. It also appearst to solve other minor formatting issues -->
 
 	<!-- Incoming parameters -->
@@ -37,15 +32,12 @@
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<meta charset="UTF-8"/>
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-journal-new.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>							
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
 				</title>
-				<!--<link type="text/css" rel="stylesheet" href="http://jamescummings.github.io/LEAP/style.css"/>-->
 			</head>
 			<body><!-- style="background:#{$body-color};" -->
 				<xsl:apply-templates select="TEI"/>
@@ -81,7 +73,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="transcription style-omv-journal"><!-- style="background:#{$body-color};" -->
+		<div class="transcription"><!-- style="background:#{$body-color};" -->
 
 			<!--<div class="navbar">
         			<ul>
@@ -122,18 +114,18 @@
         			<h3 class="italic">Critically-edited Primary Text</h3>
     			</div>
 
-			<div class="TEI" style="background:#{$body-color};">
+			<div class="TEI"><!-- style="background:#{$body-color};" -->
 
 				<div class="item-details">
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
 
-				<p class="project-id"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
+				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
 
-				<p class="project-id"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
+				<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
 
 				<!--<p class="project-id"><span class="bold">Region(s) of Focus:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='focusRegion']" separator=", "/></p>-->
 
-				<p class="project-id"><span class="bold">Publication details:</span>
+				<p class="item-spec"><span class="bold">Publication details:</span>
 				<xsl:text> </xsl:text>
 				<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
 				<xsl:text>, </xsl:text>
@@ -144,17 +136,18 @@
 				<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='pages']"/>
 				</p>
 				
-				<p class="project-id"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+							
+				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+				
+				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
+				
 				
 				<!--<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>-->
 				
-				<p><span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span></p>
-				
-				<p class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
-				
 				<!--<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>--><br/>
 				
-				<hr class="title-section"/>
+				<hr class="narrow-hr"/>
 				
 				</div>
 				

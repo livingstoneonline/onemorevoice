@@ -19,17 +19,19 @@ Table of Contents
 
 /* 1. Textual divisions */
 
-.transcription {
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-size:16px;
-	text-align:center;
-	line-height:1.6em;
-	/*white-space:nowrap;*/
+body {
 	max-width:38em;
+	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
 	padding-left:1em;
 	padding-right:1em;
+}
+.transcription {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size:16px;
+	line-height:1.6em;
+	/*white-space:nowrap;*/
 }
 .item-details {
 	text-align:left;
@@ -41,6 +43,12 @@ Table of Contents
 	padding-bottom:1em;
 	color:#2e68ac;
 	font-weight:bold;
+}
+/* iPad Mini: Less than or equal to 703px */
+@media only screen and (max-width:703px) {
+.item-title {
+	padding-bottom:.5em;
+}
 }
 .item-spec {
 font-size:.9em;
@@ -211,26 +219,26 @@ margin-top:2em;
 margin-bottom:2em;
 }
 
-/* iPad Air: More than or equal to 768px */
-@media only screen and (min-width:768px) {
+/* iPad Air: Less than or equal to 768px */
+@media only screen and (max-width:768px) {
 }
 
-/* iPad Mini: More than or equal to 703px */
-@media only screen and (min-width:703px) {
+/* iPad Mini: Less than or equal to 703px */
+@media only screen and (max-width:703px) {
 .narrow-hr {
 width:50%;
 }
 }
 
-/* iPhone 6+: More than or equal to 414px */
-@media only screen and (min-width:414px) {
+/* iPhone 6+: Less than or equal to 414px */
+@media only screen and (max-width:414px) {
 .narrow-hr {
 width:60%;
 }
 }
 
-/* iPhone 5s: More than or equal to 320px */ 
-@media only screen and (min-width:320px) {
+/* iPhone 5s: Less than or equal to 320px */ 
+@media only screen and (max-width:320px) {
 .narrow-hr {
 width:70%;
 }

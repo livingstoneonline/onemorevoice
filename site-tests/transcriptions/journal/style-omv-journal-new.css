@@ -4,167 +4,80 @@ Table of Contents
 -----------------
 1. Textual divisions 
 1.5 Title section
-2. Letters 
-3. pb, lb, linenumber 
-4. Milestone and lines 
-5. p, ab, note, fw, column break, footnotes 
-6. del, unclear, app, gap, space 
-7. Editorial 
-8. @rend classes (except lines, page placement, colors) 
-9. Page placement 
-10. Colors 
-11. Lists and Tables 
-12. Misc 
+2. pb, lb, linenumber 
+3. Milestone and lines 
+4. p, ab, note, fw, column break, footnotes 
+5. del, unclear, app, gap, space 
+6. Editorial 
+7. @rend classes (except lines, page placement, colors) 
+8. Page placement 
+9. Colors 
+10. Lists and Tables 
+11. Misc 
 
 */
-/* Rules for containers either this is shown embedded in the viewer or not */
-body.non-embedded-transcription,
-div.transcription-viewer-content.style {
-	background:#ccc2b2;
-}
-body {
-	/*padding-top:2em;
-	padding-bottom:2em;*/
-}
+
 
 /* 1. Textual divisions */
 
-div.transcription.style-omv-journal {
-	margin-left:auto;
-	margin-right:auto;
-	/*padding-top:1.5em;*/
-	/*padding-left:4em;
-	padding-right:4em;*/
-	/*border:1px gray solid;
-	border-radius:25px;*/
-	max-width:33em;
-	/*min-width:40em;*/
-	text-align:center;
+.transcription {
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	font-size:16px;
+	text-align:center;
+	line-height:1.6em;
 	/*white-space:nowrap;*/
+	max-width:33em;
+	/*min-width:40em;*/
+	margin-left:auto;
+	margin-right:auto;
+	/*padding-left:4em;
+	padding-right:4em;*/
 }
-div.transcription.style-omv-journal .TEI {
+.TEI {
 	display:block;
 	text-align:justify;
-	/*text-align-last:justify;*/
 	padding-top:.5em;
 }
-/*
-@media all and (max-width:768px)  {
-.TEI {	
-	padding-left:1em;
-}
-*/
-div.transcription.style-omv-journal .item-details {
-	font-size:.95em;
-	/*min-width:27em;*/
-	white-space:normal;
-	/*line-height:1.8em;*/
+.item-details {
 	text-align:left;
+	/*white-space:normal;*/
 }
-div.transcription.style-omv-journal div.body {
+div.body {
 	display:block;
 	padding-bottom:2.4em;
 }
-div.transcription.style-omv-journal .front,
-div.transcription.style-omv-journal .back {
+.front,
+.back {
 	display:block;
 }
+a:link {
+	color:#2e68ac !important;
+}
+a:hover {
+	color:#e4524b !important;
 
 
 /* 1.5. Title section */
 
-div.transcription.style-omv-journal .item-title {
-	/*display:block;
-	text-align:center;
-	margin-bottom:-0.5em;
-	font-size:1.4em;
-	font-variant:small-caps;*/
+.item-title {
 	font-size:1em;
 	padding-bottom:1em;
 	color:#2e68ac;
 	font-weight:bold;
 }
-div.transcription.style-omv-journal .author {
-	/*font-size:.95em;
-	padding-bottom:1em;
-	display:block;
-	text-align:center;*/
-	/*margin-bottom:.5em;
-	font-size:1.2em;*/
-	/*font-style:italic;*/
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+.item-spec {
+font-size:.9em;
 }
 }
-div.transcription.style-omv-journal .authority {
-	font-size:.9em;
-	line-height:1.7;
-}
-div.transcription.style-omv-journal .pub-date {
-	font-size:.9em;
-}
-div.transcription.style-omv-journal a:link {
-	color:#2e68ac !important;
-}
-div.transcription.style-omv-journal a:hover {
-	color:#e4524b !important;
-}
-div.transcription.style-omv-journal .idno {
-	font-size:.9em;
-	line-height:1.7;
-}
-div.transcription.style-omv-journal hr.title-section {
-	width:27em;
-	height:0;
-	border:0;
-	border-top:1px solid #666666;	
-	margin-top:-0.4em;
-	margin-bottom:-0.4em;
-}
-
-div.transcription.style-omv-journal .project-id,
-div.transcription.style-omv-journal .project-encoding,
-div.transcription.style-omv-journal .encoding-standard {
-	/*display:inline-block;*/
-	/*padding-bottom:.4em;*/
-	font-size:.95em;
-	/*line-height:170%;*/
-}
-div.transcription.style-omv-journal .project-encoding {
-	line-height:140% !important;
-  	margin-left:30px;
-  	text-indent:-30px;	
+.item-details .narrow-hr {
+margin-top:0em;
+margin-bottom:0em;
 }
 
 
-/* 2. Letters */
+/* 2. pb, lb, linenumber */
 
-div.transcription.style-omv-journal .opener,
-div.transcription.style-omv-journal .closer,
-div.transcription.style-omv-journal .trailer {
-	margin-bottom:0px;
-}
-div.transcription.style-omv-journal .opener {
-	display:inline;
-	margin-top:1em;
-}
-div.transcription.style-omv-journal .closer,
-div.transcription.style-omv-journal .address {
-	display:block;
-}
-div.transcription.style-omv-journal .dateline {
-	display:inline;
-	text-indent:0;
-}
-div.transcription.style-omv-journal .signed {
-	display:inline-block;
-}
-
-
-/* 3. pb, lb, linenumber */
-
-div.transcription.style-omv-journal .pb-title {
+.pb-title {
 	display:block;
 	color:#428bca;
 	font-size:90%;
@@ -173,17 +86,17 @@ div.transcription.style-omv-journal .pb-title {
 	margin-left:0;
 	text-indent:0;
 }
-div.transcription.style-omv-journal .pb-title:hover {
+.pb-title:hover {
 	color:#AAA;
 	cursor:pointer;
 }
-div.transcription.style-omv-journal .pb-title:first-of-type {
+.pb-title:first-of-type {
 	margin-top:0;
 }
-div.transcription.style-omv-journal .lb {
+.lb {
 	display:block;
 }
-div.transcription.style-omv-journal .linenumber {
+.linenumber {
 	text-align:right;
 	float:left;
 	color:#8c8b85;
@@ -193,37 +106,36 @@ div.transcription.style-omv-journal .linenumber {
 	width:1em;
 	display:none;
 }
-div.transcription.style-omv-journal p .linenumber {
+p .linenumber {
 	text-indent:-1%;
 }
-div.transcription.style-omv-journal .p.noindent.linenumber {
+.p.noindent.linenumber {
 	text-indent:1em;
 }
-div.transcription.style-omv-journal p.center .linenumber {
+p.center .linenumber {
 	margin-left:-6.4em !important;
 }
-div.transcription.style-omv-journal p.right .linenumber {
+p.right .linenumber {
 	margin-left:-10.5em !important;
 }
-div.transcription.style-omv-journal .list .linenumber {
+.list .linenumber {
 	text-indent:0;	
 }
 
 
-/* 4. Milestone and lines */
+/* 3. Milestone and lines */
 
-div.transcription.style-omv-journal .milestone {/*check all of this against 1870 viewer*/
+.milestone {/*check all of this against 1870 viewer*/
 	display:block;
 	width:60%;
 	background:#FFF;
 	height:0;
 	margin-left:0;
 	margin-right:9%;
-	margin-top:-0.5em;
-	margin-bottom:-0.5em;
 	padding:0px;
 }
-div.transcription.style-omv-journal .line {
+
+.line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:27em !important;
@@ -233,14 +145,14 @@ div.transcription.style-omv-journal .line {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv-journal .doubleline {
+.doubleline {
 	border-top:4px double #8c8b8b;
 	display:block;
 	width:27em !important;
 	margin-left:9%;
 	text-align:left;
 }
-div.transcription.style-omv-journal .tripleline {
+.tripleline {
 	border-top:4px double #8c8b8b;
 	line-height:1.9em;
 	display:block;
@@ -248,7 +160,7 @@ div.transcription.style-omv-journal .tripleline {
 	margin-left:9%;
 	text-align:left;
 }
-div.transcription.style-omv-journal .halfline {
+.halfline {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:17.5em !important;
@@ -258,7 +170,7 @@ div.transcription.style-omv-journal .halfline {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv-journal .quarterline {
+.quarterline {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:11em !important;
@@ -268,10 +180,10 @@ div.transcription.style-omv-journal .quarterline {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv-journal .halfline.quarterline {
+.halfline.quarterline {
 	width: 22.5em !important;
 }
-div.transcription.style-omv-journal .second-line {
+.second-line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:27em !important;
@@ -283,7 +195,7 @@ div.transcription.style-omv-journal .second-line {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv-journal .third-line {
+.third-line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:27em !important;
@@ -294,119 +206,156 @@ div.transcription.style-omv-journal .third-line {
 	border:0;
 	border-top:1px solid #58484b;
 }
+hr {
+width:100%;
+background-color:gray; 
+height:1px; 
+border:0; 
+}
+.narrow-hr {
+width:45%;
+margin-top:2em;
+margin-bottom:2em;
+}
+
+/* iPad Air: More than or equal to 768px */
+@media only screen and (min-width:768px) {
+}
+
+/* iPad Mini: More than or equal to 703px */
+@media only screen and (min-width:703px) {
+.narrow-hr {
+width:50%;
+}
+}
+
+/* iPhone 6+: More than or equal to 414px */
+@media only screen and (min-width:414px) {
+.narrow-hr {
+width:60%;
+}
+}
+
+/* iPhone 5s: More than or equal to 320px */ 
+@media only screen and (min-width:320px) {
+.narrow-hr {
+width:70%;
+}
+}
 
 
-/* 5. p, ab, head, note, fw, column break, footnotes */
+/* 4. p, ab, head, note, fw, column break, footnotes */
 
-div.transcription.style-omv-journal .p {
+.p {
 	display:inline-block;
 	text-indent:25px;
 	margin-top:0;
 	margin-bottom:0;	
 }
-div.transcription.style-omv-journal .p.noindent,
-div.transcription.style-omv-journal .p.center,
-div.transcription.style-omv-journal .p.right {
+.p.noindent,
+.p.center,
+.p.right {
 	text-indent:0 !important;
 }
-div.transcription.style-omv-journal .p.right {
+.p.right {
 	margin-left:6em !important;
 }
-div.transcription.style-omv-journal .ab {
+.ab {
 	text-indent:0;
 	margin-top:0;
 	margin-bottom:0;
 }
-div.transcription.style-omv-journal .head {
+.head {
 	font-weight:normal;
 	text-indent:0 !important;
 	text-align:center !important;
 	display:block;
 }
-div.transcription.style-omv-journal .note {
+.note {
 	display:inline;
 }
-div.transcription.style-omv-journal .fw {
+.fw {
 	text-indent:0 !important;
 	display:block;
 	text-align:center;
 	margin-bottom:.5em;
 }
-div.transcription.style-omv-journal .fw .center {
+.fw .center {
 	display:inline
 }
-div.transcription.style-omv-journal .fw.pageno {
+.fw.pageno {
 	text-indent:0 !important;
 }
-div.transcription.style-omv-journal .fw.catch.right {
+.fw.catch.right {
 	margin-left:14em;
 	text-indent:0;
 }
-div.transcription.style-omv-journal .column-break {
+.column-break {
 	color: gray;
 	font-size: .8em;
 }
 
-/* 6. del, unclear, app, gap, space */
 
-div.transcription.style-omv-journal .del,
-div.transcription.style-omv-journal .del-by-over-text {
+/* 5. del, unclear, app, gap, space */
+
+.del,
+.del-by-over-text {
 	text-decoration:line-through;
 	/*color:#666666;*//*Previously used for .del-by-over-text*/
 }
-div.transcription.style-omv-journal .pb-del {
+.pb-del {
 	display:inline-block;
 	margin-bottom:.5em;
 }
-div.transcription.style-omv-journal .unclear {
+.unclear {
 	color:#706f6a;
 	border-bottom:1px dotted #706f6a;
 }
-div.transcription.style-omv-journal .app {
+.app {
 border-bottom: 1px dotted #706f6a;
 }
-div.transcription.style-omv-journal .gap {
+.gap {
 	border-bottom:1px dotted black;
 }
-div.transcription.style-omv-journal .space-other {
+.space-other {
 	border-bottom:1px dotted black;
 	display:block;
 }
-div.transcription.style-omv-journal .verticalSpace {
+.verticalSpace {
 	display:inline-block;
 	border-bottom:1px dotted black;
 	text-indent:0;
 }
 
 
-/* 7. Editorial */
+/* 6. Editorial */
 
-div.transcription.style-omv-journal .sic,
-div.transcription.style-omv-journal .corr {
+.sic,
+.corr {
 	border-bottom:2px #e4524b dotted;
 }
-div.transcription.style-omv-journal .abbr,
-div.transcription.style-omv-journal .expan {
+.abbr,
+.expan {
 	border-bottom:1px green dotted;
 }
-div.transcription.style-omv-journal .expan,
-div.transcription.style-omv-journal .hidden {
+.expan,
+.hidden {
 	display:none;
 }
-div.transcription.style-omv-journal .rdg {
+.rdg {
 	display:block;
 }
 
 
-/* 8. @rend classes (except colors, lines, and up-down placement) */
+/* 7. @rend classes (except colors, lines, and up-down placement) */
 
-div.transcription.style-omv-journal .bold {
+.bold {
 	font-weight:600;
 }
-div.transcription.style-omv-journal .caps {
+.caps {
 	font-variant:small-caps;
 }
-div.transcription.style-omv-journal .center {
+.center {
 	text-indent:0;
 	text-align:center;
 	margin-left:auto;
@@ -414,55 +363,55 @@ div.transcription.style-omv-journal .center {
 	display:block;
 }
 
-div.transcription.style-omv-journal .dottedunderline {
+.dottedunderline {
 	border-bottom:1px dashed;
 }
-div.transcription.style-omv-journal .doubleunderline {
+.doubleunderline {
 	border-bottom:3px double;
 }
-div.transcription.style-omv-journal .tripleunderline {
+.tripleunderline {
 	border-bottom:4px double;
 	text-decoration:underline;
 }
-div.transcription.style-omv-journal .indent {
+.indent {
 	text-indent:25px;
 }
-div.transcription.style-omv-journal .italic {
+.italic {
 	font-style:italic;
 }
-div.transcription.style-omv-journal .large {
+.large {
 	font-size:1.1em;
 }
-div.transcription.style-omv-journal .left {
+.left {
 	float:left;
 	text-indent:0;
 }
-div.transcription.style-omv-journal .overline {
+.overline {
 	text-decoration:overline;
 }
-div.transcription.style-omv-journal .overline.underline {
+.overline.underline {
 	text-decoration:overline underline;
 }
-div.transcription.style-omv-journal .right {
+.right {
 	text-indent:0;
 	float:right;
 }
-div.transcription.style-omv-journal .small {
+.small {
 	font-size:.85em;
 }
-div.transcription.style-omv-journal .smallcaps {
+.smallcaps {
 	font-variant:small-caps;
 }
-div.transcription.style-omv-journal .underline {
+.underline {
 	text-decoration:underline;
 }
-div.transcription.style-omv-journal .upsidedown {
+.upsidedown {
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(180deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(180deg);*/ /* Safari and Chrome */
 	/*-o-transform:rotate(180deg);*/ /* Opera */
 }
-div.transcription.style-omv-journal .vertical {
+.vertical {
 	/*-ms-transform:rotate(90deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(90deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(90deg);*/ /* Safari and Chrome */
@@ -470,14 +419,14 @@ div.transcription.style-omv-journal .vertical {
 }
 
 
-/* 9. Page placement */
+/* 8. Page placement */
 
-div.transcription.style-omv-journal .above,
-div.transcription.style-omv-journal .below,
-div.transcription.style-omv-journal .bottom,
-div.transcription.style-omv-journal .sub,
-div.transcription.style-omv-journal .sup,
-div.transcription.style-omv-journal .top {
+.above,
+.below,
+.bottom,
+.sub,
+.sup,
+.top {
 	/* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
 	font-size:.8em;
@@ -494,108 +443,108 @@ div.transcription.style-omv-journal .top {
      is already set and you can remove this rule */
 	vertical-align:baseline;
 }
-div.transcription.style-omv-journal .above,
-div.transcription.style-omv-journal .sup,
-div.transcription.style-omv-journal .top {
+.above,
+.sup,
+.top {
 	/* Move the superscripted text up */
 	top:-0.50em;
 }
-div.transcription.style-omv-journal .below,
-div.transcription.style-omv-journal .bottom,
-div.transcription.style-omv-journal .sub {
+.below,
+.bottom,
+.sub {
 	/* Move the subscripted text down, but only
      half as far down as the superscript moved up */
 	bottom:-0.50em;
 }
-div.transcription.style-omv-journal .true {
+.true {
 	display:inline-block;
 }/*Goes with standalone <note>s*/
 
 
-/* 10. Colors */
+/* 9. Colors */
 
-div.transcription.style-omv-journal .black {
+.black {
 	color:black;
 }
-div.transcription.style-omv-journal .blue {
+.blue {
 	color:blue;
 }
-div.transcription.style-omv-journal .blue.black {
+.blue.black {
 	color:#245a82;
 }
-div.transcription.style-omv-journal .brown {
+.brown {
 	color:#664d36;
 }
-div.transcription.style-omv-journal .brown.black {
+.brown.black {
 	color:#473225;
 }
-div.transcription.style-omv-journal .gray {
+.gray {
 	color:#706f6a;
 }
-div.transcription.style-omv-journal .gray.black {
+.gray.black {
 	color:#3d4245;
 }
-div.transcription.style-omv-journal .green {
+.green {
 	color:green;
 }
-div.transcription.style-omv-journal .orange {
+.orange {
 	color:orange;
 }
-div.transcription.style-omv-journal .purple {
+.purple {
 	color:purple;
 }
-div.transcription.style-omv-journal .red {
+.red {
 	color:#B33B24;
 }
-div.transcription.style-omv-journal .yellow {
+.yellow {
 	color:yellow;
 }
 
 
-/* 11. Lists and Tables */
-div.transcription.style-omv-journal .list {
+/* 10. Lists and Tables */
+.list {
 }
-div.transcription.style-omv-journal table {
+table {
 	font-size:.85em;
 	border-style:none;
 	margin-right:2em; 
 }/*Last item needed so that the text doesn't run up against the right edge in the viewer.*/
-div.transcription.style-omv-journal tr,
-div.transcription.style-omv-journal td {
+tr,
+td {
 	border-style:none;
 }
-div.transcription.style-omv-journal table .linenumber {
+table .linenumber {
 	display:none;
 }
 
 
-/* 12. Misc */
+/* 11. Misc */
 
-div.transcription.style-omv-journal .figure {
+.figure {
 	margin-left:0;
 	color:#666666;
 	font-size:.8em;
 	border-bottom:1px #666666 dotted;
 }
-div.transcription.style-omv-journal .p .figure,
-div.transcription.style-omv-journal .p.noindent .figure,
-div.transcription.style-omv-journal .ab .figure,
-div.transcription.style-omv-journal p .metamark {
+.p .figure,
+.p.noindent .figure,
+.ab .figure,
+p .metamark {
 	margin-left:0px !important;
 	text-indent:0px;
 }
-div.transcription.style-omv-journal .metamark {
+.metamark {
 	/*color:#666666;
 	border-bottom:1px #666666 dotted;*/
 }
-div.transcription.style-omv-journal .foreign,
-div.transcription.style-omv-journal .geogName,
-div.transcription.style-omv-journal .persName,
-div.transcription.style-omv-journal .orgName,
-div.transcription.style-omv-journal .quote,
-div.transcription.style-omv-journal .region,
-div.transcription.style-omv-journal .settlement,
-div.transcription.style-omv-journal .term-ailment,
-div.transcription.style-omv-journal .term-tribe {
+.foreign,
+.geogName,
+.persName,
+.orgName,
+.quote,
+.region,
+.settlement,
+.term-ailment,
+.term-tribe {
 	border-bottom:2px #428bca dotted; /* change to 1px */
 }

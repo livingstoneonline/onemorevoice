@@ -107,16 +107,14 @@
 			        </ul>
 			    </div>-->
 			       
-			    <div class="title"> 
+			<div class="title"> 
 			    <img class="image" src="" alt="" title="" />
-        			<h1>One More Voice</h1>
-        			<hr />
-        			<h3 class="italic">Critically-edited Primary Text</h3>
-    			</div>
-
-			<div class="TEI"><!-- style="background:#{$body-color};" -->
-
-				<div class="item-details">
+        		<h1>One More Voice</h1>
+        		<hr />
+        		<h3 class="italic">Critically-edited Primary Text</h3>
+    		</div>
+    			
+    		<div class="item-details">
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
 
 				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
@@ -142,14 +140,11 @@
 				
 				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
 				
-				
-				<!--<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>-->
-				
-				<!--<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>--><br/>
-				
-				<hr class="narrow-hr"/>
-				
-				</div>
+			</div>
+
+			<hr class="narrow-hr"/>
+
+			<div class="TEI"><!-- style="background:#{$body-color};" -->
 				
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>
@@ -166,6 +161,13 @@
 						<xsl:apply-templates select="text"/>
 					</xsl:otherwise>
 				</xsl:choose>
+			</div>
+			
+			<div class="item-details">
+
+				<!--<p class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></p>-->				
+				<!--<p class="project-id"><span class="bold">Production note</span>: The editors produced this critical edition as follows: 1) convert PDF of original document via OCR to Word, 2) convert Word to XML, 3) proofread XML against PDF of original document, 4) edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>-->
+
 			</div>
 		</div>
 	</xsl:template>

@@ -1,35 +1,32 @@
-div.transcription.style-omv-journal h1 {
+h1 {
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-div.transcription.style-omv-journal h2 {
+h2 {
 font-size:1.75em;
 }
 
-div.transcription.style-omv-journal h3 {
+h3 {
 font-size:.9em;
 font-weight:300;
 font-family:Arial, Geneva, Tahoma, sans-serif;
 }
 
-div.transcription.style-omv-journal .title {
-/*margin-left:-10px;
-margin-right:-10px;*/
+.title {
 font-weight:bold;
 padding-left:0.3em;
 padding-right:0.3em;
-/*padding-top:.4em;*/
 padding-bottom:1em;
 text-align:center;
 line-height:1.6em;
 font-style:normal;
 }
 
-div.transcription.style-omv-journal .title img {
+.title img {
 display:none;
 }
 
-div.transcription.style-omv-journal .title hr {
+.title hr {
 width:100%;
 background-color:gray; 
 height:1px; 
@@ -40,26 +37,26 @@ border:0;
 /*modeled on: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
 
  /* Navbar container */
-div.transcription.style-omv-journal .navbar {
+.navbar {
 font-size:.9em;
 background-color:white;
 overflow:hidden;
 line-height:100%;
 }
 
-div.transcription.style-omv-journal .navbar ul {
+.navbar ul {
 text-align:center;
 list-style:none;
 padding:5px 0;
 margin:0;
 }
 
-div.transcription.style-omv-journal .navbar li {
+.navbar li {
 display:inline-block;
 }
 
 /* Links inside the navbar */
-div.transcription.style-omv-journal .navbar a {
+.navbar a {
 color:black !important;
 font-size:1.3em;
 font-weight:bold;
@@ -67,18 +64,18 @@ text-decoration:none;
 padding:10px 10px;
 }
 
-div.transcription.style-omv-journal .navbar, .dropdown {
+.navbar, .dropdown {
 display:inline;
 }
 
 /* The dropdown container */
-div.transcription.style-omv-journal .dropdown {
+.dropdown {
 /*float:left;*/
 overflow:hidden;
 }
 
 /* Dropdown button */
-div.transcription.style-omv-journal .dropdown .dropbtn {
+.dropdown .dropbtn {
 color:black;
 font-size:1.2em;
 font-weight:bold;
@@ -91,27 +88,27 @@ padding:10px 10px;
 }
 
 /* Remove underlining on dropdown button on hover */
-div.transcription.style-omv-journal .dropbtn:hover {
+.dropbtn:hover {
 text-decoration:none;
 }
 
 /* Add a white background color to navbar links on hover */
-div.transcription.style-omv-journal .navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
 color:white !important;
 background-color:#424242;
 }
 
-div.transcription.style-omv-journal .navbar a:hover {
+.navbar a:hover {
 text-decoration:underline;
 }
 
 /* Show the dropdown menu on hover */
-div.transcription.style-omv-journal .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
 display:block;
 } 
 
 /* Dropdown content (hidden by default) */
-div.transcription.style-omv-journal .dropdown-content {
+.dropdown-content {
 background-color:#e6e6e6;
 box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
 display:none;
@@ -121,7 +118,7 @@ z-index:1;
 }
 
 /* Links inside the dropdown */
-div.transcription.style-omv-journal .dropdown-content a {
+.dropdown-content a {
 font-size:1em;
 color:black;
 text-decoration:none;
@@ -132,7 +129,7 @@ text-align:left;
 }
 
 /* Add a grey background color to dropdown links on hover */
-div.transcription.style-omv-journal .dropdown-content a:hover {
+.dropdown-content a:hover {
 color:black !important;
 background-color:#c9c9c9;
 }

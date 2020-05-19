@@ -83,7 +83,7 @@
 		</xsl:variable>
 		<div class="transcription style-omv-journal"><!-- style="background:#{$body-color};" -->
 
-			<div class="navbar">
+			<!--<div class="navbar">
         			<ul>
 			            <li><a href="index.html">home</a></li>
             			<li><a href="texts.html">texts</a></li>
@@ -113,7 +113,7 @@
             			    </div>
 			            </li>
 			        </ul>
-			    </div> 
+			    </div>-->
 			       
 			    <div class="title"> 
 			    <img class="image" src="" alt="" title="" />

@@ -3,7 +3,6 @@
 Table of Contents
 -----------------
 1. Textual divisions 
-1.5 Title section
 2. pb, lb, linenumber 
 3. Milestone and lines 
 4. p, ab, note, fw, column break, footnotes 
@@ -30,17 +29,13 @@ Table of Contents
 	/*min-width:40em;*/
 	margin-left:auto;
 	margin-right:auto;
-	/*padding-left:4em;
-	padding-right:4em;*/
+	padding-left:1em;
+	padding-right:1em;
 }
 .TEI {
 	display:block;
 	text-align:justify;
 	padding-top:.5em;
-}
-.item-details {
-	text-align:left;
-	/*white-space:normal;*/
 }
 div.body {
 	display:block;
@@ -50,15 +45,10 @@ div.body {
 .back {
 	display:block;
 }
-a:link {
-	color:#2e68ac !important;
+.item-details {
+	text-align:left;
+	/*white-space:normal;*/
 }
-a:hover {
-	color:#e4524b !important;
-
-
-/* 1.5. Title section */
-
 .item-title {
 	font-size:1em;
 	padding-bottom:1em;
@@ -67,12 +57,15 @@ a:hover {
 }
 .item-spec {
 font-size:.9em;
-}
-}
-.item-details .narrow-hr {
 margin-top:0em;
-margin-bottom:0em;
 }
+a:link {
+	color:#2e68ac !important;
+}
+a:hover {
+	color:#e4524b !important;
+}
+
 
 
 /* 2. pb, lb, linenumber */
@@ -91,7 +84,7 @@ margin-bottom:0em;
 	cursor:pointer;
 }
 .pb-title:first-of-type {
-	margin-top:0;
+	margin-top:0 !important;
 }
 .lb {
 	display:block;

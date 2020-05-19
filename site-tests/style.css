@@ -14,27 +14,20 @@ color:#191716;
 width:100%;
 }
 
-/*.links {
-font-size:1.1em;
-color:#302c2a;
-padding-top:.5em;
-padding-bottom:1.2em;
-margin-top:-1em;
-margin-bottom:-1em;
-}*/
+body{
+width:80%;
+max-width:38em;
+margin-left:auto;
+margin-right:auto;
+}
 
-.title, /*.links,*/ .footer {
+.title, .footer {
 text-align:center;
 line-height:1.6em;
 }
 
 .title {
-/*margin-left:-10px;
-margin-right:-10px;*/
 font-weight:bold;
-padding-left:0.3em;
-padding-right:0.3em;
-/*padding-top:.4em;*/
 padding-bottom:1em;
 }
 
@@ -43,8 +36,6 @@ text-align:left;
 line-height:1.8em;
 margin-left:auto;
 margin-right:auto;
-padding-left:1em;
-padding-right:1em;
 }
 
 .citation {
@@ -196,11 +187,8 @@ background-color:#c9c9c9;
 /*Headings & Lines*/
 
 h1 {
+font-size:2.1em;
 font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-h2 {
-font-size:1.75em;
 }
 
 h3 {
@@ -291,15 +279,6 @@ text-decoration:underline;
 
 /*Links*/
 
-/*.links a {
-color:#191716;
-text-decoration:none;
-}
-
-.links a:hover {
-text-decoration:underline;
-}*/
-
 a, a:visited {
 color:#2e68ac;
 /*text-decoration:none;*/
@@ -312,87 +291,6 @@ color:#e4524b;
 .currentLink {
    color: #640200;
 }
-
-
-/*Mobile*/
-
-/* iPad Air: More than or equal to 768px */
-@media only screen and (min-width:768px) {
-body {
-width:80%;
-max-width:40em;
-margin-left:auto;
-margin-right:auto;
-font-size:1em;
-}
-}
-
-/* iPad Mini: More than or equal to 703px */
-@media only screen and (min-width:703px) {
-body {
-width:85%;
-margin-left:auto;
-margin-right:auto;
-}
-h1 {
-font-size:2.3em;
-}
-h2 {
-font-size:1.75em;
-}
-h3 {
-font-size:.9em;
-font-weight:300;
-}
-.narrow-hr {
-width:50%;
-}
-}
-
-/* iPhone 6+: More than or equal to 414px */
-@media only screen and (min-width:414px) {
-body {
-width:93%;
-margin-left:auto;
-margin-right:auto;
-}
-h1 {
-font-size:2.1em;
-}
-h2 {
-font-size:1.50em;
-}
-h3 {
-font-size:.85em;
-font-weight:300;
-}
-.narrow-hr {
-width:60%;
-}
-}
-
-/* iPhone 5s: More than or equal to 320px */ 
-@media only screen and (min-width:320px) {
-body {
-width:100%;
-margin-left:auto;
-margin-right:auto;
-}
-h1 {
-font-size:1.9em;
-}
-h2 {
-font-size:1.25em;
-}
-h3 {
-font-size:.8em;
-font-weight:300;
-}
-.narrow-hr {
-width:70%;
-}
-}
-
 
 
 

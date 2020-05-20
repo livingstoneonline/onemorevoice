@@ -78,9 +78,10 @@
 		<xsl:variable name="license">
 			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/ref/@target"/>
 		</xsl:variable>
-		<xsl:variable name="file-URI">
-			<xsl:value-of select="base-uri()"/>
-		</xsl:variable>
+		<xsl:variable name="base-uri" select="base-uri(.)"/>
+		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
+ 		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
+
 		<div class="transcription"><!-- style="background:#{$body-color};" -->
 
 			<div class="navbar">
@@ -141,10 +142,7 @@
 				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
 				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
 			</div>
-
-
-<!-- <a href="{@target}"> -->
-
+\
 			<hr/>
 
 			<div class="TEI"><!-- style="background:#{$body-color};" -->	
@@ -170,7 +168,7 @@
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <xsl:value-of select="$file-URI"/></p>	
+				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a></p>	
 				<p class="item-spec"><span class="bold">Production note</span>: The editors produced this critical edition with the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>
 			</div>
 			

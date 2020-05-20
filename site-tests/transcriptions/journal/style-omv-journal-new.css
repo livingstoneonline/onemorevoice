@@ -381,7 +381,7 @@ border-bottom: 1px dotted #706f6a;
 	font-style:italic;
 }
 .large {
-	font-size:1.1em;
+	font-size:1.3em;
 }
 .left {
 	float:left;
@@ -525,9 +525,17 @@ table .linenumber {
 	margin-left:0;
 	color:#666666;
 	font-size:.8em;
-	border-bottom:1px #666666 dotted;
+	/*border-bottom:1px #666666 dotted;*/
 }
-.p .figure,
+.image-medium {
+	width:60%;
+	display:inline-block;
+}
+.image-small {
+	width:40%;
+	display:inline-block;
+}
+.p figure,
 .p.noindent .figure,
 .ab .figure,
 p .metamark {

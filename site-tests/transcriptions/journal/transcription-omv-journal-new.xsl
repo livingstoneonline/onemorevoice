@@ -163,7 +163,7 @@
 				</xsl:choose>
 			</div>
 			
-			<div class="item-details caption">
+			<div class="final-item-details caption">
 				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
@@ -503,8 +503,14 @@
 			<xsl:when test="not(head) and $newFigDesc/text()">
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
 			</xsl:when>
+			<xsl:when test="..//graphic[@n='medium']">
+				<span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='small']">
+				<span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
 			<xsl:when test="..//graphic">
-				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" style="width:100%;"/></a></span>
+				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span>

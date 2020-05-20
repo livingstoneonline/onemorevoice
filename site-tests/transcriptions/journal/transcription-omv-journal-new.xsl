@@ -117,9 +117,9 @@
 			    </div>
 			       
 			<div class="title"> 
-			    <img class="image" src="" alt="" title="" />
+			    <img class="image" src="images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
         		<h1>One More Voice</h1>
-        		<hr />
+        		<hr/>
         		<h3 class="italic">Critically-edited Primary Text</h3>
     		</div>
     			
@@ -142,7 +142,7 @@
 				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
 				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
 			</div>
-\
+
 			<hr/>
 
 			<div class="TEI"><!-- style="background:#{$body-color};" -->	
@@ -168,7 +168,7 @@
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a></p>	
+				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
 				<p class="item-spec"><span class="bold">Production note</span>: The editors produced this critical edition with the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>
 			</div>
 			

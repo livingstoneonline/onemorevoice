@@ -651,7 +651,6 @@
 	<xsl:template match="jc:page">
 		<div class="page">
 			<br/><br/><br/>
-			<!--<hr class="title-section"/>-->
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>
 			</span>
@@ -659,8 +658,7 @@
 		</div>
 	</xsl:template>
 
-	<xsl:template match="div/pb[1]" priority="10">
-		<!--<hr class="title-section"/>-->
+	<xsl:template match="text/body/div[1]/pb[1]" priority="10">
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -668,7 +666,6 @@
 
 	<xsl:template match="pb">
 		<br/><br/><br/>
-		<!--<hr class="title-section"/>-->
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -677,7 +674,6 @@
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<br/><br/><br/>
-		<!--<hr class="title-section"/>-->
 		<br/>
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>

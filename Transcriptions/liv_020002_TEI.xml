@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-journal-new.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<?xml-stylesheet href="transcription-omv-journal-new.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020002"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
@@ -10,6 +10,15 @@
                 <title type="alternative">The Story of My Life, August 1891</title><!-- Change; note addition of date -->
 				<author>Saleh Bin Osman</author>
                 <author>[Glave, Edward J., 1863-1895]</author><!-- Change -->
+				<author role="first"></author>
+				<author role="first-normalized"></author>
+				<author role="normalized"></author>
+
+<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] -->
+
+
                 <principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM">
                     <name>Anne Martin</name>
@@ -41,7 +50,12 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_020002</idno><!-- Change -->
+                <idno type="LEAP-ID">liv_020001</idno><!-- Change -->
+				<availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                      	Creative Commons Attribution 4.0 International
+                    </licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
 				<biblStruct type="journal">
@@ -159,6 +173,7 @@ me in morning and give me <bibl>letter</bibl>, and I open and <choice><orig>fine
 
 <lb/><p rend="center"><seg rend="smallcaps"><persName>SALEH BIN OSMAN</persName>,</seg>
 <lb/><seg rend="right small italic">Of the <orgName><persName>Stanley</persName> Expedition for the Relief of <persName>Emin Pasha</persName></orgName>.</seg></p>
+<lb/>
 <lb/>
 <lb/><milestone unit="section" rend="quarter-line small center"/>
 

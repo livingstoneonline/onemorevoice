@@ -148,8 +148,11 @@ p.right .linenumber {
 .doubleline {
 	border-top:4px double #8c8b8b;
 	display:block;
-	margin-left:9%;
-	text-align:left;
+}
+.quarterline.doubleline {
+	width:10em;
+	border-top:4px double #8c8b8b;
+	display:block;
 }
 .tripleline {
 	border-top:4px double #8c8b8b;
@@ -359,6 +362,9 @@ border-bottom: 1px dotted #706f6a;
 }
 .center {
 text-align:center;
+display:block;
+margin-left:auto;
+margin-right:auto;
 }
 .dottedunderline {
 	border-bottom:1px dashed;

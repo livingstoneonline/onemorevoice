@@ -184,7 +184,7 @@
 				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 			</div>
 			
 			<div class="footer">

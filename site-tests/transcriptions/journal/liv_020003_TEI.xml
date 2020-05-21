@@ -14,7 +14,7 @@
 				<author role="first">MacQueen, James</author>
 				<author role="first-normalized">James MacQueen</author>
 				<author role="normalized">[Lief Ben Saeid]</author>
-				<author role="normalized">Thomas Wogga</author>
+				<author role="normalized">[Thomas Wogga]</author>
 
 				<!-- <author> = surname, forename, dates [archival version of name] -->
 				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
@@ -76,7 +76,7 @@
                 	<author xml:id="LBS">[Lief Ben Saeid]</author><!-- Change -->
 					<author xml:id="TW">[Wogga, Thomas]</author><!-- Change -->
 					<title>Notes on African Geography</title><!-- Change -->
-                    <date type="publication" when="1854">1854</date><!-- Change, including attributes -->
+                    <date type="publication" when="1845">1845</date><!-- Change, including attributes -->
                     <placeName type="focusRegion">Central Africa</placeName><!-- Change -->
                 </bibl>
             </sourceDesc>
@@ -122,8 +122,9 @@
 
 	<div rend="center">
 <lb/><gap extent="10" unit="lines" agent="omitted-text"/><!-- Text from previous article omitted here. AW -->
-<lb/><!-- lbs added for online display. AW -->
+<lb/>
 <lb/><milestone unit="section" rend="quarter-line double-line small center"/>
+<lb/>
 	</div>
 
 	<div>
@@ -322,7 +323,7 @@ it lies three or four hours on the ground before melting. Plenty of</p>
 <lb/><milestone unit="section" rend="line"/>
 	<fw rend="center small">
 <note xml:id="note_12" rend="left indent">*  Where?&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, not sure if this is edition or editor? HB -->
-<note xml:id="note_13" rend="left indent">&#10013;  The name here intended is <geogName>M'Sagara</geogName>, in about 8°<choice><abbr>S.</abbr><expan>South</expan></choice> and 35°<choice><abbr>E.</abbr><expan>East</expan></choice>&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, same here. HB -->
+<lb/><note xml:id="note_13" rend="left indent">&#10013;  The name here intended is <geogName>M'Sagara</geogName>, in about 8°<choice><abbr>S.</abbr><expan>South</expan></choice> and 35°<choice><abbr>E.</abbr><expan>East</expan></choice>&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, same here. HB -->
 	</fw>
 
 	<pb facs="liv_020003_0005" n="0005"/>
@@ -380,31 +381,31 @@ the sun being to the <choice><abbr>N.</abbr><expan>North</expan></choice> or the
 
 <!-- Adrian, are we doing measure here to denote distance? HB --><!-- I think we've dropped using the <measure> tag now AM -->
 
-<list rend="small center">
+<table rend="center">
 
-<lb/><item><seg rend="right"><hi rend="smallcaps">Days.</hi></seg></item> 
+<row><cell rend="left"></cell><cell rend="center"></cell><cell rend="right"><hi rend="smallcaps small">Days.</hi></cell></row> 
 
-<lb/><item><region>Kimcoul</region> to <placeName>Uppe</placeName> <seg rend="right">..1</seg></item>
+<row><cell rend="left"><region>Kimcoul</region> to <placeName>Uppe</placeName><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">1</cell></row>
 
-<lb/><item><placeName>Uppe</placeName> to <placeName>Auzilliga</placeName> <seg rend="right">..1</seg></item>
+<row><cell rend="left"><placeName>Uppe</placeName> to <placeName>Auzilliga</placeName><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">1</cell></row>
 
-<lb/><item><placeName>Auzilliga</placeName> to <placeName>Ocoom</placeName> <seg rend="right">..7 <space extent="1" unit="chars"/> (long journeys.)<space extent="4" unit="chars"/></seg></item>
+<row><cell rend="left"><placeName>Auzilliga</placeName> to <placeName>Ocoom</placeName><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">7 <space extent="1" unit="chars"/> (long journeys.)<space extent="4" unit="chars"/></cell></row>
 
-<lb/><item><placeName>Ocoom</placeName> to <placeName>Mousookko</placeName> <seg rend="right">.4</seg></item>
+<row><cell rend="left"><placeName>Ocoom</placeName> to <placeName>Mousookko</placeName></cell><cell rend="center">.</cell><cell rend="right">4</cell></row>
 
-<lb/><item><placeName>Mousookko</placeName> to <placeName>Ungwa</placeName> <seg rend="right">.6</seg></item>
+<row><cell rend="left"><placeName>Mousookko</placeName> to <placeName>Ungwa</placeName></cell><cell rend="center">.</cell><cell rend="right">6</cell></row>
 
-<lb/><item><settlement>Ungwa</settlement> to <settlement>Uvangah</settlement> <seg rend="right">..30 <space extent="1" unit="chars"/>(constant travel.)</seg></item>
+<row><cell rend="left"><settlement>Ungwa</settlement> to <settlement>Uvangah</settlement><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">30 <space extent="1" unit="chars"/>(constant travel.)</cell></row>
 
-<lb/><item><settlement>Uvangah</settlement> to <placeName>Umblisse</placeName> <seg rend="right">.9</seg></item>
+<row><cell rend="left"><settlement>Uvangah</settlement> to <placeName>Umblisse</placeName></cell><cell rend="center">.</cell><cell rend="right">9</cell></row>
 
-<lb/><item><placeName>Umblisse</placeName> to <placeName>New Calabar</placeName> <seg rend="right">.10</seg></item>
+<row><cell rend="left"><placeName>Umblisse</placeName> to <placeName>New Calabar</placeName></cell><cell rend="center">.</cell><cell rend="right">10</cell></row>
 
-<lb/><item><seg rend="right">&#8212;</seg></item>
+<row><cell rend="left"></cell><cell rend="center"></cell><cell rend="right">&#8212;</cell></row>
 
-<lb/><item>Total <seg rend="right">.68 days</seg></item>
+<row><cell rend="left"><seg rend="right">Total</seg></cell><cell rend="center">.</cell><cell rend="right">68 days</cell></row>
 
-</list>
+</table>
 
 <p><placeName>Uppe</placeName> is 1 day from the great river <geogName>Ayah</geogName>. At <placeName>Auzilliga</placeName> there
 is a considerable river, but smaller than the <geogName>Ayah</geogName>: it runs westward
@@ -426,7 +427,7 @@ of the caravan carried each <term type="foodstuff">yams</term> for their food.</
 	</div>
 <lb/>
 <lb/>
-<milestone unit="section" rend="quarter-line double-line small center"/>
+<lb/><milestone unit="section" rend="quarter-line double-line small center"/>
 	</div>
 			</div>
 		</body>	

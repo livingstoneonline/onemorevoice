@@ -33,7 +33,7 @@
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<meta charset="UTF-8"/>
-				<link rel="stylesheet" type="text/css" href="style-omv-new.css"/>
+				<link rel="stylesheet" type="text/css" href="style-omv-ms-new.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-mobile.css"/>						
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
@@ -73,6 +73,22 @@
 				<xsl:otherwise>
 					<xsl:perform-sort select="//revisionDesc/change/date[not(.=preceding::change/date)]"><xsl:sort select="." order="ascending"/></xsl:perform-sort>
 				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="additional-authors-1">			
+			<xsl:choose>
+				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
+					<xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator=", "/>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="additional-authors-2">			
+			<xsl:choose>
+				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
+					<xsl:text>; </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/>
+				</xsl:when>
+				<xsl:otherwise/>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="license">
@@ -122,15 +138,14 @@
         		<hr/>
         		<h3 class="italic">Critically-edited Primary Text</h3>
     		</div>
-    			
+
     		<div class="item-details">
-				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
-				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
-				<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
-				<p class="item-spec"><span class="bold">Place of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
+				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></p>
+				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+				<!--<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
+				<p class="item-spec"><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
 				<p class="item-spec"><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
 				<p class="item-spec"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
-
 				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 				<p class="item-spec"><span class="bold">Edition license:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
@@ -140,32 +155,36 @@
 
 			<hr/>
 
-			<div class="TEI" style="background:#{$body-color};">
-				
-				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-				<xsl:choose>
-					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-					</xsl:when>
-					<xsl:when test="$isPaged='false'">
-						<xsl:apply-templates select="text"/>
-					</xsl:when>
-					<xsl:when test="//jc:page[@n=$pagenumber]">
-						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:apply-templates select="text"/>
-					</xsl:otherwise>
-				</xsl:choose>
+			<div class="ms-container" style="background:#{$body-color};">	
+				<div class="TEI">
+					
+					<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+					<xsl:choose>
+						<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+							<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+						</xsl:when>
+						<xsl:when test="$isPaged='false'">
+							<xsl:apply-templates select="text"/>
+						</xsl:when>
+						<xsl:when test="//jc:page[@n=$pagenumber]">
+							<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="text"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</div>
 			</div>
+
+			<hr/>
 			
 			<div class="final-item-details caption">
 				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-				<p class="item-spec"><span class="bold">Production note</span>: <!--The editors produced this critical edition with the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.--></p>
+				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>
 			</div>
 			
 			<div class="footer">
@@ -254,7 +273,16 @@
 			</xsl:if>
 		</xsl:variable>
 		<!--<br><xsl:if test="$class/text()"><xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute></xsl:if></br>-->
-		<br/>
+		<!--<xsl:variable name="lb-with-p">
+			<xsl:choose>
+				<xsl:when test="lb[child::p]"/>
+				<xsl:otherwise>
+					<br/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>-->
+		<!-- <xsl:value-of select="$lb-with-p"/>  -->
+			<br/>
 		<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
@@ -647,7 +675,7 @@
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
 		<div class="page">
-			<br/><br/><br/>
+			<br/><br/>
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>
 			</span>

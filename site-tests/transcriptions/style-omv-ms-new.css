@@ -20,6 +20,12 @@ Table of Contents
 
 /* 1. Textual divisions */
 
+.front {
+	margin-bottom:-1em !important;
+}
+.back {
+	margin-top:-1em !important;
+}
 body {
 	max-width:38em;
 	text-align:center;
@@ -56,18 +62,17 @@ body {
 	margin-top:0em;
 	line-height:1.6em;
 }
-.ms-container {
+.TEI {
 	width:100%;
-	padding-top:1em;
+	padding-top:2em;
 	padding-bottom:2em;
 	margin-top:2em;
 	margin-bottom:2em;
-	border: 2px solid gainsboro;
+	border: 2px solid gainsboro;	
 }
-.TEI {
+.ms-container {
 	display:inline-block;
 	white-space:nowrap;
-	padding-top:1em;
 	text-align:left;
 }
 a:link {
@@ -109,6 +114,7 @@ a:hover {
 	float:left;
 	margin-left:-3em !important;
 	width:1em;
+	display:none;
 }
 p .linenumber {
 	text-indent:-1%;
@@ -290,7 +296,7 @@ hr {
 }
 .fw {
 	text-indent:0 !important;
-	display:block;
+	display:inline;
 	overflow:hidden;
 	text-align:center;
 	line-height:1.3em;
@@ -520,6 +526,9 @@ table .linenumber {
 
 /* 11. Misc */
 
+.none	{
+	display:none;
+}
 .figure {
 	margin-left:0;
 	color:#666666;

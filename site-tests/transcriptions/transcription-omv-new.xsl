@@ -4,21 +4,17 @@
 	xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:jc="http://james.blushingbunny.net/ns.html"
 	xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs xd tei jc"
 	version="2.0">
+<!-- /*xmlns="http://www.w3.org/TR/REC-html40"*/ -->
 	<xd:doc scope="stylesheet">
 		<xd:desc>
-			<xd:p><xd:b>Author:</xd:b> James Cummings</xd:p>
-			<xd:p>First attempt at LEAP to HTML conversion</xd:p>
-			<xd:p>Updated in Feb/Mar 2015.</xd:p>
-		</xd:desc>
-		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> Adrian S. Wisnicki</xd:p>
-			<xd:p>Extensive revisions</xd:p>
-			<xd:p>Updated in Aug 2016.</xd:p>
+			<xd:p>Rewire LO XSL to Create OMV XSL</xd:p>
+			<xd:p>May 2020</xd:p>
+			<xd:p>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</xd:p>
 		</xd:desc>
 	</xd:doc>
 	
-	<xsl:output method="xml" indent="no"/>
-	<!-- It's necessary that this be "no" or otherwise extra space is kicked in when there are two <span>s in a row. It also appearst to solve other minor formatting issues -->
+	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
 	<xsl:param name="page" select="'0001'"/>
@@ -37,14 +33,13 @@
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<meta charset="UTF-8"/>
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/normalize.css"/>
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/LEAP-XSLT/common.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-new.css"/>
-				<!--<link rel="stylesheet" type="text/css" href="style-omv.css"/>-->
+				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>
+				<link rel="stylesheet" type="text/css" href="style-omv-mobile.css"/>						
+				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<title>
 					<xsl:value-of select="//teiHeader//title[2]"/>
 				</title>
-				<!--<link type="text/css" rel="stylesheet" href="http://jamescummings.github.io/LEAP/style.css"/>-->
 			</head>
 			<body><!-- style="background:#{$body-color};" -->
 				<xsl:apply-templates select="TEI"/>
@@ -80,28 +75,73 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="transcription style-omv"><!-- style="background:#{$body-color};" -->
+		<xsl:variable name="license">
+			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/ref/@target"/>
+		</xsl:variable>
+		<xsl:variable name="base-uri" select="base-uri(.)"/>
+		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
+ 		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
+
+		<div class="transcription"><!-- style="background:#{$body-color};" -->
+
+			<div class="navbar">
+        			<ul>
+			            <li><a href="index.html">home</a></li>
+            			<li><a href="texts.html">texts</a></li>
+			            <li>
+            			    <div class="dropdown">
+			                    <button class="dropbtn">concepts
+								<i class="fa fa-caret-down"></i>
+							</button>
+            			        <div class="dropdown-content">
+                        			<a href="analytical_priorities.html">analytical priorities</a>
+			                        <a href="project_design.html">project design</a>
+            			            <a href="coding_guidelines.html">coding guidelines</a>
+			                    </div>
+            			    </div>
+			            </li>
+			            <li>
+            			    <div class="dropdown">
+			                    <button class="dropbtn">misc
+								<i class="fa fa-caret-down"></i>
+							</button>
+            			        <div class="dropdown-content">
+                        			<a href="contributors.html">contributors</a>
+			                        <a href="bibliography.html">bibliography</a>
+            			            <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a>                        
+                        			<a href="mailto:awisnicki@yahoo.com">contact</a>
+			                    </div>
+            			    </div>
+			            </li>
+			        </ul>
+			    </div>
+			       
+			<div class="title"> 
+			    <img class="image" src="images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+        		<h1>One More Voice</h1>
+        		<hr/>
+        		<h3 class="italic">Critically-edited Primary Text</h3>
+    		</div>
+    			
+    		<div class="item-details">
+				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
+				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
+				<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
+				<p class="item-spec"><span class="bold">Place of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
+				<p class="item-spec"><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
+				<p class="item-spec"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+
+				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+				<p class="item-spec"><span class="bold">Edition license:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+				<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
+				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
+			</div>
+
+			<hr/>
 
 			<div class="TEI" style="background:#{$body-color};">
-				<div class="item-details">
-				<span class="title"><!--<span class="bold">Title:</span><xsl:text> </xsl:text>--><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></span><br/>
-				<span class="author"><!--<span class="bold">Creator(s):</span><xsl:text> </xsl:text>--><xsl:value-of select="//teiHeader//titleStmt/author" separator="; "/></span><br/>
-				<span class="project-id"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></span><br/>
-				<span class="project-id"><span class="bold">Place of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></span><br/>
-				<!--<span class="project-id"><span class="bold">Date(s) of composition:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//bibl[@type='sourceMetadata']/date[@type='composition']"/></span><br/>
-				<span class="project-id"><span class="bold">Place(s) of composition:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']"/></span><br/>-->
-				<span class="project-id"><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</span><br/>
-				<span class="project-id"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></span><br/>
-				<span class="project-id"><span class="bold">Digital edition and date:</span><xsl:text> </xsl:text> <a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></span><br/>
-				<span class="project-id"><span class="bold">Project ID</span><xsl:text>: </xsl:text> <xsl:value-of select="//idno[@type='LEAP-ID']"/></span><br/>
-				<span class="project-id"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></span><br/>
-				<span class="project-id"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></span><!--<br/>-->
-				<!--<xsl:value-of select="//revisionDesc/change/date[not(.=preceding::date)]" separator=", "/>-->
-				<!--<span class="project-encoding"><span class="bold">Encoding conversion</span><xsl:text>: James Cummings (2015-03-02)</xsl:text></span><br/>
-				<span class="project-encoding"><span class="bold">Encoding review</span><xsl:text>: Lauren Geiger (2016-2017)</xsl:text></span><br/>
-				<span class="encoding-standard"><span class="bold">Encoding standardization</span><xsl:text>: Adrian S. Wisnicki (2015-2017)</xsl:text></span><br/>--><!--<br/>-->
-					<!--<hr class="title-section"/><br/>-->
-				</div>
+				
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>
 					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -118,6 +158,21 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</div>
+			
+			<div class="final-item-details caption">
+				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
+				<p class="item-spec"><span class="bold">Production note</span>: <!--The editors produced this critical edition with the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.--></p>
+			</div>
+			
+			<div class="footer">
+            	<hr />
+            	<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
+        	</div>
+			
 		</div>
 	</xsl:template>
 
@@ -170,7 +225,6 @@
 		</xsl:attribute>
 	</xsl:template>
 
-
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
@@ -182,7 +236,6 @@
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
 			<xsl:apply-templates/>
 		</div>
-		<br/>
 	</xsl:template>
 
 	<xsl:template match="lb">
@@ -215,7 +268,6 @@
 	<xsl:template match="choice">
 		<xsl:apply-templates/>
 	</xsl:template>
-
 	
 	<xsl:template match="choice/sic">
 			<xsl:variable name="choice-orig-sic">
@@ -238,23 +290,11 @@
 				</xsl:otherwise>
 			</xsl:choose>			
 			</xsl:variable>
-			<!--<xsl:if test="../corr">
-				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="../corr"/></xsl:attribute>
-			</xsl:if>-->
-		<span class="sic diplomatic">
-			<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
-			<xsl:apply-templates/>
-		</span>
+			<span class="sic diplomatic">
+				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
+				<xsl:apply-templates/>
+			</span>
 	</xsl:template>
-
-	<!--<xsl:template match="choice/corr">
-		<span class="corr edited hidden">
-			<xsl:if test="../sic">
-				<xsl:attribute name="title">sic: <xsl:value-of select="../sic"/></xsl:attribute>
-			</xsl:if>
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>-->
 
 	<!-- "Choice" variants begin here -->
 
@@ -342,7 +382,6 @@
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
-
 
 	<!-- Start of addSpan/anchor -->
 
@@ -440,17 +479,6 @@
 
 	<!-- For "front" see above -->
 
-	<!--<xsl:template match="figure">
-		<xsl:choose>
-		<xsl:when test="head">
-			<span class="figure" title="{concat('&quot;', head, '.&quot; ', figDesc)}">{figure}</span>
-		</xsl:when>
-		<xsl:otherwise>
-			<span class="figure" title="{figDesc}">{figure}</span>
-		</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>--><!-- Replaced with templated provided by James Cummings -->
-
 	<xsl:template match="figure">
 		<!-- newFigDesc goes away and applies templates to content to get it into a single dedupped string -->
 		<xsl:variable name="newHead">
@@ -472,8 +500,14 @@
 			<xsl:when test="not(head) and $newFigDesc/text()">
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
 			</xsl:when>
+			<xsl:when test="..//graphic[@n='medium']">
+				<span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='small']">
+				<span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
 			<xsl:when test="..//graphic">
-				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" style="width:100%;"/></a></span>
+				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span>
@@ -528,6 +562,7 @@
 		<xsl:choose>
 			<xsl:when test="@unit='chars'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
 			<xsl:when test="@unit='words'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='lines'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
 			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -539,6 +574,12 @@
 
 	<!-- do not show graphic -->
 	<xsl:template match="graphic"/>
+
+	<xsl:template match="head">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
+			<xsl:apply-templates/>
+		</span>
+	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
 		<span class="idno"><xsl:apply-templates/></span>
@@ -553,7 +594,7 @@
 	<!-- For "lb" see above -->
 
 	<xsl:template match="list">
-		<span class="list" title="list">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
@@ -568,7 +609,7 @@
 		<xsl:choose>
 			<xsl:when test="contains(@rend,'double-line')">
 				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>
+				<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 			</xsl:when>
 			<xsl:when test="contains(@rend,'triple-line')">
 				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
@@ -579,16 +620,6 @@
 				<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
 			</xsl:otherwise>
 		</xsl:choose>
-			<!--<xsl:if test="@*">
-				<xsl:attribute name="title">
-					<xsl:value-of select="concat(name(), ': ')"/>
-					<xsl:for-each select="@*">
-						<xsl:sort/>
-						<xsl:value-of select="concat(name(),': ', ., '; ')"/>
-					</xsl:for-each>
-				</xsl:attribute>
-			</xsl:if>
-		</hr>-->
 	</xsl:template>
 
 	<xsl:template match="note">
@@ -617,7 +648,6 @@
 	<xsl:template match="jc:page">
 		<div class="page">
 			<br/><br/><br/>
-			<hr class="title-section"/>
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>
 			</span>
@@ -625,17 +655,14 @@
 		</div>
 	</xsl:template>
 
-	<xsl:template match="div/pb[1]" priority="10">
-		<br/><br/>
-		<hr class="title-section"/>
+	<xsl:template match="text/body/div[1]/pb[1]" priority="10">
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
 	</xsl:template>
 
 	<xsl:template match="pb">
-		<br/><br/><br/>
-		<hr class="title-section"/>
+		<br/><br/>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -643,9 +670,8 @@
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
-		<br/><br/><br/>
-		<hr class="title-section"/>
-		<br/><span class="pb-title pb-del">
+		<br/><br/>
+		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
 		</span>
 	</xsl:template>

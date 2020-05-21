@@ -612,7 +612,7 @@
 		<xsl:choose>
 			<xsl:when test="contains(@rend,'double-line')">
 				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>
+				<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 			</xsl:when>
 			<xsl:when test="contains(@rend,'triple-line')">
 				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>

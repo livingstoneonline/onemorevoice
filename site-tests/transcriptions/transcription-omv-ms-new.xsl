@@ -52,8 +52,26 @@
 
 	<!-- TEI -->
 	<xsl:template match="TEI">
+		<xsl:variable name="body-color-front">
+			<xsl:apply-templates select="//front/@n[1]"/>
+		</xsl:variable>
+		<xsl:variable name="body-color-back">
+			<xsl:apply-templates select="//back/@n[1]"/>
+		</xsl:variable>
 		<xsl:variable name="body-color">
 			<xsl:apply-templates select="//body/@n[1]"/>
+		</xsl:variable>
+		<xsl:variable name="front">
+			<xsl:choose>
+				<xsl:when test="//front"/>
+				<xsl:otherwise>none</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="back">
+			<xsl:choose>
+				<xsl:when test="//back"/>
+				<xsl:otherwise>none</xsl:otherwise>
+			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="encoding">
 			<xsl:choose>
@@ -155,24 +173,63 @@
 
 			<hr/>
 
-			<div class="ms-container" style="background:#{$body-color};">	
-				<div class="TEI">
-					
-					<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-					<xsl:choose>
-						<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-							<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-						</xsl:when>
-						<xsl:when test="$isPaged='false'">
-							<xsl:apply-templates select="text"/>
-						</xsl:when>
-						<xsl:when test="//jc:page[@n=$pagenumber]">
-							<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:apply-templates select="text"/>
-						</xsl:otherwise>
-					</xsl:choose>
+			<div class="TEI front {$front}" style="background:#{$body-color-front};">
+				<div class="ms-container">
+				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+				<xsl:choose>
+					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+					</xsl:when>
+					<xsl:when test="$isPaged='false'">
+						<xsl:apply-templates select="text/front"/>
+					</xsl:when>
+					<xsl:when test="//jc:page[@n=$pagenumber]">
+						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates select="text/front"/>
+					</xsl:otherwise>
+				</xsl:choose>
+				</div>
+			</div>
+
+			<div class="TEI" style="background:#{$body-color};">
+				<div class="ms-container">
+				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+				<xsl:choose>
+					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+					</xsl:when>
+					<xsl:when test="$isPaged='false'">
+						<xsl:apply-templates select="text/body"/>
+					</xsl:when>
+					<xsl:when test="//jc:page[@n=$pagenumber]">
+						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates select="text/body"/>
+					</xsl:otherwise>
+				</xsl:choose>
+				</div>
+			</div>
+
+			<div class="TEI front {$back}" style="background:#{$body-color-back};">
+				<div class="ms-container">
+				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+				<xsl:choose>
+					<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+					</xsl:when>
+					<xsl:when test="$isPaged='false'">
+						<xsl:apply-templates select="text/back"/>
+					</xsl:when>
+					<xsl:when test="//jc:page[@n=$pagenumber]">
+						<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates select="text/back"/>
+					</xsl:otherwise>
+				</xsl:choose>
 				</div>
 			</div>
 
@@ -183,8 +240,8 @@
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
+				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 			</div>
 			
 			<div class="footer">
@@ -683,7 +740,7 @@
 		</div>
 	</xsl:template>
 
-	<xsl:template match="text/body/div[1]/pb[1]" priority="10">
+	<xsl:template match="text/body/div[1]/pb[1]|text/front/div[1]/pb[1]|text/back/div[1]/pb[1]" priority="10">
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>

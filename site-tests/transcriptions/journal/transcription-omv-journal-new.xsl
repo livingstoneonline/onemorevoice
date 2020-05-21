@@ -139,7 +139,7 @@
 				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 				<p class="item-spec"><span class="bold">Edition license:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-				<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>
+				<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
 			</div>
 
@@ -611,7 +611,7 @@
 	<xsl:template match="milestone">
 		<xsl:choose>
 			<xsl:when test="contains(@rend,'double-line')">
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
+				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
 				<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 			</xsl:when>
 			<xsl:when test="contains(@rend,'triple-line')">
@@ -665,7 +665,7 @@
 	</xsl:template>
 
 	<xsl:template match="pb">
-		<br/><br/><br/>
+		<br/><br/>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -673,8 +673,7 @@
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
-		<br/><br/><br/>
-		<br/>
+		<br/><br/>
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
 		</span>

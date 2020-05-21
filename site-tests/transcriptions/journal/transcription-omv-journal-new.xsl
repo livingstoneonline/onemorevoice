@@ -75,7 +75,21 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="license">
+		<xsl:variable name="additional-authors-1">			
+			<xsl:choose>
+				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
+					<xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator=", "/>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable><xsl:variable name="additional-authors-2">			
+			<xsl:choose>
+				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
+					<xsl:text>; </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable><xsl:variable name="license">
 			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/ref/@target"/>
 		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
@@ -125,7 +139,7 @@
     			
     		<div class="item-details">
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
-				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/></p>
+				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 				<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
 				<p class="item-spec"><span class="bold">Publication details:</span><xsl:text> </xsl:text>
 					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
@@ -165,11 +179,11 @@
 			
 			<div class="final-item-details caption">
 				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/><xsl:text>; </xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/><xsl:text>. "</xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-				<p class="item-spec"><span class="bold">Production note</span>: The editors produced this critical edition with the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>
+				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>.</p>
 			</div>
 			
 			<div class="footer">

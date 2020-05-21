@@ -51,9 +51,9 @@ body {
 }
 }
 .item-spec {
-font-size:.9em;
-margin-top:0em;
-line-height:1.6em;
+	font-size:.9em;
+	margin-top:0em;
+	line-height:1.6em;
 }
 .TEI {
 	display:block;
@@ -203,20 +203,20 @@ p.right .linenumber {
 	border-top:1px solid #58484b;
 }
 hr {
-width:100%;
-background-color:gray; 
-height:1px; 
-border:0; 
+	width:100%;
+	background-color:gray;
+	height:1px; 
+	border:0; 
 }
 .title-hr {
-max-width:33em;
-margin-top:2em;
-margin-bottom:2em;
+	max-width:33em;
+	margin-top:2em;
+	margin-bottom:2em;
 }
 .narrow-hr {
-width:45%;
-margin-top:2em;
-margin-bottom:2em;
+	width:45%;
+	margin-top:2em;
+	margin-bottom:2em;
 }
 
 /* iPad Air: Less than or equal to 768px */
@@ -226,21 +226,21 @@ margin-bottom:2em;
 /* iPad Mini: Less than or equal to 703px */
 @media only screen and (max-width:703px) {
 .narrow-hr {
-width:50%;
+	width:50%;
 }
 }
 
 /* iPhone 6+: Less than or equal to 414px */
 @media only screen and (max-width:414px) {
 .narrow-hr {
-width:60%;
+	width:60%;
 }
 }
 
 /* iPhone 5s: Less than or equal to 320px */ 
 @media only screen and (max-width:320px) {
 .narrow-hr {
-width:70%;
+	width:70%;
 }
 }
 
@@ -273,12 +273,13 @@ width:70%;
 	display:block;
 }
 .note {
-	display:inline;
+	text-align:left;
 }
 .fw {
 	text-indent:0 !important;
 	display:block;
 	text-align:center;
+	line-height:1.3em;
 	margin-bottom:.5em;
 }
 .fw .center {
@@ -357,13 +358,8 @@ border-bottom: 1px dotted #706f6a;
 	font-variant:small-caps;
 }
 .center {
-	text-indent:0;
-	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
+text-align:center;
 }
-
 .dottedunderline {
 	border-bottom:1px dashed;
 }
@@ -385,7 +381,7 @@ border-bottom: 1px dotted #706f6a;
 }
 .left {
 	float:left;
-	text-indent:0;
+	clear:both;
 }
 .overline {
 	text-decoration:overline;
@@ -394,12 +390,7 @@ border-bottom: 1px dotted #706f6a;
 	text-decoration:overline underline;
 }
 .right {
-	text-indent:0;
 	float:right;
-}
-.note.right.true {
-	width:50%;
-	text-align:left;
 }
 .small {
 	font-size:.85em;
@@ -461,9 +452,10 @@ border-bottom: 1px dotted #706f6a;
      half as far down as the superscript moved up */
 	bottom:-0.50em;
 }
-.true {
+/*.true {
 	display:inline-block;
-}/*Goes with standalone <note>s*/
+}*/
+/*Goes with standalone <note>s*/
 
 
 /* 9. Colors */

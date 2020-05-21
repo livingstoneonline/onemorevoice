@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-new.xsl" type="text/xsl"?>
+<?xml-stylesheet href="transcription-omv-ms-new.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_012056"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Testimony (English Translation of Swahili Manuscript)</title><!-- Change -->
-                <title type="alternative">Testimony (English Translation of Swahili Manuscript), 12 November 1890</title><!-- Change; note addition of date -->
+                <title>Testimony</title><!-- Change -->
+                <title type="alternative">Testimony, 12 November 1890</title><!-- Change; note addition of date -->
                 <author>Saleh Bin Osman</author>
-                <author>Glave, Edward J., 1863-1895</author><!-- Change -->
-                <principal>Adrian S. Wisnicki</principal>
+                <author>[Glave, Edward J., 1863-1895]</author><!-- Change -->
+				<author role="first">Saleh Bin Osman</author>
+				<author role="first-normalized">Saleh Bin Osman</author>
+				<author role="normalized">[Edward J. Glave]</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM">
                     <name>Anne Martin</name>
                     <resp>Transcription</resp>
@@ -42,7 +47,11 @@
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date><!-- Change if necessary -->
                 <idno type="LEAP-ID">liv_012056</idno><!-- Change -->
-            </publicationStmt>
+            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability></publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>

@@ -3,176 +3,96 @@
 Table of Contents
 -----------------
 1. Textual divisions 
-1.5 Title section
-2. Letters 
-3. pb, lb, linenumber 
-4. Milestone and lines 
-5. p, ab, note, fw 
-6. del, unclear, app, gap, space 
-7. Editorial 
-8. @rend classes (except lines, page placement, colors) 
-9. Page placement 
-10. Colors 
-11. Lists and Tables 
-12. Misc 
+2. pb, lb, linenumber 
+3. Milestone and lines 
+4. p, ab, note, fw, column break, footnotes 
+5. del, unclear, app, gap, space 
+6. Editorial 
+7. @rend classes (except lines, page placement, colors) 
+8. Page placement 
+9. Colors 
+10. Lists and Tables 
+11. Misc 
+12. Letters (commented out)
 
 */
-/* Rules for containers either this is shown embedded in the viewer or not */
-body.non-embedded-transcription,
-div.transcription-viewer-content.style {
-	background:#ccc2b2;
-}
 
 
 /* 1. Textual divisions */
 
-div.transcription.style-omv {
+body {
+	max-width:38em;
+	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
-	text-align:center;
-	font-family:"source sans pro", calibri, arial, helvetica, sans-serif;
+	padding-left:1em;
+	padding-right:1em;
+}
+.transcription {
+	font-family:Georgia, 'Times New Roman', Times, serif;
 	font-size:16px;
-	padding-top:2em;
-	padding-bottom:2em;
+	line-height:1.6em;
 	/*white-space:nowrap;*/
 }
-div.transcription.style-omv .TEI {
+.item-details {
+	text-align:left;
+	padding-bottom:1em;
+	/*white-space:normal;*/
+}
+.item-title {
+	font-size:1em;
+	padding-bottom:1em;
+	color:#2e68ac;
+	font-weight:bold;
+}
+/* iPad Mini: Less than or equal to 703px */
+@media only screen and (max-width:703px) {
+.item-title {
+	padding-bottom:.5em;
+}
+}
+.item-spec {
+	font-size:.9em;
+	margin-top:0em;
+	line-height:1.6em;
+}
+.TEI {
 	display:inline-block;
 	white-space:nowrap;
-	padding-top:2em;
-	padding-bottom:2em;
-	padding-left:1em;
-	padding-right:3.5em;
+	padding-top:1em;
 	text-align:left;
-	background:#ccc2b2;
-	border: 1px gray solid;
-	/*border-radius:25px;*/
 }
-/*
-@media all and (max-width:768px)  {
-.TEI {	
-	padding-left:1em;
+a:link {
+	color:#2e68ac !important;
 }
-*/
-div.transcription.style-omv .item-details {
-	max-width:30em;
-	min-width:30em;
-	white-space:normal;
-}
-div.transcription.style-omv div.body {
-	display:block;
-	/*padding-bottom:2.4em;*/
-	padding-left:3.5em;
-}
-div.transcription.style-omv .front,
-div.transcription.style-omv .back {
-	display:block;
+a:hover {
+	color:#e4524b !important;
 }
 
 
-/* 1.5. Title section */
 
-div.transcription.style-omv .title {
-	display:block;
-	text-align:center;
-	margin-bottom:-0.5em;
-	padding-left:2.5em;
-	font-size:1.4em;
-	font-variant:small-caps;
-}
-div.transcription.style-omv .author {
-	display:block;
-	text-align:center;
-	margin-bottom:.5em;
-	padding-left:2.5em;
-	font-size:1.2em;
-	font-style:italic;
-}
-div.transcription.style-omv .authority {
-	font-size:.9em;
-	line-height:1.7;
-}
-div.transcription.style-omv .pub-date {
-	font-size:.9em;
-}
-div.transcription.style-omv a:link {
-	color:#428bca !important;
-}
-div.transcription.style-omv .idno {
-	font-size:.9em;
-	line-height:1.7;
-}
-div.transcription.style-omv hr.title-section {
-	/*width:27em;*/
-	height:0;
-	border:0;
-	border-top:1px solid #666666;	
-	margin-top:-0.4em;
-	margin-bottom:-0.4em;
-	/*margin-left:3.5em;*/
-}
-div.transcription.style-omv .project-id,
-div.transcription.style-omv .project-encoding,
-div.transcription.style-omv .encoding-standard {
-	display:inline-block;
-	padding-left:4em;
-	padding-bottom:.4em;
-	font-size:.9em;
-	line-height:170%;
-}
-div.transcription.style-omv .project-encoding {
-	line-height:140% !important;
-  	margin-left:30px;
-  	text-indent:-30px;	
-}
+/* 2. pb, lb, linenumber */
 
-
-/* 2. Letters */
-
-div.transcription.style-omv .opener,
-div.transcription.style-omv .closer,
-div.transcription.style-omv .trailer {
-	margin-bottom:0px;
-}
-div.transcription.style-omv .opener {
-	display:inline;
-	margin-top:1em;
-}
-div.transcription.style-omv .closer,
-div.transcription.style-omv .address {
-	display:block;
-}
-div.transcription.style-omv .dateline {
-	display:inline;
-	text-indent:0;
-}
-div.transcription.style-omv .signed {
-	display:inline-block;
-}
-
-
-/* 3. pb, lb, linenumber */
-
-div.transcription.style-omv .pb-title {
+.pb-title {
 	display:block;
 	color:#428bca;
 	font-size:90%;
-	margin-top:2em;
-	margin-bottom:-0.9em;
+	margin-top:2em !important;
+	margin-bottom:1em;
 	margin-left:0;
 	text-indent:0;
 }
-div.transcription.style-omv .pb-title:hover {
+/*.pb-title:hover {
 	color:#AAA;
 	cursor:pointer;
+}*/
+.pb-title:first-of-type {
+	margin-top:0 !important;
 }
-div.transcription.style-omv .pb-title:first-of-type {
-	/*margin-top:0;*/
-}
-div.transcription.style-omv .lb {
+.lb {
 	display:block;
 }
-div.transcription.style-omv .linenumber {
+.linenumber {
 	text-align:right;
 	float:left;
 	color:#8c8b85;
@@ -181,37 +101,36 @@ div.transcription.style-omv .linenumber {
 	font-size:.8em;
 	width:1em;
 }
-div.transcription.style-omv p .linenumber {
+p .linenumber {
 	text-indent:-1%;
 }
-div.transcription.style-omv .p.noindent.linenumber {
+.p.noindent.linenumber {
 	text-indent:1em;
 }
-div.transcription.style-omv p.center .linenumber {
+p.center .linenumber {
 	margin-left:-6.4em !important;
 }
-div.transcription.style-omv p.right .linenumber {
+p.right .linenumber {
 	margin-left:-10.5em !important;
 }
-div.transcription.style-omv .list .linenumber {
+.list .linenumber {
 	text-indent:0;	
 }
 
 
-/* 4. Milestone and lines */
+/* 3. Milestone and lines */
 
-div.transcription.style-omv .milestone {/*check all of this against 1870 viewer*/
+.milestone {
 	display:block;
 	width:60%;
 	background:#FFF;
 	height:0;
 	margin-left:0;
 	margin-right:9%;
-	margin-top:-0.5em;
-	margin-bottom:-0.5em;
 	padding:0px;
 }
-div.transcription.style-omv .line {
+
+.line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:27em !important;
@@ -221,14 +140,19 @@ div.transcription.style-omv .line {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv .doubleline {
+.doubleline {
 	border-top:4px double #8c8b8b;
 	display:block;
 	width:27em !important;
 	margin-left:9%;
 	text-align:left;
 }
-div.transcription.style-omv .tripleline {
+.quarterline.doubleline {
+	width:10em;
+	border-top:4px double #8c8b8b;
+	display:block;
+}
+.tripleline {
 	border-top:4px double #8c8b8b;
 	line-height:1.9em;
 	display:block;
@@ -236,7 +160,7 @@ div.transcription.style-omv .tripleline {
 	margin-left:9%;
 	text-align:left;
 }
-div.transcription.style-omv .halfline {
+.halfline {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:17.5em !important;
@@ -246,7 +170,7 @@ div.transcription.style-omv .halfline {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv .quarterline {
+.quarterline {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:11em !important;
@@ -256,7 +180,10 @@ div.transcription.style-omv .quarterline {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv .second-line {
+.halfline.quarterline {
+	width: 30%;
+}
+.second-line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:27em !important;
@@ -268,7 +195,7 @@ div.transcription.style-omv .second-line {
 	border:0;
 	border-top:1px solid #58484b;
 }
-div.transcription.style-omv .third-line {
+.third-line {
 	border-bottom:1px solid #d0d0d0;
 	display:block;
 	width:27em !important;
@@ -279,159 +206,208 @@ div.transcription.style-omv .third-line {
 	border:0;
 	border-top:1px solid #58484b;
 }
+hr {
+	width:100%;
+	background-color:gray;
+	height:1px; 
+	border:0; 
+}
+.title-hr {
+	max-width:33em;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+.narrow-hr {
+	width:45%;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+/* iPad Air: Less than or equal to 768px */
+@media only screen and (max-width:768px) {
+}
+
+/* iPad Mini: Less than or equal to 703px */
+@media only screen and (max-width:703px) {
+.narrow-hr {
+	width:50%;
+}
+}
+
+/* iPhone 6+: Less than or equal to 414px */
+@media only screen and (max-width:414px) {
+.narrow-hr {
+	width:60%;
+}
+}
+
+/* iPhone 5s: Less than or equal to 320px */ 
+@media only screen and (max-width:320px) {
+.narrow-hr {
+	width:70%;
+}
+}
 
 
-/* 5. p, ab, note, fw */
+/* 4. p, ab, head, note, fw, column break, footnotes */
 
-div.transcription.style-omv p {
-	margin-right:2em;
-}/*Needed so that the text doesn't run up against the right edge in the viewer.*/
-div.transcription.style-omv .p {
+.p {
 	display:inline-block;
 	text-indent:25px;
 	margin-top:0;
 	margin-bottom:0;	
 }
-div.transcription.style-omv .p.noindent,
-div.transcription.style-omv .p.center,
-div.transcription.style-omv .p.right {
+.p.noindent,
+.p.center,
+.p.right {
 	text-indent:0 !important;
 }
-div.transcription.style-omv .p.right {
+.p.right {
 	margin-left:6em !important;
 }
-div.transcription.style-omv .ab {
+.ab {
 	text-indent:0;
 	margin-top:0;
 	margin-bottom:0;
 }
-div.transcription.style-omv .head {
+.head {
 	font-weight:normal;
 	text-indent:0 !important;
 	text-align:center !important;
 	display:block;
 }
-div.transcription.style-omv .note {
-	display:inline;
+.note {
+	text-align:left;
 }
-div.transcription.style-omv .fw {
-	display:inline;
+.fw {
+	text-indent:0 !important;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	line-height:1.3em;
+	margin-bottom:.5em;
 }
-div.transcription.style-omv .fw.pageno {
+.fw .center {
+	display:inline
+}
+.fw.pageno {
 	text-indent:0 !important;
 }
-div.transcription.style-omv .fw.catch.right {
+.fw.catch.right {
 	margin-left:14em;
 	text-indent:0;
 }
 
 
-/* 6. del, unclear, app, app, gap, space */
+/* 5. del, unclear, app, gap, space */
 
-div.transcription.style-omv .del,
-div.transcription.style-omv .del-by-over-text {
+.del,
+.del-by-over-text {
 	text-decoration:line-through;
 	/*color:#666666;*//*Previously used for .del-by-over-text*/
 }
-div.transcription.style-omv .pb-del {
+.pb-del {
 	display:inline-block;
 	margin-bottom:.5em;
 }
-div.transcription.style-omv .unclear {
+.unclear {
 	color:#706f6a;
 	border-bottom:1px dotted #706f6a;
 }
-div.transcription.style-omv .app {
+.app {
 border-bottom: 1px dotted #706f6a;
 }
-div.transcription.style-omv .gap {
+.gap {
 	border-bottom:1px dotted black;
 }
-div.transcription.style-omv .space-other {
+.space-other {
 	border-bottom:1px dotted black;
 	display:block;
 }
-div.transcription.style-omv .verticalSpace {
+.verticalSpace {
 	display:inline-block;
 	border-bottom:1px dotted black;
 	text-indent:0;
 }
 
 
-/* 7. Editorial */
+/* 6. Editorial */
 
-div.transcription.style-omv .sic,
-div.transcription.style-omv .corr {
-	border-bottom:2px #B33B24 dotted;
+.sic,
+.corr {
+	border-bottom:2px #e4524b dotted;
 }
-div.transcription.style-omv .abbr,
-div.transcription.style-omv .expan {
+.abbr,
+.expan {
 	border-bottom:1px green dotted;
 }
-div.transcription.style-omv .expan,
-div.transcription.style-omv .hidden {
+.expan,
+.hidden {
 	display:none;
 }
-div.transcription.style-omv .rdg {
+.rdg {
 	display:block;
 }
 
 
-/* 8. @rend classes (except colors, lines, and up-down placement) */
+/* 7. @rend classes (except colors, lines, and up-down placement) */
 
-div.transcription.style-omv .bold {
+.bold {
 	font-weight:600;
 }
-div.transcription.style-omv .caps {
+.caps {
 	font-variant:small-caps;
 }
-div.transcription.style-omv .center {
+.center {
 	text-indent:0;
 	margin-left:2.7em;
 }
 
-div.transcription.style-omv .dottedunderline {
+.dottedunderline {
 	border-bottom:1px dashed;
 }
-div.transcription.style-omv .doubleunderline {
+.doubleunderline {
 	border-bottom:3px double;
 }
-div.transcription.style-omv .tripleunderline {
+.tripleunderline {
 	border-bottom:4px double;
 	text-decoration:underline;
 }
-div.transcription.style-omv .italic {
+.indent {
+	text-indent:25px;
+}
+.italic {
 	font-style:italic;
 }
-div.transcription.style-omv .large {
-	font-size:1.1em;
+.large {
+	font-size:1.3em;
 }
-div.transcription.style-omv .overline {
+.overline {
 	text-decoration:overline;
 }
-div.transcription.style-omv .overline.underline {
+.overline.underline {
 	text-decoration:overline underline;
 }
-div.transcription.style-omv .right {
+.right {
 	text-indent:0;
 	margin-left:4em;
 }
-div.transcription.style-omv .small {
+.small {
 	font-size:.85em;
 }
-div.transcription.style-omv .smallcaps {
+.smallcaps {
 	font-variant:small-caps;
 }
-div.transcription.style-omv .underline {
+.underline {
 	text-decoration:underline;
 }
-div.transcription.style-omv .upsidedown {
+.upsidedown {
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(180deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(180deg);*/ /* Safari and Chrome */
 	/*-o-transform:rotate(180deg);*/ /* Opera */
 }
-div.transcription.style-omv .vertical {
+.vertical {
 	/*-ms-transform:rotate(90deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(90deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(90deg);*/ /* Safari and Chrome */
@@ -439,14 +415,14 @@ div.transcription.style-omv .vertical {
 }
 
 
-/* 9. Page placement */
+/* 8. Page placement */
 
-div.transcription.style-omv .above,
-div.transcription.style-omv .below,
-div.transcription.style-omv .bottom,
-div.transcription.style-omv .sub,
-div.transcription.style-omv .sup,
-div.transcription.style-omv .top {
+.above,
+.below,
+.bottom,
+.sub,
+.sup,
+.top {
 	/* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
 	font-size:.8em;
@@ -463,109 +439,136 @@ div.transcription.style-omv .top {
      is already set and you can remove this rule */
 	vertical-align:baseline;
 }
-div.transcription.style-omv .above,
-div.transcription.style-omv .sup,
-div.transcription.style-omv .top {
+.above,
+.sup,
+.top {
 	/* Move the superscripted text up */
 	top:-0.50em;
 }
-div.transcription.style-omv .below,
-div.transcription.style-omv .bottom,
-div.transcription.style-omv .sub {
+.below,
+.bottom,
+.sub {
 	/* Move the subscripted text down, but only
      half as far down as the superscript moved up */
 	bottom:-0.50em;
 }
-div.transcription.style-omv .true {
-	display:inline-block;
-}/*Goes with standalone <note>s*/
 
 
 /* 10. Colors */
 
-div.transcription.style-omv .black {
+.black {
 	color:black;
 }
-div.transcription.style-omv .blue {
+.blue {
 	color:blue;
 }
-div.transcription.style-omv .blue.black {
+.blue.black {
 	color:#245a82;
 }
-div.transcription.style-omv .brown {
+.brown {
 	color:#664d36;
 }
-div.transcription.style-omv .brown.black {
+.brown.black {
 	color:#473225;
 }
-div.transcription.style-omv .gray {
+.gray {
 	color:#706f6a;
 }
-div.transcription.style-omv .gray.black {
+.gray.black {
 	color:#3d4245;
 }
-div.transcription.style-omv .green {
+.green {
 	color:green;
 }
-div.transcription.style-omv .orange {
+.orange {
 	color:orange;
 }
-div.transcription.style-omv .purple {
+.purple {
 	color:purple;
 }
-div.transcription.style-omv .red {
+.red {
 	color:#B33B24;
 }
-div.transcription.style-omv .yellow {
+.yellow {
 	color:yellow;
 }
 
 
-/* 11. Lists and Tables */
-div.transcription.style-omv .list {
-	display:block;
-}
-div.transcription.style-omv table {
-	font-size:.85em;
+/* 10. Lists and Tables */
+table {
 	border-style:none;
-	margin-right:2em; 
-}/*Last item needed so that the text doesn't run up against the right edge in the viewer.*/
-div.transcription.style-omv tr,
-div.transcription.style-omv td {
+	margin:0 auto;
+	line-height:1.3em;
+}
+tr,
+td {
 	border-style:none;
 }
-div.transcription.style-omv table .linenumber {
+table .linenumber {
 	display:none;
 }
 
 
-/* 12. Misc */
+/* 11. Misc */
 
-div.transcription.style-omv .figure {
+.figure {
 	margin-left:0;
 	color:#666666;
 	font-size:.8em;
 	border-bottom:1px #666666 dotted;
 }
-div.transcription.style-omv .p .figure,
-div.transcription.style-omv .p.noindent .figure,
-div.transcription.style-omv .ab .figure,
-div.transcription.style-omv p .metamark {
+.image-medium {
+	width:60%;
+	display:inline-block;
+}
+.image-small {
+	width:40%;
+	display:inline-block;
+}
+.p .figure,
+.p.noindent .figure,
+.ab .figure,
+p .metamark {
 	margin-left:0px !important;
 	text-indent:0px;
 }
-div.transcription.style-omv .metamark {
+.metamark {
 	/*color:#666666;
 	border-bottom:1px #666666 dotted;*/
 }
-div.transcription.style-omv .foreign,
-div.transcription.style-omv .geogName,
-div.transcription.style-omv .persName,
-div.transcription.style-omv .orgName,
-div.transcription.style-omv .quote,
-div.transcription.style-omv .region,
-div.transcription.style-omv .settlement,
-div.transcription.style-omv .term-ailment,
-div.transcription.style-omv .term-tribe {
+.foreign,
+.geogName,
+.persName,
+.orgName,
+.quote,
+.region,
+.settlement,
+.term-ailment,
+.term-tribe {
 	border-bottom:2px #428bca dotted; /* change to 1px */
 }
+
+/* 12. Letters */
+
+/*
+.opener,
+.closer,
+.trailer {
+	margin-bottom:0px;
+}
+.opener {
+	display:inline;
+	margin-top:1em;
+}
+.closer,
+.address {
+	display:block;
+}
+.dateline {
+	display:inline;
+	text-indent:0;
+}
+.signed {
+	display:inline-block;
+}
+*/

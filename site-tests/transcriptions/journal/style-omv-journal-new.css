@@ -5,7 +5,7 @@ Table of Contents
 1. Textual divisions 
 2. pb, lb, linenumber 
 3. Milestone and lines 
-4. p, ab, note, fw, column break, footnotes 
+4. h1-h3, p, ab, note, fw, column break, footnotes 
 5. del, unclear, app, gap, space 
 6. Editorial 
 7. @rend classes (except lines, page placement, colors) 
@@ -246,6 +246,18 @@ hr {
 
 /* 4. p, ab, head, note, fw, column break, footnotes */
 
+
+/* 4. h1-3, p, ab, head, note, fw, column break, footnotes */
+
+h1 {
+font-size:2.1em;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h3 {
+font-size:.9em;
+font-weight:300;
+font-family:Arial, Geneva, Tahoma, sans-serif;
+}
 .p {
 	display:inline-block;
 	text-indent:25px;

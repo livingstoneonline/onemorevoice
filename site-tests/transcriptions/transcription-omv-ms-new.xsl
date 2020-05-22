@@ -120,17 +120,17 @@
 
 			<div class="navbar">
         			<ul>
-			            <li><a href="index.html">home</a></li>
-            			<li><a href="texts.html">texts</a></li>
+			            <li><a href="../index.html">home</a></li>
+            			<li><a href="../texts.html">texts</a></li>
 			            <li>
             			    <div class="dropdown">
 			                    <button class="dropbtn">concepts
 								<i class="fa fa-caret-down"></i>
 							</button>
             			        <div class="dropdown-content">
-                        			<a href="analytical_priorities.html">analytical priorities</a>
-			                        <a href="project_design.html">project design</a>
-            			            <a href="coding_guidelines.html">coding guidelines</a>
+                        			<a href="../analytical_priorities.html">analytical priorities</a>
+			                        <a href="../project_design.html">project design</a>
+            			            <a href="../coding_guidelines.html">coding guidelines</a>
 			                    </div>
             			    </div>
 			            </li>
@@ -140,8 +140,8 @@
 								<i class="fa fa-caret-down"></i>
 							</button>
             			        <div class="dropdown-content">
-                        			<a href="contributors.html">contributors</a>
-			                        <a href="bibliography.html">bibliography</a>
+                        			<a href="../contributors.html">contributors</a>
+			                        <a href="../bibliography.html">bibliography</a>
             			            <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a>                        
                         			<a href="mailto:awisnicki@yahoo.com">contact</a>
 			                    </div>
@@ -151,7 +151,7 @@
 			    </div>
 			       
 			<div class="title"> 
-			    <img class="image" src="images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+			    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
         		<div><span class="texts omv-title"><a href="../texts.html">&#8592; Go back</a></span><h1>One More Voice</h1></div>
         		<hr/>
         		<div><span class="texts omv-subtitle"><a href="../texts.html">&#8592; Go back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
@@ -246,7 +246,7 @@
 			
 			<div class="footer">
             	<hr />
-            	<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
+            	<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="../site_map.html">Site Map</a></p>
         	</div>
 			
 		</div>

@@ -35,12 +35,16 @@ width:100%;
 	font-weight:300;
 	font-family:Arial, Geneva, Tahoma, sans-serif;
 	height:0;
-	text-decoration:none;
 	float:left;
 	clear:both;
-
 }
-.texts a:link {
+.texts-bottom {
+	font-size:.9em;
+	font-weight:300;
+	font-family:Arial, Geneva, Tahoma, sans-serif;
+}
+.texts a:link,
+.texts-bottom a:link {
 	text-decoration:none;
 }
 

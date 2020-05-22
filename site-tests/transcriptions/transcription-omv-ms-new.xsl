@@ -128,6 +128,9 @@
 		<xsl:variable name="license">
 			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/ref/@target"/>
 		</xsl:variable>
+		<xsl:variable name="LEAP-ID">
+			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
+		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
@@ -168,9 +171,9 @@
 			       
 			<div class="title"> 
 			    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
-        		<div><span class="texts omv-title"><a href="../texts.html">&#8592; Go back</a></span><h1>One More Voice</h1></div>
+        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#8592; Go back</a></span><h1>One More Voice</h1></div>
         		<hr/>
-        		<div><span class="texts omv-subtitle"><a href="../texts.html">&#8592; Go back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
+        		<div><span class="texts omv-subtitle"><a href="../texts.html##{$LEAP-ID}">&#8592; Go back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
     		</div>
 
     		<div class="item-details">

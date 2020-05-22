@@ -26,20 +26,36 @@
 
 	<!-- When not producing full HTML files, this template could be removed but javascript and CSS will need to be copied to correct location. -->
 	<xsl:template match="/">
-		<!--<xsl:variable name="body-color">
-			<xsl:apply-templates select="//body/@n[1]"/>
-		</xsl:variable>-->
+		<xsl:variable name="additional-authors-1">			
+			<xsl:choose>
+				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
+					<xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator=", "/>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable>
 		<html>
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
-				<meta charset="UTF-8"/>
+				<title>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, <xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice
+				</title>
+			    <meta charset="UTF-8"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			    <meta name="description" content="Critically-edited primary material for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    			<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<link rel="stylesheet" type="text/css" href="style-omv-ms-new.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>
 				<link rel="stylesheet" type="text/css" href="style-omv-mobile.css"/>						
-				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
-				<title>
-					<xsl:value-of select="//teiHeader//title[2]"/>
-				</title>
+			    <!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+				<script>
+			  		window.dataLayer = window.dataLayer || [];
+			  		function gtag(){dataLayer.push(arguments);}
+			  		gtag('js', new Date());
+			  		gtag('config', 'UA-31768072-5');
+				</script>    
 			</head>
 			<body><!-- style="background:#{$body-color};" -->
 				<xsl:apply-templates select="TEI"/>
@@ -241,7 +257,7 @@
 				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 			</div>
 			
 			<div class="footer">

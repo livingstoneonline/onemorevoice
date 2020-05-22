@@ -171,9 +171,9 @@
 			       
 			<div class="title"> 
 			    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
-        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#8592; Go back</a></span><h1>One More Voice</h1></div>
+        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1>One More Voice</h1></div>
         		<hr/>
-        		<div><span class="texts omv-subtitle"><a href="../texts.html##{$LEAP-ID}">&#8592; Go back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
+        		<div><span class="texts omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
     		</div>
 
     		<div class="item-details">
@@ -185,7 +185,7 @@
 				<p class="item-spec"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
 				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 				<p class="item-spec"><span class="bold">Edition license:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
-				<p class="item-spec"><span class="bold">Critical encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+				<p class="item-spec"><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 				<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
 			</div>
@@ -254,7 +254,8 @@
 
 			<hr/>
 			
-			<div class="final-item-details caption">
+			<div class="final-item-details">
+				<p class="texts-bottom"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>

@@ -3,6 +3,9 @@
 body {
 width:85%;
 }
+.omv-subtitle {
+display:none;
+}
 }
 
 /* iPad Mini: Less than or equal to 703px */
@@ -13,8 +16,14 @@ width:93%;
 h1 {
 font-size:2em;
 }
-h3 {
+h3, .texts {
 font-size:.85em;
+}
+.omv-title {
+display:none;
+}
+.omv-subtitle {
+display:block;
 }
 .narrow-hr {
 width:50%;
@@ -29,8 +38,14 @@ width:100%;
 h1 {
 font-size:1.9em;
 }
-h3 {
+h3, .texts {
 font-size:.80em;
+}
+.omv-title {
+display:none;	
+}
+.omv-subtitle {
+display:block;
 }
 .narrow-hr {
 width:60%;
@@ -42,10 +57,13 @@ width:60%;
 h1 {
 font-size:1.8em;
 }
-h3 {
+h3, .texts {
 font-size:.75em;
 }
 .narrow-hr {
 width:70%;
+}
+.omv-title {
+display:none;	
 }
 }

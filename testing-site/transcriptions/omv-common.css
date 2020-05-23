@@ -9,18 +9,20 @@
 
 Table of Contents
 -----------------
-1. Textual divisions 
-2. pb, lb, linenumber 
-3. Milestone and lines
-4. h1-h3, p, ab, note, fw, column break, footnotes 
-5. del, unclear, app, gap, space 
-6. Editorial 
-7. @rend classes (except lines, page placement, colors) 
-8. Page placement 
-9. Colors 
-10. Lists and Tables 
-11. Misc 
-12. Letters [not is use, commented out]
+1. Textual divisions
+2. Header and footer
+3. Dropdown menu
+4. pb, lb, linenumber 
+5. Milestone and lines
+6. h1-h3, p, ab, note, fw, column break, footnotes 
+7. del, unclear, app, gap, space 
+8. Editorial 
+9. @rend classes (except lines, page placement, colors) 
+10. Page placement 
+11. Colors 
+12. Lists and tables 
+13. Misc 
+14. Letters [not is use, commented out]
 
 */
 
@@ -103,7 +105,159 @@ a:hover{
 }
 
 
-/* 2. pb, lb, linenumber */
+/* 2. Header and footer */
+
+.title{
+	font-weight: bold;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-bottom: 1em;
+	text-align: center;
+	line-height: 1.6em;
+	font-style: normal;
+}
+.title img{
+	border: 1px solid gray;
+	margin-top: .5em;
+}
+.image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.texts{
+	font-size: .9em;
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	height: 0;
+	float: left;
+	clear: both;
+}
+.texts-bottom{
+	font-size: .9em;
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+}
+.texts a:link,
+.texts-bottom a:link{
+	text-decoration: none;
+}
+.caption{
+	padding-top: 2em;
+}
+.final-item-details{
+	text-align: left;
+	/*white-space:normal;*/
+}
+.footer{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-size: .85em;
+	padding-top: 1em;
+	text-align: center;
+}
+
+
+/* 3. Dropdown menu */
+/*modeled on: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
+
+/* Navbar container */
+.navbar{
+	font-size: .9em;
+	background-color: white;
+	/*overflow:hidden;*/ /*removed because causing mobile problems*/
+	line-height: 100%;
+}
+.navbar ul{
+	text-align: center;
+	list-style: none;
+	padding: 5px 0;
+	margin: 0;
+}
+.navbar li{
+	display: inline-block;
+}
+
+/* Links inside the navbar */
+.navbar a{
+	color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 10px 10px;
+}
+.navbar,
+.dropdown{
+	display: inline;
+}
+
+/* The dropdown container */
+.dropdown{
+	/*float:left;*/
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn{
+	color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+	padding: 10px 10px;
+}
+
+/* Remove underlining on dropdown button on hover */
+.dropbtn:hover{
+	text-decoration: none;
+}
+
+/* Add a white background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn{
+	color: white;
+	background-color: #424242;
+}
+.navbar a:hover{
+	text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+	background-color: #e6e6e6;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	display: none;
+	min-width: 100px;
+	position: absolute;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+	font-size: 1em;
+	color: black;
+	text-decoration: none;
+	padding: 12px 16px;
+	display: block;
+	float: none;
+	text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+	color: black;
+	background-color: #c9c9c9;
+}
+
+
+/* 4. pb, lb, linenumber */
 
 .pb-title{
 	color: #428bca;
@@ -154,7 +308,7 @@ p.right .linenumber{
 }
 
 
-/*3. Milestone and lines*/
+/*5. Milestone and lines*/
 
 .milestone{
 	display: block;
@@ -251,7 +405,7 @@ hr{
 }
 
 
-/* 4. h1-3, p, ab, head, note, fw, column break, footnotes */
+/* 6. h1-3, p, ab, head, note, fw, column break, footnotes */
 
 h1{
 	font-size: 2.1em;
@@ -318,7 +472,7 @@ h3{
 }
 
 
-/* 5. del, unclear, app, gap, space */
+/* 7. del, unclear, app, gap, space */
 
 .del,
 .del-by-over-text{
@@ -350,7 +504,7 @@ h3{
 }
 
 
-/* 6. Editorial */
+/* 8. Editorial */
 
 .sic,
 .corr{
@@ -369,7 +523,7 @@ h3{
 }
 
 
-/* 7. @rend classes (except colors, lines, and up-down placement) */
+/* 9. @rend classes (except colors, lines, and up-down placement) */
 
 .bold{
 	font-weight: 600;
@@ -445,7 +599,7 @@ h3{
 }
 
 
-/* 8. Page placement */
+/* 10. Page placement */
 
 .above,
 .below,
@@ -484,7 +638,7 @@ h3{
 }
 
 
-/* 9. Colors */
+/* 11. Colors */
 
 .black{
 	color: black;
@@ -524,7 +678,7 @@ h3{
 }
 
 
-/* 10. Lists and Tables */
+/* 12. Lists and tables */
 table{
 	border-style: none;
 	margin: 0 auto;
@@ -539,7 +693,7 @@ table .linenumber{
 }
 
 
-/* 11. Misc */
+/* 13. Misc */
 
 .none{
 	display: none;
@@ -584,7 +738,7 @@ p .metamark{
 	border-bottom: 1px #428bca dotted;
 }
 
-/* 12. Letters [not in use] */
+/* 14. Letters [not in use] */
 
 /*
 .opener,

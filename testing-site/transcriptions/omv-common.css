@@ -4,13 +4,14 @@
 
 /* This CSS file has been developed from a CSS file for Livingstone Online (https://livingstoneonline.org/) and is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
+
 /* 
 
 Table of Contents
 -----------------
 1. Textual divisions 
 2. pb, lb, linenumber 
-3. Milestone and lines 
+3. Milestone and lines [moved to seperate genre css files]
 4. h1-h3, p, ab, note, fw, column break, footnotes 
 5. del, unclear, app, gap, space 
 6. Editorial 
@@ -19,6 +20,7 @@ Table of Contents
 9. Colors 
 10. Lists and Tables 
 11. Misc 
+12. Letters [not is use, commented out]
 
 */
 
@@ -64,13 +66,6 @@ body {
 	margin-top:0em;
 	line-height:1.6em;
 }
-.TEI {
-	display:block;
-	text-align:justify;
-	padding-top:1em;
-	margin-left:auto;
-	margin-right:auto;
-}
 a:link {
 	color:#2e68ac !important;
 }
@@ -79,11 +74,9 @@ a:hover {
 }
 
 
-
 /* 2. pb, lb, linenumber */
 
 .pb-title {
-	display:block;
 	color:#428bca;
 	font-size:90%;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
@@ -91,6 +84,7 @@ a:hover {
 	margin-bottom:1em;
 	margin-left:0;
 	text-indent:0;
+	/*also see style-omv-journal-new.css*/
 }
 /*.pb-title:hover {
 	color:#AAA;
@@ -129,131 +123,7 @@ p.right .linenumber {
 }
 
 
-/* 3. Milestone and lines */
-
-.milestone {
-	display:block;
-	width:100%;
-	background:#FFF;
-	height:0;
-	margin-left:0;
-	margin-right:9%;
-	padding:0px;
-}
-
-.line {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	margin-left:0;
-	text-align:left;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
-}
-.doubleline {
-	border-top:4px double #8c8b8b;
-	display:block;
-}
-.quarterline.doubleline {
-	width:10em;
-	border-top:4px double #8c8b8b;
-	display:block;
-}
-.tripleline {
-	border-top:4px double #8c8b8b;
-	line-height:1.9em;
-	display:block;
-	margin-left:9%;
-	text-align:left;
-}
-.halfline {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:60%;
-	margin-left:0;
-	text-align:left;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
-}
-.quarterline {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:40%;
-	margin-left:0;
-	text-align:left;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
-}
-.halfline.quarterline {
-	width: 30%;
-}
-.second-line {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	margin-left:0;
-	text-align:left;
-	margin-top:-1em;
-	margin-bottom:0em;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
-}
-.third-line {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	margin-left:0;
-	text-align:left;
-	margin-top:1.5em;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
-}
-hr {
-	width:100%;
-	background-color:gray;
-	height:1px; 
-	border:0; 
-}
-.title-hr {
-	max-width:33em;
-	margin-top:2em;
-	margin-bottom:2em;
-}
-.narrow-hr {
-	width:45%;
-	margin-top:2em;
-	margin-bottom:2em;
-}
-
-/* iPad Air: Less than or equal to 768px */
-@media only screen and (max-width:768px) {
-}
-
-/* iPad Mini: Less than or equal to 703px */
-@media only screen and (max-width:703px) {
-.narrow-hr {
-	width:50%;
-}
-}
-
-/* iPhone 6+: Less than or equal to 414px */
-@media only screen and (max-width:414px) {
-.narrow-hr {
-	width:60%;
-}
-}
-
-/* iPhone 5s: Less than or equal to 320px */ 
-@media only screen and (max-width:320px) {
-.narrow-hr {
-	width:70%;
-}
-}
-
-
-/* 4. p, ab, head, note, fw, column break, footnotes */
+/*3. Milestone and lines [moved to seperate genre css files]*/
 
 
 /* 4. h1-3, p, ab, head, note, fw, column break, footnotes */
@@ -297,11 +167,12 @@ font-family:Arial, Geneva, Tahoma, sans-serif;
 }
 .fw {
 	text-indent:0 !important;
-	display:block;
 	overflow:hidden;
 	text-align:center;
 	line-height:1.3em;
 	margin-bottom:.5em;
+	/*also see style-omv-ms-new.css*/
+	/*also see style-omv-journal-new.css*/
 }
 .fw .center {
 	display:inline
@@ -320,7 +191,7 @@ font-family:Arial, Geneva, Tahoma, sans-serif;
 .del,
 .del-by-over-text {
 	text-decoration:line-through;
-	/*color:#666666;*//*Previously used for .del-by-over-text*/
+	/*color:#666666;*//*previously used for .del-by-over-text*/
 }
 .pb-del {
 	display:inline-block;
@@ -374,12 +245,6 @@ border-bottom: 1px dotted #706f6a;
 .caps {
 	font-variant:small-caps;
 }
-.center {
-text-align:center;
-display:block;
-margin-left:auto;
-margin-right:auto;
-}
 .dottedunderline {
 	border-bottom:1px dashed;
 }
@@ -400,17 +265,13 @@ margin-right:auto;
 	font-size:1.3em;
 }
 .left {
-	float:left;
-	clear:both;
+	/*see style-omv-journal-new.css*/
 }
 .overline {
 	text-decoration:overline;
 }
 .overline.underline {
 	text-decoration:overline underline;
-}
-.right {
-	float:right;
 }
 .small {
 	font-size:.85em;
@@ -531,11 +392,14 @@ table .linenumber {
 
 /* 11. Misc */
 
+.none	{
+	display:none;
+}
 .figure {
 	margin-left:0;
 	color:#666666;
 	font-size:.8em;
-	/*border-bottom:1px #666666 dotted;*/
+	/* also see style-omv-ms-new.css */
 }
 .image-medium {
 	width:60%;
@@ -565,5 +429,30 @@ p .metamark {
 .settlement,
 .term-ailment,
 .term-tribe {
-	border-bottom:2px #428bca dotted; /* change to 1px */
+	border-bottom:1px #428bca dotted;
 }
+
+/* 12. Letters [not in use] */ 
+
+/*
+.opener,
+.closer,
+.trailer {
+	margin-bottom:0px;
+}
+.opener {
+	display:inline;
+	margin-top:1em;
+}
+.closer,
+.address {
+	display:block;
+}
+.dateline {
+	display:inline;
+	text-indent:0;
+}
+.signed {
+	display:inline-block;
+}
+*/

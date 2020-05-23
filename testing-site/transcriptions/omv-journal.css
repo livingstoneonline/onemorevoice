@@ -7,114 +7,114 @@
 
 /* This file contains coding unique to journal/periodical article display */
 
-.TEI {
-	display:block;
-	text-align:justify;
-	padding-top:1em;
-	margin-left:auto;
-	margin-right:auto;
+.TEI{
+	display: block;
+	text-align: justify;
+	padding-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
 }
-.pb-title {
-	display:block;
+.pb-title{
+	display: block;
 }
 .fw,
-.p.center {
-	display:block !important;
+.p.center{
+	display: block !important;
 }
-.center {
-text-align:center;
-display:block;
-margin-left:auto !important;
-margin-right:auto !important;
+.center{
+	text-align: center;
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
-.left {
-	float:left;
-	clear:both;
+.left{
+	float: left;
+	clear: both;
 }
-.right {
-	float:right;
+.right{
+	float: right;
 }
 
 
 /* Milestone and lines */
 
-.milestone {
-	display:block;
-	width:100%;
-	background:#FFF;
-	height:0;
-	margin-left:0;
-	margin-right:9%;
-	padding:0px;
+.milestone{
+	display: block;
+	width: 100%;
+	background: #FFF;
+	height: 0;
+	margin-left: 0;
+	margin-right: 9%;
+	padding: 0px;
 }
-.line {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	margin-left:0;
-	text-align:left;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
+.line{
+	border-bottom: 1px solid #d0d0d0;
+	display: block;
+	margin-left: 0;
+	text-align: left;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #58484b;
 }
-.doubleline {
-	border-top:4px double #8c8b8b;
-	display:block;
+.doubleline{
+	border-top: 4px double #8c8b8b;
+	display: block;
 }
-.quarterline.doubleline {
-	width:10em;
-	border-top:4px double #8c8b8b;
-	display:block;
+.quarterline.doubleline{
+	width: 10em;
+	border-top: 4px double #8c8b8b;
+	display: block;
 }
-.tripleline {
-	border-top:4px double #8c8b8b;
-	line-height:1.9em;
-	display:block;
-	margin-left:9%;
-	text-align:left;
+.tripleline{
+	border-top: 4px double #8c8b8b;
+	line-height: 1.9em;
+	display: block;
+	margin-left: 9%;
+	text-align: left;
 }
-.halfline {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:60%;
-	margin-left:0;
-	text-align:left;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
+.halfline{
+	border-bottom: 1px solid #d0d0d0;
+	display: block;
+	width: 60%;
+	margin-left: 0;
+	text-align: left;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #58484b;
 }
-.quarterline {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	width:40%;
-	margin-left:0;
-	text-align:left;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
+.quarterline{
+	border-bottom: 1px solid #d0d0d0;
+	display: block;
+	width: 40%;
+	margin-left: 0;
+	text-align: left;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #58484b;
 }
-.halfline.quarterline {
+.halfline.quarterline{
 	width: 30%;
 }
-.second-line {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	margin-left:0;
-	text-align:left;
-	margin-top:-1em;
-	margin-bottom:0em;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
+.second-line{
+	border-bottom: 1px solid #d0d0d0;
+	display: block;
+	margin-left: 0;
+	text-align: left;
+	margin-top: -1em;
+	margin-bottom: 0em;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #58484b;
 }
-.third-line {
-	border-bottom:1px solid #d0d0d0;
-	display:block;
-	margin-left:0;
-	text-align:left;
-	margin-top:1.5em;
-	height:0;
-	border:0;
-	border-top:1px solid #58484b;
+.third-line{
+	border-bottom: 1px solid #d0d0d0;
+	display: block;
+	margin-left: 0;
+	text-align: left;
+	margin-top: 1.5em;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #58484b;
 }
 
 /* End of milestone and lines */

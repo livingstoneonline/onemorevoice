@@ -50,12 +50,33 @@ body{
 	line-height: 1.6em;
 	/*white-space:nowrap;*/
 }
+.manuscript .front{
+	margin-bottom: -1em;
+}
+.manuscript .back{
+	margin-top: -1em;
+}
+.manuscript .TEI{
+	width: 100%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border: 2px solid gainsboro;
+}
 .journal .TEI{
 	display: block;
 	text-align: justify;
 	padding-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
+}
+.manuscript .ms-container{
+	display: inline-block;
+	/*white-space:nowrap;*/
+	text-align: left;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 .item-details{
 	text-align: left;
@@ -146,6 +167,13 @@ p.right .linenumber{
 .journal .milestone{
 	width: 100%;
 }
+.manuscript .line,
+.manuscript .doubleline, 
+.manuscript .tripleline,
+.manuscript .second-line,
+.manuscript .third-line{
+	width: 27em;
+}
 .line{
 	border-bottom: 1px solid #d0d0d0;
 	border:0;
@@ -169,7 +197,9 @@ p.right .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	/*also see omv-ms.css*/
+}
+.manuscript .halfline{
+	width: 17.5em;
 }
 .journal .halfline{
 	width: 60%;
@@ -178,7 +208,9 @@ p.right .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	/*also see omv-ms.css*/
+}
+.manuscript .quarterline{
+	width: 10em;
 }
 .journal .quarterline{
 	width: 40%;
@@ -271,6 +303,9 @@ h3{
 	/*also see omv-ms.css*/
 	/*also see omv-journal.css*/
 }
+.manuscript .fw{
+	display: inline;
+}
 .fw .center{
 	display: inline
 }
@@ -342,6 +377,10 @@ h3{
 .caps{
 	font-variant: small-caps;
 }
+.manuscript .center{
+	text-indent: 0;
+	margin-left: 2.7em;
+}
 .journal .center{
 	text-align: center;
 	display: block;
@@ -376,6 +415,10 @@ h3{
 }
 .overline.underline{
 	text-decoration: overline underline;
+}
+.manuscript .right{
+	text-indent: 0;
+	margin-left: 4em;
 }
 .journal .right{
 	float: right;
@@ -507,6 +550,9 @@ table .linenumber{
 	color: #666666;
 	font-size: .8em;
 	/* also see omv-ms.css */
+}
+.manuscript .figure{
+	border-bottom: 1px #666666 dotted;
 }
 .image-medium{
 	width: 60%;

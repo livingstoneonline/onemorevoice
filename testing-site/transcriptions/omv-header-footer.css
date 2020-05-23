@@ -4,38 +4,31 @@
 
 /* This CSS file has been developed from a CSS file for Livingstone Online (https://livingstoneonline.org/) and is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
-h1 {
-font-size:2.1em;
-font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-h3 {
-font-size:.9em;
-font-weight:300;
-font-family:Arial, Geneva, Tahoma, sans-serif;
-}
 
 .title {
-font-weight:bold;
-padding-left:0.3em;
-padding-right:0.3em;
-padding-bottom:1em;
-text-align:center;
-line-height:1.6em;
-font-style:normal;
+	font-weight:bold;
+	padding-left:0.3em;
+	padding-right:0.3em;
+	padding-bottom:1em;
+	text-align:center;
+	line-height:1.6em;
+	font-style:normal;
 }
-
 .title img {
-border: 1px solid gray;
-margin-top: .5em;
+	border: 1px solid gray;
+	margin-top: .5em;
 }
-
+.title hr {
+	width:100%;
+	background-color:gray; 
+	height:1px; 
+	border:0; 
+}
 .image {
-margin-left:auto;
-margin-right:auto;
-width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
 }
-
 .texts {
 	font-size:.9em;
 	font-weight:300;
@@ -53,32 +46,18 @@ width:100%;
 .texts-bottom a:link {
 	text-decoration:none;
 }
-
-.omv-subtitle {
-display:none;
-}
-
-.title hr {
-width:100%;
-background-color:gray; 
-height:1px; 
-border:0; 
-}
-
 .caption {
-padding-top:2em;
+	padding-top:2em;
 }
-
 .final-item-details {
 	text-align:left;
 	/*white-space:normal;*/
 }
-
 .footer {
-font-family:Arial, Geneva, Tahoma, sans-serif;
-font-size:.85em;
-padding-top:1em;
-text-align:center;
+	font-family:Arial, Geneva, Tahoma, sans-serif;
+	font-size:.85em;
+	padding-top:1em;
+	text-align:center;
 }
 
 /*Dropdown Menu*/
@@ -86,98 +65,94 @@ text-align:center;
 
  /* Navbar container */
 .navbar {
-font-size:.9em;
-background-color:white;
-overflow:hidden;
-line-height:100%;
+	font-size:.9em;
+	background-color:white;
+	overflow:hidden;
+	line-height:100%;
 }
-
 .navbar ul {
-text-align:center;
-list-style:none;
-padding:5px 0;
-margin:0;
+	text-align:center;
+	list-style:none;
+	padding:5px 0;
+	margin:0;
 }
-
 .navbar li {
-display:inline-block;
+	display:inline-block;
 }
 
 /* Links inside the navbar */
 .navbar a {
-color:black !important;
-font-size:1.3em;
-font-weight:bold;
-text-decoration:none;
-padding:10px 10px;
+	color:black !important;
+	font-size:1.3em;
+	font-weight:bold;
+	text-decoration:none;
+	padding:10px 10px;
 }
-
 .navbar, .dropdown {
-display:inline;
+	display:inline;
 }
 
 /* The dropdown container */
 .dropdown {
 /*float:left;*/
-overflow:hidden;
+	overflow:hidden;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-color:black;
-font-size:1.3em;
-font-weight:bold;
-outline:none;
-border:none;
-background-color:inherit;
-font-family:inherit; /* Important for vertical align on mobile phones */
-margin:0; /* Important for vertical align on mobile phones */
-padding:10px 10px;
+	color:black;
+	font-size:1.3em;
+	font-weight:bold;
+	outline:none;
+	border:none;
+	background-color:inherit;
+	font-family:inherit; /* Important for vertical align on mobile phones */
+	margin:0; /* Important for vertical align on mobile phones */
+	padding:10px 10px;
 }
 
 /* Remove underlining on dropdown button on hover */
 .dropbtn:hover {
-text-decoration:none;
+	text-decoration:none;
 }
 
 /* Add a white background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-color:white !important;
-background-color:#424242;
+	color:white !important;
+	background-color:#424242;
 }
-
 .navbar a:hover {
-text-decoration:underline;
+	text-decoration:underline;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-display:block;
+	display:block;
 } 
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-background-color:#e6e6e6;
-box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-display:none;
-min-width:100px;
-position:absolute;
-z-index:1;
+	background-color:#e6e6e6;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	display:none;
+	min-width:100px;
+	position:absolute;
+	z-index:1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-font-size:1em;
-color:black;
-text-decoration:none;
-padding:12px 16px;
-display:block;
-float:none;
-text-align:left;
+	font-size:1em;
+	color:black;
+	text-decoration:none;
+	padding:12px 16px;
+	display:block;
+	float:none;
+	text-align:left;
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-color:black !important;
-background-color:#c9c9c9;
+	color:black !important;
+	background-color:#c9c9c9;
 }

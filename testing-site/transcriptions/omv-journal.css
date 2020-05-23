@@ -39,56 +39,38 @@
 /* Milestone and lines */
 
 .milestone{
-	display: block;
 	width: 100%;
+	display: block;
+	text-align: left;
 	background: #FFF;
 	height: 0;
-	margin-left: 0;
-	margin-right: 9%;
 	padding: 0px;
 }
 .line{
 	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	margin-left: 0;
-	text-align: left;
-	height: 0;
-	border: 0;
+	border:0;
 	border-top: 1px solid #58484b;
 }
 .doubleline{
 	border-top: 4px double #8c8b8b;
-	display: block;
 }
 .quarterline.doubleline{
 	width: 10em;
 	border-top: 4px double #8c8b8b;
-	display: block;
 }
 .tripleline{
-	border-top: 4px double #8c8b8b;
 	line-height: 1.9em;
-	display: block;
-	margin-left: 9%;
-	text-align: left;
+	border-top: 4px double #8c8b8b;
 }
 .halfline{
-	border-bottom: 1px solid #d0d0d0;
-	display: block;
 	width: 60%;
-	margin-left: 0;
-	text-align: left;
-	height: 0;
+	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
 }
 .quarterline{
-	border-bottom: 1px solid #d0d0d0;
-	display: block;
 	width: 40%;
-	margin-left: 0;
-	text-align: left;
-	height: 0;
+	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
 }
@@ -97,22 +79,14 @@
 }
 .second-line{
 	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	margin-left: 0;
-	text-align: left;
-	margin-top: -1em;
-	margin-bottom: 0em;
-	height: 0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	margin-top: -1em;
+	margin-bottom: 0em;
 }
 .third-line{
-	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	margin-left: 0;
-	text-align: left;
 	margin-top: 1.5em;
-	height: 0;
+	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
 }

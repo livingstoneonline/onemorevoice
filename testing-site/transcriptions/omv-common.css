@@ -68,10 +68,10 @@ body{
 }
 a:link,
 a:visited{
-	color: #2e68ac !important;
+	color: #2e68ac;
 }
 a:hover{
-	color: #e4524b !important;
+	color: #e4524b;
 }
 
 
@@ -85,7 +85,7 @@ a:hover{
 	margin-bottom: 1em;
 	margin-left: 0;
 	text-indent: 0;
-	/*also see style-omv-journal-new.css*/
+	/*also see omv-journal.css*/
 }
 /*.pb-title:hover {
 	color:#AAA;
@@ -103,7 +103,7 @@ a:hover{
 	color: #8c8b85;
 	text-align: right;
 	float: left;
-	margin-left: -3em !important;
+	margin-left: -3em; /*!important removed*/
 	width: 1em;
 	display: none;
 }
@@ -114,10 +114,10 @@ p .linenumber{
 	text-indent: 1em;
 }
 p.center .linenumber{
-	margin-left: -6.4em !important;
+	margin-left: -6.4em; /*!important removed*/
 }
 p.right .linenumber{
-	margin-left: -10.5em !important;
+	margin-left: -10.5em; /*!important removed*/
 }
 .list .linenumber{
 	text-indent: 0;
@@ -132,14 +132,17 @@ p.right .linenumber{
 	background: #FFF;
 	height: 0;
 	padding: 0px;
+	/*also see omv-journal.css*/
 }
 .line{
 	border-bottom: 1px solid #d0d0d0;
 	border:0;
 	border-top: 1px solid #58484b;
+	/*also see omv-ms.css*/
 }
 .doubleline{
 	border-top: 4px double #8c8b8b;
+	/*also see omv-ms.css*/
 }
 .quarterline.doubleline{
 	width: 10em;
@@ -148,16 +151,21 @@ p.right .linenumber{
 .tripleline{
 	line-height: 1.9em;
 	border-top: 4px double #8c8b8b;
+	/*also see omv-ms.css*/
 }
 .halfline{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	/*also see omv-journal.css*/
+	/*also see omv-ms.css*/
 }
 .quarterline{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	/*also see omv-journal.css*/
+	/*also see omv-ms.css*/
 }
 .halfline.quarterline{
 	width: 30%;
@@ -168,12 +176,14 @@ p.right .linenumber{
 	border-top: 1px solid #58484b;
 	margin-top: -1em;
 	margin-bottom: 0em;
+	/*also see omv-ms.css*/
 }
 .third-line{
 	margin-top: 1.5em;
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	/*also see omv-ms.css*/
 }
 hr{
 	width: 100%;
@@ -238,14 +248,14 @@ h3{
 	text-align: center;
 	line-height: 1.3em;
 	margin-bottom: .5em;
-	/*also see style-omv-ms-new.css*/
-	/*also see style-omv-journal-new.css*/
+	/*also see omv-ms.css*/
+	/*also see omv-journal.css*/
 }
 .fw .center{
 	display: inline
 }
 .fw.pageno{
-	text-indent: 0 !important;
+	text-indent: 0;
 }
 .fw.catch.right{
 	margin-left: 14em;
@@ -332,7 +342,7 @@ h3{
 	font-size: 1.3em;
 }
 .left{
-	/*see style-omv-journal-new.css*/
+	/*see omv-journal.css*/
 }
 .overline{
 	text-decoration: overline;
@@ -466,7 +476,7 @@ table .linenumber{
 	margin-left: 0;
 	color: #666666;
 	font-size: .8em;
-	/* also see style-omv-ms-new.css */
+	/* also see omv-ms.css */
 }
 .image-medium{
 	width: 60%;

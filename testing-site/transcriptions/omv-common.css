@@ -50,6 +50,13 @@ body{
 	line-height: 1.6em;
 	/*white-space:nowrap;*/
 }
+.journal .TEI{
+	display: block;
+	text-align: justify;
+	padding-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
 .item-details{
 	text-align: left;
 	padding-bottom: 1em;
@@ -85,7 +92,9 @@ a:hover{
 	margin-bottom: 1em;
 	margin-left: 0;
 	text-indent: 0;
-	/*also see omv-journal.css*/
+}
+.journal .pb-title{
+	display: block;
 }
 /*.pb-title:hover {
 	color:#AAA;
@@ -134,6 +143,9 @@ p.right .linenumber{
 	padding: 0px;
 	/*also see omv-journal.css*/
 }
+.journal .milestone{
+	width: 100%;
+}
 .line{
 	border-bottom: 1px solid #d0d0d0;
 	border:0;
@@ -157,15 +169,19 @@ p.right .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	/*also see omv-journal.css*/
 	/*also see omv-ms.css*/
+}
+.journal .halfline{
+	width: 60%;
 }
 .quarterline{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	/*also see omv-journal.css*/
 	/*also see omv-ms.css*/
+}
+.journal .quarterline{
+	width: 40%;
 }
 .halfline.quarterline{
 	width: 30%;
@@ -224,6 +240,10 @@ h3{
 .p.center,
 .p.right{
 	text-indent: 0 !important;
+}
+.journal .p.center,
+.journal .fw{
+	display: block !important;
 }
 .p.right{
 	margin-left: 6em !important;
@@ -322,6 +342,12 @@ h3{
 .caps{
 	font-variant: small-caps;
 }
+.journal .center{
+	text-align: center;
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
 .dottedunderline{
 	border-bottom: 1px dashed;
 }
@@ -341,14 +367,18 @@ h3{
 .large{
 	font-size: 1.3em;
 }
-.left{
-	/*see omv-journal.css*/
+.journal .left{
+	float: left;
+	clear: both;
 }
 .overline{
 	text-decoration: overline;
 }
 .overline.underline{
 	text-decoration: overline underline;
+}
+.journal .right{
+	float: right;
 }
 .small{
 	font-size: .85em;

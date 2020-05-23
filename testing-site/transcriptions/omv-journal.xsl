@@ -117,7 +117,7 @@
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 
-		<div class="transcription"><!-- style="background:#{$body-color};" -->
+		<div class="transcription journal"><!-- style="background:#{$body-color};" -->
 
 			<div class="navbar">
         			<ul>

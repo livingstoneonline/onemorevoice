@@ -1,0 +1,55 @@
+/*CSS File for One More Voice (http://onemorevoice.org/)*/
+
+/*Created by Adrian S. Wisnicki*/
+
+/* This CSS file has been developed from a CSS file for Livingstone Online (https://livingstoneonline.org/) and is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+
+
+/* iPad Air: Less than or equal to 768px */
+@media only screen and (max-width:768px) {
+body {
+width:85%;
+}
+}
+
+/* iPad Mini: Less than or equal to 703px */
+@media only screen and (max-width:703px) {
+body {
+width:93%;
+}
+h1 {
+font-size:2em;
+}
+h3 {
+font-size:.85em;
+}
+}
+
+/* iPhone 6+: Less than or equal to 414px */
+@media only screen and (max-width:414px) {
+body {
+width:100%;
+}
+h1 {
+font-size:1.9em;
+}
+h3 {
+font-size:.80em;
+}
+.navbar {
+font-size:.8em;
+}
+}
+
+/* iPhone 5s: Less than or equal to 320px */ 
+@media only screen and (max-width:320px) {
+h1 {
+font-size:1.8em;
+}
+h3 {
+font-size:.75em;
+}
+.navbar {
+font-size:.8em;
+}
+}

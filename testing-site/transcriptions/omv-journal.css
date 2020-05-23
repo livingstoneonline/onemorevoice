@@ -7,39 +7,39 @@
 
 /* This file contains coding unique to journal/periodical article display */
 
-.TEI{
+.journal .TEI{
 	display: block;
 	text-align: justify;
 	padding-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
 }
-.pb-title{
+.journal .pb-title{
 	display: block;
 }
-.fw,
-.p.center{
+.journal .fw,
+.journal .p.center{
 	display: block !important;
 }
-.milestone{
+.journal .milestone{
 	width: 100%;
 }
-.halfline{
+.journal .halfline{
 	width: 60%;
 }
-.quarterline{
+.journal .quarterline{
 	width: 40%;
 }
-.center{
+.journal .center{
 	text-align: center;
 	display: block;
 	margin-left: auto !important;
 	margin-right: auto !important;
 }
-.left{
+.journal .left{
 	float: left;
 	clear: both;
 }
-.right{
+.journal .right{
 	float: right;
 }

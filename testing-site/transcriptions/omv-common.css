@@ -28,284 +28,285 @@ Table of Contents
 /* 1. Textual divisions */
 
 html{
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-size:16px;
-padding:1em 1.5em;
-overflow-wrap:break-word;
-word-wrap:break-word;
-word-break:break-word;
-hyphens:auto;
--ms-word-break:break-all;
--ms-hyphens:auto;
--moz-hyphens:auto;
--webkit-hyphens:auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	padding: 1em 1.5em;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-word-break: break-all;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
 }
-body {
-	max-width:38em;
-	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
+body{
+	max-width: 38em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
-.transcription {
-	line-height:1.6em;
+.transcription{
+	line-height: 1.6em;
 	/*white-space:nowrap;*/
 }
-.item-details {
-	text-align:left;
-	padding-bottom:1em;
+.item-details{
+	text-align: left;
+	padding-bottom: 1em;
 	/*white-space:normal;*/
 }
-.item-title {
-	font-size:1em;
-	padding-bottom:1em;
-	color:#2e68ac;
-	font-weight:bold;
+.item-title{
+	font-size: 1em;
+	padding-bottom: 1em;
+	color: #2e68ac;
+	font-weight: bold;
 }
-.item-spec {
-	font-size:.9em;
-	margin-top:0em;
-	line-height:1.6em;
+.item-spec{
+	font-size: .9em;
+	margin-top: 0em;
+	line-height: 1.6em;
 }
-a:link, a:visited {
-	color:#2e68ac !important;
+a:link,
+a:visited{
+	color: #2e68ac !important;
 }
-a:hover {
-	color:#e4524b !important;
+a:hover{
+	color: #e4524b !important;
 }
 
 
 /* 2. pb, lb, linenumber */
 
-.pb-title {
-	color:#428bca;
-	font-size:90%;
+.pb-title{
+	color: #428bca;
+	font-size: 90%;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
-	margin-top:2em !important;
-	margin-bottom:1em;
-	margin-left:0;
-	text-indent:0;
+	margin-top: 2em !important;
+	margin-bottom: 1em;
+	margin-left: 0;
+	text-indent: 0;
 	/*also see style-omv-journal-new.css*/
 }
 /*.pb-title:hover {
 	color:#AAA;
 	cursor:pointer;
 }*/
-.pb-title:first-of-type {
-	margin-top:0 !important;
+.pb-title:first-of-type{
+	margin-top: 0 !important;
 }
-.lb {
-	display:block;
+.lb{
+	display: block;
 }
-.linenumber {
-	font-size:.8em;
+.linenumber{
+	font-size: .8em;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
-	color:#8c8b85;
-	text-align:right;	
-	float:left;
-	margin-left:-3em !important;
-	width:1em;
-	display:none;
+	color: #8c8b85;
+	text-align: right;
+	float: left;
+	margin-left: -3em !important;
+	width: 1em;
+	display: none;
 }
-p .linenumber {
-	text-indent:-1%;
+p .linenumber{
+	text-indent: -1%;
 }
-.p.noindent.linenumber {
-	text-indent:1em;
+.p.noindent.linenumber{
+	text-indent: 1em;
 }
-p.center .linenumber {
-	margin-left:-6.4em !important;
+p.center .linenumber{
+	margin-left: -6.4em !important;
 }
-p.right .linenumber {
-	margin-left:-10.5em !important;
+p.right .linenumber{
+	margin-left: -10.5em !important;
 }
-.list .linenumber {
-	text-indent:0;	
+.list .linenumber{
+	text-indent: 0;
 }
 
 
 /*3. Milestone and lines [most moved to seperate genre css files]*/
 
-hr {
-	width:100%;
-	background-color:gray;
-	height:1px; 
-	border:0; 
+hr{
+	width: 100%;
+	background-color: gray;
+	height: 1px;
+	border: 0;
 }
-.title-hr {
-	max-width:33em;
-	margin-top:2em;
-	margin-bottom:2em;
+.title-hr{
+	max-width: 33em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
-.narrow-hr {
-	width:45%;
-	margin-top:1.5em;
-	margin-bottom:1.5em;
+.narrow-hr{
+	width: 45%;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 
 /* 4. h1-3, p, ab, head, note, fw, column break, footnotes */
 
-h1 {
-font-size:2.1em;
-font-family:Georgia, 'Times New Roman', Times, serif;
+h1{
+	font-size: 2.1em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-h3 {
-font-size:.9em;
-font-weight:300;
-font-family:Arial, Geneva, Tahoma, sans-serif;
+h3{
+	font-size: .9em;
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
 }
-.p {
-	display:inline-block;
-	text-indent:25px;
-	margin-top:0;
-	margin-bottom:0;	
+.p{
+	display: inline-block;
+	text-indent: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .p.noindent,
 .p.center,
-.p.right {
-	text-indent:0 !important;
+.p.right{
+	text-indent: 0 !important;
 }
-.p.right {
-	margin-left:6em !important;
+.p.right{
+	margin-left: 6em !important;
 }
-.ab {
-	text-indent:0;
-	margin-top:0;
-	margin-bottom:0;
+.ab{
+	text-indent: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
-.head {
-	font-weight:normal;
-	text-indent:0 !important;
-	text-align:center !important;
-	display:block;
+.head{
+	font-weight: normal;
+	text-indent: 0 !important;
+	text-align: center !important;
+	display: block;
 }
-.note {
-	text-align:left;
+.note{
+	text-align: left;
 }
-.fw {
-	text-indent:0 !important;
-	overflow:hidden;
-	text-align:center;
-	line-height:1.3em;
-	margin-bottom:.5em;
+.fw{
+	text-indent: 0 !important;
+	overflow: hidden;
+	text-align: center;
+	line-height: 1.3em;
+	margin-bottom: .5em;
 	/*also see style-omv-ms-new.css*/
 	/*also see style-omv-journal-new.css*/
 }
-.fw .center {
-	display:inline
+.fw .center{
+	display: inline
 }
-.fw.pageno {
-	text-indent:0 !important;
+.fw.pageno{
+	text-indent: 0 !important;
 }
-.fw.catch.right {
-	margin-left:14em;
-	text-indent:0;
+.fw.catch.right{
+	margin-left: 14em;
+	text-indent: 0;
 }
 
 
 /* 5. del, unclear, app, gap, space */
 
 .del,
-.del-by-over-text {
-	text-decoration:line-through;
-	/*color:#666666;*//*previously used for .del-by-over-text*/
+.del-by-over-text{
+	text-decoration: line-through;
+	/*color:#666666;*/ /*previously used for .del-by-over-text*/
 }
-.pb-del {
-	display:inline-block;
-	margin-bottom:.5em;
+.pb-del{
+	display: inline-block;
+	margin-bottom: .5em;
 }
-.unclear {
-	color:#706f6a;
-	border-bottom:1px dotted #706f6a;
+.unclear{
+	color: #706f6a;
+	border-bottom: 1px dotted #706f6a;
 }
-.app {
-border-bottom: 1px dotted #706f6a;
+.app{
+	border-bottom: 1px dotted #706f6a;
 }
-.gap {
-	border-bottom:1px dotted black;
+.gap{
+	border-bottom: 1px dotted black;
 }
-.space-other {
-	border-bottom:1px dotted black;
-	display:block;
+.space-other{
+	border-bottom: 1px dotted black;
+	display: block;
 }
-.verticalSpace {
-	display:inline-block;
-	border-bottom:1px dotted black;
-	text-indent:0;
+.verticalSpace{
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	text-indent: 0;
 }
 
 
 /* 6. Editorial */
 
 .sic,
-.corr {
-	border-bottom:2px #e4524b dotted;
+.corr{
+	border-bottom: 2px #e4524b dotted;
 }
 .abbr,
-.expan {
-	border-bottom:1px green dotted;
+.expan{
+	border-bottom: 1px green dotted;
 }
 .expan,
-.hidden {
-	display:none;
+.hidden{
+	display: none;
 }
-.rdg {
-	display:block;
+.rdg{
+	display: block;
 }
 
 
 /* 7. @rend classes (except colors, lines, and up-down placement) */
 
-.bold {
-	font-weight:600;
+.bold{
+	font-weight: 600;
 }
-.caps {
-	font-variant:small-caps;
+.caps{
+	font-variant: small-caps;
 }
-.dottedunderline {
-	border-bottom:1px dashed;
+.dottedunderline{
+	border-bottom: 1px dashed;
 }
-.doubleunderline {
-	border-bottom:3px double;
+.doubleunderline{
+	border-bottom: 3px double;
 }
-.tripleunderline {
-	border-bottom:4px double;
-	text-decoration:underline;
+.tripleunderline{
+	border-bottom: 4px double;
+	text-decoration: underline;
 }
-.indent {
-	text-indent:25px;
+.indent{
+	text-indent: 25px;
 }
-.italic {
-	font-style:italic;
+.italic{
+	font-style: italic;
 }
-.large {
-	font-size:1.3em;
+.large{
+	font-size: 1.3em;
 }
-.left {
+.left{
 	/*see style-omv-journal-new.css*/
 }
-.overline {
-	text-decoration:overline;
+.overline{
+	text-decoration: overline;
 }
-.overline.underline {
-	text-decoration:overline underline;
+.overline.underline{
+	text-decoration: overline underline;
 }
-.small {
-	font-size:.85em;
+.small{
+	font-size: .85em;
 }
-.smallcaps {
-	font-variant:small-caps;
+.smallcaps{
+	font-variant: small-caps;
 }
-.underline {
-	text-decoration:underline;
+.underline{
+	text-decoration: underline;
 }
-.upsidedown {
+.upsidedown{
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(180deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(180deg);*/ /* Safari and Chrome */
 	/*-o-transform:rotate(180deg);*/ /* Opera */
 }
-.vertical {
+.vertical{
 	/*-ms-transform:rotate(90deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(90deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(90deg);*/ /* Safari and Chrome */
@@ -320,120 +321,120 @@ border-bottom: 1px dotted #706f6a;
 .bottom,
 .sub,
 .sup,
-.top {
+.top{
 	/* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
-	font-size:.8em;
+	font-size: .8em;
 
 	/* Zero out the line-height so that it doesn't
      interfere with the positioning that follows */
-	line-height:0;
+	line-height: 0;
 
 	/* Where the magic happens:makes all browsers position
      the sup/sup properly, relative to the surrounding text */
-	position:relative;
+	position: relative;
 
 	/* Note that if you're using Eric Meyer's reset.css, this
      is already set and you can remove this rule */
-	vertical-align:baseline;
+	vertical-align: baseline;
 }
 .above,
 .sup,
-.top {
+.top{
 	/* Move the superscripted text up */
-	top:-0.50em;
+	top: -0.50em;
 }
 .below,
 .bottom,
-.sub {
+.sub{
 	/* Move the subscripted text down, but only
      half as far down as the superscript moved up */
-	bottom:-0.50em;
+	bottom: -0.50em;
 }
 
 
 /* 9. Colors */
 
-.black {
-	color:black;
+.black{
+	color: black;
 }
-.blue {
-	color:blue;
+.blue{
+	color: blue;
 }
-.blue.black {
-	color:#245a82;
+.blue.black{
+	color: #245a82;
 }
-.brown {
-	color:#664d36;
+.brown{
+	color: #664d36;
 }
-.brown.black {
-	color:#473225;
+.brown.black{
+	color: #473225;
 }
-.gray {
-	color:#706f6a;
+.gray{
+	color: #706f6a;
 }
-.gray.black {
-	color:#3d4245;
+.gray.black{
+	color: #3d4245;
 }
-.green {
-	color:green;
+.green{
+	color: green;
 }
-.orange {
-	color:orange;
+.orange{
+	color: orange;
 }
-.purple {
-	color:purple;
+.purple{
+	color: purple;
 }
-.red {
-	color:#B33B24;
+.red{
+	color: #B33B24;
 }
-.yellow {
-	color:yellow;
+.yellow{
+	color: yellow;
 }
 
 
 /* 10. Lists and Tables */
-table {
-	border-style:none;
-	margin:0 auto;
-	line-height:1.3em;
+table{
+	border-style: none;
+	margin: 0 auto;
+	line-height: 1.3em;
 }
 tr,
-td {
-	border-style:none;
+td{
+	border-style: none;
 }
-table .linenumber {
-	display:none;
+table .linenumber{
+	display: none;
 }
 
 
 /* 11. Misc */
 
-.none	{
-	display:none;
+.none{
+	display: none;
 }
-.figure {
-	margin-left:0;
-	color:#666666;
-	font-size:.8em;
+.figure{
+	margin-left: 0;
+	color: #666666;
+	font-size: .8em;
 	/* also see style-omv-ms-new.css */
 }
-.image-medium {
-	width:60%;
-	display:inline-block;
+.image-medium{
+	width: 60%;
+	display: inline-block;
 }
-.image-small {
-	width:40%;
-	display:inline-block;
+.image-small{
+	width: 40%;
+	display: inline-block;
 }
 .p .figure,
 .p.noindent .figure,
 .ab .figure,
-p .metamark {
-	margin-left:0px !important;
-	text-indent:0px;
+p .metamark{
+	margin-left: 0px !important;
+	text-indent: 0px;
 }
-.metamark {
+.metamark{
 	/*color:#666666;
 	border-bottom:1px #666666 dotted;*/
 }
@@ -445,11 +446,11 @@ p .metamark {
 .region,
 .settlement,
 .term-ailment,
-.term-tribe {
-	border-bottom:1px #428bca dotted;
+.term-tribe{
+	border-bottom: 1px #428bca dotted;
 }
 
-/* 12. Letters [not in use] */ 
+/* 12. Letters [not in use] */
 
 /*
 .opener,

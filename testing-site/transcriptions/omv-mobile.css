@@ -38,6 +38,9 @@ display:block;
 .narrow-hr {
 width:50%;
 }
+.item-title {
+	padding-bottom:.5em;
+}
 }
 
 /* iPhone 6+: Less than or equal to 414px */
@@ -60,6 +63,9 @@ display:block;
 .narrow-hr {
 width:60%;
 }
+.navbar {
+font-size:.8em;
+}
 }
 
 /* iPhone 5s: Less than or equal to 320px */ 
@@ -78,5 +84,8 @@ display:none;
 }
 .omv-subtitle {
 display:block;
+}
+.navbar {
+font-size:.8em;
 }
 }

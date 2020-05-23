@@ -17,12 +17,13 @@
 .pb-title {
 	display:block;
 }
-.fw {
-	display:block;
+.fw,
+.p.center {
+	display:block !important;
 }
 .center {
-text-align:center !important;
-display:block !important;
+text-align:center;
+display:block;
 margin-left:auto !important;
 margin-right:auto !important;
 }

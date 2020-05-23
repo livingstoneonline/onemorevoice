@@ -44,10 +44,12 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			    <meta name="description" content="Critically-edited primary material for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
     			<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+				<!--<link rel="stylesheet" type="text/css" href="omv-ms.css"/>-->
+				<link rel="stylesheet" type="text/css" href="omv-journal.css"/>
+				<link rel="stylesheet" type="text/css" href="omv-common.css"/>
+				<link rel="stylesheet" type="text/css" href="omv-header-footer.css"/>
+				<link rel="stylesheet" type="text/css" href="omv-mobile.css"/>			
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
-				<link rel="stylesheet" type="text/css" href="style-omv-journal-new.css"/>
-				<link rel="stylesheet" type="text/css" href="style-omv-links-title-caption-footer.css"/>
-				<link rel="stylesheet" type="text/css" href="style-omv-mobile.css"/>						
 			    <!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>

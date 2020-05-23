@@ -7,13 +7,13 @@
 
 /* This file contains coding unique to manuscript display */
 
-.front{
+.manuscript .front{
 	margin-bottom: -1em;
 }
-.back{
+.manuscript .back{
 	margin-top: -1em;
 }
-.TEI{
+.manuscript .TEI{
 	width: 100%;
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -21,37 +21,37 @@
 	margin-bottom: 2em;
 	border: 2px solid gainsboro;
 }
-.ms-container{
+.manuscript .ms-container{
 	display: inline-block;
 	/*white-space:nowrap;*/
 	text-align: left;
 	margin-left: 2em;
 	margin-right: 2em;
 }
-.fw{
+.manuscript .fw{
 	display: inline;
 }
-.line,
-.doubleline, 
-.tripleline,
-.second-line,
-.third-line{
+.manuscript .line,
+.manuscript .doubleline, 
+.manuscript .tripleline,
+.manuscript .second-line,
+.manuscript .third-line{
 	width: 27em;
 }
-.halfline{
+.manuscript .halfline{
 	width: 17.5em;
 }
-.quarterline{
+.manuscript .quarterline{
 	width: 10em;
 }
-.center{
+.manuscript .center{
 	text-indent: 0;
 	margin-left: 2.7em;
 }
-.right{
+.manuscript .right{
 	text-indent: 0;
 	margin-left: 4em;
 }
-.figure{
+.manuscript .figure{
 	border-bottom: 1px #666666 dotted;
 }

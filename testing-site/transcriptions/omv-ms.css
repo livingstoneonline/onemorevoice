@@ -8,10 +8,10 @@
 /* This file contains coding unique to manuscript display */
 
 .front{
-	margin-bottom: -1em !important;
+	margin-bottom: -1em;
 }
 .back{
-	margin-top: -1em !important;
+	margin-top: -1em;
 }
 .TEI{
 	width: 100%;
@@ -48,58 +48,38 @@
 
 .milestone{
 	display: block;
-	width: 60%;
+	text-align: left;
 	background: #FFF;
 	height: 0;
-	margin-left: 0;
-	margin-right: 9%;
 	padding: 0px;
 }
 .line{
+	width: 27em;
 	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	width: 27em !important;
-	margin-left: 0;
-	text-align: left;
-	height: 0;
-	border: 0;
+	border:0;
 	border-top: 1px solid #58484b;
 }
 .doubleline{
+	width: 27em;
 	border-top: 4px double #8c8b8b;
-	display: block;
-	width: 27em !important;
-	margin-left: 9%;
-	text-align: left;
 }
 .quarterline.doubleline{
 	width: 10em;
 	border-top: 4px double #8c8b8b;
-	display: block;
 }
 .tripleline{
-	border-top: 4px double #8c8b8b;
+	width: 27em;
 	line-height: 1.9em;
-	display: block;
-	width: 27em !important;
-	margin-left: 9%;
-	text-align: left;
+	border-top: 4px double #8c8b8b;
 }
 .halfline{
+	width: 17.5em;
 	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	width: 17.5em !important;
-	margin-left: 0;
-	text-align: left;
-	height: 0;
 	border: 0;
 	border-top: 1px solid #58484b;
 }
 .quarterline{
-	display: block;
-	width: 10em !important;
-	text-align: left;
-	height: 0;
+	width: 10em;
 	border: 0;
 	border-top: 1px solid #664d36;
 }
@@ -107,25 +87,17 @@
 	width: 30%;
 }
 .second-line{
+	width: 27em;
 	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	width: 27em !important;
-	margin-left: 0;
-	text-align: left;
-	margin-top: -1em;
-	margin-bottom: 0em;
-	height: 0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	margin-top: -1em;
+	margin-bottom: 0em;
 }
 .third-line{
-	border-bottom: 1px solid #d0d0d0;
-	display: block;
-	width: 27em !important;
-	margin-left: 0;
-	text-align: left;
+	width: 27em;
 	margin-top: 1.5em;
-	height: 0;
+	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
 }

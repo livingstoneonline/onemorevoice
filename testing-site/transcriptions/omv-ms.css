@@ -31,29 +31,11 @@
 .fw{
 	display: inline;
 }
-.center{
-	text-indent: 0;
-	margin-left: 2.7em !important;
-}
-.right{
-	text-indent: 0;
-	margin-left: 4em;
-}
-.figure{
-	border-bottom: 1px #666666 dotted;
-}
-
-
-/* Milestone and lines */
-
-
-.line{
-	width: 27em;
-}
-.doubleline{
-	width: 27em;
-}
-.tripleline{
+.line,
+.doubleline, 
+.tripleline,
+.second-line,
+.third-line{
 	width: 27em;
 }
 .halfline{
@@ -62,12 +44,14 @@
 .quarterline{
 	width: 10em;
 }
-
-.second-line{
-	width: 27em;
-
+.center{
+	text-indent: 0;
+	margin-left: 2.7em;
 }
-.third-line{
-	width: 27em;
+.right{
+	text-indent: 0;
+	margin-left: 4em;
 }
-/* End of milestone and lines */
+.figure{
+	border-bottom: 1px #666666 dotted;
+}

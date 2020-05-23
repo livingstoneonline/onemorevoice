@@ -116,46 +116,5 @@ margin-right:auto !important;
 	border:0;
 	border-top:1px solid #58484b;
 }
-hr {
-	width:100%;
-	background-color:gray;
-	height:1px; 
-	border:0; 
-}
-.title-hr {
-	max-width:33em;
-	margin-top:2em;
-	margin-bottom:2em;
-}
-.narrow-hr {
-	width:45%;
-	margin-top:2em;
-	margin-bottom:2em;
-}
-
-/* iPad Air: Less than or equal to 768px */
-@media only screen and (max-width:768px) {
-}
-
-/* iPad Mini: Less than or equal to 703px */
-@media only screen and (max-width:703px) {
-.narrow-hr {
-	width:50%;
-}
-}
-
-/* iPhone 6+: Less than or equal to 414px */
-@media only screen and (max-width:414px) {
-.narrow-hr {
-	width:60%;
-}
-}
-
-/* iPhone 5s: Less than or equal to 320px */ 
-@media only screen and (max-width:320px) {
-.narrow-hr {
-	width:70%;
-}
-}
 
 /* End of milestone and lines */

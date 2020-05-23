@@ -118,7 +118,7 @@ ul{
 
 /* Links inside the navbar */
 .navbar a{
-	color: black !important;
+	color: black;
 	font-size: 1.3em;
 	font-weight: bold;
 	text-decoration: none;
@@ -157,7 +157,7 @@ ul{
 /* Add a white background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn{
-	color: white !important;
+	color: white;
 	background-color: #424242;
 }
 
@@ -193,7 +193,7 @@ ul{
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover{
-	color: black !important;
+	color: black;
 	background-color: #c9c9c9;
 }
 

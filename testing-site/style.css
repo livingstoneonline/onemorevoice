@@ -11,7 +11,15 @@ html{
 font:16px Georgia, 'Times New Roman', Times, serif;
 font-weight:normal;
 color:#191716;
-padding:1em;
+padding:1em 1.5em;
+overflow-wrap:break-word;
+word-wrap:break-word;
+word-break:break-word;
+hyphens:auto;
+-ms-word-break:break-all;
+-ms-hyphens:auto;
+-moz-hyphens:auto;
+-webkit-hyphens:auto;
 }
 
 body{
@@ -209,8 +217,8 @@ border:0;
 
 .narrow-hr {
 width:45%;
-margin-top:2em;
-margin-bottom:2em;
+margin-top:1.5em;
+margin-bottom:1.5em;
 }
 
 .thick-hr {
@@ -294,6 +302,3 @@ color:#e4524b;
 .currentLink {
    color: #640200;
 }
-
-
-

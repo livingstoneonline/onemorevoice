@@ -684,7 +684,6 @@
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
 		<div class="page">
-			<br/><br/><br/>
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>
 			</span>
@@ -699,7 +698,6 @@
 	</xsl:template>
 
 	<xsl:template match="pb">
-		<br/><br/>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
@@ -707,7 +705,6 @@
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
-		<br/><br/>
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
 		</span>

@@ -263,10 +263,11 @@ a:hover{
 	color: #428bca;
 	font-size: 90%;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
-	margin-top: 2em !important;
-	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: .5em;
 	margin-left: 0;
 	text-indent: 0;
+	display: inline-block;
 }
 .journal .pb-title{
 	display: block;
@@ -276,7 +277,7 @@ a:hover{
 	cursor:pointer;
 }*/
 .pb-title:first-of-type{
-	margin-top: 0 !important;
+	margin-top: 0;
 }
 .lb{
 	display: block;
@@ -537,8 +538,8 @@ h3{
 }
 .journal .center{
 	text-align: center;
-	margin-left: auto !important;
-	margin-right: auto !important;
+	margin-left: auto;
+	margin-right: auto;
 }
 .dottedunderline{
 	border-bottom: 1px dashed;

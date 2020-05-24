@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="transcription-omv-journal-new.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<?xml-stylesheet href="omv-journal.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020003"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
@@ -14,7 +14,7 @@
 				<author role="first">MacQueen, James</author>
 				<author role="first-normalized">James MacQueen</author>
 				<author role="normalized">[Lief Ben Saeid]</author>
-				<author role="normalized">Thomas Wogga</author>
+				<author role="normalized">[Thomas Wogga]</author>
 
 				<!-- <author> = surname, forename, dates [archival version of name] -->
 				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
@@ -76,7 +76,7 @@
                 	<author xml:id="LBS">[Lief Ben Saeid]</author><!-- Change -->
 					<author xml:id="TW">[Wogga, Thomas]</author><!-- Change -->
 					<title>Notes on African Geography</title><!-- Change -->
-                    <date type="publication" when="1854">1854</date><!-- Change, including attributes -->
+                    <date type="publication" when="1845">1845</date><!-- Change, including attributes -->
                     <placeName type="focusRegion">Central Africa</placeName><!-- Change -->
                 </bibl>
             </sourceDesc>
@@ -119,17 +119,17 @@
 
 	<pb facs="liv_020003_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
 <fw><seg rend="center"><bibl><hi rend="smallcaps"><persName><roleName>Mr</roleName>. MacQueen</persName>'s</hi> <hi rend="italic">Notes on <orgName>African</orgName> Geography</hi></bibl>.</seg> <seg rend="right">371</seg></fw>
-<lb/><!-- Text from previous article omitted here. AW -->
-<lb/>
-<lb/>
-<lb/>
-<lb/>
-<lb/>
-<lb/><milestone unit="section" rend="quarter-line small center"/>
-<lb/><milestone unit="section" rend="quarter-line small center"/>
-<lb/>
 
+	<div rend="center">
+<lb/><gap extent="10" unit="lines" agent="omitted-text"/><!-- Text from previous article omitted here. AW -->
+<lb/>
+<lb/><milestone unit="section" rend="quarter-line double-line small center"/>
+<lb/>
+	</div>
+
+	<div>
 <head>VI.&#8212;<hi rend="italic"><bibl>Notes on <orgName>African</orgName> Geography</bibl>; communicated by</hi> <hi rend="smallcaps"><persName><roleName>Mr</roleName>. MacQueen</persName></hi>.</head>
+<lb/>
 			
 	<div resp="#LBS"><!-- I'm using @resp to mark the name of the informant for this section. This practice may change. AW -->
 <head rend="italic">I. Visit of <persName>Lief Ben Saeid</persName> to the Great <orgName>African</orgName> Lake.</head> <!-- geog: lake ? --><!-- Heather - I have put these blank 'geog' tags in throughout when it refers to 'the lake' as I don't know the name of the lake but feel I should. Feel free to take them out if you don't think they should be there AM --><!-- As always, Ann, it's perfect! You know me, the more coding the better haha, so I think we should keep these in until the reference becomes clear, then we can go back and amend to match :) HB -->
@@ -138,13 +138,13 @@ years of age, and born in <geogName><choice><sic>Zanzebar</sic><corr>Zanzibar</c
 he has been twice at the Great Lake in <bloc>Africa</bloc>, for the purpose of<!-- geog: lake ? -->
 bartering for ivory, and describes his last visit as follows.</p>
 <p>He left <geogName>Zanzibar</geogName> in the month of <date when="1831-09">September, 1831</date>, and landed
-at a town called <settlement>Boramy</settlement>,<ref target="#note_02">&#134;</ref><!-- There are some weird characters in this, so in each case I've used the character map to look up the unicode and put it in. AW --> on the <region><orgName>African</orgName> main</region>, situated a little
+at a town called <settlement>Boramy</settlement>,<ref target="#note_02">&#10013;</ref><!-- There are some weird characters in this, so in each case I've used the character map to look up the unicode and put it in. AW --> on the <region><orgName>African</orgName> main</region>, situated a little
 to the southward of the <region>south end of <geogName>Zanzibar</geogName></region>. After remaining
 there for some days, he left with a caravan, or <foreign xml:lang="und">kafila</foreign>, of about five
 hundred persons. He had about seventy of his own <term type="occupation">followers</term>; the
 rest consisted of returning <term type="collective">Manmoises</term>. The first day he travelled
 a distance of about 9 miles, on a plain road, where, at half that
-distance, they crossed a small river called <geogName>Mazinga</geogName>.<ref target="#note_03">&#135;</ref> Putting
+distance, they crossed a small river called <geogName>Mazinga</geogName>.<ref target="#note_03">&#9768;</ref> Putting
 up at the village of <settlement>Qua</settlement>, which is the principality of a tribe called
 <term type="collective">Mazeamoo</term>.<ref target="#note_04">&#167;</ref><!-- This one came up via OCR, so I didn't look up the unicode. AW --> The next day travelled, about the same distance, to
 <placeName>Beonee</placeName>;<ref target="#note_05">||</ref> and the next day to a village called <settlement>Ma Kunda</settlement><ref target="#note_06">&#182;</ref>
@@ -157,15 +157,18 @@ has been the case from the time they left the <region>coast</region>; passed
 <placeName>Kedonda</placeName>, and slept at <placeName>Onegata</placeName>, where two large rivers join; slept
 at <placeName>Datomee</placeName>. Passing between two high hills at this place there
 is another tribe called <term type="collective">Koto</term>.<ref target="#note_07">**</ref> Again slept at <placeName>Zohgomero</placeName>, where</p>
-<lb/>
 <lb/><milestone unit="section" rend="line"/>
-<lb/><note rend="small"><!-- Using <space/> between each note in the next few lines is the path of least resistance, so that's what I've done. AW --><!-- didn't like to tamper with this section too much since I don't understand AW's comment here, but the spacing doesn't appear correctly on the last 4 footnotes AM -->
-<note xml:id="note_01" rend="indent">* <term type="collective">Mono-moezi</term>.&#8212;<!-- This is em-dash. AW --><hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_02">&#134; <settlement>Buro-maji</settlement>, Buro-water.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-<lb/><note rend="indent" xml:id="note_03">&#135; The name <geogName>Mazinga</geogName> may be correct, but it is nevertheless to be suspected, since
+<!-- Using <space/> between each note in the next few lines is the path of least resistance, so that's what I've done. AW --><!-- didn't like to tamper with this section too much since I don't understand AW's comment here, but the spacing doesn't appear correctly on the last 4 footnotes AM -->
+	<fw rend="small center">
+<note xml:id="note_01" rend="left indent">* <term type="collective">Mono-moezi</term>.&#8212;<!-- This is em-dash. AW --><hi rend="smallcaps">Ed</hi>.
+</note> <note xml:id="note_02" rend="center"><space extent="1" unit="words"/><space extent="2" unit="chars"/><!-- Space added for online display. AW -->&#10013; <settlement>Buro-maji</settlement>, Buro-water.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<lb/><note xml:id="note_03" rend="left indent">&#9768; The name <geogName>Mazinga</geogName> may be correct, but it is nevertheless to be suspected, since
 the tract described is inhabited by the <term type="collective">Mazingea</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-<note xml:id="note_04" rend="indent"  >&#167; <term type="collective">Mazimo</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_05">||<!-- I found the special character for this one (&#9553;), but doing two lines like this works better actually. AW --> <placeName>Bióui</placeName>.&#8212;<hi rend="smallcaps">Ed</hi>.<space extent="8" unit="words"/></note>
-<lb/><note xml:id="note_06" rend="indent"  >&#182; <settlement>Macunda</settlement>.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_07">** <term type="collective">N'eutu</term>.&#8212;<hi rend="smallcaps">Ed</hi>.<space extent="8" unit="words"/></note>
-</note>
+<lb/><note xml:id="note_04" rend="left indent"  >&#167; <term type="collective">Mazimo</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_05" rend="center">||<!-- I found the special character for this one (&#9553;), but doing two lines like this works better actually. AW --> <placeName>Bióui</placeName>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<lb/><note xml:id="note_06" rend="left indent">&#182; <settlement>Macunda</settlement>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_07" rend="center">** <term type="collective">N'eutu</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+	</fw>
 
 	<pb facs="liv_020003_0002" n="0002"/>
 <fw><seg rend="left">372</seg>	<seg rend="center"><hi rend="italic"><bibl><orgName>African</orgName> Geography</bibl>.</hi></seg></fw>
@@ -175,13 +178,13 @@ through various ranges of hills, through the <region>country of the tribe of
 <term type="occupation">king</term> is called <persName>Keringawarha</persName>, who is an usurper; the name of the
 tribe is <term type="collective">Wamefee</term>:<ref target="#note_08">*</ref> this is all a hilly country. From thence
 travelled 2 days to <placeName>Marora</placeName>; the <term type="occupation">king</term>'s name is <persName>Negaboo</persName>; the
-name of the tribe <term type="collective">Osagara</term><ref target="#note_09">&#134;</ref> (many sold in <geogName>Zanzibar</geogName>): at this
+name of the tribe <term type="collective">Osagara</term><ref target="#note_09">&#10013;</ref> (many sold in <geogName>Zanzibar</geogName>): at this
 place there are two rivers which irrigate the country, and food in
 plenty; there are also numerous running streams from the hills.
 From <placeName>Marora</placeName> in one day reached the <geogName>Bahar</geogName> (the river, <foreign xml:lang="la"><choice><abbr>viz.</abbr><expan>videlicet</expan></choice></foreign> the
 <geogName>Lufígi</geogName>?): there is a large river, called <geogName>Matoney</geogName>, infested with
 <term type="animal">hippopotami</term>; travelled close to the banks of the river for 8 days, <!-- geog: Matoney river -->
-through the tribe called <term type="collective">Yoaha</term>:<ref target="#note_10">&#135;</ref> the country is hilly; and we
+through the tribe called <term type="collective">Yoaha</term>:<ref target="#note_10">&#9768;</ref> the country is hilly; and we
 were constantly falling in with villages, at which we slept every
 evening; when we got to <placeName>Powaga</placeName>. Travelled thence, through a
 plain country, on the banks of the same river for 5 days longer <!-- geog: Matoney river -->
@@ -213,13 +216,12 @@ place to the Grand Lake is 12 days, through a country called <!-- geog: lake ? -
 <roleName>Sultan</roleName> of the <term type="collective">Manumuse</term> (<term type="collective">Mono-moezi</term>), whose <term type="occupation">minister</term>'s name is
 <persName>Kegaw</persName>; the appearance of the people near the lake is that of the <!-- geog: lake ? -->
 <orgName>Abyssinians</orgName>. The whole time from the shore of <bloc>Africa</bloc> being 140</p>
-<lb/>
 <lb/><milestone unit="section" rend="line"/>
-<lb/><note rend="small">
-<note xml:id="note_08" rend="indent">*  <term type="collective">Wamiva</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_09">&#134; <term type="collective">M'Sagara</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note><space extent="2" unit="words"/><note xml:id="note_10">&#135; <term type="collective">Wohaha</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-</note>
-<space/>
-
+	<fw rend="small center">
+<note xml:id="note_08" rend="left indent">*  <term type="collective">Wamiva</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_09" rend="center">&#10013; <term type="collective">M'Sagara</term>.&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+<note xml:id="note_10" rend="right">&#9768; <term type="collective">Wohaha</term>.&#8212;<hi rend="smallcaps">Ed</hi>.<space extent="1" unit="words"/><!-- Space added for online display. AW --></note>
+	</fw>
 
 	<pb facs="liv_020003_0003" n="0003"/>
 <fw><seg rend="center"><hi rend="italic"><bibl><orgName>African</orgName> Geography.</bibl></hi></seg> <seg rend="right">373</seg></fw>
@@ -266,22 +268,21 @@ good and cheap food and water. The houses on the road and
 at the lake are made of wood, and thatched with <term type="plant">grass</term>; no upper <!-- geog: lake ? -->
 stories, nor is there any chimney. <term type="animal">Dogs</term> are very numerous and
 troublesome, some of a very large kind.</p>
-<lb/>
 <lb/><milestone unit="section" rend="line"/>
-<lb/><note rend="small"><space extent="3" unit="words"/><note xml:id="note_11" rend="indent">* Ferásalah, 1 farsalah= 20 rotl.<!-- unknown abbreviation AM -->&#8212;<hi rend="smallcaps">Ed</hi>.</note>
-</note>
+	<fw rend="small center">
+<note xml:id="note_11" rend="center">* Ferásalah, 1 farsalah= 20 rotl.<!-- unknown abbreviation AM -->&#8212;<hi rend="smallcaps">Ed</hi>.</note>
+	</fw>
 
 	<pb facs="liv_020003_0004" n="0004"/>
 <fw><seg rend="left">374</seg>	<seg rend="center"><hi rend="italic"><bibl><orgName>African</orgName> Geography</bibl>.</hi></seg></fw>
 <p>Does not know in what direction the great body of the lake extends, <!-- geog: lake ? -->
 but thinks to the westward of <choice><abbr>S.</abbr><expan>South</expan></choice></p>
 <p><foreign xml:lang="la"><choice><abbr>N. B.</abbr><expan>Nota Bene</expan></choice></foreign>&#8212;The <geogName>Masogra</geogName> river, here<ref target="#note_12">*</ref> <!-- Adrian - why is the footnote corresponding to note-12 not included? I have added it now but am wondering if there was a reason it was missed out? AM -->mentioned, is no doubt the
-<geogName>Luffia</geogName> or <geogName>Cuavo</geogName>, but named the <geogName>Masogre</geogName> or <geogName>Masagora</geogName>,<ref target="#note_13">&#134;</ref> from
+<geogName>Luffia</geogName> or <geogName>Cuavo</geogName>, but named the <geogName>Masogre</geogName> or <geogName>Masagora</geogName>,<ref target="#note_13">&#10013;</ref> from
 the country of this name, which country is situated in 7° 25' <choice><abbr>S.</abbr><expan>South</expan></choice> <choice><abbr>lat.</abbr><expan>latitude</expan></choice>,
 and betwixt 36° and 37° <choice><abbr>E.</abbr><expan>East</expan></choice> <choice><abbr>long.</abbr><expan>longitude</expan></choice></p>
 	</div>
-
-
+<lb/>
 	<div resp="#TW"><!-- I'm using @resp to mark the name of the informant for this section. This practice may change. AW -->
 <head rend="italic">II. Information obtained from <persName>Thomas Wogga</persName>, an <orgName>African</orgName>.</head>
 <p rend="no-indent"><hi rend="smallcaps">This</hi> man is at present in this country: he had been previously, <!-- geog:  -->
@@ -319,12 +320,11 @@ River: the people either swim across it or pass it on rafts. During
 the rainy season there is plenty of hail; the children pick it up and
 put it in their mouths as amusement, as it makes them feel cold:
 it lies three or four hours on the ground before melting. Plenty of</p>
-<lb/>
 <lb/><milestone unit="section" rend="line"/>
-<lb/><note rend="small"><space extent="2" unit="words"/>
-<note xml:id="note_12" rend="indent">*  Where?&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, not sure if this is edition or editor? HB -->
-<note xml:id="note_13" rend="indent"><metamark>†</metamark> The name here intended is <geogName>M'Sagara</geogName>, in about 8°<choice><abbr>S.</abbr><expan>South</expan></choice> and 35°<choice><abbr>E.</abbr><expan>East</expan></choice>&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, same here. HB -->
-</note>
+	<fw rend="center small">
+<note xml:id="note_12" rend="left indent">*  Where?&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, not sure if this is edition or editor? HB -->
+<lb/><note xml:id="note_13" rend="left indent">&#10013;  The name here intended is <geogName>M'Sagara</geogName>, in about 8°<choice><abbr>S.</abbr><expan>South</expan></choice> and 35°<choice><abbr>E.</abbr><expan>East</expan></choice>&#8212;<hi rend="smallcaps">Ed</hi>.</note> <!-- Adrian, same here. HB -->
+	</fw>
 
 	<pb facs="liv_020003_0005" n="0005"/>
 <fw><seg rend="center"><hi rend="italic"><bibl><orgName>African</orgName> Geography.</bibl></hi></seg> <seg rend="right">375</seg></fw>
@@ -377,20 +377,35 @@ the sun being to the <choice><abbr>N.</abbr><expan>North</expan></choice> or the
 
 	<pb facs="liv_020003_0006" n="0006"/>
 <fw><seg rend="left">376</seg>	<seg rend="center"><hi rend="italic"><bibl><orgName>African</orgName> Geography</bibl>.</hi></seg></fw>
-<p>The following is a more particular description of his route:&#8212;
-<list rend="small">
-<lb/><space extent="4" unit="words"/><item><seg rend="right"><hi rend="smallcaps">Days.</hi><space extent="6" unit="words"/></seg></item> <!-- Adrian, are we doing measure here to denote distance? HB --><!-- I think we've dropped using the <measure> tag now AM -->
-<lb/><space extent="4" unit="words"/><item><region>Kimcoul</region> to <placeName>Uppe</placeName> <seg rend="right">.<space extent="1" unit="words"/>.<space extent="3" unit="chars"/>1<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><placeName>Uppe</placeName> to <placeName>Auzilliga</placeName> <seg rend="right">.<space extent="1" unit="words"/>.<space extent="3" unit="chars"/>1<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><placeName>Auzilliga</placeName> to <placeName>Ocoom</placeName> <seg rend="right">.<space extent="1" unit="words"/>.<space extent="3" unit="chars"/>7 <space extent="1" unit="chars"/> (long journeys.)<space extent="4" unit="chars"/><space extent="1" unit="words"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><placeName>Ocoom</placeName> to <placeName>Mousookko</placeName> <seg rend="right">.<space extent="3" unit="chars"/>4<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><placeName>Mousookko</placeName> to <placeName>Ungwa</placeName> <seg rend="right">.<space extent="3" unit="chars"/>6<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><settlement>Ungwa</settlement> to <settlement>Uvangah</settlement> <seg rend="right">.<space extent="1" unit="words"/>.<space extent="2" unit="chars"/>30 <space extent="1" unit="chars"/>(constant travel.)<space extent="3" unit="chars"/><space extent="1" unit="words"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><settlement>Uvangah</settlement> to <placeName>Umblisse</placeName> <seg rend="right">.<space extent="3" unit="chars"/>9<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><placeName>Umblisse</placeName> to <placeName>New Calabar</placeName> <seg rend="right">.<space extent="3" unit="chars"/>10<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><seg rend="right">&#8212;<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-<lb/><space extent="4" unit="words"/><item><space extent="3" unit="words"/>Total <seg rend="right">.<space extent="3" unit="chars"/>68 days<space extent="6" unit="words"/><space extent="2" unit="chars"/></seg></item>
-</list></p>
+<p>The following is a more particular description of his route:&#8212;</p>
+
+<!-- Adrian, are we doing measure here to denote distance? HB --><!-- I think we've dropped using the <measure> tag now AM -->
+
+<table rend="center">
+
+<row><cell rend="left"></cell><cell rend="center"></cell><cell rend="right"><hi rend="smallcaps small">Days.</hi></cell></row> 
+
+<row><cell rend="left"><region>Kimcoul</region> to <placeName>Uppe</placeName><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">1</cell></row>
+
+<row><cell rend="left"><placeName>Uppe</placeName> to <placeName>Auzilliga</placeName><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">1</cell></row>
+
+<row><cell rend="left"><placeName>Auzilliga</placeName> to <placeName>Ocoom</placeName><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">7 <space extent="1" unit="chars"/> (long journeys.)<space extent="4" unit="chars"/></cell></row>
+
+<row><cell rend="left"><placeName>Ocoom</placeName> to <placeName>Mousookko</placeName></cell><cell rend="center">.</cell><cell rend="right">4</cell></row>
+
+<row><cell rend="left"><placeName>Mousookko</placeName> to <placeName>Ungwa</placeName></cell><cell rend="center">.</cell><cell rend="right">6</cell></row>
+
+<row><cell rend="left"><settlement>Ungwa</settlement> to <settlement>Uvangah</settlement><seg rend="right">.<space extent="1" unit="words"/></seg></cell><cell rend="center">.</cell><cell rend="right">30 <space extent="1" unit="chars"/>(constant travel.)</cell></row>
+
+<row><cell rend="left"><settlement>Uvangah</settlement> to <placeName>Umblisse</placeName></cell><cell rend="center">.</cell><cell rend="right">9</cell></row>
+
+<row><cell rend="left"><placeName>Umblisse</placeName> to <placeName>New Calabar</placeName></cell><cell rend="center">.</cell><cell rend="right">10</cell></row>
+
+<row><cell rend="left"></cell><cell rend="center"></cell><cell rend="right">&#8212;</cell></row>
+
+<row><cell rend="left"><seg rend="right">Total</seg></cell><cell rend="center">.</cell><cell rend="right">68 days</cell></row>
+
+</table>
 
 <p><placeName>Uppe</placeName> is 1 day from the great river <geogName>Ayah</geogName>. At <placeName>Auzilliga</placeName> there
 is a considerable river, but smaller than the <geogName>Ayah</geogName>: it runs westward
@@ -412,11 +427,9 @@ of the caravan carried each <term type="foodstuff">yams</term> for their food.</
 	</div>
 <lb/>
 <lb/>
-<lb/><milestone unit="section" rend="quarter-line small center"/>
-<lb/><milestone unit="section" rend="quarter-line small center"/>
-
+<lb/><milestone unit="section" rend="quarter-line double-line small center"/>
+	</div>
 			</div>
 		</body>	
-
     </text>
 </TEI>

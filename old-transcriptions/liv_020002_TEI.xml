@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="transcription-omv-journal-new.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<?xml-stylesheet href="omv-journal.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020002"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
@@ -47,7 +47,7 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_020001</idno><!-- Change -->
+                <idno type="LEAP-ID">liv_020002</idno><!-- Change -->
 				<availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                       	Creative Commons Attribution 4.0 International
@@ -110,7 +110,7 @@
 <p rend="center small italic">(As told by <persName>Saleh</persName> and recorded in shorthand.)
 <lb/>____</p>
 
-<lb/><p rend="center"><figure rend="small"><graphic url="edition-images/texts/liv_020001_0001_image.jpg"/></figure>
+<lb/><p rend="center"><figure rend="small"><graphic url="../transcription-images/liv_020001_0001_image.jpg"/></figure>
 <seg rend="center smallcaps small"><persName>Saleh Bin Osman</persName>.</seg></p>
 
 <lb/><p>I BORN in <date when="1871-07-09">July 9, 1871</date>. My mother was dead when I three years old. When I was one year older, I go to my mother sister, and stay with her. When I get four year old, my father send me school to read <bibl>Koran</bibl>, and then when I seven year old I begin to read the <bibl>Bible</bibl>, and finish when I eight year old the <bibl>Bible</bibl>. The <term type="occupation">schoolmaster</term> name is "<persName>Shayhah</persName>"; over in 
@@ -155,7 +155,7 @@ me in morning and give me <bibl>letter</bibl>, and I open and <choice><orig>fine
 
 <cb/>little people, this pigmies are <choice><abbr>'bout</abbr><expan>about</expan></choice> two feet and half big. The pigmies not strong <choice><abbr>'nough</abbr><expan>enough</expan></choice> <choice><sic>for</sic><corr>to</corr></choice> grow anything. They <choice><orig>maker</orig><reg>make</reg></choice> iron, they <choice><orig>maker</orig><reg>make</reg></choice> fine <choice><orig>powsen</orig><reg>poison</reg></choice> [poison], and they go round <term type="animal">elephant</term><!-- as above, hyphen/space removed AM --><!-- OK. AW -->, because they so small he no see them, and they shoot him in eyes with <choice><orig>powsen</orig><reg>poison</reg></choice> arrow, and before long he fall down dead. And they go to village and call big <choice><orig>natuve</orig><reg>native</reg></choice>, we call </p> <!-- Not sure this end of p tag or cb/ab? HB --><!-- This is needed in order to get the image coded below in place, so leave as is. AW -->
 
-<lb/><p rend="center"><figure><graphic n="medium" url="edition-images/texts/liv_020001_0003_image.jpg"/></figure>
+<lb/><p rend="center"><figure><graphic n="medium" url="../transcription-images/liv_020001_0003_image.jpg"/></figure>
 <lb/><seg rend="smallcaps small"><persName>Tippu Tib</persName>.</seg></p>
 
 <p rend="no-indent"><orgName>Wasamgora</orgName> and cannibals. Pigmies have no big knife, [and bring other natives] because they got knives to cut <term type="animal">elephant</term>. Now this big <choice><orig>natuve</orig><reg>native</reg></choice> he come cut all <term type="foodstuff">meat</term> and divide, and <choice><orig>taker</orig><reg>take</reg></choice> half, and half he leave to pigmies. These cannibals (Wasamgora<!-- Not sure if this should be tagged as we don't tag cannibals, or if should just be foreign tag. HB --><!-- Good question. It depends on this is a specific ethnic group being invoked (or generic group) or an African word for "cannibal." I've coded as if it were a generic group, and I've removed orgName. AW -->) eat man the same they eat <term type="foodstuff">beef</term> and <term type="foodstuff">mutton</term>. And we have cannibal man, he belong to <persName>Emin Pasha</persName>, and his name we call <persName>Binsa</persName>. <persName>Emin Pasha</persName> give him to <persName><choice><orig>Docter</orig><reg>Doctor</reg></choice> Junker</persName> and <choice><orig>taker</orig><reg>take</reg></choice> to <geogName>Zanzibar</geogName>, and he went with us in <bloc>Africa</bloc>. He is not cannibal now.</p>
@@ -173,6 +173,11 @@ me in morning and give me <bibl>letter</bibl>, and I open and <choice><orig>fine
 <lb/>
 <lb/>
 <lb/><milestone unit="section" rend="quarter-line small center"/>
+
+<!-- Omitting the following for online display -->
+	<!--<div rend="center">
+<lb/><gap extent="10" unit="lines" agent="omitted-text"/>--><!-- Text from previous article omitted here. AW -->
+	<!--</div>-->
 
 			</div>
 		</body>	

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-new.xsl" type="text/xsl"?>
+<?xml-stylesheet href="omv-ms.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_012056"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Testimony (English Translation of Swahili Manuscript)</title><!-- Change -->
-                <title type="alternative">Testimony (English Translation of Swahili Manuscript), 12 November 1890</title><!-- Change; note addition of date -->
+                <title>Testimony</title><!-- Change -->
+                <title type="alternative">Testimony, 12 November 1890</title><!-- Change; note addition of date -->
                 <author>Saleh Bin Osman</author>
-                <author>Glave, Edward J., 1863-1895</author><!-- Change -->
-                <principal>Adrian S. Wisnicki</principal>
+                <author>[Glave, Edward J., 1863-1895]</author><!-- Change -->
+				<author role="first">Saleh Bin Osman</author>
+				<author role="first-normalized">Saleh Bin Osman</author>
+				<author role="normalized">[Edward J. Glave]</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM">
                     <name>Anne Martin</name>
                     <resp>Transcription</resp>
@@ -42,7 +47,11 @@
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date><!-- Change if necessary -->
                 <idno type="LEAP-ID">liv_012056</idno><!-- Change -->
-            </publicationStmt>
+            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability></publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
@@ -104,11 +113,10 @@
     </teiHeader>
 
     <text>
-		<body n="f8f3d5"><!-- Change; this is the color of the MS page; value can be any color -->
+		<front n="e0cfa4"><!-- Change; this is the color of the MS page; value can be any color -->
             <div rend="brown vertical" hand="#EJG"><!-- Change; this is the color of the writing; only use auto-suggested values -->
 
     <pb facs="liv_012056_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
-
 <lb/>
 <lb/>
 <lb/>
@@ -123,8 +131,12 @@
 
     <pb facs="liv_012056_0002" n="0002"/>
 <lb/><!-- blank page AM -->
+<lb/>
+<lb/>
             
 			</div>
+		</front>		
+		<body n="efe7d2"><!-- Change; this is the color of the MS page; value can be any color -->
 			<div rend="brown" hand="#EJG">
 
     <pb facs="liv_012056_0003" n="0003"/>
@@ -269,8 +281,7 @@
 <lb/><!-- blank page AM -->
 
     <pb facs="liv_012056_0015" n="0015"/>
-<lb/><fw><add place="marginleft"><del>6</del><add place="over-text" rend="black">7</add></add></fw>
-<lb/>Some few weeks after the camp
+<lb/><fw><add place="marginleft"><del>6</del><add place="over-text" rend="black">7</add></add></fw> Some few weeks after the camp
 <lb/>of the Rear Column had been formed
 <lb/><space extent="3" unit="words"/><add place="inspace" rend="small"><orgName><geogName>Zanzibar</geogName>is</orgName> who had deserted from <persName>Stanley</persName></add><!-- I've done this somewhat differently, because this to me reflects the layout on the page plus the sense a bit better. This seems to me not so much an addition to the sentence as an interlinear comment above it. AW -->
 <lb/><del>some</del> <add place="above">3</add> of the <del><orgName>Arabs</orgName>' fighting</del> men came
@@ -294,7 +305,7 @@
 <lb/><!-- blank page AM -->
 
     <pb facs="liv_012056_0017" n="0017"/>
-<lb/><fw rend="small"><add place="inspace"><del>(7)</del><add place="over-text">(8</add></add></fw>
+<lb/><fw rend="small"><add place="inspace"><del>(7)</del><add place="inspace">|8</add></add></fw>
 <lb/><p rend="no-indent">There was a large secret council
 <lb/>(<foreign>shauri</foreign>) held one night amongst the
 <lb/><orgName><geogName>Zanzibar</geogName>is</orgName> when the <term type="occupation">headman</term> urged that
@@ -459,7 +470,8 @@
 <lb/><!-- blank page HB -->
 
 	<pb facs="liv_012056_0031" n="0031"/>
-<lb/><fw rend="small"><add place="marginleft above">15</add></fw> <settlement>Yambuya</settlement> <persName>Barttelot</persName> <choice><abbr>march'd</abbr><expan>marched</expan></choice> ahead
+<lb/><fw rend="small"><add place="marginleft">15</add></fw> 
+<lb/><settlement>Yambuya</settlement> <persName>Barttelot</persName> <choice><abbr>march'd</abbr><expan>marched</expan></choice> ahead
 <lb/>with his compass in hand saying
 <lb/>that he himself would show the
 <lb/>way; but eventually after two or
@@ -699,7 +711,7 @@
 
 	<pb facs="liv_012056_0053" n="0053"/>
 <lb/><fw rend="small"><add place="marginleft">26</add></fw>
-<lb/><p rend="no-indent"><add place="marginleft">.</add> <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> hearing<!-- Adrian could you check this - I think the 1st alternative is more likely AM --><!-- Yes, I think it's hearing. The "h" looks just like the "h" in "had" a few lines down. I removing that <app><rdg> coding. AW --> of the Major's death
+<lb/><p rend="no-indent"><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> hearing<!-- Adrian could you check this - I think the 1st alternative is more likely AM --><!-- Yes, I think it's hearing. The "h" looks just like the "h" in "had" a few lines down. I removing that <app><rdg> coding. AW --> of the Major's death
 <lb/>repaired to <persName>Tippu Tib</persName> &amp; demanded that
 <lb/><persName>Sanga</persName> should be executed which was <!-- unclear should have "super-low" as an option...I have no idea what that word is! HB --><!-- I think it is "executed" AM --><!-- I agree with Anne. AW -->
 <lb/>duly carried out - The <orgName>Arabs</orgName> said
@@ -762,7 +774,7 @@
 
 	<pb facs="liv_012056_0059" n="0059"/>
 <lb/><fw rend="small"><add place="marginleft">29</add></fw>
-<lb/><p rend="no-indent"><add place="marginleft">.</add> The <orgName>Zanzibaris</orgName> &amp; <orgName>Arabs</orgName> said that
+<lb/><p rend="no-indent">The <orgName>Zanzibaris</orgName> &amp; <orgName>Arabs</orgName> said that
 <lb/>had there been a man in command
 <lb/>at <settlement>Yambuya</settlement> who had exercised
 <lb/>due tact in dealing with the <orgName>Arabs</orgName>
@@ -841,12 +853,14 @@
 <lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/><date when="1890-11-12"><choice><abbr>Nov</abbr><expan>November</expan></choice> 12. <choice><abbr>90</abbr><expan>1890</expan></choice>.</date></p>
 <lb/><p><space extent="1" unit="words"/><space extent="3" unit="chars"/><settlement>New York</settlement></p>
 <lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/><persName>E. J Glave</persName>.</p>
-<lb/><p rend="no-indent"><hi rend="underline">Witnesses</hi></p>
-<lb/><p rend="no-indent"><space extent="1" unit="chars"/><persName>John B. Ritche</persName>
+<lb/><p rend="no-indent small"><hi rend="underline">Witnesses</hi></p>
+<lb/><p rend="no-indent small"><space extent="1" unit="chars"/><persName>John B. Ritche</persName>
 <lb/><space extent="1" unit="chars"/><persName>J B Pond</persName></p>
 
 	<pb facs="liv_012056_0066" n="0066"/>
 <lb/><!-- blank page HB -->
+<lb/><!-- 2 lbs added for better online display -->
+<lb/>
 
             </div>
         </body>   

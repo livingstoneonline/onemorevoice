@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-new.xsl" type="text/xsl"?>
-<!--<?xml-stylesheet href="transcription-omv.xsl" type="text/xsl"?>-->
+<?xml-stylesheet href="omv-ms.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000085"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
@@ -10,7 +9,11 @@
                 <title>Letter to William O. Livingstone</title><!-- Change -->
                 <title type="alternative">Letter to William O. Livingstone, October 1873</title><!-- Change; note addition of date -->
                 <author>Wainwright, Jacob, ?-1892</author><!-- Change -->
-                <principal>Adrian S. Wisnicki</principal>
+                <author role="first">Wainwright, Jacob</author>
+				<author role="first-normalized">Jacob Wainwright</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM"><!-- Removed HB from list below because she didn't work on this file. AW -->
                     <name>Anne Martin</name>
                     <resp>Transcription</resp>
@@ -34,7 +37,11 @@
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date><!-- Change if necessary -->
                 <idno type="LEAP-ID">liv_000085</idno><!-- Change -->
-            </publicationStmt>
+            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability></publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>

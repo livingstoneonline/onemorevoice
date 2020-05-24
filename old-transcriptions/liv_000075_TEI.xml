@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/transcription-omv-new.xsl" type="text/xsl"?>
-<!--<?xml-stylesheet href="transcription-omv.xsl" type="text/xsl"?>-->
+<?xml-stylesheet href="omv-ms.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000075"><!-- Change @xml:id -->
     <teiHeader>
         <fileDesc>
@@ -10,7 +9,11 @@
                 <title>Extract from Diary</title><!-- Change -->
                 <title type="alternative">Extract from Diary, [November 1873-February 1874]</title><!-- Change; note addition of date -->
                 <author>Wainwright, Jacob, ?-1892</author><!-- Change -->
-                <principal>Adrian S. Wisnicki</principal>
+                <author role="first">Wainwright, Jacob</author>
+				<author role="first-normalized">Jacob Wainwright</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM">
                     <name>Anne Martin</name>
                     <resp>Transcription</resp>
@@ -42,7 +45,11 @@
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date><!-- Change if necessary -->
                 <idno type="LEAP-ID">liv_000075</idno><!-- Change -->
-            </publicationStmt>
+            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability></publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
@@ -90,12 +97,12 @@
     </teiHeader>
 
     <text>
-       	<body n="dbd3c3">
+       	<body n="e3dbcd">
 			<div hand="#U1" rend="brown">
 
 	<pb facs="liv_000075_0001" n="0001"/>
-<lb/><space extent="11" unit="words"/><space extent="4" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="1" unit="chars"/> <add rend="small diagonal" hand="#JW" place="inspace">1</add></fw> <!-- mark to the right of the 833 might be a page number AM --><!-- I think it is a "1" and in JW's hand, so have coded it that way. See also pages 3 and 5. AW -->
-<lb/><p rend="no-indent"><space extent="3" unit="words"/>The Character of <term type="collective"><choice><orig>Wabisa</orig><reg>Bisa</reg></choice> Tribe</term> -</p>
+<lb/><space extent="9" unit="words"/><space extent="4" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="1" unit="chars"/> <add rend="small diagonal" hand="#JW" place="inspace">1</add></fw> <!-- mark to the right of the 833 might be a page number AM --><!-- I think it is a "1" and in JW's hand, so have coded it that way. See also pages 3 and 5. AW -->
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>The Character of <term type="collective"><choice><orig>Wabisa</orig><reg>Bisa</reg></choice> Tribe</term> -</p>
 <lb/>
 <lb/><p rend="no-indent">The <term type="collective"><choice><orig>Wabisas</orig><reg>Bisa</reg></choice></term> are one of the bow &amp; arrow tribes.
 <lb/>Some of them use spears without shields. They are
@@ -164,7 +171,7 @@
             <div hand="#JW" rend="blue black">
 
 	<pb facs="liv_000075_0003" n="0003"/>
-<lb/><space extent="13" unit="words"/><space extent="4" unit="chars"/><fw><add rend="small diagonal brown" hand="#JW" place="inspace">1</add></fw>
+<lb/><space extent="12" unit="words"/><space extent="2" unit="chars"/><fw><add rend="small diagonal brown" hand="#JW" place="inspace">1</add></fw>
 <lb/><p rend="no-indent"><space extent="2" unit="words"/>The account of the country of <region>Unyamwezi</region><!-- mark to the right of the main text might be a page number AM --><!-- See page 1 and previous line. AW --></p>
 <lb/>
 <lb/><p rend="no-indent">The country of <region>Unyamwezi</region> is well <choice><sic>cutivated</sic><corr>cultivated</corr></choice> and the deserts
@@ -180,8 +187,7 @@
 <lb/>other animals are found. The houses are low and flat
 <lb/><choice><sic>roofted</sic><corr>roofed</corr></choice> covered with mud. The streams and rivers in this
 <lb/>country are but few, the language is difficult to <w>unders<supplied><seg type="hyphen">-</seg></supplied> <!-- geog: Unyamwezi -->
-<lb break="no"/>tand</w>.</p> 
-<lb/><p rend="no-indent"><space extent="2" unit="words"/><hi rend="double-underline">The account of <region>Ugogo</region></hi></p> <!-- Not sure how to notate (seg and add not working outside p tag) that this was added in same line as previous paragraph, if even needed? HB --><!-- Heather I have tried to make it look better by inserting a double space within the same paragraph, instead of taking a new paragraph AM --><!-- I know this is fake, but I treated it as if it were on a new line, so added a line break, etc. Not perfect solution, but I think better reflects the spirit of what's going on here. AW -->
+<lb break="no"/>tand</w>.<space extent="1" unit="words"/><hi rend="double-underline">The account of <region>Ugogo</region></hi></p> <!-- Not sure how to notate (seg and add not working outside p tag) that this was added in same line as previous paragraph, if even needed? HB --><!-- Heather I have tried to make it look better by inserting a double space within the same paragraph, instead of taking a new paragraph AM --><!-- I know this is fake, but I treated it as if it were on a new line, so added a line break, etc. Not perfect solution, but I think better reflects the spirit of what's going on here. AW -->
 <lb/><p rend="no-indent">The country of <region>Ugogo</region> is open, level and extensive country
 <lb/>and the people are bold and very proud in their own country<supplied>.</supplied>
 <lb/>They scarcely travel from one country to another. They only
@@ -196,7 +202,7 @@
 <!--<lb/><lb/><lb/>-->
 
 	<pb facs="liv_000075_0004" n="0004"/>
-<lb/><space extent="13" unit="words"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
+<lb/><space extent="11" unit="words"/><space extent="3" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
 <lb/><p rend="no-indent">As to our march when we <choice><sic>firs</sic><corr>first</corr></choice> entered in country of <region>Ugogo</region>
 <lb/>on the <date when="1874-02-28">ending of the month of February</date> we came to the
 <lb/>frontiers of <region>Ugogo</region> the name of the <term type="occupation">chief</term> of the place is -
@@ -227,7 +233,7 @@
 <lb/>people of an inferior <term type="occupation">chief</term> to pay them some custom
 
 	<pb facs="liv_000075_0005" n="0005"/>
-<lb/><space extent="11" unit="words"/><space extent="1" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="2" unit="chars"/> <add rend="small diagonal gray" hand="#JW" place="inspace">2</add></fw>
+<lb/><space extent="9" unit="words"/><space extent="4" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add><space extent="2" unit="chars"/> <add rend="small diagonal gray" hand="#JW" place="inspace">2</add></fw>
 <lb/>which we did with great willingness, and on <date when="1874-01-15">the day
 <lb/>following</date> Early in the morning we started, and scarcely
 <lb/>marched about an hour we <choice><sic>we</sic><corr/></choice> again made to halt
@@ -259,7 +265,7 @@
 <lb/><choice><sic>which</sic><corr/></choice> we found many animals, as <term type="animal">mules</term>, <term type="animal">Zebra</term>
 
 	<pb facs="liv_000075_0006" n="0006"/>
-<lb/><space extent="12" unit="words"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
+<lb/><space extent="10" unit="words"/><space extent="3" unit="chars"/><fw><add rend="gray small" hand="#U2" place="inspace">833</add></fw>
 <lb/>and large herds of other animals: after 5 <choice><sic>hours</sic><corr>hours'</corr></choice> march
 <lb/>we halted to have a dinner only for a time and at
 <lb/>one <choice><sic>o,clock</sic><corr>o'clock</corr></choice> we resumed our march. <choice><sic>about</sic><corr>About</corr></choice> 5 <choice><sic>o,clock</sic><corr>o'clock</corr></choice>

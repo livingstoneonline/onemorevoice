@@ -231,7 +231,7 @@
 				</div>
 			</div>
 
-			<div class="TEI front {$back}" style="background:#{$body-color-back};">
+			<div class="TEI back {$back}" style="background:#{$body-color-back};">
 				<div class="ms-container">
 				<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 				<xsl:choose>

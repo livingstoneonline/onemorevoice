@@ -426,14 +426,14 @@ h3{
 .p.noindent,
 .p.center,
 .p.right{
-	text-indent: 0 !important;
+	text-indent: 0;
 }
 .journal .p.center,
 .journal .fw{
-	display: block !important;
+	display: block;
 }
 .p.right{
-	margin-left: 6em !important;
+	margin-left: 6em;
 }
 .ab{
 	text-indent: 0;
@@ -442,15 +442,15 @@ h3{
 }
 .head{
 	font-weight: normal;
-	text-indent: 0 !important;
-	text-align: center !important;
+	text-indent: 0;
+	text-align: center;
 	display: block;
 }
 .note{
 	text-align: left;
 }
 .fw{
-	text-indent: 0 !important;
+	text-indent: 0;
 	overflow: hidden;
 	text-align: center;
 	line-height: 1.3em;
@@ -715,13 +715,6 @@ table .linenumber{
 .image-small{
 	width: 40%;
 	display: inline-block;
-}
-.p .figure,
-.p.noindent .figure,
-.ab .figure,
-p .metamark{
-	margin-left: 0px !important;
-	text-indent: 0px;
 }
 .metamark{
 	/*color:#666666;

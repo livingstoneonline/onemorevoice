@@ -52,17 +52,24 @@ nav ul li a:visited {
 	text-decoration: none;
   line-height: 70px;
   padding: 0 20px;
-  display: block;  
+  display: block;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
-  color:black;
+	color: white;
+  background: #424242;
+  text-decoration: underline;
 }
+nav ul li a:hover .dropdown-botton,
+nav ul li a:visited:hover .dropdown-botton
+ {
+  text-decoration: none;
+}
+
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
   padding-left: 4px;
-  content: ' ▾';
+  /*content: ' ▾';*//* adds arrow beside dropdown */
 }
 
 /* Dropdown List*/
@@ -86,12 +93,11 @@ nav ul li ul li a {
 
 /* Binds to JS Toggle */
 .nav-mobile {
-  font-size: .8em;
   display: none;
   position: absolute;
   top: 24px;
-  right: 38px;
-  background: #262626;
+  right: 37.5px;
+  background: #424242;
   height: 70px;
   width: 70px;
 }
@@ -100,7 +106,6 @@ nav ul li ul li a {
   .nav-mobile {
     display: block;
   }
-
   nav {
     float: right;
     width: 100%;
@@ -124,11 +129,11 @@ nav ul li ul li a {
   nav ul li ul li a {
     padding-left: 30px;
   }
-
   .nav-dropdown {
     position: static;
   }
 }
+
 @media screen and (min-width: 799px) {
   .nav-list {
     display: block !important;

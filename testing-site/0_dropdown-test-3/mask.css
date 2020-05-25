@@ -15,9 +15,11 @@
  -webkit-transition:none;
  transition:none
 }*/
-.mask {
- visibility:hidden;
+@media only screen and (max-width: 798px) {
+/*.mask {
+ visibility:visible;
  opacity:10
+}*//* needs to be tied to toggle event*/
 }
 @media screen and (min-width: 40em) {
  .mask {

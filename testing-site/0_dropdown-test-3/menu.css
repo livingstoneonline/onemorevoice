@@ -42,7 +42,7 @@ nav ul {
 }
 nav ul li {
   background-color: white;
-  display: inline-block;
+  float: left;
   position: relative;
   padding-bottom: .5em;
 }
@@ -119,14 +119,14 @@ nav ul li ul li a:hover {
     padding: 70px 0 15px;
   }
   nav ul {
-    text-align: left;
+    text-align: center;
     display: none;
   }
   nav ul li {
     border-top: 1px solid #424242;
     padding-bottom: 0;
     float: none;
-    display: inline;
+    text-align: left;
   }
   nav ul li a {
     padding: 15px;

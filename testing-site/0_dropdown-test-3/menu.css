@@ -2,7 +2,7 @@
 @charset "UTF-8";
 .navigation {
   height: 70px;
-  background: #262626;
+  background: white;
 }
 
 /* logo and branding */
@@ -27,8 +27,11 @@
 }
 
 /*navigation*/
+/*navbar*/
 nav {
-  float: right;
+  font-family: Arial, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  /*float: right;*/
 }
 nav ul {
   list-style: none;
@@ -39,19 +42,22 @@ nav ul li {
   float: left;
   position: relative;
 }
+/*navbar a*/
 nav ul li a,
 nav ul li a:visited {
-  display: block;
-  padding: 0 20px;
+  color: black;
+  background: white;
+  font-size: 1.1em;
+	font-weight: 600;
+	text-decoration: none;
   line-height: 70px;
-  background: #262626;
-  color: #ffffff;
-  text-decoration: none;
+  padding: 0 20px;
+  display: block;  
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
   background: #2581DC;
-  color: #ffffff;
+  color:black;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -80,6 +86,7 @@ nav ul li ul li a {
 
 /* Binds to JS Toggle */
 .nav-mobile {
+  font-size: .8em;
   display: none;
   position: absolute;
   top: 24px;
@@ -95,6 +102,7 @@ nav ul li ul li a {
   }
 
   nav {
+    float: right;
     width: 100%;
     padding: 70px 0 15px;
   }
@@ -107,6 +115,11 @@ nav ul li ul li a {
   nav ul li a {
     padding: 15px;
     line-height: 20px;
+  }
+   nav ul li a,
+   nav ul li a:visited {
+    font-size: 1em;
+    font-weight: 300;
   }
   nav ul li ul li a {
     padding-left: 30px;
@@ -159,4 +172,3 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
-

@@ -100,7 +100,6 @@ ul{
 
 /* Navbar container */
 .navbar{
-	font-size: .9em;
 	background-color: white;
 	/*overflow:hidden;*/ /*removed because causing mobile problems*/
 }
@@ -119,8 +118,8 @@ ul{
 /* Links inside the navbar */
 .navbar a{
 	color: black;
-	font-size: 1.3em;
-	font-weight: bold;
+	font-size: 1.2em;
+	font-weight: 600;
 	text-decoration: none;
 	padding: 10px 10px;
 }
@@ -139,20 +138,16 @@ ul{
 /* Dropdown button */
 .dropdown .dropbtn{
 	color: black;
-	font-size: 1.3em;
-	font-weight: bold;
+	font-size: 1.2em;
+	font-weight: 600;
+	background-color: inherit;
 	outline: none;
 	border: none;
-	background-color: inherit;
 	font-family: inherit; /* Important for vertical align on mobile phones */
 	margin: 0; /* Important for vertical align on mobile phones */
 	padding: 10px 10px;
 }
 
-/* Remove underlining on dropdown button on hover */
-.dropbtn:hover{
-	text-decoration: none;
-}
 
 /* Add a white background color to navbar links on hover */
 .navbar a:hover,
@@ -163,6 +158,11 @@ ul{
 
 .navbar a:hover{
 	text-decoration: underline;
+}
+
+/* Remove underlining on dropdown button on hover */
+.dropbtn:hover{
+	text-decoration: none;
 }
 
 /* Show the dropdown menu on hover */

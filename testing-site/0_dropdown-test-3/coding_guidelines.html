@@ -12,15 +12,7 @@
     <link rel="stylesheet" type="text/css" href="mobile.css" />
     <link rel="stylesheet" type="text/css" href="menu.css" />
     <script src="menu.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
-
-  		gtag('config', 'UA-31768072-5');
-	</script>    
+    <!-- Global site tag (gtag.js) - Google Analytics --> 
 </head>
 
 <body>
@@ -56,58 +48,55 @@
         </ul>
     </div>-->
     
-    <section class="navigation">
+<div class="navigation">
   <div class="nav-container">
     <div class="brand">
-      <a href="#!">Logo</a>
+      <a href="#!">One More Voice</a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a href="#!">Home</a>
+          <a href="index.html">home</a>
         </li>
         <li>
-          <a href="#!">About</a>
+          <a href="texts.html">texts</a>
         </li>
         <li>
-          <a href="#!">Services</a>
+          <a href="#!">concepts</a>
           <ul class="nav-dropdown">
             <li>
-              <a href="#!">Web Design</a>
+              <a href="analytical_priorities.html">analytical priorities</a>
             </li>
             <li>
-              <a href="#!">Web Development</a>
+              <a href="project_design.html">project design</a>
             </li>
             <li>
-              <a href="#!">Graphic Design</a>
+              <a href="coding_guidelines.html">coding guidelines</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#!">Pricing</a>
-        </li>
-        <li>
-          <a href="#!">Portfolio</a>
+          <a href="#!">misc</a>
           <ul class="nav-dropdown">
             <li>
-              <a href="#!">Web Design</a>
+              <a href="contributors.html">contributors</a>
             </li>
             <li>
-              <a href="#!">Web Development</a>
+              <a href="bibliography.html">bibliography</a>
             </li>
             <li>
-              <a href="#!">Graphic Design</a>
+              <a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a> 
+            </li>
+            <li>
+              <a href="mailto:awisnicki@yahoo.com">contact</a> 
             </li>
           </ul>
-        </li>
-        <li>
-          <a href="#!">Contact</a>
         </li>
       </ul>
     </nav>
   </div>
-</section>
+</div>
     
     <div class="title">
         <img class="image" src="images/liv_000022_0002-0003-combine.jpg" alt="Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “Notebook III. 22 July-7 October 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." title="Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “Notebook III. 22 July-7 October 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
@@ -210,5 +199,36 @@
 		<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
 	</div>
 </body>
+
+<script>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</script>
+<script id="rendered-js">
+(function ($) {// Begin jQuery
+  $(function () {// DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function (e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function () {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function () {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function () {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+//# sourceURL=pen.js
+    </script>
 
 </html>

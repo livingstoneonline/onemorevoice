@@ -1,0 +1,90 @@
+/* [ON BIG SCREENS] */
+/* Wrapper */
+#hamnav{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	display: block;
+	background: white;
+	padding: 0 0 1em 0;
+	width: 100%;
+	/* Optional */
+	/*position: sticky;
+  top: 0;*/
+}
+
+/* Hide Hamburger */
+#hamnav label,
+#hamburger,
+#sub-hamitems{
+	display: none;
+}
+
+/* Horizontal Menu Items */
+#hamitems{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+#hamitems a,
+#hamitems .menu-heading{
+	width: auto; /* 100% / 5 tabs = 20% */
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+#hamitems a:hover{
+	color: white;
+	background-color: #424242;
+	text-decoration: underline;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width : 768px){
+/* Show Hamburger Icon */
+	#hamnav label{
+		display: block;
+		color: black;
+		background: white;
+		font-style: normal;
+		font-size: 1.5em;
+		padding: 0 8px 10px;
+		text-align: left;
+	}
+
+	/* Break down menu items into vertical */
+	#hamitems a,
+	#hamitems .menu-heading,
+	#sub-hamitems a{
+		font-size: .8em;
+		font-weight: 300;
+		text-align: left;
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+	}
+	#hamitems a,
+	#hamitems .menu-heading,
+	#sub-hamitems a{
+		padding: .6em 10px;
+	}
+	#hamitems a,
+	#sub-hamitems a{
+		text-decoration: underline;
+	}
+	#hamitems a,
+	#hamitems .menu-heading{
+		font-weight: 600;
+	}
+	#sub-hamitems a{
+		font-weight: 300;
+	}
+
+	/* Toggle Show/Hide Menu */
+	#hamitems{
+		display: none;
+	}
+	#hamnav input:checked ~ #hamitems,
+	#sub-hamitems{
+		display: block;
+	}
+}

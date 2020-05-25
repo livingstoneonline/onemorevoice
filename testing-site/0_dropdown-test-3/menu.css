@@ -47,7 +47,6 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   color: black;
-  /*background: white;*/
   font-size: 1.1em;
 	font-weight: 600;
 	text-decoration: none;
@@ -73,15 +72,17 @@ nav ul li a:visited:not(:only-child):after {
 nav ul li ul li {
   font-size: .85em;
   background-color: #e6e6e6;
+  border-top: 1px solid #424242;
   min-width: 190px;
 }
 nav ul li ul li a {
+  background-color: white;
   padding: 15px;
   line-height: 20px;
 }
 nav ul li ul li a:hover {
   color: black;
-	background-color: #c9c9c9; /*darker gray*/
+	background-color: #c9c9c9;
 }
 
 /* Dropdown list binds to JS toggle event */
@@ -118,6 +119,7 @@ nav ul li ul li a:hover {
     display: none;
   }
   nav ul li {
+    border-top: 1px solid #424242;
     float: none;
   }
   nav ul li a {

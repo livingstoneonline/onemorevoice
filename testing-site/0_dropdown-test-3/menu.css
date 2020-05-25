@@ -1,8 +1,9 @@
 
 @charset "UTF-8";
 .navigation {
-  height: 70px;
+  /*height: 70px;*/
   background: white;
+  display: inline;
 }
 
 /* logo and branding */
@@ -54,8 +55,9 @@ nav ul li a:visited {
   font-size: 1.1em;
 	font-weight: 600;
 	text-decoration: none;
-  line-height: 70px;
-  padding: 0 20px;
+  line-height: 60px;
+  margin-bottom: .5em;
+  padding: 0 20px 0 20px;
   display: block;
 }
 nav ul li a:hover,
@@ -138,6 +140,7 @@ nav ul li ul li a:hover {
     font-size: 1em;
     font-weight: 300;
     background-color: #e6e6e6;
+    margin-bottom: 0;
   }
   nav ul li a:not(:only-child):after,
   nav ul li a:visited:not(:only-child):after {

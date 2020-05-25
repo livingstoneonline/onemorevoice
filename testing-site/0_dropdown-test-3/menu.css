@@ -31,18 +31,19 @@
 nav {
   font-family: Arial, Geneva, Tahoma, sans-serif;
   background-color: white;
+  display: inline;
   /*float: right;*/
 }
 nav ul {
+	text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 nav ul li {
   background-color: white;
-  float: left;
+  display: inline-block;
   position: relative;
-  padding-bottom: .5em;
 }
 /*navbar a*/
 nav ul li a,
@@ -117,11 +118,13 @@ nav ul li ul li a:hover {
     padding: 70px 0 15px;
   }
   nav ul {
+    text-align: left;
     display: none;
   }
   nav ul li {
     border-top: 1px solid #424242;
     float: none;
+    display: inline;
   }
   nav ul li a {
     padding: 15px;

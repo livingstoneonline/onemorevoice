@@ -39,6 +39,7 @@ nav ul {
   padding: 0;
 }
 nav ul li {
+  background-color: white;
   float: left;
   position: relative;
 }
@@ -46,7 +47,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   color: black;
-  background: white;
+  /*background: white;*/
   font-size: 1.1em;
 	font-weight: 600;
 	text-decoration: none;
@@ -60,11 +61,6 @@ nav ul li a:visited:hover {
   background: #424242;
   text-decoration: underline;
 }
-nav ul li a:hover .dropdown-botton,
-nav ul li a:visited:hover .dropdown-botton
- {
-  text-decoration: none;
-}
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -73,12 +69,19 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 /* Dropdown List*/
+/* .dropdown-content */
 nav ul li ul li {
+  font-size: .85em;
+  background-color: #e6e6e6;
   min-width: 190px;
 }
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
+}
+nav ul li ul li a:hover {
+  color: black;
+	background-color: #c9c9c9; /*darker gray*/
 }
 
 /* Dropdown list binds to JS toggle event */
@@ -125,9 +128,20 @@ nav ul li ul li a {
    nav ul li a:visited {
     font-size: 1em;
     font-weight: 300;
+    background-color: #e6e6e6;
   }
+  nav ul li a:not(:only-child):after,
+  nav ul li a:visited:not(:only-child):after {
+  content: ' ▾'; /* adds arrow beside dropdown */
+  float:right;
+}
   nav ul li ul li a {
     padding-left: 30px;
+  }
+  nav ul li a:hover,
+  nav ul li ul li a:hover {
+    color: black;
+    background-color: #c9c9c9;
   }
   .nav-dropdown {
     position: static;

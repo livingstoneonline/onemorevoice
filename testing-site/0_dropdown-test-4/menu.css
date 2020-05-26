@@ -61,7 +61,6 @@
 
 .topnav .dropdown-content {
   display: none;
-  width: 100%;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -136,6 +135,8 @@
     position: relative;
     background-color: white;
   }
+  
+  /* This makes the dropdown appear on mouseover */
   .topnav .dropdown .dropdown-content a:hover {
     background-color: #e6e6e6;
   }

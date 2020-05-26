@@ -94,12 +94,17 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
+  .topnav ul {
+    display: block;
+    float: none;
+    text-align: inherit;
   }
   .topnav a.icon {
-    float: left;
+    font-size: 1em;
     display: block;
+  }
+  .topnav a, .dropdown .dropbtn {
+    display: none;
   }
 }
 
@@ -131,6 +136,5 @@
   }
   .topnav.responsive .dropdown-content {
     /*position: relative;*/
-    display: none;
   }
 }

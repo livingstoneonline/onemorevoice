@@ -94,7 +94,7 @@ ul{
 	display: none;
 }
 .topnav {
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background: white;
 	overflow: hidden;
 	padding-bottom: .5em;
@@ -120,7 +120,7 @@ ul{
 	display: inline-block;
 }
 .topnav .dropdown {
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	float: left;
 	overflow: hidden;
 }
@@ -146,7 +146,7 @@ ul{
 }
 .topnav .dropdown-content a {
 	font-size: .9em;
-	background-color: #e6e6e6;
+	background-color:  white;
 	border-top: 1px solid #424242;
 	float: none;
 	color: black;
@@ -155,33 +155,20 @@ ul{
 	display: block;
 	text-align: left;
 }
-.topnav a:hover, .topnav .dropdown:hover .dropbtn {
-	color: white;
-	background-color: #424242;
-}
-.topnav a:hover, .topnav .dropdown:hover {
-	text-decoration: underline;
-}
-.topnav .dropdown-content a:hover {
+.topnav a:hover, 
+.topnav .dropdown:hover,
+.topnav .dropdown:hover .dropbtn,
+.topnav .dropdown .dropdown-content a:hover {
 	color: black;
-	  background-color: #c9c9c9;
+	background-color: #d1d1d1;
+}
+.topnav .dropdown:hover {
+	text-decoration: underline;
 }
 .dropdown:hover .dropdown-content {
 	display: block;
 }
-.topnav .icon {
-	display: none;
-	background-color: white;
-}
-.topnav .icon:hover {
-	color: black;
-	background-color: #e6e6e6;
-}
 
-/* This makes the dropdown appear on mouseover */
-.topnav .dropdown .dropdown-content a:hover {
-	background-color: #e6e6e6;
-}
   
 @media screen and (max-width: 600px) {
 .header-title {
@@ -219,12 +206,6 @@ ul{
 .topnav a, 
 .topnav .dropdown .dropbtn {
 	display: none;
-}
-.topnav ul {
-	text-align: inherit;
-}
-.topnav ul li:first-of-type {
-	border-top: none;
 }
 }
 

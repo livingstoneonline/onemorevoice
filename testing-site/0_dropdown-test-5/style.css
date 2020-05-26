@@ -85,6 +85,14 @@ ul{
 /*Dropdown Menu*/
 /* Adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 
+.header-title {
+	display: block;
+}
+.menu,
+.nav-title,
+.icon-title {
+	display: none;
+}
 .topnav {
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	background: white;
@@ -176,6 +184,23 @@ ul{
 }
   
 @media screen and (max-width: 600px) {
+.header-title {
+	display: none;
+}
+.menu {
+	display: block;
+	text-align: center;
+}
+.icon-title {
+	float: left;
+	clear: both;
+	display: block;
+}
+.nav-title {
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
 .topnav a, 
 .topnav .dropdown .dropbtn {
 	display: none;

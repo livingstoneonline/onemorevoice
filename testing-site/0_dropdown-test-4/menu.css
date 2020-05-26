@@ -28,6 +28,13 @@
   display: inline-block;
 }
 
+/* adds arrow beside dropdown */
+/*.topnav .dropdown .dropbtn:not(:only-child):after,
+.topnav .dropdown .dropbtn:visited:not(:only-child):after {
+content: ' ▾';
+float:right;
+}*/
+
 .topnav .icon,
 .topnav .close {
   display: none;

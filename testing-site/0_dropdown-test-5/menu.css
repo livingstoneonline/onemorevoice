@@ -28,13 +28,6 @@
   display: inline-block;
 }
 
-/* adds arrow beside dropdown */
-/*.topnav .dropdown .dropbtn:not(:only-child):after,
-.topnav .dropdown .dropbtn:visited:not(:only-child):after {
-content: ' ▾';
-float:right;
-}*/
-
 .topnav .dropdown {
   font-family: Arial, Geneva, Tahoma, sans-serif;
   float: left;
@@ -106,6 +99,11 @@ float:right;
   background-color: #e6e6e6;
 }
 
+  /* This makes the dropdown appear on mouseover */
+ .topnav .dropdown .dropdown-content a:hover {
+   background-color: #e6e6e6;
+  }
+
 @media screen and (max-width: 600px) {
   .topnav ul {
     display: block;
@@ -120,10 +118,10 @@ float:right;
     border-top: none;
     padding-bottom: 0;
   }
-.topnav ul li a.icon,
-.topnav u li a.close {
+  .topnav ul li a.icon,
+  .topnav u li a.close {
   border-top: none;
-}
+  }
   .topnav a.icon {
     font-size: 1.3em;
     display: block;
@@ -147,14 +145,9 @@ float:right;
     position: relative;
     background-color: white;
   }
-  
-  /* This makes the dropdown appear on mouseover */
-  .topnav .dropdown .dropdown-content a:hover {
-    background-color: #e6e6e6;
+  .topnav a.icon:hover {
+    background-color: white;
   }
-  
-    /*content: ' ▾';*/ /* adds arrow beside dropdown */
-    /*float:right;*/
 
 
 @media screen and (max-width: 600px) {
@@ -192,13 +185,7 @@ float:right;
     width: 100%;
     text-align: left;
   }
-
   .topnav.responsive .dropdown-content {
     position: relative;
-  }
-
-  .topnav.responsive .mask {
-    /*visibility: visible;
-    opacity:10;*/
   }
 }

@@ -38,10 +38,10 @@
             <li><a href="texts.html">texts</a></li>
             <li>
                 <div class="dropdown">
-                    <button class="dropbtn">concepts
+                    <button onclick="myFunction()" class="dropbtn">concepts
 					<i class="fa fa-caret-down"></i>
 					</button>
-                <div class="dropdown-content">
+                <div id="myDropdown" class="dropdown-content">
                         <a href="analytical_priorities.html">analytical priorities</a>
                         <a href="project_design.html">project design</a>
                         <a href="coding_guidelines.html">coding guidelines</a>
@@ -144,6 +144,29 @@
         <hr />
         <p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
     </div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+</script>        
+
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");

@@ -109,6 +109,10 @@
     border-top: 1px solid #424242;
     padding-bottom: 0;
   }
+  .topnav ul li:first-of-type {
+    border-top: none;
+    padding-bottom: 0;
+  }
 .topnav ul li a.icon,
 .topnav u li a.close {
   border-top: none;
@@ -127,8 +131,12 @@
   color: black;
   background-color: #c9c9c9;
   }
-  .topnav .dropdown .dropdown-content {
+  .topnav .dropdown .dropdown-content a {
     position: relative;
+    background-color: white;
+  }
+  .topnav .dropdown .dropdown-content a:hover {
+    background-color: #e6e6e6;
   }
   
     /*content: ' ▾';*/ /* adds arrow beside dropdown */
@@ -172,9 +180,11 @@
   }
 
   .topnav.responsive .dropdown-content {
-    /*position: relative;*/
+    position: relative;
   }
+
   .topnav.responsive .mask {
     /*visibility: visible;
     opacity:10;*/
+  }
 }

@@ -1,0 +1,209 @@
+/*CSS File for One More Voice (http://onemorevoice.org/)*/
+
+/*Created by Adrian S. Wisnicki*/
+
+/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+
+
+/*Big parts*/
+
+html{
+	font: 16px Georgia, 'Times New Roman', Times, serif;
+	font-weight: normal;
+	color: #191716;
+	padding: 1em 1.5em;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-word-break: break-all;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+}
+
+body{
+	max-width: 38em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title,
+.footer{
+	text-align: center;
+	line-height: 1.6em;
+}
+
+.title{
+	font-weight: bold;
+	padding-bottom: 1em;
+}
+
+.main{
+	text-align: left;
+	line-height: 1.8em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.citation{
+	font-size: .9em;
+	line-height: 1.6em;
+	padding-top: 1em;
+}
+
+.caption{
+	font-size: .9em;
+	line-height: 1.6em;
+}
+
+.footer{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-size: .85em;
+	padding-top: 1em;
+}
+
+.image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.image-border{
+	border: 1px solid gray;
+}
+
+ul{
+	padding-left: 18px;
+	padding-bottom: 1em;
+}
+
+.p-list{
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+.bio{
+	padding-bottom: 1em;
+}
+
+.ul-list{
+	padding-left: 2.5em;
+	padding-bottom: 0em;
+	margin-bottom: 1em;
+	margin-top: 0em;
+}
+
+
+/*Dropdown Menu*/
+/*modeled on: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
+
+
+/*Headings & Lines*/
+
+h1{
+	font-size: 2.1em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+	font-size: .9em;
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+}
+
+hr{
+	width: 100%;
+	background-color: gray;
+	height: 1px;
+	border: 0;
+}
+
+.narrow-hr{
+	width: 45%;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.thick-hr{
+	width: 50%;
+	overflow: visible; /* For IE */
+	border: none;
+	border-top: medium double #191716;
+	color: #191716;
+	text-align: center;
+	padding: 10px 10px 0 0;
+}
+
+
+/*Formatting*/
+
+.big{
+	font-size: 1.1em;
+}
+
+.bigger{
+	font-size: 1.2em;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.center{
+	text-align: center;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.left{
+	text-align: left;
+}
+
+.site-blue{
+	color: #2e68ac;
+}
+
+.site-red{
+	color: #e4524b;
+}
+
+.small-caps{
+	font-variant: small-caps;
+}
+
+.small-caps-palatino{
+	font-variant: small-caps;
+	font-family: Palatino;
+}
+
+.small{
+	font-size: .9em;
+}
+
+.smaller{
+	font-size: .8em;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+
+/*Links*/
+
+a,
+a:visited{
+	color: #2e68ac;
+	/*text-decoration:none;*/
+}
+
+a:hover{
+	color: #e4524b;
+}
+
+.currentLink{
+	color: #640200;
+}

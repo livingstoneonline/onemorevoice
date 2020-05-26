@@ -121,12 +121,16 @@
     display: none;
     background-color: #e6e6e6;
   }
-}
-.topnav a:hover, .dropdown:hover .dropbtn {
+  }
+  .topnav a:hover, 
+  .topnav .dropdown:hover .dropbtn {
   color: black;
   background-color: #c9c9c9;
-}
-
+  }
+  .topnav .dropdown .dropdown-content {
+    position: relative;
+  }
+  
     /*content: ' ▾';*/ /* adds arrow beside dropdown */
     /*float:right;*/
 

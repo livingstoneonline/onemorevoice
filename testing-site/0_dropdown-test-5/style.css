@@ -190,16 +190,31 @@ ul{
 .menu {
 	display: block;
 	text-align: center;
+	padding: 1em 0 .5em;
 }
-.icon-title {
+.menu .icon-title {
 	float: left;
-	clear: both;
 	display: block;
+	padding: .1em 0 0 .5em;
 }
-.nav-title {
-	display: inline-block;
+.menu .nav-title {
+	font-size: 1.6em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
 	text-align: center;
 	margin: 0 auto;
+	padding-right: .5em;
+	display: inline-block;
+}
+.menu a.icon {
+	font-size: 1.5em;
+	color:black;
+	display: block;
+	margin-bottom: .5em;
+	border-top: none;
+}
+.menu a.icon:hover {
+	color: black;
 }
 .topnav a, 
 .topnav .dropdown .dropbtn {
@@ -210,15 +225,6 @@ ul{
 }
 .topnav ul li:first-of-type {
 	border-top: none;
-}
-.topnav a.icon {
-	font-size: 1.3em;
-	display: block;
-	margin-bottom: .5em;
-	border-top: none;
-}
-.topnav a.icon:hover {
-	background-color: white;
 }
 }
 

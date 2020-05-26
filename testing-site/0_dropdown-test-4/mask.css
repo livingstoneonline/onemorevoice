@@ -14,13 +14,13 @@
 /*.android .mask {
  -webkit-transition:none;
  transition:none
-}*/
-@media only screen and (max-width: 798px) {
-/*.mask {
- visibility:visible;
- opacity:10
-}*//* needs to be tied to toggle event*/
 }
+@media only screen and (max-width: 798px) {
+.mask {
+ visibility: visible;
+ opacity:10
+}
+}*/
 @media screen and (min-width: 40em) {
  .mask {
   display:none !important;

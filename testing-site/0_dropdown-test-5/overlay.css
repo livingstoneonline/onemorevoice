@@ -4,7 +4,7 @@
 .overlay {
   height: 100%;
   width: 100%;
-  display: none;
+  display: block;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -17,10 +17,10 @@
 
 .overlay-content {
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  top: 3em; /* 3em from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 0; /* ignore: 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 .overlay a {

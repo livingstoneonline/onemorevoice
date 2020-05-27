@@ -3,6 +3,7 @@
  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
 .overlay {
   font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: whitesmoke;
   height: 100%;
   width: 100%;
   display: block;
@@ -20,7 +21,7 @@
   position: relative;
   top: 5em; /* 5em from the top */
   width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
+  text-align: left; /* ignore: Centered text/links */
   margin-top: 0; /* ignore: 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
@@ -29,6 +30,7 @@
   text-decoration: none;
   font-size: 1em;
   color: whitesmoke; /* Color for links */
+  text-decoration: underline;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color)*/
 }

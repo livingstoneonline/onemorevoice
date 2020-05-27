@@ -17,11 +17,17 @@
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
+.overlay ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
 .overlay-content {
   position: relative;
   top: 5em; /* 5em from the top */
   width: 100%; /* 100% width */
-  text-align: left; /* ignore: Centered text/links */
+  text-align: center; /* Centered text/links */
   margin-top: 0; /* ignore: 30px top margin to avoid conflict with the close button on smaller screens */
 }
 

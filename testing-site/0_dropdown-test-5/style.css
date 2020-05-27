@@ -109,7 +109,7 @@ ul{
 	color: black;
 	text-align: center;
 	padding: 18px 16px;
-	text-decoration: none;
+	text-decoration: underline;
 }
 .topnav ul {
 	text-align: center;
@@ -147,7 +147,6 @@ ul{
 .topnav .dropdown-content a {
 	font-size: .9em;
 	background-color:  white;
-	border-top: 1px solid #424242;
 	float: none;
 	color: black;
 	padding: 12px 16px;
@@ -156,17 +155,17 @@ ul{
 	text-align: left;
 }
 .topnav a:hover, 
-.topnav .dropdown:hover,
-.topnav .dropdown:hover .dropbtn,
-.topnav .dropdown .dropdown-content a:hover {
+.topnav .dropdown:hover .dropbtn
+ {
 	color: black;
-	background-color: #d1d1d1;
+	background-color: #dbdbdb;
 }
 .topnav .dropdown:hover {
 	text-decoration: underline;
 }
 .dropdown:hover .dropdown-content {
 	display: block;
+	text-decoration: underline;
 }
 
   

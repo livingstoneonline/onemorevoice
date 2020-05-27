@@ -12,7 +12,7 @@
   left: 0;
   top: 0;
   background-color: #424242; /* Black fallback color */
-  background-color: #424242, 0.9; /* Black w/opacity */
+  opacity: 1;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -24,21 +24,20 @@
   line-height: 1.6em;
 }
 .overlay li {
-  padding-top: .5em;
+  padding: .8em 0;
 }
-.overlay li.section {
-  padding-top: 1em;
+.overlay li.section ul li {
+  padding: .3em 0;
 }
 .overlay-content {
   position: relative;
-  top: 3em; /* 3em from the top */
+  top: 2em; /* 2em from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 0; /* ignore: 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 .overlay a {
-  text-decoration: none;
   font-size: 1em;
   color: whitesmoke; /* Color for links */
   text-decoration: underline;

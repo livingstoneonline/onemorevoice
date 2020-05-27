@@ -227,6 +227,55 @@ text-decoration: none;
 }
 
 
+/*Overlay*/
+/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+ /* Height & width depends on how you want to reveal the overlay (see overlay.js) */    
+ .overlay {
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: whitesmoke;
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: #424242; /* Black fallback color */
+	opacity: 1;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay ul {
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+	line-height: 1.6em;
+}
+.overlay li {
+	padding: .8em 0;
+}
+.overlay li.section ul li {
+	padding: .3em 0;
+}
+.overlay-content {
+	position: relative;
+	top: 1em;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+}
+.overlay a {
+	font-size: 1em;
+	color: whitesmoke;
+	text-decoration: underline;
+	transition: 0.3s; /* Transition effects on hover (color)*/
+}
+.overlay a:hover, .overlay a:focus {
+	text-decoration: underline;
+}
+  
+
 /*Headings & Lines*/
 
 h1{

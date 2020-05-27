@@ -6,7 +6,7 @@
   color: whitesmoke;
   height: 100%;
   width: 100%;
-  display: block;
+  display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -53,9 +53,10 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
+}*/
 
-@media screen and (max-height: 450px) {
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/*@media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;

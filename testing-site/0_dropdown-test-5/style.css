@@ -195,6 +195,13 @@ ul{
 	padding-right: .5em;
 	display: inline-block;
 }
+.overlay .menu .close-title {
+	font-size: 2em;
+	float: right;
+}
+.overlay .menu .close-title a {
+text-decoration: none;
+}
 .menu a.icon {
 	font-size: 1.5em;
 	color:black;
@@ -205,6 +212,8 @@ ul{
 .menu a.icon:hover {
 	color: black;
 }
+
+
 .topnav a, 
 .topnav .dropdown .dropbtn {
 	display: none;

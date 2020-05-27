@@ -179,13 +179,13 @@ ul{
 	padding: 1em 0 .5em;
 }
 .overlay .menu {
-	padding-top: 1.5em;
+	padding: 1.5em 1em 1em;
 	border-bottom: 1px whitesmoke solid;
 }
 .menu .icon-title {
 	float: left;
 	display: block;
-	padding: .1em 0 0 .5em;
+	padding: .1em 0 0 .3em;
 }
 .menu .nav-title {
 	font-size: 1.6em;
@@ -193,12 +193,19 @@ ul{
 	font-weight: 600;
 	text-align: center;
 	margin: 0 auto;
-	padding-right: .5em;
+	padding-right: .9em;
 	display: inline-block;
+}
+.overlay .menu .nav-title {
+	padding-right: 0;
+	padding-left: .6em;
 }
 .overlay .menu .close-title {
 	font-size: 2em;
 	float: right;
+	vertical-align: middle;
+	line-height: 0.85em;
+	padding-right: 5px;
 }
 .overlay .menu .close-title a {
 text-decoration: none;

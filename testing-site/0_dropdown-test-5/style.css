@@ -44,6 +44,11 @@ body{
 	font-weight: bold;
 	padding-bottom: 1em;
 }
+@media only screen and (max-width : 600px){
+	.title{
+		padding-bottom: .5em;
+	}
+}
 .main{
 	text-align: left;
 	line-height: 1.8em;
@@ -193,10 +198,10 @@ ul{
 		display: block;
 		position: absolute;
 		left: 0;
-		padding-top: .1em;
+		padding-top: .2em;
 	}
 	.menu .nav-title{
-		font-size: 1.6em;
+		font-size: 1.7em;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 		font-weight: 600;
 		display: block;
@@ -204,7 +209,7 @@ ul{
 	.overlay .menu .close-title{
 		font-size: 2em;
 		vertical-align: middle;
-		line-height: 0.85em;
+		line-height: 0.8em;
 		position: absolute;
 		right: .8em;
 	}
@@ -230,6 +235,24 @@ ul{
 @media only screen and (max-width : 320px){
 	.menu .icon-title{
 		padding-top: 0;
+	}
+	.menu .nav-title{
+		font-size: 1.6em;
+	}
+	.overlay .menu .close-title{
+		line-height: 0.80em;
+	}
+}
+/* The following is an imaginary breakpoint for users with very small phones. */
+@media only screen and (max-width : 250px){
+	.menu .icon-title{
+		margin-top: -.1em;
+	}
+	.menu .nav-title{
+		font-size: 1.4em;
+	}
+	.overlay .menu .close-title{
+		line-height: 0.75em;
 	}
 }
 

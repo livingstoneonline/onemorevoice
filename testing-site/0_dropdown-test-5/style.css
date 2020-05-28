@@ -22,23 +22,13 @@ nav {
 	box-shadow: 0 4px 6px -6px #222;
 	-webkit-box-shadow: 0 4px 6px -6px #222;
 	-moz-box-shadow: 0 4px 6px -6px #222;
+  }
 
-  }
   @media screen and (max-width: 600px) {
-  /*body.fixed-nav .menu-frame {
-	text-align: center;
-	margin: 0 auto;
-  }
   body.fixed-nav a.icon {
-	text-align: center;
-	margin: 0 auto;
-	padding: 0 2em;
-  }*/
+	position: absolute;
+	left: 1.7em;
   }
-  .tester {
-	  z-index: 1;
-	  position: absolute;
-	  left: 0;
   }
 
 /*Big parts*/
@@ -60,7 +50,6 @@ html{
 body{
 	max-width: 38em;
 	margin: 0 auto;
-	position: relative;
 }
 .title,
 .footer{
@@ -214,7 +203,6 @@ ul{
 	text-align: center;
 	padding: 1em 0 .5em;
 	position: relative;
-	margin: 0 auto;
 }
 .overlay .menu {
 	padding: 1.5em 1em 1em;
@@ -223,7 +211,7 @@ ul{
 .menu .icon-title {
 	display: block;
 	position: absolute;
-	padding: .1em 0 0 0;
+	padding: .1em 0 0 .3em;
 }
 .menu .nav-title {
 	font-size: 1.6em;

@@ -4,6 +4,28 @@
 
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
+/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
+nav {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	background-color: white;
+  }
+  
+  /* applied after scroll height reached */
+  .fixed-nav nav {
+	border-bottom: 1px gray solid;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+  }
+  @media screen and (max-width: 600px) {
+  body.fixed-nav a.icon {
+	position: absolute;
+	left: 1.7em;
+  }
+  }
 
 /*Big parts*/
 

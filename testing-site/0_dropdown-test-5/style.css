@@ -174,7 +174,7 @@ ul{
 	.menu{
 		display: block;
 		text-align: center;
-		padding: .5em 0;
+		padding: 1em 0;
 		position: relative;
 	}
 	.overlay .menu{
@@ -243,6 +243,9 @@ nav{
 	body.fixed-nav .menu .icon-title{
 		left: 1em;
 		position: absolute;
+	}
+	body.fixed-nav .menu{
+		padding: .5em 0;
 	}
 }
 

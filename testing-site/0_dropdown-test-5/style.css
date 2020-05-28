@@ -177,14 +177,15 @@ ul{
 	display: block;
 	text-align: center;
 	padding: 1em 0 .5em;
+	position: relative;
 }
 .overlay .menu {
 	padding: 1.5em 1em 1em;
 	border-bottom: 1px whitesmoke solid;
 }
 .menu .icon-title {
-	float: left;
 	display: block;
+	position: absolute;
 	padding: .1em 0 0 .3em;
 }
 .menu .nav-title {
@@ -195,10 +196,10 @@ ul{
 }
 .overlay .menu .close-title {
 	font-size: 2em;
-	float: right;
 	vertical-align: middle;
-	line-height: 0.85em;
-	padding-right: 5px;
+	line-height: 0.9em;
+	position: absolute;
+	right: .8em;
 }
 .overlay .menu .close-title a {
 text-decoration: none;

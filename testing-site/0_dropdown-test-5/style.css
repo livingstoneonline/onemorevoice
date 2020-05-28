@@ -14,31 +14,17 @@ nav {
   
   /* applied after scroll height reached */
   .fixed-nav nav {
+	border-bottom: 1px gray solid;
 	position: fixed;
 	top:0;
 	left:0;
 	z-index: 1;
-	border-bottom: 1px gray solid;
-	box-shadow: 0 4px 6px -6px #222;
-	-webkit-box-shadow: 0 4px 6px -6px #222;
-	-moz-box-shadow: 0 4px 6px -6px #222;
-
   }
   @media screen and (max-width: 600px) {
-  /*body.fixed-nav .menu-frame {
-	text-align: center;
-	margin: 0 auto;
-  }
   body.fixed-nav a.icon {
-	text-align: center;
-	margin: 0 auto;
-	padding: 0 2em;
-  }*/
+	position: absolute;
+	left: 1.7em;
   }
-  .tester {
-	  z-index: 1;
-	  position: absolute;
-	  left: 0;
   }
 
 /*Big parts*/
@@ -59,8 +45,8 @@ html{
 }
 body{
 	max-width: 38em;
-	margin: 0 auto;
-	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 .title,
 .footer{
@@ -144,7 +130,7 @@ ul{
 	display: block;
 	color: black;
 	text-align: center;
-	padding: 1em;
+	padding: 18px 16px;
 	text-decoration: underline;
 }
 .topnav ul {
@@ -167,7 +153,7 @@ ul{
 	border: none;
 	outline: none;
 	color: black;
-	padding: 1em;
+	padding: 18px 16px;
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
@@ -214,7 +200,6 @@ ul{
 	text-align: center;
 	padding: 1em 0 .5em;
 	position: relative;
-	margin: 0 auto;
 }
 .overlay .menu {
 	padding: 1.5em 1em 1em;
@@ -223,7 +208,7 @@ ul{
 .menu .icon-title {
 	display: block;
 	position: absolute;
-	padding: .1em 0 0 0;
+	padding: .1em 0 0 .3em;
 }
 .menu .nav-title {
 	font-size: 1.6em;
@@ -234,7 +219,7 @@ ul{
 .overlay .menu .close-title {
 	font-size: 2em;
 	vertical-align: middle;
-	line-height: 0.85em;
+	line-height: 0.9em;
 	position: absolute;
 	right: .8em;
 }

@@ -32,9 +32,11 @@ nav {
 		padding-top: 1em;
 		padding-bottom: .5em;*/
 	}
-	body.fixed-nav a.icon {
+	body.fixed-nav .menu .icon-title {
 		/*left: 0;
 		position: absolute;*/
+		float: left;
+		position: relative;
   	}
   }
   @media only screen and (max-width : 414px){

@@ -25,19 +25,26 @@ nav {
   }
   @media screen and (max-width: 600px) {
 	body.fixed-nav .menu {
-		position: relative;
+		/*display: inline-block;
 		text-align: center;
-		margin: 0 auto;
-		padding: 0 2.5em;
+		width: 100%;
+		position: relative;
+		padding-top: 1em;
+		padding-bottom: .5em;*/
 	}
 	body.fixed-nav a.icon {
-		left: 0;
-		position: absolute;
+		/*left: 0;
+		position: absolute;*/
   	}
   }
   @media only screen and (max-width : 414px){
 	body.fixed-nav .menu {
-		padding: 0 1.5em;
+		/*display: inline-block;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		padding-top: 1em;
+		padding-bottom: .5em;*/
 	}
   }
 
@@ -61,7 +68,6 @@ body {
 	max-width: 38em;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0;
 }
 .title,
 .footer{
@@ -213,8 +219,10 @@ ul{
 .menu {
 	display: block;
 	text-align: center;
-	padding: 1em 0 .5em;
-	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: .5em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
 	position: relative;
 }
 .overlay .menu {
@@ -224,7 +232,8 @@ ul{
 .menu .icon-title {
 	display: block;
 	position: absolute;
-	padding: .1em 0 0 0;/*change here to add bars padding */
+	left: 0;
+	padding-top: .1em;
 }
 .menu .nav-title {
 	font-size: 1.6em;

@@ -35,10 +35,8 @@ nav {
 		padding-bottom: .5em;*/
 	}
 	body.fixed-nav .menu .icon-title {
-		/*left: 0;
-		position: absolute;*/
-		float: left;
-		position: relative;
+		/*left: 0;*/
+		position: absolute;
   	}
   }
   @media only screen and (max-width : 414px){
@@ -60,7 +58,7 @@ html {
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	color: #191716;
-	padding: 0 1.5em 1em;
+	padding: 0 1em 1em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;

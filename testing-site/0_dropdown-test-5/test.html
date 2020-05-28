@@ -21,11 +21,13 @@
 	</script>    
 </head>
 <body>
-    
-	<div class="menu">
+
+    <nav id="navigation">    
+    <div class="menu">
         <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
 		<span class="nav-title">One More Voice</span>
-	</div>
+    </div>
+    </nav>
 
     <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
 	<div class="topnav">
@@ -120,6 +122,27 @@
         <hr />
         <p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="site_map.html">Site Map</a></p>
     </div>        
+
+<script>
+    const nav = document.querySelector('#navigation');
+const navTop = nav.offsetTop;
+
+function stickyNavigation() {
+  console.log('navTop = ' + navTop);
+  console.log('scrollY = ' + window.scrollY);
+
+  if (window.scrollY >= navTop) {
+    // nav offsetHeight = height of nav
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove('fixed-nav');
+  }
+}
+
+window.addEventListener('scroll', stickyNavigation);
+</script>
 
 </body>
 

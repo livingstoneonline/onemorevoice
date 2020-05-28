@@ -5,34 +5,33 @@
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
-nav {
+nav{
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 	background-color: white;
-  }
-  
-  /* applied after scroll height reached */
-  .fixed-nav nav {
+}
+/* applied after scroll height reached */
+.fixed-nav nav{
 	position: fixed;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	z-index: 1;
 	border-bottom: 1px gray solid;
 	box-shadow: 0 4px 6px -6px #222;
 	-webkit-box-shadow: 0 4px 6px -6px #222;
 	-moz-box-shadow: 0 4px 6px -6px #222;
-  }
-  @media screen and (max-width: 600px) {
-	body.fixed-nav .menu .icon-title {
+}
+@media screen and (max-width : 600px){
+	body.fixed-nav .menu .icon-title{
 		left: 1em;
 		position: absolute;
-  	}
-  }
+	}
+}
 
 /*Big parts*/
 
-html {
+html{
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	color: #191716;
@@ -46,7 +45,7 @@ html {
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 }
-body {
+body{
 	max-width: 38em;
 	margin-left: auto;
 	margin-right: auto;
@@ -110,22 +109,22 @@ ul{
 /*Dropdown Menu*/
 /* Adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 
-.header-title {
+.header-title{
 	display: block;
 }
 .menu,
 .nav-title,
-.icon-title {
+.icon-title{
 	display: none;
 }
-.topnav {
+.topnav{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background: white;
 	overflow: hidden;
 	padding-bottom: .5em;
 	display: inline;
-  }
-.topnav a {
+}
+.topnav a{
 	font-size: 1.1em;
 	font-weight: 600;
 	text-decoration: none;
@@ -136,7 +135,7 @@ ul{
 	padding: 1em;
 	text-decoration: underline;
 }
-.topnav ul {
+.topnav ul{
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -144,15 +143,15 @@ ul{
 .topnav li{
 	display: inline-block;
 }
-.topnav .dropdown {
+.topnav .dropdown{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	float: left;
 	overflow: hidden;
 }
-.topnav .dropdown .dropbtn {
+.topnav .dropdown .dropbtn{
 	font-size: 1.1em;
-	  font-weight: 600;
-	  text-decoration: none; 
+	font-weight: 600;
+	text-decoration: none;
 	border: none;
 	outline: none;
 	color: black;
@@ -161,17 +160,17 @@ ul{
 	font-family: inherit;
 	margin: 0;
 }
-.topnav .dropdown-content {
+.topnav .dropdown-content{
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
-.topnav .dropdown-content a {
+.topnav .dropdown-content a{
 	font-size: .9em;
-	background-color:  white;
+	background-color: white;
 	float: none;
 	color: black;
 	padding: 12px 16px;
@@ -179,80 +178,79 @@ ul{
 	display: block;
 	text-align: left;
 }
-.topnav a:hover, 
-.topnav .dropdown:hover .dropbtn
- {
+.topnav a:hover,
+.topnav .dropdown:hover .dropbtn{
 	color: black;
 	background-color: #dbdbdb;
 }
-.topnav .dropdown:hover {
+.topnav .dropdown:hover{
 	text-decoration: underline;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
 	display: block;
 	text-decoration: underline;
 }
 
-  
-@media screen and (max-width: 600px) {
-.header-title {
-	display: none;
-}
-.menu {
-	display: block;
-	text-align: center;
-	padding: .5em 0;
-	position: relative;
-}
-.overlay .menu {
-	padding: 1.5em 1em 1em;
-	border-bottom: 1px whitesmoke solid;
-}
-.menu .icon-title {
-	display: block;
-	position: absolute;
-	left: 0;
-	padding-top: .1em;
-}
-.menu .nav-title {
-	font-size: 1.6em;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-weight: 600;
-	display: block;
-}
-.overlay .menu .close-title {
-	font-size: 2em;
-	vertical-align: middle;
-	line-height: 0.85em;
-	position: absolute;
-	right: .8em;
-}
-.overlay .menu .close-title a {
-text-decoration: none;
-}
-.menu a.icon {
-	font-size: 1.5em;
-	color:black;
-	display: block;
-	margin-bottom: .5em;
-	border-top: none;
-}
-.menu a.icon:hover {
-	color: black;
-}
-.topnav a, 
-.topnav .dropdown .dropbtn {
-	display: none;
-}
+
+@media screen and (max-width : 600px){
+	.header-title{
+		display: none;
+	}
+	.menu{
+		display: block;
+		text-align: center;
+		padding: .5em 0;
+		position: relative;
+	}
+	.overlay .menu{
+		padding: 1em;
+		border-bottom: 1px whitesmoke solid;
+	}
+	.menu .icon-title{
+		display: block;
+		position: absolute;
+		left: 0;
+		padding-top: .1em;
+	}
+	.menu .nav-title{
+		font-size: 1.6em;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-weight: 600;
+		display: block;
+	}
+	.overlay .menu .close-title{
+		font-size: 2em;
+		vertical-align: middle;
+		line-height: 0.85em;
+		position: absolute;
+		right: .8em;
+	}
+	.overlay .menu .close-title a{
+		text-decoration: none;
+	}
+	.menu a.icon{
+		font-size: 1.5em;
+		color: black;
+		display: block;
+		margin-bottom: .5em;
+		border-top: none;
+	}
+	.menu a.icon:hover{
+		color: black;
+	}
+	.topnav a,
+	.topnav .dropdown .dropbtn{
+		display: none;
+	}
 }
 
 
 /*Overlay*/
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
- /* Height & width depends on how you want to reveal the overlay (see overlay.js) */    
- .overlay {
-	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* Height & width depends on how you want to reveal the overlay (see overlay.js) */
+.overlay{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: whitesmoke;
 	height: 100%;
 	width: 100%;
@@ -266,35 +264,36 @@ text-decoration: none;
 	overflow-x: hidden; /* Disable horizontal scroll */
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
-.overlay ul {
+.overlay ul{
 	list-style-type: none; /* Remove bullets */
 	padding: 0; /* Remove padding */
 	margin: 0; /* Remove margins */
 	line-height: 1.6em;
 }
-.overlay li {
+.overlay li{
 	padding: .8em 0;
 }
-.overlay li.section ul li {
+.overlay li.section ul li{
 	padding: .3em 0;
 }
-.overlay-content {
+.overlay-content{
 	position: relative;
 	top: 1em;
 	width: 100%;
 	text-align: center;
 	margin-top: 0;
 }
-.overlay a {
+.overlay a{
 	font-size: 1em;
 	color: whitesmoke;
 	text-decoration: underline;
 	transition: 0.3s; /* Transition effects on hover (color)*/
 }
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus{
 	text-decoration: underline;
 }
-  
+
 
 /*Headings & Lines*/
 

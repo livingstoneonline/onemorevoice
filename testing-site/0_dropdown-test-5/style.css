@@ -14,11 +14,14 @@ nav {
   
   /* applied after scroll height reached */
   .fixed-nav nav {
-	border-bottom: 1px gray solid;
 	position: fixed;
 	top:0;
 	left:0;
 	z-index: 1;
+	border-bottom: 1px gray solid;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
   }
   @media screen and (max-width: 600px) {
   body.fixed-nav a.icon {
@@ -29,7 +32,7 @@ nav {
 
 /*Big parts*/
 
-html{
+html {
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	color: #191716;
@@ -43,7 +46,7 @@ html{
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 }
-body{
+body {
 	max-width: 38em;
 	margin-left: auto;
 	margin-right: auto;
@@ -130,7 +133,7 @@ ul{
 	display: block;
 	color: black;
 	text-align: center;
-	padding: 18px 16px;
+	padding: 1em;
 	text-decoration: underline;
 }
 .topnav ul {
@@ -153,7 +156,7 @@ ul{
 	border: none;
 	outline: none;
 	color: black;
-	padding: 18px 16px;
+	padding: 1em;
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
@@ -219,7 +222,7 @@ ul{
 .overlay .menu .close-title {
 	font-size: 2em;
 	vertical-align: middle;
-	line-height: 0.9em;
+	line-height: 0.85em;
 	position: absolute;
 	right: .8em;
 }

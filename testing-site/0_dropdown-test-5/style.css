@@ -100,16 +100,6 @@ html{
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 }
-@media only screen and (max-width : 414px){
-	html{
-		font-size: 1.1em;
-	}
-}
-@media only screen and (max-width : 320px){
-	html{
-		font-size: 1.2em;
-	}
-}
 body{
 	max-width: 38em;
 	margin-left: auto;
@@ -136,9 +126,19 @@ body{
 }
 .main{
 	text-align: left;
-	line-height: 1.8em;
+	line-height: 1.6em;
 	margin-left: auto;
 	margin-right: auto;
+}
+@media only screen and (max-width : 414px){
+	.main{
+		font-size: 1.1em;
+	}
+}
+@media only screen and (max-width : 320px){
+	.main{
+		font-size: 1.2em;
+	}
 }
 .citation{
 	font-size: .9em;
@@ -238,12 +238,33 @@ body{
 	margin: 0;
 }
 .topnav li{
+	font-size: .9em;
+	background-color: #dbdbdb;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
 	display: inline-block;
-	/*padding: 1em;*/
+	/*min-width: 160px; 
+	display: block;
+	text-align: left;
+	float: none;
+	position: absolute;*/
+}
+.topnav li:hover{
+	color:whitesmoke;
+	background-color: #707070;
+}
+.topnav li a,
+.topnav li a:visited{
+	color: black;
+}
+
+.topnav li:link,
+.topnav li a:hover{
+	color:whitesmoke;
 }
 /**********************************/
 .dropdown{
-	color:whitesmoke;
+	/* color:whitesmoke; */
 	/*padding: 1em;*/
 	/*float: left;*/
 	/*overflow: hidden;*/
@@ -259,7 +280,6 @@ body{
 	/*margin: 0;*/
 }
 .dropdown-content{
-	color:black;
 	background-color: #f9f9f9;
 	z-index: 1;
 	/*font-size: .9em;*/
@@ -270,6 +290,7 @@ body{
 }
 
 /**********************************/
+
 
 /* .topnav a:hover{
 	color:whitesmoke;

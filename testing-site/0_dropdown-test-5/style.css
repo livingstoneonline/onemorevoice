@@ -257,6 +257,7 @@ body{
 	margin: 0;
 }
 .topnav ul li{
+	font-size: 1.1em;
 	padding: 12px 16px;
 	display: inline-block;
 }
@@ -282,8 +283,8 @@ body{
 }
 .topnav ul li .dropdown .dropdown-content ul {
 	position: absolute;
-	top: .75em;
-	left: -1em;
+	top: .7em;
+	left: -.9em;
 	text-align: left;
 	min-width: 140px;
 	z-index: 1;
@@ -301,7 +302,7 @@ body{
 .topnav ul li .dropdown .dropdown-content ul li:hover,
 .topnav ul li .dropdown .dropdown-content ul li:hover a{
 	color: whitesmoke;
-	background-color: #707070; /*dark gray*/
+	background-color: #858585; /*dark gray*/
 }
 .topnav ul li .dropdown .dropdown-content ul li a,
 .topnav ul li .dropdown .dropdown-content ul li a:visited {

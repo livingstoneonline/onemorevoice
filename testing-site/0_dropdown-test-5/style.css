@@ -226,9 +226,10 @@ body{
 }
 .topnav{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	background: white;
-	overflow: hidden;
-	padding-bottom: .5em;
+	/*background: white;*/
+	/*overflow: hidden;*/
+	margin: 0;
+	padding-bottom: 0;
 	/*display: inline;*/
 }
 .topnav a{
@@ -249,29 +250,33 @@ body{
 	display: block;
 	text-align: center;
 	list-style: none;
+	padding: 0 0 .5em 0;
+	margin: 0;
 }
 .topnav li{
 	display: inline-block;
+	padding: 1em;
 	/*display: inline-block;*/
 }
 .topnav .dropdown{
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	/*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
 	/*float: left;*/
 	/*overflow: hidden;*/
 }
 .topnav .dropdown .dropbtn{
 	font-size: 1.1em;
-	font-weight: 600;
-	text-decoration: none;
+	/*font-weight: 600;
+	text-decoration: none;*/
 	border: none;
 	outline: none;
-	color: black;
+	/*color: black;*/
 	/*padding: 1em;*/
-	background-color: inherit;
-	font-family: inherit;
+	/*background-color: inherit;*/
+	/*font-family: inherit;*/
 	/*margin: 0;*/
 }
 .topnav .dropdown-content{
+	font-size: .9em;
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
@@ -280,26 +285,25 @@ body{
 	z-index: 1;
 }
 .topnav .dropdown-content a{
-	font-size: .9em;
-	background-color: white;
+	/*background-color: white;*/
 	/*float: none;*/
-	color: black;
+	/*color: black;*/
 	/*padding: 12px 16px;*/
-	text-decoration: none;
+	/*text-decoration: none;*/
 	/*display: block;
 	text-align: left;*/
 }
 .topnav a:hover,
 .topnav .dropdown:hover .dropbtn{
-	color: black;
+	/*color: black;*/
 	background-color: #dbdbdb;
 }
 .topnav .dropdown:hover{
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 .dropdown:hover .dropdown-content{
 	/*display: block;*/
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 @media screen and (max-width : 600px){
 	.header-title{

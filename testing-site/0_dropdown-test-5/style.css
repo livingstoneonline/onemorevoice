@@ -1,3 +1,114 @@
+/** {
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+html {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin: 1rem;
+}*/
+
+.vh { 
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+ /*padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;*/
+  overflow: hidden;
+}
+
+[data-menu-component] {
+  position: relative;
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+}
+
+[role="menu"] ul {
+  list-style: none;
+  /*margin: 0;
+  padding: 0;*/
+}
+
+[data-opens-menu], [role="menu"] a {
+  /*line-height: 1;
+  text-align: left;
+  background: black;
+  border: 0;
+  color: #fff;
+  padding: 0.33rem 0.5rem;
+  text-decoration: none;*/
+}
+
+[type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
+  /*outline: none;
+  background: darkBlue;*/
+}
+
+:checked + label .expanded-text {
+  display: inline;
+}
+
+:checked + label .collapsed-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label .expanded-text {
+  display: none;
+}
+
+[type="checkbox"]:not(:checked) + label .collapsed-text {
+  display: inline;
+}
+
+[role="menu"] {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+:checked ~ [role="menu"] {
+  display: block;
+}
+
+/*[data-menu-origin="right"] {
+  left: auto;
+  right: 0;
+}*/
+
+[role="menu"] a {
+  display: block;
+  /*min-width: 100%;
+  margin-top: 0.125rem;*/
+  white-space: nowrap;
+}
+
+.dropbtn-1 {
+	font-size: 1.1em;
+	font-weight: 600;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	color: black;
+	padding: 1em;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content-1 {
+	background-color: #f9f9f9;
+	/*min-width: 160px;*/
+}
+
+
+
+
 /*CSS File for One More Voice (http://onemorevoice.org/)*/
 
 /*Created by Adrian S. Wisnicki*/
@@ -136,7 +247,7 @@ ul{
 .topnav .dropdown{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	float: left;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .topnav .dropdown .dropbtn{
 	font-size: 1.1em;

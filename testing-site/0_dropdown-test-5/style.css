@@ -230,13 +230,10 @@ body{
 }
 /**********************************/
 .topnav{
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 1.1em;
+	font: 16px  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
-	color: black;
 	/* margin: 0; */
 	/*padding-bottom: 0;*/
-	/*background: white;*/
 	/*overflow: hidden;*/
 	/*display: inline;*/
 }
@@ -245,23 +242,11 @@ body{
 		display: none;
 	}
 }
-.topnav a,
-.topnav a:visited{
-	color: black;
-	text-decoration: underline;
-	/*float: left;*/
-	/*display: block;*/
-	/*text-align: center;*/
-}
 @media screen and (max-width : 600px){
 	.topnav a,
 	.topnav a:visited{
 		display: none;
 	}
-}
-.topnav li:hover a,
-.topnav li a:hover{
-	color:whitesmoke;
 }
 /**********************************/
 .topnav ul{
@@ -271,37 +256,17 @@ body{
 	padding: 0 0 .5em 0;
 	margin: 0;
 }
-.topnav li{
+.topnav ul li{
 	padding: 12px 16px;
 	display: inline-block;
 }
-.topnav li:hover{
-	background-color: #707070;
-}
-
 /**********************************/
-li .dropdown{
-	/* color:whitesmoke; */
-	/*padding: 1em;*/
-	/*float: left;*/
-	/*overflow: hidden;*/
-}
-li .dropbtn {
-	text-decoration: none;
+
+.topnav ul li .dropdown label .dropbtn {
 	border: none;
 	outline: none;
-	color: black;
-	/*padding: 1em;*/
-	/*margin: 0;*/
 }
-li:hover .dropbtn,
-li .dropbtn:hover{
-	color: whitesmoke;
-	background-color: #707070;
-}
-li .dropdown-content{
-	color: black;
-	background-color: #dbdbdb;
+.topnav ul li .dropdown .dropdown-content{
 	z-index: 1;
 	/*font-size: .9em;*/
 	/*display: none;*/
@@ -309,50 +274,13 @@ li .dropdown-content{
 	/*min-width: 160px;*/
 	/*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
 }
-li .dropdown-content ul{
-}
-li .dropdown-content ul li{
-}
-/**********************************/
-/*li li{
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	min-width: 160px; 
-	display: block;
-	text-align: left;
-	float: none;
-	position: absolute;*/
-
-/*.topnav li a,
-.topnav li a:visited{
+.topnav ul li .dropdown .dropdown-content ul li a,
+.topnav ul li .dropdown .dropdown-content ul li a:visited {
 	color: black;
 }
-.topnav li a:hover{
-}*/
-/**********************************/
-/* 
-.topnav li:hover a{
-	color:whitesmoke;
-} 
-.topnav a:hover{
-	color:whitesmoke;
-	background-color: #424242;
-	margin:0;
-	padding: 1em;
-	background-color: #dbdbdb;
-	float: none;
-	display: block;
-	text-align: left;
-} */
-/* .dropdown:hover {
-	color:whitesmoke;
-	background-color: #424242;
-	padding: 1em;
-} */
-/* .dropdown-content li:hover{
-	color:whitesmoke;
-	background-color: #424242;
-} */
-
+.topnav ul li .dropdown .dropdown-content ul li a:hover {
+	color: whitesmoke;
+}
 
 /* Mobile Fixed Nav*/
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */

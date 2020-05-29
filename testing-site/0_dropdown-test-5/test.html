@@ -21,6 +21,10 @@
 </head>
 <body>
 
+
+
+
+
 	<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
     <nav id="navigation">    
     <div class="menu">
@@ -30,6 +34,7 @@
     </nav>
 
     <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menus adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 	<div class="topnav">
         <ul>
             <li><a href="index.html">home</a></li>
@@ -58,6 +63,25 @@
                             <a href="mailto:awisnicki@yahoo.com">contact</a>
                     </div>
                 </div>
+            </li>
+            <li>
+            <li>
+            <div data-menu-component>
+                <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+                <label for="toggle" data-opens-menu>
+                    &#x2630; Menu
+                    <span class="vh expanded-text">expanded</span>
+                    <span class="vh collapsed-text">collapsed</span>
+                </label>
+                <div role="menu" data-menu-origin="left">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            </li>
             </li>
         </ul>
     </div>

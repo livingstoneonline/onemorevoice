@@ -76,32 +76,6 @@ label {
   white-space: nowrap;
 }
 
-.dropbtn-1 {
-	text-decoration: none;
-	border: none;
-	outline: none;
-	color: black;
-	/*padding: 1em;*/
-	background-color: inherit;
-	font-family: inherit;
-	/*margin: 0;*/
-}
-
-.dropdown:hover {
-	color:whitesmoke;
-	background-color: #424242;
-	padding: 1em;
-}
-
-.dropdown-content-1 {
-	font-size: .8em;
-	background-color: #f9f9f9;
-	/*min-width: 160px;*/
-}
-
-
-
-
 
 /* CSS File for One More Voice (http://onemorevoice.org/) */
 
@@ -277,15 +251,25 @@ body{
 	/*float: left;*/
 	/*overflow: hidden;*/
 }
-.topnav .dropdown .dropbtn{
+.topnav .dropdown:hover {
+	color:whitesmoke;
+	background-color: #424242;
+	padding: 1em;
+}
+.topnav .dropbtn {
+	text-decoration: none;
 	border: none;
 	outline: none;
+	color: black;
+	/*padding: 1em;*/
+	background-color: inherit;
+	font-family: inherit;
 	/*margin: 0;*/
 }
 .topnav .dropdown-content{
 	font-size: .9em;
-	display: none;
-	position: absolute;
+	/*display: none;*/
+	/*position: absolute;*/
 	background-color: #f9f9f9;
 	/*min-width: 160px;*/
 	/*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/

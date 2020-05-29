@@ -100,9 +100,14 @@ html{
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
 }
+@media only screen and (max-width : 414px){
+	html{
+		font-size: 1.1em;
+	}
+}
 @media only screen and (max-width : 320px){
 	html{
-		font-size: .9em;
+		font-size: 1.2em;
 	}
 }
 body{
@@ -341,6 +346,10 @@ body{
 	}
 	.menu a.icon:hover{
 		color: black;
+	}
+	body.fixed-nav .menu .nav-title,
+	body.fixed-nav .menu a.icon{
+		color:#707070;	
 	}
 }
 @media only screen and (max-width : 320px){

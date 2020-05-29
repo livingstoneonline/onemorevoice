@@ -231,7 +231,8 @@ body{
 		display: none;
 	}
 }
-.topnav a{
+.topnav a,
+.topnav a:visited{
 	color: black;
 	text-decoration: underline;
 	/*float: left;*/
@@ -239,9 +240,17 @@ body{
 	/*text-align: center;*/
 }
 @media screen and (max-width : 600px){
-	.topnav a{
+	.topnav a,
+	.topnav a:visited{
 		display: none;
 	}
+}
+.topnav a:hover{
+	color:black;
+	background-color: #dbdbdb;
+	/*float: none;*/
+	/*display: block;
+	text-align: left;*/
 }
 .topnav ul{
 	font-size: 1.1em;
@@ -273,15 +282,6 @@ body{
 	/*min-width: 160px;*/
 	/*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
 	z-index: 1;
-}
-.topnav a:hover,
-.topnav .dropdown:hover .dropbtn
-.topnav .dropdown-content:hover,
-.topnav .dropdown-content a:hover{
-	background-color: #dbdbdb;
-	/*float: none;*/
-	/*display: block;
-	text-align: left;*/
 }
 
 

@@ -22,15 +22,15 @@ html {
 
 [data-menu-component] {
   position: relative;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 label {
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 [role="menu"] ul {
-  list-style: none;
+  /*list-style: none;*/
   /*margin: 0;
   padding: 0;*/
 }
@@ -47,7 +47,7 @@ label {
 
 [type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
   outline: none;
-  background: darkBlue;
+  background: #dbdbdb;
 }
 
 :checked + label .expanded-text {
@@ -95,10 +95,10 @@ label {
 	border: none;
 	outline: none;
 	color: black;
-	padding: 1em;
+	/*padding: 1em;*/
 	background-color: inherit;
 	font-family: inherit;
-	margin: 0;
+	/*margin: 0;*/
 }
 
 .dropdown:hover {
@@ -194,7 +194,7 @@ body{
 .image-border{
 	border: 1px solid gray;
 }
-ul{
+/*ul{
 	padding-left: 18px;
 	padding-bottom: 1em;
 }
@@ -210,7 +210,7 @@ ul{
 	padding-bottom: 0em;
 	margin-bottom: 1em;
 	margin-top: 0em;
-}
+}*/
 
 
 /*Dropdown Menu*/
@@ -229,30 +229,34 @@ ul{
 	background: white;
 	overflow: hidden;
 	padding-bottom: .5em;
-	display: inline;
+	/*display: inline;*/
 }
 .topnav a{
 	font-size: 1.1em;
 	font-weight: 600;
 	text-decoration: none;
-	float: left;
-	display: block;
+	/*float: left;*/
+	/*display: block;*/
 	color: black;
-	text-align: center;
-	padding: 1em;
+	/*text-align: center;*/
+	/*padding: 1em;*/
 	text-decoration: underline;
 }
 .topnav ul{
-	text-align: center;
+	/*text-align: center;
 	padding: 0;
-	margin: 0;
+	margin: 0;*/
+	display: block;
+	text-align: center;
+	list-style: none;
 }
 .topnav li{
 	display: inline-block;
+	/*display: inline-block;*/
 }
 .topnav .dropdown{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	float: left;
+	/*float: left;*/
 	/*overflow: hidden;*/
 }
 .topnav .dropdown .dropbtn{
@@ -262,28 +266,28 @@ ul{
 	border: none;
 	outline: none;
 	color: black;
-	padding: 1em;
+	/*padding: 1em;*/
 	background-color: inherit;
 	font-family: inherit;
-	margin: 0;
+	/*margin: 0;*/
 }
 .topnav .dropdown-content{
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	/*min-width: 160px;*/
+	/*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
 	z-index: 1;
 }
 .topnav .dropdown-content a{
 	font-size: .9em;
 	background-color: white;
-	float: none;
+	/*float: none;*/
 	color: black;
-	padding: 12px 16px;
+	/*padding: 12px 16px;*/
 	text-decoration: none;
-	display: block;
-	text-align: left;
+	/*display: block;
+	text-align: left;*/
 }
 .topnav a:hover,
 .topnav .dropdown:hover .dropbtn{
@@ -294,7 +298,7 @@ ul{
 	text-decoration: underline;
 }
 .dropdown:hover .dropdown-content{
-	display: block;
+	/*display: block;*/
 	text-decoration: underline;
 }
 @media screen and (max-width : 600px){

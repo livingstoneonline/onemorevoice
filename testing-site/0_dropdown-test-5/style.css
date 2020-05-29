@@ -145,14 +145,44 @@ body{
 	line-height: 1.6em;
 	padding-top: 1em;
 }
+@media only screen and (max-width : 414px){
+	.citation{
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width : 320px){
+	.citation{
+		font-size: 1.1em;
+	}
+}
 .caption{
 	font-size: .9em;
 	line-height: 1.6em;
+}
+@media only screen and (max-width : 414px){
+	.caption{
+		font-size: 1em;
+	}
+}
+@media only screen and (max-width : 320px){
+	.caption{
+		font-size: 1.1em;
+	}
 }
 .footer{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	font-size: .85em;
 	padding-top: 1em;
+}
+@media only screen and (max-width : 414px){
+	.footer{
+		font-size: .95em;
+	}
+}
+@media only screen and (max-width : 320px){
+	.footer{
+		font-size: 1.05em;
+	}
 }
 .image{
 	margin-left: auto;

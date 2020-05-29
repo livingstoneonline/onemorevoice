@@ -130,12 +130,12 @@ html{
 	padding: 0 1em 1em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
-	word-break: break-word;
+/*	word-break: break-word;
 	hyphens: auto;
 	-ms-word-break: break-all;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
+	-webkit-hyphens: auto;*/
 }
 @media only screen and (max-width : 320px){
 	html{
@@ -305,9 +305,30 @@ body{
 	/*display: block;*/
 	/*text-decoration: underline;*/
 }
+
+
+/* Mobile Fixed Nav*/
+/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 @media screen and (max-width : 600px){
-	.header-title{
+	.topnav, .header-title{
 		display: none;
+	}
+	nav{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		background-color: white;
+	}
+	/* applied after scroll height reached */
+	.fixed-nav nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		border-bottom: 1px gray solid;
+		box-shadow: 0 4px 6px -6px #222;
+		-webkit-box-shadow: 0 4px 6px -6px #222;
+		-moz-box-shadow: 0 4px 6px -6px #222;
 	}
 	.menu{
 		display: block;
@@ -315,9 +336,8 @@ body{
 		padding: 1em 0;
 		position: relative;
 	}
-	.overlay .menu{
-		padding: 1.5em 0 1em 0;
-		border-bottom: 1px whitesmoke solid;
+	body.fixed-nav .menu{
+		padding: .5em 0;
 	}
 	.menu .icon-title{
 		display: block;
@@ -325,21 +345,15 @@ body{
 		left: 0;
 		padding-top: .2em;
 	}
+	body.fixed-nav .menu .icon-title{
+		left: 1em;
+		position: absolute;
+	}
 	.menu .nav-title{
 		font-size: 1.7em;
 		font-family: Georgia, 'Times New Roman', Times, serif;
 		font-weight: 600;
 		display: block;
-	}
-	.overlay .menu .close-title{
-		font-size: 2em;
-		vertical-align: middle;
-		line-height: 0.8em;
-		position: absolute;
-		right: .8em;
-	}
-	.overlay .menu .close-title a{
-		text-decoration: none;
 	}
 	.menu a.icon{
 		font-size: 1.5em;
@@ -351,11 +365,6 @@ body{
 	.menu a.icon:hover{
 		color: black;
 	}
-	.topnav,
-	.topnav a,
-	.topnav .dropdown .dropbtn{
-		display: none;
-	}
 }
 @media only screen and (max-width : 320px){
 	.menu .icon-title{
@@ -364,50 +373,14 @@ body{
 	.menu .nav-title{
 		font-size: 1.6em;
 	}
-	.overlay .menu .close-title{
-		line-height: 0.80em;
-	}
 }
-/* The following is an imaginary breakpoint for users with very small phones. */
-@media only screen and (max-width : 250px){
+/* The following is a breakpoint for imaginary users with very small phones. */
+@media only screen and (max-width : 270px){
 	.menu .icon-title{
 		margin-top: -.1em;
 	}
 	.menu .nav-title{
 		font-size: 1.4em;
-	}
-	.overlay .menu .close-title{
-		line-height: 0.75em;
-	}
-}
-
-
-/* Mobile Fixed Nav*/
-/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
-nav{
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
-	background-color: white;
-}
-/* applied after scroll height reached */
-.fixed-nav nav{
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	border-bottom: 1px gray solid;
-	box-shadow: 0 4px 6px -6px #222;
-	-webkit-box-shadow: 0 4px 6px -6px #222;
-	-moz-box-shadow: 0 4px 6px -6px #222;
-}
-@media screen and (max-width : 600px){
-	body.fixed-nav .menu .icon-title{
-		left: 1em;
-		position: absolute;
-	}
-	body.fixed-nav .menu{
-		padding: .5em 0;
 	}
 }
 
@@ -416,6 +389,7 @@ nav{
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
+@media screen and (max-width : 600px){
 .overlay{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: whitesmoke;
@@ -459,6 +433,32 @@ nav{
 .overlay a:hover,
 .overlay a:focus{
 	text-decoration: underline;
+}
+.overlay .menu{
+	padding: 1.5em 0 1em 0;
+	border-bottom: 1px whitesmoke solid;
+}
+.overlay .menu .close-title{
+	font-size: 2em;
+	vertical-align: middle;
+	line-height: 0.8em;
+	position: absolute;
+	right: .8em;
+}
+.overlay .menu .close-title a{
+	text-decoration: none;
+}
+}
+@media only screen and (max-width : 320px){
+	.overlay .menu .close-title{
+		line-height: 0.80em;
+	}
+}
+/* The following is a breakpoint for imaginary users with very small phones. */
+@media only screen and (max-width : 270px){
+	.overlay .menu .close-title{
+		line-height: 0.75em;
+	}
 }
 
 

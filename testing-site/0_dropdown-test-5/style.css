@@ -13,7 +13,7 @@ html {
 .vh { 
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
- /*padding:0 !important;
+/*padding:0 !important;
   border:0 !important;
   height: 1px !important;
   width: 1px !important;*/
@@ -46,8 +46,8 @@ label {
 }
 
 [type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
-  /*outline: none;
-  background: darkBlue;*/
+  outline: none;
+  background: darkBlue;
 }
 
 :checked + label .expanded-text {
@@ -101,10 +101,16 @@ label {
 	margin: 0;
 }
 
+.dropdown:hover {
+background-color: #dbdbdb;
+}
+
 .dropdown-content-1 {
+	font-size: .8em;
 	background-color: #f9f9f9;
 	/*min-width: 160px;*/
 }
+
 
 
 

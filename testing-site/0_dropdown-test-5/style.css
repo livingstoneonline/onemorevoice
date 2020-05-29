@@ -130,12 +130,12 @@ html{
 	padding: 0 1em 1em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
-/*	word-break: break-word;
+	word-break: break-word;
 	hyphens: auto;
 	-ms-word-break: break-all;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
-	-webkit-hyphens: auto;*/
+	-webkit-hyphens: auto;
 }
 @media only screen and (max-width : 320px){
 	html{
@@ -305,12 +305,17 @@ body{
 	/*display: block;*/
 	/*text-decoration: underline;*/
 }
+.overlay-content{
+	display: none;
+}
 
 
 /* Mobile Fixed Nav*/
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 @media screen and (max-width : 600px){
-	.topnav, .header-title{
+	.topnav,
+	.topnav a,
+	.header-title{
 		display: none;
 	}
 	nav{

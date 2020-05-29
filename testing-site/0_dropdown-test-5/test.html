@@ -35,6 +35,23 @@
             <li><a href="index.html">home</a></li>
             <li><a href="texts.html">texts</a></li>
             <li>
+                <div data-menu-component class="dropdown">
+                    <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+                    <label for="toggle" data-opens-menu class="dropbtn-1">
+                      <!--&#x2630; Menu-->concepts <i class="fa fa-caret-down"></i>
+                      <span class="vh expanded-text">expanded</span>
+                      <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div role="menu" data-menu-origin="left" class="dropdown-content-1">
+                      <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </li>
+            <li>
                 <div class="dropdown">
                     <button class="dropbtn">concepts
     					<i class="fa fa-caret-down"></i>

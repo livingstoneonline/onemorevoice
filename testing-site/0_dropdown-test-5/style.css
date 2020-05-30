@@ -1,3 +1,10 @@
+/*:checked ~ [class="dropbtn"]:not(:hover){
+	color: black !important;
+	background: none !important;
+}*/
+/*:checked ~ [class="dropdown-content"]:not(:hover){
+}*/
+
 .vh { 
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -33,9 +40,8 @@ label {
   text-decoration: none;*/
 }
 
-[type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
-  outline: none;
-  background: #dbdbdb;
+[type="checkbox"]:focus + [data-opens-menu], 
+[role="menu"] a:focus {
 }
 
 :checked + label .expanded-text {

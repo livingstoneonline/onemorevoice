@@ -69,8 +69,7 @@ body{
 
 .title{
 	/*padding-left: 0.3em;
-	padding-right: 0.3em;
-	font-style: normal; */
+	padding-right: 0.3em;*/
 }
 .title img{
 	border: 1px solid gray;
@@ -116,9 +115,7 @@ body{
 	text-align: left;
 	/*white-space:normal;*/
 }
-/* .footer{
-	text-align: center;
-} */
+
 
 
 /* 3. pb, lb, linenumber */
@@ -182,7 +179,6 @@ p.right .linenumber{
 	background: #FFF;
 	height: 0;
 	padding: 0px;
-	/*also see omv-journal.css*/
 }
 .journal .milestone{
 	width: 100%;
@@ -198,11 +194,9 @@ p.right .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	/*also see omv-ms.css*/
 }
 .doubleline{
 	border-top: 4px double #8c8b8b;
-	/*also see omv-ms.css*/
 }
 .quarterline.doubleline{
 	width: 10em;
@@ -211,7 +205,6 @@ p.right .linenumber{
 .tripleline{
 	line-height: 1.9em;
 	border-top: 4px double #8c8b8b;
-	/*also see omv-ms.css*/
 }
 .halfline{
 	border-bottom: 1px solid #d0d0d0;
@@ -244,14 +237,12 @@ p.right .linenumber{
 	border-top: 1px solid #58484b;
 	margin-top: -1em;
 	margin-bottom: 0em;
-	/*also see omv-ms.css*/
 }
 .third-line{
 	margin-top: 1.5em;
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	/*also see omv-ms.css*/
 }
 .title-hr{
 	max-width: 33em;
@@ -301,8 +292,6 @@ p.right .linenumber{
 	text-align: center;
 	line-height: 1.3em;
 	margin-bottom: .5em;
-	/*also see omv-ms.css*/
-	/*also see omv-journal.css*/
 }
 .manuscript .fw{
 	display: inline;

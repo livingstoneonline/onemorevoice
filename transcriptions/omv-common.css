@@ -372,9 +372,6 @@ p.right .linenumber{
 
 /* 8. @rend classes (except colors, lines, and up-down placement) */
 
-.bold{
-	font-weight: 600;
-}
 .caps{
 	font-variant: small-caps;
 }
@@ -400,9 +397,6 @@ p.right .linenumber{
 .indent{
 	text-indent: 25px;
 }
-.italic{
-	font-style: italic;
-}
 .large{
 	font-size: 1.3em;
 }
@@ -422,15 +416,6 @@ p.right .linenumber{
 }
 .journal .right{
 	float: right;
-}
-.small{
-	font-size: .85em;
-}
-.smallcaps{
-	font-variant: small-caps;
-}
-.underline{
-	text-decoration: underline;
 }
 .upsidedown{
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */

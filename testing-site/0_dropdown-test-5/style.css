@@ -1,12 +1,3 @@
-
-[type="checkbox"]:focus + [data-opens-menu], 
-[role="menu"] a:focus {
-}
-
-
-
-
-
 /* CSS File for One More Voice (http://onemorevoice.org/) */
 
 /* Created by Adrian S. Wisnicki */
@@ -262,6 +253,9 @@ ul{
 .topnav ul li .dropdown .dropdown-content ul li a:hover {
 	color: whitesmoke;
 }
+/* The following may be worth reviewing */
+/*[type="checkbox"]:focus + [data-opens-menu], 
+[role="menu"] a:focus {}*/
 
 
 /* Mobile Fixed Nav*/

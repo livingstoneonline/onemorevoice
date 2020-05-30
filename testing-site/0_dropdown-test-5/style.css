@@ -1,44 +1,3 @@
-/*:checked ~ [class="dropbtn"]:not(:hover){
-	color: black !important;
-	background: none !important;
-}*/
-/*:checked ~ [class="dropdown-content"]:not(:hover){
-}*/
-
-.vh { 
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-/*padding:0 !important;
-  border:0 !important;
-  height: 1px !important;
-  width: 1px !important;*/
-  overflow: hidden;
-}
-
-[data-menu-component] {
-  position: relative;
-  /*display: inline-block;*/
-}
-
-label {
-  display: inline-block;
-}
-
-[role="menu"] ul {
-  /*list-style: none;*/
-  /*margin: 0;
-  padding: 0;*/
-}
-
-[data-opens-menu], [role="menu"] a {
-  /*line-height: 1;
-  text-align: left;
-  background: black;
-  border: 0;
-  color: #fff;
-  padding: 0.33rem 0.5rem;
-  text-decoration: none;*/
-}
 
 [type="checkbox"]:focus + [data-opens-menu], 
 [role="menu"] a:focus {
@@ -70,15 +29,10 @@ label {
   display: block;
 }
 
-/*[data-menu-origin="right"] {
-  left: auto;
-  right: 0;
-}*/
+
 
 [role="menu"] a {
   display: block;
-  /*min-width: 100%;
-  margin-top: 0.125rem;*/
   white-space: nowrap;
 }
 
@@ -217,9 +171,9 @@ body{
 }*/
 
 
-/* Dropdown Menu */
-/* Adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
-
+/* Navbar */
+/* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+/* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
 .menu,
 .nav-title,
 .icon-title,
@@ -234,7 +188,6 @@ body{
 		display: none;
 	}
 }
-/**********************************/
 .topnav{
 	font: 16px  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
@@ -254,7 +207,6 @@ body{
 		display: none;
 	}
 }
-/**********************************/
 .topnav ul{
 	display: block;
 	text-align: center;
@@ -278,6 +230,14 @@ body{
 .topnav ul li a:hover{
 	color: whitesmoke;
 	background-color: #424242;
+}
+.topnav ul li .dropdown .vh{
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+.topnav ul li .dropdown label{
+	display: inline-block;
 }
 .topnav ul li .dropdown label.dropbtn{
 	padding: 16px 12px;
@@ -315,6 +275,8 @@ body{
 .topnav ul li .dropdown .dropdown-content ul li a:hover {
 	color: whitesmoke;
 }
+
+
 
 /* Mobile Fixed Nav*/
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */

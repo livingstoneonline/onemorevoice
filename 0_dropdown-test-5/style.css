@@ -151,7 +151,7 @@ ul{
 	}
 }
 .topnav{
-	font: 16px  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
 }
 @media screen and (max-width : 600px){
@@ -197,47 +197,48 @@ ul{
 .topnav ul li .dropdown label{
 	display: inline-block;
 }
-label::after, a::after {
+label::after,
+a::after{
 	font-family: 'FontAwesome';
- }
- label::after {
-	 content: '\f0da'; /* closed folder */
- }
- input:checked + label::after {
-	 content: '\f0d7'; /* open folder */
- }
+}
+label::after{
+	content: '\f0da'; /* closed folder */
+}
+input:checked + label::after{
+	content: '\f0d7'; /* open folder */
+}
 .topnav ul li .dropdown label.dropbtn{
 	padding: 16px 12px;
 	border: none;
 	outline: none;
 }
-[type="checkbox"]:checked + label {
+[type="checkbox"]:checked + label{
 	color: whitesmoke;
 	background-color: #424242; /*dark brown*/
 }
-:checked + label .expanded-text {
+:checked + label .expanded-text{
 	display: inline;
 }
-:checked + label .collapsed-text {
+:checked + label .collapsed-text{
 	display: none;
 }
-[type="checkbox"]:not(:checked) + label .expanded-text {
+[type="checkbox"]:not(:checked) + label .expanded-text{
 	display: none;
 }
-[type="checkbox"]:not(:checked) + label .collapsed-text {
+[type="checkbox"]:not(:checked) + label .collapsed-text{
 	display: inline;
 }
-.dropdown-content {
+.dropdown-content{
 	display: none;
 }
-:checked ~ .dropdown-content {
+:checked ~ .dropdown-content{
 	display: block;
 }
-.dropdown-content a {
+.dropdown-content a{
 	white-space: nowrap;
 	display: block;
 }
-.topnav ul li .dropdown .dropdown-content ul {
+.topnav ul li .dropdown .dropdown-content ul{
 	text-align: left;
 	min-width: 140px;
 	padding: 0;
@@ -258,10 +259,10 @@ label::after, a::after {
 	background-color: #858585; /*dark gray*/
 }
 .topnav ul li .dropdown .dropdown-content ul li a,
-.topnav ul li .dropdown .dropdown-content ul li a:visited {
+.topnav ul li .dropdown .dropdown-content ul li a:visited{
 	color: black;
 }
-.topnav ul li .dropdown .dropdown-content ul li a:hover {
+.topnav ul li .dropdown .dropdown-content ul li a:hover{
 	color: whitesmoke;
 }
 /* The following may be worth reviewing */
@@ -326,7 +327,7 @@ label::after, a::after {
 	}
 	body.fixed-nav .menu .nav-title,
 	body.fixed-nav .menu a.icon{
-		color:#707070;	
+		color: #707070;
 	}
 }
 @media only screen and (max-width : 320px){
@@ -367,7 +368,7 @@ label::after, a::after {
 		overflow-x: hidden; /* Disable horizontal scroll */
 		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 	}
-	.overlay-content{	
+	.overlay-content{
 		text-align: center;
 		margin-top: 0;
 		width: 100%;
@@ -387,7 +388,8 @@ label::after, a::after {
 	.overlay li.section ul li{
 		padding: .3em 0;
 	}
-	.overlay a{
+	.overlay a,
+	.overlay a:visited{
 		font-size: 1em;
 		color: whitesmoke;
 		text-decoration: underline;

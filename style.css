@@ -4,8 +4,20 @@
 
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
+/* 
+Table of Contents
+-----------------
+1. Main Components 
+2. Navbar
+3. Mobile Fixed Nav
+4. Overlay
+5. Headings & Lines
+6. Formatting
+7. Links
+*/
 
-/* Main components */
+
+/* 1. Main Components */
 
 html{
 	font: 16px Georgia, 'Times New Roman', Times, serif;
@@ -133,7 +145,7 @@ ul{
 /*review above 4 elements*/
 
 
-/* Navbar */
+/* 2. Navbar */
 /* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
 .menu,
@@ -270,7 +282,7 @@ input:checked + label::after{
 [role="menu"] a:focus {}*/
 
 
-/* Mobile Fixed Nav*/
+/* 3. Mobile Fixed Nav */
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 @media screen and (max-width : 600px){
 	nav{
@@ -348,7 +360,7 @@ input:checked + label::after{
 	}
 }
 
-/* Overlay */
+/* 4. Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
@@ -427,7 +439,7 @@ input:checked + label::after{
 }
 
 
-/* Headings & Lines */
+/* 5. Headings & Lines */
 
 h1{
 	font-size: 2.1em;
@@ -480,7 +492,7 @@ hr{
 }
 
 
-/* Formatting */
+/* 6. Formatting */
 
 .big{
 	font-size: 1.1em;
@@ -524,7 +536,7 @@ hr{
 }
 
 
-/* Links */
+/* 7. Links */
 
 a,
 a:visited{

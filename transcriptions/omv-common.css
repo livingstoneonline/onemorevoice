@@ -99,6 +99,17 @@ body{
 	float: left;
 	clear: both;
 }
+/* review the following two items */
+@media only screen and (max-width : 414px){
+	.texts{
+		font-size: .85em;
+	}
+}
+@media only screen and (max-width : 320px){
+	.texts{
+		font-size: .8em;
+	}
+}
 .texts-bottom{
 	font-size: .9em;
 	font-weight: 300;
@@ -115,7 +126,44 @@ body{
 	text-align: left;
 	/*white-space:normal;*/
 }
-
+@media only screen and (max-width : 703px){
+	.omv-title{
+		display: none;
+	}
+}
+@media only screen and (max-width : 414px){
+	.omv-title{
+		display: none;
+	}
+}
+@media only screen and (max-width : 320px){
+	.omv-title{
+		display: none;
+	}
+}
+.omv-subtitle{
+	display: none;
+}
+@media only screen and (max-width : 768px){
+	.omv-subtitle{
+		display: none;
+	}
+}
+@media only screen and (max-width : 703px){
+	.omv-subtitle{
+		display: block;
+	}
+}
+@media only screen and (max-width : 414px){
+	.omv-subtitle{
+		display: block;
+	}
+}
+@media only screen and (max-width : 320px){
+	.omv-subtitle{
+		display: block;
+	}
+}
 
 
 /* 3. pb, lb, linenumber */
@@ -249,10 +297,24 @@ p.right .linenumber{
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
+@media only screen and (max-width : 703px){
+	.narrow-hr{
+		width: 50%;
+	}
+}
+@media only screen and (max-width : 414px){
+	.narrow-hr{
+		width: 60%;
+	}
+}
+@media only screen and (max-width : 320px){
+	.narrow-hr{
+		width: 70%;
+	}
+}
 
 
-
-/* 5. h1-3, p, ab, head, note, fw, column break, footnotes */
+/* 5. p, ab, head, note, fw, column break, footnotes */
 
 .p{
 	display: inline-block;

@@ -125,9 +125,16 @@ body{
 .image-border{
 	border: 1px solid gray;
 }
+ol, 
 ul{
-	padding-left: 18px;
+	padding-left: 1.5em;
 	padding-bottom: 1em;
+}
+@media only screen and (max-width : 414px){
+	ol,
+	ul{
+		padding-left: 1em;
+	}
 }
 /* The following four items are used on the text.html page. */
 .p-list{

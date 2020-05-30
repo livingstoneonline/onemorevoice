@@ -23,6 +23,12 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 *************
 *************
 *************
+/*:checked ~ [class="dropbtn"]:not(:hover){
+	color: black !important;
+	background: none !important;
+}*/
+/*:checked ~ [class="dropdown-content"]:not(:hover){
+}*/
 /*.topnav ul li:hover > a,
 .topnav ul li a.hovered {
 	background-color: #424242;*/ /*dark brown*/

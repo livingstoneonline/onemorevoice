@@ -205,7 +205,7 @@
 		    </div>
 			       
 			<div class="title"> 
-			    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+			    <img class="image" src="http://livingstoneonline.github.io/onemorevoice/images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
         		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1 class="header-title">One More Voice</h1></div>
         		<hr/>
         		<div><span class="texts omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>

@@ -254,8 +254,8 @@
 				<p class="texts-bottom"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-				<xsl:value-of select="$additional-authors-2"/><xsl:text>. "</xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>." </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+				<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
+				<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 				<p class="item-spec"><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html
@@ -264,7 +264,7 @@
 			
 			<div class="footer">
             	<hr />
-				<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="../site_map.html">Site Map</a> | Design / Sysadmin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln)</p>
+				<p>Copyright 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="../site_map.html">Site Map</a> | Site design &amp; administration: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln)</p>
         	</div>
 			
 		</div>

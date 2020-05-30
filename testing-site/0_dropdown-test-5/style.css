@@ -232,7 +232,9 @@ ul{
 	text-align: left;
 	min-width: 140px;
 	padding: 0;
-	box-shadow: 1px 1px #888888;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
 	z-index: 1;
 	position: absolute;
 }
@@ -262,10 +264,10 @@ ul{
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 @media screen and (max-width : 600px){
 	nav{
-		width: 100%;
 		text-align: center;
-		margin: 0 auto;
 		background-color: white;
+		width: 100%;
+		margin: 0 auto;
 	}
 	/* applied after scroll height reached */
 	.fixed-nav nav{
@@ -279,19 +281,19 @@ ul{
 		-moz-box-shadow: 0 4px 6px -6px #222;
 	}
 	.menu{
-		display: block;
 		text-align: center;
 		padding: 1em 0;
 		position: relative;
+		display: block;
 	}
 	body.fixed-nav .menu{
 		padding: .5em 0;
 	}
 	.menu .icon-title{
-		display: block;
-		position: absolute;
-		left: 0;
 		padding-top: .2em;
+		left: 0;
+		position: absolute;
+		display: block;
 	}
 	body.fixed-nav .menu .icon-title{
 		left: 1em;
@@ -306,9 +308,9 @@ ul{
 	.menu a.icon{
 		font-size: 1.5em;
 		color: black;
-		display: block;
 		margin-bottom: .5em;
 		border-top: none;
+		display: block;
 	}
 	.menu a.icon:hover{
 		color: black;
@@ -344,31 +346,31 @@ ul{
 .overlay{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: whitesmoke;
+	background-color: #424242; /* Black fallback color */
+	opacity: 1;
 	height: 100%;
 	width: 100%;
 	display: none;
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
 	left: 0;
 	top: 0;
-	background-color: #424242; /* Black fallback color */
-	opacity: 1;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top *
 	overflow-x: hidden; /* Disable horizontal scroll */
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
-.overlay-content{
-	position: relative;
-	top: 1em;
-	width: 100%;
+.overlay-content{	
 	text-align: center;
 	margin-top: 0;
+	width: 100%;
 	display: block;
+	top: 1em;
+	position: relative;
 }
 .overlay ul{
 	list-style-type: none;
+	line-height: 1.6em;
 	padding: 0;
 	margin: 0;
-	line-height: 1.6em;
 }
 .overlay li{
 	padding: .6em 0;
@@ -394,8 +396,8 @@ ul{
 	font-size: 2em;
 	vertical-align: middle;
 	line-height: 0.8em;
-	position: absolute;
 	right: .8em;
+	position: absolute;
 }
 .overlay .menu .close-title a{
 	text-decoration: none;

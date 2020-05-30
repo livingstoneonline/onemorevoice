@@ -338,70 +338,70 @@ ul{
 	}
 }
 
-/*Overlay*/
+/* Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
 @media screen and (max-width : 600px){
-.overlay{
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	color: whitesmoke;
-	background-color: #424242; /* Black fallback color */
-	opacity: 1;
-	height: 100%;
-	width: 100%;
-	display: none;
-	left: 0;
-	top: 0;
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top *
-	overflow-x: hidden; /* Disable horizontal scroll */
-	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-.overlay-content{	
-	text-align: center;
-	margin-top: 0;
-	width: 100%;
-	display: block;
-	top: 1em;
-	position: relative;
-}
-.overlay ul{
-	list-style-type: none;
-	line-height: 1.6em;
-	padding: 0;
-	margin: 0;
-}
-.overlay li{
-	padding: .6em 0;
-}
-.overlay li.section ul li{
-	padding: .3em 0;
-}
-.overlay a{
-	font-size: 1em;
-	color: whitesmoke;
-	text-decoration: underline;
-	transition: 0.3s; /* Transition effects on hover (color)*/
-}
-.overlay a:hover,
-.overlay a:focus{
-	text-decoration: underline;
-}
-.overlay .menu{
-	padding: 1.5em 0 1em 0;
-	border-bottom: 1px whitesmoke solid;
-}
-.overlay .menu .close-title{
-	font-size: 2em;
-	vertical-align: middle;
-	line-height: 0.8em;
-	right: .8em;
-	position: absolute;
-}
-.overlay .menu .close-title a{
-	text-decoration: none;
-}
+	.overlay{
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		color: whitesmoke;
+		background-color: #424242; /* Black fallback color */
+		opacity: 1;
+		height: 100%;
+		width: 100%;
+		display: none;
+		left: 0;
+		top: 0;
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top *
+		overflow-x: hidden; /* Disable horizontal scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+	.overlay-content{	
+		text-align: center;
+		margin-top: 0;
+		width: 100%;
+		display: block;
+		top: 1em;
+		position: relative;
+	}
+	.overlay ul{
+		list-style-type: none;
+		line-height: 1.6em;
+		padding: 0;
+		margin: 0;
+	}
+	.overlay li{
+		padding: .6em 0;
+	}
+	.overlay li.section ul li{
+		padding: .3em 0;
+	}
+	.overlay a{
+		font-size: 1em;
+		color: whitesmoke;
+		text-decoration: underline;
+		transition: 0.3s; /* Transition effects on hover (color)*/
+	}
+	.overlay a:hover,
+	.overlay a:focus{
+		text-decoration: underline;
+	}
+	.overlay .menu{
+		padding: 1.5em 0 1em 0;
+		border-bottom: 1px whitesmoke solid;
+	}
+	.overlay .menu .close-title{
+		font-size: 2em;
+		vertical-align: middle;
+		line-height: 0.8em;
+		right: .8em;
+		position: absolute;
+	}
+	.overlay .menu .close-title a{
+		text-decoration: none;
+	}
 }
 @media only screen and (max-width : 320px){
 	.overlay .menu .close-title{
@@ -416,7 +416,7 @@ ul{
 }
 
 
-/*Headings & Lines*/
+/* Headings & Lines */
 
 h1{
 	font-size: 2.1em;
@@ -448,28 +448,28 @@ h3{
 	}
 }
 hr{
-	width: 100%;
 	background-color: gray;
 	height: 1px;
 	border: 0;
+	width: 100%;
 }
 .narrow-hr{
-	width: 45%;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+	width: 45%;
 }
 .thick-hr{
-	width: 50%;
 	overflow: visible; /* For IE */
 	border: none;
 	border-top: medium double #191716;
 	color: #191716;
 	text-align: center;
 	padding: 10px 10px 0 0;
+	width: 50%;
 }
 
 
-/*Formatting*/
+/* Formatting */
 
 .big{
 	font-size: 1.1em;
@@ -513,7 +513,7 @@ hr{
 }
 
 
-/*Links*/
+/* Links */
 
 a,
 a:visited{

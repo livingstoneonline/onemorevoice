@@ -197,6 +197,15 @@ ul{
 .topnav ul li .dropdown label{
 	display: inline-block;
 }
+label::after, a::after {
+	font-family: 'FontAwesome';
+ }
+ label::after {
+	 content: '\f0da'; /* closed folder */
+ }
+ input:checked + label::after {
+	 content: '\f0d7'; /* open folder */
+ }
 .topnav ul li .dropdown label.dropbtn{
 	padding: 16px 12px;
 	border: none;

@@ -44,11 +44,11 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			    <meta name="description" content="Critically-edited primary material for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
     			<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
-				<link rel="stylesheet" type="text/css" href="omv-common.css"/>
-			    <link rel="stylesheet" type="text/css" href="../style.css" />
+				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/transcriptions/omv-common.css"/>
+			    <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
 			    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-			    <script src="../overlay.js"></script>
-			    <script src="../stickynav.js" defer=""></script>
+			    <script src="http://livingstoneonline.github.io/onemorevoice/overlay.js"></script>
+			    <script src="http://livingstoneonline.github.io/onemorevoice/stickynav.js" defer=""></script>
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 				<!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>

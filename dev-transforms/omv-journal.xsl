@@ -215,7 +215,7 @@
 				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
 				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 				<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
-				<p class="item-spec"><span class="bold">Publication details:</span><xsl:text> </xsl:text>
+				<p class="item-spec"><span class="bold">Original publication details:</span><xsl:text> </xsl:text>
 					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//title"/></span>
 					<xsl:text> </xsl:text>
 					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct [@type='journal']//imprint/biblScope[@unit='vol']"/>

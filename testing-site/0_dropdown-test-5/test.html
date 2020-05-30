@@ -30,13 +30,14 @@
     </nav>
 
     <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from here: https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 	<div class="topnav">
         <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="texts.html">texts</a></li>
             <li>
                 <div class="dropdown" data-menu-component>
-                    <input type="checkbox" role="button" aria-haspopup="true" id="toggle-1" class="vh">
+                    <input type="checkbox"  id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
                     <label class="dropbtn" for="toggle-1" data-opens-menu>
                       <!--&#x2630; Menu-->concepts <i class="fa fa-caret-down"></i>
                       <span class="vh expanded-text">expanded</span>
@@ -53,7 +54,7 @@
               </li>
               <li>
                 <div data-menu-component class="dropdown">
-                    <input type="checkbox" role="button" aria-haspopup="true" id="toggle-2" class="vh">
+                    <input type="checkbox"  id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
                     <label for="toggle-2" data-opens-menu class="dropbtn">
                       <!--&#x2630; Menu-->misc <i class="fa fa-caret-down"></i>
                       <span class="vh expanded-text">expanded</span>

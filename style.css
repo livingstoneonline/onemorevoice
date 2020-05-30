@@ -287,6 +287,28 @@ input:checked + label::after{
 /*[type="checkbox"]:focus + [data-opens-menu], 
 [role="menu"] a:focus {}*/
 
+/* HTML hierarchy for topnav and color values */
+/*
+.topnav
+.topnav ul
+.topnav ul li 
+.topnav ul li a
+
+.topnav ul li .dropdown
+.topnav ul li .dropdown input .vh
+.topnav ul li .dropdown label.dropbtn
+.topnav ul li .dropdown .dropdown-content
+.topnav ul li .dropdown .dropdown-content ul
+.topnav ul li .dropdown .dropdown-content ul li 
+.topnav ul li .dropdown .dropdown-content ul li a
+
+color: black;
+color: whitesmoke;
+background-color: #424242; [dark brown]
+background-color: #858585; [dark gray]
+background-color: #dbdbdb; [light gray]
+*/
+
 
 /* 3. Mobile Fixed Nav */
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */

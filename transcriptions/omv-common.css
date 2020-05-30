@@ -11,18 +11,17 @@ Table of Contents
 -----------------
 1. Textual divisions plus links
 2. Header and footer
-3. Dropdown menu
-4. pb, lb, linenumber 
-5. Milestone and lines
-6. h1-h3, p, ab, note, fw, column break, footnotes 
-7. del, unclear, app, gap, space 
-8. Editorial 
-9. @rend classes (except lines, page placement, colors) 
-10. Page placement 
-11. Colors 
-12. Lists and tables 
-13. Misc 
-14. Letters [not is use, commented out]
+3. pb, lb, linenumber 
+4. Milestone and lines
+5. h1-h3, p, ab, note, fw, column break, footnotes 
+6. del, unclear, app, gap, space 
+7. Editorial 
+8. @rend classes (except lines, page placement, colors) 
+9. Page placement 
+10. Colors 
+11. Lists and tables 
+12. Misc 
+13. Letters [not is use, commented out]
 
 */
 
@@ -69,12 +68,8 @@ body{
 /* 2. Header and footer */
 
 .title{
-	font-weight: bold;
 	/*padding-left: 0.3em;
-	padding-right: 0.3em;*/
-	padding-bottom: 1em;
-	/* text-align: center;
-	line-height: 1.6em;
+	padding-right: 0.3em;
 	font-style: normal; */
 }
 .title img{
@@ -126,7 +121,7 @@ body{
 } */
 
 
-/* 4. pb, lb, linenumber */
+/* 3. pb, lb, linenumber */
 
 .pb-title{
 	color: #428bca;
@@ -179,7 +174,7 @@ p.right .linenumber{
 }
 
 
-/*5. Milestone and lines*/
+/* 4. Milestone and lines */
 
 .milestone{
 	display: block;
@@ -266,7 +261,7 @@ p.right .linenumber{
 
 
 
-/* 6. h1-3, p, ab, head, note, fw, column break, footnotes */
+/* 5. h1-3, p, ab, head, note, fw, column break, footnotes */
 
 .p{
 	display: inline-block;
@@ -324,7 +319,7 @@ p.right .linenumber{
 }
 
 
-/* 7. del, unclear, app, gap, space */
+/* 6. del, unclear, app, gap, space */
 
 .del,
 .del-by-over-text{
@@ -356,7 +351,7 @@ p.right .linenumber{
 }
 
 
-/* 8. Editorial */
+/* 7. Editorial */
 
 .sic,
 .corr{
@@ -375,7 +370,7 @@ p.right .linenumber{
 }
 
 
-/* 9. @rend classes (except colors, lines, and up-down placement) */
+/* 8. @rend classes (except colors, lines, and up-down placement) */
 
 .bold{
 	font-weight: 600;
@@ -451,7 +446,7 @@ p.right .linenumber{
 }
 
 
-/* 10. Page placement */
+/* 9. Page placement */
 
 .above,
 .below,
@@ -490,7 +485,7 @@ p.right .linenumber{
 }
 
 
-/* 11. Colors */
+/* 10. Colors */
 
 .black{
 	color: black;
@@ -533,7 +528,7 @@ p.right .linenumber{
 }
 
 
-/* 12. Lists and tables */
+/* 11. Lists and tables */
 table{
 	border-style: none;
 	margin: 0 auto;
@@ -548,7 +543,7 @@ table .linenumber{
 }
 
 
-/* 13. Misc */
+/* 12. Misc */
 
 .none{
 	display: none;
@@ -586,7 +581,7 @@ table .linenumber{
 	border-bottom: 1px #428bca dotted;
 }
 
-/* 14. Letters [not in use] */
+/* 13. Letters [not in use] */
 
 /*
 .opener,

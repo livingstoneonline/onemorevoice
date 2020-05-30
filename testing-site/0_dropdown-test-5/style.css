@@ -14,7 +14,7 @@
 }
 
 label {
-  /*display: inline-block;*/
+  display: inline-block;
 }
 
 [role="menu"] ul {
@@ -258,8 +258,9 @@ body{
 }
 .topnav ul li{
 	font-size: 1.1em;
-	padding: 12px 16px;
 	display: inline-block;
+}
+.topnav ul li a{
 }
 .topnav ul li:hover{
 	background-color: #424242; /*dark brown*/
@@ -271,13 +272,21 @@ body{
 .topnav ul li a{
 	color: black;
 }
+.topnav ul li .dropdown label.dropbtn{
+	padding: 12px 16px;
+}
+[type="checkbox"]:checked + label {
+	color: whitesmoke;
+	background-color: #424242; /*dark brown*/
+}
+
 /**********************************/
 
 .topnav ul li {
 	position: relative;
 }
 
-.topnav ul li .dropdown label .dropbtn {
+.topnav ul li .dropdown label.dropbtn {
 	border: none;
 	outline: none;
 }

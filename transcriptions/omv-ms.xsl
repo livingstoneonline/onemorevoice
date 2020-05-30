@@ -186,7 +186,7 @@
 		                <ul>
 		                  <li><a href="../contributors.html">contributors</a></li>
 		                  <li><a href="../bibliography.html">bibliography</a></li>
-		                  <li><a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a></li>
+		                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
 		                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
 		                </ul>
 		              </div></input>
@@ -216,7 +216,7 @@
 		                    <ul>
 		                        <li><a href="../contributors.html">contributors</a></li>
 		                        <li><a href="../bibliography.html">bibliography</a></li>
-		                        <li><a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a> (external)</li>
+		                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
 		                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
 		                    </ul>
 		                </li>

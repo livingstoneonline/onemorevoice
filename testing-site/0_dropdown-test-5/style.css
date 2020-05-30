@@ -260,13 +260,14 @@ body{
 	font-size: 1.1em;
 	display: inline-block;
 }
-.topnav ul li a:hover{
-	color: whitesmoke;
-	background-color: #424242;
-}
 .topnav ul li a{
 	color: black;
 	padding: 16px 12px;
+}
+.topnav ul li:hover,
+.topnav ul li a:hover{
+	color: whitesmoke;
+	background-color: #424242;
 }
 .topnav ul li .dropdown label.dropbtn{
 	padding: 16px 12px ;

@@ -129,6 +129,7 @@ ul{
 	padding-left: 18px;
 	padding-bottom: 1em;
 }
+/* The following four items are used on the text.html page. */
 .p-list{
 	margin-top: 0em;
 	margin-bottom: 0em;
@@ -142,7 +143,12 @@ ul{
 	margin-bottom: 1em;
 	margin-top: 0em;
 }
-/*review above 4 elements*/
+@media only screen and (max-width : 414px){
+	.ul-list{
+		padding-left: 1em;
+	}
+}
+
 
 
 /* 2. Navbar */

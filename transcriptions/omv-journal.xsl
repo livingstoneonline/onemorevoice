@@ -45,7 +45,10 @@
 			    <meta name="description" content="Critically-edited primary material for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
     			<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
 				<link rel="stylesheet" type="text/css" href="omv-common.css"/>
-				<link rel="stylesheet" type="text/css" href="omv-mobile.css"/>			
+			    <link rel="stylesheet" type="text/css" href="../style.css" />
+			    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+			    <script src="../overlay.js"></script>
+			    <script src="../stickynav.js" defer></script>	
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 			    <!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
@@ -150,7 +153,7 @@
 			       
 			<div class="title"> 
 			    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
-        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1>One More Voice</h1></div>
+        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1 class="header-title">One More Voice</h1></div>
         		<hr/>
         		<div><span class="texts omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
     		</div>
@@ -208,7 +211,7 @@
 			
 			<div class="footer">
             	<hr />
-            	<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/"  target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="../site_map.html">Site Map</a></p>
+				<p>&#169; 2020 | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | <a href="../site_map.html">Site Map</a> | Design / Sysadmin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln)</p>
         	</div>
 			
 		</div>

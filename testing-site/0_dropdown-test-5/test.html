@@ -30,6 +30,7 @@
     </nav>
 
     <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from here: https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 	<div class="topnav">
         <ul>
@@ -37,9 +38,9 @@
             <li><a href="texts.html">texts</a></li>
             <li>
                 <div class="dropdown" data-menu-component>
-                    <input type="checkbox"  id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
+                    <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
                     <label class="dropbtn" for="toggle-1" data-opens-menu>
-                      <!--&#x2630; Menu-->concepts <i class="fa fa-caret-down"></i>
+                      concepts <i class="fa fa-caret-down"></i>
                       <span class="vh expanded-text">expanded</span>
                       <span class="vh collapsed-text">collapsed</span>
                     </label>
@@ -54,13 +55,13 @@
               </li>
               <li>
                 <div data-menu-component class="dropdown">
-                    <input type="checkbox"  id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
-                    <label for="toggle-2" data-opens-menu class="dropbtn">
-                      <!--&#x2630; Menu-->misc <i class="fa fa-caret-down"></i>
+                    <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
+                    <label class="dropbtn" for="toggle-2" data-opens-menu>
+                      misc <i class="fa fa-caret-down"></i>
                       <span class="vh expanded-text">expanded</span>
                       <span class="vh collapsed-text">collapsed</span>
                     </label>
-                    <div role="menu" data-menu-origin="left" class="dropdown-content">
+                    <div class="dropdown-content" role="menu" data-menu-origin="left">
                       <ul>
                         <li><a href="contributors.html">contributors</a></li>
                         <li><a href="bibliography.html">bibliography</a></li>
@@ -96,14 +97,10 @@
 
     <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
     <div id="myNav" class="overlay">
-        <!-- Button to close the overlay navigation -->
-        
         <div class="menu">
             <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
             <span class="nav-title">One More Voice</span>
         </div>
-        
-        <!-- Overlay content -->
           <div class="overlay-content">
               <ul>
                   <li><a href="index.html">home</a></li>

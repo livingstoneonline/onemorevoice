@@ -3,38 +3,8 @@
 [role="menu"] a:focus {
 }
 
-:checked + label .expanded-text {
-  display: inline;
-}
-
-:checked + label .collapsed-text {
-  display: none;
-}
-
-[type="checkbox"]:not(:checked) + label .expanded-text {
-  display: none;
-}
-
-[type="checkbox"]:not(:checked) + label .collapsed-text {
-  display: inline;
-}
-
-[role="menu"] {
-  position: absolute;
-  left: 0;
-  display: none;
-}
-
-:checked ~ [role="menu"] {
-  display: block;
-}
 
 
-
-[role="menu"] a {
-  display: block;
-  white-space: nowrap;
-}
 
 
 /* CSS File for One More Voice (http://onemorevoice.org/) */
@@ -248,15 +218,34 @@ body{
 	color: whitesmoke;
 	background-color: #424242; /*dark brown*/
 }
-
+:checked + label .expanded-text {
+	display: inline;
+}
+:checked + label .collapsed-text {
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .expanded-text {
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .collapsed-text {
+	display: inline;
+}
+:checked ~ .dropdown-content {
+	display: block;
+  }
+.dropdown-content {
+	display: none;
+}
+.dropdown-content a {
+	display: block;
+	white-space: nowrap;
+}
 .topnav ul li .dropdown .dropdown-content ul {
 	position: absolute;
 	text-align: left;
 	min-width: 140px;
 	z-index: 1;
 	/* add box shadow */
-	/*display: none;*/
-	/*position: absolute;*/
 }
 .topnav ul li .dropdown .dropdown-content ul li{
 	font-size: .9em;

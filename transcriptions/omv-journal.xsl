@@ -48,7 +48,7 @@
 			    <link rel="stylesheet" type="text/css" href="../style.css" />
 			    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 			    <script src="../overlay.js"></script>
-			    <script src="../stickynav.js" defer></script>	
+			    <script src="../stickynav.js" defer=""></script>	
 				<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 			    <!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
@@ -137,9 +137,9 @@
 		      <li><a href="../index.html">home</a></li>
 		      <li><a href="../texts.html">texts</a></li>
 		      <li>
-		          <div class="dropdown" data-menu-component>
+		          <div class="dropdown" data-menu-component="">
 		              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
-		              <label class="dropbtn" for="toggle-1" data-opens-menu>
+		              <label class="dropbtn" for="toggle-1" data-opens-menu="">
 		                concepts <!--<i class="fa fa-caret-down"></i>-->
 		                <span class="vh expanded-text">expanded</span>
 		                <span class="vh collapsed-text">collapsed</span>
@@ -150,13 +150,13 @@
 		                  <li><a href="../project_design.html">project design</a></li>
 		                  <li><a href="../coding_guidelines.html">coding guidelines</a></li>
 		                </ul>
-		              </div>
+		              </div></input>
 		            </div>
 		        </li>
 		        <li>
-		          <div data-menu-component class="dropdown">
+		          <div data-menu-component="" class="dropdown">
 		              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
-		              <label class="dropbtn" for="toggle-2" data-opens-menu>
+		              <label class="dropbtn" for="toggle-2" data-opens-menu="">
 		                misc <!--<i class="fa fa-caret-down"></i>-->
 		                <span class="vh expanded-text">expanded</span>
 		                <span class="vh collapsed-text">collapsed</span>
@@ -168,7 +168,7 @@
 		                  <li><a href="https://github.com/livingstoneonline/One-More-Voice" target="_blank">github repo</a></li>
 		                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
 		                </ul>
-		              </div>
+		              </div></input>
 		            </div>
 		        </li>
 		    </ul>
@@ -177,7 +177,7 @@
 		    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
 		    <div id="myNav" class="overlay">
 		      <div class="menu">
-		          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+		          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
 		          <span class="nav-title">One More Voice</span>
 		      </div>
 		        <div class="overlay-content">

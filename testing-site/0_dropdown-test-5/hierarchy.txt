@@ -5,7 +5,7 @@
 
 .topnav ul li .dropdown
 .topnav ul li .dropdown input .vh
-.topnav ul li .dropdown label .dropbtn
+.topnav ul li .dropdown label.dropbtn
 .topnav ul li .dropdown .dropdown-content
 .topnav ul li .dropdown .dropdown-content ul
 .topnav ul li .dropdown .dropdown-content ul li 
@@ -23,6 +23,10 @@ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 *************
 *************
 *************
+/*.topnav ul li:hover > a,
+.topnav ul li a.hovered {
+	background-color: #424242;*/ /*dark brown*/
+/* } */
 .topnav a,
 .topnav a:visited{
 	/*float: left;*/

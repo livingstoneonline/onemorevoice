@@ -136,7 +136,7 @@ ul{
 		padding-left: 1em;
 	}
 }
-/* The following four items are used on the text.html page. */
+/* The following three items are used on the text.html page. */
 .p-list{
 	margin-top: 0em;
 	margin-bottom: 0em;
@@ -155,7 +155,17 @@ ul{
 		padding-left: 1em;
 	}
 }
-
+/* The item is used on the site_map.html page. */
+.map-list{
+	display: inline-block;
+	text-indent: 1em;
+}
+@media only screen and (max-width : 600px){
+	.map-list{
+		text-indent: 0;
+		margin-left: 1em;
+	}
+}
 
 
 /* 2. Navbar */

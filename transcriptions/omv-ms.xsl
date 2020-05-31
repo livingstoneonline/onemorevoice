@@ -147,7 +147,7 @@
 			    </div>
 				       
 				<div class="title"> 
-				    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
 	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
@@ -307,6 +307,7 @@
 		</div>
 			
 		<div class="item-details">
+			<hr />
 			<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 			<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 			<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

@@ -41,16 +41,6 @@ body{
 .manuscript .back{
 	margin-top: -1em;
 }
-@media only screen and (max-width : 768px){
-	.TEI{
-		font-size: 1.05em;
-	}
-}
-@media only screen and (max-width : 414px){
-	.TEI{
-		font-size: 1.1em;
-	}
-}
 .manuscript .TEI{
 	width: 100%;
 	padding-top: 2em;
@@ -77,22 +67,20 @@ body{
 
 /* 2. Title, subtitle, image, back-button, item details */
 
-@media only screen and (max-width : 703px){
+.omv-title{
+	display: none;
+}
+@media only screen and (min-width : 768px){
 	.omv-title{
-		display: none;
+		display: block;
 	}
 }
 .omv-subtitle{
-	display: none;
+	display: block;
 }
-@media only screen and (max-width : 768px){
+@media only screen and (min-width : 768px){
 	.omv-subtitle{
 		display: none;
-	}
-}
-@media only screen and (max-width : 703px){
-	.omv-subtitle{
-		display: block;
 	}
 }
 .title img{
@@ -100,11 +88,7 @@ body{
 	margin-top: .5em;
 }
 .back-button{
-	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	height: 0;
-	float: left;
-	clear: both;
 }
 .back-button a:link{
 	text-decoration: none;
@@ -115,6 +99,12 @@ body{
 }
 .back-button a:hover{
 	color: #2e68ac;
+}
+.title .back-button{
+	font-weight: 300;
+	height: 0;
+	float: left;
+	clear: both;
 }
 .item-details{
 	text-align: left;
@@ -256,21 +246,21 @@ p.right .linenumber{
 	border-top: 1px solid #58484b;
 }
 .title-hr{
-	max-width: 33em;
+	min-width: 33em;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
-@media only screen and (max-width : 703px){
+@media only screen and (min-width : 480px){
 	.narrow-hr{
 		width: 50%;
 	}
 }
-@media only screen and (max-width : 414px){
+@media only screen and (min-width : 414px){
 	.narrow-hr{
 		width: 60%;
 	}
 }
-@media only screen and (max-width : 320px){
+@media only screen and (min-width : 320px){
 	.narrow-hr{
 		width: 70%;
 	}
@@ -607,3 +597,6 @@ table .linenumber{
 	display:inline-block;
 }
 */
+
+
+.TEI{}

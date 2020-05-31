@@ -371,6 +371,7 @@ body.fixed-nav .menu a.icon{
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 .overlay-content{
+	font-size: 1.1em;
 	text-align: center;
 	margin-top: 0;
 	padding-bottom: 3em;
@@ -393,13 +394,13 @@ body.fixed-nav .menu a.icon{
 }
 .overlay a,
 .overlay a:visited{
-	font-size: 1em;
 	color: whitesmoke;
 	text-decoration: underline;
 	transition: 0.3s; /* Transition effects on hover (color)*/
 }
 .overlay a:hover,
 .overlay a:focus{
+	color: whitesmoke;
 	text-decoration: underline;
 }
 .overlay .menu{

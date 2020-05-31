@@ -510,7 +510,7 @@ a.anchor {
 h1{
 	font-size: 2em;
 }
-@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 320px){}/*ok*/
 @media only screen and (min-width : 480px){
 	h1{
 		font-size: 2em;/*ok*/
@@ -518,7 +518,7 @@ h1{
 }
 @media only screen and (min-width : 768px){
 	h1{
-		font-size: 2.05;
+		font-size: 2.2em;/*ok*/
 	}
 }
 @media only screen and (min-width : 992px){
@@ -530,7 +530,11 @@ h1{
 h3{
 	font-size: .9em;
 }
-@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 320px){
+	h3{
+		font-size: .85em;
+	}
+}
 @media only screen and (min-width : 480px){
 	h3{
 		font-size: .9em;/*ok*/
@@ -538,7 +542,7 @@ h3{
 }
 @media only screen and (min-width : 768px){
 	h3{
-		font-size: .9em;
+		font-size: 1.05em;/*ok*/
 	}
 }
 @media only screen and (min-width : 992px){
@@ -550,7 +554,7 @@ h3{
 .main{
 	font-size: 1.3em;
 }
-@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 320px){}/*ok*/
 @media only screen and (min-width : 480px){
 	.main{
 		font-size: 1.3em;/*ok*/
@@ -558,7 +562,7 @@ h3{
 }
 @media only screen and (min-width : 768px){
 	.main{
-		font-size: 1.2em;
+		font-size: 1.3em;/*ok*/
 	}
 }
 @media only screen and (min-width : 992px){
@@ -570,7 +574,7 @@ h3{
 .credits{
 	font-size: 1.2em;
 }
-@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 320px){}/*ok*/
 @media only screen and (min-width : 480px){
 	.credits{
 		font-size: 1.2em;/*ok*/
@@ -578,7 +582,7 @@ h3{
 }
 @media only screen and (min-width : 768px){
 	.credits{
-		font-size: 1.1em;
+		font-size: 1.2em;/*ok*/
 	}
 }
 @media only screen and (min-width : 992px){
@@ -590,7 +594,7 @@ h3{
 .footer{
 	font-size: .95em;
 }
-@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 320px){}/*ok*/
 @media only screen and (min-width : 480px){
 	.footer{
 		font-size: .95em;/*ok*/
@@ -598,7 +602,7 @@ h3{
 }
 @media only screen and (min-width : 768px){
 	.footer{
-		font-size: .95em;
+		font-size: 1.05em;
 	}
 }
 @media only screen and (min-width : 992px){	

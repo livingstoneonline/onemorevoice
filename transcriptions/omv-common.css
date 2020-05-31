@@ -13,7 +13,7 @@ Table of Contents
 2. Back-button, item details
 3. pb, lb, linenumber 
 4. Milestone and lines
-5. h1-h3, p, ab, note, fw, column break, footnotes 
+5. p, ab, note, fw, column break, footnotes 
 6. del, unclear, app, gap, space 
 7. Editorial 
 8. Rend classes (except lines, page placement, colors) 
@@ -229,21 +229,6 @@ p.right .linenumber{
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
-@media only screen and (min-width : 480px){
-	.narrow-hr{
-		width: 50%;
-	}
-}
-@media only screen and (min-width : 414px){
-	.narrow-hr{
-		width: 60%;
-	}
-}
-@media only screen and (min-width : 320px){
-	.narrow-hr{
-		width: 70%;
-	}
-}
 
 
 /* 5. p, ab, head, note, fw, column break, footnotes */
@@ -427,7 +412,7 @@ p.right .linenumber{
 .top{
 	/* Specified in % so that the sup/sup is the
      right size relative to the surrounding text */
-	font-size: .8em;
+	font-size: 80%;
 
 	/* Zero out the line-height so that it doesn't
      interfere with the positioning that follows */
@@ -523,17 +508,16 @@ table .linenumber{
 	margin-left: 0;
 	color: #666666;
 	font-size: .8em;
-	/* also see omv-ms.css */
 }
 .manuscript .figure{
 	border-bottom: 1px #666666 dotted;
 }
-.image-medium{
-	width: 60%;
-	display: inline-block;
-}
 .image-small{
 	width: 40%;
+	display: inline-block;
+}
+.image-medium{
+	width: 60%;
 	display: inline-block;
 }
 .metamark{
@@ -576,3 +560,16 @@ table .linenumber{
 	display:inline-block;
 }
 */
+
+@media only screen and (min-width : 320px){
+	.narrow-hr{
+	}
+}
+@media only screen and (min-width : 480px){
+	.narrow-hr{
+	}
+}
+@media only screen and (min-width : 768px){
+	.narrow-hr{
+	}
+}

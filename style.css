@@ -34,11 +34,11 @@ html{
 	-webkit-hyphens: auto;
 }
 body{
-	max-width: 38em;
+	min-width: 38em;
 	margin-left: auto;
 	margin-right: auto;
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	body{
 		width: 100%;
 	}
@@ -51,7 +51,7 @@ body{
 	font-weight: bold;
 	padding-bottom: 1em;
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	.title{
 		padding-bottom: .5em;
 	}
@@ -85,7 +85,7 @@ ul{
 	padding-left: 1.5em;
 	padding-bottom: 1em;
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	ol,
 	ul{
 		padding-left: 1em;
@@ -105,7 +105,7 @@ ul{
 	margin-bottom: 1em;
 	margin-top: 0em;
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	.ul-list{
 		padding-left: 1em;
 	}
@@ -115,7 +115,7 @@ ul{
 	display: inline-block;
 	text-indent: 1em;
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	.map-list{
 		text-indent: 0;
 		margin-left: 1em;
@@ -135,7 +135,7 @@ ul{
 .header-title{
 	display: block;
 }
-@media screen and (max-width : 479px){
+@media screen and (min-width : 479px){
 	.header-title{
 		display: none;
 	}
@@ -144,12 +144,12 @@ ul{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
 }
-@media screen and (max-width : 479px){
+@media screen and (min-width : 479px){
 	.topnav{
 		display: none;
 	}
 }
-@media screen and (max-width : 479px){
+@media screen and (min-width : 479px){
 	.topnav a,
 	.topnav a:visited{
 		display: none;
@@ -286,7 +286,7 @@ background-color: #dbdbdb; [light gray]
 
 /* 3. Mobile Fixed Nav */
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
-@media screen and (max-width : 479px){
+@media screen and (min-width : 479px){
 	nav{
 		text-align: center;
 		background-color: white;
@@ -348,7 +348,7 @@ background-color: #dbdbdb; [light gray]
 		color: black;
 	}
 }
-@media only screen and (max-width : 320px){
+@media only screen and (min-width : 320px){
 	.menu .icon-title{
 		padding-top: 0;
 	}
@@ -357,7 +357,7 @@ background-color: #dbdbdb; [light gray]
 	}
 }
 /* The following is a breakpoint for imaginary users with very small phones. */
-@media only screen and (max-width : 270px){
+@media only screen and (min-width : 270px){
 	.menu .icon-title{
 		margin-top: -.1em;
 	}
@@ -370,7 +370,7 @@ background-color: #dbdbdb; [light gray]
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
-@media screen and (max-width : 479px){
+@media screen and (min-width : 479px){
 	.overlay{
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		color: whitesmoke;
@@ -434,12 +434,12 @@ background-color: #dbdbdb; [light gray]
 	}
 }
 /* The following are breakpoints for imaginary users with very small phones. */
-@media only screen and (max-width : 319px){
+@media only screen and (min-width : 319px){
 	.overlay .menu .close-title{
 		line-height: 0.80em;
 	}
 }
-@media only screen and (max-width : 269px){
+@media only screen and (min-width : 269px){
 	.overlay .menu .close-title{
 		line-height: 0.75em;
 	}
@@ -452,17 +452,17 @@ h1{
 	font-size: 2.1em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-@media only screen and (max-width : 767px){
+@media only screen and (min-width : 767px){
 	h1{
 		font-size: 2.05;
 	}
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	h1{
 		font-size: 2em;
 	}
 }
-@media only screen and (max-width : 319px){
+@media only screen and (min-width : 319px){
 	h1{
 		font-size: 1.9em;
 	}
@@ -547,52 +547,83 @@ a.anchor {
 
 /********************************/
 
-@media only screen and (max-width : 767px){
+@media only screen and (min-width : 991px){
+	h3{
+		font-size: 1em;
+	}
+}
+@media only screen and (min-width : 767px){
 	h3{
 		font-size: .9em;
 	}
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 479px){
 	h3{
 		font-size: .9em;
 	}
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (min-width : 991px){
 	.main{
 		font-size: 1.2em;
 	}
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 767px){
+	.main{
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width : 479px){
 	.main{
 		font-size: 1.3em;
 	}
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (min-width : 991px){
 	.credits{
 		font-size: 1.1em;
 	}
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 767px){
+	.credits{
+		font-size: 1.1em;
+	}
+}
+@media only screen and (min-width : 479px){
 	.credits{
 		font-size: 1.2em;
 	}
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (min-width : 991px){	
 	.footer{
 		font-size: .95em;
 	}
 }
-@media only screen and (max-width : 479px){
+@media only screen and (min-width : 767px){
+	.footer{
+		font-size: .95em;
+	}
+}
+@media only screen and (min-width : 479px){
 	.footer{
 		font-size: .95em;
 	}
 }
 
 
-
+h3{
+	font-size: .9em;
+}
+.main{
+	font-size: 1.3em;
+}
+.credits{
+	font-size: 1.2em;
+}
+.footer{
+	font-size: .95em;
+}
 
 
 

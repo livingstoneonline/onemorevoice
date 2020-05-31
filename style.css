@@ -40,12 +40,11 @@ body{
 	margin-right: auto;
 }
 .title{
+	font-weight: bold;
 	text-align: center;
 	line-height: 1.6em;
-}
-.title{
-	font-weight: bold;
 	padding-bottom: .5em;
+	position: relative;
 }
 .image{
 	margin-left: auto;
@@ -560,7 +559,7 @@ h1{
 }
 
 h3{
-	font-size: .9em;
+	font-size: .85em;
 }
 @media only screen and (min-width : 320px){
 	h3{

@@ -43,8 +43,7 @@ body{
 		width: 100%;
 	}
 }
-.title,
-.footer{
+.title{
 	text-align: center;
 	line-height: 1.6em;
 }
@@ -57,23 +56,6 @@ body{
 		padding-bottom: .5em;
 	}
 }
-.main{
-	text-align: left;
-	line-height: 1.6em;
-	margin-left: auto;
-	margin-right: auto;
-}
-.citation{
-	line-height: 1.6em;
-	padding-top: 1em;
-}
-.caption{
-	line-height: 1.6em;
-}
-.footer{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	padding-top: 1em;
-}
 .image{
 	margin-left: auto;
 	margin-right: auto;
@@ -81,6 +63,22 @@ body{
 }
 .image-border{
 	border: 1px solid gray;
+}
+.main{
+	text-align: left;
+	line-height: 1.6em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.credits{
+	line-height: 1.6em;
+	padding-top: 1em;
+}
+.footer{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	line-height: 1.6em;
+	padding-top: 1em;
 }
 ol, 
 ul{
@@ -549,55 +547,13 @@ a.anchor {
 
 /********************************/
 
-@media only screen and (max-width : 768px){
+@media only screen and (max-width : 479px){
 	.main{
-		font-size: 1.05em;
+		font-size: 1.15em;
 	}
 }
-@media only screen and (max-width : 414px){
-	.main{
-		font-size: 1.1em;
-	}
-}
-.citation{
-	font-size: .85em;
-}
-@media only screen and (max-width : 768px){
-	.citation{
-		font-size: .9em;
-	}
-}
-@media only screen and (max-width : 414px){
-	.citation{
-		font-size: .95em;
-	}
-}
-.caption{
-	font-size: .85em;
-}
-@media only screen and (max-width : 768px){
-	.caption{
-		font-size: .9em;
-	}
-}
-@media only screen and (max-width : 414px){
-	.caption{
-		font-size: .95em;
-	}
-}
-.footer{
-	font-size: .85em;
-}
-@media only screen and (max-width : 768px){
-	.footer{
-		font-size: .9em;
-	}
-}
-@media only screen and (max-width : 414px){
-	.footer{
-		font-size: .95em;
-	}
-}
+
+
 h3{
 	font-size: .9em;
 }

@@ -34,6 +34,9 @@
 				<xsl:otherwise/>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="LEAP-ID">
+			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
+		</xsl:variable>
 		<html>
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
@@ -60,6 +63,96 @@
 				</script>    
 			</head>
 			<body><!-- style="background:#{$body-color};" -->
+			
+				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+			    <nav id="navigation">    
+			    <div class="menu">
+			        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
+					<span class="nav-title">One More Voice</span>
+			    </div>
+			    </nav>
+			
+			    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+			    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+			    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+				<div class="topnav">
+			    <ul>
+			      <li><a href="../index.html">home</a></li>
+			      <li><a href="../texts.html">texts</a></li>
+			      <li>
+			          <div class="dropdown" data-menu-component="">
+			              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
+			              <label class="dropbtn" for="toggle-1" data-opens-menu="">
+			                concepts <!--<i class="fa fa-caret-down"></i>-->
+			                <span class="vh expanded-text">expanded</span>
+			                <span class="vh collapsed-text">collapsed</span>
+			              </label>
+			              <div class="dropdown-content" role="menu" data-menu-origin="left">
+			                <ul>
+			                  <li><a href="../analytical_priorities.html">analytical priorities</a></li>
+			                  <li><a href="../project_design.html">project design</a></li>
+			                  <li><a href="../coding_guidelines.html">coding guidelines</a></li>
+			                </ul>
+			              </div></input>
+			            </div>
+			        </li>
+			        <li>
+			          <div data-menu-component="" class="dropdown">
+			              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
+			              <label class="dropbtn" for="toggle-2" data-opens-menu="">
+			                misc <!--<i class="fa fa-caret-down"></i>-->
+			                <span class="vh expanded-text">expanded</span>
+			                <span class="vh collapsed-text">collapsed</span>
+			              </label>
+			              <div class="dropdown-content" role="menu" data-menu-origin="left">
+			                <ul>
+			                  <li><a href="../contributors.html">contributors</a></li>
+			                  <li><a href="../bibliography.html">bibliography</a></li>
+			                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+			                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
+			                </ul>
+			              </div></input>
+			            </div>
+			        </li>
+			    </ul>
+				</div>
+			
+			    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+			    <div id="myNav" class="overlay">
+			      <div class="menu">
+			          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
+			          <span class="nav-title">One More Voice</span>
+			      </div>
+			        <div class="overlay-content">
+			            <ul>
+			                <li><a href="../index.html">home</a></li>
+			                <li><a href="../texts.html">texts</a></li>
+			                <li class="section">concepts <i class="fa fa-caret-down"></i>
+			                    <ul>
+			                        <li><a href="../analytical_priorities.html">analytical priorities</a></li>
+			                        <li><a href="../project_design.html">project design</a></li>
+			                        <li><a href="../coding_guidelines.html">coding guidelines</a></li>
+			                    </ul>
+			                </li>
+			                <li class="section">misc <i class="fa fa-caret-down"></i>
+			                    <ul>
+			                        <li><a href="../contributors.html">contributors</a></li>
+			                        <li><a href="../bibliography.html">bibliography</a></li>
+			                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+			                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+			                    </ul>
+			                </li>
+			        <li><a href="../site_map.html">site map</a></li>
+			            </ul>
+			        </div>
+			    </div>
+				       
+				<div class="title"> 
+				    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+	        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1 class="header-title">One More Voice</h1></div>
+	        		<hr/>
+	        		<div><span class="texts omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
+	    		</div>
 				<xsl:apply-templates select="TEI"/>
 			</body>
 		</html>
@@ -137,115 +230,21 @@
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 
+    	<div class="item-details">
+			<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></p>
+			<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+			<!--<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
+			<p class="item-spec"><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
+			<p class="item-spec"><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
+			<p class="item-spec"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+			<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+			<p class="item-spec"><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+			<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
+			<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
+			<hr/>
+		</div>
 
 		<div class="transcription manuscript"><!-- style="background:#{$body-color};" -->
-
-		<!-- start of nav -->
-		
-			<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-		    <nav id="navigation">    
-		    <div class="menu">
-		        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
-				<span class="nav-title">One More Voice</span>
-		    </div>
-		    </nav>
-		
-		    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
-		    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
-		    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-			<div class="topnav">
-		    <ul>
-		      <li><a href="../index.html">home</a></li>
-		      <li><a href="../texts.html">texts</a></li>
-		      <li>
-		          <div class="dropdown" data-menu-component="">
-		              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
-		              <label class="dropbtn" for="toggle-1" data-opens-menu="">
-		                concepts <!--<i class="fa fa-caret-down"></i>-->
-		                <span class="vh expanded-text">expanded</span>
-		                <span class="vh collapsed-text">collapsed</span>
-		              </label>
-		              <div class="dropdown-content" role="menu" data-menu-origin="left">
-		                <ul>
-		                  <li><a href="../analytical_priorities.html">analytical priorities</a></li>
-		                  <li><a href="../project_design.html">project design</a></li>
-		                  <li><a href="../coding_guidelines.html">coding guidelines</a></li>
-		                </ul>
-		              </div></input>
-		            </div>
-		        </li>
-		        <li>
-		          <div data-menu-component="" class="dropdown">
-		              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
-		              <label class="dropbtn" for="toggle-2" data-opens-menu="">
-		                misc <!--<i class="fa fa-caret-down"></i>-->
-		                <span class="vh expanded-text">expanded</span>
-		                <span class="vh collapsed-text">collapsed</span>
-		              </label>
-		              <div class="dropdown-content" role="menu" data-menu-origin="left">
-		                <ul>
-		                  <li><a href="../contributors.html">contributors</a></li>
-		                  <li><a href="../bibliography.html">bibliography</a></li>
-		                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-		                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
-		                </ul>
-		              </div></input>
-		            </div>
-		        </li>
-		    </ul>
-			</div>
-		
-		    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-		    <div id="myNav" class="overlay">
-		      <div class="menu">
-		          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
-		          <span class="nav-title">One More Voice</span>
-		      </div>
-		        <div class="overlay-content">
-		            <ul>
-		                <li><a href="../index.html">home</a></li>
-		                <li><a href="../texts.html">texts</a></li>
-		                <li class="section">concepts <i class="fa fa-caret-down"></i>
-		                    <ul>
-		                        <li><a href="../analytical_priorities.html">analytical priorities</a></li>
-		                        <li><a href="../project_design.html">project design</a></li>
-		                        <li><a href="../coding_guidelines.html">coding guidelines</a></li>
-		                    </ul>
-		                </li>
-		                <li class="section">misc <i class="fa fa-caret-down"></i>
-		                    <ul>
-		                        <li><a href="../contributors.html">contributors</a></li>
-		                        <li><a href="../bibliography.html">bibliography</a></li>
-		                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
-		                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
-		                    </ul>
-		                </li>
-		        <li><a href="../site_map.html">site map</a></li>
-		            </ul>
-		        </div>
-		    </div>
-			       
-			<div class="title"> 
-			    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
-        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1 class="header-title">One More Voice</h1></div>
-        		<hr/>
-        		<div><span class="texts omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
-    		</div>
-
-    		<div class="item-details">
-				<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></p>
-				<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
-				<!--<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
-				<p class="item-spec"><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
-				<p class="item-spec"><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
-				<p class="item-spec"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
-				<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-				<p class="item-spec"><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-				<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
-				<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
-			</div>
-
-			<hr/>
 
 			<div class="TEI front {$front}" style="background:#{$body-color-front};">
 				<div class="ms-container">
@@ -306,26 +305,24 @@
 				</xsl:choose>
 				</div>
 			</div>
-
-			<hr/>
-			
-			<div class="final-item-details">
-				<p class="texts-bottom"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
-				<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-				<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
-				<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-				<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-				<p class="item-spec"><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
-				<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
-			</div>
-			
-			<div class="footer">
-            	<hr />
-				<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
-        	</div>
-			
 		</div>
+			
+		<div class="final-item-details">
+			<hr/>
+			<p class="texts-bottom"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+			<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+			<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+			<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
+			<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+			<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
+			<p class="item-spec"><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+			<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+		</div>
+			
+		<div class="footer">
+            <hr />
+			<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
+        </div>
 	</xsl:template>
 
 	<!-- General match -->

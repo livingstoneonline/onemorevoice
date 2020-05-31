@@ -70,8 +70,8 @@ body{
 	display: inline-block;
 	/*white-space:nowrap;*/
 	text-align: left;
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 
@@ -112,7 +112,6 @@ body{
 	line-height: 1.6em;
 }
 .texts{
-	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	height: 0;
@@ -120,7 +119,6 @@ body{
 	clear: both;
 }
 .texts-bottom{
-	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 }
@@ -133,16 +131,17 @@ body{
 }*/
 .final-item-details{
 	text-align: left;
+	font-size: .95em;
 	/*white-space:normal;*/
 }
 @media only screen and (max-width : 768px){
 	.final-item-details{
-		font-size: 1.05em;
+		font-size: 1em;
 	}
 }
 @media only screen and (max-width : 414px){
 	.final-item-details{
-		font-size: 1.1em;
+		font-size: 1.05em;
 	}
 }
 @media only screen and (max-width : 703px){

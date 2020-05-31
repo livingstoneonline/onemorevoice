@@ -16,7 +16,7 @@ Table of Contents
 5. h1-h3, p, ab, note, fw, column break, footnotes 
 6. del, unclear, app, gap, space 
 7. Editorial 
-8. @rend classes (except lines, page placement, colors) 
+8. Rend classes (except lines, page placement, colors) 
 9. Page placement 
 10. Colors 
 11. Lists and tables 
@@ -148,7 +148,6 @@ body{
 	.omv-title{
 		display: none;
 	}
-}
 }
 .omv-subtitle{
 	display: none;
@@ -431,7 +430,7 @@ p.right .linenumber{
 }
 
 
-/* 8. @rend classes (except colors, lines, and up-down placement) */
+/* 8. Rend classes (except colors, lines, and up-down placement) */
 
 .caps{
 	font-variant: small-caps;
@@ -477,6 +476,9 @@ p.right .linenumber{
 }
 .journal .right{
 	float: right;
+}
+.small{
+	font-size: 1em;
 }
 .upsidedown{
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */

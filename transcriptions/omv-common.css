@@ -9,8 +9,8 @@
 
 Table of Contents
 -----------------
-1. Textual divisions plus links
-2. Title, subtitle, image, back, item details
+1. Textual divisions
+2. Back-button, item details
 3. pb, lb, linenumber 
 4. Milestone and lines
 5. h1-h3, p, ab, note, fw, column break, footnotes 
@@ -26,12 +26,10 @@ Table of Contents
 */
 
 
-/* 1. Textual divisions plus links */
+/* 1. Textual divisions */
 
-body{
-	text-align: center;
-}
 .transcription{
+	text-align: center;
 	line-height: 1.6em;
 	/*white-space:nowrap;*/
 }
@@ -42,11 +40,8 @@ body{
 	margin-top: -1em;
 }
 .manuscript .TEI{
-	width: 100%;
-	padding-top: 2em;
-	padding-bottom: 4em;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	padding: 2em 0 4em 0;
+	margin: 2em 0;
 	border: 2px solid gainsboro;
 }
 .journal .TEI{
@@ -65,55 +60,39 @@ body{
 }
 
 
-/* 2. Title, subtitle, image, back-button, item details */
+/* 2. Back-button, item details */
 
-.omv-title{
-	display: none;
-}
-@media only screen and (min-width : 768px){
-	.omv-title{
-		display: block;
-	}
-}
-.omv-subtitle{
-	display: block;
-}
-@media only screen and (min-width : 768px){
-	.omv-subtitle{
-		display: none;
-	}
-}
-.title img{
-	border: 1px solid gray;
-	margin-top: .5em;
-}
-.back-button{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-}
-.back-button a:link{
-	text-decoration: none;
-}
 .back-button a,
 .back-button a:visited{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #e4524b;
+	text-decoration: none;
 }
 .back-button a:hover{
 	color: #2e68ac;
 }
 .title .back-button{
+	font-size: .85em;
 	font-weight: 300;
-	height: 0;
-	float: left;
-	clear: both;
+	position: absolute;
+	left:0;
+}
+@media only screen and (min-width : 320px){
+	.title .back-button{
+		font-size: .85em;
+	}
+}
+@media only screen and (min-width : 480px){
+	.title .back-button{
+		font-size: 1em;
+	}
 }
 .item-details{
 	text-align: left;
-	font-size: .9em;
 	margin-top: 0em;
 	line-height: 1.6em;
 }
 .item-title{
-	font-size: 1em;
 	padding-bottom: 1em;
 	color: #2e68ac;
 	font-weight: bold;
@@ -597,6 +576,3 @@ table .linenumber{
 	display:inline-block;
 }
 */
-
-
-.TEI{}

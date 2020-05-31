@@ -148,9 +148,9 @@
 				       
 				<div class="title"> 
 				    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
-	        		<div><span class="back-button omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1 class="header-title">One More Voice</h1></div>
+	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
-	        		<div><span class="back-button omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
+	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
 	    		</div>
 				<xsl:apply-templates select="TEI"/>
 			</body>

@@ -10,7 +10,8 @@
 Table of Contents
 -----------------
 1. Textual divisions plus links
-2. Header and footer
+2. Title, subtitle, image
+X. Item details
 3. pb, lb, linenumber 
 4. Milestone and lines
 5. h1-h3, p, ab, note, fw, column break, footnotes 
@@ -75,74 +76,11 @@ body{
 }
 
 
-/* 2. Header and footer */
+/* 2. Title, subtitle, image */
 
-.title{
-	/*padding-left: 0.3em;
-	padding-right: 0.3em;*/
-}
 .title img{
 	border: 1px solid gray;
 	margin-top: .5em;
-}
-.item-details{
-	text-align: left;
-	padding-bottom: 1em;
-	/*white-space:normal;*/
-}
-@media only screen and (max-width : 768px){
-	.item-details{
-		font-size: 1.05em;
-	}
-}
-@media only screen and (max-width : 414px){
-	.item-details{
-		font-size: 1.1em;
-	}
-}
-.item-title{
-	font-size: 1em;
-	padding-bottom: 1em;
-	color: #2e68ac;
-	font-weight: bold;
-}
-.item-spec{
-	font-size: .9em;
-	margin-top: 0em;
-	line-height: 1.6em;
-}
-.texts{
-	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	height: 0;
-	float: left;
-	clear: both;
-}
-.texts-bottom{
-	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-}
-.texts a:link,
-.texts-bottom a:link{
-	text-decoration: none;
-}
-/*.caption{
-	padding-top: 2em;
-}*/
-.final-item-details{
-	text-align: left;
-	font-size: 1em;
-	/*white-space:normal;*/
-}
-@media only screen and (max-width : 768px){
-	.final-item-details{
-		font-size: 1.05em;
-	}
-}
-@media only screen and (max-width : 414px){
-	.final-item-details{
-		font-size: 1.1em;
-	}
 }
 @media only screen and (max-width : 703px){
 	.omv-title{
@@ -159,7 +97,6 @@ body{
 }
 @media only screen and (max-width : 703px){
 	.omv-subtitle{
-		padding-right: 1em;
 		display: block;
 	}
 
@@ -173,6 +110,30 @@ body{
 .omv-title a:hover,
 .omv-subtitle a:hover{
 	color: #2e68ac;
+}
+
+/* Items details */
+.item-details{
+	text-align: left;
+	font-size: .9em;
+	margin-top: 0em;
+	line-height: 1.6em;
+}
+.item-title{
+	font-size: 1em;
+	padding-bottom: 1em;
+	color: #2e68ac;
+	font-weight: bold;
+}
+.texts{
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	height: 0;
+	float: left;
+	clear: both;
+}
+.texts a:link{
+	text-decoration: none;
 }
 
 /* 3. pb, lb, linenumber */

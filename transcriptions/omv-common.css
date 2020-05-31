@@ -41,6 +41,11 @@ body{
 .manuscript .back{
 	margin-top: -1em;
 }
+@media only screen and (max-width : 768px){
+	.TEI{
+		font-size: 1.05em;
+	}
+}
 @media only screen and (max-width : 414px){
 	.TEI{
 		font-size: 1.1em;
@@ -85,6 +90,11 @@ body{
 	padding-bottom: 1em;
 	/*white-space:normal;*/
 }
+@media only screen and (max-width : 768px){
+	.item-details{
+		font-size: 1.05em;
+	}
+}
 @media only screen and (max-width : 414px){
 	.item-details{
 		font-size: 1.1em;
@@ -124,6 +134,11 @@ body{
 .final-item-details{
 	text-align: left;
 	/*white-space:normal;*/
+}
+@media only screen and (max-width : 768px){
+	.final-item-details{
+		font-size: 1.05em;
+	}
 }
 @media only screen and (max-width : 414px){
 	.final-item-details{
@@ -169,10 +184,13 @@ body{
 	}
 }
 .omv-title a,
-.omv-title a:visited{
+.omv-title a:visited,
+.omv-subtitle a,
+.omv-subtitle a:visited{
 	color: #e4524b;
 }
-.omv-title a:hover{
+.omv-title a:hover,
+.omv-subtitle a:hover{
 	color: #2e68ac;
 }
 
@@ -180,7 +198,7 @@ body{
 
 .pb-title{
 	color: #428bca;
-	font-size: 90%;
+	font-size: .9em;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
 	margin-top: 2em;
 	margin-bottom: .5em;

@@ -149,15 +149,6 @@ body{
 		display: none;
 	}
 }
-@media only screen and (max-width : 414px){
-	.omv-title{
-		display: none;
-	}
-}
-@media only screen and (max-width : 320px){
-	.omv-title{
-		display: none;
-	}
 }
 .omv-subtitle{
 	display: none;
@@ -169,18 +160,10 @@ body{
 }
 @media only screen and (max-width : 703px){
 	.omv-subtitle{
+		padding-right: 1em;
 		display: block;
 	}
-}
-@media only screen and (max-width : 414px){
-	.omv-subtitle{
-		display: block;
-	}
-}
-@media only screen and (max-width : 320px){
-	.omv-subtitle{
-		display: block;
-	}
+
 }
 .omv-title a,
 .omv-title a:visited,

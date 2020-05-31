@@ -41,6 +41,11 @@ body{
 .manuscript .back{
 	margin-top: -1em;
 }
+@media only screen and (max-width : 414px){
+	.TEI{
+		font-size: 1.1em;
+	}
+}
 .manuscript .TEI{
 	width: 100%;
 	padding-top: 2em;
@@ -80,6 +85,11 @@ body{
 	padding-bottom: 1em;
 	/*white-space:normal;*/
 }
+@media only screen and (max-width : 414px){
+	.item-details{
+		font-size: 1.1em;
+	}
+}
 .item-title{
 	font-size: 1em;
 	padding-bottom: 1em;
@@ -99,17 +109,6 @@ body{
 	float: left;
 	clear: both;
 }
-/* review the following two items */
-@media only screen and (max-width : 414px){
-	.texts{
-		font-size: .85em;
-	}
-}
-@media only screen and (max-width : 320px){
-	.texts{
-		font-size: .8em;
-	}
-}
 .texts-bottom{
 	font-size: .9em;
 	font-weight: 300;
@@ -125,6 +124,11 @@ body{
 .final-item-details{
 	text-align: left;
 	/*white-space:normal;*/
+}
+@media only screen and (max-width : 414px){
+	.final-item-details{
+		font-size: 1.1em;
+	}
 }
 @media only screen and (max-width : 703px){
 	.omv-title{
@@ -164,7 +168,13 @@ body{
 		display: block;
 	}
 }
-
+.omv-title a,
+.omv-title a:visited{
+	color: #e4524b;
+}
+.omv-title a:hover{
+	color: #2e68ac;
+}
 
 /* 3. pb, lb, linenumber */
 

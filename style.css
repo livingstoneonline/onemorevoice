@@ -390,7 +390,7 @@ background-color: #dbdbdb; [light gray]
 	}
 	body.fixed-nav .menu .nav-title,
 	body.fixed-nav .menu a.icon{
-		color: #707070;
+		color: black;
 	}
 }
 @media only screen and (max-width : 320px){
@@ -434,6 +434,7 @@ background-color: #dbdbdb; [light gray]
 	.overlay-content{
 		text-align: center;
 		margin-top: 0;
+		padding-bottom: 2em;
 		width: 100%;
 		display: block;
 		top: 1em;
@@ -515,6 +516,11 @@ h3{
 	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (max-width : 414px){
+	h3{
+		padding-left: 1em;
+	}
 }
 hr{
 	background-color: gray;

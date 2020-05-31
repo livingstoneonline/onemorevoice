@@ -101,7 +101,7 @@ ul{
 		padding-left: 1.5em;/*ok*/
 	}
 }
-/* The item is used on the site_map.html page. */
+/* The following item is used on the site_map.html page. */
 .map-list{
 	display: inline-block;
 	text-indent: 0;
@@ -111,6 +111,25 @@ ul{
 	.map-list{
 		text-indent: 1em;/*ok*/
 		
+	}
+}
+/* The following item is used on the bibliography.html page. */
+.return-top{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media only screen and (min-width : 320px){
+	.return-top{
+		font-size: .9em;/*ok*/
+	}
+}
+@media only screen and (min-width : 480px){
+	.return-top{
+		font-size: .9em;/*ok*/
+	}
+}
+@media only screen and (min-width : 768px){
+	.return-top{
+		font-size: .9em;/*ok*/
 	}
 }
 
@@ -127,7 +146,7 @@ ul{
 .header-title{
 	display: none;
 }
-@media screen and (min-width : 480px){
+@media screen and (min-width : 768px){
 	.header-title{
 		display: block;/*ok*/
 	}
@@ -141,12 +160,12 @@ ul{
 .topnav a:visited{
 	display: none;
 }
-@media screen and (min-width : 480px){
+@media screen and (min-width : 768px){
 	.topnav{
 		display: block;/*ok*/
 	}
 }
-@media screen and (min-width : 480px){
+@media screen and (min-width : 768px){
 	.topnav a,
 	.topnav a:visited{
 		display: block;/*ok*/
@@ -316,6 +335,11 @@ body.fixed-nav .menu{
 	position: absolute;
 	display: block;
 }
+@media only screen and (min-width : 480px){
+	.menu .icon-title{
+		padding-top: .5em;
+	}
+}
 body.fixed-nav .menu .icon-title{
 	left: 1em;
 	position: absolute;
@@ -325,6 +349,11 @@ body.fixed-nav .menu .icon-title{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
 	display: block;
+}
+@media only screen and (min-width : 480px){
+	.menu .nav-title{
+	font-size: 2em;
+	}
 }
 body.fixed-nav .overlay .menu .nav-title,
 body.fixed-nav .overlay .menu .close-title{
@@ -344,8 +373,9 @@ body.fixed-nav .menu .nav-title,
 body.fixed-nav .menu a.icon{
 	color: black;
 }
-@media only screen and (min-width : 480px){
-	nav{
+@media only screen and (min-width : 768px){
+	nav,
+	.fixed-nav nav{
 		display: none;/*ok*/
 	}
 }
@@ -417,7 +447,7 @@ body.fixed-nav .menu a.icon{
 .overlay .menu .close-title a{
 	text-decoration: none;
 }
-@media only screen and (min-width : 480px){
+@media only screen and (min-width : 768px){
 	.overlay{
 		display: none;/*ok*/
 	}
@@ -539,7 +569,7 @@ h3{
 }
 @media only screen and (min-width : 480px){
 	h3{
-		font-size: .9em;/*ok*/
+		font-size: 1em;/*ok*/
 	}
 }
 @media only screen and (min-width : 768px){
@@ -612,7 +642,6 @@ h3{
 		font-size: 1.05em;/*ok*/
 	}
 }
-
 
 
 .big{

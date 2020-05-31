@@ -34,14 +34,9 @@ html{
 	-webkit-hyphens: auto;
 }
 body{
-	min-width: 38em;
+	max-width: 38em;
 	margin-left: auto;
 	margin-right: auto;
-}
-@media only screen and (min-width : 479px){
-	body{
-		width: 100%;
-	}
 }
 .title{
 	text-align: center;
@@ -49,12 +44,7 @@ body{
 }
 .title{
 	font-weight: bold;
-	padding-bottom: 1em;
-}
-@media only screen and (min-width : 479px){
-	.title{
-		padding-bottom: .5em;
-	}
+	padding-bottom: .5em;
 }
 .image{
 	margin-left: auto;
@@ -82,13 +72,13 @@ body{
 }
 ol, 
 ul{
-	padding-left: 1.5em;
+	padding-left: 1em;
 	padding-bottom: 1em;
 }
-@media only screen and (min-width : 479px){
+@media only screen and (min-width : 767px){
 	ol,
 	ul{
-		padding-left: 1em;
+		padding-left: 1.5em;/*ok*/
 	}
 }
 /* The following three items are used on the text.html page. */
@@ -100,25 +90,26 @@ ul{
 	padding-bottom: 1em;
 }
 .ul-list{
-	padding-left: 1.5em;
+	padding-left: 1em;
 	padding-bottom: 0em;
 	margin-bottom: 1em;
 	margin-top: 0em;
 }
-@media only screen and (min-width : 479px){
+@media only screen and (min-width : 767px){
 	.ul-list{
-		padding-left: 1em;
+		padding-left: 1.5em;/*ok*/
 	}
 }
 /* The item is used on the site_map.html page. */
 .map-list{
 	display: inline-block;
-	text-indent: 1em;
+	text-indent: 0;
+	margin-left: 1em;
 }
-@media only screen and (min-width : 479px){
+@media only screen and (min-width : 767px){
 	.map-list{
-		text-indent: 0;
-		margin-left: 1em;
+		text-indent: 1em;/*ok*/
+		
 	}
 }
 
@@ -133,26 +124,31 @@ ul{
 	display: none;
 }
 .header-title{
-	display: block;
+	display: none;
 }
-@media screen and (min-width : 479px){
+@media screen and (min-width : 480px){
 	.header-title{
-		display: none;
+		display: block;/*ok*/
 	}
 }
 .topnav{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
+	display: none;
+}
+.topnav a,
+.topnav a:visited{
+	display: none;
 }
 @media screen and (min-width : 479px){
 	.topnav{
-		display: none;
+		display: block;/*ok*/
 	}
 }
 @media screen and (min-width : 479px){
 	.topnav a,
 	.topnav a:visited{
-		display: none;
+		display: block;/*ok*/
 	}
 }
 .topnav ul{
@@ -286,162 +282,142 @@ background-color: #dbdbdb; [light gray]
 
 /* 3. Mobile Fixed Nav */
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
-@media screen and (min-width : 479px){
+nav{
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+}
+/* applied after scroll height reached */
+.fixed-nav nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-bottom: 1px gray solid;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+}
+.menu{
+	text-align: center;
+	padding: 1em 0;
+	position: relative;
+	display: block;
+}
+body.fixed-nav .menu{
+	padding: .5em 0;
+}
+.menu .icon-title{
+	padding-top: .2em;
+	left: 0;
+	position: absolute;
+	display: block;
+}
+body.fixed-nav .menu .icon-title{
+	left: 1em;
+	position: absolute;
+}
+.menu .nav-title{
+	font-size: 1.7em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	display: block;
+}
+body.fixed-nav .overlay .menu .nav-title,
+body.fixed-nav .overlay .menu .close-title{
+	color: whitesmoke;
+}
+.menu a.icon{
+	font-size: 1.5em;
+	color: black;
+	margin-bottom: .5em;
+	border-top: none;
+	display: block;
+}
+.menu a.icon:hover{
+	color: black;
+}
+body.fixed-nav .menu .nav-title,
+body.fixed-nav .menu a.icon{
+	color: black;
+}
+@media only screen and (min-width : 480px){
 	nav{
-		text-align: center;
-		background-color: white;
-		width: 100%;
-		margin: 0 auto;
-	}
-	/* applied after scroll height reached */
-	.fixed-nav nav{
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		border-bottom: 1px gray solid;
-		box-shadow: 0 4px 6px -6px #222;
-		-webkit-box-shadow: 0 4px 6px -6px #222;
-		-moz-box-shadow: 0 4px 6px -6px #222;
-	}
-	.menu{
-		text-align: center;
-		padding: 1em 0;
-		position: relative;
-		display: block;
-	}
-	body.fixed-nav .menu{
-		padding: .5em 0;
-	}
-	.menu .icon-title{
-		padding-top: .2em;
-		left: 0;
-		position: absolute;
-		display: block;
-	}
-	body.fixed-nav .menu .icon-title{
-		left: 1em;
-		position: absolute;
-	}
-	.menu .nav-title{
-		font-size: 1.7em;
-		font-family: Georgia, 'Times New Roman', Times, serif;
-		font-weight: 600;
-		display: block;
-	}
-	body.fixed-nav .overlay .menu .nav-title,
-	body.fixed-nav .overlay .menu .close-title{
-		color: whitesmoke;
-	}
-	.menu a.icon{
-		font-size: 1.5em;
-		color: black;
-		margin-bottom: .5em;
-		border-top: none;
-		display: block;
-	}
-	.menu a.icon:hover{
-		color: black;
-	}
-	body.fixed-nav .menu .nav-title,
-	body.fixed-nav .menu a.icon{
-		color: black;
+		display: none;/*ok*/
 	}
 }
-@media only screen and (min-width : 320px){
-	.menu .icon-title{
-		padding-top: 0;
-	}
-	.menu .nav-title{
-		font-size: 1.6em;
-	}
-}
-/* The following is a breakpoint for imaginary users with very small phones. */
-@media only screen and (min-width : 270px){
-	.menu .icon-title{
-		margin-top: -.1em;
-	}
-	.menu .nav-title{
-		font-size: 1.4em;
-	}
-}
+
+
 
 /* 4. Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
-@media screen and (min-width : 479px){
+.overlay{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: whitesmoke;
+	background-color: #424242; /* Black fallback color */
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	display: none;
+	left: 0;
+	top: 0;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top *
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay-content{
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 3em;
+	width: 100%;
+	display: block;
+	top: 1em;
+	position: relative;
+}
+.overlay ul{
+	list-style-type: none;
+	line-height: 1.6em;
+	padding: 0;
+	margin: 0;
+}
+.overlay li{
+	padding: .6em 0;
+}
+.overlay li.section ul li{
+	padding: .3em 0;
+}
+.overlay a,
+.overlay a:visited{
+	font-size: 1em;
+	color: whitesmoke;
+	text-decoration: underline;
+	transition: 0.3s; /* Transition effects on hover (color)*/
+}
+.overlay a:hover,
+.overlay a:focus{
+	text-decoration: underline;
+}
+.overlay .menu{
+	padding: 1.5em 0 1em 0;
+	border-bottom: 1px whitesmoke solid;
+}
+.overlay .menu .close-title{
+	font-size: 2em;
+	vertical-align: middle;
+	line-height: 0.8em;
+	right: .8em;
+	position: absolute;
+}
+.overlay .menu .close-title a{
+	text-decoration: none;
+}
+@media only screen and (min-width : 480px){
 	.overlay{
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-		color: whitesmoke;
-		background-color: #424242; /* Black fallback color */
-		opacity: 1;
-		height: 100%;
-		width: 100%;
-		display: none;
-		left: 0;
-		top: 0;
-		position: fixed; /* Stay in place */
-		z-index: 1; /* Sit on top *
-		overflow-x: hidden; /* Disable horizontal scroll */
-		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-	}
-	.overlay-content{
-		text-align: center;
-		margin-top: 0;
-		padding-bottom: 3em;
-		width: 100%;
-		display: block;
-		top: 1em;
-		position: relative;
-	}
-	.overlay ul{
-		list-style-type: none;
-		line-height: 1.6em;
-		padding: 0;
-		margin: 0;
-	}
-	.overlay li{
-		padding: .6em 0;
-	}
-	.overlay li.section ul li{
-		padding: .3em 0;
-	}
-	.overlay a,
-	.overlay a:visited{
-		font-size: 1em;
-		color: whitesmoke;
-		text-decoration: underline;
-		transition: 0.3s; /* Transition effects on hover (color)*/
-	}
-	.overlay a:hover,
-	.overlay a:focus{
-		text-decoration: underline;
-	}
-	.overlay .menu{
-		padding: 1.5em 0 1em 0;
-		border-bottom: 1px whitesmoke solid;
-	}
-	.overlay .menu .close-title{
-		font-size: 2em;
-		vertical-align: middle;
-		line-height: 0.8em;
-		right: .8em;
-		position: absolute;
-	}
-	.overlay .menu .close-title a{
-		text-decoration: none;
-	}
-}
-/* The following are breakpoints for imaginary users with very small phones. */
-@media only screen and (min-width : 319px){
-	.overlay .menu .close-title{
-		line-height: 0.80em;
-	}
-}
-@media only screen and (min-width : 269px){
-	.overlay .menu .close-title{
-		line-height: 0.75em;
+		display: none;/*ok*/
 	}
 }
 
@@ -449,23 +425,7 @@ background-color: #dbdbdb; [light gray]
 /* 5. Headings & Lines */
 
 h1{
-	font-size: 2.1em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-}
-@media only screen and (min-width : 767px){
-	h1{
-		font-size: 2.05;
-	}
-}
-@media only screen and (min-width : 479px){
-	h1{
-		font-size: 2em;
-	}
-}
-@media only screen and (min-width : 319px){
-	h1{
-		font-size: 1.9em;
-	}
 }
 h3{
 	font-weight: 300;
@@ -547,6 +507,43 @@ a.anchor {
 
 /********************************/
 
+body{
+	width: 100%;
+}
+h1{
+	font-size: 2em;
+}
+h3{
+	font-size: .9em;
+}
+.main{
+	font-size: 1.3em;
+}
+.credits{
+	font-size: 1.2em;
+}
+.footer{
+	font-size: .95em;
+}
+
+
+@media only screen and (min-width : 479px){
+	body{
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width : 767px){
+	h1{
+		font-size: 2.05;
+	}
+}
+@media only screen and (min-width : 479px){
+	h1{
+		font-size: 2.1em;
+	}
+}
+
 @media only screen and (min-width : 991px){
 	h3{
 		font-size: 1em;
@@ -612,18 +609,7 @@ a.anchor {
 }
 
 
-h3{
-	font-size: .9em;
-}
-.main{
-	font-size: 1.3em;
-}
-.credits{
-	font-size: 1.2em;
-}
-.footer{
-	font-size: .95em;
-}
+
 
 
 

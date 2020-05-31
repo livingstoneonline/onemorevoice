@@ -10,8 +10,7 @@
 Table of Contents
 -----------------
 1. Textual divisions plus links
-2. Title, subtitle, image
-X. Item details
+2. Title, subtitle, image, back, item details
 3. pb, lb, linenumber 
 4. Milestone and lines
 5. h1-h3, p, ab, note, fw, column break, footnotes 
@@ -76,12 +75,8 @@ body{
 }
 
 
-/* 2. Title, subtitle, image */
+/* 2. Title, subtitle, image, back-button, item details */
 
-.title img{
-	border: 1px solid gray;
-	margin-top: .5em;
-}
 @media only screen and (max-width : 703px){
 	.omv-title{
 		display: none;
@@ -99,20 +94,28 @@ body{
 	.omv-subtitle{
 		display: block;
 	}
-
 }
-.omv-title a,
-.omv-title a:visited,
-.omv-subtitle a,
-.omv-subtitle a:visited{
+.title img{
+	border: 1px solid gray;
+	margin-top: .5em;
+}
+.back-button{
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	height: 0;
+	float: left;
+	clear: both;
+}
+.back-button a:link{
+	text-decoration: none;
+}
+.back-button a,
+.back-button a:visited{
 	color: #e4524b;
 }
-.omv-title a:hover,
-.omv-subtitle a:hover{
+.back-button a:hover{
 	color: #2e68ac;
 }
-
-/* Items details */
 .item-details{
 	text-align: left;
 	font-size: .9em;
@@ -124,16 +127,6 @@ body{
 	padding-bottom: 1em;
 	color: #2e68ac;
 	font-weight: bold;
-}
-.texts{
-	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	height: 0;
-	float: left;
-	clear: both;
-}
-.texts a:link{
-	text-decoration: none;
 }
 
 /* 3. pb, lb, linenumber */

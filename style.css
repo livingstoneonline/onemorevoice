@@ -550,14 +550,34 @@ a.anchor {
 h3{
 	font-size: 1em;
 }
+@media only screen and (max-width : 767px){
+	h3{
+		font-size: 1em;
+	}
+}
 .main{
 	font-size: 1.3em;
+}
+@media only screen and (max-width : 767px){
+	.main{
+		font-size: 1.2em;
+	}
 }
 .credits{
 	font-size: 1.2em;
 }
+@media only screen and (max-width : 767px){
+	.credits{
+		font-size: 1.1em;
+	}
+}
 .footer{
 	font-size: 1em;
+}
+@media only screen and (max-width : 767px){
+	.footer{
+		font-size: 1em;
+	}
 }
 
 

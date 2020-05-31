@@ -35,6 +35,7 @@ html{
 }
 body{
 	max-width: 38em;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -349,7 +350,6 @@ body.fixed-nav .menu a.icon{
 }
 
 
-
 /* 4. Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
@@ -507,102 +507,101 @@ a.anchor {
 
 /********************************/
 
-body{
-	width: 100%;
-}
 h1{
 	font-size: 2em;
 }
-h3{
-	font-size: .9em;
-}
-.main{
-	font-size: 1.3em;
-}
-.credits{
-	font-size: 1.2em;
-}
-.footer{
-	font-size: .95em;
-}
-
-
+@media only screen and (min-width : 320px){}
 @media only screen and (min-width : 480px){
-	body{
-		width: 100%;
+	h1{
+		font-size: 2em;/*ok*/
 	}
 }
-
 @media only screen and (min-width : 768px){
 	h1{
 		font-size: 2.05;
 	}
 }
-@media only screen and (min-width : 480px){
+@media only screen and (min-width : 992px){
 	h1{
-		font-size: 2.1em;
+		font-size: 2.1;
 	}
 }
 
+h3{
+	font-size: .9em;
+}
+@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 480px){
+	h3{
+		font-size: .9em;/*ok*/
+	}
+}
+@media only screen and (min-width : 768px){
+	h3{
+		font-size: .9em;
+	}
+}
 @media only screen and (min-width : 992px){
 	h3{
 		font-size: 1em;
 	}
 }
-@media only screen and (min-width : 768px){
-	h3{
-		font-size: .9em;
-	}
-}
-@media only screen and (min-width : 480px){
-	h3{
-		font-size: .9em;
-	}
-}
 
+.main{
+	font-size: 1.3em;
+}
+@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 480px){
+	.main{
+		font-size: 1.3em;/*ok*/
+	}
+}
+@media only screen and (min-width : 768px){
+	.main{
+		font-size: 1.2em;
+	}
+}
 @media only screen and (min-width : 992px){
 	.main{
 		font-size: 1.2em;
 	}
 }
-@media only screen and (min-width : 768px){
-	.main{
-		font-size: 1.2em;
-	}
-}
-@media only screen and (min-width : 480px){
-	.main{
-		font-size: 1.3em;
-	}
-}
 
+.credits{
+	font-size: 1.2em;
+}
+@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 480px){
+	.credits{
+		font-size: 1.2em;/*ok*/
+	}
+}
+@media only screen and (min-width : 768px){
+	.credits{
+		font-size: 1.1em;
+	}
+}
 @media only screen and (min-width : 992px){
 	.credits{
 		font-size: 1.1em;
 	}
 }
-@media only screen and (min-width : 768px){
-	.credits{
-		font-size: 1.1em;
-	}
-}
-@media only screen and (min-width : 480px){
-	.credits{
-		font-size: 1.2em;
-	}
-}
 
+.footer{
+	font-size: .95em;
+}
+@media only screen and (min-width : 320px){}
+@media only screen and (min-width : 480px){
+	.footer{
+		font-size: .95em;/*ok*/
+	}
+}
+@media only screen and (min-width : 768px){
+	.footer{
+		font-size: .95em;
+	}
+}
 @media only screen and (min-width : 992px){	
-	.footer{
-		font-size: .95em;
-	}
-}
-@media only screen and (min-width : 768px){
-	.footer{
-		font-size: .95em;
-	}
-}
-@media only screen and (min-width : 480px){
 	.footer{
 		font-size: .95em;
 	}

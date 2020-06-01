@@ -692,6 +692,7 @@ ul{
 .manuscript,
 .journal{
 	font-size: 1.3em;
+	display: block;
 }
 @media only screen and (min-width : 992px){
 	.manuscript,
@@ -726,6 +727,35 @@ ul{
 	text-align: left;
 	margin-left: .5em;
 	margin-right: .5em;
+}
+/* This turns off wide manuscript items on mobile. See corresponding XSL */
+.narrow-mobile{
+	font-size: 1.1em;
+	font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: #dbdbdb;
+	line-height: 1.6em;
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black; /*#2e68ac*/ /*#e4524b*/
+	display: none;
+	overflow-wrap: initial;
+	word-wrap: initial;
+	word-break: initial;
+	hyphens: initial;
+	-ms-word-break: initial;
+	-ms-hyphens: initial;
+	-moz-hyphens: initial;
+	-webkit-hyphens: initial;
+}
+/* Maximum aspect ratio */
+@media only screen and (max-aspect-ratio: 8/5), 
+only screen and (orientation: portrait)  and (max-width : 580px){
+	body .manuscript{
+		display: none;
+	}
+	body .narrow-mobile{
+		display: block;
+	}
 }
 
 

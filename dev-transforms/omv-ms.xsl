@@ -47,7 +47,6 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			    <meta name="description" content="Critically-edited primary material for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
     			<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/transcriptions/omv-common.css"/>
 			    <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
 			    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 			    <script src="http://livingstoneonline.github.io/onemorevoice/overlay.js"></script>
@@ -62,7 +61,7 @@
 			  		gtag('config', 'UA-31768072-5');
 				</script>    
 			</head>
-			<body><!-- style="background:#{$body-color};" -->
+			<body class="transcription "><!-- style="background:#{$body-color};" -->
 			
 				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
 			    <nav id="navigation">    
@@ -148,10 +147,10 @@
 			    </div>
 				       
 				<div class="title"> 
-				    <img class="image" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
-	        		<div><span class="texts omv-title"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h1 class="header-title">One More Voice</h1></div>
+				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
-	        		<div><span class="texts omv-subtitle"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
+	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h3 class="italic">Critically-edited Primary Text</h3></div>
 	    		</div>
 				<xsl:apply-templates select="TEI"/>
 			</body>
@@ -230,21 +229,21 @@
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 
-    	<div class="item-details">
-			<p class="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></p>
-			<p class="item-spec"><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+    	<div class="credits">
+			<p class="bold site-blue"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></p>
+			<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 			<!--<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
-			<p class="item-spec"><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
-			<p class="item-spec"><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
-			<p class="item-spec"><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
-			<p class="item-spec"><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-			<p class="item-spec"><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+			<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
+			<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
+			<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+			<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="http://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+			<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 			<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
-			<p class="item-spec"><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will distress some readers.</p>
+			<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
 			<hr/>
 		</div>
 
-		<div class="transcription manuscript"><!-- style="background:#{$body-color};" -->
+		<div class="manuscript"><!-- style="background:#{$body-color};" -->
 
 			<div class="TEI front {$front}" style="background:#{$body-color-front};">
 				<div class="ms-container">
@@ -307,16 +306,16 @@
 			</div>
 		</div>
 			
-		<div class="final-item-details">
-			<hr/>
-			<p class="texts-bottom"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
-			<p class="item-spec"><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+		<div class="credits">
+			<hr />
+			<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+			<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 			<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 			<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
 			<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 			<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="http://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-			<p class="item-spec"><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
-			<p class="item-spec"><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+			<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+			<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 		</div>
 			
 		<div class="footer">

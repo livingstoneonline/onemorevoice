@@ -832,7 +832,7 @@
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
-		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">[This page is blank in the original manuscript.]</p>		
+		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">&lt;This page is blank in the original manuscript.&gt;</p>		
 	</xsl:template>
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->

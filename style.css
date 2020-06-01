@@ -7,15 +7,22 @@
 /* 
 Table of Contents
 -----------------
+** Main CSS **
 1. Main Components 
 2. Mobile Fixed Nav
 3. Navbar
 4. Overlay
-5. Headings & Lines
+5. Lines
 6. Formatting
-7. Links
+7. Lists
+
+** Transcription CSS **
+
 */
 
+/*--------------------------------------*/
+
+/** Main CSS **/
 
 /* 1. Main Components */
 
@@ -38,6 +45,40 @@ body{
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+h1{
+	font-size: 2em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media only screen and (min-width : 768px){
+	h1{
+		font-size: 2.2em;
+	}
+}
+@media only screen and (min-width : 992px){
+	h1{
+		font-size: 2.3em;
+	}
+}
+h3{
+	font-size: .85em;
+	font-weight: 300;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (min-width : 480px){
+	h3{
+		font-size: 1em;
+	}
+}
+@media only screen and (min-width : 768px){
+	h3{
+		font-size: 1.05em;
+	}
+}
+@media only screen and (min-width : 992px){
+	h3{
+		font-size: 1.1em;
+	}
 }
 .title{
 	font-weight: bold;
@@ -63,86 +104,62 @@ body{
 	border: 1px solid gray;
 }
 .main{
+	font-size: 1.3em;
 	text-align: left;
 	line-height: 1.6em;
 	margin-left: auto;
 	margin-right: auto;
 }
 .credits{
+	font-size: 1.2em;
 	line-height: 1.6em;
 	text-align: left;
 }
+@media only screen and (min-width : 768px){
+	.credits{
+		font-size: 1.15em;
+	}
+}
 .footer{
+	font-size: .95em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	line-height: 1.6em;
 	padding-top: 1em;
 }
-ol, 
-ul{
-	padding-left: 1em;
-	padding-bottom: 1em;
-}
 @media only screen and (min-width : 768px){
-	ol,
-	ul{
-		padding-left: 1.5em;
+	.footer{
+		font-size: 1em;
 	}
 }
-/* The following three items are used on the text.html page. */
-.p-list{
-	margin-top: 0em;
-	margin-bottom: 0em;
+a,
+a:visited{
+	color: #2e68ac;
+	/*text-decoration:none;*/
 }
-.bio{
-	padding-bottom: 1em;
+a:hover{
+	color: #e4524b;
 }
-.ul-list{
-	padding-left: 1em;
-	padding-bottom: 0em;
-	margin-bottom: 1em;
-	margin-top: 0em;
+.currentLink{
+	color: #640200;
 }
-@media only screen and (min-width : 768px){
-	.ul-list{
-		padding-left: 1.5em;
-	}
-}
-/* The following item is used on the site_map.html page. */
-.map-list{
-	display: inline-block;
-	text-indent: 0;
-	margin-left: 1em;
-}
-@media only screen and (min-width : 768px){
-	.map-list{
-		text-indent: 1em;
-		
-	}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+	visibility: hidden;
 }
 /* The following item is used on the bibliography.html page. */
 .return-top{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-@media only screen and (min-width : 320px){
-	.return-top{
-		font-size: .9em;
-	}
-}
-@media only screen and (min-width : 480px){
-	.return-top{
-		font-size: .9em;
-	}
-}
-@media only screen and (min-width : 768px){
-	.return-top{
-		font-size: .9em;
-	}
+	font-size: .9em;
 }
 
 
-/* 3. Mobile Fixed Nav */
+/* 2. Mobile Fixed Nav */
+
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
+
 nav{
 	text-align: center;
 	background-color: white;
@@ -217,7 +234,9 @@ body.fixed-nav .menu a.icon{
 
 
 /* 3. Navbar */
+
 /* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
 
 .topnav{
@@ -361,6 +380,7 @@ background-color: #dbdbdb; [light gray]
 
 
 /* 4. Overlay */
+
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* The following prevents overlay from appearing above 768px */
@@ -441,6 +461,7 @@ body.fixed-nav .overlay .menu .close-title{
 .overlay .menu .close-title a{
 	text-decoration: none;
 }
+
 /* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
 /* .menu{
 	display: block;
@@ -479,15 +500,8 @@ body.fixed-nav .overlay .menu .close-title{
 } */
 
 
-/* 5. Headings & Lines */
+/* 5. Lines */
 
-h1{
-	font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h3{
-	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-}
 hr{
 	background-color: gray;
 	height: 1px;
@@ -542,128 +556,47 @@ hr{
 }
 
 
-/* 7. Links */
+/* 7. Lists */
 
-a,
-a:visited{
-	color: #2e68ac;
-	/*text-decoration:none;*/
-}
-a:hover{
-	color: #e4524b;
-}
-.currentLink{
-	color: #640200;
-}
-a.anchor {
-    display: block;
-    position: relative;
-    top: -80px;
-	visibility: hidden;
-}
-
-/********************************/
-
-h1{
-	font-size: 2em;
-}
-@media only screen and (min-width : 320px){}
-@media only screen and (min-width : 480px){
-	h1{
-		font-size: 2em;
-	}
+ol, 
+ul{
+	padding-left: 1em;
+	padding-bottom: 1em;
 }
 @media only screen and (min-width : 768px){
-	h1{
-		font-size: 2.2em;
+	ol,
+	ul{
+		padding-left: 1.5em;
 	}
 }
-@media only screen and (min-width : 992px){
-	h1{
-		font-size: 2.3em;
-	}
+/* The following three items are used on the text.html page. */
+.p-list{
+	margin-top: 0em;
+	margin-bottom: 0em;
 }
-
-h3{
-	font-size: .85em;
+.bio{
+	padding-bottom: 1em;
 }
-@media only screen and (min-width : 320px){
-	h3{
-		font-size: .85em;
-	}
-}
-@media only screen and (min-width : 480px){
-	h3{
-		font-size: 1em;
-	}
+.ul-list{
+	padding-left: 1em;
+	padding-bottom: 0em;
+	margin-bottom: 1em;
+	margin-top: 0em;
 }
 @media only screen and (min-width : 768px){
-	h3{
-		font-size: 1.05em;
+	.ul-list{
+		padding-left: 1.5em;
 	}
 }
-@media only screen and (min-width : 992px){
-	h3{
-		font-size: 1.1em;
-	}
-}
-
-.main{
-	font-size: 1.3em;
-}
-@media only screen and (min-width : 320px){}
-@media only screen and (min-width : 480px){
-	.main{
-		font-size: 1.3em;
-	}
+/* The following item is used on the site_map.html page. */
+.map-list{
+	display: inline-block;
+	text-indent: 0;
+	margin-left: 1em;
 }
 @media only screen and (min-width : 768px){
-	.main{
-		font-size: 1.3em;
-	}
-}
-@media only screen and (min-width : 992px){
-	.main{
-		font-size: 1.3em;
-	}
-}
-
-.credits{
-	font-size: 1.2em;
-}
-@media only screen and (min-width : 320px){}
-@media only screen and (min-width : 480px){
-	.credits{
-		font-size: 1.2em;
-	}
-}
-@media only screen and (min-width : 768px){
-	.credits{
-		font-size: 1.15em;
-	}
-}
-@media only screen and (min-width : 992px){
-	.credits{
-		font-size: 1.15em;
-	}
-}
-
-.footer{
-	font-size: .95em;
-}
-@media only screen and (min-width : 320px){}
-@media only screen and (min-width : 480px){
-	.footer{
-		font-size: .95em;
-	}
-}
-@media only screen and (min-width : 768px){
-	.footer{
-		font-size: 1em;
-	}
-}
-@media only screen and (min-width : 992px){	
-	.footer{
-		font-size: 1em;
+	.map-list{
+		text-indent: 1em;
+		
 	}
 }

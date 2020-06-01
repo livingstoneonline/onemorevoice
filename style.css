@@ -73,7 +73,7 @@ h1{
 	}
 }
 h3{
-	font-size: .85em;
+	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 }
@@ -84,12 +84,12 @@ h3{
 }
 @media only screen and (min-width : 768px){
 	h3{
-		font-size: 1.05em;
+		font-size: 1.2em;
 	}
 }
 @media only screen and (min-width : 992px){
 	h3{
-		font-size: 1.1em;
+		font-size: 1.3em;
 	}
 }
 .title{
@@ -523,7 +523,7 @@ hr{
 .narrow-hr{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
-	width: 45%;
+	width: 50%;
 }
 .thick-hr{
 	overflow: visible; /* For IE */
@@ -621,24 +621,9 @@ ul{
 .transcription{
 	text-align: center;
 }
-.manuscript{
+.manuscript,
+.journal{
 	font-size: 1.3em;
-}
-@media only screen and (min-width : 320px){}/*ok*/
-@media only screen and (min-width : 480px){
-	.manuscript{
-		font-size: 1.3em;/*ok*/
-	}
-}
-@media only screen and (min-width : 768px){
-	.manuscript{
-		font-size: 1.3em;/*ok*/
-	}
-}
-@media only screen and (min-width : 992px){
-	.manuscript{
-		font-size: 1.3em;/*ok*/
-	}
 }
 .manuscript .front{
 	margin-bottom: -1em;
@@ -687,14 +672,19 @@ ul{
 	position: absolute;
 	left:0;
 }
-@media only screen and (min-width : 320px){
-	.title .back-button{
-		font-size: .85em;
-	}
-}
 @media only screen and (min-width : 480px){
 	.title .back-button{
 		font-size: 1em;
+	}
+}
+@media only screen and (min-width : 768px){
+	.title .back-button{
+		font-size: 1.1em;
+	}
+}
+@media only screen and (min-width : 992px){
+	.title .back-button{
+		font-size: 1.2em;
 	}
 }
 
@@ -984,7 +974,7 @@ p.right .linenumber{
 	float: right;
 }
 .small{
-	font-size: 1em;
+	font-size: .8em;
 }
 .upsidedown{
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */
@@ -1158,16 +1148,3 @@ table .linenumber{
 	display:inline-block;
 }
 */
-
-@media only screen and (min-width : 320px){
-	.narrow-hr{
-	}
-}
-@media only screen and (min-width : 480px){
-	.narrow-hr{
-	}
-}
-@media only screen and (min-width : 768px){
-	.narrow-hr{
-	}
-}

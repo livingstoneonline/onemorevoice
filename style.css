@@ -792,10 +792,12 @@ ul{
 	font-weight: 300;
 	position: absolute;
 	left: 0;
+	padding-top: .2em;
 }
 @media only screen and (min-width : 480px){
 	.title .back-button{
 		font-size: 1em;
+		padding-top: 0em;
 	}
 }
 @media only screen and (min-width : 768px){

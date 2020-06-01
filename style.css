@@ -58,6 +58,12 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
+@media only screen and (min-width : 992px){
+	body{
+		font-size: .85em;
+		max-width: 42em;
+	}
+}
 h1{
 	font-size: 2em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -76,33 +82,41 @@ h3{
 	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
+	display: none;
 }
 @media only screen and (min-width : 480px){
 	h3{
 		font-size: 1em;
+		display: block;
 	}
 }
 @media only screen and (min-width : 768px){
 	h3{
 		font-size: 1.2em;
-	}
-}
-@media only screen and (min-width : 992px){
-	h3{
-		font-size: 1.3em;
+		display: block;
 	}
 }
 .title{
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.6em;
-	padding-bottom: .5em;
+	padding-bottom: 2em;
 	position: relative;
+}
+@media only screen and (min-width : 480px){
+	title{
+		padding-bottom: .5em;
+	}
+}
+@media only screen and (min-width : 768px){
+	title{
+		padding-bottom: 1em
+	}
 }
 .header-title{
 	display: none;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	.header-title{
 		display: block;
 	}
@@ -115,12 +129,25 @@ h3{
 .image-border{
 	border: 1px solid gray;
 }
+.title hr{
+	display:none;
+}
+@media only screen and (min-width : 992px){
+	.title hr{
+		display: block;
+	}
+}
 .main{
 	font-size: 1.3em;
 	text-align: left;
 	line-height: 1.6em;
 	margin-left: auto;
 	margin-right: auto;
+}
+@media only screen and (min-width : 992px){
+	.main{
+		font-size: 1.2em;
+	}
 }
 .credits{
 	font-size: 1.2em;
@@ -132,8 +159,13 @@ h3{
 		font-size: 1.15em;
 	}
 }
+@media only screen and (min-width : 992px){
+	.credits{
+		font-size: 1.1em;
+	}
+}
 .footer{
-	font-size: .95em;
+	font-size: 1em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	line-height: 1.6em;
@@ -195,7 +227,7 @@ nav{
 	position: relative;
 	display: block;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	.menu{
 		display: none;
 	}
@@ -256,13 +288,13 @@ body.fixed-nav .menu a.icon{
 	font-weight: 600;
 	display: none;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	.topnav{
 		display: block;
 	}
 }
 .topnav ul{
-	font-size: 1.1em;
+	font-size: .95em;
 	text-align: center;
 	list-style: none;
 	padding: 0 0 .5em 0;
@@ -346,7 +378,7 @@ input:checked + label::after{
 	position: absolute;
 }
 .topnav ul li .dropdown .dropdown-content ul li{
-	font-size: .9em;
+	font-size: .85em;
 	background-color: #e3e3e3; /*light gray*/
 	display: block;
 }
@@ -396,7 +428,7 @@ background-color: #dbdbdb; [light gray]
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* The following prevents overlay from appearing above 768px */
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	#myNav{
 		display: none !important;
 	}
@@ -478,7 +510,7 @@ body.fixed-nav .overlay .menu .close-title{
 /* .menu{
 	display: block;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	.menu{
 	display: none;
 	}
@@ -486,7 +518,7 @@ body.fixed-nav .overlay .menu .close-title{
 .topnav{
 	display: none;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	.topnav{
 		display: block; 
 	}
@@ -497,7 +529,7 @@ body.fixed-nav .overlay .menu .close-title{
 .overlay-content{
 	display: block;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	#myNav{
 		display: none !important;
 	}
@@ -505,8 +537,15 @@ body.fixed-nav .overlay .menu .close-title{
 .header-title{
 	display: none;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 992px){
 	.header-title{
+		display: block;
+	}
+.title hr{
+	display:none;
+}
+@media only screen and (min-width : 992px){
+	.title hr{
 		display: block;
 	}
 } */
@@ -625,6 +664,12 @@ ul{
 .journal{
 	font-size: 1.3em;
 }
+@media only screen and (min-width : 992px){
+	.manuscript,
+	.journal{
+		font-size: 1.2em;
+	}
+}
 .manuscript .front{
 	margin-bottom: -1em;
 }
@@ -667,7 +712,7 @@ ul{
 	color: #e4524b;
 }
 .title .back-button{
-	font-size: .85em;
+	font-size: .95em;
 	font-weight: 300;
 	position: absolute;
 	left: 0;
@@ -973,7 +1018,7 @@ p.right .linenumber{
 	float: right;
 }
 .small{
-	font-size: .8em;
+	font-size: .85em;
 }
 .upsidedown{
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */

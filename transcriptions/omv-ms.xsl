@@ -243,7 +243,7 @@
 		</div>
 
 		<div class="narrow-mobile">
-			<p>Please turn your mobile device to <span class="site-red">landscape</span> for optimal viewing of this archival document.</p>
+			<p>Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
 		</div>
 		<div class="manuscript"><!-- style="background:#{$body-color};" -->
 

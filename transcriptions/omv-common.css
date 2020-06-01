@@ -1,3 +1,4 @@
+
 /*CSS File for One More Voice (http://onemorevoice.org/)*/
 
 /*Created by Adrian S. Wisnicki*/
@@ -10,7 +11,7 @@
 Table of Contents
 -----------------
 1. Textual divisions
-2. Back-button, item details
+2. Back-button
 3. pb, lb, linenumber 
 4. Milestone and lines
 5. p, ab, note, fw, column break, footnotes 
@@ -32,6 +33,25 @@ Table of Contents
 	text-align: center;
 	line-height: 1.6em;
 	/*white-space:nowrap;*/
+}
+.manuscript{
+	font-size: 1.3em;
+}
+@media only screen and (min-width : 320px){}/*ok*/
+@media only screen and (min-width : 480px){
+	.manuscript{
+		font-size: 1.3em;/*ok*/
+	}
+}
+@media only screen and (min-width : 768px){
+	.manuscript{
+		font-size: 1.3em;/*ok*/
+	}
+}
+@media only screen and (min-width : 992px){
+	.manuscript{
+		font-size: 1.3em;/*ok*/
+	}
 }
 .manuscript .front{
 	margin-bottom: -1em;
@@ -60,16 +80,16 @@ Table of Contents
 }
 
 
-/* 2. Back-button, item details */
+/* 2. Back-button */
 
 .back-button a,
 .back-button a:visited{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #e4524b;
+	color: #2e68ac;
 	text-decoration: none;
 }
 .back-button a:hover{
-	color: #2e68ac;
+	color: #e4524b;
 }
 .title .back-button{
 	font-size: .85em;
@@ -86,16 +106,6 @@ Table of Contents
 	.title .back-button{
 		font-size: 1em;
 	}
-}
-.item-details{
-	text-align: left;
-	margin-top: 0em;
-	line-height: 1.6em;
-}
-.item-title{
-	padding-bottom: 1em;
-	color: #2e68ac;
-	font-weight: bold;
 }
 
 /* 3. pb, lb, linenumber */

@@ -242,6 +242,9 @@
 			<hr/>
 		</div>
 
+		<div class="narrow-mobile">
+			<p>Please turn your mobile device to <span class="site-red">landscape</span> for optimal viewing of this archival document.</p>
+		</div>
 		<div class="manuscript"><!-- style="background:#{$body-color};" -->
 
 			<div class="TEI front {$front}" style="background:#{$body-color-front};">

@@ -728,7 +728,7 @@ ul{
 	margin-left: .5em;
 	margin-right: .5em;
 }
-/* This turns off wide manuscript items on mobile. See corresponding XSL */
+/* This turns off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 .narrow-mobile{
 	font-size: 1.1em;
 	font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -748,8 +748,7 @@ ul{
 	-webkit-hyphens: initial;
 }
 /* Maximum aspect ratio */
-@media only screen and (max-aspect-ratio: 8/5), 
-only screen and (orientation: portrait)  and (max-width : 580px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width : 580px), only screen and (orientation: portrait)  and (max-width : 580px){
 	body .manuscript{
 		display: none;
 	}

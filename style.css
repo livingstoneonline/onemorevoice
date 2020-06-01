@@ -756,7 +756,7 @@ p.right .linenumber{
 .manuscript .tripleline,
 .manuscript .second-line,
 .manuscript .third-line{
-	/* width: 27em; */
+	/* width: TBD */
 }
 .line{
 	border-bottom: 1px solid #d0d0d0;
@@ -764,10 +764,6 @@ p.right .linenumber{
 	border-top: 1px solid #58484b;
 }
 .doubleline{
-	border-top: 4px double #8c8b8b;
-}
-.quarterline.doubleline{
-	/* width: 10em; */
 	border-top: 4px double #8c8b8b;
 }
 .tripleline{
@@ -780,7 +776,7 @@ p.right .linenumber{
 	border-top: 1px solid #58484b;
 }
 .manuscript .halfline{
-	/* width: 17.5em; */
+	width: 50%
 }
 .journal .halfline{
 	width: 60%;
@@ -791,13 +787,16 @@ p.right .linenumber{
 	border-top: 1px solid #58484b;
 }
 .manuscript .quarterline{
-	/* width: 10em; */
+	width: 25%
 }
 .journal .quarterline{
 	width: 40%;
 }
 .halfline.quarterline{
 	width: 30%;
+}
+.quarterline.doubleline{
+	border-top: 4px double #8c8b8b;
 }
 .second-line{
 	border-bottom: 1px solid #d0d0d0;
@@ -933,7 +932,7 @@ p.right .linenumber{
 }
 .manuscript .center{
 	text-indent: 0;
-	margin-left: 2.7em;
+	margin-left: 3.7em;
 }
 .journal .center{
 	text-align: center;

@@ -155,10 +155,10 @@ a:hover{
 .currentLink{
 	color: #640200;
 }
-a.anchor {
-    display: block;
-    position: relative;
-    top: -80px;
+a.anchor{
+	display: block;
+	position: relative;
+	top: -80px;
 	visibility: hidden;
 }
 /* The following item is used on the bibliography.html page. */
@@ -197,7 +197,7 @@ nav{
 }
 @media only screen and (min-width : 768px){
 	.menu{
-	display: none;
+		display: none;
 	}
 }
 body.fixed-nav .menu{
@@ -226,7 +226,7 @@ body.fixed-nav .menu .icon-title{
 }
 @media only screen and (min-width : 480px){
 	.menu .nav-title{
-	font-size: 2em;
+		font-size: 2em;
 	}
 }
 .menu a.icon{
@@ -570,7 +570,7 @@ hr{
 
 /* 7. Lists */
 
-ol, 
+ol,
 ul{
 	padding-left: 1em;
 	padding-bottom: 1em;
@@ -609,7 +609,7 @@ ul{
 @media only screen and (min-width : 768px){
 	.map-list{
 		text-indent: 1em;
-		
+
 	}
 }
 
@@ -670,7 +670,7 @@ ul{
 	font-size: .85em;
 	font-weight: 300;
 	position: absolute;
-	left:0;
+	left: 0;
 }
 @media only screen and (min-width : 480px){
 	.title .back-button{

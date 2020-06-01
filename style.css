@@ -8,8 +8,8 @@
 Table of Contents
 -----------------
 1. Main Components 
-2. Navbar
-3. Mobile Fixed Nav
+2. Mobile Fixed Nav
+3. Navbar
 4. Overlay
 5. Headings & Lines
 6. Formatting
@@ -46,6 +46,14 @@ body{
 	padding-bottom: .5em;
 	position: relative;
 }
+.header-title{
+	display: none;
+}
+@media only screen and (min-width : 768px){
+	.header-title{
+		display: block;
+	}
+}
 .image{
 	margin-left: auto;
 	margin-right: auto;
@@ -62,7 +70,6 @@ body{
 }
 .credits{
 	line-height: 1.6em;
-	padding-top: 1em;
 	text-align: left;
 }
 .footer{
@@ -79,7 +86,7 @@ ul{
 @media only screen and (min-width : 768px){
 	ol,
 	ul{
-		padding-left: 1.5em;/*ok*/
+		padding-left: 1.5em;
 	}
 }
 /* The following three items are used on the text.html page. */
@@ -98,7 +105,7 @@ ul{
 }
 @media only screen and (min-width : 768px){
 	.ul-list{
-		padding-left: 1.5em;/*ok*/
+		padding-left: 1.5em;
 	}
 }
 /* The following item is used on the site_map.html page. */
@@ -109,7 +116,7 @@ ul{
 }
 @media only screen and (min-width : 768px){
 	.map-list{
-		text-indent: 1em;/*ok*/
+		text-indent: 1em;
 		
 	}
 }
@@ -119,56 +126,108 @@ ul{
 }
 @media only screen and (min-width : 320px){
 	.return-top{
-		font-size: .9em;/*ok*/
+		font-size: .9em;
 	}
 }
 @media only screen and (min-width : 480px){
 	.return-top{
-		font-size: .9em;/*ok*/
+		font-size: .9em;
 	}
 }
 @media only screen and (min-width : 768px){
 	.return-top{
-		font-size: .9em;/*ok*/
+		font-size: .9em;
 	}
 }
 
 
-/* 2. Navbar */
+/* 3. Mobile Fixed Nav */
+/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
+nav{
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+}
+/* applied after scroll height reached */
+.fixed-nav nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-bottom: 1px gray solid;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+}
+.menu{
+	text-align: center;
+	padding: 1em 0;
+	position: relative;
+	display: block;
+}
+@media only screen and (min-width : 768px){
+	.menu{
+	display: none;
+	}
+}
+body.fixed-nav .menu{
+	padding: .5em 0;
+}
+.menu .icon-title{
+	padding-top: .2em;
+	left: 0;
+	position: absolute;
+	display: block;
+}
+@media only screen and (min-width : 480px){
+	.menu .icon-title{
+		padding-top: .4em;
+	}
+}
+body.fixed-nav .menu .icon-title{
+	left: 1em;
+	position: absolute;
+}
+.menu .nav-title{
+	font-size: 1.7em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	display: block;
+}
+@media only screen and (min-width : 480px){
+	.menu .nav-title{
+	font-size: 2em;
+	}
+}
+.menu a.icon{
+	font-size: 1.5em;
+	color: black;
+	margin-bottom: .5em;
+	border-top: none;
+	display: block;
+}
+.menu a.icon:hover{
+	color: black;
+}
+body.fixed-nav .menu .nav-title,
+body.fixed-nav .menu a.icon{
+	color: black;
+}
+
+
+/* 3. Navbar */
 /* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
-.menu,
-.nav-title,
-.icon-title,
-.overlay-content{
-	display: none;
-}
-.header-title{
-	display: none;
-}
-@media screen and (min-width : 768px){
-	.header-title{
-		display: block;/*ok*/
-	}
-}
+
 .topnav{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 600;
 	display: none;
 }
-.topnav a,
-.topnav a:visited{
-	display: none;
-}
-@media screen and (min-width : 768px){
+@media only screen and (min-width : 768px){
 	.topnav{
-		display: block;/*ok*/
-	}
-}
-@media screen and (min-width : 768px){
-	.topnav a,
-	.topnav a:visited{
-		display: block;/*ok*/
+		display: block;
 	}
 }
 .topnav ul{
@@ -301,89 +360,19 @@ background-color: #dbdbdb; [light gray]
 */
 
 
-/* 3. Mobile Fixed Nav */
-/* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
-nav{
-	text-align: center;
-	background-color: white;
-	width: 100%;
-	margin: 0 auto;
-}
-/* applied after scroll height reached */
-.fixed-nav nav{
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	border-bottom: 1px gray solid;
-	box-shadow: 0 4px 6px -6px #222;
-	-webkit-box-shadow: 0 4px 6px -6px #222;
-	-moz-box-shadow: 0 4px 6px -6px #222;
-}
-.menu{
-	text-align: center;
-	padding: 1em 0;
-	position: relative;
-	display: block;
-}
-body.fixed-nav .menu{
-	padding: .5em 0;
-}
-.menu .icon-title{
-	padding-top: .2em;
-	left: 0;
-	position: absolute;
-	display: block;
-}
-@media only screen and (min-width : 480px){
-	.menu .icon-title{
-		padding-top: .5em;
-	}
-}
-body.fixed-nav .menu .icon-title{
-	left: 1em;
-	position: absolute;
-}
-.menu .nav-title{
-	font-size: 1.7em;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-weight: 600;
-	display: block;
-}
-@media only screen and (min-width : 480px){
-	.menu .nav-title{
-	font-size: 2em;
+/* 4. Overlay */
+/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+/* The following prevents overlay from appearing above 768px */
+@media only screen and (min-width : 768px){
+	#myNav{
+		display: none !important;
 	}
 }
 body.fixed-nav .overlay .menu .nav-title,
 body.fixed-nav .overlay .menu .close-title{
 	color: whitesmoke;
 }
-.menu a.icon{
-	font-size: 1.5em;
-	color: black;
-	margin-bottom: .5em;
-	border-top: none;
-	display: block;
-}
-.menu a.icon:hover{
-	color: black;
-}
-body.fixed-nav .menu .nav-title,
-body.fixed-nav .menu a.icon{
-	color: black;
-}
-@media only screen and (min-width : 768px){
-	nav,
-	.fixed-nav nav{
-		display: none;/*ok*/
-	}
-}
-
-
-/* 4. Overlay */
-/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
 .overlay{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -392,13 +381,13 @@ body.fixed-nav .menu a.icon{
 	opacity: 1;
 	height: 100%;
 	width: 100%;
-	display: none;
 	left: 0;
 	top: 0;
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top *
 	overflow-x: hidden; /* Disable horizontal scroll */
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	display: none;
 }
 .overlay-content{
 	font-size: 1.1em;
@@ -406,9 +395,9 @@ body.fixed-nav .menu a.icon{
 	margin-top: 0;
 	padding-bottom: 3em;
 	width: 100%;
-	display: block;
 	top: 1em;
 	position: relative;
+	display: block;
 }
 .overlay ul{
 	list-style-type: none;
@@ -440,18 +429,54 @@ body.fixed-nav .menu a.icon{
 .overlay .menu .close-title{
 	font-size: 2em;
 	vertical-align: middle;
-	line-height: 0.8em;
+	line-height: 1em;
 	right: .8em;
 	position: absolute;
+}
+@media only screen and (min-width : 480px){
+	.overlay .menu .close-title{
+		line-height: 1.1em;
+	}
 }
 .overlay .menu .close-title a{
 	text-decoration: none;
 }
+/* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
+/* .menu{
+	display: block;
+}
 @media only screen and (min-width : 768px){
-	.overlay{
-		display: none;/*ok*/
+	.menu{
+	display: none;
 	}
 }
+.topnav{
+	display: none;
+}
+@media only screen and (min-width : 768px){
+	.topnav{
+		display: block; 
+	}
+}
+.overlay{
+	display: none;
+}
+.overlay-content{
+	display: block;
+}
+@media only screen and (min-width : 768px){
+	#myNav{
+		display: none !important;
+	}
+}
+.header-title{
+	display: none;
+}
+@media only screen and (min-width : 768px){
+	.header-title{
+		display: block;
+	}
+} */
 
 
 /* 5. Headings & Lines */
@@ -542,20 +567,20 @@ a.anchor {
 h1{
 	font-size: 2em;
 }
-@media only screen and (min-width : 320px){}/*ok*/
+@media only screen and (min-width : 320px){}
 @media only screen and (min-width : 480px){
 	h1{
-		font-size: 2em;/*ok*/
+		font-size: 2em;
 	}
 }
 @media only screen and (min-width : 768px){
 	h1{
-		font-size: 2.2em;/*ok*/
+		font-size: 2.2em;
 	}
 }
 @media only screen and (min-width : 992px){
 	h1{
-		font-size: 2.3em;/*ok*/
+		font-size: 2.3em;
 	}
 }
 
@@ -569,76 +594,76 @@ h3{
 }
 @media only screen and (min-width : 480px){
 	h3{
-		font-size: 1em;/*ok*/
+		font-size: 1em;
 	}
 }
 @media only screen and (min-width : 768px){
 	h3{
-		font-size: 1.05em;/*ok*/
+		font-size: 1.05em;
 	}
 }
 @media only screen and (min-width : 992px){
 	h3{
-		font-size: 1.1em;/*ok*/
+		font-size: 1.1em;
 	}
 }
 
 .main{
 	font-size: 1.3em;
 }
-@media only screen and (min-width : 320px){}/*ok*/
+@media only screen and (min-width : 320px){}
 @media only screen and (min-width : 480px){
 	.main{
-		font-size: 1.3em;/*ok*/
+		font-size: 1.3em;
 	}
 }
 @media only screen and (min-width : 768px){
 	.main{
-		font-size: 1.3em;/*ok*/
+		font-size: 1.3em;
 	}
 }
 @media only screen and (min-width : 992px){
 	.main{
-		font-size: 1.3em;/*ok*/
+		font-size: 1.3em;
 	}
 }
 
 .credits{
 	font-size: 1.2em;
 }
-@media only screen and (min-width : 320px){}/*ok*/
+@media only screen and (min-width : 320px){}
 @media only screen and (min-width : 480px){
 	.credits{
-		font-size: 1.2em;/*ok*/
+		font-size: 1.2em;
 	}
 }
 @media only screen and (min-width : 768px){
 	.credits{
-		font-size: 1.15em;/*ok*/
+		font-size: 1.15em;
 	}
 }
 @media only screen and (min-width : 992px){
 	.credits{
-		font-size: 1.15em;/*ok*/
+		font-size: 1.15em;
 	}
 }
 
 .footer{
 	font-size: .95em;
 }
-@media only screen and (min-width : 320px){}/*ok*/
+@media only screen and (min-width : 320px){}
 @media only screen and (min-width : 480px){
 	.footer{
-		font-size: .95em;/*ok*/
+		font-size: .95em;
 	}
 }
 @media only screen and (min-width : 768px){
 	.footer{
-		font-size: 1em;/*ok*/
+		font-size: 1em;
 	}
 }
 @media only screen and (min-width : 992px){	
 	.footer{
-		font-size: 1em;/*ok*/
+		font-size: 1em;
 	}
 }

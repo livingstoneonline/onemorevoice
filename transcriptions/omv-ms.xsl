@@ -827,6 +827,14 @@
 		</span>
 	</xsl:template>
 
+	<xsl:template match="pb[@type='blank']">
+		<br/><br/>
+		<span class="pb-title">
+			<xsl:value-of select="@n"/>
+		</span>
+		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">[This page is blank in the original manuscript.]</p>		
+	</xsl:template>
+
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<br/><br/>

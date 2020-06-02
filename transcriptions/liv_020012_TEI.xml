@@ -8,14 +8,14 @@
         <fileDesc>
             <titleStmt>
                 <title>To the Editor of the Times</title><!-- Change -->
-                <title type="alternative">To the Editor of the Times, 10 April 1874</title><!-- Change; note addition of date -->
+                <title type="alternative">To the Editor of the Times, 9 April 1874</title><!-- Change; note addition of date -->
                 <author>Waller, Horace, 1833-1896</author>
-				<author>Brine, Lindesay, 1834-1906</author>
-				<author>Chumah, James, c.1850-1882</author>
+				<author>[Brine, Lindesay, 1834-1906]</author>
+				<author>[Chumah, James, c.1850-1882]</author>
 				<author role="first">Waller, Horace</author>
                 <author role="first-normalized">Horace Waller</author><!-- Change -->
-				<author role="normalized">Lindesay Brine</author>
-				<author role="normalized">James Chumah</author>
+				<author role="normalized">[Lindesay Brine]</author>
+				<author role="normalized">[James Chumah]</author>
 				<!-- <author> = surname, forename, dates [archival version of name] -->
 				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
 				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] -->
@@ -62,11 +62,11 @@
 					</monogr>
 				</biblStruct>
                 <bibl type="sourceMetadata">
-                    <title></title><!-- Change -->
+                    <title>To the Editor of the Times</title><!-- Change -->
 					<author xml:id="HW">Waller, Horace, 1833-1896</author><!-- Change -->
-					<author xml:id="LB">Brine, Lindesay, 1834-1906</author>
-                	<author xml:id="JC">Chumah, James, c.1850-1882</author><!-- Change -->
-                    <date type="publication" when="1874-04-10">10 April 1874</date>
+					<author xml:id="LB">[Brine, Lindesay, 1834-1906]</author>
+                	<author xml:id="JC">[Chumah, James, c.1850-1882]</author><!-- Change -->
+                    <date when="1874-04-10">9 April 1874; [1874]; [1874]</date>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -91,8 +91,8 @@
     </teiHeader>
 
     <text>
-       	<body><!-- Change; this is the color of the MS page; value can be any color --><!-- No need to specify if it's white. AW -->
-			<div><!-- Change; this is the color of the writing; only use auto-suggested values -->
+       	<body>
+			<div>
 
 	<pb facs="liv_020012" n="0001"/>
 
@@ -139,7 +139,7 @@ some years since under circumstances so brutal that I can
 understand <persName>Dr. Livingstone</persName> in suppressing the details in
 mentioning the fact to him. <persName>Chasika</persName>, <persName>Chinsoro</persName>'s widow, is
 very poorly off at <region>the Cape</region>. Both, in company with
-<persName>Chumah</persName>, were originally liberated by us from the slavers. <!-- Are we coding slavers somehow? HB -->
+<persName>Chumah</persName>, were originally liberated by us from the slavers. <!-- Are we coding slavers somehow? HB --><!-- No. -->
 <persName>Chumah</persName>'s wife seems a new acquisition.</p>
 <lb/><p>Thanks to the heroic conduct of these men an enormous
 mass of geographlcal information is now in the possession
@@ -147,7 +147,7 @@ of <persName>Dr. Livingstone</persName>'s family. In common with others I have
 received very long communications from him which I will
 not touch on now beyond stating that there is continual
 evidence in them that at <settlement>Ujiji</settlement>, at <settlement>Unyanyembe</settlement>&#8212;in short,
-at every point between <region>the coast</region> and <persName>Dr. Livingstone</persName>'s <!-- Not sure if the whole area of exploring grounds gets a tag too? HB --><!-- OK as is. AW -->
+at every point between <region>the coast</region> and <persName>Dr. Livingstone</persName>'s <!-- Not sure if the whole area of exploring grounds gets a tag too? HB --><!-- OK as is. I'm not even sure we should code generic regions like this. AW -->
 exploring ground, the <term type="collective">Arabs</term> were fully aware how suicidal
 it was to allow him to correspond with the outer
 world. It was, in fact, death to be caught taking <bibl>letters</bibl>

@@ -1,3 +1,12 @@
+.page-break:first-of-type{
+	background-color: white;
+	margin: 0 -2px;
+	border-top: 2px solid gainsboro;
+	border-bottom: 2px solid gainsboro;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+
 /* CSS File for One More Voice (http://onemorevoice.org/) */
 
 /* Created by Adrian S. Wisnicki */
@@ -745,9 +754,8 @@ ul{
 	display: inline-block;
 	/*white-space:nowrap;*/
 	text-align: left;
-	margin-left: .5em;
-	margin-right: .5em;
 }
+
 /* This turns off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 .narrow-mobile{
 	font-size: 1.1em;
@@ -767,6 +775,7 @@ ul{
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
 }
+
 /* Maximum aspect ratio */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width : 580px), only screen and (orientation: portrait)  and (max-width : 580px){
 	body .manuscript{

@@ -3,14 +3,14 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet href="omv-journal.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020002"><!-- Change @xml:id -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020002">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>The Story of My Life</title><!-- Change -->
+                <title>The Story of My Life</title>
                 <title type="alternative">The Story of My Life, August 1891</title><!-- Change; note addition of date -->
 				<author>Saleh Bin Osman</author>
-                <author>[Glave, Edward J., 1863-1895]</author><!-- Change -->
+                <author>[Glave, Edward J., 1863-1895]</author>
 				<author role="first">Saleh Bin Osman</author>
 				<author role="first-normalized">Saleh Bin Osman</author>
 				<author role="normalized">[Edward J. Glave]</author>
@@ -47,8 +47,8 @@
                 <authority>One More Voice</authority>
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-                <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_020002</idno><!-- Change -->
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020002</idno>
 				<availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                       	Creative Commons Attribution 4.0 International
@@ -70,11 +70,11 @@
 					</monogr>
 				</biblStruct>
                 <bibl type="sourceMetadata">
-                    <title>The Story of My Life</title><!-- Change -->
-					<author xml:id="SBO">Saleh Bin Osman</author><!-- Change -->
-                	<author xml:id="EJG">[Glave, Edward J., 1863-1895]</author><!-- Change -->
+                    <title>The Story of My Life</title>
+					<author xml:id="SBO">Saleh Bin Osman</author>
+                	<author xml:id="EJG">[Glave, Edward J., 1863-1895]</author>
                     <date type="publication" when="1891-08">August 1891</date><!-- Change, including attributes -->
-                    <placeName type="focusRegion">West and Central Africa</placeName><!-- Change -->
+                    <placeName type="focusRegion">West and Central Africa</placeName>
                 </bibl>
             </sourceDesc>
         </fileDesc>

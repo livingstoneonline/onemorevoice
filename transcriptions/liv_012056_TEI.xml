@@ -3,14 +3,14 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet href="omv-ms.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_012056"><!-- Change @xml:id -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_012056">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Testimony</title><!-- Change -->
+                <title>Testimony</title>
                 <title type="alternative">Testimony, 12 November 1890</title><!-- Change; note addition of date -->
                 <author>Saleh Bin Osman</author>
-                <author>[Glave, Edward J., 1863-1895]</author><!-- Change -->
+                <author>[Glave, Edward J., 1863-1895]</author>
 				<author role="first">Saleh Bin Osman</author>
 				<author role="first-normalized">Saleh Bin Osman</author>
 				<author role="normalized">[Edward J. Glave]</author>
@@ -46,8 +46,8 @@
                 <authority>One More Voice</authority>
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-                <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_012056</idno><!-- Change -->
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_012056</idno>
             <availability>
 	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
 	                      	Creative Commons Attribution 4.0 International
@@ -56,24 +56,24 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <country>United States</country><!-- Change as needed -->
-                        <settlement>Washington, D.C.</settlement><!-- Change as needed -->
-                        <repository>Smithsonian Institution. Libraries. Joseph F. Cullman 3rd Library of Natural History</repository><!-- Change as needed -->
-                        <idno type="shelfmark">M055</idno><!-- Change as needed -->
+                        <country>United States</country>
+                        <settlement>Washington, D.C.</settlement>
+                        <repository>Smithsonian Institution. Libraries. Joseph F. Cullman 3rd Library of Natural History</repository>
+                        <idno type="shelfmark">M055</idno>
                     </msIdentifier>
                     <physDesc>
-                        <handDesc><!-- Add <handNote>s if needed. -->
+                        <handDesc>
                             <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
                 <bibl type="sourceMetadata">
-                    <title>Testimony (English Translation of Swahili Manuscript)</title><!-- Change -->
-                    <author xml:id="SBO">Saleh Bin Osman</author><!-- Change -->
-                    <author xml:id="EJG">Glave, Edward J., 1863-1895</author><!-- Change -->
+                    <title>Testimony</title>
+                    <author xml:id="SBO">Saleh Bin Osman</author>
+                    <author xml:id="EJG">Glave, Edward J., 1863-1895</author>
                     <date type="composition" when="1890-11-12">12 November 1890</date><!-- Change, including attributes -->
-                    <placeName type="compositionPlace">[Central Africa]</placeName><!-- Change -->
+                    <placeName type="compositionPlace">[Central Africa]</placeName>
                 </bibl>
             </sourceDesc>
         </fileDesc>

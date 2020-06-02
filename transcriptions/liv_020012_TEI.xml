@@ -3,17 +3,17 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet href="omv-journal.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020012"><!-- Change @xml:id -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020012">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>To the Editor of the Times</title><!-- Change -->
+                <title>To the Editor of the Times</title>
                 <title type="alternative">To the Editor of the Times, 9 April 1874</title><!-- Change; note addition of date -->
                 <author>Waller, Horace, 1833-1896</author>
 				<author>[Brine, Lindesay, 1834-1906]</author>
 				<author>[Chumah, James, c.1850-1882]</author>
 				<author role="first">Waller, Horace</author>
-                <author role="first-normalized">Horace Waller</author><!-- Change -->
+                <author role="first-normalized">Horace Waller</author>
 				<author role="normalized">[Lindesay Brine]</author>
 				<author role="normalized">[James Chumah]</author>
 				<!-- <author> = surname, forename, dates [archival version of name] -->
@@ -62,10 +62,10 @@
 					</monogr>
 				</biblStruct>
                 <bibl type="sourceMetadata">
-                    <title>To the Editor of the Times</title><!-- Change -->
-					<author xml:id="HW">Waller, Horace, 1833-1896</author><!-- Change -->
+                    <title>To the Editor of the Times</title>
+					<author xml:id="HW">Waller, Horace, 1833-1896</author>
 					<author xml:id="LB">[Brine, Lindesay, 1834-1906]</author>
-                	<author xml:id="JC">[Chumah, James, c.1850-1882]</author><!-- Change -->
+                	<author xml:id="JC">[Chumah, James, c.1850-1882]</author>
                     <date when="1874-04-10">9 April 1874; [1874]; [1874]</date>
                 </bibl>
             </sourceDesc>

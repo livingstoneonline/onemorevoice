@@ -3,13 +3,13 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet href="omv-ms.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000085"><!-- Change @xml:id -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000085">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Letter to William O. Livingstone</title><!-- Change -->
+                <title>Letter to William O. Livingstone</title>
                 <title type="alternative">Letter to William O. Livingstone, October 1873</title><!-- Change; note addition of date -->
-                <author>Wainwright, Jacob, ?-1892</author><!-- Change -->
+                <author>Wainwright, Jacob, c1859-1892</author>
                 <author role="first">Wainwright, Jacob</author>
 				<author role="first-normalized">Jacob Wainwright</author>
 				<!-- <author> = surname, forename, dates [archival version of name] -->
@@ -36,8 +36,8 @@
                 <authority>One More Voice</authority>
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-                <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_000085</idno><!-- Change -->
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_000085</idno>
             <availability>
 	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
 	                      	Creative Commons Attribution 4.0 International
@@ -46,23 +46,23 @@
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
-                        <country>United Kingdom</country><!-- Change as needed -->
-                        <settlement>Blantyre</settlement><!-- Change as needed -->
-                        <repository>David Livingstone Centre</repository><!-- Change as needed -->
-                        <idno type="shelfmark">836</idno><!-- Change as needed -->
+                        <country>United Kingdom</country>
+                        <settlement>Blantyre</settlement>
+                        <repository>David Livingstone Centre</repository>
+                        <idno type="shelfmark">836</idno>
                     </msIdentifier>
                     <physDesc>
-                        <handDesc><!-- Add <handNote>s if needed. -->
+                        <handDesc>
                             <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
                 <bibl type="sourceMetadata">
-                    <title>Letter to William O. Livingstone</title><!-- Change -->
-                    <author xml:id="JW">Wainwright, Jacob, ?-1892</author>
+                    <title>Letter to William O. Livingstone</title>
+                    <author xml:id="JW">Wainwright, Jacob, c.1859-1892</author>
                     <date type="composition" when="1873-10">October 1873</date><!-- Change, including attributes -->
-                    <placeName type="compositionPlace">Ukhonongo</placeName><!-- Change -->
+                    <placeName type="compositionPlace">Ukhonongo</placeName>
                 </bibl>
             </sourceDesc>
         </fileDesc>

@@ -3,15 +3,15 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet href="omv-journal.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020003"><!-- Change @xml:id -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020003">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Notes on African Geography</title><!-- Change -->
+                <title>Notes on African Geography</title>
                 <title type="alternate">Notes on African Geography, 1845</title><!-- Change; note addition of date -->
 				<author>MacQueen, James, 1778-1870</author>
-                <author>[Lief Ben Saeid]</author><!-- Change -->
-				<author>[Wogga, Thomas]</author><!-- Change -->
+                <author>[Lief Ben Saeid]</author>
+				<author>[Wogga, Thomas]</author>
 				<author role="first">MacQueen, James</author>
 				<author role="first-normalized">James MacQueen</author>
 				<author role="normalized">[Lief Ben Saeid]</author>
@@ -51,8 +51,8 @@
                 <authority>One More Voice</authority>
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-                <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_020003</idno><!-- Change -->
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020003</idno>
             <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                       	Creative Commons Attribution 4.0 International
@@ -72,13 +72,12 @@
 					</monogr>
 				</biblStruct>
                 <bibl type="sourceMetadata">
-					<title>Notes on African Geography</title><!-- Change -->                	
+					<title>Notes on African Geography</title>                	
 					<author xml:id="JM">MacQueen, James, 1778-1870</author>
-                	<author xml:id="LBS">[Lief Ben Saeid]</author><!-- Change -->
-					<author xml:id="TW">[Wogga, Thomas]</author><!-- Change -->
-					<title>Notes on African Geography</title><!-- Change -->
+                	<author xml:id="LBS">[Lief Ben Saeid]</author>
+					<author xml:id="TW">[Wogga, Thomas]</author>
                     <date type="publication" when="1845">1845</date><!-- Change, including attributes -->
-                    <placeName type="focusRegion">Central Africa</placeName><!-- Change -->
+                    <placeName type="focusRegion">Central Africa</placeName>
                 </bibl>
             </sourceDesc>
         </fileDesc>

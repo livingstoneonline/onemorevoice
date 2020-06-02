@@ -3,16 +3,16 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet href="omv-journal.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020001"><!-- Change @xml:id -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020001">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</title><!-- Change -->
+                <title>Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</title>
                 <title type="alternative">Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar, 31 May 1860</title><!-- Change; note addition of date -->
-                <author>[Bombay] Government</author>
+                <author>[British] Government</author>
 				<author>[Said Bin Habeeb]</author>
 				<author role="first">[Bombay] Government</author>
-                <author role="first-normalized">[Bombay] Government</author><!-- Change -->
+                <author role="first-normalized">[British] Government</author>
 				<author role="normalized">[Said Bin Habeeb]</author>
 				<!-- <author> = surname, forename, dates [archival version of name] -->
 				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
@@ -47,8 +47,8 @@
                 <authority>One More Voice</authority>
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-                <date>2020</date><!-- Change if necessary -->
-                <idno type="LEAP-ID">liv_020001</idno><!-- Change -->
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020001</idno>
 				<availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                       	Creative Commons Attribution 4.0 International
@@ -71,11 +71,11 @@
 					</monogr>
 				</biblStruct>
                 <bibl type="sourceMetadata">
-                    <title>Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</title><!-- Change -->
-					<author xml:id="SBH">Said Bin Habeeb</author><!-- Change -->
-                	<author xml:id="BG">[Bombay] Government</author><!-- Change -->
+                    <title>Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</title>
+					<author xml:id="SBH">Said Bin Habeeb</author>
+                	<author xml:id="BG">[British] Government</author>
                     <date type="publication" when="1860-05-31">31 May 1860</date><!-- Change, including attributes -->
-                    <placeName type="focusRegion">East and Central Africa</placeName><!-- Change -->
+                    <placeName type="focusRegion">East and Central Africa</placeName>
                 </bibl>
             </sourceDesc>
         </fileDesc>

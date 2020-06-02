@@ -5,6 +5,7 @@
 	xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs xd tei jc"
 	version="2.0">
 <!-- /*xmlns="http://www.w3.org/TR/REC-html40"*/ -->
+<!-- Useful for DTDs https://www.w3.org/TR/xhtml1/dtds.html#h-A2 -->
 	<xd:doc scope="stylesheet">
 		<xd:desc>
 			<xd:p><xd:b>Author:</xd:b> Adrian S. Wisnicki</xd:p>

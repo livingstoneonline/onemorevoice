@@ -707,7 +707,9 @@ ul{
 .transcription{
 	text-align: center;
 }
-.manuscript,
+.manuscript{
+	display: inline-block;
+}
 .journal{
 	font-size: 1.3em;
 	display: block;

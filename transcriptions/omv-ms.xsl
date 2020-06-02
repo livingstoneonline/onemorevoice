@@ -805,18 +805,6 @@
 
 	<!-- For "orig" see above -->
 
-	<!-- Not sure what this does. AW -->
-	<xsl:template match="jc:page">
-		<div class="page">
-			<br/>
-			<div class="page-break">&#160;</div>
-			<span class="pb-title">
-				<xsl:value-of select="@n"/>
-			</span>
-			<xsl:apply-templates/>
-		</div>
-	</xsl:template>
-
 	<xsl:template match="text/body/div[1]/pb[1]|text/front/div[1]/pb[1]|text/back/div[1]/pb[1]" priority="10">
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
@@ -824,7 +812,7 @@
 	</xsl:template>
 
 	<xsl:template match="pb">
-		<br/>
+		<br/><br/>
 		<div class="page-break">&#160;</div>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
@@ -832,7 +820,7 @@
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">
-		<br/>
+		<br/><br/>
 		<div class="page-break">&#160;</div>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
@@ -843,9 +831,22 @@
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<br/><br/>
+		<div class="page-break">&#160;</div>
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
 		</span>
+	</xsl:template>
+
+	<!-- Not sure what this does. AW -->
+	<xsl:template match="jc:page">
+		<div class="page">
+			<br/><br/>
+			<div class="page-break">&#160;</div>
+			<span class="pb-title">
+				<xsl:value-of select="@n"/>
+			</span>
+			<xsl:apply-templates/>
+		</div>
 	</xsl:template>
 
 	<!-- Revisit this so that tooltips are created -->

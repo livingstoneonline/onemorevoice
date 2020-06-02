@@ -394,7 +394,7 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="corr|expan|reg|supplied"/>
+	<xsl:template match="corr|expan|reg"/>
 	
 	<!-- Text below removed for annotated edition; also see app, supplied & unclear -->
 	
@@ -492,6 +492,26 @@
 	</xsl:template>
 
 	<!-- End of addSpan/anchor -->
+
+	<!-- app: show first rdg, offer alternatives in title -->
+	<xsl:template match="app">
+		<!-- Hidden for annotated version. Also choice, supplied & unclear. -->
+		<!--<span class="app">
+			<xsl:attribute name="title">
+				<xsl:for-each select="rdg">
+					<xsl:value-of select="concat(name(),': ', ., '; ')"/>
+				</xsl:for-each>
+			</xsl:attribute>
+			<xsl:apply-templates select="rdg[1]"/>
+		</span>-->
+		<xsl:variable name="rdg-rdg">
+			<xsl:value-of select="../app/rdg" separator=" [or] "/>
+		</xsl:variable>
+		<span class="app">
+			<xsl:attribute name="title">This passage can be read in alternate ways: <xsl:value-of select="$rdg-rdg"/></xsl:attribute>
+			<xsl:apply-templates select="rdg[1]"/>
+		</span>
+	</xsl:template>
 
 	<!-- app: show first rdg, offer alternatives in title -->
 	<xsl:template match="app">
@@ -651,10 +671,10 @@
 
 	<xsl:template match="gap[@extent][@unit]" priority="10">
 		<xsl:choose>
-			<xsl:when test="@unit='chars'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
-			<xsl:when test="@unit='words'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
-			<xsl:when test="@unit='lines'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
-			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit, ', cause: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
+			<xsl:when test="@unit='chars'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='words'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='lines'"><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
+			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ',@extent, ' ', @unit)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
@@ -827,6 +847,11 @@
 
 	<xsl:template match="subst">
 		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="supplied">			
+		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
+		</span>
 	</xsl:template>
 
 	<!-- Text below removed for annotated edition; also see app, choice & unlcear -->

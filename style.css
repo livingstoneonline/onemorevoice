@@ -743,20 +743,20 @@ ul{
 	margin-right: auto;
 }
 .manuscript .ms-container{
-	display: inline-block;
-	/*white-space:nowrap;*/
 	text-align: left;
+	white-space: nowrap;
+	display: inline-block;
+	
 }
 .manuscript .TEI.front .ms-container .div,
 .manuscript .TEI.back .ms-container .div{
-	padding: 0 3em;
+	padding: 0 1.5em;
 }
-.manuscript .TEI .ms-container .body .div .div{
-	padding: 0 3em;
+.manuscript .TEI .ms-container .body .div{
+	padding: 0 1.5em;
 }
 .page-break{
 	background-color: white;
-	margin: 0 calc(-3em + -2px);
 	border-top: 2px solid gainsboro;
 	border-bottom: 2px solid gainsboro;
 	border-left: 2px solid white;
@@ -764,7 +764,7 @@ ul{
 }
 .manuscript .TEI.front .ms-container .div .page-break,
 .manuscript .TEI.back .ms-container .div .page-break{
-	margin: 0 calc(-3em + -2px);
+	margin: 0 calc(-3em + -3px);
 }
 .manuscript .TEI .ms-container .body .div .page-break {
 margin: 0 calc(-1.5em + -2px);
@@ -791,7 +791,7 @@ margin: 0 calc(-1.5em + -2px);
 }
 
 /* Maximum aspect ratio */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width : 600px), only screen and (orientation: portrait) and (max-width : 600px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width : 550px), only screen and (orientation: portrait) and (max-width : 550px){
 	body .manuscript{
 		display: none;
 	}
@@ -799,7 +799,6 @@ margin: 0 calc(-1.5em + -2px);
 		display: block;
 	}
 }
-
 
 /* 2.2. Back-button */
 
@@ -855,6 +854,7 @@ margin: 0 calc(-1.5em + -2px);
 	color: #65615b;
 	font-size: .9em;
 	font-style: italic;
+	text-align: center;
 }
 .lb{
 	display: block;

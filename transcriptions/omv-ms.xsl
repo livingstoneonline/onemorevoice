@@ -229,10 +229,11 @@
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 
+		<!-- Differs from omv-journal.xsl in this section -->
     	<div class="credits" id="credits1-div">
 			<p class="bold site-blue"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></p>
 			<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
-			<!--<p class="item-spec"><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
+			<!--<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
 			<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
 			<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
 			<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
@@ -243,6 +244,7 @@
 			<hr/>
 		</div>
 
+		<!-- Differs from omv-journal.xsl in this section -->
 		<div class="narrow-mobile" id="narrow-mobile-div">
 			<p>Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
 		</div>
@@ -305,10 +307,11 @@
 						<xsl:apply-templates select="text/back"/>
 					</xsl:otherwise>
 				</xsl:choose>
-				</div>
 			</div>
 		</div>
-			
+	</div>
+
+		<!-- Differs from omv-journal.xsl in this section -->		
 		<div class="credits" id="credits2-div">
 			<hr />
 			<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
@@ -585,6 +588,7 @@
 
 	<!-- For "body" see above -->
 
+	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="cb">
 		<br/>
 		<xsl:apply-templates/>
@@ -765,6 +769,7 @@
 			<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
 	</xsl:template>
 
+	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="milestone">
 		<xsl:choose>
 			<xsl:when test="contains(@rend,'double-line')">
@@ -782,6 +787,7 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="note">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}">[<xsl:apply-templates/>]</span>
 	</xsl:template>
@@ -810,6 +816,7 @@
 		</span>
 	</xsl:template>
 
+	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="pb">
 		<br/><br/><br/>
 		<div class="page-break">&#160;</div>
@@ -828,6 +835,7 @@
 		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->	
 	</xsl:template>
 
+	<!-- Differs from omv-journal.xsl in this template -->
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<br/><br/><br/>
@@ -837,6 +845,7 @@
 		</span>
 	</xsl:template>
 
+	<!-- Differs from omv-journal.xsl in this template -->
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
 		<div class="page">

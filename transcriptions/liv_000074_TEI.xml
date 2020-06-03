@@ -128,9 +128,9 @@
 <lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="3" unit="chars"/><add place="inline" hand="#U2">Page (1) written by my uncle, <persName>D<hi rend="sup underline">r</hi> Christie</persName>
 <lb/><space extent="2" unit="words"/><space extent="3" unit="chars"/>who at the time, was <term type="occupation">physician</term> to
 <lb/><space extent="2" unit="words"/><space extent="3" unit="chars"/><persName>Burgash</persName>, Sultan of <geogName>Zanzibar</geogName></add></p>
-<!--<lb/><lb/><lb/><lb/><lb/><lb/><lb/>--> <!-- Adrian, not sure if we're encoding the extra spacing at the end of pages anymore, but added in just in case. HB --><!-- No, not necessary. I've put it all on one line and commented out. AW -->
+<lb/><space dim="vertical" unit="lines" extent="2"/>
 
-	<pb facs="liv_000074_0002" n="0002" type="blank"/>
+	<pb facs="liv_000074_0002" n="0002" type="blank" ana="20"/>
 <lb/><!-- blank page AM -->
 
 	<pb facs="liv_000074_0003" n="0003"/>
@@ -186,7 +186,7 @@
 <lb/>fear that they might come again &amp; fall upon
 <lb/><choice><sic>human-beings</sic><corr>human beings</corr></choice>. The natives and all the <w>peo<seg type="hyphen">-</seg>
 <lb break="no"/>ple</w>
-<!--<lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/>--><!-- Again, not sure if we're coding extra lines at the bottom but threw in just in case. HB --><!-- See above, but no. I put on one line and commented out. AW -->
+<lb/><space dim="vertical" unit="lines" extent="1"/>
 
 	<pb facs="liv_000074_0005" n="0005"/>
 <lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><seg type="catch">sleep</seg> <!-- Adrian, this looks like a catch word similar to what was used in 0075 - are we sic/corr-ing this out, or making a note of the duplication somehow? HB --><!-- See new coding. AW -->
@@ -199,7 +199,7 @@
 <lb/><space extent="3" unit="words"/>that they might come again &amp;
 <lb/><space extent="3" unit="words"/>fall upon <choice><sic>human-beings</sic><corr>human beings</corr></choice>. The <w>na<seg type="hyphen">-</seg>
 <lb break="no"/><space extent="3" unit="words"/>tives</w> and all the people</p> <!-- Again, this passage is a duplication of the previous page - are we coding in a way to note that or leaving as-is? HB --><!-- Very odd. No just leave as is. AW -->
-<!-- I'm not going to add in the lbs for spacing if we are not doing it, but I'd say it's about 24 in case we do :) HB --><!-- All good. See above. AW -->
+<lb/><space dim="vertical" unit="lines" extent="10"/>
 
 
 	<pb facs="liv_000074_0006" n="0006"/>
@@ -209,6 +209,7 @@
 <lb/><space extent="3" unit="words"/>carried <persName>Livingstone</persName>'s
 <lb/><space extent="3" unit="words"/>body down
 <lb/><space extent="3" unit="words"/>to the <region>coast</region></p>
+<lb/><space dim="vertical" unit="lines" extent="2"/>
 			</div>
 
 		</body>	

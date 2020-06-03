@@ -53,14 +53,14 @@ html{
 	-webkit-hyphens: auto;
 }
 body{
-	font-size: .85em;
-	max-width: 38em;
+	max-width: 36em;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 @media only screen and (min-width : 768px){
 	body{
+		font-size: .85em;
 		max-width: 42em;
 	}
 }
@@ -257,15 +257,6 @@ nav{
 }
 body.fixed-nav .menu{
 	padding: .5em 0;
-	max-width: 38em;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-@media only screen and (min-width : 768px){
-	body.fixed-nav .menu{
-		max-width: 42em;
-	}
 }
 .menu .icon-title{
 	padding-top: .2em;
@@ -279,6 +270,7 @@ body.fixed-nav .menu{
 	}
 }
 body.fixed-nav .menu .icon-title{
+	left: 1em;
 	position: absolute;
 }
 .menu .nav-title{
@@ -479,9 +471,8 @@ body.fixed-nav .overlay .menu .close-title{
 	left: 0;
 	top: 0;
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	z-index: 1; /* Sit on top *
 	overflow-x: hidden; /* Disable horizontal scroll */
-	overflow-y: auto;
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 	display: none;
 }
@@ -716,15 +707,7 @@ ul{
 .transcription{
 	text-align: center;
 }
-.manuscript{
-	font-size: 1.2em;
-	display: inline-block;
-}
-@media only screen and (min-width : 768px){
-	.manuscript{
-		font-size: 1.3em;
-	}
-}
+.manuscript,
 .journal{
 	font-size: 1.3em;
 	display: block;
@@ -757,30 +740,12 @@ ul{
 	margin-right: auto;
 }
 .manuscript .ms-container{
+	display: inline-block;
+	/*white-space:nowrap;*/
 	text-align: left;
-	/* white-space: nowrap; */
-	display: inline-block;	
+	margin-left: .5em;
+	margin-right: .5em;
 }
-.manuscript .TEI.front .ms-container .div,
-.manuscript .TEI .ms-container .body .div,
-.manuscript .TEI.back .ms-container .div{
-	padding: 0 1.5em;
-}
-.page-break{
-	background-color: white;
-	border-top: 2px solid gainsboro;
-	border-bottom: 2px solid gainsboro;
-	border-left: 2px solid white;
-	border-right: 2px solid white;
-}
-.manuscript .TEI.front .ms-container .div .page-break,
-.manuscript .TEI.back .ms-container .div .page-break{
-	margin: 0 -3.1875em;
-}
-.manuscript .TEI .ms-container .body .div .page-break {
-margin: 0 -1.625em;
-}
-
 /* This turns off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 .narrow-mobile{
 	font-size: 1.1em;
@@ -800,12 +765,8 @@ margin: 0 -1.625em;
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
 }
-
 /* Maximum aspect ratio */
-@media only screen and (max-aspect-ratio : 5/8) and (max-width: 550px), only screen and (orientation: portrait) and (max-width: 550px){
-	body.fixed-nav .menu .icon-title{
-		left: 1.15em;
-	}
+@media only screen and (max-aspect-ratio: 5/8) and (max-width : 580px), only screen and (orientation: portrait)  and (max-width : 580px){
 	body .manuscript{
 		display: none;
 	}
@@ -813,11 +774,7 @@ margin: 0 -1.625em;
 		display: block;
 	}
 }
-@media only screen and (min-width : 526px) and (max-width: 767px){
-	body.fixed-nav .menu .icon-title{
-		left: 0;
-	}
-}
+
 
 /* 2.2. Back-button */
 
@@ -866,16 +823,13 @@ margin: 0 -1.625em;
 	color:#AAA;
 	cursor:pointer;
 }*/
-.manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
-.manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
-.manuscript .TEI.back .ms-container .div:first-of-type .pb-title:first-of-type{
+.pb-title:first-of-type{
 	margin-top: 0;
 }
 .pb.blank{
 	color: #65615b;
 	font-size: .9em;
 	font-style: italic;
-	text-align: center;
 }
 .lb{
 	display: block;

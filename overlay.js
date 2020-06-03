@@ -2,8 +2,24 @@
 
         function openNav() {
           document.getElementById("myNav").style.display = "block";
+          document.getElementById("title-div").style.display = "none";
+          document.getElementById("main-div").style.display = "none";
+          document.getElementById("manuscript-div").style.display = "none";
+          document.getElementById("journal-div").style.display = "none";
+          document.getElementById("credits-div").style.display = "none";
+          document.getElementById("credits1-div").style.display = "none";
+          document.getElementById("credits2-div").style.display = "none";
+          document.getElementById("footer-div").style.display = "none";
         }
         
         function closeNav() {
           document.getElementById("myNav").style.display = "none";
+          document.getElementById("title-div").style.display = "block";
+          document.getElementById("main-div").style.display = "block";
+          document.getElementById("manuscript-div").style.display = "block";
+          document.getElementById("journal-div").style.display = "block";
+          document.getElementById("credits-div").style.display = "block";
+          document.getElementById("credits1-div").style.display = "block";
+          document.getElementById("credits2-div").style.display = "block";
+          document.getElementById("footer-div").style.display = "block";
         }

@@ -53,6 +53,7 @@ html{
 	-webkit-hyphens: auto;
 }
 body{
+	font-size: .85em;
 	max-width: 36em;
 	width: 100%;
 	margin-left: auto;
@@ -60,7 +61,6 @@ body{
 }
 @media only screen and (min-width : 768px){
 	body{
-		font-size: .85em;
 		max-width: 42em;
 	}
 }
@@ -747,6 +747,10 @@ ul{
 	/*white-space:nowrap;*/
 	text-align: left;
 }
+.manuscript .TEI.front .ms-container .div,
+.manuscript .TEI.back .ms-container .div{
+	padding: 0 3em;
+}
 .manuscript .TEI .ms-container .div{
 	padding: 0 3em;
 }
@@ -780,7 +784,7 @@ ul{
 }
 
 /* Maximum aspect ratio */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width : 767px), only screen and (orientation: portrait) and (max-width : 767px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width : 600px), only screen and (orientation: portrait) and (max-width : 600px){
 	body .manuscript{
 		display: none;
 	}

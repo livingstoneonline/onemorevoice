@@ -477,8 +477,9 @@ body.fixed-nav .overlay .menu .close-title{
 	left: 0;
 	top: 0;
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top *
+	z-index: 1; /* Sit on top */
 	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: auto;
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 	display: none;
 }
@@ -772,7 +773,7 @@ ul{
 	-webkit-hyphens: initial;
 }
 /* Maximum aspect ratio */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width : 580px), only screen and (orientation: portrait)  and (max-width : 580px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	body .manuscript{
 		display: none;
 	}
@@ -829,7 +830,9 @@ ul{
 	color:#AAA;
 	cursor:pointer;
 }*/
-.pb-title:first-of-type{
+.manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
+.manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
+.manuscript .TEI.back .ms-container .div:first-of-type .pb-title:first-of-type{
 	margin-top: 0;
 }
 .pb.blank{

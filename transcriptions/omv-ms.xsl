@@ -811,12 +811,8 @@
 		</span>
 	</xsl:template>
 
-	<xsl:template match="pb">
-		<br/><br/><br/>
-		<div class="page-break">&#160;</div>
-		<span class="pb-title">
-			<xsl:value-of select="@n"/>
-		</span>
+	<xsl:template match="space[@dim='vertical']">
+		<xsl:for-each select="1 to @extent"><br/></xsl:for-each>
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">
@@ -825,7 +821,8 @@
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
-		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">&lt;This page is blank in the original manuscript.&gt;</p>		
+		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">&lt;This page is blank in the original manuscript.&gt;</p>	
+		<xsl:for-each select="1 to @ana"><br/></xsl:for-each>	
 	</xsl:template>
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->

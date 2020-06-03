@@ -818,7 +818,7 @@
 
 	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="pb">
-		<br/><br/><br/>
+		<br/><br/>
 		<div class="page-break">&#160;</div>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
@@ -826,7 +826,7 @@
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">
-		<br/><br/><br/>
+		<br/><br/>
 		<div class="page-break">&#160;</div>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
@@ -838,7 +838,7 @@
 	<!-- Differs from omv-journal.xsl in this template -->
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
-		<br/><br/><br/>
+		<br/><br/>
 		<div class="page-break">&#160;</div>
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
@@ -849,7 +849,7 @@
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
 		<div class="page">
-			<br/><br/><br/>
+			<br/><br/>
 			<div class="page-break">&#160;</div>
 			<span class="pb-title">
 				<xsl:value-of select="@n"/>

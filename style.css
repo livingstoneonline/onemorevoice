@@ -221,6 +221,12 @@ a.anchor{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: .9em;
 }
+/* The following creates lines between pages */
+.page-break{
+	border-bottom: 1px dotted #858585;
+	text-align: center;
+	margin: 0 auto;
+}
 
 
 /* 1.2. Mobile Fixed Nav */

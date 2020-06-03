@@ -74,7 +74,7 @@
 			    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
 			    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 			    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-				<div class="topnav">
+				<div class="topnav" id="topnav-div">
 			    <ul>
 			      <li><a href="../index.html">home</a></li>
 			      <li><a href="../texts.html">texts</a></li>
@@ -147,7 +147,7 @@
 			        </div>
 			    </div>
 				       
-				<div class="title"> 
+				<div class="title" id="title-div"> 
 				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
@@ -212,7 +212,7 @@
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
     			
-    	<div class="credits">
+    	<div class="credits" id="credits1-div">
 			<p class="bold site-blue"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
 			<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 			<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
@@ -253,7 +253,7 @@
 			</div>
 		</div>
 			
-		<div class="credits">
+		<div class="credits" id="credits2-div">
 			<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 			<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 			<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -264,7 +264,7 @@
 			<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 		</div>
 		
-		<div class="footer">
+		<div class="footer" id="footer-div">
             <hr />
 			<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
         </div>

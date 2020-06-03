@@ -717,8 +717,13 @@ ul{
 	text-align: center;
 }
 .manuscript{
-	font-size: 1.3em;
+	font-size: 1.2em;
 	display: inline-block;
+}
+@media only screen and (min-width : 768px){
+	.manuscript{
+		font-size: 1.3em;
+	}
 }
 .journal{
 	font-size: 1.3em;

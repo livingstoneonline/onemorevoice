@@ -838,27 +838,58 @@
 			<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
 	</xsl:template>
 
-	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="milestone">
-		<xsl:choose>
-			<xsl:when test="contains(@rend,'double-line')">
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
-				<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
-			</xsl:when>
-			<xsl:when test="contains(@rend,'triple-line')">
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:variable name="milestone">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+					<xsl:choose>
+						<xsl:when test="contains(@rend,'double-line')">
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
+							<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
+						</xsl:when>
+						<xsl:when test="contains(@rend,'triple-line')">
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
+					<xsl:choose>
+						<xsl:when test="contains(@rend,'double-line')">
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
+							<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
+						</xsl:when>
+						<xsl:when test="contains(@rend,'triple-line')">
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="$milestone"/>
 	</xsl:template>
-
-	<!-- Differs from omv-journal.xsl in this template -->
+	
 	<xsl:template match="note">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}">[<xsl:apply-templates/>]</span>
+		<xsl:variable name="note">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+					<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}">[<xsl:apply-templates/>]</span>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
+					<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}"><xsl:apply-templates/></span>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="$note"/>
 	</xsl:template>
 
 	<xsl:template match="note[ancestor::add[@place='marginleft']]" priority="10">
@@ -885,13 +916,25 @@
 		</span>
 	</xsl:template>
 
-	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="pb">
-		<br/><br/>
-		<div class="page-break">&#160;</div>
-		<span class="pb-title">
-			<xsl:value-of select="@n"/>
-		</span>
+
+		<xsl:variable name="pb">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+					<br/><br/>
+					<div class="page-break">&#160;</div>
+					<span class="pb-title">
+						<xsl:value-of select="@n"/>
+					</span>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
+					<span class="pb-title">
+						<xsl:value-of select="@n"/>
+					</span>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="$pb"/>
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">

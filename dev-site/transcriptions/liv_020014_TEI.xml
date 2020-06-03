@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020014">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried</title>
+                <title type="alternative">Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried, 4 May 1873</title><!-- Change; note addition of date -->
+                <author>Wainwright, Jacob, c.1859-1892</author>
+				<author role="first">Wainwright, Jacob</author>
+				<author role="first-normalized">Jacob Wainwright</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] -->
+                <principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020014</idno>
+	            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability>
+			</publicationStmt>
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <settlement>London</settlement>
+                        <repository>Wellcome Library</repository>
+                        <idno type="shelfmark">no. 561464i</idno>
+						<!-- This item is a photograph by Weatherly Poulett from which the transcription has been taken. Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c. 1895-1896), no. 561464i, Wellcome Library. The original section of the tree is held by the Royal Geographical Society, but was not consulted. -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                    <title>Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried</title>
+                    <author xml:id="JW">Wainwright, Jacob, c.1859-1892</author>
+                    <date type="composition" when="1874-04-03">4 May 1873</date><!-- Change, including attributes -->
+                    <placeName type="compositionPlace">Chitambo's Village, [Zambia]</placeName>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <!-- Change @when, @who, and work description below. -->
+            <!-- Note that @who initials are taken from <respStmt> above -->
+            <!-- Add new <change> elements below as needed. -->
+            <!-- Note that the most recent <change> should always be placed first, at the top -->
+            <change when="2018-06-02" who="#AW">Transcription and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Change; this is the color of the MS page; value can be any color -->
+            <div><!-- Change; this is the color of the writing; only use auto-suggested values -->
+
+    			<pb facs="liv_0120014_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
+					<lb/><p rend="no-indent caps">D<hi rend="sup underline">r</hi> <persName>Livingston<supplied>e</supplied></persName>
+					<lb/><space extent="3" unit="chars"/><date when="1874-05-04">May 4, 18<supplied>73</supplied></date>
+					<lb/><persName>Ya<supplied>z</supplied>uza</persName>, <persName>Mniasere</persName>
+					<lb/><seg rend="right"><persName>Vchopere</persName></seg></p>
+            </div>
+        </body>   
+
+    </text>
+</TEI>

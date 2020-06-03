@@ -811,8 +811,12 @@
 		</span>
 	</xsl:template>
 
-	<xsl:template match="space[@dim='vertical']">
-		<xsl:for-each select="1 to @extent"><br/></xsl:for-each>
+	<xsl:template match="pb">
+		<br/><br/><br/>
+		<div class="page-break">&#160;</div>
+		<span class="pb-title">
+			<xsl:value-of select="@n"/>
+		</span>
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">
@@ -896,9 +900,7 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="@dim='vertical'">
-				<span class="verticalSpace" title="{concat('vertical space: ',@extent, ' ', @unit)}">
-					[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]
-					<br class="verticalSpace"/></span>
+				<xsl:for-each select="1 to @extent"><br/></xsl:for-each>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="space-other">

@@ -751,7 +751,7 @@ ul{
 .manuscript .TEI.back .ms-container .div{
 	padding: 0 3em;
 }
-.manuscript .TEI .ms-container .div{
+.manuscript .TEI .ms-container .body .div .div{
 	padding: 0 3em;
 }
 .page-break{
@@ -761,6 +761,13 @@ ul{
 	border-bottom: 2px solid gainsboro;
 	border-left: 2px solid white;
 	border-right: 2px solid white;
+}
+.manuscript .TEI.front .ms-container .div .page-break,
+.manuscript .TEI.back .ms-container .div .page-break{
+	margin: 0 calc(-3em + -2px);
+}
+.manuscript .TEI .ms-container .body .div .page-break {
+margin: 0 calc(-1.5em + -2px);
 }
 
 /* This turns off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */

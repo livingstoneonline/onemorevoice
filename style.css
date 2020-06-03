@@ -748,12 +748,11 @@ ul{
 	text-align: left;
 }
 .manuscript .TEI .ms-container .div{
-	padding: 0 4em;
-	box-sizing: border-box;
+	padding: 0 3em;
 }
 .page-break{
 	background-color: white;
-	margin: 0 calc(-4em + -2px);
+	margin: 0 calc(-3em + -2px);
 	border-top: 2px solid gainsboro;
 	border-bottom: 2px solid gainsboro;
 	border-left: 2px solid white;
@@ -781,7 +780,7 @@ ul{
 }
 
 /* Maximum aspect ratio */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width : 580px), only screen and (orientation: portrait)  and (max-width : 580px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width : 767px), only screen and (orientation: portrait) and (max-width : 767px){
 	body .manuscript{
 		display: none;
 	}

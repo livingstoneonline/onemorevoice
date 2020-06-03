@@ -947,34 +947,68 @@
 		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->	
 	</xsl:template>
 
-	<!-- Differs from omv-journal.xsl in this template -->
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
-		<br/><br/>
-		<div class="page-break">&#160;</div>
-		<span class="pb-title pb-del">
-			<xsl:value-of select="@n"/>
-		</span>
+		<xsl:variable name="pb-del">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+					<br/><br/>
+					<div class="page-break">&#160;</div>
+					<span class="pb-title pb-del">
+						<xsl:value-of select="@n"/>
+					</span>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
+					<span class="pb-title pb-del">
+						<xsl:value-of select="@n"/>
+					</span>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="$pb-del"/>
 	</xsl:template>
 
-	<!-- Differs from omv-journal.xsl in this template -->
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
-		<div class="page">
-			<br/><br/>
-			<div class="page-break">&#160;</div>
-			<span class="pb-title">
-				<xsl:value-of select="@n"/>
-			</span>
-			<xsl:apply-templates/>
-		</div>
+		<xsl:variable name="jc-page">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+				<div class="page">
+					<br/><br/>
+					<div class="page-break">&#160;</div>
+					<span class="pb-title">
+						<xsl:value-of select="@n"/>
+					</span>
+					<xsl:apply-templates/>
+				</div>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
+					<div class="page">
+						<div class="page-break">&#160;</div>
+						<span class="pb-title">
+							<xsl:value-of select="@n"/>
+						</span>
+						<xsl:apply-templates/>
+					</div>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:value-of select="$jc-page"/>
 	</xsl:template>
 
 	<!-- Revisit this so that tooltips are created -->
 	<!-- @placeName plus others. To eliminate two spans and addition of whitespace in HTML -->
-	<xsl:template match="placeName/geogName|placeName/bloc|placeName/country|placeName/region|placeName/settlement">
+	<xsl:template match="geogName|bloc|country|region|settlement|placeName">
 		<xsl:apply-templates/>
 	</xsl:template>
+
+	<!--<xsl:template match="term[@type]" priority="1">
+		<span class="term" title="{@type}">
+		<xsl:apply-templates/>
+		</span>
+	</xsl:template>-->
+
+	<!-- Tooltip text: ailment, ethnic-group, foreign-word, geogName, orgName, persName/people, region, quote, settlement-->
 
 	<xsl:template match="postscript">
 		<xsl:apply-templates/>
@@ -1197,13 +1231,5 @@
 			</xsl:for-each>
 		</span>
 	</xsl:template>-->
-
-	<!--<xsl:template match="term[@type]" priority="1">
-		<span class="term" title="{@type}">
-		<xsl:apply-templates/>
-		</span>
-	</xsl:template>-->
-
-	<!-- Tooltip text: ailment, ethnic-group, foreign-word, geogName, orgName, persName/people, region, quote, settlement-->
 
 </xsl:stylesheet>

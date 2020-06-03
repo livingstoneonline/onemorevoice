@@ -360,7 +360,7 @@
 			</xsl:choose>
 		</xsl:variable>-->
 		<!-- <xsl:value-of select="$lb-with-p"/>  -->
-			<!--<br/>-->
+			<br/>
 		<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>

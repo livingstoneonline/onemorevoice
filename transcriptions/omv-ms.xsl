@@ -825,7 +825,7 @@
 			<xsl:value-of select="@n"/>
 		</span>
 		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">&lt;This page is blank in the original manuscript.&gt;</p>	
-		<xsl:for-each select="1 to @ana"><br/></xsl:for-each>	
+		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->	
 	</xsl:template>
 
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
@@ -899,7 +899,8 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="@dim='vertical'">
-				<xsl:for-each select="1 to @extent"><br/></xsl:for-each>
+				<!--<xsl:for-each select="1 to @extent"><br/></xsl:for-each>-->
+				<xsl:apply-templates/>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="space-other">

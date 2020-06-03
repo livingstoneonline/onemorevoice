@@ -1,12 +1,3 @@
-.page-break{
-	background-color: white;
-	margin: 0 calc(-4em + -2px);
-	border-top: 2px solid gainsboro;
-	border-bottom: 2px solid gainsboro;
-	border-left: 2px solid white;
-	border-right: 2px solid white;
-}
-
 /* CSS File for One More Voice (http://onemorevoice.org/) */
 
 /* Created by Adrian S. Wisnicki */
@@ -759,6 +750,14 @@ ul{
 .manuscript .TEI .ms-container .div{
 	padding: 0 4em;
 	box-sizing: border-box;
+}
+.page-break{
+	background-color: white;
+	margin: 0 calc(-4em + -2px);
+	border-top: 2px solid gainsboro;
+	border-bottom: 2px solid gainsboro;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
 }
 
 /* This turns off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */

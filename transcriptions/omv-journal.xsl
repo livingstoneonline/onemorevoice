@@ -256,6 +256,7 @@
 
 		<!-- Differs from omv-ms.xsl in this section -->		
 		<div class="credits" id="credits2-div">
+			<hr/>
 			<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 			<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 			<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

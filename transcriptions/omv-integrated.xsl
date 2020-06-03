@@ -334,7 +334,7 @@
 				</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<div class="journal"><!-- style="background:#{$body-color};" -->
+				<div class="journal" id="journal-div"><!-- style="background:#{$body-color};" -->
 					<div class="TEI"><!-- style="background:#{$body-color};" -->	
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -973,13 +973,9 @@
 
 	<!-- Revisit this so that tooltips are created -->
 	<!-- @placeName plus others. To eliminate two spans and addition of whitespace in HTML -->
-	<xsl:template match="placeName/geogName|placeName/bloc|placeName/country|placeName/region|placeName/settlement">
+	<xsl:template match="geogName|bloc|country|region|settlement|placeName">
 		<xsl:apply-templates/>
 	</xsl:template>
-
-	<!--<xsl:template match="geogName|bloc|country|region|settlement|placeName">
-		<xsl:apply-templates/>
-	</xsl:template>-->
 
 	<!--<xsl:template match="term[@type]" priority="1">
 		<span class="term" title="{@type}">

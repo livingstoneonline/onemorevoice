@@ -1,6 +1,6 @@
 .page-break:first-of-type{
 	background-color: white;
-	margin: 0 -2px;
+	margin: 0 calc(-4em + -2px);
 	border-top: 2px solid gainsboro;
 	border-bottom: 2px solid gainsboro;
 	border-left: 2px solid white;
@@ -717,6 +717,7 @@ ul{
 	text-align: center;
 }
 .manuscript{
+	font-size: 1.3em;
 	display: inline-block;
 }
 .journal{
@@ -754,6 +755,10 @@ ul{
 	display: inline-block;
 	/*white-space:nowrap;*/
 	text-align: left;
+}
+.manuscript .TEI .ms-container .div{
+	padding: 0 4em;
+	box-sizing: border-box;
 }
 
 /* This turns off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */

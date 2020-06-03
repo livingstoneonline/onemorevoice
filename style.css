@@ -749,10 +749,8 @@ ul{
 	display: inline-block;	
 }
 .manuscript .TEI.front .ms-container .div,
+.manuscript .TEI .ms-container .body .div,
 .manuscript .TEI.back .ms-container .div{
-	padding: 0 1.5em;
-}
-.manuscript .TEI .ms-container .body .div{
 	padding: 0 1.5em;
 }
 .page-break{
@@ -847,7 +845,9 @@ margin: 0 calc(-1.5em + -2px);
 	color:#AAA;
 	cursor:pointer;
 }*/
-.pb-title:first-of-type{
+.manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
+.manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
+.manuscript .TEI.back .ms-container .div:first-of-type .pb-title:first-of-type{
 	margin-top: 0;
 }
 .pb.blank{

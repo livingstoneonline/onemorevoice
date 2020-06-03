@@ -647,11 +647,16 @@
 	<!-- For "back" see above -->
 
 	<!-- For "body" see above -->
-
-	<!-- Differs from omv-journal.xsl in this template -->
 	<xsl:template match="cb">
-		<br/>
-		<xsl:apply-templates/>
+		<xsl:choose>
+			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+				<br/>
+				<xsl:apply-templates/>
+			</xsl:when>
+			<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
+				<xsl:apply-templates/>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="div/cb">

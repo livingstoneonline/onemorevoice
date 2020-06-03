@@ -51,8 +51,8 @@
 			    <link rel="stylesheet" type="text/css" href="../style.css" />
 			    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 			    <script src="../overlay.js"></script>
-			    <script src="../stickynav.js" defer=""></script>	
-			    <!-- Global site tag (gtag.js) - Google Analytics -->
+			    <script src="../stickynav.js" defer=""></script>
+				<!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>
 			  		window.dataLayer = window.dataLayer || [];
@@ -141,7 +141,7 @@
 			                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
 			                    </ul>
 			                </li>
-			        		<li><a href="../site_map.html">site map</a></li>
+			       			<li><a href="../site_map.html">site map</a></li>
 			            </ul>
 			        </div>
 			    </div>
@@ -210,7 +210,8 @@
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
-    			
+
+		<!-- Differs from omv-ms.xsl in this section -->
     	<div class="credits" id="credits1-div">
 			<p class="bold site-blue"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
 			<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -231,6 +232,7 @@
 			<hr/>
 		</div>
 
+		<!-- Differs from omv-ms.xsl in this section -->
 		<div class="journal"><!-- style="background:#{$body-color};" -->
 
 			<div class="TEI"><!-- style="background:#{$body-color};" -->	
@@ -251,7 +253,8 @@
 				</xsl:choose>
 			</div>
 		</div>
-			
+
+		<!-- Differs from omv-ms.xsl in this section -->		
 		<div class="credits" id="credits2-div">
 			<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 			<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
@@ -262,7 +265,7 @@
 			<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 			<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 		</div>
-		
+			
 		<div class="footer" id="footer-div">
             <hr />
 			<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
@@ -347,7 +350,16 @@
 			</xsl:if>
 		</xsl:variable>
 		<!--<br><xsl:if test="$class/text()"><xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute></xsl:if></br>-->
-		<br/>
+		<!--<xsl:variable name="lb-with-p">
+			<xsl:choose>
+				<xsl:when test="lb[child::p]"/>
+				<xsl:otherwise>
+					<br/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>-->
+		<!-- <xsl:value-of select="$lb-with-p"/>  -->
+			<!--<br/>-->
 		<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
@@ -538,6 +550,7 @@
 
 	<!-- For "body" see above -->
 
+	<!-- Differs from omv-ms.xsl in this template -->
 	<xsl:template match="cb">
 		<xsl:apply-templates/>
 	</xsl:template>
@@ -717,6 +730,7 @@
 			<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
 	</xsl:template>
 
+	<!-- Differs from omv-ms.xsl in this template -->
 	<xsl:template match="milestone">
 		<xsl:choose>
 			<xsl:when test="contains(@rend,'double-line')">
@@ -734,6 +748,7 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<!-- Differs from omv-ms.xsl in this template -->
 	<xsl:template match="note">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}"><xsl:apply-templates/></span>
 	</xsl:template>
@@ -756,33 +771,47 @@
 
 	<!-- For "orig" see above -->
 
-	<!-- Not sure what this does. AW -->
-	<xsl:template match="jc:page">
-		<div class="page">
-			<span class="pb-title">
-				<xsl:value-of select="@n"/>
-			</span>
-			<xsl:apply-templates/>
-		</div>
-	</xsl:template>
-
-	<xsl:template match="text/body/div[1]/pb[1]" priority="10">
+	<xsl:template match="text/body/div[1]/pb[1]|text/front/div[1]/pb[1]|text/back/div[1]/pb[1]" priority="10">
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
 	</xsl:template>
 
+	<!-- Differs from omv-ms.xsl in this template -->
 	<xsl:template match="pb">
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
 	</xsl:template>
 
+	<xsl:template match="pb[@type='blank']">
+		<br/><br/><br/>
+		<div class="page-break">&#160;</div>
+		<span class="pb-title">
+			<xsl:value-of select="@n"/>
+		</span>
+		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">&lt;This page is blank in the original manuscript.&gt;</p>	
+		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->	
+	</xsl:template>
+
+	<!-- Differs from omv-ms.xsl in this template -->
 	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<span class="pb-title pb-del">
 			<xsl:value-of select="@n"/>
 		</span>
+	</xsl:template>
+
+	<!-- Differs from omv-ms.xsl in this template -->
+	<!-- Not sure what this does. AW -->
+	<xsl:template match="jc:page">
+		<div class="page">
+			<div class="page-break">&#160;</div>
+			<span class="pb-title">
+				<xsl:value-of select="@n"/>
+			</span>
+			<xsl:apply-templates/>
+		</div>
 	</xsl:template>
 
 	<!-- Revisit this so that tooltips are created -->
@@ -835,9 +864,8 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="@dim='vertical'">
-				<span class="verticalSpace" title="{concat('vertical space: ',@extent, ' ', @unit)}">
-					[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]
-					<br class="verticalSpace"/></span>
+				<!--<xsl:for-each select="1 to @extent"><br/></xsl:for-each>-->
+				<xsl:apply-templates/>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="space-other">

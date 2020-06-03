@@ -257,6 +257,15 @@ nav{
 }
 body.fixed-nav .menu{
 	padding: .5em 0;
+	max-width: 36em;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (min-width : 768px){
+	body.fixed-nav .menu{
+		max-width: 42em;
+	}
 }
 .menu .icon-title{
 	padding-top: .2em;
@@ -270,7 +279,6 @@ body.fixed-nav .menu{
 	}
 }
 body.fixed-nav .menu .icon-title{
-	left: 1em;
 	position: absolute;
 }
 .menu .nav-title{

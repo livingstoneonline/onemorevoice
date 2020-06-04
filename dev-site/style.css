@@ -58,7 +58,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	body{
 		font-size: .85em;
 		max-width: 42em;
@@ -71,12 +71,12 @@ h1{
 	font-size: 2em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	h1{
 		font-size: 2.2em;
 	}
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	h1{
 		font-size: 2.3em;
 	}
@@ -87,13 +87,13 @@ h3{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	display: none;
 }
-@media only screen and (min-width : 480px){
+@media only screen and (min-width: 480px){
 	h3{
 		font-size: 1em;
 		display: block;
 	}
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	h3{
 		font-size: 1.2em;
 		display: block;
@@ -112,7 +112,7 @@ body.transcription .title{
 body.transcription .title{
 	padding-bottom: 1em;
 }
-@media only screen and (min-width : 320px){
+@media only screen and (min-width: 320px){
 	.title{
 		padding-bottom: .5em
 	}
@@ -120,12 +120,12 @@ body.transcription .title{
 		padding-bottom: 1.5em;
 	}
 }
-@media only screen and (min-width : 480px){
+@media only screen and (min-width: 480px){
 	body.transcription .title{
 		padding-bottom: .5em
 	}
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.title,
 	body.transcription .title{
 		padding-bottom: 1.5em;
@@ -134,7 +134,7 @@ body.transcription .title{
 .header-title{
 	display: none;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.header-title{
 		display: block;
 	}
@@ -150,7 +150,7 @@ body.transcription .title{
 .title hr{
 	display:none;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.title hr{
 		display: block;
 	}
@@ -162,7 +162,7 @@ body.transcription .title{
 	margin-left: auto;
 	margin-right: auto;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.main{
 		font-size: 1.2em;
 	}
@@ -172,12 +172,12 @@ body.transcription .title{
 	line-height: 1.6em;
 	text-align: left;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	.credits{
 		font-size: 1.15em;
 	}
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.credits{
 		font-size: 1.1em;
 	}
@@ -189,7 +189,7 @@ body.transcription .title{
 	line-height: 1.6em;
 	padding-top: 1em;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	.footer{
 		font-size: 1em;
 	}
@@ -211,7 +211,7 @@ a.anchor{
 	top: -80px;
 	visibility: hidden;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	a.anchor{
 	top: -60px;
 	}
@@ -234,8 +234,8 @@ a.anchor{
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
 nav{
-	text-align: center;
 	background-color: white;
+	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -244,65 +244,64 @@ nav{
 	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
 	z-index: 1;
 	border-bottom: 1px gray solid;
 	box-shadow: 0 4px 6px -6px #222;
 	-webkit-box-shadow: 0 4px 6px -6px #222;
 	-moz-box-shadow: 0 4px 6px -6px #222;
 }
-.menu{
+.menu,
+.fixed-nav .menu{
 	text-align: center;
 	padding: 1em 0;
+	max-width: 36em;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 	display: block;
 }
-@media only screen and (min-width : 992px){
+.fixed-nav .menu{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+@media only screen and (min-width: 768px){
+	.menu,
+	.fixed-nav .menu{
+		max-width: 42em;
+	}
+}
+@media only screen and (min-width: 992px){
 	.menu{
 		display: none;
 	}
 }
-body.fixed-nav .menu{
-	padding: .5em 0;
+.icon-title{
+	font-size: .95em;
+	float: left;
 }
-.menu .icon-title{
-	padding-top: .2em;
-	left: 0;
-	position: absolute;
-	display: block;
-}
-@media only screen and (min-width : 480px){
-	.menu .icon-title{
-		padding-top: .4em;
-	}
-}
-body.fixed-nav .menu .icon-title{
-	left: 1em;
-	position: absolute;
-}
-.menu .nav-title{
-	font-size: 1.7em;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-weight: 600;
-	display: block;
-}
-@media only screen and (min-width : 480px){
-	.menu .nav-title{
-		font-size: 2em;
+@media only screen and (min-width: 480px){
+	.icon-title{
+		font-size: 1.2em;
 	}
 }
 .menu a.icon{
 	font-size: 1.5em;
 	color: black;
-	margin-bottom: .5em;
 	border-top: none;
-	display: block;
 }
 .menu a.icon:hover{
 	color: black;
 }
-body.fixed-nav .menu .nav-title,
-body.fixed-nav .menu a.icon{
-	color: black;
+.nav-title{
+	font-size: 1.7em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+@media only screen and (min-width: 480px){
+	.nav-title{
+		font-size: 2em;
+	}
 }
 
 
@@ -317,7 +316,7 @@ body.fixed-nav .menu a.icon{
 	font-weight: 600;
 	display: none;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.topnav{
 		display: block;
 	}
@@ -457,7 +456,7 @@ background-color: #dbdbdb; [light gray]
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* The following prevents overlay from appearing above 768px */
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	#myNav{
 		display: none !important;
 	}
@@ -527,7 +526,7 @@ body.fixed-nav .overlay .menu .close-title{
 	right: .8em;
 	position: absolute;
 }
-@media only screen and (min-width : 480px){
+@media only screen and (min-width: 480px){
 	.overlay .menu .close-title{
 		line-height: 1.1em;
 	}
@@ -543,7 +542,7 @@ body.fixed-nav .overlay .menu .close-title{
 	top: -80px;
 	visibility: hidden;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	a.anchor{
 	top: -60px;
 	}
@@ -551,7 +550,7 @@ body.fixed-nav .overlay .menu .close-title{
 .menu{
 	display: block;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.menu{
 	display: none;
 	}
@@ -559,7 +558,7 @@ body.fixed-nav .overlay .menu .close-title{
 .topnav{
 	display: none;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.topnav{
 		display: block; 
 	}
@@ -570,7 +569,7 @@ body.fixed-nav .overlay .menu .close-title{
 .overlay-content{
 	display: block;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	#myNav{
 		display: none !important;
 	}
@@ -578,12 +577,12 @@ body.fixed-nav .overlay .menu .close-title{
 .title{
 	padding-bottom: 0;
 }
-@media only screen and (min-width : 480px){
+@media only screen and (min-width: 480px){
 	.title{
 		padding-bottom: .5em
 	}
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.title{
 		padding-bottom: 1.5em;
 	}
@@ -591,14 +590,14 @@ body.fixed-nav .overlay .menu .close-title{
 .header-title{
 	display: none;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.header-title{
 		display: block;
 	}
 .title hr{
 	display:none;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.title hr{
 		display: block;
 	}
@@ -668,7 +667,7 @@ ul{
 	padding-left: 1em;
 	padding-bottom: 1em;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	ol,
 	ul{
 		padding-left: 1.5em;
@@ -688,7 +687,7 @@ ul{
 	margin-bottom: 1em;
 	margin-top: 0em;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	.ul-list{
 		padding-left: 1.5em;
 	}
@@ -699,7 +698,7 @@ ul{
 	text-indent: 0;
 	margin-left: 1em;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	.map-list{
 		text-indent: 1em;
 
@@ -719,7 +718,7 @@ ul{
 	font-size: 1.3em;
 	display: block;
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.manuscript,
 	.journal{
 		font-size: 1.2em;
@@ -801,12 +800,12 @@ ul{
 	left: 0;
 	padding-top: .5em;
 }
-@media only screen and (min-width : 768px){
+@media only screen and (min-width: 768px){
 	.title .back-button{
 		font-size: 1.1em;
 	}
 }
-@media only screen and (min-width : 992px){
+@media only screen and (min-width: 992px){
 	.title .back-button{
 		font-size: 1.2em;
 	}

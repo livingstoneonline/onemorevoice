@@ -272,7 +272,8 @@ nav{
 	}
 }
 @media only screen and (min-width: 992px){
-	.menu{
+	.menu,
+	.fixed-nav .menu{
 		display: none;
 	}
 }

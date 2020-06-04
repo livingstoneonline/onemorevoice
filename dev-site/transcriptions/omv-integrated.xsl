@@ -898,6 +898,10 @@
 		</span>
 	</xsl:template>
 
+	<xsl:template match="orgName">
+		<span class="orgName"><xsl:attribute name="title">A formally-named group or organization.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
 	<!-- For "orig" see above -->
 
 	<xsl:template match="text/body/div[1]/pb[1]|text/front/div[1]/pb[1]|text/back/div[1]/pb[1]" priority="10">
@@ -976,19 +980,37 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- Revisit this so that tooltips are created -->
-	<!-- @placeName plus others. To eliminate two spans and addition of whitespace in HTML -->
-	<xsl:template match="geogName|bloc|country|region|settlement|placeName">
+<!-- placeNames -->
+
+	<xsl:template match="placeName">
+		<span class="region"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="geogName">
+		<span class="geogName"><xsl:attribute name="title">A formally-named geographical entity.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<!--<xsl:template match="bloc">
+		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually continents.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>-->
+
+	<!--<xsl:template match="country">
+		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>-->
+
+	<xsl:template match="region">
+		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="settlement">
+		<span class="region"><xsl:attribute name="title">A settlement, such as a city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="bloc|country">
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<!--<xsl:template match="term[@type]" priority="1">
-		<span class="term" title="{@type}">
-		<xsl:apply-templates/>
-		</span>
-	</xsl:template>-->
-
-	<!-- Tooltip text: ailment, ethnic-group, foreign-word, geogName, orgName, persName/people, region, quote, settlement-->
+<!-- end placeNames -->
 
 	<xsl:template match="postscript">
 		<xsl:apply-templates/>
@@ -1090,6 +1112,10 @@
 		<!--<span class="term" title="{@type}">-->
 		<xsl:apply-templates/>
 		<!--</span>-->
+	</xsl:template>
+
+	<xsl:template match="term[@type='collective']" priority="10">
+		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<!-- For "text" see above -->

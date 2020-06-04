@@ -234,8 +234,8 @@ a.anchor{
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
 nav{
-	text-align: center;
 	background-color: white;
+	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -244,65 +244,66 @@ nav{
 	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
 	z-index: 1;
 	border-bottom: 1px gray solid;
 	box-shadow: 0 4px 6px -6px #222;
 	-webkit-box-shadow: 0 4px 6px -6px #222;
 	-moz-box-shadow: 0 4px 6px -6px #222;
 }
-.menu{
+.menu,
+.fixed-nav .menu{
 	text-align: center;
 	padding: 1em 0;
+	max-width: 36em;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 	display: block;
+}
+.fixed-nav .menu{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+@media only screen and (min-width: 768px){
+	.menu,
+	.fixed-nav .menu{
+		max-width: 42em;
+	}
 }
 @media only screen and (min-width: 992px){
 	.menu{
 		display: none;
 	}
 }
-body.fixed-nav .menu{
-	padding: .5em 0;
-}
-.menu .icon-title{
+.icon-title{
+	font-size: .95em;
+	float: left;
 	padding-top: .2em;
-	left: 0;
-	position: absolute;
-	display: block;
 }
 @media only screen and (min-width: 480px){
-	.menu .icon-title{
-		padding-top: .4em;
-	}
-}
-body.fixed-nav .menu .icon-title{
-	left: 1em;
-	position: absolute;
-}
-.menu .nav-title{
-	font-size: 1.7em;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-weight: 600;
-	display: block;
-}
-@media only screen and (min-width: 480px){
-	.menu .nav-title{
-		font-size: 2em;
+	.icon-title{
+		font-size: 1.2em;
+		padding-top: .3em;
 	}
 }
 .menu a.icon{
 	font-size: 1.5em;
 	color: black;
-	margin-bottom: .5em;
 	border-top: none;
-	display: block;
 }
 .menu a.icon:hover{
 	color: black;
 }
-body.fixed-nav .menu .nav-title,
-body.fixed-nav .menu a.icon{
-	color: black;
+.nav-title{
+	font-size: 1.7em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+@media only screen and (min-width: 480px){
+	.nav-title{
+		font-size: 2em;
+	}
 }
 
 

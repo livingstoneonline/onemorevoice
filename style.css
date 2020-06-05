@@ -829,6 +829,7 @@ ul{
 	color: #428bca;
 	font-size: .9em;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
+	text-decoration: none;
 	text-indent: 0;
 }
 .manuscript .pb-title{
@@ -850,11 +851,11 @@ ul{
 	padding-top: 0;
 	border-top: none;
 }
-.pb.blank{
+.blank{
 	color: #65615b;
 	font-size: .9em;
 	font-style: italic;
-	margin-bottom: -2em; /*To be solved via XSL */
+
 }
 .lb{
 	display: none;
@@ -1035,10 +1036,6 @@ table .linenumber{
 .del,
 .del-by-over-text{
 	text-decoration: line-through;
-}
-.pb-del{
-	display: inline-block;
-	margin-bottom: .5em;
 }
 .unclear{
 	color: #706f6a;

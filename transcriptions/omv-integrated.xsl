@@ -467,7 +467,7 @@
 				<xsl:text> </xsl:text>
 			</xsl:if>
 		</xsl:variable>
-		<!--<br><xsl:if test="$class/text()"><xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute></xsl:if></br>-->
+		<!--<br/><xsl:if test="$class/text()"><xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute></xsl:if></br>-->
 		<!--<xsl:variable name="lb-with-p">
 			<xsl:choose>
 				<xsl:when test="lb[child::p]"/>

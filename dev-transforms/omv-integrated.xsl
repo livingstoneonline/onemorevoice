@@ -248,7 +248,7 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 		    	<div class="credits" id="credits1-div">
-					<p class="bold site-blue"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
+					<p class="bold site-blue">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</p>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text>
@@ -467,7 +467,7 @@
 				<xsl:text> </xsl:text>
 			</xsl:if>
 		</xsl:variable>
-		<!--<br><xsl:if test="$class/text()"><xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute></xsl:if></br>-->
+		<!--<br/><xsl:if test="$class/text()"><xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute></xsl:if></br>-->
 		<!--<xsl:variable name="lb-with-p">
 			<xsl:choose>
 				<xsl:when test="lb[child::p]"/>
@@ -565,10 +565,6 @@
 		<p class="{concat(name(), ' ', translate(@rend, '-', ''))}">
 			<xsl:apply-templates/>
 		</p>
-	</xsl:template>
-
-	<xsl:template match="cb/ab" priority="10">
-		<xsl:apply-templates/>
 	</xsl:template>
 
 	<!-- For "abbr" see above -->
@@ -720,7 +716,7 @@
 			<xsl:apply-templates select="..//@url"/>
 		</xsl:variable>
 		<xsl:choose>
-			<xsl:when test="head and $newFigDesc/text()">
+			<!--<xsl:when test="head and $newFigDesc/text()">
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{concat('&quot;', $newHead, '.&quot; ', $newFigDesc)}">{figure}</span>
 			</xsl:when>
 			<xsl:when test="head and not($newFigDesc/text())">
@@ -728,12 +724,15 @@
 			</xsl:when>
 			<xsl:when test="not(head) and $newFigDesc/text()">
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
-			</xsl:when>
+			</xsl:when>-->
 			<xsl:when test="..//graphic[@n='medium']">
 				<span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='small']">
 				<span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='inline-left small']">
+				<span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
 				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
@@ -910,45 +909,25 @@
 		</span>
 	</xsl:template>
 
-	<xsl:template match="pb">
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<br/><br/>
-				<div class="page-break">&#160;</div>
-				<span class="pb-title">
-					<xsl:value-of select="@n"/>
-				</span>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<span class="pb-title">
-					<xsl:value-of select="@n"/>
-				</span>
-			</xsl:when>
-		</xsl:choose>
-	</xsl:template>
-
 	<xsl:template match="pb[@type='blank']">
-		<br/><br/>
-		<div class="page-break">&#160;</div>
+		<br/>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
-		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''))}">&lt;This page is blank in the original manuscript.&gt;</p>	
-		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->	
+		<span class="blank">&lt;This page is blank in the original manuscript.&gt;</span>
+		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->
 	</xsl:template>
 
-	<!-- Prevents page numbers from being struckthrough when nestled in one or two dels -->
-	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
+	<xsl:template match="pb">
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<br/><br/>
-				<div class="page-break">&#160;</div>
-				<span class="pb-title pb-del">
+				<br/>
+				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<span class="pb-title pb-del">
+				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
 			</xsl:when>
@@ -957,11 +936,10 @@
 
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
-		<xsl:choose>
+		<xsl:choose> 
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 			<div class="page">
-				<br/><br/>
-				<div class="page-break">&#160;</div>
+				<!--<br/>-->
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
@@ -970,7 +948,6 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<div class="page">
-					<div class="page-break">&#160;</div>
 					<span class="pb-title">
 						<xsl:value-of select="@n"/>
 					</span>
@@ -1033,6 +1010,11 @@
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
+
+	<xsl:template match="seg[@n='none']">
+		<span class="{concat(name(), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+	</xsl:template>
+
 
 	<!-- For "sic" see above -->
 

@@ -885,11 +885,6 @@ p.right .linenumber{
 	text-indent: 25px;
 	margin-top: 0;
 	margin-bottom: 0;
-	position: relative;
-}
-.journal .p .right{
-	position: absolute;
-	right: 0;
 }
 .manuscript .p{
 	display: inline-block
@@ -1073,7 +1068,7 @@ table .linenumber{
 /* 2.7. Rend classes (except colors, lines, and up-down placement) */
 
 .caps{
-	font-variant: small-caps;
+	text-transform: uppercase;
 }
 .manuscript .center{
 	text-indent: 0;
@@ -1117,6 +1112,7 @@ table .linenumber{
 .journal .right{
 	text-align: right;
 }
+.journal .p .right,
 .journal .fw .right{
 	float: right;
 }

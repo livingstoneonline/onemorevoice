@@ -829,8 +829,11 @@ ul{
 	color: #428bca;
 	font-size: .9em;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
-	margin: 2em 0 .5em 0;
 	text-indent: 0;
+	margin: 2em 0 .5em 0;
+	padding-top: 2em;
+	border-top: 1px dotted #858585;
+	width: 100%;
 	display: inline-block;
 }
 .journal .pb-title{
@@ -1017,12 +1020,6 @@ table .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-}
-/* The following creates lines between pages */
-.page-break{
-	border-bottom: 1px dotted #858585;
-	text-align: center;
-	margin: 0 auto;
 }
 
 /* 2.6. Editorial elements */

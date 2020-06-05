@@ -662,7 +662,8 @@ hr{
 .site-red{
 	color: #e4524b;
 }
-.small-caps{
+.small-caps,
+.smallcaps{
 	font-variant: small-caps;
 }
 .small-caps-palatino{
@@ -884,6 +885,11 @@ p.right .linenumber{
 	text-indent: 25px;
 	margin-top: 0;
 	margin-bottom: 0;
+	position: relative;
+}
+.journal .p .right{
+	position: absolute;
+	right: 0;
 }
 .manuscript .p{
 	display: inline-block

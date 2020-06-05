@@ -159,7 +159,7 @@ body.transcription .title{
 	border: 1px solid gray;
 }
 .title hr{
-	display:none;
+	display: none;
 }
 @media only screen and (min-width: 992px){
 	.title hr{
@@ -224,7 +224,7 @@ a.anchor{
 }
 @media only screen and (min-width: 992px){
 	a.anchor{
-	top: -60px;
+		top: -60px;
 	}
 }
 /* The following item is used on the bibliography.html page. */
@@ -665,10 +665,6 @@ hr{
 .smallcaps{
 	font-variant: small-caps;
 }
-.small-caps-palatino{
-	font-variant: small-caps;
-	font-family: Palatino;
-}
 .underline{
 	text-decoration: underline;
 }
@@ -807,9 +803,9 @@ ul{
 .title .back-button{
 	font-size: .95em;
 	font-weight: 300;
-	position: absolute;
-	left: 0;
 	padding-top: .5em;
+	left: 0;
+	position: absolute;
 }
 @media only screen and (min-width: 768px){
 	.title .back-button{
@@ -855,10 +851,6 @@ ul{
 	color: #65615b;
 	font-size: .9em;
 	font-style: italic;
-
-}
-.lb{
-	display: none;
 }
 .linenumber{
 	font-size: .8em;
@@ -879,7 +871,7 @@ ul{
 .p.center .linenumber{
 	margin-left: -6.4em; /*!important removed*/
 }
-. p.right .linenumber{
+.p.right .linenumber{
 	margin-left: -10.5em; /*!important removed*/
 }
 .list .linenumber{
@@ -923,10 +915,10 @@ ul{
 }
 .fw{
 	text-indent: 0;
-	overflow: hidden;
 	text-align: center;
 	line-height: 1.3em;
 	margin-bottom: .5em;
+	overflow: hidden;
 }
 .manuscript .fw{
 	display: inline;
@@ -990,7 +982,7 @@ table .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	padding: 0 auto;
+	padding: 0;
 }
 .manuscript .halfline{
 	width: 50%;
@@ -1030,6 +1022,7 @@ table .linenumber{
 	border: 0;
 	border-top: 1px solid #58484b;
 }
+
 
 /* 2.6. Editorial elements */
 
@@ -1221,9 +1214,9 @@ table .linenumber{
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
 }
-.journal .image-small.inline-left {
+.journal .image-small.inline-left{
 	float: left;
-	width: 4.5em;;
+	width: 4.5em;
 }
 .image-small{
 	width: 40%;

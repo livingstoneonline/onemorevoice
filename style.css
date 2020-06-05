@@ -1217,9 +1217,12 @@ table .linenumber{
 }
 .image-small.inline-left {
 	float: left;
-	
-	width: 8em;;
+	width: 4em;;
 }
+ /*
+ <p> ==> block
+ remove <br/>
+ */
 .image-small{
 	width: 40%;
 	display: inline-block;

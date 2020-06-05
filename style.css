@@ -232,12 +232,6 @@ a.anchor{
 	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: .9em;
 }
-/* The following creates lines between pages */
-.page-break{
-	border-bottom: 1px dotted #858585;
-	text-align: center;
-	margin: 0 auto;
-}
 
 
 /* 1.2. Mobile Fixed Nav */
@@ -550,6 +544,7 @@ body.fixed-nav .overlay .menu .close-title{
 }
 
 /* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
+/* Not sure this is everything. Look for other items. */
 /*a.anchor{
 	display: block;
 	position: relative;
@@ -639,6 +634,10 @@ hr{
 	text-align: center;
 	padding: 10px 10px 0 0;
 	width: 50%;
+}
+.title-hr{
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 
@@ -868,10 +867,10 @@ ul{
 .p.noindent.linenumber{
 	text-indent: 1em;
 }
-p.center .linenumber{
+.p.center .linenumber{
 	margin-left: -6.4em; /*!important removed*/
 }
-p.right .linenumber{
+. p.right .linenumber{
 	margin-left: -10.5em; /*!important removed*/
 }
 .list .linenumber{
@@ -1019,9 +1018,11 @@ table .linenumber{
 	border: 0;
 	border-top: 1px solid #58484b;
 }
-.title-hr{
-	margin-top: 2em;
-	margin-bottom: 2em;
+/* The following creates lines between pages */
+.page-break{
+	border-bottom: 1px dotted #858585;
+	text-align: center;
+	margin: 0 auto;
 }
 
 

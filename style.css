@@ -1036,14 +1036,14 @@ table .linenumber{
 }
 .unclear{
 	color: #706f6a;
-	border-bottom: 1px dotted #dbdbdb;
+	border-bottom: 1px dotted #858585;
 }
 .gap{
-	border-bottom: 1px dotted #dbdbdb;
+	border-bottom: 1px dotted #858585;
 }
 .supplied{
 	color: #706f6a;
-	border-bottom: 1px dotted #dbdbdb;
+	border-bottom: 1px dotted #858585;
 }
 .sic,
 .corr{
@@ -1055,7 +1055,7 @@ table .linenumber{
 }
 .rdg{
 	display: block;
-	border-bottom: 1px dotted #dbdbdb;
+	border-bottom: 1px dotted #858585;
 }
 
 
@@ -1213,7 +1213,11 @@ table .linenumber{
 	font-size: .8em;
 }
 .manuscript .figure{
-	border-bottom: 1px #dbdbdb dotted;
+	border-bottom: 1px #858585 dotted;
+}
+.image-small.inline-left {
+	display: inline;
+	text-align: left;
 }
 .image-small{
 	width: 40%;

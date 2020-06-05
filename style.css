@@ -1216,8 +1216,9 @@ table .linenumber{
 	border-bottom: 1px #858585 dotted;
 }
 .image-small.inline-left {
-	display: inline;
-	text-align: left;
+	float: left;
+	
+	width: 8em;;
 }
 .image-small{
 	width: 40%;

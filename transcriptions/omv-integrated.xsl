@@ -1037,6 +1037,11 @@
 		</span>
 	</xsl:template>
 
+	<xsl:template match="seg">
+		<span class="{concat(name(), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+	</xsl:template>
+
+
 	<!-- For "sic" see above -->
 
 	<xsl:template match="signed">

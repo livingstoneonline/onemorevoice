@@ -787,7 +787,7 @@ ul{
 .journal .TEI{
 	display: block;
 	text-align: justify;
-	padding: 2em 0;
+	padding: 1.5em 0 2em 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -881,10 +881,15 @@ p.right .linenumber{
 /* 2.5. Parts of the page */
 
 .p{
-	display: inline-block;
 	text-indent: 25px;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.manuscript .p{
+	display: inline-block
+}
+.journal .p{
+	display: block;
 }
 .p.noindent,
 .p.center,
@@ -997,7 +1002,7 @@ table .linenumber{
 	width: 25%
 }
 .journal .quarterline{
-	width: 40%;
+	width: 9em;
 }
 .halfline.quarterline{
 	width: 30%;
@@ -1104,6 +1109,9 @@ table .linenumber{
 	margin-left: 4em;
 }
 .journal .right{
+	text-align: right;
+}
+.journal .fw .right{
 	float: right;
 }
 .small{
@@ -1215,14 +1223,10 @@ table .linenumber{
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
 }
-.image-small.inline-left {
+.journal .image-small.inline-left {
 	float: left;
-	width: 4em;;
+	width: 4.5em;;
 }
- /*
- <p> ==> block
- remove <br/>
- */
 .image-small{
 	width: 40%;
 	display: inline-block;

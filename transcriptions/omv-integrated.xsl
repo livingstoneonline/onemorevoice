@@ -910,14 +910,11 @@
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">
-		<xsl:variable name="blank-page">
-			&lt;This page is blank in the original manuscript.&gt;
-		</xsl:variable>
 		<br/>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
 		</span>
-		<span class="blank"><xsl:value-of select="$blank-page"/></span>
+		<span class="blank">&lt;This page is blank in the original manuscript.&gt;</span>
 		<!--<xsl:for-each select="1 to @ana"><br/></xsl:for-each>-->
 	</xsl:template>
 
@@ -939,10 +936,10 @@
 
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
-		<xsl:choose>
+		<xsl:choose> 
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 			<div class="page">
-				<br/>
+				<!--<br/>-->
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>

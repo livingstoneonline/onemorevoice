@@ -248,7 +248,7 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 		    	<div class="credits" id="credits1-div">
-					<p class="bold site-blue"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></p>
+					<p class="bold site-blue">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</p>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text>

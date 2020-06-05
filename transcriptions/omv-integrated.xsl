@@ -916,7 +916,6 @@
 	<xsl:template match="pb">
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<br/><br/>
 				<div class="page-break">&#160;</div>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
@@ -931,7 +930,6 @@
 	</xsl:template>
 
 	<xsl:template match="pb[@type='blank']">
-		<br/><br/>
 		<div class="page-break">&#160;</div>
 		<span class="pb-title">
 			<xsl:value-of select="@n"/>
@@ -944,7 +942,6 @@
 	<xsl:template match="pb[ancestor::del]|pb[ancestor::del[ancestor::del]]" priority="10">
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<br/><br/>
 				<div class="page-break">&#160;</div>
 				<span class="pb-title pb-del">
 					<xsl:value-of select="@n"/>
@@ -963,7 +960,6 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 			<div class="page">
-				<br/><br/>
 				<div class="page-break">&#160;</div>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
@@ -973,7 +969,6 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<div class="page">
-					<div class="page-break">&#160;</div>
 					<span class="pb-title">
 						<xsl:value-of select="@n"/>
 					</span>

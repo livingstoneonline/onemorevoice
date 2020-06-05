@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020013">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Jacob Wainwright</title>
+                <title type="alternative">Jacob Wainwright, 1 September 1874</title><!-- Change; note addition of date -->
+                <author>[Wainwright, Jacob, c.1851/2-1892]</author>
+                <author role="first">[Wainwright, Jacob]</author>
+				<author role="first-normalized">[Jacob Wainwright]</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020013</idno>
+				<availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                      	Creative Commons Attribution 4.0 International
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<title>Wesleyan Juvenile Offering: A Miscellany of Missionary Info</title>
+						<imprint>
+							<biblScope unit="vol">93</biblScope>
+							<biblScope unit="pages">98-99</biblScope>
+							<date>1 September 1874</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                  	<author xml:id="JW">[Wainwright, Jacob, c.1851/2-1892]</author>
+                    <date type="publication" when="1874-09-01">1 September 1874</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry --> 
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Change @when, @who, and work description below. -->
+			<!-- Note that @who initials are taken from <respStmt> above -->
+			<!-- Add new <change> elements below as needed. -->
+			<!-- Note that the most recent <change> should always be placed first, at the top -->
+			<change when="2020-06-04" who="#AW">Standardize TEI</change>
+            <change when="2020-06-04" who="#AW">Coding review</change>
+            <change when="2020-05-31" who="#HB">Transcription and TEI encoding</change>            
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+       	<body>
+			<div>
+
+	<pb facs="liv_020013" n="0001"/>
+
+<fw><seg rend="left">98</seg> <seg rend="center caps">Jacob Wainwright.</seg> </fw>
+
+	<div rend="center">
+<lb/><gap extent="10" unit="lines" agent="omitted-text"/><!-- Text from previous article omitted here. AW -->
+<lb/>
+	</div>
+
+<lb/><milestone unit="section" rend="half-line center"/><!-- squiggly lines -->
+	<div>
+<lb/><p rend="center caps"><persName>Jacob Wainwright</persName>.</p>
+
+<!--<figure><graphic url="../transcription-images/liv_020013_0001_image.jpg" n="inline-left small"/></figure>--><p rend="no-indent"><!-- The graphic provides the lead "J" of "Jacob" so cut from the following text. AW --><hi rend="caps"><persName>Jacob Wainright</persName></hi>, now so well known from his bringing home the body of <persName>Dr. Livingstone</persName>, gives the following interesting account of himself:&#8212;</p> 
+
+<lb/><p>"I can remember when I was a little boy living in the country, near <geogName>Kilwa</geogName>, on the coast, and there came famine in my country ; I had no father, and some people took me and sold me for a slave, then I was taken to <settlement>Zanzibar</settlement>, and sold there again ; they put me into an <term type="collective">Arab</term> ship, and carried me away with many other slaves, men and women, and boys and girls. The <term type="collective">Arabs</term> were very cruel and unkind. But one day, near a place called <placeName>Bussorah</placeName>, in <region>Persia</region>, an <term type="collective">English</term> ship<!-- Not sure if Persia is country or bloc? HB --><!-- region --> came and caught the <term type="collective">Arab</term> ship; we were all taken on board and carried to <settlement>Bombay</settlement>. Then I was seven or eight years old, and it was in <date when="1859">1859</date>. Many of the 
+
+<cb/>
+children who were taken with <!-- Beginning of column two. HB --> me went to <settlement>Nasik</settlement> to the school there, and I went too. <persName>Mr. Price</persName> took care of us, and we were all taught in the school.</p>
+
+<lb/><p>One day <persName>Mr. Price</persName> came and asked if six of us would go and join the Doctor. We remembered the Doctor<!-- Should the doctor be tagged as persName as we know it's referring to DL? HB --><!-- No, formal names only. AW -->, for he had been at <settlement>Nasik</settlement> in <date when="1865">1865</date>, and we all knew about the other <settlement>Nasik</settlement> boys who had gone with him then. So plenty of boys said they would go. <persName>Mr. Price</persName> chose six, and I was the leader of the party. We went to <settlement>Bombay</settlement> and saw <persName>Mr. Robertson</persName>, who put us into a ship for <geogName>Zanzibar</geogName>. But he told us first we must never leave our master, and if he were dead we must find his grave and bring back his bones. When we were at <geogName>Zanzibar</geogName> <persName>Mr. Stanley</persName> came and said he had found <persName>Dr. Livingstone</persName>, so <persName>Lieut. Dawson</persName> said he would not go on shore. <persName>Mr. Stanley</persName> asked us to go to the Doctor with the men he was
+
+	<pb facs="liv_020013" n="0002"/>
+<fw><seg rend="center caps"><gap extent="7" unit="words"/></seg> <seg rend="right">99</seg></fw>
+sending, and we went. We travelled for two months until we reached a place called <settlement>Unyanyambe</settlement> ; there we found the Doctor, and went to the house where he was : we found him, and soon afterwards we began to travel with him, and we travelled every day for nearly nine months, until the Doctor 
+
+<cb/>
+died ; then we said we must <!-- Beginning of column two. HB --> bring his body to <settlement>Zanzibar</settlement>, and so we made a bark coffin and covered it with tar, and then we began to travel back again to the coast, and we marched from the middle of <date when="1872-05">May, 1872</date>, to <date when="1873-02">February, 1873</date>, when we reached <geogName>Zanzibar</geogName>.</p>
+
+<lb/><milestone unit="section" rend="half-line center"/><!-- squiggly lines --></div>
+	</div>
+
+	<div rend="center">
+<lb/><gap extent="25" unit="lines" agent="omitted-text"/><!-- Text from next article omitted here. AW -->
+
+			</div>       	
+		</body>	
+
+    </text>
+</TEI>

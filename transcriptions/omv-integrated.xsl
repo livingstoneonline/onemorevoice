@@ -720,7 +720,7 @@
 			<xsl:apply-templates select="..//@url"/>
 		</xsl:variable>
 		<xsl:choose>
-			<xsl:when test="head and $newFigDesc/text()">
+			<!--<xsl:when test="head and $newFigDesc/text()">
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{concat('&quot;', $newHead, '.&quot; ', $newFigDesc)}">{figure}</span>
 			</xsl:when>
 			<xsl:when test="head and not($newFigDesc/text())">
@@ -728,12 +728,15 @@
 			</xsl:when>
 			<xsl:when test="not(head) and $newFigDesc/text()">
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
-			</xsl:when>
+			</xsl:when>-->
 			<xsl:when test="..//graphic[@n='medium']">
 				<span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='small']">
 				<span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='inline-left small']">
+				<span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
 				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>

@@ -567,10 +567,6 @@
 		</p>
 	</xsl:template>
 
-	<xsl:template match="cb/ab" priority="10">
-		<xsl:apply-templates/>
-	</xsl:template>
-
 	<!-- For "abbr" see above -->
 
 	<xsl:template match="add">

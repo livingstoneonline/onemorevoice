@@ -862,7 +862,7 @@ ul{
 	width: 1em;
 	display: none;
 }
-p .linenumber{
+.p .linenumber{
 	text-indent: -1%;
 }
 .p.noindent.linenumber{
@@ -881,15 +881,18 @@ p.right .linenumber{
 
 /* 2.5. Parts of the page */
 
-.p{
+.p,
+.ab{
 	text-indent: 25px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.manuscript .p{
+.manuscript .p,
+.manuscript .ab{
 	display: inline-block
 }
-.journal .p{
+.journal .p,
+.journal .ab{
 	display: block;
 }
 .p.noindent,
@@ -900,14 +903,6 @@ p.right .linenumber{
 .journal .p.center,
 .journal .fw{
 	display: block;
-}
-.p.right{
-	margin-left: 6em;
-}
-.ab{
-	text-indent: 0;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 .head{
 	font-weight: normal;

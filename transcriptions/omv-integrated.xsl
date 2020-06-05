@@ -1037,7 +1037,7 @@
 		</span>
 	</xsl:template>
 
-	<xsl:template match="seg">
+	<xsl:template match="seg[@n='none']">
 		<span class="{concat(name(), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
 	</xsl:template>
 

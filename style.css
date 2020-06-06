@@ -1206,6 +1206,9 @@ table .linenumber{
 
 /* 2.10. Misc */
 
+.none{
+	display: none;
+}
 .figure{
 	margin-left: 0;
 	color: #666666;
@@ -1234,13 +1237,39 @@ table .linenumber{
 .orgName,
 .placeName,
 .geogName,
+.bloc,
+.country,
 .region,
 .settlement{
 	/* border-bottom: 1px #2e68ac dotted; */
 }
-.none{
-	display: none;
+
+/* The following is useful for coding review */
+/* .collective{
+	background-color: darkgray;
 }
+.settlement{
+	background-color: coral;
+}
+.geogName{
+	background-color: greenyellow;
+} */
+/* .placeName{
+	background-color: pink;
+}
+.country{
+	background-color: burlywood;
+} */
+/* .orgName{
+	background-color: lightblue;
+}
+.region{
+	background-color: bisque;
+}
+.bloc{
+	background-color: purple;
+} */
+
 
 /* 2.13. Letters [not in use] */
 

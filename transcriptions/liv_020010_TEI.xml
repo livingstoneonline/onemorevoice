@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020010_0001"><!-- Change @xml:id -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter to J.J. Freeman</title><!-- Change -->
+                <title type="alternative">Letter to J.J. Freeman. 23 May 1850</title><!-- Change; note addition of date -->
+                <author>Read, James, Jr.</author><!-- Change -->
+				<author role="first">Read, James, Jr.</author>
+				<author role="first-normalized">James Read, Jr.</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+				<respStmt xml:id="MB">
+                    <name>Mary Borgo Ton</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020010</idno>
+	            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability>
+			</publicationStmt>
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Change as needed -->
+                        <settlement>London</settlement><!-- Change as needed -->
+                        <repository>University of London. School of Oriental and African Studies</repository><!-- Change as needed -->
+                        <idno type="shelfmark">CWML, Incoming correspondence, 25/3/D</idno><!-- Change as needed -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc><!-- Add <handNote>s if needed. -->
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                    <title>Letter to J.J. Freeman</title><!-- Change -->
+                    <author xml:id="JR">Read, James, Jr.</author> <!-- AW, not sure what the ids are for the new authors? hb -->
+                    <date type="composition" when="1850-05-23">23 May 1850</date><!-- Change, including attributes -->
+                    <placeName type="compositionPlace">Philipton</placeName><!-- Change -->
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry --> 
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Change @when, @who, and work description below. -->
+			<!-- Note that @who initials are taken from <respStmt> above -->
+			<!-- Add new <change> elements below as needed. -->
+			<!-- Note that the most recent <change> should always be placed first, at the top -->
+            <change when="2020-05-24" who="#MBT">Proofing</change>
+            <change when="2020-04-01" who="#HB">Transcription and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+       	<body n="e3e9f0"><!-- Change; this is the color of the MS page; value can be any color -->
+			<div rend="gray black"><!-- Change; this is the color of the writing; only use auto-suggested values -->
+
+	<pb facs="liv_020010_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
+<lb/><p rend="right"><placeName>Philipton</placeName>
+<lb/><date when="1850-05-23">May 23 <hi rend="underline">1850</hi></date></p>
+<lb/>
+<lb/>
+<lb/><p>My dear <persName>M<hi rend="sup">r</hi> Freeman</persName></p>
+<lb/><p><space extent="4" unit="words"/>Owing to the detentions of
+<lb/>the past by the <unclear>novis</unclear><!-- rains MBT --> and my absence <unclear>who</unclear> <!-- into MBT -->
+<lb/><unclear></unclear><!-- <region>Caffreland</region> MBT --> for the recovery of <persName>M<hi rend="sup underline">r</hi> Read</persName>,
+<lb/>and one of our <choice><sic>childrens</sic><corr>children's</corr></choice> healths I could
+<lb/>not reply to yours of the 4 ultimo till now.</p> <!-- is 4 ultimo May or April 4th? HB --><!-- I'm not sure MBT -->
+<lb/><p>1. I shall take the earliest opportunity of communicating <!-- Not sure how we want to code this list? HB --><!-- I think it's ok as is. MBT -->
+<lb/>with <persName>M<hi rend="sup underline">r</hi> <unclear></unclear></persName><!-- Ulbrecht? MBT --> about his son.</p>
+<lb/><p>2. I have not had any recent information
+<lb/>about <region><unclear></unclear><!-- Madaars or Madaan? MBT --> country</region> - however I <choice><sic>dont</sic><corr>don't</corr></choice> <unclear>hear</unclear>
+<lb/>a word now about the <unclear></unclear> - On <persName>Campbell</persName>
+<lb/>shaking his <unclear>tardant</unclear> <!-- Whole line is unclear to me, to be honest! HB --><!-- There's a reference to Lin IL on page 2. maybe "shake his tardant at Lin IL by the" MBT -->
+<lb/>publication of <bibl>your letter</bibl> may for
+
+	<pb facs="liv_020010_0002" n="0002"/>
+<lb/>the present <unclear></unclear> farther proceedings -
+<lb/>I met <persName>M<hi rend="sup underline">r</hi> <unclear>Caldewood</unclear></persName> <date when="1850-05-22">yesterday</date> &amp; he
+<lb/>told me that the <unclear>Boons</unclear>have been causing <!-- My instinct is this is Boers, but totes doesn't look like it so I am at a loss! HB --><!-- Boers is my instinct too, but agreed. Maybe also Baans? MBT -->
+<lb/>a disturbance among the <unclear>Tambookies</unclear><!-- orgName? MBT --> <add place="inline"><unclear>the in</unclear></add><!-- that is? MBT -->
+<lb/>they have threatened to drive <unclear>them</unclear> out
+<lb/>of their country &amp;that <del><unclear></unclear></del><!-- length word? --> he had advised
+<lb/>the <unclear></unclear><!-- Looks like faut? MBT --> to send a force to apprehend
+<lb/>the <unclear>ringleaders</unclear> away the <unclear>Boons</unclear> - but
+<lb/>that <unclear><persName>Lin IL</persName></unclear> thinks from it - It is to be
+<lb/><unclear>bounce</unclear><!-- bourne MBT --> in mind that <hi rend="underline"><unclear>He</unclear></hi> first promised
+<lb/>the <unclear><term type="collective">Baens</term></unclear> that he would parcel out
+<lb/><unclear><persName>Tawkaolund</persName></unclear><!-- I think this is the region mentioned earlier MBT --> among them - I think
+<lb/><unclear><persName>Lin A</persName></unclear> spoke about it to you<supplied>.</supplied></p>
+<lb/><p>3. "<unclear>I know one</unclear><!-- I have aue? MBT --> you likely to be offended by the
+<lb/><bibl>constitution</bibl> - <hi rend="sup"><unclear>9</unclear></hi>" If justice is done there &amp; is if
+<lb/>all who have property to the amount of 50 £ <!-- The pound sign he draws has an extra line through the center - how to notate? HB -->
+<lb/>be fit far <unclear></unclear> <!-- Again, this whole line is a bit murky for me... HB --><!-- be fit for elections then will be newly 7 or 8ao be? MBT -->
+
+	<pb facs="liv_020010_0003" n="0003"/>
+<lb/>have the right of <unclear>duking</unclear> as nearly all the
+<lb/><unclear>cups</unclear> <unclear>are</unclear> valued by the <unclear>Road Bard</unclear><!-- Road Board? Also organization? MBT --> at
+<lb/>from 50 to 70 £ - <space extent="4" unit="chars"/>The <unclear>diamond</unclear> should
+<lb/>be <unclear></unclear> immediately as then ostensible reason
+<lb/>for not building good houses is for
+<lb/><unclear>want</unclear><!-- I read this as want too. MBT--> of that &amp; the <add place="below">^</add> <add place="above">want of</add> security &amp; sense of security
+<lb/>of life and property - The <term type="collective">Natives</term> look on
+<lb/>the present peace as a hushed <geogName>volcano</geogName> = <add place="inline"><unclear>therefore</unclear></add>
+<lb/>they are disinclined to build at least for the
+<lb/>present -</p>
+<lb/><p>4. The holder of <placeName>lands at <unclear>Kat River</unclear></placeName> may sell
+<lb/>and transfer <unclear>these</unclear> lands - &amp; therefore it is very
+<lb/>likely in a <unclear>shout</unclear> the lands may fall into the
+<lb/>hands of others -</p>
+<lb/><p>5 The only thing that can put off this is that the
+<lb/><orgName><term type="collective">English</term> <unclear>Prolution</unclear> Society</orgName> buy up all <hi rend="underline">vacant</hi>
+<lb/><unclear>cufs.</unclear> &amp; sell them again to other industrious
+<lb/><term type="collective">Natives</term> - <del type="strikethrough">This</del> There is no <unclear>risk</unclear> in such
+
+	<pb facs="liv_020010_0004" n="0004"/>
+<lb/>a plan. The old <orgName><term type="collective">English</term> anti-slavery</orgName> &amp;
+<lb/><orgName><unclear>Prolution</unclear> Societies</orgName> must not abandon
+<lb/>the <term type="collective">Natives</term> -</p>
+<lb/><p>6. I am <del type="strikethrough">not</del> of opinion that the <term type="collective">Natives</term> will
+<lb/>suffer greatly from the Establishment of a
+<lb/>representative <unclear>assembly</unclear> - but move from a
+<lb/>federal union -</p>
+<lb/><p>7 I shall write to <persName>M<hi rend="sup">r</hi> <unclear></unclear></persName> by next
+<lb/>post about the accounts -</p>
+<lb/><space extent="1" unit="lines"/>
+<lb/><p>I <unclear>intent</unclear> this newly as an outline of my
+<lb/>views - but I shall write <unclear>deliberately write</unclear> in
+<lb/>the <unclear>conjunction</unclear> with my <unclear>father</unclear> &amp; <unclear></unclear><!-- drink mbt -->
+<lb/>to the <unclear></unclear> -</p> <!-- Yikes, this line! HB --><!-- mission Bloanfuld thaut? MBT -->
+<lb/><space extent="1" unit="lines"/>
+<lb/><p>Be so kind my dear <unclear><persName>Lin</persName></unclear> as to present
+<lb/>my kindest reagrds to <persName>M<hi rend="sup">rs</hi> Freeman</persName>
+<lb/>&amp; your excellent daughters &amp; <unclear>behind</unclear> me</p>
+<lb/><p rend="right">Yours respectfully &amp; affectionately</p>
+<lb/><p><hi rend="underline"><persName>James Read</persName></hi></p>
+        
+			</div>
+		</body>	
+
+    </text>
+</TEI>

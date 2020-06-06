@@ -30,6 +30,7 @@ Table of Contents
 2.9. Colors 
 2.10. Misc 
 2.11. Letters [not is use, commented out]
+2.12. Specific item rendering
 */
 
 /*--------------------------------------*/
@@ -897,10 +898,14 @@ ul{
 }
 .p.noindent,
 .p.center,
-.p.right{
+.p.right,
+.ab.noindent,
+.ab.center,
+.ab.right{
 	text-indent: 0;
 }
 .journal .p.center,
+.journal .ab.center,
 .journal .fw{
 	display: block;
 }
@@ -1102,6 +1107,7 @@ table .linenumber{
 	text-align: right;
 }
 .journal .p .right,
+.journal .ab .right,
 .journal .fw .right{
 	float: right;
 }
@@ -1182,7 +1188,7 @@ table .linenumber{
 	color: #473225;
 }
 .gray{
-	color: #706f6a;
+	color: #858585;
 }
 .gray.black{
 	color: #3d4245;
@@ -1295,3 +1301,42 @@ table .linenumber{
 	display:inline-block;
 }
 */
+
+
+/* 2.14. Specific item rendering */
+@media only screen and (min-width: 768px){
+	.text.liv_020011_0001{
+		color: #998a83;
+		line-height: 1em;
+		margin: 3em 0 -1em -1.5em;
+		padding: .7em;
+		border: 1px solid #998a83;
+		border-radius: 3em;
+		float:left;
+		display: inline-block;
+		-ms-transform:rotate(270deg); /* IE 9 */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari and Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+	}
+	.line.liv_020011_0001{    
+		width: 46%;
+		margin: 1em 0 -2em 0;
+	}
+	.signed.liv_020011_0004{
+		padding: .3em .7em;
+		border-right: 1px solid #664d36;
+		border-left: 1px solid #664d36;
+		border-radius: 3em;
+	}
+	.text.liv_020011_0004{
+		color: #c7c7c7;
+		padding: 0 10em 0 10em;
+		margin: -2em 1em -6em 0;
+		float: right;
+		-ms-transform:rotate(90deg); /* IE 9 */
+		-moz-transform:rotate(90deg); /* Firefox */
+		-webkit-transform:rotate(90deg); /* Safari and Chrome */
+		-o-transform:rotate(90deg); /* Opera */
+	}
+}

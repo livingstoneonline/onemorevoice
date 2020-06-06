@@ -960,7 +960,7 @@
 <!-- placeNames -->
 
 	<xsl:template match="placeName">
-		<span class="region"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="placeName"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="geogName">
@@ -979,12 +979,16 @@
 		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="settlement">
-		<span class="region"><xsl:attribute name="title">A settlement, such as a city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+	<xsl:template match="bloc">
+		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually a continent.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="bloc|country">
-		<xsl:apply-templates/>
+	<xsl:template match="settlement">
+		<span class="settlement"><xsl:attribute name="title">A settlement, such as a state, city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="country">
+		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
 <!-- end placeNames -->

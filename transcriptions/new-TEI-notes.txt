@@ -1,0 +1,34 @@
+For space at the end of a page:
+
+<lb/><space dim="vertical" unit="lines" extent="5"/>
+
+Please follow this order for attributes. Note that extent is the number of estimated empty lines *minus one* (since the <lb/> at the beginning of the line will add an extra empty line).
+
+**************
+
+For blank pages, do not use <space dim="vertical"/>. Rather add information to <pb>:
+
+Normal page: 
+
+<pb facs="liv_000017_0033" n="0033"/>
+<lb/>[TEXT GOES HERE]
+
+Blank page:
+
+<pb facs="liv_000139_0002" n="0002" type="blank" ana="19"/>
+<lb/><!-- blank page HB -->
+
+@ana indicates (approximately) how many blank lines this page contains. Make your estimate based on similar pages with text.
+
+**************
+
+Print items: do not use <lb/> with <p> or <ab> at all. Just use <p> for empty spaces and things other than <p> and <ab>.
+
+Also, no need to use <w> for words split up over two lines. Just silently take out the hyphen and make it one word.
+
+***********
+For all caps or small caps, write the text as you would normally with all relevant captialization, etc, then wrap it in <hi rend="caps"> or <hi rend="smallcaps">
+
+***********
+
+Please code only formally named regions, so yes: <region>Orange Free State</region>, but  no: the coast.

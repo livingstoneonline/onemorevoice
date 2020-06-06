@@ -64,7 +64,11 @@
                     </msIdentifier>
                     <physDesc>
                         <handDesc><!-- Add <handNote>s if needed. -->
-                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                            <handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                            <handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                            <handNote xml:id="U3"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                         </handDesc>
                     </physDesc>
@@ -95,16 +99,19 @@
     </teiHeader>
 
     <text>
-       	<body n="e3e9f0"><!-- Change; this is the color of the MS page; value can be any color -->
-			<div rend="gray black"><!-- Change; this is the color of the writing; only use auto-suggested values -->
+       	<body n="f8fcf9"><!-- Change; this is the color of the MS page; value can be any color -->
+			<div rend="brown"><!-- Change; this is the color of the writing; only use auto-suggested values -->
 
 	<pb facs="liv_020011_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
-<lb/><p><!-- Addition in unknown hand -->Copy of a Letter of <unclear>Fieldconneft</unclear>
-<lb/><hi rend="underline">And. Botha <gap extent="1" unit="words"/></hi></p> <p rend="right"><settlement>Brixton</settlement> <date when="1850-06-23">June 23<hi rend="sup double-underline">rd</hi> 1850</date></p>
-<lb/><p><persName>Baker</persName></p><!-- Name is unknown hand and color as well - Adrian, are we coding for these anymore? HB -->
-<lb/><p><!-- addition in unknown hand -->Copied <lb/><bibl>letter book <lb/>fol 18</bibl></p><!-- how would we style this addition --><!-- I would say metamark, but defer to Adrian! HB -->
-<lb/><p>Sir, hoping that your Excellency will not take
-<lb/>it amiss my addressing <bibl>this Letter</bibl> immediately
+<lb/><ab rend="no-indent" hand="#U"><!-- Addition in unknown hand -->Copy of a Letter of <unclear>Fieldconneft</unclear>
+<lb/>And. Botha <gap extent="1" unit="words"/></ab> <p rend="no-indent"><settlement>Brixton</settlement> <date when="1850-06-23">June 23<hi rend="sup double-underline">rd</hi> 1850</date></p>
+<milestone unit="line" rend="half-line left" n="line liv_020011_0001"/>
+<lb/><ab rend="no-indent" n="text liv_020011_0001"><seg type="metamark"><!-- addition in unknown hand -->Copied 
+<lb/><space extent="2" unit="chars"/>letter book 
+<lb/><space extent="2" unit="words"/>fol 18</seg></ab><!-- how would we style this addition --><!-- I would say metamark, but defer to Adrian! HB --><!-- See how I've done it. I've added special coding so this unique thing can be uniquely placed and styled. -->
+<lb/><ab rend="gray no-indent"><persName>Baker</persName></ab><!-- Name is unknown hand and color as well - Adrian, are we coding for these anymore? HB -->
+<lb/><p rend="no-indent">Sir, hoping that your Excellency will not take
+<lb/>it amiss my addressing this Letter immediately
 <lb/>to yours in behalf of myself and part of the
 <lb/>people belonging to my Field <unclear>carnetcy</unclear> -</p><!-- Maybe country or cemetery?? HB -->
 <lb/><p>Your Excellency knows me I am an old
@@ -154,7 +161,7 @@
 <lb/>for <unclear>every</unclear> duty paid regularly the Taxes as long as we
 <lb/><unclear>paid</unclear> went on <choice><sic>Patroles</sic><corr>Patrols</corr></choice> against the <term type="collective">Caffers</term> and fought
 <lb/>two wars-</p>
-<lb/><p>In <date when="1837">1837</date> some few more came out of <region><choice><sic>Caffreland</sic><corr>Cafferland</corr></choice></region> <!-- Adrian, not sure if it is Caffreland like here or Cafferland like above - I'm thinking it's the latter so coding as such but happy to swap if this is correct. HB -->
+<lb/><p rend="no-indent">In <date when="1837">1837</date> some few more came out of <region><choice><sic>Caffreland</sic><corr>Cafferland</corr></choice></region> <!-- Adrian, not sure if it is Caffreland like here or Cafferland like above - I'm thinking it's the latter so coding as such but happy to swap if this is correct. HB -->
 <lb/>to <choice><sic>their</sic><corr>their</corr></choice> friends - they also fought with us in the war
 <lb/>some time ago a petty chief <choice><sic>chief</sic><corr/></choice> named <persName>Dando</persName> came 
 <lb/>from <region><choice><sic>Caffreland</sic><corr>Cafferland</corr></choice></region> with a pass from <persName><unclear>M<hi rend="sup">r</hi> Brommmdie</unclear></persName> he <w>reques<!-- word on two lines -->
@@ -222,20 +229,23 @@
 <lb/>Man - I have my faults and <unclear>hable</unclear> to err like any
 <lb/>other Man but have <choice><sic>allways</sic><corr>always</corr></choice> tried to serve <orgName>Government</orgName>
 <lb/>faithfully both in war and in peace</p>			
-<lb/><p rend="center">I have</p>
-<lb/><p rend="right">(Signed) <persName>Andries <unclear>Botha sems</unclear></persName>
-<lb/> Field Cornet</p>
-			</div>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="2" unit="chars"/>I have</p>
+<lb/><p rend="no-indent"><space extent="5" unit="words"/><seg n="signed liv_020011_0004">Signed</seg> <persName>Andries Botha sen<hi rend="sup">r</hi></persName>
+<lb/><space extent="7" unit="words"/><space extent="2" unit="chars"/>Field Cornet</p>
 
-			<div> <!-- This section is written perpendicular to the page, in a different hand and color, and is very light and mostly illegible (at least to me). Not sure how we're coding an addendum like this? HB -->
-<lb/><p><bibl>This letter</bibl> to
-<lb/><persName>Sir Harry <unclear>Swath</unclear></persName>
+
+ <!-- This section is written perpendicular to the page, in a different hand and color, and is very light and mostly illegible (at least to me). Not sure how we're coding an addendum like this? HB -->
+<lb/><ab rend="gray no-indent" hand="#U3" n="text liv_020011_0004">This letter to
+<lb/><persName>Sir Harry Smith</persName>
 <lb/>is to be inserted
 <lb/>after the Extract
-<lb/>from the <bibl><hi rend="underline">Gazette</hi></bibl>
-<lb/>&amp; <!-- Next three lines unclear. HB -->
-<lb/>
-<lb/><!-- Next two lines unclear as well. HB --></p>
+<lb/>from the <hi rend="underline">Gazette</hi>
+<lb/>&amp; <gap extent="1" unit="lines"/>
+<lb/><gap extent="1" unit="lines"/>
+<lb/><gap extent="1" unit="lines"/>
+<lb/><gap extent="1" unit="lines"/>
+<lb/><gap extent="1" unit="lines"/></ab>
+			
 			</div>
 		</body>	
     </text>

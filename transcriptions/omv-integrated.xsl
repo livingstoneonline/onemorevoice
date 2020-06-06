@@ -562,7 +562,7 @@
 	<!-- Alphabetical list of elements. Alphabetized by last element in path *or* first element among options. -->
 
 	<xsl:template match="ab|p">
-		<p class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
 			<xsl:apply-templates/>
 		</p>
 	</xsl:template>
@@ -838,32 +838,32 @@
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<xsl:choose>
 					<xsl:when test="contains(@rend,'double-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
 						<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 					</xsl:when>
 					<xsl:when test="contains(@rend,'triple-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<xsl:choose>
 					<xsl:when test="contains(@rend,'double-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
 						<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 					</xsl:when>
 					<xsl:when test="contains(@rend,'triple-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
@@ -1015,7 +1015,7 @@
 		</span>
 	</xsl:template>
 
-	<xsl:template match="seg[@n='none']">
+	<xsl:template match="seg[@n]">
 		<span class="{concat(name(), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
 	</xsl:template>
 

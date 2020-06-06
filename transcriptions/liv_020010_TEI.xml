@@ -89,94 +89,93 @@
 			<!-- Note that @who initials are taken from <respStmt> above -->
 			<!-- Add new <change> elements below as needed. -->
 			<!-- Note that the most recent <change> should always be placed first, at the top -->
+            <change when="2020-06-06" who="#AW">Proofing and coding review</change>
             <change when="2020-05-24" who="#MBT">Proofing</change>
             <change when="2020-04-01" who="#HB">Transcription and TEI encoding</change>
         </revisionDesc>
     </teiHeader>
 
     <text>
-       	<body n="e3e9f0"><!-- Change; this is the color of the MS page; value can be any color -->
-			<div rend="gray black"><!-- Change; this is the color of the writing; only use auto-suggested values -->
+       	<body n="f1f0f0"><!-- Change; this is the color of the MS page; value can be any color -->
+			<div rend="brown"><!-- Change; this is the color of the writing; only use auto-suggested values -->
 
 	<pb facs="liv_020010_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
-<lb/><p rend="right"><settlement>Philipton</settlement>
-<lb/><date when="1850-05-23">May 23 <hi rend="underline">1850</hi></date></p>
+<lb/><p rend="no-indent"><space extent="6" unit="words"/><settlement>Philipton</settlement>
+<lb/><space extent="6" unit="words"/><space extent="2" unit="chars"/><date when="1850-05-23">May 23 <hi rend="underline">1850</hi></date></p>
 <lb/>
 <lb/>
-<lb/><p>My dear <persName>M<hi rend="sup">r</hi> Freeman</persName></p>
-<lb/><p><space extent="4" unit="words"/>Owing to the detentions of
-<lb/>the past by the <unclear>novis</unclear><!-- rains MBT --> and my absence <unclear>who</unclear> <!-- into MBT -->
-<lb/><unclear></unclear><!-- <region>Caffreland</region> MBT --> for the recovery of <persName>M<hi rend="sup underline">r</hi> Read</persName>,
+<lb/><p rend="no-indent">My dear <persName>M<hi rend="sup dotted-underline">r</hi> Freeman</persName></p>
+<lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/>Owing to the detentions of
+<lb/>the past by the <unclear>rains</unclear><!-- rains MBT --> and my absence <unclear>into</unclear>
+<lb/><region>Caffreland</region> for the recovery of <persName>M<hi rend="sup underline">rs</hi> Read</persName>,
 <lb/>and one of our <choice><sic>childrens</sic><corr>children's</corr></choice> healths I could
 <lb/>not reply to yours of the 4 ultimo till now.</p> <!-- is 4 ultimo May or April 4th? HB --><!-- I'm not sure MBT -->
-<lb/><p>1. I shall take the earliest opportunity of communicating <!-- Not sure how we want to code this list? HB --><!-- I think it's ok as is. MBT -->
-<lb/>with <persName>M<hi rend="sup underline">r</hi> <unclear></unclear></persName><!-- Ulbrecht? MBT --> about his son.</p>
-<lb/><p>2. I have not had any recent information
-<lb/>about <region><unclear><gap extent="1" unit="words"/></unclear><!-- Madaars or Madaan? MBT --> country</region> - however I <choice><sic>dont</sic><corr>don't</corr></choice> <unclear>hear</unclear>
-<lb/>a word now about the <unclear></unclear> - On <persName>Campbell</persName>
-<lb/>shaking his <unclear>tardant</unclear> <!-- Whole line is unclear to me, to be honest! HB --><!-- There's a reference to Lin IL on page 2. maybe "shake his tardant at Lin IL by the" MBT -->
-<lb/>publication of <bibl>your letter</bibl> may for
+<lb/><p rend="no-indent">1<supplied>.</supplied> I shall take the earliest opportunity of communicating <!-- Not sure how we want to code this list? HB --><!-- I think it's ok as is. MBT -->
+<lb/>with <persName>M<hi rend="sup underline">r</hi> <unclear>Ulbrecht</unclear></persName> about his son.</p>
+<lb/><p rend="no-indent">2. I have not had any recent information
+<lb/>about <region><unclear><app><rdg>Madaars</rdg><rdg>Madaan</rdg></app></unclear> country</region> - however I <choice><sic>dont</sic><corr>don't</corr></choice> hear
+<lb/>a word now about the <unclear>task</unclear> - On <persName>Campbell</persName>
+<lb/>shaking his <unclear>tardant</unclear> over <unclear>Lin H</unclear> by the<!-- Whole line is unclear to me, to be honest! HB --><!-- There's a reference to Lin IL on page 2. maybe "shake his tardant at Lin IL by the" MBT --><!-- Gave it a shot. AW -->
+<lb/>publication of <bibl>your letter</bibl> <unclear>may</unclear> for
 
 	<pb facs="liv_020010_0002" n="0002"/>
-<lb/>the present <unclear></unclear> farther proceedings -
+<lb/>the present <unclear></unclear> farther proceedings &#8211;
 <lb/>I met <persName>M<hi rend="sup underline">r</hi> <unclear>Caldewood</unclear></persName> <date when="1850-05-22">yesterday</date> &amp; he
-<lb/>told me that the <unclear>Boons</unclear>have been causing <!-- My instinct is this is Boers, but totes doesn't look like it so I am at a loss! HB --><!-- Boers is my instinct too, but agreed. Maybe also Baans? MBT -->
-<lb/>a disturbance among the <unclear>Tambookies</unclear><!-- orgName? MBT --> <add place="inline"><unclear>the in</unclear></add><!-- that is? MBT -->
+<lb/>told me that the <unclear><term type="collective">Boars</term></unclear> have been causing <!-- My instinct is this is Boers, but totes doesn't look like it so I am at a loss! HB --><!-- Boers is my instinct too, but agreed. Maybe also Baans? MBT --><!-- I've gone with Boars. AW -->
+<lb/>a disturbance among the <unclear><term type="collective">Tambookies</term></unclear><!-- orgName? MBT -->, <add place="inline"><unclear><seg rend="small">that</seg> <add place="below">is</add></unclear></add><!-- that is? MBT -->
 <lb/>they have threatened to drive <unclear>them</unclear> out
-<lb/>of their country &amp;that <del><unclear></unclear></del><!-- length word? --> he had advised
-<lb/>the <unclear></unclear><!-- Looks like faut? MBT --> to send a force to apprehend
-<lb/>the <unclear>ringleaders</unclear> away the <unclear>Boons</unclear> - but
-<lb/>that <unclear><persName>Lin IL</persName></unclear> thinks from it - It is to be
-<lb/><unclear>bounce</unclear><!-- bourne MBT --> in mind that <hi rend="underline"><unclear>He</unclear></hi> first promised
-<lb/>the <unclear><term type="collective">Baens</term></unclear> that he would parcel out
-<lb/><unclear><persName>Tawkaolund</persName></unclear><!-- I think this is the region mentioned earlier MBT --> among them - I think
+<lb/>of their country &amp; that <del><unclear><gap extent="1" unit="words"/></unclear></del><!-- length word? --> he had advised
+<lb/>the <unclear><gap extent="1" unit="words"/></unclear><!-- Looks like faut? MBT --> to send a force to apprehend
+<lb/>the <unclear>ringleaders</unclear> away the <unclear>Boars</unclear> - but
+<lb/>that <unclear><persName>Lin H</persName></unclear> thinks from it - It is to be
+<lb/><unclear>bourne</unclear><!-- bourne MBT --> in mind that <hi rend="underline"><unclear>He</unclear></hi> first promised
+<lb/>the <unclear><term type="collective">Boers</term></unclear> that he would parcel out
+<lb/><unclear><persName>Tamkaolund</persName></unclear><!-- I think this is the region mentioned earlier MBT --> among them - I think
 <lb/><unclear><persName>Lin A</persName></unclear> spoke about it to you<supplied>.</supplied></p>
-<lb/><p>3. "<unclear>I know one</unclear><!-- I have aue? MBT --> you likely to be offended by the
-<lb/><bibl>constitution</bibl> - <hi rend="sup"><unclear>9</unclear></hi>" If justice is done there &amp; is if
+<lb/><p rend="no-indent">3. "<unclear>I know one</unclear><!-- I have aue? MBT --> you likely to be offended by the
+<lb/>constitution <del>"</del><hi rend="sup underline"><unclear>9</unclear></hi>" If justice is done there &amp; is if
 <lb/>all who have property to the amount of 50 £ <!-- The pound sign he draws has an extra line through the center - how to notate? HB -->
-<lb/>be fit far <unclear></unclear> <!-- Again, this whole line is a bit murky for me... HB --><!-- be fit for elections then will be newly 7 or 8ao be? MBT -->
+<lb/>be fit for <unclear><gap extent="1" unit="words"/> then will be nearly 7 or <del><gap extent="1" unit="chars"/></del><add place="over-text">8</add> as he</unclear> <!-- Again, this whole line is a bit murky for me... HB --><!-- be fit for elections then will be newly 7 or 8ao be? MBT -->
 
 	<pb facs="liv_020010_0003" n="0003"/>
 <lb/>have the right of <unclear>duking</unclear> as nearly all the
-<lb/><unclear>cups</unclear> <unclear>are</unclear> valued by the <unclear>Road Bard</unclear><!-- Road Board? Also organization? MBT --> at
-<lb/>from 50 to 70 £ - <space extent="4" unit="chars"/>The <unclear>diamond</unclear> should
-<lb/>be <unclear></unclear> immediately as then ostensible reason
+<lb/><unclear>cups</unclear> <unclear>are</unclear> valued by the <unclear><orgName>Road Board</orgName></unclear><!-- Road Board? Also organization? MBT --> at
+<lb/>from 50 to 70 £ &#8211; <space extent="2" unit="chars"/>The <unclear>diamond</unclear> should
+<lb/>be <unclear><gap extent="1" unit="words"/></unclear> immediately as <choice><sic>then</sic><corr>the</corr></choice> ostensible reason
 <lb/>for not building good houses is for
 <lb/><unclear>want</unclear><!-- I read this as want too. MBT--> of that &amp; the <add place="below">^</add> <add place="above">want of</add> security &amp; sense of security
 <lb/>of life and property - The <term type="collective">Natives</term> look on
-<lb/>the present peace as a hushed volcano = <add place="inline"><unclear>therefore</unclear></add>
+<lb/>the present peace as a hushed volcano = <add place="inline" rend="small"><unclear>therefore</unclear></add>
 <lb/>they are disinclined to build at least for the
 <lb/>present -</p>
-<lb/><p>4. The holder of <region>lands at <unclear>Kat River</unclear></region> may sell
+<lb/><p rend="no-indent">4. The holder of <region>lands at <unclear>Kat River</unclear></region> may sell
 <lb/>and transfer <unclear>these</unclear> lands - &amp; therefore it is very
 <lb/>likely in a <unclear>shout</unclear> the lands may fall into the
-<lb/>hands of others -</p>
-<lb/><p>5 The only thing that can put off this is that the
+<lb/>hands of others &#8212;</p>
+<lb/><p rend="no-indent">5<supplied>.</supplied> The only thing that can put off this is that the
 <lb/><orgName><term type="collective">English</term> <unclear>Prolution</unclear> Society</orgName> buy up all <hi rend="underline">vacant</hi>
 <lb/><unclear>cufs.</unclear> &amp; sell them again to other industrious
-<lb/><term type="collective">Natives</term> - <del type="strikethrough">This</del> There is no <unclear>risk</unclear> in such
+<lb/><term type="collective">Natives</term> - <del type="strikethrough">This</del> There is no risk in such
 
 	<pb facs="liv_020010_0004" n="0004"/>
 <lb/>a plan. The old <orgName><term type="collective">English</term> anti-slavery</orgName> &amp;
 <lb/><orgName><unclear>Prolution</unclear> Societies</orgName> must not abandon
-<lb/>the <term type="collective">Natives</term> -</p>
-<lb/><p>6. I am <del type="strikethrough">not</del> of opinion that the <term type="collective">Natives</term> will
+<lb/>the <term type="collective">Natives</term> &#8212;</p>
+<lb/><p rend="no-indent">6. I am <del type="strikethrough">not</del> of opinion that the <term type="collective">Natives</term> will
 <lb/>suffer greatly from the Establishment of a
 <lb/>representative <unclear>assembly</unclear> - but move from a
 <lb/>federal union -</p>
-<lb/><p>7 I shall write to <persName>M<hi rend="sup">r</hi> <unclear></unclear></persName> by next
+<lb/><p rend="no-indent">7 I shall write to <persName>M<hi rend="sup">r</hi> <unclear><gap extent="1" unit="words"/></unclear></persName> by next
 <lb/>post about the accounts -</p>
-<lb/><space extent="1" unit="lines"/>
-<lb/><p>I <unclear>intent</unclear> this newly as an outline of my
-<lb/>views - but I shall write <unclear>deliberately write</unclear> in
-<lb/>the <unclear>conjunction</unclear> with my <unclear>father</unclear> &amp; <unclear></unclear><!-- drink mbt -->
-<lb/>to the <unclear></unclear> -</p> <!-- Yikes, this line! HB --><!-- mission Bloanfuld thaut? MBT -->
-<lb/><space extent="1" unit="lines"/>
-<lb/><p>Be so kind my dear <unclear><persName>Lin</persName></unclear> as to present
+<lb/><p rend="no-indent">I <unclear>intent</unclear> this newly as an outline of my
+<lb/>views - but I shall <choice><sic>write</sic><corr></corr></choice> <unclear>deliberately write</unclear> in
+<lb/>the <unclear>conjunction</unclear> with my <unclear>father</unclear> &amp; drink<!-- drink mbt -->
+<lb/>to the <unclear><orgName>mission Bloanfuld</orgName> thaut?</unclear> &#8212;</p> <!-- Yikes, this line! HB --><!-- mission Bloanfuld thaut? MBT --><!-- As good as guess as any. AW -->
+<lb/><p rend="no-indent">Be so kind my dear <unclear><persName>Lin</persName></unclear> as to present
 <lb/>my kindest reagrds to <persName>M<hi rend="sup">rs</hi> Freeman</persName>
-<lb/>&amp; your excellent daughters &amp; <unclear>behind</unclear> me</p>
-<lb/><p rend="right">Yours respectfully &amp; affectionately</p>
-<lb/><p><hi rend="underline"><persName>James Read</persName></hi></p>
+<lb/>&amp; your excellent daughters &amp; <unclear>believe</unclear> me</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="2" unit="chars"/>Yours respectfully &amp; affectionately</p>
+<lb/><p rend="no-indent"><space extent="6" unit="words"/><hi rend="underline"><persName>James Read</persName></hi></p>
         
 			</div>
 		</body>	

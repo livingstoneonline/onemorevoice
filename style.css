@@ -72,7 +72,13 @@ body{
 }
 @media only screen and (min-width: 768px){
 	body{
-		font-size: .85em;
+		font-size: .9em;
+		max-width: 48em;
+	}
+}
+@media only screen and (min-width: 992px){
+	body{
+		/* font-size: .85em; */
 		max-width: 42em;
 	}
 }
@@ -275,7 +281,7 @@ nav{
 @media only screen and (min-width: 768px){
 	.menu,
 	.fixed-nav .menu{
-		max-width: 42em;
+		max-width: 48em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -285,7 +291,7 @@ nav{
 	}
 }
 .icon-title{
-	font-size: .95em;
+	font-size: 1.5em;
 	float: left;
 	padding-top: .2em;
 }
@@ -303,7 +309,7 @@ nav{
 	color: black;
 }
 .nav-title{
-	font-size: 1.7em;
+	font-size: 2.4em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
 }
@@ -331,7 +337,7 @@ nav{
 	}
 }
 .topnav ul{
-	font-size: .95em;
+	/* font-size: .95em; */
 	text-align: center;
 	list-style: none;
 	padding: 0 0 .5em 0;
@@ -500,6 +506,11 @@ body.fixed-nav .overlay .menu .close-title{
 	top: 1em;
 	position: relative;
 	display: block;
+}
+@media only screen and (min-width: 768px){
+	.overlay-content{
+		font-size: 1.5em;
+	}
 }
 .overlay ul{
 	list-style-type: none;

@@ -7,8 +7,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Letter to Unknown</title><!-- Change -->
-                <title type="alternative">Letter to Unknown, 23 June 1850</title><!-- Change; note addition of date -->
+                <title>Letter to [Harry Smith]</title><!-- Change -->
+                <title type="alternative">Letter to [Harry Smith], 23 June 1850</title><!-- Change; note addition of date -->
                 <author>Botha, Andries</author><!-- Change -->
                 <author role="first">Botha, Andries</author>
 				<author role="first-normalized">Andries Botha</author>
@@ -77,7 +77,7 @@
                     <title>Letter to Unknown</title><!-- Change -->
                     <author xml:id="AB">Botha, Andries</author>
                     <date type="composition" when="1850-06-23">23 June 1850</date><!-- Change, including attributes -->
-                    <placeName type="compositionPlace">Brixton, England</placeName><!-- Change -->
+                    <placeName type="compositionPlace">Brixton</placeName><!-- Change -->
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -93,6 +93,7 @@
 			<!-- Note that @who initials are taken from <respStmt> above -->
 			<!-- Add new <change> elements below as needed. -->
 			<!-- Note that the most recent <change> should always be placed first, at the top -->
+            <change when="2020-06-06" who="#AW">Proofing and coding review</change>
             <change when="2020-05-28" who="#HB">Proofing and TEI encoding</change>
             <change when="2020-05-24" who="#MBT">Transcription and TEI encoding</change>
         </revisionDesc>
@@ -103,8 +104,8 @@
 			<div rend="brown"><!-- Change; this is the color of the writing; only use auto-suggested values -->
 
 	<pb facs="liv_020011_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
-<lb/><ab rend="no-indent" hand="#U1"><!-- Addition in unknown hand -->Copy of a Letter of <unclear>Fieldconneft</unclear>
-<lb/>And. Botha <unclear><gap extent="1" unit="words"/></unclear></ab> <p rend="no-indent"><settlement>Brixton</settlement> <date when="1850-06-23">June 23<hi rend="sup double-underline">rd</hi> 1850</date></p>
+<lb/><ab rend="no-indent" hand="#U1"><!-- Addition in unknown hand -->Copy of a Letter of <unclear>Field Cornet</unclear>
+<lb/>And. Botha <unclear><persName>Sir A. South</persName></unclear></ab> <p rend="no-indent"><settlement>Brixton</settlement> <date when="1850-06-23">June 23<hi rend="sup double-underline">rd</hi> 1850</date></p>
 <milestone unit="line" rend="half-line" n="line liv_020011_0001"/>
 <lb/><ab rend="no-indent" hand="#U2" n="text liv_020011_0001"><seg type="metamark"><!-- addition in unknown hand -->Copied 
 <lb/><space extent="2" unit="chars"/>letter book 
@@ -136,60 +137,60 @@
 <lb/><choice><sic>allways</sic><corr>always</corr></choice> <choice><sic>untill</sic><corr>until</corr></choice> now had the <choice><sic>appobation</sic><corr>approbation</corr></choice> of
 			    
 	<pb facs="liv_020011_0002" n="0002"/>
-<lb/>my superiors - Now I must tell your Excellency of the 
+<lb/>my superiors &#8211; Now I must tell your Excellency of the 
 <lb/>trouble that has come over me but your Excellency
-<lb/>must permit me to tell my whole story. - Your
+<lb/>must permit me to tell my whole story. &#8211; Your
 <lb/>Excellency well knows that when this Settlement 
 <lb/>was commenced in <date when="1829">1829</date> many of my friends for the 
-<lb/>most part of my family are <unclear><term type="collective">Gomas</term></unclear> were in <region><w>Caffer<supplied><seg type="hyphen">-</seg></supplied><!-- word on two lines. MBT --><!-- Fixed - Adrian, not sure if Cafferland also needs a term type collective like above? HB --><!-- OK to leave out. We would code the "German" in "Germany" for instance. AW -->
-<lb break="no"/>land</w></region> and wishing to come to the <region>Colony</region> - to dwell among
+<lb/>most part of my family are <term type="collective">Gomas</term> were in <region><w>Caffer<supplied><seg type="hyphen">-</seg></supplied><!-- word on two lines. MBT --><!-- Fixed - Adrian, not sure if Cafferland also needs a term type collective like above? HB --><!-- OK to leave out. We would code the "German" in "Germany" for instance. AW -->
+<lb break="no"/>land</w></region> and wishing to come to the <region>Colony</region> &#8211; to dwell among
 <lb/>their friends they applied to <persName>Sir A Stockenstrom</persName> who 
 <lb/><choice><sic>recieved</sic><corr>received</corr></choice> them into the Settlement so they came - 
-<lb/>some were at <placeName><unclear>Baffourm</unclear></placeName> - some at <settlement>Philipton</settlement> and
+<lb/>some were at <placeName>Balfour</placeName> - some at <settlement>Philipton</settlement> and
 <lb/>some with me at <settlement>Brixton</settlement> - Most of those at 
-<lb/><placeName><unclear>Baffor</unclear></placeName> got <unclear>Erfs</unclear> immediately from <persName>Sir A Stockenstrom</persName>
-<lb/>and <persName>M<hi rend="sup">r</hi> Hertzog</persName> - Those located at <settlement>Philipton</settlement> <w>subse<!-- word on two lines MBT -->
-<lb break="no"/><seg type="hyphen">-</seg>quently</w> <choice><sic>recieved</sic><corr>received</corr></choice> <unclear>Erfs</unclear> at <placeName>Lower <unclear>Blinksmater</unclear></placeName> some
+<lb/><placeName>Balfour</placeName> got Erfs immediately from <persName>Sir A Stockenstrom</persName>
+<lb/>and <persName>Mr Hertzog</persName> - Those located at <settlement>Philipton</settlement> <w>subse<!-- word on two lines MBT -->
+<lb break="no"/><seg type="hyphen">-</seg>quently</w> <choice><sic>recieved</sic><corr>received</corr></choice> Erfs at <placeName>Lower Blinkwater</placeName> some
 <lb/>few are still at <settlement>Philipton</settlement> - where <persName>Col. Hare</persName> promised
-<lb/>they should have <unclear>Erfs</unclear> - of those who came here only a 
-<lb/>few got <unclear>Erfs</unclear> measured out to them - many who were
+<lb/>they should have Erfs - of those who came here only a 
+<lb/>few got Erfs measured out to them - many who were
 <lb/>Boys are now Men - they have <choice><sic>allways</sic><corr>always</corr></choice> been expecting
-<lb/>to get <unclear>Erfs</unclear> according to promise - but it was not done
-<lb/>and as they were among <choice><sic>their</sic><corr>their</corr></choice> friends and no complaints
-<lb/>we did not urge <choice><sic>their</sic><corr>their</corr></choice> leaving thus they have remained 
-<lb/>among <choice><sic>their</sic><corr>their</corr></choice> friends <choice><sic>untill</sic><corr>until</corr></choice> now - They were ready
-<lb/>for <unclear>every</unclear> duty paid regularly the Taxes as long as we
-<lb/><unclear>paid</unclear> went on <choice><sic>Patroles</sic><corr>Patrols</corr></choice> against the <term type="collective">Caffers</term> and fought
-<lb/>two wars-</p>
+<lb/>to get Erfs according to promise - but it was not done
+<lb/>and as they were among <choice><sic>thier</sic><corr>their</corr></choice> friends and no complaints
+<lb/>we did not urge <choice><sic>thier</sic><corr>their</corr></choice> leaving thus they have remained 
+<lb/>among <choice><sic>thier</sic><corr>their</corr></choice> friends <choice><sic>untill</sic><corr>until</corr></choice> now - They were ready
+<lb/>for <choice><sic>evry</sic><corr>every</corr></choice> duty paid regularly the Taxes as long as we
+<lb/>paid went on <choice><sic>Patroles</sic><corr>Patrols</corr></choice> against the <term type="collective">Caffers</term> and fought
+<lb/>two wars &#8211;</p>
 <lb/><p rend="no-indent">In <date when="1837">1837</date> some few more came out of <region><choice><sic>Caffreland</sic><corr>Cafferland</corr></choice></region> <!-- Adrian, not sure if it is Caffreland like here or Cafferland like above - I'm thinking it's the latter so coding as such but happy to swap if this is correct. HB -->
 <lb/>to <choice><sic>their</sic><corr>their</corr></choice> friends - they also fought with us in the war
 <lb/>some time ago a petty chief <choice><sic>chief</sic><corr/></choice> named <persName>Dando</persName> came 
-<lb/>from <region><choice><sic>Caffreland</sic><corr>Cafferland</corr></choice></region> with a pass from <persName><unclear>M<hi rend="sup">r</hi> Brommmdie</unclear></persName> he <w>reques<!-- word on two lines -->
+<lb/>from <region><choice><sic>Caffreland</sic><corr>Cafferland</corr></choice></region> with a pass from <persName><unclear>M<hi rend="sup">r</hi> Bromilie</unclear></persName> he <w>reques<!-- word on two lines -->
 <lb break="no"/><seg type="hyphen">-</seg>ted</w> permission to graze his <term type="animal">cattle</term> for a time which was
-<lb/>allowed - but other <term type="collective">Caffers</term> soon came and our people
+<lb/>allowed &#8211; but other <term type="collective">Caffers</term> soon came and our people
 <lb/>applied to our <choice><sic>Magestrate</sic><corr>Magistrate</corr></choice> to have them removed which he
 
 	<pb facs="liv_020011_0003" n="0003"/>
-<lb/>promised to do and he more than once asked me if <choice><sic>their</sic><corr>their</corr></choice>
+<lb/>promised to do and he more than once asked me if <choice><sic>thier</sic><corr>their</corr></choice>
 <lb/><term type="plant">corn</term> was ripe - and said to me that when it was he would
 <lb/>come saying at the same time he had nothing to do
 <lb/>with the <term type="collective">Gomas</term> and others who had been <choice><sic>who had
-<lb/>been</sic><corr/></choice> long with us or taken part in the wars, <space unit="chars" extent="3"/><!-- unsure if this is the right tag to use MBT --><!-- I've corrected it. HB -->and
-<lb/>conducted themselves well thus we were at rest -</p>
-<lb/><p>On Saturday week I heard that <persName><unclear>Mr Bowker</unclear></persName> was at 
+<lb/>been</sic><corr/></choice> long with us or taken part in the wars, <space unit="words" extent="1"/><!-- unsure if this is the right tag to use MBT --><!-- I've corrected it. HB -->and
+<lb/>conducted themselves well thus we were at rest &#8211;</p>
+<lb/><p>On Saturday week I heard that <persName>Mr Bowker</persName> was at 
 <lb/><placeName>Wilberforce</placeName> with a strong party of <orgName><term type="collective">Caffre</term> Police</orgName> <!-- Adrian, again I am unclear on the correct spelling to use throughout of Caffer/Caffre. HB -->
 <lb/>and was burning all before him, and only the houses
 <lb/>of <persName>Dindo</persName> and his followers but all who had been so 
 <lb/>long with us and living amongst us by permission of 
-<lb/><unclear>Erf</unclear> holder according to article 5<hi rend="sup underline">th</hi> of the printed <w>regu<supplied><seg type="hyphen">-</seg></supplied><!-- word on two lines --><!-- Fixed coding for line break. Adrian, would printed articles be considered bibl, and are we even using that code anymore? HB --><!-- Not using bibl anymore, so removed. -->
+<lb/>Erf holder according to article 5<hi rend="sup underline">th</hi> of the printed <w>regu<supplied><seg type="hyphen">-</seg></supplied><!-- word on two lines --><!-- Fixed coding for line break. Adrian, would printed articles be considered bibl, and are we even using that code anymore? HB --><!-- Not using bibl anymore, so removed. -->
 <lb break="no"/>lations</w> for the division of the <placeName>Settlement of <geogName>Kat River</geogName></placeName>
 <lb/>it is provided that the right of grazing may be let out
-<lb/>to any person <!-- added underlining by another hand MBT --> <seg type="metamark">by <unclear>evry</unclear><!-- I think this is an abbrev for every but not sure if to correct? HB --> women <add place="above">x</add> of Land</seg> who does not require <!-- As the line kind of arcs and is a different hand and shade (again not sure if we're coding that), I used metamark, but Adrian correct me if that's wrong. HB -->
+<lb/>to any person <!-- added underlining by another hand MBT --> <seg type="metamark">by <choice><sic>evry</sic><corr>every</corr></choice><!-- I think this is an abbrev for every but not sure if to correct? HB --> women <add place="above">x</add> of Land</seg> who does not require <!-- As the line kind of arcs and is a different hand and shade (again not sure if we're coding that), I used metamark, but Adrian correct me if that's wrong. HB -->
 <lb/>it for his own use - either part of it on the whole for
 <lb/>any period of time not exceeding one year &amp;c and <persName>Mr
-<lb/><unclear>Bowker</unclear></persName> has allowed sveral people in the Settlement
+<lb/>Bowker</persName> has allowed several people in the Settlement
 <lb/>to let out <choice><sic>their</sic><corr>their</corr></choice> grazing grassing to <persName>Fungo</persName>'s Being Field <!-- this passage does not make sense to me. MBT -->
-<lb/>Cornet of the place - and <persName>Mr <unclear>Bowker</unclear></persName> not having told
+<lb/>Cornet of the place - and <persName>Mr Bowker</persName> not having told
 <lb/>me what he was going to do - I went to him and tried to 
 <lb/>explain the case of the various people to him but he
 <lb/>drove me away - <persName>Mr Bowker</persName> was busy burning the whole
@@ -214,17 +215,17 @@
 <lb/>they might quietly have withdrawn from the Settlement
 <lb/>but not a <choice><sic>moments</sic><corr>moment's</corr></choice> warning was given the way in which
 <lb/>these people have been burnt out has created some sensation
-<lb/>in the Settlement as even <choice><sic>their</sic><corr>their</corr></choice> servants have been <!-- Are servants being coded as term type collective, or left untagged? HB --><!-- Untagged. AW -->
+<lb/>in the Settlement as even <choice><sic>thier</sic><corr>their</corr></choice> servants have been <!-- Are servants being coded as term type collective, or left untagged? HB --><!-- Untagged. AW -->
 <lb/>driven away - They have to enclose a list of the names of
-<lb/>the <term type="collective">Gomas</term> and <unclear><term type="collective">Fingos</term></unclear> above alluded to as also a List
+<lb/>the <term type="collective">Gomas</term> and <term type="collective">Fingos</term> above alluded to as also a List
 <lb/>of the names of the Erf holders who made a declaration
-<lb/>that they did not ask for the removal of those people<supplied>.</supplied></p>
-<lb/><p rend="no-indent">It was not my intention to have troubled your
+<lb/>that they did not ask for the removal of those people
+<lb/>It was not my intention to have troubled your
 <lb/>Excellency <choice><sic>painfull</sic><corr>painful</corr></choice> as the case is but as <persName>Mr Bowker</persName> has <unclear>dismissed</unclear>
 <lb/>me without giving any reason I have thought it my
 <lb/>duty to give your Excellency a plain statement of facts
 <lb/>and beg humbly and respectfully to repeat my request and
-<lb/>to the Honorable Sec<hi rend="sup underline">y</hi> to <orgName>Govt.</orgName>. that I may have an <!-- Would Honorable Secretary to the Govt be a term type collective? HB --><!-- No. AW -->
+<lb/>to the Honorable Sec<hi rend="sup underline">y</hi> to <orgName>Govt.</orgName> that I may have an <!-- Would Honorable Secretary to the Govt be a term type collective? HB --><!-- No. AW -->
 <lb/>impartial investigation of my case I am not a perfect
 <lb/>Man - I have my faults and <unclear>hable</unclear> to err like any
 <lb/>other Man but have <choice><sic>allways</sic><corr>always</corr></choice> tried to serve <orgName>Government</orgName>
@@ -240,11 +241,12 @@
 <lb/>is to be inserted
 <lb/>after the Extract
 <lb/>from the <hi rend="underline">Gazette</hi>
-<lb/>&amp; <gap extent="1" unit="lines"/>
+<lb/><del>&amp; <unclear>before the</unclear></del>
 <lb/><del><gap extent="1" unit="lines"/></del>
 <lb/><del><gap extent="1" unit="lines"/></del>
-<lb/><del><gap extent="1" unit="lines"/></del>
-<lb/><del><gap extent="1" unit="lines"/></del></ab>
+<lb/>
+<lb/><unclear>It had <gap extent="1" unit="words"/></unclear>
+<lb/><unclear>sent in <gap extent="1" unit="words"/></unclear></ab>
 			
 			</div>
 		</body>	

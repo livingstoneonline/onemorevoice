@@ -1063,10 +1063,6 @@ table .linenumber{
 .gap{
 	border-bottom: 1px dotted #858585;
 }
-.supplied{
-	color: #706f6a;
-	border-bottom: 1px dotted #858585;
-}
 .sic,
 .corr{
 	border-bottom: 2px dotted #e4524b;
@@ -1341,8 +1337,9 @@ table .linenumber{
 		-o-transform:rotate(270deg); /* Opera */
 	}
 	.line.liv_020011_0001{    
-		width: 46%;
-		margin: 1em 0 -2em 0;
+		border-top: 1.5px solid #58484b;
+		margin: 0em 0 -2em 0;
+		width: 11em;
 	}
 	.signed.liv_020011_0004{
 		padding: .3em .7em;

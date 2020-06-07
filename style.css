@@ -758,7 +758,7 @@ ul{
 	}
 }
 .manuscript .TEI{
-	padding: 2em 0 6em 0;
+	padding: 2em 0 5em 0;
 	margin: 2em 0;
 	border: 2px solid gainsboro;
 }
@@ -1336,19 +1336,10 @@ table .linenumber{
 		-webkit-transform:rotate(270deg); /* Safari and Chrome */
 		-o-transform:rotate(270deg); /* Opera */
 	}
-	.line.liv_020011_0001{    
-		border-top: 1.5px solid #58484b;
-		margin: 0em 0 -2em 0;
-		width: 11em;
-	}
-	.signed.liv_020011_0004{
-		padding: .3em .7em;
-		border-right: 1px solid #664d36;
-		border-left: 1px solid #664d36;
-		border-radius: 3em;
+	.line.liv_020011_0001{
+		margin: 0em 0 -2em 0 !important;
 	}
 	.text.liv_020011_0004{
-		color: #c7c7c7;
 		padding: 0 10em 0 10em;
 		margin: -2em 1em -6em 0;
 		float: right;
@@ -1360,4 +1351,22 @@ table .linenumber{
 	.text.liv_020011_0004 .unclear{
 		color: #c7c7c7;
 	}
+}
+.text.liv_020011_0001{
+	color: #998a83;
+}
+.line.liv_020011_0001{    
+	border-top: 1.5px solid #58484b;
+	margin: 0em 0 -1em 0;
+	width: 11em;
+}
+.signed.liv_020011_0004{
+	padding: .3em .7em;
+	border-right: 1px solid #664d36;
+	border-left: 1px solid #664d36;
+	border-radius: 3em;
+}
+.text.liv_020011_0004,
+.text.liv_020011_0004 .unclear{
+	color: #c7c7c7;
 }

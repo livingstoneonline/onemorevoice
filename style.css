@@ -450,6 +450,19 @@ input:checked + label::after{
 .topnav ul li .dropdown .dropdown-content ul li a:hover{
 	color: whitesmoke;
 }
+/*Focus elements*/
+.topnav ul li:focus-within a,
+.topnav ul li:focus-within .dropdown,
+.topnav ul li:focus-within .dropdown .dropdown-content ul{
+	outline: 2px solid #e4524b;
+}
+.topnav ul li:focus-within .dropdown .dropdown-content ul li a{
+	outline: none;
+}
+.topnav ul li .dropdown .dropdown-content ul li:focus-within a{
+	color: whitesmoke;
+	background-color: #858585;
+}
 /* The following may be worth reviewing */
 /*[type="checkbox"]:focus + [data-opens-menu], 
 [role="menu"] a:focus {}*/

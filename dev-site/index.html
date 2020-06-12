@@ -34,47 +34,52 @@
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
     <div class="topnav" role="navigation" aria-labelledby="nav1">
-    <div id="nav1">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="texts.html">texts</a></li>
-            <li>
-                <div class="dropdown" data-menu-component>
-                    <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
-                    <label class="dropbtn" for="toggle-1" data-opens-menu>
-                        concepts <!--<i class="fa fa-caret-down"></i>-->
-                        <span class="vh expanded-text">expanded</span>
-                        <span class="vh collapsed-text">collapsed</span>
-                    </label>
-                    <div class="dropdown-content" role="menu" data-menu-origin="left">
-                        <ul>
-                        <li><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-                        <li><a role="menuitem" href="project_design.html">project design</a></li>
-                        <li><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-                        </ul>
+        <div id="nav1">
+            <ul id="menubar1" role="menubar" aria-label="Site Sections">
+                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+
+                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+
+                <li role="none">
+                    <div class="dropdown" role="menuitem" data-menu-component>
+                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
+                        <label class="dropbtn" for="toggle-1" data-opens-menu>
+                            concepts
+                            <span class="vh expanded-text">expanded</span>
+                            <span class="vh collapsed-text">collapsed</span>
+                        </label>
+
+                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+                            <ul role="none">
+                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div data-menu-component class="dropdown">
-                    <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
-                    <label class="dropbtn" for="toggle-2" data-opens-menu>
-                        misc <!--<i class="fa fa-caret-down"></i>-->
-                        <span class="vh expanded-text">expanded</span>
-                        <span class="vh collapsed-text">collapsed</span>
-                    </label>
-                    <div class="dropdown-content" role="menu" data-menu-origin="left">
-                        <ul>
-                        <li><a role="menuitem" href="contributors.html">contributors</a></li>
-                        <li><a role="menuitem" href="bibliography.html">bibliography</a></li>
-                        <li><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-                        <li><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-                        </ul>
+                </li>
+
+                <li role="none">
+                    <div class="dropdown" role="menuitem" data-menu-component>
+                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
+                        <label class="dropbtn" for="toggle-2" data-opens-menu>
+                            misc
+                            <span class="vh expanded-text">expanded</span>
+                            <span class="vh collapsed-text">collapsed</span>
+                        </label>
+                        
+                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+                            <ul role="none">
+                                <li><a role="menuitem" href="contributors.html">contributors</a></li>
+                                <li><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                                <li><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                                <li><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->

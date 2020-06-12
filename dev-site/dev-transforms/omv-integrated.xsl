@@ -74,7 +74,7 @@
 			    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
 			    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 			    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-				<div class="topnav" id="topnav-div">
+				<nav class="topnav" id="topnav-div">
 			    <ul>
 			      <li><a href="../index.html">home</a></li>
 			      <li><a href="../texts.html">texts</a></li>
@@ -114,7 +114,7 @@
 			            </div>
 			        </li>
 			    </ul>
-				</div>
+				</nav>
 			
 			    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
 			    <div class="overlay" id="overlay">

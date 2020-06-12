@@ -1,7 +1,7 @@
 /* Taken from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
         function openNav() {
-          document.getElementById("myNav").style.display = "block";
+          document.getElementById("overlay").style.display = "block";
           document.getElementById("title-div").style.display = "none";
           document.getElementById("main-div").style.display = "none";
           document.getElementById("manuscript-div").style.display = "none";
@@ -13,7 +13,7 @@
         }
         
         function closeNav() {
-          document.getElementById("myNav").style.display = "none";
+          document.getElementById("overlay").style.display = "none";
           document.getElementById("title-div").style.display = "block";
           document.getElementById("main-div").style.display = "block";
           document.getElementById("manuscript-div").style.display = "block";

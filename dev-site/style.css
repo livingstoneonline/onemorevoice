@@ -501,7 +501,7 @@ background-color: #dbdbdb; [light gray]
 
 /* The following prevents overlay from appearing above 768px */
 @media only screen and (min-width: 992px){
-	#overlay{
+	#myNav{
 		display: none !important;
 	}
 }
@@ -665,7 +665,7 @@ a.anchor{
 	}
 }
 @media only screen and (min-width: 992px){
-	#overlay{
+	#myNav{
 		display: none !important;
 	}
 }

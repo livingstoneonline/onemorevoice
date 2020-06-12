@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html>
+
+<head>
+    <title>Texts | One More Voice</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Primary and Supporting Materials page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="overlay.js"></script>
+    <script src="stickynav.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+	<style type="text/css">
+		@media screen and (min-width:480px) {
+		.responsive-image {
+			width: 78%;
+		}       
+		}    
+		@media screen and (min-width:768px) {
+		.responsive-image {
+			width: 73%;
+		}       
+		}    
+	</style>
+</head>
+
+<body class="essay">
+
+<!-- start of nav -->
+
+	<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="navigation">    
+    <div class="menu">
+        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
+		<span class="nav-title">One More Voice</span>
+    </div>
+    </nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+	<div class="topnav" id="topnav-div">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="texts.html">texts</a></li>
+      <li>
+          <div class="dropdown" data-menu-component>
+              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
+              <label class="dropbtn" for="toggle-1" data-opens-menu>
+                concepts <!--<i class="fa fa-caret-down"></i>-->
+                <span class="vh expanded-text">expanded</span>
+                <span class="vh collapsed-text">collapsed</span>
+              </label>
+              <div class="dropdown-content" role="menu" data-menu-origin="left">
+                <ul>
+                  <li><a href="analytical_priorities.html">analytical priorities</a></li>
+                  <li><a href="project_design.html">project design</a></li>
+                  <li><a href="coding_guidelines.html">coding guidelines</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+        <li>
+          <div data-menu-component class="dropdown">
+              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
+              <label class="dropbtn" for="toggle-2" data-opens-menu>
+                misc <!--<i class="fa fa-caret-down"></i>-->
+                <span class="vh expanded-text">expanded</span>
+                <span class="vh collapsed-text">collapsed</span>
+              </label>
+              <div class="dropdown-content" role="menu" data-menu-origin="left">
+                <ul>
+                  <li><a href="contributors.html">contributors</a></li>
+                  <li><a href="bibliography.html">bibliography</a></li>
+                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+    </ul>
+	</div>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <div id="myNav" class="overlay">
+      <div class="menu">
+          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
+          <span class="nav-title">One More Voice</span>
+      </div>
+        <div class="overlay-content">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="texts.html">texts</a></li>
+                <li class="section">concepts <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="analytical_priorities.html">analytical priorities</a></li>
+                        <li><a href="project_design.html">project design</a></li>
+                        <li><a href="coding_guidelines.html">coding guidelines</a></li>
+                    </ul>
+                </li>
+                <li class="section">misc <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="contributors.html">contributors</a></li>
+                        <li><a href="bibliography.html">bibliography</a></li>
+                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                    </ul>
+                </li>
+		    	<li><a href="site_map.html">site map</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- end of nav -->
+
+    <div class="title" id="title-div">
+        <img class="image responsive-image" src="images/Wainwright-inscription.jpg" title="Detail from Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c. 1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." alt="Detail from Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c. 1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h3 class="italic">Lost Voices from the British Empire's Archives</h3>
+    </div>
+
+    <div class="main" id="main-div">
+
+    <p><span class="bold site-blue">Texts: Primary and Supporting Materials</span></p>
+    
+    <!-- Do not renumber this list as new individuals are added; just add an id using the next number in sequenece. Current number: 09.-->
+    <!-- Add "liv_" ids for new items on this page -->
+    <!-- Use Chicago full note -->
+    <!-- New additions also need to be added to the Site Map and Bibliography.-->
+    <ol style="padding: 1em 0 1.5em 1.2em; margin:0;">
+			<li style="list-style-type:none; display:inline-block; margin-left: -1.2em;">[Menu: Authors &amp; Contributors]<a class="anchor" id="list"></a></li>
+			<li><a href="#pasm01">Bokwala</a></li>
+			<li><a href="#pasm08">Andries Botha</a></li>
+			<li><a href="#pasm02">[British] Government; [Said Bin Habeeb]</a></li>
+			<li><a href="#pasm03">James MacQueen; [Lief Ben Saeid]; [Thomas Wogga]</a></li>
+			<li><a href="#pasm04">Ham Mukasa</a></li>
+			<li><a href="#pasm09">James Read, Jr.</a></li>
+			<li><a href="#pasm05">Saleh Bin Osman</a></li>
+			<li><a href="#pasm06">Jacob Wainwright</a></li>
+			<li><a href="#pasm07">Horace Waller; Lindesay Brine; James Chumah</a></li>			
+		</ol>
+		
+		<p><span class="italic">Overview</span></p>
+		<p><span class="italic">One More Voice</span> publishes a small selection of critically-edited and encoded primary materials and, in some cases, PDF versions of original book-length narratives. Each item is presented in a form ready for educational use, as noted on our <a href="index.html">home page</a>. Encoded transcriptions are available for viewing online in facsimile versions that approximate the textual, structural, and material characteristics of the originals. This underscores the fact that these are archival documents and seeks to establish some degree of continuity between the originals and the digital surrogates. Users can also download original TEI XML files (and related XSL and CSS files) from the <a href="https://github.com/livingstoneonline/onemorevoice/tree/master/transcriptions" target="_blank">GitHub repo</a> for <span class="italic">One More Voice</span>. If you use our critical editions in your work, please credit our project as appropriate by using the citation template provided at the end of each online transcription.</p>
+		
+		<p>The list below includes names of authors and other contributors, corresponding dates, and brief biographical statements. Unattributed authors and contributors, where known, are given in square brackets. Where possible and/or relevant, individuals are listed in order of appearance in the text. Bulleted information following the title of the item describes the form that the non-European contribution(s) takes in the given item. At present, all of our materials relate to nineteenth-century Africa, and, admittedly, our collection has significant limitations, such as the omission of any female authors or contributors. However, we hope to expand our scope to other parts of the nineteenth-century globe and iron out various asymmetries as the project develops.</p> 
+		
+		<hr class="narrow-hr" />
+
+		<p class="p-list bio"><a class="anchor" id="pasm01"></a>
+		<strong>Bokwala</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Bokwala (dates unknown), possibly a fictional or composite figure, was a slave in the Belgian Congo.</p>
+		<p class="p-list"><span class="italic"><a href="pdfs/Bokwala-1910-The-Story-of-a-Congo-Victim-(Internet-Archive).pdf" target="_blank">Bokwala: The Story of a Congo Victim</a></span>. London: The Religious Tract Society, 1910. PDF courtesy of <a href="https://archive.org/" target="_blank">Internet Archive</a>.</p><!-- https://archive.org/details/bokwalastoryofco00cong/mode/2up -->
+			<ul class="ul-list">
+				<li>book-length oral narrative, as written down, edited, and published by members of a British religious society</li>	
+			</ul>
+			<br />
+			
+		<p class="p-list bio"><a class="anchor" id="pasm08"></a><a class="anchor" id="liv_020011"></a>
+		<strong>Andries Botha</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Andries Botha (dates unknown), a Gonaqua Khoe and appointed colonial official in South Africa's Kat River Settlement, served with British and Cape colonial forces against the amaXhosa in Hintsa's War (1834-5) and the War of the Axe (1846-7); accused of rebellion in 1851, he was tried for treason (the first time the Cape High Court considered the charge of treason), but eventually had his death sentence commuted to hard labour before being granted amnesty in 1855.</p>
+		<p class="p-list"><a href="transcriptions/liv_020011_TEI.html">Letter to [Harry Smith]. June 23, 1850</a>. Manuscript. CWML, Incoming correspondence, 25/4/B. University of London. School of Oriental and African Studies, London.</p>
+			<ul class="ul-list">
+				<li>handwritten copy of manuscript letter</li>	
+			</ul>
+			<br />
+
+		<p class="p-list bio"><a class="anchor" id="pasm02"></a><a class="anchor" id="liv_020001"></a>
+		<strong>[British] Government; [Said Bin Habeeb]</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Said Bin Habeeb (dates unknown), an Arab trader, traveled widely in nineteenth-century East and Central Africa.</p>
+		<p class="p-list">“<a href="transcriptions/liv_020001_TEI.html">Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</a>.” <span class="italic">Transactions of the Bombay Geographical Society</span> 15 (1860): 146–48.</p>
+			<ul class="ul-list">
+				<li>oral narrative, as written down, edited, and published in a British geographical journal</li>
+			</ul>
+			<br />
+
+		<p class="p-list bio"><a class="anchor" id="pasm03"></a><a class="anchor" id="liv_020003"></a>
+		<strong>James MacQueen; [Lief Ben Saeid]; [Thomas Wogga] &nbsp;<a href="#list" class="return-top">top</a></strong><br />
+		James MacQueen (1778-1870), a British “armchair geographer,” explored questions related to Africa. Lief Ben Saeid (dates unknown), an Arab trader, traveled in nineteenth-century East Africa. Thomas Wogga (dates unknown), an African traveler and former slave, traveled in nineteenth-century West Africa.</p>
+		<p class="p-list">“<a href="transcriptions/liv_020003_TEI.html">Notes on African Geography</a>.” <span class="italic">Journal of the Royal Geographical Society</span> 15 (1845): 371–76.</p>
+			<ul class="ul-list">
+				<li>summarized data in a published periodical article written by a British geographer</li>
+			</ul>
+			<br />
+
+		<p class="p-list bio"><a class="anchor" id="pasm04"></a>
+		<strong>Ham Mukasa</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Ham Mukasa (c.1870–1956), an African civil servant and linguist from the Baganda ethnic group, served under two leaders of Buganda (now part of Uganda), Mutesa I and Apolo Kagwa.</p>
+		<p class="p-list"><span class="italic"><a href="pdfs/Mukasa-1904-Uganda's-Katikiro-in-England-(Internet-Archive).pdf" target="_blank">Uganda’s Katikiro in England</a></span>. Edited and translated by Ernest Millar. London: Hutchinson &amp; Co., 1904. PDF courtesy of <a href="https://archive.org/" target="_blank">Internet Archive</a>.</p><!-- https://archive.org/details/ugandaskatikiroi00mukaiala/page/x/mode/2up -->
+			<ul class="ul-list">
+				<li>book-length travel narrative, as translated and subsequently published by a British minister in collaboration with British publishers</li>
+			</ul>
+			<br />			
+
+		<p class="p-list bio"><a class="anchor" id="pasm09"></a><a class="anchor" id="liv_020010"></a>
+		<strong>James Read, Jr.</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		James Read, Jr. (c.1811-1894), a missionary and evangelical campaigner in the Cape Colony as well as the eldest son of prominent London Missionary Society missionary James Read, Sr., was a vocal activist for Khoe civil rights and an influential figure in the establishment of schooling in South Africa's Kat River Settlement.</p>
+		<p class="p-list"><a href="transcriptions/liv_020010_TEI.html">Letter to J.J. Freeman. 23 May 1850</a>. Manuscript. CWML, Incoming correspondence, 25/3/D. University of London. School of Oriental and African Studies, London.</p>
+			<ul class="ul-list">
+				<li>manuscript letter in author’s hand</li>	
+			</ul>
+			<br />
+
+		<p class="p-list bio"><a class="anchor" id="pasm05"></a><a class="anchor" id="liv_012056"></a><a class="anchor" id="liv_020002"></a>
+		<strong>Saleh Bin Osman</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Saleh Bin Osman (dates unknown), an Arab traveler, worked as a personal assistant to British-American explorer Henry M. Stanley during the Emin Pasha Relief Expedition (1886-89).</p>
+		<p class="p-list"><a href="transcriptions/liv_012056_TEI.html">Testimony. November 12, 1890</a>. Translated by Edward J. Glave. Manuscript. M055. Joseph F. Cullman 3rd Library of Natural History, Washington, D.C.</p>
+			<ul class="ul-list">
+				<li>testimony in manuscript form, as dictated to and translated by a British explorer</li>
+			</ul>
+		<p class="p-list">“<a href="transcriptions/liv_020002_TEI.html">The Story of My Life</a>.” Translated by [E. J. Glave]. <span class="italic">St. Nicholas: An Illustrated Magazine for Young Folks</span> 18, no. 2 (May 1891): 795–98.</p>
+			<ul class="ul-list">
+				<li>autobiographical narrative, as dictated to, translated by, and subsequently published by a British explorer in collaboration with British publishers</li>
+			</ul>
+			<br />
+			
+		<p class="p-list bio"><a class="anchor" id="pasm06"></a><a class="anchor" id="liv_000017"></a><a class="anchor" id="liv_000074"></a><a class="anchor" id="liv_000085"><a class="anchor" id="liv_000075"></a></a><a class="anchor" id="liv_000138"></a><a class="anchor" id="liv_000139"></a><a class="anchor" id="liv_020013"></a><a class="anchor" id="liv_020014"></a>
+		<strong>Jacob Wainwright</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Jacob Wainwright (c.1859-1892), an African traveler and explorer from the Yao ethnic group, accompanied British explorer David Livingstone during the last two years (1872-73) of the latter's final African journey.</p>
+			<p class="p-list"><a href="transcriptions/liv_000017_TEI.html">Extract from David Livingstone's Field Diary XVII. April 9-28, 1873</a>. Manuscript. 360. David Livingstone Centre, Blantyre.</p>
+			<ul class="ul-list">
+				<li>addition in author's hand to a manuscript diary by a British explorer.</li>
+			</ul>
+		<p class="p-list"><a href="transcriptions/liv_020014_TEI.html">Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried, May 4, 1873</a>. Photograph of original inscription. No. 561464i. Wellcome Library, London.</p>
+			<ul class="ul-list">
+				<li>original inscription in author’s hand</li>
+			</ul>
+		<p class="p-list"><a href="transcriptions/liv_000074_TEI.html">Extract from Diary. May-June 1873</a>. Manuscript. 801. David Livingstone Centre, Blantyre.</p>
+			<ul class="ul-list">
+				<li>manuscript diary in author’s hand</li>
+			</ul>
+		<p class="p-list"><a href="transcriptions/liv_000085_TEI.html">Letter to William O. October 1873</a>. Manuscript. 836. David Livingstone Centre, Blantyre.</p>
+			<ul class="ul-list">
+				<li>manuscript letter in author’s hand</li>
+			</ul>
+		<p class="p-list"><a href="transcriptions/liv_000075_TEI.html">Extract from Diary. [November 1873-February 1874]</a>. Manuscript. 833. David Livingstone Centre, Blantyre.</p>
+			<ul class="ul-list">
+				<li>manuscript diary in author’s hand</li>
+			</ul>
+		<p class="p-list"><a href="transcriptions/liv_000138_TEI.html">Letter to Joseph Moore. May 23, 1874</a>. Manuscript. Acc.12444. National Library of Scotland, Edinburgh.</p>
+			<ul class="ul-list">
+				<li>manuscript letter in author’s hand</li>
+			</ul>
+		<p class="p-list"><a href="transcriptions/liv_000139_TEI.html">Letter to Joseph Moore. July 10, 1874</a>. Manuscript. Acc.12444. National Library of Scotland, Edinburgh.</p>
+			<ul class="ul-list">
+				<li>manuscript letter in author’s hand</li>
+			</ul>
+			<p class="p-list">“<a href="transcriptions/liv_020013_TEI.html">Jacob Wainwright</a>.” <span class="italic">Wesleyan Juvenile Offering: A Miscellany of Missionary Info</span>, no. 93 (September 1, 1874): 98–99.</p>
+			<ul class="ul-list">
+				<li>autobiographical narrative, as published in a British missionary periodical</li>
+			</ul>
+			<br/>
+		
+		<p class="p-list bio"><a class="anchor" id="pasm07"></a><a class="anchor" id="liv_020012"></a>
+		<strong>Horace Waller; Lindesay Brine; James Chumah</strong> &nbsp;<a href="#list" class="return-top">top</a><br />
+		Horace Waller (1833-1896), a British abolitionist and missionary, served as the editor of explorer David Livingstone's posthumous <span class="italic">Last Journals</span> (1874). Lindesay Brine (1834-1906), a member of the Royal Navy, rose to the rank of Admiral and authored of several books related to his travels. James Chumah (1834-1906), an African traveler from the Yao ethnic group, was a liberated slave who accompanied Livingstone on his final travels and provided Waller with relevant information related to those travels.</p>
+		<p class="p-list">“<a href="transcriptions/liv_020012_TEI.html">To the Editor of the Times</a>.” <span class="italic">The Times</span> (April 10, 1874): 10.</p>
+			<ul class="ul-list">
+				<li>original letter, as edited and published (alongside another letter from a British sailor) within a letter by a British abolitionist in a British periodical</li>
+			</ul>
+			<!--<br />-->
+				
+	</div>
+
+	<div class="credits" id="credits-div">
+		<hr />
+        
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S. “Texts: Primary and Supporting Materials.” Heather F. Ball, Jared McDonald, and Mary Borgo Ton, eds. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="texts.html">https://onemorevoice.org/texts.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+
+        <p><span class="bold">Header image</span>: Detail from Weatherly Poulett and [Jacob Wainwright], “<a href="https://search.wellcomelibrary.org/iii/encore/record/C__Rb1561464?lang=eng" target="_blank">Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried</a>” (Photograph, c. 1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a>. Weatherly took this photograph just a few years before the original inscription was removed from the tree and transferred to the Royal Geographical Society in London. The inscription, one of the more unusual items <a href="transcriptions/liv_020012_TEI.html">published</a> by the <span class="italic">One More Voice</span> project, underscores the fact that the non-European sources with which the project engages survive in a wide variety of forms and genres. A version of this inscription, as reproduced for a magic lantern slide, can be found <a href="https://livingstoneonline.org/in-his-own-words/the-aftermath-livingstones-death" target="_blank">here</a>.</p>
+	</div>
+	
+	<div class="footer" id="footer-div">
+		<hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+	</div>
+</body>
+
+</html>

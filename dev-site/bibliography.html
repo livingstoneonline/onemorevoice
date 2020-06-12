@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html>
+
+<head>
+    <title>Bibliography | One More Voice</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Bibliography page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="overlay.js"></script>
+    <script src="stickynav.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+</head>
+
+<body class="essay">
+
+<!-- start of nav -->
+
+	<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="navigation">    
+    <div class="menu">
+        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
+		<span class="nav-title">One More Voice</span>
+    </div>
+    </nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+	<div class="topnav" id="topnav-div">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="texts.html">texts</a></li>
+      <li>
+          <div class="dropdown" data-menu-component>
+              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
+              <label class="dropbtn" for="toggle-1" data-opens-menu>
+                concepts <!--<i class="fa fa-caret-down"></i>-->
+                <span class="vh expanded-text">expanded</span>
+                <span class="vh collapsed-text">collapsed</span>
+              </label>
+              <div class="dropdown-content" role="menu" data-menu-origin="left">
+                <ul>
+                  <li><a href="analytical_priorities.html">analytical priorities</a></li>
+                  <li><a href="project_design.html">project design</a></li>
+                  <li><a href="coding_guidelines.html">coding guidelines</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+        <li>
+          <div data-menu-component class="dropdown">
+              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
+              <label class="dropbtn" for="toggle-2" data-opens-menu>
+                misc <!--<i class="fa fa-caret-down"></i>-->
+                <span class="vh expanded-text">expanded</span>
+                <span class="vh collapsed-text">collapsed</span>
+              </label>
+              <div class="dropdown-content" role="menu" data-menu-origin="left">
+                <ul>
+                  <li><a href="contributors.html">contributors</a></li>
+                  <li><a href="bibliography.html">bibliography</a></li>
+                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+    </ul>
+	</div>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <div id="myNav" class="overlay">
+      <div class="menu">
+          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
+          <span class="nav-title">One More Voice</span>
+      </div>
+        <div class="overlay-content">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="texts.html">texts</a></li>
+                <li class="section">concepts <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="analytical_priorities.html">analytical priorities</a></li>
+                        <li><a href="project_design.html">project design</a></li>
+                        <li><a href="coding_guidelines.html">coding guidelines</a></li>
+                    </ul>
+                </li>
+                <li class="section">misc <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="contributors.html">contributors</a></li>
+                        <li><a href="bibliography.html">bibliography</a></li>
+                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                    </ul>
+                </li>
+	        	<li><a href="site_map.html">site map</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- end of nav -->
+
+    <div class="title" id="title-div">
+       <img class="image" src="images/liv_003181_0002-crop.jpg" alt="Detail from David Livingstone et al., “Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile (1863), [1869-1873],” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/). As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." title="Detail from David Livingstone et al., “Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile (1863), [1869-1873],” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/). As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h3 class="italic">Lost Voices from the British Empire's Archives</h3>
+    </div>
+
+    <div class="main" id="main-div">
+
+		<p></a><span class="bold site-blue">Bibliography</span><a class="anchor" id="top"></a></p>
+		
+	    <ol style="padding: 1em 0 1.5em 1.2em; margin:0;">
+	    	<li style="list-style-type:none; display:inline-block; margin-left: -1.2em;">[Menu: Sections]<a class="anchor" id="list"></a></li>
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#primary-sources">Primary Sources</a></li>
+			<li><a href="#contextual-sources">Contextual Sources</a></li>
+			<li><a href="#critical-sources">Critical Sources</a></li>
+		</ol>
+
+		<p><a class="anchor" id="overview"></a>
+		<span class="italic">Overview</span> &nbsp;<a href="#list" class="return-top">top</a></p>
+		
+		<p>The following bibliography compiles primary, contextual, and critical sources related to the <span class="italic">One More Voice</span> project. The bibliography is by no means exhaustive. If you know of additional sources we should include, please <a href="mailto:awisnicki@yahoo.com">email us</a>. Users may also want to consult <span class="italic">Livingstone Online</span>’s more general, but comprehensive <a href="https://livingstoneonline.org/resources/david-livingstone-bibliography" target="_blank">bibliography</a>.</p> 
+		
+		<p><a href="#primary-sources">Primary Sources</a> mainly date to the nineteenth-century, include print and manuscript sources, and fall into one of two categories:
+
+		<ol>
+			<li>Authored (broadly defined) by the historical figures that form the focus of our project; and</li>
+			<li>Inclusive of reported speech and/or other summarized data from these historical figures.</li>
+		</ol>
+
+		Names and other information in square brackets have been supplied. The form of attribution used to identify authors of and contributors to the primary sources will continue to evolve as our project evolves.</p>
+
+		<p><a href="#contextual-sources">Contextual Sources</a></li> also mainly date to the nineteenth-century and include print and manuscript sources. These sources are presented in a separate section, however, because the sources provide useful contemporary information about the figures taken up by the <span class="italic">One More Voice</span> project. Each source includes a brief gloss (in italics) that indicates its relevant subject matter.</p>
+		
+		<p><a href="#critical-sources">Critical Sources</a> discuss relevant historical figures individually and in general and/or take up issues related to the study of relevant materials. The boundary between primary and critical sources can be gray as, for instance, some critical sources include critically-edited primary materials.</p>
+
+		<p>&nbsp;</p>
+
+		<p><a class="anchor" id="primary-sources"></a>
+		<span class="italic">Primary Sources</span> &nbsp;<a href="#list" class="return-top">top</a></p>
+
+		<p>Aga, Selim. 1846. <span class="italic">Incidents Connected with the Life of Selim Aga</span>. Aberdeen: W. Bennett, Printer.</p>
+
+		<p>———. 1864. “Original Correspondence: West Africa.” <span class="italic">Anti-Slavery Reporter</span>, February 1, 1864.</p>
+
+		<p>———. 1875. “A Trip Up the Congo or Zaire River.” <span class="italic">Geographical Magazine</span>, July, 203–7.</p>
+		
+		<p>———. 2003. <a href="https://docsouth.unc.edu/neh/aga/menu.html" target="_blank">Incidents Connected with the Life of Selim Aga, A Native of Central Africa</a>. Edited by Apex Data Services, Inc. and Elizabeth S. Wright. Chapel Hill: University of North Carolina at Chapel Hill.</p>
+
+		<p>———. 2006a. “A Trip Up the Congo or Zaire River.” In <span class="italic">Selim Aga: A Slave Odyssey</span>, edited by James McCarthy, 229–39. Edinburgh: Luath Press Limited.</p>
+
+		<p>———. 2006b. “Incidents Connected with the Life of Selim Aga.” In <span class="italic">Selim Aga: A Slave Odyssey</span>, edited by James McCarthy, 201–28. Edinburgh: Luath Press Limited.</p>
+
+		<p>Anon., and [Selim Aga]. 1858a. “The Niger Expedition.” <span class="italic">The Preston Chronicle and Lancashire Advertiser</span>, September 25, 1858.</p>
+
+		<p>———. 1858b. “The Niger Expedition.” <span class="italic">Royal Cornwall Gazette</span>, October 1, 1858.</p>
+
+		<p>Anon., and [Mosheh]. 1856. “The Cape of Good Hope.” <span class="italic">The Times</span>, January 22, 1856.</p>
+
+		<p>Anon., and [Tippo Tip]. 1887a. “Tippoo Tib.” <span class="italic">The Times</span>, May 17, 1887.</p>
+
+		<p>———. 1887b. “Tippoo Tib.” <span class="italic">The Times</span>, May 27, 1887.</p>
+
+		<p>Anon., and [Jacob Wainwright]. 1900. “A Relic of Dr. Livingstone.” <span class="italic">The Times</span>, April 26, 1900.</p>
+
+		<p>[Baptista, P.J.], and [Amaro José]. 1873. “Journey of the Pombeiros: P. J. Baptista and Amaro José, Across Africa from Angola to Tette on the Zambeze.” In <span class="italic">The Lands of Cazembe: Lacerda’s Journey to Cazembe in 1798</span>, by Richard Francis Burton, translated by B.A. Beadle, 165–244. London: John Murray.</p>
+
+		<p>Bokwala. 1910. <span class="italic">Bokwala: The Story of a Congo Victim</span>. London: The Religious Tract Society. Also see the <a href="pdfs/Bokwala-1910-The-Story-of-a-Congo-Victim-(Internet-Archive).pdf" target="_blank">PDF</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>[British] Government, and [Said Bin Habeeb]. 1860. “Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar, 31 May 1860.” <span class="italic">Transactions of the Bombay Geographical Society</span> 15: 146–48. Also see the <a href="transcriptions/liv_020001_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>Bontinck, François. 1977. “Le Diaire de Jacob Wainwright.” <span class="italic">Rivista Trimestrale Di Studi e Documentazione Dell’Istituto Italiano per l’Africa e l’Oriente</span> 32 (3): 399–434.</p>
+
+		<p>———. 1978. “Encore Sur Le Diaire de Jacob Wainwright: Corrigenda.” <span class="italic">Africa: Rivista Trimestrale Di Studi e Documentazione Dell’Istituto Italiano per l’Africa e l’Oriente</span> 33 (4): 603–4.
+		
+		<p>Bontinck, François, and Koen Janssen, eds and trans. 1974. <span class="italic">L’Autobiographie de Hamed Ben Mohammed El-Murjebi Tippo Tip (ca. 1840-1905)</span>. Brussels: Academie voor Overzeese Wetenschappen.</p>
+
+		<p>Botha, Andries. 1850. “Letter to [Harry Smith]. 23 June 1850.” Unpublished manuscript. CWML, Incoming correspondence, 25/4/B. University of London. School of Oriental and African Studies, London. Also see the <a href="transcriptions/liv_020011_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+		
+		<p>Bridges, Roy C., ed. 2007. “‘A Dangerous and Toilsome Journey.’ Jacob Wainwright’s Diary of the Transportation of Dr Livingstone’s Body to the Coast, 4 May 1873 to 18 February 1874.” In <span class="italic">Four Travel Journals / The Americas, Antarctica and Africa / 1775-1874</span>, 329–84. London: Hakluyt Society.</p>
+		
+		<p>Dorugu. 1971. “The Life and Travels of Dorugu.” In <span class="italic">West African Travels and Adventures: Two Autobiographical Narratives from West Africa</span>, edited by Anthony Kirk-Greene and Paul Newman, translated by Paul Newman, 27–129. New Haven, CT; London: Yale University Press.</p>
+
+		<p>Farar, Carras, and Matthew Wellington. 1965. “David Livingstone: Two Accounts of His Death and Transportation of His Body to the Coast [Comprising] Carras Farar’s Story of the Finding of Dr. Livingstone in Central Africa [and] Account of the Life of Matthew Wellington in His Own Words, and the Death of David Livingstone and the Journey to the Coast.” <span class="italic">Zambia Journal</span> 6: 95–102.</p>
+		
+		<p>Hemedi Bin Abdallah el-Buhriy. 1960. <span class="italic">Utenzi Wa Vita Vya Wadachi Kutamalaki Mrima, 1307 A.H. The German Conquest of the Swahili Coast, 1891 A.D.</span> Translated by J.W.T. Allen. Dar es Salaam: East African Literature Bureau.</p>
+
+		<p>Hendrickze, Hendrick. 1843. “Letter to John Philip. 18 April 1843.” Unpublished manuscript. CWML, Incoming correspondence, 19/1/D. University of London. School of Oriental and African Studies, London.</p>
+
+		<p>Holmwood, F., and [Majwara]. 1873. “Majwara’s Account of the Last Journey and Death of Dr. Livingstone.” <span class="italic">Proceedings of the Royal Geographical Society</span> 18 (3): 244–46.</p>
+
+		<p>Kok, Adam. 1843. “Letter to James Read. April 1843.” Unpublished manuscript. CWML, Incoming correspondence, 19/1/D. University of London. School of Oriental and African Studies, London.</p>
+
+		<p>Livingstone, David, and Jacob Wainwright. 2020. “<a href="http://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000017&amp;view_pid=liv%3A000017" target="_blank">Field Diary XVII. 9 April-28 April 1873</a>.” In <span class="italic">Livingstone Online</span>, edited by Adrian S. Wisnicki and Megan Ward, new version, second edition. Lincoln, NE: University of Nebraska-Lincoln. Also see the <a href="transcriptions/liv_000017_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+		
+		<p>Livingstone, David, and Sechele. 2020. “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003027&view_pid=liv%3A003027" target="_blank">Letter to Robert Moffat 1 with Speech. [October 1852]</a>.” In <span class="italic">Livingstone Online</span>, edited by Adrian S. Wisnicki and Megan Ward, new version, second edition. Lincoln, NE: University of Nebraska-Lincoln.</p>
+
+		<p>MacQueen, James, [Lief Ben Saeid], and [Thomas Wogga]. 1845. “Notes on African Geography.” <span class="italic">Journal of the Royal Geographical Society</span> 15: 371–76. Also see the <a href="transcriptions/liv_020003_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>Maimaina of Jega. 1971. “The Story of Maimaina of Jega, Chief of Askira, As Told by Himself.” In <span class="italic">West African Travels and Adventures: Two Autobiographical Narratives from West Africa</span>, edited by Anthony Kirk-Greene and Paul Newman, translated by Anthony Kirk-Greene, 131–201. New Haven, CT; London: Yale University Press.</p>
+
+		<p>Mukasa, Ham. 1904. <span class="italic">Uganda’s Katikiro in England</span>. Edited and translated by Ernest Millar. London: Hutchinson &amp; Co. Also see the <a href="pdfs/Mukasa-1904-Uganda's-Katikiro-in-England-(Internet-Archive).pdf" target="_blank">PDF</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>Nkosi, Ncwadi. 1894. “Letter from an African Chief.” <span class="italic">Pictorial Missionary News</span> 28 (6): 93.</p>
+
+		<p>Read, James Jr. 1838. “Report to the Directors of the London Missionary Society. 1838.” Unpublished manuscript. CWML, Incoming correspondence, 16A/2/C. University of London. School of Oriental and African Studies, London.</p>
+
+		<p>———. 1842. “Report to the Directors of the London Missionary Society. 1842.” Unpublished manuscript. CWML, Incoming correspondence, 18B/5/C. University of London. School of Oriental and African Studies, London.</p>
+
+		<p>———. 1850. “Letter to J.J. Freeman. 23 May 1850.” Unpublished manuscript. CWML, Incoming correspondence, 25/3/D. University of London. School of Oriental and African Studies, London. Also see the <a href="transcriptions/liv_020010_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>[Read, James Jr.]. 1850. “Enclosures to James Read. 20 June 1850.” Unpublished manuscript. CWML, Incoming correspondence, 25/4/B. University of London. School of Oriental and African Studies, London.</p>
+
+		<p>Saleh Bin Osman. 1891. “The Story of My Life.” Translated by [E. J. Glave]. <span class="italic">St. Nicholas: An Illustrated Magazine for Young Folks</span>, 18 (2): 795–98.. Also see the <a href="transcriptions/liv_020002_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>———. 2020. “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012056&view_pid=liv%3A012056" target="_blank">Testimony</a>. 12 November 1890.” Translated by Edward J. Glave. In <span class="italic">Livingstone Online</span>, edited by Adrian S. Wisnicki and Megan Ward, new version, second edition. Lincoln, NE: University of Nebraska-Lincoln. Also see the <a href="transcriptions/liv_012056_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>Thomas, H. B., and [Carus Farrar]. 1950. “The Death of Dr. Livingstone: Carus Farrar’s Narrative.” <span class="italic">Uganda Journal</span> 14 (2): 115–28.</p>
+
+		<p>[Tippo Tip]. 1958. “Maisha Ya Hamed Bin Muhammed El Murjebi Yaani Tippu Tip: Kwa Maneno Yake Mwenyewe.” Translated by W. H. Whiteley. <span class="italic">Supplement to the East African Swahili Committee Journals</span> 28–29 (2–1): 1–141.</p>
+
+		<p>Wainwright, Jacob. 1872. “Speech Of Jacob Wainwright At Church Missionary Meeting.” Unpublished manuscript. Papers of the Gell Family of Hopton: Lenton and Related Papers, 25 March 1872–17 June 1874. Derby Record Office, Derbyshire.</p>
+
+		<p>———. 1874a. “Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried, 4 May 1873.” Photograph of original inscription. Chitambo's village, [Zambia]. No. 561464i. Wellcome Library, London. Also see the <a href="transcriptions/liv_020014_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>———. 1874b. “Letter to Joseph Moore. 23 May 1874.” Manuscript. South Kensington. Acc.12444. National Library of Scotland, Edinburgh. Also see the <a href="transcriptions/liv_000138_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>———. 1874c. “Letter to Joseph Moore. 10 July 1874.” Manuscript. Kessingland Suffolk. Acc.12444. National Library of Scotland, Edinburgh. Also see the <a href="transcriptions/liv_000139_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>———. 1876. “Letter to William Salter.” Unpublished manuscript. Cadbury Research Library, University of Birmingham, Birmingham.</p>
+
+		<p>———. 2020a. “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000074&view_pid=liv%3A000074" target="_blank">Extract from Diary. May-June 1873</a>.” In <span class="italic">Livingstone Online</span>, edited by Adrian S. Wisnicki and Megan Ward, new version, second edition. Lincoln, NE: University of Nebraska-Lincoln. Also see the <a href="transcriptions/liv_000074_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>———. 2020b. “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000085&view_pid=liv%3A000085" target="_blank">Letter to William O. Livingstone. October 1873.</a>” In <span class="italic">Livingstone Online</span>, edited by Adrian S. Wisnicki and Megan Ward, new version, second edition. Lincoln, NE: University of Nebraska-Lincoln. Also see the <a href="transcriptions/liv_000085_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>———. 2020c. “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000075&view_pid=liv%3A000075" target="_blank">Extract from Diary. [November 1873-February 1874]</a>.” In <span class="italic">Livingstone Online</span>, edited by Adrian S. Wisnicki and Megan Ward, new version, second edition. Lincoln, NE: University of Nebraska-Lincoln. Also see the <a href="transcriptions/liv_000075_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+		
+		<p>[Wainwright, Jacob]. 1874. “Jacob Wainwright.” <span class="italic">Wesleyan Juvenile Offering: A Miscellany of Missionary Info</span>, no. 93 (September): 98–99. Also see the <a href="transcriptions/liv_020013_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span>.</p>
+
+		<p>Waller, Horace, [James Chuma], and [Abdullah Susi]. 1874. “Notes from Chuma and Susi on Livingstone’s Last Journey.” Unpublished manuscript. MSS. Afr. s. 16 / 4-5, no. 24. Bodleian Library, Oxford.</p>
+						
+		<p>Waller, Horace; Lindesay Brine; James Chumah. 1874. “To the Editor of the Times.” <span class="italic">The Times</span>, April 10, 1874. Also see the <a href="transcriptions/liv_020012_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span></p>
+
+		<p>Weah. 1876. “A King Defending Himself from a Charge.” <span class="italic">The Leeds Mercury</span>, March 8, 1876.</p>
+
+		<p>&nbsp;</p>
+
+		<p><a class="anchor" id="contextual-sources"></a>
+		<span class="italic">Contextual Sources</span> &nbsp;<a href="#list" class="return-top">top</a></p>
+
+		<p>Anon. 1840. “Entertainment to Dr. Morison.” <span class="italic">Aberdeen Journal</span>, October 28, 1840. <span class="italic">Contextual source: Selim Aga.</span></p>
+
+		<p>———. 1851. “Exhibitions: Panorama of the Nile.” <span class="italic">The Lady’s Newspaper</span>, January 4, 1851. <span class="italic">Contextual source: Selim Aga.</span></p>
+
+		<p>———. 1867. “Monthly Summary: Liberia.” <span class="italic">Anti-Slavery Reporter</span>, October 15, 1867. <span class="italic">Contextual source: Selim Aga.</span></p>
+
+		<p>———. 1874a. “Chuma and Susi at Newstead Abbey with Relics of Livingstone.” Unpublished photograph. MSS. Afr. s. 16 / 9, f. 13. Bodleian Library, Oxford. <span class="italic">Contextual source: Chuma and Susi.</span></p>
+
+		<p>———. 1874b. “Chuma, Susi, Agnes Livingstone, Mr. Webb, Oswald Livingstone, Horace Waller, Mrs. Webb at Newstead Abbey about 1874.” Unpublished photograph. MSS. Afr. s. 16 / 9, f. 14. Bodleian Library, Oxford. <span class="italic">Contextual source: Chuma and Susi.</span></p>
+
+		<p>———. 1874c. “Jacob Wainwright’s Home at Nasik.” <span class="italic">Church Missionary Gleaner</span>, June, 66–68. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>———. 1874d. “East African Slave Trade Meeting in York.” <span class="italic">The York Herald</span>, October 10, 1874. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>———. 1875a. “Jacob Wainwright, Dr. Livingstone’s Body-Guard.” <span class="italic">The Juvenile Missionary Magazine</span>, January, 14–16. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>———. 1875b. “The War in Liberia.” <span class="italic">The Times</span>, November 27, 1875. <span class="italic">Contextual source: Selim Aga.</span></p>
+
+		<p>———. 1876a. “[The Colony of Liberia].” <span class="italic">The Times</span>, March 7, 1876. <span class="italic">Contextual source: Selim Aga.</span></p>
+
+		<p>———. 1876b. “[The Colony of Liberia].” <span class="italic">The Illustrated Missionary News</span>, July 1, 1876. <span class="italic">Contextual source: Selim Aga.</span></p>
+
+		<p>———. 1909. “Opening of the Boys’ Primary School, Namirembe.” <span class="italic">East African Standard</span>, November 6, 1909. <span class="italic">Contextual source: Ham Mukasa.</span></p>
+
+		<p>Barker, G. 1834. “Letter to the Directors of the London Missionary Society. 6 October 1834.” Unpublished manuscript. CWML, Incoming correspondence, 14A/2/B. University of London. School of Oriental and African Studies, London. <span class="italic">Contextual source: Khoisan mission residents.</span></p>
+
+		<p>Brand, [?], Foreign Office, and W.D. Cooley. 1854. “Notice of a Caravan Journey from the East to the West Coast of Africa.” <span class="italic">Journal of the Royal Geographical Society</span> 24: 266–71. <span class="italic">Contextual source: Arab traders.</span></p>
+
+		<p>Brode, Heinrich. 1907. <span class="italic">Tippoo Tib, His Career in Central Africa, Narrated from His Own Accounts</span>. Translated by H. Havelock. London: Edward Arnold. <span class="italic">Contextual source: Tippu Tip.</span></p>
+
+		<p>Lash, Augustus Henry. 1874. “‘In Mid Victorian Days’: Dips Into The Diary Of A Deputation By The Rev. A.H. Lash For The CMS.” Unpublished manuscript. Papers of Augustus Henry Lash. Cadbury Research Library, University of Birmingham, Birmingham. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>Price, Walter Saltley. 1874. “Jacob Wainwright.” <span class="italic">The Times</span>, April 22, 1874. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>———. 1876. “Notes On The East Africa Mission Given By Rev Price To Rev Lamb And Captain Russell.” Unpublished manuscript. Rev. Walter Saltley Price: Correspondence and Memoranda about the East Africa Mission. Cadbury Research Library, University of Birmingham, Birmingham. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>———. 1877. “Pictures from East Africa.” <span class="italic">Church Missionary Gleaner</span> 4 (41): 57–58. <span class="italic">Contextual source: Jacob Wainwright.</span></p>
+
+		<p>Rampley, William Joseph Wright. 1930. <span class="italic">Matthew Wellington: Sole Surviving Link With Dr. Livingstone</span>. London: Society for Promoting Christian Knowledge. <span class="italic">Contextual source: Matthew Wellington.</span></p>
+
+		<p>Stone, Benjamin. 1906. “The Katikiro of Uganda and His Secretary.” In <span class="italic">Sir Benjamin Stone’s Pictures: Records of National Life and History</span>, 2:74. London; Paris; New York; Melbourne: Cassell and Company, Limited. <span class="italic">Contextual source: Ham Mukasa.</span></p>
+
+		<p>&nbsp;</p>
+
+		<p><a class="anchor" id="critical-sources"></a>
+		<span class="italic">Critical Sources</span> &nbsp;<a href="#list" class="return-top">top</a></p>
+
+		<p>Awaaz Magazine. 2009. “<a href="https://www.theeastafrican.co.ke/magazine/434746-670908-edxx59/index.html" target="_blank">Bombay: Refuge for Slave Africans</a>.” <span class="italic">The East African</span>, October 12, 2009.</p>
+
+		<p>Bennet, Norman Robert. 1971. <span class="italic">Mirambo of Tanzania, 1840?-1884</span>. New York: Oxford University Press.</p>
+
+		<p>Boehmer, Elleke. 1995. <span class="italic">Colonial and Postcolonial Literature: Migrant Metaphors</span>. Oxford: Oxford University Press.</p>
+
+		<p>Bontinck, François. 1976a. “Voyageurs Africains En Afrique Équatoriale: I. Robert Feruzi.” <span class="italic">Zaïre-Afrique</span>, no. 107 (September): 411–24.</p>
+
+		<p>———. 1976b. “Voyageurs Africains En Afrique Équatoriale: II. Mbarak Bombay.” <span class="italic">Zaïre-Afrique</span>, no. 110 (December): 619–32.</p>
+
+		<p>———. 1977a. “Voyageurs Africains En Afrique Équatoriale: III. Uledi Pangani Alias Mwinyi Khamis.” <span class="italic">Zaïre-Afrique</span>, no. 114 (April): 223–42.</p>
+
+		<p>———. 1977b. “Voyageurs Africains En Afrique Équatoriale: IV. Uledi Mwana Sera.” <span class="italic">Zaïre-Afrique</span>, no. 118 (October): 495–514.</p>
+
+		<p>———. 1977c. “Voyageurs Africains En Afrique Équatoriale: V. Uledi Le Timonier.” <span class="italic">Zaïre-Afrique</span>, no. 120 (December): 627–40.</p>
+
+		<p>———. 1978a. “Voyageurs Africains En Afrique Équatoriale: VI. Mabruki Speke.” <span class="italic">Zaïre-Afrique</span>, no. 122 (February): 93–107.</p>
+
+		<p>———. 1978b. “Voyageurs Africains En Afrique Équatoriale: VII. Ferrajji Le Cuisinier.” <span class="italic">Zaïre-Afrique</span>, no. 128 (October): 495–509.</p>
+
+		<p>———. 1979a. “Voyageurs Africains En Afrique Équatoriale: VIII. Mwinyi Pembe.” <span class="italic">Zaïre-Afrique</span>, no. 132 (February): 107–18.</p>
+
+		<p>———. 1979b. “Voyageurs Africains En Afrique Équatoriale: IX. Hamadi Le Guide.” <span class="italic">Zaïre-Afrique</span>, no. 138 (October): 489–505.</p>
+
+		<p>———. 1979c. “Voyageurs Africains En Afrique Équatoriale: X. Chowpereh.” <span class="italic">Zaïre-Afrique</span>, no. 140 (December): 619–34.</p>
+
+		<p>———. 1980a. “Voyageurs Africains En Afrique Équatoriale: XI. Khamisi Stanley.” <span class="italic">Zaïre-Afrique</span>, no. 142 (February): 101–16.</p>
+
+		<p>———. 1980b. “Voyageurs Africains En Afrique Équatoriale: XII. Asmani et Mabruki Kisesa.” <span class="italic">Zaïre-Afrique</span>, no. 144 (April): 235–45.</p>
+
+		<p>———. 1980c. “Voyageurs Africains En Afrique Équatoriale: XIII. Majwara.” <span class="italic">Zaïre-Afrique</span>, no. 146 (August): 365–78.</p>
+
+		<p>———. 1981a. “Voyageurs Africains En Afrique Équatoriale: XIV. Sarmini Kacheche.” <span class="italic">Zaïre-Afrique</span>, no. 152 (February): 101–21.</p>
+
+		<p>———. 1981b. “Voyageurs Africains En Afrique Équatoriale: XV. Songoro Stanley.” <span class="italic">Zaïre-Afrique</span>, no. 155 (May): 317–27.</p>
+
+		<p>———. 1981c. “Voyageurs Africains En Afrique Équatoriale: XVI. Kamna, Kombo, Nubi.” <span class="italic">Zaïre-Afrique</span>, no. 158 (October): 513–27.</p>
+
+		<p>———. 1982. “Voyageurs Africains En Afrique Équatoriale: XVII. David Abdallah Susi.” <span class="italic">Zaïre-Afrique</span>, no. 162 (February): 99–118.</p>
+
+		<p>Bridges, Roy C. 1987. “Nineteenth-Century East African Travel Records with an Appendix on ‘Armchair Geographers’ and Cartography.” <span class="italic">Paideuma</span> 33: 179–96.</p>
+
+		<p>———. 1998. “Explorers’ Texts and the Problem of Reactions by Non-Literate Peoples: Some Nineteenth-Century East African Examples.” <span class="italic">Studies in Travel Writing</span> 2 (1): 65–84.</p>
+
+		<p>Clendennen, G. W., and D.H. Simpson. 1985. “African Members of the Zambezi Expedition, 1861-1864: A Prosopographical Foray.” <span class="italic">History in Africa</span> 12: 29–49.</p>
+
+		<p>De Souza, Eunice. 2008. “<a href="https://mumbaimirror.indiatimes.com/opinion/columnists/eunice-de-souza/Bombay-Africans/articleshow/15863518.cms?" target="_blank">Bombay Africans</a>.” <span class="italic">Mumbai Mirror</span>, October 23, 2008.</p> 
+
+		<p>Driver, Felix. 2013a. “Hidden Histories Made Visible? Reflections on a Geographical Exhibition.” <span class="italic">Transactions of the Institute of British Geographers</span> 38 (3): 420–35.</p>
+
+		<p>———. 2013b. “Missionary Travels: Livingstone, Africa and the Book.” Edited by Justin D. Livingstone. <span class="italic">Scottish Geographical Journal</span> 129 (3–4): 164–78.</p>
+
+		<p>———. 2017. “Exploration as Knowledge Transfer: Exhibiting Hidden Histories.” In <span class="italic">Mobilities of Knowledge</span>, edited by Heike Jöns, Peter Meusburger, and Michael Heffernan. N.p.: Springer International Publishing.</p>
+
+		<p>Driver, Felix, and Lowri M. Jones. 2009a. <span class="italic">Hidden Histories of Exploration: Researching the RGS-IBG Collections</span>. London: Royal Holloway, University of London.</p>
+
+		<p>———. 2009b. “<a href="https://web.archive.org/web/20110306031230/http:/hiddenhistories.rgs.org/images/stories/research/documents/ICHGSummaryPaperHiddenHistories.pdf" target="_blank">Hidden Histories? Local Knowledge and Indigenous Agency in the History of Geographical Exploration</a>.” Paper presented at the 14th International Conference of Historical Geographers, Kyoto, August 23.</p>
+
+		<p>Gray, John M. 1947. “Ahmed Bin Ibrahim – The First Arab to Reach Buganda.” <span class="italic">Uganda Journal</span> 11: 80–97.</p>
+
+		<p>———. 1949. “Livingstone’s Muganda Servant.” <span class="italic">Uganda Journal</span> 13: 119–29.</p>
+
+		<p>———. 1957. “Trading Expeditions from the Coast to Lakes Tanganyika and Victoria Before 1857.” <span class="italic">Tanganyika Notes and Records</span>, no. 49: 226–46.</p>
+
+		<p>———, ed. 1961. “The Diaries of Emin Pasha.” <span class="italic">Uganda Journal</span> 25: 1–15.</p>
+
+		<p>———. 1962. “Trading Expeditions from the Coast to Lakes Tanganyika and Victoria Before 1857.” <span class="italic">Tanganyika Notes and Records</span>, no. 58: 174.</p>
+
+		<p>———. 1966. “The Correspondence of Dallington Maftaa.” <span class="italic">Uganda Journal</span> 30: 13–24.</p>
+
+		<p>Jones, Lowri M. 2008. “<a href="https://doi.org/10.1093/hwj/dbn015" target="_blank">Bombay Africans 1850–1910, Royal Geographical Society, 25 September - 29 November 2007</a>.” <span class="italic">History Workshop Journal</span> 65 (1): 271–74.</p>
+
+		<p>Katjivena, Uazuvara. 2020. <span class="italic">Mama Penee: Transcending the Genocide</span>. Windhoek: University of Namibia Press.</p>
+
+		<p>Kennedy, Dane. 2013. <span class="italic">The Last Blank Spaces: Exploring Africa and Australia.</span> Cambridge, MA; London: Harvard University Press.</p>
+		
+		<p>Livingstone, Justin D. 2018. “Dissenting Traditions and Missionary Imaginations: Novel Perspectives on the Twentieth Century.” In <span class="italic">The Oxford History of Protestant Dissenting Traditions</span>, edited by Mark P. Hutchinson, V:377–415. Oxford: Oxford University Press.</p>
+
+		<p>McCarthy, James. 2006. <span class="italic">Selim Aga: A Slave Odyssey</span>. Edinburgh: Luath Press Limited.</p>
+
+		<p>———. 2007. “Selim Aga: New Light on His Life and His Explorations in West Africa.” <span class="italic">The Journal of the Hakluyt Society</span>, July, [1]-[7].</p>
+
+		<p>Moynagh, Maureen. 2015. “Afropolitan Travels: ‘Discovering Home’ and the World in Africa.” In <span class="italic">New Directions in Travel Writing Studies</span>, edited by Julia Kuehn and Paul Smethurst, 281–96. Houndmills, Basingstoke, Hampshire, England: Palgrave Macmillan.</p>
+
+		<p>Ross, Robert. 2018. <span class="italic">These Oppressions Won’t Cease: An Anthology of the Political Thought of the Cape Khoesan, 1777-1879</span>. Cincinnati, OH: University of Cincinnati Press.</p>
+
+		<p>Royal Geographical Society. 2007. “<a href="https://www.eeo.ed.ac.uk/research/humangeography/RGSexhibit.html" target="_blank">Bombay Africans</a>.” Web. December 18, 2007–February 12, 2008.</p>
+
+		<p>Royal Geographical Society (with IBG), and Lowri M. Jones. 2009. “<a href="https://web.archive.org/web/20091214041027/http:/hiddenhistories.rgs.org/" target="_blank">Hidden Histories of Exploration</a>.” Web. 2009.</p>
+
+		<p>Simpson, Donald. 1976. <span class="italic">Dark Companions: The African Contribution to the European Exploration of East Africa</span>. London: Paul Elek Ltd.</p>
+
+		<p>Special Collections, SOAS Library. 2014. “<a href="https://blogs.soas.ac.uk/archives/2014/05/12/the-life-and-afterlife-of-david-livingstone-the-%E2%80%98bombay-africans%E2%80%99-2/" target="_blank">The Life and Afterlife of David Livingstone: The ‘Bombay Africans</a>.’” Web. May 12, 2014.</p>
+
+		<p>Thomas, H. B. 1951. “Jacob Wainwright in Uganda.” <span class="italic">Uganda Journal</span> 15: 204–5.</p>
+
+		<p>———. 1960. “Mohammed Biri.” <span class="italic">Uganda Journal</span> 24: 123–26.</p>
+
+		<p>———. 1962. “The Logistics of Caravan Travel.” In <span class="italic">The Nile Quest</span>, edited by Merrick Posnansky, 12–15. Kampala: The East African Literature Bureau for the Uganda Museum, Kampala.</p>
+
+		<p>———. 1964. “Note: Livingstone’s Muganda Servant – A Postscript.” <span class="italic">Uganda Journal</span> 28: 99–100.</p>
+		
+		<p>Wisnicki, Adrian S. 2019. <span class="italic">Fieldwork of Empire, 1840–1900: Intercultural Dynamics in the Production of British Expeditionary Literature.</span> New York; Abingdon, Oxon: Routledge. <a href="https://awisnicki.github.io/fieldwork_of_empire/">Associated website.</a></p>
+
+		<p>Wisnicki, Adrian S., and Megan Ward, eds. 2017. <a href="http://livingstoneonline.org/">Livingstone Online</a>. New version, second edition. College Park, MD: University of Maryland Libraries.</p>
+	</div>
+
+	<div class="credits" id="credits-div">		
+		<hr />
+        
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S. “Bibliography.” Heather F. Ball, Jared McDonald, and Mary Borgo Ton, eds. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="bibliography.html">https://onemorevoice.org/bibliography.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+		
+        <p><span class="bold">Header image</span>: Detail from David Livingstone et al., “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181" target="_blank">Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile (1863), [1869-1873]</a>,” in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a>.  As relevant, Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>. This map includes geographical data from Said Bin Habib (also called Said Bin Habeeb), a well-known Arab trader in East Africa. The data appears in the lower left-hand part of the image and is one of the few bits of text that is right-side up. Somewhat exceptionally, Livingstone actually cites the source on the document itself ("Note Bin Habib"). The full annotated map can be found <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181" target="_blank">here</a>; another document associated with Bin Habib is published by <span class="italic">One More Voice</span> and can be found <a href="transcriptions/liv_020001_TEI.html">here</a>.</p>
+	</div>
+
+	<div class="footer" id="footer-div">
+		<hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_012056">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Testimony</title>
+                <title type="alternative">Testimony, 12 November 1890</title><!-- Change; note addition of date -->
+                <author>Saleh Bin Osman</author>
+                <author>[Glave, Edward J., 1863-1895]</author>
+				<author role="first">Saleh Bin Osman</author>
+				<author role="first-normalized">Saleh Bin Osman</author>
+				<author role="normalized">[Edward J. Glave]</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="AM">
+                    <name>Anne Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_012056</idno>
+            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability>
+			</publicationStmt>
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United States</country>
+                        <settlement>Washington, D.C.</settlement>
+                        <repository>Smithsonian Institution. Libraries. Joseph F. Cullman 3rd Library of Natural History</repository>
+                        <idno type="shelfmark">M055</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                    <title>Testimony</title>
+                    <author xml:id="SBO">Saleh Bin Osman</author>
+                    <author xml:id="EJG">Glave, Edward J., 1863-1895</author>
+                    <date type="composition" when="1890-11-12">12 November 1890</date><!-- Change, including attributes -->
+                    <placeName type="compositionPlace">[Central Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+                <language ident="und">undetermined</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <!-- Change @when, @who, and work description below. -->
+            <!-- Note that @who initials are taken from <respStmt> above -->
+            <!-- Add new <change> elements below as needed. -->
+            <!-- Note that the most recent <change> should always be placed first, at the top -->
+			
+			<!-- 0001-0018 -->
+			<change when="2018-04-25" who="#AW">Coding review</change>
+            <change when="2018-04-22" who="#HB">Proofing</change>
+            <change when="2018-03-15" who="#AM">Transcription and TEI encoding</change>
+			<!-- 0019-0034 -->
+			<change when="2018-04-25" who="#AW">Coding review</change>
+            <change when="2018-04-07" who="#HB">Transcription and TEI encoding</change>
+            <change when="2018-04-12" who="#AM">Proofing</change>
+			<!-- 0035-0050 -->
+			<change when="2018-06-16" who="#AW">Coding review</change>
+            <change when="2018-06-05" who="#HB">Proofing and TEI encoding</change>
+            <change when="2018-05-04" who="#AM">Transcription and TEI encoding</change>
+			<!-- 0051-0050 -->
+			<change when="2018-06-16" who="#AW">Coding review</change>
+            <change when="2018-05-20" who="#AM">Proofing</change>
+            <change when="2018-05-14" who="#HB">Transcription and TEI encoding</change>
+			<!-- Finalization -->
+			<change when="2020-05-07" who="#AW">Standardize TEI</change>
+			
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<front n="e0cfa4"><!-- Change; this is the color of the MS page; value can be any color -->
+            <div rend="brown vertical" hand="#EJG"><!-- Change; this is the color of the writing; only use auto-suggested values -->
+
+    <pb facs="liv_012056_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><persName>Henry <choice><abbr>M.</abbr><expan>Morton</expan></choice> Stanley <choice><abbr>Esq.</abbr><expan>Esquire</expan></choice></persName>
+<lb/>
+<lb/>
+<lb/>
+<lb/><hi rend="underline">private &amp; important</hi>
+<lb/>from <hi rend="underline"><persName><choice><abbr>E</abbr><expan>Edward</expan></choice> <choice><abbr>J</abbr><expan>James</expan></choice> Glave</persName></hi></p><!-- Adrian/Heather - do I need to put something here to reset the orientation to horizontal, or does it do that automatically at next paragraph? --><!-- This is perfecto, Ann! The p tag resets it :) HB --><!-- I'm going to approach this differnetly and treat the envelope as a separate section (<div>), all of which is vertical, so I've removed the <cb/> and added "vertical" to the <div>. AW -->
+
+    <pb facs="liv_012056_0002" n="0002" type="blank" ana="7"/>
+<lb/><!-- blank page AM -->
+            
+			</div>
+		</front>		
+		<body n="efe7d2"><!-- Change; this is the color of the MS page; value can be any color -->
+			<div rend="brown" hand="#EJG">
+
+    <pb facs="liv_012056_0003" n="0003"/>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/><fw rend="small"><add place="inspace">(1)</add></fw> <hi rend="underline">Narrated by <persName>Saleh Bin Osman</persName></hi></p>
+<lb/><p rend="no-indent"><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName><!-- Note the correct spelling of Jameson. AW --> was visiting "<geogName><persName>Stanley</persName> Falls</geogName>"
+<lb/>for the purpose of urging <persName>Tippu Tib</persName> to
+<lb/>provide the <term type="occupation">carriers</term>, which he had promised
+<lb/>to <persName>Stanley</persName> - <space extent="3" unit="chars"/>Upon passing through the
+<lb/>village of <settlement>Wakumwa</settlement>, <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> asked
+<lb/>the <term type="occupation">headman</term> of the <orgName><geogName>Zanzibar</geogName>is</orgName>, <persName>Hamadi
+<lb/>Bin Dowd</persName>, whether it was really true
+<lb/>that the natives were cannibals &amp; ate <!-- SO hard not to code native and cannibals!!! lol HB -->
+<lb/>each other? Of course it was perfectly
+<lb/>true replied the other! Thereupon
+<lb/><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> gave the man <persName>Hamadi</persName>
+<lb/>some cloth to buy a young slave.
+<lb/>Presently he <add place="below"><seg type="metamark">^</seg></add> <add place="above">(<persName>Hamadi</persName>)</add> came back bringing with
+<lb/>him a young girl <choice><sic>what</sic><corr>that</corr></choice> he had
+<lb/>bought - <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> then ordered him
+<lb/>to hand her over to the natives &amp;
+<lb/>tell them to kill, cook, &amp; eat
+<lb/>her - <space extent="1" unit="chars"/>The <orgName><geogName>Zanzibar</geogName>is</orgName> flatly
+<lb/>refused to do this and <choice><abbr>express’d</abbr><expan>expressed</expan></choice>
+
+    <pb facs="liv_012056_0004" n="0004" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0005" n="0005"/>
+<lb/><space extent="1" unit="words"/><fw rend="small"><add place="inspace">(2)</add></fw>
+<lb/>their disgust by going away, but <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName>
+<lb/>himself took the girl by the wrist &amp;
+<lb/>handed her to her savage <term type="occupation">executioners</term>
+<lb/>She was <choice><abbr>stabb’d</abbr><expan>stabbed</expan></choice> with a knife and
+<lb/>whilst the body was still quivering the
+<lb/>natives cut off the flesh from the
+<lb/>bones &amp; having toasted it in sticks
+<lb/>on the fire they <w><del>E</del>ate</w> it - During
+<lb/>the whole of the <add place="below"><seg type="metamark">^</seg></add> <add place="above">ghastly</add> performance
+<lb/><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> sat down and made
+<lb/>sketches of it - <space extent="2" unit="chars"/><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> was
+<lb/>accompanied by <persName><choice><orig><app><rdg>Muftwa</rdg><rdg>Muftaa</rdg></app></orig><reg>Mufta</reg></choice></persName> his boy
+<lb/><persName>Hamadi Bin Dowd</persName> and by <orgName><geogName>Zanzibar</geogName>i</orgName>
+<lb/>- <persName>Tippu Tib</persName>, who heard of this upon
+<lb/><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName>'s arrival at the Falls, refused <!-- geog: Stanley Falls -->
+<lb/>to see him for 2 days, being too
+<lb/>disgusted to speak with him.
+
+    <pb facs="liv_012056_0006" n="0006" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0007" n="0007"/>
+<lb/><fw rend="small"><add place="marginleft">(<hi rend="underline">3</hi>)</add></fw> 
+<lb/>Upon <persName>Major <choice><sic>Barttlot</sic><corr>Barttelot</corr></choice></persName><choice><sic>s</sic><corr>'s</corr></choice> second visit to <!-- here I have standardised the spelling of the surname to Barttelot as that seems to be the most widely-used form elsewhere in the text, and is also the correct spelling according to Tim Jeal in "Stanley" AM --><!-- I think we're better off treating this as sic/corr so I've changed accordingly. I've also simplified the coding for the 's, although I know that technically this violates the way we do things. AW -->
+<lb/>the Falls - <persName>Tippu</persName> told him that he <!-- geog: Stanley Falls -->
+<lb/>did not know how to deal with either
+<lb/><term type="collective">Arabs</term> or <orgName><geogName>Zanzibar</geogName>is</orgName> &amp; moreover if he
+<lb/>assumed such a dictative tone the
+<lb/><persName>Tippu Tib</persName> refused to speak to him -
+<lb/>Major remarked to him "You can play
+<lb/>with <persName>Stanley</persName> as much as you like
+<lb/>but you cannot play the fool with
+<lb/>me -" You had better return to <settlement>Yambuya</settlement><!-- to be reviewed AM--><!-- I've corrected this using Stanley's In Darkest Africa. AW -->
+<lb/>&amp; send another white man here, you
+<lb/>only make trouble <unclear>&amp;</unclear> you consider
+<lb/>yourself a "<term type="occupation">Sultan</term>". <space extent="2" unit="chars"/>I can speak
+<lb/>with <persName>Stanley</persName> but not with you for
+<lb/>you have too big a head. - replied
+<lb/><persName>Tippu Tib</persName>.
+<lb/><space dim="vertical" unit="lines" extent="1"/>
+
+    <pb facs="liv_012056_0008" n="0008" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0009" n="0009"/>
+<lb/><fw rend="small"><add place="marginleft">4</add></fw> 
+<lb/>Some few weeks after the camp of the
+<lb/>Rear Column had been formed 3 <orgName><geogName>Zanzibar</geogName>is</orgName>
+<lb/>, who had deserted from <persName>Stanley</persName>'s <w>Van<supplied><seg type="hyphen">-</seg></supplied>
+<lb break="no"/>guard</w>, came to <settlement>Yambuya</settlement> and reported
+<lb/>to <persName>Major Barttelot</persName> that <persName>Stanley</persName> was
+<lb/>dead, &amp; that <app><rdg>the</rdg><rdg>he</rdg></app> Major - being next
+<lb/>in command, was now their <term type="occupation">chief</term> -
+<lb/>The <orgName><geogName>Zanzibar</geogName>is</orgName> at <settlement>Yambuya</settlement> replied
+<lb/>that they did not believe it, saying "that
+<lb/><persName>Stanley</persName>, with his big force, well armed with
+<lb/>plenty of rifles and ammunition and
+<lb/>a <foreign>mzinja</foreign> (cannon) they said; the natives
+<lb/>in that part of the country were
+<lb/>not capable of vanquishing such
+<lb/>an army -</p>
+<lb/><p>A great deal of dissatisfaction
+<lb/>was caused by <persName>Barttelot</persName> giving these
+<lb/>three <term type="occupation">bearers</term> of the news <term type="foodstuff">rice</term> and <term type="foodstuff">meat</term>
+
+    <pb facs="liv_012056_0010" n="0010" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0011" n="0011"/>
+<lb/><fw rend="small"><add place="marginleft">5</add></fw>
+<lb/>whereas <orgName><geogName>Zanzibar</geogName>is</orgName> and <term type="collective">Londanese</term>
+<lb/>at <settlement>Yambuya</settlement> were being starved <choice><sic>t</sic><corr>to</corr></choice>
+<lb/>death, as they <choice><abbr>express’d</abbr><expan>expressed</expan></choice> it they could
+<lb/>not make out what kind of a
+<lb/>heart a man had who would starve
+<lb/>his own men &amp; sumptuously feed those
+<lb/>who brought such news as the death
+<lb/>of <persName>Stanley</persName> and all his followers -
+<lb/><persName>Major Barttelot</persName> tried to get men
+<lb/>from <persName>Tippu Tib</persName> through <persName>Maraja</persName> the
+<lb/><term type="collective">Londanese <term type="occupation">chief</term></term> - <persName>Barttelot</persName> thought
+<lb/><persName>Stanley</persName> was dead &amp; he himself was
+<lb/>anxious to reach <persName>Emin</persName><!-- refers to Emin Pasha AM --> &amp; perform
+<lb/>the object of the <orgName>Expedition</orgName> -
+<lb/>He remarked to <persName>Maraja</persName><!-- I'm not sure about this name. AW --> that
+<lb/><persName>Ward</persName><!-- Ward is correct. AW --> was away, <persName>Troup</persName><!-- Troup is correct. AW --> had gone
+<lb/>home sick, he would send <persName>Bonny</persName><!-- Bonny is correct. AW --><!-- very unclear names AM --><!-- Some of these names can be cleared up with reference to Stanley's In Darkest Africa, so that's what I've done. AW -->
+
+    <pb facs="liv_012056_0012" n="0012" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0013" n="0013"/>
+<lb/><fw rend="small"><add place="marginleft" rend="black">6</add></fw>
+<lb/>home &amp; taking with him only
+<lb/><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> as white companion he
+<lb/>would cut his way to <geogName>Wadelai</geogName>.
+<lb/>The Major promised to give <persName>Maraja</persName>
+<lb/><unclear>too</unclear> <del><gap extent="1" unit="chars"/></del><!-- needs to be reviewed AM --><!-- I've tried to fix it. AW --> if he could succeed in
+<lb/>getting <persName>Tippu Tib</persName> to provide <term type="occupation">carriers</term>.
+<lb/>- "We will then return <persName>Emin</persName> ourselves
+<lb/>&amp; return home very big men - you
+<lb/>will be a big <term type="occupation">chief</term> in <country>Egypt</country> and
+<lb/>I will be a <term type="occupation">general</term> in <country>England</country>": said
+<lb/>the Major ---</p>
+<lb/><p rend="no-indent">-<persName>Salim Masoodi</persName> offended <del><persName>Tippu Tib</persName></del>
+<lb/><persName>Major Barttelot</persName> by not interpreting
+<lb/>to his <term type="occupation">chief</term><!-- possibly comma here, but it is under the beginning of the next word AM --><!-- Too ambiguous to me to code as anything certain. AW --> <persName>Tippu Tib</persName> any
+<lb/>insulting speeches which the Major
+<lb/>uttered - <persName>Salim</persName> preferred to keep
+<lb/><choice><sic>t</sic><corr>to</corr></choice><!-- just a squiggle but "to" is the only thing that makes sense to me AM --><!-- Looks good to me. I've changed this to reflect something similar earlier in this transcript. AW --> himself any high-handed talk
+<lb/>&amp; not aggravate <persName>Tippu Tib</persName> by repeating it.
+
+    <pb facs="liv_012056_0014" n="0014" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0015" n="0015"/>
+<lb/><fw><add place="marginleft"><del>6</del><add place="over-text" rend="black">7</add></add></fw> Some few weeks after the camp
+<lb/>of the Rear Column had been formed
+<lb/><space extent="3" unit="words"/><add place="inspace" rend="small"><orgName><geogName>Zanzibar</geogName>is</orgName> who had deserted from <persName>Stanley</persName></add><!-- I've done this somewhat differently, because this to me reflects the layout on the page plus the sense a bit better. This seems to me not so much an addition to the sentence as an interlinear comment above it. AW -->
+<lb/><del>some</del> <add place="above">3</add> of the <del><term type="collective">Arabs</term>' fighting</del> men came
+<lb/>to <settlement>Yambuya</settlement> and reported that
+<lb/><persName>Stanley</persName> was dead &amp; his whole <orgName>Expedition</orgName>
+<lb/>cut to pieces - whereupon <persName>Barttelot</persName>
+<lb/>sounded the call and told all the
+<lb/>men that <persName>Stanley</persName> was dead &amp; he
+<lb/>the Major being next in command
+<lb/>was now their <term type="occupation">chief</term>. - The
+<lb/><orgName><geogName>Zanzibar</geogName>is</orgName> replied that they did
+<lb/>not <choice><sic>beleive</sic><corr>believe</corr></choice> it saying that <persName>Stanley</persName>
+<lb/>with his big force well armed with
+<lb/>plenty of rifles and ammunition
+<lb/>and a cannon (<foreign>mzinja</foreign>) - the
+<lb/>natives in that part of the country
+<lb/>were not capable of vanquishing
+<lb/>such an army</p><!-- Note that this page essentially repeats the information on page 9, but not quite word for word. Looks like the author simply forgot he had already related this AM --><!-- Interesting! AW -->
+
+    <pb facs="liv_012056_0016" n="0016" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0017" n="0017"/>
+<lb/><fw rend="small"><add place="inspace"><del>(7)</del><add place="inspace">|8</add></add></fw>
+<lb/><p rend="no-indent">There was a large secret council
+<lb/>(<foreign>shauri</foreign>) held one night amongst the
+<lb/><orgName><geogName>Zanzibar</geogName>is</orgName> when the <term type="occupation">headman</term> urged that
+<lb/>rather die of sickness &amp; starvation it
+<lb/>would be <add place="below"><seg type="metamark">^</seg></add> <add place="above">better</add> to even steal some loads
+<lb/>of cloth and beads etc &amp; make their
+<lb/>way along the path taken by <persName>Stanley</persName>
+<lb/>but, <app><rdg>those</rdg><rdg>these</rdg></app> willing to take these risks,
+<lb/>were in the minority and the majority
+<lb/>prevailed upon them to stay with their
+<lb/>white men whatever happened as they
+<lb/>had promised <persName>Stanley</persName> that they would
+<lb/>do so -</p>
+<lb/><space dim="vertical" unit="lines" extent="3"/>
+
+    <pb facs="liv_012056_0018" n="0018" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+	<pb facs="liv_012056_0019" n="0019"/>
+<lb/><fw rend="small"><add place="marginleft">(<del>5</del>)9</add></fw> 
+<lb/><p rend="no-indent">There was <add place="below">^</add> <add place="above">one night</add> hanging in the <term type="occupation">Cook</term>'s house,
+<lb/>a leg of a <term type="animal">goat</term>. <space extent="2" unit="chars"/><persName>Manlidi</persName> <persName>Major
+<lb/>Barttelot</persName>'s boy crept round to this hut
+<lb/>at night and cut off a small piece
+<lb/>of the <term type="foodstuff">meat</term>; whilst thus engaged <persName>Nubi</persName>
+<lb/>the <orgName><term type="collective">Londanese</term> <term type="occupation">guard</term></orgName> saw him &amp; <w>threaten<supplied>ed</supplied></w>
+<lb/>to report to the Major if <persName>Manlidi</persName> did
+<lb/>not share it with him. <persName>Manlidi</persName> however
+<lb/>preferred to cut off another <del><gap extent="1" unit="words"/></del><add place="over-text"><gap extent="1" unit="words"/></add><!-- still unclear AM --><!-- Also unclear to me, and I wasn't convinced that "morsel" was right, so I've removed it and used <gap> instead. AW -->
+<lb/>for the <term type="collective">Londanese</term> <persName>Nubi</persName>. But this
+<lb/>taste of <term type="foodstuff">fresh meat</term> eaten raw only
+<lb/>aggravated the <orgName><term type="collective">Londanese</term></orgName>'s hunger
+<lb/>and after the boy had gone he
+<lb/>took down the remainder of the leg
+<lb/>and ate it and afterwards hid the
+<lb/>bone in the straw thatching of
+<lb/><choice><sic><persName>Manlidi</persName>s</sic><corr><persName>Manlidi</persName>'s</corr></choice> hut - <app><rdg>on</rdg><rdg>In</rdg></app> the morning
+
+	<pb facs="liv_012056_0020" n="0020" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0021" n="0021"/>
+<lb/><fw rend="small"><add place="marginleft">(10)</add></fw> 
+<lb/>there was a cry from the <term type="occupation">cook</term> that the
+<lb/><term type="foodstuff">meat</term> was missing and <persName>Major Barttelot</persName>
+<lb/>sounded the call &amp; had everybody in
+<lb/>line for the purpose of finding out
+<lb/>the thief; the bone was eventually <w>dis<seg type="hyphen">-</seg>
+<lb break="no"/>covered</w> in the thatch of <choice><sic><persName>Manlidi</persName>s</sic><corr><persName>Manlidi</persName>'s</corr></choice> hut
+<lb/>but <persName>Nubi</persName>, the <orgName><term type="collective">Londanese</term> <term type="occupation">guard</term></orgName>, admitted
+<lb/>that he was the culprit - and <persName>Barttelot</persName>
+<lb/><choice><abbr>wish'd</abbr><expan>wished</expan></choice> to shoot him, but <persName>Assad Ferran</persName>
+<lb/>pleaded on his behalf and finally
+<lb/>the punishment was altered to that of
+<lb/>flogging - he was to receive 300
+<lb/>lashes - but the man's back so
+<lb/>badly lacerated being torn into ribbons
+<lb/>by the lash that the total number
+<lb/>300 could not be given at one
+<lb/>time, it was then decided that the
+<lb/>remaining blows should be
+<lb/>administered
+
+	<pb facs="liv_012056_0022" n="0022" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0023" n="0023"/>
+<lb/><fw rend="small"><add place="marginleft">(<del>7</del>)11</add></fw> 
+<lb/>when his present wounds had healed.
+<lb/>After a few days <persName>Nubi</persName>, dreading to
+<lb/>face a repetition of the inhumanity
+<lb/>he had suffered, took his rifle and
+<lb/>escaped into the forest, but a search
+<lb/>party was <w><del>dis</del>organized</w> and he was soon
+<lb/>discovered and brought back to camp -
+<lb/>and the sentence of death was passed
+<lb/>on him. <app><rdg>He</rdg><rdg>&amp; he</rdg></app> was compelled to dig
+<lb/>his own grave. After which he was <!-- Yowza, they were way harsh!! HB -->
+<lb/>lashed to a kind of cross and a file
+<lb/>of 15 <orgName><term type="collective">Londanese</term> <term type="occupation">soldiers</term></orgName> fired simultaneously
+<lb/>at the wretch riddling him with bullets -
+<lb/>he was <add place="below">^</add> <add place="above">afterwards</add> buried in a deep vertical
+<lb/>hole his head being pushed down
+<lb/>first and the loose clay packed
+<lb/>in around him so that only the
+<lb/>feet <choice><abbr>show'd</abbr><expan>showed</expan></choice> above the ground</p>
+
+	<pb facs="liv_012056_0024" n="0024" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0025" n="0025"/>
+<lb/><fw rend="small"><add place="marginleft">(<del>8</del>)12</add></fw> 
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>After a delay of many months <persName>Tippu
+<lb/>Tib</persName> finally supplied men - about 400 -
+<lb/>to carry the loads of the Rear Column
+<lb/>of the <orgName><persName>Emin Bey</persName> Relief Expedition</orgName> - The
+<lb/>sacks of beads, bales of cloth etc were
+<lb/>at first much too heavy but all
+<lb/>were duly lightened and a great
+<lb/>deal of stores which could not be
+<lb/>carried, owing to there being an insufficient
+<lb/>number of men., were given to <persName>Tippu Tib</persName>
+<lb/><add place="marginleft">-</add> <term type="foodstuff">Rice</term> previously bought from the <term type="collective">Arabs</term>
+<lb/>at <geogName><persName>Stanley</persName> Falls</geogName> was denied the
+<lb/>sick blacks of the <orgName>Expedition</orgName> but <!-- As per new guidelines I'm not coding "sick blacks", correct? HB --><!-- Yes AM --><!-- Ditto AW -->
+<lb/>now made a present of to <persName>Tippu
+<lb/>Tib</persName>. <seg rend="small"><space extent="3" unit="chars"/><persName>Tippu Tib</persName> cautioned the Major to be
+<lb/>very careful in his <choice><sic>dealing's</sic><corr>dealings</corr></choice> with the <term type="collective">Manyema people</term>
+<lb/>"they were not so servile or so devoted as the <orgName><geogName>Zanzibar</geogName>is</orgName> <!-- Not sure about Zanzibaris? HB --><!-- changed to orgName since I think they were recruited from different tribes in Zanzibar AM --><!-- Yes, plus probably people of mixed origin from Zanzibar. In any case, orgName is correct. AW -->
+<lb/>they were <foreign>washinzi</foreign> (bush people)<supplied>"</supplied> said <persName>Tippu Tib</persName> -
+<lb/>"It is necessary to humour them and <gap extent="1" unit="words"/><!-- still unclear AM --><!-- Also unclear to me, and I wasn't convinced that "surmise" was right, so I've removed it and used <gap> instead. AW --> at all times
+<lb/>the greatest patience &amp; tact in dealing with them. When they
+<lb/>are tired or sick you must attend to them &amp; not abandon
+<lb/>them - If you lose your temper and beat them they
+<lb/>will all run away -"</seg><!-- The text on the last part of the page looks decidedly smaller to me, so I've put it in a <seg rend="small"> tag. AW -->
+
+	<pb facs="liv_012056_0026" n="0026" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0027" n="0027"/>
+<lb/><fw rend="small"><add place="inspace">(<del>9</del>)13</add></fw> 
+<lb/><add place="above">"</add><!-- placement of the quote is upper left and has got mixed up with the running header on the previous line. Adrian could you check this? AM--><!--  I've used the <add> tag to note this. In theory, this could also be an "11" for the running header, but that seems less likely. AW -->and do not in any way molest their
+<lb/>women as this is their most sensitive
+<lb/>point; The <term type="collective">Manyema</term> <add place="above" rend="gray" hand="#U"><term type="collective"><choice><sic>manyuema</sic><corr><choice><orig>Manyuema</orig><reg>Manyema</reg></choice></corr></choice></term></add>, when properly <!-- As this is the only time he corrects himself with Manyema, I'm not sure if he meant that correction to run throughout? HB --><!-- I don't think he is correcting himself at all as it looks to be in a different handwriting. I have removed the sic/corr because my understanding is that we only use it for corrections we are applying. Adrian can you look at how I've coded this? AM --><!-- Agreed. It looks like this is in another hand, so the way it's done now looks good to me. AW -->
+<lb/>treated, are brave and faithful <hi rend="underline">"</hi>
+<lb/><del>A</del> One of <choice><sic><persName>Tippu Tib</persName>s</sic><corr><persName>Tippu Tib</persName>'s</corr></choice> <term type="occupation">officers</term> <persName>Mwini
+<lb/>Schumali</persName> was appointed by <persName>Tippu
+<lb/>Tib</persName> to be the "<foreign>mampara</foreign>" (<term type="occupation"><choice><orig>head man</orig><reg>headman</reg></choice></term><supplied>)</supplied>
+<lb/>of the <orgName><term type="collective">Manyema</term> <term type="occupation">carriers</term></orgName> - <persName>Tippu
+<lb/>Tib</persName> told <persName>Barttelot</persName> that if he had
+<lb/>any complaint to make he was
+<lb/>to do so through <persName>Mwini Schumali</persName>
+<lb/>who was thoroughly conversant with 
+<lb/>these people &amp; <w>w<del>as</del><add place="inspace" rend="small"><unclear>ould</unclear></add></w> <add place="inspace" rend="small">be</add><!-- still unclear - I think it looks as though someone has tried to change the "was" to "would be" but has not done it correctly AM --><!-- I agree with your reading Anne, so I'm changing the encoding to reflect this. AW --> thus able to settle
+<lb/>any disagreement more easily than
+<lb/><add place="inspace" rend="small">the Major himself.</add></p><!-- Looks like this line was forgotten then crammed into available space, so I've coded it thus. AW --> 
+<lb/><p rend="no-indent">Just before leaving <settlement>Yambuya</settlement>
+<lb/><persName>Major Barttelot</persName> called together all
+
+	<pb facs="liv_012056_0028" n="0028" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0029" n="0029"/>
+<lb/><fw rend="small"><add place="marginleft">(<del>10</del>)14</add></fw> 
+<lb/>the <del><orgName><geogName>Zanzibar</geogName>i</orgName></del> <term type="collective"><add place="above">Manyema</add> <term type="occupation">headmen</term></term> &amp; told them
+<lb/>that he was about to start for
+<lb/><geogName>Wadelai</geogName> &amp; that he intended taking
+<lb/>another route which was a shorter
+<lb/>way to reach <persName>Emin</persName> than that
+<lb/>taken by <persName>Stanley</persName> - <space extent="2" unit="chars"/><persName>Mwini
+<lb/>Schumali</persName> was excluded from this
+<lb/>council, <choice><orig>altho</orig><reg>although</reg></choice> <persName>Tippu Tib</persName> had
+<lb/>distinctly appointed this man to be
+<lb/><term type="occupation">chief</term> of the men supplied by <persName>Tippu</persName>
+<lb/>- This meeting between the major &amp;
+<lb/>his <term type="occupation">headmen</term> was held in secret
+<lb/>no other white men being present</p><!-- There's about half a space empty line below this, but I'm not sure it's worth coding, so I've removed the coding. AW -->
+<lb/><p>When the rear guard, now
+<lb/>augmented by the men sent
+<lb/>by <persName>Tippu Tib</persName>, actually did leave
+
+	<pb facs="liv_012056_0030" n="0030" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0031" n="0031"/>
+<lb/><fw rend="small"><add place="marginleft">15</add></fw> 
+<lb/><settlement>Yambuya</settlement> <persName>Barttelot</persName> <choice><abbr>march'd</abbr><expan>marched</expan></choice> ahead
+<lb/>with his compass in hand saying
+<lb/>that he himself would show the
+<lb/>way; but eventually after two or
+<lb/>three days, he lost the trail, left
+<lb/>by the vanguard, and was informed
+<lb/>of this fact by <persName>Mwini Schumali</persName>
+<lb/>; the major answered that he was
+<lb/>perfectly capable of piloting the
+<lb/><orgName>Expedition</orgName> &amp; ordered <persName>Mwini Schumali</persName>
+<lb/>to retire &amp; bring up the rear -
+<lb/><persName>Mwini Schumali</persName> then told the
+<lb/>Major that <persName>Tippu Tib</persName> had said
+<lb/><seg rend="black large">"</seg>that the <term type="collective">Manyemas</term> were to follow
+<lb/>in <persName>Stanley</persName>'s path<supplied>"</supplied> &amp; when the Major
+<lb/>deviated from this the <term type="collective">Manyemas</term>
+
+	<pb facs="liv_012056_0032" n="0032" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0033" n="0033"/>
+<lb/><fw rend="small"><add place="marginleft">16</add></fw>
+<lb/>were to return back, <persName>Tippu Tib</persName>
+<lb/>had said that "he had given
+<lb/>his promise to <persName>Stanley</persName> before the
+<lb/><term type="collective">British</term> Consul and the Sultan
+<lb/>of <geogName>Zanzibar</geogName> and he did not
+<lb/>consider himself bound to supply
+<lb/><term type="occupation">carriers</term> for another <choice><sic>whiteman's</sic><corr>white man's</corr></choice> <!-- Again, I'm not coding whiteman as per new coding rules, correct? HB --><!-- Yes, but it possibly needs a correction for being quoted as one word - Adrian could you please check this? AM --><!-- The current coding looks good to me. AW -->
+<lb/>personal <orgName>Expeditions</orgName><!-- I think this one is borderline orgName. The reference to me seems to be a generic set of expeditions, not a formal one. I'm leaving the tag, however, just in case. AW --> - <space extent="1" unit="chars"/>The object
+<lb/>of the rear column was to reach
+<lb/><persName>Stanley</persName> and the quickest and
+<lb/>easiest way to do this was
+<lb/>to follow <persName>Stanley</persName>'s road."</p>
+<lb/><p rend="no-indent">- <persName>Mwini Schumali</persName> told <persName>Major
+<lb/>Barttelot</persName> that he had been appointed
+<lb/>by <persName>Tippu Tib</persName> to be <term type="occupation">chief</term> of the
+<lb/><orgName><term type="collective">Manyema</term> <term type="occupation">carriers</term></orgName> supplied to the</p>
+
+	<pb facs="liv_012056_0034" n="0034" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+    <pb facs="liv_012056_0035" n="0035"/>
+<lb/><fw rend="small"><add place="marginleft">17</add></fw>
+<lb/><p rend="no-indent"><orgName>Expedition</orgName> but the Major, by
+<lb/>ignoring him, (<persName>Mwini Schumali</persName>)
+<lb/>as holding that position, had
+<lb/>loosened his command of the <term type="collective">Manyema</term>
+<lb/>and the prestige, which he would
+<lb/>have held if properly supported
+<lb/>by the Major, was lost - The <term type="collective">Manyemas</term>
+<lb/>seeing that <persName>Mwini Schumali</persName> was
+<lb/>not recognized by <persName>Major Barttelot</persName>
+<lb/>as their <term type="occupation">chief</term> naturally doubted
+<lb/>his right to control them -</p>
+<lb/><p>The third day <persName>Major Barttelot</persName>
+<lb/>allowed the <term type="collective">Manyemas</term> to lead
+<lb/>the <orgName>Expedition</orgName> headed by <persName>Mwini
+<lb/>Schumali</persName>; He himself the <term type="occupation">Major</term>
+
+    <pb facs="liv_012056_0036" n="0036" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0037" n="0037"/>
+<lb/><fw rend="small"><add place="marginleft">18.</add></fw>
+<lb/>remained in the rear to whip
+<lb/>up the <orgName><geogName>Zanzibar</geogName>i <term type="occupation">porters</term></orgName>, who
+<lb/>emaciated by many months of
+<lb/>hunger and sickness, struggled
+<lb/>slowly along the path - Several
+<lb/>of the <orgName><geogName>Zanzibar</geogName>is</orgName> threw down their
+<lb/>packs &amp; escaped into the forest
+<lb/>- In crossing a <app><rdg>boggy</rdg><rdg>baggy</rdg></app> stream Major
+<lb/>mounted the shoulders of "<persName>Hamadi
+<lb/>Bin Dowd</persName>" but as the <orgName><geogName>Zanzibar</geogName>i</orgName>'s
+<lb/>feet stuck deep into the muddy
+<lb/>bottom at each step he stumbled
+<lb/>about a little &amp; the Major got
+<lb/>wet. - When they arrived in
+<lb/>the opposite bank the Major
+<lb/>flogged the man most unmercifully
+
+    <pb facs="liv_012056_0038" n="0038" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0039" n="0039"/>
+<lb/><fw rend="small"><add place="marginleft">19</add></fw>
+<lb/>and threatened to have him shot
+<lb/>next morning - as this threat
+<lb/>had been made before and had
+<lb/>also been carried out, the <orgName><geogName>Zanzibar</geogName>i</orgName>
+<lb/><persName>Hamadi Bin Dowd</persName>, fearing death
+<lb/>escaped into the forest - and remained
+<lb/>- absent till <persName>Stanley</persName> returned to <placeName>Banalya</placeName>.
+<lb/>- When they arrived at <placeName>Banalya</placeName>
+<lb/><persName>Abdullah Karonia</persName>, one of <orgName><persName>Tippu
+<lb/>Tib</persName>'s <term type="occupation">headmen</term></orgName> in charge of a slaving
+<lb/>gang of <term type="collective">Manyemas</term>, advised <persName>Barttelot</persName>
+<lb/>to camp just a little way off
+<lb/>as trouble was likely to spring up
+<lb/>between the forces of the <orgName>Expedition</orgName>
+<lb/>and the followers of the <term type="collective">Arabs</term>,
+<lb/><persName>Barttelot</persName> was also urged to make
+<lb/>another camp on account of the
+<lb/><choice><sic>small pox</sic><corr>smallpox</corr></choice> which was very bad
+
+    <pb facs="liv_012056_0040" n="0040" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0041" n="0041"/>
+<lb/><fw rend="small"><add place="marginleft">20</add></fw>
+<lb/>amongst the <term type="collective">Arabs</term> at <placeName>Banalya</placeName>
+<lb/>; but <persName>Major Barttelot</persName> said he
+<lb/>intended remaining where he was.
+<lb/>at <placeName>Banalya</placeName>, he would stay there
+<lb/>until <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName>, who had gone to
+<lb/><settlement>Kasango</settlement>, should return, this he expected
+<lb/>would be in about 20 days. <persName>Bonny</persName>
+<lb/>also urged the desirability of
+<lb/>making another camp but the
+<lb/>Major decided to remain at <placeName>Banalya</placeName> -
+<lb/>despite the warning from his
+<lb/><term type="occupation">headman</term> &amp; his sole remaining
+<lb/>white man. <persName>M<hi rend="sup">r</hi> Bonny</persName> - all of
+<lb/>whom suggested a new camp.
+<lb/>Major said he was the <term type="occupation">chief</term> and
+<lb/>nobody had anything to say.</p>
+
+    <pb facs="liv_012056_0042" n="0042" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0043" n="0043"/>
+<lb/><fw rend="small"><add place="marginleft">(21)</add></fw>
+<lb/><p rend="no-indent"><!-- I wanted to use <head> for this line but it doesn't seem to allow it, I'm not sure why AM --><!-- It looks like <head> can't be used independently or inside <p> or <ab>. I just did some quick tests and see that it can be inside of <figure>, <list>, <table> and probably some other such tags. AW -->- <hi rend="underline">Death of <persName>Major Barttelot</persName></hi> -
+<lb/>- One morning at <placeName>Banalya</placeName> just before
+<lb/>daybreak <persName>Major Barttelot</persName> sent one
+<lb/>of his <orgName><term type="collective">Londanese</term> <term type="occupation">soldiers</term></orgName>, <persName>Baithi</persName>,
+<lb/>to order silence in the camp as someone
+<lb/>was beating a drum and singing
+<lb/>in one of the adjacent houses -
+<lb/><persName>Baithi</persName> approached the house of
+<lb/><persName>Sanga</persName> whence the noise came and
+<lb/>learnt from <persName>Sanga</persName>'s children, who
+<lb/>were sitting in the doorway that it was
+<lb/>their mother who was playing and
+<lb/>singing inside. <persName>Baithi</persName> told the
+<lb/>children to inform their mother
+<lb/>that the Major <choice><abbr>wish'd</abbr><expan>wished</expan></choice> silence and
+<lb/>she was to make no more noise
+
+    <pb facs="liv_012056_0044" n="0044" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0045" n="0045"/>
+<lb/><fw rend="small"><add place="marginleft">22</add></fw>
+<lb/>the children however were enjoying the
+<lb/>wild music and did not inform
+<lb/>their mother of the Major's order -
+<lb/>; as the noise did not cease, the Major
+<lb/>sent his little boy <persName><app><rdg>Ludi</rdg><rdg>Sudi</rdg></app></persName> to tell
+<lb/>them to stop the noise; but even
+<lb/>then the message did not reach
+<lb/>the mother's ears, as <persName>Sanga</persName>'s small
+<lb/>boys' only laughed &amp; <unclear>clapped</unclear> with
+<lb/><persName><app><rdg>Ludi</rdg><rdg>Sudi</rdg></app></persName>, who was one of their own playmates
+<lb/>&amp; was about of their own age -
+<lb/><persName><app><rdg>Ludi</rdg><rdg>Sudi</rdg></app></persName> then returned to his <choice><sic><term type="occupation">master</term>s</sic><corr><term type="occupation">master</term>'s</corr></choice>
+<lb/>hut but the noise had not ceased
+<lb/>&amp; the Major became furious and
+<lb/>told <persName><app><rdg>Ludi</rdg><rdg>Sudi</rdg></app></persName> to return &amp; tell them
+<lb/>that if the drumming and singing
+
+    <pb facs="liv_012056_0046" n="0046" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0047" n="0047"/>
+<lb/><fw rend="small"><add place="marginleft">23</add></fw>
+<lb/>did not cease, the Major himself
+<lb/>would come - whilst <persName><app><rdg>Ludi</rdg><rdg>Sudi</rdg></app></persName> was on
+<lb/>this errand the Major had hastily
+<lb/>thrown on his clothes &amp; now appeared
+<lb/>on the scene - He entered the house
+<lb/>where <persName>Sanga</persName>'s wife was sitting, with three
+<lb/>of her female friends, drumming &amp;
+<lb/>singing; pointing a revolver at the
+<lb/>woman's head he knocked her off her
+<lb/>seat and then kicked her in the
+<lb/>stomach and she lay on the floor
+<lb/>of the hut groaning in agony -
+<lb/>- The three women who were sitting
+<lb/>with her ran out &amp; called to
+<lb/>the husband <persName>Sanga</persName> that <persName>Barttelot</persName>
+<lb/>was beating his wife - this man
+
+    <pb facs="liv_012056_0048" n="0048" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+    <pb facs="liv_012056_0049" n="0049"/>
+<lb/><fw rend="small"><add place="marginleft">24</add></fw>
+<lb/>arrived by the door at the back of
+<lb/>his house and seeing his wife groaning
+<lb/>on the floor grasped his stick but
+<lb/>catching sight of <persName>Major Barttelot</persName>
+<lb/>first <del>the</del> outside the house with a revolver
+<lb/>in his hand, <persName>Sanga</persName> <choice><abbr>dropp'd</abbr><expan>dropped</expan></choice> his
+<lb/>stick &amp; took down his gun &amp; priming
+<lb/>it fired and killed the Major, the
+<lb/>weapon was loaded with 2 slugs
+<lb/>one of which killed <persName>Barttelot</persName> &amp; the
+<lb/>other seriously wounded the arm
+<lb/>of a woman who was standing near.</p>
+<lb/><p>This threw the whole camp in an
+<lb/>uproar - Some of the <term type="collective">Manyemas</term> took
+<lb/>advantage of the tumult &amp; excitement</p>
+
+    <pb facs="liv_012056_0050" n="0050" type="blank" ana="15"/>
+<lb/><!-- blank page AM -->
+
+	<pb facs="liv_012056_0051" n="0051"/>
+<lb/><fw rend="small"><add place="marginleft">25</add></fw>
+<lb/><p rend="no-indent">to steal some of the loads others remained
+<lb/>quiet, the <orgName><geogName>Zanzibar</geogName>is</orgName> at first <choice><sic>graspd</sic><corr>grasped</corr></choice>
+<lb/>their guns and wanted to fight the
+<lb/><term type="collective">Manyema</term> but <persName>Bonny</persName> interfered <!-- Not sure if this is Bonny or another name?? HB --><!-- Bonny is correct AM -->
+<lb/>and quiet was restored -</p>
+<lb/><p rend="no-indent"><add place="marginleft">-</add><persName>Sanga</persName> ran away to the <geogName>Falls</geogName> - <!-- geog: Stanley Falls -->
+<lb/>and gave himself up to <persName>Tippu Tib</persName>
+<lb/>In the Evening of <persName>Barttelot</persName>'s death
+<lb/>both <orgName><geogName>Zanzibar</geogName>is</orgName> &amp; <term type="collective">Londanese</term> danced
+<lb/>and sang &amp; burned down the wooden
+<lb/>triangle in which they had so
+<lb/>often been <choice><abbr>lash'd</abbr><expan>lashed</expan></choice> &amp; flogged; and
+<lb/>played the drum where the
+<lb/>whipping place once stood -</p>
+<lb/><space dim="vertical" unit="lines" extent="1"/>
+
+	<pb facs="liv_012056_0052" n="0052" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0053" n="0053"/>
+<lb/><fw rend="small"><add place="marginleft">26</add></fw>
+<lb/><p rend="no-indent"><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> hearing<!-- Adrian could you check this - I think the 1st alternative is more likely AM --><!-- Yes, I think it's hearing. The "h" looks just like the "h" in "had" a few lines down. I removing that <app><rdg> coding. AW --> of the Major's death
+<lb/>repaired to <persName>Tippu Tib</persName> &amp; demanded that
+<lb/><persName>Sanga</persName> should be executed which was <!-- unclear should have "super-low" as an option...I have no idea what that word is! HB --><!-- I think it is "executed" AM --><!-- I agree with Anne. AW -->
+<lb/>duly carried out - The <term type="collective">Arabs</term> said
+<lb/>they were very sorry but <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName>
+<lb/>remarked that "<persName>Major Barttelot</persName>
+<lb/>had killed himself"- one old <term type="collective">Arab</term>
+<lb/><persName>Salim Masoodi</persName> stated that according
+<lb/>to their own custom <persName>Sanga</persName> ought
+<lb/>not to die - "a man who <choice><sic>illtreats</sic><corr>ill-treats</corr></choice>
+<lb/>another man's wife is liable to
+<lb/>death by the<del><gap extent="1" unit="chars"/></del><!-- looks as though a character or 2 were scored out here - unsure - Adrian could you look at this? AM --><!-- Fixed. AW --> <w><del><gap extent="2" unit="chars"/></del><add place="over-text">wo</add>man's</w> husband
+<lb/>who however is not <choice><sic>punishd</sic><corr>punished</corr></choice>
+<lb/><add place="marginleft">,</add> the indignity offered to the woman
+<lb/>being sufficient reason to acquit him
+
+	<pb facs="liv_012056_0054" n="0054" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0055" n="0055"/>
+<lb/><fw rend="small"><add place="marginleft">27</add></fw>
+<lb/>this is the spirit of the <term type="collective">Arab</term> and
+<lb/><term type="collective">Swahili</term> law, but the major being <!-- Not sure if the nationality tag is the right one here? HB --><!-- it's not a nationality - can be a language, people or culture - I changed the tag to <orgName> AM --><!-- Anne is correct. AW -->
+<lb/>a <choice><sic>whiteman</sic><corr>white man</corr></choice> the law became <w>in<seg type="hyphen">-</seg>
+<lb break="no"/>applicable</w> -</p>
+<lb/><p><space extent="2" unit="chars"/>After the Major's death the
+<lb/>whole <orgName>Expedition</orgName> became disorganized
+<lb/>&amp; the <term type="collective"><choice><sic>Manyema's</sic><corr>Manyemas</corr></choice></term> deserted on all sides
+<lb/>from <placeName>Banalya</placeName>, and when <persName>Stanley</persName>
+<lb/>returned he found <persName>Bonny</persName> the
+<lb/>sole <choice><sic>whiteman</sic><corr>white man</corr></choice> in command
+<lb/>&amp; a few wretched <orgName><geogName>Zanzibar</geogName>is</orgName> who
+<lb/>were covered with sores &amp; reduced
+<lb/>to mere skeletons by the many
+<lb/>months of <choice><sic>illtreatment</sic><corr>ill-treatment</corr></choice> &amp; hunger; not
+<lb/>one of them was able to carry a
+
+	<pb facs="liv_012056_0056" n="0056" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0057" n="0057"/>
+<lb/><fw rend="small"><add place="marginleft">28</add></fw>
+<lb/>load.</p>
+<lb/><p><persName>Ludi</persName> <choice><sic><persName>Barttelot</persName>s</sic><corr><persName>Barttelot</persName>'s</corr></choice> little boy was
+<lb/>suffering from a festering wound on
+<lb/>the leg which he had received from
+<lb/>a kick by the Major - He was going
+<lb/>to wash the Major's feet one day
+<lb/>and had taken off one sock and
+<lb/>boot but the water proved too
+<lb/>cold and <persName>Barttelot</persName> <del>which</del> resented
+<lb/>this by kicking <persName>Ludi</persName> with his heavy
+<lb/>boot cutting the boy's shin to the
+<lb/>bone, &amp; making a wound which
+<lb/>the <choice><sic>boys</sic><corr>boy's</corr></choice> impoverished condition <unclear>som</unclear>
+<lb/><unclear><gap extent="1" unit="words"/></unclear><!-- still unclear - I do not think it is "condensed" AM --><!-- Can't read it either, so have coded accordingly. This could also be the second part of the last word on the previous line, which is also unclear (and so coded) in my reading. AW --> in festering sore from
+<lb/>which the <del>boy</del> eventually died.</p>
+
+	<pb facs="liv_012056_0058" n="0058" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0059" n="0059"/>
+<lb/><fw rend="small"><add place="marginleft">29</add></fw>
+<lb/><p rend="no-indent">The <orgName><geogName>Zanzibar</geogName>is</orgName> &amp; <term type="collective">Arabs</term> said that
+<lb/>had there been a man in command
+<lb/>at <settlement>Yambuya</settlement> who had exercised
+<lb/>due tact in dealing with the <term type="collective">Arabs</term>
+<lb/>and had that man been honest <space extent="2" unit="chars"/>of
+<lb/>purpose and capable of proving
+<lb/>that he was so - men to carry
+<lb/>loads would have been forthcoming
+<lb/>from <persName>Tippu Tib</persName> and the rear
+<lb/>column would have moved
+<lb/>soon after <persName>Stanley</persName> - But the <term type="collective">Arabs</term>
+<lb/>say that the actions of <persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName>
+<lb/>&amp; <persName>Barttelot</persName> destroyed all <choice><sic>confidance</sic><corr>confidence</corr></choice>
+<lb/><persName><choice><sic>Jamieson</sic><corr>Jameson</corr></choice></persName> offered money of his own
+<lb/>if <persName>Tippu Tib</persName> would make an effort
+
+	<pb facs="liv_012056_0060" n="0060" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0061" n="0061"/>
+<lb/><fw rend="small"><add place="marginleft">30</add></fw>
+<lb/>to supply the men, but he said in
+<lb/>that case he would have the sole
+<lb/>direction of the enterprise &amp; command
+<lb/>the Rear Column -</p>
+<lb/><p rend="no-indent"><persName>Barttelot</persName> said that <persName>Stanley</persName> was
+<lb/>dead but he wanted to reach <persName>Emin</persName>
+<lb/>but would take a shorter road
+<lb/>to <geogName>Wadelai</geogName> than the path made
+<lb/>by <persName>Stanley</persName> -</p>
+<lb/><p rend="no-indent">. <choice><sic><persName>Barttelot</persName>s</sic><corr><persName>Barttelot</persName>'s</corr></choice>, well known harshness
+<lb/>&amp; inability to deal with blacks, all
+<lb/>prevented the recruitment of men
+<lb/>&amp; the fulfillment of <persName>Tippu Tib</persName>'s
+<lb/>promise to <persName>Stanley</persName> -</p>
+<lb/><space dim="vertical" unit="lines" extent="1"/>
+
+	<pb facs="liv_012056_0062" n="0062" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+	<pb facs="liv_012056_0063" n="0063"/>
+<lb/><fw rend="small"><add place="marginleft"><hi rend="underline">31</hi></add></fw>
+<lb/><p rend="no-indent"><persName>Troup</persName> did all he could to <!-- I tried to see any other word but this one, and I can't...help, Anne! HB --><!-- Calm down Heather, it's Troup! AM --><!-- :> AW -->
+<lb/>alleviate the sufferings of the <orgName>Zanzabaris</orgName>
+<lb/>&amp; protested against <choice><sic><persName>Barttelot</persName>s</sic><corr><persName>Barttelot</persName>'s</corr></choice> inhuman
+<lb/>conduct - but he was confined to
+<lb/>his bed by severe sickness and
+<lb/><persName>Barttelot</persName> ordered that none of the
+<lb/><orgName><geogName>Zanzibar</geogName>is</orgName> were to visit his hut -</p>
+<lb/><p rend="no-indent"><add place="marginleft">.</add> <persName>Bonny</persName> also made a protest &amp;
+<lb/>in one <choice><sic>occassion</sic><corr>occasion</corr></choice> the Major ordered
+<lb/>the <term type="collective">Londanese</term> to arrest <persName>Bonny</persName>
+<lb/>for insubordination he having
+<lb/>prevented <persName>Barttelot</persName> by force
+<lb/>from striking someone; But
+<lb/>the <term type="collective">Londanese</term> did not obey <unclear>so</unclear><!-- could be "so" --><!-- "So" looks more likely so I've changed to that, but left the <unclear> tag. AW --> <persName>Bonny</persName>
+<lb/>threatened to defend themselves -</p>
+
+	<pb facs="liv_012056_0064" n="0064" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+			</div>
+            <div rend="black">
+
+	<pb facs="liv_012056_0065" n="0065"/>
+<lb/><fw rend="small"><add place="marginleft"><hi rend="underline">32</hi></add></fw>
+<lb/><p rend="no-indent">The above <app><rdg>narration</rdg><rdg>narrative</rdg></app> is supplied
+<lb/>by <persName>Saleh Bin Osman</persName>, <persName>Mr Stanley</persName>'s
+<lb/><orgName><orgName><geogName>Zanzibar</geogName>i</orgName> <term type="occupation">servant</term></orgName>, he tells his story
+<lb/><add place="marginleft">of</add> what he learned, concerning these
+<lb/>events, from <orgName><geogName>Zanzibar</geogName>is</orgName>, <term type="collective">Arabs</term>
+<lb/><term type="collective">Manyemas</term>, &amp; <term type="collective">Londanese</term> who
+<lb/>witnessed the different events enumerated</p>
+<lb/><p rend="no-indent">I have carefully translated from <unclear>Ki-Swahili</unclear><!-- still unclear - Ki-Swahili? --><!-- Yep. AW -->
+<lb/><persName>Saleh</persName>'s words &amp; do hereby solemnly
+<lb/>declare that I have truthfully
+<lb/>worded all he said</p>
+<lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/><date when="1890-11-12"><choice><abbr>Nov</abbr><expan>November</expan></choice> 12. <choice><abbr>90</abbr><expan>1890</expan></choice>.</date></p>
+<lb/><p><space extent="1" unit="words"/><space extent="3" unit="chars"/><settlement>New York</settlement></p>
+<lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/><persName>E. J Glave</persName>.</p>
+<lb/><p rend="no-indent small"><hi rend="underline">Witnesses</hi></p>
+<lb/><p rend="no-indent small"><space extent="1" unit="chars"/><persName>John B. Ritche</persName>
+<lb/><space extent="1" unit="chars"/><persName>J B Pond</persName></p>
+
+	<pb facs="liv_012056_0066" n="0066" type="blank" ana="15"/>
+<lb/><!-- blank page HB -->
+
+
+            </div>
+        </body>   
+
+    </text>
+</TEI>

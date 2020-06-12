@@ -64,7 +64,7 @@
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
 			
 				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-			    <nav id="navigation">    
+			    <nav id="nav1">    
 			    <div class="menu">
 			        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
 					<span class="nav-title">One More Voice</span>

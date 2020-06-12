@@ -37,9 +37,7 @@
         <div id="nav1">
             <ul id="menubar1" role="menubar" aria-label="Site Sections">
                 <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-
                 <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
-
                 <li role="none">
                     <div class="dropdown" role="menuitem" data-menu-component>
                         <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
@@ -48,7 +46,6 @@
                             <span class="vh expanded-text">expanded</span>
                             <span class="vh collapsed-text">collapsed</span>
                         </label>
-
                         <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
                             <ul role="none">
                                 <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
@@ -58,7 +55,6 @@
                         </div>
                     </div>
                 </li>
-
                 <li role="none">
                     <div class="dropdown" role="menuitem" data-menu-component>
                         <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
@@ -67,7 +63,6 @@
                             <span class="vh expanded-text">expanded</span>
                             <span class="vh collapsed-text">collapsed</span>
                         </label>
-                        
                         <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
                             <ul role="none">
                                 <li><a role="menuitem" href="contributors.html">contributors</a></li>
@@ -85,7 +80,7 @@
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
     <nav role="navigation" aria-labelledby="nav2">    
         <div class="menu" id="nav2">
-            <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
+            <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
         </div>
     </nav>

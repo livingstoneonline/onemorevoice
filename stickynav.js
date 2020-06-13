@@ -1,6 +1,6 @@
 /* Taken from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
-const nav = document.querySelector('#navigation');
+const nav = document.querySelector('#nav2');
 const navTop = nav.offsetTop;
 
 function stickyNavigation() {

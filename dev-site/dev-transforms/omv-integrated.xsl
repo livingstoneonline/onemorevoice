@@ -77,9 +77,9 @@
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
 				                <li role="none">
-				                    <div class="dropdown" role="menuitem" data-menu-component>
+				                    <div class="dropdown" role="menuitem" data-menu-component="">
 				                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
-				                        <label class="dropbtn" for="toggle-1" data-opens-menu>
+				                        <label class="dropbtn" for="toggle-1" data-opens-menu="">
 				                            concepts
 				                            <span class="vh expanded-text">expanded</span>
 				                            <span class="vh collapsed-text">collapsed</span>
@@ -91,12 +91,13 @@
 				                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
 				                            </ul>
 				                        </div>
+										</input>
 				                    </div>
 				                </li>
 				                <li role="none">
-				                    <div class="dropdown" role="menuitem" data-menu-component>
+				                    <div class="dropdown" role="menuitem" data-menu-component="">
 				                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
-				                        <label class="dropbtn" for="toggle-2" data-opens-menu>
+				                        <label class="dropbtn" for="toggle-2" data-opens-menu="">
 				                            misc
 				                            <span class="vh expanded-text">expanded</span>
 				                            <span class="vh collapsed-text">collapsed</span>
@@ -109,6 +110,7 @@
 				                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
 				                            </ul>
 				                        </div>
+										</input>
 				                    </div>
 				                </li>
 				            </ul>

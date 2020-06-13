@@ -18,61 +18,65 @@
 			  		gtag('config', 'UA-31768072-5');
 				</script></head>
    <body class="transcription ">
-      <nav id="nav2">
-         <div class="menu"><span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span><span class="nav-title">One More Voice</span></div>
-      </nav>
-      <div class="topnav" id="nav1">
-         <ul>
-            <li><a href="../index.html">home</a></li>
-            <li><a href="../texts.html">texts</a></li>
-            <li>
-               <div class="dropdown" data-menu-component=""><input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false"><label class="dropbtn" for="toggle-1" data-opens-menu="">
-                        			                concepts 
-                        			                <span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" data-menu-origin="left">
-                        <ul>
-                           <li><a href="../analytical_priorities.html">analytical priorities</a></li>
-                           <li><a href="../project_design.html">project design</a></li>
-                           <li><a href="../coding_guidelines.html">coding guidelines</a></li>
-                        </ul>
-                     </div></div>
-            </li>
-            <li>
-               <div data-menu-component="" class="dropdown"><input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false"><label class="dropbtn" for="toggle-2" data-opens-menu="">
-                        			                misc 
-                        			                <span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" data-menu-origin="left">
-                        <ul>
-                           <li><a href="../contributors.html">contributors</a></li>
-                           <li><a href="../bibliography.html">bibliography</a></li>
-                           <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-                           <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
-                        </ul>
-                     </div></div>
-            </li>
-         </ul>
-      </div>
-      <div class="overlay" id="nav3" >
-         <div class="menu"><span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></span><span class="nav-title">One More Voice</span></div>
-         <div class="overlay-content">
-            <ul>
-               <li><a href="../index.html">home</a></li>
-               <li><a href="../texts.html">texts</a></li>
-               <li class="section">concepts <i class="fa fa-caret-down"></i><ul>
-                     <li><a href="../analytical_priorities.html">analytical priorities</a></li>
-                     <li><a href="../project_design.html">project design</a></li>
-                     <li><a href="../coding_guidelines.html">coding guidelines</a></li>
-                  </ul>
+      <div class="topnav" role="navigation" aria-labelledby="nav1">
+         <div id="nav1">
+            <ul id="menubar1" role="menubar" aria-label="Site Sections">
+               <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+               <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+               <li role="none">
+                  <div class="dropdown" role="menuitem" data-menu-component=""><input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false"><label class="dropbtn" for="toggle-1" data-opens-menu="">
+                           				                            concepts
+                           				                            <span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+                           <ul role="none">
+                              <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                              <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                              <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                           </ul>
+                        </div></div>
                </li>
-               <li class="section">misc <i class="fa fa-caret-down"></i><ul>
-                     <li><a href="../contributors.html">contributors</a></li>
-                     <li><a href="../bibliography.html">bibliography</a></li>
-                     <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)
-                     </li>
-                     <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)
-                     </li>
-                  </ul>
+               <li role="none">
+                  <div class="dropdown" role="menuitem" data-menu-component=""><input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false"><label class="dropbtn" for="toggle-2" data-opens-menu="">
+                           				                            misc
+                           				                            <span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+                           <ul role="none">
+                              <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                              <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                              <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                              <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+                           </ul>
+                        </div></div>
                </li>
-               <li><a href="../site_map.html">site map</a></li>
             </ul>
+         </div>
+      </div>
+      <nav role="navigation" aria-labelledby="nav2">
+         <div class="menu" id="nav2"><span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span><span class="nav-title">One More Voice</span></div>
+      </nav>
+      <div role="navigation" aria-labelledby="nav3">
+         <div class="overlay" id="nav3">
+            <div class="menu"><span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">×</a></span><span class="nav-title">One More Voice</span></div>
+            <div class="overlay-content" role="menu">
+               <ul role="none">
+                  <li role="none"><a role="menuitem" href="index.html">home</a></li>
+                  <li role="none"><a role="menuitem" href="texts.html">texts</a></li>
+                  <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i><ul role="menu" aria-label="Concepts">
+                        <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                        <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                        <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                     </ul>
+                  </li>
+                  <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i><ul role="menu" aria-label="Miscellaneous">
+                        <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                        <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                        <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)
+                        </li>
+                        <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)
+                        </li>
+                     </ul>
+                  </li>
+                  <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+               </ul>
+            </div>
          </div>
       </div>
       <div class="title" id="title-div" role="banner"><img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project."><h1 class="header-title">One More Voice</h1>
@@ -80,8 +84,8 @@
          <div><span class="back-button"><a href="../texts.html#liv_000138">⬅ Back</a></span><h2 class="italic">Critically-edited Primary Text</h2>
          </div>
       </div>
-      <div class="credits" id="credits1-div">
-         <p class="bold site-blue">Letter to Joseph Moore, 23 May 1874</p>
+      <div class="credits" id="credits1-div" role="complementary" aria-labelledby="opening-credits">
+         <h3 id="opening-credits">Letter to Joseph Moore, 23 May 1874</h3>
          <p><span class="bold">Author(s) &amp; contributor(s):</span> Jacob Wainwright
          </p>
          <p><span class="bold">Place(s) of creation:</span> South Kensington
@@ -100,18 +104,18 @@
          </p>
          <hr>
       </div>
-      <div class="narrow-mobile" id="narrow-mobile-div">
-         <p>Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.
+      <div class="narrow-mobile" id="narrow-mobile-div" role="complementary" aria-labelledby="mobile">
+         <p id="mobile">Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.
          </p>
       </div>
-      <div class="manuscript" id="manuscript-div">
-         <div class="TEI front none" style="background:#;">
-            <div class="ms-container">
+      <div class="manuscript" id="manuscript-div" role="main">
+         <div class="TEI front none" style="background:#;" role="region" aria-labelledby="front-section">
+            <div class="ms-container" id="front-section">
                <!--true-->
             </div>
          </div>
-         <div class="TEI" style="background:#edede4;">
-            <div class="ms-container">
+         <div class="TEI" style="background:#edede4;" role="region" aria-labelledby="main-section">
+            <div class="ms-container" id="main-section">
                <!--true-->
                <div class="body ">
                   
@@ -202,27 +206,29 @@
                </div>
             </div>
          </div>
-         <div class="TEI back none" style="background:#;">
-            <div class="ms-container">
+         <div class="TEI back none" style="background:#;" role="region" aria-labelledby="back-section">
+            <div class="ms-container" id="back-section">
                <!--true-->
             </div>
          </div>
       </div>
-      <div class="credits" id="credits2-div">
-         <hr>
-         <p class="back-button"><a href="../texts.html#liv_000138">⬅ Back</a></p>
-         <p><span class="bold">Cite item (MLA)</span>: Wainwright, Jacob. “Letter to Joseph Moore, 23 May 1874.” Heather F. Ball, Adrian S. Wisnicki, eds. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="https://onemorevoice.org/texts/liv_000138_TEI.html">https://onemorevoice.org/texts/liv_000138_TEI.html</a>.
-         </p>
-         <p><span class="bold">Terms of use:</span> <a href="" target="_blank">
-               	                    
-               	                      	Creative Commons Attribution 4.0 International
-               	                    
-               				</a></p>
-         <p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and
-            material characteristics of the original document. The editors produced the edition
-            by transcribing and encoding the text directly from images of the original document
-            using the <span class="italic">One More Voice</span> <a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.
-         </p>
+      <div class="credits" id="credits2-div" role="complementary" aria-labelledby="closing-credits">
+         <div id="closing-credits">
+            <hr>
+            <p class="back-button"><a href="../texts.html#liv_000138">⬅ Back</a></p>
+            <p><span class="bold">Cite item (MLA)</span>: Wainwright, Jacob. “Letter to Joseph Moore, 23 May 1874.” Heather F. Ball, Adrian S. Wisnicki, eds. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="https://onemorevoice.org/texts/liv_000138_TEI.html">https://onemorevoice.org/texts/liv_000138_TEI.html</a>.
+            </p>
+            <p><span class="bold">Terms of use:</span> <a href="" target="_blank">
+                  	                    
+                  	                      	Creative Commons Attribution 4.0 International
+                  	                    
+                  				</a></p>
+            <p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and
+               material characteristics of the original document. The editors produced the edition
+               by transcribing and encoding the text directly from images of the original document
+               using the <span class="italic">One More Voice</span> <a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.
+            </p>
+         </div>
       </div>
       <div class="footer" id="footer-div" role="contentinfo">
          <hr>

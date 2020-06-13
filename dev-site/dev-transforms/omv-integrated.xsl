@@ -63,88 +63,99 @@
 			</head>
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
 			
-				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-			    <nav id="nav2">    
-			    <div class="menu">
-			        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
-					<span class="nav-title">One More Voice</span>
-			    </div>
-			    </nav>
-			
-			    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
-			    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
-			    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-				<div class="topnav" id="nav1">
-			    <ul>
-			      <li><a href="../index.html">home</a></li>
-			      <li><a href="../texts.html">texts</a></li>
-			      <li>
-			          <div class="dropdown" data-menu-component="">
-			              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
-			              <label class="dropbtn" for="toggle-1" data-opens-menu="">
-			                concepts <!--<i class="fa fa-caret-down"></i>-->
-			                <span class="vh expanded-text">expanded</span>
-			                <span class="vh collapsed-text">collapsed</span>
-			              </label>
-			              <div class="dropdown-content" role="menu" data-menu-origin="left">
-			                <ul>
-			                  <li><a href="../analytical_priorities.html">analytical priorities</a></li>
-			                  <li><a href="../project_design.html">project design</a></li>
-			                  <li><a href="../coding_guidelines.html">coding guidelines</a></li>
-			                </ul>
-			              </div></input>
-			            </div>
-			        </li>
-			        <li>
-			          <div data-menu-component="" class="dropdown">
-			              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
-			              <label class="dropbtn" for="toggle-2" data-opens-menu="">
-			                misc <!--<i class="fa fa-caret-down"></i>-->
-			                <span class="vh expanded-text">expanded</span>
-			                <span class="vh collapsed-text">collapsed</span>
-			              </label>
-			              <div class="dropdown-content" role="menu" data-menu-origin="left">
-			                <ul>
-			                  <li><a href="../contributors.html">contributors</a></li>
-			                  <li><a href="../bibliography.html">bibliography</a></li>
-			                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-			                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
-			                </ul>
-			              </div></input>
-			            </div>
-			        </li>
-			    </ul>
-				</div>
-			
-			    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-			    <div class="overlay" id="nav3" >
-			      <div class="menu">
-			          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
-			          <span class="nav-title">One More Voice</span>
-			      </div>
-			        <div class="overlay-content">
-			            <ul>
-			                <li><a href="../index.html">home</a></li>
-			                <li><a href="../texts.html">texts</a></li>
-			                <li class="section">concepts <i class="fa fa-caret-down"></i>
-			                    <ul>
-			                        <li><a href="../analytical_priorities.html">analytical priorities</a></li>
-			                        <li><a href="../project_design.html">project design</a></li>
-			                        <li><a href="../coding_guidelines.html">coding guidelines</a></li>
-			                    </ul>
-			                </li>
-			                <li class="section">misc <i class="fa fa-caret-down"></i>
-			                    <ul>
-			                        <li><a href="../contributors.html">contributors</a></li>
-			                        <li><a href="../bibliography.html">bibliography</a></li>
-			                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
-			                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
-			                    </ul>
-			                </li>
-			       			<li><a href="../site_map.html">site map</a></li>
-			            </ul>
-			        </div>
-			    </div>
+				<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+				
+				<!-- start of nav -->
+				
+				    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+				    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+				    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+				    
+				    <div class="topnav" role="navigation" aria-labelledby="nav1">
+				        <div id="nav1">
+				            <ul id="menubar1" role="menubar" aria-label="Site Sections">
+				                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+				                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+				                <li role="none">
+				                    <div class="dropdown" role="menuitem" data-menu-component>
+				                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
+				                        <label class="dropbtn" for="toggle-1" data-opens-menu>
+				                            concepts
+				                            <span class="vh expanded-text">expanded</span>
+				                            <span class="vh collapsed-text">collapsed</span>
+				                        </label>
+				                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+				                            <ul role="none">
+				                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+				                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+				                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </li>
+				                <li role="none">
+				                    <div class="dropdown" role="menuitem" data-menu-component>
+				                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
+				                        <label class="dropbtn" for="toggle-2" data-opens-menu>
+				                            misc
+				                            <span class="vh expanded-text">expanded</span>
+				                            <span class="vh collapsed-text">collapsed</span>
+				                        </label>
+				                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+				                            <ul role="none">
+				                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+				                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+				                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+				                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </li>
+				            </ul>
+				        </div>
+				    </div>
+				
+				    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+				    <nav role="navigation" aria-labelledby="nav2">    
+				        <div class="menu" id="nav2">
+				            <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
+				            <span class="nav-title">One More Voice</span>
+				        </div>
+				    </nav>
+				
+				    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+				    <div role="navigation" aria-labelledby="nav3">
+				        <div class="overlay" id="nav3">
+				            <div class="menu">
+				                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+				                <span class="nav-title">One More Voice</span>
+				            </div>
+				            <div class="overlay-content" role="menu">
+				                <ul role="none">
+				                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
+				                    <li role="none"><a role="menuitem" href="texts.html">texts</a></li>
+				                    <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+				                        <ul role="menu" aria-label="Concepts">
+				                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+				                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+				                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+				                        </ul>
+				                    </li>
+				                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+				                        <ul role="menu" aria-label="Miscellaneous">
+				                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+				                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+				                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+				                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+				                        </ul>
+				                    </li>
+				                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+				                </ul>
+				            </div>
+				        </div>
+				    </div>
+				
+				<!-- end of nav -->
 				       
 				<div class="title" id="title-div" role="banner"> 
 				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
@@ -232,8 +243,8 @@
 
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-		    	<div class="credits" id="credits1-div">
-					<h3><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
+		    	<div class="credits" id="credits1-div" role="complementary" aria-labelledby="opening-credits">
+					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<!--<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
@@ -247,8 +258,8 @@
 				</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-		    	<div class="credits" id="credits1-div">
-					<p class="bold site-blue">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</p>
+		    	<div class="credits" id="credits1-div"  role="complementary" aria-labelledby="opening-credits">
+					<h3 id="opening-credits">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text>
@@ -270,12 +281,12 @@
 		</xsl:choose>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<div class="narrow-mobile" id="narrow-mobile-div">
-					<p>Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
+				<div class="narrow-mobile" id="narrow-mobile-div"  role="complementary" aria-labelledby="mobile">
+					<p id="mobile">Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</div>
-				<div class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
-					<div class="TEI front {$front}" style="background:#{$body-color-front};">
-						<div class="ms-container">
+				<div class="manuscript" id="manuscript-div" role="main"><!-- style="background:#{$body-color};" -->
+					<div class="TEI front {$front}" style="background:#{$body-color-front};" role="region" aria-labelledby="front-section">
+						<div class="ms-container" id="front-section">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
 							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -293,8 +304,8 @@
 						</xsl:choose>
 						</div>
 					</div>
-					<div class="TEI" style="background:#{$body-color};">
-						<div class="ms-container">
+					<div class="TEI" style="background:#{$body-color};" role="region" aria-labelledby="main-section">
+						<div class="ms-container" id="main-section">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
 							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -312,8 +323,8 @@
 						</xsl:choose>
 						</div>
 					</div>
-					<div class="TEI back {$back}" style="background:#{$body-color-back};">
-						<div class="ms-container">
+					<div class="TEI back {$back}" style="background:#{$body-color-back};" role="region" aria-labelledby="back-section">
+						<div class="ms-container" id="back-section">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
 							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -334,7 +345,7 @@
 				</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<div class="journal" id="journal-div"><!-- style="background:#{$body-color};" -->
+				<div class="journal" id="journal-div" role="main"><!-- style="background:#{$body-color};" -->
 					<div class="TEI"><!-- style="background:#{$body-color};" -->	
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -357,29 +368,33 @@
 		</xsl:choose>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<div class="credits" id="credits2-div">
-					<hr />
-					<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
-					<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
-					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-					<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
-					<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-					<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-					<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
-					<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+				<div class="credits" id="credits2-div" role="complementary" aria-labelledby="closing-credits">
+					<div id="closing-credits">
+						<hr />
+						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+						<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
+						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+					</div>
 				</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<div class="credits" id="credits2-div">
-					<hr/>
-					<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
-					<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
-					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-					<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
-					<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-					<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-					<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
-					<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+				<div class="credits" id="credits2-div" role="complementary" aria-labelledby="closing-credits">
+					<div id="closing-credits">
+						<hr/>
+						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+						<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
+					</div>
 				</div>
 			</xsl:when>
 		</xsl:choose>
@@ -562,7 +577,7 @@
 	<!-- Alphabetical list of elements. Alphabetized by last element in path *or* first element among options. -->
 
 	<xsl:template match="ab|p">
-		<p class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
 			<xsl:apply-templates/>
 		</p>
 	</xsl:template>
@@ -579,7 +594,7 @@
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text">{<xsl:apply-templates/>}</span>
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="opener/add">
@@ -838,32 +853,32 @@
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<xsl:choose>
 					<xsl:when test="contains(@rend,'double-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
 						<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 					</xsl:when>
 					<xsl:when test="contains(@rend,'triple-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<xsl:choose>
 					<xsl:when test="contains(@rend,'double-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
 						<!--<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'second-line')}"/>-->
 					</xsl:when>
 					<xsl:when test="contains(@rend,'triple-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'third-line')}"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''))}"/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
@@ -960,7 +975,7 @@
 <!-- placeNames -->
 
 	<xsl:template match="placeName">
-		<span class="region"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="placeName"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="geogName">
@@ -979,12 +994,16 @@
 		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="settlement">
-		<span class="region"><xsl:attribute name="title">A settlement, such as a city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+	<xsl:template match="bloc">
+		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually a continent.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="bloc|country">
-		<xsl:apply-templates/>
+	<xsl:template match="settlement">
+		<span class="settlement"><xsl:attribute name="title">A settlement, such as a state, city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="country">
+		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
 <!-- end placeNames -->
@@ -1011,7 +1030,7 @@
 		</span>
 	</xsl:template>
 
-	<xsl:template match="seg[@n='none']">
+	<xsl:template match="seg[@n]">
 		<span class="{concat(name(), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
 	</xsl:template>
 

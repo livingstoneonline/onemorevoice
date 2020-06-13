@@ -73,7 +73,7 @@
 				    
 				    <div class="topnav" role="navigation" aria-labelledby="nav1">
 				        <div id="nav1">
-				            <ul id="menubar1" role="menubar" aria-label="Site Sections">
+				            <ul role="menubar" id="menubar1" aria-label="Site Sections">
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../texts.html">texts</a></li>
 				                <li role="none">
@@ -260,7 +260,7 @@
 				</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-		    	<div class="credits" id="credits1-div"  role="complementary" aria-labelledby="opening-credits">
+		    	<div class="credits" id="credits1-div" role="complementary" aria-labelledby="opening-credits">
 					<h3 id="opening-credits">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
@@ -283,7 +283,7 @@
 		</xsl:choose>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<div class="narrow-mobile" id="narrow-mobile-div"  role="complementary" aria-labelledby="mobile">
+				<div class="narrow-mobile" id="narrow-mobile-div" role="alert" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</div>
 				<div class="manuscript" id="manuscript-div" role="main"><!-- style="background:#{$body-color};" -->

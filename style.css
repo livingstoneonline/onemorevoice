@@ -99,23 +99,33 @@ h1{
 		font-size: 2.3em;
 	}
 }
-h3{
+h2{
 	font-size: .9em;
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	display: none;
 }
 @media only screen and (min-width: 480px){
-	h3{
+	h2{
 		font-size: 1em;
 		display: block;
 	}
 }
 @media only screen and (min-width: 768px){
-	h3{
+	h2{
 		font-size: 1.2em;
 		display: block;
 	}
+}
+h3{
+	color: #2e68ac;
+	font-size: 1em;
+	font-weight: bold;
+}
+h4{
+	font-style: italic;
+	font-size: 1em;
+	font-weight: 300;
 }
 .title,
 body.transcription .title{
@@ -147,6 +157,7 @@ body.transcription .title{
 	.title,
 	body.transcription .title{
 		padding-bottom: 1.5em;
+		display: block !important;
 	}
 }
 .header-title{
@@ -183,6 +194,7 @@ body.transcription .title{
 @media only screen and (min-width: 992px){
 	.main{
 		font-size: 1.2em;
+		display: block !important;
 	}
 }
 .credits{
@@ -496,7 +508,7 @@ background-color: #dbdbdb; [light gray]
 
 /* The following prevents overlay from appearing above 768px */
 @media only screen and (min-width: 992px){
-	#myNav{
+	#nav3{
 		display: none !important;
 	}
 }
@@ -660,7 +672,7 @@ a.anchor{
 	}
 }
 @media only screen and (min-width: 992px){
-	#myNav{
+	#nav3{
 		display: none !important;
 	}
 }
@@ -881,13 +893,13 @@ ul{
 }
 @media only screen and (min-width: 768px){
 	.title .back-button{
-		font-size: 1.1em;
+		font-size: 1.05em;
 		padding-top: .3em;
 	}
 }
 @media only screen and (min-width: 992px){
 	.title .back-button{
-		font-size: 1.2em;
+		font-size: 1.1em;
 		padding-top: .1em;
 	}
 }

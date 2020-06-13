@@ -74,8 +74,8 @@
 				    <div class="topnav" role="navigation" aria-labelledby="nav1">
 				        <div id="nav1">
 				            <ul id="menubar1" role="menubar" aria-label="Site Sections">
-				                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-				                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
+				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../texts.html">texts</a></li>
 				                <li role="none">
 				                    <div class="dropdown" role="menuitem" data-menu-component="">
 				                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
@@ -86,9 +86,9 @@
 				                        </label>
 				                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
 				                            <ul role="none">
-				                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-				                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-				                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+				                                <li role="none"><a role="menuitem" href="../analytical_priorities.html">analytical priorities</a></li>
+				                                <li role="none"><a role="menuitem" href="../project_design.html">project design</a></li>
+				                                <li role="none"><a role="menuitem" href="../coding_guidelines.html">coding guidelines</a></li>
 				                            </ul>
 				                        </div>
 										</input>
@@ -104,8 +104,8 @@
 				                        </label>
 				                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
 				                            <ul role="none">
-				                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-				                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+				                                <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
+				                                <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
 				                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
 				                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
 				                            </ul>
@@ -134,24 +134,24 @@
 				            </div>
 				            <div class="overlay-content" role="menu">
 				                <ul role="none">
-				                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
-				                    <li role="none"><a role="menuitem" href="texts.html">texts</a></li>
+				                    <li role="none"><a role="menuitem" href="../index.html">home</a></li>
+				                    <li role="none"><a role="menuitem" href="../texts.html">texts</a></li>
 				                    <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
 				                        <ul role="menu" aria-label="Concepts">
-				                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-				                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-				                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+				                            <li role="none"><a role="menuitem" href="../analytical_priorities.html">analytical priorities</a></li>
+				                            <li role="none"><a role="menuitem" href="../project_design.html">project design</a></li>
+				                            <li role="none"><a role="menuitem" href="../coding_guidelines.html">coding guidelines</a></li>
 				                        </ul>
 				                    </li>
 				                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
 				                        <ul role="menu" aria-label="Miscellaneous">
-				                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-				                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+				                            <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
+				                            <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
 				                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
 				                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
 				                        </ul>
 				                    </li>
-				                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+				                    <li role="none"><a role="menuitem" href="../site_map.html">site map</a></li>
 				                </ul>
 				            </div>
 				        </div>
@@ -252,7 +252,7 @@
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
 					<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
 					<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="https://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
@@ -273,7 +273,7 @@
 						<xsl:text>): </xsl:text>
 						<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
 					</p>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="https://onemorevoice.org/" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>

@@ -81,6 +81,9 @@ body{
 		/* font-size: .85em; */
 		max-width: 42em;
 	}
+	body.fixed-nav{
+		padding-top: 0 !important;
+	}
 }
 body.essay .main{
 	padding-bottom: 1.5em;
@@ -385,7 +388,7 @@ a.anchor{
 	background-color: #424242;
 }
 .topnav ul li .dropdown .vh{
-	position: absolute !important;
+	position: absolute !important; /* !important in original code */
 	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
 }

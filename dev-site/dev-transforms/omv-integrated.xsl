@@ -48,8 +48,11 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			    <meta name="description" content="Critically-edited primary material for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
     			<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
 			    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+			    <!--<link rel="stylesheet" type="text/css" href="../style.css" />
+			    <script src="../overlay.js"></script>
+			    <script src="../stickynav.js" defer=""></script>-->
+				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
 			    <script src="http://livingstoneonline.github.io/onemorevoice/overlay.js"></script>
 			    <script src="http://livingstoneonline.github.io/onemorevoice/stickynav.js" defer=""></script>
 				<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -72,8 +75,7 @@
 				    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 				    
 				    <div class="topnav" role="navigation" aria-labelledby="nav1">
-				        <div id="nav1">
-				            <ul role="menubar" id="menubar1" aria-label="Site Sections">
+				            <ul role="menubar" id="nav1" aria-label="Site Sections">
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../texts.html">texts</a></li>
 				                <li role="none">
@@ -114,11 +116,11 @@
 				                    </div>
 				                </li>
 				            </ul>
-				        </div>
+				        
 				    </div>
 				
 				    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-				    <nav role="navigation" aria-labelledby="nav2">    
+				    <nav aria-labelledby="nav2">    
 				        <div class="menu" id="nav2">
 				            <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
 				            <span class="nav-title">One More Voice</span>
@@ -159,12 +161,12 @@
 				
 				<!-- end of nav -->
 				       
-				<div class="title" id="title-div" role="banner"> 
+				<header class="title" id="title-div"> 
 				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
 	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h2 class="italic">Critically-edited Primary Text</h2></div>
-	    		</div>
+	    		</header>
 				<xsl:apply-templates select="TEI"/>
 			</body>
 		</html>
@@ -245,22 +247,22 @@
 
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-		    	<div class="credits" id="credits1-div" role="complementary" aria-labelledby="opening-credits">
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<!--<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
 					<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
 					<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
-				</div>
+				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-		    	<div class="credits" id="credits1-div" role="complementary" aria-labelledby="opening-credits">
+		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits">
 					<h3 id="opening-credits">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
@@ -273,21 +275,21 @@
 						<xsl:text>): </xsl:text>
 						<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
 					</p>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html" target="_blank"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
-				</div>
+				</aside>
 			</xsl:when>
 		</xsl:choose>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<div class="narrow-mobile" id="narrow-mobile-div" role="alert" aria-labelledby="mobile">
+				<div class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</div>
-				<div class="manuscript" id="manuscript-div" role="main"><!-- style="background:#{$body-color};" -->
-					<div class="TEI front {$front}" style="background:#{$body-color-front};" role="region" aria-labelledby="front-section">
+				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
+					<section class="TEI front {$front}" style="background:#{$body-color-front};" aria-labelledby="front-section">
 						<div class="ms-container" id="front-section">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -305,8 +307,8 @@
 							</xsl:otherwise>
 						</xsl:choose>
 						</div>
-					</div>
-					<div class="TEI" style="background:#{$body-color};" role="region" aria-labelledby="main-section">
+					</section>
+					<section class="TEI" style="background:#{$body-color};" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -324,8 +326,8 @@
 							</xsl:otherwise>
 						</xsl:choose>
 						</div>
-					</div>
-					<div class="TEI back {$back}" style="background:#{$body-color-back};" role="region" aria-labelledby="back-section">
+					</section>
+					<section class="TEI back {$back}" style="background:#{$body-color-back};" aria-labelledby="back-section">
 						<div class="ms-container" id="back-section">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -343,11 +345,11 @@
 							</xsl:otherwise>
 						</xsl:choose>
 					</div>
-					</div>
-				</div>
+					</section>
+				</main>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<div class="journal" id="journal-div" role="main"><!-- style="background:#{$body-color};" -->
+				<main class="journal" id="journal-div"><!-- style="background:#{$body-color};" -->
 					<div class="TEI"><!-- style="background:#{$body-color};" -->	
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -365,12 +367,12 @@
 							</xsl:otherwise>
 						</xsl:choose>
 					</div>
-				</div>
+				</main>
 			</xsl:when>
 		</xsl:choose>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<div class="credits" id="credits2-div" role="complementary" aria-labelledby="closing-credits">
+				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
@@ -382,10 +384,10 @@
 						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 					</div>
-				</div>
+				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<div class="credits" id="credits2-div" role="complementary" aria-labelledby="closing-credits">
+				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr/>
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
@@ -397,14 +399,14 @@
 						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged, however, to consult the original document if possible.</p>
 					</div>
-				</div>
+				</aside>
 			</xsl:when>
 		</xsl:choose>
 			
-		<div class="footer" id="footer-div" role="contentinfo">
+		<footer class="footer" id="footer-div">
             <hr />
 			<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
-        </div>
+        </footer>
 	</xsl:template>
 
 	<!-- General match -->

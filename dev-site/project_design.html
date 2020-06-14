@@ -33,7 +33,7 @@
     <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
-    <div class="topnav" role="navigation" aria-labelledby="nav1">
+    <nav class="topnav" aria-labelledby="nav1">
         <ul role="menubar" id="nav1" aria-label="Site Sections">
             <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
             <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
@@ -73,10 +73,10 @@
                 </div>
             </li>
         </ul>
-    </div>
+    </nav>
 
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-    <nav aria-labelledby="nav2">    
+    <nav id="sticky" aria-labelledby="nav2">
         <div class="menu" id="nav2">
             <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
@@ -84,7 +84,7 @@
     </nav>
 
     <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-    <div role="navigation" aria-labelledby="nav3">
+    <nav aria-labelledby="nav3">
         <div class="overlay" id="nav3">
             <div class="menu">
                 <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
@@ -113,7 +113,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
 <!-- end of nav -->
 

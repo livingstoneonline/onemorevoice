@@ -34,47 +34,45 @@
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
     <div class="topnav" role="navigation" aria-labelledby="nav1">
-        <div id="nav1">
-            <ul role="menubar" id="menubar1" aria-label="Site Sections">
-                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
-                <li role="none">
-                    <div class="dropdown" role="menuitem" data-menu-component>
-                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
-                        <label class="dropbtn" for="toggle-1" data-opens-menu>
-                            concepts
-                            <span class="vh expanded-text">expanded</span>
-                            <span class="vh collapsed-text">collapsed</span>
-                        </label>
-                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
-                            <ul role="none">
-                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-                            </ul>
-                        </div>
+        <ul role="menubar" id="nav1" aria-label="Site Sections">
+            <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+            <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+            <li role="none">
+                <div class="dropdown" role="menuitem" data-menu-component>
+                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
+                    <label class="dropbtn" for="toggle-1" data-opens-menu>
+                        concepts
+                        <span class="vh expanded-text">expanded</span>
+                        <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+                        <ul role="none">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
                     </div>
-                </li>
-                <li role="none">
-                    <div class="dropdown" role="menuitem" data-menu-component>
-                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
-                        <label class="dropbtn" for="toggle-2" data-opens-menu>
-                            misc
-                            <span class="vh expanded-text">expanded</span>
-                            <span class="vh collapsed-text">collapsed</span>
-                        </label>
-                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
-                            <ul role="none">
-                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-                            </ul>
-                        </div>
+                </div>
+            </li>
+            <li role="none">
+                <div class="dropdown" role="menuitem" data-menu-component>
+                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
+                    <label class="dropbtn" for="toggle-2" data-opens-menu>
+                        misc
+                        <span class="vh expanded-text">expanded</span>
+                        <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+                        <ul role="none">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+                        </ul>
                     </div>
-                </li>
-            </ul>
-        </div>
+                </div>
+            </li>
+        </ul>
     </div>
 
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
@@ -119,15 +117,14 @@
 
 <!-- end of nav -->
 
-    <div class="title" id="title-div" role="banner">
+    <header class="title" id="title-div">
         <img class="image" src="images/liv_000022_0002-0003-combine.jpg" alt="Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “Notebook III. 22 July-7 October 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." title="Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “Notebook III. 22 July-7 October 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
         <h1 class="header-title">One More Voice</h1>
         <hr />
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
-    </div>
-
-    <div class="main" id="main-div" role="main">
-
+    </header>
+    
+    <main class="main" id="main-div">
 		<h3>Coding Guidelines</h3>
 		
 		<p>The <span class="italic">One More Voice</span> project team has developed a set of lightweight <a href="https://tei-c.org/" target="_blank">TEI coding guidelines</a> in keeping with the minimal computing approach of the project as a whole. The guidelines are based on a simplified version of the <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines" target="_blank">coding guidelines</a> previously created for <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a>. The latter were developed over a ten-year period through a series of <span class="italic">Livingstone Online</span> initiatives. For the <span class="italic">One More Voice</span> guidelines, the project team prioritized key structural and content TEI tags, attributes, and values with two primary goals in mind: 1) Providing a basic TEI scaffolding to support further encoding work by the project team or by others; and 2) Enabling edited and encoded TEI items to be transformed (via XSLT) into <a href="texts.html">facsimile HTML versions</a> for online publication.</p>
@@ -206,22 +203,22 @@
 
 		<p><strong>&lt;<span class="site-blue">w</span>&gt;</strong> - words that break over two lines of text or are otherwise somehow broken up - 11.5</p>
     </div>
-    </div>		
+    </main>
 
-	<div class="credits" id="credits-div" role="complementary">
+	<aside class="credits" id="credits-div">
 		<hr />
-        
+
         <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball and Mary Borgo Ton. “Coding Guidelines.” Jared McDonald, ed. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="coding_guidelines.html">https://onemorevoice.org/coding_guidelines.html</a>.</p>
  
 		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
 
 		<p><span class="bold">Header image</span>: Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022" target="_blank">Notebook III. 22 July-7 October 1871</a>,” in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>. The page at right, the first in a series of such pages, presents a list of Swahili words with definitions in English. Notably, the list begins with “Taone or Towny,” the Swahili word for “cholera.” Cholera had been the source of a significant epidemic in Zanzibar and East Africa in 1869 and 1870. The page at left makes clear that Livingstone worked with a variety of informants to gather the words in the list: “Suaheli spoken by the people from Zanzibar = collected in 1870-71.” The inclusion of such raw, field-based data points to the layered authorship of this document; word choices  – for instance, the fact that the list begins with the words for “cholera” – indicate that local, non-European cultural priorities exerted more influence in shaping the list than might be evident at first.</p>
-	</div>
-
-	<div class="footer" id="footer-div" role="contentinfo">
-		<hr />
+	</aside>
+    
+    <footer class="footer" id="footer-div">
+        <hr />
 		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
-	</div>
+    </footer>
 </body>
 
 </html>

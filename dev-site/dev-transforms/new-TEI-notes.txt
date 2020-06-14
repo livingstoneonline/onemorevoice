@@ -1,0 +1,41 @@
+Reminders
+--------------
+1) Please code only formally named regions, so yes: <region>Orange Free State</region>, but no: the coast.
+2) For metamark, wrap whatever is the metamark in <seg type="metamark">. No need to use the <metamark> tag.
+3) If you cannot read a word at all, it is coded like this: <unclear><gap extent="1" unit="words"/></unclear>. If you want to try to guess it, then write your guess and tag it with <unclear>. In other words, don't leave it as <unclear></unclear>.
+4) Do not code for <bibl>.
+5) When a line breaks over two lines, code like this:
+.... <w>Livings<seg type="hyphen">-</seg>
+If you provide the hyphen, then
+<supplied><seg type="hyphen">-</seg></supplied>
+<lb break="no"/>tone</w>
+6) Don't use <p rend="center"> or <p rend="right">. Rather use <p rend="no-indent"> in such cases, then use a combo of <space extent="1" unit="words"/> and <space extent="1" unit="chars"/> to get the item where it needs to go.
+7) Remember to use <p rend="no-indent"> for paragraphs that are not indented.
+8) We are not tagging occupations.
+
+*****************************
+
+New coding stuff
+-------------------
+
+1) For all caps or small caps, write the text as you would normally with all relevant captialization, etc but without full capitalization, then wrap it in <hi rend="caps"> or <hi rend="smallcaps">
+
+2) Print items: do not use <lb/> with <p> or <ab> at all. Just use <p> for empty spaces and things other than <p> and <ab>. Also, no need to use <w> for words split up over two lines in print items. Just silently take out the hyphen and make it one word.
+
+3) For space at the end of a page:
+
+<lb/><space dim="vertical" unit="lines" extent="5"/>
+
+Please follow this order for attributes. Note that extent is the number of estimated empty lines *minus one* (since the <lb/> at the beginning of the line will add an extra empty line). Also, this is the only time you should use dim="vertical". For space in the middle of the page, just use extra <lb/>s.
+
+4) For blank pages, do not use <space dim="vertical"/>. Rather add information to <pb>:
+
+Normal page:
+<pb facs="liv_000017_0033" n="0033"/>
+<lb/>[TEXT GOES HERE]
+
+Blank page:
+<pb facs="liv_000139_0002" n="0002" type="blank" ana="19"/>
+<lb/><!-- blank page HB -->
+
+@ana indicates (approximately) how many blank lines this page contains. Make your estimate based on similar pages with text.

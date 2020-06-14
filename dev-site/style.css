@@ -257,14 +257,14 @@ a.anchor{
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
-nav{
+#sticky{
 	background-color: white;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
 /* applied after scroll height reached */
-.fixed-nav nav{
+.fixed-nav #sticky{
 	position: fixed;
 	top: 0;
 	left: 0;

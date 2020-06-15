@@ -160,7 +160,7 @@ body.transcription .title{
 	.title,
 	body.transcription .title{
 		padding-bottom: 1.5em;
-		display: block !important;
+		display: block !important; /* Tied to overlay */
 	}
 }
 .header-title{
@@ -197,7 +197,7 @@ body.transcription .title{
 @media only screen and (min-width: 992px){
 	.main{
 		font-size: 1.2em;
-		display: block !important;
+		display: block !important; /* Tied to overlay */
 	}
 }
 .credits{
@@ -213,6 +213,7 @@ body.transcription .title{
 @media only screen and (min-width: 992px){
 	.credits{
 		font-size: 1.1em;
+		display: block !important; /* Tied to overlay */
 	}
 }
 .footer{
@@ -815,6 +816,7 @@ ul{
 	.manuscript,
 	.journal{
 		font-size: 1.2em;
+		display: block !important; /* Tied to overlay */
 	}
 }
 .manuscript .TEI{

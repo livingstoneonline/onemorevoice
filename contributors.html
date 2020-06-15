@@ -33,52 +33,50 @@
     <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
-    <div class="topnav" role="navigation" aria-labelledby="nav1">
-        <div id="nav1">
-            <ul role="menubar" id="menubar1" aria-label="Site Sections">
-                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
-                <li role="none">
-                    <div class="dropdown" role="menuitem" data-menu-component>
-                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
-                        <label class="dropbtn" for="toggle-1" data-opens-menu>
-                            concepts
-                            <span class="vh expanded-text">expanded</span>
-                            <span class="vh collapsed-text">collapsed</span>
-                        </label>
-                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
-                            <ul role="none">
-                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-                            </ul>
-                        </div>
+    <nav class="topnav" aria-labelledby="nav1">
+        <ul role="menubar" id="nav1" aria-label="Site Sections">
+            <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+            <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+            <li role="none">
+                <div class="dropdown" role="menuitem" data-menu-component>
+                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
+                    <label class="dropbtn" for="toggle-1" data-opens-menu>
+                        concepts
+                        <span class="vh expanded-text">expanded</span>
+                        <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+                        <ul role="none">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
                     </div>
-                </li>
-                <li role="none">
-                    <div class="dropdown" role="menuitem" data-menu-component>
-                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
-                        <label class="dropbtn" for="toggle-2" data-opens-menu>
-                            misc
-                            <span class="vh expanded-text">expanded</span>
-                            <span class="vh collapsed-text">collapsed</span>
-                        </label>
-                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
-                            <ul role="none">
-                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-                            </ul>
-                        </div>
+                </div>
+            </li>
+            <li role="none">
+                <div class="dropdown" role="menuitem" data-menu-component>
+                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
+                    <label class="dropbtn" for="toggle-2" data-opens-menu>
+                        misc
+                        <span class="vh expanded-text">expanded</span>
+                        <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+                        <ul role="none">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+                        </ul>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-    <nav role="navigation" aria-labelledby="nav2">    
+    <nav id="sticky" aria-labelledby="nav2">
         <div class="menu" id="nav2">
             <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
@@ -86,7 +84,7 @@
     </nav>
 
     <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-    <div role="navigation" aria-labelledby="nav3">
+    <nav aria-labelledby="nav3">
         <div class="overlay" id="nav3">
             <div class="menu">
                 <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
@@ -115,19 +113,18 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
 <!-- end of nav -->
 
-    <div class="title" id="title-div" role="banner">
+    <header class="title" id="title-div">
 		<img class="image" src="images/liv_000096_0004_ratio_by_0940-detail.jpg" alt="Detail of a processed spectral image of a page from David Livingstone, [John Kirk], and [Two Unknown Writers], “Fragment of 1871 Field Diary. 11 August 1871-9 September 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096. Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." title="Detail of a processed spectral image of a page from David Livingstone, [John Kirk], and [Two Unknown Writers], “Fragment of 1871 Field Diary. 11 August 1871-9 September 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096. Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
         <h1 class="header-title">One More Voice</h1>
         <hr />
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
-    </div>
-
-    <div class="main" id="main-div" role="main">
-
+    </header>
+    
+    <main class="main" id="main-div">
 		<h3>Contributors</h3>
 		
 		<p><strong>Heather F. Ball</strong> (St. John's University, USA) – Encoding lead, project scholar</p>
@@ -149,9 +146,9 @@
 		<p><strong>Mary Borgo Ton</strong> (University of Illinois at Urbana-Champaign, USA) – Project scholar, encoding contributor</p>
 
 		<p><strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln, USA) – Development lead, lead project scholar</p>
-    </div>
+    </main>
 
-	<div class="credits" id="credits-div" role="complementary">
+	<aside class="credits" id="credits-div">
 		<hr />
         
         <p><span class="bold">Cite page (MLA):</span> “Contributors.” <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="contributors.html">https://onemorevoice.org/contributors.html</a>.</p>
@@ -159,12 +156,12 @@
 		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
         
         <p><span class="bold">Header image</span>: Detail of a processed spectral image of a page from David Livingstone, [John Kirk], and [Two Unknown Writers], “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096" target="_blank">Fragment of 1871 Field Diary. 11 August 1871-9 September 1871</a>,” in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>. In addition to writing from Livingstone (throughout the page, rendered in various shades of blue) and the British Consul at Zanzibar John Kirk (at center of the page, rendered in black), this page contains an additional five lines of text (rendered in dark gray). Three of these are in Arabic and two in Nagari, the conventional script for Sanskrit as well as Hindi and Marathi. Further discussion of this page can be found <a href="https://livingstoneonline.org/spectral-imaging/livingstones-manuscript-structure#link9" target="_blank">here</a>. This page offers a good example of how a manuscript produced within the context of the British Empire and normally attributed to a single author (in this case, David Livingstone) can in fact contain unattributed writing from others, including non-European individuals.</p>
-	</div>
-
-    <div class="footer" id="footer-div" role="contentinfo">
+	</aside>
+    
+    <footer class="footer" id="footer-div">
         <hr />
 		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
-    </div>
+    </footer>
 </body>
 
 </html>

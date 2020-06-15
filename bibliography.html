@@ -33,52 +33,50 @@
     <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
-    <div class="topnav" role="navigation" aria-labelledby="nav1">
-        <div id="nav1">
-            <ul role="menubar" id="menubar1" aria-label="Site Sections">
-                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-                <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
-                <li role="none">
-                    <div class="dropdown" role="menuitem" data-menu-component>
-                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
-                        <label class="dropbtn" for="toggle-1" data-opens-menu>
-                            concepts
-                            <span class="vh expanded-text">expanded</span>
-                            <span class="vh collapsed-text">collapsed</span>
-                        </label>
-                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
-                            <ul role="none">
-                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li role="none">
-                    <div class="dropdown" role="menuitem" data-menu-component>
-                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
-                        <label class="dropbtn" for="toggle-2" data-opens-menu>
-                            misc
-                            <span class="vh expanded-text">expanded</span>
-                            <span class="vh collapsed-text">collapsed</span>
-                        </label>
-                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
-                            <ul role="none">
-                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
-                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+    </nav>
 
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-    <nav role="navigation" aria-labelledby="nav2">    
+    <nav id="sticky" aria-labelledby="nav2">
         <div class="menu" id="nav2">
             <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
@@ -86,7 +84,7 @@
     </nav>
 
     <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-    <div role="navigation" aria-labelledby="nav3">
+    <nav aria-labelledby="nav3">
         <div class="overlay" id="nav3">
             <div class="menu">
                 <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
@@ -115,22 +113,21 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
 <!-- end of nav -->
 
-    <div class="title" id="title-div" role="banner">
+    <header class="title" id="title-div">
        <img class="image" src="images/liv_003181_0002-crop.jpg" alt="Detail from David Livingstone et al., “Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile (1863), [1869-1873],” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/). As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." title="Detail from David Livingstone et al., “Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile (1863), [1869-1873],” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/). As relevant, copyright Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
         <h1 class="header-title">One More Voice</h1>
         <hr />
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
-    </div>
-
-    <div class="main" id="main-div" role="main">
-
+    </header>
+    
+    <main class="main" id="main-div">
 		<h3>Bibliography<a class="anchor" id="top"></a></h3>
 		
-	<div role="region" aria-labelledby="menu-sections">
+	<section aria-labelledby="menu-sections">
 	    <ol style="padding: 1em 0 1.5em 1.2em; margin:0;" id="menu-sections">
 	    	<li style="list-style-type:none; display:inline-block; margin-left: -1.2em;">[Menu: Sections]<a class="anchor" id="list"></a></li>
 			<li><a href="#overview">Overview</a></li>
@@ -138,9 +135,9 @@
 			<li><a href="#contextual-sources">Contextual Sources</a></li>
 			<li><a href="#critical-sources">Critical Sources</a></li>
 		</ol>
-	</div>
+	</section>
 
-	<div role="region" aria-labelledby="summary">
+	<section aria-labelledby="summary">
 		<h4 id="summary"><a class="anchor" id="overview"></a>
 		<span class="italic">Overview</span> &nbsp;<a href="#list" class="return-top">top</a></h4>
 		
@@ -158,11 +155,11 @@
 		<p><a href="#contextual-sources">Contextual Sources</a></li> also mainly date to the nineteenth-century and include print and manuscript sources. These sources are presented in a separate section, however, because the sources provide useful contemporary information about the figures taken up by the <span class="italic">One More Voice</span> project. Each source includes a brief gloss (in italics) that indicates its relevant subject matter.</p>
 		
 		<p><a href="#critical-sources">Critical Sources</a> discuss relevant historical figures individually and in general and/or take up issues related to the study of relevant materials. The boundary between primary and critical sources can be gray as, for instance, some critical sources include critically-edited primary materials.</p>
-	</div>
+	</section>
 
 		<p>&nbsp;</p>
 
-	<div role="region" aria-labelledby="primary">
+	<section aria-labelledby="primary">
 		<h4 id="primary"><a class="anchor" id="primary-sources"></a>
 		<span class="italic">Primary Sources</span> &nbsp;<a href="#list" class="return-top">top</a></h4>
 
@@ -269,11 +266,11 @@
 		<p>Waller, Horace; Lindesay Brine; James Chumah. 1874. “To the Editor of the Times.” <span class="italic">The Times</span>, April 10, 1874. Also see the <a href="transcriptions/liv_020012_TEI.html">critical edition</a> published by <span class="italic">One More Voice</span></p>
 
 		<p>Weah. 1876. “A King Defending Himself from a Charge.” <span class="italic">The Leeds Mercury</span>, March 8, 1876.</p>
-	</div>
+	</section>
 
 		<p>&nbsp;</p>
 
-	<div role="region" aria-labelledby="contextual">
+	<section aria-labelledby="contextual">
 		<h4 id="contextual"><a class="anchor" id="contextual-sources"></a>
 		<span class="italic">Contextual Sources</span> &nbsp;<a href="#list" class="return-top">top</a></h4>
 
@@ -318,11 +315,11 @@
 		<p>Rampley, William Joseph Wright. 1930. <span class="italic">Matthew Wellington: Sole Surviving Link With Dr. Livingstone</span>. London: Society for Promoting Christian Knowledge. <span class="italic">Contextual source: Matthew Wellington.</span></p>
 
 		<p>Stone, Benjamin. 1906. “The Katikiro of Uganda and His Secretary.” In <span class="italic">Sir Benjamin Stone’s Pictures: Records of National Life and History</span>, 2:74. London; Paris; New York; Melbourne: Cassell and Company, Limited. <span class="italic">Contextual source: Ham Mukasa.</span></p>
-	</div>
+	</section>
 
 		<p>&nbsp;</p>
 
-	<div role="region" aria-labelledby="critical">
+	<section aria-labelledby="critical">
 		<h4 id="critical"><a class="anchor" id="critical-sources"></a>
 		<span class="italic">Critical Sources</span> &nbsp;<a href="#list" class="return-top">top</a></h4>
 
@@ -431,10 +428,10 @@
 		<p>Wisnicki, Adrian S. 2019. <span class="italic">Fieldwork of Empire, 1840–1900: Intercultural Dynamics in the Production of British Expeditionary Literature.</span> New York; Abingdon, Oxon: Routledge. <a href="https://awisnicki.github.io/fieldwork_of_empire/">Associated website.</a></p>
 
 		<p>Wisnicki, Adrian S., and Megan Ward, eds. 2017. <a href="http://livingstoneonline.org/">Livingstone Online</a>. New version, second edition. College Park, MD: University of Maryland Libraries.</p>
-	</div>
-	</div>
+	</section>
+    </main>
 
-	<div class="credits" id="credits-div" role="complementary">		
+	<aside class="credits" id="credits-div">
 		<hr />
         
         <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S. “Bibliography.” Heather F. Ball, Jared McDonald, and Mary Borgo Ton, eds. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="bibliography.html">https://onemorevoice.org/bibliography.html</a>.</p>
@@ -442,12 +439,12 @@
 		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
 		
         <p><span class="bold">Header image</span>: Detail from David Livingstone et al., “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181" target="_blank">Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile (1863), [1869-1873]</a>,” in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/" target="_blank">Creative Commons Share-alike 2.5 UK: Scotland</a>.  As relevant, Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>. This map includes geographical data from Said Bin Habib (also called Said Bin Habeeb), a well-known Arab trader in East Africa. The data appears in the lower left-hand part of the image and is one of the few bits of text that is right-side up. Somewhat exceptionally, Livingstone actually cites the source on the document itself ("Note Bin Habib"). The full annotated map can be found <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181" target="_blank">here</a>; another document associated with Bin Habib is published by <span class="italic">One More Voice</span> and can be found <a href="transcriptions/liv_020001_TEI.html">here</a>.</p>
-	</div>
-
-	<div class="footer" id="footer-div" role="contentinfo">
+	</aside>
+    
+    <footer class="footer" id="footer-div">
 		<hr />
 		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
-	</div>
+    </footer>
 </body>
 
 </html>

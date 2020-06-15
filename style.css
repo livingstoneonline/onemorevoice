@@ -375,7 +375,8 @@ a.anchor{
 	display: inline-block;
 	position: relative;
 }
-.topnav ul li:hover{
+.topnav ul li:hover,
+.topnav ul li:focus-within{
 	color: whitesmoke;
 	background-color: #424242;
 }
@@ -383,7 +384,8 @@ a.anchor{
 	color: black;
 	padding: 16px 12px;
 }
-.topnav ul li a:hover{
+.topnav ul li a:hover,
+.topnav ul li a:focus{
 	color: whitesmoke;
 	background-color: #424242;
 }
@@ -452,9 +454,12 @@ input:checked + label::after{
 	display: block;
 }
 .topnav ul li .dropdown .dropdown-content ul li:hover,
-.topnav ul li .dropdown .dropdown-content ul li:hover a{
+.topnav ul li .dropdown .dropdown-content ul li:hover a,
+.topnav ul li .dropdown .dropdown-content ul li:focus,
+.topnav ul li .dropdown .dropdown-content ul li:focus-within a{
 	color: whitesmoke;
 	background-color: #858585; /*dark gray*/
+	outline: none;
 }
 .topnav ul li .dropdown .dropdown-content ul li a,
 .topnav ul li .dropdown .dropdown-content ul li a:visited{
@@ -465,23 +470,6 @@ input:checked + label::after{
 .topnav ul li .dropdown .dropdown-content ul li a:hover{
 	color: whitesmoke;
 }
-/*Focus elements*/
-.topnav ul li:focus-within a,
-.topnav ul li:focus-within .dropdown,
-.topnav ul li:focus-within .dropdown .dropdown-content ul{
-	outline: 2px solid #2e68ac;
-}
-.topnav ul li:focus-within .dropdown .dropdown-content ul li a{
-	outline: none;
-}
-.topnav ul li .dropdown .dropdown-content ul li:focus-within a{
-	color: whitesmoke;
-	background-color: #858585;
-}
-/* The following may be worth reviewing */
-/*[type="checkbox"]:focus + [data-opens-menu], 
-[role="menu"] a:focus {}*/
-
 /* HTML hierarchy for topnav and color values */
 /*
 .topnav

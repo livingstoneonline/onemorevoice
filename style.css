@@ -81,6 +81,9 @@ body{
 		/* font-size: .85em; */
 		max-width: 42em;
 	}
+	body.fixed-nav{
+		padding-top: 0 !important;
+	}
 }
 body.essay .main{
 	padding-bottom: 1.5em;
@@ -257,14 +260,14 @@ a.anchor{
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
-nav{
+#sticky{
 	background-color: white;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
 /* applied after scroll height reached */
-.fixed-nav nav{
+.fixed-nav #sticky{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -385,7 +388,7 @@ nav{
 	background-color: #424242;
 }
 .topnav ul li .dropdown .vh{
-	position: absolute !important;
+	position: absolute !important; /* !important in original code */
 	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
 }

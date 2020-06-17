@@ -86,7 +86,7 @@ body{
 	}
 }
 body.essay .main{
-	padding-bottom: 1.5em;
+	padding-bottom: 1em;
 }
 h1{
 	font-size: 2em;
@@ -199,6 +199,26 @@ body.transcription .title{
 		font-size: 1.2em;
 		display: block !important; /* Tied to overlay */
 	}
+}
+/* for essay title with subtitle */
+.two-part{
+	margin-bottom: .5em;
+}
+/* for essay subtitle */
+.subtitle{
+	font-size: .9em;
+	margin-top: .5em;
+}
+.page-menu{
+	font-size: .9em; 
+}
+/* adds padding for h4 labelled subsections */
+.subsection{
+	padding-top: 2em;
+}
+.footnote{
+	font-size: .9em;
+	padding-top: 1.5em;
 }
 .credits{
 	font-size: 1.2em;
@@ -722,6 +742,9 @@ hr{
 
 /* 1.6. Formatting */
 
+.black{
+	color: black;
+}
 .bold{
 	font-weight: bold;
 }

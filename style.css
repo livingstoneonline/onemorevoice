@@ -130,6 +130,10 @@ h4{
 	font-size: 1em;
 	font-weight: 300;
 }
+.return-top{
+	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: .9em;
+}
 .title,
 body.transcription .title{
 	font-weight: bold;
@@ -201,21 +205,35 @@ body.transcription .title{
 	}
 }
 /* for essay title with subtitle */
-.two-part{
+.title-with-subtitle{
 	margin-bottom: .5em;
 }
 /* for essay subtitle */
 .subtitle{
 	font-size: .9em;
 	margin-top: .5em;
+	margin-bottom: .5em;
 }
-.page-menu{
-	font-size: .9em; 
+.byline{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-size: .85em;
+	margin-top: .5em;
 }
-/* adds padding for h4 labelled subsections */
+/* toc and toc-title used for page menus */
+.toc{
+	font-size: .9em;
+	padding: 1.5em 0 0 0;
+}
+.toc-title{
+	list-style-type:none;
+	margin-left: -1.2em;
+	display:inline-block;
+}
+/* adds padding for h4 labelled subsections in essays */
 .subsection{
 	padding-top: 2em;
 }
+/* assumes this goes at end of essay */
 .footnote{
 	font-size: .9em;
 	padding-top: 1.5em;
@@ -272,11 +290,6 @@ a.anchor{
 	a.anchor{
 		top: -60px;
 	}
-}
-/* The following item is used on the bibliography.html page. */
-.return-top{
-	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: .9em;
 }
 
 
@@ -767,7 +780,6 @@ hr{
 .site-red{
 	color: #e4524b;
 }
-.small-caps,
 .smallcaps{
 	font-variant: small-caps;
 }
@@ -780,31 +792,26 @@ hr{
 
 ol,
 ul{
-	padding-left: 1em;
-	padding-bottom: 1em;
+	padding: 0 0 0 1.2em;
+	margin:0;
 }
-@media only screen and (min-width: 768px){
-	ol,
-	ul{
-		padding-left: 1.5em;
-	}
-}
+
 /* The following three items are used on the text.html page. */
-.p-list{
+.auth-list{
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
 .bio{
 	padding-bottom: 1em;
 }
-.ul-list{
+.contrib-form{
 	padding-left: 1em;
 	padding-bottom: 0em;
 	margin-bottom: 1em;
 	margin-top: 0em;
 }
 @media only screen and (min-width: 768px){
-	.ul-list{
+	.contrib-form{
 		padding-left: 1.5em;
 	}
 }

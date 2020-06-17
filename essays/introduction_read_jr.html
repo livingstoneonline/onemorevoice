@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html>
+
+<head>
+    <title>Introduction to James Read, Jr. | One More Voice</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Introduction to James Read, Jr. from One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons,John Read,missionary,minister,evangelical,Cape Colony,Kat River Settlement,Cape of Good Hope,London Missionary Society,Bethelsdorp,Khoe,Hottentot,San,Bushmen,John Philip,Select Committee on Aborigines,Philipton,J.J. Freeman,Eighth Frontier War" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../overlay.js"></script>
+    <script src="../stickynav.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+</head>
+
+<body class="essay">
+
+<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+<!-- start of nav -->
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+    
+    <nav class="topnav" aria-labelledby="nav1">
+        <ul role="menubar" id="nav1" aria-label="Site Sections">
+            <li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
+            <li role="none"><a role="menuitem" aria-haspopup="false" href="../texts.html">texts</a></li>
+            <li role="none">
+                <div class="dropdown" role="menuitem" data-menu-component>
+                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
+                    <label class="dropbtn" for="toggle-1" data-opens-menu>
+                        concepts
+                        <span class="vh expanded-text">expanded</span>
+                        <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+                        <ul role="none">
+                            <li role="none"><a role="menuitem" href="../analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="../project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="../coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li role="none">
+                <div class="dropdown" role="menuitem" data-menu-component>
+                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
+                    <label class="dropbtn" for="toggle-2" data-opens-menu>
+                        misc
+                        <span class="vh expanded-text">expanded</span>
+                        <span class="vh collapsed-text">collapsed</span>
+                    </label>
+                    <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+                        <ul role="none">
+                            <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="sticky" aria-labelledby="nav2">    
+        <div class="menu" id="nav2">
+            <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
+            <span class="nav-title">One More Voice</span>
+        </div>
+    </nav>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <nav aria-labelledby="nav3">
+        <div class="overlay" id="nav3">
+            <div class="menu">
+                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+            <div class="overlay-content" role="menu">
+                <ul role="none">
+                    <li role="none"><a role="menuitem" href="../index.html">home</a></li>
+                    <li role="none"><a role="menuitem" href="../texts.html">texts</a></li>
+                    <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Concepts">
+                            <li role="none"><a role="menuitem" href="../analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="../project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="../coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Miscellaneous">
+                            <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                        </ul>
+                    </li>
+                    <li role="none"><a role="menuitem" href="../site_map.html">site map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- end of nav -->
+
+    <header class="title" id="title-div">
+        <img class="image" src="../essay-images/Read-Jr-et-al.jpg" alt="" title="" />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
+    </header>
+    
+    <main class="main" id="main-div">
+        <h3 class="two-part">Introduction to James Read, Jr. (c.1811-1894)<a class="anchor" id="top"></a></h3>
+        <h4 class="subtitle">with a Discussion of His Letter to J.J. Freeman, 23 May 1850</h4>
+        <p>By Jared McDonald (University of the Free State)</p>
+
+        <section class="page-menu" aria-labelledby="menu">
+            <ol style="padding: 1em 0 0 1.2em; margin:0;" id="menu">
+                <li style="list-style-type:none; display:inline-block; margin-left: -1.2em;">[Menu: Essay Sections]<a class="anchor" id="list"></a></li>
+                <li><a href="#jrj01">Overview</a></li>
+                <li><a href="#jrj02">James Read, Jr.’s background</a>
+                    <ol style="padding-bottom: 0;">
+                        <li><a href="#jrj02.1">The son of an English father and a Khoe mother</a></li>
+                        <li><a href="#jrj02.2">Following in his father’s footsteps</a></li>
+                    </ol>
+                </li>
+                <li><a href="#jrj03">The historical context for the 1850 letter to J.J. Freeman</a>
+                    <ol style="padding-bottom: 0;">
+                        <li><a href="#jrj03.1">Read, Jr. relocates to the Kat River Settlement</a></li>
+                        <li><a href="#jrj03.2">Read, Jr. and Reverend J.J. Freeman</a></li>
+                        <li><a href="#jrj03.3">Mid-century marks significant change</a></li>
+                        <li><a href="#jrj03.4">Postscript</a></li>
+                    </ol>
+                </li>
+                <li><a href="#jrj04">Works Cited/Further Reading</a></li>
+            </ol>
+        </section>
+
+        <br />
+        <hr />
+
+    <summary aria-labelledby="summary">
+        <h4 id="summary"><a class="anchor" id="jrj01"></a>
+        Overview &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>James Read, Jr. (c.1811-1894) was a missionary, minister, and evangelical-humanitarian campaigner in the Cape Colony. Though half-English, he strongly identified with his mother’s Khoe lineage. Being mixed race in the racially charged atmosphere of the nineteenth-century Cape Colony became a defining marker of Read, Jr.’s political views and missionary activism. He played a prominent role in the establishment of schooling in the Kat River Settlement. The provision of such schooling for the Khoe inhabitants (adults and children alike) was fundamental to the evangelical-humanitarian impetus of the Settlement’s founders and supporters, who envisioned the creation of a settled, independent, respectable Christian peasantry in the territory. Like his father James Read, Sr., Read, Jr. committed himself to improving the political and social circumstances of his Khoe compatriots.</p>
+
+        <h3 class="subsection black"><a class="anchor" id="jrj02"></a>
+        James Read, Jr.’s background</h3>
+
+        <h4><a class="anchor" id="jrj02.1"></a>
+        The son of an English father and a Khoe mother &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>Read, Jr. was born at the Cape of Good Hope in 1811, the eldest son of James Read, Sr. and Eilzabeth Valentyn, a Khoe woman, whom Read, Sr. had met through his missionary work. The Khoe (also Khoekhoe or Khoena), a pastoralist people, were the indigenous inhabitants of the south-western Cape. James Read, Sr., from Essex in the UK, had arrived at the Cape in 1799 as a missionary in the service of the London Missionary Society (LMS). Read, Sr. assisted the Dutch missionary Johannes van der Kemp in setting up the first LMS mission station at the Cape, at Bethelsdorp. The mission was established at a time when the indigenous inhabitants of the Cape, namely the Khoe (“Hottentots,” in the contemporaneous terminology) and San (“Bushmen”), were reeling from the effects of land dispossession and forced labour brought about by the advance and entrenchment of European settler colonialism. Along with economic deprivation, Khoe and San social structures had been ruptured by the time of Read, Sr.’s arrival at the Cape. During the first half of the nineteenth century, the LMS was a vocal and influential ally of the remnants of Khoe and San communities, and actively campaigned for the improvement of their economic and social circumstances (Ross 2017). James Read, Sr. thus became a prominent figure in the evangelical-humanitarian movement of this time.</p>
+
+        <h4 class="subsection"><a class="anchor" id="jrj02.2"></a>
+        Following in his father’s footsteps &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>As the mixed-race son of a British father and a Khoe mother, James Read, Jr. occupied a liminal space in the Cape of Good Hope of the early nineteenth century. His upbringing at Bethelsdorp provided him a decent schooling. As a literate Christian, Read, Jr. personified respectability. Yet, his mother’s background was a constant reminder of the fate of the Khoe from which he was descended. His father’s evangelical-humanitarian activism, in turn, exposed him to political contestations around Khoe civil rights that reached their zenith in the 1820s and 1830s, when Read, Jr. was still a young man (Levine 2011). Read, Jr. took up many of the causes that his father championed and became a notable evangelist and activist in his own right. For example, in 1836 he travelled along with his father and John Philip (the superintendent of the LMS in southern Africa at the time) to the UK where the three testified before the Houses of Commons’ Select Committee on Aborigines. The Select Committee on Aborigines had been set up at the behest of the liberal MP, Thomas Fowell Buxton, to investigate the effects and impact of British settlement on indigenous populations across the nascent empire. The Reads’ long history of residence at the Cape along with their close connections to the Cape’s indigenous peoples meant that their views and experiences were of particular relevance to the Committee’s investigations (Elbourne 2002).</p>
+
+        <h3 class="subsection black"><a class="anchor" id="jrj03"></a>
+        The historical context for the 1850 letter to J.J. Freeman &nbsp;</h3>
+
+        <h4><a class="anchor" id="jrj03.1"></a>
+        Read, Jr. relocates to the Kat River Settlement &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>Prior to his visit to the UK, Read, Jr. had played a prominent role in the establishment of schooling in the Kat River Settlement. Founded in 1829 as a buffer zone on the eastern frontier between the Cape Colony and the amaXhosa chieftaincies, the Kat River Settlement was set aside for Khoe habitation. Many of the early Khoe settlers who relocated to the Settlement were associated with the LMS. The newcomers set about building houses and churches, and engaged in agricultural production. Read, Jr., along with his half-Khoe brother, Joseph Read, supervised the school system that had sprung up in the Settlement, with many of the teachers having been trained at Bethelsdorp. The prominence of the LMS in the history of the Kat River Settlement was reflected in the names of the villages that were established in the territory. Notable figures in the evangelical-humanitarian movement at the Cape and in Britain were honoured with villages named Wilberforce, Buxton, Vanderkempton, Readsdale, and Philipton (Keegan 2016). It was at Philipton in 1850 that Read, Jr. wrote the letter to Reverend J.J. Freeman that is published by the <span class="italic">One More Voice</span> project.</p>
+
+        <h4 class="subsection"><a class="anchor" id="jrj03.2"></a>
+        Read, Jr. and Reverend J.J. Freeman &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>Reverend J.J. Freeman was an established figure within the London Missionary Society, having been involved in mission for many years, including in Madagascar and at the Cape. In 1849, Freeman had traveled&nbsp; to the Cape, his second time to the region, at the behest of the LMS’s Directors in order to undertake an inspection of the Society’s local missions. The LMS was experiencing pecuniary challenges, and Freeman was tasked with investigating possible solutions in southern Africa and, in particular, in investigating whether missions and missionaries could become more self-sufficient financially. Freeman aligned himself with the political approach to mission of both Philip and the Reads (father and son), whom he met and travelled with during his tour of inspection. Along with Philip, the Reads, and other prominent evangelical-humanitarians at the Cape, Freeman was critical of the then Governor of the Colony, Sir Harry Smith, but also recorded his admiration for the residents of Bethelsdorp and the Kat River Settlement. Freeman advocated for the recognition and entrenchment of indigenous people’s rights to freedom and land, and proved to be a valuable ally to the Reads and Philip at the time, even though his influence on colonial affairs was limited (Keegan 2016).</p>
+
+        <h4 class="subsection"><a class="anchor" id="jrj03.3"></a>
+        Mid-century marks significant change &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>In 1850, there were growing political tensions at the Cape over the prospect of the Colony having its own representative assembly and in turn, devolved powers from London. Some advocates of the assembly saw it was an opportunity to forefront white settler interests and distance the Cape legislature from British oversight and interference. However, there were also growing concerns among Khoe congregants and mission residents across the Cape Colony, as well as among inhabitants of the Kat River Settlement, that a legislative assembly could be swayed by white settler interests and that some of the civil rights they had acquired would be curtailed and even overturned (Ross 2014). Philip, the Reads, and other like-minded missionaries shared these concerns and also contributed to contemporaneous contestations over who would be eligible to vote in the inevitable election of assembly members.</p>
+
+        <p>It was anticipated that a qualified franchise would be introduced, but the particular qualifications were yet to be determined. One qualification that was considered likely was the ownership of property, though the threshold value was to be debated. Remarkably, for the time and place, the franchise was to be colour blind, meaning that some Khoe property owners would qualify (Elbourne 2002).</p>
+
+        <p>In May 1850, Read, Jr. wrote to Freeman within this context to express his concern that hundreds of residents of the Kat River Settlement who could possibly qualify to vote for the new representative assembly based on property ownership, would not do so due to the slow process of demarcating erfs, i.e., plots of land about half an acre in size, and issuing title deeds. Read, Jr. was opposed to the representative assembly. He believed it would result in greater suffering for Khoe. However, given the likelihood of the representative assembly being established, he wanted as many Khoe as possible to qualify for the franchise. Read, Jr.’s letter,&nbsp; which the <span class="italic">One More Voice </span>project publishes for the first time, highlights the political contestations that were prevalent in the Cape at the time, which were closely tied to issues of identity, belonging and citizenship. The letter also points to the author’s personal investment in the Kat River Settlement and the ongoing plight of the Khoe.</p>
+
+        <h4 class="subsection"><a class="anchor" id="jrj03.4"></a>
+        Postscript &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>The Cape’s representative assembly was eventually established in 1853, by which time the Kat River Settlement and the eastern frontier had been shaken by the outbreak and aftermath of the Eighth Frontier War in 1851.</p>
+
+    <section aria-labelledby="works-cited">
+        <h4 class="subsection" id="works-cited"><a class="anchor" id="jrj04"></a>
+        Works Cited/Further Reading* &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+        <p>Elbourne, Elizabeth. 2002. <span class="italic">Blood Ground: Colonialism, Missions and the Contest for Christianity in the Cape Colony and Britain, 1799-1853</span>. Montreal: McGill-Queen’s University Press.</p>
+
+        <p>Keegan, Timothy. 2016. <span class="italic">Dr. Philip’s Empire: One Man’s Struggle for Justice in Nineteenth Century South Africa</span>. Cape Town: Zebra Press.</p>
+
+        <p>Levine, Roger S. 2011. <span class="italic">A Living Man from Africa: Jan Tzatoe, Xhosa Chief and Missionary, and the Making of Nineteenth Century South Africa</span>. New Haven, CT; London: Yale University Press.</p>
+
+        <p>Ross, Robert. 2014. <span class="italic">The Borders of Race in Colonial South Africa: The Kat River Settlement, 1829-1856</span>. New York: Cambridge University Press.</p>
+
+        <p>———. 2018. <span class="italic">These Oppressions Won’t Cease: An Anthology of the Political Thought of the Cape Khoesan, 1777-1879</span>. Cincinnati, OH: University of Cincinnati Press.</p>
+
+        <p class="footnote">* Users are also urged to consult Gale’s <a href="https://www.gale.com/intl/c/19th-century-uk-periodicals-part-ii">Nineteenth Century UK Periodicals Part II: Empire</a> database, which contains an assortment of pieces from missionary periodical literature that help illuminate Read, Jr.’s career. These pieces include several authored worka by Read, Jr., some of which may eventually be publised in critical edition form by <span class="italic">One More Voice</span>.</p>
+    
+    </section>
+
+    </main>
+
+	<aside class="credits" id="credits-div">
+		<hr />
+
+        <p><span class="bold">Cite page (MLA):</span> McDonald, Jared. "Introduction to James Read, Jr., with a Discussion of His Letter to J.J. Freeman,  23 May 1850." Adrian S. Wisnicki, ed. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="introduction_read_jr.html">https://onemorevoice.org/essays/introduction_read_jr.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+    
+        <p><span class="bold">Header image</span>: </p>
+	</aside>
+    
+    <footer class="footer" id="footer-div">
+        <hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
+    </footer>
+</body>
+
+</html>

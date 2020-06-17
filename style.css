@@ -215,9 +215,15 @@ body.transcription .title{
 	margin-bottom: .5em;
 }
 .byline{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	font-size: .85em;
-	margin-top: .5em;
+	font-size: .8em;
+	padding: 0;
+	margin: 0;
+}
+.byline-divider{
+    width: 10em;
+    border-top: 1px dashed gray;
+	background: white;
+	display: inline-block;
 }
 /* toc and toc-title used for page menus */
 .toc{
@@ -546,7 +552,7 @@ body.fixed-nav .overlay .menu .close-title{
 }
 /* Height & width depends on how you want to reveal the overlay (see overlay.js) */
 .overlay{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: whitesmoke;
 	background-color: #424242; /* Black fallback color */
 	opacity: 1;

@@ -286,7 +286,7 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<div class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
-					<p id="mobile">Please turn your mobile device to <span class="site-red">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
+					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="site-red">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</div>
 				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI front {$front}" style="background:#{$body-color-front};" aria-labelledby="front-section">

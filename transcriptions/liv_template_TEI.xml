@@ -2,12 +2,12 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/onemorevoice/dev-transforms/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id=""><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title></title><!-- Title without date -->
+                <title></title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
                 <title type="alternative"></title><!-- Title, date -->
                 <author></author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing) -->
                 <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing) -->
@@ -140,8 +140,8 @@
     </teiHeader>
 
     <text>
-		<body n="edede4"><!-- Actual color of the MS page; insert appropriate color -->
-			<div rend="black"><!-- Acutal color of the writing; only use auto-suggested values -->
+		<body n=""><!-- Actual color of the MS page; AW will insert appropriate color -->
+			<div rend="black"><!-- Acutal color of the writing; AW will use auto-suggested values -->
 
 	<!-- ndash: &#8211; -->
 	<!-- mdash: &#8212; -->

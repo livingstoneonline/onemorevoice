@@ -27,6 +27,12 @@
 
 	<!-- When not producing full HTML files, this template could be removed but javascript and CSS will need to be copied to correct location. -->
 	<xsl:template match="/">
+		<xsl:variable name="subtitle">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='artifact']">Critically-curated Historical Artifact</xsl:when>
+				<xsl:otherwise>Critically-edited Primary Text</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="additional-authors-1">			
 			<xsl:choose>
 				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
@@ -165,7 +171,7 @@
 				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
-	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h2 class="italic">Critically-edited Primary Text</h2></div>
+	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h2 class="italic"><xsl:value-of select="$subtitle"/></h2></div>
 	    		</header>
 				<xsl:apply-templates select="TEI"/>
 			</body>
@@ -175,7 +181,7 @@
 	<!-- Don't show -->
 	<xsl:template match="teiHeader|facsimile|surface|zone"/>
 
-	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or artefact. -->
+	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or artifact. -->
 	<!-- TEI -->
 	<xsl:template match="TEI">
 		<xsl:variable name="body-color-front">
@@ -282,7 +288,7 @@
 					<hr/>
 				</aside>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artefact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -291,9 +297,9 @@
 					<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
 					<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-					<p><span class="bold">Digital artefact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><span class="bold">Digital artifact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
-					<p><span class="bold">Note:</span> This historical artefact reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<p><span class="bold">Note:</span> This historical artifact reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
 				</aside>
 			</xsl:when>

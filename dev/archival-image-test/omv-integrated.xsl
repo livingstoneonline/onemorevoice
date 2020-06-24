@@ -175,7 +175,7 @@
 	<!-- Don't show -->
 	<xsl:template match="teiHeader|facsimile|surface|zone"/>
 
-	<!-- The following section is key as it sets up the whole text and chooses one of two paths, either manuscript or journal. -->
+	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or artefact. -->
 	<!-- TEI -->
 	<xsl:template match="TEI">
 		<xsl:variable name="body-color-front">
@@ -279,6 +279,21 @@
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<hr/>
+				</aside>
+			</xsl:when>
+			<xsl:when test="//sourceDesc/msDesc[@type='artefact']">
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
+					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
+					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+					<!--<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
+					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
+					<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
+					<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital artefact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
+					<p><span class="bold">Note:</span> This historical artefact reflects the cultural distortions and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
 				</aside>
 			</xsl:when>

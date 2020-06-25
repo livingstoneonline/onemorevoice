@@ -447,13 +447,14 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+				<!-- Carry over $citation-authorship, $period-after-name, and xsl:value-of from Cite item to manuscript and journal -->
 				<xsl:variable name="citation-authorship">
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/>
 				</xsl:variable>
 				<xsl:variable name="period-after-name">
 					<xsl:choose>
-						<xsl:when test="$citation-authorship[text()= 'Wm. Fergusson &amp; Co.']">
+						<xsl:when test="$citation-authorship[ends-with(text(), '.')]">
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:text>.</xsl:text>							

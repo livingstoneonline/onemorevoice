@@ -799,7 +799,18 @@
 				<span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='artifact']">
-				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" style="width:100%;"/></a></span>
+				<xsl:variable name="caption">
+					<xsl:variable name="additional-authors-1">			
+						<xsl:choose>
+							<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
+								<xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator=", "/>
+							</xsl:when>
+							<xsl:otherwise/>
+						</xsl:choose>
+					</xsl:variable>
+						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="//availability/licence"/>
+				</xsl:variable>
+				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$caption}" title="{$caption}" style="width:100%;"/></a></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
 				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>

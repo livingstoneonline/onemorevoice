@@ -241,16 +241,48 @@
 				<xsl:otherwise/>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="citation-authorship">
+				<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+				<xsl:value-of select="$additional-authors-2"/>
+		</xsl:variable>
+		<xsl:variable name="period-after-name">
+			<xsl:choose>
+				<xsl:when test="$citation-authorship[ends-with(text(), '.')]"/>
+				<xsl:otherwise>
+					<xsl:text>.</xsl:text>							
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="license">
 			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/@target"/>
+		</xsl:variable>
+		<xsl:variable name="copyright">
+			<xsl:choose>
+			<xsl:when test="//availability/licence[@target]">
+				<a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a>
+			</xsl:when>
+			<xsl:when test="not(//availability/licence[@target])">
+				<xsl:value-of select="//teiHeader//publicationStmt/availability"/>
+			</xsl:when>
+			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
+		<xsl:variable name="editorial">
+			<xsl:if test="count(//teiHeader//respStmt) > 1">
+				<xsl:text>, eds. </xsl:text>
+			</xsl:if>
+			<xsl:if test="count(//teiHeader//respStmt) = 1">
+				<xsl:text>, ed. </xsl:text>
+			</xsl:if>
+			<xsl:if test="count(//teiHeader//respStmt) = 0">
+				<xsl:text> </xsl:text>
+			</xsl:if>
+		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
 		<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
-
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
@@ -423,10 +455,10 @@
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>	
-						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged to consult the original document if possible.</p>
 					</div>
 				</aside>
@@ -438,49 +470,15 @@
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/title[1]"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
-						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">http://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
+						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged to consult the original document if possible.</p>
 					</div>
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
-				<!-- Carry over $citation-authorship, $period-after-name, $editorial, $copyright, and corresponding bits from closing credits to manuscript and journal -->
-				<xsl:variable name="citation-authorship">
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/>
-				</xsl:variable>
-				<xsl:variable name="period-after-name">
-					<xsl:choose>
-						<xsl:when test="$citation-authorship[ends-with(text(), '.')]"/>
-						<xsl:otherwise>
-							<xsl:text>.</xsl:text>							
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:variable name="editorial">
-					<xsl:if test="count(//teiHeader//respStmt) > 1">
-						<xsl:text>, eds. </xsl:text>
-					</xsl:if>
-					<xsl:if test="count(//teiHeader//respStmt) = 1">
-						<xsl:text>, ed. </xsl:text>
-					</xsl:if>
-					<xsl:if test="count(//teiHeader//respStmt) = 0">
-						<xsl:text> </xsl:text>
-					</xsl:if>
-				</xsl:variable>
-				<xsl:variable name="copyright">
-					<xsl:choose>
-					<xsl:when test="//availability/licence[@target]">
-						<a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a>
-					</xsl:when>
-					<xsl:when test="not(//availability/licence[@target])">
-						<xsl:value-of select="//teiHeader//publicationStmt/availability"/>
-					</xsl:when>
-					</xsl:choose>
-				</xsl:variable>
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />

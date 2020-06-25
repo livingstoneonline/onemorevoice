@@ -861,7 +861,7 @@
 				<xsl:variable name="copyright2">
 					<xsl:choose>
 					<xsl:when test="//availability/licence[@target]">
-						<xsl:text> (</xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>).</xsl:text>
+						<xsl:text> </xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>.</xsl:text>
 					</xsl:when>
 					<xsl:when test="not(//availability/licence[@target])">
 					</xsl:when>

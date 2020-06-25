@@ -29,7 +29,7 @@
 	<xsl:template match="/">
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='artifact']">Critically-curated Historical Artifact</xsl:when>
+				<xsl:when test="//sourceDesc/msDesc[@type='artifact']">Curated Historical Artifact</xsl:when>
 				<xsl:otherwise>Critically-edited Primary Text</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
@@ -447,13 +447,26 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+				<xsl:variable name="citation-authorship">
+						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+						<xsl:value-of select="$additional-authors-2"/>
+				</xsl:variable>
+				<xsl:variable name="period-after-name">
+					<xsl:choose>
+						<xsl:when test="$citation-authorship[text()= 'Wm. Fergusson &amp; Co.']">
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:text>.</xsl:text>							
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:text>. “</xsl:text>
+						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
 						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>

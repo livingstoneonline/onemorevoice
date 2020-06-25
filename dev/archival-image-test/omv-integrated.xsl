@@ -856,21 +856,17 @@
 							<xsl:otherwise/>
 						</xsl:choose>
 					</xsl:variable>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="//availability/licence"/>
+					<xsl:variable name="copyright2">
+						<xsl:choose>
+						<xsl:when test="//availability/licence[@target]">
+							<xsl:text> </xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>.</xsl:text>
+						</xsl:when>
+						<xsl:when test="not(//availability/licence[@target])"/>					
+						</xsl:choose>
+					</xsl:variable>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[not(@type='alternative')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
 				</xsl:variable>
-				<xsl:variable name="copyright2">
-					<xsl:choose>
-					<xsl:when test="//availability/licence[@target]">
-						<xsl:text> </xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>.</xsl:text>
-					</xsl:when>
-					<xsl:when test="not(//availability/licence[@target])">
-					</xsl:when>
-					</xsl:choose>
-				</xsl:variable>
-				<xsl:variable name="alt-title">
-					<xsl:value-of select="$caption"/><xsl:value-of select="$copyright2"/>
-				</xsl:variable>
-				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{normalize-space($alt-title)}" title="{normalize-space($alt-title)}" style="width:100%;"/></a></span>
+				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{normalize-space($caption)}" title="{normalize-space($caption)}" style="width:100%;"/></a></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
 				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>

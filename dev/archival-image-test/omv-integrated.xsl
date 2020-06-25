@@ -471,6 +471,16 @@
 						<xsl:text> </xsl:text>
 					</xsl:if>
 				</xsl:variable>
+				<xsl:variable name="copyright">
+					<xsl:choose>
+					<xsl:when test="//availability/licence[@target]">
+						<xsl:value-of select="//teiHeader//publicationStmt/availability"/>
+					</xsl:when>
+					<xsl:when test="not(//availability/licence[@target])">
+						<xsl:value-of select="//teiHeader//publicationStmt/availability"/>text
+					</xsl:when>
+					</xsl:choose>
+				</xsl:variable>
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
@@ -480,7 +490,7 @@
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
+						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><xsl:value-of select="$copyright"/></p>
 					</div>
 				</aside>
 			</xsl:when>

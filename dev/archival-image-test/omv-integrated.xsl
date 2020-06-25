@@ -447,19 +447,29 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
-				<!-- Carry over $citation-authorship, $period-after-name, and xsl:value-of from Cite item to manuscript and journal -->
+				<!-- Carry over $citation-authorship, $period-after-name, $editorial, and corresponding bits from Cite Item to manuscript and journal -->
 				<xsl:variable name="citation-authorship">
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/>
 				</xsl:variable>
 				<xsl:variable name="period-after-name">
 					<xsl:choose>
-						<xsl:when test="$citation-authorship[ends-with(text(), '.')]">
-						</xsl:when>
+						<xsl:when test="$citation-authorship[ends-with(text(), '.')]"/>
 						<xsl:otherwise>
 							<xsl:text>.</xsl:text>							
 						</xsl:otherwise>
 					</xsl:choose>
+				</xsl:variable>
+				<xsl:variable name="editorial">
+					<xsl:if test="count(//teiHeader//respStmt) > 1">
+						<xsl:text>, eds. </xsl:text>
+					</xsl:if>
+					<xsl:if test="count(//teiHeader//respStmt) = 1">
+						<xsl:text>, ed. </xsl:text>
+					</xsl:if>
+					<xsl:if test="count(//teiHeader//respStmt) = 0">
+						<xsl:text> </xsl:text>
+					</xsl:if>
 				</xsl:variable>
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
@@ -468,7 +478,7 @@
 						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:text>, eds. </xsl:text>
+						<xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/><xsl:text>.” </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 						<span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>. Web. <a href="https://onemorevoice.org/texts/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/texts/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<p><span class="bold">Terms of use:</span><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a></p>
 					</div>

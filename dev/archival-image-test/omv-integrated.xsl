@@ -394,6 +394,7 @@
 				<main class="artifact" id="artifact-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
+							<p class="image-enlarge">Click on image(s) to enlarge</p>
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
 								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -796,6 +797,9 @@
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='inline-left small']">
 				<span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='artifact']">
+				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" style="width:100%;"/></a></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
 				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>

@@ -312,60 +312,60 @@
 				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI front {$front}" style="background:#{$body-color-front};" aria-labelledby="front-section">
 						<div class="ms-container" id="front-section">
-						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-						<xsl:choose>
-							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:when test="$isPaged='false'">
-								<xsl:apply-templates select="text/front"/>
-							</xsl:when>
-							<xsl:when test="//jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:apply-templates select="text/front"/>
-							</xsl:otherwise>
-						</xsl:choose>
+							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+							<xsl:choose>
+								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:when test="$isPaged='false'">
+									<xsl:apply-templates select="text/front"/>
+								</xsl:when>
+								<xsl:when test="//jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:apply-templates select="text/front"/>
+								</xsl:otherwise>
+							</xsl:choose>
 						</div>
 					</section>
 					<section class="TEI" style="background:#{$body-color};" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
-						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-						<xsl:choose>
-							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:when test="$isPaged='false'">
-								<xsl:apply-templates select="text/body"/>
-							</xsl:when>
-							<xsl:when test="//jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:apply-templates select="text/body"/>
-							</xsl:otherwise>
-						</xsl:choose>
+							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+							<xsl:choose>
+								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:when test="$isPaged='false'">
+									<xsl:apply-templates select="text/body"/>
+								</xsl:when>
+								<xsl:when test="//jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:apply-templates select="text/body"/>
+								</xsl:otherwise>
+							</xsl:choose>
 						</div>
 					</section>
 					<section class="TEI back {$back}" style="background:#{$body-color-back};" aria-labelledby="back-section">
 						<div class="ms-container" id="back-section">
-						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-						<xsl:choose>
-							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:when test="$isPaged='false'">
-								<xsl:apply-templates select="text/back"/>
-							</xsl:when>
-							<xsl:when test="//jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:apply-templates select="text/back"/>
-							</xsl:otherwise>
-						</xsl:choose>
-					</div>
+							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+							<xsl:choose>
+								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:when test="$isPaged='false'">
+									<xsl:apply-templates select="text/back"/>
+								</xsl:when>
+								<xsl:when test="//jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:apply-templates select="text/back"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</div>
 					</section>
 				</main>
 			</xsl:when>
@@ -388,6 +388,29 @@
 							</xsl:otherwise>
 						</xsl:choose>
 					</div>
+				</main>
+			</xsl:when>
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+				<main class="artifact" id="artifact-div"><!-- style="background:#{$body-color};" -->
+					<section class="TEI" aria-labelledby="main-section">
+						<div class="ms-container" id="main-section">
+							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+							<xsl:choose>
+								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:when test="$isPaged='false'">
+									<xsl:apply-templates select="text/body"/>
+								</xsl:when>
+								<xsl:when test="//jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:apply-templates select="text/body"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</div>
+					</section>
 				</main>
 			</xsl:when>
 		</xsl:choose>

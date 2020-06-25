@@ -914,7 +914,12 @@ ul{
 	margin-right: auto;
 }
 .artifact .TEI{
-	padding: 1em 0;
+	padding: 0;
+}
+@media only screen and (min-width: 768px){
+	.artifact .TEI{
+		padding: 1em 0;
+	}
 }
 
 

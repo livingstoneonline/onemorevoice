@@ -847,14 +847,16 @@ ul{
 	text-align: center;
 }
 .manuscript,
-.journal{
+.journal,
+.artifact{
 	font-size: 1.3em;
 	line-height: 1.6em;
 	display: block;
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
-	.journal{
+	.journal,
+	.artifact{
 		font-size: 1.2em;
 		display: block !important; /* Tied to overlay */
 	}
@@ -911,6 +913,9 @@ ul{
 	margin-left: auto;
 	margin-right: auto;
 }
+.artifact .TEI{
+	padding: 1em 0;
+}
 
 
 /* 2.2. Back-button */
@@ -965,10 +970,16 @@ ul{
 	margin: 4em 0 .5em 0;
 	display: block;
 }
+.artifact .pb-title{
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+}
 .manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI.back .ms-container .div:first-of-type .pb-title:first-of-type,
-.journal .TEI .text .body .div .pb-title:first-of-type{
+.journal .TEI .text .body .div .pb-title:first-of-type,
+.artifact .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type{
 	margin-top: 0;
 	padding-top: 0;
 	border-top: none;

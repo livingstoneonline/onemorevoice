@@ -960,7 +960,7 @@
 
 	<xsl:template match="pb">
 		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='artifact']">
 				<br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
@@ -977,7 +977,7 @@
 	<!-- Not sure what this does. AW -->
 	<xsl:template match="jc:page">
 		<xsl:choose> 
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='artifact']">
 			<div class="page">
 				<!--<br/>-->
 				<span class="pb-title">

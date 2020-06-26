@@ -17,11 +17,7 @@
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
                     <name>Adrian S. Wisnicki</name>
-                    <resp>Transcription</resp>
-                    <resp>TEI Encoding</resp>
-                    <resp>Editorial Decisions</resp>
-                    <resp>Proofing</resp>
-                    <resp>Coding Review</resp>
+                    <resp>XML File Editing</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -36,7 +32,6 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
             <sourceDesc>
                 <msDesc type="artifact">
                     <msIdentifier>
@@ -61,9 +56,6 @@
                     <placeName type="compositionPlace">Britain</placeName>
                 </bibl>
             </sourceDesc>
-			<!-- End of manuscript <sourceDesc> -->
-
-			
 
         </fileDesc>
         <profileDesc>

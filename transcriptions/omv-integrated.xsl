@@ -253,6 +253,27 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="repository">
+			<xsl:choose>
+				<xsl:when test="//teiHeader//sourceDesc/msDesc/msIdentifier/repository/text()">															<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="collection">
+			<xsl:choose>
+				<xsl:when test="//teiHeader//sourceDesc/msDesc/msIdentifier/collection/text()">															<p><span class="bold">Collection:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/collection" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="shelfmark">
+			<xsl:choose>
+				<xsl:when test="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']/text()">											<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="license">
 			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/@target"/>
 		</xsl:variable>
@@ -290,8 +311,9 @@
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<!--<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
-					<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
-					<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+					<xsl:copy-of select="$repository"/>
+					<xsl:copy-of select="$collection"/>
+					<xsl:copy-of select="$shelfmark"/>
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->
@@ -326,8 +348,9 @@
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<!--<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>-->
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
-					<p><span class="bold">Repository:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/repository" /> (<xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/settlement" />, <xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/country" />)</p>
-					<p><span class="bold">Shelfmark / Identifier:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/idno[@type='shelfmark']" /></p>
+					<xsl:copy-of select="$repository"/>
+					<xsl:copy-of select="$collection"/>
+					<xsl:copy-of select="$shelfmark"/>
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Digital artifact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<!--<p class="item-spec"><span class="bold">Encoding dates</span><xsl:text>: </xsl:text><xsl:value-of select="$sortedDates" separator=", "/></p>-->

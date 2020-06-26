@@ -168,7 +168,7 @@
 				<!-- end of nav -->
 				       
 				<header class="title" id="title-div"> 
-				    <img class="image image-border" src="xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
 	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h2 class="italic"><xsl:value-of select="$subtitle"/></h2></div>

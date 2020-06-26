@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021007"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>‘Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone, with Susi and Chuma, His Faithful Followers’</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">‘Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone, with Susi and Chuma, His Faithful Followers,’ [c.1874]</title><!-- Title, date -->
+                <author>Allen and Co.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Allen and Co.</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Allen and Co.</author><!-- First author only: Forename Surname -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_021007</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability>
+			</publicationStmt>
+
+            <sourceDesc>
+                <msDesc type="artifact">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>London</settlement><!-- Repository city -->
+                        <repository>Wellcome Library</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
+                        <idno type="shelfmark">No. 561462i</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>‘Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone, with Susi and Chuma, His Faithful Followers’</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="AC">Allen and Co.</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1874">[c.1874]</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">Britain</placeName>
+                </bibl>
+            </sourceDesc>
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-06-26" who="AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_021007_0001" n="0001"/>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_021007_0001.jpg"/></figure></p>
+
+
+            </div>
+        </body>   
+    </text>
+</TEI>

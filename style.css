@@ -847,14 +847,16 @@ ul{
 	text-align: center;
 }
 .manuscript,
-.journal{
+.journal,
+.artifact{
 	font-size: 1.3em;
 	line-height: 1.6em;
 	display: block;
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
-	.journal{
+	.journal,
+	.artifact{
 		font-size: 1.2em;
 		display: block !important; /* Tied to overlay */
 	}
@@ -911,6 +913,14 @@ ul{
 	margin-left: auto;
 	margin-right: auto;
 }
+.artifact .TEI{
+	padding: 0;
+}
+@media only screen and (min-width: 768px){
+	.artifact .TEI{
+		padding: 1em 0;
+	}
+}
 
 
 /* 2.2. Back-button */
@@ -965,10 +975,16 @@ ul{
 	margin: 4em 0 .5em 0;
 	display: block;
 }
+.artifact .pb-title{
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+}
 .manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI.back .ms-container .div:first-of-type .pb-title:first-of-type,
-.journal .TEI .text .body .div .pb-title:first-of-type{
+.journal .TEI .text .body .div .pb-title:first-of-type,
+.artifact .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type{
 	margin-top: 0;
 	padding-top: 0;
 	border-top: none;
@@ -977,6 +993,17 @@ ul{
 	color: #65615b;
 	font-size: .9em;
 	font-style: italic;
+}
+.image-enlarge{
+	color: #65615b;
+	font-size: .85em;
+	font-style: italic;
+	display: none;
+}
+@media only screen and (min-width: 768px){
+	.image-enlarge{
+		display: block;
+	}
 }
 .linenumber{
 	font-size: .8em;
@@ -1014,8 +1041,14 @@ ul{
 	margin-bottom: 0;
 }
 .manuscript .p,
-.manuscript .ab{
+.manuscript .ab,
+.artifact .p,
+.artifact .ab{
 	display: inline-block
+}
+.artifact p{
+	padding: 0;
+	margin: 0;
 }
 .journal .p,
 .journal .ab{
@@ -1343,6 +1376,15 @@ table .linenumber{
 }
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
+}
+.artifact .graphic{
+	pointer-events: none;
+	/* cursor: default; */
+}
+@media only screen and (min-width: 768px){
+	.artifact .graphic{
+		pointer-events: unset;
+	}
 }
 .journal .image-small.inline-left{
 	float: left;

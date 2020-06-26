@@ -271,9 +271,22 @@
 				<xsl:otherwise/>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="collection-link">
+			<xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection/@ref"/>
+		</xsl:variable>
+		<xsl:variable name="collection-spec">
+			<xsl:choose>
+			<xsl:when test="//sourceDesc/msDesc/msIdentifier/collection[@ref]">
+				<a href="{$collection-link}" target="_blank"><xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/></a>
+			</xsl:when>
+			<xsl:when test="not(//sourceDesc/msDesc/msIdentifier/collection[@ref])">
+				<xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/>
+			</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="collection">
 			<xsl:choose>
-				<xsl:when test="//teiHeader//sourceDesc/msDesc/msIdentifier/collection/text()">															<p><span class="bold">Collection:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/msIdentifier/collection" /><xsl:copy-of select="$show-repo-location"/></p>
+				<xsl:when test="//teiHeader//sourceDesc/msDesc/msIdentifier/collection/text()">															<p><span class="bold">Collection:</span><xsl:text> </xsl:text><xsl:copy-of select="$collection-spec"/><xsl:copy-of select="$show-repo-location"/></p>
 				</xsl:when>
 				<xsl:otherwise/>
 			</xsl:choose>

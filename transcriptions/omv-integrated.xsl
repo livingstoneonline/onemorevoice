@@ -168,7 +168,7 @@
 				<!-- end of nav -->
 				       
 				<header class="title" id="title-div"> 
-				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of coded text taken from the One More Voice project." title="A segment of coded text taken from the One More Voice project." />
+				    <img class="image image-border" src="../images/xml-code.png" alt="A segment of text from an XML file produced by the One More Voice project according to the TEI P5 guidelines. The line of text that references the One More Voice project is highlighted. The segment also indicates the Livingstone Online is the publisher of One More Voice and that the One More Voice project is published from the University of Nebraska-Lincoln in Lincoln, NE." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
 	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h2 class="italic"><xsl:value-of select="$subtitle"/></h2></div>

@@ -863,14 +863,17 @@
 
 	<xsl:template match="figure">
 		<!-- newFigDesc goes away and applies templates to content to get it into a single dedupped string -->
-		<xsl:variable name="newHead">
+		<!--<xsl:variable name="newHead">
 			<xsl:apply-templates select="head" mode="normalizeHead"/>
 		</xsl:variable>
 		<xsl:variable name="newFigDesc">
 			<xsl:apply-templates select="figDesc" mode="normalizeFigDesc"/>
-		</xsl:variable>
+		</xsl:variable>-->
 		<xsl:variable name="graphicURL">
 			<xsl:apply-templates select="..//@url"/>
+		</xsl:variable>
+		<xsl:variable name="altText">
+			<xsl:apply-templates select="..//figDesc"/>
 		</xsl:variable>
 		<xsl:choose>
 			<!--<xsl:when test="head and $newFigDesc/text()">
@@ -883,13 +886,13 @@
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
 			</xsl:when>-->
 			<xsl:when test="..//graphic[@n='medium']">
-				<span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+				<span class="figure"><span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='small']">
-				<span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+				<span class="figure"><span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='inline-left small']">
-				<span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='artifact']">
 				<xsl:variable name="caption">
@@ -911,10 +914,10 @@
 					</xsl:variable>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[not(@type='alternative')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
 				</xsl:variable>
-				<span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{normalize-space($caption)}" title="{normalize-space($caption)}" style="width:100%;"/></a></span>
+				<span class="figure"><span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" style="width:100%;"/></a></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
-				<span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" style="width:100%;"/><!--</a>--></span>
+				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span>

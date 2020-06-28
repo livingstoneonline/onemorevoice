@@ -128,7 +128,7 @@
 				    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
 				    <nav id="sticky" aria-labelledby="nav2">
 				        <div class="menu" id="nav2">
-				            <span class="icon-title"><a style="cursor:pointer" class="icon" role="menu" aria-label="Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
+				            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
 				            <span class="nav-title">One More Voice</span>
 				        </div>
 				    </nav>

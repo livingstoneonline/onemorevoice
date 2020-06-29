@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000003"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale or Bin Aleī or Bon Ārie</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Extract from  David Livingstone's Field Diary III with Addition by Bon Ale or Bin Aleī, 19-20 May 1866</title><!-- Title, date -->
+                <author>Bon Ale or Bin Aleī or Bon Ārie</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Bon Ale or Bin Aleī or Bon Ārie</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Bon Ale or Bin Aleī or Bon Ārie</author><!-- First author only: Forename Surname -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_000003</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by-nc/3.0/">Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported.</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="artifact">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Blantyre</settlement><!-- Repository city -->
+                        <repository>David Livingstone Centre</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
+                        <idno type="shelfmark">1125</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale or Bin Aleī</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="BA">Bon Ale or Bin Aleī or Bon Ārie</author>
+					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" from="1866-05-19" to="1866-05-20">19-20 May 1866</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">Machumora's/Matumora's village</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+			
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-06-29" who="AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_000003_0016-0017" n="0016-0017"/>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_000003_0016-0017.jpg"/><figDesc>Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic.</figDesc></figure></p>
+
+    <pb facs="liv_000003_0017-0016" n="0017-0016"/>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_000003_0017-0016.jpg"/><figDesc>Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic.</figDesc></figure></p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

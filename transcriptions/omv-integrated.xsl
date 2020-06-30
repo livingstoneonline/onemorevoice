@@ -304,10 +304,10 @@
 		<xsl:variable name="copyright">
 			<xsl:choose>
 			<xsl:when test="//availability/licence[@target]">
-				<a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability"/></a>
+				<xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">
-				<xsl:value-of select="//teiHeader//publicationStmt/availability"/>
+				<xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>
 			</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
@@ -912,7 +912,7 @@
 						<xsl:when test="not(//availability/licence[@target])"/>					
 						</xsl:choose>
 					</xsl:variable>
-					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[not(@type='alternative')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[not(@type='alternative')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
 				</xsl:variable>
 				<span class="figure"><span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" style="width:100%;"/></a></span></span>
 			</xsl:when>
@@ -1102,13 +1102,19 @@
 
 	<xsl:template match="pb">
 		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='artifact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
+				<span class="pb-title">
+					<xsl:value-of select="@n"/>
+				</span>
+			</xsl:when>
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+				<br/><br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>

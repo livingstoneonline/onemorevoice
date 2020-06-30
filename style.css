@@ -20,7 +20,7 @@ Table of Contents
 
 ** 2.0 Transcription CSS **
 2.1. Textual divisions
-2.2. The back-button 
+2.2. Buttons and button-like links
 2.3. Pagebreaks, linebreaks, linenumbers
 2.4. Parts of the page
 2.5. Milestone and lines
@@ -935,8 +935,9 @@ ol li ol{
 }
 
 
-/* 2.2. Back-button */
+/* 2.2. Buttons and button-like links */
 
+/* .back-button is used on pages with critically-edited primary texts */
 .back-button a,
 .back-button a:visited{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
@@ -964,6 +965,27 @@ ol li ol{
 		font-size: 1.1em;
 		padding-top: .1em;
 	}
+}
+/* #rotate button and .rotate-180 used for artifact images that need to be rotated */
+#rotate-button{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-size: .75em;
+	background-color: #dbdbdb;
+	border: 1px solid #858585;
+	border-radius: 12px;
+	float: left;
+	padding: .5em 1em;
+	margin: 1.5em 0;
+}
+#rotate-button.click-color{
+	color: whitesmoke;
+	background-color: #858585;
+}
+.rotate-180{
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-moz-transform:rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	-o-transform:rotate(180deg); /* Opera */
 }
 
 

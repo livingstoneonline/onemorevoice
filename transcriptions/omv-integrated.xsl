@@ -883,6 +883,7 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="..//graphic[@n='artifact']|..//graphic[@n='artifact rotate-180']">
+				<!-- This variable creates the title for the artifact image; the image URL and alt text are created by other variables set up above. -->
 				<xsl:variable name="caption">
 					<xsl:variable name="additional-authors-1">			
 						<xsl:choose>
@@ -902,8 +903,13 @@
 					</xsl:variable>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[not(@type='alternative')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
 				</xsl:variable>
+				<!-- This variable creates a static id for all images to be rotated. This is not an ideal solution and needs to be improved down the road because, if there are two artifact images in the same document that both need to rotated, they will both get the same id. -->
+				<!-- The following code instead, if used in place of <xsl:text>image-to-rotate</xsl:text> below, gives each image to be rotated a unique id based on its page number(s). This could be the way to a better solution, but would involved working out the Javascript to select that same id.-->
+				<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
 				<xsl:variable name="rotate-id">
-					<xsl:if test="..//graphic[@n='artifact rotate-180']"><xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/></xsl:if>
+					<xsl:if test="..//graphic[@n='artifact rotate-180']">
+						<xsl:text>image-to-rotate</xsl:text>
+					</xsl:if>
 				</xsl:variable>
 				<xsl:if test="..//graphic[@n='artifact rotate-180']">
 					<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>

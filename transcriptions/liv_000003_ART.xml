@@ -8,12 +8,12 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale or Bin Aleī or Bon Ārie</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-                <title type="alternative">Extract from  David Livingstone's Field Diary III with Addition by Bon Ale or Bin Aleī, 19-20 May 1866</title><!-- Title, date -->
-                <author>Bon Ale or Bin Aleī or Bon Ārie</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <title>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Extract from  David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie, 19-20 May 1866</title><!-- Title, date -->
+                <author>Bon Ale/Bin Aleī/Bon Ārie</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="first">Bon Ale or Bin Aleī or Bon Ārie</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Bon Ale or Bin Aleī or Bon Ārie</author><!-- First author only: Forename Surname -->
+				<author role="first">Bon Ale/Bin Aleī/Bon Ārie</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Bon Ale/Bin Aleī/Bon Ārie</author><!-- First author only: Forename Surname -->
 				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -30,7 +30,8 @@
                 <idno type="LEAP-ID">liv_000003</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- Edit <availability> as relevant -->
 	            <availability>
-	                    <licence target="https://creativecommons.org/licenses/by-nc/3.0/">Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported.</licence>
+					<p>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit.</p>
+					<licence target="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported.</licence>
 				</availability>
 			</publicationStmt>
 
@@ -47,11 +48,11 @@
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
-					<title>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale or Bin Aleī</title>
+					<title>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-                    <author xml:id="BA">Bon Ale or Bin Aleī or Bon Ārie</author>
+                    <author xml:id="BA">Bon Ale/Bin Aleī/Bon Ārie</author>
 					<author xml:id="DL">Livingstone, David, 1813-1873</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -96,7 +97,7 @@
     <pb facs="liv_000003_0016-0017" n="0016-0017"/>
 <lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_000003_0016-0017.jpg"/><figDesc>Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic.</figDesc></figure></p>
 
-    <pb facs="liv_000003_0017-0016" n="0017-0016"/>
+    <pb facs="liv_000003_0017-0016" n="0016-0017 (rotated 180°)"/>
 <lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_000003_0017-0016.jpg"/><figDesc>Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic.</figDesc></figure></p>
 
             </div>

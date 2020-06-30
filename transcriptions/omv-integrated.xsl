@@ -882,28 +882,7 @@
 			<xsl:apply-templates select="..//figDesc"/>
 		</xsl:variable>
 		<xsl:choose>
-			<!--<xsl:when test="head and $newFigDesc/text()">
-				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{concat('&quot;', $newHead, '.&quot; ', $newFigDesc)}">{figure}</span>
-			</xsl:when>
-			<xsl:when test="head and not($newFigDesc/text())">
-				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{concat('&quot;', $newHead, '.&quot; ')}">{figure}</span>
-			</xsl:when>
-			<xsl:when test="not(head) and $newFigDesc/text()">
-				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
-			</xsl:when>-->
-			<xsl:when test="..//graphic[@n='medium']">
-				<span class="figure"><span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
-			</xsl:when>
-			<xsl:when test="..//graphic[@n='small']">
-				<span class="figure"><span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
-			</xsl:when>
-			<xsl:when test="..//graphic[@n='inline-left small']">
-				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
-			</xsl:when>
-
-
 			<xsl:when test="..//graphic[@n='artifact']|..//graphic[@n='artifact rotate-180']">
-
 				<xsl:variable name="caption">
 					<xsl:variable name="additional-authors-1">			
 						<xsl:choose>
@@ -926,16 +905,31 @@
 				<xsl:variable name="rotate-id">
 					<xsl:if test="..//graphic[@n='artifact rotate-180']"><xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/></xsl:if>
 				</xsl:variable>
-
 				<xsl:if test="..//graphic[@n='artifact rotate-180']">
 					<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				</xsl:if>
 				<span class="figure"><span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}" style="width:100%;"/></a></span></span>
 			</xsl:when>
-
-
+			<!--<xsl:when test="head and $newFigDesc/text()">
+				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{concat('&quot;', $newHead, '.&quot; ', $newFigDesc)}">{figure}</span>
+			</xsl:when>
+			<xsl:when test="head and not($newFigDesc/text())">
+				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{concat('&quot;', $newHead, '.&quot; ')}">{figure}</span>
+			</xsl:when>
+			<xsl:when test="not(head) and $newFigDesc/text()">
+				<span class="{concat(name(), ' ', @rend, ' ', @place)}" title="{$newFigDesc}">{figure}</span>
+			</xsl:when>-->
 			<xsl:when test="..//graphic">
 				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='medium']">
+				<span class="figure"><span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='small']">
+				<span class="figure"><span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+			</xsl:when>
+			<xsl:when test="..//graphic[@n='inline-left small']">
+				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span>

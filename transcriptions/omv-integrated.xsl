@@ -301,10 +301,13 @@
 		<xsl:variable name="license">
 			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/@target"/>
 		</xsl:variable>
+		<xsl:variable name="availP">
+			<xsl:apply-templates select="//availability/p/node()"/>
+		</xsl:variable>
 		<xsl:variable name="copyright">
 			<xsl:choose>
 			<xsl:when test="//availability/licence[@target]">
-				<xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
+				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">
 				<xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>

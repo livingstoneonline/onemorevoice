@@ -272,6 +272,9 @@ body.transcription .title{
 		font-size: 1em;
 	}
 }
+*:focus{
+	outline: 0 none;
+}
 a,
 a:visited{
 	color: #2e68ac;
@@ -282,6 +285,12 @@ a:hover{
 }
 a:focus{
 	background-color: #dbdbdb;
+}
+.graphic a:focus{
+	background-color: white;
+}
+a:focus img{
+	border: 2px #cc4943 solid;
 }
 .currentLink{
 	color: #640200;
@@ -967,6 +976,7 @@ ol li ol{
 	}
 }
 /* #rotate button and .rotate-180 used for artifact images that need to be rotated */
+/* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 #rotate-button{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	font-size: .75em;
@@ -976,6 +986,9 @@ ol li ol{
 	float: left;
 	padding: .5em 1em;
 	margin: 1.5em 0;
+}
+#rotate-button:focus{
+	border: 2px #2e68ac solid;
 }
 #rotate-button.click-color{
 	color: whitesmoke;

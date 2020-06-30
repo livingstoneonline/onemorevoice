@@ -1,3 +1,5 @@
+// Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role
+
 function myFunction() {
   var element1 = document.getElementById("rotate-button");
   var element2 = document.getElementById("image-to-rotate");

@@ -58,6 +58,9 @@
 			    <link rel="stylesheet" type="text/css" href="../style.css" />
 			    <script src="../overlay.js"></script>
 			    <script src="../stickynav.js" defer=""></script>
+				<xsl:if test="/TEI//graphic[@n='artifact rotate-180']">
+					<script src="../rotate.js" defer=""></script>
+				</xsl:if>
 				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
 			    <script src="http://livingstoneonline.github.io/onemorevoice/overlay.js"></script>
 			    <script src="http://livingstoneonline.github.io/onemorevoice/stickynav.js" defer=""></script>-->
@@ -897,7 +900,10 @@
 			<xsl:when test="..//graphic[@n='inline-left small']">
 				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>
-			<xsl:when test="..//graphic[@n='artifact']">
+
+
+			<xsl:when test="..//graphic[@n='artifact']|..//graphic[@n='artifact rotate-180']">
+
 				<xsl:variable name="caption">
 					<xsl:variable name="additional-authors-1">			
 						<xsl:choose>
@@ -917,8 +923,17 @@
 					</xsl:variable>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[not(@type='alternative')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
 				</xsl:variable>
-				<span class="figure"><span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" style="width:100%;"/></a></span></span>
+				<xsl:variable name="rotate-id">
+					<xsl:if test="..//graphic[@n='artifact rotate-180']"><xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/></xsl:if>
+				</xsl:variable>
+
+				<xsl:if test="..//graphic[@n='artifact rotate-180']">
+					<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
+				</xsl:if>
+				<span class="figure"><span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}" style="width:100%;"/></a></span></span>
 			</xsl:when>
+
+
 			<xsl:when test="..//graphic">
 				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
 			</xsl:when>

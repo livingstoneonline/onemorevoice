@@ -290,7 +290,7 @@ a:focus{
 	background-color: white;
 }
 a:focus img{
-	border: 2px #cc4943 solid;
+	border: 3px #cc4943 solid;
 }
 .currentLink{
 	color: #640200;
@@ -977,6 +977,9 @@ ol li ol{
 }
 /* #rotate button and .rotate-180 used for artifact images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
+button::-moz-focus-inner {
+	border: 0;
+  }
 #rotate-button{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	font-size: .75em;

@@ -506,6 +506,12 @@
 					<div id="closing-credits">
 						<hr />
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<xsl:if test="//publicationStmt/ref">
+							<xsl:variable name="lo-link">
+								<xsl:value-of select="//publicationStmt/ref/@target"/>
+							</xsl:variable>
+							<p><span class="bold">Explore item images</span>: <a href="{$lo-link}" target="_blank">Livingstone Online</a> (external link)</p>
+						</xsl:if>
 						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
@@ -536,6 +542,12 @@
 					<div id="closing-credits">
 						<hr />
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<xsl:if test="//publicationStmt/ref">
+							<xsl:variable name="lo-link">
+								<xsl:value-of select="//publicationStmt/ref/@target"/>
+							</xsl:variable>
+							<p><span class="bold">Explore complete item</span>: <a href="{$lo-link}" target="_blank">Livingstone Online</a> (external link)</p>
+						</xsl:if>
 						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>

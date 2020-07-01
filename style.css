@@ -986,6 +986,12 @@ ol li ol{
 	float: left;
 	padding: .5em 1em;
 	margin: 1.5em 0;
+	display: none;
+}
+@media only screen and (min-width: 768px){
+	#rotate-button{
+		display: block;
+	}
 }
 #rotate-button:focus{
 	border: 2px #2e68ac solid;

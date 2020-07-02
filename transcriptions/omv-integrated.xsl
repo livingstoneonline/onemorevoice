@@ -523,7 +523,7 @@
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore original item images:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a><xsl:text> (external link)</xsl:text></p>
+							<p><span class="bold">Explore original item image(s):</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -544,7 +544,7 @@
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a><xsl:text> </xsl:text>(external link)</p>
+							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -565,7 +565,7 @@
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a><xsl:text> </xsl:text>(external link)</p>
+							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

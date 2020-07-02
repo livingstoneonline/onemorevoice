@@ -54,6 +54,9 @@
 	                      	Creative Commons Attribution 4.0 International
 	                    </licence>
 				</availability>
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target=""></ref>
 			</publicationStmt>
 
 			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
@@ -92,14 +95,18 @@
 			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
             <sourceDesc>
 				<biblStruct type="journal">
-					<monogr>
+					<monogr><!-- Default is periodical article; if book section, change to <monogr n="book-section"> -->
 						<title></title><!-- Publication title -->
+						<!-- Each author: Forename Surname -->
+						<!-- Same as <author role="first-normalized"> and <author role="normalized"> above -->
+						<!-- xml:id = each author's initials -->
+	                    <author></author>
 						<editor></editor><!-- Editor (if known; otherwise leave blank -->
 						<imprint>
-							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank -->
-							<biblScope unit="pages"></biblScope><!-- Pages (if known; otherwise leave blank -->
-							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank -->
-							<publisher></publisher><!-- Publisher (if known; otherwise leave blank -->
+							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="pages"></biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher></publisher><!-- Publisher (if known; otherwise leave blank) -->
 							<date></date><!-- Item date; same as date in <title type="alternative"> above -->
 						</imprint>
 					</monogr>

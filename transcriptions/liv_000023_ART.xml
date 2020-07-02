@@ -10,11 +10,11 @@
             <titleStmt>
                 <title>Excerpt from David Livingstone's Notebook with Swahili Vocabulary List and Arabic Numbers</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
                 <title type="alternative">Excerpt from David Livingstone's Notebook with Swahili Vocabulary List and Arabic Numbers, [Between c.March 1866 and March 1870]</title><!-- Title, date -->
-                <author>[Unknown Arab and African Informants]</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="first">[Unknown Arab and African Informants]</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">[Unknown Arab and African Informants]</author><!-- First author only: Forename Surname -->
-				<author role="normalized">Livingstone, David, 1813-1873</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <author>Livingstone, David, 1813-1873</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>[Unknown Arab and African Informants]</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Livingstone, David</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">David Livingstone</author><!-- First author only: Forename Surname -->
+				<author role="normalized">[Unknown Arab and African Informants]</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
@@ -53,8 +53,8 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-                    <author xml:id="UAAI">[Unknown Arab and African Informants]</author>
 					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+                    <author xml:id="UAAI">[Unknown Arab and African Informants]</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" from="1866-03" to="1870-03">[Between c.March 1866 and March 1870]</date>

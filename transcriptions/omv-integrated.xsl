@@ -319,6 +319,34 @@
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
+		<xsl:variable name="pub-deets">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/biblStruct/monogr/@n='book-chapter'">
+					<xsl:text>In </xsl:text>
+					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/></span>
+					<xsl:text>, by </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/author"/>
+					<xsl:text>, </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='pages']"/>
+					<xsl:text>. </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace"/>
+					<xsl:text>: </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher"/>
+					<xsl:text>, </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
+					<xsl:text>.</xsl:text>
+				</xsl:when>
+				<xsl:otherwise>
+					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/></span>
+					<xsl:text> </xsl:text>
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='vol']"/>
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//imprint/date"/>
+					<xsl:text>): </xsl:text>
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="editorial">
 			<xsl:if test="count(//teiHeader//respStmt) > 1">
 				<xsl:text>, eds., </xsl:text>
@@ -352,15 +380,7 @@
 					<h3 id="opening-credits">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
-					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text>
-						<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/></span>
-						<xsl:text> </xsl:text>
-						<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='vol']"/>
-						<xsl:text> (</xsl:text>
-						<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/date"/>
-						<xsl:text>): </xsl:text>
-						<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
-					</p>
+					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
@@ -500,12 +520,12 @@
 						<hr />
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="lo-link">
+							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore item images</span>: <a href="{$lo-link}" target="_blank">Livingstone Online</a> (external link)</p>
+							<p><span class="bold">Explore original item images:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a><xsl:text> (external link)</xsl:text></p>
 						</xsl:if>
-						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/title[not(@type='alternative')]"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
@@ -520,7 +540,13 @@
 					<div id="closing-credits">
 						<hr/>
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
-						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+						<xsl:if test="//publicationStmt/ref">
+							<xsl:variable name="source-link">
+								<xsl:value-of select="//publicationStmt/ref/@target"/>
+							</xsl:variable>
+							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a><xsl:text> </xsl:text>(external link)</p>
+						</xsl:if>
+						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/title[not(@type='alternative')]"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
@@ -536,12 +562,12 @@
 						<hr />
 						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
 						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="lo-link">
+							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore complete item</span>: <a href="{$lo-link}" target="_blank">Livingstone Online</a> (external link)</p>
+							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a><xsl:text> </xsl:text>(external link)</p>
 						</xsl:if>
-						<p><span class="bold">Cite item (MLA)</span><xsl:text>: </xsl:text>
+						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/title[not(@type='alternative')]"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>

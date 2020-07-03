@@ -3,6 +3,7 @@
 
 function openNav() {
   document.getElementById("nav3").style.display = "block";
+  if (document.getElementById("skiptocontent") !== null) {document.getElementById("skiptocontent").style.display = "none"};
   if (document.getElementById("title-div") !== null) {document.getElementById("title-div").style.display = "none"};
   if (document.getElementById("main-div") !== null) {document.getElementById("main-div").style.display = "none"};
   if (document.getElementById("manuscript-div") !== null) {document.getElementById("manuscript-div").style.display = "none"};
@@ -14,6 +15,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("nav3").style.display = "none";
+  if (document.getElementById("skiptocontent") !== null) {document.getElementById("skiptocontent").style.display = "block"};
   if (document.getElementById("title-div") !== null) {document.getElementById("title-div").style.display = "block"};
   if (document.getElementById("main-div") !== null) {document.getElementById("main-div").style.display = "block"};
   if (document.getElementById("manuscript-div") !== null) {document.getElementById("manuscript-div").style.display = "block"};

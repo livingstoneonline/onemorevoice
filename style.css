@@ -281,19 +281,22 @@ a:visited{
 	/*text-decoration:none;*/
 }
 a:hover{
-	color: #cc4943;
+	color: #a83c37;
+	background-color: #dbdbdb;
 }
 a:focus{
+	color: #2b61a1;
 	background-color: #dbdbdb;
 }
 .graphic a:focus{
 	background-color: white;
 }
+a img{
+	border: 3px white solid;
+}
+a:hover img,
 a:focus img{
 	border: 3px #cc4943 solid;
-}
-.currentLink{
-	color: #640200;
 }
 a.anchor{
 	display: block;

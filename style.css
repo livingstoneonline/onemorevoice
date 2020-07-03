@@ -195,6 +195,35 @@ body.transcription .title{
 		display: block;
 	}
 }
+/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
+#skiptocontent a {
+	font-size: 1.1em;
+	color: white;
+	background: #424242;
+	padding: 6px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-right-radius: 8px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	z-index: 100;
+	-webkit-transition: top 1s ease-out;
+	transition: top .4s ease-out;
+}
+#skiptocontent a:focus {
+	outline-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: top .1s ease-in;
+	transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#skiptocontent a:focus{
+		position: absolute;
+	}
+}
 .main{
 	font-size: 1.3em;
 	text-align: left;
@@ -382,7 +411,7 @@ a.anchor{
 	border-top: none;
 }
 .menu a.icon:hover{
-	color: black;
+	color: #a83c37;
 }
 .nav-title{
 	font-size: 1.7em;
@@ -957,7 +986,7 @@ ol li ol{
 	text-decoration: none;
 }
 .back-button a:hover{
-	color: #cc4943;
+	color: #a83c37;
 }
 .title .back-button{
 	font-size: .95em;

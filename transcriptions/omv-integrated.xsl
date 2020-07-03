@@ -62,7 +62,10 @@
 				</xsl:if>
 				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
 			    <script src="http://livingstoneonline.github.io/onemorevoice/overlay.js"></script>
-			    <script src="http://livingstoneonline.github.io/onemorevoice/stickynav.js" defer=""></script>-->
+			    <script src="http://livingstoneonline.github.io/onemorevoice/stickynav.js" defer=""></script>
+				<xsl:if test="/TEI//graphic[@n='artifact rotate-180']">
+					<script src="http://livingstoneonline.github.io/onemorevoice/rotate.js" defer=""></script>
+				</xsl:if>-->
 				<!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>
@@ -82,7 +85,11 @@
 				    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 				    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 				    
-				    <nav class="topnav" aria-labelledby="nav1">
+				        <nav id="skiptocontent">
+							<a href="#main" tabindex="1">skip to main content</a>
+						</nav>
+						
+						<nav class="topnav" aria-labelledby="nav1">
 				            <ul role="menubar" id="nav1" aria-label="Site Sections">
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
 				                <li role="none"><a role="menuitem" aria-haspopup="false" href="../texts.html">texts</a></li>
@@ -130,7 +137,7 @@
 				    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
 				    <nav id="sticky" aria-labelledby="nav2">
 				        <div class="menu" id="nav2">
-				            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
+				            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
 				            <span class="nav-title">One More Voice</span>
 				        </div>
 				    </nav>
@@ -362,7 +369,7 @@
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
@@ -376,7 +383,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits">
+		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
 					<h3 id="opening-credits">“<xsl:value-of select="//teiHeader//titleStmt/title[1]"/>”</h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
@@ -388,7 +395,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
-		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>

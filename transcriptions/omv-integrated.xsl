@@ -116,7 +116,7 @@
 				                            <ul role="none">
 				                                <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
 				                                <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
-				                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+				                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
 				                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
 				                            </ul>
 				                        </div>
@@ -157,7 +157,7 @@
 				                        <ul role="menu" aria-label="Miscellaneous">
 				                            <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
 				                            <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
-				                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+				                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
 				                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
 				                        </ul>
 				                    </li>
@@ -279,7 +279,7 @@
 		<xsl:variable name="collection-spec">
 			<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc/msIdentifier/collection[@ref]">
-				<a href="{$collection-link}" target="_blank"><xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/></a>
+				<a href="{$collection-link}"><xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/></a>
 			</xsl:when>
 			<xsl:when test="not(//sourceDesc/msDesc/msIdentifier/collection[@ref])">
 				<xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/>
@@ -309,7 +309,7 @@
 		<xsl:variable name="copyright">
 			<xsl:choose>
 			<xsl:when test="//availability/licence[@target]">
-				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><a href="{$license}" target="_blank"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
+				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><a href="{$license}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">
 				<xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>
@@ -369,7 +369,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
@@ -381,7 +381,7 @@
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date"/></p>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
@@ -395,7 +395,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/" target="_blank">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Digital artifact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
@@ -523,7 +523,7 @@
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore original item image(s):</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a></p>
+							<p><span class="bold">Explore original item image(s):</span><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -544,7 +544,7 @@
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a></p>
+							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -565,7 +565,7 @@
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
 							</xsl:variable>
-							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}" target="_blank"><xsl:value-of select="//publicationStmt/ref"/></a></p>
+							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><span class="bold">Cite this digital edition (MLA)</span><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -579,7 +579,7 @@
 		</xsl:choose>
 		<footer class="footer" id="footer-div">
             <hr />
-			<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
+			<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
         </footer>
 	</xsl:template>
 

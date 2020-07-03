@@ -33,7 +33,11 @@
     <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
-    <nav class="topnav" aria-labelledby="nav1">
+        <nav id="skiptocontent">
+			<a href="#main" tabindex="1">skip to main content</a>
+		</nav>
+		
+		<nav class="topnav" aria-labelledby="nav1">
         <ul role="menubar" id="nav1" aria-label="Site Sections">
             <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
             <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
@@ -78,7 +82,7 @@
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
     <nav id="sticky" aria-labelledby="nav2">
         <div class="menu" id="nav2">
-            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
         </div>
     </nav>
@@ -124,7 +128,7 @@
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
     </header>
     
-    <main class="main" id="main-div">
+    <main class="main" id="main-div"><a class="anchor" id="main"></a>
 		<h3>Analytical Priorities</h3>
 
         <p>The <span class="italic">One More Voice</span> project grows out of the fact that non-European contributions survive in abundance in nineteenth-century British imperial and colonial archives. By archives, we mean the total of imperial and colonial writing from the period, not just physical archives and not just manuscripts because many printed sources – especially those from the nineteenth-century periodical press – remain unstudied or understudied. As noted on our <a href="index.html">home page</a>, the non-European contributions in these archives take multiple forms and appear in multiple genres. <span class="italic">One More Voice</span> attempts to critically interrogate this abundance in a systematic fashion. The project’s analytical priorities have evolved out of extensive previous research by the <a href="contributors">project contributors</a>, including ten years of <a href="https://livingstoneonline.org/">Livingstone Online</a> development and ideas set out in a variety of print publications (see <a href="bibliography.html">Bibliography</a>).</p>

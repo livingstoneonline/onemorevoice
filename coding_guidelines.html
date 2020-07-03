@@ -33,7 +33,11 @@
     <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
     
-    <nav class="topnav" aria-labelledby="nav1">
+        <nav id="skiptocontent">
+			<a href="#main" tabindex="1">skip to main content</a>
+		</nav>
+		
+		<nav class="topnav" aria-labelledby="nav1">
         <ul role="menubar" id="nav1" aria-label="Site Sections">
             <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
             <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
@@ -78,7 +82,7 @@
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
     <nav id="sticky" aria-labelledby="nav2">
         <div class="menu" id="nav2">
-            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()"><i class="fa fa-bars"></i></a></span>
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
         </div>
     </nav>
@@ -124,7 +128,7 @@
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
     </header>
     
-    <main class="main" id="main-div">
+    <main class="main" id="main-div"><a class="anchor" id="main"></a>
 		<h3>Coding Guidelines</h3>
 		
 		<p>The <span class="italic">One More Voice</span> project team has developed a set of lightweight <a href="https://tei-c.org/">TEI coding guidelines</a> in keeping with the minimal computing approach of the project as a whole. The guidelines are based on a simplified version of the <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines">coding guidelines</a> previously created for <a href="https://livingstoneonline.org/">Livingstone Online</a>. The latter were developed over a ten-year period through a series of <span class="italic">Livingstone Online</span> initiatives. For the <span class="italic">One More Voice</span> guidelines, the project team prioritized key structural and content TEI tags, attributes, and values with two primary goals in mind: 1) Providing a basic TEI scaffolding to support further encoding work by the project team or by others; and 2) Enabling edited and encoded TEI items to be transformed (via XSLT) into <a href="texts.html">facsimile HTML versions</a> for online publication.</p>

@@ -1033,12 +1033,20 @@ button::-moz-focus-inner {
 		display: block;
 	}
 }
+#rotate-button:hover{
+	color:whitesmoke;
+	background-color: #424242;
+
+}
 #rotate-button:focus{
 	border: 2px #2e68ac solid;
 }
 #rotate-button.click-color{
 	color: whitesmoke;
 	background-color: #858585;
+}
+#rotate-button.click-color:hover{
+	background-color: #424242;
 }
 .rotate-180{
 	-ms-transform:rotate(180deg); /* IE 9 */

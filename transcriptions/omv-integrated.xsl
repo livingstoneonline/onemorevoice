@@ -833,19 +833,19 @@
 					<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 					<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				</xsl:if>
-				<span class="figure"><span class="graphic"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}" style="width:100%;"/></a></span></span>
+				<span class="figure"><span class="{concat('graphic', ' ', ..//graphic/@rend)}"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}"/></a></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='medium']">
-				<span class="figure"><span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+				<span class="figure"><span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic[@n='small']">
-				<span class="figure"><span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+				<span class="figure"><span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
-			<xsl:when test="..//graphic[@n='inline-left small']">
-				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+			<xsl:when test="..//graphic[@n='small inline-left']">
+				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
-				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}" style="width:100%;"/><!--</a>--></span></span>
+				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="figure"><span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span></span>

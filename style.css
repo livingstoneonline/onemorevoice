@@ -179,6 +179,7 @@ body.transcription .title{
 		display: block;
 	}
 }
+img,
 .image{
 	margin-left: auto;
 	margin-right: auto;
@@ -1476,6 +1477,14 @@ table .linenumber{
 @media only screen and (min-width: 768px){
 	.artifact .graphic{
 		pointer-events: unset;
+	}
+	.artifact .graphic.vertical img{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 992px){
+	.artifact .graphic.vertical img{
+		width: 70%;
 	}
 }
 .journal .image-small.inline-left{

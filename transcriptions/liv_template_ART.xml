@@ -15,7 +15,6 @@
 				<author role="first"></author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized"></author><!-- First author only: Forename Surname -->
 				<author role="normalized"></author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
-                <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
@@ -35,7 +34,6 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
             <sourceDesc>
                 <msDesc type="artifact">
                     <msIdentifier>
@@ -60,9 +58,6 @@
                     <placeName type="compositionPlace"></placeName>
                 </bibl>
             </sourceDesc>
-			<!-- End of manuscript <sourceDesc> -->
-
-			
 
         </fileDesc>
         <profileDesc>
@@ -93,8 +88,8 @@
 	<!-- Put a <pb> at the beginning of each page -->
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
-    <pb facs="liv_021001_0001" n="0001"/>
-<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_021xxx_0001.jpg"/><figDesc><!-- Provide text to be used as alt text for image (max. 125 characters with spaces) --></figDesc></figure></p>
+    <pb facs="liv_0210xx_0001" n="0001"/>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_0210xx_0001.jpg"/><figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc></figure></p>
 
 
             </div>

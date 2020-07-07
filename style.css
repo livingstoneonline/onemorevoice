@@ -896,6 +896,16 @@ ol li ol{
 
 	}
 }
+/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
+ol.concept-list li,
+ul.concept-list li{
+	margin-bottom: .7em;
+}
+ol.concept-list li:last-child,
+ul.concept-list li:last-child{
+   margin-bottom: 0;
+}
+
 
 
 /** 2.0 Transcription CSS **/

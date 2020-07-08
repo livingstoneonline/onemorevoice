@@ -11,6 +11,7 @@ function openNav() {
   if (document.getElementById("credits-div") !== null) {document.getElementById("credits-div").style.display = "none"};
   if (document.getElementById("credits1-div") !== null) {document.getElementById("credits1-div").style.display = "none"};
   if (document.getElementById("credits2-div") !== null) {document.getElementById("credits2-div").style.display = "none"};
+  if (document.getElementById("footer-div") !== null) {document.getElementById("footer-div").style.display = "none"};
 }
 
 function closeNav() {
@@ -23,4 +24,5 @@ function closeNav() {
   if (document.getElementById("credits-div") !== null) {document.getElementById("credits-div").style.display = "block"};
   if (document.getElementById("credits1-div") !== null) {document.getElementById("credits1-div").style.display = "block"};
   if (document.getElementById("credits2-div") !== null) {document.getElementById("credits2-div").style.display = "block"};
+  if (document.getElementById("footer-div") !== null) {document.getElementById("footer-div").style.display = "block"};
 }

@@ -845,13 +845,15 @@ hr{
 
 ol,
 ul{
-	padding: 0 0 0 1.2em;
+	padding: 0 0 0 1.4em;
 	margin:0;
 }
 ol li ol{
 	padding: 0 0 0 .5em;
 }
 @media only screen and (min-width: 768px){
+	ol,
+	ul,
 	ol li ol{
 		padding-left: 1.2em;
 	}

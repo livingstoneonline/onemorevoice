@@ -489,6 +489,8 @@ a::after{
 }
 label::after{
 	content: '\f0da'; /* closed folder */
+	display: inline-block;
+    width: 0.5em;
 }
 input:checked + label::after{
 	content: '\f0d7'; /* open folder */

@@ -1286,6 +1286,9 @@ table .linenumber{
 .halfline.quarterline{
 	width: 30%;
 }
+.quarterline.quarterline{
+	width: 15%;
+}
 .quarterline.doubleline{
 	border-top: 4px double #8c8b8b;
 }
@@ -1301,6 +1304,9 @@ table .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
+}
+.vertical.line{
+	display: none;
 }
 
 

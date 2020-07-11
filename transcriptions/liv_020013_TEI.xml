@@ -7,8 +7,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Jacob Wainwright</title>
-                <title type="alternative">Jacob Wainwright, 1 September 1874</title><!-- Change; note addition of date -->
+                <title>“Jacob Wainwright”</title>
+                <title type="alternative">“Jacob Wainwright,” 1 September 1874</title><!-- Change; note addition of date -->
                 <author>[Wainwright, Jacob, c.1851/2-1892]</author>
                 <author role="first">[Wainwright, Jacob]</author>
 				<author role="first-normalized">[Jacob Wainwright]</author>
@@ -58,8 +58,20 @@
 					</monogr>
 				</biblStruct>
                 <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Jacob Wainwright”</title>
+					<title type="normalized">‘Jacob Wainwright’</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
                   	<author xml:id="JW">[Wainwright, Jacob, c.1851/2-1892]</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
                     <date type="publication" when="1874-09-01">1 September 1874</date>
+					<!-- Focus region (if known; otherwise leave blank) -->
+                    <placeName type="focusRegion">[East Africa]</placeName>
                 </bibl>
             </sourceDesc>
         </fileDesc>

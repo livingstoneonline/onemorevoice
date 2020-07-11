@@ -78,6 +78,7 @@
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
 					<title></title>
+					<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single here; otherwise leave blank -->
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
@@ -95,14 +96,14 @@
             <sourceDesc>
 				<biblStruct type="journal">
 					<monogr><!-- Default is periodical article; if book section, change to <monogr n="book-section"> -->
-						<title></title><!-- Publication title -->
-						<!-- Each author: Forename Surname -->
-						<!-- Same as <author role="first-normalized"> and <author role="normalized"> above -->
-						<!-- xml:id = each author's initials -->
+						<title></title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
 	                    <author></author>
 						<editor></editor><!-- Editor (if known; otherwise leave blank -->
 						<imprint>
 							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope><!-- Volume (if known; otherwise leave blank) -->
 							<biblScope unit="pages"></biblScope><!-- Pages (if known; otherwise leave blank) -->
 							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank) -->
 							<publisher></publisher><!-- Publisher (if known; otherwise leave blank) -->
@@ -114,6 +115,7 @@
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
 					<title></title>
+					<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single here; otherwise leave blank -->
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
@@ -123,7 +125,7 @@
 					<!-- @when = YYYY-MM-DD -->
                     <date type="publication" when=""></date>
 					<!-- Focus region (if known; otherwise leave blank) -->
-                    <placeName type="focusRegion"></placeName>
+                    <placeName type=""></placeName><!-- type is either focusRegion or compositionPlace -->
                 </bibl>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
@@ -148,8 +150,8 @@
     </teiHeader>
 
     <text>
-		<body n=""><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
-			<div rend=""><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+		<body n=""><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div rend=""><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
 
 	<!-- ndash: &#8211; -->
 	<!-- mdash: &#8212; -->

@@ -10,9 +10,9 @@
             <titleStmt>
                 <title>Sechele</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
                 <title type="alternative">Sechele, [Second half of nineteenth century]</title><!-- Title, date -->
-                <author>Anon.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first">Anon.</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Anon.</author><!-- First author only: Forename Surname -->
+                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
@@ -48,7 +48,7 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-                    <author xml:id="An">Anon.</author>
+                    <author xml:id="An">Anonymous</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" from="1860" to="1890">[Second half of nineteenth century]</date>

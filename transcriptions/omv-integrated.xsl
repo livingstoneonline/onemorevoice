@@ -353,8 +353,8 @@
 		</xsl:variable>
 		<xsl:variable name="normTitle">
 			<xsl:choose>
-				<xsl:when test="//teiHeader//sourceDesc/bibl/title[(@type='normalized')]">
-					<xsl:value-of select="//teiHeader//sourceDesc/bibl/title[(@type='normalized')]"/>
+				<xsl:when test="//teiHeader/fileDesc/titleStmt/title[(@type='normalized')]">
+					<xsl:value-of select="//teiHeader/fileDesc/titleStmt/title[(@type='normalized')]"/>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:value-of select="//teiHeader//sourceDesc/bibl/title[not(@type='alternative')]"/>

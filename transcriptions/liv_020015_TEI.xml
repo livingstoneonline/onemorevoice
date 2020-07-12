@@ -8,11 +8,12 @@
         <fileDesc>
             <titleStmt>
                 <title>“Gleanings and Glances” (Excerpt); “Letter from an African Chief”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Gleanings and Glances’ (Excerpt); ‘Letter from an African Chief’</title>
                 <title type="alternative">“Gleanings and Glances” (Excerpt); “Letter from an African Chief,” 1 June 1894</title><!-- Title, date -->
                 <author>Anon.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author>Ncwadi</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="first">Anon.</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Anon.</author><!-- First author only: Forename Surname -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
 				<author role="normalized">Ncwadi</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
@@ -70,11 +71,10 @@
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
 					<title>“Gleanings and Glances” (Excerpt); “Letter from an African Chief”</title>
-					<title type="normalized">‘Gleanings and Glances’ (Excerpt); ‘Letter from an African Chief’</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-					<author xml:id="An">Anon.</author>
+					<author xml:id="An">Anonymous</author>
                     <author xml:id="NN">Ncwadi</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
@@ -164,13 +164,13 @@
 <p><space extent="1" unit="words"/>I received the letter from <persName>Josiah Tshangana Gumede</persName>, who is my cousin, and he said they are from you. I was very pleased to receive them, because I did not know, that I can have a friend in <country>England</country>. I return so many thanks for your kindness of presenting us with the toys for the school children, and by all means to develop my school. I am as one in a dream, when I hear the thing I had not expected, because I was still mourning for their being expelled by their masters, and that led them under great trouble, and now I hear glad tidings for them, and that I am valued much by the gentlemen and gentleladies of the highest rank in <country>England</country>, and who desire me welfare and improvement in education, civilization, and ecclesiastical course. Education is the most thing I value under the sun. I also return thanks for those written papers you sent me, whereas I cannot promise you anything at present.</p>
 <p>I thank you also for your kindness of treating <persName>Josiah</persName> so well and comfort during their hard times. May God bless you and have an improvement in your thoughts. May the Almighty be with you, and preserve you, and perhaps by His everlasting mercy may arise me from a sleep and consider what will take place in the future, that is in the world to come, where there will be no parting for evermore.</p>
 <p>Give my best love to all your friends in <country>England</country>. May God be with you till we meet.</p>
-<p rend="right">Believe me, <space extent="6" unit="words"/> 
-<lb/>Ever most truly yours, <space extent="2" unit="words"/>
-<lb/><hi rend="smallcaps">Ncwadi Nkosi</hi>. <space extent="2" unit="chars"/></p>
+<p rend="right">Believe me, <space extent="6" unit="words"/></p>
+<lb/><p rend="right">Ever most truly yours, <space extent="2" unit="words"/></p>
+<lb/><p rend="right"><hi rend="smallcaps">Ncwadi Nkosi</hi>. <space extent="2" unit="chars"/></p>
 	</div>
 
 	<div rend="center">
-<milestone unit="section" rend="quarter-line"/>
+<lb/><milestone unit="section" rend="quarter-line"/>
 <gap extent="4" unit="lines" agent="omitted-text"/><!-- Text from previous article omitted here. AW -->
 	</div>
 			</div>

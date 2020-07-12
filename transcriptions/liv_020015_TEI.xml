@@ -10,10 +10,10 @@
                 <title>“Gleanings and Glances” (Excerpt); “Letter from an African Chief”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
                 <title type="alternative">“Gleanings and Glances” (Excerpt); “Letter from an African Chief,” 1 June 1894</title><!-- Title, date -->
                 <author>Anon.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-                <author>Nkosi, Ncwadi</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Ncwadi</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first">Anon.</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Anon.</author><!-- First author only: Forename Surname -->
-				<author role="normalized">Ncwadi Nkosi</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Ncwadi</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -54,7 +54,7 @@
             <sourceDesc>
 				<biblStruct type="journal">
 					<monogr><!-- Default is periodical article; if book section, change to <monogr n="book-section"> -->
-						<title>The Illustrated Missionary News</title><!-- Publication title --> <!-- The bibliography says "Pictorial" instead of Illustrated on the broadside - not sure which to use? HB -->
+						<title>The Illustrated Missionary News</title><!-- Publication title --> <!-- The bibliography says "Pictorial" instead of Illustrated on the broadside - not sure which to use? HB --><!-- Illustrated. AW -->
 						<editor></editor><!-- Editor (if known; otherwise leave blank -->
 						<imprint>
 							<biblScope unit="vol">28</biblScope><!-- Volume (if known; otherwise leave blank -->
@@ -75,7 +75,7 @@
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
 					<author xml:id="An">Anon.</author>
-                    <author xml:id="NN">Nkosi, Ncwadi</author>
+                    <author xml:id="NN">Ncwadi</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->

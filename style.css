@@ -935,6 +935,9 @@ ul.concept-list li:last-child{
 		display: block !important; /* Tied to overlay */
 	}
 }
+.TEI{
+	position: relative;
+}
 .manuscript .TEI{
 	padding: 2em 0 5em 0;
 	margin: 2em 0;
@@ -1210,8 +1213,8 @@ button::-moz-focus-inner {
 	text-indent: 0;
 }
 .fw.catch.right{
-	margin-left: 14em;
-	text-indent: 0;
+	right: 0;
+	position: absolute;
 }
 table{
 	border-style: none;
@@ -1381,12 +1384,8 @@ table .linenumber{
 	margin-left: 4em;
 }
 .journal .right{
-	text-align: right;
-}
-.journal .p .right,
-.journal .ab .right,
-.journal .fw .right{
-	float: right;
+	right: 0;
+	position: absolute;
 }
 .small{
 	font-size: .85em;

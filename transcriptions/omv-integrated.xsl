@@ -822,6 +822,16 @@
 							<xsl:otherwise/>
 						</xsl:choose>
 					</xsl:variable>
+					<xsl:variable name="normTitle">
+						<xsl:choose>
+							<xsl:when test="//teiHeader/fileDesc/titleStmt/title[(@type='normalized')]">
+								<xsl:value-of select="//teiHeader/fileDesc/titleStmt/title[(@type='normalized')]"/>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="//teiHeader//sourceDesc/bibl/title[not(@type='alternative')]"/>
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:variable>
 					<xsl:variable name="copyright2">
 						<xsl:choose>
 						<xsl:when test="//availability/licence[@target]">
@@ -830,7 +840,7 @@
 						<xsl:when test="not(//availability/licence[@target])"/>					
 						</xsl:choose>
 					</xsl:variable>
-					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="//titleStmt/title[(@type='normalized')]"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/><xsl:text>, “</xsl:text><xsl:value-of select="$normTitle"/><xsl:text>”, </xsl:text><xsl:value-of select="//sourceDesc/bibl/date"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
 				</xsl:variable>
 				<!-- This variable creates a static id for all images to be rotated. This is not an ideal solution and needs to be improved down the road because, if there are two artifact images in the same document that both need to rotated, they will both get the same id. -->
 				<!-- The following code instead, if used in place of <xsl:text>image-to-rotate</xsl:text> below, gives each image to be rotated a unique id based on its page number(s). This could be the way to a better solution, but would involved working out the Javascript to select that same id.-->

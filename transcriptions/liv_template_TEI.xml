@@ -8,6 +8,7 @@
         <fileDesc>
             <titleStmt>
                 <title></title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise leave blank -->
                 <title type="alternative"></title><!-- Title, date -->
                 <author></author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
@@ -78,7 +79,6 @@
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
 					<title></title>
-					<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single here; otherwise leave blank -->
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
@@ -115,7 +115,6 @@
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
 					<title></title>
-					<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single here; otherwise leave blank -->
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->

@@ -1213,17 +1213,25 @@ button::-moz-focus-inner {
 	text-indent: 0;
 }
 .fw.catch.right{
+	text-align: right;
 	right: 0;
 	position: absolute;
 }
 table{
+	font-size: .9em;
 	border-style: none;
 	margin: 0 auto;
 	line-height: 1.3em;
 }
+@media only screen and (min-width: 768px){
+	table{
+		font-size: 1em;
+
+	}
+}
 tr,
 td{
-	text-alight: left;
+	text-align: left;
 	border-style: none;
 }
 table .linenumber{
@@ -1385,6 +1393,7 @@ table .linenumber{
 	margin-left: 4em;
 }
 .journal .right{
+	text-align: left;
 	right: 0;
 	position: absolute;
 }

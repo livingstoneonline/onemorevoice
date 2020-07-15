@@ -695,7 +695,7 @@
 	</xsl:template>
 
 	<xsl:template match="add">
-			<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}">
+			<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}">
 			<xsl:apply-templates/></span>
 	</xsl:template>
 

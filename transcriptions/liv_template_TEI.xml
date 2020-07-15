@@ -49,14 +49,14 @@
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date>
                 <idno type="LEAP-ID"></idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target=""></ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
 					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
 				</availability>
-				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
-				<!-- @target = URL of source -->
-				<ref target=""></ref>
 			</publicationStmt>
 
 			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->

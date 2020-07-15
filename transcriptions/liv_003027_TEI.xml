@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_003027"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter to Robert Moffat 1 with Speech</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Letter to Robert Moffat 1 with Speech, October 1852</title><!-- Title, date -->
+                <author>Sechele, 1812-1892</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Sechele</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Sechele</author><!-- First author only: Forename Surname -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="JL">
+                    <name>Justin D. Livingstone</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_003027</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+                <ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003027">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>London</settlement><!-- Repository city -->
+                        <repository>University of London, School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">CWM/LMS/Home/Livingstone Wooden Box/Item 71</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+                    <title>Letter to Robert Moffat 1 with Speech</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="S">Sechele, 1812-1892</author>
+                    <author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1852-10">[October 1852]</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">Limaoe (on the Kolobeng)</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+                <language ident="tn">Tswana</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-07-15" who="#AW">Proofing and Coding Review</change>
+			<change when="2020-07-13" who="#JL">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="c2d2d0"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_003027_0001" n="0001"/>
+<lb/><p rend="no-indent small"><add place="marginleft" rend="gray" hand="#U">71</add> <space extent="2" unit="words"/><add rend="gray" hand="#U">with letter to WT <date when="1852-10-12">Oct 12/52</date></add></p>
+<lb/><p><space extent="8" unit="words"/><settlement>Limaoe</settlement> (on the <geogName>Kolobeng</geogName>)
+<lb/><space extent="5" unit="words"/><add rend="gray diagonal" hand="#U" n="text liv_003027">Copied</add> <space extent="3" unit="words"/><space extent="1" unit="chars"/>(no date)</p>    
+<lb/><p>My Friend of my hearts' love and of all the confidence of
+<lb/>my heart, I am <persName>Sechele</persName> - <space extent="2" unit="chars"/>I am undone by the <term type="collective">Boers</term>,
+<lb/>who have attacked me (though) I had no guilt with them -
+<lb/>They required that I should be in their kingdom, but
+<lb/>I refused - <space extent="2" unit="chars"/>They demanded that I should present the
+<lb/><term type="collective">white people</term> - ("<foreign xml:lang="tn"><term type="collective">Makoa</term></foreign>" <term type="collective">English</term>, are so named <term type="collective">Boers</term> are called <foreign xml:lang="tn"><term type="collective">Maburu</term></foreign>)
+<lb/>The <term type="collective">Griquas</term> and <term type="collective">Battapi</term> from passing me (towards the North)
+<lb/>I repied all are my friends, and therefore I can <w>pre-
+<lb/>vent</w> no one (of them) <space extent="3" unit="chars"/>They said, that I must go and
+<lb/>speak with them <del type="strikethrough">but I said if you bring <persName>Edwards</persName></del>
+<lb/>and I replied I do not understand your language
+<lb/>but I said if you bring <persName>Edwards</persName> to be an interpreter
+<lb/>(between us) then I shall space with you - <space extent="2" unit="chars"/>They came on
+<lb/>Saturday and prepared <add place="below">^</add> <add place="above">to</add> fight on sabbath, but, I besought
+<lb/>them that they should not fight on the Sabbath and
+<lb/>they assented - <space extent="2" unit="chars"/>They began on Monday morning at
+<lb/>twilight and fired with all their might and burned
+<lb/>the town with fire and scattered us. <space extent="2" unit="chars"/>They killed sixty
+<lb/>of my people and captured women and children and
+<lb/>men - <space extent="2" unit="chars"/>And the mother of <persName>Balerileng</persName> <add place="inline">*</add> <note place="marginleft">a former wife of <persName>Sechele</persName> &amp; the mother of two children - She has since escaped from the
+    <lb/><term type="collective"><choice><sic>boers</sic><corr>Boers</corr></choice></term> but one of her children was given to another <term type="collective"><choice><sic>boer</sic><corr>Boer</corr></choice></term> than he who <choice><sic>recieved</sic><corr>received</corr></choice> her as
+    <lb/>his captive and is now in a state of hopeless slavery to one of these <hi rend="underline">"<term type="collective">Christians</term>"</hi></note>
+they also took
+<lb/>prisoner - They took all the cattle and all the goods
+<lb/>of the <term type="collective">Bakwains</term>, and the house of <persName>Livingstone</persName> they
+<lb/>also plundered taking all his goods - <space extent="2" unit="chars"/>The number
+   
+    <pb facs="liv_003027_0001" n="0002"/>
+<lb/>of their waggons was eighty five and a cannon, and
+<lb/>after they had stolen my waggon and that of <persName>Macabe</persName>
+<lb/>then the number of their waggons (counting the cannon as
+<lb/>one) was eighty eight - <space extent="2" unit="chars"/>Also the goods belonging to the
+<lb/>hunters (viz. <persName>Webb</persName> - <persName>Codrington</persName> - <persName>Green</persName> - <persName>Macabe</persName> <term type="collective">English</term> <w>gentle
+<lb/>men</w> exploring the country) were all burned with the town
+<lb/>and they have also scattered <choice><sic><persName>Sentuhe</persName>s</sic><corr><persName>Sentuhe</persName>'s</corr></choice> people and <persName>Mosielele</persName>'s
+<lb/>people, viz - <term type="collective">Wanketse</term> and <term type="collective">Bakhatla</term> -) and they have <w>determin
+<lb/>-ed</w> to destroy the whole country - <space extent="2" unit="chars"/>and of the <term type="collective">Boers</term> were
+<lb/>killed (28) twenty eight - (several <metamark place="below"/> have since died of their wounds
+<lb/>both <term type="collective">Boers</term> and <term type="collective">Bakwains</term>) - Both parties having several of 
+<lb/>their dead unburied) <space extent="2" unit="chars"/>Yes my beloved friend - now my
+<lb/>wife goes to see the children and <persName>Kobus Hae</persName> will convey
+<lb/>her to you -</p>
+<lb/><p>I forgot to mention that I said to the <term type="collective">Bakwains</term>
+<lb/>Let us flee to the south country but they replied "the
+<lb/>kingdoms of that country have not a bit of peace"
+<lb/>I shall therefore wait and see where they will settle</p>
+<lb/><p><space extent="1" unit="words"/>Salutations to all the teachers and to my children
+<lb/><space extent="3" unit="words"/>(signed) <space extent="4" unit="chars"/>I am <persName>Sechele</persName>
+<lb/><space extent="7" unit="words"/>Son of <persName>Mochoasele</persName></p>
+<lb/><p rend="no-indent"><persName>Rev<hi rend="sup">d</hi> R. Moffat</persName> <settlement>Kuruman</settlement>
+<lb/><choice><sic>Recieved</sic><corr>Received</corr></choice> in beginning of <date when="1852-10">October 1852</date> - <space extent="3" unit="chars"/>a true copy - <space extent="2" unit="chars"/>all the
+<lb/><space extent="9" unit="words"/><space extent="2" unit="chars"/>words added to bring out
+<lb/><space extent="9" unit="words"/>the meaning are in parentheses
+<lb/><space extent="13" unit="words"/><space extent="2" unit="chars"/><hi rend="small"><persName>D Livingston</persName></hi>
+</p>
+            </div>
+        </body>   
+    </text>
+</TEI>

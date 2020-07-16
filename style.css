@@ -1513,12 +1513,14 @@ table .linenumber{
 	pointer-events: none;
 	/* cursor: default; */
 }
+@media only screen and (min-width: 480px){
+	.artifact .graphic.vertical img{
+		width: 70%;
+	}
+}
 @media only screen and (min-width: 768px){
 	.artifact .graphic{
 		pointer-events: unset;
-	}
-	.artifact .graphic.vertical img{
-		width: 70%;
 	}
 }
 .journal .image-small.inline-left{

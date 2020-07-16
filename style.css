@@ -1635,13 +1635,18 @@ table .linenumber{
 	}
 }
 .metamark.first.liv_003027_0002{
-	padding: .3em .7em;
+	padding: .2em .7em;
 	margin-left: -.8em; 
 	border: 1px solid;
 	border-radius: 3em;
 }
-.metamark.second.liv_003027_0002{
-	border-top: 1px solid;
+@media only screen and (min-width: 768px){
+	.metamark.second.liv_003027_0002{
+		border-top: 1px solid;
+		padding-top: .205em;
+		padding-left: .7em;
+		margin-left: -.75em;
+	}
 }
 @media only screen and (min-width: 768px){
 	.text.liv_020011_0001{

@@ -998,22 +998,12 @@
 	<xsl:template match="note">
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}">[<xsl:apply-templates/>]</span>
+				<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">[<xsl:apply-templates/>]</span>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @anchored)}"><xsl:apply-templates/></span>
+				<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
 			</xsl:when>
 		</xsl:choose>
-	</xsl:template>
-
-	<xsl:template match="note[ancestor::add[@place='marginleft']]" priority="10">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>
-
-	<xsl:template match="p/note" priority="8">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="orgName">

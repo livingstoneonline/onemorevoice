@@ -1611,11 +1611,37 @@ table .linenumber{
 	-webkit-transform:rotate(330deg); /* Safari and Chrome */
 	-o-transform:rotate(330deg); /* Opera */
 }
-.metamark.liv_003027_0002{
+.note-1.liv_003027_0001{
+	padding-top: 1em;
+}
+@media only screen and (min-width: 768px){
+	.note-1.liv_003027_0001{
+		padding-top: 0;
+		float: left;
+		transform: rotate(270deg);
+		-ms-transform:rotate(270deg); /* IE 9 */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari and Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+		line-height: 1.2em;
+		margin: -20em 0em -25em -14em;
+	}
+	.note-2.liv_003027_0001{
+		float: right;
+		width: 85%;
+	}
+	.note-3.liv_003027_0002{
+		padding-left: 1em
+	}
+}
+.metamark.first.liv_003027_0002{
 	padding: .3em .7em;
 	margin-left: -.8em; 
 	border: 1px solid;
 	border-radius: 3em;
+}
+.metamark.second.liv_003027_0002{
+	border-top: 1px solid;
 }
 @media only screen and (min-width: 768px){
 	.text.liv_020011_0001{

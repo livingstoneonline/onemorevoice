@@ -73,13 +73,13 @@ body{
 @media only screen and (min-width: 768px){
 	body{
 		font-size: .95em;
-		max-width: 46em;
+		max-width: 42em;
 	}
 }
 @media only screen and (min-width: 992px){
 	body{
 		/* font-size: .85em; */
-		max-width: 42em;
+		/* max-width: 42em; */
 	}
 	body.fixed-nav{
 		padding-top: 0 !important;
@@ -382,7 +382,7 @@ a.anchor{
 @media only screen and (min-width: 768px){
 	.menu,
 	.fixed-nav .menu{
-		max-width: 46em;
+		max-width: 42em;
 	}
 }
 @media only screen and (min-width: 992px){

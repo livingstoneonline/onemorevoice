@@ -115,8 +115,11 @@
 	<!-- Put a <pb> at the beginning of each page -->
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
+
 <pb facs="liv_003027_0001" n="0001"/>
-<lb/><p rend="no-indent small"><add place="marginleft" rend="gray" hand="#U">71</add> <space extent="2" unit="words"/><add rend="gray" hand="#U">with letter to WT <date when="1852-10-12">Oct 12/52</date></add></p>
+
+<div n="note-2 liv_003027_0001">
+<p rend="no-indent small"><add place="marginleft" rend="gray" hand="#U">71</add> <space extent="2" unit="words"/><add rend="gray" hand="#U">with letter to WT <date when="1852-10-12">Oct 12/52</date></add></p>
 <lb/><p><space extent="8" unit="words"/><settlement>Limaoe</settlement> (on the <geogName>Kolobeng</geogName>)
 <lb/><space extent="5" unit="words"/><add rend="gray diagonal" hand="#U" n="text liv_003027_0001">Copied</add> <space extent="3" unit="words"/><space extent="1" unit="chars"/>(no date)</p>    
 <lb/><p>My Friend of my hearts' love and of all the confidence of
@@ -142,13 +145,18 @@
 <lb/>prisoner. <choice><sic>.</sic><corr></corr></choice> They took all the cattle and all the goods
 <lb/>of the <term type="collective">Bakwains</term>, and the house of <persName><choice><orig>Livingston</orig><reg>Livingstone</reg></choice></persName> they
 <lb/>also plundered taking all his goods - <space extent="2" unit="chars"/>The number
-<lb/>
-<lb/><note place="marginleft" rend="small vertical">a former wife of <persName>Sechele</persName> &amp; the mother of two children - She has since escaped from the
+</p>
+</div> 
+
+<div n="note-1 liv_003027_0001">
+<note place="marginleft" rend="small vertical">a former wife of <persName>Sechele</persName> &amp; the mother of two children - She has since escaped from the
 <lb/><term type="collective"><choice><sic>boers</sic><corr>Boers</corr></choice></term> but one of her children was given to another <term type="collective"><choice><sic>boer</sic><corr>Boer</corr></choice></term> than he who <choice><sic>recieved</sic><corr>received</corr></choice> her as
 <lb/>his captive and is now in a state of hopeless slavery to one of these "<hi rend="underline"><term type="collective">Christians</term></hi>"</note>
-   
-    <pb facs="liv_003027_0001" n="0002"/>
-<lb/>of their waggons was eighty five and a cannon, and
+</div>  
+
+<pb facs="liv_003027_0002" n="0002"/>
+<div n="note-3 liv_003027_0002">
+<p rend="no-indent">of their waggons was eighty five and a cannon, and
 <lb/>after they had stolen my waggon and that of <persName>Macabe</persName>
 <lb/>then the number of their waggons (counting the cannon as
 <lb/>one) was eighty eight. <space extent="2" unit="chars"/>Also the goods belonging to the
@@ -158,7 +166,7 @@
 <lb/>(people, viz. <term type="collective">Wanketse</term> and <term type="collective">Bakhatla</term> -) and they have <w>determin
 <lb/><seg type="hyphen">-</seg>ed</w> to destroy the whole country. <space extent="2" unit="chars"/>and of the <term type="collective">Boers</term> were
 <lb/>killed (28) twenty eight - (several <add place="below"><seg type="metamark">^</seg></add> have since died of their wounds
-<lb/><seg type="metamark" n="metamark liv_003027_0002">both <term type="collective">Boers</term> and <term type="collective">Bakwains</term></seg>. Both parties having several of 
+<lb/><seg type="metamark" n="metamark first liv_003027_0002">both <term type="collective">Boers</term> and <term type="collective">Bakwains</term></seg><seg type="metamark" n="metamark second liv_003027_0002">. Both p</seg>arties having several of 
 <lb/>their dead unburied) <space extent="2" unit="chars"/>Yes my beloved friend. now my
 <lb/>wife goes to see the children and <persName>Kobus Hae</persName> will convey
 <lb/>her to you.</p>
@@ -175,6 +183,7 @@
 <lb/><space extent="9" unit="words"/>the meaning are in parentheses
 <lb/><space extent="13" unit="words"/><space extent="2" unit="chars"/><hi rend="small"><persName>D <choice><orig>Livingston</orig><reg>Livingstone</reg></choice></persName></hi>
 </p>
+</div>
             </div>
         </body>   
     </text>

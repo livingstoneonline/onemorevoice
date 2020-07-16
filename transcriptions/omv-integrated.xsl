@@ -651,7 +651,7 @@
 	</xsl:template>
 
 	<xsl:template match="div">
-		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+		<div class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</div>
 	</xsl:template>
@@ -996,14 +996,7 @@
 	</xsl:template>
 	
 	<xsl:template match="note">
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">[<xsl:apply-templates/>]</span>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
-			</xsl:when>
-		</xsl:choose>
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="orgName">

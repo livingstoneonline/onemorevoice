@@ -174,7 +174,7 @@
 				    <img class="image image-border" src="../images/xml-code.png" alt="Coded text from an XML file produced by the One More Voice project according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
-	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></span><h2 class="italic"><xsl:value-of select="$subtitle"/></h2></div>
+	        		<div><span class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2 class="italic"><xsl:value-of select="$subtitle"/></h2></div>
 	    		</header>
 				<xsl:apply-templates select="TEI"/>
 			</body>
@@ -536,7 +536,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
@@ -557,7 +557,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr/>
-						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>
@@ -578,7 +578,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013; Back</a></p>
+						<p class="back-button"><a href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link">
 								<xsl:value-of select="//publicationStmt/ref/@target"/>

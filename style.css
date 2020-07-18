@@ -859,26 +859,28 @@ ol li ol{
 	}
 }
 
-/* The following six items are used on the texts.html page. */
-.auth-list{
+/* The following nine items are used on the texts.html page. */
+.author-entry{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-bottom: 1em;
+}
+.archival-entry{
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
-.bio{
-	padding-bottom: 1em;
-}
-.contrib-form{
+.contribution-form{
 	padding-left: 1em;
 	padding-bottom: 0em;
 	margin-bottom: 1em;
 	margin-top: 0em;
 }
 @media only screen and (min-width: 768px){
-	.contrib-form{
+	.contribution-form{
 		padding-left: 1.5em;
 	}
 }
-.crit-list{
+.critical-entry{
 	margin-top: 0em;
 	margin-bottom: 1em;
 }
@@ -888,6 +890,15 @@ ol li ol{
 .text-divider{
 	margin: 0 auto;
 	width: 40%;
+}
+.published-author{
+
+}
+.work-list{
+
+}
+.works-list li{
+
 }
 /* The following item is used on the site_map.html page. */
 .sitemap-list{

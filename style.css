@@ -859,7 +859,7 @@ ol li ol{
 	}
 }
 
-/* The following nine items are used on the texts.html page. */
+/* The following eight items are used on the texts.html page. */
 .author-entry{
 	margin-top: 0em;
 	margin-bottom: 0em;
@@ -892,13 +892,15 @@ ol li ol{
 	width: 40%;
 }
 .published-author{
-
+	padding: 1.5em 0 0 0;
 }
-.work-list{
-
+@media only screen and (min-width: 768px){
+	.works-list{
+		padding: 0 0 0 2em;
+	}
 }
 .works-list li{
-
+	padding: 0 0 .75em 0;
 }
 /* The following item is used on the site_map.html page. */
 .sitemap-list{

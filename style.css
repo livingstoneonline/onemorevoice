@@ -868,6 +868,12 @@ ol li ol{
 .archival-entry{
 	margin-top: 0em;
 	margin-bottom: 0em;
+
+}
+@media only screen and (min-width: 768px){
+	.archival-entry{
+		padding-left: 1em;
+	}
 }
 .contribution-form{
 	padding-left: 1em;
@@ -877,12 +883,17 @@ ol li ol{
 }
 @media only screen and (min-width: 768px){
 	.contribution-form{
-		padding-left: 1.5em;
+		padding-left: 2.5em;
 	}
 }
 .critical-entry{
 	margin-top: 0em;
 	margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px){
+	.critical-entry{
+		padding-left: 1em;
+	}
 }
 .artifacts-list li{
 	padding-bottom: 1em;

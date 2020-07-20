@@ -9,6 +9,7 @@
         <fileDesc>
             <titleStmt>
                 <title></title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise leave blank -->
                 <title type="alternative"></title><!-- Title, date -->
                 <author></author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
@@ -28,14 +29,18 @@
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date>
                 <idno type="LEAP-ID"></idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target=""></ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
 				</availability>
 			</publicationStmt>
 
+			<!-- Use this version of <sourceDesc> if the artifact comes from an archive; otherwise delete it -->
             <sourceDesc>
-                <msDesc type="artifact">
+                <msDesc type="artifact-archive">
                     <msIdentifier>
                         <country></country><!-- Repository country -->
                         <settlement></settlement><!-- Repository city -->
@@ -58,6 +63,43 @@
                     <placeName type="compositionPlace"></placeName>
                 </bibl>
             </sourceDesc>
+			<!-- End of archival <sourceDesc> -->
+
+			<!-- Use this version of <sourceDesc> if the artifact comes from a book or journal; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="artifact-book-journal">
+					<monogr>
+						<title></title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author></author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages"></biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher></publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date></date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title></title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id=""></author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when=""></date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace"></placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of book/journal <sourceDesc> -->
 
         </fileDesc>
         <profileDesc>

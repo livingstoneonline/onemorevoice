@@ -52,7 +52,7 @@
 			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
             <sourceDesc>
 				<biblStruct type="journal">
-					<monogr n="book-chapter"><!-- Default is journal/periodical article; if book chapter, change to <monogr n="book-chapter"> -->
+					<monogr n="book-section"><!-- Default is journal/periodical article; if book chapter, change to <monogr n="book-section"> -->
 						<title>Sir Benjamin Stone’s Pictures: Records of National Life and History</title><!-- Publication title -->
 						<!-- Each author: Forename Surname -->
 						<!-- Same as <author role="first-normalized"> and <author role="normalized"> above -->
@@ -61,8 +61,12 @@
 						<editor></editor><!-- Editor (if known; otherwise leave blank -->
 						<imprint>
 							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank -->
+							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank -->
 							<biblScope unit="pages">74</biblScope><!-- Pages (if known; otherwise leave blank -->
-							<pubPlace>London; Paris; New York; Melbourne</pubPlace><!-- Publication place (if known; otherwise leave blank -->
+							<pubPlace>London</pubPlace><!-- Publication place (if known; otherwise leave blank -->
+							<pubPlace>Paris</pubPlace><!-- Publication place (if known; otherwise leave blank -->
+							<pubPlace>New York</pubPlace><!-- Publication place (if known; otherwise leave blank -->
+							<pubPlace>Melbourne</pubPlace><!-- Publication place (if known; otherwise leave blank -->
 							<publisher>Cassell and Company, Limited</publisher><!-- Publisher (if known; otherwise leave blank -->
 							<date>1906</date><!-- Item date; same as date in <title type="alternative"> above -->
 						</imprint>

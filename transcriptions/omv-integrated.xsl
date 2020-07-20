@@ -28,7 +28,7 @@
 	<xsl:template match="/">
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='artifact']">Curated Historical Artifact</xsl:when>
+				<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">Curated Historical Artifact</xsl:when>
 				<xsl:otherwise>Critically-edited Primary Text</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
@@ -184,7 +184,7 @@
 	<!-- Don't show -->
 	<xsl:template match="teiHeader|facsimile|surface|zone"/>
 
-	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or artifact. -->
+	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or artifact (archive, book, journal). -->
 	<!-- TEI -->
 	<xsl:template match="TEI">
 		<xsl:variable name="body-color-front">
@@ -403,7 +403,7 @@
 					<hr/>
 				</aside>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -416,6 +416,21 @@
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Digital artifact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<hr/>
+				</aside>
+			</xsl:when>
+			<xsl:when test="//sourceDesc/biblStruct[@type='artifact-book-journal']">
+		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
+					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<p><span class="bold">Creator(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
+						<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
+					</xsl:if>
+					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
+					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
+					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><span class="bold">Digital artifact curation</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -506,7 +521,7 @@
 					</div>
 				</main>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
 				<main class="artifact" id="artifact-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
@@ -574,7 +589,7 @@
 					</div>
 				</aside>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
@@ -1032,7 +1047,7 @@
 					<xsl:value-of select="@n"/>
 				</span>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
 				<br/><br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
@@ -1043,7 +1058,7 @@
 
 	<xsl:template match="jc:page">
 		<xsl:choose> 
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='artifact']">
+			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
 			<div class="page">
 				<!--<br/>-->
 				<span class="pb-title">

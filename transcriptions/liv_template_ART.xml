@@ -9,7 +9,7 @@
         <fileDesc>
             <titleStmt>
                 <title></title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise leave blank -->
+				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
                 <title type="alternative"></title><!-- Title, date -->
                 <author></author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
@@ -59,7 +59,7 @@
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" when=""></date>
-					<!-- See item for composition place; leave blank if not given -->
+					<!-- See item for composition place; remove if not given -->
                     <placeName type="compositionPlace"></placeName>
                 </bibl>
             </sourceDesc>
@@ -95,7 +95,7 @@
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" when=""></date>
-					<!-- See item for composition place; leave blank if not given -->
+					<!-- See item for composition place; remove if not given -->
                     <placeName type="compositionPlace"></placeName>
                 </bibl>
             </sourceDesc>
@@ -131,7 +131,7 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_0210xx_0001" n="0001"/>
-<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_0210xx_0001.jpg"/><figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc></figure></p>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_0210xx_0001.jpg"/><!-- add rend="vertical" for portrait images --><figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc></figure></p>
 
 
             </div>

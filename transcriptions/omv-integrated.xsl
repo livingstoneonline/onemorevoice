@@ -321,16 +321,24 @@
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
 		<xsl:variable name="pub-deets">
+			<xsl:variable name="title">
+				<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='journal']//title">
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/>
+				</xsl:if>
+				<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='artifact-book-journal']//title">
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='artifact-book-journal']//title"/>
+				</xsl:if>
+			</xsl:variable>
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/biblStruct/monogr/@n='book-chapter'">
+				<xsl:when test="//sourceDesc/biblStruct/monogr/@n='book-section'">
 					<xsl:text>In </xsl:text>
-					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/></span>
+					<span class="italic"><xsl:value-of select="$title"/></span>
 					<xsl:text>, by </xsl:text>
-					<xsl:value-of select="//sourceDesc/biblStruct/monogr/author"/>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/author" separator=" and "/>
 					<xsl:text>, </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='pages']"/>
 					<xsl:text>. </xsl:text>
-					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace"/>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
 					<xsl:text>: </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher"/>
 					<xsl:text>, </xsl:text>

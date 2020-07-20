@@ -340,7 +340,7 @@
 					<xsl:text>. </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
 					<xsl:text>: </xsl:text>
-					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher"/>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher" separator="; "/>
 					<xsl:text>, </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
 					<xsl:text>.</xsl:text>
@@ -428,7 +428,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='artifact-book-journal']">
-		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Creator(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">

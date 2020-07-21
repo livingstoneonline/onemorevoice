@@ -1540,15 +1540,22 @@ table .linenumber{
 	pointer-events: none;
 	/* cursor: default; */
 }
+@media only screen and (min-width: 768px){
+	.artifact .graphic{
+		pointer-events: unset;
+	}
+}
 @media only screen and (min-width: 480px){
 	.artifact .graphic.vertical img{
 		width: 70%;
 	}
 }
-@media only screen and (min-width: 768px){
-	.artifact .graphic{
-		pointer-events: unset;
-	}
+.artifact .graphic.gray img{
+	border: 3px #dbdbdb solid;
+}
+.artifact .graphic.gray a:hover img,
+.artifact .graphic.gray a:focus img{
+	border: 3px #2e68ac solid;
 }
 .journal .image-small.inline-left{
 	float: left;

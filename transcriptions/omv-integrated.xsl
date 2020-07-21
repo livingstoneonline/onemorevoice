@@ -338,6 +338,9 @@
 					<xsl:text>, </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='pages']"/>
 					<xsl:text>. </xsl:text>
+					<xsl:if test="//sourceDesc/biblStruct/monogr/editor/text()">
+						<xsl:text>Edited by </xsl:text><xsl:value-of select="//sourceDesc/biblStruct/monogr/editor"/><xsl:text>. </xsl:text>
+					</xsl:if>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
 					<xsl:text>: </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher" separator="; "/>

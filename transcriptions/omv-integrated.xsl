@@ -330,7 +330,7 @@
 				</xsl:if>
 			</xsl:variable>
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/biblStruct/monogr/@n='book-section'">
+				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book-section')]">
 					<xsl:text>In </xsl:text>
 					<span class="italic"><xsl:value-of select="$title"/></span>
 					<xsl:text>, by </xsl:text>
@@ -508,7 +508,10 @@
 				</main>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<main class="journal" id="journal-div"><!-- style="background:#{$body-color};" -->
+				<xsl:variable name="narrow">
+					<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
+				</xsl:variable>
+				<main class="journal {$narrow}" id="journal-div"><!-- style="background:#{$body-color};" -->
 					<div class="TEI">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>

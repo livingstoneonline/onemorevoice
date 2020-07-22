@@ -962,6 +962,12 @@ ul.concept-list li:last-child{
 		display: block !important; /* Tied to overlay */
 	}
 }
+@media only screen and (min-width: 768px){
+	.journal.narrow{
+		width: 70%;
+		margin: 0 auto;
+	}
+}
 .TEI{
 	position: relative;
 }

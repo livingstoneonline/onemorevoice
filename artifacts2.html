@@ -93,9 +93,15 @@
       border: 2px #2e68ac solid;
     }
     .gallery figure img {
-      height: 80%;
+      height: 75%;
       object-fit: scale-down;
-      padding: 5px 0;
+      padding: 7px 0;
+    }
+    @media only screen and (min-width : 480px) {
+      .gallery figure img {
+        height: 85%;
+        padding: 18px 0 3px 0;
+      }
     }
     .gallery figure figcaption {
        position: absolute;
@@ -106,7 +112,7 @@
        background: rgba(0, 0, 0, 0.5);*/
        /* color: inherit;
        background: white; */
-       padding: 6px;
+       padding: 14px 5px 0 5px;
        text-align: center;
        font-size: .85em;
        display: flex;

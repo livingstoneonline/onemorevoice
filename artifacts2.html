@@ -22,15 +22,23 @@
 	</script>    
   <style type="text/css">
   /* https://stackoverflow.com/questions/18673900/how-to-center-and-crop-an-image-to-always-appear-in-square-shape-with-css/18674144 */
+  @media only screen and (min-width : 768px) {
     .title{
       padding-bottom: 1em;
     }
-    /* h3{
-      padding-left:0;
-    } */
+  }
+    h3{
+      text-align: center;
+      padding: 0;
+    }
     @media only screen and (min-width : 768px) {
     h3 {
       padding-left:10px;
+      text-align: left;
+    }
+    }
+    .gallery {
+       overflow: hidden;
     }
     .gallery img{
       width: 90%;
@@ -43,8 +51,6 @@
     }
     .gallery figure {
        position: absolute;
-       /* left: 10px;
-       right: 10px; */
        left: 0;
        right: 0;
        top: 10px;
@@ -65,7 +71,6 @@
       border: 2px #2e68ac solid;
     }
     .gallery figure img {
-      /* position: absolute; */
       height: 75%;
       object-fit: scale-down;
       padding: 10px;
@@ -75,19 +80,13 @@
        bottom: 0;
        left: 0;
        right: 0;
-       /* margin-bottom: -50px; */
        /* background: #000;
-       background: rgba(0, 0, 0, 0.5);
-       color: #FFF; */
+       background: rgba(0, 0, 0, 0.5);*/
        color: inherit;
        background: white;
        padding: 10px;
        text-align: center;
        font-size: .9em;
-       /* -webkit-transition: all 0.3s ease-out;
-       -moz-transition: all 0.3s ease-out;
-       -o-transition: all 0.3s ease-out;
-       transition: all 0.3s ease-out; */
     }
       @media only screen and (min-width : 768px) {
         .gallery-item {
@@ -95,33 +94,6 @@
           padding-bottom: 50%;
         }
       }
-      /* @media only screen and (min-width : 768px) {
-        .box {
-          width: 33.3%;
-          padding-bottom: 33.3%;
-        }
-      } */
-      /* @media only screen and (min-width : 992px) {
-      .main{
-      width: 150%;
-      margin: 0 -25%;
-      }
-      } */
-    /* .object-fit_fill {
-      object-fit: fill
-    }
-    .object-fit_contain {
-      object-fit: contain
-    }
-    .object-fit_cover {
-      object-fit: cover
-    }
-    .object-fit_none {
-      object-fit: none
-    }
-    .object-fit_scale-down {
-      object-fit: scale-down
-    } */
 	</style>
 </head>
 
@@ -257,109 +229,109 @@
     
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021007"></a>
-        <img src="artifact-images/liv_021007_0001.jpg" />
+        <img src="artifact-images/liv_021007_0001.jpg" alt="" />
         <figcaption>Butterfly</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021010"></a>
-        <img src="artifact-images/liv_021010_0001.jpg" />
+        <img src="artifact-images/liv_021010_0001.jpg" alt="" />
         <figcaption>An old greenhouse</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021005"></a>
-        <img class="object-fit_fill" src="artifact-images/liv_021005_0001.jpg" />
+        <img class="object-fit_fill" src="artifact-images/liv_021005_0001.jpg" alt="" />
         <figcaption>Purple wildflowers</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021011"></a>
-        <img src="artifact-images/liv_021011_0001.jpg" />
+        <img src="artifact-images/liv_021011_0001.jpg" alt="" />
         <figcaption>A birdfeeder</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021012"></a>
-        <img src="artifact-images/liv_021012_0001.jpg" />
+        <img src="artifact-images/liv_021012_0001.jpg" alt="" />
         <figcaption>Crocus close-up</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021006"></a>
-        <img src="artifact-images/liv_021006_0001.jpg" />
+        <img src="artifact-images/liv_021006_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021008"></a>
-        <img src="artifact-images/liv_021008_0001.jpg" />
+        <img src="artifact-images/liv_021008_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021013"></a>
-        <img src="artifact-images/liv_021013_0001.jpg" />
+        <img src="artifact-images/liv_021013_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021009"></a>
-        <img src="artifact-images/liv_021009_0001.jpg" />
+        <img src="artifact-images/liv_021009_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021014"></a>
-        <img src="artifact-images/liv_021014_0001.jpg" />
+        <img src="artifact-images/liv_021014_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021015"></a>
-        <img src="artifact-images/liv_021015_0001.jpg" />
+        <img src="artifact-images/liv_021015_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021016"></a>
-        <img src="artifact-images/liv_021016_0001.jpg" />
+        <img src="artifact-images/liv_021016_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_000003"></a>
-        <img src="artifact-images/liv_000003_0016-0017.jpg" />
+        <img src="artifact-images/liv_000003_0016-0017.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021003"></a>
-        <img src="artifact-images/liv_021003_0001.jpg" />
+        <img src="artifact-images/liv_021003_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021002"></a>
-        <img src="artifact-images/liv_021002_0001.jpg" />
+        <img src="artifact-images/liv_021002_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_000023"></a>
-        <img src="artifact-images/liv_000023_0077.jpg" />
+        <img src="artifact-images/liv_000023_0077.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021018"></a>
-        <img src="artifact-images/liv_021018_0003.jpg" />
+        <img src="artifact-images/liv_021018_0003.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021001"></a>
-        <img src="artifact-images/liv_021001_0001.jpg" />
+        <img src="artifact-images/liv_021001_0001.jpg" alt="" />
         <figcaption>The garden shop</figcaption>
       </figure>
     </div>

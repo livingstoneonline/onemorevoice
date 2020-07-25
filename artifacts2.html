@@ -54,6 +54,11 @@
     .gallery img{
       width: 90%;
     }
+    @media only screen and (min-width : 480px) {
+      .gallery img{
+        width: 95%;
+      }
+    }
     .gallery-item {
        float: left;
        position: relative;
@@ -88,9 +93,9 @@
       border: 2px #2e68ac solid;
     }
     .gallery figure img {
-      height: 75%;
+      height: 80%;
       object-fit: scale-down;
-      padding: 10px;
+      padding: 5px 0;
     }
     .gallery figure figcaption {
        position: absolute;
@@ -108,6 +113,12 @@
        align-items: center;
        height: 15px;
        justify-content: center;
+    }
+    @media only screen and (min-width : 480px) {
+      .gallery figure figcaption{
+        font-size: .95em;
+        height: 30px;
+    }
     }
     @media only screen and (min-width : 768px) {
       .gallery figure figcaption {

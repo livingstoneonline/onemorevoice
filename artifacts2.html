@@ -22,14 +22,14 @@
 	</script>    
   <style type="text/css">
   /* https://stackoverflow.com/questions/18673900/how-to-center-and-crop-an-image-to-always-appear-in-square-shape-with-css/18674144 */
-  @media only screen and (min-width : 768px) {
+  /* @media only screen and (min-width : 768px) {
     .title{
       padding-bottom: 1em;
     }
-  }
+  } */
     h3{
       text-align: center;
-      padding: 0;
+      /* padding: 0; */
       margin-bottom: 0;
     }
     @media only screen and (min-width : 768px) {
@@ -37,6 +37,12 @@
       padding-left:10px;
       text-align: left;
     }
+    }
+    .image-details{
+      text-align: center;
+      color: #65615b;
+      font-size: .85em;
+      font-style: italic;
     }
     .gallery {
        overflow: hidden;
@@ -234,6 +240,8 @@
     
     <main class="main" id="main-div"><a class="anchor" id="main"></a>
     <h3>Curated Artifacts</h3>
+
+    <p class="image-details">Click on image(s) for artifact details</p>
     
     <!-- Image gallery adapted from https://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/-->
 
@@ -242,13 +250,13 @@
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021007"></a>
         <img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
-        <figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” ([c.1874])</figcaption>
+        <figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” (c.1874)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021010"></a>
         <img src="artifact-images/liv_021010_0001.jpg" alt="African hut among a set of trees; caption says Susi and Chuma made this hut to model the one where David Livingstone died." />
-        <figcaption>Susi and Chuma's Model of the Hut in which David Livingstone Died ([late nineteenth or twentieth century])</figcaption>
+        <figcaption>Susi and Chuma's Model of the Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
@@ -260,67 +268,67 @@
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021011"></a>
         <img src="artifact-images/liv_021011_0001.jpg" alt="Apolo Kagwa and his son, both seated at a table; Kagwa holds a pen above a notebook." />
-        <figcaption>Apolo Kagwa, Katikiro of Uganda, and His Son ([early twentieth century])</figcaption>
+        <figcaption>Apolo Kagwa, Katikiro of Uganda, and His Son (early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><!-- <a class="anchor" id="liv_021011"></a> -->
         <img src="artifact-images/liv_021011_0002.jpg" alt="Ham Mukasa’s father, Ham Mukasa with a child on his lap, and Ham Mukasa’s wife with a child on her lap, all seated." />
-        <figcaption>Ham Mukasa, with Father, Wife, and Children ([early twentieth century])</figcaption>
+        <figcaption>Ham Mukasa, with Father, Wife, and Children (early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021012"></a>
         <img src="artifact-images/liv_021012_0001.jpg" alt="Headshot of Edward Wilmot Blyden." />
-        <figcaption>Edward Wilmot Blyden ([late nineteenth or early twentieth century])</figcaption>
+        <figcaption>Edward Wilmot Blyden (late nineteenth or early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021006"></a>
         <img src="artifact-images/liv_021006_0001.jpg" alt="Head and shoulders portrait of Matthew Wellington, facing forward." />
-        <figcaption>Matthew Wellington ([1874 or later])</figcaption>
+        <figcaption>Matthew Wellington (1874 or later)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021008"></a>
         <img src="artifact-images/liv_021008_0001.jpg" alt="Portrait from waist up of Matthew Wellington, seated and turned slightly to his right." />
-        <figcaption>Matthew Wellington ([1874 or later])</figcaption>
+        <figcaption>Matthew Wellington (1874 or later)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><!-- <a class="anchor" id="liv_021008"></a> -->
         <img src="artifact-images/liv_021008_0002.jpg" alt="Head and shoulders portrait of Matthew Wellington, in three-quarters profile facing to his left." />
-        <figcaption>Matthew Wellington ([1874 or later])</figcaption>
+        <figcaption>Matthew Wellington (1874 or later)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021013"></a>
         <img src="artifact-images/liv_021013_0001.jpg" alt="Head and shoulders portrait of Sarojini Naidu, in half profile facing to her right; facsimile signature below image." />
-        <figcaption>Sarojini Naidu (with Facsimile Signature) ([early twentieth century])</figcaption>
+        <figcaption>Sarojini Naidu (with Facsimile Signature) (early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021009"></a>
         <img src="artifact-images/liv_021009_0001.jpg" alt="Head and shoulders portrait of Sechele, in a golden frame." />
-        <figcaption>Sechele ([second half of nineteenth century])</figcaption>
+        <figcaption>Sechele (second half of nineteenth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021014"></a>
         <img src="artifact-images/liv_021014_0001.jpg" alt="Full-body portrait of Swami Vivekanada, standing, his body turned to the right but facing forward, holding a walking stick." />
-        <figcaption>Swami Vivekanada ([c.1893])</figcaption>
+        <figcaption>Swami Vivekanada (c.1893)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021015"></a>
         <img src="artifact-images/liv_021015_0001.jpg" alt="Portrait from the knees up of Cornelia Sorabji, in seven-eighths profile with body turned to her left, but facing right." />
-        <figcaption>Cornelia Sorabji (with Superimposed Facsimile Signature) ([late nineteenth or early twentieth century])</figcaption>
+        <figcaption>Cornelia Sorabji (with Superimposed Facsimile Signature) (late nineteenth or early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021016"></a>
         <img src="artifact-images/liv_021016_0001.jpg" alt="Full-body portrait of Ham Mukasa, facing forward, and Apolo Kagwa, in three-quarters profile facing to his right, standing." />
-        <figcaption>Ham Mukasa and Apolo Kagwa ([early twentieth century])</figcaption>
+        <figcaption>Ham Mukasa and Apolo Kagwa (early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
@@ -332,7 +340,7 @@
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021003"></a>
         <img src="artifact-images/liv_021003_0001.jpg" alt="Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right." />
-        <figcaption>Jacob Wainwright ([c.1874])</figcaption>
+        <figcaption>Jacob Wainwright (c.1874)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
@@ -344,7 +352,7 @@
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_000023"></a>
         <img src="artifact-images/liv_000023_0077.jpg" alt="Page from a David Livingstone notebook with a detailed Swahili vocabulary list and Arabic numbers from 1 to 10 and 10 to 90." />
-        <figcaption>Excerpt from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers ([c.March 1866 to March 1870])</figcaption>
+        <figcaption>Excerpt from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers (c.March 1866 to March 1870)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
@@ -356,19 +364,19 @@
     <div class="gallery-item">
       <figure><!-- <a class="anchor" id="liv_021018"></a> -->
         <img src="artifact-images/liv_021018_0002.jpg" alt="Portrait from the knees up of Solomon T. Plaatje, seated, in three-quarters profile facing to his right, writing at a table." />
-        <figcaption>Solomon T. Plaatje, Signed ([early twentieth century])</figcaption>
+        <figcaption>Solomon T. Plaatje, Signed (early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><!-- <a class="anchor" id="liv_021018"></a> -->
         <img src="artifact-images/liv_021018_0003.jpg" alt="Head and shoulders portrait of Elizabeth Lilith M'belle (Mrs. S.T. Plaatje); caption notes her contribution to Plaatje’ book." />
-        <figcaption>Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”) ([early twentieth century])</figcaption>
+        <figcaption>Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”) (early twentieth century)</figcaption>
       </figure>
     </div>
     <div class="gallery-item">
       <figure><a class="anchor" id="liv_021001"></a>
         <img src="artifact-images/liv_021001_0001.jpg" alt="Jacob Wainwright seated on board the ship “Malwa” and leaning against David Livingstone’s coffin and other boxes." />
-        <figcaption>Jacob Wainwright with David Livingstone’s Coffin and Some of Livingstone’s Travelling Trunks on Board the Ship ‘Malwa.’ (1874)</figcaption>
+        <figcaption>Jacob Wainwright with David Livingstone’s Coffin and Some of Livingstone’s Travelling Trunks on Board the Ship ‘Malwa’ (1874)</figcaption>
       </figure>
     </div>
 

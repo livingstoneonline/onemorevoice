@@ -20,24 +20,25 @@
 
   		gtag('config', 'UA-31768072-5');
 	</script>    
-	<style type="text/css">
-		@media screen and (min-width:480px) {
-		.responsive-image {
-			width: 73%;
-		}       
-		}
+  <style type="text/css">
+  /* https://stackoverflow.com/questions/18673900/how-to-center-and-crop-an-image-to-always-appear-in-square-shape-with-css/18674144 */
+    .title{
+      padding-bottom: 1em;
+    }
+    h3{
+      padding-left:10px;
+    }
     .wrap {
        overflow: hidden;
-       margin: 10px;
     }
     .wrap img{
-    margin: unset;
+      width: 90%;
     }
     .box {
        float: left;
        position: relative;
-       width: 20%;
-       padding-bottom: 20%;
+       width: 100%;
+       padding-bottom: 100%;
     }
     .boxInner {
        position: absolute;
@@ -46,61 +47,75 @@
        top: 10px;
        bottom: 10px;
        overflow: hidden;
+       border: 2px #dbdbdb solid;
+       text-align: center;
+    }
+    .boxInner:hover,
+    .boxInner:focus {
+      border: 2px #2e68ac solid;
     }
     .boxInner img {
-       width: 100%;
+      /* position: absolute; */
+      height: 75%;
+      object-fit: scale-down;
+      padding: 10px;
     }
     .boxInner .titleBox {
        position: absolute;
        bottom: 0;
        left: 0;
        right: 0;
-       margin-bottom: -50px;
-       background: #000;
+       /* margin-bottom: -50px; */
+       /* background: #000;
        background: rgba(0, 0, 0, 0.5);
-       color: #FFF;
+       color: #FFF; */
+       color: inherit;
+       background: white;
        padding: 10px;
        text-align: center;
-       -webkit-transition: all 0.3s ease-out;
+       font-size: .9em;
+       /* -webkit-transition: all 0.3s ease-out;
        -moz-transition: all 0.3s ease-out;
        -o-transition: all 0.3s ease-out;
-       transition: all 0.3s ease-out;
+       transition: all 0.3s ease-out; */
     }
-    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-        margin-bottom: 0;
-      }	
-    @media only screen and (max-width : 480px) {
-        /* Smartphone view: 1 tile */
+      @media only screen and (min-width : 768px) {
         .box {
-            width: 100%;
-            padding-bottom: 100%;
+          width: 50%;
+          padding-bottom: 50%;
         }
       }
-      @media only screen and (max-width : 650px) and (min-width : 481px) {
-        /* Tablet view: 2 tiles */
+      /* @media only screen and (min-width : 768px) {
         .box {
-            width: 50%;
-            padding-bottom: 50%;
+          width: 33.3%;
+          padding-bottom: 33.3%;
         }
+      } */
+      /* @media only screen and (min-width : 992px) {
+      .main{
+      width: 150%;
+      margin: 0 -25%;
       }
-      @media only screen and (max-width : 1050px) and (min-width : 651px) {
-        /* Small desktop / ipad view: 3 tiles */
-        .box {
-            width: 33.3%;
-            padding-bottom: 33.3%;
-        }
-      }
-      @media only screen and (max-width : 1290px) and (min-width : 1051px) {
-        /* Medium desktop: 4 tiles */
-        .box {
-            width: 25%;
-            padding-bottom: 25%;
-        }
-      }
+      } */
+    /* .object-fit_fill {
+      object-fit: fill
+    }
+    .object-fit_contain {
+      object-fit: contain
+    }
+    .object-fit_cover {
+      object-fit: cover
+    }
+    .object-fit_none {
+      object-fit: none
+    }
+    .object-fit_scale-down {
+      object-fit: scale-down
+    } */
 	</style>
 </head>
 
-<body class="essay no-touch">
+<body class="essay">
 
 <!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
@@ -217,7 +232,7 @@
 <!-- end of nav -->
 
     <header class="title" id="title-div">
-        <img class="image responsive-image" src="images/Wainwright-inscription.jpg"  alt="Tree segment with outer bark removed and a faded inscription on inner bark that begins “Dr. Livignston[e] / May 4, 18[73].”" title="Detail from Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c. 1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
+        <img class="image responsive-image" src="images/liv_000022_0002-0003-combine.jpg"  alt="Tree segment with outer bark removed and a faded inscription on inner bark that begins “Dr. Livignston[e] / May 4, 18[73].”" title="Detail from Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c. 1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
         <h1 class="header-title">One More Voice</h1>
         <hr />
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
@@ -226,86 +241,123 @@
     <main class="main" id="main-div"><a class="anchor" id="main"></a>
     <h3>Curated Artifacts</h3>
     
+    <!-- Image gallery adapted from https://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/-->
+
     <div class="wrap">
     
-    <!-- Define all of the tiles: -->
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
+        <img src="artifact-images/liv_021007_0001.jpg" />
         <div class="titleBox">Butterfly</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+        <img src="artifact-images/liv_021010_0001.jpg" />
         <div class="titleBox">An old greenhouse</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+        <img class="object-fit_fill" src="artifact-images/liv_021005_0001.jpg" />
         <div class="titleBox">Purple wildflowers</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+        <img src="artifact-images/liv_021011_0001.jpg" />
         <div class="titleBox">A birdfeeder</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+        <img src="artifact-images/liv_021012_0001.jpg" />
         <div class="titleBox">Crocus close-up</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+        <img src="artifact-images/liv_021006_0001.jpg" />
         <div class="titleBox">The garden shop</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
-        <div class="titleBox">Spring daffodils</div>
+        <img src="artifact-images/liv_021008_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
-        <div class="titleBox">Iris along the path</div>
+        <img src="artifact-images/liv_021013_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
-        <div class="titleBox">The garden blueprint</div>
+        <img src="artifact-images/liv_021009_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
-        <div class="titleBox">The patio</div>
+        <img src="artifact-images/liv_021014_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
-        <div class="titleBox">Bumble bee collecting nectar</div>
+        <img src="artifact-images/liv_021015_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
-        <div class="titleBox">Winding garden path</div>
+        <img src="artifact-images/liv_021016_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
       </div>
     </div>
-    
+    <div class="box">
+      <div class="boxInner">
+        <img src="artifact-images/liv_000003_0016-0017.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="artifact-images/liv_021003_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="artifact-images/liv_021002_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="artifact-images/liv_000023_0077.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="artifact-images/liv_021018_0003.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="artifact-images/liv_021001_0001.jpg" />
+        <div class="titleBox">The garden shop</div>
+      </div>
+    </div>
+
   </div>
     
 
-	<section aria-labelledby="things">
+	<!-- <section aria-labelledby="things">
 
 		<ol class="artifacts-list" id="things">
 		<li><a class="anchor" id="liv_021007"></a>Allen and Co. “<a href="transcriptions/liv_021007_ART.html">Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone, with Susi and Chuma, His Faithful Followers</a>.” [c.1874]. Photograph. No. 561462i. Wellcome Library, London.</li>
@@ -340,15 +392,13 @@
 
 		<li><a class="anchor" id="liv_000023"></a>David Livingstone, and [Unknown Arab and African Informants]. <a href="transcriptions/liv_000023_ART.html">Excerpt from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers</a>. [Between c.March 1866 and March 1870]. Manuscript. 807. David Livingstone Centre, Blantyre.</li>
 
-		<li>Claude McKay. <a href="transcriptions/liv_021017_ART.html">Frontispiece Inscribed to Arthur Schomburg and Title Page</a>. [Early twentieth century]. Photograph/Published Text. In <span class="italic">Songs from Jamaica</span>, frontispiece, title page. Kingston; London: Aston W. Gardner &amp; Co.; Jamaica Agency, 1912.</li>
-
 		<li>Solomon T. Plaatje, Wakefield, and D. Taylor. <a href="transcriptions/liv_021018_ART.html">Page Inscribed to Kelly Miller</a>; <a href="transcriptions/liv_021018_ART.html">Solomon T. Plaatje, Signed</a>; <a href="transcriptions/liv_021018_ART.html">Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”)</a>. 16 November 1921; [early twentieth century]; [early twentieth century]. Manuscript/Photographs. In <span class="italic">Native Life in South Africa</span>, by Solomon T. Plaatje, n.pag., 4th Edition. Kimberley; New York: Tsala ea Batho; The Crisis, [1920?].</li>
 
 		<li><a class="anchor" id="liv_021001"></a>Wm. Fergusson & Co. <a href="transcriptions/liv_021001_ART.html">Jacob Wainwright with David Livingstone’s Coffin and Some of Livingstone’s Travelling Trunks on Board the Ship ‘Malwa.’</a> 1874. Photograph. Store, K/5/1, 224. David Livingstone Centre, Blantyre.</li>
 		
 		<li><span class="italic">Bonus:</span> An additional photo of Jacob Wainwright appears in a completed <span class="italic">Invaluable</span> <a href="https://www.invaluable.com/auction-lot/livingstone,-david-289-c-rnthpaugv3#">auction listing</a>.</li>
 		</ol>
-	</section>	
+	</section>	 -->
     </main>
 
 	<aside class="credits" id="credits-div">
@@ -367,7 +417,7 @@
     </footer>
     
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
   $(function(){
      // See if this is a touch device
      if ('ontouchstart' in window)
@@ -381,7 +431,7 @@
         });
      }
   });
-  </script>
+  </script> -->
   
 <script src="https://static.jsbin.com/js/render/edit.js?4.1.8"></script>
 </body>

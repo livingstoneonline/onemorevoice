@@ -92,9 +92,9 @@
 						<ul role="menubar" id="nav1" aria-label="Site Sections">
 							<li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
 							<li role="none">
-								<div class="dropdown" role="menuitem" data-menu-component>
-									<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
-									<label class="dropbtn" for="toggle-1" data-opens-menu>
+								<div class="dropdown" role="menuitem" data-menu-component="">
+									<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false" />
+									<label class="dropbtn" for="toggle-1" data-opens-menu="">
 										materials
 										<span class="vh expanded-text">expanded</span>
 										<span class="vh collapsed-text">collapsed</span>
@@ -109,9 +109,9 @@
 								</div>
 							</li>
 							<li role="none">
-								<div class="dropdown" role="menuitem" data-menu-component>
-									<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
-									<label class="dropbtn" for="toggle-2" data-opens-menu>
+								<div class="dropdown" role="menuitem" data-menu-component="">
+									<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false" />
+									<label class="dropbtn" for="toggle-2" data-opens-menu="">
 										concepts
 										<span class="vh expanded-text">expanded</span>
 										<span class="vh collapsed-text">collapsed</span>
@@ -127,9 +127,9 @@
 								</div>
 							</li>
 							<li role="none">
-								<div class="dropdown" role="menuitem" data-menu-component>
-									<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
-									<label class="dropbtn" for="toggle-3" data-opens-menu>
+								<div class="dropdown" role="menuitem" data-menu-component="">
+									<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false" />
+									<label class="dropbtn" for="toggle-3" data-opens-menu="">
 										misc
 										<span class="vh expanded-text">expanded</span>
 										<span class="vh collapsed-text">collapsed</span>

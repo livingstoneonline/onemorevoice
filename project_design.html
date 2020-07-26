@@ -27,56 +27,72 @@
 <!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 <!-- start of nav -->
-    
-    <nav id="skiptocontent" aria-labelledby="nav0">
-        <a href="#main" id="nav0" tabindex="1">skip to main content</a>
-    </nav>
-    
+
+	<nav id="skiptocontent" aria-labelledby="nav0">
+		<a href="#main" id="nav0" tabindex="1">skip to main content</a>
+	</nav>
+
     <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
     <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
     <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-
-    <nav class="topnav" aria-labelledby="nav1">
-        <ul role="menubar" id="nav1" aria-label="Site Sections">
-            <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
-            <li role="none"><a role="menuitem" aria-haspopup="false" href="texts.html">texts</a></li>
-            <li role="none">
-                <div class="dropdown" role="menuitem" data-menu-component>
-                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false">
-                    <label class="dropbtn" for="toggle-1" data-opens-menu>
-                        concepts
-                        <span class="vh expanded-text">expanded</span>
-                        <span class="vh collapsed-text">collapsed</span>
-                    </label>
-                    <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
-                        <ul role="none">
-                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+    	
+	<nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						materials
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html/">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
                             <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li role="none">
-                <div class="dropdown" role="menuitem" data-menu-component>
-                    <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false">
-                    <label class="dropbtn" for="toggle-2" data-opens-menu>
-                        misc
-                        <span class="vh expanded-text">expanded</span>
-                        <span class="vh collapsed-text">collapsed</span>
-                    </label>
-                    <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
-                        <ul role="none">
-                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
-                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-        </ul>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-3" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
     </nav>
 
     <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
@@ -97,8 +113,14 @@
             <div class="overlay-content" role="menu">
                 <ul role="none">
                     <li role="none"><a role="menuitem" href="index.html">home</a></li>
-                    <li role="none"><a role="menuitem" href="texts.html">texts</a></li>
-                    <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Materials">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html/">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                        </ul>
+                    </li>
+					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
                         <ul role="menu" aria-label="Concepts">
                             <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
                             <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>

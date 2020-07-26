@@ -102,7 +102,7 @@
 									<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
 										<ul role="none">
 											<li role="none"><a role="menuitem" href="../texts.html">archival texts</a></li>
-											<li role="none"><a role="menuitem" href="../artifacts.html/">artifacts</a></li>
+											<li role="none"><a role="menuitem" href="../artifacts.html">artifacts</a></li>
 											<li role="none"><a role="menuitem" href="../books.html">book-length works</a></li>
 										</ul>
 									</div>
@@ -168,7 +168,7 @@
 									<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
 				                        <ul role="menu" aria-label="Materials">
 											<li role="none"><a role="menuitem" href="../texts.html">archival texts</a></li>
-											<li role="none"><a role="menuitem" href="../artifacts.html/">artifacts</a></li>
+											<li role="none"><a role="menuitem" href="../artifacts.html">artifacts</a></li>
 											<li role="none"><a role="menuitem" href="../books.html">book-length works</a></li>
 				                        </ul>
 				                    </li>

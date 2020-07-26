@@ -23,73 +23,47 @@
   <style type="text/css">
   /* https://stackoverflow.com/questions/18673900/how-to-center-and-crop-an-image-to-always-appear-in-square-shape-with-css/18674144 */
   /* https://alligator.io/css/cropping-images-object-fit/ */
-  /* .grid-item {
-    width: calc(275px + 2em);
-    height: auto;
-    display: inline-block;
-  }
-  .grid-item figure{
-    padding: 1em;
-    margin: 0;
-  }
-  .grid-item img{
-    width:275px;
-    height:275px;
-    object-fit:cover;
-    border-radius:50%;
-    overflow: hidden;
-  }
-  .grid-item figcaption{
-    font-size: .8em;
-    font-family: Arial, Geneva, Tahoma, sans-serif;
-    text-align: center;       
-    line-height: 1.2em;
-    width: 300px;
-  } */
-
     h3{
       text-align: center;
-      /* margin-bottom: 0; */
     }
-    /* @media only screen and (min-width : 768px) {
-    h3 {
-      text-align: left;
-      padding-left:10px;
-    }
-    } */
     .image-details{
       font-size: .85em;
       font-style: italic;
       text-align: center;
       color: #65615b;
     }
-
     .gallery {      
        overflow: hidden;
     }
     .gallery-item {
        width: 100%;
-       height: 18em;
-       padding: 0 0 1em 0;
+       padding: 0 0 2.5em 0;
        text-align: center;
+       float: left;
     }
-    .gallery-item:first-of-type{
+    /* .gallery-item:first-of-type{
       padding: 1em 0 0 0;
-    }
+    } */
     .gallery-item:last-of-type{
       padding: 0;
     }
     .gallery figure {
       margin: 0;
-    }
+	}
+	.image-container{
+		padding: .5em;
+	}
     .gallery figure img {
-        width: 13em;
-        height: 13em;
+		width: 100%;
         object-fit:cover;
         border-radius:50%;
         overflow: hidden;
-        position: relative;
-    }
+		border: 2px solid #dbdbdb;
+	}
+	.gallery figure a img:hover,
+	.gallery figure a img:focus{
+		border: 2px #2e68ac solid;
+	}
     .gallery figure figcaption {
       font-size: .8em;
       font-family: Arial, Geneva, Tahoma, sans-serif;
@@ -261,7 +235,7 @@
                   <img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
           </div>
         </a>
-        <figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” (c.1874)</figcaption>
+        <figcaption>Chuma and Susi with David Livingstone's “relics” (c.1874)</figcaption>
 		  </figure>
     </div>
     
@@ -273,7 +247,7 @@
           			<img src="artifact-images/liv_021010_0001.jpg" alt="African hut among a set of trees; caption says Susi and Chuma made this hut to model the one where David Livingstone died." />
     	  </div>
 			</a>
-    			<figcaption>Susi and Chuma's Model of the Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
+    			<figcaption>Susi and Chuma's Model of David Livingstone's Hut (late nineteenth or twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -367,7 +341,7 @@
           			<img src="artifact-images/liv_021013_0001.jpg" alt="Head and shoulders portrait of Sarojini Naidu, in half profile facing to her right; facsimile signature below image." />
     	  </div>
 			</a>
-    			<figcaption>Sarojini Naidu (with Facsimile Signature) (early twentieth century)</figcaption>
+    			<figcaption>Sarojini Naidu (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -403,7 +377,7 @@
           			<img src="artifact-images/liv_021015_0001.jpg" alt="Portrait from the knees up of Cornelia Sorabji, in seven-eighths profile with body turned to her left, but facing right." />
     	  </div>
 			</a>
-    			<figcaption>Cornelia Sorabji (with Superimposed Facsimile Signature) (late nineteenth or early twentieth century)</figcaption>
+    			<figcaption>Cornelia Sorabji (late nineteenth or early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -427,7 +401,7 @@
           			<img src="artifact-images/liv_000003_0016-0017.jpg" alt="Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic." />
     	  </div>
 			</a>
-    			<figcaption>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie (19-20 May 1866)</figcaption>
+    			<figcaption>David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie (19-20 May 1866)</figcaption>
         </figure>
     </div>
     
@@ -486,7 +460,7 @@
           			<img src="artifact-images/liv_021018_0002.jpg" alt="Portrait from the knees up of Solomon T. Plaatje, seated, in three-quarters profile facing to his right, writing at a table." />
     	  </div>
 			</a>
-    			<figcaption>Solomon T. Plaatje, Signed (early twentieth century)</figcaption>
+    			<figcaption>Solomon T. Plaatje (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -509,7 +483,7 @@
           			<img src="artifact-images/liv_021001_0001.jpg" alt="Jacob Wainwright seated on board the ship “Malwa” and leaning against David Livingstone’s coffin and other boxes." />
     	  </div>
 			</a>
-    			<figcaption>Jacob Wainwright with David Livingstone’s Coffin and Travelling Trunks on Board the Ship ‘Malwa’ (1874)</figcaption>
+    			<figcaption>Jacob Wainwright with David Livingstone’s Coffin and Travelling Trunks (1874)</figcaption>
         </figure>
     </div>
 

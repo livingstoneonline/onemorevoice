@@ -22,13 +22,8 @@
 	</script>    
   <style type="text/css">
   /* https://stackoverflow.com/questions/18673900/how-to-center-and-crop-an-image-to-always-appear-in-square-shape-with-css/18674144 */
-  /* @media only screen and (min-width : 768px) {
-    .title{
-      padding-bottom: 1em;
-    }
-  } */
   /* https://alligator.io/css/cropping-images-object-fit/ */
-  .grid-item {
+  /* .grid-item {
     width: calc(275px + 2em);
     height: auto;
     display: inline-block;
@@ -50,7 +45,7 @@
     text-align: center;       
     line-height: 1.2em;
     width: 300px;
-  }
+  } */
 
     h3{
       text-align: center;
@@ -72,19 +67,23 @@
        overflow: hidden;
     }
     .gallery-item {
-       width: 100%;
-       padding-bottom: 100%;
+       /* width: 100%;
+       padding-bottom: 100%; */
+       width: calc(275px + 2em);
+       height: auto;
        float: left;
        position: relative;
     }
     @media only screen and (min-width : 768px) {
         .gallery-item {
-          width: 50%;
-          padding-bottom: 50%;
+          /* width: 50%;
+          padding-bottom: 50%; */
         }
       }
     .gallery figure {
-      text-align: center;
+      padding: 1em;
+      margin: 0;
+      /* text-align: center;
       margin: 0 0 0 0;
       border: 2px #dbdbdb solid;
       overflow: hidden;
@@ -92,26 +91,36 @@
       right: 0;
       top: 10px;
       bottom: 10px;
-      position: absolute;
+      position: absolute; */
     }
     @media only screen and (min-width : 768px) {
       .gallery figure {
-       left: 10px;
-       right: 10px;
+       /* left: 10px;
+       right: 10px; */
       }
     }
     .gallery figure:hover,
     .gallery figure:focus {
-      border: 2px #2e68ac solid;
+      /* border: 2px #2e68ac solid; */
     }
     .gallery figure img {
         /* height: 75%;
         padding:  .5em 0 0 0; */
-        object-fit: fill;
-        object-position: 50% 50%;
+        /* object-fit: fill;
+        object-position: 50% 50%; */
+        width:275px;
+        height:275px;
+        object-fit:cover;
+        border-radius:50%;
+        overflow: hidden;
     }
     .gallery figure figcaption {
-      font-size: .7em;
+      font-size: .8em;
+      font-family: Arial, Geneva, Tahoma, sans-serif;
+      text-align: center;       
+      line-height: 1.2em;
+      width: 300px;
+      /* font-size: .7em;
       font-family: Arial, Geneva, Tahoma, sans-serif;
       text-align: center;       
       line-height: 1em;
@@ -127,8 +136,7 @@
       bottom: 0;
       background: #424242;
       opacity: 1;
-      color: whitesmoke !important;
-}
+      color: whitesmoke !important; */
       /* bottom: 0; */
       /* background: #000;
       background: rgba(0, 0, 0, 0.5);*/
@@ -236,7 +244,7 @@
         <div class="menu" id="nav2">
             <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
             <span class="nav-title">One More Voice</span>
-	    	    </div>
+    	  </div>
     </nav>
 
     <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
@@ -245,7 +253,7 @@
             <div class="menu">
                 <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
                 <span class="nav-title">One More Voice</span>
-    	    	    </div>
+    	  </div>
             <div class="overlay-content" role="menu">
                 <ul role="none">
                     <li role="none"><a role="menuitem" href="index.html">home</a></li>
@@ -268,8 +276,8 @@
                     </li>
                     <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
                 </ul>
-    	    	    </div>
-	    	    </div>
+    	  </div>
+    	  </div>
     </nav>
 
 <!-- end of nav -->
@@ -288,15 +296,15 @@
     
     <!-- Image gallery adapted from https://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/-->
 
-    <div class="grid-item">
+    <!-- <div class="grid-item">
 		<a class="anchor" id="liv_021007"></a>
         <figure>
     			<a href="transcriptions/liv_021007_ART.html">
     				<div class="image-container">
               			<img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
-    	    	    </div>
+    	  </div>
     			</a>
-			<figcaption>Chuma and Susi with “relics” of David Livingstone (c.1874)</figcaption>
+        	<figcaption>Chuma and Susi with “relics” of David Livingstone (c.1874)</figcaption>
         </figure>
     </div>
     <div class="grid-item">
@@ -305,11 +313,11 @@
     			<a href="transcriptions/liv_021010_ART.html">
     				<div class="image-container">
               			<img src="artifact-images/liv_021010_0001.jpg" alt="African hut among a set of trees; caption says Susi and Chuma made this hut to model the one where David Livingstone died." />
-    	    	    </div>
+    	  </div>
     			</a>
-			<figcaption>Susi and Chuma's Model of David Livingstone's Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
+    			<figcaption>Susi and Chuma's Model of David Livingstone's Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
         </figure>
-    </div>
+    </div> -->
 
 <div class="gallery">
 	<div class="gallery-item">
@@ -318,9 +326,9 @@
 			<a href="transcriptions/liv_021007_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” (c.1874)</figcaption>
+    			<figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” (c.1874)</figcaption>
 		</figure>
     </div>
     
@@ -330,9 +338,9 @@
 			<a href="transcriptions/liv_021010_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021010_0001.jpg" alt="African hut among a set of trees; caption says Susi and Chuma made this hut to model the one where David Livingstone died." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Susi and Chuma's Model of the Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
+    			<figcaption>Susi and Chuma's Model of the Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -342,10 +350,10 @@
 			<a href="transcriptions/liv_021005_ART.html">
 				<div class="image-container">
           			<img class="object-fit_fill" src="artifact-images/liv_021005_0001.jpg" alt="Portrait from the knees up of Abdullah Susi, seated, in half profile facing to his right and holding a walking stick." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Abdullah Susi (Mislabeled Jacob Wainwright) (c.1874)</figcaption>
-      </figure>
+    			<figcaption>Abdullah Susi (Mislabeled Jacob Wainwright) (c.1874)</figcaption>
+		</figure>
     </div>
     
     <div class="gallery-item">
@@ -354,9 +362,9 @@
 			<a href="transcriptions/liv_021011_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021011_0001.jpg" alt="Apolo Kagwa and his son, both seated at a table; Kagwa holds a pen above a notebook." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Apolo Kagwa, Katikiro of Uganda, and His Son (early twentieth century)</figcaption>
+    			<figcaption>Apolo Kagwa, Katikiro of Uganda, and His Son (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -365,9 +373,9 @@
 			<a href="transcriptions/liv_021011_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021011_0002.jpg" alt="Ham Mukasa’s father, Ham Mukasa with a child on his lap, and Ham Mukasa’s wife with a child on her lap, all seated." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Ham Mukasa, with Father, Wife, and Children (early twentieth century)</figcaption>
+    			<figcaption>Ham Mukasa, with Father, Wife, and Children (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -377,9 +385,9 @@
 			<a href="transcriptions/liv_021012_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021012_0001.jpg" alt="Headshot of Edward Wilmot Blyden." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Edward Wilmot Blyden (late nineteenth or early twentieth century)</figcaption>
+    			<figcaption>Edward Wilmot Blyden (late nineteenth or early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -389,9 +397,9 @@
 			<a href="transcriptions/liv_021006_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021006_0001.jpg" alt="Head and shoulders portrait of Matthew Wellington, facing forward." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Matthew Wellington (1874 or later)</figcaption>
+    			<figcaption>Matthew Wellington (1874 or later)</figcaption>
         </figure>
     </div>
     
@@ -401,9 +409,9 @@
 			<a href="transcriptions/liv_021008_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021008_0001.jpg" alt="Portrait from waist up of Matthew Wellington, seated and turned slightly to his right." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Matthew Wellington (1874 or later)</figcaption>
+    			<figcaption>Matthew Wellington (1874 or later)</figcaption>
         </figure>
     </div>
     
@@ -411,9 +419,10 @@
         <figure>
 			<a href="transcriptions/liv_021008_ART.html">
 				<div class="image-container">
-          			<img src="artifact-images/liv_021008_0002.jpg" alt="Head and shoulders portrait of Matthew Wellington, in three-quarters profile facing to his left." />
+                <img src="artifact-images/liv_021008_0002.jpg" alt="Head and shoulders portrait of Matthew Wellington, in three-quarters profile facing to his left." />
+				</div>    
 			</a>
-			<figcaption>Matthew Wellington (1874 or later)</figcaption>
+    			<figcaption>Matthew Wellington (1874 or later)</figcaption>
         </figure>
     </div>
     
@@ -423,9 +432,9 @@
 			<a href="transcriptions/liv_021013_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021013_0001.jpg" alt="Head and shoulders portrait of Sarojini Naidu, in half profile facing to her right; facsimile signature below image." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Sarojini Naidu (with Facsimile Signature) (early twentieth century)</figcaption>
+    			<figcaption>Sarojini Naidu (with Facsimile Signature) (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -435,9 +444,9 @@
 			<a href="transcriptions/liv_021009_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021009_0001.jpg" alt="Head and shoulders portrait of Sechele, in a golden frame." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Sechele (second half of nineteenth century)</figcaption>
+    			<figcaption>Sechele (second half of nineteenth century)</figcaption>
         </figure>
     </div>
     
@@ -447,9 +456,9 @@
 			<a href="transcriptions/liv_021014_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021014_0001.jpg" alt="Full-body portrait of Swami Vivekanada, standing, his body turned to the right but facing forward, holding a walking stick." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Swami Vivekanada (c.1893)</figcaption>
+    			<figcaption>Swami Vivekanada (c.1893)</figcaption>
         </figure>
     </div>
     
@@ -459,9 +468,9 @@
 			<a href="transcriptions/liv_021015_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021015_0001.jpg" alt="Portrait from the knees up of Cornelia Sorabji, in seven-eighths profile with body turned to her left, but facing right." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Cornelia Sorabji (with Superimposed Facsimile Signature) (late nineteenth or early twentieth century)</figcaption>
+    			<figcaption>Cornelia Sorabji (with Superimposed Facsimile Signature) (late nineteenth or early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -471,9 +480,9 @@
 			<a href="transcriptions/liv_021016_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021016_0001.jpg" alt="Full-body portrait of Ham Mukasa, facing forward, and Apolo Kagwa, in three-quarters profile facing to his right, standing." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Ham Mukasa and Apolo Kagwa (early twentieth century)</figcaption>
+    			<figcaption>Ham Mukasa and Apolo Kagwa (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -483,9 +492,9 @@
 			<a href="transcriptions/liv_000003_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_000003_0016-0017.jpg" alt="Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie (19-20 May 1866)</figcaption>
+    			<figcaption>Extract from  David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie (19-20 May 1866)</figcaption>
         </figure>
     </div>
     
@@ -495,9 +504,9 @@
 			<a href="transcriptions/liv_021003_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021003_0001.jpg" alt="Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Jacob Wainwright (c.1874)</figcaption>
+    			<figcaption>Jacob Wainwright (c.1874)</figcaption>
         </figure>
     </div>
     
@@ -507,9 +516,9 @@
 			<a href="transcriptions/liv_021002_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021002_0001.jpg" alt="Jacob Wainwright standing with head bowed in front of David Livingstone’s coffin which is partly covered by a British flag." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Jacob Wainwright with David Livingstone’s Coffin (1874)</figcaption>
+    			<figcaption>Jacob Wainwright with David Livingstone’s Coffin (1874)</figcaption>
         </figure>
     </div>
     
@@ -519,9 +528,9 @@
 			<a href="transcriptions/liv_000023_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_000023_0077.jpg" alt="Page from a David Livingstone notebook with a detailed Swahili vocabulary list and Arabic numbers from 1 to 10 and 10 to 90." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Page from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers (c.March 1866 to March 1870)</figcaption>
+    			<figcaption>Page from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers (c.March 1866 to March 1870)</figcaption>
         </figure>
     </div>
     
@@ -531,9 +540,9 @@
 			<a href="transcriptions/liv_021018_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021018_0001.jpg" alt="Page inscribed by Solomon T. Plaatje to Professor Kelly Miller, dated November 16, 1921, with reference to Howard University." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Page Inscribed by Solomon T. Plaatje to Kelly Miller (16 November 1921)</figcaption>
+    			<figcaption>Page Inscribed by Solomon T. Plaatje to Kelly Miller (16 November 1921)</figcaption>
         </figure>
     </div>
     
@@ -542,9 +551,9 @@
 			<a href="transcriptions/liv_021018_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021018_0002.jpg" alt="Portrait from the knees up of Solomon T. Plaatje, seated, in three-quarters profile facing to his right, writing at a table." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Solomon T. Plaatje, Signed (early twentieth century)</figcaption>
+    			<figcaption>Solomon T. Plaatje, Signed (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -553,9 +562,9 @@
 			<a href="transcriptions/liv_021018_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021018_0003.jpg" alt="Head and shoulders portrait of Elizabeth Lilith M'belle (Mrs. S.T. Plaatje); caption notes her contribution to Plaatje’ book." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”) (early twentieth century)</figcaption>
+    			<figcaption>Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”) (early twentieth century)</figcaption>
         </figure>
     </div>
     
@@ -565,9 +574,9 @@
 			<a href="transcriptions/liv_021001_ART.html">
 				<div class="image-container">
           			<img src="artifact-images/liv_021001_0001.jpg" alt="Jacob Wainwright seated on board the ship “Malwa” and leaning against David Livingstone’s coffin and other boxes." />
-	    	    </div>
+    	  </div>
 			</a>
-			<figcaption>Jacob Wainwright with David Livingstone’s Coffin and Travelling Trunks on Board the Ship ‘Malwa’ (1874)</figcaption>
+    			<figcaption>Jacob Wainwright with David Livingstone’s Coffin and Travelling Trunks on Board the Ship ‘Malwa’ (1874)</figcaption>
         </figure>
     </div>
 

@@ -198,7 +198,7 @@ img,
 	}
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
-#skiptocontent a {
+#skiptocontent a{
 	font-size: 1.1em;
 	color: white;
 	background: #424242;
@@ -213,7 +213,7 @@ img,
 	-webkit-transition: top 1s ease-out;
 	transition: top .4s ease-out;
 }
-#skiptocontent a:focus {
+#skiptocontent a:focus{
 	outline-color: transparent;
 	position: fixed;
 	top: 0px;
@@ -786,12 +786,12 @@ a.anchor{
 	text-align: center;
 	color: #65615b;
 }
-.gallery {      
+.gallery{      
 	text-align: center;
 	margin-bottom: -2.5em;
 	overflow: hidden;
 }
-.gallery-item {
+.gallery-item{
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
@@ -799,26 +799,26 @@ a.anchor{
 	width: 100%;
 }
 @media only screen and (min-width: 768px){
-	.gallery-item {
+	.gallery-item{
 		padding: 0 .5em 2.5em .5em;
 		width: calc(50% - 1.5em);
 	}
 }
 @media only screen and (min-width: 992px){
-	.gallery-item {
+	.gallery-item{
 		width: calc(33.3% - 1.5em);
 	}
 }
 .gallery-item:last-of-type{
 	text-align: left;
 }
-.gallery figure {
+.gallery figure{
 	margin: 0;
 }
 .image-container{
 	padding: .5em;
 }
-.gallery figure img {
+.gallery figure img{
 	width: 100%;
 	object-fit:cover;
 	border-radius:50%;
@@ -829,7 +829,7 @@ a.anchor{
 .gallery figure a img:focus{
 	border: 2px #2e68ac solid;
 }
-.gallery figure figcaption {
+.gallery figure figcaption{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-align: center;       
@@ -978,11 +978,9 @@ ol li ol{
 	text-indent: 0;
 	margin-left: 1em;
 }
-@media only screen and (min-width: 768px){
-	.map-list{
-		text-indent: 1em;
-
-	}
+.sitemap-list .sitemap-list:before{
+	content: "•";
+	margin:0 5px 0 -15px;
 }
 
 /* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
@@ -1123,7 +1121,7 @@ ul.concept-list li:last-child{
 }
 /* #rotate button and .rotate-180 used for artifact images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
-button::-moz-focus-inner {
+button::-moz-focus-inner{
 	border: 0;
   }
 #rotate-button{
@@ -1679,22 +1677,22 @@ table .linenumber{
 /*
 .opener,
 .closer,
-.trailer {
+.trailer{
 	margin-bottom:0px;
 }
-.opener {
+.opener{
 	display:inline;
 	margin-top:1em;
 }
 .closer,
-.address {
+.address{
 	display:block;
 }
-.dateline {
+.dateline{
 	display:inline;
 	text-indent:0;
 }
-.signed {
+.signed{
 	display:inline-block;
 }
 */

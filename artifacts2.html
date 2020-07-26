@@ -20,64 +20,62 @@
 
   		gtag('config', 'UA-31768072-5');
 	</script>    
-  <style type="text/css">
-  /* https://stackoverflow.com/questions/18673900/how-to-center-and-crop-an-image-to-always-appear-in-square-shape-with-css/18674144 */
-  /* https://alligator.io/css/cropping-images-object-fit/ */
-    .image-details{
-      font-size: .85em;
-      font-style: italic;
-      text-align: center;
-      color: #65615b;
-    }
-    .gallery {      
-	   text-align: center;
-	   margin-bottom: -2.5em;
-	   overflow: hidden;
-    }
-    .gallery-item {
-       width: 100%;
-       padding: 0 0 2.5em 0;
-	   text-align: center;
-	   display: inline-block;
-	   vertical-align: top;
-	}
-	@media only screen and (min-width: 768px){
-		.gallery-item {
-			width: calc(50% - 1.5em);
-			padding: 0 .5em 2.5em .5em;
+	<style type="text/css">
+		.image-details{
+			font-size: .85em;
+			font-style: italic;
+			text-align: center;
+			color: #65615b;
 		}
-	}
-	@media only screen and (min-width: 992px){
-		.gallery-item {
-       		width: calc(33.3% - 1.5em);
+		.gallery {      
+			text-align: center;
+			margin-bottom: -2.5em;
+			overflow: hidden;
 		}
-	}
-	.gallery-item:last-of-type{
-		text-align: left;
-	}
-    .gallery figure {
-      margin: 0;
-	}
-	.image-container{
-		padding: .5em;
-	}
-    .gallery figure img {
-		width: 100%;
-        object-fit:cover;
-        border-radius:50%;
-        overflow: hidden;
-		border: 2px solid #dbdbdb;
-	}
-	.gallery figure a img:hover,
-	.gallery figure a img:focus{
-		border: 2px #2e68ac solid;
-	}
-    .gallery figure figcaption {
-      font-size: .8em;
-      font-family: Arial, Geneva, Tahoma, sans-serif;
-      text-align: center;       
-      line-height: 1.2em;
-    }
+		.gallery-item {
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 0 2.5em 0;
+			width: 100%;
+		}
+		@media only screen and (min-width: 768px){
+			.gallery-item {
+				padding: 0 .5em 2.5em .5em;
+				width: calc(50% - 1.5em);
+			}
+		}
+		@media only screen and (min-width: 992px){
+			.gallery-item {
+				width: calc(33.3% - 1.5em);
+			}
+		}
+		.gallery-item:last-of-type{
+			text-align: left;
+		}
+		.gallery figure {
+			margin: 0;
+		}
+		.image-container{
+			padding: .5em;
+		}
+		.gallery figure img {
+			width: 100%;
+			object-fit:cover;
+			border-radius:50%;
+			overflow: hidden;
+			border: 2px solid #dbdbdb;
+		}
+		.gallery figure a img:hover,
+		.gallery figure a img:focus{
+			border: 2px #2e68ac solid;
+		}
+		.gallery figure figcaption {
+			font-size: .8em;
+			font-family: Arial, Geneva, Tahoma, sans-serif;
+			text-align: center;       
+			line-height: 1.2em;
+		}
 	</style>
 </head>
 
@@ -215,7 +213,7 @@
 	<hr />
 	<br />
 
-    <p class="image-details">Click on image(s) for artifact details</p>
+    <p class="image-details">Click on thumbnails for artifact details and uncropped images</p>
 
 	<div class="gallery">
 	
@@ -375,12 +373,12 @@
 		<div class="gallery-item">
 			<a class="anchor" id="liv_021007"></a>
 			<figure>
-			<a href="transcriptions/liv_021007_ART.html">
-			<div class="image-container">
-					<img src="artifact-images/thumbnails/liv_021007_0001_thumbnail.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
-			</div>
-			</a>
-			<figcaption>Abdullah Susi and James Chuma with David Livingstone's “relics” (c.1874)</figcaption>
+				<a href="transcriptions/liv_021007_ART.html">
+					<div class="image-container">
+							<img src="artifact-images/thumbnails/liv_021007_0001_thumbnail.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
+					</div>
+				</a>
+				<figcaption>Abdullah Susi and James Chuma with David Livingstone's “relics” (c.1874)</figcaption>
 			</figure>
 		</div>
 		
@@ -480,8 +478,8 @@
 		</div>
 
 	</div>
-    
-
+	
+	<!-- Old version of artifact list -->
 	<!-- <section aria-labelledby="things">
 
 		<ol class="artifacts-list" id="things">
@@ -524,6 +522,7 @@
 		<li><span class="italic">Bonus:</span> An additional photo of Jacob Wainwright appears in a completed <span class="italic">Invaluable</span> <a href="https://www.invaluable.com/auction-lot/livingstone,-david-289-c-rnthpaugv3#">auction listing</a>.</li>
 		</ol>
 	</section>	 -->
+
     </main>
 
 	<aside class="credits" id="credits-div">
@@ -540,25 +539,7 @@
 		<hr />
 		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
     </footer>
-    
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  <!-- <script type="text/javascript">
-  $(function(){
-     // See if this is a touch device
-     if ('ontouchstart' in window)
-     {
-        // Set the correct body class
-        $('body').removeClass('no-touch').addClass('touch');
-       
-        // Add the touch toggle to show text
-        $('div.boxInner img').click(function(){
-           $(this).closest('.boxInner').toggleClass('touchFocus');
-        });
-     }
-  });
-  </script> -->
-  
-<script src="https://static.jsbin.com/js/render/edit.js?4.1.8"></script>
+
 </body>
 
 </html>

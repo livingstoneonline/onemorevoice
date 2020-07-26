@@ -49,119 +49,52 @@
 
     h3{
       text-align: center;
-      margin-bottom: 0;
+      /* margin-bottom: 0; */
     }
-    @media only screen and (min-width : 768px) {
+    /* @media only screen and (min-width : 768px) {
     h3 {
       text-align: left;
       padding-left:10px;
     }
-    }
+    } */
     .image-details{
       font-size: .85em;
       font-style: italic;
       text-align: center;
       color: #65615b;
     }
-    .gallery {       
+
+    .gallery {      
        overflow: hidden;
     }
     .gallery-item {
-       /* width: 100%;
-       padding-bottom: 100%; */
-       width: calc(275px + 2em);
-       height: auto;
-       float: left;
-       position: relative;
+       width: 100%;
+       height: 18em;
+       padding: 0 0 1em 0;
+       text-align: center;
     }
-    @media only screen and (min-width : 768px) {
-        .gallery-item {
-          /* width: 50%;
-          padding-bottom: 50%; */
-        }
-      }
+    .gallery-item:first-of-type{
+      padding: 1em 0 0 0;
+    }
+    .gallery-item:last-of-type{
+      padding: 0;
+    }
     .gallery figure {
-      padding: 1em;
       margin: 0;
-      /* text-align: center;
-      margin: 0 0 0 0;
-      border: 2px #dbdbdb solid;
-      overflow: hidden;
-      left: 0;
-      right: 0;
-      top: 10px;
-      bottom: 10px;
-      position: absolute; */
-    }
-    @media only screen and (min-width : 768px) {
-      .gallery figure {
-       /* left: 10px;
-       right: 10px; */
-      }
-    }
-    .gallery figure:hover,
-    .gallery figure:focus {
-      /* border: 2px #2e68ac solid; */
     }
     .gallery figure img {
-        /* height: 75%;
-        padding:  .5em 0 0 0; */
-        /* object-fit: fill;
-        object-position: 50% 50%; */
-        width:275px;
-        height:275px;
+        width: 13em;
+        height: 13em;
         object-fit:cover;
         border-radius:50%;
         overflow: hidden;
+        position: relative;
     }
     .gallery figure figcaption {
       font-size: .8em;
       font-family: Arial, Geneva, Tahoma, sans-serif;
       text-align: center;       
       line-height: 1.2em;
-      width: 300px;
-      /* font-size: .7em;
-      font-family: Arial, Geneva, Tahoma, sans-serif;
-      text-align: center;       
-      line-height: 1em;
-      padding: 0 .5em;
-      left: 0;
-      right: 0;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 30%;
-      z-index: 1;
-      bottom: 0;
-      background: #424242;
-      opacity: 1;
-      color: whitesmoke !important; */
-      /* bottom: 0; */
-      /* background: #000;
-      background: rgba(0, 0, 0, 0.5);*/
-      /* color: inherit;
-      background: white; */
-    }
-    @media only screen and (min-width : 480px) {
-      .gallery figure figcaption{
-        font-size: .9em;
-      }
-    }
-    /* @media only screen and (min-width : 768px) {
-      .gallery figure figcaption {
-        padding-bottom: 50%;
-        width: 50%;
-      }
-    } */
-    .gallery a img,
-    .gallery a:hover img,
-    .gallery a:focus img,
-    .gallery a figcaption,
-    .gallery a:hover figcaption,
-    .gallery a:focus figcaption{
-      color: black;
-      border: none;
     }
 	</style>
 </head>
@@ -323,13 +256,13 @@
 	<div class="gallery-item">
 		<a class="anchor" id="liv_021007"></a>
     	<figure>
-			<a href="transcriptions/liv_021007_ART.html">
-				<div class="image-container">
-          			<img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
-    	  </div>
-			</a>
-    			<figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” (c.1874)</figcaption>
-		</figure>
+        <a href="transcriptions/liv_021007_ART.html">
+          <div class="image-container">
+                  <img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
+          </div>
+        </a>
+        <figcaption>“Group of Relics, Comprising Articles Formerly the Property of Dr. Livingstone [...]” (c.1874)</figcaption>
+		  </figure>
     </div>
     
     <div class="gallery-item">

@@ -27,6 +27,29 @@
       padding-bottom: 1em;
     }
   } */
+  .grid-item {
+    width: calc(300px + 2em);
+    height: auto;
+  }
+  .grid-item figure{
+    padding: 1em;
+    margin: 0;
+  }
+  .grid-item img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    overflow: hidden;
+  }
+  .grid-item figcaption{
+    font-size: .8em;
+    font-family: Arial, Geneva, Tahoma, sans-serif;
+    text-align: center;       
+    line-height: 1.2em;
+    width: 300px;
+  }
+
     h3{
       text-align: center;
       margin-bottom: 0;
@@ -263,6 +286,29 @@
     
     <!-- Image gallery adapted from https://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/-->
 
+    <div class="grid-item">
+      <a class="anchor" id="liv_021007"></a>
+        <figure>
+          <a href="transcriptions/liv_021007_ART.html">
+            <div class="image-container">
+              <img src="artifact-images/liv_021007_0001.jpg" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
+            </div>
+          </a>
+          <figcaption>Chuma and Susi with artifacts of David Livingstone (c.1874)</figcaption>
+        </figure>
+    </div>
+    <div class="grid-item">
+      <a class="anchor" id="liv_021010"></a>
+        <figure>
+          <a href="transcriptions/liv_021010_ART.html">
+            <div class="image-container">
+              <img src="artifact-images/liv_021010_0001.jpg" alt="African hut among a set of trees; caption says Susi and Chuma made this hut to model the one where David Livingstone died." />
+            </div>
+          </a>
+          <figcaption>Susi and Chuma's Model of the Hut in which David Livingstone Died (late nineteenth or twentieth century)</figcaption>
+        </figure>
+    </div>
+
     <div class="gallery">
       <div class="gallery-item">
       <a class="anchor" id="liv_021007"></a>
@@ -273,7 +319,6 @@
         </figure>
       </a>
     </div>
-      
     <div class="gallery-item">
       <a class="anchor" id="liv_021010"></a>
       <a href="transcriptions/liv_021010_ART.html">

@@ -542,6 +542,9 @@ input:checked + label::after{
 	background-color: #e3e3e3; /*light gray*/
 	display: block;
 }
+.topnav ul li .dropdown .dropdown-content ul li:last-of-type{
+	padding-bottom: .5em;
+}
 .topnav ul li .dropdown .dropdown-content ul li:hover,
 .topnav ul li .dropdown .dropdown-content ul li:hover a,
 .topnav ul li .dropdown .dropdown-content ul li:focus,

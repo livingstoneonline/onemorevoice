@@ -390,8 +390,10 @@
 					</xsl:if>
 					<xsl:text> (</xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//imprint/date"/>
-					<xsl:text>): </xsl:text>
-					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
+					<xsl:text>)</xsl:text>
+					<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']">
+						<xsl:text>: </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
+					</xsl:if>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>

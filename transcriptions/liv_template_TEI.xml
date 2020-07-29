@@ -95,7 +95,7 @@
 			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
             <sourceDesc>
 				<biblStruct type="journal">
-					<monogr><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section"> -->
+					<monogr><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
 						<title></title><!-- Publication title: journal or book -->
 						<!-- Author here used only for books -->
 						<!-- Forename Surname-->
@@ -122,10 +122,9 @@
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="publication" when=""></date>
-					<!-- Focus region or composition place (if known; otherwise remove) -->
-                    <placeName type=""></placeName><!-- type is either focusRegion or compositionPlace -->
-                </bibl>
+                    <date type="composition" when=""></date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace"></placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 

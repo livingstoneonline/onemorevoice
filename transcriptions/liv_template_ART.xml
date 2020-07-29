@@ -58,9 +58,9 @@
                     <author xml:id=""></author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" when=""></date>
+                    <date type="composition" when=""></date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace"></placeName>
+                    <placeName type="compositionPlace"></placeName><!-- Can be "compositionPlace" or "focusRegion" -->
                 </bibl>
             </sourceDesc>
 			<!-- End of archival <sourceDesc> -->
@@ -94,9 +94,9 @@
                     <author xml:id=""></author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" when=""></date>
+                    <date type="composition" when=""></date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace"></placeName>
+                    <placeName type="compositionPlace"></placeName><!-- Can be "compositionPlace" or "focusRegion" -->
                 </bibl>
             </sourceDesc>
 			<!-- End of book/journal <sourceDesc> -->

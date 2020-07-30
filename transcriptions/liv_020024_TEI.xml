@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020024"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter to A.M. Chirgwin</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Letter to A.M. Chirgwin, 5 December 1934</title><!-- Title, date -->
+                <author>Khama, Semane Setlhoko, 1881-1937</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Khama, Semane Setlhoko</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Semane Setlhoko Khama</author><!-- First author only: Forename Surname -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020024</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Change as needed -->
+                        <settlement>London</settlement><!-- Change as needed -->
+                        <repository>University of London. School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">CWM/LMS/South Africa/Incoming Correspondence/Box 97/Semane 1-3</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                            <handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                            <handNote xml:id="U3"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Letter to A.M. Chirgwin</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="SSK">Khama, Semane Setlhoko, 1881-1937</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1934-12-05">5 December 1934</date>
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Serowe, Palapye Road, Bechuanaland Protectorate</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+                <language ident="tn">Tsawana</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-07-30" who="#AW">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="e8eae3"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div rend="black gray"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020024_0001" n="0001"/>
+<lb/><ab rend="no-indent upside-down black"><add place="inspace" rend="gray" hand="#U1"><gap extent="1" unit="words"/></add>
+<lb/><hi rend="upside-down">1683</hi> <date when="1934-12-27">27 <hi rend="caps">Dec</hi> 1934</date></ab>
+
+<lb/><p><hi rend="caps"><placeName><foreign xml:lang="tn">Kgotla ea Kgosi</foreign></placeName></hi>
+<lb/><space extent="1" unit="words"/><placeName><hi rend="caps">Gamanwato</hi></placeName> <!--<space extent="10" unit="words"/><figure rend="small"><graphic url="../transcription-images/liv_020024_0001_image.jpg"/><figDesc>Ribbon-like shape around a deer; "WITH GOD ALL THINGS ARE POSSIBLE" written on ribbon.</figDesc></figure>--></p>
+<lb/>
+<lb/>
+<lb/>
+<lb/><p rend="black"><space extent="5" unit="words"/><settlement>Serowe</settlement>, 
+<lb/><space extent="7" unit="words"/><placeName>Palapye Road</placeName>, 
+<lb/><space extent="8" unit="words"/><country>Bechuanaland Protectorate</country>
+<lb/><space extent="9" unit="words"/><date>December 5th, 1934</date>.</p>
+
+<div>
+<p><space extent="2" unit="words"/><persName>Rev. A. M. Chirgwin</persName>, 
+<lb/><space extent="3" unit="words"/><orgName>London Missionary Society</orgName>, 
+<lb/><space extent="4" unit="words"/><placeName>Livingstone House</placeName>, 
+<lb/><space extent="5" unit="words"/><placeName><choice><orig>B r o a d w a y</orig><reg>Broadway</reg></choice></placeName><choice><sic> ,</sic><corr>,</corr></choice>
+<lb/><space extent="6" unit="words"/>Westminster,
+<lb/><space extent="7" unit="words"/>London, S.W.1.</p>
+<lb/>
+
+<lb/><p rend="no-indent">My dear Missionary,</p>
+<lb/><p><space extent="2" unit="words"/>I thank you very much for your letter 
+<lb/>of the 6th November last, and it gives me great pleasure 
+<lb/>to know, as I have always known, that we out here are 
+<lb/>constantly in your minds and prayers.</p>
+<lb/><p><space extent="2" unit="words"/>I am glad also to know that you are 
+<lb/>being informed of what is happening in Serowe in regard to 
+<lb/>the women's work to which Mrs. McIntosh has so generously 
+<lb/>given her untiring services. 4e Native women derive very 
+<lb/>much benefit from the instructions and the guidance given 
+<lb/>by kind people like Yrs. McIntosh, Sister Haile, Mrs. Shaw 
+<lb/>etc., and I think it is because of the services of these 
+<lb/>that there are rapid changes in the mode of living of our 
+<lb/>Native women and the tribe as a whole.</p>
+<lb/><p><space extent="2" unit="words"/>Your visit, which to us here was rather 
+<lb/>a short one, is nevertheless indelibly printed in our 
+<lb/>minds. During Tshekedi's troubles we observed keenly your 
+<lb/>untiring assistance to his cause, because we had made our 
+<lb/>acquaintance with you.</p> 
+<lb/><p><space extent="2" unit="words"/>May God spare you in order that your 
+<lb/>service and influence nay be felt, not only in the 
+<lb/><seg rend="right">.......... Bamangwato/</seg>
+ 
+    <pb facs="liv_020024_0002" n="0002"/>
+<lb/><seg rend="center">– 2 –</seg>
+<lb/>Bamangwato country but all over the world where the up<seg type="hyphen">-</seg>
+<lb/>lifting of the backward races is sought.</p>
+<lb/><p><space extent="2" unit="words"/>Again thanking you for your letter, 
+<lb/>and with the good wishes of the Season from both Tshekedi 
+<lb/>and self.</p> 
+<lb/><p rend="right">Yours very sincerely,</p>
+<lb/><p>Semane Khama</p>
+</div>
+<lb/><space dim="vertical" unit="lines" extent="27"/>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

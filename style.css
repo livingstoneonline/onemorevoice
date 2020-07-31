@@ -1303,6 +1303,9 @@ button::-moz-focus-inner{
 .fw.pageno{
 	text-indent: 0;
 }
+.fw.right{
+	float: right;
+}
 .fw.catch.right{
 	text-align: right;
 	right: 0;
@@ -1827,9 +1830,19 @@ table .linenumber{
 .number.liv_020024_0001{
 	float: right;
 }
-.header.liv_020024_0001{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+.header1.liv_020024_0001{
+	font-family: Arial, Geneva, Tahoma, sans-serif
 }
-.fw.right{
+@media only screen and (min-width: 768px){
+	.header1.liv_020024_0001{
+		left: 1em;
+		position: absolute;
+	}
+}
+.header2.liv_020024_0001{
+	text-align: right;
 	float: right;
+}
+.header3.liv_020024_0001{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
 }

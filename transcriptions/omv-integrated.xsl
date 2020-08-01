@@ -921,7 +921,7 @@
 				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
-				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
+				<span class="figure"><span class="{concat('graphic', ' ', ..//graphic/@n)}"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="figure"><span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span></span>

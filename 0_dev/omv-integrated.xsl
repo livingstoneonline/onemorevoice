@@ -390,8 +390,10 @@
 					</xsl:if>
 					<xsl:text> (</xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//imprint/date"/>
-					<xsl:text>): </xsl:text>
-					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
+					<xsl:text>)</xsl:text>
+					<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']">
+						<xsl:text>: </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='pages']"/>
+					</xsl:if>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
@@ -418,6 +420,17 @@
 		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
+		<xsl:variable name="custom-note">
+			<xsl:apply-templates select="//encodingDesc/projectDesc/p/node()"/>
+		</xsl:variable>
+		<xsl:variable name="prod-note">
+			<xsl:choose>
+				<xsl:when test="//encodingDesc/projectDesc/p">
+					<xsl:copy-of select="$custom-note"/>
+				</xsl:when>
+				<xsl:otherwise>This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
@@ -470,7 +483,7 @@
 						<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator=", "/></p>
 					</xsl:if>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -607,7 +620,7 @@
 							</xsl:variable>
 							<p><span class="bold">Explore original item image(s):</span><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
-						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</p>
+						<p><span class="bold">Production note</span><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
 					</div>
 				</aside>
 			</xsl:when>
@@ -628,7 +641,7 @@
 							</xsl:variable>
 							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
-						<p><span class="bold">Production note</span>: This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <span class="italic">One More Voice</span><xsl:text> </xsl:text><a href="../coding_guidelines.html">coding guidelines</a>. Users are encouraged to consult the original document if possible.</p>
+						<p><span class="bold">Production note</span><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
 					</div>
 				</aside>
 			</xsl:when>
@@ -908,7 +921,7 @@
 				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:when test="..//graphic">
-				<span class="figure"><span class="graphic"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
+				<span class="figure"><span class="{concat('graphic', ' ', ..//graphic/@n)}"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="figure"><span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span></span>
@@ -1140,6 +1153,13 @@
 	</xsl:template>
 
 <!-- end placeNames -->
+
+	<xsl:template match="//encodingDesc/projectDesc//ref[@target]">
+		<xsl:variable name="link">
+			<xsl:value-of select="//encodingDesc/projectDesc//ref/@target"/>
+		</xsl:variable>
+		<a href="{$link}"><xsl:apply-templates/></a>
+	</xsl:template>
 
 	<xsl:template match="rdg">
 		<xsl:apply-templates/>

@@ -1831,7 +1831,7 @@ table .linenumber{
 	float: right;
 }
 .header1.liv_020024_0001{
-	font-family: Arial, Geneva, Tahoma, sans-serif
+	font-family: Arial, Geneva, Tahoma, sans-serif;
 }
 @media only screen and (min-width: 768px){
 	.header1.liv_020024_0001{
@@ -1843,11 +1843,14 @@ table .linenumber{
 	text-align: right;
 	float: right;
 	padding-bottom: 2em;
+	position: relative;
+}
+.decoration.liv_020024_0001 img{
+	width: 7em;
+	position: absolute;
+    top: -8.5em;
+    left: 6em;
 }
 .header3.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-}
-.decoration.liv_020024_0001 img{
-	width: 15%;
-	float: right;
 }

@@ -1293,6 +1293,7 @@ button::-moz-focus-inner{
 	line-height: 1.3em;
 	margin-bottom: .5em;
 	overflow: hidden;
+	position: relative;
 }
 .manuscript .fw{
 	display: inline;
@@ -1310,6 +1311,10 @@ button::-moz-focus-inner{
 	text-align: right;
 	right: 0;
 	position: absolute;
+}
+.fw .note.right{
+	float: right;
+	position: unset;
 }
 table{
 	font-size: .9em;
@@ -1342,22 +1347,14 @@ table .linenumber{
 	height: 0;
 	padding: 0px;
 }
-.journal .milestone{
-	width: 100%;
-}
-.manuscript .line,
-.manuscript .doubleline,
-.manuscript .tripleline,
-.manuscript .second-line,
-.manuscript .third-line{
-	/* width: TBD */
-}
 .line{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	width: 100%;
 }
-.doubleline{
+.doubleline,
+.quarterline.doubleline{
 	border-top: 4px double #8c8b8b;
 }
 .tripleline{
@@ -1369,34 +1366,19 @@ table .linenumber{
 	border: 0;
 	border-top: 1px solid #58484b;
 	padding: 0;
+	width: 50%;
 }
 .manuscript .halfline{
-	width: 50%;
 	margin: 1em auto -1em auto;
 }
 .journal .halfline{
-	width: 60%;
 	margin: 2em auto;
 }
 .quarterline{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-}
-.manuscript .quarterline{
 	width: 25%
-}
-.journal .quarterline{
-	width: 9em;
-}
-.halfline.quarterline{
-	width: 30%;
-}
-.quarterline.quarterline{
-	width: 15%;
-}
-.quarterline.doubleline{
-	border-top: 4px double #8c8b8b;
 }
 .second-line{
 	border-bottom: 1px solid #d0d0d0;

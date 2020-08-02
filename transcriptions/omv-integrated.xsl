@@ -382,11 +382,11 @@
 					<xsl:text>.</xsl:text>
 				</xsl:when>
 				<xsl:otherwise>
-					<span class="italic"><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/></span>
-					<xsl:text> </xsl:text>
-					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='vol']"/>
-					<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='issue']">
-						<xsl:text>:</xsl:text><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='issue']"/>
+					<span class="italic"><xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//title"/></span>
+					<xsl:if test="//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='vol']">													<xsl:text> </xsl:text><xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='vol']"/>
+					</xsl:if>
+					<xsl:if test="//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='issue']">
+						<xsl:text>, no. </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//imprint/biblScope[@unit='issue']"/>
 					</xsl:if>
 					<xsl:text> (</xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//imprint/date"/>

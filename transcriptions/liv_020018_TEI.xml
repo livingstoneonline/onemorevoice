@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020018"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Letter of Gratitude from a Kafir Woman”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Letter of Gratitude from a Kafir Woman’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Letter of Gratitude from a Kafir Woman,” 1 May 1874</title><!-- Title, date -->
+                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Jotelo, Nosutu Soga</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Nosutu Soga Jotelo</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+               <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020018</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://www.gale.com/c/nineteenth-century-uk-periodicals-part-ii">Nineteenth Century UK Periodicals, Part II: Empire</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="narrow">
+						<title>Wesleyan Juvenile Offering: A Miscellany of Missionary Info</title><!-- Publication title -->
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="issue">89</biblScope><!-- Volume (if known; otherwise leave blank -->
+							<biblScope unit="pages">54, 56</biblScope><!-- Pages (if known; otherwise leave blank -->
+							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank -->
+							<publisher></publisher><!-- Publisher (if known; otherwise leave blank -->
+							<date>1 May 1874</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Letter of Gratitude from a Kafir Woman”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="An">Anonymous</author>
+                    <author xml:id="NSJ">Jotelo, Nosutu Soga</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1874-05-01">1 May 1874</date>
+                    <date type="composition" when="1873-10">October 1873</date>
+					<!-- Focus region (if known; otherwise leave blank) -->
+                    <placeName type="compositionPlace">Emgwali</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-08-02" who="#AW">Coding Review</change>
+			<change when="2020-07-27" who="#AM">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body>
+			<div >
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020018_0001" n="0001"/>
+
+<fw><seg rend="left">54</seg> <seg rend="center caps">Letter of Gratitude from a Kafir Woman</seg> </fw>
+
+	<div rend="center">
+<p><gap extent="22" unit="lines" agent="omitted-text"/></p><!-- Text from previous articles omitted here. AM -->
+	</div>
+<lb/><milestone unit="section" rend="half-line center"/><!-- squiggly lines -->
+	<div>
+
+<p rend="center caps">Letter of Gratitude from a Kafir Woman</p>
+<p><!-- elaborate letter "T" at beginning AM --><seg rend="caps">his</seg> letter, which we 
+extract, in part, from 
+the <orgName>United 
+Presbyterian Missionary
+Record</orgName>, is of 
+remarkable interest. It was 
+written, in her own 
+language, by the old mother of 
+the late <persName>Rev. Tiyo Soga</persName>, a <term type="collective">Kafir</term>, 
+who, after his conversion to 
+<term type="collective">Christianity</term>, was sent to
+ 
+<cb/><!-- beginning of column 2 AM -->
+<country>Scotland</country> to be educated, and 
+afterwards went back to his own 
+country, the first ordained <term type="collective">Kafir</term> 
+minister who had preached the 
+Gospel. His mother now writes 
+to the good people in <country>Scotland</country> 
+thus :-</p>
+
+<p>"<placeName><seg rend="smallcaps">Emgwali</seg></placeName>, <date when="1873-10"><hi rend="italic">October</hi>, 1873</date>.</p>
+<p>"<seg rend="smallcaps">My Kind Friends</seg>,-For a 
+long time I have wished to thank</p>
+
+    <pb facs="liv_020018_0002" n="0002"/>
+<figure><figDesc>drawing of native African</figDesc></figure>
+
+    <pb facs="liv_020018_0003" n="0003"/>
+<fw><seg rend="left">56</seg> <seg rend="center caps">Letter of Gratitude from a Kafir Woman</seg> </fw>
+<p rend="no-indent">you for what you have done for 
+me. Beloved friends, to-day I 
+thank you for what you have 
+done for my son and for myself. 
+I thank you for what he was 
+taught, and for what he was 
+prepared for, by your means. 
+From the beginning you acted 
+with great wisdom towards him, 
+and thereby conferred privileges 
+and marvellous blessings upon 
+us all. You opened up every 
+path for him by which he was 
+directed in the way of salvation, 
+and which you also showed unto 
+his people as well as to himself 
+and to his family.</p> 
+<p>"Beloved, your work to my 
+son I represent with the words 
+which were said respecting man: 
+The Creator first prepared a 
+place for man before He created 
+him. When He had finished all 
+that was right for man, He 
+created him, and placed him in 
+the midst of every advantage. 
+His commandment instructed 
+him, like him who has departed. 
+Thus it was so.</p> 
+<p>"What can I speak to you? 
+Dearly beloved, that which you 
+began did you not finish? You 
+gave the blood of your blood<!-- footnote "Referring to his marriage" to be inserted here? AM --> 
+to my son. I have seen it with 
+my own eyes. That event 
+taught us to know your habits, 
+your disposition, and your 
+
+<cb/><!-- beginning of column 2 AM -->
+speech. That great event united 
+us very closely together. In 
+effect it seemed to say to my 
+son: '<persName>Tiyo Soga</persName>, go, take this 
+great enlightener amongst your 
+countrymen.' My friends, what 
+can I say to you? He is gone 
+to the place prepared for him. 
+look there for him! Pardon me 
+in referring to this matter. 
+Beloved, what gift can be more 
+highly esteemed than this? 
+Rejoice, beloved! we also rejoice 
+with the Churches in <country>Scotland</country>. 
+Rejoice ye! Canzibe, the bright, 
+the morning star of spring, has 
+already risen upon <bloc>Africa</bloc>. The 
+first teacher belonging to our 
+countrymen was sent forth by 
+you. Be glad, ye people of 
+<placeName>Caffraria</placeName>! <placeName>Amaxosa</placeName>, the first 
+home of my son, now lying 
+desolate and forlorn, speaks of 
+your laborious toil. Rejoice ye! 
+These five <term type="plant">gum trees</term> still 
+standing remind me that, while the 
+desolate and deserted homes of 
+our countrymen are covered 
+with the couch grass, it is not 
+so with respect to that in which 
+my son abides this day. His 
+home is now far distint from 
+these <term type="plant">gum trees</term>. Vain, then, is 
+it for you to care so much, and 
+to be so anxious for the things 
+of this world. . . . . . . "</p> 
+<p>My beloved friends, what
+more can I say? I conclude 
+
+    <pb facs="liv_020018_0004" n="0004"/>
+<fw><seg rend="center caps"><gap extent="7" unit="words"/></seg> <seg rend="right">57</seg></fw>
+with respectful salutations. Oh, 
+pray for me to the Lord, my 
+friends, that when I reach that 
+day which has neither a 
+yesterday nor a to-morrow--a day 
+
+<cb/><!-- beginning of column 2 AM -->
+which has no end-I may 
+receive strength to sustain me 
+in my unutterable weakness.- 
+May you live happy!</p> 
+<p>"<seg rend="caps"><persName>Nosutu Soga Jotelo</persName></seg>."</p>
+<milestone unit="section" rend="half-line center"/><!-- squiggly lines --></div>
+            </div>
+
+	<div rend="center">
+<lb/><gap extent="32" unit="lines" agent="omitted-text"/><!-- Text from next article omitted here. AW -->
+			</div>
+        </body>   
+    </text>
+</TEI>

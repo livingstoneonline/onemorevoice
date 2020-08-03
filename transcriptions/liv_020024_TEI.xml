@@ -15,6 +15,14 @@
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
                 <respStmt xml:id="AW">
                     <name>Adrian S. Wisnicki</name>
                     <resp>Transcription</resp>
@@ -88,6 +96,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-08-03" who="#HB">Coding Review</change>
 			<change when="2020-07-30" who="#AW">Transcription and TEI Encoding</change>
         </revisionDesc>
     </teiHeader>
@@ -119,19 +128,19 @@
 <seg rend="caps" n="header3 liv_020024_0001"><settlement>Serowe</settlement>,<space extent="6" unit="words"/>
 <lb/><placeName>Palapye Road</placeName>,<space extent="4" unit="words"/>
 <lb/><hi rend="small"><country>Bechuanaland Protectorate</country>.</hi></seg><space extent="1" unit="words"/>
-<lb/><seg rend="black gray"><date>December 5th, 1934</date>.</seg><space extent="1" unit="words"/></p>
+<lb/><seg rend="black gray"><date when="1934-12-05">December 5th, 1934</date>.</seg><space extent="1" unit="words"/></p>
 <lb/>
 <lb/><p rend="no-indent"><persName>Rev. A. M. Chirgwin</persName>, 
 <lb/><space extent="1" unit="words"/><orgName>London Missionary Society</orgName>, 
 <lb/><space extent="2" unit="words"/><placeName>Livingstone House</placeName>, 
 <lb/><space extent="3" unit="words"/><placeName><choice><orig>B r o a d w a y</orig><reg>Broadway</reg></choice></placeName><choice><sic> ,</sic><corr>,</corr></choice>
-<lb/><space extent="4" unit="words"/>Westminster,
-<lb/><space extent="5" unit="words"/>London, <space extent="2" unit="chars"/>S.W.1.</p>
+<lb/><space extent="4" unit="words"/><placeName>Westminster</placeName>,
+<lb/><space extent="5" unit="words"/><settlement>London</settlement>, <space extent="2" unit="chars"/>S.W.1.</p>
 <lb/>
 
 <lb/><p rend="no-indent">My dear Missionary,</p>
 <lb/><p><space extent="3" unit="words"/>I thank you very much for your letter 
-<lb/>of the <date when="1834-11-06">6th November</date> last, and it gives me great pleasure 
+<lb/>of the <app><rdg><date when="1834-11-06">6th November</date></rdg><rdg><date when="1833-11-06">6th November</date> </rdg></app> last, and it gives me great pleasure 
 <lb/>to know, as I have always known, that we out here are 
 <lb/>constantly in your minds and prayers.</p>
 <lb/><p><space extent="3" unit="words"/>I am glad also to know that you are 
@@ -149,7 +158,7 @@
 <lb/>untiring assistance to his cause, because we had made our 
 <lb/>acquaintance with you.</p> 
 <lb/><p><space extent="3" unit="words"/>May God spare you in order that your 
-<lb/>service and influence nay be felt, not only in the 
+<lb/>service and influence may be felt, not only in the 
 <lb/><fw rend="right">.......... <term type="collective">Bamangwato</term>/</fw>
  
     <pb facs="liv_020024_0002" n="0002"/>
@@ -161,7 +170,7 @@
 <lb/>and with the good wishes of the Season from both <persName>Tshekedi</persName> 
 <lb/>and self.</p> 
 <lb/><p rend="no-indent"><space extent="5" unit="words"/>Yours very sincerely,</p>
-<lb/><p rend="no-indent black italic bold"><space extent="6" unit="words"/><persName>Semane Khama</persName></p>
+<lb/><p rend="no-indent black italic bold" n="handwritten"><space extent="6" unit="words"/><persName>Semane Khama</persName></p>
 <lb/><space dim="vertical" unit="lines" extent="27"/>
 
 			</div>

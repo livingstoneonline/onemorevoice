@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021023"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Tshekedi [Khama] with the Small Chief for Whom He Acts as Regent [Seretse Khama] &amp; Tshekedi’s mother [Semane Khama]”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Tshekedi [Khama] with the Small Chief for Whom He Acts as Regent [Seretse Khama] &amp; Tshekedi’s mother [Semane Khama]’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Tshekedi [Khama] with the Small Chief for Whom He Acts as Regent [Seretse Khama] &amp; Tshekedi’s mother [Semane Khama],” [early twentieth century]</title><!-- Title, date -->
+                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_021023</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+                    <p>Image from the Council for World Mission Archive, SOAS Library, University of London. Used by permission for private study, educational or research purposes only.</p>
+				</availability>
+			</publicationStmt>
+
+            <sourceDesc>
+                <msDesc type="artifact-archive">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>London</settlement><!-- Repository city -->
+                        <repository>University of London. School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
+                        <idno type="shelfmark">CWM/LMS/Africa/Photographs/Box 7/File 51/25</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Tshekedi [Khama] with the Small Chief for Whom He Acts as Regent [Seretse Khama] &amp; Tshekedi’s mother [Semane Khama]”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="An">Anonymous</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" from="1925" to="1930
+">[Early twentieth century]</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Serowe</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                </bibl>
+            </sourceDesc>
+			<!-- End of archival <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-08-06" who="#AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_021023_0001" n="0001"/>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_021023_0001.jpg"/><!-- add rend="vertical" for portrait images --><!-- add rend="gray" to add gray border to image --><label>‘Tshekedi [Khama] with the Small Chief for Whom He Acts as Regent [Seretse Khama] &amp; Tshekedi’s mother [Semane Khama],’ [early twentieth century], recto</label><figDesc>The Khamas standing: Semane in seven-eighths profile turned to her left, Seretse facing forward, and Tshekedi in three-quarters profile turned to his right.</figDesc></figure></p>
+
+    <pb facs="liv_021023_0002" n="0002"/>
+<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_021023_0002.jpg"/><!-- add rend="vertical" for portrait images --><!-- add rend="gray" to add gray border to image --><label>‘Tshekedi [Khama] with the Small Chief for Whom He Acts as Regent [Seretse Khama] &amp; Tshekedi’s mother [Semane Khama],’ [early twentieth century], verso</label><figDesc>Stamped verso of image, stating that image is of “Tshekedi with the small chief for whom he acts as regent, &amp; Tshekedi's mother”</figDesc></figure></p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

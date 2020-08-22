@@ -1,4 +1,3 @@
-
 /* StickyNav */
 /* Taken from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
@@ -20,6 +19,7 @@ function stickyNavigation() {
 }
 
 window.addEventListener('scroll', stickyNavigation);
+
 
 /* Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
@@ -51,12 +51,16 @@ function openNav() {
     if (document.getElementById("footer-div") !== null) {document.getElementById("footer-div").style.display = "block"};
   }
 
+
 /* Keyboard Navigation for Dropdown Menus */
 /* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
 
 const menu = document.getElementById('nav1');
 menu.addEventListener('keydown', handleKeydown);
 menu.addEventListener('focusin', handleFocusIn);
+
+const lastMenuItem = Array.from(menu.querySelectorAll('[role="menuitem"]')).pop();
+const topLevelItems = Array.from(menu.querySelectorAll('[aria-haspopup]'));
 
 function handleFocusIn(event){
   if(event.target.attributes['aria-haspopup']){
@@ -92,7 +96,7 @@ function handleKeydown(event){
 
   const target = event.target;
   const char = event.keyCode;
-  const topLevelItems = Array.from(menu.querySelectorAll('[aria-haspopup]'));
+
   let currentItem = null;
 
   switch(char){
@@ -197,14 +201,28 @@ function handleKeydown(event){
         }
         break;
 
+      case keyCode.TAB:
+        if(event.target === lastMenuItem){
+          // Close dropdown
+          const lastDropdown = Array.from(
+            menu.querySelectorAll('[aria-haspopup]')
+          ).pop();
+          lastDropdown.checked = false;
+        }
+        break;
+
       case keyCode.ESC:
-        // Close all dropdowns
-        Array.from(
-          menu.querySelectorAll('[aria-haspopup]')
-        )
-        .forEach(x => {
-          x.checked = false;
-        })
+        let parentPopup;
+        // If we're on a top-level menu element
+        if(target.attributes['aria-haspopup']){
+          parentPopup = target;
+        }
+        // If we're inside a dropdown
+        else if(target.attributes['role'] && target.attributes['role'].value === "menuitem"){
+          parentPopup = target.closest('.dropdown').querySelector('input');
+        }
+        parentPopup.checked = false;
+        parentPopup.focus();
         break;
   }
 

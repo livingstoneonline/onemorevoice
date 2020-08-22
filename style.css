@@ -122,14 +122,30 @@ h2{
 	}
 }
 h3{
-	color: #2e68ac;
 	font-size: 1em;
 	font-weight: bold;
+	color: #2e68ac;
 }
 h4{
 	font-style: italic;
 	font-size: 1em;
 	font-weight: 300;
+}
+h5.books{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	/* color: #2e68ac; */
+	margin: 3em 0 1em 0;
+}
+h5.books::before{
+	font-family: 'FontAwesome';
+	content: '\f101';
+	padding-right: .5em;
+}
+h5.books::after{
+	font-family: 'FontAwesome';
+	content: '\f100';
+	padding-left: .5em;
 }
 /* adds padding for h4 labelled subsections in essays */
 .subsection{

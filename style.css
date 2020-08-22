@@ -314,15 +314,12 @@ a:visited{
 a:hover{
 	color: #a83c37;
 	background-color: #dbdbdb;
-	padding: 1px 7px;
-	margin: -1px -7px;
 }
 a:focus{
 	color: #2b61a1;
 	background-color: #dbdbdb;
-	padding: 1px 7px;
-	margin: -1px -7px;
 }
+
 .graphic a:hover,
 .graphic a:focus{
 	background-color: white;
@@ -419,6 +416,12 @@ a.anchor{
 }
 .menu a.icon:hover{
 	color: #a83c37;
+
+}
+.menu a.icon:hover,
+.menu a.icon:focus{
+	padding: 1px 7px;
+	margin: -1px -7px;
 }
 .nav-title{
 	font-size: 1.7em;

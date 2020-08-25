@@ -1167,7 +1167,7 @@
 	</xsl:template>
 
 	<xsl:template match="seg">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="space[@extent][@unit]" priority="10">

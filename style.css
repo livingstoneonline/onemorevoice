@@ -1732,7 +1732,11 @@ table .linenumber{
 }
 .metamark.liv_000023_0090::before{
 	content: '{';
-	margin-left: -1em;
+	margin-left: -.4em;
+	float: left;
+	font-size: 3.5em;
+	transform: scale(.35, 1.7);
+	padding-top: .1em;
 }
 .text.liv_003027_0001{
 	margin-bottom: .5em;

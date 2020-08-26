@@ -1499,6 +1499,9 @@ table .linenumber{
 	right: 0;
 	position: absolute;
 }
+.marginright{
+	float: right;
+}
 .small{
 	font-size: .85em;
 }
@@ -1726,6 +1729,10 @@ table .linenumber{
 	padding: 0 1px;
 	margin: 0 3px;
 	height: 500px;
+}
+.metamark.liv_000023_0090::before{
+	content: '{';
+	margin-left: -1em;
 }
 .text.liv_003027_0001{
 	margin-bottom: .5em;

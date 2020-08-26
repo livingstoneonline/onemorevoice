@@ -773,8 +773,12 @@
 			<xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="add[@place='marginleft']|add[@place='marginright']" priority="10">
+	<xsl:template match="add[@place='marginleft']" priority="10">
 		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}"> [<xsl:apply-templates/>] </span>
+	</xsl:template>
+
+	<xsl:template match="add[@place='marginright']" priority="10">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}"> <xsl:apply-templates/> </span>
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">

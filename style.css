@@ -1677,6 +1677,9 @@ table .linenumber{
 }
 .country{
 	background-color: burlywood;
+}
+.persName{
+	background-color: yellow;
 } */
 /* .orgName{
 	background-color: lightblue;
@@ -1738,8 +1741,6 @@ table .linenumber{
 	transform: scale(.35, 1.7);
 	padding-top: .1em;
 }
-.columns.liv_000023_0092{
-}
 .columnLeft.liv_000023_0092{
 	text-align: center;
 	float: left;
@@ -1756,6 +1757,11 @@ table .linenumber{
 }
 .milestone.center.line.liv_000023_0092{
 	margin-left: 5.3em;
+}
+.metamark.first.liv_000023_0110{
+	border-bottom: 1px solid;
+	border-bottom-right-radius: 2em;
+	padding-bottom: .4em;
 }
 .text.liv_003027_0001{
 	margin-bottom: .5em;
@@ -1812,7 +1818,6 @@ table .linenumber{
 		border: 1px solid #998a83;
 		border-radius: 3em;
 		float:left;
-		display: inline-block;
 		transform: rotate(270deg);
 		-ms-transform:rotate(270deg); /* IE 9 */
 		-moz-transform:rotate(270deg); /* Firefox */

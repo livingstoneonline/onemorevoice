@@ -1123,6 +1123,10 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template match="persName">
+		<span class="persName"><xsl:attribute name="title">A formally-named person.</xsl:attribute><xsl:apply-templates/></span>
+	</xsl:template>
+
 <!-- placeNames -->
 
 	<xsl:template match="placeName">

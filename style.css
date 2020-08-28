@@ -1,3 +1,30 @@
+.button button {
+	font-size:.85em;	
+	padding-top:6px;
+	padding-bottom:2px;
+	margin:0px auto;
+	display:block;
+	line-height:1;
+	/*background-color:#edecea;
+	border-radius: 5px;*/
+}
+.bw,
+.change-display .color {
+	display:inline;
+}
+.change-display .bw,
+.color {
+	display:none;
+}
+.change-display .TEI{
+	background:#ffffff !important;
+} 
+.change-display *{
+	color: black !important;
+	border-bottom-color: black !important;
+}
+
+
 /* CSS File for One More Voice (https://onemorevoice.org/) */
 
 /* Created by Adrian S. Wisnicki */

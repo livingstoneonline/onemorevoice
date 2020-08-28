@@ -50,7 +50,27 @@
 .color-formatting{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	padding-top: .5em;
-	margin-bottom: -2.5em;
+	margin: .5em auto -1.7em auto;
+	position: relative;
+	height: 2.1em;
+	width: 14.5em;
+	border-radius: 10px;
+	display: inline-block;
+	border: 1px #525252 solid;
+	background-color: #fff;
+}
+.toggle-text{
+	color: #525252;
+	position: absolute;
+	font-weight: 600;
+	left: .5em;
+	top: -.3em;
+	font-variant: small-caps;
+}
+.toggle-switch{
+	position: absolute;
+	right: .5em;
+	top: .4em;
 }
 
 /* Hide default input */
@@ -97,7 +117,8 @@
 
 /* On checked */
 input:checked + .slider {
-	background-color: #858585;
+	/* background-color: #858585; */
+	background-color: black;
 }
 input:checked + .slider:before {/*after*/
 	transform: translateX(35px);
@@ -121,13 +142,19 @@ input:checked + .slider:after {/*after*/
 
 /**************/
 
-.bw,
+/* .bw,
 .change-display .color {
 	display:inline;
 }
 .change-display .bw,
 .color {
 	display:none;
+} */
+.change-display .color-formatting{
+	border: 1px solid gainsboro;
+}
+.change-display .toggle-text{
+	color: black;
 }
 .change-display .TEI{
 	background:#ffffff !important;

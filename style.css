@@ -151,10 +151,18 @@ input:checked + .slider:after {/*after*/
 	display:none;
 } */
 .change-display .color-formatting{
-	border: 1px solid gainsboro;
+	border: 1px solid black;
+	/* height: calc(2.1em - 2px); */
 }
 .change-display .toggle-text{
 	color: black;
+	/* top: calc(-.3em - 1px); */
+}
+.change-display .toggle-switch{
+	top: calc(.4em - 1px);
+}
+.change-display .manuscript .TEI {
+	border: 1px solid black;
 }
 .change-display .TEI{
 	background:#ffffff !important;
@@ -1223,7 +1231,7 @@ ul.concept-list li:last-child{
 	position: relative;
 }
 .manuscript .TEI{
-	padding: 2em 0 5em 0;
+	padding: 1em 0 5em 0;
 	margin: 2em 0 2em 0;
 	border: 2px solid gainsboro;
 }

@@ -99,6 +99,13 @@
 	transition: all 0.4s;
 	-webkit-transition: 0s;
 }
+.slider:focus,
+input:checked + .slider:focus{
+	background-color: #2e68ac;
+}
+.slider:focus:after{
+	color: #fff;
+}
 .slider:hover{
 	background-color: #525252;
 	-webkit-transition: 0s;

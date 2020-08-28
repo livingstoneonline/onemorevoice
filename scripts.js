@@ -256,6 +256,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 
+/* Toggle Color-B&W TEI Rendering */
+/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
+// Wait till document is loaded before executing.
+document.addEventListener("DOMContentLoaded", function(event) {
+  // Select the button element using it's ID.
+  document.querySelector('input#on-off-formatting')
+    // Call this function when the button is clicked.
+    .onclick = function () {
+      // Find the element with class TEI,
+      // and toggle the class 'change-display'.
+      document.querySelector('body.transcription')
+        .classList
+        .toggle('change-display');
+    };
+});
+
+
 /* Image Rotation */
 /* Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 

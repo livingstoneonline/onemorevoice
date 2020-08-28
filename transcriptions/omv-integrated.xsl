@@ -72,7 +72,32 @@
 			  		function gtag(){dataLayer.push(arguments);}
 			  		gtag('js', new Date());
 			  		gtag('config', 'UA-31768072-5');
-				</script>    
+				</script>
+		    <!--
+			<style type="text/css">
+		    		.button button {
+						font-size:.85em;	
+						padding-top:6px;
+						padding-bottom:2px;
+						margin:0px auto;
+						display:block;
+						line-height:1;
+						/*background-color:#edecea;
+						border-radius: 5px;*/
+					}
+		    		.bw,
+					.change-display .color {
+						display:inline;
+					}
+					.change-display .bw,
+					.color {
+						display:none;
+					}
+					.change-display .TEI{
+						background:#ffffff !important;
+					} 
+		    </style>
+			-->
 			</head>
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
 			
@@ -489,6 +514,14 @@
 				</aside>
 			</xsl:when>
 		</xsl:choose>
+		<!--
+        <div class="button">
+			<button id="toggle-display">
+				<span class="bw">Monochrome</span>
+				<span class="color">Full Colors</span>
+			</button>
+        </div>
+		-->
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<div class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">

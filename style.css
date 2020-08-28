@@ -86,7 +86,7 @@
 	position: relative;
 }
 .slider {
-	color: whitesmoke;
+	/* color: whitesmoke; */
 	background-color: #dbdbdb;
 	border: 1px solid #aaa;
 	border-radius: 30px;	
@@ -97,22 +97,23 @@
 	left: 0;
 	position: absolute;
 	transition: all 0.4s;
+	-webkit-transition: 0s;
 }
 .slider:hover{
 	background-color: #525252;
-	transition: none;
+	-webkit-transition: 0s;
 }
-.slider:hover::after{
+.slider:hover:after{
 	color: whitesmoke;
-	transition: none;
+	-webkit-transition: 0s;
 }
 input:checked + .slider:hover{
 	background-color: whitesmoke;
-	transition: none;
+	-webkit-transition: 0s;
 }
-input:checked + .slider:hover::after{
+input:checked + .slider:hover:after{
 	color: black;
-	transition: none;
+	-webkit-transition: 0s;
 }
 
 /* The sliding button */
@@ -135,6 +136,7 @@ input:checked + .slider:hover::after{
 input:checked + .slider {
 	/* background-color: #858585; */
 	background-color: black;
+	-webkit-transition: 0s;
 }
 input:checked + .slider:before {/*after*/
 	transform: translateX(35px);
@@ -147,6 +149,7 @@ input:checked + .slider:before {/*after*/
 	top: 5px;
 	right:11px;
 	position: absolute;
+	-webkit-transition: 0s;
   }
   
 /* "OFF" Text */
@@ -154,6 +157,7 @@ input:checked + .slider:after {/*after*/
 	content: "OFF";
 	color: #fff;
 	left: -11px;
+	-webkit-transition: 0s;
 }
 
 /**************/

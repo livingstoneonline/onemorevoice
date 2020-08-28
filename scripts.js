@@ -241,13 +241,14 @@ function getPreviousElement(items, currentItem){
 
 /* Toggle Color-B&W TEI Rendering */
 /* Created for One More Voice by way of Livingstone Online by Nigel Banks */
+
 // Wait till document is loaded before executing.
 document.addEventListener("DOMContentLoaded", function(event) {
   // Select the button element using it's ID.
   document.querySelector('input#on-off-formatting')
     // Call this function when the button is clicked.
     .onclick = function () {
-      // Find the element with class TEI,
+      // Find the element with class transcription,
       // and toggle the class 'change-display'.
       document.querySelector('body.transcription')
         .classList

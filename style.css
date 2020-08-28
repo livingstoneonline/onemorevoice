@@ -1,20 +1,19 @@
-/* See 329, 1088 */
-#toggle-display {
-	/* font-size:.85em;	
+/* #toggle-display {
+	font-size:.85em;	
 	padding-top:6px;
 	padding-bottom:2px;
 	margin:0px auto;
 	display:block;
-	line-height:1; */
-	/*background-color:#edecea;
-	border-radius: 5px;*/
-}
-.toggle-text{
-	/* font-family: Arial, Geneva, Tahoma, sans-serif;
+	line-height:1;
+	background-color:#edecea;
+	border-radius: 5px;
+} */
+/* .toggle-text{
+	font-family: Arial, Geneva, Tahoma, sans-serif;
 	border: 1px gray solid;
 	padding: .5em;
 	width: 25em;
-	margin: 0 auto; */
+	margin: 0 auto;
 }
 #toggle-display::-moz-focus-inner{
 	border: 0;
@@ -43,7 +42,77 @@
 }
 #toggle-display.click-color:hover{
 	background-color: #424242;
+} */
+
+/* Slider adapted from https://code-boxx.com/pure-simple-css-toggle-button/ */
+/* See 329, 1088 */
+
+/* Hide default input */
+.toggle input {
+	display: none;
+  }
+
+/* The container and background */
+.toggle {
+	position: relative;
+	display: inline-block;
+	width: 4.2em;
+	height: 1.8em;
 }
+.slider {
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: whitesmoke;
+	background-color: #858585;
+	border: 1px solid #aaa;
+	border-radius: 30px;
+	transition: all 0.5s;
+}
+
+/* The sliding button */
+.slider:before {
+	position: absolute;
+	content: "";
+	width: calc(1.8em * .78);
+	height: calc(1.8em * .78);
+	left: 2px;
+	top: 1px;
+	background-color: whitesmoke;
+	border: 1px solid #aaa;
+	border-radius: 24px;
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+/* On checked */
+input:checked + .slider {
+	background-color: #dbdbdb;
+}
+input:checked + .slider:before {
+	transform: translateX(35px);
+}
+/* "ON" Text */
+.slider:after {
+	position: absolute;
+	content: "ON";
+	top: 5px;
+	right:11px;
+	color: #fff;
+	font-size: 0.9em;
+  }
+  
+/* "OFF" Text */
+input:checked + .slider:after {
+	color: #424242;
+	content: "OFF";
+	left: -10px;
+}
+
 .bw,
 .change-display .color {
 	display:inline;
@@ -105,12 +174,12 @@ Table of Contents
 
 /** Main Site Colors **/
 /*
-site-blue #2e68ac
-site-red #cc4943
-whitesmoke
-light gray #dbdbdb
-dark gray #858585
-dark brown #424242
+site-blue #2e68ac;
+site-red #cc4943;
+whitesmoke;
+light gray #dbdbdb;
+dark gray #858585;
+dark brown #424242;
 also see 2.9 for manuscript colors
 */
 

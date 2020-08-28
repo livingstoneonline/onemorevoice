@@ -1,5 +1,5 @@
 /* See 329, 1088 */
-.button button {
+#toggle-display {
 	/* font-size:.85em;	
 	padding-top:6px;
 	padding-bottom:2px;
@@ -9,31 +9,39 @@
 	/*background-color:#edecea;
 	border-radius: 5px;*/
 }
-button::-moz-focus-inner{
+.toggle-text{
+	/* font-family: Arial, Geneva, Tahoma, sans-serif;
+	border: 1px gray solid;
+	padding: .5em;
+	width: 25em;
+	margin: 0 auto; */
+}
+#toggle-display::-moz-focus-inner{
 	border: 0;
   }
-  .button button{
+#toggle-display{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	font-size: .9em;
+	text-align: left;
 	background-color: #dbdbdb;
 	border: 1px solid #858585;
 	border-radius: 12px;
-	padding: .5em 1em;
+	padding: .3em 1.7em;
 	margin:0px auto;
-	width: 18em;
+	width:20em;
 }
-.button button:hover{
+#toggle-display:hover{
 	color:whitesmoke;
 	background-color: #424242;
 }
-.button button:focus{
+#toggle-display:focus{
 	border: 2px #2e68ac solid;
 }
-.button button.click-color{
+#toggle-display.click-color{
 	color: whitesmoke;
 	background-color: #858585;
 }
-.button button.click-color:hover{
+#toggle-display.click-color:hover{
 	background-color: #424242;
 }
 .bw,
@@ -353,7 +361,6 @@ img,
 	font-size: 1.2em;
 	line-height: 1.6em;
 	text-align: left;
-	padding-bottom: .5em;
 }
 @media only screen and (min-width: 768px){
 	.credits{

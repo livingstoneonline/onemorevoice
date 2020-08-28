@@ -99,11 +99,11 @@
 	transition: all 0.4s;
 	-webkit-transition: 0s;
 }
-.slider:focus,
-input:checked + .slider:focus{
+.toggle:focus .slider,
+input:checked + .toggle:focus .slider{
 	background-color: #2e68ac;
 }
-.slider:focus:after{
+.toggle:focus .slider:after{
 	color: #fff;
 }
 .slider:hover{

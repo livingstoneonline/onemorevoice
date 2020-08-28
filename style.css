@@ -98,6 +98,22 @@
 	position: absolute;
 	transition: all 0.4s;
 }
+.slider:hover{
+	background-color: #525252;
+	transition: none;
+}
+.slider:hover::after{
+	color: whitesmoke;
+	transition: none;
+}
+input:checked + .slider:hover{
+	background-color: whitesmoke;
+	transition: none;
+}
+input:checked + .slider:hover::after{
+	color: black;
+	transition: none;
+}
 
 /* The sliding button */
 .slider:before {

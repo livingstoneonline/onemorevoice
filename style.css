@@ -1,6 +1,6 @@
 /* Slider adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
 
-/* See 1193: .manuscript .TEI */
+/* See 1189: .manuscript .TEI */
 
 /* hide regular checkbox */
 .md_switch [type=checkbox] {
@@ -16,10 +16,10 @@ label.md_switch::after{
 
 /* container specs */
 .md_switch {
-	margin: .5em 0;
+	margin: .5em;
 	padding: .5em;
 	height: 1.5em;
-	width: 12.8em;	
+	/* width: 12.8em; */
 	border: 1px #525252 solid;
 	border-radius: 10px;
 	align-items: center;
@@ -37,7 +37,7 @@ label.md_switch{
 
 /* full toggle position/qualities */
 .md_switch .md_switch__toggle {
-	left: 14px;
+	right: -6px;
 	cursor: pointer;
 	position: relative;
 	}
@@ -110,14 +110,20 @@ label.md_switch{
 
 /**************/
 
-.change-display .manuscript .TEI {
+.change-color .manuscript .TEI {
 	border: 1px solid black;
 }
-.change-display .TEI{
+.change-color .TEI{
 	background:#ffffff !important;
 } 
-.change-display .TEI *{
+.change-color .TEI *{
 	color: black !important;
+}
+.invert-color .manuscript{
+	filter: invert(1);
+}
+
+.rotate .TEI *{
 	transform: rotate(0deg) !important;
 	-ms-transform:rotate(0deg) !important; /* IE 9 */
 	-moz-transform:rotate(0deg) !important; /* Firefox */
@@ -1182,7 +1188,7 @@ ul.concept-list li:last-child{
 }
 .manuscript .TEI{
 	padding: 1em 0 5em 0;
-	margin: 2em 0 2em 0;
+	margin: .5em 0 2em 0;
 	border: 2px solid gainsboro;
 }
 .manuscript .ms-container{

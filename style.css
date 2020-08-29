@@ -80,8 +80,8 @@
 
 /* The container and background */
 .toggle {
-	width: 4.2em;
 	height: 1.8em;
+	width: 4.2em;
 	display: inline-block;
 	position: relative;
 }
@@ -171,74 +171,84 @@ input:checked + .slider:after {/*after*/
 
 /* Slider adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
 
+/* container specs */
 .md_switch {
 	font-size: .95em;
 	font-variant: small-caps;
 	font-weight: 600;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #525252;
-	background-color: #fff;
-	align-items: center;
-	display: inline-flex;
 	margin: 5px 0;
 	padding: .5em;
-	height: 1.6em;
-	width: 13.5em;
+	height: 1.4em;
+	width: 13em;
 	border: 1px #525252 solid;
 	border-radius: 10px;
+	align-items: center;
+	display: inline-flex;
 	}
+
+/* remove dropdown arrow */
 label.md_switch::after{
 	display: none;	
 }
+
+/* toggle position/qualities */
 .md_switch .md_switch__toggle {
-	position: relative;
+	left: 8px;
 	cursor: pointer;
-	}
-.md_switch [type=checkbox] {
-	position: absolute;
-	opacity: 0;
-	pointer-events: none;
+	position: relative;
 	}
 
-/* default states */
+/* hide regular checkbox */
+.md_switch [type=checkbox] {
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+	}
+
+/* slider (before) & switch (after) */
 .md_switch .md_switch__toggle::before,
 .md_switch .md_switch__toggle::after {
 	content: '';
-	display: block;
 	margin: 0 3px;
+	border: 1px solid #aaa;
 	transition: all 100ms cubic-bezier(0.4, 0.0, 0.2, 1);
-	background: #BDBDBD;
+	display: block;
 	}
+
+/* slider only */
 .md_switch .md_switch__toggle::before {
-	height: 1.3em;
-	width: 3em;
-	border-radius: 0.65em;
-	opacity: 0.6;
+	height: 1.8em;
+	width: 4.2em;
+	border-radius: 30px;	
 	}
+
+/* switch only */
 .md_switch .md_switch__toggle::after {
 	position: absolute;
-	top: 50%;
+	top: 49%;
+	left: 3px;
 	transform: translate(0, -50%);
-	height: 1.7em;
-	width: 1.7em;
+	height: 1.5em;
+	width: 1.5em;
 	border-radius: 50%;
-	box-shadow: 0 0 8px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.4);
 	}
 
-/* special states */
+/* checked states: slider (before) & switch (after) */
+.md_switch [type=checkbox]:checked+.md_switch__toggle::before{
+	background-color: #dbdbdb;
+}
+.md_switch [type=checkbox]:checked+.md_switch__toggle::after{
+	background-color: white;
+	transform: translate(calc(4.2em - 116%), -49%);
+	}
+
+/* focus & hover */
 .md_switch [type=checkbox]:focus+.md_switch__toggle {
 	outline: #5d9dd5 solid 1px;
-	box-shadow: 0 0 8px #5e9ed6;
 	}
-
-/* checked states */
-.md_switch [type=checkbox]:checked+.md_switch__toggle::before,
-.md_switch [type=checkbox]:checked+.md_switch__toggle::after{
-	background: #00897B;
-	}
-.md_switch [type=checkbox]:checked+.md_switch__toggle::after {
-	transform: translate(calc(3em - 100%), -50%);
-	}
+/* add hover! */
 
 /**************/
 

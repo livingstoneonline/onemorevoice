@@ -189,7 +189,7 @@ label.md_switch::after{
 	padding: .5em;
 	height: 1.5em;
 	width: 12.8em;	
-	border: 1px black solid;
+	border: 1px #525252 solid;
 	border-radius: 10px;
 	align-items: center;
 	display: inline-flex;
@@ -217,16 +217,13 @@ label.md_switch{
 	content: '';
 	margin: 0 3px;
 	border: 1px solid #858585;
-	transition: all 100ms; /* cubic-bezier(0.4, 0.0, 0.2, 1) */
+	transition: all 100ms;
 	display: block;
 	}
 
 /* slider only */
 .md_switch .md_switch__toggle::before {
-	/* content: "OFF";
-	font-size: 0.9em; */
-	color: whitesmoke;
-	background-color: black;
+	background-color: #525252;
 	height: 1.7em;
 	width: 3.5em;
 	border-radius: 30px;	
@@ -255,35 +252,30 @@ label.md_switch{
 	transform: translate(calc(3.3em - 100%), -50%);
 }
 
-/* focus*/
+/* focus */
 .md_switch [type=checkbox]:focus+.md_switch__toggle {
 	background: #4982c4;
 	padding: 3px 1px;
 }
-.md_switch [type=checkbox]:checked:focus+.md_switch__toggle {
-	background:  #cc4943;
-	padding: 3px 1px;
-}
 
-/*slider & focus*/
+/* slider & hover */
 .md_switch .md_switch__toggle:hover::before{
-	background-color: #cc4943;
-}
-/*switch & focus*/
-.md_switch .md_switch__toggle:hover::after{
 	background-color: #dbdbdb;
 }
-
-/*slider:checked & focus*/
-.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::before{
-	background-color: #4982c4;
+/* switch & hover */
+.md_switch .md_switch__toggle:hover::after{
+	background-color: #858585;
 }
-/*switch:checked & focus*/
+
+/* slider:checked & hover */
+.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::before{
+	background-color: #858585;
+}
+/* switch:checked & hover */
 .md_switch [type=checkbox]:checked+.md_switch__toggle:hover::after{
 	background-color: #dbdbdb;
 	;
 }
-
 
 /**************/
 
@@ -368,6 +360,7 @@ whitesmoke;
 light gray #dbdbdb;
 dark gray #858585;
 dark brown #424242;
+near black #525252;
 also see 2.9 for manuscript colors
 */
 

@@ -129,10 +129,23 @@ label.md_switch{
 .change-color .TEI *{
 	color: black !important;
 }
+.change-color .manuscript .pb-title,
+.change-color .byline-divider{
+	border-top: 1px dotted black;
+}
+.change-color .unclear,
+.change-color .gap,
+.change-color .rdg,
+.manuscript .figure{
+	border-bottom: 1px dotted black;
+}
+.change-color .sic,
+.change-color .corr{
+	border-bottom: 2px dotted black;
+}
 .invert-color .manuscript{
 	filter: invert(1);
 }
-
 .rotate .TEI *{
 	transform: rotate(0deg) !important;
 	-ms-transform:rotate(0deg) !important; /* IE 9 */

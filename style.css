@@ -2131,7 +2131,12 @@ table .linenumber{
 	width: 7em;
 	position: absolute;
     top: -8.5em;
-    left: 7em;
+    left: 12em;
+}
+@media only screen and (min-width: 768px){
+	.decoration.liv_020024_0001 img{
+		left: 7em;
+	}
 }
 .header3.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;

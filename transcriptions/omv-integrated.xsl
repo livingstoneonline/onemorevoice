@@ -489,17 +489,9 @@
 				</aside>
 			</xsl:when>
 		</xsl:choose>
-		<!--
-        <div class="button">
-			<button id="toggle-display">
-				<span class="bw">Monochrome</span>
-				<span class="color">Full Colors</span>
-			</button>
-        </div>
-		-->
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<aside id="transcription-switches" class="switches">
+				<aside id="transcription-switches" class="manuscript-switches">
 					<label for="remove-color" class="md_switch" title="Color: On/Off">
 						Remove Color
 						<input type="checkbox" checked="" id="remove-color"/>
@@ -580,6 +572,18 @@
 				</main>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
+				<aside id="transcription-switches" class="journal-switches">
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+						Invert
+						<input type="checkbox" checked="" id="invert" />
+						<span class="md_switch__toggle"></span>
+				  	</label>
+				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
+						Remove Justification
+						<input type="checkbox" checked="" id="remove-justification" />
+						<span class="md_switch__toggle"></span>
+				  	</label>
+			  	</aside>
 				<xsl:variable name="narrow">
 					<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 				</xsl:variable>

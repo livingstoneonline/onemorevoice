@@ -284,6 +284,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
 });
 
+// Wait till document is loaded before executing.
+document.addEventListener("DOMContentLoaded", function(event) {
+  // Select the button element using it's ID.
+  document.querySelector('input#remove-justification')
+    // Call this function when the button is clicked.
+    .onclick = function () {
+      // Find the element with class transcription,
+      // and toggle the class 'change-display'.
+      document.querySelector('body.transcription')
+        .classList
+        .toggle('unjustify');
+    };
+});
+
 
 /* Image Rotation */
 /* Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */

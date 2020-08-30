@@ -492,17 +492,17 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside id="transcription-switches" class="manuscript-switches">
-					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch, set to 'on.'">
+					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Color
 						<input type="checkbox" checked="" id="remove-color"/>
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch, set to 'on.'">
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
 						<input type="checkbox" checked="" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch, set to 'on.'">
+				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Rotation
 						<input type="checkbox" checked="" id="remove-rotation" />
 						<span class="md_switch__toggle"></span>
@@ -573,12 +573,12 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside id="transcription-switches" class="journal-switches">
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch, set to 'on.'">
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
 						<input type="checkbox" checked="" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch, set tos 'on.'">
+				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Justification
 						<input type="checkbox" checked="" id="remove-justification" />
 						<span class="md_switch__toggle"></span>

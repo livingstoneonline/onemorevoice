@@ -147,6 +147,13 @@ label.md_switch{
 .invert-color .journal{
 	filter: invert(1);
 }
+.invert-color .journal .pb-title{
+	color: black;
+}
+.invert-color .journal .sic,
+.invert-color .journal .corr{
+	border-bottom: 2px dotted black;
+}
 .rotate .TEI *{
 	transform: rotate(0deg) !important;
 	-ms-transform:rotate(0deg) !important; /* IE 9 */
@@ -1274,7 +1281,7 @@ ul.concept-list li:last-child{
 .journal .TEI{
 	display: block;
 	text-align: justify;
-	padding: .5em .7em 2em .7em;
+	padding: 1em .7em 2em .7em;
 	margin-left: auto;
 	margin-right: auto;
 }

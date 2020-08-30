@@ -1,13 +1,13 @@
-/* Slider adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
+/* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
 
-/* See 1189: .manuscript .TEI */
-
-.switches{
+.manuscript-switches,
+.journal-switches{
 	font-size: .92em;
 }
 
 @media only screen and (min-width: 768px){
-	.switches{
+	.manuscript-switches,
+	.journal-switches{
 		font-size: 1em;
 	}
 }
@@ -143,7 +143,8 @@ label.md_switch{
 .change-color .corr{
 	border-bottom: 2px dotted black;
 }
-.invert-color .manuscript{
+.invert-color .manuscript,
+.invert-color .journal{
 	filter: invert(1);
 }
 .rotate .TEI *{
@@ -1211,6 +1212,10 @@ ul.concept-list li:last-child{
 		display: block !important; /* Tied to overlay */
 	}
 }
+.journal{
+	color: black;
+	background-color: white;
+}
 @media only screen and (min-width: 768px){
 	.journal.narrow{
 		width: 70%;
@@ -1241,7 +1246,7 @@ ul.concept-list li:last-child{
 /* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	body .manuscript,
-	body .switches{
+	body .manuscript-switches{
 		display: none;
 	}
 	body .narrow-mobile{
@@ -1269,7 +1274,7 @@ ul.concept-list li:last-child{
 .journal .TEI{
 	display: block;
 	text-align: justify;
-	padding: 1.5em 0 2em 0;
+	padding: .5em .7em 2em .7em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1633,6 +1638,7 @@ table .linenumber{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 .dottedunderline{
 	border-bottom: 1px dashed;

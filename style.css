@@ -1,179 +1,3 @@
-/* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
-
-.manuscript-switches,
-.journal-switches{
-	font-size: .92em;
-}
-
-@media only screen and (min-width: 768px){
-	.manuscript-switches,
-	.journal-switches{
-		font-size: 1em;
-	}
-}
-
-/* hide regular checkbox */
-.md_switch [type=checkbox] {
-	pointer-events: none;
-	opacity: 0;
-	position: absolute;
-	}
-
-/* remove dropdown arrow */
-label.md_switch::after{
-	display: none;	
-}
-
-/* container specs */
-.md_switch {
-	margin: .5em;
-	padding: .5em;
-	height: 1.5em;
-	/* width: 12.8em; */
-	border: 1px #525252 solid;
-	border-radius: 10px;
-	align-items: center;
-	display: inline-flex;
-}
-
-/* label */
-label.md_switch{
-	font-size: .95em;
-	font-weight: 600;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	/* color: #525252; */
-	padding-left: 12px;
-}
-
-/* full toggle position/qualities */
-.md_switch .md_switch__toggle {
-	right: -6px;
-	cursor: pointer;
-	position: relative;
-	}
-
-/* common: slider (before) & switch (after) */
-.md_switch .md_switch__toggle::before,
-.md_switch .md_switch__toggle::after {
-	content: '';
-	margin: 0 3px;
-	border: 1px solid #858585;
-	transition: all 100ms;
-	display: block;
-	}
-
-/* slider only */
-.md_switch .md_switch__toggle::before {
-	background-color: #525252;
-	height: 1.7em;
-	width: 3.5em;
-	border-radius: 30px;	
-	align-items: center;
-	display: inline-flex;
-}
-.md_switch [type=checkbox]:checked+.md_switch__toggle::before{
-	background-color: #dbdbdb;
-}
-
-/* switch only */
-.md_switch .md_switch__toggle::after {
-	background-color: white;
-	top: 50%;
-	left: 3px;
-	height: 1.5em;
-	width: 1.6em;
-	border-radius: 50%;
-	transform: translate(0, -50%);
-	position: absolute;
-}
-.md_switch [type=checkbox]:checked+.md_switch__toggle::after{
-	content: "";
-	height: 1.5em;
-	width: 1.6em;
-	transform: translate(calc(3.3em - 100%), -50%);
-}
-
-/* focus */
-.md_switch [type=checkbox]:focus+.md_switch__toggle {
-	background: #4982c4;
-	padding: 3px 1px;
-}
-
-/* slider & hover */
-.md_switch .md_switch__toggle:hover::before{
-	background-color: #dbdbdb;
-}
-/* switch & hover */
-.md_switch .md_switch__toggle:hover::after{
-	background-color: #858585;
-}
-
-/* slider:checked & hover */
-.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::before{
-	background-color: #858585;
-}
-/* switch:checked & hover */
-.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::after{
-	background-color: #dbdbdb;
-	;
-}
-
-/**************/
-
-.change-color .manuscript .TEI {
-	border: 1px solid black;
-}
-.change-color .TEI{
-	background:#ffffff !important;
-} 
-.change-color .TEI *{
-	color: black !important;
-}
-.change-color .manuscript .pb-title,
-.change-color .byline-divider{
-	border-top: 1px dotted black;
-}
-.change-color .unclear,
-.change-color .gap,
-.change-color .rdg,
-.manuscript .figure{
-	border-bottom: 1px dotted black;
-}
-.change-color .sic,
-.change-color .corr{
-	border-bottom: 2px dotted black;
-}
-.invert-color .manuscript,
-.invert-color .journal{
-	filter: invert(1);
-}
-.invert-color .journal .pb-title{
-	color: black;
-}
-.invert-color .journal .sic,
-.invert-color .journal .corr{
-	border-bottom: 2px dotted black;
-}
-.rotate .TEI *{
-	transform: rotate(0deg) !important;
-	-ms-transform:rotate(0deg) !important; /* IE 9 */
-	-moz-transform:rotate(0deg) !important; /* Firefox */
-	-webkit-transform:rotate(0deg) !important; /* Safari and Chrome */
-	-o-transform:rotate(0deg) !important; /* Opera */
-}
-@media only screen and (min-width: 768px){
-	.rotate .note-1.liv_003027_0001{
-		float: none;
-		margin: 0;
-	}
-	.rotate .text.liv_020011_0004{
-		margin: 0
-	}
-}
-.unjustify .journal .TEI{
-	text-align: left;
-}
-
 /* CSS File for One More Voice (https://onemorevoice.org/) */
 
 /* Created by Adrian S. Wisnicki */
@@ -197,17 +21,19 @@ Table of Contents
 
 ** 2.0 Transcription CSS **
 2.1. Textual divisions
-2.2. Buttons and button-like links
-2.3. Pagebreaks, linebreaks, linenumbers
-2.4. Parts of the page
-2.5. Milestone and lines
-2.6. Editorial elements
-2.7. Rend classes (except lines, page placement, colors) 
-2.8. Page placement 
-2.9. Colors 
-2.10. Misc 
-2.11. Letters [not is use, commented out]
-2.12. Specific item rendering
+2.2.1. Switches
+2.2.2. Toggle Classes
+2.3. Buttons and button-like links
+2.4. Pagebreaks, linebreaks, linenumbers
+2.5. Parts of the page
+2.6. Milestone and lines
+2.7. Editorial elements
+2.8. Rend classes (except lines, page placement, colors) 
+2.9. Page placement 
+2.10. Colors 
+2.11. Misc 
+2.12. Letters [not is use, commented out]
+2.13. Specific item rendering
 */
 
 /*--------------------------------------*/
@@ -1227,6 +1053,7 @@ ul.concept-list li:last-child{
 	.journal.narrow{
 		width: 70%;
 		margin: 0 auto;
+		padding: 0 2em;
 	}
 }
 .TEI{
@@ -1295,7 +1122,186 @@ ul.concept-list li:last-child{
 }
 
 
-/* 2.2. Buttons and button-like links */
+/* 2.2.1. Switches */
+
+/* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
+
+.manuscript-switches,
+.journal-switches{
+	font-size: .92em;
+}
+@media only screen and (min-width: 768px){
+	.manuscript-switches,
+	.journal-switches{
+		font-size: 1em;
+	}
+}
+
+/* hide regular checkbox */
+.md_switch [type=checkbox] {
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+	}
+
+/* remove dropdown arrow */
+label.md_switch::after{
+	display: none;	
+}
+
+/* container specs */
+.md_switch {
+	margin: .5em;
+	padding: .5em;
+	height: 1.5em;
+	/* width: 12.8em; */
+	border: 1px #525252 solid;
+	border-radius: 10px;
+	align-items: center;
+	display: inline-flex;
+}
+
+/* label */
+label.md_switch{
+	font-size: .95em;
+	font-weight: 600;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	/* color: #525252; */
+	padding-left: 12px;
+}
+
+/* full toggle position/qualities */
+.md_switch .md_switch__toggle {
+	right: -6px;
+	cursor: pointer;
+	position: relative;
+	}
+
+/* common: slider (before) & switch (after) */
+.md_switch .md_switch__toggle::before,
+.md_switch .md_switch__toggle::after {
+	content: '';
+	margin: 0 3px;
+	border: 1px solid #858585;
+	transition: all 100ms;
+	display: block;
+	}
+
+/* slider only */
+.md_switch .md_switch__toggle::before {
+	background-color: #525252;
+	height: 1.7em;
+	width: 3.5em;
+	border-radius: 30px;	
+	align-items: center;
+	display: inline-flex;
+}
+.md_switch [type=checkbox]:checked+.md_switch__toggle::before{
+	background-color: #dbdbdb;
+}
+
+/* switch only */
+.md_switch .md_switch__toggle::after {
+	background-color: white;
+	top: 52%;
+	left: 3px;
+	height: 1.5em;
+	width: 1.6em;
+	border-radius: 50%;
+	transform: translate(0, -50%);
+	position: absolute;
+}
+.md_switch [type=checkbox]:checked+.md_switch__toggle::after{
+	content: "";
+	height: 1.5em;
+	width: 1.6em;
+	transform: translate(calc(3.3em - 100%), -50%);
+}
+
+/* focus */
+.md_switch [type=checkbox]:focus+.md_switch__toggle {
+	background: #4982c4;
+	padding: 3px 1px;
+}
+
+/* slider & hover */
+.md_switch .md_switch__toggle:hover::before{
+	background-color: #dbdbdb;
+}
+/* switch & hover */
+.md_switch .md_switch__toggle:hover::after{
+	background-color: #858585;
+}
+
+/* slider:checked & hover */
+.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::before{
+	background-color: #858585;
+}
+/* switch:checked & hover */
+.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::after{
+	background-color: #dbdbdb;
+	;
+}
+
+
+/* 2.2.2. Toggle Classes */
+
+.change-color .manuscript .TEI {
+	border: 1px solid black;
+}
+.change-color .TEI{
+	background:#ffffff !important;
+} 
+.change-color .TEI *{
+	color: black !important;
+}
+.change-color .manuscript .pb-title,
+.change-color .byline-divider{
+	border-top: 1px dotted black;
+}
+.change-color .unclear,
+.change-color .gap,
+.change-color .rdg,
+.manuscript .figure{
+	border-bottom: 1px dotted black;
+}
+.change-color .sic,
+.change-color .corr{
+	border-bottom: 2px dotted black;
+}
+.invert-color .manuscript,
+.invert-color .journal{
+	filter: invert(1);
+}
+.invert-color .journal .pb-title{
+	color: black;
+}
+.invert-color .journal .sic,
+.invert-color .journal .corr{
+	border-bottom: 2px dotted black;
+}
+.rotate .TEI *{
+	transform: rotate(0deg) !important;
+	-ms-transform:rotate(0deg) !important; /* IE 9 */
+	-moz-transform:rotate(0deg) !important; /* Firefox */
+	-webkit-transform:rotate(0deg) !important; /* Safari and Chrome */
+	-o-transform:rotate(0deg) !important; /* Opera */
+}
+@media only screen and (min-width: 768px){
+	.rotate .note-1.liv_003027_0001{
+		float: none;
+		margin: 0;
+	}
+	.rotate .text.liv_020011_0004{
+		margin: 0
+	}
+}
+.unjustify .journal .TEI{
+	text-align: left;
+}
+
+
+/* 2.3. Buttons and button-like links */
 
 /* .back-button is used on pages with critically-edited primary texts */
 .back-button a,
@@ -1362,6 +1368,7 @@ button::-moz-focus-inner{
 	background-color: #424242;
 }
 .rotate-180{
+	transform: rotate(180deg);
 	-ms-transform:rotate(180deg); /* IE 9 */
 	-moz-transform:rotate(180deg); /* Firefox */
 	-webkit-transform:rotate(180deg); /* Safari and Chrome */
@@ -1369,7 +1376,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 2.3. Pagebreaks, linebreaks, linenumbers */
+/* 2.4. Pagebreaks, linebreaks, linenumbers */
 
 .pb-title{
 	color: #2e68ac;
@@ -1446,7 +1453,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 2.4. Parts of the page */
+/* 2.5. Parts of the page */
 
 .p,
 .ab{
@@ -1542,7 +1549,7 @@ table .linenumber{
 }
 
 
-/* 2.5. Milestone and lines */
+/* 2.6. Milestone and lines */
 
 .milestone{
 	display: block;
@@ -1602,7 +1609,7 @@ table .linenumber{
 }
 
 
-/* 2.6. Editorial elements */
+/* 2.7. Editorial elements */
 
 .del,
 .del-by-over-text{
@@ -1628,7 +1635,7 @@ table .linenumber{
 }
 
 
-/* 2.7. Rend classes (except colors, lines, and up-down placement) */
+/* 2.8. Rend classes (except colors, lines, and up-down placement) */
 
 .caps{
 	text-transform: uppercase;
@@ -1682,6 +1689,9 @@ table .linenumber{
 	right: 0;
 	position: absolute;
 }
+.journal.narrow .right{
+	right: 1em;
+}
 .marginright{
 	float: right;
 }
@@ -1689,12 +1699,14 @@ table .linenumber{
 	font-size: .85em;
 }
 .upside-down{
+	/* transform: rotate(00deg); */
 	/*-ms-transform:rotate(180deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(180deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(180deg);*/ /* Safari and Chrome */
 	/*-o-transform:rotate(180deg);*/ /* Opera */
 }
 .vertical{
+	/* transform: rotate(00deg); */
 	/*-ms-transform:rotate(90deg);*/ /* IE 9 */
 	/*-moz-transform:rotate(90deg);*/ /* Firefox */
 	/*-webkit-transform:rotate(90deg);*/ /* Safari and Chrome */
@@ -1702,7 +1714,7 @@ table .linenumber{
 }
 
 
-/* 2.8. Page placement */
+/* 2.9. Page placement */
 
 .above,
 .below,
@@ -1741,7 +1753,7 @@ table .linenumber{
 }
 
 
-/* 2.9. Colors */
+/* 2.10. Colors */
 
 .black{
 	color: black;
@@ -1787,7 +1799,7 @@ table .linenumber{
 }
 
 
-/* 2.10. Misc */
+/* 2.11. Misc */
 
 .none{
 	display: none;
@@ -1833,11 +1845,11 @@ table .linenumber{
 	width: 60%;
 	display: inline-block;
 }
-.metamark{
-	/*color:#666666;
-	border-bottom:1px #666666 dotted;*/
-}
-.collective,
+/* .metamark{
+	color:#666666;
+	border-bottom:1px #666666 dotted;
+} */
+/* .collective,
 .orgName,
 .placeName,
 .geogName,
@@ -1845,8 +1857,8 @@ table .linenumber{
 .country,
 .region,
 .settlement{
-	/* border-bottom: 1px #2e68ac dotted; */
-}
+	border-bottom: 1px #2e68ac dotted;
+} */
 
 /* The following is useful for coding review */
 /* .collective{
@@ -1904,7 +1916,7 @@ table .linenumber{
 */
 
 
-/* 2.14. Specific item rendering */
+/* 2.13. Specific item rendering */
 .metamark.liv_000023_0036{
 	padding: .19em .7em;
 	margin-left: -.4em; 

@@ -1189,7 +1189,7 @@ label.md_switch{
 
 /* slider only */
 .md_switch .md_switch__toggle::before {
-	background-color: #dbdbdb;
+	background-color: #525252;
 	height: 1.7em;
 	width: 3.5em;
 	border-radius: 30px;	
@@ -1197,7 +1197,7 @@ label.md_switch{
 	display: inline-flex;
 }
 .md_switch [type=checkbox]:checked+.md_switch__toggle::before{
-	background-color: #525252;
+	background-color: #dbdbdb;
 }
 
 /* switch only */
@@ -1226,20 +1226,20 @@ label.md_switch{
 
 /* slider & hover */
 .md_switch .md_switch__toggle:hover::before{
-	background-color: #858585;
+	background-color: #dbdbdb;
 }
 /* switch & hover */
 .md_switch .md_switch__toggle:hover::after{
-	background-color: #dbdbdb;
+	background-color: #858585;
 }
 
 /* slider:checked & hover */
 .md_switch [type=checkbox]:checked+.md_switch__toggle:hover::before{
-	background-color: #dbdbdb;
+	background-color: #858585;
 }
 /* switch:checked & hover */
 .md_switch [type=checkbox]:checked+.md_switch__toggle:hover::after{
-	background-color: #858585;
+	background-color: #dbdbdb;
 	;
 }
 

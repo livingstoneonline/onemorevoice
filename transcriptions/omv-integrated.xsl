@@ -35,7 +35,7 @@
 		<xsl:variable name="additional-authors-1">			
 			<xsl:choose>
 				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
-					<xsl:text>; </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator="; "/>
+					<xsl:text>, </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='normalized']" separator=", "/>
 				</xsl:when>
 				<xsl:otherwise/>
 			</xsl:choose>

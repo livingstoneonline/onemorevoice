@@ -116,7 +116,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="" who="">XML File Editing</change>
+			<change when="" who="#AW">XML File Editing</change>
         </revisionDesc>
     </teiHeader>
 
@@ -131,7 +131,16 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_0210xx_0001" n="0001"/>
-<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_0210xx_0001.jpg"/><!-- add rend="vertical" for portrait images --><!-- add rend="gray" to add gray border to image --><label><!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label><figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc></figure></p>
+<lb/>
+<p rend="no-indent">
+	<figure>
+		<graphic n="artifact" url="../artifact-images/liv_0210xx_0001.jpg"/>
+		<!-- add rend="vertical" for portrait images -->
+		<!-- add rend="gray" to add gray border to image -->
+		<label><!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc>
+	</figure>
+</p>
 <!-- Use the following to repoduce any original image caption. -->
 <!--<lb/><p rend="left small">[<seg rend="italic">original caption</seg>]</p>
 <lb/><p rend="no-indent left small">[CAPTION GOES HERE]</p>-->

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021033"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“The Grave of Pauline Johnson in Stanley Park, Near Siwash Rock”; “Siwash Rock”; “The Spirit of Siwash Rock”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘The Grave of Pauline Johnson in Stanley Park, Near Siwash Rock’; ‘Siwash Rock’; ‘The Spirit of Siwash Rock’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">Images Related to E. Pauline Johnson's Grave, 1913</title><!-- Title, date -->
+                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Anonymous</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Marega, Sergison, 1871-1939</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Anonymous</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Sergison Marega</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_021033</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://archive.org/details/moccasinmaker00john/page/n5/mode/2up">Internet Archive</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+                    <p>Public domain images.</p>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if the artifact comes from a book or journal; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="artifact-book-journal">
+					<monogr n="book-section"><!-- n="book-section" if journal/periodical article -->
+						<title>The Moccasin Maker</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author>E. Pauline Johnson</author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">opposite 10, opposite 17, opposite 19</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>Toronto</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>William Briggs</publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date>1913</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“The Grave of Pauline Johnson in Stanley Park, Near Siwash Rock”</title>
+					<title>“Siwash Rock”</title>
+					<title>“The Spirit of Siwash Rock”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="An1">Anonymous</author>
+					<author xml:id="An2">Anonymous</author>
+					<author xml:id="SM">Marega, Sergison, 1871-1939</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1913">1913</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <date type="composition" when="1913">1913</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <date type="composition" when="1913">1913</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Stanley Park, Vancouver</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                    <placeName type="compositionPlace">Stanley Park, Vancouver</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                    <placeName type="compositionPlace">Stanley Park, Vancouver</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                </bibl>
+            </sourceDesc>
+			<!-- End of book/journal <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-01" who="#AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_021033_0001" n="0001"/>
+<lb/>
+<p rend="no-indent">
+	<figure>
+		<graphic n="artifact" url="../artifact-images/liv_021033_0001.jpg"/>
+		<!-- remove rend="vertical" for landscape images -->
+		<!-- add rend="gray" to add gray border to image -->
+		<label>Anonymous, “The Grave of Pauline Johnson in Stanley Park, Near Siwash Rock,” 1913<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>E. Pauline Johnson's grave with a railing in front of it.<!-- Image alt text (max. 125 char with spaces) --></figDesc>
+	</figure>
+</p>
+<!-- Use the following to repoduce any original image caption. -->
+<!--<lb/><p rend="left small">[<seg rend="italic">original caption</seg>]</p>
+<lb/><p rend="no-indent left small">[CAPTION GOES HERE]</p>-->
+
+    <pb facs="liv_021033_0002" n="0002"/>
+<lb/>
+<p rend="no-indent">
+	<figure>
+		<graphic n="artifact" rend="vertical" url="../artifact-images/liv_021033_0002.jpg"/>
+		<!-- remove rend="vertical" for landscape images -->
+		<!-- add rend="gray" to add gray border to image -->
+		<label>Anonymous, “Siwash Rock,” 1913<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>Siwash Rock.<!-- Image alt text (max. 125 char with spaces) --></figDesc>
+	</figure>
+</p>
+<!-- Use the following to repoduce any original image caption. -->
+<!--<lb/><p rend="left small">[<seg rend="italic">original caption</seg>]</p>
+<lb/><p rend="no-indent left small">[CAPTION GOES HERE]</p>-->
+
+    <pb facs="liv_021033_0003" n="0003"/>
+<lb/>
+<p rend="no-indent">
+	<figure>
+		<graphic n="artifact" url="../artifact-images/liv_021033_0003.jpg"/>
+		<!-- remove rend="vertical" for landscape images -->
+		<!-- add rend="gray" to add gray border to image -->
+		<label>Sergison Marega, “The Spirit of Siwash Rock,” 1913<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>Sculpted memorial for E. Pauline Johnson, including one figure at left and two figures at right.<!-- Image alt text (max. 125 char with spaces) --></figDesc>
+	</figure>
+</p>
+<!-- Use the following to repoduce any original image caption. -->
+<!--<lb/><p rend="left small">[<seg rend="italic">original caption</seg>]</p>
+<lb/><p rend="no-indent left small">[CAPTION GOES HERE]</p>-->
+
+
+
+            </div>
+        </body>   
+    </text>
+</TEI>

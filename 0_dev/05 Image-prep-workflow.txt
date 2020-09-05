@@ -1,0 +1,26 @@
+Image Prep Workflow
+
+0) Use Zotero to set item name
+1) Save original image as TIF with UID name: liv_012001_0001.tif
+2) Convert in terminal
+
+convert liv_012001_0001.tif -resize 1500x1500 liv_012001_0001-1500px.jpg &&
+convert liv_012001_0001.tif -resize 700x700 liv_012001_0001-700px.jpg && 
+convert liv_012001_0001.tif -resize 735x735 liv_012001_0001-735px.jpg && 
+convert liv_012001_0001.tif -resize 590x590 liv_012001_0001-590px.jpg && 
+convert liv_012001_0001.tif -resize 450x450 liv_012001_0001-450px.jpg
+
+3) Add code to HTML
+
+img class="image" src="site-images/liv_012001_0001-735px.jpg" srcset="site-images/liv_012001_0001-1500px.jpg 1500w, site-images/liv_012001_0001-735px.jpg 735w, site-images/liv_012001_0001-700px.jpg 700w, site-images/liv_012001_0001-590px.jpg 590w, site-images/liv_012001_0001-450px.jpg 450w" sizes="(min-width: 768px) 700px, (min-width: 624px) 735px, (min-width: 480px) 590px, (min-width: 320px) 450px"
+
+************
+
+Image size, main pages:
+
+click to enlarge: 1500
+992+ = 700
+768+ = 700
+624+ = 735
+480+ = 590
+320+ = 450

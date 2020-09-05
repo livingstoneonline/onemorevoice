@@ -6,25 +6,17 @@ Image Prep Workflow
 
 2) Convert in terminal
 
-convert liv_012001_0001.tif -resize 1500x1500 liv_012001_0001-1500px.jpg &&
-convert liv_012001_0001.tif -resize 900x900 liv_012001_0001-900px.jpg && 
-convert liv_012001_0001.tif -resize 750x750 liv_012001_0001-750px.jpg && 
-convert liv_012001_0001.tif -resize 600x600 liv_012001_0001-600px.jpg && 
-convert liv_012001_0001.tif -resize 450x450 liv_012001_0001-450px.jpg
-
-or 
-
-convert liv_012001_0001.jpg -resize 1500x1500 liv_012001_0001-1500px.jpg &&
-convert liv_012001_0001.jpg -resize 900x900 liv_012001_0001-900px.jpg && 
-convert liv_012001_0001.jpg -resize 750x750 liv_012001_0001-750px.jpg && 
-convert liv_012001_0001.jpg -resize 600x600 liv_012001_0001-600px.jpg && 
-convert liv_012001_0001.jpg -resize 450x450 liv_012001_0001-450px.jpg
+convert liv_023003_0001.tif -resize 1500x1500 liv_023003_0001-1500px.jpg &&
+convert liv_023003_0001.tif -resize 1200x1200 liv_023003_0001-1200px.jpg &&
+convert liv_023003_0001.tif -resize 900x900 liv_023003_0001-900px.jpg && 
+convert liv_023003_0001.tif -resize 600x600 liv_023003_0001-600px.jpg &&
+convert liv_023003_0001.tif -resize 300x300 liv_023003_0001-300px.jpg
 
 3) Add code to HTML
 
-class="image" src="site-images/liv_012001_0001-750px.jpg" srcset="site-images/liv_012001_0001-450px.jpg 450w, site-images/liv_012001_0001-600px.jpg 600w, site-images/liv_012001_0001-750px.jpg 750w, site-images/liv_012001_0001-900px.jpg 900w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"
-
 [Note that the 1500 image isn't included.]
+
+class="image" src="site-images/liv_023003_0001-750px.jpg" srcset="site-images/liv_023003_0001-1200px.jpg 1200w, site-images/liv_023003_0001-900px.jpg 900w, site-images/liv_023003_0001-600px.jpg 600w, site-images/liv_023003_0001-300px.jpg 300w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"
 
 4) Add images to relevant folder
 

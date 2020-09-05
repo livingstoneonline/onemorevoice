@@ -8,14 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Home page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
     <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
-    	
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 	<script>
   		window.dataLayer = window.dataLayer || [];
   		function gtag(){dataLayer.push(arguments);}
   		gtag('js', new Date());
-
   		gtag('config', 'UA-31768072-5');
 	</script>    	
     	
@@ -23,11 +21,11 @@
 	<!-- Also see end of file -->
 	<!-- if browser doesn't support JavaScript then use normal link tags to load CSS -->
 	<noscript>
-	      <link rel="stylesheet" type="text/css" href="style.css" defer=''/>
-    	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
+		<link rel="stylesheet" type="text/css" href="style.css" defer=''/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
 	</noscript>
 	
-	<style>
+	<style type="text/css">
 		body{
 			width: 100%;
 			margin-left: auto;
@@ -44,7 +42,7 @@
 				max-width: 42em;
 			}
 		}
-	</style>
+	</style> 
 </head>
 
 <body class="essay">
@@ -170,7 +168,7 @@
 <!-- end of nav -->
 
     <header class="title" id="title-div">
-        <img class="image" src="images/liv_012001_0001-colorized.jpg" alt="Agnes Livingstone, Thomas Livingstone, Abdullah Susi, James Chuma, and Horace Waller with David Livingstone’s manuscripts." title="Colorised version of R. Allen & Sons, “Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone” (1874), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001. SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only." />
+        <img class="image" src="site-images/liv_012001_0001-735px.jpg" srcset="site-images/liv_012001_0001-1500px.jpg 1500w, site-images/liv_012001_0001-735px.jpg 735w, site-images/liv_012001_0001-700px.jpg 700w, site-images/liv_012001_0001-590px.jpg 590w, site-images/liv_012001_0001-450px.jpg 450w" sizes="(min-width: 768px) 700px, (min-width: 624px) 735px, (min-width: 480px) 590px, (min-width: 320px) 450px" alt="Agnes Livingstone, Thomas Livingstone, Abdullah Susi, James Chuma, and Horace Waller with David Livingstone’s manuscripts." title="Colorised version of R. Allen & Sons, “Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone” (1874), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001. SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only." />
         <h1 class="header-title">One More Voice</h1>
         <hr />
         <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
@@ -204,20 +202,21 @@
         <hr />
 		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
     </footer>
-   
-    <!-- lazy load CSS -->
+    
+    <!-- CSS lazy load adapted from https://blog.webjeda.com/lazy-load-css/ -->
+	<!-- Also see beginning of file -->
 	<script>
 		(function() {
-		    // load main.css
-	    	var cssMain = document.createElement('link');
+			// load main.css
+		    var cssMain = document.createElement('link');
     		cssMain.href = 'style.css';
-		    cssMain.rel = 'stylesheet';
-    		cssMain.type = 'text/css';
+			cssMain.rel = 'stylesheet';
+	    	cssMain.type = 'text/css';
 		    document.getElementsByTagName('head')[0].appendChild(cssMain);
-	    	// load fontawesome
+		    // load fontawesome
 	    	var cssFa = document.createElement('link');
-    		cssFa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-		    cssFa.rel = 'stylesheet';
+	    	cssFa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+			cssFa.rel = 'stylesheet';
     		cssFa.type = 'text/css';
 		    document.getElementsByTagName('head')[0].appendChild(cssFa);
 		})();

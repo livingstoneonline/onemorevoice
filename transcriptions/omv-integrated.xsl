@@ -253,6 +253,89 @@
 					})();
 				</script>
 				<script src="../scripts.js"></script>
+			<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
+				<script>
+					/* Color, Inversion, Rotation Switches */
+					/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
+					
+					// Wait till document is loaded before executing.
+					document.addEventListener("DOMContentLoaded", function(event) {
+					  // Select the button element using it's ID.
+					  document.querySelector('input#remove-color')
+					    // Call this function when the button is clicked.
+					    .onclick = function () {
+					      // Find the element with class transcription,
+					      // and toggle the class 'change-display'.
+					      document.querySelector('body.transcription')
+					        .classList
+					        .toggle('change-color');
+					    };
+					});
+					
+					// Wait till document is loaded before executing.
+					document.addEventListener("DOMContentLoaded", function(event) {
+					  // Select the button element using it's ID.
+					  document.querySelector('input#invert')
+					    // Call this function when the button is clicked.
+					    .onclick = function () {
+					      // Find the element with class transcription,
+					      // and toggle the class 'change-display'.
+					      document.querySelector('body.transcription')
+					        .classList
+					        .toggle('invert-color');
+					    };
+					});
+					
+					// Wait till document is loaded before executing.
+					document.addEventListener("DOMContentLoaded", function(event) {
+					  // Select the button element using it's ID.
+					  document.querySelector('input#remove-rotation')
+					    // Call this function when the button is clicked.
+					    .onclick = function () {
+					      // Find the element with class transcription,
+					      // and toggle the class 'change-display'.
+					      document.querySelector('body.transcription')
+					        .classList
+					        .toggle('rotate');
+					    };
+					});
+				</script>
+			</xsl:if>
+			<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
+				<script>
+					/* Inversion, Justification Switches */
+					/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
+
+					// Wait till document is loaded before executing.
+					document.addEventListener("DOMContentLoaded", function(event) {
+					  // Select the button element using it's ID.
+					  document.querySelector('input#invert')
+					    // Call this function when the button is clicked.
+					    .onclick = function () {
+					      // Find the element with class transcription,
+					      // and toggle the class 'change-display'.
+					      document.querySelector('body.transcription')
+					        .classList
+					        .toggle('invert-color');
+					    };
+					});
+
+					// Wait till document is loaded before executing.
+					document.addEventListener("DOMContentLoaded", function(event) {
+					  // Select the button element using it's ID.
+					  document.querySelector('input#remove-justification')
+					    // Call this function when the button is clicked.
+					    .onclick = function () {
+					      // Find the element with class transcription,
+					      // and toggle the class 'change-display'.
+					      document.querySelector('body.transcription')
+					        .classList
+					        .toggle('unjustify');
+					    };
+					});
+				</script>
+			</xsl:if>
+
 			</body>
 		</html>
 	</xsl:template>
@@ -547,17 +630,17 @@
 				<aside id="transcription-switches" class="manuscript-switches">
 					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Color
-						<input type="checkbox" checked="" id="remove-color"/>
+						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-color" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
-						<input type="checkbox" checked="" id="invert" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Rotation
-						<input type="checkbox" checked="" id="remove-rotation" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-rotation" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
@@ -628,12 +711,12 @@
 				<aside id="transcription-switches" class="journal-switches">
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
-						<input type="checkbox" checked="" id="invert" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Justification
-						<input type="checkbox" checked="" id="remove-justification" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-justification" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>

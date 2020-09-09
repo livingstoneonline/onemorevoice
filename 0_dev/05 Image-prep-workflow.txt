@@ -6,18 +6,52 @@ Image Prep Workflow
 
 2) Convert in terminal
 
-convert liv_023003_0001.tif -resize 1500x1500 liv_023003_0001-1500px.jpg &&
-convert liv_023003_0001.tif -resize 1200x1200 liv_023003_0001-1200px.jpg &&
-convert liv_023003_0001.tif -resize 900x900 liv_023003_0001-900px.jpg && 
-convert liv_023003_0001.tif -resize 600x600 liv_023003_0001-600px.jpg &&
-convert liv_023003_0001.tif -resize 300x300 liv_023003_0001-300px.jpg
+mogrify -format jpg -resize 1800x1800 -path ~/GitHub/One-More-Voice/site-images/1800 *.tif  && cd ~/GitHub/One-More-Voice/site-images/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && mogrify -format jpg -resize 1300x1300 -path ~/GitHub/One-More-Voice/site-images/1300 *.tif  && cd ~/GitHub/One-More-Voice/site-images/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && mogrify -format jpg -resize 1000x1000 -path ~/GitHub/One-More-Voice/site-images/1000 *.tif  && cd ~/GitHub/One-More-Voice/site-images/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && mogrify -format jpg -resize 700x700 -path ~/GitHub/One-More-Voice/site-images/700 *.tif  && cd ~/GitHub/One-More-Voice/site-images/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && mogrify -format jpg -resize 400x400 -path ~/GitHub/One-More-Voice/site-images/400 *.tif  && cd ~/GitHub/One-More-Voice/site-images/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
 
-3) Add code to HTML
+3) ID images that fall below the 400, 700, 1000, 1300, and 1800 threshold and remove corresponding derivatives
 
-[Note that the 1500 image isn't included.]
+identify -format "%f: %wx%h\n" *.jpg *.tif 
 
-class="image" src="site-images/liv_023003_0001-750px.jpg" srcset="site-images/liv_023003_0001-1200px.jpg 1200w, site-images/liv_023003_0001-900px.jpg 900w, site-images/liv_023003_0001-600px.jpg 600w, site-images/liv_023003_0001-300px.jpg 300w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"
+4) Add code to HTML
 
-4) Add images to relevant folder
+[Note that the 1800 image isn't included, as it's only for images to be enlarged.]
+
+	<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+        <img class="image" src="site-images/liv_012001_0001-1600px.jpg" 
+        srcset="
+        site-images/liv_012001_0001-400px.jpg 400w, 
+        site-images/liv_012001_0001-700px.jpg 700w, 
+        site-images/liv_012001_0001-1000px.jpg 1000w,         
+        site-images/liv_012001_0001-1300px.jpg 1300w
+        " 
+        sizes="
+        (min-width: 1000px) 638px, 
+        (min-width: 780px) 699px, 
+        calc(100vw - 32px)
+        "
 
 5) Open page and calculate image sizes using https://ausi.github.io/respimagelint/ and correct as needed.convert
+
+
+
+References
+
+https://blog.chapagain.com.np/imagemagick-convertedit-multiple-images
+https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
+
+https://developers.google.com/speed/pagespeed/insights/
+https://web.dev/measure/
+https://blog.webjeda.com/lazy-load-css/
+
+https://developers.google.com/web/tools/lighthouse/
+https://www.npmjs.com/package/responsive-images-generator
+
+https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset
+https://web.dev/serve-images-with-correct-dimensions/
+https://web.dev/uses-responsive-images/
+https://web.dev/serve-responsive-images/
+https://web.dev/uses-optimized-images/
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+https://developer.yahoo.com/performance/rules.html

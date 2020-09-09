@@ -4,13 +4,25 @@ Image Prep Workflow
 
 1) Save original image as TIF with UID name: liv_012001_0001.tif
 
-2) Convert in terminal
+2) Convert in terminal (copy and paste all code below at once):
 
-mogrify -format jpg -resize 1800x1800 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && mogrify -format jpg -resize 1300x1300 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && mogrify -format jpg -resize 1000x1000 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && mogrify -format jpg -resize 700x700 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && mogrify -format jpg -resize 400x400 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+****************
+
+mogrify -format jpg -resize 1800x1800 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 '*.tif[>1800x]'  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1300x1300 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1000x1000 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 700x700 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 400x400 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+
+****************
 
 3) ID images that fall below the 400, 700, 1000, 1300, and 1800 threshold and remove corresponding derivatives
 
-identify -format "%f: %wx%h\n" *.jpg *.tif 
+identify -format "%f: %wx%h\n" *.tif *.jpg
 
 4) Add code to HTML
 

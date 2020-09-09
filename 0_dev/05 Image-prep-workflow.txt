@@ -6,7 +6,7 @@ Image Prep Workflow
 
 2) Convert in terminal
 
-mogrify -format jpg -resize 1800x1800 -path ~/GitHub/One-More-Voice/site-images/1800 *.tif  && cd ~/GitHub/One-More-Voice/site-images/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && mogrify -format jpg -resize 1300x1300 -path ~/GitHub/One-More-Voice/site-images/1300 *.tif  && cd ~/GitHub/One-More-Voice/site-images/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && mogrify -format jpg -resize 1000x1000 -path ~/GitHub/One-More-Voice/site-images/1000 *.tif  && cd ~/GitHub/One-More-Voice/site-images/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && mogrify -format jpg -resize 700x700 -path ~/GitHub/One-More-Voice/site-images/700 *.tif  && cd ~/GitHub/One-More-Voice/site-images/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && mogrify -format jpg -resize 400x400 -path ~/GitHub/One-More-Voice/site-images/400 *.tif  && cd ~/GitHub/One-More-Voice/site-images/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+mogrify -format jpg -resize 1800x1800 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && mogrify -format jpg -resize 1300x1300 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && mogrify -format jpg -resize 1000x1000 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && mogrify -format jpg -resize 700x700 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && mogrify -format jpg -resize 400x400 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
 
 3) ID images that fall below the 400, 700, 1000, 1300, and 1800 threshold and remove corresponding derivatives
 
@@ -17,7 +17,7 @@ identify -format "%f: %wx%h\n" *.jpg *.tif
 [Note that the 1800 image isn't included, as it's only for images to be enlarged.]
 
 	<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-        <img class="image" src="site-images/liv_012001_0001-1600px.jpg" 
+        <img class="image" src="site-images/liv_012001_0001-1300px.jpg" 
         srcset="
         site-images/liv_012001_0001-400px.jpg 400w, 
         site-images/liv_012001_0001-700px.jpg 700w, 
@@ -38,6 +38,10 @@ References
 
 https://blog.chapagain.com.np/imagemagick-convertedit-multiple-images
 https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
+https://www.imagemagick.org/script/identify.php
+https://stackoverflow.com/questions/22751721/how-to-find-images-with-certain-size-in-terminal
+
+"kMDItemPixelHeight>1100 && kMDItemPixelWidth>900"
 
 https://developers.google.com/speed/pagespeed/insights/
 https://web.dev/measure/

@@ -1158,7 +1158,7 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>

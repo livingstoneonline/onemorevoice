@@ -1494,8 +1494,7 @@ button::-moz-focus-inner{
 	text-indent: 0;
 }
 .journal .p.center,
-.journal .ab.center,
-.journal .fw{
+.journal .ab.center{
 	display: block;
 }
 .manuscript .head.center{
@@ -1519,23 +1518,11 @@ button::-moz-focus-inner{
 .manuscript .fw{
 	display: inline;
 }
-.fw .center{
-	display: inline
+.journal .fw{
+	display: block;
 }
 .fw.pageno{
 	text-indent: 0;
-}
-.fw.right{
-	float: right;
-}
-.fw.catch.right{
-	text-align: right;
-	right: 0;
-	position: absolute;
-}
-.fw .note.right{
-	float: right;
-	position: unset;
 }
 table{
 	font-size: .9em;
@@ -1664,6 +1651,9 @@ table .linenumber{
 	margin-right: auto;
 	display: block;
 }
+.fw .center{
+	display: inline
+}
 .dottedunderline{
 	border-bottom: 1px dashed;
 }
@@ -1701,6 +1691,17 @@ table .linenumber{
 }
 .journal.narrow .right{
 	right: 1em;
+}
+.fw .right,
+.journal .right .fw .right,
+.journal.narrow .fw .right{
+	right: unset;
+	float: right;
+	position: unset;
+}
+.fw .note.right{
+	float: right;
+	position: unset;
 }
 .marginright{
 	float: right;

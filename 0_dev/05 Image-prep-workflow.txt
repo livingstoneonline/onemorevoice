@@ -4,27 +4,53 @@ Image Prep Workflow
 
 1) Save original image as TIF with UID name: liv_012001_0001.tif
 
-2) Convert in terminal (copy and paste all code below at once):
-
-****************
-
-mogrify -format jpg -resize 1800x1800 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 '*.tif[>1800x]'  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 1300x1300 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 1000x1000 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 700x700 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 400x400 -path ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 *.tif  && cd ~/Dropbox/Professional/05-One-More-Voice/00-Images+sources/z-Image-Staging/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
-
-****************
-
-3) ID images that fall below the 400, 700, 1000, 1300, and 1800 threshold and remove corresponding derivatives
+2) ID images that fall below the 400, 700, 1000, 1300, and 1800; or 200, 300, 400, 500 threshold:
 
 identify -format "%f: %wx%h\n" *.tif *.jpg
 
-4) Add code to HTML
+3) Convert in terminal (copy and paste all code below at once):
+
+****Regular images************
+
+mogrify -format jpg -resize 1800x1800 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/1800 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/1800 && find . -exec rename 's|.jpg|-1800px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1300x1300 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/1300 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/1300 && find . -exec rename 's|.jpg|-1300px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1000x1000 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/1000 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/1000 && find . -exec rename 's|.jpg|-1000px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 700x700 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/700 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 400x400 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+
+******Artifact Thumbnails-tiffs**********
+
+mogrify -format jpg -resize 500x500 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/500 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/500 && find . -exec rename 's|.jpg|-500px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 400x400 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/400 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+
+mogrify -format jpg -resize 300x300 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 200x200 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd -
+
+******Artifact Thumbnails-jpgs**********
+
+mogrify -format jpg -resize 500x500 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/500 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/500 && find . -exec rename 's|.jpg|-500px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 400x400 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/400 *.jpg && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+
+mogrify -format jpg -resize 300x300 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 200x200 -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd -
+
+****************
+
+3) Move all generated files:
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images/thumbnails \;
+
+4) Remove images that do not meet threshold requirements
+
+5) Add code to HTML
 
 [Note that the 1800 image isn't included, as it's only for images to be enlarged.]
 
@@ -42,7 +68,7 @@ identify -format "%f: %wx%h\n" *.tif *.jpg
         calc(100vw - 32px)
         "
 
-5) Open page and calculate image sizes using https://ausi.github.io/respimagelint/ and correct as needed.convert
+6) Open page and calculate image sizes using https://ausi.github.io/respimagelint/ and correct as needed.convert
 
 
 

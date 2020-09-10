@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020027"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
@@ -58,9 +58,7 @@
 	                    <author></author>
 						<editor></editor><!-- Editor (if known; otherwise leave blank -->
 						<imprint>
-							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
-							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
-							<biblScope unit="pages">2</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<biblScope unit="pages">27-28</biblScope><!-- Pages (if known; otherwise leave blank) -->
 							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank) -->
 							<publisher></publisher><!-- Publisher (if known; otherwise leave blank) -->
 							<date>1 February 1864</date><!-- Item date; same as date in <title type="alternative"> above -->
@@ -117,9 +115,16 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_020027_0001" n="0001"/>
-<lb/><p>Original Correspondence.</p>
-<p>WEST AFRICA.</p>
-<p>THE following interesting letter is from a 
+<fw><seg rend="left small caps">February 1, 1864.]</seg> <seg rend="center small caps">Anti-Slavery Reporter.</seg> <seg rend="right">27</seg></fw>
+
+	<div rend="center">
+<lb/><p><gap extent="half" unit="pages" agent="omitted-text"/></p><!-- Text from previous articles omitted here. AM -->
+	</div>
+	
+	<div>
+<lb/><head rend="center large">Original Correspondence.</head>
+<head rend="center smallcaps">West Africa.</head>
+<p rend="no-indent">THE following interesting letter is from a 
 native African, who, when quite a child, 
 was kidnapped from the interior of Nubia. 
 and after being several times sold, finally fell 
@@ -146,8 +151,8 @@ personal. Tlhe present one appears to us to
 offer sufficient interest to merit a place in 
 our columns, and we print it without correc- 
 tion.</p>
-<p>"Fernando Po, Nov. 16, 1863.</p> 
-<p>"RESPECTED SIR,-Your kind favour of the 
+<p rend="right">"Fernando Po, Nov. 16, 1863.<space extent="2" unit="chars"/></p> 
+<lb/><p>"<hi rend="smallcaps">Respected Sir</hi>,-Your kind favour of the 
 14th August came to hand on my return from 
 the Congo River, to which place I accompanied 
 Consul Burton last July. The condition of that 
@@ -180,6 +185,8 @@ drunkenness, and, although nominally acknow-
 ledged by some one as their husband, they are
 
     <pb facs="liv_020027_0002" n="0002"/>
+<fw><seg rend="left">28</seg> <seg rend="center small caps">Anti-Slavery Reporter.</seg> <seg rend="right">[February 1, 1864.</seg></fw>
+
 in reality nothing but common property. I have 
 now travelled through the greater part of West 
 Africa, the Gambia, Sierra Leone, Liberia, the 
@@ -266,9 +273,9 @@ brokerage between the Europeans and natives
 would never keep his house in more than dr)y 
 bread and water. He begged of me to recom- 
 mend him to some gentleman in England with 
-whom he could deal . . . . . .</p>
-<p>. . . . . . . . .</p>
-<p>. . .He has about 3001. to 4001. 
+whom he could deal<space extent="3" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.</p>
+<p>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.</p>
+<p>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>.<space extent="4" unit="chars"/>He has about 3001. to 4001. 
 worth of palm-oil, his own private property; 
 and I should feel truly grateful if you will put 
 him in the way of trading direct with England. 
@@ -295,11 +302,12 @@ I have grown this year in the Consular grounds.
 There are about two acres sowed with cotton, 
 and I expect to gather about three cwt. With 
 many thanks for your kind wishes,</p>
-<p>"I remain, respected Sir, </p>
-<p>"Your grateful Servant,</p>
-<p>"SELIM AGA.</p>
-<p>"L. A. CIIAMEROVZOW, Esq."</p>
-
+<p rend="right">"I remain, respected Sir,<space extent="3" unit="words"/></p>
+<lb/><p rend="right">"Your grateful Servant,<space extent="1" unit="words"/></p>
+<lb/><p rend="smallcaps right">"Selim Aga.</p>
+<lb/><p rend="smallcaps no-indent">"L.A. Chamerovzow, Esq."</p>
+<milestone unit="section" rend="double-line"/>
+	</div>
             </div>
         </body>   
     </text>

@@ -68,6 +68,22 @@ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-image
         calc(100vw - 32px)
         "
 
+****artifact-thumbnails*****
+
+src="artifact-images/thumbnails/liv_021012_0001_thumbnail-500px.jpg" 
+srcset="
+artifact-images/thumbnails/liv_021012_0001_thumbnail-500px.jpg 500w, 
+artifact-images/thumbnails/liv_021012_0001_thumbnail-400px.jpg 400w, 
+artifact-images/thumbnails/liv_021012_0001_thumbnail-300px.jpg 300w, 
+artifact-images/thumbnails/liv_021012_0001_thumbnail-200px.jpg 200w
+" 
+sizes="
+(min-width: 1000px) 167px, 
+(min-width: 780px) 183px, 
+(min-width: 480px) calc(50vw - 68px), 
+calc(100vw - 53px)
+"
+
 6) Open page and calculate image sizes using https://ausi.github.io/respimagelint/ and correct as needed.convert
 
 

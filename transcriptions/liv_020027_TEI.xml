@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020027"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Original Correspondence: West Africa”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Original Correspondence: West Africa’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Original Correspondence: West Africa,” 1 February 1864</title><!-- Title, date -->
+                <author>Chamerovzow, Louis-Alexis, 1800-1899</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Aga, Selim, c.1826-1875</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Chamerovzow, Louis-Alexis</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Louis-Alexis Chamerovzow</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Selim Aga</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="CM">
+                    <name>Caitlin Matheis</name>
+                    <resp>Transcription</resp>
+                    <resp>Proofing</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020027</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://www.gale.com/c/nineteenth-century-uk-periodicals-part-ii">Nineteenth Century UK Periodicals, Part II: Empire</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+	            </availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="narrow"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Anti-Slavery Reporter</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author></author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">2</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher></publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date>1 February 1864</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Original Correspondence: West Africa”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="LAC">Chamerovzow, Louis-Alexis, 1800-1899</author>
+                    <author xml:id="SA">Aga, Selim, c.1826-1875</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1864-02-01">1 February 1864</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="composition" when="1863-11-16">16 November 1863</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Fernando Po</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
+            </sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-02" who="#AW">TEI Encoding</change>
+			<change when="2020-09-01" who="#CM">Create and Proof Text</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020027_0001" n="0001"/>
+<lb/><p>Original Correspondence.</p>
+<p>WEST AFRICA.</p>
+<p>THE following interesting letter is from a 
+native African, who, when quite a child, 
+was kidnapped from the interior of Nubia. 
+and after being several times sold, finally fell 
+into the hands of an English family at 
+Alexandria, where he acquired the rudiments 
+of education, namely, a knowledge of the 
+English alphabet. After remaining with 
+this family for some time, he came to Eng- 
+land in the capacity of servant; and having 
+undergone many vicissitudes, at length went 
+out to Lagos, to try what he could do on his 
+own account. By his good conduct and ex- 
+cellent principles, his sobriety, industry, and 
+perseverance, he gained the confidence of 
+the parties to whom he had been recom- 
+mended, and his name is honourably mentioned 
+in the despatches of Captain Burton, whom 
+he accompanied on his recent visit to the 
+King of Dahomey, and who has again en- 
+gaged him for his present expedition. We 
+have received other communications from 
+him, from time to time, but they were strictly 
+personal. Tlhe present one appears to us to 
+offer sufficient interest to merit a place in 
+our columns, and we print it without correc- 
+tion.</p>
+<p>"Fernando Po, Nov. 16, 1863.</p> 
+<p>"RESPECTED SIR,-Your kind favour of the 
+14th August came to hand on my return from 
+the Congo River, to which place I accompanied 
+Consul Burton last July. The condition of that 
+country, as far as we ascended, viz. 160 miles 
+into the interior, is in a most deplorable state. 
+The slave-trade and its accompaniments have 
+been, and still are, ruling rampant in that river; 
+and the result is a thorough demoralization of 
+the inhabitants. The copious drafts of rum and 
+other luxuries, showered upon the people by the 
+Portuguese slave-traders, has made them so 
+thoroughly idle, that the earth groans for the 
+want of some one to cultivate it. We found the 
+poor victims to the influence of the vile traffic 
+entirely in the hands of Satan; for thefts and 
+debauchery of every description are rife through- 
+out the whole country, but more especially from 
+Shark Point, the mouth of the river, to Em- 
+bomma, some eighty miles in the interior. Along 
+the whole of the line are established baracoons 
+and factories of every size and description. At 
+some of these I saw plenty of slaves, and more 
+particularly at one house in Embomma, where 
+the unfortunate wretches were put in irons, 
+awaiting the first opportunity of being sent down 
+to the coast. I cannot give you a better exam- 
+ple than this. We found, in the lower part of 
+the river, the weaker sex awfully given to 
+drunkenness, and, although nominally acknow- 
+ledged by some one as their husband, they are
+
+    <pb facs="liv_020027_0002" n="0002"/>
+in reality nothing but common property. I have 
+now travelled through the greater part of West 
+Africa, the Gambia, Sierra Leone, Liberia, the 
+Gold Coast, Dahomey, Lagos, Badagry, Porto 
+Novo, and for 400 miles into the interior of the 
+Euroba, or Yoruba country, the Benin, the 
+Nun, the Brass, New Calabar, Bonny, Old Ca- 
+labar, Cameroons, Fernando Po, Gaboon, and 
+St. Paul's de Loando. I have visited Africans 
+in their most primitive condition; but never in 
+the whole of my experience did any thing like 
+the state of affairs in the Congo River ever pre- 
+sent itself to my notice. I am happy to say, 
+however, that Her Majesty's cruisers are doing 
+their utmost to suppress this market for human 
+blood. When we left the mouth of the Congo 
+last October, the Zebra, the Archer, the Griffin, 
+the Lee, and the Afulet, were on duty there, so 
+that we hope, ere long, to hear that the Portu- 
+guese are ultimately compelled to leave the river. 
+I hear that, according to present arrangements, 
+the power of Portugal ought not to extend be- 
+yond Ambrizette, forty miles south of the Zaire, 
+or Congo. If so, they ought to be turned out 
+of the river by force; for so long as they exer- 
+cise their influence over the natives, no legiti- 
+mate commerce can be established with them. 
+Messrs.- and - is the only English 
+house in the river, and I am sorry to say that 
+it is a failure; for, encouraged on every point 
+by the slave-traders, the native chiefs find 
+it more profitable to catch men and sell them 
+for plenty of rum and beads and cloth, than to 
+spoil their fingers by the manufacture of palm- 
+oil. In fact, I cannot see how a profitable traffic 
+in native produce can be carried on unless the 
+slave-traders were driven out, and the river 
+shut up for two or three years, to purge it 
+from the effects produced by the vile system ex- 
+isting in its bosom. In about five or six days 
+I hope to accompany Captain Burton (by whom 
+I am now employed) to the Court of the Da- 
+homey King. This will be our second visit to 
+that country; and, from my slight experience 
+of the country and people, I think Captain Bur- 
+ton is just the right man in the right place.</p> 
+<p>"Many thanks for the receipts, which came 
+to hand all safe, as also the copies of the Re- 
+porter. The subscribers are quite delighted with 
+the news, and wonder they had never heard of 
+the Society before this. As the subject has now 
+been introduced to their notice, I hope they will 
+keep up the communication regularly with home; 
+and I see no reason why all the intelligent na- 
+tives on the coast should not become subscribers. 
+I am sorry to say that the present system of 
+education on the coast is not calculated to raise 
+the natives much beyond their former scale of 
+usefulness. There are only two things that they 
+are educated for, viz. clerks and merchants. 
+Everybody cannot be a merchant. Why not 
+encourage agriculture? The same money that
+makes the merchant can make the farmer, and 
+I must confess that the latter would be the most 
+independent of the two; for, singular to relate, 
+that the prejudice of the native against the 
+European, and, vice versa, of the European 
+against the native, is any thing but encourag- 
+ing. The natives have great capacities for 
+trade; but the goods supplied to them on the 
+coast are invoiced at such high prices, that it is 
+really impossible for them to, realize any thing 
+for themselves. To prove this, I have only to 
+mention the case of Mr. - , one of our 
+subscribers. Last year he paid in something 
+like 800l. (Eight hundred pounds) sterling 
+as his yearly trade account with Messrs.- 
+and - . Out of this he received commission 
+about fifty pounds with which to maintain himself,
+ his wife, and the Kroo- boys, besides a nephew and 
+four children. Had it not been that Mr. 
+- had other sources to depend upon, his 
+brokerage between the Europeans and natives 
+would never keep his house in more than dr)y 
+bread and water. He begged of me to recom- 
+mend him to some gentleman in England with 
+whom he could deal . . . . . .</p>
+<p>. . . . . . . . .</p>
+<p>. . .He has about 3001. to 4001. 
+worth of palm-oil, his own private property; 
+and I should feel truly grateful if you will put 
+him in the way of trading direct with England. 
+He intends shipping some of his oil the moment 
+he receives a communication from you. As for 
+myself, I must candidly confess that I have 
+found it more profitable for the present to be 
+travelling about. That, however, cannot last, 
+for, sooner or later, I must settle down somewhere. 
+There are already too many engaged in palm- 
+oil ; I therefore think of starting a cotton plan- 
+tation at the foot of the Cameroon mountains as 
+soon as my period of servitude with my present 
+employer has expired. Two or three thousand 
+acres taken in and sown with cotton would not 
+require more than 3501. to 4001. out here, and, 
+from experiments already tried, the farm could 
+be made self-supporting after the first year. I 
+do not think we shall be more than three months 
+in Dahomey, after which I think my master goes 
+to England, and then I shall be at liberty to try 
+for myself. I enclose a sample of cotton which 
+I have grown this year in the Consular grounds. 
+There are about two acres sowed with cotton, 
+and I expect to gather about three cwt. With 
+many thanks for your kind wishes,</p>
+<p>"I remain, respected Sir, </p>
+<p>"Your grateful Servant,</p>
+<p>"SELIM AGA.</p>
+<p>"L. A. CIIAMEROVZOW, Esq."</p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

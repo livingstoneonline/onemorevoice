@@ -20,7 +20,7 @@ mogrify -format jpg -resize 1000x1000 -sampling-factor 4:2:0 -strip -quality 85 
 
 mogrify -format jpg -resize 700x700 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/700 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/700 && find . -exec rename 's|.jpg|-700px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 400x400 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd -
+mogrify -format jpg -resize 400x400 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd ..
 
 ******Artifact Thumbnails-tiffs**********
 
@@ -30,7 +30,7 @@ mogrify -format jpg -resize 400x400 -sampling-factor 4:2:0 -strip -quality 85 -i
 
 mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd -
+mogrify -format jpg -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd ..
 
 ******Artifact Thumbnails-jpgs**********
 
@@ -40,12 +40,13 @@ mogrify -format jpg -resize 400x400 -sampling-factor 4:2:0 -strip -quality 85 -i
 
 mogrify -format jpg -resize 300x300 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/300 && find . -exec rename 's|.jpg|-300px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd -
+mogrify -format jpg -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-artifacts/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd ..
 
 ****************
 
 3) Move all generated files:
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images/thumbnails \;
 
 4) Remove images that do not meet threshold requirements
@@ -57,10 +58,10 @@ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-image
 	<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
         <img class="image" src="site-images/liv_012001_0001-1300px.jpg" 
         srcset="
-        site-images/liv_012001_0001-400px.jpg 400w, 
+        site-images/liv_012001_0001-1300px.jpg 1300w,
+        site-images/liv_012001_0001-1000px.jpg 1000w, 
         site-images/liv_012001_0001-700px.jpg 700w, 
-        site-images/liv_012001_0001-1000px.jpg 1000w,         
-        site-images/liv_012001_0001-1300px.jpg 1300w
+        site-images/liv_012001_0001-400px.jpg 400w
         " 
         sizes="
         (min-width: 1000px) 638px, 

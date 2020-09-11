@@ -1107,6 +1107,10 @@ ul.concept-list li:last-child{
 .manuscript .back{
 	margin-top: -1em;
 }
+
+.manuscript .TEI.front + .TEI{
+	margin-top: 2em;
+}
 /* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	body .manuscript,

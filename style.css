@@ -1842,7 +1842,7 @@ table .linenumber{
 	display: none;
 }
 .figure{
-	margin-left: 0;
+	margin: -1px 0px 0px 0;
 	color: #666666;
 	font-size: .8em;
 }
@@ -2165,14 +2165,15 @@ table .linenumber{
 	position: relative;
 }
 .decoration.liv_020024_0001 img{
-	width: 7em;
+	width: 5em;
 	position: absolute;
-    top: -8.5em;
-    left: 12em;
+    top: -7.5em;
+	left: 12em;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 520px){
 	.decoration.liv_020024_0001 img{
-		left: 7em;
+		width: 6em;
+		left: 6em;
 	}
 }
 .header3.liv_020024_0001{

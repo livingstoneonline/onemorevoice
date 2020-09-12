@@ -1047,75 +1047,40 @@
 	</xsl:template>
 
 	<xsl:template match="figure">
-		<xsl:variable name="graphicURL">
-			<xsl:apply-templates select="..//@url"/>
+		<!-- start of variables -->
+		<xsl:variable name="figure-url">
+			<xsl:apply-templates select="@url"/>
+		</xsl:variable>
+		<xsl:variable name="graphic-url">
+			<xsl:apply-templates select="..//graphic/@url"/>
+		</xsl:variable>
+		<xsl:variable name="graphic-facs">
+			<xsl:apply-templates select="..//graphic/@facs"/>
+		</xsl:variable>
+		<xsl:variable name="graphic-n">
+			<xsl:apply-templates select="..//graphic/@n"/>
 		</xsl:variable>
 		<xsl:variable name="altText">
 			<xsl:apply-templates select="..//figDesc"/>
 		</xsl:variable>
+		<xsl:variable name="rotate-id">
+			<xsl:if test="..//graphic[@n='artifact rotate-180']">
+				<xsl:text>image-to-rotate</xsl:text>
+			</xsl:if>
+		</xsl:variable>
+		<!-- The prior variable creates a static id for all images to be rotated. This is not an ideal solution and needs to be improved down the road because, if there are two artifact images in the same document that both need to rotated, they will both get the same id. However, The following code, if used in place of <xsl:text>image-to-rotate</xsl:text> above, gives each image to be rotated a unique id based on its page number(s). This could be the way to a better solution, but would involved working out the Javascript to select that same id.-->
+		<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
+		<!-- end of variables -->
 		<xsl:choose>
-			<xsl:when test="..//graphic[@n='artifact']|..//graphic[@n='artifact rotate-180']">
-				<!-- This variable creates the title for the artifact image; the image URL and alt text are created by other variables set up above. -->
-				<xsl:variable name="caption">
-					<xsl:variable name="copyright2">
-						<xsl:choose>
-						<xsl:when test="//availability/licence[@target]">
-							<xsl:text> </xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>.</xsl:text>
-						</xsl:when>
-						<xsl:when test="not(//availability/licence[@target])"/>					
-						</xsl:choose>
-					</xsl:variable>
-					<xsl:value-of select="..//label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright2"/>
-				</xsl:variable>
-				<!-- This variable creates a static id for all images to be rotated. This is not an ideal solution and needs to be improved down the road because, if there are two artifact images in the same document that both need to rotated, they will both get the same id. -->
-				<!-- The following code instead, if used in place of <xsl:text>image-to-rotate</xsl:text> below, gives each image to be rotated a unique id based on its page number(s). This could be the way to a better solution, but would involved working out the Javascript to select that same id.-->
-				<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
-				<xsl:variable name="rotate-id">
-					<xsl:if test="..//graphic[@n='artifact rotate-180']">
-						<xsl:text>image-to-rotate</xsl:text>
-					</xsl:if>
-				</xsl:variable>
-				<xsl:if test="..//graphic[@n='artifact rotate-180']">
-					<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
-					<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
-				</xsl:if>
-				<span class="figure"><span class="{concat('graphic', ' ', ..//graphic/@rend)}"><a href="{$graphicURL}"><img src="{$graphicURL}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}"/></a></span></span>
+			<xsl:when test="@n='artifact'">
 			</xsl:when>
-			<xsl:when test="..//graphic[@n='medium']">
-				<span class="figure"><span class="graphic image-medium"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
-			</xsl:when>
-			<xsl:when test="..//graphic[@n='small']">
-				<span class="figure"><span class="graphic image-small"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
-			</xsl:when>
-			<xsl:when test="..//graphic[@n='small inline-left']">
-				<span class="figure"><span class="graphic image-small inline-left"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
-			</xsl:when>
-			<xsl:when test="..//graphic">
-				<span class="figure"><span class="{concat('graphic', ' ', ..//graphic/@n)}"><!--<a href="{$graphicURL}">--><img src="{$graphicURL}" alt="{$altText}"/><!--</a>--></span></span>
+			<xsl:when test="'[child::graphic]'">
+				<span class="{concat(name(), ' ', @rend, ' ', @n)}"><img src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/></span>
 			</xsl:when>
 			<xsl:otherwise>
-				<span class="figure"><span class="{concat(name(), ' ', @rend, ' ', @place)}">{figure}</span></span>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-
-	<!-- Template passes through abbr, sic, and orig in head in normalizeHead mode -->
-	<xsl:template match="head//abbr|head//sic|head//orig" mode="normalizeHead">
-		<xsl:apply-templates/>
-	</xsl:template>
-
-	<!-- Template kills through expan, corr, reg, and supplied in head in normalizeHead mode -->
-	<xsl:template match="head//expan|head//corr|head//reg|head//supplied"
-		mode="normalizeHead"/>
-
-	<!-- Template passes through abbr, sic, and orig in figDesc in normalizeFigDesc mode -->
-	<xsl:template match="figDesc//abbr|figDesc//sic|figDesc//orig" mode="normalizeFigDesc">
-		<xsl:apply-templates/>
-	</xsl:template>
-
-	<!-- Template kills through expan, corr, reg, and supplied in figDesc in normalizeFigDesc mode -->
-	<xsl:template match="figDesc//expan|figDesc//corr|figDesc//reg|figDesc//supplied"
-		mode="normalizeFigDesc"/>
 
 	<xsl:template match="add[@place='marginleft']/figure|add[@place='marginright']/figure" priority="10">
 		<xsl:choose>
@@ -1577,6 +1542,24 @@
 		<xsl:variable name="title"><xsl:apply-templates/></xsl:variable>
 		<span class="figfigDesc" title="{$title}">{figure}</span>
 	</xsl:template>-->
+
+	<!-- Template passes through abbr, sic, and orig in head in normalizeHead mode -->
+	<!--<xsl:template match="head//abbr|head//sic|head//orig" mode="normalizeHead">
+		<xsl:apply-templates/>
+	</xsl:template>-->
+
+	<!-- Template kills through expan, corr, reg, and supplied in head in normalizeHead mode -->
+	<!--<xsl:template match="head//expan|head//corr|head//reg|head//supplied"
+		mode="normalizeHead"/>-->
+
+	<!-- Template passes through abbr, sic, and orig in figDesc in normalizeFigDesc mode -->
+	<!--<xsl:template match="figDesc//abbr|figDesc//sic|figDesc//orig" mode="normalizeFigDesc">
+		<xsl:apply-templates/>
+	</xsl:template>-->
+
+	<!-- Template kills through expan, corr, reg, and supplied in figDesc in normalizeFigDesc mode -->
+	<!--<xsl:template match="figDesc//expan|figDesc//corr|figDesc//reg|figDesc//supplied"
+		mode="normalizeFigDesc"/>-->
 
 	<!-- foreign should be italiced in edited view -->
 	<!-- <xsl:template match="foreign" xml:space="preserve">

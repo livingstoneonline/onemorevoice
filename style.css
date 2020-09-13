@@ -1859,15 +1859,15 @@ table .linenumber{
 	}
 }
 @media only screen and (min-width: 480px){
-	.artifact .graphic.vertical img{
+	.artifact.vertical img{
 		width: 70%;
 	}
 }
-.artifact .graphic.gray img{
+.artifact.gray img{
 	border: 3px #dbdbdb solid;
 }
-.artifact .graphic.gray a:hover img,
-.artifact .graphic.gray a:focus img{
+.artifact.gray a:hover img,
+.artifact.gray a:focus img{
 	border: 3px #2e68ac solid;
 }
 .journal .image-small.inline-left{

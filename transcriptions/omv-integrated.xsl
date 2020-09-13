@@ -1049,19 +1049,19 @@
 	<xsl:template match="figure">
 		<!-- start of variables -->
 		<xsl:variable name="figure-facs">
-			<xsl:apply-templates select="@facs"/>
+			<xsl:apply-templates select="self::node()/@facs"/>
 		</xsl:variable>
 		<xsl:variable name="graphic-url">
-			<xsl:apply-templates select="..//graphic/@url"/>
+			<xsl:apply-templates select="self::node()/graphic/@url"/>
 		</xsl:variable>
 		<xsl:variable name="graphic-facs">
-			<xsl:apply-templates select="..//graphic/@facs"/>
+			<xsl:apply-templates select="self::node()/graphic/@facs"/>
 		</xsl:variable>
 		<xsl:variable name="graphic-n">
-			<xsl:apply-templates select="..//graphic/@n"/>
+			<xsl:apply-templates select="self::node()/graphic/@n"/>
 		</xsl:variable>
 		<xsl:variable name="altText">
-			<xsl:apply-templates select="..//figDesc"/>
+			<xsl:apply-templates select="self::node()/figDesc"/>
 		</xsl:variable>
 		<!-- This variable creates the title for the artifact image. -->
 		<xsl:variable name="caption">
@@ -1070,15 +1070,10 @@
 					<xsl:text> </xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>.</xsl:text>
 				</xsl:if>
 			</xsl:variable>
-			<xsl:value-of select="..//label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
+			<xsl:value-of select="self::node()/label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
-			<xsl:if test="..//graphic[@n='artifact rotate-180']">
-				<xsl:text>image-to-rotate</xsl:text>
-			</xsl:if>
-		</xsl:variable>
-		<xsl:variable name="rotate-id">
-			<xsl:if test="..//graphic[@n='artifact rotate-180']">
+			<xsl:if test="self::node()/graphic[@n='artifact rotate-180']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
 		</xsl:variable>
@@ -1098,17 +1093,6 @@
 			</xsl:when>
 			<xsl:otherwise>
 			</xsl:otherwise>
-		</xsl:choose>
-	</xsl:template>
-
-	<xsl:template match="add[@place='marginleft']/figure|add[@place='marginright']/figure" priority="10">
-		<xsl:choose>
-		<xsl:when test="head">
-			<span class="figure" title="{concat('&quot;', head, '.&quot; ', figDesc)}">figure</span>
-		</xsl:when>
-		<xsl:otherwise>
-			<span class="figure" title="{figDesc}">figure</span>
-		</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
@@ -1579,6 +1563,17 @@
 	<!-- Template kills through expan, corr, reg, and supplied in figDesc in normalizeFigDesc mode -->
 	<!--<xsl:template match="figDesc//expan|figDesc//corr|figDesc//reg|figDesc//supplied"
 		mode="normalizeFigDesc"/>-->
+
+	<!--<xsl:template match="add[@place='marginleft']/figure|add[@place='marginright']/figure" priority="10">
+		<xsl:choose>
+		<xsl:when test="head">
+			<span class="figure" title="{concat('&quot;', head, '.&quot; ', figDesc)}">figure</span>
+		</xsl:when>
+		<xsl:otherwise>
+			<span class="figure" title="{figDesc}">figure</span>
+		</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>-->
 
 	<!-- foreign should be italiced in edited view -->
 	<!-- <xsl:template match="foreign" xml:space="preserve">

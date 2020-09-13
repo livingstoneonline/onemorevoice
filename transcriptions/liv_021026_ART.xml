@@ -89,7 +89,12 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_021026_0001" n="0001"/>
-<lb/><p rend="no-indent"><figure><graphic n="artifact" rend="vertical" url="../artifact-images/liv_021026_0001.jpg"/><!-- add rend="vertical" for portrait images --><!-- add rend="gray" to add gray border to image --><label>Anonymous, “Pandita Ramabai Sarasvati,” [late nineteenth century]</label><figDesc>Head and shoulders portrait of Pandita Ramabai Sarasvati with paper border.</figDesc></figure></p>
+	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_021026_0001_deriv-1178px.jpg">
+		<graphic url="../artifact-images/liv_021026_0001_deriv-851px.jpg" facs="../artifact-images/liv_021026_0001_deriv-851px.jpg 851w, ../artifact-images/liv_021026_0001_deriv-654px.jpg 654w, ../artifact-images/liv_021026_0001_deriv-458px.jpg 458w, ../artifact-images/liv_021026_0001_deriv-262px.jpg 262w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>
+		<!-- add rend="vertical" for portrait images --><!-- add rend="gray" to add gray border to image -->
+		<label>Anonymous, “Pandita Ramabai Sarasvati,” [late nineteenth century]</label>
+		<figDesc>Head and shoulders portrait of Pandita Ramabai Sarasvati with paper border.</figDesc>
+	</figure>
 <!-- Use the following to repoduce any original image caption. -->
 <!--<lb/><p rend="left small">[<seg rend="italic">original caption</seg>]</p>
 <lb/><p rend="no-indent left small">[CAPTION GOES HERE]</p>-->

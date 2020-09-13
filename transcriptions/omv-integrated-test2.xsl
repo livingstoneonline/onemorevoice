@@ -1048,20 +1048,29 @@
 
 	<xsl:template match="figure">
 		<!-- start of variables -->
-		<xsl:variable name="figure-url">
-			<xsl:apply-templates select="@url"/>
+		<xsl:variable name="figure-facs">
+			<xsl:apply-templates select="@facs"/>
 		</xsl:variable>
 		<xsl:variable name="graphic-url">
-			<xsl:apply-templates select="//graphic/@url"/>
+			<xsl:apply-templates select="..//graphic/@url"/>
 		</xsl:variable>
 		<xsl:variable name="graphic-facs">
-			<xsl:apply-templates select="//graphic/@facs"/>
+			<xsl:apply-templates select="..//graphic/@facs"/>
 		</xsl:variable>
 		<xsl:variable name="graphic-n">
-			<xsl:apply-templates select="//graphic/@n"/>
+			<xsl:apply-templates select="..//graphic/@n"/>
 		</xsl:variable>
 		<xsl:variable name="altText">
-			<xsl:apply-templates select="//figDesc"/>
+			<xsl:apply-templates select="..//figDesc"/>
+		</xsl:variable>
+		<!-- This variable creates the title for the artifact image. -->
+		<xsl:variable name="caption">
+			<xsl:variable name="copyright">
+				<xsl:if test="//availability/licence[@target]">
+					<xsl:text> </xsl:text><xsl:value-of select="//availability/licence/@target"/><xsl:text>.</xsl:text>
+				</xsl:if>
+			</xsl:variable>
+			<xsl:value-of select="..//label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
 			<xsl:if test="..//graphic[@n='artifact rotate-180']">
@@ -1072,10 +1081,17 @@
 		<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
 		<!-- end of variables -->
 		<xsl:choose>
-			<xsl:when test="@n='artifact'">
+			<xsl:when test="contains(@n,'artifact')">
+				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
+					<a href="{$figure-facs}">	
+						<img src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+					</a>
+				</span>
 			</xsl:when>
 			<xsl:when test="'[child::graphic]'">
-				<span class="{concat(name(), ' ', @rend, ' ', @n)}"><img src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/></span>
+				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
+					<img src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/>
+				</span>
 			</xsl:when>
 			<xsl:otherwise>
 			</xsl:otherwise>

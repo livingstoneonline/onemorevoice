@@ -5,8 +5,6 @@ const nav = document.querySelector('#nav2');
 const navTop = nav.offsetTop;
 
 function stickyNavigation() {
-  console.log('navTop = ' + navTop);
-  console.log('scrollY = ' + window.scrollY);
 
   if (window.scrollY >= navTop) {
     // nav offsetHeight = height of nav
@@ -23,34 +21,22 @@ window.addEventListener('scroll', stickyNavigation);
 
 /* Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-/* This works, but there is probably a much more concise way to write this. */
 
 function openNav() {
-    document.getElementById("nav3").style.display = "block";
-    if (document.getElementById("skiptocontent") !== null) {document.getElementById("skiptocontent").style.display = "none"};
-    if (document.getElementById("title-div") !== null) {document.getElementById("title-div").style.display = "none"};
-    if (document.getElementById("main-div") !== null) {document.getElementById("main-div").style.display = "none"};
-    if (document.getElementById("manuscript-div") !== null) {document.getElementById("manuscript-div").style.display = "none"};
-    if (document.getElementById("journal-div") !== null) {document.getElementById("journal-div").style.display = "none"};
-    if (document.getElementById("credits-div") !== null) {document.getElementById("credits-div").style.display = "none"};
-    if (document.getElementById("credits1-div") !== null) {document.getElementById("credits1-div").style.display = "none"};
-    if (document.getElementById("credits2-div") !== null) {document.getElementById("credits2-div").style.display = "none"};
-    if (document.getElementById("footer-div") !== null) {document.getElementById("footer-div").style.display = "none"};
+  document.getElementById("nav3").style.display = "block";
+  const elements = ["skiptocontent", "title-div", "main-div", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
+  for(const element of elements){
+    if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
   }
-  
-  function closeNav() {
-    document.getElementById("nav3").style.display = "none";
-    if (document.getElementById("skiptocontent") !== null) {document.getElementById("skiptocontent").style.display = "block"};
-    if (document.getElementById("title-div") !== null) {document.getElementById("title-div").style.display = "block"};
-    if (document.getElementById("main-div") !== null) {document.getElementById("main-div").style.display = "block"};
-    if (document.getElementById("manuscript-div") !== null) {document.getElementById("manuscript-div").style.display = "block"};
-    if (document.getElementById("journal-div") !== null) {document.getElementById("journal-div").style.display = "block"};
-    if (document.getElementById("credits-div") !== null) {document.getElementById("credits-div").style.display = "block"};
-    if (document.getElementById("credits1-div") !== null) {document.getElementById("credits1-div").style.display = "block"};
-    if (document.getElementById("credits2-div") !== null) {document.getElementById("credits2-div").style.display = "block"};
-    if (document.getElementById("footer-div") !== null) {document.getElementById("footer-div").style.display = "block"};
-  }
+}
 
+function closeNav() {
+  document.getElementById("nav3").style.display = "none";
+  const elements = ["skiptocontent", "title-div", "main-div", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
+  for(const element of elements){
+    if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
+  }
+}
 
 /* Keyboard Navigation for Dropdown Menus */
 /* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
@@ -105,10 +91,17 @@ function handleKeydown(event){
       // Stop the browser moving the page
       event.preventDefault();
 
-      // If the popup has just been opened, move focus to first menu element
+      // If we're on a top-level element
       if(target.attributes['aria-haspopup'] && target.attributes['aria-haspopup'].value === "true"){
-        const firstMenuElement = target.parentElement.querySelector('[role="menuitem"]');
-        firstMenuElement.focus();
+        // If the popup has just been opened, move focus to first menu element
+        if(target.checked){
+          const firstMenuElement = target.parentElement.querySelector('[role="menuitem"]');
+          firstMenuElement.focus();
+        }
+        // If popup is not opened, open it
+        else{
+          target.checked = true;
+        }
       }
       // Otherwise move focus down one element
        else if(target.attributes['role'] && target.attributes['role'].value === "menuitem"){
@@ -126,15 +119,26 @@ function handleKeydown(event){
         // Stop the browser from moving the page
         event.preventDefault();
 
-        // Move the focus up one element
         if(target.attributes['role'] && target.attributes['role'].value === "menuitem"){
+          // Get list of elements in the dropdown
           const menuItems = Array.from(
             target.closest('ul').querySelectorAll('[role="menuitem"]')
           );
 
-          // Wrap around to the bottom if we reach the top of the dropdown
+          // Check whether we're already at the top
           const prevMenuItem = getPreviousElement(menuItems, target);
-          prevMenuItem.focus();
+          // Close the dropdown
+          if(prevMenuItem === target){
+            console.log("at top");
+            const topLevelItem = target.closest('.dropdown').querySelector('input');
+            topLevelItem.checked = false;
+            topLevelItem.focus();
+          }
+          // Move the focus up one element
+          else {
+            prevMenuItem.focus();
+          }
+
         }
         break;
 
@@ -155,7 +159,7 @@ function handleKeydown(event){
           break;
         }
 
-        // Wrap around to the bottom if we reach the top of the dropdown
+
         const prevTopLevelItem = getPreviousElement(topLevelItems, currentItem);
         // Move focus to previous top-level item and open it if dropdown is open
         if(prevTopLevelItem.attributes['aria-haspopup'] && prevTopLevelItem.attributes['aria-haspopup'].value === "true"){
@@ -182,7 +186,7 @@ function handleKeydown(event){
         else{
           break;
         }
-        // Wrap around to the bottom if we reach the top of the dropdown
+
         const nextTopLevelItem = getNextElement(topLevelItems, currentItem);
         // Move focus to previous top-level item and open it if dropdown is open
         if(nextTopLevelItem.attributes['aria-haspopup'] && nextTopLevelItem.attributes['aria-haspopup'].value === "true"){
@@ -230,12 +234,12 @@ function handleKeydown(event){
 
 function getNextElement(items, currentItem){
   const currentIndex = items.findIndex(x => x == currentItem);
-  return items[Math.min(currentIndex + 1, items.length) % items.length];
+  return items[Math.min(currentIndex + 1, items.length - 1)];
 }
 
 function getPreviousElement(items, currentItem){
   const currentIndex = items.findIndex(x => x == currentItem);
-  return items[Math.max(currentIndex - 1 + items.length, 0) % items.length];
+  return items[Math.max(currentIndex - 1, 0)];
 }
 
 

@@ -1089,9 +1089,7 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="'[child::graphic]'">
-				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
-					<img src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/>
-				</span>
+				<span class="{concat(name(), ' ', @rend, ' ', @n)}"><img src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/></span>
 			</xsl:when>
 			<xsl:otherwise>
 			</xsl:otherwise>
@@ -1125,7 +1123,7 @@
 	</xsl:template>
 
 	<!-- do not show graphic -->
-	<!--<xsl:template match="graphic"/>-->
+	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">

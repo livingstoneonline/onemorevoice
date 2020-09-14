@@ -119,32 +119,31 @@ calc(100vw - 53px)
 6) Open page and calculate image sizes using https://ausi.github.io/respimagelint/ and correct as needed.convert
 
 
+Reference
 
-References
-
+Page speed & Measure
 https://developers.google.com/speed/pagespeed/insights/
 https://web.dev/measure/
+Lighthouse: https://developers.google.com/web/tools/lighthouse/
+Web speed best practices: https://developer.yahoo.com/performance/rules.html
 
+Image Magick Code & Documentation
+https://www.imagemagick.org/script/identify.php
 https://blog.chapagain.com.np/imagemagick-convertedit-multiple-images
 https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
-https://www.imagemagick.org/script/identify.php
-https://stackoverflow.com/questions/22751721/how-to-find-images-with-certain-size-in-terminal
 
-image production tips
+Image Production Tips
 https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick#7262050
 
-"kMDItemPixelHeight>1100 && kMDItemPixelWidth>900"
-
-https://blog.webjeda.com/lazy-load-css/
-https://developers.google.com/web/tools/lighthouse/
-https://www.npmjs.com/package/responsive-images-generator
-
+Responsive Images
 https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset
 https://web.dev/serve-images-with-correct-dimensions/
+https://web.dev/uses-optimized-images/
 https://web.dev/uses-responsive-images/
 https://web.dev/serve-responsive-images/
-https://web.dev/uses-optimized-images/
-
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
 
-https://developer.yahoo.com/performance/rules.html
+find images of a certain size: https://stackoverflow.com/questions/22751721/how-to-find-images-with-certain-size-in-terminal
+"kMDItemPixelHeight>1100 && kMDItemPixelWidth>900"
+
+Lazy Load CSS: https://blog.webjeda.com/lazy-load-css/

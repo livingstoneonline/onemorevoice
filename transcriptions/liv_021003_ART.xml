@@ -87,7 +87,12 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_021003_0001" n="0001"/>
-<lb/><p rend="no-indent"><figure><graphic n="artifact" url="../artifact-images/liv_021003_0001.jpg"/><label>Elliott &amp; Fry, “Jacob Wainwright,” [c.1874]</label><figDesc>Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right.</figDesc></figure></p>
+	<!-- This image has special coding in figure @n due to its reduced size. AW -->
+	<figure n="artifact liv_021003_0001" facs="../artifact-images/liv_021003_0001_deriv-319px.jpg">
+		<graphic url="../artifact-images/liv_021003_0001_deriv-319px.jpg" facs="../artifact-images/liv_021003_0001_deriv-319px.jpg 319w, ../artifact-images/liv_021003_0001_deriv-255px.jpg 255w" n="(min-width: 400px) 319px, calc(63.75vw + 77px)"/>
+		<label>Elliott &amp; Fry, “Jacob Wainwright,” [c.1874]</label>
+		<figDesc>Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right.</figDesc>
+	</figure>
 
             </div>
         </body>   

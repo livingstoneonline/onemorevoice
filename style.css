@@ -1142,9 +1142,14 @@ ul.concept-list li:last-child{
 .journal .TEI{
 	display: block;
 	text-align: justify;
-	padding: 1em .7em 2em .7em;
+	padding: 1em 0 2em 0;
 	margin-left: auto;
 	margin-right: auto;
+}
+@media only screen and (min-width: 480px){
+	.journal .TEI{
+		padding: 1em .7em 2em .7em;
+	}
 }
 .artifact .TEI{
 	padding: 0;
@@ -1523,6 +1528,10 @@ button::-moz-focus-inner{
 .journal .ab.center{
 	display: block;
 }
+.journal .p.right{
+	float: right;
+	position: unset;
+}
 .manuscript .head.center{
 	font-weight: normal;
 	text-indent: 0;
@@ -1720,7 +1729,8 @@ table .linenumber{
 }
 .fw .right,
 .journal .right .fw .right,
-.journal.narrow .fw .right{
+.journal.narrow .fw .right,
+.journal .p .right{
 	right: unset;
 	float: right;
 	position: unset;
@@ -2126,6 +2136,11 @@ table .linenumber{
 .text.liv_020011_0004,
 .text.liv_020011_0004 .unclear{
 	color: #c7c7c7;
+}
+.clear.liv_020012_0001,
+.clear.liv_020015_0002,
+.clear.liv_020020_0001{
+	clear: both;
 }
 .archival.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;

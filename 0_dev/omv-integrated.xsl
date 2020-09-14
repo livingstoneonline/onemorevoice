@@ -81,7 +81,7 @@
 				<!-- start of nav -->
 				
 					<nav id="skiptocontent" aria-labelledby="nav0">
-						<a href="#main" id="nav0" tabindex="1">skip to main content</a>
+						<a href="#main" id="nav0" tabindex="0">skip to main content</a>
 					</nav>
 				
 				    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
@@ -150,7 +150,7 @@
 				    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
 				    <nav id="sticky" aria-labelledby="nav2">
 				        <div class="menu" id="nav2" title="Menu">
-				            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
+				            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span>
 				            <span class="nav-title">One More Voice</span>
 				        </div>
 				    </nav>

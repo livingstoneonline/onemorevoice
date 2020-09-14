@@ -1390,7 +1390,7 @@ button::-moz-focus-inner{
 }
 #rotate-button:hover{
 	color:whitesmoke;
-	background-color: #424242;
+	background-color: #858585;
 
 }
 #rotate-button:focus{
@@ -1398,10 +1398,10 @@ button::-moz-focus-inner{
 }
 #rotate-button.click-color{
 	color: whitesmoke;
-	background-color: #858585;
+	background-color: #424242;
 }
 #rotate-button.click-color:hover{
-	background-color: #424242;
+	background-color: #858585;
 }
 .rotate-180{
 	transform: rotate(180deg);
@@ -2181,4 +2181,8 @@ table .linenumber{
 }
 .font.liv_020027_0001{
 	font-family: 'unifrakturmaguntiabook';
+}
+.artifact.liv_021003_0001{
+	max-width: 319px;
+	margin: 0 auto;
 }

@@ -73,6 +73,9 @@
 			  		gtag('config', 'UA-31768072-5');
 				</script>
 			</head>
+
+			<?php flush(); ?>
+
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
 			
 				<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->

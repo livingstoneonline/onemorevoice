@@ -1501,6 +1501,7 @@ button::-moz-focus-inner{
 	text-indent: 25px;
 	margin-top: 0;
 	margin-bottom: 0;
+	clear: both;
 }
 .manuscript .p,
 .manuscript .ab,
@@ -1508,7 +1509,7 @@ button::-moz-focus-inner{
 .artifact .ab{
 	display: inline-block
 }
-.artifact p{
+.artifact .p{
 	padding: 0;
 	margin: 0;
 }
@@ -1586,9 +1587,9 @@ table .linenumber{
 .milestone{
 	display: block;
 	text-align: left;
-	background: #FFF;
-	height: 0;
-	padding: 0px;
+	background: inherit;
+	height: 3px;
+	padding: 1px;
 }
 .line{
 	border-bottom: 1px solid #d0d0d0;
@@ -1715,10 +1716,6 @@ table .linenumber{
 .overline.underline{
 	text-decoration: overline underline;
 }
-.manuscript .right{
-	text-indent: 0;
-	margin-left: 4em;
-}
 .journal .right{
 	text-align: left;
 	right: 0;
@@ -1728,6 +1725,7 @@ table .linenumber{
 	right: 1em;
 }
 .fw .right,
+.manuscript .right,
 .journal .right .fw .right,
 .journal.narrow .fw .right,
 .journal .p .right{
@@ -2137,11 +2135,14 @@ table .linenumber{
 .text.liv_020011_0004 .unclear{
 	color: #c7c7c7;
 }
-.clear.liv_020012_0001,
-.clear.liv_020015_0002,
-.clear.liv_020020_0001{
+.clear.liv_020015_0002{
 	clear: both;
 }
+.clear.unset.liv_020013_0001,
+.clear.unset.liv_020018_0001{
+	clear: unset;
+}
+
 .archival.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	float: right;

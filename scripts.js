@@ -133,7 +133,12 @@ function handleKeydown(event){
         // Stop the browser from moving the page
         event.preventDefault();
 
-        if(target.attributes['role'] && target.attributes['role'].value === "menuitem"){
+        // If we're on an open top-level element
+        if(target.attributes['aria-haspopup'] && target.attributes['aria-haspopup'].value === "true" && target.checked){
+          target.checked = false;
+        }
+        // If we're in a dropdown
+        else if(target.attributes['role'] && target.attributes['role'].value === "menuitem"){
           // Get list of elements in the dropdown
           const menuItems = Array.from(
             target.closest('ul').querySelectorAll('[role="menuitem"]')
@@ -143,7 +148,6 @@ function handleKeydown(event){
           const prevMenuItem = getPreviousElement(menuItems, target);
           // Close the dropdown
           if(prevMenuItem === target){
-            console.log("at top");
             const topLevelItem = target.closest('.dropdown').querySelector('input');
             topLevelItem.checked = false;
             topLevelItem.focus();

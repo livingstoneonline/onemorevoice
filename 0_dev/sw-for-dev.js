@@ -196,10 +196,3 @@ self.addEventListener("activate", function(event) {
       })
   );
 });
-
-/* This code prevents Servic Worker from throwing up issues with WAVE in Chrome. */
-caches.open(version)
-            .then(function (cache) {
-                if (!/^https?:$/i.test(new URL(request.url).protocol)) return;
-                cache.put(request, copy);
-            });

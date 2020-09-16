@@ -60,9 +60,13 @@
 					</xsl:otherwise>
 				</xsl:choose>
 				<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+			    <meta name="theme-color" content="#2e68ac"/>
+			    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+			    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+			    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+			    <link rel="manifest" href="../site.webmanifest" />
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/style.css" />
-				<!-- <link rel="stylesheet" type="text/css" href="../style.css" /> -->
-				<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
+				<!--<link rel="stylesheet" type="text/css" href="../style.css" />-->
 			    <!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>
@@ -73,14 +77,21 @@
 			  		gtag('config', 'UA-31768072-5');
 				</script>
 			</head>
+
+			<xsl:text disable-output-escaping="yes">
+        		<![CDATA[<?php flush(); ?>]]>
+				
+			</xsl:text>
+
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
 			
 				<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 				
 				<!-- start of nav -->
 				
+					<!-- href differs from regular HTML pages -->
 					<nav id="skiptocontent" aria-labelledby="nav0">
-						<a href="#main" id="nav0" tabindex="0">skip to main content</a>
+						<a href="#credits1-div" id="nav0" tabindex="0">skip to main content</a>
 					</nav>
 				
 				    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
@@ -209,8 +220,9 @@
 					</xsl:choose>
 	    		</header>
 				<xsl:apply-templates select="TEI"/>
+			    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
 				<script src="http://livingstoneonline.github.io/onemorevoice/scripts.js"></script>
-				<!-- <script src="../scripts.js"></script> -->
+				<!--<script src="../scripts.js"></script>-->
 			<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 				<script>
 					/* Color, Inversion, Rotation Switches */
@@ -293,7 +305,24 @@
 					});
 				</script>
 			</xsl:if>
-
+			<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">
+				<script>
+					// Image Rotation */
+					// Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role
+					
+					function myFunction() {
+					    var element1 = document.getElementById("rotate-button");
+					    var element2 = document.getElementById("image-to-rotate");
+					    if (element1.getAttribute("aria-checked") == "true") {
+					        element1.setAttribute("aria-checked", "false");
+					    } else {
+					        element1.setAttribute("aria-checked", "true");
+					    }
+					    element1.classList.toggle("click-color");
+					    element2.classList.toggle("rotate-180");
+					}
+				</script>
+			</xsl:if>
 			</body>
 		</html>
 	</xsl:template>
@@ -528,7 +557,7 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -544,7 +573,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
+		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits">
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -556,7 +585,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']">
-		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -570,7 +599,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='artifact-book-journal']">
-		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits"><a class="anchor" id="main"></a>
+		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Creator(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>

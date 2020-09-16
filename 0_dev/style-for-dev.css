@@ -68,6 +68,7 @@ html{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto;
+	scroll-behavior: smooth;
 }
 body{
 	width: 100%;
@@ -358,7 +359,7 @@ a:hover img,
 a:focus img{
 	border: 3px #2e68ac solid;
 }
-a.anchor{
+/* a.anchor{
 	display: block;
 	position: relative;
 	top: -80px;
@@ -368,8 +369,16 @@ a.anchor{
 	a.anchor{
 		top: -60px;
 	}
-}
-
+} */
+/* Solution from https://markus.oberlehner.net/blog/simple-solution-for-anchor-links-behind-sticky-headers/ */
+[id] {
+	scroll-margin-top: 70px;
+  }
+  @media only screen and (min-width: 992px){
+    [id] {
+        scroll-margin-top: unset;
+      }
+    }
 
 /* 1.2. Mobile Fixed Nav */
 

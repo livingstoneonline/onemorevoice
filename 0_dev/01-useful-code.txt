@@ -2,7 +2,7 @@
 	<!-- Only first word of sections is capitalized -->
 	<section class="toc" aria-labelledby="menu-sections">
 	    <ol id="menu-sections">
-	    	<li class="toc-title">[Menu: Sections]<a class="anchor" id="list"></a></li>
+	    	<li class="toc-title">[Menu: Sections]</li>
 			<li><a href="#link-1"></a></li>
 			<li><a href="#link-2"></a></li>
 			<li><a href="#link-3"></a></li>
@@ -13,6 +13,6 @@
 
 	<!-- Put sections within section tags -->
 	<section aria-labelledby="[text]">
-		<h4 id="[text]"><a class="anchor" id="link-1"></a>
+		<h4 id="link-1">
 		[title] &nbsp;<a href="#list" class="return-top">top</a></h4>
 	</section>

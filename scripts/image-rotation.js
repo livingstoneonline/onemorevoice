@@ -1,1 +1,0 @@
-function myFunction(){var t=document.getElementById("rotate-button"),e=document.getElementById("image-to-rotate");"true"==t.getAttribute("aria-checked")?t.setAttribute("aria-checked","false"):(t.setAttribute("aria-checked","true"),a),t.classList.toggle("click-color"),e.classList.toggle("rotate-180")}

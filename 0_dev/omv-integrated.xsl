@@ -221,8 +221,8 @@
 	    		</header>
 				<xsl:apply-templates select="TEI"/>
 			    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
-				<script src="http://livingstoneonline.github.io/onemorevoice/scripts.js"></script>
-				<!--<script src="../scripts.js"></script>-->
+				<script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script>
+				<!--<script src="../scripts/scripts.js"></script>-->
 			<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 				<script>
 					/* Color, Inversion, Rotation Switches */

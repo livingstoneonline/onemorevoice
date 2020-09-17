@@ -2,7 +2,7 @@
 /* Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker */
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/sw.js")
+    .register("/scripts/sw.js")
     .then(serviceWorker => {
       console.log("Service Worker registered: ", serviceWorker);
     })
@@ -38,7 +38,7 @@ window.addEventListener('scroll', stickyNavigation);
 
 function openNav() {
   document.getElementById("nav3").style.display = "block";
-  const elements = ["skiptocontent", "title-div", "main-div", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
+  const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
   }
@@ -46,7 +46,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("nav3").style.display = "none";
-  const elements = ["skiptocontent", "title-div", "main-div", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
+  const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
   }

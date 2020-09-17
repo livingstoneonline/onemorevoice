@@ -200,9 +200,11 @@ body.transcription .title{
 }
 img,
 .image{
+	font-weight: 300;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
+	display: inline-block;
 }
 .image-border{
 	border: 1px solid gray;
@@ -210,12 +212,86 @@ img,
 @media screen and (min-width:480px) {
 	.responsive-image70 {
 		width: 70%;
-	}       
-  }
-@media screen and (min-width:480px) {
+	}
 	.responsive-image73 {
 		width: 73%;
-	}       
+	} 
+  }
+/* The following is used to prevent content layout shifts */
+.content-holder-1,
+.content-holder-2,
+.content-holder-3,
+.content-holder-4,
+.content-holder-5{
+	background: #e6e6e6;
+}
+@media screen and (min-width:320px) {
+	.content-holder-1{
+		min-height: 66px;
+	}
+	.content-holder-2{
+		min-height: 181px;
+	}
+	.content-holder-3{
+		min-height: 283px;
+	}
+	.content-holder-4{
+		min-height: 229px;
+	}
+	.content-holder-5{
+		min-height: 362px;
+	}
+}
+@media screen and (min-width:480px) {
+	.content-holder-1{
+		min-height: 106px;
+	}
+	.content-holder-2{
+		min-height: 285px;
+	}
+	.content-holder-3{
+		min-height: 322px;
+	}
+	.content-holder-4{
+		min-height: 359px;
+	}
+	.content-holder-5{
+		min-height: 394px;
+	}
+}
+@media screen and (min-width:768px) {
+	.content-holder-1{
+		min-height: 169px;
+	}
+	.content-holder-2{
+		min-height: 447px;
+	}
+	.content-holder-3{
+		min-height: 504px;
+	}
+	.content-holder-4{
+		min-height: 563px;
+	}
+	.content-holder-5{
+		min-height: 618px;
+	}
+}
+@media screen and (min-width:992px) {
+	.content-holder-1{
+		min-height: 155px;
+	}
+	.content-holder-2{
+		min-height: 409px;
+	}
+	.content-holder-3{
+		min-height: 461px;
+	}
+	.content-holder-4{
+		min-height: 514px;
+	}
+	.content-holder-5{
+		min-height: 564px;
+	}
 }
 .title hr{
 	display: none;

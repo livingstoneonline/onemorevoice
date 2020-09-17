@@ -221,106 +221,17 @@
 	    		</header>
 				<xsl:apply-templates select="TEI"/>
 			    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
-				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts.js"></script> -->
-				<script src="../scripts.js"></script>
+				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
+				<script src="../scripts/scripts.js"></script>
 			<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-				<script>
-					/* Color, Inversion, Rotation Switches */
-					/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
-					
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#remove-color')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('change-color');
-					    };
-					});
-					
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#invert')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('invert-color');
-					    };
-					});
-					
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#remove-rotation')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('rotate');
-					    };
-					});
-				</script>
+				<script src="../scripts/manuscript-transform.js"></script>
 			</xsl:if>
 			<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-				<script>
-					/* Inversion, Justification Switches */
-					/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
-
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#invert')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('invert-color');
-					    };
-					});
-
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#remove-justification')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('unjustify');
-					    };
-					});
-				</script>
+				<script src="../scripts/journal-transform.js"></script>
 			</xsl:if>
 			<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">
 				<script>
-					// Image Rotation */
-					// Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role
-					
-					function myFunction() {
-					    var element1 = document.getElementById("rotate-button");
-					    var element2 = document.getElementById("image-to-rotate");
-					    if (element1.getAttribute("aria-checked") == "true") {
-					        element1.setAttribute("aria-checked", "false");
-					    } else {
-					        element1.setAttribute("aria-checked", "true");
-					    }
-					    element1.classList.toggle("click-color");
-					    element2.classList.toggle("rotate-180");
-					}
+				<script src="../scripts/image-rotation.js"></script>
 				</script>
 			</xsl:if>
 			</body>

@@ -14,7 +14,10 @@ var version = 'v1::';
 var offlineFundamentals = [
   '/',
   '/style.css',
-  '/scripts.js'
+  '/scripts/scripts.js',
+  '/scripts/sw.js',
+  '/scripts/journal-transform.js',
+  '/scripts/manuscript-transform.js'
 ];
 
 /* The install event fires when the service worker is first installed.

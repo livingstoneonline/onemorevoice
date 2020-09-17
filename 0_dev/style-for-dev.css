@@ -224,6 +224,8 @@ img,
 .content-holder-4,
 .content-holder-5{
 	background: #e6e6e6;
+	object-fit: cover;
+	-o-object-fit: cover;
 }
 @media screen and (min-width:320px) {
 	.content-holder-1{
@@ -930,6 +932,7 @@ body.transcription .title{
 .gallery figure img{
 	width: 100%;
 	object-fit:cover;
+	-o-object-fit: cover;
 	border-radius:50%;
 	overflow: hidden;
 	border: 2px solid #dbdbdb;

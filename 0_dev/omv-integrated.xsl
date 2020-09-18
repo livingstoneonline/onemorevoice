@@ -207,7 +207,7 @@
 				<!-- end of nav -->
 				       
 				<header class="title" id="title-div"> 
-				    <img class="image image-border" src="../site-images/liv_023005_0001_deriv-1300px.png" srcset="../site-images/liv_023005_0001_deriv-1300px.png 1300w, ../site-images/liv_023005_0001_deriv-1000px.png 1000w, ../site-images/liv_023005_0001_deriv-700px.png 700w, ../site-images/liv_023005_0001_deriv-400px.png 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by the One More Voice project according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project." />
+				    <img class="image image-border content-holder-1" src="../site-images/liv_023005_0001_deriv-1300px.png" srcset="../site-images/liv_023005_0001_deriv-1300px.png 1300w, ../site-images/liv_023005_0001_deriv-1000px.png 1000w, ../site-images/liv_023005_0001_deriv-700px.png 700w, ../site-images/liv_023005_0001_deriv-400px.png 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by the One More Voice project according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project." />
 	        		<h1 class="header-title">One More Voice</h1>
 	        		<hr/>
 					<xsl:choose>
@@ -224,86 +224,10 @@
 				<script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script>
 				<!--<script src="../scripts/scripts.js"></script>-->
 			<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-				<script>
-					/* Color, Inversion, Rotation Switches */
-					/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
-					
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#remove-color')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('change-color');
-					    };
-					});
-					
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#invert')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('invert-color');
-					    };
-					});
-					
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#remove-rotation')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('rotate');
-					    };
-					});
-				</script>
+				<script src="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js"></script>
 			</xsl:if>
 			<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-				<script>
-					/* Inversion, Justification Switches */
-					/* Created for One More Voice by way of Livingstone Online by Nigel Banks */
-
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#invert')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('invert-color');
-					    };
-					});
-
-					// Wait till document is loaded before executing.
-					document.addEventListener("DOMContentLoaded", function(event) {
-					  // Select the button element using it's ID.
-					  document.querySelector('input#remove-justification')
-					    // Call this function when the button is clicked.
-					    .onclick = function () {
-					      // Find the element with class transcription,
-					      // and toggle the class 'change-display'.
-					      document.querySelector('body.transcription')
-					        .classList
-					        .toggle('unjustify');
-					    };
-					});
-				</script>
+				<script src="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js"></script>
 			</xsl:if>
 			<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">
 				<script>
@@ -617,17 +541,17 @@
 				<aside id="transcription-switches" class="manuscript-switches">
 					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Color
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-color" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color" id="remove-color" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="invert" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Rotation
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-rotation" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
@@ -698,12 +622,12 @@
 				<aside id="transcription-switches" class="journal-switches">
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="invert" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Justification
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-justification" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
@@ -1070,7 +994,7 @@
 		<xsl:choose>
 			<xsl:when test="contains(@n,'artifact') and contains(@change,'rotate-180')">
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
-				<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
+				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				<br/><br/><br/>
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	

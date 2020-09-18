@@ -541,17 +541,17 @@
 				<aside id="transcription-switches" class="manuscript-switches">
 					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Color
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-color" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color" id="remove-color" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="invert" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Rotation
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-rotation" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
@@ -622,12 +622,12 @@
 				<aside id="transcription-switches" class="journal-switches">
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
 						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="invert" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch.">
 						Remove Justification
-						<input type="checkbox" checked="" role="button" data-toggle="button" id="remove-justification" />
+						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
@@ -994,7 +994,7 @@
 		<xsl:choose>
 			<xsl:when test="contains(@n,'artifact') and contains(@change,'rotate-180')">
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
-				<button role="switch" aria-checked="false" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
+				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				<br/><br/><br/>
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	

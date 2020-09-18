@@ -224,9 +224,16 @@ img,
 .content-holder-4,
 .content-holder-5{
 	background: #e6e6e6;
-	object-fit: cover;
-	-o-object-fit: cover;
 }
+@media screen and (min-width:768px) {
+	.content-holder-1,
+	.content-holder-2,
+	.content-holder-3,
+	.content-holder-4,
+	.content-holder-5{
+		object-fit: cover;
+		-o-object-fit: cover;
+	}
 @media screen and (min-width:320px) {
 	.content-holder-1{
 		min-height: 66px;
@@ -535,7 +542,7 @@ a:focus img{
 }
 /* Solution from https://markus.oberlehner.net/blog/simple-solution-for-anchor-links-behind-sticky-headers/ */
 [id] {
-	scroll-margin-top: 70px;
+	scroll-margin-top: 90px;
   }
   @media only screen and (min-width: 992px){
     [id] {

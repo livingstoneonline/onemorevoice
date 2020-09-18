@@ -2303,6 +2303,22 @@ table .linenumber{
 .font.liv_020027_0001{
 	font-family: 'unifrakturmaguntiabook';
 }
+.container.liv_020019_0001{
+    position: relative;
+    padding: 0 0 2em 0;
+    margin: 0 0 -2em 0;
+}
+.deletion.liv_020019_0001{
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid #858585;
+    left: 9em;
+    transform: rotate(357deg);
+	-ms-transform:rotate(357deg); /* IE 9 */
+	-moz-transform:rotate(357deg); /* Firefox */
+	-webkit-transform:rotate(357deg); /* Safari and Chrome */
+	-o-transform:rotate(357deg); /* Opera */
+}
 .artifact.liv_021003_0001{
 	max-width: 319px;
 	margin: 0 auto;

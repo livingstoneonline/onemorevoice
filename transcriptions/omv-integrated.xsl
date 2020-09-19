@@ -226,9 +226,11 @@
 				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
 				<script src="../scripts/scripts.js"></script>
 			<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
+				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js" />-->
 				<script src="../scripts/manuscript-transform.js"></script>
 			</xsl:if>
 			<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
+				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js" />-->
 				<script src="../scripts/journal-transform.js"></script>
 			</xsl:if>
 			<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">

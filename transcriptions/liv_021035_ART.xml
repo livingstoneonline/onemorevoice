@@ -39,7 +39,7 @@
                         <country>United Kingdom</country><!-- Repository country -->
                         <settlement>Oxford</settlement><!-- Repository city -->
                         <repository>Bodleian Library</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
-                        <idno type="shelfmark">MSS. Afr. S. 16 (9), fol. 13r</idno><!-- Shelfmark/Identifier -->
+                        <idno type="shelfmark">MSS. Afr. S. 16 (9), fol. 13</idno><!-- Shelfmark/Identifier -->
                     </msIdentifier>
                 </msDesc>
                 <bibl type="sourceMetadata">
@@ -92,7 +92,7 @@
 	<!-- figure @facs provides the hyperlink for the artifact image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
-	<figure n="artifact" facs="../artifact-images/liv_021035_0001_deriv-1481px.jpg">
+	<figure n="artifact" rend="gray" facs="../artifact-images/liv_021035_0001_deriv-1481px.jpg">
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
 
 		<graphic url="../artifact-images/liv_021035_0001-1300px.jpg" facs="../artifact-images/liv_021035_0001_deriv-1069px.jpg 1069w, ../artifact-images/liv_021035_0001_deriv-823px.jpg 823w, ../artifact-images/liv_021035_0001_deriv-576px.jpg 576w, ../artifact-images/liv_021035_0001_deriv-329px.jpg 329w " n="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"/>

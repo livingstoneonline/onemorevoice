@@ -74,10 +74,10 @@ mogrify -format jpg -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -i
 3) Move all generated files:
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images/thumbnails \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
 find . -type f -name \*.png -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images/thumbnails \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/tei-embedded-images \;
 
 4) Remove images that do not meet threshold requirements

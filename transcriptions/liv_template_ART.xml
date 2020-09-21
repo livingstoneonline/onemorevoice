@@ -138,6 +138,8 @@
 	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_0210xx_0001_deriv-1800px.jpg">
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
 		<graphic url="../artifact-images/liv_0210xx_0001-1300px.jpg" facs="" n=""/>
+		<!-- for vertical images use: (min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px) -->
+		<!-- for horizontal images use: (min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px) -->
 		<label><!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc>
 	</figure>

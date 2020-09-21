@@ -338,10 +338,16 @@ label.md_switch{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #2e68ac;
 	text-decoration: none;
+	display: none;
 }
 .back-button a:hover{
 	color: #a83c37;
 }
+@media only screen and (min-width: 768px){
+	.back-button a{
+		display: block;
+	}
+}	
 .title .back-button{
 	font-size: .95em;
 	font-weight: 300;

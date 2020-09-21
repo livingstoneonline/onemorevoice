@@ -126,11 +126,13 @@ h5.books::before{
 	font-family: 'FontAwesome';
 	content: '\f101';
 	padding-right: .5em;
+	display: swap;
 }
 h5.books::after{
 	font-family: 'FontAwesome';
 	content: '\f100';
 	padding-left: .5em;
+	display: swap;
 }
 /* adds padding for h4 labelled subsections in essays */
 .subsection{
@@ -612,6 +614,7 @@ a:focus img{
 label::after,
 a::after{
 	font-family: 'FontAwesome';
+	display: swap;
 }
 label::after{
 	content: '\f0da'; /* closed folder */

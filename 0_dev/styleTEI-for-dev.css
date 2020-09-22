@@ -316,6 +316,12 @@ label.md_switch{
 	-webkit-transform:rotate(0deg) !important; /* Safari and Chrome */
 	-o-transform:rotate(0deg) !important; /* Opera */
 }
+.rotate .signature2.liv_020021_00001,
+.rotate .statement1.liv_020021_0002{
+	margin: unset;
+	padding: unset;
+	display: unset;
+}
 @media only screen and (min-width: 768px){
 	.rotate .note-1.liv_003027_0001{
 		float: none;
@@ -999,13 +1005,15 @@ table .linenumber{
 	margin: 0 3px;
 	height: 500px;
 }
+.metamark.liv_000023_0090{
+	position: relative;
+}
 .metamark.liv_000023_0090::before{
 	content: '{';
-	margin-left: -.4em;
-	float: left;
 	font-size: 3.5em;
 	transform: scale(.35, 1.7);
-	padding-top: .1em;
+	right: -.2em;
+	position: absolute;
 }
 .columnLeft.liv_000023_0092{
 	text-align: center;
@@ -1187,12 +1195,34 @@ table .linenumber{
 	font-size: 1.3em;
 }
 .signature2.liv_020021_00001{
+	margin-left: -1.5em;
+	padding-right: 2em;
+	white-space: nowrap;
 	transform: rotate(30deg);
 	-ms-transform:rotate(30deg); /* IE 9 */
 	-moz-transform:rotate(30deg); /* Firefox */
 	-webkit-transform:rotate(30deg); /* Safari and Chrome */
 	-o-transform:rotate(30deg); /* Opera */
 	display: inline-block;
+}
+.statement1.liv_020021_0002{
+	margin-top: -1em;
+	margin-left: 3em;
+	transform: rotate(270deg);
+	-ms-transform:rotate(270deg); /* IE 9 */
+	-moz-transform:rotate(270deg); /* Firefox */
+	-webkit-transform:rotate(270deg); /* Safari and Chrome */
+	-o-transform:rotate(270deg); /* Opera */
+}
+.metamark.liv_020021_0002{
+	position: relative;
+}
+.metamark.liv_020021_0002::after{
+	content: '}';
+	font-size: 2.6em;
+	top: .4em;
+	left: 2em;
+	position: absolute;
 }
 .archival.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;

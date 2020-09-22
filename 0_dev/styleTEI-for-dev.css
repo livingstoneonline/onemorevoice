@@ -78,7 +78,7 @@ also see 2.9 for manuscript colors
 	position: relative;
 }
 .manuscript .TEI{
-	padding: 1em 0 5em 0;
+	padding: 2em 0 3em 0;
 	margin: .5em 0 2em 0;
 	border: 2px solid gainsboro;
 }
@@ -93,7 +93,7 @@ also see 2.9 for manuscript colors
 	margin-bottom: -1em;
 }
 .manuscript .back{
-	margin-top: -1em;
+	margin-top: 1em;
 }
 
 .manuscript .TEI.front + .TEI{
@@ -131,8 +131,7 @@ also see 2.9 for manuscript colors
 	display: block;
 	text-align: justify;
 	padding: 1em 0 2em 0;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
 	.journal .TEI{
@@ -1223,6 +1222,26 @@ table .linenumber{
 	top: .4em;
 	left: 2em;
 	position: absolute;
+}
+.article.liv_020021_00003{
+	color: black;
+	background-color: #e0d6b4;
+	display: block;
+	text-align: justify;
+	padding: 1em 0;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 480px){
+	.article.liv_020021_00003{
+		padding: 0em .7em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.article.liv_020021_00003{
+		width: 70%;
+		margin: 0 auto;
+		padding: 0 2em;
+	}
 }
 .archival.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;

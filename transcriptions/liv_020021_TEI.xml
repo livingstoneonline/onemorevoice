@@ -120,8 +120,8 @@
     </teiHeader>
 
     <text>
-		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-			<div>
+		<body n="d1d6d5"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div rend="black brown">
 	<!-- ndash: &#8211; -->
 	<!-- mdash: &#8212; -->
 
@@ -129,14 +129,15 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
 
-	<pb facs="liv_020021_00021" n="0001"/>
+	<pb facs="liv_020021_00001" n="0001"/>
 <lb/><p rend="center"><add place="inline" hand="#U" rend="gray">47</add></p>			    
 <lb/><p>I have heard that the <term type="tribe">Boers</term> say <persName>Livingstone</persName>
 <lb/>sold me guns. <choice><sic>they</sic><corr>They</corr></choice> tell falsehoods. <choice><sic>he</sic><corr>He</corr></choice> never sold
 <lb/>me any nor yet lent me any.
-<lb/><space extent="7" unit="words"/><add place="inline" hand="#S"><persName>Secele</persName></add>
-<lb/><space extent="2" unit="lines"/>
-<lb/>I was never under <persName>Mosilikatse</persName>'s rule, he made
+<lb/><space extent="6" unit="words"/><space extent="2" unit="chars"/><add place="inline" hand="#S" n="signature1 liv_020021_00001"><persName>Secele</persName></add>
+<lb/>
+<lb/>
+<lb/>I was never under <persName>Mosilikatse</persName>'s rule. <choice><sic>he</sic><corr>He</corr></choice> made
 <lb/>war upon and beat me but I did not submit
 <lb/>to him. I went to the <region>Kalagare</region> where he was
 <lb/>not able to follow me</p>
@@ -150,16 +151,16 @@
 <lb/>refused saying the <term type="collective"><orig>Matabele</orig><reg>Ndebele</reg></term> have <add place="below">^</add> <add place="above">attacked</add> you
 <lb/>and not us. This was long after the <term type="collective"><orig>Matabele</orig><reg>Ndebele</reg></term>
 <lb/>had been driven out of the country by
-<lb/><persName>Dingaan</persName>. When they attached me they
+<lb/><persName>Dingaan</persName>. When they attacked me they
 <lb/>were on their way to attack <persName>Sebegue</persName> who had
 <lb/>not long before returned from the <region><orig>Kalagare</orig><reg>Kalahari</reg></region>
 <lb/>wither he had fled a long while before with
 <lb/>all his people and cattle to escape <persName>Mosilikatse</persName>
 <lb/><persName><choice><orig>Mosilikatse</orig><reg>Mzilikazi</reg></choice></persName> hearing of his return had sent an army
 <lb/>against him</p>
-<lb/><p>Translated from <persName>Sechele</persName>'s statement <add place="inline" hand="#S"><persName>Secele</persName></add>
-<lb/>by one in his presence <space extent="1" unit="words"/><persName>Samuel Edwards</persName>
-<lb/><space extent="5" unit="words"/><settlement>Cape Town</settlement> <date when="1853-05-07">May 7.<hi rend="sup">th</hi> 1853</date>.</p>
+<lb/><p>Translated from <persName>Sechele</persName>'s statement <add place="inline" hand="#S" n="signature2 liv_020021_00001"><persName>Secele</persName></add>
+<lb/>by me in his presence <space extent="1" unit="words"/><space extent="2" unit="chars"/><persName>Samuel Edwards</persName>
+<lb/><space extent="4" unit="words"/><settlement>Cape Town</settlement> <date when="1853-05-07">May 7.<hi rend="sup">th</hi> 1853</date>.</p>
             
 	<pb facs="liv_020021_0002" n="0002"/>
 <lb/><p><add place="inline" rend="vertical">Statements made by

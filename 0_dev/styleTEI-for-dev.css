@@ -1183,13 +1183,16 @@ table .linenumber{
 }
 .signature1.liv_020021_00001,
 .signature2.liv_020021_00001{
-    font-family: 'cedarville_cursiveregular';
-}
-.signature1.liv_020021_00001{
-	
+	font-family: 'cedarville_cursiveregular';
+	font-size: 1.3em;
 }
 .signature2.liv_020021_00001{
-	
+	transform: rotate(30deg);
+	-ms-transform:rotate(30deg); /* IE 9 */
+	-moz-transform:rotate(30deg); /* Firefox */
+	-webkit-transform:rotate(30deg); /* Safari and Chrome */
+	-o-transform:rotate(30deg); /* Opera */
+	display: inline-block;
 }
 .archival.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;

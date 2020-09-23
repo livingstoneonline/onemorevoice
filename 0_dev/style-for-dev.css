@@ -1041,7 +1041,7 @@ ul{
 	margin:0;
 }
 ol li ol{
-	padding: 0 0 0 .5em;
+	padding: 0 0 0 0;
 }
 @media only screen and (min-width: 768px){
 	ol,
@@ -1105,11 +1105,15 @@ ol li ol{
 .sitemap-list{
 	display: inline-block;
 	text-indent: 0;
-	margin-left: 1em;
 }
 .sitemap-list .sitemap-list:before{
 	content: "•";
 	margin:0 5px 0 -15px;
+}
+@media only screen and (min-width: 768px){
+	.sitemap-list{
+		margin-left: 1em;
+	}
 }
 
 /* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */

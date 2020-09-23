@@ -308,7 +308,7 @@ label.md_switch{
 .invert-color .journal .corr{
 	border-bottom: 2px dotted black;
 }
-.rotate .TEI *{
+.rotate .TEI *:not(.horizontalcircles1.liv_020021_0002,.horizontalcircles2.liv_020021_0002,.horizontalcircles3.liv_020021_0002,.horizontalcircles4.liv_020021_0002,.horizontalcircles5.liv_020021_0002){
 	transform: rotate(0deg) !important;
 	-ms-transform:rotate(0deg) !important; /* IE 9 */
 	-moz-transform:rotate(0deg) !important; /* Firefox */

@@ -1172,21 +1172,62 @@ table .linenumber{
 .clear.unset.liv_020018_0001{
 	clear: unset;
 }
-.container.liv_020019_0001{
+.container.liv_020019_0001,
+.container.liv_020019_0002{
     position: relative;
-    padding: 0 0 2em 0;
-    margin: 0 0 -2em 0;
 }
-.deletion.liv_020019_0001{
-    position: absolute;
-    height: 100%;
+.container.liv_020019_0003{
+    position: relative;
+}
+.deletion.liv_020019_0001,
+.deletion.liv_020019_0002,
+.deletion.liv_020019_0003{
     border-left: 1px solid #858585;
-    left: 9em;
+    position: absolute;
+}
+.deletion.liv_020019_0001,
+.deletion.liv_020019_0002{
+    height: 100%;
     transform: rotate(357deg);
 	-ms-transform:rotate(357deg); /* IE 9 */
 	-moz-transform:rotate(357deg); /* Firefox */
 	-webkit-transform:rotate(357deg); /* Safari and Chrome */
-	-o-transform:rotate(357deg); /* Opera */
+    -o-transform:rotate(357deg); /* Opera */
+}
+.deletion.liv_020019_0001{
+    padding-bottom: 1em;
+    margin-top: 1em;
+    left: 9em;
+}
+.deletion.liv_020019_0002{
+    padding-bottom: 1em;
+    margin-top: 1em;
+    left: 7em;
+}
+.deletion.liv_020019_0003{
+    height: 93%;
+    margin-top: 3em;
+    left: 8.5em;
+}
+.deletion2.liv_020019_0003{
+
+}
+@media only screen and (min-width: 768px){
+    .marginalnote.liv_020019_0002{
+        transform: rotate(270deg);
+        -ms-transform:rotate(270deg); /* IE 9 */
+        -moz-transform:rotate(270deg); /* Firefox */
+        -webkit-transform:rotate(270deg); /* Safari and Chrome */
+        -o-transform:rotate(270deg); /* Opera */
+        top: 25em;
+        left: -15em;
+        position: absolute;
+    }
+}
+@media only screen and (min-width: 768px){
+    .pagenote.liv_020019_0003{
+        margin-left: -1.5em;
+    }
 }
 .signature1.liv_020021_00001,
 .signature2.liv_020021_00001{

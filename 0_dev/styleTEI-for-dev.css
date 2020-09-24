@@ -23,8 +23,7 @@ Table of Contents
 2.10. Colors 
 2.11. Misc 
 2.12. Fonts
-2.13. Letters [not is use, commented out]
-2.14. Specific item rendering
+2.13. Specific item rendering
 */
 
 /*--------------------------------------*/
@@ -968,33 +967,7 @@ table .linenumber{
 }
 
 
-/* 2.13. Letters [not in use] */
-
-/*
-.opener,
-.closer,
-.trailer{
-	margin-bottom:0px;
-}
-.opener{
-	display:inline;
-	margin-top:1em;
-}
-.closer,
-.address{
-	display:block;
-}
-.dateline{
-	display:inline;
-	text-indent:0;
-}
-.signed{
-	display:inline-block;
-}
-*/
-
-
-/* 2.14. Specific item rendering */
+/* 2.13. Specific item rendering */
 .metamark.liv_000023_0036{
 	padding: .19em .7em;
 	margin-left: -.4em; 
@@ -1214,6 +1187,14 @@ table .linenumber{
 }
 .deletion2.liv_020019_0003{
 	text-decoration: 1px line-through #858585;
+}
+.flourish1.liv_020019_0003{padding-right: .5em;
+    font-size: 3em;
+    transform: scale(1,-.3) !important;
+    -webkit-transform: scale(1,-.3) !important;
+    -moz-transform: scale(1,-.3) !important;
+    -ms-transform: scale(1,-.3) !important;
+    -o-transform: scale(1,-.3) !important;
 }
 @media only screen and (min-width: 768px){
     .marginalnote.liv_020019_0002{

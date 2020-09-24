@@ -999,15 +999,13 @@ table .linenumber{
 	padding: .19em .7em;
 	margin-left: -.4em; 
 	border-top: 1.5px solid;
-	/* border-left: 1.5px solid; */
 	border-top-left-radius: 3em;
-	/* border-bottom-left-radius: 3em; */
 }
 .metamark.liv_000023_0043{
-	border-right: 2px solid;
+	height: 500px;
 	padding: 0 1px;
 	margin: 0 3px;
-	height: 500px;
+	border-right: 2px solid;
 }
 .metamark.liv_000023_0090{
 	position: relative;
@@ -1037,16 +1035,16 @@ table .linenumber{
 	margin-left: 5.3em;
 }
 .metamark.liv_000023_0110{
+	padding-bottom: .4em;
 	border-bottom: 1px solid;
 	border-bottom-right-radius: 2em;
-	padding-bottom: .4em;
 }
 .metamark.liv_000023_0115{
 	font-size: 1.2em;
-	border: 1px solid;
-	border-radius: 2em 2em 2em 0;
 	padding: .1em .1em 0 .1em;
 	margin-left: -0.3em;
+	border: 1px solid;
+	border-radius: 2em 2em 2em 0;
 }
 @media only screen and (min-width: 768px){
 	.text1.liv_000023_0115{
@@ -1070,27 +1068,27 @@ table .linenumber{
 }
 .text.liv_003027_0001{
 	margin-bottom: .5em;
-	display: inline-block;
 	transform: rotate(330deg);
 	-ms-transform:rotate(330deg); /* IE 9 */
 	-moz-transform:rotate(330deg); /* Firefox */
 	-webkit-transform:rotate(330deg); /* Safari and Chrome */
 	-o-transform:rotate(330deg); /* Opera */
+	display: inline-block;
 }
 .note-1.liv_003027_0001{
 	padding-top: 1em;
 }
 @media only screen and (min-width: 768px){
 	.note-1.liv_003027_0001{
-		padding-top: 0;
 		float: left;
+		padding-top: 0;
+		margin: -20em 0em -25em -14em;
 		transform: rotate(270deg);
 		-ms-transform:rotate(270deg); /* IE 9 */
 		-moz-transform:rotate(270deg); /* Firefox */
 		-webkit-transform:rotate(270deg); /* Safari and Chrome */
 		-o-transform:rotate(270deg); /* Opera */
 		line-height: 1.2em;
-		margin: -20em 0em -25em -14em;
 	}
 	.note-2.liv_003027_0001{
 		float: right;
@@ -1108,21 +1106,21 @@ table .linenumber{
 }
 @media only screen and (min-width: 768px){
 	.metamark.second.liv_003027_0002{
-		border-top: 1px solid;
 		padding-top: .18em;
 		padding-left: .7em;
 		margin-left: -.75em;
+		border-top: 1px solid;
 	}
 }
 @media only screen and (min-width: 768px){
 	.text.liv_020011_0001{
 		color: #998a83;
 		line-height: 1em;
-		margin: 3em 0 -1em -1.5em;
+		float:left;
 		padding: .7em;
+		margin: 3em 0 -1em -1.5em;
 		border: 1px solid #998a83;
 		border-radius: 3em;
-		float:left;
 		transform: rotate(270deg);
 		-ms-transform:rotate(270deg); /* IE 9 */
 		-moz-transform:rotate(270deg); /* Firefox */
@@ -1133,9 +1131,9 @@ table .linenumber{
 		margin: 0em 0 -2em 0 !important;
 	}
 	.text.liv_020011_0004{
+		float: right;
 		padding: 0 10em 0 10em;
 		margin: -2em 1em -6em 0;
-		float: right;
 		transform: rotate(90deg);
 		-ms-transform:rotate(90deg); /* IE 9 */
 		-moz-transform:rotate(90deg); /* Firefox */
@@ -1150,15 +1148,15 @@ table .linenumber{
 	color: #998a83;
 }
 .line.liv_020011_0001{    
-	border-top: 1.5px solid #58484b;
-	margin: 0em 0 -1em 0;
 	width: 11em;
+	margin: 0em 0 -1em 0;
+	border-top: 1.5px solid #58484b;
 }
 .metamark.liv_020011_0003{
+    padding: 4px;
 	border: 1px solid;
 	border-top: none;
 	border-radius: 13px;
-    padding: 4px;
 	}
 .signed.liv_020011_0004{
 	padding: .3em .7em;
@@ -1215,7 +1213,7 @@ table .linenumber{
     left: 8.5em;
 }
 .deletion2.liv_020019_0003{
-    border-bottom: 1px solid #858585;
+	text-decoration: 1px line-through #858585;
 }
 @media only screen and (min-width: 768px){
     .marginalnote.liv_020019_0002{
@@ -1240,8 +1238,8 @@ table .linenumber{
 	font-size: 1.3em;
 }
 .signature2.liv_020021_00001{
-	margin-left: -1.5em;
 	padding-right: 2em;
+	margin-left: -1.5em;
 	white-space: nowrap;
 	transform: rotate(30deg);
 	-ms-transform:rotate(30deg); /* IE 9 */
@@ -1335,8 +1333,8 @@ table .linenumber{
 @media only screen and (min-width: 768px){
 	.article.liv_020021_00003{
 		width: 70%;
-		margin: 0 auto;
 		padding: 0 2em;
+		margin: 0 auto;
 	}
 }
 .archival.liv_020024_0001{
@@ -1351,12 +1349,12 @@ table .linenumber{
 .handwriting.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	float: right;
+	padding-top: 1em;
 	transform: rotate(160deg);
 	-ms-transform:rotate(160deg); /* IE 9 */
 	-moz-transform:rotate(160deg); /* Firefox */
 	-webkit-transform:rotate(160deg); /* Safari and Chrome */
 	-o-transform:rotate(160deg); /* Opera */
-	padding-top: 1em;
 }
 .number.liv_020024_0001{
 	float: right;
@@ -1378,9 +1376,9 @@ table .linenumber{
 }
 .decoration.liv_020024_0001 img{
 	width: 5em;
-	position: absolute;
     top: -7.5em;
 	left: 12em;
+	position: absolute;
 }
 @media only screen and (min-width: 520px){
 	.decoration.liv_020024_0001 img{

@@ -308,7 +308,7 @@ label.md_switch{
 .invert-color .journal .corr{
 	border-bottom: 2px dotted black;
 }
-.rotate .TEI *:not(.horizontalcircles1.liv_020021_0002,.horizontalcircles2.liv_020021_0002,.horizontalcircles3.liv_020021_0002,.horizontalcircles4.liv_020021_0002,.horizontalcircles5.liv_020021_0002){
+.rotate .TEI *{
 	transform: rotate(0deg) !important;
 	-ms-transform:rotate(0deg) !important; /* IE 9 */
 	-moz-transform:rotate(0deg) !important; /* Firefox */
@@ -329,6 +329,11 @@ label.md_switch{
 	.rotate .text.liv_020011_0004{
 		margin: 0
 	}
+    .rotate .marginalnote.liv_020019_0002{
+        top: unset;
+        left: unset;
+        position: unset;
+    }
 }
 .unjustify .journal .TEI{
 	text-align: left;
@@ -1210,7 +1215,7 @@ table .linenumber{
     left: 8.5em;
 }
 .deletion2.liv_020019_0003{
-
+    border-bottom: 1px solid #858585;
 }
 @media only screen and (min-width: 768px){
     .marginalnote.liv_020019_0002{

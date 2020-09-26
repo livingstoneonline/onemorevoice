@@ -1008,6 +1008,9 @@ hr{
 .center{
 	text-align: center;
 }
+.half{
+	width: 50%;
+}
 .highlight{
 	color: #cc4943;
 	font-style: italic;
@@ -1024,6 +1027,9 @@ hr{
 }
 .site-red{
 	color: #cc4943;
+}
+.small{
+	font-size: .9em;
 }
 .smallcaps{
 	font-variant: small-caps;
@@ -1124,4 +1130,14 @@ ul.concept-list li{
 ol.concept-list li:last-child,
 ul.concept-list li:last-child{
    margin-bottom: 0;
+}
+
+/* The following items are used on the bibliography.html page. */
+.primary-historical{
+	list-style: none;
+	padding: 0 0 1em 0;
+	margin: 0;	
+}
+ol.primary-historical li{
+	padding-bottom: .5em;
 }

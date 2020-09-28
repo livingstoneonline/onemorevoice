@@ -853,14 +853,6 @@
 			<xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="add[@place='marginleft']" priority="10">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}"> [<xsl:apply-templates/>] </span>
-	</xsl:template>
-
-	<xsl:template match="add[@place='marginright']" priority="10">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}"> <xsl:apply-templates/> </span>
-	</xsl:template>
-
 	<xsl:template match="add[@place='over-text']">
 		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></span>
 	</xsl:template>
@@ -1084,7 +1076,7 @@
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<xsl:choose>
 					<xsl:when test="contains(@rend,'double-line')">
-						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line', ' ', 'first-double')}"/><br/>
+						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line', ' ', 'first-double')}"/>
 					</xsl:when>
 					<xsl:when test="contains(@rend,'triple-line')">
 						<hr class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''), ' ', 'line')}"/>

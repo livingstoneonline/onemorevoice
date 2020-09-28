@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020041"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lists of Headmen in Manyema and Urundi (Excerpt from David Livingstone's Notebook, [March 1866-March 1870])</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Lists of Headmen in Manyema and Urundi (Excerpt from David Livingstone's Notebook, [March 1866-March 1870]), 4 July 1869, c.1869</title><!-- Title, date -->
+				<author>[Unnamed Arab and African Informants?]</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>[Said Bin Habib?]</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">[Unnamed Arab and African Informants?]</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">[Unnamed Arab and African Informants?]</author><!-- First author only: Forename Surname -->
+				<author role="normalized">[Said Bin Habib?]</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020041</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000023">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Blantyre</settlement><!-- Repository city -->
+                        <repository>David Livingstone Centre</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">807</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Lists of Headmen in Manyema and Urundi (Excerpt from David Livingstone's Notebook, [March 1866-March 1870])</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="UAAI">[Unnamed Arab and African Informants?]</author>
+					<author xml:id="SBH">[Said Bin Habib?]</author>
+					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1869-07-04">4 July 1869</date>
+                    <date type="composition" when="1869">[c.1869]</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">[Central Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-27" who="#AW">Final coding review</change>
+			<change when="2020-08-24" who="#HB">Proofing</change>
+			<change when="2020-07-01" who="#AM">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="bcbdb6"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div rend="brown"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+
+	<!-- I've left in the original LEAP ID and page numbers -->
+    <pb facs="liv_000023_0090" n="0090"/>
+	<div>
+<p rend="no-indent">Names of chiefs of <region>Manyema</region>
+<lb/><persName>Meketo</persName> 2 √ <space extent="1" unit="chars"/>Written <date when="1869-07-04">4<hi rend="sup underline">th</hi> July 1869</date>
+<lb/><persName>Mokeko</persName> 2 √
+<lb/><persName>Mokokwa</persName> √
+<lb/><persName>Kwaniwa</persName> √
+<lb/><persName>Kunde</persName> √
+<lb/>
+<lb/><persName>Karungamagao</persName> √
+<lb/><persName>Pyanamosinde</persName> √
+<lb/><space unit="chars" extent="2"/><persName>Kimanomokumbo</persName> <add place="marginright" rend="small">? not in</add>
+<lb/><space unit="chars" extent="1"/><persName>Kasari</persName> <add place="marginright" rend="small">our line</add>
+<lb/><space unit="chars" extent="1"/><persName>Mamba</persName> √ <add place="marginright" rend="small">? of march</add>
+<lb/><space unit="chars" extent="1"/><persName>Kasangangazi</persName> √
+<lb/><space unit="chars" extent="1"/><persName>Mohangenwa</persName><space extent="1" unit="chars"/>?
+<!-- Adrian, the four ?s are seemingly spaced to line up together, unlike the checks that just follow the above names...how to code for that? HB --><!-- I am going to fudge it. AW -->
+<lb/><space unit="chars" extent="1"/><persName>Monanga</persName> <space extent="1" unit="words"/>?
+<!-- the next 4 entries in the list are grouped together by a curly bracket in the left margin AM -->
+<lb/><space unit="chars" extent="1"/><persName>Munabambo</persName> <space extent="1" unit="chars"/>?
+<lb/><seg type="metamark" n="metamark liv_000023_0090"/><space unit="chars" extent="2"/><persName>Mohange</persName> <space extent="3" unit="chars"/>?
+<lb/><space unit="chars" extent="1"/><persName>Monandenda</persName> √
+<lb/><space unit="chars" extent="2"/><persName>Monakus</persName><space extent="3" unit="chars"/>√
+<lb/><space unit="chars" extent="3"/>Two or <del>three</del><add place="over-text">four</add> days in field</p> <!-- Words written over here - again, how to code? HB -->
+<lb/><space dim="vertical" unit="lines" extent="5"/> <!-- Not sure if this is how we are coding the empty lines below or by lbs? HB --><!-- This is correct but you need to add dim="vertical" AW -->
+	</div>
+
+    <pb facs="liv_000023_0092" n="0092"/>
+<!-- <lb/><p>If you are not bold enough to
+<lb/>run <space unit="chars" extent="2"/>the risk of losing you can
+<lb/>never hope to gain</p> --> <!-- Wow, wise words indeed! HB :) -->
+<!-- <lb/><milestone unit="section" rend="line"/> -->
+	<div rend="center">
+<gap extent="4" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+<lb/><milestone unit="section" rend="line"/>
+	</div>
+	<div>
+<head><region>Urundi</region> begins at <settlement>Ujiji</settlement></head>
+	<div n="columnLeft liv_000023_0092">
+<list>
+<lb/><item>First chief</item>
+<lb/><item>2</item>
+<lb/><item>3</item>
+<lb/><item>4</item>
+<lb/><item>5</item>
+<lb/><item>6</item>
+<lb/><item>7</item>
+<lb/><item>8</item>
+<lb/><item>9</item>
+<lb/><item>10</item>
+<lb/><item>11</item>
+<lb/><item>12</item>
+<lb/>
+</list>
+<ab rend="no-indent" n="ab liv_000023_0092">chief of 
+<lb/><term type="collective">Nzige</term> on 
+<lb/>both sides</ab>
+<lb/><space extent="1" unit="words"/>
+	</div>
+	<div n="columnRight liv_000023_0092">
+<lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/>
+<lb/><ab rend="no-indent"><persName>Mzige</persName>
+<lb/>very great
+<lb/>chief
+<lb/>
+<lb/>in river
+<lb/>Too</ab>
+	</div>
+	<div n="columnCenter liv_000023_0092">
+<list>
+<item><persName>Tamana</persName></item>
+<lb/><item><persName>Masonga</persName></item>
+<lb/><item><persName>Samize</persName></item>
+<lb/><item><persName>Kinoza</persName></item>
+<lb/><item><persName>Lowegoe</persName></item>
+<lb/><item><persName>Vikare</persName></item>
+<lb/><item><persName>Moasabikebwa</persName></item>
+<lb/><item><persName>Moyeio</persName></item>
+<lb/><item><persName>Magara</persName></item>
+<lb/><item><persName>Mokarianye</persName></item>
+<lb/><item><persName>Moguha</persName></item>
+<lb/><item><persName>Mokamba</persName></item>
+<lb/><item><persName>Tande</persName> underchief</item>
+<lb/><item><persName>Semovyei</persName></item>
+<lb/><item><persName>Rumashano</persName></item>
+<lb/><item><persName>Loshimba</persName></item>
+	</list>
+	</div>
+	<div>
+<milestone unit="section" rend="center quarter-line" n="line liv_000023_0092"/>
+<p rend="no-indent"><space extent="1" unit="chars"/><seg rend="gray">The</seg> <region><term type="collective">Batusi</term> country</region> is North of <region>that
+<lb/>of <persName>Mõkamba</persName></region> - The people are tall &amp;
+<lb/>light coloured - They beat back the
+<lb/><term type="collective">Ujijian</term> force &amp; killed twenty four of
+<lb/>them - <space extent="1" unit="chars"/>They <choice><sic>dont</sic><corr>don't</corr></choice> wish a path made
+<lb/>through their country for ivory and
+<lb/>are hence called bad at <settlement>Ujiji</settlement> - <persName>Syde
+<lb/>bin Habib</persName> preferred to let them alone
+<lb/>lately but traded with <persName>Mõkamba</persName></p>
+	</div>
+	</div>
+            </div>
+        </body>   
+    </text>
+</TEI>

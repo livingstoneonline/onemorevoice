@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020040"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>History of Warori or Basango (Excerpt from David Livingstone's Notebook, [March 1866-March 1870])</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">History of Warori or Basango (Excerpt from David Livingstone's Notebook, [March 1866-March 1870]), 19 July 1869</title><!-- Title, date -->
+                <author>Bogharib, Mohammed</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Bogharib, Mohammed</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Mohammed Bogharib</author><!-- First author only: Forename Surname -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020040</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000023">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Blantyre</settlement><!-- Repository city -->
+                        <repository>David Livingstone Centre</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">807</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>History of Warori or Basango (Excerpt from David Livingstone's Notebook, [March 1866-March 1870])</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="MB">Bogharib, Mohammed</author>
+					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1869-07-19">19 July 1869</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">Kasanga</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-27" who="#AW">Final coding review</change>
+			<change when="2020-08-24" who="#HB">Proofing</change>
+			<change when="2020-07-01" who="#AM">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="bcbdb6"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div rend="brown"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+
+    <pb facs="liv_000023_0088" n="0088"/><!-- I've left in the original LEAP ID and page numbers -->
+<head><term type="collective">Warori</term> or <term type="collective">Basango</term> = History of</head>
+<lb/><p>A foreigner arrived in <region>Urori</region>
+<lb/>from the <region>South West coast</region> having
+<lb/>six attendants and a quantity of red
+<lb/>coral beads - He was light coloured
+<lb/>had a prominent <add place="below" rend="red"><seg type="metamark">^</seg></add><add place="above" rend="red">large</add> nose and a
+<lb/>profusion of long hair – During
+<lb/>his stay the <term type="collective">Warori</term> went three
+<lb/>times to fight with another tribe
+<lb/>and each time <del>was</del><add place="over-text">were</add> beaten off - <!--Adrian, not sure how to code this was written over the first word if not using type with del and add? HB --><!-- We can break the rule :>  place="over-text" AW -->
+<lb/>The stranger whose name was
+<lb/><persName>Charura</persName> asked about this fighting
+<lb/>and <choice><sic>percieved</sic><corr>perceived</corr></choice> that they needed a
+<lb/>war charm - for which he desired
+<lb/>the chief to give an <term type="animal">ox</term> &amp; a <term type="animal">goat</term> &#8211;
+<lb/>divide the <choice><sic>carcases</sic><corr>carcasses</corr></choice> <space extent="1" unit="chars"/>equally <w>betwe<gap extent="2" unit="chars" agent="illegible"/><supplied cert="high">en</supplied></w>
+<lb/>himself and the stranger - <space unit="chars" extent="3"/>This
+<lb/>being <space unit="chars" extent="2"/>done <persName>Charura</persName> invited all
+<lb/>the people who chose to come &amp;
+<lb/>eat his share – <space unit="chars" extent="2"/>The charm given
+<lb/>proved successful and the
+<lb/><term type="collective">Warori</term> returned laden with
+<lb/>captives and spoil - Every time
+<lb/>they went to plunder the same
+<lb/>process was repeated and all
+<lb/><add place="below"><seg type="metamark">^</seg></add><add place="inspace" rend="small">the spoil was divided</add> 
+<lb/>The people eat the sacrifices - <unclear>&amp;</unclear>
+<lb/><space extent="1" unit="words"/><add place="inspace" rend="small">all his half spoil too</add>
+<lb/><choice><sic><persName>Charura</persName>s</sic><corr><persName>Charura</persName>'s</corr></choice> six men died and
+<lb/>so did the <term type="collective">Warori</term> chief - <space unit="chars" extent="2"/>The
+<lb/>people then said Why should we
+<lb/>make <unclear><persName><choice><sic>chiebren</sic><corr>Chiebren</corr></choice></persName></unclear> our chief - Let us
+<lb/>have <persName>Charura</persName> who is a wise
+<lb/>and generous man as our
+
+    <pb facs="liv_000023_0089" n="0089"/>
+<lb/><persName>Monyegumbe</persName> died about 10 years
+<lb/>ago was then younger looking
+<lb/>than his sons -
+<lb/>head &amp; ruler - A son <persName>M<add place="over-text" rend="red">a</add>akas<add place="over-text" rend="red">i</add>i</persName> was
+<lb/>born to <persName>Charura</persName> and turned out
+<lb/>to be a fool who preferred cooking
+<lb/>and domestic life to everything else
+<lb/>In process of time this foolish
+<lb/>son got a son himself who was
+<lb/>called <persName>Monyegumbe</persName> and a wise
+<lb/>man The grandfather sent him
+<lb/>on his forays which were always
+<lb/>successful, and always were
+<lb/>accompanied with great
+<lb/>feasting for all as was <persName>Charura</persName>'s
+<lb/>custom and is still in vogue
+<lb/><space extent="1" unit="words"/><add place="inspace" rend="small">lived upwards of 100 years &amp;</add>
+<lb/><persName>Monyegumbe</persName> is the father of
+<lb/><persName>Merere</persName> and only the royal
+<lb/>family dare wear the coral
+<lb/>beads brought first by <persName>Charura</persName>
+<lb/>into the country - the <term type="collective">Basango</term> are
+<lb/>very white but <persName>Merere</persName> is yellow
+<lb/><persName>Charura</persName> is said to have had a
+<lb/><foreign xml:lang="und">Kitabu</foreign> or book which was
+<lb/>kept with great care till an
+<lb/><unclear>inroad</unclear> of <term type="collective">Watuta</term> caused a
+<lb/>flight &amp; the book was lost - He
+<lb/>is said to have been very tall &amp;
+<lb/>immensely strong - could catch
+<lb/>a man by the ankle and throw
+<lb/>him up on to the top of a
+<lb/>house or <foreign xml:lang="und">tembe</foreign> - &amp; when young
+<lb/>killed <term type="animal">elephants</term> with his iron	
+<lb/>club -- From <persName>M. Bogharib</persName>
+<lb/><placeName>Kasanga</placeName><space extent="3" unit="chars"/><date when="1869-07-19">19<hi rend="sup">th</hi> July<space extent="3" unit="chars"/>1869</date></p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

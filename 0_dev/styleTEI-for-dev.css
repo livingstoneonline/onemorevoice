@@ -315,15 +315,16 @@ label.md_switch{
 	-o-transform:rotate(0deg) !important; /* Opera */
 }
 @media only screen and (min-width: 768px){
-	.rotate .note-1.liv_003027_0001{
-		float: none;
-		margin: 0;
-	}
-	.rotate .text.liv_020011_0004{
-		margin: 0
-	}
+    .rotate .marginaltext.liv_000023_0037,
+    .rotate .note-1.liv_003027_0001,
+    .rotate .text.liv_020011_0004,
     .rotate .marginalnote.liv_020019_0002{
+        line-height: unset;
+        float: none;
+		margin: 0;
         top: unset;
+        right: unset;
+        bottom: unset;
         left: unset;
         position: unset;
     }
@@ -1380,6 +1381,22 @@ table .linenumber{
 }
 .font.liv_020027_0001{
 	font-family: 'unifrakturmaguntiabook';
+}
+.container.liv_000023_0037{
+    position: relative;
+}
+@media only screen and (min-width: 768px){
+    .marginaltext.liv_000023_0037{
+        line-height: 1.4em;
+        transform: rotate(270deg);
+        -ms-transform:rotate(270deg); /* IE 9 */
+        -moz-transform:rotate(270deg); /* Firefox */
+        -webkit-transform:rotate(270deg); /* Safari and Chrome */
+        -o-transform:rotate(270deg); /* Opera */
+        bottom: 14.5em;
+        left: -19em;
+        position: absolute;
+    }
 }
 .artifact.liv_021003_0001{
 	max-width: 319px;

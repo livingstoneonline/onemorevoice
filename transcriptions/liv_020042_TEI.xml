@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020042"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Central African Fables (Excerpt from David Livingstone's Notebook, [March 1866-March 1870])</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Central African Fables (Excerpt from David Livingstone's Notebook, [March 1866-March 1870]), c.1868-70</title><!-- Title, date -->
+				<author>[Unnamed African Informants]</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">[Unnamed African Informants]</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">[Unnamed African Informants]</author><!-- First author only: Forename Surname -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020042</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000023">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Blantyre</settlement><!-- Repository city -->
+                        <repository>David Livingstone Centre</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">807</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Central African Fables (Excerpt from David Livingstone's Notebook, [March 1866-March 1870])</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="UAAI">[Unnamed African Informants]</author>
+					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" from="1868" to="1870">[c.1868-70]</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">[Central Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-27" who="#AW">Final coding review</change>
+			<change when="2020-08-24" who="#HB">Proofing</change>
+			<change when="2020-07-01" who="#AM">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="bcbdb6"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div rend="brown"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+
+	<!-- I've left in the original LEAP ID and page numbers -->
+	<pb facs="liv_000023_0034" n="0034"/>
+<!-- Adrian, this page has two shades of brown for the text - how coding with OMV guidelines? HB -->
+<!-- Luckily, we're not using the first part, so doesn't matter. AW -->
+<!-- <lb/><p rend="no-indent">in letters to the Newspapers against
+<lb/>the laziness of negroes on <unclear>their</unclear>
+<lb/><term type="plant_foodstuff">cassava</term> patches - What is needed
+<lb/>is fair wages to enable workmen to
+<lb/>enjoy little luxuries not to be
+<lb/>found in the <term type="plant_foodstuff">cassava</term> &amp; <term type="plant_foodstuff">Pepper</term>
+<lb/>patch - Where that cannot be 
+<lb/><space unit="chars" extent="2"/>had <orgName>Trades Unions</orgName> resort to
+<lb/>fiercer modes of gaining their
+<lb/>ends.<space extent="12" unit="chars"/><settlement>Ujiji</settlement> <date when="1869-06-07">7<hi rend="sup underline">th</hi> June
+<lb/><space extent="5" unit="words"/>1869</date></p>
+<lb/><milestone unit="section" rend="line"/> -->
+	<div rend="center">
+<gap extent="12" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<milestone unit="section" rend="line"/>
+	</div>
+	<div>
+<head rend="center underline no-indent small"><term type="animal">Hare</term> &amp; chief.</head>
+<p rend="no-indent"><hi rend="double-underline">Fable <term type="collective">African</term></hi> - A chief offered ten <term type="animal">goats</term> to
+<lb/>anyone who could sleep in a Lake - <term type="animal">Hare</term> did
+<lb/>lie in water all night &amp; his mother made a
+<lb/>fire beside Lake to warm him on coming out
+<lb/>Chief refused <term type="animal">goats</term> because of this - <term type="animal">Hare</term>
+<lb/>made a feast putting <term type="foodstuff">meat</term> in one pot -
+<lb/><term type="foodstuff">Pombe</term> in another &amp; <term type="plant_foodstuff">flour</term> mixed with
+<lb/><term type="foodstuff">Pombe</term> in a third - made a fire in the midst
+<lb/>&amp; invited all the chief men to feast - chief
+<lb/>heard of strange feast uncooked &amp; came to
+<lb/>ask the meaning - <term type="animal">Hare</term> told him that the
+<lb/>feast was being cooked in the same fashion
+<lb/>as he was warmed by his <choice><sic>mothers</sic><corr>mother's</corr></choice> fire
+<lb/>chief acknowledged Justice of simile &amp;
+<lb/>gave him his <term type="animal">goats</term> -</p>
+<lb/><p><term type="animal">Hare</term> is supposed to have been a man
+<lb/>and for some crime was transformed
+<lb/>into a <term type="animal">hare</term> - Retains some of his
+<lb/>human wisdom - <space extent="1" unit="chars"/>great cunning
+<lb/>is ascribed to him &amp; <space extent="2" unit="chars"/><term type="animal"><choice><sic>Jackall</sic><corr>Jackal</corr></choice></term></p>
+	</div>
+
+    <pb facs="liv_000023_0036" n="0036"/>
+	<div rend="center">
+<gap extent="10" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/><milestone unit="section" rend="double-line"/>
+	</div>
+<!-- <lb/><p rend="no-indent">Free &amp; slave labour compared
+<lb/>see End of alphabet in this book</p>
+<lb/><milestone unit="section" rend="double-line"/> -->
+<!-- the next paragraph is highlighted by a double vertical line in the left margin AM -->
+<!-- <lb/><p rend="no-indent">The <geogName>Nile</geogName> in Latitude alone is
+<lb/>(2600) Two thousand six
+<lb/>hundred miles in length
+<lb/>If measured with its windings
+<lb/>in Longitude it is 3000 miles
+<lb/>long. or rather 3200</p>
+<lb/><milestone unit="section" rend="double-line"/> -->
+	<div>
+<p rend="no-indent"><hi rend="double-underline">Fable <term type="collective">African</term></hi>. <space extent="1" unit="chars"/><term type="animal">Hare</term> &amp; <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> made <!-- Not sure if this spelling of Hyaena is to be ignored or corrected/regularized? HB --><!-- I went with reg. AW -->
+<lb/>friendship - lived on opposite sides of
+<lb/>a stream - <term type="animal">Hare</term> in time of great hunger
+<lb/>proposed to eat their mothers &amp; wash off
+<lb/>the blood in river - <term type="animal"><choice><sic>Hyaenas</sic><corr>Hyaena's</corr></choice></term> mother was
+<lb/>first devoured Then <term type="animal">Hare</term> stole a <term type="animal">goat</term> &amp;
+<lb/>passed <term type="foodstuff">meat</term> off for his mother - Famine
+<lb/>continued - <term type="animal">Hare</term> went to foot of large tree
+<lb/>with a dwelling on it called &amp; his mother gave
+<lb/>him food - <space extent="1" unit="chars"/><term type="animal"><foreign>Nyane</foreign></term> told <term type="animal">Hyaena</term> <term type="animal">Hare</term> had
+<lb/>his mother there - tried to call her, but his
+<lb/>voice was harsh - charm was to let the
+<lb/><term type="insect">biting driver ants</term> <add place="below"><seg type="metamark">^</seg></add> bite <add place="above"><gap extent="2" unit="words" agent="illegible"/></add> his tongue till his
+<lb/>voice became like <term type="animal">Hare</term>'s were captured
+<lb/>took <term type="animal">Hyaena</term> to Beehive - <term type="animal"><foreign>Matupa</foreign></term><!-- person? not sure AM--><!-- Animal, I believe. AW --> 
+<lb/>or <term type="animal"><foreign>nyuki</foreign></term><!-- person? --><!-- Animal, I believe. AW --> - stung him all over -
+<lb/>bound <term type="animal">Hare</term> with <term type="animal"><foreign>Muale</foreign></term> &amp;
+<lb/><term type="animal"><foreign>Fisi</foreign></term><!-- person? --><!-- Fish! AW --> with thongs of <del><term type="animal"><choice><sic>pigs</sic><corr>pig's</corr></choice></term></del> <add place="above"><term type="animal">ox</term></add><add place="below"><seg type="metamark">^</seg></add> skin
+<lb/>Sung - easily cut the <unclear>wi<gap extent="2" unit="chars" agent="illegible"/>d</unclear> date
+<lb/>bands Melala -<add place="below"><seg type="metamark">^</seg></add><seg type="metamark" n="metamark liv_000023_0036"><!-- line appears to indicate the word "date" is to be inserted here from line above, but does not make sense AM --> stole a <term type="animal">goat</term> -</seg>
+<lb/>* hid ma &amp; brothers</p>
+	</div>
+
+
+
+    <pb facs="liv_000023_0037" n="0037"/>
+	<div rend="center">
+<gap extent="13" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<milestone unit="section" rend="line"/>
+	</div>
+	<div n="container liv_000023_0037">
+<p rend="no-indent"><persName>Mokolea</persName> bag unloosed &amp; <unclear>run</unclear>
+<lb/><term type="insect">bees</term> &amp; <term type="animal">serpent</term> &amp; <term type="animal">Leopard</term> enter it
+<lb/><unclear>went</unclear> to <unclear>buy</unclear> &amp; <term type="insect">bee</term> sting him
+<lb/>no <term type="insect">mosquito</term> that - <space extent="1" unit="chars"/>You said
+<lb/>there were people <unclear>in</unclear> bag
+<lb/>(<unclear><foreign><term type="animal">pige</term></foreign></unclear> = <term type="animal">scorpion</term> -) <foreign><term type="animal">Fisi</term></foreign> told on
+<lb/>him - He is a story teller bind
+<lb/>him fast - <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> said catch
+<lb/>him but <foreign><term type="animal">Sungura</term></foreign> fled - <term type="animal">Hare</term>
+<lb/>loosed him but he caught the 
+<lb/>tail &amp; it broke - <space extent="1" unit="chars"/>put bones
+<lb/>down to <foreign><term type="animal">Fisi</term></foreign> &amp; slept = <choice><orig>shewed</orig><reg>showed</reg></choice>
+<lb/>his theft to owner of <term type="animal">goat</term> &#8211; &amp;
+<lb/>he was killed = has no power
+<lb/>to kill but eats meat killed</p>
+
+<lb/><ab rend="vertical no-indent small" n="marginaltext liv_000023_0037"><add place="marginleft"><unclear><term type="animal">Hare</term></unclear> <unclear>cheated</unclear> <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> by taking out his <w>m<gap extent="5" unit="chars"/></w> <unclear>&amp;</unclear> <gap extent="2" unit="words"/> <unclear>&amp;</unclear> <gap extent="1" unit="words"/>
+<lb/><term type="insect">bees</term> &amp; <term type="animal">scorpion</term> - which <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> went to sell those in the bag <unclear>out</unclear> came the
+<lb/><term type="insect">bees</term> &amp; stung men &#8211; then followed the apparent <unclear>theft</unclear></add></ab>
+	</div>
+            </div>
+        </body>   
+    </text>
+</TEI>

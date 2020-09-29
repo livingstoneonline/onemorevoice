@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_003181"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Central African Geographical Data (Excerpt from David Livingstone's Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile [1863])</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Central African Geographical Data (Excerpt from David Livingstone's Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile [1863]), [c.1869]</title><!-- Title, date -->
+                <author>Said Bin Habib</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Said Bin Habib</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Said Bin Habib</author><!-- First author only: Forename Surname -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_003181</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Edinburgh</settlement><!-- Repository city -->
+                        <repository>National Library of Scotland</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">MS. 10740</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Central African Geographical Data (Excerpt from David Livingstone's Annotations on Map from John H. Speke, Journal of the Discovery of the Source of the Nile [1863])</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="SBH">Said Bin Habib</author>
+                    <author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1869">[c.1869]. 4 July 1869; [c.1869]</date>
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">[Central Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-29" who="#AW">Transcription and Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="e4d4ab"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div rend="brown"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_003181_0002" n="0002"/>
+<head>Note <persName>Bin Habib</persName></head>
+<list>
+<lb/><item>20 days from <settlement>Ja</settlement> to
+<lb/><space extent="1" unit="chars"/><geogName>Kiñkonza</geogName> = 200</item>
+<lb/><item><geogName>Nyama kundu</geogName> bad</item><!-- I think these are mountains. AW -->
+<lb/><item><geogName><choice><orig>Kinkonza</orig><reg>Kiñkonza</reg></choice></geogName> <choice><abbr>S</abbr><expan>South</expan></choice> of <settlement>Ujiji</settlement> &#8211;</item>
+<lb/><item><space extent="1" unit="chars"/><choice><abbr>SW</abbr><expan>South West</expan></choice> by <choice><abbr>W</abbr><expan>West</expan></choice> to fountains &#8211;</item>
+<lb/><item><geogName>Lobish</geogName> comes from
+<lb/><choice><abbr>SW</abbr><expan>South West</expan></choice> to <choice><abbr>NE</abbr><expan>North East</expan></choice> 1 day to <choice><abbr>N</abbr><expan>North</expan></choice>
+<lb/>from <settlement><persName>Mpweto</persName>'s</settlement></item>
+<lb/><item><choice><abbr>W</abbr><expan>West</expan></choice> &amp; by <choice><abbr>N</abbr><expan>North</expan></choice> to stone houses 3 days</item>
+<lb/><item><choice><abbr>W</abbr><expan>West</expan></choice> to <geogName>Lufira</geogName> 1 day <space extent="1" unit="words"/><geogName>Lufira</geogName></item>
+</list>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

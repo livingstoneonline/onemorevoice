@@ -314,26 +314,29 @@ label.md_switch{
 	-webkit-transform:rotate(0deg) !important; /* Safari and Chrome */
 	-o-transform:rotate(0deg) !important; /* Opera */
 }
+.rotate .signature2.liv_020021_0001,
+.rotate .statement1.liv_020021_0002{
+	margin: unset;
+	padding: unset;
+	display: unset;
+}
 @media only screen and (min-width: 768px){
     .rotate .marginaltext.liv_000023_0037,
+    .rotate .text1.liv_000023_0115,
+    .rotate .text2.liv_000023_0115,
     .rotate .note-1.liv_003027_0001,
     .rotate .text.liv_020011_0004,
     .rotate .marginalnote.liv_020019_0002{
         line-height: unset;
         float: none;
-		margin: 0;
+        padding: unset;
+        margin: unset;
         top: unset;
         right: unset;
         bottom: unset;
         left: unset;
         position: unset;
     }
-}
-.rotate .signature2.liv_020021_00001,
-.rotate .statement1.liv_020021_0002{
-	margin: unset;
-	padding: unset;
-	display: unset;
 }
 .unjustify .journal .TEI{
 	text-align: left;
@@ -962,11 +965,28 @@ table .linenumber{
 
 
 /* 2.13. Specific item rendering */
+/* See liv_020040, liv_020041, liv_020042 for liv_000023 coding */
 .metamark.liv_000023_0036{
 	padding: .19em .7em;
 	margin-left: -.4em; 
 	border-top: 1.5px solid;
 	border-top-left-radius: 3em;
+}
+.container.liv_000023_0037{
+    position: relative;
+}
+@media only screen and (min-width: 768px){
+    .marginaltext.liv_000023_0037{
+        line-height: 1.4em;
+        transform: rotate(270deg);
+        -ms-transform:rotate(270deg); /* IE 9 */
+        -moz-transform:rotate(270deg); /* Firefox */
+        -webkit-transform:rotate(270deg); /* Safari and Chrome */
+        -o-transform:rotate(270deg); /* Opera */
+        bottom: 14.5em;
+        left: -19em;
+        position: absolute;
+    }
 }
 .metamark.liv_000023_0043{
 	height: 500px;
@@ -1006,6 +1026,9 @@ table .linenumber{
 	border-bottom: 1px solid;
 	border-bottom-right-radius: 2em;
 }
+.container.liv_000023_0115{
+    position: relative;
+}
 .metamark.liv_000023_0115{
 	font-size: 1.2em;
 	padding: .1em .1em 0 .1em;
@@ -1017,7 +1040,7 @@ table .linenumber{
 	.text1.liv_000023_0115{
 		line-height: 1.3em;
 		padding: 0;
-		margin: 5em 0 0 0;
+		margin: -1em -2.5em 0 -2em;
 		transform: rotate(270deg);
 		-ms-transform:rotate(270deg); /* IE 9 */
 		-moz-transform:rotate(270deg); /* Firefox */
@@ -1025,12 +1048,14 @@ table .linenumber{
 		-o-transform:rotate(270deg); /* Opera */
 	}
 	.text2.liv_000023_0115{
-		float: right;
 		transform: rotate(180deg);
 		-ms-transform:rotate(180deg); /* IE 9 */
 		-moz-transform:rotate(180deg); /* Firefox */
 		-webkit-transform:rotate(180deg); /* Safari and Chrome */
-		-o-transform:rotate(180deg); /* Opera */
+        -o-transform:rotate(180deg); /* Opera */
+        right: -2em;
+        bottom: .6em;
+        position: absolute;
 	}
 }
 .text.liv_003027_0001{
@@ -1217,12 +1242,12 @@ table .linenumber{
         margin-left: -1.5em;
     }
 }
-.signature1.liv_020021_00001,
-.signature2.liv_020021_00001{
+.signature1.liv_020021_0001,
+.signature2.liv_020021_0001{
 	font-family: 'cedarville_cursiveregular';
 	font-size: 1.3em;
 }
-.signature2.liv_020021_00001{
+.signature2.liv_020021_0001{
 	padding-right: 2em;
 	margin-left: -1.5em;
 	white-space: nowrap;
@@ -1308,7 +1333,7 @@ table .linenumber{
 	left: 2em;
 	position: absolute;
 }
-.article.liv_020021_00003{
+.article.liv_020021_0003{
 	color: black;
 	display: block;
 	text-align: justify;
@@ -1316,12 +1341,12 @@ table .linenumber{
     margin: 0 auto;
 }
 @media only screen and (min-width: 480px){
-	.article.liv_020021_00003{
+	.article.liv_020021_0003{
 		padding: 0em .7em;
 	}
 }
 @media only screen and (min-width: 768px){
-	.article.liv_020021_00003{
+	.article.liv_020021_0003{
 		width: 70%;
 		padding: 0 2em;
 		margin: 0 auto;
@@ -1381,22 +1406,6 @@ table .linenumber{
 }
 .font.liv_020027_0001{
 	font-family: 'unifrakturmaguntiabook';
-}
-.container.liv_000023_0037{
-    position: relative;
-}
-@media only screen and (min-width: 768px){
-    .marginaltext.liv_000023_0037{
-        line-height: 1.4em;
-        transform: rotate(270deg);
-        -ms-transform:rotate(270deg); /* IE 9 */
-        -moz-transform:rotate(270deg); /* Firefox */
-        -webkit-transform:rotate(270deg); /* Safari and Chrome */
-        -o-transform:rotate(270deg); /* Opera */
-        bottom: 14.5em;
-        left: -19em;
-        position: absolute;
-    }
 }
 .artifact.liv_021003_0001{
 	max-width: 319px;

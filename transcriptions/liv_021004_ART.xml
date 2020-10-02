@@ -92,7 +92,7 @@
 	<!-- figure @facs provides the hyperlink for the artifact image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
-	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_021004_0001_deriv-1126px.jpg">
+	<figure n="artifact liv_021004_0001" facs="../artifact-images/liv_021004_0001_deriv-1126px.jpg">
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
 		<graphic url="../artifact-images/liv_021004_0001_deriv-813px.jpg" facs="../artifact-images/liv_021004_0001_deriv-813px.jpg 813w, ../artifact-images/liv_021004_0001_deriv-626px.jpg 626w, ../artifact-images/liv_021004_0001_deriv-438px.jpg 438w, ../artifact-images/liv_021004_0001_deriv-250px.jpg 250w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>
 		<!-- for vertical images use: (min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px) -->

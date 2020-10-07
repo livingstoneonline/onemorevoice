@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020043"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
@@ -53,7 +53,7 @@
 			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
             <sourceDesc>
 				<biblStruct type="journal">
-					<monogr><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+					<monogr n="narrow"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
 						<title>Missionary Record of the United Presbyterian Church</title><!-- Publication title: journal or book -->
 						<!-- Author here used only for books -->
 						<!-- Forename Surname-->
@@ -117,119 +117,125 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_020043_0002" n="0002"/>
-<lb/><p>
-MAR, 2, 1874.] UNITED PRESBYTERIAN MISSIONARY RECORD.
-p53
-Nosutu's Letter.
-Dictated by herself, and written in Caffre
+<lb/>
+<fw rend="small"><seg rend="small"><seg rend="left"><seg rend="smallcaps">Mar</seg>. 2, 1874.]</seg> <seg rend="caps center">United Presbyterian Missionary Record.</seg> <seg rend="right">53</seg></seg></fw>
+<milestone unit="section" rend="line"/>
+	<div rend="center">
+<gap extent="9" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+	</div>
+	<div>
+<lb/><p rend="center no-indent italic">Nosutu's Letter.</p>
+<p>Dictated by herself, and written in Caffre
 by Tause, the next in the family after Mr.
-Soga.
-EMGWALI, October 1873
-MY KIND FRIENDS,—For a long time I
+Soga.</p>
+<p rend="right"><seg rend="smallcaps">Emgwali</seg>, <hi rend="italic">October</hi> 1873<space extent="2" unit="chars"/></p>
+<p><seg rend="smallcaps">My Kind Friends</seg>,&#8212;For a long time I
 have wished to thank you for what you have
-done for me. Beloved friends, to-day I thank
+done for me.<space extent="1" unit="chars"/> Beloved friends, to-day I thank
 you for what you have done for my son and
-for myself. I thank you for what he was
+for myself.<space extent="1" unit="chars"/> I thank you for what he was
 taught, and for what he was prepared for, by
-your means. From the beginning you acted
+your means.<space extent="1" unit="chars"/> From the beginning you acted
 with great wisdom towards him, and thereby
 conferred privileges and marvellous blessings
-upon us all. You opened up every path for
+upon us all.<space extent="1" unit="chars"/> You opened up every path for
 him by which he was directed in the way of
 salvation, and which you also showed unto
 his people as well as to himself and to his
-family.
-Beloved, your work to my son I represent
+family.</p>
+<p>Beloved, your work to my son I represent
 with the words which were said respecting
-man : The Creator first prepared a place for
-man before He created him. When He had
+man :<space extent="1" unit="chars"/>  The Creator first prepared a place for
+man before He created him.<space extent="1" unit="chars"/> When He had
 finished all that was right for man, He created
 him, and placed him in the midst of every
-advantage. His commandment instructed
-him, like him who has departed. Thus it
-was so.
-What can I speak to you ? Dearly beloved,
-that which you began did you not finish ?
-You gave the blood of your blood* to my son.
-I have seen it with my own eyes. That event
+advantage.<space extent="1" unit="chars"/> His commandment instructed
+him, like him who has departed.<space extent="1" unit="chars"/> Thus it
+was so.</p>
+<p>What can I speak to you ?<space extent="1" unit="chars"/> Dearly beloved,
+that which you began did you not finish ?<space extent="1" unit="chars"/> 
+You gave the blood of your blood<ref target="#note_01">*</ref> to my son.
+I have seen it with my own eyes.<space extent="1" unit="chars"/> That event
 taught us to know your habits, your disposition,
-and your speech. That great event
-united us very closely together. In effect it
-seemed to say to my son : 'Tiyo Soga, go,
+and your speech.<space extent="1" unit="chars"/> That great event
+united us very closely together.<space extent="1" unit="chars"/> In effect it
+seemed to say to my son :<space extent="1" unit="chars"/>  'Tiyo Soga, go,
 take this great enlightener amongst your
-countrymen.' My friends, what can I say to
-you ? He is gone to the place prepared for
-him : look there for him ! Pardon me in
-referring to this matter. Beloved, what gift
-can be more highly esteemed than this ?
-Rejoice, beloved ! we also rejoice with the
-churches in Scotland. Rejoice ye ! Canzibe,
+countrymen.'<space extent="1" unit="chars"/> My friends, what can I say to
+you ?<space extent="1" unit="chars"/> He is gone to the place prepared for
+him :<space extent="1" unit="chars"/>  look there for him !<space extent="1" unit="chars"/> Pardon me in
+referring to this matter.<space extent="1" unit="chars"/> Beloved, what gift
+can be more highly esteemed than this ?<space extent="1" unit="chars"/> 
+Rejoice, beloved !<space extent="1" unit="chars"/> we also rejoice with the
+churches in Scotland.<space extent="1" unit="chars"/> Rejoice ye !<space extent="1" unit="chars"/> Canzibe,
 the bright, the morning star of spring, has
-already risen upon Africa. The first teacher
+already risen upon Africa.<space extent="1" unit="chars"/> The first teacher
 belonging to our countrymen was sent forth
-by you. Be glad, ye people of Caffraria !
+by you.<space extent="1" unit="chars"/> Be glad, ye people of Caffraria !<space extent="1" unit="chars"/> 
 Amaxosa, the first home of my son, now lying
 desolate and forlorn, speaks of your laborious
-toil. Rejoice ye ! These five gum trees still
+toil.<space extent="1" unit="chars"/> Rejoice ye !<space extent="1" unit="chars"/> These five gum trees still
 standing remind me that, while the desolate
-* Referring to his marriage.
-
+<!-- First note originall here.<space extent="1" unit="chars"/> AW -->
+<cb/>
 and deserted homes of our countrymen are
 covered with the couch grass, it is not so with
 respect to that in which my son abides this
-day. His home is now far distant from these
-gum trees. Vain, then, is it for you to care
+day.<space extent="1" unit="chars"/> His home is now far distant from these
+gum trees.<space extent="1" unit="chars"/> Vain, then, is it for you to care
 so much, and to be so anxious for the things
-of this world.
-But now there is a thing present to-day by
-which I see him,* and yet do not see him. By
+of this world.</p>
+<p>But now there is a thing present to-day by
+which I see him,<ref target="#note_02">*</ref> and yet do not see him.<space extent="1" unit="chars"/> By
 the kindness of one whom I do not know,
 there is the stone that preserves the name of
 my son, in order that the generation present,
 and generations yet to come, may be told of
-him whom we so greatly loved. That stone
+him whom we so greatly loved.<space extent="1" unit="chars"/> That stone
 is the first, so far as I know, that has been
 erected by you (the churches in Scotland),
 and on that account my heart is exceeding
-glad.
-My friends, I thank that kind friend for the
-words which he wrote for that stone. I continue
-still to hear them. It is written that a
+glad.</p>
+<p>My friends, I thank that kind friend for the
+words which he wrote for that stone.<space extent="1" unit="chars"/> I continue
+still to hear them.<space extent="1" unit="chars"/> It is written that a
 prophet said to a certain man, 'Go, wash
 seven times in Jordan, and thou shalt be
-made whole.' He went. But the prophet did
-not personally appear : he merely spoke the
-word, although unseen. My thanks I give to
+made whole.'<space extent="1" unit="chars"/> He went.<space extent="1" unit="chars"/> But the prophet did
+not personally appear :<space extent="1" unit="chars"/>  he merely spoke the
+word, although unseen.<space extent="1" unit="chars"/> My thanks I give to
 that unseen friend who wrote ; and true it is
 that the works of a good man will follow
-him.
-There is one also who long ago began to
+him.</p>
+<p>There is one also who long ago began to
 break up the new ground in my son, and who,
 although not now in this world, is entitled to
-my thanks. I thank our old missionary, Mr.
-Chalmers.
-It is proper also that I should thank Mr.
+my thanks.<space extent="1" unit="chars"/> I thank our old missionary, Mr.
+Chalmers.</p>
+<p>It is proper also that I should thank Mr.
 Govan, who so greatly benefited my son by
 his instructions while he was under his hand.
 Mr. Niven I also thank for all his labours in
-behalf of my son.  Messrs. Cumming, Chalmers,
+behalf of my son.<space extent="1" unit="chars"/>  Messrs. Cumming, Chalmers,
 Sclater, R. Ross, J. Davidson, Longdon,
-and R. Irvine—I thank them all for their
+and R. Irvine&#8212;I thank them all for their
 labour in connection with the burial of my
-son.
-My beloved friends, what more can I say?
-I conclude with respectful salutations. Oh,
+son.</p>
+<p>My beloved friends, what more can I say ?<space extent="1" unit="chars"/> 
+I conclude with respectful salutations.<space extent="1" unit="chars"/> Oh,
 pray for me to the Lord, my friends, that
 when I reach that day which has neither a
-yesterday nor a to-morrow—a day which has
-no end—I may receive strength to sustain me
-in my unutterable weakness. —May you live
-happy!
-NOSUTU SOGA JOTELO,
-* She refers here to the marble tablet set up in the Emgwali Church, presented by Mr. John McFarlane, sculptor, Dundee. The inscription upon it was composed by the late Dr. William Anderson, and the expense of its transmission to the Emgwali and its erection there were provided by Mr. William White Millar.
-</p>
-
-
+yesterday nor a to-morrow&#8212;a day which has
+no end&#8212;I may receive strength to sustain me
+in my unutterable weakness.&#8212;May you live
+happy !</p>
+<p rend="right"><seg rend="smallcaps">Nosutu Soga Jotelo</seg>.<space extent="2" unit="chars"/></p>
+<lb/><fw rend="small">
+<lb/><note xml:id="note_01" rend="left indent">* Referring to his marriage.</note>
+<lb/><note xml:id="note_02" rend="left indent">* She refers here to the marble tablet set up in the Emgwali Church, presented by Mr. John McFarlane, sculptor, Dundee.<space extent="1" unit="chars"/> The inscription upon it was composed by the late Dr. William Anderson, and the expense of its transmission to the Emgwali and its erection there were provided by Mr. William White Millar.</note>
+</fw>
+	</div>
             </div>
         </body>   
     </text>

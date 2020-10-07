@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020043"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Nosutu's Letter”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Nosutu's Letter’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Nosutu's Letter,” 2 March 1874</title><!-- Title, date -->
+                <author>Jotelo, Nosutu Soga</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Tause</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Cumminmg, John</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Jotelo, Nosutu Soga</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Nosutu Soga Jotelo</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Tause</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">John Cumming</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="JD">
+                    <name>Jo Davis</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020043</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Missionary Record of the United Presbyterian Church</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<imprint>
+							<biblScope unit="vol">New Series, 5</biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue">44</biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">53</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<date>2 March 1874</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Nosutu's Letter”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="NSJ">Jotelo, Nosutu Soga</author>
+                    <author xml:id="T">Tause</author>
+                    <author xml:id="JC">John Cumming</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1874-03-02">2 March 1874</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <date type="composition" when="1873-10">October 1873</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Emgwali</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
+            </sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-10-06" who="AW">Coding</change>
+			<change when="2020-10-06" who="JD">Transcription</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020043_0002" n="0002"/>
+<lb/><p>
+MAR, 2, 1874.] UNITED PRESBYTERIAN MISSIONARY RECORD.
+p53
+Nosutu's Letter.
+Dictated by herself, and written in Caffre
+by Tause, the next in the family after Mr.
+Soga.
+EMGWALI, October 1873
+MY KIND FRIENDS,—For a long time I
+have wished to thank you for what you have
+done for me. Beloved friends, to-day I thank
+you for what you have done for my son and
+for myself. I thank you for what he was
+taught, and for what he was prepared for, by
+your means. From the beginning you acted
+with great wisdom towards him, and thereby
+conferred privileges and marvellous blessings
+upon us all. You opened up every path for
+him by which he was directed in the way of
+salvation, and which you also showed unto
+his people as well as to himself and to his
+family.
+Beloved, your work to my son I represent
+with the words which were said respecting
+man : The Creator first prepared a place for
+man before He created him. When He had
+finished all that was right for man, He created
+him, and placed him in the midst of every
+advantage. His commandment instructed
+him, like him who has departed. Thus it
+was so.
+What can I speak to you ? Dearly beloved,
+that which you began did you not finish ?
+You gave the blood of your blood* to my son.
+I have seen it with my own eyes. That event
+taught us to know your habits, your disposition,
+and your speech. That great event
+united us very closely together. In effect it
+seemed to say to my son : 'Tiyo Soga, go,
+take this great enlightener amongst your
+countrymen.' My friends, what can I say to
+you ? He is gone to the place prepared for
+him : look there for him ! Pardon me in
+referring to this matter. Beloved, what gift
+can be more highly esteemed than this ?
+Rejoice, beloved ! we also rejoice with the
+churches in Scotland. Rejoice ye ! Canzibe,
+the bright, the morning star of spring, has
+already risen upon Africa. The first teacher
+belonging to our countrymen was sent forth
+by you. Be glad, ye people of Caffraria !
+Amaxosa, the first home of my son, now lying
+desolate and forlorn, speaks of your laborious
+toil. Rejoice ye ! These five gum trees still
+standing remind me that, while the desolate
+* Referring to his marriage.
+
+and deserted homes of our countrymen are
+covered with the couch grass, it is not so with
+respect to that in which my son abides this
+day. His home is now far distant from these
+gum trees. Vain, then, is it for you to care
+so much, and to be so anxious for the things
+of this world.
+But now there is a thing present to-day by
+which I see him,* and yet do not see him. By
+the kindness of one whom I do not know,
+there is the stone that preserves the name of
+my son, in order that the generation present,
+and generations yet to come, may be told of
+him whom we so greatly loved. That stone
+is the first, so far as I know, that has been
+erected by you (the churches in Scotland),
+and on that account my heart is exceeding
+glad.
+My friends, I thank that kind friend for the
+words which he wrote for that stone. I continue
+still to hear them. It is written that a
+prophet said to a certain man, 'Go, wash
+seven times in Jordan, and thou shalt be
+made whole.' He went. But the prophet did
+not personally appear : he merely spoke the
+word, although unseen. My thanks I give to
+that unseen friend who wrote ; and true it is
+that the works of a good man will follow
+him.
+There is one also who long ago began to
+break up the new ground in my son, and who,
+although not now in this world, is entitled to
+my thanks. I thank our old missionary, Mr.
+Chalmers.
+It is proper also that I should thank Mr.
+Govan, who so greatly benefited my son by
+his instructions while he was under his hand.
+Mr. Niven I also thank for all his labours in
+behalf of my son.  Messrs. Cumming, Chalmers,
+Sclater, R. Ross, J. Davidson, Longdon,
+and R. Irvine—I thank them all for their
+labour in connection with the burial of my
+son.
+My beloved friends, what more can I say?
+I conclude with respectful salutations. Oh,
+pray for me to the Lord, my friends, that
+when I reach that day which has neither a
+yesterday nor a to-morrow—a day which has
+no end—I may receive strength to sustain me
+in my unutterable weakness. —May you live
+happy!
+NOSUTU SOGA JOTELO,
+* She refers here to the marble tablet set up in the Emgwali Church, presented by Mr. John McFarlane, sculptor, Dundee. The inscription upon it was composed by the late Dr. William Anderson, and the expense of its transmission to the Emgwali and its erection there were provided by Mr. William White Millar.
+</p>
+
+
+            </div>
+        </body>   
+    </text>
+</TEI>

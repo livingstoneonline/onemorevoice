@@ -102,6 +102,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-10-13" who="HB">Proofing</change>
 			<change when="2020-10-07" who="AW">Initial Transcription and Encoding</change>
         </revisionDesc>
     </teiHeader>
@@ -127,12 +128,12 @@
 <p>Our tribute to the memory of <persName>Mr. Cameron</persName> would not be complete
 if we failed to record the universal sympathy and sorrow called
 forth by the tidings of his death. <space extent="1" unit="chars"/>On that Sabbath morning the sad
-news reached the different congregations in the capital just as they
+news reached the different congregations in the capital just as they <!-- Maybe capital should be enclosed in settlement? HB --><!-- No. AW -->
 were assembling for worship, and preparing to partake of the
 memorials of the Lord's death. How different was <hi rend="italic">our</hi> commemoration,
 from <hi rend="italic">his</hi>, who was then "absent from the body," but "present
 with the Lord !" <space extent="1" unit="chars"/>With us, a deep gloom and sadness overspread all
-ranks and classes. <space extent="1" unit="chars"/>Every one seemed to be mourning the loss of a
+ranks and classes. <space extent="1" unit="chars"/><choice><sic>Every one</sic><corr>Everyone</corr></choice> seemed to be mourning the loss of a <!-- Should Every one be orig/reg to Everyone? HB --><!-- Sic/corr. AW -->
 father or of a dear and venerated friend. <space extent="1" unit="chars"/>The <persName>Queen</persName> and <persName>Prime
 Minister</persName> attired themselves in mourning, and their grief was deep and
 sincere. <space extent="1" unit="chars"/>A kind letter of sympathy was at once dispatched by them
@@ -141,24 +142,24 @@ show her regard for her departed friend by bearing all the expenses
 of the funeral, and signifying her wish also to erect a suitable and
 lasting monument over his grave.</p>
 <p>At the funeral, an immense concourse of people gathered together.
-<space extent="1" unit="chars"/>All the <term type="collective">Protestant missions</term> in the capital were strongly represented,
+<space extent="1" unit="chars"/>All the <term type="collective">Protestant</term> missions in the capital were strongly represented, <!-- Again, should capital be enclosed? Also, I took mission out of the collective tag, or should it be double-tagged with either another collective or orgName? HB --><!-- No on capital; looks good on missions. AW -->
 and the aged <persName>M. Laborde</persName>, the <persName><term type="collective">French</term> Consul</persName>, also joined, by his presence
 on the occasion, in paying the last tribute of respect to his friend.</p>
 <p>At the grave, one of the highest officers of the <orgName>Court</orgName>, as representative
 of the <persName>Queen</persName>, read in her name a proclamation, of which
 the following is, as nearly as possible, a literal translation :—</p>
 <p>" Thus saith <persName>Ranavalonamanjaka</persName>, <persName>Queen of <country>Madagascar</country></persName>, &amp;c.
-<space extent="1" unit="chars"/>Carry this my word to my subjects, and to <persName>Mary Cameron</persName>, and to
-the missionaries of the <orgName>London Missionary Society</orgName>.</p>
+<space extent="1" unit="chars"/>Carry this my word to my subjects, and to <persName>Mary Cameron</persName>, and to <!-- Subjects be enclosed in collective tag? HB --><!-- No. AW -->
+the missionaries of the <orgName>London Missionary Society</orgName>.</p> <!-- Missionaries be enclosed in collective tag? HB --><!-- No. AW -->
 <p>" For, inasmuch as the decease of <persName>Mr. Cameron</persName> has befallen my
-country and people, thus declares <persName>Ranavalonamanjaka</persName>, <persName>Queen of
-<country>Madagascar</country></persName>, that great indeed has been the good done by <persName>Mr.
+country and people, thus declares <persName>Ranavalonamanjaka</persName>, <term type="collective"><persName>Queen of <!-- my people be enclosed in collective tag? HB -->
+<country>Madagascar</country></persName></term>, that great indeed has been the good done by <persName>Mr.
 <space extent="1" unit="chars"/>
 
     <pb facs="liv_020043_0011" n="0011"/>
 <fw><seg rend="center italic">The Late <persName>Mr. James Cameron</persName> of <country>Madagascar</country>.</seg> <seg rend="right">179</seg></fw>
 Cameron</persName>. <space extent="1" unit="chars"/>He sought, and desired, and accomplished such things as
-benefit my kingdom and people. <space extent="1" unit="chars"/>And he sought whatever would
+benefit my kingdom and people. <space extent="1" unit="chars"/>And he sought whatever would <!-- My kingdom and people be enclosed in collective tag? HB --><!-- No. AW -->
 promote the Gospel of <persName>Jesus Christ</persName> here in my kingdom and among
 my people. <space extent="1" unit="chars"/>And not only so, but from the very beginning, until now,
 he has endeavoured to prosper this kingdom, for he was not a fickle
@@ -169,7 +170,7 @@ says <persName>Ranavalonamanjaka</persName>, <persName>Queen of <country>Madagas
 subject of my friend <persName>Queen Victoria</persName> has done good here among my
 people, and has died here in my kingdom, we therefore send our
 representative to show our respect at his funeral. <space extent="1" unit="chars"/>And although, in
-the present state of things, no cattle are slaughtered and no cannon
+the present state of things, no <term type="animal">cattle</term> are slaughtered and no cannon
 are fired (to show him honour), nevertheless I account him as among
 the benefactors of my kingdom.</p>
 <p>" And further, I proclaim to my subjects, and to his daughter, and
@@ -204,7 +205,7 @@ visible symbol survives in the hearts of the people, the name of <seg rend="smal
 Cameron</seg> will be treasured unforgotten, as one of <country>Madagascar</country>'s 
 earliest and greatest benefactors. <space extent="1" unit="chars"/>"The righteous shall be in 
 ever-lasting remembrance." <space extent="1" unit="chars"/>Psalm cxii, 6.</p>
-<p rend="right"><persName><seg rend="smallcaps">Chas. Fredk.</seg> Moss</persName>.<space extent="2" unit="chars"/></p>
+<p rend="right"><persName><seg rend="smallcaps">Chas. Fredk.</seg> Moss</persName>.<space extent="2" unit="chars"/></p> <!-- Should the name abbrs be expanded? HB --><!-- OK as is. AW -->
 <p><settlement>Antananarivo</settlement>, <country>Madagascar</country>.</p>
 <p rend="right small">N 2<space extent="1" unit="words"/></p>
 	</div>

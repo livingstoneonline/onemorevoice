@@ -1,0 +1,128 @@
+identify -format "%f: %wx%h\n" *.tif *.jpg *.png > ~/Desktop/image-sizes.txt
+
+****Regular images-tiffs (horizontal) ************
+
+mogrify -format jpg -resize 608x608 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/608 *.tif  && cd ~/Desktop/test/608 && find . -exec rename 's|.jpg|-608px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 638x638 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/638 *.tif  && cd ~/Desktop/test/638 && find . -exec rename 's|.jpg|-638px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 699x699 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/699 *.tif  && cd ~/Desktop/test/699 && find . -exec rename 's|.jpg|-699px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1216x1216 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1216 *.tif  && cd ~/Desktop/test/1216 && find . -exec rename 's|.jpg|-1216px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1276x1276 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1276 *.tif  && cd ~/Desktop/test/1276 && find . -exec rename 's|.jpg|-1276px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1399 *.tif  && cd ~/Desktop/test/1399 && find . -exec rename 's|.jpg|-1399px.jpg|' {} + && cd ..
+
+****Regular images-tiffs (vertical-image70) ************ 426, 447, 490, 852, 894, 980
+
+mogrify -format jpg -resize 426x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/426 *.tif  && cd ~/Desktop/test/426 && find . -exec rename 's|.jpg|-426px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 447x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/447 *.tif  && cd ~/Desktop/test/447 && find . -exec rename 's|.jpg|-447px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 490x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/490 *.tif  && cd ~/Desktop/test/490 && find . -exec rename 's|.jpg|-490px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 852x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/852 *.tif  && cd ~/Desktop/test/852 && find . -exec rename 's|.jpg|-852px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 894x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/894 *.tif  && cd ~/Desktop/test/894 && find . -exec rename 's|.jpg|-894px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 980x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/980 *.tif  && cd ~/Desktop/test/980 && find . -exec rename 's|.jpg|-980px.jpg|' {} + && cd ..
+
+****Regular images-tiffs (vertical-image73) ************
+
+mogrify -format jpg -resize 443x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/443 *.tif  && cd ~/Desktop/test/443 && find . -exec rename 's|.jpg|-443px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 466x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/466 *.tif  && cd ~/Desktop/test/466 && find . -exec rename 's|.jpg|-466px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 510x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/510 *.tif  && cd ~/Desktop/test/510 && find . -exec rename 's|.jpg|-510px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 886x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/886 *.tif  && cd ~/Desktop/test/886 && find . -exec rename 's|.jpg|-886px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 932x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/932 *.tif  && cd ~/Desktop/test/932 && find . -exec rename 's|.jpg|-932px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1020x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1020 *.tif  && cd ~/Desktop/test/1020 && find . -exec rename 's|.jpg|-1020px.jpg|' {} + && cd ..
+
+****Regular images-jpegs************
+
+mogrify -resize 608x608 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/608 *.jpg  && cd ~/Desktop/test/608 && find . -exec rename 's|.jpg|-608px.jpg|' {} + && cd - && 
+
+mogrify -resize 638x638 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/638 *.jpg  && cd ~/Desktop/test/638 && find . -exec rename 's|.jpg|-638px.jpg|' {} + && cd - && 
+
+mogrify -resize 699x699 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/699 *.jpg  && cd ~/Desktop/test/699 && find . -exec rename 's|.jpg|-699px.jpg|' {} + && cd - && 
+
+mogrify -resize 1216x1216 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1216 *.jpg  && cd ~/Desktop/test/1216 && find . -exec rename 's|.jpg|-1216px.jpg|' {} + && cd - && 
+
+mogrify -resize 1276x1276 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1276 *.jpg  && cd ~/Desktop/test/1276 && find . -exec rename 's|.jpg|-1276px.jpg|' {} + && cd - && 
+
+mogrify -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1399 *.jpg  && cd ~/Desktop/test/1399 && find . -exec rename 's|.jpg|-1399px.jpg|' {} + && cd ..
+
+****Regular images-pngs************
+
+mogrify -format jpg -resize 608x608 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/608 *.png  && cd ~/Desktop/test/608 && find . -exec rename 's|.jpg|-608px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 638x638 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/638 *.png  && cd ~/Desktop/test/638 && find . -exec rename 's|.jpg|-638px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 699x699 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/699 *.png  && cd ~/Desktop/test/699 && find . -exec rename 's|.jpg|-699px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1216x1216 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1216 *.png  && cd ~/Desktop/test/1216 && find . -exec rename 's|.jpg|-1216px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1276x1276 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1276 *.png  && cd ~/Desktop/test/1276 && find . -exec rename 's|.jpg|-1276px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/Desktop/test/1399 *.png  && cd ~/Desktop/test/1399 && find . -exec rename 's|.jpg|-1399px.jpg|' {} + && cd ..
+
+***************************************
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
+
+***************************************
+
+horizontal
+src="site-images/liv_014094_0001_deriv-1399px.jpg" srcset="site-images/liv_014094_0001_deriv-400px.jpg 400w, site-images/liv_014094_0001_deriv-608px.jpg 608w, site-images/liv_014094_0001_deriv-638px.jpg 638w, site-images/liv_014094_0001_deriv-699px.jpg 699w, site-images/liv_014094_0001_deriv-1216px.jpg 1216w, site-images/liv_014094_0001_deriv-1276px.jpg 1276w, site-images/liv_014094_0001_deriv-1399px.jpg 1399w"
+
+vertical70
+src="site-images/liv_023011_0001_deriv-980px.jpg" srcset="site-images/liv_023011_0001_deriv-980px.jpg 980w, site-images/liv_023011_0001_deriv-894px.jpg 894w, site-images/liv_023011_0001_deriv-852px.jpg 852w, site-images/liv_023011_0001_deriv-490px.jpg 490w, site-images/liv_023011_0001_deriv-447px.jpg 447w, site-images/liv_023011_0001_deriv-426px.jpg 426w, site-images/liv_023011_0001_deriv-334px.jpg 334w"
+
+
+***********horizontal*******************
+1920 = 638 x 2 = 1276
+1600 = 638
+1366 = 638
+1024 = 638
+768 = 699 x 2 = 1399
+640 = 608 x 2 = 1216
+
+608, 638, 699, 1216, 1276, 1399
+
+***********vertical-image70*******************
+1920 = 447
+1600 = 447
+1366 = 447
+1024 = 447 x 2 = 894
+768 = 490 x 2 = 980
+640 = 426 x = 852
+
+426, 447, 490, 852, 894, 980
+
+***********vertical-image73*******************
+1920 = 466
+1600 = 466
+1366 = 466
+1024 = 466 = 932
+768 = 510 = 1020
+640 = 443 x 2 = 886
+
+443, 466, 510, 886, 932, 1020
+
+***************************************
+
+https://medium.com/hceverything/applying-srcset-choosing-the-right-sizes-for-responsive-images-at-different-breakpoints-a0433450a4a3
+
+1920px (this covers FullHD screens and up)
+1600px (this will cover 1600px desktops and several tablets in portrait mode, for example iPads at 768px width, which will request a 2x image of 1536px and above)
+1366px (it is the most widespread desktop resolution)
+1024px (1024x768 screens, excluding iPads which are hi-density anyway, are rarer, but I think you need some image size in between, not to leave too big a gap between pixel sizes, in case the market changes)
+768px (useful for 2x 375px mobile screens, as well as any device that actually requests something close to 768px)
+640px (for smartphones)
+
+***************************************

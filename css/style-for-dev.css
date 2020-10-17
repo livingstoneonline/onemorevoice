@@ -55,9 +55,10 @@ html{
 	overflow-x: hidden;
 }
 body{
-	width: 100%;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	overflow-x: hidden;
 }
 @media only screen and (min-width: 768px){
 	body{
@@ -922,7 +923,7 @@ body.transcription .title{
 	display: inline-block;
 	vertical-align: top;
 	padding: 0 0 2.5em 0;
-	width: 100%;
+	max-width: 100%;
 }
 @media only screen and (min-width: 480px){
 	.gallery-item{
@@ -945,7 +946,7 @@ body.transcription .title{
 	padding: .5em;
 }
 .gallery figure img{
-	width: 100%;
+	max-width: 100%;
 	object-fit:cover;
 	-o-object-fit: cover;
 	border-radius:50%;
@@ -970,7 +971,7 @@ hr{
 	background-color: gray;
 	height: 1px;
 	border: 0;
-	width: 100%;
+	max-width: 100%;
 }
 .thick-hr{
 	overflow: visible; /* For IE */

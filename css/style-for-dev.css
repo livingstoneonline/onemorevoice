@@ -42,7 +42,6 @@ html{
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	color: #191716;
-	padding: 0 1em;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -58,7 +57,7 @@ body{
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	overflow-x: hidden;
+	padding: 0 1em;
 }
 @media only screen and (min-width: 768px){
 	body{

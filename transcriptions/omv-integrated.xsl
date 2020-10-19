@@ -564,9 +564,9 @@
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
-				<div class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
-				</div>
+				</aside>
 				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI front {$front}" style="background:#{$body-color-front};" aria-labelledby="front-section">
 						<div class="ms-container" id="front-section">

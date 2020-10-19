@@ -61,19 +61,33 @@ body{
 @media only screen and (min-width: 768px){
 	body{
 		font-size: .95em;
-		max-width: 46em;
 	}
 }
 @media only screen and (min-width: 992px){
-	body{
-		max-width: 42em;
-	}
 	body.fixed-nav{
 		padding-top: 0 !important;
 	}
 }
 body.essay .main{
 	padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px){
+	nav,
+	header,
+	main,
+	aside,
+	footer{
+		max-width: 46em;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav,
+	header,
+	main,
+	aside,
+	footer{
+		max-width: 42em;
+	}
 }
 h1{
 	font-size: 2em;
@@ -438,6 +452,7 @@ a:focus img{
 	top: 0;
 	left: 0;
 	width: 100%;
+	max-width: 100%;
 	z-index: 1;
 	border-bottom: 1px gray solid;
 	box-shadow: 0 4px 6px -6px #222;

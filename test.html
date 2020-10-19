@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en">
+
+<head>
+    <title>One More Voice | Home</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Home page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+	<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+	<meta name="theme-color" content="#2e68ac"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+	<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
+	<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-31768072-5');
+	</script>
+	<style>
+		body{
+			padding: unset !important;
+			margin: unset !important;
+		}
+		article{
+			max-width: unset !important;
+			padding: .5em 1em !important;
+		}
+		.fixed-nav .menu,
+		.menu{
+			max-width: unset !important;
+			padding: .5em 0 !important;
+		}
+	</style>
+</head>
+
+<?php flush(); ?>
+
+<body class="essay">
+<article>
+
+<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+<!-- start of nav -->
+
+	<nav id="skiptocontent" aria-labelledby="nav0">
+		<a href="#main" id="nav0" tabindex="0">skip to main content</a>
+	</nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+    	
+	<nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						materials
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-3" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+    </nav>
+
+    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="sticky" aria-labelledby="nav2">
+        <div class="menu" id="nav2" title="Menu">
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="false" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span>
+            <span class="nav-title">One More Voice</span>
+        </div>
+    </nav>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <nav aria-labelledby="nav3">
+        <div class="overlay" id="nav3">
+            <div class="menu" title="Close">
+                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+            <div class="overlay-content" role="menu">
+                <ul role="none">
+                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
+					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Materials">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                        </ul>
+                    </li>
+					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Concepts">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Miscellaneous">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                        </ul>
+                    </li>
+                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- end of nav -->
+
+    <header class="title" id="title-div">
+		<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+        <img class="image content-holder-2" src="site-images/liv_012001_0001_deriv-1399px.jpg" srcset="site-images/liv_012001_0001_deriv-400px.jpg 400w, site-images/liv_012001_0001_deriv-608px.jpg 608w, site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_deriv-699px.jpg 699w, site-images/liv_012001_0001_deriv-1216px.jpg 1216w, site-images/liv_012001_0001_deriv-1276px.jpg 1276w, site-images/liv_012001_0001_deriv-1399px.jpg 1399w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Agnes Livingstone, Thomas Livingstone, Abdullah Susi, James Chuma, and Horace Waller with David Livingstone’s manuscripts." title="Colorised version of R. Allen & Sons, “Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone” (1874), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001. SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
+    </header>
+    
+    <main class="main" id="main">
+		<h3>Introduction</h3>
+
+        <p><span class="italic">One More Voice</span>, a work of digital humanities scholarship, focuses on <a href="analytical_priorities.html">recovering non-European contributions</a> from nineteenth-century British imperial and colonial archives. The name reflects the fact that there is always <span class="italic">one more</span> <span class="italic">voice</span> to recover from the archives. The non-European contributions take multiple forms and appear in multiple genres, including travel narratives, autobiographies, letters, diaries, testimonies, interviews, treaties, maps, oral histories, genealogies, and vocabularies. <span class="italic">One More Voice</span> attempts to offer a critical and systematic evaluation of these rich and diverse materials by using interpretive approaches and digital preservation techniques that expand existing scholarship on the topic. Learn more about our <a href="analytical_priorities.html">analytical priorities</a>, <a href="project_design.html">project design</a>, <a href="collaboration.html">approach to collaboration</a>, and <a href="coding_guidelines.html">coding guidelines</a>.</p>
+        
+        <p>That said, the recovery work of <span class="italic">One More Voice</span> will always be incomplete due to the fragmentary and biased nature of imperial and colonial archives. The project, therefore, does not seek to be totalizing and comprehensive, nor is its goal simply to add more voices to the nineteenth-century British literary canon. Rather, <span class="italic">One More Voice</span> engages in a program of <a href="https://www.researchgate.net/publication/277992187_Decolonization_Is_Not_a_Metaphor">decolonization</a> by highlighting the number of global voices that exist in the archives of Empire and, consequently, by asking critics and others to revise their understanding of the contents of these archives. Specifically, the project shows the archives to be more diverse than is usually acknowledged and underscores the fact that any voice from these archives must be read and understood as <span class="italic">already</span> embedded in a wider intercultural, documentary context. As part of this program, the project also rewrites the concept of authorship so that it encompasses archival “<a href="analytical_priorities.html">contributions</a>,” a term of inclusiveness that reverses the Eurocentric, exclusionary nature of literary “authorship” as it is usually understood.</p>
+
+		<p>More generally, the project's interpretive approach undercuts a long-standing practice in nineteenth-century British studies of ignoring or minimizing the abundance of non-European voices in the archives and thus of “diversifying” the field only by the token addition of individual voices. <span class="italic">One More Voice</span> instead brings to the fore a wide range of other voices and, by doing so, amplifies them and allows them to be heard so that scholars, students, and others might engage with nineteenth-century memory, literature, and history in a whole new manner. For those interested in applying decolonial methodologies and ways of knowing in their research, <span class="italic">One More Voice</span> also identifies an assortment of primary materials – <a href="texts.html">archival</a> and <a href="books.html">print</a> as well as <a href="artifacts.html">artifact</a> – that might play a foundational role in such a program of analysis.</p>
+        
+        <p><span class="italic">One More Voice</span> has been created and published by <a href="contributors.html">members</a> of the <a href="https://livingstoneonline.org/">Livingstone Online</a> project staff and extends the long-standing <a href="https://livingstoneonline.org/behind-the-scenes/the-livingstone-online-code">ideals</a> of that project in a new direction. We have released the site in an early and as-yet-developing form due to the circumstances created by the <a href="https://coronavirus.jhu.edu/">2020 Coronavirus pandemic</a>. All original critical and <a href="texts.html">critically-edited primary materials</a> are released under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons</a> license and are available for immediate use in the classroom, in scholarship by others, and in other educational contexts.</p>
+
+        <p>Publication has been made possible by producing new scholarship while applying <a href="https://go-dh.github.io/mincomp/">minimal computing</a> principles and adapting open-access code and digital tools from <a href="project_design.html">other relevant projects</a>. Given these affordances, however, the project contributors recognize that there is considerable room for improvement in our work. We are actively searching for <a href="collaboration.html">new collaborators</a>, especially scholars and students whose backgrounds link them to areas that historically fell under the sway of the British Empire in the nineteenth century. If interested, please <a href="mailto:awisnicki@yahoo.com">contact us.</a></p>
+    </main>
+
+	<aside class="credits" id="credits-div">
+		<hr />
+
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball, Jared McDonald, and Mary Borgo Ton. Introduction. <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="index.html">https://onemorevoice.org</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+    
+        <p><span class="bold">Header image</span>: Colorised version of R. Allen &amp; Sons, “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001">Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone</a>” (1874), in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only. Waller interviewed Chuma and Susi in 1874 about the final days of explorer David Livingstone. The interview notes (Waller, [Chuma], [Susi], 1874) – written up and mediated by Waller, but inclusive of apparently verbatim data provided by Chuma and Susi – embody a good instance of the source material complexities that the <span class="italic">One More Voice</span> project has set out to engage. Note: This image has been processed to add color using <a href="https://colourise.sg/">ColouriseSG</a>, so the colors are estimations of the real-life colors based on that site's algorithms (see the <a href="transcriptions/liv_012001_ART.html">original version</a> of the image). The practice of using such image processing techniques to illuminate imperial-era historical materials, in turn, hearkens back to the <a href="https://livingstoneonline.org/spectral-imaging/the-livingstone-spectral-imaging-project-introduction">Livingstone Spectral Imaging Project</a>, one of the <span class="italic">Livingstone Online</span> initiatives that has helped set the stage for <span class="italic">One More Voice</span>.</p>
+	</aside>
+    
+    <footer class="footer" id="footer-div">
+        <hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+	</footer>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<script src="scripts/scripts.js"></script>
+</article>
+</body>
+
+</html>

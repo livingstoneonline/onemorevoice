@@ -54,8 +54,7 @@ html{
 	overflow-x: hidden;
 }
 body{
-	margin-left: auto;
-	margin-right: auto;
+	margin: .5em auto;
 	padding: 0 1em;
 }
 @media only screen and (min-width: 768px){
@@ -85,6 +84,7 @@ footer{
 	aside,
 	footer{
 		max-width: 699px;
+		width: 100%;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -94,6 +94,7 @@ footer{
 	aside,
 	footer{
 		max-width: 638px;
+		width: 100%;
 	}
 }
 h1{

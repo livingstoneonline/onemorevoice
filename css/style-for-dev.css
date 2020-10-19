@@ -70,31 +70,17 @@ body{
 body.essay .main{
 	padding-bottom: 1em;
 }
-nav,
-header,
-main,
-aside,
-footer{
+article{
 	margin: 0 auto;
 }
 @media only screen and (min-width: 768px){
-	nav,
-	header,
-	main,
-	aside,
-	footer{
-		max-width: 699px;
-		width: 100%;
+article{
+		max-width: 46em;
 	}
 }
 @media only screen and (min-width: 992px){
-	nav,
-	header,
-	main,
-	aside,
-	footer{
-		max-width: 638px;
-		width: 100%;
+	article{
+		max-width: 42em;
 	}
 }
 h1{

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020060"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Note of Information Taken in the Charge of Cutting off the Boy I I’s Hand, Preferred to Mr. Casement by the People of E*” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 6 in No. 3)</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Note of Information Taken in the Charge of Cutting off the Boy I I’s Hand, Preferred to Mr. Casement by the People of E*’ (‘Report on Visit to Interior of Congo State and on Condition of the Natives,’ Inclosure 6 in No. 3)</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Note of Information Taken in the Charge of Cutting off the Boy I I’s Hand, Preferred to Mr. Casement by the People of E*” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 6 in No. 3), 1904</title><!-- Title, date -->
+                <author>Casement, Roger, 1864-1916</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>I I</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>W W</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>X X</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Y Y</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Z Z</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>A A A</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>B B B</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>E E E</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Unnamed Villagers of E*</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author>K K</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Casement, Roger</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Roger Casement</author><!-- First author only: Forename Surname -->
+				<author role="normalized"><persName>I I</persName></author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">W W</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">X X</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Y Y</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Z Z</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">A A A</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">B B B</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">E E E</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Unnamed Villagers of E*</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">K K</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="CM">
+                    <name>Caitlin Matheis</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020060</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://archive.org/details/CasementReport/page/n1/mode/2up">Internet Archive</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="book-section"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Correspondence and Report from His Majesty’s <persName>Consul</persName> at Boma Respecting the Administration of the Independent State of the Congo</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author></author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="pages">Africa, 1:78-80</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>House of Commons. Accounts and Papers. London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>Harrison and Sons for His Majesty’s Stationary Office</publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date>1904</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Note of Information Taken in the Charge of Cutting off the Boy I I’s Hand, Preferred to Mr. Casement by the People of E*” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 6 in No. 3)</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="RC">Casement, Roger, 1864-1916</author>
+                    <author xml:id="II"><persName>I I</persName></author>
+                    <author xml:id="WW">W W</author>
+                    <author xml:id="XX">X X</author>
+					<author xml:id="YY">Y Y</author>
+					<author xml:id="ZZ">Z Z</author>
+					<author xml:id="AAA">A A A</author>
+					<author xml:id="BBB">B B B</author>
+					<author xml:id="EEE">E E E</author>
+					<author xml:id="UVE">Unnamed Villagers of E*</author>
+					<author xml:id="KK">K K</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
+            </sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-10-21" who="#AW"></change>
+			<change when="2020-10-07" who="#CM"></change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020060_0078" n="0078"/>
+<fw><seg rend="center">78</seg></fw>
+	<div rend="center">
+<gap extent="48" unit="lines" agent="omitted-text"/><!-- Text from previous inclosure omitted here. AW -->
+	</div>
+	<div>
+<milestone unit="section" rend="half-line"/>
+<p rend="center">Inclosure 6 in No. 3.</p>
+
+<lb/><p rend="center">(See p. 56.)</p>
+
+<lb/><p rend="center italic">Note of Information taken in the Charge of Cutting off the boy <persName><persName>I I</persName></persName>’s hand, preferred to 
+<persName>Mr. Casement</persName> by the People of <settlement>E*</settlement>.</p>
+
+<lb/><p>AT village of <settlement>E*</settlement> in the <region>C D* country</region>, on left bank of <geogName>E D*</geogName>, tributary of the <geogName>X* River</geogName>.</p>
+
+<p><persName>Y Y</persName>, with many of the townsmen and a few women and children, also present.</p>
+
+<p>A lad, about 14 or 15 years of age, <persName>I I</persName> by name, whose left hand had been cut off, the 
+stump wrapped up in a rag, the wound being yet scarcely healed, appears, and, in answer to 
+<persName>Consul</persName>’s question, charges a sentry named <persName>K K</persName> (placed in the town by the local agent of the 
+<orgName>La Lulanga Society</orgName> to see that the people work rubber) with having done it. This sentry is 
+called, and after some delay appears with a cap-gun.</p>
+
+<p>The following inquiry into the circumstances surrounding the loss of <persName>I I</persName>’s hand then 
+takes place:&#8212;</p>
+
+<p>The <persName>Consul</persName>, through <persName>W W</persName>, speaking in E F*, and <persName>X X</persName> repeating his utterances both in 
+F G* to the sentry and in the local dialect to the others, asks <persName>I I</persName>, in the presence of the accused:</p>
+
+<p>“Who cut off your hand?”</p>
+
+<p><persName>I I</persName>: “The sentry there.”</p>
+<space extent="1" unit="chars"/>
+
+
+    <pb facs="liv_020060_0079" n="0079"/>
+<fw><seg rend="center">79</seg></fw>
+
+<p>The sentry denies the charge (interrupting), and stating that his name is <persName>T T T</persName> and not 
+<persName>K K</persName>. <persName>Consul</persName> requests him to keep silence&#8212;that he can speak later.</p>
+
+<p><persName>Y Y</persName> is called and questioned by <persName>Consul</persName> through the interpreters. After being exhorted to 
+speak the truth without fear or favour, he states:</p>
+
+<p>“The sentry before us cut off <persName>I I</persName>’s hand.”</p>
+
+<p><persName>Consul</persName>: “Did you yourself witness the act?”</p>
+
+<p>Answer: “Yes.”</p>
+
+<p>Several of the Headmen of the town called upon by the <persName>Consul</persName> to testify.</p>
+
+<p>To the first of these, who gave his name as <persName>Z Z</persName>, <persName>Consul</persName> asked, pointing to <persName>I I</persName>’s mutilated 
+wrist-bone: “Who cut off this boy’s hand?”</p>
+
+<p><persName>Z Z</persName> (pointing to the sentry): “That man did it.”</p>
+
+<p>The second, who gave his name as <persName>A A A</persName>, asked by <persName>Consul</persName>: “Who cut off this boy’s 
+hand?”</p>
+
+<p>Answers: “<persName>K K</persName>.”</p>
+
+<p>The third, giving his name as <persName>B B B</persName>, asked by <persName>Consul</persName>: “Who cut off this boy’s hand?”</p>
+
+<p>Answers: “This man here, the sentry.”</p>
+
+<p><persName>Z Z</persName> (re-questioned): “Did you yourself see this sentry cut off this boy’s hand?”</p>
+
+<p>Answer: “Yes, I saw it.”</p>
+
+<p><persName>A A A</persName> (re-questioned): “Did you yourself see this sentry cut off this boy’s hand?”</p>
+
+<p>Answers: “I should think so. Did I not get this wound here” (pointing to a cut by the 
+tendon <persName>Achilles</persName> on the left heel) “the same day, when running away in fright? My own knife 
+wounded me. I let it fall when I ran away.”</p>
+
+<p><persName>Consul</persName> questions <persName>I I</persName>: “How long ago was it your hand was cut off?”</p>
+
+<p>Answer: “He is not sure.”</p>
+
+<p>Two fellow-villagers&#8212;young men, named <persName>C C C</persName> and <persName>D D D</persName>&#8212;step out and state that 
+they remember. The act occurred when the clay was being dug over at <placeName>C D</placeName>, when the slip- 
+place for the steamers was begun.</p>
+
+<p><persName>E E E</persName>, of <placeName>E*</placeName>, another section of the village of <settlement>R**</settlement>, questioned by <persName>Consul</persName>: “Did you 
+see this lad’s hand cut off?”</p>
+
+<p>Answer: “Yes. I did not actually see it being cut off. I came up and saw the severed 
+hand and the blood lying on the ground. The people had run away in all directions.”</p>
+
+<p><persName>Consul</persName> asked interpreters to ask if there were others who had seen the crime and charged 
+<persName>K K</persName> with it.</p>
+
+<p>Nearly all those present, <term type="collective">about forty persons, nearly all men</term>, shouted out with one voice that 
+it was <persName>K K</persName> who did it.</p>
+
+<p><persName>Consul</persName>: “They are all sure it was <persName>K K</persName> here?”</p>
+
+<p>Universal response: “Yes; he did it.”</p>
+
+<p><persName>Consul</persName> asked the accused <persName>K K</persName>: “Did you cut off this boy’s hand?”</p>
+
+<p>This question was put in the plainest language, and repeated six times, with the request that 
+a plain answer&#8212;“yes” or “no”&#8212;should be given.</p>
+
+<p>The accused failed to answer the question, beginning to talk of other things not relevant to the 
+question, such as that his name was <persName>T T</persName> and not <persName>K K</persName> and that the people of <settlement>R**</settlement> had done 
+bad things to him.</p>
+
+<p>He was told to confine himself to the question put to him, that he could talk of other things 
+later, but that now it was his place to answer the questions put, just as simply and plainly 
+as the others had answered. He had heard those answers and the charge they levied against 
+him, and he should answer the <persName>Consul</persName>’s questions in just the same way.</p>
+
+<p>The accused continued to speak of irrelevant subjects, and refused or failed to give any 
+answer to the question put to him.</p>
+
+<p>After repeated attempts to obtain answer to the question: “Did you or did you not cut off 
+this boy <persName>I I</persName>’s hand?”</p>
+
+<p><persName>Consul</persName> states: “You are charged with this crime. You refuse to answer the questions I 
+put to you plainly and straightforwardly as your accusers have done. You have heard their 
+accusation. Your refusal to reply as you should reply&#8212;viz., yes or no&#8212;to a direct and simple 
+question leaves me convinced that you cannot deny the charge. You have heard what has been 
+charged against you by all these people. Since you decline to answer as they did, you may 
+tell your story your own way. I shall listen to it.”</p>
+
+<p>Accused began to speak, but before his remarks could be translated to me through <persName>X X</persName> 
+first, to whom he spoke direct, and then through <persName>W W</persName>, a young man stepped out of the crowd 
+and interrupted.</p>
+
+<p>There was noise and then the man spoke:&#8212;</p>
+
+<p>He stated he was <persName>F F F</persName> of <settlement>R**</settlement>. He had shot two <term type="animal">antelopes</term>, and he had brought two 
+of their legs to this sentry as a gift. The sentry refused to accept them, and tied his wife up. 
+The sentry said they were not a sufficient present for him, and he kept <persName>F F F</persName>’s wife tied up 
+until he, <persName>F F F</persName>, paid him 1,000 brass rods for her release.</p>
+
+<p>Here a young man giving his name as <persName>G G G</persName> stepped into the ring and accused the sentry 
+of having robbed him openly of two <term type="animal">ducks</term> and a <term type="animal">dog</term>. They were taken from him for no 
+reason save that the sentry wanted them and took them by force.</p>
+
+<p><persName>Consul</persName> again turned to the sentry and invited him to tell his story, and to give his answer to 
+the charge against him in his own way. <persName>Consul</persName> enjoined silence on all, and not to interrupt 
+the sentry.</p>
+
+<p><persName>K K</persName> stated that he did not take <persName>G G G</persName>’s <term type="animal">ducks</term>. The father of <persName>G G G</persName> gave him a <term type="animal">duck</term>. 
+(All laughed.) It is true that <persName>F F F</persName> killed two <term type="animal">antelopes</term> and gave him the two legs as a gift 
+but he did not tie up his wife or require money for her release.</p>
+
+<fw><seg rend="left"><space extent="2" unit="words"/>[247]</seg> <seg rend="right">M<space extent="2" unit="words"/></seg></fw>
+<space extent="1" unit="chars"/>
+
+
+    <pb facs="liv_020060_0080" n="0080"/>
+<fw><seg rend="center">80</seg></fw>
+
+<p><persName>Consul</persName>: “That is all right. That finishes the <term type="animal">ducks</term> and the <term type="animal">antelopes</term>’ legs; but now I want 
+to hear about <persName>I I</persName>’s hand. Tell me what you know about <persName>I I</persName>’s hand being cut off.”</p>
+
+<p><persName>K K</persName> again evaded the question.</p>
+
+<p><persName>Consul</persName>: “Tell him this. He is put here by his master in this town, is he not? This is his 
+town. Now, does he say he does not know what goes on here where he lives?”</p>
+
+<p>The sentry states: “It is true that this is his town, but he knows nothing about <persName>I I</persName>’s hand 
+being cut off. Perhaps it was the first sentry here before he came, who was a very bad man and 
+cut people’s hands off. That sentry has gone away&#8212;it was he who cut hands off, not himself. 
+He does not know anything of it.”</p>
+
+<p><persName>Consul</persName>: “What was the name then of this bad sentry, your predecessor, who cut people’s 
+hands off? You know it?”</p>
+
+<p>The sentry gives no direct answer, and the question is repeated. He then gives a statement 
+about several sentries, naming three, as predecessors of himself here at <settlement>R**</settlement>.</p>
+
+<p>Here a man named <persName>H H H</persName> jumped up, interrupting, and asserted that those three sentries 
+did not reside at <settlement>R**</settlement>, but had been stationed in his own town&#8212;his, <persName>H H H</persName>’s, town.</p>
+
+<p><persName>Consul</persName> (to the sentry): “How long have you been in this town?”</p>
+
+<p>Answer: “Five months.”</p>
+
+<p><persName>Consul</persName>: “You are quite sure?”</p>
+
+<p>Answer: “Five months.”</p>
+
+<p><persName>Consul</persName>: “Do you, then, know this boy <persName>I I</persName>? Have you seen him before?”</p>
+
+<p>Answer: “I do not know him at all.”</p>
+
+<p>Here the entire auditory roared with laughter, and expressions of admiration at the sentry’s 
+lying powers were given vent to.</p>
+
+<p>The sentry, continuing, stated that possibly <persName>I I</persName> comes from <persName>H H H</persName>’s town. Anyhow, he 
+(the sentry) does not know <persName>I I</persName>; he does not know him at all.</p>
+
+<p>Here <persName>F F F</persName> stepped out and said he was full brother of <persName>I I</persName>; they had lived here always. 
+Their father was <persName>U U U</persName>, now dead; their mother is also dead.</p>
+
+<p><persName>Consul</persName> (to the sentry): “Then it is finished. You know nothing of this matter.”</p>
+
+<p>The sentry: “It is finished. I have told you all. I know nothing of it.”</p>
+
+<p>Here a man giving his name as <persName>I I I</persName> , of <placeName>K K*</placeName>, the neighbouring section of <settlement>R**</settlement>, came 
+forward with his wife.</p>
+
+<p>He stated that the other sentries in their town were not so bad, but that this man was a 
+villain.</p>
+
+<p>The sentry had tied up his wife&#8212;the woman he brought forward&#8212;and had made him 
+pay 500 rods before she was released. He had paid the money.</p>
+
+<p>Here <persName>Consul</persName> asked <persName>I I</persName> how his hand had been cut off. He and <persName>C C C</persName> and <persName>D D D</persName> stated that 
+he had first been shot in the arm, and then when he fell down the sentry had cut his hand off.</p>
+
+<p><persName>Consul</persName>: “Did you feel it being cut off?”</p>
+
+<p>Answer: “Yes, I felt it.”</p>
+
+<p>This terminated the inquiry. The <persName>Consul</persName> informed <persName>Y Y</persName> and the people present that he 
+should report what he had seen and heard to the <orgName><country>Congo</country> Government</orgName>, and that he should beg them 
+to investigate the charge against the sentry, who deserved severe punishment for his illegal and 
+cruel acts. The things that the sentry was charged with doing were quite illegal, and if the 
+<orgName>Government</orgName> of his country knew of such things being done, the perpetrators of such crimes 
+would, in all cases, be punished.</p>
+
+<p rend="right">(Signed) <space extent="1" unit="words"/><seg rend="caps">Roger Casement</seg>,<space extent="1" unit="words"/></p> 
+<p rend="right italic"><persName>His Britannic Majesty’s Consul</persName>.<space extent="2" unit="chars"/></p>
+<lb/><lb/>
+	</div>
+	<div rend="center">
+<milestone unit="section" rend="half-line"/>
+<gap extent="21" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here. AW -->
+	</div>
+
+<!-- Record of a Q&A session between a British government officer and a series of unnamed villagers from the Conog Free State, as translated by two unnamed individuals from the Congo Free State and as edited for and published among official British government documents -->
+
+            </div>
+        </body>   
+    </text>
+</TEI>

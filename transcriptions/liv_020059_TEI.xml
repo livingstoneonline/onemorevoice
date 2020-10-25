@@ -14,7 +14,7 @@
                 <author>V V</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first">Casement, Roger</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Roger Casement</author><!-- First author only: Forename Surname -->
-				<author role="normalized"><persName>V V</persName></author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">V V</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
@@ -77,7 +77,7 @@
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
                     <author xml:id="RC">Casement, Roger, 1864-1916</author>
-                    <author xml:id="VV"><persName>V V</persName></author>
+                    <author xml:id="VV">V V</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -102,8 +102,8 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="2020-10-21" who="#AW"></change>
-			<change when="2020-10-07" who="#CM"></change>
+			<change when="2020-10-21" who="#AW">Text encoding</change>
+			<change when="2020-10-07" who="#CM">Initial transcription</change>
         </revisionDesc>
     </teiHeader>
 

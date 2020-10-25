@@ -70,7 +70,6 @@ also see 2.9 for manuscript colors
 	.journal.narrow{
 		width: 80%;
 		margin: 0 auto;
-		/* padding: 0 2em; */
 	}
 }
 .TEI{
@@ -94,9 +93,9 @@ also see 2.9 for manuscript colors
 .manuscript .back{
 	margin-top: 1em;
 }
-/* .manuscript .TEI.front + .TEI{
+.manuscript .TEI.front:not(.none) + .TEI{
 	margin-top: 2em;
-} */
+}
 /* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	body .manuscript,
@@ -128,7 +127,6 @@ also see 2.9 for manuscript colors
 .journal .TEI{
 	display: block;
     text-align: justify;
-    /* text-align-last: left; */
     padding: 1em 1em 2em 1em;
     margin: .5em auto 2em auto;
 }
@@ -450,10 +448,6 @@ button::-moz-focus-inner{
 	width: 100%;
 	display: inline-block;
 }
-/* .journal .pb-title{
-	margin: 3em 0 .5em 0;
-	display: block;
-} */
 .artifact .pb-title{
 	text-align: left;
 	width: 100%;

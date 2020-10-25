@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html>
+
+<head>
+    <title>Coding Guidelines | One More Voice</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Project Design page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+   	<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons,TEI,text encoding initiative" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="overlay.js"></script>
+    <script src="stickynav.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+</head>
+
+<body class="essay">
+
+<!-- start of nav -->
+
+	<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="navigation">    
+    <div class="menu">
+        <span class="icon-title"><a style="cursor:pointer" class="icon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></a></span>
+		<span class="nav-title">One More Voice</span>
+    </div>
+    </nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+	<div class="topnav" id="topnav-div">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="texts.html">texts</a></li>
+      <li>
+          <div class="dropdown" data-menu-component>
+              <input type="checkbox" id="toggle-1" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-2').checked = false">
+              <label class="dropbtn" for="toggle-1" data-opens-menu>
+                concepts <!--<i class="fa fa-caret-down"></i>-->
+                <span class="vh expanded-text">expanded</span>
+                <span class="vh collapsed-text">collapsed</span>
+              </label>
+              <div class="dropdown-content" role="menu" data-menu-origin="left">
+                <ul>
+                  <li><a href="analytical_priorities.html">analytical priorities</a></li>
+                  <li><a href="project_design.html">project design</a></li>
+                  <li><a href="coding_guidelines.html">coding guidelines</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+        <li>
+          <div data-menu-component class="dropdown">
+              <input type="checkbox" id="toggle-2" class="vh" role="button" aria-haspopup="true" onclick="document.getElementById('toggle-1').checked = false">
+              <label class="dropbtn" for="toggle-2" data-opens-menu>
+                misc <!--<i class="fa fa-caret-down"></i>-->
+                <span class="vh expanded-text">expanded</span>
+                <span class="vh collapsed-text">collapsed</span>
+              </label>
+              <div class="dropdown-content" role="menu" data-menu-origin="left">
+                <ul>
+                  <li><a href="contributors.html">contributors</a></li>
+                  <li><a href="bibliography.html">bibliography</a></li>
+                  <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a></li>
+                  <li><a href="mailto:awisnicki@yahoo.com">contact</a></li>
+                </ul>
+              </div>
+            </div>
+        </li>
+    </ul>
+	</div>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <div id="myNav" class="overlay">
+      <div class="menu">
+          <span class="close-title"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#215;</a></span>
+          <span class="nav-title">One More Voice</span>
+      </div>
+        <div class="overlay-content">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="texts.html">texts</a></li>
+                <li class="section">concepts <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="analytical_priorities.html">analytical priorities</a></li>
+                        <li><a href="project_design.html">project design</a></li>
+                        <li><a href="coding_guidelines.html">coding guidelines</a></li>
+                    </ul>
+                </li>
+                <li class="section">misc <i class="fa fa-caret-down"></i>
+                    <ul>
+                        <li><a href="contributors.html">contributors</a></li>
+                        <li><a href="bibliography.html">bibliography</a></li>
+                        <li><a href="https://github.com/livingstoneonline/onemorevoice/" target="_blank">github repo</a> (external)</li>
+                        <li><a href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                    </ul>
+                </li>
+		    	<li><a href="site_map.html">site map</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- end of nav -->
+
+    <div class="title" id="title-div">
+        <img class="image" src="images/liv_000022_0002-0003-combine.jpg" alt="Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “Notebook III. 22 July-7 October 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." title="Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “Notebook III. 22 July-7 October 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022. Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h3 class="italic">Lost Voices from the British Empire's Archives</h3>
+    </div>
+
+    <div class="main" id="main-div">
+
+		<p><span class="bold site-blue">Coding Guidelines</span></p>
+		
+		<p>The <span class="italic">One More Voice</span> project team has developed a set of lightweight <a href="https://tei-c.org/" target="_blank">TEI coding guidelines</a> in keeping with the minimal computing approach of the project as a whole. The guidelines are based on a simplified version of the <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines" target="_blank">coding guidelines</a> previously created for <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a>. The latter were developed over a ten-year period through a series of <span class="italic">Livingstone Online</span> initiatives. For the <span class="italic">One More Voice</span> guidelines, the project team prioritized key structural and content TEI tags, attributes, and values with two primary goals in mind: 1) Providing a basic TEI scaffolding to support further encoding work by the project team or by others; and 2) Enabling edited and encoded TEI items to be transformed (via XSLT) into <a href="texts.html">facsimile HTML versions</a> for online publication.</p>
+
+		<p style="padding-bottom: 1em;">The list below includes all tags and attributes selected by the team for these purposes, but does not include any tags and attributes exclusive to the TEI header since those do not vary document to document and remain unchanged from <span class="italic">Livingstone Online</span> practices. Each tag is followed by a brief gloss and the number of the corresponding sections of the <span class="italic">Livingstone Online</span> <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines" target="_blank">coding guidelines</a>, which provide further information about practices related to the tag and any relevant attributes and values. As relevant, the entries below also conclude with discussion of significant deviations from the <span class="italic">Livingstone Online</span> guidelines.</p>
+
+		<p><strong>&lt;<span class="site-blue">ab</span>&gt;</strong> - text with no clear relationship to the surrounding text - 11.12; @<span class="site-red">rend</span> - 11.12</p>
+
+		<p><strong>&lt;<span class="site-blue">add</span>&gt;</strong> - additions to the original text - 11.13; @<span class="site-red">place</span> - 11.13; @<span class="site-red">rend</span> - 11.13</p>
+
+		<p><strong>&lt;<span class="site-blue">bloc</span>&gt;</strong> - multinational entities, usually continents - 15</p>
+
+		<p><strong>&lt;<span class="site-blue">choice</span>&gt;</strong> - segments of text for which the editors have provided alternatives (also see &lt;<span class="site-blue">sic</span>&gt; and &lt;<span class="site-blue">corr</span>&gt;, and &lt;<span class="site-blue">orig</span>&gt; and &lt;<span class="site-blue">reg</span>&gt;) - 12.2, 12.7</p>
+
+		<p><strong>&lt;<span class="site-blue">corr</span>&gt;</strong> - suggested editorial corrections of the original text (also see &lt;<span class="site-blue">sic</span>&gt;) - 12.2</p>
+
+		<p><strong>&lt;<span class="site-blue">country</span>&gt;</strong> - countries - 15</p>
+
+		<p><strong>&lt;<span class="site-blue">date</span>&gt;</strong> - dates - 9, @<span class="site-red">from</span> - 9; @<span class="site-red">to</span> - 9; @<span class="site-red">when</span> - 9</p>
+
+		<p><strong>&lt;<span class="site-blue">del</span>&gt;</strong> - deletions from the original text - 11.13; @<span class="site-red">rend</span> - 11.13</p>
+
+		<p><strong>&lt;<span class="site-blue">div</span>&gt;</strong> - divisions of the original text - 4; @<span class="site-red">rend</span> - 4</p>
+
+		<p><strong>&lt;<span class="site-blue">figDesc</span>&gt;</strong> - editorial descriptions of figures, drawing, and calculations - 21</p>
+
+		<p><strong>&lt;<span class="site-blue">figure</span>&gt;</strong> - figures, drawing, and calculations - 21; @<span class="site-red">rend</span> - 21</p>
+
+		<p><strong>&lt;<span class="site-blue">foreign</span>&gt;</strong> - foreign words and phrases - 19</p>
+
+		<p><strong>&lt;<span class="site-blue">gap</span>&gt;</strong> - missing portions of text or text that is completely illegible (also see &lt;<span class="site-blue">unclear</span>&gt;) - 12.5; @<span class="site-red">extent</span> - 12.5; @<span class="site-red">unit</span> - 12. 5</p>
+
+		<p><strong>&lt;<span class="site-blue">geogName</span>&gt;</strong> - formally named geographical entities - 15</p>
+
+		<p><strong>&lt;<span class="site-blue">hi</span>&gt;</strong> - formatting in the original text such as underlining - 11.3; @<span class="site-red">rend</span> - 11.3</p>
+
+		<p><strong>&lt;<span class="site-blue">lb</span>&gt;</strong> - line breaks (placed at the beginning of lines in coded text) - 7; @<span class="site-red">break</span> - 11.5</p>
+
+		<p><strong>&lt;<span class="site-blue">metamark</span>&gt;</strong> - textual marks used to indicate original authorial or editorial amendations - 11.3; @<span class="site-red">place</span> - 11.3; @<span class="site-red">rend</span> - 11.3</p>
+
+		<p><strong>&lt;<span class="site-blue">milestone</span>&gt;</strong> - lines in the original text used to separate different sections - 11.9; @<span class="site-red">rend</span> - 11.9; @<span class="site-red">unit</span> - 11.9</p>
+
+		<p><strong>&lt;<span class="site-blue">note</span>&gt;</strong> - authorial notes within the original text - 11.17</p>
+
+		<p><strong>&lt;<span class="site-blue">orgName</span>&gt;</strong> - formally-named groups and organizations not covered by &lt;<span class="site-blue">term</span> <span class="site-red">type</span>=“collective”&gt; - 17-17.1</p>
+
+		<p><strong>&lt;<span class="site-blue">orig</span>&gt;</strong> - nineteenth-century variants of words for which the editors have provided contemporary standardized versions (also see &lt;<span class="site-blue">reg</span>&gt;) - 12.7</p>
+
+		<p><strong>&lt;<span class="site-blue">p</span>&gt;</strong> - paragraphs - 8; @<span class="site-red">rend</span> - 8</p>
+
+		<p><strong>&lt;<span class="site-blue">pb</span>&gt;</strong> - page breaks - 6; @<span class="site-red">facs</span> - 6; @<span class="site-red">n</span> - 6</p>
+
+		<p><strong>&lt;<span class="site-blue">persName</span>&gt;</strong> - formally-named individuals - 14</p>
+
+		<p><strong>&lt;<span class="site-blue">placeName</span>&gt;</strong> - formally-named places - 15 - now used only as a fallback option in cases where &lt;<span class="site-blue">bloc</span>&gt;, &lt;<span class="site-blue">country</span>&gt;, &lt;<span class="site-blue">region</span>&gt;, &lt;<span class="site-blue">settlement</span>&gt;, and &lt;<span class="site-blue">geogName</span>&gt; are not appropriate</p>
+
+		<p><strong>&lt;<span class="site-blue">reg</span>&gt;</strong> - contemporary standardized versions of words that appear in nineteenth-century variants in the original text (also see &lt;<span class="site-blue">orig</span>&gt;) - 12.7</p>
+
+		<p><strong>&lt;<span class="site-blue">region</span>&gt;</strong> - formally-named regions; used when &lt;<span class="site-blue">country</span>&gt; or &lt;<span class="site-blue">bloc</span>&gt; are not appropriate - 15</p>
+
+		<p><strong>&lt;<span class="site-blue">seg</span>&gt;</strong> - segments of text somehow unusual or noteworthy - 11.4 and elsewhere; @<span class="site-red">rend</span> - 11.4 and elsewhere; @<span class="site-red">type</span> - 11.4 and elsewhere; also @<span class="site-red">type</span>=“metamark” now used to tag metamarks (e.g., &lt;<span class="site-blue">seg</span> <span class="site-red">type</span>=“metamark”&gt;^&lt;<span class="site-blue">/seg</span>&gt;) and @<span class="site-red">type</span>=“hyphen” now used to tag hyphens in words that break over two lines (e.g., &lt;<span class="site-blue">w</span>&gt;Livings&lt;<span class="site-blue">seg</span> <span class="site-red">type</span>="hyphen"&gt;-&lt;<span class="site-blue">/seg</span>&gt;&lt;<span class="site-blue">lb</span> <span class="site-red">break</span>="no"/&gt;tone&lt;<span class="site-blue">/w</span>&gt;)</p>
+
+		<p><strong>&lt;<span class="site-blue">settlement</span>&gt;</strong> - settlements such as villages, towns, and cities - 15</p>
+
+		<p><strong>&lt;<span class="site-blue">sic</span>&gt;</strong> - original text deemed as somehow erroneous by the editors (also see &lt;<span class="site-blue">corr</span>&gt;) - 12.2</p>
+
+		<p><strong>&lt;<span class="site-blue">space</span>&gt;</strong> - unusual spaces in the original text - 11.6-11.8; @<span class="site-red">dim</span> - 11.6-11.8; @<span class="site-red">extent</span> - 11.6-11.8 - use value of "char" for one to four spaces; use "word" for five spaces; @<span class="site-red">unit</span> - 11.6-11.8</p>
+
+		<p><strong>&lt;<span class="site-blue">supplied</span>&gt;</strong> - text supplied by the editors - 12.6</p>
+
+		<p><strong>&lt;<span class="site-blue">term</span>&gt; </strong>- significant individual and plural entities - 16, all subsections; @<span class="site-red">type</span> - 16, all subsections - only use values of "collective" (which replaces "nationality," "ethnic group," "tribe," "people," "person," "religion," and "faith"), "animal", "insect", "foodstuff", "plant"</p>
+
+		<p><strong>&lt;<span class="site-blue">unclear</span>&gt;</strong> - text that is unclear but partly legible (also see &lt;<span class="site-blue">gap</span>&gt;) - 12.3</p>
+
+		<p><strong>&lt;<span class="site-blue">w</span>&gt;</strong> - words that break over two lines of text or are otherwise somehow broken up - 11.5</p>
+    </div>		
+
+	<div class="credits" id="credits-div">
+		<hr />
+        
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball and Mary Borgo Ton. “Coding Guidelines.” Jared McDonald, ed. <span class="italic">One More Voice</span>, an imprint of <span class="italic">Livingstone Online</span>. Site launch edition, 2020. Web. <a href="coding_guidelines.html">http://onemorevoice.org/coding_guidelines.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International</a></p>
+
+		<p><span class="bold">Header image</span>: Image of a two-page spread from David Livingstone and [Informants from Zanzibar], “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000022" target="_blank">Notebook III. 22 July-7 October 1871</a>,” in <span class="italic">Livingstone Online</span>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit. <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">Creative Commons Attribution-NonCommercial 3.0 Unported</a>. The page at right, the first in a series of such pages, presents a list of Swahili words with definitions in English. Notably, the list begins with “Taone or Towny,” the Swahili word for “cholera.” Cholera had been the source of a significant epidemic in Zanzibar and East Africa in 1869 and 1870. The page at left makes clear that Livingstone worked with a variety of informants to gather the words in the list: “Suaheli spoken by the people from Zanzibar = collected in 1870-71.” The inclusion of such raw, field-based data points to the layered authorship of this document; word choices  – for instance, the fact that the list begins with the words for “cholera” – indicate that local, non-European cultural priorities exerted more influence in shaping the list than might be evident at first.</p>
+	</div>
+
+	<div class="footer" id="footer-div">
+		<hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/" target="_blank">Livingstone Online</a> | Hosted by <a href="https://github.com/" target="_blank">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+	</div>
+</body>
+
+</html>

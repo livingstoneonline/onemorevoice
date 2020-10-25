@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en">
+
+<head>
+    <title>Book-Length Published Works | One More Voice</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Book-Length Published Works page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="scripts.js" defer=''></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+</head>
+
+<body class="essay">
+
+<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+<!-- start of nav -->
+
+	<nav id="skiptocontent" aria-labelledby="nav0">
+		<a href="#main" id="nav0" tabindex="1">skip to main content</a>
+	</nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+    	
+	<nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						materials
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-3" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+    </nav>
+
+    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="sticky" aria-labelledby="nav2">
+        <div class="menu" id="nav2">
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
+            <span class="nav-title">One More Voice</span>
+        </div>
+    </nav>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <nav aria-labelledby="nav3">
+        <div class="overlay" id="nav3">
+            <div class="menu">
+                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+            <div class="overlay-content" role="menu">
+                <ul role="none">
+                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
+					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Materials">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                        </ul>
+                    </li>
+					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Concepts">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Miscellaneous">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                        </ul>
+                    </li>
+                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- end of nav -->
+
+    <header class="title" id="title-div">
+        <img class="image " src="images/mckay-songs-of-jamaica.jpg"  alt="Frontispiece with head and shoulders portrait of Claude McKay, inscribed to Arthur Schomburg; title page of Songs of Jamaica." title="Claude McKay, “Frontispiece Inscribed to Arthur Schomburg and Title Page” (early twentieth century), in Songs of Jamaica (Kingston; London: Aston W. Gardner & Co.; Jamaica Agency, 1912), frontispiece, title page. Public domain image." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
+    </header>
+    
+    <main class="main" id="main-div"><a class="anchor" id="main"></a>
+    <h3>Book-Length Published Works</h3>
+    
+	<section class="toc" aria-labelledby="menu">
+		<!-- Do not renumber this list as new individuals are added; just add an id using the next number in sequenece. Current number: 23.-->
+	    <!-- Use Chicago full note (bibliograpy), then edit to match format here. -->
+	    <ol style="list-style-type: upper-alpha;" id="menu">
+			<li class="toc-title">[Menu: Sections]<a class="anchor" id="list"></a></li>
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#books">Book-Length Published Works</a> (listed by author)
+				<ol>
+					<li><a href="#link-01">Sri Aurobindo</a></li>
+					<li><a href="#link-02">Edward Wilmot Blyden</a></li>
+					<li><a href="#link-03">Bokwala</a></li>
+					<li><a href="#link-04">R.R.R. Dhlomo</a></li>
+					<li><a href="#link-05">Toru Dutt</a></li>
+					<li><a href="#link-06">J.E. Casely Hayford</a></li>
+					<li><a href="#link-07">J. Africanus Horton</a></li>
+					<li><a href="#link-08">Rokeya Sakhawat Hossain</a></li>
+					<li><a href="#link-09">Behrámji Malábari</a></li>
+					<li><a href="#link-10">Claude McKay</a></li>	
+					<li><a href="#link-11">Thomas Mofolo</a></li>
+					<li><a href="#link-12">S.E.K. Mqhayi</a></li>	
+					<li><a href="#link-13">Ham Mukasa</a></li>	
+					<li><a href="#link-14">T. N. Mukharji</a></li>	
+					<li><a href="#link-15">Sarojini Naidu</a></li>	
+					<li><a href="#link-16">Solomon T. Plaatje</a></li>	
+					<li><a href="#link-17">Mary Prince; Louis Asa-Asa</a></li>	
+					<li><a href="#link-18">Krupabai Satthianadhan</a></li>	
+					<li><a href="#link-19">Mary Seacole</a></li>	
+					<li><a href="#link-20">Cornelia Sorabji</a></li>	
+					<li><a href="#link-21">Rabindranath Tagore</a></li>	
+					<li><a href="#link-22">J.J. Thomas</a></li>	
+					<li><a href="#link-23">Swami Vivekanada</a></li>
+				</ol>
+			</li>
+		</ol>
+	</section>
+
+	<br />
+	<hr />
+		
+	<section aria-labelledby="summary">
+		<h4 id="summary"><a class="anchor" id="overview"></a>
+		Overview &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+		<p><span class="italic">One More Voice</span> helps contextualize the <a href="texts.html">critically-edited archival texts</a> published by the site by providing an <a href="#full-length">extended list</a> of Victorian-era, book-length published works by non-European authors (mostly Anglophone). The length of these works makes full-scale critical editing impractical, but the extended list connects nearly every entry to an open-access, digitized version of the original book. Such digital repurposing extends the minimalist <a href="project_design.html">development ethos</a> of <span class="italic">One More Voice</span>, while also enhancing the research and teaching value of the project as a whole. Links to corresponding <a href="https://www.wikipedia.org/">Wikipedia</a> pages and other reliable biographical sources are also included when available. However, because the <span class="italic">One More Voice</span> project can not vouch for the quality of third-party items such as Wikipedia entries and digitized books on external sites, users are urged to apply critical caution when consulting these items.</p>
+	</section> 
+
+	<br />
+	<hr class="text-divider" />
+	<br />
+		
+	<section aria-labelledby="full-length">
+		<h4 id="full-length"><a class="anchor" id="books"></a>
+		Book-Length Published Works &nbsp;<a href="#list" class="return-top">top</a></h4>
+
+		<p class="small">Note: All links in this section point to external, third-party sites.</p>
+
+		<section aria-labelledby="aurobindo">
+			<p class="published-author" id="aurobindo"><a class="anchor" id="link-01"></a><strong>Sri Aurobindo</strong> (1872-1950; <a href="https://en.wikipedia.org/wiki/Sri_Aurobindo">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://aurobindo.site/workings/sa/37_02/index_e.htm">Collected Poems</a>. Pondicherry: Sri Aurobindo Ashram Press, 2009.</li>
+
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.95810/page/n5/mode/2up">The Doctrine of Passive Resistance</a>. Calcutta: Arya Publishing House, 1948.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="blyden">
+			<p class="published-author" id="blyden"><a class="anchor" id="link-02"></a><strong>Edward Wilmot Blyden</strong> (1832-1912; <a href="https://en.wikipedia.org/wiki/Edward_Wilmot_Blyden">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=inu.30000041603337&view=1up&seq=14">African Colonization</a>. N.p.: [Maine Colonization Society?], 1862.</li>
+
+				<li><span class="italic">African Life and Customs</span>. London; New York: C.M. Phillips; ECA Associates, 1990. <span class="italic">Originally published 1908.</span></li>
+
+				<li><span class="italic">Christianity, Islam and the Negro Race</span>. London: W.B. Whittingham &amp; Co., 1887.</li>
+
+				<li><a href="https://archive.org/details/fromwestafricato00blyd">From West Africa to Palestine</a>. Freetown; Manchester; London: T.J. Sawyer; John Heywood; Simpkin, Marshall, &amp; Co., 1873.</li>
+
+				<li><a href="https://archive.org/details/liberiasoffering00">Liberia’s Offering</a>. New York: John A. Gray, 1862.</li>
+
+				<li><a href="https://archive.org/details/africanproblemme00blyd_2">The African Problem and the Method of Its Solution</a>. Washington: Gibson Bros., 1890.</li>
+
+				<li><a href="https://archive.org/details/aimsmethodsoflib01blyd">The Aims and Methods of a Liberal Education for Africans</a>. Cambridge, MA: John Wilson and Son, 1882. <a href="https://archive.org/details/aimsmethodsofa00blyd">Alternate version</a>.</li>
+
+				<li><a href="https://archive.org/details/elementsofperman00blyd">The Elements of Permanent Influence</a>. Washington: B.L. Pendleton, 1890.</li>
+
+				<li><a href="https://archive.org/details/negroinancienthi00blyd_0">The Negro in Ancient History</a>. Washington City: M’Gill &amp; Witherow, 1869.</li>
+
+				<li><a href="https://archive.org/details/originpurposeofa00blyd">The Origin and Purpose of African Colonization</a>. Washington City: American Colonization Society, 1883.</li>
+
+				<li><a href="https://archive.org/details/returnofexileswe00blyd">The Return of the Exiles and the West African Church</a>. London: W.B. Whittingham &amp; Co., 1891.</li>
+
+				<li><a href="https://archive.org/details/significanceofli00blyd">The Significance of Liberia</a>. Liverpool: John Richardson &amp; Sons, 1907.</li>
+
+				<li><a href="https://archive.org/details/peopleofafricase00schi">The People of Africa</a>. Tayler Lewis and Theodore Dwight, co-authors. New York: Anson D.F. Randolph &amp; Co., 1871.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="bokwala">
+			<p class="published-author" id="bokwala"><a class="anchor" id="link-03"></a><strong>Bokwala</strong> (Dates unknown; possibly fictional or composite author) &nbsp;<a href="#list" class="return-top">top</a></p>
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/BokwalaTheStoryOfACongoVictim">Bokwala: The Story of a Congo Victim</a>. London: The Religious Tract Society, 1910. <a href="https://archive.org/details/bokwalastoryofco00cong/page/n7/mode/2up">Alternate version</a>.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="dhlomo">
+			<p class="published-author" id="dhlomo"><a class="anchor" id="link-04"></a><strong>R.R.R. Dhlomo</strong> (1901-1971; <a href="https://www.britannica.com/biography/R-R-R-Dhlomo">Encyclopædia Britannica</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li>Dhlomo, R.R.R. <span class="italic">An African Tragedy</span>. [Lovedale]: Lovedale Institution Press, 1928.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="dutt">
+			<p class="published-author" id="dutt"><a class="anchor" id="link-05"></a><strong>Toru Dutt</strong> (1856-1877; <a href="https://en.wikipedia.org/wiki/Toru_Dutt">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/asheafgleanedin03duttgoog/page/n7/mode/2up">A Sheaf Gleaned in French Fields</a>. Bhowanipore: B.M. Bose, Saptahik Sambad Press, 1876. <a href="https://archive.org/details/asheafgleanedin00duttgoog">Alternate version</a>.</li>
+
+				<li><a href="https://archive.org/details/ancientballadsa00gossgoog/page/n10/mode/2up">Ancient Ballads and Legends of Hindustan</a>. London: Kegan Paul, Trench &amp; Co., 1882.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="hayford">
+			<p class="published-author" id="hayford"><a class="anchor" id="link-06"></a><strong>J.E. Casely Hayford</strong> (1866-1930; <a href="https://en.wikipedia.org/wiki/J._E._Casely_Hayford">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/ethiopiaunbounds00hayf">Ethiopia Unbound</a>. London: C.M. Phillips, 1911.</li>
+
+				<li><a href="https://archive.org/details/goldcoastnativei00hayfiala">Gold Coast Native Institutions</a>. London: Sweet and Maxwell, Limited, 1903.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="horton">
+			<p class="published-author" id="horton"><a class="anchor" id="link-07"></a><strong>J. Africanus Horton</strong> (1835-1883; <a href="https://en.wikipedia.org/wiki/Africanus_Horton">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=chi.19432990&view=1up&seq=11">West African Countries and Peoples, British and Native</a>. London: W.J. Johnson, 1868.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="hossain">
+			<p class="published-author" id="hossain"><a class="anchor" id="link-08"></a><strong>Rokeya Sakhawat Hossain</strong> (1880[?]-1932; <a href="https://en.wikipedia.org/wiki/Begum_Rokeya">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><span class="italic">Sultana’s Dream and Selections from the Secluded One</span>. Roushan Jahan, co-author. New York: The Feminist Press at CUNY, 2013. <span class="italic">“Sultana’s Dream” originally published 1905.</span></li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="malabari">
+			<p class="published-author" id="malabari"><a class="anchor" id="link-09"></a><strong>Behrámji Malábari</strong> (1853-1912; <a href="https://en.wikipedia.org/wiki/Behramji_Malabari">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.237135">Gujarát and the Gujarátis</a>. Bombay: Education Society’s Press, 1884.</li>
+
+				<li><a href="https://archive.org/details/cu31924104730217/page/n7/mode/2up">The Indian Eye on English Life</a>. Westminster: Archibald Constable and Company, 1893.</li>
+
+				<li><a href="https://archive.org/details/indianmuseineng00malagoog/page/n3/mode/2up">The Indian Muse in English Garb</a>. Bombay: The “Reporters” Press, 1876. <a href="https://babel.hathitrust.org/cgi/pt?id=mdp.39015012914688&view=1up&seq=5">Alternate version</a>.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="mckay">
+			<p class="published-author" id="mckay"><a class="anchor" id="link-10"></a><strong>Claude McKay</strong> (1889-1948; <a href="https://en.wikipedia.org/wiki/Claude_McKay">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href=" https://scalar.lehigh.edu/mckay/index">Claude McKay’s Early Poetry (1911-1922)</a>. Edited by Amardeep Singh. Bethlehem, PA: Lehigh University, 2017.</li>
+
+				<li><a href="https://archive.org/details/constabballads00mckarich">Constab Ballads</a>. London: Watts &amp; Co., 1912.</li>
+
+				<li><a href="https://archive.org/details/harlemshadows00mcka/page/n3/mode/2up">Harlem Shadows</a>. New York: Hartcourt, Brace and Company, 1922.</li>
+
+				<li><span class="italic">Songs from Jamaica</span>. London: Augener, Ltd., 1912.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="mofolo">
+			<p class="published-author" id="mofolo"><a class="anchor" id="link-11"></a><strong>Thomas Mofolo</strong> (1876-1948; <a href="https://en.wikipedia.org/wiki/Thomas_Mofolo">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/chakahistoricalr00mofo/page/n5/mode/2up">Chaka</a>. Translated by F.H. Dutton. London: Oxford University Press, 1931. <span class="italic">Originally written 1909.</span></li>
+
+				<li><span class="italic">Traveller to the East</span>. Translated by H. Ashton. London: Society for Promoting Christian Knowledge, 1931. <span class="italic">Originally published 1907.</span></li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="mqhayi">
+			<p class="published-author" id="mqhayi"><a class="anchor" id="link-12"></a><strong>S.E.K. Mqhayi</strong> (1875-1945; <a href="https://en.wikipedia.org/wiki/Samuel_Edward_Krune_Mqhayi">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+			
+			<ol class="works-list">
+				<li><span class="italic">Abantu Besizwe: Historical and Biographical Writings, 1902-1944</span>. Translated by Jeff Opland. Johannesburg: Witts University Press, 2009.</li>
+			
+				<li><span class="italic">Iziganeko Zesizwe: Occasional Poems (1900-1943)</span>. Edited and translated by Jeff Opland and Peter T. Mtuze. Pietermaritzburg: University of KwaZulu-Natal Press, 2017.</li>
+
+				<li><span class="italic">The Lawsuit of the Twins</span>. Oxford: Oxford University Press, 2020. <span class="italic">Originally published 1914.</span></li> 
+			</ol>
+		</section>
+					
+		<section aria-labelledby="mukasa">
+			<p class="published-author" id="mukasa"><a class="anchor" id="link-13"></a><strong>Ham Mukasa</strong> (c.1870-1956; <a href="https://en.wikipedia.org/wiki/Ham_Mukasa">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/ugandaskatikiroi00mukaiala">Uganda’s Katikiro in England</a>. Edited and translated by Ernest Millar. London: Hutchinson &amp; Co., 1904.</li>
+
+				<li><a href="https://archive.org/details/wonderfulstoryug00mull">The Wonderful Story of Uganda; The Story of Ham Mukasa</a>. J.D. Mullins, co-author. London: Church Missionary Society, 1904.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="mukharji">
+			<p class="published-author" id="mukharji"><a class="anchor" id="link-14"></a><strong>T. N. Mukharji</strong> (also <strong>Troilokyanath Mukhopadhyay</strong>; 1847-1919; <a href="https://en.wikipedia.org/wiki/Troilokyanath_Mukhopadhyay">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/b29351388/page/n3/mode/2up">A Hand-Book of Indian Products, (Art-Manufactures and Raw Materials)</a>. Calcutta: J.A. Pritchard at the “Star Press,” 1883.</li>
+
+				<li><a href="https://archive.org/details/AVisitToEurope1889/page/n7/mode/2up">A Visit to Europe</a>. Calcutta: W. Newman & Co., 1889.</li>
+
+				<li><a href="https://archive.org/details/artmanufactureso00mukh">Art-Manufactures of India</a>. Calcutta: The Superintendent of Government Printing, 1888.</li>
+			</ol>
+		</section>
+		
+		<section aria-labelledby="naidu">
+			<p class="published-author" id="naidu"><a class="anchor" id="link-15"></a><strong>Sarojini Naidu</strong> (1879-1949; <a href="https://en.wikipedia.org/wiki/Sarojini_Naidu">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.276950">Speeches and Writings</a>. Madras: G.A. Natean &amp; Co., [1919].</li>
+
+				<li><a href="https://archive.org/details/cu31924013254143/page/n7/mode/2up">The Bird of Time</a>. London; New York: William Heinemann; John Lane Company, 1912.</li>
+
+				<li><a href="https://archive.org/details/brokenwingsongso00naid">The Broken Wing</a>. London; New York: William Heinemann; John Lane Company, 1917.</li>
+
+				<li><a href="https://archive.org/details/goldenthreshold00naidgoog">The Golden Threshold</a>. London: William Heinemann, 1905.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="plaatje">
+			<p class="published-author" id="plaatje"><a class="anchor" id="link-16"></a><strong>Solomon T. Plaatje</strong> (1876-1932; <a href="https://en.wikipedia.org/wiki/Sol_Plaatje">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><span class="italic">Mhudi</span>. Lovedale: Lovedale Press, 1930.</li>
+
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.236312/page/n3/mode/2up">Native Life in South Africa</a>. Lodon: P.S. King &amp; Son, Ltd., 1916. <a href="https://babel.hathitrust.org/cgi/pt?id=emu.010001216005&view=1up&seq=1">Alternate version</a>.</li>
+
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=uc1.b4232182&amp;view=1up&amp;seq=11">Sechuana Proverbs with Literal Translations and Their European Equivalents</a>. London: Kegan Paul, Trench, Trubner &amp; Co., Ltd., 1916.</li>
+
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=wu.89010294395&amp;view=1up&amp;seq=8">A Sechuana Reader</a>. Daniel Jones, co-author. London: The University of London Press, Ltd., 1916.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="prince">
+			<p class="published-author" id="prince"><a class="anchor" id="link-17"></a><strong>Mary Prince</strong> (1788-1833; <a href="https://en.wikipedia.org/wiki/Mary_Prince">Wikipedia</a>); <strong>Louis Asa-Asa</strong> (Dates unknown) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="http://digilib.nypl.org/dynaweb/digs/wwm97262/@Generic__BookView">The History of Mary Prince, a West Indian Slave; The Narrative of Asa-Asa, a Captured African</a>. London; Edinburgh: F. Westley and A.H. Davis; Waugh & Innes, 1831.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="satthianadhan">
+			<p class="published-author" id="satthianadhan"><a class="anchor" id="link-18"></a><strong>Krupabai Satthianadhan</strong> (1862-1894; <a href="https://en.wikipedia.org/wiki/Krupabai_Satthianadhan">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044088736988&amp;view=1up&amp;seq=9">Kamala</a>. Madras: Srinivasha, Varadachari &amp; Co., 1894.</li>
+
+				<li><a href="http://www.empire.amdigital.co.uk/Documents/Details/Saguna%20A%20Story%20of%20Native%20Christian%20Life_">Saguna</a>. Madras: Srinivasha, Varadachari &amp; Co., 1895. <span class="italic">Originally published 1892.</span></li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="seacole">
+			<p class="published-author" id="seacole"><a class="anchor" id="link-19"></a><strong>Mary Seacole</strong> (1805-1881; <a href="https://en.wikipedia.org/wiki/Mary_Seacole">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><span class="italic">Wonderful Adventures of Mrs. Seacole in Many Lands</span>. London: James Blackwood, 1857.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="sorabji">
+			<p class="published-author" id="sorabji"><a class="anchor" id="link-20"></a><strong>Cornelia Sorabji</strong> (1866-1954; <a href="https://en.wikipedia.org/wiki/Cornelia_Sorabji">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/betweentwilights00soraiala">Between the Twilights</a>. London; New York: Harper and Brothers, 1908.</li>
+
+				<li><a href="https://archive.org/details/indiantalesofgre00soraiala/page/n7/mode/2up">Indian Tales of the Great Ones</a>. Warwick House, Bombay; London; Glasgow: Blackie and Son Limited, 1916.</li>
+
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=umn.31951p009235857&amp;view=1up&amp;seq=7">Love and Life Behind the Purdah</a>. London: Freemantle &amp; Co., 1901.</li>
+
+				<li><a href="https://archive.org/details/shubalachildmoth00soraiala/page/n3/mode/2up">Shubala - A Child-Mother</a>. Calcutta: Baptist Mission Press, 1920</li>
+
+				<li><a href="https://archive.org/details/sunbabiesstudie00soragoog">Sun Babies</a>. Lonond: John Murray, 1904. <a href="https://archive.org/details/sunbabiesstudies00sorarich">Alternate version</a>.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="tagore">
+			<p class="published-author" id="tagore"><a class="anchor" id="link-21"></a><strong>Rabindranath Tagore</strong> (1861-1941; <a href="https://en.wikipedia.org/wiki/Rabindranath_Tagore">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/dli.bengal.10689.12917">Collected Poems and Plays</a>. London: Macmillan and Co., Limited, 1921. <span class="italic">Originally published 1920.</span></li>
+
+				<li><a href="https://archive.org/details/fruitgathering00tagoiala/page/n5/mode/2up">Fruit-Gathering</a>. London: Macmillan and Co., Limited, 1916.</li>
+
+				<li><a href="https://archive.org/details/gitanjalisongoff00tago_0">Gitanjali (Song Offerings)</a>. London: Chiswick Press for the India Society, 1912.</li>
+
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=uc2.ark:/13960/t74t6nc5q&amp;view=1up&amp;seq=9">My Reminiscences</a>. London: Macmillan and Co., Limited, 1917.</li>
+
+				<li><a href="https://archive.org/details/crescentmoon00tago">The Crescent Moon</a>. London: Macmillan and Co., Limited, 1913.</li>
+
+				<li><a href="https://archive.org/details/cycleofsprin00tago">The Cycle of Spring</a>. London: Macmillan and Co., Limited, 1917.</li>
+
+				<li><a href="https://archive.org/details/fugitive00tagoiala">The Fugutive</a>. London: Macmillan and Co., Limited, 1921.</li>
+
+				<li><a href="https://archive.org/details/homeandworld01unkngoog">The Home and the World</a>. London: Macmillan and Co., Limited, 1919. <a href="https://archive.org/details/hometheworld00tagouoft">Alternate version</a>.</li>
+
+				<li><a href="https://archive.org/details/postoffice00yeatgoog/page/n6/mode/2up">The Post Office</a>. London: Macmillan and Co., Limited, 1914.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="thomas">
+			<p class="published-author" id="thomas"><a class="anchor" id="link-22"></a><strong>J.J. Thomas</strong> (1841-1889; <a href="https://en.wikipedia.org/wiki/John_Jacob_Thomas">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://babel.hathitrust.org/cgi/pt?id=chi.20760812&amp;view=1up&amp;seq=9">Froudacity</a>. London: T. Fisher Unwin, 1889. <a href="https://babel.hathitrust.org/cgi/pt?id=loc.ark:/13960/t5q82472z&view=1up&seq=1">Alternate version</a>.</li>
+
+				<li><a href="https://archive.org/details/theorypracticeof00thom/page/n3/mode/2up">The Theory and Practice of Creole Grammar</a>. Port-of-Spain: The Chronicle Publishing Office, 1869.</li>
+			</ol>
+		</section>
+
+		<section aria-labelledby="vivekanada">
+			<p class="published-author" id="vivekanada"><a class="anchor" id="link-23"></a><strong>Swami Vivekanada</strong> (1863-1902; <a href="https://en.wikipedia.org/wiki/Swami_Vivekananda">Wikipedia</a>) &nbsp;<a href="#list" class="return-top">top</a></p>
+
+			<ol class="works-list">
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.195507/page/n5/mode/2up">A Study of Religion</a>. Calcutta: The Ramakrishna Mission, 1908.</li>
+
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.195578/page/n5/mode/2up">Bhatki-Yoga</a>. Madras: Thompson and Co., The “Minerva” Press, 1896.</li>
+				<li><a href="https://archive.org/details/inspiredtalks00viverich">Inspired Talks</a>. Madras: The Ramakrishna Mission, 1901</li>
+
+				<li><a href="https://archive.org/details/dli.bengal.10689.15997/page/n5/mode/2up">Karma-Yoga</a>. Calcutta: Swami Trigunatita, Udbodhan Press, 1901.</li>
+				
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.272243/mode/2up">Lectures from Colombo to Almora</a>. Mayavati, Almora, Himalayas: Advaita Ashrama, 1944. <span class="italic">Originally published 1897.</span></li>
+				
+				<li><a href="https://archive.org/details/mymaster00unkngoog">My Master.</a> New York: The Baker &amp; Taylor Company, 1901.</li>
+				
+				<li><a href="https://archive.org/details/rajayogaswamivivekananda1920_202004_821_e">Râja Yoga</a>. New York: Brentano’s, 1920. <span class="italic">Originally published 1896.</span></li>
+				
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.135094/page/n5/mode/2up">The Complete Works of Swami Vivekanada</a>. Vol. 1. Calcutta: Advaita Ashrama, 1957. <span class="italic">Also see other volumes</span>.</li>
+				
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.196026/page/n5/mode/2up">The Science and Philosophy of Religion</a>. Calcutta: Nababibhakar Press, 1908.</li>
+				
+				<li><a href="https://archive.org/details/in.ernet.dli.2015.196080/page/n9/mode/2up">Vedânta Philosophy</a>. New York: The Baker &amp; Taylor Company, 1899. <span class="italic">Originally published 1896.</span></li>
+			</ol>
+		</section>
+
+	</section>
+    </main>
+
+	<aside class="credits" id="credits-div">
+		<hr />
+        
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S. “Book-Length Published Works.” <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="books.html">https://onemorevoice.org/books.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+
+		<p><span class="bold">Header image</span>: Claude McKay, “<a href="https://dp.la/item/4aba5aa5e3116400403c7af060bff681?q=Songs%20of%20Jamaica%20mckay">Frontispiece Inscribed to Arthur Schomburg and Title Page</a>” (early twentieth century), in <span class="italic">Songs of Jamaica</span> (Kingston; London: Aston W. Gardner & Co.; Jamaica Agency, 1912), frontispiece, title page. Public domain image. The image of these two book pages, notable for McKay's inscription to writer and historian Arthur Schomburg, comes from the <a href="https://dp.la/">Digital Public Library of America</a>. Use of the image on this webpage reflects the fact that <span class="italic">One More Voice</span> has made a virtue of repurposing open-access digital materials in the face of restricted  first-hand opportunities for archival research due to the Coronavirus pandemic.</p>
+	</aside>
+    
+    <footer class="footer" id="footer-div">
+		<hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000074">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Extract from Diary</title>
+                <title type="alternative">Extract from Diary, May-June 1873</title><!-- Change; note addition of date -->
+                <author>Wainwright, Jacob, c.1851/2-1892</author>
+                <author role="first">Wainwright, Jacob</author>
+				<author role="first-normalized">Jacob Wainwright</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="AM">
+                    <name>Anne Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+				<respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_000074</idno>
+            <availability>
+	                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+	                      	Creative Commons Attribution 4.0 International
+	                    </licence>
+				</availability>
+			</publicationStmt>
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <settlement>Blantyre</settlement>
+                        <repository>David Livingstone Centre</repository>
+                        <idno type="shelfmark">801</idno>
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's - likely to be someone at David Livingstone Centre.</handNote>
+                            <handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's - likely to be that of the donor, who claims to be Dr James Christie's nephew.</handNote>
+                            <handNote xml:id="U3"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's - likely to be a scribe working for Dr James Christie.</handNote>
+                            <handNote xml:id="JC"><label>Unknown Hand</label> This is the hand of Dr James Christie, medical officer at Zanzibar at the time of 
+                                Livingstone's death.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                    <title>Extract from Diary</title>
+                    <author xml:id="JW">Wainwright, Jacob, c.1851/2-1892</author>
+                    <date type="composition" from="1873-05-01" to="1873-06-01">May-June 1873</date><!-- Change, including attributes -->
+                    <placeName type="compositionPlace">[East Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry --> 
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Change @when, @who, and work description below. -->
+			<!-- Note that @who initials are taken from <respStmt> above -->
+			<!-- Add new <change> elements below as needed. -->
+			<!-- Note that the most recent <change> should always be placed first, at the top -->
+			<change when="2020-05-07" who="#AW">Standardize TEI</change>
+			<change when="2018-02-27" who="#AW">Coding review</change>
+            <change when="2018-02-20" who="#HB">Proofing</change>
+            <change when="2018-01-31" who="#AM">Transcription and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+       	<body n="e0d3c0">
+			<div rend="brown" hand="#U3">
+
+	<pb facs="liv_000074_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
+<lb/><fw><add place="marginleft" rend="gray" hand="#U1">801</add></fw>
+<lb/><space extent="8" unit="words"/><fw>(1)</fw>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="2" unit="chars"/><add place="inline" hand="#JC"><choice><sic><persName>D<hi rend="sup underline">r</hi> Livingstone</persName>s</sic><corr><persName>D<hi rend="sup underline">r</hi> Livingstone</persName>'s</corr></choice> death.</add></p>
+<lb/><p rend="no-indent"><add place="inline" hand="#JC"><choice><sic><persName>D<hi rend="sup underline">r</hi> Livingstone</persName>s</sic><corr><persName>D<hi rend="sup underline">r</hi> Livingstone</persName>'s</corr></choice> disease increase from
+<lb/><geogName>river Chambezi</geogName>. After leaving <geogName>river Chambezi</geogName>
+<lb/>came to the <geogName>river Manikazi</geogName>. The name of the
+<lb/><term type="occupation">Chief man</term> of the place is <persName>Katenkera</persName> where his
+<lb/>disease more and more increased. From here
+<lb/>we came to <persName>Kopa</persName>; the <term type="occupation">chief man</term> on <geogName>river
+<lb/>Mitikira</geogName>. From <geogName>river Mitikira</geogName> we came to
+<lb/><persName><w>Lawa<add place="above">m<seg type="metamark">/</seg><!-- Note this new coding. AW --></add>ba</w></persName>, the <term type="occupation">chief man</term>. The river name is
+<lb/><choice><sic>is</sic><corr/></choice> <geogName>Lookulu</geogName>. From <region>Mayawambe</region> we began to carry
+<lb/>him in a cot. From here we proceeded to
+<lb/><placeName>Katangandyofu</placeName><!-- is this the right coding when you're unsure if it's a village, town or region? AM --><!-- It sure is, you're on point!! HB --><!-- Agreed. AW --> on borders of <region><term type="collective"><choice><orig>Wabisa</orig><reg>Bisa</reg></choice></term> country</region>.
+<lb/>The river here is <geogName>Lulimala</geogName>. After crossing the
+<lb/><geogName>river Lulimala</geogName> we entered on another and
+<lb/>new country. The native <term type="occupation">chief</term> of this
+<lb/>place <supplied>is</supplied> named <persName>Kutumbo</persName> and the name of
+<lb/>his country is <region>Muilala</region></add><supplied>.</supplied></p>
+<lb/>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="3" unit="chars"/><add place="inline" hand="#U2">Page (1) written by my uncle, <persName>D<hi rend="sup underline">r</hi> Christie</persName>
+<lb/><space extent="2" unit="words"/><space extent="3" unit="chars"/>who at the time, was <term type="occupation">physician</term> to
+<lb/><space extent="2" unit="words"/><space extent="3" unit="chars"/><persName>Burgash</persName>, Sultan of <geogName>Zanzibar</geogName></add></p>
+<lb/><space dim="vertical" unit="lines" extent="2"/>
+
+	<pb facs="liv_000074_0002" n="0002" type="blank" ana="20"/>
+<lb/><!-- blank page AM -->
+
+	<pb facs="liv_000074_0003" n="0003"/>
+<lb/><space extent="10" unit="words"/><fw>(2)</fw> <!-- Can't fully make it out but looks like in the corner "2v" is written as well?? HB --><!-- See how I've handled this on next line, as I'm not convinced by your reading. AW -->
+<lb/><p rend="no-indent">Here after lodging one day the next day the <add place="above">^ <unclear><gap extent="1" unit="words"/></unclear></add> next
+<lb/>night he died on <date when="1873-05-04">May 4<hi rend="sup dotted-underline">th</hi><!-- underscore is 2 dots rather than line AM --><!-- Use dotted-underline. AW --> 1873</date>. Next day that
+<lb/>is on <date when="1873-05-05">May 5<hi rend="sup dotted-underline">th</hi><!-- underscore is 2 dots rather than line AM --><!-- Use dotted-underline. AW --></date> we had no other remedy than
+<lb/>salting his body to preserve it from corruption
+<lb/>and when his belly was examined nothing was
+<lb/>found except black blood and also his lungs
+<lb/>were found wasted up. On <date when="1873-05-06">the following day</date>
+<lb/>we made ready a box or coffin. We generally
+<lb/>made our cottages around a large shady tree.
+<lb/>The name of this tree of this time is <hi rend="underline"><term type="plant">Mbura</term></hi>
+<lb/>on which we carved an inscription as <hi rend="underline"><persName>D<hi rend="sup underline">r</hi> <w>Livings<seg type="hyphen">-</seg>
+<lb break="no"/>tone</w></persName>; <date when="1873-05-04">May 4<hi rend="sup underline">th</hi> 1873</date></hi>. And also the names of three
+<lb/><choice><sic>leader</sic><corr>leaders</corr></choice> <persName>Jazuza</persName>, <persName>Manyasere</persName> &amp; <persName>Chopere</persName>.</p>
+<lb/><milestone unit="section" rend="center quarter-line"/>
+<milestone unit="section" rend="center quarter-line"/><!-- doesn't really resemble the appearance of the line but is as near as I can get AM--><!-- Fixed. See how I've done this. AW -->
+<p rend="no-indent"><space extent="1" unit="words"/><space extent="1" unit="chars"/>Onward March to home.</p>
+<lb/><p rend="no-indent">When we saw our master was dead we had
+<lb/>no need to proceed further, but return to <geogName>Zanzibar</geogName>
+<lb/>carrying with us the corpse. We had lived 12
+<lb/>days in the town of <settlement>Veitumba</settlement>, and in the <w>fol<seg type="hyphen">-</seg>
+<lb break="no"/>lowing</w> day we began our march at <unclear><choice><sic>lenght</sic><corr>length</corr></choice></unclear>.</p>
+<lb/><p>We came to a town the important <term type="occupation">chief</term> is
+<lb/><persName>Manawam-Gungu</persName>. We had lived several days
+<lb/>here for the sake of sickness. All the people in
+<lb/>our caravan were sick, by the exception of five
+<lb/>or six. On the <date when="1873-06-25">25<hi rend="sup dotted-underline">th</hi><!-- underscore is 2 dots rather than line AM --><!-- Use dotted-underline. AW --> of June</date> we had arrived
+<lb/>on the <geogName>banks of <geogName><choice><orig>Lwapla</orig><reg>Luapula</reg></choice></geogName></geogName> the same river <geogName><w>Cham<seg type="hyphen">-</seg>
+<lb break="no"/><space extent="8" unit="words"/><space extent="2" unit="chars"/><seg type="hyphen">=</seg>bezy</w></geogName>
+
+	<pb facs="liv_000074_0004" n="0004"/>
+<lb/><space extent="8" unit="words"/><space extent="2" unit="chars"/><fw>3/</fw> <!-- this page's ink seems black, but not sure if we are encoding colors anymore? HB --><!-- We are doing colors, but in this case I think it's more about the color of the page changing a bit and creating the illusion that the ink has changed, so in this case I think we can leave as is. AW -->
+<lb/>This river is very broad and important. It <!-- geog: Lualupa -->
+<lb/>flows Eastward or towards the sunset. The
+<lb/><term type="occupation">Chief</term> or <term type="occupation">Sultan</term> of this place <supplied>is</supplied> named <persName><w>Kasa<seg type="hyphen">-</seg>
+<lb break="no"/>ramarama</w></persName>. When we were crossing this river <!--geog: Lualupa -->
+<lb/>we nearly came upon a fighting, and the <w>nati<seg type="hyphen">-</seg>
+<lb break="no"/>ves</w> would hardly give their canoes. When we
+<lb/>were arrived on the other side of <geogName><choice><orig>Lwapla</orig><reg>Luapula</reg></choice></geogName>, that
+<lb/>is the <region>country of <persName>Kawenday</persName></region>. This country is
+<lb/>reported to be full of wild animals, as <term type="animal">lion</term>,
+<lb/><term type="animal">tiger</term>, &amp; <term type="animal">elephants</term>, &amp; it is very true. For in
+<lb/>the same night about 10 o'clock, when we were
+<lb/>all asleep, two or couple of <term type="animal">lions</term> came &amp; killed
+<lb/>our fine <term type="animal">donkey</term>. which had been useful to us
+<lb/>for the sick persons. That night we did not
+<lb/>have any sleep by the roarings of the <term type="animal">lions</term>.
+<lb/>But we kept watch &amp; fired at them when
+<lb/>they attempted to come near. We had some
+<lb/>fear that they might come again &amp; fall upon
+<lb/><choice><sic>human-beings</sic><corr>human beings</corr></choice>. The natives and all the <w>peo<seg type="hyphen">-</seg>
+<lb break="no"/>ple</w>
+<lb/><space dim="vertical" unit="lines" extent="1"/>
+
+	<pb facs="liv_000074_0005" n="0005"/>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><seg type="catch">sleep</seg> <!-- Adrian, this looks like a catch word similar to what was used in 0075 - are we sic/corr-ing this out, or making a note of the duplication somehow? HB --><!-- See new coding. AW -->
+<lb/><space extent="9" unit="words"/><space extent="4" unit="chars"/><fw><hi rend="underline">4</hi></fw>
+<lb/>
+<lb/><space extent="3" unit="words"/>sleep by the roarings of the <term type="animal">lions</term>.</p>
+<lb/><p><space extent="3" unit="words"/>But we kept watch &amp; fired
+<lb/><space extent="3" unit="words"/>at them when they attempted to
+<lb/><space extent="3" unit="words"/>come near. We had some fear
+<lb/><space extent="3" unit="words"/>that they might come again &amp;
+<lb/><space extent="3" unit="words"/>fall upon <choice><sic>human-beings</sic><corr>human beings</corr></choice>. The <w>na<seg type="hyphen">-</seg>
+<lb break="no"/><space extent="3" unit="words"/>tives</w> and all the people</p> <!-- Again, this passage is a duplication of the previous page - are we coding in a way to note that or leaving as-is? HB --><!-- Very odd. No just leave as is. AW -->
+<lb/><space dim="vertical" unit="lines" extent="10"/>
+
+
+	<pb facs="liv_000074_0006" n="0006"/>
+<lb/><cb rend="vertical"/><p rend="no-indent gray" hand="#U1"><space extent="3" unit="words"/>Part of
+<lb/><space extent="3" unit="words"/><bibl>original diary</bibl>
+<lb/><space extent="3" unit="words"/>of the men who
+<lb/><space extent="3" unit="words"/>carried <persName>Livingstone</persName>'s
+<lb/><space extent="3" unit="words"/>body down
+<lb/><space extent="3" unit="words"/>to the <region>coast</region></p>
+<lb/><space dim="vertical" unit="lines" extent="2"/>
+			</div>
+
+		</body>	
+
+    </text>
+</TEI>

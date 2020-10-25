@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020028"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Tippoo Tib”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Tippoo Tib’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Tippoo Tib,” 17 May 1887</title><!-- Title, date -->
+                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Tippu Tip, 1837-1905</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Tippu Tip</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="CM">
+                    <name>Caitlin Matheis</name>
+                    <resp>Transcription</resp>
+                    <resp>Proofing</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_20028</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://www.gale.com/c/the-times-digital-archive">The Times Digital Archive</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="narrow"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>The Times</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author></author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="pages">5</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<date>17 May 1887</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Tippoo Tib”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="An">Anonymous</author>
+                    <author xml:id="TT">Tippu Tip</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1887-05-17">17 May 1887</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="composition" when="1887-03-30">30 March 1887</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Matadi, Congo River</placeName><!-- Can be "compositionPlace" or "focusRegion" --></bibl>
+            </sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-10" who="#AW">TEI Encoding</change>
+			<change when="2020-09-01" who="#CM">Create and Proof Text</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8212; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020028_0001" n="0001"/>
+<head rend="caps center"><persName>Tippoo Tib</persName>.</head> 
+<p rend="right"><hi rend="caps"><settlement>Matadi</settlement>, <geogName>Congo River</geogName></hi>, <date when="1887-03-30"><hi rend="smallcaps">March</hi> 30</date>.<space extent="2" unit="chars"/></p>
+<lb/><p>During the two days' stay made by <orgName><persName>Mr. Stanley</persName>'s 
+ex<!-- - -->pedition</orgName> at this place, in order to organize the caravan 
+inteaded to proceed by way of the <geogName>Falls</geogName> to <settlement>Leopoldville</settlement>, 
+a resident here had a conversation with <persName>Tippoo Tib</persName>, in 
+which the latter entered into full particulars concerning 
+his past and present connexion with <persName>Mr. H.M. Stanley</persName>.</p>
+<p>It was at <geogName>Zanzibar</geogName>, where <persName>Tippoo Tib</persName>, accompanied by 
+his son, had gone to sell ivory, that he received <persName>Mr. 
+Stanley</persName>'s letter from <settlement>Brussels</settlement>, proposing to him to enter 
+the service of the <orgName>Assooiation</orgName>. No mention was then 
+made of any appointment as <persName>Governor of the <geogName>Falls</geogName></persName>, it 
+being merely stated that <persName>Tippoo Tib</persName>'s services would be 
+used on the <region><geogName>Upper Congo</geogName></region>, as near as possible to the centre 
+of his operations in <bloc>Africa</bloc>. <persName>Tippoo Tib</persName> mentioned these 
+proposals to his son, who advised him not to accept them 
+He resolved to await <persName>Mr. Stanley</persName>'s arrival, offering his 
+services meanwhile for engaging 200 <term type="collective"><geogName>Zanzibar</geogName> natives</term> for 
+the projected expedition.</p>
+<p>After speaking of the services which he had rendered to 
+<persName>Lieutenant Cameron</persName> and <persName>Mr. Stanley</persName>, and particularly to 
+the latter on his first expedition, <persName>Tippoo Tib</persName> was asked what 
+had decided him to aceept <persName>Mr. Stanley</persName>'s offer and to ac-
+company him to <settlement>Boma</settlement>. He replied as follows :&#8212;</p>
+<p>"I never clearly understood the object or the 
+organiza<!-- - -->tion of the <orgName>International African Association</orgName>. The other 
+<term type="collective">Arab</term> chiefs and myself at first believed, on seeing 
+expedi<!-- - -->tions organized at <geogName>Zanzibar</geogName> under <persName>Captain Cambier</persName> and 
+<persName>Lieu<!-- - -->tenant Becker</persName>, that the <term type="collective">Europeans</term> wished to compete 
+with us in the markets of <settlement>Tabora</settlement> and <geogName>Zanzibar</geogName>, and 
+ex<!-- - -->port, like ourselves, ivory and produce of various kinds.
+We did not know whether <persName>Stanley</persName> and the other white 
+chiefs were acting for the <persName>King of the Belgians</persName>, for
+<country>Belgium</country>, or for the <orgName>International Association</orgName>, and we 
+were always left in doubt on the point.</p>
+<p>"But now that we have seen that such are not the 
+intentions of the whites&#8212;that is to say, of the <term type="collective">Belgians</term> 
+and <term type="collective">English</term>, whom we have met on the <region>East Coast</region> ; now 
+that they have abandoned this part of <bloc>Africa</bloc> in order to 
+establish, by common accord, we are told, between all the 
+great peoples of <bloc>Europe</bloc>, a State where everybody may 
+freely trade, we see no further reason to doubt the good
+intentions of the whites, who have already done so much
+in <bloc>Africa</bloc>."</p>
+<p>Being next asked if there were not other reasons which 
+had led him to accept <persName>Mr. Stanley</persName>'s proposals, <persName>Tippoo 
+Tib</persName> replied :&#8212;</p>
+<p>"Yes. I confess that at first the idea of becoming a 
+functionary of the <country>Independent Congo State</country> was a singular 
+one to me. But <persName>Stanley</persName> pointed out that I should have a 
+privileged position; that the <country>State</country> on its side could only 
+gain by seeing its establishments on the <region><geogName>Upper Congo</geogName></region> 
+supported by the authority which for many years past I 
+had acquired over the people of the interior, who all knew 
+me through having traded with me ; while,as regarded 
+my<!-- - -->self, I could not but strengthen my commercial relations 
+by means of the support which the <country>Congo State</country> would 
+afford to me, as to all who were established on its 
+territory.</p>
+<p>"I perceived the justice of these arguments, and I had, 
+moreover, at heart to remedy, as far as I could, the 
+mischief which the <term type="collective">Arabs</term> and the population at the <geogName>Falls</geogName> 
+had done in destroying the station at <geogName>Stanley Falls</geogName>. This 
+act was the result of misunderstanding and imprudence; but 
+I do not think that I can refuse to make reparation if, as 
+I believe, I can do so."</p>
+<p><persName>Tippoo Tib</persName> admitted that he was also influenced by 
+commercial considerations of another kind, and said :&#8212;</p>
+<p>"The circumstances under which trade is carried on 
+with the <region>East <choice><sic>coast</sic><corr>Coast</corr></choice></region> are no longer so favourable as some 
+years back, when I commenced trading with <geogName>Zanzibar</geogName> and 
+abroad. Trade at that period had, so to speak, no 
+existence. I established myself at <settlement>Houron</settlement><!-- This placeName has become corrupted, but I can't think of what the correct name is. AW -->, near <settlement>Tabora</settlement>, 
+with my old father and my brother <persName>Mohamed Massoudi</persName>, 
+wishing first to create in the neigbbourhood plantations 
+yielding satisfactory returns, and above all to monopolize 
+the ivory trade by establishing <term type="collective">Arab</term> correspondents 
+throughout <region>Central <bloc>Africa</bloc></region>, on the shores of the <geogName>Lakes</geogName>, 
+and as far <settlement><choice><orig>Nyangoué</orig><reg>Nyangwe</reg></choice></settlement>. The people of the centre, who 
+had no means of disposing of their considerable stocks of 
+ivory, let me have them at a price which enabled me to 
+realize a large profit. In a short time I had monopolized 
+nearly all the sources of ivory production, 
+and all the trade of the <region>Manyema</region> was in my hands.</p>
+<p>"The great difficulty has always been to bring the 
+produce of <region>Central <bloc>Africa</bloc></region> to the markets of <settlement>Tabora</settlement> and 
+<geogName>Zanzibar</geogName>. At first this was easy enough, but gradually 
+the people of the centre became aware that they could
+also gain something by my operations, and commenced 
+imposing heavy tribute upon me for right of way through 
+their territories. For instanoe, the <term type="collective">Wa-Kundis</term>, who 
+alone possess the boats necessary for crossing the 
+<geogName>Malagarazi</geogName>, exact exorbitant terms for the use of them. 
+Certain tribes sometimes attacked my caravans, causing 
+me heavy loss in men and merchandise.</p>
+<p>"Even on the coast the conditions of trade changed. 
+The <term type="collective">Germans</term> were everywhere, and their pretentions 
+rendered business more and more difficult. Great 
+diffi<!-- - -->culties arose from this state of things, and on all these 
+grounds I concluded that if the trade of <region>Central <bloc>Africa</bloc></region> 
+could follow another route and reach the coast by sure 
+roads on which no tribute would have to be paid, and 
+where no difficulties were to be apprhended, everybody 
+would be the gainer. After what I have seea at <settlement>Banana</settlement> 
+and <settlement>Boma</settlement> I believe I am not mistaken, and that traders 
+like myself can only gain by dispatching their produce 
+from <settlement><choice><orig>Nyangoué</orig><reg>Nyangwe</reg></choice></settlement> by way of the <geogName>Falls</geogName> and the <geogName>Congo</geogName>."</p>
+<p>On being asked what he would do on reaching the <geogName>Falls</geogName>,
+and how he would fulfil his mission, <persName>Tippoo Tib</persName> 
+replied :&#8212;</p>
+<p>"In the first place I feel sure that <persName>Stanley</persName> will succeed 
+in his enterprise and relieve <persName>Emin Pasha</persName>. He is a real 
+<term type="collective">Arab</term> for energy and intelligence. I do not know yet for 
+certain whether I shall go with him as far as <settlement>Wadelai</settlement>, but 
+I think I shall. Once installed at the <geogName>Falls</geogName>, I shall rebuild 
+the stations and summon all the <term type="collective">Arab</term> and <term type="collective">native</term> chiefs to 
+a great meeting, at which I shall announce to them my nomination 
+as <persName>Governor</persName>, and my intentions. They will 
+be surprised, I expect, to see me arrive from this side, for 
+the news of my leaving <geogName>Zanzibar</geogName> with <persName>Stanley</persName> and of my 
+nomination as <persName>Governor</persName> cannot reach <settlement><choice><orig>Nyangoué</orig><reg>Nyangwe</reg></choice></settlement> and 
+<region>Central <bloc>Africa</bloc></region> in less than four or five months, and I shall 
+arrive at the <geogName>Falls</geogName> before that time. When order is 
+re<!-- - -->established at the <geogName>Falls</geogName>, I shall probably undertake a 
+commercial expedition to <settlement><choice><orig>Nyangoué</orig><reg>Nyangwe</reg></choice></settlement> and the <region>Lake
+region</region>."</p>
+<p>The <term type="collective">Arab</term> chief's real name is <persName>Hamed-ben-Hamed</persName>, the 
+<hi rend="italic">sobriquet</hi> of <persName>Tippoo Tib</persName> having been given to him owing to 
+a twitching of the eyelids to which he is subject. The 
+best understanding exists between <persName>Mr. Stanley</persName> and <persName>Tippoo 
+Tib</persName>, and the latter has already been of great assistance in 
+maintaining order among the <term type="collective"><geogName>Zanzibar</geogName> men</term>. Son of an 
+<term type="collective">Arab</term> of <geogName>Zanzbiar</geogName>, <persName>Tippoo Tib</persName> detests negroes, and is 
+attached to the whites, whom, in conversation, he calls his 
+<term type="collective">European</term> brothers.</p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

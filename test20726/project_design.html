@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en">
+
+<head>
+    <title>Project Design | One More Voice</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Project Design page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons,periodical poetry index,alex gil,jentry sayers,roopika risam,susan edwards,data preservation standards,fieldwork of empire,github" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="scripts.js" defer=''></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-31768072-5');
+	</script>    
+</head>
+
+<body class="essay">
+
+<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+<!-- start of nav -->
+
+	<nav id="skiptocontent" aria-labelledby="nav0">
+		<a href="#main" id="nav0" tabindex="1">skip to main content</a>
+	</nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+    	
+	<nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						materials
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-3" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+    </nav>
+
+    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="sticky" aria-labelledby="nav2">
+        <div class="menu" id="nav2">
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
+            <span class="nav-title">One More Voice</span>
+        </div>
+    </nav>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <nav aria-labelledby="nav3">
+        <div class="overlay" id="nav3">
+            <div class="menu">
+                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+            <div class="overlay-content" role="menu">
+                <ul role="none">
+                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
+					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Materials">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                        </ul>
+                    </li>
+					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Concepts">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Miscellaneous">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                        </ul>
+                    </li>
+                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- end of nav -->
+
+    <header class="title" id="title-div">
+        <img class="image" src="images/2.1-Slug-Map.jpg" alt="Annotated print map of East Africa and its coast showing a giant lake in the interior, geographical features, trading routes." title="Jacob Erhardt et al., “Sizze Einer Karte Eines Theils von Ost u. Central Afrika Mit Angabe Der Wahrscheinlichen Lage u. Ausdehnung Des See’s von Uniamesi Nebs Bezeichnung Der Crenzen u. Wohnsitze Der Verschiedenen Völker Sowie Der Caravanen Strassen Nach Dem Innern,” Mittheilungen Aus Justus Perthes’ Geographischer Anstalt Über Wichtige Neue Erforschungen Auf Dem Gesammtgebiete Der Geographie von Dr. A. Petermann 2 (1856): plate 1. Courtesy of University College London Science Library." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
+    </header>
+    
+    <main class="main" id="main-div"><a class="anchor" id="main"></a>
+		<h3>Project Design</h3>
+		
+	<section class="toc" aria-labelledby="menu-sections">
+	    <ol id="menu-sections">
+	    	<li class="toc-title">[Menu: Sections]<a class="anchor" id="list"></a></li>
+			<li><a href="#link-1">General approach</a></li>
+			<li><a href="#link-2">Agile publication strategy</a></li>
+			<li><a href="#link-3">Conclusion</a></li>
+		</ol>
+		<br />
+		<hr />
+	</section>
+
+	<section aria-labelledby="general">
+		<h4 id="general"><a class="anchor" id="link-1"></a>
+		General approach &nbsp;<a href="#list" class="return-top">top</a></h4>
+		<p><span class="italic">One More Voice</span> makes an important critical contribution by engaging with literary and historical scholarship in a manner that <a href="analytical_priorities.html">shifts critical debate</a> in new directions. The project also models a way of encouraging new scholarship while bringing it to <a href="index.html">other practitioners and the public</a> at a time when funding options may suddenly be curtailed and normal publishing practices disrupted. Our project’s design both animates and informs this critical contribution through the application of minimal computing, a low-tech form of digital humanities development that has gained considerable traction among practitioners in recent years. A fundamental element of minimal computing lies in its emphasis on creating digital projects that rely on reduced resource use, as in the early case of the <a href="http://periodicalpoetry.org/">Periodical Poetry Index</a> (2010-present) and as later elaborated in work by <a href="https://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner/">Alex Gil</a>, <a href="https://go-dh.github.io/mincomp/thoughts/2016/10/02/minimal-definitions/">Jentry Sayers</a>, <a href="https://dh2017.adho.org/abstracts/196/196.pdf" title="This link opens a PDF document. The PDF has not been created by the One More Voice project and may have accessibility issues.">Roopika Risam and Susan Edwards</a>, and others.</p>
+
+		<p>By building on such work, we have been able to engineer a site development method that is self-empowering and replicable, that allows for <a href="collaboration.html">contributions</a> from scholars with a range of technical competencies, and that results in online scholarship that can be consulted from a wide variety of devices and by individuals with varying degrees of bandwidth (for instance, the site is fully mobile enabled and optimized; the use of semantic HTML, ARIA attributes, and descriptive ALT text opens the site to users with assistive devices). The approach is cost effective as it prioritizes the reuse of existing digital materials and tools, thereby enabling us to work quickly (relatively speaking), while making it possible to develop as much of the site “in-house” as possible. Additionally, minimal computing has allowed us to create a project that is easy to maintain and sustain long-term because of its simplified file structure and small digital footprint (the entire site is less than 20 MB). Finally, our site development method underscores the long-term value of relevant prior work because the method shows that such work can be extended into new contexts, not all of them anticipated by the original creators.</p>
+	</section>
+	
+	<!-- 
+	For reference:
+	https://www.w3.org/TR/WCAG20/
+	https://w3c.github.io/aria-practices/examples/
+	http://criticaldh.roopikarisam.com/
+	https://wave.webaim.org/
+	-->
+
+	<section aria-labelledby="publication">
+		<h4 class="subsection" id="publication"><a class="anchor" id="link-2"></a><a class="anchor" id="publication-strategy"></a>
+		Agile publication strategy &nbsp;<a href="#list" class="return-top">top</a></h4>
+		
+		<p>In this minimalist spirit, we have also turned to an agile publication strategy. <span class="italic">One More Voice</span> does not have a project team, but rather has been conceived of as a way of integrating the work of a series of <a href="contributors.html">contributors</a>. As a result, our publication strategy focuses on the production of high-quality, peer-reviewed scholarship, but prioritizes the creation of short-form critical <span class="italic">interventions</span>, a term inspired by Matt Gold and Lauren Klein's use of “provocations” as a way of characterizing the short essays published through the <a href="https://dhdebates.gc.cuny.edu/">Debates in the Digital Humanities</a> book series. The emphasis on such interventions extends our minimal computing approach to the realm of critical argument, but also opens a practical, reduced-commitment way for individuals <a href="collaboration.html">to contribute</a> to our site and stay active professionally at a time when many are distracted by the Coronavirus pandemic or working under challenging conditions, and when access to the kinds of archival sources often required for longer-form scholarship has been curtailed.</p>
+
+		<p>In terms of actual site development, we have built the <span class="italic">One More Voice</span> site through a combination of basic steps and strategic choices:</p>
+
+		<ul class="concept-list">
+			<li>Our site consists of a few basic file types, among them HTML, CSS, JS, XSL, XML, PDF, PNG, and JPEG. This limited array of file types has enabled us to minimize our digital footprint , while mainly sticking to formats that often serve as universal standards for data preservation.</li>
+			<li>The foundational HTML and CSS site files have been appropriated from Adrian S. Wisnicki’s <a href="https://awisnicki.github.io/fieldwork_of_empire/">Fieldwork of Empire</a> minimal computing website (2019), a site Wisnicki <a href="https://awisnicki.github.io/fieldwork_of_empire/about.html">expressly built</a> to serve as a prototype for the present site.</li>
+			<li>By positioning <span class="italic">One More Voice </span>as a descendant or “imprint” site of <a href="https://livingstoneonline.org/">Livingstone Online</a>, we have made it possible to draw on the latter's primary materials as needed.</li>
+			<li>We have used open online repositories like the <a href="https://www.hathitrust.org/">HaithiTrust</a> and <a href="https://archive.org/">Internet Archive</a> to supplement the materials available from <span class="italic">Livingstone Online</span>.</li>
+			<li>We have streamlined the existing <span class="italic">Livingstone Online</span> <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines">coding guidelines</a> to create the coding guidelines for the <span class="italic">One More Voice</span> site.</li>
+			<li>Hosting on <a href="https://github.com/">GitHub</a> has eliminated publication costs while also exposing our underlying <a href="https://github.com/livingstoneonline/onemorevoice">site files</a> and allowing them to be used separately from the site if needed.</li>
+		</ul>
+	</section>
+
+	<section aria-labelledby="conclusion">
+		<h4 class="subsection" id="conclusion"><a class="anchor" id="link-3"></a>
+		Conclusion &nbsp;<a href="#list" class="return-top">top</a></h4>
+		
+		<p>The <span class="italic">One More Voice</span> site thus forgoes a variety of digital bells and whistles and instead relies on the strengths of simplified web development and reuse of previously developed and refined digital resources. Doing so has allowed us to start up quickly (a single individual built the entire site via a high-powered, month-long <a href="https://github.com/livingstoneonline/onemorevoice/commits/master">code sprint</a> in May 2020), work at a manageable scale, and produce quality scholarship, even if its scope at present remains limited. Beginning the project in this way also means that we have a solid foundation that can be scaled up in the future should we wish to take our project in more complex directions.</p>
+	</section>
+    </main>
+
+	<aside class="credits" id="credits-div">
+		<hr />
+        
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S., with Heather F. Ball, Jared McDonald, and Mary Borgo Ton. “Project Design.” <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="project_design.html">https://onemorevoice.org/project_design.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+
+        <p><span class="bold">Header image</span>: Jacob Erhardt et al., “Sizze Einer Karte Eines Theils von Ost u. Central Afrika Mit Angabe Der Wahrscheinlichen Lage u. Ausdehnung Des See’s von Uniamesi Nebs Bezeichnung Der Crenzen u. Wohnsitze Der Verschiedenen Völker Sowie Der Caravanen Strassen Nach Dem Innern,” <span class="italic">Mittheilungen Aus Justus Perthes’ Geographischer Anstalt Über Wichtige Neue Erforschungen Auf Dem Gesammtgebiete Der Geographie von Dr. A. Petermann</span> 2 (1856): plate 1. Courtesy of University College London Science Library. German missionaries and geographers produced this map and published it in a nineteenth-century German geographical journal, yet a series of unnamed Arab and African travelers provided much of the original data on which the map is based. The contributions of such non-European informants to European publications such as this have historically gone uncredited. A key objective of the <span class="italic">One More Voice</span> project is challenge and change such practices.</p>
+	</aside>
+    
+    <footer class="footer" id="footer-div">
+        <hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+    </footer>
+</body>
+
+</html>

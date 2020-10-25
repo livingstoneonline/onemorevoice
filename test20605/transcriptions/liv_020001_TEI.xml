@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/onemorevoice/dev-transforms/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020001">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</title>
+                <title type="alternative">Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar, 31 May 1860</title><!-- Change; note addition of date -->
+                <author>[British] Government</author>
+				<author>[Said Bin Habeeb]</author>
+				<author role="first">[Bombay] Government</author>
+                <author role="first-normalized">[British] Government</author>
+				<author role="normalized">[Said Bin Habeeb]</author>
+				<!-- <author> = surname, forename, dates [archival version of name] -->
+				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
+				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] -->
+                <principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="AM">
+                    <name>Anne Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+				<respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020001</idno>
+				<availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                      	Creative Commons Attribution 4.0 International
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<title>Transactions of the Bomaby Geographical Society</title>
+						<editor>Secretary, Bomaby Geographical Society</editor>
+						<imprint>
+							<biblScope unit="vol">15</biblScope>
+							<biblScope unit="pages">146-48</biblScope>
+							<!-- Add? -->
+							<pubPlace>Bombay</pubPlace>
+							<publisher>Smith, Taylor, &amp; Co.</publisher>
+							<date>31 May 1860</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                    <title>Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</title>
+					<author xml:id="SBH">Said Bin Habeeb</author>
+                	<author xml:id="BG">[British] Government</author>
+                    <date type="publication" when="1860-05-31">31 May 1860</date><!-- Change, including attributes -->
+                    <placeName type="focusRegion">East and Central Africa</placeName>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry --> 
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+                <language ident="swh">Swahili</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Change @when, @who, and work description below. -->
+			<!-- Note that @who initials are taken from <respStmt> above -->
+			<!-- Add new <change> elements below as needed. -->
+			<!-- Note that the most recent <change> should always be placed first, at the top -->
+			<change when="2020-05-07" who="#AW">Standardize TEI</change>
+            <change when="2018-07-18" who="#AW">Coding review</change>
+            <change when="2018-07-03" who="#AM">Proofing</change>
+            <change when="2018-06-28" who="#HB">Transcription and TEI encoding</change>            
+            <change when="2018-01-31" who="#AW">OCR Conversion and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+       	<body><!-- Change; this is the color of the MS page; value can be any color --><!-- No need to specify if it's white. AW -->
+			<div><!-- Change; this is the color of the writing; only use auto-suggested values -->
+
+	<pb facs="liv_020001_0001" n="0001"/><!-- Change and repeat as necessary. Always indent <pb>, as here. -->
+<head><seg rend="center small">146</seg>
+<lb/><choice><abbr>A<seg rend="small">RT</seg>.</abbr><expan>Article</expan></choice> IX.--<bibl>NARRATIVE OF <persName>SAID BIN HABEEB</persName></bibl>, AN <orgName>ARAB</orgName> INHABITANT OF <geogName>ZANZIBAR</geogName>.<space extent="3" unit="chars"/><seg rend="italic">Contributed by</seg> G<seg rend="small">OVERNMENT.</seg></head>
+<lb/><milestone unit="section" rend="quarter-line center"/>
+<p rend="center small">Read before the <orgName>Society</orgName> by the <term type="occupation">Secretary</term> on the <date when="1860-05-31">31st May 1860</date>.</p>
+<milestone unit="section" rend="quarter-line center"/>
+<p>I left <geogName>Zanzibar</geogName> to travel in the <region>interior of <bloc>Africa</bloc></region> <date when="1844">about sixteen years ago</date>. I went partly to trade in ivory, and partly for the purpose of visiting unexplored regions of that great country<!--geog: Africa -->. I first travelled to <settlement><choice><sic>Ugiji</sic><corr>Ujiji</corr></choice></settlement> on the shore of the great lake of <geogName><choice><sic>Tanganika</sic><corr>Tanganyika</corr></choice></geogName>. I then crossed the lake<!-- geog: Tanganyika -->, and went twenty-seven days' journey down its <region>western coast</region> by boat to <placeName>Umaroongoo</placeName>, which is situated near the <region>south end of the lake</region><!-- geog: Tanganyika -->. A broad river, called the <geogName>Maroongoo</geogName>, flows into the lake near this place. From <placeName>Umaroongoo</placeName>, I travelled south, and visited the country of a powerful <term type="occupation">Chief</term> whose title is 'the <foreign>Casembe</foreign>.' I first went seven days journey to <placeName>Peto</placeName>, thence seven days to <placeName>Karembo Makoonga</placeName>; in three days more to <placeName>Karoongwesi</placeName>, and thence in three days to <settlement>Roonda</settlement>, a large town, where the <foreign>Casembe</foreign> resides. <settlement>Roonda</settlement> is situated on the banks of a large river called the <geogName>Ruapoora</geogName>,--the stream flows North towards the <geogName><choice><sic>Tanganika</sic><corr>Tanganyika</corr></choice> lake</geogName>. The <foreign>Casembe</foreign> is a Negro, by name <persName>Sultan Chareka</persName>. The people are armed with muskets. There are plenty of <term type="animal">sheep</term>, <term type="animal">goats</term>, and <term type="animal">poultry</term> procurable at <settlement>Roonda</settlement>, but no <term type="animal">horses</term>, <term type="animal">horned cattle</term>, or <term type="animal">camels</term>. The markets of <settlement>Roonda</settlement> are well supplied with <term type="foodstuff">meat</term>, <term type="animal">fish</term>, <term type="foodstuff">grain</term>, and <term type="foodstuff">vegetables</term>. There is no money: Venetian beads form the circulating medium. The people appear comfortable and contented, the country<!-- geog: Africa --> is everywhere cultivated, and the inhabitants are numerous. There are no stone buildings,--all the houses are constructed of wood or mud, with roofs of <term type="plant">grass</term> or <term type="plant">leaves</term>. The <foreign>Casembe</foreign> governs with mildness and justice, and the roads are quite safe for <term type="occupation">travellers</term>. After residing for some time at <settlement>Roonda</settlement>, I went a journey of twenty-five days to the great copper-mines; they are situated to the <region>west of <settlement>Roonda</settlement></region>, and the country <!-- geog: Africa --> all forms part of the <region>dominions of the <foreign>Casembe</foreign></region>; it is well peopled and cultivated. The copper-mines are situated in a large range of mountains; a great many people are employed at them, and the copper is taken for sale all over the country<!-- geog: Africa -->. After
+
+	<pb facs="liv_020001_0002" n="0002"/>
+<fw><seg rend="center small"><bibl>NARRATIVE OF <persName>SAID BIN HABEEB</persName></bibl>.</seg> <seg rend="right">147</seg></fw>
+smelting, about seventy-five pounds weight of copper are sold for four cubits of <term type="collective">American</term> sheeting; iron is everywhere abundant, and the <term type="occupation">miners</term>' tools are made from iron procured in the neighbourhood. A large town called <settlement>Katanza</settlement> is situated near the copper-mines, it contains a greater population than <settlement>Roonda</settlement>. The bazars at <settlement>Katanza</settlement> are well supplied with <term type="foodstuff">rice</term>, <term type="foodstuff"><term type="collective">Indian</term> corn</term>, <foreign><term type="foodstuff">jowarree</term></foreign>, <foreign><term type="foodstuff">bajree</term></foreign>, <term type="foodstuff">vegetables</term> of various sorts; <term type="animal">sheep</term> and <term type="animal">goats</term> are plentiful; <term type="plant">cotton</term> is abundant, and is made into cloth in the country<!-- geog: Africa -->. There are no <term type="animal">horses</term> or <term type="animal">horned cattle</term>. Around <settlement>Katanza</settlement>, the country <!-- geog: Africa --> is generally populous, and the land well cultivated; but there are also extensive forests and mountains abounding in <term type="animal">lions</term>, <term type="animal">elephants</term>, and other wild animals. From the copper-mines, or "<foreign>Masden Safr</foreign>," it is a journey of three days to <region>Waramba</region>, the country of an independent <term type="occupation">chief</term>. The town of <settlement>Katanza</settlement> and the copper-mines are situated in the dominions of a <term type="occupation">chief</term>, whose title is '<foreign>Manene</foreign>.' A large river, called the <geogName>Rafira</geogName>, flows past <settlement>Katanza</settlement>, and joins the <geogName>Ruapoora</geogName> to the North. I remained two months at <settlement>Katanza</settlement>; it is a quiet peaceable place, with very few robbers: the people always treated  me in a friendly manner, and goods of all kinds were abundant. In payment of purchases in the markets, you break a few beads off a string, and give them in exchange. There is no coined money. I suffered but little inconvenience from my ignorance of the languages of the various countries through which I passed, because the <orgName>Africans</orgName>, who accompanied me from <geogName>Zanzibar</geogName>, acquired these languages with surprising rapidity, and always made themselves understood.</p>
+<p>From <settlement>Katanza</settlement>, I travelled in a westerly direction, and, after two months, reached a country called <region>Boira</region>.  The country through which I passed is divided into petty states, the <term type="occupation">chiefs</term> treat <term type="occupation">travellers</term> well, but it is necessary to stay amongst them and gain their goodwill. The country <!-- geog: Boira --> was generally thickly peopled, and <term type="foodstuff">grain</term>, <term type="animal">fowls</term>, <term type="animal">sheep</term>, and <term type="foodstuff">vegetables</term>, always procurable in abundance.</p>
+<p>From <region>Boira</region>, I went a journey of seventeen days to "<region>Warengeh</region>:" the people of this country <!-- geog: Warengeh --> are the most barbarous I met with during all my travels; they go entirely naked, and pull out all their upper front teeth. From <region>Warengeh</region>, I travelled in two months to a country called <region>Ugengeh</region>, not far from the river <geogName>Zambesi</geogName>; the <term type="occupation">chief ruler</term> of this country <!-- geog: Ugengeh --> is named "<persName>Makororo</persName>:" the people are a handsome race, many are quite fair with long hair flowing over the neck, others are as black as negroes. In
+
+	<pb facs="liv_020001_0003" n="0003"/>
+<fw><seg rend="left">148</seg>	<seg rend="center small"><bibl>NARRATIVE OF <persName>SAID BIN HABEEB</persName></bibl>.</seg></fw>
+<region>Ugengeh</region>, the people possess abundance of <term type="animal">horned cattle</term>, <term type="animal">horses</term>, <term type="animal">sheep</term>, and <term type="animal">goats</term>: they travel about, and carry on a considerable trade. From <region>Ugengeh</region>, I went in thirty days' journey through a fine rich country to <placeName>Lui</placeName>: there is very little forest in this part; <term type="animal">cattle</term>, <term type="animal">sheep</term>, <term type="animal">goats</term>, and <term type="animal">poultry</term> are everywhere abundant. I reached the city of <settlement>Loanda</settlement>, on the shore of the great ocean in eighty-days' journey from <placeName>Lui</placeName>. I  remained at <settlement>Loanda</settlement> twenty-five days, and then returned into the <region>interior</region>. I travelled about in various directions, trading in ivory, and visited the city of <settlement>Loanda</settlement> three times. I resided at various towns in the <region>interior</region>; and, at length, having been absent from my own country <!-- geog:  --> for so many years, I resolved to return to <geogName>Zanzibar</geogName>. I travelled east until I reached the river <geogName>Zambesi</geogName>, and then proceeded north until I reached the great lake <geogName>Nyassa</geogName>. I travelled seventeen days along the shore of the lake <!-- geog: Nyassa --> towards its northern end, in order to cross it at a narrow point, and I then returned to the <region>east coast</region> through the <region>country of the <term type="collective">Miyan</term> and <term type="collective">Magindo</term> tribes</region>.  The lake of <geogName>Nyassa</geogName> is of vast extent, a large frigate could manœuvre on it. The country all around is very rich; <term type="plant">cotton</term> grows everywhere in great abundance, and the natives weave it into cloth.</p>
+<p>During all my journeys, I met with hospitality and friendship, and I intend returning to the <region>interior of <bloc>Africa</bloc></region> after arranging my affairs here. I met <persName>Dr. Livingstone</persName> near the <geogName>Zambesi</geogName>, and conveyed <bibl>letters</bibl> for him to <settlement>Loanda</settlement>. I have never written down anything I observed during my travels, because <orgName>Arabs</orgName> take no interest in the discovery of foreign countries, and do not care to hear of anything unconnected with the acquisition of riches.</p>
+<lb/>
+<lb/>
+<lb/><milestone unit="section" rend="quarter-line small center"/>
+
+			</div>
+		</body>	
+
+    </text>
+</TEI>

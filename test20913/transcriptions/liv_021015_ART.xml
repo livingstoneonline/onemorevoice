@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021015"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cornelia Sorabji (with Superimposed Facsimile Signature)</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Cornelia Sorabji (with Superimposed Facsimile Signature), [early twentieth century]</title><!-- Title, date -->
+                <author>Barnett, Henry Walter, 1862-1934</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Barnett, Henry Walter</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Henry Walter Barnett</author><!-- First author only: Forename Surname -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_012015</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://bit.ly/3fJpFZs">Haithi Trust</ref><!-- https://babel.hathitrust.org/cgi/pt?id=umn.31951p009235857&view=1up&seq=7 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+                    <p>Public domain image.</p>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if the artifact comes from a book or journal; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="artifact-book-journal">
+					<monogr n="book-section"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section"> -->
+						<title>Love and Life Behind the Purdah</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author>Cornelia Sorabji</author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">frontispiece</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>Freemantle &amp; Co.</publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date>1901</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Cornelia Sorabji (with Superimposed Facsimile Signature)</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="HWB">Barnett, Henry Walter, 1862-1934</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" from="1895" to="1901">[Early twentieth century]</date>
+                </bibl>
+            </sourceDesc>
+			<!-- End of book/journal <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-07-21" who="#AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_021015_0001" n="0001"/>
+	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_021015_0001_deriv-1294px.jpg">
+		<graphic url="../artifact-images/liv_021015_0001_deriv-934px.jpg" facs="../artifact-images/liv_021015_0001_deriv-934px.jpg 934w, ../artifact-images/liv_021015_0001_deriv-719px.jpg 719w, ../artifact-images/liv_021015_0001_deriv-503px.jpg 503w, ../artifact-images/liv_021015_0001_deriv-287px.jpg 287w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/><!-- add rend="vertical" for portrait images --><!-- add rend="gray" to add gray border to image -->
+		<label>Henry Walter Barnett, “Cornelia Sorabji (with Superimposed Facsimile Signature),” [early twentieth century]</label>
+		<figDesc>Portrait from the knees up of Cornelia Sorabji, in seven-eighths profile with body turned to her left, but facing right.</figDesc>
+	</figure>
+
+
+            </div>
+        </body>   
+    </text>
+</TEI>

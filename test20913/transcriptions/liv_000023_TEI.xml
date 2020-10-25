@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000023"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Excerpt from David Livingstone's Notebook with ...</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">Excerpt from David Livingstone's Notebook with ... [between c.March 1866 and March 1870]</title><!-- Title, date -->
+                <author>Livingstone, David, 1813-1873</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Unknown Arab and African Informants</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Livingstone, David</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">David Livingstone</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Unknown Arab and African Informants</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_000023</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000023">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Blantyre</settlement><!-- Repository city -->
+                        <repository>David Livingstone Centre</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">807</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Excerpt from David Livingstone's Notebook with ...</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+                    <author xml:id="UAAI">Unknown Arab and African Informants</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" from="1866-03" to="1870-03">[Between c.March 1866 and March 1870]</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">[East and Central Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+                <language ident="und">Undetermined</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-08-24" who="HB">Proofing</change>
+			<change when="2020-07-01" who="AM">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="bcbdb6"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div rend="brown"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+
+	<pb facs="liv_000023_0034" n="0034"/>
+<!-- Adrian, this page has two shades of brown for the text - how coding with OMV guidelines? HB --><!-- Luckily, we're not using the first part, so doesn't matter. AW -->
+<!-- 
+<lb/><p rend="no-indent">in letters to the Newspapers against
+<lb/>the laziness of negroes on <unclear>their</unclear>
+<lb/><term type="plant_foodstuff">cassava</term> patches - What is needed
+<lb/>is fair wages to enable workmen to
+<lb/>enjoy little luxuries not to be
+<lb/>found in the <term type="plant_foodstuff">cassava</term> &amp; <term type="plant_foodstuff">Pepper</term>
+<lb/>patch - Where that cannot be 
+<lb/><space unit="chars" extent="2"/>had <orgName>Trades Unions</orgName> resort to
+<lb/>fiercer modes of gaining their
+<lb/>ends.<space extent="12" unit="chars"/><settlement>Ujiji</settlement> <date when="1869-06-07">7<hi rend="sup underline">th</hi> June
+<lb/><space extent="5" unit="words"/>1869</date></p>
+<lb/><milestone unit="section" rend="line"/>
+-->
+	<div rend="center">
+<gap extent="12" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+<lb/>
+	</div>
+	<div>
+<head rend="center underline no-indent"><term type="animal">Hare</term> &amp; chief.</head>
+<p rend="no-indent"><hi rend="double-underline">Fable <term type="collective">African</term></hi> - A chief offered ten <term type="animal">goats</term> to
+<lb/>anyone who could sleep in a Lake - <term type="animal">Hare</term> did
+<lb/>lie in water all night &amp; his mother made a
+<lb/>fire beside Lake to warm him on coming out
+<lb/>chief refused <term type="animal">goats</term> because of this - <term type="animal">Hare</term>
+<lb/>made a feast putting <term type="foodstuff">meat</term> in one pot -
+<lb/><term type="foodstuff">Pombe</term> in another &amp; <term type="plant_foodstuff">flour</term> mixed with
+<lb/><term type="foodstuff">Pombe</term> in a third - made a fire in the midst
+<lb/>&amp; invited all the chief men to feast - chief
+<lb/>heard of strange feast uncooked &amp; came to
+<lb/>ask the meaning - <term type="animal">Hare</term> told him that the
+<lb/>feast was being cooked in the same fashion
+<lb/>as he was warmed by his <choice><sic>mothers</sic><corr>mother's</corr></choice> fire
+<lb/>chief acknowledged justice of simile &amp;
+<lb/>gave him his <term type="animal">goats</term> -</p>
+<lb/><p><term type="animal">Hare</term> is supposed to have been a man
+<lb/>and for some crime was transformed
+<lb/>into a <term type="animal">hare</term> - Retains some of his
+<lb/>human wisdom - great <space extent="1" unit="chars"/>cunning
+<lb/>is ascribed to him &amp; <space extent="2" unit="chars"/><term type="animal"><choice><sic>Jackall</sic><corr>Jackal</corr></choice></term></p>
+	</div>
+
+    <pb facs="liv_000023_0036" n="0036"/>
+<!--
+<lb/><p rend="no-indent">Free &amp; slave labour compared
+<lb/>see End of alphabet in this book</p>
+<lb/><milestone unit="section" rend="double-line"/>
+-->
+<!-- the next paragraph is highlighted by a double vertical line in the left margin AM -->
+<!--
+<lb/><p rend="no-indent">The <geogName>Nile</geogName> in Latitude alone is
+<lb/>(2600) Two thousand six
+<lb/>hundred miles in length -
+<lb/>If measured with its windings
+<lb/>in Longitude it is 3000 miles
+<lb/>long. or rather 3200</p>
+<lb/><milestone unit="section" rend="double-line"/>
+-->
+	<div rend="center">
+<gap extent="10" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+	</div>
+	<div>
+<lb/><p rend="no-indent"><hi rend="double-underline">Fable <term type="collective">African</term></hi> - <term type="animal">Hare</term> &amp; <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> made <!-- Not sure if this spelling of Hyaena is to be ignored or corrected/regularized? HB --><!-- I went with reg. AW -->
+<lb/>friendship - lived on opposite sides of
+<lb/>a stream - <term type="animal">Hare</term> in time of great hunger
+<lb/>proposed to eat their mothers &amp; wash off
+<lb/>the blood in river - <term type="animal"><choice><sic>Hyaenas</sic><corr>Hyaena's</corr></choice></term> mother was
+<lb/>first devoured then <term type="animal">Hare</term> stole a <term type="animal">goat</term> &amp;
+<lb/>passed <term type="foodstuff">meat</term> off for his mother - Famine
+<lb/>continued - <term type="animal">Hare</term> went to foot of large tree
+<lb/>with a dwelling on it called &amp; his mother gave
+<lb/>him food - <term type="animal"><foreign>Nyane</foreign></term> told <term type="animal">Hyaena</term> <term type="animal">Hare</term> had
+<lb/>his mother there - tried to call her, but his
+<lb/>voice was harsh - charm was to let the
+<lb/><term type="insect">biting driver ants</term> <add place="below"><seg type="metamark">^</seg></add> bite <add place="above"><gap extent="2" unit="words" agent="illegible"/></add> his tongue till his
+<lb/>voice became like <term type="animal">Hare</term>'s were captured
+<lb/>took <term type="animal">Hyaena</term> to Beehive - <term type="animal"><foreign>Matupa</foreign></term><!-- person? not sure AM--><!-- Animal, I believe. AW --> <term type="animal"><foreign>Fisi</foreign></term>
+<lb/>or <term type="animal"><foreign>nyuki</foreign></term><!-- person? --><!-- Animal, I believe. AW --> <term type="animal"><foreign>Fisi</foreign></term> - stung him all over -
+<lb/>bound <term type="animal">Hare</term> with <term type="animal"><foreign>Muale</foreign></term> &amp;
+<lb/><term type="animal"><foreign>Fisi</foreign></term><!-- person? --><!-- Fish! AW --> with thongs of <del><term type="animal"><choice><sic>pigs</sic><corr>pig's</corr></choice></term></del> <add place="above"><term type="animal">ox</term></add><add place="below"><seg type="metamark">^</seg></add> skin
+<lb/>Sung - easily cut the <unclear>wide</unclear> date
+<lb/>bands Melala -<add place="below"><seg type="metamark">^</seg></add><seg type="metamark" n="metamark liv_000023_0036"><!-- line appears to indicate the word "date" is to be inserted here from line above, but does not make sense AM --> stole a <term type="animal">goat</term> -</seg>
+<lb/>* hid ma &amp; brothers
+
+    <pb facs="liv_000023_0037" n="0037"/>
+<lb/><persName>Mokolea</persName> bag unloosed &amp; <unclear>run</unclear>
+<lb/><term type="insect">bees</term> &amp; <term type="animal">serpent</term> &amp; <term type="animal">Leopard</term> enter it
+<lb/><unclear>went</unclear> to <unclear>buy</unclear> &amp; <term type="insect">bee</term> sting him
+<lb/>no <term type="insect">mosquito</term> that - <space extent="1" unit="chars"/>You said
+<lb/>there were people <unclear>in</unclear> bag
+<lb/>(<unclear><foreign><term type="animal">pige</term></foreign></unclear> = <term type="animal">scorpion</term> -) <foreign><term type="animal">Fisi</term></foreign> told on
+<lb/>him - He is a story teller bind
+<lb/>him fast - <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> said catch
+<lb/>him but <foreign><term type="animal">Sungura</term></foreign> fled - <term type="animal">Hare</term>
+<lb/>loosed him but he caught the 
+<lb/>tail &amp; it broke - put bones
+<lb/>down to <foreign><term type="animal">Fisi</term></foreign> &amp; slept = <choice><orig>shewed</orig><reg>showed</reg></choice>
+<lb/>his theft to owner of <term type="animal">goat</term> &#8211; &amp;
+<lb/>he was killed = has no power
+<lb/>to kill but eats meat killed</p>
+
+<lb/><ab rend="vertical no-indent"><add place="marginleft"><unclear><term type="animal">Hare</term></unclear> <unclear>cheated</unclear> <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> by taking out his <w>m<gap extent="5" unit="chars"/></w> <unclear>&amp;</unclear> <gap extent="2" unit="words"/> <unclear>&amp;</unclear> <gap extent="1" unit="words"/>
+<lb/><term type="insect">bees</term> &amp; <term type="animal">scorpion</term> - which <term type="animal"><choice><orig>Hyaena</orig><reg>Hyena</reg></choice></term> went to sell those in the bag <unclear>out</unclear> came the
+<lb/><term type="insect">bees</term> &amp; stung men &#8211; then followed the apparent <unclear>theft</unclear></add></ab>
+	</div>
+
+    <pb facs="liv_000023_0043" n="0043"/>
+	<div>
+<head rend="center"><hi rend="double-underline">Fable <term type="collective">African</term></hi></head>
+<lb/><p rend="no-indent"><seg rend="large"><term type="animal">Lion</term></seg> &amp; = <term type="animal">Lion</term> went to visit the <term type="animal">pig</term> and
+<lb/><term type="animal">Pig</term> <seg type="metamark" n="metamark liv_000023_0043"> - </seg><!-- vertical line here separates previous word "Pig" from main text, as I think it is a continuation of the paragraph heading "Lion &" from previous line AM --> calling for a boat caught &amp; eat
+<lb/>the <term type="animal">pig</term> - this he did <hi rend="sup">3</hi> often but <term type="animal">Hyaena</term>
+<lb/>said how foolish ye <term type="animal">pigs</term> are - We have
+<lb/>no power said they - but I will give you
+<lb/>a charm - Cover yourselves all over with
+<lb/>mud &amp; call yourselves "mud" - Induced the
+<lb/><term type="animal">lion</term> to go to a stone building in time of
+<lb/>rain &amp; held stone up - then by excuse
+<lb/>got <term type="animal">lion</term> to take his place in holding it
+<lb/>and fled - <term type="animal">Lion</term> afraid that house would
+<lb/>fall held for many days - then came
+<lb/><term type="animal">Hyaena</term> &#8211; <space unit="chars" extent="2"/><term type="animal"><foreign>Kayele</foreign></term> <space unit="chars" extent="2"/><term type="animal"><foreign>Myalitope</foreign></term><!-- are these names or types of animal? AM --><!-- I'm guessing yes, based on context. AW -->
+<lb/>then Bara Bushbud It <choice><sic>wont</sic><corr>won't</corr></choice> fall - hold
+<lb/><!-- this line of text may be an addition rather than part of main text, but it's not clear where the insertion point should be AM --><space extent="1" unit="words"/><space extent="2" unit="chars"/><add place="inspace" rend="small">what will give - for a charm</add>
+<lb/>with one hand &amp; see - if it does not
+<lb/>fall I <choice><sic>wont</sic><corr>won't</corr></choice> eat you &#8211; does not eat
+<lb/>Bara even now &#8211; It was <term type="animal">pig</term> who
+<lb/>cheated you &#8211; <del>saw <term type="animal"><foreign>nyane</foreign></term></del></p>
+<lb/><p><space extent="4" unit="chars"/>Rain washed off <term type="animal">pig</term>'s mud
+<lb/>&amp; <term type="animal">lion</term> eat him - Men came to eat
+<lb/>what flesh he left - &amp; <term type="animal"><foreign>Fisi</foreign></term> took skin
+<lb/><term type="animal"><foreign>Sungura</foreign></term> said you have stolen the food
+<lb/>of men - so he left skin at door -
+<lb/><term type="animal"><foreign>Sungura</foreign></term> eat &amp; fled - <term type="animal">Lion</term> <add place="above">came</add> caught <add place="above"><term type="animal"><foreign>Fisi</foreign></term></add> his
+<lb/><del>tail &amp; it came off into his hand</del>
+<lb/>so he wants the tail always -</p>
+<lb/><p rend="no-indent">- <term type="animal"><foreign>Fisi</foreign></term> is inside - went to <term type="animal"><foreign>Nyane</foreign></term>
+<lb/>&amp; parted - <term type="animal"><foreign>Fisi</foreign></term> mistook &amp; they
+<lb/><space extent="2" unit="chars"/>parted
+<lb/>kalamula to judge</p>
+	</div>
+
+    <pb facs="liv_000023_0088" n="0088"/>
+	<div>
+<head><term type="collective">Warori</term> or <term type="collective">Basango</term> = History of</head>
+<lb/><p>A foreigner arrived in <region>Urori</region>
+<lb/>from the <region>South West coast</region> having
+<lb/>six attendants and a quantity of red
+<lb/>coral beads - He was <choice><sic>light coloured</sic><corr>light-coloured</corr></choice>
+<lb/>had a prominent <add place="below" rend="red"><seg type="metamark">^</seg></add><add place="above" rend="red">large</add> nose and a
+<lb/>profusion of long hair. During
+<lb/>his stay the <term type="collective">Warori</term> went three
+<lb/>times to fight with another tribe
+<lb/>and each time <del>was</del><add place="over-text">were</add> beaten off - <!--Adrian, not sure how to code this was written over the first word if not using type with del and add? HB --><!-- We can break the rule :>  place="over-text" AW -->
+<lb/>The stranger whose name was
+<lb/><persName>Charura</persName> asked about this fighting
+<lb/>and <choice><sic>percieved</sic><corr>perceived</corr></choice> that they needed a
+<lb/>war charm - for which he desired
+<lb/>the chief to give an <term type="animal">ox</term> &amp; a <term type="animal">goat</term> &#8211;
+<lb/>divide the <choice><sic>carcases</sic><corr>carcasses</corr></choice> <space extent="1" unit="chars"/>equally <w>betwe<gap extent="2" unit="chars" agent="illegible"/><supplied cert="high">en</supplied></w>
+<lb/>himself and the stranger - <space unit="chars" extent="3"/>This
+<lb/>being <space unit="chars" extent="2"/>done <persName>Charura</persName> invited all
+<lb/>the people who chose to come &amp;
+<lb/>eat his share. <space unit="chars" extent="2"/>The charm given
+<lb/>proved successful and the
+<lb/><term type="collective">Warori</term> returned laden with
+<lb/>captives and spoil - Every time
+<lb/>they went to plunder the same
+<lb/>process was repeated and all
+<lb/><add place="below"><seg type="metamark">^</seg></add><add place="inspace" rend="small">the spoil was divided</add> 
+<lb/>The people eat the sacrifices - <unclear>&amp;</unclear>
+<lb/><space extent="1" unit="words"/><add place="inspace" rend="small">all his half spoil too</add>
+<lb/><choice><sic><persName>Charura</persName>s</sic><corr><persName>Charura</persName>'s</corr></choice> six men died and
+<lb/>so did the <term type="collective">Warori</term> chief - <space unit="chars" extent="2"/>The
+<lb/>people then said Why should we
+<lb/>make <unclear><persName><choice><sic>chebren</sic><corr>Chebren</corr></choice></persName></unclear> our chief - Let us
+<lb/>have <persName>Charura</persName> who is a wise
+<lb/>and generous man as our
+
+    <pb facs="liv_000023_0089" n="0089"/>
+<lb/><persName>Monyegumbe</persName> died about 10 years
+<lb/>ago was then younger looking
+<lb/>than his sons -
+<lb/>head &amp; ruler - A son <persName>M<add place="over-text" rend="red">a</add>akas<add place="over-text" rend="red">i</add>i</persName> was
+<lb/>born to <persName>Charura</persName> and turned out
+<lb/>to be a fool who preferred cooking
+<lb/>and domestic life to everything else
+<lb/>In process of time this foolish
+<lb/>son got a son himself who was
+<lb/>called <persName>Monyegumbe</persName> and a wise
+<lb/>man The grandfather sent him
+<lb/>on his forays which were always
+<lb/>successful, and always were
+<lb/>accompanied with great
+<lb/>feasting for all as was <persName>Charura</persName>'s
+<lb/>custom and is still in vogue
+<lb/><space extent="1" unit="words"/><add place="inspace" rend="small">lived upwards of 100 years &amp;</add>
+<lb/><persName>Monyegumbe</persName> is the father of
+<lb/><persName>Merere</persName> and only the royal
+<lb/>family dare wear the coral
+<lb/>beads brought first by <persName>Charura</persName>
+<lb/>into the country - the <term type="collective">Basango</term> are
+<lb/>very white but <persName>Merere</persName> is yellow
+<lb/><persName>Charura</persName> is said to have had a
+<lb/><foreign xml:lang="und">Kitabu</foreign> or book which was
+<lb/>kept with great care till an
+<lb/><unclear>inroad</unclear> of <term type="collective">Watuta</term> caused a
+<lb/>flight &amp; the book was lost - He
+<lb/>is said to have been very tall &amp;
+<lb/>immensely strong - could catch
+<lb/>a man by the ankle and throw
+<lb/>him up on to the top of a
+<lb/>house or <foreign xml:lang="und">tembe</foreign> - &amp; when young
+<lb/>killed <term type="animal">elephants</term> with his iron	
+<lb/>club -- From <persName>M. Bogharib</persName>
+<lb/><placeName>Kasanga</placeName><space extent="3" unit="chars"/><date when="1869-07-19">19<hi rend="sup">th</hi> July<space extent="3" unit="chars"/>1869</date></p>
+	</div>
+
+    <pb facs="liv_000023_0090" n="0090"/>
+	<div>
+<p rend="no-indent">Names of chiefs of <region>Manyema</region>
+<lb/><persName>Meketo</persName> 2 √ <space extent="1" unit="chars"/>Written <date when="1869-07-04">4<hi rend="sup underline">th</hi> July 1869</date>
+<lb/><persName>Mokeko</persName> 2 √
+<lb/><persName>Mokokwa</persName> √
+<lb/><persName>Kwaniwa</persName> √
+<lb/><persName>Kunde</persName> √
+<lb/>
+<lb/><persName>Karungamagao</persName> √
+<lb/><persName>Pyanamosinde</persName> √
+<lb/><space unit="chars" extent="2"/><persName>Kimanomokumbo</persName> <add place="marginright" rend="small">? not in</add>
+<lb/><space unit="chars" extent="1"/><persName>Kasari</persName> <add place="marginright" rend="small">our line</add>
+<lb/><space unit="chars" extent="1"/><persName>Mamba</persName> √ <add place="marginright" rend="small">? of march</add>
+<lb/><space unit="chars" extent="1"/><persName>Kasangangazi</persName> √
+<lb/><space unit="chars" extent="1"/><persName>Mohangenwa</persName><space extent="1" unit="chars"/>?
+<!-- Adrian, the four ?s are seemingly spaced to line up together, unlike the checks that just follow the above names...how to code for that? HB --><!-- I am going to fudge it. AW -->
+<lb/><space unit="chars" extent="1"/><persName>Monanga</persName> <space extent="1" unit="words"/>?
+<!-- the next 4 entries in the list are grouped together by a curly bracket in the left margin AM -->
+<lb/><space unit="chars" extent="1"/><persName>Munabambo</persName> <space extent="1" unit="chars"/>?
+<lb/><seg type="metamark" n="metamark liv_000023_0090"/><space unit="chars" extent="2"/><persName>Mohange</persName> <space extent="3" unit="chars"/>?
+<lb/><space unit="chars" extent="1"/><persName>Monandenda</persName> √
+<lb/><space unit="chars" extent="2"/><persName>Monakus</persName><space extent="3" unit="chars"/>√
+<lb/><space unit="chars" extent="3"/>Two or <del>three</del><add place="over-text">four</add> days in field</p> <!-- Words written over here - again, how to code? HB -->
+<lb/><space dim="vertical" unit="lines" extent="5"/> <!-- Not sure if this is how we are coding the empty lines below or by lbs? HB --><!-- This is correct but you need to add dim="vertical" AW -->
+	</div>
+
+    <pb facs="liv_000023_0092" n="0092"/>
+<!-- 
+<lb/><p>If you are not bold enough to
+<lb/>run <space unit="chars" extent="2"/>the risk of losing you can
+<lb/>never hope to gain</p>
+--> <!-- Wow, wise words indeed! HB :) -->
+<!-- <lb/><milestone unit="section" rend="line"/> -->
+	<div rend="center">
+<gap extent="4" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+<lb/>
+	</div>
+	<div n="columnLeft liv_000023_0092">
+<list>
+<lb/><item>First chief</item>
+<lb/><item>2</item>
+<lb/><item>3</item>
+<lb/><item>4</item>
+<lb/><item>5</item>
+<lb/><item>6</item>
+<lb/><item>7</item>
+<lb/><item>8</item>
+<lb/><item>9</item>
+<lb/><item>10</item>
+<lb/><item>11</item>
+<lb/><item>12</item>
+</list>
+<lb/><ab rend="no-indent" n="ab liv_000023_0092">chief of 
+<lb/><term type="collective">Nzige</term> on 
+<lb/>both sides</ab>
+<lb/><space extent="1" unit="words"/>
+	</div>
+	<div n="columnRight liv_000023_0092">
+<lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/>
+<lb/><ab rend="no-indent"><persName>Mzige</persName>
+<lb/>very great
+<lb/>chief
+<lb/>
+<lb/>in river
+<lb/>Too</ab>
+	</div>
+	<div n="columnCenter liv_000023_0092">
+<head><region>Urundi</region> begins at <settlement>Ujiji</settlement></head>
+<list>
+<lb/><item><persName>Tamana</persName></item>
+<lb/><item><persName>Masonga</persName></item>
+<lb/><item><persName>Samize</persName></item>
+<lb/><item><persName>Kinoza</persName></item>
+<lb/><item><persName>Lowegoe</persName></item>
+<lb/><item><persName>Vikare</persName></item>
+<lb/><item><persName>Moasabikebwa</persName></item>
+<lb/><item><persName>Moyeio</persName></item>
+<lb/><item><persName>Magara</persName></item>
+<lb/><item><persName>Mokarianye</persName></item>
+<lb/><item><persName>Moguha</persName></item>
+<lb/><item><persName>Mokamba</persName></item>
+<lb/><item><persName>Tande</persName> underchief</item>
+<lb/><item><persName>Semovyei</persName></item>
+<lb/><item><persName>Rumashano</persName></item>
+<lb/><item><persName>Loshimba</persName></item>
+	</list>
+	</div>
+	<div>
+<milestone unit="section" rend="center quarter-line" n="line liv_000023_0092"/>
+<p>The <region><term type="collective">Batusi</term> country</region> is North of <region>that
+<lb/>of <persName>Mõkamba</persName></region> - the people are tall &amp;
+<lb/>light coloured - they beat back the
+<lb/><term type="collective">Ujijian</term> force &amp; killed twenty four of
+<lb/>them - they <choice><sic>dont</sic><corr>don't</corr></choice> wish a path made
+<lb/>through their country for ivory and
+<lb/>are hence called bad at <settlement>Ujiji</settlement> - <persName>Syde
+<lb/>bin Habib</persName> preferred to let them alone
+<lb/>lately but traded with <persName>Mõkamba</persName></p>
+	</div>
+
+    <pb facs="liv_000023_0110" n="0110"/>
+	<div>
+<ab><space extent="1" unit="words"/><space extent="2" unit="chars"/><foreign>go iba e be nane?</foreign></ab>
+<lb/>
+<lb/><p><space extent="1" unit="words"/><add place="inspace" rend="small">of <geogName>Moero</geogName> or <term type="collective">Waiyau</term></add>
+<lb/><space extent="2" unit="chars"/><hi rend="underline"><persName>Gaňgano</persName></hi> - <add place="below"><seg type="metamark">^</seg></add> a hunter killed all
+<lb/>animals for many years but
+<lb/>once when he had stalked &amp; got
+<lb/>near an <term type="animal">elephant</term> and was <!-- Not sure what word is written underneath "was" and how to code it. HB -->
+<lb/>taking aim it said <seg type="metamark" n="metamark liv_000023_0110">Lalalala! <space extent="1" unit="chars"/></seg>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><add place="inspace" rend="small">we are your ancestors</add>
+<lb/><choice><sic>dont</sic><corr>don't</corr></choice> kill us - He left it but killed
+<lb/>a child &amp; took a piece to cook in his
+<lb/>house which took fire &amp; destroyed
+<lb/>all the houses of the village too
+<lb/>All the inhabitants fled to the hills
+<lb/><space extent="1" unit="words"/><space extent="2" unit="chars"/><add place="inspace" rend="small">having no hoes</add>
+<lb/>&amp; they <add place="below"><seg type="metamark">^</seg></add> became <term type="animal">monkeys</term> - and
+<lb/>when they saw a man pass they
+<lb/>said Oh that is a man with two
+<lb/>legs while we now have four
+<lb/>How we should like to be like
+<lb/><space extent="1" unit="words"/><add place="inspace" rend="small">with two legs only</add>
+<lb/>him - but began to steal in his
+<lb/>plantations <term type="plant_foodstuff">corn</term> <term type="plant_foodstuff">cassava</term> - &amp;c</p>
+<lb/><p>The wild <unclear>hog</unclear> was a friend of
+<lb/>man and bore two sons -
+<lb/>and sent them to him to beg
+<lb/><term type="plant_foodstuff">seed</term> as the father wished to
+<lb/>cultivate - but man replied
+<lb/>if the Hog is going to plant who
+<lb/>will steal now? <space unit="chars" extent="2"/>He gave
+<lb/>seed of <term type="plant_foodstuff">corn</term> <term type="plant_foodstuff">rice</term> &amp;c and
+<lb/>when they returned to their father
+<lb/>told him what had been said
+<lb/>"who will steal now if <term type="animal">pig</term>
+<lb/>plants" <space unit="chars" extent="2"/>Yes let us eat
+<lb/>all the seed then - they <w>con<seg type="hyphen">-</seg>
+<lb break="no"/>tinued</w> to steal and said
+<lb/>It is the fault of men who
+  
+	<pb facs="liv_000023_0111" n="0111"/>
+<lb/>scorned our intention to cultivate</p>
+<milestone unit="section" rend="line"/>
+<lb/><p><persName>Bweha</persName> = <term type="animal"><foreign>Fisi</foreign></term> &amp; <term type="animal"><foreign>Sungura</foreign></term> <add place="above">of <region>Urori</region></add>
+<lb/>were friends - <term type="animal">Hare</term> said let us
+<lb/>kill <term type="animal">fox</term> - <del><term type="animal">Hare</term></del> <add place="above"><term type="animal">Fox</term></add> went to <term type="animal">Lion</term> the
+<lb/>chief &amp; said let <term type="animal">Hyaena</term> be killed
+<lb/><term type="animal">Fox</term> said also to chief let us kill
+<lb/><term type="animal"><foreign>Fisi</foreign></term> Why? said chief - because
+<lb/><term type="animal"><foreign>Fisi</foreign></term> is a thief = It is his work
+<lb/>to steal skins &amp; <term type="animal">goats</term> by night
+<lb/>Chief said to <term type="animal"><foreign>Fisi</foreign></term> go lie in the
+<lb/>water a whole night &amp; I will
+<lb/>give you an <term type="animal">ox</term> <space extent="2" unit="chars"/>He did so
+<lb/>lying in the water - His brother
+<lb/>made a fire near it - <term type="animal"><foreign>Fisi</foreign></term> said
+<lb/>why not bring the fire into the
+<lb/>water in my house there - 
+<lb/>To get the <term type="animal">ox</term> you can take the
+<lb/>fire into the water - went to the
+<lb/>chief give the <term type="animal">ox</term> said they
+<lb/><space unit="chars" extent="3"/>chief said to <persName>Bweha</persName> go to
+<lb/><add place="above">dig pitfall</add> the well &amp; I will <del>place</del><add place="over-text">get</add> <term type="animal">elephants</term> <!-- "get" is overwritten but I cannot tell what's underneath. HB -->
+<lb/>in it <del>for you</del> <persName>Bweha</persName> said to
+<lb/>his friend <add place="below"><seg type="metamark">^</seg></add> <add place="above"><term type="animal">Anteater</term></add> make a pitfall
+<lb/>for <term type="animal">elephant</term> to fall in - <space unit="chars" extent="3"/><term type="animal">Hare</term>
+<lb/>went &amp; said to chief I go to get a
+<lb/>charm - came to tree with big
+<lb/><term type="animal">birds</term> on it who asked where
+<lb/>he was going - take a feather</p>
+<lb/>
+<lb/><ab rend="no-indent"><foreign>Hatindekwa <space extent="1" unit="words"/>Hulu
+<lb/><space extent="2" unit="chars"/>mikia</foreign> -</ab>
+	</div>
+
+    <pb facs="liv_000023_0112" n="0112"/>
+<!--
+<lb/><p rend="no-indent"><choice><abbr>cont.</abbr><expan>continued</expan></choice> 2 pages back</p>
+<lb/><p rend="no-indent">This is what kills those who have been
+<lb/>freemen in their own country = the
+<lb/>criminal class is not subject to this
+<lb/>which seems to be <choice><sic>broken heartedness</sic><corr>broken-heartedness</corr></choice></p>
+<lb/><p rend="no-indent"><date when="1868-12-26">26<hi rend="sup underline">th</hi> <choice><abbr>Dec<hi rend="sup underline">r</hi></abbr><expan>December</expan></choice>
+<lb/>1868</date></p>
+<lb/><milestone unit="section" rend="line"/>
+-->
+	<div rend="center">
+<gap extent="8" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+	</div>
+	<div>
+<lb/><p>The Monster Zimwe = <geogName>Nyassa</geogName> fable</p>
+<lb/><p rend="no-indent">100 cubits high 50 broad &amp; 7 round
+<lb/>foot - <space extent="2" unit="chars"/>killed every animal, men -
+<lb/><term type="animal">buffaloes</term> <term type="animal">Elephants</term> &amp; swallowed
+<lb/>them all - came to <term type="animal">serpent</term> of 7 heads
+<lb/>which killed many too &amp; lived on
+<lb/>upper part of Lake - Had hair on top
+<lb/>of head like a horn - Its name
+<lb/>Kitahongwa of seven heads - <!-- I'm a little torn as to how to code all these personified names...as persNames, or leave untagged? If so, may have to revisit the other tagged persNames in case personified animals as well. HB -->
+<lb/>Zimwe tried to kill Kitahongwa
+<lb/>but <term type="animal">serpent</term> lay across his
+<lb/>mouth and could not be swallowed
+<lb/>Zimwe struck out with his <choice><sic>feat</sic><corr>feet</corr></choice> &amp;
+<lb/>men arose - and fire - <term type="plant_foodstuff">pumpkins</term>
+<lb/><term type="plant_foodstuff">calabashes</term> - &amp; men passed &amp; said
+<lb/>now <term type="plant_foodstuff">calabashes</term> bear - they spoke
+<lb/>&amp; men fled in fear - genii enter
+<lb/>into house <seg rend="brown red"><term type="plant_foodstuff">Maize</term> out of ears <!-- Ink and color seem to shift with Maize. HB -->
+<!-- DL has written the following in brown ink, then traced it in red pencil. AW -->
+<lb/>from his cough came <term type="plant_foodstuff">corn</term> <add place="above">(Mabele</add>
+<lb/>His tears rain - <term type="insect">Bees</term> from
+<lb/>his toes - armpits <add place="below"><seg type="metamark">^</seg></add><add place="above"><term type="plant">tobacco</term></add> - <term type="plant_foodstuff">beans</term> -
+<lb/>from teeth - nose - <term type="plant">pennisetum</term>
+<lb/><term type="plant-foodstuff">pumpkins</term> <space extent="1" unit="chars"/>from beard
+<lb/>From his mane = brass &amp;c</seg></p>
+	</div>
+
+    <pb facs="liv_000023_0115" n="0115"/>
+<!--<lb/><p rend="no-indent">Sunset by watch <seg rend="vertical"><foreign>finika</foreign></seg> 2<hi rend="sup"><choice><abbr>h</abbr><expan>hours</expan></choice></hi> 53<hi rend="sup"><choice><abbr>m</abbr><expan>minutes</expan></choice></hi> 32<hi rend="sup"><choice><abbr>s</abbr><expan>seconds</expan></choice></hi>
+<lb/><space extent="4" unit="words"/><space extent="5" unit="chars"/><hi rend="underline">2 <space extent="2" unit="chars"/>25 <space extent="2" unit="chars"/>20</hi>
+<lb/><choice><abbr>Diff.</abbr><expan>Difference</expan></choice>by <choice><abbr>comp.</abbr><expan>comparison</expan></choice> <space extent="12" unit="chars"/>28 <space extent="2" unit="chars"/>12+
+<lb/>between watch &amp; <choice><abbr>chron.</abbr><expan>chronometer</expan></choice></p>
+<lb/><milestone unit="section" rend="line"/>
+-->
+	<div rend="center">
+<gap extent="5" unit="lines" agent="omitted-text"/><!-- Text from previous section omitted here. AW -->
+<lb/>
+	</div>
+	<div>
+<lb/><cb rend="vertical"/><p rend="no-indent" n="text1 liv_000023_0115"><unclear>A great</unclear> chief had no child - but got medicine and his
+<lb/>wife and a slave got each a son - <space unit="chars" extent="2"/>They were
+<lb/>exactly alike in every way and the slave having
+<lb/>nursed both one day forgot which was which
+<lb/>The best doctors could not decide but when the boys
+<lb/>were grown an old doctoress told father to take the
+<lb/>two into a room &amp; suddenly expose his person
+<lb/>He who was ashamed was the son - and this lad
+<lb/>went into the forest &amp; took a piece of wood out of
+<lb/>swollen foot of an <term type="animal">elephant</term> &amp; relieved its
+<lb/>agony - <space extent="1" unit="chars"/>saw <!-- the word Nondo to be inserted in line below --> a big <term type="animal">bird</term> on a tall tree
+<lb/><space extent="3" unit="words"/><space extent="2" unit="chars"/><add place="inspace" rend="small"><seg type="metamark" n="metamark liv_000023_0115">Nondo</seg></add><!-- Livingstone has indicated by a long arrow where the word "Nondo" on previous line should be inserted AM --> <space extent="2" unit="words"/><add place="inspace" rend="small">with <unclear>panga</unclear></add> 
+<lb/>and a <term type="animal">serpent</term> <add place="above"><seg type="metamark">^</seg></add> of seven heads - <add place="inspace"><seg type="metamark">^</seg></add> killed <choice><sic>&amp; &amp;</sic><corr>&amp;</corr></choice> <term type="animal">bird</term>
+<lb/>came down to eat its flesh - <space unit="chars" extent="2"/><term type="animal">Elephant</term>
+<lb/>carried him hence &amp; <term type="animal">bird</term> was above him as
+<lb/>he travelled a shade from sun and shelter
+<lb/>from rain - <space unit="chars" extent="2"/>Reached a beautiful land
+<lb/>by night and sat beside a <choice><sic>well built</sic><corr>well-built</corr></choice> <unclear>coith</unclear>
+<lb/>stone - a <term type="animal">serpent</term> came each year &amp; the people of
+<lb/>the adjoining town had to give a beautiful
+<lb/>woman to it for food - This year the <choice><sic>chiefs</sic><corr>chief's</corr></choice>
+<lb/>daughter was the victim - <space unit="chars" extent="1"/>son sat by well
+<lb/>at night &amp; when <term type="animal">serpent</term> came to seize woman
+<lb/>he struck it with sword on one head - other head said "Ha I <choice><sic>dont</sic><corr>don't</corr></choice> die"
+<lb/>but died &amp; woman went home &amp; <unclear>told</unclear> &amp; she became his wife</p>
+<lb/><p rend="no-indent upside-down" n="text2 liv_000023_0115"><space extent="3" unit="chars"/>Nondo <space extent="3" unit="chars"/>or <space extent="3" unit="words"/>Hongo <space extent="2" unit="words"/> tale</p>
+	</div>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

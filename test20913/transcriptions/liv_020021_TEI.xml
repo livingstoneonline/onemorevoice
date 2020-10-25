@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020021"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Statement and Attestations</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Statement and Attestations, 7 May 1853, 11 May 1853, 11 May 1853, 11 May 1853,</title><!-- Title, date -->
+                <author>Sechele, c.1810-1892</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Edwards, Samuel</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Thompson, Tom</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Sechele</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Sechele</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Samuel Edwards</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Tom Thompson</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="JL">
+                    <name>Justin D. Livingstone</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="MT">
+                    <name>Mary Borgo Ton</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020021</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>London</settlement><!-- Repository city -->
+                        <repository>University of London. School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">CWM/LMS/South Africa/Incoming Correspondence/Box 28/File 2/Jacket C
+</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown but thought not to be the author's.</handNote>
+							<!-- For xml:id's see sourceMetadata below. AW -->
+            				<handNote><label>Sechele</label> This is thought to be Sechele's hand.</handNote>
+                            <handNote><label>Samuel Edwards</label> This is thought to be Samuel Edwards's hand.</handNote>
+                            <handNote><label>Tom Thomson</label> This is thought to be Tom Thomson's hand.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Statement and Attestations</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="S">Sechele, 1812-1892</author>
+                    <author xml:id="SE">Edwards, Samuel</author>
+                    <author xml:id="TT">Tom Thompson</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1853-05-07">7 May 1853</date>
+                    <date type="composition" when="1853-05-11">11 May 1853</date>
+                    <date type="composition" when="1853-05-11">11 May 1853</date>
+                    <date type="composition" when="1853-05-11">11 May 1853</date>
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Cape Town</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+            <change when="2020-09-11" who="#AW"></change>
+            <change when="2020-09-11" who="#MT"></change>
+			<change when="2020-08-26" who="#JL"></change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div>
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+
+	<pb facs="liv_020021_00021" n="0001"/>
+<lb/><p rend="center"><add place="inline" hand="#U" rend="gray">47</add></p>			    
+<lb/><p>I have heard that the <term type="tribe">Boers</term> say <persName>Livingstone</persName>
+<lb/>sold me guns. <choice><sic>they</sic><corr>They</corr></choice> tell falsehoods. <choice><sic>he</sic><corr>He</corr></choice> never sold
+<lb/>me any nor yet lent me any.
+<lb/><space extent="7" unit="words"/><add place="inline" hand="#S"><persName>Secele</persName></add>
+<lb/><space extent="2" unit="lines"/>
+<lb/>I was never under <persName>Mosilikatse</persName>'s rule, he made
+<lb/>war upon and beat me but I did not submit
+<lb/>to him. I went to the <region>Kalagare</region> where he was
+<lb/>not able to follow me</p>
+<lb/><p><space extent="4" unit="words"/>The <term type="collective">Boers</term> also say that
+<lb/><choice><sic>that</sic><corr></corr></choice> I became their servant and thay I made
+<lb/>a treaty with them. I never made a treaty 
+<lb/>with them nor yet submited to be ruled
+<lb/>by them. The only instance in <choice><sic>wich</sic><corr>which</corr></choice> I requested
+<lb/>their assistance was when the <term type="collective"><orig>Matabele</orig><reg>Ndebele</reg></term>
+<lb/>attacked me at <settlement>Shokwane</settlement>. <choice><sic>this</sic><corr>This</corr></choice> they
+<lb/>refused saying the <term type="collective"><orig>Matabele</orig><reg>Ndebele</reg></term> have <add place="below">^</add> <add place="above">attacked</add> you
+<lb/>and not us. This was long after the <term type="collective"><orig>Matabele</orig><reg>Ndebele</reg></term>
+<lb/>had been driven out of the country by
+<lb/><persName>Dingaan</persName>. When they attached me they
+<lb/>were on their way to attack <persName>Sebegue</persName> who had
+<lb/>not long before returned from the <region><orig>Kalagare</orig><reg>Kalahari</reg></region>
+<lb/>wither he had fled a long while before with
+<lb/>all his people and cattle to escape <persName>Mosilikatse</persName>
+<lb/><persName><choice><orig>Mosilikatse</orig><reg>Mzilikazi</reg></choice></persName> hearing of his return had sent an army
+<lb/>against him</p>
+<lb/><p>Translated from <persName>Sechele</persName>'s statement <add place="inline" hand="#S"><persName>Secele</persName></add>
+<lb/>by one in his presence <space extent="1" unit="words"/><persName>Samuel Edwards</persName>
+<lb/><space extent="5" unit="words"/><settlement>Cape Town</settlement> <date when="1853-05-07">May 7.<hi rend="sup">th</hi> 1853</date>.</p>
+            
+	<pb facs="liv_020021_0002" n="0002"/>
+<lb/><p><add place="inline" rend="vertical">Statements made by
+<lb/>the <term type="collective"><choice><orig>Bakwain</orig><reg>Bakwena</reg></choice></term> chief
+<lb/><persName>Sechele</persName> in <settlement>Cape
+<lb/>Town</settlement>, <date when="1853-05-07">7<hi rend="sup underline">th</hi> May 1853</date>
+<lb/>and confirmed by him,
+<lb/>on the <date when="1853-05-11">11<hi rend="sup underline">th</hi> May 1853</date>,
+<lb/>in the presence of
+<lb/><persName>Tom Thomson</persName>,
+<lb/><persName>Samuel Edwards</persName></add></p>
+<lb/><space extent="1" unit="lines"/>
+<lb/><p>I have to the best of my ability translated to <persName>Sechele</persName>
+<lb/>the Chief of the <term type="collective"><choice><orig>Bakwaina</orig><reg>Bakwena</reg></choice></term> the above paper from
+<lb/>the <settlement>Cape Town</settlement> Mail of <date when="1853-04-26">26<hi rend="sup">th</hi> April 1853</date> entitled "The
+<lb/>Story of the Black Pot" alias. "The Story of Selling
+<lb/>the Gun" and he affirms the statement it contains
+<lb/>to be correct
+<lb/><space extent="5" unit="words"/><persName>Samuel Edwards</persName></p>
+<lb/><space extent="1" unit="lines"/>
+<lb/><p><add place="inline">The above statement, <persName>Mr Edwards</persName> acting as Interpreter, was
+<lb/>confirmed in my presence - 
+<lb/><space extent="6" unit="words"/><persName>Tom Thompson</persName>-
+<lb/><date when="1853-05-11">11<hi rend="sup underline">th</hi> 1853</date>-</add></p>
+<lb/><p><add place="inline">The statement made by <persName>Sechele</persName> with reference to the attack,
+<lb/>upon him by the <term type="collective">Boers</term>, and published in the "<settlement>Cape Town</settlement> Mail"
+<lb/>a copy of which is appended, is confirmed this day, <date when="1853-05-11">11<hi rend="sup underline">th</hi> May
+<lb/>1853</date>, <persName>Mr Edwards</persName> acting as Interpreter, in my presence.
+<lb/><space extent="6" unit="words"/><persName>Tom Thompson</persName>&#8211;
+<lb/><space extent="1" unit="lines"/>
+<lb/><settlement>Cape Town</settlement>
+<lb/><date when="1853-05-11">11<hi rend="sup underline">th</hi> May 1853</date>.}</add></p>
+			</div>
+        </body>   
+    </text>
+</TEI>

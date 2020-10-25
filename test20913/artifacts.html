@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en">
+
+<head>
+    <title>Curated Historical Artifacts | One More Voice</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Curated Historical Artifacts page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+    <meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-31768072-5');
+	</script>    	
+    	
+	<!-- CSS lazy load adapted from https://blog.webjeda.com/lazy-load-css/ -->
+	<!-- Also see end of file -->
+	<!-- if browser doesn't support JavaScript then use normal link tags to load CSS -->
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="style.css" defer=''/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer=''/>
+	</noscript>
+	
+	<style type="text/css">
+		body{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media only screen and (min-width: 768px){
+			body{
+				font-size: .95em;
+				max-width: 46em;
+			}
+		}
+		@media only screen and (min-width: 992px){
+			body{
+				max-width: 42em;
+			}
+		}
+	</style>  
+</head>
+
+<body class="essay">
+
+<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+<!-- start of nav -->
+
+	<nav id="skiptocontent" aria-labelledby="nav0">
+		<a href="#main" id="nav0" tabindex="1">skip to main content</a>
+	</nav>
+
+    <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+    <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+    	
+	<nav class="topnav" aria-labelledby="nav1">
+		<ul role="menubar" id="nav1" aria-label="Site Sections">
+			<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-1" data-opens-menu>
+						materials
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false">
+					<label class="dropbtn" for="toggle-2" data-opens-menu>
+						concepts
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+							<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+							<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li role="none">
+				<div class="dropdown" role="menuitem" data-menu-component>
+					<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false">
+					<label class="dropbtn" for="toggle-3" data-opens-menu>
+						misc
+						<span class="vh expanded-text">expanded</span>
+						<span class="vh collapsed-text">collapsed</span>
+					</label>
+					<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+						<ul role="none">
+							<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+							<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+							<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+							<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+    </nav>
+
+    <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+    <nav id="sticky" aria-labelledby="nav2">
+        <div class="menu" id="nav2" title="Menu">
+            <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="true" onclick="openNav()" tabindex="2"><i class="fa fa-bars"></i></a></span>
+            <span class="nav-title">One More Voice</span>
+        </div>
+    </nav>
+
+    <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+    <nav aria-labelledby="nav3">
+        <div class="overlay" id="nav3">
+            <div class="menu" title="Close">
+                <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+            <div class="overlay-content" role="menu">
+                <ul role="none">
+                    <li role="none"><a role="menuitem" href="index.html">home</a></li>
+					<li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Materials">
+							<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+							<li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+							<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                        </ul>
+                    </li>
+					<li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Concepts">
+                            <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                            <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                            <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                            <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                        </ul>
+                    </li>
+                    <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                        <ul role="menu" aria-label="Miscellaneous">
+                            <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                            <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                            <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)</li>
+                        </ul>
+                    </li>
+                    <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- end of nav -->
+
+    <header class="title" id="title-div">
+		<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+        <img class="image" src="site-images/liv_023003_0001_deriv-1300px.jpg" srcset="site-images/liv_023003_0001_deriv-1300px.jpg 1300w, site-images/liv_023003_0001_deriv-1000px.jpg 1000w, site-images/liv_023003_0001_deriv-700px.jpg 700w, site-images/liv_023003_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Semane Khama (seated, foreground), Tshekedi Khama (standing, background, second from left), and councillors (all standing)." title="Anonymous, “Semane Khama, Tshekedi Khama, and Councillors at Tiger Kloof” (Photograph, 1933), CWM/LMS/Home/Missionary Portraits/Box 12/File 34/1, University of London. School of Oriental and African Studies, London. Image from the Council for World Mission Archive, SOAS Library, University of London. Used by permission for private study, educational or research purposes only." />
+        <h1 class="header-title">One More Voice</h1>
+        <hr />
+        <h2 class="italic">Lost Voices from the British Empire's Archives</h2>
+    </header>
+    
+    <!-- This page is dedicated to Didi. 26 July 2020 -->
+    
+    <main class="main" id="main-div"><a class="anchor" id="main"></a>
+    <h3>Curated Historical Artifacts</h3>
+    
+    <p>The artifacts on this page comprise photographs, manuscripts, and other historical objects that somehow illuminate or otherwise help fill out the historical and cultural contexts of the <a href="texts.html">critically-edited archival texts</a> and <a href="books.html">book-length published works</a> collected by the <span class="italic">One More Voice</span> project. The gallery below is arranged alphabetically by subject and for each item provides a thumbnail image and brief description. Each thumbnail image, in turn, is linked to the full documentary record for the given artifact as well as a larger-resolution, uncropped version of the artifact image.</p>
+    
+	<br />
+	<hr />
+	<br />
+
+    <p class="image-details">Click on thumbnails for artifact details and uncropped images</p>
+
+	<div class="gallery">
+	
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021012"></a>
+			<figure>
+				<a href="transcriptions/liv_021012_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021012_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021012_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021012_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021012_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021012_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Headshot of Edward Wilmot Blyden." />
+					</div>
+				</a>
+				<figcaption>Edward Wilmot Blyden (late nineteenth or early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021030"></a>
+			<figure>
+				<a href="transcriptions/liv_021030_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021030_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021030_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021030_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021030_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021030_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="E. Pauline Johnson, standing in half profile, with her head turned to her left, signed 'Faithfully' and with her name." />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021031"></a>
+			<figure>
+				<a href="transcriptions/liv_021031_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021031_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021031_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021031_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021031_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021031_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of E. Pauline Johnson, facing left, signed “Yours Faithfully” and with her name." />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021029"></a>
+			<figure>
+				<a href="transcriptions/liv_021029_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021029_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021029_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021029_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021029_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021029_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Facsimile of E. Pauline Johnson's manuscript of “And He Said ‘Fight On’”" />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson, “And He Said ‘Fight On’” (early twentieth century)</figcaption>
+			</figure>
+		</div>		
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021034"></a>
+			<figure>
+				<a href="transcriptions/liv_021034_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021034_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021034_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021034_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021034_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021034_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of E. Pauline Johnson, facing left." />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021028"></a>
+			<figure>
+				<a href="transcriptions/liv_021028_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021028_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021028_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021028_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021028_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021028_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="E. Pauline Johnson, standing with back to viewer, but with head in half profile to the right." />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021032"></a>
+			<figure>
+				<a href="transcriptions/liv_021032_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021032_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021032_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021032_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021032_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021032_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of E. Pauline Johnson, facing left. Johnson wears a hat and fur coat." />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson (1904)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021033"></a>
+			<figure>
+				<a href="transcriptions/liv_021033_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021033_0003_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021033_0003_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021033_0003_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021033_0003_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021033_0003_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Sculpted memorial for E. Pauline Johnson, with two figures." />
+					</div>
+				</a>
+				<figcaption>E. Pauline Johnson's Grave (1913)</figcaption>
+			</figure>
+		</div>
+	
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021011"></a>
+			<figure>
+				<a href="transcriptions/liv_021011_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021011_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021011_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021011_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021011_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021011_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Apolo Kagwa and his son, both seated at a table; Kagwa holds a pen above a notebook." />
+					</div>
+				</a>
+				<figcaption>Apolo Kagwa, Katikiro of Uganda, and His Son (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021021"></a>
+			<figure>
+				<a href="transcriptions/liv_021021_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021021_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021021_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021021_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021021_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021021_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Montage: Semane Khama seated, surrounded by children; Semane Khama in half profile turned to her right, but facing forward." />
+					</div>
+				</a>
+				<figcaption>Semane Khama and Schoolchildren (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021022"></a>
+			<figure>
+				<a href="transcriptions/liv_021022_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021022_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021022_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021022_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021022_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021022_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-body portrait of Semane Khama, facing to her right." />
+					</div>
+				</a>
+				<figcaption>Semane Khama (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021024"></a>
+			<figure>
+				<a href="transcriptions/liv_021024_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021024_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021024_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021024_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021024_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021024_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Semane Khama at right, seated, with two children at left, one of whom is standing, one of whom is seated." />
+					</div>
+				</a>
+				<figcaption>Semane Khama and Children (1911)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021023"></a>
+			<figure>
+				<a href="transcriptions/liv_021023_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021023_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021023_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021023_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021023_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021023_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="The Khamas standing: Semane in seven-eights profile turned to her left, Seretse facing forward, and Tshekedi in three-quarters profile turned to his right." />
+					</div>
+				</a>
+				<figcaption>Tshekedi, Seretse, and Semane Khama (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021025"></a>
+			<figure>
+				<a href="transcriptions/liv_021025_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021025_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021025_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021025_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021025_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021025_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Full-body portrait of Tshekedi Khama in three-quarters profile turning to his left, and Semane Khama facing forward, standing." />
+					</div>
+				</a>
+				<figcaption>Tshekedi and Semane Khama (early twentieth century)</figcaption>
+			</figure>
+		</div>								
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_000003"></a>
+			<figure>
+				<a href="transcriptions/liv_000003_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_000003_0016-0017_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_000003_0016-0017_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_000003_0016-0017_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_000003_0016-0017_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_000003_0016-0017_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Two pages from a David Livingstone diary describing an exchange with Bon Ale/Bin Aleī and with the latter’s name in Arabic." />
+					</div>
+				</a>
+				<figcaption>David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie (19-20 May 1866)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_000023"></a>
+			<figure>
+				<a href="transcriptions/liv_000023_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_000023_0077_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_000023_0077_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_000023_0077_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_000023_0077_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_000023_0077_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Page from a David Livingstone notebook with a detailed Swahili vocabulary list and Arabic numbers from 1 to 10 and 10 to 90." />
+					</div>
+				</a>
+				<figcaption>Page from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers (c.March 1866 to March 1870)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<figure>
+				<a href="transcriptions/liv_021018_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021018_0003_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021018_0003_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021018_0003_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021018_0003_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021018_0003_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Elizabeth Lilith M'belle (Mrs. S.T. Plaatje); caption notes her contribution to Plaatje’ book." />
+					</div>
+				</a>
+				<figcaption>Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”) (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<figure>
+				<a href="transcriptions/liv_021011_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021011_0002_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021011_0002_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021011_0002_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021011_0002_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021011_0002_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Ham Mukasa’s father, Ham Mukasa with a child on his lap, and Ham Mukasa’s wife with a child on her lap, all seated." />
+					</div>
+				</a>
+				<figcaption>Ham Mukasa, with Father, Wife, and Children (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021016"></a>
+			<figure>
+				<a href="transcriptions/liv_021016_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021016_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021016_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021016_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021016_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021016_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Full-body portrait of Ham Mukasa, facing forward, and Apolo Kagwa, in three-quarters profile facing to his right, standing." />
+					</div>
+				</a>
+				<figcaption>Ham Mukasa and Apolo Kagwa (early twentieth century)</figcaption>
+			</figure>
+		</div>
+				
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021013"></a>
+			<figure>
+				<a href="transcriptions/liv_021013_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021013_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021013_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021013_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021013_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021013_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Sarojini Naidu, in half profile facing to her right; facsimile signature below image." />
+					</div>
+				</a>
+				<figcaption>Sarojini Naidu (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021018"></a>
+			<figure>
+				<a href="transcriptions/liv_021018_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021018_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021018_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021018_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021018_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021018_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Page inscribed by Solomon T. Plaatje to Professor Kelly Miller, dated November 16, 1921, with reference to Howard University." />
+					</div>
+				</a>
+				<figcaption>Page Inscribed by Solomon T. Plaatje to Kelly Miller (16 November 1921)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<figure>
+				<a href="transcriptions/liv_021018_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021018_0002_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021018_0002_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021018_0002_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021018_0002_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021018_0002_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait from the knees up of Solomon T. Plaatje, seated, in three-quarters profile facing to his right, writing at a table." />
+					</div>
+				</a>
+				<figcaption>Solomon T. Plaatje (early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021026"></a>
+			<figure>
+				<a href="transcriptions/liv_021026_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021026_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021026_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021026_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021026_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021026_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Pandita Ramabai Sarasvati with paper border." />
+					</div>
+				</a>
+				<figcaption>Pandita Ramabai Sarasvati (late nineteenth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021019"></a>
+			<figure>
+				<a href="transcriptions/liv_021019_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021019_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021019_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021019_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021019_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021019_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Pandita Ramabai Sarasvati." />
+					</div>
+				</a>
+				<figcaption>Pandita Ramabai Sarasvati (late nineteenth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021020"></a>
+			<figure>
+				<a href="transcriptions/liv_021020_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021020_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021020_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021020_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021020_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021020_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Pandita Ramabai Sarasvati." />
+					</div>
+				</a>
+				<figcaption>Pandita Ramabai Sarasvati (1898)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021027"></a>
+			<figure>
+				<a href="transcriptions/liv_021027_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021027_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021027_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021027_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021027_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021027_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Pandita Ramabai Sarasvati seated and reading a book, with Monramabai standing behind and looking over Sarasvati's shoulder." />
+					</div>
+				</a>
+				<figcaption>Pandita Ramabai Sarasvati and Manoramabai (early twentieth century)</figcaption>
+			</figure>
+		</div>		
+
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021009"></a>
+			<figure>
+				<a href="transcriptions/liv_021009_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021009_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021009_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021009_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021009_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021009_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Sechele, in a golden frame." />
+					</div>
+				</a>
+				<figcaption>Sechele (second half of nineteenth century)</figcaption>
+			</figure>
+		</div>					
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021015"></a>
+			<figure>
+				<a href="transcriptions/liv_021015_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021015_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021015_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021015_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021015_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021015_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait from the knees up of Cornelia Sorabji, in seven-eighths profile with body turned to her left, but facing right." />
+					</div>
+				</a>
+				<figcaption>Cornelia Sorabji (late nineteenth or early twentieth century)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021010"></a>
+			<figure>
+				<a href="transcriptions/liv_021010_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021010_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021010_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021010_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021010_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021010_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="African hut among a set of trees; caption says Susi and Chuma made this hut to model the one where David Livingstone died." />
+					</div>
+				</a>
+				<figcaption>Abdullah Susi and James Chuma's Model of David Livingstone's Hut (late nineteenth or twentieth century)</figcaption>
+			</figure>
+		</div>
+
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021007"></a>
+			<figure>
+				<a href="transcriptions/liv_021007_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021007_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021007_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021007_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021007_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021007_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
+					</div>
+				</a>
+				<figcaption>Abdullah Susi and James Chuma with David Livingstone's “relics” (c.1874)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021005"></a>
+			<figure>
+				<a href="transcriptions/liv_021005_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021005_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021005_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021005_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021005_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021005_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait from the knees up of Abdullah Susi, seated, in half profile facing to his right and holding a walking stick." />
+					</div>
+				</a>
+				<figcaption>Abdullah Susi (Mislabeled Jacob Wainwright) (c.1874)</figcaption>
+			</figure>
+		</div>
+
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021014"></a>
+			<figure>
+				<a href="transcriptions/liv_021014_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021014_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021014_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021014_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021014_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021014_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Full-body portrait of Swami Vivekanada, standing, his body turned to the right but facing forward, holding a walking stick." />
+					</div>
+				</a>
+				<figcaption>Swami Vivekanada (c.1893)</figcaption>
+			</figure>
+		</div>
+
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021001"></a>
+			<figure>
+				<a href="transcriptions/liv_021001_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021001_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021001_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021001_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021001_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021001_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Jacob Wainwright seated on board the ship “Malwa” and leaning against David Livingstone’s coffin and other boxes." />
+					</div>
+				</a>
+				<figcaption>Jacob Wainwright with David Livingstone’s Coffin and Travelling Trunks (1874)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021002"></a>
+			<figure>
+				<a href="transcriptions/liv_021002_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021002_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021002_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021002_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021002_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021002_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Jacob Wainwright standing with head bowed in front of David Livingstone’s coffin which is partly covered by a British flag." />
+					</div>
+				</a>
+				<figcaption>Jacob Wainwright with David Livingstone’s Coffin (1874)</figcaption>
+			</figure>
+		</div>
+
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021003"></a>
+			<figure>
+				<a href="transcriptions/liv_021003_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021003_0001_thumbnail-300px.jpg" srcset="artifact-images/thumbnails/liv_021003_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021003_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right." />
+					</div>
+				</a>
+				<figcaption>Jacob Wainwright (c.1874)</figcaption>
+			</figure>
+		</div>		
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021006"></a>
+			<figure>
+				<a href="transcriptions/liv_021006_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021006_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021006_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021006_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021006_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021006_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Matthew Wellington, facing forward." />
+					</div>
+				</a>
+				<figcaption>Matthew Wellington (1874 or later)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<a class="anchor" id="liv_021008"></a>
+			<figure>
+				<a href="transcriptions/liv_021008_ART.html">
+					<div class="image-container">
+						<img src="artifact-images/thumbnails/liv_021008_0001_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021008_0001_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021008_0001_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021008_0001_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021008_0001_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait from waist up of Matthew Wellington, seated and turned slightly to his right." />
+					</div>
+				</a>
+				<figcaption>Matthew Wellington (1874 or later)</figcaption>
+			</figure>
+		</div>
+		
+		<div class="gallery-item">
+			<figure>
+				<a href="transcriptions/liv_021008_ART.html">
+					<div class="image-container">
+					<img src="artifact-images/thumbnails/liv_021008_0002_thumbnail-500px.jpg" srcset="artifact-images/thumbnails/liv_021008_0002_thumbnail-500px.jpg 500w, artifact-images/thumbnails/liv_021008_0002_thumbnail-400px.jpg 400w, artifact-images/thumbnails/liv_021008_0002_thumbnail-300px.jpg 300w, artifact-images/thumbnails/liv_021008_0002_thumbnail-200px.jpg 200w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Matthew Wellington, in three-quarters profile facing to his left." />
+					</div>    
+				</a>
+				<figcaption>Matthew Wellington (1874 or later)</figcaption>
+			</figure>
+		</div>
+
+	</div>
+		
+		<!--<li><span class="italic">Bonus:</span> An additional photo of Jacob Wainwright appears in a completed <span class="italic">Invaluable</span> <a href="https://www.invaluable.com/auction-lot/livingstone,-david-289-c-rnthpaugv3#">auction listing</a>.</li>
+		</ol>
+	</section>-->
+
+    </main>
+
+	<aside class="credits" id="credits-div">
+		<hr />
+        
+        <p><span class="bold">Cite page (MLA):</span> Wisnicki, Adrian S. “Curated Historical Artifacts.” <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="artifacts.html">https://onemorevoice.org/artifacts.html</a>.</p>
+ 
+		<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+
+        <p><span class="bold">Header image</span>: Anonymous, “Semane Khama, Tshekedi Khama, and Councillors at Tiger Kloof” (Photograph, 1933), CWM/LMS/Home/Missionary Portraits/Box 12/File 34/1, University of London. School of Oriental and African Studies, London. Image from the Council for World Mission Archive, SOAS Library, University of London. Used by permission for private study, educational or research purposes only. Semane Khama is seated in the foreground of this image; Tshekedi Khama stands second from the left in the back row. Although <span class="italic">One More Voice</span> nominally focuses on the “long” Victorian era, i.e., 1837 to 1914, the project is by no means bound by these dates or even by this way of defining the historical period in question – an interpretive approach that echoes recent critical work focused on “<a href="https://lareviewofbooks.org/article/undisciplining-victorian-studies">undisciplining</a>” the field of Victorian Studies. As a result, the project's temporal remit can accommodate a 1934 letter from Semane Khama to a representative of the London Missionary Society (coming soon), more so as the letter illuminates geopolitical relationships first established between inhabitants of Bechuanaland (now Botswana) and Britain in the nineteenth century.</p>
+	</aside>
+    
+    <footer class="footer" id="footer-div">
+		<hr />
+		<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
+    </footer>
+    
+    <!-- CSS lazy load adapted from https://blog.webjeda.com/lazy-load-css/ -->
+	<!-- Also see beginning of file -->
+	<script>
+		(function() {
+			// load main.css
+		    var cssMain = document.createElement('link');
+    		cssMain.href = 'style.css';
+			cssMain.rel = 'stylesheet';
+	    	cssMain.type = 'text/css';
+		    document.getElementsByTagName('head')[0].appendChild(cssMain);
+		    // load fontawesome
+	    	var cssFa = document.createElement('link');
+	    	cssFa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+			cssFa.rel = 'stylesheet';
+    		cssFa.type = 'text/css';
+		    document.getElementsByTagName('head')[0].appendChild(cssFa);
+		})();
+	</script>
+	<script src="scripts.js"></script>
+</body>
+
+</html>

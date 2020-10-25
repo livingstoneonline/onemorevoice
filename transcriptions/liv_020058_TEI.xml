@@ -14,11 +14,18 @@ Rubber Wars Which Began in 1893’ (‘Report on Visit to Interior of Congo Stat
                 <title type="alternative">“Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the 
 Rubber Wars Which Began in 1893” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 3 in No. 3), 1904</title><!-- Title, date -->
                 <author>Casement, Roger, 1864-1916</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-                <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Q Q</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>R R</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>R R</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>S S</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>T T</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first">Casement, Roger</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Roger Casement</author><!-- First author only: Forename Surname -->
-				<author role="normalized"><persName></persName></author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
-				
+				<author role="normalized">Q Q</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">R R</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">S S</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">T T</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">U U</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -81,7 +88,11 @@ Rubber Wars Which Began in 1893” (“Report on Visit to Interior of Congo Stat
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
                     <author xml:id="RC">Casement, Roger, 1864-1916</author>
-                    <author xml:id=""><persName></persName></author>
+                    <author xml:id="QQ">Q Q</author>
+                    <author xml:id="RR">R R</author>
+                    <author xml:id="SS">S S</author>
+                    <author xml:id="TT">T T</author>
+                    <author xml:id="UU">U U</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -106,8 +117,8 @@ Rubber Wars Which Began in 1893” (“Report on Visit to Interior of Congo Stat
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="2020-10-21" who="#AW"></change>
-			<change when="2020-10-07" who="#CM"></change>
+			<change when="2020-10-21" who="#AW">Text encoding</change>
+			<change when="2020-10-07" who="#CM">Initial transcription</change>
         </revisionDesc>
     </teiHeader>
 
@@ -122,7 +133,7 @@ Rubber Wars Which Began in 1893” (“Report on Visit to Interior of Congo Stat
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_020058_0070" n="0070"/>
-<fw><seg rend="center">76</seg></fw>
+<fw><seg rend="center">70</seg></fw>
 	<div rend="center">
 <gap extent="12" unit="lines" agent="omitted-text"/><!-- Text from previous inclosure omitted here. AW -->
 	</div>
@@ -132,51 +143,48 @@ Rubber Wars Which Began in 1893” (“Report on Visit to Interior of Congo Stat
 
 <lb/><p rend="center">(See p. 33.)</p>
 
-<lb/><p rend="center italic">Statement in regard to the Condition of the Natives in Lake Mantumba region during the period of 
-the Rubber Wars which began in 1893.</p>
+<lb/><p rend="center italic">Statement in regard to the Condition of the <term type="collective">Natives in <region><geogName>Lake Mantumba</geogName> region</region></term> during the period of 
+the Rubber Wars which began in <date when="1893">1893</date>.</p>
 
-<p>Statement in regard to the Condition of the Natives in Lake Mantumba region during the period of the 
-Rubber Wars which began in 1893.</p>
-
-<p>THE disturbance consequent on the attempt to levy a rubber tax in this district, a tax which 
-has since been discontinued, appears to have endured up to 1900.</p>
+<lb/><p>THE disturbance consequent on the attempt to levy a rubber tax in this district, a tax which 
+has since been discontinued, appears to have endured up to <date when="1900">1900</date>.</p>
 
 <p>The population during the continuance of these wars diminished, I estimate, by some 60 per 
 cent., and the remnant of the inhabitants are only now, in many cases, returning to their destroyed 
 or abandoned villages.</p>
 
-<p>During the period 1893-1901 the Congo State commenced the system of compelling the 
+<p>During the period <date from="1893" to="1901">1893-1901</date> the <country>Congo State</country> commenced the system of compelling the 
 natives to collect rubber, and insisted that the inhabitants of the district should not go out of 
 it to sell their produce to traders.</p>
 
 <p>The population of the country then was not large, but there were numerous villages with an 
 active people&#8212;very many children, healthy looking and playful.<space extent="1" unit="chars"/>They had good huts, large planta- 
-tions of plaintains and manioc, and they were evidently rich, for their women were nearly all 
+tions of <term type="foodstuff">plaintains</term> and <term type="foodstuff">manioc</term>, and they were evidently rich, for their women were nearly all 
 ornamented with brass anklets, bracelets, and neck rings, and other ornaments.</p>
 
 <p>The following is a list of towns or villages&#8212;giving their approximate population in the 
-year 1893 and at the present time.<space extent="1" unit="chars"/>These figures are very carefully estimated:&#8212;</p>
+year <date when="1893">1893</date> and <date when="1903">at the present time</date>.<space extent="1" unit="chars"/>These figures are very carefully estimated:&#8212;</p>
 
 <p>
 —————+———-+———-+—————————————————-
-| 1893. | 1903. |          Remarks.
+| <date>1893</date>. | <date>1903</date>. |          Remarks.
 +———-+———-+————————————————
-Botunu    |  500 |    80 |
-Bosende  |  600 |  —- |
-Ngombe    |  500 |    40 | These are not in the old village,
+<settlement>Botunu</settlement>    |  500 |    80 |
+<settlement>Bosende</settlement>  |  600 |  —- |
+<settlement>Ngombe</settlement>    |  500 |    40 | These are not in the old village,
 |      |      |  but near it.
-Irebo    | 3,000 |    60 | Now a State camp with hundreds
+<settlement>Irebo</settlement>    | 3,000 |    60 | Now a <orgName>State</orgName> camp with hundreds
 |      |      |  of soldiers and women.
-Bokaka    |  500 |    30 |
-Lobwaka  |  200 |    30 |
-Boboko    |  300 |    35 |
-Mwenge    |  150 |    30 |
-Boongo    |  250 |    50 |
-Ituta    |  300 |    60 |
-Ikenze    |  320 |    20 |
-Ngero    | 2,500 |  300 | In several small clusters of huts.
-Mwebe    |  700 |    75 |
-Ikoko    | 2,500 |  800 | Including fishing camps.
+<settlement>Bokaka</settlement>    |  500 |    30 |
+<settlement>Lobwaka</settlement>  |  200 |    30 |
+<settlement>Boboko</settlement>    |  300 |    35 |
+<settlement>Mwenge</settlement>    |  150 |    30 |
+<settlement>Boongo</settlement>    |  250 |    50 |
+<settlement>Ituta</settlement>    |  300 |    60 |
+<settlement>Ikenze</settlement>    |  320 |    20 |
+<settlement>Ngero</settlement>    | 2,500 |  300 | In several small clusters of huts.
+<settlement>Mwebe</settlement>    |  700 |    75 |
+<settlement>Ikoko</settlement>    | 2,500 |  800 | Including fishing camps.
 —————+———-+———-+—————————————————-
 </p>
 <p>This list can be extended to double this number of villages, and in every case there has been 
@@ -200,6 +208,9 @@ say, these horrible cases were not always the acts of some black soldier.<space 
 against one officer who shot one woman and one man, while they were before him as prisoners 
 with their hands tied, and no attempt was made by the accused to deny the truth of the 
 statement.<space extent="1" unit="chars"/>To those killed in the so-called “war”<space extent="1" unit="chars"/>must be added large numbers of those 
+
+    <pb facs="liv_020058_0071" n="0071"/>
+<fw><seg rend="center">71</seg></fw>
 who died while kept as prisoners of war.<space extent="1" unit="chars"/>Others were carried to far distant camps and have 
 never returned.<space extent="1" unit="chars"/>Many of the young were sent to Missions, and the death-rate was enormous.<space extent="1" unit="chars"/>
 Here is one example:<space extent="1" unit="chars"/>Ten children were sent from a State steamer to a Mission, and in spite 
@@ -281,6 +292,9 @@ expeditions had been made against them, and the whole population roused against 
 man.”<space extent="1" unit="chars"/>In 99 per cent.<space extent="1" unit="chars"/>of the “wars”<space extent="1" unit="chars"/>in this district the cause was simply failure on the part of 
 the people to supply produce, labour, or men, as demanded by the State.<space extent="1" unit="chars"/>There was the long 
 struggle with L L L in his long resistance to State authority; but he at first was known as a 
+
+    <pb facs="liv_020058_0072" n="0072"/>
+<fw><seg rend="center">72</seg></fw>
 quiet man who tried to please the State, and he only started on his career as a fighting man after 
 he had been out to help M.<space extent="1" unit="chars"/>N O.<space extent="1" unit="chars"/>After the departure of M.<space extent="1" unit="chars"/>N O to Coquilhatville, he went back 
 and made demands and fought the people as he had done with M.<space extent="1" unit="chars"/>N O as his Chief.</p>
@@ -356,6 +370,8 @@ and they took me to the white man.</p>
 Signed) Roger Casement, 
 His Britannic Majesty’s Consul.</p>
 
+    <pb facs="liv_020058_0073" n="0073"/>
+<fw><seg rend="center">73</seg></fw>
 <p>R R’s Statement.</p>
 
 <p>I, R R, came from N N*.<space extent="1" unit="chars"/>N N* and R* fought, and they killed several R* people, 
@@ -431,6 +447,9 @@ went back to the house, and left her mother in the garden.<space extent="1" unit
 the house with her little brother and sister she heard the firing of guns.<space extent="1" unit="chars"/>When she heard that she 
 took up her little sister and a big basket with a lot of native money[22] in it, but she could not 
 manage both, so she left the basket behind and ran away with the youngest child; the little boy 
+
+    <pb facs="liv_020058_0074" n="0074"/>
+<fw><seg rend="center">74</seg></fw>
 ran away by himself.<space extent="1" unit="chars"/>The oldest boys had gone away to wait for the soldiers at the other town.<space extent="1" unit="chars"/>
 As she went past she heard her mother calling to her, but she told her to run away in another 
 direction, and she would go on with the little sister.<space extent="1" unit="chars"/>She found her little sister rather heavy for 
@@ -505,6 +524,8 @@ to eat because he was bereaved of his wife and all his children.</p>
 (Signed) Roger Casement, 
 His Britannic Majesty’s Consul.</p>
 
+    <pb facs="liv_020058_0075" n="0075"/>
+<fw><seg rend="center">75</seg></fw>
 <p>T T’s Statement.</p>
 
 <p>States she belonged to the village of R*, where she lived with her grandmother.<space extent="1" unit="chars"/>R* 
@@ -581,6 +602,9 @@ by myself; when I ran away I hid in the bush.<space extent="1" unit="chars"/>Whi
 was running from a soldier.<space extent="1" unit="chars"/>He (the soldier) fired a gun.<space extent="1" unit="chars"/>I was not hit, but the old man died.<space extent="1" unit="chars"/>
 Afterwards they caught me and two men.<space extent="1" unit="chars"/>The soldiers asked:<space extent="1" unit="chars"/>“Have you a father and mother?”<space extent="1" unit="chars"/>
 I answered, “No.”<space extent="1" unit="chars"/>They said to me, “If you do not tell us we will kill you.”<space extent="1" unit="chars"/>I said:<space extent="1" unit="chars"/>
+
+    <pb facs="liv_020058_0076" n="0076"/>
+<fw><seg rend="center">76</seg></fw>
 “Father and mother are dead.”<space extent="1" unit="chars"/>After that my oldest sister was caught, too, in the bush, and 
 they left my little brother and sister alone in the bush to die, because heavy rain came on, and 
 they had not had anything to eat for days and days.<space extent="1" unit="chars"/>At night they tied my hands and feet for 

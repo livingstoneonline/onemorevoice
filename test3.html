@@ -26,6 +26,9 @@
 			gtag('config', 'UA-31768072-5');
 		</script>
 		<style>
+			.translate{
+				overflow: hidden !important;
+			}
 			.page-title{
 				height: 2.6em;
 			}
@@ -38,6 +41,62 @@
 				float: right;
 				padding-right: 7em;
 			}
+		</style>
+		<style type="text/css">
+			/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
+			div#google_translate_element div.goog-te-gadget-simple {
+				border: none;
+				background-color: transparent;
+				/*background-color: #17548d;*/ /*#e3e3ff*/
+			}
+	
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
+				text-decoration: none;
+			}
+	
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span {
+				color: #aaa;
+			}
+	
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+				color: white;
+			}
+			
+			.goog-te-gadget-icon {
+				display: none !important;
+				/*background: url("url for the icon") 0 0 no-repeat !important;*/
+			}
+	
+			/* Remove the down arrow */
+			/* when dropdown open */
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(213, 213, 213);"] {
+				display: none;
+			}
+			/* after clicked/touched */
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(118, 118, 118);"] {
+				display: none;
+			}
+			/* on page load (not yet touched or clicked) */
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(155, 155, 155);"] {
+				display: none;
+			}
+	
+			/* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left: 1px solid rgb(187, 187, 187);"] {
+				display: none;
+			}
+			/* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+			div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+				display: none;
+			}
+			/* HIDE the google translate toolbar */
+			.goog-te-banner-frame.skiptranslate {
+				display: none !important;
+			}
+			body {
+				top: 0px !important;
+			}
+			/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
 		</style>
 	</head>
 
@@ -180,7 +239,7 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 			</header>
 			
 			<main class="main" id="main">
-				<div class="page-title"><h3>Introduction</h3><div id="google_translate_element"></div></div>
+				<div class="page-title"><h3>Introduction</h3><div class="translate"><div id="google_translate_element"></div></div></div>
 
 				<p><span class="italic">One More Voice</span>, a work of digital humanities scholarship, focuses on <a href="analytical_priorities.html">recovering non-European contributions</a> from nineteenth-century British imperial and colonial archives. The name reflects the fact that there is always <span class="italic">one more</span> <span class="italic">voice</span> to recover from the archives. The non-European contributions take multiple forms and appear in multiple genres, including travel narratives, autobiographies, letters, diaries, testimonies, interviews, treaties, maps, oral histories, genealogies, and vocabularies. <span class="italic">One More Voice</span> attempts to offer a critical and systematic evaluation of these rich and diverse materials by using interpretive approaches and digital preservation techniques that expand existing scholarship on the topic. Learn more about our <a href="analytical_priorities.html">analytical priorities</a>, <a href="project_design.html">project design</a>, <a href="collaboration.html">approach to collaboration</a>, and <a href="coding_guidelines.html">coding guidelines</a>.</p>
 				

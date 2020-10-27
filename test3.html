@@ -38,36 +38,24 @@
 			.page-title h3{
 				float: left;
 			}
-			/* #google_translate_element{
-				filter: grayscale(100%);
-			} */
 		</style>
 		<!-- Google Translate hacks adapted from https://forums.asp.net/t/2139105.aspx?Style+Google+Translate+Drop+down+and+HIDE+Google+Translate+Toolbar-->
 		<style type="text/css">
-			/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
-			
 			div#google_translate_element > div > span{
 				display: none;
 			}
-
-			div#google_translate_element div.goog-te-gadget {
-				/* border: none;
-				background-color: transparent;
-				margin-right: 0; */
-				/*background-color: #17548d;*/ /*#e3e3ff*/
-			}
-
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo{
+			div#google_translate_element div.goog-te-gadget .goog-te-combo{
 				margin: 0;
+				padding: 1px;
+				border: 2px solid #dbdbdb;
+				border-radius: 7px;
 			}
-
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo:hover {
-				text-decoration: none;
-			}
-			
-	
+			div#google_translate_element div.goog-te-gadget goog-te-combo:hover,
+			div#google_translate_element div.goog-te-gadget goog-te-combo:focus{
+				border: 2px solid #2e68ac;
+			}		
+		
 			div#google_translate_element div.goog-te-gadget a.goog-te-combo span {
-				/* color: #aaa; */
 				display: none;
 			}
 	

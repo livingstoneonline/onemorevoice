@@ -96,10 +96,24 @@ also see 2.9 for manuscript colors
 .manuscript .TEI.front:not(.none) + .TEI{
 	margin-top: 2em;
 }
+.journal .TEI{
+	display: block;
+    text-align: justify;
+    padding: 1em 1em 2em 1em;
+    margin: .5em auto 2em auto;
+}
+@media only screen and (min-width: 768px){
+	.journal .TEI{
+        padding: 1em 2.2em 2em 2.2em;
+        border: 2px solid #dcdcdc;
+	}
+}
 /* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	body .manuscript,
-	body .manuscript-switches{
+	body .journal,
+	body .manuscript-switches,
+	body .journal-switches{
 		display: none;
 	}
 	body .narrow-mobile{
@@ -123,18 +137,6 @@ also see 2.9 for manuscript colors
 	-ms-hyphens: initial;
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
-}
-.journal .TEI{
-	display: block;
-    text-align: justify;
-    padding: 1em 1em 2em 1em;
-    margin: .5em auto 2em auto;
-}
-@media only screen and (min-width: 768px){
-	.journal .TEI{
-        padding: 1em 2.2em 2em 2.2em;
-        border: 2px solid #dcdcdc;
-	}
 }
 .artifact .TEI{
 	padding: 0;
@@ -1424,6 +1426,48 @@ table .linenumber{
 }
 .font.liv_020027_0001{
 	font-family: 'unifrakturmaguntiabook';
+}
+@media only screen and (min-width:480px){
+    .table.liv_020058_0070{
+        font-size: .7em;
+        text-align: center;
+        width: 100%;
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+        border-collapse: collapse;
+    }
+    .table.liv_020058_0070 tbody{
+        text-align: left;
+        display: inline-block;
+    }
+    .table.liv_020058_0070 td{
+        padding: 0 .5em;
+    }
+    .offset-1.liv_020058_0070 td{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .offset-2.liv_020058_0070 td{
+        padding-top: 1em;
+    }
+    .offset-3.liv_020058_0070 td{
+        padding-bottom: 1em;
+    }
+    .heading.liv_020058_0070{
+        border-bottom: 1px black solid;
+    }
+    .numbers.liv_020058_0070,
+    .numbers-1.liv_020058_0070{
+        border-left: 1px black solid;
+    }
+    .numbers.liv_020058_0070{
+        text-align: right;
+    }
+}
+@media only screen and (min-width:768px){
+    .table.liv_020058_0070{
+        font-size: .85em;
+    }
 }
 .artifact.liv_021003_0001{
 	max-width: 319px;

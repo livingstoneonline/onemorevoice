@@ -26,7 +26,7 @@
 			gtag('config', 'UA-31768072-5');
 		</script>
 		<style>
-			p{
+			.essay p{
 				clear: both;
 			}
 			.translate{
@@ -35,15 +35,12 @@
 				margin: 1em 0 0 0;
 				float: right;
 			}
-			.page-title{
-				
-			}
 			.page-title h3{
 				float: left;
 			}
-			#google_translate_element{
+			/* #google_translate_element{
 				filter: grayscale(100%);
-			}
+			} */
 		</style>
 		<!-- Google Translate hacks adapted from https://forums.asp.net/t/2139105.aspx?Style+Google+Translate+Drop+down+and+HIDE+Google+Translate+Toolbar-->
 		<style type="text/css">
@@ -54,12 +51,16 @@
 			}
 
 			div#google_translate_element div.goog-te-gadget {
-				border: none;
+				/* border: none;
 				background-color: transparent;
-				margin-right: 0;
+				margin-right: 0; */
 				/*background-color: #17548d;*/ /*#e3e3ff*/
 			}
-	
+
+			div#google_translate_element div.goog-te-gadget a.goog-te-combo{
+				margin: 0;
+			}
+
 			div#google_translate_element div.goog-te-gadget a.goog-te-combo:hover {
 				text-decoration: none;
 			}

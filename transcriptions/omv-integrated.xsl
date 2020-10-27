@@ -1274,20 +1274,21 @@
 	
 	<!-- Beginning of elements that go with table -->
 	<xsl:template match="table">
-		<table>
+		<table class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</table>
 	</xsl:template>
 
 	<xsl:template match="row">
-		<tr>
+		<tr  class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</tr>
 	</xsl:template>
 
 	<xsl:template match="cell">
-		<td> &#x00A0;<xsl:apply-templates/>&#x00A0; </td>
+		<td class="{concat(name(), ' ', @rend, ' ', @n)}"><xsl:apply-templates/></td>
 	</xsl:template>
+	<!-- Non-breaking space &#x00A0; -->
 
 	<xsl:template match="term[@type]" priority="1">
 		<xsl:apply-templates/>

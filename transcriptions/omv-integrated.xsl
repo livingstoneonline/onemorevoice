@@ -644,6 +644,9 @@
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
+				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
+				</aside>
 				<xsl:variable name="narrow">
 					<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 				</xsl:variable>
@@ -1280,7 +1283,7 @@
 	</xsl:template>
 
 	<xsl:template match="row">
-		<tr  class="{concat(name(), ' ', @rend, ' ', @n)}">
+		<tr class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</tr>
 	</xsl:template>

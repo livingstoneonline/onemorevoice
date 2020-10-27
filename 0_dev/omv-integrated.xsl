@@ -425,8 +425,8 @@
 					<xsl:if test="//sourceDesc/biblStruct/monogr/author/text()">
 						<xsl:text>, by </xsl:text>
 						<xsl:value-of select="//sourceDesc/biblStruct/monogr/author" separator=" and "/>
-					</xsl:if><xsl:text>, by </xsl:text>
-					
+					</xsl:if>
+					<xsl:text>, </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='pages']"/>
 					<xsl:value-of select="$period-after-date"/>
 					<xsl:if test="//sourceDesc/biblStruct/monogr/editor/text()">
@@ -642,6 +642,9 @@
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
+				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
+				</aside>
 				<xsl:variable name="narrow">
 					<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 				</xsl:variable>
@@ -1272,20 +1275,21 @@
 	
 	<!-- Beginning of elements that go with table -->
 	<xsl:template match="table">
-		<table>
+		<table class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</table>
 	</xsl:template>
 
 	<xsl:template match="row">
-		<tr>
+		<tr class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</tr>
 	</xsl:template>
 
 	<xsl:template match="cell">
-		<td> &#x00A0;<xsl:apply-templates/>&#x00A0; </td>
+		<td class="{concat(name(), ' ', @rend, ' ', @n)}"><xsl:apply-templates/></td>
 	</xsl:template>
+	<!-- Non-breaking space &#x00A0; -->
 
 	<xsl:template match="term[@type]" priority="1">
 		<xsl:apply-templates/>

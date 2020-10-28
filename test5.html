@@ -32,18 +32,16 @@
 			#skiptocontent{
 				margin-top: -.5em;
 			}
-			.topnav{
-				padding-top: .5em;
-			}
-			.topnav ul li.translate:hover,
-			.topnav ul li.translate:focus-within{
-				color: unset;
-				background: unset;
+			.essay h3{
+				clear: both;
 			}
 			.translate{
 				overflow: hidden !important;
 				height: 1.3em;
-				margin: 0 0 -.35em .5em;
+			}
+			.translate.desktop{
+					display: none;
+					visibility: hidden;
 			}
 			.goog-te-banner-frame.skiptranslate,
 			#google_translate_element > div.skiptranslate > span > a.goog-logo-link,
@@ -61,6 +59,33 @@
 			#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
 				border: 2px #424242 solid;
 				background-color: #E3E3E3;
+			}
+			@media only screen and (min-width: 480px){
+				.translate{
+					margin: 0 0 1em 0;
+					float: left;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				.translate.mobile{
+					display: none;
+					visibility: hidden;
+				}
+				.translate.desktop{
+					display: block;
+					visibility: visible;
+				}
+				.topnav{
+					padding-top: .5em;
+				}
+				.topnav ul li.translate:hover,
+				.topnav ul li.translate:focus-within{
+					color: unset;
+					background: unset;
+				}
+				.translate{
+					margin: 0 0 -.35em .5em;
+				}
 			}
 		</style>
 	</head>
@@ -140,7 +165,7 @@
 							</div>
 						</div>
 					</li>
-					<li role="none" class="translate"><div id="google_translate_element" title="Translate Page"></div></li>
+					<li role="none" class="translate desktop"><div id="google_translate_element" title="Translate Page"></div></li>
 				</ul>
 			</nav>
 
@@ -203,7 +228,9 @@
 			</header>
 			
 			<main class="main" id="main">
-				<h3>Introduction</h3></div>
+				<div class="translate mobile"><div id="google_translate_element" title="Translate Page"></div></div>
+
+				<h3>Introduction</h3>
 
 				<p><span class="italic">One More Voice</span>, a work of digital humanities scholarship, focuses on <a href="analytical_priorities.html">recovering non-European contributions</a> from nineteenth-century British imperial and colonial archives. The name reflects the fact that there is always <span class="italic">one more</span> <span class="italic">voice</span> to recover from the archives. The non-European contributions take multiple forms and appear in multiple genres, including travel narratives, autobiographies, letters, diaries, testimonies, interviews, treaties, maps, oral histories, genealogies, and vocabularies. <span class="italic">One More Voice</span> attempts to offer a critical and systematic evaluation of these rich and diverse materials by using interpretive approaches and digital preservation techniques that expand existing scholarship on the topic. Learn more about our <a href="analytical_priorities.html">analytical priorities</a>, <a href="project_design.html">project design</a>, <a href="collaboration.html">approach to collaboration</a>, and <a href="coding_guidelines.html">coding guidelines</a>.</p>
 				

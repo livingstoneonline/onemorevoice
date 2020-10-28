@@ -585,6 +585,10 @@ a:focus img{
 .topnav{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 600;
+	white-space: nowrap;
+    width: 120%;
+    margin-left: -10%;
+    margin-right: -10%;
 	display: none;
 }
 @media only screen and (min-width: 992px){

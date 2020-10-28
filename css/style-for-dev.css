@@ -24,10 +24,10 @@ Table of Contents
 
 /** Main Site Colors **/
 /*
-site-blue #2e68ac;
-site-red #cc4943;
+site-blue #235185; --> #235185
+site-red #902D27; --> #902D27
 whitesmoke;
-light gray #dbdbdb;
+light gray #E3E3E3; --> #e3e33
 dark gray #858585;
 dark brown #424242;
 near black #525252;
@@ -118,7 +118,7 @@ h2{
 h3{
 	font-size: 1em;
 	font-weight: bold;
-	color: #2e68ac;
+	color: #235185;
 }
 h4{
 	font-style: italic;
@@ -405,16 +405,16 @@ img,
 }
 a,
 a:visited{
-	color: #2e68ac;
+	color: #235185;
 	/*text-decoration:none;*/
 }
 a:hover{
 	color: #a83c37;
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 }
 a:focus{
 	color: #2b61a1;
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 }
 
 .graphic a:hover,
@@ -426,7 +426,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #2e68ac solid;
+	border: 3px #235185 solid;
 }
 
 
@@ -674,7 +674,7 @@ input:checked + label::after{
 }
 .topnav ul li .dropdown .dropdown-content ul li{
 	font-size: .85em;
-	background-color: #e3e3e3; /*light gray*/
+	background-color: #E3E3E3; /*light gray*/
 	display: block;
 }
 .topnav ul li .dropdown .dropdown-content ul li:last-of-type{
@@ -716,7 +716,7 @@ color: black;
 color: whitesmoke;
 background-color: #424242; [dark brown]
 background-color: #858585; [dark gray]
-background-color: #dbdbdb; [light gray]
+background-color: #E3E3E3; [light gray]
 */
 
 
@@ -961,11 +961,11 @@ body.transcription .title{
 	-o-object-fit: cover;
 	border-radius:50%;
 	overflow: hidden;
-	border: 2px solid #dbdbdb;
+	border: 2px solid #E3E3E3;
 }
 .gallery figure a img:hover,
 .gallery figure a:focus img{
-	border: 2px #2e68ac solid;
+	border: 2px #235185 solid;
 }
 .gallery figure figcaption{
 	font-size: .8em;
@@ -1022,7 +1022,7 @@ hr{
 	width: 50%;
 }
 .highlight{
-	color: #cc4943;
+	color: #902D27;
 	font-style: italic;
 	/* text-decoration:underline dotted; */
 }
@@ -1033,10 +1033,10 @@ hr{
 	text-align: left;
 }
 .site-blue{
-	color: #2e68ac;
+	color: #235185;
 }
 .site-red{
-	color: #cc4943;
+	color: #902D27;
 }
 .small{
 	font-size: .9em;

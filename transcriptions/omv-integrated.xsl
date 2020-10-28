@@ -60,7 +60,7 @@
 					</xsl:otherwise>
 				</xsl:choose>
 				<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
-			    <meta name="theme-color" content="#2e68ac"/>
+			    <meta name="theme-color" content="#235185"/>
 			    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
 			    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png" />
 			    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png" />

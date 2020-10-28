@@ -25,6 +25,16 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
+		<script>
+			AddRelNoopener();
+
+			function AddRelNoopener(){
+				var links = document.querySelectorAll("a");
+				for(var i = 0; i < links.length; i++){
+					links[i].setAttribute("rel","noopener");
+				}
+			}
+		</script>
 		<style type="text/css">
 			body {
 				top: 0px !important;
@@ -237,16 +247,6 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 				}
 			</script>
 			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-			<script type="text/javascript">
-				AddRelNoopener();
-
-				function AddRelNoopener(){
-					var links = document.querySelectorAll("a");
-					for(var i = 0; i < links.length; i++){
-						links[i].setAttribute("rel","noopener");
-					}
-				}
-			</script>
 		</article>
 	</body>
 

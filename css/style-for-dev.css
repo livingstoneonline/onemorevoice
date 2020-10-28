@@ -100,7 +100,7 @@ h1{
 h2{
 	font-size: .9em;
 	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	display: none;
 }
 @media only screen and (min-width: 480px){
@@ -145,7 +145,7 @@ h5.books::after{
 	padding-top: 2em;
 }
 .return-top{
-	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-size: .9em;
 }
 .title,
@@ -390,7 +390,7 @@ img,
 }
 .footer{
 	font-size: 1em;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	text-align: center;
 	line-height: 1.6em;
 	padding-top: 1em;
@@ -427,6 +427,14 @@ a img{
 a:hover img,
 a:focus img{
 	border: 3px #235185 solid;
+}
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 
 
@@ -575,12 +583,13 @@ a:focus img{
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
 
 .topnav{
-	font: 16px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 600;
 	display: none;
 }
 @media only screen and (min-width: 992px){
 	.topnav{
+		font-size: 1.1em;
 		display: block;
 	}
 }
@@ -736,7 +745,7 @@ body.fixed-nav .overlay .menu .close-title{
 }
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	color: whitesmoke;
 	background-color: #424242; /* Black fallback color */
 	opacity: 1;
@@ -969,7 +978,7 @@ body.transcription .title{
 }
 .gallery figure figcaption{
 	font-size: .8em;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	text-align: center;       
 	line-height: 1.2em;
 }

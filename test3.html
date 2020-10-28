@@ -25,7 +25,6 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
-		<!-- Google Translate hacks adapted from https://forums.asp.net/t/2139105.aspx?Style+Google+Translate+Drop+down+and+HIDE+Google+Translate+Toolbar-->
 		<style type="text/css">
 			body {
 				top: 0px !important;
@@ -43,24 +42,22 @@
 				clear: both;
 			}
 			.goog-te-banner-frame.skiptranslate,
-			div#google_translate_element > div.skiptranslate > span > a.goog-logo-link,
-			div#google_translate_element > div > span{
+			#google_translate_element > div.skiptranslate > span > a.goog-logo-link,
+			#google_translate_element > div > span{
 				display: none !important;
 			}
-			div#google_translate_element div.goog-te-gadget .goog-te-combo{
+			#google_translate_element div.goog-te-gadget .goog-te-combo{
 				margin: 0;
 				padding: 1px;
     			border: 2px solid  #dbdbdb;
 				border-radius: 7px;
 			}
-			div#google_translate_element div.goog-te-gadget .goog-te-combo:hover,
-			div#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
+			#google_translate_element div.goog-te-gadget .goog-te-combo:hover,
+			#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
 				border: 2px #2e68ac solid;
-				background-color: #dbdbdb;
 			}
-			/* Remove the down arrow */
-			div#google_translate_element div.goog-te-gadget goog-te-combo span[style="color: rgb(213, 213, 213);"] {
-				display: none;
+			#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
+				background-color: #dbdbdb;
 			}
 		</style>
 	</head>

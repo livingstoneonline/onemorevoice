@@ -28,19 +28,19 @@
 		<style type="text/css">
 			body {
 				top: 0px !important;
-			}
-			.page-title h3{
-				float: left;
+				position: relative;
 			}
 			.translate{
 				overflow: hidden !important;
 				height: 1.4em;
 				margin: 1em 0 0 0;
-				float: right;
+				position: absolute;
+				top: 1em;
+				right: 1em;
 			}
-			.essay p{
+			/* .essay p{
 				clear: both;
-			}
+			} */
 			.goog-te-banner-frame.skiptranslate,
 			#google_translate_element > div.skiptranslate > span > a.goog-logo-link,
 			#google_translate_element > div > span{
@@ -76,6 +76,10 @@
 			<nav id="skiptocontent" aria-labelledby="nav0">
 				<a href="#main" id="nav0" tabindex="0">skip to main content</a>
 			</nav>
+
+			<aside class="translate">
+				<div id="google_translate_element" title="Translate Page"></div>
+			</aside>
 
 			<!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
 			<!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
@@ -193,16 +197,14 @@
 
 			<header class="title" id="title-div">
 				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-				<img class="image content-holder-2" src="site-images/liv_012001_0001_deriv-1399px.jpg" srcset="site-images/liv_012001_0001_deriv-1399px.jpg 1399w, site-images/liv_012001_0001_deriv-1276px.jpg 1276w,
-site-images/liv_012001_0001_deriv-1216px.jpg 1216w, site-images/liv_012001_0001_deriv-699px.jpg 699w,
-site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_deriv-608px.jpg 608w, site-images/liv_012001_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Agnes Livingstone, Thomas Livingstone, Abdullah Susi, James Chuma, and Horace Waller with David Livingstone’s manuscripts." title="Colorised version of R. Allen & Sons, “Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone” (1874), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001. SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only." />
+				<img class="image content-holder-2" src="site-images/liv_012001_0001_deriv-1399px.jpg" srcset="site-images/liv_012001_0001_deriv-1399px.jpg 1399w, site-images/liv_012001_0001_deriv-1276px.jpg 1276w, site-images/liv_012001_0001_deriv-1216px.jpg 1216w, site-images/liv_012001_0001_deriv-699px.jpg 699w, site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_deriv-608px.jpg 608w, site-images/liv_012001_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Agnes Livingstone, Thomas Livingstone, Abdullah Susi, James Chuma, and Horace Waller with David Livingstone’s manuscripts." title="Colorised version of R. Allen & Sons, “Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone” (1874), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001. SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only." />
 				<h1 class="header-title">One More Voice</h1>
 				<hr />
 				<h2 class="italic">Lost Voices from the British Empire's Archives</h2>
 			</header>
 			
 			<main class="main" id="main">
-				<div class="page-title"><h3>Introduction</h3><div class="translate"><div id="google_translate_element" title="Translate Page"></div></div></div>
+				<h3>Introduction</h3></div>
 
 				<p><span class="italic">One More Voice</span>, a work of digital humanities scholarship, focuses on <a href="analytical_priorities.html">recovering non-European contributions</a> from nineteenth-century British imperial and colonial archives. The name reflects the fact that there is always <span class="italic">one more</span> <span class="italic">voice</span> to recover from the archives. The non-European contributions take multiple forms and appear in multiple genres, including travel narratives, autobiographies, letters, diaries, testimonies, interviews, treaties, maps, oral histories, genealogies, and vocabularies. <span class="italic">One More Voice</span> attempts to offer a critical and systematic evaluation of these rich and diverse materials by using interpretive approaches and digital preservation techniques that expand existing scholarship on the topic. Learn more about our <a href="analytical_priorities.html">analytical priorities</a>, <a href="project_design.html">project design</a>, <a href="collaboration.html">approach to collaboration</a>, and <a href="coding_guidelines.html">coding guidelines</a>.</p>
 				

@@ -7,9 +7,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>“Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 4 in No. 3)</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="normalized">‘Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District’ (‘Report on Visit to Interior of Congo State and on Condition of the Natives,’ Inclosure 4 in No. 3)</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
-                <title type="alternative">“Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 4 in No. 3), 1904</title><!-- Title, date -->
+                <title>“Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District,” 1904</title><!-- Title, date -->
                 <author>Casement, Roger, 1864-1916</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author>V V</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first">Casement, Roger</author><!-- First author only: Surname, Forename -->
@@ -62,6 +62,7 @@
 	                    <author></author>
 						<editor></editor><!-- Editor (if known; otherwise leave blank -->
 						<imprint>
+							<biblScope unit="section">Report on Visit to Interior of Congo State and on Condition of the Natives</biblScope><!-- Section title (if known; otherwise leave blank) -->
 							<biblScope unit="pages">Africa, 1:76-77</biblScope><!-- Pages (if known; otherwise leave blank) -->
 							<pubPlace>House of Commons. Accounts and Papers. London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
 							<publisher>Harrison and Sons for His Majesty’s Stationary Office</publisher><!-- Publisher (if known; otherwise leave blank) -->
@@ -72,7 +73,7 @@
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
-					<title>“Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District” (“Report on Visit to Interior of Congo State and on Condition of the Natives,” Inclosure 4 in No. 3)</title>
+					<title>“Notes in the Case of V V, a Native of L L* in the Mantumba District, Both of Whose Hands Have Been Hacked or Beaten Off, and With Reference to Other Similar Cases of Mutilation in That District”</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->

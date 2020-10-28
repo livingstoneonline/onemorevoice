@@ -238,16 +238,18 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 		</article>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 		<script src="scripts/scripts.js"></script>
-		<!-- Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab-->
+		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
 		<script type="text/javascript">
-			AddRelNoopener();
-
-			function AddRelNoopener(){
-				var links = document.querySelectorAll("a");
-				for(var i = 0; i < links.length; i++){
-					links[i].setAttribute("rel","noopener");
-				}
+			function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "scripts/noopener.js";
+			document.body.appendChild(element);
 			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
 		</script>
 	</body>
 

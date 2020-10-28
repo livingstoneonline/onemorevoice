@@ -30,10 +30,10 @@ Table of Contents
 
 /** Main Site Colors **/
 /*
-site-blue #2e68ac;
-site-red #cc4943;
+site-blue #235185;
+site-red #902D27;
 whitesmoke;
-light gray #dbdbdb;
+light gray #E3E3E3;
 dark gray #858585;
 dark brown #424242;
 near black #525252;
@@ -123,11 +123,11 @@ also see 2.9 for manuscript colors
 .narrow-mobile{
 	font-size: 1.1em;
 	font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 	line-height: 1.6em;
 	padding: 1em;
 	margin: 1em;
-	border: 1px solid black; /*#2e68ac*/ /*#cc4943*/
+	border: 1px solid black; /*#235185*/ /*#902D27*/
 	display: none;
 	overflow-wrap: initial;
 	word-wrap: initial;
@@ -231,7 +231,7 @@ label.md_switch{
 	display: inline-flex;
 }
 .md_switch [type=checkbox]:checked+.md_switch__toggle::before{
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 }
 
 /* switch only */
@@ -262,7 +262,7 @@ label.md_switch{
 
 /* slider & hover */
 .md_switch .md_switch__toggle:hover::before{
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 }
 /* switch & hover */
 .md_switch .md_switch__toggle:hover::after{
@@ -275,7 +275,7 @@ label.md_switch{
 }
 /* switch:checked & hover */
 .md_switch [type=checkbox]:checked+.md_switch__toggle:hover::after{
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 	;
 }
 
@@ -358,7 +358,7 @@ label.md_switch{
 .back-button a,
 .back-button a:visited{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #2e68ac;
+	color: #235185;
 	text-decoration: none;
 	display: none;
 }
@@ -396,7 +396,7 @@ button::-moz-focus-inner{
 #rotate-button{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	font-size: .75em;
-	background-color: #dbdbdb;
+	background-color: #E3E3E3;
 	border: 1px solid #858585;
 	border-radius: 12px;
 	float: left;
@@ -415,7 +415,7 @@ button::-moz-focus-inner{
 
 }
 #rotate-button:focus{
-	border: 2px #2e68ac solid;
+	border: 2px #235185 solid;
 }
 #rotate-button.click-color{
 	color: whitesmoke;
@@ -436,7 +436,7 @@ button::-moz-focus-inner{
 /* 2.4. Pagebreaks, linebreaks, linenumbers */
 
 .pb-title{
-	color: #2e68ac;
+	color: #235185;
 	font-size: .9em;
 	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
 	text-decoration: none;
@@ -677,7 +677,7 @@ table .linenumber{
 }
 .sic,
 .corr{
-	border-bottom: 2px dotted #cc4943;
+	border-bottom: 2px dotted #902D27;
 }
 .abbr,
 .expan{
@@ -878,11 +878,11 @@ table .linenumber{
 	}
 }
 .artifact.gray img{
-	border: 3px #dbdbdb solid;
+	border: 3px #E3E3E3 solid;
 }
 .artifact.gray a:hover img,
 .artifact.gray a:focus img{
-	border: 3px #2e68ac solid;
+	border: 3px #235185 solid;
 }
 .journal .image-small.inline-left{
 	float: left;
@@ -908,7 +908,7 @@ table .linenumber{
 .country,
 .region,
 .settlement{
-	border-bottom: 1px #2e68ac dotted;
+	border-bottom: 1px #235185 dotted;
 } */
 
 /* The following is useful for coding review */

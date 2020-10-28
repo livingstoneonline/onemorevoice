@@ -29,10 +29,19 @@
 			body {
 				top: 0px !important;
 			}
+			.translate .topnav ul li:hover,
+			.topnav ul li:focus-within{
+				color: unset;
+				background: unset;
+			}
 			.translate{
 				overflow: hidden !important;
-				height: 1.5em;
+				height: 1.4em;
 				margin: 1em 0 0 0;
+				position: relative;
+			}
+			#google_translate_element{
+				position: absolute;
 			}
 			.goog-te-banner-frame.skiptranslate,
 			#google_translate_element > div.skiptranslate > span > a.goog-logo-link,

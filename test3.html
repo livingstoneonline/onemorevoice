@@ -25,9 +25,13 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
-		<style>
-			.essay p{
-				clear: both;
+		<!-- Google Translate hacks adapted from https://forums.asp.net/t/2139105.aspx?Style+Google+Translate+Drop+down+and+HIDE+Google+Translate+Toolbar-->
+		<style type="text/css">
+			body {
+				top: 0px !important;
+			}
+			.page-title h3{
+				float: left;
 			}
 			.translate{
 				overflow: hidden !important;
@@ -35,14 +39,13 @@
 				margin: 1em 0 0 0;
 				float: right;
 			}
-			.page-title h3{
-				float: left;
+			.essay p{
+				clear: both;
 			}
-		</style>
-		<!-- Google Translate hacks adapted from https://forums.asp.net/t/2139105.aspx?Style+Google+Translate+Drop+down+and+HIDE+Google+Translate+Toolbar-->
-		<style type="text/css">
+			.goog-te-banner-frame.skiptranslate,
+			div#google_translate_element > div.skiptranslate > span > a.goog-logo-link,
 			div#google_translate_element > div > span{
-				display: none;
+				display: none !important;
 			}
 			div#google_translate_element div.goog-te-gadget .goog-te-combo{
 				margin: 0;
@@ -55,50 +58,10 @@
 				border: 2px #2e68ac solid;
 				background-color: #dbdbdb;
 			}
-		
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span {
-				display: none;
-			}
-	
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span:hover {
-				color: white;
-			}
-			
-			.goog-te-gadget-icon {
-				display: none !important;
-				/*background: url("url for the icon") 0 0 no-repeat !important;*/
-			}
-	
 			/* Remove the down arrow */
-			/* when dropdown open */
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span[style="color: rgb(213, 213, 213);"] {
+			div#google_translate_element div.goog-te-gadget goog-te-combo span[style="color: rgb(213, 213, 213);"] {
 				display: none;
 			}
-			/* after clicked/touched */
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span[style="color: rgb(118, 118, 118);"] {
-				display: none;
-			}
-			/* on page load (not yet touched or clicked) */
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span[style="color: rgb(155, 155, 155);"] {
-				display: none;
-			}
-	
-			/* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span[style="border-left: 1px solid rgb(187, 187, 187);"] {
-				display: none;
-			}
-			/* Remove span with left border line | (next to the arrow) in Edge & IE11 */
-			div#google_translate_element div.goog-te-gadget a.goog-te-combo span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
-				display: none;
-			}
-			/* HIDE the google translate toolbar */
-			.goog-te-banner-frame.skiptranslate {
-				display: none !important;
-			}
-			body {
-				top: 0px !important;
-			}
-			/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
 		</style>
 	</head>
 

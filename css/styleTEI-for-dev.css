@@ -121,8 +121,8 @@ also see 2.9 for manuscript colors
 	}
 }
 .narrow-mobile{
-	font-size: 1.1em;
-	font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 1em;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	background-color: #E3E3E3;
 	line-height: 1.6em;
 	padding: 1em;
@@ -199,7 +199,7 @@ label.md_switch::after{
 label.md_switch{
 	font-size: .95em;
 	font-weight: 600;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	/* color: #525252; */
 	padding-left: 12px;
 }
@@ -357,7 +357,7 @@ label.md_switch{
 /* .back-button is used on pages with critically-edited primary texts */
 .back-button a,
 .back-button a:visited{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	color: #235185;
 	text-decoration: none;
 	display: none;
@@ -394,8 +394,8 @@ button::-moz-focus-inner{
 	border: 0;
   }
 #rotate-button{
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	font-size: .75em;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	font-size: .8em;
 	background-color: #E3E3E3;
 	border: 1px solid #858585;
 	border-radius: 12px;
@@ -438,7 +438,7 @@ button::-moz-focus-inner{
 .pb-title{
 	color: #235185;
 	font-size: .9em;
-	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	text-decoration: none;
 	text-indent: 0;
 }
@@ -482,7 +482,7 @@ button::-moz-focus-inner{
 }
 .linenumber{
 	font-size: .8em;
-	font-family: "source sans pro", calibri, arial, helvetica, sans-serif;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	color: #8c8b85;
 	text-align: right;
 	float: left;

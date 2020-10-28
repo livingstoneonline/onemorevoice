@@ -272,10 +272,3 @@ function AddRelNoopener(){
         links[i].setAttribute("rel","noopener");
     }
 }
-
-
-/* Adapted from https://www.javascripttutorial.net/javascript-dom/javascript-unload/ */
-/* Needed to prevent a "Best Practices" issue created by Google Translate */
-addEventListener('unload', (event) => {
-  console.log('The page is unloaded');
-});

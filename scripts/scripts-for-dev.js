@@ -274,11 +274,8 @@ function AddRelNoopener(){
 }
 
 
-/* Adapted from https://developers.google.com/web/updates/2018/07/page-lifecycle-api?utm_source=lighthouse&utm_medium=lr#the-unload-event */
+/* Adapted from https://www.javascripttutorial.net/javascript-dom/javascript-unload/ */
 /* Needed to prevent a "Best Practices" issue created by Google Translate */
-const terminationEvent = 'onpagehide' in self ? 'pagehide' : 'unload';
-
-addEventListener(terminationEvent, (event) => {
-  // Note: if the browser is able to cache the page, `event.persisted`
-  // is `true`, and the state is frozen rather than terminated.
-}, {capture: true});
+addEventListener('unload', (event) => {
+  console.log('The page is unloaded');
+});

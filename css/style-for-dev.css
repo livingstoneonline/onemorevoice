@@ -703,6 +703,7 @@ input:checked + label::after{
 	color: whitesmoke;
 	background-color: #858585; /*dark gray*/
 	outline: none;
+	border-radius: unset;
 }
 .topnav ul li .dropdown .dropdown-content ul li a,
 .topnav ul li .dropdown .dropdown-content ul li a:visited{

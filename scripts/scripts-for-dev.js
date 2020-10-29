@@ -20,7 +20,7 @@ const navTop = nav.offsetTop;
 
 function stickyNavigation() {
 
-  if (window.scrollY >= navTop) {
+  if (window.scrollY >= navTop + 1) {
     // nav offsetHeight = height of nav
     document.body.style.paddingTop = nav.offsetHeight + 'px';
     document.body.classList.add('fixed-nav');

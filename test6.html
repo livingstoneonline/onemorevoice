@@ -37,7 +37,7 @@
 			}
 			.translate{
 				overflow: hidden !important;
-				height: 1.4em;
+				/* height: 1.4em; */
 				margin: .7em 0 .5em 0;
 				float: left;
 			}
@@ -46,8 +46,8 @@
 					margin: 0 0 1em 0;
 				}
 			}
-			.essay h3{
-				clear: both;
+			#google_translate_element > div > span > a > img{
+				width: 3em;
 			}
 			.goog-te-banner-frame.skiptranslate,
 			#google_translate_element > div.skiptranslate > span > a.goog-logo-link,
@@ -65,6 +65,9 @@
 			#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
 				border: 2px #235185 solid;
 				background-color: #E3E3E3;
+			}
+			.essay h3{
+				clear: both;
 			}
 		</style>
 	</head>
@@ -241,7 +244,7 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {
-				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+				new google.translate.TranslateElement.InlineLayout.SIMPLE({pageLanguage: 'en'}, 'google_translate_element');
 			}
 		</script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

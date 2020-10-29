@@ -614,10 +614,12 @@ a:focus img{
 .topnav ul li:focus-within{
 	color: whitesmoke;
 	background-color: #424242;
+	border-radius: 7px 7px 0 0;
 }
 .topnav ul li a{
 	color: black;
-	padding: 16px 10px;
+	padding: 10px 10px;
+	border-radius: 7px 7px 0 0;
 }
 .topnav ul li a:hover,
 .topnav ul li a:focus{
@@ -645,8 +647,9 @@ input:checked + label::after{
 	content: '\f0d7'; /* open folder */
 }
 .topnav ul li .dropdown label.dropbtn{
-	padding: 16px 10px;
+	padding: 10px 10px;
 	border: none;
+	border-radius: 7px 7px 0 0;
 	outline: none;
 }
 [type="checkbox"]:checked + label{

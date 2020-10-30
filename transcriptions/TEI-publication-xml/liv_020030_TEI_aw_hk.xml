@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020030"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
@@ -154,7 +154,7 @@ me in return for my kindness. "</p>
 		
 <p>It was about this period, during a rather lengthy sojourn at 
 " <placeName>Moody's Hill</placeName>, " that the following circumstances came under my 
-ob<!-- - -->servation.<space extent="1" unit="chars"/><persName>Tom</persName> had a favorite slave, a good-looking, glossy-skinned negro&#8212;called <persName>Lycurgus</persName>; but notwithstanding <persName>Tom</persName>'s partiality for the
+ob<!-- - -->servation.<space extent="1" unit="chars"/><persName>Tom</persName> had a favorite slave, a good-looking, glossy-skinned negro&#8212;called <persName>Lycurgus</persName>; but notwithstanding <persName>Tom</persName>'s partiality for the<lb/>
        
 
 	<pb facs="liv_020030_0002" n="0002"/>
@@ -182,11 +182,11 @@ is it a duppy or the devil that you have seen?</p>
 		
 <p>" Ah! <persName>massa</persName>, " replied <persName>Curgy</persName>, " dats the ting sar: <persName>Curgy</persName> nearly dead, <persName>massa</persName>; " and then he entered into a long rambling explanation, half of which was <term type="collective">Greek</term> to me, of his having seen the " perit " of his " grandy " and of his having been warned by it of his approaching death.<space extent="1" unit="chars"/>The result of his lachrymose tale was a hearty roar of laughter from his master and myself, and an injunction from the former to go about his business, and to take care that he was after no tricks.</p>
 		
-<p><persName>Curgy</persName> departed muttering and groaning, and I thought no more of the matter.<space extent="1" unit="chars"/>Towards evening, however, while <persName>Tom</persName> and myself were discussing a <foreign>jorum</foreign> of excellent <foreign>sangaree</foreign>, one of the old woman who usually performed the duties of nurse to the sick slaves, made her ap<!-- - -->pearance, and intimated that<persName>Curgy</persName> was quite bad, and that she thought he would not outlive the night.<space extent="1" unit="chars"/><persName>Tom</persName> was rather startled, and rose immediately to satisfy himself as to the truth of <persName>the old woman</persName>'s re<!-- - -->port.<space extent="1" unit="chars"/>We proceed together to <persName>Curgy</persName>'s <placeName>quarters</placeName>, where, extended on a mat spread on the bare earthen floor, lay the unfortunate victim of superstition.<space extent="1" unit="chars"/>We were much struck by the change which a few <choice><sic>hour's</sic><corr>hours'</corr></choice> illness had made in the appearance of the poor fellow.<space extent="1" unit="chars"/>He replied not a word to the many questions put to him by <persName>Tom</persName>, but continued groaning and rocking himself from side to side during the whole time of our visit.<space extent="1" unit="chars"/><persName>Tom</persName> then quitted the hut for the purpose of compounding more medicine for the sufferer, and I followed him to the great house where on our arrival we found <persName>Curgy</persName>'s rival, the slave alluded to, his face beaming with the importance of a great secret.<space extent="1" unit="chars"/>We were about to pass him when he attracted our attention by a low sly chuckle, and with a request to be heard for a few minutes.<space extent="1" unit="chars"/><persName>Tom</persName> bade him follow us, and in a short time he was delivered of his secret, apparently much to his own satisfaction and the annoyance of his master.<space extent="1" unit="chars"/>I never saw <persName>Tom</persName> so much moved before.<space extent="1" unit="chars"/>One fit of passion has scarcely subsided when he fell into another.<space extent="1" unit="chars"/>As, how<!-- - -->ever, the greatest tempest will at last settle down into a calm, <persName>Tom</persName>'s 
+<p><persName>Curgy</persName> departed muttering and groaning, and I thought no more of the matter.<space extent="1" unit="chars"/>Towards evening, however, while <persName>Tom</persName> and myself were discussing a <foreign>jorum</foreign> of excellent <foreign>sangaree</foreign>, one of the old woman who usually performed the duties of nurse to the sick slaves, made her ap<!-- - -->pearance, and intimated that<persName>Curgy</persName> was quite bad, and that she thought he would not outlive the night.<space extent="1" unit="chars"/><persName>Tom</persName> was rather startled, and rose immediately to satisfy himself as to the truth of <persName>the old woman</persName>'s re<!-- - -->port.<space extent="1" unit="chars"/>We proceed together to <persName>Curgy</persName>'s <placeName>quarters</placeName>, where, extended on a mat spread on the bare earthen floor, lay the unfortunate victim of superstition.<space extent="1" unit="chars"/>We were much struck by the change which a few <choice><sic>hour's</sic><corr>hours'</corr></choice> illness had made in the appearance of the poor fellow.<space extent="1" unit="chars"/>He replied not a word to the many questions put to him by <persName>Tom</persName>, but continued groaning and rocking himself from side to side during the whole time of our visit.<space extent="1" unit="chars"/><persName>Tom</persName> then quitted the hut for the purpose of compounding more medicine for the sufferer, and I followed him to the great house where on our arrival we found <persName>Curgy</persName>'s rival, the slave alluded to, his face beaming with the importance of a great secret.<space extent="1" unit="chars"/>We were about to pass him when he attracted our attention by a low sly chuckle, and with a request to be heard for a few minutes.<space extent="1" unit="chars"/><persName>Tom</persName> bade him follow us, and in a short time he was delivered of his secret, apparently much to his own satisfaction and the annoyance of his master.<space extent="1" unit="chars"/>I never saw <persName>Tom</persName> so much moved before.<space extent="1" unit="chars"/>One fit of passion has scarcely subsided when he fell into another.<space extent="1" unit="chars"/>As, how<!-- - -->ever, the greatest tempest will at last settle down into a calm, <persName>Tom</persName>'s <lb/>
 		
 
 	<pb facs="liv_020031_0003" n="0003"/>
-<fw><seg rend="center caps"><persName>Curgy</persName>'s Funeral,<space extent="1" unit="chars"/></seg> <seg rend="right">32</seg></fw>	
+<fw><seg rend="left">32</seg> <seg rend="center caps"><persName>Curgy</persName>'s Funeral,<space extent="1" unit="chars"/></seg></fw>	
 rage gradually decreased by its very violence.<space extent="1" unit="chars"/>At last he turned to me and in a stern, quiet manner observed,</p>
 		
 <p>" Since he will, it shall be so&#8212;the ungrateful scoundrel. "</p>
@@ -229,17 +229,14 @@ his bedside, and patiently awaited the expected communication.</p>
 		
 <p>" <persName>Massa</persName>," began <persName>Curgy</persName>, " <persName>massa</persName>, me no bin always a good boy to you, sa? "</p>
 		
-<p><persName>Tom</persName>nodded.</p>
-		
-<p>" Ah <persName>massa</persName>, me did wish to lib to sarve <persName>massa</persName> long, long time, but me time come now, sa? "</p>
-
 <p><persName>Tom</persName> nodded</p>
-
-<p>" Pose <persName>massa</persName> wish fo make <persName>Curgy</persName> die happy, <persName>massa</persName> can do one little ting for him. "</p>
 		
+<p>" Ah <persName>massa</persName>, me did wish to lib to sarve <persName>massa</persName> long, long time, but me time come now, sa? <choice><sic/><corr> "</corr></choice> " Pose <persName>massa</persName> wish fo make <persName>Curgy</persName> die happy, <persName>massa</persName> can do one little ting for him. "</p>
+<fw>C</fw>
+
 
 	<pb facs="liv_020031_0005" n="0005"/>
-<fw><seg rend="center caps"><persName>Curgy</persName>'s Funeral,<space extent="1" unit="chars"/></seg> <seg rend="right">34</seg></fw>		
+<fw><seg rend="left">34</seg> <seg rend="center caps"><persName>Curgy</persName>'s Funeral,<space extent="1" unit="chars"/></seg></fw>		
 <p>" Now it comes " muttered <persName>Tom</persName>, then aloud, " what is it <persName>Curgy</persName>?<space extent="1" unit="chars"/>Anything 
 that I can do to ease your last moments shall be done. "</p>
 
@@ -257,9 +254,10 @@ forth<!-- - -->coming, and <persName>Tom</persName>, placing the paper on the to
 		
 <p>By eight o'clock all was completed&#8212;the coffin made, the shroud pre<!-- - -->pared and everything else that was necessary in readiness&#8212;even the grave was dug.<space extent="1" unit="chars"/>All being in excellent train, we proceeded to <persName>Curgy</persName>'s <placeName>cottage</placeName>, preceded by a dozen negroes carrying the funeral gear.</p>
 		
-<p><persName>Curgy</persName> was still lying where we had left him, but the entrance of so many persons caused him to turn round towards them. <persName>Tom</persName> how<!-- - -->ever, and the negroes who accompanied him, the latter of whom were well tutored, appeared not to take any notice of his having stirred.<space extent="1" unit="chars"/><persName>Curgy</persName> was supposed to be dead; and all that remained to be done was to bury him.<space extent="1" unit="chars"/>Accordingly four stout strong fellows raised <persName>Curgy</persName> upright on the bed and commenced to strip him of his clothes.<space extent="1" unit="chars"/>Whether it was that the dead man was frightened into insensibility by the imposing preparations, or whether he was too weak from the effects of the emetic to make any resistance, I am not prepared to say; but he lay like a log in the hands of the negroes, by whom he was speedily dressed in his grave-clothes.<space extent="1" unit="chars"/>I had donned an old gray dressing gown, and with a <persName>Johnson</persName>'s dictionary in my hand, stood ready to act the part of the parson.<space extent="1" unit="chars"/>Still <persName>Curgy</persName> moved not.<space extent="1" unit="chars"/>The coffin was brought in&#8212;he seemed not to see it: he was placed in it, and yet was insensible of what was being done&#8212;but when the lid was about to be put on, then, and not till then, did <persName>Curgy</persName> afford any 
+<p><persName>Curgy</persName> was still lying where we had left him, but the entrance of so many persons caused him to turn round towards them. <persName>Tom</persName> how<!-- - -->ever, and the negroes who accompanied him, the latter of whom were well tutored, appeared not to take any notice of his having stirred.<space extent="1" unit="chars"/><persName>Curgy</persName> was supposed to be dead; and all that remained to be done was to bury him.<space extent="1" unit="chars"/>Accordingly four stout strong fellows raised <persName>Curgy</persName> upright on the bed and commenced to strip him of his clothes.<space extent="1" unit="chars"/>Whether it was that the dead man was frightened into insensibility by the imposing preparations, or whether he was too weak from the effects of the emetic to make any resistance, I am not prepared to say; but he lay like a log in the hands of the negroes, by whom he was speedily dressed in his grave-clothes.<space extent="1" unit="chars"/>I had donned an old gray dressing gown, and with a <persName>Johnson</persName>'s dictionary in my hand, stood ready to act the part of the parson.<space extent="1" unit="chars"/>Still <persName>Curgy</persName> moved not.<space extent="1" unit="chars"/>The coffin was brought in&#8212;he seemed not to see it: he was placed in it, and yet was insensible of what was being done&#8212;but when the lid was about to be put on, then, and not till then, did <persName>Curgy</persName> afford any <lb/>
+
 			
-<pb facs="liv_020030_0006" n="0006"/>
+	<pb facs="liv_020030_0006" n="0006"/>
 <fw><seg rend="center caps">Or the Old Time Busha.<space extent="1" unit="chars"/></seg> <seg rend="right">35</seg></fw>
 evi<!-- - -->dence of his being a living man.<space extent="1" unit="chars"/>He yelled, he shrieked, cursed, 
 swore, tore the grave-clothes, and struggled so manfully, that it was with the utmost difficulty he was forced down into the coffin, and that the lid, in which several small holes were bored, was slightly fastened 
@@ -274,8 +272,9 @@ him; for it only bore these words :&#8212;" My black scoundrel
 <persName>Lycur<!-- - -->gus</persName>, otherwise called <persName>Curgy</persName>, has it in contemplation, as I have been 
 informed, to obtain his freedom from me by means of a trick. Should he succeed in his attempt, this is to request the friends of the under<!-- - -->signed to lodge the rascal in the nearest house of correction until he is sent for.</p>
 		
-<p><seg rend="caps"><persName>Thomas Moody</persName>,</seg></p>
-<p><hi rend="italic"><placeName>Moody's Hill, St.</placeName> &#8212;&#8212;&#8212;</hi></p>
+<p rend="right"><seg rend="smallcaps"><persName>Thomas Moody</persName>,</seg><space extent="2" unit="words"/></p>
+
+<p rend="right"><hi rend="italic"><placeName>Moody's Hill, St.</placeName> &#8212;&#8212;&#8212;</hi><space extent="1" unit="words"/></p>
 		
 <p><persName>Curgy</persName>, crestfallen and really emaciated, was brought home, and put 
 to field work.<space extent="1" unit="chars"/>He had hitherto been only a house servant.</p>

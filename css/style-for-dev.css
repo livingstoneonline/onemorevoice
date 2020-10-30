@@ -942,11 +942,16 @@ body.transcription .title{
 }
 .translate{
 	/* height: 1.4em; */
-	margin: .7em 0 .5em 0;
+	margin: .7em 0 0 0;
 	max-width: 170px;
 	overflow: hidden !important;
 }
 @media only screen and (min-width: 480px){
+	.translate{
+		margin: 0 0 0 0;
+	}
+}
+@media only screen and (min-width: 768px){
 	.translate{
 		margin: 0 0 1em 0;
 	}

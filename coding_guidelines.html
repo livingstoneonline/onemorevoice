@@ -163,6 +163,8 @@
 			</header>
 			
 			<main class="main" id="main">
+				<div class="translate"><div id="google_translate_element" title="Translate Page"></div></div>
+
 				<h3>Coding Guidelines</h3>
 				
 				<p>The <span class="italic">One More Voice</span> project has developed a set of lightweight <a href="https://tei-c.org/">TEI coding guidelines</a> in keeping with the minimal computing approach of the project as a whole. The guidelines are based on a simplified version of the <a href="https://livingstoneonline.org/resources/livingstone-online-tei-p5-encoding-guidelines">coding guidelines</a> previously created for <a href="https://livingstoneonline.org/">Livingstone Online</a>. The latter were developed over a ten-year period through a series of <span class="italic">Livingstone Online</span> initiatives. For the <span class="italic">One More Voice</span> guidelines, the project prioritized key structural and content TEI tags, attributes, and values with two primary goals in mind: 1) Providing a basic TEI scaffolding to support further encoding work by the project contributors or by others; and 2) Enabling edited and encoded TEI items to be transformed (via XSLT) into <a href="texts.html">facsimile HTML versions</a> for online publication.</p>
@@ -258,9 +260,27 @@
 				<hr />
 				<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
 			</footer>
-			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-			<script src="scripts/scripts.js"></script>
 		</article>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+			}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "scripts/scripts.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
 	</body>
 
 </html>

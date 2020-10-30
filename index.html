@@ -165,6 +165,8 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 			</header>
 			
 			<main class="main" id="main">
+				<div class="translate"><div id="google_translate_element" title="Translate Page"></div></div>
+				
 				<h3>Introduction</h3>
 
 				<p><span class="italic">One More Voice</span>, a work of digital humanities scholarship, focuses on <a href="analytical_priorities.html">recovering non-European contributions</a> from nineteenth-century British imperial and colonial archives. The name reflects the fact that there is always <span class="italic">one more</span> <span class="italic">voice</span> to recover from the archives. The non-European contributions take multiple forms and appear in multiple genres, including travel narratives, autobiographies, letters, diaries, testimonies, interviews, treaties, maps, oral histories, genealogies, and vocabularies. <span class="italic">One More Voice</span> attempts to offer a critical and systematic evaluation of these rich and diverse materials by using interpretive approaches and digital preservation techniques that expand existing scholarship on the topic. Learn more about our <a href="analytical_priorities.html">analytical priorities</a>, <a href="project_design.html">project design</a>, <a href="collaboration.html">approach to collaboration</a>, and <a href="coding_guidelines.html">coding guidelines</a>.</p>
@@ -192,9 +194,27 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 				<hr />
 				<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
 			</footer>
-			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-			<script src="scripts/scripts.js"></script>
 		</article>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+			}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "scripts/scripts.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
 	</body>
 
 </html>

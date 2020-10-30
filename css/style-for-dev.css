@@ -591,7 +591,7 @@ a:focus img{
 .topnav{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 600;
-	padding-top: .5em; /* Needed for Google Translate */
+	padding-top: .3em; /* Needed for Google Translate */
 	display: none;
 }
 @media only screen and (min-width: 992px){
@@ -936,6 +936,10 @@ body.transcription .title{
 /* 1.5. Google Translate */
 /* Also see other styles marked "Google Translate" */
 
+.goog-te-banner-frame.skiptranslate{
+	display: none !important;
+	visibility: hidden !important;
+}
 .translate{
 	/* height: 1.4em; */
 	margin: .7em 0 .5em 0;
@@ -946,12 +950,21 @@ body.transcription .title{
 		margin: 0 0 1em 0;
 	}
 }
+#google_translate_element{
+	min-height: 55px;
+}
+@media only screen and (min-width: 768px){
+	#google_translate_element{
+		min-height: 50px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#google_translate_element{
+		min-height: 48px;
+	}
+}
 #google_translate_element > div > span > a > img{
 	width: 3.5em;
-}
-.goog-te-banner-frame.skiptranslate{
-	display: none !important;
-	visibility: hidden !important;
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo{
 	font-size: 1.3em;

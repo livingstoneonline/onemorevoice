@@ -226,38 +226,56 @@
 						</xsl:choose>
 		    		</header>
 					<xsl:apply-templates select="TEI"/>
-				    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
-					<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
-					<link rel="stylesheet" type="text/css" href="../css/styleTEI.css" />
-					<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
-					<script src="../scripts/scripts.js"></script>
-					<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-						<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js" />-->
-						<script src="../scripts/manuscript-transform.js"></script>
-					</xsl:if>
-					<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-						<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js" />-->
-						<script src="../scripts/journal-transform.js"></script>
-					</xsl:if>
-					<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">
-						<script>
-							// Image Rotation */
-							// Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role
-							
-							function myFunction() {
-							    var element1 = document.getElementById("rotate-button");
-							    var element2 = document.getElementById("image-to-rotate");
-							    if (element1.getAttribute("aria-checked") == "true") {
-							        element1.setAttribute("aria-checked", "false");
-							    } else {
-							        element1.setAttribute("aria-checked", "true");
-							    }
-							    element1.classList.toggle("click-color");
-							    element2.classList.toggle("rotate-180");
-							}
-						</script>
-					</xsl:if>
 				</article>
+				<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
+				<link rel="stylesheet" type="text/css" href="../css/styleTEI.css" />
+				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
+				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
+					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js" />-->
+					<script src="../scripts/manuscript-transform.js"></script>
+				</xsl:if>
+				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
+					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js" />-->
+					<script src="../scripts/journal-transform.js"></script>
+				</xsl:if>
+				<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">
+					<script>
+						// Image Rotation */
+						// Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role
+						function myFunction() {
+						    var element1 = document.getElementById("rotate-button");
+						    var element2 = document.getElementById("image-to-rotate");
+						    if (element1.getAttribute("aria-checked") == "true") {
+						        element1.setAttribute("aria-checked", "false");
+						    } else {
+						        element1.setAttribute("aria-checked", "true");
+						    }
+						    element1.classList.toggle("click-color");
+						    element2.classList.toggle("rotate-180");
+						}
+					</script>
+				</xsl:if>
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+						new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+					}
+				</script>
+				<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+				<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
+				<script type="text/javascript">
+					function downloadJSAtOnload() {
+					var element = document.createElement("script");
+					element.src = "../scripts/scripts.js";
+					document.body.appendChild(element);
+					}
+					if (window.addEventListener)
+					window.addEventListener("load", downloadJSAtOnload, false);
+					else if (window.attachEvent)
+					window.attachEvent("onload", downloadJSAtOnload);
+					else window.onload = downloadJSAtOnload;
+				</script>
+				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js" />-->
 			</body>
 		</html>
 	</xsl:template>
@@ -498,6 +516,7 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
+					<div class="translate"><div id="google_translate_element" title="Translate Page"></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -514,6 +533,7 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits">
+					<div class="translate"><div id="google_translate_element" title="Translate Page"></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -526,6 +546,7 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
+					<div class="translate"><div id="google_translate_element" title="Translate Page"></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -541,6 +562,7 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='artifact-book-journal']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
+					<div class="translate"><div id="google_translate_element" title="Translate Page"></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Creator(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>

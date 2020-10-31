@@ -317,6 +317,9 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="warning">
+			<xsl:if test="/TEI/text[contains(@n,'warning')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</p></xsl:if>
+		</xsl:variable>
 		<xsl:variable name="sortedDates" as="xs:string*">
 			<xsl:choose>
 				<xsl:when test="//revisionDesc/change[@when]">
@@ -528,6 +531,7 @@
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<xsl:copy-of select="$warning"/>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -541,6 +545,7 @@
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<xsl:copy-of select="$warning"/>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -557,6 +562,7 @@
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
 					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<xsl:copy-of select="$warning"/>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -571,6 +577,7 @@
 					</xsl:if>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<xsl:copy-of select="$warning"/>
 					<hr/>
 				</aside>
 			</xsl:when>

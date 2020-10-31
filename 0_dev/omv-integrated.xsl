@@ -297,7 +297,9 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="sortedDates" as="xs:string*">
+		<xsl:variable name="warning">
+			<xsl:if test="/TEI/text[contains(@n,'warning')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</p></xsl:if>
+		</xsl:variable><xsl:variable name="sortedDates" as="xs:string*">
 			<xsl:choose>
 				<xsl:when test="//revisionDesc/change[@when]">
 					<xsl:perform-sort select="//revisionDesc/change/@when[not(.=preceding::change/@when)]"><xsl:sort select="." order="ascending"/></xsl:perform-sort>
@@ -496,7 +498,7 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
+					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div><h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[@type='alternative']"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
 						<p><span class="bold">Place(s) of creation:</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
@@ -507,24 +509,24 @@
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<hr/>
+					<xsl:copy-of select="$warning"/><hr/>
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 		    	<aside class="credits" id="credits1-div"  aria-labelledby="opening-credits">
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div><h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Author(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><span class="bold">Digital edition &amp; date:</span><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><span class="bold">Critical editing &amp; encoding</span><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><span class="bold">Note:</span> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<hr/>
+					<xsl:copy-of select="$warning"/><hr/>
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div><h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Creator(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -534,12 +536,12 @@
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
 					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<hr/>
+					<xsl:copy-of select="$warning"/><hr/>
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='artifact-book-journal']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div><h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><span class="bold">Creator(s) &amp; contributor(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><span class="bold">Date(s):</span><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -547,7 +549,7 @@
 					</xsl:if>
 					<p><span class="bold">Original publication details:</span><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><span class="bold">Note:</span> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<hr/>
+					<xsl:copy-of select="$warning"/><hr/>
 				</aside>
 			</xsl:when>
 		</xsl:choose>

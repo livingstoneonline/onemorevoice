@@ -99,7 +99,7 @@ Rubber Wars Which Began in 1893”</title>
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
+                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              </bibl>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -123,7 +123,7 @@ Rubber Wars Which Began in 1893”</title>
         </revisionDesc>
     </teiHeader>
 
-    <text>
+    <text n="warning">
 		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
 

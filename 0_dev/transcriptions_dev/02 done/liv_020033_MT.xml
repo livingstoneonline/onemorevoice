@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020033">
+    <!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Kat River Mission, South Africa"</title>
+                <!-- Title without date -->
+                <!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">"Kat River Mission, South Africa," April 1839</title>
+                <!-- Title, date -->
+                <author>James Read</author>
+                <!-- First author: Surname, Forename, Dates (if known; otherwise nothing) -->
+                <author/>
+                <!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing) -->
+                <author role="first"/>
+                <!-- First author only: Surname, Forename -->
+                <author role="first-normalized"/>
+                <!-- First author only: Forename Surname -->
+                <author role="normalized"/>
+                <!-- Second author, etc.: Forename Surname  -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="MBT">
+                    <name>Mary Borgo Ton</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020033</idno>
+                <!-- Insert LEAP ID, e.g. "liv_020010 -->
+                <!-- <ref target="https://link.gale.com/apps/doc/CC1903124821/NCUK?u=linc74325&sid=NCUK&xid=ea96bf8c">Nineteenth Century UK Periodicals</ref>-->
+                <!-- Not sure why this is causing an error message. MT-->
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"> Creative Commons
+                        Attribution 4.0 International </licence>
+                </availability>
+            </publicationStmt>
+
+            <!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+                <biblStruct type="journal">
+                    <monogr>
+                        <title>Missionary Magazine and Chronicle; Relating Chiefly to the Missions
+                            of the London Missionary Society</title>
+                        <!-- Publication title -->
+                        <editor/>
+                        <!-- Editor (if known; otherwise leave blank -->
+                        <imprint>
+                            <biblScope unit="vol">III</biblScope>
+                            <!-- Volume (if known; otherwise leave blank -->
+                            <biblScope unit="number">XXXV</biblScope>
+                            <biblScope unit="pages">55-57</biblScope>
+                            <!-- Pages (if known; otherwise leave blank -->
+                            <pubPlace>London</pubPlace>
+                            <!-- Publication place (if known; otherwise leave blank -->
+                            <publisher>London Missionary Society</publisher>
+                            <!-- Publisher (if known; otherwise leave blank -->
+                            <date>April 1839</date>
+                            <!-- Item date; same as date in <title type="alternative"> above -->
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <bibl type="sourceMetadata">
+                    <!-- Title without date -->
+                    <!-- Same as <title> above -->
+                    <title/>
+                    <!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+                    <!-- Same as <author> above -->
+                    <!-- xml:id = each author's initials -->
+                    <author xml:id="JR">James Read</author>
+                    <!-- Same as <date> in previous section -->
+                    <!-- Write out date: Day Month Year -->
+                    <!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1839-04">April 1839</date>
+                    <!-- Focus region (if known; otherwise leave blank) -->
+                    <placeName type="focusRegion"/>
+                </bibl>
+            </sourceDesc>
+            <!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <!-- Use one <change> for each instance of revision -->
+            <!-- Always place most recent <change> at top -->
+            <!-- Describe using one of the phrases associated with your name above -->
+            <!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+            <!-- @when = YYYY-MM-DD -->
+            <!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+            <change when="2020-10-06" who="#MT">Inital transcription and encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body n="FFFFFF">
+            <!-- Actual color of the MS page; AW will insert appropriate color -->
+            <div rend="black">
+                <!-- Acutal color of the writing; AW will use auto-suggested values -->
+
+                <!-- ndash: &#8211; -->
+                <!-- mdash: &#8212; -->
+
+                <!-- Put a <pb> at the beginning of each page -->
+                <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+                <!-- @n = page number only, e.g., 0001 -->
+                <pb facs="liv_020033" n="0001"/>
+                <fw><seg rend="center caps"><seg rend="small">For April</seg><seg rend="left"
+                            >55</seg></seg></fw>
+
+                <lb/>
+                <div rend="center">
+                    <lb/>
+                    <p><gap extent="half" unit="pages" agent="omitted-text"/></p>
+                    <!-- HTML element and CSS for styling a 1/3 page gap needed. Text from previous article omitted here. MT -->
+                </div>
+
+                <div>
+                    <lb/>
+                    <head rend="center small caps"><region><geogName>Kat River</geogName>
+                                Mission<bloc>, Africa</bloc></region>.</head>
+                    <lb/>
+                    <p rend="no-indent"><hi rend="small caps">A brief</hi> but gratifying account of
+                        the state of the Mission church schools in the Kat River settlement was
+                        inserted in the <hi rend="italic">Missionary Magazine</hi> for <date
+                            when="1838-12">December last</date>, at which time we had also the
+                        satisfaction to communicate the return to the station of the <persName>Rev.
+                            James Read, sen.</persName>, together with the turly pleasing
+                        circumstance under which he had recommenced his labours. Since that period
+                        we have received a further report of the Mission from the <persName>Rev.
+                            James Read, jun.</persName>, comprising a view of iits state and
+                        progress during a greater length of time and including a number of
+                        interesting statements not contained in the former account. <persName>Mr.
+                            Read, jun.</persName>, arrived at the settlement in <date when="1837-03"
+                            >March, 1837</date>, and the report which we have now the satisfaction
+                        to present, is dated <date when="1838-10-09">Oct. 9, 1838</date>, and
+                        embraces the chief details of the operations of the Mission during the whole
+                        of that extended interval. <persName>Mr. Read</persName> commences by
+                        noticing the extension and progress of education in the settlement.</p>
+                    <!-- Need to add double column formatting? MT-->
+                    <div>
+                        <head rend="center italic">Examination of the Children.</head>
+                        <p>Since my return from <country>England</country> the number of schools has
+                            been increased to 17; in which are daily taught, 400 pupils, whose
+                            progress is very encouraging to us, and credible to the young native
+                            teachers who have the charge of them. The course of instruction
+                            comprehends reading, (English and Dutch,) writing, arithmetic,
+                            geography, scripture history, and elements of the use of the globe.
+                            During the past year we have had several most interesting examinations,
+                            which excite great interest among both parents and children. Besides our
+                            monthly examinations of individual schools, we have had an annual and
+                            general examination of all the schools; and, as these are widely
+                            scattered, we invariably take 3 days to accomplish this eating cutie.
+                            The children have to bring their provisions and bedding with them.</p>
+                        <p>At our last annual examination we were honoured by the presence of
+                                <persName>Capt. Stretch</persName>, diplomatic agent in
+                                <region>Caffreland</region>, as our chairman. This gentleman feels
+                            deeply interested in the education of the rising generation among the
+                                <term type="collective">Hottentots</term>. We had about 1000 pupils
+                            present.</p>
+                    </div>
+                    <div>
+                        <head rend="center italic"><orgName>Juvenile Missionary
+                            Society</orgName>.</head>
+                        <p>After the examination was over, and the prices had been distributed, we
+                            had a most interesting meeting of the children in the evening for the
+                            purpose of forming a <orgName>Juvenile Missionary Society</orgName>;
+                            Speeches w ere delivered by the schoolmasters,, and letters received
+                            from some of our young friends in England were read to the young people
+                            of Kat River. It was, indeed, a most gratifying little meeting; and we
+                            hope it has served to interest Our children in welfare of their
+                            neighbours the <term type="collective">Caffres</term> and the <term
+                                type="collective">Tambookies</term>, whose still unenlightened state
+                            was very impressively contrasted with their own <pb facs="liv_020033"
+                                n="0002"/>
+                            <fw><seg rend="right">56</seg><seg rend="center caps"><seg rend="small"
+                                        >Missionary Magazine</seg></seg></fw> by the speakers, and
+                            strongly urged upon their minds the necessity of eary associating in
+                            their feelings the spread of the Gospel in the world, with the moral
+                            improvement of mankind.</p>
+                    </div>
+                    <div>
+                        <head rend="center italic">Names of Stations and Teachers.</head>
+                        <p>The names of the stations at which schools have been established, are as
+                            follow: &#8212;<settlement>Philipton</settlement>,
+                                <settlement>Balfour</settlement>, <settlement>Buxton</settlement>,
+                                <settlement>Lushington</settlement>,
+                                <settlement>Wilsonton</settlement>,
+                                <settlement>Bruceton</settlement>, <settlement>Upshall</settlement>,
+                                <settlement>Readsdale</settlement>,
+                                <settlement>Mankasana</settlement>, <geogName><settlement>Eyland's
+                                    River</settlement></geogName>, <geogName><settlement>Upper
+                                    Eyland's River</settlement></geogName>,
+                                    <geogName><settlement>Blinkwater</settlement></geogName>,
+                                    <geogName><settlement>Middle Blinkwater</settlement></geogName>,
+                            and <geogName><settlement>Lower Blinkwater</settlement></geogName>,
+                                    <region><settlement>Maasdorp Valley</settlement></region>, and
+                            three infant schools at <settlement>Philipton</settlement>,
+                                <settlement>Buxton</settlement>, and
+                                <settlement>Readsdale</settlement>.</p>
+                        <p>The following are the names of the schoolmasters, and female
+                                teachers:&#8212;<persName>Henry Heyn</persName>, <persName>Coenrad
+                                Windroogel</persName>, <persName>Weyel Hunno</persName>,
+                                <persName>Philip Aithobel</persName>, <persName>John
+                                Frederyk</persName>, <persName>Nicholas Klaasen</persName>,
+                                <persName>Boozak Boosman</persName>, <persName>Gert
+                                Erasmus</persName>, <persName>John Foire</persName>, <persName>Frans
+                                Iamagen</persName>, <persName>Nicolas
+                            Christian</persName><!-- This name has an odd accent in it. MT -->,
+                                <persName>Adam Platjes</persName>, <persName>Dirk
+                            Hather</persName>.</p>
+                        <p><persName>Sarah Stoffles</persName>, <persName>Miss A. Read</persName>,
+                            infant school teacher at <settlement>Philipton</settlement>, and
+                                <persName>Elizabeth Foire</persName>, teacher of the infant school
+                            at <settlement>Readsdale</settlement>.</p>
+                    </div>
+                    <div>
+                        <head rend="center italic">Appointment of Schoolmasters.</head>
+                        <p>Within the last eight months, six of our pupils from the
+                                <settlement>Philipton</settlement> day-school passed their
+                            examinations for the office of schoolmaster, and have been appointed to
+                            their several spheres of labour; and it is pleasing and encouraging to
+                            see the attitude that evince in imparting instruction, and the pleasure
+                            they take in communicating knowledge to their little countrymen. The
+                            more I see of working the system of native agency, and of growing
+                            intelligence and devotedness of our young men, more confirmed I become
+                            in the police we must ultimately look for the great results of
+                            Missionary enterprise. Whether we look at the system in point of
+                            economy, the constitutional qualifications of the natives to endure the
+                            influence of climate, their acquaintance
+                            [with<!-- Typo in original. MT --> the habits, customs, and language of
+                            their countrymen, facilities they possess of ingratiating themselves
+                            with the people; and consequently the ready access they can obtain their
+                            understandings and affections;&#8212;all these considerations seem to
+                            warrant the conviction we entertain of the success that would attend the
+                            establishment of a comprehensive and well organised system of native
+                            agency. The appointment of native schoolmasters has had a suprisingly
+                            beneficial effect on the young men, and even on the school children; as
+                            many of them are thereby encouraged to hope that they may at some future
+                            time be enabled to fill the situation of teacher, or other office of
+                            respectability, and are consequentaly led to apply themselves more
+                            diligently to the improvement of their minds, in order to qualify
+                            themselves to undertake it.</p>
+                    </div>
+                    <div>
+                        <head rend="center italic">Education of Schoolmasters.</head>
+                        <p>Previous to appointment the schoolmasters go through the following course
+                            ;&#8212;English reading, writing, arithmetic, geography, <term
+                                type="collective">Roman</term> and <term type="collective"
+                                >English</term> history, use of the globes, natural history, and
+                            English grammar. After their appointment they are expected to pursue
+                            their studies by coming to <settlement>Philipton</settlement> once a
+                            week to receive such aid as we can give them; and I am glad to say that
+                            their improvement is very encouraging. The books the
+                                <orgName>Society</orgName> sent us have been particularly
+                            serviceable in promoting our object.</p>
+                    </div>
+                    <div>
+                        <head rend="center italic">Building of School-rooms.</head>
+                        <p>Since my return from <country>England</country>, three new school-rooms
+                            have been built, and fourth is building, and all the people's own
+                            expense, except the furnishing them with seats, &amp;c.</p>
+                    </div>
+                    <div>
+                        <head rend="center italic"><orgName>Local School Committee</orgName>.</head>
+                        <p>A committee under this name has been appointed, whose duty it is to
+                            co-operate with the Missionaries in extending the work of education in
+                            the Settlement, and watching over the instruction of the children. I
+                            have found it advisable to invite some of the most intelligent and
+                            respectable of our young men to become members of the committee. No
+                            sooner was the proposal made to them, that they came forward to join it.
+                            Their principal work, as I have said, is to assist the Missionary in
+                            founding new schools, to see after the conduct of the schoolmasters, to
+                            take care that the people contribute regularly towards their support and
+                            to oversee the building of school-rooms, &amp;c. In the first place, but
+                            the appointment of such a committee, the people become interested in,
+                            and qualified for, the management of their own affairs, so as gradually
+                            to carry on the education of their own children, without looking ofr
+                            assistance to the parent <orgName>Society</orgName>; and, secondly, it
+                            supplies a stimulant to the exertion <gap extent="1" unit="words"
+                                ><!-- in? MT--></gap> our schools. There is nothing like giving men
+                            a voice in the management of their own institutions. <choice>
+                                <sic>it</sic>
+                                <corr>It</corr>
+                            </choice> seldom fails to produce good effects.</p>
+                        <p>Besides superintending the schools, I take my regular turn in preaching
+                                and <!--  itinerating? MT--> among the people. To this I add superintendence, in part, of the two recently established settlements of <settlement>Blinkwater</settlement> and <geogName><settlement>Fish River</settlement></geogName>; both of which I am happy to say are doing well under the care of our two native teachers, <persName>Dirk Hather</persName>, and <persName>Andreis Jagers</persName>. On my last visit to the <geogName><settlement>Fish River</settlement></geogName>,I was truly gratified to see the activity and devotedness of the native teacher to the <w>con-<pb facs="liv_020033" n="0003"/><fw><seg rend="center caps"><seg rend="small">For April</seg><seg rend="left">57</seg></seg></fw>cerns</w> of the people, both spiritual and temporal. I would conclude by desiring the continuance of an interest in the prayers of the Directors, and our other Christian friends in <country>England</country>, that the Lord would grant unto us greater grace, more devotedness to the work to which we trust he has called us, and make us faithful unto death.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

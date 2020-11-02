@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020034">
+    <!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Kat River.&#8212;Mission to the Bushmen"</title>
+                <!-- Title without date -->
+                <!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">"Kat River.&#8212;Mission to the Bushmen," April
+                    1840</title>
+                <!-- Title, date -->
+                <author>James Read</author>
+                <!-- First author: Surname, Forename, Dates (if known; otherwise nothing) -->
+                <author/>
+                <!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing) -->
+                <author role="first"/>
+                <!-- First author only: Surname, Forename -->
+                <author role="first-normalized"/>
+                <!-- First author only: Forename Surname -->
+                <author role="normalized"/>
+                <!-- Second author, etc.: Forename Surname  -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="MBT">
+                    <name>Mary Borgo Ton</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020034</idno>
+                <!-- Insert LEAP ID, e.g. "liv_020010 -->
+                <!-- <ref target="https://link.gale.com/apps/doc/CC1903123244/NCUK?u=linc74325&sid=NCUK&xid=4a63ce8d">Nineteenth Century UK Periodicals</ref>-->
+                <!-- Not sure why this is causing an error message. MT-->
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/"> Creative Commons
+                        Attribution 4.0 International </licence>
+                </availability>
+            </publicationStmt>
+
+            <!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+                <biblStruct type="journal">
+                    <monogr>
+                        <title>Missionary Magazine and Chronicle; Relating Chiefly to the Missions
+                            of the London Missionary Society</title>
+                        <!-- Publication title -->
+                        <editor/>
+                        <!-- Editor (if known; otherwise leave blank -->
+                        <imprint>
+                            <biblScope unit="vol">III</biblScope>
+                            <!-- Volume (if known; otherwise leave blank -->
+                            <biblScope unit="number">XLVII</biblScope>
+                            <biblScope unit="pages">49-51</biblScope>
+                            <!-- Pages (if known; otherwise leave blank -->
+                            <pubPlace>London</pubPlace>
+                            <!-- Publication place (if known; otherwise leave blank -->
+                            <publisher>London Missionary Society</publisher>
+                            <!-- Publisher (if known; otherwise leave blank -->
+                            <date>April 1840</date>
+                            <!-- Item date; same as date in <title type="alternative"> above -->
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <bibl type="sourceMetadata">
+                    <!-- Title without date -->
+                    <!-- Same as <title> above -->
+                    <title/>
+                    <!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+                    <!-- Same as <author> above -->
+                    <!-- xml:id = each author's initials -->
+                    <author xml:id="JR">James Read</author>
+                    <!-- Same as <date> in previous section -->
+                    <!-- Write out date: Day Month Year -->
+                    <!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1840-04">April 1840</date>
+                    <!-- Focus region (if known; otherwise leave blank) -->
+                    <placeName type="focusRegion"/>
+                </bibl>
+                <!-- Article draws from multiple letters. The first is dated 1839-04 and the second 1839-08-14. Multiple Reads as authors? -->
+            </sourceDesc>
+            <!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <!-- Use one <change> for each instance of revision -->
+            <!-- Always place most recent <change> at top -->
+            <!-- Describe using one of the phrases associated with your name above -->
+            <!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+            <!-- @when = YYYY-MM-DD -->
+            <!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+            <change when="2020-10-27" who="#MT">Inital transcription and encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body n="FFFFFF">
+            <!-- Actual color of the MS page; AW will insert appropriate color -->
+            <div rend="black">
+                <!-- Acutal color of the writing; AW will use auto-suggested values -->
+
+                <!-- ndash: &#8211; -->
+                <!-- mdash: &#8212; -->
+
+                <!-- Put a <pb> at the beginning of each page -->
+                <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+                <!-- @n = page number only, e.g., 0001 -->
+                <pb facs="liv_020034" n="0001"/>
+                <fw><seg rend="left">No. XLVII.]</seg><seg rend="right">[<hi rend="caps">April</hi>,
+                        1840.</seg>
+                    <lb/><seg rend="center"><hi rend="smallcaps">The</hi>
+                        <lb/><hi rend="caps">Missionary Magazine</hi>
+                        <lb/><hi rend="smallcaps">nd</hi>
+                        <lb/><hi rend="caps">Chronicle</hi>, <lb/><hi rend="smallcaps">Relating
+                            Chiefly to the Missions of</hi>
+                        <lb/><!-- indicate font change here? MBT -->The London Missionary Society </seg>
+                    <figure>
+                        <!-- title: <hi rend="smallcaps">The Caffre Chief and His Hottentot Teacher.</hi>-->
+                        <!-- image aligned vertically-->
+                        <!-- caption: "I shall never forget his leaving us, trudging after the Chief with his blanket on his shoulders, and singing and weeping as he went."&#8211;<hi rend="italic">See page</hi> 51.-->
+                    </figure>
+                    <pb facs="liv_020034" n="0002"/>
+                    <seg rend="left">50</seg>
+                    <seg rend="center smallcaps">Missionary Magazine</seg></fw>
+                <lb/>
+                <div>
+                    <head rend="center caps">Kat River.&#8212;Mission to the Bushmen</head>
+                    <p rend="no-indent"><hi rend="small caps">The</hi> friends of religion and
+                        humanity will rejoice to learn that means have been taken to impart the
+                        blessings of the Gospel to the abject and destitute <term type="collective"
+                            >Bushmen</term> in the vicinity of the <settlement><geogName>Kat
+                                River</geogName> Settlement</settlement>. <space unit="chars"
+                            extent="2"/>About the beginning of last year, a member of the Mission
+                        church (a person of <term type="collective">Bushman</term> origin having at
+                        one of the religious meetings expressed a great concern for the scattered
+                        remnant of his father's nation, the subject excited deep interest in the
+                        minds of all present, and after due deliberation, a Mission, to consist of
+                        native teachers, was resolved upon. The accomplishment of this benevolent
+                        design, with the preparatory proceedins, is described in letters received
+                        under various dates from teh <persName>Rev. James Read</persName>. His first
+                        allusion to the subject, contained in a letter dated in May last, is as
+                        follows :&#8212;</p>
+                    <p><!-- double columns? MT -->My son has lately been out with several others to
+                        look for <term type="collective">Bushmen</term>, and to select a spot for a
+                        station. <space unit="chars" extent="2"/>A number more are expected to join.
+                            <space unit="chars" extent="2"/>These poor creatures are in a most
+                        deplorable condition, without houses, clothing, or any property whatever.
+                        They were highly pleased at the prospect of having the word of God among
+                        them. There are many more of them in the mountains and caves, and it is the
+                        Gospel <unclear cert="medium">only</unclear> which will bring them from
+                        their places of refuge, from wild beasts and wild men. <space unit="chars"
+                            extent="2"/>Poor <persName>Madoor</persName> and his people say that <hi
+                            rend="italic">they <unclear cert="medium">have</unclear> begin to think
+                            that they belong to the human race, because there are men who appear to
+                            be concerned about them.</hi>
+                        <space unit="chars" extent="2"/>May God extend his mercy to those poor
+                        outcasts!</p>
+                    <!-- I have not added the double space in the paragraphs below because I wasn't sure if this was a typographical feature that we wanted to preserve. MT -->
+                    <p>Under date, <date when="1839-08-14">August 14</date>, <persName>Mr.
+                            Read</persName> thus continues his statements relative to the <term
+                            type="collective">Busman</term> Mission, noticing also the commencement
+                        of efforts of a similar kind on behalf of a number of natives belonging to
+                        the <term type="collective">Tambookie</term> tribe of <term
+                            type="collective">Caffres</term> :&#8212;</p>
+                    <p>In a former communication, I mentioned the desire some of our people had
+                        expressed to do something for the poor <term type="collective"
+                            >Bushmen</term>, <term type="collective">Tambookies</term>, &amp;c. They
+                        had intended to execute their wishes long before the present time, but the
+                        measles retarded the undertaking. Now, however, by the blessing of God,
+                        nearly all in the settlement who had been affected by this disorder have
+                        recovered, and the first thing to be attempted is the accomplishment of this
+                        work. Four native brethren have been
+                        chosen,<!-- Do we need to add a persName here to indicate that there's a reference to four people, even though they are unnamed? MT -->
+                        two for the <term type="collective">Bushmen</term>, and two for the <term
+                            type="collective">Tambookie</term> Chief,
+                            <persName>Kallagalla</persName>. With those for the <term
+                            type="collective">Bushmen</term>, four native brethren will be
+                        associated as assistants, to be employed in cultivating the ground, building
+                        houses, &amp;c. The first thing thought of, after the Bible and
+                        Missionaries, was a plough; the Bible in one hand, and the plough in the
+                        other. It is by such means as these the curse is removed, the earth yields
+                        her increase, the thorn and brier is not only figuratively but literally
+                        removed; and if the fir-tree and myrtle do not come up in their place, we
+                        shall have the peach, apple, fig, pear, and grape.</p>
+                    <p>To obtain the plough a subscription was proposed, and one engaged to give a
+                        plough-share<!-- not sure if this is one word or italicized because of the line break. MT -->,
+                        another the coulter, another the wheels; others contributed other parts, and
+                        now the plough is standing ready. Considerable interest has been excited,
+                        and although our people are suffering greatly from poverty, partly from the
+                        effects of the late war, and partly from the failure of their last harvest,
+                        yet they have given, we may say, beyond their power; all seemed ansious to
+                        bring a small offering for the brethren and the <term type="collective"
+                            >Bushmen</term>; event the children of the infant school came, one with
+                        a spoon, another with a knife, or something else they had importuned from
+                        their parents; so that my room is actually full of articles of various
+                        descriptions, such as seed, wheat, barley, <term type="collective"
+                            >Indian</term> corn, pumpkin-seed, potatoes, beans, peas, vegetable
+                        seed; a few old clothes; <choice>
+                            <orig>basons</orig>
+                            <reg>basins</reg>
+                        </choice>, plates, spoons, knives, forks, spades, pickaces, axes, &amp;c. We
+                        had also a collection on Sunday week, and received the sum of 13<hi
+                            rend="italic">l</hi>. A span of oxen has been presented; and finding a
+                        wagon would be necessary, a subscription was proposed, and immediately
+                        upwards of 22<hi rend="italic">l</hi>. was subscribed towards it. The day
+                        after to-morrow it is intended, with the will of God, that the brethren
+                        leave. I, with one of our deacons, <unclear cert="low">a</unclear>
+                        field-cornet, and others, will accompany them to see them settled, assit
+                        them in putting up temporary houses, getting out the water, ploughing,
+                        &amp;c. It is just the time for ploughing and sowing. Thus we are
+                        lengthening our cords as well as strengthening our stakes, and we trust we
+                        shall <unclear><!-- have no idea what this word is. MT --></unclear>out on
+                        the right hand and on the left.</p>
+                    <p>In almost every portion of the Missionary field there are indications of the
+                            <pb facs="liv_020034" n="0003"/>
+                        <seg><hi rend="center smallcaps">For April</hi>, 1840</seg>
+                        <seg rend="right">51</seg> importance of native agency. The value of that
+                        agency, wherever pains have been betowed in preparing it, is seen in the
+                        gratifying results which have hitherto attended it. Already much has been
+                        effected by this species of instrumentality in the <region>South
+                            Seas</region><!-- or bloc? -->; and we trust, ere long, to witness far
+                        larger and more delightful results from the augmented attention now being
+                        paid by our Missionary brethren to the training of teachers from among their
+                        converst, so that the piety and talent of their churches may be called forth
+                        and suitably applied. It is a source of rejoicing that <bloc>Africa</bloc>
+                        is also yeilding her share of similar fruits. The annexed plate is inteded
+                        to represent a highly delightful and exhibilarting scene, as described by
+                        the <persName>Rev. Mr. Read</persName>, of the <settlement><geogName>Kat
+                                River</geogName> settlement</settlement>.
+                            <persName>Boosman</persName>, an old <term type="collective"
+                            >Hottentot</term> disciple, had been introduced to
+                            <persName>Kallagalla</persName>, a <term type="collective"
+                            >Tambookie</term> Chief, and after opening his heart, full of holly
+                        affection adn ardent aspirations, he followed the Chief. We give the scene
+                        in <persName>Mr. Read</persName>'s own graphic language :&#8212; </p>
+                    <p>I returned from my journey the day before yesterday; by the blessing of God I was able to accomplish all we wished and prayed for. We left two native teachers with <persName>Kallagalla</persName>, the <term type="collective">Tambookie</term> chief, on the <geogName>Kei River</geogName>; we left them without gold or silver, <unclear cert="low">purse</unclear> or scrip, or two coats, without a wagon, and with only about a pail of millet, and a pound of coffee. They had no expectation of getting any thing from the <term type="collective">Tambookies</term>. You would have been pleased with the first interview. <persName>Boosman</persName>, one of the teachers, and old <term type="collective">Hottentot</term> disciple, wept when he saw <persName>Kallagalla</persName>, and said, "<persName>Kallagalla</persName>, my heart opens now that I see you; I thank God that he has brought me to you, and I give myself up to serve you; where you flee I'll flee, whether in the mountain, plain, or river; where you die I am ready to die. I am come to you to show you and your people the way to heaven, and you can know by me that God is no respecter of persons; for as you see I am one of the most despicable and unseemly of mankind, but God has opened my heart and given me to see the way of salvation through Jesus Christ his Son, and now my desire is that you and all men may hear the joyful news and be saved." <hi rend="italic">I shall never forget his leaving us, trudging after the chief with his blanket on his shoulders, and sincing and weeping as he went.</hi></p>
+                    <p>Three weeks after, on our return to the place, we found them labouring in season and out of season, going from <foreign xml:lang="af">kraal</foreign> to <foreign xml:lang="af">kraal</foreign>, making known the Saviour. <persName>Kallagalla</persName> wishes to have the water out upon his ground. I hope our people will assist him.</p>
+                    <p>We went on forty miles further, but on account of the state of the country did not succeed in finding the <term type="collective">Bushman</term> Chief, <persName>Madoor</persName>, in less than twelve days, but we fixed upon a spot, and commenced working; for although we have have not a Missionary ship, we have a Missionary plough, and hope at last to have a Missionary wagon. We got out the water from a fountain, cultivated a large extent of land, sowed a half a sack of ppotatoes, some barley, wheat, beans, peas, <term type="collective">Caffre</term>-corn, and millet, all for the poor <term type="collective">Bushmen</term>. I never worked harder in my life, nor with greater pleasure. You might have seen me sometimes with the axe, sometimes with the spade, and sometimes holding the plough, and I had strength equal to my day. We built two temporary houses. At last <persName>Madoor</persName> and some of his people made their appearance, and the <persName>Queen of Sheba</persName> could scarcely be more happily surprised than <persName>Madoor</persName> was, at seeing what was doing for him. Next morning we dressed him in a suit of clothes, which the people of <settlement><geogName>Kat River</geogName></settlement><!-- collective here? MT --> had sent for him, and he at once underwent a most pleasing transformation, and appeared delighted beyond measure. "I always said," observed <persName>Madoor</persName>, "that I had friends who would one day make their appearance."</p>
+                    <p>We left him three native brethren, and a boy, one as a native teacher, and two to cultivate the land, build houses, &amp;c. We left them with few clothes, little food, no wagon, and wanting many things which an <term type="collective">English</term> Missionary would require. May the Lord follow up with his blessing our poor weak endeavours.</p>
+                    <p>I had a pious band with me. We had prayer-meetings morning and evening, and our great <persName>Zerubbabel</persName> made mountains become plains. Simply as we go to work, this undertaking costs us considerably more than we can spare. I hope you will set a subscription on foot for us to help this good work.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

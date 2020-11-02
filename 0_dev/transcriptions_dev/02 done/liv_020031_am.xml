@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020031"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Frederick Douglass Letter 1"</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">'Frederick Douglass Letter 1'</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative"></title><!-- Title, date -->
+                <author>Douglass, Frederick, 1818-1895</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Douglass, Frederick</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Frederick Douglass</author><!-- First author only: Forename Surname -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="MBT">
+                    <name>Mary Borgo Ton</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+               <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020031</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>England</country><!-- Repository country -->
+                        <settlement type="city">Oxford</settlement><!-- Repository city -->
+                        <repository>Bodleian Library</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">MSS. Brit. Emp. s. 18, C16/75</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>"Frederick Douglass Letter 1"</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="FD">Frederick Douglass</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1846-05-09">9th May 1846</date>
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace"><settlement type="city">Edinburgh</settlement></placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-28" who="#AM">Transcription and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, -->
+
+	<pb facs="liv_020031_0001" n="0001"/>
+<lb/><p rend="no-indent"><space extent="5" unit="words"/><space extent="3" unit="chars"/><seg rend="gray">C16/75</seg></p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="2" unit="chars"/>Bahamas Govt,</p> 
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="2" unit="chars"/><placeName>Temperance 
+<lb/><space extent="4" unit="words"/><space extent="2" unit="chars"/>Hotel</placeName>, <settlement type="city">Edinburgh</settlement></p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="4" unit="chars"/><date when="1846-05-09">9th May 1846</date></p>
+<lb/>
+<lb/><p rend="no-indent">My dear Sir - I have just received 
+<lb/>your letter of <date when="1846-05-04">4<hi rend="sup underline">th</hi> May</date> inviting 
+<lb/>me to attend the anniversary 
+<lb/>of the <orgName>British and Foreign Anti
+<lb/>-Slavery Society</orgName> “which it is <w>in<seg type="hyphen">-</seg>
+<lb break="no"/>tended</w> shall be holden in <settlement type="city">London</settlement> 
+<lb/>on the <date when="1846-05-18">18<hi rend="sup double-underline">th</hi> May</date>. Please accept 
+<lb/>my thanks for your cordial 
+<lb/>invitation and <add place="below"><seg type="metamark">^</seg></add> <add place="above">allow</add> to express my 
+<lb/>regret that such are my <w>engage<seg type="hyphen">-</seg>
+<lb break="no"/>ments</w> in <country>Scotland</country> at this time &amp; 
+
+
+	<pb facs="liv_020031_0002" n="0002"/>
+<lb/>the time specified for your 
+<lb/>anniversary it will be impossible 
+<lb/>for me to comply.</p>
+<lb/><p rend="no-indent">The present position of what is 
+<lb/>called the <orgName>Free Church</orgName>, in regard 
+<lb/>to <term type="collective">Christian</term> fellowship with <term type="collective"><w>Ameri<seg type="hyphen">-</seg>
+<lb break="no"/>can</w></term> slave holders and the <w>approach<supplied><seg type="hyphen">-</seg></supplied>
+<lb break="no"/>ing</w> meeting of in this city of
+<lb/> its general assembly together 
+<lb/>with the present state of the 
+<lb/>Public mind on this question 
+<lb/>makes this the <hi rend="underline">time</hi>, &amp; <country>Scotland</country> 
+<lb/>the <hi rend="underline">place</hi> for all my effort 
+<lb/>I deem it of the utmost importance 
+<lb/>to the cause of emancipation - that 
+
+
+	<pb facs="liv_020031_0003" n="0003"/>
+
+<lb/><term type="collective">British</term> <term type="collective">Christians</term> of all denominations 
+<lb/>should declare non fellowship to 
+<lb/>slave holders, or churches to which 
+<lb/>slave holders are admitted to 
+<lb/>membership. To this point all 
+<lb/>my efforts are directed. Slave holding 
+<lb/>exists in the <country>United States</country>, because 
+<lb/>it is reputable, and it is reputable 
+<lb/>in the <country>United States</country>, because it is 
+<lb/>not so disreputable out of the 
+<lb/><country>United States</country> as it ought to be. 
+<lb/>My work <add place="below"><seg type="metamark">^</seg></add> <add place="above">therefore</add> is to make slavery <w>dis<supplied><seg type="hyphen">-</seg></supplied>
+<lb break="no"/>reputable</w>. I cannot do this while 
+<lb/><term type="collective">Christian</term> churches in this country 
+<lb/>are extending the hand of <term type="collective">Christian</term> 
+<lb/>fellowship to the slave holders &amp; 
+
+
+	<pb facs="liv_020031_0004" n="0004"/>
+<lb/><choice><orig>indorsing</orig><reg>endorsing</reg></choice> their characters 
+<lb/>as good <term type="collective">Christians</term>.</p>
+<lb/><p rend="no-indent">Thus far my labors in this 
+<lb/>direction have been crowned 
+<lb/>with every encouragement. 
+<lb/>The <orgName>United Secession Synod</orgName> 
+<lb/>now in session, in this city 
+<lb/>last night came to the almost 
+<lb/>unanimous decision to refuse 
+<lb/><term type="collective">Christian</term> fellowship to slaveholders 
+<lb/>or churches which fellowship 
+<lb/>slave holders. The <orgName>Relief Synod</orgName> is 
+<lb/>to meet here on Monday and 
+<lb/>a similar result is expected.</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="1" unit="chars"/>I am, Dear Sir,</p> 
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="3" unit="chars"/>very respectfully</p> 
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="4" unit="chars"/>yours</p>
+<lb/><p rend="no-indent"><persName>John Scoble Esq.</persName><space extent="3" unit="chars"/> <persName>Frederick Douglass</persName></p>
+
+
+
+
+
+			</div>
+		</body>	
+
+    </text>
+</TEI>

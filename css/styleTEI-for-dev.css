@@ -450,7 +450,8 @@ button::-moz-focus-inner{
 	text-indent: 0;
 }
 .manuscript .pb-title,
-.journal .pb-title{
+.journal .pb-title,
+.journal .TEI .text .body .div p + .pb-title:first-of-type{
 	padding-top: 2em;
 	margin: 2em 0 .5em 0;
 	border-top: 1px dotted #858585;

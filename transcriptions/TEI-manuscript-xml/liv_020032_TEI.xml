@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020032"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter to Catherine Impey</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Letter to Catherine Impey, 9 July 1888</title><!-- Title, date -->
+                <author>Douglass, Frederick, 1818-1895</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Douglass, Frederick</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Frederick Douglass</author><!-- First author only: Forename Surname -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+               </respStmt>
+               <respStmt xml:id="LM">
+                    <name>Lucy McCann</name>
+                    <resp>Transcription</resp>
+                    <resp>Editorial Decisions</resp>
+               </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020032</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement type="city">Oxford</settlement><!-- Repository city -->
+                        <repository>Bodleian Library</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">MSS. Brit. Emp. s. 20, E5/7</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Letter to Catherine Impey</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="FD">Douglass, Frederick</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1888-07-09">9 July 1888</date>
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Cedar Hill. Anacostia, D.C.</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-09-28" who="#AW">Coding review</change>
+			<change when="2020-10-22" who="HB">Transcription and TEI Encoding</change>
+			<change when="2020-09-10" who="#LM">Transcription</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="bfb199"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div rend="gray black"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020032_0001" n="0001"/>
+<lb/><p rend="no-indent" n="shelfmark liv_020032_0001"><add place="margintop">ack Sp4</add></p>
+<lb/>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><seg n="address liv_020032_0001"><placeName>Cedar Hill</placeName>.
+<lb/><space extent="3" unit="words"/><settlement>Anacostia, D.C.</settlement></seg><!-- Tried to do a rend=printed or something, but it didn't work - how do we code again for printed text/letterhead? HB --><!-- Special coding :> AW --> <space extent="1" unit="chars"/><date when="1888-07-09">9. July /88</date></p>
+<lb/>
+<lb/><p rend="no-indent">Dear <persName>Miss Impey</persName>,
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/>Unless the teachings of <persName>Christ</persName>
+<lb/>and his apostles shall fail, unless the
+<lb/>idea of the Fatherhood of God and the <!-- ...Fatherhood and Brotherhood somehow tagged? HB -->
+<lb/>Brotherhood of man shall take its flight
+<lb/>from the conscience of men - and <term type="collective">Christian</term>
+<lb/>civilization shall turn out to be a
+<lb/>mockery, the work you have undertaken
+<lb/>must ultimately succeed. I think however,
+<lb/>that you are more needed in <country>America</country>
+<lb/>than in <country>England</country>. You must not think
+<lb/>I am doing nothing in the line of your
+<lb/>work because you hear little of me. I am
+<lb/>doing what I can to promote the cause
+<lb/>of human Brotherhood in this country where
+<lb/>it is most needed. Please find within <hi rend="underline">five</hi> <hi rend="underline">dollars</hi>
+<lb/>to help on the Anticaste.</p> <!-- Not sure if anti-caste is tagged somehow? HB -->
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="1" unit="chars"/>Very truly yours</p>
+<lb/><p rend="no-indent"><space extent="5" unit="words"/><space extent="2" unit="chars"/><persName>Frederick Douglass</persName> -</p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

@@ -29,6 +29,8 @@ Table of Contents
 /*--------------------------------------*/
 
 /** Main Site Colors **/
+/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
+/* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
 site-blue #235185;
 site-red #902D27;
@@ -1431,6 +1433,17 @@ table .linenumber{
 }
 .font.liv_020027_0001{
 	font-family: 'unifrakturmaguntiabook';
+}
+.shelfmark.liv_020032_0001{
+    transform: rotate(310deg);
+	-ms-transform:rotate(310deg); /* IE 9 */
+	-moz-transform:rotate(310deg); /* Firefox */
+	-webkit-transform:rotate(310deg); /* Safari and Chrome */
+	-o-transform:rotate(310deg); /* Opera */
+}
+.address.liv_020032_0001{
+    color: #235185;
+    font-family: unifrakturmaguntiabook;
 }
 @media only screen and (min-width:480px){
     .table.liv_020058_0070{

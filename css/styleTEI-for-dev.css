@@ -554,7 +554,8 @@ button::-moz-focus-inner{
 	float: right;
 	position: unset;
 }
-.manuscript .head.center{
+.manuscript .head.center,
+.journal .head.center{
 	font-weight: normal;
 	text-indent: 0;
 	text-align: center;
@@ -713,7 +714,6 @@ table .linenumber{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
 }
 .fw .center{
 	display: inline

@@ -3,11 +3,11 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020057"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020057"><!-- Insert LEAP ID, e.g.<space extent="1" unit="chars"/>"liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>“Notes on Refugee Tribes Encountered in July 1903”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title>“Notes on Refugee Tribes Encountered in July 1903”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name.<space extent="1" unit="chars"/>-->
 				<title type="normalized">‘Notes on Refugee Tribes Encountered in July 1903’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
                 <title type="alternative">“Notes on Refugee Tribes Encountered in July 1903,” 1904</title><!-- Title, date -->
                 <author>Casement, Roger, 1864-1916</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -17,8 +17,8 @@
 				<author role="first-normalized">Roger Casement</author><!-- First author only: Forename Surname -->
 				<author role="normalized">Q Q</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 
-                <principal>Heather F. Ball</principal>
-                <principal>Adrian S. Wisnicki</principal>
+                <principal>Heather F.<space extent="1" unit="chars"/>Ball</principal>
+                <principal>Adrian S.<space extent="1" unit="chars"/>Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="CM">
                     <name>Caitlin Matheis</name>
@@ -29,7 +29,7 @@
                     <resp>Coding Review</resp>
                 </respStmt>
                 <respStmt xml:id="AW">
-                    <name>Adrian S. Wisnicki</name>
+                    <name>Adrian S.<space extent="1" unit="chars"/>Wisnicki</name>
                     <resp>Transcription</resp>
                     <resp>TEI Encoding</resp>
                     <resp>Editorial Decisions</resp>
@@ -42,7 +42,7 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date>
-                <idno type="LEAP-ID">liv_020057</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+                <idno type="LEAP-ID">liv_020057</idno><!-- Insert LEAP ID, e.g.<space extent="1" unit="chars"/>"liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
 				<ref target="https://archive.org/details/CasementReport/page/n1/mode/2up">Internet Archive</ref>
@@ -65,7 +65,7 @@
 						<imprint>
 							<biblScope unit="section">Report on Visit to Interior of Congo State and on Condition of the Natives</biblScope><!-- Section title (if known; otherwise leave blank) -->
 							<biblScope unit="pages">Africa, 1:60-64</biblScope><!-- Pages (if known; otherwise leave blank) -->
-							<pubPlace>House of Commons. Accounts and Papers. London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<pubPlace>House of Commons.<space extent="1" unit="chars"/>Accounts and Papers.<space extent="1" unit="chars"/>London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
 							<publisher>Harrison and Sons for His Majesty’s Stationary Office</publisher><!-- Publisher (if known; otherwise leave blank) -->
 							<date>1904</date><!-- Item date; same as date in <title type="alternative"> above -->
 						</imprint>
@@ -94,7 +94,7 @@
         <profileDesc>
             <langUsage>
                 <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
-                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <!-- English should be first, then add all other languages in alphabetical order.<space extent="1" unit="chars"/>-->
                 <language ident="en">English</language>
             </langUsage>
         </profileDesc>
@@ -102,7 +102,7 @@
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
 			<!-- Describe using one of the phrases associated with your name above -->
-			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc.<space extent="1" unit="chars"/>-->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
 			<change when="2020-11-02" who="#AW">Text encoding</change>
@@ -124,69 +124,69 @@
 <fw><seg rend="center">60</seg></fw>
 
 	<div rend="center">
-<gap extent="12" unit="lines" agent="omitted-text"/><!-- Text from previous inclosure omitted here. AW -->
+<gap extent="19" unit="lines" agent="omitted-text"/><!-- Text from previous inclosure omitted here.<space extent="1" unit="chars"/>AW -->
 	</div>
 	<div>
 <milestone unit="section" rend="half-line"/>
-<p rend="center">Inclosure 1 in No. 3. </p>
+<p rend="center">Inclosure 1 in No.<space extent="1" unit="chars"/>3.<space extent="1" unit="chars"/></p>
 
-<lb/><p rend="center">(See p. 29.)</p>
+<lb/><p rend="center">(See p.<space extent="1" unit="chars"/>29.)</p>
 
 <lb/><p rend="center italic">Notes on Refugee Tribes encountered in July 1903.</p>
 
-<lb/><p>Hearing of the L * refugees from I *, I decided to visit the nearest Settlement of these 
+<lb/><p>Hearing of the L* refugees from I*, I decided to visit the nearest Settlement of these 
 fugitives, some 20 miles away, to see them for myself.</p>
 
-<p>At N * found large town of K *, and scattered through it many small settlements of L * 
-refugees. The town of N * consists approximately of seventy-one K * houses, and seventy-three 
-occupied by L *. These latter seemed industrious, simple folk, many weaving palm fibre into 
+<p>At N* found large town of K*, and scattered through it many small settlements of L* 
+refugees.<space extent="1" unit="chars"/>The town of N* consists approximately of seventy-one K* houses, and seventy-three 
+occupied by L*.<space extent="1" unit="chars"/>These latter seemed industrious, simple folk, many weaving palm fibre into 
 mats or native cloth; others had smithies, working brass wire into bracelets, chains, and anklets; 
-some iron-workers making knives. Sitting down in one of these blacksmith’s sheds, the five men 
-at work ceased and came over to talk to us. I counted ten women, six grown-up men, and eight 
-lads and women in this one shed of L *. I then asked them to tell me why they had left their 
-homes. Three of the men sat down in front of me, and told a tale which I cannot think can be true, 
-but it seemed to come straight from their hearts. I repeatedly asked certain parts to be 
-gone over again while I wrote in my note-book. The fact of my writing down and asking for 
+some iron-workers making knives.<space extent="1" unit="chars"/>Sitting down in one of these blacksmith’s sheds, the five men 
+at work ceased and came over to talk to us.<space extent="1" unit="chars"/>I counted ten women, six grown-up men, and eight 
+lads and women in this one shed of L*.<space extent="1" unit="chars"/>I then asked them to tell me why they had left their 
+homes.<space extent="1" unit="chars"/>Three of the men sat down in front of me, and told a tale which I cannot think can be true, 
+but it seemed to come straight from their hearts.<space extent="1" unit="chars"/>I repeatedly asked certain parts to be 
+gone over again while I wrote in my note-book.<space extent="1" unit="chars"/>The fact of my writing down and asking for 
 names, &amp;c., seemed to impress them, and they spoke with what certainly impressed me as being 
 great sincerity.</p>
 
 <p>I asked, first, why they had left their homes, and had come to live in a strange far-off country 
-among the K *, where they owned nothing, and were little better than servitors. All, when this 
+among the K*, where they owned nothing, and were little better than servitors.<space extent="1" unit="chars"/>All, when this 
 question was put, women as well, shouted out, “On account of the rubber tax levied by the 
 Government posts.”</p>
 
-<p>I asked particularly the names of the places whence they had come. They answered they 
-were from V **. Other L * refugees here at N * were W **, others again were X**, but all 
-had fled from their homes for the same reason—it was the “rubber tax.”</p>
+<p>I asked particularly the names of the places whence they had come.<space extent="1" unit="chars"/>They answered they 
+were from V**.<space extent="1" unit="chars"/>Other L* refugees here at N* were W**, others again were X**, but all 
+had fled from their homes for the same reason&#8212;it was the “rubber tax.”</p>
 
-<p>I asked then how this tax was imposed. One of them, who had been hammering out an iron 
-neck collar on my arrival, spoke first. He said:—</p>
+<p>I asked then how this tax was imposed.<space extent="1" unit="chars"/>One of them, who had been hammering out an iron 
+neck collar on my arrival, spoke first.<space extent="1" unit="chars"/>He said :&#8212;</p>
 
-<p>“I am N N. These other two beside me are O O and P P, all of us Y **. From 
-our country each village had to take twenty loads of rubber. These loads were big: they 
-were as big as this....” (Producing an empty basket which came nearly up to the handle of my 
-walking-stick.) “That was the first size. We had to fill that up, but as rubber got scarcer the 
-white man reduced the amount. We had to take these loads in four times a-month.”</p>
+<p>“I am N N.<space extent="1" unit="chars"/>These other two beside me are O O and P P, all of us Y**.<space extent="1" unit="chars"/>From 
+our country each village had to take twenty loads of rubber.<space extent="1" unit="chars"/>These loads were big : they 
+were as big as this<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.”<space extent="1" unit="chars"/>(Producing an empty basket which came nearly up to the handle of my 
+walking-stick.) “That was the first size.<space extent="1" unit="chars"/>We had to fill that up, but as rubber got scarcer the 
+white man reduced the amount.<space extent="1" unit="chars"/>We had to take these loads in four times a-month.”</p>
 
-<p>Q. “How much pay did you get for this?”</p>
+<p>Q.<space extent="1" unit="chars"/>“How much pay did you get for this?”</p>
 
-<p>A. (Entire audience.) “We got no pay! We got nothing!”</p>
+<p>A.<space extent="1" unit="chars"/>(Entire audience.) “We got no pay!<space extent="1" unit="chars"/>We got nothing!”</p>
 
-<p>And then N N, whom I asked, again said:—</p>
+<p>And then N N, whom I asked, again said :&#8212;</p>
 
-<p>“Our village got cloth and a little salt, but not the people who did the work. Our Chiefs 
-eat up the cloth; the workers got nothing. The pay was a fathom of cloth and a little salt 
-for every big basket full, but it was given to the Chief, never to the men. It used to take ten 
-days to get the twenty baskets of rubber—we were always in the forest and then when we were 
-late we were killed. We had to go further and further into the forest to find the rubber 
-vines, to go without food, and our women had to give up cultivating the fields and gardens. 
-Then we starved. Wild beasts—the leopards—killed some of us when we were working away in 
+<p>“Our village got cloth and a little salt, but not the people who did the work.<space extent="1" unit="chars"/>Our Chiefs 
+eat up the cloth; the workers got nothing.<space extent="1" unit="chars"/>The pay was a fathom of cloth and a little salt 
+for every big basket full, but it was given to the Chief, never to the men.<space extent="1" unit="chars"/>It used to take ten 
+days to get the twenty baskets of rubber&#8212;we were always in the forest and then when we were 
+late we were killed.<space extent="1" unit="chars"/>We had to go further and further into the forest to find the rubber 
+vines, to go without food, and our women had to give up cultivating the fields and gardens.<space extent="1" unit="chars"/>
+Then we starved.<space extent="1" unit="chars"/>Wild beasts&#8212;the leopards&#8212;killed some of us when we were working away in 
 the forest, and others got lost or died from exposure and starvation, and we begged the white 
 man to leave us alone, saying we could get no more rubber, but the white men and their soldiers 
-said: ‘Go! You are only beasts yourselves, you are nyama (meat).’ We tried, always going 
+said : ‘Go!<space extent="1" unit="chars"/>You are only beasts yourselves, you are nyama (meat).’ We tried, always going 
 further into the forest, and when we failed and our rubber was short, the soldiers came to our 
-towns and killed us. Many were shot, some had their ears cut off; others were tied up with 
-ropes around their necks and bodies and taken away. The white men sometimes at the posts 
+towns and killed us.<space extent="1" unit="chars"/>Many were shot, some had their ears cut off; others were tied up with 
+ropes around their necks and bodies and taken away.<space extent="1" unit="chars"/>The white men sometimes at the posts <lb/>
 
 
     <pb facs="liv_020058_0061" n="0061"/>
@@ -194,195 +194,195 @@ ropes around their necks and bodies and taken away. The white men sometimes at t
 did not know of the bad things the soldiers did to us, but it was the white men who sent the 
 soldiers to punish us for not bringing in enough rubber.”</p>
 
-<p>Here P P took up the tale from N N:—</p>
+<p>Here P P took up the tale from N N :&#8212;</p>
 
-<p>“We said to the white men, ‘We are not enough people now to do what you want us. Our 
-country has not many people in it and we are dying fast. We are killed by the work you make 
+<p>“We said to the white men, ‘We are not enough people now to do what you want us.<space extent="1" unit="chars"/>Our 
+country has not many people in it and we are dying fast.<space extent="1" unit="chars"/>We are killed by the work you make 
 us do, by the stoppage of our plantations, and the breaking up of our homes.’ The white man 
-looked at us and said: ‘There are lots of people in Mputu’” (Europe, the white man’s country). 
+looked at us and said : ‘There are lots of people in Mputu’”<space extent="1" unit="chars"/>(Europe, the white man’s country).<space extent="1" unit="chars"/>
 “‘If there are lots of people in the white man’s country there must be many people in the black 
-man’s country.’ The white man who said this was the chief white man at F F *, his name was 
-A B, he was a very bad man. Other white men of Bula Matadi who had been bad and wicked 
-were B C, C D, and D E.” “These had killed us often, and killed us by their own hands as well 
-as by their soldiers. Some white men were good. These were E F, F G, G H, H I, I K, K L.”</p>
+man’s country.’ The white man who said this was the chief white man at F F*, his name was 
+A B, he was a very bad man.<space extent="1" unit="chars"/>Other white men of Bula Matadi who had been bad and wicked 
+were B C, C D, and D E.”<space extent="1" unit="chars"/>“These had killed us often, and killed us by their own hands as well 
+as by their soldiers.<space extent="1" unit="chars"/>Some white men were good.<space extent="1" unit="chars"/>These were E F, F G, G H, H I, I K, K L.”</p>
 
 <p>These ones told them to stay in their homes and did not hunt and chase them as the others 
 had done, but after what they had suffered they did not trust more any one’s word, and they had 
 fled from their country and were now going to stay here, far from their homes, in this country 
 where there was no rubber.</p>
 
-<p>Q. “How long is it since you left your homes, since the big trouble you speak of?”</p>
+<p>Q.<space extent="1" unit="chars"/>“How long is it since you left your homes, since the big trouble you speak of?”</p>
 
-<p>A. “It lasted for three full seasons, and it is now four seasons since we fled and came into 
-the K * country.”</p>
+<p>A.<space extent="1" unit="chars"/>“It lasted for three full seasons, and it is now four seasons since we fled and came into 
+the K* country.”</p>
 
-<p>Q. “How many days is it from N * to your own country?”</p>
+<p>Q.<space extent="1" unit="chars"/>“How many days is it from N* to your own country?”</p>
 
-<p>A. “Six days of quick marching. We fled because we could not endure the things done to 
-us. Our Chiefs were hanged, and we were killed and starved and worked beyond endurance to 
+<p>A.<space extent="1" unit="chars"/>“Six days of quick marching.<space extent="1" unit="chars"/>We fled because we could not endure the things done to 
+us.<space extent="1" unit="chars"/>Our Chiefs were hanged, and we were killed and starved and worked beyond endurance to 
 get rubber.”</p>
 
-<p>Q. “How do you know it was the white men themselves who ordered these cruel things to 
-be done to you? These things must have been done without the white man’s knowledge by 
+<p>Q.<space extent="1" unit="chars"/>“How do you know it was the white men themselves who ordered these cruel things to 
+be done to you?<space extent="1" unit="chars"/>These things must have been done without the white man’s knowledge by 
 the black soldiers.”</p>
 
-<p>A. (P P): “The white men told their soldiers: ‘You kill only women; you cannot kill 
-men. You must prove that you kill men.’ So then the soldiers when they killed us” (here he 
-stopped and hesitated, and then pointing to the private parts of my bulldog—it was lying asleep 
-at my feet), he said: “then they cut off those things and took them to the white men, who said: 
+<p>A.<space extent="1" unit="chars"/>(P P) : “The white men told their soldiers : ‘You kill only women; you cannot kill 
+men.<space extent="1" unit="chars"/>You must prove that you kill men.’ So then the soldiers when they killed us” (here he 
+stopped and hesitated, and then pointing to the private parts of my bulldog&#8212;it was lying asleep 
+at my feet), he said : “then they cut off those things and took them to the white men, who said : 
 ‘It is true, you have killed men.’”</p>
 
-<p>Q. “You mean to tell me that any white man ordered your bodies to be mutilated like 
+<p>Q.<space extent="1" unit="chars"/>“You mean to tell me that any white man ordered your bodies to be mutilated like 
 that, and those parts of you carried to him?”</p>
 
-<p>P P, O O, and all (shouting): “Yes! many white men. D E did it.”</p>
+<p>P P, O O, and all (shouting) : “Yes!<space extent="1" unit="chars"/>many white men.<space extent="1" unit="chars"/>D E did it.”</p>
 
-<p>Q. “You say this is true? Were many of you so treated after being shot?”</p>
+<p>Q.<space extent="1" unit="chars"/>“You say this is true?<space extent="1" unit="chars"/>Were many of you so treated after being shot?”</p>
 
-<p>All (shouting out): “Nkoto! Nkoto!” (Very many! Very many!)</p>
+<p>All (shouting out) : “Nkoto!<space extent="1" unit="chars"/>Nkoto!”<space extent="1" unit="chars"/>(Very many!<space extent="1" unit="chars"/>Very many!)</p>
 
-<p>There was no doubt that these people were not inventing. Their vehemence, their flashing 
-eyes, their excitement, was not simulated. Doubtless they exaggerated the numbers, but they 
-were clearly telling what they knew and loathed. I was told that they often became so furious 
-at the recollection of what had been done to them that they lost control over themselves. 
+<p>There was no doubt that these people were not inventing.<space extent="1" unit="chars"/>Their vehemence, their flashing 
+eyes, their excitement, was not simulated.<space extent="1" unit="chars"/>Doubtless they exaggerated the numbers, but they 
+were clearly telling what they knew and loathed.<space extent="1" unit="chars"/>I was told that they often became so furious 
+at the recollection of what had been done to them that they lost control over themselves.<space extent="1" unit="chars"/>
 One of the men before me was getting into this state now.</p>
 
-<p>I asked whether L * tribes were still running from their country, or whether they now 
+<p>I asked whether L* tribes were still running from their country, or whether they now 
 stayed at home and worked voluntarily.</p>
 
-<p>N N answered: “They cannot run away now—not easily; there are sentries in the country 
+<p>N N answered : “They cannot run away now&#8212;not easily; there are sentries in the country 
 there between the Lake and this; besides, there are few people left.”</p>
 
-<p>P P said: “We heard that letters came to the white men to say that the people were 
-to be well treated. We heard that these letters had been sent by the big white men in 
-‘Mputu’ (Europe); but our white men tore up these letters, laughing, saying: ‘We are the 
-“basango” and “banyanga” (fathers and mothers, i.e., elders). Those who write to us are only 
-“bana” (children).’ Since we left our homes the white men have asked us to go home again. 
-We have heard that they want us to go back, but we will not go. We are not warriors, and 
-do not want to fight. We only want to live in peace with our wives and children, and so 
-we stay here among the K *, who are kind to us, and will not return to our homes.”</p>
+<p>P P said : “We heard that letters came to the white men to say that the people were 
+to be well treated.<space extent="1" unit="chars"/>We heard that these letters had been sent by the big white men in 
+‘Mputu’ (Europe); but our white men tore up these letters, laughing, saying : ‘We are the 
+“basango” and “banyanga” (fathers and mothers, i.e., elders).<space extent="1" unit="chars"/>Those who write to us are only 
+“bana” (children).’ Since we left our homes the white men have asked us to go home again.<space extent="1" unit="chars"/>
+We have heard that they want us to go back, but we will not go.<space extent="1" unit="chars"/>We are not warriors, and 
+do not want to fight.<space extent="1" unit="chars"/>We only want to live in peace with our wives and children, and so 
+we stay here among the K*, who are kind to us, and will not return to our homes.”</p>
 
-<p>Q. “Would you not like to go back to your homes? Would you not, in your hearts, all wish 
+<p>Q.<space extent="1" unit="chars"/>“Would you not like to go back to your homes?<space extent="1" unit="chars"/>Would you not, in your hearts, all wish 
 to return?”</p>
 
-<p>A. (By many.) “We loved our country, but we will not trust ourselves to go back.”</p>
+<p>A.<space extent="1" unit="chars"/>(By many.) “We loved our country, but we will not trust ourselves to go back.”</p>
 
-<p>P P: “Go, you white men, with the steamer to I *, and see what we have told you is true. 
+<p>P P : “Go, you white men, with the steamer to I*, and see what we have told you is true.<space extent="1" unit="chars"/>
 Perhaps if other white men, who do not hate us, go there, Bula Matadi may stop from hating 
 us, and we may be able to go home again.”</p>
 
 <p>I asked to be pointed out any refugees from other tribes, if there were such, and they 
-brought forward a lad who was a X **, and a man of the Z **. These two, answering me, 
+brought forward a lad who was a X**, and a man of the Z**.<space extent="1" unit="chars"/>These two, answering me, 
 said there were many with them from their tribes who had fled from their country.</p>
 
 <lb/>
 
-<p>Went on about fifteen minutes to another L * group of houses in the midst of the 
-K * town. Found here mostly W **, an old Chief sitting in the open village Council- 
-house with a Z ** man and two lads. An old woman soon came and joined, and another 
-man. The woman began talking with much earnestness. She said the Government had 
+<p>Went on about fifteen minutes to another L* group of houses in the midst of the 
+K* town.<space extent="1" unit="chars"/>Found here mostly W**, an old Chief sitting in the open village Council- 
+house with a Z** man and two lads.<space extent="1" unit="chars"/>An old woman soon came and joined, and another 
+man.<space extent="1" unit="chars"/>The woman began talking with much earnestness.<space extent="1" unit="chars"/>She said the Government had 
 worked them so hard they had had no time to tend their fields and gardens, and they had 
-starved to death. Her children had died; her sons had been killed. The two men, as she spoke, 
+starved to death.<space extent="1" unit="chars"/>Her children had died; her sons had been killed.<space extent="1" unit="chars"/>The two men, as she spoke, 
 muttered murmurs of assent.</p>
 
-<p>The old Chief said: “We used to hunt elephants long ago, there were plenty in our forests, 
+<p>The old Chief said : “We used to hunt elephants long ago, there were plenty in our forests, 
 and we got much meat; but Bula Matadi killed the elephant hunters because they could not get 
-rubber, and so we starved. We were sent out to get rubber, and when we came back with little 
+rubber, and so we starved.<space extent="1" unit="chars"/>We were sent out to get rubber, and when we came back with little 
 rubber we were shot.”</p>
 
 
     <pb facs="liv_020058_0062" n="0062"/>
 <fw><seg rend="center">62</seg></fw>
-<p>Q. “Who shot you?”</p>
+<p>Q.<space extent="1" unit="chars"/>“Who shot you?”</p>
 
-<p>A. “The white men ..... sent their soldiers out to kill us.”</p>
+<p>A.<space extent="1" unit="chars"/>“The white men<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>sent their soldiers out to kill us.”</p>
 
-<p>Q. “How do you know it was the white man who sent the soldiers? It might be only these 
+<p>Q.<space extent="1" unit="chars"/>“How do you know it was the white man who sent the soldiers?<space extent="1" unit="chars"/>It might be only these 
 savage soldiers themselves.”</p>
 
-<p>A. “No, no. Sometimes we brought rubber into the white man’s stations. We took rubber to 
-D E’s station, E E *, and to F F * and to ....’s station. When it was not enough rubber 
+<p>A.<space extent="1" unit="chars"/>“No, no.<space extent="1" unit="chars"/>Sometimes we brought rubber into the white man’s stations.<space extent="1" unit="chars"/>We took rubber to 
+D E’s station, E E*, and to F F* and to ....’s station.<space extent="1" unit="chars"/>When it was not enough rubber 
 the white man would put some of us in lines, one behind the other, and would shoot through all 
-our bodies. Sometimes he would shoot us like that with his own hand; sometimes his soldiers 
+our bodies.<space extent="1" unit="chars"/>Sometimes he would shoot us like that with his own hand; sometimes his soldiers 
 would do it.”</p>
 
-<p>Q. “You mean to say you were killed in the Government posts themselves by the Government 
+<p>Q.<space extent="1" unit="chars"/>“You mean to say you were killed in the Government posts themselves by the Government 
 white men themselves, or under their eyes?”</p>
 
-<p>A. (Emphatically.) “We were killed in the stations of the white men themselves. We were 
-killed by the white man himself. We were shot before his eyes.”</p>
+<p>A.<space extent="1" unit="chars"/>(Emphatically.)<space extent="1" unit="chars"/>“We were killed in the stations of the white men themselves.<space extent="1" unit="chars"/>We were 
+killed by the white man himself.<space extent="1" unit="chars"/>We were shot before his eyes.”</p>
 
 <p>The names D E, B C, and L M, were names I heard repeatedly uttered.</p>
 
-<p>The Z ** man said he, too, had fled; now he lived at peace with the K *.</p>
+<p>The Z** man said he, too, had fled; now he lived at peace with the K*.</p>
 
-<p>The abnormal refugee population in this one K * town must equal the actual K * population 
-itself. On every hand one finds these refugees. They seem, too, to pass busier lives than their 
-K * hosts, for during all the hot hours of the afternoon, wherever I walked through the town— 
-and I went all through N* until the sun set—I found L * weavers, or iron and brass workers, at 
+<p>The abnormal refugee population in this one K* town must equal the actual K* population 
+itself.<space extent="1" unit="chars"/>On every hand one finds these refugees.<space extent="1" unit="chars"/>They seem, too, to pass busier lives than their 
+K* hosts, for during all the hot hours of the afternoon, wherever I walked through the town&#8212; 
+and I went all through N* until the sun set&#8212;I found L* weavers, or iron and brass workers, at 
 work.</p>
 
-<p>Slept at M M’s house. Many people coming to talk to us after dark.</p>
+<p>Slept at M M’s house.<space extent="1" unit="chars"/>Many people coming to talk to us after dark.</p>
 
-<p>Left N * about 8 to return to the Congo bank. On the way back left the main path and 
-struck into one of the side towns, a village called A A *. This lies only some 4 or 5 miles 
-from the river. Found here thirty-two L * houses with forty-three K *, so that the influx of 
-fugitives here is almost equal to the original population. Saw many L *. All were frightened, 
-and they and the K * were evidently so ill at ease that I did not care to pause. Spoke to one or 
-two men only as we walked through the town. The L * drew away from us, but on looking 
+<p>Left N* about 8 to return to the Congo bank.<space extent="1" unit="chars"/>On the way back left the main path and 
+struck into one of the side towns, a village called A A*.<space extent="1" unit="chars"/>This lies only some 4 or 5 miles 
+from the river.<space extent="1" unit="chars"/>Found here thirty-two L* houses with forty-three K*, so that the influx of 
+fugitives here is almost equal to the original population.<space extent="1" unit="chars"/>Saw many L*.<space extent="1" unit="chars"/>All were frightened, 
+and they and the K* were evidently so ill at ease that I did not care to pause.<space extent="1" unit="chars"/>Spoke to one or 
+two men only as we walked through the town.<space extent="1" unit="chars"/>The L* drew away from us, but on looking 
 back saw many heads popped out of doors of the houses we had passed.</p>
 
 <p>Got back to steamer about noon.</p>
 
 <lb/>
 
-<p>Heard that L* came sometimes to M* from I*. I am now 100 miles (about) up-river from 
-N*. Went into one of the M* country farm towns called B B *. Found on entering plantation 
+<p>Heard that L* came sometimes to M* from I*.<space extent="1" unit="chars"/>I am now 100 miles (about) up-river from 
+N*.<space extent="1" unit="chars"/>Went into one of the M* country farm towns called B B*.<space extent="1" unit="chars"/>Found on entering plantation 
 two huts with five men and one woman, who I at once recognized by their head-dress as L*, 
-like those at N*. The chief speaker, a young man named ...... who lives at B B*. He 
-seems about 22 or 23, and speaks with an air of frankness. He says: “The L* here and 
-others who come to M*, come from a place C C*. It is connected with the lake by a stream. His 
-own town in the district of C C* is D D*. C C* is a big district and had many people. They 
+like those at N*.<space extent="1" unit="chars"/>The chief speaker, a young man named ......<space extent="1" unit="chars"/>who lives at B B*.<space extent="1" unit="chars"/>He 
+seems about 22 or 23, and speaks with an air of frankness.<space extent="1" unit="chars"/>He says : “The L* here and 
+others who come to M*, come from a place C C*.<space extent="1" unit="chars"/>It is connected with the lake by a stream.<space extent="1" unit="chars"/>His 
+own town in the district of C C* is D D*.<space extent="1" unit="chars"/>C C* is a big district and had many people.<space extent="1" unit="chars"/>They 
 now bring the Government india-rubber, kwanga, and fowls, and work on broad paths connecting 
-each village. His own village has to take 300 baskets of india-rubber. They get one piece of 
-cotton cloth, called locally sanza, and no more.” (Note.—This cannot be true. He is doubtless 
+each village.<space extent="1" unit="chars"/>His own village has to take 300 baskets of india-rubber.<space extent="1" unit="chars"/>They get one piece of 
+cotton cloth, called locally sanza, and no more.”<space extent="1" unit="chars"/>(Note.&#8212;This cannot be true.<space extent="1" unit="chars"/>He is doubtless 
 exaggerating.) Four other men with him were wearing the rough palm-fibre cloth of the 
-country looms, and they pointed to this as proof that they got no cloth for their labours. 
-K K continuing said: “We were then killed for not bringing in enough rubber.”</p>
+country looms, and they pointed to this as proof that they got no cloth for their labours.<space extent="1" unit="chars"/>
+K K continuing said : “We were then killed for not bringing in enough rubber.”</p>
 
-<p>Q. “You say you were killed for not bringing in rubber. Were you ever mutilated as proof 
+<p>Q.<space extent="1" unit="chars"/>“You say you were killed for not bringing in rubber.<space extent="1" unit="chars"/>Were you ever mutilated as proof 
 that the soldiers had killed you?”</p>
 
-<p>A. “When we were killed the white man was there himself. No proof was needed. Men 
+<p>A.<space extent="1" unit="chars"/>“When we were killed the white man was there himself.<space extent="1" unit="chars"/>No proof was needed.<space extent="1" unit="chars"/>Men 
 and women were put in a line with a palm tree and were shot.”</p>
 
 <p>Here he took three of the four men sitting down and put them one in line behind the other, 
-and said: “The white men used to put us like that and shoot all with one cartridge. That was 
+and said : “The white men used to put us like that and shoot all with one cartridge.<space extent="1" unit="chars"/>That was 
 often done, and worse things.”</p>
 
-<p>Q. “But how, if you now have to work so hard, are you yourselves able to come here to 
+<p>Q.<space extent="1" unit="chars"/>“But how, if you now have to work so hard, are you yourselves able to come here to 
 M* to see your friends?”</p>
 
-<p>A. “We came away without the sentries or soldiers knowing, but when we get home we 
+<p>A.<space extent="1" unit="chars"/>“We came away without the sentries or soldiers knowing, but when we get home we 
 may have trouble.”</p>
 
-<p>Q. “Do you know the L* who are now at N*?” (Here I gave the names of N N, O O, and 
+<p>Q.<space extent="1" unit="chars"/>“Do you know the L* who are now at N*?”<space extent="1" unit="chars"/>(Here I gave the names of N N, O O, and 
 P P.)</p>
 
-<p>A. “Yes; many L* fled to that country. N N we know ran away on account of the things 
-done to them by the Government white men. The K* and L* have always been friends. That 
+<p>A.<space extent="1" unit="chars"/>“Yes; many L* fled to that country.<space extent="1" unit="chars"/>N N we know ran away on account of the things 
+done to them by the Government white men.<space extent="1" unit="chars"/>The K* and L* have always been friends.<space extent="1" unit="chars"/>That 
 is why the L* fled to them for refuge.”</p>
 
-<p>Q. “Are there sentries or soldiers in your villages now?”</p>
+<p>Q.<space extent="1" unit="chars"/>“Are there sentries or soldiers in your villages now?”</p>
 
-<p>A. “In the chief villages there are always four soldiers with rifles. When natives go out 
+<p>A.<space extent="1" unit="chars"/>“In the chief villages there are always four soldiers with rifles.<space extent="1" unit="chars"/>When natives go out 
 into the forest to collect rubber they would leave one of their number behind to stay and protect 
-the women. Sometimes the soldiers finding him thus refused to believe what he said, and killed 
-him for shirking his work. This often happens.”</p>
+the women.<space extent="1" unit="chars"/>Sometimes the soldiers finding him thus refused to believe what he said, and killed 
+him for shirking his work.<space extent="1" unit="chars"/>This often happens.”</p>
 
 <p>Asked how far it was from M* to their country they say three days’ journey, and then 
-about two days more on to I* by water, or three if by land. They begged us to go to their 
-country, they said: “We will show you the road, we will take you there, and you will see how 
+about two days more on to I* by water, or three if by land.<space extent="1" unit="chars"/>They begged us to go to their 
+country, they said : “We will show you the road, we will take you there, and you will see how 
 things are, and that our country has been spoiled, and we are speaking the truth.”</p>
 
 <p>Left them here and returned to the river bank.</p>
@@ -390,144 +390,148 @@ things are, and that our country has been spoiled, and we are speaking the truth
 <lb/>
 
 <p>The foregoing entries made at the time in my note-book seemed to me, if not false, greatly 
-exaggerated, although the statements were made with every air of conviction and sincerity. I 
+exaggerated, although the statements were made with every air of conviction and sincerity.<space extent="1" unit="chars"/>I 
 did not again meet with any more L* refugees, for on my return to G* I stayed only a few
 
 
     <pb facs="liv_020058_0063" n="0063"/>
 <fw><seg rend="center">63</seg></fw> 
-hours. A few days afterwards, while I was at Stanley Pool, I received further evidence in a letter 
-of which the following is an extract:—</p>
+hours.<space extent="1" unit="chars"/>A few days afterwards, while I was at Stanley Pool, I received further evidence in a letter 
+of which the following is an extract :&#8212;</p>
 
-<lb/>
+<p rend="center">*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*</p>
 
 <p>“I was sorry not to see you as you passed down, and so missed the opportunity of conveying 
 to you personally a lot of evidence as to the terrible maladministration practised in the past in 
-the district. I saw the official at the post of E E*. He is the successor of the infamous wretch 
-D E, of whom you heard so much yourself from the refugees at N*. This D E was in this dis- 
-trict in ..., ..., and ..., and he it was that depopulated the country. His successor, M N, is 
+the district.<space extent="1" unit="chars"/>I saw the official at the post of E E*.<space extent="1" unit="chars"/>He is the successor of the infamous wretch 
+D E, of whom you heard so much yourself from the refugees at N*.<space extent="1" unit="chars"/>This D E was in this dis- 
+trict in<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>., .<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>., and .<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>., and he it was that depopulated the country.<space extent="1" unit="chars"/>His successor, M N, is 
 very vehement in his denunciations of him, and declares that he will leave nothing undone that 
-he can do to bring him to justice. He is now stationed at G G*, near our station at H H*. 
-Of M N I have nothing to say but praise. In a very difficult position he has done wonderfully. 
+he can do to bring him to justice.<space extent="1" unit="chars"/>He is now stationed at G G*, near our station at H H*.<space extent="1" unit="chars"/>
+Of M N I have nothing to say but praise.<space extent="1" unit="chars"/>In a very difficult position he has done wonderfully.<space extent="1" unit="chars"/>
 The people are beginning to show themselves and gathering about the many posts under his 
-charge. M N told me that when he took over the station at E E* from D E he visited the prison, 
-and almost fainted, so horrible was the condition of the place and the poor wretches in it. He 
-told me of many things he had heard of from the soldiers. Of D E shooting with his own hand 
-man after man who had come with an insufficient quantity of rubber. Of his putting several one 
-behind the other and shooting them all with one cartridge. Those who accompanied me, 
+charge.<space extent="1" unit="chars"/>M N told me that when he took over the station at E E* from D E he visited the prison, 
+and almost fainted, so horrible was the condition of the place and the poor wretches in it.<space extent="1" unit="chars"/>He 
+told me of many things he had heard of from the soldiers.<space extent="1" unit="chars"/>Of D E shooting with his own hand 
+man after man who had come with an insufficient quantity of rubber.<space extent="1" unit="chars"/>Of his putting several one 
+behind the other and shooting them all with one cartridge.<space extent="1" unit="chars"/>Those who accompanied me, 
 also heard from the soldiers many frightful stories and abundant confirmation of what was told us 
-at N* about the taking to D E of the organs of the men slain by the sentries of the various posts. 
+at N* about the taking to D E of the organs of the men slain by the sentries of the various posts.<space extent="1" unit="chars"/>
 I saw a letter from the present officer at F F* to M N, in which he upbraids him for not using 
 more vigorous means, telling him to talk less and shoot more, and reprimanding him for not 
-killing more than one in a district under his care where there was a little trouble. M N is due in 
+killing more than one in a district under his care where there was a little trouble.<space extent="1" unit="chars"/>M N is due in 
 Belgium in about three months, and says he will land one day and begin denouncing his prede- 
-cessor the next. I received many favours from him, and should be sorry to injure him in any 
-way..... He has already accepted a position in one of the Companies, being unable to 
-continue longer in the service of the State. I have never seen in all the different parts of the 
+cessor the next.<space extent="1" unit="chars"/>I received many favours from him, and should be sorry to injure him in any 
+way<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>He has already accepted a position in one of the Companies, being unable to 
+continue longer in the service of the State.<space extent="1" unit="chars"/>I have never seen in all the different parts of the 
 State which I have visited a neater station, or a district more under control than that over 
-which this M N presides. He is the M N the people of N* told us of, who they said was kind.</p>
+which this M N presides.<space extent="1" unit="chars"/>He is the M N the people of N* told us of, who they said was kind.</p>
 
 <p>“If I can give you any more information, or if there are any questions you would like to put 
 to me, I shall be glad to serve you, and through you these persecuted people.”</p>
 
-<p>From a separate communication, I extract the following paragraphs:—</p>
+<p>From a separate communication, I extract the following paragraphs :&#8212;</p>
 
-<p>“.....I heard of some half-dozen L* who were anxious to visit their old home, 
+<p>“.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>I heard of some half-dozen L* who were anxious to visit their old home, 
 and would be willing to go with me; so, after procuring some necessary articles in the 
-shape of provisions and barter, I started from our post at N*. It was the end of the 
+shape of provisions and barter, I started from our post at N*.<space extent="1" unit="chars"/>It was the end of the 
 dry season, and many of the water-courses were quite dry, and during some days we 
-even found the lack of water somewhat trying. The first two days’ travelling was 
+even found the lack of water somewhat trying.<space extent="1" unit="chars"/>The first two days’ travelling was 
 through alternating forest and grass plain, our guides, as far as possible, avoiding the 
-villages..... Getting fresh guides from a little village, we got into a region almost 
-entirely forested, and later descended into a gloomy valley still dripping from the rain. 
+villages<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>Getting fresh guides from a little village, we got into a region almost 
+entirely forested, and later descended into a gloomy valley still dripping from the rain.<space extent="1" unit="chars"/>
 According to our guides we should soon be through this, but it was not until the afternoon of the 
-second day after entering that we once more emerged from the gloom. Several times we lost 
+second day after entering that we once more emerged from the gloom.<space extent="1" unit="chars"/>Several times we lost 
 the track, and I had little inclination to blame the guides, for several times the undergrowth and 
-a species of thorn palm were trodden down in all directions by the elephants. It would seem to 
+a species of thorn palm were trodden down in all directions by the elephants.<space extent="1" unit="chars"/>It would seem to 
 be a favourite hunting ground of theirs, and once we got very close to a large herd who went off 
 at a furious pace, smashing down the small trees, trumpeting, and making altogether a most 
-terrifying noise. The second night in this forest we came across, when looking for the track, a 
-little village of runaways from the rubber district. When assured of our friendliness they took 
-us in and gave us what shelter they could. During the night another tornado swept the country 
+terrifying noise.<space extent="1" unit="chars"/>The second night in this forest we came across, when looking for the track, a 
+little village of runaways from the rubber district.<space extent="1" unit="chars"/>When assured of our friendliness they took 
+us in and gave us what shelter they could.<space extent="1" unit="chars"/>During the night another tornado swept the country 
 and blew down a rotten tree, some branches of which fell in amongst my tent and the little huts 
-in which some of the boys were sleeping. It was another most narrow escape.</p>
+in which some of the boys were sleeping.<space extent="1" unit="chars"/>It was another most narrow escape.</p>
 
 <p>“Early the next day we were conducted by one of the men of this village to the right road, 
 and very soon found ourselves travelling along a track which had evidently been, at only a recent 
-date, opened up by a number of natives. ‘What was it?’ ‘Oh! it is the road along which we 
+date, opened up by a number of natives.<space extent="1" unit="chars"/>‘What was it?’ ‘Oh!<space extent="1" unit="chars"/>it is the road along which we 
 used to carry rubber to the white men.’ ‘But why used to?’ ‘Oh, all the people have either 
 run away, or have been killed or died of starvation, and so there is no one to get rubber 
 any longer.’</p>
 
 <p>“That day we made a very long march, being nearly nine and a-half hours walking, and 
-passing through several other large depopulated districts. On all sides were signs of a very recent 
+passing through several other large depopulated districts.<space extent="1" unit="chars"/>On all sides were signs of a very recent 
 large population, but all was as quiet as death, and buffaloes roamed at will amongst the still growing 
-manioc and bananas. It was a sad day, and when, as the sun was setting, we came upon a large 
-State post we were plunged into still greater grief. True, there was a comfortable house at our 
+manioc and bananas.<space extent="1" unit="chars"/>It was a sad day, and when, as the sun was setting, we came upon a large 
+State post we were plunged into still greater grief.<space extent="1" unit="chars"/>True, there was a comfortable house at our 
 service, and houses for all the party; but we had not been long there before we found that we 
 had reached the centre of what was once a very thickly populated region, known as C C*, from 
-which many refugees in the neighbourhood of G* had come. It was here a white man, 
-known by the name of D E, lived..... He came to the district, and, after seven months 
-of diabolical work, left it a waste. Some of the stories current about him are not fit to record 
+which many refugees in the neighbourhood of G* had come.<space extent="1" unit="chars"/>It was here a white man, 
+known by the name of D E, lived<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>He came to the district, and, after seven months 
+of diabolical work, left it a waste.<space extent="1" unit="chars"/>Some of the stories current about him are not fit to record 
 here, but the native evidence is so consistent and so universal that it is difficult to disbelieve 
-that murder and rapine on a large scale were carried on here. His successor, a man of a different 
+that murder and rapine on a large scale were carried on here.<space extent="1" unit="chars"/>His successor, a man of a different 
 nature, and much liked by the people, after more than two and a-half years has succeeded in 
 winning back to the side of the State post a few natives, and there I saw them in their wretched 
 little huts, hardly able to call their lives their own in the presence of the new white man (myself), 
-whose coming among them had set them all a-wondering. From this there was no 
-fear of losing the track. For many miles it was a broad road, from 6 to 10 feet in width, 
+whose coming among them had set them all a-wondering.<space extent="1" unit="chars"/>From this there was no 
+fear of losing the track.<space extent="1" unit="chars"/>For many miles it was a broad road, from 6 to 10 feet in width, 
+
+<fw><seg rend="left"><space extent="2" unit="words"/>[247]</seg> <seg rend="right">K<space extent="2" unit="words"/></seg></fw>
 
 
     <pb facs="liv_020058_0064" n="0064"/>
 <fw><seg rend="center">64</seg></fw>
-and wherever there was a possibility of water settling logs were laid down. Some of these 
+and wherever there was a possibility of water settling logs were laid down.<space extent="1" unit="chars"/>Some of these 
 viaducts were miles in length, and must have entailed immense labour; whilst rejoicing in the 
 great facility with which we could continue our journey, we could not help picturing the many 
 cruel scenes which, in all probability, were a constant accompaniment to the laying of these huge 
-logs. I wish to emphasize as much as possible the desolation and emptiness of the country we 
-passed through. That it was only very recently a well-populated country, and, as things go out 
-here, rather more densely than usual, was very evident. After a few hours we came to a State 
-rubber post. In nearly every instance these posts are most imposing, some of them giving rise to 
-the supposition that several white men were residing in them. But in only one did we find a 
-white man—the successor of D E. At one place I saw lying about in the grass surrounding 
+logs.<space extent="1" unit="chars"/>I wish to emphasize as much as possible the desolation and emptiness of the country we 
+passed through.<space extent="1" unit="chars"/>That it was only very recently a well-populated country, and, as things go out 
+here, rather more densely than usual, was very evident.<space extent="1" unit="chars"/>After a few hours we came to a State 
+rubber post.<space extent="1" unit="chars"/>In nearly every instance these posts are most imposing, some of them giving rise to 
+the supposition that several white men were residing in them.<space extent="1" unit="chars"/>But in only one did we find a 
+white man&#8212;the successor of D E.<space extent="1" unit="chars"/>At one place I saw lying about in the grass surrounding 
 the post, which is built on the site of several very large towns, human bones, skulls, and, in 
-some places, complete skeletons. On inquiring the reason for this unusual sight: ‘Oh!’ said 
+some places, complete skeletons.<space extent="1" unit="chars"/>On inquiring the reason for this unusual sight : ‘Oh!’ said 
 my informant, ‘When the bambote (soldiers) were sent to make us cut rubber there were so many 
 killed we got tired of burying, and sometimes when we wanted to bury we were not allowed to.’</p>
 
 <p>“‘But why did they kill you so?’</p>
 
-<p>“‘Oh! sometimes we were ordered to go, and the sentry would find us preparing food to 
-eat while in the forest, and he would shoot two or three to hurry us along. Sometimes we would 
+<p>“‘Oh!<space extent="1" unit="chars"/>sometimes we were ordered to go, and the sentry would find us preparing food to 
+eat while in the forest, and he would shoot two or three to hurry us along.<space extent="1" unit="chars"/>Sometimes we would 
 try and do a little work on our plantations, so that when the harvest time came we should have 
 something to eat, and the sentry would shoot some of us to teach us that our business was not to 
-plant but to get rubber. Sometimes we were driven off to live for a fortnight in the forest 
-without any food and without anything to make a fire with, and many died of cold and hunger. 
+plant but to get rubber.<space extent="1" unit="chars"/>Sometimes we were driven off to live for a fortnight in the forest 
+without any food and without anything to make a fire with, and many died of cold and hunger.<space extent="1" unit="chars"/>
 Sometimes the quantity brought was not sufficient, and then several would be killed to frighten 
-us to bring more. Some tried to run away, and died of hunger and privation in the forest in 
+us to bring more.<space extent="1" unit="chars"/>Some tried to run away, and died of hunger and privation in the forest in 
 trying to avoid the State posts.’</p>
 
-<p>“‘But,’ said I, ‘if the sentries killed you like that, what was the use? You could not bring 
+<p>“‘But,’ said I, ‘if the sentries killed you like that, what was the use?<space extent="1" unit="chars"/>You could not bring 
 more rubber when there were fewer people.’</p>
 
-<p>“‘Oh! as to that, we do not understand it. These are the facts.’</p>
+<p>“‘Oh!<space extent="1" unit="chars"/>as to that, we do not understand it.<space extent="1" unit="chars"/>These are the facts.’</p>
 
 <p>“And looking around on the scene of desolation, on the untended farms and neglected palms, 
-one could not but believe that in the main the story was true. From State sentries came confirma- 
+one could not but believe that in the main the story was true.<space extent="1" unit="chars"/>From State sentries came confirma- 
 tion and particulars even more horrifying, and the evidence of a white man as to the state of the 
-country—the unspeakable condition of the prisons at the State posts—all combined to convince 
+country&#8212;the unspeakable condition of the prisons at the State posts&#8212;all combined to convince 
 me over and over again that, during the last seven years, this ‘domaine privé’ of King Leopold 
 has been a veritable ‘hell on earth.’</p>
 
-<p>“The present régime seems to be more tolerable. A small payment is made for the rubber 
-now brought in. A little salt—say a pennyworth—for 2 kilogrammes of rubber, worth in Europe 
-from 6 to 8 fr. The collection is still compulsory, but, compared with what has gone before, the 
-natives consider themselves fairly treated. There is a coming together of families and com- 
+<p>“The present régime seems to be more tolerable.<space extent="1" unit="chars"/>A small payment is made for the rubber 
+now brought in.<space extent="1" unit="chars"/>A little salt—say a pennyworth—for 2 kilogrammes of rubber, worth in Europe 
+from 6 to 8 fr.<space extent="1" unit="chars"/>The collection is still compulsory, but, compared with what has gone before, the 
+natives consider themselves fairly treated.<space extent="1" unit="chars"/>There is a coming together of families and com- 
 munities and the re-establishment of villages; but oh! in what sadly diminished numbers, and 
-with what terrible gaps in the families..... Near a large State post we saw the only large 
-and apparently normal village we came across in all the three weeks we spent in the district. 
+with what terrible gaps in the families<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>Near a large State post we saw the only large 
+and apparently normal village we came across in all the three weeks we spent in the district.<space extent="1" unit="chars"/>
 One was able to form here some estimate of what the population was before the advent of the 
-white man and the search for rubber....”</p>
+white man and the search for rubber<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.”</p>
+
+<lb/>
 
 <p>It will be observed that the devastated region whence had come the refugees I saw at N*, 
 comprises a part of the “Domaine de la Couronne.”</p>
@@ -536,7 +540,7 @@ comprises a part of the “Domaine de la Couronne.”</p>
 	</div>
 	<div rend="center">
 <milestone unit="section" rend="half-line"/>
-<gap extent="35" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here. AW -->
+<gap extent="21" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here.<space extent="1" unit="chars"/>AW -->
 	</div>
 
 <!-- Statements by an unnamed series of individual from the Congo Free State, as conveyed by one or more translators from the Congo Free State to a British government officer and as edited for and published among official British government documents -->

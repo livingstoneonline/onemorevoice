@@ -3,22 +3,30 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020057"><!-- Insert LEAP ID, e.g.<space extent="1" unit="chars"/>"liv_020010 -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020057"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>“Notes on Refugee Tribes Encountered in July 1903”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name.<space extent="1" unit="chars"/>-->
+                <title>“Notes on Refugee Tribes Encountered in July 1903”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
 				<title type="normalized">‘Notes on Refugee Tribes Encountered in July 1903’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
                 <title type="alternative">“Notes on Refugee Tribes Encountered in July 1903,” 1904</title><!-- Title, date -->
                 <author>Casement, Roger, 1864-1916</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-                <author>Q Q</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-
+                <author>Unnamed L* Refugees</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>N N</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>O O</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>P P</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Unnamed Chief of the W**</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>K K</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first">Casement, Roger</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Roger Casement</author><!-- First author only: Forename Surname -->
-				<author role="normalized">Q Q</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
-
-                <principal>Heather F.<space extent="1" unit="chars"/>Ball</principal>
-                <principal>Adrian S.<space extent="1" unit="chars"/>Wisnicki</principal>
+				<author role="normalized">Unnamed L* Refugees</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">N N</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">O O</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">P P</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Unnamed Chief of the W**</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">K K</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="CM">
                     <name>Caitlin Matheis</name>
@@ -29,7 +37,7 @@
                     <resp>Coding Review</resp>
                 </respStmt>
                 <respStmt xml:id="AW">
-                    <name>Adrian S.<space extent="1" unit="chars"/>Wisnicki</name>
+                    <name>Adrian S. Wisnicki</name>
                     <resp>Transcription</resp>
                     <resp>TEI Encoding</resp>
                     <resp>Editorial Decisions</resp>
@@ -42,7 +50,7 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date>
-                <idno type="LEAP-ID">liv_020057</idno><!-- Insert LEAP ID, e.g.<space extent="1" unit="chars"/>"liv_020010 -->
+                <idno type="LEAP-ID">liv_020057</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
 				<ref target="https://archive.org/details/CasementReport/page/n1/mode/2up">Internet Archive</ref>
@@ -65,7 +73,7 @@
 						<imprint>
 							<biblScope unit="section">Report on Visit to Interior of Congo State and on Condition of the Natives</biblScope><!-- Section title (if known; otherwise leave blank) -->
 							<biblScope unit="pages">Africa, 1:60-64</biblScope><!-- Pages (if known; otherwise leave blank) -->
-							<pubPlace>House of Commons.<space extent="1" unit="chars"/>Accounts and Papers.<space extent="1" unit="chars"/>London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<pubPlace>House of Commons. Accounts and Papers. London</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
 							<publisher>Harrison and Sons for His Majesty’s Stationary Office</publisher><!-- Publisher (if known; otherwise leave blank) -->
 							<date>1904</date><!-- Item date; same as date in <title type="alternative"> above -->
 						</imprint>
@@ -79,8 +87,12 @@
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
                     <author xml:id="RC">Casement, Roger, 1864-1916</author>
-                    <author xml:id="QQ">Q Q</author>
-
+                    <author xml:id="ULR">Unnamed L* Refugees</author>
+                    <author xml:id="NN">N N</author>
+                    <author xml:id="OO">O O</author>
+                    <author xml:id="PP">P P</author>
+                    <author xml:id="UCW">Unnamed Chief of the W**</author>
+                    <author xml:id="KK">K K</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -94,7 +106,7 @@
         <profileDesc>
             <langUsage>
                 <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
-                <!-- English should be first, then add all other languages in alphabetical order.<space extent="1" unit="chars"/>-->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
                 <language ident="en">English</language>
             </langUsage>
         </profileDesc>
@@ -102,7 +114,7 @@
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
 			<!-- Describe using one of the phrases associated with your name above -->
-			<!-- E.g., Transcription or TEI Encoding or Proofing, etc.<space extent="1" unit="chars"/>-->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
 			<change when="2020-11-02" who="#AW">Text encoding</change>
@@ -124,7 +136,7 @@
 <fw><seg rend="center">60</seg></fw>
 
 	<div rend="center">
-<gap extent="19" unit="lines" agent="omitted-text"/><!-- Text from previous inclosure omitted here.<space extent="1" unit="chars"/>AW -->
+<gap extent="19" unit="lines" agent="omitted-text"/><!-- Text from previous inclosure omitted here. AW -->
 	</div>
 	<div>
 <milestone unit="section" rend="half-line"/>
@@ -132,18 +144,18 @@
 
 <lb/><p rend="center">(See p.<space extent="1" unit="chars"/>29.)</p>
 
-<lb/><p rend="center italic">Notes on Refugee Tribes encountered in July 1903.</p>
+<lb/><p rend="center"><seg rend="italic">Notes on Refugee Tribes encountered in July</seg> 1903.</p>
 
-<lb/><p>Hearing of the L* refugees from I*, I decided to visit the nearest Settlement of these 
+<lb/><p><seg rend="caps">Hearing</seg> of the <term type="collective">L* refugees</term> from <settlement>I*</settlement>, I decided to visit the nearest Settlement of these 
 fugitives, some 20 miles away, to see them for myself.</p>
 
-<p>At N* found large town of K*, and scattered through it many small settlements of L* 
-refugees.<space extent="1" unit="chars"/>The town of N* consists approximately of seventy-one K* houses, and seventy-three 
-occupied by L*.<space extent="1" unit="chars"/>These latter seemed industrious, simple folk, many weaving palm fibre into 
+<p>At <settlement>N*</settlement> found large town of <term type="collective">K*</term>, and scattered through it many small settlements of <term type="collective">L* 
+refugees</term>.<space extent="1" unit="chars"/>The town of <settlement>N*</settlement> consists approximately of seventy-one <term type="collective">K*</term> houses, and seventy-three 
+occupied by <term type="collective">L*</term>.<space extent="1" unit="chars"/>These latter seemed industrious, simple folk, many weaving <term type="plant">palm</term> fibre into 
 mats or native cloth; others had smithies, working brass wire into bracelets, chains, and anklets; 
 some iron-workers making knives.<space extent="1" unit="chars"/>Sitting down in one of these blacksmith’s sheds, the five men 
 at work ceased and came over to talk to us.<space extent="1" unit="chars"/>I counted ten women, six grown-up men, and eight 
-lads and women in this one shed of L*.<space extent="1" unit="chars"/>I then asked them to tell me why they had left their 
+lads and women in this one shed of <term type="collective">L*</term>.<space extent="1" unit="chars"/>I then asked them to tell me why they had left their 
 homes.<space extent="1" unit="chars"/>Three of the men sat down in front of me, and told a tale which I cannot think can be true, 
 but it seemed to come straight from their hearts.<space extent="1" unit="chars"/>I repeatedly asked certain parts to be 
 gone over again while I wrote in my note-book.<space extent="1" unit="chars"/>The fact of my writing down and asking for 
@@ -151,60 +163,60 @@ names, &amp;c., seemed to impress them, and they spoke with what certainly impre
 great sincerity.</p>
 
 <p>I asked, first, why they had left their homes, and had come to live in a strange far-off country 
-among the K*, where they owned nothing, and were little better than servitors.<space extent="1" unit="chars"/>All, when this 
+among the <term type="collective">K*</term>, where they owned nothing, and were little better than servitors.<space extent="1" unit="chars"/>All, when this 
 question was put, women as well, shouted out, “On account of the rubber tax levied by the 
-Government posts.”</p>
+<orgName>Government</orgName> posts.”</p>
 
 <p>I asked particularly the names of the places whence they had come.<space extent="1" unit="chars"/>They answered they 
-were from V**.<space extent="1" unit="chars"/>Other L* refugees here at N* were W**, others again were X**, but all 
+were from <settlement>V**</settlement>.<space extent="1" unit="chars"/>Other <term type="collective">L* refugees</term> here at <settlement>N*</settlement> were <term type="collective">W**</term>, others again were <term type="collective">X**</term>, but all 
 had fled from their homes for the same reason&#8212;it was the “rubber tax.”</p>
 
 <p>I asked then how this tax was imposed.<space extent="1" unit="chars"/>One of them, who had been hammering out an iron 
 neck collar on my arrival, spoke first.<space extent="1" unit="chars"/>He said :&#8212;</p>
 
-<p>“I am N N.<space extent="1" unit="chars"/>These other two beside me are O O and P P, all of us Y**.<space extent="1" unit="chars"/>From 
+<p>“I am <persName>N N</persName>.<space extent="1" unit="chars"/>These other two beside me are <persName>O O</persName> and <persName>P P</persName>, all of us <term type="collective">Y**</term>.<space extent="1" unit="chars"/>From 
 our country each village had to take twenty loads of rubber.<space extent="1" unit="chars"/>These loads were big : they 
 were as big as this<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.”<space extent="1" unit="chars"/>(Producing an empty basket which came nearly up to the handle of my 
-walking-stick.) “That was the first size.<space extent="1" unit="chars"/>We had to fill that up, but as rubber got scarcer the 
-white man reduced the amount.<space extent="1" unit="chars"/>We had to take these loads in four times a-month.”</p>
+walking-stick.)<space extent="1" unit="chars"/>“That was the first size.<space extent="1" unit="chars"/>We had to fill that up, but as rubber got scarcer the 
+<term type="collective">white man</term> reduced the amount.<space extent="1" unit="chars"/>We had to take these loads in four times a-month.”</p>
 
 <p>Q.<space extent="1" unit="chars"/>“How much pay did you get for this?”</p>
 
-<p>A.<space extent="1" unit="chars"/>(Entire audience.) “We got no pay!<space extent="1" unit="chars"/>We got nothing!”</p>
+<p>A.<space extent="1" unit="chars"/>(Entire audience.)<space extent="1" unit="chars"/>“We got no pay!<space extent="1" unit="chars"/>We got nothing!”</p>
 
 <p>And then N N, whom I asked, again said :&#8212;</p>
 
-<p>“Our village got cloth and a little salt, but not the people who did the work.<space extent="1" unit="chars"/>Our Chiefs 
-eat up the cloth; the workers got nothing.<space extent="1" unit="chars"/>The pay was a fathom of cloth and a little salt 
+<p>“Our village got cloth and a little <term type="foodstuff">salt</term>, but not the people who did the work.<space extent="1" unit="chars"/>Our Chiefs 
+eat up the cloth; the workers got nothing.<space extent="1" unit="chars"/>The pay was a fathom of cloth and a little <term type="foodstuff">salt</term> 
 for every big basket full, but it was given to the Chief, never to the men.<space extent="1" unit="chars"/>It used to take ten 
 days to get the twenty baskets of rubber&#8212;we were always in the forest and then when we were 
-late we were killed.<space extent="1" unit="chars"/>We had to go further and further into the forest to find the rubber 
-vines, to go without food, and our women had to give up cultivating the fields and gardens.<space extent="1" unit="chars"/>
-Then we starved.<space extent="1" unit="chars"/>Wild beasts&#8212;the leopards&#8212;killed some of us when we were working away in 
-the forest, and others got lost or died from exposure and starvation, and we begged the white 
-man to leave us alone, saying we could get no more rubber, but the white men and their soldiers 
-said : ‘Go!<space extent="1" unit="chars"/>You are only beasts yourselves, you are nyama (meat).’ We tried, always going 
+late we were killed.<space extent="1" unit="chars"/>We had to go further and further into the forest to find the <term type="plant">rubber 
+vines</term>, to go without food, and our women had to give up cultivating the fields and gardens.<space extent="1" unit="chars"/>
+Then we starved.<space extent="1" unit="chars"/>Wild beasts&#8212;the <term type="animal">leopards</term>&#8212;killed some of us when we were working away in 
+the forest, and others got lost or died from exposure and starvation, and we begged the <term type="collective">white 
+man</term> to leave us alone, saying we could get no more rubber, but the <term type="collective">white men and their soldiers</term> 
+said : ‘Go!<space extent="1" unit="chars"/>You are only beasts yourselves, you are <term type="foodstuff"><foreign>nyama</foreign> (meat)</term>.’<space extent="1" unit="chars"/>We tried, always going 
 further into the forest, and when we failed and our rubber was short, the soldiers came to our 
 towns and killed us.<space extent="1" unit="chars"/>Many were shot, some had their ears cut off; others were tied up with 
-ropes around their necks and bodies and taken away.<space extent="1" unit="chars"/>The white men sometimes at the posts <lb/>
+ropes around their necks and bodies and taken away.<space extent="1" unit="chars"/>The <term type="collective">white men</term> sometimes at the posts <lb/>
 
 
     <pb facs="liv_020058_0061" n="0061"/>
 <fw><seg rend="center">61</seg></fw>
-did not know of the bad things the soldiers did to us, but it was the white men who sent the 
+did not know of the bad things the soldiers did to us, but it was the <term type="collective">white men</term> who sent the 
 soldiers to punish us for not bringing in enough rubber.”</p>
 
-<p>Here P P took up the tale from N N :&#8212;</p>
+<p>Here <persName>P P</persName> took up the tale from <persName>N N</persName> :&#8212;</p>
 
-<p>“We said to the white men, ‘We are not enough people now to do what you want us.<space extent="1" unit="chars"/>Our 
+<p>“We said to the <term type="collective">white men</term>, ‘We are not enough people now to do what you want us.<space extent="1" unit="chars"/>Our 
 country has not many people in it and we are dying fast.<space extent="1" unit="chars"/>We are killed by the work you make 
-us do, by the stoppage of our plantations, and the breaking up of our homes.’ The white man 
-looked at us and said : ‘There are lots of people in Mputu’”<space extent="1" unit="chars"/>(Europe, the white man’s country).<space extent="1" unit="chars"/>
-“‘If there are lots of people in the white man’s country there must be many people in the black 
-man’s country.’ The white man who said this was the chief white man at F F*, his name was 
-A B, he was a very bad man.<space extent="1" unit="chars"/>Other white men of Bula Matadi who had been bad and wicked 
-were B C, C D, and D E.”<space extent="1" unit="chars"/>“These had killed us often, and killed us by their own hands as well 
-as by their soldiers.<space extent="1" unit="chars"/>Some white men were good.<space extent="1" unit="chars"/>These were E F, F G, G H, H I, I K, K L.”</p>
+us do, by the stoppage of our plantations, and the breaking up of our homes.’<space extent="1" unit="chars"/>The <term type="collective">white man</term> 
+looked at us and said : ‘There are lots of people in <bloc>Mputu</bloc>’”<space extent="1" unit="chars"/>(<bloc>Europe</bloc>, the <term type="collective">white man</term>’s country).<space extent="1" unit="chars"/>
+“‘If there are lots of people in the <term type="collective">white man</term>’s country there must be many people in the <term type="collective">black 
+man</term>’s country.’<space extent="1" unit="chars"/>The <term type="collective">white man</term> who said this was the chief <term type="collective">white man</term> at <settlement>F F*</settlement>, his name was 
+<persName>A B</persName>, he was a very bad man.<space extent="1" unit="chars"/>Other <orgName><term type="collective">white men</term> of <foreign>Bula Matadi</foreign></orgName> who had been bad and wicked 
+were <persName>B C</persName>, <persName>C D</persName>, and <persName>D E</persName>.”<space extent="1" unit="chars"/>“These had killed us often, and killed us by their own hands as well 
+as by their soldiers.<space extent="1" unit="chars"/>Some <term type="collective">white men</term> were good.<space extent="1" unit="chars"/>These were <persName>E F</persName>, <persName>F G</persName>, <persName>G H</persName>, <persName>H I</persName>, <persName>I K</persName>, <persName>K L</persName>.”</p>
 
 <p>These ones told them to stay in their homes and did not hunt and chase them as the others 
 had done, but after what they had suffered they did not trust more any one’s word, and they had 
@@ -214,28 +226,28 @@ where there was no rubber.</p>
 <p>Q.<space extent="1" unit="chars"/>“How long is it since you left your homes, since the big trouble you speak of?”</p>
 
 <p>A.<space extent="1" unit="chars"/>“It lasted for three full seasons, and it is now four seasons since we fled and came into 
-the K* country.”</p>
+the <region><term type="collective">K*</term> country</region>.”</p>
 
-<p>Q.<space extent="1" unit="chars"/>“How many days is it from N* to your own country?”</p>
+<p>Q.<space extent="1" unit="chars"/>“How many days is it from <settlement>N*</settlement> to your own country?”</p>
 
 <p>A.<space extent="1" unit="chars"/>“Six days of quick marching.<space extent="1" unit="chars"/>We fled because we could not endure the things done to 
 us.<space extent="1" unit="chars"/>Our Chiefs were hanged, and we were killed and starved and worked beyond endurance to 
 get rubber.”</p>
 
-<p>Q.<space extent="1" unit="chars"/>“How do you know it was the white men themselves who ordered these cruel things to 
-be done to you?<space extent="1" unit="chars"/>These things must have been done without the white man’s knowledge by 
-the black soldiers.”</p>
+<p>Q.<space extent="1" unit="chars"/>“How do you know it was the <term type="collective">white men</term> themselves who ordered these cruel things to 
+be done to you?<space extent="1" unit="chars"/>These things must have been done without the <term type="collective">white man</term>’s knowledge by 
+the <term type="collective">black soldiers</term>.”</p>
 
-<p>A.<space extent="1" unit="chars"/>(P P) : “The white men told their soldiers : ‘You kill only women; you cannot kill 
+<p>A.<space extent="1" unit="chars"/>(<persName>P P</persName>) : “The <term type="collective">white men</term> told their soldiers : ‘You kill only women; you cannot kill 
 men.<space extent="1" unit="chars"/>You must prove that you kill men.’ So then the soldiers when they killed us” (here he 
 stopped and hesitated, and then pointing to the private parts of my bulldog&#8212;it was lying asleep 
-at my feet), he said : “then they cut off those things and took them to the white men, who said : 
+at my feet), he said : “then they cut off those things and took them to the <term type="collective">white men</term>, who said : 
 ‘It is true, you have killed men.’”</p>
 
-<p>Q.<space extent="1" unit="chars"/>“You mean to tell me that any white man ordered your bodies to be mutilated like 
+<p>Q.<space extent="1" unit="chars"/>“You mean to tell me that any <term type="collective">white man</term> ordered your bodies to be mutilated like 
 that, and those parts of you carried to him?”</p>
 
-<p>P P, O O, and all (shouting) : “Yes!<space extent="1" unit="chars"/>many white men.<space extent="1" unit="chars"/>D E did it.”</p>
+<p><persName>P P</persName>, <persName>O O</persName>, and all (shouting) : “Yes!<space extent="1" unit="chars"/>many <term type="collective">white men</term>.<space extent="1" unit="chars"/>D E did it.”</p>
 
 <p>Q.<space extent="1" unit="chars"/>“You say this is true?<space extent="1" unit="chars"/>Were many of you so treated after being shot?”</p>
 
@@ -247,46 +259,46 @@ were clearly telling what they knew and loathed.<space extent="1" unit="chars"/>
 at the recollection of what had been done to them that they lost control over themselves.<space extent="1" unit="chars"/>
 One of the men before me was getting into this state now.</p>
 
-<p>I asked whether L* tribes were still running from their country, or whether they now 
+<p>I asked whether <term type="collective">L* tribes</term> were still running from their country, or whether they now 
 stayed at home and worked voluntarily.</p>
 
-<p>N N answered : “They cannot run away now&#8212;not easily; there are sentries in the country 
+<p><persName>N N</persName> answered : “They cannot run away now&#8212;not easily; there are sentries in the country 
 there between the Lake and this; besides, there are few people left.”</p>
 
-<p>P P said : “We heard that letters came to the white men to say that the people were 
-to be well treated.<space extent="1" unit="chars"/>We heard that these letters had been sent by the big white men in 
-‘Mputu’ (Europe); but our white men tore up these letters, laughing, saying : ‘We are the 
-“basango” and “banyanga” (fathers and mothers, i.e., elders).<space extent="1" unit="chars"/>Those who write to us are only 
-“bana” (children).’ Since we left our homes the white men have asked us to go home again.<space extent="1" unit="chars"/>
+<p><persName>P P</persName> said : “We heard that letters came to the <term type="collective">white men</term> to say that the people were 
+to be well treated.<space extent="1" unit="chars"/>We heard that these letters had been sent by the <term type="collective">big white men in 
+<bloc>‘<foreign>Mputu</foreign>’ (Europe)</bloc></term>; but our <term type="collective">white men</term> tore up these letters, laughing, saying : ‘We are the 
+“<foreign>basango</foreign>” and “<foreign>banyanga</foreign>” (fathers and mothers, i.e., elders).<space extent="1" unit="chars"/>Those who write to us are only 
+“<foreign>bana</foreign>” (children).’ Since we left our homes the <term type="collective">white men</term> have asked us to go home again.<space extent="1" unit="chars"/>
 We have heard that they want us to go back, but we will not go.<space extent="1" unit="chars"/>We are not warriors, and 
 do not want to fight.<space extent="1" unit="chars"/>We only want to live in peace with our wives and children, and so 
-we stay here among the K*, who are kind to us, and will not return to our homes.”</p>
+we stay here among the <term type="collective">K*</term>, who are kind to us, and will not return to our homes.”</p>
 
 <p>Q.<space extent="1" unit="chars"/>“Would you not like to go back to your homes?<space extent="1" unit="chars"/>Would you not, in your hearts, all wish 
 to return?”</p>
 
-<p>A.<space extent="1" unit="chars"/>(By many.) “We loved our country, but we will not trust ourselves to go back.”</p>
+<p>A.<space extent="1" unit="chars"/>(By many.)<space extent="1" unit="chars"/>“We loved our country, but we will not trust ourselves to go back.”</p>
 
-<p>P P : “Go, you white men, with the steamer to I*, and see what we have told you is true.<space extent="1" unit="chars"/>
-Perhaps if other white men, who do not hate us, go there, Bula Matadi may stop from hating 
+<p><persName>P P</persName> : “Go, you <term type="collective">white men</term>, with the steamer to <settlement>I*</settlement>, and see what we have told you is true.<space extent="1" unit="chars"/>Perhaps 
+if other <term type="collective">white men</term>, who do not hate us, go there, <orgName>Bula Matadi</orgName> may stop from hating 
 us, and we may be able to go home again.”</p>
 
 <p>I asked to be pointed out any refugees from other tribes, if there were such, and they 
-brought forward a lad who was a X**, and a man of the Z**.<space extent="1" unit="chars"/>These two, answering me, 
+brought forward a lad who was a <term type="collective">X**</term>, and a man of the <term type="collective">Z**</term>.<space extent="1" unit="chars"/>These two, answering me, 
 said there were many with them from their tribes who had fled from their country.</p>
 
 <lb/>
 
-<p>Went on about fifteen minutes to another L* group of houses in the midst of the 
-K* town.<space extent="1" unit="chars"/>Found here mostly W**, an old Chief sitting in the open village Council- 
-house with a Z** man and two lads.<space extent="1" unit="chars"/>An old woman soon came and joined, and another 
-man.<space extent="1" unit="chars"/>The woman began talking with much earnestness.<space extent="1" unit="chars"/>She said the Government had 
+<p>Went on about fifteen minutes to another <term type="collective">L*</term> group of houses in the midst of the 
+<settlement><term type="collective">K*</term> town</settlement>.<space extent="1" unit="chars"/>Found here mostly <term type="collective">W**</term>, an old Chief sitting in the open village Council-house 
+with a <term  type="collective">Z** man</term> and two lads.<space extent="1" unit="chars"/>An old woman soon came and joined, and another 
+man.<space extent="1" unit="chars"/>The woman began talking with much earnestness.<space extent="1" unit="chars"/>She said the <orgName>Government</orgName> had 
 worked them so hard they had had no time to tend their fields and gardens, and they had 
 starved to death.<space extent="1" unit="chars"/>Her children had died; her sons had been killed.<space extent="1" unit="chars"/>The two men, as she spoke, 
 muttered murmurs of assent.</p>
 
-<p>The old Chief said : “We used to hunt elephants long ago, there were plenty in our forests, 
-and we got much meat; but Bula Matadi killed the elephant hunters because they could not get 
+<p>The old Chief said : “We used to hunt <term type="animal">elephants</term> long ago, there were plenty in our forests, 
+and we got much <term type="foodstuff">meat</term>; but <orgName>Bula Matadi</orgName> killed the <term type="animal">elephant</term> hunters because they could not get 
 rubber, and so we starved.<space extent="1" unit="chars"/>We were sent out to get rubber, and when we came back with little 
 rubber we were shot.”</p>
 
@@ -295,93 +307,93 @@ rubber we were shot.”</p>
 <fw><seg rend="center">62</seg></fw>
 <p>Q.<space extent="1" unit="chars"/>“Who shot you?”</p>
 
-<p>A.<space extent="1" unit="chars"/>“The white men<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>sent their soldiers out to kill us.”</p>
+<p>A.<space extent="1" unit="chars"/>“The <term type="collective">white men</term><space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>sent their soldiers out to kill us.”</p>
 
-<p>Q.<space extent="1" unit="chars"/>“How do you know it was the white man who sent the soldiers?<space extent="1" unit="chars"/>It might be only these 
+<p>Q.<space extent="1" unit="chars"/>“How do you know it was the <term type="collective">white man</term> who sent the soldiers?<space extent="1" unit="chars"/>It might be only these 
 savage soldiers themselves.”</p>
 
-<p>A.<space extent="1" unit="chars"/>“No, no.<space extent="1" unit="chars"/>Sometimes we brought rubber into the white man’s stations.<space extent="1" unit="chars"/>We took rubber to 
-D E’s station, E E*, and to F F* and to ....’s station.<space extent="1" unit="chars"/>When it was not enough rubber 
-the white man would put some of us in lines, one behind the other, and would shoot through all 
+<p>A.<space extent="1" unit="chars"/>“No, no.<space extent="1" unit="chars"/>Sometimes we brought rubber into the <term type="collective">white man</term>’s stations.<space extent="1" unit="chars"/>We took rubber to 
+<placeName><persName>D E</persName>’s station</placeName>, <persName>E E*</persName>, and to <persName>F F*</persName> and to <placeName><space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.’s station</placeName>.<space extent="1" unit="chars"/>When it was not enough rubber 
+the <term type="collective">white man</term> would put some of us in lines, one behind the other, and would shoot through all 
 our bodies.<space extent="1" unit="chars"/>Sometimes he would shoot us like that with his own hand; sometimes his soldiers 
 would do it.”</p>
 
-<p>Q.<space extent="1" unit="chars"/>“You mean to say you were killed in the Government posts themselves by the Government 
-white men themselves, or under their eyes?”</p>
+<p>Q.<space extent="1" unit="chars"/>“You mean to say you were killed in the <orgName>Government</orgName> posts themselves by the <orgName>Government 
+<term type="collective">white men</term></orgName> themselves, or under their eyes?”</p>
 
-<p>A.<space extent="1" unit="chars"/>(Emphatically.)<space extent="1" unit="chars"/>“We were killed in the stations of the white men themselves.<space extent="1" unit="chars"/>We were 
-killed by the white man himself.<space extent="1" unit="chars"/>We were shot before his eyes.”</p>
+<p>A.<space extent="1" unit="chars"/>(Emphatically.)<space extent="1" unit="chars"/>“We were killed in the stations of the <term type="collective">white men</term> themselves.<space extent="1" unit="chars"/>We were 
+killed by the <term type="collective">white man</term> himself.<space extent="1" unit="chars"/>We were shot before his eyes.”</p>
 
-<p>The names D E, B C, and L M, were names I heard repeatedly uttered.</p>
+<p>The names <persName>D E</persName>, <persName>B C</persName>, and <persName>L M</persName>, were names I heard repeatedly uttered.</p>
 
-<p>The Z** man said he, too, had fled; now he lived at peace with the K*.</p>
+<p>The <term type="collective">Z** man</term> said he, too, had fled; now he lived at peace with the <term type="collective">K*</term>.</p>
 
-<p>The abnormal refugee population in this one K* town must equal the actual K* population 
+<p>The abnormal refugee population in this one <term type="collective">K*</term> town must equal the actual <term type="collective">K*</term> population 
 itself.<space extent="1" unit="chars"/>On every hand one finds these refugees.<space extent="1" unit="chars"/>They seem, too, to pass busier lives than their 
-K* hosts, for during all the hot hours of the afternoon, wherever I walked through the town&#8212; 
-and I went all through N* until the sun set&#8212;I found L* weavers, or iron and brass workers, at 
+<term type="collective">K*</term> hosts, for during all the hot hours of the afternoon, wherever I walked through the town&#8212; 
+and I went all through <settlement>N*</settlement> until the sun set&#8212;I found <term type="collective"><term type="collective">L*</term> weavers, or iron and brass workers</term>, at 
 work.</p>
 
-<p>Slept at M M’s house.<space extent="1" unit="chars"/>Many people coming to talk to us after dark.</p>
+<p>Slept at <persName>M M</persName>’s house.<space extent="1" unit="chars"/>Many people coming to talk to us after dark.</p>
 
-<p>Left N* about 8 to return to the Congo bank.<space extent="1" unit="chars"/>On the way back left the main path and 
-struck into one of the side towns, a village called A A*.<space extent="1" unit="chars"/>This lies only some 4 or 5 miles 
-from the river.<space extent="1" unit="chars"/>Found here thirty-two L* houses with forty-three K*, so that the influx of 
-fugitives here is almost equal to the original population.<space extent="1" unit="chars"/>Saw many L*.<space extent="1" unit="chars"/>All were frightened, 
-and they and the K* were evidently so ill at ease that I did not care to pause.<space extent="1" unit="chars"/>Spoke to one or 
-two men only as we walked through the town.<space extent="1" unit="chars"/>The L* drew away from us, but on looking 
+<p>Left <settlement>N*</settlement> about 8 to return to the <geogName>Congo</geogName> bank.<space extent="1" unit="chars"/>On the way back left the main path and 
+struck into one of the side towns, a village called <settlement>A A*</settlement>.<space extent="1" unit="chars"/>This lies only some 4 or 5 miles 
+from the river.<space extent="1" unit="chars"/>Found here thirty-two <term type="collective">L*</term> houses with forty-three <term type="collective">K*</term>, so that the influx of 
+fugitives here is almost equal to the original population.<space extent="1" unit="chars"/>Saw many <term type="collective">L*</term>.<space extent="1" unit="chars"/>All were frightened, 
+and they and the <term type="collective">K*</term> were evidently so ill at ease that I did not care to pause.<space extent="1" unit="chars"/>Spoke to one or 
+two men only as we walked through the town.<space extent="1" unit="chars"/>The <term type="collective">L*</term> drew away from us, but on looking 
 back saw many heads popped out of doors of the houses we had passed.</p>
 
 <p>Got back to steamer about noon.</p>
 
 <lb/>
 
-<p>Heard that L* came sometimes to M* from I*.<space extent="1" unit="chars"/>I am now 100 miles (about) up-river from 
-N*.<space extent="1" unit="chars"/>Went into one of the M* country farm towns called B B*.<space extent="1" unit="chars"/>Found on entering plantation 
-two huts with five men and one woman, who I at once recognized by their head-dress as L*, 
-like those at N*.<space extent="1" unit="chars"/>The chief speaker, a young man named ......<space extent="1" unit="chars"/>who lives at B B*.<space extent="1" unit="chars"/>He 
-seems about 22 or 23, and speaks with an air of frankness.<space extent="1" unit="chars"/>He says : “The L* here and 
-others who come to M*, come from a place C C*.<space extent="1" unit="chars"/>It is connected with the lake by a stream.<space extent="1" unit="chars"/>His 
-own town in the district of C C* is D D*.<space extent="1" unit="chars"/>C C* is a big district and had many people.<space extent="1" unit="chars"/>They 
-now bring the Government india-rubber, kwanga, and fowls, and work on broad paths connecting 
+<p>Heard that <term type="collective">L*</term> came sometimes to <settlement>M*</settlement> from <settlement>I*</settlement>.<space extent="1" unit="chars"/>I am now 100 miles (about) up-river from 
+<settlement>N*</settlement>.<space extent="1" unit="chars"/>Went into one of the <term type="collective">M*</term> country farm towns called <settlement>B B*</settlement>.<space extent="1" unit="chars"/>Found on entering plantation 
+two huts with five men and one woman, who I at once recognized by their head-dress as <term type="collective">L*</term>, 
+like those at <settlement>N*</settlement>.<space extent="1" unit="chars"/>The chief speaker, a young man named .<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>who lives at <settlement>B B*</settlement>.<space extent="1" unit="chars"/>He 
+seems about 22 or 23, and speaks with an air of frankness.<space extent="1" unit="chars"/>He says : “The <term type="collective">L*</term> here and 
+others who come to <settlement>M*</settlement>, come from a place <settlement>C C*</settlement>.<space extent="1" unit="chars"/>It is connected with the lake by a stream.<space extent="1" unit="chars"/>His 
+own town in the district of <region>C C*</region> is <settlement>D D*</settlement>.<space extent="1" unit="chars"/><region>C C*</region> is a big district and had many people.<space extent="1" unit="chars"/>They 
+now bring the <orgName>Government</orgName> india-rubber, <foreign>kwanga</foreign>, and <term type="foodstuff">fowls</term>, and work on broad paths connecting 
 each village.<space extent="1" unit="chars"/>His own village has to take 300 baskets of india-rubber.<space extent="1" unit="chars"/>They get one piece of 
-cotton cloth, called locally sanza, and no more.”<space extent="1" unit="chars"/>(Note.&#8212;This cannot be true.<space extent="1" unit="chars"/>He is doubtless 
-exaggerating.) Four other men with him were wearing the rough palm-fibre cloth of the 
+cotton cloth, called locally <foreign>sanza</foreign>, and no more.”<space extent="1" unit="chars"/>(Note.&#8212;This cannot be true.<space extent="1" unit="chars"/>He is doubtless 
+exaggerating.)<space extent="1" unit="chars"/>Four other men with him were wearing the rough palm-fibre cloth of the 
 country looms, and they pointed to this as proof that they got no cloth for their labours.<space extent="1" unit="chars"/>
-K K continuing said : “We were then killed for not bringing in enough rubber.”</p>
+<persName>K K</persName> continuing said : “We were then killed for not bringing in enough rubber.”</p>
 
 <p>Q.<space extent="1" unit="chars"/>“You say you were killed for not bringing in rubber.<space extent="1" unit="chars"/>Were you ever mutilated as proof 
 that the soldiers had killed you?”</p>
 
-<p>A.<space extent="1" unit="chars"/>“When we were killed the white man was there himself.<space extent="1" unit="chars"/>No proof was needed.<space extent="1" unit="chars"/>Men 
-and women were put in a line with a palm tree and were shot.”</p>
+<p>A.<space extent="1" unit="chars"/>“When we were killed the <term type="collective">white man</term> was there himself.<space extent="1" unit="chars"/>No proof was needed.<space extent="1" unit="chars"/>Men 
+and women were put in a line with a <term type="plant">palm tree</term> and were shot.”</p>
 
 <p>Here he took three of the four men sitting down and put them one in line behind the other, 
-and said : “The white men used to put us like that and shoot all with one cartridge.<space extent="1" unit="chars"/>That was 
+and said : “The <term type="collective">white men</term> used to put us like that and shoot all with one cartridge.<space extent="1" unit="chars"/>That was 
 often done, and worse things.”</p>
 
 <p>Q.<space extent="1" unit="chars"/>“But how, if you now have to work so hard, are you yourselves able to come here to 
-M* to see your friends?”</p>
+<settlement>M*</settlement> to see your friends?”</p>
 
 <p>A.<space extent="1" unit="chars"/>“We came away without the sentries or soldiers knowing, but when we get home we 
 may have trouble.”</p>
 
-<p>Q.<space extent="1" unit="chars"/>“Do you know the L* who are now at N*?”<space extent="1" unit="chars"/>(Here I gave the names of N N, O O, and 
-P P.)</p>
+<p>Q.<space extent="1" unit="chars"/>“Do you know the <term type="collective">L*</term> who are now at <settlement>N*</settlement>?”<space extent="1" unit="chars"/>(Here I gave the names of <persName>N N</persName>, <persName>O O</persName>, and 
+<persName>P P</persName>.)</p>
 
-<p>A.<space extent="1" unit="chars"/>“Yes; many L* fled to that country.<space extent="1" unit="chars"/>N N we know ran away on account of the things 
-done to them by the Government white men.<space extent="1" unit="chars"/>The K* and L* have always been friends.<space extent="1" unit="chars"/>That 
-is why the L* fled to them for refuge.”</p>
+<p>A.<space extent="1" unit="chars"/>“Yes; many <term type="collective">L*</term> fled to that country.<space extent="1" unit="chars"/><persName>N N</persName> we know ran away on account of the things 
+done to them by the <orgName>Government <term type="collective">white men</term></orgName>.<space extent="1" unit="chars"/>The <term type="collective">K*</term> and <term type="collective">L*</term> have always been friends.<space extent="1" unit="chars"/>That 
+is why the <term type="collective">L*</term> fled to them for refuge.”</p>
 
 <p>Q.<space extent="1" unit="chars"/>“Are there sentries or soldiers in your villages now?”</p>
 
-<p>A.<space extent="1" unit="chars"/>“In the chief villages there are always four soldiers with rifles.<space extent="1" unit="chars"/>When natives go out 
+<p>A.<space extent="1" unit="chars"/>“In the chief villages there are always four soldiers with rifles.<space extent="1" unit="chars"/>When <term type="collective">natives</term> go out 
 into the forest to collect rubber they would leave one of their number behind to stay and protect 
 the women.<space extent="1" unit="chars"/>Sometimes the soldiers finding him thus refused to believe what he said, and killed 
 him for shirking his work.<space extent="1" unit="chars"/>This often happens.”</p>
 
-<p>Asked how far it was from M* to their country they say three days’ journey, and then 
-about two days more on to I* by water, or three if by land.<space extent="1" unit="chars"/>They begged us to go to their 
+<p>Asked how far it was from <settlement>M*</settlement> to their country they say three days’ journey, and then 
+about two days more on to <settlement>I*</settlement> by water, or three if by land.<space extent="1" unit="chars"/>They begged us to go to their 
 country, they said : “We will show you the road, we will take you there, and you will see how 
 things are, and that our country has been spoiled, and we are speaking the truth.”</p>
 
@@ -391,15 +403,17 @@ things are, and that our country has been spoiled, and we are speaking the truth
 
 <p>The foregoing entries made at the time in my note-book seemed to me, if not false, greatly 
 exaggerated, although the statements were made with every air of conviction and sincerity.<space extent="1" unit="chars"/>I 
-did not again meet with any more L* refugees, for on my return to G* I stayed only a few
+did not again meet with any more <term type="collective">L* refugees</term>, for on my return to <settlement>G*</settlement> I stayed only a few
 
 
     <pb facs="liv_020058_0063" n="0063"/>
 <fw><seg rend="center">63</seg></fw> 
-hours.<space extent="1" unit="chars"/>A few days afterwards, while I was at Stanley Pool, I received further evidence in a letter 
+hours.<space extent="1" unit="chars"/>A few days afterwards, while I was at <geogName>Stanley Pool</geogName>, I received further evidence in a letter 
 of which the following is an extract :&#8212;</p>
 
 <p rend="center">*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*</p>
+
+<!-- Coded to here -->
 
 <p>“I was sorry not to see you as you passed down, and so missed the opportunity of conveying 
 to you personally a lot of evidence as to the terrible maladministration practised in the past in 
@@ -540,7 +554,7 @@ comprises a part of the “Domaine de la Couronne.”</p>
 	</div>
 	<div rend="center">
 <milestone unit="section" rend="half-line"/>
-<gap extent="21" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here.<space extent="1" unit="chars"/>AW -->
+<gap extent="21" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here. AW -->
 	</div>
 
 <!-- Statements by an unnamed series of individual from the Congo Free State, as conveyed by one or more translators from the Congo Free State to a British government officer and as edited for and published among official British government documents -->

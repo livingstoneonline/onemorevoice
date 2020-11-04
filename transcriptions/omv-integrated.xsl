@@ -1261,7 +1261,14 @@
 
 	<xsl:template match="//encodingDesc/projectDesc//ref[@target]">
 		<xsl:variable name="link">
-			<xsl:value-of select="//encodingDesc/projectDesc//ref/@target"/>
+			<xsl:value-of select="@target"/>
+		</xsl:variable>
+		<a href="{$link}"><xsl:apply-templates/></a>
+	</xsl:template>
+
+	<xsl:template match="//fileDesc/publicationStmt/availability/p/ref[@target]">
+		<xsl:variable name="link">
+			<xsl:value-of select="@target"/>
 		</xsl:variable>
 		<a href="{$link}"><xsl:apply-templates/></a>
 	</xsl:template>

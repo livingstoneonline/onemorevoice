@@ -69,9 +69,18 @@ also see 2.9 for manuscript colors
 	background-color: white;
 }
 @media only screen and (min-width: 768px){
-	.journal.narrow{
+	.journal.narrow,
+	.journal .div.narrow{
 		width: 80%;
 		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 768px){
+	.div.narrow .pb-title,
+	.div.narrow .fw{
+		width: 120%;
+		margin-left: -10%;
+		margin-right: -10%;
 	}
 }
 .TEI{

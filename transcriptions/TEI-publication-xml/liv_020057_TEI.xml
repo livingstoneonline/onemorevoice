@@ -17,6 +17,8 @@
                 <author>P P</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
                 <author>Unnamed Chief of the W**</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
                 <author>K K</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Unnamed Colonial Official[?]</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Unnamed Informants from the Congo Free State</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first">Casement, Roger</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Roger Casement</author><!-- First author only: Forename Surname -->
 				<author role="normalized">Unnamed L* Refugees</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
@@ -25,6 +27,8 @@
 				<author role="normalized">P P</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<author role="normalized">Unnamed Chief of the W**</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<author role="normalized">K K</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Unnamed Colonial Official[?]</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Unnamed Informants from the Congo Free State</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -93,6 +97,8 @@
                     <author xml:id="PP">P P</author>
                     <author xml:id="UCW">Unnamed Chief of the W**</author>
                     <author xml:id="KK">K K</author>
+                    <author xml:id="UCO">Unnamed Colonial Official[?]</author>
+                    <author xml:id="UICFS">Unnamed Informants from the Congo Free State</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -152,7 +158,7 @@ fugitives, some 20 miles away, to see them for myself.</p>
 <p>At <settlement>N*</settlement> found large town of <term type="collective">K*</term>, and scattered through it many small settlements of <term type="collective">L* 
 refugees</term>.<space extent="1" unit="chars"/>The town of <settlement>N*</settlement> consists approximately of seventy-one <term type="collective">K*</term> houses, and seventy-three 
 occupied by <term type="collective">L*</term>.<space extent="1" unit="chars"/>These latter seemed industrious, simple folk, many weaving <term type="plant">palm</term> fibre into 
-mats or native cloth; others had smithies, working brass wire into bracelets, chains, and anklets; 
+mats or <term type="collective">native</term> cloth; others had smithies, working brass wire into bracelets, chains, and anklets; 
 some iron-workers making knives.<space extent="1" unit="chars"/>Sitting down in one of these blacksmith’s sheds, the five men 
 at work ceased and came over to talk to us.<space extent="1" unit="chars"/>I counted ten women, six grown-up men, and eight 
 lads and women in this one shed of <term type="collective">L*</term>.<space extent="1" unit="chars"/>I then asked them to tell me why they had left their 
@@ -413,51 +419,49 @@ of which the following is an extract :&#8212;</p>
 
 <p rend="center">*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*<space extent="1" unit="words"/><space extent="2" unit="chars"/>*</p>
 
-<!-- Coded to here -->
-
 <p>“I was sorry not to see you as you passed down, and so missed the opportunity of conveying 
 to you personally a lot of evidence as to the terrible maladministration practised in the past in 
-the district.<space extent="1" unit="chars"/>I saw the official at the post of E E*.<space extent="1" unit="chars"/>He is the successor of the infamous wretch 
-D E, of whom you heard so much yourself from the refugees at N*.<space extent="1" unit="chars"/>This D E was in this dis- 
-trict in<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>., .<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>., and .<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>., and he it was that depopulated the country.<space extent="1" unit="chars"/>His successor, M N, is 
+the district.<space extent="1" unit="chars"/>I saw the official at the post of <settlement>E E*</settlement>.<space extent="1" unit="chars"/>He is the successor of the infamous wretch 
+<persName>D E</persName>, of whom you heard so much yourself from the refugees at <settlement>N*</settlement>.<space extent="1" unit="chars"/>This <persName>D E</persName> was in this 
+dis<!-- - -->trict in <placeName>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.</placeName>, <placeName>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.</placeName>, and <placeName>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.</placeName>, and he it was that depopulated the country.<space extent="1" unit="chars"/>His successor, <persName>M N</persName>, is 
 very vehement in his denunciations of him, and declares that he will leave nothing undone that 
-he can do to bring him to justice.<space extent="1" unit="chars"/>He is now stationed at G G*, near our station at H H*.<space extent="1" unit="chars"/>
-Of M N I have nothing to say but praise.<space extent="1" unit="chars"/>In a very difficult position he has done wonderfully.<space extent="1" unit="chars"/>
+he can do to bring him to justice.<space extent="1" unit="chars"/>He is now stationed at <settlement>G G*</settlement>, near our station at <settlement>H H*</settlement>.<space extent="1" unit="chars"/>
+Of <persName>M N</persName> I have nothing to say but praise.<space extent="1" unit="chars"/>In a very difficult position he has done wonderfully.<space extent="1" unit="chars"/>
 The people are beginning to show themselves and gathering about the many posts under his 
-charge.<space extent="1" unit="chars"/>M N told me that when he took over the station at E E* from D E he visited the prison, 
+charge.<space extent="1" unit="chars"/><persName>M N</persName> told me that when he took over the station at <settlement>E E*</settlement> from <persName>D E</persName> he visited the prison, 
 and almost fainted, so horrible was the condition of the place and the poor wretches in it.<space extent="1" unit="chars"/>He 
-told me of many things he had heard of from the soldiers.<space extent="1" unit="chars"/>Of D E shooting with his own hand 
+told me of many things he had heard of from the soldiers.<space extent="1" unit="chars"/>Of <persName>D E</persName> shooting with his own hand 
 man after man who had come with an insufficient quantity of rubber.<space extent="1" unit="chars"/>Of his putting several one 
 behind the other and shooting them all with one cartridge.<space extent="1" unit="chars"/>Those who accompanied me, 
 also heard from the soldiers many frightful stories and abundant confirmation of what was told us 
-at N* about the taking to D E of the organs of the men slain by the sentries of the various posts.<space extent="1" unit="chars"/>
-I saw a letter from the present officer at F F* to M N, in which he upbraids him for not using 
+at <settlement>N*</settlement> about the taking to <persName>D E</persName> of the organs of the men slain by the sentries of the various posts.<space extent="1" unit="chars"/>I 
+saw a letter from the present officer at <settlement>F F*</settlement> to <persName>M N</persName>, in which he upbraids him for not using 
 more vigorous means, telling him to talk less and shoot more, and reprimanding him for not 
-killing more than one in a district under his care where there was a little trouble.<space extent="1" unit="chars"/>M N is due in 
-Belgium in about three months, and says he will land one day and begin denouncing his prede- 
+killing more than one in a district under his care where there was a little trouble.<space extent="1" unit="chars"/><persName>M N</persName> is due in 
+<country>Belgium</country> in about three months, and says he will land one day and begin denouncing his prede- 
 cessor the next.<space extent="1" unit="chars"/>I received many favours from him, and should be sorry to injure him in any 
 way<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>He has already accepted a position in one of the Companies, being unable to 
-continue longer in the service of the State.<space extent="1" unit="chars"/>I have never seen in all the different parts of the 
-State which I have visited a neater station, or a district more under control than that over 
-which this M N presides.<space extent="1" unit="chars"/>He is the M N the people of N* told us of, who they said was kind.</p>
+continue longer in the service of the <orgName>State</orgName>.<space extent="1" unit="chars"/>I have never seen in all the different parts of the 
+<orgName>State</orgName> which I have visited a neater station, or a district more under control than that over 
+which this <persName>M N</persName> presides.<space extent="1" unit="chars"/>He is the <persName>M N</persName> the <term type="collective">people of <settlement>N*</settlement></term> told us of, who they said was kind.</p>
 
 <p>“If I can give you any more information, or if there are any questions you would like to put 
 to me, I shall be glad to serve you, and through you these persecuted people.”</p>
 
 <p>From a separate communication, I extract the following paragraphs :&#8212;</p>
 
-<p>“.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>I heard of some half-dozen L* who were anxious to visit their old home, 
+<p>“.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>I heard of some half-dozen <term type="collective">L*</term> who were anxious to visit their old home, 
 and would be willing to go with me; so, after procuring some necessary articles in the 
-shape of provisions and barter, I started from our post at N*.<space extent="1" unit="chars"/>It was the end of the 
+shape of provisions and barter, I started from our post at <settlement>N*</settlement>.<space extent="1" unit="chars"/>It was the end of the 
 dry season, and many of the water-courses were quite dry, and during some days we 
 even found the lack of water somewhat trying.<space extent="1" unit="chars"/>The first two days’ travelling was 
 through alternating forest and grass plain, our guides, as far as possible, avoiding the 
 villages<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>Getting fresh guides from a little village, we got into a region almost 
-entirely forested, and later descended into a gloomy valley still dripping from the rain.<space extent="1" unit="chars"/>
-According to our guides we should soon be through this, but it was not until the afternoon of the 
+entirely forested, and later descended into a gloomy valley still dripping from the rain.<space extent="1" unit="chars"/>According 
+to our guides we should soon be through this, but it was not until the afternoon of the 
 second day after entering that we once more emerged from the gloom.<space extent="1" unit="chars"/>Several times we lost 
 the track, and I had little inclination to blame the guides, for several times the undergrowth and 
-a species of thorn palm were trodden down in all directions by the elephants.<space extent="1" unit="chars"/>It would seem to 
+a species of <term type="plant">thorn palm</term> were trodden down in all directions by the <term type="animal">elephants</term>.<space extent="1" unit="chars"/>It would seem to 
 be a favourite hunting ground of theirs, and once we got very close to a large herd who went off 
 at a furious pace, smashing down the small trees, trumpeting, and making altogether a most 
 terrifying noise.<space extent="1" unit="chars"/>The second night in this forest we came across, when looking for the track, a 
@@ -468,26 +472,26 @@ in which some of the boys were sleeping.<space extent="1" unit="chars"/>It was a
 
 <p>“Early the next day we were conducted by one of the men of this village to the right road, 
 and very soon found ourselves travelling along a track which had evidently been, at only a recent 
-date, opened up by a number of natives.<space extent="1" unit="chars"/>‘What was it?’ ‘Oh!<space extent="1" unit="chars"/>it is the road along which we 
+date, opened up by a number of <term type="collective">natives</term>.<space extent="1" unit="chars"/>‘What was it?’ ‘Oh!<space extent="1" unit="chars"/>it is the road along which we 
 used to carry rubber to the white men.’ ‘But why used to?’ ‘Oh, all the people have either 
 run away, or have been killed or died of starvation, and so there is no one to get rubber 
 any longer.’</p>
 
 <p>“That day we made a very long march, being nearly nine and a-half hours walking, and 
 passing through several other large depopulated districts.<space extent="1" unit="chars"/>On all sides were signs of a very recent 
-large population, but all was as quiet as death, and buffaloes roamed at will amongst the still growing 
-manioc and bananas.<space extent="1" unit="chars"/>It was a sad day, and when, as the sun was setting, we came upon a large 
-State post we were plunged into still greater grief.<space extent="1" unit="chars"/>True, there was a comfortable house at our 
+large population, but all was as quiet as death, and <term type="animal">buffaloes</term> roamed at will amongst the still growing 
+<term type="foodstuff">manioc</term> and <term type="foodstuff">bananas</term>.<space extent="1" unit="chars"/>It was a sad day, and when, as the sun was setting, we came upon a large 
+<orgName>State</orgName> post we were plunged into still greater grief.<space extent="1" unit="chars"/>True, there was a comfortable house at our 
 service, and houses for all the party; but we had not been long there before we found that we 
-had reached the centre of what was once a very thickly populated region, known as C C*, from 
-which many refugees in the neighbourhood of G* had come.<space extent="1" unit="chars"/>It was here a white man, 
-known by the name of D E, lived<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>He came to the district, and, after seven months 
+had reached the centre of what was once a very thickly populated region, known as <region>C C*</region>, from 
+which many refugees in the neighbourhood of <settlement>G*</settlement> had come.<space extent="1" unit="chars"/>It was here a <term type="collective">white man</term>, 
+known by the name of <persName>D E</persName>, lived<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>He came to the district, and, after seven months 
 of diabolical work, left it a waste.<space extent="1" unit="chars"/>Some of the stories current about him are not fit to record 
-here, but the native evidence is so consistent and so universal that it is difficult to disbelieve 
+here, but the <term type="collective">native</term> evidence is so consistent and so universal that it is difficult to disbelieve 
 that murder and rapine on a large scale were carried on here.<space extent="1" unit="chars"/>His successor, a man of a different 
 nature, and much liked by the people, after more than two and a-half years has succeeded in 
-winning back to the side of the State post a few natives, and there I saw them in their wretched 
-little huts, hardly able to call their lives their own in the presence of the new white man (myself), 
+winning back to the side of the <orgName>State</orgName> post a few <term type="collective">natives</term>, and there I saw them in their wretched 
+little huts, hardly able to call their lives their own in the presence of the new <term type="collective">white man</term> (myself), 
 whose coming among them had set them all a-wondering.<space extent="1" unit="chars"/>From this there was no 
 fear of losing the track.<space extent="1" unit="chars"/>For many miles it was a broad road, from 6 to 10 feet in width, 
 
@@ -502,13 +506,13 @@ great facility with which we could continue our journey, we could not help pictu
 cruel scenes which, in all probability, were a constant accompaniment to the laying of these huge 
 logs.<space extent="1" unit="chars"/>I wish to emphasize as much as possible the desolation and emptiness of the country we 
 passed through.<space extent="1" unit="chars"/>That it was only very recently a well-populated country, and, as things go out 
-here, rather more densely than usual, was very evident.<space extent="1" unit="chars"/>After a few hours we came to a State 
+here, rather more densely than usual, was very evident.<space extent="1" unit="chars"/>After a few hours we came to a <orgName>State</orgName> 
 rubber post.<space extent="1" unit="chars"/>In nearly every instance these posts are most imposing, some of them giving rise to 
-the supposition that several white men were residing in them.<space extent="1" unit="chars"/>But in only one did we find a 
-white man&#8212;the successor of D E.<space extent="1" unit="chars"/>At one place I saw lying about in the grass surrounding 
+the supposition that several <term type="collective">white men</term> were residing in them.<space extent="1" unit="chars"/>But in only one did we find a 
+<term type="collective">white man</term>&#8212;the successor of <persName>D E</persName>.<space extent="1" unit="chars"/>At one place I saw lying about in the grass surrounding 
 the post, which is built on the site of several very large towns, human bones, skulls, and, in 
 some places, complete skeletons.<space extent="1" unit="chars"/>On inquiring the reason for this unusual sight : ‘Oh!’ said 
-my informant, ‘When the bambote (soldiers) were sent to make us cut rubber there were so many 
+my informant, ‘When the <foreign>bambote</foreign> (soldiers) were sent to make us cut rubber there were so many 
 killed we got tired of burying, and sometimes when we wanted to bury we were not allowed to.’</p>
 
 <p>“‘But why did they kill you so?’</p>
@@ -518,37 +522,37 @@ eat while in the forest, and he would shoot two or three to hurry us along.<spac
 try and do a little work on our plantations, so that when the harvest time came we should have 
 something to eat, and the sentry would shoot some of us to teach us that our business was not to 
 plant but to get rubber.<space extent="1" unit="chars"/>Sometimes we were driven off to live for a fortnight in the forest 
-without any food and without anything to make a fire with, and many died of cold and hunger.<space extent="1" unit="chars"/>
-Sometimes the quantity brought was not sufficient, and then several would be killed to frighten 
+without any food and without anything to make a fire with, and many died of cold and hunger.<space extent="1" unit="chars"/>Sometimes 
+the quantity brought was not sufficient, and then several would be killed to frighten 
 us to bring more.<space extent="1" unit="chars"/>Some tried to run away, and died of hunger and privation in the forest in 
-trying to avoid the State posts.’</p>
+trying to avoid the <orgName>State</orgName> posts.’</p>
 
 <p>“‘But,’ said I, ‘if the sentries killed you like that, what was the use?<space extent="1" unit="chars"/>You could not bring 
 more rubber when there were fewer people.’</p>
 
 <p>“‘Oh!<space extent="1" unit="chars"/>as to that, we do not understand it.<space extent="1" unit="chars"/>These are the facts.’</p>
 
-<p>“And looking around on the scene of desolation, on the untended farms and neglected palms, 
-one could not but believe that in the main the story was true.<space extent="1" unit="chars"/>From State sentries came confirma- 
-tion and particulars even more horrifying, and the evidence of a white man as to the state of the 
-country&#8212;the unspeakable condition of the prisons at the State posts&#8212;all combined to convince 
-me over and over again that, during the last seven years, this ‘domaine privé’ of King Leopold 
+<p>“And looking around on the scene of desolation, on the untended farms and neglected <term type="plant">palms</term>, 
+one could not but believe that in the main the story was true.<space extent="1" unit="chars"/>From <term type="collective"><orgName>State</orgName> sentries</term> came 
+confirma<!-- - -->tion and particulars even more horrifying, and the evidence of a <term type="collective">white man</term> as to the state of the 
+country&#8212;the unspeakable condition of the prisons at the <orgName>State</orgName> posts&#8212;all combined to convince 
+me over and over again that, during the last seven years, this ‘domaine privé’ of <persName>King Leopold</persName> 
 has been a veritable ‘hell on earth.’</p>
 
 <p>“The present régime seems to be more tolerable.<space extent="1" unit="chars"/>A small payment is made for the rubber 
-now brought in.<space extent="1" unit="chars"/>A little salt—say a pennyworth—for 2 kilogrammes of rubber, worth in Europe 
+now brought in.<space extent="1" unit="chars"/>A little salt&#8212;say a pennyworth&#8212;for 2 kilogrammes of rubber, worth in <bloc>Europe</bloc> 
 from 6 to 8 fr.<space extent="1" unit="chars"/>The collection is still compulsory, but, compared with what has gone before, the 
-natives consider themselves fairly treated.<space extent="1" unit="chars"/>There is a coming together of families and com- 
-munities and the re-establishment of villages; but oh! in what sadly diminished numbers, and 
-with what terrible gaps in the families<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>Near a large State post we saw the only large 
+<term type="collective">natives</term> consider themselves fairly treated.<space extent="1" unit="chars"/>There is a coming together of families and 
+com<!-- - -->munities and the re-establishment of villages; but oh! in what sadly diminished numbers, and 
+with what terrible gaps in the families<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>Near a large <orgName>State</orgName> post we saw the only large 
 and apparently normal village we came across in all the three weeks we spent in the district.<space extent="1" unit="chars"/>
 One was able to form here some estimate of what the population was before the advent of the 
-white man and the search for rubber<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.”</p>
+<term type="collective">white man</term> and the search for rubber<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.<space extent="1" unit="chars"/>.”</p>
 
 <lb/>
 
-<p>It will be observed that the devastated region whence had come the refugees I saw at N*, 
-comprises a part of the “Domaine de la Couronne.”</p>
+<p>It will be observed that the devastated region whence had come the refugees I saw at <settlement>N*</settlement>, 
+comprises a part of the “<region><foreign>Domaine de la Couronne</foreign></region>.”</p>
 
 
 	</div>
@@ -557,7 +561,7 @@ comprises a part of the “Domaine de la Couronne.”</p>
 <gap extent="21" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here. AW -->
 	</div>
 
-<!-- Statements by an unnamed series of individual from the Congo Free State, as conveyed by one or more translators from the Congo Free State to a British government officer and as edited for and published among official British government documents -->
+<!-- Q&A's with and statements by a series of individuals and groups from the Congo Free State, as conveyed by one or more translators from the Congo Free State to a British government officer and as edited for and published among official British government documents -->
 
             </div>
         </body>   

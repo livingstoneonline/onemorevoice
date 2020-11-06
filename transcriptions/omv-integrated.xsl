@@ -1364,7 +1364,7 @@
 	</xsl:template>
 
 	<xsl:template match="w">
-		<xsl:apply-templates/>
+		<span class="word"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<!-- ******************* -->

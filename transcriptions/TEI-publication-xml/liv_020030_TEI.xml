@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?><!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020030"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
@@ -54,7 +54,7 @@
             <sourceDesc>
 				<biblStruct type="journal">
 					<monogr n="book-section"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
-					    <title>Selections From the Miscellaneous Posthumous Works of Philip Cohen Labatt In Prose and Verse (1855)</title><!-- Publication title: journal or book -->
+					    <title>Selections From the Miscellaneous Posthumous Works of Philip Cohen Labatt in Prose and Verse</title><!-- Publication title: journal or book -->
 						<!-- Author here used only for books -->
 						<!-- Forename Surname-->
 	                    <author>Philip Cohen Labatt</author>

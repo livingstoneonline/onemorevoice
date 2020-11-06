@@ -415,7 +415,7 @@
 				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><a href="{$license}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">
-				<xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>
+				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>
 			</xsl:when>
 			</xsl:choose>
 		</xsl:variable>

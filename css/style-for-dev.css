@@ -56,17 +56,19 @@ html{
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
-body{
-	margin: .5em auto;
-	padding: 0 1em;
-	top: 0px !important; /* Needed for Google Translate */
+body{ 
+    top: 0px !important; /* Needed for Google Translate */
+    padding-bottom: .5em;
 }
 @media only screen and (min-width: 768px){
 	body{
-		font-size: .95em;
+        font-size: .95em;
 	}
 }
 @media only screen and (min-width: 992px){
+    body{
+        padding-bottom: 0;
+    }
 	body.fixed-nav{
 		padding-top: 0 !important;
 	}
@@ -75,7 +77,8 @@ body.essay .main{
 	padding-bottom: 1em;
 }
 article{
-	margin: 0 auto;
+	margin: .5em auto;
+	padding: 0 1em;
 	max-width: 100%;
 }
 @media only screen and (min-width: 768px){

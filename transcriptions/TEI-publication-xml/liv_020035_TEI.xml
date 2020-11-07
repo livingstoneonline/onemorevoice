@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020035">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“Appeal on Behalf of the Hottentots”</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Appeal on Behalf of the Hottentots’</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“Appeal on Behalf of the Hottentots,” 1 January 1838</title>
+				<!-- Title, date -->
+				<author>Anonymous</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing) -->
+				<author>Monro, J.</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing) -->
+				<author>Philip, John, 1775-1851</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing) -->
+				<author>Read, James, Sr., 1777-1852</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing) -->
+				<author>Tzatzoe, Jan, 1792-1868</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing) -->
+				<author role="first">Anonymous</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author>
+				<!-- First author only: Forename Surname -->
+				<author role="normalized">J. Monro</author>
+				<!-- Second author, etc.: Forename Surname  -->
+				<author role="normalized">John Philip</author>
+				<!-- Second author, etc.: Forename Surname  -->
+				<author role="normalized">James Read, Sr.</author>
+				<!-- Second author, etc.: Forename Surname  -->
+				<author role="normalized">Jan Tzatzoe</author>
+				<!-- Second author, etc.: Forename Surname  -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<respStmt xml:id="MBT">
+					<name>Mary Borgo Ton</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2020</date>
+				<idno type="LEAP-ID">liv_020035</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref target="https://link.gale.com/apps/doc/CC1903124821/NCUK?u=linc74325&sid=NCUK&xid=ea96bf8c">Nineteenth Century UK Periodicals</ref>-->
+				<ref target="https://www.gale.com/c/nineteenth-century-uk-periodicals-part-ii">Nineteenth
+					Century UK Periodicals, Part II: Empire</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International </licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<title>Missionary Magazine and Chronicle; Relating Chiefly to the Missions of the London
+							Missionary Society</title>
+						<!-- Publication title -->
+						<imprint>
+							<biblScope unit="vol">2</biblScope>
+							<!-- Volume (if known; otherwise leave blank -->
+							<biblScope unit="issue">20</biblScope>
+							<biblScope unit="pages">55-57</biblScope>
+							<!-- Pages (if known; otherwise leave blank -->
+							<date>1 January 1838</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> <title>“Appeal on Behalf of the Hottentots”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> <author xml:id="An">Anonymous</author> <author
+					xml:id="JM">Monro, J.</author> <author xml:id="JP">Philip, John, 1775-1851</author> <author
+					xml:id="JR">Read, James, Sr., 1777-1852</author> <author xml:id="JT">Tzatzoe, Jan,
+					1792-1868</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> <date type="publication" when="1838-01-01">1 January 1838</date>
+					<!-- @when = YYYY-MM-DD --> <date type="publication" when="1837-07-24">July 1837</date>
+					<!-- @when = YYYY-MM-DD --> <date type="publication" when="1837-11-24">24 November 1837</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given --> <placeName type="compositionPlace"
+					>[Graham's Town, South Africa]</placeName> <placeName type="compositionPlace">The Down's, South
+					Africa</placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" --> </bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-11-06" who="#AW">Coding review</change>
+			<change when="2020-10-27" who="#MT">Inital transcription and encoding</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<!-- Actual color of the MS page; AW will insert appropriate color -->
+			<div>
+				<!-- Acutal color of the writing; AW will use auto-suggested values -->
+
+				<!-- ndash: &#8211; -->
+				<!-- mdash: &#8212; -->
+
+				<!-- Put a <pb> at the beginning of each page -->
+				<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+				<!-- @n = page number only, e.g., 0001 -->
+				<pb facs="liv_020035_0001" n="0001"/>
+				<fw><seg rend="left">6</seg> <seg rend="center caps">Missionary Magazine</seg></fw>
+
+				<div rend="center">
+					<lb/>
+					<gap extent="two-thirds" unit="pages" agent="omitted-text"/>
+					<!-- Text from previous article omitted here. MT -->
+					<lb/>
+					<lb/>
+					<milestone unit="section" rend="quarter-line"/>
+				</div>
+
+				<div>
+					<head rend="center large caps">Appeal on Behalf of the <term type="collective"
+						>Hottentots.</term></head>
+					<p rend="no-indent"><hi rend="small caps">Many</hi> circumstances combine at the present period
+						to encourage the cheering belief that He, whose ear never closes to the cry of human
+						suffering, is coming forth to manifest his effectual compassion on behalf of the long
+						oppressed <term type="collective">Hottentots</term>; the now almost portionless inhabitants of
+						a fertail country once their own.<space extent="1" unit="chars"/>Friends, both at home and
+						abroad, are actively espousing their cause, pointing to the manifold wrongs which they have
+						suffered, vindicating and recommending their equitable claims on the righteous and benevolent
+						feeling of the <country><term type="collective">British</term> nation</country>.<space
+						extent="1" unit="chars"/>Among the efforts now made to rescue this injured race of men from
+						their deplorable condition, those of the Lieut. Governor, on the <region>Eastern Frontier of
+						the Colony</region>, appear peculiarly prominent, and eminently tend to inspire encouragement
+						and hope.<space extent="1" unit="chars"/>The means whcih are requisite to promote this truly
+						valuable work, contemplating as it does the moral and religious advancement of the <term
+						type="collective">Hottentots</term>, as well as their social elecation, are specially marked
+						out in the two following communications; the first from <persName>Rev. J. Monro</persName>, of
+						<settlement>Graham's Town</settlement>, describing chiefly the auspicious opening for
+						Missionary exertion, which has been created by the liberal measures of the <persName>Liet.
+						Governor</persName>; the second, from the <persName>Rev. Dr. Philip</persName>, the
+						<persName>Rev. James Read</persName>, and the <persName>Chief Tzatzoe</persName>, unitedly
+						<lb/> <pb facs="liv_020035_0002" n="0002"/> <fw><seg rend="center caps">For January,
+						1838.</seg> <seg rend="right">7</seg></fw> transmitted from the schip in which they have
+						recently embarked, and, as it will be seen, more particularly referring to the immediate wants
+						of the several <term type="collective">Hottentot</term> families who have removed to their new
+						contonments on the <geogName>Gread Fish River</geogName> and appealing for aid to the generous
+						sympathies of all who may feel disposed to assist in a project so replete with interes and
+						importance as that to which attention is now invited.<space extent="1" unit="chars"/>In <date
+						when="1837-07">July last</date>, <persName>Mr. Monro</persName> thus writes to the Foreign
+						<seg type="word">Secretary:&#8212;</seg></p>
+
+					<div n="narrow">
+						<p>In order to give you as clear a statement as possible, respecting the <term
+							type="collective">Hottentot</term> settlement along the banks of the <geogName>Gread Fish
+							River</geogName>, I intimated my intention to his honour the Lieut. Governor of visiting them
+							in person; and having received his cordial approbation, I proceeded on the <date
+							when="1837-07-11">11th inst.</date> to <settlement><term type="collective">Caffre</term>
+							Drift</settlement>, and arrived there on the <date when="1837-07-13">13th.</date></p>
+						<div>
+							<head rend="center italic"><settlement><term type="collective">Caffre</term> Drift
+								Settlement</settlement>.</head>
+							<p>The party were delighted to see me, and were loud in their praises of the privliges which
+								they posessed in arable land, garden ground, &amp;c., &amp;c., The men here, as at all the
+								settlements, receive rations from <orgName>Government</orgName>, and the women and children
+								collect roots.<space extent="1" unit="chars"/>The men likewise go hunting, some of them to
+								the river in which there are numerous <term type="animal">hippopotami</term>, and some to
+								the bush, where the <term type="animal"><choice>
+								<orig>bufaloes</orig>
+								<reg>buffalo</reg>
+								</choice></term> graze in heards; but there is sufficient land for several hundred
+								families.<space extent="1" unit="chars"/>This is a good place for a Missionary station, and
+								from its proximity to the <term type="collective">Caffres</term>, a concregation might, in
+								time, be collected on the other side of the river; thus forming a field of Missionary
+								exertion of a very encouraging nature, and as far as we are able to judge, with every
+								prospect of usefulness and success.</p>
+							<p>From <settlement><term type="collective">Caffre</term> Drift</settlement> we advanced up
+								the river to <settlement>Trompettor's Drift</settlement>, and proceeded then to the</p>
+						</div>
+						<div>
+							<head rend="center italic"><settlement>Settlement under
+								<persName>Appel</persName></settlement>.</head>
+							<p>Here the whole party were busy erecting their habitations.<space extent="1" unit="chars"
+								/>This place far exceeds in natural beauty any spot that I have seen along the whole course
+								of the river, from the <settlement><term type="collective">Caffre</term> Drift</settlement>
+								up to the junction of the <geogName>Kat River</geogName> with the <geogName>Fish
+								River</geogName>; but it affords little opportunity to the settlers for the display of
+								industry in the cultivation of land. Between their dwellings and the river, 50 paces is the
+								extreme extent of what they call their garden ground, and there is no other spot, either
+								above or below the site of their village, which presents more encouraging appearance.<space
+								extent="1" unit="chars"/>Here there are 18 families, consisting of about 70 individuals, and
+								several families are on their way to join them.</p>
+						</div>
+						<div>
+							<head rend="center italic"><settlement>Settlement under
+								<persName>Lowe</persName></settlement>.</head>
+							<p><persName>Lowe</persName>'s party is located a few miles lower down the river, in a
+								similar situation.</p>
+						</div>
+						<div>
+							<head rend="center italic"><settlement>Settlement under <persName>Klaas</persName>, at the
+								confluence of the <geogName>Kat</geogName> and <geogName>Fish
+								Rivers</geogName></settlement>.</head>
+							<p>From <settlement>Trompettor's Drift</settlement> I continued my route up the river,
+								passing <settlement>Committy's Drift</settlement>, now occupied as the chief military fort
+								on the fronteir instead of <placeName>Fort Welshire</placeName> and <placeName>Double
+								Drift</placeName>.<space extent="1" unit="chars"/>Above the last mentioned, <term
+								type="collective"><persName>Klaas</persName>'s party</term> is located at the junction of
+								the <geogName>Kat River</geogName> and the <geogName>Fish River</geogName>.<space extent="1"
+								unit="chars"/>There are more than 50 families here.<space extent="1" unit="chars"/>Their
+								greates want, as they say themselves, is to have a Missionary who will teach their children,
+								as well as preach to them, and advise with them in their several plans and operations.</p>
+							<p>The site which they have chosen for a village is pleasantly situated.<space extent="1"
+								unit="chars"/>Fronting their houses there is an island of considerable extent, which they
+								intend to enclose immediately, subdiving the same into patches, varying in size, according
+								to the wants and means of the several familites.</p>
+							<p>This is certainly the most interesting settlement yet formed, and a Missionary<ref
+								target="#note_01">*</ref> would find sufficient work here, independent of the other
+								settlements lower down the river; but if schoolmasters are sent to this place and to
+								<settlement>Trompettor's</settlement> and <settlement><term type="collective">Caffre</term>
+								Drifts</settlement>, the Missionary may then itinerate among all of them, and a fine field
+								it certainly is.</p>
+							<p>During my journey I conducted Divine service twenty-three times in ten days, and all our
+								meetings were accompanied by prayer.<space extent="1" unit="chars"/>I enjoyed it very much,
+								and found that in watering others I was much refreshed myself.<space extent="1" unit="chars"
+								/>May the Lord bless the settlers, and send them a Missionary and teachers who will prove a
+								blessing to them! Much depends on an immediate supply being afforded, and I trust the
+								Directors will kindly, and without delay, consider their case and send them the bread of
+								life.</p>
+							<p><seg rend="right">I remain, Rev.<space extent="1" unit="chars"/>Sir, yours and the<space
+								extent="2" unit="chars"/></seg> <lb/><seg rend="right">Director's devoted servant,<space
+								extent="2" unit="chars"/></seg> <lb/><seg rend="right smallcaps"><persName>J.
+								Monro</persName>.<space extent="2" unit="chars"/></seg></p>
+						</div>
+					</div>
+					<div>
+						<p>The other letter referred to is as follows:&#8212;</p>
+					</div>
+					<div n="narrow">
+						<head rend="center small caps">To the Foreign Secretary.</head>
+						<p rend="italic"><seg rend="right"><placeName>The Downs</placeName>, <date when="1837-11-24"
+							>24th Nov. 1837.</date><space extent="2" unit="chars"/></seg></p>
+						<p><hi rend="smallcaps">Dear Sir,&#8212;</hi>It is known that the first idea of locating the
+							<term type="collective">Hottentots</term> on the <geogName>Kat River</geogName> originated
+							with the <persName>Lieut. Governor Stockenstrom</persName>, and what he is now doing for</p>
+						<lb/>
+					</div>
+					<div>
+						<fw rend="small"><note xml:id="note_01" rend="left">* The Directors have resolved on sending a
+							Missionary to the <settlement><geogName>Fish River</geogName> settlement</settlement> as soon
+							as practicable<choice>
+							<sic/>
+							<corr>.</corr>
+							</choice></note></fw>
+					</div>
+
+					<pb facs="liv_020035_0003" n="0003"/>
+					<fw><seg rend="left">8</seg> <seg rend="center caps">Missionary Magazine</seg></fw>
+
+					<div n="narrow">
+						<p rend="no-indent">the <term type="collective">Hottentots</term> of the <geogName>Great Fish
+							River</geogName> is the extension only of his original plan.<space extent="1" unit="chars"
+							/>He considers that the <term type="collective">Hottentots</term> deprived of their country
+							have strong claims on the <orgName>Government</orgName>, for any unoccupied lands it might
+							have to dispose of; and in giving them the lands that have been assigned them, he has (in <choice>
+							<orig>connexion</orig>
+							<reg>connection</reg>
+							</choice> with the good of the <term type="collective">Hottentots</term>,) consulted the
+							interests of the colony, the security of the fronteirs and the future well-being of the <term
+							type="collective">Caffres</term>.<space extent="1" unit="chars"/>The plan now pursued by the
+							Lieut. Governor was recommended by the Crown Commissioner of the Inquiry in the reports to
+							the <orgName>Home Government</orgName>, and perhaps it would have been well for
+							the <settlement>Colony</settlement> had it been carried into effect at that period.<space extent="1" unit="chars"/>The
+							<settlement><geogName>Kat River</geogName> settlement</settlement> and the protection of the
+							<term type="collective">Griquas</term> have rendered to the <settlement>Colony</settlement> and to the tribes beyond
+							them, show the great advantage to be derived from having tribes of civilised men of colour
+							between the white Colonists and the barbarous tribes beyond the <settlement>Colony</settlement>.<space extent="1"
+							unit="chars"/>The heart of the Lieut. Governor is now set upon the completion of this plan,
+							in which he will, we doubt not, be ably secconded by his Excellency, <persName>Major General
+							Napier</persName>; but he feels great difficulties in carrying it to the full extend he
+							contemplated, owing to the great poverty of the people.<space extent="1" unit="chars"/>The
+							<term type="collective">Hottentots</term> located on the <geogName>Kat River</geogName> had
+							no assistance from Government, nor from any other quarter; but the banks of the <geogName>Kat
+							River</geogName> were and are more favourable to the furtherance of such a scheme than the
+							banks of the <geogName>Dish River</geogName>.<space extent="1" unit="chars"/>Besides, a
+							number of the first settlers on the <geogName>Kat River</geogName> had something of their own
+							to begin with, and those who had any thing of their own assisted their poorer
+							neighbours.<space extent="1" unit="chars"/>On the contrary, those that are permitted to
+							locate themselves on the <geogName>Fish River</geogName> belong to that class of <term
+							type="collective">Hottentots</term> who have had the least protection, and who stand in need
+							of every thing.<space extent="1" unit="chars"/>They are without herds and flocks, without
+							clothing, or the commonest agricultural tools.</p>
+						<p>In a letter to a friend, the Lieut. Governor remarks:&#8212;"My plan cannot succeed without
+							Missionaries and schoolmasters, and means to put the people in possession of a few sheep and
+							goats, seed corn, and agricultural instruments," and for these he looks to the friends of
+							religion and humanity in <country>England</country>, and we hope he will not look in vain for
+							the assistance required.<space extent="1" unit="chars"/>This appeal to the sympathies of the
+							friends of the colonial races in <country>England</country>, will be the more readily
+							responded to, when it is known that the Lieut. Governor has generously advanced 3000 dollars
+							out of his own pocket, to purchase for the settlers a small quantity of stock; but, as the
+							people are flocking to the new locations, all that the most generous individual can furnish
+							out of his private means will go but a little way to supply their necessities.</p>
+						<p>We regret at this moment that we could not have remained a little time longer in
+							<country>England</country>, to have made our appeals in person on behalf of this people; but
+							we feel confident that the appeal we have left behind, as embraced in the preceeding
+							statements, will not be unheeded by the generous friends of <bloc>Africa</bloc> in
+							<settlement>London</settlement>, <settlement>Manchester</settlement>,
+							<settlement>Birmingham</settlement>, <settlement>Bristol</settlement>, and other parts of
+							<country>England</country>.<space extent="1" unit="chars"/>Clothing is an article the new
+							settlers stand much in need of; agricultural tools are particularly wanted, or money
+							wherewith to purchase them.<space extent="1" unit="chars"/><term type="animal">Sheep</term>, and <term type="animal">goats</term>, and the few
+							<term type="animal">cattle</term> which are needed, can be purchased in the colony.<space extent="1" unit="chars"
+							/>Regular accounts will be given of the application of all the money <choice>
+							<orig>intrusted</orig>
+							<reg>entrusted</reg>
+							</choice> to our care.<space extent="1" unit="chars"/>Leaving this appeal to the generous
+							consideration of the numerous friends of the <term type="collective">Hottentot</term> race in
+							the <country>United Kingdom</country>,</p>
+						<p><seg rend="right">We are, dear Sir, yours very truly,<space extent="2" unit="chars"/></seg>
+							<lb/><seg rend="right"><persName><hi rend="smallcaps">John Philip</hi></persName>,<space
+							extent="3" unit="chars"/></seg> <lb/><seg rend="right"><persName><hi rend="smallcaps">James
+							Read</hi></persName>,<space extent="3" unit="chars"/></seg> <lb/><seg rend="right"
+							><persName><hi rend="smallcaps">Jan Tzatzoe</hi></persName>.<space extent="3" unit="chars"
+							/></seg></p>
+						<p>P.S. As to the kind of agricultural implements that would be useful to the <term
+							type="collective">Hottentots</term> in the circumstances above referred to, although good
+							strong <term type="collective">English</term> ploughs would be exceedingly useful, yet, in
+							the first instance, the following are essentially necessary, viz.m spades, pickaxes, axes,
+							(felling and hewing,) hatchets; and then for building, such as saws, <unclear cert="low"
+							>pit</unclear>, cross-cut, and hand saws, gimlets, chisels, adzes, drawing knives, woodrasps,
+							hinges for doors, and window-shutters, nails (a great quantity) of different sorts and sizes,
+							hammers, hand and carpenters'.</p>
+						<p rend="right"><persName><hi rend="smallcaps">J. Read</hi></persName>.<space extent="2"
+							unit="chars"/></p>
+						<p>[Donations of the articles above specified or of money for the purchase of the same
+							forwarded to the Secretaries at the Mission House, will be gratefully received and
+							transmitted to <country>South Africa</country> by the earliest opportunity.</p>
+					</div>
+				</div>
+				<div rend="center">
+					<milestone unit="section" rend="half-line"/>
+					<gap extent="3" unit="lines" agent="omitted-text"/>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

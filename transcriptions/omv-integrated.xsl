@@ -493,13 +493,13 @@
 		</xsl:variable>
 		<xsl:variable name="editorial">
 			<xsl:if test="count(//teiHeader//respStmt) > 1">
-				<xsl:text>, eds., </xsl:text>
+				<xsl:text>, eds. </xsl:text>
 			</xsl:if>
 			<xsl:if test="count(//teiHeader//respStmt) = 1">
-				<xsl:text>, ed., </xsl:text>
+				<xsl:text>, ed. </xsl:text>
 			</xsl:if>
 			<xsl:if test="count(//teiHeader//respStmt) = 0">
-				<xsl:text>, </xsl:text>
+				<xsl:text>. </xsl:text>
 			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020045"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“The Cape of Good Hope”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">'The Cape of Good Hope'</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“The Cape of Good Hope,” 22 January 1856</title><!-- Title, date -->
+                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Boshoff, Jacobus Nicolaas, 1808-1881</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Moshoeshoe, c.1786-1870</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Nehemiah</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Arbousset, Thomas, 1810-1887</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+                <author>Grey, George, 1812-1898</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
+				<author role="normalized">Jacobus Nicolaas Boshoff</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Moshoeshoe</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Nehemiah</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">Thomas Arbousset</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author role="normalized">George Grey</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020045</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+            <sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="narrow"><!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>The Times</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author></author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="pages">5</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<date>22 January 1856</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“The Cape of Good Hope”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="An">Anonymous</author>
+                    <author xml:id="JNB">Boshoff, Jacobus Nicolaas, 1808-1881</author>
+                    <author xml:id="M">Moshoeshoe, c.1786-1870</author>
+                    <author xml:id="N">Nehemiah</author>
+                    <author xml:id="TA">Arbousset, Thomas, 1810-1887</author>
+                    <author xml:id="GG">Grey, George, 1812-1898</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1856-01-22">22 January 1856</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="composition" when="1856-01-22">5 October 1855</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Cape of Good Hope</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                </bibl>
+            </sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-11-07" who="#AW">Coding Review</change>
+			<change when="2020-10-22" who="#HB">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020045_0001" n="0001"/>
+<p rend="center caps italic">The <region>Cape of Good Hope</region>.</p>
+<p rend="center">&#8211;&#8212;&#8212;&#9670;&#8212;&#8212;&#8211;</p>
+<p>We have received files of papers from the <region>Cape of 
+Good Hope</region> to the <date when="1855-11-01">1st of November</date> inclusive.</p> 
+<p>The <hi rend="italic">Friend of the <region>Free State</region></hi> publishes the 
+follow<!-- - -->ing report of a conference between the President, <persName>J. 
+N. Boshoff, Esq.</persName>, and the <term type="collective">Basuta</term> Chief, <persName>Moshesh</persName>, his 
+<persName>Excellency Sir George Grey</persName> being present. It took 
+place on the <date when="1855-10-05">5th of October last</date> :&#8212;</p>
+<p>"The President.&#8212;I am very glad to see <persName>Moshesh</persName> here in <!-- Adrian, not sure if "The President" should be tagged throughout this as persName? HB -->
+the presence of his <persName>Excellency Sir G. Grey</persName>, on the first
+official opportunity we have had of meeting in the <region>Free 
+State</region>. I think it well that we should often meet, as 
+per<!-- - -->sonal visits are always much more satisfactory than 
+corre<!-- - -->spondence by letter. As we meet now personally we had 
+better speak of business. I have often heard that <persName>Moshesh</persName> 
+is a man of peace and is desirous of holding peace with the 
+<term type="collective">whites</term>. I am also a man of peace, and now in the presence 
+of his chief men I wish to show him on what terms we may 
+make peace and friendship continue. As the best mode <choice><sic>t o</sic><corr>to</corr></choice> 
+do so my view is that, as I am chosen on one side, and 
+<persName>Moshesh</persName> on the other, to see that peace is not interrupted, 
+we should, in case any disturbances occur, let each other 
+know our minds freely. I shall therefore tell him at 
+once that I have, on my arrival, been very sorry to hear 
+of many thefts having been committed within our 
+boun<!-- - -->dary by wicked people from the other side. I would be 
+glad to convince him that such things must be put a stop to, 
+or the consequences will be that they will put the country 
+in a blaze, and do great harm to all. These are all the 
+com<!-- - -->plaints I know of as yet. <persName>Mr. Ford</persName> has already represented 
+the case to him, and he has promised to punish the thieves, 
+and put a stop to the stealing. I have no doubt that he 
+will prove himself a man of his word, and make his chiefs 
+help him to carry out his promises.</p>
+<p>"<persName>Moshesh</persName>.&#8212;Peace is the mother of all. I admire what 
+your Honour has mentioned. I would be glad to hear any <!-- Honour persName? HB -->
+remarks of <persName>Mr. Ford</persName>'s in confirmation.</p>
+<p>"President.&#8212;We will await your answer.</p>
+<p>"<persName>Moshesh</persName>.&#8212;If no one else speaks it may appear as if these 
+were the words of only two people.</p>
+<p>"President.&#8212;I am the representative of all my people, 
+and my word is theirs also. I wish to hear the mind of 
+<term type="collective"><persName>Moshesh</persName>'s people</term> through him as their chief.</p>
+<p>"<persName>Moshesh</persName>.&#8212;May the things we speak of ascend to 
+heaven! My mind looks on the two personages present as 
+the first fruits of a new year. I do not mind faults being 
+mentioned, but I understood this to be a meeting of 
+friend<!-- - -->ship. I met <persName>Mr. Ford</persName> about the faults now brought 
+for<!-- - -->ward. I do not deny that some of the things have gone in 
+our direction. I do not know the best means of stopping 
+these things. What has the Governor come for? Has he <!-- Governor persName? HB -->
+been sent by his master? Is there not a word of advice 
+and wisdom? I cannot bear the weight of all. You come 
+from the land of <region>Chaka</region>. If you have not seen him, you 
+may have seen prints of him. He was ruined by his 
+rela<!-- - -->tions. You have wisdom to build beautiful houses of clay. 
+We got all we have from the <term type="collective">whites</term> ; can we not make 
+some plan by which we can enjoy what we have and keep 
+peace? <persName>Dr. Philip</persName> wrote to the <orgName><term type="collective">English</term> Government</orgName> when 
+we were in trouble, and it assisted us. The complaints 
+have not been sufficiently established. If you can show 
+me the cause of dissatisfaction let me know. There I end.</p>
+<p>"President.&#8212;I will take him up at the last word. The 
+cause he must know, but the way is this,&#8212;his people come 
+in and steal. The missionaries have been long enough in 
+the country for them to know that stealing is wrong. I 
+be<!-- - -->lieve that <persName>Moshesh</persName> has enough good men among his people 
+to help him to put down the wicked men who steal. I am 
+glad to hear that he wishes to get advice.  I want it also. If 
+we can both get advice, I, for my part, am ready to take it, 
+and be guided by it. If he is willing to take advice from
+his Excellency, I am also. I will state the cause of <!-- Excellency persName? HB -->
+com<!-- - -->plaint, and if he has any. I hope that he will state any he 
+may have, and then if I can I will remove it. I will tell 
+him clearly in as few words as possible what we complain 
+of. The thefts commnitted in <region><persName>Mr. Ford</persName>'s district</region> within two 
+years, as carefully collected by him from the field-cornets, 
+amount to 297 head of breeding <term type="animal">cattle</term>.</p>
+<p>"<persName>Moshesh</persName>.&#8212;I have already agreed with <persName>Mr. Ford</persName> that I 
+was convinced that some <term type="animal">cattle</term> had been stolen, and I have 
+made him promises. Can you not give me some advice?</p>
+<p>"President.&#8212;If <persName>Moshesh</persName> will listen I will just tell him the 
+numbers.</p>
+<p>"<persName>Moshesh</persName>.&#8212;It is just what I wanted.</p>
+<p>"President.&#8212;<term type="animal">Oxen</term> and breeding <term type="animal">cattle</term> together, 363;
+<term type="animal">horses</term>, 294 ; <term type="animal">sheep</term>, 112. I was not satisfied with the simple 
+returns of the field-cornets, and have instructed <persName>Mr. Ford</persName> 
+to get statements on oath from the owners of stolen <term type="animal">cattle</term>. 
+This is not yet completed, but is considerable. Since the 
+numbers in the statement of the field-cornets have been 
+ascertained many more <term type="animal">cattle</term> have been stolen. When the 
+full amount is ascertained I will let <persName>Moshesh</persName> know. I do 
+not want to do anything unjust. I will examine the list 
+myself, and find out those for which <persName>Moshesh</persName> is 
+answer<!-- - -->able, and when this number has been ascertained I 
+will tell <persName>Moshesh</persName>. I have now ordered the Landdrosts <!-- Not sure what Landdrosts is enough to code? HB -->
+to send in monthly returns of stolen <term type="animal">cattle</term>, with all 
+the particulars of the theft, instead of allowing the list 
+to accumulate for two years. I will tell him also that it is
+not only from <region><persName>Mr. Ford</persName>'s district</region> that complaints are 
+made. I have received reports also from <persName>Mr. Orpen</persName> that 
+thefts of <term type="animal">horses</term> are committed on the <region>Winburg border</region>. 
+Some of the <term type="animal">horses</term> have been found with <persName>Molitsani</persName>, and 
+some have been given up ; others he refuses to return, 
+unless the owners come to fetch them. This must not be. 
+My people cannot be put to such expenses. He ought to 
+have sent the stolen <term type="animal">horses</term> and thieves to <region>Winburg</region>, where 
+they would have been punished by us. Stealing will 
+never cease, unless the thieves are punished. Retaking 
+stolen <term type="animal">cattle</term> from the thief is no punishment. He ought 
+also to be fined or receive corporal punishment. If the 
+chief refuses to give up the thief he makes himself 
+responsible. We put thieves in prison, and punish them 
+when convicted. If he did so we would not have any 
+more stealing. He need not tell me that he has no power 
+to punish those who do wrong, for if they can retake the 
+stolen <term type="animal">cattle</term> they can punish the thief also. It is 
+com<!-- - -->plained that <persName>Molitsani</persName> harbours <term type="collective">Bushmen</term> and other thieves; 
+also, that <persName>Letsela</persName> occupies the lands of the farmers and 
+makes gardens there. These are the very people whom 
+<persName>Moshesh</persName> promised <persName>Hoffman</persName> to remove <date when="1854-01">last January</date>. 
+<term type="collective"><persName>Molapa</persName>'s people</term> have also encroached, and <persName>Molapa</persName>, though 
+he has promised to remove them, has not done so. I 
+mention these things to show that they give rise to 
+quarrels. My people will not submit to it any longer. 
+Now, as he has asked my advice, I say that if his people 
+will not obey him he must make them. He must take 
+his people against them. Those things that they should not 
+wish us to do he must not do. He would not be 
+satis<!-- - -->fied if I said I could not help such things, if committed 
+by my people. I know that they can do it, because 
+some<!-- - -->times for months long no thefts were committed ; so, if they 
+could stop the thieving once, they could do so again, and 
+there are other chiefs who never steal. I conclude, 
+there<!-- - -->fore, that those chiefs who will exercise their power can stop
+stealing.</p>
+<p>"<persName>Moshesh</persName>.&#8212;Can the names of those chiefs not be given?</p> 
+<p>"President.&#8212;<persName>Moroko</persName>, <persName>Jan Bloem</persName>, <persName>Lepui</persName>, <persName>Adam Kok</persName>, 
+and <persName>Waterboer</persName>.</p>
+<p>"<persName>Moshesh</persName>.&#8212;You mention those things, his Excellency 
+being present. We must remember that we are on a 
+friendly visit. Your honour must remember that you have
+been only a short time in the country. The Landdrost and 
+I, who have long lived here, know better. The sword of 
+the mouth is grievous. We had better not speak so, but 
+separate in peace, as we have met in peace.</p>
+<p>"President.&#8212;I think the best way to secure peace is that 
+friends meet and speak their minds. I have stated all I 
+have to say, and I want <persName>Moshesh</persName> to state any grievances he 
+has to speak about.</p>
+<p>"<persName>Moshesh</persName>.&#8212;Not to-day.</p>
+<p>"President.&#8212;Very good ; I shall always be happy to hear 
+from him about anything that is done wrong by my people, 
+as war would only break us all down ; but if there is any 
+other thing, as his Excellency is present, of which he feels 
+aggrieved, I should be glad to hear it.</p>
+<p>"<persName>Moshesh</persName>.&#8212;Not to-day.  Let us go home.  We can 
+cor<!-- - -->respond by letter.</p>
+<p>"President.&#8212;Would he like his Excellency to give us
+some advice?</p>
+<p>"<persName>Moshesh</persName>.&#8212;It is not the proper day. His Excellency is 
+not here to hear difficulties. We can correspond by letter.</p>
+<p>"President.&#8212;I thought <persName>Moshesh</persName> would wish it.</p>
+<p>"<persName>Moshesh</persName>.&#8212;Advice to a chief ought to be given in 
+pri<!-- - -->vate, and not in public.</p>
+<p>"President.&#8212;When occasion is urgent we seize the first 
+opportunity of meeting, and, if <persName>Moshesh</persName> postpones the 
+con<!-- - -->ference on these urgent matters, some accident may occur, 
+for which we may be sorry before we meet again.  It may 
+be long before we can meet again ; it may not be easy for us 
+to do so.  We can write, but we may not understand each 
+other so well as by conversing.  I have therefore spoken to 
+him in his Excellency's presence, in order that he might give 
+us some advice, and that we might profit by it ; and it would 
+be a satisfaction to go home with the mutual conviction of 
+having come to an understanding to correct what has been 
+wrong.</p>
+<p>"<persName>Moshesh</persName>.&#8212;I did not expect that the matters already 
+settled with <persName>Mr. Ford</persName>, and to whom I have already given an 
+answer, would be touched upon ; and I have also given a 
+paper to <persName>Mr. Venter</persName>, that people suffering from thefts 
+should be sent to me. I am ready to hear advice.</p>
+<p>"President.&#8212;I know nothing of <persName>Mr. Venter</persName>'s 
+arrange<!-- - -->ment.  He had no right to make one. I was then in the 
+country.  Such a proposal as yours, that we should go into 
+your country and search for our property, could never be 
+entertained.  <persName>Mr. Venter</persName> was appointed with three others. 
+The directions given by all to <persName>Mr. Ford</persName> were good, and 
+ought not to have been broken by one.  If I was to send my
+people in that way into your country, it would only make 
+disputes, and break our friendships.</p>
+<p>"Mosheh,&#8212;I did not come to speak of business.</p>
+<p>"There seemed to be some misinterpretation of the 
+Chief's meaning in this last sentence, which had been 
+inter<!-- - -->preted in English by <persName>Nehemiah</persName>, <persName>Moshesh</persName>'s son.</p>
+<p>"<persName>His Excellency Sir George Grey</persName> then asked the <persName>Rev. 
+Mr. Arbousset</persName>, who was acting as interpreter, whether he 
+thought <persName>Moshesh</persName> would like to hear what he thought he 
+ought to do.</p>
+<p>"<persName>Mr. Arbousset</persName> replying in the affirmative, His 
+Excel<!-- - -->lency addressed <persName>Moshesh</persName> as follows:&#8212;You say that we are
+wise people in being able to build beautiful houses of clay ; 
+a man who does that is respected by others, but a man 
+who raises barbarians in the scale of civilization is admired 
+by ages.  You are now the builder.  You have collected 
+some barbarians and made a kind of nation.  The question 
+now is whether you are to succeed or fail.  Not only is 
+<country>South Africa</country> looking on, but many other parts of the world 
+too. Every good man is willing to assist ; no one more so 
+than the President.  I have had an opportunity of hearing 
+his views, and I am sure he is anxious to help <persName>Mosheh</persName> to 
+succeed. It is impossible that a civilized nation can allow
+a nation of thieves to remain on their boundary. The
+President and I are ready to put them down. I would be
+glad to see you more cordial to accept the President's offers 
+than you have seemed to be ; and, as I am now going away 
+for a considerable time, I should be glad to be certain that 
+I would devise some plan for the future. In such a plan 
+I will assist as far as <region>the Cape</region> colonial bounday is concerned. 
+It must be greatly owing to your own energy that you have 
+raised yourself to the position you now hold, and I would 
+advise you to trust to that energy in future, and not to bad 
+advisers. I trust that before I leave you will give some proofs 
+that you will put down stealing, and allow your tribe to 
+prosper. I am sure the President's remarks will be 
+appre<!-- - -->ciated ; I have been particularly struck with their justness.
+I hope before I leave that you will promise to put an end to 
+such practices as those that have been carried on.</p>
+<p>"<persName>Moshesh</persName>.&#8212;We ought to praise his Excellency for his 
+words, though we were not aware, when called to visit, that 
+such things would have been brought forward.</p>
+<p>"President.&#8212;If he is not prepared to speak on business, 
+will he appoint another meeting, or will he go home and 
+consider, and acquaint me with the result, and in the 
+mean<!-- - -->time try with his chiefs to put a stop to stealing? <choice><sic>or</sic><corr>Or</corr></choice> 
+other<!-- - -->wise consequences may ensue that we may all deplore.</p>
+<p>"<persName>Moshesh</persName>.&#8212;When I met <persName>Mr. Ford</persName> at <persName>Sefali</persName>'s I made an 
+agreement with him that he should make a list of stolen 
+<term type="animal">cattle</term>, with the particulars of theft, in order that I could 
+call on the guilty chiefs, and show them the accusations 
+against them.</p>
+<p>"<persName>Mr. Ford</persName> explained that the list was in the course of 
+formation.</p>
+<p>"<persName>Moshesh</persName> expressed himself satisfied, and said that the 
+measures adopted to settle the thefts on the list would go 
+towards stopping any future thefts.</p>
+<p>"President.&#8212;Will the chief give me some promise that 
+he and his chiefs will endeavour to put a stop to any 
+future thieving, or else the lists will only continue to in<!--<choice><sic>.</sic><corr>-</corr></choice>--> 
+crease?</p>
+<p>"<persName>Moshesh</persName>.&#8212;I cannot bind myself to say that there will 
+be no more stealing ; thieves do not tell me when they 
+come in or go out.  Did I not at the meeting with <persName>Ford</persName>, 
+at <persName>Sefali</persName>'s, tell my people they must not even steal a <term type="animal">goat</term>? 
+You must give me time. I have eaten the Governor's 
+meat, and it will be easy for me to vomit it up, but it is 
+not so easy to make thieves disgorge what they have stolen.</p>
+<p>"Presdent.&#8212;I praise <persName>Moshesh</persName> for the manner in which 
+he met <persName>Mr. Ford</persName>.</p>
+<p>"<persName>Moshesh</persName>.&#8212;The sooner the papers are ready the better. 
+I will make my report on them as soon as possible.</p>
+<p>"President.&#8212;I will now go away satisfied. I shall 
+always be very glad, with him, to remove all difficulties, as 
+long as we remain in the same situations.</p>
+<p>"<persName>Moshesh</persName>.&#8212;I feel as you do. I came to bring some 
+words to my people. Peace and tranquillity by all means! 
+They are the ouly things to be relied on. It must be the 
+wishes of both. We must by patience overcome evil.</p>
+<p>"President.&#8212;I am very glad to hear what he says, and I 
+will remember his words.</p>
+<p>"His Excellency the Governor.&#8212;Work away building 
+this house."</p> 
+<p>We have also received additional files of papers 
+from the <region>Cape of Good Hope</region> to the 
+<date when="1855-11-25">25th of Novem<!-- - -->ber</date>.  Everything was going on prosperously at the 
+colony.</p>
+
+            </div>
+        </body>   
+    </text>
+</TEI>

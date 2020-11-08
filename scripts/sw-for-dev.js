@@ -13,9 +13,10 @@ var version = 'v1::';
 */
 var offlineFundamentals = [
   '/',
+  '/sw.js',
   '/css/style.css',
   '/css/styleTEI.css',
-  '/sw.js',
+  '/css/font-awesome.min.css',
   '/scripts/scripts.js',
   '/scripts/journal-transform.js',
   '/scripts/manuscript-transform.js'

@@ -72,13 +72,10 @@ body{
 	body.fixed-nav{
 		padding-top: 0 !important;
 	}
-}
-body.essay .main{
-	padding-bottom: 1em;
-}
+
 article{
-	margin: .5em auto;
 	padding: 0 1em;
+	margin: .5em auto;
 	max-width: 100%;
 }
 @media only screen and (min-width: 768px){
@@ -90,6 +87,9 @@ article{
 	article{
 		max-width: 42em;
 	}
+}
+body.essay .main{
+	padding-bottom: 1em;
 }
 h1{
 	font-size: 2em;
@@ -204,11 +204,8 @@ img,
 .image{
 	color:#e6e6e6;
 	font-weight: 300;
-	margin-left: auto;
-	margin-right: auto;
 	width: 100%;
 	max-width: 100%;
-	display: inline-block;
 }
 .image-border{
 	border: 1px solid gray;
@@ -428,7 +425,6 @@ a:focus{
 	color: #2b61a1;
 	background-color: #E3E3E3;
 }
-
 .graphic a:hover,
 .graphic a:focus{
 	background-color: white;

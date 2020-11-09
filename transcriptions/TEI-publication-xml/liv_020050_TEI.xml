@@ -153,6 +153,37 @@
 		</revisionDesc>
 	</teiHeader>
 
+<!--
+	<notesStmt>
+		<note anchored="yes">Call number  8000.e.43 (Rare Books Room, Cambridge University)</note>
+	</notesStmt>
+
+	<projectDesc>
+		<p>The electronic edition is a part of the UNC-CH digitization project, <hi rend="italics">Documenting the American South.</hi></p>
+	</projectDesc>
+
+	<editorialDecl>
+		<p>The text has been entered using double-keying and verified against the original. </p>
+		<p>The text has been encoded using the
+	recommendations for Level 4 of the TEI in Libraries Guidelines.</p>
+		<p>Original grammar, punctuation, and spelling have been preserved.  Encountered
+	typographical errors have been preserved, and appear in red type.</p>
+		<p>All footnotes are inserted at the point of reference within paragraphs.
+	</p>
+		<p>This electronic edition has been transcribed from a photocopy of the original at Cambridge University supplied by William L. Andrews.</p>
+		<p>Any hyphens occurring in line breaks have been removed, and the trailing part of a word has been joined to the preceding line.</p>
+		<p>All quotation marks, em dashes  and ampersand have been transcribed as
+	entity references.</p>
+		<p>All double right and left quotation marks are encoded as ” and “
+	respectively.</p>
+		<p>All single right and left quotation marks are encoded as ’ and ‘ respectively.</p>
+		<p>All em dashes are encoded as —</p>
+		<p>Indentation in lines has not been preserved.</p>
+		<p>Running titles have not been preserved.</p>
+		<p>Spell-check and verification made against printed text using Author/Editor (SoftQuad) and Microsoft Word spell check programs.</p>
+	</editorialDecl>
+-->
+
 	<!--<text>-->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<!--<body>-->
@@ -169,7 +200,6 @@
 
 	<text>
 		<front>      
-
 		<div type="title-page">
 	<pb xml:id="pi" n="i"/>
 <p n="main">INCIDENTS <lb/> CONNECTED WITH <lb/> THE LIFE OF SELIM AGA, <lb/> A NATIVE OF CENTRAL AFRICA.</p>
@@ -280,9 +310,9 @@ kill their goats for butcher meat, having a great desire to preserve a large sto
 
 <p>Having given a short account of the customs of my native country, I shall now relate my own history.</p>
 		</div >
+
 		<div  type="section">
 <head>SELF-HISTORY.—YOUTH AND PREMATURE <lb/> SLAVERY.</head>
-
 <p>YOUTH is the period in which true happiness is enjoyed. It is the time when all trials and difficulties seem to lie in oblivion; and it is then that all principles can be instilled into the tender mind. The mind in youth is not prejudiced, builds many castles in the air although without any symptoms of ambition, is pleased and always desires to please. It is like the shoot of a tender flower ere its leaves expand. It is the germ on which strong propensities and sentiments are framed. It is in youth that the stronger faculties of the artist, the genius, and the mechanic are pictured. None of these propensities, however, were predominant in my mind while home was my residence. Being the oldest of the boys, my pride was raised to no small degree when I beheld my father preparing a farm for me. This event filled my mind with the grand anticipation of leaving the goats to my brother, who was then beginning to work a little. While my father was making these preparations, I had the constant charge of the goats; and being accompanied by two other boys who resided near
 
 
@@ -320,10 +350,8 @@ prepared me for my subsequent career, and fitted me for the journey on the deser
 
 	<pb xml:id="p24" n="24"/>
 starvation from want of water, liable to be attacked by beasts which have <choice><sic>reliquished</sic><corr>relinquished</corr></choice> their first subordination, and entirely under the mercy of the monsoons.<ref xml:id="ref3" target="n3">*</ref></p>
-<note xml:id="n3" anchored="true" target="ref3">
 
-<p>* A strong wind which raises the sand, by which means many have been buried alive in the eastern deserts.</p>
-</note>
+<note xml:id="n3" anchored="true" target="ref3"><p>* A strong wind which raises the sand, by which means many have been buried alive in the eastern deserts.</p></note>
 
 <p>Our journey (before reaching the banks of the Nile) occupied ten days. Many were the privations we suffered on our way, sometimes from the excessive heat of the sun, and sometimes from want of water. During the middle of the day, we were so much overpowered by the heat, that we often had to delay our journey. At another time we had to exist a whole day without water, under the following circumstances: The water camel, of which I had a particular charge, was going before all the rest, and, unfortunately came, upon a dead camel lying on the road. The sight and smell of this animal soon spirit-stirred it, and the result was, that it danced and ran through thick and thin till the water bags, which were hanging on each side of the saddle, were destroyed, having come in contact with some wood on the side of the saddle. Fortune, however, had not altogether turned her face from us, for, in the evening, we came to some wells, where we supplied ourselves and rested for the night. From this place we pursued our journey to the banks of the Nile, and pitched our tents in the valley of Senaar, only a short distance from the town. My master left me here with the old man, two
 
@@ -360,50 +388,54 @@ pleasant countenance, a native of Berber, or as it is called by the inhabitants,
 to be expected in the desert, we arrived at Goortie. The many congratulations which my master received on this occasion were indescribable. His wife kissing him, with tears of joy in her eyes, his daughter clinging to his neck, and the neighbours shaking hands with him, all showed friendship in the superlative degree.</p>
 
 <p>Here I write this small poem:—</p>
+
 <!--<lg type="verse">
-  <head>THO' LOST TO SIGHT, TO MEMORY DEAR.</head>
-  <lg type="stanza">
-    <l>How can the mother's loving eye</l>
-    <l>Part with the children whom she bore;</l>
-    <l>Her sons are called, they'll not deny,</l>
-    <l>To serve on some far distant shore.</l>
-    <l>Swift time may soar on lofty wing,</l>
-    <l>With patience yet she'll stand and bear;</l>
-    <l>She knows they're gone to serve their king,</l>
-    <l>“Tho' lost to sight, to memory dear.”</l>
-  </lg>
-  <lg type="stanza">
-    <l>How can the loving husband's eye</l>
-    <l>Look from the wife he holds so dear:</l>
-    <l>She soon his secrets does descry,</l>
-    <l>He tells them all without a fear.</l>
-    <l>But business calls him soon apart,</l>
-    <l>From her he holds so dear and near;</l>
-    <l>He near forgets her from his heart,</l>
-    <l>“Tho' lost to sight, to memory dear.”</l>
-  </lg>
-  <lg type="stanza">
-    <l>But who can mark the sacred glance,</l>
-    <l>Two lovers bear when doom'd to part;</l>
-    <l>They part for months, for years, perchance,</l>
-    <l>Far from those scenes which cheer the heart.</l>
-    <pb xml:id="p32" n="32"/>
-    <l>They wait fair fortune's future day,</l>
-    <l>In hopes to meet some distant year;</l>
-    <l>Tho' parted far, true love can say,</l>
-    <l>“Tho' lost to sight, to memory dear.”</l>
-  </lg>
-  <lg type="stanza">
-    <l>Let such as court dear friendship's path,</l>
-    <l>Pass happy days with friendship here;</l>
-    <l>Let all forget the way to wrath,</l>
-    <l>In mutual love let all adhere.</l>
-    <l>Let those who cherish in their heart</l>
-    <l>The thoughts—“Tho' absent, ever dear,”</l>
-    <l>Remember that although they part,</l>
-    <l>“Tho' lost to sight, to memory dear.”</l>
-  </lg>
+	<head>THO' LOST TO SIGHT, TO MEMORY DEAR.</head>
+	<lg type="stanza">
+		<l>How can the mother's loving eye</l>
+		<l>Part with the children whom she bore;</l>
+		<l>Her sons are called, they'll not deny,</l>
+		<l>To serve on some far distant shore.</l>
+		<l>Swift time may soar on lofty wing,</l>
+		<l>With patience yet she'll stand and bear;</l>
+		<l>She knows they're gone to serve their king,</l>
+		<l>“Tho' lost to sight, to memory dear.”</l>
+	</lg>
+	<lg type="stanza">
+		<l>How can the loving husband's eye</l>
+		<l>Look from the wife he holds so dear:</l>
+		<l>She soon his secrets does descry,</l>
+		<l>He tells them all without a fear.</l>
+		<l>But business calls him soon apart,</l>
+		<l>From her he holds so dear and near;</l>
+		<l>He near forgets her from his heart,</l>
+		<l>“Tho' lost to sight, to memory dear.”</l>
+	</lg>
+	<lg type="stanza">
+		<l>But who can mark the sacred glance,</l>
+		<l>Two lovers bear when doom'd to part;</l>
+		<l>They part for months, for years, perchance,</l>
+		<l>Far from those scenes which cheer the heart.</l>
+
+
+	<pb xml:id="p32" n="32"/>
+		<l>They wait fair fortune's future day,</l>
+		<l>In hopes to meet some distant year;</l>
+		<l>Tho' parted far, true love can say,</l>
+		<l>“Tho' lost to sight, to memory dear.”</l>
+	</lg>
+	<lg type="stanza">
+		<l>Let such as court dear friendship's path,</l>
+		<l>Pass happy days with friendship here;</l>
+		<l>Let all forget the way to wrath,</l>
+		<l>In mutual love let all adhere.</l>
+		<l>Let those who cherish in their heart</l>
+		<l>The thoughts—“Tho' absent, ever dear,”</l>
+		<l>Remember that although they part,</l>
+		<l>“Tho' lost to sight, to memory dear.”</l>
+	</lg>
 </lg>-->
+
 
 <p>The time had not arrived when slave-dealers went to Cairo to dispose of their slaves, in consequence we had to stay at Goortie for three months, during which time I was employed in doing sundry things. First of all, I was sent to live with a friend of my master's, who behaved very kindly to me. Here I had to take care of some cows, while the man's two sons attended to the lands of the farm, which were between three and four miles from the house. About six miles from Goortie, my master married a young woman, with whom I was soon taken to live. In many of the eastern countries, and particularly Egypt, a man is not confined to one wife, but can keep as many as his abilities will allow him. My master's recent marriage was the cause of raising a deal of jealousy on the part of the old one. He chiefly resided at the house he had built for the former, and when the latter met
 
@@ -435,235 +467,240 @@ Genoa to Milan. In the suburbs of Milan my master was met by Mr. J—, another s
 
 <p>Having entered Britain, I shall now celebrate the occasion by writing an ode to the country to which many of my countrymen owe their freedom, and liberty of conscience:—</p>
 <!--<lg type="verse">
-  <head>ODE TO BRITAIN.</head>
-  <lg type="stanza">
-    <l>Surrounded by the foaming surge,</l>
-    <l>The Queen of land and sea;</l>
-    <l>For who can boast of Nelson's arms,</l>
-    <l>Or Wellington's, as thee.</l>
-  </lg>
-  <lg type="stanza">
-    <l>Britain, thou land of peace and joy,</l>
-    <l>How strong thy bulwarks are;</l>
-    <l>Thou standest far above the world,</l>
-    <l>And that without a par.</l>
-  </lg>
-  <lg type="stanza">
-    <l>All nations do thy seamen fear,</l>
-    <l>Thy ships they see with awe;</l>
-    <l>Allegiance, too, and homage pay,</l>
-    <l>As e'er fair Albion saw.</l>
-  </lg>
-  <lg type="stanza">
-    <l>Thy vet'rans prove a fatal scourge,</l>
-    <l>To those who thee offend;</l>
-    <l>To those who court thy shelt'ring arms,</l>
-    <l>Protection dost extend.</l>
-  </lg>
-  <pb xml:id="p39" n="39"/>
-  <lg type="stanza">
-    <l>Thou wavest high the flag of fame,</l>
-    <l>Liberty is thy theme,</l>
-    <l>And while the exile seeks thy shore,</l>
-    <l>Salvation dost proclaim.</l>
-  </lg>
-  <lg type="stanza">
-    <l>They hail thee as the stranger's home,</l>
-    <l>The freedom of the slave;</l>
-    <l>Thy motto is—“Where'er I go,</l>
-    <l>“The captive I will save.”</l>
-  </lg>
-  <lg type="stanza">
-    <l>The ancient empires, what were they,</l>
-    <l>When thus compared with thee?</l>
-    <l>The powers of Media, Greece, and Rome,</l>
-    <l>Thy fame did never see.</l>
-  </lg>
+	<head>ODE TO BRITAIN.</head>
+	<lg type="stanza">
+		<l>Surrounded by the foaming surge,</l>
+		<l>The Queen of land and sea;</l>
+		<l>For who can boast of Nelson's arms,</l>
+		<l>Or Wellington's, as thee.</l>
+	</lg>
+	<lg type="stanza">
+		<l>Britain, thou land of peace and joy,</l>
+		<l>How strong thy bulwarks are;</l>
+		<l>Thou standest far above the world,</l>
+		<l>And that without a par.</l>
+	</lg>
+	<lg type="stanza">
+		<l>All nations do thy seamen fear,</l>
+		<l>Thy ships they see with awe;</l>
+		<l>Allegiance, too, and homage pay,</l>
+		<l>As e'er fair Albion saw.</l>
+	</lg>
+	<lg type="stanza">
+		<l>Thy vet'rans prove a fatal scourge,</l>
+		<l>To those who thee offend;</l>
+		<l>To those who court thy shelt'ring arms,</l>
+		<l>Protection dost extend.</l>
+	</lg>
+
+	<pb xml:id="p39" n="39"/>
+	<lg type="stanza">
+		<l>Thou wavest high the flag of fame,</l>
+		<l>Liberty is thy theme,</l>
+		<l>And while the exile seeks thy shore,</l>
+		<l>Salvation dost proclaim.</l>
+	</lg>
+	<lg type="stanza">
+		<l>They hail thee as the stranger's home,</l>
+		<l>The freedom of the slave;</l>
+		<l>Thy motto is—“Where'er I go,</l>
+		<l>“The captive I will save.”</l>
+	</lg>
+	<lg type="stanza">
+		<l>The ancient empires, what were they,</l>
+		<l>When thus compared with thee?</l>
+		<l>The powers of Media, Greece, and Rome,</l>
+		<l>Thy fame did never see.</l>
+	</lg>
 </lg>-->
 		</div >
 		</div >
+		
 		<div  type="section">
-
-
 	<pb xml:id="p40" n="40"/>
 <head>ADDITIONAL POEMS.</head>
 <!--<lg type="verse">
-  <head>THE SKY.</head>
-  <lg type="stanza">
-    <l>Methinks, when I the world behold,</l>
-    <l>What things this earth is made to hold,</l>
-    <l>Creation has not spared her pains,</l>
-    <l>To show the powers of Him who reigns.</l>
-  </lg>
-  <lg type="poem">
-    <l>The light blue and transparent sky,</l>
-    <l>Tells man his mind to lift on high,</l>
-    <l>And bids him view the ethereal light,</l>
-    <l>“That beams upon his ravish'd sight.”</l>
-  </lg>
-  <lg type="poem">
-    <l>The sun, by day, with ardent mirth,</l>
-    <l>Glows on the cold unfeeling earth:</l>
-    <l>The moon and stars begin their sway,</l>
-    <l>And shed their light till morning day.</l>
-  </lg>
-  <lg type="poem">
-    <l>O look to that palacious view,</l>
-    <l>Which stands in colours red and blue;</l>
-    <l>Resign thy fate submissively</l>
-    <l>To Him who lives above the sky.</l>
-  </lg>
-  <lg type="poem">
-    <l>No human fiends there can we fear;</l>
-    <l>No earthly foes above that sphere.</l>
-    <l>But He who reigns in yonder realm</l>
-    <l>Wields care's crown with a mercy's helm.</l>
-  </lg>
+	<head>THE SKY.</head>
+	<lg type="stanza">
+		<l>Methinks, when I the world behold,</l>
+		<l>What things this earth is made to hold,</l>
+		<l>Creation has not spared her pains,</l>
+		<l>To show the powers of Him who reigns.</l>
+	</lg>
+	<lg type="poem">
+		<l>The light blue and transparent sky,</l>
+		<l>Tells man his mind to lift on high,</l>
+		<l>And bids him view the ethereal light,</l>
+		<l>“That beams upon his ravish'd sight.”</l>
+	</lg>
+	<lg type="poem">
+		<l>The sun, by day, with ardent mirth,</l>
+		<l>Glows on the cold unfeeling earth:</l>
+		<l>The moon and stars begin their sway,</l>
+		<l>And shed their light till morning day.</l>
+	</lg>
+	<lg type="poem">
+		<l>O look to that palacious view,</l>
+		<l>Which stands in colours red and blue;</l>
+		<l>Resign thy fate submissively</l>
+		<l>To Him who lives above the sky.</l>
+	</lg>
+	<lg type="poem">
+		<l>No human fiends there can we fear;</l>
+		<l>No earthly foes above that sphere.</l>
+		<l>But He who reigns in yonder realm</l>
+		<l>Wields care's crown with a mercy's helm.</l>
+	</lg>
 </lg>
-<pb xml:id="p41" n="41"/>
+
+		<pb xml:id="p41" n="41"/>
 <lg type="verse">
   <head>BATTLE OF GWALIOR.</head>
-  <lg type="poem">
-    <l>'Twas when the shades of ev'ning fell</l>
-    <l>On India's lofty hills of snow:</l>
-    <l>That eve the minds will ne'er forget</l>
-    <l>Of those who have escap'd the blow.</l>
-  </lg>
-  <lg type="poem">
-    <l>'Twas on that eve that Gough did say,</l>
-    <l>Prepare to fight whene'er you start,</l>
-    <l>For we will seize Gwalior's fort:</l>
-    <l>Maharajpoor shall know we're smart.</l>
-  </lg>
-  <lg type="poem">
-    <l>As soon's the morn began to dawn</l>
-    <l>Each soldier stood with sword in hand</l>
-    <l>Resolved to fight with all his might</l>
-    <l>Or die upon a foreign land.</l>
-  </lg>
-  <lg type="poem">
-    <l>In columns three they stood array'd</l>
-    <l>With all their force to face the foe;</l>
-    <l>From high Gwalior's fort look'd down,</l>
-    <l>And threw her balls on them below.</l>
-  </lg>
-  <lg type="poem">
-    <l>Brave Thacwell stood, and at the head</l>
-    <l>Of the first column did command,</l>
-    <l>Valiant, with grace, the second took,</l>
-    <l>While Dennis at the third did stand.</l>
-  </lg>
-  <lg type="poem">
-    <l>They fought with might and eager true</l>
-    <l>For Britain's fame and Britain's name,</l>
-    <l>Till they beheld Maharajpoor</l>
-    <l>Invested with a fire and flame.</l>
-  </lg>
-  <lg type="poem">
-    <l>The guns were then to silence called,</l>
-    <l>Each man to charge with sword in hand</l>
-    <l>With bay'nets fix'd they did advance,</l>
-    <l>And shook Gwalior's fort and land.</l>
-  </lg>
-  <pb xml:id="p42" n="42"/>
-  <lg type="poem">
-    <l>Gwalior yielded power to them,</l>
-    <l>Maharajpoor a treaty sign'd,</l>
-    <l>The British march'd within their bounds,</l>
-    <l>And left the conquer'd all behind.</l>
-  </lg>
+	<lg type="poem">
+		<l>'Twas when the shades of ev'ning fell</l>
+		<l>On India's lofty hills of snow:</l>
+		<l>That eve the minds will ne'er forget</l>
+		<l>Of those who have escap'd the blow.</l>
+	</lg>
+	<lg type="poem">
+		<l>'Twas on that eve that Gough did say,</l>
+		<l>Prepare to fight whene'er you start,</l>
+		<l>For we will seize Gwalior's fort:</l>
+		<l>Maharajpoor shall know we're smart.</l>
+	</lg>
+	<lg type="poem">
+		<l>As soon's the morn began to dawn</l>
+		<l>Each soldier stood with sword in hand</l>
+		<l>Resolved to fight with all his might</l>
+		<l>Or die upon a foreign land.</l>
+	</lg>
+	<lg type="poem">
+		<l>In columns three they stood array'd</l>
+		<l>With all their force to face the foe;</l>
+		<l>From high Gwalior's fort look'd down,</l>
+		<l>And threw her balls on them below.</l>
+	</lg>
+	<lg type="poem">
+		<l>Brave Thacwell stood, and at the head</l>
+		<l>Of the first column did command,</l>
+		<l>Valiant, with grace, the second took,</l>
+		<l>While Dennis at the third did stand.</l>
+	</lg>
+	<lg type="poem">
+		<l>They fought with might and eager true</l>
+		<l>For Britain's fame and Britain's name,</l>
+		<l>Till they beheld Maharajpoor</l>
+		<l>Invested with a fire and flame.</l>
+	</lg>
+	<lg type="poem">
+		<l>The guns were then to silence called,</l>
+		<l>Each man to charge with sword in hand</l>
+		<l>With bay'nets fix'd they did advance,</l>
+		<l>And shook Gwalior's fort and land.</l>
+	</lg>
+
+
+		<pb xml:id="p42" n="42"/>
+	<lg type="poem">
+		<l>Gwalior yielded power to them,</l>
+		<l>Maharajpoor a treaty sign'd,</l>
+		<l>The British march'd within their bounds,</l>
+		<l>And left the conquer'd all behind.</l>
+	</lg>
 </lg>
 <lg type="verse">
   <head>ECLIPSE OF THE MOON.</head>
-  <lg type="poem">
-    <l>Led by ambition's mighty force,</l>
-    <l>A friend and I did take our course</l>
-    <l>To view the eclipse upon the moon:</l>
-    <l>We wished to see ere late or soon.</l>
-  </lg>
-  <lg type="poem">
-    <l>We walked with slow and gentle pace;</l>
-    <l>Perceived darkness on the moon's trace.</l>
-    <l>Nought we saw but the cloudy sky;</l>
-    <l>Nought we heard but the Zephyr's sigh.</l>
-  </lg>
-  <lg type="poem">
-    <l>All nature lay without alarms,</l>
-    <l>Wrapt silently in Morpheus' arms.</l>
-    <l>Nocturnal bliss had lull'd to rest</l>
-    <l>The chirps of the robin red breast.</l>
-  </lg>
-  <lg type="poem">
-    <l>While thus our thoughts did wander o'er</l>
-    <l>Proud nature's wide creative power,</l>
-    <l>We saw as if reluctantly</l>
-    <l>The moon peep through the cloudy sky.</l>
-  </lg>
-  <lg type="poem">
-    <l>Far through the azure of the sky</l>
-    <l>She stood downcast and ghastly shy.</l>
-    <l>One minute pass'd and she was gone</l>
-    <l>Behind her cloudy misty throne.</l>
-  </lg>
+	<lg type="poem">
+		<l>Led by ambition's mighty force,</l>
+		<l>A friend and I did take our course</l>
+		<l>To view the eclipse upon the moon:</l>
+		<l>We wished to see ere late or soon.</l>
+	</lg>
+	<lg type="poem">
+		<l>We walked with slow and gentle pace;</l>
+		<l>Perceived darkness on the moon's trace.</l>
+		<l>Nought we saw but the cloudy sky;</l>
+		<l>Nought we heard but the Zephyr's sigh.</l>
+	</lg>
+	<lg type="poem">
+		<l>All nature lay without alarms,</l>
+		<l>Wrapt silently in Morpheus' arms.</l>
+		<l>Nocturnal bliss had lull'd to rest</l>
+		<l>The chirps of the robin red breast.</l>
+	</lg>
+	<lg type="poem">
+		<l>While thus our thoughts did wander o'er</l>
+		<l>Proud nature's wide creative power,</l>
+		<l>We saw as if reluctantly</l>
+		<l>The moon peep through the cloudy sky.</l>
+	</lg>
+	<lg type="poem">
+		<l>Far through the azure of the sky</l>
+		<l>She stood downcast and ghastly shy.</l>
+		<l>One minute pass'd and she was gone</l>
+		<l>Behind her cloudy misty throne.</l>
+	</lg>
 </lg>
-<pb xml:id="p43" n="43"/>
+
+
+	<pb xml:id="p43" n="43"/>
 <lg type="verse">
   <head>THE SEASONS.</head>
-  <lg type="poem">
-    <l>In winter's freezing frost and wind</l>
-    <l>How sad the hills and mountains stand,</l>
-    <l>While ice and snow do fill the plains,</l>
-    <l>And seal the wide and mighty strand.</l>
-  </lg>
-  <lg type="poem">
-    <l>The rivers look with mournful gaze;</l>
-    <l>The hills return their woeful song.</l>
-    <l>Why does the sun refuse to shine,</l>
-    <l>And leave us pedling in the throng?</l>
-  </lg>
-  <lg type="poem">
-    <l>Up starts nature and exclaims,</l>
-    <l>Why do ye look so sour and sad?</l>
-    <l>The sun will come and bring again</l>
-    <l>With him the warm luxuriant plaid.</l>
-  </lg>
-  <lg type="poem">
-    <l>The voice of spring is heard afar</l>
-    <l>Proclaim the sun and summer nigh,</l>
-    <l>While all the birds do sing with joy,</l>
-    <l>And soar with grace along the sky.</l>
-  </lg>
-  <lg type="poem">
-    <l>The trees begin to flourish green;</l>
-    <l>The flowers appear above the ground;</l>
-    <l>The sun shines with glittering rays,</l>
-    <l>Diffusing mirth to all around.</l>
-  </lg>
-  <lg type="poem">
-    <l>Clad with a light translucent robe,</l>
-    <l>The God of summer glides along.</l>
-    <l>His “cheering” breath and “glad'ning” rays</l>
-    <l>Give life and health to weak and strong.</l>
-  </lg>
-  <lg type="poem">
-    <l>See how the stream glides in the vale</l>
-    <l>To join the sea with rapid pace.</l>
-    <l>The fruit begins to ripen fast;</l>
-    <l>The flowers bloom with lovely grace.</l>
-  </lg>
+	<lg type="poem">
+		<l>In winter's freezing frost and wind</l>
+		<l>How sad the hills and mountains stand,</l>
+		<l>While ice and snow do fill the plains,</l>
+		<l>And seal the wide and mighty strand.</l>
+	</lg>
+	<lg type="poem">
+		<l>The rivers look with mournful gaze;</l>
+		<l>The hills return their woeful song.</l>
+		<l>Why does the sun refuse to shine,</l>
+		<l>And leave us pedling in the throng?</l>
+	</lg>
+	<lg type="poem">
+		<l>Up starts nature and exclaims,</l>
+		<l>Why do ye look so sour and sad?</l>
+		<l>The sun will come and bring again</l>
+		<l>With him the warm luxuriant plaid.</l>
+	</lg>
+	<lg type="poem">
+		<l>The voice of spring is heard afar</l>
+		<l>Proclaim the sun and summer nigh,</l>
+		<l>While all the birds do sing with joy,</l>
+		<l>And soar with grace along the sky.</l>
+	</lg>
+	<lg type="poem">
+		<l>The trees begin to flourish green;</l>
+		<l>The flowers appear above the ground;</l>
+		<l>The sun shines with glittering rays,</l>
+		<l>Diffusing mirth to all around.</l>
+	</lg>
+	<lg type="poem">
+		<l>Clad with a light translucent robe,</l>
+		<l>The God of summer glides along.</l>
+		<l>His “cheering” breath and “glad'ning” rays</l>
+		<l>Give life and health to weak and strong.</l>
+	</lg>
+	<lg type="poem">
+		<l>See how the stream glides in the vale</l>
+		<l>To join the sea with rapid pace.</l>
+		<l>The fruit begins to ripen fast;</l>
+		<l>The flowers bloom with lovely grace.</l>
+	</lg>
   <pb  xml:id="p44" n="44"/>
-  <lg type="poem">
-    <l>But hark! who comes with sheaf of corn</l>
-    <l>Wrapt round her head with grapes so fine?</l>
-    <l>Ah! 'tis Pomona in her prime,</l>
-    <l>Godess of harvest and the vine.</l>
-  </lg>
-  <lg type="poem">
-    <l>The winter comes, when she departs;</l>
-    <l>The spring it bids the birds to sing;</l>
-    <l>While summer days with mirth return,</l>
-    <l>Autumnus tries the fruit to bring.</l>
-  </lg>
+	<lg type="poem">
+		<l>But hark! who comes with sheaf of corn</l>
+		<l>Wrapt round her head with grapes so fine?</l>
+		<l>Ah! 'tis Pomona in her prime,</l>
+		<l>Godess of harvest and the vine.</l>
+	</lg>
+	<lg type="poem">
+		<l>The winter comes, when she departs;</l>
+		<l>The spring it bids the birds to sing;</l>
+		<l>While summer days with mirth return,</l>
+		<l>Autumnus tries the fruit to bring.</l>
+	</lg>
 </lg>-->
 		</div >
 		</body>
@@ -674,6 +711,6 @@ Genoa to Milan. In the suburbs of Milan my master was met by Mr. J—, another s
 <p>W. BENNETT, PRINTER, ABERDEEN.</p>
 		</div>
 
-</back>
-</text>
+		</back>
+	</text>
 </TEI>

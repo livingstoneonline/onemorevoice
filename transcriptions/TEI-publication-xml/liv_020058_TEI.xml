@@ -7,8 +7,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>“Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the 
-Rubber Wars Which Began in 1893”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title>“Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the Rubber Wars Which Began in 1893”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
 				<title type="normalized">‘Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the 
 Rubber Wars Which Began in 1893’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
                 <title type="alternative">“Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the 
@@ -123,6 +122,8 @@ Rubber Wars Which Began in 1893”</title>
         </revisionDesc>
     </teiHeader>
 
+<!-- Statements by a series of unnamed individual from the Congo Free State, as conveyed by one or more unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents -->
+
     <text n="warning">
 		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
@@ -142,7 +143,7 @@ Rubber Wars Which Began in 1893”</title>
 <milestone unit="section" rend="half-line"/>
 <p rend="center">Inclosure 3 in No. 3.</p>
 
-<lb/><p rend="center">(See p. 33.)</p>
+<lb/><p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 33.)--></p>
 
 <lb/><p rend="center italic">Statement in regard to the Condition of the <term type="collective">Natives in <region><geogName>Lake Mantumba</geogName> region</region></term> during the period of 
 the Rubber Wars which began in <date when="1893">1893</date>.</p>
@@ -814,8 +815,6 @@ him away.<space extent="1" unit="chars"/><persName>S T</persName> asked me to br
 <milestone unit="section" rend="half-line"/>
 <gap extent="35" unit="lines" agent="omitted-text"/><!-- Text from next inclosure omitted here. AW -->
 	</div>
-
-<!-- Statements by an unnamed series of individual from the Congo Free State, as conveyed by one or more translators from the Congo Free State to a British government officer and as edited for and published among official British government documents -->
 
             </div>
         </body>   

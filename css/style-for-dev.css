@@ -27,7 +27,7 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-site-blue #235185;
+site-blue #204A79;
 site-red #902D27;
 whitesmoke;
 light gray  #e3e3e3;
@@ -126,7 +126,7 @@ h2{
 h3{
 	font-size: 1em;
 	font-weight: bold;
-	color: #235185;
+	color: #204A79;
 }
 .essay h3{
 	clear: both; /* Needed for Google Translate */
@@ -414,7 +414,7 @@ img,
 }
 a,
 a:visited{
-	color: #235185;
+	color: #204A79;
 	/*text-decoration:none;*/
 }
 a:hover{
@@ -434,7 +434,7 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #235185 solid;
+	border: 3px #204A79 solid;
 }
 @font-face {
     font-family: 'source_sans_proregular';
@@ -987,7 +987,7 @@ body.transcription .title{
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo:hover,
 #google_translate_element div.goog-te-gadget .goog-te-combo:focus{
-	border: 2px #235185 solid;
+	border: 2px #204A79 solid;
 	background-color: #E3E3E3;
 }
 div.skiptranslate:nth-child(1){
@@ -1001,7 +1001,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2){
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
 div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
-	border: 2px #235185 solid;
+	border: 2px #204A79 solid;
 }
 #google_translate_element > div > span > a > img,
 #google_translate_element > div > span > a > img{
@@ -1072,7 +1072,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 }
 .gallery figure a img:hover,
 .gallery figure a:focus img{
-	border: 2px #235185 solid;
+	border: 2px #204A79 solid;
 }
 .gallery figure figcaption{
 	font-size: .8em;
@@ -1140,7 +1140,7 @@ hr{
 	text-align: left;
 }
 .site-blue{
-	color: #235185;
+	color: #204A79;
 }
 .site-red{
 	color: #902D27;

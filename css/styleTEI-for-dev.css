@@ -32,7 +32,7 @@ Table of Contents
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /*
-site-blue #235185;
+site-blue #204A79;
 site-red #902D27;
 whitesmoke;
 light gray #E3E3E3;
@@ -138,7 +138,7 @@ also see 2.9 for manuscript colors
 	line-height: 1.6em;
 	padding: 1em;
 	margin: 1em;
-	border: 1px solid black; /*#235185*/ /*#902D27*/
+	border: 1px solid black; /*#204A79*/ /*#902D27*/
 	display: none;
 	overflow-wrap: initial;
 	word-wrap: initial;
@@ -375,7 +375,7 @@ label.md_switch{
 .back-button a,
 .back-button a:visited{
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	color: #235185;
+	color: #204A79;
 	text-decoration: none;
 	display: none;
 }
@@ -432,7 +432,7 @@ button::-moz-focus-inner{
 
 }
 #rotate-button:focus{
-	border: 2px #235185 solid;
+	border: 2px #204A79 solid;
 }
 #rotate-button.click-color{
 	color: whitesmoke;
@@ -452,7 +452,7 @@ button::-moz-focus-inner{
 /* 2.4. Pagebreaks, linebreaks, linenumbers */
 
 .pb-title{
-	color: #235185;
+	color: #204A79;
 	font-size: .9em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	text-decoration: none;
@@ -902,7 +902,7 @@ table .linenumber{
 }
 .artifact.gray a:hover img,
 .artifact.gray a:focus img{
-	border: 3px #235185 solid;
+	border: 3px #204A79 solid;
 }
 .journal .image-small.inline-left{
 	float: left;
@@ -928,7 +928,7 @@ table .linenumber{
 .country,
 .region,
 .settlement{
-	border-bottom: 1px #235185 dotted;
+	border-bottom: 1px #204A79 dotted;
 } */
 
 /* The following is useful for coding review */
@@ -1458,7 +1458,7 @@ table .linenumber{
 	-o-transform:rotate(310deg); /* Opera */
 }
 .address.liv_020032_0001{
-    color: #235185;
+    color: #204A79;
     font-family: unifrakturmaguntiabook;
 }
 @media only screen and (min-width:480px){

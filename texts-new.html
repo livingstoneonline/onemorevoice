@@ -32,10 +32,11 @@
 				font-size: .75em;
 				font-family: source_sans_proregular, Helvetica, sans-serif;
 				line-height: 1.6em;
-				margin: 2.5em 0;
 				border: 1px solid #858585;
 				border-radius: 9px; 
   				border-spacing: 0;
+				margin: 2.5em 0;  				
+  				width: 100%
 			}
 			@media only screen and (min-width: 768px){
 				table.archival-text{
@@ -48,6 +49,9 @@
 				padding: 10px;
 				border-bottom: 1px solid #858585;
 			}
+			table.archival-text th{
+				font-weight: 300;
+			}			
 			table.archival-text tr:first-child > th{
 				font-size: 1.1em;
 				font-family: Georgia,'Times New Roman',Times,serif;
@@ -224,7 +228,7 @@
 					<ol style="list-style-type: upper-alpha;" id="menu">
 						<li class="toc-title">[Menu: Sections]</li>
 						<li><a href="#summary">Overview</a></li>
-						<li><a href="#authors">Authors and Contributors</a>
+						<li><a href="#authors">Authors & Contributors</a>
 							<ol>
 								<li><a href="#aga">Selim Aga</a></li>
 								<li><a href="#bogharib">Mohammed Bogharib</a></li>
@@ -234,19 +238,20 @@
 								<li><a href="#kagwa">Apolo Kagwa</a></li>
 								<li><a href="#khama">Semane Setlhoko Khama</a></li>
 								<li><a href="#labatt">Philip Cohen Labatt</a></li>
-								<li><a href="#saeid">Lief Ben Saeid; Thomas Wogga</a></li>
-								<li><a href="#moshoeshoe">Moshoeshoe; Nehemiah</a></li>
+								<li><a href="#saeid">Lief Ben Saeid</a></li>
+								<li><a href="#moshoeshoe">Moshoeshoe</a></li>
 								<li><a href="#ncwadi">Ncwadi</a></li>
 								<li><a href="#nehemiah">Nehemiah</a></li>
 								<li><a href="#nosuthu">NoSuthu</a></li>
-								<li><a href="#ranavalona">Ranavalona</a> (also <a href="#ranavalona">Ranavalo-Manjaka I</a>)</li>		
+								<li><a href="#ranavalona">Ranavalona I</a></li>		
 								<li><a href="#read">James Read, Jr.</a></li>
 								<li><a href="#habib">Said Bin Habib</a></li>
 								<li><a href="#osman">Saleh Bin Osman</a></li>
 								<li><a href="#sechele">Sechele</a></li>
 								<li><a href="#soga">Tiyo Soga</a></li>
+								<li><a href="#tause">Tause</a></li>
 								<li><a href="#tippu">Tippu Tip</a></li>
-								<li><a href="#tzatzoe">Jan Tzatzoe</a> (also <a href="#tzatzoe">Dyani Tshatshu</a>)</li>
+								<li><a href="#tzatzoe">Jan Tzatzoe</a></li>
 								<li><a href="#wainwright">Jacob Wainwright</a></li>
 								<li><a href="#wogga">Thomas Wogga</a></li>
 								<li><a href="#informants">Unnamed Central African Informants</a></li>
@@ -271,7 +276,7 @@
 					<p>Users can also download relevant TEI XML files (and related XSL and CSS files) for all critically-edited archival texts from the <span class="italic">One More Voice</span> <a href="https://github.com/livingstoneonline/onemorevoice/tree/master/transcriptions">GitHub repo</a>. If you use our critical editions in your own work, please credit our project as appropriate by using the citation template provided at the end of each item page.</p>
 				</section>
 
-				<h4 class="subsection" id="authors">Authors and Contributors &nbsp;<a href="#menu" class="return-top">top</a></h4>
+				<h4 class="subsection" id="authors">Authors & Contributors &nbsp;<a href="#menu" class="return-top">top</a></h4>
 
 				<table class="archival-text" aria-labelledby="aga">
 					<tr>
@@ -564,62 +569,97 @@
 					</tr>
 				</table>			
 
-					<br />
+				<table class="archival-text" aria-labelledby="ncwadi">
+					<tr>
+						<th id="ncwadi">
+							<span id="liv_020015"></span>
+							<span class="bold">Ncwadi</span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years">Dates unknown</td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; Nineteenth-century leader (“ngkosi”) of the amaNgwane, a clan of the Zulu in South Africa.</td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href="transcriptions/liv_020015_TEI.html">Gleanings and Glances</a></span>” (excerpt), “<span class="bold"><a href="transcriptions/liv_020015_TEI.html">Letter from an African Chief</a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; 12 June 1893, 1 June 1894</td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; Anonymous</td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; Original letter, as edited and published in a British missionary periodical</td>
+					</tr>
+				</table>
 					
-					<section aria-labelledby="ncwadi">
-						<span id="liv_020015"></span>
-						<p class="author-entry" id="ncwadi">
-						<span class="bold">Ncwadi</span> &nbsp;<a href="#menu" class="return-top">top</a><br />
-						Ncwadi (dates unknown) was a nineteenth-century leader (“ngkosi”) of the amaNgwane, a clan of the Zulu in South Africa.</p>
-						<p class="archival-entry">“<a href="transcriptions/liv_020015_TEI.html">Gleanings and Glances</a>” (Excerpt); “<a href="transcriptions/liv_020015_TEI.html">Letter from an African Chief</a>.” <span class="italic">The Illustrated Missionary News</span> 28, no. 6 (June 1, 1894): 81, 93.</p>
-							<ul class="contribution-form">
-								<li>Co-creator: Anonymous</li>
-								<li>Original letter, as edited and published in a British missionary periodical</li>	
-							</ul>
-					</section>
+				<table class="archival-text" aria-labelledby="nehemiah">
+					<tr>
+						<th id="nehemiah">
+							<span class="bold">Nehemiah</span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years">See entry for <a href="#moshoeshoe">Moshoeshoe &#8226; Nehemiah</a>.</td>
+					</tr>
+				</table>					
 
-					<br />
+				<table class="archival-text" aria-labelledby="nosuthu">
+					<tr>
+						<th id="nosuthu">
+							<span id="liv_020018"></span><span id="liv_020043"></span>
+							<span class="bold">NoSuthu &nbsp;|&nbsp; Tause</span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years">(NoSuthu) c.1805-1887 &nbsp;|&nbsp; (Tause) Dates unknown</td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; (NoSuthu) Great Wife of Soga, counsellor to Ngqika (leader of the AmaGcaleka Xhosa), and mother of six children, including the Rev. Tiyo Soga (ordained missionary of the United Presbyterian Church); after her conversion to Christianity, lived in the Tyumi Valley at the Glasgow African Missionary Station run by Rev. William Chalmers. (Tause) Sister-in-law of NoSuthu.</td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href="transcriptions/liv_020043_TEI.html">Foreign Missions. Caffreland</a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; October 1873, 2 March 1874</td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; John Cumming</td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; Original letter (NoSuthu) as dictated (to Tause), then conveyed to and translated by a British missionary and published as part of an essay in a British missionary periodical</td>
+					</tr>
+				</table>
 
-					<section aria-labelledby="nehemiah">
-						<p class="author-entry" id="nehemiah">
-						<span class="bold">Nehemiah &nbsp;<a href="#menu" class="return-top">top</a></span><br />
-						See entry for <a href="#moshoeshoe">Moshoeshoe; Nehemiah</a>.</p>
-					</section>
-				
-					<br />
-					
-					<section aria-labelledby="nosuthu">
-						<span id="liv_020018"></span><span id="liv_020043"></span>
-						<p class="author-entry" id="nosuthu">
-						<span class="bold">NoSuthu</span> &nbsp;<a href="#menu" class="return-top">top</a><br />
-						NoSuthu (c.1805-1887) was the Great Wife of Soga, counsellor to Ngqika (the chief of the AmaGcaleka Xhosa), and mother of six children, including the Reverend Tiyo Soga (ordained missionary of the United Presbyterian Church); after her conversion to Christianity, she lived in the Tyumi Valley at the Glasgow African Missionary Station run by Reverend William Chalmers.</p>
-						<p class="archival-entry">“<a href="transcriptions/liv_020043_TEI.html">Foreign Missions. Caffreland</a>” (Excerpt). <span class="italic">Missionary Record of the United Presbyterian Church</span>, New Series, 5, no. 44 (March 2, 1874): 53.</p>
-						<ul class="contribution-form">
-							<li>Co-creators: Tause; John Cumming</li>
-							<li>Original letter, as dictated to sister-in-law, translated by a British missionary, then published as part of an essay in a British missionary periodical</li>
-						</ul>
-						<!--<p class="archival-entry">“<a href="transcriptions/liv_020018_TEI.html">Letter of Gratitude from a Kafir Woman</a>.” <span class="italic">Wesleyan Juvenile Offering: A Miscellany of Missionary Info</span>, no. 89 (May 1, 1874): 54, 56.</p>
-							<ul class="contribution-form">
-								<li>Co-creator: Anonymous</li>
-								<li>Original letter, as translated and published in a British missionary periodical</li>	
-							</ul>-->
-					</section>
-
-					<br />
-					
-					<section aria-labelledby="ranavalona">
-						<span id="liv_020044"></span>
-						<p class="author-entry" id="ranavalona">
-						<span class="bold">Ranavalona I</span> (also <span class="bold">Ranavalo-Manjaka I</span>) &nbsp;<a href="#menu" class="return-top">top</a><br />
-						Ranavalona I (c.1778-1861; <a href="https://en.wikipedia.org/wiki/Ranavalona_I">Wikipedia</a>) was the queen of Madagascar from 1828-61 and known for policies that oppossed the influence of European politics and culture.</p>
-						<p class="archival-entry">“<a href="transcriptions/liv_020044_TEI.html">The Late Mr. James Cameron of Madagascar</a>” (Excerpt). <span class="italic">Cape Monthly Magazine</span> 13 (March 1, 1876): 178–79.</p>
-						<ul class="contribution-form">
-							<li>Co-creator: Charles Frederick Arrowsmith Moss</li>
-							<li>Funeral proclamation, as read by a representative and as transcribed, translated, and published as part of an obituary by a British writer in a British periodical</li>
-						</ul>
-					</section>
-
-					<br />		
+				<table class="archival-text" aria-labelledby="ranavalona">
+					<tr>
+						<th id="ranavalona">
+							<span id="liv_020044"></span>
+							<span class="bold">Ranavalona I</span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years">c.1778-1861 &nbsp;&#8226;&nbsp; <a href="https://en.wikipedia.org/wiki/Ranavalona_I">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; Also Ranavalo-Manjaka I; queen of Madagascar from 1828-61; known for policies that oppossed the influence of European politics and culture.</td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href="transcriptions/liv_020044_TEI.html">The Late Mr. James Cameron of Madagascar</a></span>” (excerpt)</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; 1875, 1 March 1876</td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; Charles Frederick Arrowsmith Moss</td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; Funeral proclamation, as read by an anonymous representative and as transcribed, translated, and published as part of an obituary by a British writer in a British periodical</td>
+					</tr>
+				</table>	
 					
 					<section aria-labelledby="read">
 						<span id="liv_020010"></span><span id="liv_020033"></span>
@@ -638,7 +678,32 @@
 							</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="habib">
 						<span id="liv_020001"></span>
@@ -662,7 +727,32 @@
 							</ul>	
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="osman">
 						<span id="liv_012056"></span><span id="liv_020002"></span>
@@ -679,7 +769,32 @@
 							</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="sechele">
 						<span id="liv_003027"></span><span id="liv_020019"></span><span id="liv_020021"></span><span id="liv_020029"></span>
@@ -708,7 +823,32 @@
 							</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 					
 					<section aria-labelledby="soga">
 						<span id="liv_020022"></span>
@@ -721,8 +861,44 @@
 							<li>Original speech, as edited and published within an article in a British periodical</li>
 						</ul>
 					</section>
+					
+				<table class="archival-text" aria-labelledby="tause">
+					<tr>
+						<th id="tause">
+							<span class="bold">Tause</span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years">See entry for <a href="#nosuthu">NoSuthu &#8226; Tause</a>.</td>
+					</tr>
+				</table>						
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="tippu">
 						<span id="liv_020028"></span>
@@ -736,7 +912,32 @@
 						</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="tzatzoe">
 						<span id="liv_020035"></span>
@@ -751,7 +952,32 @@
 						</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="wainwright">
 						<span id="liv_000017"></span><span id="liv_000074"></span><span id="liv_000085"><span id="liv_000075"></span></span><span id="liv_000138"></span><span id="liv_000139"></span><span id="liv_020013"></span><span id="liv_020014"></span>	
@@ -792,7 +1018,32 @@
 							</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="wogga">
 						<p class="author-entry" id="wogga">
@@ -800,7 +1051,32 @@
 						See entry for <a href="#saeid">Lief Ben Saeid; Thomas Wogga</a>.</p>
 					</section>
 				
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="informants">
 						<span id="liv_020042"></span>
@@ -814,7 +1090,32 @@
 						</ul>
 					</section>
 
-					<br />
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
 
 					<section aria-labelledby="cfs-informants">
 						<span id="liv_020057"></span><span id="liv_020058"></span><span id="liv_020059"></span><span id="liv_020060"></span>
@@ -842,6 +1143,34 @@
 							<li>Q&A with a series of unnamed individuals from the Congo Free State, as conveyed by two unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents</li>
 						</ul>
 					</section>
+					
+				<table class="archival-text" aria-labelledby="">
+					<tr>
+						<th id="">
+							<span id=""></span>
+							<span class="bold"></span>
+						</th>
+					</tr>
+					<tr>
+						<td class="years"> &nbsp;&#8226;&nbsp; <a href="">Wikipedia</a></td>
+					</tr>
+					<tr>
+						<td>Biography:&nbsp; </td>
+					</tr>
+					<tr class="item">
+						<td>“<span class="bold"><a href=""></a></span>”</td>
+					</tr>
+					<tr>
+						<td class="details">Date(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Co-creator(s):&nbsp; </td>
+					</tr>
+					<tr>
+						<td class="details">Format:&nbsp; </td>
+					</tr>
+				</table>
+					
 				</section>	
 			</main>
 

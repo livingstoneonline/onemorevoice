@@ -9,12 +9,20 @@
             <titleStmt>
                 <title>Extract from Diary</title>
                 <title type="alternative">Extract from Diary, May-June 1873</title><!-- Change; note addition of date -->
-                <author>Wainwright, Jacob, c.1851/2-1892</author>
-                <author role="first">Wainwright, Jacob</author>
-				<author role="first-normalized">Jacob Wainwright</author>
-				<!-- <author> = surname, forename, dates [archival version of name] -->
-				<!-- <author role="first"> = surname, forename [used to generate citation specs; needed only for first author in list] -->
-				<!-- <author role="first-normalized"> and <author role="normalized"> = forename surname [used to generate header details] --><principal>Adrian S. Wisnicki</principal>
+				<author>Christie, James</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author>Wainwright, Jacob, c.1851/2-1892</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author>Paterson, A. [?]</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Christie, James</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">James Christie</author>
+				<!-- First author only: Forename Surname -->
+				<author role="normalized">Jacob Wainwright</author>
+				<author role="normalized">A. [?] Paterson</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->					
+				<principal>Adrian S. Wisnicki</principal>
                 <respStmt xml:id="AM">
                     <name>Anne Martin</name>
                     <resp>Transcription</resp>
@@ -68,14 +76,15 @@
                                 but thought not to be the author's - likely to be that of the donor, who claims to be Dr James Christie's nephew.</handNote>
                             <handNote xml:id="U3"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's - likely to be a scribe working for Dr James Christie.</handNote>
-                            <handNote xml:id="JC"><label>Unknown Hand</label> This is the hand of Dr James Christie, medical officer at Zanzibar at the time of 
-                                Livingstone's death.</handNote>
+                            <handNote><label>Unknown Hand</label> This is the hand of Dr James Christie, medical officer at Zanzibar at the time of Livingstone's death.</handNote>
                         </handDesc>
                     </physDesc>
                 </msDesc>
                 <bibl type="sourceMetadata">
                     <title>Extract from Diary</title>
+					<author xml:id="JC">Christie, James</author>
                     <author xml:id="JW">Wainwright, Jacob, c.1851/2-1892</author>
+					<author xml:id="AP">Paterson, A. [?]</author>
                     <date type="composition" from="1873-05-01" to="1873-06-01">May-June 1873</date><!-- Change, including attributes -->
                     <placeName type="compositionPlace">[East Africa]</placeName>
                 </bibl>

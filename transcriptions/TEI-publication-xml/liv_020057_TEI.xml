@@ -102,7 +102,8 @@
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="compositions" when="1903">[1903]</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="publication" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
                     <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              </bibl>
             </sourceDesc>

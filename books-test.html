@@ -28,13 +28,19 @@
 			gtag('config', 'UA-31768072-5');
 		</script>
 		<style>
-			h5.books{
-				margin: 0 0 2.5em 0;
-				background-color: #dbe6f5;
-				padding: 14px 14px;
-				border-radius: 8px;
+			#books{
+				font-size: .95em;
 			}
-			h5.books,
+			#books h4{
+				margin: 0 0 1.5em 0;
+				color: white;
+				background-color: #204a79;
+				padding: 12px 14px;
+				border-radius: 8px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.15em;
+			}
 			.published-author,
 			.author-details,
 			.works-list{
@@ -44,13 +50,13 @@
 				color: #262626;
 				background-color: #e3e3e3;
 				border-radius: 8px 8px 0 0;
-				padding: 14px 14px;
+				padding: 12px 16px;
 				margin: 0;
 				display: flex;
         		justify-content: space-between;
 			}
 			.published-author .return-top{
-				font-size: .85em;
+				font-size: .9em;
 				float: right;
 				margin-top: .25em;
 				white-space: nowrap;
@@ -65,23 +71,25 @@
 				color: #a83c37;
 				background-color: whitesmoke;
 			}
+			.author-details,
+			.works-list{
+				font-size: .95em;
+			}
 			.author-details{
-				padding: .5em 1.5em;
+				padding: .8em 1.5em .2em 1.5em;
 				margin: 0;
 				border-top: none;
 				border-bottom: none;
 			}
 			.works-list{
-				padding: .5em 1em 0 2.5em;
-				margin: 0 0 2.5em 0;
+				padding: 1em 1em .7em 2.5em;
+				margin: 0 0 2em 0;
 				border-radius: 0 0 8px 8px;
 				border-top: none;
 			}
-			/* .published-author{
-				#858585
-				#204A79
-				#DBE6F5
-			}*/
+			.works-list li {
+    			padding: 0 0 .7em 0;
+			}
 		</style>
 	</head>
 
@@ -230,9 +238,9 @@
 					<ol style="list-style-type: upper-roman;" id="menu">
 						<li class="toc-title">[Menu: Sections]</li>
 						<li><a href="#summary">Overview</a></li>
-						<li><a href="#books">Book-Length Published Works</a>
+						<li>Authors
 							<ol style="list-style-type: upper-alpha;">
-								<li style="padding-top: .75em;">Sub-Saharan Africa
+								<li style="padding-top: .75em;"><a href="#sub-saharan-africa">Sub-Saharan Africa</a>
 									<ol>
 										<li><a href="#asa-asa">Louis Asa-Asa</a></li>
 										<li><a href="#bokwala">Bokwala</a></li>
@@ -248,24 +256,24 @@
 										<li><a href="#soga">Tiyo Soga</a></li>
 									</ol>															
 								</li>
-								<li style="padding-top: .75em;">Northern Africa
+								<li style="padding-top: .75em;"><a href="#northern-africa">Northern Africa</a>
 									<ol>
 										<li><a href="#al-hakim">Tawfiq al-Hakim</a></li>
 									</ol>
 								</li>
-								<li style="padding-top: .75em;">South Asia
+								<li style="padding-top: .75em;"><a href="#south-asia">South Asia</a>
 									<ol>
 										<li><a href="#aurobindo">Sri Aurobindo</a></li>
 										<li><a href="#banerjea">S.B. Banerjea</a></li>
-										<li><a href="#chatterjee">Bankim Chandra Chatterjee/Chatterji/Chattopadhyay</a></li>
-										<li><a href="#scchatterji">Sarat Chandra Chatterjee/Chattopadhyay</a></li>
+										<li><a href="#chatterjee">Bankim Chandra Chatterjee</a></li>
+										<li><a href="#scchatterji">Sarat Chandra Chatterjee</a></li>
 										<li><a href="#derozio">Henry Louis Vivian Derozio</a></li>
-										<li><a href="#mmdutt">Michael Madhusudan Dutt/Dutta</a></li>																				
+										<li><a href="#mmdutt">Michael Madhusudan Dutt</a></li>																				
 										<li><a href="#dutt">Toru Dutt</a></li>
 										<li><a href="#hossain">Rokeya Sakhawat Hossain</a></li>	
 										<li><a href="#malabari">Behrámji Malábari</a></li>
 										<li><a href="#mukerji">Dhan Gopal Mukerji</a></li>
-										<li><a href="#mukharji">T. N. Mukharji</a> (also <a href="#mukharji">Troilokyanath Mukhopadhyay</a>)</li>
+										<li><a href="#mukharji">T. N. Mukharji</a></li>
 										<li><a href="#naidu">Sarojini Naidu</a></li>
 										<li><a href="#sarasvati">Pandita Ramabai Sarasvati</a></li>
 										<li><a href="#satthianadhan">Krupabai Satthianadhan</a></li>
@@ -281,7 +289,7 @@
 										<li><a href="#yuwaalaraay">Unnamed Yuwaalaraay Informants</a>; <a href="#yuwaalaraay">Tommy McRae</a></li>
 									</ol>
 								</li> -->
-								<li style="padding-top: .75em;">Caribbean
+								<li style="padding-top: .75em;"><a href="#caribbean">Caribbean</a>
 									<ol>
 										<li><a href="#blyden">Edward Wilmot Blyden</a></li>
 										<li><a href="#labatt">Philip Cohen Labatt</a></li>
@@ -291,16 +299,16 @@
 										<li><a href="#thomas">J.J. Thomas</a></li>	
 									</ol>	
 								</li>
-								<li style="padding-top: .75em;">Europe
+								<li style="padding-top: .75em;"><a href="#europe">Europe</a>
 									<ol>
 										<li><a href="#freeman">Thomas Birch Freeman</a></li>						
 									</ol>
 								</li>						
-								<li style="padding-top: .75em;">North America
+								<li style="padding-top: .75em;"><a href="#north-america">North America</a>
 									<ol>
-										<li><a href="#far">Sui Sin Far</a> (also <a href="#far">Edith Maude Eaton</a>)</li>
-										<li><a href="#johnson">E. Pauline Johnson</a> (also <a href="#johnson">Tekahionwake</a>)</li>
-										<li><a href="#watanna">Onoto Watanna</a> (also <a href="#watanna">Winifred Eaton</a> and <a href="#watanna">Winifred Reeve</a>)</li>
+										<li><a href="#far">Sui Sin Far</a></li>
+										<li><a href="#johnson">E. Pauline Johnson</a></li>
+										<li><a href="#watanna">Onoto Watanna</a></li>
 									</ol>
 								</li>
 							</ol>
@@ -315,24 +323,23 @@
 					<h4 id="summary">
 					Overview &nbsp;<a href="#menu" class="return-top">top</a></h4>
 
-					<p><span class="italic">One More Voice</span> helps contextualize the <a href="texts.html">critically-edited archival texts</a> published by the site by providing an <a href="#books">extended list</a> of Victorian-era, book-length published works by non-European, mostly Anglophone authors from the British Empire. The length of these works makes full-scale critical editing impractical, but the extended list connects nearly every entry to an open-access, digitized version of the original book.</p>
+					<p><span class="italic">One More Voice</span> helps contextualize the <a href="texts.html">critically-edited archival texts</a> published by the site by providing an extended list of Victorian-era, book-length published works by non-European, mostly Anglophone authors from the British Empire (see below). The length of these works makes full-scale critical editing impractical, but the extended list connects nearly every entry to an open-access, digitized version of the original book.</p>
 						
 					<p>The digitized versions include print-edition facsimiles from the <a href="https://archive.org/">Internet Archive</a> and <a href="https://www.hathitrust.org/">Hathi Trust</a> as well as text-only editions from Amardeep Singh's corpus of <a href="https://github.com/amardeepmsingh/Colonial-South-Asian-Literature">Colonial South Asian Literature</a> (2020). Such digital repurposing extends the minimalist <a href="project_design.html">development ethos</a> of <span class="italic">One More Voice</span>, while also enhancing the research and teaching value of the project as a whole. Links to corresponding <a href="https://www.wikipedia.org/">Wikipedia</a> pages and other fairly reliable biographical sources are also included when available.</p>
 					
 					<p>That said, users are urged to apply critical caution when consulting the items listed on this page for two reasons. First, the <span class="italic">One More Voice</span> project can not vouch for the quality of third-party items such as Wikipedia entries and digitized books on external sites. Second, the texts listed on this page – like those in the <a href="texts.html">archival texts</a> section of <span class="italic">One More Voice</span> – reflect the cultural beliefs, distortions, and prejudices of the time and may contain material that will upset or distress some readers.</p>
 				</section> 
 
-				<br />
+				<hr class="title-hr"/>
 					
-				<section aria-labelledby="books">
-					<h4 style="padding-bottom: 1em;" id="books">
-					Book-Length Published Works &nbsp;<a href="#menu" class="return-top">top</a></h4>
-
+				<section id="books">
 					<section aria-labelledby="sub-saharan-africa">
-					<h5 class="books" id="sub-saharan-africa">Sub-Saharan Africa</h5>
+						<h4><span id="sub-saharan-africa">Sub-Saharan Africa</span></h4>
 					
 						<section aria-labelledby="asa-asa">
-							<p class="published-author" id="asa-asa"><span class="bold">Louis Asa-Asa</span> (Dates unknown) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="asa-asa">Louis Asa-Asa</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">Dates unknown</p>
 
 							<ol class="works-list">
 								<li><a href="http://digilib.nypl.org/dynaweb/digs/wwm97262/@Generic__BookView">The History of Mary Prince, a West Indian Slave; The Narrative of Asa-Asa, a Captured African</a>. London; Edinburgh: F. Westley and A.H. Davis; Waugh & Innes, 1831.</li>
@@ -340,7 +347,10 @@
 						</section>
 
 						<section aria-labelledby="bokwala">
-							<p class="published-author" id="bokwala"><span class="bold">Bokwala</span> (Dates unknown; possibly fictional or composite author) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="bokwala">Bokwala</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">Dates unknown &nbsp;|&nbsp; Possibly fictional or composite author</p>
+
 							<ol class="works-list">
 								<li><a href="https://archive.org/details/BokwalaTheStoryOfACongoVictim">Bokwala: The Story of a Congo Victim</a>. London: The Religious Tract Society, 1910. <a href="https://archive.org/details/bokwalastoryofco00cong/page/n7/mode/2up">Alternate version</a>.</li>
 							</ol>
@@ -349,7 +359,7 @@
 						<section aria-labelledby="delano">
 							<p class="published-author"><span class="bold" id="delano">Isaac O. Delano</span> <a href="#menu" class="return-top">top</a></p>
 
-							<p class="author-details">1904-1979 &nbsp;&#8226;&nbsp; <a href="https://en.wikipedia.org/wiki/Isaac_Delano">Wikipedia</a></p>
+							<p class="author-details">1904-1979 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Isaac_Delano">Wikipedia</a></p>
 
 							<ol class="works-list">
 								<li><span class="italic">The Soul of Nigeria</span>. London: T. Werner Laurie, 1937.</li>
@@ -357,7 +367,9 @@
 						</section>
 
 						<section aria-labelledby="dhlomo">
-							<p class="published-author" id="dhlomo"><span class="bold">R.R.R. Dhlomo</span> (1901-1971; <a href="https://www.britannica.com/biography/R-R-R-Dhlomo">Encyclopædia Britannica</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="dhlomo">R.R.R. Dhlomo</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1901-1971 &nbsp;|&nbsp; <a href="https://www.britannica.com/biography/R-R-R-Dhlomo">Encyclopædia Britannica</a></p>
 
 							<ol class="works-list">
 								<li><span class="italic">An African Tragedy</span>. [Lovedale]: Lovedale Institution Press, 1928.</li>
@@ -365,7 +377,9 @@
 						</section>
 
 						<section aria-labelledby="hayford">
-							<p class="published-author" id="hayford"><span class="bold">J.E. Casely Hayford</span> (1866-1930; <a href="https://en.wikipedia.org/wiki/J._E._Casely_Hayford">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="hayford">J.E. Casely Hayford</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1866-1930 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/J._E._Casely_Hayford">Wikipedia</a></p>
 
 							<ol class="works-list">
 								<li><a href="https://archive.org/details/ethiopiaunbounds00hayf">Ethiopia Unbound</a>. London: C.M. Phillips, 1911.</li>
@@ -377,7 +391,9 @@
 						</section>
 
 						<section aria-labelledby="horton">
-							<p class="published-author" id="horton"><span class="bold">James Africanus Beale Horton</span> (1835-1883; <a href="https://en.wikipedia.org/wiki/Africanus_Horton">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="horton">James Africanus Beale Horton</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1835-1883 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Africanus_Horton">Wikipedia</a></p>
 
 							<ol class="works-list">
 								<li><a href="https://babel.hathitrust.org/cgi/pt?id=hvd.hw2l0p&view=1up&seq=5">Physical and Medical Climate and Meteorology of the West Coast of Africa</a>. London: John Churchill & Sons, 1867.</li>
@@ -387,7 +403,9 @@
 						</section>
 
 						<section aria-labelledby="kagwa">
-							<p class="published-author" id="kagwa"><span class="bold">Apolo Kagwa</span> (1864-1927; <a href="https://en.wikipedia.org/wiki/Apollo_Kaggwa">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="kagwa">Apolo Kagwa</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1864-1927 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Apollo_Kaggwa">Wikipedia</a></p>
 
 							<ol class="works-list">
 								<li><a href="https://archive.org/details/customsofbaganda0000kagw/page/n5/mode/2up">The Customs of the Baganda</a>. New York: Columbia University Press, 1934.</li>
@@ -395,7 +413,9 @@
 						</section>
 
 						<section aria-labelledby="mofolo">
-							<p class="published-author" id="mofolo"><span class="bold">Thomas Mofolo</span> (1876-1948; <a href="https://en.wikipedia.org/wiki/Thomas_Mofolo">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="mofolo">Thomas Mofolo</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1876-1948 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Thomas_Mofolo">Wikipedia</a></p>
 
 							<ol class="works-list">
 								<li><a href="https://archive.org/details/chakahistoricalr00mofo/page/n5/mode/2up">Chaka</a>. Translated by F.H. Dutton. London: Oxford University Press, 1931. <span class="italic">Originally written 1909.</span></li>
@@ -405,7 +425,9 @@
 						</section>
 
 						<section aria-labelledby="mqhayi">
-							<p class="published-author" id="mqhayi"><span class="bold">S.E.K. Mqhayi</span> (1875-1945; <a href="https://en.wikipedia.org/wiki/Samuel_Edward_Krune_Mqhayi">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="mqhayi">S.E.K. Mqhayi</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1875-1945 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Samuel_Edward_Krune_Mqhayi">Wikipedia</a></p>
 							
 							<ol class="works-list">
 								<li><span class="italic">Abantu Besizwe: Historical and Biographical Writings, 1902-1944</span>. Translated by Jeff Opland. Johannesburg: Witts University Press, 2009.</li>
@@ -417,7 +439,9 @@
 						</section>
 									
 						<section aria-labelledby="mukasa">
-							<p class="published-author" id="mukasa"><span class="bold">Ham Mukasa</span> (c.1870-1956; <a href="https://en.wikipedia.org/wiki/Ham_Mukasa">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="mukasa">Ham Mukasa</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">c.1870-1956 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Ham_Mukasa">Wikipedia</a> &nbsp;|&nbsp; Also see: <a href="artifacts.html#liv_021016">Artifacts</a></p>
 
 							<ol class="works-list">
 								<li><a href="https://archive.org/details/ugandaskatikiroi00mukaiala">Uganda’s Katikiro in England</a>. Edited and translated by Ernest Millar. London: Hutchinson &amp; Co., 1904.</li>
@@ -427,7 +451,9 @@
 						</section>
 
 						<section aria-labelledby="plaatje">
-							<p class="published-author" id="plaatje"><span class="bold">Solomon T. Plaatje</span> (1876-1932; <a href="https://en.wikipedia.org/wiki/Sol_Plaatje">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="plaatje">Solomon T. Plaatje</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1876-1932 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Sol_Plaatje">Wikipedia</a> &nbsp;|&nbsp; Also see: <a href="artifacts.html#liv_021018">Artifacts</a></p>
 
 							<ol class="works-list">
 								<li><span class="italic">Mhudi</span>. Lovedale: Lovedale Press, 1930.</li>
@@ -441,7 +467,9 @@
 						</section>
 
 						<section aria-labelledby="soga">
-							<p class="published-author" id="soga"><span class="bold">Tiyo Soga</span> (c.1831-1871; <a href="https://en.wikipedia.org/wiki/Tiyo_Soga">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author"><span class="bold" id="soga">Tiyo Soga</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">c.1831-1871 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Tiyo_Soga">Wikipedia</a> &nbsp;|&nbsp; Also see: <a href="texts.html#soga-toc">Archival Texts</a></p>
 
 							<ol class="works-list">
 								<li>Soga, Tiyo. <span class="italic">The Journals and Selected Writings of the Reverend Tiyo Soga</span>. Edited by Donovan Williams. Cape Town: Balkema, 1983.
@@ -451,14 +479,14 @@
 					</section>
 
 					<br />
-					<hr />
-					<br />		
 
 					<section aria-labelledby="northern-africa">
-					<h5 class="books" id="northern-africa">Northern Africa</h5>
+						<h4><span id="northern-africa">Northern Africa</span></h4>
 
 						<section aria-labelledby="al-hakim">
-							<p class="published-author" id="al-hakim"><span class="bold">Tawfiq al-Hakim</span> (1898-1987; <a href="https://en.wikipedia.org/wiki/Tawfiq_al-Hakim">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
+							<p class="published-author" id="al-hakim"><span class="bold">Tawfiq al-Hakim</span> <a href="#menu" class="return-top">top</a></p>
+
+							<p class="author-details">1898-1987 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Tawfiq_al-Hakim">Wikipedia</a></p>
 
 							<ol class="works-list">
 								<li><span class="italic">Diary of a Country Prosecutor</span>. London: Saqi, 2005. <span class="italic">Originally published 1933.</span></li>
@@ -473,11 +501,9 @@
 					</section>
 
 					<br />
-					<hr />
-					<br />
 
 					<section aria-labelledby="south-asia">
-					<h5 class="books" id="south-asia">South Asia</h5>
+						<h4><span id="south-asia">South Asia</span></h4>
 
 						<section aria-labelledby="aurobindo">
 							<p class="published-author" id="aurobindo"><span class="bold">Sri Aurobindo</span> (1872-1950; <a href="https://en.wikipedia.org/wiki/Sri_Aurobindo">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
@@ -547,7 +573,6 @@
 								<li><span class="italic">The Homecoming</span> [<span class="italic">Palli Samaj</span>]. Translated by Prasenjit Mukherjee. Calcutta: Rupa & Co., 1989. <span class="italic">Originally published 1916</span>.</li>
 
 								<li><span class="italic">The Right of Way</span> [<span class="italic">Pather Dabi</span>]. Translated by Prasenjit Mukherjee. New Delhi: Rupa & Co., 1993. <span class="italic">Originally published 1926</span>.</li>
-
 
 							</ol>
 						</section>			
@@ -790,8 +815,6 @@
 					</section>
 
 					<br />
-					<hr />
-					<br />		
 
 					<!-- <section aria-labelledby="oceania">
 					<h5 class="books" id="oceania">Oceania</h5>
@@ -810,8 +833,8 @@
 					<br /> -->
 
 					<section aria-labelledby="caribbean">
-					<h5 class="books" id="caribbean">Caribbean</h5>
-
+						<h4><span id="caribbean">Caribbean</span></h4>
+						
 						<section aria-labelledby="blyden">
 							<p class="published-author" id="blyden"><span class="bold">Edward Wilmot Blyden</span> (1832-1912; <a href="https://en.wikipedia.org/wiki/Edward_Wilmot_Blyden">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
 
@@ -899,12 +922,10 @@
 						</section>
 					</section>
 					
-					<br />
-					<hr />
-					<br />		
+					<br />	
 
 					<section aria-labelledby="europe">
-					<h5 class="books" id="europe">Europe</h5>
+						<h4><span id="europe">Europe</span></h4>
 
 						<section aria-labelledby="freeman">
 							<p class="published-author" id="freeman"><span class="bold">Thomas Birch Freeman</span> (1809-1890; <a href="https://en.wikipedia.org/wiki/Thomas_Birch_Freeman">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
@@ -922,11 +943,9 @@
 					</section>
 					
 					<br />
-					<hr />
-					<br />		
 
 					<section aria-labelledby="north-america">
-					<h5 class="books" id="north-america">North America</h5>
+						<h4><span id="north-america">North America</span></h4>
 
 						<section aria-labelledby="far">
 							<p class="published-author" id="far"><span class="bold">Sui Sin Far</span> (also <span class="bold">Edith Maude Eaton</span>; 1865-1914; <a href="https://en.wikipedia.org/wiki/Sui_Sin_Far">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>

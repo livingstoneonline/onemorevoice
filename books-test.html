@@ -43,13 +43,22 @@
 			.published-author{
 				color: #262626;
 				background-color: #e3e3e3;
-				border-bottom: none;
 				border-radius: 8px 8px 0 0;
 				padding: 14px 14px;
 				margin: 0;
+				display: flex;
+        		justify-content: space-between;
 			}
 			.published-author .return-top{
-				
+				font-size: .85em;
+				float: right;
+				margin-top: .25em;
+				white-space: nowrap;
+			}
+			@media only screen and (min-width: 480px){
+				.published-author .return-top{
+					margin-right: .5em;
+				}
 			}
 			.published-author a.return-top:hover,
 			.published-author a.return-top:focus{
@@ -59,6 +68,7 @@
 			.author-details{
 				padding: .5em 1.5em;
 				margin: 0;
+				border-top: none;
 				border-bottom: none;
 			}
 			.works-list{
@@ -67,10 +77,6 @@
 				border-radius: 0 0 8px 8px;
 				border-top: none;
 			}
-			/* .published-author a{
-				color: white;
-			}*/
-
 			/* .published-author{
 				#858585
 				#204A79

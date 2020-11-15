@@ -1155,10 +1155,10 @@ table.archival-text .details{
 
 /* 1.8. Book-Length Works */
 
-/* #books{
+#books{
 	font-size: .95em;
 }
-#books h4
+#books h4,
 .published-author,
 .author-details,
 .works-list{
@@ -1220,6 +1220,19 @@ table.archival-text .details{
 }
 #books section:last-of-type section:last-of-type .works-list:last-of-type{
 	margin-bottom: 1em;
+}
+
+/* The following items are used on the books.html page. */
+/* .published-author{
+	padding: 1.5em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.works-list{
+		padding: 0 0 0 2em;
+	}
+}
+.works-list li{
+	padding: 0 0 .75em 0;
 } */
 
 
@@ -1313,19 +1326,6 @@ ol li ol{
 	ol li ol{
 		padding-left: 1.2em;
 	}
-}
-
-/* The following items are used on the books.html page. */
-.published-author{
-	padding: 1.5em 0 0 0;
-}
-@media only screen and (min-width: 768px){
-	.works-list{
-		padding: 0 0 0 2em;
-	}
-}
-.works-list li{
-	padding: 0 0 .75em 0;
 }
 
 /* The following item is used on the site_map.html page. */

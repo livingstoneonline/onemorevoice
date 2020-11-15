@@ -1027,7 +1027,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 /* 1.6. Archival Texts */
 
 table.archival-text{
-	font-size: .75em;
+	font-size: .8em;
 	line-height: 1.6em;
 	border: 1px solid #858585;
 	border-radius: 9px; 
@@ -1037,7 +1037,7 @@ table.archival-text{
 }
 @media only screen and (min-width: 768px){
 	table.archival-text{
-		font-size: .85em;
+		font-size: .9em;
 		line-height: 1.5em;
 	}
 }
@@ -1050,12 +1050,28 @@ table.archival-text td{
 	border-bottom: 1px solid #858585;
 }	
 table.archival-text tr:first-child > th{
-	font-size: 1.1em;
+	font-size: 1.15em;
 	color: white;
 	background: #204A79;
 	border-radius: 8px 8px 0 0; 
 	display: flex;
 	justify-content: space-between;
+}
+.archival-text .return-top{
+	font-size: .9em;
+	color: white;
+	white-space: nowrap;
+	margin-top: .05em;
+}
+@media only screen and (min-width: 480px){
+	.archival-text .return-top{
+		margin-right: .5em;
+	}
+}
+.archival-text a.return-top:hover,
+.archival-text a.return-top:focus{
+	color: #a83c37;
+	background-color: #e3e3e3;
 }
 table.archival-text tr:last-child > td{
 	border-bottom: none;
@@ -1075,20 +1091,6 @@ table.archival-text .details{
 	table.archival-text .details{
 		padding: 10px 10px 10px 38px;
 	}
-}
-.archival-text .return-top{
-	color: white;
-	margin-top: .05em;
-}
-@media only screen and (min-width: 480px){
-	.archival-text .return-top{
-		margin-right: .5em;
-	}
-}
-.archival-text a.return-top:hover,
-.archival-text a.return-top:focus{
-	color: #a83c37;
-	background-color: #e3e3e3;
 }
 
 
@@ -1157,7 +1159,14 @@ table.archival-text .details{
 /* 1.8. Book-Length Works */
 
 #books{
-	font-size: .95em;
+	font-size: .85em;
+	line-height: 1.6em;
+}
+@media only screen and (min-width: 768px){
+	#books{
+		font-size: .95em;
+		line-height: 1.5em;
+	}
 }
 #books h4,
 .published-author,
@@ -1176,6 +1185,7 @@ table.archival-text .details{
 	border-radius: 8px;
 }
 .published-author{
+	font-size: 1.05em;
 	color: #262626;
 	background-color: #e3e3e3;
 	border-radius: 8px 8px 0 0;
@@ -1187,8 +1197,7 @@ table.archival-text .details{
 .published-author .return-top{
 	font-size: .9em;
 	white-space: nowrap;
-	float: right;
-	margin-top: .25em;
+	margin-top: .15em;
 }
 @media only screen and (min-width: 480px){
 	.published-author .return-top{
@@ -1199,10 +1208,6 @@ table.archival-text .details{
 .published-author a.return-top:focus{
 	color: #a83c37;
 	background-color: whitesmoke;
-}
-.author-details,
-.works-list{
-	font-size: .95em;
 }
 .author-details{
 	border-top: none;
@@ -1217,7 +1222,7 @@ table.archival-text .details{
 	margin: 0 0 2em 0;
 }
 .works-list li {
-	padding: 0 0 .7em 0;
+	padding: 0 0 .6em 0;
 }
 #books section:last-of-type section:last-of-type .works-list:last-of-type{
 	margin-bottom: 1em;

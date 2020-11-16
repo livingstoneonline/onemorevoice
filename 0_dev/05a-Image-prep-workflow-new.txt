@@ -16,6 +16,10 @@ mogrify -format jpg -resize 1276x1276 -sampling-factor 4:2:0 -strip -quality 85 
 
 mogrify -format jpg -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/1399 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/1399 && find . -exec rename 's|.jpg|-1399px.jpg|' {} + && cd ..
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
+
 ****Regular images-tiffs (vertical-image70) ************ 426, 447, 490, 852, 894, 980
 
 mogrify -format jpg -resize 426x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/426 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/426 && find . -exec rename 's|.jpg|-426px.jpg|' {} + && cd - && 
@@ -29,6 +33,10 @@ mogrify -format jpg -resize 852x -sampling-factor 4:2:0 -strip -quality 85 -inte
 mogrify -format jpg -resize 894x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/894 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/894 && find . -exec rename 's|.jpg|-894px.jpg|' {} + && cd - && 
 
 mogrify -format jpg -resize 980x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/980 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/980 && find . -exec rename 's|.jpg|-980px.jpg|' {} + && cd ..
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
 
 ****Regular images-tiffs (vertical-image73) ************
 
@@ -44,6 +52,10 @@ mogrify -format jpg -resize 932x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 mogrify -format jpg -resize 1020x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/1020 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/1020 && find . -exec rename 's|.jpg|-1020px.jpg|' {} + && cd ..
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
+
 ****Regular images-jpegs************
 
 mogrify -resize 608x608 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/608 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/608 && find . -exec rename 's|.jpg|-608px.jpg|' {} + && cd - && 
@@ -57,6 +69,10 @@ mogrify -resize 1216x1216 -sampling-factor 4:2:0 -strip -quality 85 -interlace J
 mogrify -resize 1276x1276 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/1276 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/1276 && find . -exec rename 's|.jpg|-1276px.jpg|' {} + && cd - && 
 
 mogrify -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/1399 *.jpg  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/1399 && find . -exec rename 's|.jpg|-1399px.jpg|' {} + && cd ..
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
 
 ****Regular images-pngs************
 
@@ -72,6 +88,10 @@ mogrify -format jpg -resize 1276x1276 -sampling-factor 4:2:0 -strip -quality 85 
 
 mogrify -format jpg -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/1399 *.png  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/1399 && find . -exec rename 's|.jpg|-1399px.jpg|' {} + && cd ..
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
+
 ****artifact thumbnails************
 
 mogrify -format jpg -resize 504x504 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/504 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/504&& find . -exec rename 's|.jpg|-504px.jpg|' {} + && cd - && 
@@ -86,13 +106,13 @@ mogrify -format jpg -resize 184x184 -sampling-factor 4:2:0 -strip -quality 85 -i
 
 mogrify -format jpg -resize 167x167 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/One-More-Voice/0_dev/0_image-generating/167 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0_image-generating/167&& find . -exec rename 's|.jpg|-167px.jpg|' {} + && cd .. 
 
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images/thumbnails \;
+
 ***************************************
 
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/essay-images \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/tei-embedded-images \;
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images/thumbnails \;
- find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/artifact-images \;
+
 
 ***************************************
 WORKSPACE

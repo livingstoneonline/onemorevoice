@@ -4,7 +4,7 @@
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id=""><!-- Insert LEAP ID, e.g. "liv_020010 -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_0210xx"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -28,7 +28,7 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date>
-                <idno type="LEAP-ID"></idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+                <idno type="LEAP-ID">liv_0210xx</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
 				<ref target=""></ref>
@@ -136,12 +136,15 @@
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
+	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
+
 	<!-- horiztonal image -->
-	<figure n="artifact" facs="../artifact-images/liv_0210xx_0001_deriv-1399px.jpg">
-		<graphic url="../artifact-images/liv_0210xx_0001_deriv-1399px.jpg" facs="../artifact-images/liv_0210xx_0001_deriv-1399px.jpg 1399w, ../artifact-images/liv_0210xx_0001_deriv-1276px.jpg 1276w, ../artifact-images/liv_0210xx_0001_deriv-1216px.jpg 1216w, ../artifact-images/liv_0210xx_0001_deriv-699px.jpg 699w, ../artifact-images/liv_0210xx_0001_deriv-638px.jpg 638w, ../artifact-images/liv_0210xx_0001_deriv-608px.jpg 608w, ../artifact-images/liv_0210xx_0001_deriv-400px.jpg 400w" n="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"/>
+	<!-- <figure n="artifact" facs="../artifact-images/liv_0210xx_0001_deriv-1399px.jpg">
+		<graphic url="../artifact-images/liv_0210xx_0001_deriv-1399px.jpg" facs="../artifact-images/liv_0210xx_0001_deriv-1399px.jpg 1399w, ../artifact-images/liv_0210xx_0001_deriv-1276px.jpg 1276w, ../artifact-images/liv_0210xx_0001_deriv-1216px.jpg 1216w, ../artifact-images/liv_0210xx_0001_deriv-699px.jpg 699w, ../artifact-images/liv_0210xx_0001_deriv-638px.jpg 638w, ../artifact-images/liv_0210xx_0001_deriv-608px.jpg 608w, ../artifact-images/liv_0210xx_0001_deriv-400px.jpg 400w" n="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"/> -->
+
 	<!-- vertical image -->
-	<!--<figure n="artifact" rend="vertical" facs="../artifact-images/liv_0210xx_0001_deriv-980px.jpg">
-		<graphic url="../artifact-images/liv_0210xx_0001_deriv-980px.jpg" facs="../artifact-images/liv_0210xx_0001_deriv-980px.jpg 980w, ../artifact-images/liv_0210xx_0001_deriv-894px.jpg 894w, ../artifact-images/liv_0210xx_0001_deriv-852px.jpg 852w, ../artifact-images/liv_0210xx_0001_deriv-490px.jpg 490w, ../artifact-images/liv_0210xx_0001_deriv-447px.jpg 447w, ../artifact-images/liv_0210xx_0001_deriv-426px.jpg 426w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>-->
+	<!-- <figure n="artifact" rend="vertical" facs="../artifact-images/liv_0210xx_0001_deriv-980px.jpg">
+		<graphic url="../artifact-images/liv_0210xx_0001_deriv-980px.jpg" facs="../artifact-images/liv_0210xx_0001_deriv-980px.jpg 980w, ../artifact-images/liv_0210xx_0001_deriv-894px.jpg 894w, ../artifact-images/liv_0210xx_0001_deriv-852px.jpg 852w, ../artifact-images/liv_0210xx_0001_deriv-490px.jpg 490w, ../artifact-images/liv_0210xx_0001_deriv-447px.jpg 447w, ../artifact-images/liv_0210xx_0001_deriv-426px.jpg 426w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/> -->
 		<label><!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc>
 	</figure>

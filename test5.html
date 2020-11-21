@@ -19,6 +19,16 @@
 		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
+		<script src="scripts/jquery-3.5.1.min.js"></script> 
+		<script>
+			$(function(){
+			  var includes = $('[data-include]');
+			  jQuery.each(includes, function(){
+				var file = 'views/' + $(this).data('include') + '.html';
+				$(this).load(file);
+			  });
+			});
+		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>
@@ -59,7 +69,7 @@
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<nav class="navspace">
-				<?php include "nav.html" ?>
+				<div data-include="nav"></div>
 			</nav>
 
 			<header class="title" id="title-div">

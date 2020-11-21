@@ -85,10 +85,10 @@
 				</script>
 			</head>
 
-			<xsl:text disable-output-escaping="yes">
+			<!--<xsl:text disable-output-escaping="yes">
         		<![CDATA[<?php flush(); ?>]]>
 				
-			</xsl:text>
+			</xsl:text>-->
 
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
 				<article>			

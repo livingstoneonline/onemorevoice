@@ -789,10 +789,14 @@
 						<span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://onemorevoice.org/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source">
-								<xsl:variable name="link">
-									<xsl:value-of select="@target"/>
-								</xsl:variable>
-								<a href="{$link}"><xsl:value-of select="//publicationStmt/ref" separator="; "/></a>
+								<xsl:for-each select="//publicationStmt/ref">
+									<xsl:variable name="link" select="@target"/>
+									<xsl:variable name="source" select="node()"/>
+									<a href="{$link}"><xsl:value-of select="$source"/></a>
+								   	<xsl:if test="position() != last()">
+								       <xsl:text>; </xsl:text>
+								   	</xsl:if>
+								</xsl:for-each>
 							</xsl:variable>
 							<p><span class="bold">Explore complete/original item:</span><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
 						</xsl:if>

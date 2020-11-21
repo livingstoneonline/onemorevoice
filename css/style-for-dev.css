@@ -135,6 +135,10 @@ h3{
 .essay h3{
 	clear: both; /* Needed for Google Translate */
 }
+.credits h3{
+	font-size: 1.15em;
+	margin-bottom: 1.6em;
+}
 h4{
 	font-style: italic;
 	font-size: 1em;
@@ -386,18 +390,18 @@ img,
 	padding-top: 1.5em;
 }
 .credits{
-	font-size: 1.2em;
+	font-size: 1.15em;
 	line-height: 1.6em;
 	text-align: left;
 }
 @media only screen and (min-width: 768px){
 	.credits{
-		font-size: 1.15em;
+		font-size: 1.1em;
 	}
 }
 @media only screen and (min-width: 992px){
 	.credits{
-		font-size: 1.1em;
+		font-size: 1.05em;
 		display: block !important; /* Tied to overlay */
 	}
 }

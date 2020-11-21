@@ -19,8 +19,6 @@
 		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
-		<link rel="import" href="doc.html">
-		<!-- Taken from https://github.com/LexmarkWeb/csi.js-->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>
@@ -61,12 +59,7 @@
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<nav class="navspace">
-				<script>
-					var doc = document.querySelector('link[rel="import"]').import;
-					// Grab DOM from doc.html's document.
-					var text = doc.querySelector('.doc');
-					document.body.appendChild(text.cloneNode(true));
-				</script>
+				<?php include "nav.html" ?>
 			</nav>
 
 			<header class="title" id="title-div">

@@ -29,6 +29,28 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
+		<style>
+			@media only screen and (min-width: 320px){
+				.navspace{
+					min-height: 59px;
+				}
+			}
+			@media only screen and (min-width: 480px){
+				.navspace{
+					min-height: 64px;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.navspace{
+					min-height: 69px;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.navspace{
+					min-height: 48px;
+				}
+			}
+		</style>
 	</head>
 
 	<?php flush(); ?>
@@ -38,7 +60,9 @@
 
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-			<div data-include="nav.html"></div>
+			<nav class="navspace">
+				<div data-include="nav.html"></div>
+			</nav>
 
 			<header class="title" id="title-div">
 				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->

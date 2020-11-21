@@ -112,7 +112,7 @@
 		    		</header>
 					<xsl:apply-templates select="TEI"/>
 				</article>
-				<script src="scripts/jquery-3.5.1.min.js"></script> 
+				<script src="../scripts/jquery-3.5.1.min.js"></script> 
 				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 				<script>
 					$(function(){

@@ -16,6 +16,7 @@
       <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
       <link rel="manifest" href="../site.webmanifest">
       <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="preload" as="script" href="../scripts/jquery-3.5.1.min.js">
       <link rel="preload" as="font" type="font/woff2" crossorigin="" href="../fonts/sourcesanspro-regular-webfont.woff2">
       <link rel="preload" as="font" type="font/woff" crossorigin="" href="../fonts/sourcesanspro-regular-webfont.woff">
       <link rel="preload" as="style" href="../css/font-awesome.min.css" onload="this.rel='stylesheet'">
@@ -27,92 +28,9 @@
 			
 			  		gtag('config', 'UA-31768072-5');
 				</script></head>
-        		<?php flush(); ?>
-				
-			
    <body class="transcription ">
       <article>
-         <nav id="skiptocontent" aria-labelledby="nav0"><a href="#credits1-div" id="nav0" tabindex="0">skip to main content</a></nav>
-         <nav class="topnav" aria-labelledby="nav1">
-            <ul role="menubar" id="nav1" aria-label="Site Sections">
-               <li role="none"><a role="menuitem" aria-haspopup="false" href="../index.html">home</a></li>
-               <li role="none">
-                  <div class="dropdown" role="menuitem" data-menu-component=""><input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false"><label class="dropbtn" for="toggle-1" data-opens-menu="">
-                        										materials
-                        										<span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
-                        <ul role="none">
-                           <li role="none"><a role="menuitem" href="../texts.html">archival texts</a></li>
-                           <li role="none"><a role="menuitem" href="../artifacts.html">artifacts</a></li>
-                           <li role="none"><a role="menuitem" href="../books.html">book-length works</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </li>
-               <li role="none">
-                  <div class="dropdown" role="menuitem" data-menu-component=""><input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false"><label class="dropbtn" for="toggle-2" data-opens-menu="">
-                        										concepts
-                        										<span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
-                        <ul role="none">
-                           <li role="none"><a role="menuitem" href="../analytical_priorities.html">analytical priorities</a></li>
-                           <li role="none"><a role="menuitem" href="../project_design.html">project design</a></li>
-                           <li role="none"><a role="menuitem" href="../collaboration.html">collaboration</a></li>
-                           <li role="none"><a role="menuitem" href="../coding_guidelines.html">coding guidelines</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </li>
-               <li role="none">
-                  <div class="dropdown" role="menuitem" data-menu-component=""><input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false"><label class="dropbtn" for="toggle-3" data-opens-menu="">
-                        										misc
-                        										<span class="vh expanded-text">expanded</span><span class="vh collapsed-text">collapsed</span></label><div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
-                        <ul role="none">
-                           <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
-                           <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
-                           <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
-                           <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
-                           <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-         </nav>
-         <nav id="sticky" aria-labelledby="nav2">
-            <div class="menu" id="nav2" title="Menu"><span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="false" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span><span class="nav-title">One More Voice</span></div>
-         </nav>
-         <nav aria-labelledby="nav3">
-            <div class="overlay" id="nav3">
-               <div class="menu" title="Close"><span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">×</a></span><span class="nav-title">One More Voice</span></div>
-               <div class="overlay-content" role="menu">
-                  <ul role="none">
-                     <li role="none"><a role="menuitem" href="../index.html">home</a></li>
-                     <li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i><ul role="menu" aria-label="Materials">
-                           <li role="none"><a role="menuitem" href="../texts.html">archival texts</a></li>
-                           <li role="none"><a role="menuitem" href="../artifacts.html">artifacts</a></li>
-                           <li role="none"><a role="menuitem" href="../books.html">book-length works</a></li>
-                        </ul>
-                     </li>
-                     <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i><ul role="menu" aria-label="Concepts">
-                           <li role="none"><a role="menuitem" href="../analytical_priorities.html">analytical priorities</a></li>
-                           <li role="none"><a role="menuitem" href="../project_design.html">project design</a></li>
-                           <li role="none"><a role="menuitem" href="../collaboration.html">collaboration</a></li>
-                           <li role="none"><a role="menuitem" href="../coding_guidelines.html">coding guidelines</a></li>
-                        </ul>
-                     </li>
-                     <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i><ul role="menu" aria-label="Miscellaneous">
-                           <li role="none"><a role="menuitem" href="../contributors.html">contributors</a></li>
-                           <li role="none"><a role="menuitem" href="../bibliography.html">bibliography</a></li>
-                           <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
-                           <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
-                           <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (mailto)
-                           </li>
-                        </ul>
-                     </li>
-                     <li role="none"><a role="menuitem" href="../site_map.html">site map</a></li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
+         <div class="navspace" data-include="nav2"></div>
          <header class="title" id="title-div"><img class="image image-border content-holder-1" src="../site-images/liv_023005_0001_deriv-1399px.jpg" srcset="../site-images/liv_023005_0001_deriv-1399px.jpg 1399w, ../site-images/liv_023005_0001_deriv-1276px.jpg 1276w, ../site-images/liv_023005_0001_deriv-1216px.jpg 1216w, ../site-images/liv_023005_0001_deriv-699px.jpg 699w, ../site-images/liv_023005_0001_deriv-638px.jpg 638w, ../site-images/liv_023005_0001_deriv-608px.jpg 608w, ../site-images/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project."><h1 class="header-title">One More Voice</h1>
             <hr>
             <div><span class="back-button"><a href="../artifacts.html#liv_021014">⬅︎ Back</a></span><h2 class="italic">Curated Historical Artifact</h2>
@@ -185,8 +103,15 @@
             <hr>
             <p>© 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="../site_map.html">Site Map</a></p>
          </footer>
-      </article>
-      <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+      </article><script src="../scripts/jquery-3.5.1.min.js"></script><script>
+					$(function(){
+					  var includes = $('[data-include]');
+					  jQuery.each(includes, function(){
+						var file =  '../' + $(this).data('include') + '.html';
+						$(this).load(file);
+					  });
+					});
+				</script><link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="../css/styleTEI.css"><script type="text/javascript">
 					function googleTranslateElementInit() {
 						new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');

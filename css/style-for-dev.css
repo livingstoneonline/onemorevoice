@@ -95,6 +95,26 @@ article{
 body.essay .main{
 	padding-bottom: 1em;
 }
+@media only screen and (min-width: 320px){
+	.navspace{
+		min-height: 63px;
+	}
+}
+@media only screen and (min-width: 480px){
+	.navspace{
+		min-height: 68px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.navspace{
+		min-height: 73px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.navspace{
+		min-height: 52px;
+	}
+}
 h1{
 	font-size: 2em;
 	font-family: Georgia, 'Times New Roman', Times, serif;

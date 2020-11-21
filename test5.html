@@ -18,18 +18,7 @@
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
 		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
-		<script src="scripts/jquery-3.5.1.min.js"></script> 
-		<!-- Adapted from https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file -->
-		<script>
-			$(function(){
-			  var includes = $('[data-include]');
-			  jQuery.each(includes, function(){
-				var file = $(this).data('include') + '.html';
-				$(this).load(file);
-			  });
-			});
-		</script>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>
@@ -112,6 +101,17 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 				<p>&#169; 2020, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
 			</footer>
 		</article>
+		<script src="scripts/jquery-3.5.1.min.js"></script> 
+		<!-- Adapted from https://stackoverflow.com/a/31837264 -->
+		<script>
+			$(function(){
+			  var includes = $('[data-include]');
+			  jQuery.each(includes, function(){
+				var file = $(this).data('include') + '.html';
+				$(this).load(file);
+			  });
+			});
+		</script>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {

@@ -27,6 +27,7 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
+		<!-- Taken from https://www.w3schools.com/howto/howto_html_include.asp -->
 		<script>
 			function includeHTML() {
 			var z, i, elmnt, file, xhttp;
@@ -55,7 +56,29 @@
 				}
 			}
 			}
-		</script> 
+		</script>
+		<style>
+			@media only screen and (min-width: 320px){
+				.navspace{
+					min-height: 62px;
+				}
+			}
+			@media only screen and (min-width: 480px){
+				.navspace{
+					min-height: 67px;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.navspace{
+					min-height: 72px;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.navspace{
+					min-height: 51px;
+				}
+			}
+		</style>		
 	</head>
 
 	<?php flush(); ?>

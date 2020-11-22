@@ -134,11 +134,13 @@ h2{
 	font-weight: 300;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	display: none;
+	visibility: hidden;
 }
 @media only screen and (min-width: 480px){
 	h2{
 		font-size: 1em;
 		display: block;
+		visibility: visible;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -222,10 +224,12 @@ body.transcription .title{
 }
 .header-title{
 	display: none;
+	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
 	.header-title{
 		display: block;
+		visibility: visible;
 	}
 }
 img,
@@ -324,10 +328,12 @@ img,
 }
 .title hr{
 	display: none;
+	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
 	.title hr{
 		display: block;
+		visibility: visible;
 	}
 }
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
@@ -522,6 +528,7 @@ a:focus img{
 	.menu,
 	.fixed-nav .menu{
 		display: none;
+		visibility: hidden;
 	}
 }
 .icon-title{
@@ -623,11 +630,13 @@ a:focus img{
 	font-weight: 600;
 	padding-top: .3em; /* Needed for Google Translate */
 	display: none;
+	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
 	.topnav{
 		font-size: 1.1em;
 		display: block;
+		visibility: visible;
 	}
 }
 .topnav ul{
@@ -786,6 +795,7 @@ background-color: #E3E3E3; [light gray]
 @media only screen and (min-width: 992px){
 	#nav3{
 		display: none !important;
+		visibility: hidden;
 	}
 }
 body.fixed-nav .overlay .menu .nav-title,
@@ -808,6 +818,7 @@ body.fixed-nav .overlay .menu .close-title{
 	overflow-y: auto;
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 	display: none;
+	visibility: hidden;
 }
 .overlay-content{
 	font-size: 1.1em;
@@ -818,6 +829,7 @@ body.fixed-nav .overlay .menu .close-title{
 	top: 1em;
 	position: relative;
 	display: block;
+	visibility: visible;
 }
 @media only screen and (min-width: 768px){
 	.overlay-content{
@@ -1073,7 +1085,6 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 span.tooltip{
 	font-family: 'source_sans_proregular';
 	font-size: .75em;
-	/* color: white; */
 	text-align: left;
 	text-decoration: none;
 	line-height: 1.8em;

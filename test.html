@@ -14,7 +14,8 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
 		<link rel="manifest" href="site.webmanifest">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<!-- <link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/> -->
+		<link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
+		<link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
 		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
@@ -27,46 +28,7 @@
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
-		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-		</script>
-		<script>
-		// open the dialog 
-		$(document).ready(function(){
-			 $("#tip1").attr("aria-hidden","true");
-			 $("#tip1").addClass("hidden");
-			 
-		  $("div#google_translate_element").focus(function(){
-				$("#tip1").attr("aria-hidden","false");
-				$("#tip1").removeClass("hidden");
-				
-		  });
-			$("div#google_translate_element").mouseover(function(){
-				$("#tip1").attr("aria-hidden","false");
-				$("#tip1").removeClass("hidden");
-		  });
-		   // repeat for the keyboard accessibility for all buttons, enter makes it click...
-				 $("div#google_translate_element").blur(function(){
-				$("#tip1").attr("aria-hidden","true");
-				$("#tip1").addClass("hidden");
-		  });
-		  
-			$("div#google_translate_element").mouseleave(function(){
-				$("#tip1").attr("aria-hidden","true");
-				$("#tip1").addClass("hidden");
-		  });
-				
-				$("div#google_translate_element").keydown(function(ev){
-				if (ev.which ==27)  {
-								 $("#tip1").attr("aria-hidden","true");
-								 $("#tip1").addClass("hidden");
-								 ev.preventDefault(); 
-								 return false;
-								 }
-		  });
-				 
-		});
-		</script>   
+		</script>  
 		<style>
 			.tooltip{
 				background: #111;
@@ -107,6 +69,9 @@
 			span.tooltip[aria-hidden='false']{
 				display: block;
 			}
+			.hidden{
+				display: none;
+			}
 		</style> 	
 	</head>
 
@@ -114,10 +79,6 @@
 
 	<body class="essay">
 		<article>	
-			<!--ARIA Tooltip adapted from http://accessibility.athena-ict.com/aria/examples/tooltip.shtml-->
-			
-
-			
 
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
@@ -132,9 +93,9 @@
 			</header>
 			
 			<main class="main" id="main">
-				<div class="translate"><div id="google_translate_element" aria-describedby="tip1" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>					
-				<span id="tip1" class="tooltip" role="tooltip">Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation.</span>
-			</div>
+				<!--ARIA Tooltip adapted from http://accessibility.athena-ict.com/aria/examples/tooltip.shtml-->
+				<div class="translate"><div id="google_translate_element" tabindex="0" aria-describedby="tip1" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>					
+				<span id="tip1" class="tooltip" role="tooltip">Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation.</span></div>
 
 				<h3>Contributors</h3>
 				
@@ -184,7 +145,7 @@
             <div data-include="footer1"></div>
             
 		</article>
-		<!-- <script src="scripts/jquery-3.5.1.min.js"></script>  -->
+		<script src="scripts/jquery-3.5.1.min.js"></script> 
 		<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 		<script>
 			$(function(){
@@ -202,6 +163,44 @@
 			}
 		</script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			// open the dialog 
+			$(document).ready(function(){
+				$("#tip1").attr("aria-hidden","true");
+				$("#tip1").addClass("hidden");
+
+			$("div#google_translate_element").focus(function(){
+					$("#tip1").attr("aria-hidden","false");
+					$("#tip1").removeClass("hidden");
+					
+			});
+				$("div#google_translate_element").mouseover(function(){
+					$("#tip1").attr("aria-hidden","false");
+					$("#tip1").removeClass("hidden");
+			});
+			// repeat for the keyboard accessibility for all buttons, enter makes it click...
+					$("div#google_translate_element").blur(function(){
+					$("#tip1").attr("aria-hidden","true");
+					$("#tip1").addClass("hidden");
+			});
+			
+				$("div#google_translate_element").mouseleave(function(){
+					$("#tip1").attr("aria-hidden","true");
+					$("#tip1").addClass("hidden");
+			});
+					
+					$("div#google_translate_element").keydown(function(ev){
+					if (ev.which ==27)  {
+									$("#tip1").attr("aria-hidden","true");
+									$("#tip1").addClass("hidden");
+									ev.preventDefault(); 
+									return false;
+									}
+			});
+					
+			});
+		</script> 		
 		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
 		<script type="text/javascript">
 			function downloadJSAtOnload() {

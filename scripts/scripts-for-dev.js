@@ -275,6 +275,7 @@ function AddRelNoopener(){
 
 
 /* Tooltip for Google Translate */
+/* ARIA tooltip adapted from http://accessibility.athena-ict.com/aria/examples/tooltip.shtml */
 // open the dialog 
 $(document).ready(function(){
   $("#tip1").attr("aria-hidden","true");

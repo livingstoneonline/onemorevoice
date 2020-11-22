@@ -36,27 +36,27 @@
 			 $("#tip1").attr("aria-hidden","true");
 			 $("#tip1").addClass("hidden");
 			 
-		  $("#UserName").focus(function(){
+		  $("div#google_translate_element").focus(function(){
 				$("#tip1").attr("aria-hidden","false");
 				$("#tip1").removeClass("hidden");
 				
 		  });
-			$("#UserName").mouseover(function(){
+			$("div#google_translate_element").mouseover(function(){
 				$("#tip1").attr("aria-hidden","false");
 				$("#tip1").removeClass("hidden");
 		  });
 		   // repeat for the keyboard accessibility for all buttons, enter makes it click...
-				 $("#UserName").blur(function(){
+				 $("div#google_translate_element").blur(function(){
 				$("#tip1").attr("aria-hidden","true");
 				$("#tip1").addClass("hidden");
 		  });
 		  
-			$("#UserName").mouseleave(function(){
+			$("div#google_translate_element").mouseleave(function(){
 				$("#tip1").attr("aria-hidden","true");
 				$("#tip1").addClass("hidden");
 		  });
 				
-				$("#UserName").keydown(function(ev){
+				$("div#google_translate_element").keydown(function(ev){
 				if (ev.which ==27)  {
 								 $("#tip1").attr("aria-hidden","true");
 								 $("#tip1").addClass("hidden");
@@ -74,22 +74,24 @@
 			}
 			span.tooltip{
 				font-family: arial;
-				font-size: 14px;
-				font-weight: regular;
-				position: absolute;
-				padding: 10px 20px;
+				font-size: .7em;
 				color: #fff;
+				text-align: left;
+				text-decoration: none;
+				line-height: 1.6em;
+				margin-top: 10px;
+				padding: 10px 20px;
+				max-width: 30em;
+				border-radius: 7px;
 				-webkit-border-radius: 7px;
 				-moz-border-radius: 7px;
-				border-radius: 7px;
+				background-clip: padding-box;
 				-webkit-background-clip: padding-box;
 				-moz-background-clip: padding;
-				background-clip: padding-box;
-				margin-top: 10px;
-				text-align: center;
-				text-decoration: none;
 				box-shadow: 0 0 3px #000;
 				z-index: 9999;
+				position: absolute;
+				
 			}
 			span.tooltip[aria-hidden='true']{
 				display: none;
@@ -97,9 +99,6 @@
 			span.tooltip[aria-hidden='false']{
 				display: block;
 			}
-			.hidden{
-				display: none;
-			}			
 		</style> 	
 	</head>
 
@@ -125,12 +124,9 @@
 			</header>
 			
 			<main class="main" id="main">
-				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-
-				<div>
-					<p autocomplete="off" class="input-text " id="UserName" name="UserName" type="text" value="" aria-describedby="tip1">some text</p>
-					<span id="tip1" class="tooltip" role="tooltip" >Also known as User ID</span>
-				</div>
+				<div class="translate"><div id="google_translate_element" aria-describedby="tip1" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>					
+				<span id="tip1" class="tooltip" role="tooltip">Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation.</span>
+			</div>
 
 				<h3>Contributors</h3>
 				

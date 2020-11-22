@@ -84,7 +84,7 @@ site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_de
 			$(function(){
 			  var includes = $('[data-include]');
 			  jQuery.each(includes, function(){
-				var file = $(this).data('include') + '.html';
+				var file = 'common/' + $(this).data('include') + '.html';
 				$(this).load(file);
 			  });
 			});

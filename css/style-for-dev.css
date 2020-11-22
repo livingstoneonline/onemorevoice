@@ -648,11 +648,15 @@ a:focus img{
 	color: whitesmoke;
 	background-color: #424242;
 	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
 }
 .topnav ul li a{
 	color: black;
 	padding: 10px 10px;
 	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
 }
 .topnav ul li a:hover,
 .topnav ul li a:focus{
@@ -683,6 +687,8 @@ input:checked + label::after{
 	padding: 10px 10px;
 	border: none;
 	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
 	outline: none;
 }
 [type="checkbox"]:checked + label{
@@ -737,6 +743,8 @@ input:checked + label::after{
 	background-color: #858585; /*dark gray*/
 	outline: none;
 	border-radius: unset;
+	-webkit-border-radius: unset;
+	-moz-border-radius: unset;
 }
 .topnav ul li .dropdown .dropdown-content ul li a,
 .topnav ul li .dropdown .dropdown-content ul li a:visited{
@@ -1010,6 +1018,8 @@ body.transcription .title{
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	border: 2px solid  #E3E3E3;
 	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
 	margin: 0 0 0 -3px;
 	padding: 1px;
 }
@@ -1055,6 +1065,8 @@ table.archival-text{
 	line-height: 1.6em;
 	border: 1px solid #858585;
 	border-radius: 9px; 
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
 	border-spacing: 0;
 	margin: 2.5em 0;  				
 	width: 100%;
@@ -1078,6 +1090,8 @@ table.archival-text tr:first-child > th{
 	color: white;
 	background: #204A79;
 	border-radius: 8px 8px 0 0; 
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1165,6 +1179,8 @@ table.archival-text .details{
 	object-fit:cover;
 	-o-object-fit: cover;
 	border-radius:50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	overflow: hidden;
 	border: 2px solid #E3E3E3;
 }
@@ -1207,12 +1223,16 @@ table.archival-text .details{
 	padding: 10px 14px;
 	margin: 0 0 1.5em 0;
 	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
 }
 .published-author{
 	font-size: 1.05em;
 	color: #262626;
 	background-color: #e3e3e3;
 	border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
 	padding: 10px 16px;
 	margin: 0;
 	display: flex;
@@ -1242,6 +1262,8 @@ table.archival-text .details{
 .works-list{
 	border-top: none;
 	border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
 	padding: 1em 1em .7em 2.5em;
 	margin: 0 0 2em 0;
 }

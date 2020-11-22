@@ -1059,9 +1059,8 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 /* Tooltip */
 /* ARIA tooltip adapted from http://accessibility.athena-ict.com/aria/examples/tooltip.shtml */
 .tooltip{
-	border: 1px solid #858585;
-	background: #191716;
-	background: rgba(0,0,0,0.9);
+	border: 1px solid #902D27;
+	background: #e3e3e3;
 	display: none;
 	visibility: hidden;
 }
@@ -1074,7 +1073,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 span.tooltip{
 	font-family: 'source_sans_proregular';
 	font-size: .75em;
-	color: white;
+	color: black;
 	text-align: left;
 	text-decoration: none;
 	line-height: 1.8em;

@@ -36,27 +36,27 @@
 			 $("#tip1").attr("aria-hidden","true");
 			 $("#tip1").addClass("hidden");
 			 
-		  $(":0.targetLanguage").focus(function(){
+		  $("div#google_translate_element").focus(function(){
 				$("#tip1").attr("aria-hidden","false");
 				$("#tip1").removeClass("hidden");
 				
 		  });
-			$(":0.targetLanguage").mouseover(function(){
+			$("div#google_translate_element").mouseover(function(){
 				$("#tip1").attr("aria-hidden","false");
 				$("#tip1").removeClass("hidden");
 		  });
 		   // repeat for the keyboard accessibility for all buttons, enter makes it click...
-				 $(":0.targetLanguage").blur(function(){
+				 $("div#google_translate_element").blur(function(){
 				$("#tip1").attr("aria-hidden","true");
 				$("#tip1").addClass("hidden");
 		  });
 		  
-			$(":0.targetLanguage").mouseleave(function(){
+			$("div#google_translate_element").mouseleave(function(){
 				$("#tip1").attr("aria-hidden","true");
 				$("#tip1").addClass("hidden");
 		  });
 				
-				$(":0.targetLanguage").keydown(function(ev){
+				$("div#google_translate_element").keydown(function(ev){
 				if (ev.which ==27)  {
 								 $("#tip1").attr("aria-hidden","true");
 								 $("#tip1").addClass("hidden");
@@ -71,6 +71,14 @@
 			.tooltip{
 				background: #111;
 				background: rgba(0,0,0,0.9);
+				display: none;
+				visibility: hidden;
+			}
+			@media only screen and (min-width: 992px){
+				.tooltip{
+					display: block;
+					visibility: visible;
+				}
 			}
 			span.tooltip{
 				font-family: arial;

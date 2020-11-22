@@ -31,7 +31,8 @@
 		</script>  
 		<style>
 			.tooltip{
-				background: #111;
+				background: #191716;
+				border: 1px solid #858585;
 				background: rgba(0,0,0,0.9);
 				display: none;
 				visibility: hidden;
@@ -43,14 +44,14 @@
 				}
 			}
 			span.tooltip{
-				font-family: arial;
-				font-size: .7em;
-				color: #fff;
+				font-family: 'source_sans_proregular';
+				font-size: .75em;
+				color: white;
 				text-align: left;
 				text-decoration: none;
-				line-height: 1.6em;
+				line-height: 1.8em;
 				margin-top: 10px;
-				padding: 10px 20px;
+				padding: 10px;
 				max-width: 30em;
 				border-radius: 7px;
 				-webkit-border-radius: 7px;
@@ -58,7 +59,7 @@
 				background-clip: padding-box;
 				-webkit-background-clip: padding-box;
 				-moz-background-clip: padding;
-				box-shadow: 0 0 3px #000;
+				box-shadow: 0 0 2px #858585;
 				z-index: 9999;
 				position: absolute;
 				
@@ -95,7 +96,7 @@
 			<main class="main" id="main">
 				<!--ARIA Tooltip adapted from http://accessibility.athena-ict.com/aria/examples/tooltip.shtml-->
 				<div class="translate"><div id="google_translate_element" tabindex="0" aria-describedby="tip1"></div>					
-				<span class="tooltip" role="tooltip" id="tip1">Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation.</span></div>
+				<span class="tooltip" role="tooltip" id="tip1">Google Translate provides only a rough, machine-generated translation. Users should proceed with caution and consult the original One More Voice site page alongside the translation.</span></div>
 
 				<h3>Contributors</h3>
 				

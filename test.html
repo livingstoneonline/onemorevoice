@@ -36,27 +36,27 @@
 			 $("#tip1").attr("aria-hidden","true");
 			 $("#tip1").addClass("hidden");
 			 
-		  $("div#google_translate_element").focus(function(){
+		  $(":0.targetLanguage").focus(function(){
 				$("#tip1").attr("aria-hidden","false");
 				$("#tip1").removeClass("hidden");
 				
 		  });
-			$("div#google_translate_element").mouseover(function(){
+			$(":0.targetLanguage").mouseover(function(){
 				$("#tip1").attr("aria-hidden","false");
 				$("#tip1").removeClass("hidden");
 		  });
 		   // repeat for the keyboard accessibility for all buttons, enter makes it click...
-				 $("div#google_translate_element").blur(function(){
+				 $(":0.targetLanguage").blur(function(){
 				$("#tip1").attr("aria-hidden","true");
 				$("#tip1").addClass("hidden");
 		  });
 		  
-			$("div#google_translate_element").mouseleave(function(){
+			$(":0.targetLanguage").mouseleave(function(){
 				$("#tip1").attr("aria-hidden","true");
 				$("#tip1").addClass("hidden");
 		  });
 				
-				$("div#google_translate_element").keydown(function(ev){
+				$(":0.targetLanguage").keydown(function(ev){
 				if (ev.which ==27)  {
 								 $("#tip1").attr("aria-hidden","true");
 								 $("#tip1").addClass("hidden");

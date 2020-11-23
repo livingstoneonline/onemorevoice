@@ -1066,49 +1066,6 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 	font-weight: normal !important;
 	color: #666 !important;
 }
-/* Tooltip */
-/* ARIA tooltip adapted from http://accessibility.athena-ict.com/aria/examples/tooltip.shtml */
-.tooltip{
-	border: 2px solid #204A79;
-	background: #e3e3e3;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 768px){
-	.tooltip{
-		display: block;
-		visibility: visible;
-	}
-}
-span.tooltip{
-	font-family: 'source_sans_proregular';
-	font-size: .75em;
-	text-align: left;
-	text-decoration: none;
-	line-height: 1.8em;
-	margin-top: 6px;
-	padding: 13px;
-	max-width: 21em;
-	border-radius: 7px;
-	box-shadow: 0 0 3px #858585;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	background-clip: padding-box;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	z-index: 9999;
-	position: absolute;
-	
-}
-span.tooltip[aria-hidden='true']{
-	display: none;
-}
-span.tooltip[aria-hidden='false']{
-	display: block;
-}
-.hidden{
-	display: none;
-}
 
 
 /* 1.6. Archival Texts */

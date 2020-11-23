@@ -4,12 +4,12 @@
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021050"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021063"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Rabindranath Tagore</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-                <title type="alternative">Rabindranath Tagore, [c.1916]</title><!-- Title, date -->
+                <title>Onoto Watanna on Heart of Hyacinth Book Cover</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Onoto Watanna on Heart of Hyacinth Book Cover, 1903</title><!-- Title, date -->
                 <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
 				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
@@ -25,13 +25,13 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2020</date>
-                <idno type="LEAP-ID">liv_021050</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+                <idno type="LEAP-ID">liv_021063</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
-				<ref target="https://www.loc.gov/pictures/item/99403031/">Library of Congress. Prints and Photographs Division</ref>
+				<ref target="https://digitalcollections.nypl.org/items/86de0700-e840-0132-5e3c-58d385a7b928">The New York Public Library. The Miriam and Ira D. Wallach Division of Art, Prints and Photographs. Print Collection</ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
-					<p>Public domain image.</p>
+					<p>The copyright and related rights status of this item has been reviewed by The New York Public Library, but we were unable to make a conclusive determination as to the copyright status of the item. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.</p>
 				</availability>
 			</publicationStmt>
 
@@ -40,22 +40,22 @@
                 <msDesc type="artifact-archive">
                     <msIdentifier>
                         <country>United States</country><!-- Repository country -->
-                        <settlement>Washington, D.C.</settlement><!-- Repository city -->
-                        <repository>Library of Congress. Prints and Photographs Division</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
-                        <idno type="shelfmark">BIOG FILE - Tagore, Rabindranath, 1861-1941 [Rabindranath Tagore, full-length portrait, seated, facing front] [P&amp;P]</idno><!-- Shelfmark/Identifier -->
+                        <settlement>New York, NY</settlement><!-- Repository city -->
+                        <repository>The New York Public Library. The Miriam and Ira D. Wallach Division of Art, Prints and Photographs. Print Collection</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
+                        <idno type="shelfmark">Portrait File</idno><!-- Shelfmark/Identifier -->
                     </msIdentifier>
                 </msDesc>
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
-					<title>Rabindranath Tagore</title>
+					<title>Onoto Watanna on Heart of Hyacinth Book Cover</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
                     <author xml:id="An">Anonymous</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" when="1916">[c.1916]</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="composition" when="1903">1903</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
                     <placeName type="compositionPlace">Unknown</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
                 </bibl>
@@ -77,7 +77,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="2020-11-19" who="#AW">XML File Editing</change>
+			<change when="2020-11-23" who="#AW">XML File Editing</change>
         </revisionDesc>
     </teiHeader>
 
@@ -91,7 +91,7 @@
 	<!-- Put a <pb> at the beginning of each page -->
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
-	<pb facs="liv_021050_0001" n="0001"/>
+	<pb facs="liv_021063_0001" n="0001"/>
 	<!-- figure @facs provides the hyperlink for the artifact image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
@@ -99,14 +99,14 @@
 	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
 
 	<!-- horiztonal image -->
-	<!-- <figure n="artifact" facs="../artifact-images/liv_021050_0001_deriv-1399px.jpg">
-		<graphic url="../artifact-images/liv_021050_0001_deriv-1399px.jpg" facs="../artifact-images/liv_021050_0001_deriv-1399px.jpg 1399w, ../artifact-images/liv_021050_0001_deriv-1276px.jpg 1276w, ../artifact-images/liv_021050_0001_deriv-1216px.jpg 1216w, ../artifact-images/liv_021050_0001_deriv-699px.jpg 699w, ../artifact-images/liv_021050_0001_deriv-638px.jpg 638w, ../artifact-images/liv_021050_0001_deriv-608px.jpg 608w, ../artifact-images/liv_021050_0001_deriv-400px.jpg 400w" n="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"/> -->
+	<!-- <figure n="artifact" facs="../artifact-images/liv_021063_0001_deriv-1399px.jpg">
+		<graphic url="../artifact-images/liv_021063_0001_deriv-1399px.jpg" facs="../artifact-images/liv_021063_0001_deriv-1399px.jpg 1399w, ../artifact-images/liv_021063_0001_deriv-1276px.jpg 1276w, ../artifact-images/liv_021063_0001_deriv-1216px.jpg 1216w, ../artifact-images/liv_021063_0001_deriv-699px.jpg 699w, ../artifact-images/liv_021063_0001_deriv-638px.jpg 638w, ../artifact-images/liv_021063_0001_deriv-608px.jpg 608w, ../artifact-images/liv_021063_0001_deriv-400px.jpg 400w" n="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"/> -->
 
 	<!-- vertical image -->
-	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_021050_0001_deriv-980px.jpg">
-		<graphic url="../artifact-images/liv_021050_0001_deriv-980px.jpg" facs="../artifact-images/liv_021050_0001_deriv-980px.jpg 980w, ../artifact-images/liv_021050_0001_deriv-894px.jpg 894w, ../artifact-images/liv_021050_0001_deriv-852px.jpg 852w, ../artifact-images/liv_021050_0001_deriv-490px.jpg 490w, ../artifact-images/liv_021050_0001_deriv-447px.jpg 447w, ../artifact-images/liv_021050_0001_deriv-426px.jpg 426w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>
-		<label>Rabindranath Tagore in full-length portrait, seated, facing forward.<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
-		<figDesc>Anonymous, “Rabindranath Tagore,” [c.1916]<!-- Image alt text (max. 125 char with spaces) --></figDesc>
+	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_021063_0001_deriv-980px.jpg">
+		<graphic url="../artifact-images/liv_021063_0001_deriv-980px.jpg" facs="../artifact-images/liv_021063_0001_deriv-980px.jpg 980w, ../artifact-images/liv_021063_0001_deriv-894px.jpg 894w, ../artifact-images/liv_021063_0001_deriv-852px.jpg 852w, ../artifact-images/liv_021063_0001_deriv-490px.jpg 490w, ../artifact-images/liv_021063_0001_deriv-447px.jpg 447w, ../artifact-images/liv_021063_0001_deriv-426px.jpg 426w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>
+		<label>Anonymous, “Onoto Watanna on Heart of Hyacinth Book Cover,” 1903<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>Three-quarters body portrait of Onoto Watanna reading a book, on Heart of Hyacinth book cover.<!-- Image alt text (max. 125 char with spaces) --></figDesc>
 	</figure>
 <!-- Use the following to repoduce any original image caption. -->
 <!--<lb/><p rend="no-indent small center">[<seg rend="italic">original caption</seg>]</p>
@@ -114,13 +114,13 @@
 
 <!-- Used for Artifacts page -->
 <!-- 
-					<figure class="gallery-item" id="liv_021050">
-						<a href="transcriptions/liv_021050_ART.html">
+					<figure class="gallery-item" id="liv_021063">
+						<a href="transcriptions/liv_021063_ART.html">
 							<div class="image-container">
-								<img loading="lazy" src="artifact-images/thumbnails/liv_021050_0001_thumbnail-504px.jpg" srcset="artifact-images/thumbnails/liv_021050_0001_thumbnail-504px.jpg 504w, artifact-images/thumbnails/liv_021050_0001_thumbnail-368px.jpg 368w, artifact-images/thumbnails/liv_021050_0001_thumbnail-334px.jpg 334w, artifact-images/thumbnails/liv_021050_0001_thumbnail-252px.jpg 252w, artifact-images/thumbnails/liv_021050_0001_thumbnail-184px.jpg 184w, artifact-images/thumbnails/liv_021050_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Rabindranath Tagore in full-length portrait" />
+								<img loading="lazy" src="artifact-images/thumbnails/liv_021063_0001_thumbnail-504px.jpg" srcset="artifact-images/thumbnails/liv_021063_0001_thumbnail-504px.jpg 504w, artifact-images/thumbnails/liv_021063_0001_thumbnail-368px.jpg 368w, artifact-images/thumbnails/liv_021063_0001_thumbnail-334px.jpg 334w, artifact-images/thumbnails/liv_021063_0001_thumbnail-252px.jpg 252w, artifact-images/thumbnails/liv_021063_0001_thumbnail-184px.jpg 184w, artifact-images/thumbnails/liv_021063_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Three-quarters portrait of Onoto Watanna." />
 							</div>
 						</a>
-						<figcaption>Rabindranath Tagore (c.1916)</figcaption>
+						<figcaption>Onoto Watanna (1903)</figcaption>
 					</figure>
 -->
 

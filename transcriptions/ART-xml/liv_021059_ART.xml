@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021059"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Dr. Edward Wilmot Blyden; A former Secretary of State and Diplomatic Envoy of Liberia: Born in St. Thomas”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Dr. Edward Wilmot Blyden; A former Secretary of State and Diplomatic Envoy of Liberia: Born in St. Thomas’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“Dr. Edward Wilmot Blyden; A former Secretary of State and Diplomatic Envoy of Liberia: Born in St. Thomas,” 1910</title><!-- Title, date -->
+                <author>African World</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">African World</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">African World</author><!-- First author only: Forename Surname -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_021059</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://digitalcollections.nypl.org/items/510d47df-8d64-a3d9-e040-e00a18064a99">The New York Public Library. Schomburg Center for Research in Black Culture. Jean Blackwell Hutson Research and Reference Division</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>The New York Public Library believes that this item is in the public domain under the laws of the United States, but did not make a determination as to its copyright status under the copyright laws of other countries. This item may not be in the public domain under the laws of other countries.</p>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if the artifact comes from an archive; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="artifact-archive">
+                    <msIdentifier>
+                        <country>United States</country><!-- Repository country -->
+                        <settlement>New York, NY</settlement><!-- Repository city -->
+                        <repository>The New York Public Library. Schomburg Center for Research in Black Culture. Jean Blackwell Hutson Research and Reference Division</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
+                        <idno type="shelfmark">Sc 326.97-J (Johnston, H. Negro in the New World. New York: 1910)</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>“Dr. Edward Wilmot Blyden; A former Secretary of State and Diplomatic Envoy of Liberia: Born in St. Thomas”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="An">African World</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1910">1910</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Unknown</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                </bibl>
+            </sourceDesc>
+			<!-- End of archival <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-11-22" who="#AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+	<pb facs="liv_021059_0001" n="0001"/>
+	<!-- figure @facs provides the hyperlink for the artifact image to a larger version -->
+		<!-- remove rend="vertical" for landscape images -->
+		<!-- add rend="gray" to add gray border to image -->
+		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
+	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
+
+	<!-- horiztonal image -->
+	<!-- <figure n="artifact" facs="../artifact-images/liv_021059_0001_deriv-1399px.jpg">
+		<graphic url="../artifact-images/liv_021059_0001_deriv-1399px.jpg" facs="../artifact-images/liv_021059_0001_deriv-1399px.jpg 1399w, ../artifact-images/liv_021059_0001_deriv-1276px.jpg 1276w, ../artifact-images/liv_021059_0001_deriv-1216px.jpg 1216w, ../artifact-images/liv_021059_0001_deriv-699px.jpg 699w, ../artifact-images/liv_021059_0001_deriv-638px.jpg 638w, ../artifact-images/liv_021059_0001_deriv-608px.jpg 608w, ../artifact-images/liv_021059_0001_deriv-400px.jpg 400w" n="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)"/> -->
+
+	<!-- vertical image -->
+	<figure n="artifact" rend="vertical" facs="../artifact-images/liv_021059_0001_deriv-980px.jpg">
+		<graphic url="../artifact-images/liv_021059_0001_deriv-980px.jpg" facs="../artifact-images/liv_021059_0001_deriv-980px.jpg 980w, ../artifact-images/liv_021059_0001_deriv-894px.jpg 894w, ../artifact-images/liv_021059_0001_deriv-852px.jpg 852w, ../artifact-images/liv_021059_0001_deriv-490px.jpg 490w, ../artifact-images/liv_021059_0001_deriv-447px.jpg 447w, ../artifact-images/liv_021059_0001_deriv-426px.jpg 426w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>
+		<label>Anonymous, “‘Dr. Edward Wilmot Blyden; A former Secretary of State and Diplomatic Envoy of Liberia: Born in St. Thomas,’” 1910<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>Head and shoulders portrait of Edward Wilmot Blyden, looking to this left.<!-- Image alt text (max. 125 char with spaces) --></figDesc>
+	</figure>
+<!-- Use the following to repoduce any original image caption. -->
+<!--<lb/><p rend="no-indent small center">[<seg rend="italic">original caption</seg>]</p>
+<lb/><p rend="no-indent small center">[CAPTION GOES HERE]</p>-->
+
+<!-- Used for Artifacts page -->
+<!-- 
+					<figure class="gallery-item" id="liv_021059">
+						<a href="transcriptions/liv_021059_ART.html">
+							<div class="image-container">
+								<img loading="lazy" src="artifact-images/thumbnails/liv_021059_0001_thumbnail-504px.jpg" srcset="artifact-images/thumbnails/liv_021059_0001_thumbnail-504px.jpg 504w, artifact-images/thumbnails/liv_021059_0001_thumbnail-368px.jpg 368w, artifact-images/thumbnails/liv_021059_0001_thumbnail-334px.jpg 334w, artifact-images/thumbnails/liv_021059_0001_thumbnail-252px.jpg 252w, artifact-images/thumbnails/liv_021059_0001_thumbnail-184px.jpg 184w, artifact-images/thumbnails/liv_021059_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Edward Wilmot Blyden, looking to this left." />
+							</div>
+						</a>
+						<figcaption>Edward Wilmot Blyden (1910)</figcaption>
+					</figure>
+-->
+
+            </div>
+        </body>   
+    </text>
+</TEI>

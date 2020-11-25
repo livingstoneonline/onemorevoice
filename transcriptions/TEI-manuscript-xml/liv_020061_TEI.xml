@@ -15,29 +15,21 @@
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
 				<title type="alternative">“The History of Caras Farrar of Finding Dr Livingstone, in Central Africa,” 9 September 1874</title>
 				<!-- Title, date -->
-				<author>Anonymous</author>
+				<author>Farrar, Caras, ?-c.1906</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author>Farar, Carras, ?-c.1906</author>
+				<author>Anonymous</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="first">Anonymous</author>
+				<author role="first">Farrar, Caras</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Anonymous</author>
+				<author role="first-normalized">Caras Farrar</author>
 				<!-- First author only: Forename Surname -->
-				<author role="normalized">Carras Farar</author>
+				<author role="normalized">Anonymous</author>
 				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
 				<respStmt xml:id="HB">
-					<name>Heather F. Ball</name>
-					<resp>Transcription</resp>
-					<resp>TEI Encoding</resp>
-					<resp>Editorial Decisions</resp>
-					<resp>Proofing</resp>
-					<resp>Coding Review</resp>
-				</respStmt>
-				<respStmt xml:id="MBT">
-					<name>Mary Borgo Ton</name>
+					<name>Caitlin Matheis</name>
 					<resp>Transcription</resp>
 					<resp>TEI Encoding</resp>
 					<resp>Editorial Decisions</resp>
@@ -96,8 +88,8 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
+					<author xml:id="CF">Farrar, Carras, ?-c.1906</author>
 					<author xml:id="An">Anonymous</author>
-					<author xml:id="CF">Farar, Carras, ?-c.1906</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
 					<date type="composition" when="1874-09-09">9 September 1874</date>
@@ -122,6 +114,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-11-25" who="#AW">Coding review</change>
 			<change when="2020-11-18" who="#CM">Initial encoding</change>
 			<change when="2020-11-11" who="#CM">Prepare transcription</change>
 		</revisionDesc>

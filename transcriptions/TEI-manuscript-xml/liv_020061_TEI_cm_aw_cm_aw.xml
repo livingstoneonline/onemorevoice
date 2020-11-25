@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020061">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -131,7 +131,7 @@
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body n="625950">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="white">
+			<div rend="white" n="letter liv_020061">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -142,8 +142,8 @@
 	<pb facs="liv_020061_0001" n="0001"/>
 				<lb/><p rend="center">The History of <persName>Caras Farrar</persName> of finding <persName>D<hi rend="sup">r</hi>. Livingstone</persName>, 
 <lb/>in <region>Central <bloc>Africa</bloc></region></p>
-
-<p><lb/>In <date when="1872-02">February, 1872</date> I was at <placeName><settlement>Sharaupur</settlement> School</placeName> 
+<milestone unit="section" rend="quarter-line quarter-line white" n="divider liv_020061_0001"/>
+<p>In <date when="1872-02">February, 1872</date> I was at <placeName><settlement>Sharaupur</settlement> School</placeName> 
 <lb/>near <settlement>Nasick</settlement>. I heard <persName>M<hi rend="sup">r</hi> Price</persName> talk of an expedition going   
 <lb/>to <bloc>Africa</bloc> to find out <persName>D<hi rend="sup">r</hi>. Livingstone</persName>. I and many others were  
 <lb/>willing to go and join the expedition. Some time after the   
@@ -369,7 +369,7 @@
 <lb/>ing</w> time that is coasting the <geogName>lake Tanganyika</geogName>. Visiting the  
 <lb/><region><term type="collective">Pipa</term> country</region> we entered <region><term type="collective">Namaroongoo</term> country</region>. Leaving  
 <lb/><region><term type="collective">Namaroongoo</term> country</region> we hastily passed the <region><term type="collective">Cawende</term> 
-<lb/>and <term type="collectice">Conongo</term></region> countries and finally arrived at <region><settlement><choice><orig><w>Uriem<seg type="hyphen">-</seg>  
+<lb/>and <term type="collectice">Conongo</term> countries</region> and finally arrived at <region><settlement><choice><orig><w>Uriem<seg type="hyphen">-</seg>  
 <lb/>be</w></orig><reg><w>Unyanyem<seg type="hyphen">-</seg>  
 <lb/>be</w></reg></choice></settlement> country</region>. Here we met three <term type="collective">Europeans</term>, to wit, <persName>Mr.  
 <lb/>Cameron</persName>, <persName>D<hi rend="sup">r</hi>. Dillon</persName> and <persName>Mr. Moffatt</persName>. They were <w>proceed<seg type="hyphen">-</seg>  
@@ -383,13 +383,13 @@
 <lb/><settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement>, <persName>Mr Cameron</persName> also left it for <settlement>Ujiji</settlement> while <persName>Mr.  
 <lb/>Moffatt</persName> and <persName>D<hi rend="sup">r</hi>. Dillon</persName> joined us. <persName>D<hi rend="sup">r</hi>. Dillon</persName>, however,  
 <lb/>soon took sickness on the way. After journeying three  
-<lb/>days from <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement> <persName>D<hi rend="sup">r</hi>. D</persName>. blew up his own brains  
+<lb/>days from <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement> <persName>D<hi rend="sup">r</hi>. D.</persName> blew up his own brains  
 <lb/>with a gun and instantly expired. We buried him  
 <lb/>in the same country where he died.</p>  
 
 <lb/><p>Leaving <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement> we came to a country called <region>Ugogo</region>.  
 <lb/>Hitherto the <persName>D<hi rend="sup">r</hi>.</persName>'s remains was carried on the shoulders  
-<lb/>of two persons throughout, but coming to the <region><term type="collective">Ugogo</term>  
+<lb/>of two persons throughout, but coming to the <region>Ugogo  
 <lb/>country</region> for fear of the natives knowing that we were <w>carry  
 <lb/>ing</w> dead body it became necessary to make it single man's  
 <lb/>load. It is an abomination thing among some of the <term type="collective">African  
@@ -424,8 +424,8 @@
 <lb/>the journey never associated with us six <term type="collective"><term type="faith">Christian</term> boys</term>  
 <lb/>their brothers as they have turned out <term type="faith">Mohammedans</term>.  
 <lb/><persName>Chuma</persName> and <persName><choice><orig>Suse</orig><reg>Susi</reg></choice></persName>, in spite of all that the <persName>D<hi rend="sup">r</hi>.</persName> did for  
-<lb/>them in getting them <term type="collective">English</term> education at <orgName><placeName><persName>D<hi rend="sup">r</hi>. Wilson</persName>'s <seg type="hyphen">-</seg>
-<lb/>School</placeName></orgName> at <settlement>Bombay</settlement> have at last turned out <term type="collective"><term type="faith">Mohammedans</term></term>  
+<lb/>them in getting them <term type="collective">English</term> education at <placeName><persName>D<hi rend="sup">r</hi>. Wilson</persName>'s <seg type="hyphen">-</seg>
+<lb/>School</placeName> at <settlement>Bombay</settlement> have at last turned out <term type="collective"><term type="faith">Mohammedans</term></term>  
 <lb/>also. One of the nine boys, <persName>Simon Price</persName> by name, deserted  
 <lb/>the <persName>D<hi rend="sup">r</hi>.</persName> long before his death and is now trading between  
 <lb/>the coast and the interior. <persName>Abraham Pereira</persName> is at <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement>  
@@ -451,9 +451,9 @@
 <lb/>sage</w> and went to <settlement>Bombay</settlement> where I arrived on the <date when="1874-07-01">first  
 <lb/>of July</date>. Here ends my journey of finding the great <term type="collective">African  
 <lb/>explorer</term> in the <region>central <bloc>Africa</bloc></region>. and back again to <country>India</country>.</p>  
-
-<lb/><p><persName>Carras Farar</persName>  
-<lb/><settlement>Bombay</settlement> <date when="1874-09-04">September 9. 1874</date>.</p>  
+<lb/>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="1" unit="chars"/><seg rend="large" n="signature liv_020061_0009"><persName>Carras Farar</persName></seg></p>  
+<lb/><p rend="no-indent"><space extent="5" unit="words"/><settlement>Bombay</settlement> <date when="1874-09-04">September 9. 1874</date>.</p>  
 			</div>
 		</body>
 	</text>

@@ -939,29 +939,29 @@ table .linenumber{
 /* The following is useful for coding review */
 /* .persName{
     background-color: orange;
-}
-.orgName{
+} */
+/* .orgName{
     background-color: yellow;
-}
-.collective{
+} */
+/* .collective{
     background-color: red;
-}
-.geogName{
+} */
+/* .geogName{
     background-color: greenyellow;
-}
-.placeName{
+} */
+/* .placeName{
     background-color: blue;
-}
-.settlement{
+} */
+/* .settlement{
     background-color: purple;
-}
-.region{
+} */
+/* .region{
     background-color: gray;
-}
-.country{
+} */
+/* .country{
 	background-color: burlywood;
-}
-.bloc{
+} */
+/* .bloc{
 	background-color: brown;
 } */
 
@@ -974,6 +974,14 @@ table .linenumber{
     font-family: 'cedarville_cursiveregular';
     src: url('../fonts/cedarvillecursive-regular-webfont.woff2') format('woff2'),
          url('../fonts/cedarvillecursive-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+    font-family: 'dancing_scriptregular';
+    src: url('../fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/dancingscript-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -1507,6 +1515,17 @@ table .linenumber{
     .table.liv_020058_0070{
         font-size: .85em;
     }
+}
+.divider.liv_020061_0001{
+    border-top: 2px solid white;
+    width: 8%;
+}
+.signature.liv_020061_0009{
+    font-family: 'cedarville_cursiveregular';
+}
+.letter.liv_020061{
+    font-size: 1.2em;
+    font-family: 'dancing_scriptregular';
 }
 .artifact.liv_021003_0001{
 	max-width: 319px;

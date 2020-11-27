@@ -31,36 +31,7 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
-		<script>
-			( function() {
 
-			var youtube = document.querySelectorAll( ".youtube" );
-
-			for (var i = 0; i < youtube.length; i++) {
-			
-			var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
-			
-			var image = new Image();
-				image.src = source;
-				image.addEventListener( "load", function() {
-					youtube[ i ].appendChild( image );
-				}( i ) );
-			
-				youtube[i].addEventListener( "click", function() {
-
-					var iframe = document.createElement( "iframe" );
-
-						iframe.setAttribute( "frameborder", "0" );
-						iframe.setAttribute( "allowfullscreen", "" );
-						iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-
-						this.innerHTML = "";
-						this.appendChild( iframe );
-				} );  
-			};
-
-			} )();			
-		</script>
 		<style>
 			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 			.wrapper{
@@ -161,7 +132,17 @@
 					<p><em>One More Voice</em> collects and curates a small selection of relevant, publicly-available <a href="#footage">motion pictures</a> and, in a few cases, sound <a href="recordings">recordings</a>. These items offer an opportunity to see and hear some of the individuals who feature elsewhere on the <em>One More Voice</em> project site, including on the pages for <a href="texts.html">archival texts</a>, <a href="artifacts.html">artifact images</a>, and <a href="books.html">book-length works</a>. For historical context, the present page also includes a few early <a href="documentaries">anti-colonial and other documentary films</a> as well as a handful of <a href="dramatic">dramatic performances</a>. To suggest additional items, please <a href="mailto:awisnicki@yahoo.com">email us</a>.</p>
 				</section>
 
-				<section aria-labelledby="footage">
+
+
+				<div class="wrapper">
+					<div class="youtube" data-embed="AqcjdkPMPJA">
+					  <div class="play-button"></div>
+					</div>
+				</div>
+				  
+				  
+
+				<!-- <section aria-labelledby="footage">
 					<h4 id="footage" class="subsection">Historical Footage &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
 
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/lJdErHQGEHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -224,7 +205,7 @@
 
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/KO50TiOmDK8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<p class="film">René Vautier. <em>Afrique 50</em>. 1950. <em>YouTube</em>.</p>
-				</section>
+				</section> -->
 
 			</main>
 
@@ -257,6 +238,36 @@
 			function googleTranslateElementInit() {
 				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 			}
+		</script>
+		<script type="text/javascript">
+			( function() {
+
+			var youtube = document.querySelectorAll( ".youtube" );
+
+			for (var i = 0; i < youtube.length; i++) {
+			
+			var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+			
+			var image = new Image();
+				image.src = source;
+				image.addEventListener( "load", function() {
+					youtube[ i ].appendChild( image );
+				}( i ) );
+			
+				youtube[i].addEventListener( "click", function() {
+
+					var iframe = document.createElement( "iframe" );
+
+						iframe.setAttribute( "frameborder", "0" );
+						iframe.setAttribute( "allowfullscreen", "" );
+						iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+
+						this.innerHTML = "";
+						this.appendChild( iframe );
+				} );  
+			};
+
+			} )();			
 		</script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->

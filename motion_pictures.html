@@ -371,10 +371,10 @@
 				var image = new Image();
 				image.setAttribute( "data-src", source );
 				image.setAttribute( "class", "lazyload" );
-				image.src = 'pre-load.jpg';
-				image.addEventListener( "load", function() {
-				youtube[ i ].appendChild( image );
-				}( i ) );
+				image.src = source;
+				image.addEventListener( "load", function(i) {
+                    youtube[ i ].appendChild( image );
+                }.bind(this, i ) );
 
 				youtube[i].addEventListener( "click", function() {
 

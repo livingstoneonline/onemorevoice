@@ -347,6 +347,7 @@
 			var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/hqdefault.jpg";
 			
 			var image = new Image();
+				image.setAttribute( "class", "lazyload" );
 				image.src = source;
 				image.addEventListener( "load", function(i) {
                     youtube[ i ].appendChild( image );

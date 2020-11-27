@@ -30,7 +30,96 @@
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
-		</script>    	
+		</script>
+		<script>
+			( function() {
+
+			var youtube = document.querySelectorAll( ".youtube" );
+
+			for (var i = 0; i < youtube.length; i++) {
+			
+			var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+			
+			var image = new Image();
+				image.src = source;
+				image.addEventListener( "load", function() {
+					youtube[ i ].appendChild( image );
+				}( i ) );
+			
+				youtube[i].addEventListener( "click", function() {
+
+					var iframe = document.createElement( "iframe" );
+
+						iframe.setAttribute( "frameborder", "0" );
+						iframe.setAttribute( "allowfullscreen", "" );
+						iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+
+						this.innerHTML = "";
+						this.appendChild( iframe );
+				} );  
+			};
+
+			} )();			
+		</script>
+		<style>
+			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
+			.wrapper{
+				max-width: 680px;
+				margin: 60px auto;
+				padding: 0 20px;
+			}
+			.youtube {
+				background-color: #000;
+				margin-bottom: 30px;
+				position: relative;
+				padding-top: 56.25%;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.youtube img{
+				width: 100%;
+				top: -16.82%;
+				left: 0;
+				opacity: 0.7;
+			}
+			.youtube .play-button{
+				width: 90px;
+				height: 60px;
+				background-color: #333;
+				box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+				z-index: 1;
+				opacity: 0.8;
+				border-radius: 6px;
+			}
+			.youtube .play-button:before{
+				content: "";
+				border-style: solid;
+				border-width: 15px 0 15px 26.0px;
+				border-color: transparent transparent transparent #fff;
+			}
+			.youtube img,
+			.youtube .play-button{
+				cursor: pointer;
+			}
+			.youtube img,
+			.youtube iframe,
+			.youtube .play-button,
+			.youtube .play-button:before{
+				position: absolute;
+			}
+			.youtube .play-button,
+			.youtube .play-button:before{
+				top: 50%;
+				left: 50%;
+				transform: translate3d( -50%, -50%, 0 );
+			}
+			.youtube iframe{
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+			}
+		</style>
 	</head>
 
 	<!-- <?php flush(); ?> -->
@@ -76,6 +165,13 @@
 					<h4 id="footage" class="subsection">Historical Footage &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
 
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/lJdErHQGEHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<div class="wrapper">
+						<div class="youtube" data-embed="lJdErHQGEHM">
+						  <div class="play-button"></div>
+						</div>
+					</div>
+					  
 					<p class="film">“Mahatma Gandhi, Sarojini Naidu, and Others During the Salt Satyagraha (Salt March).” India, April 1930. <em>YouTube</em>.</p>
 
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/N2xq8LanbyQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -139,7 +235,7 @@
 		
 				<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 				
-				<p><span class="bold">Header image</span>: Anonymous Vili Artist, “<a href="https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi">Male Figure (<em>Nkisi Nkondi</em>)</a>” (Figure, early to mid-nineteenth century), Ada Turnbull Hertle Endowment, 1998.502, Art Institute of Chicago, Chicago. Courtesy of Art Institute of Chicago. <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0 Public Domain</a>. Communities in the Congo used such figures, which include ingridients for providing supernatural powers, to punish individuals guilty of wrongdoing. Each nail represents an instance of the figure's inhabiting spirit being summoned. Although <em>One More Voice</em> focuses on recovering non-European <em>written</em> contributions from nineteenth-century British imperial and colonial archives, such writings represent only one form of expression by the individuals and communities taken up by the project. Historical footage and recordings can be equally as important as can material objects (such as this figure) that form part of the wider intellectual and cultural contexts of the writings. Such objects mights illuminate relevant, culturally-embedded ways of knowing (cf. Fong 2018) or provide less mediated alternatives to <em>One More Voice</em> texts like, for example, a series of <a href="https://onemorevoice.org/texts.html#cfs-informants-toc">informant statements</a> collected by British Consul Roger Casement in the Congo Free State in 1903. Note: The Art Institute of Chicago, which holds the original of this figure, provides an <a href="https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi">interactive online exhibition</a> that further outlines the history and significance of this figure.</p>
+				<p><span class="bold">Header image</span>: Anonymous Vili Artist, “<a href="https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi">Male Figure (<em>Nkisi Nkondi</em>)</a>” (Figure, early to mid-nineteenth century), Ada Turnbull Hertle Endowment, 1998.502, Art Institute of Chicago, Chicago. Courtesy of Art Institute of Chicago. <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0 Public Domain</a>. Communities in the Congo used such figures, which include ingridients for providing supernatural powers, to punish individuals guilty of wrongdoing. Each nail represents an instance of the figure's inhabiting spirit being summoned. Although <em>One More Voice</em> focuses on recovering non-European <em>written</em> contributions from nineteenth-century British imperial and colonial archives, such writings represent only one form of expression by the individuals and communities taken up by the project. Historical footage and recordings can be equally as important in this regard as can material objects (such as this figure) that form part of the wider intellectual and cultural contexts of the writings. Such objects mights illuminate relevant, culturally-specific ways of knowing (cf. Fong 2018) or provide less mediated alternatives to <em>One More Voice</em> texts like, for example, a series of <a href="https://onemorevoice.org/texts.html#cfs-informants-toc">informant statements</a> collected by British Consul Roger Casement in the Congo Free State in 1903. Note: The Art Institute of Chicago, which holds the original of this figure, provides an <a href="https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi">interactive online exhibition</a> that further outlines the history and significance of this figure.</p>
 			</aside>
 			
             <div data-include="footer1"></div>

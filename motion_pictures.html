@@ -48,7 +48,7 @@
 				padding-top: 56.25%;
 				overflow: hidden;
 				cursor: pointer;
-				border: 3px white solid;
+				border: 3px transparent solid;
 			}
 			.youtube:hover,
 			.youtube:focus{
@@ -61,7 +61,7 @@
 			}
 			.youtube:hover img,
 			.youtube:focus img{
-				opacity: 0.5;	
+				opacity: 0.7;	
 			}
 			.youtube .play-button{
 				width: 90px;
@@ -159,6 +159,21 @@
 
 				<section aria-labelledby="footage">
 					<h4 id="footage">Historical Footage &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+
+
+					<!-- https://css-tricks.com/lazy-load-embedded-youtube-videos/ -->
+					<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/N2xq8LanbyQ"
+					srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/N2xq8LanbyQ?autoplay=1><img src=https://img.youtube.com/vi/N2xq8LanbyQ/hqdefault.jpg alt='Three-quarters body portrait of Sarojni Naidu standing and facing forward'><span></span></a>"
+					frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+					title="Sarojini Naidu. Movietone Interview."
+					></iframe>
+
+
 
 					<div class="wrapper" aria-labelledby="naidu-movietone">
 						<div class="youtube" tabindex="0" data-embed="N2xq8LanbyQ" alt="Three-quarters body portrait of Sarojni Naidu standing and facing forward.">

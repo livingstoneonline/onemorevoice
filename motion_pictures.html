@@ -125,53 +125,6 @@
 
 			<div class="navspace" data-include="nav1"></div>
 
-			<!-- <div class="wrapper">
-			<iframe
-			width=""
-			height=""
-			src="https://www.youtube.com/embed/16eNMBjRdwg"
-			srcdoc="
-			<style>
-				* {
-					padding: 0;
-					margin: 0;
-					overflow: hidden;
-				}
-				body,
-				html {
-					height: 100%;
-				}
-				img,
-				span {
-					position: absolute;
-					width: 100%;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					margin: auto;
-				}
-				span {
-					text-align: center;
-					font: 42px/1.5 sans-serif;
-					color: white;
-					width: 90px;
-					height: 60px;
-					background-color: #902D27;
-					box-shadow: 0 0 30px rgba(0,0,0,0.6);
-					z-index: 1;
-					border-radius: 6px;
-				}
-			</style>
-				
-			<a href=https://www.youtube.com/embed/16eNMBjRdwg?autoplay=1><img src=https://img.youtube.com/vi/16eNMBjRdwg/hqdefault.jpg alt=''><span>▶</span></a>"
-			frameborder="0"
-			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen
-			title=""
-			></iframe>
-			</div> -->
-
 			<header class="title" id="title-div">
 				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 				<img class="image responsive-image70 content-holder-5" src="site-images/liv_023016_0001_deriv-980px.jpg" srcset="site-images/liv_023016_0001_deriv-980px.jpg 980w, site-images/liv_023016_0001_deriv-894px.jpg 894w, site-images/liv_023016_0001_deriv-852px.jpg 852w, site-images/liv_023016_0001_deriv-490px.jpg 490w, site-images/liv_023016_0001_deriv-447px.jpg 447w, site-images/liv_023016_0001_deriv-426px.jpg 426w, site-images/liv_023016_0001_deriv-334px.jpg 334w" sizes="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)" alt="Wooden carving of male figure with body covered in shells, bones, feathers, fabric, metal nails." title="Anonymous Vili Artist, “Male Figure (Nkisi Nkondi)” (Figure, early to mid-nineteenth century), Ada Turnbull Hertle Endowment, 1998.502, Art Institute of Chicago, Chicago. Courtesy of Art Institute of Chicago. CC0 Public Domain (see https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi)." />
@@ -347,11 +300,10 @@
 			var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/hqdefault.jpg";
 			
 			var image = new Image();
-				image.setAttribute( "class", "lazyload" );
 				image.src = source;
-				image.addEventListener( "load", function(i) {
-                    youtube[ i ].appendChild( image );
-                }.bind(this, i ) );
+				image.addEventListener( "load", function() {
+					youtube[ i ].appendChild( image );
+				}( i ) );
 			
 				youtube[i].addEventListener( "click", function() {
 

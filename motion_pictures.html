@@ -35,13 +35,12 @@
 		<style>
 			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 			.wrapper{
-				max-width: 680px;
-				margin: 60px auto;
-				padding: 0 20px;
+				max-width: 640px;
+				margin: 0 auto;
+				padding: 0;
 			}
 			.youtube {
-				background-color: #000;
-				margin-bottom: 30px;
+				/* background-color: #000; */
 				position: relative;
 				padding-top: 56.25%;
 				overflow: hidden;
@@ -51,7 +50,7 @@
 				width: 100%;
 				top: -16.82%;
 				left: 0;
-				opacity: 0.7;
+				/* opacity: 0.7; */
 			}
 			.youtube .play-button{
 				width: 90px;
@@ -59,7 +58,7 @@
 				background-color: #333;
 				box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
 				z-index: 1;
-				opacity: 0.8;
+				/* opacity: 0.8; */
 				border-radius: 6px;
 			}
 			.youtube .play-button:before{
@@ -89,6 +88,10 @@
 				width: 100%;
 				top: 0;
 				left: 0;
+			}
+			.film{
+				font-size: .9em;
+    			margin-bottom: 3em;
 			}
 		</style>
 	</head>
@@ -126,6 +129,8 @@
 					</ol>
 				</section>
 
+				<hr/>
+
 				<section aria-labelledby="summary">
 					<h4 id="summary" class="subsection">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
 
@@ -140,28 +145,28 @@
 						  <div class="play-button"></div>
 						</div>
 					</div>
-					<p  class="film">Sarojini Naidu. “Movietone Interview.” [Location unknown], May 26, 1930. <em>YouTube</em>.</p>
+					<p  class="film">Sarojini Naidu. <strong>Movietone Interview</strong>. [Location unknown], May 26, 1930. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" data-embed="kb02__Ln0go">
 						  <div class="play-button"></div>
 						</div>
 					</div>
-					<p class="film">Sarojini Naidu. “Introduces M.S. Subbulakshmi in the Film <em>Meera</em>.” [Location unknown], 1947. <em>YouTube</em>.</p>
+					<p class="film">Sarojini Naidu. <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong>. [Location unknown], 1947. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" data-embed="6zAt9rSG32E">
 						  <div class="play-button"></div>
 						</div>
 					</div>
-					<p class="film">Rabindarath Tagore.“Rare Clips Compilations.” Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. <em>YouTube</em>.</p>
+					<p class="film">Rabindarath Tagore. <strong>Rare Clips Compilations</strong>. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" data-embed="9_JC3488UEs">
 						  <div class="play-button"></div>
 						</div>
 					</div>
-					<p class="film">Rabindarath Tagore. “India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy.” [Location unknown], 5 May 1930; Rome, 7 June 1926. <em>YouTube</em>.</p>
+					<p class="film">Rabindarath Tagore. <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong>. [Location unknown], 5 May 1930; Rome, 7 June 1926. <em>YouTube</em>.</p>
 				</section>
 
 				<section aria-labelledby="recordings">

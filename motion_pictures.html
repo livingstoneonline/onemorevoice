@@ -36,7 +36,7 @@
 			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 			.wrapper{
 				max-width: 640px;
-				margin: 0 auto;
+				margin: 0 auto 3.5em 0;
 				padding: 0;
 			}
 			.youtube{
@@ -58,15 +58,14 @@
 			}
 			.youtube:hover img,
 			.youtube:focus img{
-				opacity: 0.7;	
+				opacity: 0.5;	
 			}
 			.youtube .play-button{
 				width: 90px;
 				height: 60px;
 				background-color: #902D27;
-				box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+				box-shadow: 0 0 30px rgba(0,0,0,0.6);
 				z-index: 1;
-				opacity: unset;
 				border-radius: 6px;
 			}
 			.youtube .play-button:before{
@@ -75,8 +74,8 @@
 				border-width: 15px 0 15px 26.0px;
 				border-color: transparent transparent transparent #fff;
 			}
-			.youtube .play-button:hover,
-			.youtube .play-button:focus{
+			.youtube:hover .play-button,
+			.youtube:focus .play-button{
 				background-color: #204A79;
 			}
 			.youtube img,
@@ -103,7 +102,7 @@
 			}
 			.film{
 				font-size: .9em;
-    			margin-bottom: 3em;
+				padding: 0 3px;
 			}
 		</style>
 	</head>
@@ -152,33 +151,33 @@
 				<section aria-labelledby="footage">
 					<h4 id="footage" class="subsection">Historical Footage &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
 
-					<div class="wrapper">
+					<div class="wrapper" aria-labelledby="menu-sections">
 						<div class="youtube" tabindex="0" data-embed="N2xq8LanbyQ">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Sarojini Naidu. <strong>Movietone Interview</strong>. [Location unknown], May 26, 1930.</p>
 					</div>
-					<p  class="film">Sarojini Naidu. <strong>Movietone Interview</strong>. [Location unknown], May 26, 1930. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="kb02__Ln0go">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Sarojini Naidu. <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong>. [Location unknown], 1947.</p>
 					</div>
-					<p class="film">Sarojini Naidu. <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong>. [Location unknown], 1947. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="6zAt9rSG32E">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Rabindarath Tagore. <strong>Rare Clips Compilations</strong>. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926.</p>
 					</div>
-					<p class="film">Rabindarath Tagore. <strong>Rare Clips Compilations</strong>. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="9_JC3488UEs">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Rabindarath Tagore. <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong>. [Location unknown], 5 May 1930; Rome, 7 June 1926.</p>
 					</div>
-					<p class="film">Rabindarath Tagore. <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong>. [Location unknown], 5 May 1930; Rome, 7 June 1926. <em>YouTube</em>.</p>
 				</section>
 
 				<section aria-labelledby="recordings">
@@ -188,22 +187,23 @@
 						<div class="youtube" tabindex="0" data-embed="L_xpilVoWuo">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Claude McKay. <strong>Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York.”</strong> New York, Early 1940s.</p>
 					</div>
-					<p class="film">Claude McKay. “Reads ‘If We Must Die,’ ‘St. Issac’s Church,’ and ‘The Tropics in New York.’” New York, Early 1940s. <em>YouTube</em>.</p>
+
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="wzf3dWo4EoE">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Sarojini Naidu. <strong>Constituent Assembly Speech.</strong> India, 1946.</p>
 					</div>
-					<p class="film">Sarojini Naidu. “Constituent Assembly Speech.” India, 1946. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="-bkFLQBZ4ow">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Swami Vivekananda. <strong>Lecture at Parliament of World Religion.</strong> Chicago, 11 September 1893.</p>
 					</div>
-					<p class="film">Swami Vivekananda. “Lecture at Parliament of World Religion.” Chicago, 11 September 1893. <em>YouTube</em>.</p>
 				</section>
 
 				<section aria-labelledby="dramatic">
@@ -213,15 +213,15 @@
 						<div class="youtube" tabindex="0" data-embed="VdaC4Oa_z80">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Ousmane Sembène, director. <strong><em>Borom Sarret</em></strong> (<strong><em>The Wagoner</em></strong>). 1963.</p>
 					</div>
-					<p class="film">Ousmane Sembène, director. <em>Borom Sarret</em> (<em>The Wagoner</em>). 1963. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="16eNMBjRdwg">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Prataya Saha and Shatarupa Bhattacharyya, directors. <strong><em>Rabindranath Tagore: Chitraa, the Play</em></strong>. 2020.</p>
 					</div>
-					<p class="film">Prataya Saha and Shatarupa Bhattacharyya, directors. <em>Rabindranath Tagore: Chitraa, the Play</em>. 2020. <em>YouTube</em>.</p>
 				</section>
 
 				<section aria-labelledby="documentaries">
@@ -233,29 +233,29 @@
 						<div class="youtube" tabindex="0" data-embed="lJdErHQGEHM">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film"><strong>Mahatma Gandhi, Sarojini Naidu, and Others During the Salt Satyagraha (Salt March).</strong> India, April 1930.</p>
 					</div>
-					<p class="film">“Mahatma Gandhi, Sarojini Naidu, and Others During the Salt Satyagraha (Salt March).” India, April 1930. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="KO50TiOmDK8">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">René Vautier. <strong><em>Afrique 50</em></strong>. 1950.</p>
 					</div>
-					<p class="film">René Vautier. <em>Afrique 50</em>. 1950. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="hzFeuiZKHcg">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Alain Resnais and Chris Marker, directors. <strong><em>Les Statues Meurent Aussi</em></strong> (<strong><em>Statues Also Die</em></strong>). 1953.</p>
 					</div>
-					<p class="film">Alain Resnais and Chris Marker, directors. <em>Les Statues Meurent Aussi</em> (<em>Statues Also Die</em>). 1953. <em>YouTube</em>.</p>
 
 					<div class="wrapper">
 						<div class="youtube" tabindex="0" data-embed="_Bg-9Ymdh30">
 						  <div class="play-button"></div>
 						</div>
+						<p class="film">Rituparno Ghosh, director. <strong><em>Jeevan Smirti</em></strong> (<strong><em>Selective Memories</em></strong>). 2013.</p>
 					</div>
-					<p class="film">Rituparno Ghosh, director. <em>Jeevan Smirti</em> (<em>Selective Memories</em>). 2013. <em>YouTube</em>.</p>
 				</section>
 
 			</main>

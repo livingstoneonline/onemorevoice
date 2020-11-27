@@ -301,6 +301,8 @@
 			
 			var image = new Image();
 				image.src = source;
+				image.setAttribute( "class", "lazyload" );
+				image.setAttribute( "alt", "" );
 				image.addEventListener( "load", function() {
 					youtube[ i ].appendChild( image );
 				}( i ) );

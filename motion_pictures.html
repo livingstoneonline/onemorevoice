@@ -37,6 +37,7 @@
 				z-index: 999;
 			}
 			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
+			/* Review https://codepen.io/beardofprey/pen/MXmxXR */
 			.wrapper{
 				max-width: 640px;
 				margin: 0 auto 3em 0;
@@ -328,6 +329,7 @@
 
 						iframe.setAttribute( "frameborder", "0" );
 						iframe.setAttribute( "allowfullscreen", "" );
+						iframe.setAttribute( "allow", "autoplay" );
 						iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
 
 						this.innerHTML = "";

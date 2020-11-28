@@ -499,7 +499,7 @@ a:focus img{
 	left: 0;
 	width: 100%;
 	max-width: 100%;
-	z-index: 1;
+	z-index: 100;
 	border-bottom: 1px gray solid;
 	box-shadow: 0 4px 6px -6px #222;
 	-webkit-box-shadow: 0 4px 6px -6px #222;
@@ -815,7 +815,7 @@ body.fixed-nav .overlay .menu .close-title{
 	left: 0;
 	top: 0;
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	z-index: 200; /* Sit on top */
 	overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: auto;
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */

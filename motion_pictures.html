@@ -4,7 +4,7 @@
 
 <!-- To-do list
 1) tab stop
-2) double-click play
+2) double-click play (mobile)
 3) image -->
 
 	<head>
@@ -407,6 +407,11 @@
 		</script>
 		<!-- /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */ -->
 		<!-- /* Review https://codepen.io/beardofprey/pen/MXmxXR */ -->
+		<!-- Adding a custom start time is easily done
+		Add data-starttime in the HTML if you need it
+			ex HTML: div class="youtube" data-embed="AqcjdkPMPJA" data-starttime="25"
+		and by changing the following java line:
+			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&start="+ this.dataset.starttime +""); -->
 		<script type="text/javascript">
 			(function () {
 

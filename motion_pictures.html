@@ -38,6 +38,7 @@
 		</script>
 
 		<style>
+			/* Check against books, archival texts */
 			.films h4{
 				font-size: 1.10em;
 				font-style: normal;
@@ -404,6 +405,8 @@
 				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 			}
 		</script>
+		<!-- /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */ -->
+		<!-- /* Review https://codepen.io/beardofprey/pen/MXmxXR */ -->
 		<script type="text/javascript">
 			(function () {
 
@@ -429,6 +432,7 @@
 
 					iframe.setAttribute("frameborder", "0");
 					iframe.setAttribute("allowfullscreen", "");
+					iframe.setAttribute("allow", "autoplay"); 
 					iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
 
 					this.innerHTML = "";
@@ -441,6 +445,7 @@
 
 					iframe.setAttribute("frameborder", "0");
 					iframe.setAttribute("allowfullscreen", "");
+					iframe.setAttribute("allow", "autoplay"); 
 					iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
 
 					this.innerHTML = "";

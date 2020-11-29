@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en">
+
+<!-- To-do list
+1) tab stop
+2) double-click play (mobile)
+3) image -->
+
+	<head>
+		<title>Motion Pictures | One More Voice</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Motion Pictures page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+		<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Caribbean,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,motion pictures,sound recordings,coronavirus,covid-19,creative commons" />
+		<meta name="theme-color" content="#204A79"/>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
+		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-31768072-5');
+		</script>
+
+<!-- https://codepen.io/beardofprey/pen/MXmxXR -->
+<style>
+html {
+	background-color: #f3f3f3;
+}
+.wrapper {
+	max-width: 680px;
+	margin: 60px auto;
+	padding: 0 20px;
+}
+
+
+.video-wrap {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.video-wrap img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 0.7;
+}
+.video-wrap .play-button {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+.video-wrap .play-button:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.video-wrap img,
+.video-wrap .play-button {
+	cursor: pointer;
+}
+.video-wrap img,
+.video-wrap iframe,
+.video-wrap .play-button,
+.video-wrap .play-button:before {
+	position: absolute;
+}
+.video-wrap .play-button,
+.video-wrap .play-button:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.video-wrap iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+	</style>
+	</head>
+
+	<!-- <?php flush(); ?> -->
+
+	<body class="essay">
+		<article>	
+
+		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+			<div class="navspace" data-include="nav1"></div>
+
+			<header class="title" id="title-div">
+				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+				<!-- <img class="image responsive-image70 content-holder-5" src="site-images/liv_023016_0001_deriv-980px.jpg" srcset="site-images/liv_023016_0001_deriv-980px.jpg 980w, site-images/liv_023016_0001_deriv-894px.jpg 894w, site-images/liv_023016_0001_deriv-852px.jpg 852w, site-images/liv_023016_0001_deriv-490px.jpg 490w, site-images/liv_023016_0001_deriv-447px.jpg 447w, site-images/liv_023016_0001_deriv-426px.jpg 426w, site-images/liv_023016_0001_deriv-334px.jpg 334w" sizes="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)" alt="Wooden carving of male figure with body covered in shells, bones, feathers, fabric, metal nails." title="Anonymous Vili Artist, “Male Figure (Nkisi Nkondi)” (Figure, early to mid-nineteenth century), Ada Turnbull Hertle Endowment, 1998.502, Art Institute of Chicago, Chicago. Courtesy of Art Institute of Chicago. CC0 Public Domain (see https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi)." /> -->
+				<h1 class="header-title">One More Voice</h1>
+				<hr />
+				<h2 class="italic">Lost Voices from the British Empire's Archives</h2>
+			</header>
+			
+			<main class="main" id="main">
+				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+
+				<h3>Motion Pictures</h3>
+				
+				<section class="toc" aria-labelledby="menu-sections">
+					<ol id="menu-sections">
+						<li class="toc-title">[Menu: Sections]</li>
+						<li><a href="#summary">Overview</a></li>
+						<li><a href="#footage">Historical Footage</a></li>
+						<li><em>Bonus:</em> <a href="#recordings">Historical Recordings</a></li>
+						<li><a href="#dramatic">Dramatic Performances</a></li>
+						<li><a href="#documentaries">Documentaries</a></li>
+					</ol>
+				</section>
+
+				<section aria-labelledby="summary">
+					<h4 id="summary">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+
+					<p><em>One More Voice</em> collects and curates a small selection of relevant, publicly-available <a href="#footage">motion pictures</a> and, in a few cases, sound <a href="recordings">recordings</a>. These items offer an opportunity to see and hear some of the individuals who feature elsewhere on the <em>One More Voice</em> project site, including on the pages for <a href="texts.html">archival texts</a>, <a href="artifacts.html">artifact images</a>, and <a href="books.html">book-length works</a>. For historical context, the present page also includes a few early <a href="documentaries">anti-colonial and other documentary films</a> as well as a handful of <a href="dramatic">dramatic performances</a>. To suggest additional items, please <a href="mailto:awisnicki@yahoo.com">email us</a>.</p>
+				</section>
+
+				<hr class="title-hr" />
+
+
+				<div class="wrapper">
+					<div class="video-wrap">
+						<div class="ytplayer" data-embed="hLJbRFR7h3I" id="player_hLJbRFR7h3I">
+							<div class="play-button"></div>
+						</div>
+					</div>
+					<div class="video-wrap">
+						<div class="ytplayer" data-embed="KO50TiOmDK8" id="player_KO50TiOmDK8">
+							<div class="play-button"></div>
+						</div>
+					</div>
+				</div>
+				
+
+</main>
+
+<aside class="credits" id="credits-div">
+	<hr />
+	
+	<p><span class="bold">Cite page (MLA):</span> “Motion Pictures.” <span class="italic">One More Voice</span> (an imprint of <span class="italic">Livingstone Online</span>), site launch edition, 2020, <a href="contributors.html">https://onemorevoice.org/motion_pictures.html</a>.</p>
+
+	<p><span class="bold">Terms of use:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+	
+	<!-- <p><span class="bold">Header image</span>: Anonymous Vili Artist, “<a href="https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi">Male Figure (<em>Nkisi Nkondi</em>)</a>” (Figure, early to mid-nineteenth century), Ada Turnbull Hertle Endowment, 1998.502, Art Institute of Chicago, Chicago. Courtesy of Art Institute of Chicago. <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0 Public Domain</a>. Communities in the Congo used such figures, which include ingridients for providing supernatural powers, to punish individuals guilty of wrongdoing. Each nail represents an instance of the figure's inhabiting spirit being summoned. Although <em>One More Voice</em> focuses on recovering non-European <em>written</em> contributions from nineteenth-century British imperial and colonial archives, such writings represent only one form of expression by the individuals and communities taken up by the project. Historical footage and recordings can be equally as important in this regard as can material objects (such as this figure) that form part of the wider intellectual and cultural contexts of the writings. Such objects mights illuminate relevant, culturally-specific ways of knowing (cf. Fong 2018) or provide less mediated alternatives to <em>One More Voice</em> texts like, for example, a series of <a href="https://onemorevoice.org/texts.html#cfs-informants-toc">informant statements</a> collected by British Consul Roger Casement in the Congo Free State in 1903. Note: The Art Institute of Chicago, which holds the original of this figure, provides an <a href="https://www.artic.edu/artworks/151358/male-figure-nkisi-nkondi">interactive online exhibition</a> that further outlines the history and significance of this figure.</p> -->
+</aside>
+
+<div data-include="footer1"></div>
+
+</article>
+<script src="scripts/jquery-3.5.1.min.js"></script> 
+<!-- Adapted from https://stackoverflow.com/a/31837264 -->
+<script>
+$(function(){
+  var includes = $('[data-include]');
+  jQuery.each(includes, function(){
+	var file = 'common/' + $(this).data('include') + '.html';
+	$(this).load(file);
+  });
+});
+</script>		
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script>
+// 1. load the Youtube API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 2. When the API code is finished downloading
+var player;
+function onYouTubePlayerAPIReady(event) {
+
+  var ytplayer = document.querySelectorAll( ".ytplayer" );
+
+  // 3. for each video
+  for (var i = 0; i < ytplayer.length; i++) {
+		
+		var source = "https://img.youtube.com/vi/"+ ytplayer[i].dataset.embed +"/hqdefault.jpg";
+		
+		var image = new Image();
+				image.src = source;
+				image.addEventListener( "load", function() {
+					ytplayer[ i ].appendChild( image );
+				}( i ) );
+
+    // 4. Create a click event listener
+    ytplayer[i].addEventListener( "click", function() {
+
+      // 5. Create the player
+      player = new YT.Player(this.id, {
+        height: '',
+        width: '',
+        videoId: this.dataset.embed,
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+
+      // 6. Play the video when player is ready
+      function onPlayerReady(event) {
+        event.target.mute();
+				event.target.playVideo();
+      }
+
+      // 7. Remove the image & button
+      this.innerHTML = "";
+
+    });
+
+  }
+
+}
+	</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
+<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "scripts/scripts.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
+</body>
+
+</html>

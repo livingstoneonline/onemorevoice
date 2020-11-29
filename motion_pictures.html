@@ -5,8 +5,7 @@
 <!-- To-do list
 1) tab stop
 2) double-click play
-3) arrow on mobile
-4) notecard css -->
+3) image -->
 
 	<head>
 		<title>Motion Pictures | One More Voice</title>
@@ -39,15 +38,69 @@
 		</script>
 
 		<style>
-			.fixed-nav #sticky{
-				z-index: 999;
+			.films h4{
+				font-size: 1.15em;
+				font-style: normal;
+				font-weight: 600;
+				color: white;
+				background-color: #902D27;
+				padding: 10px 14px;
+				margin: 2.5em 0 1.5em 0;
+				border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				display: flex;
+    			justify-content: space-between;
+			}
+			.films section:first-child h4:first-child{
+				margin-top: 0;
+			}
+			.films h4 .return-top{
+				color: white;
+				font-size: 0.85em;
+				white-space: nowrap;
+				margin-top: 0.2em;
+			}
+			@media only screen and (min-width: 480px){
+				.films h4 .return-top{
+					margin-right: 0.5em;
+				}
+			}
+			.films h4 a.return-top:focus,
+			.films h4 a.return-top:hover{
+				color: #a83c37;
+    			background-color: #e3e3e3;
+			}
+			.films h5{
+				font-size: 1.05em;
+				background-color: #e3e3e3;
+				padding: 10px 16px;
+				margin: 0;
+				border-bottom: 1px solid #858585;
+				border-radius:  8px 8px 0 0;
+				-webkit-border-radius: 8px 8px 0 0;
+				-moz-border-radius:  8px 8px 0 0;
+			}
+			.films p{
+				font-size: .9em;
+				padding: 1em 1em 0 1em;
+				border-top: 1px solid #858585;
+			}
+			.films p.warning {
+				border: 1px solid #902D27;
+				background: #e3e3e3;
+				padding: 5px 7px;
+				margin: -.5em 0 1.5em 0;
 			}
 			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 			/* Review https://codepen.io/beardofprey/pen/MXmxXR */
 			.wrapper{
-				max-width: 640px;
-				margin: 0 auto 3em 0;
+				margin: 0 auto 2em 0;
 				padding: 0;
+				border: 1px solid #858585;
+				border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
 			}
 			.wrapper:last-child{
 				margin: 0 auto;
@@ -56,8 +109,9 @@
 				/* background-color: #000; */
 				position: relative;
 				padding-top: 56.25%;
-				overflow: hidden;
+				margin: .5em;
 				cursor: pointer;
+				overflow: hidden;
 				border: 3px transparent solid;
 			}
 			.youtube:hover,
@@ -74,18 +128,29 @@
 				opacity: 0.5;	
 			}
 			.youtube .play-button{
-				width: 90px;
-				height: 60px;
+				width: 60px;
+				height: 40px;
 				background-color: #902D27;
 				box-shadow: 0 0 30px rgba(0,0,0,0.6);
 				z-index: 2;
 				border-radius: 6px;
 			}
+			@media only screen and (min-width: 480px){
+				.youtube .play-button{
+					width: 90px;
+					height: 60px;
+				}
+			}
 			.youtube .play-button:before{
 				content: "";
 				border-style: solid;
-				border-width: 15px 0 15px 26.0px;
+				border-width: 10px 0 10px 18px;
 				border-color: transparent transparent transparent #fff;
+			}
+			@media only screen and (min-width: 480px){
+				.youtube .play-button:before{
+					border-width: 15px 0 15px 26px;
+				}
 			}
 			.youtube:hover .play-button,
 			.youtube:focus .play-button{
@@ -105,23 +170,13 @@
 			.youtube .play-button:before{
 				top: 50%;
 				left: 50%;
-				transform: translate3d( -50%, -50%, 0 );
+				transform: translate3d( -50%, -50%, 0 ); /* Mistake but works */
 			}
 			.youtube iframe{
 				height: 100%;
 				width: 100%;
 				top: 0;
 				left: 0;
-			}
-			.film{
-				font-size: .9em;
-				padding: 0 3px;
-			}
-			.warning {
-				border: 1px solid #902D27;
-				background: #e3e3e3;
-				padding: 5px 7px;
-				margin: 0 0 1.5em;
 			}
 		</style>
 	</head>
@@ -152,122 +207,171 @@
 					<ol id="menu-sections">
 						<li class="toc-title">[Menu: Sections]</li>
 						<li><a href="#summary">Overview</a></li>
-						<li><a href="#footage">Historical footage</a></li>
-						<li><em>Bonus:</em> <a href="#recordings">Historical recordings</a></li>
+						<li><a href="#footage">Historical Footage</a></li>
+						<li><em>Bonus:</em> <a href="#recordings">Historical Recordings</a></li>
 						<li><a href="#dramatic">Dramatic Performances</a></li>
 						<li><a href="#documentaries">Documentaries</a></li>
 					</ol>
 				</section>
 
 				<section aria-labelledby="summary">
-					<h4 id="summary">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+					<h4 id="summary">Overview <a href="#menu-sections" class="return-top">top</a></h4>
 
 					<p><em>One More Voice</em> collects and curates a small selection of relevant, publicly-available <a href="#footage">motion pictures</a> and, in a few cases, sound <a href="recordings">recordings</a>. These items offer an opportunity to see and hear some of the individuals who feature elsewhere on the <em>One More Voice</em> project site, including on the pages for <a href="texts.html">archival texts</a>, <a href="artifacts.html">artifact images</a>, and <a href="books.html">book-length works</a>. For historical context, the present page also includes a few early <a href="documentaries">anti-colonial and other documentary films</a> as well as a handful of <a href="dramatic">dramatic performances</a>. To suggest additional items, please <a href="mailto:awisnicki@yahoo.com">email us</a>.</p>
 				</section>
 
 				<hr class="title-hr" />
 
-				<section aria-labelledby="footage">
-					<h4 id="footage">Historical Footage &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+				<section class="films">
 
-					<div class="wrapper" aria-labelledby="naidu-movietone">
-						<div class="youtube" tabindex="0" data-embed="N2xq8LanbyQ" data-title="Sarojini Naidu. Movietone Interview. [Location unknown], May 26, 1930. Running time: 1:08." data-alt="Three-quarters body portrait of Sarojni Naidu standing and facing forward.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="naidu-movietone">Sarojini Naidu. <strong>Movietone Interview</strong>. [Location unknown], May 26, 1930. Running time: 1:08.</p>
-					</div>
+					<section aria-labelledby="footage">
+						<h4 id="footage">Historical Footage <a href="#menu-sections" class="return-top">top</a></h4>
 
-					<div class="wrapper" aria-labelledby="naidu-introduces">
-						<div class="youtube" tabindex="0" data-embed="kb02__Ln0go" data-title="Sarojini Naidu. Introduces M.S. Subbulakshmi in the Film Meera. [Location unknown], 1947. Running time: 1:25." data-alt="Half-body portrait of Sarojni Naidu standing and facing forward.">
-						  <div class="play-button"></div>
+						<div class="wrapper" aria-labelledby="naidu-movietone">
+							<h5 id="naidu-movietone">Sarojini Naidu</h5>
+							<div class="youtube" tabindex="0" data-embed="N2xq8LanbyQ" data-title="Sarojini Naidu. Movietone Interview. [Location unknown], May 26, 1930. Running time: 1:08." data-alt="Three-quarters body portrait of Sarojni Naidu standing and facing forward.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Movietone Interview</strong><br />
+								Date: <strong>26 May 1930</strong><br />
+								Location: <strong>Unknown</strong><br />
+								Running time: <strong>1:08</strong>
+							</p>
 						</div>
-						<p class="film" id="naidu-introduces">Sarojini Naidu. <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong>. [Location unknown], 1947. Running time: 1:25.</p>
-					</div>
 
-					<div class="wrapper" aria-labelledby="tagore-rare">
-						<div class="youtube" tabindex="0" data-embed="6zAt9rSG32E" data-title="Rabindarath Tagore. Rare Clips Compilations. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. Running time: 3:04." data-alt="Head and shoulders portrait of Rabindarath Tagore.">
-						  <div class="play-button"></div>
+						<div class="wrapper" aria-labelledby="naidu-introduces">
+							<h5 id="naidu-introduces">Sarojini Naidu</h5>
+							<div class="youtube" tabindex="0" data-embed="kb02__Ln0go" data-title="Sarojini Naidu. Introduces M.S. Subbulakshmi in the Film Meera. [Location unknown], 1947. Running time: 1:25." data-alt="Half-body portrait of Sarojni Naidu standing and facing forward.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong><br />
+								Date: <strong>1947</strong><br />
+								Location: <strong>Unknown</strong><br />
+								Running time: <strong>1:25</strong>
+							</p>
 						</div>
-						<p class="film" id="tagore-rare">Rabindarath Tagore. <strong>Rare Clips Compilations</strong>. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. Running time: 3:04.</p>
-					</div>
 
-					<div class="wrapper" aria-labelledby="tagore-indias">
-						<div class="youtube" tabindex="0" data-embed="9_JC3488UEs" data-title="Rabindarath Tagore. India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy. [Location unknown], 5 May 1930; Rome, 7 June 1926. Running time: 5:15." data-alt="Half-body portrait of Rabindarath Tagore.">
-						  <div class="play-button"></div>
+						<div class="wrapper" aria-labelledby="tagore-rare">
+							<h5 id="tagore-rare">Rabindarath Tagore</h5>
+							<div class="youtube" tabindex="0" data-embed="6zAt9rSG32E" data-title="Rabindarath Tagore. Rare Clips Compilations. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. Running time: 3:04." data-alt="Head and shoulders portrait of Rabindarath Tagore.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Rare Clips Compilations</strong><br />
+								Date: <strong>1930; 1930; 1930; 1921; 1926</strong><br />
+								Location: <strong>Berlin; New York; Moscow; France; Rome</strong><br />
+								Running time: <strong>3:04</strong>
+							</p>
 						</div>
-						<p class="film" id="tagore-indias">Rabindarath Tagore. <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong>. [Location unknown], 5 May 1930; Rome, 7 June 1926. Running time: 5:15.</p>
-					</div>
+
+						<div class="wrapper" aria-labelledby="tagore-indias">
+							<h5 id="tagore-indias">Rabindarath Tagore</h5>
+							<div class="youtube" tabindex="0" data-embed="9_JC3488UEs" data-title="Rabindarath Tagore. India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy. [Location unknown], 5 May 1930; Rome, 7 June 1926. Running time: 5:15." data-alt="Half-body portrait of Rabindarath Tagore.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong><br />
+								Date: <strong>5 May 1930; 7 June 1926</strong><br />
+								Location: <strong>Unknown; Rome</strong><br />
+								Running time: <strong>1:08</strong>
+							</p>
+						</div>
+					</section>
+
+					<section aria-labelledby="recordings">
+						<h4 id="recordings">Bonus: Historical Recordings <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<div class="wrapper" aria-labelledby="mckay-reads">
+							<h5 id="mckay-reads">Claude McKay</h5>
+							<div class="youtube" tabindex="0" data-embed="L_xpilVoWuo" data-title="Claude McKay. Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York.” New York, Early 1940s. Running time: 3:12." data-alt="Head and shoulders portrait of Claude McKay.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York.”</strong><br />
+								Date: <strong>Early 1940s</strong><br />
+								Location: <strong>New York</strong><br />
+								Running time: <strong>3:12</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="naidu-constituent">
+							<h5 id="naidu-constituent">Sarojini Naidu</h5>
+							<div class="youtube" tabindex="0" data-embed="wzf3dWo4EoE" data-title="Sarojini Naidu. Constituent Assembly Speech. India, 1946. Running time: 10:16." data-alt="Headshot of Sarojini Naidu.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Constituent Assembly Speech</strong><br />
+								Date: <strong>1946</strong><br />
+								Location: <strong>India</strong><br />
+								Running time: <strong>10:16</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="vivekanada-lecture">
+							<h5 id="vivekanada-lecture">Swami Vivekananda</h5>
+							<div class="youtube" tabindex="0" data-embed="-bkFLQBZ4ow" data-title="Swami Vivekananda. Lecture at Parliament of World Religion. Chicago, 11 September 1893. Running time: 3:36." data-alt="Headshot of Swami Vivekanda.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Lecture at Parliament of World Religion</strong><br />
+								Date: <strong>11 September 1893</strong><br />
+								Location: <strong>Chicago</strong><br />
+								Running time: <strong>3:36</strong>
+							</p>
+						</div>
+					</section>
+
+					<section aria-labelledby="dramatic">
+						<h4 id="dramatic">Dramatic Performances <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<div class="wrapper" aria-labelledby="borom-sarret">
+							<h5 id="borom-sarret"><em>Borom Sarret</em> (<em>The Wagoner</em>)</h5>
+							<div class="youtube" tabindex="0" data-embed="VdaC4Oa_z80" data-title="Ousmane Sembène, director. Borom Sarret (The Wagoner). 1963. Running time: 18:28." data-alt="Man in hat in front of wooden fence and trucks.">
+								<div class="play-button"></div>
+							</div>
+							<p>Director: <strong>Ousmane Sembène</strong><br />
+								Date: <strong>1963</strong><br />
+								Running time: <strong>18:28</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="chitara">
+							<h5 id="chitara"><em>Chitraa, the Play</em></h5>
+							<div class="youtube" tabindex="0" data-embed="16eNMBjRdwg" data-title="Prataya Saha and Shatarupa Bhattacharyya, directors. Rabindranath Tagore: Chitraa, the Play. 2020. Running time: 29:47." data-alt="Woman and man wearing traditional Indian clothing and embracing.">
+								<div class="play-button"></div>
+							</div>
+							<p>Author: <strong>Rabindarath Tagore</strong><br/>
+								Directors: <strong>Prataya Saha and Shatarupa Bhattacharyya</strong><br />
+								Date: <strong>[1913] 2020</strong><br />
+								Running time: <strong>29:47</strong>
+							</p>
+						</div>
+					</section>
+
+					<section aria-labelledby="documentaries">
+						<h4 id="documentaries">Documentaries <a href="#menu-sections" class="return-top">top</a></h4>
+						
+						<p class="small warning"><span class="bold site-red">Warning:</span> Site visitors are advised to proceed with caution when consulting the films in this subsection because they may contain material that can upset or distress some viewers.</p>
+
+						<div class="wrapper" aria-labelledby="afrique-50">
+							<h5 id="afrique-50"><em>Afrique 50</em></h5>
+							<div class="youtube" tabindex="0" data-embed="KO50TiOmDK8" data-title="René Vautier. Afrique 50. 1950. Running time: 17:24." data-alt="Two children looking at viewer.">
+								<div class="play-button"></div>
+							</div>
+							<p>Director: <strong>René Vautier</strong><br />
+								Date: <strong>1950</strong><br />
+								Running time: <strong>17:24</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="statues">
+							<h5 id="statues"><em>Les Statues Meurent Aussi</em> (<em>Statues Also Die</em>)</h5>
+							<div class="youtube" tabindex="0" data-embed="hLJbRFR7h3I" data-title="Alain Resnais and Chris Marker, directors. Les Statues Meurent Aussi (Statues Also Die). 1953. Running Time: 30:03." data-alt="People in traditional African clothing in circle, holding large pestles with one grinding in mortar.">
+								<div class="play-button"></div>
+							</div>
+							<p>Directors: <strong>Alain Resnais and Chris Marker</strong><br />
+								Date: <strong>1953</strong><br />
+								Running time: <strong>30:03</strong>
+							</p>
+						</div>
+					</section>
+
 				</section>
-
-				<hr class="title-hr" />
-
-				<section aria-labelledby="recordings">
-					<h4 id="recordings"><span style="font-style: normal;">Bonus:</span> Historical Recordings &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
-
-					<div class="wrapper" aria-labelledby="mckay-reads">
-						<div class="youtube" tabindex="0" data-embed="L_xpilVoWuo" data-title="Claude McKay. Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York.” New York, Early 1940s. Running time: 3:12." data-alt="Head and shoulders portrait of Claude McKay.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="mckay-reads">Claude McKay. <strong>Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York.”</strong> New York, Early 1940s. Running time: 3:12.</p>
-					</div>
-
-					<div class="wrapper" aria-labelledby="naidu-constituent">
-						<div class="youtube" tabindex="0" data-embed="wzf3dWo4EoE" data-title="Sarojini Naidu. Constituent Assembly Speech. India, 1946. Running time: 10:16." data-alt="Headshot of Sarojini Naidu.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="naidu-constituent">Sarojini Naidu. <strong>Constituent Assembly Speech.</strong> India, 1946. Running time: 10:16.</p>
-					</div>
-
-					<div class="wrapper" aria-labelledby="vivekanada-lecture">
-						<div class="youtube" tabindex="0" data-embed="-bkFLQBZ4ow" data-title="Swami Vivekananda. Lecture at Parliament of World Religion. Chicago, 11 September 1893. Running time: 3:36." data-alt="Headshot of Swami Vivekanda.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="vivekanada-lecture">Swami Vivekananda. <strong>Lecture at Parliament of World Religion.</strong> Chicago, 11 September 1893. Running time: 3:36.</p>
-					</div>
-				</section>
-
-				<hr class="title-hr" />
-
-				<section aria-labelledby="dramatic">
-					<h4 id="dramatic">Dramatic Performances &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
-
-					<div class="wrapper" aria-labelledby="sembene-borom">
-						<div class="youtube" tabindex="0" data-embed="VdaC4Oa_z80" data-title="Ousmane Sembène, director. Borom Sarret (The Wagoner). 1963. Running time: 18:28." data-alt="Man in hat in front of wooden fence and trucks.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="sembene-borom">Ousmane Sembène, director. <strong><em>Borom Sarret</em></strong> (<strong><em>The Wagoner</em></strong>). 1963. Running time: 18:28.</p>
-					</div>
-
-					<div class="wrapper" aria-labelledby="saha-bhattacharyya">
-						<div class="youtube" tabindex="0" data-embed="16eNMBjRdwg" data-title="Prataya Saha and Shatarupa Bhattacharyya, directors. Rabindranath Tagore: Chitraa, the Play. 2020. Running time: 29:47." data-alt="Woman and man wearing traditional Indian clothing and embracing.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="saha-bhattacharyya">Prataya Saha and Shatarupa Bhattacharyya, directors. <strong><em>Rabindranath Tagore: Chitraa, the Play</em></strong>. 2020. Running time: 29:47.</p>
-					</div>
-				</section>
-
-				<hr class="title-hr" />
-
-				<section aria-labelledby="documentaries">
-					<h4 id="documentaries">Documentaries* &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
-					
-					<p class="small warning"><span class="bold site-red">Warning:</span> Site visitors are advised to proceed with caution when consulting the films in this subsection because they may contain material that can upset or distress some viewers.</p>
-
-					<div class="wrapper" aria-labelledby="vautier-afrique">
-						<div class="youtube" tabindex="0" data-embed="KO50TiOmDK8" data-title="René Vautier. Afrique 50. 1950. Running time: 17:24." data-alt="Two children looking at viewer.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="vautier-afrique">René Vautier. <strong><em>Afrique 50</em></strong>. 1950. Running time: 17:24.</p>
-					</div>
-
-					<div class="wrapper" aria-labelledby="resnais-marker">
-						<div class="youtube" tabindex="0" data-embed="hzFeuiZKHcg" data-title="Alain Resnais and Chris Marker, directors. Les Statues Meurent Aussi (Statues Also Die). 1953. Running Time: 30:03." data-alt="People in traditional African clothing in circle, holding large pestles with one grinding in mortar.">
-						  <div class="play-button"></div>
-						</div>
-						<p class="film" id="resnais-marker">Alain Resnais and Chris Marker, directors. <strong><em>Les Statues Meurent Aussi</em></strong> (<strong><em>Statues Also Die</em></strong>). 1953. Running Time: 30:03.</p>
-					</div>
-				</section>
-
 			</main>
 
 			<aside class="credits" id="credits-div">

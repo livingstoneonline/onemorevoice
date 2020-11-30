@@ -406,12 +406,10 @@
 			}
 		</script>
 		<!-- /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */ -->
-		<!-- /* Review https://codepen.io/beardofprey/pen/MXmxXR */ -->
-		<!-- Adding a custom start time is easily done
-		Add data-starttime in the HTML if you need it
+		<!-- Adding a custom start time
 			ex HTML: div class="youtube" data-embed="AqcjdkPMPJA" data-starttime="25"
-		and by changing the following java line:
-			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&start="+ this.dataset.starttime +""); -->
+		and by change the following java line:
+			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&playsinline=1&start="+ this.dataset.starttime +""); -->
 		<script type="text/javascript">
 			(function () {
 
@@ -431,31 +429,23 @@
 					youtube[i].appendChild(image);
 				}(i));
 
-				youtube[i].addEventListener("click", function () {
+				var eventList = ["click", "keypress", "..."];
 
-					var iframe = document.createElement("iframe");
+				for(event of eventList) {
 
-					iframe.setAttribute("frameborder", "0");
-					iframe.setAttribute("allowfullscreen", "");
-					iframe.setAttribute("allow", "autoplay"); 
-					iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1&playsinline=1&mute=1");
+					youtube[i].addEventListener(event, function () {
 
-					this.innerHTML = "";
-					this.appendChild(iframe);
-				});
+						var iframe = document.createElement("iframe");
 
-				youtube[i].addEventListener("keypress", function (e) {
+						iframe.setAttribute("frameborder", "0");
+						iframe.setAttribute("allowfullscreen", "");
+						iframe.setAttribute("allow", "autoplay"); 
+						iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1&playsinline=1");
 
-					var iframe = document.createElement("iframe");
-
-					iframe.setAttribute("frameborder", "0");
-					iframe.setAttribute("allowfullscreen", "");
-					iframe.setAttribute("allow", "autoplay"); 
-					iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1&playsinline=1&mute=1");
-
-					this.innerHTML = "";
-					this.appendChild(iframe);
-				});
+						this.innerHTML = "";
+						this.appendChild(iframe);
+					});
+				};
 			};
 
 			})();			

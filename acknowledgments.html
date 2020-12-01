@@ -35,6 +35,11 @@
 			ul.acknowledgments{
 				padding-left: 0;
 			}
+			@media only screen and (min-width: 480px){
+				ul.acknowledgments{
+					padding-left: 1.2em;
+				}
+			}
 			.acknowledgments li{
 				list-style: none;
 				padding-left: 0;
@@ -46,12 +51,26 @@
 				font-size: .65em;
 				font-weight: normal;
 				font-family: Arial, Geneva, Tahoma, sans-serif;
-				/* background: white;
-				border: 1px solid black; */
 				padding: 0 3px;
-				bottom: 13.5em;
+				bottom: -1.5em;
 				right: 0;
 				position: absolute;
+			}
+			@media only screen and (min-width: 480px){
+				header h2{
+					margin-top: 2em;
+				}
+				.caption{
+					bottom: 5em;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				header h2{
+					margin-top: 1em;
+				}
+				.caption{
+					bottom: 13.5em;
+				}
 			}
 		</style>  	
 	</head>

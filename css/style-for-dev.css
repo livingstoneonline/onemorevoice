@@ -65,7 +65,7 @@ html{
 body{ 
     top: 0px !important; /* Needed for Google Translate */
 	margin: 0.5em auto;
-	padding-bottom: 1em;
+	padding-bottom: .5em;
 }
 @media only screen and (min-width: 768px){
 	body{
@@ -1443,7 +1443,6 @@ ol.primary-historical li{
 /* The following items are used on the acknowledgments.html page. */
 ul.acknowledgments{
 	padding-left: 0;
-	line-height: 2em;
 }
 @media only screen and (min-width: 480px){
 	ul.acknowledgments{
@@ -1453,4 +1452,5 @@ ul.acknowledgments{
 .acknowledgments li{
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: .6em;
 }

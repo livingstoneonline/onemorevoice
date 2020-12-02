@@ -101,7 +101,7 @@
         			<div class="navspace" data-include="nav2"></div>
 										       
 					<header class="title" id="title-div"> 
-					    <img class="image image-border content-holder-1" src="../site-images/liv_023005_0001_deriv-1399px.jpg" srcset="../site-images/liv_023005_0001_deriv-1399px.jpg 1399w, ../site-images/liv_023005_0001_deriv-1276px.jpg 1276w, ../site-images/liv_023005_0001_deriv-1216px.jpg 1216w, ../site-images/liv_023005_0001_deriv-699px.jpg 699w, ../site-images/liv_023005_0001_deriv-638px.jpg 638w, ../site-images/liv_023005_0001_deriv-608px.jpg 608w, ../site-images/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project." />
+					    <img class="image image-border content-holder-1" src="../site-images/liv_023005_0001_deriv-1399px.jpg" srcset="../site-images/liv_023005_0001_deriv-1399px.jpg 1399w, ../site-images/liv_023005_0001_deriv-1276px.jpg 1276w, ../site-images/liv_023005_0001_deriv-1216px.jpg 1216w, ../site-images/liv_023005_0001_deriv-699px.jpg 699w, ../site-images/liv_023005_0001_deriv-638px.jpg 638w, ../site-images/liv_023005_0001_deriv-608px.jpg 608w, ../site-images/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 						<p class="caption">Image caption at page bottom</p>
 		        		<h1 class="header-title">One More Voice</h1>
 		        		<hr/>
@@ -648,6 +648,7 @@
 							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
+						<p><strong>Header image caption</strong><xsl:text>: A segment of coded text from </xsl:text><em>One More Voice</em>.</p>
 					</div>
 				</aside>
 			</xsl:when>
@@ -669,6 +670,7 @@
 							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
 						</xsl:if>
 						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
+						<p><strong>Header image caption</strong><xsl:text>: A segment of coded text from </xsl:text><em>One More Voice</em>.</p>
 					</div>
 				</aside>
 			</xsl:when>
@@ -696,13 +698,13 @@
 								   	</xsl:if>
 								</xsl:for-each>
 							</xsl:variable>
-
 								<!--<xsl:variable name="link">
 									<xsl:value-of select="@target"/>
 								</xsl:variable>
 								<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
 							</xsl:variable>-->
 							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
+							<p><strong>Header image caption</strong><xsl:text>: A segment of coded text from </xsl:text><em>One More Voice</em>.</p>
 						</xsl:if>
 					</div>
 				</aside>

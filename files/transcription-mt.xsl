@@ -1032,11 +1032,11 @@
 	</xsl:template>-->
 	<!-- Removed the above. If it doesn't mess up anything, remove completely -->
 
-	<xsl:template match="fw">
+	<xsl:template match="fw" priority="1">
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="fw[@type='catch']|fw[@type='pageno']">
+	<xsl:template match="fw[@type='catch']|fw[@type='pageno']" priority="2">
 		<span class="{concat(name(), ' ', @type, ' ', @rend)}" title="">
 			<xsl:apply-templates/>
 		</span>

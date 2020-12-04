@@ -502,6 +502,10 @@
 
 	<!-- For "back" see above -->
 
+	<xsl:template match="bibl">
+		<xsl:apply-templates/>
+	</xsl:template>
+
 	<!-- For "body" see above -->
 
 	<xsl:template match="cb">

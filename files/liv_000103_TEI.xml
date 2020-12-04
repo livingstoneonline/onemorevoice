@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="transcription-mt3.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000103">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fragment of Missionary Travels and Researches in South Africa (Part III)</title>
+                <title type="alternative">Fragment of Missionary Travels and Researches in South Africa (Part III), January-October 1857</title>
+                <author>David Livingstone</author>
+                <principal>Justin D. Livingstone</principal><!-- TEI transcriptions/Glossary entries -->
+                <principal>Adrian S. Wisnicki</principal><!-- XSL/CSS transformations -->
+                <respStmt xml:id="JL">
+                    <name>Justin D. Livingstone</name>
+                    <resp>Transcription and Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Encoding Consultant</resp>
+                </respStmt>
+                <respStmt xml:id="KS">
+                    <name>Kate Simpson</name>
+                    <resp>Transcription and Encoding</resp>
+                     </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Livingstone Online</authority>
+                <publisher>So You Start</publisher><!--Site Host-->
+                <pubPlace>Lincoln, NE, USA</pubPlace>
+                <date>2019</date><!-- Change if necessary -->
+                <idno type="LEAP-ID">liv_000103</idno><!-- Change -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <settlement>Blantyre</settlement>
+                        <repository>David Livingstone Centre</repository><!-- This may change with each volume of the MS. -->
+                        <idno type="shelfmark">834</idno><!-- This may change with each volume of the MS. -->
+                        <altIdentifier>
+                            <idno type="ccnumber">Books, 01</idno><!-- This may change with each volume of the MS. -->
+                        </altIdentifier>
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="CL"><label>Charles Livingstone</label> This belongs to the hand of Charles Livingstone</handNote>
+                            <handNote xml:id="U1"><label>Unknown Hand 1</label> This hand belongs to a later librarian or archivist, whose additions are normally limited to adding page numbers.</handNote>
+                            <handNote xml:id="U2"><label>Unknown Hand 2</label> This hand is unknown but is thought to be an editor or group of editors in the employment of the publisher, John Murray, making corrections and additions in pencil.</handNote>
+                            <handNote xml:id="U3"><label>Unknown Hand 3</label> This hand belongs to an editor making corrections and additions in red ink. It is probably the hand of the publisher's reader, John Milton.</handNote>
+                            <handNote xml:id="U4"><label>Unknown Hand 4</label> This unknown hand is possibly Dr Keith of Hamilton</handNote>
+                            <handNote xml:id="U5"><label>Unknown Hand 5</label> This hand belongs to a neighbour of Livingstone's during his residence in London, who copied portions of manuscript to produce clean copies. It is possibly the hand of Mr Wilbraham Taylor.</handNote><!-- Change/expand as appropriate. See encoding manual #21. -->
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+
+                <bibl type="sourceMetadata">
+                    <title>Fragment of Missionary Travels and Researches in South Africa (Part III)</title><!-- This will change with each volume of the MS. -->
+                    <author xml:id="DL">David Livingstone</author>
+                    <date type="composition" from="1857-01-01" to="1857-10-31">January-October 1857</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<change when="2017-11-11" who="#AW">Coding review</change>
+            <change when="2017-11-07" who="#JL">Proofing and encoding review</change>      
+            <change when="2017-11-02" who="#KS">Initial transcription and XML encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body rend="right">
+            <div>
+                
+    <pb facs="liv_000103_0001" n="0001"/>                             
+<lb/><fw><add place="inspace" hand="#U1" rend="gray right">22</add></fw>
+<lb/><p rend="no-indent"><add place="marginleft" hand="#U1" rend="gray"><note><persName ref="people.xml#pers0372">David
+<lb/><hi rend="underline">Livingstone</hi></persName></note></add> into the new field, But while
+<lb/>I hope <del type="strikethrough">always</del> to continue the
+<lb/>same cordial cooperation &amp;
+<lb/>friendship which have always
+<lb/>characterised our intercourse
+<lb/>various reasons induce me
+<lb/>to withdraw from pecuniary 
+<lb/>dependance on any Society - I
+<lb/>have <add place="below">˄</add> <add place="above">done</add> something for the heathen but
+<lb/>for <subst><del>my</del><add place="over-text">an</add></subst> aged mother and two sisters
+<lb/>who have still more sacred claims
+<lb/><add place="marginleft">than</add> they, I have <add place="below">˄</add> <add place="above">been able to</add> do<del type="strikethrough">ne</del> nothing <add place="marginleft"><metamark function="insertion"/><metamark function="flag" spanTo="#meta-335"/>and a
+    <lb/>continuance 
+    <lb/>of the
+    <lb/>connection
+    <lb/>would
+    <lb/>be a
+    <lb/>perpetuation
+    <lb/>of <subst><del>the</del><add place="over-text">my</add></subst>
+    <lb/>inability
+    <lb/>to make
+    <lb/>any <w>pro<supplied>-</supplied>
+    <lb break="no"/>vision</w> 
+    <lb/>for them<anchor xml:id="meta-335"/></add> 
+When
+<lb/>therefore the letter referred to
+<lb/>made me think, and it did nothing
+<lb/>more; <del type="cancelled">and I found that</del> in
+<lb/>addition to <del type="cancelled">disease</del> "<term type="ailment">clergyman's sore
+<lb/>throat</term>" which partially disables
+<lb/>me from the work <add place="below">˄</add> <add place="above">I learned</add> my father's
+<lb/><del type="cancelled">was</del> <w>dead<subst><del>d</del><add place="over-text">th</add></subst></w>, and <add place="below">˄</add> <add place="above">a fresh</add> source <space extent="2" unit="chars"/>of
+<lb/>income was opened <add place="below">˄</add> <add place="above">to me</add> without
+<lb/>my asking I had no hesitation
+<lb/>in <del type="cancelled">the</del> <w>accepta<subst><del>nce</del><add place="over-text">ing</add></subst></w> <del type="cancelled">of</del> what will
+<lb/>enable me to <w>fulfil<del type="cancelled">l</del></w> my duty to
+<lb/>my aged <del type="strikethrough">relative</del> <add place="below"><metamark function="insertion"/>parent</add> as well as to
+<lb/>the heathen on the receipt of the letter
+<lb/><seg rend="left">from the <term type="occupation">Directors</term> I resolved to act <choice><sic>independantly</sic><corr>independently</corr></choice>
+<lb/>of the <orgName ref="orgName.xml#org0064">Society</orgName> in future</seg></p>
+<lb/><p><note place="inline"><metamark function="flag" spanTo="#meta-336"/><!--this note is circled in black ink-->Please insert the matter on
+<lb/>the loose slips marked
+<lb/>X <space extent="1" unit="chars"/>X <space extent="1" unit="chars"/>X
+<lb/>I <space extent="1" unit="chars"/>II <space extent="1" unit="chars"/>III<anchor xml:id="meta-336"/></note>
+<lb/><space extent="15" unit="chars"/><add place="inline" rend="gray" hand="#U1"><note><bibl>Missionary Travels</bibl> 
+<lb/><space extent="25" unit="chars"/>p 677</note></add></p>
+                
+            </div>
+        </body>
+    </text>
+    
+</TEI>

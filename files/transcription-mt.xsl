@@ -233,7 +233,7 @@
 	</xsl:template>
 
 	
-	<xsl:template match="choice/sic">
+	<xsl:template match="choice/sic|sic">
 			<xsl:variable name="choice-orig-sic">
 			<xsl:choose>
 				<!-- If there are orig and reg values in the corr, show the orig -->
@@ -904,6 +904,11 @@
 				</xsl:choose>
 			<xsl:apply-templates/>
 		</span>
+	</xsl:template>
+
+	<xsl:template match="delSpan">
+		<span class="{concat(name(), ' ', translate(@hand, '-', ''))}">
+			<xsl:apply-templates/></span>
 	</xsl:template>
 
 	<!-- added for 1870 FD -->
@@ -2109,7 +2114,7 @@
 	</xsl:template>
 
 	<xsl:variable name="region" select="doc('region.xml')"/>
-	<xsl:template match="placeName/region">
+	<xsl:template match="placeName/region|region">
 		<!-- Make the output of the @title attribute in a variable -->
 		<xsl:variable name="title">
 			<xsl:choose>

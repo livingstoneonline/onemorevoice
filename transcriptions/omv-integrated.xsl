@@ -43,7 +43,7 @@
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
-		<html lang="en">
+		<html lang="en" id="html">
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<title>

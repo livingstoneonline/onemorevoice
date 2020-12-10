@@ -38,6 +38,7 @@ window.addEventListener('scroll', stickyNavigation);
 
 function openNav() {
   document.getElementById("nav3").style.display = "block";
+  document.getElementById("html").style.overflowY = "hidden";
   const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
@@ -46,6 +47,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("nav3").style.display = "none";
+  document.getElementById("html").style.overflowY = "unset";
   const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};

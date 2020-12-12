@@ -432,16 +432,22 @@ img,
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
-.byline{
-	font-size: .9em;
-	padding: 0;
-	margin: 0;
-}
 .byline-divider{
     width: 45%;
     border-top: 1px dashed gray;
 	background: white;
 	display: inline-block;
+}
+.byline{
+	font-size: .9em;
+	padding: 0;
+	margin: 0;
+}
+.editor-line{
+	font-size: 0.8em;
+	font-style: italic;
+	padding: 0;
+	margin: .8em 0 0 0;
 }
 /* toc and toc-title used for page menus */
 .toc{

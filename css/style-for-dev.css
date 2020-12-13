@@ -205,6 +205,10 @@ h3{
 	font-weight: bold;
 	color: #204A79;
 }
+/* adds padding for h3 labelled subsections in essays */
+h3.subsection{
+	padding-top: 2em;
+}
 .essay h3{
 	clear: both; /* Needed for Google Translate */
 }
@@ -219,7 +223,7 @@ h4{
 }
 /* adds padding for h4 labelled subsections in essays */
 .subsection{
-	padding-top: 2em;
+	padding-top: 1.5em;
 }
 .return-top{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;

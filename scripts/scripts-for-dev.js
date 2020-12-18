@@ -273,7 +273,6 @@ function AddRelNoopener(){
     for(var i = 0; i < links.length; i++){
         links[i].setAttribute("rel","noopener");
         links[i].setAttribute("onclick","randomizeHref();");
-        links[i].setAttribute("ontouchend","randomizeHref();");
     }
 }
 

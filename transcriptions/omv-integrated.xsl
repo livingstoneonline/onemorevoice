@@ -68,8 +68,8 @@
 			    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png" />
 			    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png" />
 			    <link rel="manifest" href="../site.webmanifest" />
-				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css" />-->
-				<link rel="stylesheet" type="text/css" href="../css/style.css" />
+				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css?random=@Environment.TickCount" />-->
+				<link rel="stylesheet" type="text/css" href="../css/style.css?random=@Environment.TickCount" />
 				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/jquery-3.5.1.min.js" />-->
 				<link rel="preload" as="script" href="../scripts/jquery-3.5.1.min.js"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="../fonts/sourcesanspro-regular-webfont.woff2"/>
@@ -128,8 +128,8 @@
 					});
 				</script>
 				<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
-				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
-				<link rel="stylesheet" type="text/css" href="../css/styleTEI.css" />
+				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css?random=@Environment.TickCount" />-->
+				<link rel="stylesheet" type="text/css" href="../css/styleTEI.css?random=@Environment.TickCount" />
 				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js" />-->

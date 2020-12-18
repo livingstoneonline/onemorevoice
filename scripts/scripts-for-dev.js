@@ -288,9 +288,9 @@ function randomiseHref()
     e.preventDefault();
 
     var url = e.target.href;
-    url += '?=thanks4visitingOneMoreVoice' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
-    window.location.replace(url);
+    location.replace(url);
 
     return false;
 }

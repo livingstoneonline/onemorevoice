@@ -65,8 +65,8 @@
 			    <link rel="icon" type="image/png" sizes="32x32" href="http://livingstoneonline.github.io/onemorevoice/images/icons/favicon-32x32.png" />
 			    <link rel="icon" type="image/png" sizes="16x16" href="http://livingstoneonline.github.io/onemorevoice/images/icons/favicon-16x16.png" />
 			    <link rel="manifest" href="http://livingstoneonline.github.io/onemorevoice/site.webmanifest" />
-				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css?random=@Environment.TickCount" />-->
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css?random=@Environment.TickCount" />
+				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css" />-->
+				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css" />
 				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="http://livingstoneonline.github.io/onemorevoice/fonts/sourcesanspro-regular-webfont.woff2"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin='' href="http://livingstoneonline.github.io/onemorevoice/fonts/sourcesanspro-regular-webfont.woff"/>
 				<link rel="preload" as="style" href="http://livingstoneonline.github.io/onemorevoice/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
@@ -230,8 +230,8 @@
 					<xsl:apply-templates select="TEI"/>
 				</article>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/font-awesome.min.css"/>
-				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css?random=@Environment.TickCount" />-->
-				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css?random=@Environment.TickCount" />
+				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
+				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />
 				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js" />-->

@@ -33,20 +33,20 @@
             // document.head.appendChild(css);
             
             //https://makitweb.com/dynamically-include-script-and-css-file-with-javascript/
-            addCSS('style.css');
+            // Method 3: Doesn't work
+            // addCSS('style.css');
+            // function addCSS(filename){
+            // var head = document.getElementsByTagName('head')[0];
+            // var randomString = Math.floor(Math.random()*1000000);
+            // var style = document.createElement('link');
+            // style.rel = 'stylesheet';
+            // style.type = 'text/css';
+            // style.href = "css/style.css?='+randomString+'";
+            // head.append(style);
+            // }
 
-            // Include CSS file
-            function addCSS(filename){
-            var head = document.getElementsByTagName('head')[0];
-            var randomString = Math.floor(Math.random()*1000000);
-            var style = document.createElement('link');
-            style.rel = 'stylesheet';
-            style.type = 'text/css';
-            style.href = "css/style.css?='+randomString+'";
-            head.append(style);
-            }
-            
         </script>
+        <link href="css/style.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" />
         <link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>

@@ -17,10 +17,16 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
         <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
-        <!-- Adapted from https://stackoverflow.com/a/39179486 -->
-        <script language="javascript">
+        <!-- Adapted from https://stackoverflow.com/a/39179486 and https://stackoverflow.com/a/22634359 -->
+        <script>
+            // var randomString = Math.floor(Math.random()*1000000);
+            // document.write('<link rel="stylesheet" type="text/css" href="css/style.css?='+randomString+'">');
             var randomString = Math.floor(Math.random()*1000000);
-            document.write('<link rel="stylesheet" type="text/css" href="css/style.css?='+randomString+'">');
+            var css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.type = "text/css";
+            css.href = "css/style.css?='+randomString+'";
+            document.head.appendChild(css);        
         </script>
         <link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>

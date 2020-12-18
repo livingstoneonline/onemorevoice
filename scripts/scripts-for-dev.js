@@ -272,5 +272,21 @@ function AddRelNoopener(){
     var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
         links[i].setAttribute("rel","noopener");
+        links[i].setAttribute("onclick","randomizeHref();");
+        links[i].setAttribute("ontouchend","randomizeHref();");
     }
+}
+
+// Adapted from https://stackoverflow.com/a/18704113
+function randomizeHref()
+{
+    var e = window.event;
+    e.preventDefault();
+
+    var url = e.target.href;
+    url += randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+
+    location.replace(url);
+
+    return false;
 }

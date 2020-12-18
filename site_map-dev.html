@@ -20,10 +20,14 @@
         <!-- Adapted from https://stackoverflow.com/a/39179486 -->
         <script language="JavaScript">
             var randomString = Math.floor(Math.random()*1000000);
-            var h = document.createElement("link");
-            var t = document.createTextNode("rel='stylesheet' type='text/css' href='css/style.css?="+randomString+"'");
-            h.appendChild(t);
-            document.body.appendChild(h);
+            var link = document.createElement("link");
+            var rel = document.createAttribute("rel");  
+            att.value = "stylesheet";
+            var type = document.createAttribute("rel"); 
+            att.value = "text/css";
+            var href = document.createAttribute("href");
+            att.value = "css/style.css?="+randomString+"";
+            link.setAttributeNode(rel,type,href);
         </script>
         <link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>

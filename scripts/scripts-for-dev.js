@@ -288,7 +288,7 @@ function randomiseHref()
     e.preventDefault();
 
     var url = e.target.href;
-    url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    url += '?=thanks4visitingOneMoreVoice' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
     location.replace(url);
 

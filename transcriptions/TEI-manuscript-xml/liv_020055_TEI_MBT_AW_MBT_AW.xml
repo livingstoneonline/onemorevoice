@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020055">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+<!--Crowther, Rev. Samuel. “Letter to Henry Venn, 27 February 1867,” Church Missionary Society Archive, University of Birmingham Special Collections, CMS/B/OMS/C A3/O4 226-->
+				<title>Letter to Henry Venn</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="alternative">Letter to Henry Venn, 27 February 1867</title>
+				<!-- Title, date -->
+				<author>Crowther, Samuel, c.1809-1891</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Crowther, Samuel</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Samuel Crowther</author>
+				<!-- First author only: Forename Surname -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="MBT">
+					<name>Mary Borgo Ton</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2020</date>
+				<idno type="LEAP-ID">liv_020055</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+						<country>United Kingdom</country>
+						<!-- Repository country -->
+						<settlement>Birmingham</settlement>
+						<!-- Repository city -->
+						<repository>University of Birmingham. Cadbury Research Library</repository>
+						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+						<idno type="shelfmark">CMS/B/OMS/C A3 O4/226</idno>
+						<!-- Shelfmark/Identifier -->
+						<!-- http://calmview.bham.ac.uk/ -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="HV"><label>Henry Venn</label> This hand is thought to be
+								Henry Venn's.</handNote>
+							<handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+							<handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to Henry Venn</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="SC">Crowther, Samuel, c.1809-1891</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1867-02-27">27 February 1867</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">Mission House, Bonny</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-11-23" who="#MBT"></change>
+		</revisionDesc>
+	</teiHeader>
+
+<!--  
+.item.liv_020055{
+	margin: 0 2em;	
+}
+-->
+
+	<text>
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body n="b2b7b8">
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div rend="black gray" n="item liv_020055">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020055_0001" n="0001"/>
+
+<!-- 
+.wrapper.liv_020055_0001{
+}
+.block-1.liv_020055_0001{
+	float: left;
+}
+.block-2.liv_020055_0001{ 
+	float: left;
+}
+.block-3.liv_020055_0001{
+	display: inline-block;
+}
+-->
+
+	<div n="wrapper liv_020055_0001">
+<!--left region-->
+		<div n="block-1 liv_020055_0001">
+<lb/><p rend="no-indent"><add place="inline" hand="#U1"><choice><abbr>Rec</abbr><expan>Received</expan></choice> <date when="1867-05"><choice><abbr>Ap</abbr><expan>April</expan></choice> 5/67</date>
+<lb/><space extent="3" unit="chars"/><unclear><choice><abbr>Nr.</abbr><expan>Number</expan></choice></unclear> 13</add></p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><persName>Rev<hi rend="sup underline">d</hi>.H. Venn</persName>.</p>
+<lb/><p rend="small"><add hand="#U2"><persName>C.C.F.</persName> <date when="1867-04-24"><choice><abbr>Apr.</abbr><expan>April</expan></choice> 24</date></add></p>
+<lb/><p rend="small"><add hand="#HV"><persName>H.V.</persName> <date when="1867-05-10">May 10</date></add></p>
+		</div>
+
+		<div n="block-2 liv_020055_0001">
+<!-- middle region -->
+<lb/><p rend="no-indent"><del><gap extent="3" unit="chars"/></del><space extent="1" unit="words"/><seg rend="underline overline">18</seg></p>
+<lb/>
+<lb/>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="3" unit="chars"/>A</p>
+		</div>
+
+		<div n="block-3 liv_020055_0001">
+<!-- right region -->
+<lb/>
+<lb/><p rend="no-indent red large"><add place="inline" hand="#U1"><placeName>Bonny Mi&#7838;ion</placeName></add></p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><add place="inline" hand="#U1"><unclear><placeName>Small Office</placeName></unclear></add></p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><placeName>Mission House</placeName></p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><settlement>Bonny</settlement> <choice><abbr>Feb.</abbr><expan>February</expan></choice> 27<hi rend="sup underline">th</hi>. 1878.</p>
+		</div>
+
+	<div>
+<!-- main body -->	
+<lb/><p rend="no-indent">Rev<hi rend="sup underline">d</hi> and dear Sir,</p>
+<lb/><p><space extent="3" unit="words"/><space extent="2" unit="chars"/>According to promise, I have looked around
+<lb/>and now am able to report from personal observation as follows.</p>
+	</div>
+
+<!-- 
+
+.marginal1.liv_020055_0001{
+    border-left: 1px #902D27 solid;
+    margin-left: -1em;
+    padding-left: 1em;
+}
+.marginal2.liv_020055_0001{
+	border-left: 1px #3d4245 solid;
+	border-radius: 4em 0 0 0;
+	margin-left: -1.5em;
+    padding-left: 1.5em;
+	position: relative;
+}
+.ednote.liv_020055_0001{
+	position: absolute;
+	left: -1.5em;
+	font-size: 1.3em;
+	transform: rotate(344deg) !important;
+	-ms-transform:rotate(344deg) !important; /* IE 9 */
+	-moz-transform:rotate(344deg) !important; /* Firefox */
+	-webkit-transform:rotate(344deg) !important; /* Safari and Chrome */
+	-o-transform:rotate(344deg) !important; /* Opera */
+}
+
+-->
+
+	<div n="marginal1 liv_020055_0001">
+<p>I have observed evident tokens of a silent, but mighty
+<lb/>struggle for mastery between <term type="collective">demon worship</term> and <term type="collective"><choice><sic>christianity</sic><corr>Christianity</corr></choice></term>,
+<lb/>this conflict between the two, may be compared to a chronic <w>di-
+<lb/>sease</w>, on the one part, which has been been left to remain indolent
+<lb/>for years, till an effective remedy, on the other part, is applied
+<lb/>to its cure. The chronic disease being disturbed in its indolent
+<lb/>state, the patient will more or less feel the painful action 
+<lb/>of the physic which will as it may be expected make him
+<lb/>uneasy; the disease, being disturbed in its indolent state may
+<lb/>shift its position, as it is said, is experienced in the gout or
+<lb/>rheumatism, till by perservering applications of the medicine,
+<lb/>effectual cure is obtained.</p>
+
+<lb/><p n="marginal2 liv_020055_0001"><seg rend="underline" n="ednote liv_020055_0001">A</seg> In my last year's report, I mentioned the delapidated state of
+<lb/>of the Juju <add place="below">^</add><add place="above"><del extent="1" unit="chars"></del>that is, sacred,</add> Temple of skulls here, that the platform holding
+<lb/>the bones of devoured human victims of war had fallen down,
+<lb/>and the bones scattered, and no apparent care of their repairs
+<lb/>was manifested, which called out the general remarks from the 
+<lb/>public, "new things were taking place, it was never so before".
+<lb/>So it was, Dagon appeared to have been falling down before the 
+<lb/>ark of the Lord, but "they took Dagon and set him in his 
+<lb/>place again." <choice><sic>they</sic><corr>They</corr></choice> have not only set Dagon in its place again,
+<lb/>but strengthened it, that it be not so soon brought again into
+<lb/>a humble position; efforts have been made by the votaries
+<lb/>of the gods, and it seems to bid defiance to <term type="collective">Christianity</term>, as if 
+<lb/>they would say, our religion is the master of the soil, it can
+<lb/>plead its antiquity from ancient Kings its patrons, and
+<lb/><del>and</del> old mysterious priests its worshippers and supporters;</p>
+	</div>
+
+	<div>	
+<fw rend="center">(1)</fw>
+	</div>
+
+<!-- 
+.marginal1.liv_020055_0002{
+	border-right: 1px #902D27 solid;
+	margin-right: 1.2em;
+}
+.marginal2.liv_020055_0002{
+	border-right: 1px #3d4245 solid;
+	margin-right: .7em;
+}
+ -->
+<!-- Investigate wavy line later -->
+
+<pb facs="liv_020055_0002" n="0002"/>
+	<div n="marginal1 liv_020055_0002">
+	<div n="marginal2 liv_020055_0002">
+<p rend="no-indent">now we have put the intruder, the new religion in the shade.</p> 
+<lb/><p>It would certainly have been very faithless and cowardly on their part
+<lb/>with out a struggle so at once to give way submissively to the
+<lb/>newly imported religion from a strange country. But to proceed.
+<lb/>The <placeName><term type="collective">Juju</term> house of skulls</placeName> has been <unclear>stringly</unclear> rebuilt, and the
+<lb/>skulls are being replaced; the roof now rests upon iron <unclear><choice><sic>stensions</sic><corr>stanchions</corr></choice></unclear>
+<lb/>or pillars instead of wood which soon decays, the roof is covered
+<lb/>with galvanized corrugated iron sheets and the body of the
+<lb/>temple is <unclear>covered</unclear> with plain sheets of the same materials, instead of <term type="plant">bamboo</term>: 
+<lb/>now as to durability, it looks down with contempt on our
+<lb/>temporary schoolroom close by. The fallen platform, the
+<lb/>receptacle of the bones and limbs of human victims has been
+<lb/>newly erected and the scattered bones picked up and replaced
+<lb/>on it, and to shew that they were not beaten, an additional
+<lb/>platform was erected, on both which are to be seen <del>the</del>
+<lb/>fresh bones of three human victims newly taken as prisoners
+<lb/>of war, killed and devoured: these victims were, a <hi rend="underline">man</hi>,
+<lb/>a <hi rend="underline">woman</hi> and <hi rend="underline">her child</hi>, relatives of their opponents, caught
+<lb/>from the opposite side of the river. Having been thus caught
+<lb/>killed and eaten, their bones and skulls were added to the 
+<lb/>trophies in the temple. Our native agents were <w>eyewit-
+<lb/>nesses</w> of these attrocities only a few months ago: the <add place="below">^</add><add place="above">people</add> made
+<lb/>no disguise of the acts, they rather gloried in the deeds.</p>
+<lb/><p>A priestess was seen bearing one of the gory skulls in 
+<lb/>her hands to be prepared and deposited in its place; while
+<lb/>the body was being prepared as animal sacrifice among the 
+<lb/>members. That our agents were not <add place="below">^</add><add place="above">only</add> shocked but frighted at
+<lb/>the sight, may easily be concluded, but they could not <w>inter-
+<lb/>fere</w> for one may sooner disturb a <term type="animal">lion</term> at its prey.</p>
+<lb/><p>Several times I passed by the Temple, and these fresh limbs
+<lb/>caught my eyes, my heart <del>as</del><add place="over-text">is</add> stirred to appeal to him <add place="below">^</add><add place="above">who has the power,</add> to turn
+<lb/>the <term type="animal">lion</term> to a <term type="animal">lamb</term> and the <term type="animal">vulture</term> to a <term type="animal">dove</term> in the	
+<lb/>words of the Psalmist. "Have respect unto the covenant,
+<lb/><space extent="12" unit="words"/><fw type="catch">for</fw></p>
+	</div>
+	</div>
+
+	<div>	
+<fw rend="center">(<add place="inline" rend="gray">3</add>2)</fw>
+	</div>
+
+	<div>		
+<pb facs="liv_020055_0003" n="0003"/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>		
+
+<pb facs="liv_020055_0004" n="0004"/>
+
+<pb facs="liv_020055_0005" n="0005"/>
+
+<pb facs="liv_020055_0006" n="0006"/>
+
+<pb facs="liv_020055_0007" n="0007"/>
+
+<pb facs="liv_020055_0008" n="0008"/>
+
+<pb facs="liv_020055_0009" n="0009"/>
+
+<pb facs="liv_020055_0010" n="0010"/>
+
+<pb facs="liv_020055_0011" n="0011"/>
+
+<pb facs="liv_020055_0012" n="0012"/>
+	</div>
+	</div>
+
+			</div>
+		</body>
+	</text>
+</TEI>

@@ -47,6 +47,15 @@
 
             // Method 4: Doesn't work
             // <link href="css/style.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+
+            var link = $("<link>");
+            link.attr({
+                rel: 'stylesheet',
+                type: 'text/css',
+                rel: 'stylesheet',
+                href: 'css/style.css' + (new Date).getTime()
+            });
+            $("head").append( link );
         </script>
         
         <link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>

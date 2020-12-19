@@ -11,19 +11,27 @@ Table of Contents
 
 ** 1.0. Main CSS **
 1.1. Principal Components 
-1.1. Skip to Main
-1.1. Main
-1.2. Mobile Fixed Nav
-1.3. Navbar
-1.4. Overlay
-1.5. Google Translate
-1.6. Archival Texts
-1.7. Artifact Gallery
-1.8. Book-Length Works
-1.9. Lines
-1.10. Formatting
-1.11. Lists
+1.2. Headings and Related
+1.3. Main Images and Related
+1.4. Skip to Main
+1.5. Main and Following
+1.6. Mobile Fixed Nav
+1.7. Navbar
+1.8. Overlay
+1.9. Google Translate
+1.10. Archival Texts
+1.11. Artifact Gallery
+1.12. Book-Length Works
+1.13. Page-Specific Coding
+1.12. Formatting
+1.13. Lists and Lines
+
+Appendix
+A. Alternative [id]:target Coding 
+B. Logic of Header Elements
+
 */
+
 
 /*--------------------------------------*/
 
@@ -97,9 +105,6 @@ article{
 		max-width: 42em;
 	}
 }
-body.essay .main{
-	padding-bottom: 1em;
-}
 @media only screen and (min-width: 320px){
 	.navspace{
 		min-height: 63px;
@@ -120,6 +125,67 @@ body.essay .main{
 		min-height: 52px;
 	}
 }
+header{
+	position: relative;
+}
+.title,
+body.transcription .title{
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.6em;
+	position: relative;
+}
+.title{
+	padding-bottom: 0em;
+}
+body.transcription .title{
+	padding-bottom: 1em;
+}
+@media only screen and (min-width: 320px){
+	.title{
+		padding-bottom: .5em
+	}
+	body.transcription .title{
+		padding-bottom: 1.5em;
+	}
+}
+@media only screen and (min-width: 480px){
+	body.transcription .title{
+		padding-bottom: .5em
+	}
+}
+@media only screen and (min-width: 992px){
+	.title,
+	body.transcription .title{
+		padding-bottom: 1.5em;
+		display: block !important; /* Tied to overlay */
+	}
+}
+.header-title{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	.header-title{
+		display: block;
+		visibility: visible;
+		margin: 1.2em 0 .7em 0;
+	}
+}
+.title hr{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	.title hr{
+		display: block;
+		visibility: visible;
+	}
+}
+
+
+/* 1.2 Headings and Related */
+
 h1{
 	font-size: 2em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -133,9 +199,6 @@ h1{
 	h1{
 		font-size: 2.3em;
 	}
-}
-header{
-	position: relative;
 }
 header h2{
 	font-size: .9em;
@@ -227,60 +290,21 @@ h4{
 .subsection{
 	padding-top: 1.5em;
 }
-.return-top{
-	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
-	font-size: .9em;
-}
-.title,
-body.transcription .title{
-	font-weight: bold;
-	text-align: center;
-	line-height: 1.6em;
-	position: relative;
-}
-.title{
-	padding-bottom: 0em;
-}
-body.transcription .title{
-	padding-bottom: 1em;
-}
-@media only screen and (min-width: 320px){
-	.title{
-		padding-bottom: .5em
-	}
-	body.transcription .title{
-		padding-bottom: 1.5em;
-	}
-}
-@media only screen and (min-width: 480px){
-	body.transcription .title{
-		padding-bottom: .5em
-	}
-}
-@media only screen and (min-width: 992px){
-	.title,
-	body.transcription .title{
-		padding-bottom: 1.5em;
-		display: block !important; /* Tied to overlay */
-	}
-}
-.header-title{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	.header-title{
-		display: block;
-		visibility: visible;
-		margin: 1.2em 0 .7em 0;
-	}
-}
-img,
-.image{
+
+
+/* 1.3. Main Images and Related */
+img{
 	color:#e6e6e6;
 	font-weight: 300;
 	width: 100%;
 	max-width: 100%;
+}
+a img{
+	border: 3px transparent solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #204A79 solid;
 }
 .image-border{
 	border: 1px solid gray;
@@ -289,11 +313,11 @@ img,
 	.responsive-image70 {
 		width: 70%;
 	}
-	.caption70{
-		padding:0 15%;
-	}
 	.responsive-image73 {
 		width: 73%;
+	}
+	.caption70{
+		padding:0 15%;
 	}
 	.caption73{
 		padding:0 13.5%;
@@ -375,19 +399,10 @@ img,
 		min-height: 529px;
 	}
 }
-.title hr{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	.title hr{
-		display: block;
-		visibility: visible;
-	}
-}
 
 
-/* 1.1. Skip to Main */
+
+/* 1.4. Skip to Main */
 
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
@@ -421,7 +436,7 @@ img,
 }
 
 
-/* 1.1. Main */
+/* 1.5. Main and Following */
 
 @font-face {
     font-family: 'source_sans_proregular';
@@ -443,6 +458,9 @@ img,
 		font-size: 1.2em;
 		display: block !important; /* Tied to overlay */
 	}
+}
+body.essay .main{
+	padding-bottom: 1em;
 }
 /* for essay title with subtitle */
 .title-with-subtitle{
@@ -481,10 +499,9 @@ img,
 	margin-left: -1.2em;
 	display:inline-block;
 }
-/* assumes this goes at end of essay */
-.footnote{
+.return-top{
+	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-size: .9em;
-	padding-top: 1.5em;
 }
 .credits{
 	font-size: 1.15em;
@@ -514,9 +531,6 @@ img,
 		font-size: 1em;
 	}
 }
-*:focus{
-	outline: 0 none;
-}
 a,
 a:visited{
 	color: #204A79;
@@ -534,16 +548,12 @@ a:focus{
 .graphic a:focus{
 	background-color: white;
 }
-a img{
-	border: 3px white solid;
-}
-a:hover img,
-a:focus img{
-	border: 3px #204A79 solid;
+*:focus{
+	outline: 0 none;
 }
 
 
-/* 1.2. Mobile Fixed Nav */
+/* 1.6. Mobile Fixed Nav */
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
@@ -650,39 +660,10 @@ a:focus img{
 		border-top: 10px solid transparent;
 	}
 }
-/* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
-/* alternative coding */
-/* [id]:target {
-  padding-top: 65px; 
-  margin-top: -65px;
-} */
-/* *[id]:before { 
-	display: block; 
-	content: " "; 
-	margin-top: -80px;
-	height: 80px;
-	visibility: hidden; 
-  } */
-/* [id]:target::before {
-	content: "";
-	display: block;
-	height: 80px;
-	margin: -80px 0 0;
-} */
-/* alternative coding for empty spans */
-/* .anchor{
-	display: block;
-	height: 80px;
-	margin-top: -80px;
-	visibility: hidden;
-} */
-/* doesn't work in iOS */
-/* html {
-	scroll-padding-top: 80px;
-} */
+/* Also see Appendix for alternative [id]:target coding */
 
 
-/* 1.3. Navbar */
+/* 1.7. Navbar */
 
 /* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 
@@ -850,7 +831,7 @@ background-color: #E3E3E3; [light gray]
 */
 
 
-/* 1.4. Overlay */
+/* 1.8. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
@@ -941,6 +922,476 @@ body.fixed-nav .overlay .menu .close-title{
 	text-decoration: none;
 }
 
+
+/* 1.9. Google Translate */
+/* Also see other styles marked "Google Translate" */
+
+.goog-te-banner-frame.skiptranslate{
+	display: none !important;
+	visibility: hidden !important;
+}
+.original-text{
+	text-align: unset !important;
+}
+.translate{
+	/* height: 1.4em; */
+	margin: .7em 0 0 0;
+	max-width: 170px;
+	overflow: hidden !important;
+}
+@media only screen and (min-width: 480px){
+	.translate{
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 768px){
+	.translate{
+		margin: 0 0 1em 0;
+	}
+}
+#google_translate_element{
+	min-height: 55px;
+}
+@media only screen and (min-width: 768px){
+	#google_translate_element{
+		min-height: 50px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#google_translate_element{
+		min-height: 48px;
+	}
+}
+#google_translate_element > div > span > a > img{
+	width: 3.5em;
+}
+#google_translate_element div.goog-te-gadget .goog-te-combo{
+	font-size: 1.3em;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	border: 2px solid  #E3E3E3;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	margin: 0 0 0 -3px;
+	padding: 1px;
+}
+#google_translate_element div.goog-te-gadget .goog-te-combo:hover,
+#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
+	border: 2px #204A79 solid;
+	background-color: #E3E3E3;
+}
+div.skiptranslate:nth-child(1){
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	padding-left: 4px;
+}
+div.skiptranslate:nth-child(1) > span:nth-child(2),
+div.skiptranslate:nth-child(1) > span:nth-child(2){
+	border: 2px transparent solid;
+	margin-left: -2px;
+}
+div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
+div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
+	border: 2px #204A79 solid;
+}
+#google_translate_element > div > span > a > img,
+#google_translate_element > div > span > a > img{
+	border: 2px transparent solid;
+	padding-right: 1px !important;
+}
+#google_translate_element > div > span > a > img:hover,
+#google_translate_element > div > span > a > img:focus{
+	border: 2px transparent solid;
+}
+.goog-logo-link,
+.goog-logo-link:link{
+	font-size: 11px !important;
+	font-weight: normal !important;
+	color: #666 !important;
+}
+
+
+/* 1.10. Archival Texts */
+
+table.archival-text{
+	font-size: .8em;
+	line-height: 1.6em;
+	border: 1px solid #858585;
+	border-radius: 9px; 
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-spacing: 0;
+	margin: 2.5em 0;  				
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	table.archival-text{
+		font-size: .9em;
+		line-height: 1.5em;
+	}
+}
+table.archival-text:last-of-type{
+	margin: 2.5em 0 1em 0; 
+}
+table.archival-text th, 
+table.archival-text td{
+	padding: 12px;
+	border-bottom: 1px solid #858585;
+}	
+table.archival-text tr:first-child > th{
+	font-size: 1.15em;
+	color: white;
+	background: #204A79;
+	border-radius: 8px 8px 0 0; 
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+.archival-text .return-top{
+	font-size: .9em;
+	color: white;
+	white-space: nowrap;
+	margin-top: .05em;
+}
+@media only screen and (min-width: 480px){
+	.archival-text .return-top{
+		margin-right: .5em;
+	}
+}
+.archival-text a.return-top:hover,
+.archival-text a.return-top:focus{
+	color: #a83c37;
+	background-color: #e3e3e3;
+}
+table.archival-text tr:last-child > td{
+	border-bottom: none;
+}
+table.archival-text .item{
+	background-color: #DBE6F5;
+}
+table.archival-text .item a:hover,
+table.archival-text .item a:focus{
+	background: whitesmoke;
+}
+table.archival-text .years,
+table.archival-text .details{
+	padding: 10px 10px;
+}
+@media only screen and (min-width: 768px){
+	table.archival-text .details{
+		padding: 10px 10px 10px 38px;
+	}
+}
+
+
+/* 1.11. Artifact Gallery */
+
+.image-details{
+	font-size: .85em;
+	font-style: italic;
+	text-align: center;
+	color: #65615b;
+}
+.gallery{      
+	text-align: center;
+	margin-bottom: -2.5em;
+	overflow: hidden;
+}
+.gallery-item{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 2.5em 0;
+	width: 100%;
+	max-width: 100%;
+}
+@media only screen and (min-width: 480px){
+	.gallery-item{
+		padding: 0 .5em 2.5em .5em;
+		width: calc(50% - 1.5em);
+	}
+}
+@media only screen and (min-width: 768px){
+	.gallery-item{
+		width: calc(33.3% - 1.5em);
+	}
+}
+.gallery-item:last-of-type{
+	text-align: left;
+}
+.gallery figure{
+	margin: 0;
+}
+.image-container{
+	padding: .5em;
+}
+.gallery figure img{
+	width: 100%;
+	max-width: 100%;
+	object-fit:cover;
+	-o-object-fit: cover;
+	border-radius:50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #E3E3E3;
+}
+.gallery figure a img:hover,
+.gallery figure a:focus img{
+	border: 2px #204A79 solid;
+}
+.gallery figure figcaption{
+	font-size: .8em;
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	text-align: center;       
+	line-height: 1.2em;
+}
+
+
+/* 1.12. Book-Length Works */
+
+#books{
+	font-size: .85em;
+	line-height: 1.6em;
+}
+@media only screen and (min-width: 768px){
+	#books{
+		font-size: .95em;
+		line-height: 1.5em;
+	}
+}
+#books h4,
+.published-author,
+.author-details,
+.works-list{
+	border: 1px solid #858585;
+}
+#books h4{
+	font-size: 1.15em;
+	font-style: normal;
+	font-weight: 600;
+	color: white;
+	background-color: #204a79;
+	padding: 10px 14px;
+	margin: 0 0 1.5em 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.published-author{
+	font-size: 1.05em;
+	color: #262626;
+	background-color: #e3e3e3;
+	border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	padding: 10px 16px;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.published-author .return-top{
+	font-size: .9em;
+	white-space: nowrap;
+	margin-top: .15em;
+}
+@media only screen and (min-width: 480px){
+	.published-author .return-top{
+		margin-right: .5em;
+	}
+}
+.published-author a.return-top:hover,
+.published-author a.return-top:focus{
+	color: #a83c37;
+	background-color: whitesmoke;
+}
+.author-details{
+	border-top: none;
+	border-bottom: none;
+	padding: .8em 1.5em .2em 1.5em;
+	margin: 0;
+}
+.works-list{
+	border-top: none;
+	border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	padding: 1em 1em .7em 2.5em;
+	margin: 0 0 2em 0;
+}
+.works-list li {
+	padding: 0 0 .6em 0;
+}
+#books section:last-of-type section:last-of-type .works-list:last-of-type{
+	margin-bottom: 1em;
+}
+
+
+/* 1.12 Page Specific Coding */
+
+/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
+ol.concept-list li,
+ul.concept-list li{
+	margin-bottom: .7em;
+}
+ol.concept-list li:last-child,
+ul.concept-list li:last-child{
+   margin-bottom: 0;
+}
+
+/* The following items are used on the bibliography.html page. */
+.primary-historical{
+	list-style: none;
+	padding: 0 0 1em 0;
+	margin: 0;	
+}
+ol.primary-historical li{
+	padding-bottom: .5em;
+}
+
+/* The following items are used on the acknowledgments.html page. */
+ul.acknowledgments{
+	padding-left: 0;
+}
+@media only screen and (min-width: 480px){
+	ul.acknowledgments{
+		padding-left: 1.2em;
+	}
+}
+.acknowledgments li{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: .6em;
+}
+
+/* The following items are used on the site.html page. */
+.site-map{
+	display:inline-block; 
+	text-align:left
+}
+.site-map ol li:first-child{
+	margin-top: .6em;
+}
+.site-map li{
+	margin-bottom: .6em;
+}
+
+/* The following is used in essays to create small text */
+.footnote{
+	font-size: .9em;
+	padding-top: 1.5em;
+}
+
+
+/* 1.12. Formatting */
+
+.black{
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.half{
+	width: 50%;
+}
+.highlight{
+	color: #902D27;
+	font-style: italic;
+	/* text-decoration:underline dotted; */
+}
+.italic{
+	font-style: italic;
+}
+.left{
+	text-align: left;
+}
+.site-blue{
+	color: #204A79;
+}
+.site-red{
+	color: #902D27;
+}
+.small{
+	font-size: .9em;
+}
+.smallcaps{
+	font-variant: small-caps;
+}
+.underline{
+	text-decoration: underline;
+}
+
+
+/* 1.13. Lists and Lines */
+
+ol,
+ul{
+	padding: 0 0 0 1.4em;
+	margin:0;
+}
+ol li ol{
+	padding: 0 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	ol,
+	ul,
+	ol li ol{
+		padding-left: 1.2em;
+	}
+}
+hr{
+	background-color: gray;
+	height: 1px;
+	border: 0;
+	width: 100%;
+	max-width: 100%;
+}
+.title-hr{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+
+/* Appendix */
+
+/* A. Alternative [id]:target Coding */
+/* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
+/* alternative coding */
+/* [id]:target {
+  padding-top: 65px; 
+  margin-top: -65px;
+} */
+/* *[id]:before { 
+	display: block; 
+	content: " "; 
+	margin-top: -80px;
+	height: 80px;
+	visibility: hidden; 
+  } */
+/* [id]:target::before {
+	content: "";
+	display: block;
+	height: 80px;
+	margin: -80px 0 0;
+} */
+/* alternative coding for empty spans */
+/* .anchor{
+	display: block;
+	height: 80px;
+	margin-top: -80px;
+	visibility: hidden;
+} */
+/* doesn't work in iOS */
+/* html {
+	scroll-padding-top: 80px;
+} */
+
+
+/* B. Logic of Header Elements */
+/* Rough guide - not updated */
 /* The following lays out the logic of how elements in the page header appear and disappear. All of it is incorporated into the main CSS but is broken out here to reveal the logic. */
 /*
 .title{
@@ -1042,445 +1493,3 @@ body.transcription .title{
 	}
 }
 */
-
-
-/* 1.5. Google Translate */
-/* Also see other styles marked "Google Translate" */
-
-.goog-te-banner-frame.skiptranslate{
-	display: none !important;
-	visibility: hidden !important;
-}
-.original-text{
-	text-align: unset !important;
-}
-.translate{
-	/* height: 1.4em; */
-	margin: .7em 0 0 0;
-	max-width: 170px;
-	overflow: hidden !important;
-}
-@media only screen and (min-width: 480px){
-	.translate{
-		margin: 0;
-	}
-}
-@media only screen and (min-width: 768px){
-	.translate{
-		margin: 0 0 1em 0;
-	}
-}
-#google_translate_element{
-	min-height: 55px;
-}
-@media only screen and (min-width: 768px){
-	#google_translate_element{
-		min-height: 50px;
-	}
-}
-@media only screen and (min-width: 992px){
-	#google_translate_element{
-		min-height: 48px;
-	}
-}
-#google_translate_element > div > span > a > img{
-	width: 3.5em;
-}
-#google_translate_element div.goog-te-gadget .goog-te-combo{
-	font-size: 1.3em;
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	border: 2px solid  #E3E3E3;
-	border-radius: 7px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	margin: 0 0 0 -3px;
-	padding: 1px;
-}
-#google_translate_element div.goog-te-gadget .goog-te-combo:hover,
-#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
-	border: 2px #204A79 solid;
-	background-color: #E3E3E3;
-}
-div.skiptranslate:nth-child(1){
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	padding-left: 4px;
-}
-div.skiptranslate:nth-child(1) > span:nth-child(2),
-div.skiptranslate:nth-child(1) > span:nth-child(2){
-	border: 2px transparent solid;
-	margin-left: -2px;
-}
-div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
-div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
-	border: 2px #204A79 solid;
-}
-#google_translate_element > div > span > a > img,
-#google_translate_element > div > span > a > img{
-	border: 2px transparent solid;
-	padding-right: 1px !important;
-}
-#google_translate_element > div > span > a > img:hover,
-#google_translate_element > div > span > a > img:focus{
-	border: 2px transparent solid;
-}
-.goog-logo-link,
-.goog-logo-link:link{
-	font-size: 11px !important;
-	font-weight: normal !important;
-	color: #666 !important;
-}
-
-
-/* 1.6. Archival Texts */
-
-table.archival-text{
-	font-size: .8em;
-	line-height: 1.6em;
-	border: 1px solid #858585;
-	border-radius: 9px; 
-	-webkit-border-radius: 9px;
-	-moz-border-radius: 9px;
-	border-spacing: 0;
-	margin: 2.5em 0;  				
-	width: 100%;
-}
-@media only screen and (min-width: 768px){
-	table.archival-text{
-		font-size: .9em;
-		line-height: 1.5em;
-	}
-}
-table.archival-text:last-of-type{
-	margin: 2.5em 0 1em 0; 
-}
-table.archival-text th, 
-table.archival-text td{
-	padding: 12px;
-	border-bottom: 1px solid #858585;
-}	
-table.archival-text tr:first-child > th{
-	font-size: 1.15em;
-	color: white;
-	background: #204A79;
-	border-radius: 8px 8px 0 0; 
-	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius: 8px 8px 0 0;
-	display: flex;
-	justify-content: space-between;
-}
-.archival-text .return-top{
-	font-size: .9em;
-	color: white;
-	white-space: nowrap;
-	margin-top: .05em;
-}
-@media only screen and (min-width: 480px){
-	.archival-text .return-top{
-		margin-right: .5em;
-	}
-}
-.archival-text a.return-top:hover,
-.archival-text a.return-top:focus{
-	color: #a83c37;
-	background-color: #e3e3e3;
-}
-table.archival-text tr:last-child > td{
-	border-bottom: none;
-}
-table.archival-text .item{
-	background-color: #DBE6F5;
-}
-table.archival-text .item a:hover,
-table.archival-text .item a:focus{
-	background: whitesmoke;
-}
-table.archival-text .years,
-table.archival-text .details{
-	padding: 10px 10px;
-}
-@media only screen and (min-width: 768px){
-	table.archival-text .details{
-		padding: 10px 10px 10px 38px;
-	}
-}
-
-
-/* 1.7. Artifact Gallery */
-
-.image-details{
-	font-size: .85em;
-	font-style: italic;
-	text-align: center;
-	color: #65615b;
-}
-.gallery{      
-	text-align: center;
-	margin-bottom: -2.5em;
-	overflow: hidden;
-}
-.gallery-item{
-	text-align: center;
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 0 2.5em 0;
-	width: 100%;
-	max-width: 100%;
-}
-@media only screen and (min-width: 480px){
-	.gallery-item{
-		padding: 0 .5em 2.5em .5em;
-		width: calc(50% - 1.5em);
-	}
-}
-@media only screen and (min-width: 768px){
-	.gallery-item{
-		width: calc(33.3% - 1.5em);
-	}
-}
-.gallery-item:last-of-type{
-	text-align: left;
-}
-.gallery figure{
-	margin: 0;
-}
-.image-container{
-	padding: .5em;
-}
-.gallery figure img{
-	width: 100%;
-	max-width: 100%;
-	object-fit:cover;
-	-o-object-fit: cover;
-	border-radius:50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	overflow: hidden;
-	border: 2px solid #E3E3E3;
-}
-.gallery figure a img:hover,
-.gallery figure a:focus img{
-	border: 2px #204A79 solid;
-}
-.gallery figure figcaption{
-	font-size: .8em;
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	text-align: center;       
-	line-height: 1.2em;
-}
-
-
-/* 1.8. Book-Length Works */
-
-#books{
-	font-size: .85em;
-	line-height: 1.6em;
-}
-@media only screen and (min-width: 768px){
-	#books{
-		font-size: .95em;
-		line-height: 1.5em;
-	}
-}
-#books h4,
-.published-author,
-.author-details,
-.works-list{
-	border: 1px solid #858585;
-}
-#books h4{
-	font-size: 1.15em;
-	font-style: normal;
-	font-weight: 600;
-	color: white;
-	background-color: #204a79;
-	padding: 10px 14px;
-	margin: 0 0 1.5em 0;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-}
-.published-author{
-	font-size: 1.05em;
-	color: #262626;
-	background-color: #e3e3e3;
-	border-radius: 8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius: 8px 8px 0 0;
-	padding: 10px 16px;
-	margin: 0;
-	display: flex;
-	justify-content: space-between;
-}
-.published-author .return-top{
-	font-size: .9em;
-	white-space: nowrap;
-	margin-top: .15em;
-}
-@media only screen and (min-width: 480px){
-	.published-author .return-top{
-		margin-right: .5em;
-	}
-}
-.published-author a.return-top:hover,
-.published-author a.return-top:focus{
-	color: #a83c37;
-	background-color: whitesmoke;
-}
-.author-details{
-	border-top: none;
-	border-bottom: none;
-	padding: .8em 1.5em .2em 1.5em;
-	margin: 0;
-}
-.works-list{
-	border-top: none;
-	border-radius: 0 0 8px 8px;
-	-webkit-border-radius: 0 0 8px 8px;
-	-moz-border-radius: 0 0 8px 8px;
-	padding: 1em 1em .7em 2.5em;
-	margin: 0 0 2em 0;
-}
-.works-list li {
-	padding: 0 0 .6em 0;
-}
-#books section:last-of-type section:last-of-type .works-list:last-of-type{
-	margin-bottom: 1em;
-}
-
-
-/* 1.9. Lines */
-
-hr{
-	background-color: gray;
-	height: 1px;
-	border: 0;
-	width: 100%;
-	max-width: 100%;
-}
-.thick-hr{
-	overflow: visible; /* For IE */
-	border: none;
-	border-top: medium double #191716;
-	color: #191716;
-	text-align: center;
-	padding: 10px 10px 0 0;
-	width: 50%;
-}
-.title-hr{
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
-.divider-hr{
-	margin-top: 3em;
-	margin-bottom: 3em;
-}
-.text-divider{
-	margin: 0 auto;
-	width: 40%;
-}
-
-
-/* 1.10. Formatting */
-
-.black{
-	color: black;
-}
-.bold{
-	font-weight: bold;
-}
-.center{
-	text-align: center;
-}
-.half{
-	width: 50%;
-}
-.highlight{
-	color: #902D27;
-	font-style: italic;
-	/* text-decoration:underline dotted; */
-}
-.italic{
-	font-style: italic;
-}
-.left{
-	text-align: left;
-}
-.site-blue{
-	color: #204A79;
-}
-.site-red{
-	color: #902D27;
-}
-.small{
-	font-size: .9em;
-}
-.smallcaps{
-	font-variant: small-caps;
-}
-.underline{
-	text-decoration: underline;
-}
-
-
-/* 1.11. Lists */
-
-ol,
-ul{
-	padding: 0 0 0 1.4em;
-	margin:0;
-}
-ol li ol{
-	padding: 0 0 0 0;
-}
-@media only screen and (min-width: 768px){
-	ol,
-	ul,
-	ol li ol{
-		padding-left: 1.2em;
-	}
-}
-
-/* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
-ol.concept-list li,
-ul.concept-list li{
-	margin-bottom: .7em;
-}
-ol.concept-list li:last-child,
-ul.concept-list li:last-child{
-   margin-bottom: 0;
-}
-
-/* The following items are used on the bibliography.html page. */
-.primary-historical{
-	list-style: none;
-	padding: 0 0 1em 0;
-	margin: 0;	
-}
-ol.primary-historical li{
-	padding-bottom: .5em;
-}
-
-/* The following items are used on the acknowledgments.html page. */
-ul.acknowledgments{
-	padding-left: 0;
-}
-@media only screen and (min-width: 480px){
-	ul.acknowledgments{
-		padding-left: 1.2em;
-	}
-}
-.acknowledgments li{
-	list-style: none;
-	padding-left: 0;
-	margin-bottom: .6em;
-}
-.site-map{
-	display:inline-block; 
-	text-align:left
-}
-.site-map ol li:first-child{
-	margin-top: .6em;
-}
-.site-map li{
-	margin-bottom: .6em;
-}

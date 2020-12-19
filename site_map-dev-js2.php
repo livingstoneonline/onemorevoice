@@ -35,7 +35,7 @@
         </style>
     </head>
 
-    <!-- <?php flush(); ?> -->
+    <?php flush(); ?>
 
     <body class="essay">
         <article>

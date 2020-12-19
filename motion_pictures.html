@@ -419,80 +419,86 @@
 		and by change the following java line:
 			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&playsinline=1&start="+ this.dataset.starttime +""); -->
 		<script type="text/javascript">
-      var player; //current video player object
+			var player; //current video player object
 			(function () {
 
-			var youtube = document.querySelectorAll(".youtube");
+				var youtube = document.querySelectorAll(".youtube");
 
-			for (var i = 0; i < youtube.length; i++) {
+				for (var i = 0; i < youtube.length; i++) {
 
-				var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/hqdefault.jpg";
-				title = youtube[i].getAttribute("data-title");
-				alt = youtube[i].getAttribute("data-alt");
+					var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/hqdefault.jpg";
+					title = youtube[i].getAttribute("data-title");
+					alt = youtube[i].getAttribute("data-alt");
 
-				var image = new Image();
-				image.src = source;
-				image.setAttribute("title", title);
-				image.setAttribute("alt", alt);
-				image.addEventListener("load", function () {
-					youtube[i].appendChild(image);
-				}(i));
+					var image = new Image();
+					image.src = source;
+					image.setAttribute("title", title);
+					image.setAttribute("alt", alt);
+					image.addEventListener("load", function () {
+						youtube[i].appendChild(image);
+					}(i));
 
-        var playerDiv = document.createElement("div");
-        playerDiv.id = 'player-' + youtube[i].getAttribute("data-embed");
-        youtube[i].appendChild(playerDiv);
+					var playerDiv = document.createElement("div");
+					playerDiv.id = 'player-' + youtube[i].getAttribute("data-embed");
+					youtube[i].appendChild(playerDiv);
 
-        var eventList = ["click", "keydown"];
-  				for(event of eventList) {
-    				youtube[i].addEventListener(event, function (ev) {
-              var iframe = this.querySelector('iframe');
-              var isClick = ev.type === 'click' || (ev.type === 'keydown' && (ev.keyCode === 13 || ev.keyCode === 32)); // space or enter
-              if(!iframe && isClick){
-                ev.preventDefault();
-                player = new YT.Player('player-' + this.dataset.embed, {
-                  height: '390', // Dimensions are overridden by CSS
-                  width: '640',
-                  title: 'Embedded YouTube video. ' + title,
-                  frameborder: 0,
-                  videoId: this.dataset.embed,
-                  events: {
-                    'onReady': onPlayerReady
-                  }
-                });
+					var eventList = ["click", "keydown"];
+					for (event of eventList) {
+						youtube[i]
+							.addEventListener(event, function (ev) {
+								var iframe = this.querySelector('iframe');
+								var isClick = ev.type === 'click' || (ev.type === 'keydown' && (ev.keyCode === 13 || ev.keyCode === 32)); // space or enter
+								if (!iframe && isClick) {
+									ev.preventDefault();
+									player = new YT.Player('player-' + this.dataset.embed, {
+										height: '390', // Dimensions are overridden by CSS
+										width: '640',
+										title: 'Embedded YouTube video. ' + title,
+										frameborder: 0,
+										videoId: this.dataset.embed,
+										events: {
+											'onReady': onPlayerReady
+										}
+									});
 
-            } else if (isClick) {
-              ev.preventDefault();
-              if( player.getPlayerState() == YT.PlayerState.PLAYING){
-                player.pauseVideo();
-              } else {
-                player.playVideo();
-              }
-            }
-          				});
-            };
-			};
+								} else if (isClick) {
+									ev.preventDefault();
+									if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+										player.pauseVideo();
+									} else {
+										player.playVideo();
+									}
+								}
+							});
+					};
+				};
 
 			})();
 		</script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<script type="text/javascript">
-      // Load YouTube IFrame API asynchronously
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			// Load YouTube IFrame API asynchronously
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag
+				.parentNode
+				.insertBefore(tag, firstScriptTag);
 
-      function onYouTubeIframeAPIReady() {
-        // Required function, but we don't need to do anything as we have multiple videos
-      }
+			function onYouTubeIframeAPIReady() {
+				// Required function, but we don't need to do anything as we have multiple
+				// videos
+			}
 
-      function onPlayerReady(event) {
-        // Make video start playing once it has loaded
-        event.target.playVideo();
-      }
-    </script>
-    <!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
-    <script type="text/javascript">
+			function onPlayerReady(event) {
+				// Make video start playing once it has loaded
+				event
+					.target
+					.playVideo();
+			}
+		</script>
+		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
+		<script type="text/javascript">
 			function downloadJSAtOnload() {
 			var element = document.createElement("script");
 			element.src = "scripts/scripts.js";

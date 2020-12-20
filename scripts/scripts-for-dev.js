@@ -266,32 +266,11 @@ function getPreviousElement(items, currentItem){
 /* Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab */
 /* Needed to prevent a "Best Practices" issue created by Google Translate */
 
-AddRelNoopener_RandomiseHref();
+AddRelNoopener();
 
-function AddRelNoopener_RandomiseHref(){
+function AddRelNoopener(){
     var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
         links[i].setAttribute("rel","noopener");
-        // links[i].onclick = "randomiseHref()";
-        // links[i].setAttribute("onclick","randomiseHref();");
     }
-}
-
-// Adapted from https://stackoverflow.com/a/18704113
-function randomiseHref()
-{
-  function randomString(length, chars) {
-    var result = '';
-    for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
-    return result;
-  }
-    var e = window.event;
-    e.preventDefault();
-
-    var url = e.target.href;
-    url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-
-    location.replace(url);
-
-    return false;
 }

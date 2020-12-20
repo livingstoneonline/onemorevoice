@@ -274,3 +274,50 @@ function AddRelNoopener(){
         links[i].setAttribute("rel","noopener");
     }
 }
+
+
+var href = document.getAttribute ("href");
+var randomString = Math.floor(Math.random()*1000000);
+var randomisedLink = href + "?=" + randomString;
+location.replace (randomisedLink)
+
+// AddRandomiseHref();
+
+// function AddRandomiseHref(){
+//     var links = document.querySelectorAll("a");
+//     for(var i = 0; i < links.length; i++){
+//         links[i].setAttribute("rel","noopener");
+//     }
+// }
+
+/* Adapted from https://stackoverflow.com/a/18704113 */
+/* Adds random string to end of site links */
+
+// function AddRelNoopener_RandomiseHref(){
+//   var links = document.querySelectorAll("a");
+//   for(var i = 0; i < links.length; i++){
+//       links[i].setAttribute("rel","noopener");
+//       // links[i].onclick = "randomiseHref()";
+//       // links[i].setAttribute("onclick","randomiseHref();");
+//   }
+// }
+
+// RandomiseHref();
+
+// function RandomiseHref()
+// {
+//   function randomString(length, chars) {
+//     var result = '';
+//     for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
+//     return result;
+//   }
+//     var e = window.event;
+//     e.preventDefault();
+
+//     var url = e.target.href;
+//     url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+
+    // location.replace(url);
+
+//     return false;
+// }

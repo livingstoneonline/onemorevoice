@@ -457,8 +457,9 @@
 		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
 		<script type="text/javascript">
 			function downloadJSAtOnload() {
+			var randomString = Math.floor(Math.random()*1000000);
 			var element = document.createElement("script");
-			element.src = "scripts/scripts-for-dev.js?=v01.00";
+			element.src = "scripts/scripts-for-dev.js?=" + randomString;
 			document.body.appendChild(element);
 			}
 			if (window.addEventListener)

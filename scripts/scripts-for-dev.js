@@ -275,22 +275,27 @@ function AddRelNoopener(){
     }
 }
 
-AddRandomisedHref();
 
-function AddRandomisedHref(){
-    var href = document.getElementsByTagName("a").getAttribute("href"); 
+AddRandomiseHref();
+
+var randomString = Math.floor(Math.random()*1000000); 
+function AddRandomiseHref(){
     var randomString = Math.floor(Math.random()*1000000);
-    var randomisedLink = href + "?=" + randomString;
-    location.replace (randomisedLink)
+    var href = document.getElementsByTagName("a").getAttribute("href"); 
+    for(var i = 0; i < links.length; i++){
+        var randomisedLink = href + "?=" + randomString;
+        location.replace (randomisedLink)
+    }
 }
 
-// AddRandomiseHref();
 
-// function AddRandomiseHref(){
-//     var links = document.querySelectorAll("a");
-//     for(var i = 0; i < links.length; i++){
-//         links[i].setAttribute("rel","noopener");
-//     }
+// AddRandomisedHref();
+
+// function AddRandomisedHref(){
+//     var href = document.getElementsByTagName("a").getAttribute("href"); 
+//     var randomString = Math.floor(Math.random()*1000000);
+//     var randomisedLink = href + "?=" + randomString;
+//     location.replace (randomisedLink)
 // }
 
 /* Adapted from https://stackoverflow.com/a/18704113 */

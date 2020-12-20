@@ -751,7 +751,7 @@
 			function downloadJSAtOnload() {
 				var randomString = Math.floor(Math.random()*1000000);
 				var element = document.createElement("script");
-				element.src = "scripts/scripts-for-dev.js?=" + randomString;
+				element.src = "scripts/scripts.js?=" + randomString;
 				document.body.appendChild(element);
 			}
 			if (window.addEventListener)

@@ -511,9 +511,10 @@
 		<!-- Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html -->
 		<script type="text/javascript">
 			function downloadJSAtOnload() {
-			var element = document.createElement("script");
-			element.src = "scripts/scripts.js";
-			document.body.appendChild(element);
+				var randomString = Math.floor(Math.random()*1000000);
+				var element = document.createElement("script");
+				element.src = "scripts/scripts-for-dev.js?=" + randomString;
+				document.body.appendChild(element);
 			}
 			if (window.addEventListener)
 			window.addEventListener("load", downloadJSAtOnload, false);

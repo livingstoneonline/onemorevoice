@@ -271,8 +271,10 @@ AddRelNoopener_RandomiseHref();
 function AddRelNoopener_RandomiseHref(){
     var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
-        links[i].setAttribute("rel","noopener");
-        links[i].setAttribute("onclick","randomiseHref();");
+        links[i].rel = "noopener";        
+        links[i].onclick = "randomiseHref()";
+        // links[i].setAttribute("rel","noopener");
+        // links[i].setAttribute("onclick","randomiseHref();");
     }
 }
 

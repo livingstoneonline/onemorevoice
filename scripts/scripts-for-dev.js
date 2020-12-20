@@ -275,11 +275,14 @@ function AddRelNoopener(){
     }
 }
 
+AddRandomisedHref();
 
-var href = document.getElementsByTagName("a").getAttribute("href"); 
-var randomString = Math.floor(Math.random()*1000000);
-var randomisedLink = href + "?=" + randomString;
-location.replace (randomisedLink)
+function AddRandomisedHref(){
+    var href = document.getElementsByTagName("a").getAttribute("href"); 
+    var randomString = Math.floor(Math.random()*1000000);
+    var randomisedLink = href + "?=" + randomString;
+    location.replace (randomisedLink)
+}
 
 // AddRandomiseHref();
 

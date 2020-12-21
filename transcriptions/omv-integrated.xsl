@@ -107,14 +107,14 @@
 						<p class="caption">Image caption at page bottom</p>
 		        		<h1 class="header-title">One More Voice</h1>
 		        		<hr/>
-						<xsl:choose>
+						<!--<xsl:choose>
 							<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
 								<div><span class="back-button"><a class="art-return" href="../artifacts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 							</xsl:when>
 							<xsl:otherwise>
 								<div><span class="back-button"><a class="trans-return" href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 							</xsl:otherwise>
-						</xsl:choose>
+						</xsl:choose>-->
 		    		</header>
 					<xsl:apply-templates select="TEI"/>
 				</article>
@@ -653,7 +653,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<p class="back-button"><a class="trans-return" href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>
+						<!--<p class="back-button"><a class="trans-return" href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -675,7 +675,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr/>
-						<p class="back-button"><a class="trans-return" href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>
+						<!--<p class="back-button"><a class="trans-return" href="../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -697,7 +697,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<p class="back-button"><a class="art-return" href="../artifacts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>
+						<!--<p class="back-button"><a class="art-return" href="../artifacts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital artifact curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>

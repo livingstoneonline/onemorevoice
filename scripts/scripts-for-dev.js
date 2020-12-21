@@ -292,7 +292,7 @@ function RandomiseHref(){
 Thanks();
 
 function Thanks(){
-    var links = document.querySelectorAll("a:([href^='http']):not([href^='#']):not([href^='mailto']):not([onclick])");
+    var links = document.querySelectorAll("a[href^='http']:not([href^='#']):not([href^='mailto']):not([onclick])");
     for(var i = 0; i < links.length; i++){
       links[i].href = links[i].href + "?=thanks4visitingOneMoreVoice";
     }

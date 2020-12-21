@@ -107,6 +107,7 @@
 						<p class="caption">Image caption at page bottom</p>
 		        		<h1 class="header-title">One More Voice</h1>
 		        		<hr/>
+						<div><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 						<!--<xsl:choose>
 							<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
 								<div><span class="back-button"><a class="art-return" href="../artifacts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>

@@ -281,7 +281,7 @@ function RandomiseHref(){
     var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
       var randomString = Math.floor(Math.random()*1000000);
-      links[i].href = + "?=" + randomString;
+      links[i].href = "?=" + randomString;
     }
 }
 

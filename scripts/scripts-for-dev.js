@@ -280,10 +280,27 @@ RandomiseHref();
 function RandomiseHref(){
     var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
-      var randomString = Math.floor(Math.random()*1000000);
-      links[i].href + "?=" + randomString;
+        function randomString(length, chars) {
+          var result = '';
+          for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
+          return result;
+        }
+        var e = links[i];
+        var url = e.target.href;
+        url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
     }
 }
+
+
+// RandomiseHref();
+
+// function RandomiseHref(){
+//     var links = document.querySelectorAll("a");
+//     for(var i = 0; i < links.length; i++){
+//       var randomString = Math.floor(Math.random()*1000000);
+//       links[i].href + "?=" + randomString;
+//     }
+// }
 
 //     var randomString = Math.floor(Math.random()*1000000);
 //     var href = document.getElementsByTagName("a").getAttribute("href"); 

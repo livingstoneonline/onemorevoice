@@ -38,6 +38,7 @@ window.addEventListener('scroll', stickyNavigation);
 
 function openNav() {
   document.getElementById("nav3").style.display = "block";
+  document.getElementById("html").style.overflowY = "hidden";
   const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
@@ -46,6 +47,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("nav3").style.display = "none";
+  document.getElementById("html").style.overflowY = "unset";
   const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
   for(const element of elements){
     if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
@@ -270,5 +272,30 @@ function AddRelNoopener(){
     var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
         links[i].setAttribute("rel","noopener");
+    }
+}
+
+
+/* Commented out b/c breaks external LO links */
+
+// Thanks();
+
+// function Thanks(){
+//     var links = document.querySelectorAll("a[href^='http']:not([href^='#']):not([href^='mailto']):not([onclick])");
+//     for(var i = 0; i < links.length; i++){
+//       links[i].href = links[i].href + "?=Thanks_for_visiting_One_More_Voice";
+//     }
+// }
+
+
+/* Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end. */
+
+RandomiseHref();
+
+function RandomiseHref(){
+    var links = document.querySelectorAll("a:not([href^='http']):not([href*='#']):not([href^='mailto']):not([onclick]):not([class='trans-return']):not([class='art-return'])");
+    for(var i = 0; i < links.length; i++){
+      var randomString = Math.floor(Math.random()*1000000);
+      links[i].href = links[i].href + "?=" + randomString;
     }
 }

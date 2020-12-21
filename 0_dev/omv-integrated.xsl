@@ -43,7 +43,7 @@
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
-		<html lang="en">
+		<html lang="en" id="html">
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<title>
@@ -215,7 +215,7 @@
 					<!-- end of nav -->
 					       
 					<header class="title" id="title-div"> 
-					    <img class="image image-border content-holder-1" src="http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1399px.jpg" srcset="http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1399px.jpg 1399w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1276px.jpg 1276w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1216px.jpg 1216w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-699px.jpg 699w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-638px.jpg 638w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-608px.jpg 608w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by the One More Voice project according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project." />
+					    <img class="image-border content-holder-1" src="http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1399px.jpg" srcset="http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1399px.jpg 1399w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1276px.jpg 1276w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1216px.jpg 1216w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-699px.jpg 699w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-638px.jpg 638w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-608px.jpg 608w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by the One More Voice project according to the TEI P5 guidelines." title="A segment of coded text taken from the One More Voice project." />
 		        		<h1 class="header-title">One More Voice</h1>
 		        		<hr/>
 						<xsl:choose>

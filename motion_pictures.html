@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en" id="html">
+
+<!-- To-do list
+1) tab stop (add click event iframe)
+2) image -->
+
+	<head>
+		<title>Motion Pictures | One More Voice</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Motion Pictures page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+		<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Caribbean,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,motion pictures,sound recordings,coronavirus,covid-19,creative commons" />
+		<meta name="theme-color" content="#204A79"/>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
+		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-31768072-5');
+		</script>
+		<!-- Link to CSS file at end; critical CSS inlined here.-->
+        <style>
+        	html{font:16px Georgia,'Times New Roman',Times,serif;font-weight:400;color:#191716;overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto;-ms-word-break:break-all;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;scroll-behavior:smooth;overflow-x:hidden}body{top:0!important;margin:.5em auto;padding-bottom:.5em}@media only screen and (min-width:768px){body{font-size:.95em}}@media only screen and (min-width:992px){body{padding-bottom:0}body.fixed-nav{padding-top:0!important}}article{padding:0 1em;margin:.5em auto;max-width:100%}@media only screen and (min-width:768px){article{max-width:46em}}@media only screen and (min-width:992px){article{max-width:42em}}@media only screen and (min-width:320px){.navspace{min-height:63px}}@media only screen and (min-width:480px){.navspace{min-height:68px}}@media only screen and (min-width:768px){.navspace{min-height:73px}}@media only screen and (min-width:768px){.navspace{min-height:52px}}header{position:relative}.title,body.transcription .title{font-weight:700;text-align:center;line-height:1.6em;position:relative}.title{padding-bottom:0}body.transcription .title{padding-bottom:1em}@media only screen and (min-width:320px){.title{padding-bottom:.5em}body.transcription .title{padding-bottom:1.5em}}@media only screen and (min-width:480px){body.transcription .title{padding-bottom:.5em}}@media only screen and (min-width:992px){.title,body.transcription .title{padding-bottom:1.5em;display:block!important}}.header-title{display:none;visibility:hidden}@media only screen and (min-width:992px){.header-title{display:block;visibility:visible;margin:1.2em 0 .7em}}.title hr{display:none;visibility:hidden}@media only screen and (min-width:992px){.title hr{display:block;visibility:visible}}h1{font-size:2em;font-family:Georgia,'Times New Roman',Times,serif}@media only screen and (min-width:768px){h1{font-size:2.2em}}@media only screen and (min-width:992px){h1{font-size:2.3em}}header h2{font-size:.9em;font-weight:300;font-family:Arial,Geneva,Tahoma,sans-serif;display:none;visibility:hidden}@media only screen and (min-width:480px){header h2{font-size:1em;margin-top:2em;display:block;visibility:visible}}@media only screen and (min-width:768px){header h2{font-size:1.1em;display:block}}@media only screen and (min-width:992px){header h2{margin-top:1em}}.caption{font-size:.65em;font-weight:400;font-family:Arial,Geneva,Tahoma,sans-serif;padding:0 3px;bottom:-2.5em;right:0;position:absolute}.transcription .caption{bottom:-1em}@media only screen and (min-width:320px){.caption{bottom:-1.5em}.transcription .caption{bottom:0}}@media only screen and (min-width:480px){.caption,.transcription .caption{bottom:5em}}@media only screen and (min-width:768px){.caption,.transcription .caption{bottom:5.5em}}@media only screen and (min-width:992px){.caption,.transcription .caption{bottom:14.5em}}h3{font-size:1em;font-weight:700;color:#204a79}h3.subsection{padding-top:2em}.essay h3{clear:both}.credits h3{font-size:1.15em;margin-top:1.6em}h4{font-style:italic;font-size:1em;font-weight:300}.subsection{padding-top:1.5em}img{color:#e6e6e6;font-weight:300;width:100%;max-width:100%}a img{border:3px transparent solid}a:focus img,a:hover img{border:3px #204a79 solid}.image-border{border:1px solid gray}@media screen and (min-width:480px){.responsive-image70{width:70%}.responsive-image73{width:73%}.caption70{padding:0 15%}.caption73{padding:0 13.5%}}.content-holder-1,.content-holder-2,.content-holder-3,.content-holder-4,.content-holder-5{background:#e6e6e6}@media screen and (min-width:320px){.content-holder-1{min-height:66px}.content-holder-2{min-height:181px}.content-holder-3{min-height:206px}.content-holder-4{min-height:229px}.content-holder-5{min-height:339px}}@media screen and (min-width:480px){.content-holder-1{min-height:106px}.content-holder-2{min-height:285px}.content-holder-3{min-height:322px}.content-holder-4{min-height:359px}.content-holder-5{min-height:370px}}@media screen and (min-width:768px){.content-holder-1{min-height:169px}.content-holder-2{min-height:447px}.content-holder-3{min-height:504px}.content-holder-4{min-height:563px}.content-holder-5{min-height:580px}}@media screen and (min-width:992px){.content-holder-1{min-height:155px}.content-holder-2{min-height:409px}.content-holder-3{min-height:461px}.content-holder-4{min-height:514px}.content-holder-5{min-height:529px}}        
+        </style>		
+		<style>
+			/* Check against books, archival texts */
+			h4#summary{
+				padding-top: 1em;
+			}
+			.films h4{
+				font-size: 1.10em;
+				font-style: normal;
+				font-weight: 600;
+				color: white;
+				background-color: #902D27;
+				padding: 10px 14px;
+				margin: 2.7em 0 1.5em 0;
+				border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				display: flex;
+    			justify-content: space-between;
+			}
+			.films section:first-child h4:first-child{
+				margin-top: 0;
+			}
+			.films h4 .return-top{
+				color: white;
+				font-size: 0.85em;
+				white-space: nowrap;
+				margin-top: 0.2em;
+			}
+			@media only screen and (min-width: 480px){
+				.films h4 .return-top{
+					margin-right: 0.5em;
+				}
+			}
+			.films h4 a.return-top:focus,
+			.films h4 a.return-top:hover{
+				color: #a83c37;
+    			background-color: #e3e3e3;
+			}
+			.films h5{
+				font-size: 1em;
+				background-color: #e3e3e3;
+				padding: 10px 16px;
+				margin: 0;
+				border-bottom: 1px solid #858585;
+				border-radius:  8px 8px 0 0;
+				-webkit-border-radius: 8px 8px 0 0;
+				-moz-border-radius:  8px 8px 0 0;
+			}
+			.films p{
+				font-size: .85em;
+				padding: 1em 1em 0 1em;
+				border-top: 1px solid #858585;
+			}
+			.films p.warning {
+				border: 1px solid #902D27;
+				background: #e3e3e3;
+				padding: 5px 7px;
+				margin: -.5em 0 2em 0;
+			}
+			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
+			/* Review https://codepen.io/beardofprey/pen/MXmxXR */
+			.wrapper{
+				margin: 0 auto 2em 0;
+				padding: 0;
+				border: 1px solid #858585;
+				border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+			}
+			.wrapper:last-child{
+				margin: 0 auto;
+			}
+			.youtube{
+				/* background-color: #000; */
+				position: relative;
+				padding-top: 56.25%;
+				margin: .5em;
+				cursor: pointer;
+				overflow: hidden;
+				border: 3px transparent solid;
+			}
+			.youtube:hover,
+			.youtube:focus{
+				border: 3px #204A79 solid;
+			}
+			.youtube img{
+				width: 100%;
+				top: -16.82%;
+				left: 0;
+			}
+			.youtube:hover img,
+			.youtube:focus img{
+				opacity: 0.6;
+			}
+			.youtube .play-button{
+				width: 60px;
+				height: 40px;
+				background-color: #902D27;
+				box-shadow: 0 0 30px rgba(0,0,0,0.6);
+				z-index: 2;
+				border-radius: 6px;
+			}
+			@media only screen and (min-width: 480px){
+				.youtube .play-button{
+					width: 90px;
+					height: 60px;
+				}
+			}
+			.youtube .play-button:before{
+				content: "";
+				border-style: solid;
+				border-width: 10px 0 10px 18px;
+				border-color: transparent transparent transparent #fff;
+			}
+			@media only screen and (min-width: 480px){
+				.youtube .play-button:before{
+					border-width: 15px 0 15px 26px;
+				}
+			}
+			.youtube:hover .play-button,
+			.youtube:focus .play-button{
+				background-color: #204A79;
+			}
+			.youtube img,
+			.youtube .play-button{
+				cursor: pointer;
+			}
+			.youtube img,
+			.youtube iframe,
+			.youtube .play-button,
+			.youtube .play-button:before{
+				position: absolute;
+			}
+			.youtube .play-button,
+			.youtube .play-button:before{
+				top: 50%;
+				left: 50%;
+				transform: translate3d( -50%, -50%, 0 ); /* Mistake but works */
+			}
+			.youtube iframe{
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+        z-index: 2; /* Hides play button when iframe loads */
+			}
+		</style>
+	</head>
+
+	<!-- <?php flush(); ?> -->
+
+	<body class="essay">
+		<article>
+
+		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+			<div class="navspace" data-include="nav1"></div>
+
+			<header class="title" id="title-div">
+				<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+				<img class="image-border content-holder-2" src="site-images/liv_023018_0001_deriv-699px.jpg" srcset="site-images/liv_023018_0001_deriv-699px.jpg 699w, site-images/liv_023018_0001_deriv-638px.jpg 638w, site-images/liv_023018_0001_deriv-608px.jpg 608w, site-images/liv_023018_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Magic lantern against large white field." title="Anonymous, “Improved Phantasmagoria Lantern” (Magic lantern, c.1852). Historical object, in the care of Mary Borgo Ton. Image by Katie Chapman and Tassie Gnaidy, on behalf of Mary Borgo Ton. Published by permission." />
+				<p class="caption">Image caption at page bottom</p>
+
+				<h1 class="header-title">One More Voice</h1>
+				<hr />
+				<h2><em>Lost Voices from the British Empire's Archives</em></h2>
+			</header>
+
+			<main class="main" id="main">
+				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+
+				<h3>Motion Pictures</h3>
+
+				<section class="toc" aria-labelledby="menu-sections">
+					<ol id="menu-sections">
+						<li class="toc-title">[Menu: Sections]</li>
+						<li><a href="#summary">Overview</a></li>
+						<li><a href="#footage">Historical Footage</a></li>
+						<li><em>Bonus:</em> <a href="#recordings">Historical Recordings</a></li>
+						<li><a href="#dramatic">Dramatic Performances</a></li>
+						<li><a href="#documentaries">Documentaries</a></li>
+					</ol>
+				</section>
+
+				<br />
+				<hr />
+				<section aria-labelledby="summary">
+					<h4 id="summary">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+
+					<p><em>One More Voice</em> collects and curates a small selection of relevant, publicly-available <a href="#footage">motion pictures</a> and, in a few cases, sound <a href="recordings">recordings</a>. These items offer an opportunity to see and hear some of the individuals who feature elsewhere on the <em>One More Voice</em> project site, including on the pages for <a href="texts.html">archival texts</a>, <a href="artifacts.html">artifact images</a>, and <a href="books.html">book-length works</a>. For historical context, the present page also includes a few early <a href="documentaries">anti-colonial and other documentary films</a> as well as a handful of <a href="dramatic">dramatic performances</a>. To suggest additional items, please <a href="mailto:awisnicki@yahoo.com">email us</a>.</p>
+				</section>
+				<hr class="title-hr" />
+
+				<section class="films">
+
+					<section aria-labelledby="footage">
+						<h4><span id="footage">Historical Footage</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<div class="wrapper" aria-labelledby="naidu-movietone">
+							<h5 id="naidu-movietone">Sarojini Naidu</h5>
+							<div class="youtube" tabindex="0" data-embed="N2xq8LanbyQ" data-title="Sarojini Naidu. Movietone Interview. [Location unknown], May 26, 1930. Running time: 1:08." data-alt="Three-quarters body portrait of Sarojni Naidu standing and facing forward.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Movietone Interview</strong><br />
+								Date: <strong>26 May 1930</strong><br />
+								Location: <strong>Unknown</strong><br />
+								Running time: <strong>1:08</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="naidu-introduces">
+							<h5 id="naidu-introduces">Sarojini Naidu</h5>
+							<div class="youtube" tabindex="0" data-embed="kb02__Ln0go" data-title="Sarojini Naidu. Introduces M.S. Subbulakshmi in the Film Meera. [Location unknown], 1947. Running time: 1:25." data-alt="Half-body portrait of Sarojni Naidu standing and facing forward.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong><br />
+								Date: <strong>1947</strong><br />
+								Location: <strong>Unknown</strong><br />
+								Running time: <strong>1:25</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="tagore-rare">
+							<h5 id="tagore-rare">Rabindarath Tagore</h5>
+							<div class="youtube" tabindex="0" data-embed="6zAt9rSG32E" data-title="Rabindarath Tagore. Rare Clips Compilations. Berlin, 1930; New York, 1930; Moscow, 1930; France, 1921; Rome, 1926. Running time: 3:04." data-alt="Head and shoulders portrait of Rabindarath Tagore.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Rare Clips Compilations</strong><br />
+								Date: <strong>1930; 1930; 1930; 1921; 1926</strong><br />
+								Location: <strong>Berlin; New York; Moscow; France; Rome</strong><br />
+								Running time: <strong>3:04</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="tagore-indias">
+							<h5 id="tagore-indias">Rabindarath Tagore</h5>
+							<div class="youtube" tabindex="0" data-embed="9_JC3488UEs" data-title="Rabindarath Tagore. India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy. [Location unknown], 5 May 1930; Rome, 7 June 1926. Running time: 5:15." data-alt="Half-body portrait of Rabindarath Tagore.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong><br />
+								Date: <strong>5 May 1930; 7 June 1926</strong><br />
+								Location: <strong>Unknown; Rome</strong><br />
+								Running time: <strong>1:08</strong>
+							</p>
+						</div>
+					</section>
+
+					<section aria-labelledby="recordings">
+						<h4><span id="recordings">Bonus: Historical Recordings</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<div class="wrapper" aria-labelledby="mckay-reads">
+							<h5 id="mckay-reads">Claude McKay</h5>
+							<div class="youtube" tabindex="0" data-embed="L_xpilVoWuo" data-title="Claude McKay. Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York.” New York, Early 1940s. Running time: 3:12." data-alt="Head and shoulders portrait of Claude McKay.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York”</strong><br />
+								Date: <strong>Early 1940s</strong><br />
+								Location: <strong>New York</strong><br />
+								Running time: <strong>3:12</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="naidu-constituent">
+							<h5 id="naidu-constituent">Sarojini Naidu</h5>
+							<div class="youtube" tabindex="0" data-embed="wzf3dWo4EoE" data-title="Sarojini Naidu. Constituent Assembly Speech. India, 1946. Running time: 10:16." data-alt="Headshot of Sarojini Naidu.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Constituent Assembly Speech</strong><br />
+								Date: <strong>1946</strong><br />
+								Location: <strong>India</strong><br />
+								Running time: <strong>10:16</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="vivekanada-lecture">
+							<h5 id="vivekanada-lecture">Swami Vivekananda</h5>
+							<div class="youtube" tabindex="0" data-embed="-bkFLQBZ4ow" data-title="Swami Vivekananda. Lecture at Parliament of World Religion. Chicago, 11 September 1893. Running time: 3:36." data-alt="Headshot of Swami Vivekanda.">
+								<div class="play-button"></div>
+							</div>
+							<p>Title: <strong>Lecture at Parliament of World Religion</strong><br />
+								Date: <strong>11 September 1893</strong><br />
+								Location: <strong>Chicago</strong><br />
+								Running time: <strong>3:36</strong>
+							</p>
+						</div>
+					</section>
+
+					<section aria-labelledby="dramatic">
+						<h4><span id="dramatic">Dramatic Performances</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<div class="wrapper" aria-labelledby="borom-sarret">
+							<h5 id="borom-sarret"><em>Borom Sarret</em> (<em>The Wagoner</em>)</h5>
+							<div class="youtube" tabindex="0" data-embed="VdaC4Oa_z80" data-title="Ousmane Sembène, director. Borom Sarret (The Wagoner). 1963. Running time: 18:28." data-alt="Man in hat in front of wooden fence and trucks.">
+								<div class="play-button"></div>
+							</div>
+							<p>Director: <strong>Ousmane Sembène</strong><br />
+								Date: <strong>1963</strong><br />
+								Running time: <strong>18:28</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="chitara">
+							<h5 id="chitara"><em>Chitraa, the Play</em></h5>
+							<div class="youtube" tabindex="0" data-embed="16eNMBjRdwg" data-title="Prataya Saha and Shatarupa Bhattacharyya, directors. Rabindranath Tagore: Chitraa, the Play. 2020. Running time: 29:47." data-alt="Woman and man wearing traditional Indian clothing and embracing.">
+								<div class="play-button"></div>
+							</div>
+							<p>Author: <strong>Rabindarath Tagore</strong><br/>
+								Directors: <strong>Prataya Saha and Shatarupa Bhattacharyya</strong><br />
+								Date: <strong>2020 [1913]</strong><br />
+								Running time: <strong>29:47</strong>
+							</p>
+						</div>
+					</section>
+
+					<section aria-labelledby="documentaries">
+						<h4><span id="documentaries">Documentaries</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<p class="small warning"><strong class="site-red">Warning:</strong> Site visitors are advised to proceed with caution when consulting the films in this subsection because they contain material that can upset or distress some viewers.</p>
+
+						<div class="wrapper" aria-labelledby="afrique-50">
+							<h5 id="afrique-50"><em>Afrique 50</em></h5>
+							<div class="youtube" tabindex="0" data-embed="KO50TiOmDK8" data-title="René Vautier. Afrique 50. 1950. Running time: 17:24." data-alt="Two children looking at viewer.">
+								<div class="play-button"></div>
+							</div>
+							<p>Director: <strong>René Vautier</strong><br />
+								Date: <strong>1950</strong><br />
+								Running time: <strong>17:24</strong>
+							</p>
+						</div>
+
+						<div class="wrapper" aria-labelledby="statues">
+							<h5 id="statues"><em>Les Statues Meurent Aussi</em> (<em>Statues Also Die</em>)</h5>
+							<div class="youtube" tabindex="0" data-embed="7tsJL59MMrw" data-title="Alain Resnais and Chris Marker, directors. Les Statues Meurent Aussi (Statues Also Die). 1953. Running Time: 30:03." data-alt="People in traditional African clothing in circle, holding large pestles with one grinding in mortar.">
+								<div class="play-button"></div>
+							</div>
+							<p>Directors: <strong>Alain Resnais and Chris Marker</strong><br />
+								Date: <strong>1953</strong><br />
+								Running time: <strong>30:03</strong>
+							</p>
+						</div>
+					</section>
+
+				</section>
+			</main>
+
+			<aside class="credits" id="credits-div">
+				<hr />
+
+				<p><strong>Cite page (MLA):</strong> “Motion Pictures.” <em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, 2020, <a href="contributors.html">https://onemorevoice.org/motion_pictures.html</a>.</p>
+
+				<p><strong>Terms of use:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+
+				<p><strong>Header image caption</strong>: Anonymous, “Improved Phantasmagoria Lantern” (Magic lantern, c.1852). Historical object, in the care of Mary Borgo Ton. Image by Katie Chapman and Tassie Gnaidy, on behalf of Mary Borgo Ton. Published by permission.</p>
+				
+				<p><strong>Header image commentary</strong>: Magic lanterns enabled their operators to project illuminated views on interior and exterior surfaces; operators accompanied magic lantern shows with discussion of the images (often Biblical in nature) or, in some cases, read from and elaborated on a corresponding script. Victorian missionaries used magic lanterns, such as this one, while traveling abroad because these lanterns were light and more portable than their mahogany counterparts. Such laterns also played a little noted role in the early development of African cinema. For instance, <a href="https://en.wikipedia.org/wiki/Samuel_Ajayi_Crowther">Samuel Ajayi Crowther</a> (c.1809-1891), Bishop of the Niger Delta and the first African Anglican bishop in Nigeria, his son <a href="https://en.wikipedia.org/wiki/Dandeson_Crowther">Dandeson Coates Crowther</a> (1844-1938), Archdeacon of the Niger Delta, and other family members used magic lanterns to instruct and entertain their communities and even made their own magic lantern slides. In one letter, Dandeson Crowther records receiving a set of magic lantern slides sent to him, indicates that he “had a show of them last-month,” and adds that “[b]esides these slides we exhibited others, made by my brother Samuel [son of Samuel Ajayi Crowther] &amp; myself, on the Capture &amp; rescue of the Bishop on the Niger” (Letter to Henry Venn [15 February 1868], CMS/B/OMS/C A3/O13 4, University of Birmingham, Cadbury Research Library, Birmingham). In another letter, Dandeson Crowther describes another performance in more detail: “You will be glad also to hear that we have had two grand exhibitions of your kind present the dissolving views. At the first show we made &#163; 5" 0" 0". The crowd in the Schoolroom was great, the room being small. To have a little more comfort, at the 2nd show we reduced the number of tickets (6d each was the charge) &amp; collected almost &#163;4" 10" 0[".]” (Letter to Henry Venn [8 November 1866], CMS/B/OMS/C A3/O13 3, University of Birmingham, Cadbury Research Library, Birmingham). Note: An issue of the <em>Church Missionary Gleaner</em> (9, no. 105 [September 1882]: 112) includes an advertisement for slides made by Dandeson Crowther. Images of another “Improved Phantasmagoria Lantern” are available from the <a href="http://www.bdcmuseum.org.uk/explore/item/69004/">Bill Douglas Cinema Museum</a>. Finally, Thomas Cradock Hepworth's <em>The Book of the Lantern</em> (1888) contains illustrations of the <a href="https://archive.org/details/bookoflanternbei00hepwrich/page/14/mode/2up">magic lantern configuration</a> used to make the “dissolving view” special effect that Dandeson Crowther mentions above.</p>
+			</aside>
+
+            <div data-include="footer1"></div>
+
+		</article>
+		<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->		
+        <script>
+            var randomString = Math.floor(Math.random()*1000000);
+            var css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.type = "text/css";
+            css.href = "css/style.css?=" + randomString;
+            document.head.appendChild(css);
+        </script>
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->		
+		<script src="scripts/jquery-3.5.1.min.js"></script>
+		<!-- Adapted from https://stackoverflow.com/a/31837264 -->
+		<script>
+			$(function(){
+			  var includes = $('[data-include]');
+			  jQuery.each(includes, function(){
+				var file = 'common/' + $(this).data('include') + '.html';
+				$(this).load(file);
+			  });
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+			}
+		</script>
+		<!-- /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */ -->
+		<!-- Adding a custom start time
+			ex HTML: div class="youtube" data-embed="AqcjdkPMPJA" data-starttime="25"
+		and by change the following java line:
+			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&playsinline=1&start="+ this.dataset.starttime +""); -->
+		<script type="text/javascript">
+			var player; //current video player object
+			(function () {
+
+				var youtube = document.querySelectorAll(".youtube");
+
+				for (var i = 0; i < youtube.length; i++) {
+
+					var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/hqdefault.jpg";
+					title = youtube[i].getAttribute("data-title");
+					alt = youtube[i].getAttribute("data-alt");
+
+					var image = new Image();
+					image.src = source;
+					image.setAttribute("title", title);
+					image.setAttribute("alt", alt);
+					image.addEventListener("load", function () {
+						youtube[i].appendChild(image);
+					}(i));
+
+					var playerDiv = document.createElement("div");
+					playerDiv.id = 'player-' + youtube[i].getAttribute("data-embed");
+					youtube[i].appendChild(playerDiv);
+
+					var eventList = ["click", "keydown"];
+					for (event of eventList) {
+						youtube[i]
+							.addEventListener(event, function (ev) {
+								var iframe = this.querySelector('iframe');
+								var isClick = ev.type === 'click' || (ev.type === 'keydown' && (ev.keyCode === 13 || ev.keyCode === 32)); // space or enter
+								if (!iframe && isClick) {
+									ev.preventDefault();
+									player = new YT.Player('player-' + this.dataset.embed, {
+										height: '390', // Dimensions are overridden by CSS
+										width: '640',
+										title: 'Embedded YouTube video. ' + title,
+										frameborder: 0,
+										videoId: this.dataset.embed,
+										events: {
+											'onReady': onPlayerReady
+										}
+									});
+
+								} else if (isClick) {
+									ev.preventDefault();
+									if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+										player.pauseVideo();
+									} else {
+										player.playVideo();
+									}
+								}
+							});
+					};
+				};
+
+			})();
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script type="text/javascript">
+			// Load YouTube IFrame API asynchronously
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag
+				.parentNode
+				.insertBefore(tag, firstScriptTag);
+
+			function onYouTubeIframeAPIReady() {
+				// Required function, but we don't need to do anything as we have multiple
+				// videos
+			}
+
+			function onPlayerReady(event) {
+				// Make video start playing once it has loaded
+				event
+					.target
+					.playVideo();
+			}
+		</script>
+		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+				var randomString = Math.floor(Math.random()*1000000);
+				var element = document.createElement("script");
+				element.src = "scripts/scripts.js?=" + randomString;
+				document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
+	</body>
+
+</html>

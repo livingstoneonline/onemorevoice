@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020061">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -15,29 +15,21 @@
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
 				<title type="alternative">“The History of Caras Farrar of Finding Dr Livingstone, in Central Africa,” 9 September 1874</title>
 				<!-- Title, date -->
-				<author>Anonymous</author>
+				<author>Farrar, Caras, ?-c.1906</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author>Farar, Carras, ?-c.1906</author>
+				<author>Anonymous</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="first">Anonymous</author>
+				<author role="first">Farrar, Caras</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Anonymous</author>
+				<author role="first-normalized">Caras Farrar</author>
 				<!-- First author only: Forename Surname -->
-				<author role="normalized">Carras Farar</author>
+				<author role="normalized">Anonymous</author>
 				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
 				<respStmt xml:id="HB">
-					<name>Heather F. Ball</name>
-					<resp>Transcription</resp>
-					<resp>TEI Encoding</resp>
-					<resp>Editorial Decisions</resp>
-					<resp>Proofing</resp>
-					<resp>Coding Review</resp>
-				</respStmt>
-				<respStmt xml:id="MBT">
-					<name>Mary Borgo Ton</name>
+					<name>Caitlin Matheis</name>
 					<resp>Transcription</resp>
 					<resp>TEI Encoding</resp>
 					<resp>Editorial Decisions</resp>
@@ -96,13 +88,13 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
+					<author xml:id="CF">Farrar, Carras, ?-c.1906</author>
 					<author xml:id="An">Anonymous</author>
-					<author xml:id="CF">Farar, Carras, ?-c.1906</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
 					<date type="composition" when="1874-09-09">9 September 1874</date>
 					<!-- See item for composition place; remove if not given --> 
-					<placeName type="compositionPlace">Bombaby</placeName>
+					<placeName type="compositionPlace">Bombay</placeName>
 				</bibl>
 			</sourceDesc>
 			<!-- End of manuscript <sourceDesc> -->
@@ -122,6 +114,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-11-25" who="#AW">Coding review</change>
 			<change when="2020-11-18" who="#CM">Initial encoding</change>
 			<change when="2020-11-11" who="#CM">Prepare transcription</change>
 		</revisionDesc>
@@ -129,9 +122,9 @@
 
 	<text>
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="605951">
+		<body n="625950">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="white">
+			<div rend="white" n="letter liv_020061">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -139,11 +132,321 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="liv_020061_0001" n="0001"/>
-<lb/><p rend="center">The History of Caras Farrar of finding Dr Livingstone, 
-<lb/>in Central Africa</p>
-<p><!-- Caitlin, start your transcription here. AW --></p>
+	<pb facs="liv_020061_0001" n="0001"/>
+				<lb/><p rend="center">The History of <persName>Caras Farrar</persName> of finding <persName>D<hi rend="sup">r</hi>. Livingstone</persName>, 
+<lb/>in <region>Central <bloc>Africa</bloc></region></p>
+<milestone unit="section" rend="quarter-line quarter-line white" n="divider liv_020061_0001"/>
+<p>In <date when="1872-02">February, 1872</date> I was at <placeName><settlement>Sharaupur</settlement> School</placeName> 
+<lb/>near <settlement>Nasick</settlement>. I heard <persName>M<hi rend="sup">r</hi> Price</persName> talk of an expedition going   
+<lb/>to <bloc>Africa</bloc> to find out <persName>D<hi rend="sup">r</hi>. Livingstone</persName>. I and many others were  
+<lb/>willing to go and join the expedition. Some time after the   
+<lb/><persName>Rev. W.S. Price</persName> received a telegram. Whether it was from   
+<lb/><settlement>London</settlement> or <settlement>Bombay</settlement> I cannot tell; but this I know, that I,  
+<lb/><persName>Jacob Wainwright</persName>, and four others were chosen for the <w>ex<seg type="hyphen">-</seg>  
+<lb/>pedition</w>. We were ordered immediately to leave <settlement>Nasick</settlement>  
+<lb/>for <settlement>Bombay</settlement>. At <settlement>Bombay</settlement> the <persName>Rev. J.S.S. Robertson</persName>, the <w>Secre<supplied><seg type="hyphen">-</seg></supplied>  
+<lb/>tary</w>, got us all the necessary things for our journey from   
+<lb/><settlement>Bombay</settlement> to <geogName>Zanzibar</geogName>. Having got ready, I and my fellow  
+<lb/>companions left <settlement>Bombay</settlement> per ship "Livinia," bound for  
+<lb/><geogName>Zanzibar</geogName>. The captain of the ship was very kind to us through  
+<lb/>out the voyage. We had pleasant wind which made our   
+<lb/>ship to glide rapidly over the mighty foaming ocean. But   
+<lb/>it did not continue so for many days. One day a heavy   
+<lb/>storm made our little ship to reel fearfully, so much   
+<lb/>so that we and other passengers on board had entirely   
+<lb/>despaired of our lives. But God in whose hands the powers   
+<lb/>of the sea are, was with us. The raging of the water soon   
+<lb/>ceased and our hearts began again to look on the blue   
+<lb/>sea with less fear. After sailing twenty-one days we   
+<lb/>landed at <geogName>Zanzibar</geogName>. We anchored about half past 6 p.m.  
+<lb/>Next day very early in the morning the captain of our ship  
+<lb/>took me and my companions to the English Consul, <persName>D<hi rend="sup">r</hi>. Kirk</persName>.  
+<lb/>He was very kind to us and he got us a room where we  
+<lb/>lived in waiting for the remainder <add place="above">of the expedition</add>.  
+<lb/>We were only four days in the island when the remainder of the expedition  
+<lb/>consisting of <persName>young Livingstone</persName>, <persName>Mr. Dawson</persName> and others arrived  
+<lb/>from <country>England</country>. After their arrival everything was got ready.  
 
+
+	<pb facs="liv_020061_0002" n="0002"/>
+<lb/>The <orgName>Livingstone Search Expedition</orgName> then left the <w>is<seg type="hyphen">-</seg> 
+<lb/>land</w> of <geogName>Zanzibar</geogName> for <settlement><choice><orig>Buàgamoyo</orig><reg>Bagamoyo</reg></choice></settlement>. At <settlement><choice><orig>Buàgamoyo</orig><reg>Bagamoyo</reg></choice></settlement> while  
+<lb/>we were ready for leaving the country for the interior, <persName>Mr.  
+<lb/>H.M. Stanley</persName> at once made his appearance at <settlement><w><choice><orig>Buaga<seg type="hyphen">-</seg>
+<lb/>moyo</orig><reg>Baga<seg type="hyphen">-</seg>
+<lb/>moyo</reg></choice></w></settlement> from the interior, bringing the news of <persName>D<hi rend="sup">r</hi>. L.</persName> being 
+<lb/>found. We were all glad to hear that the good <persName>D<hi rend="sup">r</hi>.</persName> was  
+<lb/>alive. We all then returned to <geogName>Zanzibar</geogName> again with <persName>Mr. 
+<lb/>Stanley</persName> leaving some of us behind to take care of some 
+<lb/>of the baggages that were left behind. At <geogName>Zanzibar</geogName> the 
+<lb/><term type="collective">Europeans</term> were all very glad to see <persName>Mr Stanley</persName>, specially the  
+<lb/><persName>young Livingstone</persName>. About ten days were given to the men  
+<lb/>who came from the interior with <persName>Mr. Stanley</persName> for <w>refresh<seg type="hyphen">-</seg> 
+<lb/>ment</w>, after which time they were again asked to go and  
+<lb/>carry some stores for the <persName>D<hi rend="sup">r</hi>. L.</persName> sent by <persName>Mr. Stanley</persName>. <persName>Young  
+<lb/>Mr Livingstone</persName> was willing to join this caravan in order 
+<lb/>to go and see his beloved father. But the <term type="collective">European friends</term> 
+<lb/>at <geogName>Zanzibar</geogName> would not permit him to go. He asked me  
+<lb/>and my companions whether we would prefer going to <country>India</country>  
+<lb/>back or joining the party that was ready for going to carry 
+<lb/>some stores for his father. We all preferred going to see the  
+<lb/><persName>D<hi rend="sup">r</hi>.</persName> in the heart of <bloc>Africa</bloc> which was one object in leaving 
+<lb/><country>India</country>. The whole party consisted of 70 persons in all. We  
+<lb/>then left <geogName>Zanzibar</geogName> for <settlement><choice><orig>Buagamoyo</orig><reg>Bagamoyo</reg></choice></settlement> again. At <settlement><choice><orig>Buàgamoyo</orig><reg>Bagamoyo</reg></choice></settlement>  
+<lb/>we did not stay long for we remained there only two days 
+<lb/>and then commenced our long journey to <settlement><choice><orig>Unyembe</orig><reg>Unyanyembe</reg></choice></settlement> in the interior. 
+<lb/>In about 2 months and a half we reached <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement>. Here we  
+<lb/>found the great missionary and enterprising traveller, living  
+<lb/>with savage <term type="collective">Africans</term> and half barbarous <term type="collectivce">Arabs</term>. The <persName>D<hi rend="sup">r</hi>.</persName> was  
+<lb/>very pleased to see us a little band of <term type="collectove"><term type="faith">Christians</term></term>. Many and if  
+<lb/>not all of the nine boys who joined him at first in his long  
+<lb/>and adventurous travels had entirely deserted him. It was  
+<lb/>therefore natural for him to ask us whether we preferred  
+<lb/>going back to the coast or following him in his adventurous 
+
+	
+	<pb facs="liv_020061_0003" n="0003"/>
+<lb/>work. He was afraid we would prove ourselves the same  
+<lb/>as our brothers. He therefore gave us a day for consideration as 
+<lb/>to whether we would go and be faithful to him in all the trials  
+<lb/>and enormous difficulties and countless privations while journey 
+<lb/>ing about through countries unknown to finish his work assigned  
+<lb/>to him or make our way to the coast again. Some of us were willing  
+<lb/>to return to the coast a thing which would go very much against us  
+<lb/>had we left him. After a little consultation we all made up our  
+<lb/>minds to follow him. Ten days were then given us here at <settlement><choice><orig><w>Uniem<seg type="hyphen">-  
+<lb/>be</seg></w></orig><reg>Unyanyembe</reg></choice></settlement> for taking rest. When the ten days were expired we left the 
+<lb/><region><settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement> country</region> for <region><term type="collective">Cawende</term></region>. In this country there is the <geogName>lake  
+<lb/>Tanganyika</geogName>. We then commenced our journey by coasting the lake  
+<lb/>towards the north east till we reached the <region>country of the <term type="collective"><w>Nama<seg type="hyphen">-</seg> 
+<lb/>roongoo</w></term></region>. Leaving the <region>country of the <term type="collective">Namaroongoo</term></region> we entered  
+<lb/>the <region>country of the <term type="collective">Wapipa</term></region>. But before leaving the frontiers  
+<lb/>of the fierce race of the <term type="collective">Namaroongoo</term> for <region><term type="collective">Pipa</term></region>, the <persName>D<hi rend="sup">r</hi>.</persName> was 
+<lb/>asked to give something to the chiefs of the country as he was quitting  
+<lb/>their land. The <persName>D<hi rend="sup">r</hi>.</persName> instead of heeding to their everlasting demands  
+<lb/>ordered the men to take up their loads and move onwards  
+<lb/>without giving them anything: After marches and countermarches  
+<lb/>of many a long day we entered the <region><term type="collective">Wemba</term> country</region>. Here we  
+<lb/>with great difficulties arising from want of food. The natives  
+<lb/>had deserted their country owing to some petty wars and our  
+<lb/>whole expedition was thrown to the severest test as we lay for  
+<lb/>days without any means of sustenance. We fed upon wild <term type="foodstuff">fruit  
+<lb/>of the jungle</term>. The <persName>D<hi rend="sup">r</hi>.</persName> then despatched ten men full armed to go  
+<lb/>finding if any trace of a road leading into countries or  
+<lb/>villages could be found while the whole of the expedition  
+<lb/>and the <persName>D<hi rend="sup">r</hi>.</persName> remained behind. The ten men travelled 3 days  
+<lb/>after which they found villages. The news of our arrival soon 
+<lb/>reached <persName>Kumbakumba</persName> an enterprising <term type="collective">Arab</term> chief and one 
+<lb/>of the <persName>D<hi rend="sup">r</hi>.</persName>'s friend, who hearing of his coming sent him some  
+
+
+	<pb facs="liv_020061_0004" n="0004"/>
+<lb/><term type="foodstuff">rice</term>, <term type="animal">goats</term>, etc. <persName>Kumbakumba</persName> is an <term type="collective">Arab chief</term> and is a terror  
+<lb/>of that part of the country. After remaining a few days at <region>Wemba</region>  
+<lb/>we left it for the island where the king <persName>Matipa</persName> lives in the midst  
+<lb/>of the large sheet of water called <geogName>Bemba</geogName>. We found the king  
+<lb/>in the middle of <geogName>Bemba Lake</geogName>. We reached him by going in  
+<lb/>small native canoes. The Lake has many islands in it and it  
+<lb/>took us two <add place="above">days</add> to row to go to the island where the king resides. We  
+<lb/>were detained for a long time by the king in this island as he was  
+<lb/>not willing to give us canoes. At last the <persName>D<hi rend="sup">r</hi>.</persName> ordered all his  
+<lb/>men to arm themselves and to follow him to the king's hut to  
+<lb/>demand boats. After telling the king the folly of his keeping us  
+<lb/>longer against our will we demanded to leave the place soon <w>any<supplied><seg type="hyphen">-</seg></supplied>  
+<lb/>how</w> contrary to his will. The king seeing that the <persName>D<hi rend="sup">r</hi>.</persName> was determined  
+<lb/>to leave he immediately procured him many boats which soon  
+<lb/>transported the <persName>D<hi rend="sup">r</hi>.</persName>, his men, and their baggages on the other side  
+<lb/>of the <region><term type="collective">Bisa</term> country</region>. It took us 3 days to cross the <geogName>Bemba  
+<lb/>lake</geogName> to get to other side of <region><term type="collective">Bisa</term> country</region>. When we got to the other  
+<lb/>side of the <region><term type="collective">Bisa</term></region>, the <persName>D<hi rend="sup">r</hi>.</persName> divided his men into two divisions.  
+<lb/>One division went with the <persName>D<hi rend="sup">r</hi>.</persName> coasting one of the rivers called  
+<lb/><geogName>Chambesi</geogName> which falls into the <geogName>Bemba Lake</geogName>. But he had  
+<lb/>soon to leave following <geogName>Chambesi</geogName> and went coasting  
+<lb/>another river the name of which I do not now remember.  
+<lb/>The second division went on by land following the same  
+<lb/>direction from where the <geogName>Chambesi</geogName> flowed. We travelled  
+<lb/>three days without meeting the <persName>D<hi rend="sup">r</hi>.</persName>'s party. We then halted   
+<lb/>three days near a river which the natives of the country would  
+<lb/>not allow us to cross it owing to the war that was going on  
+<lb/>in that part of the country. The <persName>D<hi rend="sup">r</hi>.</persName> while coasting the river  
+<lb/>in canoes took sickness. He then sent some of his men  
+<lb/>to find out where the second division was, in order to get  
+<lb/>the <persName>D<hi rend="sup">r</hi>.</persName>'s <term type="animal">donkey</term> from them for him to ride as he was ill  
+<lb/>with dysentery which sickness added to the inclement clime  
+<lb/>and the need of medical man did greatly weaken his <w>con<seg type="hyphen">-</seg>  
+<lb/>stitution</w>. He then soon came and joined with the second  
+<lb/>division. The next day we all along with the <persName>D<hi rend="sup">r</hi>.</persName> crossed  
+
+
+	<pb facs="liv_020061_0005" n="0005"/>
+<lb/>river where the natives detained the first division.  
+<lb/>The <persName>D<hi rend="sup">r</hi>.</persName> then began to grow worse and worse every day. He was  
+<lb/>no longer able to ride on his <term type="animal">donkey</term>, and yet, strange to say,  
+<lb/>he urged us all forward though we did not know where we  
+<lb/>were hastening to. But each and all of us plaining saw  
+<lb/>that our master was declining every day by the fatigue of the  
+<lb/>journey and by the sickness. When he could no longer ride or  
+<lb/>be able to sit on his <term type="animal">donkey</term> we then carried him on a cot.  
+<lb/>But time soon came when we could no longer also carry him  
+<lb/>about in the open heat of the sun of <region>central <bloc>Africa</bloc></region>. We <w>there<seg type="hyphen">-</seg>  
+<lb/>fore</w> halted at a place called <placeName>Kalonga Njofu</placeName> on the frontiers  
+<lb/>of the <region><term type="collective">Bisa</term> country</region> where we remained five days. Leaving  
+<lb/>this place we crossed a river which divides the <region><term type="collective">Bisa</term> country</region>  
+<lb/>and <settlement>Illala</settlement>. In <settlement>Illala</settlement> we raised a booth for the sick  
+<lb/><persName>D<hi rend="sup">r</hi>.</persName> His sickness increased every day which thing greatly alarmed  
+<lb/>us. We six <settlement><choice><orig>Nassick</orig><reg>Nasick</reg></choice></settlement> felt more fear as we were the only <term type="faith"><choice><orig>xtians</orig><reg>Christians</reg></choice></term>  
+<lb/>while the majority were <term type="collective"><term type="faith">Mohammedans</term></term>. We thought if our  
+<lb/>master die in this part of the world surely none of us  
+<lb/>that are <term type="collective"><term type="term">Christians</term></term> would survive to go and tell the story  
+<lb/>of our master's death. But our God overruled the whole  
+<lb/>affair as it pleased him. <persName>Majuàra</persName> was his waiting  
+<lb/>boy in the booth. On the morning of the second day of our  
+<lb/>arrival at <settlement>Illala</settlement>, <persName>Majuàra</persName> who always slept near our  
+<lb/>sick master, was compelled by necessity to leave the booth  
+<lb/>for some minutes leaving the <persName>D<hi rend="sup">r</hi>.</persName> on the cot in side the  
+<lb/>booth. But on his return again he found the <persName>D<hi rend="sup">r</hi>.</persName> fallen  
+<lb/>on the ground already expired. This took place on the <date when="1873-05-04">4<hi rend="sup">th</hi> May  
+<lb/>1873</date>. We were all as it may easily be seen then described  
+<lb/>very sorry for our master. The whole camp wept for him.  
+<lb/>We decided that our master's death should be kept a secret  
+<lb/>from the natives. But the king of <settlement>Illala</settlement> soon heard  
+<lb/>the <persName>D<hi rend="sup">r</hi>.</persName>'s death on the second day. He was grieved for not  
+<lb/>having been informed by us at once of the <persName>D<hi rend="sup">r</hi>.</persName>'s death.  
+<lb/>To show how much loved the <persName>D<hi rend="sup">r</hi>.</persName> was he summoned all  
+<lb/>the chiefs, men, and women of his country to come out  
+
+
+<pb facs="liv_020061_0006" n="0006"/>
+<lb/>with their drums and other materials of war to morn for  
+<lb/>the <persName>D<hi rend="sup">r</hi>.</persName> after their custom. Accordingly his orders were obeyed.  
+<lb/>There was then the most devilish and fanatical morning  
+<lb/>dance in which men, women and children promiscuously  
+<lb/>mingled. The whole caravan knowing the great loss they  
+<lb/>had sustained fired incessantly their guns in honour of  
+<lb/>their master. The morning was kept up for two days. Three  
+<lb/>days after, the bereaved faithfuls of the great traveller  
+<lb/>held a council as to what should be done to the body of  
+<lb/>their deceased commander. After each giving his own  
+<lb/>private opinion it was unanimously carried out that  
+<lb/>the body of our master should not be left in the <w>in<seg type="hyphen">-</seg>  
+<lb/>terior</w> of <bloc>Africa</bloc> but embalm it and carry it to the  
+<lb/>coast. Accordingly, I and another <term type="collective">Swahili man</term> dissected  
+<lb/>the body and after removing all the abdominal parts  
+<lb/>filled it with <term type="foodstuff">salt</term> and <term type="foodstuff">brandy</term> and then exposed it to  
+<lb/>the sun fifteen days. We then began to think of return  
+<lb/>ing to the coast with our master's remains. There is a large  
+<lb/>tree at <settlement>Illala</settlement> and if travellers are ever to reach that  
+<lb/>part of <bloc>Africa</bloc> they will not fail to see the <w>inscrip<seg type="hyphen">-</seg>  
+<lb/>tions</w> made on it. The name of the famous traveller  
+<lb/>is there nicely cut on the <term type="plant">tree</term> and the date of his  
+<lb/>death. Thus far did I and my companions go with  
+<lb/><persName>D<hi rend="sup">r</hi>. L.</persName> whom death refused us to bring him alive again.  
+<lb/>We then soon left <settlement>Illala</settlement> and travelling westward  
+<lb/>after three days we came to the river <geogName><choice><orig>Luapulla</orig><reg>Luapula</reg></choice></geogName>  
+<lb/>which we crossed.</p>  
+
+<lb/><p>After crossing the <geogName><choice><orig>Luàpulla</orig><reg>Luapula</reg></choice></geogName> we entered the <region>country  
+<lb/>of <term type="collective">Cawende</term></region>. Leaving <region><term type="collectice">Cawende</term></region> we entered the <region>country  
+<lb/>of <term type="collective">Wemba</term></region>. Here we met our <choice><sic>formerly</sic><corr>former</corr></choice> road which we  
+<lb/>followed and led us to the <region>country of the <persName>King Kapesa</persName></region>  
+<lb/>one of the <persName>D<hi rend="sup">r</hi>.</persName>'s best friends. <persName>King Kapesa</persName> when told  
+<lb/>of the <persName>D<hi rend="sup">r</hi>.</persName>'s death, he sighed heavily for him and also  
+<lb/>appeared to be very sorry for him. We then left the  
+<lb/><region><term type="collective">Wemba</term> country</region> and travelling every day about a  
+<lb/>score of miles we came to a country called <region><term type="collective">Pipa</term></region>.</p>  
+
+
+	<pb facs="liv_020061_0007" n="0007"/>
+<lb/><p>There was no occasion for losing time now. Leaving the  
+<lb/><region><term type="collective">Pipa</term> country</region> we followed the same course we took <w>go<seg type="hyphen">-</seg>  
+<lb/>ing</w> time that is coasting the <geogName>lake Tanganyika</geogName>. Visiting the  
+<lb/><region><term type="collective">Pipa</term> country</region> we entered <region><term type="collective">Namaroongoo</term> country</region>. Leaving  
+<lb/><region><term type="collective">Namaroongoo</term> country</region> we hastily passed the <region><term type="collective">Cawende</term> 
+<lb/>and <term type="collectice">Conongo</term> countries</region> and finally arrived at <region><settlement><choice><orig><w>Uriem<seg type="hyphen">-</seg>  
+<lb/>be</w></orig><reg><w>Unyanyem<seg type="hyphen">-</seg>  
+<lb/>be</w></reg></choice></settlement> country</region>. Here we met three <term type="collective">Europeans</term>, to wit, <persName>Mr.  
+<lb/>Cameron</persName>, <persName>D<hi rend="sup">r</hi>. Dillon</persName> and <persName>Mr. Moffatt</persName>. They were <w>proceed<seg type="hyphen">-</seg>  
+<lb/>ing</w> to <settlement>Ujiji</settlement> with a view of reserving some remaining  
+<lb/>papers left there by the <persName>D<hi rend="sup">r</hi>. L.</persName> But as they saw the <w>re<seg type="hyphen">-</seg>  
+<lb/>mains</w> of the <persName>D<hi rend="sup">r</hi>.</persName> with us, two of them <persName>D<hi rend="sup">r</hi>. Dillon</persName> and  
+<lb/><persName>Mr Moffatt</persName> changed their minds so that instead<del>ing</del> of  
+<lb/>proceeding on their journey they preferred returning  
+<lb/>with us to the coast. We were one month at <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement>  
+<lb/>with the three gentlemen. On the day of our leaving  
+<lb/><settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement>, <persName>Mr Cameron</persName> also left it for <settlement>Ujiji</settlement> while <persName>Mr.  
+<lb/>Moffatt</persName> and <persName>D<hi rend="sup">r</hi>. Dillon</persName> joined us. <persName>D<hi rend="sup">r</hi>. Dillon</persName>, however,  
+<lb/>soon took sickness on the way. After journeying three  
+<lb/>days from <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement> <persName>D<hi rend="sup">r</hi>. D.</persName> blew up his own brains  
+<lb/>with a gun and instantly expired. We buried him  
+<lb/>in the same country where he died.</p>  
+
+<lb/><p>Leaving <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement> we came to a country called <region>Ugogo</region>.  
+<lb/>Hitherto the <persName>D<hi rend="sup">r</hi>.</persName>'s remains was carried on the shoulders  
+<lb/>of two persons throughout, but coming to the <region>Ugogo  
+<lb/>country</region> for fear of the natives knowing that we were <w>carry  
+<lb/>ing</w> dead body it became necessary to make it single man's  
+<lb/>load. It is an abomination thing among some of the <term type="collective">African  
+<lb/>tribes</term> to carry a dead body through their country. The <term type="collective">Wagogo</term>  
+<lb/>are a fierce and warlike race and we were afraid  
+<lb/>in passing their country the remains of our master  
+<lb/>would fall into their hands. But we soon passed  
+<lb/>their country and entered the <region><term type="collectice">Usagara</term> country</region>. Rapidly  
+<lb/>passing through the <region><term type="collectice">Usagara</term> country</region> we entered the  
+<lb/><region><term type="collective">Usigua</term></region>. Leaving <region><term type="collective">Usigua</term></region> we rapidly moved on till we  
+<lb/>once more again saw <settlement><choice><orig>Buàgamoyo</orig><reg>Bagamoyo</reg></choice></settlement> "<foreign>heria bahari</foreign>" or  
+<lb/>welcome sea, was the cheering word heard from <w>every<supplied><seg type="hyphen">-</seg></supplied>  
+
+
+	<pb facs="liv_020061_0008" n="0008"/>
+<lb/>body's</w> lips while approaching <settlement><choice><orig>Buagamoyo</orig><reg>Bagamoyo</reg></choice></settlement>.</p>  
+<lb/><p>At <settlement><choice><orig>Buagamoyo</orig><reg>Bagamoyo</reg></choice></settlement> there is a <orgName><term type="colletive">French</term> <term type="faith">Roman Catholic</term> mission</orgName>  
+<lb/>and as soon as we arrived <persName>Mr. Moffatt</persName> took the body to  
+<lb/>the mission house where a coffin was made for it. </p>  
+
+<lb/><p>On the following day <persName>Mr. Moffatt</persName> took the body on board  
+<lb/>a ship which soon weighed anchor and left for <geogName>Zanzibar</geogName>  
+<lb/>leaving many of us behind. But as the end of our journey  
+<lb/>was not ended there was no reason for us to remain  
+<lb/>long at <settlement><choice><orig>Buagamoyo</orig><reg>Bagamoyo</reg></choice></settlement>; hence remaining only there we 
+<lb/>left it also for <geogName>Zanzibar</geogName>. We raised our grateful thanks  
+<lb/>to our heavenly father for his goodness in bringing us safe  
+<lb/>again thus far. We all went to the <term type="collective">English Consul</term>'s house.  
+<lb/>Of the nine boys who followed the <persName>D<hi rend="sup">r</hi></persName> on the first out set  
+<lb/>two only followed his remains to <geogName>Zanzibar</geogName>; to wit, <persName>Ed.  
+<lb/>Gardiner</persName> and <persName>Nathaniel Cumba</persName>. These men throughout  
+<lb/>the journey never associated with us six <term type="collective"><term type="faith">Christian</term> boys</term>  
+<lb/>their brothers as they have turned out <term type="faith">Mohammedans</term>.  
+<lb/><persName>Chuma</persName> and <persName><choice><orig>Suse</orig><reg>Susi</reg></choice></persName>, in spite of all that the <persName>D<hi rend="sup">r</hi>.</persName> did for  
+<lb/>them in getting them <term type="collective">English</term> education at <placeName><persName>D<hi rend="sup">r</hi>. Wilson</persName>'s <seg type="hyphen">-</seg>
+<lb/>School</placeName> at <settlement>Bombay</settlement> have at last turned out <term type="collective"><term type="faith">Mohammedans</term></term>  
+<lb/>also. One of the nine boys, <persName>Simon Price</persName> by name, deserted  
+<lb/>the <persName>D<hi rend="sup">r</hi>.</persName> long before his death and is now trading between  
+<lb/>the coast and the interior. <persName>Abraham Pereira</persName> is at <settlement><choice><orig>Uniembe</orig><reg>Unyanyembe</reg></choice></settlement>  
+<lb/>he like <persName>Simon</persName> deserted their master. <persName>Andrew Powell</persName>, <persName>James  
+<lb/>Brown</persName> and <persName>Albert</persName> we did not see them nor did we  
+<lb/>get any satisfactory account of them. <persName>Richard Isenberg</persName>  
+<lb/>died soon before the <persName>D<hi rend="sup">r</hi>.</persName> left for the interior. <persName>Reuben  
+<lb/>Smith</persName> having fallen ill at <geogName>Zanzibar</geogName> was sent back  
+<lb/>to <settlement>Bombay</settlement>. <persName>John Wainwright</persName>, one of our number was  
+<lb/>lost on the way while returning to the coast along with us.  
+<lb/>Having delivered the body at <geogName>Zanzibar</geogName> we remained there  
+<lb/>a few days. The <term type="collectice">English Consul</term> paid five of us 87&#189; dollars.  
+<lb/>After a few days' stay the <term type="collectice">English Consul</term> sent <persName>Jacob  
+<lb/>Wainwright</persName> to <country>England</country> while four of us he sent  
+<lb/>to <settlement><choice><orig>Mombas</orig><reg>Mombasa</reg></choice></settlement>. At <settlement><choice><orig>Mombas</orig><reg>Mombasa</reg></choice></settlement> I not liking <persName>Mr. Sparshott</persName>'s  
+
+
+	<pb facs="liv_020061_0009" n="0009"/>
+<lb/>ill treatment I engaged myself to an engineer on board  
+<lb/>the man of War called "Daphne". After cruising about  
+<lb/>she went to <settlement>Aden</settlement> where the engineer <w><add place="above">dis</add><seg type="metamark">^</seg></w>charged me as being  
+<lb/>unfit for the duties I engaged myself. I then paid my <w>pas<seg type="hyphen">-</seg>  
+<lb/>sage</w> and went to <settlement>Bombay</settlement> where I arrived on the <date when="1874-07-01">first  
+<lb/>of July</date>. Here ends my journey of finding the great <term type="collective">African  
+<lb/>explorer</term> in the <region>central <bloc>Africa</bloc></region>. and back again to <country>India</country>.</p>  
+<lb/>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="1" unit="chars"/><seg rend="large" n="signature liv_020061_0009"><persName>Carras Farar</persName></seg></p>  
+<lb/><p rend="no-indent"><space extent="5" unit="words"/><settlement>Bombay</settlement> <date when="1874-09-04">September 9. 1874</date>.</p>  
 			</div>
 		</body>
 	</text>

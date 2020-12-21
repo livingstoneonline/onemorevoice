@@ -1,0 +1,140 @@
+        <!-- start of nav -->
+
+        <nav id="skiptocontent" aria-labelledby="nav0">
+            <a href="#main" id="nav0" tabindex="0">skip to main content</a>
+        </nav>
+
+        <!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+        <!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
+        <!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
+            
+        <nav class="topnav" aria-labelledby="nav1">
+            <ul role="menubar" id="nav1" aria-label="Site Sections">
+                <li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+                <li role="none">
+                    <div class="dropdown" role="menuitem" data-menu-component>
+                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
+                        <label class="dropbtn" for="toggle-1" data-opens-menu>
+                            materials
+                            <span class="vh expanded-text">expanded</span>
+                            <span class="vh collapsed-text">collapsed</span>
+                        </label>
+                        <div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
+                            <ul role="none">
+                                <li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+                                <li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+                                <li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <div class="dropdown" role="menuitem" data-menu-component>
+                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
+                        <label class="dropbtn" for="toggle-2" data-opens-menu>
+                            concepts
+                            <span class="vh expanded-text">expanded</span>
+                            <span class="vh collapsed-text">collapsed</span>
+                        </label>
+                        <div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
+                            <ul role="none">
+                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                                <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <div class="dropdown" role="menuitem" data-menu-component>
+                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false, document.getElementById('toggle-4').checked = false">
+                        <label class="dropbtn" for="toggle-3" data-opens-menu>
+                            misc
+                            <span class="vh expanded-text">expanded</span>
+                            <span class="vh collapsed-text">collapsed</span>
+                        </label>
+                        <div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
+                            <ul role="none">
+                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                                <li role="none"><a role="menuitem" href="acknowledgments.html">acknowledgments</a></li>
+                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                                <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <div class="dropdown" role="menuitem" data-menu-component>
+                        <input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-4" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
+                        <label class="dropbtn" for="toggle-4" data-opens-menu>
+                            external
+                            <span class="vh expanded-text">expanded</span>
+                            <span class="vh collapsed-text">collapsed</span>
+                        </label>
+                        <div class="dropdown-content" role="menu" aria-label="External Links" data-menu-origin="left">
+                            <ul role="none">
+                                <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
+                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
+        <nav id="sticky" aria-labelledby="nav2">
+            <div class="menu" id="nav2" title="Menu">
+                <span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="false" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span>
+                <span class="nav-title">One More Voice</span>
+            </div>
+        </nav>
+
+        <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+        <nav aria-labelledby="nav3">
+            <div class="overlay" id="nav3">
+                <div class="menu" title="Close">
+                    <span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
+                    <span class="nav-title">One More Voice</span>
+                </div>
+                <div class="overlay-content" role="menu">
+                    <ul role="none">
+                        <li role="none"><a role="menuitem" href="index.html">home</a></li>
+                        <li class="section" role="menuitem">materials <i class="fa fa-caret-down"></i>
+                            <ul role="menu" aria-label="Materials">
+                                <li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
+                                <li role="none"><a role="menuitem" href="artifacts.html">artifacts</a></li>
+                                <li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
+                            </ul>
+                        </li>
+                        <li class="section" role="menuitem">concepts <i class="fa fa-caret-down"></i>
+                            <ul role="menu" aria-label="Concepts">
+                                <li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
+                                <li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
+                                <li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
+                                <li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+                            </ul>
+                        </li>
+                        <li class="section" role="menuitem">misc <i class="fa fa-caret-down"></i>
+                            <ul role="menu" aria-label="Miscellaneous">
+                                <li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
+                                <li role="none"><a role="menuitem" href="acknowledgments.html">acknowledgments</a></li>
+                                <li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
+                                <li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+                            </ul>
+                        </li>
+                        <li class="section" role="menuitem">external <i class="fa fa-caret-down"></i>
+                            <ul role="menu" aria-label="Miscellaneous">
+                                <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
+                                <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
+                                <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a> (email client)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- end of nav ->

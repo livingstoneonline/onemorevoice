@@ -275,18 +275,25 @@ function AddRelNoopener(){
     }
 }
 
+RandomiseHref();
 
-AddRandomiseHref();
-
-var randomString = Math.floor(Math.random()*1000000); 
-function AddRandomiseHref(){
-    var randomString = Math.floor(Math.random()*1000000);
-    var href = document.getElementsByTagName("a").getAttribute("href"); 
+function RandomiseHref(){
+    var links = document.querySelectorAll("a");
     for(var i = 0; i < links.length; i++){
-        var randomisedLink = href + "?=" + randomString;
-        location.replace (randomisedLink)
+      var href = getAttribute ("href");
+      var randomString = Math.floor(Math.random()*1000000);
+      links[i].setAttribute("href",href = "?=" +randomString);
+        // links[i].setAttribute = href + "?=" + randomString;
     }
 }
+
+//     var randomString = Math.floor(Math.random()*1000000);
+//     var href = document.getElementsByTagName("a").getAttribute("href"); 
+//     for(var i = 0; i < links.length; i++){
+//         var randomisedLink = href + "?=" + randomString;
+//         location.replace (randomisedLink)
+//     }
+// }
 
 
 // AddRandomisedHref();

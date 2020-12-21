@@ -280,7 +280,7 @@ function AddRelNoopener(){
 RandomiseHref();
 
 function RandomiseHref(){
-    var links = document.querySelectorAll("a:not([href*='mailto']):not([onclick])");
+    var links = document.querySelectorAll("a:not([href^='http']):not([href^='#']):not([href^='mailto']):not([onclick])");
     for(var i = 0; i < links.length; i++){
       var randomString = Math.floor(Math.random()*1000000);
       links[i].href = links[i].href + "?=" + randomString;

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020005"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>"Report to the Directors of the London Missionary Society"</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">'Report to the Directors of the London Missionary Society'</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">"Report to the Directors of the London Missionary Society", 1839</title><!-- Title, date -->
+                <author>Read, James Sr.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">Read, James Sr.</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">James Read Sr.</author><!-- First author only: Forename Surname -->
+				<author role="normalized"></author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+               <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_020005</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="?"></ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>England</country><!-- Repository country -->
+                        <settlement>London</settlement><!-- Repository city -->
+                        <repository>University of London. School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">CWM/LMS, Incoming correspondence, 16A/2/C</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>"Report to the Directors of the London Missionary Society"</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="JRJ">Read, James Sr.</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" when="1839-02-08"></date>
+					<!-- See item for composition place; remove if not given -->
+                    <placeName type="compositionPlace">Kat River</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT or #AM-->
+			<change when="2020-11-19" who="#AM">Proofreading</change>
+			<change when="2020-09-09" who="#HB">Transcription and TEI encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n=""><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+			<div rend="black"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020005_0001" n="0001"/>
+<lb/><p rend="no-indent"><add place="marginleft">45</add> Some account of the Labours and state of affairs
+<lb/>At the <settlement><geogName type="river">Kat River</geogName> Settlement</settlement> during the year of <date when="1838">1838</date>.</p>
+<lb/><p rend="no-indent">This year has been memorable in the history of this <w>settle<seg type="hyphen">=</seg>
+<lb break="no"/>ment</w>, and particularly here in, as it has reunited the
+<lb/>pastor and flock together again, who had been <choice><sic>seperated</sic><corr>separated</corr></choice>
+<lb/>for more than three years, through circumstances well
+<lb/>known, - the Lord has <choice><orig>shewn</orig><reg>shown</reg></choice> his mighty power, thwarted
+<lb/>the wishes and intentions <add place="below"><seg type="metamark">^</seg></add> <add place="above">of enemies</add> and <choice><orig>shewn</orig><reg>shown</reg></choice> that his counsel will
+<lb/>stand, and that he will do all his <unclear cert="medium">pleasure</unclear>.</p>
+<lb/><p><space extent="8" unit="words"/>During my, my sons<supplied cert="high">'</supplied>
+<lb/>and late <persName>Stoffel</persName>'s absence the prayers of the church had been
+<lb/><choice><sic>incessent</sic><corr>incessant</corr></choice> like those of the church at <settlement type="city">Jerusalem</settlement> when
+<lb/><persName>Peter</persName> was in prison, the Lord <unclear cert="low">bore</unclear> long with his people but
+<lb/>at last heard and <unclear cert="medium">answered</unclear> - I arrived the <date when="1838-02-07">7<hi rend="sup underline">th</hi> Feby</date>. - it was
+<lb/>a very pleasant voyage from <country>England</country>, but quite the contrary
+<lb/>to <settlement>Algoa Bay</settlement>, but arrived safe. found <term type="collective">several people</term>
+<lb/>from <settlement>Kat River</settlement>, among them two field <unclear cert="medium">cornets</unclear>, who had
+<lb/>come nearly 200 miles to meet me, and in a few days
+<lb/>I had the <choice><sic>inexpresseable</sic><corr>inexpressable</corr></choice> joy of Meeting <persName>M<hi rend="sup underline">rs</hi> Read</persName> and most of
+<lb/>my family at <settlement type="town">Bethelsdorp</settlement>, where they arrived from <settlement>Kat R<hi rend="sup underline">r</hi></settlement>
+<lb/>a few days after my arrival.</p>
+<lb/><p><space extent="7" unit="words"/>We left <settlement type="town">Bethelsdorp</settlement> on the
+<lb/><date when="1838-03-21">21<hi rend="sup double-underline">st</hi> of March</date> and I was truly happy to find myself again
+<lb/>with my family and some of my people in the <region><bloc>African</bloc>
+<lb/>desert</region>, but what a reverse to the scenes of <country>England</country> and <country>Scotland</country>
+<lb/>the first night we had a report of a <term type="animal">Lion</term> being at hand, we
+<lb/>had the howling of the <term type="animal">wolf</term>, and the barking of the <term type="animal">Jackals</term>
+<lb/>and very dark, but I would not have changed for the Gaslights
+<lb/>of <settlement type="city">London</settlement>, the ringing of Bells, the music of <unclear cert="low">televisions</unclear> &amp;c &amp;c &amp;c
+<lb/>what reason had we indeed to be <choice><orig>thankfull</orig><reg>thankful</reg></choice> for all the Lord's
+<lb/>mercies</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>I made but a short stay at <settlement type="town">Grahams Town</settlement>, left <add place="below"><seg type="metamark"/>it</add>
+
+    <pb facs="liv_020005_0002" n="0002"/>
+<lb/>it the same evening of my arrival - and next evening at
+<lb/><unclear cert="medium"><settlement>Konape port</settlement></unclear> upwards of 40 miles from <settlement>Philipton</settlement> we met
+<lb/>a large number of <term type="collective">our people from <settlement>Kat River</settlement></term> with 72 <term type="animal">oxen</term>
+<lb/>for our wagons Six in number, the chief was with me,
+<lb/>we assembled under the trees round large <term type="plant">pines</term> to give thanks
+<lb/>to God for all his goodness.</p>
+<lb/><p><space extent="5" unit="words"/>Early next day we proceeded on the
+<lb/>road, and at short intervals met more relays of <term type="animal">oxen</term>, and
+<lb/>more people till we came to <unclear cert="low">black water</unclear> not far from which
+<lb/>place we met <persName>Macomo</persName>, with his <unclear cert="low">chief</unclear>, who made with us to
+<lb/>opposite his residence, here also I met the rest of my
+<lb/>family son and two daughters. <persName>James</persName> had been sick and
+<lb/>his sisters had remained at home to take care of him, but
+<lb/>he was so far recovered as to be able to come to meet us, - our
+<lb/>meeting was a <choice><orig>joyfull</orig><reg>joyful</reg></choice> one, - when he left <country>England</country> his health
+<lb/>was precarious and mine not far from being established
+<lb/>and we were <choice><orig>doubtfull</orig><reg>doubtful</reg></choice> whether we should meet again in this
+<lb/>world, as in the case of poor <persName>Stoffel</persName>. but the Lord had been <choice><orig>mercifull</orig><reg>merciful</reg></choice>
+<lb/>we rested for the night at <unclear cert="low">Black water</unclear>, the place intended for
+<lb/><persName>M<hi rend="sup double-underline">r</hi> Colderwood</persName>, - <persName>Macoma</persName> sent a fat <term type="animal">cow</term> for our numerous
+<lb/><unclear cert="medium"><choice><sic>communy</sic><corr>community</corr></choice></unclear> which continued to increase till late in the night
+<lb/>we were about 20 miles from <settlement>Philipton</settlement>.</p>
+<lb/><p><space extent="8" unit="words"/>Next day we <w>con<seg type="hyphen">=</seg>
+<lb break="no"/>tinued</w> our journey, and by constant relays of <term type="animal">oxen</term>
+<lb/>got to my sweet home, long wished for home, early
+<lb/>in the afternoon - the sight of my cottage of wattle &amp; dab
+<lb/>rejoiced my heart, and I <unclear cert="medium">retired</unclear> to my chamber and the
+<lb/>people repaired to the chapel to give <choice><sic>thank</sic><corr>thanks</corr></choice> to God for all
+<lb/>his goodness which endureth forever.</p>
+<lb/><p><space extent="8" unit="words"/>The Sunday was a <w>re<seg type="hyphen">=</seg>
+<lb break="no"/>markable</w> day, the people came in from every quarter, so that
+<lb/>we were obliged to have service in the open air, <persName>Macomo</persName>,
+<lb/><unclear cert="medium"><persName>Tazabe</persName></unclear>, and <unclear><persName>Botman</persName></unclear> <term type="collective">Caffre</term> chiefs were present with
+<lb/>a number of their <term type="collective">Caffres</term>, I preached from "the Lord has
+<lb/>done great things for us whereof we are glad."</p>
+<lb/><p><space extent="8" unit="words"/>I found the <w>Settle<seg type="hyphen">=</seg>
+<lb break="no"/>ment</w> gradually recovering from the effects of the war,
+<lb/>new cottages were erected instead of those burnt in the war,
+<lb/>the lands were again in a State of cultivation and
+<lb/>flocks of <term type="animal">cattle</term> were again seen grazing on the hills,
+<lb/>but many had suffered in such a way as never again <add place="below"><seg type="metamark"/>to</add>
+
+    <pb facs="liv_020005_0003" n="0003"/>
+<lb/>to recover. the <settlement>Settlement</settlement> had also suffered greatly, the two
+<lb/>last years for want of rain and thus a failure in part
+<lb/>of their <term type="plant_foodstuff">crops</term>, hunger has been very severe indeed, so
+<lb/>that it was reported that several had died for want of food,
+<lb/>the want of rain had been general throughout the <region>Colony</region>,
+<lb/>but I was particularly pleased that I heard no complaints
+<lb/>either on account of present or past afflictions, they
+<lb/>had patiently endured, the Lord has soothed their sorrows,
+<lb/>by the consolation of the Gospel, and his special presence
+<lb/>nor have I heard a single expression of revenge against
+<lb/>the <term type="collective">Caffres</term>, so different to other parts of the <region><subst><del>colony</del> <add place="inline">community</add></subst></region> in
+<lb/>the <region>Colony</region> their eyes saw now their teachers again
+<lb/>and this seemed to make up for all.</p>
+<lb/><p><space extent="8" unit="words"/>The State of the Church
+<lb/>was most cheering, during our absence the members had
+<lb/>been as the heart of one man, prayer meetings had been
+<lb/>held thrice a week at the different places, the females
+<lb/>had also held a prayer Meeting among themselves every
+<lb/>Wednesday from which they received so much benefit that
+<lb/>they have continued <add place="below"><seg type="metamark">^</seg></add> <add place="above">it</add> - the members had with very few
+<lb/>exceptions remained firm, and were on the increase
+<lb/>our reliable <persName>Brother Barker</persName> had visited them several
+<lb/>times and baptized several, - the arrival of my dear
+<lb/>Son a few Months before me had proved a great
+<lb/>consolation and blessing, he had also baptized several,
+<lb/>so that I may say, the Lord was in the midst of them,
+<lb/>The candidates also <unclear cert="low">or enquirers</unclear> that we had left behind
+<lb/>in the beginning of <date when="1835">1835</date>, had for the most part stood
+<lb/>Firm, not withstanding <choice><sic>extreem</sic><corr>extreme</corr></choice> want on the one
+<lb/>hand and temptations of various kinds on the other,
+<lb/>their number had been increased rather than <choice><sic>deminished</sic><corr>diminished</corr></choice>
+<lb/>they were still continuing to increase and that chiefly
+<lb/>through the instrumentality of our native <choice><sic>Brethern</sic><corr>Brethren</corr></choice>,
+<lb/>many of whom have been and are indefatigable.
+<lb/>The number of <unclear cert="medium">hearers</unclear> generally was such that the
+<lb/>place could not contain them, thus they had commenced
+<lb/>a new wing and we have since completed it 40 feet by 20.
+<lb/>We are ready to commence a new chapel but at the <add place="below"><seg type="metamark"/>Gen<hi rend="sup underline">l</hi>.<seg type="metamark"/></add>
+
+    <pb facs="liv_020005_0004" n="0004"/>
+<lb/><persName>General Napier</persName> promised us lands the surveyor
+<lb/>has not yet been to measure, so that we have not been
+<lb/>able to get legal right to the grounds to build on.
+<lb/>We have baptized during the year 37 adults, and three
+<lb/>were admitted <add place="below"><seg type="metamark">^</seg></add> <add place="above">3</add> members who had been baptized in their
+<lb/>infancy.</p>
+<lb/><p><space extent="2" unit="words"/>We have at present about 40 candidates, or as they are
+<lb/>generally called <unclear cert="medium">enquirers</unclear>, some of these are of long standing
+<lb/>even before the war, but had more or less relaxed.
+<lb/>Some have been recently awakened, and are of different <w>de<seg type="hyphen">=</seg>
+<lb break="no"/>scriptions</w> of persons, old, young middle age, some <term type="collective">caffres</term>
+<lb/><term type="collective">Tingas</term>, <unclear><term type="collective">Goma</term></unclear>, <term type="collective">Hottentots</term>, &amp; <unclear><term type="collective">Apprentices</term></unclear> &amp;c, some have been brought
+<lb/>up under the Gospel, some never heard it <add place="below"><seg type="metamark">^</seg></add> <add place="above">till</add> very lately, some
+<lb/>are very striking instances of the power of the Gospel,
+<lb/>especially among the <term type="collective">Tingas</term> - it will be recollected that
+<lb/>about <date from="1824" to="1825">1824-25</date>, there were great tumults of wars in the
+<lb/><region>Interior</region> beyond the <region>colony</region>, occasioned by the <add place="below"><seg type="metamark">^</seg></add> <add place="above"><unclear cert="low">Loto</unclear></add> chief breaking
+<lb/>league with <persName><unclear>Dingson</unclear></persName> at or near <settlement>Port Natal</settlement>, he fled to the North
+<lb/>went and attacked all the tribes in his way some were <choice><sic>wholy</sic><corr>wholly</corr></choice>
+<lb/>annihilated some remnants of tribes fled to <settlement>Griqua Town</settlement>,
+<lb/>some to the <region>colony</region>, some to <region><term type="collective">caffre</term> land</region>, some <unclear cert="medium">accounts</unclear> of
+<lb/>these wins were given by <persName>M<hi rend="sup double-underline">r</hi> Moffat</persName> <persName>George Thomson</persName> &amp;c.
+<lb/>the <term type="collective">Tinga</term> tribe took refuge among the <term type="collective">caffres</term>, and when
+<lb/><persName>M<hi rend="sup double-underline">r</hi> Miles</persName> and I traveled through the <region><term type="collective">caffre</term> country</region> in <date when="1826">1826</date>
+<lb/>the <add place="below"><seg type="metamark">^</seg></add> <add place="above">late</add> chief <persName>Hinga</persName> had given them 20 <term type="animal">cattle</term> kraals, many
+<lb/>other chiefs had done the same, thus they had <term type="foodstuff">milk</term> for
+<lb/>their starving children and families, - they had also lands
+<lb/>to cultivate. these <term type="collective">Tingas</term> <persName>Sir Benjamin <unclear cert="medium">Durban</unclear></persName> took
+<lb/>during the <term type="collective">caffre</term> war and brought them to the <region>colony</region>, tis said
+<lb/>very <unclear cert="medium">intercedently</unclear> and improperly, many have returned
+<lb/>to the <term type="collective">caffres</term> many have spread into different parts of the
+<lb/><region>colony</region> at some places doing pretty well, at others suffering much
+<lb/>we have about 1500 of them in this <settlement>Settlement</settlement> and among
+<lb/>them a <unclear cert="medium">work</unclear> of God has commenced, - before my arrival
+<lb/>and awakening had commenced and my son had baptized <add place="below"><seg type="metamark"/>some</add>
+
+    <pb facs="liv_020005_0005" n="0005"/>
+<lb/><add place="marginleft">5</add> some before my arrival, and since that several others
+<lb/>have been admitted to the church by that ordinance and
+<lb/>are <unclear cert="low">omniscients</unclear> to the Gospel, others are soon to be baptized.
+<lb/>their suffering in the wars that brought them from
+<lb/>their country seem to have been <choice><orig>dreadfull</orig><reg>dreadful</reg></choice>, famine was
+<lb/>to such an extent that they ate each other - there were
+<lb/>30 women prisoners set apart to be eaten, one of those
+<lb/>now a member of our church was one of the 30, but on <w>ac<seg type="hyphen">=</seg>
+<lb break="no"/>count</w> of having more flesh than the next was kept till the
+<lb/>last, which gave her an opportunity to escape, this deliverance
+<lb/>now she cannot forget, she was to be the <choice><sic>Lords</sic><corr>Lord's</corr></choice> <choice><orig>lawfull</orig><reg>lawful</reg></choice> captive
+<lb/>and he delivered her. She is now living in the enjoyment
+<lb/>of her Saviour admiring all the ways he has led her, her
+<lb/>husband is our <unclear cert="medium">servant</unclear>, and a most pious, zealous, industrious
+<lb/>man, at once civilised. the poor woman has many
+<lb/>wounds in her body from spears in different encounters,
+<lb/><persName><unclear cert="medium"><hi rend="underline">Nellie</hi></unclear></persName>, a <term type="collective">Tinga</term> woman who stands to be baptized soon, said
+<lb/>at one of our <choice><sic>Meeting</sic><corr>Meetings</corr></choice>, and that under a flood of tears, that
+<lb/>that she was slain in her heart, and that her heart was very sore,
+<lb/>that her country was very far distant, wars had killed all
+<lb/>her friends, wars had brought her to this country, that she
+<lb/>first heard the word of God from <persName>M<hi rend="sup">r</hi>. Chalmers</persName> at <settlement><unclear cert="medium">Chumie</unclear>
+<lb/>Station</settlement> then from me at <settlement>Philipton</settlement>, but she now believed that
+<lb/>she was a very great sinner, but that <persName>Jesus Christ</persName> had died
+<lb/>on the cross for sinners and was able and willing to save her.
+<lb/>That her desire was henceforth to live under the feet of
+<lb/><persName>Jesus</persName> and at the feet of his children. she is highly spoken of
+<lb/>where she lives, and we hope she will be an honor to the cause.</p>
+<lb/>
+<lb/><p rend="no-indent">We never had any regular officers for our church, but only
+<lb/>acting Deacons of whom late <persName>Andries Stoffels</persName> was one, we thus
+<lb/><unclear cert="low">relied</unclear> upon <unclear cert="medium"><choice><sic>chusing</sic><corr>choosing</corr></choice></unclear> such, late <persName>D<hi rend="sup double-underline">r</hi> Van Der Kemp</persName> had <w>intro<seg type="hyphen">=</seg>
+<lb break="no"/>duced</w> lay Elders into the church at <settlement type="town">Bethelsdorp</settlement>, there are
+<lb/>therefore those among <add place="below"><seg type="metamark">^</seg></add> <add place="above">us</add> who are partial to that office, and <add place="below"><seg type="metamark"/>from</add>
+
+    <pb facs="liv_020005_0006" n="0006"/>
+<lb/>from the rottened state of our church, and the number
+<lb/>of exhorters employed in different directions we considered
+<lb/>that some Judicious Men of age and talent to assist us in
+<lb/>the management of our extensive affairs are very
+<lb/>desirable. we therefore resolved to have four Elders
+<lb/>and six Deacons, the last to have special charge of the
+<lb/>poor of whom we have many, and other services - we preached
+<lb/>two discoveries, pointing out the characters that were
+<lb/>wanted, and their work; and took as far as we could find
+<lb/>the qualities laid down <add place="below"><seg type="metamark">^</seg></add> <add place="above">in</add> the new Testament as our guide
+<lb/>we recommended <unclear cert="low">earnest pray</unclear> for some weeks to the members
+<lb/>of the Church that the Lord might direct to Men of the proper
+<lb/><choice><sic>qualifycations</sic><corr>qualifications</corr></choice> that might be a blessing to the church.</p>
+<lb/>
+<lb/><p rend="no-indent">a day was fixed for <choice><sic>chusing</sic><corr>choosing</corr></choice>, my son and I had persons in our
+<lb/>eye that we thought came nearest to the character wanted,
+<lb/>but we were quite silent wishing the choice to be free - the
+<lb/>people among themselves were also silent whom they intended
+<lb/>to nominate, at the time no one knew who the other had noted
+<lb/>till all was over, with very few exceptions, the many persons
+<lb/>were voted for, that we had had our eye upon, so that if we
+<lb/>would not say it was a peculiar direction from the Lord
+<lb/>we were nevertheless pleased to see that the people had <w>judge<seg type="hyphen">=</seg>
+<lb break="no"/>ment</w> to <choice><sic>percieve</sic><corr>perceive</corr></choice> the kind of Men that were wanted.
+<lb/>the day they were set apart was a very solemn one indeed.
+<lb/>It was as if the place was almost shook from the feeling
+<lb/>excited, all were <unclear cert="medium">melted into tears</unclear>, and many earnest
+<lb/>prayers were we believe offered up that it might please
+<lb/>the Lord to make these Men a blessing to the church, and
+<lb/>we have already experienced many happy effects from
+<lb/>their services, and we trust they will be more and more visible
+<lb/>Some have very promising <choice><sic>tallents</sic><corr>talents</corr></choice> for exhorting - with them
+<lb/>we have nearly 30 persons we can send out as native exhorters
+<lb/>besides others who are stationary and have service every
+<lb/>evening at their several places.</p>
+<lb/><p><space extent="5" unit="words"/>Independent of the above we
+<lb/>have 28 females whom we might call Deaconnesses. they <add place="below"><seg type="metamark"/>have</add>
+
+    <pb facs="liv_020005_0007" n="0007"/>
+<lb/>have not been chosen by the people, but recommended by us,
+<lb/>two at each Station, or little village, - they have not been
+<lb/><choice><sic>publickly</sic><corr>publicly</corr></choice> set apart, but their names were read before
+<lb/>the congregation, they are all women of Standing and
+<lb/>experience, they visit the different families, have an
+<lb/>eye upon the young females, correct any thing bad
+<lb/>in the head, assist in taking care of the poor <unclear cert="medium">converse</unclear>
+<lb/>with <unclear cert="medium">enquirers</unclear> &amp;c &amp;c. we find them a check to much evil 
+<lb/>and promoters of much good.</p>
+<lb/><p><space extent="6" unit="words"/>To assist in the concerns of
+<lb/>the Society, its money affairs, buildings, contention of its
+<lb/><choice><orig>usefullness</orig><reg>usefulness</reg></choice> &amp;c &amp;c there is a committee calling itself
+<lb/>the <orgName><settlement type="city">London</settlement> auxilary Missionary committee</orgName>, there are
+<lb/>nearly 30 Members, chiefly heads of <unclear cert="medium">parties</unclear> four of them
+<lb/>field cornets or petty Magistrates, they are at once all <w>col<seg type="hyphen">=</seg>
+<lb break="no"/>lectors</w> for the society and ready to give their influence &amp;c for
+<lb/>the cause of the Society as also their time talents &amp;c they have
+<lb/>lately proposed commencing a <term type="collective">Bushman</term> Station at
+<lb/>their own responsibility, and two of them with one of
+<lb/>the <orgName>School committee</orgName> have already been out to seek for
+<lb/><term type="collective">Bushman</term>, and a Spot to settle them upon, <persName>David <unclear cert="low">Jantzis</unclear></persName>
+<lb/>an old member from <settlement>Theopolis</settlement>, very respectable (and one
+<lb/>of the field cornets) is chairman, and <persName>Andries Horther</persName>
+<lb/>a <term type="collective">Hottentot</term> is Secretary.</p>
+<lb/><p><space extent="5" unit="words"/>My son also before my arrival
+<lb/>had got a <orgName>School committee</orgName> formed to assist him in the
+<lb/>management of the different schools they consist of
+<lb/>about 20 persons young, respectable, intelligent and active.
+<lb/>We have likewise lately appointed a <add place="below"><seg type="metamark">^</seg></add> <orgName><add place="above">Sunday</add> school committee</orgName>
+<lb/>in order to extend our Sunday Schools to all the other locations
+<lb/>so that all old and young who are not able to come to <settlement>Philipton</settlement>
+<lb/>can be attended to - we regret to say that we have still a great
+<lb/>want of <term type="collective">Dutch</term> School Books for Adults, we are not able
+<lb/>as yet to get our printing press at work for want of a
+<lb/>building and we cannot build because we cannot get the lands
+<lb/>surveyed and the proper grants. His Excellency <persName>Gen<hi rend="sup underline">l</hi> <unclear cert="medium">Brien</unclear></persName>
+<lb/>promised it should be done immediately but nothing is yet done.</p>
+
+    <pb facs="liv_020005_0008" n="0008"/>
+<lb/><p>You some little time ago, received a report of the schools
+<lb/>from my son, so that I need say little about them excepting
+<lb/><unclear cert="medium">particularizing</unclear> two or three supported by friends in <country>England</country>
+<lb/>but a more particular account will be given of all for
+<lb/>the present year <date when="1839">1839</date>.</p> <!-- The rest of the page is marked up (in pencil) for I believe editorial purposes - not sure how to code/explain beyond what I've done but open to ideas! HB --><!-- Seems fine to me Heather - I just tweaked a few things and inserted the hand/color coding AM -->
+<lb/><p rend="no-indent">1<hi rend="sup double-underline">st</hi> <add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><persName>Fletcher</persName>'s</hi> school, at <settlement>Wilsonton</settlement>, <metamark/>it <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">This school, <unclear cert="low">To observers</unclear></add> is in a most <unclear cert="medium">flourishing</unclear> <!-- The metamark refers to a vertical line through the page as well as a circle around the next two lines to shift for I believe editorial purposes when publishing. HB -->
+<lb/>State <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">It</add> has a fine young <term type="collective">Hottentot</term> at its head, <del type="cancelled" rend="gray" hand="#U">it is</del> in part
+<lb/>supported by our <del type="cancelled" rend="gray" hand="#U">dear</del> friend <persName>M<hi rend="sup double-underline">rs</hi> Fletcher</persName> of <settlement type="city">Bath</settlement>, <del type="cancelled" rend="gray" hand="#U">the</del> <add place="above" rend="gray" hand="#U">The</add>
+<lb/>week before last we held our yearly examination of the Schools
+<lb/><choice><sic>when</sic><corr>where</corr></choice> this school excelled - <del type="cancelled" rend="gray" hand="#U">the</del> <add place="above" rend="gray" hand="#U">The</add> children read English extremely
+<lb/>well, <del type="cancelled" rend="gray" hand="#U">had</del> <add place="above" rend="gray" hand="#U">have</add> committed much scripture to memory, <del type="strikethrough" rend="gray" hand="#U">wrote well</del>
+<lb/><del type="cancelled" rend="gray" hand="#U">had</del> <add place="above" rend="gray" hand="#U"><del type="cancelled" rend="gray" hand="#U">have</del></add> made pleasing progress in <choice><sic>Arithmatick</sic><corr>Arithmetic</corr></choice>, Grammar, <w>Ge<seg type="hyphen">=</seg>
+<lb break="no"/>ography</w>, <add place="above" rend="gray" hand="#U">&amp; Writing</add>, and <del type="strikethrough" rend="gray" hand="#U">had</del> <add place="above" rend="gray" hand="#U">have</add> commenced astronomy.</p>
+<lb/><p rend="no-indent"><del type="cancelled" rend="gray" hand="#U"><hi rend="underline">2<hi rend="sup double-underline">ly</hi></hi></del> <hi rend="underline"><unclear cert="medium">Upshen</unclear></hi> <add place="inline" rend="gray" hand="#U">[</add> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">This</add> is a name <metamark/><add place="above" rend="gray" hand="#U"><hi rend="underline">The</hi> <hi rend="underline">School</hi> <hi rend="underline">at</hi> <hi rend="underline"><unclear cert="low">Upshen</unclear></hi></add> given to a place in <del type="strikethrough" rend="gray" hand="#U">this</del> <add place="above" rend="gray" hand="#U">the</add> settlement.
+<lb/><add place="marginleft" rend="gray" hand="#U">Double</add> several years <del type="strikethrough" rend="gray" hand="#U">back</del> <add place="above" rend="gray" hand="#U">ago</add> <del type="strikethrough" rend="gray" hand="#U">from</del> <add place="above" rend="gray" hand="#U"><metamark/>which was</add> <add place="below" rend="gray" hand="#U">in token of</add> respect <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">to</add> a Lady of that name
+<lb/>intimately acquainted and connected with the family of
+<lb/>our highly respected friend <persName>M<hi rend="sup double-underline">r</hi> <unclear cert="low">Towel Buxton</unclear></persName>, she has
+<lb/>given £10, part of which has been <del type="strikethrough" rend="gray" hand="#U">given</del> <add place="above" rend="gray" hand="#U">applied</add> to the School at this
+<lb/>place. the School is in a very promising State, <metamark/>conducted
+<lb/>by a grandson of the late famous <persName>Cap<hi rend="sup double-underline">t</hi> <unclear cert="medium">Baelah</unclear></persName> of <settlement>Theopolis</settlement>
+<lb/>and afterwards of this place, <metamark/>we do not know whether
+<lb/><persName>M<hi rend="sup double-underline">rs</hi> <unclear cert="low">Upshen</unclear></persName> intends to continue the subscription or we
+<lb/>would <choice><sic>attatch</sic><corr>attach</corr></choice> her name to the School as well as to the place.</p>
+<lb/><p rend="no-indent"><del type="strikethrough" rend="gray" hand="#U">3<hi rend="sup double-underline">ly</hi></del> <add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><unclear cert="medium">Hillyard</unclear> School</hi> <metamark/>this school is <add place="below" rend="gray" hand="#U">established</add> at <settlement><unclear cert="low">Rudsdale</unclear></settlement> one of the
+<lb/>most <choice><orig>delightfull</orig><reg>delightful</reg></choice> spots in <country>South Africa</country>, <del type="strikethrough" rend="gray" hand="#U">it is</del> about five
+<lb/>miles from <add place="below" rend="gray" hand="#U"><metamark/><settlement>Philipton</settlement></add> this place - it is a long vale richly cultivated
+<lb/><del type="cancelled" rend="gray" hand="#U">on</del> <add place="above" rend="gray" hand="#U">On</add> the one side are <add place="above" rend="gray" hand="#U">is</add> the <add place="above" rend="gray" hand="#U">high</add> <unclear cert="low">winterbergen</unclear> <del type="cancelled" rend="gray" hand="#U">very high, but</del> covered
+<lb/>with <unclear cert="low">verdence</unclear> to the very <w>top<del type="strikethrough" rend="gray" hand="#U">s</del></w> <del type="cancelled" rend="gray" hand="#U">the</del> <add place="above" rend="gray" hand="#U">The</add> fine mounds between
+<lb/>the ravines <del type="strikethrough" rend="gray" hand="#U">are very</del> <add place="above" rend="gray" hand="#U">present a</add> <choice><sic>splended</sic><corr>splendid</corr></choice> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">appearance &amp;</add> the ravines are filled
+<lb/>with the finest timber, <del type="strikethrough" rend="gray" hand="#U">on</del> <add place="above" rend="gray" hand="#U">On</add> the other side of the valley
+<lb/><del type="cancelled" rend="gray" hand="#U">are lower</del> <add place="above" rend="gray" hand="#U">the</add> hills <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">are not so high</add> but very <choice><orig>beautifull</orig><reg>beautiful</reg></choice>, <del type="cancelled" rend="gray" hand="#U">till</del> <add place="above" rend="gray" hand="#U">Until</add> this school was
+<lb/>established <del type="cancelled" rend="gray" hand="#U">which was</del> only a few Months ago, the children
+<lb/>had to come daily to <settlement>Philipton</settlement> which they did cheerfully
+<lb/><del type="strikethrough" rend="gray" hand="#U">This school</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">It</add> is <del type="strikethrough" rend="gray" hand="#U">to be</del> supported in part <del type="strikethrough" rend="gray" hand="#U">(viz £10 per annum)</del>
+<lb/>by <persName>Miss Hillyard</persName> of <settlement type="town">Bedford</settlement> <del type="strikethrough" rend="gray" hand="#U">with</del> <add place="above" rend="gray" hand="#U">and</add> her young <del type="strikethrough" rend="gray" hand="#U">Ladies</del> <add place="above" rend="gray" hand="#U">friends</add> - I have
+<lb/>to write to <persName>Miss Hillyard</persName> <del type="cancelled" rend="gray" hand="#U">myself</del> this or next Post, and shall <add place="below">give</add>
+
+    <pb facs="liv_020005_0009" n="0009"/>
+<lb/><metamark/>give her <del type="cancelled" rend="gray" hand="#U">mine</del> particulars,</p> 
+<lb/><p rend="no-indent"><space extent="4" unit="words"/>Our Native teachers, or native
+<lb/>preachers form a <choice><sic>prominant</sic><corr>prominent</corr></choice> part of our present prosperity
+<lb/>and future expectations. <add place="inline" rend="gray" hand="#U">The first to whom I would advert is</add>
+<lb/><del type="cancelled" rend="gray" hand="#U">1</del> <add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><persName>Dirk Hortha</persName></hi> <del type="strikethrough" rend="gray" hand="#U">is a Man who</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">He</add> joined us <del type="strikethrough" rend="gray" hand="#U">when</del> <add place="above" rend="gray" hand="#U">while yet</add> a Boy
+<lb/>soon after <del type="strikethrough" rend="gray" hand="#U">late</del> <persName>D<hi rend="sup">r.</hi> Van Der Kemp</persName> and I settled at <settlement type="town">Bethelsdorp</settlement>
+<lb/>about <date when="1804"><add place="above" rend="gray" hand="#U">year</add>1804</date> his Mother was one of the first <add place="above" rend="gray" hand="#U">persons</add> the D<hi rend="sup underline">r</hi> baptized
+<lb/>his Father <del type="strikethrough" rend="gray" hand="#U">has been</del> <add place="above" rend="gray" hand="#U">was subsequently</add> baptized <del type="strikethrough" rend="gray" hand="#U">since</del>, <del type="strikethrough" rend="gray" hand="#U">but</del> <add place="above" rend="gray" hand="#U">and</add> both <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">are</add> <unclear cert="medium">eminent</unclear> <term type="collective">Christians</term>
+<lb/><persName>Dirk</persName> was a play fellow and intimate companion
+<lb/>of <del type="cancelled" rend="gray" hand="#U">our</del> <add place="above" rend="gray" hand="#U">the</add> chief <persName><unclear>Tazatzee</unclear></persName> in their young days, and were
+<lb/>awakened at the same time, <add place="above" rend="gray" hand="#U">of their state before God</add>, and began their <term type="collective">Christian</term>
+<lb/>career together, and there has been a great uniformity of
+<lb/>character between them ever since. <persName>Dirk</persName> accompanied
+<lb/>our dear friend <persName>M<hi rend="sup double-underline">r</hi> Campbell</persName> as leader in his first travels
+<lb/>in <bloc>Africa</bloc>, he accompanied me also in <date when="1816">1816</date> to commence
+<lb/><add place="marginleft">the</add> Mission at <settlement>Latakoo</settlement> and was to me as a right hand,
+<lb/>he often had a turn to preach<add place="inline" rend="gray" hand="#U">ing</add> and was very acceptable
+<lb/>I left him with <persName>M<hi rend="sup double-underline">r</hi> Moffat</persName> to whom he was <choice><orig>usefull</orig><reg>useful</reg></choice>
+<lb/>and by whom he was much respected. - <add place="inline" rend="gray" hand="#U">[</add> <del type="strikethrough" rend="gray" hand="#U">he</del> <add place="above" rend="gray" hand="#U"><persName>Dirk</persName></add> afterwards went
+<lb/>to <settlement>Philippolis</settlement> where he remained some time and soon after
+<lb/><del type="cancelled" rend="gray" hand="#U">this</del> <add place="above" rend="gray" hand="#U">the <geogName type="river">Kat River</geogName></add> settlement was formed he joined us, his amicable disposition
+<lb/><del type="strikethrough" rend="gray" hand="#U">his</del> good judgement and experience gained him great
+<lb/>respect <del type="strikethrough" rend="gray" hand="#U">in the outward</del> <add place="above" rend="gray" hand="#U">among <gap extent="2" unit="words" agent="illegible"/></add> affairs, <del type="cancelled" rend="gray" hand="#U">as also</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">and the members of</add> <del type="strikethrough" rend="gray" hand="#U">in</del> the church, thus
+<lb/>when I left the <region>colony</region> for <country>England</country> I <del type="strikethrough" rend="gray" hand="#U">left</del> <add place="above" rend="gray" hand="#U">committed</add> the concerns of
+<lb/>the church as far as I could <subst><del type="strikethrough" rend="gray" hand="#U">in</del> <add place="above" rend="gray" hand="#U">to</add></subst> his hands, he moved from
+<lb/>his <unclear cert="high">location</unclear> <del type="strikethrough" rend="gray" hand="#U">and took up his residence at</del> <add place="above" rend="gray" hand="#U">to</add> this place till
+<lb/>we returned, and the happy State of things during our
+<lb/>absence is in part to be attributed to his prudence and
+<lb/><del type="strikethrough" rend="gray" hand="#U">Labours</del> <add place="above" rend="gray" hand="#U">diligence</add>. - <add place="inline" rend="gray" hand="#U">[</add> When a Native teacher was required for
+<lb/>the new Settlements on the <geogName type="river"><unclear cert="low">Tich</unclear> River</geogName>, Dirk <del type="strikethrough" rend="gray" hand="#U">was</del> <add place="above" rend="gray" hand="#U">being</add> <w>recommend<seg type="hyphen">=</seg>
+<lb/>ed</w> and remained there till his services seemed more
+<lb/>required with on <placeName><unclear cert="medium">Hermanus</unclear></placeName> near <placeName><unclear cert="medium">blick water</unclear></placeName> who is an
+<lb/>old <term type="collective">caffre</term> Interpreter and who had a number of <term type="collective">caffres</term> <add place="below"><metamark/>it</add>
+
+    <pb facs="liv_020005_0010" n="0010"/>
+<lb/><del type="strikethrough" rend="gray" hand="#U"><choice><sic>attatched</sic><corr>attached</corr></choice> to him all speaking nothing but <term type="collective">caffres</term>, <persName>Dirk</persName>
+<lb/>understands that</del> <add place="above" rend="gray" hand="#U">whose</add> language <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">he understands. He</add> <del type="strikethrough" rend="gray" hand="#U"><persName>Dirk</persName></del> has <del type="cancelled" rend="gray" hand="#U">thus</del> been <unclear cert="low">co-learning</unclear>
+<lb/><add place="marginleft">there</add> for some months, <del type="strikethrough" rend="gray" hand="#U">as also keeping</del> <add place="above" rend="gray" hand="#U">&amp; has a</add>school <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">under his care</add>. <del type="strikethrough" rend="gray" hand="#U">he</del> <add place="above" rend="gray" hand="#U">He</add> was <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">unanimously</add> chosen
+<lb/><del type="cancelled" rend="gray" hand="#U">by all</del> as one of the Elders <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">lately appointed</add> - <persName>Dirk</persName> is to be supported <add place="inline" rend="gray" hand="#U">(</add>at
+<lb/>least in part<add place="inline" rend="gray" hand="#U">)</add> by <hi rend="underline"><persName>Miss Hewit</persName> of <settlement type="city">Manchester</settlement>.</hi> <add place="inline" rend="gray" hand="#U">- Roman</add></p>
+<lb/><p rend="no-indent"><add place="marginleft"><del type="cancelled" rend="gray" hand="#U"><hi rend="underline">2<hi rend="sup">ly</hi></hi></del></add> <add place="inline" rend="gray" hand="#U">[</add> <persName><hi rend="underline"><unclear cert="medium">Boosman Stiennman</unclear></hi></persName> <add place="inline" rend="gray" hand="#U">[</add> <w><subst><del>i</del><add place="over-text" rend="gray" hand="#U">I</add></subst>s</w> an old <choice><sic>Deciple</sic><corr>Disciple</corr></choice>. <del type="cancelled" rend="gray" hand="#U">he</del> <add place="above" rend="gray" hand="#U">He</add> was
+<lb/>awakened under the <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">the ministry of the</add> late <persName>D<hi rend="sup underline">r</hi> Van Der Kemp</persName> and became
+<lb/>a most decided <term type="collective">Christian</term> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">Soon after</add> he was baptized by our
+<lb/><persName>Brother Barker</persName> <del type="cancelled" rend="gray" hand="#U">soon after</del> he went to <settlement>Theopolis</settlement> he has
+<lb/>always been a most lively zealous <term type="collective">Christian</term>, <del type="strikethrough" rend="gray" hand="#U">of</del> <add place="above" rend="gray" hand="#U">possesses</add> much
+<lb/>solid experience and <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">is</add> consistently engaged in stirring up
+<lb/>the members of the church, and warning the unconverted
+<lb/>his labours greatly assisted us <metamark/>before the war<!-- the words "before the war" are encircled in pencil and a long arrow seems to indicate they should be moved to the start of this line i.e. before "his labours" AM --> and he was
+<lb/>indefatigable during our absence, traveling about from
+<lb/>Location to location without any reward or remuneration
+<lb/>he speaks the <term type="collective">caffre</term> Language pretty well, and has <unclear cert="medium">accordingly</unclear>
+<lb/>visited <persName>Macomo</persName>, and his people, and conversed <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">with</add> and addressed
+<lb/>the <term type="collective">Tingas</term> in the settlement, <add place="inline" rend="gray" hand="#U">[</add>a few Months ago the
+<lb/><term type="collective">caffre</term> chief <unclear cert="medium"><persName>W<hi rend="sup double-underline">m</hi> Golu</persName></unclear>, residing with his people on the
+<lb/>banks of the <geogName type="river"><unclear cert="low">blink water</unclear> River</geogName>, came, earnestly requesting
+<lb/><choice><orig>some one</orig><reg>someone</reg></choice> to be sent to them to instruct them. we sent
+<lb/><persName>Boosman</persName> <del type="strikethrough" rend="gray" hand="#U">where</del> <add place="above" rend="gray" hand="#U">&amp; there</add> he has been ever since, <del type="strikethrough" rend="gray" hand="#U">and</del> not without
+<lb/><del type="cancelled" rend="gray" hand="#U">some</del> hope of success, <del type="strikethrough" rend="gray" hand="#U">he was also chosen one of the</del> <add place="above" rend="gray" hand="#U">He is an</add> <w>Elder<del type="strikethrough" rend="gray" hand="#U">s</del></w>,
+<lb/><del type="strikethrough" rend="gray" hand="#U">he</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U"><persName>B Hausman</persName></add> is to be supported by the friends at <settlement><hi rend="underline"><unclear cert="low">Halshanchoon</unclear></hi></settlement>.</p>
+<lb/><p rend="no-indent"><del type="cancelled" rend="gray" hand="#U"><hi rend="underline">3<hi rend="sup underline">ly</hi></hi></del> <add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><persName>Andries Jager</persName></hi> <add place="inline" rend="gray" hand="#U">[</add> <del type="cancelled" rend="gray" hand="#U">he</del> was called by grace some years ago<!-- last 3 words encircled in pencil with long arrow pointing to insertion point on next line before "at Theopolis" AM -->
+<lb/>to the knowledge of <persName>Christ</persName> at <settlement>Theopolis</settlement>, <del type="cancelled" rend="gray" hand="#U">he gave</del> <add place="above" rend="gray" hand="#U">and having given</add> signs of
+<lb/>talent for communicating knowledge, <del type="cancelled" rend="gray" hand="#U">and keeping
+<lb/>school</del>. <persName>D<hi rend="sup underline">r</hi> Philip</persName> <del type="cancelled" rend="gray" hand="#U">therefore</del> placed him at an <term type="collective">English</term>
+<lb/>school at <settlement>Salem</settlement> <del type="strikethrough" rend="gray" hand="#U">for our <unclear cert="medium">improvement</unclear>, he was some time</del><!-- although deleted the words "some time" are encircled in pencil with long arrow pointing to insertion point on next line before "and has", and are also underlined by a dotted line --> <add place="above" rend="gray" hand="#U">to receive a course of instruction</add>
+<lb/>at <unclear cert="medium"><placeName>Pacalldorp</placeName></unclear> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">he acted</add> as school Master <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">for</add> <metamark/>and has always been
+<lb/>of an exceptionable<!-- may mean "exceptional" - "exceptionable" is a word but means "causing disapproval or offence" AM --> character; <del type="strikethrough" rend="gray" hand="#U">he came</del> <add place="above" rend="gray" hand="#U">He came</add> to <geogName type="river">Kat River</geogName>
+<lb/>just at the time <persName>Dirk Horther</persName> <del type="strikethrough" rend="gray" hand="#U">had to leave</del> <add place="above" rend="gray" hand="#U">was <w><supplied>leav</supplied>ing</w></add> the <geogName type="river"><unclear cert="low">Tich</unclear> <!-- Not sure how to code the "was leaving" deletion/addition from above? HB --><!-- yes I see what you mean - it only makes sense if part of "leave" is included but he has not written it, so I've changed this slightly using <supplied> AM -->
+<lb/>River</geogName> station, in <del type="cancelled" rend="gray" hand="#U">Hermanus!</del> <add place="above" rend="gray" hand="#U"><unclear cert="low">Blink water</unclear></add> and we engaged <del type="strikethrough" rend="gray" hand="#U"><persName>Jager</persName></del> <add place="above" rend="gray" hand="#U">him</add>
+<lb/><del type="strikethrough" rend="gray" hand="#U">he has</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">to</add> <w>labour<del type="strikethrough" rend="gray" hand="#U">ed</del></w> there, <del type="strikethrough" rend="gray" hand="#U">now for</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">He has been at the <geogName type="river">Kat River</geogName></add> some months, several
+<lb/>persons have been awakened under his preaching
+<lb/><del type="strikethrough" rend="gray" hand="#U">who</del> <add place="above" rend="gray" hand="#U">&amp; these</add> are soon to be baptized, <del type="cancelled" rend="gray" hand="#U">and</del> he has a good school
+<lb/><del type="cancelled" rend="gray" hand="#U">he</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U"><persName>Andries Jager</persName></add> is <del type="cancelled" rend="gray" hand="#U">to be</del> <add place="below" rend="gray" hand="#U">appointed as</add> one of the persons to be supported by the
+
+    <pb facs="liv_020005_0011" n="0011"/>
+<lb/>friends of <hi rend="underline"><orgName>Orchard S<hi rend="sup double-underline">t</hi> Chapel</orgName> <settlement type="town">Stockport</settlement>.</hi> <add place="inline" rend="gray" hand="#U">Not italic</add></p>
+<lb/><p rend="no-indent"><del type="cancelled" rend="gray" hand="#U">4<hi rend="sup double-underline">ly</hi></del> <add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><persName>Tingella</persName></hi>, <add place="inline" rend="gray" hand="#U">[</add> is a <term type="collective">Tinga</term>, <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">who was</add> <subst><del type="overwrite">connected</del><add place="inline">converted</add></subst> under <del type="strikethrough" rend="gray" hand="#U"><persName>M<hi rend="sup underline">r</hi> Kaysen</persName>'s</del>
+<lb/><add place="marginleft" rend="gray" hand="#U">the</add> ministry <add place="below" rend="gray" hand="#U"><metamark/> of <persName>M<hi rend="sup underline">r</hi> Kaysen</persName></add> in <unclear cert="low"><placeName>caffresea</placeName></unclear>, <persName>M<hi rend="sup underline">r</hi> Kaysen</persName> saw that he was
+<lb/>a Man full of Zeal, and likely to be <choice><orig>usefull</orig><reg>useful</reg></choice> among his
+<lb/>own Nation, but not among the <term type="collective">caffres</term>, and therefore
+<lb/>recommended his removal to this settlement, where he
+<lb/>has now been for nearly two years, an indefatigable
+<lb/>exhorter in Season, and out of Season, traveling on
+<lb/>foot from <unclear cert="medium">kraal</unclear> to <unclear cert="medium">kraal</unclear> every week, and generally
+<lb/>on Sabbath days <del type="cancelled" rend="gray" hand="#U">or</del> addressing <del type="strikethrough" rend="gray" hand="#U">them</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U"><term type="collective">Tingoes</term></add> at this place,
+<lb/><del type="stikethrough" rend="gray" hand="#U">and</del> <add place="above" rend="gray" hand="#U">All</add> this he <del type="strikethrough" rend="gray" hand="#U">did</del> <add place="above" rend="gray" hand="#U">has done</add> without any remuneration excepting
+<lb/>a few <unclear cert="low">Rindallans</unclear>, <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">which</add> I gave him <del type="strikethrough" rend="gray" hand="#U">and</del> <add place="above" rend="gray" hand="#U">together with</add> some old cloths
+<lb/>I had naught with me from <del type="strikethrough" rend="gray" hand="#U">the</del> friends in <country>England</country>.
+<lb/>He has been very <choice><orig>usefull</orig><reg>useful</reg></choice>. Some have been baptized
+<lb/>and some are candidates for that ordinance who have
+<lb/>received much spiritual advantage <del type="strikethrough" rend="gray" hand="#U">from</del> <add place="above" rend="gray" hand="#U">through</add> his <add place="below"><seg type="metamark">^</seg></add> <add place="above">Labours</add>, his
+<lb/>own wife who was first opposed to him, is now in
+<lb/>a most <choice><orig>delightfull</orig><reg>delightful</reg></choice> state of mind and is to be baptized
+<lb/>next Month. <del type="strikethrough" rend="gray" hand="#U">he</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U"><persName>Tingella</persName></add> is to be supported by the friends at <settlement type="town">Mansfield</settlement></p>
+<lb/><p rend="no-indent"><del type="cancelled" rend="gray" hand="#U"><hi rend="underline">5<hi rend="sup double-underline">ly</hi></hi></del> <add place="inline" rend="gray" hand="#U">[</add> <unclear cert="low"><hi rend="underline"><persName>Jantze Naeku</persName></hi></unclear> <add place="inline" rend="gray" hand="#U">[</add>, <subst><del rend="gray" hand="#U">is</del><add place="over-text" rend="gray" hand="#U">Is</add></subst> a member of a numerous family
+<lb/>of the name of <unclear cert="low">Naeku</unclear>, most of <del type="strikethrough" rend="gray" hand="#U">them</del> <add place="above" rend="gray" hand="#U">whom</add> now <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">reside</add> at <placeName><unclear cert="medium">Blink water</unclear></placeName>
+<lb/>there are three Brothers and four Sisters <add place="above" rend="gray" hand="#U">who</add> <del type="strikethrough" rend="gray" hand="#U">all</del> we trust
+<lb/><add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">are all</add> pious <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">persons</add> some of them <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">we believe to be</add> <choice><sic>eminantly</sic><corr>eminently</corr></choice> <del type="cancelled" rend="gray" hand="#U">so</del> <add place="above" rend="gray" hand="#U">pious</add>, one <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">of the</add> <w>Brother<add place="inline" rend="gray" hand="#U">s</add></w>
+<lb/>has <del type="strikethrough" rend="gray" hand="#U">been</del> for years <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">acted as</add> <term type="collective">caffre</term> Interpreter at the <unclear cert="medium">Chumie
+<lb/>Station</unclear> <persName>Jantze</persName> was the first convert under <add place="above" rend="gray" hand="#U">the preaching of the</add> late
+<lb/><persName>M<hi rend="sup underline">r</hi> <unclear cert="low">Wellecious</unclear></persName> <del type="cancelled" rend="gray" hand="#U">of</del> <add place="above" rend="gray" hand="#U">at</add> <settlement><geogName type="river">Kat River</geogName></settlement> in <date when="1817">1817</date>, <del type="strikethrough" rend="gray" hand="#U">which</del> <add place="above" rend="gray" hand="#U">The</add> striking
+<lb/><w>circumstance<add place="inline" rend="gray" hand="#U">s</add></w> <del type="strikethrough" rend="gray" hand="#U">was</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">of his conversion will be remembered as having been</add> told at many places <metamark/><unclear>by <persName>Tagatze</persName></unclear><!-- metamark refers to the words "by Tagatze" being encircled in pencil with a long arrow indicating they should be inserted after "Scotland" on the next line AM -->
+<lb/>in <country>England</country> and <country>Scotland</country> <persName>Jantze</persName> was for many
+<lb/>years interpreter to our Wesleyan Brethren at
+<lb/><settlement>Wesleyville</settlement>. <w><subst><del rend="gray" hand="#U">s</del><add place="over-text" rend="gray" hand="#U">S</add></subst>ince</w> the war he has joined this settlement
+<lb/>I engaged him <del type="strikethrough" rend="gray" hand="#U">with</del> <add place="above" rend="gray" hand="#U">and</add> his Nephew <unclear cert="low"><persName>Jan Barns</persName></unclear> <del type="strikethrough" rend="gray" hand="#U">as</del> <add place="above" rend="gray" hand="#U">to labour</add>
+ <lb/>Native teachers <del type="strikethrough" rend="gray" hand="#U">for</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">among the people of</add> <persName><w>Macoma<del rend="gray" hand="#U">s</del></w></persName> and <persName><w>Botman<del rend="gray" hand="#U">s</del></w></persName> <del type="strikethrough">people</del> <add place="below"><metamark/>he</add>
+
+    <pb facs="liv_020005_0012" n="0012"/>
+<lb/>he with his Nephew made several interesting <del type="strikethrough" rend="gray" hand="#U">trips</del> <add place="above" rend="gray" hand="#U">excursions</add>
+<lb/>among <del type="strikethrough" rend="gray" hand="#U"><persName>Macoma</persName>'s and <choice><sic><persName>Botman</persName>s</sic><corr><persName>Botman</persName>'s</corr></choice></del> <add place="above" rend="gray" hand="#U">these</add> people, and reported
+<lb/>the earnestness with which many <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">of the</add> females particularly
+<lb/>listened to their mesage. <persName>Botman</persName> had requested
+<lb/>to have <persName>Jantze</persName> stationed with him till an <term type="collective">English</term> <w>Mission<seg type="hyphen">-</seg>
+<lb break="no"/>ary</w> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">should</add> <w>arrive<del type="cancelled" rend="gray" hand="#U">d</del></w> <del type="strikethrough" rend="gray" hand="#U">which</del> <add place="above" rend="gray" hand="#U">&amp; this would</add> <del type="strikethrough" rend="gray" hand="#U">might</del> have taken place if <persName>M<hi rend="sup underline">r</hi> Birt</persName>
+<lb/>had not <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">so</add> soon arrived. <metamark/><!-- long curly line pointing to the caret between "not" and "soon" AM --> - at this moment however he is <w>sus<seg type="hyphen">=</seg> <!-- This whole section seems to be ex-ed out. HB -->
+<lb break="no"/>pended</w> not for any immorality of conduct but <unclear cert="low"><w>imp<seg type="hyphen">=</seg>
+<lb break="no"/>prudently</w></unclear> getting involved in debt, he is obliged to devote
+<lb/>his time to get his affairs settled, he has been imposed upon
+<lb/>by an <choice><orig>artfull</orig><reg>artful</reg></choice> Man, but we hope he will be able to get
+<lb/>through his difficulties, and get to his work again</p>
+<lb/><p rend="no-indent"><add place="marginleft">6</add> <add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><persName>Jan <add place="inline" rend="gray" hand="#U">(</add>or John<add place="inline" rend="gray" hand="#U">)</add> Burns</persName></hi>, <add place="inline" rend="gray" hand="#U">[</add> <add place="above" rend="gray" hand="#U">to whom reference has been just made</add> <del type="cancelled">just mentioned above</del>, soon ended <!-- This whole section again is crossed out, with strikethroughs and double exes. HB -->
+<lb/>his labours, the particulars of his <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">life labours &amp;</add> death &amp;c are given
+<lb/>in a <choice><sic>seperate</sic><corr>separate</corr></choice> <add place="above" rend="gray" hand="#U">paper</add> <del type="strikethrough" rend="gray" hand="#U">sheet</del> which accompanies this <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">letter</add> <gap extent="2" unit="words" agent="illegible"/>
+<lb/><del type="strikethrough" rend="gray" hand="#U">hope</del> <del type="strikethrough" rend="gray" hand="#U">we</del> <add place="above" rend="gray" hand="#U">We</add> may <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">probably</add> employ <unclear cert="medium"><persName>Hans Naeku</persName></unclear> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">his</add> Father in law
+<lb/><del type="cancelled" rend="gray" hand="#U">to <unclear cert="low">late</unclear> <persName>Jan Burns</persName>,</del> and Brother to <persName>Jantze</persName>, <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">to succeed him</add> <del type="cancelled" rend="gray" hand="#U">he has acted</del>
+<lb/>as Interpreter gratis for many years, the two above
+<lb/>Brethren were engaged on account of the <orgName>Society</orgName> at 12 Shillings
+<lb/>per month</p>
+<lb/><p><add place="inline" rend="gray" hand="#U">[</add> <hi rend="underline"><persName><unclear cert="low">Ounker Niegerman</unclear></persName></hi>, <add place="inline" rend="gray" hand="#U">[</add> this Man we have <del type="strikethrough" rend="gray" hand="#U">also</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">engaged</add> <del type="strikethrough" rend="gray" hand="#U">for the same</del>
+<lb/><del type="strikethrough" rend="gray" hand="#U">above price as</del> <add place="above" rend="gray" hand="#U">to aid us in the capacity of</add> Interpreter, <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">as</add> we need <del type="strikethrough">his</del> <add place="above" rend="gray" hand="#U">this kind of</add> assistance daily
+<lb/>and sometimes hourly, in our intercourse with
+<lb/><term type="collective">Tingos</term>, <term type="collective">Gonus</term>, <term type="collective">Caffres</term>, &amp; <term type="collective"><unclear cert="medium">Tamhookies</unclear></term>; we <del type="cancelled" rend="gray" hand="#U">have also</del> <add place="above" rend="gray" hand="#U">hold</add> three
+<lb/>regular services in the week for <term type="collective">caffres</term> <w>&amp;<del>c</del></w> <add place="above" rend="gray" hand="#U">people of the other tribes</add>  through an Interpreter
+<lb/>Sometimes we are obliged to <del type="cancelled" rend="gray" hand="#U">go</del> <add place="above" rend="gray" hand="#U">assemble</add> on the Sunday <del type="cancelled" rend="gray" hand="#U">to</del> <add place="above" rend="gray" hand="#U">beneath the shade of</add> the <unclear cert="medium">spreading</unclear>
+<lb/>trees on the side of the River. <del type="strikethrough" rend="gray" hand="#U">so as</del> <add place="above" rend="gray" hand="#U">This was the case</add> last Sunday when about
+<lb/>150 <term type="collective">Tingos</term> where addressed by <del type="strikethrough" rend="gray" hand="#U">our two</del> <add place="above" rend="gray" hand="#U">two gentlemen of the Society of</add> <term type="collective">Quaker</term> friends
+<lb/><persName>George Walker</persName> and <persName>James Buckhouse</persName>, through <del type="strikethrough" rend="gray" hand="#U">two</del> <w>Inter<seg type="hyphen">=</seg>
+<lb break="no"/>preters</w> - <unclear cert="low"><persName>Ounker</persName></unclear> has been brought up at <unclear cert="medium">Chumie</unclear>,
+<lb/>reads <del type="strikethrough" rend="gray" hand="#U">well</del> <add place="above" rend="gray" hand="#U">fluently</add>, and understands Caffre and Dutch well. he
+<lb/>accompanied the <term type="collective">American</term> Missionaries <metamark/><!-- next 2 words encircled in pencil with long arrow indicating they are to be inserted on next lineafter "Natal" AM --> as Interpreter
+<lb/>to <persName>Dingan</persName> the <term type="collective">Zoolu</term> chief near <region>Natal</region> <metamark/> We <del type="strikethrough" rend="gray" hand="#U">was then not</del> <add place="above" rend="gray" hand="#U">at that time</add> <add place="below" rend="gray" hand="#U">did not consider him</add>
+<lb/>a decided <unclear cert="medium">character</unclear>, but we <unclear cert="medium">trust</unclear> he <add place="below" rend="gray" hand="#U"><metamark/>has since been changed</add> <del type="strikethrough" rend="gray" hand="#U">is now</del>, and we
+<lb/><del type="strikethrough" rend="gray" hand="#U">hope</del> <add place="above" rend="gray" hand="#U">think it likely</add> he will <del type="strikethrough" rend="gray" hand="#U">be</del> <add place="below" rend="gray" hand="#U"><seg type="metamark">^</seg></add> <add place="above" rend="gray" hand="#U">prove</add> a <choice><orig>usefull</orig><reg>useful</reg></choice> Man.</p>
+<lb/><p rend="no-indent"><settlement>Philipton</settlement> <date when="1839-02-08">Feb<hi rend="sup">y</hi>: 8<hi rend="sup double-underline">th</hi> 1839</date>. <space extent="4" unit="words"/><persName>J: Read Sen<hi rend="sup underline">r</hi></persName></p>
+
+
+    <pb facs="liv_020005_0013" n="0013"/>
+<lb/><p rend="no-indent"><space extent="7" unit="words"/><date when="1839">1839</date>/<date when="1840">1840</date> A/No 2 ------- p. 41</p>
+<lb/><p rend="no-indent"><space extent="7" unit="words"/><settlement>Kat River</settlement>, <date when="1839-02-08"><choice><abbr>Feb.</abbr><expan>February</expan></choice> 8, 1839</date></p>
+<lb/><p rend="no-indent"><space extent="9" unit="words"/><persName>J. Read Sen<hi rend="sup underline">r</hi></persName></p>
+<lb/><p rend="no-indent"><space extent="7" unit="words"/><seg rend="diagonal"><choice><abbr>Ans<hi rend="sup underline">d</hi></abbr><expan>Answered</expan></choice> <date when="1839-09-14">14 <choice><abbr>Sept.</abbr><expan>September</expan></choice> 1839</date></seg></p><!-- this method of coding for a diagonally-written section doesn't seem to work on the transformation, i.e. use of <seg rend="diagonal">, can someone tell me how this should be done? AM -->
+<lb/>
+<lb/><p rend="no-indent"><space extent="9" unit="words"/>Report of the
+<lb/><space extent="9" unit="words"/><space extent="2" unit="chars"/>Mission for <date when="1838">1838</date></p>
+<lb/><p rend="no-indent"><space extent="9" unit="words"/><unclear>S. C.</unclear> <date when="1839-06-18">18 June, 1839</date></p>
+<lb/><p rend="no-indent"><space extent="8" unit="words"/>Enclosed under date
+<lb/><space extent="10" unit="words"/><date when="1839-02-10"><choice><abbr>Feb.</abbr><expan>February</expan></choice> 10, 1839</date></p>
+<lb/>
+<lb/><p rend="no-indent"><space extent="8" unit="words"/><seg rend="diagonal">Part published
+<lb/><space extent="8" unit="words"/>in <date when="1839-08">Aug<hi rend="sup underline">t</hi> &amp; <unclear cert="medium"><date when="1839-05">May</date></unclear> <!-- Thought this was May, but not sure what the sup abbr letter is? HB --><!-- I can't see that either, Heather, also note that this paragraph is written diagonally (see previous comment) AM -->
+<lb/><space extent="10" unit="words"/>1839</date></seg></p>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/><p rend="no-indent"><space extent="9" unit="words"/><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1839-05-21">May 21, 1839</date></p>
+
+<lb/><cb rend="vertical"/>
+<lb/><ab><space extent="10" unit="words"/><geogName type="river"><settlement>Kat River</settlement></geogName>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/><space extent="6" unit="words"/>The <persName>Rev<hi rend="sup double-underline">d</hi> W. Ellis</persName>
+<lb/><space extent="5" unit="words"/>Foreign <choice><abbr>Sec<hi rend="sup">y</hi></abbr><expan>Secretary</expan></choice> to the <orgName><settlement type="city">London</settlement>
+<lb/><space extent="5" unit="words"/><space extent="3" unit="chars"/><choice><abbr>Miss<hi rend="sup">y</hi></abbr><expan>Missionary</expan></choice> <choice><abbr>Soc<hi rend="sup">y</hi></abbr><expan>Society</expan></choice></orgName> <placeName>Bloomfield Street</placeName>
+<lb/><space extent="5" unit="words"/><space extent="5" unit="chars"/><placeName>Finsbury circus</placeName> <settlement type="city">London</settlement></ab>
+<lb/>
+
+
+    <pb facs="liv_020005_0014" n="0014"/>
+<!-- This page is blank. -->
+
+
+
+            </div>
+        </body>   
+    </text>
+</TEI>

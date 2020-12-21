@@ -275,6 +275,8 @@ function AddRelNoopener(){
     }
 }
 
+/* Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end. */
+
 RandomiseHref();
 
 function RandomiseHref(){
@@ -284,70 +286,3 @@ function RandomiseHref(){
       links[i].href = links[i].href + "?=" + randomString;
     }
 }
-
-// RandomiseHref();
-
-// function RandomiseHref(){
-//     var links = document.querySelectorAll("a");
-//     for(var i = 0; i < links.length; i++){
-//         function randomString(length, chars) {
-//           var result = '';
-//           for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
-//           return result;
-//         }
-//         var e = links[i];
-//         var url = e.target.href;
-//         url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-//     }
-// }
-
-
-//     var randomString = Math.floor(Math.random()*1000000);
-//     var href = document.getElementsByTagName("a").getAttribute("href"); 
-//     for(var i = 0; i < links.length; i++){
-//         var randomisedLink = href + "?=" + randomString;
-//         location.replace (randomisedLink)
-//     }
-// }
-
-
-// AddRandomisedHref();
-
-// function AddRandomisedHref(){
-//     var href = document.getElementsByTagName("a").getAttribute("href"); 
-//     var randomString = Math.floor(Math.random()*1000000);
-//     var randomisedLink = href + "?=" + randomString;
-//     location.replace (randomisedLink)
-// }
-
-/* Adapted from https://stackoverflow.com/a/18704113 */
-/* Adds random string to end of site links */
-
-// function AddRelNoopener_RandomiseHref(){
-//   var links = document.querySelectorAll("a");
-//   for(var i = 0; i < links.length; i++){
-//       links[i].setAttribute("rel","noopener");
-//       // links[i].onclick = "randomiseHref()";
-//       // links[i].setAttribute("onclick","randomiseHref();");
-//   }
-// }
-
-// RandomiseHref();
-
-// function RandomiseHref()
-// {
-//   function randomString(length, chars) {
-//     var result = '';
-//     for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
-//     return result;
-//   }
-//     var e = window.event;
-//     e.preventDefault();
-
-//     var url = e.target.href;
-//     url += '?=' + randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-
-    // location.replace(url);
-
-//     return false;
-// }

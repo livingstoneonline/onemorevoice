@@ -1,3 +1,4 @@
+
 .credits{
 	font-size: 1.15em;
 	line-height: 1.6em;
@@ -25,6 +26,20 @@ hr{
 	border: 0;
 	width: 100%;
 	max-width: 100%;
+}
+
+#google_translate_element{
+	min-height: 55px;
+}
+@media only screen and (min-width: 768px){
+	#google_translate_element{
+		min-height: 50px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#google_translate_element{
+		min-height: 48px;
+	}
 }
 
 .transcription{

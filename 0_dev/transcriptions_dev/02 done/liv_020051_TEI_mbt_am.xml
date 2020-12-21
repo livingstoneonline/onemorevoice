@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020051">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to [Horace Waller?]</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="alternative">Letter to [Horace Waller?], 15 September 1875</title>
+				<!-- Title, date -->
+                <author>Wainwright, Jacob, c.1851/2-1892</author>
+                <author role="first">Wainwright, Jacob</author>
+				<author role="first-normalized">Jacob Wainwright</author>
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HB">
+					<name>Heather F. Ball</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="MBT">
+					<name>Mary Borgo Ton</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AM">
+					<name>Anne M. Martin</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2020</date>
+				<idno type="LEAP-ID">liv_020051</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+						<country>United Kingdom</country>
+						<!-- Repository country -->
+						<settlement>Birmingham</settlement>
+						<!-- Repository city -->
+						<repository>University of Birmingham. Cadbury Research Library</repository>
+						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+						<idno type="shelfmark">CMS/B/OMS/C A5 O1/19</idno>
+						<!-- Shelfmark/Identifier -->
+						<!-- http://calmview.bham.ac.uk/ -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to [Horace Waller?]</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="JW">Wainwright, Jacob, c.1851/2-1892</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1875-09-15">15 September 1875</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">Mombasa. East Africa</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-12-14" who="#AM">Proofing</change>
+			<change when="2020-12-04" who="#MBT">Transcription and TEI encoding</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text>
+		<!-- These are images of microfilmed copies so original colors are not available. AW -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div>
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020051_0001" n="0001"/>
+<!-- I've divided the content in to sections. Adrian will have to develop custom CSS for this to display correctly. MBT -->
+<!-- hands need to be added. MBT --><!-- I've no idea what is meant by this but have left it alone AM -->
+
+<!-- left section -->
+<lb/><p rend="no-indent"><space extent="3" unit="chars"></space><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1875-10-16">Oct 16/75</date></p>
+<lb/><p rend="no-indent"><persName>C.C.F.</persName> <date when="1875-10-09">10.9</date></p>
+<lb/><p rend="no-indent"><persName>HW.</persName> <date when="1875-10-20">20/10</date></p>
+				
+<!-- center section -->
+<lb/><p>Private</p>
+				
+<!-- right section -->
+<lb/><p rend="no-indent">78<space extent="1" unit="words"></space><hi rend="underline">19</hi></p>
+<lb/><p rend="no-indent"><settlement>Mombasa</settlement> <bloc>East Africa</bloc></p>
+<lb/><p rend="no-indent"><date when="1875-09-15">September 15<hi rend="sup underline">th</hi> 1875</date></p>
+				
+<!-- body -->
+<!-- The following paragraph has been deleted by a later hand applying a large cross in pencil over the whole paragraph AM -->
+<lb/><p rend="no-indent">My dear Sir</p>
+<lb/><p><space extent="6" unit="chars"/>Much thanks to you &amp; to 
+<lb/>your family. I have received the knife 
+<lb/>which you have kindly sent me. 
+<lb/>It is the best, useful &amp; most <w>va<seg type="hyphen">-</seg>
+<lb break="no"/>luable</w> knife I ever had. I shall
+<lb/>take great care of it one would
+<lb/>take much interest to see it.
+<lb/>I am still at <placeName>Kisulutimi</placeName>. I am going
+<lb/>on with the school with few <w>child<seg type="hyphen">-</seg>
+<lb break="no"/>ren</w> to which some are added from
+<lb/>the rescued slaves. May Heaven
+<lb/>conduct and help us in this &amp; this
+<lb/>may be the means of bringing the <unclear cert="medium">route</unclear>
+<lb/>to the eternal joy.</p>
+<lb/><p rend="no-indent"><add place="inline" hand="#U" rend="gray">35</add></p>
+				
+<pb facs="liv_020051_0002" n="0002"/>
+<lb/><p rend="no-indent">I have received the letter from <persName>Dr
+<lb/>Foster</persName>. There are much work going on 
+<lb/>at <settlement>Frere Town</settlement>. The consul was very -
+<lb/>much delighted with the place.</p>
+<lb/><p rend="no-indent"><persName>Mr Sparshott</persName> will be soon coming.
+<lb/>Please to give my best regards to
+<lb/><persName>Winifred</persName> &amp; <persName>Claude</persName>. I have a great <w>de<seg type="hyphen">-</seg>
+<lb break="no"/>sire</w> to come and see you once more.</p>
+<lb/>
+<lb/>
+<lb/><p rend="right">I remain yours
+<lb/><choice><abbr>affec<hi rend="underline">t</hi><!-- .. underneath the underline --></abbr><expan>affectionate</expan></choice> &amp; grateful
+<lb/><hi rend="double-underline"><persName>Jacob Wainwright</persName></hi></p>
+
+
+			</div>
+		</body>
+	</text>
+</TEI>

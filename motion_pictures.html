@@ -2,10 +2,6 @@
 <!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
 <html lang="en" id="html">
 
-<!-- To-do list
-1) tab stop (add click event iframe)
-2) image -->
-
 	<head>
 		<title>Motion Pictures | One More Voice</title>
 		<meta charset="UTF-8" />
@@ -77,7 +73,7 @@
     			background-color: #e3e3e3;
 			}
 			.films h5{
-				font-size: 1em;
+				font-size: .95em;
 				background-color: #e3e3e3;
 				padding: 10px 16px;
 				margin: 0;
@@ -92,15 +88,15 @@
 				border-top: 1px solid #858585;
 			}
 			.films p.warning {
-				border: 1px solid #902D27;
 				background: #e3e3e3;
 				padding: 5px 7px;
 				margin: -.5em 0 2em 0;
+				border: 1px solid #902D27;
 			}
 			/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 			/* Review https://codepen.io/beardofprey/pen/MXmxXR */
 			.wrapper{
-				margin: 0 auto 2em 0;
+				margin: 0 auto 2em auto;
 				padding: 0;
 				border: 1px solid #858585;
 				border-radius: 8px;
@@ -111,13 +107,12 @@
 				margin: 0 auto;
 			}
 			.youtube{
-				/* background-color: #000; */
-				position: relative;
+				cursor: pointer;
+				border: 3px transparent solid;
 				padding-top: 56.25%;
 				margin: .5em;
-				cursor: pointer;
 				overflow: hidden;
-				border: 3px transparent solid;
+				position: relative;
 			}
 			.youtube:hover,
 			.youtube:focus{
@@ -133,12 +128,12 @@
 				opacity: 0.6;
 			}
 			.youtube .play-button{
+				background-color: #902D27;
+				border-radius: 6px;
+				box-shadow: 0 0 30px rgba(0,0,0,0.6);
 				width: 60px;
 				height: 40px;
-				background-color: #902D27;
-				box-shadow: 0 0 30px rgba(0,0,0,0.6);
 				z-index: 2;
-				border-radius: 6px;
 			}
 			@media only screen and (min-width: 480px){
 				.youtube .play-button{
@@ -214,8 +209,8 @@
 				position: absolute;
 				top: 0px;
 				left: 0px;
-				-webkit-transition: top .1s ease-in;
 				transition: top .4s ease-in;
+				-webkit-transition: top .1s ease-in;
 			}
 		</style>
 	</head>

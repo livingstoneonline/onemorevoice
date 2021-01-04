@@ -182,11 +182,12 @@
 				width: 100%;
 				top: 0;
 				left: 0;
-        z-index: 2; /* Hides play button when iframe loads */
+        		z-index: 2; /* Hides play button when iframe loads */
 			}
 
       .skiptonext a{
-      	font-size: .85em;
+      	font-size: .8em;
+		font-family: Arial, Geneva, Tahoma, sans-serif;
       	color: white;
       	background: #424242;
       	padding: 4px 6px;
@@ -202,18 +203,12 @@
       }
       .skiptonext a:focus{
       	outline-color: transparent;
-      	position: fixed;
+      	position: absolute;
       	top: 0px;
       	left: 0px;
       	-webkit-transition: top .1s ease-in;
       	transition: top .4s ease-in;
       }
-      @media only screen and (min-width: 768px){
-      	.skiptonext a:focus{
-      		position: absolute;
-      	}
-      }
-
 		</style>
 	</head>
 

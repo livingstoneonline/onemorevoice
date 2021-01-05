@@ -38,12 +38,6 @@
 			.films h4 .return-top[id]:target{
     			margin-top: -10px;
 			}
-			.films h5 a:hover,
-			.films h5 a:focus{
-				margin-top: 0;
-				border-top: 0;
-				background-color: #fff;
-			}
 			.films p.external{
 				border-top: none;
 				padding: 0 1em;
@@ -52,14 +46,23 @@
 				border: 3px transparent solid;
 				margin: 0.5em;
 			}
+			.screenshot:hover,
+			.screenshot:focus{
+				border: 3px #204A79 solid;
+			}
 			.screenshot img{
 				object-fit: cover;
 				-o-object-fit: cover;
 				object-position: top;
 				-o-object-position: top;
 				overflow: hidden;
-				height: 390px;
-				width: 640px;
+				display: block;
+				border: none;
+			}
+			.screenshot img:hover,
+			.screenshot img:focus{
+				opacity: 0.6;
+				border: none;
 			}
 		</style>
 	</head>
@@ -96,7 +99,7 @@
 						<li><a href="#footage">Historical Footage</a></li>
 						<li><a href="#recordings">Historical Recordings</a></li>
 						<li><a href="#documentaries">Anti-Colonial Documentaries</a></li>
-						<li><a href="#british-led">British-Led Colonial Films</a></li>
+						<li><a href="#colonial-films">British-Led Colonial Films</a></li>
 					</ol>
 				</section>
 
@@ -127,9 +130,9 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Director: <strong>Ousmane Sembène</strong><br />
-								Date: <strong>1963</strong><br />
-								Running time: <strong>18:28</strong>
+							<p><strong>Director:</strong> Ousmane Sembène<br />
+								<strong>Date:</strong> 1963<br />
+								<strong>Running Time:</strong>: 18:28
 							</p>
 						</div>
 
@@ -141,43 +144,49 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Author: <strong>Rabindarath Tagore</strong><br/>
-								Directors: <strong>Prataya Saha and Shatarupa Bhattacharyya</strong><br />
-								Date: <strong>2020 [1913]</strong><br />
-								Running time: <strong>29:47</strong>
+							<p><strong>Author:</strong> Rabindarath Tagore<br/>
+								<strong>Directors:</strong> Prataya Saha and Shatarupa Bhattacharyya<br />
+								<strong>Date:</strong> 2020 [1913]<br />
+								<strong>Running Time:</strong>: 29:47
 							</p>
 						</div>
 
 						<div class="wrapper" aria-labelledby="mensah">
-							<h5 id="mensah"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="mensah-video" href="http://www.colonialfilm.org.uk/node/615">Mr. Mensah Builds a House</a></h5>
+							<h5 id="mensah"><em>Mr. Mensah Builds a House</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1582666A.jpg" alt=""/>
+								<a id="mensah-video" href="http://www.colonialfilm.org.uk/node/615">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1582666A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Director: <strong>Sean Graham</strong><br />
-								Production Company: <strong>Gold Coast Film Unit</strong><br />
-								Date: <strong>1955</strong><br />
-								Running Time: <strong>36:19</strong></p>
+							<p><strong>Director:</strong> Sean Graham<br />
+								<strong>Production Company:</strong> Gold Coast Film Unit<br />
+								<strong>Date:</strong> 1955<br />
+								<strong>Running Time:</strong> 36:19</p>
 						</div>
 
 						<div class="wrapper" aria-labelledby="kojokrom">
-							<h5 id="kojokrom"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="kojokrom-video" href="http://www.colonialfilm.org.uk/node/2566">Progress in Kojokrom</a></h5>
+							<h5 id="kojokrom"><em>Progress in Kojokrom</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/100022045A.jpg" alt=""/>
+								<a id="kojokrom-video" href="http://www.colonialfilm.org.uk/node/2566">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/	colonialfilm.org.uk/files/media/images/100022045A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Production Company: <strong>Gold Coast Film Unit</strong><br />
-								Date: <strong>1953</strong><br />
-								Running Time: <strong>23:12</strong></p>
+							<p><strong>Production Company:</strong> Gold Coast Film Unit<br />
+								<strong>Date:</strong> 1953<br />
+								<strong>Running Time:</strong> 23:12</p>
 						</div>
 
 						<div class="wrapper" aria-labelledby="kumasenu">
-							<h5 id="kumasenu"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="kumasenu-video" href="http://www.colonialfilm.org.uk/node/332">The Boy Kumasenu</a></h5>
+							<h5 id="kumasenu"><em>The Boy Kumasenu</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574595A.jpg" alt=""/>
+								<a id="kumasenu-video" href="http://www.colonialfilm.org.uk/node/332">
+									<img loading="lazy" style="object-position: unset;" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574595A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Director: <strong>Sean Graham</strong><br />       
-								Production Company: <strong>Gold Coast Film Unit</strong><br />
-								Date: <strong>1952</strong><br />
-								Running Time: <strong>1:00:19</strong></p>
+							<p><strong>Director:</strong> Sean Graham<br />       
+								<strong>Production Company:</strong> Gold Coast Film Unit<br />
+								<strong>Date:</strong> 1952<br />
+								<strong>Running Time:</strong> 1:00:19</p>
 						</div>
 
 						<div class="wrapper" aria-labelledby="tins">
@@ -188,9 +197,9 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Director: <strong>Bimal Roy</strong><br />
-								Date: <strong>1941</strong><br />
-								Running time: <strong>07:15</strong>
+							<p><strong>Director:</strong> Bimal Roy<br />
+								<strong>Date:</strong> 1941<br />
+								<strong>Running Time:</strong>: 07:15
 							</p>
 						</div>
 
@@ -202,21 +211,23 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Directos: <strong>Satyajit Ray</strong><br />
-								Date: <strong>1964</strong><br />
-								Running time: <strong>12:02</strong>
+							<p>Directos: Satyajit Ray<br />
+								<strong>Date:</strong> 1964<br />
+								<strong>Running Time:</strong>: 12:02
 							</p>
 						</div>
 
 						<div class="wrapper" aria-labelledby="nendi">
-							<h5 id="nendi"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a  id="nendi-video" href="http://www.colonialfilm.org.uk/node/312">Wives of Nendi</a></h5>
+							<h5 id="nendi"><em>Wives of Nendi</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574587A.jpg" alt=""/>
+								<a  id="nendi-video" href="http://www.colonialfilm.org.uk/node/312">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574587A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Directors: <strong>Stephen Peet</strong>; <strong>Mai Magwende</strong> (uncredited)<br />
-								Production Company: <strong>Central African Film Unit</strong><br />
-								Date: <strong>1949</strong><br />
-								Running Time: <strong>19:05</strong></p>
+							<p><strong>Directors:</strong> Stephen Peet; Mai Magwende (uncredited)<br />
+								<strong>Production Company:</strong> Central African Film Unit<br />
+								<strong>Date:</strong> 1949<br />
+								<strong>Running Time:</strong> 19:05</p>
 						</div>						
 					</section>				
 
@@ -231,10 +242,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>Movietone Interview</strong><br />
-								Date: <strong>26 May 1930</strong><br />
-								Location: <strong>Unknown</strong><br />
-								Running time: <strong>01:08</strong>
+							<p>Title: Movietone Interview<br />
+								<strong>Date:</strong> 26 May 1930<br />
+								<strong>Location:</strong> Unknown<br />
+								<strong>Running Time:</strong>: 01:08
 							</p>
 						</div>
 
@@ -246,10 +257,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>Introduces M.S. Subbulakshmi in the Film <em>Meera</em></strong><br />
-								Date: <strong>1947</strong><br />
-								Location: <strong>Unknown</strong><br />
-								Running time: <strong>01:25</strong>
+							<p>Title: Introduces M.S. Subbulakshmi in the Film <em>Meera</em><br />
+								<strong>Date:</strong> 1947<br />
+								<strong>Location:</strong> Unknown<br />
+								<strong>Running Time:</strong>: 01:25
 							</p>
 						</div>
 
@@ -261,10 +272,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>Rare Clips Compilations</strong><br />
-								Date: <strong>1930; 1930; 1930; 1921; 1926</strong><br />
-								Location: <strong>Berlin; New York; Moscow; France; Rome</strong><br />
-								Running time: <strong>03:04</strong>
+							<p>Title: Rare Clips Compilations<br />
+								<strong>Date:</strong> 1930; 1930; 1930; 1921; 1926<br />
+								<strong>Location:</strong> Berlin; New York; Moscow; France; Rome<br />
+								<strong>Running Time:</strong>: 03:04
 							</p>
 						</div>
 
@@ -276,10 +287,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy</strong><br />
-								Date: <strong>5 May 1930; 7 June 1926</strong><br />
-								Location: <strong>Unknown; Rome</strong><br />
-								Running time: <strong>01:08</strong>
+							<p>Title: India’s Great Poet Sends a Message to America; Tagore Viewing the Thermae of Caracalla, in Rome, Italy<br />
+								<strong>Date:</strong> 5 May 1930; 7 June 1926<br />
+								<strong>Location:</strong> Unknown; Rome<br />
+								<strong>Running Time:</strong>: 01:08
 							</p>
 						</div>
 					</section>
@@ -295,10 +306,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York”</strong><br />
-								Date: <strong>Early 1940s</strong><br />
-								Location: <strong>New York</strong><br />
-								Running time: <strong>03:12</strong>
+							<p>Title: Reads “If We Must Die,” “St. Issac’s Church,” and “The Tropics in New York”<br />
+								<strong>Date:</strong> Early 1940s<br />
+								<strong>Location:</strong> New York<br />
+								<strong>Running Time:</strong>: 03:12
 							</p>
 						</div>
 
@@ -310,10 +321,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>Constituent Assembly Speech</strong><br />
-								Date: <strong>1946</strong><br />
-								Location: <strong>India</strong><br />
-								Running time: <strong>10:16</strong>
+							<p>Title: Constituent Assembly Speech<br />
+								<strong>Date:</strong> 1946<br />
+								<strong>Location:</strong> India<br />
+								<strong>Running Time:</strong>: 10:16
 							</p>
 						</div>
 
@@ -325,10 +336,10 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Title: <strong>Lecture at Parliament of World Religion</strong><br />
-								Date: <strong>11 September 1893</strong><br />
-								Location: <strong>Chicago</strong><br />
-								Running time: <strong>03:36</strong>
+							<p>Title: Lecture at Parliament of World Religion<br />
+								<strong>Date:</strong> 11 September 1893<br />
+								<strong>Location:</strong> Chicago<br />
+								<strong>Running Time:</strong>: 03:36
 							</p>
 						</div>
 					</section>
@@ -346,9 +357,9 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Director: <strong>René Vautier</strong><br />
-								Date: <strong>1950</strong><br />
-								Running time: <strong>17:24</strong>
+							<p><strong>Director:</strong> René Vautier<br />
+								<strong>Date:</strong> 1950<br />
+								<strong>Running Time:</strong>: 17:24
 							</p>
 						</div>
 
@@ -360,9 +371,9 @@
 								</nav>
 								<div class="play-button"></div>
 							</div>
-							<p>Directors: <strong>Alain Resnais and Chris Marker</strong><br />
-								Date: <strong>1953</strong><br />
-								Running time: <strong>30:03</strong>
+							<p><strong>Directors:</strong> Alain Resnais and Chris Marker<br />
+								<strong>Date:</strong> 1953<br />
+								<strong>Running Time:</strong>: 30:03
 							</p>
 						</div>
 					</section>
@@ -373,59 +384,69 @@
 						<p class="small warning"><strong class="site-red">Warning:</strong> Site visitors are advised to proceed with caution when consulting the films in this subsection because the films may contain material that can be upsetting or cause distress.</p>
 
 						<div class="wrapper" aria-labelledby="cotton">
-							<h5 id="cotton"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="cotton-video" href="http://www.colonialfilm.org.uk/node/1322">Black Cotton</a></h5>
+							<h5 id="cotton"><em>Black Cotton</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" style="object-position: top;" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1575947A.jpg" alt="People gathering cotton in a field; one person with a basket positioned on his head."/>
+								<a id="cotton-video" href="http://www.colonialfilm.org.uk/node/1322">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1575947A.jpg" alt="People gathering cotton in a field; one person with a basket positioned on his head."/>
+								</a>
 							</div>
-							<p>Production Company: <strong>British Instuctional Films</strong><br />
-								Date: <strong>1927</strong><br />
-								Running Time: <strong>13:48</strong><br />
-								Notes: British non-fictional film, originally produced for the British Empire Exhibition of 1924-25 and then played on the educational film circuit in Britain; depicts scenes of African industry, albeit very much in relation to British economic interests.</p>
+							<p><strong>Production Company:</strong> British Instuctional Films<br />
+								<strong>Date:</strong> 1927<br />
+								<strong>Running Time:</strong> 13:48<br />
+								<strong>Notes:</strong> British non-fictional film, originally produced for the British Empire Exhibition of 1924-25 and then played on the educational film circuit in Britain; depicts scenes of African industry, albeit very much in relation to British economic interests.</p>
 						</div>
 						
 						<div class="wrapper" aria-labelledby="udi">
-							<h5 id="udi"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="udi-video" href="http://www.colonialfilm.org.uk/node/252">Daybreak in Udi </a></h5>
+							<h5 id="udi"><em>Daybreak in Udi</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574842A.jpg" alt=""/>
+								<a id="udi-video" href="http://www.colonialfilm.org.uk/node/252">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574842A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Director: <strong>Terry Bishop</strong><br />
-								Production Company: <strong>Ministry of Information / Central Office of Information</strong><br />
-								Date: <strong>1949</strong><br />
-								Running Time: <strong>37:31</strong><br />
-								Notes: British documentary that won the Academy Award for Best Documentary Feature in 1950.</p>
+							<p><strong>Director:</strong> Terry Bishop<br />
+								<strong>Production Company:</strong> Ministry of Information / Central Office of Information<br />
+								<strong>Date:</strong> 1949<br />
+								<strong>Running Time:</strong> 37:31<br />
+								<strong>Notes:</strong> British documentary that won the Academy Award for Best Documentary Feature in 1950.</p>
 						</div>
 
 						<div class="wrapper" aria-labelledby="landing">
-							<h5 id="landing"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="landing-video" href="http://www.colonialfilm.org.uk/node/1186">Landing of Savage South Africa at Southampton</a></h5>
+							<h5 id="landing"><em>Landing of Savage South Africa at Southampton</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1572496A.jpg" alt=""/>
+								<a id="landing-video" href="http://www.colonialfilm.org.uk/node/1186">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1572496A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Date: <strong>1899</strong><br />
-								Running Time: <strong>00:39</strong><br />
-								Notes: Very early representation of Africans (in England) brought over for the Great Britain Exhibition at Earls Court in 1899. See also the contemporary work of <a href="https://nadiakaabilinke.myportfolio.com/faces">Nadi Kaabe Linke</a> focused on reclaiming the personal histories of the individuals in this film.</p>
+							<p><strong>Date:</strong> 1899<br />
+								<strong>Running Time:</strong> 00:39<br />
+								<strong>Notes:</strong> Very early representation of Africans (in England). Also see the work of <a href="https://nadiakaabilinke.myportfolio.com/faces">Nadi Kaabe Linke</a> focused on reclaiming the personal histories of individuals in this film.</p>
 						</div>
 						
 						<div class="wrapper" aria-labelledby="nionga">
-							<h5 id="nionga"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="nionga-video" href="http://www.colonialfilm.org.uk/node/1910">Nionga</a></h5>
+							<h5 id="nionga"><em>Nionga</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1581473A.jpg" alt=""/>
+								<a id="nionga-video" href="http://www.colonialfilm.org.uk/node/1910">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1581473A.jpg" alt=""/>
+								</a>
 							</div>
 							<p>
-								Date: <strong>1925</strong><br />
-								Running Time: <strong>01:09:27</strong><br />
-								Notes: British fictional film, among the earliest shot somewhere in Africa; includes an all-African cast.</p>
+								<strong>Date:</strong> 1925<br />
+								<strong>Running Time:</strong> 01:09:27<br />
+								<strong>Notes:</strong> British fictional film, among the earliest shot in Africa; includes an all-African cast.</p>
 						</div>
 						
 						<div class="wrapper" aria-labelledby="hookworm">
-							<h5 id="hookworm"><i class="fa fa-camera" alt="Camera icon" ></i>&nbsp; <a id="hookworm-video" href="http://www.colonialfilm.org.uk/node/735"> Tropical Hookworm</a></h5>
+							<h5 id="hookworm"><em>Tropical Hookworm</em></h5>
 							<div class="screenshot">
-								<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574833A.jpg" alt=""/>
+								<a id="hookworm-video" href="http://www.colonialfilm.org.uk/node/735">
+									<img loading="lazy" src="http://www.colonialfilm.org.uk/sites/colonialfilm.org.uk/files/media/images/1574833A.jpg" alt=""/>
+								</a>
 							</div>
-							<p>Director: <strong>Leslie A. Notcutt</strong><br />
-								Production Company: <strong>Bekefilm</strong><br />
-								Date: <strong>1936</strong><br />
-								Running Time: <strong>12:01</strong><br />
-								Notes: Among the earliest examples of a British film made specifically for African audiences.</p>
+							<p><strong>Director:</strong> Leslie A. Notcutt<br />
+								<strong>Production Company:</strong> Bekefilm<br />
+								<strong>Date:</strong> 1936<br />
+								<strong>Running Time:</strong> 12:01<br />
+								<strong>Notes:</strong> Among the earliest examples of a British film made specifically for African audiences.</p>
 						</div>
 						
 					</section>

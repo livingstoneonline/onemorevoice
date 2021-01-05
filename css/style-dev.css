@@ -13,19 +13,20 @@ Table of Contents
 1.1. Principal Components 
 1.2. Headings and Related
 1.3. Main Images and Related
-1.4.1. Links
-1.4.2. Main Sections and Related
-1.5. Skip to Main
-1.6. Mobile Fixed Nav
-1.7. Navbar
-1.8. Overlay
-1.9. Google Translate
-1.10. Archival Texts
-1.11. Artifact Gallery
-1.12. Book-Length Works
-1.13. Page-Specific Coding
-1.12. Formatting
-1.13. Lists and Lines
+1.4. Links
+1.5. Main Sections and Related
+1.6. Skip to Main
+1.7. Mobile Fixed Nav
+1.8. Navbar
+1.9. Overlay
+1.10. Google Translate
+1.11. Archival Texts
+1.12. Artifact Gallery
+1.13. Book-Length Works
+1.14. Motion Pictures 
+1.15. Page-Specific Coding
+1.16. Formatting
+1.17. Lists and Lines
 
 Appendix
 A. Alternative [id]:target Coding 
@@ -403,7 +404,7 @@ a:focus img{
 }
 
 
-/* 1.4.1. Links */
+/* 1.4. Links */
 
 a,
 a:visited{
@@ -427,7 +428,7 @@ a:focus{
 }
 
 
-/* 1.4.2. Main Sections and Related */
+/* 1.5. Main Sections and Related */
 
 @font-face {
     font-family: 'source_sans_proregular';
@@ -531,7 +532,7 @@ body.essay .main{
 }
 
 
-/* 1.5. Skip to Main */
+/* 1.6. Skip to Main */
 
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
 #skiptocontent a{
@@ -565,7 +566,7 @@ body.essay .main{
 }
 
 
-/* 1.6. Mobile Fixed Nav */
+/* 1.7. Mobile Fixed Nav */
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
@@ -675,7 +676,7 @@ body.essay .main{
 /* Also see Appendix for alternative [id]:target coding */
 
 
-/* 1.7. Navbar */
+/* 1.8. Navbar */
 
 /* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 
@@ -843,7 +844,7 @@ background-color: #E3E3E3; [light gray]
 */
 
 
-/* 1.8. Overlay */
+/* 1.9. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
@@ -935,7 +936,7 @@ body.fixed-nav .overlay .menu .close-title{
 }
 
 
-/* 1.9. Google Translate */
+/* 1.10. Google Translate */
 /* Also see other styles marked "Google Translate" */
 
 .goog-te-banner-frame.skiptranslate{
@@ -1022,7 +1023,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 }
 
 
-/* 1.10. Archival Texts */
+/* 1.11. Archival Texts */
 
 table.archival-text{
 	font-size: .8em;
@@ -1096,7 +1097,7 @@ table.archival-text .details{
 }
 
 
-/* 1.11. Artifact Gallery */
+/* 1.12. Artifact Gallery */
 
 .image-details{
 	font-size: .85em;
@@ -1160,7 +1161,7 @@ table.archival-text .details{
 }
 
 
-/* 1.12. Book-Length Works */
+/* 1.13. Book-Length Works */
 
 #books{
 	font-size: .85em;
@@ -1239,7 +1240,187 @@ table.archival-text .details{
 }
 
 
-/* 1.12 Page Specific Coding */
+/* 1.14 Motion Pictures */
+
+h4#summary{
+	padding-top: 1em;
+}
+.films h4{
+	font-size: 1.096em;
+	font-style: normal;
+	font-weight: 600;
+	color: white;
+	background-color: #902D27;
+	padding: 10px 14px;
+	margin: 2.7em 0 1.5em 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+}
+.films section:first-child h4:first-child{
+	margin-top: 0;
+}
+.films h4 .return-top{
+	color: white;
+	font-size: 0.85em;
+	white-space: nowrap;
+	margin-top: 0.2em;
+}
+@media only screen and (min-width: 480px){
+	.films h4 .return-top{
+		margin-right: 0.5em;
+	}
+}
+.films h4 a.return-top:focus,
+.films h4 a.return-top:hover{
+	color: #a83c37;
+	background-color: #e3e3e3;
+}
+.films h5{
+	font-size: .95em;
+	background-color: #e3e3e3;
+	padding: 10px 16px;
+	margin: 0;
+	border-bottom: 1px solid #858585;
+	border-radius:  8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius:  8px 8px 0 0;
+}
+.films p{
+	font-size: .85em;
+	padding: 1em 1em 0 1em;
+	border-top: 1px solid #858585;
+}
+.films p.warning {
+	background: #e3e3e3;
+	padding: 5px 7px;
+	margin: -.5em 0 2em 0;
+	border: 1px solid #902D27;
+}
+/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
+/* Review https://codepen.io/beardofprey/pen/MXmxXR */
+.wrapper{
+	margin: 0 auto 2em auto;
+	padding: 0;
+	border: 1px solid #858585;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.wrapper:last-child{
+	margin: 0 auto;
+}
+.youtube{
+	cursor: pointer;
+	border: 3px transparent solid;
+	padding-top: 56.25%;
+	margin: .5em;
+	overflow: hidden;
+	position: relative;
+}
+.youtube:hover,
+.youtube:focus{
+	border: 3px #204A79 solid;
+}
+.youtube img{
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+}
+.youtube:hover img,
+.youtube:focus img{
+	opacity: 0.6;
+}
+.youtube .play-button{
+	background-color: #902D27;
+	border-radius: 6px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.6);
+	width: 60px;
+	height: 40px;
+	z-index: 2;
+}
+@media only screen and (min-width: 480px){
+	.youtube .play-button{
+		width: 90px;
+		height: 60px;
+	}
+}
+.youtube .play-button:before{
+	content: "";
+	border-style: solid;
+	border-width: 10px 0 10px 18px;
+	border-color: transparent transparent transparent #fff;
+}
+@media only screen and (min-width: 480px){
+	.youtube .play-button:before{
+		border-width: 15px 0 15px 26px;
+	}
+}
+.youtube:hover .play-button,
+.youtube:focus .play-button{
+	background-color: #204A79;
+}
+.youtube img,
+.youtube .play-button{
+	cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before{
+	position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before{
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 ); /* Mistake but works */
+}
+.youtube iframe{
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2; /* Hides play button when iframe loads */
+}
+[id].youtube:target {
+	margin-top: 10px !important;
+	border-top: 3px transparent solid !important;
+	background-clip: unset !important;
+}
+[id].youtube:target:hover,
+[id].youtube:target:focus{
+	border-top: 3px #204A79 solid !important;
+}
+.skipcontrols a{
+	font-size: .8em;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	color: #204A79;
+	background: #E3E3E3;
+	padding: 4px 6px;
+	border-right: 2px solid #204A79;
+	border-bottom: 2px solid #204A79;
+	border-bottom-right-radius: 8px;
+	position: absolute;
+	top: -44px;
+	left: 0px;
+	z-index: 100;
+	transition: top .4s ease-out;
+	-webkit-transition: top 1s ease-out;
+}
+.skipcontrols a:focus{
+	outline-color: transparent;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: top .4s ease-in;
+	-webkit-transition: top .1s ease-in;
+}
+
+
+/* 1.15 Page Specific Coding */
 
 /* The following items are used on the analytical_priorities.html, project_design.html, and collaboration.html pages. */
 ol.concept-list li,
@@ -1295,7 +1476,7 @@ ul.acknowledgments{
 }
 
 
-/* 1.12. Formatting */
+/* 1.16. Formatting */
 
 .black{
 	color: black;
@@ -1337,7 +1518,7 @@ ul.acknowledgments{
 }
 
 
-/* 1.13. Lists and Lines */
+/* 1.17. Lists and Lines */
 
 ol,
 ul{

@@ -1423,20 +1423,23 @@ h4#summary{
 [id].youtube:target:focus{
 	border-top: 3px #204A79 solid !important;
 }
-.skipcontrols a{
+.skipcontrols a,
+.screenshot mark{
 	font-size: .9em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #204A79;
 	background: #E3E3E3;
-	padding: 4px 6px;
-	border: 2px solid #204A79;
 	border-bottom-right-radius: 8px;
+	padding: 4px 6px;
 	position: absolute;
-	top: -44px;
 	left: 0px;
 	z-index: 100;
 	transition: top .4s ease-out;
 	-webkit-transition: top 1s ease-out;
+}
+.skipcontrols a{
+	border: 2px solid #204A79;
+	top: -44px;
 }
 .skipcontrols a:focus{
 	outline-color: transparent;
@@ -1446,6 +1449,19 @@ h4#summary{
 	transition: top .4s ease-in;
 	-webkit-transition: top .1s ease-in;
 }
+.screenshot mark{
+	border-right: 2px solid #204A79;
+	border-bottom: 2px solid #204A79;
+	top: 0px;
+	display: none;
+	visibility: hidden;
+}
+.screenshot:hover mark,
+.screenshot:focus-within mark{
+	display: block;
+	visibility: visible;
+}
+
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .screenshot{
 	border: 3px transparent solid;

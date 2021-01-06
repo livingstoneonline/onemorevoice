@@ -1245,60 +1245,79 @@ table.archival-text .details{
 h4#summary{
 	padding-top: 1em;
 }
-.films h4{
-	font-size: 1.096em;
+#films{
+	font-size: .85em;
+	line-height: 1.6em;
+}
+@media only screen and (min-width: 768px){
+	#films{
+		font-size: .95em;
+		line-height: 1.5em;
+	}
+}
+#films h4{
+	font-size: 1.15em;
 	font-style: normal;
 	font-weight: 600;
 	color: white;
 	background-color: #902D27;
 	padding: 10px 14px;
-	margin: 2.7em 0 1.5em 0;
+	margin: 0 0 1.5em 0;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	display: flex;
 	justify-content: space-between;
 }
-.films section:first-child h4:first-child{
+#films section:first-child h4:first-child{
 	margin-top: 0;
 }
-.films h4 .return-top{
-	color: white;
-	font-size: 0.85em;
+#films h4 .return-top{
+    font-size: .9em;
+    color: white;
 	white-space: nowrap;
-	margin-top: 0.2em;
 }
 @media only screen and (min-width: 480px){
-	.films h4 .return-top{
+	#films h4 .return-top{
 		margin-right: 0.5em;
 	}
 }
-.films h4 a.return-top:focus,
-.films h4 a.return-top:hover{
+#films h4 a.return-top:focus,
+#films h4 a.return-top:hover{
 	color: #a83c37;
 	background-color: #e3e3e3;
 }
-.films h5{
-	font-size: .95em;
+#films h5{
+	font-size: 1.05em;
 	background-color: #e3e3e3;
-	padding: 10px 16px;
-	margin: 0;
 	border-bottom: 1px solid #858585;
-	border-radius:  8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
+    border-radius:  8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
 	-moz-border-radius:  8px 8px 0 0;
+    padding: 10px 16px;
+	margin: 0;
 }
-.films p{
-	font-size: .85em;
-	padding: 1em 1em 0 1em;
-	margin-top: 0;
+#films ul{
+	font-size: .95em;
+    list-style: none;
+    padding: 1em 1.5em;
+	margin: 0;
 	border-top: 1px solid #858585;
 }
-.films p.warning {
+#films li{
+    padding: 0 0 .6em 0;
+}
+#films li:last-child{
+	padding-bottom: 0;
+}
+#films p.warning {
 	background: #e3e3e3;
 	padding: 5px 7px;
-	margin: -.5em 0 2em 0;
+	margin: 0 0 2em 0;
 	border: 1px solid #902D27;
+}
+#films section:last-of-type{
+	margin-bottom: 1em;
 }
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
@@ -1309,9 +1328,6 @@ h4#summary{
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-}
-.wrapper:last-child{
-	margin: 0 auto;
 }
 .youtube{
 	cursor: pointer;
@@ -1396,7 +1412,7 @@ h4#summary{
 	border-top: 3px #204A79 solid !important;
 }
 .skipcontrols a{
-	font-size: .8em;
+	font-size: .9em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #204A79;
 	background: #E3E3E3;

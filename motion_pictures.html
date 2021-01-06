@@ -543,7 +543,7 @@
 					image.src = source;
 					image.setAttribute("title", title);
 					image.setAttribute("alt", alt);
-					image.setAttribute("loading", "lazy");
+					// image.setAttribute("loading", "lazy"); // Doesn't work
 					image.addEventListener("load", function () {
 						youtube[i].appendChild(image);
 					}(i));

@@ -1430,7 +1430,7 @@ h4#summary{
 	padding-bottom: 56.25%; /* 16:9 aspect ratio */
 }
 .screenshot:hover,
-.screenshot:focus{
+.screenshot:focus-within{
 	border: 3px #204A79 solid;
 }
 .screenshot img{
@@ -1446,7 +1446,9 @@ h4#summary{
 	height: 100%;
 }
 .screenshot img:hover,
-.screenshot img:focus{
+.screenshot img:focus,
+.screenshot a:hover img,
+.screenshot a:focus img{
 	opacity: 0.6;
 	border: none;
 }

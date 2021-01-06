@@ -1350,7 +1350,8 @@ h4#summary{
 .youtube:focus img{
 	opacity: 0.6;
 }
-.youtube .play-button{
+.youtube .play-button,
+.screenshot .play-button{
 	background-color: #902D27;
 	border-radius: 6px;
 	box-shadow: 0 0 30px rgba(0,0,0,0.6);
@@ -1359,38 +1360,49 @@ h4#summary{
 	z-index: 2;
 }
 @media only screen and (min-width: 480px){
-	.youtube .play-button{
+	.youtube .play-button,
+	.screenshot .play-button{
 		width: 90px;
 		height: 60px;
 	}
 }
-.youtube .play-button:before{
+.youtube .play-button:before,
+.screenshot .play-button:before{
 	content: "";
 	border-style: solid;
 	border-width: 10px 0 10px 18px;
 	border-color: transparent transparent transparent #fff;
 }
 @media only screen and (min-width: 480px){
-	.youtube .play-button:before{
+	.youtube .play-button:before,
+	.screenshot .play-button:before{
 		border-width: 15px 0 15px 26px;
 	}
 }
 .youtube:hover .play-button,
-.youtube:focus .play-button{
+.youtube:focus .play-button,
+.screenshot:hover .play-button,
+.screenshot:focus .play-button,
+.screenshot:focus-within .play-button{
 	background-color: #204A79;
 }
 .youtube img,
-.youtube .play-button{
+.youtube .play-button,
+.screenshot .play-button{
 	cursor: pointer;
 }
 .youtube img,
 .youtube iframe,
 .youtube .play-button,
-.youtube .play-button:before{
+.youtube .play-button:before,
+.screenshot .play-button,
+.screenshot .play-button:before{
 	position: absolute;
 }
 .youtube .play-button,
-.youtube .play-button:before{
+.youtube .play-button:before,
+.screenshot .play-button,
+.screenshot .play-button:before{
 	top: 50%;
 	left: 50%;
 	transform: translate3d( -50%, -50%, 0 ); /* Mistake but works */
@@ -1461,8 +1473,8 @@ h4#summary{
 	width: 100%;
 	height: 100%;
 }
-.screenshot img:hover,
-.screenshot img:focus,
+.screenshot:hover img
+.screenshot:focus img,
 .screenshot a:hover img,
 .screenshot a:focus img{
 	opacity: 0.6;

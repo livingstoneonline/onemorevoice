@@ -1418,6 +1418,37 @@ h4#summary{
 	transition: top .4s ease-in;
 	-webkit-transition: top .1s ease-in;
 }
+.screenshot{
+	border: 3px transparent solid;
+	margin: 0.5em;
+	position: relative;
+}
+.screenshot::after {
+	display: block;
+	content: '';
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+.screenshot:hover,
+.screenshot:focus{
+	border: 3px #204A79 solid;
+}
+.screenshot img{
+	border: none;
+	object-fit: cover;
+	-o-object-fit: cover;
+	object-position: top;
+	-o-object-position: top;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.screenshot img:hover,
+.screenshot img:focus{
+	opacity: 0.6;
+	border: none;
+}
 
 
 /* 1.15 Page Specific Coding */

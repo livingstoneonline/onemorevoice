@@ -193,17 +193,17 @@ body.transcription .title{
 
 /* 1.2 Headings and Related */
 
-/* h1{
+h1{
 	font-size: 2em;
-} */
-/* @media only screen and (min-width: 768px){
+	font-family: 'pt_serifregular';
+}
+@media only screen and (min-width: 768px){
 	h1{
 		font-size: 2.2em;
 	}
-} */
+}
 @media only screen and (min-width: 992px){
 	h1{
-        font-family: 'pt_serifregular';
 		font-size: 3.5em;
 	}
 }
@@ -635,7 +635,7 @@ body.essay .main{
 @media only screen and (min-width: 768px){
 	.icon-title{
 		font-size: 1.6em;
-		padding-top: .35em;
+		padding-top: .1em;
 	}
 }
 .menu a.icon{
@@ -664,8 +664,7 @@ body.essay .main{
 }
 @media only screen and (min-width: 768px){
 	.nav-title{
-		font-size: 2.6em;
-        font-family: 'pt_serifregular';
+		font-size: 2.5em;
 	}
 }
 [id]:target {

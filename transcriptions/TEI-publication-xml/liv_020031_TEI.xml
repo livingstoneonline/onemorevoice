@@ -3,6 +3,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<!-- http://livingstoneonline.github.io/LEAP-XSLT -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020031">
 	<!-- Insert LEAP ID, e.g. "liv_020031 -->
 	<teiHeader>
@@ -112,7 +113,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text>
+	<text n="warning-language">
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
@@ -136,7 +137,7 @@
 	
 <p>It was about ten o'clock at night, towards the end of the last re<!-- ­ -->bellion, that five privates and a sergeant attached to the &#8212;&#8212;company of the <orgName>Trelawny Militia</orgName> were located in an out-house on &#8212;&#8212;estate, for the purpose of protecting that property in an anticipated attack of the insurgents.<space extent="1" unit="chars"/> It was about as dark a night, reader, as I remember ever to have seen; the rain fell in torrents, not a star was visible, and the thunder broke over our heads in loud and deafening peals, and with a force, too, that shook to its foundation the crazy building in which we were posted.<space extent="1" unit="chars"/> Not one of us had a dry rag about him; for as the dismantled old house possessed but half a roof, and the pro<!-- ­ -->portion of half a shutter to every three windows&#8212;to say nothing of a most lamentable deficiency of sash frames, the rain poured down as mercilessly on us as it did outside of the house.</p>
 	
-<p><seg type="word">" Vot</seg> a night for firevorks and <seg type="word">Wauxall, "</seg> said young <persName>Toosy</persName>&#8212;(the last importation from Cokaigne, who had joined our company just be<!-- ­ -->fore the breaking out of the rebellion)&#8212;his teeth chattering in his head, and his lips as blue almost as indigo.&#8212;<seg type="word">" Real</seg> stunning enjoyment I call <seg type="word">this, "</seg> continued he, <seg type="word">" cuss</seg> the <orgName>rebels</orgName>, the black varmints, and <hi rend="italic">juice</hi> take the <hi rend="italic">Curnol</hi> for bordering us on this dirty duty; you hain't got a cigar about you <persName>Dick</persName>, 'ave you? <space extent="1" unit="chars"/>I do think I'd feel better for a <seg type="word">veed "</seg>.</p>
+<p><seg type="word">" Vot</seg> a night for firevorks and <seg type="word">Wauxall<!-- Code this word? -->, "</seg> said young <persName>Toosy</persName>&#8212;(the last importation from Cokaigne<!-- Code this word? -->, who had joined our company just be<!-- ­ -->fore the breaking out of the rebellion)&#8212;his teeth chattering in his head, and his lips as blue almost as indigo.&#8212;<seg type="word">" Real</seg> stunning enjoyment I call <seg type="word">this, "</seg> continued he, <seg type="word">" cuss</seg> the <orgName>rebels</orgName>, the black varmints, and <hi rend="italic">juice</hi> take the <hi rend="italic">Curnol</hi> for bordering us on this dirty duty; you hain't got a cigar about you <persName>Dick</persName>, 'ave you? <space extent="1" unit="chars"/>I do think I'd feel better for a <seg type="word">veed "</seg>.</p>
 	
 <p><persName>Dick</persName> pouch was forthcoming at the word, but the cigars, like everything else about him, were soaked through with water.<space extent="1" unit="chars"/><persName>Toosy</persName>, however, selected one which he thought he might manage, and crawl<!-- ­ -->ing towards the single candle, which flared and sputtered in a porter bottle under a table, where it had been placed to protect it as much as possible from the rain, endeavoured to kindle his cigar at the puny flame.<space extent="1" unit="chars"/>His exertions, were, however, ineffectual, and resulted only in his extinguishing the miserable light, and leaving us in utter dark<!-- ­ -->ness.</p>
 	

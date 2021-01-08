@@ -8,9 +8,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title></title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
-                <title type="alternative"></title><!-- Title, date -->
+                <title>“”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘’</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+                <title type="alternative">“”</title><!-- Title, date -->
                 <author></author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="first"></author><!-- First author only: Surname, Forename -->
@@ -27,7 +27,7 @@
                 <authority>One More Voice</authority>
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-                <date>2020</date>
+                <date>2021</date>
                 <idno type="LEAP-ID">liv_0210xx</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
@@ -146,7 +146,7 @@
 	<!-- <figure n="artifact" rend="vertical" facs="../artifact-images/liv_0210xx_0001_deriv-980px.jpg">
 		<graphic url="../artifact-images/liv_0210xx_0001_deriv-980px.jpg" facs="../artifact-images/liv_0210xx_0001_deriv-980px.jpg 980w, ../artifact-images/liv_0210xx_0001_deriv-894px.jpg 894w, ../artifact-images/liv_0210xx_0001_deriv-852px.jpg 852w, ../artifact-images/liv_0210xx_0001_deriv-490px.jpg 490w, ../artifact-images/liv_0210xx_0001_deriv-447px.jpg 447w, ../artifact-images/liv_0210xx_0001_deriv-426px.jpg 426w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/> -->
 		<label><!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
-		<figDesc><!-- Image alt text (max. 125 char with spaces) --></figDesc>
+		<figDesc><!-- Image alt text (max. 100 char with spaces) --></figDesc>
 	</figure>
 <!-- Use the following to repoduce any original image caption. -->
 <!--<lb/><p rend="no-indent small center">[<seg rend="italic">original caption</seg>]</p>

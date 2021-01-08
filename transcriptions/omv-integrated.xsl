@@ -237,8 +237,11 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="warning">
-			<xsl:if test="/TEI/text[contains(@n,'warning')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</p></xsl:if>
+		<xsl:variable name="warning-violence">
+			<xsl:if test="/TEI/text[contains(@n,'warning-violence')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</p></xsl:if>
+		</xsl:variable>
+		<xsl:variable name="warning-language">
+			<xsl:if test="/TEI/text[contains(@n,'warning-language')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racist language.</p></xsl:if>
 		</xsl:variable>
 		<xsl:variable name="sortedDates" as="xs:string*">
 			<xsl:choose>
@@ -452,7 +455,8 @@
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning"/>
+					<xsl:copy-of select="$warning-violence"/>
+					<xsl:copy-of select="$warning-language"/>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -466,7 +470,8 @@
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning"/>
+					<xsl:copy-of select="$warning-violence"/>
+					<xsl:copy-of select="$warning-language"/>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -483,7 +488,8 @@
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
 					<p><strong>Note:</strong> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning"/>
+					<xsl:copy-of select="$warning-violence"/>
+					<xsl:copy-of select="$warning-language"/>
 					<hr/>
 				</aside>
 			</xsl:when>
@@ -498,7 +504,8 @@
 					</xsl:if>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><strong>Note:</strong> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning"/>
+					<xsl:copy-of select="$warning-violence"/>
+					<xsl:copy-of select="$warning-language"/>
 					<hr/>
 				</aside>
 			</xsl:when>

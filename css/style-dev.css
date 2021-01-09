@@ -171,7 +171,7 @@ body.transcription .title{
 	.header-title{
 		display: block;
 		visibility: visible;
-		margin: 1em 0 .6em 0;
+		margin: .75em 0 .6em 0;
 	}
 }
 .title hr{
@@ -212,7 +212,7 @@ header h2{
 @media only screen and (min-width: 480px){
 	header h2{
 		font-size: 1em;
-		margin-top: 1.7em;
+		margin-top: 1em;
 		display: block;
 		visibility: visible;
 	}
@@ -220,54 +220,12 @@ header h2{
 @media only screen and (min-width: 768px){
 	header h2{
         font-size: 1.1em;
-        margin-top: 1em;
 		display: block;
 	}
 }
 @media only screen and (min-width: 992px){
 	header h2{
 		margin-top: 1em;
-	}
-}
-/* .caption display tied to header h2 position */
-.caption{
-	font-size: .66em;
-	font-weight: normal;
-    font-family: Arial, Geneva, Tahoma, sans-serif;
-    line-height: 1em;
-	padding: 1em 3px;
-	bottom: -2.5em;
-	right: 0;
-	position: absolute;
-}
-.transcription .caption{
-	bottom: -1.5em;
-}
-@media only screen and (min-width: 320px){
-	.caption{
-		bottom: -1em;
-		padding: 0 3px;
-	}
-	.transcription .caption{
-		bottom: .5em;
-	}
-}
-@media only screen and (min-width: 480px){
-	.caption,
-	.transcription .caption{
-		bottom: 5.3em;
-	}
-}
-@media only screen and (min-width: 768px){
-	.caption,
-	.transcription .caption{
-		bottom: 4.5em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.caption,
-	.transcription .caption{
-		bottom: 16em;
 	}
 }
 h3{
@@ -404,6 +362,53 @@ a:focus img{
 	.content-holder-5{
 		min-height: 529px;
 	}
+}
+/* Caption for main image */
+.image-wrapper{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+.image-wrapper .caption{
+	font-size: 1.6em;
+	font-weight: normal;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	background-color: #e3e3e3;
+	border: 2px solid #404040;
+	border-radius: 4px;
+	margin: 0;
+	padding: 8px 10px;
+	bottom: 7px;
+	right: 7px ;
+	position: absolute;
+}
+.image-wrapper .caption70 {
+	margin-right: 15%;
+}
+.image-wrapper .caption73 {
+	margin-right: 13.5%;
+}
+.image-wrapper .caption:hover,
+	.image-wrapper .caption:focus-within{
+		background-color: #404040;
+		border: 2px solid #e3e3e3;
+	}
+@media only screen and (min-width: 992px){
+	.image-wrapper .caption:hover,
+	.image-wrapper .caption:focus-within{
+		background-color: #204A79;
+		border: 2px solid #e3e3e3;
+	}
+}
+.image-wrapper a{
+	color: #404040 !important;
+	background-color: unset;
+}
+.image-wrapper a:hover,
+.image-wrapper a:focus{
+	color: #e3e3e3 !important;
+	background-color: unset;
 }
 
 

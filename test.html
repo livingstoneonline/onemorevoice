@@ -48,8 +48,8 @@
 				font-size: 1.1em;
 				font-weight: normal;
 				font-family: Arial, Geneva, Tahoma, sans-serif;
-				background-color: #204A79;
-				border: 1px solid white;
+				background-color: #e3e3e3;
+				border: 2px solid #404040;
 				border-radius: 4px;
 				margin: 0;
 				padding: 5px 6px;
@@ -65,12 +65,16 @@
 			}
 			.image-wrapper .caption:hover,
 			.image-wrapper .caption:focus-within{
-				background-color: #a83c37;
+				background-color: #204A79;
+				border: 2px solid #e3e3e3;
 			}
-			.image-wrapper .caption a,
-			.image-wrapper .caption:hover a,
-			.image-wrapper .caption:focus-within a{
-				color: white !important;
+			.image-wrapper a{
+				color: #404040 !important;
+				background-color: unset;
+			}
+			.image-wrapper a:hover,
+			.image-wrapper a:focus{
+				color: #e3e3e3 !important;
 				background-color: unset;
 			}
 		</style>
@@ -90,7 +94,7 @@
 				
 				<div class="image-wrapper">
 				<img class="content-holder-2" src="site-images/liv_012001_0001_deriv-1399px.jpg" srcset="site-images/liv_012001_0001_deriv-1399px.jpg 1399w, site-images/liv_012001_0001_deriv-1276px.jpg 1276w, site-images/liv_012001_0001_deriv-1216px.jpg 1216w, site-images/liv_012001_0001_deriv-699px.jpg 699w, site-images/liv_012001_0001_deriv-638px.jpg 638w, site-images/liv_012001_0001_deriv-608px.jpg 608w, site-images/liv_012001_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Agnes Livingstone, Thomas Livingstone, Abdullah Susi, James Chuma, Horace Waller with manuscripts." title="Colorised version of R. Allen & Sons, “Agnes and Thomas Livingstone (Daughter and Son of David Livingstone), Abdullah Susi, James Chuma, and Rev. Horace Waller at Newstead Abbey, Nottingham, Discussing the Journals, Maps, and Plans Made by the Late David Livingstone” (1874), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_012001. SOAS Library, University of London. Copyright Council for World Mission. Used by permission for private study, educational or research purposes only." />
-				<p class="caption"><a href="#caption" title="Image details" alt="Information symbol"><i class="fa fa-info-circle"></i></a></p>
+				<a href="#caption" title="Image details" alt="Information symbol"><p class="caption"><i class="fa fa-info-circle"></i></p></a>
 				</div>
 
 				

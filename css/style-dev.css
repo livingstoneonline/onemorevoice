@@ -371,23 +371,29 @@ a:focus img{
 	line-height: 0;
 }
 .image-wrapper .caption{
-	font-size: 1.7em;
+	font-size: 1.5em;
 	font-weight: normal;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	background-color: #e3e3e3;
 	border: 2px solid #595959;
 	border-radius: 4px;
 	margin: 0;
-	padding: 4px 6px;
+	padding: 2px 4px;
 	bottom: 7px;
 	right: 7px ;
 	position: absolute;
 }
-.image-wrapper .caption70 {
-	margin-right: 15%;
-}
-.image-wrapper .caption73 {
-	margin-right: 13.5%;
+@media screen and (min-width:480px) {
+	.image-wrapper .caption{
+		font-size: 1.7em;
+		padding: 4px 6px;
+	}
+	.image-wrapper .caption70 {
+		margin-right: 15%;
+	}
+	.image-wrapper .caption73 {
+		margin-right: 13.5%;
+	}
 }
 .image-wrapper .caption:hover,
 	.image-wrapper .caption:focus-within{

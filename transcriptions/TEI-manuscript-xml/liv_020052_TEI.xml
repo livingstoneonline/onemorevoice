@@ -19,14 +19,6 @@
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
-				<respStmt xml:id="HB">
-					<name>Heather F. Ball</name>
-					<resp>Transcription</resp>
-					<resp>TEI Encoding</resp>
-					<resp>Editorial Decisions</resp>
-					<resp>Proofing</resp>
-					<resp>Coding Review</resp>
-				</respStmt>
 				<respStmt xml:id="MBT">
 					<name>Mary Borgo Ton</name>
 					<resp>Transcription</resp>
@@ -56,7 +48,7 @@
 				<authority>One More Voice</authority>
 				<publisher>Livingstone Online</publisher>
 				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-				<date>2020</date>
+				<date>2021</date>
 				<idno type="LEAP-ID">liv_020052</idno>
 				<!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- Edit <availability> as relevant -->
@@ -120,6 +112,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-12-14" who="#AW">Coding review</change>
 			<change when="2020-12-14" who="#AM">Proofing</change>
 			<change when="2020-12-04" who="#MBT">Transcription and TEI encoding</change>
 		</revisionDesc>
@@ -142,18 +135,27 @@
 <!-- I've divided the content in to sections. Adrian will have to develop custom CSS for this to display correctly. MBT -->
 <!-- hands need to be added. MBT --><!-- I've no idea what is meant by this but have left it alone AM -->
 
-<!-- left section -->
-<lb/><p rend="no-indent"><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1876-07-04">July 4/76</date></p>
-<lb/><p rend="no-indent"><persName>HV</persName></p>
-<lb/><p rend="no-indent"><persName>GS</persName></p>
-<lb/><p rend="no-indent"><persName>C.C.F.</persName></p>
+	<div n="wrapper1 liv_020052_0001">
 
-<!-- right section -->
-<lb/><p rend="no-indent"><unclear>(not to be copied)</unclear></p>
+	<!-- left section -->
+	<div n="block1 liv_020052_0001" rend="small">
+<lb/><p rend="no-indent"><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1876-07-04">July 4/<choice><abbr>76</abbr><expan>1876</expan></choice></date></p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/><persName>HV</persName></p>
+<lb/><p rend="no-indent"><space extent="3" unit="chars"/><persName>GS</persName></p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/><persName>C.C.F.</persName></p>
+	</div>
+
+	<!-- right section -->
+	<div n="block1 liv_020052_0001">
+<lb/><p rend="no-indent" n="text"><space extent="2" unit="words"/>(not to be copied)</p>
 <lb/><p rend="no-indent"><date when="1876-05-02">May 2<hi rend="sup underline">nd</hi> 1876</date></p>
+	</div>
+
+	</div>
 				
-<!-- body -->
-<lb/><p rend="no-indent">My dear Papa</p>
+	<!-- body -->
+	<div>
+<p rend="no-indent">My dear Papa</p>
 <lb/><p><space extent="8" unit="chars"/>I have given a month's
 <lb/>notice to <persName>Mr Handford</persName> to leave
 <lb/>the work of the school entirely.
@@ -161,7 +163,7 @@
 <lb/>to think that I dislike it <w>al<supplied><seg type="hyphen">-</seg></supplied>
 <lb break="no"/>to-gether</w>; but I am delighted in this
 <lb/>great work I have been working
-<lb/>as you know here and in <unclear cert="medium"><placeName>Rabai</placeName></unclear>
+<lb/>as you know here and in <unclear cert="medium"><settlement>Rabai</settlement></unclear>
 <lb/>without showing any sign of <w>disa<supplied><seg type="hyphen">-</seg></supplied>
 <lb break="no"/>tisfaction</w> and <add place="below"><seg type="metamark">^</seg></add> <add place="above">now</add> what makes me to have
 <lb/>some dislike of it? It is not the 
@@ -180,12 +182,14 @@
 <lb/>work, as there are plenty to 
 <lb/>do here.</p>
 <lb/>
-<lb/><p rend="right">I remain yours
-<lb/>failthfully
-<lb/><hi rend="underline"><persName>J. Wainwright</persName></hi></p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/>I remain yours
+<lb/><space extent="4" unit="words"/>failthfully
+<lb/><space extent="3" unit="words"/><hi rend="underline"><persName>J. Wainwright</persName></hi></p>
 <lb/>
-<lb/><p rend="no-indent"><add place="inline" hand="#U" rend="gray vertical
-">023/54C</add></p>
+<lb/><ab rend="no-indent small" n="addition liv_020052_0002"><add place="inline" hand="#U" rend="gray vertical
+">023/54C</add></ab>
+	</div>
+
 			</div>
 		</body>
 	</text>

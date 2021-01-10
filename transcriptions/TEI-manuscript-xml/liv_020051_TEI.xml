@@ -19,14 +19,6 @@
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
-				<respStmt xml:id="HB">
-					<name>Heather F. Ball</name>
-					<resp>Transcription</resp>
-					<resp>TEI Encoding</resp>
-					<resp>Editorial Decisions</resp>
-					<resp>Proofing</resp>
-					<resp>Coding Review</resp>
-				</respStmt>
 				<respStmt xml:id="MBT">
 					<name>Mary Borgo Ton</name>
 					<resp>Transcription</resp>
@@ -56,7 +48,7 @@
 				<authority>One More Voice</authority>
 				<publisher>Livingstone Online</publisher>
 				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-				<date>2020</date>
+				<date>2021</date>
 				<idno type="LEAP-ID">liv_020051</idno>
 				<!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- Edit <availability> as relevant -->
@@ -120,6 +112,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2020-12-14" who="#AW">Coding review</change>
 			<change when="2020-12-14" who="#AM">Proofing</change>
 			<change when="2020-12-04" who="#MBT">Transcription and TEI encoding</change>
 		</revisionDesc>
@@ -128,9 +121,9 @@
 	<text>
 		<!-- These are images of microfilmed copies so original colors are not available. AW -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body>
+		<body n="fff">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div>
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -142,53 +135,69 @@
 <!-- I've divided the content in to sections. Adrian will have to develop custom CSS for this to display correctly. MBT -->
 <!-- hands need to be added. MBT --><!-- I've no idea what is meant by this but have left it alone AM -->
 
-<!-- left section -->
-<lb/><p rend="no-indent"><space extent="3" unit="chars"></space><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1875-10-16">Oct 16/75</date></p>
-<lb/><p rend="no-indent"><persName>C.C.F.</persName> <date when="1875-10-09">10.9</date></p>
+	<div n="wrapper1 liv_020051_0001">
+
+	<!-- left section -->
+	<div n="block1 liv_020051_0001" rend="small">
+<p rend="no-indent"><space extent="2" unit="chars"/><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1875-10-16">Oct 16/<choice><abbr>75</abbr><expan>1875</expan></choice></date></p>
+<lb/><p rend="no-indent"><seg n="initials"><persName>C.C.F.</persName></seg> <date when="1875-10-09">10.9</date></p>
 <lb/><p rend="no-indent"><persName>HW.</persName> <date when="1875-10-20">20/10</date></p>
+	</div>
 				
-<!-- center section -->
-<lb/><p>Private</p>
-				
-<!-- right section -->
-<lb/><p rend="no-indent">78<space extent="1" unit="words"></space><hi rend="underline">19</hi></p>
-<lb/><p rend="no-indent"><settlement>Mombasa</settlement> <bloc>East Africa</bloc></p>
-<lb/><p rend="no-indent"><date when="1875-09-15">September 15<hi rend="sup underline">th</hi> 1875</date></p>
+	<!-- right section -->
+	<div n="block2 liv_020051_0001">
+<p rend="no-indent gray small"><space extent="2" unit="words"/><seg n="number1">78</seg> <space extent="2" unit="words"/><seg n="number2"><hi rend="underline overline">19</hi></seg></p>
+<lb/><p rend="no-indent" n="address"><settlement>Mombasa</settlement> <region>East Africa</region>.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><date when="1875-09-15">September 15<hi rend="sup underline">th</hi> 1875</date></p>
+	</div>
+
+	<!-- center section -->
+	<div n="block3 liv_020051_0001" rend="gray">
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>S.
+<lb/>Private</p>
+	</div>
+	</div>
 				
 <!-- body -->
 <!-- The following paragraph has been deleted by a later hand applying a large cross in pencil over the whole paragraph AM -->
-<lb/><p rend="no-indent">My dear Sir</p>
-<lb/><p><space extent="6" unit="chars"/>Much thanks to you &amp; to 
+	<div n="wrapper2 liv_020051_0001">
+<p rend="no-indent">My dear Sir</p>
+<lb/><p n="wrapper2 liv_020051_0001">
+<seg n="deletion1 liv_020051_0001"></seg>
+<seg n="deletion2 liv_020051_0001"></seg>
+<space extent="6" unit="chars"/>Much thanks to you &amp; to 
 <lb/>your family. I have received the knife 
 <lb/>which you have kindly sent me. 
 <lb/>It is the best, useful &amp; most <w>va<seg type="hyphen">-</seg>
 <lb break="no"/>luable</w> knife I ever had. I shall
 <lb/>take great care of it one would
 <lb/>take much interest to see it.
-<lb/>I am still at <placeName>Kisulutimi</placeName>. I am going
+<lb/>I am still at <settlement>Kisulutimi</settlement>. I am going
 <lb/>on with the school with few <w>child<seg type="hyphen">-</seg>
 <lb break="no"/>ren</w> to which some are added from
 <lb/>the rescued slaves. May Heaven
 <lb/>conduct and help us in this &amp; this
 <lb/>may be the means of bringing the <unclear cert="medium">route</unclear>
-<lb/>to the eternal joy.</p>
-<lb/><p rend="no-indent"><add place="inline" hand="#U" rend="gray">35</add></p>
-				
+<lb/><space extent="1" unit="chars"/>to the eternal joy.</p>
+<lb/><p rend="no-indent"><add place="inline" hand="#U" rend="gray small">35</add></p>
+	</div>
+	
+	<div>			
 <pb facs="liv_020051_0002" n="0002"/>
 <lb/><p rend="no-indent">I have received the letter from <persName>Dr
 <lb/>Foster</persName>. There are much work going on 
 <lb/>at <settlement>Frere Town</settlement>. The consul was very -
 <lb/>much delighted with the place.</p>
 <lb/><p rend="no-indent"><persName>Mr Sparshott</persName> will be soon coming.
-<lb/>Please to give my best regards to
-<lb/><persName>Winifred</persName> &amp; <persName>Claude</persName>. I have a great <w>de<seg type="hyphen">-</seg>
-<lb break="no"/>sire</w> to come and see you once more.</p>
+<lb/><space extent="1" unit="chars"/>Please to give my best regards to
+<lb/><space extent="1" unit="chars"/><persName>Winifred</persName> &amp; <persName>Claude</persName>. I have a great <w>de<seg type="hyphen">-</seg>
+<lb break="no"/><space extent="1" unit="chars"/>sire</w> to come and see you once more.</p>
 <lb/>
 <lb/>
-<lb/><p rend="right">I remain yours
-<lb/><choice><abbr>affec<hi rend="underline">t</hi><!-- .. underneath the underline --></abbr><expan>affectionate</expan></choice> &amp; grateful
-<lb/><hi rend="double-underline"><persName>Jacob Wainwright</persName></hi></p>
-
+<lb/><p rend="no-indent"><space extent="4" unit="words"/>I remain yours
+<lb/><space extent="5" unit="words"/><choice><abbr>affec<hi rend="underline">t</hi><!-- .. underneath the underline --></abbr><expan>affectionate</expan></choice> &amp; grateful
+<lb/><space extent="4" unit="words"/><space extent="2" unit="chars"/><hi rend="double-underline"><persName>Jacob Wainwright</persName></hi></p>
+	</div>
 
 			</div>
 		</body>

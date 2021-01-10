@@ -1490,9 +1490,7 @@ table .linenumber{
 .wrapper1.liv_020051_0001{
     position: relative;
 }
-.block1.liv_020051_0001{
-    float: left;
-}
+.block1.liv_020051_0001,
 .block2.liv_020051_0001{
     float: left;
 }
@@ -1565,6 +1563,21 @@ table .linenumber{
 	-webkit-transform:rotate(-27deg); /* Safari and Chrome */
     -o-transform:rotate(-27deg); /* Opera */
     right: 11em;
+}
+.block1.liv_020052_0001,
+.block2.liv_020052_0001{
+    float: left;
+}
+.block2.liv_020052_0001 .text{
+    font-size: .8em;
+}
+.addition.liv_020052_0002{
+    transform: rotate(275deg);
+    -ms-transform:rotate(275deg); /* IE 9 */
+    -moz-transform:rotate(275deg); /* Firefox */
+    -webkit-transform:rotate(275deg); /* Safari and Chrome */
+    -o-transform:rotate(275deg); /* Opera */
+    margin-left: -1.5em;
 }
 @media only screen and (min-width:480px){
     .table.liv_020058_0070{

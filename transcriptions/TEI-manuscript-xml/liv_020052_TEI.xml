@@ -121,9 +121,9 @@
 	<text>
 		<!-- These are images of microfilmed copies so original colors are not available. AW -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body>
+		<body n="fff">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div>
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -146,16 +146,19 @@
 	</div>
 
 	<!-- right section -->
-	<div n="block1 liv_020052_0001">
-<lb/><p rend="no-indent" n="text"><space extent="2" unit="words"/>(not to be copied)</p>
+	<div n="block2 liv_020052_0001">
+<lb/><p rend="no-indent" n="text"><space extent="1" unit="words"/>(not to be copied)</p>
 <lb/><p rend="no-indent"><date when="1876-05-02">May 2<hi rend="sup underline">nd</hi> 1876</date></p>
+<lb/>
+<lb/>
+<lb/>
 	</div>
 
 	</div>
 				
 	<!-- body -->
 	<div>
-<p rend="no-indent">My dear Papa</p>
+<lb/><p rend="no-indent">My dear Papa</p>
 <lb/><p><space extent="8" unit="chars"/>I have given a month's
 <lb/>notice to <persName>Mr Handford</persName> to leave
 <lb/>the work of the school entirely.

@@ -988,6 +988,14 @@ table .linenumber{
 	font-style: normal;
 	font-display: swap;
 }
+@font-face{
+    font-family: 'parisienneregular';
+    src: url('../fonts/parisienne-regular-webfont.woff2') format('woff2'),
+         url('../fontsparisienne-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 @font-face {
     font-family: 'unifrakturcookbold';
     src: url('../fonts/unifrakturcook-bold-webfont.woff2') format('woff2'),
@@ -1478,6 +1486,85 @@ table .linenumber{
 .address.liv_020032_0001{
     color: #204A79;
     font-family: unifrakturmaguntiabook;
+}
+.wrapper1.liv_020051_0001{
+    position: relative;
+}
+.block1.liv_020051_0001{
+    float: left;
+}
+.block2.liv_020051_0001{
+    float: left;
+}
+.block1.liv_020051_0001 .initials{
+    line-height: 0;
+    vertical-align: baseline;
+    position: relative;
+    top: -.5em;
+}
+.block2.liv_020051_0001 .number1,
+.block2.liv_020051_0001 .number2{
+    transform: rotate(352deg);
+    -ms-transform:rotate(352deg); /* IE 9 */
+    -moz-transform:rotate(352deg); /* Firefox */
+    -webkit-transform:rotate(352deg); /* Safari and Chrome */
+    -o-transform:rotate(352deg); /* Opera */
+    display: inline-block;
+}
+.block2.liv_020051_0001 .address{
+    font-size: 1.35em;
+    font-family: 'parisienneregular';
+}
+.block3.liv_020051_0001{
+    font-size: 2.4em;
+    font-family: 'dancing_scriptregular';
+    opacity: 0.7;
+}
+@media only screen and (min-width: 768px){
+    .block3.liv_020051_0001{
+        line-height: 1.1em;
+        transform: rotate(334deg);
+        -ms-transform:rotate(334deg); /* IE 9 */
+        -moz-transform:rotate(334deg); /* Firefox */
+        -webkit-transform:rotate(334deg); /* Safari and Chrome */
+        -o-transform:rotate(334deg); /* Opera */
+        top: -1.3em;
+        left: .9em;
+        position: absolute;
+    }
+    .rotate .block3.liv_020051_0001{
+        position: unset;
+    }
+}
+.wrapper2.liv_020051_0001{
+    position: relative;
+}
+.deletion1.liv_020051_0001,
+.deletion2.liv_020051_0001{
+    position: absolute;
+    height: 100%;
+}
+.rotate .deletion1.liv_020051_0001,
+.rotate .deletion2.liv_020051_0001{
+    border-left: none;
+}
+.deletion1.liv_020051_0001{
+    border-left: 2px solid #bfbfbf;
+    transform: rotate(19deg);
+	-ms-transform:rotate(19deg); /* IE 9 */
+	-moz-transform:rotate(19deg); /* Firefox */
+	-webkit-transform:rotate(19deg); /* Safari and Chrome */
+    -o-transform:rotate(19deg); /* Opera */
+    left: 7.5em;
+}
+.deletion2.liv_020051_0001{
+    border-left: 2px solid #bfbfbf;
+    transform: rotate(-27deg);
+	-ms-transform:rotate(-27deg); /* IE 9 */
+	-moz-transform:rotate(-27deg); /* Firefox */
+	-webkit-transform:rotate(-27deg); /* Safari and Chrome */
+    -o-transform:rotate(-27deg); /* Opera */
+    right: 11em;
 }
 @media only screen and (min-width:480px){
     .table.liv_020058_0070{

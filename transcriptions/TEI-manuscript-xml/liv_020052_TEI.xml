@@ -43,6 +43,14 @@
 					<resp>Proofing</resp>
 					<resp>Coding Review</resp>
 				</respStmt>
+				<respStmt xml:id="AM">
+					<name>Anne M. Martin</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<authority>One More Voice</authority>
@@ -112,7 +120,8 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="2020-11-19" who="#MBT"></change>
+			<change when="2020-12-14" who="#AM">Proofing</change>
+			<change when="2020-12-04" who="#MBT">Transcription and TEI encoding</change>
 		</revisionDesc>
 	</teiHeader>
 
@@ -130,11 +139,53 @@
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
 <pb facs="liv_020052_0001" n="0001"/>
+<!-- I've divided the content in to sections. Adrian will have to develop custom CSS for this to display correctly. MBT -->
+<!-- hands need to be added. MBT --><!-- I've no idea what is meant by this but have left it alone AM -->
 
-<!-- For a manuscript, use <lb/> -->
+<!-- left section -->
+<lb/><p rend="no-indent"><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1876-07-04">July 4/76</date></p>
+<lb/><p rend="no-indent"><persName>HV</persName></p>
+<lb/><p rend="no-indent"><persName>GS</persName></p>
+<lb/><p rend="no-indent"><persName>C.C.F.</persName></p>
+
+<!-- right section -->
+<lb/><p rend="no-indent"><unclear>(not to be copied)</unclear></p>
+<lb/><p rend="no-indent"><date when="1876-05-02">May 2<hi rend="sup underline">nd</hi> 1876</date></p>
+				
+<!-- body -->
+<lb/><p rend="no-indent">My dear Papa</p>
+<lb/><p><space extent="8" unit="chars"/>I have given a month's
+<lb/>notice to <persName>Mr Handford</persName> to leave
+<lb/>the work of the school entirely.
+<lb/>It must by<hi rend="underline"> no means</hi> lead you
+<lb/>to think that I dislike it <w>al<supplied><seg type="hyphen">-</seg></supplied>
+<lb break="no"/>to-gether</w>; but I am delighted in this
+<lb/>great work I have been working
+<lb/>as you know here and in <unclear cert="medium"><placeName>Rabai</placeName></unclear>
+<lb/>without showing any sign of <w>disa<supplied><seg type="hyphen">-</seg></supplied>
+<lb break="no"/>tisfaction</w> and <add place="below"><seg type="metamark">^</seg></add> <add place="above">now</add> what makes me to have
+<lb/>some dislike of it? It is not the 
+<lb/>work itself but <hi rend="underline">freedom in teaching</hi>
+<lb/>I wish that it were given to me
+<lb/>to undertake another <w>bra<add place="below"><seg type="metamark">^</seg></add><add place="above">n</add>ch</w> of
+<lb/>the same work; that is to make
 
 <pb facs="liv_020052_0002" n="0002"/>
-
+<lb/><hi rend="underline">an infant school</hi> in another
+<lb/>place, (it may be sure that there
+<lb/>are more slaves to come), it should
+<lb/>be under my own guidance.
+<lb/>I know at present there is 
+<lb/>danger for me in getting no
+<lb/>work, as there are plenty to 
+<lb/>do here.</p>
+<lb/>
+<lb/><p rend="right">I remain yours
+<lb/>failthfully
+<lb/><hi rend="underline"><persName>J. Wainwright</persName></hi></p>
+<lb/>
+<lb/><p rend="no-indent"><add place="inline" hand="#U" rend="gray vertical
+">023/54C</add></p>
 			</div>
 		</body>
 	</text>

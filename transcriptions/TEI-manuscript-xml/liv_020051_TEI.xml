@@ -43,6 +43,14 @@
 					<resp>Proofing</resp>
 					<resp>Coding Review</resp>
 				</respStmt>
+				<respStmt xml:id="AM">
+					<name>Anne M. Martin</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
 			</titleStmt>
 			<publicationStmt>
 				<authority>One More Voice</authority>
@@ -112,7 +120,8 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="2020-11-19" who="#MBT"></change>
+			<change when="2020-12-14" who="#AM">Proofing</change>
+			<change when="2020-12-04" who="#MBT">Transcription and TEI encoding</change>
 		</revisionDesc>
 	</teiHeader>
 
@@ -130,10 +139,56 @@
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
 <pb facs="liv_020051_0001" n="0001"/>
+<!-- I've divided the content in to sections. Adrian will have to develop custom CSS for this to display correctly. MBT -->
+<!-- hands need to be added. MBT --><!-- I've no idea what is meant by this but have left it alone AM -->
 
-<!-- For a manuscript, use <lb/> -->
-
+<!-- left section -->
+<lb/><p rend="no-indent"><space extent="3" unit="chars"></space><choice><abbr>Rec<hi rend="sup underline">d</hi></abbr><expan>Received</expan></choice> <date when="1875-10-16">Oct 16/75</date></p>
+<lb/><p rend="no-indent"><persName>C.C.F.</persName> <date when="1875-10-09">10.9</date></p>
+<lb/><p rend="no-indent"><persName>HW.</persName> <date when="1875-10-20">20/10</date></p>
+				
+<!-- center section -->
+<lb/><p>Private</p>
+				
+<!-- right section -->
+<lb/><p rend="no-indent">78<space extent="1" unit="words"></space><hi rend="underline">19</hi></p>
+<lb/><p rend="no-indent"><settlement>Mombasa</settlement> <bloc>East Africa</bloc></p>
+<lb/><p rend="no-indent"><date when="1875-09-15">September 15<hi rend="sup underline">th</hi> 1875</date></p>
+				
+<!-- body -->
+<!-- The following paragraph has been deleted by a later hand applying a large cross in pencil over the whole paragraph AM -->
+<lb/><p rend="no-indent">My dear Sir</p>
+<lb/><p><space extent="6" unit="chars"/>Much thanks to you &amp; to 
+<lb/>your family. I have received the knife 
+<lb/>which you have kindly sent me. 
+<lb/>It is the best, useful &amp; most <w>va<seg type="hyphen">-</seg>
+<lb break="no"/>luable</w> knife I ever had. I shall
+<lb/>take great care of it one would
+<lb/>take much interest to see it.
+<lb/>I am still at <placeName>Kisulutimi</placeName>. I am going
+<lb/>on with the school with few <w>child<seg type="hyphen">-</seg>
+<lb break="no"/>ren</w> to which some are added from
+<lb/>the rescued slaves. May Heaven
+<lb/>conduct and help us in this &amp; this
+<lb/>may be the means of bringing the <unclear cert="medium">route</unclear>
+<lb/>to the eternal joy.</p>
+<lb/><p rend="no-indent"><add place="inline" hand="#U" rend="gray">35</add></p>
+				
 <pb facs="liv_020051_0002" n="0002"/>
+<lb/><p rend="no-indent">I have received the letter from <persName>Dr
+<lb/>Foster</persName>. There are much work going on 
+<lb/>at <settlement>Frere Town</settlement>. The consul was very -
+<lb/>much delighted with the place.</p>
+<lb/><p rend="no-indent"><persName>Mr Sparshott</persName> will be soon coming.
+<lb/>Please to give my best regards to
+<lb/><persName>Winifred</persName> &amp; <persName>Claude</persName>. I have a great <w>de<seg type="hyphen">-</seg>
+<lb break="no"/>sire</w> to come and see you once more.</p>
+<lb/>
+<lb/>
+<lb/><p rend="right">I remain yours
+<lb/><choice><abbr>affec<hi rend="underline">t</hi><!-- .. underneath the underline --></abbr><expan>affectionate</expan></choice> &amp; grateful
+<lb/><hi rend="double-underline"><persName>Jacob Wainwright</persName></hi></p>
+
 
 			</div>
 		</body>

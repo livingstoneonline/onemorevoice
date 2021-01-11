@@ -132,6 +132,14 @@
 		            css.type = "text/css";
 		            css.href = "../css/styleTEI.css?=" + randomString;
 		            document.head.appendChild(css);
+					<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
+			            var randomString = Math.floor(Math.random()*1000000);
+			            var css = document.createElement("link");
+			            css.rel = "stylesheet";
+			            css.type = "text/css";
+			            css.href = "../css/styleTEI-add.css?=" + randomString;
+			            document.head.appendChild(css);
+					</xsl:if>
 		        </script>
 		        <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"/> --> 
 				<script src="../scripts/jquery-3.5.1.min.js"></script> 

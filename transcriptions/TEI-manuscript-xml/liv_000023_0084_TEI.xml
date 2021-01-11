@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_000023"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Central African Fables (Excerpts from David Livingstone's Notebook, [March 1866-March 1870])</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Central African Fables (Excerpts from David Livingstone's Notebook, [March 1866-March 1870]), [c.1868-70]</title><!-- Title, date -->
+				<author>[Unnamed African Informants]</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Livingstone, David, 1813-1873</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="first">[Unnamed African Informants]</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">[Unnamed African Informants]</author><!-- First author only: Forename Surname -->
+				<author role="normalized">David Livingstone</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <principal>Heather F. Ball</principal>
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="HB">
+                    <name>Heather F. Ball</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AM">
+                    <name>Anne M. Martin</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>Transcription</resp>
+                    <resp>TEI Encoding</resp>
+                    <resp>Editorial Decisions</resp>
+                    <resp>Proofing</resp>
+                    <resp>Coding Review</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2020</date>
+                <idno type="LEAP-ID">liv_000023</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000023">Livingstone Online</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+            <sourceDesc>
+                <msDesc type="manuscript">
+                    <msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>Blantyre</settlement><!-- Repository city -->
+                        <repository>David Livingstone Centre</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">807</idno><!-- Shelfmark/Identifier -->
+                    </msIdentifier>
+                    <physDesc>
+                        <handDesc>
+                            <handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Central African Fables (Excerpts from David Livingstone's Notebook, [March 1866-March 1870])</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="UAAI">[Unnamed African Informants]</author>
+					<author xml:id="DL">Livingstone, David, 1813-1873</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="composition" from="1868" to="1870">[c.1868-70]</date>
+					<!-- See item for composition place; leave blank if not given -->
+                    <placeName type="compositionPlace">[Central Africa]</placeName>
+                </bibl>
+            </sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+            <change when="2020-12-18" who="#MBT">Review</change>
+			<change when="2020-11-25" who="#AM">Transcription and TEI Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+		<body n="bcbdb6"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div rend="brown"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+
+	<!-- Anne, please code only the vertical text on these three pages. No need to note that it is vertical, as I'll sort that out when I finalize it.
+ -->
+	<!--<pb facs="liv_000023_0084" n="0084"/>-->
+	<!--<cb n="1"/>-->
+	<pb facs="liv_020042_0084" n="0084"/>
+<lb/><p n="container liv_020042_0084"><seg n="line1 liv_020042_0084"></seg><seg n="line2 liv_020042_0084"></seg>Man &amp; his brother = <persName>Bisa</persName>
+<lb/>one went far to country
+<lb/><persName>Mehera</persName> one foot one leg
+<lb/>&amp; one eye one arm &amp;
+<lb/>long hair - <add place="above">carried <persName>Mehera</persName></add> came to land
+<lb/>of big <term type="insect">bees</term> - big <term type="animal">bird</term> - passed
+<lb/>fire went around - <persName><choice><orig>bera</orig><reg>Bera</reg></choice></persName>
+<lb/>went to fight &amp; when
+<lb/>the people saw one-eye
+<lb/>all died - came to a
+<lb/>big <term type="animal">serpent</term> &amp; <term type="animal">serpent</term>
+<lb/>said come on my
+<lb/>back - which had
+<lb/>fire inside - <foreign><term type="animal">Kimbi</term></foreign>
+<lb/>or <term type="animal">buffaloes</term> &amp; all fled
+<lb/>&amp; <term type="animal">Elephants</term> fled from
+<lb/><term type="animal">serpent</term> - stones also
+<lb/>were melted - came to
+<lb/>one man &amp; all women
+<lb/>of village brought forth - made<!-- "made" may belong to right-hand block - it is certainly physically located there but makes no sense there and could make sense in left block AM -->
+<lb/><term type="animal">snake</term> of hot fountain
+<lb/>All came to visit <term type="animal">serpent</term></p>
+<lb/>
+
+<!-- Heather I wasn't sure if this right-hand block should be included since it's not really part of any fable but looks like part of an account of a journey in search of the Nile, which starts on a previous page. However I transcribed it anyway, as best as I can AM -->
+<!-- Theres also illegible writing (at least in this light) bisecting the transcribed passages. MBT -->
+
+	<!--
+	<cb n="2"/>
+<lb/><p rend="no-indent"><geogName type="lake">Victoria Lake</geogName> - and every
+<lb/>step of their splendid <del type="strikethrough"><gap extent="1" unit="words" agent="illegible"/></del>
+<lb/><del type="strikethrough"><gap extent="1" unit="words" agent="illegible"/></del> <add place="above">march</add> of following the
+<lb/>river down took them
+<lb/>further and further away
+<lb/>from the head of the <geogName type="river">Nile</geogName>
+<lb/>The idea that this lake which
+<lb/>the <unclear cert="low"><term type="collective">Suaheli</term></unclear> assert to be three
+<lb/>or four Lakes <unclear cert="low">was</unclear> into one
+<lb/>huge Nyanza contained 20000
+<lb/>square miles of water confused
+<lb/>by sheer immensity - and
+<lb/>then the little <geogName type="river">White Nile</geogName> that
+<lb/>comes out of it less by a full
+<lb/>half than the <geogName type="river">Shire</geogName> out of
+<lb/><geogName type="lake">Nyassa</geogName> when <unclear cert="low">seen</unclear> to be
+<lb/>unfit to account for the
+<lb/><geogName type="river">Nile</geogName> but for devotion
+<lb/>to the foregone conclusion
+<lb/>they must have turned West</p>
+	-->
+
+
+	<!--<pb facs="liv_000023_0084" n="0085"/>-->
+	<!--<cb n="1"/>-->
+	<pb facs="liv_020042_0085" n="0085"/>
+<!-- note that the first line is only visible at end of page 84, and has been cut off at top of current page AM -->
+<lb/><p rend="no-indent" n="container liv_020042_0085"><seg n="line1 liv_020042_0085"></seg>&amp; gave food - stones
+<lb/>became food 
+<lb/>asked children from
+<lb/>each - <unclear cert="low">Cyhere</unclear><!-- Ghere? MBT --> &amp; they
+<lb/>Leaned on hill as
+<lb/>a pillow - <persName>Kituku</persName>
+<lb/>&amp; golak<del>q</del><add>w</add>a<!-- some overwriting here. Memory is fuzzy on how to do this: golak<del>q</del><add>w</add>a MBT --> -
+<lb/><persName>Gong</persName> <term type="animal">tortoise</term>
+<lb/><persName>Mache</persName> friend of his
+<lb/><persName>Mchere</persName> was caught
+<lb/>by trap <foreign>mtegoa</foreign>
+<lb/>frozen - would
+<lb/>not cut off <unclear>finge<supplied>r</supplied></unclear>
+<lb/>&amp; died then <persName>Gong</persName>
+<lb/>became sultan
+<lb/>on <choice><sic><term type="animal">serpent</term>s</sic><corr><term type="animal">serpent</term>'s</corr></choice> back
+<lb/>&amp; is so till this
+<lb/>day</p>
+<lb/>
+
+<!-- see above comment about 2 unrelated blocks on same page - note that the transformation assumes they ARE related and runs them on continuously; also note that the 1st line is only visible at end of page 84, and has been cut off at top of current page AM -->
+
+	<!--<cb n="2"/>
+<p rend="no-indent">valley and there <unclear cert="low">found <gap extent="1" unit="words" agent="illegible"/></unclear>
+<lb/>of ample <del type="cancelled">to</del> size to <unclear cert="medium">account</unclear> for
+<lb/>the whole <geogName type="river">Nile</geogName> with all its <gap extent="1" unit="words" agent="illegible"/>
+<lb/>and inundations.</p>
+<lb/><p><persName>Sir S Baker</persName> came further up the
+<lb/><geogName type="river">Nile</geogName> valley than any <unclear cert="low">other</unclear> in modern
+<lb/>times and to the last had his face
+<lb/>in the right direction for discovering
+<lb/>the sources, but he turned when
+<lb/>some seven <unclear cert="low">hours still</unclear> short
+<lb/>of them - the second <term type="collective">Egyptian</term>
+<lb/>expedition in <date when="1862">1862</date> made a great
+<lb/>stride and then <persName>Peterson</persName> as compared
+<lb/>with <gap extent="1" unit="words" agent="illegible"/> but it <gap extent="1" unit="words" agent="illegible"/> <add place="below"><seg type="metamark">^</seg></add> <add place="above">too</add> when
+<lb/>around a thousand miles short
+<lb/>of <unclear cert="low"><placeName>Mocaput</placeName></unclear> <geogName type="river">Nile</geogName> - Probably some
+<lb/>may still uphold <persName>Speke</persName> <persName>Grant</persName> and
+<lb/><persName>Baker</persName> as the Discoverers but no harm
+<lb/>will be done for all improved maps
+<lb/>will <choice><orig>shew</orig><reg>show</reg></choice> that their sources are from 500 to
+<lb/>700 miles down the great <geogName type="valley"><geogName type="river">Nile</geogName> valley</geogName> and 
+	<cb/>
+	
+
+
+	<pb facs="liv_000023_0084" n="0086"/>
+<lb/><add place="below"><seg type="metamark">^</seg></add> <add place="above">the real sources</add> will be pointed out as remarkable for being very
+<lb/>far South of what the most ardent imagination
+<lb/>in modern times ever dreamed - and <unclear cert="medium">only</unclear>
+<lb/><space extent="5" unit="words"/>were discovered by an
+<lb/><space extent="5" unit="words"/>examination of the
+<lb/><space extent="5" unit="words"/>waters <gap extent="1" unit="words" agent="illegible"/></p>
+	-->
+
+            </div>
+        </body>   
+    </text>
+</TEI>

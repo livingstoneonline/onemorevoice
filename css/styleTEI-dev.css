@@ -350,13 +350,19 @@ label.md_switch{
 	padding: unset;
 	display: unset;
 }
+.rotate .deletion1.liv_020051_0001,
+.rotate .deletion2.liv_020051_0001{
+    border-left: none;
+}
 @media only screen and (min-width: 768px){
-    .rotate .marginaltext.liv_000023_0037,
+	.rotate .marginaltext.liv_000023_0037,
+	.rotate .container.liv_000023_0084,
+	.rotate .container.liv_000023_0085,
     .rotate .text1.liv_000023_0115,
     .rotate .text2.liv_000023_0115,
     .rotate .note-1.liv_003027_0001,
     .rotate .text.liv_020011_0004,
-    .rotate .marginalnote.liv_020019_0002{
+	.rotate .marginalnote.liv_020019_0002{
         line-height: unset;
         float: none;
         padding: unset;
@@ -365,6 +371,9 @@ label.md_switch{
         right: unset;
         bottom: unset;
         left: unset;
+        position: unset;
+	}
+	.rotate .block3.liv_020051_0001{
         position: unset;
     }
 }
@@ -1048,6 +1057,38 @@ table .linenumber{
 .container.liv_000023_0085{
     position: relative;
 }
+@media only screen and (min-width: 768px){
+	.container.liv_000023_0084,
+	.container.liv_000023_0085{
+		float: left;
+		padding-top: 0;
+		margin: -20em 0em -25em -14em;
+		transform: rotate(270deg);
+		-ms-transform:rotate(270deg); /* IE 9 */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari and Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+		line-height: 1.2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.container.liv_000023_0084,
+	.container.liv_000023_0085{
+        line-height: 1.3em;
+		transform: rotate(270deg);
+		-ms-transform:rotate(270deg); /* IE 9 */
+		-moz-transform:rotate(270deg); /* Firefox */
+		-webkit-transform:rotate(270deg); /* Safari and Chrome */
+		-o-transform:rotate(270deg); /* Opera */
+        overflow: hidden;
+    }
+    .container.liv_000023_0084{
+        margin: -6em 0 -6em 2.75em;
+    }
+    .container.liv_000023_0085{
+        margin: -5em 0 -8em 6.5em;
+    }
+}
 .line1.liv_000023_0084,
 .line2.liv_000023_0084,
 .line1.liv_000023_0085{
@@ -1554,9 +1595,6 @@ table .linenumber{
         left: .9em;
         position: absolute;
     }
-    .rotate .block3.liv_020051_0001{
-        position: unset;
-    }
 }
 .wrapper2.liv_020051_0001{
     position: relative;
@@ -1565,10 +1603,6 @@ table .linenumber{
 .deletion2.liv_020051_0001{
     position: absolute;
     height: 100%;
-}
-.rotate .deletion1.liv_020051_0001,
-.rotate .deletion2.liv_020051_0001{
-    border-left: none;
 }
 .deletion1.liv_020051_0001{
     border-left: 2px solid #bfbfbf;

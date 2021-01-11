@@ -1118,12 +1118,48 @@ table.archival-text .details{
 	font-style: italic;
 	text-align: center;
 	color: #65615b;
+	margin: 3em auto 2em;
 }
 .gallery{      
 	text-align: center;
 	margin-bottom: -2.5em;
 	overflow: hidden;
 }
+.gallery section:last-of-type {
+	margin-bottom: 1em;
+}
+.gallery h4{
+	font-size: 1.05em;
+	font-style: normal;
+	font-weight: 600;
+	color: white;
+	background-color: #902D27;
+	padding: 10px 14px;
+	margin: 0 0 1.5em 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+}
+.gallery section:first-child h4:first-child{
+	margin-top: 0;
+}
+.gallery h4 .return-top{
+	font-size: .9em;
+	color: white;
+	white-space: nowrap;
+}
+@media only screen and (min-width: 480px){
+	.gallery h4 .return-top{
+		margin-right: 0.5em;
+	}
+}
+.gallery h4 a.return-top:focus,
+.gallery h4 a.return-top:hover{
+	color: #a83c37;
+	background-color: #e3e3e3;
+}	
 .gallery-item{
 	text-align: center;
 	display: inline-block;
@@ -1256,9 +1292,6 @@ table.archival-text .details{
 
 /* 1.14 Motion Pictures */
 
-h4#summary{
-	padding-top: 1em;
-}
 #films{
 	font-size: .85em;
 	line-height: 1.6em;

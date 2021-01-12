@@ -137,7 +137,7 @@
 			            var css = document.createElement("link");
 			            css.rel = "stylesheet";
 			            css.type = "text/css";
-			            css.href = "../css/styleTEI-add.css?=" + randomString;
+			            css.href = "http://livingstoneonline.github.io/onemorevoice/css/styleTEI-add.css?=" + randomString;
 			            document.head.appendChild(css);
 					</xsl:if>
 		        </script>

@@ -55,7 +55,7 @@ also see 2.9 for manuscript colors
 }
 .manuscript,
 .journal,
-.artifact{
+.object{
 	font-size: 1.3em;
 	line-height: 1.6em;
 	display: block;
@@ -63,7 +63,7 @@ also see 2.9 for manuscript colors
 @media only screen and (min-width: 992px){
 	.manuscript,
 	.journal,
-	.artifact{
+	.object{
 		font-size: 1.2em;
 		display: block !important; /* Tied to overlay */
 	}
@@ -153,11 +153,11 @@ also see 2.9 for manuscript colors
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
 }
-.artifact .TEI{
+.object .TEI{
 	padding: 0;
 }
 @media only screen and (min-width: 768px){
-	.artifact .TEI{
+	.object .TEI{
 		padding: 1em 0;
 	}
 }
@@ -388,7 +388,7 @@ label.md_switch{
 p.back-button{
 	margin-bottom: 2em;
 }
-/* #rotate button and .rotate-180 used for artifact images that need to be rotated */
+/* #rotate button and .rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
 	border: 0;
@@ -450,7 +450,7 @@ button::-moz-focus-inner{
 	width: 100%;
 	display: inline-block;
 }
-.artifact .pb-title{
+.object .pb-title{
 	text-align: left;
 	width: 100%;
 	display: inline-block;
@@ -459,7 +459,7 @@ button::-moz-focus-inner{
 .manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI.back .ms-container .div:first-of-type .pb-title:first-of-type,
 .journal .TEI .text .body .div .pb-title:first-of-type,
-.artifact .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type{
+.object .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type{
 	margin-top: 0;
 	padding-top: 0;
 	border-top: none;
@@ -518,11 +518,11 @@ button::-moz-focus-inner{
 }
 .manuscript .p,
 .manuscript .ab,
-.artifact .p,
-.artifact .ab{
+.object .p,
+.object .ab{
 	display: inline-block
 }
-.artifact .p{
+.object .p{
 	padding: 0;
 	margin: 0;
 }
@@ -866,25 +866,25 @@ table .linenumber{
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
 }
-.artifact .graphic{
+.object .graphic{
 	pointer-events: none;
 	/* cursor: default; */
 }
 @media only screen and (min-width: 768px){
-	.artifact .graphic{
+	.object .graphic{
 		pointer-events: unset;
 	}
 }
 @media only screen and (min-width: 480px){
-	.artifact.vertical img{
+	.object.vertical img{
 		width: 70%;
 	}
 }
-.artifact.gray img{
+.object.gray img{
 	border: 3px #E3E3E3 solid;
 }
-.artifact.gray a:hover img,
-.artifact.gray a:focus img{
+.object.gray a:hover img,
+.object.gray a:focus img{
 	border: 3px #204A79 solid;
 }
 .journal .image-small.inline-left{

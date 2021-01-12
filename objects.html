@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!-- The HTML code in this file has been adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) and per the guidelines there is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. -->
+<html lang="en" id="html">
+
+	<head>
+		<title>Historical Objects | One More Voice</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Historical Objects page for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+		<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
+		<meta name="theme-color" content="#204A79"/>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />		
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="preload" as="script" href="scripts/jquery-3.5.1.min.js"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
+		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-31768072-5');
+		</script>
+		<!-- Link to CSS file at end; critical CSS inlined here.-->
+        <style>
+        	html{font:16px Georgia,'Times New Roman',Times,serif;font-weight:400;color:#191716;overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto;-ms-word-break:break-all;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;scroll-behavior:smooth;overflow-x:hidden}body{top:0!important;margin:.5em auto;padding-bottom:.5em}@media only screen and (min-width:768px){body{font-size:.95em}}@media only screen and (min-width:992px){body{padding-bottom:0}body.fixed-nav{padding-top:0!important}}article{padding:0 1em;margin:.5em auto;max-width:100%}@media only screen and (min-width:768px){article{max-width:46em}}@media only screen and (min-width:992px){article{max-width:42em}}@media only screen and (min-width:320px){.navspace{min-height:63px}}@media only screen and (min-width:480px){.navspace{min-height:68px}}@media only screen and (min-width:768px){.navspace{min-height:73px}}@media only screen and (min-width:768px){.navspace{min-height:52px}}header{position:relative}.title,body.transcription .title{font-weight:700;text-align:center;line-height:1.6em;position:relative}.title{padding-bottom:0}body.transcription .title{padding-bottom:1em}@media only screen and (min-width:320px){.title{padding-bottom:.5em}body.transcription .title{padding-bottom:1.5em}}@media only screen and (min-width:480px){body.transcription .title{padding-bottom:.5em}}@media only screen and (min-width:992px){.title,body.transcription .title{padding-bottom:1.5em;display:block!important}}.header-title{display:none;visibility:hidden}@media only screen and (min-width:992px){.header-title{display:block;visibility:visible;margin:.75em 0 0.6em}}.title hr{display:none;visibility:hidden}@media only screen and (min-width:992px){.title hr{display:block;visibility:visible}}h1{font-size:2em;font-family:Georgia,'Times New Roman',Times,serif}@media only screen and (min-width:768px){h1{font-size:2.2em}}@media only screen and (min-width:992px){h1{font-size:3.2em}}header h2{font-size:.9em;font-weight:300;font-family:Arial,Geneva,Tahoma,sans-serif;display:none;visibility:hidden}@media only screen and (min-width:480px){header h2{font-size:1em;margin-top:1em;display:block;visibility:visible}}@media only screen and (min-width:768px){header h2{font-size:1.1em;margin-top:1em;display:block}}@media only screen and (min-width:992px){header h2{margin-top:1em}}h3{font-size:1em;font-weight:700;color:#204a79}h3.subsection{padding-top:2em}.essay h3{clear:both}.credits h3{font-size:1.15em;margin-top:1.6em}h4{font-style:italic;font-size:1em;font-weight:300}.subsection{padding-top:1.5em}img{color:#e6e6e6;font-weight:300;width:100%;max-width:100%}a img{border:3px transparent solid}a:focus img,a:hover img{border:3px #204a79 solid}.image-border{border:1px solid gray}@media screen and (min-width:480px){.responsive-image70{width:70%}.responsive-image73{width:73%}.caption70{padding:0 15%}.caption73{padding:0 13.5%}}.content-holder-1,.content-holder-2,.content-holder-3,.content-holder-4,.content-holder-5{background:#e6e6e6;display:inline-block}@media screen and (min-width:320px){.content-holder-1{min-height:66px}.content-holder-2{min-height:181px}.content-holder-3{min-height:206px}.content-holder-4{min-height:229px}.content-holder-5{min-height:339px}}@media screen and (min-width:480px){.content-holder-1{min-height:106px}.content-holder-2{min-height:285px}.content-holder-3{min-height:322px}.content-holder-4{min-height:359px}.content-holder-5{min-height:370px}}@media screen and (min-width:768px){.content-holder-1{min-height:169px}.content-holder-2{min-height:447px}.content-holder-3{min-height:504px}.content-holder-4{min-height:563px}.content-holder-5{min-height:580px}}@media screen and (min-width:992px){.content-holder-1{min-height:155px}.content-holder-2{min-height:409px}.content-holder-3{min-height:461px}.content-holder-4{min-height:514px}.content-holder-5{min-height:529px}}.image-wrapper{position:relative;padding:0;margin:0;line-height:0}.image-wrapper .caption{font-size:1.5em;font-weight:normal;font-family:Arial, Geneva, Tahoma, sans-serif;background-color:#e3e3e3;border:2px solid #595959;border-radius:4px;margin:0;padding:2px 4px;bottom:7px;right:7px;position:absolute}@media screen and (min-width:480px){.image-wrapper .caption{font-size:1.7em;padding:4px 6px}.image-wrapper .caption70{margin-right:15%}.image-wrapper .caption73{margin-right:13.5%}}.image-wrapper .caption:focus-within,.image-wrapper .caption:hover{background-color:#595959;border:2px solid #e3e3e3}@media only screen and (min-width: 992px){.image-wrapper .caption:focus-within,.image-wrapper .caption:hover{background-color:#204A79;border:2px solid #e3e3e3}}.image-wrapper a{color:#595959 !important;background-color:unset}.image-wrapper a:focus,.image-wrapper a:hover{color:#e3e3e3 !important;background-color:unset}a,a:visited{color:#204A79}a:hover{color:#a83c37;background-color:#E3E3E3}a:focus{color:#2b61a1;background-color:#E3E3E3}.graphic a:focus,.graphic a:hover{background-color:white}*:focus{outline:0 none}@font-face{font-family:'source_sans_proregular';src:url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');font-weight:normal;font-style:normal;font-display:block}.main{font-size:1.3em;text-align:left;line-height:1.6em;margin-left:auto;margin-right:auto}@media only screen and (min-width: 992px){.main{font-size:1.2em;display:block !important}}body.essay .main{padding-bottom:1em}.toc{font-size:0.9em;padding:1em 0 0}.toc-title{list-style-type:none;margin-left:-1.2em;display:inline-block}.return-top{font:16px 'source_sans_proregular', Helvetica, sans-serif;font-size:0.9em}  
+		</style>
+	</head>
+
+	<!-- <?php flush(); ?> -->
+
+	<body class="essay">
+		<article>	
+
+		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
+
+			<div class="navspace" data-include="nav1"></div>
+
+			<header class="title" id="title-div">
+				<div class="image-wrapper">
+					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+					<img class="content-holder-3" src="site-images/liv_023003_0001_deriv-1399px.jpg" srcset="site-images/liv_023003_0001_deriv-400px.jpg 400w, site-images/liv_023003_0001_deriv-608px.jpg 608w, site-images/liv_023003_0001_deriv-638px.jpg 638w, site-images/liv_023003_0001_deriv-699px.jpg 699w, site-images/liv_023003_0001_deriv-1216px.jpg 1216w, site-images/liv_023003_0001_deriv-1276px.jpg 1276w, site-images/liv_023003_0001_deriv-1399px.jpg 1399w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Semane Khama (seated), Tshekedi Khama (standing, background), and councillors (all standing)." title="Anonymous, “Semane Khama, Tshekedi Khama, and Councillors at Tiger Kloof” (Photograph, 1933), CWM/LMS/Home/Missionary Portraits/Box 12/File 34/1, University of London. School of Oriental and African Studies, London. Image from the Council for World Mission Archive, SOAS Library, University of London. Used by permission for private study, educational or research purposes only." />
+					<a id="information" class="caption" href="#caption" aria-label="Go to image caption" title="Image information" alt="Information symbol"><i class="fa fa-info-circle"></i></a>
+				</div>
+				
+				<h1 class="header-title">One More Voice</h1>
+				<hr />
+				<h2><em>Lost Voices from the British Empire's Archives</em></h2>
+			</header>
+			
+			<!-- This page is dedicated to Didi. 26 July 2020 -->
+			
+			<main class="main" id="main">
+				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+
+				<h3>Historical Objects</h3>
+
+				<section class="toc" aria-labelledby="menu-sections">
+					<ol id="menu-sections">
+						<li class="toc-title">[Menu: Sections]</li>
+						<li><a href="#summary">Overview</a></li>
+						<li><a href="#images">Creator Images</a></li>
+						<li><a href="#manuscripts">Manuscripts</a></li>
+						<li><a href="#creative">Creative Works</a></li>
+						<!-- <li><a href="#cultural">Relevant Cultural Objects</a></li> -->
+						<!-- <li><a href="#miscellaneous">Miscellaneous</a></li> -->
+					</ol>
+				</section>
+
+				<hr class="title-hr" />
+
+				<section aria-labelledby="summary">
+					<h4 id="summary">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+
+					<p>This section collects historical objects relevant to <em>One More Voice</em> and so complements the items found on the pages for <a href="texts.html">critically-edited archival texts</a>, <a href="books.html">book-length published works</a>, and <a href="motion_pictures.html">motions pictures</a>. The section includes <a href="#images">images</a> (photographs and illustrations) of the creators featured on the site, a selection of relevant <a href="#manuscripts">manuscripts</a>, and a small set of <a href="#creative">creative works</a> (paintings, photographs, other material objects), including works by contemporaneous non-European artists. Creator images are arranged alphabetically by subject, while manuscripts and creatives works are organized by creator. For each item, the page provides a thumbnail image that links to the full documentary record for the given item and to a larger-resolution, uncropped version of the item image.</p>
+				</section>
+
+				<p class="image-details">Click on thumbnails for item details and uncropped images</p>
+
+				<div class="gallery">
+					<section aria-labelledby="images">
+						<h4><span id="images">Creator Images</span> <a href="#menu-sections" class="return-top">top</a></h4>
+					
+						<figure class="gallery-item" id="liv_021056">
+							<a href="transcriptions/liv_021056_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021056_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021056_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021056_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021056_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021056_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021056_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021056_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-length portrait of Edward Wilmot Blyden" />
+								</div>
+							</a>
+							<figcaption>Edward Wilmot Blyden (between 1851 and 1860)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021058">
+							<a href="transcriptions/liv_021058_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021058_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021058_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021058_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021058_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021058_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021058_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021058_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Edward Wilmot Blyden." />
+								</div>
+							</a>
+							<figcaption>Edward Wilmot Blyden (1894)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021012">
+							<a href="transcriptions/liv_021012_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021012_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021012_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021012_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021012_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021012_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021012_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021012_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Headshot of Edward Wilmot Blyden." />
+								</div>
+							</a>
+							<figcaption>Edward Wilmot Blyden (late nineteenth or early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021059">
+							<a href="transcriptions/liv_021059_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021059_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021059_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021059_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021059_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021059_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021059_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021059_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Edward Wilmot Blyden, looking to this left." />
+								</div>
+							</a>
+							<figcaption>Edward Wilmot Blyden (1910)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021065">
+							<a href="transcriptions/liv_021065_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021065_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021065_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021065_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021065_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021065_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021065_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021065_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulder portrait of Frederick Douglass in a gold frame." />
+								</div>
+							</a>
+							<figcaption>Frederick Douglass (c.1847-c.1852)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021060">
+							<a href="transcriptions/liv_021060_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021060_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021060_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021060_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021060_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021060_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021060_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021060_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-profile of E. Pauline Johnson, facing to her left." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson (late nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021030">
+							<a href="transcriptions/liv_021030_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021030_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021030_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021030_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021030_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021030_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021030_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021030_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="E. Pauline Johnson, standing in half profile with head turned to her left." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021031">
+							<a href="transcriptions/liv_021031_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021031_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021031_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021031_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021031_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021031_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021031_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021031_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of E. Pauline Johnson, facing to her left." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+						</figure>	
+						
+						<figure class="gallery-item" id="liv_021034">
+							<a href="transcriptions/liv_021034_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021034_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021034_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021034_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021034_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021034_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021034_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021034_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of E. Pauline Johnson, facing to her left and upward." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021028">
+							<a href="transcriptions/liv_021028_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021028_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021028_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021028_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021028_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021028_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021028_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021028_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="E. Pauline Johnson, standing with back to viewer, but with head in half profile to her right." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021032">
+							<a href="transcriptions/liv_021032_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021032_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021032_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021032_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021032_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021032_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021032_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021032_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of E. Pauline Johnson, facing to her left, with hat and fur coat." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson (1904)</figcaption>
+						</figure>
+					
+						<figure class="gallery-item" id="liv_021011">
+							<a href="transcriptions/liv_021011_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021011_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021011_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021011_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021011_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021011_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021011_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021011_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Apolo Kagwa and his son, both seated at a table; Kagwa holds a pen above a notebook." />
+								</div>
+							</a>
+							<figcaption>Apolo Kagwa, Katikiro of Uganda, and His Son (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021021">
+							<a href="transcriptions/liv_021021_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021021_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021021_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021021_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021021_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021021_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021021_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021021_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Semane Khama seated and surrounded by children." />
+								</div>
+							</a>
+							<figcaption>Semane Khama and Schoolchildren (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021022">
+							<a href="transcriptions/liv_021022_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021022_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021022_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021022_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021022_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021022_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021022_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021022_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-body portrait of Semane Khama, facing to her right." />
+								</div>
+							</a>
+							<figcaption>Semane Khama (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021024">
+							<a href="transcriptions/liv_021024_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021024_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021024_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021024_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021024_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021024_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021024_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021024_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Semane Khama at right, seated, with two children at left, one of whom is standing, the other seated." />
+								</div>
+							</a>
+							<figcaption>Semane Khama and Children (1911)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021023">
+							<a href="transcriptions/liv_021023_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021023_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021023_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021023_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021023_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021023_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021023_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021023_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Khamas: Semane in seven-eights profile, Seretse facing forward, Tshekedi in three-quarters profile." />
+								</div>
+							</a>
+							<figcaption>Tshekedi, Seretse, and Semane Khama (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021025">
+							<a href="transcriptions/liv_021025_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021025_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021025_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021025_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021025_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021025_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021025_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021025_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Tshekedi Khama in three-quarters profile, and Semane Khama facing forward, standing." />
+								</div>
+							</a>
+							<figcaption>Tshekedi and Semane Khama (early twentieth century)</figcaption>
+						</figure>								
+						
+						<figure class="gallery-item">
+							<a href="transcriptions/liv_021018_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021018_0003_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021018_0003_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021018_0003_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021018_0003_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021018_0003_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021018_0003_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021018_0003_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Elizabeth Lilith M'belle (“Mrs. S.T. Plaatje”)." />
+								</div>
+							</a>
+							<figcaption>Elizabeth Lilith M’belle (“Mrs. S.T. Plaatje”) (early twentieth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021062">
+							<a href="transcriptions/liv_021062_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021062_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021062_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021062_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021062_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021062_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021062_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021062_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Claude McKay." />
+								</div>
+							</a>
+							<figcaption>Claude McKay (c.1912-c.1920)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021061">
+							<a href="transcriptions/liv_021061_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021061_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021061_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021061_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021061_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021061_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021061_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021061_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-profile of Claude McKay, facing to his right." />
+								</div>
+							</a>
+							<figcaption>Claude McKay (1923)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021055">
+							<a href="transcriptions/liv_021055_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021055_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021055_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021055_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021055_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021055_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021055_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021055_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Claude McKay and Baroness Von Freytag-Loringhoven" />
+								</div>
+							</a>
+							<figcaption>Claude McKay and Baroness Von Freytag-Loringhoven (before 1928)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021016">
+							<a href="transcriptions/liv_021016_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021016_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021016_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021016_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021016_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021016_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021016_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021016_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Full-body portrait of Ham Mukasa, facing forward, and Apolo Kagwa, in three-quarters profile." />
+								</div>
+							</a>
+							<figcaption>Ham Mukasa and Apolo Kagwa (early twentieth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item">
+							<a href="transcriptions/liv_021011_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021011_0002_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021011_0002_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021011_0002_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021011_0002_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021011_0002_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021011_0002_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021011_0002_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Ham Mukasa’s father, Ham Mukasa with a child, and Ham Mukasa’s wife with a child, all seated." />
+								</div>
+							</a>
+							<figcaption>Ham Mukasa, with Father, Wife, and Children (early twentieth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021037">
+							<a href="transcriptions/liv_021037_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021037_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021037_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021037_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021037_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021037_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021037_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021037_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Dhan Gopal Mukerji, in half profile facing to his left." />
+								</div>
+							</a>
+							<figcaption>Dhan Gopal Mukerji (early twentieth century)</figcaption>
+						</figure>
+								
+						<figure class="gallery-item" id="liv_021013">
+							<a href="transcriptions/liv_021013_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021013_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021013_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021013_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021013_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021013_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021013_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021013_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Sarojini Naidu, in half profile facing to her right." />
+								</div>
+							</a>
+							<figcaption>Sarojini Naidu (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item">
+							<a href="transcriptions/liv_021018_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021018_0002_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021018_0002_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021018_0002_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021018_0002_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021018_0002_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021018_0002_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021018_0002_thumbnail-167px.jpg 167w " sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Solomon T. Plaatje, seated, in three-quarters profile, writing at a table." />
+								</div>
+							</a>
+							<figcaption>Solomon T. Plaatje (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021026">
+							<a href="transcriptions/liv_021026_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021026_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021026_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021026_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021026_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021026_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021026_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021026_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Pandita Ramabai Sarasvati, facing to right, against gray background." />
+								</div>
+							</a>
+							<figcaption>Pandita Ramabai Sarasvati (late nineteenth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021019">
+							<a href="transcriptions/liv_021019_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021019_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021019_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021019_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021019_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021019_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021019_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021019_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Pandita Ramabai Sarasvati, facing to her right, with head covered." />
+								</div>
+							</a>
+							<figcaption>Pandita Ramabai Sarasvati (late nineteenth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021020">
+							<a href="transcriptions/liv_021020_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021020_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021020_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021020_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021020_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021020_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021020_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021020_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Pandita Ramabai Sarasvati, facing to her right." />
+								</div>
+							</a>
+							<figcaption>Pandita Ramabai Sarasvati (1898)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021027">
+							<a href="transcriptions/liv_021027_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021027_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021027_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021027_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021027_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021027_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021027_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021027_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Pandita Ramabai Sarasvati, seated, with Monramabai standing, looking over Sarasvati's shoulder." />
+								</div>
+							</a>
+							<figcaption>Pandita Ramabai Sarasvati and Manoramabai (early twentieth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021057">
+							<a href="transcriptions/liv_021057_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021057_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021057_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021057_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021057_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021057_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021057_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021057_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Sechele" />
+								</div>
+							</a>
+							<figcaption>Sechele (second half of nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021009">
+							<a href="transcriptions/liv_021009_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021009_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021009_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021009_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021009_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021009_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021009_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021009_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Sechele." />
+								</div>
+							</a>
+							<figcaption>Sechele (second half of nineteenth century)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021047">
+							<a href="transcriptions/liv_021047_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021047_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021047_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021047_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021047_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021047_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021047_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021047_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-body portrait of Kgosi Sechele and MmaKgari seated side by side." />
+								</div>
+							</a>
+							<figcaption>Kgosi Sechele and MmaKgari (late nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021067">
+							<a href="transcriptions/liv_021067_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021067_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021067_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021067_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021067_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021067_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021067_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021067_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Tausé Soga standing with man and child at her sides and with older woman seated with child on lap." />
+								</div>
+							</a>
+							<figcaption>Tausé Soga and Her Family (1894)</figcaption>
+						</figure>        
+						
+						<figure class="gallery-item" id="liv_021015">
+							<a href="transcriptions/liv_021015_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021015_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021015_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021015_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021015_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021015_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021015_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021015_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Cornelia Sorabji, in seven-eighths profile with body turned to her left." />
+								</div>
+							</a>
+							<figcaption>Cornelia Sorabji (late nineteenth or early twentieth century)</figcaption>
+						</figure>
+
+						<!-- <figure class="gallery-item" id="liv_021007">
+							<a href="transcriptions/liv_021007_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021007_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021007_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021007_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021007_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021007_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021007_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021007_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="James Chuma (kneeling) and Abdullah Susi (seated) beside notebooks, maps, and other personal effects of David Livingstone." />
+								</div>
+							</a>
+							<figcaption>Abdullah Susi and James Chuma with David Livingstone's “relics” (c.1874)</figcaption>
+						</figure> -->
+
+						<figure class="gallery-item" id="liv_021036">
+							<a href="transcriptions/liv_021036_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021036_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021036_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021036_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021036_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021036_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021036_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021036_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Abdullah Susi and James Chuma against a brick wall." />
+								</div>
+							</a>
+							<figcaption>Abdulla Susi, James Chuma, and others (1874)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021035">
+							<a href="transcriptions/liv_021035_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021035_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021035_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021035_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021035_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021035_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021035_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021035_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="James Chuma and Abdullah Susi beside notebooks, maps, other personal effects of David Livingstone." />
+								</div>
+							</a>
+							<figcaption>James Chuma and Abdullah Susi with David Livingstone's effects (1874)</figcaption>
+						</figure>
+								
+						<figure class="gallery-item" id="liv_012001">
+							<a href="transcriptions/liv_012001_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_012001_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_012001_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_012001_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_012001_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_012001_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_012001_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_012001_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Abdullah Susi and James Chuma in front of some gothic architecture." />
+								</div>
+							</a>
+							<figcaption>Abdulla Susi, James Chuma, and others (1874)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021005">
+							<a href="transcriptions/liv_021005_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021005_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021005_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021005_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021005_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021005_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021005_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021005_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Abdullah Susi in half profile, facing to his right." />
+								</div>
+							</a>
+							<figcaption>Abdullah Susi (Mislabeled Jacob Wainwright) (c.1874)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021054">
+							<a href="transcriptions/liv_021054_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021054_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021054_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021054_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021054_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021054_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021054_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021054_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Rabindranath Tagore in three-quarter-length portrait" />
+								</div>
+							</a>
+							<figcaption>Rabindranath Tagore (c.1915-c.1920)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021052">
+							<a href="transcriptions/liv_021052_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021052_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021052_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021052_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021052_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021052_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021052_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021052_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-body portrait of Rabindarath Tagore" />
+								</div>
+							</a>
+							<figcaption>Rabindarath Tagore (May 1916)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021051">
+							<a href="transcriptions/liv_021051_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021051_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021051_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021051_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021051_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021051_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021051_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021051_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Rabindranath Tagore in three-quarter-length portrait" />
+								</div>
+							</a>
+							<figcaption>Rabindranath Tagor (May 1916)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021053">
+							<a href="transcriptions/liv_021053_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021053_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021053_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021053_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021053_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021053_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021053_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021053_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Full-body portrait of Rabindarath Tagore" />
+								</div>
+							</a>
+							<figcaption>Rabindarath Tagore (21 November 1916)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021050">
+							<a href="transcriptions/liv_021050_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021050_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021050_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021050_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021050_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021050_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021050_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021050_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Rabindranath Tagore in full-length portrait" />
+								</div>
+							</a>
+							<figcaption>Rabindranath Tagore (c.1916)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021049">
+							<a href="transcriptions/liv_021049_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021049_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021049_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021049_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021049_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021049_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021049_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021049_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Rabindranath Tagore in three-quarter-length portrait" />
+								</div>
+							</a>
+							<figcaption>Rabindranath Tagore (c.1917)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021044">
+							<a href="transcriptions/liv_021044_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021044_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021044_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021044_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021044_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021044_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021044_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021044_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Jan Tzatzoe (Dyani Tshatshu), facing forward." />
+								</div>
+							</a>
+							<figcaption>Jan Tzatzoe (Dyani Tshatshu) (late nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021014">
+							<a href="transcriptions/liv_021014_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021014_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021014_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021014_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021014_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021014_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021014_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021014_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Swami Vivekanada, standing, his body turned to the right, holding a walking stick." />
+								</div>
+							</a>
+							<figcaption>Swami Vivekanada (c.1893)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021001">
+							<a href="transcriptions/liv_021001_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021001_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021001_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021001_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021001_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021001_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021001_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021001_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Jacob Wainwright seated on board the ship “Malwa” and leaning against David Livingstone’s coffin." />
+								</div>
+							</a>
+							<figcaption>Jacob Wainwright with David Livingstone’s Coffin and Travelling Trunks (1874)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021002">
+							<a href="transcriptions/liv_021002_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021002_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021002_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021002_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021002_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021002_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021002_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021002_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Jacob Wainwright with head bowed in front of coffin which is partly covered by a British flag." />
+								</div>
+							</a>
+							<figcaption>Jacob Wainwright with David Livingstone’s Coffin (1874)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021003">
+							<a href="transcriptions/liv_021003_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021003_0001_thumbnail-319px.jpg" srcset="object-images/thumbnails/liv_021003_0001_thumbnail-319px.jpg 319w, object-images/thumbnails/liv_021003_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021003_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021003_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Jacob Wainwright, in three-quarters profile." />
+								</div>
+							</a>
+							<figcaption>Jacob Wainwright (c.1874)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021004">
+							<a href="transcriptions/liv_021004_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021004_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021004_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021004_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021004_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021004_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021004_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021004_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right." />
+								</div>
+							</a>
+							<figcaption>Jacob Wainwright (c.1874)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021039">
+							<a href="transcriptions/liv_021039_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021039_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021039_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021039_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021039_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021039_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021039_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021039_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Headshot of Onoto Watanna." />
+								</div>
+							</a>
+							<figcaption>Onoto Watanna (late nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021063">
+							<a href="transcriptions/liv_021063_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021063_0001_thumbnail-368px.jpg" srcset="object-images/thumbnails/liv_021063_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021063_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021063_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021063_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021063_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Three-quarters portrait of Onoto Watanna." />
+								</div>
+							</a>
+							<figcaption>Onoto Watanna (1903)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021040">
+							<a href="transcriptions/liv_021040_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021040_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021040_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021040_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021040_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021040_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021040_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021040_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Onoto Watanna in half profile, reading a book." />
+								</div>
+							</a>
+							<figcaption>Onoto Watanna (early twentieth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021064">
+							<a href="transcriptions/liv_021064_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021064_0001_thumbnail-252px.jpg" srcset="object-images/thumbnails/liv_021064_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021064_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021064_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Half-body portrait of Onoto Watanna." />
+								</div>
+							</a>
+							<figcaption>Onoto Watanna (c.1907-c.1910)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021006">
+							<a href="transcriptions/liv_021006_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021006_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021006_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021006_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021006_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021006_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021006_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021006_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Matthew Wellington, facing forward." />
+								</div>
+							</a>
+							<figcaption>Matthew Wellington (1874 or later)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_021008">
+							<a href="transcriptions/liv_021008_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021008_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021008_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021008_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021008_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021008_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021008_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021008_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Portrait of Matthew Wellington, turned to his right, but facing forward." />
+								</div>
+							</a>
+							<figcaption>Matthew Wellington (1874 or later)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item">
+							<a href="transcriptions/liv_021008_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021008_0002_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021008_0002_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021008_0002_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021008_0002_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021008_0002_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021008_0002_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021008_0002_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Matthew Wellington, in three-quarters profile facing to his left." />
+								</div>    
+							</a>
+							<figcaption>Matthew Wellington (1874 or later)</figcaption>
+						</figure>
+					</section>
+
+					<section aria-labelledby="manuscripts">
+						<h4><span id="manuscripts">Manuscripts</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<figure class="gallery-item" id="liv_021029">
+							<a href="transcriptions/liv_021029_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021029_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021029_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021029_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021029_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021029_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021029_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021029_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Facsimile of E. Pauline Johnson's manuscript of “And He Said ‘Fight On’”" />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson, “And He Said ‘Fight On’” (early twentieth century)</figcaption>
+						</figure>	
+
+						<figure class="gallery-item" id="liv_000003">
+							<a href="transcriptions/liv_000003_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_000003_0016-0017_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_000003_0016-0017_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_000003_0016-0017_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_000003_0016-0017_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_000003_0016-0017_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_000003_0016-0017_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_000003_0016-0017_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Page from David Livingstone diary showing the words “Bon Alé” and “Bon alēi.”" />
+								</div>
+							</a>
+							<figcaption>Page from David Livingstone's Field Diary III with Addition by Bon Ale/Bin Aleī/Bon Ārie (19-20 May 1866)</figcaption>
+						</figure>
+						
+						<figure class="gallery-item" id="liv_000023">
+							<a href="transcriptions/liv_000023_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_000023_0077_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_000023_0077_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_000023_0077_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_000023_0077_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_000023_0077_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_000023_0077_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_000023_0077_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Page from a David Livingstone notebook with a Swahili vocabulary list and Arabic numbers." />
+								</div>
+							</a>
+							<figcaption>Page from David Livingstone’s Notebook with Swahili Vocabulary List and Arabic Numbers (c.March 1866 to March 1870)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021018">
+							<a href="transcriptions/liv_021018_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021018_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021018_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021018_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021018_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021018_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021018_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021018_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Page inscribed by Solomon T. Plaatje to Professor Kelly Miller with reference to Howard University." />
+								</div>
+							</a>
+							<figcaption>Page Inscribed by Solomon T. Plaatje to Kelly Miller (16 November 1921)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021048">
+							<a href="transcriptions/liv_021048_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021048_0032-0033_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021048_0032-0033_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021048_0032-0033_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021048_0032-0033_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021048_0032-0033_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021048_0032-0033_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021048_0032-0033_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Notebook open to two-page vertical spread, with Jacob Wainwright's handwriting covering top half." />
+								</div>
+							</a>
+							<figcaption>Jacob Wainwright, Addition to David Livingstone's Field Diary XVII (28 April 1873)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021043">
+							<a href="transcriptions/liv_021043_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021043_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021043_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021043_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021043_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021043_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021043_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021043_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Signatures of Walter Saltley Price and Jacob Wainwright, dated 1875[?] and 1874." />
+								</div>
+							</a>
+							<figcaption>W. Salter Price and Jacob Wainwright, Signatures (1875[?], 1874).</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021038">
+							<a href="transcriptions/liv_021038_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021038_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021038_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021038_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021038_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021038_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021038_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021038_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Page inscribed by Onoto Watanna showing her signature and dated June 17, 1899." />
+								</div>
+							</a>
+							<figcaption>Page Inscribed by Onoto Watanna to Lea W. Lindolph (17 June 1899)</figcaption>
+						</figure>
+					</section>
+
+					<section aria-labelledby="creative">
+						<h4><span id="creative">Creative Works</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<figure class="gallery-item" id="liv_021069">
+							<a href="transcriptions/liv_021069_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021069_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021069_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021069_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021069_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021069_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021069_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021069_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="A work made of wood and pigment." />
+								</div>
+							</a>
+							<figcaption>Anonymous Yoruba Artist, Mask for Egungun (Ere Egungun) (late nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021041">
+							<a href="transcriptions/liv_021041_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021041_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021041_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021041_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021041_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021041_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021041_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021041_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="One purple individual and one green individual in front of three church buildings." />
+								</div>
+							</a>
+							<figcaption>Djilatendo (Tshyela Ntendu), “L'Église” (c.1930)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021042">
+							<a href="transcriptions/liv_021042_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021042_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021042_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021042_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021042_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021042_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021042_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021042_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Green individual with hat and umbrella beside four animals and a snake." />
+								</div>
+							</a>
+							<figcaption>Djilatendo (Tshyela Ntendu), “Les Animaux” (c.1930)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021045">
+							<a href="transcriptions/liv_021045_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021045_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021045_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021045_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021045_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021045_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021045_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021045_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="African market full of people with many holding umbrellas." />
+								</div>
+							</a>
+							<figcaption>Jonathan Adagogo Green, Market Scene (c.1900)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021046">
+							<a href="transcriptions/liv_021046_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021046_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021046_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021046_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021046_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021046_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021046_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021046_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Railway bridge with train tracks leading to it." />
+								</div>
+							</a>
+							<figcaption>Jonathan Adagogo Green, Railway Bridge, Imo River, near Port Harcourt (c.1900)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021010">
+							<a href="transcriptions/liv_021010_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021010_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021010_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021010_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021010_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021010_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021010_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021010_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="African hut among a set of trees." />
+								</div>
+							</a>
+							<figcaption>Abdullah Susi and James Chuma's Model of David Livingstone's Hut (late nineteenth or twentieth century)</figcaption>
+						</figure>
+					</section>
+
+					<!--
+					<section aria-labelledby="cultural">
+						<h4><span id="cultural">Relevant Cultural Objects</span> <a href="#menu-sections" class="return-top">top</a></h4>
+
+						<figure class="gallery-item" id="liv_021068">
+							<a href="transcriptions/liv_021068_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021068_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021068_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021068_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021068_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021068_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021068_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021068_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="A work made of wood, raffia, burlap, turaco feathers, guinea fowl feathers, and pigment." />
+								</div>
+							</a>
+							<figcaption>Male Face Mask (Chihongo) (mid-/late nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021066">
+							<a href="transcriptions/liv_021066_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021066_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021066_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021066_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021066_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021066_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021066_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021066_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Wooden carving of male figure with body covered in shells, bones, feathers, fabric, metal nails." />
+								</div>
+							</a>
+							<figcaption>Male Figure (Nkisi Nkondi) (early/mid-nineteenth century)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021069">
+							<a href="transcriptions/liv_021069_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021069_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021069_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021069_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021069_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021069_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021069_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021069_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="A work made of wood and pigment." />
+								</div>
+							</a>
+							<figcaption>Mask for Egungun (Ere Egungun) (late nineteenth century)</figcaption>
+						</figure>
+					</section>
+					-->
+
+					<!--
+					<section aria-labelledby="miscellaneous">
+						<h4><span id="miscellaneous">Miscellaneous</span> <a href="#menu-sections" class="return-top">top</a></h4>					
+
+						<figure class="gallery-item" id="liv_021033">
+							<a href="transcriptions/liv_021033_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021033_0003_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021033_0003_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021033_0003_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021033_0003_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021033_0003_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021033_0003_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021033_0003_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Sculpted memorial for E. Pauline Johnson with two figures." />
+								</div>
+							</a>
+							<figcaption>E. Pauline Johnson's Grave (1913)</figcaption>
+						</figure>
+
+						<figure class="gallery-item" id="liv_021010">
+							<a href="transcriptions/liv_021010_ART.html">
+								<div class="image-container">
+									<img loading="lazy" src="object-images/thumbnails/liv_021010_0001_thumbnail-504px.jpg" srcset="object-images/thumbnails/liv_021010_0001_thumbnail-504px.jpg 504w, object-images/thumbnails/liv_021010_0001_thumbnail-368px.jpg 368w, object-images/thumbnails/liv_021010_0001_thumbnail-334px.jpg 334w, object-images/thumbnails/liv_021010_0001_thumbnail-252px.jpg 252w, object-images/thumbnails/liv_021010_0001_thumbnail-184px.jpg 184w, object-images/thumbnails/liv_021010_0001_thumbnail-167px.jpg 167w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 183px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="African hut among a set of trees." />
+								</div>
+							</a>
+							<figcaption>Abdullah Susi and James Chuma's Model of David Livingstone's Hut (late nineteenth or twentieth century)</figcaption>
+						</figure>
+					</section>
+					-->
+				</div>
+			</main>
+
+			<aside class="credits" id="credits-div">
+				<hr />
+				
+				<p><strong>Cite page (MLA):</strong> Wisnicki, Adrian S. “Curated Historical Objects.” <em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, 2020, <a href="objects.html">https://onemorevoice.org/objects.html</a>.</p>
+		
+				<p><strong>Terms of use:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+
+				<p id="caption"><strong>Header image caption</strong>: Anonymous, “Semane Khama, Tshekedi Khama, and Councillors at Tiger Kloof” (Photograph, 1933), CWM/LMS/Home/Missionary Portraits/Box 12/File 34/1, University of London. School of Oriental and African Studies, London. Image from the Council for World Mission Archive, SOAS Library, University of London. Used by permission for private study, educational or research purposes only.</p>
+				
+				<p><strong>Header image commentary</strong>: Semane Khama is seated in the foreground of this image; Tshekedi Khama stands second from the left in the back row. Although <em>One More Voice</em> nominally focuses on the “long” Victorian era, i.e., 1837 to 1914, the project is by no means bound by these dates or even by this way of defining the historical period in question – an interpretive approach that echoes recent critical work focused on “<a href="https://lareviewofbooks.org/article/undisciplining-victorian-studies">undisciplining</a>” the field of Victorian Studies. As a result, the project's temporal remit can accommodate a <a href="transcriptions/liv_020024_TEI.html">1934 letter</a> from Semane Khama to a representative of the London Missionary Society, more so as the letter illuminates geopolitical relationships first established between inhabitants of Bechuanaland (now Botswana) and Britain in the nineteenth century.</p>
+			</aside>
+			
+            <div data-include="footer1"></div>
+            
+		</article>
+		<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->		
+        <script>
+            var randomString = Math.floor(Math.random()*1000000);
+            var css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.type = "text/css";
+            css.href = "css/style.css?=" + randomString;
+            document.head.appendChild(css);
+        </script>
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->		
+		<script src="scripts/jquery-3.5.1.min.js"></script> 
+		<!-- Adapted from https://stackoverflow.com/a/31837264 -->
+		<script>
+			$(function(){
+			  var includes = $('[data-include]');
+			  jQuery.each(includes, function(){
+				var file = 'common/' + $(this).data('include') + '.html';
+				$(this).load(file);
+			  });
+			});
+		</script>		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+			}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+				var randomString = Math.floor(Math.random()*1000000);
+				var element = document.createElement("script");
+				element.src = "scripts/scripts.js?=" + randomString;
+				document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
+	</body>
+
+</html>

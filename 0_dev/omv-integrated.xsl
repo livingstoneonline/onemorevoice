@@ -28,7 +28,7 @@
 	<xsl:template match="/">
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">Curated Historical Artifact</xsl:when>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Curated Historical Object</xsl:when>
 				<xsl:otherwise>Critically-Edited Archival Text</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
@@ -52,8 +52,8 @@
 			    <meta charset="UTF-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<xsl:choose>
-					<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
-					    <meta name="description" content="Curated historical artifact for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
+					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
+					    <meta name="description" content="Curated historical object for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
 					</xsl:when>
 					<xsl:otherwise>
 					    <meta name="description" content="Critically-edited archival text for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
@@ -108,8 +108,8 @@
 		        		<hr/>
 						<div><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 						<!--<xsl:choose>
-							<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
-								<div><span class="back-button"><a class="art-return" href="http://livingstoneonline.github.io/onemorevoice/artifacts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
+							<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
+								<div><span class="back-button"><a class="art-return" href="http://livingstoneonline.github.io/onemorevoice/objects.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 							</xsl:when>
 							<xsl:otherwise>
 								<div><span class="back-button"><a class="trans-return" href="http://livingstoneonline.github.io/onemorevoice/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
@@ -165,7 +165,7 @@
 					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js" />-->
 					<script src="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js"></script>
 				</xsl:if>
-				<xsl:if test="//figure[@n='artifact' and @change='rotate-180']">
+				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
 					<!-- Image Rotation -->
 					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 					<script>
@@ -210,7 +210,7 @@
 	<!-- Don't show -->
 	<xsl:template match="teiHeader|facsimile|surface|zone"/>
 
-	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or artifact (archive, book, journal). -->
+	<!-- The following section is key as it sets up the whole text and chooses one of three paths, either manuscript, journal, or object (archive, book, journal). -->
 	<!-- TEI -->
 	<xsl:template match="TEI">
 		<xsl:variable name="body-color-front">
@@ -357,8 +357,8 @@
 				<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='journal']//title">
 					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='journal']//title"/>
 				</xsl:if>
-				<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='artifact-book-journal']//title">
-					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='artifact-book-journal']//title"/>
+				<xsl:if test="//teiHeader//sourceDesc/biblStruct[@type='object-book-journal']//title">
+					<xsl:value-of select="//teiHeader//sourceDesc/biblStruct[@type='object-book-journal']//title"/>
 				</xsl:if>
 			</xsl:variable>
 			<xsl:variable name="period-after-date">
@@ -482,7 +482,7 @@
 					<hr/>
 				</aside>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']">
+			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
@@ -494,13 +494,13 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Note:</strong> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<p><strong>Note:</strong> This historical object reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
 					<xsl:copy-of select="$warning-language"/>
 					<hr/>
 				</aside>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='artifact-book-journal']">
+			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
 		    	<aside class="credits" id="credits1-div" aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
@@ -510,7 +510,7 @@
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Note:</strong> This historical artifact reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+					<p><strong>Note:</strong> This historical object reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
 					<xsl:copy-of select="$warning-language"/>
 					<hr/>
@@ -638,8 +638,8 @@
 					</div>
 				</main>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
-				<main class="artifact" id="artifact-div"><!-- style="background:#{$body-color};" -->
+			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
+				<main class="object" id="object-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
 							<p class="image-enlarge">Click on image(s) to enlarge</p>
@@ -706,14 +706,14 @@
 					</div>
 				</aside>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
+			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<!--<p class="back-button"><a class="art-return" href="http://livingstoneonline.github.io/onemorevoice/artifacts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
+						<!--<p class="back-button"><a class="art-return" href="http://livingstoneonline.github.io/onemorevoice/objects.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="http://livingstoneonline.github.io/onemorevoice/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-						<p><strong>Digital artifact curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
@@ -959,7 +959,7 @@
 		<xsl:variable name="altText">
 			<xsl:apply-templates select="self::node()/figDesc"/>
 		</xsl:variable>
-		<!-- This variable creates the title for the artifact image. -->
+		<!-- This variable creates the title for the object image. -->
 		<xsl:variable name="caption">
 			<xsl:variable name="copyright">
 				<xsl:if test="//availability/licence[@target]">
@@ -969,15 +969,15 @@
 			<xsl:value-of select="self::node()/label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
-			<xsl:if test="self::node()[@n='artifact' and @change='rotate-180']">
+			<xsl:if test="self::node()[@n='object' and @change='rotate-180']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
 		</xsl:variable>
-		<!-- The prior variable creates a static id for all images to be rotated. This is not an ideal solution and needs to be improved down the road because, if there are two artifact images in the same document that both need to rotated, they will both get the same id. However, The following code, if used in place of <xsl:text>image-to-rotate</xsl:text> above, gives each image to be rotated a unique id based on its page number(s). This could be the way to a better solution, but would involved working out the Javascript to select that same id.-->
+		<!-- The prior variable creates a static id for all images to be rotated. This is not an ideal solution and needs to be improved down the road because, if there are two object images in the same document that both need to rotated, they will both get the same id. However, The following code, if used in place of <xsl:text>image-to-rotate</xsl:text> above, gives each image to be rotated a unique id based on its page number(s). This could be the way to a better solution, but would involved working out the Javascript to select that same id.-->
 		<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
 		<!-- end of variables -->
 		<xsl:choose>
-			<xsl:when test="contains(@n,'artifact') and contains(@change,'rotate-180')">
+			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-180')">
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				<br/><br/><br/>
@@ -987,7 +987,7 @@
 					</a>
 				</span>
 			</xsl:when>
-			<xsl:when test="contains(@n,'artifact')">
+			<xsl:when test="contains(@n,'object')">
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
@@ -1132,7 +1132,7 @@
 					<xsl:value-of select="@n"/>
 				</span>
 			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
+			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 				<br/><br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
@@ -1143,7 +1143,7 @@
 
 	<xsl:template match="jc:page">
 		<xsl:choose> 
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='artifact-archive']|//sourceDesc/biblStruct[@type='artifact-book-journal']">
+			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']|//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 			<div class="page">
 				<!--<br/>-->
 				<span class="pb-title">

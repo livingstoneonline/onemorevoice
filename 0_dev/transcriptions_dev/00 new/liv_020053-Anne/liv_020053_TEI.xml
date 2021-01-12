@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020053">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“Majwara's Account of the Last Journey and Death of Dr. Livingstone”</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Majwara's Account of the Last Journey and Death of Dr. Livingstone’</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“Majwara's Account of the Last Journey and Death of Dr. Livingstone,” 1873-1874 (13 April 1874)</title>
+				<!-- Title, date -->
+				<author>Holmwood, Frederick</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Holmwood, Frederick</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Frederick Holmwood</author>
+				<!-- First author only: Forename Surname -->
+				<author>Majwara, 1857-1886</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Majwara</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HB">
+					<name>Heather F. Ball</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AM">
+					<name>Anne Martin</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020053</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://archive.org/details/proceedingsvolu00keltgoog/page/n268/mode/2up">Internet Archive</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Proceedings of the Royal Geographical Society</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<author></author>
+						<editor></editor>
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="section"></biblScope>
+							<!-- Section title (if known; otherwise leave blank) -->
+							<biblScope unit="vol">18</biblScope>
+							<!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue">3</biblScope>
+							<!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">244-46</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace></pubPlace>
+							<!-- Publication place (if known; otherwise leave blank) -->
+							<publisher></publisher>
+							<!-- Publisher (if known; otherwise leave blank) -->
+							<date>1873-1874 (13 April 1874)</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“Majwara's Account of the Last Journey and Death of Dr. Livingstone”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="FH">Frederick Holmwood</author>
+					<author xml:id="M">Majwara</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1874-03-12">12 March 1874</date>
+					<date type="publication" from="1873" to="1874">1873-1874 (13 April 1874)</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace">Zanzibar</placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="" who=""></change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div>
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020053_0001" n="0001"/>
+<lb/>
+<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+
+			</div>
+		</body>
+	</text>
+</TEI>

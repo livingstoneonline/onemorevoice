@@ -152,11 +152,11 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div>
+				<div n="liv_020056">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -164,18 +164,17 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="liv_020056_0001" n="0001"/>
-<div xml:lang="en" type="document">
-
-<pb facs="ardhi.treaty.00004.001"/>
-<div>
-<head>ABYSSINIA</head>
-<ab>TREATIES <hi rend="italic">between Great Britain and Ethiopia, and between
+		<pb facs="liv_020056_0001" n="0001"/>
+		<div>
+<head rend="large center caps">Abyssinia.</head>
+<milestone unit="section" rend="double-line quarter-line half-line"/>
+<ab rend="no-indent" n="hanging"><hi rend="caps">Treaties</hi> <hi rend="italic">between Great Britain and Ethiopia, and between
 Great Britain, Italy, and Ethiopia, relative to the Frontiers
 between the Soudan, Ethiopia, and Eritrea. Signed at Adis
-Ababa, May</hi> 15, 1902. *</ab>
-<ab type="footnote">* Signed also in the Amharic text.</ab>
+Ababa, May</hi> 15, <seg type="word">1902. *</seg></ab>
+<milestone unit="section" rend="quarter-line half-line other"/>
 <ab>[Ratifications delivered at Adis Ababa, October 28, 1902.]</ab>
+<milestone unit="section" rend="quarter-line half-line other"/>
 <p>His Majesty Edward VII, by the Grace of God, King of the
 United Kingdom of Great Britain and Ireland, and of the British
 Dominions beyond the Seas, Emperor of India, and His Majesty
@@ -191,8 +190,8 @@ proper form, and His Majesty the Emperor Menelek, negotiating
 in his own name as King of Kings of Ethiopia, they have agreed
 upon and do conclude the following Articles, which shall be
 binding on themselves, their heirs, and successors:—</p>
-</div>
-<div type="article">
+		</div>
+	<div type="article">
 <p>Art. I. The frontier between the Soudan and Ethiopia agreed
 on between the two Governments shall be: the liue which is
 marked in red on the map annexed to this Treaty in duplicate,
@@ -200,27 +199,28 @@ and traced from Khor Um Hagar to Gallabat, to the Blue Nile,
 Baro, Pibor, and Akobo Rivers to Melile, thence to the intersection
 of the 6th degree of north latitude with the 35th degree longitude
 east of Greenwich.</p>
-</div>
-<div type="article">
+	</div>
+	<div type="article">
 <p>II.  The boundary, as defined in Article I, shall be delimited
 and marked on the ground by a Joint Boundary Commission,
 which shall be nominated by the two High Contracting Parties,
 who shall notify the same to their subjects after delimitation.</p>
-</div>
-<div type="article">
+	</div>
+	<div type="article">
 <p>III.  His Majesty the Emperor Menelek II, King of Kings
 of Ethiopia, engages himself towards the Government of His
 Britannic Majesty not to construct, or allow to be constructed,
-<fw>VOL.  XXIII.                                                                                     B</fw>
+<lb/><fw><note type="footnote" rend="small">* Signed also in the Amharic text.</note></fw>
+<fw rend="small"><seg rend="left"><space extent="2" unit="chars"/><seg rend="caps">Vol.</seg>  XXIII.</seg> <seg rend="right">B<space extent="1" unit="words"/></seg></fw>
 
-<pb facs="ardhi.treaty.00004.002"/>
-<fw>2   ABYSSINIA</fw>
+	<pb facs="liv_020056_0002" n="0002"/>
+<fw><seg rend="left">2</seg> <seg rend="center caps">Abyssinia</seg></fw>
 any work across the Blue Nile, Lake Tsana, or the Sobat which
 would arrest the flow of their waters into the Nile except in
 agreement with His Britannic Majesty's Government and the
 Government of the Soudan.</p>
-</div>
-<div type="article">
+	</div>
+	<div type="article">
 <p>IV.  His Majesty the Emperor Menelek, King of Kings of
 Ethiopia, engages himself to allow His Britannic Majesty's
 Government and the Government of the Soudan to select in the
@@ -232,8 +232,8 @@ station, so long as the Soudan is under the Anglo-Egyptian Government.
 It is agreed between the two High Contracting Parties
 that the territory so leased shall not be used for any political or
 military purpose.</p>
-</div>
-<div type="article">
+	</div>
+	<div type="article">
 <p>V.  His Majesty the Emperor Menelek, King of Kings of
 Ethiopia, grants His Britannic Majesty's Government and the
 Government of the Soudan the right to construct a railway through
@@ -252,24 +252,26 @@ signed the present Treaty, in duplicate, written in the English and
 Amharic languages, identically, both texts being official, and have
 thereto affixed their seals.</p>
 <p>Done at Adis Ababa, the 15th day of May, 1902.</p>
-<signed>(L.S.)   John Lane Harrington, <hi rend="italic">Lieutenant-Colonel</hi>.</signed>
-<signed>(Seal of His Majesty the Emperor Menelek II.)</signed>
-</div>
-<div>
-<head type="sub">Note.*</head>
-<ab type="footnote">* Signed also in Italian.</ab>
-<ab>A<hi rend="smallcaps">NNEX</hi> <hi rend="italic">to the Treaty of July 10, 1900, regarding the frontier
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(L.S.)   John Lane Harrington, <hi rend="italic">Lieutenant-Colonel</hi>.</p>
+<lb/>
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(Seal of His Majesty the Emperor Menelek II.)</p>
+<milestone unit="section" rend="quarter-line half-line"/>
+	</div>
+	<div>
+<lb/><head type="sub" rend="center smallcaps">Note.*</head>
+<lb/><ab rend="no-indent" n="hanging">A<hi rend="smallcaps">NNEX</hi> <hi rend="italic">to the Treaty of July 10, 1900, regarding the frontier
 between Ethiopia and Eritrea, and the Treaty of May 15, 1902,
 regarding the frontier between the Soudan and Ethiopia.</hi></ab>
 <p>His Majesty the Emperor of Ethiopia, Menelek II, Major
 Ciccodicola, Italian Minister in Ethiopia, and Lieutenant-Colonel
+<fw><note type="footnote">* Signed also in Italian.</note></fw>
 
 <pb facs="ardhi.treaty.00004.003"/>
-<fw>ABYSSINIA.                                      3</fw>
+<fw><seg rend="center caps">Abyssinia</seg> <seg rend="right">3</seg></fw>
 Harrington,  His  Britannic  Majesty's   Agent  in  Ethiopia,  have
 mutually agreed that:</p>
-</div>
-<div type="article">
+	</div>
+	<div type="article">
 <p>A<hi rend="smallcaps">RT</hi>. I. The frontier Treaty between Ethiopia and Eritrea,
 previously determined by the line Tomat-Todluc, is mutually
 modified in the following manner:—</p>
@@ -282,8 +284,8 @@ Mai Ambessa.</p>
 junction of the Mareb and Mai Ambessa shall be delimited by
 Italian and Ethiopian delegates, so that the Canama tribe belong
 to Eritrea.</p>
-</div>
-<div type="article">
+	</div>
+	<div type="article">
 <p>II. The frontier between the Soudan and Eritrea, instead of
 that delimited by the English and Italian delegates by the
 Convention of 16th April, 1901, shall be the line which, from
@@ -302,18 +304,25 @@ Dominions beyond the Seas, Emperor of India, and his successors,
 have signed the present Note in triplicate, written in the Italian,
 English, and Amharic languages identically, all texts being official,
 and have thereto affixed their seals.</p>
-</div>
-<div type="signatures">
-<dateline>Done at Adis Ababa, this 15th day of May, 1902.</dateline>
-<signed>(L.S.)   John Lane Harrington, <hi rend="italic">Lieutenant-Colonel</hi>.</signed>
-<signed>(L.S.)   Maggiore Federico Ciccodicola.</signed>
-<signed>(Seal of His Majesty the Emperor Menelek II.)</signed>
-<fw>B  2</fw>
-</div>
+	</div>
+	<div type="signatures">
+<p>Done at Adis Ababa, this 15th day of May, 1902.</p>
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(L.S.)   John Lane Harrington, <hi rend="italic">Lieutenant-Colonel</hi>.</p>
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(L.S.)   Maggiore Federico Ciccodicola.</p>
+<lb/><p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(Seal of His Majesty the Emperor Menelek II.)</p>
+<lb/>
+<lb/>
+<lb/>
+<milestone unit="section" rend="line half-line double-line"/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<fw><seg rend="right">B 2<space extent="2" unit="chars"/></seg></fw>
+	</div>
 
-</div>
 
-			</div>
+				</div>
 		</body>
 	</text>
 </TEI>

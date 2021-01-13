@@ -212,6 +212,8 @@ label.md_switch::after{
 	/* width: 12.8em; */
 	border: 1px #525252 solid;
 	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	align-items: center;
 	display: inline-flex;
 }
@@ -247,7 +249,9 @@ label.md_switch{
 	background-color: #525252;
 	height: 1.7em;
 	width: 3.5em;
-	border-radius: 30px;	
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
 	align-items: center;
 	display: inline-flex;
 }
@@ -263,6 +267,8 @@ label.md_switch{
 	height: 1.45em;
 	width: 1.45em;
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	transform: translate(0, -50%);
 	position: absolute;
 }
@@ -271,7 +277,6 @@ label.md_switch{
 	top: 50%;
 	height: 1.45em;
 	width: 1.45em;
-	/* border-radius: 100%; */
 	transform: translate(calc(3.2em - 100%), -50%);
 }
 
@@ -399,6 +404,8 @@ button::-moz-focus-inner{
 	background-color: #E3E3E3;
 	border: 1px solid #858585;
 	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
 	float: left;
 	padding: .5em 1em;
 	margin: 1.5em 0;

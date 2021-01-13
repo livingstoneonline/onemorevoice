@@ -708,6 +708,16 @@ also see 2.9 for manuscript colors
     -o-transform:rotate(275deg); /* Opera */
     margin-left: -1.5em;
 }
+.liv_020056 .word{
+	white-space: nowrap;
+}
+.liv_020056 .hanging{
+    text-indent: -25px;
+    padding-left: 25px;
+}
+.liv_020056 .halfline.quarterline.other{
+    width: 8%;
+}
 @media only screen and (min-width:480px){
     .table.liv_020058_0070{
         font-size: .7em;

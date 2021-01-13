@@ -81,6 +81,8 @@ also see 2.9 for manuscript colors
 	margin-left: -.4em; 
 	border-top: 1.5px solid;
 	border-top-left-radius: 3em;
+	-webkit-border-top-left-radius: 3em;
+	-moz-border-top-left-radius: 3em;
 }
 .container.liv_000023_0037{
     position: relative;
@@ -191,6 +193,8 @@ also see 2.9 for manuscript colors
 	padding-bottom: .4em;
 	border-bottom: 1px solid;
 	border-bottom-right-radius: 2em;
+	-webkit-border-bottom-right-radius: 2em;
+	-moz-border-bottom-right-radius: 2em;
 }
 .container.liv_000023_0115{
     position: relative;
@@ -201,6 +205,8 @@ also see 2.9 for manuscript colors
 	margin-left: -0.3em;
 	border: 1px solid;
 	border-radius: 2em 2em 2em 0;
+	-webkit-border-radius: 2em 2em 2em 0;
+	-moz-border-radius: 2em 2em 2em 0;
 }
 @media only screen and (min-width: 768px){
 	.text1.liv_000023_0115{
@@ -274,6 +280,8 @@ also see 2.9 for manuscript colors
 	margin-left: -.8em; 
 	border: 1px solid;
 	border-radius: 3em;
+	-webkit-border-radius: 3em;
+	-moz-border-radius: 3em;
 }
 @media only screen and (min-width: 768px){
 	.metamark.second.liv_003027_0002{
@@ -292,6 +300,8 @@ also see 2.9 for manuscript colors
 		margin: 3em 0 -1em -1.5em;
 		border: 1px solid #998a83;
 		border-radius: 3em;
+		-webkit-border-radius: 3em;
+		-moz-border-radius: 3em;
 		transform: rotate(270deg);
 		-ms-transform:rotate(270deg); /* IE 9 */
 		-moz-transform:rotate(270deg); /* Firefox */
@@ -328,12 +338,16 @@ also see 2.9 for manuscript colors
 	border: 1px solid;
 	border-top: none;
 	border-radius: 13px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
 	}
 .signed.liv_020011_0004{
 	padding: .3em .7em;
 	border-right: 1px solid #664d36;
 	border-left: 1px solid #664d36;
 	border-radius: 3em;
+	-webkit-border-radius: 3em;
+	-moz-border-radius: 3em;
 }
 .text.liv_020011_0004,
 .text.liv_020011_0004 .unclear{
@@ -717,6 +731,20 @@ also see 2.9 for manuscript colors
 }
 .liv_020056 .halfline.quarterline.other{
     width: 8%;
+}
+.liv_020056 .seal{
+    position: relative;
+}
+.liv_020056 .seal .seg{
+    border: 1px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+    height: 3.5em;
+    width: 3.5em;
+    top: -1em;
+    left: 0;
+    position: absolute;
 }
 @media only screen and (min-width:480px){
     .table.liv_020058_0070{

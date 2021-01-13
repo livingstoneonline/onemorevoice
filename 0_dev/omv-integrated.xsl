@@ -348,9 +348,9 @@
 		<xsl:variable name="copyright">
 			<xsl:choose>
 			<xsl:when test="//availability/licence[@target]">
-				<xsl:copy-of select="$availP1"/><xsl:text> </xsl:text><a href="{$license1}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
+				<xsl:copy-of select="$availP1"/><xsl:text> </xsl:text><a href="{$license1}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[1]"/></a>
 				<xsl:if test="//availability/p[2]">
-					<xsl:text>. </xsl:text><xsl:copy-of select="$availP2"/><xsl:text> </xsl:text><a href="{$license2}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>.
+					<xsl:text>. </xsl:text><xsl:copy-of select="$availP2"/><xsl:text> </xsl:text><a href="{$license2}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[2]"/></a>.
 				</xsl:if>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">

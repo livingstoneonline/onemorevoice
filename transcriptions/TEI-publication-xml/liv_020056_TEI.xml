@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020056">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“Treaties Between Great Britain and Ethiopia, and Between Great Britain, Italy, and Ethiopia, Relative to the Frontiers Between the Soudan, Ethiopia, and Eritrea. Signed at Adis Ababa, May 15, 1902”</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Treaties Between Great Britain and Ethiopia, and Between Great Britain, Italy, and Ethiopia, Relative to the Frontiers Between the Soudan, Ethiopia, and Eritrea. Signed at Adis Ababa, May 15, 1902’</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“Treaties Between Great Britain and Ethiopia, and Between Great Britain, Italy, and Ethiopia, Relative to the Frontiers Between the Soudan, Ethiopia, and Eritrea. Signed at Adis Ababa, May 15, 1902,” 1905</title>
+				<!-- Title, date -->
+				<author>Edward VII, 1841-1910</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Edward VII</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Edward VII</author>
+				<!-- First author only: Forename Surname -->
+				<author>Menelik II, 1844-1913</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Menelik II</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Harrington, John Lane, 1865-1927</author>
+				<!-- Second author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="normalized">John Lane Harrington</author>
+				<!-- Second author only: Forename Surname -->
+				<author>Ciccodicola, Federico</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Federico Ciccodicola</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Victor Emmanuel III, 1869-1947</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Victor Emmanuel III</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="PH">
+					<name>Phillip H. Howells</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020056</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://www.google.com/books/edition/A_Complete_Collection_of_the_Treaties_an/3b1DAQAAMAAJ?hl=en">Google Books</ref>
+				<ref target="https://ardhi.unl.edu/item/ardhi.treaty.00004">Ardhi Initiative</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Original critically-edited text copyright <hi rend="italic">Ardhi Initiative</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</licence>
+					<p>Revised critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="book-section">
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>A Complete Collection of the Treaties and Conventions, and Reciprocal Regulations at Present Subsisting Between Great Britain and Foreign Powers</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<author></author>
+						<editor>Augustus H. Oakes</editor>
+						<editor>Richard W. Brant</editor>
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="section"></biblScope>
+							<!-- Section title (if known; otherwise leave blank) -->
+							<biblScope unit="vol"></biblScope>
+							<!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope>
+							<!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">23:1-3</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>London</pubPlace>
+							<!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>Printed for His Majesty's Stationery Office by Harrison and Sons</publisher>
+							<!-- Publisher (if known; otherwise leave blank) -->
+							<date>1905</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“Treaties Between Great Britain and Ethiopia, and Between Great Britain, Italy, and Ethiopia, Relative to the Frontiers Between the Soudan, Ethiopia, and Eritrea. Signed at Adis Ababa, May 15, 1902”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="E7">Edward VII, 1841-1910</author>
+					<author xml:id="M2">Menelik II, 1844-1913</author>
+					<author xml:id="JLH">Harrington, John Lane, 1865-1927</author>
+					<author xml:id="FC">Ciccodicola, Federico</author>
+					<author xml:id="VE3">Victor Emmanuel III, 1869-1947</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1902-05-15">15 May 1902</date>
+					<date type="composition" when="1902-10-28">28 October 1902</date>
+					<date type="publication" when="1905">1905</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace">Adis Ababa</placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-01-12" who="#AW">Encoding Revision</change>
+			<change when="2020" who="#PH">Transcription and Encoding</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+				<div n="liv_020056">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+		<pb facs="liv_020056_0001" n="0001"/>
+		<div>
+<head rend="large center caps"><country>Abyssinia</country>.</head>
+<milestone unit="section" rend="double-line quarter-line half-line"/>
+<ab rend="no-indent" n="hanging"><hi rend="caps">Treaties</hi> <hi rend="italic">between <country>Great Britain</country> and <country>Ethiopia</country>, and between
+<country>Great Britain</country>, <country>Italy</country>, and <country>Ethiopia</country>, relative to the <region>Frontiers
+between the <country>Soudan</country>, <country>Ethiopia</country>, and <country>Eritrea</country></region>. Signed at <settlement>Adis
+Ababa</settlement>,</hi> <date when="1902-05-15"><hi rend="italic">May</hi> 15, <seg type="word">1902. *</seg></date></ab>
+<milestone unit="section" rend="quarter-line half-line other"/>
+<ab>[Ratifications delivered at <settlement>Adis Ababa</settlement>, <date when="1902-10-28">October 28, 1902</date>.]</ab>
+<milestone unit="section" rend="quarter-line half-line other"/>
+<p><persName>His Majesty Edward VII, by the Grace of God, King of the
+<bloc>United Kingdom of <country>Great Britain</country> and <country>Ireland</country>, and of the <bloc>British
+Dominions beyond the Seas</bloc></bloc>, Emperor of <country>India</country></persName>, and <persName>His Majesty
+Menelek II, by the Grace of God, King of Kings of <country>Ethiopia</country></persName>,
+being animated with the desire to confirm the friendly relations
+between the <orgName>two Powers</orgName>, and to settle the <region>frontier between the
+<country>Soudan</country> and <country>Ethiopia</country></region>, and <persName>His Majesty King Edward</persName>, having
+appointed as his Plenipotentiary <persName>Lieutenant-Colonel John Lane
+Harrington</persName>, a Commander of the <orgName>Royal Victorian Order</orgName>, His
+Majesty's Agent at the Court of <persName>His Majesty Menelek II, King of
+Kings of <country>Ethiopia</country></persName>, whose full powers have been found in due and
+proper form, and <persName>His Majesty the Emperor Menelek</persName>, negotiating
+in his own name as <persName>King of Kings of <country>Ethiopia</country></persName>, they have agreed
+upon and do conclude the following Articles, which shall be
+binding on themselves, their heirs, and successors:&#8212;</p>
+		</div>
+	<div type="article">
+<p>Art. I. The <region>frontier between the <country>Soudan</country> and <country>Ethiopia</country></region> agreed
+on between the <orgName>two Governments</orgName> shall be: the line which is
+marked in red on the map annexed to this Treaty in duplicate,
+and traced from <geogName>Khor Um Hagar</geogName> to <geogName>Gallabat</geogName>, to the <geogName>Blue Nile</geogName>,
+<geogName>Baro</geogName>, <geogName>Pibor</geogName>, and <geogName>Akobo</geogName> Rivers to <placeName>Melile</placeName>, thence to <region>the intersection
+of the 6th degree of north latitude with the 35th degree longitude
+east of <settlement>Greenwich</settlement></region>.</p>
+	</div>
+	<div type="article">
+<p>II. The boundary, as defined in Article I, shall be delimited
+and marked on the ground by a <orgName>Joint Boundary Commission</orgName>,
+which shall be nominated by the <orgName>two High Contracting Parties</orgName>,
+who shall notify the same to their subjects after delimitation.</p>
+	</div>
+	<div type="article">
+<p>III. <persName>His Majesty the Emperor Menelek II, King of Kings
+of <country>Ethiopia</country></persName>, engages himself towards the <orgName>Government of His
+Britannic Majesty</orgName> not to construct, or allow to be constructed,
+<lb/><fw><note type="footnote" rend="small">* Signed also in the <term type="collective"></term> text.</note></fw>
+<fw rend="small"><seg rend="left"><space extent="2" unit="chars"/><seg rend="caps">Vol.</seg>  XXIII.</seg> <seg rend="right">B<space extent="1" unit="words"/></seg></fw>
+
+	<pb facs="liv_020056_0002" n="0002"/>
+<fw><seg rend="left">2</seg> <seg rend="center caps"><country>Abyssinia</country></seg></fw>
+any work across the <geogName>Blue Nile</geogName>, <geogName>Lake Tsana</geogName>, or the <geogName>Sobat</geogName> which
+would arrest the flow of their waters into the <geogName>Nile</geogName> except in
+agreement with <orgName>His Britannic Majesty's Government</orgName> and the
+<orgName>Government of the <country>Soudan</country></orgName>.</p>
+	</div>
+	<div type="article">
+<p>IV. <persName>His Majesty the Emperor Menelek, King of Kings of
+<country>Ethiopia</country></persName>, engages himself to allow <orgName>His Britannic Majesty's
+Government</orgName> and the <orgName>Government of the <country>Soudan</country></orgName> to select in the
+neighbourhood of <placeName>Itang</placeName>, on the <geogName>Baro River</geogName>, a block of territory
+having a river frontage of not more than 2,000 metres, in area not
+exceeding 400 hectares, which shall be leased to the <orgName>Government
+of the <country>Soudan</country></orgName>, to be administered and occupied as a commercial
+station, so long as the <country>Soudan</country> is under the <orgName>Anglo-Egyptian Government</orgName>. 
+It is agreed between the <orgName>two High Contracting Parties</orgName>
+that the territory so leased shall not be used for any political or
+military purpose.</p>
+	</div>
+	<div type="article">
+<p>V. <persName>His Majesty the Emperor Menelek, King of Kings of
+<country>Ethiopia</country></persName>, grants <orgName>His Britannic Majesty's Government</orgName> and the
+<orgName>Government of the <country>Soudan</country></orgName> the right to construct a railway through
+<region>Abyssinian territory</region> to connect the <country>Soudan</country> with <country>Uganda</country>.</p>
+<p>A route for the railway will be selected by mutual agreement
+between the <orgName>two High Contracting Parties</orgName>.</p>
+<p>The present Treaty shall come into force as soon as its ratification 
+by <orgName>His Britannic Majesty</orgName> shall have been notified to the
+<persName>Emperor of Ethiopia</persName>.</p>
+<p>In faith of which <persName>His Majesty Menelek II, King of Kings
+of <country>Ethiopia</country></persName>, in his own name, and <persName>Lieutenant-Colonel John
+Lane Harrington</persName>, on behalf of <persName>His Majesty King Edward VII,
+King of the <bloc>United Kingdom of <country>Great Britain</country> and <country>Ireland</country> and of
+the <bloc>British Dominions beyond the Seas</bloc></bloc>, Emperor of <country>India</country></persName>, have
+signed the present Treaty, in duplicate, written in the <term type="collective">English</term> and
+<term type="collective">Amharic</term> languages, identically, both texts being official, and have
+thereto affixed their seals.</p>
+	</div>
+	<div type="signatures">
+<p>Done at <settlement>Adis Ababa</settlement>, the <date when="1902-05-15">15th day of May, 1902</date>.</p>
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(L.S.)   <persName>John Lane Harrington</persName>, <hi rend="italic">Lieutenant-Colonel</hi>.</p>
+<lb/>
+<p n="seal"><seg></seg><space extent="1" unit="words"/><space extent="3" unit="chars"/>(Seal of <persName>His Majesty the Emperor Menelek II.</persName>)</p>
+<milestone unit="section" rend="quarter-line half-line"/>
+	</div>
+	<div>
+<lb/><ab type="sub" rend="center smallcaps">Note.*</ab>
+<lb/><ab rend="no-indent" n="hanging"><hi rend="smallcaps">Annex</hi> <hi rend="italic">to the Treaty of <date when="1900-07-10">July 10, 1900</date>, regarding the <region>frontier
+between <country>Ethiopia</country> and <country>Eritrea</country></region>, and the Treaty of <date when="1902-05-15">May 15, 1902</date>,
+regarding the <region>frontier between the <country>Soudan</country> and <country>Ethiopia</country></region>.</hi></ab>
+<p><persName>His Majesty the Emperor of <country>Ethiopia</country>, Menelek II</persName>, <persName>Major
+Ciccodicola</persName>, <term type="collective">Italian</term> Minister in <country>Ethiopia</country>, and <persName>Lieutenant-Colonel</persName>
+<fw><note type="footnote">* Signed also in Italian.</note></fw>
+
+
+	<pb facs="liv_020056_0003" n="0003"/>
+<fw><seg rend="center caps">Abyssinia</seg> <seg rend="right">3</seg></fw>
+<persName>Harrington</persName>,  His  Britannic  Majesty's   Agent  in  <country>Ethiopia</country>,  have
+mutually agreed that:</p>
+	</div>
+	<div type="article">
+<p><hi rend="smallcaps">Art</hi>. I. The frontier Treaty between <country>Ethiopia</country> and <country>Eritrea</country>,
+previously determined by the line Tomat-Todluc, is mutually
+modified in the following manner:&#8212;</p>
+<p>Commencig from the junction of the <geogName>Khor Um Hagar</geogName> with
+the <geogName>Setit</geogName>, the new frontier follows this river to its junction with
+the <geogName>Maieteb</geogName>, following the latter's course so as to leave <geogName>Mount Ala
+Tacura</geogName> to <country>Eritrea</country>, and joins the <geogName>Mareb</geogName> at its junction with the
+<geogName>Mai Ambessa</geogName>.</p>
+<p>The line from the junction of the <geogName>Setit</geogName> and <geogName>Maieteb</geogName> to the
+junction of the <geogName>Mareb</geogName> and <geogName>Mai Ambessa</geogName> shall be delimited by
+<term type="collective"><term type="collective">Italian</term> and <term type="collective">Ethiopian</term> delegates</term>, so that the <term type="collective">Canama tribe</term> belong
+to <country>Eritrea</country>.</p>
+	</div>
+	<div type="article">
+<p>II. The frontier between the <country>Soudan</country> and <country>Eritrea</country>, instead of
+that delimited by the <term type="collective"><term type="collective">English</term> and <term type="collective">Italian</term> delegates</term> by the
+Convention of <date when="1901-04-16">16th April, 1901</date>, shall be the line which, from
+<placeName>Sabderat</placeName>, is traced <hi rend="italic">viâ</hi> <placeName>Abu Jamal</placeName> to the junction of the <geogName>Khor Um
+Hagar</geogName> with the <geogName>Setit</geogName>.</p>
+<p>The present Agreement shall come into force as soon as its
+ratification by the <orgName><term type="collective">British</term> and <term type="collective">Italian</term> Governments</orgName> shall have been
+notified to the <persName>Emperor of <country>Ethiopia</country></persName>.</p>
+<p>In faith of which <persName>His Majesty the Emperor of <country>Ethiopia</country>,
+Menelek II</persName>, in his own name and that of his successors; <persName>Major
+Ciccodicola</persName>, in the name of <persName>His Majesty Victor Emmanuel III,
+King of Italy</persName>, and his successors; and <persName>Lieutenant-Colonel Harrington</persName>, 
+in the name of <persName>His Majesty Edward VII, King of the <bloc>United
+Kingdom of <country>Great Britain</country> and <country>Ireland</country> and of the <bloc>British
+Dominions beyond the Seas</bloc></bloc>, Emperor of <country>India</country></persName>, and his successors,
+have signed the present Note in triplicate, written in the <term type="collective">Italian</term>,
+<term type="collective">English</term>, and <term type="collective">Amharic</term> languages identically, all texts being official,
+and have thereto affixed their seals.</p>
+	</div>
+	<div type="signatures">
+<p>Done at <placeName>Adis Ababa</placeName>, this <date when="1902-05-15">15th day of May, 1902</date>.</p>
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(L.S.)   <persName>John Lane Harrington</persName>, <hi rend="italic">Lieutenant-Colonel</hi>.</p>
+<p><space extent="1" unit="words"/><space extent="3" unit="chars"/>(L.S.)   <persName>Maggiore Federico Ciccodicola</persName>.</p>
+<p n="seal"><seg></seg><space extent="1" unit="words"/><space extent="3" unit="chars"/>(Seal of <persName>His Majesty the Emperor Menelek II</persName>.)</p>
+<lb/>
+<lb/>
+<lb/>
+<milestone unit="section" rend="line half-line double-line"/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<fw><seg rend="right">B 2<space extent="2" unit="chars"/></seg></fw>
+	</div>
+
+
+				</div>
+		</body>
+	</text>
+</TEI>

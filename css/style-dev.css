@@ -377,6 +377,8 @@ a:focus img{
 	background-color: #e3e3e3;
 	border: 2px solid #595959;
 	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 	margin: 0;
 	padding: 2px 4px;
 	bottom: 7px;
@@ -557,6 +559,8 @@ body.essay .main{
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
 	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
 	margin-top: -.5em; /* Needed for Google Translate */
 	position: absolute;
 	top: -40px;
@@ -1401,6 +1405,8 @@ table.archival-text .details{
 .screenshot .play-button{
 	background-color: #902D27;
 	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
 	box-shadow: 0 0 30px rgba(0,0,0,0.6);
 	width: 60px;
 	height: 40px;
@@ -1477,6 +1483,8 @@ table.archival-text .details{
 	color: #204A79;
 	background: #E3E3E3;
 	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
 	padding: 4px 6px;
 	position: absolute;
 	left: 0px;
@@ -1568,6 +1576,8 @@ table.archival-text .details{
 	border: 1px solid #191716;
 	border-width: 1px 2px 2px 1px;
 	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	padding: 0 2px;
 	margin: 1px;
 	min-width: 17px;

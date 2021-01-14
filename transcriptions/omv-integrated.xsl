@@ -333,19 +333,28 @@
 				<xsl:otherwise/>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="license">
-			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence/@target"/>
+		<xsl:variable name="license1">
+			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence[1]/@target"/>
 		</xsl:variable>
-		<xsl:variable name="availP">
-			<xsl:apply-templates select="//availability/p/node()"/>
+		<xsl:variable name="license2">
+			<xsl:value-of select="//teiHeader//publicationStmt/availability/licence[2]/@target"/>
+		</xsl:variable>
+		<xsl:variable name="availP1">
+			<xsl:apply-templates select="//availability/p[1]/node()"/>
+		</xsl:variable>
+		<xsl:variable name="availP2">
+			<xsl:apply-templates select="//availability/p[2]/node()"/>
 		</xsl:variable>
 		<xsl:variable name="copyright">
 			<xsl:choose>
 			<xsl:when test="//availability/licence[@target]">
-				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><a href="{$license}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/></a>
+				<xsl:copy-of select="$availP1"/><xsl:text> </xsl:text><a href="{$license1}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[1]"/></a>
+				<xsl:if test="//availability/p[2]">
+					<xsl:text>. </xsl:text><xsl:copy-of select="$availP2"/><xsl:text> </xsl:text><a href="{$license2}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[2]"/></a>.
+				</xsl:if>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">
-				<xsl:copy-of select="$availP"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>
+				<xsl:copy-of select="$availP1"/><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/availability/licence"/>
 			</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
@@ -386,7 +395,7 @@
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='pages']"/>
 					<xsl:value-of select="$period-after-date"/>
 					<xsl:if test="//sourceDesc/biblStruct/monogr/editor/text()">
-						<xsl:text>Edited by </xsl:text><xsl:value-of select="//sourceDesc/biblStruct/monogr/editor"/><xsl:text>. </xsl:text>
+						<xsl:text>Edited by </xsl:text><xsl:value-of select="//sourceDesc/biblStruct/monogr/editor" separator="; "/><xsl:text>. </xsl:text>
 					</xsl:if>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
 					<xsl:text>: </xsl:text>
@@ -676,10 +685,17 @@
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="../transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source-link">
-								<xsl:value-of select="//publicationStmt/ref/@target"/>
+							<xsl:variable name="source-link1">
+								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
 							</xsl:variable>
-							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
+							<xsl:variable name="source-link2">
+								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+							</xsl:variable>
+							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+							<xsl:if test="//publicationStmt/ref[2]">
+								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
+							</xsl:if>
+							</p>
 						</xsl:if>
 						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
 					</div>
@@ -697,10 +713,17 @@
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="../transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source-link">
-								<xsl:value-of select="//publicationStmt/ref/@target"/>
+							<xsl:variable name="source-link1">
+								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
 							</xsl:variable>
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link}"><xsl:value-of select="//publicationStmt/ref"/></a></p>
+							<xsl:variable name="source-link2">
+								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+							</xsl:variable>
+							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+							<xsl:if test="//publicationStmt/ref[2]">
+								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
+							</xsl:if>
+							</p>
 						</xsl:if>
 						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
 					</div>

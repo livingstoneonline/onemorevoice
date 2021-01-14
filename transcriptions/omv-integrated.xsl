@@ -395,7 +395,7 @@
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='pages']"/>
 					<xsl:value-of select="$period-after-date"/>
 					<xsl:if test="//sourceDesc/biblStruct/monogr/editor/text()">
-						<xsl:text>Edited by </xsl:text><xsl:value-of select="//sourceDesc/biblStruct/monogr/editor"/><xsl:text>. </xsl:text>
+						<xsl:text>Edited by </xsl:text><xsl:value-of select="//sourceDesc/biblStruct/monogr/editor" separator="; "/><xsl:text>. </xsl:text>
 					</xsl:if>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
 					<xsl:text>: </xsl:text>

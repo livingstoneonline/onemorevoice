@@ -21,14 +21,14 @@
 				<!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Edward VII</author>
 				<!-- First author only: Forename Surname -->
+				<author>Menelik II, 1844-1913</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Menelik II</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<author>Harrington, John Lane, 1865-1927</author>
 				<!-- Second author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
 				<author role="normalized">John Lane Harrington</author>
 				<!-- Second author only: Forename Surname -->
-				<author>Menelik II</author>
-				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="normalized">Menelik II</author>
-				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<author>Ciccodicola, Federico</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="normalized">Federico Ciccodicola</author>
@@ -116,8 +116,11 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
+					<author xml:id="E7">Edward VII, 1841-1910</author>
+					<author xml:id="M2">Menelik II, 1844-1913</author>
 					<author xml:id="JLH">Harrington, John Lane, 1865-1927</author>
-					<author xml:id="Menelik2">Menelik II</author>
+					<author xml:id="FC">Ciccodicola, Federico</author>
+					<author xml:id="VE3">Victor Emmanuel III, 1869-1947</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -166,7 +169,7 @@
 <!-- @n = page number only, e.g., 0001 -->
 		<pb facs="liv_020056_0001" n="0001"/>
 		<div>
-<head rend="large center caps">Abyssinia.</head>
+<head rend="large center caps"><country>Abyssinia</country>.</head>
 <milestone unit="section" rend="double-line quarter-line half-line"/>
 <ab rend="no-indent" n="hanging"><hi rend="caps">Treaties</hi> <hi rend="italic">between <country>Great Britain</country> and <country>Ethiopia</country>, and between
 <country>Great Britain</country>, <country>Italy</country>, and <country>Ethiopia</country>, relative to the <region>Frontiers
@@ -187,9 +190,9 @@ Harrington</persName>, a Commander of the <orgName>Royal Victorian Order</orgNam
 Majesty's Agent at the Court of <persName>His Majesty Menelek II, King of
 Kings of <country>Ethiopia</country></persName>, whose full powers have been found in due and
 proper form, and <persName>His Majesty the Emperor Menelek</persName>, negotiating
-in his own name as King of Kings of <country>Ethiopia</country>, they have agreed
+in his own name as <persName>King of Kings of <country>Ethiopia</country></persName>, they have agreed
 upon and do conclude the following Articles, which shall be
-binding on themselves, their heirs, and successors:—</p>
+binding on themselves, their heirs, and successors:&#8212;</p>
 		</div>
 	<div type="article">
 <p>Art. I. The <region>frontier between the <country>Soudan</country> and <country>Ethiopia</country></region> agreed
@@ -210,7 +213,7 @@ who shall notify the same to their subjects after delimitation.</p>
 <p>III. <persName>His Majesty the Emperor Menelek II, King of Kings
 of <country>Ethiopia</country></persName>, engages himself towards the <orgName>Government of His
 Britannic Majesty</orgName> not to construct, or allow to be constructed,
-<lb/><fw><note type="footnote" rend="small">* Signed also in the Amharic text.</note></fw>
+<lb/><fw><note type="footnote" rend="small">* Signed also in the <term type="collective"></term> text.</note></fw>
 <fw rend="small"><seg rend="left"><space extent="2" unit="chars"/><seg rend="caps">Vol.</seg>  XXIII.</seg> <seg rend="right">B<space extent="1" unit="words"/></seg></fw>
 
 	<pb facs="liv_020056_0002" n="0002"/>
@@ -261,7 +264,7 @@ thereto affixed their seals.</p>
 	</div>
 	<div>
 <lb/><ab type="sub" rend="center smallcaps">Note.*</ab>
-<lb/><ab rend="no-indent" n="hanging">A<hi rend="smallcaps">NNEX</hi> <hi rend="italic">to the Treaty of <date when="1900-07-10">July 10, 1900</date>, regarding the <region>frontier
+<lb/><ab rend="no-indent" n="hanging"><hi rend="smallcaps">Annex</hi> <hi rend="italic">to the Treaty of <date when="1900-07-10">July 10, 1900</date>, regarding the <region>frontier
 between <country>Ethiopia</country> and <country>Eritrea</country></region>, and the Treaty of <date when="1902-05-15">May 15, 1902</date>,
 regarding the <region>frontier between the <country>Soudan</country> and <country>Ethiopia</country></region>.</hi></ab>
 <p><persName>His Majesty the Emperor of <country>Ethiopia</country>, Menelek II</persName>, <persName>Major
@@ -277,7 +280,7 @@ mutually agreed that:</p>
 	<div type="article">
 <p><hi rend="smallcaps">Art</hi>. I. The frontier Treaty between <country>Ethiopia</country> and <country>Eritrea</country>,
 previously determined by the line Tomat-Todluc, is mutually
-modified in the following manner:—</p>
+modified in the following manner:&#8212;</p>
 <p>Commencig from the junction of the <geogName>Khor Um Hagar</geogName> with
 the <geogName>Setit</geogName>, the new frontier follows this river to its junction with
 the <geogName>Maieteb</geogName>, following the latter's course so as to leave <geogName>Mount Ala
@@ -297,7 +300,7 @@ Hagar</geogName> with the <geogName>Setit</geogName>.</p>
 <p>The present Agreement shall come into force as soon as its
 ratification by the <orgName><term type="collective">British</term> and <term type="collective">Italian</term> Governments</orgName> shall have been
 notified to the <persName>Emperor of <country>Ethiopia</country></persName>.</p>
-<p>In faith of which <persName>His Majesty the Emperor of Ethiopia,
+<p>In faith of which <persName>His Majesty the Emperor of <country>Ethiopia</country>,
 Menelek II</persName>, in his own name and that of his successors; <persName>Major
 Ciccodicola</persName>, in the name of <persName>His Majesty Victor Emmanuel III,
 King of Italy</persName>, and his successors; and <persName>Lieutenant-Colonel Harrington</persName>, 

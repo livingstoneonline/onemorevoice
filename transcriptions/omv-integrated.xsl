@@ -691,7 +691,7 @@
 							<xsl:variable name="source-link2">
 								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
 							</xsl:variable>
-							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
 							<xsl:if test="//publicationStmt/ref[2]">
 								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 							</xsl:if>
@@ -719,7 +719,7 @@
 							<xsl:variable name="source-link2">
 								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
 							</xsl:variable>
-							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
 							<xsl:if test="//publicationStmt/ref[2]">
 								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 							</xsl:if>

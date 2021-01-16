@@ -811,7 +811,7 @@
 
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
-		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+		<div class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
 			<xsl:apply-templates/>
 		</div>
 	</xsl:template>

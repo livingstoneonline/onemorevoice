@@ -189,20 +189,29 @@
 <!-- @n = page number only, e.g., 0001 -->
 <!-- <pb facs="" n="" /> -->
 
-	<text>
+	<text n="styleTEI-add liv_020050">
 		<front>      
-		<div>
+	
 	<pb facs="liv_020050_0001" n="0001"/>
-<lb/><space dim="vertical" unit="lines" extent="13"/>
-<lb/><p rend="center"><seg rend="caps">Incidents 
-<lb/><seg rend="small">Connected with</seg> 
+		<div n="cover">
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/><p rend="center"><seg n="cover1 liv_020050_0001"><seg n="cover2 liv_020050_0001"><seg rend="caps"><w>I n c i d e n t s</w> 
+<lb/><seg n="smaller">Connected with</seg> 
 <lb/><seg rend="large">The Life of <persName>Selim Aga</persName></seg></seg>
-<lb/>A <term type="collectivce">Native of <region>Central <bloc>Africa</bloc></region></term>.</p>
+<lb/><seg rend="small">A <term type="collectivce">Native of <region>Central <bloc>Africa</bloc></region></term>.</seg></seg></seg></p>
+<lb/>
+<lb/>
 <lb/><space dim="vertical" unit="lines" extent="7"/>
-<lb/><p rend="no-indent">8000
-<lb/>e</p>
+<lb/><p rend="no-indent" n="shelfmark liv_020050_0001"><seg n="shelfmark-line liv_020050_0001">8000</seg>
+<lb/><seg n="shelfmark-line liv_020050_0001"><space extent="1" unit="chars"/>e</seg></p>
+		</div>		
 
 	<pb facs="liv_020050_0002" n="0002"/>
+		<div>
 <lb/><space dim="vertical" unit="lines" extent="2"/>
 <lb/><p rend="center" hand="#U1">8000.e.43</p>
 <lb/><space dim="vertical" unit="lines" extent="15"/>
@@ -257,12 +266,14 @@
 <lb/><p rend="center caps small">University
 <lb/>Library
 <lb/>Cambridge</p>
-		</div>      
+		</div>
+		      
 
 <!-- Replace m-dashes -->
 
-		<div>        
+		       
 	<pb facs="liv_020050_0007" n="0007"/>
+		<div> 
 <lb/>
 <lb/>
 <lb/><p rend="center large large"><seg rend="caps">Dedication.</seg></p>
@@ -282,9 +293,10 @@ a truly good substitute for these wants. I have experienced your goodness in sen
 <p rend="right">Your most <choice><abbr>obedt.</abbr><expan>obedient</expan></choice> Servant,<space extent="1" unit="words"/></p>  
 <p rend="right"><seg rend="caps"><persName>Selim Aga</persName>.</seg></p>
 		</div>
+		
 
-		<div>
 	<pb facs="liv_020050_0009" n="0009"/>
+		<div>
 <p><seg rend="caps">Contents</seg>.</p>
 <list>
 	<item><seg rend="caps">Preface</seg>,. . . . . <ref target="pvii">viii</ref></item> <!-- Adrian, not sure how to tag the pages instead of ref - separate item on line, or just p rend right? HB -->
@@ -299,8 +311,8 @@ a truly good substitute for these wants. I have experienced your goodness in sen
 	<pb facs="liv_020050_0010" n="0010"/>
 		</div>
 
-		<div>
 	<pb facs="liv_020050_0011" n="0011"/>
+		<div>
 <head><hi rend="caps">Preface</hi></head>
 <p><seg rend="caps">It</seg> is not the Author's intention to make great orations out of nothing, nor to picture the description of his country in eloquent language, but to give, in the form of recollections, a brief account of incidents connected with his own life. Having been urged by several friends to write an account of his life, he hopes that this small work will meet the approbation of all who read it. He will not fail, therefore, to make it as interesting as possible. The reader, however, must not expect something extraordinary when beginning to read this narrative. Great anxiety has been felt by geographical and other societies, to obtain an accurate knowledge <lb/>
 

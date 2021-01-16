@@ -10,8 +10,12 @@
 .liv_020050 .smallest{
     font-size: .65em;
 }
-.liv_020050 .front .pb-title{
+.liv_020050 .front .div + .pb-title{
     border-top: none;
+}
+.liv_020050 .front .pb-title:nth-child(1){
+    border-top: none;
+    margin-top: 0;
 }
 .liv_020050 .cover{
     padding: .5em;
@@ -42,8 +46,8 @@
     display: block;
 }
 .liv_020050 .page{
-    padding: .5em;
-    border: 1px solid #595959;
+    padding: 1em;
+    border: 1px solid #858585;
     height: 33em;
 }
 .liv_020050 .pearson{

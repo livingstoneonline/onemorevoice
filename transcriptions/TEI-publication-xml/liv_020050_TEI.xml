@@ -189,6 +189,12 @@
 <!-- @n = page number only, e.g., 0001 -->
 <!-- <pb facs="" n="" /> -->
 
+<!-- 
+1. div page for main pages
+2. calc height & apply consistently
+3. page width
+-->
+
 	<text n="styleTEI-add liv_020050">
 		<front>      
 	
@@ -563,10 +569,14 @@ to be expected in the desert, we arrived at <settlement>Goortie</settlement>. Th
 		<l>Two lovers bear when doom'd to part;</l>
 		<l>They part for months, for years, perchance,</l>
 		<l>Far from those scenes which cheer the heart.</l>
+	</lg>
+</lg>
 
 
 	<pb facs="liv_020050_0036" n="0036"/>
 <lb/><fw rend="small"><seg rend="left">32</seg> <seg rend="center caps">Aga's Recollections.</seg></fw>
+<lg type="verse"> 
+	<lg type="stanza">
 		<l>They wait fair fortune's future day,</l>
 		<l>In hopes to meet some distant year;</l>
 		<l>Tho' parted far, true love can say,</l>
@@ -584,8 +594,6 @@ to be expected in the desert, we arrived at <settlement>Goortie</settlement>. Th
 	</lg>
 </lg>
 
-
-<lb/>
 <lb/><p>The time had not arrived when <term type="collective">slave</term>-dealers went to <settlement>Cairo</settlement> to dispose of their <term type="collective">slaves</term>, in consequence we had to stay at <settlement>Goortie</settlement> for three months, during which time I was employed in doing sundry things. First of all, I was sent to live with a friend of my master's, who behaved very kindly to me. Here I had to take care of some <term type="animal">cows</term>, while the man's two sons attended to the lands of the farm, which were between three and four miles from the house. About six miles from <settlement>Goortie</settlement>, my master married a young woman, with whom I was soon taken to live. In many of the eastern countries, and particularly <country>Egypt</country>, a man is not confined to one wife, but can keep as many as his abilities will allow him. My master's recent marriage was the cause of raising a deal of jealousy on the part of the old one. He chiefly resided at the house he had built for the former, and when the latter met <lb/>
 
 
@@ -651,10 +659,11 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 		<l>To those who court thy shelt'ring arms,</l>
 		<l>Protection dost extend.</l>
 	</lg>
-
+</lg>
 
 	<pb facs="liv_020050_0043" n="0043"/>
 <lb/><fw rend="small"><seg rend="center caps">Ode to <country>Britain</country>.</seg> <seg rend="right">39</seg></fw>
+<lg type="verse"> 
 	<lg type="stanza">
 		<l>Thou wavest high the flag of fame,</l>
 		<l>Liberty is thy theme,</l>
@@ -674,6 +683,13 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 		<l>Thy fame did never see.</l>
 	</lg>
 </lg>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
 <!-- Not sure if Media is supposed to be Medina? HB -->
 
 
@@ -692,25 +708,25 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 		<l>Creation has not spared her pains,</l>
 		<l>To show the powers of Him who reigns.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The light blue and transparent sky,</l>
 		<l>Tells man his mind to lift on high,</l>
 		<l>And bids him view the ethereal light,</l>
 		<l>“That beams upon his ravish'd sight.”</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The sun, by day, with ardent mirth,</l>
 		<l>Glows on the cold unfeeling earth:</l>
 		<l>The moon and stars begin their sway,</l>
 		<l>And shed their light till morning day.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>O look to that palacious view,</l>
 		<l>Which stands in colours red and blue;</l>
 		<l>Resign thy fate submissively</l>
 		<l>To Him who lives above the sky.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>No human fiends there can we fear;</l>
 		<l>No earthly foes above that sphere.</l>
 		<l>But He who reigns in yonder realm</l>
@@ -723,53 +739,54 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 <lb/>
 <lg type="verse">
 	<head rend="caps center"><seg rend="caps">Battle of <region>Gwalior</region></seg>.</head>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>'Twas when the shades of ev'ning fell</l>
 		<l>On <country>India</country>'s lofty hills of snow:</l>
 		<l>That eve the minds will ne'er forget</l>
 		<l>Of those who have escap'd the blow.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>'Twas on that eve that <persName>Gough</persName> did say,</l>
 		<l>Prepare to fight whene'er you start,</l>
 		<l>For we will seize <region>Gwalior</region>'s fort:</l>
 		<l><persName>Maharajpoor</persName> shall know we're smart.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>As soon's the morn began to dawn</l>
 		<l>Each soldier stood with sword in hand</l>
 		<l>Resolved to fight with all his might</l>
 		<l>Or die upon a foreign land.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>In columns three they stood array'd</l>
 		<l>With all their force to face the foe;</l>
 		<l>From high <region>Gwalior</region>'s fort look'd down,</l>
 		<l>And threw her balls on them below.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>Brave <persName>Thacwell</persName> stood, and at the head</l>
 		<l>Of the first column did command,</l>
 		<l>Valiant, with grace, the second took,</l>
 		<l>While <persName>Dennis</persName> at the third did stand.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>They fought with might and eager true</l>
 		<l>For <country>Britain</country>'s fame and <country>Britain</country>'s name,</l>
 		<l>Till they beheld <persName>Maharajpoor</persName></l>
 		<l>Invested with a fire and flame.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The guns were then to silence called,</l>
 		<l>Each man to charge with sword in hand</l>
 		<l>With bay'nets fix'd they did advance,</l>
 		<l>And shook <region>Gwalior</region>'s fort and land.</l>
 	</lg>
-
+</lg>
 
 	<pb facs="liv_020050_0046" n="0046"/>
 <lb/><fw rend="small"><seg rend="left">42</seg> <seg rend="center caps">Aga's Poems.</seg></fw>
-	<lg type="poem">
+<lg type="verse">
+	<lg type="stanza">
 		<l><region>Gwalior</region> yielded power to them,</l>
 		<l><persName>Maharajpoor</persName> a treaty sign'd,</l>
 		<l>The <term type="collective">British</term> march'd within their bounds,</l>
@@ -781,31 +798,31 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 <lb/>
 <lg type="verse">
 	<head rend="caps center">Eclipse of the moon.</head>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>Led by ambition's mighty force,</l>
 		<l>A friend and I did take our course</l>
 		<l>To view the eclipse upon the moon:</l>
 		<l>We wished to see ere late or soon.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>We walked with slow and gentle pace;</l>
 		<l>Perceived darkness on the moon's trace.</l>
 		<l>Nought we saw but the cloudy sky;</l>
 		<l>Nought we heard but the <persName>Zephyr</persName>'s sigh.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>All nature lay without alarms,</l>
 		<l>Wrapt silently in <persName>Morpheus</persName>' arms.</l>
 		<l>Nocturnal bliss had lull'd to rest</l>
 		<l>The chirps of the robin red breast.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>While thus our thoughts did wander o'er</l>
 		<l>Proud nature's wide creative power,</l>
 		<l>We saw as if reluctantly</l>
 		<l>The moon peep through the cloudy sky.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>Far through the azure of the sky</l>
 		<l>She stood downcast and ghastly shy.</l>
 		<l>One minute pass'd and she was gone</l>
@@ -819,65 +836,68 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 <lb/>
 <lg type="verse">
   	<head rend="caps center">The seasons.</head>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>In winter's freezing frost and wind</l>
 		<l>How sad the hills and mountains stand,</l>
 		<l>While ice and snow do fill the plains,</l>
 		<l>And seal the wide and mighty strand.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The rivers look with mournful gaze;</l>
 		<l>The hills return their woeful song.</l>
 		<l>Why does the sun refuse to shine,</l>
 		<l>And leave us pedling in the throng?</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>Up starts nature and exclaims,</l>
 		<l>Why do ye look so sour and sad?</l>
 		<l>The sun will come and bring again</l>
 		<l>With him the warm luxuriant plaid.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The voice of spring is heard afar</l>
 		<l>Proclaim the sun and summer nigh,</l>
 		<l>While all the birds do sing with joy,</l>
 		<l>And soar with grace along the sky.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The trees begin to flourish green;</l>
 		<l>The flowers appear above the ground;</l>
 		<l>The sun shines with glittering rays,</l>
 		<l>Diffusing mirth to all around.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>Clad with a light translucent robe,</l>
 		<l>The God of summer glides along.</l>
 		<l>His “cheering” breath and “glad'ning” rays</l>
 		<l>Give life and health to weak and strong.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>See how the stream glides in the vale</l>
 		<l>To join the sea with rapid pace.</l>
 		<l>The fruit begins to ripen fast;</l>
 		<l>The flowers bloom with lovely grace.</l>
 	</lg>
+</lg>
 
 
 	<pb facs="liv_020050_0048" n="0048"/>
 <lb/><fw rend="small"><seg rend="left">44</seg> <seg rend="center caps">Aga's Poems.</seg></fw>
-	<lg type="poem">
+<lg type="verse">
+	<lg type="stanza">
 		<l>But hark! who comes with sheaf of <term type="plant_foodstuff">corn</term></l>
 		<l>Wrapt round her head with <term type="plant_foodstuff">grapes</term> so fine?</l>
 		<l>Ah! 'tis <persName>Pomona</persName> in her prime,</l>
 		<l><choice><sic>Godess</sic><corr>Goddess</corr></choice> of harvest and the vine.</l>
 	</lg>
-	<lg type="poem">
+	<lg type="stanza">
 		<l>The winter comes, when she departs;</l>
 		<l>The spring it bids the birds to sing;</l>
 		<l>While summer days with mirth return,</l>
 		<l>Autumnus tries the fruit to bring.</l>
 	</lg>
 </lg>
+<lb/>
 <lb/>
 <lb/>
 <lb/>
@@ -894,7 +914,6 @@ but the sea grew so boisterous that the vessel (which was but a small one) had t
 		<div  type="imprint">
 	<pb facs="liv_020050_0049" n="0049"/>
 		<div n="page">
-<lb/>
 <lb/>
 <lb/>
 <lb/>

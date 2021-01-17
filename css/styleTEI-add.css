@@ -1,6 +1,15 @@
 .indent{
     text-indent: 25px;
 }
+/* @media only screen and (min-width: 768px){
+    .text.liv_020050{
+        margin: 0 auto;
+        width: 95%;
+    }
+} */
+.liv_020050{
+    font-size: .95em;
+}
 .liv_020050 .larger{
     font-size: 1.4em;
 }
@@ -13,8 +22,7 @@
 .liv_020050 .smallest{
     font-size: .65em;
 }
-.liv_020050 .front .div + .pb-title,
-.liv_020050 .back .div + .pb-title{
+.liv_020050 .pb-title{
     border-top: none;
 }
 .liv_020050 .front .pb-title:nth-child(1){
@@ -24,7 +32,8 @@
 .liv_020050 .cover{
     padding: .5em;
     background-color: #595959;
-    height: 33em;
+    height: auto;
+    min-height: 33em;
 }
 .cover1.liv_020050_0001{
     border: 1px solid;
@@ -51,9 +60,10 @@
     display: block;
 }
 .liv_020050 .page{
-    padding: 1em;
+    padding: 2em 1em;
     border: 1px solid #858585;
-    height: 30em;
+    min-height: 32em;
+    height: auto;
 }
 .liv_020050 .pearson{
     font-size: 3em;
@@ -113,6 +123,8 @@
     margin-bottom: 1.5em;
 }
 .liv_020050 .note{
+    line-height: 1.4em;
+    margin-top: 1.5em;
     display: block;
 }
 .liv_020050 .poem-wrapper{

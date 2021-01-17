@@ -13,7 +13,8 @@
 .liv_020050 .smallest{
     font-size: .65em;
 }
-.liv_020050 .front .div + .pb-title{
+.liv_020050 .front .div + .pb-title,
+.liv_020050 .back .div + .pb-title{
     border-top: none;
 }
 .liv_020050 .front .pb-title:nth-child(1){
@@ -114,11 +115,19 @@
 .liv_020050 .note{
     display: block;
 }
+.liv_020050 .poem-wrapper{
+    text-align: center;
+    line-height: 1.4em;
+}
 .liv_020050 .poem{
     margin: 0 auto;
+    display: inline-block;
 }
 .liv_020050 .poetic-section{
-    text-align: center;
+    padding: 0 0 0 2em;
+}
+.liv_020050 .poem .poetic-section:last-of-type{
+    margin-bottom: 0;
 }
 .liv_020050 .poetic-line{
     text-align: left;

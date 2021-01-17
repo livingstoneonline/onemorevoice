@@ -825,8 +825,10 @@
 	<xsl:template match="lg">
 		<xsl:choose>
 			<xsl:when test="@type='verse'">
-				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:apply-templates/>
+				<div class="poem-wrapper">
+					<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
+						<xsl:apply-templates/>
+					</div>
 				</div>
 			</xsl:when>
 			<xsl:when test="@type='stanza'">

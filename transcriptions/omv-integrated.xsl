@@ -822,6 +822,32 @@
 		</div>
 	</xsl:template>
 
+	<xsl:template match="lg">
+		<xsl:choose>
+			<xsl:when test="@type='verse'">
+				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
+					<xsl:apply-templates/>
+				</div>
+			</xsl:when>
+			<xsl:when test="@type='stanza'">
+				<p class="{concat('poetic-section', ' ', @type, ' ', @rend, ' ', @n)}">
+					<xsl:apply-templates/>
+				</p>
+			</xsl:when>
+			<xsl:otherwise>
+				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
+					<xsl:apply-templates/>
+				</div>
+			</xsl:otherwise>	
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="l">
+		<seg class="{concat('poetic-line', ' ', @type, ' ', @rend, ' ', @n)}">
+			<xsl:apply-templates/>
+		</seg>
+	</xsl:template>
+
 	<xsl:template match="lb">
 		<xsl:variable name="class">
 			<xsl:if test="@rend">

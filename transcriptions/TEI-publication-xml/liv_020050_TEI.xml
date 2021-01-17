@@ -30,6 +30,21 @@
 					<resp>TEI Encoding</resp>
 					<resp>Editorial Decisions</resp>
 				</respStmt>
+				<respStmt xml:id="ESW">
+					<name>Elizabeth S. Wright</name>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="CN">
+					<name>Celine Noel</name>
+					<resp>Coding Revisions</resp>
+				</respStmt>
+				<respStmt xml:id="WG">
+					<name>Wanda Gunther</name>
+					<resp>Coding Revisions</resp>
+				</respStmt>
 				<respStmt xml:id="HB">
 					<name>Heather F. Ball</name>
 					<resp>TEI Encoding</resp>
@@ -37,23 +52,8 @@
 					<resp>Proofing</resp>
 					<resp>Coding Review</resp>
 				</respStmt>
-				<respStmt xml:id="WG">
-					<name>Wanda Gunther</name>
-					<resp>Coding Revisions</resp>
-				</respStmt>
-				<respStmt xml:id="CN">
-					<name>Celine Noel</name>
-					<resp>Coding Revisions</resp>
-				</respStmt>
 				<respStmt xml:id="AW">
 					<name>Adrian S. Wisnicki</name>
-					<resp>TEI Encoding</resp>
-					<resp>Editorial Decisions</resp>
-					<resp>Proofing</resp>
-					<resp>Coding Review</resp>
-				</respStmt>
-				<respStmt xml:id="ESW">
-					<name>Elizabeth S. Wright</name>
 					<resp>TEI Encoding</resp>
 					<resp>Editorial Decisions</resp>
 					<resp>Proofing</resp>
@@ -252,7 +252,7 @@
 
 	<pb facs="liv_020050_0005" n="0005"/> <!-- Adrian, not sure if I leave the page numbers as notated or impose our own? HB -->
 		<div n="page">
-<lb/><p rend="center caps"><seg rend="large">Incidents</seg>
+<lb/><p rend="center caps"><seg rend="large"><w>I n c i d e n t s</w></seg>
 <lb/>  
 <lb/><seg n="smallest">Connected with</seg> 
 <lb/>
@@ -330,7 +330,7 @@
 
 <list type="simple">
 <lb/><space extent="1" unit="chars"/><item>Description of the Valley of Tegla and its Inhabitants,<seg rend="right">11</seg></item>
-<lb/><item><seg rend="left">Personal History&#8212;Youth and Premature Slavery,</seg> <seg rend="right">17</seg></item>
+<lb/><space extent="1" unit="chars"/><item><seg rend="left">Personal History&#8212;Youth and Premature Slavery,</seg> <seg rend="right">17</seg></item>
 </list>
 
 </item>
@@ -345,8 +345,6 @@
 
 	<pb facs="liv_020050_0011" n="0011"/>
 		<div n="page">
-<lb/>
-<lb/>
 <lb/>
 <lb/>
 <lb/><p rend="center caps" n="larger">Preface.</p>
@@ -374,7 +372,7 @@
 <lb/><fw rend="small"><seg rend="left">x</seg> <seg rend="center caps">Preface.</seg></fw>
 <p rend="no-indent">ambitious propensities. In this manner the fate of the author was sealed. The author will proceed to detail the events of his history in the form of recollections.</p>
 
-<p rend="right"><seg rend="smallcaps"><persName>Selim Aga</persName></seg>.<space extent="2" unit="chars"/></p>
+<p rend="right"><seg rend="smallcaps"><persName>Selim Aga</persName></seg>.<space extent="1" unit="words"/></p>
 		</div>
 		</front>
 
@@ -397,9 +395,10 @@ its inhabitants.</seg></p>
 <lb/><fw rend="small"><seg rend="left">12</seg> <seg rend="center caps">Aga's Recollections.</seg></fw>
 agriculture is carried on by the farmer on a very small scale&#8212;the only substitute for a plough being a long pole, with something similar to a shovel attached to the end of it. With this instrument the surface of the ground is broken, after which the seed (consisting of <term type="collective">Indian</term> <term type="plant_foodstuff">corn</term> and <term type="plant_foodstuff">maize</term>) is sown in small quantities at certain distances from each other. After it has grown a certain length, part of it is transplanted into different fields, thus giving the crop full scope and encouragement to grow. When the <term type="plant_foodstuff">corn</term> begins to change colour, the rainy season declines, till at length the refulgent rays of the sun perceive the inhabitant of the vale preparing to reap his harvest. The rain is over, the dry season is on; many begin to reap the fruits of their labour.<ref xml:id="ref1" target="n1">*</ref></p> <!-- Again, not sure how to translate this ref. HB -->
 
-<note xml:id="n1" anchored="true" target="ref1"><!-- Not sure how to translate this? HB --><p>* How wisely has Providence ordered all things. The inhabitants of <country>Egypt</country> have no rain, and yet the <geogName>river Nile</geogName> has its yearly inundations. The rainy season in the <geogName>valley of Tegla</geogName>, and its neighbouring countries forms tributaries to the <geogName>Nile</geogName>; makes it overflow its banks; spreads fertility through the muddy soil of the country; and supplies its dependant <term type="collective">natives</term> with the necessaries of life.</p></note>
+<p>My juvenile recollections did not bring the nature of the implements used for shearing. The shearers are not formed of a number of mercenaries, who expect to pocket shillings and half-crowns at the end of their period of labour; but such is the social nature of the people among themselves, that they exchange services with each other. A large concourse of them assemble 
 
-<p>My juvenile recollections did not bring the nature of the implements used for shearing. The shearers are not formed of a number of mercenaries, who expect to pocket shillings and half-crowns at the end of their period of labour; but such is the social nature of the people among themselves, that they exchange services with each other. A large concourse of them assemble <lb/><space/>
+<lb/>
+<lb/><note xml:id="n1" anchored="true" target="ref1" rend="indent small"><!-- Not sure how to translate this? HB -->* How wisely has Providence ordered all things. The inhabitants of <country>Egypt</country> have no rain, and yet the <geogName>river Nile</geogName> has its yearly inundations. The rainy season in the <geogName>valley of Tegla</geogName>, and its neighbouring countries forms tributaries to the <geogName>Nile</geogName>; makes it overflow its banks; spreads fertility through the muddy soil of the country; and supplies its dependant <term type="collective">natives</term> with the necessaries of life.<lb/></note>
 
 
 	<pb facs="liv_020050_0017" n="0017"/>

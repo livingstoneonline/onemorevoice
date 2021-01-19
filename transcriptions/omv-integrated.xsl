@@ -381,6 +381,20 @@
 				</xsl:choose>
 			</xsl:variable>
 			<xsl:choose>
+				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book')]">
+					<xsl:if test="//sourceDesc/biblStruct/monogr/author/text()">
+						<xsl:value-of select="//sourceDesc/biblStruct/monogr/author" separator=" and "/>
+						<xsl:text>, </xsl:text>
+					</xsl:if>
+					<em><xsl:value-of select="$title"/></em>
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
+					<xsl:text>: </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher" separator="; "/>
+					<xsl:text>, </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
+					<xsl:text>).</xsl:text>
+				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book-section')]">
 					<xsl:text>In </xsl:text>
 					<xsl:if test="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='section']/text()">

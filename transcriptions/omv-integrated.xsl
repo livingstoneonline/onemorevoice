@@ -381,6 +381,20 @@
 				</xsl:choose>
 			</xsl:variable>
 			<xsl:choose>
+				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book')]">
+					<xsl:if test="//sourceDesc/biblStruct/monogr/author/text()">
+						<xsl:value-of select="//sourceDesc/biblStruct/monogr/author" separator=" and "/>
+						<xsl:text>, </xsl:text>
+					</xsl:if>
+					<em><xsl:value-of select="$title"/></em>
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
+					<xsl:text>: </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher" separator="; "/>
+					<xsl:text>, </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
+					<xsl:text>).</xsl:text>
+				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book-section')]">
 					<xsl:text>In </xsl:text>
 					<xsl:if test="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='section']/text()">
@@ -691,7 +705,7 @@
 							<xsl:variable name="source-link2">
 								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
 							</xsl:variable>
-							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
 							<xsl:if test="//publicationStmt/ref[2]">
 								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 							</xsl:if>
@@ -719,7 +733,7 @@
 							<xsl:variable name="source-link2">
 								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
 							</xsl:variable>
-							<p><strong>Explore original item image(s):</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
 							<xsl:if test="//publicationStmt/ref[2]">
 								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 							</xsl:if>
@@ -811,7 +825,7 @@
 
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
-		<div class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+		<div class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
 			<xsl:apply-templates/>
 		</div>
 	</xsl:template>
@@ -820,6 +834,34 @@
 		<div class="{concat(name(), ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
 		</div>
+	</xsl:template>
+
+	<xsl:template match="lg">
+		<xsl:choose>
+			<xsl:when test="@type='verse'">
+				<div class="poem-wrapper">
+					<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
+						<xsl:apply-templates/>
+					</div>
+				</div>
+			</xsl:when>
+			<xsl:when test="@type='stanza'">
+				<p class="{concat('poetic-section', ' ', @type, ' ', @rend, ' ', @n)}">
+					<xsl:apply-templates/>
+				</p>
+			</xsl:when>
+			<xsl:otherwise>
+				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
+					<xsl:apply-templates/>
+				</div>
+			</xsl:otherwise>	
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="l">
+		<seg class="{concat('poetic-line', ' ', @type, ' ', @rend, ' ', @n)}">
+			<xsl:apply-templates/>
+		</seg>
 	</xsl:template>
 
 	<xsl:template match="lb">

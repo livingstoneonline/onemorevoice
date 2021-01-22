@@ -8,7 +8,7 @@ mogrify -format jpg -resize 700x700 -quality 85 -sampling-factor 4:2:0 -interlac
 
 mogrify -format jpg -resize 400x400 -quality 85 -sampling-factor 4:2:0 -interlace JPEG -path ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 *.tif  && cd ~/GitHub/One-More-Voice/0_dev/0-image-staging-regular/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd ..
 
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/site-images \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/One-More-Voice/images/main-pages \;
 
 
 -strip

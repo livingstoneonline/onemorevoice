@@ -17,10 +17,10 @@ var offlineFundamentals = [
   '/css/style.css',
   '/css/styleTEI.css',
   '/css/font-awesome.min.css',
-  '/scripts/scripts.js',
-  '/scripts/journal-transform.js',
-  '/scripts/manuscript-transform.js',
-  '/scripts/jquery-3.5.1.min.js'
+  '/js/scripts.js',
+  '/js/journal-transform.js',
+  '/js/manuscript-transform.js',
+  '/js/jquery-3.5.1.min.js'
 ];
 
 /* The install event fires when the service worker is first installed.

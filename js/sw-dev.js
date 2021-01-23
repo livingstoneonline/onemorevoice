@@ -16,6 +16,7 @@ var offlineFundamentals = [
   '/sw.js',
   '/css/style.css',
   '/css/styleTEI.css',
+  '/css/styleTEI-add.css',
   '/css/font-awesome.min.css',
   '/js/scripts.js',
   '/js/journal-transform.js',

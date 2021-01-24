@@ -971,23 +971,23 @@ table .linenumber{
 /* Implemented using https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
 @font-face {
     font-family: 'cedarville_cursiveregular';
-    src: url('fonts/cedarvillecursive-regular-webfont.woff2') format('woff2'),
-         url('fonts/cedarvillecursive-regular-webfont.woff') format('woff');
+    src: url('../fonts/cedarvillecursive-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cedarvillecursive-regular-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face{
     font-family: 'dancing_scriptregular';
-    src: url('fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/dancingscript-variablefont_wght-webfont.woff') format('woff');
+    src: url('../fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/dancingscript-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face{
     font-family: 'parisienneregular';
-    src: url('fonts/parisienne-regular-webfont.woff2') format('woff2'),
+    src: url('../fonts/parisienne-regular-webfont.woff2') format('woff2'),
          url('fontsparisienne-regular-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
@@ -995,16 +995,16 @@ table .linenumber{
 }
 @font-face {
     font-family: 'unifrakturcookbold';
-    src: url('fonts/unifrakturcook-bold-webfont.woff2') format('woff2'),
-         url('fonts/unifrakturcook-bold-webfont.woff') format('woff');
+    src: url('../fonts/unifrakturcook-bold-webfont.woff2') format('woff2'),
+         url('../fonts/unifrakturcook-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	font-display: swap;
 }
 @font-face {
     font-family: 'unifrakturmaguntiabook';
-    src: url('fonts/unifrakturmaguntia-regular-webfont.woff2') format('woff2'),
-         url('fonts/unifrakturmaguntia-regular-webfont.woff') format('woff');
+    src: url('../fonts/unifrakturmaguntia-regular-webfont.woff2') format('woff2'),
+         url('../fonts/unifrakturmaguntia-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	font-display: swap;

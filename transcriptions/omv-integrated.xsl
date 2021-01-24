@@ -65,8 +65,8 @@
 				<meta http-equiv="Pragma" content="no-cache" />
 				<meta http-equiv="Expires" content="0" />  
 			    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
-			    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png" />
-			    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png" />
+			    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png" />
+			    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png" />
 			    <link rel="manifest" href="../site.webmanifest" />
 				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/jquery-3.5.1.min.js" />-->
 				<link rel="preload" as="script" href="../js/jquery-3.5.1.min.js"/>
@@ -103,7 +103,7 @@
         			<div class="navspace" data-include="nav2"></div>
 										       
 					<header class="title" id="title-div">
-						<img class="image-border content-holder-1" src="../images/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../images/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../images/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../images/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../images/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../images/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../images/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../images/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+						<img class="image-border content-holder-1" src="../img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 		        		<h1 class="header-title">One More Voice</h1>
 		        		<hr/>
 						<div><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>

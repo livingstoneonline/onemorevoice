@@ -40,10 +40,23 @@
 				margin-right: 1em;
 				width: 25%;
 			}
-		</style>	
-		<link href="dist/lity.css" rel="stylesheet">
-		<script src="vendor/jquery.js"></script>
-		<script src="dist/lity.js"></script>
+			#js-warning{
+				font-size: 1.4em;
+				color: #a83c37;
+				background-color: #e3e3e3;
+				text-align: center;
+				padding: 1em;
+			}
+			.javascript{
+				display: none;
+				visibility: hidden;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+			document.getElementById('js-warning').className = 'javascript';
+			};			
+		</script>
 	</head>
 
 	<!-- <?php flush(); ?> -->
@@ -52,7 +65,7 @@
 		<article>
 
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
-
+			<h1 id="js-warning">Please enable Javascript to use this site</h1>
 			<div class="navspace" data-include="nav1"></div>
 
 			<header class="title" id="title-div">				

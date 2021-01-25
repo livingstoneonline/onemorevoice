@@ -1213,6 +1213,32 @@ table.archival-text .details{
 	text-align: center;       
 	line-height: 1.2em;
 }
+/* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+.creator-image{
+	float: left;
+	margin-right: 1em;
+	width: 25%;
+	min-width: 105px;
+	position: relative;
+}
+.no-image::after{
+	content: "";
+	background-color: #595959;
+	display: block;
+	padding-bottom: 100%; 
+}
+.no-image .content{
+	color: white;
+	font-size: .85em;
+	font-family: Arial, Geneva, Tahoma,sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
 
 
 /* 1.13. Book-Length Works */

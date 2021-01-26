@@ -31,7 +31,7 @@
 			gtag('config', 'UA-31768072-5');
 		</script>
 		<style>
-			table.archival-text{
+			section.archival-text{
 				font-size: .8em;
 				line-height: 1.6em;
 				border: 1px solid #858585;
@@ -43,20 +43,21 @@
 				width: 100%;
 			}
 			@media only screen and (min-width: 768px){
-				table.archival-text{
+				section.archival-text{
 					font-size: .9em;
 					line-height: 1.6em;
 				}
 			}
-			table.archival-text:last-of-type{
+			section.archival-text:last-of-type{
 				margin: 2.5em 0 1em 0; 
 			}
-			table.archival-text th, 
-			table.archival-text td{
+			section.archival-text h5, 
+			section.archival-text p{
 				padding: 12px;
 				border-bottom: 1px solid #858585;
+				clear: both;
 			}	
-			table.archival-text tr:first-child > th{
+			section.archival-text h5{
 				font-size: 1.15em;
 				color: white;
 				background: #204A79;
@@ -66,38 +67,38 @@
 				display: flex;
 				justify-content: space-between;
 			}
-			.archival-text .return-top{
+			section.archival-text .return-top{
 				font-size: .9em;
 				color: white;
 				white-space: nowrap;
 				margin-top: .05em;
 			}
 			@media only screen and (min-width: 480px){
-				.archival-text .return-top{
+				section.archival-text .return-top{
 					margin-right: .5em;
 				}
 			}
-			.archival-text a.return-top:hover,
-			.archival-text a.return-top:focus{
+			section.archival-text a.return-top:hover,
+			section.archival-text a.return-top:focus{
 				color: #a83c37;
 				background-color: #e3e3e3;
 			}
-			table.archival-text tr:last-child > td{
+			section.archival-text p:last-child{
 				border-bottom: none;
 			}
-			table.archival-text .item{
+			section.archival-text .item{
 				background-color: #DBE6F5;
 			}
-			table.archival-text .item a:hover,
-			table.archival-text .item a:focus{
+			section.archival-text .item a:hover,
+			section.archival-text .item a:focus{
 				background: whitesmoke;
 			}
-			table.archival-text .years,
-			table.archival-text .details{
+			section.archival-text .years,
+			section.archival-text .details{
 				padding: 10px 10px;
 			}
 			@media only screen and (min-width: 768px){
-				table.archival-text .details{
+				section.archival-text .details{
 					padding: 10px 10px 10px 38px;
 				}
 			}		
@@ -110,25 +111,21 @@
 			<main class="main" id="main">
 
 				<section aria-labelledby="authors">
-					<h4 id="authors">Authors &amp; Contributors &nbsp;<a href="#menu" class="return-top">top</a></h4>
-
 					<section class="archival-text" aria-labelledby="aga">
-							<th id="aga">
+							<h5 id="aga">
 								<span id="aga-toc">Selim Aga</span> <a href="#menu" class="return-top">top</a>
-							</th>
-							<td class="years">c.1826-1875 &nbsp|&nbsp; <a href="https://en.wikipedia.org/wiki/Selim_Aga">Wikipedia</a></td>
-							<td>
+							</h5>
+							<p class="years">c.1826-1875 &nbsp|&nbsp; <a href="https://en.wikipedia.org/wiki/Selim_Aga">Wikipedia</a></p>
+							<p>
 								<span class="creator-image no-image">
 									<span class="content">No<br/> known<br/> image</span>
 								</span>
 								<strong>Biography:</strong> Formerly enslaved person and traveler from Kordofan, Sudan; accompanied British explorer Richard Burton as a valet on various West African journeys in the 1860s; produced accounts of his life and travels.
-							</td>
-						<tr class="item">
-						<span id="liv_020017"></span>“<strong><a href="transcriptions/liv_020017_TEI.html">The Niger Expedition</a></strong>”
-						</tr>
-							<td class="details"><strong>Dates(s):</strong> 24 June 1858, 25 September 1858</td>
-							<td class="details"><strong>Co-Creator(s):</strong> Anonymous</td>
-							<td class="details"><strong>Format:</strong> Original letters, as combined, edited, and published in a British periodical</td>
+							</p>
+							<p class="item"><span id="liv_020017"></span>“<strong><a href="transcriptions/liv_020017_TEI.html">The Niger Expedition</a></strong>”</p>
+							<p class="details"><strong>Dates(s):</strong> 24 June 1858, 25 September 1858</p>
+							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
+							<p class="details"><strong>Format:</strong> Original letters, as combined, edited, and published in a British periodical</p>
 					</section>
 				</section>	
 			</main>

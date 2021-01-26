@@ -1057,7 +1057,7 @@ table.archival-text{
 @media only screen and (min-width: 768px){
 	table.archival-text{
 		font-size: .9em;
-		line-height: 1.5em;
+		line-height: 1.6em;
 	}
 }
 table.archival-text:last-of-type{
@@ -1212,6 +1212,34 @@ table.archival-text .details{
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	text-align: center;       
 	line-height: 1.2em;
+}
+/* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+.creator-image{
+	float: left;
+	margin-right: 1em;
+	width: 25%;
+	min-width: 105px;
+	position: relative;
+}
+.no-image::after{
+	content: "";
+	background-color: #e3e3e3;
+	border: 1px solid #858585;
+	display: block;
+	padding-bottom: 100%; 
+}
+.no-image .content{
+	color: #404040;
+	font-size: .95em;
+	font-family: 'source_sans_proregular';
+	/* letter-spacing: 1px; */
+	line-height: 1.5em;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
 }
 
 

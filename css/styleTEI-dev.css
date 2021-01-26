@@ -158,7 +158,7 @@ also see 2.9 for manuscript colors
 }
 @media only screen and (min-width: 768px){
 	.object .TEI{
-		padding: 1em 0;
+		padding: 0 0 1em 0;
 	}
 }
 .warning{
@@ -445,6 +445,7 @@ button::-moz-focus-inner{
 	color: #204A79;
 	font-size: .9em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	font-style: normal;
 	text-decoration: none;
 	text-indent: 0;
 }
@@ -987,7 +988,7 @@ table .linenumber{
 @font-face{
     font-family: 'parisienneregular';
     src: url('../fonts/parisienne-regular-webfont.woff2') format('woff2'),
-         url('../fontsparisienne-regular-webfont.woff') format('woff');
+         url('fontsparisienne-regular-webfont.woff') format('woff');
     font-weight: normal;
 	font-style: normal;
 	font-display: swap;

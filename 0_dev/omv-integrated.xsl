@@ -64,12 +64,12 @@
 				<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 				<meta http-equiv="Pragma" content="no-cache" />
 				<meta http-equiv="Expires" content="0" />  
-			    <link rel="apple-touch-icon" sizes="180x180" href="http://livingstoneonline.github.io/onemorevoice/images/icons/apple-touch-icon.png" />
-			    <link rel="icon" type="image/png" sizes="32x32" href="http://livingstoneonline.github.io/onemorevoice/images/icons/favicon-32x32.png" />
-			    <link rel="icon" type="image/png" sizes="16x16" href="http://livingstoneonline.github.io/onemorevoice/images/icons/favicon-16x16.png" />
+			    <link rel="apple-touch-icon" sizes="180x180" href="http://livingstoneonline.github.io/onemorevoice/img/icons/apple-touch-icon.png" />
+			    <link rel="icon" type="image/png" sizes="32x32" href="http://livingstoneonline.github.io/onemorevoice/img/icons/favicon-32x32.png" />
+			    <link rel="icon" type="image/png" sizes="16x16" href="http://livingstoneonline.github.io/onemorevoice/img/icons/favicon-16x16.png" />
 			    <link rel="manifest" href="http://livingstoneonline.github.io/onemorevoice/site.webmanifest" />
-				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/jquery-3.5.1.min.js" />-->
-				<link rel="preload" as="script" href="http://livingstoneonline.github.io/onemorevoice/scripts/jquery-3.5.1.min.js"/>
+				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/jquery-3.5.1.min.js" />-->
+				<link rel="preload" as="script" href="http://livingstoneonline.github.io/onemorevoice/js/jquery-3.5.1.min.js"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="http://livingstoneonline.github.io/onemorevoice/fonts/sourcesanspro-regular-webfont.woff2"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin='' href="http://livingstoneonline.github.io/onemorevoice/fonts/sourcesanspro-regular-webfont.woff"/>
 				<link rel="preload" as="style" href="http://livingstoneonline.github.io/onemorevoice/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
@@ -103,7 +103,7 @@
         			<div class="navspace" data-include="nav2"></div>
 										       
 					<header class="title" id="title-div">
-						    <img class="image-border content-holder-1" src="http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1399px.jpg" srcset="http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1399px.jpg 1399w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1276px.jpg 1276w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-1216px.jpg 1216w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-699px.jpg 699w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-638px.jpg 638w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-608px.jpg 608w, http://livingstoneonline.github.io/onemorevoice/site-images/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+						    <img class="image-border content-holder-1" src="http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, http://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 		        		<h1 class="header-title">One More Voice</h1>
 		        		<hr/>
 						<div><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
@@ -142,7 +142,7 @@
 					</xsl:if>
 		        </script>
 		        <!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css"/> --> 
-				<script src="http://livingstoneonline.github.io/onemorevoice/scripts/jquery-3.5.1.min.js"></script> 
+				<script src="http://livingstoneonline.github.io/onemorevoice/js/jquery-3.5.1.min.js"></script> 
 				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 				<script>
 					$(function(){
@@ -156,14 +156,14 @@
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/font-awesome.min.css"/>
 				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
 		        <!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css"/> --> 
-				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js"></script> -->
+				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/js/scripts.js"></script> -->
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js" />-->
-					<script src="http://livingstoneonline.github.io/onemorevoice/scripts/manuscript-transform.js"></script>
+					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/manuscript-transform.js" />-->
+					<script src="http://livingstoneonline.github.io/onemorevoice/js/manuscript-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js" />-->
-					<script src="http://livingstoneonline.github.io/onemorevoice/scripts/journal-transform.js"></script>
+					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/journal-transform.js" />-->
+					<script src="http://livingstoneonline.github.io/onemorevoice/js/journal-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
 					<!-- Image Rotation -->
@@ -193,7 +193,7 @@
 					function downloadJSAtOnload() {
 						var randomString = Math.floor(Math.random()*1000000);
 						var element = document.createElement("script");
-						element.src = "http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js?=" + randomString;
+						element.src = "http://livingstoneonline.github.io/onemorevoice/js/scripts.js?=" + randomString;
 						document.body.appendChild(element);
 					}
 					if (window.addEventListener)
@@ -202,7 +202,7 @@
 					window.attachEvent("onload", downloadJSAtOnload);
 					else window.onload = downloadJSAtOnload;
 				</script>
-				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/scripts/scripts.js" />-->
+				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/scripts.js" />-->
 			</body>
 		</html>
 	</xsl:template>
@@ -381,20 +381,6 @@
 				</xsl:choose>
 			</xsl:variable>
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book')]">
-					<xsl:if test="//sourceDesc/biblStruct/monogr/author/text()">
-						<xsl:value-of select="//sourceDesc/biblStruct/monogr/author" separator=" and "/>
-						<xsl:text>, </xsl:text>
-					</xsl:if>
-					<em><xsl:value-of select="$title"/></em>
-					<xsl:text> (</xsl:text>
-					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
-					<xsl:text>: </xsl:text>
-					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher" separator="; "/>
-					<xsl:text>, </xsl:text>
-					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
-					<xsl:text>).</xsl:text>
-				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book-section')]">
 					<xsl:text>In </xsl:text>
 					<xsl:if test="//sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='section']/text()">
@@ -417,6 +403,20 @@
 					<xsl:text>, </xsl:text>
 					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
 					<xsl:text>.</xsl:text>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct/monogr[contains(@n,'book')]">
+					<xsl:if test="//sourceDesc/biblStruct/monogr/author/text()">
+						<xsl:value-of select="//sourceDesc/biblStruct/monogr/author" separator=" and "/>
+						<xsl:text>, </xsl:text>
+					</xsl:if>
+					<em><xsl:value-of select="$title"/></em>
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/pubPlace" separator="; "/>
+					<xsl:text>: </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/publisher" separator="; "/>
+					<xsl:text>, </xsl:text>
+					<xsl:value-of select="//sourceDesc/biblStruct/monogr/imprint/date"/>
+					<xsl:text>).</xsl:text>
 				</xsl:when>
 				<xsl:otherwise>
 					<em><xsl:value-of select="//sourceDesc/biblStruct[@type='journal']//title"/></em>

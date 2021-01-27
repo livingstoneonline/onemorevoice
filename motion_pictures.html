@@ -49,7 +49,7 @@
 				<div class="image-wrapper">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 					<img class="image-border content-holder-2" src="img/main-pages/liv_023018_0001_deriv-699px.jpg" srcset="img/main-pages/liv_023018_0001_deriv-699px.jpg 699w, img/main-pages/liv_023018_0001_deriv-638px.jpg 638w, img/main-pages/liv_023018_0001_deriv-608px.jpg 608w, img/main-pages/liv_023018_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Magic lantern against large white field." title="Anonymous, “Improved Phantasmagoria Lantern” (Magic lantern, c.1852). Historical object, in the care of Mary Borgo Ton. Image by Katie Chapman and Tassie Gnaidy, on behalf of Mary Borgo Ton. Published by permission." />
-					<a id="information" class="caption" href="#caption" aria-label="Go to image caption" title="Image information" alt="Information symbol"><i class="fa fa-info-circle"></i></a>
+					<a id="information" class="caption" href="#caption"><i class="fa fa-info-circle" aria-label="Go to image caption" title="Image information" alt="Information symbol"></i></a>
 				</div>
 
 				<h1 class="header-title">One More Voice</h1>
@@ -518,18 +518,18 @@
 			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-		<script type="text/javascript">
+		<script>
 			function googleTranslateElementInit() {
 				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 			}
 		</script>
-		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<!-- /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */ -->
 		<!-- Add a custom start time to HTML:
 			<div class="youtube" data-embed="AqcjdkPMPJA" data-starttime="25">
 		and change the following line of javascript:
 			iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&playsinline=1&start="+ this.dataset.starttime +""); -->
-		<script type="text/javascript">
+		<script>
 			var player; //current video player object
 			(function () {
 
@@ -593,7 +593,7 @@
 
 			})();
 		</script>
-		<script type="text/javascript">
+		<script>
 			// Load YouTube IFrame API asynchronously
 			var tag = document.createElement('script');
 			tag.src = "https://www.youtube.com/iframe_api";
@@ -615,7 +615,7 @@
 			}
 		</script>
 		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
-		<script type="text/javascript">
+		<script>
 			function downloadJSAtOnload() {
 				var randomString = Math.floor(Math.random()*1000000);
 				var element = document.createElement("script");

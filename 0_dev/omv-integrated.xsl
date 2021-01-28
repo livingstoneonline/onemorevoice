@@ -49,8 +49,6 @@
 				<title>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, <xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice
 				</title>
-			    <meta charset="UTF-8"/>
-				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 					    <meta name="description" content="Curated historical object for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
@@ -59,11 +57,10 @@
 					    <meta name="description" content="Critically-edited archival text for One More Voice. One More Voice, a work of digital humanities scholarship, focuses on recovering non-European contributions from the nineteenth-century British imperial and colonial archives." />
 					</xsl:otherwise>
 				</xsl:choose>
-				<meta name="keywords" content="one more voice,livingstone online,recovery,archives,colonial,colonialism,postcolonial,postcolonialism,empire,imperialism,digital humanities,minimal computing,travel,missionary,expeditionary,exploration,intercultural,encounter,non-western,non-European,literature,British,African,Africa,Victorian,nineteenth-century,travel narratives,autobiographies,letters,diaries,testimonies,interviews,maps,oral histories,genealogies,vocabularies,coronavirus,covid-19,creative commons" />
-			    <meta name="theme-color" content="#204A79"/>
-				<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-				<meta http-equiv="Pragma" content="no-cache" />
-				<meta http-equiv="Expires" content="0" />  
+				<meta charset="UTF-8"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<meta name="robots" content="index, follow"/>
+		        <meta name="theme-color" content="#204A79"/>
 			    <link rel="apple-touch-icon" sizes="180x180" href="http://livingstoneonline.github.io/onemorevoice/img/icons/apple-touch-icon.png" />
 			    <link rel="icon" type="image/png" sizes="32x32" href="http://livingstoneonline.github.io/onemorevoice/img/icons/favicon-32x32.png" />
 			    <link rel="icon" type="image/png" sizes="16x16" href="http://livingstoneonline.github.io/onemorevoice/img/icons/favicon-16x16.png" />

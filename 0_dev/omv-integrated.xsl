@@ -56,7 +56,6 @@
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><!--<xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice
 				</title>
 				<xsl:choose>
-				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 					    <meta name="description" content="{$object-creator}" />
 					</xsl:when>
@@ -218,13 +217,19 @@
 	<!-- TEI -->
 	<xsl:template match="TEI">
 		<xsl:variable name="body-color-front">
-			<xsl:apply-templates select="//front/@n[1]"/>
+			<xsl:if test="//front/@n[1]">
+				<xsl:text>background:#</xsl:text><xsl:apply-templates select="//front/@n[1]"/><xsl:text>;</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="body-color-back">
-			<xsl:apply-templates select="//back/@n[1]"/>
+			<xsl:if test="//back/@n[1]">
+				<xsl:text>background:#</xsl:text><xsl:apply-templates select="//back/@n[1]"/><xsl:text>;</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="body-color">
-			<xsl:apply-templates select="//body/@n[1]"/>
+			<xsl:if test="//body/@n[1]">
+				<xsl:text>background:#</xsl:text><xsl:apply-templates select="//body/@n[1]"/><xsl:text>;</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="front">
 			<xsl:choose>
@@ -567,7 +572,7 @@
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
 				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
-					<section class="TEI front {$front}" style="background:#{$body-color-front};" aria-labelledby="front-section">
+					<section class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
 						<div class="ms-container" id="front-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -586,7 +591,7 @@
 							</xsl:choose>
 						</div>
 					</section>
-					<section class="TEI" style="background:#{$body-color};" aria-labelledby="main-section">
+					<section class="TEI" style="{$body-color}" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -605,7 +610,7 @@
 							</xsl:choose>
 						</div>
 					</section>
-					<section class="TEI back {$back}" style="background:#{$body-color-back};" aria-labelledby="back-section">
+					<section class="TEI back {$back}" style="{$body-color-back}" aria-labelledby="back-section">
 						<div class="ms-container" id="back-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>

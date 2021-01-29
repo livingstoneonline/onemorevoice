@@ -552,23 +552,23 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside id="transcription-switches" class="manuscript-switches">
-					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch.">
+					<label for="remove-color" class="md_switch" title="Color: On/Off">
 						Remove Color
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color" id="remove-color" />
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color" id="remove-color" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch.">
+				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
 						Remove Rotation
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
 				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
@@ -633,18 +633,18 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside id="transcription-switches" class="journal-switches">
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch.">
+				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
 						Remove Justification
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
 				<xsl:variable name="narrow">

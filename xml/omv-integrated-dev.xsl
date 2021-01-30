@@ -15,6 +15,7 @@
 		</xd:desc>
 	</xd:doc>
 	
+	<xsl:strip-space elements="*"/>
 	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
@@ -52,10 +53,7 @@
 		<html lang="en" id="html">
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
-				<title>
-					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><!--<xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice
-				</title>
-				<xsl:choose>
+				<title><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><!--<xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 					    <meta name="description" content="{$object-creator}" />
@@ -81,13 +79,7 @@
 				<link rel="preload" as="font" type="font/woff" crossorigin='' href="http://livingstoneonline.github.io/onemorevoice/fonts/fontawesome-webfont.woff?v=4.7.0"/>
 			    <!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
-				<script>
-			  		window.dataLayer = window.dataLayer || [];
-			  		function gtag(){dataLayer.push(arguments);}
-			  		gtag('js', new Date());
-			
-			  		gtag('config', 'UA-31768072-5');
-				</script>
+				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 				<!-- Link to CSS file at end; critical CSS inlined here.-->
 		        <style>
 		        	html{font:16px Georgia,'Times New Roman',Times,serif;font-weight:400;color:#191716;overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;hyphens:auto;-ms-word-break:break-all;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;scroll-behavior:smooth;overflow-x:hidden}body{top:0!important;margin:.5em auto;padding-bottom:.5em}@media only screen and (min-width:768px){body{font-size:.95em}}@media only screen and (min-width:992px){body{padding-bottom:0}body.fixed-nav{padding-top:0!important}}article{padding:0 1em;margin:.5em auto;max-width:100%}@media only screen and (min-width:768px){article{max-width:46em}}@media only screen and (min-width:992px){article{max-width:42em}}@media only screen and (min-width:320px){.navspace{min-height:63px}}@media only screen and (min-width:480px){.navspace{min-height:68px}}@media only screen and (min-width:768px){.navspace{min-height:73px}}@media only screen and (min-width:768px){.navspace{min-height:52px}}header{position:relative}.title,body.transcription .title{font-weight:700;text-align:center;line-height:1.6em;position:relative}.title{padding-bottom:0}body.transcription .title{padding-bottom:1em}@media only screen and (min-width:320px){.title{padding-bottom:.5em}body.transcription .title{padding-bottom:1.5em}}@media only screen and (min-width:480px){body.transcription .title{padding-bottom:.5em}}@media only screen and (min-width:992px){.title,body.transcription .title{padding-bottom:1.5em;display:block!important}}.header-title{display:none;visibility:hidden}@media only screen and (min-width:992px){.header-title{display:block;visibility:visible;margin:.75em 0 0.6em}}.title hr{display:none;visibility:hidden}@media only screen and (min-width:992px){.title hr{display:block;visibility:visible}}h1{font-size:2em;font-family:Georgia,'Times New Roman',Times,serif}@media only screen and (min-width:768px){h1{font-size:2.2em}}@media only screen and (min-width:992px){h1{font-size:3.2em}}header h2{font-size:.9em;font-weight:300;font-family:Arial,Geneva,Tahoma,sans-serif;display:none;visibility:hidden}@media only screen and (min-width:480px){header h2{font-size:1em;margin-top:1.7em;display:block;visibility:visible}}@media only screen and (min-width:768px){header h2{font-size:1.1em;margin-top:1em;display:block}}@media only screen and (min-width:992px){header h2{margin-top:1em}}h3{font-size:1em;font-weight:700;color:#204a79}h3.subsection{padding-top:2em}.essay h3{clear:both}.credits h3{font-size:1.15em;margin-top:1.6em}h4{font-style:italic;font-size:1em;font-weight:300}.subsection{padding-top:1.5em}img{color:#e6e6e6;font-weight:300;width:100%;max-width:100%}a img{border:3px transparent solid}a:focus img,a:hover img{border:3px #204a79 solid}.image-border{border:1px solid gray}@media screen and (min-width:480px){.responsive-image70{width:70%}.responsive-image73{width:73%}.caption70{padding:0 15%}.caption73{padding:0 13.5%}}.content-holder-1,.content-holder-2,.content-holder-3,.content-holder-4,.content-holder-5{background:#e6e6e6;display:inline-block}@media screen and (min-width:320px){.content-holder-1{min-height:66px}.content-holder-2{min-height:181px}.content-holder-3{min-height:206px}.content-holder-4{min-height:229px}.content-holder-5{min-height:339px}}@media screen and (min-width:480px){.content-holder-1{min-height:106px}.content-holder-2{min-height:285px}.content-holder-3{min-height:322px}.content-holder-4{min-height:359px}.content-holder-5{min-height:370px}}@media screen and (min-width:768px){.content-holder-1{min-height:169px}.content-holder-2{min-height:447px}.content-holder-3{min-height:504px}.content-holder-4{min-height:563px}.content-holder-5{min-height:580px}}@media screen and (min-width:992px){.content-holder-1{min-height:155px}.content-holder-2{min-height:409px}.content-holder-3{min-height:461px}.content-holder-4{min-height:514px}.content-holder-5{min-height:529px}}a,a:visited{color:#204A79}a:hover{color:#a83c37;background-color:#E3E3E3}a:focus{color:#2b61a1;background-color:#E3E3E3}.graphic a:focus,.graphic a:hover{background-color:white}*:focus{outline:0 none}@font-face{font-family:'source_sans_proregular';src:url('http://livingstoneonline.github.io/onemorevoice/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), url('http://livingstoneonline.github.io/onemorevoice/fonts/sourcesanspro-regular-webfont.woff') format('woff');font-weight:normal;font-style:normal;font-display:block}.main{font-size:1.3em;text-align:left;line-height:1.6em;margin-left:auto;margin-right:auto}@media only screen and (min-width: 992px){.main{font-size:1.2em;display:block !important}}body.essay .main{padding-bottom:1em}.toc{font-size:0.9em;padding:1em 0 0}.toc-title{list-style-type:none;margin-left:-1.2em;display:inline-block}.return-top{font:16px 'source_sans_proregular', Helvetica, sans-serif;font-size:0.9em}.credits{font-size:1.15em;line-height:1.6em;text-align:left}@media only screen and (min-width: 768px){.credits{font-size:1.1em}}@media only screen and (min-width: 992px){.credits{font-size:1.05em;display:block !important}}hr{background-color:gray;height:1px;border:0;width:100%;max-width:100%}#google_translate_element{min-height:55px}@media only screen and (min-width: 768px){#google_translate_element{min-height:50px}}@media only screen and (min-width: 992px){#google_translate_element{min-height:48px}}.transcription{text-align:center}.back-button a,.back-button a:visited{font-family:'source_sans_proregular', Helvetica, sans-serif;color:#204A79;text-decoration:none;display:none}.back-button a:hover{color:#a83c37}@media only screen and (min-width: 768px){.back-button a{display:inline-block}}.title .back-button{font-size:0.95em;font-weight:300;left:0;position:absolute}@media only screen and (min-width: 768px){.title .back-button{font-size:1.05em;padding-top:0.3em}}@media only screen and (min-width: 992px){.title .back-button{font-size:1.1em;padding-top:0.1em}}p.back-button{margin-bottom:2em}
@@ -123,40 +115,11 @@
 					<xsl:apply-templates select="TEI"/>
 				</article>
 				<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->
-		        <script>
-		            var randomString = Math.floor(Math.random()*1000000);
-		            var css = document.createElement("link");
-		            css.rel = "stylesheet";
-		            css.type = "text/css";
-		            css.href = "http://livingstoneonline.github.io/onemorevoice/css/style.css?=" + randomString;
-		            document.head.appendChild(css);
-		            var randomString = Math.floor(Math.random()*1000000);
-		            var css = document.createElement("link");
-		            css.rel = "stylesheet";
-		            css.type = "text/css";
-		            css.href = "http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css?=" + randomString;
-		            document.head.appendChild(css);
-					<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-			            var randomString = Math.floor(Math.random()*1000000);
-			            var css = document.createElement("link");
-			            css.rel = "stylesheet";
-			            css.type = "text/css";
-			            css.href = "http://livingstoneonline.github.io/onemorevoice/css/styleTEI-add.css?=" + randomString;
-			            document.head.appendChild(css);
-					</xsl:if>
-		        </script>
+		        <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="http://livingstoneonline.github.io/onemorevoice/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if> ;</script>
 		        <!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/style.css"/> --> 
 				<script src="http://livingstoneonline.github.io/onemorevoice/js/jquery-3.5.1.min.js"></script> 
 				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
-				<script>
-					$(function(){
-					  var includes = $('[data-include]');
-					  jQuery.each(includes, function(){
-						var file = 'http://livingstoneonline.github.io/onemorevoice/common/' + $(this).data('include') + '.html';
-						$(this).load(file);
-					  });
-					});
-				</script>
+				<script>$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='http://livingstoneonline.github.io/onemorevoice/common/'+$(this).data('include')+'.html';$(this).load(file)})});</script>
 				<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/font-awesome.min.css"/>
 				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
 		        <!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css"/> --> 
@@ -172,40 +135,12 @@
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
 					<!-- Image Rotation -->
 					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
-					<script>
-						function myFunction() {
-						    var element1 = document.getElementById("rotate-button");
-						    var element2 = document.getElementById("image-to-rotate");
-						    if (element1.getAttribute("aria-checked") == "true") {
-						        element1.setAttribute("aria-checked", "false");
-						    } else {
-						        element1.setAttribute("aria-checked", "true");
-						    }
-						    element1.classList.toggle("click-color");
-						    element2.classList.toggle("rotate-180");
-						}
-					</script>
+					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-180")}</script>
 				</xsl:if>
-				<script>
-					function googleTranslateElementInit() {
-						new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-					}
-				</script>
+				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
-				<script>
-					function downloadJSAtOnload() {
-						var randomString = Math.floor(Math.random()*1000000);
-						var element = document.createElement("script");
-						element.src = "http://livingstoneonline.github.io/onemorevoice/js/scripts.js?=" + randomString;
-						document.body.appendChild(element);
-					}
-					if (window.addEventListener)
-					window.addEventListener("load", downloadJSAtOnload, false);
-					else if (window.attachEvent)
-					window.attachEvent("onload", downloadJSAtOnload);
-					else window.onload = downloadJSAtOnload;
-				</script>
+				<script>function downloadJSAtOnload(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="http://livingstoneonline.github.io/onemorevoice/js/scripts.js?="+randomString;document.body.appendChild(element)}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false)}else if(window.attachEvent){window.attachEvent("onload",downloadJSAtOnload)}else{window.onload=downloadJSAtOnload}</script>
 				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/scripts.js" />-->
 			</body>
 		</html>
@@ -218,13 +153,19 @@
 	<!-- TEI -->
 	<xsl:template match="TEI">
 		<xsl:variable name="body-color-front">
-			<xsl:apply-templates select="//front/@n[1]"/>
+			<xsl:if test="//front/@n[1]">
+				<xsl:text>background:#</xsl:text><xsl:apply-templates select="//front/@n[1]"/><xsl:text>;</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="body-color-back">
-			<xsl:apply-templates select="//back/@n[1]"/>
+			<xsl:if test="//back/@n[1]">
+				<xsl:text>background:#</xsl:text><xsl:apply-templates select="//back/@n[1]"/><xsl:text>;</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="body-color">
-			<xsl:apply-templates select="//body/@n[1]"/>
+			<xsl:if test="//body/@n[1]">
+				<xsl:text>background:#</xsl:text><xsl:apply-templates select="//body/@n[1]"/><xsl:text>;</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="front">
 			<xsl:choose>
@@ -547,27 +488,27 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside id="transcription-switches" class="manuscript-switches">
-					<label for="remove-color" class="md_switch" title="Color: On/Off" alt="Clickable 'on/off' switch.">
-						Remove Color
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color" id="remove-color" />
+					<label for="remove-color" class="md_switch" title="Color: On/Off">
+						<xsl:text>Remove Color</xsl:text>
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color" id="remove-color" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
-						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+						<xsl:text>Invert</xsl:text>
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off" alt="Clickable 'on/off' switch.">
-						Remove Rotation
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
+				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
+						<xsl:text>Remove Rotation</xsl:text>
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
 				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
-					<section class="TEI front {$front}" style="background:#{$body-color-front};" aria-labelledby="front-section">
+					<section class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
 						<div class="ms-container" id="front-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -586,7 +527,7 @@
 							</xsl:choose>
 						</div>
 					</section>
-					<section class="TEI" style="background:#{$body-color};" aria-labelledby="main-section">
+					<section class="TEI" style="{$body-color}" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -605,7 +546,7 @@
 							</xsl:choose>
 						</div>
 					</section>
-					<section class="TEI back {$back}" style="background:#{$body-color-back};" aria-labelledby="back-section">
+					<section class="TEI back {$back}" style="{$body-color-back}" aria-labelledby="back-section">
 						<div class="ms-container" id="back-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -628,18 +569,18 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside id="transcription-switches" class="journal-switches">
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off" alt="Clickable 'on/off' switch.">
-						Invert
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
+				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+						<xsl:text>Invert</xsl:text>
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
-				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off" alt="Clickable 'on/off' switch.">
-						Remove Justification
-						<input type="checkbox" checked="" role="button" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
+				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
+						<xsl:text>Remove Justification</xsl:text>
+						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div"  role="alert" aria-labelledby="mobile">
+				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
 				<xsl:variable name="narrow">
@@ -869,20 +810,6 @@
 	</xsl:template>
 
 	<xsl:template match="lb">
-		<xsl:variable name="class">
-			<xsl:if test="@rend">
-				<xsl:value-of select="translate(@rend, '-', '')"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-			<xsl:if test="@place">
-				<xsl:value-of select="translate(@place, '-', '')"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-			<xsl:if test="@type">
-				<xsl:value-of select="translate(@type, '-', '')"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-		</xsl:variable>
 			<br/>
 		<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>

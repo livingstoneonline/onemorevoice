@@ -90,18 +90,18 @@ body{
 		padding-top: 0 !important;
 	}
 }
-article{
+.text-container{
 	padding: 0 1em;
 	margin: .5em auto;
 	max-width: 100%;
 }
 @media only screen and (min-width: 768px){
-article{
+.text-container{
 		max-width: 46em;
 	}
 }
 @media only screen and (min-width: 992px){
-	article{
+	.text-container{
 		max-width: 42em;
 	}
 }

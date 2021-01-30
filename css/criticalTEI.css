@@ -40,39 +40,3 @@ hr{
 .transcription{
 	text-align: center;
 }
-.back-button a,
-.back-button a:visited{
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	color: #204A79;
-	text-decoration: none;
-	display: none;
-}
-.back-button a:hover{
-	color: #a83c37;
-}
-@media only screen and (min-width: 768px){
-	.back-button a{
-		display: inline-block;
-	}
-}	
-.title .back-button{
-	font-size: .95em;
-	font-weight: 300;
-	left: 0;
-	position: absolute;
-}
-@media only screen and (min-width: 768px){
-	.title .back-button{
-		font-size: 1.05em;
-		padding-top: .3em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.title .back-button{
-		font-size: 1.1em;
-		padding-top: .1em;
-	}
-}
-p.back-button{
-	margin-bottom: 2em;
-}

@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector('body.transcription')
         .classList
         .toggle('invert-color');
+        var input = document.querySelector('input#invert')
+        if (input.checked == true) {
+            input.setAttribute('aria-checked', 'true');
+            input.setAttribute('checked', '');
+        } 
+        else {
+            input.setAttribute('aria-checked', 'false');
+            input.removeAttribute('checked', '');
+        }
     };
 });
 
@@ -26,5 +35,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector('body.transcription')
         .classList
         .toggle('unjustify');
+        var input = document.querySelector('input#remove-justification')
+        if (input.checked == true) {
+            input.setAttribute('aria-checked', 'true');
+            input.setAttribute('checked', '');
+        } 
+        else {
+            input.setAttribute('aria-checked', 'false');
+            input.removeAttribute('checked', '');
+        }
     };
 });

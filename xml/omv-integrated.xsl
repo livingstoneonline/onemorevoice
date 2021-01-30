@@ -53,9 +53,7 @@
 		<html lang="en" id="html">
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
-				<title>
-					<!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice
-				</title>
+				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 					    <meta name="description" content="{$object-creator}" />
@@ -812,20 +810,6 @@
 	</xsl:template>
 
 	<xsl:template match="lb">
-		<xsl:variable name="class">
-			<xsl:if test="@rend">
-				<xsl:value-of select="translate(@rend, '-', '')"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-			<xsl:if test="@place">
-				<xsl:value-of select="translate(@place, '-', '')"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-			<xsl:if test="@type">
-				<xsl:value-of select="translate(@type, '-', '')"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-		</xsl:variable>
 			<br/>
 		<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>

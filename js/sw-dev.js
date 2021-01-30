@@ -14,14 +14,20 @@ var version = 'v1::';
 var offlineFundamentals = [
   '/',
   '/sw.js',
-  '/css/style.css',
-  '/css/styleTEI.css',
-  '/css/styleTEI-add.css',
+  '/common/footer1.html',
+  '/common/footer2.html',
+  '/common/nav1.html',
+  '/common/nav2.html',
+  '/css/critical.css',
+  '/css/criticalTEI.css',
   '/css/font-awesome.min.css',
-  '/js/scripts.js',
+  '/css/styleTEI-add.css',
+  '/css/styleTEI.css',
+  '/css/style.css',
   '/js/journal-transform.js',
+  '/js/jquery-3.5.1.min.js',
   '/js/manuscript-transform.js',
-  '/js/jquery-3.5.1.min.js'
+  '/js/scripts.js'
 ];
 
 /* The install event fires when the service worker is first installed.

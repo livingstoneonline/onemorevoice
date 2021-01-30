@@ -59,6 +59,7 @@ also see 2.9 for manuscript colors
 
 /* 1.1. Principal Components */
 
+/* Start of critical CSS */
 html{
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
@@ -482,6 +483,8 @@ body.essay .main{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-size: .9em;
 }
+/* End of critical CSS */
+/* Start of criticalTEI CSS, main */
 .credits{
 	font-size: 1.15em;
 	line-height: 1.6em;
@@ -498,6 +501,7 @@ body.essay .main{
 		display: block !important; /* Tied to overlay */
 	}
 }
+/* End of criticalTEI CSS, main */
 .footer{
 	font-size: 1em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
@@ -978,6 +982,7 @@ body.fixed-nav .overlay .menu .close-title{
 		margin: 0 0 1em 0;
 	}
 }
+/* Included in criticalTEI CSS, start */
 #google_translate_element{
 	min-height: 55px;
 }
@@ -991,6 +996,7 @@ body.fixed-nav .overlay .menu .close-title{
 		min-height: 48px;
 	}
 }
+/* Included in criticalTEI CSS, end */
 #google_translate_element > div > span > a > img{
 	width: 3.5em;
 }
@@ -1735,6 +1741,7 @@ ol li ol{
 		padding-left: 1.2em;
 	}
 }
+/* hr included in criticalTEI CSS */
 hr{
 	background-color: gray;
 	height: 1px;

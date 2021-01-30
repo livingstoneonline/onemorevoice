@@ -490,17 +490,17 @@
 				<aside id="transcription-switches" class="manuscript-switches">
 					<label for="remove-color" class="md_switch" title="Color: On/Off">
 						<xsl:text>Remove Color</xsl:text>
-						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color" id="remove-color" />
+						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color" id="remove-color" checked="" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						<xsl:text>Invert</xsl:text>
-						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
+						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
 						<xsl:text>Remove Rotation</xsl:text>
-						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle rotation" id="remove-rotation" />
+						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-rotation" checked="" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>
@@ -571,12 +571,12 @@
 				<aside id="transcription-switches" class="journal-switches">
 				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						<xsl:text>Invert</xsl:text>
-						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle color inversion" id="invert" />
+						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
 						<xsl:text>Remove Justification</xsl:text>
-						<input type="checkbox" checked="" role="switch" data-toggle="button" aria-label="Toggle rotation" id="remove-justification" />
+						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-justification" checked="" />
 						<span class="md_switch__toggle"></span>
 				  	</label>
 			  	</aside>

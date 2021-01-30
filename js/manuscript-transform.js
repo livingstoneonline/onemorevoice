@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector('body.transcription')
         .classList
         .toggle('change-color');
+        var input = document.querySelector('input#remove-color')
+        if (input.checked == true) {
+            input.setAttribute('aria-checked', 'true');
+            input.setAttribute('checked', '');
+        } 
+        else {
+            input.setAttribute('aria-checked', 'false');
+            input.removeAttribute('checked', '');
+        }
     };
 });
 
@@ -26,6 +35,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector('body.transcription')
         .classList
         .toggle('invert-color');
+        var input = document.querySelector('input#invert')
+        if (input.checked == true) {
+            input.setAttribute('aria-checked', 'true');
+            input.setAttribute('checked', '');
+        } 
+        else {
+            input.setAttribute('aria-checked', 'false');
+            input.removeAttribute('checked', '');
+        }
     };
 });
 
@@ -40,5 +58,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector('body.transcription')
         .classList
         .toggle('rotate');
+        var input = document.querySelector('input#remove-rotation')
+        if (input.checked == true) {
+            input.setAttribute('aria-checked', 'true');
+            input.setAttribute('checked', '');
+        } 
+        else {
+            input.setAttribute('aria-checked', 'false');
+            input.removeAttribute('checked', '');
+        }
     };
 });

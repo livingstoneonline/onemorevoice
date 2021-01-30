@@ -16,7 +16,7 @@
 	</xd:doc>
 	
 	<xsl:strip-space elements="*"/>
-	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="no" omit-xml-declaration="yes"/>
+	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
 	<xsl:param name="page" select="'0001'"/>

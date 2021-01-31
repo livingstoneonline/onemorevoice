@@ -1638,6 +1638,18 @@ ul.concept-list li:last-child{
    margin-bottom: 0;
 }
 
+/* The following items are used on the coding_guidelines.html page. */
+.tag-blue{
+	font-size: .9em;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#204A79;
+}
+.attribute-red{
+	font-size: .9em;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#902D27;
+}
+
 /* The following items are used on the bibliography.html page. */
 .primary-historical{
 	list-style: none;
@@ -1646,6 +1658,12 @@ ul.concept-list li:last-child{
 }
 ol.primary-historical li{
 	padding-bottom: 1em;
+}
+.bibliography{
+	font-size: .95em;
+}
+.bibliography::before{
+	content: '➥ ';
 }
 
 /* The following items are used on the acknowledgments.html page. */
@@ -1663,7 +1681,7 @@ ul.acknowledgments{
 	margin-bottom: .6em;
 }
 
-/* The following items are used on the site.html page. */
+/* The following items are used on the site_map.html page. */
 .site-map{
 	display:inline-block; 
 	text-align:left

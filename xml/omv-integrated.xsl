@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-	xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:jc="http://james.blushingbunny.net/ns.html"
-	xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs xd tei jc"
+	xmlns:tei="https://tei-c.org/ns/1.0/" xmlns:jc="http://james.blushingbunny.net/ns.html"
+	xpath-default-namespace="https://tei-c.org/ns/1.0/" exclude-result-prefixes="xs xd tei jc"
 	version="2.0">
 <!-- /*xmlns="http://www.w3.org/TR/REC-html40"*/ -->
 <!-- Useful for DTDs https://www.w3.org/TR/xhtml1/dtds.html#h-A2 -->
@@ -118,15 +118,15 @@
 				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 				<script>$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='../../common/'+$(this).data('include')+'.html';$(this).load(file)})});</script>
 				<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css"/>
-				<!-- <link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
+				<!-- <link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
 		        <!-- <link rel="stylesheet" type="text/css" href="../../css/styleTEI.css"/> --> 
-				<!-- <script src="http://livingstoneonline.github.io/onemorevoice/js/scripts.js"></script> -->
+				<!-- <script src="https://livingstoneonline.github.io/onemorevoice/js/scripts.js"></script> -->
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/manuscript-transform.js" />-->
+					<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/manuscript-transform.js" />-->
 					<script src="../../js/manuscript-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-					<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/journal-transform.js" />-->
+					<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/journal-transform.js" />-->
 					<script src="../../js/journal-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
@@ -138,7 +138,7 @@
 				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
 				<script>function downloadJSAtOnload(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)}if(window.addEventListener){window.addEventListener("load",downloadJSAtOnload,false)}else if(window.attachEvent){window.attachEvent("onload",downloadJSAtOnload)}else{window.onload=downloadJSAtOnload}</script>
-				<!--<link rel="stylesheet" type="text/css" href="http://livingstoneonline.github.io/onemorevoice/js/scripts.js" />-->
+				<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/scripts.js" />-->
 			</body>
 		</html>
 	</xsl:template>
@@ -424,7 +424,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
@@ -439,7 +439,7 @@
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
@@ -691,7 +691,7 @@
 						<hr />
 						<!--<p class="back-button"><a class="art-return" href="../../objects.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="http://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

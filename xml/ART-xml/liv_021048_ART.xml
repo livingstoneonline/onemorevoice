@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
-<!-- http://livingstoneonline.github.io/LEAP-XSLT/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021048"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+<!-- https://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="https://tei-c.org/ns/1.0/" xml:id="liv_021048"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -28,7 +28,7 @@
                 <idno type="LEAP-ID">liv_021048</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
-				<ref target="http://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000017">Livingstone Online</ref>
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000017">Livingstone Online</ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
 					<p>Copyright David Livingstone Centre, Blantyre. As relevant, copyright Dr. Neil Imray Livingstone Wilson. Images of the Livingstone manuscripts from the David Livingstone Centre are copyright University of Glasgow Photographic Unit.</p>

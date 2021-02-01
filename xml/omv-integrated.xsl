@@ -56,36 +56,36 @@
 				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-					    <meta name="description" content="{$object-creator}" />
+						<meta name="description" content="{$object-creator}" />
 					</xsl:when>
 					<xsl:otherwise>
-					    <meta name="description" content="{$text-creator}" />
+						<meta name="description" content="{$text-creator}" />
 					</xsl:otherwise>
 				</xsl:choose>
-			    <meta charset="UTF-8"/>
+				<meta charset="UTF-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="robots" content="index, follow"/>
-		        <meta name="theme-color" content="#204A79"/>
+				<meta name="theme-color" content="#204A79"/>
 				<link rel="stylesheet" type="text/css" href="../../css/criticalTEI.css"/>
 				<!-- Link to full CSS file at end; critical CSS linked above.-->
-		        <!-- <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/criticalTEI.css?="+randomString;document.head.appendChild(css);</script>-->
-			    <link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png" />
-			    <link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png" />
-			    <link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png" />
-			    <link rel="manifest" href="../../site.webmanifest" />
+				<!-- <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/criticalTEI.css?="+randomString;document.head.appendChild(css);</script>-->
+				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png" />
+				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png" />
+				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png" />
+				<link rel="manifest" href="../../site.webmanifest" />
 				<link rel="preload" as="script" href="../../js/jquery-3.5.1.min.js"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="../../fonts/sourcesanspro-regular-webfont.woff2"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin='' href="../../fonts/sourcesanspro-regular-webfont.woff"/>
 				<link rel="preload" as="style" href="../../css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin='' href="../../fonts/fontawesome-webfont.woff?v=4.7.0"/>
-			    <!-- Global site tag (gtag.js) - Google Analytics -->
+				<!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 
 			<!--<xsl:text disable-output-escaping="yes">
-        		<![CDATA[<?php flush(); ?>]]>
+				<![CDATA[<?php flush(); ?>]]>
 			</xsl:text>-->
 
 			<body class="transcription "><!-- style="background:#{$body-color};" -->
@@ -93,12 +93,12 @@
 	
 					<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-        			<div class="navspace" data-include="nav2"></div>
-										       
+					<div class="navspace" data-include="nav2"></div>
+											   
 					<header class="title" id="title-div">
 						<img class="image-border content-holder-1" src="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../../img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../../img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../../img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../../img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../../img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../../img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
-		        		<h1 class="header-title">One More Voice</h1>
-		        		<hr/>
+						<h1 class="header-title">One More Voice</h1>
+						<hr/>
 						<div><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 						<!--<xsl:choose>
 							<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
@@ -108,18 +108,18 @@
 								<div><span class="back-button"><a class="trans-return" href="../../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
 							</xsl:otherwise>
 						</xsl:choose>-->
-		    		</header>
+					</header>
 					<xsl:apply-templates select="TEI"/>
 				</div>
 				<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->
-		        <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if> ;</script>
-		        <!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"/> --> 
+				<script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if> ;</script>
+				<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"/> --> 
 				<script src="../../js/jquery-3.5.1.min.js"></script> 
 				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 				<script>$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='../../common/'+$(this).data('include')+'.html';$(this).load(file)})});</script>
 				<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css"/>
 				<!-- <link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
-		        <!-- <link rel="stylesheet" type="text/css" href="../../css/styleTEI.css"/> --> 
+				<!-- <link rel="stylesheet" type="text/css" href="../../css/styleTEI.css"/> --> 
 				<!-- <script src="https://livingstoneonline.github.io/onemorevoice/js/scripts.js"></script> -->
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/manuscript-transform.js" />-->
@@ -413,7 +413,7 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-		    	<aside class="credits" id="main" aria-labelledby="opening-credits">
+				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -433,7 +433,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-		    	<aside class="credits" id="main"  aria-labelledby="opening-credits">
+				<aside class="credits" id="main"  aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -448,7 +448,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
-		    	<aside class="credits" id="main" aria-labelledby="opening-credits">
+				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -466,7 +466,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
-		    	<aside class="credits" id="main" aria-labelledby="opening-credits">
+				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>

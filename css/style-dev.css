@@ -567,8 +567,8 @@ body.essay .main{
 	position: absolute;
 	top: -40px;
 	left: 0px;
-	z-index: 100;
-	transition: top .4s ease-out;
+	z-index: 99;
+	transition: top 1s ease-out;
 	-webkit-transition: top 1s ease-out;
 }
 #skiptocontent a:focus{
@@ -576,7 +576,7 @@ body.essay .main{
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	-webkit-transition: top .1s ease-in;
+	-webkit-transition: top .4s ease-in;
 	transition: top .4s ease-in;
 }
 @media only screen and (min-width: 768px){
@@ -1532,8 +1532,8 @@ section.archival-text .no-image .content{
 	padding: 4px 6px;
 	position: absolute;
 	left: 0px;
-	z-index: 2;
-	transition: top .4s ease-out;
+	z-index: 10;
+	transition: top 1s ease-out;
 	-webkit-transition: top 1s ease-out;
 }
 @media only screen and (min-width: 768px){
@@ -1552,7 +1552,7 @@ section.archival-text .no-image .content{
 	top: 0px;
 	left: 0px;
 	transition: top .4s ease-in;
-	-webkit-transition: top .1s ease-in;
+	-webkit-transition: top .4s ease-in;
 }
 .screenshot mark{
 	border-right: 2px solid #204A79;

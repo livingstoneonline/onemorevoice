@@ -74,19 +74,19 @@ html{
 	overflow-x: hidden;
 }
 body{ 
-    top: 0px !important; /* Needed for Google Translate */
+	top: 0px !important; /* Needed for Google Translate */
 	margin: 0.5em auto;
 	padding-bottom: .5em;
 }
 @media only screen and (min-width: 768px){
 	body{
-        font-size: .95em;
+		font-size: .95em;
 	}
 }
 @media only screen and (min-width: 992px){
-    body{
-        padding-bottom: 0;
-    }
+	body{
+		padding-bottom: 0;
+	}
 	body.fixed-nav{
 		padding-top: 0 !important;
 	}
@@ -218,7 +218,7 @@ header h2{
 }
 @media only screen and (min-width: 768px){
 	header h2{
-        font-size: 1.1em;
+		font-size: 1.1em;
 		display: block;
 	}
 }
@@ -446,10 +446,10 @@ a:focus{
 /* 1.5. Main Sections and Related */
 
 @font-face {
-    font-family: 'source_sans_proregular';
-    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
-    font-weight: normal;
+	font-family: 'source_sans_proregular';
+	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+		 url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 	font-display: block;
 }
@@ -532,8 +532,8 @@ body.essay .main{
 }
 /* essay credit lines */
 .byline-divider{
-    width: 45%;
-    border-top: 1px dashed gray;
+	width: 45%;
+	border-top: 1px dashed gray;
 	background: white;
 	display: inline-block;
 }
@@ -683,9 +683,9 @@ body.essay .main{
 	}
 }
 [id]:target {
-    margin-top: -70px;
-    border-top: 70px solid transparent;
-    background-clip: padding-box;
+	margin-top: -70px;
+	border-top: 70px solid transparent;
+	background-clip: padding-box;
 }
 @media only screen and (min-width: 992px){
 	[id]:target{
@@ -764,7 +764,7 @@ a::after{
 label::after{
 	content: '\f0da'; /* closed folder */
 	display: inline-block;
-    width: 0.5em;
+	width: 0.5em;
 }
 input:checked + label::after{
 	content: '\f0d7'; /* open folder */
@@ -1368,8 +1368,8 @@ section.archival-text .no-image .content{
 	margin-top: 0;
 }
 #films h4 .return-top{
-    font-size: .9em;
-    color: white;
+	font-size: .9em;
+	color: white;
 	white-space: nowrap;
 }
 @media only screen and (min-width: 480px){
@@ -1386,21 +1386,21 @@ section.archival-text .no-image .content{
 	font-size: 1.05em;
 	background-color: #e3e3e3;
 	border-bottom: 1px solid #858585;
-    border-radius:  8px 8px 0 0;
-    -webkit-border-radius: 8px 8px 0 0;
+	border-radius:  8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
 	-moz-border-radius:  8px 8px 0 0;
-    padding: 10px 16px;
+	padding: 10px 16px;
 	margin: 0;
 }
 #films ul{
 	font-size: .95em;
-    list-style: none;
-    padding: 1em 1.5em;
+	list-style: none;
+	padding: 1em 1.5em;
 	margin: 0;
 	border-top: 1px solid #858585;
 }
 #films li{
-    padding: 0 0 .6em 0;
+	padding: 0 0 .6em 0;
 }
 #films li:last-child{
 	padding-bottom: 0;
@@ -1857,10 +1857,10 @@ body.transcription .title{
 	scroll-margin-top: 70px;
   }
   @media only screen and (min-width: 992px){
-    [id] {
-        scroll-margin-top: 20px;
-      }
-    }
+	[id] {
+		scroll-margin-top: 20px;
+	  }
+	}
 .menu{
 	padding: 1em 0;
 }

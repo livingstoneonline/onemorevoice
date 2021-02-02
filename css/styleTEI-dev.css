@@ -113,14 +113,14 @@ also see 2.9 for manuscript colors
 }
 .journal .TEI{
 	display: block;
-    text-align: justify;
-    padding: 1em 1em 2em 1em;
-    margin: .5em auto 2em auto;
+	text-align: justify;
+	padding: 1em 1em 2em 1em;
+	margin: .5em auto 2em auto;
 }
 @media only screen and (min-width: 768px){
 	.journal .TEI{
-        padding: 1em 2.2em 2em 2.2em;
-        border: 2px solid #dcdcdc;
+		padding: 1em 2.2em 2em 2.2em;
+		border: 2px solid #dcdcdc;
 	}
 }
 /* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
@@ -162,10 +162,10 @@ also see 2.9 for manuscript colors
 	}
 }
 .warning{
-    border: 1px solid #902D27;
-    background: #e3e3e3;
-    padding: 5px 7px;
-    margin: 0 0 1.5em 0
+	border: 1px solid #902D27;
+	background: #e3e3e3;
+	padding: 5px 7px;
+	margin: 0 0 1.5em 0
 }
 
 
@@ -175,15 +175,15 @@ also see 2.9 for manuscript colors
 
 .manuscript-switches,
 .journal-switches{
-    font-size: .92em;
-    display: none;
+	font-size: .92em;
+	display: none;
 }
 @media only screen and (min-width: 320px){
-    .manuscript-switches,
-    .journal-switches{
-        padding: .5em 0;
-        display: block;
-    }
+	.manuscript-switches,
+	.journal-switches{
+		padding: .5em 0;
+		display: block;
+	}
 }
 @media only screen and (min-width: 768px){
 	.manuscript-switches,
@@ -193,19 +193,19 @@ also see 2.9 for manuscript colors
 }
 
 /* hide regular checkbox */
-.md_switch [type=checkbox] {
+.md_switch [type=checkbox]{
 	pointer-events: none;
 	opacity: 0;
 	position: absolute;
-	}
+}
 
 /* remove dropdown arrow */
 label.md_switch::after{
-	display: none;	
+	display: none;
 }
 
 /* container specs */
-.md_switch {
+.md_switch{
 	margin: .5em;
 	padding: .5em;
 	height: 1.6em;
@@ -228,24 +228,24 @@ label.md_switch{
 }
 
 /* full toggle position/qualities */
-.md_switch .md_switch__toggle {
+.md_switch .md_switch__toggle{
 	right: -6px;
 	cursor: pointer;
 	position: relative;
-	}
+}
 
 /* common: slider (before) & switch (after) */
 .md_switch .md_switch__toggle::before,
-.md_switch .md_switch__toggle::after {
+.md_switch .md_switch__toggle::after{
 	content: '';
 	margin: 0 3px;
 	border: 1px solid #858585;
 	transition: all 100ms;
 	display: block;
-	}
+}
 
 /* slider only */
-.md_switch .md_switch__toggle::before {
+.md_switch .md_switch__toggle::before{
 	background-color: #525252;
 	height: 1.7em;
 	width: 3.5em;
@@ -255,12 +255,12 @@ label.md_switch{
 	align-items: center;
 	display: inline-flex;
 }
-.md_switch [type=checkbox]:checked+.md_switch__toggle::before{
+.md_switch [type=checkbox]:checked + .md_switch__toggle::before{
 	background-color: #E3E3E3;
 }
 
 /* switch only */
-.md_switch .md_switch__toggle::after {
+.md_switch .md_switch__toggle::after{
 	background-color: white;
 	top: 50%;
 	left: 3px;
@@ -272,7 +272,7 @@ label.md_switch{
 	transform: translate(0, -50%);
 	position: absolute;
 }
-.md_switch [type=checkbox]:checked+.md_switch__toggle::after{
+.md_switch [type=checkbox]:checked + .md_switch__toggle::after{
 	content: "";
 	top: 50%;
 	height: 1.45em;
@@ -281,7 +281,7 @@ label.md_switch{
 }
 
 /* focus */
-.md_switch [type=checkbox]:focus+.md_switch__toggle {
+.md_switch [type=checkbox]:focus + .md_switch__toggle{
 	background: #4982c4;
 	padding: 3px 1px;
 }
@@ -296,11 +296,11 @@ label.md_switch{
 }
 
 /* slider:checked & hover */
-.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::before{
+.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
 	background-color: #858585;
 }
 /* switch:checked & hover */
-.md_switch [type=checkbox]:checked+.md_switch__toggle:hover::after{
+.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
 	background-color: #E3E3E3;
 	;
 }
@@ -308,12 +308,12 @@ label.md_switch{
 
 /* 2.2.2. Toggle Classes */
 
-.change-color .manuscript .TEI {
+.change-color .manuscript .TEI{
 	border: 1px solid black;
 }
 .change-color .TEI{
-	background:#ffffff !important;
-} 
+	background: #ffffff !important;
+}
 .change-color .TEI *{
 	color: black !important;
 }
@@ -344,10 +344,10 @@ label.md_switch{
 }
 .rotate .TEI *{
 	transform: rotate(0deg) !important;
-	-ms-transform:rotate(0deg) !important; /* IE 9 */
-	-moz-transform:rotate(0deg) !important; /* Firefox */
-	-webkit-transform:rotate(0deg) !important; /* Safari and Chrome */
-	-o-transform:rotate(0deg) !important; /* Opera */
+	-ms-transform: rotate(0deg) !important; /* IE 9 */
+	-moz-transform: rotate(0deg) !important; /* Firefox */
+	-webkit-transform: rotate(0deg) !important; /* Safari and Chrome */
+	-o-transform: rotate(0deg) !important; /* Opera */
 }
 .unjustify .journal .TEI{
 	text-align: left;
@@ -371,7 +371,7 @@ label.md_switch{
 	.back-button a{
 		display: inline-block;
 	}
-}	
+}
 .title .back-button{
 	font-size: .95em;
 	font-weight: 300;
@@ -397,7 +397,7 @@ p.back-button{
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
 	border: 0;
-  }
+}
 #rotate-button{
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	font-size: .8em;
@@ -417,7 +417,7 @@ button::-moz-focus-inner{
 	}
 }
 #rotate-button:hover{
-	color:whitesmoke;
+	color: whitesmoke;
 	background-color: #858585;
 
 }
@@ -433,10 +433,10 @@ button::-moz-focus-inner{
 }
 .rotate-180{
 	transform: rotate(180deg);
-	-ms-transform:rotate(180deg); /* IE 9 */
-	-moz-transform:rotate(180deg); /* Firefox */
-	-webkit-transform:rotate(180deg); /* Safari and Chrome */
-	-o-transform:rotate(180deg); /* Opera */
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-moz-transform: rotate(180deg); /* Firefox */
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	-o-transform: rotate(180deg); /* Opera */
 }
 
 /* 2.4. Pagebreaks, linebreaks, linenumbers */
@@ -735,10 +735,10 @@ table .linenumber{
 	font-size: 1.3em;
 }
 .larger{
-    font-size: 1.4em;
+	font-size: 1.4em;
 }
 .largest{
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 .journal .left{
 	float: left;
@@ -778,10 +778,10 @@ table .linenumber{
 	font-size: .85em;
 }
 .smaller{
-    font-size: .75em;
+	font-size: .75em;
 }
 .smallest{
-    font-size: .65em;
+	font-size: .65em;
 }
 
 
@@ -795,19 +795,19 @@ table .linenumber{
 .sup,
 .top{
 	/* Specified in % so that the sup/sup is the
-     right size relative to the surrounding text */
+	 right size relative to the surrounding text */
 	font-size: 80%;
 
 	/* Zero out the line-height so that it doesn't
-     interfere with the positioning that follows */
+	 interfere with the positioning that follows */
 	line-height: 0;
 
 	/* Where the magic happens:makes all browsers position
-     the sup/sup properly, relative to the surrounding text */
+	 the sup/sup properly, relative to the surrounding text */
 	position: relative;
 
 	/* Note that if you're using Eric Meyer's reset.css, this
-     is already set and you can remove this rule */
+	 is already set and you can remove this rule */
 	vertical-align: baseline;
 }
 .above,
@@ -820,7 +820,7 @@ table .linenumber{
 .bottom,
 .sub{
 	/* Move the subscripted text down, but only
-     half as far down as the superscript moved up */
+	 half as far down as the superscript moved up */
 	bottom: -0.50em;
 }
 
@@ -937,25 +937,25 @@ table .linenumber{
 
 /* The following is useful for coding review */
 /* .persName{
-    background-color: orange;
+	background-color: orange;
 } */
 /* .orgName{
-    background-color: yellow;
+	background-color: yellow;
 } */
 /* .collective{
-    background-color: red;
+	background-color: red;
 } */
 /* .geogName{
-    background-color: greenyellow;
+	background-color: greenyellow;
 } */
 /* .placeName{
-    background-color: blue;
+	background-color: blue;
 } */
 /* .settlement{
-    background-color: purple;
+	background-color: purple;
 } */
 /* .region{
-    background-color: gray;
+	background-color: gray;
 } */
 /* .country{
 	background-color: burlywood;
@@ -969,43 +969,43 @@ table .linenumber{
 
 /* Generated by Font Squirrel (https://www.fontsquirrel.com/tools/webfont-generator) */
 /* Implemented using https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
-@font-face {
-    font-family: 'cedarville_cursiveregular';
-    src: url('../fonts/cedarvillecursive-regular-webfont.woff2') format('woff2'),
-         url('../fonts/cedarvillecursive-regular-webfont.woff') format('woff');
-    font-weight: normal;
+@font-face{
+	font-family: 'cedarville_cursiveregular';
+	src: url('../fonts/cedarvillecursive-regular-webfont.woff2') format('woff2'), 
+url('../fonts/cedarvillecursive-regular-webfont.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face{
-    font-family: 'dancing_scriptregular';
-    src: url('../fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../fonts/dancingscript-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
+	font-family: 'dancing_scriptregular';
+	src: url('../fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'), 
+url('../fonts/dancingscript-variablefont_wght-webfont.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face{
-    font-family: 'parisienneregular';
-    src: url('../fonts/parisienne-regular-webfont.woff2') format('woff2'),
-         url('fontsparisienne-regular-webfont.woff') format('woff');
-    font-weight: normal;
+	font-family: 'parisienneregular';
+	src: url('../fonts/parisienne-regular-webfont.woff2') format('woff2'), 
+url('fontsparisienne-regular-webfont.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
-@font-face {
-    font-family: 'unifrakturcookbold';
-    src: url('../fonts/unifrakturcook-bold-webfont.woff2') format('woff2'),
-         url('../fonts/unifrakturcook-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+	font-family: 'unifrakturcookbold';
+	src: url('../fonts/unifrakturcook-bold-webfont.woff2') format('woff2'), 
+url('../fonts/unifrakturcook-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 	font-display: swap;
 }
-@font-face {
-    font-family: 'unifrakturmaguntiabook';
-    src: url('../fonts/unifrakturmaguntia-regular-webfont.woff2') format('woff2'),
-         url('../fonts/unifrakturmaguntia-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+	font-family: 'unifrakturmaguntiabook';
+	src: url('../fonts/unifrakturmaguntia-regular-webfont.woff2') format('woff2'), 
+url('../fonts/unifrakturmaguntia-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 	font-display: swap;
 }

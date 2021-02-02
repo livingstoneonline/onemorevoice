@@ -10,8 +10,8 @@
 		<meta name="robots" content="index, follow"/>
 		<meta name="theme-color" content="#204A79"/>
 		<link rel="stylesheet" type="text/css" href="css/critical.css"/>
-        <!-- Link to full CSS file at end; critical CSS linked above.-->
-        <!-- <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="css/critical.css?="+randomString;document.head.appendChild(css);</script>-->
+		<!-- Link to full CSS file at end; critical CSS linked above.-->
+		<!-- <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="css/critical.css?="+randomString;document.head.appendChild(css);</script>-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png"/>
@@ -96,28 +96,28 @@
 				<p><strong>Header image commentary</strong>: This image alludes to the fact that <em>One More Voice</em> has been designed and developed with a wide range of audiences and collaborators in mind. The site is fully responsive; works equally well on smaller handheld devices (such as the phone pictured here) and desktop computers with large-screen monitors; and has been tested on different browsers across Linux, Mac, and Windows systems. The site's reduced digital footprint enables use in low-bandwidth environments, while the inclusion of elements such semantic HTML, ARIA attributes, and (for images) ALT text supports access for users with assistive devices. That said, there is ample scope for further development along these lines; suggestions for further enchancing the site are highly encouraged and, indeed, represent an additional way individuals might contribute to site development.</p>
 			</aside>
 			
-            <div data-include="footer1"></div>
-            
+			<div data-include="footer1"></div>
+			
 		</div>
 		<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->		
-        <script>
-            var randomString = Math.floor(Math.random()*1000000);
-            var css = document.createElement("link");
-            css.rel = "stylesheet";
-            css.type = "text/css";
-            css.href = "css/style.css?=" + randomString;
-            document.head.appendChild(css);
-        </script>
-        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->		
+		<script>
+			var randomString = Math.floor(Math.random()*1000000);
+			var css = document.createElement("link");
+			css.rel = "stylesheet";
+			css.type = "text/css";
+			css.href = "css/style.css?=" + randomString;
+			document.head.appendChild(css);
+		</script>
+		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->		
 		<script src="js/jquery-3.5.1.min.js"></script> 
 		<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 		<script>
 			$(function(){
-			  var includes = $('[data-include]');
-			  jQuery.each(includes, function(){
-				var file = 'common/' + $(this).data('include') + '.html';
-				$(this).load(file);
-			  });
+				var includes = $('[data-include]');
+			 	jQuery.each(includes, function(){
+					var file = 'common/' + $(this).data('include') + '.html';
+					$(this).load(file);
+			 	});
 			});
 		</script>		
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>

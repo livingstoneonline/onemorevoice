@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="http://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020055">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -136,8 +136,13 @@
 <!-- @n = page number only, e.g., 0001 -->
 <pb facs="liv_020055_0001" n="0001"/>
 
-<!-- 
-.wrapper.liv_020055_0001{
+<!--
+/* add "item liv_020055"s to body */
+ 
+.item.liv_020055{
+	margin: -1em;
+}
+.wrapper1.liv_020055_0001{
 }
 .block-1.liv_020055_0001{
 	float: left;
@@ -150,7 +155,7 @@
 }
 -->
 
-	<div n="wrapper liv_020055_0001">
+	<div n="wrapper1 liv_020055_0001">
 <!--left region-->
 		<div n="block-1 liv_020055_0001">
 <lb/><p rend="no-indent"><add place="inline" hand="#U1"><choice><abbr>Rec</abbr><expan>Received</expan></choice> <date when="1867-05"><choice><abbr>Ap</abbr><expan>April</expan></choice> 5/67</date>
@@ -299,17 +304,54 @@
 	<div>	
 <fw rend="center">(<add place="inline" rend="gray">3</add>2)</fw>
 	</div>
+	
+<!-- 
+.wrapper2.liv_020055_0003{
+	border-left: 1px #902D27 solid;
+	margin-left: -.5em;
+	padding-left: .5em;
+}
+.box1.liv_020055_0003{
+    border-left: 1px #3d4245 solid;
+    border-bottom: 1px #3d4245 solid;
+    margin-left: -.25em;
+    padding-left: .25em;
+	margin-bottom: .35em;
+}
+.box2.liv_020055_0003{
+	border-top: 1px #902D27 solid;
+	margin-left: -.5em;
+	padding-left: .5em;
+}
+@media only screen and (min-width: 992px){
+	.box2.liv_020055_0003{
+		width: 22em;
+	}
+}
+.par1.liv_020055_0003{
+	border-left: 2px #3d4245 solid;
+	border-radius: 1.6em;
+	-webkit-border-radius: 1.6em;
+	-moz-border-radius: 1.6em;
+	margin-left: -.25em;
+	padding: .25em 0 .25em .25em;
+}
+.add.liv_020055_0003{
+	left: -6em;
+	position: absolute;
+}
+-->
 
-	<div>		
-<pb facs="liv_020055_0003" n="0003"/>
-<lb/><p>for the dark places of the earth are full of the <w>habita-
+	<pb facs="liv_020055_0003" n="0003"/>
+	<div n="wrapper2 liv_020055_0003">
+<lb/><p rend="no-indent" n="box1 liv_020055_0003">for the dark places of the earth are full of the <w>habita-
 <lb/>tions</w> of cruelty." Surely God will hear our prayers.</p>
-<lb/><p>But there is a division in the ccamp of <persName>Satan</persName>.</p>
+<lb/><p n="box2 liv_020055_0003">But there is a division in the camp of <persName>Satan</persName>.</p>
 <lb/><p>Having given a fair statement of the renewed efforts of
-<lb/>idolatry, to strengthen itself in the face of christianity, I now
+<lb/>idolatry, to strengthen itself in the face of <term type="collectice"><choice><sic>christianity</sic><corr>Christianity</corr></choice></term>, I now
 <lb/>proceed to give some accounts of the silent, but sure progress
 <lb/>of the mission.</p>
-<lb/><p>English speaking is prevalent here, in the same way and
+<lb/><p n="par1 liv_020055_0003">English speaking is prevalent here, in the same way and
 <lb/>degree it is understood and spoken in all the trading ports
 <lb/>along this coast, we therefore take advantage of it in teaching the
 <lb/>children to read English school books, while we preach to the
@@ -321,7 +363,7 @@
 <lb/>on more comfortably. The distance between this and <settlement>Bonny
 <lb/>Town</settlement> is about 15 minutes walk on the beach; the children
 <lb/>have been regular in their attendance both at school and
-<lb/><add place="marginleft">Church on</add> Sundays, though sometimes interrupted by the tide at high water.
+<lb/><add place="marginleft" n="add liv_020055_0003">Church on</add> Sundays, though sometimes interrupted by the tide at high water.
 <lb/>I propose cutting a new straight road through the swamps to <w>con-
 <lb/>-nect</w> this and the town, clear out of the tide, to facilitate <w>commu-
 <lb/>nication</w> without the use of a canoe at high water, which is
@@ -331,11 +373,11 @@
 <lb/>hours daily. To teach them habits of industry, small patches 
 <lb/>of ground have been divided among them for gardening, on which
 <lb/>each one made his <unclear>beds grew</unclear> his vegetables, and when riped
-<lb/>	and reaped, they took home to their parents as the produce
-<lb/>of their own growing. The girls improve in <unclear>working</unclear> and ironing.</p>    
+<lb/>and reaped, they took home to their parents as the produce
+<lb/>of their own growing. The girls improve in washing and ironing.</p>    
 <lb/><p>When I left here last May, the station was only just opened
 <lb/>for use, but many necessary supplies were needed to make
-<lb/><space extent="12" unit="words"/><fw type="catch">it</fw></p>
+<lb/><space extent="13" unit="words"/><fw type="catch">it</fw></p>
 	</div>
 
     <div>	

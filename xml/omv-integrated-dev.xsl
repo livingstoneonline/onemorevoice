@@ -94,7 +94,7 @@
 					<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 					<div class="navspace" data-include="nav2"></div>
-											   
+
 					<header class="title" id="title-div">
 							<img class="image-border content-holder-1" src="https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, https://livingstoneonline.github.io/onemorevoice/img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 						<h1 class="header-title">One More Voice</h1>
@@ -407,7 +407,7 @@
 				<xsl:when test="//encodingDesc/projectDesc/p">
 					<xsl:copy-of select="$custom-note"/>
 				</xsl:when>
-				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML;  3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="https://livingstoneonline.github.io/onemorevoice/coding_guidelines.html">coding guidelines</a>. However, users are encouraged to consult the original document if possible.</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="https://livingstoneonline.github.io/onemorevoice/coding_guidelines.html">coding guidelines</a>. However, users are encouraged to consult the original document if possible.</xsl:when>
 				<xsl:otherwise>This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="https://livingstoneonline.github.io/onemorevoice/coding_guidelines.html">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
@@ -433,7 +433,7 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<aside class="credits" id="main"  aria-labelledby="opening-credits">
+				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
@@ -489,18 +489,18 @@
 						<xsl:text>Remove Color</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color" id="remove-color" checked="" />
 						<span class="md_switch__toggle"></span>
-				  	</label>
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+				 	</label>
+				 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						<xsl:text>Invert</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
 						<span class="md_switch__toggle"></span>
-				  	</label>
-				  	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
+				 	</label>
+				 	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
 						<xsl:text>Remove Rotation</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-rotation" checked="" />
 						<span class="md_switch__toggle"></span>
-				  	</label>
-			  	</aside>
+				 	</label>
+			 	</aside>
 				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
@@ -566,17 +566,17 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside id="transcription-switches" class="journal-switches">
-				  	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+				 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						<xsl:text>Invert</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
 						<span class="md_switch__toggle"></span>
-				  	</label>
-				  	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
+				 	</label>
+				 	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
 						<xsl:text>Remove Justification</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-justification" checked="" />
 						<span class="md_switch__toggle"></span>
-				  	</label>
-			  	</aside>
+				 	</label>
+			 	</aside>
 				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 				</aside>
@@ -704,9 +704,9 @@
 									<xsl:variable name="link" select="@target"/>
 									<xsl:variable name="source" select="node()"/>
 									<a href="{$link}"><xsl:value-of select="$source"/></a>
-								   	<xsl:if test="position() != last()">
+								 	<xsl:if test="position() != last()">
 										<xsl:text>; </xsl:text>
-								   	</xsl:if>
+								 	</xsl:if>
 								</xsl:for-each>
 							</xsl:variable>
 								<!--<xsl:variable name="link">
@@ -1330,7 +1330,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:variable>-->
-	<!-- <xsl:value-of select="$lb-with-p"/>  -->
+	<!-- <xsl:value-of select="$lb-with-p"/> -->
 
 	<!-- Removed from <xsl:template match="app"> -->
 	<!--<span class="app">
@@ -1383,7 +1383,7 @@
 
 	<!-- Code not in use, but that could be useful -->
 
-	<!--  <xsl:template match="*[not(@type)][not(@reason)][not(@unit)][not(@extent)]" priority="-1">
+	<!-- <xsl:template match="*[not(@type)][not(@reason)][not(@unit)][not(@extent)]" priority="-1">
 		<span class="{name()}"><xsl:apply-templates select="@*|node()"/></span>
 		</xsl:template> -->
 	

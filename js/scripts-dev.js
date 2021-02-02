@@ -280,12 +280,12 @@ function AddRelNoopener(){
 
 // Thanks();
 
-// function Thanks(){
-//     var links = document.querySelectorAll("a[href^='http']:not([href^='#']):not([href^='mailto']):not([onclick])");
-//     for(var i = 0; i < links.length; i++){
-//       links[i].href = links[i].href + "?=Thanks_for_visiting_One_More_Voice";
-//     }
-// }
+//function Thanks(){
+//		var links = document.querySelectorAll("a[href^='http']:not([href^='#']):not([href^='mailto']):not([onclick])");
+//		for(var i = 0; i < links.length; i++){
+//			links[i].href = links[i].href + "?=Thanks_for_visiting_One_More_Voice";
+//		}
+//}
 
 
 /* Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end. */

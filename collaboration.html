@@ -113,11 +113,11 @@
 		<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 		<script>
 			$(function(){
-			  var includes = $('[data-include]');
-			  jQuery.each(includes, function(){
-				var file = 'common/' + $(this).data('include') + '.html';
-				$(this).load(file);
-			  });
+				var includes = $('[data-include]');
+			 	jQuery.each(includes, function(){
+					var file = 'common/' + $(this).data('include') + '.html';
+					$(this).load(file);
+			 	});
 			});
 		</script>		
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>

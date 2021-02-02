@@ -73,7 +73,7 @@ html{
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
-body{ 
+body{
 	top: 0px !important; /* Needed for Google Translate */
 	margin: 0.5em auto;
 	padding-bottom: .5em;
@@ -97,7 +97,7 @@ body{
 	max-width: 100%;
 }
 @media only screen and (min-width: 768px){
-.text-container{
+	.text-container{
 		max-width: 46em;
 	}
 }
@@ -256,7 +256,7 @@ h4{
 
 /* 1.3. Main Images and Related */
 img{
-	color:#e6e6e6;
+	color: #e6e6e6;
 	font-weight: 300;
 	width: 100%;
 	max-width: 100%;
@@ -271,20 +271,20 @@ a:focus img{
 .image-border{
 	border: 1px solid gray;
 }
-@media screen and (min-width:480px) {
-	.responsive-image70 {
+@media screen and (min-width: 480px){
+	.responsive-image70{
 		width: 70%;
 	}
-	.responsive-image73 {
+	.responsive-image73{
 		width: 73%;
 	}
 	.caption70{
-		padding:0 15%;
+		padding: 0 15%;
 	}
 	.caption73{
-		padding:0 13.5%;
+		padding: 0 13.5%;
 	}
-  }
+}
 /* The following is used to prevent content layout shifts */
 .content-holder-1,
 .content-holder-2,
@@ -294,7 +294,7 @@ a:focus img{
 	background: #e6e6e6;
 	display: inline-block;
 }
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px){
 	.content-holder-1{
 		min-height: 66px;
 	}
@@ -311,7 +311,7 @@ a:focus img{
 		min-height: 339px;
 	}
 }
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px){
 	.content-holder-1{
 		min-height: 106px;
 	}
@@ -328,7 +328,7 @@ a:focus img{
 		min-height: 370px;
 	}
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px){
 	.content-holder-1{
 		min-height: 169px;
 	}
@@ -345,7 +345,7 @@ a:focus img{
 		min-height: 580px;
 	}
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px){
 	.content-holder-1{
 		min-height: 155px;
 	}
@@ -381,26 +381,26 @@ a:focus img{
 	margin: 0;
 	padding: 2px 4px;
 	bottom: 7px;
-	right: 7px ;
+	right: 7px;
 	position: absolute;
 }
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px){
 	.image-wrapper .caption{
 		font-size: 1.7em;
 		padding: 4px 6px;
 	}
-	.image-wrapper .caption70 {
+	.image-wrapper .caption70{
 		margin-right: 15%;
 	}
-	.image-wrapper .caption73 {
+	.image-wrapper .caption73{
 		margin-right: 13.5%;
 	}
 }
 .image-wrapper .caption:hover,
-	.image-wrapper .caption:focus-within{
-		background-color: #595959;
-		border: 2px solid #e3e3e3;
-	}
+.image-wrapper .caption:focus-within{
+	background-color: #595959;
+	border: 2px solid #e3e3e3;
+}
 @media only screen and (min-width: 992px){
 	.image-wrapper .caption:hover,
 	.image-wrapper .caption:focus-within{
@@ -445,10 +445,10 @@ a:focus{
 
 /* 1.5. Main Sections and Related */
 
-@font-face {
+@font-face{
 	font-family: 'source_sans_proregular';
-	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-		 url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
+url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -475,9 +475,9 @@ body.essay .main{
 	padding: 1em 0 0 0;
 }
 .toc-title{
-	list-style-type:none;
+	list-style-type: none;
 	margin-left: -1.2em;
-	display:inline-block;
+	display: inline-block;
 }
 .return-top{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
@@ -682,7 +682,7 @@ body.essay .main{
 		font-size: 2.5em;
 	}
 }
-[id]:target {
+[id]:target{
 	margin-top: -70px;
 	border-top: 70px solid transparent;
 	background-clip: padding-box;
@@ -1003,7 +1003,7 @@ body.fixed-nav .overlay .menu .close-title{
 #google_translate_element div.goog-te-gadget .goog-te-combo{
 	font-size: 1.3em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	border: 2px solid  #E3E3E3;
+	border: 2px solid #E3E3E3;
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
@@ -1051,11 +1051,11 @@ section.archival-text{
 	font-size: .8em;
 	line-height: 1.6em;
 	border: 1px solid #858585;
-	border-radius: 9px; 
+	border-radius: 9px;
 	-webkit-border-radius: 9px;
 	-moz-border-radius: 9px;
 	border-spacing: 0;
-	margin: 2.5em 0;  				
+	margin: 2.5em 0;
 	width: 100%;
 }
 @media only screen and (min-width: 768px){
@@ -1065,20 +1065,20 @@ section.archival-text{
 	}
 }
 section.archival-text:last-of-type{
-	margin: 2.5em 0 1em 0; 
+	margin: 2.5em 0 1em 0;
 }
-section.archival-text h5, 
+section.archival-text h5,
 section.archival-text p{
 	margin: 0;
 	padding: 12px;
 	border-bottom: 1px solid #858585;
 	overflow: hidden;
-}	
+}
 section.archival-text h5{
 	font-size: 1.15em;
 	color: white;
 	background: #204A79;
-	border-radius: 8px 8px 0 0; 
+	border-radius: 8px 8px 0 0;
 	-webkit-border-radius: 8px 8px 0 0;
 	-moz-border-radius: 8px 8px 0 0;
 	display: flex;
@@ -1137,7 +1137,7 @@ section.archival-text .no-image::after{
 	background-color: #e3e3e3;
 	border: 1px solid #858585;
 	display: block;
-	padding-bottom: 100%; 
+	padding-bottom: 100%;
 }
 section.archival-text .no-image .content{
 	color: #404040;
@@ -1168,12 +1168,12 @@ section.archival-text .no-image .content{
 	color: #65615b;
 	margin: 3em auto 2em;
 }
-.gallery{      
+.gallery{
 	text-align: center;
 	margin-bottom: -2.5em;
 	overflow: hidden;
 }
-.gallery section:last-of-type {
+.gallery section:last-of-type{
 	margin-bottom: 1em;
 }
 .gallery h4{
@@ -1207,7 +1207,7 @@ section.archival-text .no-image .content{
 .gallery h4 a.return-top:hover{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}	
+}
 .gallery-item{
 	text-align: center;
 	display: inline-block;
@@ -1239,9 +1239,9 @@ section.archival-text .no-image .content{
 .gallery figure img{
 	width: 100%;
 	max-width: 100%;
-	object-fit:cover;
+	object-fit: cover;
 	-o-object-fit: cover;
-	border-radius:50%;
+	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	overflow: hidden;
@@ -1254,7 +1254,7 @@ section.archival-text .no-image .content{
 .gallery figure figcaption{
 	font-size: .8em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	text-align: center;       
+	text-align: center;
 	line-height: 1.2em;
 }
 
@@ -1330,7 +1330,7 @@ section.archival-text .no-image .content{
 	padding: 1em 1em .7em 2.5em;
 	margin: 0 0 2em 0;
 }
-.works-list li {
+.works-list li{
 	padding: 0 0 .6em 0;
 }
 #books section:last-of-type section:last-of-type .works-list:last-of-type{
@@ -1386,9 +1386,9 @@ section.archival-text .no-image .content{
 	font-size: 1.05em;
 	background-color: #e3e3e3;
 	border-bottom: 1px solid #858585;
-	border-radius:  8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
 	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius:  8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
 	padding: 10px 16px;
 	margin: 0;
 }
@@ -1405,7 +1405,7 @@ section.archival-text .no-image .content{
 #films li:last-child{
 	padding-bottom: 0;
 }
-#films p.warning {
+#films p.warning{
 	background: #e3e3e3;
 	padding: 5px 7px;
 	margin: 0 0 2em 0;
@@ -1451,7 +1451,7 @@ section.archival-text .no-image .content{
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	box-shadow: 0 0 30px rgba(0,0,0,0.6);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	width: 60px;
 	height: 40px;
 	z-index: 2;
@@ -1502,7 +1502,7 @@ section.archival-text .no-image .content{
 .screenshot .play-button:before{
 	top: 50%;
 	left: 50%;
-	transform: translate3d( -50%, -50%, 0 ); /* Mistake but works */
+	transform: translate3d(-50%, -50%, 0); /* Mistake but works */
 }
 .youtube iframe{
 	height: 100%;
@@ -1511,7 +1511,7 @@ section.archival-text .no-image .content{
 	left: 0;
 	z-index: 2; /* Hides play button when iframe loads */
 }
-[id].youtube:target {
+[id].youtube:target{
 	margin-top: 10px !important;
 	border-top: 3px transparent solid !important;
 	background-clip: unset !important;
@@ -1577,7 +1577,7 @@ section.archival-text .no-image .content{
 	margin: 0.5em;
 	position: relative;
 }
-.screenshot::after {
+.screenshot::after{
 	display: block;
 	content: '';
 	padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -1635,26 +1635,26 @@ ul.concept-list li{
 }
 ol.concept-list li:last-child,
 ul.concept-list li:last-child{
-   margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 /* The following items are used on the coding_guidelines.html page. */
 .tag-blue{
 	font-size: .9em;
 	font-family: Arial, Helvetica, sans-serif;
-	color:#204A79;
+	color: #204A79;
 }
 .attribute-red{
 	font-size: .9em;
 	font-family: Arial, Helvetica, sans-serif;
-	color:#902D27;
+	color: #902D27;
 }
 
 /* The following items are used on the bibliography.html page. */
 .primary-historical{
 	list-style: none;
 	padding: 0 0 1em 0;
-	margin: 0;	
+	margin: 0;
 }
 ol.primary-historical li{
 	padding-bottom: 1em;
@@ -1683,8 +1683,8 @@ ul.acknowledgments{
 
 /* The following items are used on the site_map.html page. */
 .site-map{
-	display:inline-block; 
-	text-align:left
+	display: inline-block;
+	text-align: left
 }
 .site-map ol li:first-child{
 	margin-top: .6em;
@@ -1747,7 +1747,7 @@ ul.acknowledgments{
 ol,
 ul{
 	padding: 0 0 0 1.4em;
-	margin:0;
+	margin: 0;
 }
 ol li ol{
 	padding: 0 0 0 0;
@@ -1779,8 +1779,8 @@ hr{
 /* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
 /* alternative coding */
 /* [id]:target {
-  padding-top: 65px; 
-  margin-top: -65px;
+	padding-top: 65px; 
+	margin-top: -65px;
 } */
 /* *[id]:before { 
 	display: block; 
@@ -1788,7 +1788,7 @@ hr{
 	margin-top: -80px;
 	height: 80px;
 	visibility: hidden; 
-  } */
+} */
 /* [id]:target::before {
 	content: "";
 	display: block;
@@ -1855,11 +1855,11 @@ body.transcription .title{
 }
 [id] {
 	scroll-margin-top: 70px;
-  }
-  @media only screen and (min-width: 992px){
+}
+@media only screen and (min-width: 992px){
 	[id] {
 		scroll-margin-top: 20px;
-	  }
+	}
 	}
 .menu{
 	padding: 1em 0;

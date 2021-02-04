@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="https://tei-c.org/ns/1.0/" xml:id="liv_020071">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to [Unknown]</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="alternative">Letter to [Unknown], 18 March 1863</title>
+				<!-- Title, date -->
+				<author>Craft, Ellen, 1826-1891</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Craft, Ellen</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Ellen Craft</author>
+				<!-- First author only: Forename Surname -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HM">
+					<name>Hope McCaffrey</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="LM">
+					<name>Lucy McCann</name>
+					<resp>Transcription</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020071</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+						<country>United Kingdom</country>
+						<!-- Repository country -->
+						<settlement>Oxford</settlement>
+						<!-- Repository city -->
+						<repository>Bodleian Library</repository>
+						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+						<idno type="shelfmark">MSS. Brit. Emp. S. 18, C30/10</idno>
+						<!-- Shelfmark/Identifier -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+							<handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to [Unknown]</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="EC">Craft, Ellen, 1826-1891</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1863-03-18">18 March 1863</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">12 Cambridge Road Hammersmith</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-02-04" who="#HC"></change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body n="aea89d">
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div rend="brown black">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+
+	<pb facs="liv_020071_0001" n="0001"/>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/><placeName>12 Cambridge Road</placeName> <add rend="gray" hand="#U1">C30/10</add>
+<lb/><space extent="2" unit="words"/><settlement>Hammersmith</settlement>
+<lb/><space extent="3" unit="words"/><date when="1863-03-18">March 18/63</date></p>
+<lb/><p rend="no-indent">Sir/
+<lb/><space extent="1" unit="words"/>I fear you have for-
+<lb/>gotten to send me the paper
+<lb/>for this month.</p>
+<lb/><p>Please send it by reply</p>
+<lb/><p>I am Sir
+<lb/><space extent="1" unit="words"/><space extent="2" unit="chars"/>Yours truly
+<lb/><space extent="4" unit="words"/><persName>E Craft</persName></p>
+<lb/><ab rend="no-indent">to the Clarke</ab>
+<lb/>
+<lb/><ab rend="no-indent brown" hand="#U2">replied to 
+<lb/><space extent="2" unit="chars"/><date when="1863-03-20">20/3/63</date></ab>
+
+			</div>
+		</body>
+	</text>
+</TEI>

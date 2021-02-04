@@ -2,7 +2,7 @@
 <?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="https://tei-c.org/ns/1.0/" xml:id="liv_020071">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -132,7 +132,7 @@
 <!-- @n = page number only, e.g., 0001 -->
 
 	<pb facs="liv_020071_0001" n="0001"/>
-<lb/><p rend="no-indent"><space extent="2" unit="chars"/><placeName>12 Cambridge Road</placeName> <add rend="gray" hand="#U1">C30/10</add>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/><placeName>12 Cambridge Road</placeName> <add rend="gray" hand="#U2">C30/10</add>
 <lb/><space extent="2" unit="words"/><settlement>Hammersmith</settlement>
 <lb/><space extent="3" unit="words"/><date when="1863-03-18">March 18/63</date></p>
 <lb/><p rend="no-indent">Sir/

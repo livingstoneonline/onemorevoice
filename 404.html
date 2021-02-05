@@ -31,39 +31,46 @@
 			gtag('config', 'UA-31768072-5');
         </script>
         <style>
+			.font404{
+				font-family: 'source_sans_proregular';
+			}
             .error404{
-                font-size: 8em;
+                font-size: 3em;
                 color: #a83c37;
-                background-color: #E3E3E3;
-                white-space: nowrap;
                 text-align: center;
-                padding: 0;
-                margin: 0;
-                border: 1px solid #404040;
-                min-height: 1.25em;
-                display: block;
                 line-height: 1em;
+				margin: .3em 0;
             }
-			.site-link{
-				font-size: 0.95em;
+			@media only screen and (min-width: 480px){
+				.error404{
+                	font-size: 4em;
+				}
+			}
+			@media only screen and (min-width: 768px){
+				.error404{
+                	font-size: 5em;
+				}
+			}
+			.link404{
 				color: white;
 				background-color: #204A79;
-				/* font-weight: bold; */
-				font-family: Arial, Helvetica, sans-serif;
-				text-align: center;
-				border: 1px solid #404040;
-				border-width: 1px;
 				border-radius: 5px;
 				-webkit-border-radius: 5px;
 				-moz-border-radius: 5px;
 				padding: 2px 4px;
 				margin: 1px;
-				min-width: 17px;
 				text-decoration: none;
 			}
-			a.site-link:focus{
-				color: #a83c37;
-				background-color: #E3E3E3;
+			a.link404:hover{
+				color: #204A79;
+				font-weight: 600;
+				background-color: white;
+				border: 2px solid #204A79;
+			}
+			a.link404:focus{
+				color: white;
+				background-color: #a83c37;
+				outline: 2px solid black;
 			}
         </style>
 	</head>
@@ -73,22 +80,22 @@
 	<body class="essay">
 		<div class="text-container">	
 
-		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
-
 			<div class="navspace" data-include="nav1"></div>
 
-			<header class="title" id="title-div">
-                <div class="error404">404</div>
+			<header class="title" style="padding-bottom: 0;" id="title-div">
+                <!-- <div class="error404">404</div> -->
+				<img class="image-border content-holder-1" src="img/main-pages/liv_023020_0001_deriv-1399px.jpg" srcset="img/main-pages/liv_023020_0001_deriv-1399px.jpg 1399w, img/main-pages/liv_023020_0001_deriv-1276px.jpg 1276w, img/main-pages/liv_023020_0001_deriv-1216px.jpg 1216w, img/main-pages/liv_023020_0001_deriv-699px.jpg 699w, img/main-pages/liv_023020_0001_deriv-638px.jpg 638w, img/main-pages/liv_023020_0001_deriv-608px.jpg 608w, img/main-pages/liv_023020_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 				<h1 class="header-title">One More Voice</h1>
-				<!-- <hr /> -->
-				<!-- <h2><em>Lost Voices from the British Empire's Archives</em></h2> -->
+				<hr />
 			</header>
 			
-			<main class="main center" id="main">
+			<main class="main center font404" id="main">
 
-				<p>Eek! Wrong page. Time to get some help....</p>
+				<p class="error404">404</p>
+
+				<p>Page missing. Find it:</p>
 				
-				<p><a class="site-link" href="site_map.html">Site Map</a></p>
+				<a class="link404" href="site_map.html">Site Map</a>
 
 			</main>
 			

@@ -742,6 +742,7 @@ body.essay .main{
 }
 .topnav ul li a{
 	color: black;
+    text-decoration: none;
 	padding: 10px 10px;
 	border-radius: 7px 7px 0 0;
 	-webkit-border-radius: 7px 7px 0 0;
@@ -751,6 +752,7 @@ body.essay .main{
 .topnav ul li a:focus{
 	color: whitesmoke;
 	background-color: #424242;
+    text-decoration: underline;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -867,11 +869,11 @@ input:checked + label::after{
 .topnav ul li .dropdown .dropdown-content ul li a,
 .topnav ul li .dropdown .dropdown-content ul li a:visited{
 	color: black;
-    padding: .85em;
+    padding: .75em;
 }
 .topnav ul li .dropdown .dropdown-content ul li:last-of-type a,
 .topnav ul li .dropdown .dropdown-content ul li:last-of-type a:visited{
-	padding-bottom: 1em;
+	padding-bottom: .9em;
 }
 .topnav ul li .dropdown .dropdown-content ul li a:hover{
 	color: whitesmoke;

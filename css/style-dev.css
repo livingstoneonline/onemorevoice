@@ -845,7 +845,9 @@ input:checked + label::after{
 .topnav ul li .dropdown .dropdown-content ul li:last-of-type{
 	padding-bottom: .5em;
 }
-.topnav ul li .dropdown .dropdown-content ul li:last-of-type:hover{
+.topnav ul li .dropdown .dropdown-content ul li:last-of-type:hover,
+.topnav ul li .dropdown .dropdown-content ul li:last-of-type:focus,
+.topnav ul li .dropdown .dropdown-content ul li:last-of-type:focus-within{
 	padding-bottom: 0;
 }
 .topnav ul li .dropdown .dropdown-content ul li:hover,

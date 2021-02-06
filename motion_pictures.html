@@ -552,7 +552,7 @@
 				jQuery.each(includes, function(){
 					var file = 'common/' + $(this).data('include') + '.html';
 					$(this).load(file);
-			});
+				});
 			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
@@ -652,20 +652,14 @@
 					.playVideo();
 			}
 		</script>
-		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
+		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486 -->
 		<script>
-			function downloadJSAtOnload() {
+			$( window ).on( "load", function() { 
 				var randomString = Math.floor(Math.random()*1000000);
 				var element = document.createElement("script");
 				element.src = "js/scripts.js?=" + randomString;
 				document.body.appendChild(element);
-			}
-			if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-			else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-			else window.onload = downloadJSAtOnload;
+			});
 		</script>
 	</body>
-
 </html>

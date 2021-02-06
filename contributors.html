@@ -60,6 +60,8 @@
 				
 				<p><strong>Heather F. Ball</strong> (St. John's University, USA) – Encoding lead, project scholar</p>
 
+				<p><strong>Pearl Chaozon Bauer </strong> (Notre Dame de Namur University) – Project advisor</p>
+
 				<p><strong>Jo Davis</strong> (SOAS, University of London, UK) – Project scholar</p>
 
 				<p><strong>Jo Ichimura</strong> (SOAS, University of London, UK) – Archival contributor</p>
@@ -86,7 +88,7 @@
 				
 				<p><strong>Tayseer Abu Odeh</strong> (Al-Ahliyya Amman University, Jordan) – Project scholar</p>
 
-				<p><strong>Indu Ohri</strong> (University of Virginia)</p>
+				<p><strong>Indu Ohri</strong> (University of Virginia) – Project scholar</p>
 
 				<p><strong>Mary Borgo Ton</strong> (University of Illinois at Urbana-Champaign, USA) – Project scholar, encoding contributor</p>
 
@@ -136,20 +138,14 @@
 			}
 		</script>
 		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
+		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486 -->
 		<script>
-			function downloadJSAtOnload() {
+			$( window ).on( "load", function() { 
 				var randomString = Math.floor(Math.random()*1000000);
 				var element = document.createElement("script");
 				element.src = "js/scripts.js?=" + randomString;
 				document.body.appendChild(element);
-			}
-			if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-			else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-			else window.onload = downloadJSAtOnload;
+			});
 		</script>
 	</body>
-
 </html>

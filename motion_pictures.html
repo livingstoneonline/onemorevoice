@@ -367,7 +367,7 @@
 
 						<p class="small warning"><strong class="site-red">Warning:</strong> Site visitors are advised to proceed with caution when consulting the films in this subsection because the films may contain material that can be upsetting or cause distress.</p>
 
-						<div class="wrapper" aria-labelledby="afrique-50">
+						<!-- <div class="wrapper" aria-labelledby="afrique-50">
 							<h5 id="afrique-50"><em>Afrique 50</em></h5>
 							<div id="afrique-50-video" class="youtube" tabindex="0" data-embed="KO50TiOmDK8" data-title="René Vautier. Afrique 50. 1950. Running time: 17:24." data-alt="Two children looking at viewer.">
 								<nav class="skipcontrols" aria-labelledby="skip-statues">
@@ -380,7 +380,7 @@
 								<li><strong>Date:</strong> 1950</li>
 								<li><strong>Running Time:</strong>: 17:24</li>
 							</ul>
-						</div>
+						</div> -->
 
 						<div class="wrapper" aria-labelledby="statues">
 							<h5 id="statues"><em>Les Statues Meurent Aussi</em> (<em>Statues Also Die</em>)</h5>
@@ -552,7 +552,7 @@
 				jQuery.each(includes, function(){
 					var file = 'common/' + $(this).data('include') + '.html';
 					$(this).load(file);
-			});
+				});
 			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
@@ -652,20 +652,14 @@
 					.playVideo();
 			}
 		</script>
-		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://varvy.com/pagespeed/defer-loading-javascript.html and https://stackoverflow.com/a/39179486 -->
+		<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486 -->
 		<script>
-			function downloadJSAtOnload() {
+			$( window ).on( "load", function() { 
 				var randomString = Math.floor(Math.random()*1000000);
 				var element = document.createElement("script");
 				element.src = "js/scripts.js?=" + randomString;
 				document.body.appendChild(element);
-			}
-			if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-			else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-			else window.onload = downloadJSAtOnload;
+			});
 		</script>
 	</body>
-
 </html>

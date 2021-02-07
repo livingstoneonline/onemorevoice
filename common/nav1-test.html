@@ -6,6 +6,7 @@
 				padding: 0;
 				margin: 0 auto;
 				max-width: 100%;
+				z-index: 2;
 			}
 			.navspace{
 				margin-bottom: 1.5em;
@@ -16,6 +17,11 @@
 			.topnav{
 				padding-top: 0;
 				background-color: #e3e3e3;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 			}
 			@media only screen and (min-width: 992px){
 				.topnav {
@@ -36,6 +42,15 @@
 				height: 34px;
 				width: 34px;
 			}
+			/* .logo2{
+				position: absolute;
+				right: -22em;
+			}
+			.logo2 img{
+				height: 26px;
+				width: 26px;
+				padding: 0 .5em;
+			} */
 			.logo a{
 				font-family:Georgia, 'Times New Roman', Times, serif;
 				font-size: 1.4em;
@@ -57,9 +72,14 @@
 			}		
 			@media only screen and (min-width: 768px){
 				.translate {
-					margin: 1em 0;
+					position: absolute;
+					left: 1em;
 				}
 			}	
+			.fa.fa-home{
+				font-size: 1.2em;
+				margin-right: .3em;
+			}
 		</style>
 		
 		<!-- start of nav -->
@@ -75,7 +95,7 @@
 		<nav class="topnav" aria-labelledby="nav1">
 			<ul role="menubar" id="nav1" aria-label="Site Sections">
 				<li role="none" class="logo"><img src="../img/icons/apple-touch-icon-180x180.png"/><a role="menuitem" aria-haspopup="false" href="index.html">One More Voice</a></li>
-				<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">Home</a></li>
+				<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i>Home</a></li>
 				<li role="none">
 					<div class="dropdown" role="menuitem" data-menu-component>
 						<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
@@ -147,6 +167,7 @@
 						</div>
 					</div>
 				</li>
+				<!-- <li role="none" class="logo2"><img src="../img/logos/Zotero.png"/><img src="../img/logos/GitHub.png"/><img src="../img/logos/Email.png"/></li> -->
 			</ul>
 		</nav>
 

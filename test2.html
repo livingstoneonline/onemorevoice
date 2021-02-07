@@ -30,6 +30,104 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
+		<style>
+			.text-container{
+				padding: 0 1em;
+				margin: .5em auto;
+				max-width: 100%;
+			}
+			@media only screen and (min-width: 768px){
+				.text-container{
+					max-width: 46em;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				.text-container{
+					max-width: 42em;
+				}
+			}
+			/* test */
+			body{
+				margin: 0 auto;
+			}
+			.text-container{
+				padding: 0;
+				margin: 0 auto;
+				max-width: 100%;
+				z-index: 2;
+			}
+			.navspace{
+				margin-bottom: 1.5em;
+			}
+			#nav1{
+				position: relative;
+			}
+			.topnav{
+				padding-top: 0;
+				background-color: #e3e3e3;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+			}
+			@media only screen and (min-width: 992px){
+				.topnav {
+					font-size: 1em;
+				}
+			}
+			.topnav ul{
+				border-bottom: 1px solid #e3e3e3;
+				padding: .5em 0;
+				line-height: 1em;
+			}
+			.topnav ul li{
+				font-size: 1.05em;
+			}
+			#logo{
+				position: absolute;
+				left: 1em;
+				/* display: inline-flex; */
+				top: 1em;
+
+			}
+			#logo img{
+				height: 34px;
+				width: 34px;
+			}
+			#logo a{
+				font-family:Georgia, 'Times New Roman', Times, serif;
+				font-size: 1.4em;
+				text-decoration: none;
+				color: #191716;
+			}
+			@media only screen and (min-width: 768px){
+				header,
+				main,
+				aside{
+					max-width: 700px;
+					margin: 0 auto;
+				}
+			}
+			@media only screen and (min-width: 992px){
+				header,
+				main,
+				aside{
+					max-width: 638px;
+				}
+			}		
+			@media only screen and (min-width: 768px){
+				.translate {
+					position: absolute;
+					top: 5em;
+					left: 1em;
+				}
+			}	
+			.fa.fa-home{
+				font-size: 1.2em;
+				margin-right: .3em;
+			}
+		</style>
 	</head>
 
 	<!-- <?php flush(); ?> -->
@@ -51,22 +149,26 @@
 				<!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 					
 				<nav class="topnav" aria-labelledby="nav1">
+					<nav id="logo" aria-labelledby="home">
+						<a href="index.html" id="home"><!--<img src="../img/icons/apple-touch-icon-180x180.png"/>-->One More Voice</a>
+					</nav>
+
 					<ul role="menubar" id="nav1" aria-label="Site Sections">
-						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i>Home</a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
 								<label class="dropbtn" for="toggle-1" data-opens-menu>
-									materials
+									Materials
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="texts.html">archival texts</a></li>
-										<li role="none"><a role="menuitem" href="objects.html">historical objects</a></li>
-										<li role="none"><a role="menuitem" href="books.html">book-length works</a></li>
-										<li role="none"><a role="menuitem" href="motion_pictures.html">motion pictures</a></li>
+										<li role="none"><a role="menuitem" href="texts.html">Archival Texts</a></li>
+										<li role="none"><a role="menuitem" href="objects.html">Historical Objects</a></li>
+										<li role="none"><a role="menuitem" href="books.html">Book-Length Works</a></li>
+										<li role="none"><a role="menuitem" href="motion_pictures.html">Motion Pictures</a></li>
 									</ul>
 								</div>
 							</div>
@@ -75,16 +177,16 @@
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
 								<label class="dropbtn" for="toggle-2" data-opens-menu>
-									concepts
+									Concepts
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="analytical_priorities.html">analytical priorities</a></li>
-										<li role="none"><a role="menuitem" href="project_design.html">project design</a></li>
-										<li role="none"><a role="menuitem" href="collaboration.html">collaboration</a></li>
-										<li role="none"><a role="menuitem" href="coding_guidelines.html">coding guidelines</a></li>
+										<li role="none"><a role="menuitem" href="analytical_priorities.html">Analytical Priorities</a></li>
+										<li role="none"><a role="menuitem" href="project_design.html">Project Design</a></li>
+										<li role="none"><a role="menuitem" href="collaboration.html">Collaboration</a></li>
+										<li role="none"><a role="menuitem" href="coding_guidelines.html">Coding Guidelines</a></li>
 									</ul>
 								</div>
 							</div>
@@ -93,16 +195,16 @@
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false, document.getElementById('toggle-4').checked = false">
 								<label class="dropbtn" for="toggle-3" data-opens-menu>
-									misc
+									Misc
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="contributors.html">contributors</a></li>
-										<li role="none"><a role="menuitem" href="acknowledgments.html">acknowledgments</a></li>
-										<li role="none"><a role="menuitem" href="bibliography.html">bibliography</a></li>
-										<li role="none"><a role="menuitem" href="site_map.html">site map</a></li>
+										<li role="none"><a role="menuitem" href="contributors.html">Contributors</a></li>
+										<li role="none"><a role="menuitem" href="acknowledgments.html">Acknowledgments</a></li>
+										<li role="none"><a role="menuitem" href="bibliography.html">Bibliography</a></li>
+										<li role="none"><a role="menuitem" href="site_map.html">Site Map</a></li>
 									</ul>
 								</div>
 							</div>
@@ -111,15 +213,15 @@
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-4" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false">
 								<label class="dropbtn" for="toggle-4" data-opens-menu>
-									external
+									External
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="External Links" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">zotero library</a></li>
-										<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">github repo</a></li>
-										<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">contact</a></li>
+										<li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
+										<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a></li>
+										<li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">Contact</a></li>
 									</ul>
 								</div>
 							</div>

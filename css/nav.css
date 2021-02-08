@@ -20,6 +20,13 @@
         min-height: 2.8em;
     }
 }
+@media only screen and (min-width: 768px){
+    .navigation{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
 .navigation a,
 .navigation a:hover,
 .navigation a:focus{
@@ -37,13 +44,20 @@ a#nav2 img{
     height: 1.8em;
 	width: 1.8em;
     float: left;
+    margin-left: .2em;
+    padding: .1em;
 }
 @media only screen and (min-width: 480px){
     a#nav2 img{
         height: 2.1em;
         width: 2.1em;
-        margin: .2em;
+        padding: .2em;
     }   
+}
+@media only screen and (min-width: 768px){
+    a#nav2 img{
+        margin-left: .4em;
+    }
 }
 #nav2 a:hover img,
 #nav2 a:focus img{
@@ -59,11 +73,17 @@ a#nav3 .home{
 }
 @media only screen and (min-width: 480px){
     a#nav3 .home{
-        font-size: 2em;
-        padding: .4em 0;
+        font-size: 1.7em;
+        padding: .5em 0;
     }
 }
-
+@media only screen and (min-width: 992px){
+    a#nav3 .home{
+        right: unset;
+        left: 2em;
+        padding: .6em 0;
+    }
+}
 a#nav5{
     position: absolute;
     right: 0;
@@ -72,10 +92,23 @@ a#nav5 .fa-bars{
     font-size: 1.6em;
     float: right;
     padding: .2em .3em;
+    margin-right: .1em;
 }
 @media only screen and (min-width: 480px){
     a#nav5 .fa-bars{
-        font-size: 2em;
+        font-size: 1.8em;
+        padding: .3em;
+    }
+}
+@media only screen and (min-width: 768px){
+    a#nav5 .fa-bars{
+        margin-right: .4em;
+    }
+}
+@media only screen and (min-width: 768px){
+    a#nav5 .fa-bars{
+        display: none;
+        visibility: hidden;
     }
 }
 a#nav5,
@@ -84,9 +117,44 @@ a:focus#nav5{
     color: #191716;
     text-decoration: none;
 }
-
-header{
+@media only screen and (min-width: 768px){
+	header,
+	main,
+	aside{
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 992px){
+	header,
+	main,
+	aside{
+		max-width: 638px;
+	}
+}
+header,
+body.transcription header{
+	text-align: center;
+	position: relative;
     margin-top: 2em;
+}
+@media only screen and (min-width: 480px){
+	header,
+    body.transcription header{
+        margin-bottom: 1em;
+	}
+}
+@media only screen and (min-width: 768px){
+	header,
+    body.transcription header{
+        margin: 4.5em auto 2em auto;
+	}
+}
+@media only screen and (min-width: 992px){
+	header,
+    body.transcription header{
+		margin-bottom: 2em;
+	}
 }
 main,
 aside,
@@ -100,6 +168,51 @@ main{
 aside,
 footer{
     font-size: 1.2em;
+}
+@media only screen and (min-width: 480px){
+    main{
+        font-size: 1.2em;
+    }
+    aside,
+    footer{
+        font-size: 1.1em;
+    }
+}
+@media only screen and (min-width: 768px){
+    main{
+        font-size: 1.1em;
+    }
+    aside,
+    footer{
+        font-size: 1.0em;
+    }
+}
+@media only screen and (min-width: 992px){
+    main{
+        font-size: 1em;
+    }
+    aside,
+    footer{
+        font-size: .9em;
+    }
+}
+.essay h2{
+    color: #204A79;
+    margin: .5em auto 0 auto;
+}
+@media only screen and (min-width: 992px){
+    .essay h2{
+        text-align: center;
+        font-size: 1.3em;
+    }
+}
+@media only screen and (min-width: 992px){
+    .translate{
+        margin: unset;
+        position: absolute;
+        top: 0;
+        left: 1em;
+    }
 }
 
 

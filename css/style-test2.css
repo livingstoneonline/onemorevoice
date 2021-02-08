@@ -75,7 +75,7 @@ html{
 }
 body{
 	top: 0px !important; /* Needed for Google Translate */
-	/* margin: 0.5em auto; */
+	margin: 0 auto;
 	padding-bottom: .5em;
 }
 @media only screen and (min-width: 768px){
@@ -91,23 +91,15 @@ body{
 		padding-top: 0 !important;
 	}
 }
-/* .text-container{
-	padding: 0 1em;
-	margin: .5em auto;
+.text-container{
+	padding: 0;
+	margin: 0 auto;
 	max-width: 100%;
+	z-index: 2;
 }
-@media only screen and (min-width: 768px){
-	.text-container{
-		max-width: 46em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.text-container{
-		max-width: 42em;
-	}
-} */
 @media only screen and (min-width: 320px){
 	.navspace{
+		margin-bottom: 1.5em;
 		min-height: 63px;
 	}
 }
@@ -129,6 +121,21 @@ body{
 header{
 	position: relative;
 }
+@media only screen and (min-width: 768px){
+	header,
+	main,
+	aside{
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 992px){
+	header,
+	main,
+	aside{
+		max-width: 638px;
+	}
+}	
 .title,
 body.transcription .title{
 	font-weight: bold;
@@ -612,7 +619,6 @@ body.essay .main{
 .menu,
 .fixed-nav .menu{
 	text-align: center;
-	/* max-width: 36em; */
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -705,27 +711,45 @@ body.essay .main{
 .topnav{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 600;
+	background-color: #e3e3e3;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	padding-top: 0;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 1;
 	/* padding-top: .3em; /* Needed for Google Translate */
-	/* display: none;
-	visibility: hidden; */
 }
-@media only screen and (min-width: 992px){
-	.topnav{
-		/* font-size: 1.1em; */
-		/* display: block;
-		visibility: visible; */
-	}
+.topnav #logo{
+	position: absolute;
+	left: 1em;
+	/* display: inline-flex; */
+	top: 1em;
+}
+.topnav #logo img{
+	height: 34px;
+	width: 34px;
+}
+.topnav #logo a{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.4em;
+	text-decoration: none;
+	color: #191716;
+}
+.topnav .fa.fa-home{
+	font-size: 1.2em;
+	margin-right: .3em;
 }
 .topnav ul{
-	/* font-size: .95em; */
 	text-align: center;
+	line-height: 1em;
 	list-style: none;
-	/* padding: 0 0 .5em 0; */
 	margin: 0;
+	padding: .5em 0;
 	display: block;
 }
 .topnav ul li{
-	/* font-size: 1.1em; */
+	font-size: 1.1em;
 	display: inline-block;
 	position: relative;
 }
@@ -1004,7 +1028,6 @@ body.fixed-nav .overlay .menu .close-title{
 	text-align: unset !important;
 }
 .translate{
-	/* height: 1.4em; */
 	margin: .7em 0 0 0;
 	max-width: 170px;
 	overflow: hidden !important;
@@ -1017,6 +1040,9 @@ body.fixed-nav .overlay .menu .close-title{
 @media only screen and (min-width: 768px){
 	.translate{
 		margin: 0 0 1em 0;
+		top: 5em;
+		left: 1em;
+		position: absolute;
 	}
 }
 /* Included in criticalTEI CSS, start */

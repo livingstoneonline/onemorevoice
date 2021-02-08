@@ -50,9 +50,10 @@
 				<!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 				<!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 					
-				<nav class="topnav" aria-labelledby="nav1">
+				<nav class="topnav">
+					<div class="logo"><a href="https://onemorevoice.org/"><img src="../img/icons/apple-touch-icon-180x180.png"/></a> <a href="https://onemorevoice.org/">One More Voice</a></div>
 					<ul role="menubar" id="nav1" aria-label="Site Sections">
-						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html">home</a></li>
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i>home</a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
@@ -128,15 +129,15 @@
 				</nav>
 
 				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
-				<nav id="sticky" aria-labelledby="nav2">
+				<!-- <nav id="sticky" aria-labelledby="nav2">
 					<div class="menu" id="nav2" title="Menu">
 						<span class="icon-title"><a style="cursor:pointer" class="icon" aria-label="Show Site Sections" aria-hidden="false" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></a></span>
 						<span class="nav-title">One More Voice</span>
 					</div>
-				</nav>
+				</nav> -->
 
 				<!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-				<nav aria-labelledby="nav3">
+				<!-- <nav aria-labelledby="nav3">
 					<div class="overlay" id="nav3">
 						<div class="menu" title="Close">
 							<span class="close-title"><a class="closebtn" aria-label="Close Overlay" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a></span>
@@ -179,7 +180,8 @@
 							</ul>
 						</div>
 					</div>
-				</nav>
+				</nav> -->
+				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 			</div>
 
 			<header class="title" id="title-div">
@@ -189,13 +191,12 @@
 					<a id="information" class="caption" href="#caption" aria-label="Go to image caption"><i class="fa fa-info-circle" title="Image information"></i></a>
 				</div>
 				
-				<h1 class="header-title">One More Voice</h1>
+				<!-- <h1 class="header-title">One More Voice</h1>
 				<hr />
-				<h2><em>Lost Voices from the British Empire's Archives</em></h2>
+				<h2><em>Lost Voices from the British Empire's Archives</em></h2> -->
 			</header>
 			
 			<main class="main" id="main">
-				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 				
 				<h3>Introduction</h3>
 
@@ -235,7 +236,7 @@
 			var css = document.createElement("link");
 			css.rel = "stylesheet";
 			css.type = "text/css";
-			css.href = "css/style.css?=" + randomString;
+			css.href = "css/style-test3.css?=" + randomString;
 			document.head.appendChild(css);
 		</script>
 		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->		

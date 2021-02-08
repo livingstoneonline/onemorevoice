@@ -40,19 +40,25 @@
 		<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<div class="navspace">
-				<!-- start of nav -->
-
-				<nav id="skiptocontent" aria-labelledby="nav0">
-					<a href="#main" id="nav0" tabindex="0">skip to main content</a>
-				</nav>
 
 				<!-- Topnav adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
 				<!-- Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 				<!-- Idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
-					
-				<nav class="topnav">
-					<div class="logo"><a href="https://onemorevoice.org/"><img src="../img/icons/apple-touch-icon-180x180.png"/></a> <a href="https://onemorevoice.org/">One More Voice</a></div>
-					<ul role="menubar" id="nav1" aria-label="Site Sections">
+
+				<nav class="navigation">
+
+					<!-- <nav id="nav1">
+						<a href="#main" id="skiptocontent" tabindex="0">skip to main content</a>
+					</nav> -->
+
+					<nav id="nav2">
+						<a href="https://onemorevoice.org/">
+							<img src="https://onemorevoice.org/img/icons/apple-touch-icon-180x180.png"/>
+							<span class="home">One More Voice</span>
+						</a>
+					</nav>
+
+					<!-- <ul role="menubar" id="nav3" aria-label="Site Sections">
 						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i>Home</a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
@@ -128,6 +134,12 @@
 					</ul>
 				</nav>
 
+				<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div> -->
+
+				<nav id="nav4">
+					<a href=""><i class="fa fa-bars"></i></a>
+				</nav>
+
 				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
 				<!-- <nav id="sticky" aria-labelledby="nav2">
 					<div class="menu" id="nav2" title="Menu">
@@ -179,9 +191,8 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-				</nav> -->
-				<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div> -->
+				</nav>
 			</div>
 
 			<header class="title" id="title-div">
@@ -237,6 +248,14 @@
 			css.rel = "stylesheet";
 			css.type = "text/css";
 			css.href = "css/style-test3.css?=" + randomString;
+			document.head.appendChild(css);
+		</script>
+		<script>
+			var randomString = Math.floor(Math.random()*1000000);
+			var css = document.createElement("link");
+			css.rel = "stylesheet";
+			css.type = "text/css";
+			css.href = "css/nav.css?=" + randomString;
 			document.head.appendChild(css);
 		</script>
 		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->		

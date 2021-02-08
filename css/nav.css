@@ -1,0 +1,350 @@
+.navigation{
+    font: 16px 'source_sans_proregular';
+    font-weight: 600;
+    color: #191716;
+	background-color: #e3e3e3;
+    line-height: 1em;
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+	width: 100%;
+	text-align: center;
+    min-height: 2em;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+}
+#nav2{
+	position: absolute;
+    left: 0;
+    width: 100%;
+    display: block;
+}
+#nav2 .home{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.2em;
+    padding: .4em 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+#nav2 a img{
+    border: none;
+    height: 1.6em;
+	width: 1.6em;
+    padding: .2em .3em;
+    float: left;
+}
+#nav2 a,
+#nav2 a:hover,
+#nav2 a:focus{
+    color: #191716;
+    text-decoration: none;
+}
+#nav2 a:hover img,
+#nav2 a:focus img{
+    border: none;
+}
+#nav4{
+    position: absolute;
+    right: 0;
+}
+#nav4 .fa-bars{
+    font-size: 1.4em;
+    float: right;
+    padding: .2em .3em;
+}
+#nav4 a,
+#nav4 a:hover,
+#nav4 a:focus{
+    color: #191716;
+    text-decoration: none;
+}
+
+header{
+    margin-top: 2em;
+}
+main,
+aside,
+footer{
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+main{
+    font-size: 1.3em;
+}
+aside,
+footer{
+    font-size: 1.2em;
+}
+
+
+/* 1.6. Skip to Main */
+
+/* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
+/* #nav1 a{
+	font-size: 1.1em;
+	color: white;
+	background: #424242;
+	padding: 6px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	margin-top: -.5em;  */
+    /* Needed for Google Translate */
+	/* position: absolute;
+	top: -40px;
+	left: 0px;
+	z-index: 99;
+	transition: top 1s ease-out;
+	-webkit-transition: top 1s ease-out;
+}
+#nav1 a:focus{
+	outline-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: top .4s ease-in;
+	transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#nav1 a:focus{
+		position: absolute;
+	}
+} */
+
+/* 1.8. Navbar */
+
+/* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+
+/* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
+
+
+
+
+
+/* .navigation{
+    padding-top: .3em;*/ /* Needed for Google Translate */
+/* }
+.navigation .logo a:hover,
+.navigation .logo a:focus{
+	background-color: unset;
+}
+.navigation ul{
+	text-align: center;
+	list-style: none;
+	line-height: 1em;
+	padding: .5em 0;
+	margin: 0 auto;
+}
+.navigation ul li{
+	font-size: 1em;
+	display: inline-block;
+	position: relative;
+}
+.navigation ul li:hover,
+.navigation ul li:focus-within{
+	color: whitesmoke;
+	background-color: #424242;
+	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navigation ul li a{
+	color: black;
+    text-decoration: none;
+	padding: 10px 10px;
+	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+}
+.navigation ul li a:hover,
+.navigation ul li a:focus{
+	color: whitesmoke;
+	background-color: #424242;
+    text-decoration: underline;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navigation ul li .dropdown .vh{ */
+	/* position: absolute !important;  */
+    /* !important in original code */
+	/* clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+.navigation ul li .dropdown label{
+	display: inline-block;
+}
+label::after,
+a::after{
+	font-family: 'FontAwesome';
+}
+label::after{
+	content: '\f0da';
+	display: inline-block;
+	width: 0.5em;
+}
+input:checked + label::after{
+	content: '\f0d7';
+}
+.navigation ul li .dropdown label.dropbtn{
+	padding: 10px 10px;
+	border: none;
+	border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+	outline: none;
+}
+[type="checkbox"]:checked + label{
+	color: whitesmoke;
+	background-color: #424242;
+}
+:checked + label .expanded-text{
+	display: inline;
+}
+:checked + label .collapsed-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .expanded-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .collapsed-text{
+	display: inline;
+}
+.dropdown-content{
+	display: none;
+}
+:checked ~ .dropdown-content{
+	display: block;
+}
+.dropdown-content a{
+	white-space: nowrap;
+	display: block;
+}
+.navigation ul li .dropdown .dropdown-content ul{
+	text-align: left;
+	min-width: 140px;
+	padding: 0;
+	box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222;
+	z-index: 1;
+	position: absolute;
+}
+.navigation ul li .dropdown .dropdown-content ul li{
+	font-size: .85em;
+	background-color: #E3E3E3;
+	display: block;
+}
+.navigation ul li .dropdown .dropdown-content ul li:first-of-type,
+.navigation ul li .dropdown .dropdown-content ul li:first-of-type:hover,
+.navigation ul li .dropdown .dropdown-content ul li:first-of-type:hover a,
+.navigation ul li .dropdown .dropdown-content ul li:first-of-type:focus,
+.navigation ul li .dropdown .dropdown-content ul li:first-of-type:focus-within a{
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:hover,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:hover a,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:focus,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:focus-within a{
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+}
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type{
+	padding-bottom: .5em;
+}
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:hover,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:focus,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type:focus-within{
+	padding-bottom: 0;
+}
+.navigation ul li .dropdown .dropdown-content ul li:hover,
+.navigation ul li .dropdown .dropdown-content ul li:hover a,
+.navigation ul li .dropdown .dropdown-content ul li:focus,
+.navigation ul li .dropdown .dropdown-content ul li:focus-within a{
+	color: whitesmoke;
+	background-color: #858585;
+	outline: none;
+	border-radius: unset;
+	-webkit-border-radius: unset;
+	-moz-border-radius: unset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navigation ul li .dropdown .dropdown-content ul li a,
+.navigation ul li .dropdown .dropdown-content ul li a:visited{
+	color: black;
+    padding: .75em;
+}
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type a,
+.navigation ul li .dropdown .dropdown-content ul li:last-of-type a:visited{
+	padding-bottom: .9em;
+}
+.navigation ul li .dropdown .dropdown-content ul li a:hover{
+	color: whitesmoke;
+} */
+/* HTML hierarchy for topnav and color values */
+/*
+.navigation
+.navigation ul
+.navigation ul li 
+.navigation ul li a
+
+.navigation ul li .dropdown
+.navigation ul li .dropdown input .vh
+.navigation ul li .dropdown label.dropbtn
+.navigation ul li .dropdown .dropdown-content
+.navigation ul li .dropdown .dropdown-content ul
+.navigation ul li .dropdown .dropdown-content ul li 
+.navigation ul li .dropdown .dropdown-content ul li a
+
+color: black;
+color: whitesmoke;
+background-color: #424242; [dark brown]
+background-color: #858585; [dark gray]
+background-color: #E3E3E3; [light gray]
+*/
+
+
+/* .icon-title{
+	font-size: .95em;
+	float: left;
+	padding-top: .2em;
+}
+@media only screen and (min-width: 480px){
+	.icon-title{
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.icon-title{
+		font-size: 1.6em;
+		padding-top: .1em;
+	}
+}
+.menu a.icon{
+	font-size: 1.5em;
+	color: black;
+	border-top: none;
+}
+.menu a.icon:hover{
+	color: #a83c37;
+
+}
+.menu a.icon:hover,
+.menu a.icon:focus{
+	padding: 1px 7px;
+	margin: -1px -7px;
+} */

@@ -97,10 +97,10 @@ body{
 	max-width: 100%;
 	z-index: 2;
 }
-.navspace{
+/* .navspace{
 	margin-bottom: 1.5em;
-}
-@media only screen and (min-width: 320px){
+} */
+/* @media only screen and (min-width: 320px){
 	.navspace{
 		min-height: 63px;
 	}
@@ -119,7 +119,7 @@ body{
 	.navspace{
 		min-height: 52px;
 	}
-}
+} */
 header{
 	position: relative;
 }
@@ -562,7 +562,7 @@ body.essay .main{
 /* 1.6. Skip to Main */
 
 /* "Skip to main content" coding adapted from https://webaim.org/techniques/skipnav/ */
-#skiptocontent a{
+/* #nav1 a{
 	font-size: 1.1em;
 	color: white;
 	background: #424242;
@@ -572,7 +572,7 @@ body.essay .main{
 	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-right-radius: 8px;
-	margin-top: -.5em; /* Needed for Google Translate */
+	margin-top: -.5em;
 	position: absolute;
 	top: -40px;
 	left: 0px;
@@ -580,7 +580,7 @@ body.essay .main{
 	transition: top 1s ease-out;
 	-webkit-transition: top 1s ease-out;
 }
-#skiptocontent a:focus{
+#nav1 a:focus{
 	outline-color: transparent;
 	position: fixed;
 	top: 0px;
@@ -589,23 +589,22 @@ body.essay .main{
 	transition: top .4s ease-in;
 }
 @media only screen and (min-width: 768px){
-	#skiptocontent a:focus{
+	#nav1 a:focus{
 		position: absolute;
 	}
-}
+} */
 
 
 /* 1.7. Mobile Fixed Nav */
 
 /* Adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
 
-#sticky{
+/* #sticky{
 	background-color: white;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 }
-/* applied after scroll height reached */
 .fixed-nav #sticky{
 	position: fixed;
 	top: 0;
@@ -644,8 +643,8 @@ body.essay .main{
 		display: none;
 		visibility: hidden;
 	}
-}
-.icon-title{
+} */
+/* .icon-title{
 	font-size: .95em;
 	float: left;
 	padding-top: .2em;
@@ -674,8 +673,8 @@ body.essay .main{
 .menu a.icon:focus{
 	padding: 1px 7px;
 	margin: -1px -7px;
-}
-.nav-title{
+} */
+/* .nav-title{
 	font-size: 1.7em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 600;
@@ -689,7 +688,7 @@ body.essay .main{
 	.nav-title{
 		font-size: 2.5em;
 	}
-}
+} */
 [id]:target{
 	margin-top: -70px;
 	border-top: 70px solid transparent;
@@ -710,11 +709,10 @@ body.essay .main{
 
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
 
-.topnav{
+/* .topnav{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 600;
 	background-color: #e3e3e3;
-	/* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -724,9 +722,9 @@ body.essay .main{
 	top: 0;
 	right: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 1; */
 	/*padding-top: .3em;*/ /* Needed for Google Translate */
-}
+/* }
 @media only screen and (min-width: 992px){
 	.topnav{
 		font-size: 1.1em;
@@ -801,7 +799,7 @@ body.essay .main{
 	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .topnav ul li .dropdown .vh{
-	position: absolute !important; /* !important in original code */
+	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
 }
@@ -813,12 +811,12 @@ a::after{
 	font-family: 'FontAwesome';
 }
 label::after{
-	content: '\f0da'; /* closed folder */
+	content: '\f0da';
 	display: inline-block;
 	width: 0.5em;
 }
 input:checked + label::after{
-	content: '\f0d7'; /* open folder */
+	content: '\f0d7';
 }
 .topnav ul li .dropdown label.dropbtn{
 	padding: 10px 10px;
@@ -830,7 +828,7 @@ input:checked + label::after{
 }
 [type="checkbox"]:checked + label{
 	color: whitesmoke;
-	background-color: #424242; /*dark brown*/
+	background-color: #424242;
 }
 :checked + label .expanded-text{
 	display: inline;
@@ -866,7 +864,7 @@ input:checked + label::after{
 }
 .topnav ul li .dropdown .dropdown-content ul li{
 	font-size: .85em;
-	background-color: #E3E3E3; /*light gray*/
+	background-color: #E3E3E3;
 	display: block;
 }
 .topnav ul li .dropdown .dropdown-content ul li:first-of-type,
@@ -900,7 +898,7 @@ input:checked + label::after{
 .topnav ul li .dropdown .dropdown-content ul li:focus,
 .topnav ul li .dropdown .dropdown-content ul li:focus-within a{
 	color: whitesmoke;
-	background-color: #858585; /*dark gray*/
+	background-color: #858585;
 	outline: none;
 	border-radius: unset;
 	-webkit-border-radius: unset;
@@ -920,7 +918,7 @@ input:checked + label::after{
 }
 .topnav ul li .dropdown .dropdown-content ul li a:hover{
 	color: whitesmoke;
-}
+} */
 /* HTML hierarchy for topnav and color values */
 /*
 .topnav
@@ -949,12 +947,12 @@ background-color: #E3E3E3; [light gray]
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 /* The following prevents overlay from appearing above 768px */
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	#nav3{
 		display: none !important;
 		visibility: hidden;
 	}
-}
+} */
 body.fixed-nav .overlay .menu .nav-title,
 body.fixed-nav .overlay .menu .close-title{
 	color: whitesmoke;

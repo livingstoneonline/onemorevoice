@@ -10,54 +10,54 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 	width: 100%;
 	text-align: center;
-    min-height: 2em;
+    min-height: 2.4em;
 	top: 0;
 	position: fixed;
 	z-index: 1;
 }
-#nav2{
+.navigation a,
+.navigation a:hover,
+.navigation a:focus{
+    color: #191716;
+    text-decoration: none;
+}
+#nav2,
+#nav3{
 	position: absolute;
     left: 0;
     width: 100%;
     display: block;
 }
-#nav2 .home{
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 1.2em;
-    padding: .4em 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-}
-#nav2 a img{
-    border: none;
-    height: 1.6em;
-	width: 1.6em;
-    padding: .2em .3em;
+a#nav2 img{
+    height: 1.8em;
+	width: 1.8em;
     float: left;
-}
-#nav2 a,
-#nav2 a:hover,
-#nav2 a:focus{
-    color: #191716;
-    text-decoration: none;
 }
 #nav2 a:hover img,
 #nav2 a:focus img{
     border: none;
 }
-#nav4{
+a#nav3 .home{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.4em;
+    padding: .4em 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+a#nav5{
     position: absolute;
     right: 0;
 }
-#nav4 .fa-bars{
-    font-size: 1.4em;
+a#nav5 .fa-bars{
+    font-size: 1.6em;
     float: right;
     padding: .2em .3em;
 }
-#nav4 a,
-#nav4 a:hover,
-#nav4 a:focus{
+a#nav5,
+a:hover#nav5,
+a:focus#nav5{
     color: #191716;
     text-decoration: none;
 }

@@ -714,7 +714,10 @@ body.essay .main{
 	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 600;
 	background-color: #e3e3e3;
+	/* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding-top: 0;
 	width: 100%;
 	text-align: center;
@@ -765,7 +768,7 @@ body.essay .main{
 	margin: 0 auto;
 }
 .topnav ul li{
-	font-size: 1.1em;
+	font-size: 1em;
 	display: inline-block;
 	position: relative;
 }

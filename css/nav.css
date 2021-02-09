@@ -7,12 +7,23 @@ light gray #e3e3e3;
 dark gray #858585;
 dark gray (alt) #404040;
 dark brown #424242;
-near black #525252; */
+near black #0b0b0b; */
+
+/* 
+color 
+#0b|0b0b; (black)
+#ff|ffff; (white)
+
+background-color:
+#e3|e3e3; (gray)
+#6e|6e6e; (dark gray)
+#0b|0b0b;
+*/
 
 .navigation{
 	font: 16px 'source_sans_proregular';
     font-weight: 600;
-	color: #191716;
+	color: #0b0b0b;
 	background-color: #e3e3e3;
 	text-align: center;
 	line-height: 1em;
@@ -30,7 +41,6 @@ near black #525252; */
 }
 @media only screen and (min-width: 768px){
     .navigation{
-        height: 2.8em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -39,7 +49,7 @@ near black #525252; */
 .navigation a,
 .navigation a:hover,
 .navigation a:focus{
-    color: #191716;
+    color: #0b0b0b;
 	text-decoration: none;
 }
 .nav-wrapper{
@@ -51,10 +61,10 @@ near black #525252; */
 }
 #nav1 a{
 	font-size: 1em;
-	color: white;
-	background: #191716;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
+	color: #ffffff;
+	background: #0b0b0b;
+	border-right: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
@@ -155,7 +165,7 @@ near black #525252; */
     }
 }
 a#nav5{
-    color: #191716;
+    color: #0b0b0b;
     text-decoration: none;
 }
 a#nav5:hover,
@@ -185,27 +195,27 @@ a#nav5:focus{
 	}
 }
 #nav4 li{
+	font-size: 1.05em;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 #nav4 li:hover,
+#nav4 li:focus,
 #nav4 li:focus-within{
-	color: whitesmoke;
-	background-color: #424242;
+	color: #ffffff;
+	background-color: #0b0b0b;
 }
 #nav4 li a{
-	color: black;
+	color: #0b0b0b;
     text-decoration: none;
-	padding: 10px;
+	padding: 10px 12px;
 }
-#nav4 li:hover a,
-#nav4 li:focus-within a,
 #nav4 li a:hover,
 #nav4 li a:focus{
-	color: whitesmoke;
-	background-color: #424242;
+	color: #ffffff;
+	background-color: #0b0b0b;
     text-decoration: underline;
 }
 #nav4 li .dropdown .vh{
@@ -229,20 +239,14 @@ label::after{
 input:checked + label::after{
 	content: '\f0d7';
 }
-
-/* Done to here */
-
 #nav4 li .dropdown label.dropbtn{
-	padding: 10px;
+	padding: 15px 12px;
 	border: none;
-	/* border-radius: 7px 7px 0 0;
-	-webkit-border-radius: 7px 7px 0 0;
-	-moz-border-radius: 7px 7px 0 0; */
 	outline: none;
 }
 [type="checkbox"]:checked + label{
-	color: whitesmoke;
-	background-color: #424242;
+	color: #ffffff;
+	background-color: #0b0b0b;
 }
 :checked + label .expanded-text{
 	display: inline;
@@ -268,62 +272,36 @@ input:checked + label::after{
 }
 #nav4 li .dropdown .dropdown-content ul{
 	text-align: left;
-	min-width: 140px;
+	min-width: 150px;
 	padding: 0;
-	/* box-shadow: 0 4px 6px -6px #222;
-	-webkit-box-shadow: 0 4px 6px -6px #222;
-	-moz-box-shadow: 0 4px 6px -6px #222; */
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-right: 1px solid rgba(0, 0, 0, 0.24);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+	border-left: 1px solid rgba(0, 0, 0, 0.24);
 	z-index: 1;
 	position: absolute;
 }
 #nav4 li .dropdown .dropdown-content ul li{
-	font-size: .85em;
-	background-color: #E3E3E3;
+	font-size: .95em;
+	color: #ffffff;
+	background-color: #6e6e6e;
 	display: block;
 }
-#nav4 li .dropdown .dropdown-content ul li:first-of-type,
-#nav4 li .dropdown .dropdown-content ul li:first-of-type:hover,
-#nav4 li .dropdown .dropdown-content ul li:first-of-type:hover a,
-#nav4 li .dropdown .dropdown-content ul li:first-of-type:focus,
-#nav4 li .dropdown .dropdown-content ul li:first-of-type:focus-within a{
-    /* border-radius: 0 5px 0 0;
-    -webkit-border-radius: 0 5px 0 0;
-	-moz-border-radius: 0 5px 0 0; */
-}
-#nav4 li .dropdown .dropdown-content ul li:last-of-type,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:hover,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:hover a,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus-within a{
-    /* border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-	-moz-border-radius: 0 0 5px 5px; */
-}
 #nav4 li .dropdown .dropdown-content ul li:last-of-type{
-	padding-bottom: .5em;
-}
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:hover,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus-within{
-	padding-bottom: 0;
+	padding-bottom: .2em;
 }
 #nav4 li .dropdown .dropdown-content ul li:hover,
 #nav4 li .dropdown .dropdown-content ul li:hover a,
 #nav4 li .dropdown .dropdown-content ul li:focus,
 #nav4 li .dropdown .dropdown-content ul li:focus-within a{
-	color: whitesmoke;
-	background-color: #858585;
+	background-color: #e3e3e3;
 	outline: none;
-	/* border-radius: unset;
-	-webkit-border-radius: unset;
-	-moz-border-radius: unset; */
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 #nav4 li .dropdown .dropdown-content ul li a,
 #nav4 li .dropdown .dropdown-content ul li a:visited{
-	color: black;
+	color: #ffffff;
     padding: .75em;
 }
 #nav4 li .dropdown .dropdown-content ul li:last-of-type a,
@@ -331,8 +309,10 @@ input:checked + label::after{
 	padding-bottom: .9em;
 }
 #nav4 li .dropdown .dropdown-content ul li a:hover{
-	color: whitesmoke;
+	color: #0b0b0b;
 }
+
+
 
 /* @media only screen and (min-width: 768px){
 	header,
@@ -591,7 +571,7 @@ input:checked + label::after{
 }
 .navigation ul li .dropdown .dropdown-content ul li{
 	font-size: .85em;
-	background-color: #E3E3E3;
+	background-color: #e3e3e3;
 	display: block;
 }
 .navigation ul li .dropdown .dropdown-content ul li:first-of-type,
@@ -665,7 +645,7 @@ color: black;
 color: whitesmoke;
 background-color: #424242; [dark brown]
 background-color: #858585; [dark gray]
-background-color: #E3E3E3; [light gray]
+background-color: #e3e3e3; [light gray]
 */
 
 

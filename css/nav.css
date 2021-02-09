@@ -42,18 +42,48 @@ near black #525252; */
 .navigation a:hover,
 .navigation a:focus{
     color: #191716;
-    text-decoration: none;
 }
-#nav1,
 #nav2,
-#nav3,
 #nav4{
 	position: absolute;
     left: 0;
     display: block;
 }
+#nav1,
 #nav3{
     display: contents;
+}
+#nav1 a{
+	font-size: 1.1em;
+	color: white;
+	background: #424242;
+	padding: 6px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	margin-top: -.5em; 
+    /* Needed for Google Translate */
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	z-index: 99;
+	transition: top 1s ease-out;
+	-webkit-transition: top 1s ease-out;
+}
+#nav1 a:focus{
+	outline-color: transparent;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	-webkit-transition: top .4s ease-in;
+	transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#nav1 a:focus{
+		position: absolute;
+	}
 }
 a#nav2 img{
     height: 1.8em;

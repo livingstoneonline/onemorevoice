@@ -1,23 +1,8 @@
-/* site-blue #204A79;
-light-blue #dbe6f5;
-site-red #902D27;
-light-red: #b53831;
-whitesmoke;
-light gray #e3e3e3;
-dark gray #858585;
-dark gray (alt) #404040;
-dark brown #424242;
-near black #0b0b0b; */
-
 /* 
-color 
-#0b|0b0b; (black)
-#ff|ffff; (white)
-
-background-color:
-#e3|e3e3; (gray)
-#6e|6e6e; (dark gray)
-#0b|0b0b;
+(black) #0b|0b0b; 
+(gray) #e3|e3e3;
+(white) #ff|ffff;
+(light blue) #c4|d8ef;
 */
 
 .navigation{
@@ -57,14 +42,14 @@ background-color:
 	position: relative;
 	display: flex;
 	align-items: center;
-	
 }
+
 #nav1 a{
 	font-size: 1em;
-	color: #ffffff;
-	background: #0b0b0b;
-	border-right: 2px solid #ffffff;
-	border-bottom: 2px solid #ffffff;
+	color: #0b0b0b;
+	background: #c4d8ef;
+	border-right: 2px solid #0b0b0b;
+	border-bottom: 2px solid #0b0b0b;
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
@@ -129,7 +114,6 @@ background-color:
 		transform: unset;
 	}
 }
-
 #nav3 h1{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.4em;
@@ -143,34 +127,6 @@ background-color:
 #nav3 h1:hover,
 #nav3 h1:focus{
     text-decoration: underline;
-}
-
-#nav5{
-    position: absolute;
-    right: 1em;
-	padding: .15em;
-}
-#nav5 .fa-bars{
-    font-size: 1.6em;
-}
-@media only screen and (min-width: 480px){
-    #nav5 .fa-bars{
-        font-size: 1.8em;
-    }
-}
-@media only screen and (min-width: 992px){
-    #nav5 .fa-bars{
-        display: none;
-        visibility: hidden;
-    }
-}
-a#nav5{
-    color: #0b0b0b;
-    text-decoration: none;
-}
-a#nav5:hover,
-a#nav5:focus{
-    outline: 2px solid #204A79;
 }
 
 #nav4{
@@ -201,22 +157,22 @@ a#nav5:focus{
 	align-items: center;
 	position: relative;
 }
-#nav4 li:hover,
-#nav4 li:focus,
-#nav4 li:focus-within{
-	color: #ffffff;
-	background-color: #0b0b0b;
-}
 #nav4 li a{
-	color: #0b0b0b;
-    text-decoration: none;
 	padding: 10px 12px;
 }
 #nav4 li a:hover,
 #nav4 li a:focus{
-	color: #ffffff;
-	background-color: #0b0b0b;
     text-decoration: underline;
+}
+/* main nav links */
+#nav4 li:hover,
+#nav4 li:focus,
+#nav4 li:focus-within,
+#nav4 li a:hover,
+#nav4 li a:focus,
+[type="checkbox"]:checked + label{
+	color: #0b0b0b;
+	background-color: #c4d8ef;
 }
 #nav4 li .dropdown .vh{
 	position: absolute !important; 
@@ -233,20 +189,16 @@ a::after{
 }
 label::after{
 	content: '\f0da';
-	display: inline-block;
 	width: 0.5em;
+	display: inline-block;
 }
 input:checked + label::after{
 	content: '\f0d7';
 }
 #nav4 li .dropdown label.dropbtn{
-	padding: 15px 12px;
+	padding: 14px 12px;
 	border: none;
 	outline: none;
-}
-[type="checkbox"]:checked + label{
-	color: #ffffff;
-	background-color: #0b0b0b;
 }
 :checked + label .expanded-text{
 	display: inline;
@@ -285,8 +237,7 @@ input:checked + label::after{
 }
 #nav4 li .dropdown .dropdown-content ul li{
 	font-size: .95em;
-	color: #ffffff;
-	background-color: #6e6e6e;
+	background-color: #ffffff;
 	display: block;
 }
 #nav4 li .dropdown .dropdown-content ul li:last-of-type{
@@ -296,13 +247,12 @@ input:checked + label::after{
 #nav4 li .dropdown .dropdown-content ul li:hover a,
 #nav4 li .dropdown .dropdown-content ul li:focus,
 #nav4 li .dropdown .dropdown-content ul li:focus-within a{
-	background-color: #e3e3e3;
-	outline: none;
+	background-color: #bfbfbf;
 }
 #nav4 li .dropdown .dropdown-content ul li a,
 #nav4 li .dropdown .dropdown-content ul li a:visited{
-	color: #ffffff;
-    padding: .75em;
+	color: #0b0b0b;
+    padding: .8em;
 }
 #nav4 li .dropdown .dropdown-content ul li:last-of-type a,
 #nav4 li .dropdown .dropdown-content ul li:last-of-type a:visited{
@@ -312,9 +262,36 @@ input:checked + label::after{
 	color: #0b0b0b;
 }
 
+#nav5{
+    position: absolute;
+    right: 1em;
+	padding: .15em;
+}
+#nav5 .fa-bars{
+    font-size: 1.6em;
+}
+@media only screen and (min-width: 480px){
+    #nav5 .fa-bars{
+        font-size: 1.8em;
+    }
+}
+@media only screen and (min-width: 992px){
+    #nav5 .fa-bars{
+        display: none;
+        visibility: hidden;
+    }
+}
+a#nav5{
+    color: #0b0b0b;
+    text-decoration: none;
+}
+a#nav5:hover,
+a#nav5:focus{
+    outline: 2px solid #204A79;
+}
 
 
-/* @media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 	header,
 	main,
 	aside{
@@ -344,7 +321,8 @@ body.transcription header{
 @media only screen and (min-width: 768px){
 	header,
     body.transcription header{
-        margin: 2em auto;
+        margin-top: 4.5em;
+		margin-bottom: 2em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -411,7 +389,7 @@ footer{
         top: 4em;
         left: 1em;
     }
-} */
+}
 
 
 /* 1.6. Skip to Main */

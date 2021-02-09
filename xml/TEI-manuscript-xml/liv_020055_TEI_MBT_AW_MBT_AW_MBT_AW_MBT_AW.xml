@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020055">
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="https://tei-c.org/ns/1.0/" xml:id="liv_020055">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-<!--Crowther, Rev. Samuel. “Letter to Henry Venn, 27 February 1867,” Church Missionary Society Archive, University of Birmingham Special Collections, CMS/B/OMS/C A3/O4 226-->
 				<title>Letter to Henry Venn</title>
 				<!-- Title without date -->
 				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
@@ -385,16 +384,47 @@
     </div>
 	    
 	   <div> 
+	   	
+<!-- Red div on inside that runs the length of the page.
+    Black div on outside thta runs from "There was lying..." to end of page-->
+	   	
+<!--   	
+.marginal1.liv_020055_0004{
+   	border-right: 1px #902D27 solid;
+   	margin-right: 4.2em;
+	border-radius: 0 26px 0 0;
+}
+.marginal2.liv_020055_0004{
+	border-right: 1px #3d4245 solid;
+	margin-right: .7em;
+	border-radius: 0 40px 0 0;
+	position: relative;
+}
+.archival.liv_020055_0004{
+	font-size: .9em;
+	position: absolute;
+	right: -7em;
+	bottom: 1.5em;
+	transform: rotate(312deg);
+	-ms-transform: rotate(312deg);
+	-moz-transform: rotate(312deg);
+	-webkit-transform: rotate(312deg);
+	-o-transform: rotate(312deg);
+}
+	   	-->
+	   	
 <pb facs="liv_020055_0004" n="0004"/>
-<lb/><p>it complete, one of those necessaries was the want of a large
+   	<div n="marginal1 liv_020055_0004">
+<lb/><p rend="no-indent">it complete, one of those necessaries was the want of a large
 <lb/>bell to announce the time of school to the clindren in <settlement>Bonny Town</settlement>,
 <lb/>but this want was supplied in a way I least expected.</p>
-<lb/><p>There was lying on the ground in <settlement>Bonny Town</settlement>, a very large
-<lb/>bell 3 1/2<!-- half needs to be styled? MBT --> feet in diameter, bearing this inscription&#8211;
-<lb/><space extent="1" unit="words"/>"<persName>William Dobson</persName>, founder, <settlement>Downham <!-- Double-checked the location. Apparently, William Dobson of Downham Market produced relatively high quality bells: http://www.hibberts.co.uk/th_rediscover.htm	MBT --></settlement>, <region>Norfolk</region>, <country>England</country>.
+   	<div n="marginal2 liv_020055_0004">
+<p>There was lying on the ground in <settlement>Bonny Town</settlement>, a very large
+<lb/>bell 3&#189;<!-- half needs to be styled? MBT --> feet in diameter, bearing this inscription&#8211;
+<lb/><space extent="1" unit="words"/>"<persName>William Dobson</persName>, founder, <settlement><choice><orig>Down Ham</orig><reg>Downham</reg></choice> <!-- Double-checked the location. Apparently, William Dobson of Downham Market produced relatively high quality bells: http://www.hibberts.co.uk/th_rediscover.htm	MBT --></settlement>, <region>Norfolk</region>, <country>England</country>.
 <lb/><space extent="1" unit="words"/>This Bell was cast for <persName>Opoboo Foobra</persName>, King of
 <lb/><space extent="1" unit="words"/>Grand <settlement>Bonny</settlement>, in the year <date when="1824">1824</date>."</p>
-<lb/><p rend="no-indent"><add place="marginleft">X</add> <space extent="3" unit="chars"/>Little did I think this Bell could be made use of again
+<lb/><p rend="no-indent"><add place="inspace" rend="large">X</add> <space extent="2" unit="chars"/>Little did I think this Bell could be made use of again
 <lb/>even in <settlement>Bonny Town</settlement> where it had been lying on the ground
 <lb/>for years, and no one seemed to have any disposition to
 <lb/>trouble himself in putting up such an unweildy thing,
@@ -406,11 +436,11 @@
 <lb/>own expense, and so he did. He bought two stout masts
 <lb/>well coppered at the bottom to protect them from decay, on
 <lb/>which the Bell was put up; it has cost him already
-<lb/>&#163;14. sterling, and as he is about putting over it a roof
+<lb/>&#163;17. sterling, and as he is about putting over it a roof
 <lb/>of corrugated galvanized iron sheets it will not cost him
 <lb/>less than 	&#163;24. spent for the benefit of the mission.</p>
 <lb/><p>I was told by <persName>King George</persName>, that the fact of the Bell being
-<lb/>removed out of <settlement></settlement> to the mission station without
+<lb/>removed out of <settlement>Bonny Town</settlement> to the mission station without
 <lb/>any opposition from the priests, chiefs, and elders was a <del extent="1" unit="words">great</del>
 <lb/>sign that a great change is taking place here for the better,
 <lb/>because such relics of their former king are generally regarded
@@ -419,15 +449,44 @@
 <lb/>removal to the mission station and its use, by any person.</p>
 <lb/><p>After <persName>Oko Jumbo</persName> had gone through the trouble and
 <lb/>expense of fixing the bell, in a few days, the cast iron
-<lb/><space extent="12" unit="words"/><fw type="catch">stem</fw></p>
-	   </div>
-		
-		<div>	
+<lb/><space extent="11" unit="words"/><fw type="catch">stem</fw><seg n="archival liv_020055_0004">C.A3/O 4/226</seg></p></div>
+		</div>
+		</div>
+	   	<div>	
 			<fw rend="center">(<add place="inline" rend="gray">3</add>4.)</fw>
 		</div>
 		
-		<div>
+<!-- Black box div from top of the page to  "...substantially rebuilt"
+		Red box on interior of black box.-->
+
+<!-- 
+.box1.liv_020055_0005{
+    border-left: 1px #3d4245 solid;
+    border-bottom: 1px #3d4245 solid;
+    margin-left: -.25em;
+    padding-left: .25em;
+	margin-bottom: .35em;
+}
+might need this code to modify the bottom of the box border
+
+.par1.liv_020055_0005{
+	border-left: 2px #3d4245 solid;
+	border-radius: 1.6em;
+	-webkit-border-radius: 1.6em;
+	-moz-border-radius: 1.6em;
+	margin-left: -.25em;
+	padding: .25em 0 .25em .25em;
+}
+
+.marginal1.liv_020055_0005{
+    border-left: 1px #902D27 solid;
+    margin-left: -1em;
+    padding-left: 1em;
+}
+		-->
 <pb facs="liv_020055_0005" n="0005"/>
+	<div n="box1.liv_020055_0005">
+	<div n="marginal1.liv_020055_0005">
 <lb/><p>stem of the heavy clapper, being rusty from having lain so long
 <lb/>on the corroding sand, in the act of being struck, snapped asunder,
 <lb/>the hammer came down, and the bell was tongueless; but <persName>Oko
@@ -446,10 +505,14 @@
 <lb/>after his example, one of whom is the wealthy influential
 <lb/>head of the opposite division and patron of the gods, through
 <lb/>whose means the Temple of skulls was so recently and <w>sub-
-<lb/>stantially</w> rebuilt.&#8211;</p> 
+<lb/>stantially</w> rebuilt.&#8211;</p>
+	</div>
+	</div> 
+	<div>
 <lb/><p>The Native Teachers<!-- orgname? MBT --> <!-- unclear: Messrs? --> Webber and Carew are very <w>per-
 <lb/>severing</w> in their work, which can eb seen by <add place="above">their</add> <add place="below">^</add> taking these chiefs
 <lb/>in lessons at their houses almost daily after school hours.</p>
+		<div n="marginal1.liv_020055_0005">
 <lb/><!-- unclear word in left margin --><p>The public examination of the school children took place  
 <lb/>yesterday the <date when="1878-02-26">26<hi rend="sup underline">th</hi></date>, to which the attendance of the King, the
 <lb/>fathers and chiefs was invited, but owing to the sickness of some,
@@ -461,15 +524,13 @@
 <lb/>upon to go through the examinations, so as not to wear out the
 <lb/>patience of the chiefs who are not in the habit of sitting silently
 <lb/>so long without some amusing talk of thier own.</p>
-	</div>
-	
+	</div>	
 	<div>	
 		<fw rend="center">(<add place="inline" rend="gray">3</add>5.)</fw>
 	</div>
-	
-	<div> 
+		
 <pb facs="liv_020055_0006" n="0006"/>
-	
+
 <pb facs="liv_020055_0007" n="0007"/>
 
 <pb facs="liv_020055_0008" n="0008"/>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="https://tei-c.org/ns/1.0/" xml:id="liv_020063">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+
+<!-- Fill out authors, comp date, and place later -->
+
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“The General and the Caffre Chief”</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘The General and the Caffre Chief’</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“The General and the Caffre Chief,” 1 March 1853</title>
+				<!-- Title, date -->
+				<author>Moshoeshoe, c.1786-1870</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first"></author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized"></author>
+				<!-- First author only: Forename Surname -->
+				<author></author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized"></author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="CM">
+					<name>Caitlin Matheis</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020063</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://www.gale.com/c/the-times-digital-archive">The Times Digital Archive</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="narrow">
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>The Times</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="pages">8-9</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<date>1 March 1853</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“The General and the Caffre Chief”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="M">Moshoeshoe, c.1786-1870</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="publication" when="1853-03-01">1 March 1853</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace"></placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-02-09" who="#CM"></change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div>
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020062_0001" n="0001"/>
+<!-- <lb/> --><p>THE GENERAL AND THE CAFFRE CHIEF.</p>
+
+<!-- <lb/> --><p>(From the Cape Town Mail Extra.)</p>
+
+<!-- <lb/> --><p>Foremost in importance among the events of the past 
+<!-- <lb/> -->month, we have to notice the expedition of General Cath- 
+<!-- <lb/> -->cart into the country of the Basuta chief Moshesh, and 
+<!-- <lb/> -->the sanguinary battle of Berea; followed by the submission 
+<!-- <lb/> -->of that chief and the prompt return of the troops into the 
+<!-- <lb/> -->colony.</p> 
+
+<!-- <lb/> --><p>Having issued the proclamation which appeared in our 
+<!-- <lb/> -->last summary-declaring that his object was, "not to make 
+<!-- <lb/> -->war, but to settle all disputes, and to establish the blessings 
+<!-- <lb/> -->of peace," and commanding "all chiefs and men of all 
+<!-- <lb/> -->classes and tribes" to remain quiet and abide by his judg- 
+<!-- <lb/> -->ment and decision-General Cathcart proceeded across the 
+<!-- <lb/> -->Orange River into the Sovereignty, and on the lst of De- 
+<!-- <lb/> -->cember encamped at Commissie Drift, on the Caledon River, 
+<!-- <lb/> -->where he was joined by Colonel Eyre, 73d Regiment, and 
+<!-- <lb/> -->Colonel Duff, 74th, vith their respective columns; the 
+<!-- <lb/> -->whole force, including the column under his Excellenecy's 
+<!-- <lb/> -->immediate command, amounting to about 2,500 men of all 
+<!-- <lb/> -->arms. Here, in reply to an addrese presented to him by the 
+<!-- <lb/> -->inhabitants of Caledon, General Cathcart announced that 
+<!-- <lb/> -->he had summoned the chiefs Moshesh, Molitsani, Sikonyella, 
+<!-- <lb/> -->Moroko, and Gert Taaybosch to meet him at Platberg on,
+<!-- <lb/> -->the 13th, and that each of those chiefs would be compelled 
+<!-- <lb/> -->to pay the amount of cattle which the Commissioners, after 
+<!-- <lb/> -->due investigation, should think fit to award. On the 8th 
+<!-- <lb/> -->the camp moved forward towards Platberg, and was joined 
+<!-- <lb/> -->by a dctachment of the 45th Regiment, under Lieutenant 
+<!-- <lb/> -->Howard, with some fieldpieces; while 40 burghers, of a 
+<!-- <lb/> -->neighbourirg field-cornetey, turned out to protect the 
+<!-- <lb/> -->border, in the rear of the Governor's operations. Un- 
+<!-- <lb/> -->fortunatelv, during the first day's march, his Excellency 
+<!-- <lb/> -->lost the valuable aid of his military secretary, Colonel Se- 
+<!-- <lb/> -->mour, who was thrown violently from his horse, by which 
+<!-- <lb/> -->his left shoulder was fractured, and he had consequently to 
+<!-- <lb/> -->be conveyed in a cart to the neighbouring village of Smith- 
+<!-- <lb/> -->field.</p>
+
+<!-- <lb/> --><p>On the morning of the 13th his Excellency arrived at 
+<!-- <lb/> -->Platberg, which he found deserted by the natives. In the 
+<!-- <lb/> -->evening two young chiefs, sons of Moshesh, came to the 
+<!-- <lb/> -->camp, but General Cathcrat refused to see them, and next 
+<!-- <lb/> -->morning they returned to their father's "great place," 
+<!-- <lb/> -->Thaba Bossigo, accompanied by Mr. Commissioner Owen 
+<!-- <lb/> -->who was the bearer of the following message:-</p> 
+
+<!-- <lb/> --><p>"Platbrg, Dec. 13, 1852.</p>
+
+<!-- <lb/> --><p>"Chief Moshesh,-When I was sent by the Queen to be 
+<!-- <lb/> -->Governor, and to command her army in this part of the 
+<!-- <lb/> -->world, six mouths past, I wrote to acquaint you and the 
+<!-- <lb/> -->other chiefs, and I told you that I would visit you as soon 
+<!-- <lb/> -->as the rebellion of the Gaikas and Tambookies and the Hot- 
+<!-- <lb/> -->tentots was ended. This has been done, as you have no 
+<!-- <lb/> -->doubt learnt, and I now visit this country as I promised, 
+<!-- <lb/> -->and desire to see you and the other chiefs, as my friends, at 
+<!-- <lb/> -->my camp at Platberg, without delay.</p> 
+
+<!-- <lb/> --><p>"My proclamation will have told you the righteous cause 
+<!-- <lb/> -->in which I am come and what it is my duty to do.</p> 
+
+<!-- <lb/> --><p>"As I told you in my letter, I now hope my visit to you 
+<!-- <lb/> -->may be in peace; but I must do justice, whether it be by 
+<!-- <lb/> -->war or in peace. I had been told that you are a great chief 
+<!-- <lb/> -->and a good man, but I find that though you were a man of 
+<!-- <lb/> -->good words you have not done vhat you promised.</p> 
+
+<!-- <lb/> --><p>"I find, not only that you have not paid the fine of cattle 
+<!-- <lb/> -->imposed on you by the Assistant Commissioners, Major 
+<!-- <lb/> -->Hogge and Mr. Owen, and which you promised to pay for 
+<!-- <lb/> -->the robberies of cattle and horses committed by your people 
+<!-- <lb/> -->and with your knowledge, up to the time of your agreement 
+<!-- <lb/> -->with them; but since then you and the people over whom 
+<!-- <lb/> -->you rule, including Molitsani and Morosi and your own son. 
+<!-- <lb/> -->Letsea, with their people, and certain robbers called Jan 
+<!-- <lb/> -->Letell and Bashuli, have been stealing cattle from your 
+<!-- <lb/> -->neighbours, and otherwise doing them harm. Even mur- 
+<!-- <lb/> -->ders have been committed by them, and this village has been 
+<!-- <lb/> -->plundered and destroyed. In short, the Basuta people un- 
+<!-- <lb/> -->der your rule have become a nation of thieves.</p> 
+
+<!-- <lb/> --><p>"This state of things must not be, and I have come to 
+<!-- <lb/> -->put an end to it, and to restore peace between you and your 
+<!-- <lb/> -->neighbours if I can, and if not, to put you and your people 
+<!-- <lb/> -->out of the way of doing them wrong, and this I must do 
+<!-- <lb/> -->promptly.</p> 
+
+<!-- <lb/> --><p>"I will not therefore stop to talk, but tell you now once 
+<!-- <lb/> -->for all, that having carefully inquired into the business, and 
+<!-- <lb/> -->judging as justly and as mercifully as I can what is the 
+<!-- <lb/> -->amount of cattle and damage you should be required to re- 
+<!-- <lb/> -->store, I demand of you 10,000 head of cattle and 1,000 horses 
+<!-- <lb/> -->to be delivered over to the British resident at this place, 
+<!-- <lb/> -->within three days' time, in order to be restored to those from 
+<!-- <lb/> -->whom they have been stolen.</p>
+
+<!-- <lb/> --><p>"If this be not done, I must go and take either cattle or 
+<!-- <lb/> -->other things from you and your people, and from Molitsani 
+<!-- <lb/> -->and his people, and if resistance be made it will then be 
+<!-- <lb/> -->war between us, and I must then take three times the 
+<!-- <lb/> -->amount of cattle, as well as kill many of your people and 
+<!-- <lb/> -->destroy their dwellings and kraals, which I should be very 
+<!-- <lb/> -->sorry to be obliged to do. But if this cattle be paid within 
+<!-- <lb/> -->three days, and that I am assured peace is restored, I will 
+<!-- <lb/> -->take the army back again in peace.</p> 
+
+<!-- <lb/> --><p>"Now, Chief, if you are an honest man, it is for you to 
+<!-- <lb/> -->pay the just fine, which is not more than the cattle stolen, 
+<!-- <lb/> -->and save yourself and your people from ruin, or else pre- 
+<!-- <lb/> -->pare for war, for on the fourth day I must bring you to ac- 
+<!-- <lb/> -->count.</p> 
+
+<!-- <lb/> --><p>"You must also pay back to Sikonyella and Moroka what 
+<!-- <lb/> -->you have stolen from them, and be at peace with them. 
+<!-- <lb/> -->Carolus Batjee and his people must return to Platberg, and 
+<!-- <lb/> -->the boundaries fixed by Governor Sir Harry Smith must be 
+<!-- <lb/> -->respected.</p> 
+
+<!-- <lb/> --><p>"When all this is done, you must remain at peace with 
+<!-- <lb/> -->all your neighbours, and the Basutas must cease to be a 
+<!-- <lb/> -->nation of thieves, for if I come again it will not be to talk. 
+<!-- <lb/> -->but to make an end of the Basuta nation, as has been done 
+<!-- <lb/> -->of the Gaikas and Tambookie tribe of Mapassa.</p>
+
+<!-- <lb/> --><p>"G. CATHCART."</p>
+
+<!-- <lb/> --><p>Next day Moshesh himself made his appearance, and an 
+<!-- <lb/> -->interview took place between him and the General, highly 
+<!-- <lb/> -->characteristicon both sides. The "talk" is thus reported in 
+<!-- <lb/> -->an official notice afterwards published:-</p> 
+
+<!-- <lb/> --><p>"Governor.-I am glad to see you and to make your ac- 
+<!-- <lb/> -->quaintance.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-I am glad to see the governor, as since his 
+<!-- <lb/> -->arrival in the country I have been expecting a visit from 
+<!-- <lb/> -->him, which his letter in October last led me to expect.</p> 
+
+<!-- <lb/> --><p>"Governor.-I told you in that letter that I hoped to 
+<!-- <lb/> -->meet you in peace, and I still hope so, as I look to you as 
+<!-- <lb/> -->the Great Chief in this part.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-I hope so, too; for peace is like the rain that 
+<!-- <lb/> -->makes the grass grow, while war is like the wind which 
+<!-- <lb/> -->dries it up. You are right in looking to me; that is in ac- 
+<!-- <lb/> -->cordance with the treaties.</p> 
+
+<!-- <lb/> --><p>"Governor.-I will not now talk much, but wish to know 
+<!-- <lb/> -->whether you received my message yesterday, in which I 
+<!-- <lb/> -->made the demand of cattle and horses? I have nothing to 
+<!-- <lb/> -->alter in that letter.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-Do you mean the letter I received from Mr. 
+<!-- <lb/> -->Owen?</p> 
+
+<!-- <lb/> --><p>"Governor.-Yes.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-I received the letter, but do not know where 
+<!-- <lb/> -->I shall get the cattle from. Am I to understand that the 
+<!-- <lb/> -->10,000 head demanded are a fine imposed for the thefts com- 
+<!-- <lb/> -->mitted by my people, in addition to the cattle stolen?</p> 
+
+<!-- <lb/> --><p>"Governor.-I demand but 10,000 head, though your 
+<!-- <lb/> -->people have stolen many more, and I consider this a just 
+<!-- <lb/> -->award. It must be paid in three days.</p>
+
+<!-- <lb/> --><p>"Moshesh.-Do the three days count from yesterday, or 
+<!-- <lb/> -->to-day?</p> 
+
+<!-- <lb/> --><p>"Governor.-To-day is the first of the three.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-The time is short, and the cattle many, will 
+<!-- <lb/> -->you not allow me six days to collect them?</p> 
+
+<!-- <lb/> --><p>"Governor.-You had time given you when Major Hogge 
+<!-- <lb/> -->and Mr. Owen made the first demand, and then promised 
+<!-- <lb/> -->to comply with it, but did not.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-But I was not quite idle. Do not the papers 
+<!-- <lb/> -->in the commissioner's hands show that I collected cattle?</p> 
+
+<!-- <lb/> --><p>"Governor.-They do, but not half of the number de- 
+<!-- <lb/> -->manded.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-That is true, but I have not now control 
+<!-- <lb/> -->enough over my people to induce them to comply with the 
+<!-- <lb/> -->demand, however anxious I may be to do so.</p> 
+
+<!-- <lb/> --><p>"Governor.-If you are not able to collect them, I must 
+<!-- <lb/> -->go and do it, and if any resistance be made it will then be 
+<!-- <lb/> -->war, and I shall not be satisfied with 10,000 head, but shall 
+<!-- <lb/> -->take all I can.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-Do not talk of war, for however anxious I 
+<!-- <lb/> -->may be to avoid it, you know that a dog when beaten will 
+<!-- <lb/> -->show his teeth.</p> 
+
+<!-- <lb/> --><p>"Governor.-It will, therefore, be better that you should 
+<!-- <lb/> -->give up the cattle than that I should go for them.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-I wish for peace; but have the same 
+<!-- <lb/> -->difficulty witb my people that you have in the colony- 
+<!-- <lb/> -->your prisons are never empty, and I have thieves among 
+<!-- <lb/> -->my people.</p> 
+
+<!-- <lb/> --><p>"Governor.-I would, then, recommend you to catch the 
+<!-- <lb/> -->thieves and bring them to me, and I will hang them.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-I do not wish you to hang them, but to talk 
+<!-- <lb/> -->to them, and give them advice. If you hang them they 
+<!-- <lb/> -->cannot talk.</p> 
+
+<!-- <lb/> --><p>"Governor.-If I hang them they cannot steal, and I 
+<!-- <lb/> -->am not going to talk any more. I have said that if you 
+<!-- <lb/> -->do not give up the cattle in three days, I must come and 
+<!-- <lb/> -->take them.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-I beg of you not to talk of war.</p> 
+
+<!-- <lb/> --><p>"Governor.-I have no more to say; I must either leave 
+<!-- <lb/> -->this in peace in three days, or go to Thaba Bossigo. I 
+<!-- <lb/> -->therefore advise you to go and collect the cattle as quickly 
+<!-- <lb/> -->as possible.</p> 
+
+<!-- <lb/> --><p>"Moshesh.-Do not talk of coming to Thaba Bossigo; if 
+<!-- <lb/> -->you do I shall lay the blame on the boers from whom the 
+<!-- <lb/> -->cattle were stolen, and whom I requested to come and 
+<!-- <lb/> -->point out to me their cattle that I might restore them. 
+<!-- <lb/> -->I will go at once and do my best, and, perhaps, God will 
+<!-- <lb/> -->help me.</p> 
+
+<!-- <lb/> --><p>"After leaving his Excellency's tent, but before return- 
+<!-- <lb/> -->ing home, Moshesh sent to request that the day on which 
+<!-- <lb/> -->the interview took place might not count in the three. 
+<!-- <lb/> -->This request his Excellency acceded to."</p> 
+
+<!-- <lb/> --><p>After the action in which Moshesh was defeated, as de- 
+<!-- <lb/> -->scribed in our yesterday's impression, a messenger arrived 
+<!-- <lb/> -->in camp, bearing a flag of truce, and the following letter to 
+<!-- <lb/> -->General Cathcart:-</p> 
+
+<!-- <lb/> --><p>"Thaba Bossigo, Midnight, Dec. 20, 1802.</p> 
+
+<!-- <lb/> --><p>"Your Excellency,-This day you have fought against 
+<!-- <lb/> -->my people and taken much cattle. As the object for which 
+<!-- <lb/> -->you have come is to have a compensation for boers, I beg 
+<!-- <lb/> -->you will be satisfied with what you have taken. I entreat 
+<!-- <lb/> -->peace from you-you have shown your power-you have 
+<!-- <lb/> -->chastised-let it be enough, I pray you; and let me be no
+<!-- <lb/> -->[longer
+<!-- <lb/> -->longer considered an enemy of the Queen. I will try all I 
+<!-- <lb/> -->can to keep my people in order in the future.</p>
+
+
+<!-- <lb/> --><p>"Your humble servant.</p> 
+
+<!-- <lb/> --><p>"MOSHESH."</p>
+
+<!-- <lb/> --><p>To which his Excellency returned the following reply:-</p> 
+
+<!-- <lb/> --><p>"Camp, Caledon River, Dec. 21,1852.</p>
+
+<!-- <lb/> --><p>"Chief Moshesh,-I bave received your letter. The 
+<!-- <lb/> -->words are those of a great chief, and of one who has the 
+<!-- <lb/> -->interests of his people at heart. But I care little for words. 
+<!-- <lb/> -->I judge of men by their actions. I told vou that if you did 
+<!-- <lb/> -->not pay the fine I must go and take it. I am a man who 
+<!-- <lb/> -->never breaks his word, otherwise the Queen would not have 
+<!-- <lb/> -->sent me here. I have taken the fine by force, and I am 
+<!-- <lb/> -->satisfied.</p> 
+
+<!-- <lb/> --><p>"I am not angry with your people for fighting in defence 
+<!-- <lb/> -->of their property; for those who fought-and fought well- 
+<!-- <lb/> -->were not all of them thieves, and I am sorry that many were 
+<!-- <lb/> -->killed. This is your fault; for if you had paid the fine it 
+<!-- <lb/> -->would not have happened. I now desire not to consider 
+<!-- <lb/> -->you, Chief, as an enemy ot the Queen, but I must proclaim 
+<!-- <lb/> -->martial law in the Sovereignty, to give to Commandants 
+<!-- <lb/> -->and Field-Cornets power to make commandoa in a regular 
+<!-- <lb/> -->manner, and, with the consent of the Resident, enter your 
+<!-- <lb/> -->country in search of plundered horses and cattle that may 
+<!-- <lb/> -->be stolen after tbis time. And I expect you to assist them; 
+<!-- <lb/> -->for though you are a great chief, it seems that you either do 
+<!-- <lb/> -->not, or cannot, keep your own people from stealing; and 
+<!-- <lb/> -->among the cattle you sent as part of your tine there were 
+<!-- <lb/> -->three oxen, the property of Mr. Hain, of Bloemfontein, 
+<!-- <lb/> -->stolen since I crossed the Caledon river. Now, therefore, 
+<!-- <lb/> -->Chief Moshesh, I consider your past obligations fulfilled, and 
+   <!-- <lb/> -->that you will take measures for preventing such abuses 
+<!-- <lb/> -->in future.</p> 
+
+<!-- <lb/> --><p>"In the meantime, as the Queen's representative, I sub- 
+scribe myself, your friend,</p> 
+
+<!-- <lb/> --><p>"GEORGE CATHCART.</p> 
+
+<!-- <lb/> --><p>"P.S.-Chief, I shall be giad to see either yourself or 
+<!-- <lb/> -->your sons, in the same friendly manner and in the same 
+<!-- <lb/> -->good faith as befre the fight, at Platberg, to-morrow or 
+<!-- <lb/> -->next day; but I shall now send away the army, and go back 
+<!-- <lb/> -->to the colony in a few days' time."</p>
+
+			</div>
+		</body>
+	</text>
+</TEI>

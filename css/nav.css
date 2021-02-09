@@ -112,6 +112,14 @@ near black #525252; */
 	transform: translate(-50%);
 	position: absolute;
 }
+@media only screen and (min-width: 992px){
+	#nav3{
+		padding-top: .15em;
+		left: 3.5em;
+		transform: unset;
+	}
+}
+
 #nav3 h1{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.4em;
@@ -155,6 +163,176 @@ a#nav5:focus{
     outline: 2px solid #204A79;
 }
 
+#nav4{
+	text-align: center;
+	list-style: none;
+	white-space: nowrap;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	#nav4{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		visibility: visible;
+	}
+}
+#nav4 li{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+#nav4 li:hover,
+#nav4 li:focus-within{
+	color: whitesmoke;
+	background-color: #424242;
+}
+#nav4 li a{
+	color: black;
+    text-decoration: none;
+	padding: 10px;
+}
+#nav4 li:hover a,
+#nav4 li:focus-within a,
+#nav4 li a:hover,
+#nav4 li a:focus{
+	color: whitesmoke;
+	background-color: #424242;
+    text-decoration: underline;
+}
+#nav4 li .dropdown .vh{
+	position: absolute !important; 
+	/* !important in original code */
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+#nav4 li .dropdown label{
+	display: inline-block;
+}
+label::after,
+a::after{
+	font-family: 'FontAwesome';
+}
+label::after{
+	content: '\f0da';
+	display: inline-block;
+	width: 0.5em;
+}
+input:checked + label::after{
+	content: '\f0d7';
+}
+
+/* Done to here */
+
+#nav4 li .dropdown label.dropbtn{
+	padding: 10px;
+	border: none;
+	/* border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0; */
+	outline: none;
+}
+[type="checkbox"]:checked + label{
+	color: whitesmoke;
+	background-color: #424242;
+}
+:checked + label .expanded-text{
+	display: inline;
+}
+:checked + label .collapsed-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .expanded-text{
+	display: none;
+}
+[type="checkbox"]:not(:checked) + label .collapsed-text{
+	display: inline;
+}
+.dropdown-content{
+	display: none;
+}
+:checked ~ .dropdown-content{
+	display: block;
+}
+.dropdown-content a{
+	white-space: nowrap;
+	display: block;
+}
+#nav4 li .dropdown .dropdown-content ul{
+	text-align: left;
+	min-width: 140px;
+	padding: 0;
+	/* box-shadow: 0 4px 6px -6px #222;
+	-webkit-box-shadow: 0 4px 6px -6px #222;
+	-moz-box-shadow: 0 4px 6px -6px #222; */
+	z-index: 1;
+	position: absolute;
+}
+#nav4 li .dropdown .dropdown-content ul li{
+	font-size: .85em;
+	background-color: #E3E3E3;
+	display: block;
+}
+#nav4 li .dropdown .dropdown-content ul li:first-of-type,
+#nav4 li .dropdown .dropdown-content ul li:first-of-type:hover,
+#nav4 li .dropdown .dropdown-content ul li:first-of-type:hover a,
+#nav4 li .dropdown .dropdown-content ul li:first-of-type:focus,
+#nav4 li .dropdown .dropdown-content ul li:first-of-type:focus-within a{
+    /* border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0; */
+}
+#nav4 li .dropdown .dropdown-content ul li:last-of-type,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:hover,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:hover a,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus-within a{
+    /* border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px; */
+}
+#nav4 li .dropdown .dropdown-content ul li:last-of-type{
+	padding-bottom: .5em;
+}
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:hover,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type:focus-within{
+	padding-bottom: 0;
+}
+#nav4 li .dropdown .dropdown-content ul li:hover,
+#nav4 li .dropdown .dropdown-content ul li:hover a,
+#nav4 li .dropdown .dropdown-content ul li:focus,
+#nav4 li .dropdown .dropdown-content ul li:focus-within a{
+	color: whitesmoke;
+	background-color: #858585;
+	outline: none;
+	/* border-radius: unset;
+	-webkit-border-radius: unset;
+	-moz-border-radius: unset; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+#nav4 li .dropdown .dropdown-content ul li a,
+#nav4 li .dropdown .dropdown-content ul li a:visited{
+	color: black;
+    padding: .75em;
+}
+#nav4 li .dropdown .dropdown-content ul li:last-of-type a,
+#nav4 li .dropdown .dropdown-content ul li:last-of-type a:visited{
+	padding-bottom: .9em;
+}
+#nav4 li .dropdown .dropdown-content ul li a:hover{
+	color: whitesmoke;
+}
 
 /* @media only screen and (min-width: 768px){
 	header,
@@ -297,9 +475,6 @@ footer{
 /* Navbar adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 
 /* Dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
-
-
-
 
 
 /* .navigation{

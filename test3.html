@@ -30,6 +30,20 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
+		<script>
+			//Adapted from https://stackfame.com/auto-refresh-page-first-load-javascript-jquery
+			//Jquery initialize
+			$(document).ready(function(){    
+				//Check if the current URL contains '# or hash'
+				if(document.URL.indexOf("#")==-1){
+					// Set the URL to whatever it was plus "#loaded".
+					url = document.URL+"#loaded";
+					location = "#loaded";
+					//Reload the page using reload() method
+					location.reload(true);
+				}
+			});			
+		</script>
 	</head>
 
 	<!-- <?php flush(); ?> -->
@@ -60,8 +74,8 @@
 					</a>
 						
 
-					<!-- <ul role="menubar" id="nav4" aria-label="Site Sections">
-						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+					<ul id="nav4" role="menubar" aria-label="Site Sections">
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i> Home</a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
@@ -134,11 +148,10 @@
 							</div>
 						</li>
 					</ul>
-				</nav>-->
 
-				<a id="nav5" href="">
-					<i class="fa fa-bars"></i>
-				</a>
+					<a id="nav5" href="">
+						<i class="fa fa-bars"></i>
+					</a>
 
 				<!-- Mobile sticky nav adapted from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript -->
 				<!-- <nav id="sticky" aria-labelledby="nav2">

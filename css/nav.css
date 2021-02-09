@@ -8,6 +8,14 @@ dark gray #858585;
 dark gray (alt) #404040;
 dark brown #424242;
 near black #525252; */
+.navspace{
+    height: 2.4em;
+}
+@media only screen and (min-width: 480px){
+    .navspace{
+        height: 2.8em;
+    }
+}
 
 .navigation{
     font: 16px 'source_sans_proregular';
@@ -15,21 +23,13 @@ near black #525252; */
     color: #191716;
 	background-color: #e3e3e3;
     line-height: 1em;
-	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 	width: 100%;
 	text-align: center;
-    min-height: 2.4em;
+
 	top: 0;
 	position: fixed;
 	z-index: 1;
-}
-@media only screen and (min-width: 480px){
-    .navigation{
-        min-height: 2.8em;
-    }
 }
 @media only screen and (min-width: 768px){
     .navigation{
@@ -43,16 +43,8 @@ near black #525252; */
 .navigation a:focus{
     color: #191716;
 }
-#nav2,
-#nav4{
-	position: absolute;
-    left: 0;
-    display: block;
-}
-#nav1,
-#nav3{
-    display: contents;
-}
+
+
 #nav1 a{
 	font-size: 1.1em;
 	color: white;
@@ -85,7 +77,9 @@ near black #525252; */
 		position: absolute;
 	}
 }
-a#nav2 img{
+
+
+#nav2 img{
     height: 1.8em;
 	width: 1.8em;
     float: left;
@@ -93,27 +87,29 @@ a#nav2 img{
     margin: .2em .2em .2em .4em;
 }
 @media only screen and (min-width: 480px){
-    a#nav2 img{
+    #nav2 img{
         height: 2.1em;
         width: 2.1em;
         margin: .3em .2em .3em .8em;
     }   
 }
 @media only screen and (min-width: 768px){
-    a#nav2 img{
+    #nav2 img{
         margin-left: 1.2em;
     }
 }
-a#nav2 img,
-a#nav2:hover img,
-a#nav2:focus img{
+#nav2 img,
+#nav2:hover img,
+#nav2:focus img{
     border: none;
 }
-a#nav2:hover img,
-a#nav2:focus img{
+#nav2:hover img,
+#nav2:focus img{
     outline: 2px solid #204A79;
 }
-a#nav3 h1.home{
+
+
+#nav3 h1.home{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.4em;
     padding: .5em 0;
@@ -122,51 +118,53 @@ a#nav3 h1.home{
     left: 20%;
     position: absolute;
 }
-a#nav3 h1.home:hover,
-a#nav3 h1.home:focus{
+#nav3 h1.home:hover,
+#nav3 h1.home:focus{
     text-decoration: underline;
 }
 @media only screen and (min-width: 480px){
-    a#nav3 h1.home{
+    #nav3 h1.home{
         font-size: 1.7em;
         padding: .5em 0;
     }
 }
 @media only screen and (min-width: 992px){
-    a#nav3 h1.home{
+    #nav3 h1.home{
         right: unset;
         left: 2.4em;
         padding: .6em 0;
     }
 }
-a#nav5{
+
+
+#nav5{
     position: absolute;
     right: 0;
 }
-a#nav5 .fa-bars{
+#nav5 .fa-bars{
     font-size: 1.6em;
     float: right;
     padding: .3em;
     margin-right: .1em;
 }
-a#nav5 .fa-bars:hover,
-a#nav5 .fa-bars:focus{
+#nav5 .fa-bars:hover,
+#nav5 .fa-bars:focus{
     color: white;
     background: #858585;
 }
 @media only screen and (min-width: 480px){
-    a#nav5 .fa-bars{
+    #nav5 .fa-bars{
         font-size: 1.8em;
         padding: .3em;
     }
 }
 @media only screen and (min-width: 768px){
-    a#nav5 .fa-bars{
+    #nav5 .fa-bars{
         margin-right: .4em;
     }
 }
 @media only screen and (min-width: 992px){
-    a#nav5 .fa-bars{
+    #nav5 .fa-bars{
         display: none;
         visibility: hidden;
     }
@@ -177,6 +175,8 @@ a:focus#nav5{
     color: #191716;
     text-decoration: none;
 }
+
+
 @media only screen and (min-width: 768px){
 	header,
 	main,

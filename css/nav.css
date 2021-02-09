@@ -63,22 +63,23 @@ a#nav2 img{
 #nav2 a:focus img{
     border: none;
 }
-a#nav3 .home{
+a#nav3 h1.home{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.4em;
     padding: .4em 0;
+    margin: unset;
     right: 0;
     left: 0;
     position: absolute;
 }
 @media only screen and (min-width: 480px){
-    a#nav3 .home{
+    a#nav3 h1.home{
         font-size: 1.7em;
         padding: .5em 0;
     }
 }
 @media only screen and (min-width: 992px){
-    a#nav3 .home{
+    a#nav3 h1.home{
         right: unset;
         left: 2em;
         padding: .6em 0;
@@ -105,7 +106,7 @@ a#nav5 .fa-bars{
         margin-right: .4em;
     }
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
     a#nav5 .fa-bars{
         display: none;
         visibility: hidden;
@@ -197,6 +198,7 @@ footer{
     }
 }
 .essay h2{
+    font-size: 1.1em;
     color: #204A79;
     margin: .5em auto 0 auto;
 }

@@ -46,17 +46,15 @@ near black #525252; */
 
 
 #nav1 a{
-	font-size: 1.1em;
+	font-size: 1em;
 	color: white;
-	background: #424242;
-	padding: 6px;
+	background: #404040;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
-	border-bottom-right-radius: 8px;
-	-webkit-border-bottom-right-radius: 8px;
-	-moz-border-bottom-right-radius: 8px;
-	margin-top: -.5em; 
-    /* Needed for Google Translate */
+	border-bottom-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	padding: .7em .55em;
 	position: absolute;
 	top: -40px;
 	left: 0px;
@@ -196,7 +194,7 @@ header,
 body.transcription header{
 	text-align: center;
 	position: relative;
-    margin-top: 2em;
+    margin-top: 0;
 }
 @media only screen and (min-width: 480px){
 	header,
@@ -207,7 +205,7 @@ body.transcription header{
 @media only screen and (min-width: 768px){
 	header,
     body.transcription header{
-        margin: 4.5em auto 2em auto;
+        margin: 2em auto;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -271,7 +269,7 @@ footer{
     .translate{
         margin: unset;
         position: absolute;
-        top: 0;
+        top: 4em;
         left: 1em;
     }
 }

@@ -19,7 +19,8 @@
 (light blue) #c4d8ef;
 */
 
-.navigation{
+.navigation,
+.overlay .navigation{
 	font: 16px 'source_sans_proregular';
     font-weight: 600;
 	color: #0b0b0b;
@@ -34,12 +35,14 @@
 	z-index: 1;
 }
 @media only screen and (min-width: 480px){
-    .navigation{
+    .navigation,
+	.overlay .navigation{
         height: 2.8em;
     }
 }
 @media only screen and (min-width: 768px){
-    .navigation{
+    .navigation,
+	.overlay .navigation{
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -47,11 +50,16 @@
 }
 .navigation a,
 .navigation a:hover,
-.navigation a:focus{
+.navigation a:focus,
+.overlay .navigation a,
+.overlay .navigation a,
+.overlay .navigation a:hover,
+.overlay .navigation a:focus{
     color: #0b0b0b;
 	text-decoration: none;
 }
-.nav-wrapper{
+.nav-wrapper,
+.overlay .nav-wrapper{
 	height: 100%;
 	position: relative;
 	display: flex;
@@ -296,30 +304,54 @@ input:checked + label::after{
 
 #nav5{
     position: absolute;
-    right: 1em;
-	padding: .15em;
+    right: .5em;
 }
 #nav5 .fa-bars{
     font-size: 1.6em;
+	padding: .15em .2em;
 }
 @media only screen and (min-width: 480px){
     #nav5 .fa-bars{
         font-size: 1.8em;
     }
 }
+#nav7 .close{
+    position: absolute;
+    right: .25em;
+	padding: .30em .28em;
+}
+#nav7 .close{
+    font-size: 1.9em;
+}
+@media only screen and (min-width: 480px){
+	#nav7 .close{
+        font-size: 2.1em;
+    }
+}
 @media only screen and (min-width: 992px){
-    #nav5{
+    #nav5,
+	#nav7 .close{
         display: none;
         visibility: hidden;
     }
 }
-a#nav5{
+a#nav5,
+#nav7 .close{
     color: #0b0b0b;
     text-decoration: none;
 }
 a#nav5:hover,
-a#nav5:focus{
+a#nav5:focus,
+#nav7 a.close:hover,
+#nav7 a.close:focus{
     outline: 2px solid #204A79;
+}
+/* The following prevents the overlay from appearing above 992px */
+@media only screen and (min-width: 992px){
+	#nav7{
+		display: none !important;
+		visibility: hidden;
+	}
 }
 
 
@@ -428,17 +460,7 @@ footer{
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
-/* The following prevents overlay from appearing above 768px */
-@media only screen and (min-width: 992px){
-	#nav7{
-		display: none !important;
-		visibility: hidden;
-	}
-}
-.overlay .nav-title,
-.overlay .close-title{
-	color: whitesmoke;
-}
+
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
@@ -482,31 +504,4 @@ footer{
 }
 .overlay li.section ul li{
 	padding: .3em 0;
-}
-.overlay a,
-.overlay a:visited{
-	color: whitesmoke;
-	text-decoration: underline;
-	transition: 0.3s; /* Transition effects on hover (color)*/
-}
-.overlay a:hover,
-.overlay a:focus{
-	color: black;
-	background-color: whitesmoke;
-	text-decoration: underline;
-}
-.overlay .close-title{
-	font-size: 2em;
-	vertical-align: middle;
-	line-height: 1.1em;
-	right: .6em;
-	position: absolute;
-}
-@media only screen and (min-width: 480px){
-	.overlay .close-title{
-		line-height: 1.2em;
-	}
-}
-.overlay .close-title a{
-	text-decoration: none;
 }

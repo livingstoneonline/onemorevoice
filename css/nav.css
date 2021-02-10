@@ -456,16 +456,14 @@ footer{
 }
 
 
-/* 1.9. Overlay */
-
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-
-
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
-	color: whitesmoke;
-	background-color: #424242; /* Black fallback color */
+	color: #0b0b0b;;
+	background-color: #ffffff; /* Black fallback color */
+	font: 16px Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: center;
 	opacity: 1;
 	height: 100%;
 	width: 100%;
@@ -479,19 +477,12 @@ footer{
 	display: none;
 }
 .overlay-content{
-	font-size: 1.1em;
-	text-align: center;
-	margin-top: 0;
-	padding-bottom: 3em;
-	width: 100%;
-	top: 1em;
+	font-size: .9em;
+	text-align: left;
+	margin: 6em auto 3em;
+	width: fit-content;
 	position: relative;
 	display: block;
-}
-@media only screen and (min-width: 768px){
-	.overlay-content{
-		font-size: 1.4em;
-	}
 }
 .overlay ul{
 	list-style-type: none;
@@ -504,4 +495,7 @@ footer{
 }
 .overlay li.section ul li{
 	padding: .3em 0;
+}
+.overlay a{
+	text-decoration: underline;
 }

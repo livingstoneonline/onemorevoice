@@ -30,19 +30,43 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-31768072-5');
 		</script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+
+
+
+		<!-- <script>
+			// Taken from https://stackoverflow.com/a/28840664
+			(function()
+			{
+			  if( window.localStorage )
+			  {
+				if( !localStorage.getItem('firstLoad') )
+				{
+				  localStorage['firstLoad'] = true;
+				  window.location.reload();
+				}  
+				else
+				  localStorage.removeItem('firstLoad');
+			  }
+			})();
+		</script> -->
 		<script>
-			//Adapted from https://stackfame.com/auto-refresh-page-first-load-javascript-jquery
-			//Jquery initialize
-			$(document).ready(function(){    
-				//Check if the current URL contains '# or hash'
-				if(document.URL.indexOf("#")==-1){
-					// Set the URL to whatever it was plus "#loaded".
-					url = document.URL+"#loaded";
-					location = "#loaded";
-					//Reload the page using reload() method
-					location.reload(true);
-				}
-			});			
+			// Taken from https://medium.com/@mertkadirgrsoy/how-to-refresh-a-page-only-once-with-javascript-cdbaf079fc73
+			function reloadPage() {
+			// The last "domLoading" Time //
+			var currentDocumentTimestamp =
+			new Date(performance.timing.domLoading).getTime();
+			// Current Time //
+			var now = Date.now();
+			// Ten Seconds //
+			var tenSec = 10 * 1000;
+			// Plus Ten Seconds //
+			var plusTenSec = currentDocumentTimestamp + tenSec;
+			if (now > plusTenSec) {
+			location.reload();
+			} else {}
+			}
+			reloadPage();
 		</script>
 	</head>
 

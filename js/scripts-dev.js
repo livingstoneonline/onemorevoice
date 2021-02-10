@@ -37,18 +37,18 @@ window.addEventListener('scroll', stickyNavigation);
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 function openNav() {
-	document.getElementById("nav3").style.display = "block";
+	document.getElementById("nav7").style.display = "block";
 	document.getElementById("html").style.overflowY = "hidden";
-	const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
+	const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
 	for(const element of elements){
 		if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
 	}
 }
 
 function closeNav() {
-	document.getElementById("nav3").style.display = "none";
+	document.getElementById("nav7").style.display = "none";
 	document.getElementById("html").style.overflowY = "unset";
-	const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
+	const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
 	for(const element of elements){
 		if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
 	}

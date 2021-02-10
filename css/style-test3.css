@@ -953,25 +953,25 @@ background-color: #E3E3E3; [light gray]
 		visibility: hidden;
 	}
 } */
-body.fixed-nav .overlay .menu .nav-title,
+/* body.fixed-nav .overlay .menu .nav-title,
 body.fixed-nav .overlay .menu .close-title{
 	color: whitesmoke;
 }
-/* Height & width depends on how you want to reveal the overlay (see scripts.js) */
+
 .overlay{
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	color: whitesmoke;
-	background-color: #424242; /* Black fallback color */
+	background-color: #424242;
 	opacity: 1;
 	height: 100%;
 	width: 100%;
 	left: 0;
 	top: 0;
-	position: fixed; /* Stay in place */
-	z-index: 200; /* Sit on top */
-	overflow-x: hidden; /* Disable horizontal scroll */
+	position: fixed;
+	z-index: 200;
+	overflow-x: hidden;
 	overflow-y: auto;
-	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	transition: 0.5s;
 	display: none;
 }
 .overlay-content{
@@ -1005,7 +1005,7 @@ body.fixed-nav .overlay .menu .close-title{
 .overlay a:visited{
 	color: whitesmoke;
 	text-decoration: underline;
-	transition: 0.3s; /* Transition effects on hover (color)*/
+	transition: 0.3s;
 }
 .overlay a:hover,
 .overlay a:focus{
@@ -1031,7 +1031,7 @@ body.fixed-nav .overlay .menu .close-title{
 }
 .overlay .menu .close-title a{
 	text-decoration: none;
-}
+} */
 
 
 /* 1.10. Google Translate */

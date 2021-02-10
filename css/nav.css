@@ -1,8 +1,22 @@
-/* 
-(black) #0b|0b0b; 
-(gray) #e3|e3e3;
-(white) #ff|ffff;
-(light blue) #c4|d8ef;
+/* HTML hierarchy and colors for nav3 */
+/*
+.topnav
+.topnav ul
+.topnav ul li 
+.topnav ul li a
+
+.topnav ul li .dropdown
+.topnav ul li .dropdown input .vh
+.topnav ul li .dropdown label.dropbtn
+.topnav ul li .dropdown .dropdown-content
+.topnav ul li .dropdown .dropdown-content ul
+.topnav ul li .dropdown .dropdown-content ul li 
+.topnav ul li .dropdown .dropdown-content ul li a
+
+(black) #0b0b0b; 
+(gray) #e3e3e3;
+(white) #ffffff;
+(light blue) #c4d8ef;
 */
 
 .navigation{
@@ -77,10 +91,12 @@
 	}
 }
 
-#nav2{
+#nav2,
+#nav8{
 	display: inline-block;
 }
-#nav2 img{
+#nav2 img,
+#nav8 img{
     height: 1.8em;
 	width: 1.8em;
 	vertical-align: middle;
@@ -88,46 +104,58 @@
 	margin: 0 .5em;
 }
 @media only screen and (min-width: 480px){
-    #nav2 img{
+    #nav2 img,
+	#nav8 img{
         height: 2.1em;
         width: 2.1em;
     }   
 }
 #nav2 img,
 #nav2:hover img,
-#nav2:focus img{
+#nav2:focus img,
+#nav8 img,
+#nav8:hover img,
+#nav8:focus img{
     border: none;
 }
 #nav2:hover img,
-#nav2:focus img{
+#nav2:focus img,
+#nav8:hover img,
+#nav8:focus img{
     outline: 2px solid #204A79;
 }
 
-#nav3{
+#nav3,
+#nav9{
 	white-space: nowrap;
 	left: 50%;
 	transform: translate(-50%);
 	position: absolute;
 }
 @media only screen and (min-width: 992px){
-	#nav3{
+	#nav3,
+	#nav9{
 		padding-top: .1em;
 		left: 3.5em;
 		transform: unset;
 	}
 }
-#nav3 h1{
+#nav3 h1,
+#nav9 h1{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.4em;
 	margin: 0;
 }
 @media only screen and (min-width: 480px){
-    #nav3 h1{
+    #nav3 h1,
+	#nav9 h1{
         font-size: 1.6em;
     }
 }
 #nav3 h1:hover,
-#nav3:focus-within h1{
+#nav3:focus-within h1,
+#nav9 h1:hover,
+#nav9:focus-within h1{
     text-decoration: underline;
 }
 
@@ -393,4 +421,92 @@ footer{
         top: 4em;
         left: 1em;
     }
+}
+
+
+/* 1.9. Overlay */
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+/* The following prevents overlay from appearing above 768px */
+@media only screen and (min-width: 992px){
+	#nav7{
+		display: none !important;
+		visibility: hidden;
+	}
+}
+.overlay .nav-title,
+.overlay .close-title{
+	color: whitesmoke;
+}
+/* Height & width depends on how you want to reveal the overlay (see scripts.js) */
+.overlay{
+	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	color: whitesmoke;
+	background-color: #424242; /* Black fallback color */
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed; /* Stay in place */
+	z-index: 200; /* Sit on top */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: auto;
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	display: none;
+}
+.overlay-content{
+	font-size: 1.1em;
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 3em;
+	width: 100%;
+	top: 1em;
+	position: relative;
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.overlay-content{
+		font-size: 1.4em;
+	}
+}
+.overlay ul{
+	list-style-type: none;
+	line-height: 1.6em;
+	padding: 0;
+	margin: 0;
+}
+.overlay li{
+	padding: .8em 0;
+}
+.overlay li.section ul li{
+	padding: .3em 0;
+}
+.overlay a,
+.overlay a:visited{
+	color: whitesmoke;
+	text-decoration: underline;
+	transition: 0.3s; /* Transition effects on hover (color)*/
+}
+.overlay a:hover,
+.overlay a:focus{
+	color: black;
+	background-color: whitesmoke;
+	text-decoration: underline;
+}
+.overlay .close-title{
+	font-size: 2em;
+	vertical-align: middle;
+	line-height: 1.1em;
+	right: .6em;
+	position: absolute;
+}
+@media only screen and (min-width: 480px){
+	.overlay .close-title{
+		line-height: 1.2em;
+	}
+}
+.overlay .close-title a{
+	text-decoration: none;
 }

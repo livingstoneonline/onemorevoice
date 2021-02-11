@@ -22,14 +22,10 @@
 		<link rel="preload" as="style" href="css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/fontawesome-webfont.woff?v=4.7.0"/>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-31768072-5');
-		</script>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/librefranklin-bold-webfont.woff2"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/librefranklin-bold-webfont.woff"/>
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/librefranklin-regular-webfont.woff2"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/librefranklin-regular-webfont.woff"/>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script>
 			// Taken from https://stackoverflow.com/a/28840664
@@ -191,9 +187,11 @@
 							</div>	
 						</div>
 						<div class="overlay-content" role="menu">
-							<ul role="none">
-								<li role="none"><a role="menuitem" href="index.html">Home</a></li>
-								<li class="section" role="menuitem">Materials <i class="fa fa-caret-down"></i>
+							<ul class="container-home" role="none">
+								<li role="none"><a role="menuitem" href="index.html"><strong>Home</strong></a></li>
+							</ul>
+							<ul class="container-left" role="none">
+								<li class="section" role="menuitem"><strong>Materials</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Materials">
 										<li role="none"><a role="menuitem" href="texts.html">Archival Texts</a></li>
 										<li role="none"><a role="menuitem" href="objects.html">Historical Objects</a></li>
@@ -201,7 +199,7 @@
 										<li role="none"><a role="menuitem" href="motion_pictures.html">Motion Pictures</a></li>
 									</ul>
 								</li>
-								<li class="section" role="menuitem">Concepts <i class="fa fa-caret-down"></i>
+								<li class="section" role="menuitem"><strong>Concepts</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Concepts">
 										<li role="none"><a role="menuitem" href="analytical_priorities.html">Analytical Priorities</a></li>
 										<li role="none"><a role="menuitem" href="project_design.html">Project Design</a></li>
@@ -209,7 +207,9 @@
 										<li role="none"><a role="menuitem" href="coding_guidelines.html">Coding Guidelines</a></li>
 									</ul>
 								</li>
-								<li class="section" role="menuitem">Misc <i class="fa fa-caret-down"></i>
+							</ul>
+							<ul class="container-right" role="none">
+								<li class="section" role="menuitem"><strong>Misc</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Miscellaneous">
 										<li role="none"><a role="menuitem" href="contributors.html">Contributors</a></li>
 										<li role="none"><a role="menuitem" href="acknowledgments.html">Acknowledgments</a></li>
@@ -217,7 +217,7 @@
 										<li role="none"><a role="menuitem" href="site_map.html">Site Map</a></li>
 									</ul>
 								</li>
-								<li class="section" role="menuitem">External <i class="fa fa-caret-down"></i>
+								<li class="section" role="menuitem"><strong>External</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Miscellaneous">
 										<li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
 										<li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a></li>

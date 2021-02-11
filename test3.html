@@ -28,21 +28,17 @@
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/librefranklin-regular-webfont.woff"/>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script>
-			// Taken from https://stackoverflow.com/a/28840664
-			(function()
-			{
-			  if( window.localStorage )
-			  {
-				if( !localStorage.getItem('firstLoad') )
-				{
-				  localStorage['firstLoad'] = true;
-				  window.location.href = window.location.origin + window.location.pathname; 
-				//   window.location.reload();
-				}  
-				else
-				  localStorage.removeItem('firstLoad');
-			  }
-			})();
+			// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
+			(function () {
+				if (window.localStorage) {
+					if (!localStorage.getItem('firstLoad')) {
+						localStorage['firstLoad'] = true;
+						window.location.href = window.location.origin + window.location.pathname;
+						// window.location.reload();
+					} else 
+						localStorage.removeItem('firstLoad');
+					}
+				})();			
 		</script>
 		<!-- <script>
 			// Taken from https://medium.com/@mertkadirgrsoy/how-to-refresh-a-page-only-once-with-javascript-cdbaf079fc73

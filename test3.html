@@ -35,9 +35,9 @@
 			  {
 				if( !localStorage.getItem('firstLoad') )
 				{
-				  var ret = window.location=window.location.search += '&param=42';	
 				  localStorage['firstLoad'] = true;
-				  ret.reload();
+				  window.location.href = window.location.origin + window.location.pathname; 
+				  window.location.reload();
 				}  
 				else
 				  localStorage.removeItem('firstLoad');

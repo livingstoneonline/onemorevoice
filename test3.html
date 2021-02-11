@@ -35,8 +35,9 @@
 			  {
 				if( !localStorage.getItem('firstLoad') )
 				{
+				  var ret = window.location=window.location+"?";	
 				  localStorage['firstLoad'] = true;
-				  window.location.reload();
+				  ret.reload();
 				}  
 				else
 				  localStorage.removeItem('firstLoad');

@@ -39,25 +39,25 @@ window.addEventListener('scroll', stickyNavigation);
 function openNav() {
 	document.getElementById("nav7").style.display = "block";
 	document.getElementById("html").style.overflowY = "hidden";
-	const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
-	for(const element of elements){
-		if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
-	}
+	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
+	// for(const element of elements){
+	// 	if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
+	// }
 }
 
 function closeNav() {
 	document.getElementById("nav7").style.display = "none";
 	document.getElementById("html").style.overflowY = "unset";
-	const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
-	for(const element of elements){
-		if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
-	}
+	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
+	// for(const element of elements){
+	// 	if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
+	// }
 }
 
 /* Keyboard Navigation for Dropdown Menus */
 /* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
 
-const menu = document.getElementById('nav1');
+const menu = document.getElementById('nav4');
 menu.addEventListener('keydown', handleKeydown);
 menu.addEventListener('focusin', handleFocusIn);
 

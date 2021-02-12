@@ -34,7 +34,7 @@
 					if (!localStorage.getItem('firstLoad')) {
 						localStorage['firstLoad'] = true;
 						window.location.href = window.location.origin + window.location.pathname;
-						// window.location.reload();
+						window.location.reload();
 					} else 
 						localStorage.removeItem('firstLoad');
 					}
@@ -89,7 +89,7 @@
 					<!-- nav4 dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 					<!-- nav4 idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 					<ul id="nav4" role="menubar" aria-label="Site Sections">
-						<li role="none"><a role="menuitem" aria-haspopup="false" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="https://onemorevoice.org/index.html"><i class="fa fa-home"></i> Home</a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
@@ -100,10 +100,10 @@
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="Materials" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="texts.html">Archival Texts</a></li>
-										<li role="none"><a role="menuitem" href="objects.html">Historical Objects</a></li>
-										<li role="none"><a role="menuitem" href="books.html">Book-Length Works</a></li>
-										<li role="none"><a role="menuitem" href="motion_pictures.html">Motion Pictures</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/texts.html">Archival Texts</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/objects.html">Historical Objects</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/books.html">Book-Length Works</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/motion_pictures.html">Motion Pictures</a></li>
 									</ul>
 								</div>
 							</div>
@@ -118,10 +118,10 @@
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="Concepts" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="analytical_priorities.html">Analytical Priorities</a></li>
-										<li role="none"><a role="menuitem" href="project_design.html">Project Design</a></li>
-										<li role="none"><a role="menuitem" href="collaboration.html">Collaboration</a></li>
-										<li role="none"><a role="menuitem" href="coding_guidelines.html">Coding Guidelines</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/analytical_priorities.html">Analytical Priorities</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/project_design.html">Project Design</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/collaboration.html">Collaboration</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/coding_guidelines.html">Coding Guidelines</a></li>
 									</ul>
 								</div>
 							</div>
@@ -136,10 +136,10 @@
 								</label>
 								<div class="dropdown-content" role="menu" aria-label="Miscellaneous" data-menu-origin="left">
 									<ul role="none">
-										<li role="none"><a role="menuitem" href="contributors.html">Contributors</a></li>
-										<li role="none"><a role="menuitem" href="acknowledgments.html">Acknowledgments</a></li>
-										<li role="none"><a role="menuitem" href="bibliography.html">Bibliography</a></li>
-										<li role="none"><a role="menuitem" href="site_map.html">Site Map</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/contributors.html">Contributors</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/acknowledgments.html">Acknowledgments</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/bibliography.html">Bibliography</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/site_map.html">Site Map</a></li>
 									</ul>
 								</div>
 							</div>
@@ -169,7 +169,7 @@
 
 					<!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
 					<div class="overlay" id="nav7">
-						<div class="navigation" title="Close">
+						<nav class="navigation" title="Close">
 							<div class="nav-wrapper">							
 								<a id="nav8" href="https://onemorevoice.org/">
 									<img src="https://onemorevoice.org/img/icons/apple-touch-icon-180x180.png" alt="One More Voice logo in white on a blue field." title="Home"/>
@@ -180,38 +180,37 @@
 								</a>
 								
 								<a class="close" aria-label="Close site sections" aria-pressed="false" onclick="closeNav()" href="javascript:void(0)">&#215;</a>
-
 							</div>	
-						</div>
-						<div class="overlay-content" role="menu">
+						</nav>
+						<section class="overlay-content" role="menu">
 							<ul class="container-home" role="none">
-								<li role="none"><a role="menuitem" href="index.html"><strong>Home</strong></a></li>
+								<li role="none"><a role="menuitem" href="https://onemorevoice.org/index.html"><strong>Home</strong></a></li>
 							</ul>
 							<ul class="container-left" role="none">
 								<li class="section" role="menuitem"><strong>Materials</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Materials">
-										<li role="none"><a role="menuitem" href="texts.html">Archival Texts</a></li>
-										<li role="none"><a role="menuitem" href="objects.html">Historical Objects</a></li>
-										<li role="none"><a role="menuitem" href="books.html">Book-Length Works</a></li>
-										<li role="none"><a role="menuitem" href="motion_pictures.html">Motion Pictures</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/texts.html">Archival Texts</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/objects.html">Historical Objects</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/books.html">Book-Length Works</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/motion_pictures.html">Motion Pictures</a></li>
 									</ul>
 								</li>
 								<li class="section" role="menuitem"><strong>Concepts</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Concepts">
-										<li role="none"><a role="menuitem" href="analytical_priorities.html">Analytical Priorities</a></li>
-										<li role="none"><a role="menuitem" href="project_design.html">Project Design</a></li>
-										<li role="none"><a role="menuitem" href="collaboration.html">Collaboration</a></li>
-										<li role="none"><a role="menuitem" href="coding_guidelines.html">Coding Guidelines</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/analytical_priorities.html">Analytical Priorities</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/project_design.html">Project Design</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/collaboration.html">Collaboration</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/coding_guidelines.html">Coding Guidelines</a></li>
 									</ul>
 								</li>
 							</ul>
 							<ul class="container-right" role="none">
 								<li class="section" role="menuitem"><strong>Misc</strong> <i class="fa fa-caret-down"></i>
 									<ul role="menu" aria-label="Miscellaneous">
-										<li role="none"><a role="menuitem" href="contributors.html">Contributors</a></li>
-										<li role="none"><a role="menuitem" href="acknowledgments.html">Acknowledgments</a></li>
-										<li role="none"><a role="menuitem" href="bibliography.html">Bibliography</a></li>
-										<li role="none"><a role="menuitem" href="site_map.html">Site Map</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/contributors.html">Contributors</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/acknowledgments.html">Acknowledgments</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/bibliography.html">Bibliography</a></li>
+										<li role="none"><a role="menuitem" href="https://onemorevoice.org/site_map.html">Site Map</a></li>
 									</ul>
 								</li>
 								<li class="section" role="menuitem"><strong>External</strong> <i class="fa fa-caret-down"></i>
@@ -222,7 +221,7 @@
 									</ul>
 								</li>
 							</ul>
-						</div>
+						</section>
 					</div>
 				</div>
 			</nav>
@@ -251,7 +250,7 @@
 				<p>Publication has been made possible by producing new scholarship while applying <a href="https://go-dh.github.io/mincomp/">minimal computing</a> principles and adapting open-access code and digital tools from <a href="project_design.html">other relevant projects</a>. Given these affordances, however, the project contributors recognize that there is considerable room for improvement in our work. We are actively searching for <a href="collaboration.html">new collaborators</a>, especially scholars and students whose backgrounds link them to areas that historically fell under the sway of the British Empire in the nineteenth century. If interested, please <a href="mailto:awisnicki@yahoo.com">contact us.</a></p>
 			</main>
 
-			<!--<aside class="credits" id="credits-div">
+			<aside class="credits" id="credits-div">
 				<hr />
 
 				<p><strong>Cite page (MLA):</strong> Wisnicki, Adrian S., with Heather F. Ball, Jared McDonald, and Mary Borgo Ton. Introduction. <em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, 2020, <a href="index.html">https://onemorevoice.org</a>.</p>
@@ -267,7 +266,7 @@
 			<footer class="footer" id="footer-div">
 				<hr />
 				<p>&#169; 2020-2021, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | <span class="italic">One More Voice</span> is an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a> | Hosted by <a href="https://github.com/">GitHub</a> | Design &amp; admin: <a href="mailto:awisnicki@yahoo.com">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln) | <a href="site_map.html">Site Map</a></p>
-			</footer> -->
+			</footer>
 			
 		</div>
 		<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->

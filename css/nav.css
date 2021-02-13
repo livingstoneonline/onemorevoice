@@ -596,7 +596,6 @@ footer a,
 footer a:visited{
 	color: #ffffff;
 }
-
 footer p{
 	color: #0b0b0b;
 	background-color:#ffffff;
@@ -609,28 +608,27 @@ footer p a,
 footer p a:visited{
 	color: #204A79;
 }
-.site-detail{
+footer p .site-detail{
 	padding: 0 .2em;
 	line-height: 1.6em;
 }
-.site-detail::after{
+footer p .site-detail::after{
 	content: ' | ';
 	padding-left: .5em;
 }
-.site-detail:last-child::after{
+footer p .site-detail:last-child::after{
 	content: '';
 }
 @media only screen and (min-width: 480px){
-	.site-detail{
+	footer p .site-detail{
 		padding: 0 .3em;
 	}
 }
 @media only screen and (min-width: 768px){
-	.site-detail{
+	footer p .site-detail{
 		white-space: nowrap;
 	}
 }
-
 .fat-footer{
 	font-size: .95em;
 	width: fit-content;

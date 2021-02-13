@@ -587,6 +587,11 @@ footer{
 	margin: 0 auto;
 	padding: 0;
 }
+@media only screen and (min-width: 480px){
+	footer{
+		margin: 2em auto 0;
+	}
+}
 footer a,
 footer a:visited{
 	color: #ffffff;
@@ -598,8 +603,7 @@ footer p{
 	border-top: 4px #737373 double;
 	border-bottom: 4px #737373 double;
 	margin: 0;
-	padding: 0;
-	width: 100%;
+	padding: 1em;
 }
 footer p a,
 footer p a:visited{
@@ -618,62 +622,54 @@ footer p a:visited{
 }
 @media only screen and (min-width: 480px){
 	.site-detail{
-		white-space: nowrap;
 		padding: 0 .3em;
-		line-height: 2em;
 	}
 }
 @media only screen and (min-width: 768px){
 	.site-detail{
+		white-space: nowrap;
 	}
 }
-
 
 .fat-footer{
 	font-size: .95em;
 	text-align: left;
-	width: 100%;
-	display: inline-block;
-
+	margin: 0 auto;
+	padding: 1em 1em 2em 1em;
+	width: fit-content;
+    display: inline-block;
 }
 @media only screen and (min-width: 480px){
 	.fat-footer{
+		padding: .7em 1em 2em 1em;
 	}
+}
+.fat-footer ul[role="none"].home{
+	display: block;
+	clear: both;
+	margin: 0 1em;
+}
+.fat-footer ul[role="none"]{
+	clear: unset;
+	margin: 0 1em;
+	display: inline-block;
+	vertical-align: top;
 }
 .fat-footer ul{
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
 }
 .fat-footer li{
+	text-align: left;
+	margin: .8em 0;
 }
 .fat-footer li.section{
-	width: 150px;
-	display: inline-block;    
-}
-@media only screen and (min-width: 480px){
-	.fat-footer li.section{
-		width: calc(33%);
-	}
-}
-.fat-footer li.section ul li{
-}
-.fat-footer .section{
-	margin: 0;
+	padding: .5em 0;
 	clear: both;
 }
-@media only screen and (min-width: 480px){
-	.fat-footer .section{
-		float: left;
-		clear: unset;
-	}
+.fat-footer li.section ul{
+	margin: 0;
+	padding: 0;
 }
-@media only screen and (min-width: 768px){
-	.fat-footer .section{
-		float: left;
-	}
-}
-
 .fat-footer > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1),
 .fat-footer > ul > li > strong,
 li.section > ul > li > a{

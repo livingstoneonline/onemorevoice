@@ -26,27 +26,27 @@
 	color: #0b0b0b;
 	text-align: center;
 	line-height: 1em;
-	height: 2.4em;
+	height: 2.7em;
 	width: 100%;
 	top: 0;
 	z-index: 1;
-	/* border-bottom: 1px solid #737373; */
-	border-bottom: 4px #737373 double;
+	border-bottom: 1px solid #737373;
+	/* border-bottom: 4px #737373 double; */
 	position: fixed;
 }
-.navigation:after{
+/* .navigation:after{
 	border-bottom: 4px #ffffff double;
-}
+} */
 .overlay .navigation{
-	/* border-bottom: 1px solid #737373; */
-	border-bottom: 4px black double;
-	background-color: #ffffff;
+	border-bottom: 1px solid #737373;
+	/* border-bottom: 4px #0b0b0b double;
+	background-color: #ffffff; */
 	position: absolute;
 }
 @media only screen and (min-width: 480px){
     .navigation,
 	.overlay .navigation{
-        height: 3.2em;
+        height: 3.1em;
     }
 }
 /* @media only screen and (min-width: 768px){
@@ -87,8 +87,8 @@
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
-	padding: .7em .55em;
-	top: -40px;
+	padding: .8em .55em;
+	top: -44px;
 	left: 0px;
 	position: absolute;
 	z-index: 99;
@@ -454,7 +454,6 @@ a#nav5:focus,
 
 /* Footer / Fat-Footer */
 footer{
-	font-size: 1em;
 	font: 16px 'source_sans_proregular';
 	text-align: center;
 	color: #ffffff;
@@ -467,6 +466,10 @@ footer{
 	footer{
 		margin: 2em auto 0;
 	}
+}
+footer p,
+footer .fat-footer{
+	font-size: 1.1em;
 }
 footer a,
 footer a:visited{
@@ -506,7 +509,6 @@ footer p .site-detail:last-child::after{
 	}
 }
 .fat-footer{
-	font-size: .95em;
 	width: fit-content;
 	margin: 0 auto;
 	padding: 1em 1em 2em 1em;
@@ -585,19 +587,19 @@ header,
 body.transcription header{
 	text-align: center;
 	position: relative;
-    margin-top: 2.4em;
+    margin-top: 2.7em;
 }
 @media only screen and (min-width: 480px){
 	header,
     body.transcription header{
-		margin-top: 2.8em;
+		margin-top: 3.1em;
 		margin-bottom: 1em;
 	}
 }
 @media only screen and (min-width: 768px){
 	header,
     body.transcription header{
-        margin-top: 4.5em;
+        margin-top: 4.9em;
 		margin-bottom: 2em;
 	}
 }
@@ -666,14 +668,20 @@ footer{
     }
 }
 [id]:target{
-	margin-top: -2.4em;
-	border-top: 2.4em solid transparent;
+	margin-top: -2.7em;
+	border-top: 2.7em solid transparent;
 	background-clip: padding-box;
 }
 @media only screen and (min-width: 480px){
 	[id]:target{
-		margin-top: -2.8em;
-		border-top: 2.8em solid transparent;
+		margin-top: -3.1em;
+		border-top: 3.1em solid transparent;
+	}
+}
+@media only screen and (min-width: 768px){
+	[id]:target{
+		margin-top: -4.9em;
+		border-top: 4.9em solid transparent;
 	}
 }
 /* scroll-behavior: smooth; */

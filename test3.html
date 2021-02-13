@@ -58,6 +58,13 @@
 			}
 			reloadPage();
 		</script> -->
+		<style>
+			.current{
+				text-decoration: overline;
+  				text-decoration-color: #b53831;
+				text-decoration-thickness: 2px;
+			}
+		</style>
 	</head>
 
 	<!-- <?php flush(); ?> -->
@@ -90,7 +97,7 @@
 					<!-- nav4 dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 					<!-- nav4 idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 					<ul id="nav4" role="menubar" aria-label="Site Sections">
-						<li role="none"><a role="menuitem" aria-haspopup="false" href="https://onemorevoice.org/index.html"><i class="fa fa-home"></i> Home</a></li>
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="https://onemorevoice.org/index.html"><i class="fa fa-home"></i> <span id="hilink1">Home</span></a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
@@ -316,6 +323,16 @@
 				</section>
 			</footer>
 		</div>
+		<script>
+			// Adapted from https://stackoverflow.com/a/21718316
+			checkUrl();
+			
+			function checkUrl () {
+				if (window.location.href.indexOf("test3") > -1) {					
+					document.getElementById("hilink1").setAttribute("class","current");
+				}
+			};
+		</script>
 		<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->
 		<script>
 			var randomString = Math.floor(Math.random()*1000000);

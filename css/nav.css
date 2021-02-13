@@ -633,7 +633,6 @@ footer p a:visited{
 
 .fat-footer{
 	font-size: .95em;
-	text-align: left;
 	margin: 0 auto;
 	padding: 1em 1em 2em 1em;
 	width: fit-content;
@@ -644,19 +643,31 @@ footer p a:visited{
 		padding: .7em 1em 2em 1em;
 	}
 }
-.fat-footer ul[role="none"].home{
-	display: block;
-	clear: both;
-	margin: 0 1em;
-}
-.fat-footer ul[role="none"]{
-	clear: unset;
-	margin: 0 1em;
-	display: inline-block;
-	vertical-align: top;
-}
 .fat-footer ul{
 	list-style-type: none;
+}
+.fat-footer ul[role="none"]{
+	margin: 0 1em;
+	padding: 0;
+	clear: unset;
+	display: block;
+}
+@media only screen and (min-width: 480px){
+	.fat-footer ul[role="none"]{
+		vertical-align: top;
+		display: inline-block;
+	}
+}
+@media only screen and (min-width: 768px){
+	.fat-footer ul[role="none"].home{
+		margin: 0;
+		clear: unset;
+		display: inline-block;
+	}
+	.fat-footer ul[role="none"]{
+		margin: 0;
+		vertical-align: top;
+	}
 }
 .fat-footer li{
 	text-align: left;
@@ -665,6 +676,13 @@ footer p a:visited{
 .fat-footer li.section{
 	padding: .5em 0;
 	clear: both;
+}
+@media only screen and (min-width: 768px){
+	.fat-footer li.section{
+		margin: 1em;
+		float: left;
+		clear: unset;
+	}
 }
 .fat-footer li.section ul{
 	margin: 0;

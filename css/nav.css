@@ -454,6 +454,7 @@ a#nav5:focus,
 
 /* Footer / Fat-Footer */
 footer{
+	font-size: 1.1em;
 	font: 16px 'source_sans_proregular';
 	text-align: center;
 	color: #ffffff;
@@ -464,12 +465,9 @@ footer{
 }
 @media only screen and (min-width: 480px){
 	footer{
+		font-size: 1em;
 		margin: 2em auto 0;
 	}
-}
-footer p,
-footer .fat-footer{
-	font-size: 1.1em;
 }
 footer a,
 footer a:visited{
@@ -523,7 +521,7 @@ footer p .site-detail:last-child::after{
 	list-style-type: none;
 }
 .fat-footer ul[role="none"]{
-	margin: 0 1em;
+	margin: 0 1.2em;
 	padding: 0;
 	clear: unset;
 	display: block;
@@ -617,16 +615,14 @@ aside{
 main{
     font-size: 1.3em;
 }
-aside,
-footer{
+aside{
     font-size: 1.2em;
 }
 @media only screen and (min-width: 480px){
     main{
         font-size: 1.2em;
     }
-    aside,
-    footer{
+    aside{
         font-size: 1.1em;
     }
 }
@@ -634,8 +630,7 @@ footer{
     main{
         font-size: 1.1em;
     }
-    aside,
-    footer{
+    aside{
         font-size: 1.0em;
     }
 }
@@ -643,8 +638,7 @@ footer{
     main{
         font-size: 1em;
     }
-    aside,
-    footer{
+    aside{
         font-size: .9em;
     }
 }

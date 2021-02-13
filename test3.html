@@ -58,13 +58,6 @@
 			}
 			reloadPage();
 		</script> -->
-		<style>
-			.current{
-				text-decoration: overline;
-  				text-decoration-color: #b53831;
-				text-decoration-thickness: 2px;
-			}
-		</style>
 	</head>
 
 	<!-- <?php flush(); ?> -->
@@ -97,12 +90,12 @@
 					<!-- nav4 dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ -->
 					<!-- nav4 idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked-->
 					<ul id="nav4" role="menubar" aria-label="Site Sections">
-						<li role="none"><a role="menuitem" aria-haspopup="false" href="https://onemorevoice.org/index.html"><i class="fa fa-home"></i> <span id="hilink1">Home</span></a></li>
+						<li role="none"><a role="menuitem" aria-haspopup="false" href="https://onemorevoice.org/index.html"><i class="fa fa-home"></i> <span id="home-tab">Home</span></a></li>
 						<li role="none">
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-1" onclick="document.getElementById('toggle-2').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
 								<label class="dropbtn" for="toggle-1" data-opens-menu>
-									Materials
+									<span id="materials-tab">Materials</span>
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
@@ -120,7 +113,7 @@
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-2" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-3').checked = false, document.getElementById('toggle-4').checked = false">
 								<label class="dropbtn" for="toggle-2" data-opens-menu>
-									Concepts
+									<span id="concepts-tab">Concepts</span>
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
@@ -138,7 +131,7 @@
 							<div class="dropdown" role="menuitem" data-menu-component>
 								<input class="vh" type="checkbox" role="button" aria-haspopup="true" id="toggle-3" onclick="document.getElementById('toggle-1').checked = false, document.getElementById('toggle-2').checked = false, document.getElementById('toggle-4').checked = false">
 								<label class="dropbtn" for="toggle-3" data-opens-menu>
-									Misc
+									<span id="misc-tab">Misc</span>
 									<span class="vh expanded-text">expanded</span>
 									<span class="vh collapsed-text">collapsed</span>
 								</label>
@@ -328,9 +321,39 @@
 			checkUrl();
 			
 			function checkUrl () {
-				if (window.location.href.indexOf("test3") > -1) {					
-					document.getElementById("hilink1").setAttribute("class","current");
-				}
+				if (window.location.href.indexOf("test3") > -1) {	
+					document.getElementById("home-tab").setAttribute("class","current");
+				};
+				//Remove the above
+				if(location.pathname == "/" && 
+        			location.hash.length <= 1 && 
+        			location.search.length <= 1) {
+						document.getElementById("home-tab").setAttribute("class","current");
+    			}
+				if (window.location.href.indexOf("index") > -1) {	
+						document.getElementById("home-tab").setAttribute("class","current");
+				};
+				if (window.location.href.indexOf("texts") > -1 ||
+					window.location.href.indexOf("objects") > -1 ||
+					window.location.href.indexOf("books") > -1 ||
+					window.location.href.indexOf("motion") > -1 ||
+					window.location.href.indexOf("essays") > -1 ||
+					window.location.href.indexOf("_TEI") > -1 ||
+					window.location.href.indexOf("_ART") > -1) {	
+						document.getElementById("materials-tab").setAttribute("class","current");
+				};
+				if (window.location.href.indexOf("analytical") > -1 ||
+					window.location.href.indexOf("design") > -1 ||
+					window.location.href.indexOf("collaboration") > -1 ||
+					window.location.href.indexOf("guidelines") > -1) {	
+						document.getElementById("concepts-tab").setAttribute("class","current");
+				};
+				if (window.location.href.indexOf("contributors") > -1 ||
+					window.location.href.indexOf("acknowledgments") > -1 ||
+					window.location.href.indexOf("bibliography") > -1 ||
+					window.location.href.indexOf("site_map") > -1) {	
+						document.getElementById("misc-tab").setAttribute("class","current");
+				};
 			};
 		</script>
 		<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->

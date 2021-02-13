@@ -633,9 +633,9 @@ footer p a:visited{
 
 .fat-footer{
 	font-size: .95em;
+	width: fit-content;
 	margin: 0 auto;
 	padding: 1em 1em 2em 1em;
-	width: fit-content;
     display: inline-block;
 }
 @media only screen and (min-width: 480px){
@@ -666,7 +666,6 @@ footer p a:visited{
 	}
 	.fat-footer ul[role="none"]{
 		margin: 0;
-		vertical-align: top;
 	}
 }
 .fat-footer li{
@@ -675,13 +674,11 @@ footer p a:visited{
 }
 .fat-footer li.section{
 	padding: .5em 0;
-	clear: both;
 }
 @media only screen and (min-width: 768px){
 	.fat-footer li.section{
 		margin: 1em;
 		float: left;
-		clear: unset;
 	}
 }
 .fat-footer li.section ul{
@@ -693,4 +690,3 @@ footer p a:visited{
 li.section > ul > li > a{
 	padding: 3px;
 }
-

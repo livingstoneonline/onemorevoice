@@ -562,6 +562,12 @@ footer p .site-detail:last-child::after{
 		float: left;
 	}
 }
+@media only screen and (min-width: 992px){
+	.fat-footer li.section{
+		margin: 2em;
+		float: left;
+	}
+}
 .fat-footer li.section ul{
 	margin: 0;
 	padding: 0;
@@ -583,11 +589,20 @@ li.section > ul > li > a{
 	}
 }
 @media only screen and (min-width: 992px){
-	header,
 	main,
 	aside,
 	.fallback{
 		max-width: 638px;
+	}
+}
+@media only screen and (min-width: 992px){
+	header{
+		max-width: 100%;
+		padding: 0 2em;
+	}
+	header .image-wrapper{
+		max-width: 638px;
+		margin: 0 auto;
 	}
 }
 .fallback{
@@ -677,16 +692,7 @@ aside{
 }
 @media only screen and (min-width: 992px){
     .essay h2{
-        text-align: center;
-        font-size: 1.3em;
-    }
-}
-@media only screen and (min-width: 992px){
-    .translate{
-        margin: unset;
-        position: absolute;
-        top: 4em;
-        left: 1em;
+        font-size: 1.2em;
     }
 }
 [id]:target{
@@ -722,4 +728,42 @@ aside{
     font-weight: normal;
     font-style: normal;
     display: block;
+}
+header aside.sidebar{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	header aside.sidebar{
+		font-size: unset;
+		display: block;
+		visibility: visible;
+	}
+	header .sidebar{
+		font: 16px 'source_sans_proregular';
+		border: 1px #0b0b0b solid;
+		width: 100%;
+		padding: 1.5em 1em;
+	}
+	header .popular,
+	header .notable{
+		max-width: calc((100% - 638px - 8em) / 2);
+	}
+	header .popular{
+		float: left;
+		/* text-align: right; */
+	}
+	header .notable{
+		float: right;
+		text-align: right;
+	}
+	header .sidebar h2{
+		color: #0b0b0b;
+	}
+	header .sidebar ul{
+		line-height: 3em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 }

@@ -574,7 +574,8 @@ li.section > ul > li > a{
 @media only screen and (min-width: 768px){
 	header,
 	main,
-	aside{
+	aside,
+	.fallback{
 		max-width: 700px;
 		margin: 0 auto;
 	}
@@ -582,9 +583,14 @@ li.section > ul > li > a{
 @media only screen and (min-width: 992px){
 	header,
 	main,
-	aside{
+	aside,
+	.fallback{
 		max-width: 638px;
 	}
+}
+.fallback{
+	line-height: 1.6em;
+	margin-bottom: -1.7em;
 }
 header,
 body.transcription header{
@@ -598,6 +604,9 @@ body.transcription header{
 		margin-top: 3.1em;
 		margin-bottom: 1em;
 	}
+	.fallback{
+		margin-bottom: -2.1em;
+	}
 }
 @media only screen and (min-width: 768px){
 	header,
@@ -605,6 +614,14 @@ body.transcription header{
         margin-top: 4.9em;
 		margin-bottom: 2em;
 	}
+	.fallback{
+		margin-bottom: -3.9em;
+	}
+}
+.fallback span{
+	text-align: center;
+	display: block;
+	margin-bottom: .5em;
 }
 @media only screen and (min-width: 992px){
 	header,
@@ -617,14 +634,16 @@ aside{
     margin: 0 auto;
     padding: 0 .5em;
 }
-main{
+main,
+.fallback{
     font-size: 1.3em;
 }
 aside{
     font-size: 1.2em;
 }
 @media only screen and (min-width: 480px){
-    main{
+    main,
+	.fallback{
         font-size: 1.2em;
     }
     aside{
@@ -632,7 +651,8 @@ aside{
     }
 }
 @media only screen and (min-width: 768px){
-    main{
+    main,
+	.fallback{
         font-size: 1.1em;
     }
     aside{
@@ -640,7 +660,8 @@ aside{
     }
 }
 @media only screen and (min-width: 992px){
-    main{
+    main,
+	.fallback{
         font-size: 1em;
     }
     aside{

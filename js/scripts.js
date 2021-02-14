@@ -5,7 +5,7 @@ if("serviceWorker"in navigator){navigator.serviceWorker.register("/sw.js").then(
     if (window.localStorage) {
         if (!localStorage.getItem('firstLoad')) {
             localStorage['firstLoad'] = true;
-            window.location.href = window.location.origin + window.location.pathname;
+            window.location.href = window.location.origin + window.location.pathname + window.location.hash;
             // window.location.reload();
         } else 
             localStorage.removeItem('firstLoad');

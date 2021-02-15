@@ -675,7 +675,10 @@ aside.sidebar .external li{
 	padding: .2em;
 }
 aside.sidebar .external li a{
+	font-size: 1.3em;
+	font-family: 'patua_oneregular';
 	color: #0b0b0b;
+	text-transform: uppercase;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -821,6 +824,14 @@ aside{
     font-family: 'libre_franklinbold';
     src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
          url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face{
+    font-family: 'patua_oneregular';
+    src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/patuaone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     display: block;

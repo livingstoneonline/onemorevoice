@@ -680,6 +680,11 @@ aside.sidebar .external li{
 	text-decoration: none;
 	padding: .2em;
 }
+aside.sidebar .notable a:hover,
+aside.sidebar .notable a:focus{
+	color: #558591;
+	background-color: #ffffff;
+}
 aside.sidebar .external li a{
 	font-size: 1.3em;
 	font-family: 'patua_oneregular';
@@ -705,19 +710,21 @@ aside.sidebar .external li a span{
 }
 aside.sidebar .external li a img{
 	width: 125px;
+	border: 2px solid transparent;
 }
 aside.sidebar .external li a span{
 	border: 2px solid transparent;
 	display: inline-block;
 	filter: invert(0);
 }
-aside.sidebar .external li a:hover img,
-aside.sidebar .external li a:focus-within img{
-	border: 2px solid black;
-}
 aside.sidebar .popular li a:hover img,
 aside.sidebar .popular li a:focus-within img{
 	border: 3px solid black;
+	opacity: .6;
+}
+aside.sidebar .external li a:hover img,
+aside.sidebar .external li a:focus-within img{
+	border: 2px solid black;
 }
 aside.sidebar .external li a:hover span,
 aside.sidebar .external li a:focus-within span{

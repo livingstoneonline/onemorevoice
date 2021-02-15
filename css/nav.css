@@ -619,8 +619,8 @@ li.section > ul > li > a{
 	}
 	.subnav-wrapper,
 	aside.sidebar{
-		width: 300px;
-		max-width: 300px;
+		width: 250px;
+		max-width: 250px;
 		float: left;
 	}
 	#nav4,
@@ -638,6 +638,9 @@ aside.sidebar{
 	font: 16px 'source_sans_proregular';
 	font-size: unset;
 	text-align: center;
+	color: #ffffff;
+	background-color: #558591;
+	margin-left: 1em;
 	display: none;
 	visibility: hidden;
 }
@@ -651,8 +654,12 @@ aside.sidebar .sidebar-wrapper{
 	padding: 1.5em 0;
 	display: inline-block;
 }
+aside.sidebar a{
+	color: #ffffff;
+	text-decoration: none;
+}
 aside.sidebar h2{
-	color: #0b0b0b;
+	color: #ffffff;
 	margin: 0;
 }
 aside.sidebar ul{
@@ -670,49 +677,51 @@ aside.sidebar .popular li{
 	display: block;
 }
 aside.sidebar .external li{
-	color: #0b0b0b;
 	text-decoration: none;
 	padding: .2em;
 }
 aside.sidebar .external li a{
 	font-size: 1.3em;
 	font-family: 'patua_oneregular';
-	color: #0b0b0b;
 	text-transform: uppercase;
-	text-decoration: none;
 	background-color: transparent;
 }
 aside.sidebar li a img{
-	width: 100px;
-	display: block;
-	margin: 0 auto;
 	text-align: center;
+	width: 100px;
+	margin: 0 auto;
+	display: block;
 }
 aside.sidebar .popular li a img{
-	border: 2px solid transparent;
-	outline: 1px solid #e3e3e3;
+	border: 3px solid transparent;
 }
 aside.sidebar .external li a img,
 aside.sidebar .external li a span{
-	display: block;
+	text-align: center;
 	margin: 0 auto;
 	padding: .5em;
-	text-align: center;
-	border: 2px solid transparent;
+	display: block;
+	filter: invert(1);
 }
 aside.sidebar .external li a img{
 	width: 125px;
 }
 aside.sidebar .external li a span{
+	border: 2px solid transparent;
 	display: inline-block;
+	filter: invert(0);
+}
+aside.sidebar .external li a:hover img,
+aside.sidebar .external li a:focus-within img{
+	border: 2px solid black;
 }
 aside.sidebar .popular li a:hover img,
-aside.sidebar .popular li a:focus-within img,
-aside.sidebar .external li a:hover img,
-aside.sidebar .external li a:focus-within img,
+aside.sidebar .popular li a:focus-within img{
+	border: 3px solid black;
+}
 aside.sidebar .external li a:hover span,
 aside.sidebar .external li a:focus-within span{
-	border: 2px solid #204A79;
+	border: 2px solid #ffffff;
 }
 /* Header */
 header,

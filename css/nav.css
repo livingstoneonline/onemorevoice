@@ -641,8 +641,14 @@ aside.sidebar{
 	display: none;
 	visibility: hidden;
 }
+@media only screen and (min-width: 992px){
+	aside.sidebar{
+		display: block;
+		visibility: visible;
+	}
+}
 aside.sidebar .sidebar-wrapper{
-	text-align: left;
+	padding: 1.5em 0;
 	display: inline-block;
 }
 aside.sidebar h2{
@@ -651,18 +657,59 @@ aside.sidebar h2{
 }
 aside.sidebar ul{
 	list-style: none;
-	margin: 0;
+	margin: 0 0 4em 0;
 	padding: 0;
 }
 aside.sidebar h2,
 aside.sidebar li{
 	margin-bottom: 1em;
+	display: block
 }
-@media only screen and (min-width: 992px){
-	aside.sidebar{
-		display: block;
-		visibility: visible;
-	}
+aside.sidebar .popular li{
+	margin-bottom: 2em;
+	display: block;
+}
+aside.sidebar .external li{
+	color: #0b0b0b;
+	text-decoration: none;
+	padding: .2em;
+}
+aside.sidebar .external li a{
+	color: #0b0b0b;
+	text-decoration: none;
+	background-color: transparent;
+}
+aside.sidebar li a img{
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+aside.sidebar .popular li a img{
+	border: 2px solid transparent;
+	outline: 1px solid #e3e3e3;
+}
+aside.sidebar .external li a img,
+aside.sidebar .external li a span{
+	display: block;
+	margin: 0 auto;
+	padding: .5em;
+	text-align: center;
+	border: 2px solid transparent;
+}
+aside.sidebar .external li a img{
+	width: 125px;
+}
+aside.sidebar .external li a span{
+	display: inline-block;
+}
+aside.sidebar .popular li a:hover img,
+aside.sidebar .popular li a:focus-within img,
+aside.sidebar .external li a:hover img,
+aside.sidebar .external li a:focus-within img,
+aside.sidebar .external li a:hover span,
+aside.sidebar .external li a:focus-within span{
+	border: 2px solid #204A79;
 }
 /* Header */
 header,

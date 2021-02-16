@@ -117,13 +117,20 @@
 	width: 1.8em;
 	vertical-align: middle;
     padding: .15em;
-	margin: 0 2em;
+	margin: 0 .9em;
 }
 @media only screen and (min-width: 480px){
     #nav2 img,
 	#nav8 img{
         height: 2.1em;
         width: 2.1em;
+    }   
+}
+@media only screen and (min-width: 992px){
+    #nav2 img,
+	#nav8 img{
+		margin: 0 .6em;
+		/* Logo relative to margin */
     }   
 }
 #nav2 img,
@@ -153,8 +160,15 @@
 	#nav3,
 	#nav9{
 		padding-top: .1em;
-		left: 5.3em;
+		left: 3.9em;
 		transform: translate(0,-50%);
+	}
+}
+@media only screen and (min-width: 992px){
+	#nav3,
+	#nav9{
+		left: 3.5em;
+		/* OMV relative to margin */
 	}
 }
 #nav3 h1,
@@ -599,7 +613,7 @@ li.section > ul > li > a{
 }
 @media only screen and (min-width: 768px){
 	.text-container{
-		margin-top: 70px;
+		margin-top: 65px;
 		margin-bottom: 20px;
 	}
 }
@@ -611,6 +625,13 @@ li.section > ul > li > a{
 @media only screen and (min-width: 768px){
 	.page-wrapper{
 		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-width: 992px){
+	.page-wrapper{
+		width: 100%;
+		max-width: 900px;
 		margin: 0 auto;
 	}
 }
@@ -639,16 +660,18 @@ li.section > ul > li > a{
 		/* float: left; */
 		/* margin: 0 20px 0 0; */
 		/* margin: 0 auto; */
-		margin: 0 20px;
-		padding: 0 1.5em;
+		margin: 0 10px 0 10px;
+		padding: 0 1em;
 	}
-	#nav4,
 	.page-wrapper{
 		/* width: auto; */
 		/* width: 700px; */
-		min-width: 700px;
+		/* min-width: 700px; */
+		margin: 0 10px;
+		/* padding: 0 4em; */
+	}
+	#nav4{
 		margin: 0 auto;
-		padding: 0 4em;
 	}
 	aside.sidebar,
 	.page-wrapper{
@@ -844,6 +867,16 @@ aside{
 }
 /* Misc */
 /* REMOVE scroll-behavior: smooth; */
+@media only screen and (min-width: 992px){
+	header,
+	main,
+	aside{
+		background-color: #fff;
+		margin: 0 auto;
+		padding: 0 1.5em;
+		max-width: 700px;
+	}
+}
 main,
 aside{
 	padding: 0 1em;

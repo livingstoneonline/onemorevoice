@@ -31,7 +31,6 @@
 	width: 100%;
 	top: 0;
 	z-index: 1;
-	border-bottom: 1px solid #737373;
 	position: fixed;
 }
 .overlay .navigation{
@@ -60,11 +59,16 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+	/* border-right: 1px solid white;
+	border-left: 1px solid white; */
+	/* border-bottom: 1px solid #737373; */
 }
 @media only screen and (min-width: 992px){
 	.nav-wrapper{
-		display: block;
 		align-items: unset;
+		left: 50%;
+		transform: translate(-50%,0);
+		display: block;
 	}
 }
 /* skip to main content */
@@ -104,7 +108,7 @@
 #nav2,
 #nav8{
 	display: inline-block;
-	left: .5em;
+	left: .3em;
 	/* Logo relative to margin */
 	position: absolute;
 }
@@ -168,7 +172,7 @@
 @media only screen and (min-width: 992px){
 	#nav3,
 	#nav9{
-		left: 3.2em;
+		left: 3.1em;
 		/* OMV relative to margin */
 	}
 }
@@ -618,6 +622,8 @@ li.section > ul > li > a{
 	.text-container{
 		margin-top: 70px;
 		margin-bottom: 40px;
+		border-right: 1px solid #a6a6a6;
+		border-left: 1px solid #e3e3e3;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -653,10 +659,10 @@ li.section > ul > li > a{
 	}
 }
 @media only screen and (min-width: 992px){
-	.nav-wrapper{
-		left: 50%;
-		transform: translate(-50%,0);
-	}
+	/* .text-container{
+		border-right: 1px solid white;
+		border-left: 1px solid #e3e3e3;
+	} */
 	.nav-wrapper,
 	.text-container{
 		display: flex;

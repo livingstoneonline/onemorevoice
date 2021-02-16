@@ -9,10 +9,10 @@
             <titleStmt>
                 <title>Letter to the London Missionary Society</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
                 <title type="alternative">Letter to the London Missionary Society, [c.1852-53]</title><!-- Title, date -->
-                <author>Sechele, c.1810-1892</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+                <author>Sechele I, c.1810-1892</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
                 <author>Moffat, Robert 1, 1795-1883</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="first">Sechele</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Sechele</author><!-- First author only: Forename Surname -->
+				<author role="first">Sechele I</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Sechele I</author><!-- First author only: Forename Surname -->
 				<author role="normalized">Robert Moffat 1</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Heather F. Ball</principal>
                 <principal>Adrian S. Wisnicki</principal>
@@ -77,7 +77,7 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-                    <author xml:id="S">Sechele, 1812-1892</author>
+                    <author xml:id="S">Sechele, c.1810-1892</author>
                     <author xml:id="RM">Moffat, Robert 1, 1795-1883</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->

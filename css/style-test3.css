@@ -466,8 +466,8 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-size: 1.3em;
 	text-align: left;
 	line-height: 1.6em;
-	margin-left: auto;
-	margin-right: auto;
+	/* margin-left: auto;
+	margin-right: auto; */
 }
 @media only screen and (min-width: 992px){
 	.main{
@@ -475,9 +475,9 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 		display: block !important; /* Tied to overlay */
 	}
 }
-body.essay .main{
+/* body.essay .main{
 	padding-bottom: 1em;
-}
+} */
 /* toc and toc-title used for page menus */
 .toc{
 	font-size: .9em;

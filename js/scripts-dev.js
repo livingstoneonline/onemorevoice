@@ -274,7 +274,49 @@ function RandomiseHref(){
         } else 
             localStorage.removeItem('firstLoad');
         }
-})();	
+})();
+
+
+// Adapted from https://stackoverflow.com/a/21718316
+// Highlights users current section in navigation
+
+checkUrl();
+			
+function checkUrl () {
+	if (window.location.href.indexOf("test3") > -1) {	
+		document.getElementById("home-tab").setAttribute("class","current");
+	};
+	//Remove the above
+	if(location.pathname == "/" && 
+		location.hash.length <= 1 && 
+		location.search.length <= 1) {
+			document.getElementById("home-tab").setAttribute("class","current");
+	}
+	if (window.location.href.indexOf("index") > -1) {	
+			document.getElementById("home-tab").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("texts") > -1 ||
+		window.location.href.indexOf("objects") > -1 ||
+		window.location.href.indexOf("books") > -1 ||
+		window.location.href.indexOf("motion") > -1 ||
+		window.location.href.indexOf("essays") > -1 ||
+		window.location.href.indexOf("_TEI") > -1 ||
+		window.location.href.indexOf("_ART") > -1) {	
+			document.getElementById("materials-tab").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("analytical") > -1 ||
+		window.location.href.indexOf("design") > -1 ||
+		window.location.href.indexOf("collaboration") > -1 ||
+		window.location.href.indexOf("guidelines") > -1) {	
+			document.getElementById("concepts-tab").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("contributors") > -1 ||
+		window.location.href.indexOf("acknowledgments") > -1 ||
+		window.location.href.indexOf("bibliography") > -1 ||
+		window.location.href.indexOf("site_map") > -1) {	
+			document.getElementById("misc-tab").setAttribute("class","current");
+	};
+};	
 
 
 /* Commented out b/c breaks external LO links */

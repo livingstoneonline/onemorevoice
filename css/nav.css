@@ -129,6 +129,13 @@
 @media only screen and (min-width: 480px){
     #nav2 img,
 	#nav8 img{
+        height: 2.2em;
+        width: 2.2em;
+    }   
+}
+@media only screen and (min-width: 768px){
+    #nav2 img,
+	#nav8 img{
         height: 2.4em;
         width: 2.4em;
     }   
@@ -179,14 +186,21 @@
 }
 #nav3 h1,
 #nav9 h1{
-	font-family: 'merriweatherblack';
+	font-family: 'merriweatherbold';
 	font-size: 1.4em;
 	margin: 0;
 }
 @media only screen and (min-width: 480px){
     #nav3 h1,
 	#nav9 h1{
-        font-size: 1.6em;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 768px){
+    #nav3 h1,
+	#nav9 h1{
+		font-family: 'merriweatherblack';
+        font-size: 1.7em;
     }
 }
 #nav3 h1:hover,
@@ -786,11 +800,11 @@ aside.sidebar .notable a{
 aside.sidebar .notable a:hover,
 aside.sidebar .notable a:focus{
 	/* color: #558591; */
-	color: black;
+	color: #000;
 	background-color: #fff;
 }
 aside.sidebar .external li a{
-	color: black;
+	color: #000;
 	font-size: 1.2em;
 	font-family: 'patua_oneregular';
 	white-space: nowrap;
@@ -805,7 +819,7 @@ aside.sidebar li a img{
 }
 aside.sidebar .popular li a img{
 	border: 2px solid transparent;
-	outline: 1px solid #737373;
+	margin-bottom: 3px;
 }
 aside.sidebar .external li a img,
 aside.sidebar .external li a span{
@@ -826,7 +840,7 @@ aside.sidebar .external li a span{
 }
 aside.sidebar .popular li a:hover img,
 aside.sidebar .popular li a:focus-within img{
-	border: 2px solid #204A79;
+	border: 2px solid #000;
 	opacity: .6;
 }
 aside.sidebar .external li a:hover img,
@@ -834,7 +848,7 @@ aside.sidebar .external li a:focus-within img,
 aside.sidebar .external li a:hover span,
 aside.sidebar .external li a:focus-within span{
 	/* border: 2px solid #204A79; */
-	border: 2px solid black;
+	border: 2px solid #000;
 }
 /* Header */
 header,
@@ -966,6 +980,14 @@ aside{
     font-family: 'merriweatherblack';
     src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'),
          url('../fonts/merriweather-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face{
+    font-family: 'merriweatherbold';
+    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     display: block;

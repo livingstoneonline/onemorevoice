@@ -1,24 +1,6 @@
-/* HTML hierarchy and colors for nav3 */
-/*
-.navigation
-.navigation .nav-wrapper
-.navigation .nav-wrapper ul#nav4
-.navigation .nav-wrapper ul#nav4 li 
-.navigation .nav-wrapper ul#nav4 li a
+/* 1.7. Navigation  */
 
-.navigation .nav-wrapper ul#nav4 li .dropdown
-.navigation .nav-wrapper ul#nav4 li .dropdown input .vh
-.navigation .nav-wrapper ul#nav4 li .dropdown label.dropbtn
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li 
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li a
-
-(black) #0b0b0b; 
-(gray) #e3e3e3;
-(white) #fff;
-(light blue) #c4d8ef;
-*/
+/* 1.7.1. Main Navigation */
 
 .navigation{
 	font: 16px 'source_sans_proregular';
@@ -62,13 +44,15 @@
 }
 @media only screen and (min-width: 992px){
 	.nav-wrapper{
+		min-width: 992px;
+		max-width: 1200px;
 		left: 50%;
 		transform: translate(-50%,0);
-		display: block;
-		align-items: unset;
+		display: flex;
+		flex-direction: row-reverse;
 	}
 }
-/* skip to main content */
+/* Skip to main content */
 /* nav1 adapted from https://webaim.org/techniques/skipnav/ */
 #nav1 a{
 	font-size: 1em;
@@ -215,6 +199,7 @@
 }
 @media only screen and (min-width: 992px){
 	#nav4{
+		margin: 0 auto;
 		left: unset;
 		transform: unset;
 		visibility: visible;
@@ -333,6 +318,22 @@ input:checked + label::after{
 #nav4 li .dropdown .dropdown-content ul li a:hover{
 	color: #0b0b0b;
 }
+/* HTML hierarchy for nav 4 */
+/*
+.navigation
+.navigation .nav-wrapper
+.navigation .nav-wrapper ul#nav4
+.navigation .nav-wrapper ul#nav4 li 
+.navigation .nav-wrapper ul#nav4 li a
+.navigation .nav-wrapper ul#nav4 li .dropdown
+.navigation .nav-wrapper ul#nav4 li .dropdown input .vh
+.navigation .nav-wrapper ul#nav4 li .dropdown label.dropbtn
+.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content
+.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul
+.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li 
+.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li a
+*/
+
 /* Hamburger Menu & Close X */
 #nav5{
     right: 1em;
@@ -378,7 +379,6 @@ a#nav5:focus,
 #nav7 a.close:focus{
     outline: 2px solid #204A79;
 }
-/* Overlay */
 /* The following prevents the overlay from appearing above 992px */
 @media only screen and (min-width: 992px){
 	#nav7{
@@ -386,6 +386,50 @@ a#nav5:focus,
 		visibility: hidden;
 	}
 }
+
+
+/* 1.7.2. Fallback Navigation */
+
+.fallback{
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.875em;
+	background-color: #fff;
+	border-bottom: 1px solid #737373;
+	margin: 0 auto -1.7em auto;
+	padding: 1em;
+}
+@media only screen and (min-width: 480px){
+	.fallback{
+		margin-bottom: -2.1em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.fallback{
+		margin-bottom: -3.9em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.fallback{
+		min-width: 992px;
+		max-width: calc(1200px - 2em);
+		margin-bottom: -49.5px;
+	}
+}
+.fallback h1{
+	font-family: 'merriweatherbold';
+	font-style: normal;
+}
+.fallback span{
+	text-align: center;
+	font-style: italic;
+	margin-bottom: .5em;
+	display: block;
+}
+
+
+/* 1.7.3. Overlay */
+
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
@@ -468,43 +512,10 @@ a#nav5:focus,
 		margin: 0 3em;
 	}
 }
-/* Fallback nav */
-.fallback{
-	text-align: center;
-	line-height: 1.875em;
-	background-color: #fff;
-	border-bottom: 1px solid #737373;
-	margin: 0 auto -1.7em auto;
-	padding: 1em;
-}
-@media only screen and (min-width: 480px){
-	.fallback{
-		margin-bottom: -2.1em;
-	}
-}
-@media only screen and (min-width: 768px){
-	.fallback{
-		margin-bottom: -3.9em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.fallback{
-		min-width: 992px;
-		max-width: calc(1200px - 2em);
-		margin-bottom: -49.5px;
-	}
-}
-.fallback h1{
-	font-family: 'merriweatherbold';
-	font-style: normal;
-}
-.fallback span{
-	text-align: center;
-	font-style: italic;
-	margin-bottom: .5em;
-	display: block;
-}
-/* Footer / Fat-Footer */
+
+
+/* 1.8. Footer & Fat Footer */
+
 footer{
 	font-size: 1.1em;
 	font: 16px 'source_sans_proregular';
@@ -622,68 +633,10 @@ footer p .site-detail:last-child::after{
 li.section > ul > li > a{
 	padding: 3px;
 }
-/* Other Stuff */
-.translate {
-    margin: 0 0 0;
-}
-.text-container{
-	background-color: #fff;
-}
-@media only screen and (min-width: 768px){
-	.text-container{
-		margin-top: 80px;
-		margin-bottom: 40px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.text-container{
-		border-right: 1px solid #737373;
-		border-left: 1px solid #737373;
-		margin-top: 49.5px;
-		margin-bottom: 0;
-	}
-}
-@media only screen and (min-width: 992px){
-	body{
-		background-color: #e3e3e3;
-	}
-}
-@media only screen and (min-width: 768px){
-	.page-wrapper{
-		margin: 0 auto;
-		max-width: 700px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.page-wrapper{
-		margin: 0 auto;
-		width: 100%;
-		max-width: 900px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.nav-wrapper,
-	.text-container{
-		min-width: 992px;
-		max-width: 1200px;
-		display: flex;
-		flex-direction: row-reverse;
-	}
-	.subnav-wrapper,
-	aside.sidebar,
-	#nav4,
-	.page-wrapper{
-		font-size: initial;
-	}
-	#nav4{
-		margin: 0 auto;
-	}
-	.page-wrapper{
-		background-color: #fff;
-		margin: 0 auto;
-		padding: 40px 1.2em;
-	}
-}
+
+
+/* 1.9. Sidebar */
+
 .sidebar-container{
 	background-color: #548675;
 	border-left: 1px solid #737373;
@@ -798,136 +751,4 @@ aside.sidebar .external li a:focus-within img,
 aside.sidebar .external li a:hover span,
 aside.sidebar .external li a:focus-within span{
 	border: 2px solid #000;
-}
-/* Header */
-header,
-body.transcription header{
-	text-align: center;
-    margin-top: 44px;
-	position: relative;
-}
-@media only screen and (min-width: 480px){
-	header,
-    body.transcription header{
-		margin-top: 50px;
-		margin-bottom: 1em;
-	}
-}
-@media only screen and (min-width: 992px){
-	header{
-		margin-top: unset;
-	}
-}
-/* Font-sizes */
-main{
-    font-size: 1.3em;
-}
-aside{
-    font-size: 1.15em;
-}
-.fallback{
-	font-size: 1em;
-}
-@media only screen and (min-width: 768px){
-    main{
-        font-size: 1.25em;
-    }
-    aside{
-        font-size: 1.15em;
-    }
-}
-@media only screen and (min-width: 992px){
-    main{
-        font-size: 1.2em;
-    }
-    aside{
-        font-size: 1.1em;
-    }
-}
-/* Misc */
-/* REMOVE scroll-behavior: smooth; */
-main{
-	padding: 1em;
-}
-aside{
-	padding: 0 1em;
-}
-@media only screen and (min-width: 992px){
-	header, 
-	main,
-	aside{
-		background-color: #fff;
-		margin: 0 auto;
-		max-width: 700px;
-	}
-	main{
-		padding: 2em 1em 1em;
-	}
-}
-.essay h2{
-    font-size: 1.1em;
-    color: #204A79;
-    margin: .5em auto 0 auto;
-}
-@media only screen and (min-width: 992px){
-    .essay h2{
-        font-size: 1.2em;
-    }
-}
-[id]:target{
-	margin-top: -2.7em;
-	border-top: 2.7em solid transparent;
-	background-clip: padding-box;
-}
-@media only screen and (min-width: 480px){
-	[id]:target{
-		margin-top: -3.1em;
-		border-top: 3.1em solid transparent;
-	}
-}
-@media only screen and (min-width: 768px){
-	[id]:target{
-		margin-top: -4.9em;
-		border-top: 4.9em solid transparent;
-	}
-}
-@font-face{
-    font-family: 'libre_franklinregular';
-    src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'),
-         url('../fonts/librefranklin-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
-}
-@font-face {
-    font-family: 'libre_franklinbold';
-    src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
-         url('../fonts/librefranklin-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
-}
-@font-face{
-    font-family: 'merriweatherblack';
-    src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'),
-         url('../fonts/merriweather-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
-}
-@font-face{
-    font-family: 'merriweatherbold';
-    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
-         url('../fonts/merriweather-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
-}
-@font-face{
-    font-family: 'patua_oneregular';
-    src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/patuaone-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
 }

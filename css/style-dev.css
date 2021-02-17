@@ -11,26 +11,30 @@ Table of Contents
 
 ** 1.0. Main CSS **
 1.1. Principal Components 
-1.2. Headings and Related
-1.3. Main Images and Related
-1.4. Links
-1.5. Main Sections and Related
-
+1.2. Main Sections and Related
+1.3. Headings and Related
+1.4. Main Images and Related
+1.5. Links
+1.6. Fonts
+1.7. Navigation 
+1.7.1. Main Navigation
+1.7.2. Fallback Navigation
+1.7.3. Overlay
+1.8. Footer & Fat Footer
+1.9. Sidebar
 1.10. Google Translate
 1.11. Archival Texts
 1.12. Object Gallery
 1.13. Book-Length Works
 1.14. Motion Pictures 
 1.15. Page-Specific Coding
-1.16. Formatting
-1.17. Lists and Lines
+1.16. Essays
+1.17. Formatting
+1.18. Lists and Lines
 
 Appendix
-A. Alternative [id]:target Coding 
-B. Logic of Header Elements
-
+Alternative [id]:target Coding 
 */
-
 
 /*--------------------------------------*/
 
@@ -39,16 +43,19 @@ B. Logic of Header Elements
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
 /* Color shades: https://mdigi.tools/color-shades/ */
 /*
-site-blue #204A79;
-light-blue #dbe6f5;
-site-red #902D27;
-light-red: #b53831;
-whitesmoke;
-light gray #e3e3e3;
-dark gray #858585;
-dark gray (alt) #404040;
-dark brown #424242;
-near black #525252;
+(white) #fff;
+(black) #000;
+(light blue 1) #c4d8ef
+(light blue 2) #dbe6f5;
+(site blue) #204A79;
+(light red) #b53831;
+(site red) #902D27;
+(light gray) #e3e3e3;
+(dark gray) #858585;
+(darker gray) #404040;
+(dark brown) #424242;
+(near black) #525252;
+(black) #0b0b0b; 
 also see 2.9 for manuscript colors
 */
 
@@ -73,18 +80,158 @@ body{
 	margin: 0 auto;
 	padding-bottom: 0;
 }
+@media only screen and (min-width: 992px){
+	body{
+		background-color: #e3e3e3;
+	}
+}
 .text-container{
+	background-color: #fff;
 	padding: 0;
 	margin: 0 auto;
 	max-width: 100%;
 	z-index: 2;
 }
-header{
+@media only screen and (min-width: 768px){
+	.text-container{
+		margin-top: 80px;
+		margin-bottom: 40px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.text-container{
+		border-right: 1px solid #737373;
+		border-left: 1px solid #737373;
+		margin-top: 49.5px;
+		margin-bottom: 0;
+		/* the following tied to nav-wrapper */
+		min-width: 992px;
+		max-width: 1200px;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+@media only screen and (min-width: 768px){
+	.page-wrapper{
+		margin: 0 auto;
+		max-width: 700px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.page-wrapper{
+		background-color: #fff;
+		margin: 0 auto;
+		padding: 40px 1.2em;
+		width: 100%;
+		max-width: 900px;
+	}
+}
+header,
+body.transcription header{
+	text-align: center;
+    margin-top: 44px;
 	position: relative;
+}
+@media only screen and (min-width: 480px){
+	header,
+    body.transcription header{
+		margin-top: 50px;
+		margin-bottom: 1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	header{
+		background-color: #fff;
+		margin: 0 auto;
+		max-width: 700px;
+	}
 }
 
 
-/* 1.2 Headings and Related */
+/* 1.2 Main Section and Related */
+
+.main{
+	font-size: 1.3em;
+	line-height: 1.875em;
+	text-align: left;
+	padding: 1em;
+}
+@media only screen and (min-width: 768px){
+    main{
+		font-size: 1.25em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.main{
+		font-size: 1.2em;
+		background-color: #fff;
+		margin: 0 auto;
+		padding: 2em 1em 1em;
+		max-width: 700px;
+		display: block !important; /* Tied to overlay */
+	}
+}
+aside{
+    font-size: 1.2em;
+	padding: 0 1em;
+}
+@media only screen and (min-width: 768px){
+    aside{
+        font-size: 1.15em;
+    }
+}
+@media only screen and (min-width: 992px){
+    aside{
+        font-size: 1.1em;
+		background-color: #fff;
+		margin: 0 auto;
+		max-width: 700px;
+    }
+}
+.credits{
+	line-height: 1.875em;
+	text-align: left;
+}
+@media only screen and (min-width: 992px){
+	.credits{
+		display: block !important; /* Tied to overlay */
+	}
+}
+/* toc and toc-title used for page menus */
+.toc{
+	font-size: .9em;
+	padding: 1em 0 0 0;
+}
+.toc-title{
+	list-style-type: none;
+	margin-left: -1.2em;
+	display: inline-block;
+}
+.return-top{
+	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
+	font-size: .9em;
+}
+[id]:target{
+	margin-top: -2.7em;
+	border-top: 2.7em solid transparent;
+	background-clip: padding-box;
+}
+@media only screen and (min-width: 480px){
+	[id]:target{
+		margin-top: -3.1em;
+		border-top: 3.1em solid transparent;
+	}
+}
+@media only screen and (min-width: 768px){
+	[id]:target{
+		margin-top: -4.9em;
+		border-top: 4.9em solid transparent;
+	}
+}
+/* Also see Appendix for alternative [id]:target coding */
+
+
+/* 1.3 Headings and Related */
 
 header h2{
 	font-size: .9em;
@@ -106,6 +253,16 @@ header h2{
 		font-size: 1.1em;
 		display: block;
 	}
+}
+.essay h2{
+    font-size: 1.1em;
+    color: #204A79;
+    margin: .5em auto 0 auto;
+}
+@media only screen and (min-width: 992px){
+    .essay h2{
+        font-size: 1.2em;
+    }
 }
 h3{
 	font-size: 1em;
@@ -134,7 +291,7 @@ h4{
 }
 
 
-/* 1.3. Main Images and Related */
+/* 1.4. Main Images and Related */
 img{
 	color: #e6e6e6;
 	font-weight: 300;
@@ -298,18 +455,15 @@ a:focus img{
 }
 
 
-/* 1.4. Links */
+/* 1.5. Links */
 
 a,
 a:visited{
 	color: #204A79;
 }
-a:hover{
-	color: #a83c37;
-	background-color: #E3E3E3;
-}
+a:hover,
 a:focus{
-	color: #2b61a1;
+	color: #a83c37;
 	background-color: #E3E3E3;
 }
 .graphic a:hover,
@@ -321,8 +475,48 @@ a:focus{
 }
 
 
-/* 1.5. Main Sections and Related */
+/* 1.6. Fonts */
 
+@font-face{
+    font-family: 'libre_franklinregular';
+    src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face {
+    font-family: 'libre_franklinbold';
+    src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
+         url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face{
+    font-family: 'merriweatherblack';
+    src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face{
+    font-family: 'merriweatherbold';
+    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face{
+    font-family: 'patua_oneregular';
+    src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/patuaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
 @font-face{
 	font-family: 'source_sans_proregular';
 	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
@@ -331,72 +525,8 @@ a:focus{
 	font-style: normal;
 	font-display: block;
 }
-.main{
-	line-height: 1.875em;
-	text-align: left;
-}
-@media only screen and (min-width: 992px){
-	.main{
-		display: block !important; /* Tied to overlay */
-	}
-}
-/* toc and toc-title used for page menus */
-.toc{
-	font-size: .9em;
-	padding: 1em 0 0 0;
-}
-.toc-title{
-	list-style-type: none;
-	margin-left: -1.2em;
-	display: inline-block;
-}
-.return-top{
-	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
-	font-size: .9em;
-}
-/* End of critical CSS */
-/* Start of criticalTEI CSS, main */
-.credits{
-	line-height: 1.875em;
-	text-align: left;
-}
-@media only screen and (min-width: 992px){
-	.credits{
-		display: block !important; /* Tied to overlay */
-	}
-}
-/* End of criticalTEI CSS, main */
-/* for essay title with subtitle */
-.title-with-subtitle{
-	margin-bottom: .5em;
-}
-/* for essay subtitle */
-.subtitle{
-	font-size: .9em;
-	margin-top: .5em;
-	margin-bottom: .5em;
-}
-/* essay credit lines */
-.byline-divider{
-	background: white;
-	border-top: 1px dashed gray;
-	width: 45%;
-	display: inline-block;
-}
-.byline{
-	font-size: .9em;
-	margin: 0;
-	padding: 0;
-}
-.editor-line{
-	font-size: 0.8em;
-	font-style: italic;
-	margin: .8em 0 0 0;
-	padding: 0;
-}
 
 
-/* Also see Appendix for alternative [id]:target coding */
 
 
 
@@ -411,13 +541,9 @@ a:focus{
 	text-align: unset !important;
 }
 .translate{
+	margin: 0;
 	max-width: 170px;
 	overflow: hidden !important;
-}
-@media only screen and (min-width: 480px){
-	.translate{
-		margin: 0;
-	}
 }
 @media only screen and (min-width: 768px){
 	.translate{
@@ -1142,7 +1268,39 @@ ul.acknowledgments{
 }
 
 
-/* 1.16. Formatting */
+/* 1.16. Essays */
+
+/* for essay title with subtitle */
+.title-with-subtitle{
+	margin-bottom: .5em;
+}
+/* for essay subtitle */
+.subtitle{
+	font-size: .9em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+/* essay credit lines */
+.byline-divider{
+	background: white;
+	border-top: 1px dashed gray;
+	width: 45%;
+	display: inline-block;
+}
+.byline{
+	font-size: .9em;
+	margin: 0;
+	padding: 0;
+}
+.editor-line{
+	font-size: 0.8em;
+	font-style: italic;
+	margin: .8em 0 0 0;
+	padding: 0;
+}
+
+
+/* 1.17. Formatting */
 
 .black{
 	color: black;
@@ -1183,7 +1341,7 @@ ul.acknowledgments{
 }
 
 
-/* 1.17. Lists and Lines */
+/* 1.18. Lists and Lines */
 
 ol,
 ul{

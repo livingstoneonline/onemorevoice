@@ -620,6 +620,9 @@ li.section > ul > li > a{
 .translate {
     margin: 0 0 0;
 }
+.text-container{
+	background-color: #fff;
+}
 @media only screen and (min-width: 768px){
 	.text-container{
 		margin-top: 80px;
@@ -675,13 +678,16 @@ li.section > ul > li > a{
 		padding: 40px 1.2em;
 	}
 }
+.sidebar-container{
+	background-color: #548675;
+	border-left: 1px solid #737373;
+}
 aside.sidebar{
 	font-size: unset;
 	font: 16px 'source_sans_proregular';
 	text-align: center;
 	color: #fff;
 	background-color: #548675;
-	border-left: 1px solid #737373;
 	margin: 0;
 	padding: 40px 0;
 	min-width: 245px;

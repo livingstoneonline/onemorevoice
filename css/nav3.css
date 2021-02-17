@@ -40,7 +40,7 @@
 @media only screen and (min-width: 480px){
     .navigation,
 	.overlay .navigation{
-        height: 59.5px;
+        height: 49.5px;
     }
 }
 .navigation a,
@@ -633,7 +633,7 @@ li.section > ul > li > a{
 	.text-container{
 		border-right: 1px solid #737373;
 		border-left: 1px solid #737373;
-		margin-top:59.5px;
+		margin-top: 49.5px;
 		margin-bottom: 0;
 	}
 }
@@ -804,7 +804,7 @@ body.transcription header{
 	header,
     body.transcription header{
 		margin-top: 50px;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -849,21 +849,23 @@ aside{
 }
 /* Misc */
 /* REMOVE scroll-behavior: smooth; */
-@media only screen and (min-width: 992px){
-	header,
-	main,
-	aside{
-		background-color: #fff;
-		margin: 0 auto;
-		padding: 0;
-		max-width: 700px;
-	}
-}
 main{
 	padding: 1em;
 }
 aside{
 	padding: 0 1em;
+}
+@media only screen and (min-width: 992px){
+	header, 
+	main,
+	aside{
+		background-color: #fff;
+		margin: 0 auto;
+		max-width: 700px;
+	}
+	main{
+		padding: 2em 1em 1em;
+	}
 }
 .essay h2{
     font-size: 1.1em;

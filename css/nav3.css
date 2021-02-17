@@ -491,10 +491,16 @@ a#nav5:focus,
 	.fallback{
 		min-width: 992px;
 		max-width: calc(1200px - 2em);
+		margin-bottom: -49.5px;
 	}
+}
+.fallback h1{
+	font-family: 'merriweatherbold';
+	font-style: normal;
 }
 .fallback span{
 	text-align: center;
+	font-style: italic;
 	margin-bottom: .5em;
 	display: block;
 }
@@ -674,7 +680,7 @@ li.section > ul > li > a{
 	}
 	.page-wrapper{
 		background-color: #fff;
-		margin: 0;
+		margin: 0 auto;
 		padding: 40px 1.2em;
 	}
 }
@@ -813,20 +819,29 @@ body.transcription header{
 	}
 }
 /* Font-sizes */
-main,
-.fallback{
+main{
     font-size: 1.3em;
 }
 aside{
     font-size: 1.15em;
 }
+.fallback{
+	font-size: 1em;
+}
 @media only screen and (min-width: 768px){
-    main,
-	.fallback{
+    main{
         font-size: 1.25em;
     }
     aside{
-        font-size: 1.125em;
+        font-size: 1.15em;
+    }
+}
+@media only screen and (min-width: 992px){
+    main{
+        font-size: 1.2em;
+    }
+    aside{
+        font-size: 1.1em;
     }
 }
 /* Misc */

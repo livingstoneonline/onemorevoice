@@ -165,7 +165,7 @@
 @media only screen and (min-width: 768px){
 	#nav3,
 	#nav9{
-		padding-top: .1em;
+		/* padding-top: .1em; */
 		left: 3.9em;
 		transform: translate(0,-50%);
 	}
@@ -179,7 +179,7 @@
 }
 #nav3 h1,
 #nav9 h1{
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: 'merriweatherblack';
 	font-size: 1.4em;
 	margin: 0;
 }
@@ -958,6 +958,14 @@ aside{
     font-family: 'libre_franklinbold';
     src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
          url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+}
+@font-face{
+    font-family: 'merriweatherblack';
+    src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     display: block;

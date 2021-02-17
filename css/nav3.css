@@ -471,7 +471,7 @@ a#nav5:focus,
 /* Fallback nav */
 .fallback{
 	text-align: center;
-	line-height: 1.6em;
+	line-height: 1.875em;
 	background-color: #fff;
 	border-bottom: 1px solid #737373;
 	margin: 0 auto -1.7em auto;
@@ -533,7 +533,7 @@ footer p a:visited{
 	color: #204A79;
 }
 footer p .site-detail{
-	line-height: 1.6em;
+	line-height: 1.875em;
 	padding: 0 .2em;
 }
 footer p .site-detail::after{
@@ -818,33 +818,15 @@ main,
     font-size: 1.3em;
 }
 aside{
-    font-size: 1.2em;
-}
-@media only screen and (min-width: 480px){
-    main,
-	.fallback{
-        font-size: 1.2em;
-    }
-    aside{
-        font-size: 1.1em;
-    }
+    font-size: 1.15em;
 }
 @media only screen and (min-width: 768px){
     main,
 	.fallback{
-        font-size: 1.1em;
+        font-size: 1.25em;
     }
     aside{
-        font-size: 1.0em;
-    }
-}
-@media only screen and (min-width: 992px){
-    main,
-	.fallback{
-        font-size: 1em;
-    }
-    aside{
-        font-size: .9em;
+        font-size: 1.125em;
     }
 }
 /* Misc */

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020062">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+
+<!-- Fill out authors, comp date, and place later -->
+
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“The Caffre War”</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘The Caffre War’</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“The Caffre War,” 28 February 1853</title>
+				<!-- Title, date -->
+				<author>Moshoeshoe I, c.1786-1870</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first"></author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized"></author>
+				<!-- First author only: Forename Surname -->
+				<author></author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized"></author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="CM">
+					<name>Caitlin Matheis</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020062</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://www.gale.com/c/the-times-digital-archive">The Times Digital Archive</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="narrow">
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>The Times</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="pages">5</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<date>28 February 1853</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“The Caffre War”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="M">Moshoeshoe I, c.1786-1870</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="publication" when="1853-02-28">28 February 1853</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace"></placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-02-09" who="#CM"></change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div>
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+    <pb facs="liv_020062_0001" n="0001"/>
+<!-- <lb/> --><p>THE CAFFRE WAR.</p>
+
+<!-- <lb/> --><p>By the Indiana we have advices from Cape 
+<!-- <lb/> -->Town to the 24th of January, 39 days later 
+<!-- <lb/> -->than those by the Lady Jocelyn, which left on 
+<!-- <lb/> -->the 16th of December and reached Plymouth on 
+<!-- <lb/> -->the 24th of January. General Cathcart, with 
+<!-- <lb/> -->2,000 men, had then entered the Orange River 
+<!-- <lb/> -->Sovereignty to settle disputes between the 
+<!-- <lb/> -->powerful Basuta chief, Moshesh, and the Sove-
+<!-- <lb/> -->reignty farmers, on the subject of plundered cattle. 
+<!-- <lb/> -->Assistant-Commissioners Hogge and Owen had 
+<!-- <lb/> -->previously investigated the whole case, and decided 
+<!-- <lb/> -->that certain fines should be paid by delinquents of 
+<!-- <lb/> -->all classes and complexion. The fine imposed on 
+<!-- <lb/> -->Moshesh was never paid,and General Cathcart, under 
+<!-- <lb/> -->date December 13, demanded of that chief, within 
+<!-- <lb/> -->three days, 10,000 head of cattle and 1,000 horses, 
+<!-- <lb/> -->and, in default, threatened to take them hirmself or 
+<!-- <lb/> -->make reprisals. Moshesh came into the camp the 
+<!-- <lb/> -->next day and had a "parley" with the Governor. 
+<!-- <lb/> -->On the 18th Moshesh's son, Nehemiah, came in 
+<!-- <lb/> -->with 3,500 head of cattle.</p>
+
+<!-- <lb/> --><p>On the 19th no more cattle appearing, Lieutenaut- 
+<!-- <lb/> -->Colonel Eyre, with the cavalry brigade, two guns, 
+<!-- <lb/> -->and one brigade of Infantry, encamped on the 
+<!-- <lb/> -->Upper Caledon Waggon Drift, leading to Molitsani's 
+<!-- <lb/> -->country. On the 20th this force, accompanied by His 
+<!-- <lb/> -->Excellency in person, marched at daylight in three 
+<!-- <lb/> -->columns. The force consisted of-</p>
+
+<!-- <lb/> --><p>Detachment of 12th Lancers, under Lieutenant 
+<!-- <lb/> -->Gough.</p>
+
+<!-- <lb/> --><p>A demi-battery of 12-pounder howitzers, under 
+<!-- <lb/> -->Captain Robinson, R. A.</p>
+
+<!-- <lb/> --><p>Two companies of the 43d Regiment, under Major 
+<!-- <lb/> -->Phillips.</p>
+
+<!-- <lb/> --><p>Detachment of Cape Mounted Rifles, under En-
+<!-- <lb/> -->sign Rorke.</p>
+
+<!-- <lb/> --><p>According to Colonel Cloete's official despatch, the 
+<!-- <lb/> -->Basutos, to defend their vast droves of cattle, first
+<!-- <lb/> -->fired on him and Captain Tylden. An attempt at 
+<!-- <lb/> -->parley by the Governor was answered by a shot, 
+<!-- <lb/> -->when two rounds of shrapnel caused the enemy to 
+<!-- <lb/> -->fly from the southern angle of the Berea towards 
+<!-- <lb/> -->Thaba Bossigo. The despatch proceeds:-</p> 
+
+<!-- <lb/> --><p>"The infantry, strengthened by a company of the 43d 
+<!-- <lb/> -->regiment, under Captain the Hon. Percy Herbert, were 
+<!-- <lb/> -->now brought up, and the column advanced, crossed the deep 
+<!-- <lb/> -->mountain stream 'Rietspruit,' and were posted on a com- 
+<!-- <lb/> -->manding knoll at its junction with the Little Caledon 
+<!-- <lb/> -->River) on the Thaba Bossigo plains, covering the approaches 
+<!-- <lb/> -->by which Lieutenant-Colonel Eyre and Lieutenant-Colonol 
+<!-- <lb/> -->Napier's columns were to join.</p> 
+
+<!-- <lb/> --><p>"While in this position the enemy were collecting in 
+<!-- <lb/> -->fresh patches of horsemen in all directions; those approach- 
+<!-- <lb/> -->ing within distance were driven back. On the clearing 
+<!-- <lb/> -->away of a thunderstorm and rain the enemy suddenly dis-
+<!-- <lb/> -->played his whole force. Masses of horsemen were observed 
+<!-- <lb/> -->to move from the Thaba Bossigo Poort to turn the General's 
+<!-- <lb/> -->right, while large bodies extended along the front. These 
+<!-- <lb/> -->movements were conducted with the utmost order and re-
+<!-- <lb/> -->gularity.</p> 
+
+<!-- <lb/> --><p>"Lientenant-Colonel Eyre's division joined at 5 p.m., 
+<!-- <lb/> -->with 1,500 head of cattle, which it was necessary to secure, 
+<!-- <lb/> -->for which purpose some kraals in a commanding position 
+<!-- <lb/> -->were ordered to be occupied. The enemy, who had now 
+<!-- <lb/> -->mustered not less than 6,000 horsemen, made every effort to 
+<!-- <lb/> -->assail the troops moving into their bivouac, repeating their 
+<!-- <lb/> -->attacks on front and rear, but were repulsed by the troops. 
+<!-- <lb/> -->The demi-battery, by a round of canister, silenced the 
+<!-- <lb/> -->enemy's fire, which had been kept up till 8 p.m., when they 
+<!-- <lb/> -->disappeared from the field, having suffered severely."</p> 
+
+<!-- <lb/> --><p>Lieutenant-Colonel Eyre in his report states his 
+<!-- <lb/> -->force to be-</p>
+
+<!-- <lb/> --><p>Rank and File. 
+<!-- <lb/> -->12th Royal Lancers... ... ... ... 11 
+<!-- <lb/> -->Cape Mounted Rifles ... ... ... 12 
+<!-- <lb/> -->Royal Artillery ... ... ... ... 13 
+<!-- <lb/> -->43d Light Infantry ... ... ... ... 102 
+<!-- <lb/> -->73d Regiment ... ... ... ... 271 
+<!-- <lb/> -->Rifle Brigado ... ... ... ... 90
+<!-- <lb/> -->Total ... ... ... ... 499</p> 
+
+<!-- <lb/> --><p>And says-</p>
+
+<!-- <lb/> --><p>"Having reached the foot of the Berea mountains, I ob-
+<!-- <lb/> -->served the Basutas drawn up in considerable force. A herd 
+<!-- <lb/> -->of cattle was presented in view, as if to entice us on, while 
+<!-- <lb/> -->by their war shouts they evidently defied our arms. On 
+<!-- <lb/> -->the right I detached the light company of the 73d, under 
+<!-- <lb/> -->Lieutenant Gawler, with directions to climb the krantz 
+<!-- <lb/> -->which commanded the enemy on that side, and, bringing 
+<!-- <lb/> -->his right shoulders forward, to turn the left flank of the 
+<!-- <lb/> -->enemy. I directed the Hon. L. Curzon to advance with
+<!-- <lb/> -->the Rifle Brigade, and ascend the mountain a little on the 
+<!-- <lb/> -->left of the ligit company of the 73d. I moved up simul-
+<!-- <lb/> -->taneously with the remainder of my force along the regular 
+<!-- <lb/> -->but rugged path which seemed to lead into the centre of the 
+<!-- <lb/> -->enemy's position. The enemy fired and attempted to op- 
+<!-- <lb/> -->pose our progress until we reached the crest of the heights, 
+<!-- <lb/> -->when they instantly dispersed. I pursued them with the 
+<!-- <lb/> -->few mounted men under Lieutenant Goodrich, of the 
+<!-- <lb/> -->Cape Mounted Rifles, and we succeeded in capturing 
+<!-- <lb/> -->at least 30,000 head of cattle, with many horses 
+<!-- <lb/> -->having saddles on them. The enemy sustained some 
+<!-- <lb/> -->loss; 38 were killed, and several were found dead; 
+<!-- <lb/> -->and so completely defeated did the enemy appear 
+<!-- <lb/> -->that some were taken prisoners and made to drive back 
+<!-- <lb/> -->their own cattle. We found it, however, quite impossible, 
+<!-- <lb/> -->with so few mounted men, to drive on such large numbers, 
+<!-- <lb/> -->and in the effort to do so many thousand were driven by the 
+<!-- <lb/> -->few mounted Fingoes attached to my division down the 
+<!-- <lb/> -->opposite side of the mountain to that which my instructions 
+<!-- <lb/> -->required me to take. I was therefore obliged to abandon 
+<!-- <lb/> -->them and content myself with some 1,500. About 1 o'clock 
+<!-- <lb/> -->p.m. from 200 to 300 mounted men, with white caps and 
+<!-- <lb/> -->lances (which caused us to mistake them for his Excellency's 
+<!-- <lb/> -->escort), suddenly appeared in our front. Before the mis- 
+<!-- <lb/> -->take could be discovered two or three of our party fell into 
+<!-- <lb/> -->their hands, and I deeply regret to state that Cap 
+<!-- <lb/> -->tain Faunce, 73d Regiment, Deputy-Adjutant Quarter- 
+<!-- <lb/> -->master-General, was of that number. The enemy's 
+<!-- <lb/> -->force now rapidly increased, until we were opposed 
+<!-- <lb/> -->to at least 700 or 800 mounted men, who drew up in line 
+<!-- <lb/> -->in admirable order, and attempted to attack our front and 
+<!-- <lb/> -->left flank. As it was necessary to present a front, in order 
+<!-- <lb/> -->to protect our cattle and baggage, I formed three companies 
+<!-- <lb/> -->in skirmishing order, two in front and one thrown back on 
+<!-- <lb/> -->our left, keeping one in close order in support. The enemy 
+<!-- <lb/> -->charged up to us several times within 200 or 300 yards, but, 
+<!-- <lb/> -->daunted by the coolness and steadiness of the men lying 
+<!-- <lb/> -->down to receive them, dared not to approach nearer. As 
+<!-- <lb/> -->my instruction required me to proceed to Thaba Bossihgo, I 
+<!-- <lb/> -->directed the cattle to he driven down a path on my right, 
+<!-- <lb/> -->intending to follow with the remainder of mv force. No 
+<!-- <lb/> -->sooner was this discerned by the enemy, than eo cheered and 
+<!-- <lb/> -->charged us, on which we halted and reformed in skirmishing 
+<!-- <lb/> -->order, and again repelled him. Captain the Hon.G.Devereux 
+<!-- <lb/> -->at the same time made some good shots with the rockets, 
+<!-- <lb/> -->and the result was the total disappearance of the enemy."</p> 
+
+<!-- <lb/> --><p>Lieutenant-Colonel G. Napier states his force to 
+<!-- <lb/> -->have been-12th Lancers, 114 rank and file, under 
+<!-- <lb/> -->Major Tottenham; Cape Mounted Rifles, 119, 
+<!-- <lb/> -->under Major Somerset, and says, "Having col-
+<!-- <lb/> -->lected a great number of cattle I commenced 
+<!-- <lb/> -->driving them down the north-east side of the Berea 
+<!-- <lb/> -->mountains; when half way down, 700 mounted men 
+<!-- <lb/> -->attacked the rear, who retired. On the open 
+<!-- <lb/> -->ground the Lancers charged, and the enemy fled. 
+<!-- <lb/> -->Near the drift, on the Caledon, a large body of 
+<!-- <lb/> -->mounted Caffres were repulsed by the Minie rifles of 
+<!-- <lb/> -->the 74th Highlanders, under Captain Bruce."</p> 
+
+<!-- <lb/> --><p>In this contest, begun early in the morning of the 
+<!-- <lb/> -->20th of December, and not closed until 8 p.m., 
+<!-- <lb/> -->6,000 mounted Caffres are said to have been en- 
+<!-- <lb/> -->gaged. At the close Colonel Eyre had secured 
+<!-- <lb/> -->1,500 and Colonel Napier 3,000 head of cattle.</p> 
+
+<!-- <lb/> --><p>The casualties on the part of the British were 
+<!-- <lb/> -->very severe. Killed-Captain Faunce, 73d, and 
+<!-- <lb/> -->2 privates; 12th Lancers, 4 non-commissioned officers 
+<!-- <lb/> -->and 23 privates; Rifles, 3 privates; and 5 Cape 
+<!-- <lb/> -->Mounted Rifles. Wounded-2 officers, 4 non- 
+<!-- <lb/> -->commissioned officers, and 9 privates. Total- 
+<!-- <lb/> -->killed, 38; wounded, 15.</p> 
+
+<!-- <lb/> --><p>This great sacrifice seems, however, to have 
+<!-- <lb/> -->secured the submission of Moshesh, who, the next 
+<!-- <lb/> -->day, the 21st of December, sent to the camp the 
+<!-- <lb/> -->following letter:-</p>
+
+<!-- <lb/> --><p>"Thaba Bosigo, Dec. 20th, 1852.</p>
+
+<!-- <lb/> --><p>"Your Excellency,-This day you have fought against 
+<!-- <lb/> -->my people, and taken much cattle. As the object for which 
+<!-- <lb/> -->you have come is to have a compensation for boers, I beg 
+<!-- <lb/> -->you will be satisfied with what you have taken. I entreat 
+<!-- <lb/> -->peace from you; you heve shown your power, you have 
+<!-- <lb/> -->chastised,-let be enough I pray you, and let me no 
+<!-- <lb/> -->longer be considered an enemy of the Queen. I will try 
+<!-- <lb/> -->all I can to keep my people in order in the future.</p> 
+
+<!-- <lb/> --><p>"Your humble servant,</p>
+
+<!-- <lb/> --><p>"MOSHESH.</p>
+
+<!-- <lb/> --><p>To which his Excellency returned following 
+<!-- <lb/> -->reply:-</p>
+
+<!-- <lb/> --><p>"Camp, Caledon River, Dec. 3lst, 1852.</p>
+
+<!-- <lb/> --><p>"Chief Moshesh,-I have received your letter. The 
+<!-- <lb/> -->words are those of a great chief, and of one who has the 
+<!-- <lb/> -->interests of his people at heart. But I care little for words; 
+<!-- <lb/> -->I judge of men by their actions. I told you that if you did 
+<!-- <lb/> -->not pay the fine, I must go and take it. I am a man who 
+<!-- <lb/> -->never breaks his word, otherwise the Queen would not have 
+<!-- <lb/> -->sent me here. I have taken the fine by force, and I am
+<!-- <lb/> -->satisfied.</p>
+
+<!-- <lb/> --><p>"I am not angry with your people for fighting in defence 
+<!-- <lb/> -->of their property; for those who fought-and fought well- 
+<!-- <lb/> -->were not all of them thieves, and I am sorry that many 
+<!-- <lb/> -->were killed. This is your fault; for if you had paid the 
+<!-- <lb/> -->fine, it would not have happened. I now desire not to con-
+<!-- <lb/> -->sider you, Chief, as an enemy of the Queen, but I must 
+<!-- <lb/> -->proclaim martial law in the Sovereignty, to give to com- 
+<!-- <lb/> -->mandants and fieldcornets power to make commandos ia a 
+<!-- <lb/> -->regular manner, and, with the consent of the Resident, 
+<!-- <lb/> -->enter your country in search of plundered horses and cattle 
+<!-- <lb/> -->that may be stolen after this time. And I expect you to 
+<!-- <lb/> -->assist them; for though you are a great chief, it seems that 
+<!-- <lb/> -->you either do not, or cannot, keep your own people from 
+<!-- <lb/> -->stealing; and among the cattle you sent as part of your 
+<!-- <lb/> -->fine there were three oxen the property of Mr. Bain, of 
+<!-- <lb/> -->Bloem Fontein, stolen since I crossed the Caledon River. 
+<!-- <lb/> -->Now, therefore, Chief Moshesh, I consider your past obli- 
+<!-- <lb/> -->gations fulflled, and hope that you will take measures for 
+<!-- <lb/> -->preventing such abuses in future. In the meantime, as the 
+<!-- <lb/> -->Queen's representative, I subscribe myself</p> 
+
+<!-- <lb/> --><p>"Your friend,</p>
+
+<!-- <lb/> --><p>"GEO. CATHCART, Governor.</p> 
+
+<!-- <lb/> --><p>"P.S.-Chief, I shall be glad to see either yourself or 
+<!-- <lb/> -->your sons, in the same friendly manner and ie the same 
+<!-- <lb/> -->good faith as before the fight, at Platberg, to-morrow or 
+<!-- <lb/> -->next day, but I shall now send away the army, and go back
+<!-- <lb/> -->to the colony in a few days' time. </p>
+
+<!-- <lb/> --><p>" G. C."</p>
+
+<!-- <lb/> --><p>"PROCLAMATION.</p>
+
+<!-- <lb/> --><p>"Whereas the Chief Moshesh, as the result of the battle 
+<!-- <lb/> -->of Beres, has made full and humble submission, and sued 
+<!-- <lb/> -->for peace, which hasheen granted.</p> 
+
+<!-- <lb/> --><p>"And whereas, although the said chief has evinced his 
+<!-- <lb/> -->desire to preserve the good understanding and amity with 
+<!-- <lb/> -->Her Majesty's Government, now happily restored, by pro- 
+<!-- <lb/> -->mising to do all in his power to keep his people in order, it 
+<!-- <lb/> -->is scarcely to be expected that he will be able so to restrain 
+<!-- <lb/> -->their lawless practices as to entirely prevent cattle stealing 
+<!-- <lb/> -->for the future.</p> 
+
+<!-- <lb/> --><p>"And whereas, in my last reply to the said Chief, I ex- 
+<!-- <lb/> -->pressed my intention of proclaiming martial law, in order to 
+<!-- <lb/> -->restore to the burghers the full powers of making com- 
+<!-- <lb/> -->mandos, which seem to have fallen into disuse; and whereas, 
+<!-- <lb/> -->upon further consideration, I have reason to believe that 
+<!-- <lb/> -->the course of proclaiming martial law might be misinterpre- 
+<!-- <lb/> -->ted and misunderstood, and tend to unnecessary irritation, 
+<!-- <lb/> -->excitement, and alarm, and that the object I have in view 
+<!-- <lb/> -->can be attained without proclaiming martial law as afore-
+<!-- <lb/> -->said; now, therefore, I do hereby, by virtue of all the 
+<!-- <lb/> -->powers vested in me, provisionally and until sufficient legal 
+<!-- <lb/> -->enactment may be framed with the same intent, order, com-- 
+<!-- <lb/> -->mand, and direct all civil commissioners, commandants, and 
+<!-- <lb/> -->fieldcornets within the Orange River Territory, to be ready 
+<!-- <lb/> -->to organise their burghers for the purposes of self defence, 
+<!-- <lb/> -->and for the protection, security, and recovery of their pro- 
+<!-- <lb/> -->perty in case of need.</p>
+
+<!-- <lb/> --><p>"God save the Queen!</p> 
+
+<!-- <lb/> --><p>"Given under my band sad seal, at my Camp, Platberg, 
+this 23d day of December, 1852,</p> 
+
+<!-- <lb/> --><p>"GEORGE CATHCART,</p>
+
+<!-- <lb/> --><p>"Governor and High Commissioner.</p> 
+
+<!-- <lb/> --><p>"By command of his Excellency the Governor and High 
+<!-- <lb/> -->Commisioner,</p> 
+
+<!-- <lb/> --><p>"JOHN AYLIFF,</p>
+
+<!-- <lb/> --><p>"Acting Secretary to the High Commissioner."</p>
+
+			</div>
+		</body>
+	</text>
+</TEI>

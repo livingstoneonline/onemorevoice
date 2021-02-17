@@ -37,27 +37,27 @@ window.addEventListener('scroll', stickyNavigation);
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 function openNav() {
-	document.getElementById("nav3").style.display = "block";
+	document.getElementById("nav7").style.display = "block";
 	document.getElementById("html").style.overflowY = "hidden";
-	const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
-	for(const element of elements){
-		if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
-	}
+	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
+	// for(const element of elements){
+	// 	if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
+	// }
 }
 
 function closeNav() {
-	document.getElementById("nav3").style.display = "none";
+	document.getElementById("nav7").style.display = "none";
 	document.getElementById("html").style.overflowY = "unset";
-	const elements = ["skiptocontent", "title-div", "main", "manuscript-div", "journal-div", "credits-div", "credits1-div", "credits2-div", "footer-div"];
-	for(const element of elements){
-		if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
-	}
+	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
+	// for(const element of elements){
+	// 	if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
+	// }
 }
 
 /* Keyboard Navigation for Dropdown Menus */
 /* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
 
-const menu = document.getElementById('nav1');
+const menu = document.getElementById('nav4');
 menu.addEventListener('keydown', handleKeydown);
 menu.addEventListener('focusin', handleFocusIn);
 
@@ -288,6 +288,19 @@ function RandomiseHref(){
 		}
 }
 
+
+// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
+// Reloads given page, keeps base URL, path, and any #, but removes random query string
+(function () {
+    if (window.localStorage) {
+        if (!localStorage.getItem('firstLoad')) {
+            localStorage['firstLoad'] = true;
+            window.location.href = window.location.origin + window.location.pathname + window.location.hash;
+            // window.location.reload();
+        } else 
+            localStorage.removeItem('firstLoad');
+        }
+})();	
 
 /* Commented out b/c breaks external LO links */
 

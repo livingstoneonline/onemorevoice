@@ -1,5 +1,6 @@
 /* Service Worker */
 /* Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker */
+
 if ("serviceWorker" in navigator) {
 	navigator.serviceWorker
 		.register("/sw.js")
@@ -12,47 +13,19 @@ if ("serviceWorker" in navigator) {
 }
 
 
-/* StickyNav */
-/* Taken from https://www.mattmorgante.com/technology/sticky-navigation-bar-javascript */
-
-const nav = document.querySelector('#nav2');
-const navTop = nav.offsetTop;
-
-function stickyNavigation() {
-
-	if (window.scrollY >= navTop + 1) {
-		// nav offsetHeight = height of nav
-		document.body.style.paddingTop = nav.offsetHeight + 'px';
-		document.body.classList.add('fixed-nav');
-	} else {
-		document.body.style.paddingTop = 0;
-		document.body.classList.remove('fixed-nav');
-	}
-}
-
-window.addEventListener('scroll', stickyNavigation);
-
-
 /* Overlay */
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 function openNav() {
 	document.getElementById("nav7").style.display = "block";
 	document.getElementById("html").style.overflowY = "hidden";
-	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
-	// for(const element of elements){
-	// 	if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "none"};
-	// }
 }
 
 function closeNav() {
 	document.getElementById("nav7").style.display = "none";
 	document.getElementById("html").style.overflowY = "unset";
-	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
-	// for(const element of elements){
-	// 	if (document.getElementById(element) !== null) {document.getElementById(element).style.display = "block"};
-	// }
 }
+
 
 /* Keyboard Navigation for Dropdown Menus */
 /* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
@@ -291,6 +264,7 @@ function RandomiseHref(){
 
 // Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 // Reloads given page, keeps base URL, path, and any #, but removes random query string
+
 (function () {
     if (window.localStorage) {
         if (!localStorage.getItem('firstLoad')) {
@@ -301,6 +275,7 @@ function RandomiseHref(){
             localStorage.removeItem('firstLoad');
         }
 })();	
+
 
 /* Commented out b/c breaks external LO links */
 

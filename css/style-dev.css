@@ -1,3 +1,4 @@
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
@@ -79,6 +80,7 @@ body{
 	top: 0px !important; /* Needed for Google Translate */
 	margin: 0 auto;
 	padding-bottom: 0;
+	max-width: 100%;
 }
 @media only screen and (min-width: 992px){
 	body{
@@ -381,7 +383,7 @@ a:focus img{
 		min-height: 580px;
 	}
 }
-@media screen and (min-width: 992px){
+/* @media screen and (min-width: 992px){
 	.content-holder-1{
 		min-height: 155px;
 	}
@@ -397,7 +399,7 @@ a:focus img{
 	.content-holder-5{
 		min-height: 529px;
 	}
-}
+} */
 /* Caption for main image */
 .image-wrapper{
 	line-height: 0;
@@ -919,14 +921,18 @@ a#nav5:focus,
 
 /* 1.7.2. Fallback Navigation */
 
+.fallback-container{
+	background-color: #fff;
+}
 .fallback{
-	font-size: 1em;
+	font-size: .9em;
 	text-align: center;
 	line-height: 1.875em;
 	background-color: #fff;
 	border-bottom: 1px solid #737373;
 	margin: 0 auto -1.7em auto;
-	padding: 1em;
+	padding: 0 2em 1em;
+	max-width: calc(700px - 4em);
 }
 @media only screen and (min-width: 480px){
 	.fallback{
@@ -935,14 +941,14 @@ a#nav5:focus,
 }
 @media only screen and (min-width: 768px){
 	.fallback{
+		font-size: 1em;
 		margin-bottom: -3.9em;
 	}
 }
 @media only screen and (min-width: 992px){
 	.fallback{
-		min-width: 992px;
-		max-width: calc(1200px - 2em);
 		margin-bottom: -49.5px;
+		padding-top: 1em;
 	}
 }
 .fallback h1{
@@ -977,6 +983,7 @@ a#nav5:focus,
 	overflow-y: scroll;
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 	display: none;
+	visibility: hidden;
 	opacity: 1;
 }
 .overlay-content{
@@ -989,6 +996,7 @@ a#nav5:focus,
 	width: fit-content;
 	position: relative;
 	display: inline-block;
+	visibility: visible;
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{

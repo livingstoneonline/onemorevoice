@@ -250,14 +250,16 @@ function AddRelNoopener(){
 
 
 /* Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end. */
+/* Note: Add random string bit currently disabled. */
 
 RandomiseHref();
 
 function RandomiseHref(){
 		var links = document.querySelectorAll("a:not([href^='http']):not([href*='#']):not([href^='mailto']):not([onclick]):not([class='trans-return']):not([class='art-return'])");
 		for(var i = 0; i < links.length; i++){
-			var randomString = Math.floor(Math.random()*1000000);
-			links[i].href = links[i].href + "?=" + randomString;
+			// var randomString = Math.floor(Math.random()*1000000);
+			// links[i].href = links[i].href + "?=" + randomString;
+			links[i].href = links[i].href;
 		}
 }
 
@@ -265,16 +267,16 @@ function RandomiseHref(){
 // Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 // Reloads given page, keeps base URL, path, and any #, but removes random query string
 
-(function () {
-    if (window.localStorage) {
-        if (!localStorage.getItem('firstLoad')) {
-            localStorage['firstLoad'] = true;
-            window.location.href = window.location.origin + window.location.pathname + window.location.hash;
-            // window.location.reload();
-        } else 
-            localStorage.removeItem('firstLoad');
-        }
-})();
+// (function () {
+//     if (window.localStorage) {
+//         if (!localStorage.getItem('firstLoad')) {
+//             localStorage['firstLoad'] = true;
+//             window.location.href = window.location.origin + window.location.pathname + window.location.hash;
+//             // window.location.reload();
+//         } else 
+//             localStorage.removeItem('firstLoad');
+//         }
+// })();
 
 
 // Adapted from https://stackoverflow.com/a/21718316

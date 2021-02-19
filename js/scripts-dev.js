@@ -321,6 +321,14 @@ function checkUrl () {
 };	
 
 
+// Adapted from https://stackoverflow.com/a/30073090
+// Removes unused Google script that also registers an unload listener
+
+$('head').find('script').filter(function(){
+    return $(this).attr('src') === 'https://translate.googleapis.com/element/TE_20201130_00/e/js/element/element_main.js'
+}).remove();
+
+
 /* Commented out b/c breaks external LO links */
 
 // Thanks();

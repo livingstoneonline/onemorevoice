@@ -214,20 +214,14 @@ aside{
 	font-size: .9em;
 }
 [id]:target{
-	margin-top: -2.7em;
-	border-top: 2.7em solid transparent;
+	margin-top: -44px;
+	border-top: 44px solid transparent;
 	background-clip: padding-box;
 }
 @media only screen and (min-width: 480px){
 	[id]:target{
-		margin-top: -3.1em;
-		border-top: 3.1em solid transparent;
-	}
-}
-@media only screen and (min-width: 768px){
-	[id]:target{
-		margin-top: -4.9em;
-		border-top: 4.9em solid transparent;
+		margin-top: -49.5px;
+		border-top: 49.5px solid transparent;
 	}
 }
 /* Also see Appendix for alternative [id]:target coding */
@@ -235,41 +229,20 @@ aside{
 
 /* 1.3 Headings and Related */
 
-header h2{
-	font-size: .9em;
-	font-weight: 300;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 480px){
-	header h2{
-		font-size: 1em;
-		margin-top: 1em;
-		display: block;
-		visibility: visible;
-	}
-}
-@media only screen and (min-width: 768px){
-	header h2{
-		font-size: 1.1em;
-		display: block;
-	}
-}
 .essay h2{
-    font-size: 1.1em;
+    font-size: 1em;
     color: #204A79;
     margin: .5em auto 0 auto;
 }
 @media only screen and (min-width: 992px){
     .essay h2{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
 h3{
-	font-size: 1em;
+	font-size: 1.1em;
 	font-weight: 600;
-	color: #204A79;
+	font-variant: small-caps;
 }
 /* adds padding for h3 labelled subsections in essays */
 h3.subsection{
@@ -996,7 +969,6 @@ a#nav5:focus,
 	width: fit-content;
 	position: relative;
 	display: inline-block;
-	visibility: visible;
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{
@@ -1990,6 +1962,8 @@ ol.primary-historical li{
 }
 .bibliography{
 	font-size: .95em;
+	font-weight: 300;
+	font-style: italic;
 }
 .bibliography::before{
 	content: '➥ ';
@@ -2038,6 +2012,9 @@ ul.acknowledgments{
 /* for essay subtitle */
 .subtitle{
 	font-size: .9em;
+	font-style: italic;
+	font-weight: 300;
+	color: unset;
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
@@ -2049,13 +2026,13 @@ ul.acknowledgments{
 	display: inline-block;
 }
 .byline{
-	font-size: .9em;
+	font-variant: small-caps;
 	margin: 0;
 	padding: 0;
 }
 .editor-line{
-	font-size: 0.8em;
-	font-style: italic;
+	font-size: 0.9em;
+	font-variant: small-caps;
 	margin: .8em 0 0 0;
 	padding: 0;
 }

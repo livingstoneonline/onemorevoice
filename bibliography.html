@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
 	<head>
-		<title>Bibliography | One More Voice</title>
 		<meta charset="UTF-8"/>
+		<title>Bibliography | One More Voice</title>
 		<meta name="description" content="Collects works relevant to One More Voice, including primary texts, folklore, historical sources, regional studies, theoretical studies, and digital projects."/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="index, follow"/>
@@ -43,7 +43,7 @@
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 	<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-	<body class="essay">
+	<body class="essay" id="body">
 
 		<div class="fallback-container">
 			<nav class="fallback" id="fallback">
@@ -51,11 +51,11 @@
 			</nav>
 		</div>
 
-		<div data-include="nav"></div>
+		<div data-include="nav-1"></div>
 
 		<div class="text-container">
 
-			<div class="sidebar-container" data-include="sidebar"></div>
+			<div class="sidebar-container" data-include="sidebar-1"></div>
 
 			<div class="page-wrapper">
 				<header id="header">
@@ -87,7 +87,7 @@
 					</section>
 
 					<section aria-labelledby="summary">
-						<h4 id="summary" class="subsection">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="summary" class="subsection">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 						
 						<p>This bibliography compiles primary works and secondary studies related to <em>One More Voice</em> and uses the following structure:</p>
 
@@ -111,7 +111,7 @@
 					</section>
 
 					<section aria-labelledby="original">
-						<h4 id="original" class="subsection">Original works* &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="original" class="subsection">Original works* &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 						
 						<p class="small primary-historical">*See <a href="texts.html">Archival Texts</a>, <a href="objects.html">Historical Objects</a>, and <a href="books.html">Book-Length Works</a> for additional original works. Original works listed on those pages are not duplicated here.</p>
 
@@ -185,10 +185,10 @@
 					</section>
 
 					<section aria-labelledby="folklore">
-						<h4 id="folklore" class="subsection">Works of folklore &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="folklore" class="subsection">Works of folklore &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 					
 						<section aria-labelledby="folklore-archival">
-							<h5 class="bibliography" id="folklore-archival">Archival texts (print and manuscript)</h5>
+							<h4 class="bibliography" id="folklore-archival">Archival texts (print and manuscript)</h4>
 
 							<ol class="primary-historical" id="archival-primary">
 								<li>Kaye, William Kekale. “[Collection of Xhosa Legends].” Unpublished manuscript, N.d. Grey Collection, No. 172C. National Library of South Africa, Cape Town.</li>
@@ -211,7 +211,7 @@
 
 						<section aria-labelledby="folklore-books">
 
-							<h5 class="bibliography" id="folklore-books">Published books and book chapters*</h5>
+							<h4 class="bibliography" id="folklore-books">Published books and book chapters*</h4>
 
 							<p class="small primary-historical" style="margin-bottom: 1.5em;">*Site visitors are advised that the authorial information for the entries in this subsection is incomplete and that each text listed draws on the contributions, often extensive, of one or more unlisted non-European informants.</p>
 
@@ -259,7 +259,7 @@
 
 						<section aria-labelledby="folklore-scholarship">
 
-							<h5 class="bibliography" id="folklore-scholarship">Victorian scholarship on folklore</h5>
+							<h4 class="bibliography" id="folklore-scholarship">Victorian scholarship on folklore</h4>
 
 								<ol class="primary-historical" style="padding-bottom: 0;">
 									<li>Anonymous, and Canon Callaway. “South African Folk-Lore.” <em>Cape Monthly Magazine</em> 16, no. 94 (February 1, 1878): 109–10.</li>
@@ -275,9 +275,9 @@
 					</section>
 
 					<section aria-labelledby="historical">
-						<h4 id="historical" class="subsection">Historical sources &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="historical" class="subsection">Historical sources &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 
-						<h5 class="bibliography"> Selim Aga</h5>
+						<h4 class="bibliography"> Selim Aga</h4>
 							<ol class="primary-historical">
 								<li>Anonymous. “Entertainment to Dr. Morison.” <em>Aberdeen Journal</em>. October 28, 1840.</li>
 								
@@ -298,7 +298,7 @@
 							</ol>
 						<p> -->
 
-						<h5 class="bibliography"> Semane Setlhoko Khama</h5>
+						<h4 class="bibliography"> Semane Setlhoko Khama</h4>
 							<ol class="primary-historical">
 								<li>Anonymous. “Chiefs’ Mothers: A Contrast.” <em>The Chronicle of the London Missionary Society</em>, January 1932, 3–4.</li>
 							
@@ -307,27 +307,27 @@
 								<li>F.H.G. “The Hill Top Where Young Africa Stands; Semane, Khama’s Widow at Work in Serowe.” <em>The Chronicle of the London Missionary Society</em>, January 1931, 15–16.</li>
 							</ol>
 
-						<h5 class="bibliography"> Khoisan Mission Residents (South Africa)</h5>
+						<h4 class="bibliography"> Khoisan Mission Residents (South Africa)</h4>
 							<ol class="primary-historical">
 								<li>Barker, G. “Letter to the Directors of the London Missionary Society. 6 October 1834.” Unpublished manuscript, October 6, 1834. CWM/LMS, Incoming correspondence, 14A/2/B. University of London. School of Oriental and African Studies, London.</li>
 							</ol>
 
-						<h5 class="bibliography"> Hum Mukasa</h5>
+						<h4 class="bibliography"> Hum Mukasa</h4>
 							<ol class="primary-historical">
 								<li>Anonymous. “Opening of the Boys’ Primary School, Namirembe.” <em>East African Standard</em>, November 6, 1909.</li>
 							</ol>
 						
-						<h5 class="bibliography"> James Read, Jr.</h5>
+						<h4 class="bibliography"> James Read, Jr.</h4>
 							<ol class="primary-historical">
 								<li>Anonymous. “Enclosures to James Read. 20 June 1850.” Unpublished manuscript, June 20, 1850. CWM/LMS, Incoming correspondence, 25/4/B. University of London. School of Oriental and African Studies, London.</li>
 							</ol>
 						
-						<h5 class="bibliography"> Tippu Tip</h5>
+						<h4 class="bibliography"> Tippu Tip</h4>
 							<ol class="primary-historical">
 								<li>Brode, Heinrich. <a href="https://archive.org/details/tippootibstoryof00brod">Tippoo Tib, His Career in Central Africa, Narrated from His Own Accounts</a>. Translated by H. Havelock. London: Edward Arnold, 1907.</li>
 							</ol>
 
-						<h5 class="bibliography"> Jacob Wainwright</h5>
+						<h4 class="bibliography"> Jacob Wainwright</h4>
 							<ol class="primary-historical">
 								<li>Anonymous. “East African Slave Trade Meeting in York.” <em>The York Herald</em>, October 10, 1874.</li>
 								
@@ -344,7 +344,7 @@
 								<li>———. “Pictures from East Africa.” <em>Church Missionary Gleaner</em> 4, no. 41 (May 1, 1877): 57–58.</li>
 							</ol>
 
-						<h5 class="bibliography"> Matthew Wellington</h5>
+						<h4 class="bibliography"> Matthew Wellington</h4>
 							<ol class="primary-historical" style="padding-bottom: 0;">
 								<li>Anonymous. “A Last Link with Livingstone: Death of Matthew Wellington.” <em>The Times</em>, June 6, 1935.</li>
 								
@@ -367,7 +367,7 @@
 					</section>
 
 					<section aria-labelledby="individuals">
-						<h4 id="individuals" class="subsection"><em>Studies of individuals and groups</em> &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="individuals" class="subsection"><em>Studies of individuals and groups</em> &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 						
 						<p>Awaaz Magazine. “<a href="https://www.theeastafrican.co.ke/magazine/434746-670908-edxx59/index.html">Bombay: Refuge for Slave Africans</a>.” <em>The East African</em>, October 12, 2009.</p>
 
@@ -461,7 +461,7 @@
 					</section>
 
 					<section aria-labelledby="regional">
-						<h4 id="regional" class="subsection">Regional studies &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="regional" class="subsection">Regional studies &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 
 						<p>Bassett, Thomas J. “Indigenous Mapmaking in Intertropical Africa.” In <em>Cartography in the Traditional African, American, Arctic, Australian, and Pacific Societies</em>, edited by David Woodward and G. Malcolm Lewis, 24–48. The History of Cartography, Vol. 2, Bk. 3. Chicago: University of Chicago Press, 1998.</p>
 
@@ -521,7 +521,7 @@
 					</section>
 
 					<section aria-labelledby="critical">
-						<h4 id="critical" class="subsection">Critical and theoretical studies &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="critical" class="subsection">Critical and theoretical studies &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 
 						<p>Betensky, Carolyn. “Casual Racism in Victorian Literature.” <em>Victorian Literature and Culture</em> 47, no. 4 (2019): 723–51.</p>
 						
@@ -601,7 +601,7 @@
 					</section>
 
 					<section aria-labelledby="digital">
-						<h4 id="digital" class="subsection">Digital projects and archives &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="digital" class="subsection">Digital projects and archives &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 					
 						<p>Aljoe, Nicole, and Elizabeth Maddock Dillon. <a href="https://ecda.northeastern.edu/">East Carribean Digital Archive</a>. Boston: Northeastern University, 2017.</p>
 						
@@ -637,7 +637,7 @@
 					</section>
 					
 					<section aria-labelledby="illustrations">
-						<h4 id="illustrations" class="subsection">Site illustrations &nbsp;<a href="#menu-sections" class="return-top">top</a></h4>
+						<h3 id="illustrations" class="subsection">Site illustrations &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
 
 						<p>———. “Andries Botha.” Drawing, 1850s. Morrison Collection, M1056. National Archives of South Africa, Cape Town.</p>
 
@@ -688,7 +688,7 @@
 
 		</div>
 	
-		<div data-include="footer"></div>
+		<div data-include="footer-1"></div>
 		
 		<script>
 			// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486

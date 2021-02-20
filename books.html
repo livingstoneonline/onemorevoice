@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
 	<head>
-		<title>Book-Length Published Works | One More Voice</title>
 		<meta charset="UTF-8"/>
+		<title>Book-Length Published Works | One More Voice</title>
 		<meta name="description" content="Provides a list of Victorian-era, book-length, Anglophone works from the British Empire to complement the recovered primary texts published by One More Voice."/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="index, follow"/>
@@ -43,7 +43,7 @@
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 	<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-	<body class="essay">
+	<body class="essay" id="body">
 
 		<div class="fallback-container">
 			<nav class="fallback" id="fallback">
@@ -51,11 +51,11 @@
 			</nav>
 		</div>
 
-		<div data-include="nav"></div>
+		<div data-include="nav-1"></div>
 
 		<div class="text-container">
 
-			<div class="sidebar-container" data-include="sidebar"></div>
+			<div class="sidebar-container" data-include="sidebar-1"></div>
 
 			<div class="page-wrapper">
 				<header id="header">
@@ -163,8 +163,8 @@
 					<hr />
 						
 					<section aria-labelledby="summary">
-						<h4 id="summary">
-						Overview &nbsp;<a href="#menu" class="return-top">top</a></h4>
+						<h3 id="summary">
+						Overview &nbsp;<a href="#menu" class="return-top">top</a></h3>
 
 						<p><em>One More Voice</em> helps contextualize the <a href="texts.html">critically-edited archival texts</a> published by the site by providing an extended list of Victorian-era, book-length published works by non-European, mostly Anglophone authors from the British Empire (see below). The length of these works makes full-scale critical editing impractical, but the extended list connects nearly every entry to an open-access, digitized version of the original book.</p>
 							
@@ -736,22 +736,6 @@
 
 						<br />
 
-						<!-- <section aria-labelledby="oceania">
-						<h5 class="books" id="oceania">Oceania</h5>
-							<section aria-labelledby="yuwaalaraay">
-								<p class="published-author" id="yuwaalaraay"><strong>Unnamed Yuwaalaraay Informants</strong> (<a href="https://en.wikipedia.org/wiki/Yuwaalaraay">Wikipedia</a>)<br/> 
-								<strong>Tommy McRae</strong>, illustrator (c.1835-1901; <a href="https://en.wikipedia.org/wiki/Tommy_McRae">Wikipedia</a>) &nbsp;<a href="#menu" class="return-top">top</a></p>
-
-								<ol class="works-list">
-									<li><a href="https://archive.org/details/cu31924029909060/page/n5/mode/2up">Australian Legendary Tales</a>. Edited by K. Langloh Parker. London; Melbourne: David Nutt; Melville, Mullen & Slade, 1896.</li>
-								</ol>
-							</section>
-						</section>
-
-						<br />
-						<hr />
-						<br /> -->
-
 						<section aria-labelledby="caribbean">
 							<h4><span id="caribbean">Caribbean</span></h4>
 							
@@ -1029,7 +1013,7 @@
 
 		</div>
 	
-		<div data-include="footer"></div>
+		<div data-include="footer-1"></div>
 		
 		<script>
 			// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486

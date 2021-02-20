@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html [ <!ENTITY nbsp "&#160;"> ]> 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="https://www.oxygenxml.com/ns/doc/xsl"
 	xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:jc="https://james.blushingbunny.net/ns.html"
@@ -53,6 +54,7 @@
 		<html lang="en" id="html">
 			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
+				<meta charset="UTF-8"/>
 				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
@@ -62,71 +64,90 @@
 						<meta name="description" content="{$text-creator}" />
 					</xsl:otherwise>
 				</xsl:choose>
-				<meta charset="UTF-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="robots" content="index, follow"/>
 				<meta name="theme-color" content="#204A79"/>
-				<link rel="stylesheet" type="text/css" href="../../css/criticalTEI.css"/>
-				<!-- Link to full CSS file at end; critical CSS linked above.-->
-				<!-- <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/criticalTEI.css?="+randomString;document.head.appendChild(css);</script>-->
-				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png" />
-				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png" />
-				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png" />
-				<link rel="manifest" href="../../site.webmanifest" />
-				<link rel="preload" as="script" href="../../js/jquery-3.5.1.min.js"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="../../fonts/sourcesanspro-regular-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin='' href="../../fonts/sourcesanspro-regular-webfont.woff"/>
+				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png"/>
+				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png"/>
+				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png"/>
+				<link rel="manifest" href="../../site.webmanifest"/>
+				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<!-- <link rel="preload" as="style" href="../../css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
+				<!-- <link rel="preload" as="style" href="../../css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
 				<link rel="preload" as="style" href="../../css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin='' href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin='' href="../../fonts/fontawesome-webfont.woff?v=4.7.0"/>
-				<!-- Global site tag (gtag.js) - Google Analytics -->
-				<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+				<!-- <link rel="preload" as="script" href="../../js/scripts.js?=newVers_0001"/> -->
+				<link rel="preload" as="script" href="../../js/jquery-3.5.1.min.js"/>
+				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/merriweather-bold-webfont.woff2"/>
+				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/merriweather-bold-webfont.woff"/>
+				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/merriweather-black-webfont.woff2"/>
+				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/merriweather-black-webfont.woff"/>
+				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/sourcesanspro-regular-webfont.woff2"/>
+				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/sourcesanspro-regular-webfont.woff"/>
+				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>
+				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/fontawesome-webfont.woff?v=4.7.0"/>
+				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/patuaone-regular-webfont.woff2"/>
+				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/patuaone-regular-webfont.woff"/>
+				<link rel="stylesheet" type="text/css" href="../../css/critical.css?=newVers_0001"/>
+				<script>
+					// Hides fallback nav so that it only appears if Javascript disabled
+					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback{display:none;visibility:hidden}';window.onload=function(){addStyle(styles)};
+				</script>
+				<script>
+					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
+					// Reloads given page, keeps base URL, path, and any #, but removes random query string
+					(function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
+				</script>			
+				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
+		
+			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
+			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-			<!--<xsl:text disable-output-escaping="yes">
-				<![CDATA[<?php flush(); ?>]]>
-			</xsl:text>-->
-
-			<body class="transcription "><!-- style="background:#{$body-color};" -->
-				<div class="text-container">			
-	
-					<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
-
-					<div class="navspace" data-include="nav2"></div>
-
-					<header class="title" id="title-div">
-						<img class="image-border content-holder-1" src="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../../img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../../img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../../img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../../img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../../img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../../img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 1000px) 638px, (min-width: 780px) 699px, calc(100vw - 32px)" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
-						<h1 class="header-title">One More Voice</h1>
-						<hr/>
-						<div><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
-						<!--<xsl:choose>
-							<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-								<div><span class="back-button"><a class="art-return" href="../../objects.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
-							</xsl:when>
-							<xsl:otherwise>
-								<div><span class="back-button"><a class="trans-return" href="../../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></span><h2><em><xsl:value-of select="$subtitle"/></em></h2></div>
-							</xsl:otherwise>
-						</xsl:choose>-->
-					</header>
-					<xsl:apply-templates select="TEI"/>
+			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
+				<div class="fallback-container">
+					<nav class="fallback" id="fallback">
+						<span><h1>One More Voice</h1></span><span>Please <strong>refresh</strong> your browser or enable <strong>Javascript</strong></span><a href="../../index.html">Home</a> &nbsp;|&nbsp; <a href="../../texts.html">Archival Texts</a> &nbsp;|&nbsp; <a href="../../objects.html">Historical Objects</a> &nbsp;|&nbsp; <a href="../../books.html">Book-Length Works</a> &nbsp;|&nbsp; <a href="../../motion_pictures.html">Motion Pictures</a> &nbsp;|&nbsp; <a href="../../analytical_priorities.html">Analytical Priorities</a> &nbsp;|&nbsp; <a href="../../project_design.html">Project Design</a> &nbsp;|&nbsp; <a href="../../collaboration.html">Collaboration</a> &nbsp;|&nbsp; <a href="../../coding_guidelines.html">Coding Guidelines</a> &nbsp;|&nbsp; <a href="../../contributors.html">Contributors</a> &nbsp;|&nbsp; <a href="../../acknowledgments.html">Acknowledgments</a> &nbsp;|&nbsp; <a href="../../bibliography.html">Bibliography</a> &nbsp;|&nbsp; <a href="../../site_map.html">Site Map</a> &nbsp;|&nbsp; <a href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a> &nbsp;|&nbsp; <a href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a> &nbsp;|&nbsp; <a href="mailto:awisnicki@yahoo.com">Contact</a>
+					</nav>
 				</div>
-				<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->
-				<script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if></script>
-				<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"/> --> 
-				<script src="../../js/jquery-3.5.1.min.js"></script> 
-				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
-				<script>$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='../../common/'+$(this).data('include')+'.html';$(this).load(file)})});</script>
+		
+				<div data-include="nav-2"></div>
+
+				<div class="text-container">
+		
+					<div class="sidebar-container" data-include="sidebar-2"></div>
+		
+					<div class="page-wrapper">
+						<header id="header">
+							<div class="image-wrapper">
+								<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+								<img class="image-border content-holder-1" src="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../../img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../../img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../../img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../../img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../../img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../../img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+							</div>
+						</header>
+						<xsl:apply-templates select="TEI"/>
+					</div>
+		
+				</div>
+			
+				<div data-include="footer-2"></div>
+				
+				<script>
+					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
+					// Adds CSS file and adds random string to end of CSS file.
+					var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style-dev.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if>;
+				</script>
+				<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css?=newVers_0001"/> -->
 				<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css"/>
-				<!-- <link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/css/styleTEI.css" />-->
-				<!-- <link rel="stylesheet" type="text/css" href="../../css/styleTEI.css"/> --> 
-				<!-- <script src="https://livingstoneonline.github.io/onemorevoice/js/scripts.js"></script> -->
+				<script src="../../js/jquery-3.5.1.min.js"></script>
+				<script>
+					// Adapted from https://stackoverflow.com/a/31837264
+					// Includes HTML snippets
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='../../common/'+$(this).data('include')+'.html';$(this).load(file)})});
+				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-					<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/manuscript-transform.js" />-->
 					<script src="../../js/manuscript-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-					<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/journal-transform.js" />-->
 					<script src="../../js/journal-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
@@ -136,9 +157,12 @@
 				</xsl:if>
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-				<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486 -->
-				<script>$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)});</script>
-				<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/scripts.js" />-->
+				<script>
+					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
+					// Loads JS file only after rest of page has loaded; adds random string to end of file.
+					$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts-dev.js?="+randomString;document.body.appendChild(element)});
+				</script>
+				<!-- <script src="../../js/scripts-dev.js?=newVers_0001"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -414,8 +438,8 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -434,8 +458,8 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
@@ -449,8 +473,8 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -467,8 +491,8 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					<h3 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h3>
+					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">

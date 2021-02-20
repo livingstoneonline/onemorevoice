@@ -91,7 +91,6 @@ body{
 	padding: 0;
 	margin: 0 auto;
 	max-width: 100%;
-	z-index: 2;
 }
 @media only screen and (min-width: 768px){
 	.text-container{
@@ -187,6 +186,7 @@ header,
 }
 aside{
     font-size: 1.2em;
+	line-height: 1.875;
 	padding: 0 1em;
 }
 @media only screen and (min-width: 768px){
@@ -525,7 +525,7 @@ a:focus{
 	height: 44px;
 	width: 100%;
 	top: 0;
-	z-index: 1;
+	z-index: 20;
 	position: fixed;
 }
 .overlay .navigation{
@@ -580,7 +580,7 @@ a:focus{
 	top: -44px;
 	left: 0;
 	position: absolute;
-	z-index: 99;
+	z-index: 50;
 	transition: top .8s ease-out;
 	-webkit-transition: top .8s ease-out;
 }
@@ -766,7 +766,7 @@ input:checked + label::after{
 	content: '\f0d7';
 }
 #nav4 li .dropdown label.dropbtn{
-	padding: 19px 13px;
+	padding: 17px 13px;
 	border: none;
 }
 :checked + label .expanded-text{
@@ -801,7 +801,7 @@ input:checked + label::after{
 	-webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding: 0;
-	z-index: 1;
+	z-index: 15;
 	position: absolute;
 }
 #nav4 li .dropdown .dropdown-content ul li{
@@ -959,7 +959,7 @@ input:checked + label::after{
 	left: 0;
 	top: 0;
 	position: fixed; /* Stay in place */
-	z-index: 200; /* Sit on top */
+	z-index: 100; /* Sit on top */
 	overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: scroll;
 	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
@@ -1822,7 +1822,7 @@ section.archival-text .no-image .content{
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 2; /* Hides play button when iframe loads */
+	z-index: 3; /* Hides play button when iframe loads */
 }
 [id].youtube:target{
 	margin-top: 10px !important;

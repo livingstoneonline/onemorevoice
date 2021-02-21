@@ -105,11 +105,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<div class="fallback-container">
-					<nav class="fallback" id="fallback">
-						<h1>One More Voice</h1> &nbsp;&#8226;&nbsp; <em>Enable JavaScript!</em> &nbsp;&#8226;&nbsp; <a href="https://onemorevoice.org/index.html">Home</a> &nbsp;|&nbsp; <a href="https://onemorevoice.org/site_sections.html">Site Sections</a>
-					</nav>
-				</div>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav2" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/OMV-logo.png" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav3" href="index.html"><h1>One More Voice</h1></a></div><a id="nav5" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 

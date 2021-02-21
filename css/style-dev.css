@@ -903,44 +903,41 @@ input:checked + label::after{
 /* 1.7.2. Fallback Navigation */
 
 .fallback-container{
-	background-color: #fff;
+	background-color: #e3e3e3;
 }
 .fallback{
 	font-size: .9em;
 	text-align: center;
-	line-height: 1.875em;
-	background-color: #fff;
-	border-bottom: 1px solid #737373;
-	margin: 0 auto -1.7em;
-	padding: 0 2em 1em;
-	max-width: calc(700px - 4em);
+	line-height: 1.5em;
+	background-color: #e3e3e3;
+	margin: 0 auto -44px;
+	padding: .5em 2em;
 }
 @media only screen and (min-width: 480px){
 	.fallback{
-		margin-bottom: -2.1em;
+		margin-bottom: -49.5px;
 	}
 }
 @media only screen and (min-width: 768px){
 	.fallback{
 		font-size: 1em;
-		margin-bottom: -3.9em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.fallback{
-		margin-bottom: -49.5px;
-		padding-top: 1em;
 	}
 }
 .fallback h1{
+	font-size: 1em;
 	font-family: 'merriweatherbold';
 	font-style: normal;
+	display: inline;
 }
-.fallback span{
-	text-align: center;
-	font-style: italic;
-	margin-bottom: .5em;
-	display: block;
+@media only screen and (min-width: 768px){
+		.fallback h1{
+			font-size: 1.2em;
+		}
+}
+@media only screen and (min-width: 992px){
+	.fallback h1{
+		font-size: 1.4em;
+	}
 }
 
 

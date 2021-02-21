@@ -740,7 +740,7 @@
 				</aside>
 			</xsl:when>
 		</xsl:choose>
-		<div data-include="footer2"></div>
+		<div data-include="footer-2"></div>
 	</xsl:template>
 
 	<!-- General match -->

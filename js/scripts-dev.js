@@ -1,5 +1,5 @@
-/* Service Worker */
-/* Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker */
+// Service Worker
+// Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker
 
 if ("serviceWorker" in navigator) {
 	navigator.serviceWorker
@@ -13,8 +13,8 @@ if ("serviceWorker" in navigator) {
 }
 
 
-/* Overlay */
-/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+// Overlay
+// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 function openNav() {
 	document.getElementById("nav7").style.display = "block";
@@ -29,8 +29,8 @@ function closeNav() {
 }
 
 
-/* Keyboard Navigation for Dropdown Menus */
-/* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
+// Keyboard Navigation for Dropdown Menus
+// Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js
 
 const menu = document.getElementById('nav4');
 menu.addEventListener('keydown', handleKeydown);
@@ -238,8 +238,8 @@ function getPreviousElement(items, currentItem){
 }
 
 
-/* Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab */
-/* Needed to prevent a "Best Practices" issue created by Google Translate */
+// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
+// Needed to prevent a "Best Practices" issue created by Google Translate
 
 AddRelNoopener();
 
@@ -251,8 +251,8 @@ function AddRelNoopener(){
 }
 
 
-/* Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end. */
-/* Note: Add random string bit currently disabled. */
+// Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end.
+// Note: Add random string bit currently disabled.
 
 RandomiseHref();
 
@@ -264,21 +264,6 @@ function RandomiseHref(){
 			links[i].href = links[i].href;
 		}
 }
-
-
-// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
-// Reloads given page, keeps base URL, path, and any #, but removes random query string
-
-// (function () {
-//     if (window.localStorage) {
-//         if (!localStorage.getItem('firstLoad')) {
-//             localStorage['firstLoad'] = true;
-//             window.location.href = window.location.origin + window.location.pathname + window.location.hash;
-//             // window.location.reload();
-//         } else 
-//             localStorage.removeItem('firstLoad');
-//         }
-// })();
 
 
 // Adapted from https://stackoverflow.com/a/21718316
@@ -331,7 +316,22 @@ $('head').find('script').filter(function(){
 }).remove();
 
 
-/* Commented out b/c breaks external LO links */
+// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
+// Reloads given page, keeps base URL, path, and any #, but removes random query string
+
+// (function () {
+//     if (window.localStorage) {
+//         if (!localStorage.getItem('firstLoad')) {
+//             localStorage['firstLoad'] = true;
+//             window.location.href = window.location.origin + window.location.pathname + window.location.hash;
+//             // window.location.reload();
+//         } else 
+//             localStorage.removeItem('firstLoad');
+//         }
+// })();
+
+
+//  Commented out b/c breaks external LO links
 
 // Thanks();
 

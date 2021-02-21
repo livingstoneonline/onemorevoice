@@ -175,6 +175,7 @@ also see 2.9 for manuscript colors
 .manuscript-switches,
 .journal-switches{
 	font-size: .92em;
+	line-height: 0;
 	display: none;
 }
 @media only screen and (min-width: 320px){
@@ -276,7 +277,7 @@ label.md_switch{
 	top: 50%;
 	height: 1.45em;
 	width: 1.45em;
-	transform: translate(calc(3.2em - 100%), -50%);
+	transform: translate(calc(3.3em - 100%), -50%);
 }
 
 /* focus */

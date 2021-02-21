@@ -111,7 +111,15 @@ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects/thum
 
 ****sidebar************
 
+mogrify -format jpg -resize 100x100 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/100 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/100&& find . -exec rename 's|.jpg|-100px.jpg|' {} + && cd - && 
+
 mogrify -format jpg -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/200 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd .. &&  find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/sidebar \;
+
+****sidebar (PNG) ************
+
+mogrify -resize 100x100 -sampling-factor 4:2:0 -strip -quality 85 -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/100 *.png && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/100&& find . -exec rename 's|.png|-100px.png|' {} + && cd - && 
+
+mogrify -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/200 *.png && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/200 && find . -exec rename 's|.png|-200px.png|' {} + && cd .. &&  find . -type f -name \*.png -exec mv \{\} ~/GitHub/onemorevoice/img/sidebar \;
 
 ***************************************
 

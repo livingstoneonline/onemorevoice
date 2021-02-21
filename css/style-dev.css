@@ -514,7 +514,8 @@ a:focus{
 
 /* 1.7.1. Main Navigation */
 
-.navigation{
+.navigation,
+.navigation.fallback{
 	font: 16px 'source_sans_proregular';
     font-weight: 600;
 	text-align: center;
@@ -525,14 +526,20 @@ a:focus{
 	height: 44px;
 	width: 100%;
 	top: 0;
-	z-index: 20;
 	position: fixed;
+}
+.navigation{
+	z-index: 20;
+}
+.navigation.fallback{
+	z-index: 19;
 }
 .overlay .navigation{
 	position: absolute;
 }
 @media only screen and (min-width: 480px){
     .navigation,
+	.navigation.fallback,
 	.overlay .navigation{
         height: 49.5px;
     }
@@ -879,6 +886,10 @@ input:checked + label::after{
         display: none;
         visibility: hidden;
     }
+	.fallback #nav5{
+		display: block;
+		visibility: visible;
+	}
 }
 #nav5,
 #nav7 .close{
@@ -898,48 +909,6 @@ input:checked + label::after{
 		visibility: hidden;
 	}
 }
-
-
-/* 1.7.2. Fallback Navigation */
-
-.fallback-container{
-	background-color: #e3e3e3;
-}
-.fallback{
-	font-size: .9em;
-	text-align: center;
-	line-height: 1.5em;
-	background-color: #e3e3e3;
-	margin: 0 auto -44px;
-	padding: .5em 2em;
-}
-@media only screen and (min-width: 480px){
-	.fallback{
-		margin-bottom: -49.5px;
-	}
-}
-@media only screen and (min-width: 768px){
-	.fallback{
-		font-size: 1em;
-	}
-}
-.fallback h1{
-	font-size: 1em;
-	font-family: 'merriweatherbold';
-	font-style: normal;
-	display: inline;
-}
-@media only screen and (min-width: 768px){
-		.fallback h1{
-			font-size: 1.2em;
-		}
-}
-@media only screen and (min-width: 992px){
-	.fallback h1{
-		font-size: 1.4em;
-	}
-}
-
 
 /* 1.7.3. Overlay */
 

@@ -1196,6 +1196,7 @@ aside.sidebar .notable a:focus{
 aside.sidebar .external li a{
 	font-size: 1.2em;
 	font-family: 'patua_oneregular';
+	letter-spacing: .5px;
 	text-transform: uppercase;
 	white-space: nowrap;
 	color: #000;
@@ -1231,7 +1232,7 @@ aside.sidebar .external li a span{
 aside.sidebar .popular li a:hover img,
 aside.sidebar .popular li a:focus-within img{
 	border: 2px solid #000;
-	opacity: .6;
+	filter: invert(1);
 }
 aside.sidebar .external li a:hover img,
 aside.sidebar .external li a:focus-within img,

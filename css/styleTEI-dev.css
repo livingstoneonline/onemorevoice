@@ -50,14 +50,11 @@ also see 2.9 for manuscript colors
 
 /* 2.1. Textual divisions */
 
-.transcription{
-	text-align: center;
-}
 .manuscript,
 .journal,
 .object{
 	font-size: 1.3em;
-	line-height: 1.6em;
+	line-height: 1.875em;
 	display: block;
 }
 @media only screen and (min-width: 992px){
@@ -65,6 +62,8 @@ also see 2.9 for manuscript colors
 	.journal,
 	.object{
 		font-size: 1.2em;
+		margin: 0 auto;
+		max-width: 700px;
 		display: block !important; /* Tied to overlay */
 	}
 }
@@ -139,7 +138,7 @@ also see 2.9 for manuscript colors
 	font-size: 1em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	background-color: #E3E3E3;
-	line-height: 1.6em;
+	line-height: 1.875em;
 	padding: 1em;
 	margin: 1em;
 	border: 1px solid black; /*#204A79*/ /*#902D27*/
@@ -176,6 +175,7 @@ also see 2.9 for manuscript colors
 .manuscript-switches,
 .journal-switches{
 	font-size: .92em;
+	line-height: 0;
 	display: none;
 }
 @media only screen and (min-width: 320px){
@@ -277,7 +277,7 @@ label.md_switch{
 	top: 50%;
 	height: 1.45em;
 	width: 1.45em;
-	transform: translate(calc(3.2em - 100%), -50%);
+	transform: translate(calc(3.3em - 100%), -50%);
 }
 
 /* focus */

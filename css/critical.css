@@ -275,21 +275,21 @@ a:visited {
     src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), url('../fonts/merriweather-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    display: block;
+    display: swap;
 }
 @font-face {
     font-family: 'merriweatherbold';
     src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), url('../fonts/merriweather-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    display: block;
+    display: swap;
 }
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: block;
+    font-display: swap;
 }
 .navigation,
 .navigation.fallback{

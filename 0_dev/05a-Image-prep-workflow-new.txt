@@ -111,6 +111,8 @@ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects/thum
 
 ****logo************
 
+mogrify -format jpg -resize 87x87 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/87 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/87 && find . -exec rename 's|.jpg|-87px.jpg|' {} + && cd .. &&  find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img \;
+
 mogrify -format jpg -resize 78x78 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/78 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/78 && find . -exec rename 's|.jpg|-78px.jpg|' {} + && cd - && 
 
 mogrify -format jpg -resize 72x72 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/72 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/72 && find . -exec rename 's|.jpg|-72px.jpg|' {} + && cd - && 

@@ -311,9 +311,17 @@ function checkUrl () {
 // Adapted from https://stackoverflow.com/a/30073090
 // Removes unused Google script that also registers an unload listener
 
-$('head').find('script').filter(function(){
-    return $(this).attr('src') === 'https://translate.googleapis.com/element/TE_20201130_00/e/js/element/element_main.js'
-}).remove();
+// $('head').find('script').filter(function(){
+//     return $(this).attr('src') === 'https://translate.googleapis.com/element/TE_20201130_00/e/js/element/element_main.js'
+// }).remove();
+
+
+// Adapted from https://stackoverflow.com/a/30073090
+// Ensures that Google logo for Translate is served at correct size
+
+$('body').find('img').filter(function(){
+    return $(this).attr('src') === 'https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png'
+}).replaceWith( "<img src='https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png' srcset='https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png 2x, https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png 1x' sizes='38.5px' width='38.5px' height='14.656px' style='padding-right:3px;' alt='Google Translate' />" );
 
 
 // Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058

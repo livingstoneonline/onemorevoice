@@ -52,7 +52,6 @@
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
 		<html lang="en">
-			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<meta charset="UTF-8"/>
 				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
@@ -101,6 +100,7 @@
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 		
+			<!--<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>-->
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 

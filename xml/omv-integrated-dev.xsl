@@ -105,7 +105,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav2" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/OMV-logo-120px.jpg" srcset="https://onemorevoice.org/img/OMV-logo-120px.jpg 120w, https://onemorevoice.org/img/OMV-logo-80px.jpg 80w, https://onemorevoice.org/img/OMV-logo-40px.jpg" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav3" href="index.html"><h1>One More Voice</h1></a></div><a id="nav5" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav2" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg 120w, https://onemorevoice.org/img/logo/OMV-logo-80px.jpg 80w, https://onemorevoice.org/img/logo/OMV-logo-40px.jpg" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav3" href="index.html"><h1>One More Voice</h1></a></div><a id="nav5" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 

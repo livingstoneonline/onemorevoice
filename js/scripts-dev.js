@@ -19,13 +19,13 @@ if ("serviceWorker" in navigator) {
 function openNav() {
 	document.getElementById("nav7").style.display = "block";
 	document.getElementById("nav7").style.visibility = "visible";
-	document.getElementById("html").style.overflowY = "hidden";
+	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 }
 
 function closeNav() {
 	document.getElementById("nav7").style.display = "none";
 	document.getElementById("nav7").style.visibility = "hidden";
-	document.getElementById("html").style.overflowY = "unset";
+	document.getElementsByTagName("html")[0].style.overflowY = "unset";
 }
 
 

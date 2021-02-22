@@ -364,82 +364,98 @@ a:visited {
     -webkit-transition: top 0.8s ease-out;
 }
 #nav2,
-#nav8 {
-    left: 0.5em;
-    position: absolute;
-    display: inline-block;
+#nav8,
+#nav10{
+	left: .5em;
+	position: absolute;
+	display: inline-block;
 }
-#nav2 {
-    top: 50%;
-    transform: translate(0,-50%);
+#nav2,
+#nav8,
+#nav10{
+	top: 50%;
+	transform: translate(0,-50%);
 }
 #nav2 img,
-#nav8 img {
+#nav8 img,
+#nav10 img{
     height: 1.8em;
-    width: 1.8em;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0.15em;
+	width: 1.8em;
+	vertical-align: middle;
+	margin: 0;
+	padding: .15em;
 }
-@media only screen and (min-width: 480px) {
-    #nav2 img,
-    #nav8 img {
+@media only screen and (min-width: 480px){
+  #nav2 img,
+	#nav8 img,
+	#nav10 img{
         height: 2.2em;
         width: 2.2em;
     }
 }
-@media only screen and (min-width: 768px) {
-    #nav2 img,
-    #nav8 img {
+@media only screen and (min-width: 768px){
+  #nav2 img,
+	#nav8 img,
+	#nav10 img{
         height: 2.4em;
         width: 2.4em;
     }
 }
 #nav2 img,
-#nav2:focus img,
 #nav2:hover img,
+#nav2:focus img,
 #nav8 img,
+#nav8:hover img,
 #nav8:focus img,
-#nav8:hover img {
+#nav10 img,
+#nav10:hover img,
+#nav10:focus img{
     border: none;
 }
+/* OMV Logo */
 #nav3,
-#nav9 {
-    white-space: nowrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
+#nav9,
+#nav11{
+	white-space: nowrap;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
 }
-@media only screen and (min-width: 768px) {
-    #nav3,
-    #nav9 {
-        left: 3.9em;
-        transform: translate(0,-50%);
-    }
+@media only screen and (min-width: 768px){
+	#nav3,
+	#nav9,
+	#nav11{
+		left: 3.9em;
+		transform: translate(0,-50%);
+	}
 }
-@media only screen and (min-width: 992px) {
-    #nav3,
-    #nav9 {
-        left: 3.7em;
-    }
+@media only screen and (min-width: 992px){
+	#nav3,
+	#nav9,
+	#nav11{
+		left: 3.7em;
+	}
 }
 #nav3 h1,
-#nav9 h1 {
-    font-family: 'merriweatherbold';
-    font-size: 1.4em;
-    margin: 0;
+#nav9 h1,
+#nav11 h1{
+	font-family: 'merriweatherbold';
+	font-size: 1.4em;
+	margin: 0;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px){
     #nav3 h1,
-    #nav9 h1 {
+    #nav9 h1,
+	#nav11 h1{
         font-size: 1.5em;
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
     #nav3 h1,
-    #nav9 h1 {
-        font-family: 'merriweatherblack';
+	#nav9 h1,
+	#nav11 h1{
+		font-family: 'merriweatherblack';
         font-size: 1.7em;
     }
 }
@@ -524,32 +540,36 @@ input:checked + label::after {
 :checked ~ .dropdown-content {
     display: block;
 }
-#nav5 {
+#nav5,
+#nav12{
     right: 1em;
-    position: absolute;
+	position: absolute;
 }
-#nav5 .fa-bars {
+#nav5 .fa-bars,
+#nav12 .fa-bars{
     font-size: 1.6em;
-    padding: 0.15em 0.2em;
+	padding: .15em .2em;
 }
-@media only screen and (min-width: 480px) {
-    #nav5 .fa-bars {
+@media only screen and (min-width: 480px){
+        #nav5 .fa-bars,
+		#nav12 .fa-bars{
         font-size: 1.8em;
     }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px){
     #nav5,
-    #nav7 .close {
+    #nav7 .close{
         display: none;
         visibility: hidden;
     }
-    .fallback #nav5{
-		display: block;
-		visibility: visible;
-	}
+    .fallback #nav12{
+        display: block;
+        visibility: visible;
+    }
 }
 #nav5,
-#nav7 .close {
+#nav7 .close,
+#nav12{
     color: #0b0b0b;
     text-decoration: none;
 }

@@ -311,9 +311,9 @@ function checkUrl () {
 // Adapted from https://stackoverflow.com/a/30073090
 // Removes unused Google script that also registers an unload listener
 
-// $('head').find('script').filter(function(){
-//     return $(this).attr('src') === 'https://translate.googleapis.com/element/TE_20201130_00/e/js/element/element_main.js'
-// }).remove();
+$('head').find('script').filter(function(){
+    return $(this).attr('src') === 'https://translate.googleapis.com/element/TE_20201130_00/e/js/element/element_main.js'
+}).remove();
 
 
 // Adapted from https://stackoverflow.com/a/30073090

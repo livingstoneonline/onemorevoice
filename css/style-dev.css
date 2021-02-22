@@ -133,7 +133,7 @@ header,
 	position: relative;
 }
 @media only screen and (min-width: 480px){
- 	header,
+	header,
 	.transcription header{
 		margin-top: 50px;
 		margin-bottom: 1em;
@@ -465,40 +465,40 @@ a:focus{
 
 @font-face{
 	font-family: 'libre_franklinregular';
-	src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'),
-			url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+	src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'), 
+url('../fonts/librefranklin-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
 }
-@font-face {
+@font-face{
 	font-family: 'libre_franklinbold';
-	src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
-			url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+	src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'), 
+url('../fonts/librefranklin-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
 }
 @font-face{
 	font-family: 'merriweatherblack';
-	src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'),
-			url('../fonts/merriweather-black-webfont.woff') format('woff');
+	src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), 
+url('../fonts/merriweather-black-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
 }
 @font-face{
 	font-family: 'merriweatherbold';
-	src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
-			url('../fonts/merriweather-bold-webfont.woff') format('woff');
+	src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
+url('../fonts/merriweather-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
 }
 @font-face{
 	font-family: 'patua_oneregular';
-	src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'),
-			url('../fonts/patuaone-regular-webfont.woff') format('woff');
+	src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'), 
+url('../fonts/patuaone-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
@@ -506,7 +506,7 @@ a:focus{
 @font-face{
 	font-family: 'source_sans_proregular';
 	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
-			url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -569,7 +569,7 @@ a:focus{
 		min-width: 992px;
 		max-width: 1200px;
 		left: 50%;
-		transform: translate(-50%,0);
+		transform: translate(-50%, 0);
 		display: flex;
 		flex-direction: row-reverse;
 	}
@@ -619,7 +619,7 @@ a:focus{
 #nav8,
 #nav10{
 	top: 50%;
-	transform: translate(0,-50%);
+	transform: translate(0, -50%);
 }
 #nav2 img,
 #nav8 img,
@@ -636,7 +636,7 @@ a:focus{
 	#nav10 img{
 		height: 2.2em;
 		width: 2.2em;
-	}   
+	}
 }
 @media only screen and (min-width: 768px){
 	#nav2 img,
@@ -644,7 +644,7 @@ a:focus{
 	#nav10 img{
 		height: 2.4em;
 		width: 2.4em;
-	}   
+	}
 }
 #nav2 img,
 #nav2:hover img,
@@ -655,7 +655,7 @@ a:focus{
 #nav10 img,
 #nav10:hover img,
 #nav10:focus img{
-		border: none;
+	border: none;
 }
 #nav2:hover img,
 #nav2:focus img,
@@ -663,7 +663,7 @@ a:focus{
 #nav8:focus img,
 #nav10:hover img,
 #nav10:focus img{
-		outline: 2px solid #204A79;
+	outline: 2px solid #204A79;
 }
 /* OMV Logo */
 #nav3,
@@ -672,7 +672,7 @@ a:focus{
 	white-space: nowrap;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	position: absolute;
 }
 @media only screen and (min-width: 768px){
@@ -680,7 +680,7 @@ a:focus{
 	#nav9,
 	#nav11{
 		left: 3.9em;
-		transform: translate(0,-50%);
+		transform: translate(0, -50%);
 	}
 }
 @media only screen and (min-width: 992px){
@@ -774,7 +774,7 @@ a:focus{
 	background-color: #c4d8ef;
 }
 #nav4 li .dropdown .vh{
-	position: absolute !important; 
+	position: absolute !important;
 	/* !important in original code */
 	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
@@ -1050,7 +1050,7 @@ footer a:visited{
 }
 footer p{
 	color: #0b0b0b;
-	background-color:#fff;
+	background-color: #fff;
 	border-top: 1px solid #737373;
 	border-bottom: 1px solid #737373;
 	margin: 0;
@@ -2091,7 +2091,7 @@ ul.acknowledgments{
 
 ol,
 ul{
-	margin: 0;	
+	margin: 0;
 	padding: 0 0 0 1.4em;
 }
 ol li ol{

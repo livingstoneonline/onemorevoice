@@ -52,7 +52,6 @@
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
 		<html lang="en">
-			<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>
 			<head>
 				<meta charset="UTF-8"/>
 				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/>--><!--<xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
@@ -90,7 +89,7 @@
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/critical.css?=newVers_0001"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
-					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav2,.fallback a#nav3,.fallback a#nav5{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
+					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
 				</script>
 				<script>
 					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
@@ -101,11 +100,12 @@
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 		
+			<!--<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>-->
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav2" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg 120w, https://onemorevoice.org/img/logo/OMV-logo-80px.jpg 80w, https://onemorevoice.org/img/logo/OMV-logo-40px.jpg" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav3" href="index.html"><h1>One More Voice</h1></a></div><a id="nav5" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg 120w, https://onemorevoice.org/img/logo/OMV-logo-80px.jpg 80w, https://onemorevoice.org/img/logo/OMV-logo-40px.jpg" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 

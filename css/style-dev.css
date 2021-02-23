@@ -94,7 +94,7 @@ body{
 }
 @media only screen and (min-width: 480px){
 	.text-container{
-		margin-top: 80px;
+		margin-top: 66px;
 		margin-bottom: 40px;
 	}
 }
@@ -129,12 +129,12 @@ body{
 header,
 .transcription header{
 	text-align: center;
-    margin-top: 44px;
+	margin-top: 44px;
 	position: relative;
 }
 @media only screen and (min-width: 480px){
- 	header,
-    .transcription header{
+	header,
+	.transcription header{
 		margin-top: 50px;
 		margin-bottom: 1em;
 	}
@@ -160,7 +160,7 @@ header,
 	padding: 1em;
 }
 @media only screen and (min-width: 768px){
-    main,
+	main,
 	.credits#main,
 	.credits#credits2-div{
 		font-size: 1.2em;
@@ -185,22 +185,22 @@ header,
 	}
 }
 aside{
-    font-size: 1.2em;
+	font-size: 1.2em;
 	line-height: 1.875;
 	padding: 0 1em;
 }
 @media only screen and (min-width: 768px){
-    aside{
-        font-size: 1.15em;
-    }
+	aside{
+		font-size: 1.15em;
+	}
 }
 @media only screen and (min-width: 992px){
-    aside{
-        font-size: 1.1em;
+	aside{
+		font-size: 1.1em;
 		background-color: #fff;
 		margin: 0 auto;
 		max-width: 700px;
-    }
+	}
 }
 .transcription{
 	text-align: center;
@@ -223,8 +223,8 @@ aside{
 	margin-top: -66px;
 	border-top: 66px solid transparent;
 	-webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
 }
 @media only screen and (min-width: 480px){
 	[id]:target{
@@ -240,15 +240,15 @@ aside{
 
 .essay h2,
 .transcription h2{
-    font-size: 1em;
-    color: #204A79;
-    margin: .5em auto 0 auto;
+	font-size: 1em;
+	color: #204A79;
+	margin: .5em auto 0 auto;
 }
 @media only screen and (min-width: 992px){
-    .essay h2,
+	.essay h2,
 	.transcription h2{
-        font-size: 1.1em;
-    }
+		font-size: 1.1em;
+	}
 }
 h3{
 	font-size: 1.1em;
@@ -464,52 +464,52 @@ a:focus{
 /* 1.6. Fonts */
 
 @font-face{
-    font-family: 'libre_franklinregular';
-    src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'),
-         url('../fonts/librefranklin-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
-}
-@font-face {
-    font-family: 'libre_franklinbold';
-    src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'),
-         url('../fonts/librefranklin-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
+	font-family: 'libre_franklinregular';
+	src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'), 
+url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
 }
 @font-face{
-    font-family: 'merriweatherblack';
-    src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'),
-         url('../fonts/merriweather-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
+	font-family: 'libre_franklinbold';
+	src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'), 
+url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
 }
 @font-face{
-    font-family: 'merriweatherbold';
-    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
-         url('../fonts/merriweather-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
+	font-family: 'merriweatherblack';
+	src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), 
+url('../fonts/merriweather-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
 }
 @font-face{
-    font-family: 'patua_oneregular';
-    src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/patuaone-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    display: block;
+	font-family: 'merriweatherbold';
+	src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
+url('../fonts/merriweather-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
+}
+@font-face{
+	font-family: 'patua_oneregular';
+	src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'), 
+url('../fonts/patuaone-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
 }
 @font-face{
 	font-family: 'source_sans_proregular';
 	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
-		url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-	font-display: block;
+	font-display: swap;
 }
 
 
@@ -520,7 +520,7 @@ a:focus{
 .navigation,
 .navigation.fallback{
 	font: 16px 'source_sans_proregular';
-    font-weight: 600;
+	font-weight: 600;
 	text-align: center;
 	line-height: 1em;
 	color: #0b0b0b;
@@ -541,11 +541,11 @@ a:focus{
 	position: absolute;
 }
 @media only screen and (min-width: 480px){
-    .navigation,
+	.navigation,
 	.navigation.fallback,
 	.overlay .navigation{
-        height: 49.5px;
-    }
+		height: 49.5px;
+	}
 }
 .navigation a,
 .navigation a:hover,
@@ -554,7 +554,7 @@ a:focus{
 .overlay .navigation a,
 .overlay .navigation a:hover,
 .overlay .navigation a:focus{
-    color: #0b0b0b;
+	color: #0b0b0b;
 	text-decoration: none;
 }
 .nav-wrapper,
@@ -569,7 +569,7 @@ a:focus{
 		min-width: 992px;
 		max-width: 1200px;
 		left: 50%;
-		transform: translate(-50%,0);
+		transform: translate(-50%, 0);
 		display: flex;
 		flex-direction: row-reverse;
 	}
@@ -609,97 +609,116 @@ a:focus{
 }
 /* OMV Icon */
 #nav2,
-#nav8{
+#nav8,
+#nav10{
 	left: .5em;
 	position: absolute;
 	display: inline-block;
 }
-#nav2{
+#nav2,
+#nav8,
+#nav10{
 	top: 50%;
-	transform: translate(0,-50%);
+	transform: translate(0, -50%);
 }
 #nav2 img,
-#nav8 img{
-    height: 1.8em;
+#nav8 img,
+#nav10 img{
+	height: 1.8em;
 	width: 1.8em;
 	vertical-align: middle;
 	margin: 0;
 	padding: .15em;
 }
 @media only screen and (min-width: 480px){
-    #nav2 img,
-	#nav8 img{
-        height: 2.2em;
-        width: 2.2em;
-    }   
+	#nav2 img,
+	#nav8 img,
+	#nav10 img{
+		height: 2.2em;
+		width: 2.2em;
+	}
 }
 @media only screen and (min-width: 768px){
-    #nav2 img,
-	#nav8 img{
-        height: 2.4em;
-        width: 2.4em;
-    }   
+	#nav2 img,
+	#nav8 img,
+	#nav10 img{
+		height: 2.4em;
+		width: 2.4em;
+	}
 }
 #nav2 img,
 #nav2:hover img,
 #nav2:focus img,
 #nav8 img,
 #nav8:hover img,
-#nav8:focus img{
-    border: none;
+#nav8:focus img,
+#nav10 img,
+#nav10:hover img,
+#nav10:focus img{
+	border: none;
 }
 #nav2:hover img,
 #nav2:focus img,
 #nav8:hover img,
-#nav8:focus img{
-    outline: 2px solid #204A79;
+#nav8:focus img,
+#nav10:hover img,
+#nav10:focus img{
+	outline: 2px solid #204A79;
 }
 /* OMV Logo */
 #nav3,
-#nav9{
+#nav9,
+#nav11{
 	white-space: nowrap;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	position: absolute;
 }
 @media only screen and (min-width: 768px){
 	#nav3,
-	#nav9{
+	#nav9,
+	#nav11{
 		left: 3.9em;
-		transform: translate(0,-50%);
+		transform: translate(0, -50%);
 	}
 }
 @media only screen and (min-width: 992px){
 	#nav3,
-	#nav9{
+	#nav9,
+	#nav11{
 		left: 3.7em;
 	}
 }
 #nav3 h1,
-#nav9 h1{
+#nav9 h1,
+#nav11 h1{
 	font-family: 'merriweatherbold';
 	font-size: 1.4em;
 	margin: 0;
 }
 @media only screen and (min-width: 480px){
-    #nav3 h1,
-	#nav9 h1{
-        font-size: 1.5em;
-    }
+	#nav3 h1,
+	#nav9 h1,
+	#nav11 h1{
+		font-size: 1.5em;
+	}
 }
 @media only screen and (min-width: 768px){
-    #nav3 h1,
-	#nav9 h1{
+	#nav3 h1,
+	#nav9 h1,
+	#nav11 h1{
 		font-family: 'merriweatherblack';
-        font-size: 1.7em;
-    }
+		font-size: 1.7em;
+	}
 }
 #nav3 h1:hover,
 #nav3:focus-within h1,
 #nav9 h1:hover,
-#nav9:focus-within h1{
-    text-decoration: underline;
+#nav9:focus-within h1,
+#nav11 h1:hover,
+#nav11:focus-within h1{
+	text-decoration: underline;
 }
 /* Main Menu */
 /* nav4 adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
@@ -755,7 +774,7 @@ a:focus{
 	background-color: #c4d8ef;
 }
 #nav4 li .dropdown .vh{
-	position: absolute !important; 
+	position: absolute !important;
 	/* !important in original code */
 	clip: rect(1px, 1px, 1px, 1px);
 	overflow: hidden;
@@ -831,7 +850,7 @@ input:checked + label::after{
 #nav4 li .dropdown .dropdown-content ul li a,
 #nav4 li .dropdown .dropdown-content ul li a:visited{
 	color: #0b0b0b;
-    padding: .8em;
+	padding: .8em;
 }
 #nav4 li .dropdown .dropdown-content ul li:last-of-type a,
 #nav4 li .dropdown .dropdown-content ul li:last-of-type a:visited{
@@ -857,18 +876,21 @@ input:checked + label::after{
 */
 
 /* Hamburger Menu & Close X */
-#nav5{
-    right: 1em;
+#nav5,
+#nav12{
+	right: 1em;
 	position: absolute;
 }
-#nav5 .fa-bars{
-    font-size: 1.6em;
+#nav5 .fa-bars,
+#nav12 .fa-bars{
+	font-size: 1.6em;
 	padding: .15em .2em;
 }
 @media only screen and (min-width: 480px){
-    #nav5 .fa-bars{
-        font-size: 1.8em;
-    }
+	#nav5 .fa-bars,
+	#nav12 .fa-bars{
+		font-size: 1.8em;
+	}
 }
 #nav7 .close{
 	padding: .30em .28em;
@@ -876,34 +898,37 @@ input:checked + label::after{
 	position: absolute;
 }
 #nav7 .close{
-    font-size: 1.9em;
+	font-size: 1.9em;
 }
 @media only screen and (min-width: 480px){
 	#nav7 .close{
-        font-size: 2.1em;
-    }
+		font-size: 2.1em;
+	}
 }
 @media only screen and (min-width: 992px){
-    #nav5,
+	#nav5,
 	#nav7 .close{
-        display: none;
-        visibility: hidden;
-    }
-	.fallback #nav5{
+		display: none;
+		visibility: hidden;
+	}
+	.fallback #nav12{
 		display: block;
 		visibility: visible;
 	}
 }
 #nav5,
-#nav7 .close{
-    color: #0b0b0b;
-    text-decoration: none;
+#nav7 .close,
+#nav12{
+	color: #0b0b0b;
+	text-decoration: none;
 }
 #nav5:hover,
 #nav5:focus,
 #nav7 a.close:hover,
-#nav7 a.close:focus{
-    outline: 2px solid #204A79;
+#nav7 a.close:focus,
+#nav12:hover,
+#nav12:focus{
+	outline: 2px solid #204A79;
 }
 /* The following prevents the overlay from appearing above 992px */
 @media only screen and (min-width: 992px){
@@ -1025,7 +1050,7 @@ footer a:visited{
 }
 footer p{
 	color: #0b0b0b;
-	background-color:#fff;
+	background-color: #fff;
 	border-top: 1px solid #737373;
 	border-bottom: 1px solid #737373;
 	margin: 0;
@@ -1060,7 +1085,7 @@ footer p .site-detail:last-child::after{
 	margin: 0 auto;
 	padding: 1em;
 	width: fit-content;
-    display: inline-block;
+	display: inline-block;
 }
 @media only screen and (min-width: 480px){
 	.fat-footer{
@@ -1734,7 +1759,7 @@ section.archival-text .no-image .content{
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	width: 60px;
 	height: 40px;
@@ -2066,7 +2091,7 @@ ul.acknowledgments{
 
 ol,
 ul{
-	margin: 0;	
+	margin: 0;
 	padding: 0 0 0 1.4em;
 }
 ol li ol{

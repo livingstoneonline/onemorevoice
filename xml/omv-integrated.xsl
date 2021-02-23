@@ -16,8 +16,21 @@
 		</xd:desc>
 	</xd:doc>
 	
-	<!-- <xsl:strip-space elements="*"/> -->
 	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
+
+<!--https://social.msdn.microsoft.com/Forums/en-US/bc55aaa2-26cf-4415-9010-b40328ac7856/how-can-i-ignore-empty-elements-in-my-output-xml-file-using-xslt-->
+
+	<xsl:strip-space elements="*"/>
+	
+	<xsl:template match="comment()" priority="10"/>
+
+	<xsl:template match="node()|@*">
+		<xsl:copy>
+			<xsl:apply-templates select="node()|@*"/>
+		</xsl:copy>
+	</xsl:template>
+
+	<xsl:template match="*[not(node())]"/>
 
 	<!-- Incoming parameters -->
 	<xsl:param name="page" select="'0001'"/>

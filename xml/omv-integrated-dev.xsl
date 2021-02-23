@@ -417,6 +417,14 @@
 				<xsl:text>. </xsl:text>
 			</xsl:if>
 		</xsl:variable>
+		<xsl:variable name="edition">
+			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2020')]">
+				<xsl:text>site launch edition, 2020</xsl:text>
+			</xsl:if>
+			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2021')]">
+				<xsl:text>new dawn edition, 2021</xsl:text>
+			</xsl:if>
+		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 		<xsl:variable name="custom-note">
@@ -659,7 +667,7 @@
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link1">
 								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -687,7 +695,7 @@
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link1">
 								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -717,7 +725,7 @@
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source">
 								<xsl:for-each select="//publicationStmt/ref">

@@ -179,7 +179,7 @@
 		<script>
 			// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 			// Adds CSS file and adds random string to end of CSS file.
-			var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="css/style-dev.css?="+randomString;document.head.appendChild(css);
+			var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="css/style.css?="+randomString;document.head.appendChild(css);
 		</script>
 		<!-- <link rel="stylesheet" type="text/css" href="css/style.css?=newVers_0001"/> -->
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
@@ -194,8 +194,8 @@
 		<script>
 			// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 			// Loads JS file only after rest of page has loaded; adds random string to end of file.
-			$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="js/scripts-dev.js?="+randomString;document.body.appendChild(element)});
+			$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="js/scripts.js?="+randomString;document.body.appendChild(element)});
 		</script>
-		<!-- <script src="js/scripts-dev.js?=newVers_0001"></script> -->
+		<!-- <script src="js/scripts.js?=newVers_0001"></script> -->
 	</body>
 </html>

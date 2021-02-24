@@ -15,9 +15,8 @@
 			<xd:p>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</xd:p>
 		</xd:desc>
 	</xd:doc>
-	
-	<!-- <xsl:strip-space elements="*"/> -->
-	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
+
+	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="no" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
 	<xsl:param name="page" select="'0001'"/>

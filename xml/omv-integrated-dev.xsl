@@ -75,7 +75,7 @@
 				<!-- <link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 				<!-- <link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0001"/> -->
-				<link rel="preload" as="script" href="https://onemorevoice.org/js/jquery-3.5.1.min.js"/>
+				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-bold-webfont.woff2"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-bold-webfont.woff"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-black-webfont.woff2"/>
@@ -130,11 +130,11 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style-dev.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if>;
+					var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if>;
 				</script>
 				<!-- <link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0001"/> -->
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/font-awesome.min.css"/>
-				<script src="https://onemorevoice.org/js/jquery-3.5.1.min.js"></script>
+				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
 					// Includes HTML snippets
@@ -156,9 +156,9 @@
 				<script>
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
-					$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts-dev.js?="+randomString;document.body.appendChild(element)});
+					$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts.js?="+randomString;document.body.appendChild(element)});
 				</script>
-				<!-- <script src="https://onemorevoice.org/js/scripts-dev.js?=newVers_0001"></script> -->
+				<!-- <script src="https://onemorevoice.org/js/scripts.js?=newVers_0001"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -417,6 +417,14 @@
 				<xsl:text>. </xsl:text>
 			</xsl:if>
 		</xsl:variable>
+		<xsl:variable name="edition">
+			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2020')]">
+				<xsl:text>site launch edition, 2020</xsl:text>
+			</xsl:if>
+			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2021')]">
+				<xsl:text>new dawn edition, 2021</xsl:text>
+			</xsl:if>
+		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
 		<xsl:variable name="custom-note">
@@ -659,7 +667,7 @@
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link1">
 								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -687,7 +695,7 @@
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link1">
 								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -717,7 +725,7 @@
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), site launch edition, <xsl:value-of select="//teiHeader//publicationStmt/date"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="https://livingstoneonline.github.io/onemorevoice/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source">
 								<xsl:for-each select="//publicationStmt/ref">

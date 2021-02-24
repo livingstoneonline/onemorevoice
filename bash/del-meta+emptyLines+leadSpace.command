@@ -6,16 +6,16 @@
 cd /Users/awisnicki2/GitHub/onemorevoice/html/transcriptions
 
 for thefile in *.html ; do
-   grep -v '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">' $thefile > $thefile.$$.tmp
-   mv $thefile.$$.tmp $thefile
+	grep -v '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">' $thefile > $thefile.$$.tmp
+	mv $thefile.$$.tmp $thefile
 done
 
 for thefile in *.html ; do
-   sed '/^[[:space:]]*$/d' $thefile > $thefile.$$.tmp
-   mv $thefile.$$.tmp $thefile
+	sed '/^[[:space:]]*$/d' $thefile > $thefile.$$.tmp
+	mv $thefile.$$.tmp $thefile
 done
 
-# for thefile in *.html ; do
-#     sed -e 's/^[ \t]*//' $thefile > $thefile.$$.tmp
-#    mv $thefile.$$.tmp $thefile
-# done
+for thefile in *.html ; do
+	sed -e 's/^[ \t]*//' $thefile > $thefile.$$.tmp
+	mv $thefile.$$.tmp $thefile
+done

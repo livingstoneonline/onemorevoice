@@ -285,7 +285,7 @@ function checkUrl () {
 			document.getElementById("home-tab").setAttribute("class","current");
 	};
 	if (window.location.href.indexOf("texts") > -1 ||
-		window.location.href.indexOf("objects") > -1 ||
+		window.location.href.indexOf("visual") > -1 ||
 		window.location.href.indexOf("books") > -1 ||
 		window.location.href.indexOf("motion") > -1 ||
 		window.location.href.indexOf("essays") > -1 ||

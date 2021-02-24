@@ -15,8 +15,7 @@
 			<xd:p>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</xd:p>
 		</xd:desc>
 	</xd:doc>
-	
-	<!-- <xsl:strip-space elements="*"/> -->
+
 	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
@@ -138,7 +137,7 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
 					// Includes HTML snippets
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='https://onemorevoice.org/common/'+$(this).data('include')+'.html';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='https://onemorevoice.org/common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<script src="https://onemorevoice.org/js/manuscript-transform.js"></script>
@@ -717,7 +716,7 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<!--<p class="back-button"><a class="art-return" href="https://livingstoneonline.github.io/onemorevoice/objects.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
+						<!--<p class="back-button"><a class="art-return" href="https://livingstoneonline.github.io/onemorevoice/visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://livingstoneonline.github.io/onemorevoice/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>

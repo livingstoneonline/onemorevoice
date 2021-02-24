@@ -18,7 +18,7 @@ mogrify -format jpg -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
- find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 ****Regular images-tiffs (vertical-image70) ************ 426, 447, 490, 852, 894, 980
 
@@ -36,7 +36,7 @@ mogrify -format jpg -resize 980x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
- find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 ****Regular images-tiffs (vertical-image73) ************
 
@@ -54,7 +54,7 @@ mogrify -format jpg -resize 1020x -sampling-factor 4:2:0 -strip -quality 85 -int
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
- find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 ****Regular images-jpegs************
 
@@ -72,7 +72,7 @@ mogrify -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 -interlace J
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
- find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 ****Regular images-pngs************
 
@@ -90,7 +90,7 @@ mogrify -format jpg -resize 1399x1399 -sampling-factor 4:2:0 -strip -quality 85 
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
- find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/objects \;
+ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 ****object thumbnails************
 

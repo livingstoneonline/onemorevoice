@@ -216,7 +216,7 @@ aside{
 	display: inline-block;
 }
 .return-top{
-	font: 16px 'source_sans_proregular', Helvetica, sans-serif;
+	font: 16px 'Source Sans Pro', sans-serif;
 	font-size: .9em;
 }
 [id]:target{
@@ -478,7 +478,7 @@ a:focus{
 
 /* 1.6. Fonts */
 
-@font-face{
+/* @font-face{
 	font-family: 'libre_franklinregular';
 	src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'), 
 url('../fonts/librefranklin-regular-webfont.woff') format('woff');
@@ -493,39 +493,39 @@ url('../fonts/librefranklin-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'merriweatherblack';
 	src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), 
 url('../fonts/merriweather-black-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'merriweatherbold';
 	src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
 url('../fonts/merriweather-bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'patua_oneregular';
 	src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'), 
 url('../fonts/patuaone-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	display: swap;
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'source_sans_proregular';
 	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
 url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-}
+} */
 
 
 /* 1.7. Navigation  */
@@ -534,8 +534,8 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 
 .navigation,
 .navigation.fallback{
-	font: 16px 'source_sans_proregular';
-	font-weight: 600;
+	font: 16px 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 	text-align: center;
 	line-height: 1em;
 	color: #0b0b0b;
@@ -708,8 +708,10 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 #nav3 h1,
 #nav9 h1,
 #nav11 h1{
-	font-family: 'merriweatherbold';
+	/* font-family: 'merriweatherbold'; */
+	font-family: 'Merriweather', serif;
 	font-size: 1.4em;
+	font-weight: 700;
 	margin: 0;
 }
 @media only screen and (min-width: 480px){
@@ -723,8 +725,10 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	#nav3 h1,
 	#nav9 h1,
 	#nav11 h1{
-		font-family: 'merriweatherblack';
+		/* font-family: 'merriweatherblack'; */
+		font-family: 'Merriweather', serif;
 		font-size: 1.7em;
+		font-weight: 900;
 	}
 }
 #nav3 h1:hover,
@@ -958,8 +962,8 @@ input:checked + label::after{
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
-	font: 16px 'libre_franklinregular', Arial, Helvetica, sans-serif;
-	font-weight: 300;
+	font: 16px 'Libre Franklin', sans-serif;;
+	/* font-weight: 400; */
 	text-align: center;
 	color: #0b0b0b;
 	background-color: #767676;
@@ -1015,7 +1019,8 @@ input:checked + label::after{
 	text-decoration: underline;
 }
 .overlay strong{
-	font-family: 'libre_franklinbold';
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 700;
 }
 .overlay-content .container-home,
 .overlay-content .container-left,
@@ -1044,7 +1049,7 @@ input:checked + label::after{
 
 footer{
 	font-size: 1.1em;
-	font: 16px 'source_sans_proregular';
+	font: 16px 'Source Sans Pro', sans-serif;
 	text-align: center;
 	color: #fff;
 	background-color: #204A79;
@@ -1169,7 +1174,8 @@ li.section > ul > li > a{
 }
 aside.sidebar{
 	font-size: .9em;
-	font-family: 'libre_franklinregular', Arial, Helvetica, sans-serif;
+	font-family: 'Libre Franklin', sans-serif;
+	/* font-weight: 400; */
 	text-align: center;
 	color: #fff;
 	background-color: #3B5E52;
@@ -1233,15 +1239,15 @@ aside.sidebar .notable a:focus{
 	color: #000;
 	background-color: #fff;
 }
-aside.sidebar .external li a{
+/* aside.sidebar .external li a{
 	font-size: 1.2em;
-	font-family: 'patua_oneregular';
+	font-family: 'Patua One', cursive;
 	letter-spacing: .5px;
 	text-transform: uppercase;
 	white-space: nowrap;
 	color: #000;
 	background-color: transparent;
-}
+} */
 aside.sidebar li a img{
 	text-align: center;
 	margin: 0 auto;
@@ -1328,7 +1334,7 @@ aside.sidebar .external li a:focus-within img{
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo{
 	font-size: 1.3em;
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	border: 2px solid #E3E3E3;
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
@@ -1342,7 +1348,7 @@ aside.sidebar .external li a:focus-within img{
 	background-color: #E3E3E3;
 }
 div.skiptranslate:nth-child(1){
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	padding-left: 4px;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
@@ -1466,7 +1472,7 @@ section.archival-text .no-image::after{
 }
 section.archival-text .no-image .content{
 	font-size: .95em;
-	font-family: 'source_sans_proregular';
+	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.5em;
 	text-align: center;
 	color: #404040;
@@ -1578,7 +1584,7 @@ section.archival-text .no-image .content{
 }
 .gallery figure figcaption{
 	font-size: .8em;
-	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 	line-height: 1.2em;
 }

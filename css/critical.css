@@ -280,7 +280,7 @@ a,
 a:visited{
   color: #204A79;
 }
-@font-face{
+/* @font-face{
   font-family: 'merriweatherblack';
   src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), url('../fonts/merriweather-black-webfont.woff') format('woff');
   font-weight: normal;
@@ -293,18 +293,18 @@ a:visited{
   font-weight: normal;
   font-style: normal;
   display: swap;
-}
-@font-face{
+} */
+/* @font-face{
   font-family: 'source_sans_proregular';
   src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 .navigation,
 .navigation.fallback{
-  font: 16px 'source_sans_proregular';
-  font-weight: 600;
+  font: 16px 'Source Sans Pro', sans-serif;
+  font-weight: 700;
   text-align: center;
   line-height: 1em;
   color: #0b0b0b;
@@ -446,12 +446,14 @@ a:visited{
       left: 3.7em;
   }
 }
-#nav11 h1,
 #nav3 h1,
-#nav9 h1{
-  font-family: 'merriweatherbold';
-  font-size: 1.4em;
-  margin: 0;
+#nav9 h1,
+#nav11 h1{
+	/* font-family: 'merriweatherbold'; */
+	font-family: 'Merriweather', serif;
+	font-size: 1.4em;
+	font-weight: 700;
+	margin: 0;
 }
 @media only screen and (min-width: 480px){
   #nav11 h1,
@@ -461,12 +463,14 @@ a:visited{
   }
 }
 @media only screen and (min-width: 768px){
-  #nav11 h1,
-  #nav3 h1,
-  #nav9 h1{
-      font-family: 'merriweatherblack';
-      font-size: 1.7em;
-  }
+	#nav3 h1,
+	#nav9 h1,
+	#nav11 h1{
+		/* font-family: 'merriweatherblack'; */
+		font-family: 'Merriweather', serif;
+		font-size: 1.7em;
+		font-weight: 900;
+	}
 }
 #nav4{
   white-space: nowrap;
@@ -707,7 +711,7 @@ aside.sidebar .popular li a img{
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo{
   font-size: 1.3em;
-  font-family: 'source_sans_proregular', Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   border: 2px solid #E3E3E3;
   border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -716,7 +720,7 @@ aside.sidebar .popular li a img{
   padding: 1px;
 }
 div.skiptranslate:nth-child(1){
-  font-family: 'source_sans_proregular', Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding-left: 4px;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),

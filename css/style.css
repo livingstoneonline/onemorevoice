@@ -708,7 +708,6 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 #nav3 h1,
 #nav9 h1,
 #nav11 h1{
-	/* font-family: 'merriweatherbold'; */
 	font-family: 'Merriweather', serif;
 	font-size: 1.4em;
 	font-weight: 700;
@@ -725,7 +724,6 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	#nav3 h1,
 	#nav9 h1,
 	#nav11 h1{
-		/* font-family: 'merriweatherblack'; */
 		font-family: 'Merriweather', serif;
 		font-size: 1.7em;
 		font-weight: 900;
@@ -962,8 +960,7 @@ input:checked + label::after{
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
-	font: 16px 'Libre Franklin', sans-serif;;
-	/* font-weight: 400; */
+	font: 16px 'Libre Franklin', sans-serif;
 	text-align: center;
 	color: #0b0b0b;
 	background-color: #767676;
@@ -1175,7 +1172,6 @@ li.section > ul > li > a{
 aside.sidebar{
 	font-size: .9em;
 	font-family: 'Libre Franklin', sans-serif;
-	/* font-weight: 400; */
 	text-align: center;
 	color: #fff;
 	background-color: #3B5E52;
@@ -1239,15 +1235,6 @@ aside.sidebar .notable a:focus{
 	color: #000;
 	background-color: #fff;
 }
-/* aside.sidebar .external li a{
-	font-size: 1.2em;
-	font-family: 'Patua One', cursive;
-	letter-spacing: .5px;
-	text-transform: uppercase;
-	white-space: nowrap;
-	color: #000;
-	background-color: transparent;
-} */
 aside.sidebar li a img{
 	text-align: center;
 	margin: 0 auto;

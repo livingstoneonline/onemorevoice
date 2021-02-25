@@ -71,20 +71,13 @@
 				<link rel="manifest" href="https://onemorevoice.org/site.webmanifest"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<!-- <link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
-				<!-- <link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
-				<!-- <link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0001"/> -->
-				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-bold-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-bold-webfont.woff"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-black-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/merriweather-black-webfont.woff"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/sourcesanspro-regular-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/sourcesanspro-regular-webfont.woff"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/fontawesome-webfont.woff?v=4.7.0"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/patuaone-regular-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/patuaone-regular-webfont.woff"/>
+				<!-- <link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0001"/> -->
+				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com"/>
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro&amp;display=swap" rel="stylesheet"/>
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/critical.css?=newVers_0001"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled

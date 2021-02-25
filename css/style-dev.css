@@ -1249,11 +1249,16 @@ aside.sidebar li a img{
 	display: block;
 }
 aside.sidebar .popular li a img{
+	background: #e6e6e6;
+	/* the following 3 hide alt text */
+	text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 	border: 2px solid transparent;
 	margin-bottom: 3px;
+	min-height: 99px;
 }
-aside.sidebar .external li a img,
-aside.sidebar .external li a span{
+aside.sidebar .external li a img{
 	text-align: center;
 	margin: 0 auto;
 	padding: .5em;
@@ -1264,10 +1269,10 @@ aside.sidebar .external li a img{
 	border: 2px solid transparent;
 	width: 100px;
 }
-aside.sidebar .external li a span{
+aside.sidebar .external li a img.lo{
 	border: 2px solid transparent;
-	display: inline-block;
-	filter: invert(1);
+	width: 175px;
+	margin-top: 1em;
 }
 aside.sidebar .popular li a:hover img,
 aside.sidebar .popular li a:focus-within img{
@@ -1275,9 +1280,7 @@ aside.sidebar .popular li a:focus-within img{
 	filter: invert(1);
 }
 aside.sidebar .external li a:hover img,
-aside.sidebar .external li a:focus-within img,
-aside.sidebar .external li a:hover span,
-aside.sidebar .external li a:focus-within span{
+aside.sidebar .external li a:focus-within img{
 	border: 2px solid #000;
 }
 

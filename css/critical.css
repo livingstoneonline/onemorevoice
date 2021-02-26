@@ -536,6 +536,12 @@ input:checked + label::after{
   right: .5em;
   position: absolute;
 }
+@media only screen and (min-width: 768px){
+	#nav5,
+	#nav12{
+		right: 1em;
+	}	
+}
 #nav12 .fa-bars,
 #nav5 .fa-bars{
   font-size: 1.6em;

@@ -13,7 +13,7 @@ Table of Contents
 2.1. Textual divisions
 2.2.1. Switches
 2.2.2. Toggle Classes (also see styleTEI-add.css)
-2.3. Buttons and button-like links
+2.3. Rotate Button
 2.4. Pagebreaks, linebreaks, linenumbers
 2.5. Parts of the page
 2.6. Milestone and lines
@@ -142,6 +142,7 @@ also see 2.9 for manuscript colors
 .narrow-mobile{
 	font-size: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	background-color: #E3E3E3;
 	line-height: 1.875em;
 	padding: 1em;
@@ -356,45 +357,8 @@ label.md_switch{
 }
 
 
-/* 2.3. Buttons and button-like links */
+/* 2.3. Rotate Button */
 
-/* .back-button is used on pages with critically-edited primary texts */
-.back-button a,
-.back-button a:visited{
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #204A79;
-	text-decoration: none;
-	display: none;
-}
-.back-button a:hover{
-	color: #a83c37;
-}
-@media only screen and (min-width: 768px){
-	.back-button a{
-		display: inline-block;
-	}
-}
-.title .back-button{
-	font-size: .95em;
-	font-weight: 300;
-	left: 0;
-	position: absolute;
-}
-@media only screen and (min-width: 768px){
-	.title .back-button{
-		font-size: 1.05em;
-		padding-top: .3em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.title .back-button{
-		font-size: 1.1em;
-		padding-top: .1em;
-	}
-}
-p.back-button{
-	margin-bottom: 2em;
-}
 /* #rotate button and .rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
@@ -402,6 +366,7 @@ button::-moz-focus-inner{
 }
 #rotate-button{
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size: .8em;
 	background-color: #E3E3E3;
 	border: 1px solid #858585;
@@ -447,6 +412,7 @@ button::-moz-focus-inner{
 	color: #204A79;
 	font-size: .9em;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	text-indent: 0;
@@ -495,6 +461,7 @@ button::-moz-focus-inner{
 .linenumber{
 	font-size: .8em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
+	font-weight: 400;
 	color: #8c8b85;
 	text-align: right;
 	float: left;

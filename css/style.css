@@ -221,6 +221,7 @@ aside{
 }
 .return-top{
 	font: 16px 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	font-size: .9em;
 }
 [id]:target{
@@ -539,6 +540,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 .navigation,
 .navigation.fallback{
 	font: 16px 'Source Sans Pro', sans-serif;
+	font-weight: 600;
 	text-align: center;
 	line-height: 1em;
 	color: #0b0b0b;
@@ -1061,6 +1063,7 @@ input:checked + label::after{
 footer{
 	font-size: 1.1em;
 	font: 16px 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	text-align: center;
 	color: #fff;
 	background-color: #204A79;
@@ -1340,6 +1343,7 @@ aside.sidebar .external li a:focus-within img{
 #google_translate_element div.goog-te-gadget .goog-te-combo{
 	font-size: 1.3em;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	border: 2px solid #E3E3E3;
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
@@ -1354,6 +1358,7 @@ aside.sidebar .external li a:focus-within img{
 }
 div.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	padding-left: 4px;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
@@ -1478,6 +1483,7 @@ section.archival-text .no-image::after{
 section.archival-text .no-image .content{
 	font-size: .95em;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	line-height: 1.5em;
 	text-align: center;
 	color: #404040;
@@ -1590,6 +1596,7 @@ section.archival-text .no-image .content{
 .gallery figure figcaption{
 	font-size: .8em;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	text-align: center;
 	line-height: 1.2em;
 }

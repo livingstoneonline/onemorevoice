@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
@@ -28,7 +28,7 @@
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
-				<respStmt xml:id="HB">
+				<respStmt xml:id="CM">
 					<name>Caitlin Matheis</name>
 					<resp>Transcription</resp>
 					<resp>TEI Encoding</resp>
@@ -120,7 +120,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text n="styleTEI-add">
+	<text n="styleTEI-add cedarville">
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body n="625950">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->

@@ -14,16 +14,26 @@ var version = 'v1::';
 var offlineFundamentals = [
 	'/',
 	'/sw.js',
-	'/common/footer1.html',
-	'/common/footer2.html',
-	'/common/nav1.html',
-	'/common/nav2.html',
+	'/site.webmanifest',
+	'/favicon.ico',
+	'/common/footer-1.html',
+	'/common/footer-2.html',
+	'/common/nav-1.html',
+	'/common/nav-2.html',
+	'/common/sidebar-1.html',
+	'/common/sidebar-2.html',
 	'/css/critical.css',
-	'/css/criticalTEI.css',
 	'/css/font-awesome.min.css',
+	'/css/style.css',
 	'/css/styleTEI-add.css',
 	'/css/styleTEI.css',
-	'/css/style.css',
+	'/img/logo/OMV-logo-29px.jpg',
+	'/img/logo/OMV-logo-36px.jpg',
+	'/img/logo/OMV-logo-39px.jpg',
+	'/img/logo/OMV-logo-58px.jpg',
+	'/img/logo/OMV-logo-72px.jpg',
+	'/img/logo/OMV-logo-78px.jpg',
+	'/img/logo/OMV-logo-87px.jpg',
 	'/js/journal-transform.js',
 	'/js/jquery-3.5.1.min.js',
 	'/js/manuscript-transform.js',
@@ -209,3 +219,7 @@ self.addEventListener("activate", function(event) {
 			})
 	);
 });
+
+// Also: Implement Secure Header using Cloudflare Worker
+// https://geekflare.com/cloudflare-workers-secure-headers/
+// https://raspy-snowflake-8ecc.awisnicki.workers.dev 

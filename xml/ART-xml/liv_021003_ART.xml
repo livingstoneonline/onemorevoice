@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
@@ -88,8 +88,8 @@
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_021003_0001" n="0001"/>
 	<!-- This image has special coding in figure @n due to its reduced size. AW -->
-	<figure n="object liv_021003_0001" facs="../../img/objects/liv_021003_0001_deriv-319px.jpg">
-		<graphic url="../../img/objects/liv_021003_0001_deriv-319px.jpg" facs="../../img/objects/liv_021003_0001_deriv-319px.jpg 319w, ../../img/objects/liv_021003_0001_deriv-255px.jpg 255w" n="(min-width: 400px) 319px, calc(63.75vw + 77px)"/>
+	<figure n="object liv_021003_0001" facs="../../img/visual-materials/liv_021003_0001_deriv-319px.jpg">
+		<graphic url="../../img/visual-materials/liv_021003_0001_deriv-319px.jpg" facs="../../img/visual-materials/liv_021003_0001_deriv-319px.jpg 319w, ../../img/visual-materials/liv_021003_0001_deriv-255px.jpg 255w" n="(min-width: 400px) 319px, calc(63.75vw + 77px)"/>
 		<label>Elliott &amp; Fry, “Jacob Wainwright,” [c.1874]</label>
 		<figDesc>Head and shoulders portrait of Jacob Wainwright, in three-quarters profile facing to his right.</figDesc>
 	</figure>

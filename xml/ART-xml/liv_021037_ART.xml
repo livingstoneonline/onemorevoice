@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
@@ -101,9 +101,9 @@
 	<!-- figure @facs provides the hyperlink for the object image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
-	<figure n="object" rend="vertical" facs="../../img/objects/liv_021037_0001_deriv-490px.jpg">
+	<figure n="object" rend="vertical" facs="../../img/visual-materials/liv_021037_0001_deriv-490px.jpg">
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
-		<graphic url="../../img/objects/liv_021037_0001_deriv-490px.jpg" facs="../../img/objects/liv_021037_0001_deriv-490px.jpg 490w, ../../img/objects/liv_021037_0001_deriv-447px.jpg 447w, ../../img/objects/liv_021037_0001_deriv-426px.jpg 426w, ../../img/objects/liv_021037_0001_deriv-342px.jpg 342w" n="(min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px)"/>
+		<graphic url="../../img/visual-materials/liv_021037_0001_deriv-490px.jpg" facs="../../img/visual-materials/liv_021037_0001_deriv-490px.jpg 490w, ../../img/visual-materials/liv_021037_0001_deriv-447px.jpg 447w, ../../img/visual-materials/liv_021037_0001_deriv-426px.jpg 426w, ../../img/visual-materials/liv_021037_0001_deriv-342px.jpg 342w" n="(min-width: 780px) 489px, (min-width: 480px) 70vw, 100vw"/>
 		<label>Anonymous, “Dhan Gopal Mukerji,” [early twentieth century]<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc>Head and shoulders portrait of Dhan Gopal Mukerji in half profile, facing left.<!-- Image alt text (max. 125 char with spaces) --></figDesc>
 	</figure>

@@ -81,36 +81,36 @@ header{
       max-width: 700px;
   }
 }
-.main{
+main{
   font-size: 1.25em;
   line-height: 1.875em;
   text-align: left;
   padding: 1em;
 }
 @media only screen and (min-width: 768px){
+  main
   .credits#credits2-div,
-  .credits#main,
-  main{
+  .credits#main{
       font-size: 1.2em;
       padding: 1em .5em;
   }
 }
 @media only screen and (min-width: 992px){
+  main
   .credits#credits2-div,
-  .credits#main,
-  .main{
+  .credits#main{
       font-size: 1.15em;
       background-color: #fff;
       margin: 0 auto;
       max-width: 700px;
       display: block !important;
   }
-  .credits#main,
-  .main{
-      padding: 2em 0 1em;
+  main,
+  .credits#main{
+      padding: 2em .5em 1em;
   }
   .credits#credits2-div{
-      padding: 1em 0;
+      padding: 1em .5em;
   }
 }
 aside{

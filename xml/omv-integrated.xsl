@@ -71,20 +71,17 @@
 				<link rel="manifest" href="../../site.webmanifest"/>
 				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<!-- <link rel="preload" as="style" href="../../css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
-				<!-- <link rel="preload" as="style" href="../../css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
 				<link rel="preload" as="style" href="../../css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
-				<!-- <link rel="preload" as="script" href="../../js/scripts.js?=newVers_0001"/> -->
-				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/merriweather-bold-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/merriweather-bold-webfont.woff"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/merriweather-black-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/merriweather-black-webfont.woff"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/sourcesanspro-regular-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/sourcesanspro-regular-webfont.woff"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/fontawesome-webfont.woff?v=4.7.0"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/patuaone-regular-webfont.woff2"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/patuaone-regular-webfont.woff"/>
+				<!-- <link rel="preload" as="script" href="../../js/scripts.js?=newVers_0001"/> -->
+				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com"/>
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro&amp;display=swap" rel="stylesheet"/>
+				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<link rel="stylesheet" type="text/css" href="../../css/critical.css?=newVers_0001"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled

@@ -138,6 +138,12 @@ mogrify -resize 100x100 -sampling-factor 4:2:0 -strip -quality 85 -colorspace RG
 
 mogrify -resize 200x200 -sampling-factor 4:2:0 -strip -quality 85 -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/200 *.png && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/200 && find . -exec rename 's|.png|-200px.png|' {} + && cd .. &&  find . -type f -name \*.png -exec mv \{\} ~/GitHub/onemorevoice/img/sidebar \;
 
+****sidebar (LO-PNG) ************
+
+mogrify -resize 175x175 -sampling-factor 4:2:0 -strip -quality 85 -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/175 *.png && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/175&& find . -exec rename 's|.png|-175px.png|' {} + && cd - && 
+
+mogrify -resize 350x350 -sampling-factor 4:2:0 -strip -quality 85 -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/350 *.png && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/350 && find . -exec rename 's|.png|-350px.png|' {} + && cd .. &&  find . -type f -name \*.png -exec mv \{\} ~/GitHub/onemorevoice/img/sidebar \;
+
 ***************************************
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;

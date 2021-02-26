@@ -899,6 +899,12 @@ input:checked + label::after{
 	right: .5em;
 	position: absolute;
 }
+@media only screen and (min-width: 768px){
+	#nav5,
+	#nav12{
+		right: 1em;
+	}	
+}
 #nav5 .fa-bars,
 #nav12 .fa-bars{
 	font-size: 1.6em;
@@ -921,6 +927,11 @@ input:checked + label::after{
 @media only screen and (min-width: 480px){
 	#nav7 .close{
 		font-size: 2.1em;
+	}
+}
+@media only screen and (min-width: 768px){
+	#nav7 .close{
+		right: .5em;
 	}
 }
 @media only screen and (min-width: 992px){

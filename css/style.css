@@ -151,7 +151,7 @@ header,
 
 /* 1.2 Main Section and Related */
 
-.main,
+main,
 .credits#main,
 .credits#credits2-div{
 	font-size: 1.25em;
@@ -168,7 +168,7 @@ header,
 	}
 }
 @media only screen and (min-width: 992px){
-	.main,
+	main,
 	.credits#main,
 	.credits#credits2-div{
 		font-size: 1.15em;
@@ -177,12 +177,12 @@ header,
 		max-width: 700px;
 		display: block !important; /* Tied to overlay */
 	}
-	.main,
+	main,
 	.credits#main{
-		padding: 2em 0 1em;
+		padding: 2em .5em 1em;
 	}
 	.credits#credits2-div{
-		padding: 1em 0;
+		padding: 1em .5em;
 	}
 }
 aside{

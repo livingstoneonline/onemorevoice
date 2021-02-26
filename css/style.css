@@ -151,7 +151,7 @@ header,
 
 /* 1.2 Main Section and Related */
 
-.main,
+main,
 .credits#main,
 .credits#credits2-div{
 	font-size: 1.25em;
@@ -164,10 +164,11 @@ header,
 	.credits#main,
 	.credits#credits2-div{
 		font-size: 1.2em;
+		padding: 1em .5em;
 	}
 }
 @media only screen and (min-width: 992px){
-	.main,
+	main,
 	.credits#main,
 	.credits#credits2-div{
 		font-size: 1.15em;
@@ -176,12 +177,12 @@ header,
 		max-width: 700px;
 		display: block !important; /* Tied to overlay */
 	}
-	.main,
+	main,
 	.credits#main{
-		padding: 2em 1em 1em;
+		padding: 2em .5em 1em;
 	}
 	.credits#credits2-div{
-		padding: 1em;
+		padding: 1em .5em;
 	}
 }
 aside{
@@ -978,7 +979,7 @@ input:checked + label::after{
 	opacity: 1;
 }
 .overlay-content{
-	font-size: .9em;
+	font-size: 1em;
 	text-align: left;
 	background-color: #fff;
 	border: 1px solid #0b0b0b;

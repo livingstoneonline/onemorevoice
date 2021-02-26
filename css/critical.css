@@ -107,10 +107,13 @@ main{
   }
   main,
   .credits#main{
-      padding: 2em .5em 1em;
-  }
+    padding: 2em .5em 0;
+	}
+	.transcription main{
+		padding: 0 .5em;
+	}
   .credits#credits2-div{
-      padding: 1em .5em;
+      padding: 0 .5em;
   }
 }
 aside{

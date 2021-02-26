@@ -155,13 +155,10 @@ also see 2.9 for manuscript colors
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
 }
-.object .TEI{
+.object{
+	text-align: center;
+	margin: 0 auto;
 	padding: 0;
-}
-@media only screen and (min-width: 768px){
-	.object .TEI{
-		padding: 0 0 1em 0;
-	}
 }
 .warning{
 	border: 1px solid #902D27;
@@ -485,6 +482,7 @@ button::-moz-focus-inner{
 	color: #65615b;
 	font-size: .85em;
 	font-style: italic;
+	margin: 0 auto;
 	display: none;
 }
 @media only screen and (min-width: 768px){
@@ -886,7 +884,7 @@ table .linenumber{
 .figure{
 	font-size: .8em;
 	color: #666666;
-	margin: -1px 0 0;
+	margin: 0;
 	padding: 0 1em;
 }
 .manuscript .figure{

@@ -866,15 +866,6 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="tei:addSpan|p/anchor">
-		<xsl:apply-templates/>
-	</xsl:template>
-
-	<xsl:template match="tei:anchor">		
-		<xsl:apply-templates/>
-		<br/>
-	</xsl:template>
-
 	<!-- app: show first rdg, offer alternatives in title -->
 	<xsl:template match="app">
 		<xsl:variable name="rdg-rdg">
@@ -933,19 +924,7 @@
 			</span>
 	</xsl:template>
 
-	<xsl:template match="closer">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>
-
 	<xsl:template match="corr|expan|reg"/>
-
-	<xsl:template match="dateline">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>
 
 	<xsl:template match="del">
 		<span class="del cancelled">
@@ -1037,11 +1016,6 @@
 			<xsl:when test="@unit='pages'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
 			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>
-
-	<!-- remove gb spans -->
-	<xsl:template match="gb">
-		<xsl:apply-templates/>
 	</xsl:template>
 
 	<!-- do not show graphic -->
@@ -1300,10 +1274,6 @@
 		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="trailer">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}"><xsl:apply-templates/></span>
-	</xsl:template>
-
 	<xsl:template match="unclear">
 		<span class="unclear">
 				<xsl:choose>
@@ -1431,8 +1401,8 @@
 
 	<!--<xsl:template match="choice/abbr">
 		<span class="abbr diplomatic">
-			<xsl:if test="../expan">
-				<xsl:attribute name="title"><xsl:value-of select="../expan"/></xsl:attribute>
+			<xsl:if test="../../expan">
+				<xsl:attribute name="title"><xsl:value-of select="../../expan"/></xsl:attribute>
 			</xsl:if>
 			<xsl:apply-templates/>
 		</span>
@@ -1440,17 +1410,17 @@
 
 	<xsl:template match="choice/expan">
 		<span class="abbr edited hidden">
-			<xsl:if test="../abbr">
+			<xsl:if test="../../abbr">
 				<xsl:attribute name="title"><xsl:value-of select="."/></xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates select="../abbr[1]/node()"/>
+			<xsl:apply-templates select="../../abbr[1]/node()"/>
 		</span>
 	</xsl:template>-->
 
 	<!--<xsl:template match="choice/orig">
 		<span class="orig diplomatic">
-			<xsl:if test="../reg">
-				<xsl:attribute name="title">reg: <xsl:value-of select="../reg"/></xsl:attribute>
+			<xsl:if test="../../reg">
+				<xsl:attribute name="title">reg: <xsl:value-of select="../../reg"/></xsl:attribute>
 			</xsl:if>
 			<xsl:apply-templates/>
 		</span>
@@ -1458,10 +1428,16 @@
 
 	<!--<xsl:template match="choice/reg" priority="10">
 		<span class="reg edited hidden">
-			<xsl:if test="../orig">
-				<xsl:attribute name="title">orig: <xsl:value-of select="../orig"/></xsl:attribute>
+			<xsl:if test="../../orig">
+				<xsl:attribute name="title">orig: <xsl:value-of select="../../orig"/></xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates select="../orig/node()"/>
+			<xsl:apply-templates select="../../orig/node()"/>
+		</span>
+	</xsl:template>-->
+
+	<!--<xsl:template match="dateline">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+			<xsl:apply-templates/>
 		</span>
 	</xsl:template>-->
 
@@ -1478,6 +1454,11 @@
 
 	<!-- Template passes through abbr, sic, and orig in head in normalizeHead mode -->
 	<!--<xsl:template match="head//abbr|head//sic|head//orig" mode="normalizeHead">
+		<xsl:apply-templates/>
+	</xsl:template>-->
+
+	<!-- remove gb spans -->
+	<!--<xsl:template match="gb">
 		<xsl:apply-templates/>
 	</xsl:template>-->
 
@@ -1503,6 +1484,21 @@
 			<span class="figure" title="{figDesc}">figure</span>
 		</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>-->
+
+	<!--<xsl:template match="tei:addSpan|p/anchor">
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="tei:anchor">		
+		<xsl:apply-templates/>
+		<br/>
+	</xsl:template>-->
+
+	<!--<xsl:template match="closer">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+			<xsl:apply-templates/>
+		</span>
 	</xsl:template>-->
 
 	<!-- foreign should be italiced in edited view -->
@@ -1590,4 +1586,8 @@
 	<span class="supplied edited hidden"> <xsl:if test="@*"> <xsl:attribute name="title">
 		<xsl:value-of select="concat(name(), ', certainty: ', @cert, ', reason: ', @reason)"/>
 		</xsl:attribute> </xsl:if>[<xsl:apply-templates select="node()"/>]</span></xsl:template>-->
+
+<!--	<xsl:template match="trailer">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}"><xsl:apply-templates/></span>
+	</xsl:template>-->
 </xsl:stylesheet>

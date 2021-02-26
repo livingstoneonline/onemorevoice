@@ -576,18 +576,18 @@ input:checked + label::after{
 .sidebar-container{
   background-color: #3B5E52;
   border-left: 1px solid #737373;
+  width: 100%;
+	min-width: 245px;
+	max-width: 265px;
 }
 aside.sidebar{
   font-size: 0.9em;
-  font-family: 'libre_franklinregular',Arial,Helvetica,sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   text-align: center;
   color: #fff;
   background-color: #3B5E52;
   margin: 0;
   padding: 40px 0;
-  min-width: 245px;
-  max-width: 265px;
-  width: 100%;
   display: none;
   visibility: hidden;
 }

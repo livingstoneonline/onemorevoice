@@ -77,7 +77,7 @@
 				<!-- <link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0001"/> -->
 				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro&amp;display=swap" rel="stylesheet"/>
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
@@ -90,7 +90,7 @@
 				<script>
 					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 					// Reloads given page, keeps base URL, path, and any #, but removes random query string
-					(function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
+		// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
 				</script>			
 				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
@@ -866,15 +866,6 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="tei:addSpan|p/anchor">
-		<xsl:apply-templates/>
-	</xsl:template>
-
-	<xsl:template match="tei:anchor">		
-		<xsl:apply-templates/>
-		<br/>
-	</xsl:template>
-
 	<!-- app: show first rdg, offer alternatives in title -->
 	<xsl:template match="app">
 		<xsl:variable name="rdg-rdg">
@@ -933,19 +924,7 @@
 			</span>
 	</xsl:template>
 
-	<xsl:template match="closer">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>
-
 	<xsl:template match="corr|expan|reg"/>
-
-	<xsl:template match="dateline">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
-			<xsl:apply-templates/>
-		</span>
-	</xsl:template>
 
 	<xsl:template match="del">
 		<span class="del cancelled">
@@ -1037,11 +1016,6 @@
 			<xsl:when test="@unit='pages'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
 			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
 		</xsl:choose>
-	</xsl:template>
-
-	<!-- remove gb spans -->
-	<xsl:template match="gb">
-		<xsl:apply-templates/>
 	</xsl:template>
 
 	<!-- do not show graphic -->
@@ -1300,10 +1274,6 @@
 		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="trailer">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}"><xsl:apply-templates/></span>
-	</xsl:template>
-
 	<xsl:template match="unclear">
 		<span class="unclear">
 				<xsl:choose>
@@ -1431,8 +1401,8 @@
 
 	<!--<xsl:template match="choice/abbr">
 		<span class="abbr diplomatic">
-			<xsl:if test="../expan">
-				<xsl:attribute name="title"><xsl:value-of select="../expan"/></xsl:attribute>
+			<xsl:if test="../../expan">
+				<xsl:attribute name="title"><xsl:value-of select="../../expan"/></xsl:attribute>
 			</xsl:if>
 			<xsl:apply-templates/>
 		</span>
@@ -1440,17 +1410,17 @@
 
 	<xsl:template match="choice/expan">
 		<span class="abbr edited hidden">
-			<xsl:if test="../abbr">
+			<xsl:if test="../../abbr">
 				<xsl:attribute name="title"><xsl:value-of select="."/></xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates select="../abbr[1]/node()"/>
+			<xsl:apply-templates select="../../abbr[1]/node()"/>
 		</span>
 	</xsl:template>-->
 
 	<!--<xsl:template match="choice/orig">
 		<span class="orig diplomatic">
-			<xsl:if test="../reg">
-				<xsl:attribute name="title">reg: <xsl:value-of select="../reg"/></xsl:attribute>
+			<xsl:if test="../../reg">
+				<xsl:attribute name="title">reg: <xsl:value-of select="../../reg"/></xsl:attribute>
 			</xsl:if>
 			<xsl:apply-templates/>
 		</span>
@@ -1458,10 +1428,16 @@
 
 	<!--<xsl:template match="choice/reg" priority="10">
 		<span class="reg edited hidden">
-			<xsl:if test="../orig">
-				<xsl:attribute name="title">orig: <xsl:value-of select="../orig"/></xsl:attribute>
+			<xsl:if test="../../orig">
+				<xsl:attribute name="title">orig: <xsl:value-of select="../../orig"/></xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates select="../orig/node()"/>
+			<xsl:apply-templates select="../../orig/node()"/>
+		</span>
+	</xsl:template>-->
+
+	<!--<xsl:template match="dateline">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+			<xsl:apply-templates/>
 		</span>
 	</xsl:template>-->
 
@@ -1478,6 +1454,11 @@
 
 	<!-- Template passes through abbr, sic, and orig in head in normalizeHead mode -->
 	<!--<xsl:template match="head//abbr|head//sic|head//orig" mode="normalizeHead">
+		<xsl:apply-templates/>
+	</xsl:template>-->
+
+	<!-- remove gb spans -->
+	<!--<xsl:template match="gb">
 		<xsl:apply-templates/>
 	</xsl:template>-->
 
@@ -1503,6 +1484,21 @@
 			<span class="figure" title="{figDesc}">figure</span>
 		</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>-->
+
+	<!--<xsl:template match="tei:addSpan|p/anchor">
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="tei:anchor">		
+		<xsl:apply-templates/>
+		<br/>
+	</xsl:template>-->
+
+	<!--<xsl:template match="closer">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}">
+			<xsl:apply-templates/>
+		</span>
 	</xsl:template>-->
 
 	<!-- foreign should be italiced in edited view -->
@@ -1590,4 +1586,8 @@
 	<span class="supplied edited hidden"> <xsl:if test="@*"> <xsl:attribute name="title">
 		<xsl:value-of select="concat(name(), ', certainty: ', @cert, ', reason: ', @reason)"/>
 		</xsl:attribute> </xsl:if>[<xsl:apply-templates select="node()"/>]</span></xsl:template>-->
+
+<!--	<xsl:template match="trailer">
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''))}"><xsl:apply-templates/></span>
+	</xsl:template>-->
 </xsl:stylesheet>

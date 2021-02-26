@@ -219,3 +219,7 @@ self.addEventListener("activate", function(event) {
 			})
 	);
 });
+
+// Also: Implement Secure Header using Cloudflare Worker
+// https://geekflare.com/cloudflare-workers-secure-headers/
+// https://raspy-snowflake-8ecc.awisnicki.workers.dev 

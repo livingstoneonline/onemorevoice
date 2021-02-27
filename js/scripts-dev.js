@@ -57,7 +57,7 @@ function closeNav() {
 /* Keyboard Navigation for Dropdown Menus */
 /* Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js */
 
-const menu = document.getElementById('nav4');
+const menu = document.getElementById('nav1');
 menu.addEventListener('keydown', handleKeydown);
 menu.addEventListener('focusin', handleFocusIn);
 

@@ -65,6 +65,9 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="robots" content="index, follow"/>
 				<meta name="theme-color" content="#204A79"/>
+				<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+				<meta http-equiv="pragma" content="no-cache" />
+				<meta http-equiv="expires" content="0" />
 				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png"/>
 				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png"/>
@@ -101,7 +104,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="../../index.html"><img src="../../img/logo/OMV-logo-87px.jpg" srcset="../../img/logo/OMV-logo-87px.jpg 87w, ../../img/logo/OMV-logo-78px.jpg 78w, ../../img/logo/OMV-logo-72px.jpg 72w, ../../img/logo/OMV-logo-58px.jpg 58w, ../../img/logo/OMV-logo-39px.jpg 39w, ../../img/logo/OMV-logo-36px.jpg 36w, ../../img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="../../site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="../../index.html"><img src="../../img/logo/OMV-logo-87px.jpg" srcset="../../img/logo/OMV-logo-87px.jpg 87w, ../../img/logo/OMV-logo-78px.jpg 78w, ../../img/logo/OMV-logo-72px.jpg 72w, ../../img/logo/OMV-logo-58px.jpg 58w, ../../img/logo/OMV-logo-39px.jpg 39w, ../../img/logo/OMV-logo-36px.jpg 36w, ../../img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="../../index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="../../site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 

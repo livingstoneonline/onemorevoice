@@ -15,7 +15,7 @@
 			<xd:p>Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)</xd:p>
 		</xd:desc>
 	</xd:doc>
-	
+
 	<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 
 	<!-- Incoming parameters -->
@@ -73,11 +73,15 @@
 				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="../../site.webmanifest"/>
 				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<!-- <link rel="preload" as="style" href="../../css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
+				<link rel="preload" as="style" href="../../css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="../../css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
+					<link rel="preload" as="style" href="../../css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				</xsl:if>
 				<link rel="preload" as="style" href="../../css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/fontawesome-webfont.woff?v=4.7.0"/>
-				<!-- <link rel="preload" as="script" href="../../js/scripts.js?=newVers_0001"/> -->
+				<link rel="preload" as="script" href="../../js/scripts.js?=newVers_0001"/>
 				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
 				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
@@ -93,7 +97,7 @@
 				<script>
 					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 					// Reloads given page, keeps base URL, path, and any #, but removes random query string
-		// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
+					// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
 				</script>			
 				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
@@ -129,9 +133,13 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if>;
+					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
 				</script>
-				<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css?=newVers_0001"/> -->
+				<link rel="stylesheet" type="text/css" href="../../css/style.css?=newVers_0001"/>
+				<link rel="stylesheet" type="text/css" href="../../css/styleTEI.css?=newVers_0001"/>
+				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
+					<link rel="stylesheet" type="text/css" href="../../css/styleTEI-add.css?=newVers_0001"/>
+				</xsl:if>
 				<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
@@ -155,7 +163,8 @@
 				<script>
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
-					$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)});
+					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="../../js/scripts.js?=newVers_0001";document.body.appendChild(element)});
 				</script>
 				<!-- <script src="../../js/scripts.js?=newVers_0001"></script> -->
 			</body>
@@ -872,7 +881,7 @@
 	<!-- app: show first rdg, offer alternatives in title -->
 	<xsl:template match="app">
 		<xsl:variable name="rdg-rdg">
-			<xsl:value-of select="../../app/rdg" separator=" [or] "/>
+			<xsl:value-of select="../app/rdg" separator=" [or] "/>
 		</xsl:variable>
 		<span class="app">
 			<xsl:attribute name="title">This passage can be read in alternate ways: <xsl:value-of select="$rdg-rdg"/></xsl:attribute>
@@ -904,20 +913,20 @@
 			<xsl:variable name="choice-orig-sic">
 			<xsl:choose>
 				<!-- If there are orig and reg values in the corr, show the orig -->
-				<xsl:when test="../../corr/choice/orig">
-					<xsl:value-of select="../../corr/choice/orig"/>
+				<xsl:when test="../corr/choice/orig">
+					<xsl:value-of select="../corr/choice/orig"/>
 				</xsl:when>
 				<!-- If there are sic and corr values in the corr, show both sic and corr -->
-				<xsl:when test="../../corr/choice/sic">
-					<xsl:value-of select="../../corr/choice/sic"/> [or] <xsl:value-of select="../../corr/choice/corr"/>
+				<xsl:when test="../corr/choice/sic">
+					<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
 				</xsl:when>
 				<!-- If there are two rdgs, show both rdgs -->
-				<xsl:when test="../../corr/app/rdg">
-					<xsl:value-of select="../../corr/app/rdg[1]"/> [or] <xsl:value-of select="../../corr/app/rdg[2]"/>
+				<xsl:when test="../corr/app/rdg">
+					<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
 				</xsl:when>
-				<xsl:when test="../../corr[not(text())]">[no text]</xsl:when>
+				<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select="../../corr"/>
+					<xsl:value-of select="../corr"/>
 				</xsl:otherwise>
 			</xsl:choose>			
 			</xsl:variable>
@@ -1125,7 +1134,7 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-				<br/><br/>
+				<br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>

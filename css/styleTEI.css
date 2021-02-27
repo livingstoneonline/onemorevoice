@@ -59,7 +59,7 @@ also see 2.9 for manuscript colors
 	font-size: 1.3em;
 	line-height: 1.875em;
 	display: block;
-	overflow-x: hidden;
+	overflow: hidden;
 	text-align: center;
 }
 @media only screen and (min-width: 992px){
@@ -139,6 +139,16 @@ also see 2.9 for manuscript colors
 		display: block;
 	}
 }
+.transcription main.object{
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+@media only screen and (min-width: 992px){
+	.transcription main.object{
+		padding-bottom: 1em;
+	}
+}
 .narrow-mobile{
 	font-size: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -157,11 +167,6 @@ also see 2.9 for manuscript colors
 	-ms-hyphens: initial;
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
-}
-.object{
-	text-align: center;
-	margin: 0 auto;
-	padding: 0;
 }
 .warning{
 	border: 1px solid #902D27;
@@ -856,6 +861,11 @@ table .linenumber{
 	margin: 0;
 	padding: 0 1em;
 }
+@media only screen and (min-width: 992px){
+	.figure{
+		padding: 0;
+	}
+}
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
 }
@@ -872,8 +882,8 @@ table .linenumber{
 	}
 }
 @media only screen and (min-width: 480px){
-	.object.vertical img{
-		width: 70%;
+	.object.vertical a img{
+		width: calc(70% - 6px);
 	}
 }
 .object.gray img{

@@ -327,16 +327,16 @@ $('body').find('img').filter(function(){
 // Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 // Reloads given page, keeps base URL, path, and any #, but removes random query string
 
-(function () {
-    if (window.localStorage) {
-        if (!localStorage.getItem('firstLoad')) {
-            localStorage['firstLoad'] = true;
-            window.location.href = window.location.origin + window.location.pathname + window.location.hash + '?=updated';
-            // window.location.reload();
-        } else 
-            localStorage.removeItem('firstLoad');
-        }
-})();
+// (function () {
+//     if (window.localStorage) {
+//         if (!localStorage.getItem('firstLoad')) {
+//             localStorage['firstLoad'] = true;
+//             window.location.href = window.location.origin + window.location.pathname + window.location.hash;
+//             // window.location.reload();
+//         } else 
+//             localStorage.removeItem('firstLoad');
+//         }
+// })();
 
 
 //  Commented out b/c breaks external LO links

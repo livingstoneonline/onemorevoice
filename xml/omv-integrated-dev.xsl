@@ -53,7 +53,7 @@
 		<html lang="en">
 			<head>
 				<meta charset="UTF-8"/>
-				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/>--><!--<xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
+				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
 						<meta name="description" content="{$object-creator}" />
@@ -73,11 +73,15 @@
 				<link rel="icon" type="image/png" sizes="16x16" href="https://onemorevoice.org/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="https://onemorevoice.org/site.webmanifest"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<!-- <link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/> -->
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.cssTEI?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
+					<link rel="preload" as="style" href="https://onemorevoice.org/css/style.cssTEI-add?=newVers_0001" onload="this.rel='stylesheet'"/>
+				</xsl:if>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/fontawesome-webfont.woff2?v=4.7.0"/>
 				<link rel="preload" as="font" type="font/woff" crossorigin="" href="https://onemorevoice.org/fonts/fontawesome-webfont.woff?v=4.7.0"/>
-				<!-- <link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0001"/> -->
+				<link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0001"/>
 				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
 				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
@@ -93,7 +97,7 @@
 				<script>
 					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 					// Reloads given page, keeps base URL, path, and any #, but removes random query string
-		// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
+					// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
 				</script>			
 				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
@@ -104,7 +108,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-120px.jpg 120w, https://onemorevoice.org/img/logo/OMV-logo-80px.jpg 80w, https://onemorevoice.org/img/logo/OMV-logo-40px.jpg" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="../../index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg 87w, https://onemorevoice.org/img/logo/OMV-logo-78px.jpg 78w, https://onemorevoice.org/img/logo/OMV-logo-72px.jpg 72w, https://onemorevoice.org/img/logo/OMV-logo-58px.jpg 58w, https://onemorevoice.org/img/logo/OMV-logo-39px.jpg 39w, https://onemorevoice.org/img/logo/OMV-logo-36px.jpg 36w, https://onemorevoice.org/img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="https://onemorevoice.org/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 
@@ -129,9 +133,13 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if>;
+					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
 				</script>
-				<!-- <link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0001"/> -->
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0001"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001"/>
+				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
+					<link rel="stylesheet" type="text/css" href="../../css/styleTEI-add.css?=newVers_0001"/>
+				</xsl:if>
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/font-awesome.min.css"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
@@ -155,7 +163,8 @@
 				<script>
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
-					$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts.js?="+randomString;document.body.appendChild(element)});
+					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts.js?="+randomString;document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="https://livingstoneonline.github.io/onemorevoice/js/scripts.js?=newVers_0001";document.body.appendChild(element)});
 				</script>
 				<!-- <script src="https://onemorevoice.org/js/scripts.js?=newVers_0001"></script> -->
 			</body>

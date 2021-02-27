@@ -55,7 +55,7 @@
                 <msDesc type="manuscript">
                     <msIdentifier>
                         <country>United Kingdom</country><!-- Repository country -->
-                        <settlement type="city">Oxford</settlement><!-- Repository city -->
+                        <settlement>Oxford</settlement><!-- Repository city -->
                         <repository>Bodleian Library</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
                         <idno type="shelfmark">MSS. Brit. Emp. s. 20, E5/7</idno><!-- Shelfmark/Identifier -->
                     </msIdentifier>
@@ -99,7 +99,7 @@
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
 			<change when="2020-09-28" who="#AW">Coding review</change>
-			<change when="2020-10-22" who="HB">Transcription and TEI Encoding</change>
+			<change when="2020-10-22" who="#HB">Transcription and TEI Encoding</change>
 			<change when="2020-09-10" who="#LM">Transcription</change>
         </revisionDesc>
     </teiHeader>

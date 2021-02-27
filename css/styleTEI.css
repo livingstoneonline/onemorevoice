@@ -139,6 +139,16 @@ also see 2.9 for manuscript colors
 		display: block;
 	}
 }
+.transcription main.object{
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+@media only screen and (min-width: 992px){
+	.transcription main.object{
+		padding-bottom: 1em;
+	}
+}
 .narrow-mobile{
 	font-size: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -157,11 +167,6 @@ also see 2.9 for manuscript colors
 	-ms-hyphens: initial;
 	-moz-hyphens: initial;
 	-webkit-hyphens: initial;
-}
-.object{
-	text-align: center;
-	margin: 0 auto;
-	padding: 0;
 }
 .warning{
 	border: 1px solid #902D27;

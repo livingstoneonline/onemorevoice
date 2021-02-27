@@ -1134,7 +1134,7 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-				<br/><br/>
+				<br/>
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>

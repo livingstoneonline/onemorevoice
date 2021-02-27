@@ -74,9 +74,9 @@
 				<link rel="manifest" href="../../site.webmanifest"/>
 				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="../../css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="../../css/style.cssTEI?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="../../css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="preload" as="style" href="../../css/style.cssTEI-add?=newVers_0001" onload="this.rel='stylesheet'"/>
+					<link rel="preload" as="style" href="../../css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preload" as="style" href="../../css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>

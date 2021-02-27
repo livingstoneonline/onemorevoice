@@ -74,9 +74,9 @@
 				<link rel="manifest" href="https://onemorevoice.org/site.webmanifest"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.cssTEI?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="preload" as="style" href="https://onemorevoice.org/css/style.cssTEI-add?=newVers_0001" onload="this.rel='stylesheet'"/>
+					<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://onemorevoice.org/fonts/fontawesome-webfont.woff2?v=4.7.0"/>

@@ -67,8 +67,6 @@
 				<meta name="robots" content="index, follow"/>
 				<meta name="theme-color" content="#204A79"/>
 				<link rel="stylesheet" type="text/css" href="../../css/criticalTEI.css"/>
-				<!-- Link to full CSS file at end; critical CSS linked above.-->
-				<!-- <script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/criticalTEI.css?="+randomString;document.head.appendChild(css);</script>-->
 				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png" />
@@ -111,9 +109,11 @@
 					</header>
 					<xsl:apply-templates select="TEI"/>
 				</div>
-				<!-- Adds CSS file and adds random string to end of CSS file. Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486 -->
-				<script>var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);</xsl:if></script>
-				<!-- <link rel="stylesheet" type="text/css" href="../../css/style.css"/> --> 
+				<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+				<link rel="stylesheet" type="text/css" href="../../css/styleTEI.css"/>
+				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
+					<link rel="stylesheet" type="text/css" href="../../css/styleTEI-add.css"/>
+				</xsl:if>
 				<script src="../../js/jquery-3.5.1.min.js"></script> 
 				<!-- Adapted from https://stackoverflow.com/a/31837264 -->
 				<script>$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='../../common/'+$(this).data('include')+'.html';$(this).load(file)})});</script>
@@ -137,7 +137,13 @@
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				<!-- Loads JS file only after rest of page has loaded and adds random string to end of JS file. Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486 -->
-				<script>$(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)});</script>
+				<script>
+					$( window ).on( "load", function() { 
+						var element = document.createElement("script");
+						element.src = "../../js/scripts.js";
+						document.body.appendChild(element);
+					});
+				</script>
 				<!--<link rel="stylesheet" type="text/css" href="https://livingstoneonline.github.io/onemorevoice/js/scripts.js" />-->
 			</body>
 		</html>

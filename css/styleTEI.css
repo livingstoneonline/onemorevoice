@@ -856,6 +856,11 @@ table .linenumber{
 	margin: 0;
 	padding: 0 1em;
 }
+@media only screen and (min-width: 992px){
+	.figure{
+		padding: 0;
+	}
+}
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
 }
@@ -872,8 +877,8 @@ table .linenumber{
 	}
 }
 @media only screen and (min-width: 480px){
-	.object.vertical img{
-		width: 70%;
+	.object.vertical a img{
+		width: calc(70% - 6px);
 	}
 }
 .object.gray img{

@@ -37,7 +37,7 @@ window.addEventListener('scroll', stickyNavigation);
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 
 function openNav() {
-	document.getElementById("nav7").style.display = "block";
+	document.getElementById("nav3").style.display = "block";
 	document.getElementById("html").style.overflowY = "hidden";
 	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
 	// for(const element of elements){
@@ -46,7 +46,7 @@ function openNav() {
 }
 
 function closeNav() {
-	document.getElementById("nav7").style.display = "none";
+	document.getElementById("nav3").style.display = "none";
 	document.getElementById("html").style.overflowY = "unset";
 	// const elements = ["skiptocontent", "header", "main", "manuscript-div", "journal-div", "credits-div", "credits2-div", "footer-div"];
 	// for(const element of elements){
@@ -291,16 +291,16 @@ function RandomiseHref(){
 
 // Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 // Reloads given page, keeps base URL, path, and any #, but removes random query string
-(function () {
-    if (window.localStorage) {
-        if (!localStorage.getItem('firstLoad')) {
-            localStorage['firstLoad'] = true;
-            window.location.href = window.location.origin + window.location.pathname + window.location.hash;
-            // window.location.reload();
-        } else 
-            localStorage.removeItem('firstLoad');
-        }
-})();	
+// (function () {
+//     if (window.localStorage) {
+//         if (!localStorage.getItem('firstLoad')) {
+//             localStorage['firstLoad'] = true;
+//             window.location.href = window.location.origin + window.location.pathname + window.location.hash;
+//             // window.location.reload();
+//         } else 
+//             localStorage.removeItem('firstLoad');
+//         }
+// })();	
 
 /* Commented out b/c breaks external LO links */
 

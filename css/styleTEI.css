@@ -56,19 +56,26 @@ also see 2.9 for manuscript colors
 .manuscript,
 .journal,
 .object{
-	font-size: 1.3em;
+	font-size: 1.2em;
+	text-align: center;
 	line-height: 1.875em;
+	margin: 0 auto;
+	max-width: 700px;
 	display: block;
 	overflow: hidden;
-	text-align: center;
+}
+@media only screen and (min-width: 768px){
+	.manuscript,
+	.journal,
+	.object{
+		font-size: 1.15em;
+	}
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
 	.journal,
 	.object{
-		font-size: 1.2em;
-		margin: 0 auto;
-		max-width: 700px;
+		font-size: 1.1em;
 		display: block !important; /* Tied to overlay */
 	}
 }
@@ -184,6 +191,8 @@ also see 2.9 for manuscript colors
 .journal-switches{
 	font-size: .92em;
 	line-height: 0;
+	text-align: center;
+	margin: 0 auto;
 	display: none;
 }
 @media only screen and (min-width: 320px){
@@ -425,8 +434,8 @@ button::-moz-focus-inner{
 .manuscript .pb-title,
 .journal .pb-title,
 .journal .TEI .text .body .div p + .pb-title:first-of-type{
-	padding-top: 2em;
-	margin: 2em 0 .5em 0;
+	padding-top: 1em;
+	margin: 1em 0 .5em 0;
 	border-top: 1px dotted #858585;
 	width: 100%;
 	display: inline-block;
@@ -434,7 +443,7 @@ button::-moz-focus-inner{
 .object .pb-title{
 	text-align: left;
 	width: 100%;
-	padding: 0 1em;
+	padding: 0;
 	display: inline-block;
 }
 .manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
@@ -859,12 +868,7 @@ table .linenumber{
 	font-size: .8em;
 	color: #666666;
 	margin: 0;
-	padding: 0 1em;
-}
-@media only screen and (min-width: 992px){
-	.figure{
-		padding: 0;
-	}
+	padding: 0;
 }
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;

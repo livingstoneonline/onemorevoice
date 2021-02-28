@@ -13,7 +13,7 @@ html{
 body{
   top: 0 !important;
   margin: 0 auto;
-  padding-bottom: 0;
+  padding: 0;
   max-width: 100%;
 }
 @media only screen and (min-width: 992px){
@@ -29,8 +29,7 @@ body{
 }
 @media only screen and (min-width: 480px){
   .text-container{
-      margin-top: 66px;
-      margin-bottom: 40px;
+      margin-top: 70px;
   }
 }
 @media only screen and (min-width: 992px){
@@ -55,99 +54,133 @@ body{
   .page-wrapper{
       background-color: #fff;
       margin: 0 auto;
-      padding: 40px 1.2em;
+      padding: 36px 1.2em 0;
       width: 100%;
       max-width: 900px;
   }
 }
 .transcription header,
 header{
+  background-color: #fff;
   text-align: center;
-  margin-top: 44px;
+  margin: 44px auto 0;
+  max-width: 700px;
   position: relative;
 }
 @media only screen and (min-width: 480px){
   .transcription header,
   header{
-      margin-top: 50px;
+      margin-top: 54px;
+  }
+}
+@media only screen and (min-width: 768px){
+  .transcription header,
+  header{
       margin-bottom: 1em;
   }
 }
 @media only screen and (min-width: 992px){
   .transcription header,
   header{
-      background-color: #fff;
-      margin: 0 auto;
-      max-width: 700px;
+      margin-top: 0;
   }
+}
+aside.credits#credits-div,
+aside.credits#credits2-div,
+aside.credits#main,
+main,
+main.object#object-div{
+  background-color: #fff;
+  line-height: 1.875em;
+  margin: 0 auto;
+  max-width: 700px;
 }
 main{
   font-size: 1.25em;
-  line-height: 1.875em;
-  text-align: left;
   padding: 1em;
 }
-@media only screen and (min-width: 768px){
-  main
-  .credits#credits2-div,
-  .credits#main{
-      font-size: 1.2em;
-      padding: 1em .5em;
-  }
-}
-@media only screen and (min-width: 992px){
-  main
-  .credits#credits2-div,
-  .credits#main{
-      font-size: 1.15em;
-      background-color: #fff;
-      margin: 0 auto;
-      max-width: 700px;
-      display: block !important;
-  }
-  main,
-  .credits#main{
-    padding: 2em .5em 0;
-	}
-	.transcription main{
-		padding: 0 .5em;
-	}
-  .credits#credits2-div{
-      padding: 0 .5em;
-  }
-}
-aside{
+aside.credits#credits-div{
   font-size: 1.2em;
-  line-height: 1.875;
+  padding: 0 1em 1em;
+}
+aside.credits#main{
+  font-size: 1.2em;
+  padding: 1em 1em 0;
+}
+main.object#object-div{
   padding: 0 1em;
 }
+aside.credits#credits2-div{
+  font-size: 1.2em;
+  padding: 0 1em 1em;
+}
+main.journal#journal-div,
+main.manuscript#manuscript-div{
+  padding: 0;
+}
+@media only screen and (min-width: 480px){
+  main.object#object-div{
+      padding: 1em;
+  }
+}
 @media only screen and (min-width: 768px){
-  aside{
+  main{
+      font-size: 1.2em;
+      padding: 1em 0;
+  }
+  aside.credits#credits-div{
       font-size: 1.15em;
+      padding: 0 0 1.5em;
+  }
+  aside.credits#main{
+      font-size: 1.15em;
+      padding: 1em 0 0;
+  }
+  main.object#object-div{
+      font-size: 1.15em;
+      padding: 0 0 1em;
+  }
+  aside.credits#credits2-div{
+      font-size: 1.15em;
+      padding: 0 0 1.5em;
   }
 }
 @media only screen and (min-width: 992px){
-  aside{
-      font-size: 1.1em;
-      background-color: #fff;
-      margin: 0 auto;
-      max-width: 700px;
+  main{
+      font-size: 1.15em;
+      display: block !important;
   }
-}
-.transcription{
-  text-align: center;
+  aside.credits#credits-div{
+      font-size: 1.1em;
+  }
+  aside.credits#main{
+      font-size: 1.1em;
+  }
+  main.object#object-div{
+      font-size: 1.1em;
+  }
+  aside.credits#credits2-div{
+      font-size: 1.1em;
+  }
 }
 .essay h2,
 .transcription h2{
-  font-size: 1em;
-  color: #204A79;
-  margin: 0.5em auto 0;
+	color: #204A79;
+	margin: .5em auto 0 auto;
 }
-@media only screen and (min-width: 992px){
-  .essay h2,
-  .transcription h2{
-      font-size: 1.1em;
-  }
+.essay h2{
+	font-size: 1.25em;
+}
+.transcription h2{
+	font-size: 1.2em;
+}
+@media only screen and (min-width: 768px){
+	.essay h2{
+		font-size: 1.2em;
+	}
+	.transcription h2{
+		font-size: 1.15em;
+	}
 }
 img{
   color: #e6e6e6;
@@ -429,13 +462,13 @@ a:visited{
       left: 3.7em;
   }
 }
+#nav11 h1,
 #nav3 h1,
-#nav9 h1,
-#nav11 h1{
-	font-family: 'Merriweather', serif;
-	font-size: 1.4em;
-	font-weight: 700;
-	margin: 0;
+#nav9 h1{
+  font-family: 'Merriweather', serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0;
 }
 @media only screen and (min-width: 480px){
   #nav11 h1,
@@ -445,13 +478,13 @@ a:visited{
   }
 }
 @media only screen and (min-width: 768px){
-	#nav3 h1,
-	#nav9 h1,
-	#nav11 h1{
-		font-family: 'Merriweather', serif;
-		font-size: 1.7em;
-		font-weight: 900;
-	}
+  #nav11 h1,
+  #nav3 h1,
+  #nav9 h1{
+      font-family: 'Merriweather', serif;
+      font-size: 1.7em;
+      font-weight: 900;
+  }
 }
 #nav4{
   white-space: nowrap;
@@ -536,14 +569,14 @@ input:checked + label::after{
 }
 #nav12,
 #nav5{
-  right: .5em;
+  right: 0.5em;
   position: absolute;
 }
 @media only screen and (min-width: 768px){
-	#nav5,
-	#nav12{
-		right: 1em;
-	}	
+  #nav12,
+  #nav5{
+      right: 1em;
+  }
 }
 #nav12 .fa-bars,
 #nav5 .fa-bars{
@@ -587,8 +620,8 @@ input:checked + label::after{
   background-color: #3B5E52;
   border-left: 1px solid #737373;
   width: 100%;
-	min-width: 245px;
-	max-width: 265px;
+  min-width: 245px;
+  max-width: 265px;
 }
 aside.sidebar{
   font-size: 0.9em;
@@ -597,7 +630,7 @@ aside.sidebar{
   color: #fff;
   background-color: #3B5E52;
   margin: 0;
-  padding: 40px 0;
+  padding: 36px 0 0;
   display: none;
   visibility: hidden;
 }
@@ -680,17 +713,17 @@ aside.sidebar .popular li a img{
   }
 }
 #google_translate_element{
-  min-height: 55px;
+	min-height: 72px;
 }
 @media only screen and (min-width: 768px){
-  #google_translate_element{
-      min-height: 50px;
-  }
+	#google_translate_element{
+		min-height: 68px;
+	}
 }
 @media only screen and (min-width: 992px){
-  #google_translate_element{
-      min-height: 48px;
-  }
+	#google_translate_element{
+		min-height: 66px;
+	}
 }
 #google_translate_element > div > span > a > img{
   width: 3.5em;

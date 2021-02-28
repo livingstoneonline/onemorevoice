@@ -1,16 +1,16 @@
 // Service Worker
 // Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker
 
-// if ("serviceWorker" in navigator) {
-// 	navigator.serviceWorker
-// 		.register("/sw.js?=newVers_0001")
-// 		.then(serviceWorker => {
-// 			console.log("Service Worker registered: ", serviceWorker);
-// 		})
-// 		.catch(error => {
-// 			console.error("Error registering the Service Worker: ", error);
-// 		});
-// }
+if ("serviceWorker" in navigator) {
+	navigator.serviceWorker
+		.register("/sw.js?=newVers_0001")
+		.then(serviceWorker => {
+			console.log("Service Worker registered: ", serviceWorker);
+		})
+		.catch(error => {
+			console.error("Error registering the Service Worker: ", error);
+		});
+}
 
 
 // Overlay

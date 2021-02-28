@@ -203,7 +203,7 @@ main.journal#journal-div{
 	}
 	aside.credits#credits-div{
 		font-size: 1.15em;
-		padding: 0 0 1em;
+		padding: 0 0 1.5em;
 	}
 	aside.credits#main{
 		font-size: 1.15em;
@@ -215,7 +215,7 @@ main.journal#journal-div{
 	}
 	aside.credits#credits2-div{
 		font-size: 1.15em;
-		padding: 0 0 1em;
+		padding: 0 0 1.5em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -272,14 +272,21 @@ main.journal#journal-div{
 
 .essay h2,
 .transcription h2{
-	font-size: 1em;
 	color: #204A79;
 	margin: .5em auto 0 auto;
 }
-@media only screen and (min-width: 992px){
-	.essay h2,
+.essay h2{
+	font-size: 1.25em;
+}
+.transcription h2{
+	font-size: 1.2em;
+}
+@media only screen and (min-width: 768px){
+	.essay h2{
+		font-size: 1.2em;
+	}
 	.transcription h2{
-		font-size: 1.1em;
+		font-size: 1.15em;
 	}
 }
 h3{

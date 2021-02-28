@@ -5,15 +5,14 @@ console.log('WORKER: executing.');
 /* A version number is useful when updating the worker logic,
 	 allowing you to remove outdated cache entries during the update.
 */
-var version = 'v1::';
+var version = 'v002::';
 
 /* These resources will be downloaded and cached by the service worker
 	 during the installation process. If any resource fails to be downloaded,
 	 then the service worker won't be installed either.
 */
 var offlineFundamentals = [
-	'/',
-	'/sw.js',
+	// '/',
 	'/site.webmanifest',
 	'/favicon.ico',
 	'/common/footer-1.html',
@@ -27,6 +26,8 @@ var offlineFundamentals = [
 	'/css/style.css',
 	'/css/styleTEI-add.css',
 	'/css/styleTEI.css',
+	'/fonts/fontawesome-webfont.woff',
+	'/fonts/fontawesome-webfont.woff2',
 	'/img/logo/OMV-logo-29px.jpg',
 	'/img/logo/OMV-logo-36px.jpg',
 	'/img/logo/OMV-logo-39px.jpg',
@@ -34,6 +35,20 @@ var offlineFundamentals = [
 	'/img/logo/OMV-logo-72px.jpg',
 	'/img/logo/OMV-logo-78px.jpg',
 	'/img/logo/OMV-logo-87px.jpg',
+	'/sidebar/liv_021018_0001_sidebar-100px.jpg',
+	'/sidebar/liv_021018_0001_sidebar-200px.jpg',
+	'/sidebar/liv_021041_0001_sidebar-100px.jpg',
+	'/sidebar/liv_021041_0001_sidebar-200px.jpg',
+	'/sidebar/liv_023018_0001_sidebar-100px.jpg',
+	'/sidebar/liv_023018_0001_sidebar-200px.jpg',
+	'/sidebar/liv_023021_0001_sidebar-100px.jpg',
+	'/sidebar/liv_023021_0001_sidebar-200px.jpg',
+	'/sidebar/github-100px.png',
+	'/sidebar/github-200px.png',
+	'/sidebar/livingstone_online-175px.png',
+	'/sidebar/livingstone_online-350px.png',
+	'/sidebar/zotero-100px.png',
+	'/sidebar/zotero-200px.png',
 	'/js/journal-transform.js',
 	'/js/jquery-3.5.1.min.js',
 	'/js/manuscript-transform.js',

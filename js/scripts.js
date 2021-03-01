@@ -1,18 +1,27 @@
 // Service Worker
 // Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js?=newVers_0001")
-    .then(serviceWorker => {
-      serviceWorker.update();
-      console.log("Service Worker registered: ", serviceWorker);
-    })
-    .catch(error => {
-      console.error("Error registering the Service Worker: ", error);
-    });
-}
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker
+//     .register("/sw.js?=newVers_0001")
+//     .then(serviceWorker => {
+//       serviceWorker.update();
+//       console.log("Service Worker registered: ", serviceWorker);
+//     })
+//     .catch(error => {
+//       console.error("Error registering the Service Worker: ", error);
+//     });
+// }
 
+// Unregisters all service workers
+
+if ("serviceWorker" in navigator) {
+	navigator.serviceWorker.getRegistrations().then(function (registrations) {
+				for (let registration of registrations) {
+					registration.unregister()
+				}
+			})
+	}
 
 // Overlay
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp

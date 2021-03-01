@@ -99,12 +99,16 @@ body{
 }
 @media only screen and (min-width: 992px){
 	.text-container{
+		margin-top: 51.1px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.text-container{
 		border-right: 1px solid #737373;
 		border-left: 1px solid #737373;
-		margin-top: 49.5px;
 		margin-bottom: 0;
 		/* the following tied to nav-wrapper */
-		min-width: 992px;
+		min-width: 990px;
 		max-width: 1200px;
 		display: flex;
 		flex-direction: row-reverse;
@@ -330,6 +334,9 @@ img{
 	color: #e6e6e6;
 	font-weight: 300;
 	width: 100%;
+}
+header img{
+	width: calc(100% - 2px);
 }
 a img{
 	border: 3px transparent solid;
@@ -588,6 +595,13 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 		height: 49.5px;
 	}
 }
+@media only screen and (min-width: 768px){
+	.navigation,
+	.navigation.fallback,
+	.overlay .navigation{
+		padding: .1em;
+	}
+}
 .navigation a,
 .navigation a:hover,
 .navigation a:focus,
@@ -627,8 +641,8 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
-	padding: .8em .55em;
-	top: -44px;
+	padding: 1em .55em;
+	top: -52px;
 	left: 0;
 	position: absolute;
 	z-index: 50;
@@ -1028,7 +1042,7 @@ input:checked + label::after{
 @media only screen and (min-width: 480px){
 	.overlay-content{
 		margin: 5.5em auto 3em;
-		padding: 2em .5em;
+		padding: 2em 0;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -1059,7 +1073,7 @@ input:checked + label::after{
 .overlay-content .container-home,
 .overlay-content .container-left,
 .overlay-content .container-right{
-	margin: 0 2.5em;
+	margin: 0 2em;
 	clear: both;
 }
 @media only screen and (min-width: 480px){

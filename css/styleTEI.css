@@ -146,16 +146,6 @@ also see 2.9 for manuscript colors
 		display: block;
 	}
 }
-.transcription main.object{
-	text-align: center;
-	margin: 0 auto;
-	padding: 0;
-}
-@media only screen and (min-width: 992px){
-	.transcription main.object{
-		padding-bottom: 1em;
-	}
-}
 .narrow-mobile{
 	font-size: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -867,8 +857,6 @@ table .linenumber{
 .figure{
 	font-size: .8em;
 	color: #666666;
-	margin: 0;
-	padding: 0;
 }
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;

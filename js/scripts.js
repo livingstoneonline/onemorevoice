@@ -13,6 +13,7 @@
 //     });
 // }
 
+
 // Unregisters all service workers
 
 if ("serviceWorker" in navigator) {
@@ -20,8 +21,9 @@ if ("serviceWorker" in navigator) {
 				for (let registration of registrations) {
 					registration.unregister()
 				}
-			})
-	}
+	})
+}
+
 
 // Overlay
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp

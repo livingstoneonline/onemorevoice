@@ -3,14 +3,14 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020074">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020077">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Letter to the Committee of The National Freedmen's Aid Union</title>
+				<title>Receipt for Frederick William Chesson</title>
 				<!-- Title without date -->
-				<title type="alternative">Letter to the Committee of The National Freedmen's Aid Union, 5 December 1867</title>
+				<title type="alternative">Receipt for Frederick William Chesson, 5 September 1881</title>
 				<!-- Title, date -->
 				<author>Craft, William Ivens, 1855-1926</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -48,7 +48,7 @@
 				<publisher>Livingstone Online</publisher>
 				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
 				<date>2021</date>
-				<idno type="LEAP-ID">liv_020074</idno>
+				<idno type="LEAP-ID">liv_020077</idno>
 				<!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- Edit <availability> as relevant -->
 				<availability>
@@ -68,7 +68,7 @@
 						<!-- Repository city -->
 						<repository>Bodleian Library</repository>
 						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
-						<idno type="shelfmark">MSS. Brit. Emp. S. 18, C117/148</idno>
+						<idno type="shelfmark">MSS. Brit. Emp. S. 18, C129/132</idno>
 						<!-- Shelfmark/Identifier -->
 					</msIdentifier>
 					<physDesc>
@@ -81,16 +81,14 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>Letter to the Committee of The National Freedmen's Aid Union</title>
+					<title>Receipt for Frederick William Chesson</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
 					<author xml:id="WIC">Craft, William Ivens, 1855-1926</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
-					<date type="composition" when="1867-12-05">5 December 1867</date>
-					<!-- See item for composition place; remove if not given --> 
-					<placeName type="compositionPlace">4 Lawn Place Shepherd’s Bush</placeName>
+					<date type="composition" when="1881-09-05">5 September 1881</date>
 				</bibl>
 			</sourceDesc>
 			<!-- End of manuscript <sourceDesc> -->

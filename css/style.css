@@ -599,7 +599,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	.navigation,
 	.navigation.fallback,
 	.overlay .navigation{
-		padding: .1em;
+		height: 52.5px;
 	}
 }
 .navigation a,
@@ -818,7 +818,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	align-items: center;
 }
 #nav4 li a{
-	padding: 14px 13px;
+	padding: 19px 13px;
 }
 /* main nav links */
 #nav4 li:hover,
@@ -852,7 +852,7 @@ input:checked + label::after{
 	content: '\f0d7';
 }
 #nav4 li .dropdown label.dropbtn{
-	padding: 17px 13px;
+	padding: 19px 13px;
 	border: none;
 }
 :checked + label .expanded-text{
@@ -1318,6 +1318,10 @@ aside.sidebar .external li a img{
 	border: 2px solid transparent;
 	width: 100px;
 	margin-bottom: .5em;
+}
+aside.sidebar .external li a img.wp{
+	border: 2px solid transparent;
+	width: 150px;
 }
 aside.sidebar .external li a img.lo{
 	border: 2px solid transparent;

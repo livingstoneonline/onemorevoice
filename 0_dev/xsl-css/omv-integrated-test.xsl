@@ -861,16 +861,16 @@
 		</p>
 	</xsl:template>
 
-	<xsl:template match="abbr|orig">
-		<xsl:apply-templates/>
+	<xsl:template match="abbr">
+		<abbr><xsl:apply-templates/></abbr>
 	</xsl:template>
 
 	<xsl:template match="add">
-			<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></ins>
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></span>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></ins>
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
@@ -901,51 +901,53 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="div/cb">
-		<xsl:apply-templates/>
-	</xsl:template>
-
 	<xsl:template match="choice">
 		<xsl:apply-templates/>
 	</xsl:template>
 	
 	<xsl:template match="choice/sic">
 			<xsl:variable name="choice-orig-sic">
-			<xsl:choose>
-				<!-- If there are orig and reg values in the corr, show the orig -->
-				<xsl:when test="../corr/choice/orig">
-					<xsl:value-of select="../corr/choice/orig"/>
-				</xsl:when>
-				<!-- If there are sic and corr values in the corr, show both sic and corr -->
-				<xsl:when test="../corr/choice/sic">
-					<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
-				</xsl:when>
-				<!-- If there are two rdgs, show both rdgs -->
-				<xsl:when test="../corr/app/rdg">
-					<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
-				</xsl:when>
-				<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="../corr"/>
-				</xsl:otherwise>
-			</xsl:choose>			
+				<xsl:choose>
+					<!-- If there are orig and reg values in the corr, show the orig -->
+					<xsl:when test="../corr/choice/orig">
+						<xsl:value-of select="../corr/choice/orig"/>
+					</xsl:when>
+					<!-- If there are sic and corr values in the corr, show both sic and corr -->
+					<xsl:when test="../corr/choice/sic">
+						<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
+					</xsl:when>
+					<!-- If there are two rdgs, show both rdgs -->
+					<xsl:when test="../corr/app/rdg">
+						<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
+					</xsl:when>
+					<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="../corr"/>
+					</xsl:otherwise>
+				</xsl:choose>			
 			</xsl:variable>
-			<span class="sic diplomatic">
+			<u class="sic diplomatic">
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
 				<xsl:apply-templates/>
-			</span>
+			</u>
 	</xsl:template>
 
 	<xsl:template match="corr|expan|reg"/>
 
-	<xsl:template match="del">
-		<span class="del cancelled">
+	<xsl:template match="date">
+		<time>
 			<xsl:apply-templates/>
-		</span>
+		</time>
+	</xsl:template>
+
+	<xsl:template match="del">
+		<del class="del cancelled">
+			<xsl:apply-templates/>
+		</del>
 	</xsl:template>
 
 	<xsl:template match="del[following-sibling::add[1][@place='over-text']]" priority="10">
-		<span class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></span>
+		<del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del>
 	</xsl:template>
 
 	<xsl:template match="figure">
@@ -1034,31 +1036,38 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
+		<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
 			<xsl:apply-templates/>
-		</span>
+		</h3>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
 		<span class="idno"><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="list/item">
-		<span class="listitem" title="item">
+	<xsl:template match="item">
+		<li class="item" title="Item in list">
 			<xsl:apply-templates/>
-		</span>
+		</li>
 	</xsl:template>
 
 	<xsl:template match="list">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
-			<xsl:apply-templates/>
-		</span>
+		<xsl:if test="@type='ordered'">
+			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Ordered list">
+				<xsl:apply-templates/>
+			</ol>
+		</xsl:if>
+		<xsl:if test="@type='unordered'">
+			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Unordered list">
+				<xsl:apply-templates/>
+			</ul>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
-			<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
+			<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
 	</xsl:template>
 
 	<xsl:template match="milestone">
@@ -1098,6 +1107,10 @@
 	
 	<xsl:template match="note">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="orig">
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="orgName">

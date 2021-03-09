@@ -566,10 +566,10 @@ input:checked + label::after{
 #nav5{
 	border: none;
 	background: transparent;
-	padding: .1em .2em .3em;
 }
+#nav5 .fa-bars,
 #nav12 .fa-bars{
-	padding: .1em .2em .3em;
+	padding: .3em .2em;
 }
 #nav5,
 #nav12{
@@ -577,31 +577,22 @@ input:checked + label::after{
 	position: absolute;
 	transform: translate(0, -50%);
 }
-#nav5{
+#nav5,
+#nav12{
 	right: .6em;
 }
-#nav12{
-	right: .7em;
-}
-@media only screen and (min-width: 320px){
-	#nav12{
-		right: .65em;
-	}	
-}
 @media only screen and (min-width: 480px){
-	#nav5{
+	#nav5,
+	#nav12{
 		right: .7em;
 	}
-	#nav12{
-		right: .75em;
-	}	
 }
 @media only screen and (min-width: 768px){
 	#nav5{
 		right: 1.35em;
 	}
 	#nav12{
-		right: 1.45em;
+		right: 1.20em;
 	}	
 }
 #nav5 .fa-bars{

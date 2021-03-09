@@ -44,33 +44,33 @@ function closeNav() {
 // Trap Focus in Overlay
 // Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
 // Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
-// jQuery(document).ready(function () {
-// 	jQuery('#overlay-last')
-// 			.on('keydown', function (e) {
-// 					var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-// 					if (!isTabPressed) {
-// 							return
-// 					}
-// 					if (e.shiftKey) {
-// 							return
-// 					} else {
-// 							jQuery('#nav8').focus();
-// 							e.preventDefault()
-// 					}
-// 			});
-// 	jQuery('#nav8').on('keydown', function (e) {
-// 			var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-// 			if (!isTabPressed) {
-// 					return
-// 			}
-// 			if (e.shiftKey) {
-// 					jQuery('#overlay-last').focus();
-// 					e.preventDefault()
-// 			} else {
-// 					return
-// 			}
-// 	})
-// });
+jQuery(document).ready(function () {
+	jQuery('#overlay-last')
+			.on('keydown', function (e) {
+					var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+					if (!isTabPressed) {
+							return
+					}
+					if (e.shiftKey) {
+							return
+					} else {
+							jQuery('#nav8').focus();
+							e.preventDefault()
+					}
+			});
+	jQuery('#nav8').on('keydown', function (e) {
+			var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+			if (!isTabPressed) {
+					return
+			}
+			if (e.shiftKey) {
+					jQuery('#overlay-last').focus();
+					e.preventDefault()
+			} else {
+					return
+			}
+	})
+});
 
 
 // Keyboard Navigation for Dropdown Menus

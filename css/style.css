@@ -936,10 +936,12 @@ input:checked + label::after{
 #nav5{
 	border: none;
 	background: transparent;
-	padding: .1em .2em .3em;
+}
+#nav5 .fa-bars{
+	padding: .3em .2em;
 }
 #nav12 .fa-bars{
-	padding: .1em .2em .3em;
+	padding: .3em .4em;
 }
 #nav5,
 #nav12{
@@ -947,31 +949,22 @@ input:checked + label::after{
 	position: absolute;
 	transform: translate(0, -50%);
 }
-#nav5{
+#nav5,
+#nav12{
 	right: .6em;
 }
-#nav12{
-	right: .7em;
-}
-@media only screen and (min-width: 320px){
-	#nav12{
-		right: .65em;
-	}	
-}
 @media only screen and (min-width: 480px){
-	#nav5{
+	#nav5,
+	#nav12{
 		right: .7em;
 	}
-	#nav12{
-		right: .75em;
-	}	
 }
 @media only screen and (min-width: 768px){
 	#nav5{
 		right: 1.35em;
 	}
 	#nav12{
-		right: 1.45em;
+		right: 1.20em;
 	}	
 }
 #nav5 .fa-bars{
@@ -991,21 +984,30 @@ input:checked + label::after{
 #nav7 .close{
 	background: transparent;
 	border: none;
-	padding: 0 .28em;
-	right: .25em;
+	padding: .05em .28em 0;
+	top: 50%;
+	right: .3em;
 	position: absolute;
+	transform: translate(0, -50%);
 }
 #nav7 .close{
 	font-size: 1.9em;
 }
+@media only screen and (min-width: 320px){
+	#nav7 .close{
+		right: .4em;
+	}
+}
 @media only screen and (min-width: 480px){
 	#nav7 .close{
 		font-size: 2.1em;
+		right: .35em;
 	}
 }
 @media only screen and (min-width: 768px){
 	#nav7 .close{
 		right: .5em;
+		right: .6em;
 	}
 }
 @media only screen and (min-width: 992px){

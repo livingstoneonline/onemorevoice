@@ -41,6 +41,38 @@ function closeNav() {
 }
 
 
+// Trap Focus in Overlay
+// Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
+// Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
+jQuery(document).ready(function () {
+	jQuery('#overlay-last')
+			.on('keydown', function (e) {
+					var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+					if (!isTabPressed) {
+							return
+					}
+					if (e.shiftKey) {
+							return
+					} else {
+							jQuery('#nav8').focus();
+							e.preventDefault()
+					}
+			});
+	jQuery('#nav8').on('keydown', function (e) {
+			var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+			if (!isTabPressed) {
+					return
+			}
+			if (e.shiftKey) {
+					jQuery('#overlay-last').focus();
+					e.preventDefault()
+			} else {
+					return
+			}
+	})
+});
+
+
 // Keyboard Navigation for Dropdown Menus
 // Adapted by Philip Allfrey for One More Voice from https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/js/MenubarItemLinks.js
 
@@ -284,10 +316,6 @@ function RandomiseHref(){
 checkUrl();
 			
 function checkUrl () {
-	if (window.location.href.indexOf("test3") > -1) {	
-		document.getElementById("home-tab").setAttribute("class","current");
-	};
-	//Remove the above
 	if(location.pathname == "/" && 
 		location.hash.length <= 1 && 
 		location.search.length <= 1) {

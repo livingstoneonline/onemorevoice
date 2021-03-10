@@ -22,7 +22,7 @@ if ("serviceWorker" in navigator) {
 					registration.unregister()
 				}
 	})
-}
+};
 
 
 // Overlay
@@ -32,43 +32,42 @@ function openNav() {
 	document.getElementById("nav7").style.display = "block";
 	document.getElementById("nav7").style.visibility = "visible";
 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-}
+};
 
 function closeNav() {
 	document.getElementById("nav7").style.display = "none";
 	document.getElementById("nav7").style.visibility = "hidden";
 	document.getElementsByTagName("html")[0].style.overflowY = "unset";
-}
+};
 
 
 // Trap Focus in Overlay
 // Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
 // Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
 jQuery(document).ready(function () {
-	jQuery('#overlay-last')
-			.on('keydown', function (e) {
-					var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-					if (!isTabPressed) {
-							return
-					}
-					if (e.shiftKey) {
-							return
-					} else {
-							jQuery('#nav8').focus();
-							e.preventDefault()
-					}
+	jQuery('#overlay-last').on('keydown', function (e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+		if (!isTabPressed) {
+			return
+		}
+		if (e.shiftKey) {
+			return
+		} else {
+			jQuery('#nav8').focus();
+			e.preventDefault()
+		}
 			});
 	jQuery('#nav8').on('keydown', function (e) {
-			var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-			if (!isTabPressed) {
-					return
-			}
-			if (e.shiftKey) {
-					jQuery('#overlay-last').focus();
-					e.preventDefault()
-			} else {
-					return
-			}
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+		if (!isTabPressed) {
+			return
+		}
+		if (e.shiftKey) {
+			jQuery('#overlay-last').focus();
+			e.preventDefault()
+		} else {
+			return
+		}
 	})
 });
 
@@ -97,7 +96,7 @@ function handleFocusIn(event){
 		})
 
 	}
-}
+};
 
 function handleKeydown(event){
 	const keyCode = Object.freeze({
@@ -269,17 +268,17 @@ function handleKeydown(event){
 				break;
 	}
 
-}
+};
 
 function getNextElement(items, currentItem){
 	const currentIndex = items.findIndex(x => x == currentItem);
 	return items[Math.min(currentIndex + 1, items.length - 1)];
-}
+};
 
 function getPreviousElement(items, currentItem){
 	const currentIndex = items.findIndex(x => x == currentItem);
 	return items[Math.max(currentIndex - 1, 0)];
-}
+};
 
 
 // Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
@@ -292,7 +291,7 @@ function AddRelNoopener(){
 		for(var i = 0; i < links.length; i++){
 				links[i].setAttribute("rel","noopener");
 		}
-}
+};
 
 
 // Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end.
@@ -307,7 +306,7 @@ function RandomiseHref(){
 			// links[i].href = links[i].href + "?=" + randomString;
 			links[i].href = links[i].href;
 		}
-}
+};
 
 
 // Adapted from https://stackoverflow.com/a/21718316

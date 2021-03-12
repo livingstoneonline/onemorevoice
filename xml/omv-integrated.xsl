@@ -791,43 +791,9 @@
 	</xsl:template>
 
 	<!-- Make rend classes -->
-	<xsl:template match="*/@rend['italic']" priority="-1">
-		<em>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</em>
-	</xsl:template>
 
-	<xsl:template match="*/@rend['bold']" priority="-1">
-		<strong>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</strong>
-	</xsl:template>
-
-	<xsl:template match="*/@rend['sub']" priority="-1">
-		<sub>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</sub>
-	</xsl:template>
-
-	<xsl:template match="*/@rend['sup']" priority="-1">
-		<sup>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</sup>
-	</xsl:template>
-
-	<xsl:template match="*/@rend" priority="-2">
+	<!-- need: body, italic, sub, sup -->
+	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
 			<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
 			<xsl:value-of select="translate(., '-', '')"/>
@@ -969,9 +935,10 @@
 	<xsl:template match="corr|expan|reg"/>
 
 	<xsl:template match="date">
-		<time>
+		<!--<time>
 			<xsl:apply-templates/>
-		</time>
+		</time>-->
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="del">

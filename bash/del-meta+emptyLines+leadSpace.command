@@ -15,7 +15,7 @@ for thefile in *.html ; do
 	mv $thefile.$$.tmp $thefile
 done
 
-for thefile in *.html ; do
-	sed -e 's/^[ \t]*//' $thefile > $thefile.$$.tmp
-	mv $thefile.$$.tmp $thefile
-done
+# for thefile in *.html ; do
+# 	sed -e 's/^[ \t]*//' $thefile > $thefile.$$.tmp
+# 	mv $thefile.$$.tmp $thefile
+# done

@@ -890,15 +890,7 @@
 	</xsl:template>
 
 	<xsl:template match="cb">
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<br/>
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
-				<xsl:apply-templates/>
-			</xsl:when>
-		</xsl:choose>
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="choice">

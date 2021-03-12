@@ -49,9 +49,6 @@ Table of Contents
 also see 2.9 for manuscript colors
 */
 
-/* Semantic HTML notes */
-/* lists: liv_003181, liv_020041, liv_020050*/
-
 /** 2.0 Transcription CSS **/
 
 /* 2.1. Textual divisions */
@@ -337,7 +334,7 @@ label.md_switch{
 .manuscript .figure{
 	border-bottom: 1px dotted black;
 }
-.change-color u,
+.change-color .sic,
 .change-color .corr{
 	border-bottom: 2px dotted black;
 }
@@ -348,7 +345,7 @@ label.md_switch{
 .invert-color .journal .pb-title{
 	color: black;
 }
-.invert-color .journal u,
+.invert-color .journal .sic,
 .invert-color .journal .corr{
 	border-bottom: 2px dotted black;
 }
@@ -532,9 +529,8 @@ button::-moz-focus-inner{
 	float: right;
 	position: unset;
 }
-/* Test output */
-.manuscript h3.head.center,
-.journal h3.head.center{
+.manuscript .head.center,
+.journal .head.center{
 	font-weight: normal;
 	text-indent: 0;
 	text-align: center;
@@ -663,10 +659,7 @@ table .linenumber{
 .gap{
 	border-bottom: 1px dotted #858585;
 }
-u{
-	text-decoration: none;
-}
-u,
+.sic,
 .corr{
 	border-bottom: 2px dotted #902D27;
 }

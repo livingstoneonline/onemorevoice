@@ -1070,9 +1070,9 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
+		<p class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
 			<xsl:apply-templates/>
-		</h3>
+		</p>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">

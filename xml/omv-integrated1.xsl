@@ -790,44 +790,8 @@
 		</span>
 	</xsl:template>
 
-	<!-- Make rend classes -->
-	<xsl:template match="*/@rend['italic']" priority="-1">
-		<em>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</em>
-	</xsl:template>
-
-	<xsl:template match="*/@rend['bold']" priority="-1">
-		<strong>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</strong>
-	</xsl:template>
-
-	<xsl:template match="*/@rend['sub']" priority="-1">
-		<sub>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</sub>
-	</xsl:template>
-
-	<xsl:template match="*/@rend['sup']" priority="-1">
-		<sup>
-			<xsl:attribute name="class">
-				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
-				<xsl:value-of select="translate(., '-', '')"/>
-			</xsl:attribute>
-		</sup>
-	</xsl:template>
-
-	<xsl:template match="*/@rend" priority="-2">
+	<!-- Make rend class -->
+	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
 			<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
 			<xsl:value-of select="translate(., '-', '')"/>
@@ -895,16 +859,16 @@
 		</p>
 	</xsl:template>
 
-	<xsl:template match="abbr">
-		<abbr><xsl:apply-templates/></abbr>
+	<xsl:template match="abbr|orig">
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="add">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></ins>
+			<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></ins>
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
@@ -935,53 +899,51 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template match="div/cb">
+		<xsl:apply-templates/>
+	</xsl:template>
+
 	<xsl:template match="choice">
 		<xsl:apply-templates/>
 	</xsl:template>
 	
 	<xsl:template match="choice/sic">
 			<xsl:variable name="choice-orig-sic">
-				<xsl:choose>
-					<!-- If there are orig and reg values in the corr, show the orig -->
-					<xsl:when test="../corr/choice/orig">
-						<xsl:value-of select="../corr/choice/orig"/>
-					</xsl:when>
-					<!-- If there are sic and corr values in the corr, show both sic and corr -->
-					<xsl:when test="../corr/choice/sic">
-						<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
-					</xsl:when>
-					<!-- If there are two rdgs, show both rdgs -->
-					<xsl:when test="../corr/app/rdg">
-						<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
-					</xsl:when>
-					<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
-					<xsl:otherwise>
-						<xsl:value-of select="../corr"/>
-					</xsl:otherwise>
-				</xsl:choose>			
+			<xsl:choose>
+				<!-- If there are orig and reg values in the corr, show the orig -->
+				<xsl:when test="../corr/choice/orig">
+					<xsl:value-of select="../corr/choice/orig"/>
+				</xsl:when>
+				<!-- If there are sic and corr values in the corr, show both sic and corr -->
+				<xsl:when test="../corr/choice/sic">
+					<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
+				</xsl:when>
+				<!-- If there are two rdgs, show both rdgs -->
+				<xsl:when test="../corr/app/rdg">
+					<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
+				</xsl:when>
+				<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="../corr"/>
+				</xsl:otherwise>
+			</xsl:choose>			
 			</xsl:variable>
-			<u class="sic diplomatic">
+			<span class="sic diplomatic">
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
 				<xsl:apply-templates/>
-			</u>
+			</span>
 	</xsl:template>
 
 	<xsl:template match="corr|expan|reg"/>
 
-	<xsl:template match="date">
-		<time>
-			<xsl:apply-templates/>
-		</time>
-	</xsl:template>
-
 	<xsl:template match="del">
-		<del class="del cancelled">
+		<span class="del cancelled">
 			<xsl:apply-templates/>
-		</del>
+		</span>
 	</xsl:template>
 
 	<xsl:template match="del[following-sibling::add[1][@place='over-text']]" priority="10">
-		<del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del>
+		<span class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></span>
 	</xsl:template>
 
 	<xsl:template match="figure">
@@ -1050,7 +1012,7 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="fw|fw[@type='catch']">
+	<xsl:template match="fw|fw[@type='catch']|fw[@type='pageno']">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
 			<xsl:apply-templates/>
 		</span>
@@ -1070,38 +1032,31 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<p class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
 			<xsl:apply-templates/>
-		</p>
+		</span>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
 		<span class="idno"><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="item">
-		<li class="item" title="Item in list">
+	<xsl:template match="list/item">
+		<span class="listitem" title="item">
 			<xsl:apply-templates/>
-		</li>
+		</span>
 	</xsl:template>
 
 	<xsl:template match="list">
-		<xsl:if test="@type='ordered'">
-			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Ordered list">
-				<xsl:apply-templates/>
-			</ol>
-		</xsl:if>
-		<xsl:if test="@type='unordered'">
-			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Unordered list">
-				<xsl:apply-templates/>
-			</ul>
-		</xsl:if>
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
+			<xsl:apply-templates/>
+		</span>
 	</xsl:template>
 
 	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
-			<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
+			<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
 	</xsl:template>
 
 	<xsl:template match="milestone">
@@ -1141,10 +1096,6 @@
 	
 	<xsl:template match="note">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
-	</xsl:template>
-
-	<xsl:template match="orig">
-		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="orgName">
@@ -1336,16 +1287,16 @@
 	<xsl:template match="unclear">
 		<span class="unclear">
 				<xsl:choose>
-					<xsl:when test="@cert">
-						<xsl:attribute name="title">
-							<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
-						</xsl:attribute>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:attribute name="title">
-							<xsl:value-of select="concat('word(s) ', name())"/>
-						</xsl:attribute>
-					</xsl:otherwise>
+				<xsl:when test="@cert">
+					<xsl:attribute name="title">
+						<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
+					</xsl:attribute>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:attribute name="title">
+						<xsl:value-of select="concat('word(s) ', name())"/>
+					</xsl:attribute>
+				</xsl:otherwise>
 				</xsl:choose>
 			<xsl:apply-templates select="node()"/>
 		</span>

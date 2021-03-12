@@ -792,8 +792,44 @@
 		</span>
 	</xsl:template>
 
-	<!-- Make rend class -->
-	<xsl:template match="*/@rend" priority="-1">
+	<!-- Make rend classes -->
+	<xsl:template match="*/@rend['italic']" priority="-1">
+		<em>
+			<xsl:attribute name="class">
+				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
+				<xsl:value-of select="translate(., '-', '')"/>
+			</xsl:attribute>
+		</em>
+	</xsl:template>
+
+	<xsl:template match="*/@rend['bold']" priority="-1">
+		<strong>
+			<xsl:attribute name="class">
+				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
+				<xsl:value-of select="translate(., '-', '')"/>
+			</xsl:attribute>
+		</strong>
+	</xsl:template>
+
+	<xsl:template match="*/@rend['sub']" priority="-1">
+		<sub>
+			<xsl:attribute name="class">
+				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
+				<xsl:value-of select="translate(., '-', '')"/>
+			</xsl:attribute>
+		</sub>
+	</xsl:template>
+
+	<xsl:template match="*/@rend['sup']" priority="-1">
+		<sup>
+			<xsl:attribute name="class">
+				<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
+				<xsl:value-of select="translate(., '-', '')"/>
+			</xsl:attribute>
+		</sup>
+	</xsl:template>
+
+	<xsl:template match="*/@rend" priority="-2">
 		<xsl:attribute name="class">
 			<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
 			<xsl:value-of select="translate(., '-', '')"/>
@@ -1016,7 +1052,7 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="fw|fw[@type='catch']|fw[@type='pageno']">
+	<xsl:template match="fw|fw[@type='catch']">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
 			<xsl:apply-templates/>
 		</span>
@@ -1302,16 +1338,16 @@
 	<xsl:template match="unclear">
 		<span class="unclear">
 				<xsl:choose>
-				<xsl:when test="@cert">
-					<xsl:attribute name="title">
-						<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
-					</xsl:attribute>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:attribute name="title">
-						<xsl:value-of select="concat('word(s) ', name())"/>
-					</xsl:attribute>
-				</xsl:otherwise>
+					<xsl:when test="@cert">
+						<xsl:attribute name="title">
+							<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
+						</xsl:attribute>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:attribute name="title">
+							<xsl:value-of select="concat('word(s) ', name())"/>
+						</xsl:attribute>
+					</xsl:otherwise>
 				</xsl:choose>
 			<xsl:apply-templates select="node()"/>
 		</span>

@@ -334,7 +334,7 @@ label.md_switch{
 .manuscript .figure{
 	border-bottom: 1px dotted black;
 }
-.change-color u,
+.change-color .sic,
 .change-color .corr{
 	border-bottom: 2px dotted black;
 }
@@ -345,7 +345,7 @@ label.md_switch{
 .invert-color .journal .pb-title{
 	color: black;
 }
-.invert-color .journal u,
+.invert-color .journal .sic,
 .invert-color .journal .corr{
 	border-bottom: 2px dotted black;
 }
@@ -662,7 +662,7 @@ table .linenumber{
 u{
 	text-decoration: none;
 }
-u,
+.sic,
 .corr{
 	border-bottom: 2px dotted #902D27;
 }

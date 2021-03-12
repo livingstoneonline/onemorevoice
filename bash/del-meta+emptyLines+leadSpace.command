@@ -1,6 +1,6 @@
 # removes meta text, empty lines, and leading white spaces in each line
 # https://www.cyberciti.biz/faq/using-sed-to-delete-empty-lines/
-# https://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
+# https://stackoverflow.com/questions/1593106/use-sed-to-delete-all-leading-following-blank-spaces-in-a-text-file
 
 
 cd /Users/awisnicki2/GitHub/onemorevoice/html/transcriptions
@@ -16,6 +16,6 @@ for thefile in *.html ; do
 done
 
 for thefile in *.html ; do
-	sed -e 's/^[ \t]*//' $thefile > $thefile.$$.tmp
+	awk '{$1=$1}1' $thefile > $thefile.$$.tmp
 	mv $thefile.$$.tmp $thefile
 done

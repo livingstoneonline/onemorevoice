@@ -841,7 +841,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 }
 label::after,
 a::after{
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Free';
 }
 label::after{
 	content: '\f0da';
@@ -932,76 +932,46 @@ input:checked + label::after{
 .navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li a
 */
 
-/* Hamburger Menu & Close X */
-#nav5{
+/* Hamburger Menu & Close X; Fallback Menu */
+#nav5,
+#nav7 .close,
+#nav12{
+	color: #0b0b0b;
+	text-decoration: none;
 	border: none;
 	background: transparent;
-}
-#nav5,
-#nav12{
+	height: 32px;
 	top: 50%;
 	position: absolute;
 	transform: translate(0, -50%);
 }
 #nav5,
+#nav7 .close{
+	width: 36px;
+	right: .5em;
+}
 #nav12{
-	right: .6em;
+	margin-right: -.1em;
+	line-height: normal;
+	width: 35px;
+	right: .45em;
 }
 @media only screen and (min-width: 480px){
 	#nav5,
+	#nav7 .close{
+		right: 1.5em;
+	}
 	#nav12{
-		right: .7em;
+		right: 1.2em;
 	}
 }
 @media only screen and (min-width: 768px){
-	#nav5{
-		right: 1.35em;
+	#nav5,
+	#nav7 .close{
+		right: 2em;
 	}
 	#nav12{
-		right: 1.20em;
-	}	
-}
-#nav5 .fa-bars{
-	font-size: 1.6em;
-	padding: .25em .2em;
-}
-#nav12 .fa-bars{
-	font-size: 1.3em;
-	padding: .25em .4em;
-}
-@media only screen and (min-width: 320px){
-	#nav5 .fa-bars{
-		font-size: 1.8em;
-	}
-	#nav12 .fa-bars{
-		font-size: 1.5em;
-	}
-}
-#nav7 .close{
-	background: transparent;
-	border: none;
-	top: 50%;
-	position: absolute;
-	transform: translate(0, -50%);
-	right: .55em;
-}
-@media only screen and (min-width: 480px){
-	#nav7 .close{
-		right: .65em;
-	}
-}
-@media only screen and (min-width: 768px){
-	#nav7 .close{
-		right: 1.3em;
-	}
-}
-#nav7 .close .fa-close{
-	font-size: 1.6em;
-	padding: .25em .24em;
-}
-@media only screen and (min-width: 320px){
-	#nav7 .close .fa-close{
-		font-size: 1.8em;
+		right: 1.5em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -1015,11 +985,22 @@ input:checked + label::after{
 		visibility: visible;
 	}
 }
-#nav5,
-#nav7 .close,
-#nav12{
-	color: #0b0b0b;
-	text-decoration: none;
+#nav5 .fa-bars,
+#nav7 .close .fa-times{
+	font-size: 1.6em;
+}
+#nav12 .fa-bars{
+	font-size: 1.1em;
+	padding: 7px 0;
+}
+@media only screen and (min-width: 320px){
+	#nav5 .fa-bars,
+	#nav7 .close .fa-times{
+		font-size: 1.8em;
+	}
+	#nav12 .fa-bars{
+		font-size: 1.23em;
+		padding: 6px 0;
 }
 #nav5:hover,
 #nav5:focus,

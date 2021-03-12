@@ -1,6 +1,6 @@
 # removes meta text, empty lines, and leading white spaces in each line
 # https://www.cyberciti.biz/faq/using-sed-to-delete-empty-lines/
-# https://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
+# https://stackoverflow.com/questions/1593106/use-sed-to-delete-all-leading-following-blank-spaces-in-a-text-file
 
 
 cd /Users/awisnicki2/GitHub/onemorevoice/html/transcriptions

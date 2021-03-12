@@ -16,6 +16,6 @@ for thefile in *.html ; do
 done
 
 for thefile in *.html ; do
-	sed -e 's/^ *//g' $thefile > $thefile.$$.tmp
+	awk '{$1=$1}1' $thefile > $thefile.$$.tmp
 	mv $thefile.$$.tmp $thefile
 done

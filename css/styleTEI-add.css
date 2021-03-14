@@ -1007,6 +1007,28 @@ font-family: 'UnifrakturMaguntia', cursive;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 }
+@media only screen and (min-width: 480px){
+	.table.liv_020062{
+		font-size: .8em;
+		text-align: center;
+		width: 100%;
+		border-collapse: collapse;
+	}
+	.table.liv_020062 tbody{
+		text-align: left;
+		display: inline-block;
+	}
+	.table.liv_020062 td{
+		padding: 0 .5em;
+	}
+	.table.liv_020062 tr.row:nth-child(8) > td:nth-child(1){
+		text-align: right;
+	}
+	.table.liv_020062 tr.row:nth-child(1) > td:nth-child(6){
+		margin-left: -3em;
+		display: inline-block;
+	}
+}
 .object.liv_021003_0001{
 	max-width: 319px;
 	margin: 0 auto;

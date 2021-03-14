@@ -6,18 +6,6 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020062">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 
-<!-- Fill out authors, comp date, and place later -->
-<!-- 
-Anon
-Colonel Cloete
-Lieutenant-Colonel Eyre
-Lieutenant-Colonel G. Napier
-Moshesh
-George Cathcart
-John Ayliff
-
--->
-
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -28,16 +16,26 @@ John Ayliff
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
 				<title type="alternative">“The Caffre War,” 28 February 1853</title>
 				<!-- Title, date -->
-				<author>Moshoeshoe I, c.1786-1870</author>
+				<author>Anonymous</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first"></author>
+				<author role="first">Anonymous</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized"></author>
+				<author role="first-normalized">Anonymous</author>
 				<!-- First author only: Forename Surname -->
-				<author></author>
+				<author>Cloëté, Abraham Josias, 1794-1886</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="normalized"></author>
+				<author role="normalized">Abraham Josias Cloëté</author>
 				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Eyre, William</author>
+				<author role="normalized">William Eyre</author>
+				<author>Napier, George Thomas, 1784-1855</author>
+				<author role="normalized">George Thomas Napier</author>
+				<author>Moshoeshoe I, c.1786-1870</author>
+				<author role="normalized">Moshoeshoe I</author>
+				<author>Cathcart, George, 1794-1854</author>
+				<author role="normalized">George Cathcart</author>
+				<author>Ayliff, John, 1797-1862</author>
+				<author role="normalized">John Ayliff</author>
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -109,7 +107,13 @@ John Ayliff
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
+					<author xml:id="An">Anonymous</author>
+					<author xml:id="AJC">Cloëté, Abraham Josias, 1794-1886</author>
+					<author xml:id="WE">Eyre, William</author>
+					<author xml:id="GTN">Napier, George Thomas, 1784-1855</author>
 					<author xml:id="M">Moshoeshoe I, c.1786-1870</author>
+					<author xml:id="GC">Cathcart, George, 1794-1854</author>
+					<author xml:id="JA">Ayliff, John, 1797-1862</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
@@ -457,6 +461,8 @@ this <date when="1852-12-23">23d day of December, 1852</date>,</p>
 Commissioner, <seg rend="right">"<persName><seg rend="caps">John Ayliff</seg></persName>,</seg><space extent="1" unit="words"/></p>
 
 <p rend="small right">"Acting Secretary to the High Commissioner."<space extent="2" unit="chars"/></p>
+
+<lb/><milestone unit="section" rend="half-line quarter-line"/>
 
 			</div>
 		</body>

@@ -18,16 +18,18 @@
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
 				<title type="alternative">“The General and the Caffre Chief,” 1 March 1853</title>
 				<!-- Title, date -->
-				<author>Moshoeshoe I, c.1786-1870</author>
+				<author>Anonymous</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first"></author>
+				<author role="first">Anonymous</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized"></author>
+				<author role="first-normalized">Anonymous</author>
 				<!-- First author only: Forename Surname -->
-				<author></author>
+				<author>Cathcart, George, 1794-1854</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="normalized"></author>
+				<author role="normalized">George Cathcart</author>
 				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Moshoeshoe I, c.1786-1870</author>
+				<author role="normalized">Moshoeshoe I</author>
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -99,14 +101,21 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
+					<author xml:id="An">Anonymous</author>
+					<author xml:id="GC">Cathcart, George, 1794-1854</author>
 					<author xml:id="M">Moshoeshoe I, c.1786-1870</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1852-12-13">13 December 1852</date>
+					<date type="composition" when="1852-12-20">20 December 1852</date>
+					<date type="composition" when="1852-12-21">21 December 1852</date>
 					<date type="publication" when="1853-03-01">1 March 1853</date>
 					<!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-					<placeName type="compositionPlace"></placeName>
+					<placeName type="compositionPlace">Platberg</placeName>
+					<placeName type="compositionPlace">Thaba Bossigo</placeName>
+					<placeName type="compositionPlace">Camp, Caledon River</placeName>
 					<!-- Can be "compositionPlace" or "focusRegion" -->
 				</bibl>
 			</sourceDesc>
@@ -145,311 +154,312 @@
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_020062_0001" n="0001"/>
-<!-- <lb/> --><p><seg rend="caps">The General and the <term type="collective">Caffre</term> Chief</seg>.</p>
+<p rend="center caps">The General and the <term type="collective">Caffre</term> Chief.</p>
 
-<!-- <lb/> --><p>(From the <orgName><hi rend="italic"><settlement>Cape Town</settlement> Mail Extra</hi></orgName>.)</p>
+<p rend="center">&#8211;&#8212;&#8212;&#9670;&#8212;&#8212;&#8211;</p>
 
-<!-- <lb/> --><p>Foremost in importance among the events of the past 
-<!-- <lb/> -->month, we have to notice the expedition of <persName>General <w>Cath<seg type="hyphen">-</seg> 
-<!-- <lb/> -->cart</w></persName> into the <region>country of the <term type="collective">Basuta</term> chief <persName>Moshesh</persName></region>, and 
-<!-- <lb/> -->the sanguinary battle of <settlement>Berea</settlement>; followed by the submission 
-<!-- <lb/> -->of that chief and the prompt return of the troops into the 
-<!-- <lb/> -->colony.</p> 
+<p rend="center">(From the <hi rend="italic"><settlement>Cape Town</settlement> Mail Extra</hi>.)</p>
 
-<!-- <lb/> --><p>Having issued the proclamation which appeared in our 
-<!-- <lb/> -->last summary&#8212;declaring that his object was, "not to make 
-<!-- <lb/> -->war, but to settle all disputes, and to establish the blessings 
-<!-- <lb/> -->of peace," and commanding "all chiefs and men of all 
-<!-- <lb/> -->classes and tribes" to remain quiet and abide by his <w>judg<seg type="hyphen">-</seg> 
-<!-- <lb/> -->ment</w> and decision&#8212;<persName>General Cathcart</persName> proceeded across the 
-<!-- <lb/> --><geogName>Orange River</geogName> into the <region>Sovereignty</region>, and on the <date when="1852-12-01">lst of <w>De<seg type="hyphen">-</seg> 
-<!-- <lb/> -->cember</w></date> encamped at <placeName>Commissie Drift</placeName>, on the <geogName>Caledon River</geogName>, 
-<!-- <lb/> -->where he was joined by <persName>Colonel Eyre</persName>, <orgName>73d Regiment</orgName>, and 
-<!-- <lb/> --><persName>Colonel Duff</persName>, <orgName>74th</orgName>, with their respective columns; the 
-<!-- <lb/> -->whole force, including the column under his Excellenecy's 
-<!-- <lb/> -->immediate command, amounting to about 2,500 men of all 
-<!-- <lb/> -->arms. Here, in reply to an address presented to him by the 
-<!-- <lb/> -->inhabitants of <settlement>Caledon</settlement>, <persName>General Cathcart</persName> announced that 
-<!-- <lb/> -->he had summoned the chiefs <persName>Moshesh</persName>, <persName>Molitsani</persName>, <persName>Sikonyella</persName>, 
-<!-- <lb/> --><persName>Moroko</persName>, and <persName>Gert Taaybosch</persName> to meet him at <geogName>Platberg</geogName> on
-<!-- <lb/> -->the <date when="1852-12-13">13th</date>, and that each of those chiefs would be compelled 
-<!-- <lb/> -->to pay the amount of <term type="animal">cattle</term> which the Commissioners, after 
-<!-- <lb/> -->due investigation, should think fit to award. On the <date when="1852-12-08">8th</date> 
-<!-- <lb/> -->the camp moved forward towards <geogName>Platberg</geogName>, and was joined 
-<!-- <lb/> -->by a <choice><sic>dctachment</sic><corr>detachment</corr></choice> of the <orgName>45th Regiment</orgName>, under <persName>Lieutenant 
-<!-- <lb/> -->Howard</persName>, with some fieldpieces; while 40 burghers, of a 
-<!-- <lb/> -->neighbouring field-cornetcy, turned out to protect the 
-<!-- <lb/> -->border, in the rear of the Governor's operations. <w>Un<seg type="hyphen">-</seg> 
-<!-- <lb/> -->fortunately</w>, during the first day's march, his Excellency 
-<!-- <lb/> -->lost the valuable aid of his military secretary, <persName>Colonel <w>Sey<seg type="hyphen">-</seg> 
-<!-- <lb/> -->mour</w></persName>, who was thrown violently from his <term type="animal">horse</term>, by which 
-<!-- <lb/> -->his left shoulder was fractured, and he had consequently to 
-<!-- <lb/> -->be conveyed in a cart to the neighbouring village of <settlement><w>Smith<seg type="hyphen">-</seg> 
-<!-- <lb/> -->field</w></settlement>.</p>
+<p>Foremost in importance among the events of the past 
+month, we have to notice the expedition of <persName>General <w>Cath<!-- - -->cart</w></persName> 
+into the <region>country of the <term type="collective">Basuta</term> chief <persName>Moshesh</persName></region>, and 
+the sanguinary battle of <settlement>Berea</settlement>; followed by the submission 
+of that chief and the prompt return of the troops into the 
+colony.</p> 
 
-<!-- <lb/> --><p>On the morning of the <date when="1852-12-13">13th</date> his Excellency arrived at 
-<!-- <lb/> --><geogName>Platberg</geogName>, which he found deserted by the natives. In the 
-<!-- <lb/> -->evening two young chiefs, sons of <persName>Moshesh</persName>, came to the 
-<!-- <lb/> -->camp, but <persName>General Cathcart</persName> refused to see them, and next 
-<!-- <lb/> -->morning they returned to their father's "great place," 
-<!-- <lb/> --><geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>, accompanied by <persName>Mr. Commissioner Owen</persName> 
-<!-- <lb/> -->who was the bearer of the following message:&#8212;</p> 
+<p>Having issued the proclamation which appeared in our 
+last summary&#8212;declaring that his object was, "not to make 
+war, but to settle all disputes, and to establish the blessings 
+of peace," and commanding "all chiefs and men of all 
+classes and tribes" to remain quiet and abide by his <w>judg<!-- - -->ment</w> 
+and decision&#8212;<persName>General Cathcart</persName> proceeded across the 
+<geogName>Orange River</geogName> into the <region>Sovereignty</region>, and on the <date when="1852-12-01">1st of <w>De<!-- - -->cember</w></date> 
+encamped at <placeName>Commissie Drift</placeName>, on the <geogName>Caledon River</geogName>, 
+where he was joined by <persName>Colonel Eyre</persName>, <orgName>73d Regiment</orgName>, and 
+<persName>Colonel Duff</persName>, <orgName>74th</orgName>, with their respective columns; the 
+whole force, including the column under his Excellenecy's 
+immediate command, amounting to about 2,500 men of all 
+arms. Here, in reply to an address presented to him by the 
+inhabitants of <settlement>Caledon</settlement>, <persName>General Cathcart</persName> announced that 
+he had summoned the chiefs <persName>Moshesh</persName>, <persName>Molitsani</persName>, <persName>Sikonyella</persName>, 
+<persName>Moroko</persName>, and <persName>Gert Taaybosch</persName> to meet him at <geogName>Platberg</geogName> on
+the <date when="1852-12-13">13th</date>, and that each of those chiefs would be compelled 
+to pay the amount of <term type="animal">cattle</term> which the Commissioners, after 
+due investigation, should think fit to award. On the <date when="1852-12-08">8th</date> 
+the camp moved forward towards <geogName>Platberg</geogName>, and was joined 
+by a <choice><sic>dctachment</sic><corr>detachment</corr></choice> of the <orgName>45th Regiment</orgName>, under <persName>Lieutenant 
+Howard</persName>, with some fieldpieces; while 40 burghers, of a 
+neighbouring field-cornetcy, turned out to protect the 
+border, in the rear of the Governor's operations. <w>Un<!-- - -->fortunately</w>, 
+during the first day's march, his Excellency 
+lost the valuable aid of his military secretary, <persName>Colonel <w>Sey<!-- - -->mour</w></persName>, 
+who was thrown violently from his <term type="animal">horse</term>, by which 
+his left shoulder was fractured, and he had consequently to 
+be conveyed in a cart to the neighbouring village of <settlement><w>Smith<!-- - -->field</w></settlement>.</p>
 
-<!-- <lb/> --><p>"<geogName>Platberg</geogName>, <date when="1852-12-13">Dec. 13, 1852</date>.</p>
+<p>On the morning of the <date when="1852-12-13">13th</date> his Excellency arrived at 
+<geogName>Platberg</geogName>, which he found deserted by the natives. In the 
+evening two young chiefs, sons of <persName>Moshesh</persName>, came to the 
+camp, but <persName>General Cathcart</persName> refused to see them, and next 
+morning they returned to their father's "great place," 
+<geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>, accompanied by <persName>Mr. Commissioner Owen</persName> 
+who was the bearer of the following message:&#8212;</p> 
 
-<!-- <lb/> --><p>"<persName>Chief Moshesh</persName>,&#8212;When I was sent by the Queen to be 
-<!-- <lb/> -->Governor, and to command her army in this part of the 
-<!-- <lb/> -->world, six months past, I wrote to acquaint you and the 
-<!-- <lb/> -->other chiefs, and I told you that I would visit you as soon 
-<!-- <lb/> -->as the rebellion of the <term type="collective">Gaikas</term> and <term type="collective">Tambookies</term> and the <term type="collective"><w>Hot<seg type="hyphen">-</seg> 
-<!-- <lb/> -->tentots</w></term> was ended. This has been done, as you have no 
-<!-- <lb/> -->doubt learnt, and I now visit this country as I promised, 
-<!-- <lb/> -->and desire to see you and the other chiefs, as my friends, at 
-<!-- <lb/> -->my camp at <geogName>Platberg</geogName>, without delay.</p> 
+<p rend="right">"<geogName>Platberg</geogName>, <date when="1852-12-13">Dec. 13, 1852</date>.<space extent="2" unit="chars"/></p>
 
-<!-- <lb/> --><p>"My proclamation will have told you the righteous cause 
-<!-- <lb/> -->in which I am come and what it is my duty to do.</p> 
+<p>"<persName>Chief Moshesh</persName>,&#8212;When I was sent by the <persName>Queen</persName> to be 
+Governor, and to command her army in this part of the 
+world, six months past, I wrote to acquaint you and the 
+other chiefs, and I told you that I would visit you as soon 
+as the rebellion of the <term type="collective">Gaikas</term> and <term type="collective">Tambookies</term> and the <term type="collective"><w>Hot<!-- - -->tentots</w></term> 
+was ended. This has been done, as you have no 
+doubt learnt, and I now visit this country as I promised, 
+and desire to see you and the other chiefs, as my friends, at 
+my camp at <geogName>Platberg</geogName>, without delay.</p> 
 
-<!-- <lb/> --><p>"As I told you in my letter, I now hope my visit to you 
-<!-- <lb/> -->may be in peace; but I must do justice, whether it be by 
-<!-- <lb/> -->war or in peace. I had been told that you are a great chief 
-<!-- <lb/> -->and a good man, but I find that though you were a man of 
-<!-- <lb/> -->good words you have not done what you promised.</p> 
+<p rend="no-indent">"My proclamation will have told you the righteous cause 
+in which I am come and what it is my duty to do.</p> 
 
-<!-- <lb/> --><p>"I find, not only that you have not paid the fine of <term type="animal">cattle</term> 
-<!-- <lb/> -->imposed on you by the Assistant Commissioners, <persName>Major 
-<!-- <lb/> -->Hogge</persName> and <persName>Mr. Owen</persName>, and which you promised to pay for 
-<!-- <lb/> -->the robberies of <term type="animal">cattle</term> and <term type="animal">horses</term> committed by your people 
-<!-- <lb/> -->and with your knowledge, up to the time of your agreement 
-<!-- <lb/> -->with them; but since then you and the people over whom 
-<!-- <lb/> -->you rule, including <persName>Molitsani</persName> and <persName>Morosi</persName> and your own son 
-<!-- <lb/> --><term type="collective">Letsea</term>, with their people, and certain robbers called <persName>Jan</persName> 
-<!-- <lb/> --><persName>Letell</persName> and <persName>Bashuli</persName>, have been stealing <term type="animal">cattle</term> from your 
-<!-- <lb/> -->neighbours, and otherwise doing them harm. Even <w>mur<seg type="hyphen">-</seg> 
-<!-- <lb/> -->ders</w> have been committed by them, and this village has been 
-<!-- <lb/> -->plundered and destroyed. In short, the <term type="collective">Basuta</term> people <w>un<seg type="hyphen">-</seg> 
-<!-- <lb/> -->der</w> your rule have become a nation of thieves.</p> 
+<p>"As I told you in my letter, I now hope my visit to you 
+may be in peace; but I must do justice, whether it be by 
+war or in peace. I had been told that you are a great chief 
+and a good man, but I find that though you were a man of 
+good words you have not done what you promised.</p> 
 
-<!-- <lb/> --><p>"This state of things must not be, and I have come to 
-<!-- <lb/> -->put an end to it, and to restore peace between you and your 
-<!-- <lb/> -->neighbours if I can, and if not, to put you and your people 
-<!-- <lb/> -->out of the way of doing them wrong, and this I must do 
-<!-- <lb/> -->promptly.</p> 
+<p>"I find, not only that you have not paid the fine of <term type="animal">cattle</term> 
+imposed on you by the Assistant Commissioners, <persName>Major 
+Hogge</persName> and <persName>Mr. Owen</persName>, and which you promised to pay for 
+the robberies of <term type="animal">cattle</term> and <term type="animal">horses</term> committed by your people 
+and with your knowledge, up to the time of your agreement 
+with them; but since then you and the people over whom 
+you rule, including <persName>Molitsani</persName> and <persName>Morosi</persName> and your own son 
+<persName>Letsea</persName>, with their people, and certain robbers called <persName>Jan</persName> 
+<persName>Letell</persName> and <persName>Bashuli</persName>, have been stealing <term type="animal">cattle</term> from your 
+neighbours, and otherwise doing them harm. Even <w>mur<!-- - -->ders</w> 
+have been committed by them, and this village has been 
+plundered and destroyed. In short, the <term type="collective">Basuta</term> people <w>un<!-- - -->der</w> 
+your rule have become a nation of thieves.</p> 
 
-<!-- <lb/> --><p>"I will not therefore stop to talk, but tell you now once 
-<!-- <lb/> -->for all, that having carefully inquired into the business, and 
-<!-- <lb/> -->judging as justly and as mercifully as I can what is the 
-<!-- <lb/> -->amount of <term type="animal">cattle</term> and damage you should be required to <w>re<seg type="hyphen">-</seg> 
-<!-- <lb/> -->store</w>, I demand of you 10,000 head of <term type="animal">cattle</term> and 1,000 <term type="animal">horses</term> 
-<!-- <lb/> -->to be delivered over to the <term type="collective">British</term> resident at this place, 
-<!-- <lb/> -->within three days' time, in order to be restored to those from 
-<!-- <lb/> -->whom they have been stolen.</p>
+<p>"This state of things must not be, and I have come to 
+put an end to it, and to restore peace between you and your 
+neighbours if I can, and if not, to put you and your people 
+out of the way of doing them wrong, and this I must do 
+promptly.</p> 
 
-<!-- <lb/> --><p>"If this be not done, I must go and take either <term type="animal">cattle</term> or 
-<!-- <lb/> -->other things from you and your people, and from <persName>Molitsani</persName> 
-<!-- <lb/> -->and his people, and if resistance be made it will then be 
-<!-- <lb/> -->war between us, and I must then take three times the 
-<!-- <lb/> -->amount of <term type="animal">cattle</term>, as well as kill many of your people and 
-<!-- <lb/> -->destroy their dwellings and kraals, which I should be very 
-<!-- <lb/> -->sorry to be obliged to do. But if this <term type="animal">cattle</term> be paid within 
-<!-- <lb/> -->three days, and that I am assured peace is restored, I will 
-<!-- <lb/> -->take the army back again in peace.</p> 
+<p>"I will not therefore stop to talk, but tell you now once 
+for all, that having carefully inquired into the business, and 
+judging as justly and as mercifully as I can what is the 
+amount of <term type="animal">cattle</term> and damage you should be required to <w>re<!-- - -->store</w>, 
+I demand of you 10,000 head of <term type="animal">cattle</term> and 1,000 <term type="animal">horses</term> 
+to be delivered over to the <term type="collective">British</term> resident at this place, 
+within three days' time, in order to be restored to those from 
+whom they have been stolen.</p>
 
-<!-- <lb/> --><p>"Now, <persName>Chief</persName>, if you are an honest man, it is for you to 
-<!-- <lb/> -->pay the just fine, which is not more than the <term type="animal">cattle</term> stolen, 
-<!-- <lb/> -->and save yourself and your people from ruin, or else <w>pre<seg type="hyphen">-</seg> 
-<!-- <lb/> -->pare</w> for war, for on the fourth day I must bring you to <w>ac<seg type="hyphen">-</seg> 
-<!-- <lb/> -->count</w>.</p> 
+<p>"If this be not done, I must go and take either <term type="animal">cattle</term> or 
+other things from you and your people, and from <persName>Molitsani</persName> 
+and his people, and if resistance be made it will then be 
+war between us, and I must then take three times the 
+amount of <term type="animal">cattle</term>, as well as kill many of your people and 
+destroy their dwellings and kraals, which I should be very 
+sorry to be obliged to do. But if this <term type="animal">cattle</term> be paid within 
+three days, and that I am assured peace is restored, I will 
+take the army back again in peace.</p> 
 
-<!-- <lb/> --><p>"You must also pay back to <persName>Sikonyella</persName> and <persName>Moroka</persName> what 
-<!-- <lb/> -->you have stolen from them, and be at peace with them. 
-<!-- <lb/> --><persName>Carolus Batjee</persName> and his people must return to <geogName>Platberg</geogName>, and 
-<!-- <lb/> -->the boundaries fixed by <persName>Governor Sir Harry Smith</persName> must be 
-<!-- <lb/> -->respected.</p> 
+<p>"Now, <persName>Chief</persName>, if you are an honest man, it is for you to 
+pay the just fine, which is not more than the <term type="animal">cattle</term> stolen, 
+and save yourself and your people from ruin, or else <w>pre<!-- - -->pare</w> 
+for war, for on the fourth day I must bring you to <w>ac<!-- - -->count</w>.</p> 
 
-<!-- <lb/> --><p>"When all this is done, you must remain at peace with 
-<!-- <lb/> -->all your neighbours, and the <term type="collective">Basutas</term> must cease to be a 
-<!-- <lb/> -->nation of thieves, for if I come again it will not be to talk,
-<!-- <lb/> -->but to make an end of the <term type="collective">Basuta</term> nation, as has been done 
-<!-- <lb/> -->of the <term type="collective">Gaikas</term> and <term type="collective">Tambookie</term> tribe of <region>Mapassa</region>.</p>
+<p>"You must also pay back to <persName>Sikonyella</persName> and <persName>Moroka</persName> what 
+you have stolen from them, and be at peace with them. 
+<persName>Carolus Batjee</persName> and his people must return to <geogName>Platberg</geogName>, and 
+the boundaries fixed by <persName>Governor Sir Harry Smith</persName> must be 
+respected.</p> 
 
-<!-- <lb/> --><p>"<persName><seg rend="caps">G. Cathcart</seg></persName>."</p>
+<p>"When all this is done, you must remain at peace with 
+all your neighbours, and the <term type="collective">Basutas</term> must cease to be a 
+nation of thieves, for if I come again it will not be to talk,
+but to make an end of the <term type="collective">Basuta</term> nation, as has been done 
+of the <term type="collective">Gaikas</term> and <term type="collective">Tambookie</term> tribe of <region>Mapassa</region>.</p>
 
-<!-- <lb/> --><p>Next day <persName>Moshesh</persName> himself made his appearance, and an 
-<!-- <lb/> -->interview took place between him and the General, highly 
-<!-- <lb/> -->characteristic on both sides. The "talk" is thus reported in 
-<!-- <lb/> -->an official notice afterwards published:&#8212;</p> 
+<p rend="right">"<persName><seg rend="caps">G. Cathcart</seg></persName>."<space extent="2" unit="chars"/></p>
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;I am glad to see you and to make your <w>ac<seg type="hyphen">-</seg> 
-<!-- <lb/> -->quaintance</w>.</p> 
+<p>Next day <persName>Moshesh</persName> himself made his appearance, and an 
+interview took place between him and the General, highly 
+characteristic on both sides. The "talk" is thus reported in 
+an official notice afterwards published:&#8212;</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;I am glad to see the governor, as since his 
-<!-- <lb/> -->arrival in the country I have been expecting a visit from 
-<!-- <lb/> -->him, which his letter in October last led me to expect.</p> 
+<p>"<persName>Governor</persName>.&#8212;I am glad to see you and to make your <w>ac<!-- - -->quaintance</w>.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;I told you in that letter that I hoped to 
-<!-- <lb/> -->meet you in peace, and I still hope so, as I look to you as 
-<!-- <lb/> -->the <persName>Great Chief</persName> in this part.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;I am glad to see the governor, as since his 
+arrival in the country I have been expecting a visit from 
+him, which his letter in October last led me to expect.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;I hope so, too; for peace is like the rain that 
-<!-- <lb/> -->makes the grass grow, while war is like the wind which 
-<!-- <lb/> -->dries it up. You are right in looking to me; that is in <w>ac<seg type="hyphen">-</seg> 
-<!-- <lb/> -->cordance</w> with the treaties.</p> 
+<p>"<persName>Governor</persName>.&#8212;I told you in that letter that I hoped to 
+meet you in peace, and I still hope so, as I look to you as 
+the <persName>Great Chief</persName> in this part.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;I will not now talk much, but wish to know 
-<!-- <lb/> -->whether you received my message yesterday, in which I 
-<!-- <lb/> -->made the demand of <term type="animal">cattle</term> and <term type="animal">horses</term>? I have nothing to 
-<!-- <lb/> -->alter in that letter.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;I hope so, too; for peace is like the rain that 
+makes the grass grow, while war is like the wind which 
+dries it up. You are right in looking to me; that is in <w>ac<!-- - -->cordance</w> 
+with the treaties.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;Do you mean the letter I received from <persName>Mr. 
-<!-- <lb/> -->Owen</persName>?</p> 
+<p>"<persName>Governor</persName>.&#8212;I will not now talk much, but wish to know 
+whether you received my message yesterday, in which I 
+made the demand of <term type="animal">cattle</term> and <term type="animal">horses</term>? I have nothing to 
+alter in that letter.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;Yes.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;Do you mean the letter I received from <persName>Mr. 
+Owen</persName>?</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;I received the letter, but do not know where 
-<!-- <lb/> -->I shall get the <term type="animal">cattle</term> from. Am I to understand that the 
-<!-- <lb/> -->10,000 head demanded are a fine imposed for the thefts <w>com<seg type="hyphen">-</seg> 
-<!-- <lb/> -->mitted</w> by my people, in addition to the <term type="animal">cattle</term> stolen?</p> 
+<p>"<persName>Governor</persName>.&#8212;Yes.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;I demand but 10,000 head, though your 
-<!-- <lb/> -->people have stolen many more, and I consider this a just 
-<!-- <lb/> -->award. It must be paid in three days.</p>
+<p>"<persName>Moshesh</persName>.&#8212;I received the letter, but do not know where 
+I shall get the <term type="animal">cattle</term> from. Am I to understand that the 
+10,000 head demanded are a fine imposed for the thefts <w>com<!-- - -->mitted</w> 
+by my people, in addition to the <term type="animal">cattle</term> stolen?</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;Do the three days count from yesterday, or 
-<!-- <lb/> -->to<seg type="hyphen">-</seg>day?</p> 
+<p>"<persName>Governor</persName>.&#8212;I demand but 10,000 head, though your 
+people have stolen many more, and I consider this a just 
+award. It must be paid in three days.</p>
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;To<seg type="hyphen">-</seg>day is the first of the three.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;Do the three days count from yesterday, or 
+to-day?</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;The time is short, and the <term type="animal">cattle</term> many, will 
-<!-- <lb/> -->you not allow me six days to collect them?</p> 
+<p>"<persName>Governor</persName>.&#8212;To-day is the first of the three.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;You had time given you when <persName>Major Hogge</persName> 
-<!-- <lb/> -->and <persName>Mr. Owen</persName> made the first demand, and then promised 
-<!-- <lb/> -->to comply with it, but did not.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;The time is short, and the <term type="animal">cattle</term> many, will 
+you not allow me six days to collect them?</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;But I was not quite idle. Do not the papers 
-<!-- <lb/> -->in the commissioner's hands show that I collected <term type="animal">cattle</term>?</p> 
+<p>"<persName>Governor</persName>.&#8212;You had time given you when <persName>Major Hogge</persName> 
+and <persName>Mr. Owen</persName> made the first demand, and then promised 
+to comply with it, but did not.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;They do, but not half of the number <w>de<seg type="hyphen">-</seg> 
-<!-- <lb/> -->manded</w>.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;But I was not quite idle. Do not the papers 
+in the commissioner's hands show that I collected <term type="animal">cattle</term>?</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;That is true, but I have not now control 
-<!-- <lb/> -->enough over my people to induce them to comply with the 
-<!-- <lb/> -->demand, however anxious I may be to do so.</p> 
+<p>"<persName>Governor</persName>.&#8212;They do, but not half of the number <w>de<!-- - -->manded</w>.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;If you are not able to collect them, I must 
-<!-- <lb/> -->go and do it, and if any resistance be made it will then be 
-<!-- <lb/> -->war, and I shall not be satisfied with 10,000 head, but shall 
-<!-- <lb/> -->take all I can.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;That is true, but I have not now control 
+enough over my people to induce them to comply with the 
+demand, however anxious I may be to do so.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;Do not talk of war, for however anxious I 
-<!-- <lb/> -->may be to avoid it, you know that a <term type="animal">dog</term> when beaten will 
-<!-- <lb/> -->show his teeth.</p> 
+<p>"<persName>Governor</persName>.&#8212;If you are not able to collect them, I must 
+go and do it, and if any resistance be made it will then be 
+war, and I shall not be satisfied with 10,000 head, but shall 
+take all I can.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;It will, therefore, be better that you should 
-<!-- <lb/> -->give up the <term type="animal">cattle</term> than that I should go for them.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;Do not talk of war, for however anxious I 
+may be to avoid it, you know that a <term type="animal">dog</term> when beaten will 
+show his teeth.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;I wish for peace; but have the same 
-<!-- <lb/> -->difficulty with my people that you have in the <region>colony</region>&#8212;
-<!-- <lb/> -->your prisons are never empty, and I have thieves among 
-<!-- <lb/> -->my people.</p> 
+<p>"<persName>Governor</persName>.&#8212;It will, therefore, be better that you should 
+give up the <term type="animal">cattle</term> than that I should go for them.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;I would, then, recommend you to catch the 
-<!-- <lb/> -->thieves and bring them to me, and I will hang them.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;I wish for peace; but have the same 
+difficulty with my people that you have in the <region>colony</region>&#8212;your 
+prisons are never empty, and I have thieves among 
+my people.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;I do not wish you to hang them, but to talk 
-<!-- <lb/> -->to them, and give them advice. If you hang them they 
-<!-- <lb/> -->cannot talk.</p> 
+<p>"<persName>Governor</persName>.&#8212;I would, then, recommend you to catch the 
+thieves and bring them to me, and I will hang them.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;If I hang them they cannot steal, and I 
-<!-- <lb/> -->am not going to talk any more. I have said that if you 
-<!-- <lb/> -->do not give up the <term type="animal">cattle</term> in three days, I must come and 
-<!-- <lb/> -->take them.</p> 
+<p>"<persName>Moshesh</persName>.&#8212;I do not wish you to hang them, but to talk 
+to them, and give them advice. If you hang them they 
+cannot talk.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>&#8212;I beg of you not to talk of war.</p> 
+<p>"<persName>Governor</persName>.&#8212;If I hang them they cannot steal, and I 
+am not going to talk any more. I have said that if you 
+do not give up the <term type="animal">cattle</term> in three days, I must come and 
+take them.</p> 
 
-<!-- <lb/> --><p>"<persName>Governor</persName>.&#8212;I have no more to say; I must either leave 
-<!-- <lb/> -->this in peace in three days, or go to <geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>. I 
-<!-- <lb/> -->therefore advise you to go and collect the <term type="animal">cattle</term> as quickly 
-<!-- <lb/> -->as possible.</p> 
+<p>"<persName>Moshesh</persName>&#8212;I beg of you not to talk of war.</p> 
 
-<!-- <lb/> --><p>"<persName>Moshesh</persName>.&#8212;Do not talk of coming to <geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>; if 
-<!-- <lb/> -->you do I shall lay the blame on the <term type="collective"><choice><sic>boers</sic><corr>Boers</corr></choice></term> from whom the 
-<!-- <lb/> --><term type="animal">cattle</term> were stolen, and whom I requested to come and 
-<!-- <lb/> -->point out to me their <term type="animal">cattle</term> that I might restore them. 
-<!-- <lb/> -->I will go at once and do my best, and, perhaps, God will 
-<!-- <lb/> -->help me.</p> 
+<p>"<persName>Governor</persName>.&#8212;I have no more to say; I must either leave 
+this in peace in three days, or go to <geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>. I 
+therefore advise you to go and collect the <term type="animal">cattle</term> as quickly 
+as possible.</p> 
 
-<!-- <lb/> --><p>"After leaving his Excellency's tent, but before return<seg type="hyphen">-</seg> 
-<!-- <lb/> -->ing home, <persName>Moshesh</persName> sent to request that the day on which 
-<!-- <lb/> -->the interview took place might not count in the three. 
-<!-- <lb/> -->This request his Excellency acceded to."</p> 
+<p>"<persName>Moshesh</persName>.&#8212;Do not talk of coming to <geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>; if 
+you do I shall lay the blame on the <term type="collective"><choice><sic>boers</sic><corr>Boers</corr></choice></term> from whom the 
+<term type="animal">cattle</term> were stolen, and whom I requested to come and 
+point out to me their <term type="animal">cattle</term> that I might restore them. 
+I will go at once and do my best, and, perhaps, God will 
+help me.</p> 
 
-<!-- <lb/> --><p>After the action in which <persName>Moshesh</persName> was defeated, as <w>de<seg type="hyphen">-</seg> 
-<!-- <lb/> -->scribed</w> in our yesterday's impression, a messenger arrived 
-<!-- <lb/> -->in camp, bearing a flag of truce, and the following letter to 
-<!-- <lb/> --><persName>General Cathcart</persName>:&#8212;</p> 
+<p>"After leaving his Excellency's tent, but before <w>return<!-- - -->ing</w> 
+home, <persName>Moshesh</persName> sent to request that the day on which 
+the interview took place might not count in the three. 
+This request his Excellency acceded to."</p> 
 
-<!-- <lb/> --><p>"<geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>, Midnight, <date when="1852-12-20">Dec. 20, 1852</date>.</p> 
+<p>After the action in which <persName>Moshesh</persName> was defeated, as <w>de<!-- - -->scribed</w> 
+in our yesterday's impression, a messenger arrived 
+in camp, bearing a flag of truce, and the following letter to 
+<persName>General Cathcart</persName>:&#8212;</p> 
 
-<!-- <lb/> --><p>"Your Excellency,&#8212;This day you have fought against 
-<!-- <lb/> -->my people and taken much <term type="animal">cattle</term>. As the object for which 
-<!-- <lb/> -->you have come is to have a compensation for <term type="collective"><choice><sic>boers</sic><corr>Boers</corr></choice></term>, I beg 
-<!-- <lb/> -->you will be satisfied with what you have taken. I entreat 
-<!-- <lb/> -->peace from you&#8212;you have shown your power&#8212;you have 
-<!-- <lb/> -->chastised&#8212;let it be enough, I pray you; and let me be no
-<!-- <lb/> -->[longer
-<!-- <lb/> -->longer considered an enemy of the Queen. I will try all I 
-<!-- <lb/> -->can to keep my people in order in the future.</p>
+<p rend="right">"<geogName><choice><orig>Thaba Bossigo</orig><corr>Thaba Bosiu</corr></choice></geogName>, Midnight, <date when="1852-12-20">Dec. 20, 1852</date>.<space extent="2" unit="chars"/></p> 
+
+<p>"Your Excellency,&#8212;This day you have fought against 
+my people and taken much <term type="animal">cattle</term>. As the object for which 
+you have come is to have a compensation for <term type="collective"><choice><sic>boers</sic><corr>Boers</corr></choice></term>, I beg 
+you will be satisfied with what you have taken. I entreat 
+peace from you&#8212;you have shown your power&#8212;you have 
+chastised&#8212;let it be enough, I pray you; and let me be no
+<lb/><seg rend="right">[longer</seg>
 
 
-<!-- <lb/> --><p>"Your humble servant,</p> 
+    <pb facs="liv_020062_0002" n="0002"/>
+longer considered an enemy of the <persName>Queen</persName>. I will try all I 
+can to keep my people in order in the future.</p>
 
-<!-- <lb/> --><p>"<persName><seg rend="caps">Moshesh</seg></persName>."</p>
 
-<!-- <lb/> --><p>To which his Excellency returned the following reply:&#8212;</p> 
+<p rend="right">"Your humble servant,<space extent="2" unit="words"/></p> 
 
-<!-- <lb/> --><p>"<placeName>Camp</placeName>, <geogName>Caledon River</geogName>, <date when="1852-12-21">Dec. 21, 1852</date>.</p>
+<p rend="right">"<persName><seg rend="caps">Moshesh</seg></persName>."<space extent="2" unit="chars"/></p>
 
-<!-- <lb/> --><p>"<persName>Chief Moshesh</persName>,&#8212;I have received your letter. The 
-<!-- <lb/> -->words are those of a great chief, and of one who has the 
-<!-- <lb/> -->interests of his people at heart. But I care little for words. 
-<!-- <lb/> -->I judge of men by their actions. I told you that if you did 
-<!-- <lb/> -->not pay the fine I must go and take it. I am a man who 
-<!-- <lb/> -->never breaks his word, otherwise the Queen would not have 
-<!-- <lb/> -->sent me here. I have taken the fine by force, and I am 
-<!-- <lb/> -->satisfied.</p> 
+<p>To which his Excellency returned the following reply:&#8212;</p> 
 
-<!-- <lb/> --><p>"I am not angry with your people for fighting in defence 
-<!-- <lb/> -->of their property; for those who fought&#8212;and fought well&#8212; 
-<!-- <lb/> -->were not all of them thieves, and I am sorry that many were 
-<!-- <lb/> -->killed. This is your fault; for if you had paid the fine it 
-<!-- <lb/> -->would not have happened. I now desire not to consider 
-<!-- <lb/> -->you, <persName>Chief</persName>, as an enemy <choice><sic>ot</sic><corr>to</corr></choice> the Queen, but I must proclaim 
-<!-- <lb/> -->martial law in the <settlement>Sovereignty</settlement>, to give to Commandants 
-<!-- <lb/> -->and Field<seg type="hyphen">-</seg>Cornets power to make commandos in a regular 
-<!-- <lb/> -->manner, and, with the consent of the Resident, enter your 
-<!-- <lb/> -->country in search of plundered <term type="animal">horses</term> and <term type="animal">cattle</term> that may 
-<!-- <lb/> -->be stolen after this time. And I expect you to assist them; 
-<!-- <lb/> -->for though you are a great chief, it seems that you either do 
-<!-- <lb/> -->not, or cannot, keep your own people from stealing; and 
-<!-- <lb/> -->among the <term type="animal">cattle</term> you sent as part of your fine there were 
-<!-- <lb/> -->three <term type="animal">oxen</term>, the property of <persName>Mr. Hain</persName>, of <settlement>Bloemfontein</settlement>, 
-<!-- <lb/> -->stolen since I crossed the <geogName>Caledon river</geogName>. Now, therefore, 
-<!-- <lb/> --><persName>Chief Moshesh</persName>, I consider your past obligations fulfilled, and 
-   <!-- <lb/> --><gap extent="1" unit="words" agent="illegible"/> that you will take measures for preventing such abuses 
-<!-- <lb/> -->in future.</p> 
+<p rend="right">"<placeName>Camp</placeName>, <geogName>Caledon River</geogName>, <date when="1852-12-21">Dec. 21, 1852</date>.<space extent="2" unit="chars"/></p>
 
-<!-- <lb/> --><p>"In the meantime, as the Queen's representative, I <w>sub<seg type="hyphen">-</seg> 
-<!-- <lb/> -->scribe</w> myself, your friend,</p> 
+<p>"<persName>Chief Moshesh</persName>,&#8212;I have received your letter. The 
+words are those of a great chief, and of one who has the 
+interests of his people at heart. But I care little for words. 
+I judge of men by their actions. I told you that if you did 
+not pay the fine I must go and take it. I am a man who 
+never breaks his word, otherwise the <persName>Queen</persName> would not have 
+sent me here. I have taken the fine by force, and I am 
+satisfied.</p> 
 
-<!-- <lb/> --><p>"<persName><seg rend="caps">George Cathcart</seg></persName>.</p> 
+<p>"I am not angry with your people for fighting in defence 
+of their property; for those who fought&#8212;and fought well&#8212;were 
+not all of them thieves, and I am sorry that many were 
+killed. This is your fault; for if you had paid the fine it 
+would not have happened. I now desire not to consider 
+you, <persName>Chief</persName>, as an enemy <choice><sic>ot</sic><corr>to</corr></choice> the <persName>Queen</persName>, but I must proclaim 
+martial law in the <region>Sovereignty</region>, to give to Commandants 
+and Field-Cornets power to make commandos in a regular 
+manner, and, with the consent of the Resident, enter your 
+country in search of plundered <term type="animal">horses</term> and <term type="animal">cattle</term> that may 
+be stolen after this time. And I expect you to assist them; 
+for though you are a great chief, it seems that you either do 
+not, or cannot, keep your own people from stealing; and 
+among the <term type="animal">cattle</term> you sent as part of your fine there were 
+three <term type="animal">oxen</term>, the property of <persName>Mr. Hain</persName>, of <settlement>Bloemfontein</settlement>, 
+stolen since I crossed the <geogName>Caledon river</geogName>. Now, therefore, 
+<persName>Chief Moshesh</persName>, I consider your past obligations fulfilled, and 
+hope that you will take measures for preventing such abuses 
+in future.</p> 
 
-<!-- <lb/> --><p>"P.S.&#8212;<persName>Chief</persName>, I shall be glad to see either yourself or 
-<!-- <lb/> -->your sons, in the same friendly manner and in the same 
-<!-- <lb/> -->good faith as before the fight, at <geogName>Platberg</geogName>, to<seg type="hyphen">-</seg>morrow or 
-<!-- <lb/> -->next day; but I shall now send away the army, and go back 
-<!-- <lb/> -->to the <region>colony</region> in a few days' time."</p>
+<p>"In the meantime, as the <persName>Queen</persName>'s representative, I <w>sub<!-- - -->scribe</w> 
+myself, your friend,</p> 
+
+<p rend="right">"<persName><seg rend="caps">George Cathcart</seg></persName>.<space extent="2" unit="chars"/></p> 
+
+<p>"P.S.&#8212;<persName>Chief</persName>, I shall be glad to see either yourself or 
+your sons, in the same friendly manner and in the same 
+good faith as before the fight, at <geogName>Platberg</geogName>, to-morrow or 
+next day; but I shall now send away the army, and go back 
+to the <region>colony</region> in a few days' time."</p>
 
 			</div>
 		</body>

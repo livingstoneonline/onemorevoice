@@ -18,16 +18,18 @@
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
 				<title type="alternative">“The General and the Caffre Chief,” 1 March 1853</title>
 				<!-- Title, date -->
-				<author>Moshoeshoe I, c.1786-1870</author>
+				<author>Anonymous</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first"></author>
+				<author role="first">Anonymous</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized"></author>
+				<author role="first-normalized">Anonymous</author>
 				<!-- First author only: Forename Surname -->
-				<author></author>
+				<author>Cathcart, George, 1794-1854</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="normalized"></author>
+				<author role="normalized">George Cathcart</author>
 				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Moshoeshoe I, c.1786-1870</author>
+				<author role="normalized">Moshoeshoe I</author>
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -99,14 +101,21 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
+					<author xml:id="An">Anonymous</author>
+					<author xml:id="GC">Cathcart, George, 1794-1854</author>
 					<author xml:id="M">Moshoeshoe I, c.1786-1870</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1852-12-13">13 December 1852</date>
+					<date type="composition" when="1852-12-20">20 December 1852</date>
+					<date type="composition" when="1852-12-21">21 December 1852</date>
 					<date type="publication" when="1853-03-01">1 March 1853</date>
 					<!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-					<placeName type="compositionPlace"></placeName>
+					<placeName type="compositionPlace">Platberg</placeName>
+					<placeName type="compositionPlace">Thaba Bossigo</placeName>
+					<placeName type="compositionPlace">Camp, Caledon River</placeName>
 					<!-- Can be "compositionPlace" or "focusRegion" -->
 				</bibl>
 			</sourceDesc>

@@ -504,35 +504,49 @@ button::-moz-focus-inner{
 
 /* 2.5. Parts of the page */
 
-.TEI h3{
+.TEI h3,
+.TEI h4{
 	font-size: 1em;
 	font-weight: normal;
 	font-variant: normal;
+	font-style: normal;
 	margin: 0;
 }
-.TEI h3.large{
+.TEI h3.large,
+.TEI h4.large{
 	font-size: 1.3em;
 }
-.TEI h3.larger{
+.TEI h3.larger,
+.TEI h4.larger{
 	font-size: 1.4em;
 }
-.TEI h3.largest{
+.TEI h3.largest,
+.TEI h4.largest{
 	font-size: 1.5em;
 }
-.TEI h3.small{
+.TEI h3.small,
+.TEI h4.small{
 	font-size: .85em;
 }
-.TEI h3.smaller{
+.TEI h3.smaller,
+.TEI h4.smaller{
 	font-size: .75em;
 }
-.TEI h3.smallest{
+.TEI h3.smallest,
+.TEI h4.smallest{
 	font-size: .65em;
 }
-.TEI h3.bold{
+.TEI h3.bold,
+.TEI h4.bold{
 	font-weight: 600;
 }
-.TEI h3.smallcaps{
+.TEI h3.smallcaps,
+.TEI h4.smallcaps{
 	font-variant: small-caps;
+}
+.TEI h3.italic,
+.TEI h4.italic{
+	font-style: italic;
 }
 .p,
 .ab{

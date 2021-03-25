@@ -1896,7 +1896,7 @@ section.archival-text .no-image .content{
 .screenshot .play-button:before{
 	top: 50%;
 	left: 50%;
-	transform: translate3d(-50%, -50%, 0); /* Mistake but works */
+	transform: translate(-50%, -50%); /* Mistake but works */
 }
 .youtube iframe{
 	height: 100%;

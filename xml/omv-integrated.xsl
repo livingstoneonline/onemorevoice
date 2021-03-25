@@ -78,9 +78,9 @@
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
 					<link rel="preload" as="style" href="../../css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				</xsl:if>
-				<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<link rel="preload" as="script" href="../../js/scripts.js?=newVers_0003"/>
-				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
+				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
 				<link rel="stylesheet" type="text/css" href="../../css/critical.css?=newVers_0004"/>
 				<script>
@@ -1010,7 +1010,7 @@
 	</xsl:template>
 
 	<xsl:template match="fw|fw[@type='catch']">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
@@ -1029,9 +1029,18 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
-			<xsl:apply-templates/>
-		</span>
+		<xsl:choose>
+			<xsl:when test="@type='subheading'">
+				<h4 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
+					<xsl:apply-templates/>
+				</h4>
+			</xsl:when>
+			<xsl:otherwise>
+				<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
+					<xsl:apply-templates/>
+				</h3>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
@@ -1039,25 +1048,25 @@
 	</xsl:template>
 
 	<xsl:template match="item">
-		<span class="item" title="Item in list">
+		<li class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
-		</span>
+		</li>
 	</xsl:template>
 
 	<xsl:template match="list">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
+		<!--<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
 			<xsl:apply-templates/>
-		</span>
-		<!--<xsl:if test="@type='ordered'">
-			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Ordered list">
+		</span>-->
+		<xsl:if test="@type='ordered'">
+			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
 				<xsl:apply-templates/>
 			</ol>
 		</xsl:if>
 		<xsl:if test="@type='unordered'">
-			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Unordered list">
+			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
 				<xsl:apply-templates/>
 			</ul>
-		</xsl:if>-->
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
@@ -1542,7 +1551,7 @@
 		</xsl:template>-->
 
 	<!--<xsl:template match="fw[@type='pageno']">
-		<span class="fw pageno" title="">
+		<span class="fw pageno">
 			<xsl:apply-templates/>
 		</span>
 		<br/>

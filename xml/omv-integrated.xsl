@@ -1010,7 +1010,7 @@
 	</xsl:template>
 
 	<xsl:template match="fw|fw[@type='catch']">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
@@ -1029,9 +1029,9 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
+		<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
 			<xsl:apply-templates/>
-		</span>
+		</h3>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
@@ -1542,7 +1542,7 @@
 		</xsl:template>-->
 
 	<!--<xsl:template match="fw[@type='pageno']">
-		<span class="fw pageno" title="">
+		<span class="fw pageno">
 			<xsl:apply-templates/>
 		</span>
 		<br/>

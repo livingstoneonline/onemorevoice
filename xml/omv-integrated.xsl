@@ -1029,9 +1029,18 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
-			<xsl:apply-templates/>
-		</h3>
+		<xsl:choose>
+			<xsl:when test="@type='subheading'">
+				<h4 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
+					<xsl:apply-templates/>
+				</h4>
+			</xsl:when>
+			<xsl:otherwise>
+				<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
+					<xsl:apply-templates/>
+				</h3>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">

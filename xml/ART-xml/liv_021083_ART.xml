@@ -15,6 +15,10 @@
 				<author role="first-normalized">Jonathan Adagogo Green</author><!-- First author only: Forename Surname -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AG">
+                    <name>Anne Gleave</name>
+                    <resp>Metadata Preparation</resp>
+                </respStmt>
                 <respStmt xml:id="AW">
                     <name>Adrian S. Wisnicki</name>
                     <resp>XML File Editing</resp>
@@ -74,6 +78,7 @@
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
 			<change when="2021-03-24" who="#AW">XML File Editing</change>
+			<change when="2021-03-01" who="#AG">Metadata Preparation</change>
         </revisionDesc>
     </teiHeader>
 

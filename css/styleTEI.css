@@ -504,6 +504,36 @@ button::-moz-focus-inner{
 
 /* 2.5. Parts of the page */
 
+.TEI h3{
+	font-size: 1em;
+	font-weight: normal;
+	font-variant: normal;
+	margin: 0;
+}
+.TEI h3.large{
+	font-size: 1.3em;
+}
+.TEI h3.larger{
+	font-size: 1.4em;
+}
+.TEI h3.largest{
+	font-size: 1.5em;
+}
+.TEI h3.small{
+	font-size: .85em;
+}
+.TEI h3.smaller{
+	font-size: .75em;
+}
+.TEI h3.smallest{
+	font-size: .65em;
+}
+.TEI h3.bold{
+	font-weight: 600;
+}
+.TEI h3.smallcaps{
+	font-variant: small-caps;
+}
 .p,
 .ab{
 	text-indent: 25px;
@@ -543,7 +573,6 @@ button::-moz-focus-inner{
 }
 .manuscript .head.center,
 .journal .head.center{
-	font-weight: normal;
 	text-indent: 0;
 	text-align: center;
 	margin: 0;

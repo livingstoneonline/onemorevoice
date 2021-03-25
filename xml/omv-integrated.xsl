@@ -1039,25 +1039,25 @@
 	</xsl:template>
 
 	<xsl:template match="item">
-		<span class="item" title="Item in list">
+		<li class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
-		</span>
+		</li>
 	</xsl:template>
 
 	<xsl:template match="list">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
+		<!--<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
 			<xsl:apply-templates/>
-		</span>
-		<!--<xsl:if test="@type='ordered'">
-			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Ordered list">
+		</span>-->
+		<xsl:if test="@type='ordered'">
+			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
 				<xsl:apply-templates/>
 			</ol>
 		</xsl:if>
 		<xsl:if test="@type='unordered'">
-			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="Unordered list">
+			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
 				<xsl:apply-templates/>
 			</ul>
-		</xsl:if>-->
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>

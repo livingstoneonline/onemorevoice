@@ -790,9 +790,9 @@
 		</span>
 	</xsl:template>
 
-	<!-- Make rend classes -->
+	<!-- need: bold, italic, sub, sup -->
 
-	<!-- need: body, italic, sub, sup -->
+	<!-- Make rend classes -->
 	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
 			<xsl:value-of select="concat(parent::node()/name(), ' ')"/>

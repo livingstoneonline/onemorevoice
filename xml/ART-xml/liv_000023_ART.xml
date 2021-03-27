@@ -17,6 +17,10 @@
 				<author role="normalized">Unknown Arab and African Informants</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AM">
+                    <name>Anne Martin</name>
+                    <resp>Metadata Preparation</resp>
+                </respStmt>
                 <respStmt xml:id="AW">
                     <name>Adrian S. Wisnicki</name>
                     <resp>XML File Editing</resp>
@@ -80,6 +84,7 @@
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
 			<change when="2020-06-30" who="#AW">XML File Editing</change>
+			<change when="2020-06-01" who="#AM">Metadata Preparation</change>
         </revisionDesc>
     </teiHeader>
 

@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020074">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -115,21 +115,85 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="bbb9aa">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
 
+<!-- 
+.rotate.liv_020074_0001{
+	transform: rotate(323deg);
+	-ms-transform: rotate(323deg); /* IE 9 */
+	-moz-transform: rotate(323deg); /* Firefox */
+	-webkit-transform: rotate(323deg); /* Safari and Chrome */
+	-o-transform: rotate(323deg); /* Opera */
+	position: absolute;
+    top: 4em;
+    left: 8em;
+}
+.overunder.liv_020074_0001{
+	border-top: 1px solid;    
+	border-bottom: 1px solid;    
+    padding: .5em 0;
+} -->
+
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
+<pb facs="liv_020074_0001" n="0001"/>
+<lb/><ab rend="no-indent" n="rotate liv_020074_0001"><space extent="1" unit="words"/>+
+<lb/>Reply in <w>nega<seg type="hyphen">-</seg>
+<lb/><space extent="2" unit="chars"/>tive</w> - sent <date when="1867-12-09">Dec 9, 1867</date>
+<lb/><space extent="2" unit="words"/>+</ab>
+<lb/><ab rend="no-indent gray"><space extent="5" unit="words"/><space extent="1" unit="chars"/><add place="inspace" hand="#U">C117/148</add></ab>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="1" unit="chars"/><placeName>4 Lawn Place</placeName>
+<lb/><space extent="3" unit="words"/><space extent="1" unit="chars"/><settlement>Shepherd's Bush</settlement></p>
+<lb/><p rend="no-indent"><persName>W<hi rend="sup">m.</hi> Cra<seg n="over-under liv_020074_0001">ft, E</seg>sq</persName> <space extent="1" unit="words"/><space extent="2" unit="chars"/><date when="1867-12-05">Dec 5<hi rend="underline sup">th</hi> 1867</date></p>
 <lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<lb/><p rend="no-indent"><hi rend="sup">To</hi>/The <orgName>Committee of
+<lb/><space extent="2" unit="chars"/>The National Freedmen's Aid Union</orgName></p>
+<lb/><p rend="no-indent"><space extent="4" unit="chars"/>Gentlemen</p>
+<lb/><p><space extent="3" unit="words"/>Being deeply
+<lb/>interested in the noble
+<lb/>work in which you are
+<lb/>engaged &#8212; I take the liberty
+<lb/>of writing to say that I
+<lb/>shall be glad to labour
+
+<!-- 
+.brace.liv_020074_0002{
+	content: '}';
+	font-size: 1.5em;
+	transform: scale(.6, 1.6);
+	right: 10em;
+	bottom: 2.4em;
+	position: absolute;
+}
+.word.liv_020074_0002{
+    position: absolute;
+    bottom: 3.5em;
+}
+-->
+
+	<pb facs="liv_020074_0002" n="0002"/>
+<lb/>in connection with
+<lb/>the <orgName>Freedmen's Aid Union</orgName>
+<lb/>if you think my services
+<lb/>can be usefully imployed</p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/>I am, Gentlemen,
+<lb/><space extent="2" unit="chars"/>Your obedient servant
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><persName>W<hi rend="underline sup">m</hi> Craft</persName></p>
+<lb/>
+<lb/>
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>That the <orgName>Committee</orgName> regret that, under
+<lb/>present cir<hi rend="sup">ces</hi>, they have no <w>op<supplied>e</supplied>n<supplied>in</supplied>g</w> <del>for
+<lb/>a from</del> <gap extent="2" unit="chars" agent="illegible"/> for his services:</p>
+<lb/><p><space extent="1" unit="chars"/><seg n="brace liv_020074_0002">Moved by Chairman
+<lb/><space extent="1" unit="words"/>&#8212;&#8212;&#8212;&#8212;<space extent="3" unit="chars"/>E. M. <space extent="2" unit="chars"/>&#8212;</seg> <seg n="word liv_020074_0002">Carried</seg></p> 
 
 			</div>
 		</body>

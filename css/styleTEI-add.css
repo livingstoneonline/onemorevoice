@@ -113,6 +113,11 @@ font-family: 'UnifrakturMaguntia', cursive;
 .rotate .deletion2.liv_020051_0001{
 	border-left: none;
 }
+.rotate .turn.liv_020074_0001{
+	top: unset;
+	left: unset;
+	position: unset;
+}
 @media only screen and (min-width: 768px){
 	.rotate .marginaltext.liv_000023_0037,
 	.rotate .container.liv_000023_0084,
@@ -233,6 +238,11 @@ font-family: 'UnifrakturMaguntia', cursive;
 	content: '{';
 	font-size: 3.5em;
 	transform: scale(.35, 1.7);
+	transform: scale(.35, 1.7);
+	-webkit-transform: scale(.35, 1.7);
+	-moz-transform: scale(.35, 1.7);
+	-ms-transform: scale(.35, 1.7);
+	-o-transform: scale(.35, 1.7);
 	right: -.2em;
 	position: absolute;
 }
@@ -1031,6 +1041,45 @@ font-family: 'UnifrakturMaguntia', cursive;
 		margin-left: -3em;
 		display: inline-block;
 	}
+}
+.container.liv_020074{
+	position: relative;
+}
+.turn.liv_020074_0001{
+	transform: rotate(323deg);
+	-ms-transform: rotate(323deg); /* IE 9 */
+	-moz-transform: rotate(323deg); /* Firefox */
+	-webkit-transform: rotate(323deg); /* Safari and Chrome */
+	-o-transform: rotate(323deg); /* Opera */
+	position: absolute;
+  top: 2em;
+  left: -2em;
+}
+.overunder.liv_020074_0001{
+	border-top: 1px solid;    
+	border-bottom: 1px solid;    
+  padding: .5em 0;
+}
+.container.liv_020074_0002{
+	position: relative;
+}
+.brace.liv_020074_0002::after{
+	content: '}';
+	font-size: 1.5em;
+	transform: scale(.6, 1.6) !important;
+	-ms-transform: scale(.6, 1.6) !important;
+	-moz-transform: scale(.6, 1.6) !important;
+	-webkit-transform: scale(.6, 1.6) !important;
+	-o-transform: scale(.6, 1.6) !important;
+	position: absolute;
+	bottom: .4em;
+	left: 7em;
+}
+.word.liv_020074_0002{
+		white-space: nowrap;
+		position: absolute;
+		bottom: 1em;
+		left: 11.5em;
 }
 .object.liv_021003_0001{
 	max-width: 319px;

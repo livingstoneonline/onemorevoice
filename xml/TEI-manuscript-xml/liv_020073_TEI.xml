@@ -2,15 +2,15 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020073">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Letter to [Unknown] Phillips</title>
+				<title>Letter to [?] Phillips</title>
 				<!-- Title without date -->
-				<title type="alternative">Letter to [Unknown] Phillips, 29 October 1868</title>
+				<title type="alternative">Letter to [?] Phillips, 29 October 1868</title>
 				<!-- Title, date -->
 				<author>Craft, Alice Isabella Ellen, 1866-1917</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -81,7 +81,7 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>Letter to [Unknown] Phillips</title>
+					<title>Letter to [?] Phillips</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
@@ -117,9 +117,9 @@
 
 	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="aa9b86">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,9 +127,23 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<pb facs="liv_020073_0001" n="0001"/>
+<lb/><p rend="no-indent"><space extent="3" unit="chars"/><placeName>124 Stockwell <space extent="1" unit="chars"/>Park Road</placeName>
+<lb/><space extent="3" unit="words"/><space extent="0" unit="chars"/><settlement>Brixton</settlement>
+<lb/><space extent="4" unit="words"/><space extent="2" unit="chars"/><date when="1868-10-29">Oct 29<hi rend="sup">th.</hi> 1868</date></p>
+<lb/><ab rend="no-indent gray"><space extent="4" unit="words"/><space extent="0" unit="chars"/><add place="inspace" hand="#U">C39/91.</add></ab>
+<lb/><p rend="no-indent">Dear <persName>M<hi rend="sup">r.</hi> Phillips</persName></p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="3" unit="chars"/>Will you kindly
+<lb/>return the paper that I
+<lb/>sent you a week or two
+<lb/>ago respecting the state of
+<lb/>the cotton crops in <country>America</country>,
+<lb/>I should not trouble you
+<lb/>if I had another copy of
+<lb/>it.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="1" unit="chars"/>I am, <space extent="1" unit="chars"/>dear <persName>M<hi rend="sup">r.</hi> Phillips</persName>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/>Yours <space extent="1" unit="chars"/>sincerely
+<lb/><space extent="4" unit="words"/><space extent="3" unit="chars"/><persName>E. Craft.</persName></p>
 
 			</div>
 		</body>

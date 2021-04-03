@@ -238,6 +238,11 @@ font-family: 'UnifrakturMaguntia', cursive;
 	content: '{';
 	font-size: 3.5em;
 	transform: scale(.35, 1.7);
+	transform: scale(.35, 1.7);
+	-webkit-transform: scale(.35, 1.7);
+	-moz-transform: scale(.35, 1.7);
+	-ms-transform: scale(.35, 1.7);
+	-o-transform: scale(.35, 1.7);
 	right: -.2em;
 	position: absolute;
 }
@@ -1055,7 +1060,9 @@ font-family: 'UnifrakturMaguntia', cursive;
 	border-bottom: 1px solid;    
   padding: .5em 0;
 }
-/* For following, alse see .rotate .TEI * on styleTEI */
+.container.liv_020074_0002{
+	position: relative;
+}
 .brace.liv_020074_0002::after{
 	content: '}';
 	font-size: 1.5em;
@@ -1064,13 +1071,15 @@ font-family: 'UnifrakturMaguntia', cursive;
 	-moz-transform: scale(.6, 1.6) !important;
 	-webkit-transform: scale(.6, 1.6) !important;
 	-o-transform: scale(.6, 1.6) !important;
-	right: 4.15em;
-	bottom: 1.7em;
 	position: absolute;
+	bottom: .4em;
+	left: 7em;
 }
 .word.liv_020074_0002{
-    position: absolute;
-    bottom: 2.5em;
+		white-space: nowrap;
+		position: absolute;
+		bottom: 1em;
+		left: 11.5em;
 }
 .object.liv_021003_0001{
 	max-width: 319px;

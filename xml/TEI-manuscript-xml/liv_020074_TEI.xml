@@ -119,21 +119,24 @@
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body n="bbb9aa">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="black">
+			<div rend="black" n="container liv_020074">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
 
 <!-- 
-.rotate.liv_020074_0001{
+.container.liv_020074{
+	position: relative;
+}
+.turn.liv_020074_0001{
 	transform: rotate(323deg);
 	-ms-transform: rotate(323deg); /* IE 9 */
 	-moz-transform: rotate(323deg); /* Firefox */
 	-webkit-transform: rotate(323deg); /* Safari and Chrome */
 	-o-transform: rotate(323deg); /* Opera */
 	position: absolute;
-    top: 4em;
-    left: 8em;
+    top: 2em;
+    left: -2em;
 }
 .overunder.liv_020074_0001{
 	border-top: 1px solid;    
@@ -145,7 +148,7 @@
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
 <pb facs="liv_020074_0001" n="0001"/>
-<lb/><ab rend="no-indent" n="rotate liv_020074_0001"><space extent="1" unit="words"/>+
+<lb/><ab rend="no-indent" n="turn liv_020074_0001"><space extent="1" unit="words"/>+
 <lb/>Reply in <w>nega<seg type="hyphen">-</seg>
 <lb/><space extent="2" unit="chars"/>tive</w> - sent <date when="1867-12-09">Dec 9, 1867</date>
 <lb/><space extent="2" unit="words"/>+</ab>
@@ -165,17 +168,17 @@
 <lb/>shall be glad to labour
 
 <!-- 
-.brace.liv_020074_0002{
+.brace.liv_020074_0002::after{
 	content: '}';
 	font-size: 1.5em;
 	transform: scale(.6, 1.6);
-	right: 10em;
-	bottom: 2.4em;
+	right: 4.15em;
+	bottom: 1.7em;
 	position: absolute;
 }
 .word.liv_020074_0002{
     position: absolute;
-    bottom: 3.5em;
+    bottom: 2.5em;
 }
 -->
 

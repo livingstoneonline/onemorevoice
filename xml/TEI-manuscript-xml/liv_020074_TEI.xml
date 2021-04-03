@@ -124,26 +124,6 @@
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
 
-<!-- 
-.container.liv_020074{
-	position: relative;
-}
-.turn.liv_020074_0001{
-	transform: rotate(323deg);
-	-ms-transform: rotate(323deg); /* IE 9 */
-	-moz-transform: rotate(323deg); /* Firefox */
-	-webkit-transform: rotate(323deg); /* Safari and Chrome */
-	-o-transform: rotate(323deg); /* Opera */
-	position: absolute;
-    top: 2em;
-    left: -2em;
-}
-.overunder.liv_020074_0001{
-	border-top: 1px solid;    
-	border-bottom: 1px solid;    
-    padding: .5em 0;
-} -->
-
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
@@ -167,20 +147,6 @@
 <lb/>of writing to say that I
 <lb/>shall be glad to labour
 
-<!-- 
-.brace.liv_020074_0002::after{
-	content: '}';
-	font-size: 1.5em;
-	transform: scale(.6, 1.6);
-	right: 4.15em;
-	bottom: 1.7em;
-	position: absolute;
-}
-.word.liv_020074_0002{
-    position: absolute;
-    bottom: 2.5em;
-}
--->
 
 	<pb facs="liv_020074_0002" n="0002"/>
 <lb/>in connection with
@@ -195,7 +161,7 @@
 <lb/><p rend="no-indent"><space extent="1" unit="chars"/>That the <orgName>Committee</orgName> regret that, under
 <lb/>present cir<hi rend="sup">ces</hi>, they have no <w>op<supplied>e</supplied>n<supplied>in</supplied>g</w> <del>for
 <lb/>a from</del> <gap extent="2" unit="chars" agent="illegible"/> for his services:</p>
-<lb/><p><space extent="1" unit="chars"/><seg n="brace liv_020074_0002">Moved by Chairman
+<lb/><p n="container liv_020074_0002"><space extent="1" unit="chars"/><seg n="brace liv_020074_0002 exclude">Moved by Chairman
 <lb/><space extent="1" unit="words"/>&#8212;&#8212;&#8212;&#8212;<space extent="3" unit="chars"/>E. M. <space extent="2" unit="chars"/>&#8212;</seg> <seg n="word liv_020074_0002">Carried</seg></p> 
 
 			</div>

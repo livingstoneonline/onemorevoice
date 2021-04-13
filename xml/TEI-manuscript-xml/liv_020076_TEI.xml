@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="https://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
-<TEI xmlns="https://tei-c.org/ns/1.0/" xml:id="liv_020076">
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020076">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
 		<fileDesc>
@@ -110,6 +110,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-04-13" who="#AW">Coding Review</change>
 			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
 			<change when="2020-12-18" who="#LM">Transcription</change>
 		</revisionDesc>
@@ -117,9 +118,9 @@
 
 	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="b6b6af">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,9 +128,79 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
+<pb facs="liv_020076_0001" n="0001"/>
 <lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<lb/><p rend="no-indent">&#8453; <persName>Mr. Crosher</persName> <space extent="4" unit="chars"/> <add rend="black gray" place="inspace" hand="#U">C129/130</add></p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="2" unit="chars"/><placeName>12 Blue Cross St.</placeName>
+<lb/><space extent="4" unit="words"/><space extent="1" unit="chars"/><settlement>Haymarket,
+<lb/><space extent="5" unit="words"/><space extent="3" unit="chars"/>S.W.</settlement>
+<lb/><space extent="5" unit="words"/><space extent="1" unit="chars"/><date when="1881-08-29">Aug. 29/81.</date></p>
+<lb/><p rend="no-indent"><persName>Dear Mrs Nichol</persName>,</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/>I have to thank
+<lb/>you many times for your
+<lb/>extremely kind gift, and
+<lb/>will add that it came very
+<lb/>opportunely, as I needed a
+<lb/>suit of clothes which I have
+<lb/>since purchased.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="2" unit="chars"/>I have been in <settlement>London</settlement>
+<lb/>about 4 months, that is I
+<lb/>arrived about <date when="1881-05-03">May 3rd</date> from
+<lb/><space extent="2" unit="chars"/><country>America</country> and my reasons
+
+	<pb facs="liv_020076_0002" n="0002"/>
+<lb/>for leaving the <bloc>Western
+<lb/>Continent</bloc> were these, there
+<lb/>is still an undercurrent
+<lb/>of feeling pervading through-
+<lb/>out the <country>U.S.</country> against a "man
+<lb/>of colour" on <seg rend="small">a/c</seg><!--<hi rend="sup">a</hi>/<hi rend="below">c</hi>--> <!-- &#8448; --> of the spirit
+<lb/><del>of</del> <add rend="sup">engendered by</add> slavery not being yet
+<lb/>wiped out, and being born
+<lb/>here I thought I could do
+<lb/>better <del>here</del>. I am now
+<lb/>earning 12s. a week and
+<lb/>have been employed about
+<lb/>a month, previous to which
+<lb/><space extent="1" unit="chars"/>I got considerably into debt
+<lb/><space extent="2" unit="chars"/>for board + lodging which
+<lb/><space extent="3" unit="chars"/>I have not since been
+
+	<pb facs="liv_020076_0003" n="0003"/>
+<lb/>able to pay off insomuch
+<lb/>that it has worried me
+<lb/><del>considerably</del> <add rend="sup">greatly</add> on my creditors
+<lb/>persistently "dunning" me
+<lb/>for the money.</p>
+<lb/><p rend="no-indent"><space extent="3" unit="chars"/>I thought that if you
+<lb/>would kindly advance me
+<lb/>a few pounds &amp; trust to
+<lb/>my honesty, when I obtain
+<lb/>a better situation I can
+<lb/>repay the loan. Please do
+<lb/>not be annoyed at my
+<lb/>request. &amp; I should be
+<lb/>pleased to have a line
+<lb/>from you when convenient
+
+	<pb facs="liv_020076_0004" n="0004"/>
+<lb/>and will be more than
+<lb/>pleased if permitted to
+<lb/>write to you often, but on
+<lb/><del>a</del>the strength of being worried
+<lb/>so much of late, I am not
+<lb/>at present a very good
+<lb/>correspondent.</p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/>Trusting to hear from you
+<lb/>soon, again thanking you for
+<lb/>your kindness, and hoping 
+<lb/>you are in the best of health.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>I have the honor to remain</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/>Yr. obt. <hi rend="sup">&amp; grateful</hi> servant
+<lb/><space extent="5" unit="words"/><persName>W. I. Craft</persName>.</p>
+<lb/><p rend="no-indent">P.S. I hope to see you before long &amp; if
+<lb/>I thought I could find employment
+<lb/>would come at once.</p>
 
 			</div>
 		</body>

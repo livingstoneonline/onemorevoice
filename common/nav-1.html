@@ -84,8 +84,9 @@
                     </label>
                     <div class="dropdown-content" role="menu" aria-label="External links" data-menu-origin="left">
                         <ul role="none">
-                            <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
                             <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a></li>
+                            <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
+                            <li role="none"><a role="menuitem" href="https://livingstoneonline.wordpress.com/">Wordpress Blog</a></li>
                             <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">Contact</a></li>
                         </ul>
                     </div>
@@ -93,23 +94,23 @@
             </li>
         </ul>
 
-        <a id="nav5" style="cursor:pointer" aria-label="Show site sections" onclick="openNav()" tabindex="0">
+        <button id="nav5" style="cursor:pointer" title="Menu" aria-label="Show site sections" onclick="openNav()" tabindex="0">
             <i class="fa fa-bars"></i>
-        </a>
+        </button>
 
         <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
         <div class="overlay" id="nav7">
             <nav class="navigation">
                 <div class="nav-wrapper">							
-                    <a id="nav8" href="index.html">
+                    <a id="nav8" href="index.html" tabindex="0">
                         <img src="img/logo/OMV-logo-87px.jpg" srcset="img/logo/OMV-logo-87px.jpg 87w, img/logo/OMV-logo-78px.jpg 78w, img/logo/OMV-logo-72px.jpg 72w, img/logo/OMV-logo-58px.jpg 58w, img/logo/OMV-logo-39px.jpg 39w, img/logo/OMV-logo-36px.jpg 36w, img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px"  alt="One More Voice logo in white on a blue field." title="Home"/>
                     </a>
                     
-                    <a id="nav9" href="index.html">
+                    <a id="nav9" href="index.html" tabindex="0">
                         <h1>One More Voice</h1>
                     </a>
                     
-                    <a class="close" aria-label="Close site sections" aria-pressed="false" onclick="closeNav()" title="Close" href="javascript:void(0)">&#215;</a>
+                    <button class="close" style="cursor:pointer" title="Close" aria-label="Close site sections" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
                 </div>	
             </nav>
             <section class="overlay-content" role="menu">
@@ -145,9 +146,10 @@
                     </li>
                     <li class="section" role="menuitem"><strong>External</strong> <i class="fa fa-caret-down"></i>
                         <ul role="menu" aria-label="External links">
-                            <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
                             <li role="none"><a role="menuitem" href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a></li>
-                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com">Contact</a></li>
+                            <li role="none"><a role="menuitem" href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
+                            <li role="none"><a role="menuitem" href="https://livingstoneonline.wordpress.com/">Wordpress Blog</a></li>
+                            <li role="none"><a role="menuitem" href="mailto:awisnicki@yahoo.com" id="overlay-last">Contact</a></li>
                         </ul>
                     </li>
                 </ul>

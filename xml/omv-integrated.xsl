@@ -72,24 +72,17 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="../../site.webmanifest"/>
-				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="../../css/style.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="../../css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="../../css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
 					<link rel="preload" as="style" href="../../css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				</xsl:if>
-				<link rel="preload" as="style" href="../../css/font-awesome.min.css" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../../fonts/fontawesome-webfont.woff2?v=4.7.0"/>
-				<link rel="preload" as="font" type="font/woff" crossorigin="" href="../../fonts/fontawesome-webfont.woff?v=4.7.0"/>
-				<link rel="preload" as="script" href="../../js/scripts.js?=newVers_0001"/>
-				<link rel="preload" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
+				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+				<link rel="preload" as="script" href="../../js/scripts.js?=newVers_0003"/>
+				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
-				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="../../css/critical.css?=newVers_0001"/>
+				<link rel="stylesheet" type="text/css" href="../../css/critical.css?=newVers_0004"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
 					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
@@ -135,12 +128,17 @@
 					// Adds CSS file and adds random string to end of CSS file.
 					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
 				</script>
-				<link rel="stylesheet" type="text/css" href="../../css/style.css?=newVers_0001"/>
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
+				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<link rel="stylesheet" type="text/css" href="../../css/style.css?=newVers_0004"/>
 				<link rel="stylesheet" type="text/css" href="../../css/styleTEI.css?=newVers_0001"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
 					<link rel="stylesheet" type="text/css" href="../../css/styleTEI-add.css?=newVers_0001"/>
 				</xsl:if>
-				<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css"/>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
@@ -164,9 +162,9 @@
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
 					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="../../js/scripts.js?=newVers_0001";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="../../js/scripts.js?=newVers_0003";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="../../js/scripts.js?=newVers_0001"></script> -->
+				<!-- <script src="../../js/scripts.js?=newVers_0003"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -792,7 +790,9 @@
 		</span>
 	</xsl:template>
 
-	<!-- Make rend class -->
+	<!-- need: bold, italic, sub, sup -->
+
+	<!-- Make rend classes -->
 	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
 			<xsl:value-of select="concat(parent::node()/name(), ' ')"/>
@@ -861,16 +861,16 @@
 		</p>
 	</xsl:template>
 
-	<xsl:template match="abbr|orig">
-		<xsl:apply-templates/>
+	<xsl:template match="abbr">
+		<abbr><xsl:apply-templates/></abbr>
 	</xsl:template>
 
 	<xsl:template match="add">
-			<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></ins>
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></span>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></ins>
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
@@ -890,18 +890,6 @@
 	</xsl:template>
 
 	<xsl:template match="cb">
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<br/>
-				<xsl:apply-templates/>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct [@type='journal']">
-				<xsl:apply-templates/>
-			</xsl:when>
-		</xsl:choose>
-	</xsl:template>
-
-	<xsl:template match="div/cb">
 		<xsl:apply-templates/>
 	</xsl:template>
 
@@ -911,41 +899,48 @@
 	
 	<xsl:template match="choice/sic">
 			<xsl:variable name="choice-orig-sic">
-			<xsl:choose>
-				<!-- If there are orig and reg values in the corr, show the orig -->
-				<xsl:when test="../corr/choice/orig">
-					<xsl:value-of select="../corr/choice/orig"/>
-				</xsl:when>
-				<!-- If there are sic and corr values in the corr, show both sic and corr -->
-				<xsl:when test="../corr/choice/sic">
-					<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
-				</xsl:when>
-				<!-- If there are two rdgs, show both rdgs -->
-				<xsl:when test="../corr/app/rdg">
-					<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
-				</xsl:when>
-				<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="../corr"/>
-				</xsl:otherwise>
-			</xsl:choose>			
+				<xsl:choose>
+					<!-- If there are orig and reg values in the corr, show the orig -->
+					<xsl:when test="../corr/choice/orig">
+						<xsl:value-of select="../corr/choice/orig"/>
+					</xsl:when>
+					<!-- If there are sic and corr values in the corr, show both sic and corr -->
+					<xsl:when test="../corr/choice/sic">
+						<xsl:value-of select="../corr/choice/sic"/> [or] <xsl:value-of select="../corr/choice/corr"/>
+					</xsl:when>
+					<!-- If there are two rdgs, show both rdgs -->
+					<xsl:when test="../corr/app/rdg">
+						<xsl:value-of select="../corr/app/rdg[1]"/> [or] <xsl:value-of select="../corr/app/rdg[2]"/>
+					</xsl:when>
+					<xsl:when test="../corr[not(text())]">[no text]</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="../corr"/>
+					</xsl:otherwise>
+				</xsl:choose>			
 			</xsl:variable>
-			<span class="sic diplomatic">
+			<u class="sic diplomatic">
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
 				<xsl:apply-templates/>
-			</span>
+			</u>
 	</xsl:template>
 
 	<xsl:template match="corr|expan|reg"/>
 
-	<xsl:template match="del">
-		<span class="del cancelled">
+	<xsl:template match="date">
+		<!--<time>
 			<xsl:apply-templates/>
-		</span>
+		</time>-->
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="del">
+		<del class="del cancelled">
+			<xsl:apply-templates/>
+		</del>
 	</xsl:template>
 
 	<xsl:template match="del[following-sibling::add[1][@place='over-text']]" priority="10">
-		<span class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></span>
+		<del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del>
 	</xsl:template>
 
 	<xsl:template match="figure">
@@ -1014,8 +1009,8 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="fw|fw[@type='catch']|fw[@type='pageno']">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="">
+	<xsl:template match="fw|fw[@type='catch']">
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
@@ -1034,31 +1029,50 @@
 	<xsl:template match="graphic"/>
 
 	<xsl:template match="head">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}" title="">
-			<xsl:apply-templates/>
-		</span>
+		<xsl:choose>
+			<xsl:when test="@type='subheading'">
+				<h4 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
+					<xsl:apply-templates/>
+				</h4>
+			</xsl:when>
+			<xsl:otherwise>
+				<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
+					<xsl:apply-templates/>
+				</h3>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
 		<span class="idno"><xsl:apply-templates/></span>
 	</xsl:template>
 
-	<xsl:template match="list/item">
-		<span class="listitem" title="item">
+	<xsl:template match="item">
+		<li class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
 			<xsl:apply-templates/>
-		</span>
+		</li>
 	</xsl:template>
 
 	<xsl:template match="list">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
+		<!--<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
 			<xsl:apply-templates/>
-		</span>
+		</span>-->
+		<xsl:if test="@type='ordered'">
+			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
+				<xsl:apply-templates/>
+			</ol>
+		</xsl:if>
+		<xsl:if test="@type='unordered'">
+			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
+				<xsl:apply-templates/>
+			</ul>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
-			<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
+			<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
 	</xsl:template>
 
 	<xsl:template match="milestone">
@@ -1098,6 +1112,10 @@
 	
 	<xsl:template match="note">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
+	</xsl:template>
+
+	<xsl:template match="orig">
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="orgName">
@@ -1289,16 +1307,16 @@
 	<xsl:template match="unclear">
 		<span class="unclear">
 				<xsl:choose>
-				<xsl:when test="@cert">
-					<xsl:attribute name="title">
-						<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
-					</xsl:attribute>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:attribute name="title">
-						<xsl:value-of select="concat('word(s) ', name())"/>
-					</xsl:attribute>
-				</xsl:otherwise>
+					<xsl:when test="@cert">
+						<xsl:attribute name="title">
+							<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
+						</xsl:attribute>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:attribute name="title">
+							<xsl:value-of select="concat('word(s) ', name())"/>
+						</xsl:attribute>
+					</xsl:otherwise>
 				</xsl:choose>
 			<xsl:apply-templates select="node()"/>
 		</span>
@@ -1533,7 +1551,7 @@
 		</xsl:template>-->
 
 	<!--<xsl:template match="fw[@type='pageno']">
-		<span class="fw pageno" title="">
+		<span class="fw pageno">
 			<xsl:apply-templates/>
 		</span>
 		<br/>

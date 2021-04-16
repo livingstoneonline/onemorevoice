@@ -78,8 +78,10 @@ html{
 body{
 	top: 0px !important; /* Needed for Google Translate */
 	margin: 0 auto;
-	padding-bottom: 0;
+	padding: 0;
 	max-width: 100%;
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: antialiased;
 }
 @media only screen and (min-width: 992px){
 	body{
@@ -94,18 +96,21 @@ body{
 }
 @media only screen and (min-width: 480px){
 	.text-container{
-		margin-top: 66px;
-		margin-bottom: 40px;
+		margin-top: 70px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.text-container{
+		margin-top: 51.1px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.text-container{
 		border-right: 1px solid #737373;
 		border-left: 1px solid #737373;
-		margin-top: 49.5px;
 		margin-bottom: 0;
 		/* the following tied to nav-wrapper */
-		min-width: 992px;
+		min-width: 990px;
 		max-width: 1200px;
 		display: flex;
 		flex-direction: row-reverse;
@@ -121,93 +126,121 @@ body{
 	.page-wrapper{
 		background-color: #fff;
 		margin: 0 auto;
-		padding: 40px 1.2em;
+		padding: 36px 1.2em 0;
 		width: 100%;
 		max-width: 900px;
-	}
-}
-header,
-.transcription header{
-	text-align: center;
-	margin-top: 44px;
-	position: relative;
-}
-@media only screen and (min-width: 480px){
-	header,
-	.transcription header{
-		margin-top: 50px;
-		margin-bottom: 1em;
-	}
-}
-@media only screen and (min-width: 992px){
-	header,
-	.transcription header{
-		background-color: #fff;
-		margin: 0 auto;
-		max-width: 700px;
 	}
 }
 
 
 /* 1.2 Main Section and Related */
 
+header,
+.transcription header{
+	background-color: #fff;
+	text-align: center;
+	margin: 44px auto 0;
+	max-width: 700px;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	header,
+	.transcription header{
+		margin-top: 54px;
+	}
+}
+@media only screen and (min-width: 768px){
+	header,
+	.transcription header{
+		margin-bottom: 1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	header,
+	.transcription header{
+		margin-top: 0;
+	}
+}
 main,
-.credits#main,
-.credits#credits2-div{
-	font-size: 1.25em;
+aside.credits#credits-div,
+aside.credits#main,
+main.object#object-div,
+aside.credits#credits2-div{
+	background-color: #fff;
 	line-height: 1.875em;
-	text-align: left;
+	margin: 0 auto;
+	max-width: 700px;
+}
+/* main pages */
+main{
+	font-size: 1.25em;
 	padding: 1em;
 }
-@media only screen and (min-width: 768px){
-	main,
-	.credits#main,
-	.credits#credits2-div{
-		font-size: 1.2em;
-		padding: 1em .5em;
-	}
-}
-@media only screen and (min-width: 992px){
-	main,
-	.credits#main,
-	.credits#credits2-div{
-		font-size: 1.15em;
-		background-color: #fff;
-		margin: 0 auto;
-		max-width: 700px;
-		display: block !important; /* Tied to overlay */
-	}
-	main,
-	.credits#main{
-		padding: 2em .5em 0;
-	}
-	.transcription main{
-		padding: 0 .5em;
-	}
-	.credits#credits2-div{
-		padding: 0 .5em;
-	}
-}
-aside{
+aside.credits#credits-div{
 	font-size: 1.2em;
-	line-height: 1.875;
+	padding: 0 1em 1em;
+}
+/* visual materials pages */
+aside.credits#main{
+	font-size: 1.2em;
+	padding: 1em 1em 0;
+}
+main.object#object-div{
 	padding: 0 1em;
 }
+aside.credits#credits2-div{
+	font-size: 1.2em;
+	padding: 0 1em 1em;
+}
+/* manuscript pages */
+main.manuscript#manuscript-div,
+main.journal#journal-div{
+	padding: 0;
+}
+@media only screen and (min-width: 480px){
+	main.object#object-div{
+		padding: 1em;
+	}	
+}
 @media only screen and (min-width: 768px){
-	aside{
+	main{
+		font-size: 1.2em;
+		padding: 1em 0;
+	}
+	aside.credits#credits-div{
 		font-size: 1.15em;
+		padding: 0 0 1.5em;
+	}
+	aside.credits#main{
+		font-size: 1.15em;
+		padding: 1em 0 0;
+	}
+	main.object#object-div{
+		font-size: 1.15em;
+		padding: 0 0 1em;
+	}
+	aside.credits#credits2-div{
+		font-size: 1.15em;
+		padding: 0 0 1.5em;
 	}
 }
 @media only screen and (min-width: 992px){
-	aside{
-		font-size: 1.1em;
-		background-color: #fff;
-		margin: 0 auto;
-		max-width: 700px;
+	main{
+		font-size: 1.15em;
+		display: block !important; /* Tied to overlay */
 	}
-}
-.transcription{
-	text-align: center;
+	aside.credits#credits-div{
+		font-size: 1.1em;
+	}
+	aside.credits#main{
+		font-size: 1.1em;
+	}
+	main.object#object-div{
+		font-size: 1.1em;
+	}
+	aside.credits#credits2-div{
+		font-size: 1.1em;
+	}
 }
 /* toc and toc-title used for page menus */
 .toc{
@@ -225,8 +258,8 @@ aside{
 	font-size: .9em;
 }
 [id]:target{
-	margin-top: -66px;
-	border-top: 66px solid transparent;
+	margin-top: -70px;
+	border-top: 70px solid transparent;
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding;
 	background-clip: padding-box;
@@ -245,14 +278,21 @@ aside{
 
 .essay h2,
 .transcription h2{
-	font-size: 1em;
 	color: #204A79;
 	margin: .5em auto 0 auto;
 }
-@media only screen and (min-width: 992px){
-	.essay h2,
+.essay h2{
+	font-size: 1.25em;
+}
+.transcription h2{
+	font-size: 1.2em;
+}
+@media only screen and (min-width: 768px){
+	.essay h2{
+		font-size: 1.2em;
+	}
 	.transcription h2{
-		font-size: 1.1em;
+		font-size: 1.15em;
 	}
 }
 h3{
@@ -275,6 +315,10 @@ h3.subsection{
   font-style: italic;
   font-weight: normal;
   font-variant: normal;
+	margin-top: 0;
+}
+.contributors section:first-of-type h3{
+	margin-top: 1em;
 }
 h4{
 	font-size: 1em;
@@ -292,6 +336,9 @@ img{
 	color: #e6e6e6;
 	font-weight: 300;
 	width: 100%;
+}
+header img{
+	width: calc(100% - 2px);
 }
 a img{
 	border: 3px transparent solid;
@@ -387,23 +434,6 @@ a:focus img{
 		min-height: 581px;
 	}
 }
-/* @media screen and (min-width: 992px){
-	.content-holder-1{
-		min-height: 155px;
-	}
-	.content-holder-2{
-		min-height: 409px;
-	}
-	.content-holder-3{
-		min-height: 461px;
-	}
-	.content-holder-4{
-		min-height: 514px;
-	}
-	.content-holder-5{
-		min-height: 529px;
-	}
-} */
 /* Caption for main image */
 .image-wrapper{
 	line-height: 0;
@@ -567,6 +597,13 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 		height: 49.5px;
 	}
 }
+@media only screen and (min-width: 768px){
+	.navigation,
+	.navigation.fallback,
+	.overlay .navigation{
+		height: 52.5px;
+	}
+}
 .navigation a,
 .navigation a:hover,
 .navigation a:focus,
@@ -606,8 +643,8 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
-	padding: .8em .55em;
-	top: -44px;
+	padding: 1em .55em;
+	top: -52px;
 	left: 0;
 	position: absolute;
 	z-index: 50;
@@ -783,7 +820,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	align-items: center;
 }
 #nav4 li a{
-	padding: 14px 13px;
+	padding: 17px 13px;
 }
 /* main nav links */
 #nav4 li:hover,
@@ -806,7 +843,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 }
 label::after,
 a::after{
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Free';
 }
 label::after{
 	content: '\f0da';
@@ -817,7 +854,7 @@ input:checked + label::after{
 	content: '\f0d7';
 }
 #nav4 li .dropdown label.dropbtn{
-	padding: 17px 13px;
+	padding: 19px 13px;
 	border: none;
 }
 :checked + label .expanded-text{
@@ -897,45 +934,46 @@ input:checked + label::after{
 .navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li a
 */
 
-/* Hamburger Menu & Close X */
+/* Hamburger Menu & Close X; Fallback Menu */
 #nav5,
+#nav7 .close,
 #nav12{
-	right: .5em;
+	color: #0b0b0b;
+	text-decoration: none;
+	border: none;
+	background: transparent;
+	height: 32px;
+	top: 50%;
 	position: absolute;
+	transform: translate(0, -50%);
+}
+#nav5,
+#nav7 .close{
+	width: 36px;
+	right: .5em;
+}
+#nav12{
+	margin-right: -.1em;
+	line-height: normal;
+	width: 35px;
+	right: .45em;
+}
+@media only screen and (min-width: 480px){
+	#nav5,
+	#nav7 .close{
+		right: 1.5em;
+	}
+	#nav12{
+		right: 1.2em;
+	}
 }
 @media only screen and (min-width: 768px){
 	#nav5,
+	#nav7 .close{
+		right: 2em;
+	}
 	#nav12{
-		right: 1em;
-	}	
-}
-#nav5 .fa-bars,
-#nav12 .fa-bars{
-	font-size: 1.6em;
-	padding: .15em .2em;
-}
-@media only screen and (min-width: 480px){
-	#nav5 .fa-bars,
-	#nav12 .fa-bars{
-		font-size: 1.8em;
-	}
-}
-#nav7 .close{
-	padding: .30em .28em;
-	right: .25em;
-	position: absolute;
-}
-#nav7 .close{
-	font-size: 1.9em;
-}
-@media only screen and (min-width: 480px){
-	#nav7 .close{
-		font-size: 2.1em;
-	}
-}
-@media only screen and (min-width: 768px){
-	#nav7 .close{
-		right: .5em;
+		right: 1.5em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -944,21 +982,32 @@ input:checked + label::after{
 		display: none;
 		visibility: hidden;
 	}
-	.fallback #nav12{
+	#nav12{
 		display: block;
 		visibility: visible;
 	}
 }
-#nav5,
-#nav7 .close,
-#nav12{
-	color: #0b0b0b;
-	text-decoration: none;
+#nav5 .fa-bars,
+#nav7 .close .fa-times{
+	font-size: 1.6em;
+}
+#nav12 .fa-bars{
+	font-size: 1.1em;
+	padding: 7px 0;
+}
+@media only screen and (min-width: 320px){
+	#nav5 .fa-bars,
+	#nav7 .close .fa-times{
+		font-size: 1.8em;
+	}
+	#nav12 .fa-bars{
+		font-size: 1.23em;
+		padding: 6px 0;
 }
 #nav5:hover,
 #nav5:focus,
-#nav7 a.close:hover,
-#nav7 a.close:focus,
+#nav7 .close:hover,
+#nav7 .close:focus,
 #nav12:hover,
 #nav12:focus{
 	outline: 2px solid #204A79;
@@ -1007,7 +1056,7 @@ input:checked + label::after{
 @media only screen and (min-width: 480px){
 	.overlay-content{
 		margin: 5.5em auto 3em;
-		padding: 2em .5em;
+		padding: 2em 0;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -1038,7 +1087,7 @@ input:checked + label::after{
 .overlay-content .container-home,
 .overlay-content .container-left,
 .overlay-content .container-right{
-	margin: 0 2.5em;
+	margin: 0 2em;
 	clear: both;
 }
 @media only screen and (min-width: 480px){
@@ -1191,8 +1240,8 @@ li.section > ul > li > a{
 	background-color: #3B5E52;
 	border-left: 1px solid #737373;
 	width: 100%;
-	min-width: 245px;
-	max-width: 265px;
+	min-width: 235px;
+	max-width: 250px;
 }
 aside.sidebar{
 	font-size: .9em;
@@ -1201,7 +1250,7 @@ aside.sidebar{
 	color: #fff;
 	background-color: #3B5E52;
 	margin: 0;
-	padding: 40px 0;
+	padding: 36px 0 0;
 	display: none;
 	visibility: hidden;
 }
@@ -1284,6 +1333,10 @@ aside.sidebar .external li a img{
 	width: 100px;
 	margin-bottom: .5em;
 }
+aside.sidebar .external li a img.wp{
+	border: 2px solid transparent;
+	width: 150px;
+}
 aside.sidebar .external li a img.lo{
 	border: 2px solid transparent;
 	width: 175px;
@@ -1319,21 +1372,18 @@ aside.sidebar .external li a:focus-within img{
 		margin: 0 0 1em;
 	}
 }
-/* aside#main .translate{
-	font-size: 1.3em;
-} */
 /* Included in criticalTEI CSS, start */
 #google_translate_element{
-	min-height: 55px;
+	min-height: 72px;
 }
 @media only screen and (min-width: 768px){
 	#google_translate_element{
-		min-height: 50px;
+		min-height: 68px;
 	}
 }
 @media only screen and (min-width: 992px){
 	#google_translate_element{
-		min-height: 48px;
+		min-height: 66px;
 	}
 }
 /* Included in criticalTEI CSS, end */
@@ -1508,6 +1558,7 @@ section.archival-text .no-image .content{
 	font-style: italic;
 	text-align: center;
 	color: #65615b;
+	line-height: 1.6em;
 	margin: 0 auto 2em;
 }
 .gallery{
@@ -1847,7 +1898,7 @@ section.archival-text .no-image .content{
 .screenshot .play-button:before{
 	top: 50%;
 	left: 50%;
-	transform: translate3d(-50%, -50%, 0); /* Mistake but works */
+	transform: translate(-50%, -50%); /* Mistake but works */
 }
 .youtube iframe{
 	height: 100%;
@@ -2012,6 +2063,15 @@ ol.primary-historical li{
 	content: '➥ ';
 }
 
+/* The following items are used on the contributors.html page. */
+
+.contributors section{
+	padding-bottom: 1.5em;
+}
+.contributors section:last-of-type{
+	padding-bottom: 0em;
+}
+
 /* The following items are used on the acknowledgments.html page. */
 ul.acknowledgments{
 	padding-left: 0;
@@ -2134,8 +2194,6 @@ ol li ol{
 	padding: 0 0 0 0;
 }
 @media only screen and (min-width: 768px){
-	ol,
-	ul,
 	ol li ol{
 		padding-left: 1.2em;
 	}

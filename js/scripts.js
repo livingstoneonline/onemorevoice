@@ -1,16 +1,28 @@
 // Service Worker
 // Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker
 
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker
+//     .register("/sw.js?=newVers_0001")
+//     .then(serviceWorker => {
+//       serviceWorker.update();
+//       console.log("Service Worker registered: ", serviceWorker);
+//     })
+//     .catch(error => {
+//       console.error("Error registering the Service Worker: ", error);
+//     });
+// }
+
+
+// Unregisters all service workers
+
 if ("serviceWorker" in navigator) {
-	navigator.serviceWorker
-		.register("/sw.js")
-		.then(serviceWorker => {
-			console.log("Service Worker registered: ", serviceWorker);
-		})
-		.catch(error => {
-			console.error("Error registering the Service Worker: ", error);
-		});
-}
+	navigator.serviceWorker.getRegistrations().then(function (registrations) {
+				for (let registration of registrations) {
+					registration.unregister()
+				}
+	})
+};
 
 
 // Overlay
@@ -20,13 +32,44 @@ function openNav() {
 	document.getElementById("nav7").style.display = "block";
 	document.getElementById("nav7").style.visibility = "visible";
 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-}
+};
 
 function closeNav() {
 	document.getElementById("nav7").style.display = "none";
 	document.getElementById("nav7").style.visibility = "hidden";
 	document.getElementsByTagName("html")[0].style.overflowY = "unset";
-}
+};
+
+
+// Trap Focus in Overlay
+// Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
+// Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
+jQuery(document).ready(function () {
+	jQuery('#overlay-last').on('keydown', function (e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+		if (!isTabPressed) {
+			return
+		}
+		if (e.shiftKey) {
+			return
+		} else {
+			jQuery('#nav8').focus();
+			e.preventDefault()
+		}
+			});
+	jQuery('#nav8').on('keydown', function (e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+		if (!isTabPressed) {
+			return
+		}
+		if (e.shiftKey) {
+			jQuery('#overlay-last').focus();
+			e.preventDefault()
+		} else {
+			return
+		}
+	})
+});
 
 
 // Keyboard Navigation for Dropdown Menus
@@ -53,7 +96,7 @@ function handleFocusIn(event){
 		})
 
 	}
-}
+};
 
 function handleKeydown(event){
 	const keyCode = Object.freeze({
@@ -225,17 +268,17 @@ function handleKeydown(event){
 				break;
 	}
 
-}
+};
 
 function getNextElement(items, currentItem){
 	const currentIndex = items.findIndex(x => x == currentItem);
 	return items[Math.min(currentIndex + 1, items.length - 1)];
-}
+};
 
 function getPreviousElement(items, currentItem){
 	const currentIndex = items.findIndex(x => x == currentItem);
 	return items[Math.max(currentIndex - 1, 0)];
-}
+};
 
 
 // Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
@@ -248,7 +291,7 @@ function AddRelNoopener(){
 		for(var i = 0; i < links.length; i++){
 				links[i].setAttribute("rel","noopener");
 		}
-}
+};
 
 
 // Link cache buster: Takes all site links, changes them from relative to absolute links (if relative in the first place; absolute links stay absolute), adds a random string to the end.
@@ -263,7 +306,7 @@ function RandomiseHref(){
 			// links[i].href = links[i].href + "?=" + randomString;
 			links[i].href = links[i].href;
 		}
-}
+};
 
 
 // Adapted from https://stackoverflow.com/a/21718316
@@ -272,10 +315,6 @@ function RandomiseHref(){
 checkUrl();
 			
 function checkUrl () {
-	if (window.location.href.indexOf("test3") > -1) {	
-		document.getElementById("home-tab").setAttribute("class","current");
-	};
-	//Remove the above
 	if(location.pathname == "/" && 
 		location.hash.length <= 1 && 
 		location.search.length <= 1) {

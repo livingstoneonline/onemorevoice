@@ -108,27 +108,45 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-04-27" who="#AW">Coding Review</change>
 			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
 			<change when="2020-12-18" who="#LM">Transcription</change>
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="cdcbc1">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
 
+<!-- 
+.addition.liv_020080_0001{
+	position: relative;
+}
+.rotate.liv_020080_0001{
+	transform: rotate(270deg);
+	-ms-transform: rotate(270deg); /* IE 9 */
+	-moz-transform: rotate(270deg); /* Firefox */
+	-webkit-transform: rotate(270deg); /* Safari and Chrome */
+	-o-transform: rotate(270deg); /* Opera */
+}
+ -->
+
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<pb facs="liv_020080_0001" n="0001"/>
+<lb/><ab rend="gray no-indent" n="addition liv_020080_0001"><add place="inspace" hand="#U" n="grayAdd liv_020080_0001">C129/135</add></ab>
+<lb/><p><space extent="2" unit="words"/><date when="1881-09-06">Sept. 6th. 1881</date>.</p>
+<lb/><p rend="no-indent">Received of <persName>F. W. Chesson Esq</persName> the
+<lb/>sum of Two Pounds.</p>
+<lb/><p rend="no-indent">&#xa3;2.<space extent="2" unit="words"/><space extent="2" unit="chars"/><seg rend="brown" n="stamp liv_020080_0001"><seg rend="small" n="text1 liv_020080_0001"><space extent="3" unit="chars"/><seg rend="underline">WIC</seg></seg> <seg n="text2 liv_020080_0001">6/9/81</seg></seg> 
 
+<persName>WI Craft</persName></p>
 			</div>
 		</body>
 	</text>

@@ -126,7 +126,8 @@ font-family: 'UnifrakturMaguntia', cursive;
 	.rotate .text2.liv_000023_0115,
 	.rotate .note-1.liv_003027_0001,
 	.rotate .text.liv_020011_0004,
-	.rotate .marginalnote.liv_020019_0002{
+	.rotate .marginalnote.liv_020019_0002,
+	.rotate .grayAdd.liv_020080_0001{
 		line-height: unset;
 		float: none;
 		padding: unset;
@@ -1080,6 +1081,45 @@ font-family: 'UnifrakturMaguntia', cursive;
 		position: absolute;
 		bottom: 1em;
 		left: 11.5em;
+}
+.addition.liv_020080_0001{
+	position: relative;
+}
+.grayAdd.liv_020080_0001{
+	transform: rotate(283deg);
+	-ms-transform: rotate(283deg); /* IE 9 */
+	-moz-transform: rotate(283deg); /* Firefox */
+	-webkit-transform: rotate(283deg); /* Safari and Chrome */
+	-o-transform: rotate(283deg); /* Opera */
+	display: inline-block;
+	position: absolute;
+	left: -2.2em;
+}
+.stamp.liv_020080_0001{
+	line-height: 1.2em;
+	border: 2px dotted #7e6a6d;
+	outline: 1px solid #7e6a6d;
+	padding: .6em .3em;
+	display: inline-block;
+}
+.text1.liv_020080_0001{
+	line-height: 1.2em;
+	transform: rotate(25deg);
+	-ms-transform: rotate(25deg); /* IE 9 */
+	-moz-transform: rotate(25deg); /* Firefox */
+	-webkit-transform: rotate(25deg); /* Safari and Chrome */
+	-o-transform: rotate(25deg); /* Opera */
+	display: block;
+}
+.text2.liv_020080_0001{
+	line-height: 1.2em;
+	transform: rotate(25deg);
+	-ms-transform: rotate(25deg); /* IE 9 */
+	-moz-transform: rotate(25deg); /* Firefox */
+	-webkit-transform: rotate(25deg); /* Safari and Chrome */
+	-o-transform: rotate(25deg); /* Opera */
+	font-size: 1.2em;
+	display: block;
 }
 .object.liv_021003_0001{
 	max-width: 319px;

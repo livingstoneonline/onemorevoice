@@ -107,7 +107,7 @@
 
 				<div class="text-container">
 		
-					<div class="sidebar-container" data-include="sidebar-2"></div>
+					<div class="sidebar-container" data-include="sidebar"></div>
 		
 					<div class="page-wrapper">
 						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->

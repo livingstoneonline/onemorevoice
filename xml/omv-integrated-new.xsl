@@ -101,7 +101,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="../../index.html"><img src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="../../index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 
@@ -458,7 +458,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
@@ -473,7 +473,7 @@
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
@@ -725,7 +725,7 @@
 						<hr />
 						<!--<p class="back-button"><a class="art-return" href="/visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

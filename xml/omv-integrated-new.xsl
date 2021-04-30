@@ -68,9 +68,9 @@
 				<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
 				<meta http-equiv="pragma" content="no-cache" />
 				<meta http-equiv="expires" content="0" />
-				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png"/>
-				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png"/>
-				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png"/>
+				<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
+				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
+				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="../../site.webmanifest"/>
 				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="../../css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
@@ -101,7 +101,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="../../index.html"><img src="../../img/logo/OMV-logo-87px.jpg" srcset="../../img/logo/OMV-logo-87px.jpg 87w, ../../img/logo/OMV-logo-78px.jpg 78w, ../../img/logo/OMV-logo-72px.jpg 72w, ../../img/logo/OMV-logo-58px.jpg 58w, ../../img/logo/OMV-logo-39px.jpg 39w, ../../img/logo/OMV-logo-36px.jpg 36w, ../../img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="../../index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="../../site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="../../index.html"><img src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="../../index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="../../site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav-2"></div>
 
@@ -113,7 +113,7 @@
 						<header id="header">
 							<div class="image-wrapper">
 								<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-								<img class="image-border content-holder-1" src="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../../img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../../img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../../img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../../img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../../img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../../img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+								<img class="image-border content-holder-1" src="/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, /img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, /img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, /img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, /img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, /img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, /img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
 						<xsl:apply-templates select="TEI"/>

@@ -108,6 +108,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-04-27" who="#AW">Coding Review</change>
 			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
 			<change when="2020-12-18" who="#LM">Transcription</change>
 		</revisionDesc>
@@ -115,9 +116,9 @@
 
 	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="b7b7ae">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="brown black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -125,10 +126,25 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
-
+<pb facs="liv_020078_0001" n="0001"/>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="2" unit="chars"/><date when="1881-09-05">Sept. 5 - 81</date></p>
+<lb/><ab rend="no-indent gray"><space extent="4" unit="words"/><space extent="2" unit="chars"/><add place="inspace" hand="#U">C129/133</add></ab>
+<lb/><p rend="no-indent"><persName>Mr. Chesson</persName></p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/>Dear Sir,</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="1" unit="chars"/>I enclose receipt 
+<lb/><space extent="1" unit="chars"/>for &#xa3;2 which I am <w>in<seg type="hyphen">-</seg>
+<lb/>formed</w> by <persName>Mrs. Nichols</persName> will
+<lb/>be sent to you for me.</p>
+<lb/><p>Please be Kind enough to
+<lb/>leave it with your housekeeper
+<lb/>or <del>M</del> have it sent to <persName>Mr
+<lb/>Crosher</persName> at <placeName>12 Blue Cross St.</placeName>
+<lb/>as I cannot find time to come
+<lb/>away in the middle of the day.</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>Yrs. truly
+<lb/><space extent="3" unit="words"/><persName>W. I. Craft</persName></p>
+<lb/><p rend="no-indent">P.S. I have written to <persName>Mrs Nichol</persName>
+<lb/>thanking her. Please excuse paper</p>
 			</div>
 		</body>
 	</text>

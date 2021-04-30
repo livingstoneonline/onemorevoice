@@ -103,7 +103,7 @@
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
 				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, https://onemorevoice.org/img/logo/OMV-logo-78px.jpg 78w, https://onemorevoice.org/img/logo/OMV-logo-72px.jpg 72w, https://onemorevoice.org/img/logo/OMV-logo-58px.jpg 58w, https://onemorevoice.org/img/logo/OMV-logo-39px.jpg 39w, https://onemorevoice.org/img/logo/OMV-logo-36px.jpg 36w, https://onemorevoice.org/img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="https://onemorevoice.org/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
-				<div data-include="nav-2"></div>
+				<div data-include="nav"></div>
 
 				<div class="text-container">
 		

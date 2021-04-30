@@ -21,7 +21,7 @@ var offlineFundamentals = [
 	'/common/footer-1.html',
 	'/common/footer-2.html',
 	'/common/nav-1.html',
-	'/common/nav-2.html',
+	'/common/nav.html',
 	'/common/sidebar-1.html',
 	'/common/sidebar-2.html',
 	'/css/critical.css',

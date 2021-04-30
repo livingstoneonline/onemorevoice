@@ -19,7 +19,7 @@ var offlineFundamentals = [
 	'/site.webmanifest',
 	'/favicon.ico',
 	'/common/footer.html',
-	'/common/footer-2.html',
+	'/common/footer.html',
 	'/common/nav.html',
 	'/common/nav.html',
 	'/common/sidebar-1.html',

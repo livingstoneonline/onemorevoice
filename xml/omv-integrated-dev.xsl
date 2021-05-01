@@ -101,7 +101,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, https://onemorevoice.org/img/logo/OMV-logo-78px.jpg 78w, https://onemorevoice.org/img/logo/OMV-logo-72px.jpg 72w, https://onemorevoice.org/img/logo/OMV-logo-58px.jpg 58w, https://onemorevoice.org/img/logo/OMV-logo-39px.jpg 39w, https://onemorevoice.org/img/logo/OMV-logo-36px.jpg 36w, https://onemorevoice.org/img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="https://onemorevoice.org/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg 87w, https://onemorevoice.org/img/logo/OMV-logo-78px.jpg 78w, https://onemorevoice.org/img/logo/OMV-logo-72px.jpg 72w, https://onemorevoice.org/img/logo/OMV-logo-58px.jpg 58w, https://onemorevoice.org/img/logo/OMV-logo-39px.jpg 39w, https://onemorevoice.org/img/logo/OMV-logo-36px.jpg 36w, https://onemorevoice.org/img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="https://onemorevoice.org/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav"></div>
 
@@ -113,7 +113,7 @@
 						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 						<header id="header">
 							<div class="image-wrapper">
-								<img class="image-border content-holder-1" src="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+								<img class="image-border content-holder-1" src="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
 						<xsl:apply-templates select="TEI"/>
@@ -143,7 +143,7 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
 					// Includes HTML snippets
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='https://onemorevoice.org/common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<script src="https://onemorevoice.org/js/manuscript-transform.js"></script>
@@ -157,7 +157,7 @@
 					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-180")}</script>
 				</xsl:if>
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
-				<script src="https://onemorevoice.org//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 				<script>
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.

@@ -1465,6 +1465,9 @@ section.archival-text p{
 	padding: 12px;
 	overflow: hidden;
 }
+section.archival-text p:last-of-type{
+	border-bottom: none;
+}
 section.archival-text h5{
 	font-size: 1.15em;
 	color: white;

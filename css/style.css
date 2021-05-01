@@ -1295,6 +1295,9 @@ aside.sidebar .popular li{
 	margin-bottom: 2em;
 	display: block;
 }
+aside.sidebar .popular li:last-child{
+	margin-bottom: 0;
+}
 aside.sidebar .external li{
 	text-decoration: none;
 	padding: .2em;

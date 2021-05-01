@@ -695,6 +695,16 @@ font-family: 'UnifrakturMaguntia', cursive;
 	color: #204A79;
 	font-family: 'UnifrakturMaguntia', cursive;
 }
+@media only screen and (min-width: 768px){
+	.narrowed.liv_020033 div{
+		margin: 0 auto;
+		max-width: 525px;
+	}
+}
+.text .body .div .narrowed.liv_020033 .pb-title:first-of-type{
+	padding-top: 1em;
+	border-top: 1px dotted #858585;
+}
 /* start liv_020050 */
 /* main */
 .liv_020050{

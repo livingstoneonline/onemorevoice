@@ -68,21 +68,21 @@
 				<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
 				<meta http-equiv="pragma" content="no-cache" />
 				<meta http-equiv="expires" content="0" />
-				<link rel="apple-touch-icon" sizes="180x180" href="../../img/icons/apple-touch-icon-180x180.png"/>
-				<link rel="icon" type="image/png" sizes="32x32" href="../../img/icons/favicon-32x32.png"/>
-				<link rel="icon" type="image/png" sizes="16x16" href="../../img/icons/favicon-16x16.png"/>
-				<link rel="manifest" href="../../site.webmanifest"/>
-				<link rel="preload" as="style" href="../../css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="../../css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="../../css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
+				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
+				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
+				<link rel="manifest" href="/site.webmanifest"/>
+				<link rel="preload" as="style" href="/css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="preload" as="style" href="../../css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+					<link rel="preload" as="style" href="/css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<link rel="preload" as="script" href="../../js/scripts.js?=newVers_0003"/>
+				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0003"/>
 				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link rel="stylesheet" type="text/css" href="../../css/critical.css?=newVers_0004"/>
+				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0004"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
 					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
@@ -101,19 +101,19 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="../../index.html"><img src="../../img/logo/OMV-logo-87px.jpg" srcset="../../img/logo/OMV-logo-87px.jpg 87w, ../../img/logo/OMV-logo-78px.jpg 78w, ../../img/logo/OMV-logo-72px.jpg 72w, ../../img/logo/OMV-logo-58px.jpg 58w, ../../img/logo/OMV-logo-39px.jpg 39w, ../../img/logo/OMV-logo-36px.jpg 36w, ../../img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="../../index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="../../site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
-				<div data-include="nav-2"></div>
+				<div data-include="nav"></div>
 
 				<div class="text-container">
 		
-					<div class="sidebar-container" data-include="sidebar-2"></div>
+					<div class="sidebar-container" data-include="sidebar"></div>
 		
 					<div class="page-wrapper">
 						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 						<header id="header">
 							<div class="image-wrapper">
-								<img class="image-border content-holder-1" src="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="../../img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, ../../img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, ../../img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, ../../img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, ../../img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, ../../img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, ../../img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+								<img class="image-border content-holder-1" src="/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, /img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, /img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, /img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, /img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, /img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, /img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
 						<xsl:apply-templates select="TEI"/>
@@ -121,35 +121,35 @@
 		
 				</div>
 			
-				<div data-include="footer-2"></div>
+				<div data-include="footer"></div>
 				
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="../../css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
+					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
 				</script>
 				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="../../css/style.css?=newVers_0004"/>
-				<link rel="stylesheet" type="text/css" href="../../css/styleTEI.css?=newVers_0001"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0004"/>
+				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0001"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="stylesheet" type="text/css" href="../../css/styleTEI-add.css?=newVers_0001"/>
+					<link rel="stylesheet" type="text/css" href="/css/styleTEI-add.css?=newVers_0001"/>
 				</xsl:if>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
 					// Includes HTML snippets
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='../../common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
-					<script src="../../js/manuscript-transform.js"></script>
+					<script src="/js/manuscript-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
-					<script src="../../js/journal-transform.js"></script>
+					<script src="/js/journal-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
 					<!-- Image Rotation -->
@@ -161,10 +161,10 @@
 				<script>
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
-					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="../../js/scripts.js?="+randomString;document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="../../js/scripts.js?=newVers_0003";document.body.appendChild(element)});
+					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0003";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="../../js/scripts.js?=newVers_0003"></script> -->
+				<!-- <script src="/js/scripts.js?=newVers_0003"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -441,8 +441,8 @@
 				<xsl:when test="//encodingDesc/projectDesc/p">
 					<xsl:copy-of select="$custom-note"/>
 				</xsl:when>
-				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="../../coding_guidelines.html">coding guidelines</a>. However, users are encouraged to consult the original document if possible.</xsl:when>
-				<xsl:otherwise>This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="../../coding_guidelines.html">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/coding_guidelines.html">coding guidelines</a>. However, users are encouraged to consult the original document if possible.</xsl:when>
+				<xsl:otherwise>This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/coding_guidelines.html">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:choose>
@@ -458,7 +458,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
@@ -473,7 +473,7 @@
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
@@ -667,13 +667,13 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<!--<p class="back-button"><a class="trans-return" href="../../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
+						<!--<p class="back-button"><a class="trans-return" href="/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="../../html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link1">
 								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -695,13 +695,13 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr/>
-						<!--<p class="back-button"><a class="trans-return" href="../../texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
+						<!--<p class="back-button"><a class="trans-return" href="/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="../../html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source-link1">
 								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -723,15 +723,15 @@
 				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
 					<div id="closing-credits">
 						<hr />
-						<!--<p class="back-button"><a class="art-return" href="../../visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
+						<!--<p class="back-button"><a class="art-return" href="/visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="../../index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="../../html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 						<xsl:if test="//publicationStmt/ref">
 							<xsl:variable name="source">
 								<xsl:for-each select="//publicationStmt/ref">

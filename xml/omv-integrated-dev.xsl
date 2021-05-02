@@ -927,7 +927,8 @@
 	<xsl:template match="corr|expan|reg"/>
 
 	<xsl:template match="date">
-		<time><xsl:apply-templates/></time>
+		<!--<time><xsl:apply-templates/></time>-->
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="del">

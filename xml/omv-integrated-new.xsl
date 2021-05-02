@@ -842,14 +842,14 @@
 
 	<xsl:template match="lb">
 			<br/>
-		<xsl:variable name="num">
+		<!--<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
 		<xsl:if test="number($num) mod 5 =0">
 			<span class="linenumber">
 				<xsl:value-of select="$num"/>
 			</span>
-		</xsl:if>
+		</xsl:if>-->
 	</xsl:template>
 
 	<!-- Alphabetical list of elements. Alphabetized by last element in path *or* first element among options. -->

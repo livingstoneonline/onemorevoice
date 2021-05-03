@@ -377,7 +377,7 @@ button::-moz-focus-inner{
 }
 #rotate-button{
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: .8em;
 	background-color: #E3E3E3;
 	border: 1px solid #858585;
@@ -410,6 +410,13 @@ button::-moz-focus-inner{
 }
 #rotate-button.click-color:hover{
 	background-color: #858585;
+}
+.rotate-90{
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-moz-transform: rotate(90deg); /* Firefox */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	-o-transform: rotate(90deg); /* Opera */
 }
 .rotate-180{
 	transform: rotate(180deg);
@@ -944,6 +951,9 @@ u{
 	.object .graphic{
 		pointer-events: unset;
 	}
+}
+.object.figure{
+	clear: both;
 }
 @media only screen and (min-width: 480px){
 	.object.vertical a img{

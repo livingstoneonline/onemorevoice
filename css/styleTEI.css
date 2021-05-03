@@ -105,8 +105,13 @@ also see 2.9 for manuscript colors
 }
 .manuscript .TEI{
 	padding: 2em 0 3em 0;
-	margin: .5em 0 1.5em 0;
+	margin: 0 1em;
 	border: 2px solid gainsboro;
+}
+@media only screen and (min-width: 768px){
+	.manuscript .TEI{
+		margin: 0 auto;
+	}
 }
 .manuscript .ms-container{
 	display: inline-block;
@@ -128,7 +133,7 @@ also see 2.9 for manuscript colors
 	display: block;
 	text-align: justify;
 	padding: 1em 1em 2em 1em;
-	margin: .5em auto 2em auto;
+	margin: 0 auto;
 }
 @media only screen and (min-width: 768px){
 	.journal .TEI{
@@ -194,7 +199,7 @@ also see 2.9 for manuscript colors
 @media only screen and (min-width: 320px){
 	.manuscript-switches,
 	.journal-switches{
-		padding: .5em 0;
+		padding: .5em 0 1em;
 		display: block;
 		visibility: visible;
 	}

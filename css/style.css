@@ -256,6 +256,12 @@ main.journal#journal-div{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: .9em;
+	white-space: nowrap;
+}
+@media only screen and (min-width: 480px){
+	.return-top{
+		margin-right: .5em;
+	}
 }
 [id]:target{
 	margin-top: -70px;
@@ -336,7 +342,9 @@ img{
 	color: #e6e6e6;
 	font-weight: 300;
 	width: 100%;
+	height: auto;
 }
+/* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
 	width: calc(100% - 2px);
 }
@@ -1483,15 +1491,8 @@ section.archival-text h5{
 	justify-content: space-between;
 }
 section.archival-text .return-top{
-	font-size: .9em;
 	color: white;
-	white-space: nowrap;
-	margin-top: .05em;
-}
-@media only screen and (min-width: 480px){
-	section.archival-text .return-top{
-		margin-right: .5em;
-	}
+	margin-top: .15em;
 }
 section.archival-text a.return-top:hover,
 section.archival-text a.return-top:focus{
@@ -1594,14 +1595,8 @@ section.archival-text .no-image .content{
 	margin-top: 0;
 }
 .gallery h4 .return-top{
-	font-size: .9em;
 	color: white;
-	white-space: nowrap;
-}
-@media only screen and (min-width: 480px){
-	.gallery h4 .return-top{
-		margin-right: 0.5em;
-	}
+	margin-top: .15em;
 }
 .gallery h4 a.return-top:focus,
 .gallery h4 a.return-top:hover{
@@ -1702,16 +1697,6 @@ section.archival-text .no-image .content{
 	display: flex;
 	justify-content: space-between;
 }
-.published-author .return-top{
-	font-size: .9em;
-	white-space: nowrap;
-	margin-top: .15em;
-}
-@media only screen and (min-width: 480px){
-	.published-author .return-top{
-		margin-right: .5em;
-	}
-}
 .published-author a.return-top:hover,
 .published-author a.return-top:focus{
 	color: #a83c37;
@@ -1769,14 +1754,7 @@ section.archival-text .no-image .content{
 	margin-top: 0;
 }
 #films h4 .return-top{
-	font-size: .9em;
 	color: white;
-	white-space: nowrap;
-}
-@media only screen and (min-width: 480px){
-	#films h4 .return-top{
-		margin-right: 0.5em;
-	}
 }
 #films h4 a.return-top:focus,
 #films h4 a.return-top:hover{

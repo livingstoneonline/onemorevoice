@@ -386,7 +386,7 @@ button::-moz-focus-inner{
 	-moz-border-radius: 12px;
 	float: left;
 	padding: .5em 1em;
-	margin: 1.5em 0;
+	margin: 1.5em 2px;
 	display: none;
 	visibility: hidden;
 }
@@ -402,7 +402,7 @@ button::-moz-focus-inner{
 
 }
 #rotate-button:focus{
-	border: 2px #204A79 solid;
+	outline: 2px #204A79 solid;
 }
 #rotate-button.click-color{
 	color: whitesmoke;

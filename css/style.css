@@ -1242,7 +1242,11 @@ footer p .site-detail:last-child::after{
 li.section > ul > li > a{
 	padding: 3px;
 }
-
+.fat-footer a:hover,
+.fat-footer a:focus{
+	color: #a83c37;
+	background-color: #E3E3E3;
+}
 
 /* 1.9. Sidebar */
 

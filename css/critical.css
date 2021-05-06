@@ -189,12 +189,13 @@ main.manuscript#manuscript-div{
 	}
 }
 img{
-  color: #e6e6e6;
-  font-weight: 300;
+	font-weight: 300;
+	color: #e6e6e6;
   width: 100%;
 }
 header img{
-	width: calc(100% - 2px);
+  background: #e6e6e6;
+  box-sizing: border-box;
 }
 a img{
   border: 3px transparent solid;

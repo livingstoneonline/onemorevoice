@@ -340,14 +340,15 @@ h4{
 
 /* 1.4. Main Images and Related */
 img{
-	color: #e6e6e6;
 	font-weight: 300;
+	color: #e6e6e6;
 	width: 100%;
 	height: auto;
 }
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
-	width: calc(100% - 2px);
+	background: #e6e6e6;
+	box-sizing: border-box;
 }
 a img{
 	border: 3px transparent solid;

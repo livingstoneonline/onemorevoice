@@ -194,7 +194,7 @@ img{
   width: 100%;
 }
 header img{
-	width: calc(100% - 2px);
+  box-sizing: border-box;
 }
 a img{
   border: 3px transparent solid;

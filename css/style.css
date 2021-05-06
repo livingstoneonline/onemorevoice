@@ -342,12 +342,12 @@ h4{
 img{
 	font-weight: 300;
 	color: #e6e6e6;
-	background: #e6e6e6;
 	width: 100%;
 	height: auto;
 }
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
+	background: #e6e6e6;
 	box-sizing: border-box;
 }
 a img{
@@ -1389,9 +1389,6 @@ aside.sidebar .external li a:focus-within img{
 	.translate{
 		margin: 0 0 1em;
 	}
-}
-.translate img{
-	background: transparent;
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{

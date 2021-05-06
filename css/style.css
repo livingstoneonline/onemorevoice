@@ -347,7 +347,7 @@ img{
 }
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
-	width: calc(100% - 2px);
+	box-sizing: border-box;
 }
 a img{
 	border: 3px transparent solid;

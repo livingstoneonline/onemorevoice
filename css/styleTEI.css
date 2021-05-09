@@ -947,7 +947,7 @@ u{
 	border-bottom: 1px #858585 dotted;
 }
 .object .figure a img{
-	width: calc(100% - 6px);
+	box-sizing: border-box;
 }
 .object .graphic{
 	pointer-events: none;
@@ -963,7 +963,8 @@ u{
 }
 @media only screen and (min-width: 480px){
 	.object.vertical a img{
-		width: calc(70% - 6px);
+		width: 70%;
+		box-sizing: border-box;
 	}
 }
 .object.gray img{

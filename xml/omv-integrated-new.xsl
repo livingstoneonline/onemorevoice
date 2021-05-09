@@ -805,13 +805,13 @@
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
-			<xsl:copy-of select="jc:addFE(.)"/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</div>
 	</xsl:template>
 
 	<xsl:template match="div">
 		<div class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:copy-of select="jc:addFE(.)"/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</div>
 	</xsl:template>
 
@@ -820,18 +820,18 @@
 			<xsl:when test="@type='verse'">
 				<div class="poem-wrapper">
 					<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-						<xsl:copy-of select="jc:addFE(.)"/>
+						<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 					</div>
 				</div>
 			</xsl:when>
 			<xsl:when test="@type='stanza'">
 				<p class="{concat('poetic-section', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:copy-of select="jc:addFE(.)"/>
+					<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 				</p>
 			</xsl:when>
 			<xsl:otherwise>
 				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:copy-of select="jc:addFE(.)"/>
+					<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 				</div>
 			</xsl:otherwise>	
 		</xsl:choose>
@@ -1062,12 +1062,12 @@
 		</span>-->
 		<xsl:if test="@type='ordered'">
 			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
-				<xsl:copy-of select="jc:addFE(.)"/>
+				<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 			</ol>
 		</xsl:if>
 		<xsl:if test="@type='unordered'">
 			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
-				<xsl:copy-of select="jc:addFE(.)"/>
+				<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 			</ul>
 		</xsl:if>
 	</xsl:template>
@@ -1284,13 +1284,13 @@
 	<!-- Beginning of elements that go with table -->
 	<xsl:template match="table">
 		<table class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:copy-of select="jc:addFE(.)"/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</table>
 	</xsl:template>
 
 	<xsl:template match="row">
 		<tr class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:copy-of select="jc:addFE(.)"/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</tr>
 	</xsl:template>
 
@@ -1340,31 +1340,31 @@
 				or contains($rend, 'bold') or contains($rend, 'italic')">
 				<xsl:choose>
 					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic') and contains($rend, 'sup')">
-						<xsl:attribute name="aria-label">Bold, italic, and superscript</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Bold, italic, and superscript</xsl:attribute>-->
 						<strong><em><sup><xsl:apply-templates select="$current/node()"/></sup></em></strong>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'bold') and contains($rend, 'sup')">
-						<xsl:attribute name="aria-label">Bold and superscript</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Bold and superscript</xsl:attribute>-->
 						<strong><sup><xsl:apply-templates select="$current/node()"/></sup></strong>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'italic') and contains($rend, 'sup')">
-						<xsl:attribute name="aria-label">Italic and superscript</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Italic and superscript</xsl:attribute>-->
 						<em><sup><xsl:apply-templates select="$current/node()"/></sup></em>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic')">
-						<xsl:attribute name="aria-label">Bold and italic</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Bold and italic</xsl:attribute>-->
 						<strong><em><xsl:apply-templates select="$current/node()"/></em></strong>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'sup')">
-						<xsl:attribute name="aria-label">Superscript</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Superscript</xsl:attribute>-->
 						<sup><xsl:apply-templates select="$current/node()"/></sup>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'bold')">
-						<xsl:attribute name="aria-label">Bold</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Bold</xsl:attribute>-->
 						<strong><xsl:apply-templates select="$current/node()"/></strong>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'italic')">
-						<xsl:attribute name="aria-label">Italic</xsl:attribute>
+						<!--<xsl:attribute name="aria-label">Italic</xsl:attribute>-->
 						<em><xsl:apply-templates select="$current/node()"/></em>
 					</xsl:when>
 				</xsl:choose>

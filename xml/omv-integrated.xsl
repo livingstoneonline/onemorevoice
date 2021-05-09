@@ -1332,39 +1332,19 @@
 	<!-- function added by James Cummings 2021-04 -->
 	<!-- jc:addFormattingElements => jc:addFE -->
 	
-	<xsl:function name="jc:addFE" as="item()*" >
+	<xsl:function name="jc:addFE" as="item()*">
 		<xsl:param name="current" as="node()"></xsl:param>
 		<xsl:variable name="rend" select="$current/@rend"/>
 		<xsl:choose>
-			<xsl:when test="contains($rend, 'sup')
-				or contains($rend, 'bold') or contains($rend, 'italic')">
+			<xsl:when test="contains($rend, 'bold') or contains($rend, 'italic')">
 				<xsl:choose>
-					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic') and contains($rend, 'sup')">
-						<!--<xsl:attribute name="aria-label">Bold, italic, and superscript</xsl:attribute>-->
-						<strong><em><sup><xsl:apply-templates select="$current/node()"/></sup></em></strong>
-					</xsl:when>
-					<xsl:when test="contains($rend, 'bold') and contains($rend, 'sup')">
-						<!--<xsl:attribute name="aria-label">Bold and superscript</xsl:attribute>-->
-						<strong><sup><xsl:apply-templates select="$current/node()"/></sup></strong>
-					</xsl:when>
-					<xsl:when test="contains($rend, 'italic') and contains($rend, 'sup')">
-						<!--<xsl:attribute name="aria-label">Italic and superscript</xsl:attribute>-->
-						<em><sup><xsl:apply-templates select="$current/node()"/></sup></em>
-					</xsl:when>
 					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic')">
-						<!--<xsl:attribute name="aria-label">Bold and italic</xsl:attribute>-->
 						<strong><em><xsl:apply-templates select="$current/node()"/></em></strong>
 					</xsl:when>
-					<xsl:when test="contains($rend, 'sup')">
-						<!--<xsl:attribute name="aria-label">Superscript</xsl:attribute>-->
-						<sup><xsl:apply-templates select="$current/node()"/></sup>
-					</xsl:when>
 					<xsl:when test="contains($rend, 'bold')">
-						<!--<xsl:attribute name="aria-label">Bold</xsl:attribute>-->
 						<strong><xsl:apply-templates select="$current/node()"/></strong>
 					</xsl:when>
 					<xsl:when test="contains($rend, 'italic')">
-						<!--<xsl:attribute name="aria-label">Italic</xsl:attribute>-->
 						<em><xsl:apply-templates select="$current/node()"/></em>
 					</xsl:when>
 				</xsl:choose>
@@ -1376,8 +1356,42 @@
 	</xsl:function>
 
 
-
 	<!-- ******************* -->
+
+	<!-- Removed from <xsl:function name="jc:addFE" as="item()*"> -->
+	<!--<xsl:when test="contains($rend, 'sup')
+		or contains($rend, 'bold') or contains($rend, 'italic')">
+		<xsl:choose>
+			<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic') and contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Bold, italic, and superscript</xsl:attribute>
+				<strong><em><sup><xsl:apply-templates select="$current/node()"/></sup></em></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'bold') and contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Bold and superscript</xsl:attribute>
+				<strong><sup><xsl:apply-templates select="$current/node()"/></sup></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'italic') and contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Italic and superscript</xsl:attribute>
+				<em><sup><xsl:apply-templates select="$current/node()"/></sup></em>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic')">
+				<xsl:attribute name="aria-label">Bold and italic</xsl:attribute>
+				<strong><em><xsl:apply-templates select="$current/node()"/></em></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Superscript</xsl:attribute>
+				<sup><xsl:apply-templates select="$current/node()"/></sup>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'bold')">
+				<xsl:attribute name="aria-label">Bold</xsl:attribute>
+				<strong><xsl:apply-templates select="$current/node()"/></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'italic')">
+				<xsl:attribute name="aria-label">Italic</xsl:attribute>
+				<em><xsl:apply-templates select="$current/node()"/></em>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:when>-->
 
 	<!-- Removed from <xsl:template match="TEI">-->
 	<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->

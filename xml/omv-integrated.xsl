@@ -110,9 +110,8 @@
 					<div class="sidebar-container" data-include="sidebar"></div>
 		
 					<div class="page-wrapper">
-						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-						<header id="header">
-							<div class="image-wrapper">
+						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ --><header id="header">
+							<div class="image-wrapper">		
 								<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, /img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, /img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, /img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, /img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, /img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, /img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
@@ -791,10 +790,10 @@
 					<xsl:value-of select="$class"/>
 				</xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</span>
 	</xsl:template>
-
+	
 	<!-- Make rend classes -->
 	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
@@ -802,17 +801,17 @@
 			<xsl:value-of select="translate(., '-', '')"/>
 		</xsl:attribute>
 	</xsl:template>
-
+	
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</div>
 	</xsl:template>
 
 	<xsl:template match="div">
 		<div class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</div>
 	</xsl:template>
 
@@ -821,18 +820,18 @@
 			<xsl:when test="@type='verse'">
 				<div class="poem-wrapper">
 					<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-						<xsl:apply-templates/>
+						<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 					</div>
 				</div>
 			</xsl:when>
 			<xsl:when test="@type='stanza'">
 				<p class="{concat('poetic-section', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 				</p>
 			</xsl:when>
 			<xsl:otherwise>
 				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 				</div>
 			</xsl:otherwise>	
 		</xsl:choose>
@@ -840,13 +839,13 @@
 
 	<xsl:template match="l">
 		<seg class="{concat('poetic-line', ' ', @type, ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</seg>
 	</xsl:template>
 
 	<xsl:template match="lb">
 			<br/>
-	<!--<xsl:variable name="num">
+		<!--<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
 		<xsl:if test="number($num) mod 5 =0">
@@ -860,25 +859,25 @@
 
 	<xsl:template match="ab|p">
 		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</p>
 	</xsl:template>
 
 	<xsl:template match="abbr">
-		<abbr><xsl:apply-templates/></abbr>
+		<abbr><xsl:copy-of select="jc:addFE(.)"/></abbr>
 	</xsl:template>
 
 	<xsl:template match="add">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></ins>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:copy-of select="jc:addFE(.)"/></ins>
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></ins>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
 		<br/>
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<!-- app: show first rdg, offer alternatives in title -->
@@ -986,7 +985,7 @@
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				<!--<br/><br/><br/>-->
-				<span class="{concat(name(), ' ', @rend, ' ', @n)}" id="{$rotate-id}">
+				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
 					</a>
@@ -1010,12 +1009,12 @@
 
 	<!-- An undefined foreign word. -->
 	<xsl:template match="foreign[not(term[@xml:lang])]">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="fw|fw[@type='catch']">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</span>
 	</xsl:template>
 
@@ -1036,12 +1035,12 @@
 		<xsl:choose>
 			<xsl:when test="@type='subheading'">
 				<h4 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/>
 				</h4>
 			</xsl:when>
 			<xsl:otherwise>
 				<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/>
 				</h3>
 			</xsl:otherwise>
 		</xsl:choose>
@@ -1053,22 +1052,22 @@
 
 	<xsl:template match="item">
 		<li class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</li>
 	</xsl:template>
 
 	<xsl:template match="list">
 		<!--<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</span>-->
 		<xsl:if test="@type='ordered'">
 			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
-				<xsl:apply-templates/>
+				<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 			</ol>
 		</xsl:if>
 		<xsl:if test="@type='unordered'">
 			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
-				<xsl:apply-templates/>
+				<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 			</ul>
 		</xsl:if>
 	</xsl:template>
@@ -1115,15 +1114,15 @@
 	</xsl:template>
 	
 	<xsl:template match="note">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="orig">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="orgName">
-		<span class="orgName"><xsl:attribute name="title">A formally-named group or organization.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="orgName"><xsl:attribute name="title">A formally-named group or organization.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="text/body/div[1]/pb[1]|text/front/div[1]/pb[1]|text/back/div[1]/pb[1]" priority="10">
@@ -1172,7 +1171,7 @@
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
-				<xsl:apply-templates/>
+				<xsl:copy-of select="jc:addFE(.)"/>
 			</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
@@ -1180,24 +1179,24 @@
 					<span class="pb-title">
 						<xsl:value-of select="@n"/>
 					</span>
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/>
 				</div>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="persName">
-		<span class="persName"><xsl:attribute name="title">A formally-named person.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="persName"><xsl:attribute name="title">A formally-named person.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 <!-- placeNames -->
 
 	<xsl:template match="placeName">
-		<span class="placeName"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="placeName"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="geogName">
-		<span class="geogName"><xsl:attribute name="title">A formally-named geographical entity.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="geogName"><xsl:attribute name="title">A formally-named geographical entity.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<!--<xsl:template match="bloc">
@@ -1209,19 +1208,19 @@
 	</xsl:template>-->
 
 	<xsl:template match="region">
-		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="bloc">
-		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually a continent.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually a continent.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="settlement">
-		<span class="settlement"><xsl:attribute name="title">A settlement, such as a state, city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="settlement"><xsl:attribute name="title">A settlement, such as a state, city, town, or village.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="country">
-		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 <!-- end placeNames -->
@@ -1241,11 +1240,11 @@
 	</xsl:template>
 
 	<xsl:template match="rdg">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="seg">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="space[@extent][@unit]" priority="10">
@@ -1274,38 +1273,38 @@
 	</xsl:template>
 
 	<xsl:template match="subst">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="supplied">			
-		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
+		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
 		</span>
 	</xsl:template>
 	
 	<!-- Beginning of elements that go with table -->
 	<xsl:template match="table">
 		<table class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</table>
 	</xsl:template>
 
 	<xsl:template match="row">
 		<tr class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</tr>
 	</xsl:template>
 
 	<xsl:template match="cell">
-		<td class="{concat(name(), ' ', @rend, ' ', @n)}"><xsl:apply-templates/></td>
+		<td class="{concat(name(), ' ', @rend, ' ', @n)}"><xsl:copy-of select="jc:addFE(.)"/></td>
 	</xsl:template>
 	<!-- Non-breaking space &#x00A0; -->
 
 	<xsl:template match="term[@type]" priority="1">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="term[@type='collective']" priority="10">
-		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="unclear">
@@ -1327,8 +1326,56 @@
 	</xsl:template>
 
 	<xsl:template match="w">
-		<span class="word"><xsl:apply-templates/></span>
+		<span class="word"><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
+
+	<!-- function added by James Cummings 2021-04 -->
+	<!-- jc:addFormattingElements => jc:addFE -->
+	
+	<xsl:function name="jc:addFE" as="item()*" >
+		<xsl:param name="current" as="node()"></xsl:param>
+		<xsl:variable name="rend" select="$current/@rend"/>
+		<xsl:choose>
+			<xsl:when test="contains($rend, 'sup')
+				or contains($rend, 'bold') or contains($rend, 'italic')">
+				<xsl:choose>
+					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic') and contains($rend, 'sup')">
+						<!--<xsl:attribute name="aria-label">Bold, italic, and superscript</xsl:attribute>-->
+						<strong><em><sup><xsl:apply-templates select="$current/node()"/></sup></em></strong>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'bold') and contains($rend, 'sup')">
+						<!--<xsl:attribute name="aria-label">Bold and superscript</xsl:attribute>-->
+						<strong><sup><xsl:apply-templates select="$current/node()"/></sup></strong>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'italic') and contains($rend, 'sup')">
+						<!--<xsl:attribute name="aria-label">Italic and superscript</xsl:attribute>-->
+						<em><sup><xsl:apply-templates select="$current/node()"/></sup></em>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic')">
+						<!--<xsl:attribute name="aria-label">Bold and italic</xsl:attribute>-->
+						<strong><em><xsl:apply-templates select="$current/node()"/></em></strong>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'sup')">
+						<!--<xsl:attribute name="aria-label">Superscript</xsl:attribute>-->
+						<sup><xsl:apply-templates select="$current/node()"/></sup>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'bold')">
+						<!--<xsl:attribute name="aria-label">Bold</xsl:attribute>-->
+						<strong><xsl:apply-templates select="$current/node()"/></strong>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'italic')">
+						<!--<xsl:attribute name="aria-label">Italic</xsl:attribute>-->
+						<em><xsl:apply-templates select="$current/node()"/></em>
+					</xsl:when>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="$current/node()"/>		
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+
+
 
 	<!-- ******************* -->
 

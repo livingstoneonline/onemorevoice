@@ -795,8 +795,6 @@
 		</span>
 	</xsl:template>
 
-	<!-- need: bold, italic, sub, sup -->
-
 	<!-- Make rend classes -->
 	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
@@ -848,7 +846,7 @@
 
 	<xsl:template match="lb">
 			<br/>
-	<!-- <xsl:variable name="num">
+	<!--<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
 		<xsl:if test="number($num) mod 5 =0">

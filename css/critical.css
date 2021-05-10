@@ -2,12 +2,16 @@ html{
   font: 16px Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   color: #191716;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
+	/* overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto; */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
 body{
@@ -215,75 +219,6 @@ a img{
   }
   .caption73{
       padding: 0 13.5%;
-  }
-}
-.content-holder-1,
-.content-holder-2,
-.content-holder-3,
-.content-holder-3a,
-.content-holder-4,
-.content-holder-5{
-  background: #e6e6e6;
-  display: inline-block;
-}
-@media screen and (min-width: 320px){
-  .content-holder-1{
-      min-height: 74px;
-  }
-  .content-holder-2{
-      min-height: 202px;
-  }
-  .content-holder-3{
-      min-height: 230px;
-  }
-  .content-holder-3a{
-      min-height: 315px;
-  }
-  .content-holder-4{
-      min-height: 255px;
-  }
-  .content-holder-5{
-      min-height: 377px;
-  }
-}
-@media screen and (min-width: 480px){
-  .content-holder-1{
-      min-height: 114px;
-  }
-  .content-holder-2{
-      min-height: 305px;
-  }
-  .content-holder-3{
-      min-height: 347px;
-  }
-  .content-holder-3a{
-      min-height: 345px;
-  }
-  .content-holder-4{
-      min-height: 365px;
-  }
-  .content-holder-5{
-      min-height: 396px;
-  }
-}
-@media screen and (min-width: 768px){
-  .content-holder-1{
-      min-height: 169px;
-  }
-  .content-holder-2{
-      min-height: 448px;
-  }
-  .content-holder-3{
-      min-height: 509px;
-  }
-  .content-holder-3a{
-      min-height: 505px;
-  }
-  .content-holder-4{
-      min-height: 564px;
-  }
-  .content-holder-5{
-      min-height: 581px;
   }
 }
 .image-wrapper{
@@ -510,9 +445,7 @@ a:visited{
   }
 }
 #nav4 .current{
-  text-decoration: overline;
-  text-decoration-color: #204A79;
-  text-decoration-thickness: 4px;
+  border-bottom: 3px solid #204a79;
 }
 #nav4 li{
   font-size: 1.05em;

@@ -2,12 +2,16 @@ html{
   font: 16px Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   color: #191716;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
+	/* overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto; */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
 body{

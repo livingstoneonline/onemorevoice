@@ -31,6 +31,7 @@ Table of Contents
 1.16. Essays
 1.17. Formatting
 1.18. Lists and Lines
+1.19. Scroll to Top Button
 
 Appendix
 Alternative [id]:target Coding 
@@ -2153,6 +2154,69 @@ hr{
 .title-hr{
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+
+/* 1.19. Scroll to Top Button */
+
+/* Scroll to top button */
+/* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#topButton{
+	cursor: pointer;
+	font-size: .95em;
+	font-weight: 600;
+	color: #fff;
+	background-color: #525252;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	outline: none;
+	margin-left: 33%;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 50%;
+	bottom: 47px;
+	transform: translate(-50%, 0);
+	z-index: 99;
+	display: none;
+	visibility: hidden;
+  }
+@media only screen and (min-width: 480px){
+	#topButton{
+		margin-left: 42%;
+		bottom: 14px;
+	}
+}
+@media only screen and (min-width: 768px){
+	#topButton{
+		margin-left: 340px;
+		bottom: 352px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#topButton{
+		margin-left: 244px;
+		bottom: 384px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	#topButton{
+		margin-left: 280px;
+	}
+}
+  #topButton:hover,
+  #topButton:focus{
+	color: #525252;
+	background-color: #fff;
+	border: 2px solid #525252;
+}
+#topButton:active{
+	color: #fff;
+	background-color: #525252;
+	border: 2px solid transparent;
 }
 
 

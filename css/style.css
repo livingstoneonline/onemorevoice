@@ -1427,7 +1427,7 @@ section.archival-text{
 section.archival-text:last-of-type{
 	margin: 2.5em 0 1em 0;
 }
-section.archival-text h5,
+section.archival-text h4,
 section.archival-text p{
 	border-bottom: 1px solid #858585;
 	margin: 0;
@@ -1437,8 +1437,10 @@ section.archival-text p{
 section.archival-text p:last-of-type{
 	border-bottom: none;
 }
-section.archival-text h5{
+section.archival-text h4{
 	font-size: 1.15em;
+	font-weight: 600;
+	font-style: normal;
 	color: white;
 	background: #204A79;
 	border-radius: 8px 8px 0 0;

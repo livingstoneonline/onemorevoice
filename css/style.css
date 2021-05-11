@@ -358,6 +358,7 @@ img{
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
 	background: #e6e6e6;
+	border: 1px solid #e3e3e3;
 	box-sizing: border-box;
 }
 a img{

@@ -78,7 +78,7 @@
 					<hr class="title-hr" />
 
 					<section aria-labelledby="summary">
-						<h3 id="summary">Overview &nbsp;<a href="#menu-sections" class="return-top">top</a></h3>
+						<h3 id="summary">Overview</h3>
 
 						<p>This section collects visual materials relevant to <em>One More Voice</em> and so complements the items found on the pages for <a href="/texts.html">critically-edited archival texts</a>, <a href="/books.html">book-length published works</a>, and <a href="/motion_pictures.html">motions pictures</a>. The section includes <a href="#images">images</a> (photographs and illustrations) of the creators featured on the site, a selection of relevant <a href="#manuscripts">manuscripts</a>, and a small set of <a href="#creative">creative works</a> (paintings, photographs, other material objects), including works by contemporaneous non-European artists. Creator images are arranged alphabetically by subject, while manuscripts and creatives works are organized by creator. For each item, the page provides a thumbnail image that links to the full documentary record for the given item and to a larger-resolution, uncropped version of the item image.</p>
 					</section>
@@ -89,7 +89,7 @@
 
 					<div class="gallery">
 						<section aria-labelledby="images">
-							<h4>Creator Images <a href="#menu-sections" class="return-top">top</a></h4>
+							<h4>Creator Images</h4>
 						
 							<figure class="gallery-item" id="liv_021056">
 								<a href="/html/transcriptions/liv_021056_ART.html">
@@ -797,7 +797,7 @@
 						<br/>
 
 						<section aria-labelledby="manuscripts">
-							<h4><span id="manuscripts">Manuscripts</span> <a href="#menu-sections" class="return-top">top</a></h4>
+							<h4><span id="manuscripts">Manuscripts</span></h4>
 
 							<figure class="gallery-item" id="liv_021029">
 								<a href="/html/transcriptions/liv_021029_ART.html">
@@ -875,7 +875,7 @@
 						<br />
 
 						<section aria-labelledby="creative">
-							<h4><span id="creative">Creative Works</span> <a href="#menu-sections" class="return-top">top</a></h4>
+							<h4><span id="creative">Creative Works</span></h4>
 
 							<figure class="gallery-item" id="liv_021069">
 								<a href="/html/transcriptions/liv_021069_ART.html">
@@ -952,7 +952,7 @@
 
 						<!--
 						<section aria-labelledby="cultural">
-							<h4><span id="cultural">Relevant Cultural Objects</span> <a href="#menu-sections" class="return-top">top</a></h4>
+							<h4><span id="cultural">Relevant Cultural Objects</span></h4>
 
 							<figure class="gallery-item" id="liv_021068">
 								<a href="/html/transcriptions/liv_021068_ART.html">
@@ -985,7 +985,7 @@
 
 						<!--
 						<section aria-labelledby="miscellaneous">
-							<h4><span id="miscellaneous">Miscellaneous</span> <a href="#menu-sections" class="return-top">top</a></h4>					
+							<h4><span id="miscellaneous">Miscellaneous</span></h4>					
 
 							<figure class="gallery-item" id="liv_021033">
 								<a href="/html/transcriptions/liv_021033_ART.html">
@@ -1025,6 +1025,8 @@
 		</div>
 	
 		<div data-include="footer"></div>
+
+		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
 		<script>
 			// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
@@ -1040,6 +1042,11 @@
 			// Includes HTML snippets
 			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
 		</script>
+		<script>
+			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+			//Scroll to top button
+			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>600||document.documentElement.scrollTop>600){mybutton.style.display="block";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
+		</script>		
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<script>

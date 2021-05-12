@@ -31,6 +31,7 @@ Table of Contents
 1.16. Essays
 1.17. Formatting
 1.18. Lists and Lines
+1.19. Scroll to Top Button
 
 Appendix
 Alternative [id]:target Coding 
@@ -262,7 +263,7 @@ main.journal#journal-div{
 	margin-left: -1.2em;
 	display: inline-block;
 }
-.return-top{
+/* .return-top{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: .9em;
@@ -272,7 +273,7 @@ main.journal#journal-div{
 	.return-top{
 		margin-right: .5em;
 	}
-}
+} */
 [id]:target{
 	margin-top: -70px;
 	border-top: 70px solid transparent;
@@ -1449,7 +1450,7 @@ section.archival-text h4{
 	display: flex;
 	justify-content: space-between;
 }
-section.archival-text .return-top{
+/* section.archival-text .return-top{
 	color: white;
 	line-height: 1.875em;
 }
@@ -1457,7 +1458,7 @@ section.archival-text a.return-top:hover,
 section.archival-text a.return-top:focus{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}
+} */
 section.archival-text p:last-child{
 	border-bottom: none;
 }
@@ -1553,7 +1554,7 @@ section.archival-text .no-image .content{
 .gallery section:first-child h4:first-child{
 	margin-top: 0;
 }
-.gallery h4 .return-top{
+/* .gallery h4 .return-top{
 	color: white;
 	line-height: 1.875em;
 }
@@ -1561,7 +1562,7 @@ section.archival-text .no-image .content{
 .gallery h4 a.return-top:hover{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}
+} */
 .gallery-item{
 	text-align: center;
 	vertical-align: top;
@@ -1656,11 +1657,11 @@ section.archival-text .no-image .content{
 	display: flex;
 	justify-content: space-between;
 }
-.published-author a.return-top:hover,
+/* .published-author a.return-top:hover,
 .published-author a.return-top:focus{
 	color: #a83c37;
 	background-color: whitesmoke;
-}
+} */
 .author-details{
 	border-top: none;
 	border-bottom: none;
@@ -1712,14 +1713,14 @@ section.archival-text .no-image .content{
 #films section:first-child h4:first-child{
 	margin-top: 0;
 }
-#films h4 .return-top{
+/* #films h4 .return-top{
 	color: white;
 }
 #films h4 a.return-top:focus,
 #films h4 a.return-top:hover{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}
+} */
 #films h5{
 	font-size: 1.05em;
 	background-color: #e3e3e3;
@@ -2153,6 +2154,69 @@ hr{
 .title-hr{
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+
+/* 1.19. Scroll to Top Button */
+
+/* Scroll to top button */
+/* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#topButton{
+	cursor: pointer;
+	font-size: .95em;
+	font-weight: 600;
+	color: #fff;
+	background-color: #525252;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	outline: none;
+	margin-left: 33%;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 50%;
+	bottom: 47px;
+	transform: translate(-50%, 0);
+	z-index: 99;
+	display: none;
+	visibility: hidden;
+  }
+@media only screen and (min-width: 480px){
+	#topButton{
+		margin-left: 42%;
+		bottom: 14px;
+	}
+}
+@media only screen and (min-width: 768px){
+	#topButton{
+		margin-left: 340px;
+		bottom: 352px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#topButton{
+		margin-left: 244px;
+		bottom: 384px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	#topButton{
+		margin-left: 280px;
+	}
+}
+  #topButton:hover,
+  #topButton:focus{
+	color: #525252;
+	background-color: #fff;
+	border: 2px solid #525252;
+}
+#topButton:active{
+	color: #fff;
+	background-color: #525252;
+	border: 2px solid transparent;
 }
 
 

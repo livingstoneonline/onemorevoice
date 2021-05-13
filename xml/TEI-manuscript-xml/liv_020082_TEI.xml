@@ -115,7 +115,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add pinyon"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body n="a9a59a">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
@@ -129,9 +129,9 @@
 <!-- @n = page number only, e.g., 0001 -->
 <pb facs="liv_020082_0001" n="0001"/>
 <lb/><ab rend="gray"><space extent="10" unit="words"/><add place="inspace" hand="#U">C129/137</add></ab>
-<lb/><p rend="no-indent"><space extent="1" unit="words"/><orgName>The Railways &amp; Metropolitan Omnibus Company Limited</orgName>,
-<lb/><space extent="7" unit="words"/><placeName>18 Queen Victoria Street, <hi rend="small">E. C.</hi></placeName>
-<lb/><space extent="6" unit="words"/><space extent="3" unit="chars"/><settlement>London</settlement>, <date when="1881-12-23">Dec<hi rend="above underline">r</hi> 23<hi rend="above underline">rd</hi> 1881</date>.</p>
+<lb/><p rend="no-indent" n="address liv_020082_0001"><space extent="1" unit="chars"/><orgName>The Railways &amp; Metropolitan Omnibus Company Limited</orgName>,
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><placeName>18 Queen Victoria Street, <hi rend="small">E. C.</hi></placeName>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><settlement><seg rend="large">L</seg>ondon</settlement>, <date when="1881-12-23"><seg n="date liv_020082_0001">Dec<hi rend="above underline">r</hi> 23<hi rend="above underline">rd</hi></seg> 1881</date>.</p>
 <lb/><p rend="no-indent"><persName>F.W. Chesson Esq<hi rend="above underline">r</hi></persName>
 <lb/><space extent="3" unit="words"/><space extent="1" unit="chars"/><placeName>17 King Wm St.
 <lb/><space extent="6" unit="words"/><space extent="2" unit="chars"/>Strand W.C.</placeName></p>

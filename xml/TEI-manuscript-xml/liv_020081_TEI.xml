@@ -117,9 +117,9 @@
 
 	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="b8b8b1">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,9 +127,22 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<pb facs="liv_020081_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="5" unit="words"/><add place="inspace" hand="#U">C129/136</add></ab>
+<lb/><p rend="no-indent"><seg rend="above"><seg rend="large">&#8453;</seg></seg> <persName>Mr. Crocker</persName>.</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><placeName>12 B.C. St. Haymarket
+<lb/><space extent="7" unit="words"/>S.W.</placeName>
+<lb/><space extent="5" unit="words"/><date when="1881-09-09">Sept. 9th. 1881</date>.</p>
+<lb/><p rend ="no-indent">Sir,</p>
+<lb/><p rend ="no-indent"><space extent="1" unit="words"/>Yr postal received &amp; in reply
+<lb/>beg to state that I have some
+<lb/>days since forwarded you a
+<lb/>legal receipt for the M.O. you
+<lb/>sent me. <choice><sic>if</sic><corr>If</corr></choice> you have not
+<lb/>received it I will send another</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>Yrs. respectfully
+<lb/><space extent="3" unit="words"/><space extent="2" unit="chars"/><hi rend="underline"><persName>W.I. Craft</persName></hi></p>
+<lb/><p rend="no-indent"><persName>F.W. Chesson Esq.</persName></p>
 
 			</div>
 		</body>

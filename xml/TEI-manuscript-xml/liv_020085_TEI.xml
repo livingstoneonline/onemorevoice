@@ -115,11 +115,11 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add unifrakturM pinyon"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="bcb6a4">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,9 +127,43 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<pb facs="liv_020085_0001" n="0001"/>
+<lb/><p rend="no-indent" n="address1 liv_020085_0001"><orgName>Railways &amp; Metropolitan Omnibus Company Limited.</orgName></p>
+<lb/><p rend="no-indent" n="address2 liv_020085_0001"><space extent="1" unit="words"/><space extent="1" unit="chars"/><placeName>16, Devonshire Chambers
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/>Bishopsgate Street Without,</placeName>
+<lb/><space extent="2" unit="words"/><settlement>London</settlement>, <hi rend="small">E.C.</hi> <date when="1882-05-03"><seg rend="italic" n="date liv_020085_0001">May 3<hi rend="sup underline">rd</hi></seg> 18<seg rend="italic" n="date liv_020085_0001">82</seg></date></p>
+<lb/><p rend="no-indent"><persName>F.W. Chesson Esq.</persName>
+<lb/><space extent="2" unit="words"/><space extent="1" unit="chars"/><placeName>17 King Wm. St.</placeName>
+<lb/><space extent="4" unit="words"/><space extent="2" unit="chars"/><settlement>Strand</settlement> <hi rend="small">W.C.</hi></p>
+<lb/><p rend="no-indent">Dear Sir,</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>I called to see you
+<lb/><date when="1882-05-02">yesterday</date> morning but learned
+<lb/>that you do not arrive until
+<lb/>12 O clock. <space extent="1" unit="chars"/>Will you be
+<lb/>Kind enough to grant me the
+<lb/>loan of &#xa3;2 as it is now
+<lb/><del><gap extent="1" unit="words" agent="illegible"/></del><add place="over-text">very</add> close upon a year since
+<lb/>I obtained that contribution from
+
+	<pb facs="liv_020085_0002" n="0002"/>
+<lb/>you. If you will grant my
+<lb/>much needed request I
+<lb/>will promise faithfully not to
+<lb/>molest you again; at least for
+<lb/>the space of a year. Please
+<lb/>be good Enough to oblige me as
+<lb/>I can assure you I must
+<lb/>make up <del>a bit</del> &#xa3;5 by <date when="1882-05-03">Saturday</date>
+<lb/>if possible or I may get into
+<lb/> trouble. <space extent="1" unit="chars"/>I will return it at
+<lb/>the Earliest possible moment.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>Trusting to hear from you
+<lb/>soon,</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="1" unit="chars"/>I am
+<lb/><space extent="2" unit="words"/><space extent="4" unit="chars"/>Yr obt. servant
+<lb/><space extent="4" unit="words"/><persName>W.I. Craft.</persName>
+<lb/><space extent="4" unit="words"/><space extent="3" unit="chars"/><seg n="container liv_020085_0002"><seg n="horizontal-circle liv_020085_0002">∞</seg></seg></p>
+
 
 			</div>
 		</body>

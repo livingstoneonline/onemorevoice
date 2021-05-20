@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020086">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -117,9 +117,9 @@
 
 	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="beb7a7">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="brown black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,9 +127,55 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+	<pb facs="liv_020086_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="4" unit="words"/><space extent="3" unit="chars"/><add place="inspace" hand="#U">C129/139</add></ab>
+<lb/><p rend="no-indent"><seg rend="sub"><seg rend="large">&#x2105;</seg></seg> <space extent="3" unit="words"/><space extent="2" unit="chars"/><placeName>35 Charlotte St.</placeName>
+<lb/><space extent="1" unit="chars"/><persName>Mr. Le Jeune</persName> <space extent="1" unit="words"/><space extent="2" unit="chars"/><placeName>Fitzroy Square</placeName>,
+<lb/><space extent="7" unit="words"/><space extent="1" unit="chars"/>W.C.
+<lb/><space extent="5" unit="words"/><space extent="3" unit="chars"/><date when="1882-08-12">August 12/82</date></p>
+<lb/><p rend="no-indent"><persName>F.W. Chesson Esq<hi rend="sup underline">r</hi>.</persName>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><placeName>17 King William St.</placeName>
+<lb/><space extent="5" unit="words"/><space extent="1" unit="chars"/><placeName>Strand</placeName></p>
+<lb/><p rend="no-indent">Dear Sir,</p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="3" unit="chars"/>You will see, as above,
+<lb/>that I have changed my address,
+<lb/>caused by my being actuated by a
+<lb/>desire to economize to a minimum,
+<lb/>and I am now ensconced in
+<lb/>cheaper lodgings. I am still
+<lb/>occupied, <del>I</del><add place="over-text">and</add> am expecting
+<lb/>an increase of salary very shortly,
+
+	<pb facs="liv_020086_0002" n="0002"/>
+<lb/>when (D.V.) I shall be all right.
+<lb/>Did you write to <persName>Mr. Noble</persName> the late
+<lb/><persName>Mr. Harper Twelvetree</persName>'s son-in-
+<lb/>law, concerning me<choice><sic>.</sic><corr>?</corr></choice> If you have
+<lb/>not done so, you need not bother
+<lb/>yourself as I am determined
+<lb/>to hold out where I am. I have
+<lb/>been quite unwell of late,
+<lb/>suffering from my old
+<lb/>complaint, rheumatism, superinduced
+<lb/>by an attack of Yellow Fever
+<lb/>I contracted in <date when="1876">1876</date> in <country>America.</country>
+<lb/>I wrote to <persName>R. N. Fowler Esq.<hi rend="sup">m.p.</hi></persName> as
+<lb/>I understood he was acquainted
+<lb/>with my parents, and stated
+<lb/>that I should be glad if he
+
+	<pb facs="liv_020086_0003" n="0003"/>
+<lb/>would assist me with the advance of a few &#xa3;'s
+<lb/>and I do not think I shall be doing amiss by
+<lb/>enclosing <hi rend="sup">his reply</hi> <del><gap extent="1" unit="words" agent="illegible"/></del><add place="over-text">in</add> yours. <space extent="1" unit="chars"/>I know that you will
+<lb/>speak a <hi rend="underline">good</hi> <hi rend="underline">word</hi> for me, and you can rest
+<lb/>assured that I shall be very grateful and
+<lb/>will not annoy you again. Trusting your
+<lb/>family &amp; self are well &amp; to have a line from
+<lb/>you before I answer <persName>Mr. Fowler</persName> instructing me
+<lb/>what course to pursue. I am.</p>
+<lb/><p rend ="no-indent"><space extent="6" unit="words"/><space extent="2" unit="chars"/>Yr. obt &amp; grateful servant,</p>
+<lb/><p rend ="no-indent"><space extent="8" unit="words"/><space extent="3" unit="chars"/><persName>W.I. Craft.</persName></p>
 
 			</div>
 		</body>

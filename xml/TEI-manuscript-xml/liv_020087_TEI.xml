@@ -115,11 +115,11 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add pinyon"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="bab5ab">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="brown black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,10 +127,30 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
+	<pb facs="liv_020087_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="6" unit="words"/><add place="inspace" hand="#U">C129/140</add></ab>
+<lb/><p rend="no-indent" n="address liv_020087_0001"><space extent="1" unit="words"/><placeName>50, Cornhill</placeName>, <settlement>London, <hi rend="small">E.C.</hi></settlement>
+<lb/><space extent="1" unit="words"/><space extent="2" unit="chars"/><seg n="date liv_020087_0001" rend="italic"><space extent="4" unit="chars"/><date when="1882-08-11">Aug 11</date><space extent="1" unit="words"/><space extent="3" unit="chars"/></seg><date when="1882-08-11">18<seg n="date liv_020087_0001" rend="italic">82</seg></date></p>
 <lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<lb/>
+<lb/><p rend="no-indent">Dear Sir</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>I would advise you to call on <persName>Mr Chesson</persName>
+<lb/>at <placeName>77 (or 27) King William St</placeName> <placeName>Charring Cross</placeName>
+<lb/>Sec<hi rend="sup">y</hi> to <orgName>Aborigines Protection <choice><abbr>Soc</abbr><expan>Society</expan></choice></orgName> of whom I should like
+<lb/>to consult in the matter</p>
+<lb/>
+<lb/>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="2" unit="chars"/>Yrs very trly</p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="2" unit="chars"/>
 
+<seg n="container liv_020087_0001">
+<persName>RN <seg rend="small">Fowler</seg></persName>
+<seg n="signature liv_020087_0001"><space extent="4" unit="words"/></seg>
+</seg>
+</p>
+<lb/>
+<lb/>
+<lb/><ab rend="no-indent"><persName>Mr. Craft <seg rend="large">I</seg></persName></ab>
 			</div>
 		</body>
 	</text>

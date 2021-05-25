@@ -256,7 +256,11 @@ main.journal#journal-div{
 /* toc and toc-title used for page menus */
 .toc{
 	font-size: .9em;
-	padding: 1em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.toc{
+		padding: 1em 0 0 0;
+	}
 }
 .toc-title{
 	list-style-type: none;
@@ -342,7 +346,10 @@ h4{
 	font-style: italic;
 	font-weight: 300;
 }
-/* adds padding for h4 labelled subsections in essays */
+/* adds padding for h3 labelled subsections in essays */
+.essay #link-1{
+	margin-top: 2em;
+}
 .subsection{
 	padding-top: 1.5em;
 }

@@ -110,16 +110,17 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-05-26" who="#AW">Coding Review</change>
 			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
 			<change when="2020-12-18" who="#LM">Transcription</change>
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add unifrakturM pinyon"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="bab59f">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="brown black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,10 +128,49 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+	<pb facs="liv_020091_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="7" unit="words"/><space extent="1" unit="chars"/><add place="inspace" hand="#U">C156/139</add></ab>
+<lb/><ab rend="gray black"><space extent="5" unit="words"/><add place="inspace" hand="#U"><persName>W. I. Craft.</persName></add></ab>
+<lb/><p rend="no-indent black" n="address1 liv_020091_0001"><orgName>Railways &amp; Metropolitan Omnibus Company Limited.</orgName></p>
+<lb/><p rend="no-indent " n="address2 liv_020091_0001"><space extent="1" unit="words"/><space extent="1" unit="chars"/><placeName>16, Devonshire Chambers
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/>Bishopsgate Street Without,</placeName>
+<lb/><space extent="2" unit="words"/><settlement><seg rend="large">L</seg>ondon</settlement>, <hi rend="small">E.C.</hi> <date when="1882-05-03"><seg rend="italic" n="date liv_020091_0001">May 3<hi rend="sup underline">rd</hi></seg> 18<seg rend="italic" n="date liv_020091_0001">82</seg></date></p>
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/><persName>Mrs. E.P. Nichols,</persName></p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="2" unit="chars"/>Kind Friend,</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="3" unit="chars"/>I received yr.
+<lb/>kind note <date when="1882-05-03">today</date> for which
+<lb/>please accept my thanks.
+<lb/>I had not the slightest idea
+<lb/>of having stated that your
+<lb/>letter had created any ill-feeling
+<lb/>as I fully know that if it
+<lb/>had not been for your generosity
+<lb/>I might now have been languishing
+<lb/>in the Workhouse or some prison.
+<lb/>Dear Friend you cannot know
+<lb/>nor imagine that flow of gratitude
 
+	<pb facs="liv_020091_0002" n="0002"/>
+<lb/>that fills my heart when I
+<lb/>think of your goodness, but if
+<lb/>you will only recall your statement
+<lb/>about the last assistance, I
+<lb/>will be eternally grateful. I am
+<lb/>almost on the "ragged edge of
+<lb/>despair" for "a season" but
+<lb/>will eventually get off. I 
+<lb/>am going back to <country>America</country> in the
+<lb/>Autumn for sure. If you
+<lb/>accede to what I asked you
+<lb/>for &#xa3;3 I shall be all right.
+<lb/>Please remember this is the
+<lb/>last time I shall ever annoy
+<lb/>you in this world. Long life &amp;
+<lb/>good health. I am,</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="2" unit="chars"/>Yours Gratefully</p>
+<lb/><p rend="no-indent black">P.S.<space extent="4" unit="words"/> <space extent="1" unit="chars"/><persName>W.I. Craft.</persName></p>
+<lb/><p rend="no-indent black"><hi rend="small">I feel confident you will reconsider
+<lb/><space extent="3" unit="chars"/>your <del>last</del> "ultimatum" <seg rend="small">Hoping to hear from you soon.</seg></hi></p>
 			</div>
 		</body>
 	</text>

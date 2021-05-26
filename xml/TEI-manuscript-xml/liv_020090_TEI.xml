@@ -115,11 +115,11 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add unifrakturM pinyon"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="a9a38c">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,10 +127,43 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+	<pb facs="liv_020090_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="7" unit="words"/><space extent="2" unit="chars"/><add place="inspace" hand="#U">C156/138</add></ab>
 
+<lb/><p rend="no-indent" n="address1 liv_020090_0001"><orgName>Railways &amp; Metropolitan Omnibus Company Limited.</orgName></p>
+<lb/><p rend="no-indent" n="address2 liv_020090_0001"><space extent="1" unit="words"/><space extent="1" unit="chars"/><placeName>16, Devonshire Chambers
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/>Bishopsgate Street Without,</placeName>
+<lb/><space extent="2" unit="words"/><settlement><seg rend="large">L</seg>ondon</settlement>, <hi rend="small">E.C.</hi> <date when="1882-04-24"><seg rend="italic" n="date liv_020090_0001">April 24<hi rend="sup">th</hi></seg> 18<seg rend="italic" n="date liv_020090_0001">82</seg></date></p>
+
+<lb/><p rend="no-indent"><persName>Mrs. E. P. Nichols,</persName></p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="2" unit="chars"/>Dear Friend,</p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="0" unit="chars"/>I have taken
+<lb/>the liberty of dropping you a line
+<lb/>to ask you if you will grant me one
+<lb/>more favor and that is the sum of
+<lb/>&#xa3;3. and if ever I apply to you
+<lb/>again for assistance I trust you
+<lb/>will not answer my application.
+<lb/>I should have gone to <country>America</country>
+<lb/>before this but my brother wrote
+<lb/>me telling me it was advisable
+<lb/>for me to stay here awhile yet
+
+	<pb facs="liv_020090_0002" n="0002"/>
+<lb/>on &#8448;. of some circumstances over
+<lb/>which I had no control.
+<lb/>I trust his letter to you was
+<lb/>satisfactory.</p>
+<lb/><p rend="no-indent">Hoping your health remains good
+<lb/>&amp; to hear from you soon, also
+<lb/>craving your forgiveness for
+<lb/>annoying you so much.</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/>I am,</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="3" unit="chars"/>Yr. obt. servant,</p>
+<lb/><p rend="no-indent"><space extent="6" unit="words"/><persName>W.I. Craft.</persName></p>
+<lb/><p rend="no-indent"><seg rend="sub"><seg rend="large"><seg rend="sub">P.</seg><seg rend="small">S.</seg></seg></seg>
+<lb/><space extent="2" unit="chars"/>I purpose leaving <settlement>London</settlement> in the summer or Autumn
+<lb/>for good.</p>
 			</div>
 		</body>
 	</text>

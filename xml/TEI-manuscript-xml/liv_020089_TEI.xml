@@ -10,7 +10,7 @@
 			<titleStmt>
 				<title>Letter to Elizabeth Pease Nichol</title>
 				<!-- Title without date -->
-				<title type="alternative">Letter to Elizabeth Pease Nichol, 22 December 1881</title>
+				<title type="alternative">Letter to Elizabeth Pease Nichol, 23 December 1881</title>
 				<!-- Title, date -->
 				<author>Craft, William Ivens, 1855-1926</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -88,7 +88,7 @@
 					<author xml:id="WIC">Craft, William Ivens, 1855-1926</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
-					<date type="composition" when="1881-12-22">22 December 1881</date>
+					<date type="composition" when="1881-12-23">23 December 1881</date>
 					<!-- See item for composition place; remove if not given --> 
 					<placeName type="compositionPlace">The Railways &amp; Metropolitan Omnibus Company Limited, 18, Queen Victoria Street, E.C. London</placeName>
 				</bibl>
@@ -110,16 +110,17 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-05-26" who="#AW">Coding Review</change>
 			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
 			<change when="2020-12-18" who="#LM">Transcription</change>
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add pinyon"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="b7b4a8">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -127,10 +128,40 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+	<pb facs="liv_020089_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="10" unit="words"/><space extent="6" unit="chars"/><add place="inspace" hand="#U">C156/137</add></ab>
+<lb/><p rend="no-indent brown black" n="address liv_020089_0001"><space extent="3" unit="chars"/><orgName>The Railways &amp; Metropolitan Omnibus Company Limited</orgName>,
+<lb/><space extent="4" unit="words"/><space extent="1" unit="chars"/><placeName>18, Queen Victoria Street, <hi rend="small">E.C.</hi></placeName>
+<lb/><space extent="4" unit="words"/><settlement><seg rend="large">L</seg>ondon,</settlement> <date when="1881-12-22"><date when="1881-12-23"><seg n="date liv_020089_0001" rend="italic black">Dec<hi rend="sup">r</hi>. 2<del>2</del><add place="over-text" rend="gray">3</add><hi rend="sup double-underline">nd</hi></seg> 188<seg n="date liv_020089_0001" rend="italic black">1</seg></date></date></p>
+<lb/><p rend="no-indent"><persName>Mrs E.P. Nichols,</persName></p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="2" unit="chars"/>Kind Friend,</p>
+<lb/><p rend="no-indent"><space extent="6" unit="words"/><space extent="1" unit="chars"/>I wrote to you some little time ago
+<lb/>but of course I did not expect an answer as you informed
+<lb/>me that writing was considerable trouble to you. I am sure
+<lb/>I wish you many a "<hi rend="sup">Merry</hi> <del>happy</del> Christmas" and a "Happy New Year" &amp;
+<lb/>that God's blessings will be showered down upon you. I
+<lb/>think that the note I forwarded you promising to pay the
+<lb/>money you loaned me does not come due until <date when="1882-01-15">Jany. 15th.</date>
+<lb/>I have been compelled to pawn my overcoat since I wrote
+<lb/>you last but everything will be all right soon as I have
+<lb/>been promised an increase of salary at the beginning of
+<lb/>the New Year. If you have read the papers published here you
+<lb/>have doubtless noticed the advertisement of the <orgName>Haverly
+<lb/>Minstrels</orgName> from <country>America</country><supplied>.</supplied> <space extent="1" unit="chars"/>I think they will be in <settlement>Glasgow</settlement>
+<lb/>soon, they had quite a successful time of it here.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/>If you could conveniently renew my note for three months
+<lb/>longer I think I shall be able to pay you all by the time
 
+	<pb facs="liv_020089_0002" n="0002"/>
+<lb/>it has expired if not I shall do my best to let you have some by
+<lb/>the time <del>this</del><add place="over-text">that</add> <hi rend="below">^</hi> <hi rend="sup">one</hi> falls due. I have lived <hi rend="underline">very</hi> economically of late
+<lb/>and am striving to do the best I can on my 12p however
+<lb/>you can rest assured that I shall never bother you again
+<lb/>for any further sums. <space extent="1" unit="chars"/>I send you a small Christmas
+<lb/>Card. Hoping to hear from you &amp; wishing you good
+<lb/>health. <space extent="1" unit="chars"/>I remain,</p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="1" unit="chars"/>Yours Faithfully,</p>
+<lb/><p rend="no-indent"><space extent="8" unit="words"/><persName>W.I. Craft.</persName></p>
 			</div>
 		</body>
 	</text>

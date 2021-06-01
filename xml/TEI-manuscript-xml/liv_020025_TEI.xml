@@ -108,7 +108,9 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-06-01" who="#AW">Coding Review</change>
 			<change when="2021-05-21" who="#HB">Encoding and Proofing</change>
+			<change when="2021-05-14" who="#JM">Transcription</change>
 			<change when="2021-05-03" who="#AW">Set up file</change>
 		</revisionDesc>
 	</teiHeader>
@@ -230,15 +232,15 @@
 <lb/>a hundred fold - May we all meet before 
 <lb/>before the throne of God at last with all the children</p>
 
-<!--  -->
-
-<!-- Details of the letter/postage here - not sure if keep as interrupted on the page, or put after letter content? HB -->
 <lb/><ab rend="no-indent" n="block1 liv_020025_0004"><seg rend="small"><date from="1838" to="1839">1838/1839</date> N<hi rend="sup underline">o</hi> 4 &#8212;&#8212;&#8212;&#8212;&#8212; p. 51</seg>
 <lb/><seg rend="black"><space extent="1" unit="words"/><space extent="2" unit="chars"/><settlement><persName>King <choice><sic>Williams</sic><corr>William's</corr></choice></persName> Town</settlement>
 <lb/><space extent="3" unit="words"/><date when="1838-09-01">September 1/<choice><abbr>38</abbr><expan>1838</expan></choice></date>
 <lb/><space extent="2" unit="words"/><persName>Jan Tzatzoe</persName></seg>
 <lb/><space extent="4" unit="words"/><seg n="seal1 liv_020025_0004"></seg>
 <lb/><space extent="2" unit="words"/><seg rend="gray black">16-12-2</seg> <space extent="1" unit="chars"/><seg n="seal2 liv_020025_0004"></seg></ab>
+
+<!-- Seal at border left -->
+<!-- Stamp above address-->
 
 <lb/><ab rend="no-indent" n="container liv_020025_0004"><seg n="strike1 liv_020025_0004"></seg><seg n="strike2 liv_020025_0004"></seg><seg n="block2 liv_020025_0004"><seg n="seal3 liv_020025_0004"></seg><space extent="2" unit="words"/><space extent="2" unit="chars"/><persName><choice><abbr>Rev<hi rend="sup">d</hi></abbr><expan>Reverend</expan></choice> William <unclear cert="high">Ellis</unclear></persName> <!-- I don't think this is how we do it but without the ab/cb sections I'm not sure so just did seg for now - let me know how to fix. HB -->
 <lb/><space extent="3" unit="words"/>Mission House
@@ -250,8 +252,6 @@
 <lb/><space extent="1" unit="words"/><del><settlement><unclear>Sichun</unclear> Town</settlement></del></seg></ab>
 
 <lb/><ab rend="no-indent" n="block1 liv_020025_0004"><space extent="1" unit="words"/>Rec<hi rend="sup underline">d</hi> <date when="1838-11-22"><choice><abbr>Nov</abbr><expan>November</expan></choice> 22/<choice><abbr>38</abbr><expan>1838</expan></choice></date></ab>
-
-<!--  -->
 
 <lb/><p rend="no-indent">of God out of every country &amp; tongue. My love
 <lb/>to all our sisters and Brothers in <country>England</country></p>

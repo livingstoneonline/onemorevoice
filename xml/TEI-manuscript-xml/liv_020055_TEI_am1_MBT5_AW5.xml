@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <!-- https://livingstoneonline.github.io/LEAP-XSLT/ -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020055">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
@@ -125,13 +125,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-<!--  
-.item.liv_020055{
-	margin: 0 2em;	
-}
--->
-
-	<text>
+	<text n="styleTEI-add">
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body n="b2b7b8">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
@@ -144,25 +138,6 @@
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
 <pb facs="liv_020055_0001" n="0001"/>
-
-<!--
-/* add "item liv_020055"s to body */
- 
-.item.liv_020055{
-	margin: -1em;
-}
-.wrapper1.liv_020055_0001{
-}
-.block-1.liv_020055_0001{
-	float: left;
-}
-.block-2.liv_020055_0001{ 
-	float: left;
-}
-.block-3.liv_020055_0001{
-	display: inline-block;
-}
--->
 
 	<div n="wrapper1 liv_020055_0001">
 <!--left region-->
@@ -188,7 +163,7 @@
 <lb/><p rend="no-indent red large"><add place="inline" hand="#U1"><placeName>Bonny Mi&#7838;ion</placeName></add></p>
 <lb/><p rend="no-indent"><space extent="3" unit="words"/><add place="inline" hand="#U1"><unclear><placeName>Small Office</placeName></unclear></add></p>
 <lb/><p rend="no-indent"><space extent="1" unit="words"/><placeName>Mission House</placeName></p>
-<lb/><p rend="no-indent"><space extent="2" unit="words"/><settlement>Bonny</settlement> <choice><abbr>Feb.</abbr><expan>February</expan></choice> 27<hi rend="sup underline">th</hi>. 1878.</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><settlement>Bonny</settlement> <date when="1867-02-27"><choice><abbr>Feb.</abbr><expan>February</expan></choice> 27<hi rend="sup underline">th</hi>. 1867.</date></p>
 		</div>
 
 	<div>
@@ -197,31 +172,6 @@
 <lb/><p><space extent="3" unit="words"/><space extent="2" unit="chars"/>According to promise, I have looked around
 <lb/>and now am able to report from personal observation as follows.</p>
 	</div>
-
-<!-- 
-.marginal1.liv_020055_0001{
-    border-left: 1px #902D27 solid;
-    margin-left: -1em;
-    padding-left: 1em;
-}
-.marginal2.liv_020055_0001{
-	border-left: 1px #3d4245 solid;
-	border-radius: 4em 0 0 0;
-	margin-left: -1.5em;
-    padding-left: 1.5em;
-	position: relative;
-}
-.ednote.liv_020055_0001{
-	position: absolute;
-	left: -1.5em;
-	font-size: 1.3em;
-	transform: rotate(344deg) !important;
-	-ms-transform:rotate(344deg) !important; /* IE 9 */
-	-moz-transform:rotate(344deg) !important; /* Firefox */
-	-webkit-transform:rotate(344deg) !important; /* Safari and Chrome */
-	-o-transform:rotate(344deg) !important; /* Opera */
-}
--->
 
 	<div n="marginal1 liv_020055_0001">
 <p>I have observed evident tokens of a silent, but mighty
@@ -258,16 +208,7 @@
 <fw rend="center">(1)</fw>
 	</div>
 
-<!-- 
-.marginal1.liv_020055_0002{
-	border-right: 1px #902D27 solid;
-	margin-right: 1.2em;
-}
-.marginal2.liv_020055_0002{
-	border-right: 1px #3d4245 solid;
-	margin-right: .7em;
-}
- -->
+
 <!-- Investigate wavy line later -->
 
 <pb facs="liv_020055_0002" n="0002"/>
@@ -314,42 +255,6 @@
 <fw rend="center">(<add place="inline" rend="gray">3</add>2)</fw>
 	</div>
 	
-<!-- 
-.wrapper2.liv_020055_0003{
-	border-left: 1px #902D27 solid;
-	margin-left: -.5em;
-	padding-left: .5em;
-}
-.box1.liv_020055_0003{
-    border-left: 1px #3d4245 solid;
-    border-bottom: 1px #3d4245 solid;
-    margin-left: -.25em;
-    padding-left: .25em;
-	margin-bottom: .35em;
-}
-.box2.liv_020055_0003{
-	border-top: 1px #902D27 solid;
-	margin-left: -.5em;
-	padding-left: .5em;
-}
-@media only screen and (min-width: 992px){
-	.box2.liv_020055_0003{
-		width: 22em;
-	}
-}
-.par1.liv_020055_0003{
-	border-left: 2px #3d4245 solid;
-	border-radius: 1.6em;
-	-webkit-border-radius: 1.6em;
-	-moz-border-radius: 1.6em;
-	margin-left: -.25em;
-	padding: .25em 0 .25em .25em;
-}
-.add.liv_020055_0003{
-	left: -6em;
-	position: absolute;
-}
--->
 
 	<pb facs="liv_020055_0003" n="0003"/>
 	<div n="wrapper2 liv_020055_0003">
@@ -392,36 +297,8 @@
     <div>	
 <fw rend="center">(<add place="inline" rend="gray">3<!-- vertical strike through this three. MBT --></add>3.)</fw>
     </div>
-	    
 	   <div> 
 	   	
-<!-- Red div on inside that runs the length of the page.
-    Black div on outside thta runs from "There was lying..." to end of page-->
-	   	
-<!--   	
-.marginal1.liv_020055_0004{
-   	border-right: 1px #902D27 solid;
-   	margin-right: 4.2em;
-	border-radius: 0 26px 0 0;
-}
-.marginal2.liv_020055_0004{
-	border-right: 1px #3d4245 solid;
-	margin-right: .7em;
-	border-radius: 0 40px 0 0;
-	position: relative;
-}
-.archival.liv_020055_0004{
-	font-size: .9em;
-	position: absolute;
-	right: -7em;
-	bottom: 1.5em;
-	transform: rotate(312deg);
-	-ms-transform: rotate(312deg);
-	-moz-transform: rotate(312deg);
-	-webkit-transform: rotate(312deg);
-	-o-transform: rotate(312deg);
-}
-	   	-->
 	   	
 <pb facs="liv_020055_0004" n="0004"/>
    	<div n="marginal1 liv_020055_0004">
@@ -431,7 +308,7 @@
    	<div n="marginal2 liv_020055_0004">
 <p>There was lying on the ground in <settlement>Bonny Town</settlement>, a very large
 <lb/>bell 3&#189;<!-- half needs to be styled? MBT --> feet in diameter, bearing this inscription&#8211;
-<lb/><space extent="1" unit="words"/>"<persName>William Dobson</persName>, founder, <settlement><choice><orig>Down Ham</orig><reg>Downham</reg></choice> <!-- Double-checked the location. Apparently, William Dobson of Downham Market produced relatively high quality bells: http://www.hibberts.co.uk/th_rediscover.htm	MBT --></settlement>, <region>Norfolk</region>, <country>England</country>.
+<lb/><space extent="1" unit="words"/>"<persName>William Dobson</persName>, founder, <settlement><choice><orig>Down Ham</orig><reg>Downham</reg></choice></settlement>,<!-- Double-checked the location. Apparently, William Dobson of Downham Market produced relatively high quality bells: http://www.hibberts.co.uk/th_rediscover.htm	MBT --> <region>Norfolk</region>, <country>England</country>.
 <lb/><space extent="1" unit="words"/>This Bell was cast for <persName>Opoboo Foobra</persName>, King of
 <lb/><space extent="1" unit="words"/>Grand <settlement>Bonny</settlement>, in the year <date when="1824">1824</date>."</p>
 <lb/><p rend="no-indent"><add place="inspace" rend="large">X</add> <space extent="2" unit="chars"/>Little did I think this Bell could be made use of again
@@ -440,7 +317,7 @@
 <lb/>trouble himself in putting up such an unweildy thing,
 <lb/>though I intimated something of its use in the town to late
 <lb/><persName>King Pepple</persName>. But contrary to my expectations, during my
-<lb/>absence, at the suggestion of <persName>King George</persName>, probably from his 
+<lb/>absence, at the suggestion of <persName>King George</persName>, probably from his <seg rend="gray" n="marginal3 liv_020055_0004"><lb/>P<unclear>rint</unclear><lb/><space extent="2" unit="chars"/>3</seg>
 <lb/>late father, <persName>Oko Jumbo</persName> very readily and willingly <w>under-
 <lb/>took</w> to put up the Bell at the mission station, at his
 <lb/>own expense, and so he did. He bought two stout masts
@@ -465,39 +342,11 @@
 	   	<div>	
 			<fw rend="center">(<add place="inline" rend="gray">3</add>4.)</fw>
 		</div>
-		
-<!-- Black box div from top of the page to  "...substantially rebuilt"
-		Red box on interior of black box.-->
 
-<!-- 
-.box1.liv_020055_0005{
-    border-left: 1px #3d4245 solid;
-    border-bottom: 1px #3d4245 solid;
-    margin-left: -.25em;
-    padding-left: .25em;
-	margin-bottom: .35em;
-}
-might need this code to modify the bottom of the box border
 
-.par1.liv_020055_0005{
-	border-left: 2px #3d4245 solid;
-	border-radius: 1.6em;
-	-webkit-border-radius: 1.6em;
-	-moz-border-radius: 1.6em;
-	margin-left: -.25em;
-	padding: .25em 0 .25em .25em;
-}
-
-.marginal1.liv_020055_0005{
-    border-left: 1px #902D27 solid;
-    margin-left: -1em;
-    padding-left: 1em;
-}
-		-->
 <pb facs="liv_020055_0005" n="0005"/>
-	<div n="box1.liv_020055_0005">
-	<div n="marginal1.liv_020055_0005">
-<lb/><p>stem of the heavy clapper, being rusty from having lain so long
+	<div n="box1 liv_020055_0005">
+<p rend="no-indent" n="marginal1 liv_020055_0005">stem of the heavy clapper, being rusty from having lain so long
 <lb/>on the corroding sand, in the act of being struck, snapped asunder,
 <lb/>the hammer came down, and the bell was tongueless; but <persName>Oko
 <lb/>Jumbo</persName> determined to have it mended by the engineers<!-- code as group? MBT --> of the
@@ -506,39 +355,37 @@ might need this code to modify the bottom of the box border
 <lb/>made a spare clapper of, should the old mended one be broken
 <lb/>again which was done: true enough, the old repired clapper was
 <lb/>put on, <del>again,</del> but a few strokes snapped the corroded stem
-<lb/>again, so the spare one is now in use; though not so heavy as
+<lb/><seg rend="gray" n="marginal5 liv_020055_0005">P<unclear>rint</unclear><lb/><space extent="2" unit="chars"/>3</seg>again, so the spare one is now in use; though not so heavy as
 <lb/>the original, yet its serves our purposes well. These repairs
 <lb/>cost him &#163;2.&#8211; <persName>Oko Jumbo</persName> is very persevering in his lessons,
-<lb/><add place="marginleft">X</add> in reading and <!-- add metamark here? MBT --> writing. I received the first note of his his own hand
+<lb/><seg n="marginal6 liv_020055_0005">X</seg> in reading and <seg type="metamark" rend="large sup bold">&#9486;</seg><!-- add metamark here? MBT --><!-- done. AW -->writing. I received the first note of his his own hand
 <lb/>writing this week by which he informed me, that he has sent
-<lb/>a fish for my breakfast. Three other chiefs are <!-- unclear: bearing? or baining?--> to read
+<lb/>a fish for my breakfast. Three other chiefs are learning to read
 <lb/>after his example, one of whom is the wealthy influential
-<lb/>head of the opposite division and patron of the gods, through
+<lb/><seg n="marginal2 liv_020055_0005">head of the opposite division and patron of the gods, through
 <lb/>whose means the Temple of skulls was so recently and <w>sub-
-<lb/>stantially</w> rebuilt.&#8211;</p>
-	</div>
+<lb/>stantially</w> rebuilt.&#8211;</seg></p>
 	</div> 
 	<div>
-<lb/><p>The Native Teachers<!-- orgname? MBT --> Messrs <persName>Webber</persName> and <persName>Carew</persName> are very <w>per-
+<p n="marginal3 liv_020055_0005">The <term type="collective">Native Teachers</term> Messrs <persName>Webber</persName> and <persName>Carew</persName> are very <w>per-
 <lb/>severing</w> in their work, which can be seen by <add place="above">their</add> <add place="below">^</add> taking these chiefs
 <lb/>in lessons at their houses almost daily after school hours.</p>
-		<div n="marginal1.liv_020055_0005">
-<lb/><!-- unclear word in left margin --><!-- Pearson? MBT --><p>The public examination of the school children took place  
+<p n="marginal4 liv_020055_0005"><seg rend="gray underline" n="marginal7 liv_020055_0005">Pearson</seg>The public examination of the school children took place  
 <lb/>yesterday the <date when="1878-02-26">26<hi rend="sup underline">th</hi></date>, to which the attendance of the King, the
 <lb/>fathers and chiefs was invited, but owing to the sickness of some,
 <lb/>the absence of others from the town, and unavoidable circumstances,
 <lb/>three most influential leading chiefs could be present, namely
 <lb/><persName>Adda Allison</persName>, <persName>Oko Jumbo</persName>, and <persName>Annie Pepple</persName>, also <add place="below">^</add> <add place="above">widow</add> queen 
 <lb/><persName>Eleanor</persName>, and two <term type="collective">Colony born</term> <country>Sierra Leone</country> traders, and two <term type="collective">French</term>
-<lb/>officers from the Cutter "Joseph Leon." Two hours were <!-- unclear --><unclear>fixed</unclear>
+<lb/>officers from the Cutter "Joseph Leon." Two hours were <unclear>fixed</unclear>
 <lb/>upon to go through the examinations, so as not to wear out the
 <lb/>patience of the chiefs who are not in the habit of sitting silently
 <lb/>so long without some amusing talk of thier own.</p>
-	</div>	
 	<div>	
 		<fw rend="center">(<add place="inline" rend="gray">3</add>5.)</fw>
 	</div>
 		
+
 	<pb facs="liv_020055_0006" n="0006"/>
 		<!-- This page is particularly complicated. MBT -->
 	<div>
@@ -574,7 +421,7 @@ might need this code to modify the bottom of the box border
 <lb/>alone, which all did so well as I never could have expected from them. <!-- end of vertical red lines in both margins AM -->
 <lb/>The recitals of the Scripture pieces from the <orgName>Sunday School Union</orgName>
 <lb/>Spelling Book were very good.
-	<!-- Pencil lines commence here which effectively box off the remaining text of this page, consisting of a horizontal line above the 1st line of text and a vertical line down the right margin. The words "Part 4" also appear in the right margin AM -->A correct idea of the <w>reten<seg type="hyphen">-</seg>
+	<!-- Pencil lines commence here which effectively box off the remaining text of this page, consisting of a horizontal line above the 1st line of text and a vertical line down the right margin. The words "Print 4" also appear in the right margin AM -->A correct idea of the <w>reten<seg type="hyphen">-</seg>
 <lb break="no"/>tiveness</w> of their memory may be formed, when it is known,
 <lb/>that it was  remarked by those present, that four of these
 <lb/>children repeated their pieces through without hesitation
@@ -597,7 +444,7 @@ might need this code to modify the bottom of the box border
 <lb/>The Prodigail Son.&#8212; Taking the progress of the children in
 <lb/>general into consideration, when it is remembered that it is not
 <lb/>yet two years since a school was opened for them, they have done well
-<lb/><!-- the words "Part 4" written in pencil in the left margin AM -->to their own credit and to the credit of their attentive and diligent
+<lb/><!-- the words "Print 4" written in pencil in the left margin AM -->to their own credit and to the credit of their attentive and diligent
 <lb/>schoolmasters. The chiefs were highly pleased at the progress of
 <lb/>their children, one of these present was the patron and supporter
 <lb/>of the Temple of skulls above alluded to, and may yet one day

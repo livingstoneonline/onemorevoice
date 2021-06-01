@@ -22,8 +22,8 @@
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
-				<respStmt xml:id="AM">
-					<name>Anne Martin</name>
+				<respStmt xml:id="HB">
+					<name>Heather F. Ball</name>
 					<resp>Transcription</resp>
 					<resp>TEI Encoding</resp>
 					<resp>Editorial Decisions</resp>
@@ -108,13 +108,16 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-05-31" who="#AW">Coding Review</change>
+			<change when="2021-05-21" who="#HB">Encoding and Proofing</change>
+			<change when="2021-05-14" who="#JM">Transcription</change>
 			<change when="2021-05-03" who="#AW">Set up file</change>
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="c4d4eb">
+		<body n="ced9f9">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
 			<div rend="brown">
 
@@ -124,11 +127,95 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="liv_020026_0001" n="0001"/>
+		
+	<pb facs="liv_020026_0001" n="0001"/>
+<lb/><p rend="no-indent"><add place="inspace" rend="gray sup" hand="#U">57</add> <space extent="4" unit="words"/><date when="1845-10-08">October 8th 1845</date></p>
 <lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<lb/>
+<lb/>
+<lb/><p><space extent="1" unit="words"/><space extent="2" unit="chars"/>Honoured Fathers, and respected friends
+<lb/>of the <orgName><settlement>London</settlement> Missionary Society</orgName></p>
+<lb/><p><space extent="3" unit="words"/>I have always been deeply
+<lb/>concerned about the education of my children,
+<lb/>but never more so than at the present time
+<lb/><space extent="1" unit="chars"/>I always had a wish to send my children out
+<lb/>of <region>Cafferland</region> to some good school; but <del >not</del><add place="over-text">was</add> not
+<lb/>able to do it both for want of a place to send
+<lb/>them as well as that my pecuniary circumstances
+<lb/>did not admit of it.</p>
+<lb/><p><space extent="3" unit="words"/>You will have heard with much
+<lb/><choice><sic>greif</sic><corr>grief</corr></choice> that two of my sons have adopted the
+<lb/>customs of our heathen ancestory which while
+<lb/>it deeply <choice><sic>greives</sic><corr>grieves</corr></choice> me has done great injury to
+<lb/>the cause of God.</p>
+<lb/><p><space extent="3" unit="words"/><space extent="2" unit="chars"/>This event made me doubly
+<lb/>anxious to send my younger children to school
+<lb/><space extent="1" unit="chars"/>I have therefore sent three of my daughters 
+<lb/>to a school established at the <orgName><term type="collective">English</term> Residency</orgName>
 
+
+	<pb facs="liv_020026_0002" n="0002"/>
+<lb/>in <geogName>Tyumie Vale</geogName> <region>Cafferland</region> by the Lady of the
+<lb/><choice><sic>welknown</sic><corr>well known</corr></choice> Diplomatic Agent and <choice><sic>freind</sic><corr>friend</corr></choice> of the
+<lb/><term type="collective">Native</term> tribes of this country and kept by an
+<lb/><choice><sic>exelent</sic><corr>excellent</corr></choice> young lady from the Church of our
+<lb/>friend <persName>M<hi rend="sup">r</hi> Jack</persName> of <settlement>Bristol</settlement></p> 
+<lb/><p><space extent="2" unit="words"/><space extent="2" unit="chars"/>At this school are at present 21
+<lb/>children who are fed and clothed, with one
+<lb/>exception gratuitously, <persName>Miss Harding</persName> has
+<lb/>hitherto <choice><sic>cheifly</sic><corr>chiefly</corr></choice> depended for support to herself
+<lb/>and pupils on <persName>M<hi rend="sup">rs</hi> Stretch</persName> and a few <choice><sic>freinds</sic><corr>friends</corr></choice></p>
+<lb/><p><space extent="2" unit="words"/>From my place I have sent 8 children
+<lb/>now while I hope that I shall try to do what I can
+<lb/>for my children, I feel that I shall not be able
+<lb/>to do what I ought, My object in writing is kindly
+<lb/>to request the Directors to assist me, to meet
+<lb/>the <choice><sic>expence</sic><corr>expense</corr></choice> connected with their education
+<lb/>whilest it will be gratifying to my feelings as
+<lb/>a <term type="collective">Christian</term> parent, it will <unclear><choice><sic>redound</sic><corr>rebound</corr></choice></unclear> to the good
+<lb/>of <choice><sic>Gods</sic><corr>God's</corr></choice> cause generally, as the <orgName>Tyumie Seminary</orgName> <!-- coded Tyumie as geogName earlier but now not sure if it's settlement too/instead? HB -->
+<lb/>for the instruction of young females is one of the
+<lb/>best establishments of the kind in <region>Cafferland</region>.</p> <!-- Same q's as above for Cafferland. HB -->
+<lb/><p><space extent="1" unit="words"/>Will you allow me <choice><sic>Reverand</sic><corr>Reverend</corr></choice> Gentleman
+<lb/>to recommend it to you, and the churches generally
+<lb/>in <country>England</country></p>
+<lb/><p><space extent="5" unit="words"/>I remain
+<lb/><space extent="6" unit="words"/>Yours very sincerely
+<lb/><space extent="7" unit="words"/><persName>Jan Tzatzoe</persName></p>
+
+	<pb facs="liv_020026_0003" n="0003" type="blank" ana="25"/>
+<lb/><!-- blank page AM -->
 			</div>
+	
+	<pb facs="liv_020026_0004" n="0004"/>
+			<div rend="brown" n="page liv_020026_0004">
+<ab rend="no-indent small purple"><space extent="1" unit="words"/><space extent="2" unit="chars"/><seg rend="underline">45/46</seg> <space extent="2" unit="chars"/>No 5</ab>
+<lb/><p rend="no-indent"><region>Caffreland</region>, <date when="1845-10-08"><choice><abbr>Oct<hi rend="sup underline">r</hi></abbr><expan>October</expan></choice> 8. 1845</date>
+<lb/><space extent="1" unit="words"/><persName>Jan Tzatzoe</persName>,</p>
+<lb/>
+<lb/><p rend="no-indent gray small" n="diagonal liv_020026_0004"><choice><abbr>Ans<hi rend="sup underline">d</hi></abbr><expan>Answered</expan></choice> through 
+<lb/><persName>D<hi rend="sup underline">r</hi> Philip</persName></p>
+<lb/>
+<lb/><p><space extent="1" unit="words"/>S. C. <date when="1846-01-26">26 Jan. 1846</date></p>
+<lb/>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><unclear cert="low"><hi rend="underline">Coai <hi rend="sup">ll</hi></hi></unclear></p>
+<!-- address -->
+<lb/><p rend="no-indent" n="address liv_020026_0004">
+<lb/><seg n="seal1 liv_020026_0004"><space/></seg>
+<lb/>
+<lb/><seg rend="large black">9/</seg> <space extent="2" unit="words"/><space extent="1" unit="words"/><gap extent="1" unit="words" agent="illegible"/>
+<lb/><space extent="1" unit="words"/><space extent="2" unit="chars"/><persName><choice><abbr>Rev<hi rend="sup">d</hi></abbr><expan>Reverend</expan></choice> J. Arundel</persName> <seg rend="black" n="number liv_020026_0004">2</seg>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><choice><abbr>Sec<hi rend="sup">ry</hi></abbr><expan>Secretary</expan></choice> <orgName><choice><abbr>Lon. Miss Soc<hi rend="sup">ty</hi></abbr><expan>London Missionary Society</expan></choice></orgName>
+<lb/><space extent="3" unit="words"/>Finsbury Square
+<lb/><space extent="3" unit="words"/><space extent="2" unit="chars"/><settlement>London</settlement>
+<lb/>
+<lb/><seg n="seal2 liv_020026_0004"><space/></seg></p>
+<lb/>
+<lb/>
+<lb/>
+<lb/><p rend="no-indent">Received <date when="1846-12-20"><choice><abbr>Dec<hi rend="sup underline">r</hi></abbr><expan>December</expan></choice> 20. 1845</date>.</p>
+			</div>
+
 		</body>
 	</text>
 </TEI>

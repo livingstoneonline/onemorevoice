@@ -673,6 +673,49 @@ font-family: 'UnifrakturMaguntia', cursive;
 .header3.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 }
+.page.liv_020026_0004{
+	margin-left: 11em;
+}
+.diagonal.liv_020026_0004{
+	border-bottom: 1px solid;
+	transform: rotate(323deg);
+	-ms-transform: rotate(323deg); /* IE 9 */
+	-moz-transform: rotate(323deg); /* Firefox */
+	-webkit-transform: rotate(323deg); /* Safari and Chrome */
+	-o-transform: rotate(323deg); /* Opera */
+}
+.address.liv_020026_0004{
+	margin-left: -11em;
+	transform: rotate(270deg);
+	-ms-transform: rotate(270deg); /* IE 9 */
+	-moz-transform: rotate(270deg); /* Firefox */
+	-webkit-transform: rotate(270deg); /* Safari and Chrome */
+	-o-transform: rotate(270deg); /* Opera */
+	position: relative;
+}
+.seal1.liv_020026_0004{
+	border: 2px solid #9f744f;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	height: 3em;
+ 	width: 3em;
+  display: inline-block;
+	position: absolute;
+}
+.seal2.liv_020026_0004{
+	border-top: 2px solid black;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	height: 3em;
+ 	width: 3em;
+  display: inline-block;
+	position: absolute;
+}
+.number.liv_020026_0004{
+	font-size: 4em;
+}
 .font.liv_020027_0001{
 	font-family: 'UnifrakturMaguntia', cursive;
 }

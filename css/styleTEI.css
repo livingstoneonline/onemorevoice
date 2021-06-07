@@ -350,8 +350,8 @@ label.md_switch{
 .change-color .corr{
 	border-bottom: 2px dotted black;
 }
-.invert-color .manuscript,
-.invert-color .journal{
+.invert-color .manuscript .TEI,
+.invert-color .journal .TEI{
 	filter: invert(1);
 }
 .invert-color .journal .pb-title{

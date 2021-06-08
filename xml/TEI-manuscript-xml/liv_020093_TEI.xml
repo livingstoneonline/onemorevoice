@@ -8,9 +8,9 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Letter to [Unknown]</title>
+				<title>Letter to [William Ivens Craft?]</title>
 				<!-- Title without date -->
-				<title type="alternative">Letter to [Unknown], 27 August 1881</title>
+				<title type="alternative">Letter to [William Ivens Craft?], 27 August 1881</title>
 				<!-- Title, date -->
 				<author>Chesson, Frederick William, 1833-1888</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -81,7 +81,7 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>Letter to [Unknown]</title>
+					<title>Letter to [William Ivens Craft?]</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
@@ -108,7 +108,7 @@
 			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
 			<!-- @when = YYYY-MM-DD -->
 			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
-			<change when="2021-05-26" who="#AW">Coding Review</change>
+			<change when="2021-06-08" who="#AW">Coding Review</change>
 			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
 			<change when="2020-12-18" who="#LM">Transcription</change>
 		</revisionDesc>
@@ -116,9 +116,9 @@
 
 	<text><!-- If file contains custom CSS, add n="styleTEI-add" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="">
+		<body n="a9a496">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="">
+			<div rend="black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -126,10 +126,28 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="" n=""/>
-<lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
-
+	<pb facs="liv_020093_0001" n="0001"/>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><date when="1881-08-27">August 27<hi rend="sup">th</hi> 1881</date></p>
+<lb/><ab rend="gray"><space extent="5" unit="words"/><space extent="1" unit="chars"/><add place="inspace" hand="#U">C129/129</add></ab>
+<lb/><p>Dear Sir</p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="2" unit="chars"/>With reference to your
+<lb/>letter to me informing me that you
+<lb/>have obtained a situation in the
+<lb/><orgName>Railway &amp; Metropolitan Omnibus C<hi rend="sup">oy.</hi></orgName>
+<lb/>I beg to say that I have handed <persName>M<hi rend="sup">r</hi>
+<lb/>Beale</persName> a sum of two pounds to enable you
+<lb/>to purchase clothes as you suggest. This
+<lb/>money has been sent to me by <persName>M<hi rend="sup">rs</hi> Nichol</persName>
+<lb/>with a request that I would appropriate
+<lb/>it for your benefit as I might
+<lb/>consider best. I am glad that it is
+<lb/>available for you just at the moment
+<lb/>when you are apparently able to turn it
+<lb/>to the best account. <space extent="1" unit="chars"/>It is however necesry
+<lb/>for me to tell you that I know of no
+<lb/>quarter from which further assistance is likely
+<lb/>to be obtained. Please send me a note which
+<lb/><seg rend="small">I may communicate to <persName>M<hi rend="sup">rs</hi> Nichol</persName></seg> <space extent="1" unit="words"/><persName>F.W.C.</persName></p>
 			</div>
 		</body>
 	</text>

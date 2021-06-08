@@ -134,6 +134,11 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="//xenoData[@type='css']">
+					<style>
+						<xsl:value-of select="//xenoData[@type='css']"/>
+					</style>
+				</xsl:if>
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0004"/>
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001"/>
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">

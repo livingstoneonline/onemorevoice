@@ -138,9 +138,9 @@
 				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
 					<link rel="stylesheet" type="text/css" href="/css/styleTEI-add.css?=newVers_0001"/>
 				</xsl:if>
-				<xsl:if test="//xenoData">
+				<xsl:if test="//xenoData[@type='css']">
 					<style>
-						<xsl:value-of select="//xenoData"/>
+						<xsl:value-of select="//xenoData[@type='css']"/>
 					</style>
 				</xsl:if>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>

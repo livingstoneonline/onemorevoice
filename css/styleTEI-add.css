@@ -169,8 +169,47 @@ font-family: 'UnifrakturMaguntia', cursive;
 
 
 /* 2.13. Specific item rendering */
-/* See liv_020040, liv_020041, liv_020042 for liv_000023 coding */
-.metamark.liv_000023_0036{
+
+/*liv_020041 start*/
+/* .metamark.liv_000023_0090{
+	position: relative;
+}
+.metamark.liv_000023_0090::before{
+	content: '{';
+	font-size: 3.5em;
+	transform: scale(.35, 1.7);
+	transform: scale(.35, 1.7);
+	-webkit-transform: scale(.35, 1.7);
+	-moz-transform: scale(.35, 1.7);
+	-ms-transform: scale(.35, 1.7);
+	-o-transform: scale(.35, 1.7);
+	right: -.2em;
+	position: absolute;
+}
+.columnLeft.liv_000023_0092{
+	text-align: center;
+	float: left;
+	padding-right: 2em;
+}
+.columnRight.liv_000023_0092{
+	float: right;
+}
+.columnCenter.liv_000023_0092{
+	padding: 0 1em;
+}
+.div-after-ul.liv_000023_0092{
+	display: inline-block;
+}
+.ab.liv_000023_0092{
+	text-align: left;
+}
+.milestone.center.line.liv_000023_0092{
+	margin-left: 6em;
+} */
+/*liv_020041 end*/
+
+/*liv_020042 start*/
+/* .metamark.liv_000023_0036{
 	padding: .19em .7em;
 	margin-left: -.4em;
 	border-top: 1.5px solid;
@@ -256,41 +295,6 @@ font-family: 'UnifrakturMaguntia', cursive;
 	border-right: 2px solid #664d36;
 	left: 8.5em;
 }
-.metamark.liv_000023_0090{
-	position: relative;
-}
-.metamark.liv_000023_0090::before{
-	content: '{';
-	font-size: 3.5em;
-	transform: scale(.35, 1.7);
-	transform: scale(.35, 1.7);
-	-webkit-transform: scale(.35, 1.7);
-	-moz-transform: scale(.35, 1.7);
-	-ms-transform: scale(.35, 1.7);
-	-o-transform: scale(.35, 1.7);
-	right: -.2em;
-	position: absolute;
-}
-.columnLeft.liv_000023_0092{
-	text-align: center;
-	float: left;
-	padding-right: 2em;
-}
-.columnRight.liv_000023_0092{
-	float: right;
-}
-.columnCenter.liv_000023_0092{
-	padding: 0 1em;
-}
-.div-after-ul.liv_000023_0092{
-	display: inline-block;
-}
-.ab.liv_000023_0092{
-	text-align: left;
-}
-.milestone.center.line.liv_000023_0092{
-	margin-left: 6em;
-}
 .metamark.liv_000023_0110{
 	padding-bottom: .4em;
 	border-bottom: 1px solid;
@@ -331,8 +335,10 @@ font-family: 'UnifrakturMaguntia', cursive;
 		bottom: .6em;
 		position: absolute;
 	}
-}
-.container.liv_000138_0004{
+} */
+/*liv_020042 end*/
+
+/* .container.liv_000138_0004{
 	position: relative;
 }
 .addition.liv_000138_0004{
@@ -344,8 +350,8 @@ font-family: 'UnifrakturMaguntia', cursive;
 	-webkit-transform: rotate(70deg);
 	-o-transform: rotate(70deg);
 	display: inline-block;
-}
-.text.liv_003027_0001{
+} */
+/* .text.liv_003027_0001{
 	margin-bottom: .5em;
 	transform: rotate(330deg);
 	-ms-transform: rotate(330deg);
@@ -392,8 +398,8 @@ font-family: 'UnifrakturMaguntia', cursive;
 		margin-left: -.75em;
 		border-top: 1px solid;
 	}
-}
-@media only screen and (min-width: 768px){
+} */
+/* @media only screen and (min-width: 768px){
 	.text.liv_020011_0001{
 		color: #998a83;
 		line-height: 1em;
@@ -454,15 +460,15 @@ font-family: 'UnifrakturMaguntia', cursive;
 .text.liv_020011_0004,
 .text.liv_020011_0004 .unclear{
 	color: #c7c7c7;
-}
-.clear.liv_020015_0002{
+} */
+/* .clear.liv_020015_0002{
 	clear: both;
-}
-.clear.unset.liv_020013_0001,
+} */
+/* .clear.unset.liv_020013_0001,
 .clear.unset.liv_020018_0001{
 	clear: unset;
-}
-.container.liv_020019_0001,
+} */
+/* .container.liv_020019_0001,
 .container.liv_020019_0002,
 .container.liv_020019_0003{
 	position: relative;
@@ -534,8 +540,8 @@ font-family: 'UnifrakturMaguntia', cursive;
 	.pagenote.liv_020019_0003{
 		margin-left: -1.5em;
 	}
-}
-.signature1.liv_020021_0001,
+} */
+/* .signature1.liv_020021_0001,
 .signature2.liv_020021_0001{
 	font-family: 'Cedarville Cursive', cursive;
 	font-size: 1.3em;
@@ -644,8 +650,8 @@ font-family: 'UnifrakturMaguntia', cursive;
 		padding: 0 2em;
 		margin: 0 auto;
 	}
-}
-.archival.liv_020024_0001{
+} */
+/* .archival.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	float: right;
 	transform: rotate(180deg);
@@ -696,7 +702,7 @@ font-family: 'UnifrakturMaguntia', cursive;
 }
 .header3.liv_020024_0001{
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-}
+} */
 /* .container.liv_020025_0001{
 	position: relative;
 }

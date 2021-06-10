@@ -143,6 +143,7 @@
 				<language ident="en">English</language>
 			</langUsage>
 		</profileDesc>
+		<xenoData type="css">.liv_020056 .word{white-space:nowrap}.liv_020056 .hanging{text-indent:-25px;padding-left:25px}.liv_020056 .halfline.quarterline.other{width:8%}.liv_020056 .seal{position:relative}.liv_020056 .seal .seg{border:1px solid black;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;height:3.5em;width:3.5em;top:-1em;left:0;position:absolute}</xenoData>
 		<revisionDesc>
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
@@ -155,7 +156,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->

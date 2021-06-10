@@ -1,0 +1,257 @@
+/* CSS TEI Rotate Toggle File for One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki */ /* 2021 */
+
+/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+
+/* 
+Table of Contents
+-----------------
+
+** 2.0 Transcription CSS **
+2.2.2. Rotate Toggle Class: Supplement
+liv_020055 coding [temporary]
+
+*/
+
+/*--------------------------------------*/
+
+/* 2.2.2. Rotate Toggle Class: Supplement */
+
+/* Use .exclude class for items to be removed from rotation toggle */
+
+.rotate .signature2.liv_020021_0001,
+.rotate .statement1.liv_020021_0002{
+	margin: unset;
+	padding: unset;
+	display: unset;
+}
+.rotate .postscript.liv_020025_0001{
+	letter-spacing: normal;
+	white-space: normal;
+	line-height: unset;
+	float: none;
+	margin: unset;
+	padding: unset;
+	top: unset;
+	right: unset;
+	bottom: unset;
+	left: unset;
+	position: unset;
+}
+.rotate .block2.liv_020025_0004,
+.rotate .stamp.liv_020025_0004,
+.rotate .strike1.liv_020025_0004,
+.rotate .strike2.liv_020025_0004
+.rotate .seal1.liv_020025_0004,
+.rotate .seal2.liv_020025_0004,
+.rotate .seal3.liv_020025_0004,
+.rotate .seal4.liv_020025_0004,
+.rotate .seal5.liv_020025_0004{
+	position: unset;
+}
+.rotate .deletion1.liv_020051_0001,
+.rotate .deletion2.liv_020051_0001{
+	border-left: none;
+}
+.rotate .turn.liv_020074_0001{
+	top: unset;
+	left: unset;
+	position: unset;
+}
+@media only screen and (min-width: 768px){
+	.rotate .marginaltext.liv_000023_0037,
+	.rotate .container.liv_000023_0084,
+	.rotate .container.liv_000023_0085,
+	.rotate .text1.liv_000023_0115,
+	.rotate .text2.liv_000023_0115,
+	.rotate .note-1.liv_003027_0001,
+	.rotate .text.liv_020011_0004,
+	.rotate .marginalnote.liv_020019_0002,
+	.rotate .grayAdd.liv_020080_0001{
+		line-height: unset;
+		float: none;
+		margin: unset;
+		padding: unset;
+		top: unset;
+		right: unset;
+		bottom: unset;
+		left: unset;
+		position: unset;
+	}
+	.rotate .block3.liv_020051_0001{
+		position: unset;
+	}
+}
+.rotate .marginal7.liv_020055_0005{
+	left: -2.7em;
+}
+
+
+/* liv_020055 coding [temporary] */
+
+.item.liv_020055{
+	margin: 0 2em;	
+}
+.block-1.liv_020055_0001,
+.block-2.liv_020055_0001{
+	float: left;
+}
+.block-1.liv_020055_0001{
+	margin-left: -.5em;
+}
+.block-3.liv_020055_0001{
+	display: inline-block;
+}
+.marginal1.liv_020055_0001{
+	border-left: 1px #902D27 solid;
+	border-radius: 1em 0 0 0;
+	-webkit-border-radius: 1em 0 0 0;
+	-moz-border-radius: 1em 0 0 0;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.marginal2.liv_020055_0001{
+	border-left: 1px #3d4245 solid;
+	border-radius: 4em 0 0 0;
+	-webkit-border-radius: 4em 0 0 0;
+	-moz-border-radius: 4em 0 0 0;
+	margin-left: -1.5em;
+	padding-left: 1.5em;
+	position: relative;
+}
+.ednote.liv_020055_0001{
+	font-size: 1.3em;
+	transform: rotate(344deg) !important;
+	-ms-transform:rotate(344deg) !important;
+	-moz-transform:rotate(344deg) !important;
+	-webkit-transform:rotate(344deg) !important;
+	-o-transform:rotate(344deg) !important;
+	position: absolute;
+	left: -1.5em;
+}
+.marginal1.liv_020055_0002{
+	border-right: 1px #902D27 solid;
+	margin-right: .7em;
+}
+.marginal2.liv_020055_0002{
+	border-right: 1px #3d4245 solid;
+	margin-right: 1.1em;
+}
+.wrapper2.liv_020055_0003{
+	border-left: 1px #902D27 solid;
+	margin-left: -.5em;
+	padding-left: .5em;
+}
+.box1.liv_020055_0003{
+	border-left: 1px #3d4245 solid;
+	border-bottom: 1px #3d4245 solid;
+	margin-left: -.25em;
+	margin-bottom: .35em;
+	padding-left: .25em;
+}
+.box2.liv_020055_0003{
+	border-top: 1px #902D27 solid;
+	margin-left: -.5em;
+	padding-left: .5em;
+}
+@media only screen and (min-width: 992px){
+	.box2.liv_020055_0003{
+		width: 22em;
+	}
+}
+.par1.liv_020055_0003{
+	border-left: 2px #3d4245 solid;
+	border-radius: 1.6em;
+	-webkit-border-radius: 1.6em;
+	-moz-border-radius: 1.6em;
+	margin-left: -.25em;
+	padding: .25em 0 .25em .25em;
+}
+.add.liv_020055_0003::before{
+	content: '[';
+}
+.add.liv_020055_0003::after{
+	content: ']';
+}
+.marginal1.liv_020055_0004{
+	border-right: 1px #902D27 solid;
+	border-radius: 0 26px 0 0;
+	-webkit-border-radius: 0 26px 0 0;
+	-moz-border-radius: 0 26px 0 0;
+	margin-right: 5.2em;
+}
+.marginal2.liv_020055_0004{
+	border-right: 1px #3d4245 solid;
+	border-radius: 0 40px 0 0;
+	-webkit-border-radius: 0 40px 0 0;
+	-moz-border-radius: 0 40px 0 0;
+	margin-right: -1.3em;
+	position: relative;
+}
+.marginal3.liv_020055_0004{
+	position: absolute;
+	right: -3.5em;
+}
+.archival.liv_020055_0004{
+	font-size: .9em;
+	transform: rotate(312deg);
+	-ms-transform: rotate(312deg);
+	-moz-transform: rotate(312deg);
+	-webkit-transform: rotate(312deg);
+	-o-transform: rotate(312deg);
+	position: absolute;
+	right: -7em;
+	bottom: 1.5em;
+}
+.box1.liv_020055_0005{
+	border-left: 1px #3d4245 solid;
+	border-radius: 0 0 0 22px;
+	-webkit-border-radius: 0 0 0 22px;
+	-moz-border-radius: 0 0 0 22px;
+	margin-left: -.25em;
+	margin-bottom: .35em;
+	padding-left: .25em;
+}
+.marginal1.liv_020055_0005{
+	border-left: 1px #902D27 solid;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.marginal2.liv_020055_0005{
+	border-left: 1px #3d4245 solid;
+	margin-left: -1.8em;
+	padding-left: 1.8em;
+	display: block;
+}
+.marginal3.liv_020055_0005{
+	border-left: 1px #3d4245 solid;
+	margin-top: -8px;
+	margin-left: -1.7em;
+  padding-left: 1.7em;
+}
+.marginal4.liv_020055_0005{
+	border-left: 1px #902D27 solid;
+	border-radius: 1em 0 0 0;
+	-webkit-border-radius: 1em 0 0 0;
+	-moz-border-radius: 1em 0 0 0;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.marginal5.liv_020055_0005{
+	position: absolute;
+	left: 0;
+}
+.marginal6.liv_020055_0005{
+	position: absolute;
+	left: 1em;
+}
+.marginal7.liv_020055_0005{
+	transform: rotate(336deg);
+	-ms-transform: rotate(336deg);
+	-moz-transform: rotate(336deg);
+	-webkit-transform: rotate(336deg);
+	-o-transform: rotate(336deg);
+	position: absolute;
+	left: -1em;
+}

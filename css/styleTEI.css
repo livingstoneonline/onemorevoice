@@ -12,7 +12,7 @@ Table of Contents
 ** 2.0 Transcription CSS **
 2.1. Textual divisions
 2.2.1. Switches
-2.2.2. Toggle Classes (also see styleTEI-add.css)
+2.2.2. Toggle Classes (also see rotate-toggle.css)
 2.3. Rotate Button
 2.4. Pagebreaks, linebreaks, linenumbers
 2.5. Parts of the page
@@ -21,9 +21,7 @@ Table of Contents
 2.8. Rend classes (except lines, page placement, colors) 
 2.9. Page placement 
 2.10. Colors 
-2.11. Misc 
-2.12. Fonts
-2.13. Specific item rendering (see styleTEI-add.css)
+2.11. Misc
 */
 
 /*--------------------------------------*/
@@ -446,8 +444,8 @@ button::-moz-focus-inner{
 .manuscript .pb-title,
 .journal .pb-title,
 .journal .TEI .text .body .div p + .pb-title:first-of-type{
-	padding-top: 1em;
-	margin: 1em 0 .5em 0;
+	padding-top: 1.5em;
+	margin: 1.5em 0 .5em 0;
 	border-top: 1px dotted #858585;
 	width: 100%;
 	display: inline-block;

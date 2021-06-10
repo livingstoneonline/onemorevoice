@@ -143,6 +143,7 @@
 				<language ident="en">English</language>
 			</langUsage>
 		</profileDesc>
+		<xenoData type="css">@media only screen and (min-width: 480px){.table.liv_020062{font-size:0.8em;text-align:center;width:100%;border-collapse:collapse}.table.liv_020062 tbody{text-align:left;display:inline-block}.table.liv_020062 td{padding:0 0.5em}.table.liv_020062 tr.row:nth-child(8) > td:nth-child(1){text-align:right}.table.liv_020062 tr.row:nth-child(1) > td:nth-child(6){margin-left:-3em;display:inline-block}}</xenoData>
 		<revisionDesc>
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
@@ -156,7 +157,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text n="styleTEI-add"><!-- If file contains custom CSS, add n="styleTEI-add" -->
+	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->

@@ -75,8 +75,8 @@
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
+					<link rel="preload" as="style" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0001" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0003"/>
@@ -126,7 +126,7 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
+					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/rotate-toggle.css?="+randomString;document.head.appendChild(css);
 				</script>
 				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
@@ -134,15 +134,15 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0004"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001"/>
+				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
+					<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0001"/>
+				</xsl:if>
 				<xsl:if test="//xenoData[@type='css']">
 					<style>
 						<xsl:value-of select="//xenoData[@type='css']"/>
 					</style>
-				</xsl:if>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0004"/>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001"/>
-				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI-add.css?=newVers_0001"/>
 				</xsl:if>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

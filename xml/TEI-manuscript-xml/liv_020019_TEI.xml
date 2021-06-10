@@ -96,6 +96,7 @@
                 <language ident="en">English</language>
             </langUsage>
         </profileDesc>
+		<xenoData type="css">.container.liv_020019_0001,.container.liv_020019_0002,.container.liv_020019_0003{position:relative}.deletion.liv_020019_0001,.deletion.liv_020019_0002,.deletion.liv_020019_0003{border-left:1px solid #858585;position:absolute}.deletion.liv_020019_0001,.deletion.liv_020019_0002{height:100%;transform:rotate(357deg);-ms-transform:rotate(357deg);-moz-transform:rotate(357deg);-webkit-transform:rotate(357deg);-o-transform:rotate(357deg)}.deletion.liv_020019_0001{padding-bottom:1em;margin-top:1em;left:9em}.deletion.liv_020019_0002{padding-bottom:1em;margin-top:1em;left:7em}.deletion.liv_020019_0003{height:93%;margin-top:3em;left:8.5em}.deletion2.liv_020019_0003{text-decoration:1px #858585 line-through}.flourish1.liv_020019_0001{font-size:3em;padding-right:0.5em;transform:scale(1, -.3) !important;-webkit-transform:scale(1, -.3) !important;-moz-transform:scale(1, -.3) !important;-ms-transform:scale(1, -.3) !important;-o-transform:scale(1, -.3) !important}.flourish2.liv_020019_0001{font-size:2em;padding-right:2.2em;transform:scale(4, -.8) !important;-webkit-transform:scale(4, -.8) !important;-moz-transform:scale(4, -.8) !important;-ms-transform:scale(4, -.8) !important;-o-transform:scale(4, -.8) !important}@media only screen and (min-width: 768px){.marginalnote.liv_020019_0002{transform:rotate(270deg);-ms-transform:rotate(270deg);-moz-transform:rotate(270deg);-webkit-transform:rotate(270deg);-o-transform:rotate(270deg);top:25em;left:-15em;position:absolute}}@media only screen and (min-width: 768px){.pagenote.liv_020019_0003{margin-left:-1.5em}}</xenoData>
         <revisionDesc>
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
@@ -109,7 +110,7 @@
         </revisionDesc>
     </teiHeader>
 
-    <text n="styleTEI-add">
+    <text n="rotate-toggle">
 		<body n="e6e6de"><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 			<div rend="black"><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
 
@@ -141,11 +142,11 @@
 <lb/><p><space extent="1" unit="words"/><persName>M<hi rend="sup">rs</hi> Moffat</persName> unites in kindest regards
 <lb/>to the Directors <space extent="2" unit="chars"/>Yours ever affectionately
 <lb/><seg rend="right"><persName>Robert Moffat</persName></seg>
-<lb/><seg rend="right" n="flourish1 liv_020019_0001">〜</seg></p>
+<lb/><seg rend="right" n="flourish1 liv_020019_0001 exclude">〜</seg></p>
 <lb/><p rend="no-indent"><seg rend="small">P.S.</seg> I am thankful for the information you
 <lb/>give regarding the sum sent to me by <persName>M<hi rend="sup">r</hi> Alexdander</persName>
 <lb/>of <country>America</country>.
-<lb/><seg rend="right" n="flourish2 liv_020019_0001">〜</seg></p>
+<lb/><seg rend="right" n="flourish2 liv_020019_0001 exclude">〜</seg></p>
 <lb/><p>It has just occured to me that the following
 <lb/>literal translation of <persName>Sechele</persName>s last letter to
 <lb/>me respecting the attack of the <term type="collective">Boers</term> might

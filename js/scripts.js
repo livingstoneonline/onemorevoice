@@ -261,7 +261,7 @@ function checkUrl () {
 		window.location.href.indexOf("design") > -1 ||
 		window.location.href.indexOf("collaboration") > -1 ||
 		window.location.href.indexOf("guidelines") > -1) {	
-			document.getElementById("concepts-tab").setAttribute("class","current");
+			document.getElementById("about-tab").setAttribute("class","current");
 	};
 	if (window.location.href.indexOf("contributors") > -1 ||
 		window.location.href.indexOf("acknowledgments") > -1 ||

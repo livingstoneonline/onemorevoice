@@ -1341,14 +1341,8 @@ aside.sidebar .external li a:focus-within img{
 	text-align: unset !important;
 }
 .translate{
-	margin: 0;
 	max-width: 170px;
 	overflow: hidden !important;
-}
-@media only screen and (min-width: 768px){
-	.translate{
-		margin: 0 0 1em;
-	}
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{
@@ -2261,3 +2255,50 @@ hr{
 /* html {
 	scroll-padding-top: 80px;
 } */
+
+
+.button-container{
+	display: flex;
+	align-items: baseline;
+	max-height: 70px;
+}
+@media only screen and (min-width: 768px){
+	.button-container{
+		margin: 0 0 2em 0;
+	}
+}
+.download{
+	margin: 0 1em;
+	padding: 0 1em;
+	border-left: 2px solid #e3e3e3;
+}
+.download div:nth-child(1){
+	font-size: 14.3px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	border: 2px solid #E3E3E3;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	margin: 0;
+	padding: 2.5px 7px;
+	display: unset;
+}
+.download div:nth-child(1):hover,
+.download div:nth-child(1):focus{
+	border: 2px #204A79 solid;
+	background: #E3E3E3;
+}
+.download div:nth-child(1) a{
+	color: unset;
+	text-decoration: none;
+}
+.download div:nth-child(1) a:focus{
+	background: transparent;
+}
+.download div:nth-child(2){
+	color: #666 ;
+	font-size: 11px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}

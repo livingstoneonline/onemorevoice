@@ -1345,49 +1345,60 @@ aside.sidebar .external li a:focus-within img{
 	}
 }
 .download{
-	margin-right: 1em;
-	padding-right: 1em;
-	border-right: 2px solid #e3e3e3;
-	line-height: 1em;
-	display: inline-block;
+  display: none;
+  visibility: hidden;
 }
-.download div:nth-child(1){
-	font-size: 14.3px;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	border: 2px solid #E3E3E3;
-	border-radius: 7px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	margin: 0;
-	padding: 1px 10px;
-	height: 20px;
-}
-.download div:nth-child(1):hover,
-.download div:nth-child(1):focus{
-	border: 2px #204A79 solid;
-	background: #E3E3E3;
-}
-.download div:nth-child(1) a,
-.download div:nth-child(1) a:visited{
-	color: unset;
-	text-decoration: none;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.download div:nth-child(1) a:hover,
-.download div:nth-child(1) a:focus{
-	background: transparent;
-}
-.download div:nth-child(2){
-	color: #666 ;
-	font-size: 11px;
-	font-family: 'Source Sans Pro', sans-serif;
-	text-align: center;
-	margin-top: .6em;
+@media only screen and (min-width: 768px){
+	.download{
+		margin-right: 1em;
+		padding-right: 1em;
+		border-right: 2px solid #e3e3e3;
+		line-height: 1em;
+		display: inline-block;
+		visibility: visible;
+	}
+	.download div:nth-child(1){
+		font-size: 14.3px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		border: 2px solid #E3E3E3;
+		border-radius: 7px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		margin: 0;
+		padding: 1px 10px;
+		height: 20px;
+	}
+	.download div:nth-child(1):hover,
+	.download div:nth-child(1):focus{
+		border: 2px #204A79 solid;
+		background: #E3E3E3;
+	}
+	.download div:nth-child(1) a,
+	.download div:nth-child(1) a:visited{
+		color: unset;
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.download div:nth-child(1) a:hover,
+	.download div:nth-child(1) a:focus{
+		background: transparent;
+	}
+	.download div:nth-child(1) i{
+    color: #404040;
+		padding-left: 1.75em;
+  }
+	.download div:nth-child(2){
+		color: #666 ;
+		font-size: 11px;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+		margin-top: .6em;
+	}
 }
 
 

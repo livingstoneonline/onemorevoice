@@ -1357,10 +1357,18 @@ aside.sidebar .external li a:focus-within img{
 		display: inline-block;
 		visibility: visible;
 	}
+	#object-div .download{
+		border: 0;
+		margin: .5em auto 0;
+		padding: 0;
+		width: 195px;
+		display: block;
+	}
 	.download div:nth-child(1){
 		font-size: 14.3px;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
+		background: #fff;
 		border: 2px solid #E3E3E3;
 		border-radius: 7px;
 		-webkit-border-radius: 7px;

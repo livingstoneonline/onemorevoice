@@ -379,23 +379,26 @@ button::-moz-focus-inner{
 	border: 0;
 }
 #rotate-button{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 600;
-	font-size: .8em;
-	background-color: #E3E3E3;
-	border: 1px solid #858585;
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	float: left;
-	padding: .5em 1em;
-	margin: 1.5em 2px;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 768px){
 	#rotate-button{
-		display: block;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 600;
+		font-size: .8em;
+		background-color: #E3E3E3;
+		border: 1px solid #858585;
+		border-radius: 7px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		float: left;
+		margin: 1.5em 0;
+		padding: 14px 8px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		visibility: visible;
 	}
 }
@@ -575,6 +578,9 @@ button::-moz-focus-inner{
 .object .p{
 	padding: 0;
 	margin: 0;
+}
+#object-div .p:first-of-type{
+	margin-top: 1.5em;
 }
 .journal .p,
 .journal .ab{

@@ -459,8 +459,8 @@
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="button-container">
-						<div class="download"><div><a download="/html/transcriptions/{$LEAP-ID}.html">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens without styling – ideal for printing</div></div>
-						<div class="download"><div><a download="/xml/TEI-manuscript-xml/{$LEAP-ID}.xml">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
 						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
@@ -484,8 +484,8 @@
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="button-container">
-						<div class="download"><div><a download="/html/transcriptions/{$LEAP-ID}.html">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens without styling – ideal for printing</div></div>
-						<div class="download"><div><a download="/xml/TEI-publication-xml/{$LEAP-ID}.xml">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="/xml/TEI-book-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
 						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
@@ -504,7 +504,7 @@
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="button-container">
-						<div class="download"><div><a download="/html/transcriptions/{$LEAP-ID}.html">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image not included – ideal for printing</div></div>
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image not included – ideal for printing</div></div>
 						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
@@ -526,7 +526,7 @@
 				<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
 					<div class="button-container">
-						<div class="download"><div><a download="/html/transcriptions/{$LEAP-ID}.html">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image not included – ideal for printing</div></div>
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image not included – ideal for printing</div></div>
 						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
 					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>

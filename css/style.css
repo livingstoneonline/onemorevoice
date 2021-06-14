@@ -22,7 +22,8 @@ Table of Contents
 1.7.3. Overlay
 1.8. Footer & Fat Footer
 1.9. Sidebar
-1.10. Google Translate
+1.10.1. Download Page Button
+1.10.2. Google Translate
 1.11. Archival Texts
 1.12. Object Gallery
 1.13. Book-Length Works
@@ -1330,7 +1331,86 @@ aside.sidebar .external li a:focus-within img{
 }
 
 
-/* 1.10. Google Translate */
+/* 1.10.1 Download Page Button */
+
+.button-container{
+	display: flex;
+	align-items: baseline;
+	max-height: 70px;
+}
+@media only screen and (min-width: 768px){
+	.button-container{
+		margin: 0 0 1.5em 0;
+		display: flex;
+	}
+}
+.download{
+  display: none;
+  visibility: hidden;
+}
+@media only screen and (min-width: 768px){
+	.download{
+		margin-right: 1em;
+		padding-right: 1em;
+		border-right: 2px solid #e3e3e3;
+		line-height: 1em;
+		display: inline-block;
+		visibility: visible;
+	}
+	#object-div .download{
+		border: 0;
+		margin: .5em auto 0;
+		padding: 0;
+		width: 195px;
+		display: block;
+	}
+	.download div:nth-child(1){
+		font-size: 14.3px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		background: #fff;
+		border: 2px solid #E3E3E3;
+		border-radius: 7px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		margin: 0;
+		padding: 1px 8px;
+		height: 20px;
+		min-width: 150px;
+	}
+	.download div:nth-child(1):hover,
+	.download div:nth-child(1):focus-within{
+		border: 2px #204A79 solid;
+		background: #E3E3E3;
+	}
+	.download div:nth-child(1) a,
+	.download div:nth-child(1) a:visited{
+		color: unset;
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.download div:nth-child(1) a:hover,
+	.download div:nth-child(1) a:focus{
+		background: transparent;
+	}
+	.download div:nth-child(1) i{
+    color: #404040;
+  }
+	.download div:nth-child(2){
+		color: #666 ;
+		font-size: 11px;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+		margin-top: .6em;
+	}
+}
+
+
+/* 1.10.2. Google Translate */
 /* Also see other styles marked "Google Translate" */
 
 .goog-te-banner-frame.skiptranslate{
@@ -1341,28 +1421,10 @@ aside.sidebar .external li a:focus-within img{
 	text-align: unset !important;
 }
 .translate{
-	margin: 0;
 	max-width: 170px;
+	float: left;
 	overflow: hidden !important;
-}
-@media only screen and (min-width: 768px){
-	.translate{
-		margin: 0 0 1em;
-	}
-}
-/* Included in criticalTEI CSS, start */
-#google_translate_element{
-	min-height: 72px;
-}
-@media only screen and (min-width: 768px){
-	#google_translate_element{
-		min-height: 68px;
-	}
-}
-@media only screen and (min-width: 992px){
-	#google_translate_element{
-		min-height: 66px;
-	}
+	margin-bottom: -.2em;
 }
 /* Included in criticalTEI CSS, end */
 #google_translate_element > div > span > a > img{
@@ -1388,6 +1450,8 @@ div.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	padding-left: 4px;
+	line-height: 2.5em;
+	margin-top: .5em;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
 div.skiptranslate:nth-child(1) > span:nth-child(2){

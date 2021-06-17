@@ -718,6 +718,19 @@ aside.sidebar .popular li a img{
 	overflow: hidden !important;
   margin-bottom: -.2em;
 }
+#google_translate_element{
+	min-height: 72px;
+}
+@media only screen and (min-width: 768px){
+	#google_translate_element{
+		min-height: 68px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#google_translate_element{
+		min-height: 66px;
+	}
+}
 #google_translate_element > div > span > a > img{
   width: 3.5em;
 }

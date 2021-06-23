@@ -70,6 +70,17 @@ also see 2.9 for manuscript colors
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 } */
+/* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+::selection {
+	color: #fff;
+  background: #204A79;
+  text-shadow: none;
+}
+::-moz-selection {
+  color: #fff;
+	background: #204A79;
+  text-shadow: none;
+}
 html{
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
@@ -186,6 +197,7 @@ aside.credits#credits2-div{
 main{
 	font-size: 1.25em;
 	padding: 1em;
+	display: block;
 }
 aside.text-box{
 	background: #e3e3e3;
@@ -362,6 +374,7 @@ h4{
 img{
 	font-weight: 300;
 	color: #e6e6e6;
+	border-style: none;
 	width: 100%;
 	height: auto;
 	display: inline-block;
@@ -458,6 +471,7 @@ a:focus img{
 a,
 a:visited{
 	color: #204A79;
+	background-color: transparent;
 }
 a:hover,
 a:focus{
@@ -1413,6 +1427,9 @@ aside.sidebar .external li a:focus-within img{
 /* 1.10.2. Google Translate */
 /* Also see other styles marked "Google Translate" */
 
+button{
+  -webkit-appearance: button;
+}
 .goog-te-banner-frame.skiptranslate{
 	display: none !important;
 	visibility: hidden !important;
@@ -2208,6 +2225,9 @@ ul.acknowledgments{
 }
 .smallcaps{
 	font-variant: small-caps;
+}
+strong{
+	font-weight: bolder;
 }
 .underline{
 	text-decoration: underline;

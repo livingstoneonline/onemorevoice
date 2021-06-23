@@ -8,10 +8,10 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Letter to Henry Venn</title>
+				<title>Letter to Henry Venn; Letter to Samuel Crowther</title>
 				<!-- Title without date -->
 				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="alternative">Letter to Henry Venn, 27 February 1867</title>
+				<title type="alternative">Letter to Henry Venn, 27 February 1867; Letter to Samuel Crowther, 4 December 1866</title>
 				<!-- Title, date -->
 				<author>Crowther, Samuel, c.1809-1891</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -19,6 +19,8 @@
 				<!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Samuel Crowther</author>
 				<!-- First author only: Forename Surname -->
+				<author>Dewring, J.R.</author>
+				<author role="normalized">J.R. Dewring</author>
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -51,7 +53,7 @@
 				<authority>One More Voice</authority>
 				<publisher>Livingstone Online</publisher>
 				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-				<date>2020</date>
+				<date>2021</date>
 				<idno type="LEAP-ID">liv_020055</idno>
 				<!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- Edit <availability> as relevant -->
@@ -90,16 +92,19 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>Letter to Henry Venn</title>
+					<title>Letter to Henry Venn; Letter to Samuel Crowther</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
 					<author xml:id="SC">Crowther, Samuel, c.1809-1891</author>
+					<author xml:id="JRD">Dewring, J.R.</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
 					<date type="composition" when="1867-02-27">27 February 1867</date>
+					<date type="composition" when="1866-12-04">4 December 1866</date>
 					<!-- See item for composition place; remove if not given --> 
 					<placeName type="compositionPlace">Mission House, Bonny</placeName>
+					<placeName type="compositionPlace">Nun Station</placeName>
 				</bibl>
 			</sourceDesc>
 			<!-- End of manuscript <sourceDesc> -->
@@ -252,7 +257,7 @@
 	</div>
 
 	<div>	
-<fw rend="center">(<add place="inline" rend="gray">3</add>2.)</fw>
+<fw rend="center">(<del><seg rend="gray">3</seg></del>2.)</fw>
 	</div>
 	
 
@@ -295,7 +300,7 @@
 	</div>
 
     <div>	
-<fw rend="center">(<add place="inline" rend="gray">3<!-- vertical strike through this three. MBT --></add>3.)</fw>
+<fw rend="center">(<del><seg rend="gray">3</seg><!-- vertical strike through this three. MBT --></del>3.)</fw>
     </div>
 	   <div> 
 	   	
@@ -340,7 +345,7 @@
 		</div>
 		</div>
 	   	<div>	
-			<fw rend="center">(<add place="inline" rend="gray">3</add>4.)</fw>
+			<fw rend="center">(<del><seg rend="gray">3</seg></del>4.)</fw>
 		</div>
 
 
@@ -383,7 +388,7 @@
 <lb/>so long without some amusing talk of thier own.</p>
 	</div>
 	<div>	
-		<fw rend="center">(<add place="inline" rend="gray">3</add>5.)</fw>
+		<fw rend="center">(<del><seg rend="gray">3</seg></del>5.)</fw>
 	</div>
 
 <pb facs="liv_020055_0006" n="0006"/>
@@ -425,7 +430,7 @@
 <lb/>the Creation&#8212; <space extent="1" unit="chars"/>The Fall of man. &#8212; by two children, each by
 <lb/>himself &#8212; <persName>Philip</persName> and <persName>Nathaniel</persName>. <space extent="2" unit="chars"/>The other pieces were
 <lb/><persName>Cain</persName> and <persName>Abel</persName>, &#8212; The Ark. &#8212; The Flood. &#8212; The Flood abated&#8212;</seg></p> 
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(6.)</fw>
+<lb/><fw rend="center"><del><seg rend="gray">3</seg></del>(6.)</fw>
 	</div>
 
 	<pb facs="liv_020055_0007" n="0007"/>
@@ -468,7 +473,7 @@
 <lb/>not to sell the books away only for the sake of selling, but only to
 <lb/>those who would learn them; a much larger number of books,
 <lb/><space extent="12" unit="words"/><seg type="catch">however,</seg>
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(7.)</fw>
+<lb/><fw rend="center"><del><seg rend="gray">3</seg></del>(7.)</fw>
 
 <pb facs="liv_020055_0008" n="0008"/>
 <!-- continuation of double lines from previous page, in right margin on this page AM -->
@@ -506,7 +511,7 @@
 <lb/>the <term type="foodstuff">garlick</term>, feel annoyed at the dawn of the decline of their long
 <lb/>standing system, put difficulties in the way of carrying out
 <lb/>their laudable plan of liberation from idolatrous bondage. <add place="marginright" rend="gray">CA3/04/226<hi rend="sup">b</hi></add>
-<lb/><fw rend="center"><add place="inline" rend="gray">3.</add>(8.)</fw>
+<lb/><fw rend="center"><del><seg rend="gray">3.</seg></del>(8.)</fw>
 
 	<pb facs="liv_020055_0009" n="0009"/>
 <lb/>merely to save themselves from public disgrace. <space extent="1" unit="chars"/>The
@@ -545,18 +550,17 @@
 <lb/><p><persName>Oko Jumbo</persName> <choice><orig>shewed</orig><reg>showed</reg></choice> off his knowledge of Scripture history
 <lb/>to his brother chiefs. No sooner these figures representing
 <lb/><space extent="12" unit="words"/><space extent="2" unit="chars"/><seg type="catch">the</seg>
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(9.)</fw>  
+<lb/><fw rend="center"><del><seg rend="gray">3</seg></del>(9.)</fw>  
  
 
 	<pb facs="liv_020055_0010" n="0010"/>
 <!-- continuation of vertical red line from previous page, but on this page has drifted onto the main text, about one inch in from left margin AM -->
 <lb/>birth of Christ, his presentation in the temple, the visit
 <lb/>of the wise men, and <persName>Solomon</persName>'s decision of the disputed living
-<lb/>child were exhibited and explained, <unclear cert="medium">than</unclear> <persName>Oko Jumbo</persName> at
+<lb/>child were exhibited and explained, <choice><sic>than</sic><corr>then</corr></choice> <persName>Oko Jumbo</persName> at
 <lb/>once undertook to explain them to his brother chiefs, either
 <lb/>in the <settlement type="town">Bonny</settlement> or <term type="collective">Ibo</term> language, as both languages are spoken
 <lb/>here, besides the broken English as it is spoken on the coast.</p>
-<lb/><milestone unit="section" rend="line red"/>
 <lb/><p>When the slide of the butcher with the head of the <term type="animal">pig</term> in a plate
 <lb/>was <choice><orig>shewn</orig><reg>shown</reg></choice>, the head of the <term type="animal">pig</term> and of the butcher being alternately placed
 <lb/>in the plate, when this was explained the patron of the <placeName>Temple of
@@ -574,7 +578,7 @@
 <lb/>the dissolving view, but these amusements must be postponed
 <lb/>till our most important work is lessened, and another
 <lb/>leisure evening can be better spared.</p>
-<lb/><p>The work of getting up a new station cannot be so
+<lb/><p><space extent="2" unit="chars"/>The work of getting up a new station cannot be so
 <lb/>easily completed in this place as in others, especially when
 <lb/>one must fetch his own workmen from other places; the system
 <lb/>of day labourer is not practised here, every such labourer having
@@ -582,23 +586,23 @@
 <lb/>to discharge the workmen, because they could not be managed
 <lb/>by the schoolmasters who had no knowledge of what was to be
 <lb/>done: though our dwelling house was then unfinished, yet
-<lb/>I am thankful, today, we have a comfortable shelter in which
-<lb/>I now take my abode on <unclear cert="low">chore</unclear> with the <term type="collective">Native Teachers</term>,
-<lb/><space extent="11" unit="words"/><seg type="catch">where</seg>
-<lb/><fw rend="center">(10)</fw><!-- "4" in pencil underneath the "10" AM -->  
+<lb/>I am thankful, to say, we have a comfortable shelter in which
+<lb/>I now take my abode on shore with the <term type="collective">Native Teachers</term>,
+<lb/><space extent="12" unit="words"/><seg type="catch">where</seg>
+<lb/><fw rend="center"><del><seg rend="gray">4</seg></del>(10.)</fw><!-- "4" in pencil underneath the "10" AM -->  
 
 	<pb facs="liv_020055_0011" n="0011"/>
 <lb/>where I can see after my works better and move more conveniently
 <lb/>among the people. Though unfinished as it is, yet it is <w>comfort<seg type="hyphen">-</seg>
 <lb break="no"/>able</w> enough, that I could take in a sick <term type="collective">French</term> sailor from
-<lb/>the little <term type="collective">French</term> surveying Cutter the "Joseph Leon", for a change on
+<lb/>the little <term type="collective">French</term> surveying Cutter the "Joseph Leon," for a change on
 <lb/>shore: the situation  of our premises being the best yet selected on
 <lb/>shore, for dryness and advantage of sea breeze, in seventeen days,
 <lb/>the sick sailor was well enough to return on board his ship to
 <lb/>resume duty. The <term type="collective">French</term> crew are allowed to employ their time
-<lb/>in gardening in the mission ground in the absence of <persName>Cap<hi rend="sup underline">t</hi> L.Girard</persName>
+<lb/>in gardening in the mission ground in the absence of <persName>Cap<hi rend="sup underline">t</hi> L. Girard</persName>
 <lb/>who has returned to <country>France</country> to bring out a steamer to ascend
-<lb/>the <geogName>Niger</geogName> this year. Having seen that this place will be taken
+<lb/>the <geogName>Niger</geogName> this year. <space extent="1" unit="chars"/>Having seen that this place will be taken
 <lb/>advantage of for a change <add place="below"><seg type="metamark">^</seg></add> <del type="strikethrough">from</del><add place="above">by</add> the shipping, I have arranged to
 <lb/>leave the present house as it is for the use of our agents who
 <lb/>are all married, three couples, and to build a small house <w>se<seg type="hyphen">-</seg>
@@ -610,9 +614,9 @@
 <lb/>and that such works will be taught to their children beside book
 <lb/>learning, with which they were highly pleased.</p>  
 <lb/>
-<lb/><!-- start of vertical red line in left margin, continuing for the rest of this page and onto next page AM --><p><space extent="3" unit="words"/><placeName>Nun Station</placeName></p>
+<lb/><!-- start of vertical red line in left margin, continuing for the rest of this page and onto next page AM --><p><space extent="2" unit="words"/><placeName>Nun Station</placeName></p>
 <lb/><p>Extracts from <persName>M<hi rend="sup underline">r</hi> J. R. Dewring</persName>'s letter. <date when="1866-12-04">Dec<hi rend="sup underline">r</hi> 4<hi rend="sup underline">th</hi> 1866</date>.</p>
-<lb/><p>"As I gave my word to you about the journey to <placeName>Idzŏ</placeName>,
+<lb/><p><space extent="2" unit="chars"/>"As I gave my word to you about the journey to <placeName>Idzŏ</placeName>,
 <lb/>I have accomplished it. On the <date when="1866-10-05">5<hi rend="sup underline">th</hi> Oct</date> the <persName><placeName>Idzŏ</placeName> King</persName> sent
 <lb/>messengers again, he gave them strict order not to return
 <lb/>home without me. I considered how I could best do it, having
@@ -622,20 +626,19 @@
 <lb/>to start for <placeName>Idzŏ</placeName> on <date when="1866-10-09">Monday the 9<hi rend="sup underline">th</hi></date> at one o'clock p.m. 
 <lb/>pulled all night till we came to a small town about
 <lb/><space extent="11" unit="words"/><seg type="catch">3.</seg>
-<lb/><space extent="3" unit="words"/><fw rend="center">(11.)</fw><!-- I think there's a "4" in pencil underneath the "11" AM --> 
-
+<lb/><space extent="3" unit="words"/><fw rend="center"><del><seg rend="gray">4</seg></del>(11.)</fw><!-- I think there's a "4" in pencil underneath the "11" AM --> 
 
 	<pb facs="liv_020055_0012" n="0012"/>
 <lb/><!-- continuation of vertical red line from previous page, in right margin on this page AM -->3.a.m. went on shore and cooked our food; after meal took
 <lb/>a little rest; at 6.a.m.  collected the people and my canoe men
 <lb/>read <persName>John</persName> 3<hi rend="sup underline">rd</hi> C. and prayed: before I departed I gave them <del type="strikethrough">a</del> some
 <lb/><term type="plant_foodstuff">rice</term> and a little <term type="plant_foodstuff">tobacco</term>; took our journey, reached to <settlement type="village">Koloma</settlement>
-<lb/>about 11.a.m. <persName>Manga</persName> the <persName>King</persName> welcomed me. The place
+<lb/>about 11.a.m. <space extent="1" unit="chars"/><persName>Manga</persName> the <persName>King</persName> welcomed me. The place
 <lb/>is a small village, containing only five streets. They rear
 <lb/><term type="animal">cows</term> and <term type="animal">goats</term>. At night the <persName>King</persName> gathered all his household
 <lb/>for prayer. In the morning I asked him to gather his town for
 <lb/>morning prayer, 40 in number, but many did not attend. I
-<lb/>addressed them from <persName>Luke</persName> II. v.1-13. This village is promising.
+<lb/>addressed them from <persName>Luke</persName> 11. v.1-13. This village is promising.
 <lb/>The <persName>King</persName> stated that he prayed daily that his children should
 <lb/>receive instruction. The <persName><placeName>Idzŏ</placeName> King</persName> gave me a boy for
 <lb/>instruction, and another was brought here to me. The story
@@ -644,23 +647,21 @@
 <lb/>said, should <placeName>Idzŏ</placeName> speak English and they not? What have
 <lb/>they been doing? &#8212; On the <date when="1866-10-22">22<hi rend="sup underline">nd</hi> of Oct.</date> a war canoe was in sight,
 <lb/>the <term type="collective"><placeName>Akassa</placeName> men</term> whom I employed at work began to make their escape.
-<lb/>I stopped <add place="below"><seg type="metamark">^</seg></add> <add place="above">them</add>, the canoe came to us, I found the owner to be <persName>M<hi rend="sup underline">r</hi> Sambo</persName>
+<lb/>I stopped <add place="below"><seg type="metamark">^</seg></add> <add place="above">them<choice><sic>,</sic><corr/></choice></add>, the canoe came to us, I found the owner to be <persName>M<hi rend="sup underline">r</hi> Sambo</persName>
 <lb/>from <placeName>Brass</placeName>, with his war men. I received him gladly; he asked
-<lb/>if our morning prayer was over, I told him, No. he was very
+<lb/>if our morning prayer was over, I told him, No. <choice><sic>he</sic><corr/></choice> was very
 <lb/>glad to meet it; after its close, he gave me three pieces of cloth,
 <lb/>one paper of red caps 1 Doz. and two heads of <term type="plant_foodstuff">Tobacco</term>, contribution
-<lb/>to the mission. I received also from <persName>M<hi rend="sup underline">r</hi> White</persName> of <placeName>Walkers' Factory</placeName>
+<lb/>to the mission. I received also from <persName>M<hi rend="sup underline">r</hi> White</persName> of <placeName>Walker's Factory</placeName>
 <lb/>three pieces of cloth to aid the mission. "</p>
 <lb/><p><space extent="3" unit="words"/>School.</p>
 <lb/><p>Boarders. <term type="collective">3 <placeName>Akassa</placeName> boys</term>.
-<lb/><space extent="6" unit="chars"/>"<space extent="5" unit="chars"/><term type="collective">2 <placeName>Idzŏ</placeName> D<hi rend="sup underline">o</hi></term>
+<lb/><space extent="6" unit="chars"/>"<space extent="6" unit="chars"/><term type="collective">2 <placeName>Idzŏ</placeName> D<hi rend="sup underline">o</hi></term>
 <lb/><space extent="6
-" unit="chars"/>"<space extent="5" unit="chars"/><term type="collective">1 <placeName>Brass</placeName> D<hi rend="sup underline">o</hi></term>
+" unit="chars"/>"<space extent="6" unit="chars"/><term type="collective">1 <placeName>Brass</placeName> D<hi rend="sup underline">o</hi></term>
 <lb/>Congregation 22 &#8212;<space extent="7" unit="chars"/>(signed) <persName>J. R. Dewring.</persName> &#8212;<!-- vertical red line in right margin ends here AM -->
-<lb/><milestone unit="section" rend="line red"/>
-<lb/><space extent="6" unit="words"/><persName>S. A. Crowther</persName>. &#8212; <add place="marginright" rend="gray">CA3/04/226<hi rend="sup">c</hi></add></p>
-<lb/><fw rend="center">(12)</fw>
-<lb/><ab rend="center gray">12</ab><!-- I think there's a "4" in pencil underneath the "12" AM -->
+<lb/><space extent="7" unit="words"/><persName>S. A. Crowther</persName>. &#8212; <add place="marginright" rend="gray">CA3/04/226<hi rend="sup">c</hi></add></p>
+<lb/><fw rend="center"><del><seg rend="gray">4</seg></del>(12)</fw>
 </div>
 	</div>
 	</div>

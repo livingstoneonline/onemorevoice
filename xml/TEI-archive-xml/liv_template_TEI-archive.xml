@@ -71,7 +71,7 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<!-- Use this version of <sourceDesc> if manuscript -->
 			<sourceDesc>
 				<msDesc type="manuscript">
 					<msIdentifier>
@@ -107,56 +107,6 @@
 				</bibl>
 			</sourceDesc>
 			<!-- End of manuscript <sourceDesc> -->
-
-			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
-			<sourceDesc>
-				<biblStruct type="journal">
-					<monogr>
-						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
-						<title></title>
-						<!-- Publication title: journal or book -->
-						<!-- Author here used only for books -->
-						<!-- Forename Surname-->
-						<author></author>
-						<editor></editor>
-						<!-- Editor (if known; otherwise leave blank -->
-						<imprint>
-							<biblScope unit="section"></biblScope>
-							<!-- Section title (if known; otherwise leave blank) -->
-							<biblScope unit="vol"></biblScope>
-							<!-- Volume (if known; otherwise leave blank) -->
-							<biblScope unit="issue"></biblScope>
-							<!-- Issue (if known; otherwise leave blank) -->
-							<biblScope unit="pages"></biblScope>
-							<!-- Pages (if known; otherwise leave blank) -->
-							<pubPlace></pubPlace>
-							<!-- Publication place (if known; otherwise leave blank) -->
-							<publisher></publisher>
-							<!-- Publisher (if known; otherwise leave blank) -->
-							<date></date>
-							<!-- Item date; same as date in <title type="alternative"> above -->
-						</imprint>
-					</monogr>
-				</biblStruct>
-				<bibl type="sourceMetadata">
-					<!-- Title without date -->
-					<!-- Same as <title> above --> 
-					<title>“”</title>
-					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
-					<!-- Same as <author> above -->
-					<!-- xml:id = each author's initials -->
-					<author xml:id=""></author>
-					<!-- Same as <date> in previous section -->
-					<!-- Write out date: Day Month Year -->
-					<!-- @when = YYYY-MM-DD -->
-					<date type="composition" when=""></date>
-					<!-- Can be type="composition" or type="publication" -->
-					<!-- See item for composition place; remove if not given -->
-					<placeName type="compositionPlace"></placeName>
-					<!-- Can be "compositionPlace" or "focusRegion" -->
-				</bibl>
-			</sourceDesc>
-			<!-- End of published text <sourceDesc> -->
 
 		</fileDesc>
 		<profileDesc>

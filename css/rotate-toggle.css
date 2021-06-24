@@ -104,7 +104,7 @@ liv_020055 coding [temporary]
 	display: inline-block;
 }
 .marginal1.liv_020055_0001{
-	border-left: 1px #902D27 solid;
+	border-left: 2px #902D27 solid;
 	border-radius: 1em 0 0 0;
 	-webkit-border-radius: 1em 0 0 0;
 	-moz-border-radius: 1em 0 0 0;
@@ -131,7 +131,7 @@ liv_020055 coding [temporary]
 	left: -1.5em;
 }
 .marginal1.liv_020055_0002{
-	border-right: 1px #902D27 solid;
+	border-right: 2px #902D27 solid;
 	margin-right: .7em;
 }
 .marginal2.liv_020055_0002{
@@ -139,19 +139,19 @@ liv_020055 coding [temporary]
 	margin-right: 1.1em;
 }
 .wrapper2.liv_020055_0003{
-	border-left: 1px #902D27 solid;
+	border-left: 2px #902D27 solid;
 	margin-left: -.5em;
 	padding-left: .5em;
 }
 .box1.liv_020055_0003{
-	border-left: 1px #3d4245 solid;
-	border-bottom: 1px #3d4245 solid;
+	border-left: 2px #3d4245 solid;
+	border-bottom: 2px #3d4245 solid;
 	margin-left: -.25em;
 	margin-bottom: .35em;
 	padding-left: .25em;
 }
 .box2.liv_020055_0003{
-	border-top: 1px #902D27 solid;
+	border-top: 2px #902D27 solid;
 	margin-left: -.5em;
 	padding-left: .5em;
 }
@@ -175,14 +175,14 @@ liv_020055 coding [temporary]
 	content: ']';
 }
 .marginal1.liv_020055_0004{
-	border-right: 1px #902D27 solid;
+	border-right: 2px #902D27 solid;
 	border-radius: 0 26px 0 0;
 	-webkit-border-radius: 0 26px 0 0;
 	-moz-border-radius: 0 26px 0 0;
 	margin-right: 5.2em;
 }
 .marginal2.liv_020055_0004{
-	border-right: 1px #3d4245 solid;
+	border-right: 2px #3d4245 solid;
 	border-radius: 0 40px 0 0;
 	-webkit-border-radius: 0 40px 0 0;
 	-moz-border-radius: 0 40px 0 0;
@@ -205,7 +205,7 @@ liv_020055 coding [temporary]
 	bottom: 1.5em;
 }
 .box1.liv_020055_0005{
-	border-left: 1px #3d4245 solid;
+	border-left: 2px #3d4245 solid;
 	border-radius: 0 0 0 22px;
 	-webkit-border-radius: 0 0 0 22px;
 	-moz-border-radius: 0 0 0 22px;
@@ -214,24 +214,30 @@ liv_020055 coding [temporary]
 	padding-left: .25em;
 }
 .marginal1.liv_020055_0005{
-	border-left: 1px #902D27 solid;
+	border-left: 2px #902D27 solid;
 	margin-left: -1em;
 	padding-left: 1em;
 }
 .marginal2.liv_020055_0005{
-	border-left: 1px #3d4245 solid;
+	border-left: 2px #3d4245 solid;
 	margin-left: -1.8em;
 	padding-left: 1.8em;
 	display: block;
 }
 .marginal3.liv_020055_0005{
-	border-left: 1px #3d4245 solid;
+	border-left: 2px #3d4245 solid;
 	margin-top: -8px;
-	margin-left: -1.7em;
-  padding-left: 1.7em;
+	margin-left: -1.55em;
+  padding-left: 1.55em;
+}
+@media only screen and (min-width: 768px){
+	.marginal3.liv_020055_0005{
+		margin-left: -1.6em;
+		padding-left: 1.6em;
+	}
 }
 .marginal4.liv_020055_0005{
-	border-left: 1px #902D27 solid;
+	border-left: 2px #902D27 solid;
 	border-radius: 1em 0 0 0;
 	-webkit-border-radius: 1em 0 0 0;
 	-moz-border-radius: 1em 0 0 0;
@@ -267,15 +273,17 @@ liv_020055 coding [temporary]
 	-o-transform: rotate(270deg);
 	display: inline-block;
 	position: absolute;
-	top: 28em;
+	top: 32em;
 	left: -2em;
 }
+@media only screen and (min-width: 768px){
+	.wavyframe.liv_020055_0006{
+		top: 28em;	
+	}
+}
 .wavyholder.liv_020055_0006{
-	/* Clip edges, as some of the lines don't terminate nicely. */
 	overflow: hidden;
 	position: relative;
-	/* width: 540px; */
-	/* height: 50px; */
 }
 .wavy1.liv_020055_0006{
 	position: absolute;
@@ -290,37 +298,46 @@ liv_020055 coding [temporary]
 	background-position: 0px -20px;
 }
 .marginal1.liv_020055_0006{
-	border-left: 1px solid #902D27;
+	border-left: 2px solid #902D27;
 }
 .box1.liv_020055_0006{
-	border-top: 1px solid #902D27;
-	border-right: 1px solid #902D27;
-	border-left: 1px solid #902D27;
+	border-top: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+	border-left: 2px solid #902D27;
 	border-radius: 0 0 1px 1px;
 	display: block;
 }
 .box2.liv_020055_0006{
-	border-right: 1px solid #902D27;
-	border-bottom: 1px solid #902D27;
-	border-left: 1px solid #902D27;
+	border-right: 2px solid #902D27;
+	border-bottom: 2px solid #902D27;
+	border-left: 2px solid #902D27;
 }
 .box3.liv_020055_0006{
-	padding-right: 2.1em;
-	border-top: 1px solid #858585;
-	border-right: 1px solid #858585;
-	border-left: 1px solid #858585;
-	/* display: inline; */
+	padding-right: 1.75em;
+	border-top: 2px solid #858585;
+	border-right: 2px solid #858585;
+	border-left: 2px solid #858585;
+}
+@media only screen and (min-width: 768px){
+	.box3.liv_020055_0006{
+		padding-right: 1.95em;
+	}
 }
 .box4.liv_020055_0006{
 	text-indent: 0;
-	border-right: 1px solid #858585;
+	border-right: 2px solid #858585;
 	display: inline-block;
 }
 /* text in margin */
 .marginal2.liv_020055_0006{
 	text-align: right;
 	position: absolute;
-	right: 5em;
+	right: 0;
+}
+@media only screen and (min-width: 768px){
+	.marginal2.liv_020055_0006{
+		right: 5em;
+	}
 }
 /* grey line that extends under the word "as" */
 .marginal1.liv_020055_0007{

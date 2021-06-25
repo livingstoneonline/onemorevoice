@@ -1362,12 +1362,8 @@ aside.sidebar .external li a:focus-within img{
   display: none;
   visibility: hidden;
 }
-.hide{
-  display: none !important;
-  visibility: hidden !important;
-}
-@media only screen and (min-width: 992px){
-	.download.show{
+/* @media only screen and (min-width: 992px){
+	.download{
 		margin-right: 1em;
 		padding-right: 1em;
 		border-right: 2px solid #e3e3e3;
@@ -1375,14 +1371,14 @@ aside.sidebar .external li a:focus-within img{
 		display: inline-block;
 		visibility: visible;
 	}
-	#object-div .download.show{
+	#object-div .download{
 		border: 0;
 		margin: .5em auto 0;
 		padding: 0;
 		width: 195px;
 		display: block;
 	}
-	.download.show div:nth-child(1){
+	.download div:nth-child(1){
 		font-size: 14.3px;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
@@ -1396,13 +1392,13 @@ aside.sidebar .external li a:focus-within img{
 		height: 20px;
 		min-width: 150px;
 	}
-	.download.show div:nth-child(1):hover,
-	.download.show div:nth-child(1):focus-within{
+	.download div:nth-child(1):hover,
+	.download div:nth-child(1):focus-within{
 		border: 2px #204A79 solid;
 		background: #E3E3E3;
 	}
-	.download.show div:nth-child(1) a,
-	.download.show div:nth-child(1) a:visited{
+	.download div:nth-child(1) a,
+	.download div:nth-child(1) a:visited{
 		color: unset;
 		text-decoration: none;
 		width: 100%;
@@ -1411,21 +1407,21 @@ aside.sidebar .external li a:focus-within img{
 		align-items: center;
 		justify-content: space-between;
 	}
-	.download.show div:nth-child(1) a:hover,
-	.download.show div:nth-child(1) a:focus{
+	.download div:nth-child(1) a:hover,
+	.download div:nth-child(1) a:focus{
 		background: transparent;
 	}
-	.download.show div:nth-child(1) i{
+	.download div:nth-child(1) i{
     color: #404040;
   }
-	.download.show div:nth-child(2){
+	.download div:nth-child(2){
 		color: #666 ;
 		font-size: 11px;
 		font-family: 'Source Sans Pro', sans-serif;
 		text-align: center;
 		margin-top: .6em;
 	}
-}
+} */
 
 
 /* 1.10.2. Google Translate */

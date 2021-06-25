@@ -239,6 +239,7 @@ liv_020055 coding [temporary]
 	padding-left: 1em;
 }
 .marginal5.liv_020055_0005{
+	line-height: 1em;
 	position: absolute;
 	left: 0;
 }
@@ -247,6 +248,7 @@ liv_020055 coding [temporary]
 	left: 1em;
 }
 .marginal7.liv_020055_0005{
+	line-height: 1em;
 	transform: rotate(336deg);
 	-ms-transform: rotate(336deg);
 	-moz-transform: rotate(336deg);
@@ -268,7 +270,7 @@ liv_020055 coding [temporary]
 	display: inline-block;
 	position: absolute;
 	top: 33em;
-	left: -2em;
+	left: -1.5em;
 }
 @media only screen and (min-width: 768px){
 	.wavyframe.liv_020055_0006{
@@ -344,32 +346,125 @@ liv_020055 coding [temporary]
 	}
 }
 /* grey line that extends under the word "as" */
-.marginal1.liv_020055_0007{
-
+.marginal1a.liv_020055_0007{
+	border-left: 2px #858585 solid;
+	margin-left: -1em;
+	padding-left: 1em;
+	display: inline-block;
+}
+.marginal1b.liv_020055_0007{
+	border-left: 2px #858585 solid;
+	margin-left: -2.3em;
+	padding-left: 1em;
+	border-radius: 0 0 0 10px;
+	-webkit-border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;
+	display: inline-block;
+}
+@media only screen and (min-width: 768px){
+	.marginal1b.liv_020055_0007{
+		margin-left: -2.35em;
+	}
 }
 /* black line in left margin */
 .marginal2.liv_020055_0007{
-
+	border-left: 2px #3d4245 solid;
+	margin-left: -1.5em;
+	padding-left: 1.5em;
+	display: block;
 }
 /* red line in left margin */
 .marginal3.liv_020055_0007{
-
+	border-left: 2px #902D27 solid;
+	border-radius: 1.6em 0 0 0;
+	-webkit-border-radius: 1.6em 0 0 0;
+	-moz-border-radius: 1.6em 0 0 0;
+	margin-left: -1em;
+	padding-left: 1em;
+	display: block;
 }
 /* text in margin */
 .marginal4.liv_020055_0007{
-
+	line-height: 1em;
+	transform: rotate(322deg);
+	-ms-transform: rotate(322deg);
+	-moz-transform: rotate(322deg);
+	-webkit-transform: rotate(322deg);
+	-o-transform: rotate(322deg);
+	position: absolute;
+	left: 0.25em;
 }
 /* red line in left margin */
-.marginal1.liv_020055_0008{
-
+.marginal1a.liv_020055_0008{
+	border-right: 2px #3d4245 solid;
+	margin-right: -.5em;
+	padding-right: .5em;
+	display: block;
+	text-indent: 0;
+}
+@media only screen and (min-width: 768px){
+	.marginal1a.liv_020055_0008{
+		margin-right: -.75em;
+		padding-right: .75em;
+	}
+}
+.marginal1b.liv_020055_0008{
+	border-right: 2px #3d4245 solid;
+	margin-right: -.5em;
+	padding-right: .5em;
+	display: block;
 }
 /* black wavy line in left margin */
-.marginal2.liv_020055_0008{
-
+.marginal2a.liv_020055_0008{
+	border-right: 2px #902D27 solid;
+	margin-right: 0;
+	padding-right: 0;
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.marginal2a.liv_020055_0008{
+		margin-right: -.3em;
+		padding-right: .3em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.marginal2a.liv_020055_0008{
+		margin-right: -.25em;
+		padding-right: .25em;
+	}
+}
+.marginal2b.liv_020055_0008{
+	border-right: 2px #902D27 solid;
+	border-radius: 0 0 10px 0;
+	-webkit-border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;
+	margin-right: 0;
+	padding-right: 0;
+	display: block;
+}
+.holder.liv_020055_0008{
+	position: relative;
+}
+.archival.liv_020055_0008{
+	font-size: .9em;
+	transform: rotate(306deg);
+	-ms-transform: rotate(306deg);
+	-moz-transform: rotate(306deg);
+	-webkit-transform: rotate(306deg);
+	-o-transform: rotate(306deg);
+	display: inline-block;
+	position: absolute;
+	right: -6em;
 }
 /* red line in left margin that curls at top and bottom */
 .marginal1.liv_020055_0009{
-
+	border-left: 2px #902D27 solid;
+	border-radius: 1.6em 0 0 1em;
+	-webkit-border-radius: 1.6em 0 0 1em;
+	-moz-border-radius: 1.6em 0 0 1em;
+	margin-left: -.75em;
+	padding-left: .75em;
+	display: block;
 }
 /* red line that overlays text */
 .marginal1.liv_020055_0010{

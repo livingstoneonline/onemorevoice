@@ -459,7 +459,11 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -480,7 +484,11 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -496,7 +504,11 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -514,7 +526,11 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>

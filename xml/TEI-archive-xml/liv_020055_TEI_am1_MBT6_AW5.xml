@@ -8,10 +8,10 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Letter to Henry Venn</title>
+				<title>Letter to Henry Venn; Letter to Samuel Crowther</title>
 				<!-- Title without date -->
 				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="alternative">Letter to Henry Venn, 27 February 1867</title>
+				<title type="alternative">Letter to Henry Venn, 27 February 1867; Letter to Samuel Crowther, 4 December 1866</title>
 				<!-- Title, date -->
 				<author>Crowther, Samuel, c.1809-1891</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -19,6 +19,8 @@
 				<!-- First author only: Surname, Forename -->
 				<author role="first-normalized">Samuel Crowther</author>
 				<!-- First author only: Forename Surname -->
+				<author>Dewring, J.R.</author>
+				<author role="normalized">J.R. Dewring</author>
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
@@ -51,7 +53,7 @@
 				<authority>One More Voice</authority>
 				<publisher>Livingstone Online</publisher>
 				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
-				<date>2020</date>
+				<date>2021</date>
 				<idno type="LEAP-ID">liv_020055</idno>
 				<!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- Edit <availability> as relevant -->
@@ -90,16 +92,19 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>Letter to Henry Venn</title>
+					<title>Letter to Henry Venn; Letter to Samuel Crowther</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
 					<author xml:id="SC">Crowther, Samuel, c.1809-1891</author>
+					<author xml:id="JRD">Dewring, J.R.</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
 					<date type="composition" when="1867-02-27">27 February 1867</date>
+					<date type="composition" when="1866-12-04">4 December 1866</date>
 					<!-- See item for composition place; remove if not given --> 
 					<placeName type="compositionPlace">Mission House, Bonny</placeName>
+					<placeName type="compositionPlace">Nun Station</placeName>
 				</bibl>
 			</sourceDesc>
 			<!-- End of manuscript <sourceDesc> -->
@@ -205,7 +210,7 @@
 	</div>
 
 	<div>	
-<fw rend="center">(1)</fw>
+<fw rend="center">(1.)</fw>
 	</div>
 
 
@@ -252,7 +257,7 @@
 	</div>
 
 	<div>	
-<fw rend="center">(<add place="inline" rend="gray">3</add>2)</fw>
+<fw rend="center">(<del><seg rend="gray">3</seg></del>2.)</fw>
 	</div>
 	
 
@@ -260,7 +265,7 @@
 	<div n="wrapper2 liv_020055_0003">
 <lb/><p rend="no-indent" n="box1 liv_020055_0003">for the dark places of the earth are full of the <w>habita-
 <lb/>tions</w> of cruelty." Surely God will hear our prayers.</p>
-<lb/><p n="box2 liv_020055_0003">But there is a division in the camp of <persName>Satan</persName>.</p>
+<lb/><p n="box2 liv_020055_0003">But there is a division in the camp of Satan.</p>
 <lb/><p>Having given a fair statement of the renewed efforts of
 <lb/>idolatry, to strengthen itself in the face of <term type="collective"><choice><sic>christianity</sic><corr>Christianity</corr></choice></term>, I now
 <lb/>proceed to give some accounts of the silent, but sure progress
@@ -295,7 +300,7 @@
 	</div>
 
     <div>	
-<fw rend="center">(<add place="inline" rend="gray">3<!-- vertical strike through this three. MBT --></add>3.)</fw>
+<fw rend="center">(<del><seg rend="gray">3</seg><!-- vertical strike through this three. MBT --></del>3.)</fw>
     </div>
 	   <div> 
 	   	
@@ -307,10 +312,10 @@
 <lb/>but this want was supplied in a way I least expected.</p>
    	<div n="marginal2 liv_020055_0004">
 <p>There was lying on the ground in <settlement>Bonny Town</settlement>, a very large
-<lb/>bell 3&#189;<!-- half needs to be styled? MBT --> feet in diameter, bearing this inscription&#8211;
+<lb/>bell 3&#189;<!-- half needs to be styled? MBT --> feet in diameter, bearing this inscription &#8211;
 <lb/><space extent="1" unit="words"/>"<persName>William Dobson</persName>, founder, <settlement><choice><orig>Down Ham</orig><reg>Downham</reg></choice></settlement>,<!-- Double-checked the location. Apparently, William Dobson of Downham Market produced relatively high quality bells: http://www.hibberts.co.uk/th_rediscover.htm	MBT --> <region>Norfolk</region>, <country>England</country>.
-<lb/><space extent="1" unit="words"/>This Bell was cast for <persName>Opoboo Foobra</persName>, King of
-<lb/><space extent="1" unit="words"/>Grand <settlement>Bonny</settlement>, in the year <date when="1824">1824</date>."</p>
+<lb/><space extent="1" unit="words"/>This Bell was cast for <persName>Opoboo Foobra</persName>, <persName>King of
+<lb/><space extent="1" unit="words"/>Grand <settlement>Bonny</settlement></persName>, in the year <date when="1824">1824</date>."</p>
 <lb/><p rend="no-indent"><add place="inspace" rend="large">X</add> <space extent="2" unit="chars"/>Little did I think this Bell could be made use of again
 <lb/>even in <settlement>Bonny Town</settlement> where it had been lying on the ground
 <lb/>for years, and no one seemed to have any disposition to
@@ -340,7 +345,7 @@
 		</div>
 		</div>
 	   	<div>	
-			<fw rend="center">(<add place="inline" rend="gray">3</add>4.)</fw>
+			<fw rend="center">(<del><seg rend="gray">3</seg></del>4.)</fw>
 		</div>
 
 
@@ -370,109 +375,106 @@
 <p n="marginal3 liv_020055_0005">The <term type="collective">Native Teachers</term> Messrs <persName>Webber</persName> and <persName>Carew</persName> are very <w>per-
 <lb/>severing</w> in their work, which can be seen by <add place="above">their</add> <add place="below">^</add> taking these chiefs
 <lb/>in lessons at their houses almost daily after school hours.</p>
-<p n="marginal4 liv_020055_0005"><seg rend="gray underline" n="marginal7 liv_020055_0005">Pearson</seg>The public examination of the school children took place  
-<lb/>yesterday the <date when="1878-02-26">26<hi rend="sup underline">th</hi></date>, to which the attendance of the King, the
+<p n="marginal4 liv_020055_0005"><seg rend="gray underline" n="marginal7 liv_020055_0005">Pearson</seg> The public examination of the school children took place  
+<lb/>yesterday the <date when="1878-02-26">26<hi rend="sup underline">th</hi></date>, to which the attendance of the <persName>King</persName>, the
 <lb/>fathers and chiefs was invited, but owing to the sickness of some,
 <lb/>the absence of others from the town, and unavoidable circumstances,
 <lb/>three most influential leading chiefs could be present, namely
 <lb/><persName>Adda Allison</persName>, <persName>Oko Jumbo</persName>, and <persName>Annie Pepple</persName>, also <add place="below">^</add> <add place="above">widow</add> queen 
-<lb/><persName>Eleanor</persName>, and two <term type="collective">Colony born</term> <country>Sierra Leone</country> traders, and two <term type="collective">French</term>
+<lb/><persName>Eleanor</persName>, and two <term type="collective">Colony born <country>Sierra Leone</country> traders</term>, and two <term type="collective">French</term>
 <lb/>officers from the Cutter "Joseph Leon." Two hours were <unclear>fixed</unclear>
 <lb/>upon to go through the examinations, so as not to wear out the
 <lb/>patience of the chiefs who are not in the habit of sitting silently
 <lb/>so long without some amusing talk of thier own.</p>
-	<div>	
-		<fw rend="center">(<add place="inline" rend="gray">3</add>5.)</fw>
 	</div>
-		
+	<div>	
+		<fw rend="center">(<del><seg rend="gray">3</seg></del>5.)</fw>
+	</div>
 
-	<pb facs="liv_020055_0006" n="0006"/>
-		<!-- This page is particularly complicated. MBT -->
-	<div>
-	<div><!-- the section of text from here to about halfway down the page has been marked originally by a red vertical line in the left margin, but this line has then been deleted by overwriting it in the same colour with a curly line AM -->	
-<lb/><p>I opened the proceedings, which I afterwards conducted, by singing
+<pb facs="liv_020055_0006" n="0006"/>
+	<div n="marginal1 liv_020055_0006">
+<!-- the section of text from here to about halfway down the page has been marked originally by a red vertical line in the left margin, but this line has then been deleted by overwriting it in the same colour with a curly line AM -->	
+<p n="wavyanchor liv_020055_0006"><seg n="wavyframe liv_020055_0006 exclude"><seg n="wavyholder liv_020055_0006"><seg n="wavy1 liv_020055_0006"></seg><seg n="wavy1 wavy2 liv_020055_0006"></seg></seg></seg></p>
+<p>I opened the proceedings, which I afterwards conducted, by singing
 <lb/>and prayer, and a short remark on the 13<hi rend="sup">th</hi> &amp; 14<hi rend="sup">th</hi> verses of the
-<lb/>10<hi rend="sup">th</hi> chapter of S<hi rend="sup">t</hi>. <choice><sic><persName>Mark</persName>s</sic><corr><persName>Mark</persName>'s</corr></choice> Gospel. 61 children were present.</p>
+<lb/>10<hi rend="sup">th</hi> chapter of <choice><sic><persName>S<hi rend="sup underline">t</hi>  Mark</persName>s</sic><corr><persName>S<hi rend="sup underline">t</hi> Mark</persName>'s</corr></choice> Gospel. <space extent="1" unit="chars"/>61 children were present.</p>
 <lb/><p>The Programme was as follows.</p>
-<lb/><p>First &amp; Second Classes of about 28 children read <persName>Matt</persName>. 4<hi rend="sup underline">th</hi> &amp; 5<hi rend="sup underline">th</hi> &#8212;</p>
+<lb/><p>First &amp; Second Classes of about 28 children read <persName>Matt.</persName> 4<hi rend="sup underline">th</hi> &amp; 5<hi rend="sup underline">th</hi> &#8212;</p>
 <lb/><p>First Class <del type="strikethrough">Scripture</del> <add place="below"><seg type="metamark">^</seg></add> <add place="above">Abridged Bible</add> Catechism by <persName>Lloyd</persName>. I Section.</p>
 <lb/><p>First &amp; Second Classes repeat pieces committed to memory from
 <lb/><orgName>The Sunday School Un</orgName>: Spelling Books Parts. 2<hi rend="sup underline">nd</hi> &amp; 3<hi rend="sup underline">rd</hi></p>
 <lb/><p>All the children repeat six Hymns from <choice><sic><persName>Kemble</persName>s</sic><corr><persName>Kemble</persName>'s</corr></choice> Hymnbook.
 <lb/><space extent="5" unit="chars"/>111, 125, 222, 241, 508, 537.</p>
 <lb/><p>From Divine &amp; Moral Songs (<persName>Matt</persName>.) 4, 8, 11, 16, 15, 18.</p>
-<lb/><p><persName>Watt</persName>'s First Catechism through. &#8212;</p>
+<lb/><p><space extent="2" unit="chars"/><persName>Watt</persName>'s First Catechism through. &#8212;</p>
 <lb/><p>First &amp; Second Classes Spelling words of two and three syllables.</p>
-<lb/><p>Dictation on slates from Un. Sp. Book or <choice><sic><persName>Simpson</persName>s</sic><corr><persName>Simpson</persName>'s</corr></choice> Primer.</p>
-<lb/><p>A little Exercises on slates in Arithmetic, from Notation to Multiplication.</p>
-<lb/><p><choice><orig>Shew</orig><reg>Show</reg></choice> Copy books &#8212; Girls <choice><orig>shew</orig><reg>show</reg></choice> needle works.</p><!-- end of section described at top of page AM -->
-	</div>
-
-		<div>
-		<lb/><milestone unit="section" rend="line red"/>
+<lb/><p><space extent="2" unit="chars"/>Dictation on slates from <orgName>Un.</orgName> Sp. Book or <choice><sic><persName>Simpson</persName>s</sic><corr><persName>Simpson</persName>'s</corr></choice> Primer.</p>
+<lb/><p><space extent="2" unit="chars"/>A little Exercises on slates in Arithmetic, from Notation to Multiplication.</p>
+<lb/><p><space extent="2" unit="chars"/><choice><orig>Shew</orig><reg>Show</reg></choice> Copy books &#8212; Girls <choice><orig>shew</orig><reg>show</reg></choice> needle works.</p></div><!-- end of section described at top of page AM -->
+<!-- <milestone unit="section" rend="line red"/> -->
 <!-- vertical red lines in both margins commence here AM -->
-<lb/><p>But I underrated the progress of the children by assigning
+	<div>
+<p><seg n="box1 liv_020055_0006">But I underrated the progress of the children by assigning
 <lb/>only two hours for the examination, which I thought was sufficient
 <lb/>as a mere introduction of the practice of yearly examination; the
 <lb/>consequence was the programme could not be got through, two
 <lb/>separate examinations ought to have been arranged. I
-<lb/>could not believe myself to have been at <settlement type="town">Bonny</settlement> school, when
+<lb/>could not believe myself to have been at <placeName><settlement type="town">Bonny</settlement> school</placeName>, when
 <lb/>one child after another was called out to repeat his piece
 <lb/>alone, which all did so well as I never could have expected from them. <!-- end of vertical red lines in both margins AM -->
-<lb/>The recitals of the Scripture pieces from the <orgName>Sunday School Union</orgName>
-<lb/>Spelling Book were very good.
-	<!-- Pencil lines commence here which effectively box off the remaining text of this page, consisting of a horizontal line above the 1st line of text and a vertical line down the right margin. The words "Print 4" also appear in the right margin AM -->A correct idea of the <w>reten<seg type="hyphen">-</seg>
-<lb break="no"/>tiveness</w> of their memory may be formed, when it is known,
+<lb/><space extent="1" unit="chars"/>The recitals of the Scripture pieces from the <orgName>Sunday School Union</orgName></seg>
+<seg n="box2 liv_020055_0006">Spelling Book were very good.</seg> <seg n="box3 liv_020055_0006"><!-- Pencil lines commence here which effectively box off the remaining text of this page, consisting of a horizontal line above the 1st line of text and a vertical line down the right margin. The words "Print 4" also appear in the right margin AM -->A correct idea of the reten<seg type="hyphen">-</seg> <seg rend="gray" n="marginal2 liv_020055_0006">Print <lb/>4<space extent="2" unit="chars"/></seg></seg>
+<lb break="no"/><seg n="box4 liv_020055_0006">tiveness of their memory may be formed, when it is known,
 <lb/>that it was  remarked by those present, that four of these
 <lb/>children repeated their pieces through without hesitation
 <lb/>or a mistake; the pieces so repeated by each child were,
-<lb/>the Creation&#8212; The Fall of man. &#8212; by two children, each by
-<lb/>himself &#8212; <persName>Philip</persName> and <persName>Nathaniel</persName>. the other pieces were
-<lb/><persName>Cain</persName> and <persName>Abel</persName>,&#8212; The Ark.&#8212; The Flood.&#8212; The Flood abated&#8212; </p> 
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(6)</fw>
-	</div>
+<lb/>the Creation&#8212; <space extent="1" unit="chars"/>The Fall of man. &#8212; by two children, each by
+<lb/>himself &#8212; <persName>Philip</persName> and <persName>Nathaniel</persName>. <space extent="2" unit="chars"/>The other pieces were
+<lb/><persName>Cain</persName> and <persName>Abel</persName>, &#8212; The Ark. &#8212; The Flood. &#8212; The Flood abated&#8212;</seg></p> 
+<lb/><fw rend="center"><del><seg rend="gray">3</seg></del>(6.)</fw>
 	</div>
 
 	<pb facs="liv_020055_0007" n="0007"/>
-		<div>
+	<div>
+	<div>
 <!-- vertical line in left margin start point AM -->
-<lb/><p rend="no-indent"><persName>Noah</persName> leaves the Ark.&#8212; <persName>Abraham</persName> offers <persName>Isaac</persName>.&#8212; <persName>Joseph</persName>
-<lb/>sold by his brethren.&#8212; <persName>Joseph</persName> makes himself Known&#8212;
-<lb/><persName>Joseph</persName> forgives his brethren.&#8212; Part II. The Birth of Jesus&#8212;
-<lb/>Christ the Good Shepherd.&#8212; <persName>Phillip</persName> &amp; <persName>Nathaniel</persName>.&#8212; Jesus
-<lb/>among the Doctors.&#8212; The birth Jesus.&#8212; The <add place="below"><seg type="metamark">^</seg></add> <add place="above">House</add> built on a Rock.&#8212;
-<lb/>The Prodigail Son.&#8212; Taking the progress of the children in
+<lb/><p rend="no-indent"><persName>Noah</persName> leaves the Ark. &#8212; <persName>Abraham</persName> offers <persName>Isaac</persName>. &#8212; <persName>Joseph</persName>
+<lb/>sold by his brethren. &#8212; <persName>Joseph</persName> makes himself Known &#8212;
+<lb/><persName>Joseph</persName> forgives his brethren. &#8212; Part II. The Birth of <persName>Jesus</persName> &#8212;
+<lb/>Christ the Good Shepherd. &#8212; <persName>Phillip</persName> &amp; <persName>Nathaniel</persName>. &#8212; <persName>Jesus</persName>
+<lb/>among the Doctors. &#8212; The birth <persName>Jesus</persName>. &#8212; The <add place="below"><seg type="metamark">^</seg></add> <add place="above">House</add> built on a Rock. &#8212;
+<lb/>The Prodigail Son. &#8212; Taking the progress of the children in
 <lb/>general into consideration, when it is remembered that it is not
 <lb/>yet two years since a school was opened for them, they have done well
-<lb/><!-- the words "Print 4" written in pencil in the left margin AM -->to their own credit and to the credit of their attentive and diligent
+<lb/><!-- the words "Print 4" written in pencil in the left margin AM --><seg rend="gray" n="marginal4 liv_020055_0007">Print 4</seg> to their own credit and to the credit of their attentive and diligent
 <lb/>schoolmasters. The chiefs were highly pleased at the progress of
 <lb/>their children, one of these present was the patron and supporter
-<lb/>of the Temple of skulls above alluded to, and may yet one day
+<lb/>of the <placeName>Temple of Skulls</placeName> above alluded to, and may yet one day
 <lb/>be found among the prophets, in sincerity and truth.</p>
 <lb/><p><persName>M<hi rend="sup underline">r</hi> J. W. H. Lauch</persName> who attends our <term type="collective">English</term> Sunday morning
 <lb/>service was so pleased with the singing of the children, that he has
 <lb/>very kindly given his Harmonium for the use of the school to improve
-<lb/>as well to call out the latest talent of these children for singing, which
+<lb/>as well to call out the latest talent of the<add place="inspace">se</add> children for singing, which
 <!-- end of vertical grey line AM -->
-<lb/><persName>Dandesen</persName> plays while we remain here, and on which the <w>school<seg type="hyphen">&#8211;</seg>
+<lb/><persName>Dandeson</persName> plays while we remain here, and on which the <w>school<seg type="hyphen">-</seg>
 <lb break="no"/>masters</w> are practising.</p>
 <!-- start of double vertical line in left margin, left one black, right one red AM -->
 <lb/><p>But the influence of the school is not confined only to
 <lb/>those who are taught within the walls of the school chapel,
-<lb/>besides the three chiefs who are taking lessons from the <w>school<seg type="hyphen">&#8211;</seg>
+<lb/>besides the three chiefs who are taking lessons from the <w>school<seg type="hyphen">-</seg>
 <lb break="no"/>masters</w> at their own houses, several persons have been met
 <lb/>with in the town who are reading the primer, taught at home
 <lb/>by some of the school children: some of these children have set
-<lb/>themselves up at their father's house and played the <w>school<seg type="hyphen">&#8211;</seg>
+<lb/>themselves up at their father's house and played the <w>school<seg type="hyphen">-</seg>
 <lb break="no"/>masters</w> among themselves and some inmates of their father's
 <lb/>house, who in this may have learnt the alphabet and are
-<lb/>now able to read some <unclear cert="low">lessons</unclear> in the primer. School books
-<lb/>were bought up so fast before I left here in May, &amp; suspecting
+<lb/>now able to read some <unclear><choice><sic>lessins</sic><corr>lessons</corr></choice></unclear> in the primer. School books
+<lb/>were bought up so fast before I left here in <date when="1866-05">May</date>, &amp; suspecting
 <lb/>some ill use of them, that I gave strict instructions to <persName>M<hi rend="sup underline">r</hi> Webber</persName>
 <lb/>not to sell the books away only for the sake of selling, but only to
 <lb/>those who would learn them; a much larger number of books,
 <lb/><space extent="12" unit="words"/><seg type="catch">however,</seg>
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(7)</fw>
+<lb/><fw rend="center"><del><seg rend="gray">3</seg></del>(7.)</fw>
 
 <pb facs="liv_020055_0008" n="0008"/>
 <!-- continuation of double lines from previous page, in right margin on this page AM -->
@@ -484,7 +486,7 @@
 <lb/>classes among themselves and some of their parents inmates
 <lb/>to their schools, one acting the schoolmaster, another assistant:&#8211;
 <lb/>some women and children who had never been at school
-<lb/>are learning to read in this way. As both <persName>Messrs Webber</persName>
+<lb/>are learning to read in this way. <space extent="1" unit="chars"/>As both <persName>Messrs Webber</persName>
 <lb/>and <persName>Carew</persName> are now married and settled, the education
 <lb/>of the females may now be better encouraged. As <persName>M<hi rend="sup underline">rs</hi> Webber</persName>
 <lb/>was taking a walk one afternooon towards the village close
@@ -493,11 +495,11 @@
 <lb/>and assisted her in it. These are few incidents which have
 <lb/>come within our Knowledge wich are plain indications,
 <lb/>that as the mission is firmer established here, its influence
-<lb/>will be felt in the <region>interior</region> as they carry the art of book
+<lb/>will be felt in the interior as they carry the art of book
 <lb/>reading they have acquired into their oil markets up the rivers.</p>
 <!-- end point of double marker lines in right margin AM -->
-<lb/><p>There is still another indication that the Scripture
-<lb/><unclear cert="low">lesson</unclear> is secretly at work in the minds of some of this people.</p>
+<lb/><p><space extent="2" unit="chars"/>There is still another indication that the scripture
+<lb/><unclear>leaven</unclear> is secretly at work in the minds of some of this people.</p>
 <lb/><p>I have been told by the most influential leading heads in
 <lb/>this place, <del type="strikethrough">to hear one day</del> not to be surprised if I hear
 <lb/>one day that those reptiles the puanas sacred to the gods
@@ -506,69 +508,67 @@
 <lb/>informants not to say much about it at present with an
 <lb/>air of triumph, till the scheme be carried out, lest the
 <lb/>old priests and their adherents, who still prefer the <term type="collective">Egyptian</term>
-<lb/>bondage for its fish, cucumbers, melons, the leeks, the onions and
-<lb/>the garlick, feel annoyed at the dawn of the decline of their long
+<lb/>bondage for its <term type="foodstuff">fish</term>, <term type="foodstuff">cucumbers</term>, <term type="foodstuff">melons</term>, the <term type="foodstuff">leeks</term>, the <term type="foodstuff">onions</term>, and
+<lb/>the <term type="foodstuff">garlick</term>, feel annoyed at the dawn of the decline of their long
 <lb/>standing system, put difficulties in the way of carrying out
 <lb/>their laudable plan of liberation from idolatrous bondage. <add place="marginright" rend="gray">CA3/04/226<hi rend="sup">b</hi></add>
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(8)</fw>
-
+<lb/><fw rend="center"><del><seg rend="gray">3.</seg></del>(8.)</fw>
 
 	<pb facs="liv_020055_0009" n="0009"/>
-<lb/>merely to save themselves from public disgrace. The
+<lb/>merely to save themselves from public disgrace. <space extent="1" unit="chars"/>The
 <lb/>necessity of such caution will be seen by anyone who is
 <lb/>acquainted with the pride of human nature, which does not
-<lb/>often yield its hold, even when convinced of its erroneous course;
+<lb/>often yield its hold, even when convinced of its erroneous course:
 <lb/>it will be seen to be more necessary here when it is known that
 <lb/>the powerful supporter of the opposite system who is gradually coming
 <lb/>round in our favour, if irritated by undue triumph,
 <lb/>may turn back and prove a formidable opponent to our progress.</p>
 <lb/><p>We must go often to our Saviour's code of instructions to his
 <lb/>disciples, whom he sent to preach, for our guidance, "Be ye wise
-<lb/>as serpents, and harmless as doves. We must study human nature.</p>
-<lb/><p>I must say something of innocent amusements here.</p>
-<lb/><p>Last Christmas the <date when="1866-12-26">26<hi rend="sup underline">th</hi> Dec<hi rend="sup underline">r</hi> 1866</date> <persName>King George</persName> gave the
-<lb/>children a treat on the mission premises, a goat being killed
-<lb/>on the occasion which was cooked with plenty of yams, and a
-<lb/>cask <add place="below"><seg type="metamark">^</seg></add> <add place="above">of</add> bamboo palm wine was added by the King.</p>
-<lb/><p>The next day on the <date when="1866-12-27">27<hi rend="sup underline">th</hi></date> <persName>Capt W Babington</persName> took his turn
-<lb/>and gave them a treat on salt beef and biscuits which are
+<lb/>as serpents, and harmless as doves." We must study human nature.</p>
+<lb/><p><space extent="2" unit="chars"/>I must say something of innocent amusements here.</p>
+<lb/><p><space extent="1" unit="chars"/>Last Christmas the <date when="1866-12-26">26<hi rend="sup underline">th</hi> Dec<hi rend="sup underline">r</hi> 1866</date> <persName>King George</persName> gave the
+<lb/>children a treat on the mission premises, a <term type="animal">goat</term> being killed
+<lb/>on the occasion which was cooked with plenty of <term type="foodstuff">yams</term>, and a
+<lb/>cask <add place="below"><seg type="metamark">^</seg></add> <add place="above">of</add> <term type="foodstuff">bamboo palm wine</term> was added by the <persName>King</persName>.</p>
+<lb/><p>The next day on the <date when="1866-12-27">27<hi rend="sup underline">th</hi></date> <persName>Cap<hi rend="sup underline">t</hi> W Babington</persName> took his turn
+<lb/>and gave them a treat on <term type="foodstuff">salt beef</term> and <term type="foodstuff">biscuits</term> which are
 <lb/>always very much liked by the people here: the chiefs <persName>Banigo</persName>
 <lb/>and <persName>Oko Jumbo</persName> contributed to the supplies, after which
 <lb/>the children enjoyed themselves in running about the premises.</p>
 <!-- start of vertical red line in left margin AM -->
 <lb/><p>The <choice><orig>Shew</orig><reg>Show</reg></choice> of the Magic Lantern Dissolving view took place
-<lb/>at the King's house on <date when="1866-12-12">Tuesday the 12<hi rend="sup underline">th</hi> instant</date>, principally
-<lb/>for the chiefs, many of whom were present with some of their
+<lb/>at the <placeName><persName>King</persName>'s house</placeName> on <date when="1866-12-12">Tuesday the 12<hi rend="sup underline">th</hi> instant</date>, principally
+<lb/>for the Chiefs, many of whom were present with some of their
 <lb/>attendants. The system of paying admission tickets was at
 <lb/>once introduced. Tickets were sold to the chiefs at six manillas
-<lb/>each, about <unclear cert="low">7</unclear><hi rend="sup underline">d</hi> value in silver. The second evening at three
+<lb/>each, about 7<hi rend="sup underline">d</hi> value in silver. The second evening at three
 <lb/>manillas apiece, and the third evening to the poor people, one
-<lb/>manilla apiece&#8212; I attended the first evening to see how they
+<lb/>manilla apiece &#8211; I attended the first evening to see how they
 <lb/>behaved, to advise and correct any thing when there was
 <lb/>occasion as this was the first public <choice><orig>shew</orig><reg>show</reg></choice> of this kind.</p>
 <!-- end of red vertical line in left margin AM -->
 <lb/><p><persName>Oko Jumbo</persName> <choice><orig>shewed</orig><reg>showed</reg></choice> off his knowledge of Scripture history
 <lb/>to his brother chiefs. No sooner these figures representing
-<lb/><space extent="12" unit="words"/><seg type="catch">the</seg>
-<lb/><fw rend="center"><add place="inline" rend="gray">3</add>(9)</fw>  
+<lb/><space extent="12" unit="words"/><space extent="2" unit="chars"/><seg type="catch">the</seg>
+<lb/><fw rend="center"><del><seg rend="gray">3</seg></del>(9.)</fw>  
  
 
 	<pb facs="liv_020055_0010" n="0010"/>
 <!-- continuation of vertical red line from previous page, but on this page has drifted onto the main text, about one inch in from left margin AM -->
 <lb/>birth of Christ, his presentation in the temple, the visit
 <lb/>of the wise men, and <persName>Solomon</persName>'s decision of the disputed living
-<lb/>child were exhibited and explained, <unclear cert="medium">than</unclear> <persName>Oko Jumbo</persName> at
+<lb/>child were exhibited and explained, <choice><sic>than</sic><corr>then</corr></choice> <persName>Oko Jumbo</persName> at
 <lb/>once undertook to explain them to his brother chiefs, either
-<lb/>in the <settlement type="town">Bonny</settlement> or <placeName>Ibo</placeName> language, as both languages are spoken
-<lb/>here, besides the broken English as it is spoken on the <region>coast</region>.</p>
-<lb/><milestone unit="section" rend="line red"/>
-<lb/><p>When the slide of the butcher with the head of the pig in a plate
-<lb/>was <choice><orig>shewn</orig><reg>shown</reg></choice>, the head of the pig and of the butcher being alternately placed
-<lb/>in the plate, when this was explained the patron of the Temple of
-<lb/>Skulls said. <hi rend="underline">This</hi> <hi rend="underline">is a big</hi> <hi rend="underline">proverb</hi>. That they were all highly
+<lb/>in the <settlement type="town">Bonny</settlement> or <term type="collective">Ibo</term> language, as both languages are spoken
+<lb/>here, besides the broken English as it is spoken on the coast.</p>
+<lb/><p>When the slide of the butcher with the head of the <term type="animal">pig</term> in a plate
+<lb/>was <choice><orig>shewn</orig><reg>shown</reg></choice>, the head of the <term type="animal">pig</term> and of the butcher being alternately placed
+<lb/>in the plate, when this was explained the patron of the <placeName>Temple of
+<lb/>Skulls</placeName> said. <hi rend="underline">This</hi> <hi rend="underline">is a big</hi> <hi rend="underline">proverb</hi>. That they were all highly
 <lb/>amused <!-- end of red vertical line here AM --> at the <choice><orig>shew</orig><reg>show</reg></choice>, I need not repeat. <persName>King George</persName>, and his
-<lb/>two brothers who were educated at the <orgName>Grammar School
-<lb/>in <country>Sierra Leone</country></orgName>, actively assisted <persName>Danderson</persName> in working the
+<lb/>two brothers who were educated at the <placeName>Grammar School
+<lb/>in <country>Sierra Leone</country></placeName>, actively assisted <persName>Danderson</persName> in working the
 <lb/>slides, both on Tuesday and Wednesday evenings, the latter
 <lb/>evening at the temporary school room; the third evening he
 <lb/>was assisted by the schoolmasters.<!-- The next sentence is highlighted by red lines forming a sort of box surrounding the text AM --> The collection at the <choice><orig>shews</orig><reg>shows</reg></choice>
@@ -579,7 +579,7 @@
 <lb/>the dissolving view, but these amusements must be postponed
 <lb/>till our most important work is lessened, and another
 <lb/>leisure evening can be better spared.</p>
-<lb/><p>The work of getting up a new station cannot be so
+<lb/><p><space extent="2" unit="chars"/>The work of getting up a new station cannot be so
 <lb/>easily completed in this place as in others, especially when
 <lb/>one must fetch his own workmen from other places; the system
 <lb/>of day labourer is not practised here, every such labourer having
@@ -587,38 +587,38 @@
 <lb/>to discharge the workmen, because they could not be managed
 <lb/>by the schoolmasters who had no knowledge of what was to be
 <lb/>done: though our dwelling house was then unfinished, yet
-<lb/>I am thankful, today, we have a comfortable shelter in which
-<lb/>I now take my abode on <unclear cert="low">chore</unclear> with the Native Teachers,
-<lb/><space extent="11" unit="words"/><seg type="catch">where</seg>
-<lb/><fw rend="center">(10)</fw><!-- "4" in pencil underneath the "10" AM -->  
+<lb/>I am thankful, to say, we have a comfortable shelter in which
+<lb/>I now take my abode on shore with the <term type="collective">Native Teachers</term>,
+<lb/><space extent="12" unit="words"/><seg type="catch">where</seg>
+<lb/><fw rend="center"><del><seg rend="gray">4</seg></del>(10.)</fw><!-- "4" in pencil underneath the "10" AM -->  
 
 	<pb facs="liv_020055_0011" n="0011"/>
 <lb/>where I can see after my works better and move more conveniently
-<lb/>among the people. Though unfinished as it is , yet it is <w>comfort<seg type="hyphen">-</seg>
+<lb/>among the people. Though unfinished as it is, yet it is <w>comfort<seg type="hyphen">-</seg>
 <lb break="no"/>able</w> enough, that I could take in a sick <term type="collective">French</term> sailor from
-<lb/>the little <term type="collective">French</term> surveying Cutter the "Joseph Leon", for a change on
+<lb/>the little <term type="collective">French</term> surveying Cutter the "Joseph Leon," for a change on
 <lb/>shore: the situation  of our premises being the best yet selected on
 <lb/>shore, for dryness and advantage of sea breeze, in seventeen days,
 <lb/>the sick sailor was well enough to return on board his ship to
 <lb/>resume duty. The <term type="collective">French</term> crew are allowed to employ their time
-<lb/>in gardening in the mission ground in the absence of <persName>Cap<hi rend="sup underline">t</hi> L.Girard</persName>
+<lb/>in gardening in the mission ground in the absence of <persName>Cap<hi rend="sup underline">t</hi> L. Girard</persName>
 <lb/>who has returned to <country>France</country> to bring out a steamer to ascend
-<lb/>the <geogName type="river">Niger</geogName> this year. Having seen that this place will be taken
+<lb/>the <geogName>Niger</geogName> this year. <space extent="1" unit="chars"/>Having seen that this place will be taken
 <lb/>advantage of for a change <add place="below"><seg type="metamark">^</seg></add> <del type="strikethrough">from</del><add place="above">by</add> the shipping, I have arranged to
 <lb/>leave the present house as it is for the use of our agents who
-<lb/>are all married, three couples, and to build a small house <w>se<seg type="hyphen">&#8211;</seg>
-<lb break="no"/><seg type="hyphen">&#8211;</seg>parate</w>, for my own use, in which I could receive visitors more
+<lb/>are all married, three couples, and to build a small house <w>se<seg type="hyphen">-</seg>
+<lb break="no"/><seg type="hyphen">-</seg>parate</w>, for my own use, in which I could receive visitors more
 <lb/>conveniently; it is now in progress. I am improving upon
-<lb/>our mud&#8211;wall system by introducing bricks; 200 <settlement>Bonny</settlement> made
+<lb/>our mud-wall system by introducing bricks; 200 <settlement>Bonny</settlement> made
 <lb/>bricks, still in the Kiln, where they were burnt, were <choice><orig>shewn</orig><reg>shown</reg></choice> to
 <lb/>the chiefs, as specimens of what can yet be produced at <settlement>Bonny</settlement>;
 <lb/>and that such works will be taught to their children beside book
 <lb/>learning, with which they were highly pleased.</p>  
 <lb/>
-<lb/><!-- start of vertical red line in left margin, continuing for the rest of this page and onto next page AM --><p><space extent="3" unit="words"/>Nun Station</p>
+<lb/><!-- start of vertical red line in left margin, continuing for the rest of this page and onto next page AM --><p><space extent="2" unit="words"/><placeName>Nun Station</placeName></p>
 <lb/><p>Extracts from <persName>M<hi rend="sup underline">r</hi> J. R. Dewring</persName>'s letter. <date when="1866-12-04">Dec<hi rend="sup underline">r</hi> 4<hi rend="sup underline">th</hi> 1866</date>.</p>
-<lb/><p>"As I gave my word to you about the journey to <placeName>Idzŏ</placeName>,
-<lb/>I have accomplished it. On the <date when="1866-10-05">5<hi rend="sup underline">th</hi> Oct</date> the <placeName>Idzŏ</placeName> King sent
+<lb/><p><space extent="2" unit="chars"/>"As I gave my word to you about the journey to <placeName>Idzŏ</placeName>,
+<lb/>I have accomplished it. On the <date when="1866-10-05">5<hi rend="sup underline">th</hi> Oct</date> the <persName><placeName>Idzŏ</placeName> King</persName> sent
 <lb/>messengers again, he gave them strict order not to return
 <lb/>home without me. I considered how I could best do it, having
 <lb/>much to do in hand, I considered it again it is the Lord's 
@@ -627,44 +627,42 @@
 <lb/>to start for <placeName>Idzŏ</placeName> on <date when="1866-10-09">Monday the 9<hi rend="sup underline">th</hi></date> at one o'clock p.m. 
 <lb/>pulled all night till we came to a small town about
 <lb/><space extent="11" unit="words"/><seg type="catch">3.</seg>
-<lb/><space extent="3" unit="words"/><fw rend="center">(11.)</fw><!-- I think there's a "4" in pencil underneath the "11" AM --> 
-
+<lb/><space extent="3" unit="words"/><fw rend="center"><del><seg rend="gray">4</seg></del>(11.)</fw><!-- I think there's a "4" in pencil underneath the "11" AM --> 
 
 	<pb facs="liv_020055_0012" n="0012"/>
 <lb/><!-- continuation of vertical red line from previous page, in right margin on this page AM -->3.a.m. went on shore and cooked our food; after meal took
 <lb/>a little rest; at 6.a.m.  collected the people and my canoe men
 <lb/>read <persName>John</persName> 3<hi rend="sup underline">rd</hi> C. and prayed: before I departed I gave them <del type="strikethrough">a</del> some
 <lb/><term type="plant_foodstuff">rice</term> and a little <term type="plant_foodstuff">tobacco</term>; took our journey, reached to <settlement type="village">Koloma</settlement>
-<lb/>about 11.a.m. <persName>Manga</persName> the King welcomed me. The place
+<lb/>about 11.a.m. <space extent="1" unit="chars"/><persName>Manga</persName> the <persName>King</persName> welcomed me. The place
 <lb/>is a small village, containing only five streets. They rear
-<lb/><term type="animal">cows</term> and <term type="animal">goats</term>. At night the King gathered all his household
+<lb/><term type="animal">cows</term> and <term type="animal">goats</term>. At night the <persName>King</persName> gathered all his household
 <lb/>for prayer. In the morning I asked him to gather his town for
 <lb/>morning prayer, 40 in number, but many did not attend. I
-<lb/>addressed them from <persName>Luke</persName> II. v.1-13. This village is promising.
-<lb/>The King stated that he prayed daily that his children should
-<lb/>receive instruction. The <placeName>Idzŏ</placeName> King gave me a boy for
+<lb/>addressed them from <persName>Luke</persName> 11. v.1-13. This village is promising.
+<lb/>The <persName>King</persName> stated that he prayed daily that his children should
+<lb/>receive instruction. The <persName><placeName>Idzŏ</placeName> King</persName> gave me a boy for
 <lb/>instruction, and another was brought here to me. The story
-<lb/>(news) of the <placeName>Idzŏ</placeName> boys shake the country. I have two more
-<lb/>men of <placeName>Akassa</placeName> who generally come for instruction. They
+<lb/>(news) of the <term type="collective"><placeName>Idzŏ</placeName></term> boys shake the country. I have two more
+<lb/><term type="collective">men of <placeName>Akassa</placeName></term> who generally come for instruction. They
 <lb/>said, should <placeName>Idzŏ</placeName> speak English and they not? What have
-<lb/>they been doing?&#8212; On the <date when="1866-10-22">22<hi rend="sup underline">nd</hi> of Oct.</date> a war canoe was in sight,
-<lb/>the <placeName>Akassa</placeName> men whom I employed at work began to make their escape.
-<lb/>I stopped <add place="below"><seg type="metamark">^</seg></add> <add place="above">them</add>, the canoe came to us, I found the owner to be <persName>M<hi rend="sup underline">r</hi> Sambo</persName>
+<lb/>they been doing? &#8212; On the <date when="1866-10-22">22<hi rend="sup underline">nd</hi> of Oct.</date> a war canoe was in sight,
+<lb/>the <term type="collective"><placeName>Akassa</placeName> men</term> whom I employed at work began to make their escape.
+<lb/>I stopped <add place="below"><seg type="metamark">^</seg></add> <add place="above">them<choice><sic>,</sic><corr/></choice></add>, the canoe came to us, I found the owner to be <persName>M<hi rend="sup underline">r</hi> Sambo</persName>
 <lb/>from <placeName>Brass</placeName>, with his war men. I received him gladly; he asked
-<lb/>if our morning prayer was over, I told him, No. he was very
+<lb/>if our morning prayer was over, I told him, No. <choice><sic>he</sic><corr/></choice> was very
 <lb/>glad to meet it; after its close, he gave me three pieces of cloth,
 <lb/>one paper of red caps 1 Doz. and two heads of <term type="plant_foodstuff">Tobacco</term>, contribution
-<lb/>to the mission. I received also from <persName>M<hi rend="sup underline">r</hi> White</persName> of <orgName>Walkers' Factory</orgName>
+<lb/>to the mission. I received also from <persName>M<hi rend="sup underline">r</hi> White</persName> of <placeName>Walker's Factory</placeName>
 <lb/>three pieces of cloth to aid the mission. "</p>
 <lb/><p><space extent="3" unit="words"/>School.</p>
-<lb/><p>Boarders. 3 <placeName>Akassa</placeName> boys.
-<lb/><space extent="6" unit="chars"/>"<space extent="5" unit="chars"/>2 <placeName>Idzŏ</placeName> D<hi rend="sup underline">o</hi>
+<lb/><p>Boarders. <term type="collective">3 <placeName>Akassa</placeName> boys</term>.
+<lb/><space extent="6" unit="chars"/>"<space extent="6" unit="chars"/><term type="collective">2 <placeName>Idzŏ</placeName> D<hi rend="sup underline">o</hi></term>
 <lb/><space extent="6
-" unit="chars"/>"<space extent="5" unit="chars"/>1 <placeName>Brass</placeName> D<hi rend="sup underline">o</hi>
+" unit="chars"/>"<space extent="6" unit="chars"/><term type="collective">1 <placeName>Brass</placeName> D<hi rend="sup underline">o</hi></term>
 <lb/>Congregation 22 &#8212;<space extent="7" unit="chars"/>(signed) <persName>J. R. Dewring.</persName> &#8212;<!-- vertical red line in right margin ends here AM -->
-<lb/><milestone unit="section" rend="line red"/>
-<lb/><space extent="6" unit="words"/><persName>S. A. Crowther</persName>. &#8212; <add place="marginright" rend="gray">CA3/04/226<hi rend="sup">c</hi></add></p>
-<lb/><fw rend="center">(12)</fw><!-- I think there's a "4" in pencil underneath the "12" AM -->
+<lb/><space extent="7" unit="words"/><persName>S. A. Crowther</persName>. &#8212; <add place="marginright" rend="gray">CA3/04/226<hi rend="sup">c</hi></add></p>
+<lb/><fw rend="center"><del><seg rend="gray">4</seg></del>(12)</fw>
 </div>
 	</div>
 	</div>

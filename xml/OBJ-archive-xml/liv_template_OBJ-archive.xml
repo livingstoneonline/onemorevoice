@@ -39,7 +39,7 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if the object comes from an archive; otherwise delete it -->
+			<!-- Use this version of <sourceDesc> if the object comes from an archive -->
             <sourceDesc>
                 <msDesc type="object-archive">
                     <msIdentifier>
@@ -65,42 +65,6 @@
                 </bibl>
             </sourceDesc>
 			<!-- End of archival <sourceDesc> -->
-
-			<!-- Use this version of <sourceDesc> if the object comes from a book or journal; otherwise delete it -->
-            <sourceDesc>
-				<biblStruct type="object-book-journal">
-					<monogr n="book-section"><!-- n="book-section" if journal/periodical article -->
-						<title></title><!-- Publication title: journal or book -->
-						<!-- Author here used only for books -->
-						<!-- Forename Surname-->
-	                    <author></author>
-						<editor></editor><!-- Editor (if known; otherwise leave blank -->
-						<imprint>
-							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
-							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
-							<biblScope unit="pages"></biblScope><!-- Pages (if known; otherwise leave blank) -->
-							<pubPlace></pubPlace><!-- Publication place (if known; otherwise leave blank) -->
-							<publisher></publisher><!-- Publisher (if known; otherwise leave blank) -->
-							<date></date><!-- Item date; same as date in <title type="alternative"> above -->
-						</imprint>
-					</monogr>
-				</biblStruct>
-                <bibl type="sourceMetadata">
-                	<!-- Title without date -->
-					<!-- Same as <title> above -->
-					<title></title>
-					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
-					<!-- Same as <author> above -->
-					<!-- xml:id = each author's initials -->
-                    <author xml:id=""></author>
-					<!-- Write out date: Day Month Year -->
-					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" when=""></date><!-- Can be type="composition" or type="publication" -->
-					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace"></placeName><!-- Can be "compositionPlace" or "focusRegion" -->
-                </bibl>
-            </sourceDesc>
-			<!-- End of book/journal <sourceDesc> -->
 
         </fileDesc>
         <profileDesc>

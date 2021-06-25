@@ -377,6 +377,7 @@ label.md_switch{
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
 	border: 0;
+	border-style: none;
 }
 #rotate-button{
 	display: none;
@@ -393,7 +394,7 @@ button::-moz-focus-inner{
 		-webkit-border-radius: 7px;
 		-moz-border-radius: 7px;
 		float: left;
-		margin: 1.5em 0;
+		margin: 1.5em .2em;
 		padding: 14px 8px;
 		height: 20px;
 		display: flex;

@@ -466,18 +466,72 @@ liv_020055 coding [temporary]
 	padding-left: .75em;
 	display: block;
 }
-/* red line that overlays text */
-.marginal1.liv_020055_0010{
-
+.container.liv_020055_0010{
+	position: relative;
 }
-/* red line on bottom that curls upward */
+.line1.liv_020055_0010{
+	margin-bottom: -.75em;
+	padding-bottom: .75em;
+	left: 4em;
+	transform: rotate(357deg);
+	-ms-transform: rotate(357deg);
+	-moz-transform: rotate(357deg);
+	-webkit-transform: rotate(357deg);
+	-o-transform: rotate(357deg);
+}
+.line2.liv_020055_0010{
+	left: 3em;
+}
+.line1.liv_020055_0010,
+.line2.liv_020055_0010{
+	border-left: 2px #902D27 solid;
+	height: 100%;
+	position: absolute;
+}
+.border1.liv_020055_0010{
+	border-bottom: 2px #902D27 solid;
+	border-radius: 0 0 1em 1em;
+	-webkit-border-radius: 0 0 1em 1em;
+	-moz-border-radius: 0 0 1em 1em;
+}
+.border2.liv_020055_0010{
+	border-top: 1px #902D27 solid;
+	width: 112%;
+	position: absolute;
+	left: -1.5em;
+}
+
+/* red line boxing text part one: "was assisted by the schoolmasters" */
 .box1.liv_020055_0010{
-
+	border-bottom: 2px solid #902D27;
+	border-right: 2px solid #902D27;
 }
-/* red line boxing text */
+/*red line "the collection at the shews"*/
 .box2.liv_020055_0010{
-
+	border-top: 2px solid #902D27;
+	border-right: 2px solid #902D27;
 }
+/*red line "accounted to 300... towards flooring"*/
+.box3.liv_020055_0010{
+	text-indent: 0;
+	border-right: 2px solid #902D27;
+	border-left: 2px solid #902D27;
+	display: inline-block;
+}
+/*red line "the school chapel"*/
+.box4.liv_020055_0010{
+	border-bottom: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+	border-left: 2px solid #902D27;
+}
+/*red line "Now and then some women came"*/
+.box5.liv_020055_0010{
+	border-top: 2px solid #902D27;
+}
+
+
+
+
 /* red line in left margin that curls at top and bottom */
 .marginal1.liv_020055_0011{
 

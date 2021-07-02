@@ -201,7 +201,7 @@ liv_020055 coding [temporary]
 	-webkit-transform: rotate(312deg);
 	-o-transform: rotate(312deg);
 	position: absolute;
-	right: -7em;
+	right: 0em;
 	bottom: 1.5em;
 }
 .box1.liv_020055_0005{
@@ -506,6 +506,9 @@ liv_020055 coding [temporary]
 	border-bottom: 2px solid #902D27;
 	border-right: 2px solid #902D27;
 }
+.wrapper1.liv_020055_0010{
+	white-space: nowrap;
+}
 /*red line "the collection at the shews"*/
 .box2.liv_020055_0010{
 	border-top: 2px solid #902D27;
@@ -516,6 +519,7 @@ liv_020055 coding [temporary]
 	text-indent: 0;
 	border-right: 2px solid #902D27;
 	border-left: 2px solid #902D27;
+	padding-right: 3.3em;
 	display: inline-block;
 }
 /*red line "the school chapel"*/
@@ -528,15 +532,50 @@ liv_020055 coding [temporary]
 .box5.liv_020055_0010{
 	border-top: 2px solid #902D27;
 }
-
-
-
-
 /* red line in left margin that curls at top and bottom */
 .marginal1.liv_020055_0011{
-
+	text-indent: 0;
+	margin-left: -1.4em;
+	padding-left: 1.4em;
+	border-radius: 1em 0 0 0;
+	-webkit-border-radius: 1em 0 0 0;
+	-moz-border-radius: 1em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.marginal1.liv_020055_0011{
+		margin-left: -1.35em;
+		padding-left: 1.35em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.marginal1.liv_020055_0011{
+		margin-left: -1.3em;
+		padding-left: 1.3em;
+	}
+}
+.marginal2.liv_020055_0011{
+	margin-left: -2.7em;
+	padding-left: 1.35em;
+}
+.marginal1.liv_020055_0011,
+.marginal2.liv_020055_0011{
+	border-left: 2px #902D27 solid;
+	display: inline-block;
 }
 /* red line on right and bottom */
-.box1.liv_020055_0012{
-	
+.box.liv_020055_0012{
+	border-bottom: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+	display: inline-block;
+}
+.archival.liv_020055_0012{
+	font-size: .9em;
+	transform: rotate(302deg);
+	-ms-transform: rotate(302deg);
+	-moz-transform: rotate(302deg);
+	-webkit-transform: rotate(302deg);
+	-o-transform: rotate(302deg);
+	position: absolute;
+	right: -.5em;
+  bottom: 6em;
 }

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020085">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to Frederick William Chesson</title>
+				<!-- Title without date -->
+				<title type="alternative">Letter to Frederick William Chesson, 3 May 1882</title>
+				<!-- Title, date -->
+				<author>Craft, William Ivens, 1855-1926</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Craft, William Ivens</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">William Ivens Craft</author>
+				<!-- First author only: Forename Surname -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HM">
+					<name>Hope McCaffrey</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="LM">
+					<name>Lucy McCann</name>
+					<resp>Transcription</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020085</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+						<country>United Kingdom</country>
+						<!-- Repository country -->
+						<settlement>Oxford</settlement>
+						<!-- Repository city -->
+						<repository>Bodleian Library</repository>
+						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+						<idno type="shelfmark">MSS. Brit. Emp. S. 18, C129/138</idno>
+						<!-- Shelfmark/Identifier -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to Frederick William Chesson</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="WIC">Craft, William Ivens, 1855-1926</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1882-05-03">3 May 1882</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">Railways &amp; Metropolitan Omnibus Company Limited. 16, Devonshire Chambers Bishopsgate Street Without, London, E.C.</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<xenoData type="css">.address1.liv_020085_0001{font-family:'UnifrakturMaguntia', cursive}.address2.liv_020085_0001{font-size:1.2em;font-family:'Pinyon Script', cursive;white-space:nowrap}.date.liv_020085_0001{font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}.container.liv_020085_0002{position:relative}.horizontalcircle.liv_020085_0002{font-size:1.5em;transform:scale(6, .9) !important;-webkit-transform:scale(6, .9) !important;-moz-transform:scale(6, .9) !important;-ms-transform:scale(6, .9) !important;-o-transform:scale(6, .9) !important;opacity:0.7;position:absolute;display:inline-block;bottom:0 !important}</xenoData>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-05-26" who="#AW">Coding Review</change>
+			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
+			<change when="2020-12-18" who="#LM">Transcription</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text n="unifrakturM pinyon"><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body n="bcb6a4">
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div rend="black">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020085_0001" n="0001"/>
+<lb/><p rend="no-indent" n="address1 liv_020085_0001"><orgName>Railways &amp; Metropolitan Omnibus Company Limited.</orgName></p>
+<lb/><p rend="no-indent brown black" n="address2 liv_020085_0001"><space extent="1" unit="words"/><space extent="1" unit="chars"/><placeName>16, Devonshire Chambers
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/>Bishopsgate Street Without,</placeName>
+<lb/><space extent="2" unit="words"/><placeName><settlement><seg rend="large">L</seg>ondon</settlement>, <hi rend="small">E.C.</hi></placeName> <date when="1882-05-03"><seg rend="italic black" n="date liv_020085_0001">May 3<hi rend="sup underline">rd</hi></seg> 18<seg rend="italic black" n="date liv_020085_0001">82</seg></date></p>
+<lb/><p rend="no-indent"><persName>F.W. Chesson Esq.</persName>
+<lb/><space extent="2" unit="words"/><space extent="1" unit="chars"/><placeName>17 King Wm. St.</placeName>
+<lb/><space extent="4" unit="words"/><space extent="2" unit="chars"/><settlement>Strand</settlement> <hi rend="small">W.C.</hi></p>
+<lb/><p rend="no-indent">Dear Sir,</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/>I called to see you
+<lb/><date when="1882-05-02">yesterday</date> morning but learned
+<lb/>that you do not arrive until
+<lb/>12 O clock. <space extent="1" unit="chars"/>Will you be
+<lb/>Kind enough to grant me the
+<lb/>loan of &#xa3;2 as it is now
+<lb/><del><gap extent="1" unit="words" agent="illegible"/></del><add place="over-text">very</add> close upon a year since
+<lb/>I obtained that contribution from
+
+	<pb facs="liv_020085_0002" n="0002"/>
+<lb/>you. If you will grant my
+<lb/>much needed request I
+<lb/>will promise faithfully not to
+<lb/>molest you again; at least for
+<lb/>the space of a year. Please
+<lb/>be good Enough to oblige me as
+<lb/>I can assure you I must
+<lb/>make up <del>a bit</del> &#xa3;5 by <date when="1882-05-03">Saturday</date>
+<lb/>if possible or I may get into
+<lb/> trouble. <space extent="1" unit="chars"/>I will return it at
+<lb/>the Earliest possible moment.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>Trusting to hear from you
+<lb/>soon,</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><space extent="1" unit="chars"/>I am
+<lb/><space extent="2" unit="words"/><space extent="4" unit="chars"/>Yr obt. servant
+<lb/><space extent="4" unit="words"/><persName>W.I. Craft.</persName>
+<lb/><space extent="4" unit="words"/><space extent="3" unit="chars"/><seg n="container liv_020085_0002"><seg n="horizontal-circle liv_020085_0002">∞</seg></seg></p>
+
+
+			</div>
+		</body>
+	</text>
+</TEI>
+

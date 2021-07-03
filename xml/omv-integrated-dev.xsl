@@ -72,17 +72,17 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="https://onemorevoice.org/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="https://onemorevoice.org/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="https://onemorevoice.org/site.webmanifest"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0006" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0006" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0002" onload="this.rel='stylesheet'"/>
+				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
+					<link rel="preload" as="style" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0003"/>
+				<link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0004"/>
 				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/critical.css?=newVers_0004"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/critical.css?=newVers_0006"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
 					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
@@ -101,7 +101,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img src="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg 87w, https://onemorevoice.org/img/logo/OMV-logo-78px.jpg 78w, https://onemorevoice.org/img/logo/OMV-logo-72px.jpg 72w, https://onemorevoice.org/img/logo/OMV-logo-58px.jpg 58w, https://onemorevoice.org/img/logo/OMV-logo-39px.jpg 39w, https://onemorevoice.org/img/logo/OMV-logo-36px.jpg 36w, https://onemorevoice.org/img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="https://onemorevoice.org/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="https://onemorevoice.org/index.html"><img width="38" height="38" src="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg" srcset="https://onemorevoice.org/img/logo/OMV-logo-87px.jpg 87w, https://onemorevoice.org/img/logo/OMV-logo-78px.jpg 78w, https://onemorevoice.org/img/logo/OMV-logo-72px.jpg 72w, https://onemorevoice.org/img/logo/OMV-logo-58px.jpg 58w, https://onemorevoice.org/img/logo/OMV-logo-39px.jpg 39w, https://onemorevoice.org/img/logo/OMV-logo-36px.jpg 36w, https://onemorevoice.org/img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="https://onemorevoice.org/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="https://onemorevoice.org/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav"></div>
 
@@ -113,7 +113,7 @@
 						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
 						<header id="header">
 							<div class="image-wrapper">
-								<img class="image-border content-holder-1" src="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+								<img class="image-border" width="700" height="174"  src="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, https://onemorevoice.org/img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
 						<xsl:apply-templates select="TEI"/>
@@ -126,30 +126,41 @@
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
+					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="https://onemorevoice.org/css/rotate-toggle.css?="+randomString;document.head.appendChild(css);
 				</script>
 				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0004"/>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0001"/>
-				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI-add.css?=newVers_0001"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0006"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0002"/>
+				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
+					<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0002"/>
+				</xsl:if>
+				<xsl:if test="//xenoData[@type='css']">
+					<style>
+						<xsl:value-of select="//xenoData[@type='css']"/>
+					</style>
 				</xsl:if>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
 					// Includes HTML snippets
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='https://onemorevoice.org/common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='https://onemorevoice.org/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<script src="https://onemorevoice.org/js/manuscript-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
 					<script src="https://onemorevoice.org/js/journal-transform.js"></script>
+				</xsl:if>
+				<xsl:if test="//figure[@n='object' and @change='rotate-90']">
+					<!-- Image Rotation -->
+					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
+					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-90")}</script>
 				</xsl:if>
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
 					<!-- Image Rotation -->
@@ -162,9 +173,9 @@
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
 					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts.js?="+randomString;document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts.js?=newVers_0003";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="https://onemorevoice.org/js/scripts.js?=newVers_0004";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="https://onemorevoice.org/js/scripts.js?=newVers_0003"></script> -->
+				<!-- <script src="https://onemorevoice.org/js/scripts.js?=newVers_0004"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -448,7 +459,11 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -460,6 +475,7 @@
 					<xsl:copy-of select="$shelfmark"/>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
 					<xsl:copy-of select="$warning-language"/>
@@ -468,13 +484,18 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
 					<xsl:copy-of select="$warning-language"/>
@@ -483,7 +504,11 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -501,7 +526,11 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="https://onemorevoice.org/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -843,14 +872,14 @@
 
 	<xsl:template match="lb">
 			<br/>
-		<xsl:variable name="num">
+		<!--<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
 		<xsl:if test="number($num) mod 5 =0">
 			<span class="linenumber">
 				<xsl:value-of select="$num"/>
 			</span>
-		</xsl:if>
+		</xsl:if>-->
 	</xsl:template>
 
 	<!-- Alphabetical list of elements. Alphabetized by last element in path *or* first element among options. -->
@@ -927,7 +956,8 @@
 	<xsl:template match="corr|expan|reg"/>
 
 	<xsl:template match="date">
-		<time><xsl:apply-templates/></time>
+		<!--<time><xsl:apply-templates/></time>-->
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="del">
@@ -967,6 +997,9 @@
 			<xsl:value-of select="self::node()/label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
+			<xsl:if test="self::node()[@n='object' and @change='rotate-90']">
+				<xsl:text>image-to-rotate</xsl:text>
+			</xsl:if>
 			<xsl:if test="self::node()[@n='object' and @change='rotate-180']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
@@ -975,10 +1008,10 @@
 		<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
 		<!-- end of variables -->
 		<xsl:choose>
-			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-180')">
+			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
-				<br/><br/><br/>
+				<!--<br/><br/><br/>-->
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}"/>

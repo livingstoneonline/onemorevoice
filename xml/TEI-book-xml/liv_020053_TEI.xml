@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020053">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“Majwara's Account of the Last Journey and Death of Dr. Livingstone”</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Majwara's Account of the Last Journey and Death of Dr. Livingstone’</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“Majwara's Account of the Last Journey and Death of Dr. Livingstone,” 13 April 1874</title>
+				<!-- Title, date -->
+				<author>Holmwood, Frederick</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Holmwood, Frederick</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Frederick Holmwood</author>
+				<!-- First author only: Forename Surname -->
+				<author>Majwara, c.1857-1886</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Majwara</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="AM">
+					<name>Anne Martin</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020053</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://archive.org/details/proceedingsvolu00keltgoog/page/n268/mode/2up">Internet Archive</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text; otherwise delete it -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Proceedings of the Royal Geographical Society</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<author></author>
+						<editor></editor>
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="section"></biblScope>
+							<!-- Section title (if known; otherwise leave blank) -->
+							<biblScope unit="vol">18</biblScope>
+							<!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue">3</biblScope>
+							<!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">244-46</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace></pubPlace>
+							<!-- Publication place (if known; otherwise leave blank) -->
+							<publisher></publisher>
+							<!-- Publisher (if known; otherwise leave blank) -->
+							<date>13 April 1874</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“Majwara's Account of the Last Journey and Death of Dr. Livingstone”</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="FH">Frederick Holmwood</author>
+					<author xml:id="M">Majwara</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1874-03-12">12 March 1874</date>
+					<date type="publication" when="1874-04-13">13 April 1874</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace">Zanzibar</placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+				<language ident="und">undetermined</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-03-13" who="#AW">Coding review</change>
+			<change when="2021-02-07" who="#AM">Transcription and TEI encoding</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div>
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+
+	<pb facs="liv_020053_0001" n="0001"/>
+<fw><seg rend="left">244</seg> <seg rend="center caps"><persName>Majwara</persName>'s Account of the Last Journey</seg> <seg rend="right">[<date when="1874-04-13"><hi rend="smallcaps">April</hi> 13, 1874</date>.</seg></fw>
+
+	<div rend="center">
+<lb/><gap extent="10" unit="lines" agent="omitted-text"/><!-- Text from previous article omitted here. AW -->
+<lb/>
+	</div>
+
+	<div>
+<lb/><p>The following letter was read :&#8212;</p>
+<p rend="no-indent">1.&#8212;<hi rend="italic"><persName>Majwara</persName>'s Account of the Last Journey and Death of <persName>Dr. Livingstone</persName>.</hi></p>
+<p><space extent="7" unit="chars"/>By <persName>F. Holmwood</persName>, <placeName>H.B.M. Consulate</placeName>, <geogName>Zanzibar</geogName>.</p>
+<p rend="no-indent">"<seg rend="smallcaps">My dear <persName>Sir Bartle</persName></seg>,&#8212; <seg rend="right small">"<geogName>Zanzibar</geogName>, <date when="1874-03-12">March 12th, 1874</date>.<space extent="2" unit="chars"/></seg></p>
+<p><space extent="5" unit="chars"/>"No doubt you will hear from several interested in <persName>Dr.
+Livingstone</persName>; but, as I do not feel sure that any one has thoroughly
+examined the men who came down with his remains, I briefly
+summarize what I have been able to glean from a careful <w>cross-examination</w>
+of <persName>Majwara</persName>, who was always at his side during his
+last days, and <persName>Susi</persName>, as well as the <term type="collective"><settlement>Nassik</settlement> boys</term>, have, generally,
+confirmed what he says. I enclose a small sketch map, merely
+giving my idea of the locality, and have added a dotted line to
+show his route during this last journey of his life.</p>
+<p>"The party sent by <persName>Stanley</persName> left <settlement>Unyanyembe</settlement> with the Doctor
+about the end of <date when="1872-08">August, 1872</date>, and marched straight to the south
+of <geogName>Lake Tanganyika</geogName>, through <region>Ufipa</region>, crossing the <geogName>Rungwa River</geogName>,
+where they met with natural springs of boiling water, bubbling up
+high above the ground. On reaching the <geogName>Chambezi</geogName>, or <geogName>Kambezi
+River</geogName>, they crossed it about a week's journey from <geogName>Lake Bemba</geogName>,
+also crossing a large feeder; but, by <persName>Susi</persName>'s advice, <persName>Livingstone</persName>
+again turned northward, and recrossed the <geogName>Kambezi</geogName>, or <geogName>Luapula</geogName>, as
+he then called it, just before it entered the lake.</p>
+<p>"He could not, however, keep close to the <region>north shore of <geogName>Lake
+Bemba</geogName></region>, owing to the numerous creeks and streams, which were
+hidden in forests of high <term type="plant">grass</term> and <term type="plant">rushes</term>. After making a détour,
+he again struck the lake at a village, where he got canoes across to
+an island in the centre, called <geogName>Matipa</geogName>. Here the shores on either
+hand were not visible, and the Doctor was put to great straits by
+the natives declining to let him use their canoes to cross to the
+opposite shore. He therefore seized seven canoes by force, and
+when the natives made a show of resistance, he fired his pistol
+over their heads, after which they ceased to obstruct him. Crossing
+the lake diagonally, he arrived in a long valley, and the rains
+having now set in fully, the caravan had to wade, rather than <lb/>
+
+
+	<pb facs="liv_020053_0002" n="0002"/>
+<fw><seg rend="left"><date when="1874-04-13"><hi rend="smallcaps">April</hi> 13, 1874</date>.]</seg> <seg rend="center caps">And Death of <persName>Dr. Livingstone</persName></seg> <seg rend="right">245</seg></fw>
+
+<lb/>walk, constantly crossing blind streams, and, in fact, owing to the
+high <term type="plant">rushes</term> and <term type="plant">grass</term>, hardly being able to distinguish at times the
+land, or rather what was generally dry land, from the lake.</p>
+<p>"<persName>Dr. Livingstone</persName> had been weak and ailing since leaving <settlement>Unyanyembe</settlement>,
+and when passing through the country of <region>Ukabende</region>, at
+the south-west of the lake, he told <persName>Majwara</persName> (the boy given him by
+<persName>Stanley</persName>, who is now in my service) that he felt unable to go on
+with his work, but should try and cross the hills to <region>Katanga</region>
+[<region>Katanda</region>?], and there rest, endeavouring to buy ivory, which in all
+this country is very cheap (three yards of merikani buying a slave or
+a tusk), and returning to <settlement>Ujiji</settlement> through <region>Manyuema</region> to recruit and
+reorganise.</p>
+<p>"But as he approached the <region>northern part of <region>Bisa</region></region> (a very large
+country), arriving in the <region>Province of Ulala</region>, he first had to take to
+riding a <term type="animal">donkey</term>, and then suffer himself to be carried on a <foreign>kitanda</foreign>
+(native bedstead), which at first went much against the grain.</p>
+<p>"During this time he never allowed the boy <persName>Majwara</persName> to leave
+him, and he then told that faithful and honest fellow that he should
+never cross the high hills to <region>Katanda</region>.</p>
+<p>"He called for <persName>Susi</persName>, and asked how far it was to the <geogName>Luapula</geogName>,
+and, on his answering 'three days,' remarked, 'he should never see
+<hi rend="italic">his</hi> river again.'</p>
+<p>"On arriving at <settlement>Ilala</settlement>, the capital of the district, where <persName>Kitambo</persName>
+the sultan lived, the party were refused permission to stay, and
+they carried <persName>Livingstone</persName> three hours' march back towards <region>Kabende</region>.
+Here they erected for him a rude hut and fence, and he would not
+allow any to approach him for the remaining days of his life except
+<persName>Majwara</persName> and <persName>Susi</persName>, except that every morning they were all desired
+to come to the door and say 'good morning.'</p>
+<p>"During these few days he was in great pain, and could keep
+nothing, even for a moment, on his stomach. He lost his sight so
+far as hardly to be able to distinguish when a light was kindled,
+and gradually sank during the night of the <date when="1873-05-04">4th May, 1873</date>.</p>
+<p>"Only <persName>Majwara</persName> was present when he died, and he is unable to
+say when he ceased to breathe.</p>
+<p>"<persName>Susi</persName>, hearing that he was dead, told <persName>Jacob Wainwright</persName> to make
+a note in the Doctor's diary of the things found by him. <persName>Wainwright</persName>
+was not quite certain as to the day of the month, and as
+<persName>Susi</persName> told him the Doctor had last written the day before, and he
+found this entry to be dated <date when="1873-04-27">27th April</date>, he wrote <date when="1873-04-28">28th April</date>, but
+on comparing his own diary on arrival at <settlement>Unyanyembe</settlement> he found it
+to be the <date when="1873-05-04">4th of May</date>; and this is confirmed by <persName>Majwara</persName>, who says
+<persName>Livingstone</persName> was unable to write for the last four or five days of his <lb/>
+
+
+	<pb facs="liv_020053_0003" n="0003"/>
+<fw><seg rend="left">246</seg> <seg rend="center caps"><gap extent="6" unit="words" agent="omitted-text"/><!--Valley of the Ili, and the--></seg> <seg rend="right">[<date when="1874-04-13"><hi rend="smallcaps">April</hi> 13, 1874</date>.</seg></fw>
+
+<lb/>life. I fancy the spot where <persName>Livingstone</persName> died is about 11.25ºs, and
+27º<hi rend="smallcaps">E</hi>; but, of course, the whole of this is subject to correction, and,
+although I have spent many hours in finding it all out, the Doctor's
+diary may show it to be very imperfect.</p>
+<p>"I fear you will find this a very unconnected narration, but my
+apology must be that the Consul-General is not well, and the other
+Assistant absent on duty, and there is much work for me to do. <persName>Mr.
+Arthur Laing</persName> has been entrusted with the charge of the remains
+and diaries, which latter he has been instructed to hand to <persName>Lord
+Derby</persName>.</p>
+<p>"Trusting that you are in the enjoyment of good health, and
+with great respect,</p>
+<p rend="no-indent"><space extent="5" unit="words"/>"Believe me, dear <persName>Sir Bartle</persName>,</p>
+<p rend="no-indent"><space extent="6" unit="words"/>"Your most obedient servant,</p>
+<p rend="no-indent smallcaps"><space extent="7" unit="words"/>"<persName>Frederick Holmwood</persName>.</p>
+	</div>
+	<div rend="center">
+<lb/><gap extent="29" unit="lines" agent="omitted-text"/><!-- Text from next article omitted here. AM -->
+	</div>
+			</div>
+		</body>
+	</text>
+</TEI>

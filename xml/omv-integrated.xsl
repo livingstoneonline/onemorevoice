@@ -72,17 +72,17 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
-				<link rel="preload" as="style" href="/css/critical.css?=newVers_0004" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0004" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0001" onload="this.rel='stylesheet'"/>
-				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="preload" as="style" href="/css/styleTEI-add.css?=newVers_0001" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/critical.css?=newVers_0006" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0006" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0002" onload="this.rel='stylesheet'"/>
+				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
+					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0003"/>
+				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0004"/>
 				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0004"/>
+				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0006"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
 					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
@@ -101,7 +101,7 @@
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
+				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
 		
 				<div data-include="nav"></div>
 
@@ -110,10 +110,9 @@
 					<div class="sidebar-container" data-include="sidebar"></div>
 		
 					<div class="page-wrapper">
-						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-						<header id="header">
-							<div class="image-wrapper">
-								<img class="image-border content-holder-1" src="/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, /img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, /img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, /img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, /img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, /img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, /img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ --><header id="header">
+							<div class="image-wrapper">		
+								<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, /img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, /img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, /img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, /img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, /img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, /img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
 						<xsl:apply-templates select="TEI"/>
@@ -122,34 +121,45 @@
 				</div>
 			
 				<div data-include="footer"></div>
-				
+
 				<script>
 					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 					// Adds CSS file and adds random string to end of CSS file.
-					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI-add.css?="+randomString;document.head.appendChild(css);
+					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/rotate-toggle.css?="+randomString;document.head.appendChild(css);
 				</script>
 				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0004"/>
-				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0001"/>
-				<xsl:if test="/TEI/text[contains(@n,'styleTEI-add')]">
-					<link rel="stylesheet" type="text/css" href="/css/styleTEI-add.css?=newVers_0001"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0006"/>
+				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0002"/>
+				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
+					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"/>
+				</xsl:if>
+				<xsl:if test="//xenoData[@type='css']">
+					<style>
+						<xsl:value-of select="//xenoData[@type='css']"/>
+					</style>
 				</xsl:if>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
 					// Adapted from https://stackoverflow.com/a/31837264
 					// Includes HTML snippets
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0001';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<script src="/js/manuscript-transform.js"></script>
 				</xsl:if>
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
 					<script src="/js/journal-transform.js"></script>
+				</xsl:if>
+				<xsl:if test="//figure[@n='object' and @change='rotate-90']">
+					<!-- Image Rotation -->
+					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
+					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-90")}</script>
 				</xsl:if>
 				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
 					<!-- Image Rotation -->
@@ -162,9 +172,9 @@
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
 					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0003";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0004";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="/js/scripts.js?=newVers_0003"></script> -->
+				<!-- <script src="/js/scripts.js?=newVers_0004"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -448,7 +458,11 @@
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>-->
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -460,6 +474,7 @@
 					<xsl:copy-of select="$shelfmark"/>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
 					<xsl:copy-of select="$warning-language"/>
@@ -468,13 +483,18 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
+						<div class="download"><div><a href="/xml/TEI-book-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>-->
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
 					<xsl:copy-of select="$warning-violence"/>
 					<xsl:copy-of select="$warning-language"/>
@@ -483,7 +503,10 @@
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image(s) not included – ideal for printing</div></div>-->
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -500,8 +523,12 @@
 				</aside>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
+				<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
 				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					<div class="button-container">
+						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image(s) not included – ideal for printing</div></div>-->
+						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+					</div>
 					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
@@ -786,12 +813,10 @@
 					<xsl:value-of select="$class"/>
 				</xsl:attribute>
 			</xsl:if>
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</span>
 	</xsl:template>
-
-	<!-- need: bold, italic, sub, sup -->
-
+	
 	<!-- Make rend classes -->
 	<xsl:template match="*/@rend" priority="-1">
 		<xsl:attribute name="class">
@@ -799,17 +824,17 @@
 			<xsl:value-of select="translate(., '-', '')"/>
 		</xsl:attribute>
 	</xsl:template>
-
+	
 	<!-- Textual divisions -->
 	<xsl:template match="text|body|front|back">
 		<div class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</div>
 	</xsl:template>
 
 	<xsl:template match="div">
 		<div class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</div>
 	</xsl:template>
 
@@ -818,18 +843,18 @@
 			<xsl:when test="@type='verse'">
 				<div class="poem-wrapper">
 					<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-						<xsl:apply-templates/>
+						<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 					</div>
 				</div>
 			</xsl:when>
 			<xsl:when test="@type='stanza'">
 				<p class="{concat('poetic-section', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 				</p>
 			</xsl:when>
 			<xsl:otherwise>
 				<div class="{concat('poem', ' ', @type, ' ', @rend, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 				</div>
 			</xsl:otherwise>	
 		</xsl:choose>
@@ -837,45 +862,45 @@
 
 	<xsl:template match="l">
 		<seg class="{concat('poetic-line', ' ', @type, ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</seg>
 	</xsl:template>
 
 	<xsl:template match="lb">
 			<br/>
-		<xsl:variable name="num">
+		<!--<xsl:variable name="num">
 			<xsl:number level="any" from="pb"/>
 		</xsl:variable>
 		<xsl:if test="number($num) mod 5 =0">
 			<span class="linenumber">
 				<xsl:value-of select="$num"/>
 			</span>
-		</xsl:if>
+		</xsl:if>-->
 	</xsl:template>
 
 	<!-- Alphabetical list of elements. Alphabetized by last element in path *or* first element among options. -->
 
 	<xsl:template match="ab|p">
 		<p class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</p>
 	</xsl:template>
 
 	<xsl:template match="abbr">
-		<abbr><xsl:apply-templates/></abbr>
+		<abbr><xsl:copy-of select="jc:addFE(.)"/></abbr>
 	</xsl:template>
 
 	<xsl:template match="add">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></ins>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:copy-of select="jc:addFE(.)"/></ins>
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:apply-templates/></ins>
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
 		<br/>
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<!-- app: show first rdg, offer alternatives in title -->
@@ -927,7 +952,8 @@
 	<xsl:template match="corr|expan|reg"/>
 
 	<xsl:template match="date">
-		<time><xsl:apply-templates/></time>
+		<!--<time><xsl:apply-templates/></time>-->
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="del">
@@ -967,6 +993,9 @@
 			<xsl:value-of select="self::node()/label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
+			<xsl:if test="self::node()[@n='object' and @change='rotate-90']">
+				<xsl:text>image-to-rotate</xsl:text>
+			</xsl:if>
 			<xsl:if test="self::node()[@n='object' and @change='rotate-180']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
@@ -975,23 +1004,28 @@
 		<!-- <xsl:value-of select="/TEI/text/body/div/p/figure/graphic/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='id']"/> -->
 		<!-- end of variables -->
 		<xsl:choose>
-			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-180')">
+			<!-- This option used for object images that can be rotated -->
+			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
-				<br/><br/><br/>
-				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
+				<!--<br/><br/><br/>-->
+				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
-						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}" id="{$rotate-id}"/>
+						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
 					</a>
 				</span>
+				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
 			</xsl:when>
+			<!-- This option used for all other object images -->
 			<xsl:when test="contains(@n,'object')">
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
 					</a>
 				</span>
+				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
 			</xsl:when>
+			<!-- The following used for images in TEI files. -->
 			<xsl:when test="'[child::graphic]'">
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}"><img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/></span>
 			</xsl:when>
@@ -1003,12 +1037,12 @@
 
 	<!-- An undefined foreign word. -->
 	<xsl:template match="foreign[not(term[@xml:lang])]">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="fw|fw[@type='catch']">
 		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</span>
 	</xsl:template>
 
@@ -1029,15 +1063,21 @@
 		<xsl:choose>
 			<xsl:when test="@type='subheading'">
 				<h4 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/>
 				</h4>
 			</xsl:when>
 			<xsl:otherwise>
 				<h3 class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}">
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/>
 				</h3>
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="//availability//hi">
+		<span class="{concat(translate(@rend, '-', ''), ' ', translate(@n, '-', ''))}">
+			<xsl:apply-templates/>
+		</span>
 	</xsl:template>
 
 	<xsl:template match="idno[@type='LEAP-ID']">
@@ -1046,22 +1086,22 @@
 
 	<xsl:template match="item">
 		<li class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</li>
 	</xsl:template>
 
 	<xsl:template match="list">
 		<!--<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}" title="list">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/>
 		</span>-->
 		<xsl:if test="@type='ordered'">
 			<ol class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place)}">
-				<xsl:apply-templates/>
+				<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 			</ol>
 		</xsl:if>
 		<xsl:if test="@type='unordered'">
 			<ul class="{concat(name(), ' ', @type, ' ', @rend, ' ', @n)}">
-				<xsl:apply-templates/>
+				<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 			</ul>
 		</xsl:if>
 	</xsl:template>
@@ -1108,15 +1148,15 @@
 	</xsl:template>
 	
 	<xsl:template match="note">
-		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:apply-templates/></span>
+		<span class="{concat(name(), ' ', @type, ' ', @rend, ' ', @place, ' ', @n)}"><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="orig">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="orgName">
-		<span class="orgName"><xsl:attribute name="title">A formally-named group or organization.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="orgName"><xsl:attribute name="title">A formally-named group or organization.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="text/body/div[1]/pb[1]|text/front/div[1]/pb[1]|text/back/div[1]/pb[1]" priority="10">
@@ -1165,7 +1205,7 @@
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
-				<xsl:apply-templates/>
+				<xsl:copy-of select="jc:addFE(.)"/>
 			</div>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
@@ -1173,24 +1213,24 @@
 					<span class="pb-title">
 						<xsl:value-of select="@n"/>
 					</span>
-					<xsl:apply-templates/>
+					<xsl:copy-of select="jc:addFE(.)"/>
 				</div>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="persName">
-		<span class="persName"><xsl:attribute name="title">A formally-named person.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="persName"><xsl:attribute name="title">A formally-named person.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 <!-- placeNames -->
 
 	<xsl:template match="placeName">
-		<span class="placeName"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="placeName"><xsl:attribute name="title">A formally-named place.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="geogName">
-		<span class="geogName"><xsl:attribute name="title">A formally-named geographical entity.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="geogName"><xsl:attribute name="title">A formally-named geographical entity.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<!--<xsl:template match="bloc">
@@ -1202,19 +1242,19 @@
 	</xsl:template>-->
 
 	<xsl:template match="region">
-		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="region"><xsl:attribute name="title">A formally-named region.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="bloc">
-		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually a continent.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="bloc"><xsl:attribute name="title">A multinational entity, usually a continent.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="settlement">
-		<span class="settlement"><xsl:attribute name="title">A settlement, such as a state, city, town, or village.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="settlement"><xsl:attribute name="title">A settlement, such as a state, city, town, or village.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="country">
-		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="country"><xsl:attribute name="title">A country.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 <!-- end placeNames -->
@@ -1234,11 +1274,11 @@
 	</xsl:template>
 
 	<xsl:template match="rdg">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="seg">
-		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:apply-templates/></span>
+		<span class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@type, '-', ''), ' ', translate(@n, '-', ''))}"><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="space[@extent][@unit]" priority="10">
@@ -1267,38 +1307,38 @@
 	</xsl:template>
 
 	<xsl:template match="subst">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="supplied">			
-		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
+		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
 		</span>
 	</xsl:template>
 	
 	<!-- Beginning of elements that go with table -->
 	<xsl:template match="table">
 		<table class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</table>
 	</xsl:template>
 
 	<xsl:template match="row">
 		<tr class="{concat(name(), ' ', @rend, ' ', @n)}">
-			<xsl:apply-templates/>
+			<xsl:copy-of select="jc:addFE(.)"/><!-- remove? -->
 		</tr>
 	</xsl:template>
 
 	<xsl:template match="cell">
-		<td class="{concat(name(), ' ', @rend, ' ', @n)}"><xsl:apply-templates/></td>
+		<td class="{concat(name(), ' ', @rend, ' ', @n)}"><xsl:copy-of select="jc:addFE(.)"/></td>
 	</xsl:template>
 	<!-- Non-breaking space &#x00A0; -->
 
 	<xsl:template match="term[@type]" priority="1">
-		<xsl:apply-templates/>
+		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
 	<xsl:template match="term[@type='collective']" priority="10">
-		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:apply-templates/></span>
+		<span class="collective"><xsl:attribute name="title">A collective term that signifies an individual or plural entity.</xsl:attribute><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
 	<xsl:template match="unclear">
@@ -1320,10 +1360,72 @@
 	</xsl:template>
 
 	<xsl:template match="w">
-		<span class="word"><xsl:apply-templates/></span>
+		<span class="word"><xsl:copy-of select="jc:addFE(.)"/></span>
 	</xsl:template>
 
+	<!-- function added by James Cummings 2021-04 -->
+	<!-- jc:addFormattingElements => jc:addFE -->
+	
+	<xsl:function name="jc:addFE" as="item()*">
+		<xsl:param name="current" as="node()"></xsl:param>
+		<xsl:variable name="rend" select="$current/@rend"/>
+		<xsl:choose>
+			<xsl:when test="contains($rend, 'bold') or contains($rend, 'italic')">
+				<xsl:choose>
+					<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic')">
+						<strong><em><xsl:apply-templates select="$current/node()"/></em></strong>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'bold')">
+						<strong><xsl:apply-templates select="$current/node()"/></strong>
+					</xsl:when>
+					<xsl:when test="contains($rend, 'italic')">
+						<em><xsl:apply-templates select="$current/node()"/></em>
+					</xsl:when>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="$current/node()"/>		
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+
+
 	<!-- ******************* -->
+
+	<!-- Removed from <xsl:function name="jc:addFE" as="item()*"> -->
+	<!--<xsl:when test="contains($rend, 'sup')
+		or contains($rend, 'bold') or contains($rend, 'italic')">
+		<xsl:choose>
+			<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic') and contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Bold, italic, and superscript</xsl:attribute>
+				<strong><em><sup><xsl:apply-templates select="$current/node()"/></sup></em></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'bold') and contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Bold and superscript</xsl:attribute>
+				<strong><sup><xsl:apply-templates select="$current/node()"/></sup></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'italic') and contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Italic and superscript</xsl:attribute>
+				<em><sup><xsl:apply-templates select="$current/node()"/></sup></em>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'bold') and contains($rend, 'italic')">
+				<xsl:attribute name="aria-label">Bold and italic</xsl:attribute>
+				<strong><em><xsl:apply-templates select="$current/node()"/></em></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'sup')">
+				<xsl:attribute name="aria-label">Superscript</xsl:attribute>
+				<sup><xsl:apply-templates select="$current/node()"/></sup>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'bold')">
+				<xsl:attribute name="aria-label">Bold</xsl:attribute>
+				<strong><xsl:apply-templates select="$current/node()"/></strong>
+			</xsl:when>
+			<xsl:when test="contains($rend, 'italic')">
+				<xsl:attribute name="aria-label">Italic</xsl:attribute>
+				<em><xsl:apply-templates select="$current/node()"/></em>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:when>-->
 
 	<!-- Removed from <xsl:template match="TEI">-->
 	<!--<xsl:variable name="document-uri" select="document-uri(.)"/>-->

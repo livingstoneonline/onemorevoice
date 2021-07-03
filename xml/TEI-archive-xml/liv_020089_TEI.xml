@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020089">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to Elizabeth Pease Nichol</title>
+				<!-- Title without date -->
+				<title type="alternative">Letter to Elizabeth Pease Nichol, 23 December 1881</title>
+				<!-- Title, date -->
+				<author>Craft, William Ivens, 1855-1926</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Craft, William Ivens</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">William Ivens Craft</author>
+				<!-- First author only: Forename Surname -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HM">
+					<name>Hope McCaffrey</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="LM">
+					<name>Lucy McCann</name>
+					<resp>Transcription</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020089</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+						<country>United Kingdom</country>
+						<!-- Repository country -->
+						<settlement>Oxford</settlement>
+						<!-- Repository city -->
+						<repository>Bodleian Library</repository>
+						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+						<idno type="shelfmark">MSS. Brit. Emp. S. 18, C156/137</idno>
+						<!-- Shelfmark/Identifier -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to Elizabeth Pease Nichol</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="WIC">Craft, William Ivens, 1855-1926</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1881-12-23">23 December 1881</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">The Railways &amp; Metropolitan Omnibus Company Limited, 18, Queen Victoria Street, E.C. London</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<xenoData type="css">.address.liv_020089_0001{font-size:1.2em;font-family:'Pinyon Script', cursive;white-space:nowrap}.date.liv_020089_0001{font-size:0.8em;font-family:Georgia, 'Times New Roman', Times, serif}</xenoData>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-05-26" who="#AW">Coding Review</change>
+			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
+			<change when="2020-12-18" who="#LM">Transcription</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text n="pinyon"><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body n="b7b4a8">
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div rend="black">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+	<pb facs="liv_020089_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="10" unit="words"/><space extent="6" unit="chars"/><add place="inspace" hand="#U">C156/137</add></ab>
+<lb/><p rend="no-indent brown black" n="address liv_020089_0001"><space extent="3" unit="chars"/><orgName>The Railways &amp; Metropolitan Omnibus Company Limited</orgName>,
+<lb/><space extent="4" unit="words"/><space extent="1" unit="chars"/><placeName>18, Queen Victoria Street, <hi rend="small">E.C.</hi></placeName>
+<lb/><space extent="4" unit="words"/><settlement><seg rend="large">L</seg>ondon,</settlement> <date when="1881-12-22"><date when="1881-12-23"><seg n="date liv_020089_0001" rend="italic black">Dec<hi rend="sup">r</hi>. 2<del>2</del><add place="over-text" rend="gray">3</add><hi rend="sup double-underline">nd</hi></seg> 188<seg n="date liv_020089_0001" rend="italic black">1</seg></date></date></p>
+<lb/><p rend="no-indent"><persName>Mrs E.P. Nichols,</persName></p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><space extent="2" unit="chars"/>Kind Friend,</p>
+<lb/><p rend="no-indent"><space extent="6" unit="words"/><space extent="1" unit="chars"/>I wrote to you some little time ago
+<lb/>but of course I did not expect an answer as you informed
+<lb/>me that writing was considerable trouble to you. I am sure
+<lb/>I wish you many a "<hi rend="sup">Merry</hi> <del>happy</del> Christmas" and a "Happy New Year" &amp;
+<lb/>that God's blessings will be showered down upon you. I
+<lb/>think that the note I forwarded you promising to pay the
+<lb/>money you loaned me does not come due until <date when="1882-01-15">Jany. 15th.</date>
+<lb/>I have been compelled to pawn my overcoat since I wrote
+<lb/>you last but everything will be all right soon as I have
+<lb/>been promised an increase of salary at the beginning of
+<lb/>the New Year. If you have read the papers published here you
+<lb/>have doubtless noticed the advertisement of the <orgName>Haverly
+<lb/>Minstrels</orgName> from <country>America</country><supplied>.</supplied> <space extent="1" unit="chars"/>I think they will be in <settlement>Glasgow</settlement>
+<lb/>soon, they had quite a successful time of it here.</p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/>If you could conveniently renew my note for three months
+<lb/>longer I think I shall be able to pay you all by the time
+
+	<pb facs="liv_020089_0002" n="0002"/>
+<lb/>it has expired if not I shall do my best to let you have some by
+<lb/>the time <del>this</del><add place="over-text">that</add> <hi rend="below">^</hi> <hi rend="sup">one</hi> falls due. I have lived <hi rend="underline">very</hi> economically of late
+<lb/>and am striving to do the best I can on my 12p however
+<lb/>you can rest assured that I shall never bother you again
+<lb/>for any further sums. <space extent="1" unit="chars"/>I send you a small Christmas
+<lb/>Card. Hoping to hear from you &amp; wishing you good
+<lb/>health. <space extent="1" unit="chars"/>I remain,</p>
+<lb/><p rend="no-indent"><space extent="4" unit="words"/><space extent="1" unit="chars"/>Yours Faithfully,</p>
+<lb/><p rend="no-indent"><space extent="8" unit="words"/><persName>W.I. Craft.</persName></p>
+			</div>
+		</body>
+	</text>
+</TEI>
+

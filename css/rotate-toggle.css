@@ -1,0 +1,581 @@
+/* CSS TEI Rotate Toggle File for One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki */ /* 2021 */
+
+/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+
+/* 
+Table of Contents
+-----------------
+
+** 2.0 Transcription CSS **
+2.2.2. Rotate Toggle Class: Supplement
+liv_020055 coding [temporary]
+
+*/
+
+/*--------------------------------------*/
+
+/* 2.2.2. Rotate Toggle Class: Supplement */
+
+/* Use .exclude class for items to be removed from rotation toggle */
+
+.rotate .signature2.liv_020021_0001,
+.rotate .statement1.liv_020021_0002{
+	margin: unset;
+	padding: unset;
+	display: unset;
+}
+.rotate .postscript.liv_020025_0001{
+	letter-spacing: normal;
+	white-space: normal;
+	line-height: unset;
+	float: none;
+	margin: unset;
+	padding: unset;
+	top: unset;
+	right: unset;
+	bottom: unset;
+	left: unset;
+	position: unset;
+}
+.rotate .block2.liv_020025_0004,
+.rotate .stamp.liv_020025_0004,
+.rotate .strike1.liv_020025_0004,
+.rotate .strike2.liv_020025_0004
+.rotate .seal1.liv_020025_0004,
+.rotate .seal2.liv_020025_0004,
+.rotate .seal3.liv_020025_0004,
+.rotate .seal4.liv_020025_0004,
+.rotate .seal5.liv_020025_0004{
+	position: unset;
+}
+.rotate .deletion1.liv_020051_0001,
+.rotate .deletion2.liv_020051_0001{
+	border-left: none;
+}
+.rotate .turn.liv_020074_0001{
+	top: unset;
+	left: unset;
+	position: unset;
+}
+@media only screen and (min-width: 768px){
+	.rotate .marginaltext.liv_000023_0037,
+	.rotate .container.liv_000023_0084,
+	.rotate .container.liv_000023_0085,
+	.rotate .text1.liv_000023_0115,
+	.rotate .text2.liv_000023_0115,
+	.rotate .note-1.liv_003027_0001,
+	.rotate .text.liv_020011_0004,
+	.rotate .marginalnote.liv_020019_0002,
+	.rotate .grayAdd.liv_020080_0001{
+		line-height: unset;
+		float: none;
+		margin: unset;
+		padding: unset;
+		top: unset;
+		right: unset;
+		bottom: unset;
+		left: unset;
+		position: unset;
+	}
+	.rotate .block3.liv_020051_0001{
+		position: unset;
+	}
+}
+.rotate .marginal7.liv_020055_0005{
+	left: -2.7em;
+}
+
+
+/* liv_020055 coding [temporary] */
+
+.item.liv_020055{
+	margin: 0 2em;	
+}
+.block-1.liv_020055_0001,
+.block-2.liv_020055_0001{
+	float: left;
+}
+.block-1.liv_020055_0001{
+	margin-left: -.5em;
+}
+.block-3.liv_020055_0001{
+	display: inline-block;
+}
+.marginal1.liv_020055_0001{
+	border-left: 2px #902D27 solid;
+	border-radius: 1em 0 0 0;
+	-webkit-border-radius: 1em 0 0 0;
+	-moz-border-radius: 1em 0 0 0;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.marginal2.liv_020055_0001{
+	border-left: 1px #3d4245 solid;
+	border-radius: 4em 0 0 0;
+	-webkit-border-radius: 4em 0 0 0;
+	-moz-border-radius: 4em 0 0 0;
+	margin-left: -1.5em;
+	padding-left: 1.5em;
+	position: relative;
+}
+.ednote.liv_020055_0001{
+	font-size: 1.3em;
+	transform: rotate(344deg) !important;
+	-ms-transform:rotate(344deg) !important;
+	-moz-transform:rotate(344deg) !important;
+	-webkit-transform:rotate(344deg) !important;
+	-o-transform:rotate(344deg) !important;
+	position: absolute;
+	left: -1.5em;
+}
+.marginal1.liv_020055_0002{
+	border-right: 2px #902D27 solid;
+	margin-right: .7em;
+}
+.marginal2.liv_020055_0002{
+	border-right: 1px #3d4245 solid;
+	margin-right: 1.1em;
+}
+.wrapper2.liv_020055_0003{
+	border-left: 2px #902D27 solid;
+	margin-left: -.5em;
+	padding-left: .5em;
+}
+.box1.liv_020055_0003{
+	border-left: 2px #3d4245 solid;
+	border-bottom: 2px #3d4245 solid;
+	margin-left: -.25em;
+	margin-bottom: .35em;
+	padding-left: .25em;
+}
+.box2.liv_020055_0003{
+	border-top: 2px #902D27 solid;
+	margin-left: -.5em;
+	padding-left: .5em;
+}
+@media only screen and (min-width: 992px){
+	.box2.liv_020055_0003{
+		width: 22em;
+	}
+}
+.par1.liv_020055_0003{
+	border-left: 2px #3d4245 solid;
+	border-radius: 1.6em;
+	-webkit-border-radius: 1.6em;
+	-moz-border-radius: 1.6em;
+	margin-left: -.25em;
+	padding: .25em 0 .25em .25em;
+}
+.add.liv_020055_0003::before{
+	content: '[';
+}
+.add.liv_020055_0003::after{
+	content: ']';
+}
+.marginal1.liv_020055_0004{
+	border-right: 2px #902D27 solid;
+	border-radius: 0 26px 0 0;
+	-webkit-border-radius: 0 26px 0 0;
+	-moz-border-radius: 0 26px 0 0;
+	margin-right: 5.2em;
+}
+.marginal2.liv_020055_0004{
+	border-right: 2px #3d4245 solid;
+	border-radius: 0 40px 0 0;
+	-webkit-border-radius: 0 40px 0 0;
+	-moz-border-radius: 0 40px 0 0;
+	margin-right: -1.3em;
+	position: relative;
+}
+.marginal3.liv_020055_0004{
+	position: absolute;
+	right: -3.5em;
+}
+.archival.liv_020055_0004{
+	font-size: .9em;
+	transform: rotate(312deg);
+	-ms-transform: rotate(312deg);
+	-moz-transform: rotate(312deg);
+	-webkit-transform: rotate(312deg);
+	-o-transform: rotate(312deg);
+	position: absolute;
+	right: -7em;
+	bottom: 1.5em;
+}
+.box1.liv_020055_0005{
+	border-left: 2px #3d4245 solid;
+	border-radius: 0 0 0 22px;
+	-webkit-border-radius: 0 0 0 22px;
+	-moz-border-radius: 0 0 0 22px;
+	margin-left: -.25em;
+	margin-bottom: .35em;
+	padding-left: .25em;
+}
+.marginal1.liv_020055_0005{
+	border-left: 2px #902D27 solid;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.marginal2.liv_020055_0005{
+	border-left: 2px #3d4245 solid;
+	margin-left: -1.8em;
+	padding-left: 1.8em;
+	display: block;
+}
+.marginal3.liv_020055_0005{
+	border-left: 2px #3d4245 solid;
+	margin-top: -8px;
+	margin-left: -1.55em;
+  padding-left: 1.55em;
+}
+.marginal4.liv_020055_0005{
+	border-left: 2px #902D27 solid;
+	border-radius: 1em 0 0 0;
+	-webkit-border-radius: 1em 0 0 0;
+	-moz-border-radius: 1em 0 0 0;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.marginal5.liv_020055_0005{
+	line-height: 1em;
+	position: absolute;
+	left: 0;
+}
+.marginal6.liv_020055_0005{
+	position: absolute;
+	left: 1em;
+}
+.marginal7.liv_020055_0005{
+	line-height: 1em;
+	transform: rotate(336deg);
+	-ms-transform: rotate(336deg);
+	-moz-transform: rotate(336deg);
+	-webkit-transform: rotate(336deg);
+	-o-transform: rotate(336deg);
+	position: absolute;
+	left: -1em;
+}
+/* Adapted from https://stackoverflow.com/questions/17285514/is-it-possible-to-make-a-squiggly-line */
+.wavyanchor.liv_020055_0006{
+	position: relative;
+}
+.wavyframe.liv_020055_0006{
+	transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	display: inline-block;
+	position: absolute;
+	top: 33em;
+	left: -1.5em;
+}
+@media only screen and (min-width: 768px){
+	.wavyframe.liv_020055_0006{
+		top: 21.2em;
+		left: -1em;
+	}
+}
+.wavyholder.liv_020055_0006{
+	overflow: hidden;
+	position: relative;
+}
+.wavy1.liv_020055_0006{
+	position: absolute;
+	background: radial-gradient(ellipse, transparent, transparent 8px, #902D27 8px, #902D27 10px, transparent 0px);
+	background-size: 36px 43px;
+	width: 390px;
+	height: 20px;
+	-webkit-transform: scale(2, 1);
+  -moz-transform: scale(2, 1);
+  -o-transform: scale(2, 1);
+  transform: scale(2, 1);
+}
+@media only screen and (min-width: 768px){
+	.wavy1.liv_020055_0006{
+		width: 284px;
+	}
+}
+.wavy2.liv_020055_0006{
+	top: 20px;
+	left: 36px;
+	background-position: 0px -20px;
+}
+.marginal1.liv_020055_0006{
+	border-left: 2px solid #902D27;
+}
+.box1.liv_020055_0006{
+	border-top: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+	border-left: 2px solid #902D27;
+	border-radius: 0 0 1px 1px;
+	display: block;
+}
+.box2.liv_020055_0006{
+	border-right: 2px solid #902D27;
+	border-bottom: 2px solid #902D27;
+	border-left: 2px solid #902D27;
+}
+.box3.liv_020055_0006{
+	padding-right: 1.75em;
+	border-top: 2px solid #858585;
+	border-right: 2px solid #858585;
+	border-left: 2px solid #858585;
+}
+@media only screen and (min-width: 768px){
+	.box3.liv_020055_0006{
+		padding-right: 1.9em;
+	}
+}
+.box4.liv_020055_0006{
+	text-indent: 0;
+	border-right: 2px solid #858585;
+	display: inline-block;
+}
+/* text in margin */
+.marginal2.liv_020055_0006{
+	text-align: right;
+	position: absolute;
+	right: 0;
+}
+@media only screen and (min-width: 768px){
+	.marginal2.liv_020055_0006{
+		right: 5em;
+	}
+}
+/* grey line that extends under the word "as" */
+.marginal1a.liv_020055_0007{
+	border-left: 2px #858585 solid;
+	margin-left: -1em;
+	padding-left: 1em;
+	display: inline-block;
+}
+.marginal1b.liv_020055_0007{
+	border-left: 2px #858585 solid;
+	margin-left: -2.3em;
+	padding-left: 1em;
+	border-radius: 0 0 0 10px;
+	-webkit-border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;
+	display: inline-block;
+}
+@media only screen and (min-width: 768px){
+	.marginal1b.liv_020055_0007{
+		margin-left: -2.35em;
+	}
+}
+/* black line in left margin */
+.marginal2.liv_020055_0007{
+	border-left: 2px #3d4245 solid;
+	margin-left: -1.5em;
+	padding-left: 1.5em;
+	display: block;
+}
+/* red line in left margin */
+.marginal3.liv_020055_0007{
+	border-left: 2px #902D27 solid;
+	border-radius: 1.6em 0 0 0;
+	-webkit-border-radius: 1.6em 0 0 0;
+	-moz-border-radius: 1.6em 0 0 0;
+	margin-left: -1em;
+	padding-left: 1em;
+	display: block;
+}
+/* text in margin */
+.marginal4.liv_020055_0007{
+	line-height: 1em;
+	transform: rotate(322deg);
+	-ms-transform: rotate(322deg);
+	-moz-transform: rotate(322deg);
+	-webkit-transform: rotate(322deg);
+	-o-transform: rotate(322deg);
+	position: absolute;
+	left: 0.25em;
+}
+/* red line in left margin */
+.marginal1a.liv_020055_0008{
+	border-right: 2px #3d4245 solid;
+	margin-right: -.5em;
+	padding-right: .5em;
+	display: block;
+	text-indent: 0;
+}
+@media only screen and (min-width: 768px){
+	.marginal1a.liv_020055_0008{
+		margin-right: -.75em;
+		padding-right: .75em;
+	}
+}
+.marginal1b.liv_020055_0008{
+	border-right: 2px #3d4245 solid;
+	margin-right: -.5em;
+	padding-right: .5em;
+	display: block;
+}
+/* black wavy line in left margin */
+.marginal2a.liv_020055_0008{
+	border-right: 2px #902D27 solid;
+	margin-right: 0;
+	padding-right: 0;
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.marginal2a.liv_020055_0008{
+		margin-right: -.3em;
+		padding-right: .3em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.marginal2a.liv_020055_0008{
+		margin-right: -.25em;
+		padding-right: .25em;
+	}
+}
+.marginal2b.liv_020055_0008{
+	border-right: 2px #902D27 solid;
+	border-radius: 0 0 10px 0;
+	-webkit-border-radius: 0 0 10px 0;
+	-moz-border-radius: 0 0 10px 0;
+	margin-right: 0;
+	padding-right: 0;
+	display: block;
+}
+.holder.liv_020055_0008{
+	position: relative;
+}
+.archival.liv_020055_0008{
+	font-size: .9em;
+	transform: rotate(306deg);
+	-ms-transform: rotate(306deg);
+	-moz-transform: rotate(306deg);
+	-webkit-transform: rotate(306deg);
+	-o-transform: rotate(306deg);
+	display: inline-block;
+	position: absolute;
+	right: -6em;
+}
+/* red line in left margin that curls at top and bottom */
+.marginal1.liv_020055_0009{
+	border-left: 2px #902D27 solid;
+	border-radius: 1.6em 0 0 1em;
+	-webkit-border-radius: 1.6em 0 0 1em;
+	-moz-border-radius: 1.6em 0 0 1em;
+	margin-left: -.75em;
+	padding-left: .75em;
+	display: block;
+}
+.container.liv_020055_0010{
+	position: relative;
+}
+.line1.liv_020055_0010{
+	margin-bottom: -.75em;
+	padding-bottom: .75em;
+	left: 4em;
+	transform: rotate(357deg);
+	-ms-transform: rotate(357deg);
+	-moz-transform: rotate(357deg);
+	-webkit-transform: rotate(357deg);
+	-o-transform: rotate(357deg);
+}
+.line2.liv_020055_0010{
+	left: 3em;
+}
+.line1.liv_020055_0010,
+.line2.liv_020055_0010{
+	border-left: 2px #902D27 solid;
+	height: 100%;
+	position: absolute;
+}
+.border1.liv_020055_0010{
+	border-bottom: 2px #902D27 solid;
+	border-radius: 0 0 1em 1em;
+	-webkit-border-radius: 0 0 1em 1em;
+	-moz-border-radius: 0 0 1em 1em;
+}
+.border2.liv_020055_0010{
+	border-top: 1px #902D27 solid;
+	width: 112%;
+	position: absolute;
+	left: -1.5em;
+}
+
+/* red line boxing text part one: "was assisted by the schoolmasters" */
+.box1.liv_020055_0010{
+	border-bottom: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+}
+.wrapper1.liv_020055_0010{
+	white-space: nowrap;
+}
+/*red line "the collection at the shews"*/
+.box2.liv_020055_0010{
+	border-top: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+}
+/*red line "accounted to 300... towards flooring"*/
+.box3.liv_020055_0010{
+	text-indent: 0;
+	border-right: 2px solid #902D27;
+	border-left: 2px solid #902D27;
+	padding-right: 3.3em;
+	display: inline-block;
+}
+/*red line "the school chapel"*/
+.box4.liv_020055_0010{
+	border-bottom: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+	border-left: 2px solid #902D27;
+}
+/*red line "Now and then some women came"*/
+.box5.liv_020055_0010{
+	border-top: 2px solid #902D27;
+}
+/* red line in left margin that curls at top and bottom */
+.marginal1.liv_020055_0011{
+	text-indent: 0;
+	margin-left: -1.4em;
+	padding-left: 1.4em;
+	border-radius: 1em 0 0 0;
+	-webkit-border-radius: 1em 0 0 0;
+	-moz-border-radius: 1em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.marginal1.liv_020055_0011{
+		margin-left: -1.35em;
+		padding-left: 1.35em;
+	}
+}
+@media only screen and (min-width: 768px){
+	.marginal1.liv_020055_0011{
+		margin-left: -1.3em;
+		padding-left: 1.3em;
+	}
+}
+.marginal2.liv_020055_0011{
+	margin-left: -2.7em;
+	padding-left: 1.35em;
+}
+.marginal1.liv_020055_0011,
+.marginal2.liv_020055_0011{
+	border-left: 2px #902D27 solid;
+	display: inline-block;
+}
+/* red line on right and bottom */
+.box.liv_020055_0012{
+	border-bottom: 2px solid #902D27;
+	border-right: 2px solid #902D27;
+	display: inline-block;
+}
+.archival.liv_020055_0012{
+	font-size: .9em;
+	transform: rotate(302deg);
+	-ms-transform: rotate(302deg);
+	-moz-transform: rotate(302deg);
+	-webkit-transform: rotate(302deg);
+	-o-transform: rotate(302deg);
+	position: absolute;
+	right: -.5em;
+  bottom: 6em;
+}

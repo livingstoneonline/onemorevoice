@@ -22,7 +22,8 @@ Table of Contents
 1.7.3. Overlay
 1.8. Footer & Fat Footer
 1.9. Sidebar
-1.10. Google Translate
+1.10.1. Download Page/Image Button
+1.10.2. Google Translate
 1.11. Archival Texts
 1.12. Object Gallery
 1.13. Book-Length Works
@@ -31,6 +32,7 @@ Table of Contents
 1.16. Essays
 1.17. Formatting
 1.18. Lists and Lines
+1.19. Scroll to Top Button
 
 Appendix
 Alternative [id]:target Coding 
@@ -45,7 +47,7 @@ Alternative [id]:target Coding
 /*
 (white) #fff;
 (black) #000;
-(light blue 1) #c4d8ef
+(light blue 1) #c4d8ef;
 (light blue 2) #dbe6f5;
 (site blue) #204A79;
 (light red) #b53831;
@@ -63,16 +65,36 @@ also see 2.9 for manuscript colors
 
 /* 1.1. Principal Components */
 
+/* *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+} */
+/* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+::selection {
+	color: #fff;
+  background: #404040;
+  text-shadow: none;
+}
+::-moz-selection {
+  color: #fff;
+	background: #858585;
+  text-shadow: none;
+}
 html{
 	font: 16px Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	color: #191716;
-	overflow-wrap: break-word;
+	/* overflow-wrap: break-word;
 	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
 	hyphens: auto;
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
+	-webkit-hyphens: auto; */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 	overflow-x: hidden;
 }
 body{
@@ -175,6 +197,12 @@ aside.credits#credits2-div{
 main{
 	font-size: 1.25em;
 	padding: 1em;
+	display: block;
+}
+aside.text-box{
+	background: #e3e3e3;
+	border-left: 5px #902D27 solid;
+	padding: 1em;
 }
 aside.credits#credits-div{
 	font-size: 1.2em;
@@ -195,6 +223,7 @@ aside.credits#credits2-div{
 /* manuscript pages */
 main.manuscript#manuscript-div,
 main.journal#journal-div{
+	margin-bottom: 1.5em;
 	padding: 0;
 }
 @media only screen and (min-width: 480px){
@@ -245,18 +274,28 @@ main.journal#journal-div{
 /* toc and toc-title used for page menus */
 .toc{
 	font-size: .9em;
-	padding: 1em 0 0 0;
+}
+@media only screen and (min-width: 768px){
+	.toc{
+		padding: 1em 0 0 0;
+	}
 }
 .toc-title{
 	list-style-type: none;
 	margin-left: -1.2em;
 	display: inline-block;
 }
-.return-top{
+/* .return-top{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: .9em;
+	white-space: nowrap;
 }
+@media only screen and (min-width: 480px){
+	.return-top{
+		margin-right: .5em;
+	}
+} */
 [id]:target{
 	margin-top: -70px;
 	border-top: 70px solid transparent;
@@ -325,7 +364,7 @@ h4{
 	font-style: italic;
 	font-weight: 300;
 }
-/* adds padding for h4 labelled subsections in essays */
+/* adds padding for h3 labelled subsections in essays */
 .subsection{
 	padding-top: 1.5em;
 }
@@ -333,12 +372,18 @@ h4{
 
 /* 1.4. Main Images and Related */
 img{
-	color: #e6e6e6;
 	font-weight: 300;
+	color: #e6e6e6;
+	border-style: none;
 	width: 100%;
+	height: auto;
+	display: inline-block;
 }
+/* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
-	width: calc(100% - 2px);
+	background: #e6e6e6;
+	border: 1px solid #e3e3e3;
+	box-sizing: border-box;
 }
 a img{
 	border: 3px transparent solid;
@@ -362,76 +407,6 @@ a:focus img{
 	}
 	.caption73{
 		padding: 0 13.5%;
-	}
-}
-/* The following is used to prevent content layout shifts */
-.content-holder-1,
-.content-holder-2,
-.content-holder-3,
-.content-holder-3a,
-.content-holder-4,
-.content-holder-5{
-	background: #e6e6e6;
-	display: inline-block;
-}
-@media screen and (min-width: 320px){
-	.content-holder-1{
-		min-height: 74px;
-	}
-	.content-holder-2{
-		min-height: 202px;
-	}
-	.content-holder-3{
-		min-height: 230px;
-	}
-	.content-holder-3a{
-		min-height: 315px;
-	}
-	.content-holder-4{
-		min-height: 255px;
-	}
-	.content-holder-5{
-		min-height: 377px;
-	}
-}
-@media screen and (min-width: 480px){
-	.content-holder-1{
-		min-height: 114px;
-	}
-	.content-holder-2{
-		min-height: 305px;
-	}
-	.content-holder-3{
-		min-height: 347px;
-	}
-	.content-holder-3a{
-		min-height: 345px;
-	}
-	.content-holder-4{
-		min-height: 365px;
-	}
-	.content-holder-5{
-		min-height: 396px;
-	}
-}
-@media screen and (min-width: 768px){
-	.content-holder-1{
-		min-height: 169px;
-	}
-	.content-holder-2{
-		min-height: 448px;
-	}
-	.content-holder-3{
-		min-height: 509px;
-	}
-	.content-holder-3a{
-		min-height: 505px;
-	}
-	.content-holder-4{
-		min-height: 564px;
-	}
-	.content-holder-5{
-		min-height: 581px;
 	}
 }
 /* Caption for main image */
@@ -496,11 +471,20 @@ a:focus img{
 a,
 a:visited{
 	color: #204A79;
+	background-color: transparent;
 }
 a:hover,
 a:focus{
 	color: #a83c37;
 	background-color: #E3E3E3;
+}
+#credits-div > p:nth-child(2) > a,
+#closing-credits > p:nth-child(3) > a,
+#closing-credits > p:nth-child(5) > a{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
 }
 .graphic a:hover,
 .graphic a:focus{
@@ -800,17 +784,15 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 @media only screen and (min-width: 992px){
 	#nav4{
 		margin: 0 auto;
-		left: unset;
-		transform: unset;
+		left: 0;
+		transform: translate(0);
 		visibility: visible;
 		display: flex;
 		justify-content: center;
 	}
 }
 #nav4 .current{
-	text-decoration: overline;
-	text-decoration-color: #204A79;
-	text-decoration-thickness: 4px;
+	border-bottom: 3px solid #204a79;
 }
 #nav4 li{
 	font-size: 1.05em;
@@ -1149,6 +1131,10 @@ footer p a,
 footer p a:visited{
 	color: #204A79;
 }
+footer p a:hover,
+footer p a:focus{
+	color: #a83c37;
+}
 footer p .site-detail{
 	line-height: 1.875em;
 	padding: 0 .2em;
@@ -1233,7 +1219,11 @@ footer p .site-detail:last-child::after{
 li.section > ul > li > a{
 	padding: 3px;
 }
-
+.fat-footer a:hover,
+.fat-footer a:focus{
+	color: #a83c37;
+	background-color: #E3E3E3;
+}
 
 /* 1.9. Sidebar */
 
@@ -1335,7 +1325,6 @@ aside.sidebar .external li a img{
 aside.sidebar .external li a img{
 	border: 2px solid transparent;
 	width: 100px;
-	margin-bottom: .5em;
 }
 aside.sidebar .external li a img.wp{
 	border: 2px solid transparent;
@@ -1356,9 +1345,91 @@ aside.sidebar .external li a:focus-within img{
 }
 
 
-/* 1.10. Google Translate */
+/* 1.10.1 Download Page/Image Button */
+
+.button-container{
+	display: flex;
+	align-items: baseline;
+	max-height: 70px;
+}
+@media only screen and (min-width: 768px){
+	.button-container{
+		margin: 0 0 1.5em 0;
+		display: flex;
+	}
+}
+.download{
+  display: none;
+  visibility: hidden;
+}
+/* @media only screen and (min-width: 992px){
+	.download{
+		margin-right: 1em;
+		padding-right: 1em;
+		border-right: 2px solid #e3e3e3;
+		line-height: 1em;
+		display: inline-block;
+		visibility: visible;
+	}
+	#object-div .download{
+		border: 0;
+		margin: .5em auto 0;
+		padding: 0;
+		width: 195px;
+		display: block;
+	}
+	.download div:nth-child(1){
+		font-size: 14.3px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		background: #fff;
+		border: 2px solid #E3E3E3;
+		border-radius: 7px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		margin: 0;
+		padding: 1px 8px;
+		height: 20px;
+		min-width: 150px;
+	}
+	.download div:nth-child(1):hover,
+	.download div:nth-child(1):focus-within{
+		border: 2px #204A79 solid;
+		background: #E3E3E3;
+	}
+	.download div:nth-child(1) a,
+	.download div:nth-child(1) a:visited{
+		color: unset;
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.download div:nth-child(1) a:hover,
+	.download div:nth-child(1) a:focus{
+		background: transparent;
+	}
+	.download div:nth-child(1) i{
+    color: #404040;
+  }
+	.download div:nth-child(2){
+		color: #666 ;
+		font-size: 11px;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-align: center;
+		margin-top: .6em;
+	}
+} */
+
+
+/* 1.10.2. Google Translate */
 /* Also see other styles marked "Google Translate" */
 
+button{
+  -webkit-appearance: button;
+}
 .goog-te-banner-frame.skiptranslate{
 	display: none !important;
 	visibility: hidden !important;
@@ -1367,14 +1438,10 @@ aside.sidebar .external li a:focus-within img{
 	text-align: unset !important;
 }
 .translate{
-	margin: 0;
 	max-width: 170px;
+	float: left;
 	overflow: hidden !important;
-}
-@media only screen and (min-width: 768px){
-	.translate{
-		margin: 0 0 1em;
-	}
+	margin-bottom: -.2em;
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{
@@ -1414,6 +1481,8 @@ div.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	padding-left: 4px;
+	line-height: 2.5em;
+	margin-top: .5em;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
 div.skiptranslate:nth-child(1) > span:nth-child(2){
@@ -1462,7 +1531,7 @@ section.archival-text{
 section.archival-text:last-of-type{
 	margin: 2.5em 0 1em 0;
 }
-section.archival-text h5,
+section.archival-text h4,
 section.archival-text p{
 	border-bottom: 1px solid #858585;
 	margin: 0;
@@ -1472,8 +1541,10 @@ section.archival-text p{
 section.archival-text p:last-of-type{
 	border-bottom: none;
 }
-section.archival-text h5{
+section.archival-text h4{
 	font-size: 1.15em;
+	font-weight: 600;
+	font-style: normal;
 	color: white;
 	background: #204A79;
 	border-radius: 8px 8px 0 0;
@@ -1482,22 +1553,15 @@ section.archival-text h5{
 	display: flex;
 	justify-content: space-between;
 }
-section.archival-text .return-top{
-	font-size: .9em;
+/* section.archival-text .return-top{
 	color: white;
-	white-space: nowrap;
-	margin-top: .05em;
-}
-@media only screen and (min-width: 480px){
-	section.archival-text .return-top{
-		margin-right: .5em;
-	}
+	line-height: 1.875em;
 }
 section.archival-text a.return-top:hover,
 section.archival-text a.return-top:focus{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}
+} */
 section.archival-text p:last-child{
 	border-bottom: none;
 }
@@ -1593,21 +1657,15 @@ section.archival-text .no-image .content{
 .gallery section:first-child h4:first-child{
 	margin-top: 0;
 }
-.gallery h4 .return-top{
-	font-size: .9em;
+/* .gallery h4 .return-top{
 	color: white;
-	white-space: nowrap;
-}
-@media only screen and (min-width: 480px){
-	.gallery h4 .return-top{
-		margin-right: 0.5em;
-	}
+	line-height: 1.875em;
 }
 .gallery h4 a.return-top:focus,
 .gallery h4 a.return-top:hover{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}
+} */
 .gallery-item{
 	text-align: center;
 	vertical-align: top;
@@ -1702,21 +1760,11 @@ section.archival-text .no-image .content{
 	display: flex;
 	justify-content: space-between;
 }
-.published-author .return-top{
-	font-size: .9em;
-	white-space: nowrap;
-	margin-top: .15em;
-}
-@media only screen and (min-width: 480px){
-	.published-author .return-top{
-		margin-right: .5em;
-	}
-}
-.published-author a.return-top:hover,
+/* .published-author a.return-top:hover,
 .published-author a.return-top:focus{
 	color: #a83c37;
 	background-color: whitesmoke;
-}
+} */
 .author-details{
 	border-top: none;
 	border-bottom: none;
@@ -1768,21 +1816,14 @@ section.archival-text .no-image .content{
 #films section:first-child h4:first-child{
 	margin-top: 0;
 }
-#films h4 .return-top{
-	font-size: .9em;
+/* #films h4 .return-top{
 	color: white;
-	white-space: nowrap;
-}
-@media only screen and (min-width: 480px){
-	#films h4 .return-top{
-		margin-right: 0.5em;
-	}
 }
 #films h4 a.return-top:focus,
 #films h4 a.return-top:hover{
 	color: #a83c37;
 	background-color: #e3e3e3;
-}
+} */
 #films h5{
 	font-size: 1.05em;
 	background-color: #e3e3e3;
@@ -2138,6 +2179,7 @@ ul.acknowledgments{
 }
 .byline{
 	font-variant: small-caps;
+	font-weight: 600;
 	margin: 0;
 	padding: 0;
 }
@@ -2185,6 +2227,9 @@ ul.acknowledgments{
 .smallcaps{
 	font-variant: small-caps;
 }
+strong{
+	font-weight: bolder;
+}
 .underline{
 	text-decoration: underline;
 }
@@ -2205,17 +2250,80 @@ ol li ol{
 		padding-left: 1.2em;
 	}
 }
-/* hr included in criticalTEI CSS */
-hr{
-	background-color: gray;
-	height: 1px;
-	border: 0;
-	width: 100%;
-	max-width: 100%;
+/* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 .title-hr{
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin: 2em 0;
+}
+
+
+/* 1.19. Scroll to Top Button */
+
+/* Scroll to top button */
+/* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#topButton{
+	cursor: pointer;
+	font-size: .95em;
+	font-weight: 600;
+	color: #fff;
+	background-color: #525252;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	outline: none;
+	margin-left: 33%;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 50%;
+	bottom: 47px;
+	transform: translate(-50%, 0);
+	z-index: 99;
+	display: none;
+	visibility: hidden;
+  }
+@media only screen and (min-width: 480px){
+	#topButton{
+		margin-left: 42%;
+		bottom: 14px;
+	}
+}
+@media only screen and (min-width: 768px){
+	#topButton{
+		margin-left: 340px;
+		bottom: 352px;
+	}
+}
+@media only screen and (min-width: 992px){
+	#topButton{
+		margin-left: 244px;
+		bottom: 384px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	#topButton{
+		margin-left: 280px;
+	}
+}
+  #topButton:hover,
+  #topButton:focus{
+	color: #525252;
+	background-color: #fff;
+	border: 2px solid #525252;
+}
+#topButton:active{
+	color: #fff;
+	background-color: #525252;
+	border: 2px solid transparent;
 }
 
 

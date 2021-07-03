@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020025">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to Directors of the London Missionary Society</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="alternative">“Letter to Directors of the London Missionary Society,” 1 September 1838</title>
+				<!-- Title, date -->
+				<author>Tzatzoe, Jan, 1792-1868</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Tzatzoe, Jan</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Jan Tzatzoe</author>
+				<!-- First author only: Forename Surname -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HB">
+					<name>Heather F. Ball</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="JM">
+					<name>Jared McDonald</name>
+					<resp>Transcription</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020025</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+                        <country>United Kingdom</country><!-- Repository country -->
+                        <settlement>London</settlement><!-- Repository city -->
+                        <repository>University of London. School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+                        <idno type="shelfmark">CWM/LMS/South Africa/Incoming Correspondence/Box 16A/Folder 2/Jacket A</idno><!-- Shelfmark/Identifier -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to Directors of the London Missionary Society</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="JT">Tzatzoe, Jan, 1792-1868</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1838-09-01">1 September 1838</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">King Williams Town</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<xenoData type="css">.container.liv_020025_0001{position:relative}.postscript.liv_020025_0001{text-indent:0;letter-spacing:4px;white-space:nowrap;line-height:1.7em;transform:rotate(270deg);-ms-transform:rotate(270deg);-moz-transform:rotate(270deg);-webkit-transform:rotate(270deg);-o-transform:rotate(270deg);position:absolute;left:-13.5em;bottom:16em}.block1.liv_020025_0004{margin-left:11em}.seal1.liv_020025_0004,.seal2.liv_020025_0004,.seal3.liv_020025_0004,.seal4.liv_020025_0004,.seal5.liv_020025_0004{border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;display:inline-block}.seal1.liv_020025_0004,.seal2.liv_020025_0004,.seal3.liv_020025_0004,.seal5.liv_020025_0004{height:3em;width:3em}.seal2.liv_020025_0004,.seal3.liv_020025_0004,.seal4.liv_020025_0004,.seal5.liv_020025_0004{position:absolute}.seal1.liv_020025_0004{background:linear-gradient(to left,black 85%,transparent 15%);border-right:2px solid black}.seal2.liv_020025_0004{background:linear-gradient(to left,transparent 50%,#9f744f 50%);border-left:2px solid #9f744f;opacity:0.5}.seal3.liv_020025_0004{background:linear-gradient(to right,transparent 50%,#9f744f 50%);border-right:2px solid #9f744f;left:-2em;bottom:0;opacity:0.5}@media only screen and (min-width: 768px){.seal3.liv_020025_0004{left:-4.5em}}@media only screen and (min-width: 992px){.seal3.liv_020025_0004{left:-5em}}.seal4.liv_020025_0004{border:2px solid black;height:2.5em;width:4em;transform:rotate(345deg);-ms-transform:rotate(345deg);-moz-transform:rotate(345deg);-webkit-transform:rotate(345deg);-o-transform:rotate(345deg)}.seal5.liv_020025_0004{border:3px solid black;position:absolute;bottom:6em;left:1.5em;opacity:0.5}.container.liv_020025_0004{position:relative}.stamp.liv_020025_0004{font-weight:600;font-family:Arial, Helvetica, sans-serif;color:#404040;line-height:1.3em;text-shadow:0 0 10px rgba(0, 0, 0, 0.5);background:linear-gradient(to bottom, #000 2px, transparent 2px, transparent calc(100% - 2px), black calc(100% - 2px)) no-repeat, linear-gradient(to left, #000 1px, transparent 2px, transparent calc(100% - 2px), black calc(100% - 2px)) no-repeat;padding:0.3em;margin:0 auto;text-align:center;transform:rotate(296deg);-ms-transform:rotate(296deg);-moz-transform:rotate(296deg);-webkit-transform:rotate(296deg);-o-transform:rotate(296deg);opacity:0.8;display:inline-block;position:absolute;bottom:10em}.strike1.liv_020025_0004,.strike2.liv_020025_0004{border-left:2px solid #9d6864;transform:rotate(333deg);-ms-transform:rotate(333deg);-moz-transform:rotate(333deg);-webkit-transform:rotate(333deg);-o-transform:rotate(333deg);display:block;position:absolute}.strike1.liv_020025_0004{height:3em;bottom:5.5em}.strike2.liv_020025_0004{height:9em;bottom:2em;left:2em}.block2.liv_020025_0004{white-space:nowrap;line-height:1.4em;transform:rotate(270deg);-ms-transform:rotate(270deg);-moz-transform:rotate(270deg);-webkit-transform:rotate(270deg);-o-transform:rotate(270deg);display:inline-block;position:absolute;bottom:0.3em;left:-2em}</xenoData>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-06-01" who="#AW">Coding Review</change>
+			<change when="2021-05-21" who="#HB">Encoding and Proofing</change>
+			<change when="2021-05-14" who="#JM">Transcription</change>
+			<change when="2021-05-03" who="#AW">Set up file</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text n="rotate-toggle"><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body n="ebecef">
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div rend="brown">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+
+
+	<pb facs="liv_020025_0001" n="0001"/>
+<!--  -->
+<lb/><ab rend="no-indent gray"><unclear>Extract</unclear> of a letter from the <persName>Chief Jan Tzatzoe</persName> to the <orgName>Directors
+<lb/>of the <settlement>London</settlement> Miss<hi rend="sup">ry</hi>  Soc<hi rend="sup">y</hi> dated</orgName></ab>
+<lb/><p rend="no-indent"><space extent="10" unit="words"/><settlement><persName>King <choice><sic>Williams</sic><corr>William's</corr></choice></persName> Town</settlement>
+<lb/><space extent="10" unit="words"/><date when="1838-09-01">September 1<hi rend="sup underline">st</hi> <hi rend="underline">1838</hi></date></p> <!-- Adrian, not sure how to transcribe the doodle underline for 1st or the multiple inderlines for 1838. HB -->
+<lb/>
+<p rend="no-indent">To the Directors of the <orgName><settlement>London</settlement> Missionary Society</orgName>.</p>
+<lb/>
+<lb/>
+<p>Very Honoured Fathers,
+<lb/><space extent="5" unit="words"/>I now sit down to write you these few lines
+<lb/>to tell you and our other <term type="collective"><choice><sic>christian</sic><corr>hristian</corr></choice></term> friends in <country>England</country> that I
+<lb/>arrived safe among my own people. We had a very good passage out
+<lb/>from <country>England</country> to <region>the Cape</region> where we stayed for a short time and then
+<lb/>proceeded up the country in company with <persName>Mr Read</persName> and <persName>Mr
+<lb/>and Mrs Schreiner</persName>. <seg type="metamark" rend="gray large" hand="#U">[</seg>I found the country quiet and all the <!--Adrian, a later hand added in a greay bracket - are we coding these still, or just original text? HB -->
+<lb/>chiefs exceedingly glad to see me back among them – <space extent="1" unit="chars"/>We found
+<lb/><unclear cert="low">Maeowo <add place="above">his <gap extent="1" unit="words" agent="illegible"/></add></unclear> at the <geogName>Blinkwater</geogName> awaiting our arrival (for I came around <!-- not sure if Blinkwater is a region or geogName? HB -->
+<lb/>by the <geogName>Kat River</geogName>) from whence he sent to inform <persName>Batawa
+<lb/>Tyolie</persName>. <unclear cert="low"><persName><gap extent="1" unit="words" agent="illegible"/></persName></unclear> &amp;c that <persName>Mr Read</persName> and I had arrived –</p>
+<lb/><p rend="no-indent"><choice><sic>as</sic><corr>As</corr></choice> soon as they got the message they came to see me
+<lb/>at <settlement>Philipton</settlement> where we spent a few days together in talking
+<lb/>of what I had seen in <country>England</country> – <space extent="1" unit="chars"/>how kindly I had been
+<lb/><choice><sic>recieved</sic><corr>received</corr></choice> by the <term type="collective">Christians</term> of <country>England</country> &amp; how greatly they
+<lb/>loved &amp; felt for the <term type="collective"><choice><sic>Caffers</sic><corr>Caffres</corr></choice></term> &amp; other <term type="collective">natives</term> of this &amp; other <!-- Adrian, this is spelt Caffres in other documents - should I orig/reg or leave? HB -->
+<lb/>parts of the world – <space extent="1" unit="chars"/>I also told them what <persName>Lord <unclear cert="low">Glenelg</unclear></persName>
+<lb/>had told me to tell them "<choice><abbr>viz</abbr><expan>videlicet</expan></choice> that they must maintain peace with
+<lb/>the <region>Colony</region>. That if the <term type="collective">Colonists</term> ill treat us that we must
+<lb/>complain to the Governor &amp; that if the Governor <choice><sic>wont</sic><corr>won't</corr></choice>
+<lb/>do them justice they can send their complaints to
+
+<lb/><seg n="container liv_020025_0001"><seg rend="brown black no-indent" n="postscript liv_020025_0001">P.S. please to thank all the good children in <country>England</country> for the <!-- I couldn't get this to validate with ab or cb, so put in a seg for now- can you let me know how to fix pls? HB -->
+<lb/>clothes they have sent the little <term type="collective">caffre</term> children – <space extent="1" unit="chars"/>I hope
+<lb/>I shall one day see some of them as missionaries &amp;c.
+<lb/>missionaries wives in <bloc>Africa</bloc> –</seg></seg>
+
+	<pb facs="liv_020025_0002" n="0002"/>
+<lb/>to him &amp; that he would see that justice is done to them. 
+<lb/><choice><sic>at</sic><corr>At</corr></choice> this they were all very much pleased and said to each
+<lb/>other this is the word of the great man" –<seg type="metamark" rend="large gray" hand="#U">]</seg> From <settlement>Philipton</settlement> <choice><sic>I</sic><corr/></choice> <!-- Again, not sure if we're coding the later-hand bracket. HB -->
+<lb/>I rode to the <geogName><term type="animal"><choice><sic>Buffalos</sic><corr>Buffaloes</corr></choice></term> River</geogName> where I found my dear wife
+<lb/>and children quite well – <space extent="1" unit="chars"/>It was a great day for my people
+<lb/>who stood about me, gazed at me &amp; said how stout you
+<lb/>are. <choice><sic>how</sic><corr>How</corr></choice> well you look. <choice><sic>we</sic><corr>We</corr></choice> can see that you have
+<lb/>been treated well by that nation. Have you really been
+<lb/>over the great water? <choice><sic>and</sic><corr>And</corr></choice> come back unhurt too? <choice><sic>we</sic><corr>We</corr></choice>
+<lb/>really now see that these people are our friends – <space extent="1" unit="chars"/>Some
+<lb/>said how often did you outspan? <choice><sic>where</sic><corr>Where</corr></choice> and how
+<lb/>did you cook your victuals? To all these questions
+<lb/>I had to give answers. I told them that I was treated as
+<lb/>kindly and tenderly as if I had been a little child, both in
+<lb/><country>England</country> and <country>Scotland</country> – <space extent="1" unit="chars"/>I am glad <del type="strikethrough">to</del><add place="above">to</add> say that the Lord is
+<lb/>observing his work among the <term type="collective">caffres</term> of my tribe – <space extent="1" unit="chars"/>Just before I arrived
+<lb/><persName>Mr Brownlee</persName> baptized two young chiefs my first cousins <add place="below">^</add> <add place="above">&amp; three</add> and
+<lb/><add place="inspace" rend="small">brothers the sons of <unclear cert="low">Hennadan</unclear></add> 
+<lb/>many more of both sexes are inquiring the way to the Kingdom
+<lb/>of God some of whom will soon I trust be added to the
+<lb/>church – My prayer to God is that he may more abundantly
+<lb/>pour out his spirit upon the minds of the <term type="collective">caffres</term> and
+<lb/>that Jesus our Redeemer may in the conversion of many
+<lb/>of my poor countrymen see of the <unclear cert="low"><gap extent="1" unit="words" agent="illegible"/></unclear> of his soul
+<lb/>and be satisfied – <seg type="metamark" rend="gray large" hand="#U">|</seg> I hope missionaries will soon come <!-- Again the later added mark, this time | . HB -->
+<lb/>out to form many more stations.</p>
+
+	<pb facs="liv_020025_0003" n="0003"/>
+<lb/><p rend="no-indent">We have three schools 1 infant school a sunday school and
+<lb/>another day school kept by a <term type="collective">caffre</term> who began the school
+<lb/>on his own accord – <space extent="1" unit="chars"/>I hope we shall be able to establish
+<lb/>some more schools if we can get either <term type="collective">hottentot</term> or 
+<lb/><term type="collective">caffre</term> <del type="cancelled">childs</del> youths to become teachers – <space extent="1" unit="chars"/>I am
+<lb/>quite sure that the gospel will not be spread <del rend="gray" hand="#U">with <!-- This deletion and the following addition are a later hand. HB -->
+<lb/>great rapidity</del> <add place="above" rend="gray" hand="#U">much</add> till <term type="collective">natives</term> become teachers and go every
+<lb/>where to preach the gospel. <seg type="metamark" rend="gray large" hand="#U">|</seg> I am happy to say that <!-- Again the later added mark, this time | . HB -->
+<lb/>the frontier system now established by the <del rend="gray" hand="#U">Late</del> <!-- Strikethrough in later hand. HB -->
+<lb/><persName><choice><abbr>Lieut</abbr><expan>Lieutenant</expan></choice> Governor Stockenstrom</persName> is fully answering 
+<lb/>the end. I do not know another individual who <unclear cert="high">will</unclear> <!-- A cut across the next four lines renders some text illegible - how coding in our lite way? HB -->
+<lb/>manage the frontier as he has done – <space extent="1" unit="chars"/>He was <unclear cert="high">born</unclear>
+<lb/>in the <region>Colony</region> and quite acquainted with the <unclear cert="high">good</unclear>
+<lb/>and bad qualities of the <term type="collective">natives</term> of this <region>Colony</region> <unclear cert="high">&amp;</unclear>
+<lb/>he treats them accordingly. He is not like a stranger
+<lb/>who may come out with good principles and
+<lb/>intentions and after a time change his views
+<lb/>and then say I have now received new light on
+<lb/>the subject - <space extent="1" unit="chars"/>It is my wish and that of all the
+<lb/><term type="collective">Caffres</term> that he may come out again. I am <!-- a tear in the page over again - how to code? HB -->
+<lb/>also glad to say that <persName>General Napier</persName> is also a
+<lb/>good man and has already done much to keep
+<lb/>the frontier in peace –<seg type="metamark" rend="gray large" hand="#U">]</seg> I have no doubt that <!-- Again the later added bracket mark. HB -->
+<lb/>under a system of strict justice patience peace
+<lb/>will be continued on the frontier –</p>
+
+	<pb facs="liv_020025_0004" n="0004"/>
+<lb/><p rend="no-indent">I must now close Honoured fathers and must
+<lb/>again beg of you to pray for me and my poor
+<lb/>countrymen – <space extent="1" unit="chars"/>My <unclear><gap extent="1" unit="words" agent="illegible"/></unclear> is till come over and help
+<lb/>us – <space extent="1" unit="chars"/>I must again thank you for all your kindness
+<lb/>to me and I hope the Lord will reward you
+<lb/>a hundred fold – <space extent="1" unit="chars"/>May we all meet before 
+<lb/>before the throne of God at last with all the children</p>
+
+<lb/><ab rend="no-indent" n="block1 liv_020025_0004"><seg rend="small"><date from="1838" to="1839">1838/1839</date> N<hi rend="sup underline">o</hi> 4 &#8212;&#8212;&#8212;&#8212;&#8212; p. 51</seg>
+<lb/><seg rend="black"><space extent="1" unit="words"/><space extent="2" unit="chars"/><settlement><persName>King <choice><sic>Williams</sic><corr>William's</corr></choice></persName> Town</settlement>
+<lb/><space extent="3" unit="words"/><date when="1838-09-01">September 1/<choice><abbr>38</abbr><expan>1838</expan></choice></date>
+<lb/><space extent="2" unit="words"/><persName>Jan Tzatzoe</persName></seg>
+<lb/><space extent="4" unit="words"/><seg n="seal1 liv_020025_0004"></seg>
+<lb/><space extent="2" unit="words"/><seg rend="gray black">16-2-17</seg> <space extent="1" unit="chars"/><seg n="seal2 liv_020025_0004"></seg></ab>
+
+<!-- Seal at border left -->
+<!-- Stamp above address-->
+
+<lb/><ab rend="no-indent" n="container liv_020025_0004">
+<seg n="seal3 liv_020025_0004"></seg>
+<seg n="stamp liv_020025_0004" rend="caps"><country>India</country> Letter
+<lb/><settlement>Portsmouth</settlement></seg>
+<seg n="strike1 liv_020025_0004"></seg>
+<seg n="strike2 liv_020025_0004"></seg>
+<seg n="block2 liv_020025_0004"><seg n="seal4 liv_020025_0004"></seg>
+<space extent="2" unit="words"/><space extent="2" unit="chars"/><persName><choice><abbr>Rev<hi rend="sup">d</hi></abbr><expan>Reverend</expan></choice> William <unclear cert="high">Ellis</unclear></persName> <!-- I don't think this is how we do it but without the ab/cb sections I'm not sure so just did seg for now - let me know how to fix. HB -->
+<lb/><space extent="3" unit="words"/>Mission House
+<lb/><space extent="4" unit="words"/><space extent="2" unit="chars"/>Bloomfield <unclear><gap extent="1" unit="words" agent="illegible"/></unclear>
+<lb/><seg n="seal5 liv_020025_0004"></seg><space extent="3" unit="words"/><del type="strikethrough">care of <persName>Rev<hi rend="sup">d</hi> J. Philip</persName></del>
+<lb/><space extent="5" unit="words"/><space extent="3" unit="chars"/><settlement>Finsbury</settlement>
+<lb/><space extent="6" unit="words"/><space extent="1" unit="chars"/><del type="strikethrough"><settlement>Cape Town</settlement></del>
+<lb/><del>care of <persName>G A <unclear cert="low">Munis</unclear> Esquire</persName></del> <space extent="2" unit="chars"/><settlement>London</settlement>
+<lb/><space extent="1" unit="words"/><del><settlement><unclear><gap extent="1" unit="words" agent="illegible"/></unclear> Town</settlement></del></seg></ab>
+
+<lb/><ab rend="no-indent" n="block1 liv_020025_0004"><space extent="1" unit="words"/>Rec<hi rend="sup underline">d</hi> <date when="1838-11-22"><choice><abbr>Nov</abbr><expan>November</expan></choice> 22/<choice><abbr>38</abbr><expan>1838</expan></choice></date></ab>
+
+<lb/><p rend="no-indent">of God out of every country &amp; tongue – <space extent="1" unit="chars"/>My love
+<lb/>to all our sisters and Brothers in <country>England</country></p>
+<lb/><space extent="1" unit="words"/><p>I am Honoured fathers</p>
+<lb/><p><space extent="4" unit="words"/>Your very humble 
+<lb/><space extent="5" unit="words"/>servant</p>
+<lb/><p><space extent="6" unit="words"/><persName>Jan Tzatzoe</persName></p>
+
+			</div>
+		</body>
+	</text>
+</TEI>

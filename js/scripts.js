@@ -3,7 +3,7 @@
 
 // if ("serviceWorker" in navigator) {
 //   navigator.serviceWorker
-//     .register("/sw.js?=newVers_0001")
+//     .register("/sw.js?=newVers_0002")
 //     .then(serviceWorker => {
 //       serviceWorker.update();
 //       console.log("Service Worker registered: ", serviceWorker);
@@ -23,53 +23,6 @@ if ("serviceWorker" in navigator) {
 				}
 	})
 };
-
-
-// Overlay
-// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
-
-function openNav() {
-	document.getElementById("nav7").style.display = "block";
-	document.getElementById("nav7").style.visibility = "visible";
-	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-};
-
-function closeNav() {
-	document.getElementById("nav7").style.display = "none";
-	document.getElementById("nav7").style.visibility = "hidden";
-	document.getElementsByTagName("html")[0].style.overflowY = "unset";
-};
-
-
-// Trap Focus in Overlay
-// Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
-// Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
-jQuery(document).ready(function () {
-	jQuery('#overlay-last').on('keydown', function (e) {
-		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-		if (!isTabPressed) {
-			return
-		}
-		if (e.shiftKey) {
-			return
-		} else {
-			jQuery('#nav8').focus();
-			e.preventDefault()
-		}
-			});
-	jQuery('#nav8').on('keydown', function (e) {
-		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
-		if (!isTabPressed) {
-			return
-		}
-		if (e.shiftKey) {
-			jQuery('#overlay-last').focus();
-			e.preventDefault()
-		} else {
-			return
-		}
-	})
-});
 
 
 // Keyboard Navigation for Dropdown Menus
@@ -281,8 +234,120 @@ function getPreviousElement(items, currentItem){
 };
 
 
-// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
+// Highlights users current section in navigation
+// Adapted from https://stackoverflow.com/a/21718316
+
+checkUrl();
+			
+function checkUrl () {
+	if(location.pathname == "/" && 
+		location.hash.length <= 1 && 
+		location.search.length <= 1) {
+			document.getElementById("home-tab").setAttribute("class","current");
+	}
+	if (window.location.href.indexOf("index") > -1) {	
+			document.getElementById("home-tab").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("texts") > -1 ||
+		window.location.href.indexOf("visual") > -1 ||
+		window.location.href.indexOf("books") > -1 ||
+		window.location.href.indexOf("motion") > -1 ||
+		window.location.href.indexOf("essays") > -1 ||
+		window.location.href.indexOf("_TEI") > -1 ||
+		window.location.href.indexOf("_ART") > -1) {	
+			document.getElementById("materials-tab").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("analytical") > -1 ||
+		window.location.href.indexOf("design") > -1 ||
+		window.location.href.indexOf("collaboration") > -1 ||
+		window.location.href.indexOf("guidelines") > -1) {	
+			document.getElementById("about-tab").setAttribute("class","current");
+	};
+	if (window.location.href.indexOf("contributors") > -1 ||
+		window.location.href.indexOf("acknowledgments") > -1 ||
+		window.location.href.indexOf("bibliography") > -1 ||
+		window.location.href.indexOf("site_map") > -1) {	
+			document.getElementById("misc-tab").setAttribute("class","current");
+	};
+};	
+
+
+//Scroll to top button
+//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+//Get the button
+// var mybutton = document.getElementById("topButton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+//     mybutton.style.display = "block";
+//     mybutton.style.visibility = "visible";
+//   } 
+//   else {
+//     mybutton.style.display = "none";
+//     mybutton.style.visibility = "hidden";
+//   }
+// };
+			
+// When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+// document.body.scrollTop = 0;
+// document.documentElement.scrollTop = 0;
+// };
+
+
+// Overlay
+// Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+
+function openNav() {
+	document.getElementById("nav7").style.display = "block";
+	document.getElementById("nav7").style.visibility = "visible";
+	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+};
+
+function closeNav() {
+	document.getElementById("nav7").style.display = "none";
+	document.getElementById("nav7").style.visibility = "hidden";
+	document.getElementsByTagName("html")[0].style.overflowY = "unset";
+};
+
+
+// Trap Focus in Overlay
+// Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
+// Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
+jQuery(document).ready(function () {
+	jQuery('#overlay-last').on('keydown', function (e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+		if (!isTabPressed) {
+			return
+		}
+		if (e.shiftKey) {
+			return
+		} else {
+			jQuery('#nav8').focus();
+			e.preventDefault()
+		}
+			});
+	jQuery('#nav8').on('keydown', function (e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+		if (!isTabPressed) {
+			return
+		}
+		if (e.shiftKey) {
+			jQuery('#overlay-last').focus();
+			e.preventDefault()
+		} else {
+			return
+		}
+	})
+});
+
+
 // Needed to prevent a "Best Practices" issue created by Google Translate
+// Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
 
 AddRelNoopener();
 
@@ -309,62 +374,24 @@ function RandomiseHref(){
 };
 
 
-// Adapted from https://stackoverflow.com/a/21718316
-// Highlights users current section in navigation
-
-checkUrl();
-			
-function checkUrl () {
-	if(location.pathname == "/" && 
-		location.hash.length <= 1 && 
-		location.search.length <= 1) {
-			document.getElementById("home-tab").setAttribute("class","current");
-	}
-	if (window.location.href.indexOf("index") > -1) {	
-			document.getElementById("home-tab").setAttribute("class","current");
-	};
-	if (window.location.href.indexOf("texts") > -1 ||
-		window.location.href.indexOf("visual") > -1 ||
-		window.location.href.indexOf("books") > -1 ||
-		window.location.href.indexOf("motion") > -1 ||
-		window.location.href.indexOf("essays") > -1 ||
-		window.location.href.indexOf("_TEI") > -1 ||
-		window.location.href.indexOf("_ART") > -1) {	
-			document.getElementById("materials-tab").setAttribute("class","current");
-	};
-	if (window.location.href.indexOf("analytical") > -1 ||
-		window.location.href.indexOf("design") > -1 ||
-		window.location.href.indexOf("collaboration") > -1 ||
-		window.location.href.indexOf("guidelines") > -1) {	
-			document.getElementById("concepts-tab").setAttribute("class","current");
-	};
-	if (window.location.href.indexOf("contributors") > -1 ||
-		window.location.href.indexOf("acknowledgments") > -1 ||
-		window.location.href.indexOf("bibliography") > -1 ||
-		window.location.href.indexOf("site_map") > -1) {	
-			document.getElementById("misc-tab").setAttribute("class","current");
-	};
-};	
-
-
-// Adapted from https://stackoverflow.com/a/30073090
 // Removes unused Google script that also registers an unload listener
+// Adapted from https://stackoverflow.com/a/30073090
 
 $('head').find('script').filter(function(){
     return $(this).attr('src') === 'https://translate.googleapis.com/element/TE_20201130_00/e/js/element/element_main.js'
 }).remove();
 
 
-// Adapted from https://stackoverflow.com/a/30073090
 // Ensures that Google logo for Translate is served at correct size
+// Adapted from https://stackoverflow.com/a/30073090
 
 $('body').find('img').filter(function(){
     return $(this).attr('src') === 'https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png'
 }).replaceWith( "<img src='https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png' srcset='https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_42x16dp.png 2x, https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png 1x' sizes='38.5px' width='38.5px' height='14.656px' style='padding-right:3px;' alt='Google Translate' />" );
 
 
-// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 // Reloads given page, keeps base URL, path, and any #, but removes random query string
+// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
 
 // (function () {
 //     if (window.localStorage) {

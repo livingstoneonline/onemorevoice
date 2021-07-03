@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020084">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to Frederick William Chesson</title>
+				<!-- Title without date -->
+				<title type="alternative">Letter to Frederick William Chesson, 31 August [1881?]</title>
+				<!-- Title, date -->
+				<author>Nichol, Elizabeth Pease, 1807-1897</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Nichol, Elizabeth Pease</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Elizabeth Pease Nichol</author>
+				<!-- First author only: Forename Surname -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="HM">
+					<name>Hope McCaffrey</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+				<respStmt xml:id="LM">
+					<name>Lucy McCann</name>
+					<resp>Transcription</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>Transcription</resp>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2021</date>
+				<idno type="LEAP-ID">liv_020084</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if manuscript; otherwise delete it -->
+			<sourceDesc>
+				<msDesc type="manuscript">
+					<msIdentifier>
+						<country>United Kingdom</country>
+						<!-- Repository country -->
+						<settlement>Oxford</settlement>
+						<!-- Repository city -->
+						<repository>Bodleian Library</repository>
+						<!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD -->
+						<idno type="shelfmark">MSS. Brit. Emp. S. 18, C129/131</idno>
+						<!-- Shelfmark/Identifier -->
+					</msIdentifier>
+					<physDesc>
+						<handDesc>
+							<handNote xml:id="U"><label>Unknown Hand</label> This hand is unknown but thought not to be
+								the author's.</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>Letter to Frederick William Chesson</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials --> 
+					<author xml:id="EN">Nichol, Elizabeth Pease, 1807-1897</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD --> 
+					<date type="composition" when="1881-08-31">31 August [1881?]</date>
+					<!-- See item for composition place; remove if not given --> 
+					<placeName type="compositionPlace">Huntly Lodge Edinburgh</placeName>
+				</bibl>
+			</sourceDesc>
+			<!-- End of manuscript <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2021-05-26" who="#AW">Coding Review</change>
+			<change when="2021-02-23" who="#HM">Proofing and Encoding</change>
+			<change when="2020-12-18" who="#LM">Transcription</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body n="b0a58b">
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div rend="black">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020084_0001" n="0001"/>
+<lb/><ab rend="gray"><space extent="4" unit="words"/><add place="inspace" hand="#U">C129/131</add></ab>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="2" unit="chars"/><placeName>Huntly Lodge</placeName>
+<lb/><space extent="2" unit="words"/><space extent="2" unit="chars"/><settlement>Edinburgh</settlement>
+<lb/><space extent="3" unit="words"/><space extent="3" unit="chars"/><date when="1882-08-31">August 31</date></p>
+<lb/><p rend="no-indent">My dear <persName>M<hi rend="sup underline">r</hi> Chesson</persName></p>
+<lb/><p rend="no-indent"><space extent="1" unit="words"/><space extent="3" unit="chars"/>I wrote you <date when="1882-08-30">yesterday</date>,
+<lb/>thanking you for past favours
+<lb/>&amp; now am about to ask for
+<lb/>another!</p>
+<lb/><p rend="no-indent"><space extent="1" unit="chars"/>The enclosed was rec<hi rend="sup underline">d</hi> this
+<lb/>morn<hi rend="sup underline">g</hi> &amp; I have answered it
+<lb/>by saying that I am send<hi rend="sup underline">g</hi>
+<lb/>cheque for &#xa3;2 to you &#8211; for
+<lb/>proceeds of W<hi rend="sup underline">h</hi> he might
+<lb/><unclear>call</unclear> at y<hi rend="sup underline">r</hi> office in the course
+<lb/>of two or three days.</p>
+<lb/><p rend="no-indent">I <unclear>mention</unclear> to do this &#8211; first
+<lb/>because I tho<hi rend="sup underline">t</hi> the poor
+
+	<pb facs="liv_020084_0002" n="0002"/>
+<lb/>youth might not understand
+<lb/>exactly what to do with the
+<lb/>cheque &amp; also, in the hope
+<lb/>that you might kindly give
+<lb/>him advice w<hi rend="sup underline">h</hi> he <add place="below">^</add> <add place="above">is</add> clearly
+<lb/>greatly in need of &amp; w<hi rend="sup underline">h</hi> <hi rend="underline">I</hi> 
+<lb/>have myself given him
+<lb/>&#8211; viz &#8211; that he w<hi rend="sup underline">d</hi> act most
+<lb/><unclear>unnecessarily</unclear> to give up the
+<lb/>certainty of &#8211; 12/ a week
+<lb/>until he had <hi rend="underline">really</hi>
+<lb/><hi rend="underline">found</hi> something better.
+<lb/>I have also tried to shew
+<lb/>him the extreme folly of coming
+<lb/>here &#8211; where every opening
+<lb/><space extent="1" unit="chars"/>is <unclear>overstaked</unclear> &amp; where I knew</p>
+
+	<pb facs="liv_020084_0003" n="0003"/>
+<lb/><ab rend="brown black"><space extent="5" unit="words"/><add place="inspace" hand="#U">131a</add></ab>
+<lb/><p rend="no-indent">of no one who could help
+<lb/>him &#8211; telling him the <w>re<seg type="hyphen">-</seg>
+<lb/>-sult</w> w<hi rend="sup underline">d</hi> probably be, that
+<lb/>he w<hi rend="sup underline">d</hi> find himself in a
+<lb/>strange place without the
+<lb/>means of support &#8211; in <w>ad<seg type="hyphen">-</seg>
+<lb/>-dition</w> to the folly of wasting
+<lb/>money on the long journey.</p>
+<lb/><p rend="no-indent">His father was my guest
+<lb/>many years ago &amp; I fear the
+<lb/>poor lad <w>may<add place="above">^</add><add place="above">be</add></w> <unclear>finding</unclear> <hi rend="underline">he</hi>
+<lb/>too can walk in &amp; stay
+<lb/>till he finds occupation!!</p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/>I am a little afraid he does
+<lb/>not like work &#8211; but you
+<lb/>will give him wise counsel,
+
+	<pb facs="liv_020084_0004" n="0004"/>
+<lb/>I do not doubt &#8211; please also
+<lb/>to give him to understand
+<lb/>that I have done all I can
+<lb/>for him. Between you &amp; me &#8211;
+<lb/>Should it seem best to send
+<lb/>him back to his <del>a</del> father
+<lb/>I w<hi rend="sup underline">d</hi> he<hi rend="underline">lp y</hi>ou in doing so &#8211;</p>
+<lb/><p rend="no-indent"><space extent="2" unit="chars"/>Excuse all the trouble
+<lb/>I give you &#8211; &amp; believe me
+<lb/>very sincerely your's</p>
+<lb/><p rend="no-indent"><space extent="2" unit="words"/><persName>EP. Nichol</persName></p>
+
+			</div>
+		</body>
+	</text>
+</TEI>
+

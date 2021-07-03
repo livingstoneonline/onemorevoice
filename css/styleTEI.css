@@ -12,7 +12,7 @@ Table of Contents
 ** 2.0 Transcription CSS **
 2.1. Textual divisions
 2.2.1. Switches
-2.2.2. Toggle Classes (also see styleTEI-add.css)
+2.2.2. Toggle Classes (also see rotate-toggle.css)
 2.3. Rotate Button
 2.4. Pagebreaks, linebreaks, linenumbers
 2.5. Parts of the page
@@ -21,9 +21,7 @@ Table of Contents
 2.8. Rend classes (except lines, page placement, colors) 
 2.9. Page placement 
 2.10. Colors 
-2.11. Misc 
-2.12. Fonts
-2.13. Specific item rendering (see styleTEI-add.css)
+2.11. Misc
 */
 
 /*--------------------------------------*/
@@ -105,8 +103,13 @@ also see 2.9 for manuscript colors
 }
 .manuscript .TEI{
 	padding: 2em 0 3em 0;
-	margin: .5em 0 1.5em 0;
+	margin: 0 1em;
 	border: 2px solid gainsboro;
+}
+@media only screen and (min-width: 768px){
+	.manuscript .TEI{
+		margin: 0 auto;
+	}
 }
 .manuscript .ms-container{
 	display: inline-block;
@@ -128,7 +131,7 @@ also see 2.9 for manuscript colors
 	display: block;
 	text-align: justify;
 	padding: 1em 1em 2em 1em;
-	margin: .5em auto 2em auto;
+	margin: 0 auto;
 }
 @media only screen and (min-width: 768px){
 	.journal .TEI{
@@ -194,7 +197,7 @@ also see 2.9 for manuscript colors
 @media only screen and (min-width: 320px){
 	.manuscript-switches,
 	.journal-switches{
-		padding: .5em 0;
+		padding: .5em 0 1em;
 		display: block;
 		visibility: visible;
 	}
@@ -345,8 +348,8 @@ label.md_switch{
 .change-color .corr{
 	border-bottom: 2px dotted black;
 }
-.invert-color .manuscript,
-.invert-color .journal{
+.invert-color .manuscript .TEI,
+.invert-color .journal .TEI{
 	filter: invert(1);
 }
 .invert-color .journal .pb-title{
@@ -374,25 +377,29 @@ label.md_switch{
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
 	border: 0;
+	border-style: none;
 }
 #rotate-button{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	font-size: .8em;
-	background-color: #E3E3E3;
-	border: 1px solid #858585;
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	float: left;
-	padding: .5em 1em;
-	margin: 1.5em 0;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 768px){
 	#rotate-button{
-		display: block;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 600;
+		font-size: .8em;
+		background-color: #E3E3E3;
+		border: 1px solid #858585;
+		border-radius: 7px;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		float: left;
+		margin: 1.5em .2em;
+		padding: 14px 8px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		visibility: visible;
 	}
 }
@@ -402,7 +409,7 @@ button::-moz-focus-inner{
 
 }
 #rotate-button:focus{
-	border: 2px #204A79 solid;
+	outline: 2px #204A79 solid;
 }
 #rotate-button.click-color{
 	color: whitesmoke;
@@ -410,6 +417,14 @@ button::-moz-focus-inner{
 }
 #rotate-button.click-color:hover{
 	background-color: #858585;
+}
+.rotate-90{
+	margin: 15em auto 9em;
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-moz-transform: rotate(90deg); /* Firefox */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	-o-transform: rotate(90deg); /* Opera */
 }
 .rotate-180{
 	transform: rotate(180deg);
@@ -433,8 +448,8 @@ button::-moz-focus-inner{
 .manuscript .pb-title,
 .journal .pb-title,
 .journal .TEI .text .body .div p + .pb-title:first-of-type{
-	padding-top: 1em;
-	margin: 1em 0 .5em 0;
+	padding-top: 1.5em;
+	margin: 1.5em 0 .5em 0;
 	border-top: 1px dotted #858585;
 	width: 100%;
 	display: inline-block;
@@ -564,6 +579,10 @@ button::-moz-focus-inner{
 .object .p{
 	padding: 0;
 	margin: 0;
+}
+#object-div .p:first-of-type,
+.download + .p{
+	margin-top: 1.5em;
 }
 .journal .p,
 .journal .ab{
@@ -768,7 +787,7 @@ u{
 	border-bottom: 1px dashed;
 }
 .doubleunderline{
-	border-bottom: 3px double;
+	border-bottom: 4px double;
 }
 .tripleunderline{
 	border-bottom: 4px double;
@@ -934,7 +953,7 @@ u{
 	border-bottom: 1px #858585 dotted;
 }
 .object .figure a img{
-	width: calc(100% - 6px);
+	box-sizing: border-box;
 }
 .object .graphic{
 	pointer-events: none;
@@ -945,9 +964,13 @@ u{
 		pointer-events: unset;
 	}
 }
+.object.figure{
+	clear: both;
+}
 @media only screen and (min-width: 480px){
 	.object.vertical a img{
-		width: calc(70% - 6px);
+		width: 70%;
+		box-sizing: border-box;
 	}
 }
 .object.gray img{

@@ -8,16 +8,16 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Letter to Henry Venn; Letter to Samuel Crowther</title>
+				<title>Letter to Henry Venn; Letter to Samuel Ajayi Crowther</title>
 				<!-- Title without date -->
 				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="alternative">Letter to Henry Venn, 27 February 1867; Letter to Samuel Crowther, 4 December 1866</title>
+				<title type="alternative">Letter to Henry Venn, 27 February 1867; Letter to Samuel Ajayi Crowther, 4 December 1866</title>
 				<!-- Title, date -->
-				<author>Crowther, Samuel, c.1809-1891</author>
+				<author>Crowther, Samuel Ajayi, c.1809-1891</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first">Crowther, Samuel</author>
+				<author role="first">Crowther, Samuel Ajayi</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Samuel Crowther</author>
+				<author role="first-normalized">Samuel Ajayi Crowther</author>
 				<!-- First author only: Forename Surname -->
 				<author>Dewring, J.R.</author>
 				<author role="normalized">J.R. Dewring</author>
@@ -92,11 +92,11 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>Letter to Henry Venn; Letter to Samuel Crowther</title>
+					<title>Letter to Henry Venn; Letter to Samuel Ajayi Crowther</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials --> 
-					<author xml:id="SC">Crowther, Samuel, c.1809-1891</author>
+					<author xml:id="SC">Crowther, Samuel Ajayi, c.1809-1891</author>
 					<author xml:id="JRD">Dewring, J.R.</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD --> 
@@ -166,7 +166,7 @@
 <!-- right region -->
 <lb/>
 <lb/><p rend="no-indent red large"><add place="inline" hand="#U1"><placeName>Bonny Mi&#7838;ion</placeName></add></p>
-<lb/><p rend="no-indent"><space extent="3" unit="words"/><add place="inline" hand="#U1"><unclear><placeName>Small Office</placeName></unclear></add></p>
+<lb/><p rend="no-indent"><space extent="3" unit="words"/><add place="inline" hand="#U1"><placeName>Small Office</placeName></add></p>
 <lb/><p rend="no-indent"><space extent="1" unit="words"/><placeName>Mission House</placeName></p>
 <lb/><p rend="no-indent"><space extent="2" unit="words"/><settlement>Bonny</settlement> <date when="1867-02-27"><choice><abbr>Feb.</abbr><expan>February</expan></choice> 27<hi rend="sup underline">th</hi>. 1867.</date></p>
 		</div>
@@ -264,7 +264,7 @@
 
 	<pb facs="liv_020055_0003" n="0003"/>
 	<div n="wrapper2 liv_020055_0003">
-<lb/><p rend="no-indent" n="box1 liv_020055_0003">for the dark places of the earth are full of the <w>habita-
+<p rend="no-indent" n="box1 liv_020055_0003">for the dark places of the earth are full of the <w>habita-
 <lb/>tions</w> of cruelty." Surely God will hear our prayers.</p>
 <lb/><p n="box2 liv_020055_0003">But there is a division in the camp of Satan.</p>
 <lb/><p>Having given a fair statement of the renewed efforts of
@@ -273,7 +273,7 @@
 <lb/>of the mission.</p>
 <lb/><p n="par1 liv_020055_0003">English speaking is prevalent here, in the same way and
 <lb/>degree it is understood and spoken in all the trading ports
-<lb/>along this coast, we therefore take advantage of it in teaching the
+<lb/><seg rend="gray" n="marginal liv_020055_0003">Print<lb/><space extent="2" unit="chars"/>2</seg> along this coast, we therefore take advantage of it in teaching the
 <lb/>children to read English school books, while we preach to the
 <lb/>native congregation through an interpreter, at the same time
 <lb/>we are preparing books in the native tongue.</p>
@@ -308,7 +308,7 @@
 	   	
 <pb facs="liv_020055_0004" n="0004"/>
    	<div n="marginal1 liv_020055_0004">
-<lb/><p rend="no-indent">it complete, one of those necessaries was the want of a large
+<p rend="no-indent">it complete, one of those necessaries was the want of a large
 <lb/>bell to announce the time of school to the clindren in <settlement>Bonny Town</settlement>,
 <lb/>but this want was supplied in a way I least expected.</p>
    	<div n="marginal2 liv_020055_0004">
@@ -361,7 +361,7 @@
 <lb/>made a spare clapper of, should the old mended one be broken
 <lb/>again which was done: true enough, the old repired clapper was
 <lb/>put on, <del>again,</del> but a few strokes snapped the corroded stem
-<lb/><seg rend="gray" n="marginal5 liv_020055_0005">P<unclear>rint</unclear><lb/><space extent="2" unit="chars"/>3</seg>again, so the spare one is now in use; though not so heavy as
+<lb/><seg rend="gray" n="marginal5 liv_020055_0005">P<unclear>rint</unclear><lb/><space extent="2" unit="chars"/>3</seg> again, so the spare one is now in use; though not so heavy as
 <lb/>the original, yet its serves our purposes well. These repairs
 <lb/>cost him &#163;2.&#8211; <persName>Oko Jumbo</persName> is very persevering in his lessons,
 <lb/><seg n="marginal6 liv_020055_0005">X</seg> in reading and <seg type="metamark" rend="large sup bold">&#9486;</seg><!-- add metamark here? MBT --><!-- done. AW -->writing. I received the first note of his his own hand
@@ -479,8 +479,8 @@
 
 <pb facs="liv_020055_0008" n="0008"/>
 <!-- continuation of double lines from previous page, in right margin on this page AM -->
-<lb/><seg n="marginal1a liv_020055_0008"><seg n="marginal2a liv_020055_0008">however, were sold, more than were used by the children, now
-<lb/>it has come out that they were bought for the use of those who
+<lb/><seg n="marginal2a liv_020055_0008">however, were sold, more than were used by the children, now
+<lb/><seg n="marginal1a liv_020055_0008">it has come out that they were bought for the use of those who
 <lb/>were learning to read at home, then unknown to us till lately.</seg></seg></p>
 <lb/><p><seg n="marginal1b liv_020055_0008"><seg n="marginal2b liv_020055_0008">At <persName>Oko Jumbo</persName>'s house, a hand bell is put up, and at <persName>Banigo</persName>'s
 <lb/>house, a small table bell, is rung by the children, to collect

@@ -89,8 +89,9 @@ liv_020055 coding [temporary]
 
 
 /* liv_020055 coding [temporary] */
+/* Squiggly line on liv_020055_0006 adapted from https://stackoverflow.com/questions/17285514/is-it-possible-to-make-a-squiggly-line */
 
-.item.liv_020055{
+/* .item.liv_020055{
 	margin: 0 2em;	
 }
 .block-1.liv_020055_0001,
@@ -269,7 +270,6 @@ liv_020055 coding [temporary]
 	position: absolute;
 	left: -1em;
 }
-/* Adapted from https://stackoverflow.com/questions/17285514/is-it-possible-to-make-a-squiggly-line */
 .wavyanchor.liv_020055_0006{
 	position: relative;
 }
@@ -346,7 +346,6 @@ liv_020055 coding [temporary]
 	border-right: 2px solid #858585;
 	display: inline-block;
 }
-/* text in margin */
 .marginal2.liv_020055_0006{
 	text-align: right;
 	position: absolute;
@@ -357,7 +356,6 @@ liv_020055 coding [temporary]
 		right: 5em;
 	}
 }
-/* grey line that extends under the word "as" */
 .marginal1a.liv_020055_0007{
 	border-left: 2px #858585 solid;
 	margin-left: -1em;
@@ -378,14 +376,12 @@ liv_020055 coding [temporary]
 		margin-left: -2.35em;
 	}
 }
-/* black line in left margin */
 .marginal2.liv_020055_0007{
 	border-left: 2px #3d4245 solid;
 	margin-left: -1.5em;
 	padding-left: 1.5em;
 	display: block;
 }
-/* red line in left margin */
 .marginal3.liv_020055_0007{
 	border-left: 2px #902D27 solid;
 	border-radius: 1.6em 0 0 0;
@@ -395,7 +391,6 @@ liv_020055 coding [temporary]
 	padding-left: 1em;
 	display: block;
 }
-/* text in margin */
 .marginal4.liv_020055_0007{
 	line-height: 1em;
 	transform: rotate(322deg);
@@ -406,7 +401,6 @@ liv_020055 coding [temporary]
 	position: absolute;
 	left: 0.25em;
 }
-/* red line in left margin */
 .marginal1a.liv_020055_0008{
 	border-right: 2px #3d4245 solid;
 	margin-right: -.7em;
@@ -432,12 +426,10 @@ liv_020055 coding [temporary]
 	padding-right: .5em;
 	display: block;
 }
-/* red wavy line in left margin */
 .marginal2a.liv_020055_0008{
 	text-indent: 0;
 	border-right: 2px #902D27 solid;
 	margin-right: 0.1em;
-	/* padding-right: 0em; */
 	display: block;
 }
 @media only screen and (min-width: 768px){
@@ -475,7 +467,6 @@ liv_020055 coding [temporary]
 	position: absolute;
 	right: -6em;
 }
-/* red line in left margin that curls at top and bottom */
 .marginal1.liv_020055_0009{
 	border-left: 2px #902D27 solid;
 	border-radius: 1.6em 0 0 1em;
@@ -519,8 +510,6 @@ liv_020055 coding [temporary]
 	position: absolute;
 	left: -1.5em;
 }
-
-/* red line boxing text part one: "was assisted by the schoolmasters" */
 .box1.liv_020055_0010{
 	border-bottom: 2px solid #902D27;
 	border-right: 2px solid #902D27;
@@ -528,12 +517,10 @@ liv_020055 coding [temporary]
 .wrapper1.liv_020055_0010{
 	white-space: nowrap;
 }
-/*red line "the collection at the shews"*/
 .box2.liv_020055_0010{
 	border-top: 2px solid #902D27;
 	border-right: 2px solid #902D27;
 }
-/*red line "accounted to 300... towards flooring"*/
 .box3.liv_020055_0010{
 	text-indent: 0;
 	border-right: 2px solid #902D27;
@@ -541,17 +528,14 @@ liv_020055 coding [temporary]
 	padding-right: 3.3em;
 	display: inline-block;
 }
-/*red line "the school chapel"*/
 .box4.liv_020055_0010{
 	border-bottom: 2px solid #902D27;
 	border-right: 2px solid #902D27;
 	border-left: 2px solid #902D27;
 }
-/*red line "Now and then some women came"*/
 .box5.liv_020055_0010{
 	border-top: 2px solid #902D27;
 }
-/* red line in left margin that curls at top and bottom */
 .marginal1.liv_020055_0011{
 	text-indent: 0;
 	margin-left: -1.4em;
@@ -581,7 +565,6 @@ liv_020055 coding [temporary]
 	border-left: 2px #902D27 solid;
 	display: inline-block;
 }
-/* red line on right and bottom */
 .box.liv_020055_0012{
 	border-bottom: 2px solid #902D27;
 	border-right: 2px solid #902D27;
@@ -597,4 +580,4 @@ liv_020055 coding [temporary]
 	position: absolute;
 	right: -.5em;
   bottom: 6em;
-}
+} */

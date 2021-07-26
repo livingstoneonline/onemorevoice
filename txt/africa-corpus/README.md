@@ -1,7 +1,5 @@
 # Corpus of Africa-Centered Literary Works, 1830-1930
 
----
-
 ## Caitlin Matheis (University of Nebraska-Lincoln), Creator
 
 ### Adrian S. Wisnicki (University of Nebraska-Lincoln), Contributor
@@ -10,7 +8,6 @@
 
 ### Ng’ang’a Wahu-Mũchiri (University of Nebraska-Lincoln), Internal OMV Peer Reviewer
 
-  
 
 This corpus was compiled by Caitlin Matheis for a 2021 computational text analysis project for the *[One More Voice](https://onemorevoice.org/)* recovery project. The corpus encompasses 74 plain text (TXT) files containing nineteenth- and early twentieth-century literary works in English by 36 different British and African writers. All the works focus on different regions and locations on the African continent. Questions about the corpus and project can be directed to Caitlin Matheis (<cmatheis2@huskers.unl.edu>), the creator of the corpus, and Adrian S. Wisnicki (<awisnicki@unl.edu>), lead developer for *One More Voice*.
 

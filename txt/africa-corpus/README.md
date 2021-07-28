@@ -90,6 +90,6 @@ For most of the works, we located a scanned version of the first British edition
 
 ---
 
-**Cite page and corpus (MLA):** Matheis, Caitlin. *Corpus of Africa-Centered Literary Works, 1830-1930*. Adrian S. Wisnicki and Justin D. Livingstone, contribs; Ng’ang’a Wahu-Mũchiri, peer-rev. *One More Voice*, an imprint of *Livingstone Online*. New dawn edition, 2021. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-centered-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus).
+**Cite page and corpus (MLA):** Matheis, Caitlin. *Corpus of Africa-Centered Literary Works, 1830-1930*. Adrian S. Wisnicki and Justin D. Livingstone, contribs; Ng’ang’a Wahu-Mũchiri, peer rev. *One More Voice*, an imprint of *Livingstone Online*. New dawn edition, 2021. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-centered-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus).
 
 **Terms of use:** (Individual files) Public domain; (Corpus) [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)

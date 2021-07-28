@@ -44,7 +44,7 @@ For most of the works, we located a scanned version of the first British edition
 20. Burton, Richard Francis. 1872. *Zanzibar: City, Island, and Coast*, vol. 1 of 2.
 21. Burton, Richard Francis. 1872. *Zanzibar: City, Island, and Coast*, vol. 2 of 2.
 22. Callaway, Reverend Henry. 1868. *Nursery Tales, Traditions, and Histories of the Zulus, in their Own Words with a Translation into English, and Notes*, vol. 1 of 2.
-23. Callaway, Reverend Henry. 1868. *Nursery Tales, Traditions, and Histories of the Zulus, in their Own Words with a Translation into English, and Notes*, vol. 2 of 2.
+23. Callaway, Reverend Henry. 1868. *Nursery Tales, Traditions, and Histories of the Zulus, in their Own Words with a Translation into English, and Notes*, vol. 2 of 2. [Not yet included because source for TXT file not yet located.]
 24. Cameron, Verney Lovett. 1894. *Jack Hooper. His Adventures at Sea and in South Africa*, vol. 1 of 1.
 25. Crowther, Samuel Ajayi, and James Frederick Schon. 1842. *Journals of the Rev. James Frederick Schön and Mr. Samuel Crowther, Who, with the Sanction of Her Majesty's Government, Accompanied the Expedition up the Niger, in 1841, in Behalf of the Church Missionary Society*, vol. 1 of 1.
 26. Crowther, Samuel Ajayi, and John Christopher Taylor. 1859. *The Gospel on the Banks of the Niger. Journals and Notices of the Native Missionaries Accompanying the Niger Expedition of 1857-1859*, vol. 1 of 1.

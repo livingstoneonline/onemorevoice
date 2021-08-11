@@ -10,6 +10,7 @@ cd -- "$(dirname "$BASH_SOURCE")"
 
 git fetch --all
 git checkout stage
+git pull
 git push
 git checkout master
 git merge stage

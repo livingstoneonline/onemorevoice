@@ -1,0 +1,27 @@
+**** TEI ****
+
+**liv_020002_0001.html
+
+mogrify -format jpg -resize 543x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/543 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/543 && find . -exec rename 's|.jpg|-543px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 615x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/615 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/615 && find . -exec rename 's|.jpg|-615px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1086x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1086 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1086 && find . -exec rename 's|.jpg|-1086px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1230x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1230 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1230 && find . -exec rename 's|.jpg|-1230px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
+
+
+**liv_020002_0003.html
+
+mogrify -format jpg -resize 325x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/325 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/325 && find . -exec rename 's|.jpg|-325px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 369x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/369 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/369 && find . -exec rename 's|.jpg|-369px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 650x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/650 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/650 && find . -exec rename 's|.jpg|-650px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 738x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/738 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/738 && find . -exec rename 's|.jpg|-738px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
+

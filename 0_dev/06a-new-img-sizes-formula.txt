@@ -1,3 +1,20 @@
+**** sizes ****
+
+100%
+sizes="(min-width: 740px) 698px, 95.24vw"
+
+73%
+sizes="(min-width: 760px) 509px, (min-width: 480px) calc(61.92vw + 51px), 100vw"
+
+70%
+sizes="(min-width: 760px) 488px, (min-width: 480px) calc(59.23vw + 50px), 100vw"
+
+
+**** for color issues
+-strip 
+-colorspace RGB
+
+
 **** 100% ****
 
 mogrify -format jpg -resize 318x318 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/318 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/318 && find . -exec rename 's|.jpg|-318px.jpg|' {} + && cd - && 
@@ -48,12 +65,9 @@ mogrify -format jpg -resize 668x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 mogrify -format jpg -resize 976x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/976 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/976 && find . -exec rename 's|.jpg|-976px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 
-
-for color issues
--strip 
--colorspace RGB
 
 *********************************************************************
 

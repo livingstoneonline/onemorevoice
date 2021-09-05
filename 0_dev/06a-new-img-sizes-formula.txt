@@ -1,3 +1,5 @@
+identify -format "%f: %wx%h\n" *.tif *.jpg *.png > ~/Desktop/image-sizes.txt
+
 **** sizes ****
 
 100%
@@ -29,8 +31,9 @@ mogrify -format jpg -resize 956x956 -sampling-factor 4:2:0 -strip -quality 85 -i
 
 mogrify -format jpg -resize 1396x1396 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1396 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1396 && find . -exec rename 's|.jpg|-1396px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 
 
@@ -49,6 +52,8 @@ mogrify -format jpg -resize 696x -sampling-factor 4:2:0 -strip -quality 85 -inte
 mogrify -format jpg -resize 1018x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1018 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1018 && find . -exec rename 's|.jpg|-1018px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 
 **** 70% ****
@@ -65,9 +70,28 @@ mogrify -format jpg -resize 668x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 mogrify -format jpg -resize 976x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/976 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/976 && find . -exec rename 's|.jpg|-976px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
+
+*********************************************************************
+
+****object thumbnails****
+
+mogrify -format jpg -resize 520x520 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/520 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/520&& find . -exec rename 's|.jpg|-520px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 370x370 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/370 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/370&& find . -exec rename 's|.jpg|-370px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 340x340 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/340 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/340&& find . -exec rename 's|.jpg|-340px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 260x260 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/260 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/260&& find . -exec rename 's|.jpg|-260px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 185x185 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/185 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/185&& find . -exec rename 's|.jpg|-185px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 170x170 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/170 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/170&& find . -exec rename 's|.jpg|-170px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials/thumbnails \;
 
 *********************************************************************
 

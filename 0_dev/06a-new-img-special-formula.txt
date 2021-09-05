@@ -25,3 +25,14 @@ mogrify -format jpg -resize 738x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
 
+
+**liv_020013_0001.html
+**liv_020018_0001.html
+
+mogrify -format jpg -resize 63x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/63 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/63 && find . -exec rename 's|.jpg|-63px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 126x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/126 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/126 && find . -exec rename 's|.jpg|-126px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
+
+

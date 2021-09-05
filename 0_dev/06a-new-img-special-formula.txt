@@ -1,6 +1,7 @@
 **** TEI ****
 
 **liv_020002_0001.html
+**liv_020016_0002.html
 
 mogrify -format jpg -resize 543x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/543 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/543 && find . -exec rename 's|.jpg|-543px.jpg|' {} + && cd - && 
 
@@ -35,4 +36,7 @@ mogrify -format jpg -resize 126x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
 
+
+**liv_020024_0001.html
+85, 170
 

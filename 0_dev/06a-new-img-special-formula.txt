@@ -38,5 +38,10 @@ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
 
 
 **liv_020024_0001.html
-85, 170
+
+mogrify -format jpg -resize 85x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/85 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/85 && find . -exec rename 's|.jpg|-85px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 170x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/170 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/170 && find . -exec rename 's|.jpg|-170px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/tei \;
 

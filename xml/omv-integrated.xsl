@@ -72,17 +72,17 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
-				<link rel="preload" as="style" href="/css/critical.css?=newVers_0006" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0006" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0002" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/critical.css?=newVers_0007" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0007" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0003" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
 				</xsl:if>
 				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0004"/>
+				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0005"/>
 				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com"/>
-				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0006"/>
+				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0007"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
 					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
@@ -112,7 +112,7 @@
 					<div class="page-wrapper">
 						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ --><header id="header">
 							<div class="image-wrapper">		
-								<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1399px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1399px.jpg 1399w, /img/main-pages/liv_023005_0001_deriv-1276px.jpg 1276w, /img/main-pages/liv_023005_0001_deriv-1216px.jpg 1216w, /img/main-pages/liv_023005_0001_deriv-699px.jpg 699w, /img/main-pages/liv_023005_0001_deriv-638px.jpg 638w, /img/main-pages/liv_023005_0001_deriv-608px.jpg 608w, /img/main-pages/liv_023005_0001_deriv-400px.jpg 400w" sizes="(min-width: 780px) 699px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+								<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1396px.jpg 1396w, /img/main-pages/liv_023005_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023005_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023005_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023005_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023005_0001_deriv-318px.jpg 318w" sizes="(min-width: 740px) 698px, 95.24vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
 							</div>
 						</header>
 						<xsl:apply-templates select="TEI"/>
@@ -133,8 +133,8 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0006"/>
-				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0002"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0007"/>
+				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0003"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"/>
 				</xsl:if>
@@ -172,9 +172,9 @@
 					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					// Loads JS file only after rest of page has loaded; adds random string to end of file.
 					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0004";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0005";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="/js/scripts.js?=newVers_0004"></script> -->
+				<!-- <script src="/js/scripts.js?=newVers_0005"></script> -->
 			</body>
 		</html>
 	</xsl:template>

@@ -108,6 +108,15 @@ mogrify -format jpg -resize 968x -sampling-factor 4:2:0 -strip -quality 85 -inte
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 
+**** liv_021003 ****
+
+mogrify -format jpg -resize 275x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/275 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/275 && find . -exec rename 's|.jpg|-275px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 313x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/313 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/313 && find . -exec rename 's|.jpg|-313px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
+
+
 *********************************************************************
 
 ****object thumbnails****

@@ -1334,13 +1334,13 @@ aside.sidebar .external li a img.lo{
 	border: 2px solid transparent;
 	width: 175px;
 }
-aside.sidebar .popular li a:hover img,
-aside.sidebar .popular li a:focus-within img{
+aside.sidebar .popular li a img:hover,
+aside.sidebar .popular li a img:focus{
 	border: 2px solid #000;
 	filter: invert(1);
 }
-aside.sidebar .external li a:hover img,
-aside.sidebar .external li a:focus-within img{
+aside.sidebar .external li a img:hover ,
+aside.sidebar .external li a img:focus{
 	border: 2px solid #000;
 }
 

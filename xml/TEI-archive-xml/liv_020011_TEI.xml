@@ -64,12 +64,17 @@
                         <idno type="shelfmark">CWM/LMSCWM/LMS/South Africa/Incoming Correspondence/Box 25/File 4/Jacket B</idno><!-- Change as needed -->
                     </msIdentifier>
                     <physDesc>
+						<objectDesc>
+							<p>Beige four-page/one-sheet letter; one hand in brown ink plus notes (two hands brown ink, two gray).</p>
+						</objectDesc>
                         <handDesc><!-- Add <handNote>s if needed. -->
                             <handNote xml:id="U1"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                             <handNote xml:id="U2"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                             <handNote xml:id="U3"><label>Unknown Hand</label> This hand is unknown
+                                but thought not to be the author's.</handNote>
+                            <handNote xml:id="U4"><label>Unknown Hand</label> This hand is unknown
                                 but thought not to be the author's.</handNote>
                         </handDesc>
                     </physDesc>
@@ -112,7 +117,7 @@
 <lb/><ab rend="no-indent" hand="#U2" n="text liv_020011_0001"><seg type="metamark"><!-- addition in unknown hand -->Copied 
 <lb/><space extent="2" unit="chars"/>letter book 
 <lb/><space extent="2" unit="words"/>fol 18</seg></ab><!-- how would we style this addition --><!-- I would say metamark, but defer to Adrian! HB --><!-- See how I've done it. I've added special coding so this unique thing can be uniquely placed and styled. -->
-<lb/><ab rend="gray no-indent"><persName>Baker</persName></ab><!-- Name is unknown hand and color as well - Adrian, are we coding for these anymore? HB --><!-- Yes! -->
+<lb/><ab rend="gray no-indent" hand="#U3"><persName>Baker</persName></ab><!-- Name is unknown hand and color as well - Adrian, are we coding for these anymore? HB --><!-- Yes! -->
 <lb/><p rend="no-indent">Sir, hoping that your Excellency will not take
 <lb/>it amiss my addressing this Letter immediately
 <lb/>to yours in behalf of myself and part of the
@@ -238,7 +243,7 @@
 
 
  <!-- This section is written perpendicular to the page, in a different hand and color, and is very light and mostly illegible (at least to me). Not sure how we're coding an addendum like this? HB -->
-<lb/><ab rend="gray no-indent" hand="#U3" n="text liv_020011_0004">This letter to
+<lb/><ab rend="gray no-indent" hand="#U4" n="text liv_020011_0004">This letter to
 <lb/><persName>Sir Harry Smith</persName>
 <lb/>is to be inserted
 <lb/>after the Extract

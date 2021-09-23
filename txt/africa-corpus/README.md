@@ -10,6 +10,12 @@
 
 <br>
 
+**Cite page and corpus (MLA):** Matheis, Caitlin. *Corpus of Africa-Centered Literary Works, 1830-1930*. Adrian S. Wisnicki and Justin D. Livingstone, contribs; Ng’ang’a Wahu-Mũchiri, peer rev. *One More Voice*, an imprint of *Livingstone Online*. New dawn edition, 2021. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-centered-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus).
+
+**Terms of use:** (Individual files) Public domain; (Corpus) [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+
+<br>
+
 ## Overview
 
 This corpus was compiled by Caitlin Matheis for a 2021 computational text analysis project for the *[One More Voice](https://onemorevoice.org/)* recovery project. The corpus encompasses 62 plain text (TXT) files containing nineteenth- and early twentieth-century literary works in English by 31 different British and African writers. All the works focus on different regions and locations on the African continent. Together, the files contain over 6.5 million words of text. Questions about the corpus and project can be directed to [Caitlin Matheis](<cmatheis2@huskers.unl.edu>), the creator of the corpus, and [Adrian S. Wisnicki](<awisnicki@unl.edu>), lead developer for *One More Voice*.
@@ -87,11 +93,3 @@ Finally, alongside the corpus itself, the present publication also includes “A
 61. Stanley, Henry Morton. 1873. *My Kalulu, Prince, King, and Slave: A Story of Central Africa*, vol. 1 of 1.
 62. Stanley, Henry Morton. 1893. *My Dark Companions and Their Strange Stories*, vol. 1 of 1.
 63. Theal, George McCall. 1882. *Kaffir Folk-lore; Or, A Selection from the Traditional Tales Current Among the People Living on the Eastern Border of the Cape Colony*, vol. 1 of 1.
-
-<br>
-
----
-
-**Cite page and corpus (MLA):** Matheis, Caitlin. *Corpus of Africa-Centered Literary Works, 1830-1930*. Adrian S. Wisnicki and Justin D. Livingstone, contribs; Ng’ang’a Wahu-Mũchiri, peer rev. *One More Voice*, an imprint of *Livingstone Online*. New dawn edition, 2021. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-centered-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus).
-
-**Terms of use:** (Individual files) Public domain; (Corpus) [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)

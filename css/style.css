@@ -605,8 +605,8 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	.nav-wrapper{
 		min-width: 992px;
 		max-width: 1200px;
-		/* left: 50%;
-		transform: translate(-50%, 0); */
+		left: 50%;
+		transform: translate(-50%, 0);
 		display: flex;
 		flex-direction: row-reverse;
 	}

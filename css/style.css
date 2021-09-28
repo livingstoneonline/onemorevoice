@@ -373,7 +373,7 @@ img{
 	border-style: none;
 	width: 100%;
 	height: auto;
-	display: inline-block;
+	/* display: inline-block; */
 }
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
@@ -1942,7 +1942,7 @@ section.archival-text .no-image .content{
 .screenshot .play-button:before{
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); /* Mistake but works */
+	transform: translate(-50%, -50%);
 }
 .youtube iframe{
 	height: 100%;
@@ -2108,7 +2108,6 @@ ol.primary-historical li{
 }
 
 /* The following items are used on the contributors.html page. */
-
 .contributors section{
 	padding-bottom: 1.5em;
 }
@@ -2248,7 +2247,7 @@ ol li ol{
 }
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 hr {
-  display: block;
+  /* display: block; */
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;

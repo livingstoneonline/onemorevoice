@@ -73,7 +73,7 @@
 				<link rel="icon" type="image/png" sizes="16x16" href="https://onemorevoice.org/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="https://onemorevoice.org/site.webmanifest"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0007" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0007" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0008" onload="this.rel='stylesheet'"/>
 				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0003" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
@@ -134,7 +134,7 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0007"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0008"/>
 				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0003"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0002"/>

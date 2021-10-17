@@ -4,15 +4,15 @@
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
 <?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <!-- https://livingstoneonline.github.io/LEAP-XSLT/ -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021114"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021118"><!-- Insert LEAP ID, e.g. "liv_020010 -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Ranavalona II</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-                <title type="alternative">Ranavalona II, [before 1883]</title><!-- Title, date -->
-                <author>Anonymous</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first">Anonymous</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Anonymous</author><!-- First author only: Forename Surname -->
+                <title>Children in Front of Tippu Tip's House</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Children in Front of Tippu Tip's House, 1981</title><!-- Title, date -->
+                <author>Nooter, Robert</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Nooter, Robert</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Robert Nooter</author><!-- First author only: Forename Surname -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
@@ -25,13 +25,13 @@
                 <publisher>Livingstone Online</publisher>
                 <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
                 <date>2021</date>
-                <idno type="LEAP-ID">liv_021114</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+                <idno type="LEAP-ID">liv_021118</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
-				<ref target="https://digital.soas.ac.uk/AA00001551/00001/citation">University of London. School of Oriental and African Studies</ref>
+				<ref target="https://sova.si.edu/details/EEPA.1993-012#ref671">Smithsonian Institution, National Museum of African Art</ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
-					<p>Images from the Council for World Mission Archive, SOAS Library, University of London. Used by permission for private study, educational or research purposes only.</p>
+					<p>National Museum of African Art, Smithsonian Institution. Used by permission.</p>
 				</availability>
 			</publicationStmt>
 
@@ -39,25 +39,25 @@
             <sourceDesc>
                 <msDesc type="object-archive">
                     <msIdentifier>
-                        <country>United Kingdom</country><!-- Repository country -->
-                        <settlement>London</settlement><!-- Repository city -->
-                        <repository>University of London. School of Oriental and African Studies</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
-                        <idno type="shelfmark">SOAS Digital Collections, London Missionary Society, Madagascar Collection, Council for World Mission Archive</idno><!-- Shelfmark/Identifier -->
+                        <country>United States</country><!-- Repository country -->
+                        <settlement>Washington, D.C.</settlement><!-- Repository city -->
+                        <repository>Smithsonian Institution, National Museum of African Art</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
+                        <idno type="shelfmark">Eliot Elisofon Photographic Archives, Robert and Nancy Nooter Photographs, EEPA 1993-120126</idno><!-- Shelfmark/Identifier -->
                     </msIdentifier>
                 </msDesc>
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
-					<title>Ranavalona II</title>
+					<title>Children in Front of Tippu Tip's House</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-                    <author xml:id="An">Anonymous</author>
+                    <author xml:id="RN">Nooter, Robert</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" from="1868" to="1883">[before 1883]</date><!-- Can be type="composition" or type="publication" -->
+                    <date type="composition" when="1981">1981</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace">Madagascar</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                    <placeName type="compositionPlace">Zanzibar</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
                 </bibl>
             </sourceDesc>
 			<!-- End of archival <sourceDesc> -->
@@ -91,7 +91,7 @@
 	<!-- Put a <pb> at the beginning of each page -->
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
-	<pb facs="liv_021114_0001" n="0001"/>
+	<pb facs="liv_021118_0001" n="0001"/>
 	<!-- figure @facs provides the hyperlink for the object image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
@@ -99,14 +99,14 @@
 	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
 
 	<!-- horiztonal image -->
-	<!-- <figure n="object" facs="/img/visual-materials/liv_021114_0001_deriv-1388px.jpg">
-		<graphic url="/img/visual-materials/liv_021114_0001_deriv-1388px.jpg" facs="/img/visual-materials/liv_021114_0001_deriv-1388px.jpg 1388w, /img/visual-materials/liv_021114_0001_deriv-870px.jpg 870w, /img/visual-materials/liv_021114_0001_deriv-694px.jpg 694w, /img/visual-materials/liv_021114_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021114_0001_deriv-435px.jpg 435w, /img/visual-materials/liv_021114_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 694px, calc(100vw - 44px)"/> -->
+	<!-- <figure n="object" facs="/img/visual-materials/liv_021118_0001_deriv-1388px.jpg">
+		<graphic url="/img/visual-materials/liv_021118_0001_deriv-1388px.jpg" facs="/img/visual-materials/liv_021118_0001_deriv-1388px.jpg 1388w, /img/visual-materials/liv_021118_0001_deriv-870px.jpg 870w, /img/visual-materials/liv_021118_0001_deriv-694px.jpg 694w, /img/visual-materials/liv_021118_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021118_0001_deriv-435px.jpg 435w, /img/visual-materials/liv_021118_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 694px, calc(100vw - 44px)"/> -->
 
 	<!-- vertical image -->
-	<figure n="object" rend="vertical" facs="/img/visual-materials/liv_021114_0001_deriv-968px.jpg">
-		<graphic url="/img/visual-materials/liv_021114_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021114_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021114_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021114_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021114_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021114_0001_deriv-303px.jpg 303w" n="(min-width: 768px) 484px, (min-width: 480px) 60.33vw, calc(100vw - 44px)"/>
-		<label>Anonymous, “Ranavalona II,” [before 1883]<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
-		<figDesc>Ranavalona II in regal attire, standing, looking right, with an umbrella, beside a table and mirror.<!-- Image alt text (max. 100 char with spaces) --></figDesc>
+	<figure n="object" rend="vertical" facs="/img/visual-materials/liv_021118_0001_deriv-968px.jpg">
+		<graphic url="/img/visual-materials/liv_021118_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021118_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021118_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021118_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021118_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021118_0001_deriv-303px.jpg 303w" n="(min-width: 768px) 484px, (min-width: 480px) 60.33vw, calc(100vw - 44px)"/>
+		<label>Robert Nooter, “Children in Front of Tippu Tip's House,” 1981<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>Four children of varying ages seated in front of the door of Tippu Tip's house.<!-- Image alt text (max. 100 char with spaces) --></figDesc>
 	</figure>
 <!-- Use the following to repoduce any original image caption. -->
 <!--<p rend="no-indent small center">[original caption]</p>
@@ -114,13 +114,13 @@
 
 <!-- Used for Visual Materials page -->
 <!-- 
-					<figure class="gallery-item" id="liv_021114">
-						<a href="/html/transcriptions/liv_021114_ART.html">
+					<figure class="gallery-item" id="liv_021118">
+						<a href="/html/transcriptions/liv_021118_ART.html">
 							<div class="image-container">
-								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/liv_021114_0001_thumbnail-520px.jpg" srcset="/img/visual-materials/thumbnails/liv_021114_0001_thumbnail-520px.jpg 520w, /img/visual-materials/thumbnails/liv_021114_0001_thumbnail-370px.jpg 370w, /img/visual-materials/thumbnails/liv_021114_0001_thumbnail-340px.jpg 340w, /img/visual-materials/thumbnails/liv_021114_0001_thumbnail-260px.jpg 260w, /img/visual-materials/thumbnails/liv_021114_0001_thumbnail-185px.jpg 185w, /img/visual-materials/thumbnails/liv_021114_0001_thumbnail-170px.jpg 170w" sizes="(min-width: 1000px) 167px, (min-width: 780px) 185px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Head and shoulders portrait of Ranavalona II in regal attire, facing to her right." />
+								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/liv_021118_0001_thumbnail-370px.jpg" srcset="/img/visual-materials/thumbnails/liv_021118_0001_thumbnail-370px.jpg 370w, /img/visual-materials/thumbnails/liv_021118_0001_thumbnail-340px.jpg 340w, /img/visual-materials/thumbnails/liv_021118_0001_thumbnail-260px.jpg 260w, /img/visual-materials/thumbnails/liv_021118_0001_thumbnail-185px.jpg 185w, /img/visual-materials/thumbnails/liv_021118_0001_thumbnail-170px.jpg 170w" sizes="(min-width: 780px) 185px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="" />
 							</div>
 						</a>
-						<figcaption>Ranavalona (before 1883)</figcaption>
+						<figcaption>Tippu Tip's House (1981)</figcaption>
 					</figure>
 -->
 

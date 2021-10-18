@@ -123,16 +123,12 @@ body{
 }
 @media only screen and (min-width: 992px){
 	.text-container{
-		margin-top: 51.1px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.text-container{
 		border-right: 1px solid #737373;
 		border-left: 1px solid #737373;
+		margin-top: 51.1px;
 		margin-bottom: 0;
 		/* the following tied to nav-wrapper */
-		min-width: 990px;
+		min-width: 992px;
 		max-width: 1200px;
 		display: flex;
 		flex-direction: row-reverse;
@@ -377,7 +373,7 @@ img{
 	border-style: none;
 	width: 100%;
 	height: auto;
-	display: inline-block;
+	/* display: inline-block; */
 }
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 header img{
@@ -1334,13 +1330,13 @@ aside.sidebar .external li a img.lo{
 	border: 2px solid transparent;
 	width: 175px;
 }
-aside.sidebar .popular li a:hover img,
-aside.sidebar .popular li a:focus-within img{
+aside.sidebar .popular li a img:hover,
+aside.sidebar .popular li a img:focus{
 	border: 2px solid #000;
 	filter: invert(1);
 }
-aside.sidebar .external li a:hover img,
-aside.sidebar .external li a:focus-within img{
+aside.sidebar .external li a img:hover ,
+aside.sidebar .external li a img:focus{
 	border: 2px solid #000;
 }
 
@@ -1946,7 +1942,7 @@ section.archival-text .no-image .content{
 .screenshot .play-button:before{
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); /* Mistake but works */
+	transform: translate(-50%, -50%);
 }
 .youtube iframe{
 	height: 100%;
@@ -2112,7 +2108,6 @@ ol.primary-historical li{
 }
 
 /* The following items are used on the contributors.html page. */
-
 .contributors section{
 	padding-bottom: 1.5em;
 }
@@ -2252,7 +2247,7 @@ ol li ol{
 }
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 hr {
-  display: block;
+  /* display: block; */
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;

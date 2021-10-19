@@ -106,7 +106,6 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 .text-container{
-	background-color: #fff;
 	padding: 0;
 	margin: 0 auto;
 	max-width: 100%;
@@ -135,7 +134,6 @@ body{
 }
 @media only screen and (min-width: 992px){
 	.page-wrapper{
-		background-color: #fff;
 		margin: 0 auto;
 		padding: 36px 1.2em 0;
 		width: 100%;
@@ -148,7 +146,6 @@ body{
 
 header,
 .transcription header{
-	background-color: #fff;
 	text-align: center;
 	margin: 44px auto 0;
 	max-width: 700px;
@@ -174,10 +171,9 @@ header,
 }
 main,
 aside.credits#credits-div,
+aside.credits#credits2-div,
 aside.credits#main,
-main.object#object-div,
-aside.credits#credits2-div{
-	background-color: #fff;
+main.object#object-div{
 	line-height: 1.875em;
 	margin: 0 auto;
 	max-width: 700px;
@@ -1246,6 +1242,8 @@ aside.sidebar a{
 	text-decoration: none;
 }
 aside.sidebar h2{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.35em;
 	font-weight: 300;
 	color: #fff;
 	background-color: #204A79;

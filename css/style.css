@@ -1224,6 +1224,14 @@ li.section > ul > li > a{
 	width: 100%;
 	min-width: 235px;
 	max-width: 250px;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	.sidebar-container{
+		display: block;
+		visibility: visible;
+	}
 }
 aside.sidebar{
 	font-size: .9em;
@@ -1232,14 +1240,6 @@ aside.sidebar{
 	color: #fff;
 	margin: 0;
 	padding: 36px 0 0;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	aside.sidebar{
-		display: block;
-		visibility: visible;
-	}
 }
 aside.sidebar a{
 	color: #fff;

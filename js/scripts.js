@@ -375,6 +375,7 @@ function RandomiseHref(){
 
 
 // Adds Google translate
+// For script injection, see https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
 function googleTranslateElementInit() {
 	new google
 			.translate

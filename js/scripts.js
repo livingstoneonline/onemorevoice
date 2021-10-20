@@ -374,18 +374,6 @@ function RandomiseHref(){
 };
 
 
-// Needed for Google translate
-function googleTranslateElementInit() {
-	new google
-			.translate
-			.TranslateElement({
-					pageLanguage: 'en'
-			}, 'google_translate_element')
-}
-
-$.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
-
-
 // Removes unused Google script that also registers an unload listener
 // Adapted from https://stackoverflow.com/a/30073090
 

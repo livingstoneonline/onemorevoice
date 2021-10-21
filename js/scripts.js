@@ -375,19 +375,20 @@ function RandomiseHref(){
 
 
 // Adds Google translate
+// Disabled because fails due to CORS issue
 // For script injection, see https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
-function googleTranslateElementInit() {
-	new google
-			.translate
-			.TranslateElement({
-					pageLanguage: 'en'
-			}, 'google_translate_element')
-}
+// function googleTranslateElementInit() {
+// 	new google
+// 			.translate
+// 			.TranslateElement({
+// 					pageLanguage: 'en'
+// 			}, 'google_translate_element')
+// }
 
-var translate = document.createElement('script');
-translate.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-translate.crossOrigin = "anonymous";
-document.body.appendChild(translate);
+// var translate = document.createElement('script');
+// translate.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+// translate.crossOrigin = "anonymous";
+// document.body.appendChild(translate);
 
 
 // Removes unused Google script that also registers an unload listener

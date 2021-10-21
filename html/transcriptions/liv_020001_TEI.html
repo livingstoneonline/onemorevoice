@@ -165,7 +165,7 @@ using the <em>One More Voice</em> <a href="/coding_guidelines.html">coding guide
 </aside>
 </div>
 </div>
-<div data-include="footer"></div><script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><script>
+<div data-include="footer"></div><script>
 // Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
 // Adds CSS file and adds random string to end of CSS file.
 // var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/rotate-toggle.css?="+randomString;document.head.appendChild(css);
@@ -176,10 +176,11 @@ using the <em>One More Voice</em> <a href="/coding_guidelines.html">coding guide
 // Adapted from https://stackoverflow.com/a/31837264
 // Includes HTML snippets
 $(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
-</script><script src="/js/journal-transform.js"></script><script>
+</script><script src="/js/journal-transform.js"></script><script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script><script>
 // Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 // Loads JS file only after rest of page has loaded; adds random string to end of file.
 // $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
 $(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0010";document.body.appendChild(element)});
+$(window).on("load",function(){var element=document.createElement("script");element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 </script></body>
 </html>

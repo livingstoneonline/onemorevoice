@@ -384,7 +384,10 @@ function googleTranslateElementInit() {
 			}, 'google_translate_element')
 }
 
-$.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+var translate = document.createElement('script');
+translate.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+translate.crossOrigin = "anonymous";
+document.body.appendChild(translate);
 
 
 // Removes unused Google script that also registers an unload listener

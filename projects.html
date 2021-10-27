@@ -84,7 +84,7 @@
 					<section aria-labelledby="overview">
 						<h3 id="overview">Overview</h3>
 
-						<p>This page discusses the phases of development through which <em>One More Voice</em> has passed from its initial launch in June 2020 to the present. The page briefly outlines the objectives and outcomes of each phase, then turns introduces significant current and recent <em>One More Voice</em> projects.</p>
+						<p>This page discusses the phases of development through which <em>One More Voice</em> has passed from its initial launch in June 2020 to the present. The page briefly outlines the objectives and outcomes of each phase, then turns introduces a set of current and recent <em>One More Voice</em> projects.</p>
 					</section>
 
 					<section aria-labelledby="phases">
@@ -93,13 +93,13 @@
 						<p>The startup phase of <em>One More Voice</em> resulted in the Site Launch Edition (2020-21) and focused on establishing a proof-of-concept version of the site. This version:</p>
 						
 						<ul>
-							<li>defined site practices, including the use of <a href="/project_design.html#recycling">digital recycling</a>, <a href="/project_design.html#publication">agile publication</a>, <a href="/pdf/OMV-Submission-and-Peer-Review-Process.pdf">open peer review</a>;</li>
-							<li>created a network of collaboration that centered the <a href="/contributors.html">recognition of contributions</a> to the site;</li>
-							<li>gathered and presented a selection of representative <a href="/texts.html">archival texts</a> (manuscripts and periodicals) plus other relevant materials (<a href="/visual_materials.html">visual materials</a>, <a href="/books.html">book-length works</a>, <a href="/motion_pictures.html">motion pictures</a>); and</li>
-							<li>tested out a variety of minimal computing strategies for building the site so that it might grow with limited resources while remaining <a href="/project_design.html#accessibility">accessible</a> to a wide range of audiences.</li>
+							<li>Defined site practices, including the use of <a href="/project_design.html#recycling">digital recycling</a>, <a href="/project_design.html#publication">agile publication</a>, and <a href="/pdf/OMV-Submission-and-Peer-Review-Process.pdf">open peer review</a>;</li>
+							<li>Created a network of <a href="/contributors.html">contributors</a> to support site development;</li>
+							<li>Collected a selection of representative <a href="/texts.html">archival texts</a> (manuscripts and periodicals) and other relevant materials (<a href="/visual_materials.html">visual materials</a>, <a href="/books.html">book-length works</a>, <a href="/motion_pictures.html">motion pictures</a>); and</li>
+							<li>Tested out a variety of minimal computing strategies for site design so that the site could grow with limited external resources while remaining <a href="/project_design.html#accessibility">accessible</a> to a wide range of audiences.</li>
 						</ul>
 						
-						<p>The current phase of the project, the New Dawn Edition (2021-present), seeks to build on and expand from the foundation established by the initial phase. This phase centers on two key components. First, we have sought to expand the range of primary materials available from the site plus introduce peer-reviewed critical essays that open up the primary materials to further analysis. At present, these materials all appear on the “<a href="/texts.html">Archival Texts</a>” page and include a total some sixty primary texts plus critical essays on creators such as <a href="/html/essays/introduction_botha.html">Andries Botha</a>, <a href="/html/essays/douglass_beyond_us.html">Frederick Douglass</a>, <a href="/html/essays/introduction_labatt.html">Philip Cohen Labatt</a>, <a href="/html/essays/addis_ababa_treaties.html">Menelik II</a>, <a href="/html/essays/introduction_read_jr.html">James Read, Jr., Sechele</a>, <a href="/html/essays/nosuthu_sends_thanks.html">NoSuthu Soga Jotelo</a>, and <a href="/html/essays/introduction_tzatzoe.html">Jan Tzatzoe</a>. Second, we have deepened the project’s engagement with relevant primary materials by launching a series of focused projects. The text below introduced these projects.</p>
+						<p>The current phase of the project, the New Dawn Edition (2021-present), seeks to build on the foundation established by the initial phase. This new phase centers on two lines of development. First, we have sought to expand the range of primary materials available from the site while also adding a set of peer-reviewed critical essays that open up the primary materials to further analysis. At present, these all appear on the “<a href="/texts.html">Archival Texts</a>” page and include a total of sixty primary texts plus critical essays on creators such as <a href="/html/essays/introduction_botha.html">Andries Botha</a>, <a href="/html/essays/douglass_beyond_us.html">Frederick Douglass</a>, <a href="/html/essays/introduction_labatt.html">Philip Cohen Labatt</a>, <a href="/html/essays/addis_ababa_treaties.html">Menelik II</a>, <a href="/html/essays/introduction_read_jr.html">James Read, Jr., Sechele</a>, <a href="/html/essays/nosuthu_sends_thanks.html">NoSuthu Soga Jotelo</a>, and <a href="/html/essays/introduction_tzatzoe.html">Jan Tzatzoe</a>. Second, we have deepened the project’s engagement with relevant primary materials by launching a series of focused projects, as outlined below.</p>
 					</section>
 
 					<section aria-labelledby="project-list">
@@ -171,6 +171,11 @@
 			// Includes HTML snippets
 			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
 		</script>
+		<script>
+			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+			//Scroll to top button
+			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>600||document.documentElement.scrollTop>600){mybutton.style.display="block";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
+		</script>			
 		<!-- <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>

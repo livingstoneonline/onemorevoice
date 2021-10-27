@@ -251,6 +251,12 @@ a img{
   color: #595959 !important;
   background-color: unset;
 }
+img + p.caption-text{
+	font-size: .8em;
+	line-height: 1.6;
+	margin: 0 0 2em 0;
+	padding: 0;
+}
 a,
 a:visited{
   color: #204A79;

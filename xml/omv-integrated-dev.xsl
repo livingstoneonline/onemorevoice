@@ -269,6 +269,14 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="object-description">
+			<xsl:choose>
+				<xsl:when test="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc">											
+					<p><strong>Object Description:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc/p" /></p>
+				</xsl:when>
+				<xsl:otherwise/>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="repo-location">
 			<xsl:text> (</xsl:text><xsl:value-of select="string-join((//sourceDesc/msDesc/msIdentifier/settlement, //sourceDesc/msDesc/msIdentifier/country), ', ')"/><xsl:text>)</xsl:text>
 		</xsl:variable>
@@ -472,6 +480,7 @@
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
+					<xsl:copy-of select="$object-description"/>
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>

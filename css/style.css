@@ -383,6 +383,9 @@ a:focus img{
 .image-border{
 	border: 1px solid #e3e3e3;
 }
+.image-border-dark{
+	border: 1px solid #858585;
+}
 @media screen and (min-width: 480px){
 	.responsive-image70{
 		width: 70%;
@@ -451,6 +454,12 @@ a:focus img{
 .image-wrapper a:focus{
 	color: #e3e3e3 !important;
 	background-color: unset;
+}
+img + p.caption-text{
+	font-size: .8em;
+	line-height: 1.6;
+	margin: 0 0 2em 0;
+	padding: 0;
 }
 
 

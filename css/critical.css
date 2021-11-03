@@ -251,7 +251,8 @@ a img{
   color: #595959 !important;
   background-color: unset;
 }
-img + p.caption-text{
+img + p.caption-text,
+.double-image + p.caption-text{
 	font-size: .8em;
 	line-height: 1.6;
 	margin: 0 0 2em 0;

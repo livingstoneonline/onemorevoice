@@ -369,6 +369,44 @@ header img{
 	border: 1px solid #e3e3e3;
 	box-sizing: border-box;
 }
+/* used on collections.html for images after header image */
+.illustration{
+	display: block;
+	margin: 0 auto;
+}
+/* used on collections.html for two vertical images side by side */
+.double-image img{
+	margin: 0 auto 20px auto;
+}
+/* Adapted from https://stackoverflow.com/a/55557988 */
+@media only screen and (min-width: 768px){
+	.double-image {
+		margin-left: -10px;
+		height: 470px;
+		display: flex;
+		justify-content: center;
+	}
+	.double-image > img {
+		height: 100%;
+		width: auto;
+	}
+	.double-image img:first-child{
+		margin: 0;
+	}
+	.double-image img:nth-child(2){
+		margin: 0 0 0 10px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.double-image {
+		height: 454px;
+	}
+}
+@media only screen and (min-width: 1015px){
+	.double-image {
+		height: 470px;
+	}
+}
 a img{
 	border: 3px transparent solid;
 }
@@ -451,13 +489,33 @@ a:focus img{
 	color: #e3e3e3 !important;
 	background-color: unset;
 }
-img + p.caption-text{
+img + p.caption-text,
+.double-image + p.caption-text{
 	font-size: .8em;
 	line-height: 1.6;
-	margin: 0 0 2em 0;
+	margin: 10px 0 2em 0;
 	padding: 0;
 }
-
+/* adds margin to double image captions */
+.caption-text > span:not(:last-child){
+	margin-bottom: 10px;
+	display: inline-block;
+}
+/* identifies double image captions responsively */
+.left-right{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 768px){
+	.top-bottom{
+		display: none;
+		visibility: hidden;
+	}
+	.left-right{
+		display: inline-block;
+		visibility: visible;
+	}
+}
 
 /* 1.5. Links */
 

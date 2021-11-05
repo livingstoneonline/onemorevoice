@@ -497,7 +497,7 @@ img + p.caption-text,
 	padding: 0;
 }
 /* adds margin to double image captions */
-.caption-text > span:nth-child(1){
+.caption-text > span:not(:last-child){
 	margin-bottom: 10px;
 	display: inline-block;
 }

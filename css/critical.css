@@ -293,7 +293,7 @@ img + p.caption-text,
 	margin: 10px 0 2em 0;
 	padding: 0;
 }
-.caption-text > span:nth-child(1){
+.caption-text > span:not(:last-child){
 	margin-bottom: 10px;
 	display: inline-block;
 }

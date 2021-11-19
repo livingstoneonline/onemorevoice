@@ -67,7 +67,7 @@
 			<!-- Use this version of <sourceDesc> if published text -->
 			<sourceDesc>
 				<biblStruct type="journal">
-					<monogr>
+					<monogr n="narrow">
 						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
 						<title>The Missionary Magazine and Chronicle, Relating Chiefly to the Missions of the London Missionary Society</title>
 						<!-- Publication title: journal or book -->
@@ -134,21 +134,28 @@
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
 			<div>
 
-<!-- ndash: &#8211; -->
-<!-- mdash: &#8212; -->
+<!-- ndash: - -->
+<!-- mdash:&#8212;-->
 
 
 <!-- Anne, for printed texts, break up lines as they appear on the page, but no need to put <lb/> at the beginning of each line. -->
 
-
 <!-- For Tzatzoe, page 0002 (printed page 55), from "The Chairman then rose, and taking Jan Tzatzoe by the hand..." to page 0003 (printed page 56), ending with "I will not say more". -->
 
 <pb facs="liv_020064_0002" n="0002"/>
+
+<fw><seg rend="center caps">For September, 1836.</seg> <seg rend="right">55</seg></fw>
+
+	<div rend="center">
+<gap extent="18" unit="lines" agent="omitted-text"/><!-- Text from previous section. AW -->
 <lb/>
+	</div>
+
+	<div>
 <cb rend="right"/>
-<p>The <hi rend="caps">Chairman</hi> then rose, and taking
+<p>The <hi rend="smallcaps">Chairman</hi> then rose, and taking
 <persName>Jan Tzatzoe</persName> by the hand, addressed him to
-the following effect :&#8212; In the name of this
+the following effect:&#8212;In the name of this
 large meeting, which represents a body still
 greater than itself, extending throughout
 this kingdom, nay, I may say, throughout
@@ -160,11 +167,11 @@ when you return, you will be accompanied
 with our warmest prayers that you may be
 upheld, and that you may grow in spiritual
 strength even unto the end.</p>
-<p><hi rend="caps"><persName>Jan Tzatzoe</persName></hi> then stood forward, and
+<p><hi rend="smallcaps"><persName>Jan Tzatzoe</persName></hi> then stood forward, and
 was received with loud expressions of grateful
 joy. He addressed the meeting in the
 <term type="collective">Dutch</term> language to the following effect, <persName>Mr.
-Read, jun.</persName> acting as interpreter :&#8212; I am
+Read, jun.</persName> acting as interpreter:&#8212;I am
 surprised to see so many people assembled
 in the house of God. I am happy to have
 the opportunity of seeing those <term type="collective">Christian</term>
@@ -173,16 +180,18 @@ Philip</persName>, <persName>Mr. Read</persName>, and all the other Missionaries
 I thank God that you sent out
 these devoted men, who came to <country>South
 Africa</country> when we were shot with bullets,
-and when there was nothing but blood&#8211;shed
-in that ill&#8211;fated country. There was nothing
+and when there was nothing but blood-shed
+in that ill-fated country. There was nothing
 to be seen but the bullet and assagai, the
 bow and the arrow; but the word of God 
 has continued to this day. You must not
-be wearied in well&#8211;doing; the work is still
-great, and the work must be spread in the
+be wearied in well-doing; the work is still
+great, and the work must be spread in the<lb/>
 
 
 <pb facs="liv_020064_0003" n="0003"/>
+<fw><seg rend="right">56</seg> <seg rend="center caps">Missionary Magazine</seg></fw>
+
 <cb rend="left"/>
 world. God might convert the world by
 his own power, but he employs instruments
@@ -235,7 +244,7 @@ enjoy the privileges of <term type="collective">Britons</term>. Many
 <term type="collective">Englishmen</term> in the colonies are bad, but I
 will hardly believe that those <term type="collective">Englishmen</term>
 belong to you. You are a different race of
-men &#8212; they are <term type="collective">South Africans</term> &#8212; they are
+men&#8212;they are <term type="collective">South Africans</term>&#8212;they are
 not <term type="collective">Englishmen</term>. I have now seen the
 <term type="collective">English</term> nation. I have travelled a little in
 this country: I have met with a friendly reception
@@ -249,6 +258,8 @@ would thank you for ever having sent <persName>Dr.
 Philip</persName> to our country. This gentleman
 never sleeps in <bloc>Africa</bloc>; he is always doing
 good, he is always protecting us. He is
+<lb/>
+<lb/>
 
 <cb rend="right"/>
 our witness; he is a witness of the state of
@@ -275,7 +286,7 @@ others are ashamed of the truth; truth is
 the most important thing in the world. It
 is honest. Where there is no truth there
 is no true honour. We must all adore the
-truth &#8212; every man. The word of God is
+truth&#8212;every man. The word of God is
 truth. The word of God tells us to do good;
 and the word of God tells us to stand on the
 truth. We ought to adhere to the truth, and
@@ -284,11 +295,11 @@ to stand by the truth. I will not say more.</p>
 <!-- end of first extract - straight onto Stoffles extract AM -->
 <!-- For Stoffels, page 0003 (printed page 56), from "Andries Stoffles then rose to address the meeting..." to page 0005 (printed page 58), ending with "I am yours". -->
 
-<p><hi rend="caps"><persName>Andries Stoffles</persName></hi> then rose to address
+<p><hi rend="smallcaps"><persName>Andries Stoffles</persName></hi> then rose to address
 the meeting. He was received with the
 most cordial greetings.</p>
-<p>The <hi rend="caps">Chairman</hi>, taking him by the hand,
-thus addressed him:&#8212; In the name of this
+<p>The <hi rend="smallcaps">Chairman</hi>, taking him by the hand,
+thus addressed him:&#8212;In the name of this
 meeting, and of the society, I congratulate
 you on your arrival in this country; but
 above all do I congratulate you on the
@@ -298,10 +309,10 @@ of the Missionaries sent by this society. We
 are happy in seeing you as a visible token and
 evidence of what the power of God can do,
 and his grace perform in the hearts of men.</p>
-<p>The <hi rend="caps"><term type="collective">Christian</term> <term type="collective">Hottentot</term></hi> then addressed
+<p>The <hi rend="smallcaps"><term type="collective">Christian</term> <term type="collective">Hottentot</term></hi> then addressed
 the meeting in the <term type="collective">Dutch</term> language,
 <persName>Mr. Read</persName> acting as interpreter. He spoke
-nearly as follows :&#8212; God has done great
+nearly as follows:&#8212;God has done great
 things for <bloc>Africa</bloc>, for which we have
 reason to be glad. God has done great
 things for me, in that I am permitted to address
@@ -311,7 +322,7 @@ nation sent us the word of God. I will not
 dwell upon what we were before, but I will
 tell you what the Bible has done for us.
 There are three gentlemen in this country
-who are witnesses to what <term type="collective">Africans</term> were &#8212;
+who are witnesses to what <term type="collective">Africans</term> were&#8212;
 <persName>Dr. Philip</persName>, <persName>Mr. Read</persName>, and <persName>Mr. Campbell</persName>.
 I wish to tell you what the Bible has done
 for <bloc>Africa</bloc>. What would have become of
@@ -319,9 +330,11 @@ the <term type="collective">Hottentot</term> nation, and every black man
 in <country>South Africa</country>, had you kept the word of
 God to yourselves? When you received
 the word of God you thought of other nations
-who had not that word. When the
+who had not that word. When the<lb/>
 
 <pb facs="liv_020064_0004" n="0004"/>
+<fw><seg rend="center caps">For September, 1836.</seg> <seg rend="right">57</seg></fw>
+
 <cb rend="left"/>
 Bible came amongst us we were naked; we
 lived in caves and on the tops of the mountains;
@@ -341,8 +354,8 @@ things. We knew nothing about heaven.
 We knew not who made heaven and earth.
 The Bible is the only light for every man
 that dwells on the face of the earth. I
-thank God, in the name of every <term type="collective">Hottentot</term>
-&#8212; of all the <term type="collective">Hottentots</term> in <country>South Africa</country>,
+thank God, in the name of every <term type="collective">Hottentot</term>&#8212;of 
+all the <term type="collective">Hottentots</term> in <country>South Africa</country>,
 that I have seen the face of <term type="collective">Englishmen</term>. I
 have been looking whether a <term type="collective">Hottentot</term>
 found his way to this meeting, but I have
@@ -368,7 +381,7 @@ travel through such a nation. Where the
 Bible is not, man does not hesitate to kill
 his fellow; he never even repents afterwards
 of having committed murder. I thank you
-to&#8211;day : I do nothing but thank you to&#8211;day.
+to-day : I do nothing but thank you to-day.
 Are there any of the old <term type="collective">Englishmen</term> here
 who sent out the word of God? I give
 them my thanks : if there are not, I give it
@@ -379,7 +392,7 @@ and they will speak of things. Your Missionaries,
 when they came to us, suffered
 with us, and they wept with us, and they
 struggled for us, till they obtained for us the
-charter of our liberties &#8212; the fiftieth ordinance.
+charter of our liberties&#8212;the fiftieth ordinance.
 (The animation with which the last
 clause of this sentence was uttered by <persName>Andries
 Stoffles</persName>, produced a deep sensation
@@ -387,18 +400,20 @@ throughout the whole auditory.) When the
 fiftieth ordinance was published, we were
 then brought to the light. Then did the
 young men begin to learn to write and read.
-Through that ordinance we got infant&#8211;
+Through that ordinance we got infant-
 schools, and our little infants have been instructed,
+<lb/>
+<lb/>
 
 <cb rend="right"/>
 and they are making progress in
 learning. You, the posterity of the old <term type="collective">Englishmen</term>,
 I address you on this occasion; I
 am standing on the bones of your ancestors,
-and I call upon you, their children, to&#8211;day,
+and I call upon you, their children, to-day,
 to come over and help us. Do you know
 what we want? We want schools and 
-school&#8211;masters &#8212; we want to be like yourselves.
+school-masters&#8212;we want to be like yourselves.
 You see before you two men of two different
 nations. You who have put your money into
 the plates, but who never saw the fruits of
@@ -424,8 +439,8 @@ did not see the end of his labours. When
 he visited the <term type="collective">Bushmen</term>, we did not know
 why he visited them. I call upon you in
 the name of <term type="collective">Hottentots</term>, send over men to
-help us. We want infant&#8211;schools. I see
-that the infant&#8211;schools will be the greatest
+help us. We want infant-schools. I see
+that the infant-schools will be the greatest
 blessing that has ever been conferred on
 <country>South Africa</country>. I will tell you a story about
 my little grandchild. The little girl came
@@ -434,7 +449,7 @@ how to make cloth?" I said to her, "Do
 you mean to teach me? I have seen white
 men, and I do not know how it is made.
 How do you know?" She said, "If you
-come over to the schools to&#8211;morrow we will
+come over to the schools to-morrow we will
 tell you, and we will show you how cloth is
 made." I felt rather unwilling, but I went
 to the school the next day, and I was quite
@@ -443,7 +458,7 @@ surprised when I saw it. I have come to
 you in this country; for I want to go back
 and tell the little children in <bloc>Africa</bloc> I have
 seen every thing you told me of. I hope
-you will not be wearied in well&#8211;doing.
+you will not be wearied in well-sdoing.
 Perhaps some may say, "The <term type="collective">Hottentots</term>
 have had the word of God a long time; they
 can do well for themselves." But no, we
@@ -456,12 +471,12 @@ in <bloc>Africa</bloc> who has lately become acquainted
 with us. When we first saw that
 gentleman, we thought that he was only the
 friend of the <term type="collective">Hottentots</term>, but we find now
-that he is the friend of every man. But
+that he is the friend of every man. But<lb/>
 <cb/>
 
 
 <pb facs="liv_020064_0005" n="0005"/>
-<fw>58</fw><space extent="4" unit="words"/><hi rend="caps">missionary magazine</hi>
+<fw><seg rend="right">58</seg> <seg rend="center caps">Missionary Magazine</seg></fw>
 <lb/>
 <cb rend="left"/>
 this man was quite different to every other
@@ -517,7 +532,7 @@ has brought my nation so far, that if a
 <term type="collective">Hottentot</term> young lady and an <term type="collective">English</term>
 young lady were walking with their faces
 from me, I would take them both to be
-<term type="collective">English</term> ladies. Do instruct us &#8212; I say
+<term type="collective">English</term> ladies. Do instruct us&#8212;I say
 again, do instruct us! Do not leave us to
 ourselves. Hold us under your arm. We
 are coming on; we are improving; we will
@@ -531,11 +546,7 @@ You have the honour, I claim nothing.
 You give us your pence and your farthings,
 and here am I; I am yours.
 </p>
-
-
-
-
-
+	</div>
 			</div>
 		</body>
 	</text>

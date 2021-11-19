@@ -80,8 +80,8 @@ also see 2.9 for manuscript colors
 	}
 }
 .journal{
-	color: black;
-	background-color: white;
+	color: #191716;
+	background-color: #ffffff;
 }
 @media only screen and (min-width: 768px){
 	.journal.narrow,
@@ -128,10 +128,12 @@ also see 2.9 for manuscript colors
 	margin-top: 2em;
 }
 .journal .TEI{
-	display: block;
 	text-align: justify;
-	padding: 1em 1em 2em 1em;
+	color: #191716;
+	background-color: #ffffff;
 	margin: 0 auto;
+	padding: 1em 1em 2em 1em;
+	display: block;
 }
 @media only screen and (min-width: 768px){
 	.journal .TEI{
@@ -332,7 +334,7 @@ label.md_switch{
 	background: #ffffff !important;
 }
 .change-color .TEI *{
-	color: black !important;
+	color: #191716 !important;
 }
 .change-color .manuscript .pb-title,
 .change-color .byline-divider{
@@ -353,7 +355,7 @@ label.md_switch{
 	filter: invert(1);
 }
 .invert-color .journal .pb-title{
-	color: black;
+	color: #191716;
 }
 .invert-color .journal .sic,
 .invert-color .journal .corr{

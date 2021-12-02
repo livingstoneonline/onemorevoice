@@ -2,7 +2,7 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020086">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
@@ -121,9 +121,9 @@
 
 	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
-		<body n="beb7a7">
+		<body n="c7bda5">
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div rend="brown black">
+			<div rend="gray black">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -180,6 +180,8 @@
 <lb/>what course to pursue. I am.</p>
 <lb/><p rend ="no-indent"><space extent="6" unit="words"/><space extent="2" unit="chars"/>Yr. obt &amp; grateful servant,</p>
 <lb/><p rend ="no-indent"><space extent="8" unit="words"/><space extent="3" unit="chars"/><persName>W.I. Craft.</persName></p>
+
+	<pb facs="liv_020086_0004" n="0004" type="blank" ana="15"/>
 
 			</div>
 		</body>

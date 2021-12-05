@@ -11,10 +11,14 @@ aside.sidebar{
 }
 .essay .image-wrapper:nth-child(1) h2{
 	margin: 0 auto;
-	color: #e3e3e3;
-	background: #595959;
+	/* color: #595959; */
+	color: #0b0b0b;
+	background: #e3e3e3;
 	line-height: 1.5em;
-	border: 1px solid #595959;
+	border: 1px solid #0b0b0b;
+	border-bottom: 2px solid #e3e3e3;
+	/* border: 2px solid #e3e3e3;
+	outline: 1px solid #595959; */
 	border-radius: 8px 8px 0 0;
 	-webkit-border-radius: 8px 8px 0 0;
 	-moz-border-radius: 8px 8px 0 0;
@@ -22,10 +26,10 @@ aside.sidebar{
 	/* font-family: 'Courgette', cursive; */
 	/* font-family: 'Caveat', cursive; */
 	/* font-family: 'Baloo Bhaijaan 2', cursive; */
-	/* font-family: 'Rubik', sans-serif; */
+	font-family: 'Rubik', sans-serif;
 	/* font-family: 'Fuzzy Bubbles', cursive; */
-	font-family: 'Varela Round', sans-serif;
-	font-size: 3.3em;
+	/* font-family: 'Varela Round', sans-serif; */
+	font-size: 2.9em;
 	font-style: italic;
 }
 .essay .image-wrapper:nth-child(1) img{

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020065">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“Minutes of Evidence” (Excerpt)</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Minutes of Evidence’ (Excerpt)</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“Minutes of Evidence” (Excerpt), 27 June 1836</title>
+				<!-- Title, date -->
+				<author>Donkin, Rufane, 1772-1841</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Donkin, Rufane</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Rufane Donkin</author>
+				<!-- First author only: Forename Surname -->
+				<author>Read, James, Jr., c.1811-1894</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">James Read, Jr.</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Stoffels, Andries, late 1770s-1837</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Andries Stoffels</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="JM">
+					<name>Jared McDonald</name>
+					<resp>Transcription</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2022</date>
+				<idno type="LEAP-ID">liv_020065</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<!-- <ref target=""></ref> -->
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr>
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Report from the Select Committee on the Aborigines (British Settlements;) Together with the Minutes of Evidence, Appendix and Index</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<author></author>
+						<editor></editor>
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="section"></biblScope>
+							<!-- Section title (if known; otherwise leave blank) -->
+							<biblScope unit="vol"></biblScope>
+							<!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope>
+							<!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">583-89</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>[London]</pubPlace>
+							<!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>Ordered, by the House of Commons</publisher>
+							<!-- Publisher (if known; otherwise leave blank) -->
+							<date>5 August 1836</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“Minutes of Evidence” (Excerpt)</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="RD">Donkin, Rufane, 1772-1841</author>
+					<author xml:id="JR">Read, James, Jr., c.1811-1894</author>
+					<author xml:id="AS">Stoffels, Andries, late 1770s-1837</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1836-06-27">27 June 1836</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace">London</placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2022-03-08" who="AW">Coding</change>
+			<change when="2022-01-20" who="JM">Initial proofing</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div>
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020061_0001" n="0001"/>
+<lb/>
+<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+
+<pb facs="liv_020061_0002" n="0002"/>
+
+<pb facs="liv_020061_0003" n="0003"/>
+
+<pb facs="liv_020061_0004" n="0004"/>
+
+<pb facs="liv_020061_0005" n="0005"/>
+
+<pb facs="liv_020061_0006" n="0006"/>
+
+<pb facs="liv_020061_0007" n="0007"/>
+
+			</div>
+		</body>
+	</text>
+</TEI>

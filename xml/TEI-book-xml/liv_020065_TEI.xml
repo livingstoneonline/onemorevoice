@@ -83,7 +83,7 @@
 			<!-- Use this version of <sourceDesc> if published text -->
 			<sourceDesc>
 				<biblStruct type="journal">
-					<monogr>
+					<monogr n="book-section">
 						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
 						<title>Report from the Select Committee on the Aborigines (British Settlements;) Together with the Minutes of Evidence, Appendix and Index</title>
 						<!-- Publication title: journal or book -->
@@ -138,6 +138,7 @@
 				<language ident="en">English</language>
 			</langUsage>
 		</profileDesc>
+		<xenoData type="css">.journal .liv_020065 .ab{text-indent:0;position:inherit}.journal .liv_020065 .ab.right{text-align:right}@media only screen and (min-width: 768px){.liv_020065 .fw.catch,.liv_020065 .p{margin:0 auto;max-width:80%}.liv_020065 .p{text-indent:16px}.journal .liv_020065 .ab{line-height:1.6em;text-align:center;max-width:60px;margin-top:0.5em;display:inline-block;position:absolute}.journal .liv_020065 .ab.right{text-align:center;right:2em}.liv_020065 .ab.left{text-indent:0;position:absolute;left:2em}.liv_020065 .ab .seg:first-child{padding-bottom:0.5em;margin-bottom:0.5em;border-bottom:1px solid #191716;display:block}}</xenoData>
 		<revisionDesc>
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
@@ -154,7 +155,7 @@
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
-			<div>
+			<div n="liv_020065">
 
 <!-- ndash: &#8211; -->
 <!-- mdash: &#8212; -->
@@ -162,7 +163,7 @@
 <!-- Put a <pb> at the beginning of each page -->
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
-<pb facs="liv_020061_0001" n="0001"/>
+<pb facs="liv_020065_0001" n="0001"/>
 <fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">583</seg></fw>
 
 	<div rend="center">
@@ -171,10 +172,9 @@
 	</div>
 
 	<div>
-<!-- <p rend="right small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/></p>-->
 <p rend="center"><seg rend="italic">Andrew Stoffel</seg>, called in; and Examined through the interpretation of
 Mr. <seg rend="italic">James Read</seg>.</p>
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg></ab>
 <p>4938. <seg rend="italic">Chairman</seg>.] <seg rend="caps">Are</seg> you a native of South Africa?&#8212;Yes.</p>
 <p>4939. Do you belong to the Hottentots?&#8212;Yes.</p>
 <p>4940. Were you one of the Kat River settlers?&#8212;Yes.</p>
@@ -222,14 +222,12 @@ the country belonging to themselves?&#8212;They thought it was their own country
 <p>4960. In what condition were the Hottentots when the missionaries first came
 among them?&#8212;There was nothing to be done with the Hottentots, they were in a
 bad condition at that time.</p>
-<fw><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 E 4</seg> <seg rend="right">4961. <space extent="1" unit="chars"/>Has</seg></fw>
+<fw type="catch"><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 E 4</seg> <seg rend="right">4961. <space extent="1" unit="chars"/>Has</seg></fw>
 
 
-<pb facs="liv_020061_0002" n="0002"/>
+<pb facs="liv_020065_0002" n="0002"/>
 <fw><seg rend="left">584</seg> <seg rend="center caps">Minutes of Evidence Before Select Committee</seg></fw>
-<!-- <p rend="left small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/>
-<lb/><date when="1836-06-27">27 June 1836</date>.</p> -->
+<ab rend="left" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
 <p>4961. Has the character and condition of the Hottentots been improved since
 the missionaries came among them?&#8212;Yes.</p>
 <p>4962. In what respects have their character and condition improved?&#8212;The
@@ -293,16 +291,14 @@ the spoor in Warden’s time. </p>
 we have often lost cattle among the thorns, and we lost the spoor, and then supposed
 that the Caffres had taken the cattle, but we found them again.</p>
 <p>4983. Have you actually lost cattle and horses which you supposed the Caffres
-had taken, and which you afterwards discovered that the Caffres had not taken?&#8212;
-<fw><seg rend="right">Yes,</seg></fw>
+had taken, and which you afterwards discovered that the Caffres had not taken?&#8212;</p>
+<fw type="catch"><seg rend="right">Yes,</seg></fw>
 
 
-<pb facs="liv_020061_0003" n="0003"/>
+<pb facs="liv_020065_0003" n="0003"/>
 <fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">585</seg></fw>
-<!-- <p rend="right small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/>
-<lb/><date when="1836-06-27">27 June 1836</date>.</p> -->
-Yes, I lost horses, and I supposed that the Caffres had taken the horses, but I 
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p rend="no-indent">Yes, I lost horses, and I supposed that the Caffres had taken the horses, but I 
 found them again.</p>
 <p>4984. Did you see any of the Kat River settlers get more cattle than they had
 lost?&#8212;No; if a Caffre stole five or six head of cattle, or any other number, we
@@ -366,14 +362,12 @@ do not know whether they got pay; they were discharged before we were; I was
 on the Kai.</p>
 <p>5011. <seg rend="italic">Chairman</seg>.] Were you ever present when Dr. Philip held a conversation
 with the Caffres about Gooby?&#8212;Yes.</p>
-<fw><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 F</seg> <seg rend="right">5012. <space extent="1" unit="chars"/>What</seg></fw>
+<fw type="catch"><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 F</seg> <seg rend="right">5012. <space extent="1" unit="chars"/>What</seg></fw>
 
 
-<pb facs="liv_020061_0004" n="0004"/>
+<pb facs="liv_020065_0004" n="0004"/>
 <fw><seg rend="left">586</seg> <seg rend="center caps">Minutes of Evidence Before Select Committee</seg></fw>
-<!-- <p rend="left small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/>
-<lb/><date when="1836-06-27">27 June 1836</date>.</p> -->
+<ab rend="left" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
 <p>5012. What took place at that conversation?&#8212;The Caffres asked Dr. Philip
 how it was that a government of another country could beat the man of another
 country, and spoil his back for him; it was a great disgrace to a man to have his
@@ -438,14 +432,12 @@ not get them soon enough, he would beat me most severely, and I ran away and
 left all my things with him.</p>
 <p>5025. Do you consider that yourself and the other Hottentots were treated
 oppressively by the boors?&#8212;Yes; we have had a hard time of it.</p>
-<fw><seg rend="right">5026. <space extent="1" unit="chars"/>Did</seg></fw>
+<fw type="catch"><seg rend="right">5026. <space extent="1" unit="chars"/>Did</seg></fw>
 
 
-<pb facs="liv_020061_0005" n="0005"/>
+<pb facs="liv_020065_0005" n="0005"/>
 <fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">587</seg></fw>
-<!-- <p rend="right small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/>
-<lb/><date when="1836-06-27">27 June 1836</date>.</p> -->
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
 <p>5026. Did you consider that the establishment of the Kat River settlement,
 and the alteration of the law that took place about the same time by the 50th
 Ordinance, was a great benefit to the Hottentots?&#8212;Yes; then the Hottentots
@@ -507,16 +499,14 @@ that we gave them any cause to treat us so.</p>
 <p>5050. Cannot you imagine what was the cause?&#8212;I asked the old Hottentots,
 "Did you ever do any harm to the white people that they treat us thus?" and
 the old people said "No, we never did them any injury."</p>
-<p>5051. <seg rend="italic">Mr. Lushington</seg>.] Which white people do you mean, the Dutch or the
-<fw><seg rend="center">4 F 2</seg> <seg rend="right">English&#8212;</seg></fw>
+<p>5051. <seg rend="italic">Mr. Lushington</seg>.] Which white people do you mean, the Dutch or the</p>
+<fw type="catch"><seg rend="center">4 F 2</seg> <seg rend="right">English&#8212;</seg></fw>
 
 
-<pb facs="liv_020061_0006" n="0006"/>
+<pb facs="liv_020065_0006" n="0006"/>
 <fw><seg rend="left">588</seg> <seg rend="center caps">Minutes of Evidence Before Select Committee</seg></fw>
-<!-- <p rend="left small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/>
-<lb/><date when="1836-06-27">27 June 1836</date>.</p> -->
-English?&#8212;The boors; the English have only come lately, and begun at the Sunday's
+<ab rend="left" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p rend="no-indent">English?&#8212;The boors; the English have only come lately, and begun at the Sunday's
 River, when they drove the Hottentots and Caffres from there .</p>
 <p>5052. <seg rend="italic">Mr. Baines</seg>.] Then this cruel treatment was from the Dutch?&#8212;Yes;
 they treated us so till the missionaries came; and when the missionaries took our part,
@@ -580,14 +570,12 @@ the people of England; and I love the people in this country also.</p>
 <p>5069. <seg rend="italic">Mr. Gladstone</seg>.] What redress would you wish to have for the injuries
 you have described?&#8212;In the first place, I want my schools back and my missionaries;
 the children must be taught. We want education among the Hottentots.</p>
-<fw><seg rend="right">5070. <space extent="1" unit="chars"/>Do</seg></fw>
+<fw type="catch"><seg rend="right">5070. <space extent="1" unit="chars"/>Do</seg></fw>
 
 
-<pb facs="liv_020061_0007" n="0007"/>
+<pb facs="liv_020065_0007" n="0007"/>
 <fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">589</seg></fw>
-<!-- <p rend="right small"><seg rend="italic">Andrew Stoffel.</seg>
-<lb/><milestone unit="section" rend="line"/>
-<lb/><date when="1836-06-27">27 June 1836</date>.</p> -->
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
 <p>5070. Do you want the land and the water and the wood back?&#8212;I am not man 
 enough, and I do not know where it would lead me, if I were to speak about the
 land and the water; but I would speak about the other first. </p>
@@ -633,7 +621,7 @@ say anything against your going; you may go."</p>
 Cape Town?&#8212;I came to the military post, and the commander of the post was not
 at home; and then I informed Mr. Blakeway of my intention to journey for
 a time.</p>
-<fw><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 F 3</seg> <seg rend="right">5089. <space extent="1" unit="chars"/>The</seg></fw>
+<fw type="catch"><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 F 3</seg> <seg rend="right">5089. <space extent="1" unit="chars"/>The</seg></fw>
 
 <milestone unit="section" rend="line"/>
 	</div>

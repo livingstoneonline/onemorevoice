@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020065">
+	<!-- Insert LEAP ID, e.g. "liv_020010 -->
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>“Minutes of Evidence” (Excerpt)</title>
+				<!-- Title without date -->
+				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+				<title type="normalized">‘Minutes of Evidence’ (Excerpt)</title>
+				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<title type="alternative">“Minutes of Evidence” (Excerpt), 27 June 1836</title>
+				<!-- Title, date -->
+				<author>Buxton, Fowell, 1786-1845</author>
+				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Buxton, Fowell</author>
+				<!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Fowell Buxton</author>
+				<!-- First author only: Forename Surname -->
+				<author>Read, James, Jr., c.1811-1894</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">James Read, Jr.</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Stoffels, Andries, late 1770s-1837</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Andries Stoffels</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Baines, Edward, 1800-1890</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Edward Baines</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Bagshawe, John, 1784-1861</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">John Bagshawe</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Lushington, Charles, 1785-1866</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Charles Lushington</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Gladstone, William, 1809-1898</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">William Gladstone</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<principal>Heather F. Ball</principal>
+				<principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+				<respStmt xml:id="JM">
+					<name>Jared McDonald</name>
+					<resp>Transcription</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+				</respStmt>
+				<respStmt xml:id="AW">
+					<name>Adrian S. Wisnicki</name>
+					<resp>TEI Encoding</resp>
+					<resp>Editorial Decisions</resp>
+					<resp>Proofing</resp>
+					<resp>Coding Review</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>One More Voice</authority>
+				<publisher>Livingstone Online</publisher>
+				<pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+				<date>2022</date>
+				<idno type="LEAP-ID">liv_020065</idno>
+				<!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://archives.parliament.uk/online-resources/parliamentary-papers/">UK Parliament | Parliamentary Papers</ref>
+				<!-- Edit <availability> as relevant -->
+				<availability>
+					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if published text -->
+			<sourceDesc>
+				<biblStruct type="journal">
+					<monogr n="book-section">
+						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
+						<title>Report from the Select Committee on the Aborigines (British Settlements;) Together with the Minutes of Evidence, Appendix and Index</title>
+						<!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+						<author></author>
+						<editor></editor>
+						<!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="pages">583-89</biblScope>
+							<!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>[London]</pubPlace>
+							<!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>Ordered, by the House of Commons</publisher>
+							<!-- Publisher (if known; otherwise leave blank) -->
+							<date>5 August 1836</date>
+							<!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+				<bibl type="sourceMetadata">
+					<!-- Title without date -->
+					<!-- Same as <title> above --> 
+					<title>“Minutes of Evidence” (Excerpt)</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+					<author xml:id="FB">Buxton, Fowell, 1786-1845</author>
+					<author xml:id="JR">Read, James, Jr., c.1811-1894</author>
+					<author xml:id="AS">Stoffels, Andries, late 1770s-1837</author>
+					<author xml:id="EB">Baines, Edward, 1800-1890</author>
+					<author xml:id="JB">Bagshawe, John, 1784-1861</author>
+					<author xml:id="CL">Lushington, Charles, 1785-1866</author>
+					<author xml:id="WG">Gladstone, William, 1809-1898</author>
+					<!-- Same as <date> in previous section -->
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+					<date type="composition" when="1836-06-27">27 June 1836</date>
+					<!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+					<placeName type="compositionPlace">London</placeName>
+					<!-- Can be "compositionPlace" or "focusRegion" -->
+				</bibl>
+			</sourceDesc>
+			<!-- End of published text <sourceDesc> -->
+
+		</fileDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+				<!-- English should be first, then add all other languages in alphabetical order. -->
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<xenoData type="css">.journal .liv_020065 .ab{text-indent:0;position:inherit}.journal .liv_020065 .ab.right{text-align:right}@media only screen and (min-width: 768px){.liv_020065 .fw.catch,.liv_020065 .p{margin:0 auto;max-width:80%}.liv_020065 .p{text-indent:16px}.journal .liv_020065 .ab{line-height:1.6em;text-align:center;max-width:60px;margin-top:0.5em;display:inline-block;position:absolute}.journal .liv_020065 .ab.right{text-align:center;right:2em}.liv_020065 .ab.left{text-indent:0;position:absolute;left:2em}.liv_020065 .ab .seg:first-child{padding-bottom:0.5em;margin-bottom:0.5em;border-bottom:1px solid #191716;display:block}}</xenoData>
+		<revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2022-03-08" who="AW">Coding</change>
+			<change when="2022-01-20" who="JM">Initial proofing</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
+		<body>
+			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
+			<div n="liv_020065">
+
+<!-- ndash: &#8211; -->
+<!-- mdash: &#8212; -->
+
+<!-- Put a <pb> at the beginning of each page -->
+<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+<!-- @n = page number only, e.g., 0001 -->
+<pb facs="liv_020065_0001" n="0001"/>
+<fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">583</seg></fw>
+
+	<div rend="center">
+<gap extent="12" unit="lines" agent="omitted-text"/><!-- Text from previous section. AW -->
+<lb/>
+	</div>
+
+	<div>
+<p rend="center"><seg rend="italic">Andrew Stoffel</seg>, called in; and Examined through the interpretation of
+Mr. <seg rend="italic">James Read</seg>.</p>
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg></ab>
+<p>4938. <seg rend="italic">Chairman</seg>.] <seg rend="caps">Are</seg> you a native of South Africa?&#8212;Yes.</p>
+<p>4939. Do you belong to the Hottentots?&#8212;Yes.</p>
+<p>4940. Were you one of the Kat River settlers?&#8212;Yes.</p>
+<p>4941. Did you live for some years at Bethelsdorf before you went to the Kat
+River?&#8212;Yes, I lived at Bethelsdorf a long time.</p>
+<p>4942. What is your age?&#8212;Between 50 and 60.</p>
+<p>4943. Will you give the Committee a little outline of your life; where did you
+spend your early years?&#8212;We lived in the mountains till the missionaries, Vanderkemp
+and Read, came amongst us, then I came amongst human beings.</p>
+<p>4944. How many years is it since you lived at Bethelsdorf?&#8212;I went to Bethelsdorf,
+when Dr. Vanderkemp left Graaff Reinet to come to Bethelsdorf; I then left
+Zuurveldt to come to the missionary station.</p>
+<p>4945. You knew Dr. Vanderkemp?&#8212;Yes.</p>
+<p>4946. Was he a good man?&#8212;Yes.</p>
+<p>4947. Did he labour hard for the benefit of the Hottentots?&#8212;Yes; it was after
+Dr. Vanderkemp and Mr. Read came among us that we put off our skins and put
+on clothes.</p>
+<p>4948. Was Dr. Vanderkemp the first missionary that came into the part of the
+country where you were?&#8212;Yes.</p>
+<p>4949. Where were you living when Dr. Vanderkemp first came to Bethelsdorf?&#8212;At 
+Sundy's River.</p>
+<p>4950. How did you happen to hear of Dr. Vanderkemp?&#8212;A cousin of mine
+came to our place and told me that there were good teachers who wanted to teach
+us. We then went to the institution one after another, and we found the place,
+and I joined the institution.</p>
+<p>4951. Were you, before you joined Dr. Vanderkemp, living in savage life, and
+totally uninstructed?&#8212;I was not altogether a savage, for I had been with the white
+people sometimes.</p>
+<p>4952. What was the first thing that Dr. Vanderkemp taught you?&#8212;He taught
+us the Word of God; then he used to tell us that we must thank the English
+people for having sent us the Word of God.</p>
+<p>4953. By whom was the Zuurveldt then occupied?&#8212;The Caffres, and part of the
+Hottentots.</p>
+<p>4954. Were there any Dutch boors in the Zuurveldt at that time?&#8212;No.</p>
+<p>4955. Were there many Hottentots in the Zuurveldt?&#8212;There were many in the
+Zuurveldt, but the Caffires were in possession of the country at the time that Dr.
+Vanderkemp came.</p>
+<p>4956. There were more Caffres than Hottentots?&#8212;More Caffres than Hottentots.</p>
+<p>4957. Were you born in the Zuurveldt?&#8212;Yes; in Zuurveldt, at the Bushman's
+River.</p>
+<p>4958. Did the Caffres and the Hottentots, who were then living in the Zuurveldt,
+consider themselves as belonging to the European colony, or as occupying
+the country belonging to themselves?&#8212;They thought it was their own country.</p>
+<p>4959. Did some part of the Hottentots in Zuurvelclt go to Bethelsdorf?&#8212;Yes.</p>
+<p>4960. In what condition were the Hottentots when the missionaries first came
+among them?&#8212;There was nothing to be done with the Hottentots, they were in a
+bad condition at that time.</p>
+<fw type="catch"><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 E 4</seg> <seg rend="right">4961. <space extent="1" unit="chars"/>Has</seg></fw>
+
+
+<pb facs="liv_020065_0002" n="0002"/>
+<fw><seg rend="left">584</seg> <seg rend="center caps">Minutes of Evidence Before Select Committee</seg></fw>
+<ab rend="left" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p>4961. Has the character and condition of the Hottentots been improved since
+the missionaries came among them?&#8212;Yes.</p>
+<p>4962. In what respects have their character and condition improved?&#8212;The
+young people can now read and write, and we all wear clothes; many of us have
+learnt trades, and are altogether better men.</p>
+<p>4963. Have they got any knowledge of agriculture?&#8212;We have ploughing, waggonmakers, 
+and shoemakers, and other tradesmen amongst us; we can make all
+those things except a watch and a coach.</p>
+<p>4964. Then you consider that the missionaries have done a great deal of good
+amongst the Hottentots?&#8212;Yes, they have done much good, and they have tamed
+the Hottentots.</p>
+<p>4965. What is the evil that the missionaries have done to the Hottentots?&#8212;I do
+not know what evil the missionaries have done; but it is perhaps because they have
+taught them to make bats, and taught them other trades, and they have taught them
+to read and to write, and to use the pen.</p>
+<p>4966. Do you consider that teaching them those things has done them good or
+done them mischief?&#8212;It has done them good.</p>
+<p>4967. Have other Europeans, besides the missionaries, done much to improve
+the aborigines of South Africa?&#8212;Not the least.</p>
+<p>4968. If they have done them no good, have they done them any harm?&#8212;They
+have done them evil, but they have not done them the least good. </p>
+<p>4969. What evil have they done?&#8212;They have beaten them to death, and otherwise
+ill-treated them.</p>
+<p>4970. Do you think that the Hottentots have been much diminished in their
+numbers since the Europeans went amongst them?&#8212;Yes, they are almost done;
+the missionaries picked up a few, and they are increasing now.</p>
+<p>4971. Then are the Committee to understand, that where they have been left to
+Europeans in general, their numbers have decreased; but where they have belonged
+to the missionary institutions, their numbers have increased?&#8212;Yes.</p>
+<p>4972. Do you think if they had all been treated in the same way as the missionaries
+treated them, that, instead of gradually decreasing, there would have been
+generally an increase of their numbers?&#8212;Yes, and they would have lived better
+and made much improvement. </p>
+<p>4973. Can you at all state the numbers of the natives that there were in the
+Zuurveldt, when you first knew it, and the number of natives that there are at present?&#8212;I 
+could not say how many there were at that time, but there were some of
+them who were then come from Graaff Reinet and other parts.</p>
+<p>4974. When did you go to settle at the Kat River?&#8212;In 1829.</p>
+<p>4975. Was that at the time that the settlement commenced?&#8212;Yes, I was with
+the first people who went there.</p>
+<p>4976. What were the circumstances of the people who went to settle at the Kat
+River?&#8212;When we first went there we suffered much want and hunger, but we still
+worked and cultivated the land.</p>
+<p>4977. Had you property when you went there?&#8212;Some had property and some
+had not.</p>
+<p>4978. How did those that had no property live?&#8212;Those who had no property
+used the Caffre melon and the roots of the noose boom.</p>
+<p>4979. What were the principal difficulties you had to contend with at first?
+When we first went into the settlement the Caffres were rather troublesome to us,
+and then we had to clear the ground, and to take up the mimosa trees, and cut
+out watercourses.</p>
+<p>4980. On what terms did you generally live with the Caffres?&#8212;At that time
+there was an officer called Warden placed between us and the Caffres, and he was
+to see on which side the evil would originate, and when the officer was there there
+was general peace. He was a good man. When that officer was there, whenever
+the Caffres stole cattle, he would take us on the spoor, and he would follow up the spoor till
+he got to the kraal of the thief; but he never took cattle from the innocent Caffres.</p>
+<p>4981. Have you often gone upon the spoor of cattle?&#8212;Yes, I always went on
+the spoor in Warden’s time. </p>
+<p>4982. Have you ever lost cattle of which you could not truce the spoor?&#8212;Yes,
+we have often lost cattle among the thorns, and we lost the spoor, and then supposed
+that the Caffres had taken the cattle, but we found them again.</p>
+<p>4983. Have you actually lost cattle and horses which you supposed the Caffres
+had taken, and which you afterwards discovered that the Caffres had not taken?&#8212;</p>
+<fw type="catch"><seg rend="right">Yes,</seg></fw>
+
+
+<pb facs="liv_020065_0003" n="0003"/>
+<fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">585</seg></fw>
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p rend="no-indent">Yes, I lost horses, and I supposed that the Caffres had taken the horses, but I 
+found them again.</p>
+<p>4984. Did you see any of the Kat River settlers get more cattle than they had
+lost?&#8212;No; if a Caffre stole five or six head of cattle, or any other number, we
+would only get back the five or six head of cattle.</p>
+<p>4985. When cattle had been stolen from the Kat River, and when you trace
+the spoor, to what chief did the villages generally belong where you found the cattle?&#8212;To 
+Chusa's Caffres.</p>
+<p>4986. Did you ever trace stolen cattle to Tyalie’s kraal?&#8212;Botha once lost an
+ox, and we went on the spoor of this ox, and it was traced down the mountain into
+Tyalie's part of the country. The Caffres wanted to pay two oxen for this ox;
+Mr. Warden was present; and Mr. Warden said, "No, you must only pay one
+fat ox, like Botha's."</p>
+<p>4987. Was that the only instance in which you ever traced cattle to Tyalie's
+kraal?&#8212;Yes; from the Kat River, to my knowledge, our cattle used to go through
+Gaika's people to Chusa's kraal.</p>
+<p>4988. Did you ever trace cattle to the kraals of Macomo?&#8212;Never.</p>
+<p>4989. Or to those of Botman?&#8212;No.</p>
+<p>4990. Have you ever been present when cattle were taken from the Caffres,
+though the spoor had not been traced to their villages?&#8212;No, I have not.</p>
+<p>4991. Did the Kat River settlers feel themselves in danger when the Caffres
+invaded the colony?&#8212;Yes, we considered ourselves in danger, and we wanted to
+go up to the post; but the post was abandoned, and we could not go there.</p>
+<p>4992. Did the Caffres make an attack upon the settlement at the commencement
+of the war?&#8212;Yes.</p>
+<p>4993. How many days was it after you heard that the Caffres had invaded the
+colony?&#8212;Between five and six days.</p>
+<p>4994. Was there any resistance made to the Caffres at that time?&#8212;Yes, we
+made resistance; we were also the first who went out against the Caffres, when
+Colonel Somerset came to the new post after the patrol that took place.</p>
+<p>4995. After what patrol?&#8212;The patrol which had quarrelled with Xo-Xo.</p>
+<p>4996. Who commanded that patrol?&#8212;There was a short officer.</p>
+<p>4997. How old was he?&#8212;I could not say how old he is.</p>
+<p>4998. Were the Hottentots ordered out against the Caffres as soon as hostilities
+were commenced by the Caffres?&#8212;An order came on Sunday, and on the same
+day 200 Hottentots went out.</p>
+<p>4999. Did the people readily come forward at this crisis?&#8212;Yes, very readily.</p>
+<p>5000. Besides those that went into Caffreland with the army, were there any
+that were left defending the military posts on the frontier?&#8212;Yes; but I could not
+say how many.</p>
+<p>5001. How many?&#8212;About 50 men were sent to the new post to protect it.</p>
+<p>5002. At the time you left the country had the men that joined the army been
+permitted to return home?&#8212;Part of them are still with the army.</p>
+<p>5003. Do they remain willingly with the army, or would they be glad to return?&#8212;They 
+do not stay there with their own consent, the governor has ordered them
+out, and many of those people have lands to cultivate, and their lands are not now
+cultivated.</p>
+<p>5004. How long were you with the army?&#8212;Three months and 12 days.</p>
+<p>5005. What pay did you receive during that time?&#8212;I got no pay. </p>
+<p>5006. Did you receive any present from the governor&#8212;The governor made us a
+present of cattle; but all the men did not get cattle; those that got any got one,
+and some did not get any.</p>
+<p>5007. Did the Hottentots at the Kat River suffer much loss by being compelled
+to join the army against the Caffres?&#8212;Yes, we lost a great deal; we lost horses and
+cattle.</p>
+<p>5008. In what state were the people at the Kat River when you left them?&#8212;They 
+are busy in repairing their houses and cleaning their water ditches.</p>
+<p>5009. <seg rend="italic">Mr. Baines</seg>.] Was not that at the time that martial law was proclaimed
+that you were out with the army?&#8212;Yes.</p>
+<p>5010. Nobody had pay at that time, either the Dutch or the English, had they?&#8212;I 
+do not know whether they got pay; they were discharged before we were; I was
+on the Kai.</p>
+<p>5011. <seg rend="italic">Chairman</seg>.] Were you ever present when Dr. Philip held a conversation
+with the Caffres about Gooby?&#8212;Yes.</p>
+<fw type="catch"><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 F</seg> <seg rend="right">5012. <space extent="1" unit="chars"/>What</seg></fw>
+
+
+<pb facs="liv_020065_0004" n="0004"/>
+<fw><seg rend="left">586</seg> <seg rend="center caps">Minutes of Evidence Before Select Committee</seg></fw>
+<ab rend="left" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p>5012. What took place at that conversation?&#8212;The Caffres asked Dr. Philip
+how it was that a government of another country could beat the man of another
+country, and spoil his back for him; it was a great disgrace to a man to have his
+back spoiled; they could not use the man in the dancing parties. Dr. Philip said,
+''I do not know anything about these things; I am not come here to hear
+complaints."</p>
+<p>5013. Were you present when Dr. Philip had his last conversation with
+Macomo?&#8212;Yes.</p>
+<p>5014. Are you sure that was the last conversation that Dr. Philip had with
+Macomo?&#8212;Yes, I am quite sure.</p>
+<p>5015. How do you know that?&#8212;Dr. Philip then went away to the Cape.</p>
+<p>5016. State as distinctly as you can all that took place in that conversation
+between Dr. Philip and the Caffres?&#8212;We were going to Graham's Town, and we
+outspanned in the waggon-road leading to Graham's Town by Fort Willshire.
+The Caffre, whose hut had been set on fire the night before, came to the waggon
+and asked whose waggon that was; we said it is Dr. Philip's waggon; Dr. Philip
+is going home. This Caffre must have gone home and told Macomo, or else
+I do not know how it was, but Macomo came to us to the road. But, however,
+Macomo came to Dr. Philip and thanked Dr. Philip for the advice he had given.
+Macomo said to Dr. Philip, "I have just been to a meeting at Willshire, and they
+tell me that they would send out a commando to drive all the Caffres beyond the
+river if I do not give up a certain ·number of cattle that they demand." So Dr.
+Philip said to Macomo, "I am not come to talk to you about commandos, but
+I will speak to you about the Word of God, and the schools; and that you should
+bear everything till the governor comes.'' Macomo said, "Do write a letter today
+immediately to the governor, and tell him to come as quick as he can." The
+doctor said, "No, if I write now the letter will not be in time, but I will write
+next post-day;'' and Dr. Philip asked him who was the officer that told him so
+about the commando. He said, he did not know him, but he said some officers
+were together at Willshire.</p>
+<p>5017. Did Dr. Philip advise the Caffres to take up arms against the colony, or
+did he advise them to continue at peace?&#8212;Dr. Philip said, "Macomo, if these
+men drive you anywhere, and if they drive you about, do not do anything to resist;
+or if they burn your huts or shoot you, only submit; a good governor is coming, who
+will, I hope, redress your grievances."</p>
+<p>5018. Are you quite sure that Dr. Philip advised them to remain at peace? 
+Yes, quite sure.</p>
+<p>5019. Did Macomo say anything at that time about having had promises of a
+good governor and a good government for many years before; and did he then
+appeal to his burning huts?&#8212;I do not recollect that he used those words exactly;
+but he said "See my burning huts; tell this good governor to come as quick as
+he can, we have long enough heard of such things.</p>
+<p>5020. You have said that the Europeans have injured the Hottentots; have any
+of the boors at any time beaten or injured you?&#8212;When the white people began to
+ill-treat the Hottentots, they ran away to Dr. Vanderkernp, who was then at Graaff
+Reinet; the boors came to the landdrost; I think it was Meniers and Bresler.
+These men said "These people are human beings like yourselves; after they have
+served their time to their master, they can go out and hire themselves to another
+person.'' And the boors went back, and they made a commando; and they came
+to Graaff Reinet, and attacked Graaff Reinet, and shot on the government.” The
+Hottentots came to the side of the government. After the attack on Graaff Reinet
+the Hottentots ran away back again to the Zuurveldt.</p>
+<p>5021. Do you mean to say that the boors attacked the government because they
+would not permit the Hottentots to be made their slaves?&#8212;Yes.</p>
+<p>5022. And that that was the cause of the insurrection of the boors against the
+government?&#8212;Yes, it was about the Hottentots.</p>
+<p>5023. Have you ever been beaten or injured by the boors?&#8212;Yes, I have been
+beaten. </p>
+<p>5024. State any circumstances that have happened to yourself?&#8212;I was with my
+master Englebrack, and one day he sent me out to get his horses, and when I could
+not get them soon enough, he would beat me most severely, and I ran away and
+left all my things with him.</p>
+<p>5025. Do you consider that yourself and the other Hottentots were treated
+oppressively by the boors?&#8212;Yes; we have had a hard time of it.</p>
+<fw type="catch"><seg rend="right">5026. <space extent="1" unit="chars"/>Did</seg></fw>
+
+
+<pb facs="liv_020065_0005" n="0005"/>
+<fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">587</seg></fw>
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p>5026. Did you consider that the establishment of the Kat River settlement,
+and the alteration of the law that took place about the same time by the 50th
+Ordinance, was a great benefit to the Hottentots?&#8212;Yes; then the Hottentots
+began to live.</p>
+<p>5027. Have you ever been present with any patrols that have gone into Caffeland?&#8212;Yes, 
+with Mr. Warden, from the Kat River.</p>
+<p>5028. Have you ever been in any patrols from other parts of the colony? No.</p>
+<p>5029. <seg rend="italic">Mr. Bagshaw</seg>.] Who was the chief of your kraal on Bushman's River
+that you first remember?&#8212;Rinter; he was the greatest chief amongst the Hottentot
+nation.</p>
+<p>5030. Where was the kraal where you were born?&#8212;At the drift of the Bushman's
+River, above Mr. Ruitenbach's place.</p>
+<p>5031. Did you never hear that the boors were in the Zuurveldt before the Caffres
+were there?&#8212;I did not hear that the boors were there before the Caffres in the
+Zuurveldlt, but I heard that they fought together.</p>
+<p>5032. Did you never see the walls of the Dutch boors' houses which were
+destroyed by the Caffres in former years?&#8212;On the Graham's Town Hill, right
+down to the Fish River, but not the Zuurveldt.</p>
+<p>5033. You never saw any ruins of Dutch houses in the Zuurveldt?&#8212;Near to
+Graham's Town.</p>
+<p>5034. Is that in the Zuurveldt?&#8212;Yes, it is.</p>
+<p>5035. Then it appears the Caffres drove the Dutch from that particular spot?&#8212;They 
+used to fight there from time to time.</p>
+<p>5036. Did not the Caffres use to fight with the Hottentots also?&#8212;Not in the
+Zuurveldt.
+S03i. In other parts?&#8212;I cannot speak of what I heard from my ancestors.</p>
+<p>5038. Do not you know that as a fact beyond all doubt that the Caffres and
+Hottentots were natural enemies to each other?&#8212;I cannot speak of these things;
+it is doubtful.</p>
+<p>5039. You spoke of the Hottentot nation having been reduced considerably in
+numbers; were they not reduced in consequence of the wars with the Caffres? No,
+it is not in consequence of that.</p>
+<p>5040. Never?&#8212;No, we were destroyed day after day, till there was no deliverance.</p>
+<p>5041. By whom?&#8212;By the white man.</p>
+<p>5042. Beaten to death?&#8212;Tied with a reeme, or cord, and shot.</p>
+<p>5043. Will you state to the Committee some of the examples of the sort you
+have mentioned?&#8212;If one of the gentlemen in this room would accompany me
+back, I would bring him on the spot where I saw a great many of those people
+killed.</p>
+<p>5044. Where was the spot?&#8212;It was on the Bruintjes-hoog at a place called
+Luiskraal, on the Braak River. This was done by the Commandant Runsberg.</p>
+<p>5045. What was the time when that took place?&#8212;The time of the boors, and
+before the English came.</p>
+<p>5046. How many years ago?&#8212;It was, I think, not long before Dr. Vanderkemp
+came. When missionaries came, then we began to breathe; and then again
+when the 50th Ordinance came it bettered still more our condition.</p>
+<p>5047. <seg rend="italic">Chairman</seg>.] Do you consider that the missionaries have been the means
+of affording protection to the natives?&#8212;Yes; as they were white people, they could
+in some measure protect the Hottentots, and they taught the Hottentots, and they
+could remonstrate with the other white people and espouse our cause.</p>
+<p>5048. Is it, as far you know, the opinion of the whole body of the Hottentots
+and of the Caffres, as far as you know them, that they are under deep obligations to
+the missionaries, not only for teaching them but for befriending and protecting them
+against the aggressions of other Europeans?&#8212;Yes; we and they are sensible of our
+obligations to the missionaries for what they have done.</p>
+<p>5049. <seg rend="italic">Mr. Baines</seg>.] What was the reason that the Hottentots were treated in
+that cruel way?&#8212;I do not know; the white people must know that. I do not know
+that we gave them any cause to treat us so.</p>
+<p>5050. Cannot you imagine what was the cause?&#8212;I asked the old Hottentots,
+"Did you ever do any harm to the white people that they treat us thus?" and
+the old people said "No, we never did them any injury."</p>
+<p>5051. <seg rend="italic">Mr. Lushington</seg>.] Which white people do you mean, the Dutch or the</p>
+<fw type="catch"><seg rend="center">4 F 2</seg> <seg rend="right">English&#8212;</seg></fw>
+
+
+<pb facs="liv_020065_0006" n="0006"/>
+<fw><seg rend="left">588</seg> <seg rend="center caps">Minutes of Evidence Before Select Committee</seg></fw>
+<ab rend="left" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p rend="no-indent">English?&#8212;The boors; the English have only come lately, and begun at the Sunday's
+River, when they drove the Hottentots and Caffres from there .</p>
+<p>5052. <seg rend="italic">Mr. Baines</seg>.] Then this cruel treatment was from the Dutch?&#8212;Yes;
+they treated us so till the missionaries came; and when the missionaries took our part,
+the government summoned them to Cape Town to appear before them.</p>
+<p>5053. And since that time there have been no murders of the same kind?&#8212;There
+are no murders, but there has been hard oppression.</p>
+<p>5054. Do you know in what year the missionaries came?&#8212;I could not say
+that.</p>
+<p>5055. <seg rend="italic">Mr. Lushington</seg>.] Do you ascribe the cessation of this ill-treatment wholly
+to the intervention of the missionaries?&#8212;Yes; the missionaries being white people
+stated our grievances to the British Government, and since that time our grievances
+have been somewhat redressed.</p>
+<p>5056. Then in consequence of the representations of the missionaries to the
+government, that ill-treatment is put an end to?&#8212;Yes, it is a little better now.</p>
+<p>5057. <seg rend="italic">Mr. Bagshaw</seg>.] Then of late years, and at present, since the English and
+the missionaries have been there; the Hottentots and the other natives have had no
+cause of complaint?&#8212;Now it is worse than before; there is now another kind
+of oppression. They never complained, but now they complain.</p>
+<p>5058. Can you state any instances in which men have been killed of late years?&#8212;It 
+is not now murder; they do not murder, but it is like a newspaper that you
+put in the press and press down.</p>
+<p>5059. <seg rend="italic">Mr. Baines</seg>.] Will you explain what you mean by pressing down?&#8212;We
+went to the English Government for protection in the first place, because we
+expected that these people would have done us good. Now you often see a Hottentot
+who has spent his days in the service of the government, with only a skin
+on his back, walking about the streets; we are oppressed in every way.</p>
+<p>5060. In what manner do the English oppress the Hottentots?&#8212;They oppress
+them, for instance, in their wages; a man does not earn more than three or five
+skillings a day. In short they oppress them in every way.</p>
+<p>5061. <seg rend="italic">Mr. Bagshaw</seg>.] In the case of the Hottentots being oppressed, do they
+make complaint to the magistrates?&#8212;Yes; but the complaints of a Hottentot are
+never well received; he can never come into court and feel himself at home; when
+he tells his story, he stands as it were as at a distance.</p>
+<p>5062. Does he obtain any redress from the magistrate?&#8212;In a few cases. He
+has no one to speak for him. I have been asked, " What is this pressure?" I say,
+the Hottentot has no water; he has not a blade of grass; he has no lands; he
+has no wood; he has no place where he can sleep; all that he now has is the
+missionary and the Bible; and now that we are taught, the Bible is taken away
+from us, and they want to remove the missionaries from amongst us. And there is
+another law, the Vagrant Law, that they want to oppress us with, a law that presses
+down the Hottentots.</p>
+<p>5063. How do you know that they want to remove the missionaries?&#8212;They
+have already removed my missionary; I had 12 schools, and those schools have
+come to nothing.</p>
+<p>5064. What was the name of your missionary?&#8212;Mr. Read.</p>
+<p>5065. <seg rend="italic">Mr. Gladstone</seg>.] How have they removed the Bible away from you? There
+is no one that gets up on Sunday to speak and to explain the Bible, and to
+preach to us. </p>
+<p>5066. Have not you got your Bibles as you had them before?&#8212;If you had no
+English preachers in this country, what would you do with the Bible?</p>
+<p>5067. <seg rend="italic">Chairman</seg>.] Do you mean to say that the substance of your complaint
+is thss; that formerly the Hottentots possessed the land, the wood and the water;
+but that the Europeans have taken possession of their property, and have therefore
+reduced them to destitution?&#8212;Yes, that is the substance of my complaint;
+and what the English nation sent us was the missionaries, and we have all resolved
+to die with the missionaries at the institutions; they are our only friends.</p>
+<p>5068. Do they feel towards the missionaries great affection for the instruction
+they have given them, and the protection they have been the means of affording
+them?&#8212;Yes, I love the missionaries; but the missionaries tell us to ascribe all to
+the people of England; and I love the people in this country also.</p>
+<p>5069. <seg rend="italic">Mr. Gladstone</seg>.] What redress would you wish to have for the injuries
+you have described?&#8212;In the first place, I want my schools back and my missionaries;
+the children must be taught. We want education among the Hottentots.</p>
+<fw type="catch"><seg rend="right">5070. <space extent="1" unit="chars"/>Do</seg></fw>
+
+
+<pb facs="liv_020065_0007" n="0007"/>
+<fw><seg rend="center caps">On Aborigines (British Settlements).</seg> <seg rend="right">589</seg></fw>
+<ab rend="right" n="smaller"><seg rend="italic">Andrew Stoffel.</seg> <date when="1836-06-27">27 June 1836</date>.</ab>
+<p>5070. Do you want the land and the water and the wood back?&#8212;I am not man 
+enough, and I do not know where it would lead me, if I were to speak about the
+land and the water; but I would speak about the other first. </p>
+<p>5071. Have not they got land and water and wood on the Kat River?&#8212;Yes,
+only at the Kat River; and I thought so, the first time that government spoke
+about it, and after we had sown and begun to cultivate our ground, and to grow
+barley and oats. I hear now, that the government and the Caffres are quarrelling
+about the ground. We have not ground now; we are now between the Caffres
+and the government; we must know how they settle this. </p>
+<p>5072. Were the people contented and pleased before the quarrel between the
+Caffres and the government occurred?&#8212;At Kat River; we did not speak anything
+about ground at that time.</p>
+<p>5073. Do you mean that you were satisfied at Kat River before that?&#8212;Yes.</p>
+<p>5074. <seg rend="italic">Mr. Bagshaw</seg>.] You have said that all the good that was done to the
+Hottentots was done by the missionaries; have not you heard that other white men,
+Englishmen, have instructed the Hottentots in trade?&#8212;No, I never heard it;
+perhaps there may be some, or a few.</p>
+<p>5075. Are not the Hottentots employed by the English settlers, as well as the
+Dutch boors, as servants?&#8212;When the English settlers first came, the Hottentots
+said, ''Our friends have come;" and they used to work together, to assist each
+other; but I do not know what to say of them now.</p>
+<p>5076. How is it now?&#8212;I do not know how it is; but since the Hottentots went
+to the Kat River, and got ground, it appears that the English settlers are angry
+about it, and say everything that is bad against us.</p>
+<p>5077. Then you never experienced kindness from other persons than missionaries?&#8212;I 
+do not know; I did not hear and see it. ,</p>
+<p>5078. Then you never, in the whole course of your life, received any kindness
+from any person but missionaries?&#8212;I never heard that the settlers have done the
+Hottentots any good.</p>
+<p>5079. Did you go from the Kat River to Cape Town to embark?&#8212;Yes.</p>
+<p>5080. Who sent for you?&#8212;A gentleman, a printer from the Cape, came to our
+part, and I saw him, and saluted him. He said, '' I know you;" I said, "I do
+not know you." "This gentleman," said Dr. Phjlip, '' is going home in about
+two months."</p>
+<p>5081. What is the gentleman's name?&#8212;He is Mr. Fairbairn’s partner; when
+I heard him say that, I wished to come to England.</p>
+<p>5082. Did you get a pass from the governor?&#8212;I came to the governor at the
+Cape.</p>
+<p>5083. Diel you see him?&#8212;Ye.</p>
+<p>5084. What did he say to you?&#8212;He said, "As you have come so far, I cannot
+say anything against your going; you may go."</p>
+<p>5085. Did you get a pass from the frontier authorities to allow you to travel to
+Cape Town?&#8212;I came to the military post, and the commander of the post was not
+at home; and then I informed Mr. Blakeway of my intention to journey for
+a time.</p>
+<fw type="catch"><seg rend="left"><space extent="2" unit="chars"/>0.22.</seg> <seg rend="center">4 F 3</seg> <seg rend="right">5089. <space extent="1" unit="chars"/>The</seg></fw>
+
+<milestone unit="section" rend="line"/>
+	</div>
+
+	<div rend="center">
+<gap extent="13" unit="lines" agent="omitted-text"/><!-- Text from next section. AW -->
+<lb/>
+	</div>
+
+			</div>
+		</body>
+	</text>
+</TEI>

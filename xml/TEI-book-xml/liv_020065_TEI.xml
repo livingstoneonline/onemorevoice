@@ -15,11 +15,11 @@
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
 				<title type="alternative">“Minutes of Evidence” (Excerpt), 27 June 1836</title>
 				<!-- Title, date -->
-				<author>Donkin, Rufane, 1772-1841</author>
+				<author>Buxton, Fowell, 1786-1845</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first">Donkin, Rufane</author>
+				<author role="first">Buxton, Fowell</author>
 				<!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Rufane Donkin</author>
+				<author role="first-normalized">Fowell Buxton</author>
 				<!-- First author only: Forename Surname -->
 				<author>Read, James, Jr., c.1811-1894</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
@@ -28,6 +28,22 @@
 				<author>Stoffels, Andries, late 1770s-1837</author>
 				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
 				<author role="normalized">Andries Stoffels</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Baines, Edward, 1800-1890</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Edward Baines</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Bagshawe, John, 1784-1861</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">John Bagshawe</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Lushington, Charles, 1785-1866</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">Charles Lushington</author>
+				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+				<author>Gladstone, William, 1809-1898</author>
+				<!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<author role="normalized">William Gladstone</author>
 				<!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
 				<principal>Heather F. Ball</principal>
 				<principal>Adrian S. Wisnicki</principal>
@@ -95,9 +111,13 @@
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-					<author xml:id="RD">Donkin, Rufane, 1772-1841</author>
+					<author xml:id="FB">Buxton, Fowell, 1786-1845</author>
 					<author xml:id="JR">Read, James, Jr., c.1811-1894</author>
 					<author xml:id="AS">Stoffels, Andries, late 1770s-1837</author>
+					<author xml:id="EB">Baines, Edward, 1800-1890</author>
+					<author xml:id="JB">Bagshawe, John, 1784-1861</author>
+					<author xml:id="CL">Lushington, Charles, 1785-1866</author>
+					<author xml:id="WG">Gladstone, William, 1809-1898</author>
 					<!-- Same as <date> in previous section -->
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->

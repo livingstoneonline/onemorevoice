@@ -118,8 +118,8 @@ body{
 }
 @media only screen and (min-width: 992px){
 	.text-container{
-		border-right: 1px solid #bfbfbf;
-		border-left: 1px solid #bfbfbf;
+		/* border-right: 1px solid #bfbfbf;
+		border-left: 1px solid #bfbfbf; */
 		margin-top: 51.1px;
 		margin-bottom: 0;
 		/* the following tied to nav-wrapper */
@@ -608,13 +608,15 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-weight: 600;
 	text-align: center;
 	line-height: 1em;
-	color: #0b0b0b;
-	background-color: #e3e3e3;
-	border-bottom: 1px solid #737373;
+	color: #fff;
+	/* color: #0b0b0b; */
+	/* background-color: #e3e3e3; */
+	background-color: #204A79;
+	/* border-bottom: 1px solid #737373; */
 	height: 44px;
 	width: 100%;
 	top: 0;
-	position: fixed;
+	/* position: fixed; */
 }
 .navigation{
 	z-index: 20;
@@ -646,7 +648,8 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 .overlay .navigation a,
 .overlay .navigation a:hover,
 .overlay .navigation a:focus{
-	color: #0b0b0b;
+	/* color: #0b0b0b; */
+	color: #fff;
 	text-decoration: none;
 }
 .nav-wrapper,
@@ -771,17 +774,17 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	#nav3,
 	#nav9,
 	#nav11{
-		left: 3.9em;
+		left: 20px;
 		transform: translate(0, -50%);
 	}
 }
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	#nav3,
 	#nav9,
 	#nav11{
 		left: 3.7em;
 	}
-}
+} */
 #nav3 h1,
 #nav9 h1,
 #nav11 h1{
@@ -834,12 +837,13 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 }
 @media only screen and (min-width: 992px){
 	#nav4{
-		margin: 0 auto;
-		left: 0;
+		/* margin: 0 auto;
+		left: 0; */
+		right: 20px;
 		transform: translate(0);
 		visibility: visible;
 		display: flex;
-		justify-content: center;
+		/* justify-content: center; */
 	}
 }
 #nav4 .current{
@@ -1150,7 +1154,7 @@ footer{
 	text-align: center;
 	color: #fff;
 	background-color: #204A79;
-	border-bottom: 1px solid #0b0b0b;
+	/* border-bottom: 1px solid #0b0b0b; */
 	margin: 0 auto;
 	padding: 0;
 	clear: both;
@@ -1169,7 +1173,7 @@ footer p{
 	color: #0b0b0b;
 	background-color: #fff;
 	border-top: 1px solid #737373;
-	border-bottom: 1px solid #737373;
+	/* border-bottom: 1px solid #737373; */
 	margin: 0;
 	padding: 1em;
 }

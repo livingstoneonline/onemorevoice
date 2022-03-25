@@ -35,12 +35,13 @@
 		font-size: 2.3em;
 	}
 }
-.essay .image-wrapper h2.split{
+/* .essay .image-wrapper h2.split{
 	padding: 0;
 	background: none;
 	border: none;
 	outline: none;
-	max-width: 100%;
+	display: flex;
+	justify-content: space-evenly;
 }
 .essay .image-wrapper h2.split span{
 	background: #595959;
@@ -52,11 +53,9 @@
 	padding: .2em .4em;
 }
 .essay .image-wrapper h2.split > span:nth-child(1){
-	margin-right: 3em;
 }
 .essay .image-wrapper h2.split > span:nth-child(2){
-	margin-left: 3em;
-}
+} */
 .essay .image-wrapper h2.above{
 	top: 40%;
 	transform: translate(-50%, -40%);

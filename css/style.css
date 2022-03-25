@@ -1,27 +1,4 @@
-.essay .page-wrapper{
-	padding: 18px 1.2em 0;
-}
-.essay .image-wrapper:nth-child(1){
-	line-height: 1.5;
-}
-.essay .image-wrapper:nth-child(1) h2{
-	margin: 0 auto;
-	color: #e3e3e3;
-	background: #595959;
-	border-top: 3px #e3e3e3 solid;
-	border-left: 3px #e3e3e3 solid;
-	border-right: 3px #e3e3e3 solid;
-	border-bottom: 3px white solid;
-	outline: 2px solid #595959;
-	/* font-family: 'Architects Daughter', cursive; *//* one */
-	font-family: 'Courgette', cursive;
-	font-size: 3.5em;
-	font-style: italic;
-}
-.essay .image-wrapper:nth-child(1) img{
-	outline: 2px solid #595959;
-}
-/* .essay .image-wrapper h3{
+.essay .image-wrapper h3{
 	font-size: .8em;
 	line-height: 1.5;
 	color: #e3e3e3;
@@ -39,8 +16,8 @@
 	top: 65%;
 	left: 50%;
 	transform: translate(-50%, -65%);
-	-moz-transform: translate(-50%, -65%);
-	-webkit-transform: translate(-50%, -65%);
+	/* -moz-transform: translate(-50%, -80%);
+	-webkit-transform: translate(-50%, -80%); */
 	opacity: .93;
 }
 @media only screen and (min-width: 480px){
@@ -139,7 +116,7 @@
 }
 aside.sidebar h2{
 	border: none !important;
-} */
+}
 /* .essay .image-wrapper h2.top-title{
 	border-bottom: inherit;
 	border-radius: 6px 6px 0 0;

@@ -72,9 +72,9 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="https://onemorevoice.org/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="https://onemorevoice.org/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="https://onemorevoice.org/site.webmanifest"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0008" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0009" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0003" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/critical.css?=newVers_0009" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/style.css?=newVers_0010" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
 				</xsl:if>
@@ -82,7 +82,7 @@
 				<link rel="preload" as="script" href="https://onemorevoice.org/js/scripts.js?=newVers_0010"/>
 				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/critical.css?=newVers_0008"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/critical.css?=newVers_0009"/>
 				<script>
 					// Hides fallback nav so that it only appears if Javascript disabled
 					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
@@ -134,8 +134,8 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0009"/>
-				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0003"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/style.css?=newVers_0010"/>
+				<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/styleTEI.css?=newVers_0004"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="https://onemorevoice.org/css/rotate-toggle.css?=newVers_0002"/>
 				</xsl:if>
@@ -451,6 +451,9 @@
 			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2021')]">
 				<xsl:text>new dawn edition, 2021</xsl:text>
 			</xsl:if>
+			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2022')]">
+				<xsl:text>new dawn edition, 2022</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>
@@ -484,7 +487,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
@@ -504,7 +507,7 @@
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
 					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
@@ -765,7 +768,7 @@
 						<hr />
 						<!--<p class="back-button"><a class="art-return" href="https://onemorevoice.org/visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
 						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><xsl:value-of select="//teiHeader//authority"/></a>, an imprint of <a href="https://livingstoneonline.org/">Livingstone Online</a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

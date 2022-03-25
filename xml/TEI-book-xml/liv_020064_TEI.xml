@@ -2,18 +2,18 @@
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
-<?xml-stylesheet href="https://livingstoneonline.github.io/LEAP-XSLT/omv-integrated.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_020064">
 	<!-- Insert LEAP ID, e.g. "liv_020010 -->
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>“Special General Meeting of the London Missionary Society” (Excerpts)</title>
+				<title>“Special General Meeting of the London Missionary Society” (Excerpt)</title>
 				<!-- Title without date -->
 				<!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="normalized">‘Special General Meeting of the London Missionary Society’ (Excerpts)</title>
+				<title type="normalized">‘Special General Meeting of the London Missionary Society’ (Excerpt)</title>
 				<!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
-				<title type="alternative">“Special General Meeting of the London Missionary Society” (Excerpts), September 1836</title>
+				<title type="alternative">“Special General Meeting of the London Missionary Society” (Excerpt), September 1836</title>
 				<!-- Title, date -->
 				<author>Hankey, William Alers, 1771/2-1859</author>
 				<!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
@@ -67,7 +67,7 @@
 			<!-- Use this version of <sourceDesc> if published text -->
 			<sourceDesc>
 				<biblStruct type="journal">
-					<monogr>
+					<monogr n="narrow">
 						<!-- Default is journal/periodical article; if book section, change to <monogr n="book-section">; if columns are narrow, use <monogr n="narrow">; combinations also OK: <monogr n="book-section narrow"> -->
 						<title>The Missionary Magazine and Chronicle, Relating Chiefly to the Missions of the London Missionary Society</title>
 						<!-- Publication title: journal or book -->
@@ -89,7 +89,7 @@
 				<bibl type="sourceMetadata">
 					<!-- Title without date -->
 					<!-- Same as <title> above --> 
-					<title>“Special General Meeting of the London Missionary Society” (Excerpts)</title>
+					<title>“Special General Meeting of the London Missionary Society” (Excerpt)</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
@@ -134,28 +134,419 @@
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
 			<div>
 
-<!-- ndash: &#8211; -->
-<!-- mdash: &#8212; -->
+<!-- ndash: - -->
+<!-- mdash:&#8212;-->
 
 
 <!-- Anne, for printed texts, break up lines as they appear on the page, but no need to put <lb/> at the beginning of each line. -->
 
-
 <!-- For Tzatzoe, page 0002 (printed page 55), from "The Chairman then rose, and taking Jan Tzatzoe by the hand..." to page 0003 (printed page 56), ending with "I will not say more". -->
 
 <pb facs="liv_020064_0002" n="0002"/>
+
+<fw><seg rend="center caps">For September, 1836.</seg> <seg rend="right">55</seg></fw>
+
+	<div rend="center">
+<gap extent="18" unit="lines" agent="omitted-text"/><!-- Text from previous section. AW -->
 <lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+	</div>
+
+	<div>
+<cb rend="right"/>
+<p>The <hi rend="smallcaps">Chairman</hi> then rose, and taking
+<persName>Jan Tzatzoe</persName> by the hand, addressed him to
+the following effect:&#8212;In the name of this
+large meeting, which represents a body still
+greater than itself, extending throughout
+this kingdom, nay, I may say, throughout
+the world, I am happy in giving you the
+right hand of fellowship. I congratulate
+you, in their name, on what God has been
+pleased by his grace to do for you, and
+when you return, you will be accompanied
+with our warmest prayers that you may be
+upheld, and that you may grow in spiritual
+strength even unto the end.</p>
+<p><hi rend="smallcaps"><persName>Jan Tzatzoe</persName></hi> then stood forward, and
+was received with loud expressions of grateful
+joy. He addressed the meeting in the
+<term type="collective">Dutch</term> language to the following effect, <persName>Mr.
+Read, jun.</persName> acting as interpreter:&#8212;I am
+surprised to see so many people assembled
+in the house of God. I am happy to have
+the opportunity of seeing those <term type="collective">Christian</term>
+friends who sent out <persName>Dr. Vanderkemp</persName>, <persName>Dr. 
+Philip</persName>, <persName>Mr. Read</persName>, and all the other Missionaries.
+I thank God that you sent out
+these devoted men, who came to <country>South
+Africa</country> when we were shot with bullets,
+and when there was nothing but blood-shed
+in that ill-fated country. There was nothing
+to be seen but the bullet and assagai, the
+bow and the arrow; but the word of God 
+has continued to this day. You must not
+be wearied in well-doing; the work is still
+great, and the work must be spread in the<lb/>
 
 
+<pb facs="liv_020064_0003" n="0003"/>
+<fw><seg rend="left">56</seg> <seg rend="center caps">Missionary Magazine</seg></fw>
 
+<cb rend="left"/>
+world. God might convert the world by
+his own power, but he employs instruments
+to bring men to himself. You must send
+us schoolmasters and Missionaries, elevate
+us and do us good, and raise subscriptions
+for the <orgName>Missionary Society</orgName>. We cannot
+allow you to be at rest till this great work
+is finished. When we shall have received
+the word of God, and shall be in a condition
+to send out that word, we will form Missionary
+Societies, and we will send forth
+the word of God to others. God is great
+who has promised it, and he will extend his
+word in the world. God is about to do
+away with bloodshed and war, and every
+thing that is sinful. War is bad, and other
+things have been bad, but good is come out
+of evil. Who knows, if these things had not
+taken place, whether Missionaries would
+ever have gone out to that country? If
+we wish to serve God we must expect
+persecution; we must expect the wicked to
+oppose us; but God will surely finish his
+own work. When the word of God came
+among us we were like the wild <term type="animal">beasts</term>,
+we knew nothing! we were so wild that
+there was nothing but war and bloodshed.
+Every one was against his neighbour; there
+was no confidence between man and man,
+and each man tried to destroy his brother.
+The word of God has turned us; the word
+of God has brought peace, has reconciled
+one man to another, and in us is fulfilled
+that text of scripture, "The <term type="animal">wolf</term> shall dwell
+with the <term type="animal">lamb</term>." I thank the <term type="collective">English</term> nation
+for what we have received at their
+hands. You are our friends; we are your
+children. I am like one of your own children.
+I have been brought up under the
+laws of <country>England</country>, and I have enjoyed all the
+privileges of your missions. When we signed
+the treaty with the <orgName><term type="collective">British</term> Government</orgName> at
+the <geogName type="river"><term type="animal">Buffalo</term> River</geogName>, a paper was read, which
+told us that we then became the children of
+the king of <country>England</country>, and that we were now
+<term type="collective">British</term> subjects. If we are the children of
+<country>England</country>, and if one with yourselves, let us
+enjoy the privileges of <term type="collective">Britons</term>. Many
+<term type="collective">Englishmen</term> in the colonies are bad, but I
+will hardly believe that those <term type="collective">Englishmen</term>
+belong to you. You are a different race of
+men&#8212;they are <term type="collective">South Africans</term>&#8212;they are
+not <term type="collective">Englishmen</term>. I have now seen the
+<term type="collective">English</term> nation. I have travelled a little in
+this country: I have met with a friendly reception
+wherever I have gone; and I can
+say you are now my friends. I know my
+friends. Do not forget us. Our eyes are
+upon you. You are our parents. You
+sent us the word of God. I hope you will
+still continue to send out that word. I
+would thank you for ever having sent <persName>Dr.
+Philip</persName> to our country. This gentleman
+never sleeps in <bloc>Africa</bloc>; he is always doing
+good, he is always protecting us. He is
+<lb/>
+<lb/>
+
+<cb rend="right"/>
+our witness; he is a witness of the state of
+the colonies, and he is a witness of what
+God has done amongst us. He knows what
+we have suffered: he suffered with us. He,
+like his Master, went about doing good,
+although he was persecuted by man. Every
+man who wishes to do good must expect
+persecution. Could they destroy him, they
+would have done it; but they cannot, for he
+is in the hand of God. Very few people in
+the world love truth: they love darkness.
+Truth brings every thing to light; it reveals
+what is hidden. But there are very few
+people who will allow that they do not love
+the truth. They wish to take justice and
+injustice in one hand. Every man knows
+what is truth, but he wishes to mix the
+truth with falsehood. Some people are
+afraid to stand out for the truth; other
+people won't stand out for the truth; and
+others are ashamed of the truth; truth is
+the most important thing in the world. It
+is honest. Where there is no truth there
+is no true honour. We must all adore the
+truth&#8212;every man. The word of God is
+truth. The word of God tells us to do good;
+and the word of God tells us to stand on the
+truth. We ought to adhere to the truth, and
+to stand by the truth. I will not say more.</p>
+
+<!-- end of first extract - straight onto Stoffles extract AM -->
 <!-- For Stoffels, page 0003 (printed page 56), from "Andries Stoffles then rose to address the meeting..." to page 0005 (printed page 58), ending with "I am yours". -->
 
+<p><hi rend="smallcaps"><persName>Andries Stoffles</persName></hi> then rose to address
+the meeting. He was received with the
+most cordial greetings.</p>
+<p>The <hi rend="smallcaps">Chairman</hi>, taking him by the hand,
+thus addressed him:&#8212;In the name of this
+meeting, and of the <orgName><choice><sic>society</sic><corr>Society</corr></choice></orgName>, I congratulate
+you on your arrival in this country; but
+above all do I congratulate you on the
+great blessing which you received in your
+own country, through the instrumentality
+of the Missionaries sent by this <orgName><choice><sic>society</sic><corr>Society</corr></choice></orgName>. We
+are happy in seeing you as a visible token and
+evidence of what the power of God can do,
+and his grace perform in the hearts of men.</p>
+<p>The <hi rend="smallcaps"><term type="collective">Christian</term> <term type="collective">Hottentot</term></hi> then addressed
+the meeting in the <term type="collective">Dutch</term> language,
+<persName>Mr. Read</persName> acting as interpreter. He spoke
+nearly as follows:&#8212;God has done great
+things for <bloc>Africa</bloc>, for which we have
+reason to be glad. God has done great
+things for me, in that I am permitted to address
+you on this occasion. <persName>Dr. Vanderkemp</persName> 
+and <persName>Mr. Read</persName> told us that the <term type="collective">English</term>
+nation sent us the word of God. I will not
+dwell upon what we were before, but I will
+tell you what the Bible has done for us.
+There are three gentlemen in this country
+who are witnesses to what <term type="collective">Africans</term> were&#8212;
+<persName>Dr. Philip</persName>, <persName>Mr. Read</persName>, and <persName>Mr. Campbell</persName>.
+I wish to tell you what the Bible has done
+for <bloc>Africa</bloc>. What would have become of
+the <term type="collective">Hottentot</term> nation, and every <term type="collective">black man</term>
+in <country>South Africa</country>, had you kept the word of
+God to yourselves? When you received
+the word of God you thought of other nations
+who had not that word. When the<lb/>
+
+<pb facs="liv_020064_0004" n="0004"/>
+<fw><seg rend="center caps">For September, 1836.</seg> <seg rend="right">57</seg></fw>
+
+<cb rend="left"/>
+Bible came amongst us we were naked; we
+lived in caves and on the tops of the mountains;
+we had no clothes, we painted our
+bodies with red paint. At first we were
+surprised to hear the truths of the Bible.
+The Bible charmed us out of the caves,
+and from the tops of the mountains. The
+Bible made us throw away all our old
+customs and practices, and we lived among
+civilized men. We are tame men now.
+Now we know there is a God; now we
+know we are accountable creatures before
+God. But what was our state before the
+Bible came? We knew none of these
+things. We knew nothing about heaven.
+We knew not who made heaven and earth.
+The Bible is the only light for every man
+that dwells on the face of the earth. I
+thank God, in the name of every <term type="collective">Hottentot</term>&#8212;of 
+all the <term type="collective">Hottentots</term> in <country>South Africa</country>,
+that I have seen the face of <term type="collective">Englishmen</term>. I
+have been looking whether a <term type="collective">Hottentot</term>
+found his way to this meeting, but I have
+looked in vain: I am the only one. I
+have travelled with the Missionaries in
+taking the Bible to the <term type="collective">Bushmen</term>, and other
+nations. When the word of God has been
+preached, the <term type="collective">bushman</term> has thrown away his
+bow and arrows. I have accompanied the
+Bible to the <term type="collective">Caffre</term> nation, and when the
+Bible spoke, the <term type="collective">Caffre</term> threw away his shield
+and all his vain customs. I went to <placeName>Latakoo</placeName>,
+and they threw away all their evil
+works, they threw away their assagais, and
+became the children of God. The only way
+to reconcile man to man is to instruct man
+in the truths of the Bible. I say again,
+the Bible is the light, and where the Bible
+comes, the minds of men are enlightened.
+Where the Bible is not, there is nothing
+but darkness; it is dangerous, in fact, to
+travel through such a nation. Where the
+Bible is not, man does not hesitate to kill
+his fellow; he never even repents afterwards
+of having committed murder. I thank you
+to-day: I do nothing but thank you to-day.
+Are there any of the old <term type="collective">Englishmen</term> here
+who sent out the word of God? I give
+them my thanks : if there are not, I give it
+to their children. The Bible is still amongst
+us. I will not say much. I have told you that
+there are three witnesses who came with me,
+and they will speak of things. Your Missionaries,
+when they came to us, suffered
+with us, and they wept with us, and they
+struggled for us, till they obtained for us the
+charter of our liberties&#8212;the fiftieth ordinance.
+(The animation with which the last
+clause of this sentence was uttered by <persName>Andries
+Stoffles</persName>, produced a deep sensation
+throughout the whole auditory.) When the
+fiftieth ordinance was published, we were
+then brought to the light. Then did the
+young men begin to learn to write and read.
+Through that ordinance we got infant-
+schools, and our little infants have been instructed,
 <lb/>
-<p><!-- Full text --><!-- Use <lb/> for manuscripts; do not use <lb/> for printed texts, except empty lines. --></p>
+<lb/>
+
+<cb rend="right"/>
+and they are making progress in
+learning. You, the posterity of the old <term type="collective">Englishmen</term>,
+I address you on this occasion; I
+am standing on the bones of your ancestors,
+and I call upon you, their children, to-day,
+to come over and help us. Do you know
+what we want? We want schools and 
+school-masters&#8212;we want to be like yourselves.
+You see before you two men of two different
+nations. You who have put your money into
+the plates, but who never saw the fruits of
+your labours, I stand here before you as the
+fruit of your exertions. I thank you again, in
+the name of all the <term type="collective">Hottentots</term>, that I have
+been permitted to speak one word among
+you. But I cannot sit down without thanking
+you for having sent <persName>Dr. Philip</persName>. We
+owe much to <persName>Dr. Philip</persName> and to the Missionaries
+of this <orgName>Society</orgName>. What we have, we
+received by them; and it is the Missionaries
+of your <orgName>Society</orgName> that have done for us so
+many great things. I am to thank you
+that you did not keep <persName>Dr. Philip</persName> in this
+country. You sent him out young, and we
+have brought him back old. But he is like
+a young man in that country; he goes
+about to encourage schools, and to see that
+the work of education prospers. When
+<persName>Dr. Philip</persName> first commenced his travels, we
+did not see the end of his labours. When
+he visited the <term type="collective">Bushmen</term>, we did not know
+why he visited them. I call upon you in
+the name of <term type="collective">Hottentots</term>, send over men to
+help us. We want infant-schools. I see
+that the infant-schools will be the greatest
+blessing that has ever been conferred on
+<country>South Africa</country>. I will tell you a story about
+my little grandchild. The little girl came
+to me and said, "Grandpapa, do you know
+how to make cloth?" I said to her, "Do
+you mean to teach me? I have seen <term type="collective">white
+men</term>, and I do not know how it is made.
+How do you know?" She said, "If you
+come over to the schools to-morrow we will
+tell you, and we will show you how cloth is
+made." I felt rather unwilling, but I went
+to the school the next day, and I was quite
+surprised when I saw it. I have come to
+<country>England</country>, and I have no time to stop with
+you in this country; for I want to go back
+and tell the little children in <bloc>Africa</bloc> I have
+seen every thing you told me of. I hope
+you will not be wearied in well-sdoing.
+Perhaps some may say, "The <term type="collective">Hottentots</term>
+have had the word of God a long time; they
+can do well for themselves." But no, we
+cannot do without you. Consider us as
+your children, and we will call you our parents.
+I will not say much more, yet I must
+tell you of one gentleman in <bloc>Africa</bloc> to whom
+the <orgName>Society</orgName> owes much. There is a gentleman
+in <bloc>Africa</bloc> who has lately become acquainted
+with us. When we first saw that
+gentleman, we thought that he was only the
+friend of the <term type="collective">Hottentots</term>, but we find now
+that he is the friend of every man. But<lb/>
+<cb/>
 
 
-
+<pb facs="liv_020064_0005" n="0005"/>
+<fw><seg rend="left">58</seg> <seg rend="center caps">Missionary Magazine</seg></fw>
+<lb/>
+<cb rend="left"/>
+this man was quite different to every other
+man; for the <term type="collective">Hottentots</term> said, he is our
+friend; and the <term type="collective">Caffre</term> says, he is my
+friend; and the <term type="collective">English</term> settler says, he is
+my friend; and the <term type="collective">Dutch</term> <term type="collective">boor</term> says, he is
+my friend; so that man is the friend of all
+men. The name of that gentleman is <persName>Fairbairn</persName>.
+I can compare <persName>Mr. Fairbairn</persName> to
+nothing else but a man having a pair of
+scales in his hands, and he throws the white
+man in one scale and the black man in the
+other, and he makes them equal. I still
+continue to thank you, I thank you for
+every good <term type="collective">Englishman</term> who has left this
+country. I have only told you what the
+Bible has done for others, but I have not told
+you what it has done for my own soul. But
+I will not say any thing about myself; the
+three men whom I have named will tell you
+all about me. There is <persName>Dr. Philip</persName>, and
+<persName>Mr. Campbell</persName>, and <persName>Mr. Read</persName>. When your
+first Missionaries, <persName>Dr. Vanderkemp</persName> and
+<persName>Mr. Read</persName>, came to us, and when I heard
+the bell ring, I did not know what it was. I
+thought the people were going to church to
+have a meal together. I heard the minister
+preaching. I said, "I suppose he is counting."
+I listened, and said, "No, he is not
+counting." I came to church again the next
+day, when I heard the bell ring. The next
+time I came to a place of worship the
+preacher spoke of every thing that I had
+fone from my childhood. I said to myself,
+"This is very strange, surely my cousin
+must have gone to the Missionary and told
+him all about me." My cousin said, "No,
+I never spoke about you to the Missionary.
+The Bible is that thing that tells you all
+about your own heart." Blessed be God, he
+has opened my mind, and I have received
+the truths of the Bible, and acknowledge
+it to be the word of God. I am so convinced
+that the Bible is the word of God,
+and of the blessings that we derive from it,
+that were there any thing I could do for my
+own countrymen, I would do it; but it is
+the work of God to do it. My nation is
+poor and degraded, but the word of God is
+their stay and their hope. The word of God
+has brought my nation so far, that if a
+<term type="collective">Hottentot</term> young lady and an <term type="collective">English</term>
+young lady were walking with their faces
+from me, I would take them both to be
+<term type="collective">English</term> ladies. Do instruct us&#8212;I say
+again, do instruct us! Do not leave us to
+ourselves. Hold us under your arm. We
+are coming on; we are improving; we will
+soon all be one. The Bible makes all nations
+one. The Bible brings wild man and
+civilized together. The Bible is our light.
+The <term type="collective">Hottentot</term> nation was almost exterminated,
+but the Bible has brought the
+nations together, and here am I before you.
+You have the honour, I claim nothing.
+You give us your pence and your farthings,
+and here am I; I am yours.
+</p>
+	</div>
 			</div>
 		</body>
 	</text>

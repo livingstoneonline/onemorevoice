@@ -148,6 +148,129 @@ body{
 /* 1.2 Main Section and Related */
 
 header,
+header a{
+	text-decoration: none;
+	display: flex;
+	align-items: center;	
+}
+header{
+	color: #fff;
+	background-color: #0b0b0b;
+	height: 30px;
+	padding: 5px 10px 5px 7px;
+	justify-content: space-between;
+}
+@media only screen and (min-width: 480px){
+	header{
+		height: 37px;
+		padding: 7px 10px 7px 7px;
+	}
+}
+@media only screen and (min-width: 768px){
+	header{
+		height: 40px;
+		padding: 10px 10px 5px 10px;
+	}
+}
+header a:hover,
+header a:focus{
+	background: transparent;
+}
+/* OMV Icon */
+header a img{
+	border: none;
+	border-radius: 50%;
+}
+header a img{
+	margin: 0;
+	width: 29px;
+	height: 29px;
+}
+@media only screen and (min-width: 480px){
+	header a img{
+		width: 36px;
+		height: 36px;
+	}
+}
+@media only screen and (min-width: 768px){
+	header a img{
+		width: 39px;
+		height: 39px;
+	}
+}
+header a:hover img,
+header a:focus img{
+	border: none;
+	outline: 2px solid #fff;
+}
+/* OMV Logo */
+header a h1{
+	font-family: 'Merriweather', serif;
+	font-size: 1.4em;
+	font-weight: 700;
+	color: #fff;
+	white-space: nowrap;
+	margin: 0 0 0 5px;
+	padding: 1px 4px;
+}
+@media only screen and (min-width: 480px){
+	header a h1{
+		font-size: 1.5em;
+	}
+}
+@media only screen and (min-width: 768px){
+	header a h1{
+		font-size: 1.7em;
+		font-weight: 900;
+	}
+}
+header a:hover h1,
+header a:focus h1{
+	text-decoration: underline;
+}
+/* Hamburger Menu */
+header button{
+	color: #fff;
+	background: transparent;
+	border: none;
+	width: 32px;
+	height: 28px;
+}
+@media only screen and (min-width: 480px){
+	header button{
+		margin-right: .6em;
+	}
+}
+@media only screen and (min-width: 768px){
+	header button{
+		margin-right: 1.2em;
+	}
+}
+@media only screen and (min-width: 992px){
+	header button{
+		display: none;
+		visibility: hidden;
+	}
+}
+header button .fa-bars{
+	font-size: 1.5em;
+}
+@media only screen and (min-width: 480px){
+	header button .fa-bars{
+		font-size: 1.7em;
+	}
+}
+@media only screen and (min-width: 768px){
+	header button .fa-bars{
+		font-size: 1.9em;
+	}
+}
+header button:hover,
+header button:focus{
+	outline: 2px solid #fff;
+}
+
+/* header,
 .transcription header{
 	text-align: center;
 	margin: 44px auto 0;
@@ -171,7 +294,7 @@ header,
 	.transcription header{
 		margin-top: 0;
 	}
-}
+} */
 main,
 aside.credits#credits-div,
 aside.credits#credits2-div,
@@ -598,462 +721,6 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 } */
 
 
-/* 1.7. Navigation  */
-
-/* 1.7.1. Main Navigation */
-
-.navigation,
-.navigation.fallback{
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 600;
-	text-align: center;
-	line-height: 1em;
-	color: #0b0b0b;
-	background-color: #e3e3e3;
-	border-bottom: 1px solid #737373;
-	height: 44px;
-	width: 100%;
-	top: 0;
-	position: fixed;
-}
-.navigation{
-	z-index: 20;
-}
-.navigation.fallback{
-	z-index: 19;
-}
-.overlay .navigation{
-	position: absolute;
-}
-@media only screen and (min-width: 480px){
-	.navigation,
-	.navigation.fallback,
-	.overlay .navigation{
-		height: 49.5px;
-	}
-}
-@media only screen and (min-width: 768px){
-	.navigation,
-	.navigation.fallback,
-	.overlay .navigation{
-		height: 52.5px;
-	}
-}
-.navigation a,
-.navigation a:hover,
-.navigation a:focus,
-.overlay .navigation a,
-.overlay .navigation a,
-.overlay .navigation a:hover,
-.overlay .navigation a:focus{
-	color: #0b0b0b;
-	text-decoration: none;
-}
-.nav-wrapper,
-.overlay .nav-wrapper{
-	height: 100%;
-	position: relative;
-	display: flex;
-	align-items: center;
-}
-@media only screen and (min-width: 992px){
-	.nav-wrapper{
-		min-width: 992px;
-		max-width: 1200px;
-		left: 50%;
-		transform: translate(-50%, 0);
-		display: flex;
-		flex-direction: row-reverse;
-	}
-}
-/* Skip to main content */
-/* nav1 adapted from https://webaim.org/techniques/skipnav/ */
-#nav1 a{
-	font-size: 1em;
-	text-decoration: underline;
-	color: #fff;
-	background: #0b0b0b;
-	border-right: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	border-bottom-right-radius: 10px;
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	padding: 1em .55em;
-	top: -52px;
-	left: 0;
-	position: absolute;
-	z-index: 50;
-	transition: top .8s ease-out;
-	-webkit-transition: top .8s ease-out;
-}
-#nav1 a:focus{
-	outline-color: transparent;
-	top: 0px;
-	left: 0px;
-	position: fixed;
-	transition: top .4s ease-in;
-	-webkit-transition: top .4s ease-in;
-}
-@media only screen and (min-width: 768px){
-	#nav1 a:focus{
-		position: absolute;
-	}
-}
-/* OMV Icon */
-#nav2,
-#nav8,
-#nav10{
-	left: .5em;
-	position: absolute;
-	display: inline-block;
-}
-#nav2,
-#nav8,
-#nav10{
-	top: 50%;
-	transform: translate(0, -50%);
-}
-#nav2 img,
-#nav8 img,
-#nav10 img{
-	height: 1.8em;
-	width: 1.8em;
-	vertical-align: middle;
-	margin: 0;
-	padding: .15em;
-}
-@media only screen and (min-width: 480px){
-	#nav2 img,
-	#nav8 img,
-	#nav10 img{
-		height: 2.2em;
-		width: 2.2em;
-	}
-}
-@media only screen and (min-width: 768px){
-	#nav2 img,
-	#nav8 img,
-	#nav10 img{
-		height: 2.4em;
-		width: 2.4em;
-	}
-}
-#nav2 img,
-#nav2:hover img,
-#nav2:focus img,
-#nav8 img,
-#nav8:hover img,
-#nav8:focus img,
-#nav10 img,
-#nav10:hover img,
-#nav10:focus img{
-	border: none;
-}
-#nav2:hover img,
-#nav2:focus img,
-#nav8:hover img,
-#nav8:focus img,
-#nav10:hover img,
-#nav10:focus img{
-	outline: 2px solid #204A79;
-}
-/* OMV Logo */
-#nav3,
-#nav9,
-#nav11{
-	white-space: nowrap;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-}
-@media only screen and (min-width: 768px){
-	#nav3,
-	#nav9,
-	#nav11{
-		left: 3.9em;
-		transform: translate(0, -50%);
-	}
-}
-@media only screen and (min-width: 992px){
-	#nav3,
-	#nav9,
-	#nav11{
-		left: 3.7em;
-	}
-}
-#nav3 h1,
-#nav9 h1,
-#nav11 h1{
-	font-family: 'Merriweather', serif;
-	font-size: 1.4em;
-	font-weight: 700;
-	margin: 0;
-}
-@media only screen and (min-width: 480px){
-	#nav3 h1,
-	#nav9 h1,
-	#nav11 h1{
-		font-size: 1.5em;
-	}
-}
-@media only screen and (min-width: 768px){
-	#nav3 h1,
-	#nav9 h1,
-	#nav11 h1{
-		font-family: 'Merriweather', serif;
-		font-size: 1.7em;
-		font-weight: 900;
-	}
-}
-#nav3 h1:hover,
-#nav3:focus-within h1,
-#nav9 h1:hover,
-#nav9:focus-within h1,
-#nav11 h1:hover,
-#nav11:focus-within h1{
-	text-decoration: underline;
-}
-/* Main Menu */
-/* nav4 adapted from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
-/* nav4 dropdown menu adapted from https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/ */
-/* nav4 idea for checkboxes that act like radio buttons adapted from https://stackoverflow.com/questions/42870002/how-to-uncheck-a-checkbox-when-another-one-is-checked */
-#nav4{
-	white-space: nowrap;
-	line-height: 1em;
-	text-align: center;
-	list-style: none;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	left: 50%;
-	transform: translate(-50%);
-	align-items: center;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	#nav4{
-		margin: 0 auto;
-		left: 0;
-		transform: translate(0);
-		visibility: visible;
-		display: flex;
-		justify-content: center;
-	}
-}
-#nav4 .current{
-	border-bottom: 3px solid #204a79;
-}
-#nav4 li{
-	font-size: 1.05em;
-	height: 100%;
-	position: relative;
-	display: flex;
-	align-items: center;
-}
-#nav4 li a{
-	padding: 17px 13px;
-}
-/* main nav links */
-#nav4 li:hover,
-#nav4 li:focus,
-#nav4 li:focus-within,
-#nav4 li a:hover,
-#nav4 li a:focus,
-[type="checkbox"]:checked + label{
-	color: #0b0b0b;
-	background-color: #c4d8ef;
-}
-#nav4 li .dropdown .vh{
-	position: absolute !important;
-	/* !important in original code */
-	clip: rect(1px, 1px, 1px, 1px);
-	overflow: hidden;
-}
-#nav4 li .dropdown label{
-	display: inline-block;
-}
-label::after,
-a::after{
-	font-family: 'Font Awesome 5 Free';
-}
-label::after{
-	content: '\f0da';
-	width: 0.5em;
-	display: inline-block;
-}
-input:checked + label::after{
-	content: '\f0d7';
-}
-#nav4 li .dropdown label.dropbtn{
-	padding: 19px 13px;
-	border: none;
-}
-:checked + label .expanded-text{
-	display: inline;
-}
-:checked + label .collapsed-text{
-	display: none;
-}
-[type="checkbox"]:not(:checked) + label .expanded-text{
-	display: none;
-}
-[type="checkbox"]:not(:checked) + label .collapsed-text{
-	display: inline;
-}
-.dropdown-content{
-	display: none;
-}
-:checked ~ .dropdown-content{
-	display: block;
-}
-.dropdown-content a{
-	white-space: nowrap;
-	display: block;
-}
-#nav4 li .dropdown .dropdown-content ul{
-	text-align: left;
-	min-width: 150px;
-	border-right: 1px solid rgba(0, 0, 0, 0.24);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
-	border-left: 1px solid rgba(0, 0, 0, 0.24);
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	padding: 0;
-	z-index: 15;
-	position: absolute;
-}
-#nav4 li .dropdown .dropdown-content ul li{
-	font-size: .9em;
-	background-color: #fff;
-	display: block;
-}
-#nav4 li .dropdown .dropdown-content ul li:last-of-type{
-	padding-bottom: .2em;
-}
-#nav4 li .dropdown .dropdown-content ul li:hover,
-#nav4 li .dropdown .dropdown-content ul li:hover a,
-#nav4 li .dropdown .dropdown-content ul li:focus,
-#nav4 li .dropdown .dropdown-content ul li:focus-within a{
-	background-color: #bfbfbf;
-}
-#nav4 li .dropdown .dropdown-content ul li a,
-#nav4 li .dropdown .dropdown-content ul li a:visited{
-	color: #0b0b0b;
-	padding: .8em;
-}
-#nav4 li .dropdown .dropdown-content ul li:last-of-type a,
-#nav4 li .dropdown .dropdown-content ul li:last-of-type a:visited{
-	padding-bottom: .9em;
-}
-#nav4 li .dropdown .dropdown-content ul li a:hover{
-	color: #0b0b0b;
-}
-/* HTML hierarchy for nav 4 */
-/*
-.navigation
-.navigation .nav-wrapper
-.navigation .nav-wrapper ul#nav4
-.navigation .nav-wrapper ul#nav4 li 
-.navigation .nav-wrapper ul#nav4 li a
-.navigation .nav-wrapper ul#nav4 li .dropdown
-.navigation .nav-wrapper ul#nav4 li .dropdown input .vh
-.navigation .nav-wrapper ul#nav4 li .dropdown label.dropbtn
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li 
-.navigation .nav-wrapper ul#nav4 li .dropdown .dropdown-content ul li a
-*/
-
-/* Hamburger Menu & Close X; Fallback Menu */
-#nav5,
-#nav7 .close,
-#nav12{
-	color: #0b0b0b;
-	text-decoration: none;
-	border: none;
-	background: transparent;
-	height: 32px;
-	top: 50%;
-	position: absolute;
-	transform: translate(0, -50%);
-}
-#nav5,
-#nav7 .close{
-	width: 36px;
-	right: .5em;
-}
-#nav12{
-	margin-right: -.1em;
-	line-height: normal;
-	width: 35px;
-	right: .45em;
-}
-@media only screen and (min-width: 480px){
-	#nav5,
-	#nav7 .close{
-		right: 1.5em;
-	}
-	#nav12{
-		right: 1.2em;
-	}
-}
-@media only screen and (min-width: 768px){
-	#nav5,
-	#nav7 .close{
-		right: 2em;
-	}
-	#nav12{
-		right: 1.5em;
-	}
-}
-@media only screen and (min-width: 992px){
-	#nav5,
-	#nav7 .close{
-		display: none;
-		visibility: hidden;
-	}
-	#nav12{
-		display: block;
-		visibility: visible;
-	}
-}
-#nav5 .fa-bars,
-#nav7 .close .fa-times{
-	font-size: 1.6em;
-}
-#nav12 .fa-bars{
-	font-size: 1.1em;
-	padding: 7px 0;
-}
-@media only screen and (min-width: 320px){
-	#nav5 .fa-bars,
-	#nav7 .close .fa-times{
-		font-size: 1.8em;
-	}
-	#nav12 .fa-bars{
-		font-size: 1.23em;
-		padding: 6px 0;
-	}
-}
-#nav5:hover,
-#nav5:focus,
-#nav7 .close:hover,
-#nav7 .close:focus,
-#nav12:hover,
-#nav12:focus{
-	outline: 2px solid #204A79;
-}
-/* The following prevents the overlay from appearing above 992px */
-@media only screen and (min-width: 992px){
-	#nav7{
-		display: none !important;
-		visibility: hidden;
-	}
-}
-
 /* 1.7.3. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
@@ -1165,11 +832,16 @@ footer a,
 footer a:visited{
 	color: #fff;
 }
+footer a:hover,
+footer a:focus{
+	color: #a83c37;
+	background-color: #E3E3E3;
+} /*chg*/
 footer p{
-	color: #0b0b0b;
+	/* color: #0b0b0b;
 	background-color: #fff;
 	border-top: 1px solid #737373;
-	border-bottom: 1px solid #737373;
+	border-bottom: 1px solid #737373; */ /*chg*/
 	margin: 0;
 	padding: 1em;
 }
@@ -1178,14 +850,14 @@ footer p{
 		padding: 1em 1.5em;
 	}
 }
-footer p a,
+/* footer p a,
 footer p a:visited{
 	color: #204A79;
 }
 footer p a:hover,
 footer p a:focus{
 	color: #a83c37;
-}
+} */ /*chg*/
 footer p .site-detail{
 	line-height: 1.875em;
 	padding: 0 .2em;
@@ -1207,7 +879,7 @@ footer p .site-detail:last-child::after{
 		white-space: nowrap;
 	}
 }
-.fat-footer{
+/* .fat-footer{
 	margin: 0 auto;
 	padding: 1em;
 	width: fit-content;
@@ -1274,7 +946,7 @@ li.section > ul > li > a{
 .fat-footer a:focus{
 	color: #a83c37;
 	background-color: #E3E3E3;
-}
+} */ /*chg*/
 
 /* 1.9. Sidebar */
 
@@ -1406,6 +1078,7 @@ aside.sidebar .external li a img:focus{
 .button-container{
 	display: flex;
 	align-items: baseline;
+	justify-content: center; /*chg*/
 	max-height: 70px;
 }
 @media only screen and (min-width: 768px){

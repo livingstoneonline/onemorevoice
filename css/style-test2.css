@@ -748,7 +748,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
-.overlay{
+/* .overlay{
 	font: 16px 'Libre Franklin', sans-serif;
 	text-align: center;
 	color: #0b0b0b;
@@ -757,11 +757,11 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	width: 100%;
 	left: 0;
 	top: 0;
-	position: fixed; /* Stay in place */
-	z-index: 100; /* Sit on top */
-	overflow-x: hidden; /* Disable horizontal scroll */
+	position: fixed;
+	z-index: 100;
+	overflow-x: hidden;
 	overflow-y: scroll;
-	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	transition: 0.5s;
 	display: none;
 	visibility: hidden;
 	opacity: 1;
@@ -828,7 +828,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 		float: left;
 		margin: 0 3em;
 	}
-}
+} */
 
 
 /* 1.8. Footer & Fat Footer */
@@ -1105,15 +1105,17 @@ aside.sidebar .external li a img:focus{
 /* 1.10.1 Download Page/Image Button */
 
 .button-container{
-	display: flex;
-	justify-content: center;
 	max-height: 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
 @media only screen and (min-width: 768px){
 	.button-container{
 		margin: 0 0 1.5em 0;
-		display: flex;
-		text-align: center;
 	}
 }
 .page-button-container,
@@ -1130,14 +1132,14 @@ aside.sidebar .external li a img:focus{
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	margin: 0 .8em;
+	margin: 0 .5sem;
 	padding: .375em .5em;
 }
 .button-container a.page-button:hover,
 .button-container a.page-button:focus{
-	color: #204A79;
+	color: #276617;
 	background-color: #e3e3e3;
-	outline: 2px solid #204A79;
+	outline: 2px solid #276617;
 }
 .button-container a.external{
 	height: fit-content;
@@ -1240,7 +1242,7 @@ button{
 	max-width: 170px;
 	/* float: left; */
 	/* overflow: hidden !important; */
-	margin: 0 .3em -.2em;
+	margin: 0 .5em -.2em;
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{

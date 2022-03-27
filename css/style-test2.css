@@ -157,19 +157,18 @@ header{
 	color: #fff;
 	background-color: #0b0b0b;
 	height: 30px;
-	padding: 5px 10px 5px 7px;
-	justify-content: space-between;
+	padding: 5px 10px;
 }
 @media only screen and (min-width: 480px){
 	header{
 		height: 37px;
-		padding: 7px 10px 7px 7px;
+		padding: 7px 10px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
 		height: 40px;
-		padding: 10px 10px 5px 10px;
+		padding: 5px 10px;
 	}
 }
 header a:hover,
@@ -200,8 +199,16 @@ header a img{
 }
 header a:hover img,
 header a:focus img{
-	border: none;
 	outline: 2px solid #fff;
+}
+.header-container{
+	margin: 0 auto;
+	width: 100%;
+	min-width: 992px;
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 /* OMV Logo */
 header a h1{
@@ -844,6 +851,9 @@ footer p{
 	border-bottom: 1px solid #737373; */ /*chg*/
 	margin: 0;
 	padding: 1em;
+	margin: 0 auto;
+	min-width: 992px;
+	max-width: 1200px;
 }
 @media only screen and (min-width: 768px){
 	footer p{

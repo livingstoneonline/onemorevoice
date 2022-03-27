@@ -138,7 +138,8 @@ body{
 @media only screen and (min-width: 992px){
 	.page-wrapper{
 		margin: 0 auto;
-		padding: 36px 1.2em 0;
+		/* padding: 36px 1.2em 0; */ /*chg*/
+		padding: 0 1.2em;
 		width: 100%;
 		max-width: 900px;
 	}
@@ -1097,15 +1098,34 @@ aside.sidebar .external li a img:focus{
 
 .button-container{
 	display: flex;
-	align-items: baseline;
-	justify-content: center; /*chg*/
+	justify-content: center;
+	/* align-items: baseline; */
 	max-height: 70px;
 }
 @media only screen and (min-width: 768px){
 	.button-container{
 		margin: 0 0 1.5em 0;
 		display: flex;
+		text-align: center;
 	}
+}
+.button-container a.external{
+	height: fit-content;
+}
+.button-container a.external:hover,
+.button-container a.external:focus{
+	background: transparent;
+}
+.button-container a.external i{
+	font-size: 1.6em;
+	margin: 0 .25em;
+	padding: .125em .25em;
+}
+.button-container a.external:hover i,
+.button-container a.external:focus i{
+	color: #204A79;
+	background-color: #e3e3e3;
+	outline: 2px solid #204A79;
 }
 .download{
   display: none;
@@ -1188,9 +1208,9 @@ button{
 }
 .translate{
 	max-width: 170px;
-	float: left;
+	/* float: left; */
 	/* overflow: hidden !important; */
-	margin-bottom: -.2em;
+	margin: 0 .5em -.2em;
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{

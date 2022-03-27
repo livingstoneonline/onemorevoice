@@ -1116,6 +1116,29 @@ aside.sidebar .external li a img:focus{
 		text-align: center;
 	}
 }
+.page-button-container,
+.icon-container{
+	white-space: nowrap;
+}
+.button-container a.page-button{
+	font-size: .85em;
+	font-weight: 600;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background-color: #276617;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: 0 .8em;
+	padding: .375em .5em;
+}
+.button-container a.page-button:hover,
+.button-container a.page-button:focus{
+	color: #204A79;
+	background-color: #e3e3e3;
+	outline: 2px solid #204A79;
+}
 .button-container a.external{
 	height: fit-content;
 }
@@ -1125,7 +1148,7 @@ aside.sidebar .external li a img:focus{
 }
 .button-container a.external i{
 	font-size: 1.6em;
-	margin: 0 .25em;
+	margin: 0 .15em;
 	padding: .125em .25em;
 }
 .button-container a.external:hover i,
@@ -1217,7 +1240,7 @@ button{
 	max-width: 170px;
 	/* float: left; */
 	/* overflow: hidden !important; */
-	margin: 0 .5em -.2em;
+	margin: 0 .3em -.2em;
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{

@@ -1105,34 +1105,29 @@ aside.sidebar .external li a img:focus{
 /* 1.10.1 Download Page/Image Button */
 
 .button-container{
-	max-height: 70px;
+	font: 16px 'Source Sans Pro', sans-serif;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	align-content: stretch;
+	/* max-height: 70px; */
 }
 @media only screen and (min-width: 768px){
 	.button-container{
 		margin: 0 0 1.5em 0;
 	}
 }
-.page-button-container,
-.icon-container{
-	white-space: nowrap;
-}
 .button-container a.page-button{
-	font-size: .85em;
+	font-size: .95em;
 	font-weight: 600;
-	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	color: #fff;
 	background-color: #276617;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	margin: 0 .5sem;
+	margin: 0 .6em;
 	padding: .375em .5em;
 }
 .button-container a.page-button:hover,
@@ -1149,7 +1144,7 @@ aside.sidebar .external li a img:focus{
 	background: transparent;
 }
 .button-container a.external i{
-	font-size: 1.6em;
+	font-size: 1.8em;
 	margin: 0 .15em;
 	padding: .125em .25em;
 }

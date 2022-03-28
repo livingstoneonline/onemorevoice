@@ -63,7 +63,7 @@ also see 2.9 for manuscript colors
 
 /* 
 test colors
-orange 1: #FFA630; 
+orange 1: #FFA630;
 orange 2: #FAA916;
 green: #058C42;
 pine: #72A98F;
@@ -1119,7 +1119,8 @@ aside.sidebar .external li a img:focus{
 	}
 } */
 .button-container .page-button-container,
-.button-container .icon-container{
+.button-container .icon-container,
+.button-container .map-container{
 	display: flex;
 	align-items: start;
 	margin: .5em 0;
@@ -1130,7 +1131,7 @@ aside.sidebar .external li a img:focus{
 	white-space: nowrap;
 	text-decoration: none;
 	color: #fff;
-	background-color: #276617;
+	background-color: #1B651C;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -1139,9 +1140,9 @@ aside.sidebar .external li a img:focus{
 }
 .button-container a.page-button:hover,
 .button-container a.page-button:focus{
-	color: #276617;
+	color: #1B651C;
 	background-color: #e3e3e3;
-	outline: 2px solid #276617;
+	outline: 2px solid #1B651C;
 }
 .button-container a.external{
 	height: fit-content;
@@ -1160,6 +1161,25 @@ aside.sidebar .external li a img:focus{
 	color: #204A79;
 	background-color: #e3e3e3;
 	outline: 2px solid #204A79;
+}
+.button-container a.map{
+	font-size: .95em;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+	color: #fff;
+	background-color: #595959;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: .3em .6em 0;
+	padding: .3em .5em;
+}
+.button-container a.map:hover,
+.button-container a.map:focus{
+	color: #595959;
+	background-color: #e3e3e3;
+	outline: 2px solid #858585;
 }
 .download{
   display: none;

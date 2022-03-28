@@ -368,7 +368,7 @@ main.journal#journal-div{
 @media only screen and (min-width: 768px){
 	main{
 		font-size: 1.2em;
-		padding: 1em 0;
+		padding: .5em 0 1em;
 	}
 	aside.credits#credits-div{
 		font-size: 1.15em;
@@ -1110,25 +1110,32 @@ aside.sidebar .external li a img:focus{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	/* max-height: 70px; */
 }
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
 	.button-container{
 		margin: 0 0 1.5em 0;
 	}
+} */
+.button-container .page-button-container,
+.button-container .icon-container{
+	display: flex;
+	align-items: start;
+	margin: .5em 0;
 }
 .button-container a.page-button{
 	font-size: .95em;
 	font-weight: 600;
+	white-space: nowrap;
 	text-decoration: none;
 	color: #fff;
 	background-color: #276617;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	margin: 0 .6em;
-	padding: .375em .5em;
+	margin: .3em .6em 0;
+	padding: .3em .5em;
 }
 .button-container a.page-button:hover,
 .button-container a.page-button:focus{
@@ -1237,7 +1244,7 @@ button{
 	max-width: 170px;
 	/* float: left; */
 	/* overflow: hidden !important; */
-	margin: 0 .5em -.2em;
+	margin: .5em .7em;
 }
 /* Included in criticalTEI CSS, start */
 #google_translate_element{

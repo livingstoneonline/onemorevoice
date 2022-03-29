@@ -1155,7 +1155,8 @@ aside.sidebar .external li a img:focus{
 .translate{
 	margin: .5em .7em;	
 }
-.button-container a.page-button{
+.button-container button.page-button{
+	all: unset;
 	font-size: .95em;
 	font-weight: 600;
 	white-space: nowrap;
@@ -1168,8 +1169,8 @@ aside.sidebar .external li a img:focus{
 	margin: .3em .6em 0;
 	padding: .3em .5em;
 }
-.button-container a.page-button:hover,
-.button-container a.page-button:focus{
+.button-container button.page-button:hover,
+.button-container button.page-button:focus{
 	color: #1B651C;
 	background-color: #e3e3e3;
 	outline: 2px solid #1B651C;
@@ -1909,12 +1910,14 @@ section.archival-text .no-image .content{
 
 /* 1.15 Page Specific Coding */
 
-
 .overview-paragraph{
-	background: #e3e3e3;
-	border-left: 7px solid #204A79;
+	/* background: #e3e3e3; */
+	border-top: 7px solid #e68300;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
 	margin: 0 auto;
-	padding: .5em .5em .5em .7em;	
+	padding: .7em .7em .5em;	
 }
 @media only screen and (min-width: 480px){
 	.overview-paragraph{
@@ -1922,8 +1925,31 @@ section.archival-text .no-image .content{
 	}
 }
 .overview-paragraph h2{
+	font-size: 1.6em;
 	font-family: 'Merriweather', serif;
 	color: #0b0b0b;
+}
+.overview-paragraph button.mission-button{
+	all: unset;
+	font-size: .95em;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+	line-height: 1em;
+	color: #fff;
+	background-color: #e68300;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: 0 auto;
+	padding: .3em .5em;
+	display: block;
+}
+.overview-paragraph button.mission-button:hover,
+.overview-paragraph button.mission-button:focus{
+	color: #e68300;
+	background-color: #e3e3e3;
+	outline: 1px solid #e68300;
 }
 
 /* The following is used on project_design.html */

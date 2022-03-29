@@ -1,451 +1,3 @@
-/* The following is used on index.html */
-
-.overview-paragraph{
-	border-top: 7px solid #e3e3e3;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 auto;
-	padding: .7em .7em .5em;	
-}
-@media only screen and (min-width: 480px){
-	.overview-paragraph{
-		max-width: 660px;
-	}
-}
-.overview-paragraph h2{
-	font-size: 1.6em;
-	font-family: 'Merriweather', serif;
-	color: #424242;
-}
-.overview-paragraph button.mission-button{
-	all: unset;
-	font-size: .95em;
-	font-weight: 600;
-	white-space: nowrap;
-	text-decoration: none;
-	line-height: 1em;
-	color: #fff;
-	background-color: #204A79;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 auto;
-	padding: .3em .5em;
-	display: block;
-}
-.overview-paragraph button.mission-button:hover,
-.overview-paragraph button.mission-button:focus{
-	color: #204A79;
-	background-color: #e3e3e3;
-	outline: 1px solid #204A79;
-}
-
-section#primary{
-
-}
-
-.zoomcasts.cluster main section h2{
-	color: white;
-	background: #cb6948;
-}
-.cluster main{
-	margin: 47px auto 0;
-	padding: 0 .5em 0;
-	max-width: 100%;
-	position: relative;
-}
-@media only screen and (min-width: 480px){
-	.cluster main{
-		margin-top: 47px;
-		padding: .5em 1em 0;
-	}
-}
-@media only screen and (min-width: 768px){
-	.cluster main{
-		margin-top: 51px;
-		max-width: 700px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.cluster main{
-		margin-top: 63px;
-		padding: 0 1em;
-		max-width: 1366px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: stretch;
-	}
-}
-.cluster main section{
-	text-align: center;
-	border: 1px solid #242424;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	margin: 1em auto;
-	display: flex;
-	flex-flow: column;
-}
-.cluster main section:first-child{
-	min-height: 150px;
-	position: relative;
-}
-@media only screen and (min-width: 480px){
-	.cluster main section{
-		margin: .5em 0 1.5em;
-	}
-}
-@media only screen and (min-width: 992px){
-	.cluster main section{
-		margin: 1em;
-		max-width: 500px;
-		flex: 1 0 calc(50% - 2em - 2px);
-	}
-		.cluster main section:first-child{
-			max-width: 300px;
-			flex: 1 0 calc(27.5% - 2em - 2px);
-	}
-		.cluster main section:nth-child(2){
-			max-width: 600px;
-			flex: 1 0 calc(72.5% - 2em - 2px);
-	}
-}
-.cluster main section h2{
-	font-size: 1.1em;
-	font-weight: 700;
-	font-variant: normal;
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
-	color: #fff;
-	border-bottom: 1px solid #242424;
-	border-radius: 4px 4px 0 0;
-	-webkit-border-radius: 4px 4px 0 0;
-	-moz-border-radius: 4px 4px 0 0;
-	margin: 0;
-	padding: .5em 0;
-}
-.cluster main section h2#level-2-title{
-	font-size: 1.5em;
-	white-space: nowrap;
-	border: 3px solid #fff;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	margin: 0;
-	padding: 10px;
-	height: 33px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-}
-.cluster main section p{
-	font-size: .95em;
-	padding: 0 1em;
-}
-.cluster.zoomcasts main section p{
-	margin: 0 1em 1em;
-}
-.cluster.zoomcasts main section:nth-child(2) p{
-	margin: 1em;
-}
-/* Adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-.cluster main section div{
-	background: #e6e6e6;
-	margin: 1em;
-	padding: 0;
-	position: relative;
-}
-.cluster main section div:hover,
-.cluster main section div:focus-within{
-	outline: 3px solid #395375;
-	overflow: hidden;
-}
-.cluster main section div::after{
-	content: "";
-	/* padding-bottom: 56.25%; */
-	display: block;
-}
-.cluster main section div::after{
-	padding-bottom: 66.67%;
-}
-.cluster.zoomcasts main section div::after{
-	padding-bottom: 56.25%;
-}
-.cluster.about main section div::after{
-	padding-bottom: 71.43%;
-}
-@media only screen and (min-width: 992px){
-	.cluster main section div::after{
-		padding-bottom: 56.25%;
-	}
-}
-@media only screen and (min-width: 992px){
-	.cluster main section div::after{
-		padding-bottom: 66.67%;
-	}
-	.cluster.zoomcasts main section div::after{
-		padding-bottom: 56.25%;
-	}
-	.cluster.about main section div::after{
-		padding-bottom: 71.43%;
-	}
-}
-.cluster main section div img{
-	background: #e6e6e6;
-	width: 100%;
-  height: 100%;
-	position: absolute;
-  left: 0;
-  top: 0;
-	object-fit:cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-	object-position: 50% 50%;
-}
-.cluster main section div a img{
-	border: none;
-}
-.cluster main section div a:hover img,
-.cluster main section div a:focus img{
-	border: none;
-	opacity: .7;
-}
-.cluster main section div span{
-	font-size: 1.1em;
-}
-.cluster.zoomcasts main section div span{
-	font-size: 1em;
-}
-/* some specs below from Livingstone Online */
-.cluster main section div span{
-	color: #fff;
-	background-color: rgb(66,66,66);
-	line-height: 1.5em;
-	text-align: center;
-	padding: .25em 0;
-	width: 100%;
-	/* min-height: 20%; */
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-	-moz-transform: translate(-50%, 0);
-	-webkit-transform: translate(-50%, 0);
-	opacity: .9;
-}
-.cluster main section div a:hover,
-.cluster main section div a:focus{
-	background: none;
-}
-.cluster main section ol,
-.cluster main section ul{
-	text-align: center;
-	list-style: none;
-	margin: 1em 1em 1.5em;
-	padding: 0;
-}
-@media only screen and (min-width: 768px){
-	.cluster main section ol,
-	.cluster main section ul{
-		display: flex;
-		flex-wrap: wrap;
-	}
-}
-.cluster main section ul li{
-	/* hyphens: none;
-	-ms-hyphens: none;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	word-break: normal;
-	-ms-word-break: normal; */
-	line-height: 1.5em;
-	border: 1px solid #e6e6e6;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	margin: 1em 0;
-	padding: .3em;
-	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-@media only screen and (min-width: 768px){
-	.cluster main section ul li{
-		margin: .75em .5em;
-		padding: .15em;
-		min-height: 35px;
-		flex: 1 0 calc(50% - 2px - 2em);
-	}
-}
-.cluster main section ul li:first-child{
-	font-size: .95em;
-	font-family: 'Noto Serif', serif;
-	font-weight: 600;
-	background: #e6e6e6;
-	min-height: unset;
-}
-@media only screen and (min-width: 768px){
-	.cluster main section ul li:first-child{
-		margin: .5em .5em .75em;
-		display: block;
-		flex: 1 0 calc(100% - 2px - 1em);
-	}
-}
-.cluster main section ul li:first-child:hover,
-.cluster main section ul li:first-child:focus-within{
-	color: inherit;
-	background: #e6e6e6;
-}
-.cluster main section ul li a,
-.cluster main section ul li a:visited{
-	font-size: .95em;
-	text-decoration: none;
-	color: #242424;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.cluster main section ul li:hover,
-.cluster main section ul li:focus-within,
-.cluster main section ul li:hover a,
-.cluster main section ul li:focus-within a{
-	color: white;
-	background: #395375;
-}
-.cluster main section ul li a i{
-	display: none;
-	visibility: hidden;
-}
-
-/* CSS Main File for One More Voice (https://onemorevoice.org/) */
-
-/* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
-
-/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
-
-/* 
-Table of Contents
------------------
-** Main Site Colors **
-
-** 1.0. Main CSS **
-1.1. Principal Components 
-1.2. Main Sections and Related
-1.3. Headings and Related
-1.4. Main Images and Related
-1.5. Links
-1.6. Fonts
-1.7. Navigation 
-1.7.1. Main Navigation
-1.7.2. Fallback Navigation
-1.7.3. Overlay
-1.8. Footer & Fat Footer
-1.9. Sidebar
-1.10.1. Download Page/Image Button
-1.10.2. Google Translate
-1.11. Archival Texts
-1.12. Object Gallery
-1.13. Book-Length Works
-1.14. Motion Pictures 
-1.15. Page-Specific Coding
-1.16. Essays
-1.17. Formatting
-1.18. Lists and Lines
-1.19. Scroll to Top Button
-
-Appendix
-Alternative [id]:target Coding 
-*/
-
-/*--------------------------------------*/
-
-/** Main Site Colors **/
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
-/* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
-/* Color shades: https://mdigi.tools/color-shades/ */
-/*
-(white) #fff;
-(black) #000;
-(light blue 1) #c4d8ef;
-(light blue 2) #dbe6f5;
-(site blue) #204A79;
-(light red) #b53831;
-(site red) #902D27;
-(light gray) #e3e3e3;
-(dark gray) #858585;
-(darker gray) #404040;
-(dark brown) #424242;
-(near black) #525252;
-(black) #0b0b0b; 
-also see 2.9 for manuscript colors
-*/
-
-/* 
-test colors
-orange 1: #FFA630;
-orange 2: #FAA916;
-green: #058C42;
-pine: #72A98F;
-*/
-
-/** 1.0 Main CSS **/
-
-/* 1.1. Principal Components */
-
-/* *, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-} */
-/* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-::selection {
-	color: #fff;
-  background: #404040;
-  text-shadow: none;
-}
-::-moz-selection {
-  color: #fff;
-	background: #858585;
-  text-shadow: none;
-}
-html{
-	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: normal;
-	color: #191716;
-	/* overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	-ms-word-break: break-all;
-	hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto; */
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-body{
-	top: 0px !important; /* Needed for Google Translate */
-	margin: 0 auto;
-	padding: 0;
-	max-width: 100%;
-	-moz-osx-font-smoothing: auto;
-	-webkit-font-smoothing: antialiased;
-}
 .text-container{
 	padding: 0;
 	margin: 0 auto;
@@ -478,7 +30,7 @@ body{
 @media only screen and (min-width: 992px){
 	.page-wrapper{
 		margin: 0 auto;
-		/* padding: 36px 1.2em 0; */ /*chg*/
+		padding: 36px 1.2em 0;
 		padding: 0 1.2em;
 		width: 100%;
 		max-width: 900px;
@@ -489,151 +41,6 @@ body{
 /* 1.2 Main Section and Related */
 
 header,
-header a{
-	text-decoration: none;
-}
-header{
-	color: #fff;
-	background-color: #0b0b0b;
-	height: 30px;
-	padding: 5px 10px;
-}
-@media only screen and (min-width: 480px){
-	header{
-		height: 37px;
-		padding: 7px 10px;
-	}
-}
-@media only screen and (min-width: 768px){
-	header{
-		height: 40px;
-		padding: 5px 10px;
-	}
-}
-.header{
-	min-height: 40px;
-}
-@media only screen and (min-width: 480px){
-	.header{
-		min-height: 50px;
-	}	
-}
-header a{
-	display: flex;
-	align-items: center;	
-}
-header a:hover,
-header a:focus{
-	background: transparent;
-}
-.header-container{
-	margin: 0 auto;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-@media only screen and (min-width: 992px){
-	.header-container{
-		min-width: 992px;
-		max-width: 1200px;
-	}
-}
-/* OMV Icon */
-header a img{
-	border: none;
-	border-radius: 50%;
-}
-header a img{
-	margin: 0;
-	width: 29px;
-	height: 29px;
-}
-@media only screen and (min-width: 480px){
-	header a img{
-		width: 36px;
-		height: 36px;
-	}
-}
-@media only screen and (min-width: 768px){
-	header a img{
-		width: 39px;
-		height: 39px;
-	}
-}
-header a:hover img,
-header a:focus img{
-	border: none;
-	outline: 2px solid #fff;
-}
-/* OMV Logo */
-header a h1{
-	font-family: 'Merriweather', serif;
-	font-size: 1.4em;
-	font-weight: 700;
-	color: #fff;
-	white-space: nowrap;
-	margin: 0 0 0 5px;
-	padding: 1px 4px;
-}
-@media only screen and (min-width: 480px){
-	header a h1{
-		font-size: 1.5em;
-	}
-}
-@media only screen and (min-width: 768px){
-	header a h1{
-		font-size: 1.7em;
-		font-weight: 900;
-	}
-}
-header a:hover h1,
-header a:focus h1{
-	text-decoration: underline;
-}
-/* Hamburger Menu */
-header button{
-	color: #fff;
-	background: transparent;
-	border: none;
-	width: 32px;
-	height: 28px;
-}
-@media only screen and (min-width: 480px){
-	header button{
-		margin-right: .6em;
-	}
-}
-@media only screen and (min-width: 768px){
-	header button{
-		margin-right: 1.2em;
-	}
-}
-@media only screen and (min-width: 992px){
-	header button{
-		display: none;
-		visibility: hidden;
-	}
-}
-header button .fa-bars{
-	font-size: 1.5em;
-}
-@media only screen and (min-width: 480px){
-	header button .fa-bars{
-		font-size: 1.7em;
-	}
-}
-@media only screen and (min-width: 768px){
-	header button .fa-bars{
-		font-size: 1.9em;
-	}
-}
-header button:hover,
-header button:focus{
-	outline: 2px solid #fff;
-}
-
-/* header,
 .transcription header{
 	text-align: center;
 	margin: 44px auto 0;
@@ -657,18 +64,15 @@ header button:focus{
 	.transcription header{
 		margin-top: 0;
 	}
-} */
-main,
+}
 aside.credits#credits-div,
 aside.credits#credits2-div,
 aside.credits#main,
 main.object#object-div{
 	line-height: 1.875em;
 	margin: 0 auto 1em;
-	/* max-width: 700px; */
 }
 @media only screen and (min-width: 992px){
-		main,
 		aside.credits#credits-div,
 		aside.credits#credits2-div,
 		aside.credits#main,
@@ -677,32 +81,26 @@ main.object#object-div{
 			max-width: 1200px;
 	}
 }
-/* main pages */
-main{
-	font-size: 1.1em;
-	padding: 1em;
-	display: block;
-}
 aside.text-box{
 	background: #e3e3e3;
 	border-left: 5px #902D27 solid;
 	padding: 1em;
 }
 aside.credits#credits-div{
-	/* font-size: 1.2em; */
-	/* padding: 0 1em 1em; */
+	font-size: 1.2em;
+	padding: 0 1em 1em;
 }
 /* visual materials pages */
 aside.credits#main{
-	/* font-size: 1.2em; */
-	/* padding: 1em 1em 0; */
+	font-size: 1.2em;
+	padding: 1em 1em 0;
 }
 main.object#object-div{
-	/* padding: 0 1em; */
+	padding: 0 1em;
 }
 aside.credits#credits2-div{
-	/* font-size: 1.2em; */
-	/* padding: 0 1em 1em; */
+	font-size: 1.2em;
+	padding: 0 1em 1em;
 }
 /* manuscript pages */
 main.manuscript#manuscript-div,
@@ -712,52 +110,48 @@ main.journal#journal-div{
 }
 @media only screen and (min-width: 480px){
 	main.object#object-div{
-		/* padding: 1em; */
+		padding: 1em;
 	}	
 }
 @media only screen and (min-width: 768px){
-	main{
-		/* font-size: 1.2em; */
-		/* padding: .5em 0 1em; */
-	}
 	aside.credits#credits-div{
-		/* font-size: 1.15em; */
-		/* padding: 0 0 1.5em; */
+		font-size: 1.15em;
+		padding: 0 0 1.5em;
 	}
 	aside.credits#main{
-		/* font-size: 1.15em; */
-		/* padding: 1em 0 0; */
+		font-size: 1.15em;
+		padding: 1em 0 0;
 	}
 	main.object#object-div{
-		/* font-size: 1.15em; */
-		/* padding: 0 0 1em; */
+		font-size: 1.15em;
+		padding: 0 0 1em;
 	}
 	aside.credits#credits2-div{
-		/* font-size: 1.15em; */
-		/* padding: 0 0 1.5em; */
+		font-size: 1.15em;
+		padding: 0 0 1.5em;
 	}
 }
 @media only screen and (min-width: 992px){
 	main{
-		/* font-size: 1.15em; */
+		font-size: 1.15em;
 		display: block !important; /* Tied to overlay */
 	}
 	aside.credits#credits-div{
-		/* font-size: 1.1em; */
+		font-size: 1.1em;
 	}
 	aside.credits#main{
-		/* font-size: 1.1em; */
+		font-size: 1.1em;
 	}
 	main.object#object-div{
-		/* font-size: 1.1em; */
+		font-size: 1.1em;
 	}
 	aside.credits#credits2-div{
-		/* font-size: 1.1em; */
+		font-size: 1.1em;
 	}
 }
 /* toc and toc-title used for page menus */
 .toc{
-	/* font-size: .9em; */
+	font-size: .9em;
 	padding: 1em 0 0 0;
 }
 .toc-title{
@@ -803,21 +197,21 @@ h2{
 	margin: 0 auto;
 }
 .essay h2{
-	/* font-size: 1.25em; */
+	font-size: 1.25em;
 }
 .transcription h2{
-	/* font-size: 1.2em; */
+	font-size: 1.2em;
 }
 @media only screen and (min-width: 768px){
 	.essay h2{
-		/* font-size: 1.2em; */
+		font-size: 1.2em;
 	}
 	.transcription h2{
-		/* font-size: 1.15em; */
+		font-size: 1.15em;
 	}
 }
 h3{
-	/* font-size: 1.1em; */
+	font-size: 1.1em;
 	font-weight: 600;
 	font-variant: small-caps;
 }
@@ -842,7 +236,7 @@ h3.subsection{
 	margin-top: 1em;
 }
 h4{
-	/* font-size: 1em; */
+	font-size: 1em;
 	font-style: italic;
 	font-weight: 300;
 }
@@ -853,15 +247,7 @@ h4{
 
 
 /* 1.4. Main Images and Related */
-img{
-	font-weight: 300;
-	color: #e6e6e6;
-	border-style: none;
-	width: 100%;
-	height: auto;
-	/* display: inline-block; */
-}
-/* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
+
 header img{
 	background: #e6e6e6;
 	border: 1px solid #e3e3e3;
@@ -904,19 +290,6 @@ header img{
 	.double-image {
 		height: 470px;
 	}
-}
-a img{
-	border: 3px transparent solid;
-}
-a:hover img,
-a:focus img{
-	border: 3px #204A79 solid;
-}
-.image-border{
-	border: 1px solid #e3e3e3;
-}
-.image-border-dark{
-	border: 1px solid #858585;
 }
 @media screen and (min-width: 480px){
 	.responsive-image70{
@@ -1015,18 +388,9 @@ img + p.caption-text,
 	}
 }
 
+
 /* 1.5. Links */
 
-a,
-a:visited{
-	color: #204A79;
-	background-color: transparent;
-}
-a:hover,
-a:focus{
-	color: #a83c37;
-	background-color: #E3E3E3;
-}
 #credits-div > p:nth-child(2) > a,
 #closing-credits > p:nth-child(3) > a,
 #closing-credits > p:nth-child(5) > a{
@@ -1038,9 +402,6 @@ a:focus{
 .graphic a:hover,
 .graphic a:focus{
 	background-color: white;
-}
-*:focus{
-	outline: 0 none;
 }
 
 
@@ -1100,7 +461,7 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
-/* .overlay{
+.overlay{
 	font: 16px 'Libre Franklin', sans-serif;
 	text-align: center;
 	color: #0b0b0b;
@@ -1180,87 +541,20 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 		float: left;
 		margin: 0 3em;
 	}
-} */
+}
 
 
 /* 1.8. Footer & Fat Footer */
 
-footer{
-	/* font-size: 1.1em; */
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	color: #fff;
-	background-color: #204A79;
-	border-bottom: 1px solid #0b0b0b;
-	margin: 0 auto;
-	padding: 0;
-	clear: both;
-}
-@media only screen and (min-width: 480px){
-	footer{
-		/* font-size: 1em; */
-		margin: 0 auto;
-	}
-}
-footer a,
-footer a:visited{
-	color: #fff;
-}
-footer a:hover,
-footer a:focus{
-	color: #a83c37;
-	background-color: #E3E3E3;
-} /*chg*/
-footer p{
-	/* color: #0b0b0b;
-	background-color: #fff;
-	border-top: 1px solid #737373;
-	border-bottom: 1px solid #737373; */ /*chg*/
-	margin: 0;
-	padding: 1em;
-}
-@media only screen and (min-width: 768px){
-	footer p{
-		padding: 1em 1.5em;
-	}
-}
-@media only screen and (min-width: 992px){
-	footer p{
-		min-width: 992px;
-		max-width: 1200px;
-	}
-}
-/* footer p a,
+footer p a,
 footer p a:visited{
 	color: #204A79;
 }
 footer p a:hover,
 footer p a:focus{
 	color: #a83c37;
-} */ /*chg*/
-footer p .site-detail{
-	line-height: 1.875em;
-	padding: 0 .2em;
 }
-footer p .site-detail::after{
-	content: ' | ';
-	padding-left: .5em;
-}
-footer p .site-detail:last-child::after{
-	content: '';
-}
-@media only screen and (min-width: 480px){
-	footer p .site-detail{
-		padding: 0 .3em;
-	}
-}
-@media only screen and (min-width: 768px){
-	footer p .site-detail{
-		white-space: nowrap;
-	}
-}
-/* .fat-footer{
+.fat-footer{
 	margin: 0 auto;
 	padding: 1em;
 	width: fit-content;
@@ -1327,7 +621,8 @@ li.section > ul > li > a{
 .fat-footer a:focus{
 	color: #a83c37;
 	background-color: #E3E3E3;
-} */ /*chg*/
+}
+
 
 /* 1.9. Sidebar */
 
@@ -1351,7 +646,7 @@ li.section > ul > li > a{
 	}
 }
 aside.sidebar{
-	/* font-size: .9em; */
+	font-size: .9em;
 	font-family: 'Libre Franklin', sans-serif;
 	text-align: center;
 	color: #fff;
@@ -1364,7 +659,7 @@ aside.sidebar a{
 }
 aside.sidebar h2{
 	font-family: 'Times New Roman', Times, serif;
-	/* font-size: 1.35em; */
+	font-size: 1.35em;
 	font-weight: 300;
 	color: #fff;
 	background-color: #204A79;
@@ -1456,76 +751,7 @@ aside.sidebar .external li a img:focus{
 
 /* 1.10.1 Download Page/Image Button */
 
-.button-container{
-	/* font: 16px 'Source Sans Pro', sans-serif; */
-	/* min-height: 178px; */
-	margin: .5em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: space-evenly;
-}
-/* @media only screen and (min-width: 382px){
-	.button-container{
-		min-height: 126px;
-	}
-}
-@media only screen and (min-width: 674px){
-	.button-container{
-		min-height: 77px;
-	}
-} */
-.button-container .page-button-container,
-.button-container .icon-container{
-	margin: .5em 0;
-	display: flex;
-	align-items: flex-start;
-	align-content: space-evenly;
-}
-.translate{
-	margin: .5em .7em;	
-}
-.button-container button.page-button{
-	all: unset;
-	font-size: .95em;
-	font-weight: 600;
-	white-space: nowrap;
-	text-decoration: none;
-	color: #fff;
-	/* background-color: #1B651C; */
-	background-color: #e68300;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: .3em .6em 0;
-	padding: .3em .5em;
-}
-.button-container button.page-button:hover,
-.button-container button.page-button:focus{
-	color: #e68300;
-	background-color: #e3e3e3;
-	outline: 1px solid #e68300;
-}
-.button-container a.external{
-	height: fit-content;
-}
-.button-container a.external:hover,
-.button-container a.external:focus{
-	background: transparent;
-}
-.button-container a.external i{
-	font-size: 1.8em;
-	color: #424242;
-	margin: 0 .15em;
-	padding: .125em .25em;
-}
-.button-container a.external:hover i,
-.button-container a.external:focus i{
-	color: #204A79;
-	background-color: #e3e3e3;
-	outline: 2px solid #204A79;
-}
+
 /* .button-container a.map{
 	font-size: .95em;
 	font-weight: 600;
@@ -1545,10 +771,10 @@ aside.sidebar .external li a img:focus{
 	background-color: #e3e3e3;
 	outline: 2px solid #616161;
 } */
-.download{
+/* .download{
   display: none;
   visibility: hidden;
-}
+} */
 /* @media only screen and (min-width: 992px){
 	.download{
 		margin-right: 1em;
@@ -1611,98 +837,10 @@ aside.sidebar .external li a img:focus{
 } */
 
 
-/* 1.10.2. Google Translate */
-/* Also see other styles marked "Google Translate" */
-
-button{
-  -webkit-appearance: button;
-}
-.goog-te-banner-frame.skiptranslate{
-	display: none !important;
-	visibility: hidden !important;
-}
-.original-text{
-	text-align: unset !important;
-}
-.translate{
-	max-width: 170px;
-	/* float: left; */
-	/* overflow: hidden !important; */
-	height: 32px;
-}
-/* Included in criticalTEI CSS, start */
-/* #google_translate_element{
-	min-height: 72px;
-}
-@media only screen and (min-width: 768px){
-	#google_translate_element{
-		min-height: 68px;
-	}
-}
-@media only screen and (min-width: 992px){
-	#google_translate_element{
-		min-height: 66px;
-	}
-} */
-/* Included in criticalTEI CSS, end */
-#google_translate_element > div > span > a > img{
-	width: 3.5em;
-}
-#google_translate_element div.goog-te-gadget .goog-te-combo{
-	font-size: 1.3em;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	border: 2px solid #E3E3E3;
-	border-radius: 7px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	margin: 0 0 0 -3px;
-	padding: 1px;
-}
-#google_translate_element div.goog-te-gadget .goog-te-combo:hover,
-#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
-	border: 2px #204A79 solid;
-	background-color: #E3E3E3;
-}
-div.skiptranslate:nth-child(1){
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	padding-left: 4px;
-	line-height: 2.5em;
-	margin-top: .5em;
-}
-div.skiptranslate:nth-child(1) > span:nth-child(2),
-div.skiptranslate:nth-child(1) > span:nth-child(2){
-	border: 2px transparent solid;
-	margin-left: -2px;
-}
-div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
-div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
-	border: 2px #204A79 solid;
-}
-#google_translate_element > div > span > a > img,
-#google_translate_element > div > span > a > img{
-	border: 2px transparent solid;
-	padding-right: 1px !important;
-}
-#google_translate_element > div > span > a > img:hover,
-#google_translate_element > div > span > a > img:focus{
-	border: 2px transparent solid;
-}
-.goog-logo-link,
-.goog-logo-link:link{
-	font-size: 11px !important;
-	font-weight: normal !important;
-	color: #666 !important;
-	/* display: none;
-  visibility: hidden; */
-}
-
-
 /* 1.11. Archival Texts */
 
 section.archival-text{
-	/* font-size: .8em; */
+	font-size: .8em;
 	line-height: 1.875em;
 	border: 1px solid #858585;
 	border-radius: 9px;
@@ -1714,7 +852,7 @@ section.archival-text{
 }
 @media only screen and (min-width: 768px){
 	section.archival-text{
-		/* font-size: .9em; */
+		font-size: .9em;
 	}
 }
 section.archival-text:last-of-type{
@@ -1731,7 +869,7 @@ section.archival-text p:last-of-type{
 	border-bottom: none;
 }
 section.archival-text h4{
-	/* font-size: 1.15em; */
+	font-size: 1.15em;
 	font-weight: 600;
 	font-style: normal;
 	color: white;
@@ -1791,7 +929,7 @@ section.archival-text .no-image::after{
 	display: block;
 }
 section.archival-text .no-image .content{
-	/* font-size: .95em; */
+	font-size: .95em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	line-height: 1.5em;
@@ -1814,7 +952,7 @@ section.archival-text .no-image .content{
 /* 1.12. Object Gallery */
 
 .image-details{
-	/* font-size: .85em; */
+	font-size: .85em;
 	font-style: italic;
 	text-align: center;
 	color: #65615b;
@@ -1830,7 +968,7 @@ section.archival-text .no-image .content{
 	margin-bottom: 1em;
 }
 .gallery h4{
-	/* font-size: 1.05em; */
+	font-size: 1.05em;
 	font-style: normal;
 	font-weight: 600;
 	color: white;
@@ -1899,7 +1037,7 @@ section.archival-text .no-image .content{
 	border: 2px #204A79 solid;
 }
 .gallery figure figcaption{
-	/* font-size: .8em; */
+	font-size: .8em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	text-align: center;
@@ -1910,12 +1048,12 @@ section.archival-text .no-image .content{
 /* 1.13. Book-Length Works */
 
 #books{
-	/* font-size: .85em; */
+	font-size: .85em;
 	line-height: 1.875em;
 }
 @media only screen and (min-width: 768px){
 	#books{
-		/* font-size: .95em; */
+		font-size: .95em;
 		line-height: 1.5em;
 	}
 }
@@ -1926,7 +1064,7 @@ section.archival-text .no-image .content{
 	border: 1px solid #858585;
 }
 #books h4{
-	/* font-size: 1.15em; */
+	font-size: 1.15em;
 	font-style: normal;
 	font-weight: 600;
 	color: white;
@@ -1938,7 +1076,7 @@ section.archival-text .no-image .content{
 	padding: 10px 14px;
 }
 .published-author{
-	/* font-size: 1.05em; */
+	font-size: 1.05em;
 	color: #262626;
 	background-color: #e3e3e3;
 	padding: 10px 16px;
@@ -1979,17 +1117,17 @@ section.archival-text .no-image .content{
 /* 1.14 Motion Pictures */
 
 #films{
-	/* font-size: .85em; */
+	font-size: .85em;
 	line-height: 1.6em;
 }
 @media only screen and (min-width: 768px){
 	#films{
-		/* font-size: .95em; */
+		font-size: .95em;
 		line-height: 1.5em;
 	}
 }
 #films h4{
-	/* font-size: 1.15em; */
+	font-size: 1.15em;
 	font-style: normal;
 	font-weight: 600;
 	color: white;
@@ -2014,7 +1152,7 @@ section.archival-text .no-image .content{
 	background-color: #e3e3e3;
 } */
 #films h5{
-	/* font-size: 1.05em; */
+	font-size: 1.05em;
 	background-color: #e3e3e3;
 	border-bottom: 1px solid #858585;
 	border-radius: 8px 8px 0 0;
@@ -2024,7 +1162,7 @@ section.archival-text .no-image .content{
 	padding: 10px 16px;
 }
 #films ul{
-	/* font-size: .95em; */
+	font-size: .95em;
 	list-style: none;
 	border-top: 1px solid #858585;
 	margin: 0;
@@ -2291,7 +1429,7 @@ ol.primary-historical li{
 	padding-bottom: 1em;
 }
 .bibliography{
-	/* font-size: .95em; */
+	font-size: .95em;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -2336,7 +1474,7 @@ ul.acknowledgments{
 
 /* The following is used in essays to create small text */
 .footnote{
-	/* font-size: .9em; */
+	font-size: .9em;
 	padding-top: 1.5em;
 }
 
@@ -2349,7 +1487,7 @@ ul.acknowledgments{
 }
 /* for essay subtitle */
 .subtitle{
-	/* font-size: .9em; */
+	font-size: .9em;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 300;
@@ -2371,83 +1509,10 @@ ul.acknowledgments{
 	padding: 0;
 }
 .editor-line{
-	/* font-size: 0.9em; */
+	font-size: 0.9em;
 	font-variant: small-caps;
 	margin: .8em 0 0 0;
 	padding: 0;
-}
-
-
-/* 1.17. Formatting */
-
-.black{
-	color: black;
-}
-.bold{
-	font-weight: 600;
-}
-.center{
-	text-align: center;
-}
-.half{
-	width: 50%;
-}
-.highlight{
-	color: #902D27;
-	font-style: italic;
-}
-.italic{
-	font-style: italic;
-}
-.left{
-	text-align: left;
-}
-.site-blue{
-	color: #204A79;
-}
-.site-red{
-	color: #902D27;
-}
-.small{
-	font-size: .9em;
-}
-.smallcaps{
-	font-variant: small-caps;
-}
-strong{
-	font-weight: bolder;
-}
-.underline{
-	text-decoration: underline;
-}
-
-
-/* 1.18. Lists and Lines */
-
-ol,
-ul{
-	margin: 0;
-	padding: 0 0 0 1.4em;
-}
-ol li ol{
-	padding: 0 0 0 .6em;
-}
-@media only screen and (min-width: 768px){
-	ol li ol{
-		padding-left: 1.2em;
-	}
-}
-/* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-hr {
-  /* display: block; */
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-.title-hr{
-	margin: 2em 0;
 }
 
 

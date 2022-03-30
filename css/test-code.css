@@ -126,19 +126,18 @@ header a{
 header{
 	color: #fff;
 	background-color: #191716;
-	height: 30px;
+	height: 40px;
 	padding: 5px 10px;
 }
 @media only screen and (min-width: 480px){
 	header{
-		height: 37px;
-		padding: 7px 10px;
+		height: 50px;
+    padding: 7px 10px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		height: 40px;
-		padding: 5px 10px;
+    padding: 5px 10px;
 	}
 }
 .header{
@@ -271,7 +270,6 @@ button{
   -webkit-appearance: button;
 }
 .button-container{
-	font: 16px 'Source Sans Pro', sans-serif;
 	min-height: 178px;
 	margin: .5em;
 	display: flex;
@@ -280,15 +278,20 @@ button{
 	justify-content: center;
 	align-content: space-evenly;
 }
+@media only screen and (min-width: 329px){
+  .button-container{
+    min-height: 125px;
+}
+@media only screen and (min-width: 684px){
+  .button-container{
+    min-height: 77px;
+}
 .button-container .page-button-container,
 .button-container .icon-container{
 	margin: .5em 0;
 	display: flex;
 	align-items: flex-start;
 	align-content: space-evenly;
-}
-.translate{
-	margin: .5em .7em;	
 }
 .button-container button.page-button{
 	all: unset;
@@ -342,8 +345,9 @@ button{
 	text-align: unset !important;
 }
 .translate{
-	max-width: 170px;
-	height: 32px;
+	margin: .5em .7em;
+  max-width: 170px;
+  min-height: 61px;
 }
 /* Included in criticalTEI CSS, start */
 /* #google_translate_element{

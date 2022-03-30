@@ -281,10 +281,12 @@ button{
 @media only screen and (min-width: 329px){
   .button-container{
     min-height: 125px;
+  }
 }
 @media only screen and (min-width: 684px){
   .button-container{
     min-height: 77px;
+  }
 }
 .button-container .page-button-container,
 .button-container .icon-container{
@@ -421,8 +423,8 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 main{
 	font-size: 1.1em;
   line-height: 1.875em;
-	margin: 0 auto 1em;
-	padding: 1em;
+	margin: 0 auto;
+	padding: 0 1em 1em;
 	display: block;
 }
 @media only screen and (min-width: 992px){
@@ -562,6 +564,9 @@ a:focus{
 .left{
 	text-align: left;
 }
+.right{
+  text-align: right;
+}
 .site-blue{
 	color: #204A79;
 }
@@ -619,7 +624,7 @@ hr {
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	margin: 0 auto;
+	margin: 1em auto;
 	padding: .7em .7em .5em;	
 }
 @media only screen and (min-width: 480px){
@@ -631,6 +636,7 @@ hr {
 	font-size: 1.6em;
 	font-family: 'Merriweather', serif;
 	color: #424242;
+  margin: 0;
 }
 .overview-paragraph button.mission-button{
 	all: unset;
@@ -653,4 +659,25 @@ hr {
 	color: #204A79;
 	background-color: #e3e3e3;
 	outline: 1px solid #204A79;
+}
+/* historical tiles */
+section#historical{
+  margin: 0 auto;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+}
+section#historical section{
+  text-align: center;
+  border: 1px solid #191716;
+  width: 100%;
+  margin: .5em auto;
+}
+@media only screen and (min-width: 768px){
+  section#historical section{
+    width: calc(50% - 1em);
+  }
 }

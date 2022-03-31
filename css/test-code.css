@@ -52,6 +52,7 @@ Alternative [id]:target Coding
 (site blue) #204A79;
 (light red) #b53831;
 (site red) #902D27;
+(site organe) #e68300;
 (light gray) #e3e3e3;
 (dark gray) #858585;
 (darker gray) #404040;
@@ -421,7 +422,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 /* 1.4 Main */
 
 main{
-	font-size: 1.1em;
+	font-size: 1em;
   line-height: 1.875em;
 	margin: 0 auto;
 	padding: 0 1em 1em;
@@ -618,27 +619,28 @@ hr {
 
 /* Home Page */
 
-/* overview paragraph */
-.overview-paragraph{
-	border-top: 7px solid #e3e3e3;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 1em auto;
-	padding: .7em .7em .5em;	
-}
-@media only screen and (min-width: 480px){
-	.overview-paragraph{
-		max-width: 660px;
-	}
-}
-.overview-paragraph h2{
+.home h2{
 	font-size: 1.6em;
 	font-family: 'Merriweather', serif;
 	color: #424242;
   margin: 0;
+	/* flex: 0 0 100%; */
 }
-.overview-paragraph button.mission-button{
+/* overview paragraph */
+.home .overview-paragraph{
+	border-top: 7px solid #e3e3e3;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: .5em auto 1em;
+	padding: .7em .7em .5em;	
+}
+@media only screen and (min-width: 480px){
+	.home .overview-paragraph{
+		max-width: 660px;
+	}
+}
+.home .overview-paragraph button.mission-button{
 	all: unset;
 	font-size: .95em;
 	font-weight: 600;
@@ -654,14 +656,14 @@ hr {
 	padding: .3em .5em;
 	display: block;
 }
-.overview-paragraph button.mission-button:hover,
-.overview-paragraph button.mission-button:focus{
+.home .overview-paragraph button.mission-button:hover,
+.home .overview-paragraph button.mission-button:focus{
 	color: #204A79;
 	background-color: #e3e3e3;
 	outline: 1px solid #204A79;
 }
 /* historical tiles */
-section#historical{
+.home section.tiles{
   margin: 0 auto;
   display: flex;
 	flex-direction: row;
@@ -670,14 +672,60 @@ section#historical{
 	align-items: center;
 	align-content: stretch;
 }
-section#historical section{
+.home section.tiles section{
   text-align: center;
-  border: 1px solid #191716;
   width: 100%;
-  margin: .5em auto;
+  margin: 1em auto;
 }
 @media only screen and (min-width: 768px){
-  section#historical section{
+  .home section.tiles#historical section{
     width: calc(50% - 1em);
   }
+}
+@media only screen and (min-width: 992px){
+  .home section.tiles#historical section{
+    width: calc(33% - 1em);
+  }
+}
+.home section.tiles section h3{
+	text-align: left;
+	margin: 0;
+}
+/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
+.home section.tiles div{
+	background: #e6e6e6;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.home section.tiles div:hover,
+.home section.tiles div:focus-within{
+	outline: 2px solid #204A79;
+	overflow: hidden;
+}
+.home section.tiles div::after{
+	content: "";
+	padding-bottom: 66.67%;
+	display: block;
+}
+.home section.tiles div img{
+	background: #e6e6e6;
+	width: 100%;
+  height: 100%;
+	position: absolute;
+  left: 0;
+  top: 0;
+	object-fit:cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+	object-position: 50% 50%;
+}
+.home section.tiles div a img{
+	border: 1px solid #e3e3e3;
+}
+.home section.tiles div a:hover img,
+.home section.tiles div a:focus img{
+	border: none;
+	opacity: .7;
 }

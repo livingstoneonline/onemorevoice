@@ -659,7 +659,7 @@ hr {
 	background-color: #e3e3e3;
 	outline: 1px solid #204A79;
 }
-/* historical tiles */
+/* browse tiles */
 .home section.tiles{
   margin: 0 auto;
   display: flex;
@@ -675,12 +675,12 @@ hr {
   margin: 1em auto;
 }
 @media only screen and (min-width: 768px){
-  .home section.tiles#historical section{
+  .home section.tiles#browse section{
     width: calc(50% - 1em);
   }
 }
 @media only screen and (min-width: 992px){
-  .home section.tiles#historical section{
+  .home section.tiles#browse section{
     width: calc(33% - 1em);
   }
 }

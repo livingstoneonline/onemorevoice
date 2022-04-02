@@ -131,19 +131,29 @@ header nav{
 }
 header{
 	background-color: #191716;
-	height: 38px;
+	padding: .25em 0;
 }
 @media only screen and (min-width: 480px){
 	header{
-		height: 46px;
+		padding: .4em 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	header{
+		padding: .25em 0;
 	}
 }
 .header-placeholder{
-	min-height: 38px;
+	min-height: 37.5px;
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
-		min-height: 46px;
+		min-height: 48.8px;
+	}	
+}
+@media only screen and (min-width: 768px){
+	.header-placeholder{
+		min-height: 48px;
 	}	
 }
 header nav{
@@ -154,7 +164,7 @@ header nav{
 @media only screen and (min-width: 992px){
 	header nav{
 		min-width: 992px;
-		max-width: 1200px;
+		max-width: 1366px;
 	}
 }
 header a,
@@ -176,6 +186,7 @@ header nav .logo-container a{
 }
 header nav .logo-container a:hover,
 header nav .logo-container a:focus{
+	color: #fff;
 	background: transparent;
 }
 /* OMV Icon */
@@ -373,19 +384,21 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 /* 1.2.4 Hamburger Menu */
 
 header nav .hamburger-menu{
+	text-align: center;
 	background: transparent;
 	border: none;
 	width: 32px;
 	height: 28px;
+	margin-right: .7em;
 }
 @media only screen and (min-width: 480px){
 	header nav .hamburger-menu{
-		margin-right: .6em;
+		margin-right: 1.2em;
 	}
 }
 @media only screen and (min-width: 768px){
 	header nav .hamburger-menu{
-		margin-right: 1.2em;
+		margin-right: 1.6em;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -419,13 +432,13 @@ main{
 	font-size: 1em;
   line-height: 1.875em;
 	margin: 0 auto;
-	padding: 0 1em 1em;
+	padding: 0;
 	display: block;
 }
 @media only screen and (min-width: 992px){
   main{
     min-width: 992px;
-    max-width: 1200px;
+    max-width: 1366px;
   }
 }
 
@@ -467,7 +480,7 @@ footer p{
 @media only screen and (min-width: 992px){
 	footer p{
 		min-width: 992px;
-		max-width: 1200px;
+		max-width: 1366px;
 	}
 }
 footer p .site-detail{
@@ -537,9 +550,6 @@ a:focus{
 
 /* 1.17. Formatting */
 
-.black{
-	color: black;
-}
 .bold{
 	font-weight: 600;
 }
@@ -613,32 +623,30 @@ hr {
 
 /* Home Page */
 
-/* overview paragraph */
-.home .overview-paragraph{
-	background-color: #e3e3e3;
+/* overview section */
+.home .overview-section div{
+	line-height: 1em;
+}
+.home .overview-section img{
+	margin: 0 auto;
 	width: 100%;
+}
+.home .overview-section .overview-text{
+	text-align: center;
+	margin: 0 auto;
 	padding: 1em;
-	margin: 1em auto;
+	display: inline-block;
 }
-.home .overview-paragraph h2,
-.home .overview-paragraph p{
-	margin: .5em auto 1em;
-	/* padding: .7em .7em .5em;	 */
-}
-@media only screen and (min-width: 480px){
-	.home .overview-paragraph h2,
-	.home .overview-paragraph p{
-		max-width: 660px;
-	}
-}
-.home .overview-paragraph h2{
+.home .overview-section h2{
 	font-size: 1.6em;
 	font-family: 'Merriweather', serif;
 	color: #424242;
   margin: 0 auto;
 }
-.home .overview-paragraph button.mission-button{
-	all: unset;
+.home .overview-section p{
+	text-align: left;
+}
+.home .overview-section a.mission-button{
 	font-size: .95em;
 	font-weight: 600;
 	white-space: nowrap;
@@ -651,15 +659,21 @@ hr {
 	-moz-border-radius: 8px;
 	margin: 0 auto;
 	padding: .3em .5em;
-	display: block;
+	display: inline-block;
 }
-.home .overview-paragraph button.mission-button:hover,
-.home .overview-paragraph button.mission-button:focus{
+.home .overview-section a.mission-button:hover,
+.home .overview-section a.mission-button:focus{
 	color: #204A79;
 	background-color: #e3e3e3;
 	outline: 1px solid #204A79;
 }
 /* browse tiles */
+.home section.tiles#browse{
+	padding: 1em 1em 0;
+}
+.home section.tiles#browse2{
+	padding: 0 1em 1em;
+}
 .home section.tiles{
   margin: 0 auto;
   display: flex;
@@ -672,10 +686,16 @@ hr {
 .home section.tiles section{
   text-align: center;
   width: 100%;
-  margin: 1em auto;
+  margin: .75em auto;
 }
 @media only screen and (min-width: 768px){
-  .home section.tiles#browse section{
+	.home section.tiles section{
+		margin: 1em auto;
+	}
+}
+@media only screen and (min-width: 768px){
+  .home section.tiles#browse section,
+	.home section.tiles#browse2 section{
     width: calc(50% - 1em);
   }
 }
@@ -684,9 +704,17 @@ hr {
     width: calc(33% - 1em);
   }
 }
+@media only screen and (min-width: 992px){
+  .home section.tiles#browse2 section{
+    width: calc(25% - 1em);
+  }
+}
 .home section.tiles section h3{
 	text-align: left;
 	margin: 0;
+}
+.home section.tiles#browse2 section h3{
+	font-size: 1.1em;
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
@@ -726,37 +754,3 @@ hr {
 	/* border: none; */
 	opacity: .7;
 }
-
-
-/* .header-container{
-	margin: 0 auto;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-@media only screen and (min-width: 992px){
-	.header-container{
-		min-width: 992px;
-		max-width: 1200px;
-	}
-} */
-/* .button-container{
-	min-height: 178px;
-	margin: .5em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: space-evenly;
-}
-@media only screen and (min-width: 329px){
-  .button-container{
-    min-height: 125px;
-  }
-}
-@media only screen and (min-width: 684px){
-  .button-container{
-    min-height: 77px;
-  }
-} */

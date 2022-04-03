@@ -135,25 +135,35 @@ header{
 }
 @media only screen and (min-width: 480px){
 	header{
-		padding: .4em 0;
+		padding: .2em 0;
+	}
+}
+@media only screen and (min-width: 768px){
+	header{
+		padding: .15em 0;
 	}
 }
 @media only screen and (min-width: 992px){
 	header{
-		padding: .25em 0;
+		padding: .1em 0;
 	}
 }
 .header-placeholder{
-	min-height: 37.5px;
+	min-height: 37px;
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
-		min-height: 48.8px;
+		min-height: 42.3px;
 	}	
 }
 @media only screen and (min-width: 768px){
 	.header-placeholder{
-		min-height: 48px;
+		min-height: 43.8px;
+	}	
+}
+@media only screen and (min-width: 992px){
+	.header-placeholder{
+		min-height: 47.9px;
 	}	
 }
 header nav{
@@ -429,7 +439,6 @@ header nav .hamburger-menu:focus{
 /* 1.4 Main */
 
 main{
-	font-size: 1em;
   line-height: 1.875em;
 	margin: 0 auto;
 	padding: 0;
@@ -653,15 +662,19 @@ hr {
 }
 .home .introduction-section .introduction-text{
 	font-size: 1.1em;
-	background-color: #e3e3e3;
 	text-align: center;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
 	margin: 0 auto;
 	padding: 1.5em;
 	display: inline-block;
 	opacity: .95;
+}
+@media only screen and (min-width: 768px){
+	.home .introduction-section .introduction-text{
+		background-color: #e3e3e3;
+		border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+	}
 }
 .home .introduction-section h2{
 	font-size: 1.6em;
@@ -682,7 +695,7 @@ hr {
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	margin: 0 .5em;
+	margin: .5em;
 	padding: 0 .7em;
 	display: inline-block;
 }

@@ -88,6 +88,24 @@ orange: #d48c44;
 	background: #858585;
   text-shadow: none;
 }
+.mobile{
+	display: inherit;
+	visibility: visible;
+}
+.desktop{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 768px){
+	.mobile{
+		display: none;
+		visibility: hidden;
+	}
+	.desktop{
+		display: inherit;
+		visibility: visible;
+	}
+}
 button{
 	all: unset;
   -webkit-appearance: button;
@@ -146,21 +164,21 @@ header{
 	}
 }
 .header-placeholder{
-	min-height: 37px;
+	/* min-height: 37px; *//* */
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
-		min-height: 42.3px;
+		/* min-height: 42.3px; *//* */
 	}	
 }
 @media only screen and (min-width: 768px){
 	.header-placeholder{
-		min-height: 43.8px;
+		/* min-height: 43.8px; *//* */
 	}	
 }
 @media only screen and (min-width: 992px){
 	.header-placeholder{
-		min-height: 47.9px;
+		/* min-height: 47.9px; *//* */
 	}	
 }
 header nav{
@@ -698,6 +716,10 @@ hr {
 .home .introduction-section div{
 	line-height: 1em;
 }
+.home .introduction-section .image-wrapper{
+	display: block;
+	position: relative;
+}
 .home .introduction-section img{
 	margin: 0 auto;
 	width: 100%;
@@ -736,8 +758,10 @@ hr {
 	line-height: 1.875em;
 	margin-bottom: .5em;
 }
-.home .introduction-section .action-button{
-	padding: 9px 13px;
+@media only screen and (min-width: 768px){
+	.home .introduction-section .action-button{
+		padding: 9px 13px;
+	}
 }
 .home .introduction-section .caption{
 	font-size: 1.5em;

@@ -65,10 +65,7 @@ also see 2.9 for manuscript colors
 
 /* 
 test colors
-orange 1: #FFA630;
-orange 2: #FAA916;
-green: #058C42;
-pine: #72A98F;
+orange: #d48c44;
 */
 
 /** 1.0 Main CSS **/
@@ -200,7 +197,7 @@ header button{
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
-	padding: .9em .55em;
+	padding: .6em .55em;
 	top: -55px;
 	left: 0;
 	position: absolute;
@@ -586,8 +583,9 @@ a:focus{
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	margin: 0 .5em;
-	padding: .25em .7em;
+	margin: .5em;
+	padding: 4px 8px;
+	display: inline-block;
 }
 .action-button:hover,
 .action-button:focus{
@@ -674,12 +672,15 @@ hr {
 
 /* introduction section */
 /* https://www.nngroup.com/articles/text-over-images/ used to inform text over image */
+.home .introduction-section{
+	line-height: 1em;
+}
 @media only screen and (min-width: 768px){
 	.home .introduction-section{
 		position: relative;
 	}
 	.home .introduction-section .introduction-text{
-		width: 70%;
+		width: 600px;
     position: absolute;
     left: 50%;
 		top: 50%;
@@ -688,7 +689,7 @@ hr {
 }
 @media only screen and (min-width: 992px){
 	.home .introduction-section .introduction-text{
-		width: 50%;
+		width: 650px;
     left: 50%;
 		top: 40%;
     transform: translate(-50%, -40%);
@@ -700,32 +701,81 @@ hr {
 .home .introduction-section img{
 	margin: 0 auto;
 	width: 100%;
+	
 }
 .home .introduction-section .introduction-text{
-	font-size: 1.15em;
 	text-align: center;
 	margin: 0 auto;
-	padding: 1.5em;
+	padding: 1.5em 1em 1em;
 	display: inline-block;
 	opacity: .96;
 }
 @media only screen and (min-width: 768px){
 	.home .introduction-section .introduction-text{
+		font-size: 1.15em;
 		background-color: #e3e3e3;
 		border-radius: 8px;
 		-webkit-border-radius: 8px;
 		-moz-border-radius: 8px;
+		/* padding: 1em; */
+	}
+}
+@media only screen and (min-width: 992px){
+	.home .introduction-section .introduction-text{
+		padding: 2em;
 	}
 }
 .home .introduction-section h2{
-	font-size: 1.6em;
+	font-size: 1.5em;
 	font-family: 'Merriweather', serif;
 	color: #305055;
   margin: 0 auto;
 }
 .home .introduction-section p{
 	text-align: left;
+	line-height: 1.875em;
+	margin-bottom: .5em;
 }
+.home .introduction-section .action-button{
+	padding: 9px 13px;
+}
+.home .introduction-section .caption{
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	color: #595959;
+	background-color: #e3e3e3;
+	border: 2px solid #595959;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin: 0;
+	padding: 2px 4px;
+	bottom: 7px;
+	right: 7px;
+	position: absolute;
+}
+@media screen and (min-width: 480px){
+	.home .introduction-section .caption{
+		font-size: 1.7em;
+		padding: 6px 8px 3px;
+	}
+}
+.home .introduction-section .caption:hover,
+.home .introduction-section .caption:focus-within{
+	color: #fff;
+	background-color: #595959;
+	border: 2px solid #e3e3e3;
+}
+@media only screen and (min-width: 992px){
+	.home .introduction-section .caption:hover,
+	.home .introduction-section .caption:focus-within{
+		color: #fff;
+		background-color: #204A79;
+		border: 2px solid #e3e3e3;
+	}
+}
+
 /* browse tiles */
 .home section.tiles#browse{
 	padding: 1em 1em 0;

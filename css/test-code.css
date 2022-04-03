@@ -122,7 +122,7 @@ body{
 }
 
 
-/* 1.2.1 Header & Nav */
+/* 1.2.0 Header & Nav */
 
 header,
 header nav{
@@ -140,12 +140,12 @@ header{
 }
 @media only screen and (min-width: 768px){
 	header{
-		padding: .15em 0;
+		padding: .15em .25em;
 	}
 }
 @media only screen and (min-width: 992px){
 	header{
-		padding: .1em 0;
+		padding: .1em .25em;
 	}
 }
 .header-placeholder{
@@ -182,6 +182,44 @@ header a:visited,
 header button{
 	text-decoration: none;
 	color: #fff;
+}
+
+
+/* 1.2.1 Skip Nav */
+
+/* Skip to main content */
+/* #skip adapted from https://webaim.org/techniques/skipnav/ */
+#skip a{
+	font-size: 1em;
+	font-weight: 600;
+	text-decoration: underline;
+	color: #fff;
+	background: #d48c44;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	padding: .9em .55em;
+	top: -55px;
+	left: 0;
+	position: absolute;
+	z-index: 50;
+	transition: top .8s ease-out;
+	-webkit-transition: top .8s ease-out;
+}
+#skip a:focus{
+	outline-color: transparent;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	transition: top .4s ease-in;
+	-webkit-transition: top .4s ease-in;
+}
+@media only screen and (min-width: 768px){
+	#skip a:focus{
+		position: absolute;
+	}
 }
 
 
@@ -263,24 +301,6 @@ header nav .button-container{
 		align-items: center;
 		visibility: visible;
 	}
-}
-header nav .button-container .page-button{
-	font-size: .95em;
-	font-weight: 600;
-	white-space: nowrap;
-	text-decoration: none;
-	background-color: #e68300;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 .5em;
-	padding: .25em .7em;
-}
-header nav .button-container .page-button:hover,
-header nav .button-container .page-button:focus{
-	color: #e68300;
-	background-color: #e3e3e3;
-	outline: 1px solid #e68300;
 }
 header nav .button-container a.external{
 	height: fit-content;
@@ -555,6 +575,26 @@ a:focus{
 	color: #a83c37;
 	background-color: #E3E3E3;
 }
+.action-button,
+.action-button:visited{
+	font-size: .95em;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+	color: #fff;
+	background-color: #d48c44;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: 0 .5em;
+	padding: .25em .7em;
+}
+.action-button:hover,
+.action-button:focus{
+	color: #d48c44;
+	background-color: #fff;
+	outline: 1px solid #d48c44;
+}
 
 
 /* 1.17. Formatting */
@@ -633,6 +673,7 @@ hr {
 /* Home Page */
 
 /* introduction section */
+/* https://www.nngroup.com/articles/text-over-images/ used to inform text over image */
 @media only screen and (min-width: 768px){
 	.home .introduction-section{
 		position: relative;
@@ -661,12 +702,12 @@ hr {
 	width: 100%;
 }
 .home .introduction-section .introduction-text{
-	font-size: 1.1em;
+	font-size: 1.15em;
 	text-align: center;
 	margin: 0 auto;
 	padding: 1.5em;
 	display: inline-block;
-	opacity: .95;
+	opacity: .96;
 }
 @media only screen and (min-width: 768px){
 	.home .introduction-section .introduction-text{
@@ -679,31 +720,11 @@ hr {
 .home .introduction-section h2{
 	font-size: 1.6em;
 	font-family: 'Merriweather', serif;
+	color: #305055;
   margin: 0 auto;
 }
 .home .introduction-section p{
 	text-align: left;
-}
-.home .introduction-section a.mission-button{
-	font-size: .95em;
-	font-weight: 600;
-	white-space: nowrap;
-	text-decoration: none;
-	/* line-height: 1em; */
-	color: #fff;
-	background-color: #204A79;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: .5em;
-	padding: 0 .7em;
-	display: inline-block;
-}
-.home .introduction-section a.mission-button:hover,
-.home .introduction-section a.mission-button:focus{
-	color: #204A79;
-	background-color: #fff;
-	outline: 1px solid #204A79;
 }
 /* browse tiles */
 .home section.tiles#browse{

@@ -164,21 +164,21 @@ header{
 	}
 }
 .header-placeholder{
-	/* min-height: 37px; *//* */
+	min-height: 37px;
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
-		/* min-height: 42.3px; *//* */
+		min-height: 42.3px;
 	}	
 }
 @media only screen and (min-width: 768px){
 	.header-placeholder{
-		/* min-height: 43.8px; *//* */
+		min-height: 43.8px;
 	}	
 }
 @media only screen and (min-width: 992px){
 	.header-placeholder{
-		/* min-height: 47.9px; *//* */
+		min-height: 51.1px;
 	}	
 }
 header nav{
@@ -774,15 +774,15 @@ hr {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	margin: 0;
-	padding: 2px 4px;
+	padding: 4px 6px 2px;
 	bottom: 10px;
 	right: 10px;
 	position: absolute;
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
 	.home .introduction-section .caption{
 		font-size: 1.7em;
-		padding: 6px 8px 3px;
+		padding: 6px 8px 4px;
 	}
 }
 .home .introduction-section .caption:hover,

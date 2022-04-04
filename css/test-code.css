@@ -49,23 +49,48 @@ Alternative [id]:target Coding
 (black) #000;
 (light blue 1) #c4d8ef;
 (light blue 2) #dbe6f5;
-(site blue) #204A79;
+(site blue) #395f65;
 (light red) #b53831;
-(site red) #902D27;
+(site red) #7d4d1c;
 (site organe) #e68300;
-(light gray) #e3e3e3;
-(dark gray) #858585;
-(darker gray) #404040;
+(light gray) #e2e4e2;
+(dark gray) #4d5b51;
+(darker gray) #4d5b51;
 (dark brown) #424242;
 (near black) #525252;
 (black) #0b0b0b;
-(black alt) #191716;
+(black alt) #212119;
 also see 2.9 for manuscript colors
 */
 
 /* 
-test colors
-orange: #d48c44;
+>test colors
+white: #fff
+black: #212119;
+light blue: #c2d9db;
+dark blue: #395f65; (contrast checked)
+orange: #d3873c;
+dark brown: #7d4d1c; (contrast checked)
+light gray: #e2e4e2;
+mid-gray: #737d73;
+dark gray: #4d5b51; (contrast checked)
+*/
+
+/* 
+>font-sizes 
+OMV logo: 1.5em; / 1.7em (480) / 1.8em (768)
+Nav Font-Awesome: 1.6em
+Translate: 1.3em
+Google link: 11px
+Hamburger Menu: 1.5em / 1.7em (480) / 1.9em (768)
+Aside Credits: 1em
+Action Button: .95em
+Introduction Section Action Button .95em
+Small: .9em
+Home Introduction Text: 1.15em (768)
+Home Introduction h2: 1.5em (27.6px)
+Home Introduction Caption: 1.5em / 1.7em (768)
+Home Section Tiles Browse2: 1.1em
 */
 
 /** 1.0 Main CSS **/
@@ -80,12 +105,12 @@ orange: #d48c44;
 /* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 ::selection{
 	color: #fff;
-  background: #404040;
+  background: #4d5b51;
   text-shadow: none;
 }
 ::-moz-selection{
   color: #fff;
-	background: #858585;
+	background: #4d5b51;
   text-shadow: none;
 }
 .mobile{
@@ -113,7 +138,7 @@ button{
 html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: normal;
-	color: #191716;
+	color: #212119;
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -137,7 +162,7 @@ body{
 }
 
 
-/* 1.2.0 Header & Nav */
+/* 1.2 Header & Nav */
 
 header,
 header nav{
@@ -145,8 +170,8 @@ header nav{
   align-items: center;
 }
 header{
-	background-color: #191716;
-	padding: .25em 0;
+	background-color: #212119;
+	padding: .3em 0;
 }
 @media only screen and (min-width: 480px){
 	header{
@@ -164,7 +189,7 @@ header{
 	}
 }
 .header-placeholder{
-	min-height: 37px;
+	min-height: 38.6px;
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
@@ -178,7 +203,7 @@ header{
 }
 @media only screen and (min-width: 992px){
 	.header-placeholder{
-		min-height: 51.1px;
+		min-height: 51.2px;
 	}	
 }
 header nav{
@@ -205,11 +230,10 @@ header button{
 /* Skip to main content */
 /* #skip adapted from https://webaim.org/techniques/skipnav/ */
 #skip a{
-	font-size: 1em;
 	font-weight: 600;
 	text-decoration: underline;
 	color: #fff;
-	background: #d48c44;
+	background: #395f65;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 10px;
@@ -326,7 +350,7 @@ header nav .button-container a.external:focus{
 }
 header nav .button-container a.external i{
 	font-size: 1.6em;
-	color: #e3e3e3;
+	color: #e2e4e2;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -335,8 +359,8 @@ header nav .button-container a.external i{
 }
 header nav .button-container a.external:hover i,
 header nav .button-container a.external:focus i{
-	color: #191716;
-	background-color: #e3e3e3;
+	color: #212119;
+	background-color: #e2e4e2;
 }
 
 
@@ -387,9 +411,9 @@ header nav .button-container a.external:focus i{
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo:hover,
 #google_translate_element div.goog-te-gadget .goog-te-combo:focus{
-	color: #E3E3E3;
-	background-color: #191716;
-	border: 2px #E3E3E3 solid;
+	color: #e2e4e2;
+	background-color: #212119;
+	border: 2px #e2e4e2 solid;
 }
 div.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
@@ -407,7 +431,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2){
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
 div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
-	border: 2px #204A79 solid;
+	border: 2px #395f65 solid;
 }
 #google_translate_element > div > span > a > img,
 #google_translate_element > div > span > a > img{
@@ -422,7 +446,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 .goog-logo-link:link{
 	font-size: 11px !important;
 	font-weight: normal !important;
-	color: #666 !important;
+	color: #4d5b51 !important;
 }
 
 
@@ -471,13 +495,19 @@ header nav .hamburger-menu:focus{
 }
 
 
-/* 1.4 Main */
+/* 1.4 Main and Aside */
 
 main{
+	font-size: 1em;
   line-height: 1.875em;
 	margin: 0 auto;
 	padding: 0;
 	display: block;
+}
+@media only screen and (min-width: 768px){
+  main{
+		font-size: 1.125em;
+	}
 }
 @media only screen and (min-width: 992px){
   main{
@@ -485,6 +515,18 @@ main{
     max-width: 1366px;
   }
 }
+aside.credits{
+	font-size: 1em;
+	line-height: 1.875em;
+	padding: 1em;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 768px){
+		aside.credits{
+			max-width: 768px;
+	}
+}
+
 
 
 /* 1.5. Footer */
@@ -493,7 +535,7 @@ footer{
 	font-weight: 400;
 	text-align: center;
 	color: #fff;
-	background-color: #204A79;
+	background-color: #395f65;
 	margin: 0 auto;
 	padding: 0;
 	clear: both;
@@ -509,8 +551,8 @@ footer a:visited{
 }
 footer a:hover,
 footer a:focus{
-	color: #a83c37;
-	background-color: #E3E3E3;
+	color: #7d4d1c;
+	background-color: #e2e4e2;
 }
 footer p{
 	margin: 0;
@@ -554,7 +596,7 @@ footer p .site-detail:last-child::after{
 
 img{
 	font-weight: 300;
-	color: #e6e6e6;
+	color: #e2e4e2;
 	border-style: none;
 	width: 100%;
 	height: auto;
@@ -565,13 +607,13 @@ a img{
 }
 a:hover img,
 a:focus img{
-	border: 3px #204A79 solid;
+	border: 3px #395f65 solid;
 }
 .image-border{
-	border: 1px solid #e3e3e3;
+	border: 1px solid #e2e4e2;
 }
 .image-border-dark{
-	border: 1px solid #858585;
+	border: 1px solid #4d5b51;
 }
 
 
@@ -582,17 +624,17 @@ a:focus img{
 }
 a,
 a:visited{
-	color: #204A79;
+	color: #395f65;
 	background-color: transparent;
 }
 a:hover,
 a:focus{
-	color: #a83c37;
-	background-color: #E3E3E3;
+	color: #7d4d1c;
+	background-color: #e2e4e2;
 }
 .action-button,
 .action-button:visited{
-	font-size: .95em;
+	font-size: 1em;
 	font-weight: 600;
 	white-space: nowrap;
 	text-decoration: none;
@@ -625,7 +667,7 @@ a:focus{
 	width: 50%;
 }
 .highlight{
-	color: #902D27;
+	color: #7d4d1c;
 	font-style: italic;
 }
 .italic{
@@ -638,10 +680,10 @@ a:focus{
   text-align: right;
 }
 .site-blue{
-	color: #204A79;
+	color: #395f65;
 }
 .site-red{
-	color: #902D27;
+	color: #7d4d1c;
 }
 .small{
 	font-size: .9em;
@@ -677,7 +719,7 @@ hr {
   /* display: block; */
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e2e4e2;
   margin: 1em 0;
   padding: 0;
 }
@@ -734,12 +776,10 @@ hr {
 }
 @media only screen and (min-width: 768px){
 	.home .introduction-section .introduction-text{
-		font-size: 1.15em;
-		background-color: #e3e3e3;
+		background-color: #e2e4e2;
 		border-radius: 6px;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
-		/* padding: 1em; */
 	}
 }
 @media only screen and (min-width: 992px){
@@ -750,7 +790,7 @@ hr {
 .home .introduction-section h2{
 	font-size: 1.5em;
 	font-family: 'Merriweather', serif;
-	color: #305055;
+	color: #395f65;
   margin: 0 auto;
 }
 .home .introduction-section p{
@@ -758,18 +798,22 @@ hr {
 	line-height: 1.875em;
 	margin-bottom: .5em;
 }
-@media only screen and (min-width: 768px){
+.home .introduction-section .action-button{
+	font-size: .95em;
+	padding: 8px 12px;
+}
+/* @media only screen and (min-width: 768px){
 	.home .introduction-section .action-button{
 		padding: 9px 13px;
 	}
-}
+} */
 .home .introduction-section .caption{
 	font-size: 1.5em;
 	font-weight: normal;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #595959;
-	background-color: #e3e3e3;
-	border: 2px solid #595959;
+	color: #4d5b51;
+	background-color: #e2e4e2;
+	border: 2px solid #4d5b51;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -788,15 +832,15 @@ hr {
 .home .introduction-section .caption:hover,
 .home .introduction-section .caption:focus-within{
 	color: #fff;
-	background-color: #595959;
-	border: 2px solid #e3e3e3;
+	background-color: #4d5b51;
+	border: 2px solid #e2e4e2;
 }
 @media only screen and (min-width: 992px){
 	.home .introduction-section .caption:hover,
 	.home .introduction-section .caption:focus-within{
 		color: #fff;
-		background-color: #204A79;
-		border: 2px solid #e3e3e3;
+		background-color: #395f65;
+		border: 2px solid #e2e4e2;
 	}
 }
 
@@ -805,7 +849,7 @@ hr {
 	padding: 1em 1em 0;
 }
 .home section.tiles#browse2{
-	padding: 0 1em 1em;
+	padding: 0 1em;
 }
 .home section.tiles{
   margin: 0 auto;
@@ -852,14 +896,14 @@ hr {
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .home section.tiles div{
-	background: #e6e6e6;
+	background: #e2e4e2;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
 .home section.tiles div:hover,
 .home section.tiles div:focus-within{
-	outline: 2px solid #204A79;
+	outline: 2px solid #395f65;
 	overflow: hidden;
 }
 .home section.tiles div::after{
@@ -868,7 +912,7 @@ hr {
 	display: block;
 }
 .home section.tiles div img{
-	background: #e6e6e6;
+	background: #e2e4e2;
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -880,7 +924,7 @@ hr {
 	object-position: 50% 50%;
 }
 .home section.tiles div a img{
-	border: 1px solid #e3e3e3;
+	border: 1px solid #e2e4e2;
 }
 .home section.tiles div a:hover img,
 .home section.tiles div a:focus img{

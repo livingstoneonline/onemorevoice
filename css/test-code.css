@@ -498,8 +498,7 @@ header nav .hamburger-menu:focus{
 
 /* 1.4 Main and Aside */
 
-main,
-aside{
+main{
 	font-size: 1em;
   line-height: 1.875em;
 	margin: 0 auto;
@@ -514,10 +513,19 @@ aside{
   }
 }
 aside{
+	margin: 0 auto;
+	padding: 0;
 	display: flex;
 }
-aside div{
+@media only screen and (min-width: 992px){
+  aside{
+    min-width: 992px;
+    max-width: 1366px;
+  }
+}
+/* aside div{
 	background-color: #dcd3a6;
+	margin: 1em 1em;
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
@@ -527,7 +535,7 @@ aside div{
 		display: block;
 		visibility: visible;
 	}
-}
+} */
 .credits{
 	font-size: 1em;
 	line-height: 1.875em;

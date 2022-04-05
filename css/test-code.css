@@ -78,12 +78,13 @@ dark gray: #4d5b51; (contrast checked)
 
 /* 
 >font-sizes 
-OMV logo: 1.5em; / 1.7em (480) / 1.8em (768)
+omv logo: 1.5em; / 1.7em (480) / 1.8em (768)
 Nav Font-Awesome: 1.6em
-Translate: 1.3em
+Translate: 1.35em
 Google link: 11px
 Hamburger Menu: 1.5em / 1.7em (480) / 1.9em (768)
-Aside Credits: 1em
+Main: 1em / 1.125em (992)
+Aside Credits: 1em / 1.1em (992)
 Action Button: .95em
 Introduction Section Action Button .95em
 Small: .9em
@@ -175,7 +176,7 @@ header{
 }
 @media only screen and (min-width: 480px){
 	header{
-		padding: .2em 0;
+		padding: .25em 0;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -193,7 +194,7 @@ header{
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
-		min-height: 42.3px;
+		min-height: 44px;
 	}	
 }
 @media only screen and (min-width: 768px){
@@ -399,7 +400,7 @@ header nav .button-container a.external:focus i{
 	width: 3.5em;
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo{
-	font-size: 1.3em;
+	font-size: 1.35em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	border: 2px solid transparent;
@@ -497,33 +498,54 @@ header nav .hamburger-menu:focus{
 
 /* 1.4 Main and Aside */
 
-main{
+main,
+aside{
 	font-size: 1em;
   line-height: 1.875em;
 	margin: 0 auto;
 	padding: 0;
 	display: block;
 }
-@media only screen and (min-width: 768px){
-  main{
-		font-size: 1.125em;
-	}
-}
 @media only screen and (min-width: 992px){
   main{
+		font-size: 1.125em;
     min-width: 992px;
     max-width: 1366px;
   }
 }
-aside.credits{
+aside{
+	display: flex;
+}
+aside div{
+	background-color: #dcd3a6;
+	flex-grow: 1;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	aside div{
+		display: block;
+		visibility: visible;
+	}
+}
+.credits{
 	font-size: 1em;
 	line-height: 1.875em;
+	background-color: initial;
 	padding: 1em;
 	margin: 0 auto;
+	display: block;
+	visibility: visible;
 }
 @media only screen and (min-width: 768px){
-		aside.credits{
+		.credits{
 			max-width: 768px;
+			padding: 1em 2em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.credits{
+		font-size: 1.1em;
 	}
 }
 
@@ -802,11 +824,6 @@ hr {
 	font-size: .95em;
 	padding: 8px 12px;
 }
-/* @media only screen and (min-width: 768px){
-	.home .introduction-section .action-button{
-		padding: 9px 13px;
-	}
-} */
 .home .introduction-section .caption{
 	font-size: 1.5em;
 	font-weight: normal;
@@ -887,11 +904,12 @@ hr {
   }
 }
 .home section.tiles section h3{
+	font-size: 1.1em;
 	text-align: left;
 	margin: 0;
 }
 .home section.tiles#browse2 section h3{
-	font-size: 1.1em;
+	font-size: 1em;
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */

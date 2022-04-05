@@ -71,6 +71,7 @@ also see 2.9 for manuscript colors
 (dark blue) #395f65; (contrast checked)
 (orange) #d3873c;
 (dark brown) #7d4d1c; (contrast checked)
+(super light gray) #ededed;
 (light gray) #e2e4e2;
 (mid-gray) #737d73;
 (dark gray) #4d5b51; (contrast checked)
@@ -140,6 +141,7 @@ html{
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	color: #212119;
+	background-color: #ededed;
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -794,6 +796,7 @@ hr {
 }
 .home .introduction-section img{
 	margin: 0 auto;
+	padding: 1rem 1.5rem 0;
 	width: 100%;
 	
 }

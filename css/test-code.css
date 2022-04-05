@@ -64,23 +64,23 @@ also see 2.9 for manuscript colors
 */
 
 /* 
->test colors
-white: #fff
-black: #212119;
-light blue: #c2d9db;
-dark blue: #395f65; (contrast checked)
-orange: #d3873c;
-dark brown: #7d4d1c; (contrast checked)
-light gray: #e2e4e2;
-mid-gray: #737d73;
-dark gray: #4d5b51; (contrast checked)
+>>test colors
+(white) #fff
+(black) #212119;
+(light blue) #c2d9db;
+(dark blue) #395f65; (contrast checked)
+(orange) #d3873c;
+(dark brown) #7d4d1c; (contrast checked)
+(light gray) #e2e4e2;
+(mid-gray) #737d73;
+(dark gray) #4d5b51; (contrast checked)
 */
 
 /* 
->font-sizes 
+>>font-sizes 
 omv logo: 1.5em; / 1.7em (480) / 1.8em (768)
-Nav Font-Awesome: 1.6em
-Translate: 1.35em
+nav Font-Awesome: 1.6em
+translate: 1.35em
 Google link: 11px
 Hamburger Menu: 1.5em / 1.7em (480) / 1.9em (768)
 Main: 1em / 1.125em (992)
@@ -524,9 +524,9 @@ aside{
     max-width: 1366px;
   }
 }
-/* aside div{
+aside div{
 	background-color: #dcd3a6;
-	margin: 1rem;
+	margin: 1rem 1.5rem 1.5rem;
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
@@ -536,7 +536,7 @@ aside{
 		display: block;
 		visibility: visible;
 	}
-} */
+}
 .credits{
 	font-size: 1rem;
 	line-height: 1.875em;
@@ -549,7 +549,7 @@ aside{
 @media only screen and (min-width: 768px){
 		.credits{
 			max-width: 768px;
-			padding: 1.5rem 2rem;
+			padding: 1rem 2rem 1.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -674,7 +674,7 @@ a:focus{
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	margin: .5rem;
-	padding: .25rem .5rem;
+	padding: .25rem .75rem;
 	display: inline-block;
 }
 .action-button:hover,
@@ -910,12 +910,12 @@ hr {
   }
 }
 .home section.tiles section h3{
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	text-align: left;
 	margin: 0;
 }
 .home section.tiles#browse2 section h3{
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */

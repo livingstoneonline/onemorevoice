@@ -528,7 +528,7 @@ aside{
 }
 aside div{
 	background-color: #dcd3a6;
-	margin: 1rem 2rem 1.5rem;
+	margin: 1rem 2.5rem 1.5rem;
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
@@ -543,7 +543,7 @@ aside div{
 	font-size: 1rem;
 	line-height: 1.875em;
 	background-color: initial;
-	padding: 0 calc(1rem + 2px);
+	padding: 0 1rem;
 	margin: 0 auto;
 	display: block;
 	visibility: visible;
@@ -551,7 +551,7 @@ aside div{
 @media only screen and (min-width: 768px){
 		.credits{
 			max-width: 768px;
-			padding: 0 calc(1.5rem + 2px);
+			padding: 0 1.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -891,29 +891,28 @@ hr {
 }
 .home section.tiles section{
   text-align: center;
-	border: 2px solid transparent;
   width: 100%;
   margin: .5rem 1rem;
 	position: relative;
 }
 .home section.tiles section:hover,
 .home section.tiles section:focus-within{
-	border: 2px solid #395f65;
+	outline: 2px solid #395f65;
 }
 @media only screen and (min-width: 768px){
   .home section.tiles section{
 		margin: .5rem;
-    width: calc(50% - 1rem - 4px);
+    width: calc(50% - 2rem);
   }
 }
 @media only screen and (min-width: 992px){
   .home section.tiles#browse section{
-    width: calc(50% - 1rem - 4px);
+    width: calc(50% - 2rem);
   }
 }
 @media only screen and (min-width: 992px){
   .home section.tiles#browse2 section{
-    width: calc(33% - 1rem - 4px);
+    width: calc(33% - 2rem);
   }
 }
 .home section.tiles section p{

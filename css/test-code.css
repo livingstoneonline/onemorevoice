@@ -528,7 +528,7 @@ aside{
 }
 aside div{
 	background-color: #dcd3a6;
-	margin: 1rem 1.5rem 1.5rem;
+	margin: 1rem 2rem 1.5rem;
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
@@ -551,11 +551,12 @@ aside div{
 @media only screen and (min-width: 768px){
 		.credits{
 			max-width: 768px;
-			/* padding: 1rem 2rem 1.5rem; */
+			padding: 0 calc(1.5rem + 2px);
 	}
 }
 @media only screen and (min-width: 992px){
 	.credits{
+		padding: 1em 0;
 		font-size: 1.1rem;
 	}
 }
@@ -880,6 +881,14 @@ hr {
 	align-items: center;
 	align-content: stretch;
 }
+@media only screen and (min-width: 768px){
+  .home section.tiles{
+		padding: 0 1rem;
+	}
+	.home section.tiles#browse{
+		padding-top: .5rem;
+	}
+}
 .home section.tiles section{
   text-align: center;
 	border: 2px solid transparent;
@@ -893,17 +902,18 @@ hr {
 }
 @media only screen and (min-width: 768px){
   .home section.tiles section{
-    width: calc(50% - 2rem - 4px);
+		margin: .5rem;
+    width: calc(50% - 1rem - 4px);
   }
 }
 @media only screen and (min-width: 992px){
   .home section.tiles#browse section{
-    width: calc(50%);
+    width: calc(50% - 1rem - 4px);
   }
 }
 @media only screen and (min-width: 992px){
   .home section.tiles#browse2 section{
-    width: calc(33%);
+    width: calc(33% - 1rem - 4px);
   }
 }
 .home section.tiles section p{
@@ -925,6 +935,11 @@ hr {
 	right: 0;
 	opacity: .9;
 	z-index: 100;
+}
+@media only screen and (min-width: 992px){
+	.home section.tiles#browse2 section p{
+		font-size: 1rem;
+	}
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */

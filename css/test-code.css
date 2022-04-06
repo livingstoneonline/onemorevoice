@@ -219,7 +219,7 @@ header nav{
 	justify-content: space-between;
 	position: absolute;
 	top: 0;
-	z-index: 20;
+	/* z-index: 20; */
 }
 @media only screen and (min-width: 992px){
 	header nav{
@@ -227,10 +227,10 @@ header nav{
 		max-width: 1366px;
 	}
 }
-header nav.fallback{
+/* header nav.fallback{
 	height: 100%;
 	z-index: 19;
-}
+} */
 header a,
 header a:visited,
 header button{
@@ -508,7 +508,7 @@ header nav .hamburger-menu:hover,
 header nav .hamburger-menu:focus{
 	outline: 2px solid #fff;
 }
-header nav.fallback a.hamburger-menu{
+/* header nav.fallback a.hamburger-menu{
 	height: auto;
 }
 @media only screen and (min-width: 768px){
@@ -521,7 +521,7 @@ header nav.fallback a.hamburger-menu{
     display: block;
     visibility: visible;
 	}
-}
+} */
 
 
 /* 1.4 Main and Aside */

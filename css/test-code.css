@@ -543,7 +543,7 @@ aside div{
 	font-size: 1rem;
 	line-height: 1.875em;
 	background-color: initial;
-	padding: 1.5rem;
+	padding: 0 calc(1rem + 2px);
 	margin: 0 auto;
 	display: block;
 	visibility: visible;
@@ -551,7 +551,7 @@ aside div{
 @media only screen and (min-width: 768px){
 		.credits{
 			max-width: 768px;
-			padding: 1rem 2rem 1.5rem;
+			/* padding: 1rem 2rem 1.5rem; */
 	}
 }
 @media only screen and (min-width: 992px){
@@ -871,12 +871,6 @@ hr {
 }
 
 /* browse tiles */
-.home section.tiles#browse{
-	padding: 1rem 1rem 0;
-}
-.home section.tiles#browse2{
-	padding: 0 1rem;
-}
 .home section.tiles{
   margin: 0 auto;
   display: flex;
@@ -888,37 +882,49 @@ hr {
 }
 .home section.tiles section{
   text-align: center;
+	border: 2px solid transparent;
   width: 100%;
-  margin: .5rem;
+  margin: .5rem 1rem;
+	position: relative;
+}
+.home section.tiles section:hover,
+.home section.tiles section:focus-within{
+	border: 2px solid #395f65;
 }
 @media only screen and (min-width: 768px){
-	.home section.tiles section{
-		margin: 1rem auto;
-	}
-}
-@media only screen and (min-width: 768px){
-  .home section.tiles#browse section,
-	.home section.tiles#browse2 section{
-    width: calc(50% - 1rem);
+  .home section.tiles section{
+    width: calc(50% - 2rem - 4px);
   }
 }
 @media only screen and (min-width: 992px){
   .home section.tiles#browse section{
-    width: calc(33% - 1rem);
+    width: calc(50%);
   }
 }
 @media only screen and (min-width: 992px){
   .home section.tiles#browse2 section{
-    width: calc(25% - 1rem);
+    width: calc(33%);
   }
 }
-.home section.tiles section h3{
-	font-size: 1.2rem;
-	text-align: left;
-	margin: 0;
-}
-.home section.tiles#browse2 section h3{
+.home section.tiles section p{
 	font-size: 1.1rem;
+	font-family: 'Merriweather', serif;
+	white-space: nowrap;
+	color: #fff;
+	background-color: rgb(66,66,66);
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0;
+	text-decoration: none;
+	border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	-moz-border-radius: 6px 0 0 0;
+	padding: .5rem 1rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: .9;
+	z-index: 100;
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
@@ -928,18 +934,14 @@ hr {
 	padding: 0;
 	position: relative;
 }
-.home section.tiles div:hover,
-.home section.tiles div:focus-within{
-	outline: 2px solid #395f65;
-	overflow: hidden;
-}
 .home section.tiles div::after{
 	content: "";
 	padding-bottom: 66.67%;
 	display: block;
 }
-.home section.tiles div img{
+.home section.tiles a div img{
 	background: #e2e4e2;
+	border: 0;
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -949,11 +951,4 @@ hr {
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
-}
-.home section.tiles div a img{
-	border: 1px solid #e2e4e2;
-}
-.home section.tiles div a:hover img,
-.home section.tiles div a:focus img{
-	opacity: .7;
 }

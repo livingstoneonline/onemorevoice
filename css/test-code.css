@@ -174,25 +174,31 @@ header nav{
 }
 header{
 	background-color: #212119;
+	height: 38.6px;
 	padding: .3rem 0;
 }
 @media only screen and (min-width: 480px){
 	header{
+		height: 44px;
 		padding: .25rem 0;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
+		height: 43.8px;
 		padding: .15rem .25rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	header{
 		padding: .1rem .25rem;
+		height: 51.2px;
 	}
 }
 .header-placeholder{
 	min-height: 38.6px;
+	position: absolute;
+	top: 0;
 }
 @media only screen and (min-width: 480px){
 	.header-placeholder{
@@ -213,12 +219,16 @@ header nav{
 	margin: 0 auto;
 	width: 100%;
 	justify-content: space-between;
+	z-index: 20;
 }
 @media only screen and (min-width: 992px){
 	header nav{
-		min-width: 992px;
+		min-width: calc(992px - 1rem);
 		max-width: 1366px;
 	}
+}
+header nav.fallback{
+	z-index: 19;
 }
 header a,
 header a:visited,
@@ -496,6 +506,20 @@ header nav .hamburger-menu .fa-bars{
 header nav .hamburger-menu:hover,
 header nav .hamburger-menu:focus{
 	outline: 2px solid #fff;
+}
+header nav.fallback a.hamburger-menu{
+	height: auto;
+}
+@media only screen and (min-width: 768px){
+	header nav.fallback a.hamburger-menu{
+		height: 1.75rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	header nav.fallback a.hamburger-menu {
+    display: block;
+    visibility: visible;
+	}
 }
 
 

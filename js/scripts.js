@@ -303,14 +303,14 @@ function checkUrl () {
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 function openNav() {
-	document.getElementById("nav7").style.display = "block";
-	document.getElementById("nav7").style.visibility = "visible";
+	document.getElementById("overlay-menu").style.display = "block";
+	document.getElementById("overlay-menu").style.visibility = "visible";
 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 };
 
 function closeNav() {
-	document.getElementById("nav7").style.display = "none";
-	document.getElementById("nav7").style.visibility = "hidden";
+	document.getElementById("overlay-menu").style.display = "none";
+	document.getElementById("overlay-menu").style.visibility = "hidden";
 	document.getElementsByTagName("html")[0].style.overflowY = "unset";
 };
 

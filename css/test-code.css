@@ -377,7 +377,7 @@ header nav .button-container a.external:focus i{
 	display: flex;
 }
 .translate a{
-	padding: 2px;
+	margin-right: 4px;
 	display: flex;
   align-items: center;
 }
@@ -386,14 +386,12 @@ header nav .button-container a.external:focus i{
 	background: transparent;
 }
 .translate img{
-	margin: 0 4px;
 	width: 22px;
 	height: 22px;
 }
 .translate a:hover img,
 .translate a:focus img{
 	border: none;
-	outline: 1px solid #e2e4e2;
 }
 /* Included in criticalTEI CSS, start */
 /* #google_translate_element{

@@ -377,17 +377,21 @@ header nav .button-container a.external:focus i{
 	display: flex;
 }
 .translate a{
+	border: 2px solid transparent;
 	margin-right: 4px;
+	padding: 0 6px;
 	display: flex;
   align-items: center;
 }
 .translate a:hover,
 .translate a:focus{
 	background: transparent;
+	border: 2px solid #e2e4e2;
 }
 .translate img{
-	width: 22px;
-	height: 22px;
+	border: none;
+	width: 20px;
+	height: 20px;
 }
 .translate a:hover img,
 .translate a:focus img{

@@ -997,3 +997,141 @@ hr {
 	overflow: hidden;
 	object-position: 50% 50%;
 }
+
+
+/* Hamburger Menu & Close X; Fallback Menu */
+#nav7 .close{
+	color: #0b0b0b;
+	text-decoration: none;
+	border: none;
+	background: transparent;
+	height: 32px;
+	top: 50%;
+	position: absolute;
+	transform: translate(0, -50%);
+}
+#nav7 .close{
+	width: 36px;
+	right: .5em;
+}
+@media only screen and (min-width: 480px){
+	#nav7 .close{
+		right: 1.5em;
+	}
+}
+@media only screen and (min-width: 768px){
+	#nav7 .close{
+		right: 2em;
+	}
+}
+@media only screen and (min-width: 992px){
+	#nav7 .close{
+		display: none;
+		visibility: hidden;
+	}
+}
+#nav7 .close .fa-times{
+	font-size: 1.6em;
+}
+@media only screen and (min-width: 320px){
+	#nav7 .close .fa-times{
+		font-size: 1.8em;
+	}
+}
+#nav7 .close:hover,
+#nav7 .close:focus{
+	outline: 2px solid #204A79;
+}
+/* The following prevents the overlay from appearing above 992px */
+@media only screen and (min-width: 992px){
+	#nav7{
+		display: none !important;
+		visibility: hidden;
+	}
+}
+
+/* 1.7.3. Overlay */
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+/* Height & width depends on how you want to reveal the overlay (see scripts.js) */
+.overlay{
+	font: 16px 'Libre Franklin', sans-serif;
+	text-align: center;
+	color: #0b0b0b;
+	background-color: #767676;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed; /* Stay in place */
+	z-index: 100; /* Sit on top */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: scroll;
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	display: none;
+	visibility: hidden;
+	opacity: 1;
+}
+.overlay-content{
+	font-size: 1em;
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid #0b0b0b;
+	margin: 4em auto 2em;
+	padding: 1.5em;
+	width: fit-content;
+	position: relative;
+	display: inline-block;
+}
+@media only screen and (min-width: 480px){
+	.overlay-content{
+		margin: 5.5em auto 3em;
+		padding: 2em 0;
+	}
+}
+@media only screen and (min-width: 768px){
+	.overlay-content{
+		margin: 6.5em auto 3em;
+		padding: 3.5em 1.5em;
+	}
+}
+.overlay ul{
+	list-style-type: none;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0;
+}
+.overlay li{
+	padding: .8em 0;
+}
+.overlay li.section ul li{
+	padding: .5em 0;
+}
+.overlay a{
+	text-decoration: underline;
+}
+.overlay strong{
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 700;
+}
+.overlay-content .container-home,
+.overlay-content .container-left,
+.overlay-content .container-right{
+	margin: 0 2em;
+	clear: both;
+}
+@media only screen and (min-width: 480px){
+	.overlay-content .container-left,
+	.overlay-content .container-right{
+		float: left;
+		clear: unset;
+	}
+}
+@media only screen and (min-width: 768px){
+	.overlay-content .container-home,
+	.overlay-content .container-left,
+	.overlay-content .container-right{
+		float: left;
+		margin: 0 3em;
+	}
+}

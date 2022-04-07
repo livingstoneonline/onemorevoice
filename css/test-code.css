@@ -374,6 +374,26 @@ header nav .button-container a.external:focus i{
   /* max-width: 170px; */
   height: 32px;
 	overflow: hidden;
+	display: flex;
+}
+.translate a{
+	padding: 2px;
+	display: flex;
+  align-items: center;
+}
+.translate a:hover,
+.translate a:focus{
+	background: transparent;
+}
+.translate img{
+	margin: 0 4px;
+	width: 22px;
+	height: 22px;
+}
+.translate a:hover img,
+.translate a:focus img{
+	border: none;
+	outline: 1px solid #e2e4e2;
 }
 /* Included in criticalTEI CSS, start */
 /* #google_translate_element{

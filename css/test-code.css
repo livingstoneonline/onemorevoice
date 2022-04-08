@@ -169,13 +169,13 @@ body{
 
 header,
 header nav,
-.overlay,
-.overlay nav{
+.overlay-header,
+.overlay-header nav{
 	display: flex;
   align-items: center;
 }
 header,
-.overlay nav{
+.overlay-header{
 	background-color: #212119;
 	margin: 0 auto;
 	padding: .3rem 0;
@@ -185,38 +185,40 @@ header,
 }
 @media only screen and (min-width: 480px){
 	header,
-	.overlay nav{
+	.overlay-header{
 		padding: .25rem 0;
 		height: 44px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header,
-	.overlay nav{
+	.overlay-header{
 		padding: .1rem .25rem;
 		height: 51.2px;
 	}
 }
-header div.nav-container,
-.overlay{
+.nav-container,
+.overlay-nav-container{
 	padding: 0 .5rem;
 	width: 100%;
 }
 header nav,
-.overlay nav{
+.overlay-header nav{
 	width: 100%;
 	justify-content: space-between;
 }
 @media only screen and (min-width: 992px){
 	header nav,
-	.overlay nav{
+	.overlay-header nav{
 		max-width: 1366px;
 	}
 }
 header nav a,
 header nav a:visited,
-header .overlay a,
-header nav button{
+header nav button,
+.overlay-header nav a,
+.overlay-header nav a:visited,
+.overlay-header nav button{
 	text-decoration: none;
 	color: #fff;
 }
@@ -261,47 +263,47 @@ header nav button{
 
 /* 1.2.2 Logo */
 
-header nav .logo-container{
+nav .logo-container{
 	margin: 0;
 }
-header nav .logo-container a{
+nav .logo-container a{
 	display: flex;
 	align-items: center;
 }
-header nav .logo-container a:hover,
-header nav .logo-container a:focus{
+nav .logo-container a:hover,
+nav .logo-container a:focus{
 	color: #fff;
 	background: transparent;
 }
 /* OMV Icon */
-header nav .logo-container a img{
+nav .logo-container a img{
 	border: none;
 	border-radius: 50%;
 }
-header nav .logo-container a img{
+nav .logo-container a img{
 	margin: 0;
 	width: 29px;
 	height: 29px;
 }
 @media only screen and (min-width: 480px){
-	header nav .logo-container a img{
+	nav .logo-container a img{
 		width: 36px;
 		height: 36px;
 	}
 }
 @media only screen and (min-width: 768px){
-	header nav .logo-container a img{
+	nav .logo-container a img{
 		width: 39px;
 		height: 39px;
 	}
 }
-header nav .logo-container a:hover img,
-header nav .logo-container a:focus img{
+nav .logo-container a:hover img,
+nav .logo-container a:focus img{
 	border: none;
 	outline: 2px solid #fff;
 }
 /* OMV Logo */
-header nav .logo-container a h1{
+nav .logo-container a h1{
 	font-family: 'Amaranth', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -309,44 +311,44 @@ header nav .logo-container a h1{
 	margin: 0 0 0 .5rem;
 }
 @media only screen and (min-width: 480px){
-	header nav .logo-container a h1{
+	nav .logo-container a h1{
 		font-size: 1.7rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	header nav .logo-container a h1{
+	nav .logo-container a h1{
 		font-size: 1.8rem;
 	}
 }
-header nav .logo-container a:hover h1,
-header nav .logo-container a:focus h1{
+nav .logo-container a:hover h1,
+nav .logo-container a:focus h1{
 	text-decoration: underline;
 }
 
 
 /* 1.2.2 Buttons */
 
-header nav .button-container{
+nav .button-container{
 	white-space: nowrap;
 	margin: 0;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
-	header nav .button-container{
+	nav .button-container{
 		display: flex;
 		align-items: center;
 		visibility: visible;
 	}
 }
-header nav .button-container a.external{
+nav .button-container a.external{
 	height: fit-content;
 }
-header nav .button-container a.external:hover,
-header nav .button-container a.external:focus{
+nav .button-container a.external:hover,
+nav .button-container a.external:focus{
 	background: transparent;
 }
-header nav .button-container a.external i{
+nav .button-container a.external i{
 	font-size: 1.6rem;
 	color: #e2e4e2;
 	border-radius: 6px;
@@ -355,8 +357,8 @@ header nav .button-container a.external i{
 	margin: 0 .2rem;
 	padding: .25rem .5rem;
 }
-header nav .button-container a.external:hover i,
-header nav .button-container a.external:focus i{
+nav .button-container a.external:hover i,
+nav .button-container a.external:focus i{
 	color: #212119;
 	background-color: #e2e4e2;
 }
@@ -478,8 +480,8 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 
 /* 1.2.4 Hamburger Menu */
 
-header nav .hamburger-menu,
-header nav .close{
+nav .hamburger-menu,
+nav .close{
 	text-align: center;
 	background: transparent;
 	border: none;
@@ -488,49 +490,49 @@ header nav .close{
 	height: 28px;
 }
 @media only screen and (min-width: 480px){
-	header nav .hamburger-menu,
-	header nav .close{
+	nav .hamburger-menu,
+	nav .close{
 		margin-right: .75rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	header nav .hamburger-menu,
-	header nav .close{
+	nav .hamburger-menu,
+	nav .close{
 		margin-right: 1rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	header nav .hamburger-menu{
+	nav .hamburger-menu{
 		display: none;
 		visibility: hidden;
 	}
 }
 @media only screen and (min-width: 992px){
-	header nav.fallback .hamburger-menu{
+	nav.fallback .hamburger-menu{
 		display: block;
 		visibility: visible;
 	}
 }
-header nav .hamburger-menu .fa-bars,
-header nav .fa-times{
+nav .hamburger-menu .fa-bars,
+nav .fa-times{
 	font-size: 1.5rem;
 }
 @media only screen and (min-width: 480px){
-	header nav .hamburger-menu .fa-bars,
-	header nav .fa-times{
+	nav .hamburger-menu .fa-bars,
+	nav .fa-times{
 		font-size: 1.7rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	header nav .hamburger-menu .fa-bars,
-	header nav .fa-times{
+	nav .hamburger-menu .fa-bars,
+	nav .fa-times{
 		font-size: 1.9rem;
 	}
 }
-header nav .hamburger-menu:hover,
-header nav .hamburger-menu:focus,
-header nav .close:hover,
-header nav .close:focus{
+nav .hamburger-menu:hover,
+nav .hamburger-menu:focus,
+nav .close:hover,
+nav .close:focus{
 	outline: 2px solid #fff;
 }
 

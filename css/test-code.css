@@ -869,8 +869,8 @@ hr {
 	-moz-border-radius: 4px;
 	margin: 0;
 	padding: 4px 6px 2px;
-	bottom: 10px;
-	right: 10px;
+	bottom: 1rem;
+	left: 1rem;
 	position: absolute;
 }
 @media screen and (min-width: 768px){
@@ -889,7 +889,7 @@ hr {
 	.home .introduction-section .caption:hover,
 	.home .introduction-section .caption:focus-within{
 		color: #fff;
-		background-color: #395f65;
+		background-color: #4d5b51;
 		border: 2px solid #e2e4e2;
 	}
 }
@@ -923,7 +923,8 @@ hr {
 }
 .home section.tiles section:hover,
 .home section.tiles section:focus-within{
-	outline: 2px solid #395f65;
+	outline: 3px solid #395f65;
+	opacity: .7;
 }
 @media only screen and (min-width: 768px){
   .home section.tiles section{

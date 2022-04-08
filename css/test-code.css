@@ -168,11 +168,14 @@ body{
 /* 1.2 Header & Nav */
 
 header,
-header nav{
+header nav,
+.overlay,
+.overlay nav{
 	display: flex;
   align-items: center;
 }
-header{
+header,
+.overlay nav{
 	background-color: #212119;
 	margin: 0 auto;
 	padding: .3rem 0;
@@ -181,39 +184,39 @@ header{
 	max-width: 1366px;
 }
 @media only screen and (min-width: 480px){
-	header{
+	header,
+	.overlay nav{
 		padding: .25rem 0;
 		height: 44px;
 	}
 }
 @media only screen and (min-width: 768px){
-	header{
-		padding: .15rem .25rem;
-		height: 43.8px;
-	}
-}
-@media only screen and (min-width: 992px){
-	header{
+	header,
+	.overlay nav{
 		padding: .1rem .25rem;
 		height: 51.2px;
 	}
 }
-header div.nav-container{
+header div.nav-container,
+.overlay{
 	padding: 0 .5rem;
 	width: 100%;
 }
-header nav{
+header nav,
+.overlay nav{
 	width: 100%;
 	justify-content: space-between;
 }
 @media only screen and (min-width: 992px){
-	header nav{
+	header nav,
+	.overlay nav{
 		max-width: 1366px;
 	}
 }
-header a,
-header a:visited,
-header button{
+header nav a,
+header nav a:visited,
+header .overlay a,
+header nav button{
 	text-decoration: none;
 	color: #fff;
 }
@@ -475,21 +478,24 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 
 /* 1.2.4 Hamburger Menu */
 
-header nav .hamburger-menu{
+header nav .hamburger-menu,
+header nav .close{
 	text-align: center;
 	background: transparent;
 	border: none;
+	margin-right: .5rem;
 	width: 32px;
 	height: 28px;
-	margin-right: .5rem;
 }
 @media only screen and (min-width: 480px){
-	header nav .hamburger-menu{
+	header nav .hamburger-menu,
+	header nav .close{
 		margin-right: .75rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	header nav .hamburger-menu{
+	header nav .hamburger-menu,
+	header nav .close{
 		margin-right: 1rem;
 	}
 }
@@ -505,21 +511,26 @@ header nav .hamburger-menu{
 		visibility: visible;
 	}
 }
-header nav .hamburger-menu .fa-bars{
+header nav .hamburger-menu .fa-bars,
+header nav .fa-times{
 	font-size: 1.5rem;
 }
 @media only screen and (min-width: 480px){
-	header nav .hamburger-menu .fa-bars{
+	header nav .hamburger-menu .fa-bars,
+	header nav .fa-times{
 		font-size: 1.7rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	header nav .hamburger-menu .fa-bars{
+	header nav .hamburger-menu .fa-bars,
+	header nav .fa-times{
 		font-size: 1.9rem;
 	}
 }
 header nav .hamburger-menu:hover,
-header nav .hamburger-menu:focus{
+header nav .hamburger-menu:focus,
+header nav .close:hover,
+header nav .close:focus{
 	outline: 2px solid #fff;
 }
 

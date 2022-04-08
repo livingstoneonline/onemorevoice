@@ -1,50 +1,9 @@
-<!-- nav1 adapted from https://webaim.org/techniques/skipnav/ -->
-<div id="skip">
-    <a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
-</div>
+<!-- <span class="nav-container"> -->
+    <!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+    <div id="skip">
+        <a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+    </div>
 
-<nav>
-    <span class="logo-container">
-        <a href="/index.html">
-            <img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
-            <h1>One More Voice</h1>
-        </a>
-    </span>
-
-    <span class="button-container">
-        <a href="/test2.html#browse" class="action-button">Browse</a>
-
-        <!-- <button href="/site_map.html" class="page-button">Site Map</button> -->
-
-        <div class="translate" id="translate">
-            <!-- <a href="https://translate.google.com/"> -->
-            <span>
-                <img width="28" height="28"  src="/Google.png" aria-label="Google icon" title="Google"/>
-            </span>
-            <!-- </a> -->
-            <div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>
-        </div>
-
-        <a class="external" href="https://github.com/livingstoneonline/onemorevoice/"><i class="fa-brands fa-github-alt" aria-label="GitHub icon" title="GitHub"></i></a>
-
-        <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice"><i class="fa fa-zotero" title="Zotero" aria-label="Zotero icon" aria-hidden="true"></i></a>
-
-        <!-- <a class="external" href="https://livingstoneonline.wordpress.com/"><i class="fa-brands fa-wordpress" title="Wordpress" aria-label="Wordpress icon" aria-hidden="true"></i></a> -->
-
-        <a class="external" href="/site_map.html"><i class="fa fa-map-marker" aria-label="Site Map icon" title="Site Map"></i></a>
-
-        <a class="external" href="mailto:awisnicki@yahoo.com"><i class="fas fa-envelope" title="Contact/Email" aria-label="Email icon" aria-hidden="true"></i></a>
-
-        <!-- <a class="external" href=""><i class="fa fa-search" title="Search" aria-label="Search icon" aria-hidden="true"></i></a> -->
-    </span>
-
-    <button class="hamburger-menu" style="cursor:pointer" title="Menu" aria-label="Show site sections" onclick="openNav()" tabindex="0">
-        <i class="fa fa-bars"></i>
-    </button>
-</nav>
-
-<!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
-<div class="overlay" id="overlay-menu">
     <nav>
         <span class="logo-container">
             <a href="/index.html">
@@ -52,9 +11,56 @@
                 <h1>One More Voice</h1>
             </a>
         </span>
-        
-        <button class="close" style="cursor:pointer" title="Close" aria-label="Close site sections" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
+
+        <span class="button-container">
+            <a href="/test2.html#browse" class="action-button">Browse</a>
+
+            <!-- <button href="/site_map.html" class="page-button">Site Map</button> -->
+
+            <div class="translate" id="translate">
+                <!-- <a href="https://translate.google.com/"> -->
+                <span>
+                    <img width="28" height="28"  src="/Google.png" aria-label="Google icon" title="Google"/>
+                </span>
+                <!-- </a> -->
+                <div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>
+            </div>
+
+            <a class="external" href="https://github.com/livingstoneonline/onemorevoice/"><i class="fa-brands fa-github-alt" aria-label="GitHub icon" title="GitHub"></i></a>
+
+            <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice"><i class="fa fa-zotero" title="Zotero" aria-label="Zotero icon" aria-hidden="true"></i></a>
+
+            <!-- <a class="external" href="https://livingstoneonline.wordpress.com/"><i class="fa-brands fa-wordpress" title="Wordpress" aria-label="Wordpress icon" aria-hidden="true"></i></a> -->
+
+            <a class="external" href="/site_map.html"><i class="fa fa-map-marker" aria-label="Site Map icon" title="Site Map"></i></a>
+
+            <a class="external" href="mailto:awisnicki@yahoo.com"><i class="fas fa-envelope" title="Contact/Email" aria-label="Email icon" aria-hidden="true"></i></a>
+
+            <!-- <a class="external" href=""><i class="fa fa-search" title="Search" aria-label="Search icon" aria-hidden="true"></i></a> -->
+        </span>
+
+        <button class="hamburger-menu" style="cursor:pointer" title="Menu" aria-label="Show site sections" onclick="openNav()" tabindex="0">
+            <i class="fa fa-bars"></i>
+        </button>
     </nav>
+<!-- </span> -->
+
+<!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+<div class="overlay" id="overlay-menu">
+    <span class="overlay-header">
+        <span class="overlay-nav-container">
+            <nav>
+                <span class="logo-container">
+                    <a href="/index.html">
+                        <img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+                        <h1>One More Voice</h1>
+                    </a>
+                </span>
+                
+                <button class="close" style="cursor:pointer" title="Close" aria-label="Close site sections" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
+            </nav>
+        </span>
+    </span>
     <section class="overlay-content" role="menu">
         <ul class="container-home" role="none">
             <li role="none"><a role="menuitem" href="/index.html"><strong>Home</strong></a></li>

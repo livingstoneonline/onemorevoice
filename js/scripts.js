@@ -327,11 +327,11 @@ jQuery(document).ready(function () {
 		if (e.shiftKey) {
 			return
 		} else {
-			jQuery('#nav8').focus();
+			jQuery('#overlay-first').focus();
 			e.preventDefault()
 		}
 			});
-	jQuery('#nav8').on('keydown', function (e) {
+	jQuery('#overlay-first').on('keydown', function (e) {
 		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
 		if (!isTabPressed) {
 			return

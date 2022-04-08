@@ -171,8 +171,7 @@ header,
 header nav,
 .overlay-header,
 .overlay-header nav{
-	display: flex;
-  align-items: center;
+
 }
 header,
 .overlay-header{
@@ -182,6 +181,8 @@ header,
 	height: 38.6px;
 	width: 100%;
 	max-width: 1366px;
+	display: flex;
+  align-items: center;
 }
 @media only screen and (min-width: 480px){
 	header,
@@ -205,6 +206,8 @@ header,
 header nav,
 .overlay-header nav{
 	width: 100%;
+	display: flex;
+  align-items: center;
 	justify-content: space-between;
 }
 @media only screen and (min-width: 992px){
@@ -482,27 +485,36 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 
 nav .hamburger-menu,
 nav .close{
-	text-align: center;
 	background: transparent;
 	border: none;
+	padding: 0 5px;
+}
+nav .hamburger-menu{
+	margin-top: .2rem;
 	margin-right: .5rem;
-	width: 32px;
-	height: 28px;
+}
+nav .close{
+	margin-right: .7rem;
 }
 @media only screen and (min-width: 480px){
-	nav .hamburger-menu,
-	nav .close{
+	nav .hamburger-menu{
 		margin-right: .75rem;
+	}
+	nav .close{
+		margin-right: .95rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	nav .hamburger-menu,
-	nav .close{
+	nav .hamburger-menu{
 		margin-right: 1rem;
+	}
+	nav .close{
+		margin-right: 1.2rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .hamburger-menu{
+	nav .hamburger-menu,
+	nav .close{
 		display: none;
 		visibility: hidden;
 	}
@@ -533,7 +545,7 @@ nav .hamburger-menu:hover,
 nav .hamburger-menu:focus,
 nav .close:hover,
 nav .close:focus{
-	outline: 2px solid #fff;
+	outline: 2px solid #fff;	
 }
 
 

@@ -168,12 +168,6 @@ body{
 /* 1.2 Header & Nav */
 
 header,
-header nav,
-.overlay-header,
-.overlay-header nav{
-
-}
-header,
 .overlay-header{
 	background-color: #212119;
 	margin: 0 auto;
@@ -331,9 +325,12 @@ nav .logo-container a:focus h1{
 
 /* 1.2.2 Buttons */
 
-nav .button-container{
+nav .button-container,
+.overlay-content .button-container{
 	white-space: nowrap;
 	margin: 0;
+}
+nav .button-container{
 	display: none;
 	visibility: hidden;
 }
@@ -344,14 +341,23 @@ nav .button-container{
 		visibility: visible;
 	}
 }
-nav .button-container a.external{
+.overlay-content .button-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+nav .button-container a.external,
+.overlay-content .button-container a.external{
 	height: fit-content;
 }
 nav .button-container a.external:hover,
-nav .button-container a.external:focus{
+nav .button-container a.external:focus,
+.overlay-content .button-container a.external:hover,
+.overlay-content .button-container a.external:focus{
 	background: transparent;
 }
-nav .button-container a.external i{
+nav .button-container a.external i,
+.overlay-content .button-container a.external i{
 	font-size: 1.6rem;
 	color: #e2e4e2;
 	border-radius: 6px;
@@ -361,7 +367,9 @@ nav .button-container a.external i{
 	padding: .25rem .5rem;
 }
 nav .button-container a.external:hover i,
-nav .button-container a.external:focus i{
+nav .button-container a.external:focus i,
+.overlay-content .button-container a.external:hover i,
+.overlay-content .button-container a.external:focus i{
 	color: #212119;
 	background-color: #e2e4e2;
 }
@@ -487,14 +495,14 @@ nav .hamburger-menu,
 nav .close{
 	background: transparent;
 	border: none;
-	padding: 0 5px;
 }
 nav .hamburger-menu{
-	margin-top: .2rem;
-	margin-right: .5rem;
+	margin: .2rem .5rem 0 0;
+	padding: 2px 5px 0;
 }
 nav .close{
-	margin-right: .7rem;
+	margin: .2rem .7rem 0 0;
+	padding: 0 5px;
 }
 @media only screen and (min-width: 480px){
 	nav .hamburger-menu{
@@ -1081,7 +1089,7 @@ hr {
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 /* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
-	font: 16px 'Libre Franklin', sans-serif;
+	/* font: 16px 'Libre Franklin', sans-serif; */
 	text-align: center;
 	color: #0b0b0b;
 	background-color: #767676;
@@ -1099,7 +1107,7 @@ hr {
 	opacity: 1;
 }
 .overlay-content{
-	font-size: 1em;
+	/* font-size: 1em; */
 	text-align: left;
 	background-color: #fff;
 	border: 1px solid #0b0b0b;
@@ -1135,6 +1143,10 @@ hr {
 }
 .overlay a{
 	text-decoration: underline;
+}
+.overlay a.action-button,
+.overlay a.action-button:visited{
+	text-decoration: none;
 }
 .overlay strong{
 	font-family: 'Libre Franklin', sans-serif;

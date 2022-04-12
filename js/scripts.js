@@ -13,14 +13,6 @@ if ("serviceWorker" in navigator) {
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 function openNav() {
-
-	// document.getElementById("hamburger-menu").style.cssText = "display: none; visibility: hidden;";
-	// document.getElementById("logo").style.cssText = "display: none; visibility: hidden;";
-	// document.getElementById("browse").style.cssText = "display: none; visibility: hidden;";
-	// document.getElementById("close").style.cssText = "display: block; visibility: visible;";
-	
-	// document.getElementById("button-container").style.cssText = "display: flex; visibility: visible;";
-	
 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 	document.getElementById("main-nav").classList.add("overlay-nav");
@@ -28,13 +20,6 @@ function openNav() {
 };
 
 function closeNav() {
-
-	// document.getElementById("close").style.cssText = "display: none; visibility: hidden;";
-
-	// document.getElementById("button-container").style.cssText = "display: none; visibility: hidden;";
-	// document.getElementById("browse").style.cssText = "display: block; visibility: visible;";
-	// document.getElementById("logo").style.cssText = "display: block; visibility: visible;";
-	// document.getElementById("hamburger-menu").style.cssText = "display: block; visibility: visible;";
 	document.getElementsByTagName("html")[0].style.overflowY = "unset";
 	document.getElementsByTagName("body")[0].style.overflowY = "unset";
 	document.getElementById("main-nav").classList.remove("overlay-nav");

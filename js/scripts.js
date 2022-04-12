@@ -20,6 +20,7 @@ function openNav() {
 	document.getElementById("overlay-menu").style.cssText = "display: block; visibility: visible;";
 	document.getElementById("button-container").style.cssText = "display: flex; visibility: visible;";
 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 };
 
 function closeNav() {
@@ -30,6 +31,7 @@ function closeNav() {
 	document.getElementById("logo").style.cssText = "display: block; visibility: visible;";
 	document.getElementById("hamburger-menu").style.cssText = "display: block; visibility: visible;";
 	document.getElementsByTagName("html")[0].style.overflowY = "unset";
+	document.getElementsByTagName("body")[0].style.overflowY = "unset";
 };
 
 

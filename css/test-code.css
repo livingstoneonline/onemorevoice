@@ -41,9 +41,13 @@ Alternative [id]:target Coding
 /*--------------------------------------*/
 
 /** Main Site Colors **/
+/* Color palette from image: https://icolorpalette.com/color-palette-from-images */
+/* Create a palette: https://coolors.co/03256c-2541b2-1768ac-06bee1-ffffff */
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
+/* Complementary color picker: https://giggster.com/guide/complementary-colors/ */
 /* Color shades: https://mdigi.tools/color-shades/ */
+
 /*
 (white) #fff;
 (black) #000;
@@ -64,7 +68,7 @@ also see 2.9 for manuscript colors
 */
 
 /* 
->>test colors
+>>new colors
 (white) #fff
 (black) #212119;
 (light blue) #c2d9db;
@@ -79,20 +83,44 @@ also see 2.9 for manuscript colors
 
 /* 
 >>font-sizes 
-omv logo: 1.5em; / 1.7em (480) / 1.8em (768)
-nav Font-Awesome: 1.6em
-translate: 1.35em
-Google link: 11px
-Hamburger Menu: 1.5em / 1.7em (480) / 1.9em (768)
-Main: 1em / 1.125em (992)
-Aside Credits: 1em / 1.1em (992)
-Action Button: .95em
-Introduction Section Action Button .95em
-Small: .9em
-Home Introduction Text: 1.15em (768)
-Home Introduction h2: 1.5em (27.6px)
-Home Introduction Caption: 1.5em / 1.7em (768)
-Home Section Tiles Browse2: 1.1em
+nav .logo-container a h1
+1.5rem; / 1.7rem (480) / 1.8rem (768)
+
+nav .button-container a.external i
+1.6rem
+
+#google_translate_element div.goog-te-gadget .goog-te-combo
+.95rem
+
+.goog-logo-link,
+.goog-logo-link:link
+11px
+
+nav .hamburger-menu .fa-bars,
+nav .fa-times
+1.5rem / 1.7rem (480) / 1.9rem (768)
+
+main 
+1rem / 1.125rem (992)
+
+.credits
+1rem / 1.1rem (992)
+
+.action-button,
+.action-button:visited
+1rem
+
+small
+.9rem
+
+.home .introduction-section h2
+1.5rem
+
+.home .introduction-section .caption
+1.3rem / 1.5rem (480) / 1.7rem (768)
+
+.home section.tiles section p
+1.1rem
 */
 
 /*
@@ -100,6 +128,8 @@ Home Section Tiles Browse2: 1.1em
 .home section.tiles section p{z-index: 10;}
 .overlay{z-index: 100;}
 */
+
+/*--------------------------------------*/
 
 /** 1.0 Main CSS **/
 
@@ -173,8 +203,7 @@ body{
 
 /* 1.2 Header & Nav */
 
-header,
-.overlay-header{
+header{
 	background-color: #212119;
 	margin: 0 auto;
 	padding: .3rem 0;
@@ -185,34 +214,29 @@ header,
   align-items: center;
 }
 @media only screen and (min-width: 480px){
-	header,
-	.overlay-header{
+	header{
 		padding: .25rem 0;
 		height: 44px;
 	}
 }
 @media only screen and (min-width: 768px){
-	header,
-	.overlay-header{
+	header{
 		padding: .1rem .25rem;
 		height: 51.2px;
 	}
 }
-.nav-container,
-.overlay-nav-container{
+.nav-container{
 	padding: 0 .5rem;
 	width: 100%;
 }
-header nav,
-.overlay-header nav{
+header nav{
 	width: 100%;
 	display: flex;
   align-items: center;
 	justify-content: space-between;
 }
 @media only screen and (min-width: 992px){
-	header nav,
-	.overlay-header nav{
+	header nav{
 		max-width: 1366px;
 	}
 }
@@ -457,21 +481,6 @@ nav .button-container a.external:focus i{
 .translate a:focus img{
 	border: none;
 } */
-/* Included in criticalTEI CSS, start */
-/* #google_translate_element{
-	min-height: 72px;
-}
-@media only screen and (min-width: 768px){
-	#google_translate_element{
-		min-height: 68px;
-	}
-}
-@media only screen and (min-width: 992px){
-	#google_translate_element{
-		min-height: 66px;
-	}
-} */
-/* Included in criticalTEI CSS, end */
 #google_translate_element > div > span > a > img{
 	width: 3.5rem;
 }

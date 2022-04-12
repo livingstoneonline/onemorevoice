@@ -99,7 +99,6 @@ Home Section Tiles Browse2: 1.1em
 #skip a{z-index: 150;}
 .home section.tiles section p{z-index: 10;}
 .overlay{z-index: 100;}
-.translate{z-index: 125;}
 */
 
 /** 1.0 Main CSS **/
@@ -353,7 +352,7 @@ nav .button-container{
 	align-items: center;
 	justify-content: center;	
 }
-nav .button-container .external-container{
+/* nav .button-container .external-container{
 	background: #212119;
 	margin: 0;
 	width: 100%;
@@ -362,7 +361,7 @@ nav .button-container .external-container{
 	top: 38.6px;
 	left: 0;
 	z-index: 125;
-}
+} */
 nav .button-container a.external,
 .overlay-content .button-container a.external{
 	height: fit-content;
@@ -408,14 +407,6 @@ nav .button-container a.external:focus i,
   height: 32px;
 	overflow: hidden;
 	display: flex;
-	/* background: #212119;
-	margin: 0;
-	width: 100%;
-	justify-content: center;
-	position: absolute;
-	top: 38.6px;
-	left: 0;
-	z-index: 125; */
 }
 .translate span{
 	border: 2px solid transparent;

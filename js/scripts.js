@@ -15,6 +15,7 @@ if ("serviceWorker" in navigator) {
 function openNav() {
 	document.getElementById("hamburger-menu").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("logo").style.cssText = "display: none; visibility: hidden;";
+	document.getElementById("browse").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("close").style.cssText = "display: block; visibility: visible;";
 	document.getElementById("overlay-menu").style.cssText = "display: block; visibility: visible;";
 	document.getElementById("button-container").style.cssText = "display: flex; visibility: visible;";
@@ -25,6 +26,7 @@ function closeNav() {
 	document.getElementById("close").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("button-container").style.cssText = "display: none; visibility: hidden;";
+	document.getElementById("browse").style.cssText = "display: block; visibility: visible;";
 	document.getElementById("logo").style.cssText = "display: block; visibility: visible;";
 	document.getElementById("hamburger-menu").style.cssText = "display: block; visibility: visible;";
 	document.getElementsByTagName("html")[0].style.overflowY = "unset";

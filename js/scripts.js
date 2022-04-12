@@ -28,6 +28,7 @@ function closeNav() {
 // Trap Focus in Overlay
 // Adapted from https://www.taraprasad.com/trap-focus-inside-an-element/
 // Also see https://hiddedevries.nl/en/blog/2017-01-29-using-javascript-to-trap-focus-in-an-element
+
 jQuery(document).ready(function () {
 	jQuery('#overlay-last').on('keydown', function (e) {
 		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);

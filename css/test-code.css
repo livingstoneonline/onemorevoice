@@ -353,6 +353,16 @@ nav .button-container{
 	align-items: center;
 	justify-content: center;	
 }
+nav .button-container .external-container{
+	background: #212119;
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	top: 38.6px;
+	left: 0;
+	z-index: 125;
+}
 nav .button-container a.external,
 .overlay-content .button-container a.external{
 	height: fit-content;
@@ -393,19 +403,19 @@ nav .button-container a.external:focus i,
 	text-align: unset !important;
 }
 .translate{
-	background: #212119;
-	margin: 0;
+	margin: .5em;
   /* max-width: 170px; */
   height: 32px;
-	width: 100%;
 	overflow: hidden;
 	display: flex;
+	/* background: #212119;
+	margin: 0;
+	width: 100%;
 	justify-content: center;
 	position: absolute;
 	top: 38.6px;
 	left: 0;
-	z-index: 125;
-
+	z-index: 125; */
 }
 .translate span{
 	border: 2px solid transparent;

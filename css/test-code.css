@@ -241,13 +241,23 @@ header nav button,
 	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
-	padding: .6rem .55rem;
+	padding: .35rem .55rem;
 	top: -55px;
 	left: 0;
 	position: absolute;
 	z-index: 150;
 	transition: top .8s ease-out;
 	-webkit-transition: top .8s ease-out;
+}
+@media only screen and (min-width: 480px){
+	#skip a{
+		padding: .55rem .55rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	#skip a{
+		padding: .75rem .55rem;
+	}
 }
 #skip a:focus{
 	outline-color: transparent;
@@ -365,6 +375,8 @@ nav .button-container{
 nav .button-container a.external,
 .overlay-content .button-container a.external{
 	height: fit-content;
+	display: none;
+	visibility: hidden;
 }
 nav .button-container a.external:hover,
 nav .button-container a.external:focus,
@@ -475,7 +487,7 @@ div.skiptranslate:nth-child(1){
 	font-weight: 400;
 	padding-left: 4px;
 	line-height: 2.5em;
-	margin-top: .16rem;
+	margin-top: .25rem;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
 div.skiptranslate:nth-child(1) > span:nth-child(2){
@@ -910,7 +922,7 @@ hr {
 	padding: 6px 10px;
 }
 .home .introduction-section .caption{
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #4d5b51;
@@ -924,6 +936,12 @@ hr {
 	bottom: 1rem;
 	left: 1rem;
 	position: absolute;
+}
+@media screen and (min-width: 480px){
+	.home .introduction-section .caption{
+		font-size: 1.5rem;
+		padding: 5px 7px 3px;
+	}
 }
 @media screen and (min-width: 768px){
 	.home .introduction-section .caption{

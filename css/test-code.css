@@ -1110,6 +1110,16 @@ hr {
 	visibility: hidden;
 	opacity: 1;
 }
+@media only screen and (min-width: 480px){
+	.overlay{
+		margin-top: 44px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.overlay{
+		margin-top: 51.2px;
+	}
+}
 .overlay-content{
 	/* font-size: 1em; */
 	text-align: left;

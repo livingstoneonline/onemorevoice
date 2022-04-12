@@ -331,13 +331,13 @@ nav .button-container,
 	margin: 0;
 }
 nav .button-container{
+	align-items: center;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
 	nav .button-container{
 		display: flex;
-		align-items: center;
 		visibility: visible;
 	}
 }
@@ -495,6 +495,7 @@ nav .hamburger-menu,
 nav .close{
 	background: transparent;
 	border: none;
+	cursor: pointer;
 }
 nav .hamburger-menu{
 	margin: .2rem .5rem 0 0;

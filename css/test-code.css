@@ -349,68 +349,54 @@ nav .logo-container a:focus h1{
 
 /* 1.2.2 Buttons */
 
-nav .button-container,
-.overlay-content .button-container{
+nav .button-container{
 	white-space: nowrap;
 	margin: 0;
-}
-nav .button-container{
 	display: flex;
 	align-items: center;
-	/* display: none;
-	visibility: hidden; */
-}
-@media only screen and (min-width: 992px){
-	nav .button-container{
-		/* display: flex;
-		visibility: visible; */
-	}
-}
-.overlay-content .button-container{
-	display: flex;
-	align-items: center;
-	justify-content: center;	
 }
 nav .button-container a#browse{
 	display: none;
 	visibility: hidden;
 }
-/* nav .button-container .external-container{
-	background: #212119;
-	margin: 0;
-	width: 100%;
-	justify-content: center;
-	position: absolute;
-	top: 38.6px;
-	left: 0;
-	z-index: 125;
-} */
-nav .button-container a.external,
-.overlay-content .button-container a.external{
+@media only screen and (min-width: 992px){
+	nav .button-container a#browse{
+		display: block;
+		visibility: visible;
+	}
+}
+nav .button-container a.external{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
 }
+@media only screen and (min-width: 480px){
+	nav.overlay-nav .button-container a.external{
+		display: block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav .button-container a.external{
+		display: block;
+		visibility: visible;
+	}
+}
 nav .button-container a.external:hover,
-nav .button-container a.external:focus,
-.overlay-content .button-container a.external:hover,
-.overlay-content .button-container a.external:focus{
+nav .button-container a.external:focus{
 	background: transparent;
 }
-nav .button-container a.external i,
-.overlay-content .button-container a.external i{
+nav .button-container a.external i{
 	font-size: 1.6rem;
 	color: #e2e4e2;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	margin: 0 .2rem;
+	margin: 0 .15rem;
 	padding: .25rem .5rem;
 }
 nav .button-container a.external:hover i,
-nav .button-container a.external:focus i,
-.overlay-content .button-container a.external:hover i,
-.overlay-content .button-container a.external:focus i{
+nav .button-container a.external:focus i{
 	color: #212119;
 	background-color: #e2e4e2;
 }
@@ -433,11 +419,16 @@ nav .button-container a.external:focus i,
 	overflow: hidden;
 	display: none;
 	visibility: hidden;
-	/* display: flex; */
 }
 .overlay-nav .translate{
 	display: flex;
 	visibility: visible;
+}
+@media only screen and (min-width: 992px){
+	.translate{
+		display: flex;
+		visibility: visible;
+	}	
 }
 .translate span{
 	border: 2px solid transparent;
@@ -1008,9 +999,6 @@ hr {
 	.home section.tiles{
 		padding-top: .5rem;
 	}
-	/* .home section.tiles#browse{
-		padding-top: .5rem;
-	} */
 }
 .home section.tiles section{
   text-align: center;
@@ -1034,16 +1022,6 @@ hr {
     width: calc(50% - 2rem);
   }
 }
-/* @media only screen and (min-width: 992px){
-  .home section.tiles#browse section{
-    width: calc(50% - 2rem);
-  }
-} */
-/* @media only screen and (min-width: 992px){
-  .home section.tiles#browse2 section{
-    width: calc(33% - 2rem);
-  }
-} */
 .home section.tiles section p{
 	font-size: 1.1rem;
 	font-family: 'Merriweather', serif;
@@ -1064,11 +1042,6 @@ hr {
 	opacity: .9;
 	z-index: 10;
 }
-/* @media only screen and (min-width: 992px){
-	.home section.tiles#browse2 section p{
-		font-size: 1rem;
-	}
-} */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 .home section.tiles div{
@@ -1181,8 +1154,13 @@ hr {
 		margin-top: 51.2px;
 	}
 }
+@media only screen and (min-width: 992px){
+	.overlay{
+		display: none !important;
+	visibility: hidden !important;
+	}
+}
 .overlay-content{
-	/* font-size: 1em; */
 	text-align: left;
 	background-color: #fff;
 	border: 1px solid #0b0b0b;

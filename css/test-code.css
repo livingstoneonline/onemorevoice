@@ -95,6 +95,13 @@ Home Introduction Caption: 1.5em / 1.7em (768)
 Home Section Tiles Browse2: 1.1em
 */
 
+/*
+#skip a{z-index: 150;}
+.home section.tiles section p{z-index: 10;}
+.overlay{z-index: 100;}
+.translate{z-index: 125;}
+*/
+
 /** 1.0 Main CSS **/
 
 /* 1.1. Principal Components */
@@ -239,7 +246,7 @@ header nav button,
 	top: -55px;
 	left: 0;
 	position: absolute;
-	z-index: 50;
+	z-index: 150;
 	transition: top .8s ease-out;
 	-webkit-transition: top .8s ease-out;
 }
@@ -386,11 +393,19 @@ nav .button-container a.external:focus i,
 	text-align: unset !important;
 }
 .translate{
-	margin: .5rem;
+	background: #212119;
+	margin: 0;
   /* max-width: 170px; */
   height: 32px;
+	width: 100%;
 	overflow: hidden;
 	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 38.6px;
+	left: 0;
+	z-index: 125;
+
 }
 .translate span{
 	border: 2px solid transparent;
@@ -1001,7 +1016,7 @@ hr {
 	bottom: 0;
 	right: 0;
 	opacity: .9;
-	z-index: 99;
+	z-index: 10;
 }
 /* @media only screen and (min-width: 992px){
 	.home section.tiles#browse2 section p{

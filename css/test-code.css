@@ -373,11 +373,19 @@ nav .logo-container a:focus h1{
 
 /* 1.2.2 Buttons */
 
-nav .button-container{
+nav .button-container,
+.overlay-content .button-container{
 	white-space: nowrap;
 	margin: 0;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+}
+@media only screen and (min-width: 480px){
+		.overlay-content .button-container{
+			display: none;
+			visibility: hidden;
+	}
 }
 nav .button-container a#browse{
 	display: none;
@@ -394,6 +402,9 @@ nav .button-container a.external{
 	display: none;
 	visibility: hidden;
 }
+.overlay-content .button-container a.external{
+	height: fit-content;
+}
 @media only screen and (min-width: 480px){
 	nav.overlay-nav .button-container a.external{
 		display: block;
@@ -407,22 +418,35 @@ nav .button-container a.external{
 	}
 }
 nav .button-container a.external:hover,
-nav .button-container a.external:focus{
+nav .button-container a.external:focus,
+.overlay-content .button-container a.external:hover,
+.overlay-content .button-container a.external:focus{
 	background: transparent;
 }
-nav .button-container a.external i{
+nav .button-container a.external i,
+.overlay-content .button-container a.external i{
 	font-size: 1.6rem;
-	color: #e2e4e2;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	margin: 0 .15rem;
 	padding: .25rem .5rem;
 }
+nav .button-container a.external i{
+	color: #e2e4e2;
+}
+.overlay-content .button-container a.external i{
+	color: #212119;
+}
 nav .button-container a.external:hover i,
 nav .button-container a.external:focus i{
 	color: #212119;
 	background-color: #e2e4e2;
+}
+.overlay-content .button-container a.external:hover i,
+.overlay-content .button-container a.external:focus i{
+	color: #e2e4e2;
+	background-color: #212119;
 }
 
 
@@ -1122,7 +1146,7 @@ hr {
 	text-align: left;
 	background-color: #fff;
 	border: 1px solid #0b0b0b;
-	margin: 4em auto 2em;
+	margin: 2em auto;
 	padding: 1.5em;
 	width: fit-content;
 	position: relative;

@@ -376,10 +376,15 @@ nav .logo-container a:focus h1{
 nav .button-container,
 .overlay-content .button-container{
 	white-space: nowrap;
-	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+nav .button-container{
+	margin: 0;
+}
+.overlay-content .button-container{
+	margin: 1rem 0;
 }
 @media only screen and (min-width: 480px){
 		.overlay-content .button-container{
@@ -404,6 +409,7 @@ nav .button-container a.external{
 }
 .overlay-content .button-container a.external{
 	height: fit-content;
+	margin: 0 .5rem;
 }
 @media only screen and (min-width: 480px){
 	nav.overlay-nav .button-container a.external{
@@ -425,7 +431,6 @@ nav .button-container a.external:focus,
 }
 nav .button-container a.external i,
 .overlay-content .button-container a.external i{
-	font-size: 1.6rem;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -433,15 +438,17 @@ nav .button-container a.external i,
 	padding: .25rem .5rem;
 }
 nav .button-container a.external i{
+	font-size: 1.6rem;
 	color: #e2e4e2;
 }
 .overlay-content .button-container a.external i{
-	color: #212119;
+	font-size: 2rem;
+	color: #fff;
 }
 nav .button-container a.external:hover i,
 nav .button-container a.external:focus i{
 	color: #212119;
-	background-color: #e2e4e2;
+	background-color: #fff;
 }
 .overlay-content .button-container a.external:hover i,
 .overlay-content .button-container a.external:focus i{
@@ -1106,12 +1113,11 @@ hr {
 /* 1.7.3. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-/* Height & width depends on how you want to reveal the overlay (see scripts.js) */
 .overlay{
-	/* font: 16px 'Libre Franklin', sans-serif; */
+	font-size: 1.15rem;
 	text-align: center;
-	color: #0b0b0b;
-	background-color: #767676;
+	color: #212119;
+	background-color: #4d5b51;
 	margin-top: 38.6px;
 	height: 100%;
 	width: 100%;
@@ -1121,7 +1127,7 @@ hr {
 	z-index: 100; /* Sit on top */
 	overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: scroll;
-	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	transition: 0.5s;
 	display: none;
 	visibility: hidden;
 	opacity: 1;
@@ -1133,78 +1139,58 @@ hr {
 }
 @media only screen and (min-width: 768px){
 	.overlay{
+		font-size: 1.2rem;
 		margin-top: 51.2px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.overlay{
 		display: none !important;
-	visibility: hidden !important;
+		visibility: hidden !important;
 	}
 }
 .overlay-content{
-	text-align: left;
-	background-color: #fff;
-	border: 1px solid #0b0b0b;
 	margin: 2em auto;
-	padding: 1.5em;
-	width: fit-content;
-	position: relative;
-	display: inline-block;
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{
-		margin: 5.5em auto 3em;
-		padding: 2em 0;
-	}
-}
-@media only screen and (min-width: 768px){
-	.overlay-content{
-		margin: 6.5em auto 3em;
-		padding: 3.5em 1.5em;
+		margin: 1.5em auto;
 	}
 }
 .overlay ul{
 	list-style-type: none;
-	line-height: 1.6em;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.overlay ul[title]::before{
+	content: attr(title);
+	font-size: 1.2rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+	color: #fff;
+	margin: 2rem 1rem 1rem;
 }
 .overlay li{
-	padding: .8em 0;
+	margin: 1.35rem;
 }
-.overlay li.section ul li{
-	padding: .5em 0;
+.overlay li a{
+	color: #fff;
+	text-decoration: none;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin: 0 .15rem;
+	padding: .25rem .5rem;
 }
-.overlay a{
-	text-decoration: underline;
+.overlay li a:hover,
+.overlay li a:focus{
+	color: #212119;
+	background-color: #fff;
 }
 .overlay a.action-button,
 .overlay a.action-button:visited{
 	text-decoration: none;
-}
-.overlay strong{
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 700;
-}
-.overlay-content .container-home,
-.overlay-content .container-left,
-.overlay-content .container-right{
-	margin: 0 2em;
-	clear: both;
-}
-@media only screen and (min-width: 480px){
-	.overlay-content .container-left,
-	.overlay-content .container-right{
-		float: left;
-		clear: unset;
-	}
-}
-@media only screen and (min-width: 768px){
-	.overlay-content .container-home,
-	.overlay-content .container-left,
-	.overlay-content .container-right{
-		float: left;
-		margin: 0 3em;
-	}
 }

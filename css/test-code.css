@@ -779,6 +779,7 @@ nav .close:focus{
 	color: #212119;
 	background-color: #4d5b51;
 	margin-top: 38.6px;
+	padding: 1rem 1rem 4rem;
 	height: 100%;
 	width: 100%;
 	left: 0;
@@ -831,14 +832,15 @@ nav .close:focus{
 	font-family: 'Merriweather', serif;
 	font-weight: 600;
 	color: #fff;
-	margin: 2rem 1rem 1rem;
+	margin: 1rem;
 }
 .overlay li{
 	margin: 1.35rem;
 }
 .overlay li a{
 	color: #fff;
-	text-decoration: none;
+	/* text-decoration: none; */
+	text-decoration: underline;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -847,6 +849,7 @@ nav .close:focus{
 }
 .overlay li a:hover,
 .overlay li a:focus{
+	text-decoration: none;
 	color: #212119;
 	background-color: #fff;
 }
@@ -1107,7 +1110,6 @@ hr {
 		border: 2px solid #e2e4e2;
 	}
 }
-
 /* browse tiles */
 .home section.tiles{
   margin: 0 auto;
@@ -1194,7 +1196,3 @@ hr {
 	overflow: hidden;
 	object-position: 50% 50%;
 }
-
-
-/* 1.7.3. Overlay */
-

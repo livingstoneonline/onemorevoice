@@ -331,7 +331,7 @@ header{
 	background-color: #212119;
 	margin: 0 auto;
 	padding: .3rem 0;
-	height: 38.6px;
+	height: 40.6px;
 	width: 100%;
 	max-width: 1366px;
 	display: flex;
@@ -340,13 +340,13 @@ header{
 @media only screen and (min-width: 480px){
 	header{
 		padding: .25rem 0;
-		height: 44px;
+		height: 48px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
 		padding: .1rem .25rem;
-		height: 51.2px;
+		height: 55.2px;
 	}
 }
 .nav-container{
@@ -508,7 +508,10 @@ nav .button-container{
 	margin: 0;
 }
 .overlay-content .button-container{
-	margin: 1rem 0;
+	border-bottom: 1px dotted #fff;
+	margin: 0 auto;
+	width: calc(100% - 2rem);
+	height: 62px;
 }
 @media only screen and (min-width: 480px){
 		.overlay-content .button-container{
@@ -555,9 +558,6 @@ nav .button-container a.external:focus,
 }
 nav .button-container a.external i,
 .overlay-content .button-container a.external i{
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	margin: 0 .15rem;
 	padding: .25rem .5rem;
 }
@@ -576,8 +576,8 @@ nav .button-container a.external:focus i{
 }
 .overlay-content .button-container a.external:hover i,
 .overlay-content .button-container a.external:focus i{
-	color: #e2e4e2;
-	background-color: #212119;
+	color: #212119;
+	background-color: #fff;
 }
 
 
@@ -778,8 +778,8 @@ nav .close:focus{
 	text-align: center;
 	color: #212119;
 	background-color: #4d5b51;
-	margin-top: 38.6px;
-	padding: 1rem 1rem 4rem;
+	margin: 40.6px auto 0;
+	padding: 1rem 0;
 	height: 100%;
 	width: 100%;
 	left: 0;
@@ -795,13 +795,14 @@ nav .close:focus{
 }
 @media only screen and (min-width: 480px){
 	.overlay{
-		margin-top: 44px;
+		margin-top: 48px;
+		padding: 0;
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.2rem;
-		margin-top: 51.2px;
+		margin-top: 55.2px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -810,12 +811,28 @@ nav .close:focus{
 		visibility: hidden !important;
 	}
 }
+@media only screen and (min-width: 480px){
+	.overlay div{
+		background-color: #d8dbd8;
+    height: auto;
+    width: 50%;
+		display: block;
+		visibility: visible;
+	}
+}
 .overlay-content{
-	margin: 2em auto;
+	margin: 0 auto 1.5em;
+	width: 100%;
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{
-		margin: 1.5em auto;
+		width: 60%;
+		padding-top: 3rem;
+	}
+}
+@media only screen and (min-width: 480px){
+	.overlay-content{
+		width: 50%;
 	}
 }
 .overlay ul{
@@ -826,6 +843,11 @@ nav .close:focus{
 	flex-direction: column;
 	align-items: center;
 }
+@media only screen and (min-width: 480px){
+	.overlay ul{
+		align-items: flex-start;
+	}
+}
 .overlay ul[title]::before{
 	content: attr(title);
 	font-size: 1.2rem;
@@ -835,27 +857,36 @@ nav .close:focus{
 	margin: 1rem;
 }
 .overlay li{
-	margin: 1.35rem;
+	border-bottom: 1px dotted #fff;
+	margin: 0 auto;
+	width: calc(100% - 2rem);
+	height: 62px;
+}
+@media only screen and (min-width: 480px){
+	.overlay li{
+		width: 100%;
+	}
 }
 .overlay li a{
 	color: #fff;
-	/* text-decoration: none; */
-	text-decoration: underline;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	margin: 0 .15rem;
-	padding: .25rem .5rem;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media only screen and (min-width: 480px){
+	.overlay li a{
+		justify-content: flex-start;
+		padding: 0 2rem;
+	}
 }
 .overlay li a:hover,
 .overlay li a:focus{
-	text-decoration: none;
 	color: #212119;
-	background-color: #fff;
-}
-.overlay a.action-button,
-.overlay a.action-button:visited{
-	text-decoration: none;
+	background-color: #d8dbd8;
+	border-left: 1px dotted #212119;
 }
 
 

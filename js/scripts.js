@@ -16,7 +16,7 @@ function openNav() {
 	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
 	document.getElementById("main-nav").classList.add("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: block; visibility: visible;";
+	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible;";
 };
 
 function closeNav() {

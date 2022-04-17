@@ -511,7 +511,7 @@ nav .button-container{
 	margin: 0;
 }
 .overlay-content .button-container{
-	border-bottom: 1px dotted #fff;
+	/* border-bottom: 1px dotted #fff; */
 	margin: 0 auto;
 	width: calc(100% - 2rem);
 	height: 62px;
@@ -819,7 +819,7 @@ nav .close:focus{
 	.overlay div{
 		background-color: #d8dbd8;
     height: auto;
-    width: 50%;
+    width: 40%;
 		display: block;
 		visibility: visible;
 	}
@@ -832,12 +832,12 @@ nav .close:focus{
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{
-		width: 60%;
+		
 	}
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{
-		width: 50%;
+		
 	}
 }
 .overlay ul{
@@ -862,7 +862,7 @@ nav .close:focus{
 	margin: 1rem;
 }
 .overlay li{
-	border-bottom: 1px dotted #fff;
+	/* border-bottom: 1px dotted #fff; */
 	margin: 0 auto;
 	width: calc(100% - 2rem);
 	height: 62px;
@@ -894,7 +894,7 @@ nav .close:focus{
 .overlay li a:focus{
 	color: #212119;
 	background-color: #d8dbd8;
-	border-left: 1px dotted #212119;
+	/* border-left: 1px dotted #212119; */
 }
 
 

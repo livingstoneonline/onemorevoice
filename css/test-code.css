@@ -135,8 +135,10 @@ small
 
 /* 1.1. Principal Components */
 
-*{
-	transition: 0.2s;
+:hover,
+:focus,
+:focus-within{
+	transition: 0.3s;
 }
 *, *:before, *:after{
 	-webkit-box-sizing: border-box;

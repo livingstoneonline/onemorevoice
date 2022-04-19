@@ -1176,23 +1176,20 @@ nav .close:focus{
 }
 
 
-/* 1.8. Footer & Fat Footer */
+/* 1.4. Footer */
 
 footer{
-	font-size: 1.1em;
-	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	text-align: center;
 	color: #fff;
-	background-color: #204A79;
-	border-bottom: 1px solid #0b0b0b;
+	background-color: #395f65;
 	margin: 0 auto;
 	padding: 0;
+	max-width: 1366px;
 	clear: both;
 }
 @media only screen and (min-width: 480px){
 	footer{
-		font-size: 1em;
 		margin: 0 auto;
 	}
 }
@@ -1200,404 +1197,45 @@ footer a,
 footer a:visited{
 	color: #fff;
 }
+footer a:hover,
+footer a:focus{
+	color: #7d4d1c;
+	background-color: #e2e4e2;
+}
 footer p{
-	color: #0b0b0b;
-	background-color: #fff;
-	border-top: 1px solid #737373;
-	border-bottom: 1px solid #737373;
 	margin: 0;
-	padding: 1em;
+	padding: 1rem;
 }
 @media only screen and (min-width: 768px){
 	footer p{
-		padding: 1em 1.5em;
+		padding: 1rem 1.5rem;
 	}
 }
-footer p a,
-footer p a:visited{
-	color: #204A79;
-}
-footer p a:hover,
-footer p a:focus{
-	color: #a83c37;
+@media only screen and (min-width: 992px){
+	footer p{
+		max-width: 1366px;
+	}
 }
 footer p .site-detail{
 	line-height: 1.875em;
-	padding: 0 .2em;
+	padding: 0 .2rem;
 }
 footer p .site-detail::after{
 	content: ' | ';
-	padding-left: .5em;
+	padding-left: .5rem;
 }
 footer p .site-detail:last-child::after{
 	content: '';
 }
 @media only screen and (min-width: 480px){
 	footer p .site-detail{
-		padding: 0 .3em;
+		padding: 0 .3rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	footer p .site-detail{
 		white-space: nowrap;
 	}
-}
-.fat-footer{
-	margin: 0 auto;
-	padding: 1em;
-	width: fit-content;
-	display: inline-block;
-}
-@media only screen and (min-width: 480px){
-	.fat-footer{
-		padding: .7em 1em 1em 1em;
-	}
-}
-.fat-footer ul{
-	list-style-type: none;
-}
-.fat-footer ul[role="none"]{
-	margin: 0 1.2em;
-	padding: 0;
-	clear: unset;
-	display: block;
-}
-@media only screen and (min-width: 480px){
-	.fat-footer ul[role="none"]{
-		vertical-align: top;
-		display: inline-block;
-	}
-}
-@media only screen and (min-width: 768px){
-	.fat-footer ul[role="none"].home{
-		margin: 0;
-		clear: unset;
-		display: inline-block;
-	}
-	.fat-footer ul[role="none"]{
-		margin: 0;
-	}
-}
-.fat-footer li{
-	text-align: left;
-	margin: .8em 0;
-}
-.fat-footer li.section{
-	padding: .5em 0;
-}
-@media only screen and (min-width: 768px){
-	.fat-footer li.section{
-		margin: 1em;
-		float: left;
-	}
-}
-@media only screen and (min-width: 992px){
-	.fat-footer li.section{
-		margin: 2em;
-	}
-}
-.fat-footer li.section ul{
-	margin: 0;
-	padding: 0;
-}
-.fat-footer > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1),
-.fat-footer > ul > li > strong,
-li.section > ul > li > a{
-	padding: 3px;
-}
-.fat-footer a:hover,
-.fat-footer a:focus{
-	color: #a83c37;
-	background-color: #E3E3E3;
-}
-
-/* 1.9. Sidebar */
-
-.sidebar-container{
-	background-color: #3B5E52;
-	border: 1px solid #737373;
-	border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	margin: 1em 2em 1em 0;
-	width: 100%;
-	min-width: 235px;
-	max-width: 250px;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	.sidebar-container{
-		display: block;
-		visibility: visible;
-	}
-}
-aside.sidebar{
-	font-size: .9em;
-	font-family: 'Libre Franklin', sans-serif;
-	text-align: center;
-	color: #fff;
-	margin: 0;
-	padding: 36px 0 0;
-}
-aside.sidebar a{
-	color: #fff;
-	text-decoration: none;
-}
-aside.sidebar h2{
-	font-family: 'Times New Roman', Times, serif;
-	font-size: 1.35em;
-	font-weight: 300;
-	color: #fff;
-	background-color: #204A79;
-	/* border: 1px solid #fff; */
-	border-radius: 6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	margin: 1em 0 1.5em;
-	padding: 2px 6px;
-	display: inline-block;
-}
-aside.sidebar h2:first-child{
-	margin-top: 0;
-}
-aside.sidebar ul{
-	list-style: none;
-	margin: 0;
-	padding: 0 0 2em;
-}
-aside.sidebar ul:last-child{
-	padding-bottom: 0;
-}
-aside.sidebar li{
-	margin-bottom: 1em;
-	display: block;
-}
-aside.sidebar .popular li{
-	margin-bottom: 2em;
-	display: block;
-}
-aside.sidebar .popular li:last-child{
-	margin-bottom: 0;
-}
-aside.sidebar .external li{
-	text-decoration: none;
-	padding: .2em;
-}
-aside.sidebar .notable a{
-	padding: 3px;
-}
-aside.sidebar .notable a:hover,
-aside.sidebar .notable a:focus{
-	color: #000;
-	background-color: #fff;
-}
-aside.sidebar li a img{
-	text-align: center;
-	margin: 0 auto;
-	width: 100px;
-	display: block;
-}
-aside.sidebar .popular li a img{
-	/* the following 3 hide alt text */
-	text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-	border: 2px solid transparent;
-	margin-bottom: 3px;
-}
-aside.sidebar .external li a img{
-	text-align: center;
-	margin: 0 auto;
-	padding: .5em;
-	display: block;
-	filter: invert(1);
-}
-aside.sidebar .external li a img{
-	border: 2px solid transparent;
-	width: 100px;
-}
-aside.sidebar .external li a img.wp{
-	border: 2px solid transparent;
-	width: 150px;
-}
-aside.sidebar .external li a img.lo{
-	border: 2px solid transparent;
-	width: 175px;
-}
-aside.sidebar .popular li a img:hover,
-aside.sidebar .popular li a img:focus{
-	border: 2px solid #000;
-	filter: invert(1);
-}
-aside.sidebar .external li a img:hover ,
-aside.sidebar .external li a img:focus{
-	border: 2px solid #000;
-}
-
-
-/* 1.10.1 Download Page/Image Button */
-
-.button-container{
-	display: flex;
-	align-items: baseline;
-	max-height: 70px;
-}
-@media only screen and (min-width: 768px){
-	.button-container{
-		margin: 0 0 1.5em 0;
-		display: flex;
-	}
-}
-.download{
-  display: none;
-  visibility: hidden;
-}
-/* @media only screen and (min-width: 992px){
-	.download{
-		margin-right: 1em;
-		padding-right: 1em;
-		border-right: 2px solid #e3e3e3;
-		line-height: 1em;
-		display: inline-block;
-		visibility: visible;
-	}
-	#object-div .download{
-		border: 0;
-		margin: .5em auto 0;
-		padding: 0;
-		width: 195px;
-		display: block;
-	}
-	.download div:nth-child(1){
-		font-size: 14.3px;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 400;
-		background: #fff;
-		border: 2px solid #E3E3E3;
-		border-radius: 7px;
-		-webkit-border-radius: 7px;
-		-moz-border-radius: 7px;
-		margin: 0;
-		padding: 1px 8px;
-		height: 20px;
-		min-width: 150px;
-	}
-	.download div:nth-child(1):hover,
-	.download div:nth-child(1):focus-within{
-		border: 2px #204A79 solid;
-		background: #E3E3E3;
-	}
-	.download div:nth-child(1) a,
-	.download div:nth-child(1) a:visited{
-		color: unset;
-		text-decoration: none;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.download div:nth-child(1) a:hover,
-	.download div:nth-child(1) a:focus{
-		background: transparent;
-	}
-	.download div:nth-child(1) i{
-    color: #404040;
-  }
-	.download div:nth-child(2){
-		color: #666 ;
-		font-size: 11px;
-		font-family: 'Source Sans Pro', sans-serif;
-		text-align: center;
-		margin-top: .6em;
-	}
-} */
-
-
-/* 1.10.2. Google Translate */
-/* Also see other styles marked "Google Translate" */
-
-button{
-  -webkit-appearance: button;
-}
-.goog-te-banner-frame.skiptranslate{
-	display: none !important;
-	visibility: hidden !important;
-}
-.original-text{
-	text-align: unset !important;
-}
-.translate{
-	max-width: 170px;
-	float: left;
-	/* overflow: hidden !important; */
-	margin-bottom: -.2em;
-}
-/* Included in criticalTEI CSS, start */
-#google_translate_element{
-	min-height: 72px;
-}
-@media only screen and (min-width: 768px){
-	#google_translate_element{
-		min-height: 68px;
-	}
-}
-@media only screen and (min-width: 992px){
-	#google_translate_element{
-		min-height: 66px;
-	}
-}
-/* Included in criticalTEI CSS, end */
-#google_translate_element > div > span > a > img{
-	width: 3.5em;
-}
-#google_translate_element div.goog-te-gadget .goog-te-combo{
-	font-size: 1.3em;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	border: 2px solid #E3E3E3;
-	border-radius: 7px;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	margin: 0 0 0 -3px;
-	padding: 1px;
-}
-#google_translate_element div.goog-te-gadget .goog-te-combo:hover,
-#google_translate_element div.goog-te-gadget .goog-te-combo:focus{
-	border: 2px #204A79 solid;
-	background-color: #E3E3E3;
-}
-div.skiptranslate:nth-child(1){
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	padding-left: 4px;
-	line-height: 2.5em;
-	margin-top: .5em;
-}
-div.skiptranslate:nth-child(1) > span:nth-child(2),
-div.skiptranslate:nth-child(1) > span:nth-child(2){
-	border: 2px transparent solid;
-	margin-left: -2px;
-}
-div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
-div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
-	border: 2px #204A79 solid;
-}
-#google_translate_element > div > span > a > img,
-#google_translate_element > div > span > a > img{
-	border: 2px transparent solid;
-	padding-right: 1px !important;
-}
-#google_translate_element > div > span > a > img:hover,
-#google_translate_element > div > span > a > img:focus{
-	border: 2px transparent solid;
-}
-.goog-logo-link,
-.goog-logo-link:link{
-	font-size: 11px !important;
-	font-weight: normal !important;
-	color: #666 !important;
 }
 
 
@@ -2283,9 +1921,6 @@ ul.acknowledgments{
 
 /* 1.17. Formatting */
 
-.black{
-	color: black;
-}
 .bold{
 	font-weight: 600;
 }
@@ -2296,7 +1931,7 @@ ul.acknowledgments{
 	width: 50%;
 }
 .highlight{
-	color: #902D27;
+	color: #7d4d1c;
 	font-style: italic;
 }
 .italic{
@@ -2305,14 +1940,17 @@ ul.acknowledgments{
 .left{
 	text-align: left;
 }
+.right{
+  text-align: right;
+}
 .site-blue{
-	color: #204A79;
+	color: #395f65;
 }
 .site-red{
-	color: #902D27;
+	color: #7d4d1c;
 }
 .small{
-	font-size: .9em;
+	font-size: .9rem;
 }
 .smallcaps{
 	font-variant: small-caps;
@@ -2330,14 +1968,14 @@ strong{
 ol,
 ul{
 	margin: 0;
-	padding: 0 0 0 1.4em;
+	padding: 0 0 0 1.4rem;
 }
 ol li ol{
-	padding: 0 0 0 .6em;
+	padding: 0 0 0 .6rem;
 }
 @media only screen and (min-width: 768px){
 	ol li ol{
-		padding-left: 1.2em;
+		padding-left: 1.2rem;
 	}
 }
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
@@ -2345,14 +1983,13 @@ hr {
   /* display: block; */
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 1px solid #e2e4e2;
+  margin: 1rem 0;
   padding: 0;
 }
 .title-hr{
-	margin: 2em 0;
+	margin: 2rem 0;
 }
-
 
 /* 1.19. Scroll to Top Button */
 

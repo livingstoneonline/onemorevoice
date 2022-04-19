@@ -938,7 +938,7 @@ div.skiptranslate:nth-child(1){
 	font-weight: 400;
 	padding-left: 4px;
 	line-height: 2.5em;
-	margin-top: .25rem;
+	margin-top: .15rem;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
 div.skiptranslate:nth-child(1) > span:nth-child(2){
@@ -1010,18 +1010,22 @@ nav.overlay-nav .close{
 		margin-right: 1.2rem;
 	}
 }
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	nav .hamburger-menu,
 	nav .close{
 		display: none;
 		visibility: hidden;
 	}
-}
-@media only screen and (min-width: 992px){
+} */
+/* @media only screen and (min-width: 992px){
 	nav.fallback .hamburger-menu{
 		display: block;
 		visibility: visible;
 	}
+} */
+nav.fallback .hamburger-menu{
+	display: block;
+	visibility: visible;
 }
 nav .hamburger-menu .fa-bars,
 nav .fa-times{
@@ -1081,12 +1085,12 @@ nav .close:focus{
 		height: calc(100% - 55.2px);
 	}
 }
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	.overlay{
 		display: none !important;
 		visibility: hidden !important;
 	}
-}
+} */
 @media only screen and (min-width: 480px){
 	.overlay div{
 		background-color: #d3873c;

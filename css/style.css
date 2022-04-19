@@ -979,7 +979,7 @@ nav .close{
 }
 nav .hamburger-menu{
 	margin: 0 .5rem 0 0;
-	padding: 2px 5px 0;
+	padding: 3px 7px 1px;
 }
 nav.overlay-nav .hamburger-menu{
 	display: none;
@@ -987,7 +987,7 @@ nav.overlay-nav .hamburger-menu{
 }
 nav .close{
 	margin: .05rem .5rem 0 0;
-	padding: 0 7px;
+	padding: 2px 9px;
 	display: none;
 	visibility: hidden;
 }
@@ -997,10 +997,10 @@ nav.overlay-nav .close{
 }
 @media only screen and (min-width: 768px){
 	nav .hamburger-menu{
-		margin-left: .2rem;
+		margin-left: .3rem;
 	}
 	nav .close{
-		margin-left: .3rem;
+		margin-left: .4rem;
 	}
 }
 nav.fallback .hamburger-menu{
@@ -1014,13 +1014,13 @@ nav .fa-times{
 @media only screen and (min-width: 480px){
 	nav .hamburger-menu .fa-bars,
 	nav .fa-times{
-		font-size: 1.7rem;
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav .hamburger-menu .fa-bars,
 	nav .fa-times{
-		font-size: 1.9rem;
+		font-size: 1.7rem;
 	}
 }
 nav .hamburger-menu:hover,

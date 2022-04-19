@@ -75,6 +75,7 @@ also see 2.9 for manuscript colors
 (dark brown) #7d4d1c; (contrast checked)
 (super light gray) #ededed;
 (light gray) #e2e4e2;
+(light mid-gray) #bdc2bd;
 (mid-gray) #737d73;
 (dark gray) #4d5b51; (contrast checked)
 */
@@ -232,7 +233,7 @@ aside{
 }
 aside div{
 	background-color: #dcd3a6;
-	margin: 1rem calc(2rem + 2px) 1.5rem;
+	margin: 1rem 1rem 1.5rem;
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
@@ -408,7 +409,7 @@ a:focus img{
 	}
 }
 /* Caption for main image */
-.image-wrapper{
+/* .image-wrapper{
 	line-height: 0;
 	margin: 0;
 	padding: 0;
@@ -461,7 +462,7 @@ a:focus img{
 .image-wrapper a:focus{
 	color: #e3e3e3 !important;
 	background-color: unset;
-}
+} */
 img + p.caption-text,
 .double-image + p.caption-text{
 	font-size: .8em;
@@ -818,7 +819,7 @@ nav .button-container a.external{
 		visibility: visible;
 	}
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 768px){
 	nav .button-container a.external{
 		display: block;
 		visibility: visible;
@@ -880,7 +881,7 @@ nav .button-container a.external:focus i{
 	display: flex;
 	visibility: visible;
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 768px){
 	.translate{
 		display: flex;
 		visibility: visible;
@@ -938,7 +939,7 @@ div.skiptranslate:nth-child(1){
 	font-weight: 400;
 	padding-left: 4px;
 	line-height: 2.5em;
-	margin-top: .15rem;
+	margin-top: .25rem;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
 div.skiptranslate:nth-child(1) > span:nth-child(2){
@@ -985,8 +986,8 @@ nav.overlay-nav .hamburger-menu{
 	visibility: hidden;
 }
 nav .close{
-	margin: 0 .7rem 0 0;
-	padding: 0 5px;
+	margin: .05rem .5rem 0 0;
+	padding: 0 7px;
 	display: none;
 	visibility: hidden;
 }
@@ -994,35 +995,14 @@ nav.overlay-nav .close{
 	display: block;
 	visibility: visible;
 }
-@media only screen and (min-width: 480px){
-	nav .hamburger-menu{
-		margin-right: .75rem;
-	}
-	nav .close{
-		margin-right: .95rem;
-	}
-}
 @media only screen and (min-width: 768px){
 	nav .hamburger-menu{
-		margin-right: 1rem;
+		margin-left: .2rem;
 	}
 	nav .close{
-		margin-right: 1.2rem;
+		margin-left: .3rem;
 	}
 }
-/* @media only screen and (min-width: 992px){
-	nav .hamburger-menu,
-	nav .close{
-		display: none;
-		visibility: hidden;
-	}
-} */
-/* @media only screen and (min-width: 992px){
-	nav.fallback .hamburger-menu{
-		display: block;
-		visibility: visible;
-	}
-} */
 nav.fallback .hamburger-menu{
 	display: block;
 	visibility: visible;
@@ -1047,7 +1027,8 @@ nav .hamburger-menu:hover,
 nav .hamburger-menu:focus,
 nav .close:hover,
 nav .close:focus{
-	outline: 2px solid #fff;	
+	color: #212119;
+	background-color: #fff;
 }
 
 
@@ -1899,8 +1880,14 @@ section.archival-text .no-image .content{
 		border: 2px solid #e2e4e2;
 	}
 }
+@media only screen and (min-width: 768px){
+	.home hr{
+		display: none;
+		visibility: hidden;
+	}
+}
 /* browse tiles */
-.home section.tiles{
+/* .home section.tiles{
   margin: 0 auto;
   display: flex;
 	flex-direction: row;
@@ -1958,10 +1945,10 @@ section.archival-text .no-image .content{
 	right: 0;
 	opacity: .9;
 	z-index: 10;
-}
+} */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-.home section.tiles div{
+/* .home section.tiles div{
 	background: #e2e4e2;
 	margin: 0;
 	padding: 0;
@@ -1984,7 +1971,7 @@ section.archival-text .no-image .content{
 	-o-object-fit: cover;
 	overflow: hidden;
 	object-position: 50% 50%;
-}
+} */
 
 
 /* 1.15 Page Specific Coding */
@@ -2190,8 +2177,8 @@ hr {
   /* display: block; */
   height: 1px;
   border: 0;
-  border-top: 1px solid #e2e4e2;
-  margin: 1rem 0;
+  border-top: 1px solid #bdc2bd;
+  margin: 1rem;
   padding: 0;
 }
 .title-hr{

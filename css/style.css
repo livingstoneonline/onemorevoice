@@ -204,118 +204,64 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
-/* 1.2 Main Section and Related */
 
-header,
-.transcription header{
-	text-align: center;
-	margin: 44px auto 0;
-	max-width: 700px;
-	position: relative;
-}
-@media only screen and (min-width: 480px){
-	header,
-	.transcription header{
-		margin-top: 54px;
-	}
-}
-@media only screen and (min-width: 768px){
-	header,
-	.transcription header{
-		margin-bottom: 1em;
-	}
-}
-@media only screen and (min-width: 992px){
-	header,
-	.transcription header{
-		margin-top: 0;
-	}
-}
-main,
-aside.credits#credits-div,
-aside.credits#credits2-div,
-aside.credits#main,
-main.object#object-div{
-	line-height: 1.875em;
-	margin: 0 auto;
-	max-width: 700px;
-}
-/* main pages */
+/* 1.2. Main and Aside */
+
 main{
-	font-size: 1.25em;
-	padding: 1em;
+	font-size: 1rem;
+  line-height: 1.875em;
+	margin: 0 auto;
+	padding: 0;
 	display: block;
 }
-aside.text-box{
-	background: #e3e3e3;
-	border-left: 5px #902D27 solid;
-	padding: 1em;
+@media only screen and (min-width: 992px){
+  main{
+		font-size: 1.125rem;
+    max-width: 1366px;
+  }
 }
-aside.credits#credits-div{
-	font-size: 1.2em;
-	padding: 0 1em 1em;
-}
-/* visual materials pages */
-aside.credits#main{
-	font-size: 1.2em;
-	padding: 1em 1em 0;
-}
-main.object#object-div{
-	padding: 0 1em;
-}
-aside.credits#credits2-div{
-	font-size: 1.2em;
-	padding: 0 1em 1em;
-}
-/* manuscript pages */
-main.manuscript#manuscript-div,
-main.journal#journal-div{
-	margin-bottom: 1.5em;
+aside{
+	margin: 0 auto;
 	padding: 0;
+	display: flex;
 }
-@media only screen and (min-width: 480px){
-	main.object#object-div{
-		padding: 1em;
-	}	
+@media only screen and (min-width: 992px){
+  aside{
+    max-width: 1366px;
+  }
+}
+aside div{
+	background-color: #dcd3a6;
+	margin: 1rem calc(2rem + 2px) 1.5rem;
+	flex-grow: 1;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	aside div{
+		display: block;
+		visibility: visible;
+	}
+}
+.credits{
+	font-size: 1rem;
+	line-height: 1.875em;
+	background-color: initial;
+	padding: 0 1rem;
+	margin: 0 auto;
+	display: block;
+	visibility: visible;
 }
 @media only screen and (min-width: 768px){
-	main{
-		font-size: 1.2em;
-		padding: 1em 0;
-	}
-	aside.credits#credits-div{
-		font-size: 1.15em;
-		padding: 0 0 1.5em;
-	}
-	aside.credits#main{
-		font-size: 1.15em;
-		padding: 1em 0 0;
-	}
-	main.object#object-div{
-		font-size: 1.15em;
-		padding: 0 0 1em;
-	}
-	aside.credits#credits2-div{
-		font-size: 1.15em;
-		padding: 0 0 1.5em;
+		.credits{
+			max-width: 768px;
+			padding: 0 1.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	main{
-		font-size: 1.15em;
-		display: block !important; /* Tied to overlay */
-	}
-	aside.credits#credits-div{
-		font-size: 1.1em;
-	}
-	aside.credits#main{
-		font-size: 1.1em;
-	}
-	main.object#object-div{
-		font-size: 1.1em;
-	}
-	aside.credits#credits2-div{
-		font-size: 1.1em;
+	.credits{
+		padding: 1rem 0;
+		font-size: 1.1rem;
 	}
 }
 /* toc and toc-title used for page menus */
@@ -328,32 +274,6 @@ main.journal#journal-div{
 	margin-left: -1.2em;
 	display: inline-block;
 }
-/* .return-top{
-	font: 16px 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	font-size: .9em;
-	white-space: nowrap;
-}
-@media only screen and (min-width: 480px){
-	.return-top{
-		margin-right: .5em;
-	}
-} */
-[id]:target{
-	margin-top: -70px;
-	border-top: 70px solid transparent;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;
-	background-clip: padding-box;
-}
-@media only screen and (min-width: 480px){
-	[id]:target{
-		margin-top: -75px;
-		border-top: 75px solid transparent;
-	}
-}
-/* https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
-/* Also see Appendix for alternative [id]:target coding */
 
 
 /* 1.3 Headings and Related */
@@ -576,17 +496,21 @@ img + p.caption-text,
 	}
 }
 
+
 /* 1.5. Links */
 
+*:focus{
+	outline: 0 none;
+}
 a,
 a:visited{
-	color: #204A79;
+	color: #395f65;
 	background-color: transparent;
 }
 a:hover,
 a:focus{
-	color: #a83c37;
-	background-color: #E3E3E3;
+	color: #7d4d1c;
+	background-color: #e2e4e2;
 }
 #credits-div > p:nth-child(2) > a,
 #closing-credits > p:nth-child(3) > a,
@@ -600,8 +524,26 @@ a:focus{
 .graphic a:focus{
 	background-color: white;
 }
-*:focus{
-	outline: 0 none;
+.action-button,
+.action-button:visited{
+	font-size: 1rem;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+	color: #fff;
+	background-color: #d48c44;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin: .25rem;
+	padding: .23rem .75rem;
+	display: inline-block;
+}
+.action-button:hover,
+.action-button:focus{
+	color: #d48c44;
+	background-color: #fff;
+	outline: 1px solid #d48c44;
 }
 
 

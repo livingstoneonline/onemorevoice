@@ -778,7 +778,7 @@ nav .button-container{
 }
 @media only screen and (min-width: 768px){
 	nav .button-container{
-		gap: .55rem;
+		gap: .75rem;
 	}
 	
 }
@@ -821,8 +821,15 @@ nav .button-container a.external{
 }
 @media only screen and (min-width: 768px){
 	nav .button-container a.external{
-		display: block;
 		visibility: visible;
+	}
+	nav .button-container div.translate,
+	nav .button-container a.external,
+	nav .button-container button.hamburger-menu{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
 	}
 }
 nav .button-container a.external:hover,
@@ -997,10 +1004,10 @@ nav.overlay-nav .close{
 }
 @media only screen and (min-width: 768px){
 	nav .hamburger-menu{
-		margin-left: .2rem;
+		margin-left: .3rem;
 	}
 	nav .close{
-		margin-left: .3rem;
+		margin-left: .4rem;
 	}
 }
 nav.fallback .hamburger-menu{
@@ -1014,13 +1021,13 @@ nav .fa-times{
 @media only screen and (min-width: 480px){
 	nav .hamburger-menu .fa-bars,
 	nav .fa-times{
-		font-size: 1.7rem;
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav .hamburger-menu .fa-bars,
 	nav .fa-times{
-		font-size: 1.9rem;
+		font-size: 1.7rem;
 	}
 }
 nav .hamburger-menu:hover,

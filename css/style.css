@@ -73,6 +73,7 @@ also see 2.9 for manuscript colors
 (dark blue) #395f65; (contrast checked)
 (orange) #d3873c;
 (dark brown) #7d4d1c; (contrast checked)
+(dark brown, for a links) #694017 (contrast checked)
 (super light gray) #ededed;
 (light gray) #e2e4e2;
 (light mid-gray) #bdc2bd;
@@ -504,7 +505,7 @@ a:visited{
 }
 a:hover,
 a:focus{
-	color: #7d4d1c;
+	color: #694017;
 	background-color: #e2e4e2;
 }
 #credits-div > p:nth-child(2) > a,
@@ -1886,92 +1887,6 @@ section.archival-text .no-image .content{
 		visibility: hidden;
 	}
 }
-/* browse tiles */
-/* .home section.tiles{
-  margin: 0 auto;
-  display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	align-content: stretch;
-}
-@media only screen and (min-width: 768px){
-  .home section.tiles{
-		padding: 0 1rem;
-	}
-	.home section.tiles{
-		padding-top: .5rem;
-	}
-}
-.home section.tiles section{
-  text-align: center;
-  width: 100%;
-  margin: .5rem 1rem;
-	position: relative;
-}
-.home section.tiles section:hover,
-.home section.tiles section:focus-within{
-	outline: 3px solid #395f65;
-	opacity: .7;
-}
-@media only screen and (min-width: 768px){
-  .home section.tiles section{
-		margin: .5rem;
-    width: calc(50% - 2rem);
-  }
-}
-@media only screen and (min-width: 992px){
-  .home section.tiles section{
-    width: calc(50% - 2rem);
-  }
-}
-.home section.tiles section p{
-	font-size: 1.1rem;
-	font-family: 'Merriweather', serif;
-	white-space: nowrap;
-	color: #fff;
-	background-color: rgb(66,66,66);
-	line-height: 1.5em;
-	text-align: center;
-	margin: 0;
-	text-decoration: none;
-	border-radius: 6px 0 0 0;
-	-webkit-border-radius: 6px 0 0 0;
-	-moz-border-radius: 6px 0 0 0;
-	padding: .5rem 1rem;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	opacity: .9;
-	z-index: 10;
-} */
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-/* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-/* .home section.tiles div{
-	background: #e2e4e2;
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-.home section.tiles div::after{
-	content: "";
-	padding-bottom: 66.67%;
-	display: block;
-}
-.home section.tiles a div img{
-	background: #e2e4e2;
-	border: 0;
-	width: 100%;
-  height: 100%;
-	position: absolute;
-  left: 0;
-  top: 0;
-	object-fit:cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-	object-position: 50% 50%;
-} */
 
 
 /* 1.15 Page Specific Coding */
@@ -2246,38 +2161,3 @@ hr {
 	background-color: #525252;
 	border: 2px solid transparent;
 }
-
-
-/* Appendix */
-
-/* Alternative [id]:target Coding */
-/* see https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
-/* alternative coding */
-/* [id]:target {
-	padding-top: 65px; 
-	margin-top: -65px;
-} */
-/* *[id]:before { 
-	display: block; 
-	content: " "; 
-	margin-top: -80px;
-	height: 80px;
-	visibility: hidden; 
-} */
-/* [id]:target::before {
-	content: "";
-	display: block;
-	height: 80px;
-	margin: -80px 0 0;
-} */
-/* alternative coding for empty spans */
-/* .anchor{
-	display: block;
-	height: 80px;
-	margin-top: -80px;
-	visibility: hidden;
-} */
-/* doesn't work in iOS */
-/* html {
-	scroll-padding-top: 80px;
-} */

@@ -1,6 +1,6 @@
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
-/* Created and maintained by Adrian S. Wisnicki */ /* 2020 */
+/* Created and maintained by Adrian S. Wisnicki */ /* 2020-2022 */
 
 /* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
 
@@ -41,9 +41,13 @@ Alternative [id]:target Coding
 /*--------------------------------------*/
 
 /** Main Site Colors **/
+/* Color palette from image: https://icolorpalette.com/color-palette-from-images */
+/* Create a palette: https://coolors.co/03256c-2541b2-1768ac-06bee1-ffffff */
 /* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
+/* Complementary color picker: https://giggster.com/guide/complementary-colors/ */
 /* Color shades: https://mdigi.tools/color-shades/ */
+
 /*
 (white) #fff;
 (black) #000;
@@ -61,30 +65,123 @@ Alternative [id]:target Coding
 also see 2.9 for manuscript colors
 */
 
+/* 
+>>new colors
+(white) #fff
+(black) #212119;
+(light blue) #c2d9db;
+(dark blue) #395f65; (contrast checked)
+(orange) #d3873c;
+(dark brown) #7d4d1c; (contrast checked)
+(super light gray) #ededed;
+(light gray) #e2e4e2;
+(mid-gray) #737d73;
+(dark gray) #4d5b51; (contrast checked)
+*/
+
+/* 
+>>font-sizes 
+nav .logo-container a h1
+1.5rem; / 1.7rem (480) / 1.8rem (768)
+
+nav .button-container a.external i
+1.6rem
+
+#google_translate_element div.goog-te-gadget .goog-te-combo
+.95rem
+
+.goog-logo-link,
+.goog-logo-link:link
+11px
+
+nav .hamburger-menu .fa-bars,
+nav .fa-times
+1.5rem / 1.7rem (480) / 1.9rem (768)
+
+main 
+1rem / 1.125rem (992)
+
+.credits
+1rem / 1.1rem (992)
+
+.action-button,
+.action-button:visited
+1rem
+
+small
+.9rem
+
+.home .introduction-section h2
+1.5rem
+
+.home .introduction-section .caption
+1.3rem / 1.5rem (480) / 1.7rem (768)
+
+.home section.tiles section p
+1.1rem
+*/
+
+/*
+#skip a{z-index: 150;}
+.home section.tiles section p{z-index: 10;}
+.overlay{z-index: 100;}
+*/
+
+/*--------------------------------------*/
+
 /** 1.0 Main CSS **/
 
 /* 1.1. Principal Components */
 
-/* *, *:before, *:after {
+/* :hover,
+:focus,
+:focus-within{
+	transition: 0.3s;
+} */
+*, *:before, *:after{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-} */
+}
 /* ::selection from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-::selection {
+::selection{
 	color: #fff;
-  background: #404040;
+  background: #4d5b51;
   text-shadow: none;
 }
-::-moz-selection {
+::-moz-selection{
   color: #fff;
-	background: #858585;
+	background: #4d5b51;
   text-shadow: none;
+}
+.mobile{
+	display: inherit;
+	visibility: visible;
+}
+.desktop{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 768px){
+	.mobile{
+		display: none;
+		visibility: hidden;
+	}
+	.desktop{
+		display: inherit;
+		visibility: visible;
+	}
+}
+button{
+	all: unset;
+  -webkit-appearance: button;
 }
 html{
-	font: 16px Georgia, 'Times New Roman', Times, serif;
+	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
+	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	color: #191716;
+	background-color: #ededed;
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -106,44 +203,6 @@ body{
 	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: antialiased;
 }
-.text-container{
-	padding: 0;
-	margin: 0 auto;
-	max-width: 100%;
-}
-@media only screen and (min-width: 480px){
-	.text-container{
-		margin-top: 70px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.text-container{
-		border-right: 1px solid #bfbfbf;
-		border-left: 1px solid #bfbfbf;
-		margin-top: 51.1px;
-		margin-bottom: 0;
-		/* the following tied to nav-wrapper */
-		min-width: 992px;
-		max-width: 1200px;
-		display: flex;
-		flex-direction: row-reverse;
-	}
-}
-@media only screen and (min-width: 768px){
-	.page-wrapper{
-		margin: 0 auto;
-		max-width: 700px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.page-wrapper{
-		margin: 0 auto;
-		padding: 36px 1.2em 0;
-		width: 100%;
-		max-width: 900px;
-	}
-}
-
 
 /* 1.2 Main Section and Related */
 

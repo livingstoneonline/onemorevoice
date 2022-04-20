@@ -216,6 +216,7 @@ aside{
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
+	visibility: visible;
 }
 @media only screen and (min-width: 992px){
   main,
@@ -1806,6 +1807,7 @@ section.archival-text .no-image .content{
 }
 .home .introduction-section .image-wrapper{
 	display: block;
+	visibility: visible;
 	position: relative;
 }
 .home .introduction-section img{
@@ -1860,6 +1862,7 @@ section.archival-text .no-image .content{
 	margin: 0;
 	padding: 4px 6px 2px;
 	bottom: .5rem;
+	right: inherit;
 	left: .5rem;
 	position: absolute;
 }

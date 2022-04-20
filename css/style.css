@@ -299,23 +299,26 @@ aside div{
 		font-size: 1.15em;
 	}
 }
-h3{
+.credits h3{
+	font-size: 1.2rem;
+	font-family: 'Merriweather', serif;
+	color: #395f65;
+	text-align: center;
+}
+/* h3{
 	font-size: 1.1em;
 	font-weight: 600;
 	font-variant: small-caps;
-}
+} */
 /* adds padding for h3 labelled subsections in essays */
-h3.subsection{
+/* h3.subsection{
 	padding-top: 2em;
-}
-.essay h3{
-	clear: both; /* Needed for Google Translate */
-}
-.credits h3{
+} */
+/* .credits h3{
 	font-size: 1.15em;
 	margin-top: 1.6em;
-}
-.contributors h3{
+} */
+.contributors main h3{
   font-style: italic;
   font-weight: normal;
   font-variant: normal;
@@ -410,7 +413,7 @@ a:focus img{
 	}
 }
 /* Caption for main image */
-/* .image-wrapper{
+.image-wrapper{
 	line-height: 0;
 	margin: 0;
 	padding: 0;
@@ -463,7 +466,7 @@ a:focus img{
 .image-wrapper a:focus{
 	color: #e3e3e3 !important;
 	background-color: unset;
-} */
+}
 img + p.caption-text,
 .double-image + p.caption-text{
 	font-size: .8em;
@@ -1827,7 +1830,7 @@ section.archival-text .no-image .content{
 	}
 }
 .home .introduction-section h2{
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	font-family: 'Merriweather', serif;
 	color: #395f65;
   margin: 0 auto;
@@ -1882,7 +1885,7 @@ section.archival-text .no-image .content{
 	}
 }
 @media only screen and (min-width: 768px){
-	.home hr{
+	.essay hr.section-divider{
 		display: none;
 		visibility: hidden;
 	}

@@ -182,6 +182,7 @@ html{
 	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
 	font: 16px 'Source Sans Pro', sans-serif;
 	font-weight: normal;
+	line-height: 1.875em;
 	color: #191716;
 	background-color: #ededed;
 	/* overflow-wrap: break-word;
@@ -209,63 +210,67 @@ body{
 
 /* 1.2. Main and Aside */
 
-main{
-	font-size: 1rem;
-  line-height: 1.875em;
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-}
-@media only screen and (min-width: 992px){
-  main{
-		font-size: 1.125rem;
-    max-width: 1366px;
-  }
-}
+main,
 aside{
+	font-size: 1rem;
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
 }
 @media only screen and (min-width: 992px){
-  aside{
-    max-width: 1366px;
+  main,
+	aside{
+		max-width: 1366px;
+	}
+	main{
+		font-size: 1.125rem;
   }
+	aside{
+		font-size: 1.1rem;
+	}
 }
+main div,
 aside div{
-	background-color: #dcd3a6;
 	margin: 1rem 1rem 1.5rem;
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
 }
+main div{
+	background-color: #77838c;	
+}
+aside div{
+	background-color: #dcd3a6;
+}
 @media only screen and (min-width: 992px){
+	main div,
 	aside div{
 		display: block;
 		visibility: visible;
 	}
 }
-.credits{
-	font-size: 1rem;
-	line-height: 1.875em;
+main article,
+aside article{
 	background-color: initial;
 	padding: 0 1rem;
-	margin: 0 auto;
 	display: block;
 	visibility: visible;
 }
 @media only screen and (min-width: 768px){
-		.credits{
-			max-width: 768px;
+	main article,
+	aside article{
 			padding: 0 1.5rem;
+			width: 768px;
 	}
 }
 @media only screen and (min-width: 992px){
-	.credits{
+	main article,
+	aside article{
 		padding: 1rem 0;
-		font-size: 1.1rem;
 	}
 }
+
+
 /* toc and toc-title used for page menus */
 .toc{
 	font-size: .9em;
@@ -1885,7 +1890,7 @@ section.archival-text .no-image .content{
 	}
 }
 @media only screen and (min-width: 768px){
-	.essay hr.section-divider{
+	hr.section-divider{
 		display: none;
 		visibility: hidden;
 	}

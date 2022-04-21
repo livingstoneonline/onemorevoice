@@ -218,13 +218,16 @@ aside{
 	visibility: visible;
 }
 aside{
-	padding: 0 1rem;
+	padding: 0 1rem 1rem;
 }
 @media only screen and (min-width:768px){
 	main,
 	aside{
-		padding: 1rem 0;
-	}	
+		margin: 0;
+	}
+	aside{
+		padding: .5rem 0;
+	}
 }
 @media only screen and (min-width: 992px){
   main,
@@ -235,10 +238,19 @@ aside{
 		font-size: 1.125rem;
   }
 	aside{
-		font-size: 1.1rem;
+		font-size: 1.05rem;
 	}
 }
-main div.decoration,
+main article,
+aside article{
+	background-color: initial;
+	margin: 0 auto;
+	display: inline-block;
+	visibility: visible;
+}
+
+
+/* main div.decoration,
 aside div.decoration{
 	flex-grow: 1;
 	display: none;
@@ -259,16 +271,20 @@ main div.image-wrapper{
 		display: block;
 		visibility: visible;
 	}
-	main div.decoration:first-child,
+	main div.decoration:first-child{
+		width: 10px;
+	}
+	main div.decoration:last-child{
+		width: 30px;
+	}
 	aside div.decoration:first-child{
 		margin-right: 2rem;
 	}
-	main div.decoration:last-child,
 	aside div.decoration:last-child{
 		margin-left: 2rem;
 	}
-}
-@media only screen and (min-width: 992px){
+} */
+/* @media only screen and (min-width: 992px){
 	main div.decoration:first-child,
 	aside div.decoration:first-child{
 		margin-right: 10rem;
@@ -277,26 +293,7 @@ main div.image-wrapper{
 	aside div.decoration:last-child{
 		margin-left: 10rem;
 	}
-}
-main article,
-aside article{
-	background-color: initial;
-	margin: 0 auto;
-	display: inline-block;
-	visibility: visible;
-}
-@media only screen and (min-width: 768px){
-	main article,
-	aside article{
-			max-width: 650px;
-	}
-}
-@media only screen and (min-width: 992px){
-	main article,
-	aside article{
-		width: 768px;
-	}
-}
+} */
 
 
 /* toc and toc-title used for page menus */
@@ -332,6 +329,11 @@ aside article{
 		font-size: 1.15em;
 	}
 }
+.essay .image-wrapper h2{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 .credits h3{
 	font-size: 1.2rem;
 	font-family: 'Merriweather', serif;
@@ -352,10 +354,12 @@ aside article{
 	margin-top: 1.6em;
 } */
 .contributors main h3{
-  font-style: italic;
+  /* font-style: italic; */
+	font-family: 'Merriweather', serif;
   font-weight: normal;
   font-variant: normal;
-	margin-top: 0;
+	color: #395f65;
+	/* margin-top: 0; */
 }
 .contributors section:first-of-type h3{
 	margin-top: 1em;
@@ -1810,6 +1814,21 @@ section.archival-text .no-image .content{
 
 /* introduction section */
 /* https://www.nngroup.com/articles/text-over-images/ used to inform text over image */
+@media only screen and (min-width: 768px){
+	.home main{
+		padding: 0;
+	}
+	.home aside{
+		padding: .5rem 0;
+	}
+	.home aside div.decoration{
+		margin: 0;
+		width: 4rem;
+	}
+	.home aside article{
+		margin: 0 2rem;
+	}
+}
 .home .introduction-section{
 	line-height: 1em;
 }
@@ -1871,7 +1890,7 @@ section.archival-text .no-image .content{
 	font-size: 1.6rem;
 	font-family: 'Merriweather', serif;
 	color: #395f65;
-  margin: 0 auto;
+  margin: 1rem auto 2rem;
 }
 .home .introduction-section p{
 	text-align: left;
@@ -1924,9 +1943,33 @@ section.archival-text .no-image .content{
 	}
 }
 @media only screen and (min-width: 768px){
-	hr.section-divider{
+	.home hr.section-divider{
 		display: none;
 		visibility: hidden;
+	}
+	.home aside article{
+		max-width: 650px;
+	}
+	.home aside div.decoration{
+		background-color: #dcd3a6;
+		display: block;
+		visibility: visible;
+		flex-grow: 1;
+	}
+}
+@media only screen and (min-width: 992px){
+	.home aside{
+		padding: 1rem;
+	}
+	.home aside article{
+		max-width: 700px;
+		margin: 0 5rem;
+	}
+	.home aside div.decoration{
+		background-color: #dcd3a6;
+		display: block;
+		visibility: visible;
+		flex-grow: 1;
 	}
 }
 

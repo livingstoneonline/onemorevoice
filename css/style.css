@@ -214,9 +214,17 @@ main,
 aside{
 	font-size: 1rem;
 	margin: 0 auto;
-	padding: 0;
 	display: flex;
 	visibility: visible;
+}
+aside{
+	padding: 0 1rem;
+}
+@media only screen and (min-width:768px){
+	main,
+	aside{
+		padding: 1rem 0;
+	}	
 }
 @media only screen and (min-width: 992px){
   main,
@@ -230,44 +238,63 @@ aside{
 		font-size: 1.1rem;
 	}
 }
-main div,
-aside div{
-	margin: 1rem 1rem 1.5rem;
+main div.decoration,
+aside div.decoration{
 	flex-grow: 1;
 	display: none;
 	visibility: hidden;
 }
-main div{
-	background-color: #77838c;	
+main div.decoration{
+	background-color: #d3873c;	
 }
-aside div{
+aside div.decoration{
 	background-color: #dcd3a6;
 }
-@media only screen and (min-width: 992px){
-	main div,
-	aside div{
+main div.image-wrapper{
+	background-color: initial;
+}
+@media only screen and (min-width: 768px){
+	main div.decoration,
+	aside div.decoration{
 		display: block;
 		visibility: visible;
+	}
+	main div.decoration:first-child,
+	aside div.decoration:first-child{
+		margin-right: 2rem;
+	}
+	main div.decoration:last-child,
+	aside div.decoration:last-child{
+		margin-left: 2rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	main div.decoration:first-child,
+	aside div.decoration:first-child{
+		margin-right: 10rem;
+	}
+	main div.decoration:last-child,
+	aside div.decoration:last-child{
+		margin-left: 10rem;
 	}
 }
 main article,
 aside article{
 	background-color: initial;
-	padding: 0 1rem;
-	display: block;
+	margin: 0 auto;
+	display: inline-block;
 	visibility: visible;
 }
 @media only screen and (min-width: 768px){
 	main article,
 	aside article{
-			padding: 0 1.5rem;
-			width: 768px;
+			max-width: 650px;
 	}
 }
 @media only screen and (min-width: 992px){
 	main article,
 	aside article{
-		padding: 1rem 0;
+		width: 768px;
 	}
 }
 
@@ -669,7 +696,7 @@ header nav button,
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
 	padding: .35rem .55rem;
-	top: -55px;
+	top: -58px;
 	left: 0;
 	position: absolute;
 	z-index: 150;
@@ -825,14 +852,18 @@ nav .button-container a.external{
 }
 @media only screen and (min-width: 480px){
 	nav.overlay-nav .button-container a.external{
-		display: block;
-		visibility: visible;
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
 	}
 }
 @media only screen and (min-width: 768px){
 	nav .button-container a.external{
-		display: block;
-		visibility: visible;
+		display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
 	}
 }
 nav .button-container a.external:hover,
@@ -989,7 +1020,7 @@ nav .close{
 }
 nav .hamburger-menu{
 	margin: 0 .5rem 0 0;
-	padding: 3px 7px 1px;
+	padding: 6px 7px 0;
 }
 nav.overlay-nav .hamburger-menu{
 	display: none;
@@ -997,7 +1028,7 @@ nav.overlay-nav .hamburger-menu{
 }
 nav .close{
 	margin: .05rem .5rem 0 0;
-	padding: 2px 9px;
+	padding: 6px 9px 2px;
 	display: none;
 	visibility: hidden;
 }

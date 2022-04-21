@@ -135,11 +135,6 @@ small
 
 /* 1.1. Principal Components */
 
-/* :hover,
-:focus,
-:focus-within{
-	transition: 0.3s;
-} */
 *, *:before, *:after{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -290,7 +285,14 @@ aside.text-box{
 
 /* 1.3 Headings and Related */
 
-.essay h2,
+.credits h3{
+	font-size: 1.3rem;
+	font-family: 'Merriweather', serif;
+	color: #395f65;
+	text-align: center;
+}
+
+/* .essay h2,
 .transcription h2{
 	color: #204A79;
 	margin: .5em auto 0 auto;
@@ -314,31 +316,19 @@ aside.text-box{
 	top: 0;
 	left: 0;
 }
-.credits h3{
-	font-size: 1.3rem;
-	font-family: 'Merriweather', serif;
-	color: #395f65;
-	text-align: center;
-}
 h3{
 	font-size: 1.1em;
 	font-weight: 600;
 	font-variant: small-caps;
 }
-/* adds padding for h3 labelled subsections in essays */
 h3.subsection{
 	padding-top: 2em;
 }
-.essay h3{
-	clear: both; /* Needed for Google Translate */
-}
 .contributors main h3{
-  /* font-style: italic; */
 	font-family: 'Merriweather', serif;
   font-weight: normal;
   font-variant: normal;
 	color: #395f65;
-	/* margin-top: 0; */
 }
 .contributors section:first-of-type h3{
 	margin-top: 1em;
@@ -348,10 +338,9 @@ h4{
 	font-style: italic;
 	font-weight: 300;
 }
-/* adds padding for h3 labelled subsections in essays */
 .subsection{
 	padding-top: 1.5em;
-}
+} */
 
 
 /* 1.4. Main Images and Related */

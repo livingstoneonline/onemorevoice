@@ -210,7 +210,7 @@ body{
 
 /* 1.2. Main and Aside */
 
-main,
+/* main,
 aside{
 	font-size: 1rem;
 	margin: 0 auto;
@@ -247,9 +247,7 @@ aside article{
 	margin: 0 auto;
 	display: inline-block;
 	visibility: visible;
-}
-
-
+} */
 /* main div.decoration,
 aside div.decoration{
 	flex-grow: 1;
@@ -270,28 +268,6 @@ main div.image-wrapper{
 	aside div.decoration{
 		display: block;
 		visibility: visible;
-	}
-	main div.decoration:first-child{
-		width: 10px;
-	}
-	main div.decoration:last-child{
-		width: 30px;
-	}
-	aside div.decoration:first-child{
-		margin-right: 2rem;
-	}
-	aside div.decoration:last-child{
-		margin-left: 2rem;
-	}
-} */
-/* @media only screen and (min-width: 992px){
-	main div.decoration:first-child,
-	aside div.decoration:first-child{
-		margin-right: 10rem;
-	}
-	main div.decoration:last-child,
-	aside div.decoration:last-child{
-		margin-left: 10rem;
 	}
 } */
 
@@ -335,24 +311,23 @@ main div.image-wrapper{
 	left: 0;
 }
 .credits h3{
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-family: 'Merriweather', serif;
 	color: #395f65;
 	text-align: center;
 }
-/* h3{
+h3{
 	font-size: 1.1em;
 	font-weight: 600;
 	font-variant: small-caps;
-} */
+}
 /* adds padding for h3 labelled subsections in essays */
-/* h3.subsection{
+h3.subsection{
 	padding-top: 2em;
-} */
-/* .credits h3{
-	font-size: 1.15em;
-	margin-top: 1.6em;
-} */
+}
+.essay h3{
+	clear: both; /* Needed for Google Translate */
+}
 .contributors main h3{
   /* font-style: italic; */
 	font-family: 'Merriweather', serif;
@@ -384,6 +359,11 @@ img{
 	height: auto;
 }
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
+header img{
+	background: #e6e6e6;
+	border: 1px solid #e3e3e3;
+	box-sizing: border-box;
+}
 /* used on collections.html for images after header image */
 .illustration{
 	display: block;
@@ -951,6 +931,7 @@ nav .button-container a.external:focus i{
 	border: 2px solid #e2e4e2;
 } */
 .translate img{
+	background: none;
 	border: none;
 	width: 18px;
 	height: 18px;
@@ -1816,9 +1797,11 @@ section.archival-text .no-image .content{
 /* https://www.nngroup.com/articles/text-over-images/ used to inform text over image */
 @media only screen and (min-width: 768px){
 	.home main{
+		font-size: 1.125rem;
 		padding: 0;
 	}
 	.home aside{
+		font-size: 1.1rem;
 		padding: .5rem 0;
 	}
 	.home aside div.decoration{
@@ -1948,6 +1931,7 @@ section.archival-text .no-image .content{
 		visibility: hidden;
 	}
 	.home aside article{
+		margin: 0 auto;
 		max-width: 650px;
 	}
 	.home aside div.decoration{
@@ -1955,6 +1939,17 @@ section.archival-text .no-image .content{
 		display: block;
 		visibility: visible;
 		flex-grow: 1;
+	}
+}
+@media only screen and (min-width: 768px){
+	.home aside{
+		padding: 1rem;
+		display: flex;
+		visibility: visible;
+	}
+	.home aside article{
+		max-width: 700px;
+		margin: 0 1rem;
 	}
 }
 @media only screen and (min-width: 992px){

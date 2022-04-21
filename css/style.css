@@ -1786,15 +1786,35 @@ section.archival-text .no-image .content{
 main{
 	margin: 0 auto;
 	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
-.essay main article h2,
+/* https://stackoverflow.com/a/62275647 */
+/* https://webdesign.tutsplus.com/tutorials/a-comprehensive-guide-to-flexbox-ordering-reordering--cms-31564 */
+/* @media only screen and (min-width: 992px){
+	#item-1{
+		order: -1;
+	}
+	#item-2{
+		order: 2s;
+	}
+	#item-3{
+		order: 1;
+	}
+} */
+.essay main article,
+.essay main aside{
+	padding: 0 1rem;
+}
+/* .essay main article h2,
 .essay main article h3,
 .essay main article p,
 .essay main article ul,
 aside article h3,
 aside article p{
 	padding: 0 1rem;
-}
+} */
 @media only screen and (min-width: 768px){
 	main{
 		font-size: 1.125rem;
@@ -2178,7 +2198,12 @@ hr {
 .title-hr{
 	margin: 2rem 0;
 }
-
+@media only screen and (min-width: 992px){
+	hr.section-divider{
+		display: none;
+		visibility: hidden;
+	}
+}
 /* 1.19. Scroll to Top Button */
 
 /* Scroll to top button */
@@ -2316,9 +2341,9 @@ hr {
 	.essay main.object#object-div{
 		padding: 1em;
 	}	
-}
+} */
 /* manuscript pages */
-.essay main.manuscript#manuscript-div,
+/* .essay main.manuscript#manuscript-div,
 .essay main.journal#journal-div{
 	margin-bottom: 1.5em;
 	padding: 0;

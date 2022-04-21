@@ -285,12 +285,7 @@ aside.text-box{
 
 /* 1.3 Headings and Related */
 
-.credits h3{
-	font-size: 1.3rem;
-	font-family: 'Merriweather', serif;
-	color: #395f65;
-	text-align: center;
-}
+
 
 /* .essay h2,
 .transcription h2{
@@ -1793,7 +1788,9 @@ main{
 	padding: 0;
 }
 .essay main article h2,
-.essay main article section,
+.essay main article h3,
+.essay main article p,
+.essay main article ul,
 aside article h3,
 aside article p{
 	padding: 0 1rem;

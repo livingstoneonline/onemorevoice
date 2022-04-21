@@ -271,7 +271,11 @@ main div.image-wrapper{
 	}
 } */
 
-
+aside.text-box{
+	background: #e3e3e3;
+	border-left: 5px #902D27 solid;
+	padding: 1em;
+}
 /* toc and toc-title used for page menus */
 .toc{
 	font-size: .9em;
@@ -362,7 +366,6 @@ img{
 header img{
 	background: #e6e6e6;
 	border: 1px solid #e3e3e3;
-	box-sizing: border-box;
 }
 /* used on collections.html for images after header image */
 .illustration{
@@ -2302,15 +2305,11 @@ hr {
 		border-top: 75px solid transparent;
 	}
 }
-.essay aside.text-box{
-	background: #e3e3e3;
-	border-left: 5px #902D27 solid;
-	padding: 1em;
-}
+
 
 /***/
 
-.essay aside.credits#credits2-div,
+/* .essay aside.credits#credits2-div,
 .essay aside.credits#main,
 .essay main.object#object-div{
 	margin: 0 auto;
@@ -2362,4 +2361,4 @@ hr {
 	.essay main.object#object-div{
 		font-size: 1.1em;
 	}
-}
+} */

@@ -1800,10 +1800,6 @@ main{
 	margin: 0 auto;
 	padding: 0;
 }
-.essay main,
-.essay article{
-	max-width: 700px;
-}
 .essay main article h2,
 .essay main article section,
 aside article h3,
@@ -2306,30 +2302,24 @@ hr {
 		border-top: 75px solid transparent;
 	}
 }
-
 .essay aside.text-box{
 	background: #e3e3e3;
 	border-left: 5px #902D27 solid;
 	padding: 1em;
 }
 
+/***/
 
-.essay aside.credits#credits-div,
 .essay aside.credits#credits2-div,
 .essay aside.credits#main,
 .essay main.object#object-div{
 	margin: 0 auto;
 	max-width: 700px;
 }
-.essay aside.credits#credits-div{
-	font-size: 1.2em;
-	padding: 0 1em 1em;
-}
 .essay aside.credits#credits2-div{
 	font-size: 1.2em;
 	padding: 0 1em 1em;
 }
-/* visual materials pages */
 .essay aside.credits#main{
 	font-size: 1.2em;
 	padding: 1em 1em 0;
@@ -2349,13 +2339,6 @@ hr {
 	padding: 0;
 }
 @media only screen and (min-width: 768px){
-	.essay main{
-		padding: 1em 0;
-	}
-	.essay aside.credits#credits-div{
-		font-size: 1.15em;
-		padding: 0 0 1.5em;
-	}
 	.essay aside.credits#credits2-div{
 		font-size: 1.15em;
 		padding: 0 0 1.5em;
@@ -2370,13 +2353,6 @@ hr {
 	}
 }
 @media only screen and (min-width: 992px){
-	.essay main{
-		font-size: 1.15em;
-		display: block !important; /* Tied to overlay */
-	}
-	.essay aside.credits#credits-div{
-		font-size: 1.1em;
-	}
 	.essay aside.credits#credits2-div{
 		font-size: 1.1em;
 	}
@@ -2387,4 +2363,3 @@ hr {
 		font-size: 1.1em;
 	}
 }
-

@@ -1795,10 +1795,24 @@ section.archival-text .no-image .content{
 
 /* introduction section */
 /* https://www.nngroup.com/articles/text-over-images/ used to inform text over image */
+
+main{
+	margin: 0 auto;
+	padding: 0;
+}
+.essay main,
+.essay article{
+	max-width: 700px;
+}
+.essay main article h2,
+.essay main article section,
+aside article h3,
+aside article p{
+	padding: 0 1rem;
+}
 @media only screen and (min-width: 768px){
-	.home main{
+	main{
 		font-size: 1.125rem;
-		padding: 0;
 	}
 	.home aside{
 		font-size: 1.1rem;
@@ -2241,3 +2255,136 @@ hr {
 	background-color: #525252;
 	border: 2px solid transparent;
 }
+
+/* Code to be deleted */
+
+/* 1.2 Main Section and Related */
+
+/* .essay article header,
+.transcription article header{
+	text-align: center;
+	margin: 44px auto 0;
+	max-width: 700px;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	.essay article header,
+	.transcription article header{
+		margin-top: 54px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.essay article header,
+	.transcription article header{
+		margin-bottom: 1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.essay article header,
+	.transcription article header{
+		margin-top: 0;
+	}
+} */
+/* https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
+/* Also see Appendix for alternative [id]:target coding */
+
+/* .essay article header img{
+	background: #e6e6e6;
+	border: 1px solid #e3e3e3;
+} */
+
+.essay [id]:target{
+	margin-top: -70px;
+	border-top: 70px solid transparent;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+@media only screen and (min-width: 480px){
+	.essay [id]:target{
+		margin-top: -75px;
+		border-top: 75px solid transparent;
+	}
+}
+
+.essay aside.text-box{
+	background: #e3e3e3;
+	border-left: 5px #902D27 solid;
+	padding: 1em;
+}
+
+
+.essay aside.credits#credits-div,
+.essay aside.credits#credits2-div,
+.essay aside.credits#main,
+.essay main.object#object-div{
+	margin: 0 auto;
+	max-width: 700px;
+}
+.essay aside.credits#credits-div{
+	font-size: 1.2em;
+	padding: 0 1em 1em;
+}
+.essay aside.credits#credits2-div{
+	font-size: 1.2em;
+	padding: 0 1em 1em;
+}
+/* visual materials pages */
+.essay aside.credits#main{
+	font-size: 1.2em;
+	padding: 1em 1em 0;
+}
+.essay main.object#object-div{
+	padding: 0 1em;
+}
+@media only screen and (min-width: 480px){
+	.essay main.object#object-div{
+		padding: 1em;
+	}	
+}
+/* manuscript pages */
+.essay main.manuscript#manuscript-div,
+.essay main.journal#journal-div{
+	margin-bottom: 1.5em;
+	padding: 0;
+}
+@media only screen and (min-width: 768px){
+	.essay main{
+		padding: 1em 0;
+	}
+	.essay aside.credits#credits-div{
+		font-size: 1.15em;
+		padding: 0 0 1.5em;
+	}
+	.essay aside.credits#credits2-div{
+		font-size: 1.15em;
+		padding: 0 0 1.5em;
+	}
+	.essay aside.credits#main{
+		font-size: 1.15em;
+		padding: 1em 0 0;
+	}
+	.essay main.object#object-div{
+		font-size: 1.15em;
+		padding: 0 0 1em;
+	}
+}
+@media only screen and (min-width: 992px){
+	.essay main{
+		font-size: 1.15em;
+		display: block !important; /* Tied to overlay */
+	}
+	.essay aside.credits#credits-div{
+		font-size: 1.1em;
+	}
+	.essay aside.credits#credits2-div{
+		font-size: 1.1em;
+	}
+	.essay aside.credits#main{
+		font-size: 1.1em;
+	}
+	.essay main.object#object-div{
+		font-size: 1.1em;
+	}
+}
+

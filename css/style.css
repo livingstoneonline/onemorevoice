@@ -1787,22 +1787,21 @@ main{
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 /* https://stackoverflow.com/a/62275647 */
 /* https://webdesign.tutsplus.com/tutorials/a-comprehensive-guide-to-flexbox-ordering-reordering--cms-31564 */
-/* @media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
 	#item-1{
 		order: -1;
 	}
 	#item-2{
-		order: 2s;
+		order: 2;
 	}
 	#item-3{
 		order: 1;
 	}
-} */
+}
 .essay main article,
 .essay main aside{
 	padding: 0 1rem;

@@ -1799,7 +1799,7 @@ main{
 .home aside{
 	padding: 0 1rem;
 }
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	.essay main figure,
 	.essay main aside{
 		float: left;
@@ -1809,7 +1809,31 @@ main{
 		float: right;
 		width: calc(100% - 488px);
 	}
+} */
+
+/* https://w3bits.com/flexbox-holy-grail-layout/ */
+/* Column-wrapper */
+.essay main {
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Columns */
+/* .essay main figure, */
+.essay main article,
+.essay main aside {
+  flex: 1 0 auto;
+}
+
+/* Layout-wrapper */
+	/* .essay main figure, */
+	.essay main article {
+    max-width: 956px;
+  }
+  .essay main aside {
+    max-width: calc(100% - 956px);
+  }
+
 @media screen and (min-width: 992px){
 	.image-wrapper .caption,
 	.image-wrapper .caption70,

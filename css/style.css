@@ -1811,6 +1811,13 @@ main{
 	}
 } */
 
+.essay main article,
+.essay main aside,
+.essay main h2,
+.essay main h3{
+	font-size: 1rem;
+}
+
 /* https://w3bits.com/flexbox-holy-grail-layout/ */
 /* Column-wrapper */
 .essay main {
@@ -1828,10 +1835,10 @@ main{
 /* Layout-wrapper */
 	/* .essay main figure, */
 	.essay main article {
-    max-width: 956px;
+    max-width: 698px;
   }
   .essay main aside {
-    max-width: calc(100% - 956px);
+    max-width: calc(100% - 698px);
   }
 
 @media screen and (min-width: 992px){

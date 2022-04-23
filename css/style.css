@@ -1793,15 +1793,18 @@ main{
 	padding: 0 1rem;
 }
 
-.essay main{
-	display: flex;
-	padding: 1rem 2rem 2rem;
-}
-.essay main article{
-	margin: 0 auto;
-}
-.essay main aside{
-	width: 430px;
+@media only screen and (min-width: 992px){
+	.essay main{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1rem 2rem 2rem;
+	}
+	.essay main article{
+		margin: 0 auto;
+	}
+	.essay main aside{
+		width: 430px;
+	}
 }
 .essay main h2{
 	font-size: 3rem;
@@ -1819,96 +1822,11 @@ main{
 	padding: 0 0 0 1rem;
 }
 
-
-@media only screen and (min-width: 992px){
-	.essay main figure,
-	.essay main aside{
-		/* float: right;
-		width: 478px;
-		margin: 2rem 2rem 0; */
-	}
-	.essay main article{
-		/* float: left;
-		width: calc(100% - 478px - 4em); */
-	}
-	/* .essay main article{
-		width: 636px + 15%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
-	.essay main article h2,
-	.essay main article figure,
-	.essay main article section{
-		width: 636px;
-	}
-	.essay main aside{
-		width: calc(100% - 636px - 15%);
-	} */
-	/* .essay main article div{
-		width: 500px;
-		margin: 0 auto;
-	} */
-	/* .essay main{
-		text-align: center;
-	}
-	.essay main figure{
-		float: right;
-		width: 400px;
-		min-height: 100px;
-	}
-	.essay main article{
-		text-align: left;
-		display: inline-block;
-		min-height: 100px;
-	}
-	.essay main aside{
-		float: right;
-		text-align: left;
-		width: 400px;
-		min-height: 100px;
-	} */
-}
-
-
-
-
 .essay main article,
 .essay main aside,
 .essay main h3{
 	font-size: 1rem;
 }
-
-/* https://w3bits.com/flexbox-holy-grail-layout/ */
-/* Column-wrapper */
-/* .essay main {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* Columns */
-/* .essay main figure, */
-/* .essay main article,
-.essay main aside {
-  flex: 1 0 auto;
-} */
-
-/* Layout-wrapper */
-	/* .essay main figure, */
-	/* .essay main article {
-    max-width: 698px;
-  }
-  .essay main aside {
-    max-width: calc(100% - 698px);
-  } */
-
-	/* .credits h3{
-		font-size: 1.3rem;
-		font-family: 'Merriweather', serif;
-		color: #395f65;
-		text-align: center;
-	} */
-
 
 @media screen and (min-width: 992px){
 	.image-wrapper .caption,

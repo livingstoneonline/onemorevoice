@@ -1793,19 +1793,52 @@ main{
 	padding: 0 1rem;
 }
 
+
 @media only screen and (min-width: 992px){
 	.essay main{
 		display: flex;
 		flex-wrap: wrap;
-		padding: 1rem 2rem 2rem;
+		justify-content: center;
 	}
-	.essay main article{
-		margin: 0 auto;
+	main .page-details{
+		display: flex;
+		align-items: center;
+		padding: 1rem 1rem;
 	}
-	.essay main aside{
-		width: 430px;
+	main .page-details div{
+		display: flex;
+		flex-direction: column;
+		padding: 0 1.5rem;
+		width: calc(100% - 698px);
+	}
+	main .page-details div .action-button{
+		font-size: 1.2rem;
+		margin: 1rem auto 0;
+		padding: 6px 10px;
+	}
+	main .page-details figure{
+		width: 698px;
+	}
+	main .content{
+		padding: 2rem 1rem;
+		width: 100%;
+		display: flex;
+	}
+	main .content div.decoration{
+		background-color: #dcd3a6;
+		margin: 0;
+		display: block;
+		visibility: visible;
+		flex-grow: 1;
+	}
+	main .content article{
+		/* border-top: 1px solid #bdc2bd; */
+		margin: 0 5rem;		
+		padding: 1rem 0 0;
+		max-width: 700px;
 	}
 }
+
 .essay main h2{
 	font-size: 3rem;
 	font-style: italic;
@@ -1822,11 +1855,7 @@ main{
 	padding: 0 0 0 1rem;
 }
 
-.essay main article,
-.essay main aside,
-.essay main h3{
-	font-size: 1rem;
-}
+
 
 @media screen and (min-width: 992px){
 	.image-wrapper .caption,
@@ -1836,10 +1865,7 @@ main{
 		visibility: hidden;
 	}
 }
-.essay main article,
-.essay main aside{
-	padding: 0 1rem;
-}
+
 /* .essay main article h2,
 .essay main article h3,
 .essay main article p,
@@ -1857,7 +1883,6 @@ aside article p{
 	}
 	.home aside div.decoration{
 		margin: 0;
-		width: 4rem;
 	}
 	.home aside article{
 		margin: 0 2rem;

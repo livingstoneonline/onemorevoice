@@ -1781,82 +1781,6 @@ section.archival-text .no-image .content{
 /* introduction section */
 /* https://www.nngroup.com/articles/text-over-images/ used to inform text over image */
 
-main{
-	margin: 0 auto;
-	padding: 0;
-}
-.home main,
-.home aside{
-	font-size: 1.1rem;
-}
-.home aside{
-	padding: 0 1rem;
-}
-
-
-@media only screen and (min-width: 992px){
-	.essay main{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	main .page-details{
-		display: flex;
-		align-items: center;
-		padding: 1rem 1rem;
-	}
-	main .page-details div{
-		display: flex;
-		flex-direction: column;
-		padding: 0 1.5rem;
-		width: calc(100% - 698px);
-	}
-	main .page-details div .action-button{
-		font-size: 1.2rem;
-		margin: 1rem auto 0;
-		padding: 6px 10px;
-	}
-	main .page-details figure{
-		width: 698px;
-	}
-	main .content{
-		padding: 2rem 1rem;
-		width: 100%;
-		display: flex;
-	}
-	main .content div.decoration{
-		background-color: #dcd3a6;
-		margin: 0;
-		display: block;
-		visibility: visible;
-		flex-grow: 1;
-	}
-	main .content article{
-		/* border-top: 1px solid #bdc2bd; */
-		margin: 0 5rem;		
-		padding: 1rem 0 0;
-		max-width: 700px;
-	}
-}
-
-.essay main h2{
-	font-size: 3rem;
-	font-style: italic;
-	line-height: 3rem;
-	border-left: 12px solid #d3873c;
-	margin: 2rem 0;
-	padding: 0 0 0 1rem;
-}
-.essay main .credits h3{
-	font-size: 1.5rem;
-	font-style: italic;
-	border-left: 8px solid #bdc2bd;
-	margin: 2rem 0;
-	padding: 0 0 0 1rem;
-}
-
-
-
 @media screen and (min-width: 992px){
 	.image-wrapper .caption,
 	.image-wrapper .caption70,
@@ -1866,31 +1790,38 @@ main{
 	}
 }
 
-/* .essay main article h2,
-.essay main article h3,
-.essay main article p,
-.essay main article ul,
-aside article h3,
-aside article p{
-	padding: 0 1rem;
-} */
+/* Headers */
+h2{
+	font-size: 3rem;
+	font-style: italic;
+	line-height: 3rem;
+	border-left: 12px solid #d3873c;
+	margin: 2rem 0;
+	padding: 0 0 0 1rem;
+}
+.credits h3{
+	font-size: 1.5rem;
+	font-style: italic;
+	border-left: 8px solid #bdc2bd;
+	margin: 2rem 0;
+	padding: 0 0 0 1rem;
+}
+
+/* Main */
+main{
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 @media only screen and (min-width: 768px){
 	main{
 		font-size: 1.125rem;
 	}
-	.home aside{
-		padding: .5rem 0;
-	}
-	.home aside div.decoration{
-		margin: 0;
-	}
-	.home aside article{
-		margin: 0 2rem;
-	}
 }
-.home .introduction-section{
-	line-height: 1em;
-}
+
+/* Home Top */
 @media only screen and (min-width: 768px){
 	.home .introduction-section{
 		position: relative;
@@ -1901,14 +1832,6 @@ aside article p{
     left: 50%;
 		top: 50%;
     transform: translate(-50%, -50%);
-	}
-}
-@media only screen and (min-width: 992px){
-	.home .introduction-section .introduction-text{
-		width: 650px;
-    left: 50%;
-		top: 40%;
-    transform: translate(-50%, -40%);
 	}
 }
 .home .introduction-section div{
@@ -1942,13 +1865,11 @@ aside article p{
 @media only screen and (min-width: 992px){
 	.home .introduction-section .introduction-text{
 		padding: 2rem;
+		width: 650px;
+    left: 50%;
+		top: 40%;
+    transform: translate(-50%, -40%);
 	}
-}
-.home .introduction-section h2{
-	font-size: 1.6rem;
-	font-family: 'Merriweather', serif;
-	color: #395f65;
-  margin: 1rem auto 2rem;
 }
 .home .introduction-section p{
 	text-align: left;
@@ -2000,46 +1921,50 @@ aside article p{
 		border: 2px solid #e2e4e2;
 	}
 }
-@media only screen and (min-width: 768px){
-	.home hr.section-divider{
-		display: none;
-		visibility: hidden;
-	}
-	.home aside article{
-		margin: 0 auto;
-		max-width: 650px;
-	}
-	.home aside div.decoration{
-		background-color: #dcd3a6;
-		display: block;
-		visibility: visible;
-		flex-grow: 1;
-	}
-}
-@media only screen and (min-width: 768px){
-	.home aside{
-		padding: 1rem;
+
+/* Essay Top */
+@media only screen and (min-width: 992px){	
+	.essay .page-details{
 		display: flex;
-		visibility: visible;
+		align-items: center;
+		padding: 1rem 1rem;
 	}
-	.home aside article{
-		max-width: 700px;
-		margin: 0 1rem;
+	.essay .page-details div{
+		display: flex;
+		flex-direction: column;
+		padding: 0 1.5rem;
+		width: calc(100% - 698px);
+	}
+	.essay .page-details div .action-button{
+		font-size: 1.2rem;
+		margin: 1rem auto 0;
+		padding: 6px 10px;
+	}
+	.essay .page-details figure{
+		width: 698px;
 	}
 }
-@media only screen and (min-width: 992px){
-	.home aside{
-		padding: 1rem;
+
+/* Bottom */
+
+@media only screen and (min-width: 768px){	
+	.content{
+		padding: 2rem 1rem;
+		width: 100%;
+		display: flex;
 	}
-	.home aside article{
-		max-width: 700px;
-		margin: 0 5rem;
-	}
-	.home aside div.decoration{
+	.content div.decoration{
 		background-color: #dcd3a6;
+		margin: 0;
 		display: block;
 		visibility: visible;
 		flex-grow: 1;
+	}
+	.content article{
+		/* border-top: 1px solid #bdc2bd; */
+		margin: 0 5rem;		
+		padding: 1rem 0 0;
+		max-width: 700px;
 	}
 }
 

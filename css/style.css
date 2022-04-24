@@ -70,7 +70,8 @@ also see 2.9 for manuscript colors
 (white) #fff
 (black) #212119;
 (light blue) #c2d9db;
-(dark blue) #395f65; (contrast checked)
+(dark blue) #375C62; (contrast checked)
+(yellow) #dcd3a6;
 (orange) #d3873c;
 (dark brown) #7d4d1c; (contrast checked)
 (dark brown, for a links) #694017 (contrast checked)
@@ -217,30 +218,61 @@ body{
 
 /* Headers */
 h2{
-	font-size: 3rem;
+	font-size: 2.1rem;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
 	line-height: 3rem;
-	color: #395f65;
+	color: #375C62;
 	border-left: 12px solid #d3873c;
-	margin: .5rem 0 2rem;
+	margin: .5rem 0 1.5rem;
 	padding: 0 0 0 1rem;
+}
+@media only screen and (min-width: 992px){
+	h2{
+		font-size: 2.9rem;
+		margin-bottom: 2rem;
+	}
+}
+.introduction-text h2{
+	text-align: left;
+	border-left: 12px solid #A0A6A0;
+	margin-bottom: 0;
+	display: inline-block;
+}
+@media only screen and (min-width: 768px){
+	.introduction-text h2{
+		text-align: center;
+		margin-bottom: 1rem;
+	}	
+}
+.page-details h2{
+	margin-bottom: 1rem;
 }
 h3{
 	font-size: 1.5rem;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
-	color: #395f65;
+	color: #375C62;
 	border-left: 8px solid #d3873c;
 	margin: 2rem 0;
 	padding: 0 0 0 1rem;
 }
 section article section:not(:first-child) h3{
-	margin-top: 4rem;
+	margin-top: 3rem;
+}
+@media only screen and (min-width: 992px){
+	section article section:not(:first-child) h3{
+		margin-top: 4rem;
+	}	
 }
 .credits h3{
 	font-size: 1.3rem;
-	margin-top: 4rem;
+	margin-top: 3rem;
+}
+@media only screen and (min-width: 992px){
+	.credits h3{
+		margin-top: 4rem;
+	}
 }
 .home h3#page-citation{
 	margin-top: 2rem;
@@ -261,7 +293,7 @@ main{
 	flex-wrap: wrap;
 	justify-content: center;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	main{
 		font-size: 1.125rem;
 	}
@@ -313,8 +345,8 @@ main{
 		padding: 2rem;
 		width: 650px;
     left: 50%;
-		top: 40%;
-    transform: translate(-50%, -40%);
+		top: 38%;
+    transform: translate(-50%, -38%);
 	}
 }
 .home .introduction-section p{
@@ -326,10 +358,17 @@ main{
 }
 
 /* Essay Top */
-.essay .page-details{
-	padding: 0 1rem 1rem;
+.essay .page-details div{
+	margin: 2rem 0 0;
+	padding: 0 1rem;
 }
-@media only screen and (min-width: 992px){	
+@media only screen and (min-width: 768px){
+	.essay .page-details div{
+		margin: 2rem 0 0;
+		padding: 0 3rem;
+	}
+}
+@media only screen and (min-width: 992px){
 	.essay .page-details{
 		display: flex;
 		align-items: center;
@@ -379,7 +418,6 @@ main{
 	font-weight: normal;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-decoration: none;
-	color: #4d5b51;
 	background-color: #e2e4e2;
 	border: 2px solid #4d5b51;
 	border-radius: 4px;
@@ -424,6 +462,13 @@ main{
 		border: 2px solid #e2e4e2;
 	}
 }
+.caption i{
+	color: #4d5b51;
+}
+.caption:hover i,
+.caption:focus-within i{
+	color: #fff;
+}
 
 
 /* Bottom */
@@ -431,25 +476,31 @@ main{
 	padding: 0 1rem 1rem;
 	max-width: 1366px;
 }
-
 @media only screen and (min-width: 768px){	
 	.content{
-		padding: 2rem 1rem;
+		padding: 1rem;
 		width: 100%;
 		display: flex;
 	}
-	.content div.decoration{
-		background-color: #dcd3a6;
-		margin: 0;
-		display: block;
-		visibility: visible;
-		flex-grow: 1;
-	}
 	.content article{
-		/* border-top: 1px solid #bdc2bd; */
-		margin: 0 4rem;		
+		margin: 0 2rem;		
 		padding: 0;
 		max-width: 700px;
+	}
+	@media only screen and (min-width: 992px){
+		.content{
+			padding: 2rem 1rem;
+		}
+		.content div.decoration{
+			background-color: #dcd3a6;
+			margin: 0;
+			display: block;
+			visibility: visible;
+			flex-grow: 1;
+		}
+		.content article{
+			margin: 0 4rem;
+		}
 	}
 	.content aside.credits{
 		font-size: 1rem;
@@ -515,7 +566,7 @@ h3.subsection{
 	font-family: 'Merriweather', serif;
   font-weight: normal;
   font-variant: normal;
-	color: #395f65;
+	color: #375C62;
 }
 .contributors section:first-of-type h3{
 	margin-top: 1em;
@@ -645,7 +696,7 @@ img + p.caption-text,
 }
 a,
 a:visited{
-	color: #395f65;
+	color: #375C62;
 	background-color: transparent;
 }
 a:hover,
@@ -798,7 +849,7 @@ header nav button,
 	font-weight: 600;
 	text-decoration: underline;
 	color: #fff;
-	background: #395f65;
+	background: #375C62;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 10px;
@@ -1188,7 +1239,7 @@ nav .close:focus{
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 .overlay{
 	font-size: 1.05rem;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-align: center;
 	margin: 40.6px auto 0;
 	padding: 0;
@@ -1234,7 +1285,7 @@ nav .close:focus{
 }
 .overlay-content{
 	white-space: nowrap;
-	background-color: #395f65;
+	background-color: #375C62;
 	margin: 0 auto;
 	padding: 1rem 1rem 2rem;
 	width: 100%;
@@ -1298,6 +1349,7 @@ nav .close:focus{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: .2s;
 }
 @media only screen and (min-width: 480px){
 	.overlay li a{
@@ -1318,7 +1370,7 @@ footer{
 	font-weight: 400;
 	text-align: center;
 	color: #fff;
-	background-color: #395f65;
+	background-color: #375C62;
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1366px;
@@ -2080,7 +2132,7 @@ ul.acknowledgments{
   text-align: right;
 }
 .site-blue{
-	color: #395f65;
+	color: #375C62;
 }
 .site-red{
 	color: #7d4d1c;

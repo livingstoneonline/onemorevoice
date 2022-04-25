@@ -238,6 +238,7 @@ h2{
 	/* border-left: 12px solid #A0A6A0; */
 	border: none;
 	margin-bottom: 0;
+	padding: 0;
 	display: inline-block;
 }
 @media only screen and (min-width: 768px){
@@ -813,7 +814,7 @@ header{
 @media only screen and (min-width: 768px){
 	header{
 		padding: .1rem .25rem;
-		height: 55.2px;
+		height: 64px;
 	}
 }
 .nav-container{
@@ -978,7 +979,6 @@ nav .button-container{
 	nav .button-container{
 		gap: .55rem;
 	}
-	
 }
 .overlay-content .button-container{
 	margin: 0 auto;
@@ -1017,6 +1017,7 @@ nav .button-container a.external{
     visibility: visible;
     align-items: center;
     justify-content: center;
+		flex-direction: column;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -1025,17 +1026,22 @@ nav .button-container a.external{
     visibility: visible;
     align-items: center;
     justify-content: center;
+		flex-direction: column;
+		margin-bottom: -2px;
+		padding: 3px 5px 0;
 	}
 }
 nav .button-container a.external:hover,
 nav .button-container a.external:focus,
 .overlay-content .button-container a.external:hover,
 .overlay-content .button-container a.external:focus{
-	background: transparent;
+	/* background: transparent; */
+	color: #212119;
+	background-color: #e2e4e2;
 }
 nav .button-container a.external i{
 	margin: 0 .15rem;
-	padding: .25rem .5rem;
+	/* padding: .25rem .5rem; */
 }
 .overlay-content .button-container a.external i{
 	margin: 0;
@@ -1052,12 +1058,15 @@ nav .button-container a.external i{
 nav .button-container a.external:hover i,
 nav .button-container a.external:focus i{
 	color: #212119;
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 .overlay-content .button-container a.external:hover i,
 .overlay-content .button-container a.external:focus i{
 	color: #212119;
 	background-color: #e2e4e2;
+}
+nav .button-container a.external span{
+	display: block;
 }
 
 
@@ -1094,6 +1103,10 @@ nav .button-container a.external:focus i{
 	padding: 0 6px;
 	display: flex;
   align-items: center;
+}
+.translate span:last-of-type{
+	color: #fff;
+	display: block;
 }
 /* .translate a{
 	border: 2px solid transparent;
@@ -1179,23 +1192,27 @@ nav .close{
 	background: transparent;
 	border: none;
 	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 nav .hamburger-menu{
-	margin: 0 .5rem 0 0;
-	padding: 6px 7px 0;
+	margin: 0 .5rem -2px 0;
+	padding: 4px 11px 0 10px;
 }
 nav.overlay-nav .hamburger-menu{
 	display: none;
 	visibility: hidden;
 }
 nav .close{
-	margin: .05rem .5rem 0 0;
-	padding: 6px 9px 2px;
+	margin: -1px 0.4rem -2px 0;
+	padding: 4px 11px 0px;
 	display: none;
 	visibility: hidden;
 }
 nav.overlay-nav .close{
-	display: block;
+	display: flex;
 	visibility: visible;
 }
 @media only screen and (min-width: 768px){
@@ -1213,6 +1230,7 @@ nav.fallback .hamburger-menu{
 nav .hamburger-menu .fa-bars,
 nav .fa-times{
 	font-size: 1.5rem;
+	margin-bottom: -4px;
 }
 @media only screen and (min-width: 480px){
 	nav .hamburger-menu .fa-bars,
@@ -1226,12 +1244,16 @@ nav .fa-times{
 		font-size: 1.7rem;
 	}
 }
+nav .hamburger-menu span,
+nav .close span{
+	padding-top: 2px;
+}
 nav .hamburger-menu:hover,
 nav .hamburger-menu:focus,
 nav .close:hover,
 nav .close:focus{
 	color: #212119;
-	background-color: #fff;
+	background-color: #e2e4e2;
 }
 
 
@@ -1265,8 +1287,8 @@ nav .close:focus{
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
-		margin-top: 55.2px;
-		height: calc(100% - 55.2px);
+		margin-top: 64px;
+		height: calc(100% - 64px);
 	}
 }
 /* @media only screen and (min-width: 992px){

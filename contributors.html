@@ -23,37 +23,38 @@
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 		<style>
+/* Action button modified from a button created with https://buttonoptimizer.com/ */
 a.button,
 a.button:visited {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    padding: 12px 36px;
-    border: 1px solid #152528;
+		margin: 2rem ;
+    padding: 16px 36px;
+    /* border: 1px solid #2b2b20; */
     border-radius: 27px;
-    background: #d3873c;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#EDCCAB), to(#d3873c));
-    background: -moz-linear-gradient(top, #EDCCAB, #d3873c);
-    background: linear-gradient(to bottom, #EDCCAB, #d3873c); */
-    -webkit-box-shadow: #212119 1px 2px 6px 0px;
-    -moz-box-shadow: #212119 1px 2px 6px 0px;
-    box-shadow: #212119 1px 2px 6px 0px;
-    /* text-shadow: #6c4a28 0px 0px 0px; */
+/* Created with https://www.css-gradient.com */
+background: #DCD3A6;
+background: -webkit-linear-gradient(top, #DCD3A6, #E2DAB1);
+background: -moz-linear-gradient(top, #DCD3A6, #E2DAB1);
+background: linear-gradient(to bottom, #DCD3A6, #E2DAB1);
+    -webkit-box-shadow: #68684e 0px 4px 17px 0px;
+    -moz-box-shadow: #68684e 0px 4px 17px 0px;
+    box-shadow: #68684e 0px 4px 17px 0px;
     font: normal normal bold 20px arial;
-    color: #152528;
+    color: #2b2b20;
     text-decoration: none;
-    text-transform: uppercase
+    text-transform: uppercase;
+		align-self: center;
 }
 a.button:hover,
-a.button:focus {
-    border: 1px solid #355d64;
-    background: #ffd69c;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#ffd69c), to(#f09236));
-    background: -moz-linear-gradient(top, #ffd69c, #f09236);
-    background: linear-gradient(to bottom, #ffd69c, #f09236); */
-    color: #152528;
-    text-decoration: none;
-    text-transform: uppercase
+a.button:focus {    
+    /* color: #fff;
+		background: #375C62; */
+    background: -webkit-gradient(linear, left top, left bottom, from(#e2e4e2), to(#bdc2bd));
+    background: -moz-linear-gradient(top, #e2e4e2, #bdc2bd);
+    background: linear-gradient(to bottom, #e2e4e2, #bdc2bd);
+    
 }
 
 
@@ -98,7 +99,7 @@ a.button:focus {
 
 					<br/>
 
-					<a class="button" href="#content">Start Reading</a>
+					<a class="button" href="#content">Read More <i class="fas fa-book-open" style="margin-left: .5rem;"></i></a>
 
 					<a class="caption desktop" href="#caption" aria-label="Go to image caption"><i class="fa fa-info-circle" title="Image information"></i></a>
 				</div>

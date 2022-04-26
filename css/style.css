@@ -298,6 +298,7 @@ main{
 @media only screen and (min-width: 992px){
 	main{
 		font-size: 1.125rem;
+		max-width: 1366px;
 	}
 }
 
@@ -483,7 +484,6 @@ main{
 /* Bottom */
 .content{
 	padding: 0 1rem 1rem;
-	max-width: 1366px;
 }
 @media only screen and (min-width: 768px){	
 	.content{
@@ -1395,11 +1395,6 @@ footer p{
 @media only screen and (min-width: 768px){
 	footer p{
 		padding: 1rem 1.5rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	footer p{
-		max-width: 1366px;
 	}
 }
 footer p .site-detail{

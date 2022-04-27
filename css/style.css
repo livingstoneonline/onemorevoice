@@ -224,13 +224,14 @@ h2{
 	font-style: italic;
 	line-height: 3rem;
 	color: #325359;
-	border-left: 12px solid #DA9C5D;
+	border-left: 12px solid #bdc2bd;
 	margin: .5rem 0 1.5rem;
 	padding: 0 0 0 1rem;
 }
 @media only screen and (min-width: 992px){
 	h2{
 		font-size: 2.9rem;
+		border-left: 12px solid #DA9C5D;
 		margin-bottom: 2rem;
 	}
 }
@@ -270,6 +271,7 @@ section article section:not(:first-child) h3{
 }
 .credits h3{
 	font-size: 1.3rem;
+	border-left: 12px solid #bdc2bd;
 	margin-top: 3rem;
 }
 @media only screen and (min-width: 992px){
@@ -366,6 +368,9 @@ main{
 }
 
 /* Essay Top */
+.essay .page-details{
+	padding-bottom: 1rem;
+}
 @media only screen and (min-width: 992px){
 	.essay .page-details{
 		display: flex;
@@ -384,10 +389,6 @@ main{
 	word-wrap: break-word;
 	word-break: break-word;
 	-ms-word-break: break-all;
-	hyphens: auto;
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
 }
 @media only screen and (min-width: 768px){
 	.essay .page-details div{
@@ -729,6 +730,42 @@ a:focus{
 .graphic a:hover,
 .graphic a:focus{
 	background-color: white;
+}
+/* Action button modified from a button created with https://buttonoptimizer.com/ and https://www.css-gradient.com */
+a.action-button{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 1200px){
+	a.action-button,
+	a.action-button:visited{
+		font-size: 20px;
+		font-weight: 600;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		vertical-align: middle;
+		color: #325359;
+		background: #ededed;
+		-webkit-box-shadow: #697c6f 0px 3px 10px 0px;
+		-moz-box-shadow: #697c6f 0px 3px 10px 0px;
+		box-shadow: #697c6f 0px 3px 10px 0px;
+		border: 1px solid #697c6f;
+		border-radius: 27px;
+		margin: 1.5rem 0;
+		padding: 12px 30px;
+		display: inline-block;
+		visibility: visible;
+		align-self: center;
+	}
+	a.action-button:hover,
+	a.action-button:focus{
+		color: #fff;
+		background-color: #325359;
+	}
+	a.action-button i{
+		margin-left: .5rem;
+	}
 }
 
 
@@ -2157,6 +2194,9 @@ hr {
 }
 .title-hr{
 	margin: 2rem 0;
+}
+hr.section-divider{
+	width: 50%;
 }
 @media only screen and (min-width: 992px){
 	hr.section-divider{

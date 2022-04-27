@@ -1,3 +1,5 @@
+/* https://www.inwebson.com/css3/css-tricks-for-headings-fonts-and-text-styling/ */
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020-2022 */
@@ -156,17 +158,17 @@ small
 	display: none;
 	visibility: hidden;
 }
-@media only screen and (min-width: 768px){
-	.home .mobile{
+@media only screen and (min-width: 992px){
+	.mobile{
 		display: none;
 		visibility: hidden;
 	}
-	.home .desktop{
+	.desktop{
 		display: inherit;
 		visibility: visible;
 	}
 }
-@media only screen and (min-width: 992px){
+/* @media only screen and (min-width: 992px){
 	.essay .mobile{
 		display: none;
 		visibility: hidden;
@@ -175,7 +177,7 @@ small
 		display: inherit;
 		visibility: visible;
 	}
-}
+} */
 button{
 	all: unset;
   -webkit-appearance: button;
@@ -224,14 +226,13 @@ h2{
 	font-style: italic;
 	line-height: 3rem;
 	color: #325359;
-	border-left: 12px solid #bdc2bd;
+	border-left: 12px solid #8db7bf;
 	margin: .5rem 0 1.5rem;
 	padding: 0 0 0 1rem;
 }
 @media only screen and (min-width: 992px){
 	h2{
 		font-size: 2.9rem;
-		border-left: 12px solid #DA9C5D;
 		margin-bottom: 2rem;
 	}
 }
@@ -254,12 +255,10 @@ h2{
 }
 h3{
 	font-size: 1.5rem;
-	font-family: 'Merriweather', serif;
-	font-style: italic;
 	color: #325359;
-	border-left: 8px solid #DA9C5D;
+	border-bottom: 8px solid #DA9C5D;
 	margin: 2rem 0;
-	padding: 0 0 0 1rem;
+	padding: 0 0 1rem 0;
 }
 section article section:not(:first-child) h3{
 	margin-top: 3rem;
@@ -271,16 +270,12 @@ section article section:not(:first-child) h3{
 }
 .credits h3{
 	font-size: 1.3rem;
-	border-left: 8px solid #bdc2bd;
 	margin-top: 3rem;
 }
 @media only screen and (min-width: 992px){
 	.credits h3{
 		margin-top: 4rem;
 	}
-}
-.home .credits h3{
-	border-left: 8px solid #DA9C5D;
 }
 .home h3#page-citation{
 	margin-top: 2rem;
@@ -316,18 +311,6 @@ main{
 }
 
 /* Home Top */
-@media only screen and (min-width: 992px){
-	.home .introduction-section{
-		position: relative;
-	}
-	.home .introduction-section .introduction-text{
-		width: 600px;
-    position: absolute;
-    left: 50%;
-		top: 50%;
-    transform: translate(-50%, -50%);
-	}
-}
 .home .introduction-section div{
 	line-height: 1em;
 }
@@ -345,21 +328,41 @@ main{
 	text-align: center;
 	margin: 0 auto;
 	padding: 1.5rem 1rem 1rem;
-	display: inline-block;
-	opacity: .96;
+	display: flex;
+	flex-direction: column;
+}
+.home .introduction-section .introduction-text h2{
+	order: 2;
+}
+.home .introduction-section .introduction-text p{
+	order: 3;
+}
+.home .introduction-section .introduction-text div{
+	order: 1;
 }
 @media only screen and (min-width: 992px){
-	.home .introduction-section .introduction-text{
-		background-color: #e2e4e2;
-		border-radius: 6px;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
+	.home .introduction-section .introduction-text h2{
+		order: 1;
+	}
+	.home .introduction-section .introduction-text p{
+		order: 2;
+	}
+	.home .introduction-section .introduction-text div{
+		order: 3;
 	}
 }
 @media only screen and (min-width: 992px){
+	.home .introduction-section{
+		position: relative;
+	}
 	.home .introduction-section .introduction-text{
+		background-color: rgb(226, 228, 226, .96);
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
 		padding: 2rem;
-		width: 650px;
+		width: 700px;
+		position: absolute;
     left: 50%;
 		top: 38%;
     transform: translate(-50%, -38%);
@@ -735,40 +738,87 @@ a:focus{
 	background-color: white;
 }
 /* Action button modified from a button created with https://buttonoptimizer.com/ and https://www.css-gradient.com */
-a.action-button{
+.essay a.action-button{
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 1200px){
-	a.action-button,
-	a.action-button:visited{
-		font-size: 20px;
-		font-weight: 600;
-		text-decoration: none;
-		text-transform: uppercase;
-		text-align: center;
-		vertical-align: middle;
-		color: #325359;
-		background: #ededed;
-		-webkit-box-shadow: #697c6f 0px 3px 10px 0px;
-		-moz-box-shadow: #697c6f 0px 3px 10px 0px;
-		box-shadow: #697c6f 0px 3px 10px 0px;
-		border: 1px solid #697c6f;
-		border-radius: 27px;
-		margin: 1.5rem 0;
-		padding: 12px 30px;
+	.essay a.action-button{
 		display: inline-block;
 		visibility: visible;
-		align-self: center;
 	}
-	a.action-button:hover,
-	a.action-button:focus{
-		color: #fff;
-		background-color: #325359;
+}
+a.action-button,
+a.action-button:visited{
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: #325359;
+	background: #ededed;
+	-webkit-box-shadow: #697c6f 0px 3px 10px 0px;
+	-moz-box-shadow: #697c6f 0px 3px 10px 0px;
+	box-shadow: #697c6f 0px 3px 10px 0px;
+	border: 1px solid #697c6f;
+	border-radius: 27px;
+	margin: 1.5rem 0;
+	padding: 12px 30px;
+	align-self: center;
+}
+a.action-button:hover,
+a.action-button:focus,
+a.action-button.primary:hover,
+a.action-button.primary:hover,
+a.action-button.secondary:hover,
+a.action-button.secondary:focus{
+	color: #fff;
+	background: #325359;
+}
+a.action-button i{
+	margin-left: .5rem;
+}
+.home-buttons{
+	margin: 0 0 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+@media only screen and (min-width: 768px){
+	.home-buttons{
+		margin: 0 0 2rem;
 	}
-	a.action-button i{
-		margin-left: .5rem;
-	}
+}
+.home a.action-button{
+	font-size: 1.1rem;
+	text-transform: none;
+	white-space: nowrap;
+	border-radius: 0;
+	margin: 1rem 0;
+	padding: 8px 22px;
+	width: 12rem;
+	display: flex;
+	visibility: visible;
+	align-items: center;
+	justify-content: center;
+}
+/* Background created with https://www.css-gradient.com */
+.action-button.primary{
+	color: #212119;
+	background: #E0D18C;
+	background: -webkit-linear-gradient(top left, #E0D18C, #F1EACA);
+	background: -moz-linear-gradient(top left, #E0D18C, #F1EACA);
+	background: linear-gradient(to bottom right, #E0D18C, #F1EACA);
+	
+}
+.action-button.secondary{
+	color: #212119;
+	background: #DDA051;
+	background: -webkit-linear-gradient(top left, #DDA051, #EECFA7);
+	background: -moz-linear-gradient(top left, #DDA051, #EECFA7);
+	background: linear-gradient(to bottom right, #DDA051, #EECFA7);
 }
 
 
@@ -1136,7 +1186,9 @@ nav .button-container{
 			visibility: hidden;
 	}
 }
-nav .button-container a.external{
+nav .button-container a.external,
+nav .button-container a.external.home,
+nav.overlay-nav .button-container a.external.home{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
@@ -1155,6 +1207,15 @@ nav .button-container a.external{
 }
 @media only screen and (min-width: 768px){
 	nav .button-container a.external{
+		display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav .button-container a.external.home,
+	nav.overlay-nav .button-container a.external.home{
 		display: flex;
     visibility: visible;
     align-items: center;

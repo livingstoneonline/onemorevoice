@@ -17,6 +17,23 @@ sizes="(min-width: 760px) 488px, (min-width: 480px) calc(59.23vw + 50px), 100vw"
 -colorspace RGB
 
 
+**** Home Page****
+
+mogrify -format jpg -resize 320x320 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/320 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/320 && find . -exec rename 's|.jpg|-320px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 480x480 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/480 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/480 && find . -exec rename 's|.jpg|-480px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 768x768 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/768 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/768 && find . -exec rename 's|.jpg|-768px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 992x992 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/992 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/992 && find . -exec rename 's|.jpg|-992px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1200x1200 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1200 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1200 && find . -exec rename 's|.jpg|-1200px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1366x1366 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1366 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1366 && find . -exec rename 's|.jpg|-1366px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
+
+
 **** 100% ****
 
 mogrify -format jpg -resize 318x318 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/318 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/318 && find . -exec rename 's|.jpg|-318px.jpg|' {} + && cd - && 

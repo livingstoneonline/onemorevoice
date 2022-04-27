@@ -237,8 +237,6 @@ h2{
 	}
 }
 .introduction-text h2{
-	text-align: left;
-	/* border-left: 12px solid #A0A6A0; */
 	border: none;
 	margin-bottom: 0;
 	padding: 0;
@@ -255,9 +253,11 @@ h2{
 }
 h3{
 	font-size: 1.5rem;
+	font-family: 'Merriweather', serif;
+	text-align: center;
 	color: #325359;
-	border-bottom: 8px solid #DA9C5D;
-	margin: 2rem 0;
+	border-bottom: 8px solid #e3b382;
+	margin: 1.5rem 0;
 	padding: 0 0 1rem 0;
 }
 section article section:not(:first-child) h3{
@@ -269,6 +269,7 @@ section article section:not(:first-child) h3{
 	}	
 }
 .credits h3{
+	text-align: center;
 	font-size: 1.3rem;
 	margin-top: 3rem;
 }
@@ -278,7 +279,17 @@ section article section:not(:first-child) h3{
 	}
 }
 .home h3#page-citation{
-	margin-top: 2rem;
+	margin-top: 1rem;
+}
+@media only screen and (min-width: 768px){
+	.home h3#page-citation{
+		margin-top: 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.home h3#page-citation{
+		margin-top: 2rem;
+	}
 }
 h4{
 	font-style: italic;
@@ -386,8 +397,13 @@ main{
 		position: relative;
 	}
 }
+@media only screen and (min-width: 1200px){
+	.essay .page-details{
+		margin-bottom: 1rem;
+	}
+}
 .essay .page-details div{
-	margin: 2rem 0 0;
+	margin: 2rem 0 1rem;
 	padding: 0 1rem;
 }
 .essay .page-details div a{
@@ -767,12 +783,20 @@ a.action-button:visited{
 	padding: 12px 30px;
 	align-self: center;
 }
+.action-button.primary{
+	color: #212119;
+	background: #F1EACA;
+}
+.action-button.secondary{
+	color: #212119;
+	background: #EECFA7;
+}
+.action-button.tertiary{
+	color: #212119;
+	background: #aeced9;
+}
 a.action-button:hover,
-a.action-button:focus,
-a.action-button.primary:hover,
-a.action-button.primary:hover,
-a.action-button.secondary:hover,
-a.action-button.secondary:focus{
+a.action-button:focus{
 	color: #fff;
 	background: #325359;
 }
@@ -784,41 +808,37 @@ a.action-button i{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-evenly;
-}
-@media only screen and (min-width: 768px){
-	.home-buttons{
-		margin: 0 0 2rem;
-	}
+	justify-content: center;
 }
 .home a.action-button{
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-transform: none;
 	white-space: nowrap;
+	border: none;
 	border-radius: 0;
-	margin: 1rem 0;
-	padding: 8px 22px;
-	width: 12rem;
+	margin: 1.25rem 1rem;
+	padding: 10px 0;
+	width: 11rem;
 	display: flex;
 	visibility: visible;
 	align-items: center;
 	justify-content: center;
 }
-/* Background created with https://www.css-gradient.com */
-.action-button.primary{
-	color: #212119;
-	background: #E0D18C;
-	background: -webkit-linear-gradient(top left, #E0D18C, #F1EACA);
-	background: -moz-linear-gradient(top left, #E0D18C, #F1EACA);
-	background: linear-gradient(to bottom right, #E0D18C, #F1EACA);
-	
+@media only screen and (min-width: 768px){
+	.home-buttons{
+		margin: 1rem 0 3rem;
+	}
+	.home a.action-button{
+		font-size: 1.15rem;
+		margin: 0 1rem;
+		width: 11rem;
+	}
 }
-.action-button.secondary{
-	color: #212119;
-	background: #DDA051;
-	background: -webkit-linear-gradient(top left, #DDA051, #EECFA7);
-	background: -moz-linear-gradient(top left, #DDA051, #EECFA7);
-	background: linear-gradient(to bottom right, #DDA051, #EECFA7);
+@media only screen and (min-width: 992px){
+	.home-buttons{
+		margin: 2rem 0;
+		justify-content: space-between;
+	}
 }
 
 
@@ -1174,6 +1194,11 @@ nav .button-container{
 		gap: .55rem;
 	}
 }
+@media only screen and (min-width: 1200px){
+	nav .button-container{
+		gap: 1rem;
+	}
+}
 .overlay-content .button-container{
 	margin: 0 auto;
 	width: 200px;
@@ -1266,7 +1291,7 @@ nav .close{
 }
 nav .hamburger-menu{
 	margin: 0 .5rem 0 0;
-	padding: 6px 7px 0;
+	padding: 6px 7px 4px;
 }
 nav.overlay-nav .hamburger-menu{
 	display: none;
@@ -1274,20 +1299,35 @@ nav.overlay-nav .hamburger-menu{
 }
 nav .close{
 	margin: .05rem .5rem 0 0;
-	padding: 6px 9px 2px;
+	padding: 6px 9px 0;
 	display: none;
 	visibility: hidden;
 }
-nav.overlay-nav .close{
+nav.overlay-nav .close.mobile{
 	display: block;
 	visibility: visible;
+}
+nav.overlay-nav .close.desktop{
+	display: none;
+	visibility: hidden;
 }
 @media only screen and (min-width: 768px){
 	nav .hamburger-menu{
 		margin-left: .3rem;
+		padding: 6px 7px 5px;
 	}
 	nav .close{
 		margin-left: .4rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav.overlay-nav .close.mobile{
+		display: none;
+		visibility: hidden;
+	}
+	nav.overlay-nav .close.desktop{
+		display: block;
+		visibility: visible;
 	}
 }
 nav.fallback .hamburger-menu{

@@ -107,10 +107,6 @@ main
 .credits
 1rem / 1.1rem (992)
 
-.action-button,
-.action-button:visited
-1rem
-
 small
 .9rem
 
@@ -367,9 +363,6 @@ main{
 .home .introduction-section p{
 	text-align: left;
 	line-height: 1.875em;
-}
-.home .introduction-section .action-button{
-	padding: 6px 10px;
 }
 
 /* Essay Top */
@@ -736,27 +729,6 @@ a:focus{
 .graphic a:hover,
 .graphic a:focus{
 	background-color: white;
-}
-.action-button,
-.action-button:visited{
-	font-size: 1rem;
-	font-weight: 600;
-	white-space: nowrap;
-	text-decoration: none;
-	color: #fff;
-	background-color: #d48c44;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	margin: .25rem;
-	padding: .23rem .75rem;
-	display: inline-block;
-}
-.action-button:hover,
-.action-button:focus{
-	color: #d48c44;
-	background-color: #fff;
-	outline: 1px solid #d48c44;
 }
 
 

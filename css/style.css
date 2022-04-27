@@ -271,13 +271,16 @@ section article section:not(:first-child) h3{
 }
 .credits h3{
 	font-size: 1.3rem;
-	border-left: 12px solid #bdc2bd;
+	border-left: 8px solid #bdc2bd;
 	margin-top: 3rem;
 }
 @media only screen and (min-width: 992px){
 	.credits h3{
 		margin-top: 4rem;
 	}
+}
+.home .credits h3{
+	border-left: 8px solid #DA9C5D;
 }
 .home h3#page-citation{
 	margin-top: 2rem;

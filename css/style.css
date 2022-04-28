@@ -221,7 +221,7 @@ body{
 
 /* Headers */
 h2{
-	font-size: 2.1rem;
+	font-size: 1.7rem;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
 	line-height: 3rem;
@@ -230,9 +230,24 @@ h2{
 	margin: .5rem 0 1.5rem;
 	padding: 0 0 0 1rem;
 }
+@media only screen and (min-width: 480px){
+	h2{
+		font-size: 2.1rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	h2{
+		font-size: 2.3rem;
+	}
+}
 @media only screen and (min-width: 992px){
 	h2{
-		font-size: 2.9rem;
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	h2{
+		font-size: 2.6rem;
 		margin-bottom: 2rem;
 	}
 }

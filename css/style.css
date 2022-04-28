@@ -1326,6 +1326,65 @@ footer p .site-detail:last-child::after{
 	}
 }
 
+
+/* Scroll to Top Button */
+
+/* Scroll to top button */
+/* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#topButton{
+	cursor: pointer;
+	font-size: .95rem;
+	font-weight: 600;
+	color: #fff;
+	background-color: #4d5b51;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	outline: none;
+	padding: 5px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: .5rem;
+	right: .5rem;
+	z-index: 99;
+	opacity: .96;
+	display: none;
+	visibility: hidden;
+	justify-content: center;
+	align-items: center;
+  }
+@media only screen and (min-width: 768px){
+	#topButton{
+		top: initial;
+		bottom: 1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	#topButton{
+		top: 50%;
+		right: 1rem;
+		transform: translate(0, -50%);
+	}
+}
+@media only screen and (min-width: 1200px){
+	#topButton{
+		right: 4rem;
+	}
+}
+  #topButton:hover,
+  #topButton:focus{
+	color: #4d5b51;
+	background-color: #fff;
+	border: 2px solid #4d5b51;
+}
+#topButton:active{
+	color: #fff;
+	background-color: #4d5b51;
+	border: 2px solid transparent;
+}
+
 /************* End of Vetted CSS ************/
 
 /* Remove extra code from Overlay, check colors, "em" */
@@ -2320,68 +2379,6 @@ hr.section-divider{
 	}
 }
 
-
-/* 1.19. Scroll to Top Button */
-
-/* Scroll to top button */
-/* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
-#topButton{
-	cursor: pointer;
-	font-size: .95em;
-	font-weight: 600;
-	color: #fff;
-	background-color: #525252;
-	border: 2px solid #fff;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	outline: none;
-	margin-left: 33%;
-	padding: 5px;
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	left: 50%;
-	bottom: 47px;
-	transform: translate(-50%, 0);
-	z-index: 99;
-	display: none;
-	visibility: hidden;
-  }
-@media only screen and (min-width: 480px){
-	#topButton{
-		margin-left: 42%;
-		bottom: 14px;
-	}
-}
-@media only screen and (min-width: 768px){
-	#topButton{
-		margin-left: 340px;
-		bottom: 352px;
-	}
-}
-@media only screen and (min-width: 992px){
-	#topButton{
-		margin-left: 244px;
-		bottom: 384px;
-	}
-}
-@media only screen and (min-width: 1200px){
-	#topButton{
-		margin-left: 280px;
-	}
-}
-  #topButton:hover,
-  #topButton:focus{
-	color: #525252;
-	background-color: #fff;
-	border: 2px solid #525252;
-}
-#topButton:active{
-	color: #fff;
-	background-color: #525252;
-	border: 2px solid transparent;
-}
 
 /* Code to be deleted */
 

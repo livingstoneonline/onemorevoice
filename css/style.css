@@ -242,6 +242,7 @@ section article section:not(:first-child) h3{
 }
 .home h3#page-citation{
 	margin-top: 1rem;
+	border-bottom: 6px solid #e3b382;
 }
 @media only screen and (min-width: 768px){
 	.home h3#page-citation{
@@ -498,6 +499,7 @@ main{
 	color: #fff;
 	background-color: #4d5b51;
 	border: 2px solid #E7E9E7;
+	outline: none;
 }
 @media only screen and (min-width: 992px){
 	 .caption:hover,
@@ -513,6 +515,7 @@ main{
 .caption:hover i,
 .caption:focus-within i{
 	color: #fff;
+	outline: none;
 }
 
 
@@ -569,8 +572,9 @@ a:visited{
 }
 a:hover,
 a:focus{
-	color: #694017;
+	color: #212119;
 	background-color: #E7E9E7;
+	outline: 2px solid #e3b382;
 }
 
 
@@ -614,6 +618,7 @@ a.action-button:hover,
 a.action-button:focus{
 	color: #fff;
 	background: #325359;
+	outline: none;
 }
 a.action-button i{
 	margin-left: .5rem;
@@ -781,6 +786,7 @@ nav .logo-container a:hover,
 nav .logo-container a:focus{
 	color: #fff;
 	background: transparent;
+	outline: none;
 }
 /* OMV Icon */
 nav .logo-container a img{
@@ -918,6 +924,7 @@ nav .logo-container a:focus h1{
 	color: #E7E9E7;
 	background-color: #212119;
 	border: 2px #E7E9E7 solid;
+	outline: none;
 }
 div.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
@@ -936,6 +943,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2){
 div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
 div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 	border: 2px #395f65 solid;
+	outline: none;
 }
 #google_translate_element > div > span > a > img,
 #google_translate_element > div > span > a > img{
@@ -945,6 +953,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 #google_translate_element > div > span > a > img:hover,
 #google_translate_element > div > span > a > img:focus{
 	border: 2px transparent solid;
+	outline: none;
 }
 .goog-logo-link,
 .goog-logo-link:link{
@@ -1034,6 +1043,7 @@ nav .button-container a.external:focus,
 .overlay-content .button-container a.external:hover,
 .overlay-content .button-container a.external:focus{
 	background: transparent;
+	outline: none;
 }
 nav .button-container a.external i{
 	margin: 0 .15rem;
@@ -1055,11 +1065,13 @@ nav .button-container a.external:hover i,
 nav .button-container a.external:focus i{
 	color: #212119;
 	background-color: #fff;
+	outline: none;
 }
 .overlay-content .button-container a.external:hover i,
 .overlay-content .button-container a.external:focus i{
 	color: #212119;
 	background-color: #E7E9E7;
+	outline: none;
 }
 
 
@@ -1138,6 +1150,7 @@ nav .close:hover,
 nav .close:focus{
 	color: #212119;
 	background-color: #fff;
+	outline: none;
 }
 
 
@@ -1266,6 +1279,7 @@ nav .close:focus{
 .overlay li a:focus{
 	color: #212119;
 	background-color: #E7E9E7;
+	outline: none;
 }
 
 
@@ -1294,6 +1308,7 @@ footer a:hover,
 footer a:focus{
 	color: #7d4d1c;
 	background-color: #E7E9E7;
+	outline: none;
 }
 footer p{
 	margin: 0;

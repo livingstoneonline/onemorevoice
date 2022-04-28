@@ -135,7 +135,7 @@ html{
 	font-weight: normal;
 	line-height: 1.875em;
 	color: #191716;
-	background-color: #ededed;
+	background: #ededed;
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
@@ -464,7 +464,7 @@ main{
 	font-weight: normal;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-decoration: none;
-	background-color: #E7E9E7;
+	background: #E7E9E7;
 	border: 2px solid #4d5b51;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -497,15 +497,14 @@ main{
  .caption:hover,
  .caption:focus-within{
 	color: #fff;
-	background-color: #4d5b51;
+	background: #4d5b51;
 	border: 2px solid #E7E9E7;
-	outline: none;
 }
 @media only screen and (min-width: 992px){
 	 .caption:hover,
 	 .caption:focus-within{
 		color: #fff;
-		background-color: #4d5b51;
+		background: #4d5b51;
 		border: 2px solid #E7E9E7;
 	}
 }
@@ -541,7 +540,7 @@ main{
 		}
 		.home .content div.decoration,
 		.documents .content div.decoration{
-			background-color: #dcd3a6;
+			background: #dcd3a6;
 		}
 		.content div.decoration{
 			margin: 0;
@@ -568,12 +567,12 @@ main{
 a,
 a:visited{
 	color: #325359;
-	background-color: transparent;
+	background: transparent;
 }
 a:hover,
 a:focus{
 	color: #212119;
-	background-color: #E7E9E7;
+	background: #E7E9E7;
 	outline: 2px solid #e3b382;
 }
 
@@ -922,7 +921,7 @@ nav .logo-container a:focus h1{
 #google_translate_element div.goog-te-gadget .goog-te-combo:hover,
 #google_translate_element div.goog-te-gadget .goog-te-combo:focus{
 	color: #E7E9E7;
-	background-color: #212119;
+	background: #212119;
 	border: 2px #E7E9E7 solid;
 	outline: none;
 }
@@ -1064,13 +1063,13 @@ nav .button-container a.external i{
 nav .button-container a.external:hover i,
 nav .button-container a.external:focus i{
 	color: #212119;
-	background-color: #fff;
+	background: #fff;
 	outline: none;
 }
 .overlay-content .button-container a.external:hover i,
 .overlay-content .button-container a.external:focus i{
 	color: #212119;
-	background-color: #E7E9E7;
+	background: #E7E9E7;
 	outline: none;
 }
 
@@ -1149,7 +1148,7 @@ nav .hamburger-menu:focus,
 nav .close:hover,
 nav .close:focus{
 	color: #212119;
-	background-color: #fff;
+	background: #fff;
 	outline: none;
 }
 
@@ -1278,7 +1277,7 @@ nav .close:focus{
 .overlay li a:hover,
 .overlay li a:focus{
 	color: #212119;
-	background-color: #E7E9E7;
+	background: #E7E9E7;
 	outline: none;
 }
 
@@ -1289,7 +1288,7 @@ footer{
 	font-weight: 400;
 	text-align: center;
 	color: #fff;
-	background-color: #325359;
+	background: #325359;
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1600px;
@@ -1307,7 +1306,7 @@ footer a:visited{
 footer a:hover,
 footer a:focus{
 	color: #7d4d1c;
-	background-color: #E7E9E7;
+	background: #E7E9E7;
 	outline: none;
 }
 footer p{
@@ -1351,7 +1350,7 @@ footer p .site-detail:last-child::after{
 	font-size: .95rem;
 	font-weight: 600;
 	color: #fff;
-	background-color: #4d5b51;
+	background: #4d5b51;
 	border: 2px solid #fff;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -1391,12 +1390,12 @@ footer p .site-detail:last-child::after{
   #topButton:hover,
   #topButton:focus{
 	color: #4d5b51;
-	background-color: #fff;
+	background: #fff;
 	border: 2px solid #4d5b51;
 }
 #topButton:active{
 	color: #fff;
-	background-color: #4d5b51;
+	background: #4d5b51;
 	border: 2px solid transparent;
 }
 
@@ -1585,7 +1584,7 @@ img + p.caption-text,
 }
 .graphic a:hover,
 .graphic a:focus{
-	background-color: white;
+	background: white;
 }
 
 
@@ -1691,13 +1690,13 @@ section.archival-text h4{
 section.archival-text a.return-top:hover,
 section.archival-text a.return-top:focus{
 	color: #a83c37;
-	background-color: #e3e3e3;
+	background: #e3e3e3;
 } */
 section.archival-text p:last-child{
 	border-bottom: none;
 }
 section.archival-text .item{
-	background-color: #DBE6F5;
+	background: #DBE6F5;
 }
 section.archival-text .item a:hover,
 section.archival-text .item a:focus{
@@ -1727,7 +1726,7 @@ section.archival-text .creator-image{
 }
 section.archival-text .no-image::after{
 	content: "";
-	background-color: #e3e3e3;
+	background: #e3e3e3;
 	border: 1px solid #858585;
 	padding-bottom: 100%;
 	display: block;
@@ -1776,7 +1775,7 @@ section.archival-text .no-image .content{
 	font-style: normal;
 	font-weight: 600;
 	color: white;
-	background-color: #902D27;
+	background: #902D27;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -1795,7 +1794,7 @@ section.archival-text .no-image .content{
 .gallery h4 a.return-top:focus,
 .gallery h4 a.return-top:hover{
 	color: #a83c37;
-	background-color: #e3e3e3;
+	background: #e3e3e3;
 } */
 .gallery-item{
 	text-align: center;
@@ -1872,7 +1871,7 @@ section.archival-text .no-image .content{
 	font-style: normal;
 	font-weight: 600;
 	color: white;
-	background-color: #204a79;
+	background: #204a79;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -1882,7 +1881,7 @@ section.archival-text .no-image .content{
 .published-author{
 	font-size: 1.05em;
 	color: #262626;
-	background-color: #e3e3e3;
+	background: #e3e3e3;
 	padding: 10px 16px;
 	margin: 0;
 	border-radius: 8px 8px 0 0;
@@ -1894,7 +1893,7 @@ section.archival-text .no-image .content{
 /* .published-author a.return-top:hover,
 .published-author a.return-top:focus{
 	color: #a83c37;
-	background-color: whitesmoke;
+	background: whitesmoke;
 } */
 .author-details{
 	border-top: none;
@@ -1935,7 +1934,7 @@ section.archival-text .no-image .content{
 	font-style: normal;
 	font-weight: 600;
 	color: white;
-	background-color: #902D27;
+	background: #902D27;
 	margin: 0 0 1.5em 0;
 	padding: 10px 14px;
 	border-radius: 8px;
@@ -1953,11 +1952,11 @@ section.archival-text .no-image .content{
 #films h4 a.return-top:focus,
 #films h4 a.return-top:hover{
 	color: #a83c37;
-	background-color: #e3e3e3;
+	background: #e3e3e3;
 } */
 #films h5{
 	font-size: 1.05em;
-	background-color: #e3e3e3;
+	background: #e3e3e3;
 	border-bottom: 1px solid #858585;
 	border-radius: 8px 8px 0 0;
 	-webkit-border-radius: 8px 8px 0 0;
@@ -2020,7 +2019,7 @@ section.archival-text .no-image .content{
 }
 .youtube .play-button,
 .screenshot .play-button{
-	background-color: #902D27;
+	background: #902D27;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -2056,7 +2055,7 @@ section.archival-text .no-image .content{
 .screenshot:hover .play-button,
 .screenshot:focus .play-button,
 .screenshot:focus-within .play-button{
-	background-color: #204A79;
+	background: #204A79;
 }
 .youtube img,
 .youtube .play-button,
@@ -2191,7 +2190,7 @@ section.archival-text .no-image .content{
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	color: #191716;
-	background-color: #f1f1f1;
+	background: #f1f1f1;
 	border: 1px solid #191716;
 	border-width: 1px 2px 2px 1px;
 	border-radius: 5px;

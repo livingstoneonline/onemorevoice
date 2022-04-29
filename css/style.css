@@ -213,13 +213,23 @@ h2{
 	margin-bottom: 1rem;
 }
 h3{
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-family: 'Merriweather', serif;
 	text-align: center;
 	color: #325359;
 	border-bottom: 8px solid #e3b382;
 	margin: 1.5rem 0;
 	padding: 0 0 1rem 0;
+}
+@media only screen and (min-width: 480px){
+	h3{
+		font-size: 1.4rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	h3{
+		font-size: 1.5rem;
+	}
 }
 section article section:not(:first-child) h3{
 	margin-top: 3rem;
@@ -394,6 +404,9 @@ main{
 
 .essay .page-details{
 	padding-bottom: 1rem;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details{
@@ -424,24 +437,35 @@ main{
 		margin: 2rem 0 0;
 		padding: 0 2rem;
 	}
+	.essay .page-details.vertical figure{
+		width: 668px;
+	}
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
 		padding: 0 1.5rem;
-		width: calc(100% - 478px);
 		display: flex;
 		flex-direction: column;
 	}
-	.essay .page-details figure{
-		width: 478px;
+	.essay .page-details.vertical div{
+		margin-bottom: 3rem;
+	}
+	.essay .page-details.horizontal figure{
+		min-width: 478px;
+	}
+	.essay .page-details.vertical figure{
+		min-width: 488px;
 	}
 }
 @media only screen and (min-width: 1200px){	
-	.essay .page-details div{
-		width: calc(100% - 698px);
+	.essay .page-details.vertical div{
+		margin-bottom: 7rem;
 	}
-	.essay .page-details figure{
-		width: 698px;
+	.essay .page-details.horizontal figure{
+		min-width: 698px;
+	}
+	.essay .page-details.vertical figure{
+		min-width: 636px;
 	}
 }
 
@@ -665,8 +689,14 @@ a.action-button i{
 	display: none;
 	visibility: hidden;
 }
+@media only screen and (min-width: 992px){
+	.essay .vertical a.action-button{
+		display: inline-block;
+		visibility: visible;
+	}
+}
 @media only screen and (min-width: 1200px){
-	.essay a.action-button{
+	.essay .horizontal a.action-button{
 		display: inline-block;
 		visibility: visible;
 	}
@@ -1527,20 +1557,6 @@ a:focus img{
 }
 .image-border-dark{
 	border: 1px solid #4d5b51;
-}
-@media screen and (min-width: 480px){
-	.responsive-image70{
-		width: 70%;
-	}
-	.responsive-image73{
-		width: 73%;
-	}
-	.caption70{
-		padding: 0 15%;
-	}
-	.caption73{
-		padding: 0 13.5%;
-	}
 }
 /* Caption for main image */
 img + p.caption-text,

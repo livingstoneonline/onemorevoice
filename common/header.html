@@ -166,6 +166,17 @@
             </div>
           </div> -->
 
+<!-- Adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ and https://examples.hassellinclusion.com/accordion/accessible-accordion-example.html -->
+
+<!-- 
+          Styling notes
+
+          Without styling, the button in the heading will show in the browser with a default button style which may not be what is required. It’s possible to style the buttons in another way but for sighted users it’s best to provide some kind of indication that activating the button does something, or the functionality may be missed.
+          
+          Examples of indications could include downward pointing arrows, or the plus symbol (+). When the panel is open, the corresponding styles could be attached to the button – eg upward pointing arrow or minus symbol (-).
+          
+          These styles can be attached to the button using CSS attribute selectors, based on the value of the aria-expanded attribute. -->
+
           <div class="accordion-container">
             <h2>How do I get your newsletters?</h2>
             <p>Simply fill out our membership form and you'll start getting the newsletters straight away.</p>

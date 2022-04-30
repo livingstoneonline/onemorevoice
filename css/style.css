@@ -1238,13 +1238,14 @@ nav .close:focus{
 	padding: 1rem 1rem 2rem;
 	width: 100%;
 	overflow: auto;
+	scrollbar-gutter: stable;
 }
 @media only screen and (min-width: 480px){
 	.overlay-content{
 		width: 50%;
 	}
 }
-.overlay ul{
+/* .overlay ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -1310,7 +1311,7 @@ nav .close:focus{
 	color: #212119;
 	background: #E7E9E7;
 	outline: none;
-}
+} */
 
 
 /* 1.4. Footer */

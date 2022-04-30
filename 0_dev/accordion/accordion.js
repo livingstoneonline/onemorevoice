@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
    $('html').addClass( 'js' ).removeClass( 'no-js' );
 
    // Code for accordions
-   $hdr = 'h2'; // set heading level to look out for
+   $hdr = 'h3'; // set heading level to look out for
    $acc_id = 1; // global id counter
 
    /* The setup function that runs when the page has loaded */

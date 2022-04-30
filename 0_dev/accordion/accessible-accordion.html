@@ -1,77 +1,11 @@
-<!-- https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html -->
-		<style type="text/css">
-			div.accordion-container {
-					text-align: left;
-					margin: 0;
-					padding: 0;
-					border: none;
-					white-space: normal;
-					line-height: normal;
-			}
-			.hidden { display:none;}
-			.accordion-container h2 {
-				all: unset;
-				margin:1em 0 0 0;
-			}
-			.accordion-container h2 button {  
-				all: inherit;    
-				border:1px solid black;
-				padding:5px 35px 5px 5px;
-				margin: 0;
-				/* background: #ddd url(nav-highlight02.png) right center no-repeat; */
-				cursor:pointer;
-				width:100%;
-			}
-			.accordion-container h2 button:hover,
-			.accordion-container h2 button:focus {
-				 background-color:#f9eed8;
-			}
-			.accordion-container h2 button[aria-expanded="true"] {
-				 /* background-image: url(nav-highlight03.png); */
-			}
-			.accordion-panel {
-				margin:0;
-				padding: 0.5em;
-				border: 2px solid #fff;
-			}
-			.accordion-panel:focus {
-				outline:none;
-					-webkit-animation-name: animation;
-					-webkit-animation-duration: 2s;
-					-webkit-animation-timing-function: ease-in-out;
-					-webkit-animation-iteration-count: 1;    
-					-webkit-animation-play-state: running;
-					
-					animation-name: animation;
-					animation-duration: 2s;
-					animation-timing-function: ease-in-out;
-					animation-iteration-count: 1;    
-					animation-play-state: running;
-					border: 2px solid #fff;
-			}
-			@-webkit-keyframes animation {
-					0%     {border-color:#f9eed8;}
-					100.0%  {border-color:#fff;}
-			}
-			
-			@keyframes animation {
-					0%     {border-color:#f9eed8;}
-					100.0%  {border-color:#fff;}
-			}
-			.accordion-panel p{
-				margin:0 0 1em 0;
-				padding:0;
-			}
-			</style>
+<!-- Adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ -->
+<div class="accordion-container">
+	<h2>How do I get your newsletters?</h2>
+	<p>Simply fill out our membership form and you'll start getting the newsletters straight away.</p>
 
-						<!-- Adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ -->
-						<div class="accordion-container">
-						<h2>How do I get your newsletters?</h2>
-						<p>Simply fill out our membership form and you'll start getting the newsletters straight away.</p>
+	<h2>Can I control the frequency?</h2>
+	<p>When you sign up you can select the frequency of the newsletters. </p>
+</div>
 
-						<h2>Can I control the frequency?</h2>
-						<p>When you sign up you can select the frequency of the newsletters. </p>
-
-						</div>
-
+<link rel="stylesheet" type="text/css" href="/css/accordion.css" />
 <script src="/js/accordion.js"></script>

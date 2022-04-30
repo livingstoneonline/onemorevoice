@@ -151,7 +151,8 @@ html{
 }
 body{
 	margin: 0 auto;
-	padding: 1px;
+	/* padding: 1px; */
+	border: 1px solid #191716;
 	max-width: 100%;
 	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: antialiased;
@@ -1233,7 +1234,8 @@ nav .close:focus{
 }
 .overlay-content{
 	white-space: nowrap;
-	background: #325359;
+	/* background: #325359; */
+	background: #264045;
 	margin: 0 auto;
 	padding: 1rem 1rem 2rem;
 	width: 100%;

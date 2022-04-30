@@ -889,7 +889,7 @@ nav .logo-container a:focus h1{
 	text-align: unset !important;
 }
 .translate{
-	margin: .5em .3rem;
+	margin: .5rem .3rem;
   /* max-width: 170px; */
   height: 32px;
 	overflow: hidden;
@@ -1371,13 +1371,11 @@ footer p .site-detail:last-child::after{
 }
 
 
-/* Scroll to Top Button */
-
 /* Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
-	font-size: .95rem;
+	font-size: 1rem;
 	font-weight: 600;
 	color: #fff;
 	background: #4d5b51;
@@ -1401,6 +1399,7 @@ footer p .site-detail:last-child::after{
   }
 @media only screen and (min-width: 768px){
 	#topButton{
+		font-size: 1.1rem;
 		top: initial;
 		bottom: 1rem;
 	}
@@ -2215,16 +2214,6 @@ section.archival-text .no-image .content{
 	margin: 1px;
 	padding: 0 2px;
 	min-width: 17px;
-}
-
-/* The following items are used on the analytical_priorities.html and collaboration.html pages. */
-ol.concept-list li,
-ul.concept-list li{
-	margin-bottom: .7em;
-}
-ol.concept-list li:last-child,
-ul.concept-list li:last-child{
-	margin-bottom: 0;
 }
 
 /* The following items are used on the coding_guidelines.html page. */

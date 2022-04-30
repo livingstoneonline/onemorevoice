@@ -71,7 +71,7 @@
                 <i class="fas fa-envelope" aria-label="Email icon" title="Contact/Email"  aria-hidden="true"></i>
             </a>
         </span>
-        <ul>
+        <!-- <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a>Historical Materials</a></li>
                 <li><a href="/texts.html">Recovered Texts</a></li>
@@ -88,6 +88,85 @@
                 <li><a href="/contributors.html">Contributors</a></li>
                 <li><a href="/acknowledgments.html">Acknowledgments</a></li>
             <li><a id="overlay-last" href="/site_map.html">Site Map</a></li>
-        </ul>
+        </ul> -->
+        
+        <!-- https://www.w3.org/TR/wai-aria-practices-1.1/examples/accordion/accordion.html -->
+        <div class="demo-block">
+            <!-- Accordion Configuration Options
+            
+            data-allow-toggle
+              Allow for each toggle to both open and close its section. Makes it possible for all sections to be closed. Assumes only one section may be open.
+            
+            data-allow-multiple
+              Allow for multiple accordion sections to be expanded at the same time. Assumes data-allow-toggle otherwise the toggle on open sections would be disabled.
+            __________
+            
+            Ex:
+              <div id="accordionGroup" class="Accordion" data-allow-multiple>
+            
+              <div id="accordionGroup" class="Accordion" data-allow-toggle>
+            -->
+            <div id="accordionGroup" class="Accordion" data-allow-multiple>
+              <h3><a href="/index.html">Home</a></h3>
+              <h3>
+                <button aria-expanded="true"
+                        class="Accordion-trigger"
+                        aria-controls="sect1"
+                        id="accordion1id">
+                  <span class="Accordion-title">
+                    Historical Materials
+                    <span class="Accordion-icon"></span>
+                  </span>
+                </button>
+              </h3>
+              <div id="sect1"
+                   role="region"
+                   aria-labelledby="accordion1id"
+                   class="Accordion-panel">
+                <div>
+                    <ul>
+                        <li><a href="/texts.html">Recovered Texts</a></li>
+                        <li><a href="/collections.html">Thematic Collections</a></li>
+                        <li><a href="/visual_materials.html">Visual Materials</a></li>
+                        <li><a href="/books.html">Book-Length Works</a></li>
+                        <li><a href="/motion_pictures.html">Motion Pictures</a></li>
+                        <li><a href="/critical_mterials.html">Critical Materials</a></li>
+                    </ul>
+                </div>
+              </div>
+              <h3>
+                <button aria-expanded="false"
+                        class="Accordion-trigger"
+                        aria-controls="sect2"
+                        id="accordion2id">
+                  <span class="Accordion-title">
+                    Project Documents
+                    <span class="Accordion-icon"></span>
+                  </span>
+                </button>
+              </h3>
+              <div id="sect2"
+                   role="region"
+                   aria-labelledby="accordion2id"
+                   class="Accordion-panel"
+                   hidden="">
+                <div>
+                  <ul>
+                    <li><a href="/mission_statement.html">Mission Statement</a></li>
+                    <li><a href="/analytical_priorities.html">Analytical Priorities</a></li>
+                    <li><a href="/project_design.html">Project Design</a></li>
+                    <li><a href="/collaboration.html">Collaboration</a></li>
+                    <li><a href="/acknowledgments.html">Acknowledgments</a></li>
+                  </ul>
+                </div>
+              </div>
+              <h3><a href="/contributors.html">Contributors</a></h3>
+              <h3><a id="overlay-last" href="/site_map.html">Site Map</a></h3>
+            </div>
+          </div>
     </section>
 </div>
+
+<link rel="stylesheet" type="text/css" href="/css/accordion.css" />
+<script src="/js/accordion.js"></script>
+

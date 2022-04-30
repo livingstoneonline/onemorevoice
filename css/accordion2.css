@@ -2,8 +2,18 @@
   display: none;
 }
 .overlay .text-container{
-  padding: 1rem;
+  padding: 0 1rem;
   background: inherit;
+}
+@media only screen and (min-width: 480px){
+  .overlay .text-container{
+    padding: 1rem 0;
+  }
+}
+@media only screen and (min-width: 768px){
+  .overlay .text-container{
+    padding: 1rem;
+  }
 }
 .overlay .text-container,
 .overlay .accordion-container{
@@ -14,6 +24,7 @@
 .overlay .text-container a,
 .overlay .text-container button{
   transition: .2s;
+  cursor:pointer;
 }
 .overlay .text-container a:hover,
 .overlay .text-container a:focus,
@@ -31,12 +42,16 @@
 }
 .overlay .text-container h2{
   all: unset;
-  padding: .25rem;
-  height: 55px;
+  padding: .25rem 0;
+  height: 52px;
 }
 .overlay .text-container h2 button{
   display: flex;
   justify-content: space-between;
+}
+.overlay .text-container h2 button[aria-expanded=true]{
+  color: #212119;
+	background: #E7E9E7;
 }
 .overlay .text-container h2 button[aria-expanded=false]::after{
   font-family: "Font Awesome 6 Free";
@@ -50,7 +65,7 @@
 .overlay .text-container h2:nth-child(1),
 .overlay .text-container h2:nth-child(3),
 .overlay ul li{
-	border-bottom: 1px dotted #fff;
+	border-bottom: 1px solid #ededed;
 }
 .accordion-container h2 button:hover,
 .accordion-container h2 button:focus {
@@ -59,17 +74,30 @@
 .overlay h2 + div{
   background: inherit;
 }
+.accordion-panel{
+  margin: 0;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.accordion-panel:hover,
+.accordion-panel:focus {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
 .accordion-container ul{
   list-style-type: none;
+  /* background: #223A3F; */
+  /* background: #264045; */
+  background: #325359;
 	margin: 0;
-	padding: 0 0 0 .75rem;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .accordion-container li{
   padding: .25rem;
-  height: 55px; 
+  height: 52px; 
   width: 100%;
   display: flex;
   align-items: center;
@@ -85,16 +113,13 @@
 .overlay .text-container a{
   width: 100%;
 }
+.accordion-container li a{
+  /* background: #223A3F; */
+}
 .overlay .text-container button{
   width: calc(100% - 1rem);
 }
 
-.accordion-panel:focus {
-  border: 2px solid #fff;
-}
-.accordion-panel{
-
-}
 
 div.accordion-container {
   /* text-align: left;
@@ -113,13 +138,13 @@ border:1px solid black;
 padding:5px 35px 5px 5px;
 margin: 0; */
 /* background: #ddd url(nav-highlight02.png) right center no-repeat; */
-cursor:pointer;
+/* cursor:pointer; */
 /* width:100%; */
 }
-.accordion-container h2 button:hover,
+/* .accordion-container h2 button:hover,
 .accordion-container h2 button:focus {
  background-color:#f9eed8;
-}
+} */
 .accordion-container h2 button[aria-expanded="true"] {
  /* background-image: url(nav-highlight03.png); */
 }

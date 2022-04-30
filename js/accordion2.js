@@ -25,7 +25,6 @@ jQuery(document).ready(function($) {
          + ' aria-controls="accordion-panel-'+ $this_id +'" aria-expanded="false">'
          + $this_text + '</button>';
 
-
       // Add the button string into the heading
       $(this).append($this_button);
 

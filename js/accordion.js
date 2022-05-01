@@ -1,4 +1,4 @@
-// Accodion adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
+// Accordion adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
 
 ///// General Functions ///////
 jQuery(document).ready(function($) {

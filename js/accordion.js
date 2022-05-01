@@ -1,3 +1,5 @@
+// Accodion adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/
+
 ///// General Functions ///////
 jQuery(document).ready(function($) {
    // Code here will be executed on document ready. Use $ as normal.
@@ -33,7 +35,7 @@ jQuery(document).ready(function($) {
       var $set = $(this).nextUntil($hdr);
 
       // Set up the panel string
-      $this_panel = '<div class="accordion-panel hidden" id="accordion-panel-' + $this_id + 
+      $this_panel = '<div class="accordion-panel hidden" role="region" id="accordion-panel-' + $this_id + 
          '" aria-labelledby="accordion-button-' + $this_id + '"></div>';
 
       // Wrap everything in a <div> with the necessary elements included.

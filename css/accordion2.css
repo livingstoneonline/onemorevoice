@@ -46,13 +46,17 @@
 	background: #E7E9E7;
 }
 .overlay .text-container h2 button[aria-expanded=false]::after{
-  font-family: "Font Awesome 6 Free";
+  /* font-family: "Font Awesome 6 Free"; */
   content: "+";
   width: .5em;
   display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .overlay .text-container h2 button[aria-expanded=true]::after{
   content:"–";
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .overlay .text-container h2:nth-child(1),
 .overlay .text-container h2:nth-child(3),

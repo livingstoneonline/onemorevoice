@@ -808,6 +808,16 @@ header nav button,
 nav .logo-container{
 	margin: 0;
 }
+@media only screen and (min-width: 480px){
+	nav .logo-container {
+    margin-right: calc(100vw * .035);
+	}
+}
+@media only screen and (min-width: 624px){
+	nav .logo-container {
+    margin: 0;
+	}
+}
 nav .logo-container a{
 	display: flex;
 	align-items: center;
@@ -904,7 +914,7 @@ nav .logo-container a:focus h1{
 }
 @media only screen and (min-width: 480px){
 	.translate{
-		margin: .5rem .3rem;
+		margin: .4rem .3rem .6em;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -915,7 +925,7 @@ nav .logo-container a:focus h1{
 }
 .translate:hover,
 .translate:focus-within{
-	outline: 1px solid white;
+	outline: 2px solid white;
 }
 .translate span{
 	border: 2px solid transparent;
@@ -1013,7 +1023,16 @@ nav.overlay-nav .button-container{
 	margin: 0;
 	justify-content: center;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
+	nav .button-container{
+		justify-content: flex-end;
+		width: 100%;
+	}
+	nav.overlay-nav .button-container{
+		justify-content: space-between;
+	}
+}
+@media only screen and (min-width: 624px){
 	nav .button-container,
 	nav.overlay-nav .button-container{
 		min-width: calc(50% + .5rem);
@@ -1261,6 +1280,114 @@ nav .close:focus{
 	.overlay-content{
 		width: 50%;
 	}
+}
+.overlay .text-container{
+  background: inherit;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 480px){
+  .overlay .text-container{
+    padding: 1rem 0;
+  }
+}
+.overlay .text-container,
+.overlay .accordion-container{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.overlay .text-container a,
+.overlay .text-container button{
+  cursor:pointer;
+  transition: .2s;
+}
+.overlay .text-container a:hover,
+.overlay .text-container a:focus,
+.overlay .text-container button:hover,
+.overlay .text-container button:focus{
+	color: #212119;
+	background: #E7E9E7;
+	outline: none;
+}
+.overlay .text-container h2,
+.overlay .text-container a,
+.overlay .text-container button{
+  color: #fff;
+  text-decoration: none;
+}
+.overlay .text-container h2{
+  all: unset;
+  padding: 0;
+  height: 52px;
+}
+.overlay .text-container h2 button{
+  display: flex;
+  justify-content: space-between;
+}
+.overlay .text-container h2 button[aria-expanded=true]{
+  color: #212119;
+	background: #E7E9E7;
+}
+.overlay .text-container h2 button[aria-expanded=false]:after{
+  content: "+";
+  width: .5em;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.overlay .text-container h2 button[aria-expanded=true]:after{
+  content:"–";
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.overlay .text-container h2:nth-child(1),
+.overlay .text-container h2:nth-child(3),
+.overlay ul li{
+	border-bottom: 1px solid #ededed;
+}
+.overlay h2 + div{
+  background: inherit;
+}
+.overlay div .hidden { 
+  display: none;
+}
+.accordion-panel{
+  margin: 0;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.accordion-panel:hover,
+.accordion-panel:focus {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.accordion-container ul{
+  list-style-type: none;
+  background: #315257;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.accordion-container li{
+  padding: 0 .25rem;
+  height: 52px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.overlay .text-container a,
+.overlay .text-container button{
+  margin: .25rem 0;
+  padding: 0 .5rem;
+  width: calc(100% - 1rem);
+  height: calc(100% - .5rem);
+  display: flex;
+  align-items: center;
+}
+.overlay .text-container a{
+  width: 100%;
 }
 
 
@@ -2482,7 +2609,7 @@ nav .logo-container {
 
 /* @media only screen and (min-width: 480px){
 	nav .logo-container {
-		margin-right: 1rem;
+    margin-right: calc(100vw * .035);
 	}
 	header nav{
 		justify-content: space-between;

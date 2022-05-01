@@ -891,6 +891,7 @@ nav .logo-container a:focus h1{
 }
 .translate{
 	margin: .4rem 1rem .5rem .3rem;
+	padding-right: 5px;
   /* max-width: 170px; */
   height: 32px;
 	overflow: hidden;
@@ -911,6 +912,10 @@ nav .logo-container a:focus h1{
 		display: flex;
 		visibility: visible;
 	}	
+}
+.translate:hover,
+.translate:focus-within{
+	outline: 1px solid white;
 }
 .translate span{
 	border: 2px solid transparent;
@@ -956,9 +961,6 @@ nav .logo-container a:focus h1{
 }
 #google_translate_element div.goog-te-gadget .goog-te-combo:hover,
 #google_translate_element div.goog-te-gadget .goog-te-combo:focus{
-	color: #E7E9E7;
-	background: #212119;
-	border: 2px #E7E9E7 solid;
 	outline: none;
 }
 div.skiptranslate:nth-child(1){
@@ -966,7 +968,7 @@ div.skiptranslate:nth-child(1){
 	font-weight: 400;
 	padding-left: 4px;
 	line-height: 2.5em;
-	margin-top: .25rem;
+	margin-top: .2rem;
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2),
 div.skiptranslate:nth-child(1) > span:nth-child(2){

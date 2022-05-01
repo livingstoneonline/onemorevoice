@@ -1,4 +1,4 @@
-<!-- <span class="nav-container"> -->
+  <!-- <span class="nav-container"> -->
     <!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
     <div id="skip">
         <a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
@@ -50,74 +50,57 @@
 
             <button class="close mobile" title="Close" aria-label="Close menu" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
         </span>
-    </nav>
-<!-- </span> -->
+     </nav>
+  <!-- </span> -->
 
 <!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
 <div class="overlay" id="overlay-menu">
     <div></div>
     <section class="overlay-content">
-        <div class="button-container" id="mobile-icons">
+      <div class="button-container" id="mobile-icons">
 
-            <a class="external" href="https://github.com/livingstoneonline/onemorevoice/" aria-label="Go to GitHub Repo (external)">
-                <i class="fa-brands fa-github-alt" aria-label="GitHub icon" title="GitHub" aria-hidden="true"></i>
-            </a>
+          <a class="external" href="https://github.com/livingstoneonline/onemorevoice/" aria-label="Go to GitHub Repo (external)">
+              <i class="fa-brands fa-github-alt" aria-label="GitHub icon" title="GitHub" aria-hidden="true"></i>
+          </a>
 
-            <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice" aria-label="Go to Zotero Library (external)">
-                <i class="fa fa-zotero" aria-label="Zotero icon" title="Zotero"  aria-hidden="true"></i>
-            </a>
+          <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice" aria-label="Go to Zotero Library (external)">
+              <i class="fa fa-zotero" aria-label="Zotero icon" title="Zotero"  aria-hidden="true"></i>
+          </a>
 
-            <a class="external" href="mailto:awisnicki@yahoo.com" aria-label="Go to Email">
-                <i class="fas fa-envelope" aria-label="Email icon" title="Contact/Email"  aria-hidden="true"></i>
-            </a>
-        </div>
-        
-
-<!-- Adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ and https://examples.hassellinclusion.com/accordion/accessible-accordion-example.html -->
-
-<!-- 
-          Other enhancements
-
-          Some accessible accordion patterns give the accordion panels a role="region" attribute. Along with the use of the aria-labelledby attribute this creates a landmark role on the page – so makes it more easily findable by screen reader users.
-
-          Styling notes
-
-          Without styling, the button in the heading will show in the browser with a default button style which may not be what is required. It’s possible to style the buttons in another way but for sighted users it’s best to provide some kind of indication that activating the button does something, or the functionality may be missed.
-          
-          Examples of indications could include downward pointing arrows, or the plus symbol (+). When the panel is open, the corresponding styles could be attached to the button – eg upward pointing arrow or minus symbol (-).
-          
-          These styles can be attached to the button using CSS attribute selectors, based on the value of the aria-expanded attribute. -->
-
-          <div class="text-container">
-            <h2><a href="/index.html">Home</a></h2>
-            <div class="accordion-container">
-              <h2>Historical Materials</h2>
-              <ul>
-                <li><a href="/historical_materials.html">[Main Page]</a></li>
-                <li><a href="/texts.html">Recovered Texts</a></li>
-                <li><a href="/collections.html">Thematic Collections</a></li>
-                <li><a href="/visual_materials.html">Visual Materials</a></li>
-                <li><a href="/books.html">Book-Length Works</a></li>
-                <li><a href="/motion_pictures.html">Motion Pictures</a></li>
-                <li><a href="/critical_mterials.html">Critical Materials</a></li>
-              </ul>
-            
-              <h2>Project Documents</h2>
-              <ul>
-                <li><a href="/project_documents.html">[Main Page]</a></li>
-                <li><a href="/mission_statement.html">Mission Statement</a></li>
-                <li><a href="/analytical_priorities.html">Analytical Priorities</a></li>
-                <li><a href="/project_design.html">Project Design</a></li>
-                <li><a href="/collaboration.html">Collaboration</a></li>
-                <li><a href="/acknowledgments.html">Acknowledgments</a></li>
-              </ul>
-            </div>
-            <h2><a href="/contributors.html">Contributors</a></h2>
-            <h2><a id="overlay-last" href="/site_map.html">Site Map</a></h2>
-          </div>
-          
-      </section>
+          <a class="external" href="mailto:awisnicki@yahoo.com" aria-label="Go to Email">
+              <i class="fas fa-envelope" aria-label="Email icon" title="Contact/Email"  aria-hidden="true"></i>
+          </a>
+      </div>
       
+      <!--  Adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ and https://examples.hassellinclusion.com/accordion/accessible-accordion-example.html -->
+      <div class="text-container">
+        <h2><a href="/index.html">Home</a></h2>
+        <div class="accordion-container">
+          <h2>Historical Materials</h2>
+          <ul>
+            <li><a href="/historical_materials.html">[Main Page]</a></li>
+            <li><a href="/texts.html">Recovered Texts</a></li>
+            <li><a href="/collections.html">Thematic Collections</a></li>
+            <li><a href="/visual_materials.html">Visual Materials</a></li>
+            <li><a href="/books.html">Book-Length Works</a></li>
+            <li><a href="/motion_pictures.html">Motion Pictures</a></li>
+            <li><a href="/critical_mterials.html">Critical Materials</a></li>
+          </ul>
+        
+          <h2>Project Documents</h2>
+          <ul>
+            <li><a href="/project_documents.html">[Main Page]</a></li>
+            <li><a href="/mission_statement.html">Mission Statement</a></li>
+            <li><a href="/analytical_priorities.html">Analytical Priorities</a></li>
+            <li><a href="/project_design.html">Project Design</a></li>
+            <li><a href="/collaboration.html">Collaboration</a></li>
+            <li><a href="/acknowledgments.html">Acknowledgments</a></li>
+          </ul>
+        </div>
+        <h2><a href="/contributors.html">Contributors</a></h2>
+        <h2><a id="overlay-last" href="/site_map.html">Site Map</a></h2>
+      </div>
+    </section>
 </div>
 
 

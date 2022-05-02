@@ -13,7 +13,13 @@
         </span>
 
         <span class="button-container" id="button-container">
-            <button class="hamburger-menu desktop" title="Menu" aria-label="Show menu" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></button>
+
+            <div class="tooltip-container">
+                <button type="button" class="hamburger-menu desktop" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="description" data-tooltip-trigger>
+                    <i class="fa fa-bars" aria="hidden"></i>
+                </button>
+                <p id="menu-1" role="tooltip" class="hidden">Menu</p>
+            </div>
 
             <button class="close desktop" title="Close" aria-label="Close menu" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
 

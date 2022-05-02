@@ -1,3 +1,5 @@
+// Tooltips adapted from https://github.com/ZoeBijl/apg-tooltip
+
 class Tooltip {
   constructor(element) {
     this.container = element

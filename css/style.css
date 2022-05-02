@@ -283,6 +283,16 @@ section section:not(:first-of-type) h4{
 	display: flex;
 	justify-content: center;
 }
+@media only screen and (min-width: 992px){
+	.toc{
+		margin: 1rem auto 4rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.toc{
+		margin: 2rem auto 5rem;
+	}
+}
 .toc ol:before{
 	content:attr(aria-label);
 	font-family: 'Merriweather', serif;
@@ -293,21 +303,21 @@ section section:not(:first-of-type) h4{
 	border-bottom: 4px solid #e3b382;
 }
 .toc ol{
-	padding: 1.5rem 5rem;
+	padding: 1.5rem 5rem 2rem;
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 }
-@media only screen and (min-width: 992px){
-	.toc{
-		margin: 1rem auto 4rem;
+@media only screen and (min-width: 480px){
+	.toc ol{
+		padding: 1.5rem 7rem 2rem;
 	}
 }
-@media only screen and (min-width: 1200px){
-	.toc{
-		margin: 2rem auto 5rem;
+@media only screen and (min-width: 768px){
+	.toc ol{
+		padding: 2rem 9rem 3rem;
 	}
 }
 

@@ -85,6 +85,17 @@ also see 2.9 for manuscript colors
 (dark gray) #4d5b51; (contrast checked)
 */
 
+/* 
+>>z-index 
+.tooltip-container - z-index: 50;
+#skip a - z-index: 150;
+.overlay - z-index: 100;
+#topButton - z-index: 99;
+.youtube .play-button/.screenshot .play-button - z-index: 2;
+.youtube iframe - z-index: 3;
+.skipcontrols a/.screenshot mark - z-index: 10;
+*/
+
 /*--------------------------------------*/
 
 /** 1.0 Main CSS **/
@@ -721,8 +732,10 @@ a.action-button i{
   --tooltip-thingy-height: .5em;
 }
 .tooltip-container{
+	line-height: 0;
   position: relative;
   display: inline-block;
+	z-index: 50;
 }
 /* The arrow (or tooltip thingy) that connects the tooltip to the container */
 .tooltip-container::before{
@@ -763,6 +776,7 @@ a.action-button i{
 [role="tooltip"]{
   font-size: 1rem;
 	text-align: center;
+	line-height: 1.875rem;
   color: white;
   background: #325359;
 	box-shadow: 0 1px 2px #325359;
@@ -775,7 +789,6 @@ a.action-button i{
   top: calc(100% + calc(var(--tooltip-thingy-height) * 2));
   left: 50%;
   transform: translateX(-50%);
-	z-index: 50;
 }
 /* Hides the tooltip */
 /* .hidden {

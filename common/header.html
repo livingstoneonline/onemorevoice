@@ -13,14 +13,19 @@
         </span>
 
         <span class="button-container" id="button-container">
-            <div class="tooltip-container menu-icon">
-                <button type="button" class="hamburger-menu desktop" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="menu-1" data-tooltip-trigger>
-                    <i class="fa fa-bars" aria="hidden"></i>
+            <div class="tooltip-container menu-icon desktop">
+                <button type="button" class="hamburger-menu" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="menu-1" data-tooltip-trigger>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <p id="menu-1" role="tooltip" class="hidden">Menu</p>
             </div>
 
-            <button class="close desktop" aria-label="Close menu" onclick="closeNav()" tabindex="0"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <div class="tooltip-container close-icon desktop">
+                <button type="button" class="close" onclick="closeNav()" tabindex="0" aria-label="Close menu" aria-describedby="close-1" data-tooltip-trigger>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <p id="close-1" role="tooltip" class="hidden">Close</p>
+            </div>
 
             <span class="tooltip-container home-icon">
                 <a class="external home" href="/" aria-label="Go to Home Page" aria-describedby="home-icon" data-tooltip-trigger>
@@ -64,19 +69,24 @@
             <span class="tooltip-container translate-widget">
                 <div class="translate" aria-describedby="translate-widget" data-tooltip-trigger>
                     <span><img width="28" height="28"  src="/img/google.png" aria-label="Google icon" title="Google" alt="Google icon"/></span>
-                    <div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>
+                    <div id="google_translate_element"></div>
                 </div>
                 <span id="translate-widget" role="tooltip" class="hidden">Google Translate.<br/>Machine generated.<br/>Use with care.</span>
             </span>
 
-            <div class="tooltip-container menu-icon">
-                <button type="button" class="hamburger-menu desktop" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="menu-2" data-tooltip-trigger>
-                    <i class="fa fa-bars" aria="hidden"></i>
+            <div class="tooltip-container menu-icon mobile">
+                <button type="button" class="hamburger-menu" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="menu-2" data-tooltip-trigger>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <p id="menu-2" role="tooltip" class="hidden">Menu</p>
             </div>
 
-            <button class="close mobile" title="Close" aria-label="Close menu" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
+            <div class="tooltip-container close-icon mobile">
+                <button type="button" class="close" onclick="closeNav()" tabindex="0" aria-label="Close menu" aria-describedby="close-2" data-tooltip-trigger>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <p id="close-2" role="tooltip" class="hidden">Close</p>
+            </div>
         </span>
      </nav>
   <!-- </span> -->

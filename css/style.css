@@ -505,6 +505,13 @@ main{
 		position: inherit;
 	}
 }
+.caption-icon{
+	margin: 0;
+	bottom: 1rem;
+	right: .75rem;
+	left: inherit;
+	position: absolute;
+}
 .caption{
 	font-size: 1.3rem;
 	font-weight: normal;
@@ -515,12 +522,7 @@ main{
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	margin: 0;
 	padding: 4px 6px 2px;
-	bottom: .5rem;
-	right: .5rem;
-	left: inherit;
-	position: absolute;
 }
 @media screen and (min-width: 480px){
 	 .caption{
@@ -529,38 +531,42 @@ main{
 	}
 }
 @media screen and (min-width: 768px){
+	.caption-icon{
+		margin: 0;
+		bottom: 1rem;
+		right: .5rem;
+	}
 	 .caption{
 		font-size: 1.7rem;
 		padding: 6px 8px 4px;
 	}
 }
 @media screen and (min-width: 992px){
-		.page-details .caption{
-		bottom: 1.5rem;
-		right: 1.5rem;
+	.caption-icon{
+		margin: 0;
+		bottom: 1rem;
+		right: 1rem;
+	}
+	.page-details .caption-icon{
+	bottom: 1.5rem;
+	right: 1.5rem;
 	}
 }
- .caption:hover,
- .caption:focus-within{
-	color: #fff;
-	background: #4d5b51;
-	border: 2px solid #E7E9E7;
-}
-@media only screen and (min-width: 992px){
-	 .caption:hover,
-	 .caption:focus-within{
-		color: #fff;
-		background: #4d5b51;
-		border: 2px solid #E7E9E7;
-	}
+.caption-icon a:hover,
+.caption-icon a:focus{
+	outline: none;
 }
 .caption i{
 	color: #4d5b51;
 }
-.caption:hover i,
-.caption:focus-within i{
+.caption-icon:hover .caption,
+.caption-icon:focus-within .caption{
+	background: #4d5b51;
+	border: 2px solid #E7E9E7;
+}
+.caption-icon:hover .caption i,
+.caption-icon:focus-within .caption i{
 	color: #fff;
-	outline: none;
 }
 
 
@@ -738,6 +744,9 @@ a.action-button i{
 }
 .logo-container .tooltip-container{
 	display: block;
+}
+.caption-icon .tooltip-container{
+	z-index: 99;
 }
 /* The arrow (or tooltip thingy) that connects the tooltip to the container */
 .tooltip-container::before{

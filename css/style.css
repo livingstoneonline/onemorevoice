@@ -88,9 +88,10 @@ also see 2.9 for manuscript colors
 /* 
 >>z-index 
 .tooltip-container - z-index: 101;
+.caption-icon .tooltip-container:hover/.caption-icon .tooltip-container:focus-within - z-index: 99;
 #skip a - z-index: 150;
 .overlay - z-index: 100;
-#topButton - z-index: 99;
+#topButton - z-index: 75;
 .youtube .play-button/.screenshot .play-button - z-index: 2;
 .youtube iframe - z-index: 3;
 .skipcontrols a/.screenshot mark - z-index: 10;
@@ -548,7 +549,7 @@ main{
 		right: 1rem;
 	}
 	.page-details .caption-icon{
-	bottom: 1.5rem;
+	bottom: 2rem;
 	right: 1.5rem;
 	}
 }
@@ -625,7 +626,7 @@ a:hover,
 a:focus{
 	color: #212119;
 	background: #E7E9E7;
-	outline: 2px solid #e3b382;
+	outline: 3px solid #e3b382;
 }
 
 
@@ -740,12 +741,16 @@ a.action-button i{
 .tooltip-container{
 	line-height: 0;
   position: relative;
+}
+.tooltip-container:hover,
+.tooltip-container:focus-within{
 	z-index: 101;
 }
 .logo-container .tooltip-container{
 	display: block;
 }
-.caption-icon .tooltip-container{
+.caption-icon .tooltip-container:hover,
+.caption-icon .tooltip-container:focus-within{
 	z-index: 99;
 }
 /* The arrow (or tooltip thingy) that connects the tooltip to the container */
@@ -1604,7 +1609,7 @@ footer p .site-detail:last-child:after{
 	position: fixed;
 	top: .5rem;
 	right: .5rem;
-	z-index: 99;
+	z-index: 75;
 	opacity: .96;
 	display: none;
 	visibility: hidden;

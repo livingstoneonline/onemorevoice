@@ -2419,7 +2419,7 @@ section.archival-text .no-image .content{
 
 /* 1.15 Page Specific Coding */
 
-/* The following is used on project_design.html */
+/* The following is used on project_design.html */ /* Vetted */
 .keycap{
 	font-size: .95em;
 	font-weight: bold;
@@ -2435,6 +2435,29 @@ section.archival-text .no-image .content{
 	margin: 1px;
 	padding: 0 2px;
 	min-width: 17px;
+}
+
+/* The following items are used on the acknowledgments.html page. */ /* Vetted */
+ul.acknowledgments{
+	padding-left: 0;
+}
+@media only screen and (min-width: 480px){
+	ul.acknowledgments{
+		padding-left: 1.2em;
+	}
+}
+.acknowledgments li{
+	list-style: none;
+	margin-bottom: .6em;
+	padding-left: 0;
+}
+
+/* The following items are used on the site_map.html page. */  /* Vetted */
+.site-map ol li:first-child{
+	margin-top: .6em;
+}
+.site-map li{
+	margin-bottom: .6em;
 }
 
 /* The following items are used on the coding_guidelines.html page. */
@@ -2465,33 +2488,6 @@ ol.primary-historical li{
 }
 .bibliography:before{
 	content: '➥ ';
-}
-
-/* The following items are used on the acknowledgments.html page. */ /* Vetted */
-ul.acknowledgments{
-	padding-left: 0;
-}
-@media only screen and (min-width: 480px){
-	ul.acknowledgments{
-		padding-left: 1.2em;
-	}
-}
-.acknowledgments li{
-	list-style: none;
-	margin-bottom: .6em;
-	padding-left: 0;
-}
-
-/* The following items are used on the site_map.html page. */
-.site-map{
-	text-align: left;
-	display: inline-block;
-}
-.site-map ol li:first-child{
-	margin-top: .6em;
-}
-.site-map li{
-	margin-bottom: .6em;
 }
 
 /* The following is used in essays to create small text */

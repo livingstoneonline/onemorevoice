@@ -740,11 +740,12 @@ a.action-button i{
 /* The arrow (or tooltip thingy) that connects the tooltip to the container */
 .tooltip-container::before{
   border: var(--tooltip-thingy-height) solid transparent;
-  border-bottom-color: #325359;
+  border-bottom-color: #F1EACA;
 	position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+	z-index: 101;
 }
 /* This allows users to move their cursor from the button to the tooltip */
 .tooltip-container::after{
@@ -766,7 +767,7 @@ a.action-button i{
   bottom: 100%;
 }
 .tooltip-container.top::before{
-  border-top-color: #325359;
+  border-top-color: #F1EACA;
   border-bottom-color: transparent;
 }
 .tooltip-container.top [role="tooltip"]{
@@ -777,8 +778,8 @@ a.action-button i{
   font-size: 1rem;
 	text-align: center;
 	line-height: 1.5rem;
-  color: white;
-  background: #325359;
+  color: #212119;
+	background: #F1EACA;
 	-webkit-box-shadow: #697c6f 0px 3px 10px 0px;
 	-moz-box-shadow: #697c6f 0px 3px 10px 0px;
 	box-shadow: #697c6f 0px 3px 10px 0px;

@@ -534,7 +534,7 @@ main{
 		padding: 6px 8px 4px;
 	}
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px){
 		.page-details .caption{
 		bottom: 1.5rem;
 		right: 1.5rem;
@@ -794,11 +794,11 @@ a.action-button i{
   transform: translateX(-50%);
 }
 /* Hides the tooltip */
-/* .hidden {
+/* .hidden{
   display: none;
 } */
 /* Removes the emoji container from the pointer event targets. If removed the globalPointerDown() function will break when you click/tap exactly on the emoji. */
-[aria-hidden="true"] {
+[aria-hidden="true"]{
   pointer-events: none;
 }
 
@@ -908,12 +908,12 @@ nav .logo-container{
 	margin: 0;
 }
 @media only screen and (min-width: 480px){
-	nav .logo-container {
+	nav .logo-container{
     margin-right: calc(100vw * .035);
 	}
 }
 @media only screen and (min-width: 624px){
-	nav .logo-container {
+	nav .logo-container{
     margin: 0;
 	}
 }
@@ -1453,7 +1453,7 @@ nav .close:focus{
 .overlay h2 + div{
   background: inherit;
 }
-.overlay div .hidden { 
+.overlay div .hidden{ 
   display: none;
 }
 .accordion-panel{
@@ -1462,7 +1462,7 @@ nav .close:focus{
   border-right: 1px solid transparent;
 }
 .accordion-panel:hover,
-.accordion-panel:focus {
+.accordion-panel:focus{
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
@@ -1701,13 +1701,13 @@ header img{
 }
 /* Adapted from https://stackoverflow.com/a/55557988 */
 @media only screen and (min-width: 768px){
-	.double-image {
+	.double-image{
 		margin-left: -10px;
 		height: 470px;
 		display: flex;
 		justify-content: center;
 	}
-	.double-image > img {
+	.double-image > img{
 		height: 100%;
 		width: auto;
 	}
@@ -1719,12 +1719,12 @@ header img{
 	}
 }
 @media only screen and (min-width: 992px){
-	.double-image {
+	.double-image{
 		height: 454px;
 	}
 }
 @media only screen and (min-width: 1015px){
-	.double-image {
+	.double-image{
 		height: 470px;
 	}
 }
@@ -2512,7 +2512,7 @@ ul.acknowledgments{
 .half{
 	width: 50%;
 }
-.hidden {
+.hidden{
   display: none;
 }
 .highlight{
@@ -2564,7 +2564,7 @@ ol li ol{
 	}
 }
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-hr {
+hr{
   /* display: block; */
   height: 1px;
   border: 0;
@@ -2708,7 +2708,7 @@ nav.overlay-nav .button-container{
   width: 100%;
 }
 
-nav .logo-container {
+nav .logo-container{
   margin-right: 2rem;
 } */
 
@@ -2716,7 +2716,7 @@ nav .logo-container {
 
 
 /* @media only screen and (min-width: 480px){
-	nav .logo-container {
+	nav .logo-container{
     margin-right: calc(100vw * .035);
 	}
 	header nav{

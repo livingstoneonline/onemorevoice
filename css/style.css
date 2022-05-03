@@ -1044,6 +1044,10 @@ nav .logo-container a:focus h1{
 .translate-widget:focus-within{
 	outline: 2px solid white;
 }
+.translate-widget:hover .hidden,
+.translate-widget:focus-within .hidden{
+	display: block;
+}
 .translate span{
 	border: 2px solid transparent;
 	padding: 0 6px;
@@ -1345,7 +1349,6 @@ nav .menu-icon:focus-within .fa-bars,
 nav .close-icon:hover .fa-times,
 nav .close-icon:focus-within .fa-times{
 	color: #212119;
-	transition: .2s;
 }
 nav .menu-icon:hover,
 nav .menu-icon:focus-within,
@@ -1353,7 +1356,6 @@ nav .close-icon:hover,
 nav .close-icon:focus-within
 {
 	background: #fff;
-	transition: .2s;
 }
 
 

@@ -6,10 +6,13 @@
 
     <nav id="main-nav">
         <span class="logo-container">
-            <a href="/index.html">
-                <img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
-                <h1 id="logo">One More Voice</h1>
-            </a>
+            <span class="tooltip-container">
+                <a href="/index.html" aria-label="Go to Home Page" aria-describedby="logo-icon" data-tooltip-trigger>
+                    <img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+                    <h1 id="logo">One More Voice</h1>
+                </a>
+                <span id="logo-icon" role="tooltip" class="hidden">Home Page</span>
+            </span>
         </span>
 
         <span class="button-container" id="button-container">

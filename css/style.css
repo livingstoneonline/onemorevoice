@@ -87,7 +87,7 @@ also see 2.9 for manuscript colors
 
 /* 
 >>z-index 
-.tooltip-container - z-index: 50;
+.tooltip-container - z-index: 101;
 #skip a - z-index: 150;
 .overlay - z-index: 100;
 #topButton - z-index: 99;
@@ -735,7 +735,7 @@ a.action-button i{
 	line-height: 0;
   position: relative;
   display: inline-block;
-	z-index: 50;
+	z-index: 101;
 }
 /* The arrow (or tooltip thingy) that connects the tooltip to the container */
 .tooltip-container::before{

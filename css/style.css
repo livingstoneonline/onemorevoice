@@ -736,6 +736,9 @@ a.action-button i{
   position: relative;
 	z-index: 101;
 }
+.logo-container .tooltip-container{
+	display: block;
+}
 /* The arrow (or tooltip thingy) that connects the tooltip to the container */
 .tooltip-container::before{
   border: var(--tooltip-thingy-height) solid transparent;

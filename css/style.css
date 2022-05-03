@@ -1054,6 +1054,10 @@ nav .logo-container a:focus h1{
 #google_translate_element > div > span > a > img{
 	width: 3.5rem;
 }
+div.skiptranslate.goog-te-gadget{
+	background: #212119 !important;
+	color: #fff !important;
+}
 #google_translate_element div.goog-te-gadget .goog-te-combo{
 	font-size: .95rem;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -1072,6 +1076,7 @@ nav .logo-container a:focus h1{
 div.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
+	color: #212119;
 	padding-left: 4px;
 	line-height: 2.5em;
 	margin-top: .2rem;

@@ -21,36 +21,54 @@
                 <p id="menu-1" role="tooltip" class="hidden">Menu</p>
             </div>
 
-            <button class="close desktop" title="Close" aria-label="Close menu" onclick="closeNav()" tabindex="0"><i class="fa fa-times"></i></button>
+            <button class="close desktop" aria-label="Close menu" onclick="closeNav()" tabindex="0"><i class="fa fa-times" aria-hidden="true"></i></button>
 
-            <a class="external home" href="/" aria-label="Go to Home Page">
-                <i class="fa fa-home" aria-label="Home Page icon" title="Home Page" aria-hidden="true"></i>
-            </a>
+            <span class="tooltip-container">
+                <a class="external home" href="/" aria-label="Go to Home Page" aria-describedby="home-icon" data-tooltip-trigger>
+                    <i class="fa fa-home" aria-label="Home Page icon" aria-hidden="true"></i>
+                </a>
+                <span id="home-icon" role="tooltip" class="hidden">Home</span>
+            </span>
 
-            <a class="external" href="/site_map.html" aria-label="Go to Site Map">
-                <i class="fa fa-map-marker" aria-label="Site Map icon" title="Site Map" aria-hidden="true"></i>
-            </a>
+            <span class="tooltip-container">
+                <a class="external" href="/site_map.html" aria-label="Go to Site Map" aria-describedby="sitemap-icon" data-tooltip-trigger>
+                    <i class="fa fa-map-marker" aria-label="Site Map icon" aria-hidden="true"></i>
+                </a>
+                <span id="sitemap-icon" role="tooltip" class="hidden">Site Map</span>
+            </span>
 
-            <a class="external" href="mailto:awisnicki@yahoo.com" aria-label="Go to Email">
-                <i class="fas fa-envelope" aria-label="Email icon" title="Contact/Email"  aria-hidden="true"></i>
-            </a>
+            <span class="tooltip-container">
+                <a class="external" href="mailto:awisnicki@yahoo.com" aria-label="Go to Email (external client)" aria-describedby="email-icon" data-tooltip-trigger>
+                    <i class="fas fa-envelope" aria-label="Email icon" aria-hidden="true"></i>
+                </a>
+                <span id="email-icon" role="tooltip" class="hidden">Email<br/>(external client)</span>
+            </span>
             
-            <a class="external" href="https://github.com/livingstoneonline/onemorevoice/" aria-label="Go to GitHub Repo (external)">
-                <i class="fa-brands fa-github-alt" aria-label="GitHub icon" title="GitHub" aria-hidden="true"></i>
-            </a>
+            <span class="tooltip-container">
+                <a class="external" href="https://github.com/livingstoneonline/onemorevoice/" aria-label="Go to GitHub Repo (external link)" aria-describedby="github-icon" data-tooltip-trigger>
+                    <i class="fa-brands fa-github-alt" aria-label="GitHub icon" aria-hidden="true"></i>
+                </a>
+                <span id="github-icon" role="tooltip" class="hidden">GitHub<br/>(external link)</span>
+            </span>
 
-            <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice" aria-label="Go to Zotero Library (external)">
-                <i class="fa fa-zotero" aria-label="Zotero icon" title="Zotero"  aria-hidden="true"></i>
-            </a>
+            <span class="tooltip-container">
+                <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice" aria-label="Go to Zotero Library (external link)" aria-describedby="zotero-icon" data-tooltip-trigger>
+                    <i class="fa fa-zotero" aria-label="Zotero icon" aria-hidden="true"></i>
+                </a>
+                <span id="zotero-icon" role="tooltip" class="hidden">Zotero<br/>(external link)</span>
+            </span>
 
             <!-- <a class="external" href="https://livingstoneonline.wordpress.com/" aria-label="Go to Wordpress Blog"><i class="fa-brands fa-wordpress" title="Wordpress" aria-label="Wordpress icon" aria-hidden="true"></i></a> -->
 
             <!-- <a class="external" href=""><i class="fa fa-search" title="Search" aria-label="Search icon" aria-hidden="true"></i></a> -->
 
-            <div class="translate">
-                <span><img width="28" height="28"  src="/img/google.png" aria-label="Google icon" title="Google" alt="Google icon"/></span>
-                <div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>
-            </div>
+            <span class="tooltip-container">
+                <div class="translate" aria-describedby="translate-widget" data-tooltip-trigger>
+                    <span><img width="28" height="28"  src="/img/google.png" aria-label="Google icon" title="Google" alt="Google icon"/></span>
+                    <div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div>
+                </div>
+                <span id="translate-widget" role="tooltip" class="hidden">Google Translate</span>
+            </span>
 
             <button class="hamburger-menu mobile" title="Menu" aria-label="Show menu" onclick="openNav()" tabindex="0"><i class="fa fa-bars"></i></button>
 

@@ -244,13 +244,26 @@ h3{
 		font-size: 1.5rem;
 	}
 }
-section article section:not(:first-child) h3{
-	margin-top: 3rem;
+article section:not(:first-child) > h3{
+	margin-top: 3.5rem;
+}
+@media only screen and (min-width: 480px){
+	article section:not(:first-child) > h3{
+		margin-top: 4rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	article section:not(:first-child) > h3{
+		margin-top: 4.5rem;
+	}
 }
 @media only screen and (min-width: 992px){
-	section article section:not(:first-child) h3{
-		margin-top: 4rem;
+	article section:not(:first-child) > h3{
+		margin-top: 5rem;
 	}	
+}
+.toc + section h3:first-child{
+	margin-top: 3rem;
 }
 .credits h3{
 	font-size: 1.3rem;
@@ -315,7 +328,7 @@ section section:not(:first-of-type) h4{
 	border-bottom: 4px solid #e3b382;
 }
 .toc ol{
-	padding: 1.5rem 5rem 2rem;
+	padding: 1.5rem 3rem 2rem;
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
 	border-radius: 8px;
@@ -1484,6 +1497,7 @@ nav .close-icon:focus-within
 }
 .overlay .text-container h2:nth-child(1),
 .overlay .text-container h2:nth-child(3),
+.overlay .text-container h2:nth-child(4),
 .overlay ul li{
 	border-bottom: 1px solid #ededed;
 }
@@ -2463,6 +2477,26 @@ ul.acknowledgments{
 	margin-bottom: .6em;
 }
 
+/* The following items are used on the bibliography.html page. */  /* Vetted */
+.primary-historical{
+	list-style: none;
+	margin: 0;
+	padding: 0 0 1em 0;
+}
+ol.primary-historical{
+	padding-bottom: 0;
+}
+article section section ol.primary-historical:last-child{
+	padding: 0;
+}
+.primary-historical li{
+	padding-bottom: 1em;
+}
+.primary-historical li:last-child,
+li.primary-historical:last-child{
+	padding-bottom: 0;
+}
+
 /* The following items are used on the coding_guidelines.html page. */
 .tag-blue{
 	font-size: .9em;
@@ -2473,24 +2507,6 @@ ul.acknowledgments{
 	font-size: .9em;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #902D27;
-}
-
-/* The following items are used on the bibliography.html page. */
-.primary-historical{
-	list-style: none;
-	margin: 0;
-	padding: 0 0 1em 0;
-}
-ol.primary-historical li{
-	padding-bottom: 1em;
-}
-.bibliography{
-	font-size: .95em;
-	font-weight: 300;
-	font-style: italic;
-}
-.bibliography:before{
-	content: '➥ ';
 }
 
 /* The following is used in essays to create small text */

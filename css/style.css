@@ -340,7 +340,7 @@ section section:not(:first-of-type) h4{
 	border-bottom: 4px solid #e3b382;
 }
 .materials .toc ol:before{
-	border-bottom: 4px solid #8db7bf;
+	border-bottom: 4px solid #dcd3a6;
 }
 .toc ol{
 	padding: 1.5rem 3rem 2rem;
@@ -685,15 +685,18 @@ a.action-button:visited{
 	padding: 12px 30px;
 	align-self: center;
 }
-.action-button.primary{
+.action-button.primary,
+.home .action-button.primary{
 	color: #212119;
 	background: #F1EACA;
 }
-.action-button.secondary{
+.action-button.secondary,
+.home .action-button.secondary{
 	color: #212119;
 	background: #EECFA7;
 }
-.action-button.tertiary{
+.action-button.tertiary,
+.home .action-button.tertiary{
 	color: #212119;
 	background: #aeced9;
 }

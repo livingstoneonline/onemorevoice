@@ -12,32 +12,28 @@ Table of Contents
 ** Main Site Colors **
 
 ** 1.0. Main CSS **
-1.1. Principal Components 
-1.2. Main Sections and Related
-1.3. Headings and Related
-1.4. Main Images and Related
-1.5. Links
-1.6. Fonts
-1.7. Navigation 
-1.7.1. Main Navigation
-1.7.2. Fallback Navigation
-1.7.3. Overlay
-1.8. Footer & Fat Footer
-1.9. Sidebar
-1.10.1. Download Page/Image Button
-1.10.2. Google Translate
-1.11. Archival Texts
-1.12. Object Gallery
-1.13. Book-Length Works
-1.14. Motion Pictures 
-1.15. Page-Specific Coding
-1.16. Essays
-1.17. Formatting
-1.18. Lists and Lines
-1.19. Scroll to Top Button
+Principal Components 
+Headers
+Page Menus
+Main and Aside
+Home Top
+Essay Top
+Main Image Caption Button
+Home and Essay Bottom
+Links
+Action Buttons
+Tooltips
+Header and Nav
+1. Skip Nav
+2. Logo
+3. Google Translate
+4. Font-Awesome Buttons
+5. Hamburger Menu and Close
+Overlay
+Footer
+Scroll to Top Button
+Random
 
-Appendix
-Alternative [id]:target Coding 
 */
 
 /*--------------------------------------*/
@@ -72,8 +68,8 @@ also see 2.9 for manuscript colors
 >>new colors
 (white) #fff
 (black) #212119;
-(light blue) #c2d9db;
-(dark blue) #325359; (contrast checked)
+(light blue) #8db7bf;
+(dark blue) #305056; (contrast checked)
 (yellow) #DFD7AC;
 (orange) #DA9C5D;
 (dark brown) #7d4d1c; (contrast checked)
@@ -184,7 +180,7 @@ h2{
 	font-family: 'Merriweather', serif;
 	font-style: italic;
 	line-height: 3rem;
-	color: #325359;
+	color: #305056;
 	border-left: 12px solid #8db7bf;
 	margin: .5rem 0 1.5rem;
 	padding: 0 0 0 1rem;
@@ -229,7 +225,7 @@ h3{
 	font-size: 1.3rem;
 	font-family: 'Merriweather', serif;
 	text-align: center;
-	color: #325359;
+	color: #305056;
 	border-bottom: 8px solid #e3b382;
 	margin: 1.5rem 0;
 	padding: 0 0 1rem 0;
@@ -322,7 +318,7 @@ section section:not(:first-of-type) h4{
 	content:attr(aria-label);
 	font-family: 'Merriweather', serif;
 	font-weight: 600;
-	color: #325359;
+	color: #305056;
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
 	border-bottom: 4px solid #e3b382;
@@ -632,7 +628,7 @@ main{
 }
 a,
 a:visited{
-	color: #325359;
+	color: #305056;
 	background: transparent;
 }
 a:hover,
@@ -654,7 +650,7 @@ a.action-button:visited{
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
-	color: #325359;
+	color: #305056;
 	background: #fff;
 	-webkit-box-shadow: #697c6f 0px 3px 10px 0px;
 	-moz-box-shadow: #697c6f 0px 3px 10px 0px;
@@ -682,7 +678,7 @@ a.action-button:visited{
 a.action-button:hover,
 a.action-button:focus{
 	color: #fff;
-	background: #325359;
+	background: #305056;
 	outline: none;
 }
 a.action-button i{
@@ -832,7 +828,7 @@ a.action-button i{
 }
 
 
-/* Header & Nav */
+/* Header and Nav */
 
 header{
 	background: #212119;
@@ -892,7 +888,7 @@ header nav button,
 	font-weight: 600;
 	text-decoration: underline;
 	color: #fff;
-	background: #325359;
+	background: #305056;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	border-bottom-right-radius: 10px;
@@ -1032,7 +1028,7 @@ nav .logo-container a:focus h1{
 }
 .translate{
 	padding-right: 5px;
-  /* max-width: 170px; */
+  width: 198px;
   height: 32px;
 	overflow: hidden;
 	display: none;
@@ -1556,7 +1552,7 @@ footer{
 	font-weight: 400;
 	text-align: center;
 	color: #fff;
-	background: #325359;
+	background: #305056;
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1600px;
@@ -1666,17 +1662,17 @@ footer p .site-detail:last-child:after{
 	border: 2px solid transparent;
 }
 
-/************* End of Vetted CSS ************/
-
-/* Remove extra code from Overlay, check colors, "em" */
 
 /* Random */
 aside.text-box{
-	background: #e3e3e3;
-	border-left: 5px #902D27 solid;
+	background: #E7E9E7;
+	border-left: 6px solid #8db7bf;
 	padding: 1em;
 }
 
+/************* End of Vetted CSS ************/
+
+/* Remove extra code from Overlay, check colors, "em" */
 
 /* 1.3 Headings and Related */
 
@@ -1716,7 +1712,7 @@ h3.subsection{
 	font-family: 'Merriweather', serif;
   font-weight: normal;
   font-variant: normal;
-	color: #325359;
+	color: #305056;
 }
 .contributors section:first-of-type h3{
 	margin-top: 1em;
@@ -2581,7 +2577,7 @@ li.primary-historical:last-child{
   text-align: right;
 }
 .site-blue{
-	color: #325359;
+	color: #305056;
 }
 .site-red{
 	color: #7d4d1c;

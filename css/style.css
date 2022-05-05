@@ -33,6 +33,7 @@ Header and Nav
 Overlay
 Footer
 Scroll to Top Button
+Lists and Lines
 Random
 Visual Materials Object Gallery
 
@@ -213,17 +214,18 @@ body{
 /* Headers */
 
 h2{
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
 	line-height: 3rem;
 	color: #305056;
-	margin: .5rem 0 1.5rem;
-	padding: 0 0 0 1rem;
+	margin: .5rem 0 1.55rem;
+	padding: 0 0 0 .75rem;
 }
 @media only screen and (min-width: 480px){
 	h2{
 		font-size: 2.1rem;
+		padding: 0 0 0 1rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -303,9 +305,9 @@ article section:not(:first-child) > h3{
 	border-bottom: 6px solid #8db7bf;
 	margin-top: 3rem;
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 768px){
 	.credits h3{
-		margin-top: 4rem;
+		margin-top: 3rem;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -338,7 +340,6 @@ section section:not(:first-of-type) h4{
 
 /* Page Menus */
 
-/* Heading adapted from https://stackoverflow.com/a/20478913 */
 .toc{
 	margin: 0 auto 2rem;
 	padding: 0 0 1rem;
@@ -346,17 +347,28 @@ section section:not(:first-of-type) h4{
   display: flex;
 	justify-content: center;
 }
+@media only screen and (min-width: 480px){
+	.toc{
+		margin: 1rem 2rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.toc{
+		margin: 1rem 3rem;
+	}
+}
 @media only screen and (min-width: 992px){
 	.toc{
-		margin: 1rem auto 4rem;
+		margin: 1rem 4rem;
 	}
 }
 @media only screen and (min-width: 1200px){
 	.toc{
-		margin: 2rem auto 5rem;
+		margin: 2rem 5rem;
 	}
 }
-.toc ol:before{
+/* Heading adapted from https://stackoverflow.com/a/20478913 */
+.toc ol:first-child:before{
 	content:attr(aria-label);
 	font-family: 'Merriweather', serif;
 	font-weight: 600;
@@ -364,7 +376,7 @@ section section:not(:first-of-type) h4{
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
 }
-.toc ol{
+.toc ol:first-child{
 	padding: 1.5rem 3rem 2rem;
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
@@ -373,13 +385,23 @@ section section:not(:first-of-type) h4{
 	-moz-border-radius: 8px;
 }
 @media only screen and (min-width: 480px){
-	.toc ol{
-		padding: 1.5rem 7rem 2rem;
+	.toc ol:first-child{
+		padding: 1.5rem 4rem 2rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.toc ol{
-		padding: 2rem 9rem 3rem;
+	.toc ol:first-child{
+		padding: 1.5rem 5rem 2rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.toc ol:first-child{
+		padding: 2rem 6rem 3rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.toc ol:first-child{
+		padding: 2rem 7rem 3rem;
 	}
 }
 
@@ -511,7 +533,7 @@ main{
 }
 @media only screen and (min-width: 768px){
 	.essay .page-details div{
-		margin: 2rem 0 0;
+		margin: 3rem 0 0;
 		padding: 0 2rem;
 	}
 	.essay .page-details.vertical figure{
@@ -604,7 +626,7 @@ main{
 		right: 1rem;
 	}
 	.page-details .caption-icon{
-	bottom: 2rem;
+	bottom: 3rem;
 	right: 1.5rem;
 	}
 }
@@ -1103,7 +1125,7 @@ nav .logo-container a:focus h1{
 }
 .translate{
 	padding-right: 5px;
-  width: 198px;
+  width: 203px;
   height: 32px;
 	overflow: hidden;
 	display: none;
@@ -1116,7 +1138,7 @@ nav .logo-container a:focus h1{
 }
 @media only screen and (min-width: 480px){
 	.translate-widget{
-		margin: .4rem .3rem .6em;
+		margin: .6rem .3rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -1760,6 +1782,50 @@ aside.text-box{
 }
 
 
+/* Lists and Lines */
+
+ol,
+ul{
+	margin: 0;
+	padding: 0 0 0 1.4rem;
+}
+.concept-list li{
+	padding-bottom: 1rem;
+}
+.concept-list li:last-child{
+	padding-bottom: 0;
+}
+ol li ol{
+	padding: 0 0 0 .6rem;
+}
+@media only screen and (min-width: 768px){
+	ol li ol{
+		padding-left: 1.2rem;
+	}
+}
+/* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+hr{
+  /* display: block; */
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #bdc2bd;
+  margin: 1rem;
+  padding: 0;
+}
+.title-hr{
+	margin: 2rem 0;
+}
+hr.section-divider{
+	width: 50%;
+}
+@media only screen and (min-width: 992px){
+	hr.section-divider{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
 /* Visual Materials Object Gallery */
 
 .item-details{
@@ -1918,43 +1984,17 @@ header img{
 	background: #e6e6e6;
 	border: 1px solid #e3e3e3;
 }
-/* used on collections.html for images after header image */
-.illustration{
-	display: block;
-	margin: 0 auto;
+/* Also see https://stackoverflow.com/a/55557988 for the following */
+.double-image{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
 }
-/* used on collections.html for two vertical images side by side */
-.double-image img{
-	margin: 0 auto 20px auto;
-}
-/* Adapted from https://stackoverflow.com/a/55557988 */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
 	.double-image{
-		margin-left: -10px;
-		height: 470px;
-		display: -webkit-flex;
-  	display: flex;
-		justify-content: center;
-	}
-	.double-image > img{
-		height: 100%;
-		width: auto;
-	}
-	.double-image img:first-child{
-		margin: 0;
-	}
-	.double-image img:nth-child(2){
-		margin: 0 0 0 10px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.double-image{
-		height: 454px;
-	}
-}
-@media only screen and (min-width: 1015px){
-	.double-image{
-		height: 470px;
+		flex-direction: row;
 	}
 }
 a img{
@@ -1988,7 +2028,7 @@ img + p.caption-text,
 	display: none;
 	visibility: hidden;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 480px){
 	.top-bottom{
 		display: none;
 		visibility: hidden;
@@ -1998,7 +2038,7 @@ img + p.caption-text,
 		visibility: visible;
 	}
 }
-/* Used for individual visual materials items */
+/* Used for individual visual materials archival items */
 .image-container{
 	padding: .5em;
 }
@@ -2684,48 +2724,6 @@ strong{
 .underline{
 	text-decoration: underline;
 }
-
-
-/* 1.18. Lists and Lines */
-
-ol,
-ul{
-	margin: 0;
-	padding: 0 0 0 1.4rem;
-}
-ol li ol{
-	padding: 0 0 0 .6rem;
-}
-@media only screen and (min-width: 768px){
-	ol li ol{
-		padding-left: 1.2rem;
-	}
-}
-ol.concept-list li{
-	padding-bottom: 1rem;
-}
-/* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-hr{
-  /* display: block; */
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #bdc2bd;
-  margin: 1rem;
-  padding: 0;
-}
-.title-hr{
-	margin: 2rem 0;
-}
-hr.section-divider{
-	width: 50%;
-}
-@media only screen and (min-width: 992px){
-	hr.section-divider{
-		display: none;
-		visibility: hidden;
-	}
-}
-
 
 /* Code to be deleted */
 

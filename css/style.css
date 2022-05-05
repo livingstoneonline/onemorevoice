@@ -278,42 +278,28 @@ h3{
 		font-size: 1.5rem;
 	}
 }
-article section:not(:first-child) > h3{
+article section:not(:first-child){
 	margin-top: 3.5rem;
 }
 @media only screen and (min-width: 480px){
-	article section:not(:first-child) > h3{
+	article section:not(:first-child){
 		margin-top: 4rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	article section:not(:first-child) > h3{
+	article section:not(:first-child)
 		margin-top: 4.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	article section:not(:first-child) > h3{
+	article section:not(:first-child){
 		margin-top: 5rem;
 	}	
-}
-.toc + section h3:first-child{
-	margin-top: 3rem;
 }
 .credits h3{
 	font-size: 1.3rem;
 	text-align: center;
 	border-bottom: 6px solid #8db7bf;
-	margin-top: 3rem;
-}
-@media only screen and (min-width: 768px){
-	.credits h3{
-		margin-top: 3rem;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.materials .content.recovered + .content .credits h3{
-		margin-top: 2rem;
-	}
 }
 .home h3#page-citation{
 	margin-top: 1rem;
@@ -341,7 +327,7 @@ section section:not(:first-of-type) h4{
 /* Page Menus */
 
 .toc{
-	margin: 0 auto 2rem;
+	margin: .5rem auto;
 	padding: 0 0 1rem;
 	display: -webkit-flex;
   display: flex;
@@ -354,17 +340,17 @@ section section:not(:first-of-type) h4{
 }
 @media only screen and (min-width: 768px){
 	.toc{
-		margin: 1rem 3rem;
+		margin: 1 3rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	.toc{
-		margin: 1rem 4rem;
+		margin: 2rem 4rem;
 	}
 }
 @media only screen and (min-width: 1200px){
 	.toc{
-		margin: 2rem 5rem;
+		margin: 1rem 5rem 3rem;
 	}
 }
 /* Heading adapted from https://stackoverflow.com/a/20478913 */
@@ -500,11 +486,15 @@ main{
 /* Essay Top */
 
 .essay .page-details{
-	padding-bottom: 1rem;
 	display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 768px){
+	.essay .page-details{
+		padding-bottom: 1rem;
+	}
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details{
@@ -666,6 +656,9 @@ main{
 		max-width: 700px;
 	}
 }
+article .toc + section{
+	margin-top: 2rem;
+}
 @media only screen and (min-width: 992px){
 	.content{
 		padding: 2rem 1rem;
@@ -679,11 +672,11 @@ main{
 	.content article{
 		margin: 0 4rem;
 	}
+	.content article section:first-child{
+		padding-top: 1rem;
+	}
 }
 @media only screen and (min-width: 992px){
-	.materials #content section:last-child{
-		padding-bottom: 2rem;
-	}
 	.materials .content.recovered article{
 		padding: 1rem;
 	}
@@ -703,9 +696,32 @@ main{
 		max-width: 1300px;
 	}
 }
-.content aside.credits{
+.credits{
 	font-size: 1rem;
-	margin-bottom: 2rem;
+	margin: 3rem auto 2rem;
+}
+@media only screen and (min-width: 768px){
+	.credits{
+		margin-top: 4rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.credits{
+		margin-top: 4.5rem;
+	}
+}
+.home .credits:first-of-type{
+	margin-top: 0;
+}
+@media only screen and (min-width: 768px){
+	.home .credits:first-of-type{
+		margin-top: 1rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.materials .content.recovered + .content .credits{
+		margin-top: 2rem;
+	}
 }
 
 
@@ -732,7 +748,7 @@ a:focus{
 /* Action button modified from a button created with https://buttonoptimizer.com/ and https://www.css-gradient.com */
 a.action-button,
 a.action-button:visited{
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -748,8 +764,15 @@ a.action-button:visited{
 	-webkit-border-radius: 27px;
 	-moz-border-radius: 27px;
 	margin: 1.5rem 0;
-	padding: 12px 30px;
+	padding: 10px 30px;
 	align-self: center;
+}
+@media only screen and (min-width: 1200px){
+	a.action-button,
+	a.action-button:visited{
+		font-size: 1.25rem;
+		padding: 12px 30px;
+	}
 }
 .action-button.primary,
 .home .action-button.primary{
@@ -1789,10 +1812,10 @@ ul{
 	margin: 0;
 	padding: 0 0 0 1.4rem;
 }
-.concept-list li{
+.padded-list li{
 	padding-bottom: 1rem;
 }
-.concept-list li:last-child{
+.padded-list li:last-child{
 	padding-bottom: 0;
 }
 ol li ol{
@@ -2583,44 +2606,20 @@ section.archival-text .no-image .content{
 /* The following items are used on the acknowledgments.html page. */ /* Vetted */
 ul.acknowledgments{
 	padding-left: 0;
+	list-style: none;
 }
 @media only screen and (min-width: 480px){
 	ul.acknowledgments{
 		padding-left: 1.2em;
 	}
 }
-.acknowledgments li{
-	list-style: none;
-	margin-bottom: .6em;
-	padding-left: 0;
-}
 
 /* The following items are used on the site_map.html page. */  /* Vetted */
 .site-map ol li:first-child{
-	margin-top: .6em;
+	margin-top: 1rem;
 }
 .site-map li{
-	margin-bottom: .6em;
-}
-
-/* The following items are used on the bibliography.html page. */  /* Vetted */
-.primary-historical{
-	list-style: none;
-	margin: 0;
-	padding: 0 0 1em 0;
-}
-ol.primary-historical{
-	padding-bottom: 0;
-}
-article section section ol.primary-historical:last-child{
-	padding: 0;
-}
-.primary-historical li{
-	padding-bottom: 1em;
-}
-.primary-historical li:last-child,
-li.primary-historical:last-child{
-	padding-bottom: 0;
+	margin-bottom: 1rem;
 }
 
 /* The following items are used on the coding_guidelines.html page. */

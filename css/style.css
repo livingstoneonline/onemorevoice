@@ -33,6 +33,7 @@ Overlay
 Footer
 Scroll to Top Button
 Random
+Visual Materials Object Gallery
 
 */
 
@@ -1722,6 +1723,81 @@ aside.text-box{
 	padding: 1em;
 }
 
+
+/* Visual Materials Object Gallery */
+
+.item-details{
+	font-size: .9rem;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.6rem;
+	margin-bottom: 2rem;
+}
+.gallery{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+.gallery figure{
+	margin: 0;
+}
+@media only screen and (min-width: 480px){
+	.gallery{
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 2rem 1.5rem;
+	}
+	.gallery figure{
+		margin: 0;
+		flex: 0 0 calc(50% - 1.5rem);
+	}
+}
+@media only screen and (min-width: 624px){
+	.gallery{
+		gap: 2rem;
+	}
+	.gallery figure{
+		flex: 0 0 calc(33% - 1.75rem);
+	}
+}
+@media only screen and (min-width: 768px){
+	.gallery{
+		gap: 2rem 2rem;
+	}
+	.gallery figure{
+		flex: 0 0 calc(33% - 1.75rem);
+	}
+}
+.gallery .image-container{
+	padding: 0;
+}
+.gallery figure img{
+	border: 3px solid #E3E3E3;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	width: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	overflow: hidden;
+}
+.gallery figure a:hover,
+.gallery figure a:focus{
+	outline: none;
+}
+.gallery figure a img:hover,
+.gallery figure a:focus img{
+	border: 3px #305056 solid;
+}
+.gallery figure figcaption{
+	font-size: .95rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
 /************* End of Vetted CSS ************/
 
 /* Remove extra code from Overlay, check colors, "em" */
@@ -2056,81 +2132,6 @@ section.archival-text .no-image .content{
 		display: inline-block;
 		max-width: calc(75% - 1em);
 	}
-}
-
-
-/* Visual Materials Object Gallery */
-
-.item-details{
-	font-size: .9rem;
-	font-style: italic;
-	text-align: center;
-	line-height: 1.6rem;
-	margin-bottom: 2rem;
-}
-.gallery{
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-	justify-content: center;
-	gap: 2rem;
-}
-.gallery figure{
-	margin: 0;
-}
-@media only screen and (min-width: 480px){
-	.gallery{
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 2rem 1.5rem;
-	}
-	.gallery figure{
-		margin: 0;
-		flex: 0 0 calc(50% - 1.5rem);
-	}
-}
-@media only screen and (min-width: 624px){
-	.gallery{
-		gap: 2rem;
-	}
-	.gallery figure{
-		flex: 0 0 calc(33% - 1.75rem);
-	}
-}
-@media only screen and (min-width: 768px){
-	.gallery{
-		gap: 2rem 2rem;
-	}
-	.gallery figure{
-		flex: 0 0 calc(33% - 1.75rem);
-	}
-}
-.gallery .image-container{
-	padding: 0;
-}
-.gallery figure img{
-	border: 3px solid #E3E3E3;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	width: 100%;
-	max-width: 100%;
-	object-fit: cover;
-	-o-object-fit: cover;
-	overflow: hidden;
-}
-.gallery figure a:hover,
-.gallery figure a:focus{
-	outline: none;
-}
-.gallery figure a img:hover,
-.gallery figure a:focus img{
-	border: 3px #305056 solid;
-}
-.gallery figure figcaption{
-	font-size: .95rem;
-	text-align: center;
-	line-height: 1.5rem;
 }
 
 

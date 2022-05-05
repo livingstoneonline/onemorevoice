@@ -13,10 +13,10 @@ Table of Contents
 
 ** 1.0. Main CSS **
 Principal Components 
+Section-Specific Colors
 Headers
 Page Menus
 Main and Aside
-Section-Specific Colors
 Home Top
 Essay Top
 Main Image Caption Button
@@ -175,6 +175,41 @@ body{
 }
 
 
+/* Section-Specific Colors */
+
+.home h2,
+.documents h2{
+	border-left: 12px solid #8db7bf;
+}
+.materials h2{
+	border-left: 12px solid #dcd3a6;
+}
+.home h3,
+.documents h3{
+	border-bottom: 8px solid #e3b382;
+}
+.materials h3{
+	border-bottom: 8px solid #dcd3a6;
+}
+.home .toc ol:before,
+.documents .toc ol:before{
+	border-bottom: 4px solid #e3b382;
+}
+.materials .toc ol:before{
+	border-bottom: 4px solid #dcd3a6;
+}
+.home .content div.decoration,
+.documents .content div.decoration{
+	background: #dcd3a6;
+}
+.materials .content div.decoration{
+	background: #8db7bf;
+}
+.content.recovered div.decoration{
+	background: #bdc2bd;
+}
+
+
 /* Headers */
 
 h2{
@@ -274,7 +309,7 @@ article section:not(:first-child) > h3{
 	}
 }
 @media only screen and (min-width: 1200px){
-	.content.recovered + .content .credits h3{
+	.materials .content.recovered + .content .credits h3{
 		margin-top: 2rem;
 	}
 }
@@ -371,41 +406,6 @@ main{
 		padding: 0;
 		max-width: 1600px;
 	}
-}
-
-
-/* Section-Specific Colors */
-
-.home h2,
-.documents h2{
-	border-left: 12px solid #8db7bf;
-}
-.materials h2{
-	border-left: 12px solid #dcd3a6;
-}
-.home h3,
-.documents h3{
-	border-bottom: 8px solid #e3b382;
-}
-.materials h3{
-	border-bottom: 8px solid #dcd3a6;
-}
-.home .toc ol:before,
-.documents .toc ol:before{
-	border-bottom: 4px solid #e3b382;
-}
-.materials .toc ol:before{
-	border-bottom: 4px solid #dcd3a6;
-}
-.home .content div.decoration,
-.documents .content div.decoration{
-	background: #dcd3a6;
-}
-.materials .content div.decoration{
-	background: #8db7bf;
-}
-.content.recovered div.decoration{
-	background: #bdc2bd;
 }
 
 

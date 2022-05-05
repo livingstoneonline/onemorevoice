@@ -16,6 +16,7 @@ Principal Components
 Headers
 Page Menus
 Main and Aside
+Section-Specific Colors
 Home Top
 Essay Top
 Main Image Caption Button
@@ -185,13 +186,6 @@ h2{
 	margin: .5rem 0 1.5rem;
 	padding: 0 0 0 1rem;
 }
-.home h2,
-.documents h2{
-	border-left: 12px solid #8db7bf;
-}
-.materials h2{
-	border-left: 12px solid #dcd3a6;
-}
 @media only screen and (min-width: 480px){
 	h2{
 		font-size: 2.1rem;
@@ -236,13 +230,6 @@ h3{
 
 	margin: 1.5rem 0;
 	padding: 0 0 1rem 0;
-}
-.home h3,
-.documents h3{
-	border-bottom: 8px solid #e3b382;
-}
-.materials h3{
-	border-bottom: 8px solid #dcd3a6;
 }
 @media only screen and (min-width: 480px){
 	h3{
@@ -342,13 +329,6 @@ section section:not(:first-of-type) h4{
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
 }
-.home .toc ol:before,
-.documents .toc ol:before{
-	border-bottom: 4px solid #e3b382;
-}
-.materials .toc ol:before{
-	border-bottom: 4px solid #dcd3a6;
-}
 .toc ol{
 	padding: 1.5rem 3rem 2rem;
 	background: #E7E9E7;
@@ -391,6 +371,41 @@ main{
 		padding: 0;
 		max-width: 1600px;
 	}
+}
+
+
+/* Section-Specific Colors */
+
+.home h2,
+.documents h2{
+	border-left: 12px solid #8db7bf;
+}
+.materials h2{
+	border-left: 12px solid #dcd3a6;
+}
+.home h3,
+.documents h3{
+	border-bottom: 8px solid #e3b382;
+}
+.materials h3{
+	border-bottom: 8px solid #dcd3a6;
+}
+.home .toc ol:before,
+.documents .toc ol:before{
+	border-bottom: 4px solid #e3b382;
+}
+.materials .toc ol:before{
+	border-bottom: 4px solid #dcd3a6;
+}
+.home .content div.decoration,
+.documents .content div.decoration{
+	background: #dcd3a6;
+}
+.materials .content div.decoration{
+	background: #8db7bf;
+}
+.content.recovered div.decoration{
+	background: #bdc2bd;
 }
 
 
@@ -628,41 +643,47 @@ main{
 		padding: 0;
 		max-width: 700px;
 	}
-	.content.recovered article{
-		padding: 1rem;
-		max-width: 900px;
+}
+@media only screen and (min-width: 992px){
+	.content{
+		padding: 2rem 1rem;
 	}
-	.materials section:nth-child(2) article{
+	.content div.decoration{
+		margin: 0;
+		display: block;
+		visibility: visible;
+		flex-grow: 1;
+	}
+	.content article{
+		margin: 0 4rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.materials #content section:last-child{
 		padding-bottom: 2rem;
 	}
-	@media only screen and (min-width: 992px){
-		.content{
-			padding: 2rem 1rem;
-		}
-		.home .content div.decoration,
-		.documents .content div.decoration{
-			background: #dcd3a6;
-		}
-		.materials .content div.decoration{
-			background: #8db7bf;
-		}
-		.content.recovered div.decoration{
-			background: #bdc2bd;
-		}
-		.content div.decoration{
-			margin: 0;
-			display: block;
-			visibility: visible;
-			flex-grow: 1;
-		}
-		.content article{
-			margin: 0 4rem;
-		}
+	.materials .content.recovered article{
+		padding: 1rem;
 	}
-	.content aside.credits{
-		font-size: 1rem;
-		margin-bottom: 2rem;
+}
+@media only screen and (min-width: 1200px){
+	.materials .content.recovered article{
+		max-width: 900px;
 	}
+}
+@media only screen and (min-width: 1366px){
+	.materials .content.recovered article{
+		max-width: 1100px;
+	}
+}
+@media only screen and (min-width: 1600px){
+	.materials .content.recovered article{
+		max-width: 1300px;
+	}
+}
+.content aside.credits{
+	font-size: 1rem;
+	margin-bottom: 2rem;
 }
 
 
@@ -1788,6 +1809,16 @@ aside.text-box{
 	}
 	.gallery figure{
 		flex: 0 0 calc(25% - 2rem);
+	}
+}
+@media only screen and (min-width: 1366px){
+	.gallery figure{
+		flex: 0 0 calc(20% - 2rem);
+	}
+}
+@media only screen and (min-width: 1600px){
+	.gallery figure{
+		flex: 0 0 calc(17% - 2rem);
 	}
 }
 .gallery .image-container{

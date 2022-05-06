@@ -52,15 +52,21 @@ Visual Materials Object Gallery
 >>new colors
 (white) #fff
 (black) #212119;
+(lighter blue) #aeced9; (contrast checked)
 (light blue) #8db7bf;
-(dark blue) #305056; (contrast checked)
-(yellow) #DFD7AC;
-(orange) #DA9C5D;
+(dark blue) #315257;
+(darker blue) #305056; (contrast checked)
+(darkest blue) #243D42;
+(lighter yellow) #F1EACA; (contrast checked)
+(yellow) #dcd3a6;
+(lighter orange) #EECFA7; (contrast checked)
+(orange) #e3b382;
 (dark brown) #7d4d1c; (contrast checked)
 (dark brown, for a links) #694017 (contrast checked)
 (super light gray) #ededed;
 (light gray) #E7E9E7;
 (light mid-gray) #bdc2bd;
+(gray-green): #697c6f;
 (mid-gray) #737d73;
 (dark gray) #4d5b51; (contrast checked)
 */
@@ -1236,7 +1242,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2){
 }
 div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
 div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
-	border: 2px #395f65 solid;
+	border: 2px #305056 solid;
 	outline: none;
 }
 #google_translate_element > div > span > a > img,
@@ -1253,7 +1259,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 .goog-logo-link:link{
 	font-size: 11px !important;
 	font-weight: normal !important;
-	color: #4d5b51 !important;
+	color: #697c6f !important;
 }
 
 
@@ -1901,7 +1907,7 @@ hr.section-divider{
 	padding: 0;
 }
 .gallery figure img{
-	border: 4px solid #E3E3E3;
+	border: 4px solid #E7E9E7;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;

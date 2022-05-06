@@ -534,6 +534,7 @@ main{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
+		margin: 0;
 		padding: 0 1.5rem;
 		display: -webkit-flex;
   	display: flex;
@@ -559,6 +560,9 @@ main{
 	.essay .page-details.vertical figure{
 		min-width: 636px;
 	}
+}
+.essay .page-details div p{
+	margin: .5rem 0;
 }
 
 
@@ -618,7 +622,7 @@ main{
 		right: 1rem;
 	}
 	.page-details .caption-icon{
-	bottom: 3rem;
+	bottom: 2rem;
 	right: 1.5rem;
 	}
 }
@@ -839,7 +843,8 @@ a.action-button i{
 		justify-content: space-between;
 	}
 }
-.essay a.action-button{
+.essay a.action-button,
+.essay.critical a.action-button{
 	display: none;
 	visibility: hidden;
 }
@@ -848,11 +853,19 @@ a.action-button i{
 		display: inline-block;
 		visibility: visible;
 	}
+	.essay.critical a.action-button{
+		display: none;
+		visibility: hidden;
+	}
 }
 @media only screen and (min-width: 1200px){
 	.essay .horizontal a.action-button{
 		display: inline-block;
 		visibility: visible;
+	}
+	.essay.critical a.action-button{
+		display: none;
+		visibility: hidden;
 	}
 }
 
@@ -2699,25 +2712,6 @@ ul.acknowledgments{
 	color: unset;
 	margin-top: .5em;
 	margin-bottom: .5em;
-}
-/* essay credit lines */
-.byline-divider{
-	background: white;
-	border-top: 1px dashed gray;
-	width: 45%;
-	display: inline-block;
-}
-.byline{
-	font-variant: small-caps;
-	font-weight: 600;
-	margin: 0;
-	padding: 0;
-}
-.editor-line{
-	font-size: 0.9em;
-	font-variant: small-caps;
-	margin: .8em 0 0 0;
-	padding: 0;
 }
 
 

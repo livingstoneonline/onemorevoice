@@ -711,7 +711,7 @@
 					<div id="closing-credits">
 						<hr />
 						<!--<p class="back-button"><a class="trans-return" href="https://onemorevoice.org/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
-						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
@@ -739,7 +739,7 @@
 					<div id="closing-credits">
 						<hr/>
 						<!--<p class="back-button"><a class="trans-return" href="https://onemorevoice.org/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
-						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
@@ -767,7 +767,7 @@
 					<div id="closing-credits">
 						<hr />
 						<!--<p class="back-button"><a class="art-return" href="https://onemorevoice.org/visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
-						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="https://onemorevoice.org/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>

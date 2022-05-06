@@ -279,21 +279,21 @@ h3{
 		font-size: 1.5rem;
 	}
 }
-article section:not(:first-child){
+article > section:not(:first-child){
 	margin-top: 3.5rem;
 }
 @media only screen and (min-width: 480px){
-	article section:not(:first-child){
+	article > section:not(:first-child){
 		margin-top: 4rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	article section:not(:first-child){
+	article > section:not(:first-child){
 		margin-top: 4.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	article section:not(:first-child){
+	article > section:not(:first-child){
 		margin-top: 5rem;
 	}	
 }
@@ -678,7 +678,7 @@ main{
 }
 @media only screen and (min-width: 992px){
 	.materials .content.recovered article{
-		padding: 1rem;
+		padding: 0 1rem;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -1804,6 +1804,11 @@ ol,
 ul{
 	margin: 0;
 	padding: 0 0 0 1.4rem;
+}
+.bibliography article section:not(.toc) ol,
+.bibliography article section ul{
+	list-style: none;
+	padding-left: 0;
 }
 .padded-list li{
 	padding-bottom: 1rem;

@@ -33,6 +33,7 @@ Footer
 Scroll to Top Button
 Lists and Lines
 Random
+404 Page
 Visual Materials Object Gallery
 
 */
@@ -61,6 +62,7 @@ Visual Materials Object Gallery
 (yellow) #dcd3a6;
 (lighter orange) #EECFA7; (contrast checked)
 (orange) #e3b382;
+(red) #85454B;
 (dark brown) #7d4d1c; (contrast checked)
 (dark brown, for a links) #694017 (contrast checked)
 (super light gray) #ededed;
@@ -1790,14 +1792,6 @@ footer p .site-detail:last-child:after{
 }
 
 
-/* Random */
-aside.text-box{
-	background: #E7E9E7;
-	border-left: 6px solid #8db7bf;
-	padding: 1rem;
-}
-
-
 /* Lists and Lines */
 
 ol,
@@ -1846,6 +1840,57 @@ hr.section-divider{
 	}
 }
 
+
+/* Random */
+aside.text-box{
+	background: #E7E9E7;
+	border-left: 6px solid #8db7bf;
+	padding: 1rem;
+}
+
+
+/* 404 Page */
+
+@media only screen and (min-width: 992px){
+	.error404 main{
+		margin-top: 1rem;
+	}
+}
+.error404 main div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media only screen and (min-width: 992px){
+	.error404 .page-details div{
+		margin-top: 1rem;
+		min-width: 375px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.error404 .page-details div{
+		min-width: 450px;
+	}
+}
+.essay.error404 .horizontal a.action-button,
+.essay.error404 .horizontal a.action-button:visited{
+	color: #fff;
+	background: #85454B;
+	display: inline-block;
+	visibility: visible;
+}
+.essay.error404 .horizontal a.action-button:hover,
+.essay.error404 .horizontal a.action-button:focus{
+	color: #fff;
+	background: #305056;
+	outline: none;
+}
+.error404 main span{
+	color: #fff;
+	background: #212119;
+	padding: .15rem .5rem;
+}
 
 /* Visual Materials Object Gallery */
 

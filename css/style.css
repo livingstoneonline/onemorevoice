@@ -540,7 +540,7 @@ main{
 		flex-direction: column;
 	}
 	.essay .page-details.vertical div{
-		margin-bottom: 3rem;
+		margin-bottom: 15rem;
 	}
 	.essay .page-details.horizontal figure{
 		min-width: 478px;
@@ -550,9 +550,6 @@ main{
 	}
 }
 @media only screen and (min-width: 1200px){	
-	.essay .page-details.vertical div{
-		margin-bottom: 15rem;
-	}
 	.essay .page-details.horizontal figure{
 		min-width: 698px;
 	}
@@ -586,7 +583,7 @@ main{
 	position: absolute;
 }
 .caption{
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: normal;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	text-decoration: none;
@@ -599,7 +596,7 @@ main{
 }
 @media screen and (min-width: 480px){
 	 .caption{
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		padding: 5px 7px 3px;
 	}
 }
@@ -610,7 +607,7 @@ main{
 		right: .5rem;
 	}
 	 .caption{
-		font-size: 1.7rem;
+		font-size: 1.8rem;
 		padding: 6px 8px 4px;
 	}
 }

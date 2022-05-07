@@ -193,9 +193,6 @@ body{
 .materials h3{
 	border-bottom: 8px solid #dcd3a6;
 }
-.home h3#page-citation{
-	border-bottom: 6px solid #e3b382;
-}
 .home .toc ol:before,
 .documents .toc ol:before{
 	border-bottom: 4px solid #e3b382;
@@ -314,7 +311,7 @@ article > section:not(:first-child){
 }
 @media only screen and (min-width: 992px){
 	.home h3#page-citation{
-		margin-top: 2rem;
+		margin-top: 2.5rem;
 	}
 }
 h4{

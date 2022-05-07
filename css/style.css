@@ -802,8 +802,6 @@ a.action-button:visited{
 	margin: 2rem 0 0;
 	padding: 10px 30px;
 	align-self: center;
-	display: none;
-	visibility: hidden;
 }
 @media only screen and (min-width: 1200px){
 	a.action-button,
@@ -877,23 +875,22 @@ a.action-button i{
 		justify-content: space-between;
 	}
 }
-/* .essay a.action-button,
-.essay.critical a.action-button{
+.essay a.action-button{
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 992px){
-	.essay .vertical a.action-button{
+	.essay.filler .vertical a.action-button{
 		display: inline-block;
 		visibility: visible;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.essay .horizontal a.action-button{
+	.essay.filler .horizontal a.action-button{
 		display: inline-block;
 		visibility: visible;
 	}
-} */
+}
 
 
 /* Tooltips */
@@ -1916,6 +1913,7 @@ aside.text-box{
 .essay.error404 .horizontal a.action-button:visited{
 	color: #fff;
 	background: #85454B;
+	margin-bottom: 2rem;
 	display: inline-block;
 	visibility: visible;
 }

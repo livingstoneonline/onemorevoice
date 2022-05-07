@@ -338,12 +338,13 @@ article > section:not(:first-child){
 h4{
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
+	text-align: center;
 }
-h4:before{
+/* h4:before{
 	content: "\f0a9";
 	font-family: var(--fa-style-family,"Font Awesome 6 Free");
 	margin-right: .5rem;
-}
+} */
 section section:not(:first-of-type) h4{
 	margin-top: 2.5rem;
 }

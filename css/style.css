@@ -218,7 +218,7 @@ h2{
 	font-size: 1.5rem;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
-	line-height: 3rem;
+	line-height: 3.75rem;
 	color: #305056;
 	margin: .5rem 0 1.55rem;
 	padding: 0 0 0 .75rem;
@@ -506,10 +506,16 @@ main{
 		padding: 1rem 1rem;
 		position: relative;
 	}
+	.essay.critical .page-details{
+		align-items: flex-end;
+	}
 }
 @media only screen and (min-width: 1200px){
 	.essay .page-details{
 		margin-bottom: 1rem;
+	}
+	.essay.critical .page-details{
+		align-items: center;
 	}
 }
 .essay .page-details div{

@@ -261,7 +261,7 @@ h2{
 	}	
 }
 .page-details h2{
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 h3{
 	font-size: 1.3rem;
@@ -500,9 +500,11 @@ main{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details{
+		width: 100%;
 		display: -webkit-flex;
   	display: flex;
 		align-items: center;
+		justify-content: space-between;
 		flex-direction: row-reverse;
 		padding: 1rem 1rem;
 		position: relative;
@@ -516,12 +518,6 @@ main{
 .essay .page-details div{
 	margin: 2rem 0 1rem;
 	padding: 0 1rem;
-}
-.essay .page-details div a{
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	-ms-word-break: break-all;
 }
 @media only screen and (min-width: 768px){
 	.essay .page-details div{
@@ -552,7 +548,7 @@ main{
 }
 @media only screen and (min-width: 1200px){	
 	.essay .page-details.vertical div{
-		margin-bottom: 7rem;
+		margin-bottom: 15rem;
 	}
 	.essay .page-details.horizontal figure{
 		min-width: 698px;
@@ -562,7 +558,7 @@ main{
 	}
 }
 .essay .page-details div p{
-	margin: .5rem 0;
+	margin: .75rem 0;
 }
 
 
@@ -725,9 +721,15 @@ main{
 	}
 }
 @media only screen and (min-width: 1200px){
-	.materials .content.recovered + .content .credits{
+	.materials .content.recovered + .content .credits:first-child{
 		margin-top: 2rem;
 	}
+}
+.credits a{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
 }
 
 
@@ -767,7 +769,7 @@ a.action-button:visited{
 	border-radius: 27px;
 	-webkit-border-radius: 27px;
 	-moz-border-radius: 27px;
-	margin: 1.5rem 0;
+	margin: 2rem 0 0;
 	padding: 10px 30px;
 	align-self: center;
 }

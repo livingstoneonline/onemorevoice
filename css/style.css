@@ -336,8 +336,13 @@ article > section:not(:first-child){
 	}
 }
 h4{
-	font-style: italic;
-	font-weight: normal;
+	font-weight: 600;
+	font-family: 'Merriweather', serif;
+}
+h4:before{
+	content: "\f0a9";
+	font-family: var(--fa-style-family,"Font Awesome 6 Free");
+	margin-right: .5rem;
 }
 section section:not(:first-of-type) h4{
 	margin-top: 2.5rem;
@@ -1860,28 +1865,27 @@ hr{
   height: 1px;
   border: 0;
   border-top: 1px solid #bdc2bd;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 0;
+}
+hr.section-divider{
+	border-top: 4px solid #bdc2bd;
+}
+section + hr.section-divider{
+	margin-top: 2.5rem;
 }
 .title-hr{
 	margin: 2rem 0;
-}
-hr.section-divider{
-	width: 50%;
-}
-@media only screen and (min-width: 992px){
-	hr.section-divider{
-		display: none;
-		visibility: hidden;
-	}
 }
 
 
 /* Random */
 aside.text-box{
 	background: #E7E9E7;
+	border: 1px solid #bdc2bd;
 	border-left: 6px solid #8db7bf;
 	padding: 1rem;
+	margin: 2rem 0;
 }
 
 

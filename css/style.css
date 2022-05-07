@@ -14,7 +14,7 @@ Principal Components
 Section-Specific Colors
 Headers
 Page Menus
-Main and Aside
+Main, Article, Section
 Home Top
 Essay Top
 Main Image Caption Button
@@ -299,23 +299,20 @@ h3{
 		font-size: 1.5rem;
 	}
 }
-article > section:not(:first-child){
-	margin-top: 3.5rem;
+h3.subtitle{
+	font-size: 1.1rem;
+	font-variant: small-caps;
+	font-weight: normal;
+	text-align: left;
+	color: #212119;
+	border-bottom: none;
+	margin: .5rem 0 1rem;
 }
-@media only screen and (min-width: 480px){
-	article > section:not(:first-child){
-		margin-top: 4rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	article > section:not(:first-child){
-		margin-top: 4.5rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	article > section:not(:first-child){
-		margin-top: 5rem;
-	}	
+h3.subtitle:before{
+	content: "\f02d";
+	font-family: var(--fa-style-family,"Font Awesome 6 Free");
+	font-weight: 600;
+	margin-right: .75rem;
 }
 .credits h3{
 	font-size: 1.3rem;
@@ -376,7 +373,7 @@ section section:not(:first-of-type) h4{
 }
 @media only screen and (min-width: 1200px){
 	.toc{
-		margin: 1rem 5rem 3rem;
+		margin: 2rem 5rem 3rem;
 	}
 }
 /* Heading adapted from https://stackoverflow.com/a/20478913 */
@@ -418,7 +415,7 @@ section section:not(:first-of-type) h4{
 }
 
 
-/* Main and Aside */
+/* Main, Article, Section */
 
 main{
 	margin: 0 auto;
@@ -440,6 +437,24 @@ main{
 		padding: 0;
 		max-width: 1600px;
 	}
+}
+article > section:not(:first-child){
+	margin-top: 3.5rem;
+}
+@media only screen and (min-width: 480px){
+	article > section:not(:first-child){
+		margin-top: 4rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	article > section:not(:first-child){
+		margin-top: 4.5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	article > section:not(:first-child){
+		margin-top: 5rem;
+	}	
 }
 
 
@@ -564,7 +579,7 @@ main{
 		flex-direction: column;
 	}
 	.essay .page-details.vertical div{
-		margin-bottom: 14rem;
+		margin-bottom: 6rem;
 	}
 	.essay .page-details.horizontal figure{
 		width: 50%;
@@ -576,6 +591,9 @@ main{
 	}
 }
 @media only screen and (min-width: 1200px){	
+	.essay .page-details.vertical div{
+		margin-bottom: 14rem;
+	}
 	.essay .page-details.horizontal figure{
 		min-width: 698px;
 	}
@@ -584,7 +602,7 @@ main{
 	}
 }
 .essay .page-details div p{
-	margin: .75rem 0;
+	margin: .65rem 0;
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div p{
@@ -2723,24 +2741,6 @@ ul.acknowledgments{
 .footnote{
 	font-size: .9em;
 	padding-top: 1.5em;
-}
-
-
-/* 1.16. Essays */
-
-/* for essay title with subtitle */
-.title-with-subtitle{
-	margin-bottom: .5em;
-}
-/* for essay subtitle */
-.subtitle{
-	font-size: .9em;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 300;
-	color: unset;
-	margin-top: .5em;
-	margin-bottom: .5em;
 }
 
 

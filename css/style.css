@@ -272,12 +272,12 @@ h2{
 	margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 992px){
-	.essay.critical .page-details h2{
+	.essay .page-details h2{
 		margin-bottom: .5rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.essay.critical .page-details h2{
+	.essay .page-details h2{
 		margin-bottom: 1.5rem;
 	}
 }
@@ -581,13 +581,13 @@ main{
 	margin: .75rem 0;
 }
 @media only screen and (min-width: 992px){
-	.essay.critical .page-details div p{
+	.essay .page-details div p{
 		font-size: 1rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.essay.critical .page-details div p{
-		font-size: 1rem;
+	.essay .page-details div p{
+		font-size: inherit;
 	}
 }
 

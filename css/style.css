@@ -19,6 +19,7 @@ Home Top
 Essay Top
 Main Image Caption Button
 Home and Essay Bottom
+Images and Related
 Links
 Action Buttons
 Tooltips
@@ -33,8 +34,10 @@ Footer
 Scroll to Top Button
 Lists and Lines
 Random
-404 Page
+Page-Specific Coding
+Thematic Collections Page Images
 Visual Materials Object Gallery
+404 Page
 
 */
 
@@ -784,6 +787,39 @@ article > .toc + section{
 	word-wrap: break-word;
 	word-break: break-word;
 	-ms-word-break: break-all;
+}
+
+
+/* Images and Related */
+
+/* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
+img{
+	font-weight: 300;
+	color: #E7E9E7;
+	border-style: none;
+	width: 100%;
+	height: auto;
+}
+a img{
+	border: 3px transparent solid;
+}
+a:hover img,
+a:focus img{
+	border: 3px #395f65 solid;
+}
+.image-container{
+	padding: .5em;
+}
+.image-border{
+	border: 1px solid #bdc2bd;
+}
+.image-border-dark{
+	border: 1px solid #737d73;
+}
+/* Used for XML files */
+.graphic a:hover,
+.graphic a:focus{
+	background: white;
 }
 
 
@@ -1907,49 +1943,87 @@ aside.text-box{
 }
 
 
-/* 404 Page */
+/* Page-Specific Coding */
 
-@media only screen and (min-width: 992px){
-	.error404 main{
-		margin-top: 1rem;
+/* The following is used on project_design.html */ 
+.keycap{
+	font-size: .95em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #212119;
+	background: #f1f1f1;
+	border: 1px solid #212119;
+	border-width: 1px 2px 2px 1px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 1px;
+	padding: 0 2px;
+	min-width: 17px;
+}
+/* The following items are used on the acknowledgments.html page. */
+ul.acknowledgments{
+	padding-left: 0;
+	list-style: none;
+}
+@media only screen and (min-width: 480px){
+	ul.acknowledgments{
+		padding-left: 1.2em;
 	}
 }
-.error404 main div{
+/* The following items are used on the site_map.html page. */ 
+.site-map ol li:first-child{
+	margin-top: 1rem;
+}
+.site-map li{
+	margin-bottom: 1rem;
+}
+
+
+/* Thematic Collections Page Images */
+
+/* Also see https://stackoverflow.com/a/55557988 for the following */
+.double-image{
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	gap: 10px;
 }
-@media only screen and (min-width: 992px){
-	.error404 .page-details div{
-		margin-top: 1rem;
-		min-width: 375px;
+@media only screen and (min-width: 480px){
+	.double-image{
+		flex-direction: row;
 	}
 }
-@media only screen and (min-width: 1200px){
-	.error404 .page-details div{
-		min-width: 450px;
-	}
+img + p.caption-text,
+.double-image + p.caption-text{
+	font-size: .8em;
+	line-height: 1.6;
+	margin: 10px 0 2em 0;
+	padding: 0;
 }
-.essay.error404 .horizontal a.action-button,
-.essay.error404 .horizontal a.action-button:visited{
-	color: #fff;
-	background: #85454B;
-	margin-bottom: 2rem;
+/* adds margin to double image captions */
+.caption-text > span:not(:last-child){
+	margin-bottom: 10px;
 	display: inline-block;
-	visibility: visible;
 }
-.essay.error404 .horizontal a.action-button:hover,
-.essay.error404 .horizontal a.action-button:focus{
-	color: #fff;
-	background: #305056;
-	outline: none;
+/* identifies double image captions responsively */
+.left-right{
+	display: none;
+	visibility: hidden;
 }
-.error404 main span{
-	color: #fff;
-	background: #212119;
-	padding: .15rem .5rem;
+@media only screen and (min-width: 480px){
+	.top-bottom{
+		display: none;
+		visibility: hidden;
+	}
+	.left-right{
+		display: inline-block;
+		visibility: visible;
+	}
 }
+
 
 /* Visual Materials Object Gallery */
 
@@ -2039,203 +2113,55 @@ aside.text-box{
 	text-align: center;
 	line-height: 1.5rem;
 }
-/************* End of Vetted CSS ************/
 
-/* Remove extra code from Overlay, check colors, "em" */
 
-/* 1.3 Headings and Related */
+/* 404 Page */
 
-/* .essay h2,
-.transcription h2{
-	color: #204A79;
-	margin: .5em auto 0 auto;
-}
-.essay h2{
-	font-size: 1.25em;
-}
-.transcription h2{
-	font-size: 1.2em;
-}
-@media only screen and (min-width: 768px){
-	.essay h2{
-		font-size: 1.2em;
-	}
-	.transcription h2{
-		font-size: 1.15em;
+@media only screen and (min-width: 992px){
+	.error404 main{
+		margin-top: 1rem;
 	}
 }
-.essay .image-wrapper h2{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-h3{
-	font-size: 1.1em;
-	font-weight: 600;
-	font-variant: small-caps;
-}
-h3.subsection{
-	padding-top: 2em;
-}
-.contributors main h3{
-	font-family: 'Merriweather', serif;
-  font-weight: normal;
-  font-variant: normal;
-	color: #305056;
-}
-.contributors section:first-of-type h3{
-	margin-top: 1em;
-}
-h4{
-	font-size: 1em;
-	font-style: italic;
-	font-weight: 300;
-}
-.subsection{
-	padding-top: 1.5em;
-} */
-
-
-/* 1.4. Main Images and Related */
-img{
-	font-weight: 300;
-	color: #E7E9E7;
-	border-style: none;
-	width: 100%;
-	height: auto;
-}
-/* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
-header img{
-	background: #e6e6e6;
-	border: 1px solid #e3e3e3;
-}
-/* Also see https://stackoverflow.com/a/55557988 for the following */
-.double-image{
-	display: -webkit-flex;
+.error404 main div{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 10px;
+	align-items: center;
 }
-@media only screen and (min-width: 480px){
-	.double-image{
-		flex-direction: row;
+@media only screen and (min-width: 992px){
+	.error404 .page-details div{
+		margin-top: 1rem;
+		min-width: 375px;
 	}
 }
-a img{
-	border: 3px transparent solid;
+@media only screen and (min-width: 1200px){
+	.error404 .page-details div{
+		min-width: 450px;
+	}
 }
-a:hover img,
-a:focus img{
-	border: 3px #395f65 solid;
-}
-.image-border{
-	border: 1px solid #bdc2bd;
-}
-.image-border-dark{
-	border: 1px solid #737d73;
-}
-/* Caption for main image */
-img + p.caption-text,
-.double-image + p.caption-text{
-	font-size: .8em;
-	line-height: 1.6;
-	margin: 10px 0 2em 0;
-	padding: 0;
-}
-/* adds margin to double image captions */
-.caption-text > span:not(:last-child){
-	margin-bottom: 10px;
+.essay.error404 .horizontal a.action-button,
+.essay.error404 .horizontal a.action-button:visited{
+	color: #fff;
+	background: #85454B;
+	margin-bottom: 2rem;
 	display: inline-block;
+	visibility: visible;
 }
-/* identifies double image captions responsively */
-.left-right{
-	display: none;
-	visibility: hidden;
+.essay.error404 .horizontal a.action-button:hover,
+.essay.error404 .horizontal a.action-button:focus{
+	color: #fff;
+	background: #305056;
+	outline: none;
 }
-@media only screen and (min-width: 480px){
-	.top-bottom{
-		display: none;
-		visibility: hidden;
-	}
-	.left-right{
-		display: inline-block;
-		visibility: visible;
-	}
-}
-/* Used for individual visual materials archival items */
-.image-container{
-	padding: .5em;
+.error404 main span{
+	color: #fff;
+	background: #212119;
+	padding: .15rem .5rem;
 }
 
+/************* End of Vetted CSS ************/
 
-/* 1.5. Links */
-
-#credits-div > p:nth-child(2) > a,
-#closing-credits > p:nth-child(3) > a,
-#closing-credits > p:nth-child(5) > a{
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	-ms-word-break: break-all;
-}
-.graphic a:hover,
-.graphic a:focus{
-	background: white;
-}
-
-
-/* 1.6. Fonts */
-
-/* @font-face{
-	font-family: 'libre_franklinregular';
-	src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'), 
-url('../fonts/librefranklin-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	display: swap;
-}
-@font-face{
-	font-family: 'libre_franklinbold';
-	src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'), 
-url('../fonts/librefranklin-bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	display: swap;
-} */
-/* @font-face{
-	font-family: 'merriweatherblack';
-	src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), 
-url('../fonts/merriweather-black-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	display: swap;
-} */
-/* @font-face{
-	font-family: 'merriweatherbold';
-	src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
-url('../fonts/merriweather-bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	display: swap;
-} */
-/* @font-face{
-	font-family: 'patua_oneregular';
-	src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'), 
-url('../fonts/patuaone-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	display: swap;
-} */
-/* @font-face{
-	font-family: 'source_sans_proregular';
-	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
-url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-} */
-
+/* Remove extra code from Overlay, check colors, "em" */
 
 /* 1.11. Archival Texts */
 
@@ -2687,42 +2613,9 @@ section.archival-text .no-image .content{
 
 /* 1.15 Page Specific Coding */
 
-/* The following is used on project_design.html */ /* Vetted */
-.keycap{
-	font-size: .95em;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	color: #212119;
-	background: #f1f1f1;
-	border: 1px solid #212119;
-	border-width: 1px 2px 2px 1px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	margin: 1px;
-	padding: 0 2px;
-	min-width: 17px;
-}
 
-/* The following items are used on the acknowledgments.html page. */ /* Vetted */
-ul.acknowledgments{
-	padding-left: 0;
-	list-style: none;
-}
-@media only screen and (min-width: 480px){
-	ul.acknowledgments{
-		padding-left: 1.2em;
-	}
-}
 
-/* The following items are used on the site_map.html page. */  /* Vetted */
-.site-map ol li:first-child{
-	margin-top: 1rem;
-}
-.site-map li{
-	margin-bottom: 1rem;
-}
+
 
 /* The following items are used on the coding_guidelines.html page. */
 .tag-blue{
@@ -2788,6 +2681,111 @@ strong{
 .underline{
 	text-decoration: underline;
 }
+
+
+/* 1.3 Headings and Related */
+
+/* .essay h2,
+.transcription h2{
+	color: #204A79;
+	margin: .5em auto 0 auto;
+}
+.essay h2{
+	font-size: 1.25em;
+}
+.transcription h2{
+	font-size: 1.2em;
+}
+@media only screen and (min-width: 768px){
+	.essay h2{
+		font-size: 1.2em;
+	}
+	.transcription h2{
+		font-size: 1.15em;
+	}
+}
+.essay .image-wrapper h2{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+h3{
+	font-size: 1.1em;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+h3.subsection{
+	padding-top: 2em;
+}
+.contributors main h3{
+	font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-variant: normal;
+	color: #305056;
+}
+.contributors section:first-of-type h3{
+	margin-top: 1em;
+}
+h4{
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 300;
+}
+.subsection{
+	padding-top: 1.5em;
+} */
+
+/* 1.6. Fonts */
+
+/* @font-face{
+	font-family: 'libre_franklinregular';
+	src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'), 
+url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
+}
+@font-face{
+	font-family: 'libre_franklinbold';
+	src: url('../fonts/librefranklin-bold-webfont.woff2') format('woff2'), 
+url('../fonts/librefranklin-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
+} */
+/* @font-face{
+	font-family: 'merriweatherblack';
+	src: url('../fonts/merriweather-black-webfont.woff2') format('woff2'), 
+url('../fonts/merriweather-black-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
+} */
+/* @font-face{
+	font-family: 'merriweatherbold';
+	src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), 
+url('../fonts/merriweather-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
+} */
+/* @font-face{
+	font-family: 'patua_oneregular';
+	src: url('../fonts/patuaone-regular-webfont.woff2') format('woff2'), 
+url('../fonts/patuaone-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	display: swap;
+} */
+/* @font-face{
+	font-family: 'source_sans_proregular';
+	src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'), 
+url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+} */
+
 
 /* Code to be deleted */
 

@@ -850,7 +850,13 @@ a.action-button:visited{
 	background: #aeced9;
 }
 a.action-button:hover,
-a.action-button:focus{
+a.action-button:focus,
+a.action-button.primary:hover,
+a.action-button.primary:focus,
+a.action-button.secondary:hover,
+a.action-button.secondary:focus,
+a.action-button.tertiary:hover,
+a.action-button.tertiary:focus{
 	color: #fff;
 	background: #305056;
 	outline: none;

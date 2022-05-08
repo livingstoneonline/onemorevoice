@@ -309,7 +309,7 @@ h3.subtitle{
 	margin: .5rem 0 1rem;
 }
 h3.subtitle:before{
-	content: "\f02d";
+	content: "\f518";
 	font-family: var(--fa-style-family,"Font Awesome 6 Free");
 	font-weight: 600;
 	margin-right: .75rem;
@@ -342,8 +342,8 @@ h4{
 	font-family: var(--fa-style-family,"Font Awesome 6 Free");
 	margin-right: .5rem;
 } */
-section section:not(:first-of-type) h4{
-	margin-top: 2.5rem;
+section h4:not(:first-of-type){
+	margin-top: 3rem;
 }
 
 
@@ -408,11 +408,6 @@ section section:not(:first-of-type) h4{
 		padding: 2rem 6rem 3rem;
 	}
 }
-@media only screen and (min-width: 1200px){
-	.toc ol:first-child{
-		padding: 2rem 7rem 3rem;
-	}
-}
 
 
 /* Main, Article, Section */
@@ -439,21 +434,21 @@ main{
 	}
 }
 article > section:not(:first-child){
-	margin-top: 3.5rem;
+	margin-top: 3rem;
 }
 @media only screen and (min-width: 480px){
 	article > section:not(:first-child){
-		margin-top: 4rem;
+		margin-top: 3.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	article > section:not(:first-child){
-		margin-top: 4.5rem;
+		margin-top: 4rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	article > section:not(:first-child){
-		margin-top: 5rem;
+		margin-top: 4.5rem;
 	}	
 }
 
@@ -712,7 +707,7 @@ article > section:not(:first-child){
 		max-width: 700px;
 	}
 }
-.toc + section{
+article > .toc + section{
 	margin-top: 2rem;
 }
 @media only screen and (min-width: 992px){
@@ -754,7 +749,12 @@ article > section:not(:first-child){
 }
 .credits{
 	font-size: 1rem;
-	margin: 3rem auto 2rem;
+	margin-top: 3rem;
+}
+@media only screen and (min-width: 480px){
+	.credits{
+		margin-top: 3.5rem;
+	}
 }
 @media only screen and (min-width: 768px){
 	.credits{
@@ -1825,13 +1825,6 @@ footer p .site-detail:last-child:after{
 	visibility: hidden;
 	justify-content: center;
 	align-items: center;
-  }
-@media only screen and (min-width: 768px){
-	#topButton{
-		font-size: 1.1rem;
-		top: initial;
-		bottom: 1rem;
-	}
 }
 @media only screen and (min-width: 992px){
 	#topButton{
@@ -2137,10 +2130,10 @@ a:focus img{
 	border: 3px #395f65 solid;
 }
 .image-border{
-	border: 1px solid #E7E9E7;
+	border: 1px solid #bdc2bd;
 }
 .image-border-dark{
-	border: 1px solid #4d5b51;
+	border: 1px solid #737d73;
 }
 /* Caption for main image */
 img + p.caption-text,

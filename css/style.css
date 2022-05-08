@@ -711,7 +711,7 @@ article > section:not(:first-child){
 	}
 }
 article > .toc + section{
-	margin-top: 2rem;
+	margin-top: 5rem;
 }
 @media only screen and (min-width: 992px){
 	.content{
@@ -1940,6 +1940,10 @@ aside.text-box{
 	border-left: 6px solid #8db7bf;
 	padding: 1rem;
 	margin: 2rem 0;
+}
+.info-note{
+	font-size: 1rem;
+	margin-bottom: 2.5rem;
 }
 
 

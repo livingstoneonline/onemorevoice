@@ -1893,6 +1893,11 @@ ul{
 .padded-list li:last-child{
 	padding-bottom: 0;
 }
+@media only screen and (min-width: 768px){
+	.indented-list{
+		margin-left: 1.4rem;
+	}
+}
 ol li ol{
 	padding: 0 0 0 .6rem;
 }

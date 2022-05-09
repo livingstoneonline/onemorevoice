@@ -569,7 +569,8 @@ article > section:not(:first-child){
 		flex-direction: column;
 	}
 	.essay .page-details.vertical div{
-		margin-bottom: 16rem;
+		margin-top: 7rem;
+		align-self: flex-start;
 	}
 	.essay .page-details.horizontal figure{
 		width: 50%;
@@ -581,13 +582,16 @@ article > section:not(:first-child){
 	}
 }
 @media only screen and (min-width: 1200px){	
-	.essay .page-details.vertical div{
-		margin-bottom: 14rem;
-	}
 	.essay .page-details.horizontal figure{
 		min-width: 698px;
 	}
-	.essay .page-details.vertical figure{
+	.essay .page-details.vertical.alternative figure{
+		/* min-width: 636px; */
+		min-width: 488px;
+	}
+}
+@media only screen and (min-width: 1366px){	
+	.essay .page-details.vertical.alternative figure{
 		min-width: 636px;
 	}
 }

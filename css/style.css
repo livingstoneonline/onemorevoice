@@ -1,8 +1,6 @@
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
-/* Created and developed by Adrian S. Wisnicki */ /* 2020-2022 */
-
-/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+/* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
 
 /* 
 Table of Contents
@@ -32,13 +30,13 @@ Header and Nav
 Overlay
 Footer
 Scroll to Top Button
-Lists and Lines
+Lists
+Lines
 Random
 Page-Specific Coding
 Thematic Collections Page Images
 Visual Materials Object Gallery
 404 Page
-
 */
 
 /*--------------------------------------*/
@@ -97,6 +95,7 @@ also see 2.9 for manuscript colors
 >>z-index 
 .tooltip-container - z-index: 101;
 .caption-icon .tooltip-container:hover/.caption-icon .tooltip-container:focus-within - z-index: 99;
+.tooltip-container::before - z-index: 101;
 #skip a - z-index: 150;
 .overlay - z-index: 100;
 #topButton - z-index: 75;
@@ -673,7 +672,7 @@ article > section:not(:first-child){
 }
 .caption-icon:hover .caption i,
 .caption-icon:focus-within .caption i{
-	color: #fff;
+	color: #E7E9E7;
 }
 
 
@@ -715,7 +714,7 @@ article > .toc + section{
 		padding-top: 1rem;
 	}
 }
-article section section:not(:first-of-type){
+.content article section section:not(:first-of-type){
 	margin-top: 3rem;
 }
 @media only screen and (min-width: 992px){
@@ -1876,7 +1875,7 @@ footer p .site-detail:last-child:after{
 }
 
 
-/* Lists and Lines */
+/* Lists */
 
 ol,
 ul{
@@ -1902,6 +1901,10 @@ ol li ol{
 		padding-left: 1.2rem;
 	}
 }
+
+
+/* Lines */
+
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 hr{
   /* display: block; */
@@ -1959,7 +1962,7 @@ aside.text-box{
 	padding: 0 2px;
 	min-width: 17px;
 }
-/* The following items are used on the acknowledgments.html page. */
+/* The following items are used on acknowledgments.html */
 ul.acknowledgments{
 	padding-left: 0;
 	list-style: none;
@@ -1969,7 +1972,7 @@ ul.acknowledgments{
 		padding-left: 1.2em;
 	}
 }
-/* The following items are used on the site_map.html page. */ 
+/* The following items are used on site_map.html */ 
 .site-map{
 	line-height: 1.7rem;
 }

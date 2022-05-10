@@ -300,7 +300,7 @@ h3{
 	}
 }
 h3.subtitle{
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-variant: small-caps;
 	font-weight: normal;
 	text-align: left;
@@ -316,7 +316,7 @@ h3.subtitle:before{
 }
 @media only screen and (min-width: 768px){
 	h3.subtitle{
-		font-size: 1rem;
+		font-size: 1.05rem;
 	}
 }
 .credits h3{
@@ -342,6 +342,7 @@ h4{
 	font-family: 'Merriweather', serif;
 	text-align: center;
 }
+section p + h4,
 section h4:not(:first-of-type){
 	margin-top: 3rem;
 }

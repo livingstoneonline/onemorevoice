@@ -567,6 +567,7 @@ article > section:not(:first-child){
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: column;
+		align-self: center;
 	}
 	.essay .page-details.vertical div{
 		margin-top: 7rem;

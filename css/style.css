@@ -33,7 +33,7 @@
 .sections .section-image:after{
 	content: "";
 	display: block;
-	padding-bottom: 66.67%;
+	padding-bottom: 71.43%;
 }
 .sections .section-container a .section-image img{
 	background: #E7E9E7;
@@ -48,11 +48,12 @@
 	object-position: 50% 50%;
 	overflow: hidden;
 }
-.sections .section-container a:hover img,
-.sections .section-container a:focus img{
+.sections .section-container a:hover .section-image img,
+.sections .section-container a:focus .section-image img{
 	border: none;
 	opacity: .7;
 }
+/* End ratio box */
 .sections .section-container a div{}
 .sections .section-container a div h4{
 	color: #305056;

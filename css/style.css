@@ -1,3 +1,9 @@
+/* colors
+(yellow) #dcd3a6;
+(orange) #e3b382;
+(blue) #8db7bf;
+*/
+
 article > section.sections:first-of-type{
 	margin: 0;
 	padding: 0;
@@ -7,6 +13,7 @@ article > section.sections:first-of-type{
 		margin-top: 3rem;
 	}
 }
+/* main container */
 .sections{
 	display: -webkit-flex;
 	display: flex;
@@ -14,21 +21,24 @@ article > section.sections:first-of-type{
 	justify-content: center;	
 	gap: 2rem;
 }
+/* single item container */
 .sections .section-container{
-	padding: 1rem;
-	border: 1px solid #bdc2bd;
 	background: #E7E9E7;
+	/* border: 1px solid #bdc2bd; */
+	padding: 1rem;
 }
 @media only screen and (min-width: 768px){
 	.sections .section-container{
+		display: -webkit-flex;
 		display: flex;
 		flex-direction: row;
 	}
 }
-/* .sections .section-container:hover,
+.sections .section-container:hover,
 .sections .section-container:focus-within{
-	outline: 1px solid #305056;
-} */
+	/* outline: 1px solid #305056; */
+}
+/* main hyperlink */
 .sections .section-container a,
 .sections .section-container a:visited{
 	color: #212119;
@@ -42,36 +52,39 @@ article > section.sections:first-of-type{
 			display: flex;
 			gap: 1rem;
 	}
-	.sections .section-container a div{
-		flex: 1 0 calc(50% - 1rem)
-	}
-}
 .sections .section-container a:hover,
 .sections .section-container a:focus{
 	outline: none;
 	background: inherit;
 }
+/* single item in hyperlink container */
+.sections .section-container a div{
+	flex: 1 0 calc(50% - 1rem)
+}
+}
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
-.sections .section-image{
+/* image container */
+.sections .section-container a .section-image{
 	/* border: 1px solid #737d73; */
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
-.sections .section-image:hover,
-.sections .section-image:focus-within{
+.sections .section-container a .section-image:hover,
+.sections .section-container a .section-image:focus-within{
 	/* outline: 3px solid #395375; */
 	overflow: hidden;
 }
-.sections .section-image:after{
+.sections .section-container a .section-image:after{
 	content: "";
 	display: block;
 	padding-bottom: 71.43%;
 }
+/* main image */
 .sections .section-container a .section-image img{
 	background: #E7E9E7;
-	border: 1px solid transparent;
+	border: 1px solid transparent
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -89,6 +102,7 @@ article > section.sections:first-of-type{
 	/* opacity: .7; */
 }
 /* End ratio box */
+/* text container */
 .sections .section-container a div:nth-child(2){
 	padding: 1rem;
 	display: -webkit-flex;
@@ -96,6 +110,7 @@ article > section.sections:first-of-type{
 	flex-direction: column;
 	justify-content: center;	
 }
+/* heading */
 .sections .section-container a div h4{
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
@@ -104,10 +119,12 @@ article > section.sections:first-of-type{
 }
 @media only screen and (min-width: 768px){
 	.sections .section-container a div h4{
+		color: #305056;
 		text-align: left;
 		margin: 0;
 	}
 }
+/* paragraph of text */
 .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
@@ -265,13 +282,16 @@ button{
 	all: unset;
   -webkit-appearance: button;
 }
-html{
+:root{
 	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
 	/* font: 16px 'Source Sans Pro', sans-serif; */
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	line-height: 2rem;
 	color: #212119;
+	
+}
+html{
 	background: #ededed;
 	/* overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -299,35 +319,40 @@ body{
 
 /* Section-Specific Colors */
 
+/* blue border left, organge bottom, yellow frame */
 .home h2,
 .documents h2{
 	border-left: 12px solid #8db7bf;
-}
-.materials h2{
-	border-left: 12px solid #dcd3a6;
 }
 .home h3,
 .documents h3{
 	border-bottom: 8px solid #e3b382;
 }
-.materials h3{
-	border-bottom: 8px solid #dcd3a6;
-}
 .home .toc ol:before,
 .documents .toc ol:before{
 	border-bottom: 4px solid #e3b382;
-}
-.materials .toc ol:before{
-	border-bottom: 4px solid #dcd3a6;
 }
 .home .content div.decoration,
 .documents .content div.decoration{
 	background: #dcd3a6;
 }
+
+/* yellow border left, yellow border bottom, blue frame */
+.materials h2{
+	border-left: 12px solid #dcd3a6;
+}
+.materials h3{
+	border-bottom: 8px solid #dcd3a6;
+}
+.materials .toc ol:before{
+	border-bottom: 4px solid #dcd3a6;
+}
 .materials .content div.decoration{
 	background: #8db7bf;
 }
-.materials .content.recovered div.decoration{
+
+/* gray frame for recovered */
+.content.recovered div.decoration{
 	background: #bdc2bd;
 }
 

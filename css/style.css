@@ -2,6 +2,11 @@ article > section.sections:first-of-type{
 	margin: 0;
 	padding: 0;
 }
+@media only screen and (min-width: 768px){
+	article > section.sections:first-of-type{
+		margin-top: 3rem;
+	}
+}
 .sections{
 	display: -webkit-flex;
 	display: flex;
@@ -9,42 +14,42 @@ article > section.sections:first-of-type{
 	justify-content: center;	
 	gap: 2rem;
 }
-@media only screen and (min-width: 768px){
-	.sections{
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-}
 .sections .section-container{
 	padding: 1rem;
+	border: 1px solid #bdc2bd;
+	background: #E7E9E7;
 }
 @media only screen and (min-width: 768px){
 	.sections .section-container{
-		flex: 0 0 calc(50% - 1rem);
+		display: flex;
+		flex-direction: row;
 	}
 }
-@media only screen and (min-width: 1200px){
-	.sections .section-container{
-		flex: 0 0 calc(33% - 2rem);
-	}
-}
-@media only screen and (min-width: 1600px){
-	.sections .section-container{
-		flex: 0 0 calc(25% - 2rem);
-	}
-}
-.sections .section-container:hover,
+/* .sections .section-container:hover,
 .sections .section-container:focus-within{
 	outline: 1px solid #305056;
-}
-
+} */
 .sections .section-container a,
 .sections .section-container a:visited{
 	color: #212119;
 	text-decoration: none;
-}.sections .section-container a:hover,
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+		.sections .section-container a,
+		.sections .section-container a:visited{
+			display: -webkit-flex;
+			display: flex;
+			gap: 1rem;
+	}
+	.sections .section-container a div{
+		flex: 1 0 calc(50% - 1rem)
+	}
+}
+.sections .section-container a:hover,
 .sections .section-container a:focus{
 	outline: none;
+	background: inherit;
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
@@ -66,6 +71,7 @@ article > section.sections:first-of-type{
 }
 .sections .section-container a .section-image img{
 	background: #E7E9E7;
+	border: 1px solid transparent;
 	width: 100%;
   height: 100%;
 	position: absolute;
@@ -78,12 +84,17 @@ article > section.sections:first-of-type{
 }
 .sections .section-container a:hover .section-image img,
 .sections .section-container a:focus .section-image img{
-	border: none;
-	opacity: .7;
+	border: 1px solid transparent;
+	outline: none;
+	/* opacity: .7; */
 }
 /* End ratio box */
 .sections .section-container a div:nth-child(2){
 	padding: 1rem;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
 }
 .sections .section-container a div h4{
 	font-size: 1.3rem;
@@ -91,8 +102,15 @@ article > section.sections:first-of-type{
 	font-weight: 400;
 	margin-top: 0;
 }
+@media only screen and (min-width: 768px){
+	.sections .section-container a div h4{
+		text-align: left;
+		margin: 0;
+	}
+}
 .sections .section-container a div p{
 	line-height: 1.6rem;
+	font-style: italic;
 }
 
 
@@ -2393,7 +2411,7 @@ section.archival-text .no-image .content{
 
 /* 1.13. Book-Length Works */
 
-#books{
+/* #books{
 	font-size: .85em;
 	line-height: 1.875em;
 }
@@ -2402,7 +2420,7 @@ section.archival-text .no-image .content{
 		font-size: .95em;
 		line-height: 1.5em;
 	}
-}
+} */
 #books h4,
 .published-author,
 .author-details,

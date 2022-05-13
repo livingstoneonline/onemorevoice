@@ -5,6 +5,7 @@
 */
 
 
+/* Middle Categories Pages */
 /* main container */
 .sections{
 	background: #575757;
@@ -14,7 +15,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;	
-	gap: 2rem;
+	gap: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+	.sections{
+		background: initial;
+		padding: 1rem 0 2rem;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 /* single item container */
 .sections .section-container{
@@ -22,14 +31,26 @@
 }
 @media only screen and (min-width: 768px){
 	.sections .section-container{
-		display: -webkit-flex;
-		display: flex;
+		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
+		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
+		box-shadow: #697c6f 0px 3px 7px 0px;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		flex: 0 0 calc(50% - 2rem)
 	}
 }
 .sections .section-container:hover,
 .sections .section-container:focus-within{
 	outline: 6px solid #e3b382;
 }
+@media only screen and (min-width: 768px){
+	.sections .section-container:hover,
+	.sections .section-container:focus-within{
+		outline: 4px solid #e3b382;
+	}
+}
+
 /* main hyperlink */
 .sections .section-container a,
 .sections .section-container a:visited{
@@ -37,18 +58,9 @@
 	text-decoration: none;
 	width: 100%;
 }
-@media only screen and (min-width: 768px){
-		.sections .section-container a,
-		.sections .section-container a:visited{
-			display: -webkit-flex;
-			display: flex;
-			flex-direction: row;
-		}
-}
 .sections .section-container a:hover,
 .sections .section-container a:focus{
 	outline: none;
-	background: inherit;
 }
 /* single item in hyperlink container */
 .sections .section-container a div{
@@ -87,10 +99,23 @@
 	object-position: 50% 50%;
 	overflow: hidden;
 }
-.sections .section-container:hover a .section-image img,
-.sections .section-container:focus-within a .section-image img{
-	filter: invert(1);
+/* Section image overlay adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.sections .section-container a .section-image .section-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #8db7bf;
 }
+.sections .section-container:hover a .section-image .section-image-overlay,
+.sections .section-container:focus-within a .section-image .section-image-overlay{
+  opacity: .2;
+}
+
 /* End ratio box */
 /* text container */
 .sections .section-container a div:nth-child(2){
@@ -131,9 +156,10 @@ Section-Specific Colors
 Headers
 Page Menus
 Main, Article, Section
-Home Top
+Home/Categories Top
 Essay Top
 Main Image Caption Button
+Middle Categories Pages
 Home and Essay Bottom
 Images and Related
 Links
@@ -587,7 +613,7 @@ article > section:not(:first-child){
 }
 
 
-/* Home Top */
+/* Home/Categoies Top */
 
 .home .introduction-section .image-wrapper,
 .categories .introduction-section .image-wrapper{
@@ -612,6 +638,7 @@ article > section:not(:first-child){
 }
 .categories .introduction-section .introduction-text{
 	padding: 2rem 1rem;
+	max-width: 700px;
 	gap: 1rem;
 }
 @media only screen and (min-width: 992px){

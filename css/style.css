@@ -1,4 +1,4 @@
-.array h2{
+/* .array h2{
 	border-left: 12px solid #8db7bf;
 }
 .array h3{
@@ -13,7 +13,7 @@
 }
 h3#sections{
 	margin-bottom: -1rem;
-}
+} */
 
 /* colors
 (yellow) #dcd3a6;
@@ -21,10 +21,10 @@ h3#sections{
 (blue) #8db7bf;
 */
 
-article > section.sections:first-of-type{
+/* article > section.sections:first-of-type{
 	margin: 0;
 	padding: 0;
-}
+} */
 /* @media only screen and (min-width: 768px){
 	article > section.sections:first-of-type{
 		margin-top: 3rem;
@@ -32,6 +32,7 @@ article > section.sections:first-of-type{
 } */
 /* main container */
 .sections{
+	width: 100%;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;

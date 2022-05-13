@@ -319,7 +319,7 @@ body{
 	border-bottom: 4px solid #e3b382;
 }
 .home .content div.decoration,
-.sphere .content div.decoration,
+.categories .content div.decoration,
 .documents .content div.decoration{
 	background: #dcd3a6;
 }
@@ -454,18 +454,18 @@ h3.subtitle:before{
 	border-bottom: 6px solid #8db7bf;
 }
 .home h3#citation,
-.sphere h3#citation{
+.categories h3#citation{
 	margin-top: 1rem;
 }
 @media only screen and (min-width: 768px){
 	.home h3#citation,
-	.sphere h3#citation{
+	.categories h3#citation{
 		margin-top: 0;
 	}
 }
 @media only screen and (min-width: 992px){
 	.home h3#citation,
-	.sphere h3#citation{
+	.categories h3#citation{
 		margin-top: 2.5rem;
 	}
 }
@@ -590,19 +590,19 @@ article > section:not(:first-child){
 /* Home Top */
 
 .home .introduction-section .image-wrapper,
-.sphere .introduction-section .image-wrapper{
+.categories .introduction-section .image-wrapper{
 	display: block;
 	visibility: visible;
 	position: relative;
 }
 .home .introduction-section img,
-.sphere .introduction-section img{
+.categories .introduction-section img{
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 }
 .home .introduction-section .introduction-text,
-.sphere .introduction-section .introduction-text{
+.categories .introduction-section .introduction-text{
 	display: -webkit-flex;
   display: flex;
 	flex-direction: column;
@@ -610,17 +610,17 @@ article > section:not(:first-child){
 .home .introduction-section .introduction-text{
 	padding: 1.5rem 1rem 1rem;
 }
-.sphere .introduction-section .introduction-text{
+.categories .introduction-section .introduction-text{
 	padding: 2rem 1rem;
 	gap: 1rem;
 }
 @media only screen and (min-width: 992px){
 	.home .introduction-section,
-	.sphere .introduction-section{
+	.categories .introduction-section{
 		position: relative;
 	}
 	.home .introduction-section .introduction-text,
-	.sphere .introduction-section .introduction-text{
+	.categories .introduction-section .introduction-text{
 		background: rgb(226, 228, 226, .96);
 		border-radius: 6px;
 		-webkit-border-radius: 6px;
@@ -634,52 +634,52 @@ article > section:not(:first-child){
 	.home .introduction-section .introduction-text{
 		width: 700px;
 	}
-	.sphere .introduction-section .introduction-text{
+	.categories .introduction-section .introduction-text{
 		width: fit-content;
 	}
 }
 .home .introduction-text h2,
-.sphere .introduction-text h2{
+.categories .introduction-text h2{
 	text-align: center;
 }
-.sphere .introduction-text h2{
+.categories .introduction-text h2{
 	margin: 0;
 }
 .home .introduction-section p,
-.sphere .introduction-section p{
+.categories .introduction-section p{
 	line-height: 1.875em;
 }
 .home .introduction-section p{
 	text-align: left;
 }
-.sphere .introduction-section p{
+.categories .introduction-section p{
 	margin: 0;
 	padding: 0;
 }
 /* Introduction text ordering */
 .home .introduction-section .introduction-text h2,
-.sphere .introduction-section .introduction-text h2{
+.categories .introduction-section .introduction-text h2{
 	order: 2;
 }
 .home .introduction-section .introduction-text p,
-.sphere .introduction-section .introduction-text p{
+.categories .introduction-section .introduction-text p{
 	order: 3;
 }
 .home .introduction-section .introduction-text div,
-.sphere .introduction-section .introduction-text div{
+.categories .introduction-section .introduction-text div{
 	order: 1;
 }
 @media only screen and (min-width: 992px){
 	.home .introduction-section .introduction-text h2,
-	.sphere .introduction-section .introduction-text h2{
+	.categories .introduction-section .introduction-text h2{
 		order: 1;
 	}
 	.home .introduction-section .introduction-text p,
-	.sphere .introduction-section .introduction-text p{
+	.categories .introduction-section .introduction-text p{
 		order: 2;
 	}
 	.home .introduction-section .introduction-text div,
-	.sphere .introduction-section .introduction-text div{
+	.categories .introduction-section .introduction-text div{
 		order: 3;
 	}
 }
@@ -934,7 +934,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 768px){
 	.home .credits:first-of-type,
-	.sphere .credits:first-of-type{
+	.categories .credits:first-of-type{
 		margin-top: 1rem;
 	}
 }

@@ -16,9 +16,7 @@
 /* main container */
 .sections{
 	background: #575757;
-	border-top: 6px solid #212119;
-	border-bottom: 6px solid #212119;
-	padding: 2rem 1rem;
+	padding: 1.5rem 1rem;
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
@@ -38,7 +36,7 @@
 }
 .sections .section-container:hover,
 .sections .section-container:focus-within{
-	outline: none;
+	outline: 6px solid #e3b382;
 }
 /* main hyperlink */
 .sections .section-container a,
@@ -69,7 +67,7 @@
 /* image container */
 .sections .section-container a .section-image{
 	border: 1px solid #737d73;
-	margin: 1rem 1rem 0;
+	margin: 1.5rem 1rem 0;
 	padding: 0;
 	position: relative;
 }
@@ -97,15 +95,13 @@
 	object-position: 50% 50%;
 	overflow: hidden;
 }
-.sections .section-container a:hover .section-image img,
-.sections .section-container a:focus .section-image img{
-	border: none;
-	outline: none;
+.sections .section-container:hover a .section-image img,
+.sections .section-container:focus-within a .section-image img{
+	filter: invert(1);
 }
 /* End ratio box */
 /* text container */
 .sections .section-container a div:nth-child(2){
-	/* background: #bdc2bd; */
 	padding: 1rem;
 	display: -webkit-flex;
 	display: flex;
@@ -615,8 +611,6 @@ article > section:not(:first-child){
 }
 .home .introduction-section .introduction-text,
 .sphere .introduction-section .introduction-text{
-	text-align: center;
-	margin: 0 auto;
 	display: -webkit-flex;
   display: flex;
 	flex-direction: column;
@@ -625,8 +619,52 @@ article > section:not(:first-child){
 	padding: 1.5rem 1rem 1rem;
 }
 .sphere .introduction-section .introduction-text{
-	padding: 1rem;
+	padding: 2rem 1rem;
+	gap: 1rem;
 }
+@media only screen and (min-width: 992px){
+	.home .introduction-section,
+	.sphere .introduction-section{
+		position: relative;
+	}
+	.home .introduction-section .introduction-text,
+	.sphere .introduction-section .introduction-text{
+		background: rgb(226, 228, 226, .96);
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		padding: 2rem;
+		position: absolute;
+    left: 50%;
+		top: 38%;
+    transform: translate(-50%, -38%);
+	}
+	.home .introduction-section .introduction-text{
+		width: 700px;
+	}
+	.sphere .introduction-section .introduction-text{
+		width: fit-content;
+	}
+}
+.home .introduction-text h2,
+.sphere .introduction-text h2{
+	text-align: center;
+}
+.sphere .introduction-text h2{
+	margin: 0;
+}
+.home .introduction-section p,
+.sphere .introduction-section p{
+	line-height: 1.875em;
+}
+.home .introduction-section p{
+	text-align: left;
+}
+.sphere .introduction-section p{
+	margin: 0;
+	padding: 0;
+}
+/* Introduction text ordering */
 .home .introduction-section .introduction-text h2,
 .sphere .introduction-section .introduction-text h2{
 	order: 2;
@@ -652,40 +690,6 @@ article > section:not(:first-child){
 	.sphere .introduction-section .introduction-text div{
 		order: 3;
 	}
-}
-@media only screen and (min-width: 992px){
-	.home .introduction-section,
-	.sphere .introduction-section{
-		position: relative;
-	}
-	.home .introduction-section .introduction-text{
-		width: 700px;
-	}
-	.sphere .introduction-section .introduction-text{
-		width: fit-content;
-	}
-	.home .introduction-section .introduction-text,
-	.sphere .introduction-section .introduction-text{
-		background: rgb(226, 228, 226, .96);
-		border-radius: 6px;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-		padding: 2rem;
-		position: absolute;
-    left: 50%;
-		top: 38%;
-    transform: translate(-50%, -38%);
-	}
-}
-.sphere .introduction-text h2{
-	margin: 0;
-}
-.home .introduction-section p,
-.sphere .introduction-section p{
-	line-height: 1.875em;
-}
-.home .introduction-section p{
-	text-align: left;
 }
 
 

@@ -8,49 +8,41 @@
 /* Middle Categories Pages */
 /* main container */
 .sections{
-	background: #575757;
-	padding: 1.5rem 1rem;
+	padding: 1rem;
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;	
-	gap: 1.5rem;
+	gap: 2rem;
 }
 @media only screen and (min-width: 768px){
 	.sections{
-		background: initial;
 		padding: 1rem 0 2rem;
 		flex-direction: row;
 		flex-wrap: wrap;
+		gap: 1.5rem;
 	}
 }
 /* single item container */
 .sections .section-container{
 	background: #ededed;
-}
-@media only screen and (min-width: 768px){
-	.sections .section-container{
 		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
 		box-shadow: #697c6f 0px 3px 7px 0px;
 		border-radius: 6px;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
+	}
+@media only screen and (min-width: 768px){
+	.sections .section-container{
 		flex: 0 0 calc(50% - 2rem)
 	}
 }
 .sections .section-container:hover,
 .sections .section-container:focus-within{
-	outline: 6px solid #e3b382;
+	outline: 4px solid #e3b382;
 }
-@media only screen and (min-width: 768px){
-	.sections .section-container:hover,
-	.sections .section-container:focus-within{
-		outline: 4px solid #e3b382;
-	}
-}
-
 /* main hyperlink */
 .sections .section-container a,
 .sections .section-container a:visited{
@@ -479,22 +471,6 @@ h3.subtitle:before{
 	text-align: center;
 	border-bottom: 6px solid #8db7bf;
 }
-.home h3#citation,
-.categories h3#citation{
-	margin-top: 1rem;
-}
-@media only screen and (min-width: 768px){
-	.home h3#citation,
-	.categories h3#citation{
-		margin-top: 0;
-	}
-}
-@media only screen and (min-width: 992px){
-	.home h3#citation,
-	.categories h3#citation{
-		margin-top: 2.5rem;
-	}
-}
 h4{
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
@@ -888,7 +864,7 @@ article > section:not(:first-child){
     display: flex;
 	}
 	.content article{
-		margin: 0 2rem;		
+		margin: 0 2rem 1rem;		
 		padding: 0;
 		max-width: 700px;
 	}
@@ -908,7 +884,7 @@ article > .toc + section{
 	}
 	.content article{
 		margin: 0 4rem;
-		padding-bottom: 2rem;
+		padding-bottom: 1rem;
 	}
 	.content article > section:first-child{
 		padding-top: 1rem;
@@ -962,7 +938,7 @@ article > .toc + section{
 @media only screen and (min-width: 768px){
 	.home .credits:first-of-type,
 	.categories .credits:first-of-type{
-		margin-top: 1rem;
+		margin-top: 3rem;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -1614,8 +1590,8 @@ nav.overlay-nav .button-container{
 		gap: 1rem;
 	}
 }
+nav .button-container .home-icon,
 nav .button-container a.external,
-nav .button-container a.external.home-icon,
 nav.overlay-nav .button-container a.external.home-icon{
 	height: fit-content;
 	display: none;

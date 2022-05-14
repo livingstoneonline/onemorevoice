@@ -664,6 +664,11 @@ article > section:not(:first-child){
 	margin: 0;
 	padding: 0;
 }
+@media only screen and (min-width: 992px){
+	.categories .introduction-section p{
+		padding: 0 1.5rem;
+	}
+}
 /* Introduction text ordering */
 .home .introduction-section .introduction-text h2,
 .categories .introduction-section .introduction-text h2{

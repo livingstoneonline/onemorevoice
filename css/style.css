@@ -342,7 +342,6 @@ body{
 	border-bottom: 4px solid #e3b382;
 }
 .home .content div.decoration,
-.categories .content div.decoration,
 .documents .content div.decoration{
 	background: #dcd3a6;
 }
@@ -357,6 +356,7 @@ body{
 .materials .toc ol:before{
 	border-bottom: 4px solid #dcd3a6;
 }
+.categories .content div.decoration,
 .materials .content div.decoration{
 	background: #8db7bf;
 }
@@ -751,7 +751,8 @@ article > section:not(:first-child){
 		align-self: center;
 	}
 	.essay .page-details.vertical div{
-		margin-top: 7rem;
+		margin: 7rem 2rem 0 0;
+		padding: 0 1.5rem 0 3rem;
 		align-self: flex-start;
 	}
 	.essay .page-details.horizontal figure{

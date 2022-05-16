@@ -18,10 +18,21 @@
 }
 @media only screen and (min-width: 768px){
 	.sections{
-		padding: 1rem 0 2rem;
+		padding: 2rem 0;
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 1.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.sections{
+		gap: 2rem;
+	}
+}
+@media only screen and (min-width: 1600px){
+	.sections{
+		padding: 3rem 0;
+		gap: 3rem;
 	}
 }
 /* single item container */
@@ -36,12 +47,22 @@
 	}
 @media only screen and (min-width: 768px){
 	.sections .section-container{
-		flex: 0 0 calc(50% - 2rem)
+		flex: 0 0 calc(50% - 1.5rem)
 	}
 }
 @media only screen and (min-width: 992px){
 	.sections .section-container{
 		flex: 0 0 calc(33% - 2rem)
+	}
+}
+@media only screen and (min-width: 1366px){
+	.sections .section-container{
+		flex: 0 0 calc(25% - 2rem)
+	}
+}
+@media only screen and (min-width: 1600px){
+	.sections .section-container{
+		flex: 0 0 calc(20% - 3rem)
 	}
 }
 .sections .section-container:hover,
@@ -949,7 +970,7 @@ article > .toc + section{
 @media only screen and (min-width: 768px){
 	.home .credits:first-of-type,
 	.categories .credits:first-of-type{
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -1631,7 +1652,7 @@ nav.overlay-nav .button-container a.external.home-icon{
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .button-container a.external.home-icon,
+	nav .button-container .home-icon,
 	nav.overlay-nav .button-container a.external.home-icon{
 		display: -webkit-flex;
   	display: flex;

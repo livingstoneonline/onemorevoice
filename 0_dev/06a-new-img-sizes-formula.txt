@@ -17,7 +17,7 @@ sizes="(min-width: 760px) 488px, (min-width: 480px) calc(59.23vw + 50px), 100vw"
 -colorspace RGB
 
 
-**** Home Page****
+**** Home/Categories Pages****
 
 mogrify -format jpg -resize 320x320 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/320 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/320 && find . -exec rename 's|.jpg|-320px.jpg|' {} + && cd - && 
 

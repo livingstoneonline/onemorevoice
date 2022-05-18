@@ -466,7 +466,8 @@ article > section:not(:first-child){
 .categories .introduction-section img{
 	margin: 0 auto;
 	padding: 0;
-	width: 100%;
+	width: 100vw;
+	max-width: 1600px;
 }
 .home .introduction-section .introduction-text,
 .categories .introduction-section .introduction-text{
@@ -986,10 +987,12 @@ article > .toc + section{
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 img{
 	font-weight: 300;
-	color: #E7E9E7;
+	color: transparent;
+	background: #E7E9E7;
 	border-style: none;
 	width: 100%;
 	height: auto;
+	display: block;
 }
 a img{
 	border: 3px transparent solid;

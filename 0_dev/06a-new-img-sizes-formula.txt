@@ -52,7 +52,7 @@ find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
-**** Main Pages, Tiles ****
+**** Main Pages/Categories Pages, Tiles ****
 
 mogrify -format jpg -resize 252x252 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/252 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/252 && find . -exec rename 's|.jpg|-252px.jpg|' {} + && cd - && 
 
@@ -79,6 +79,8 @@ mogrify -format jpg -resize 660x660 -sampling-factor 4:2:0 -strip -quality 85 -i
 mogrify -format jpg -resize 824x824 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/824 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/824 && find . -exec rename 's|.jpg|-824px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages/tiles \;
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays/tiles \;
 
 **** 100% Visual Materials ****
 

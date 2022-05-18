@@ -454,7 +454,7 @@ article > section:not(:first-child){
 }
 
 
-/* Home/Categoies Top */
+/* Home/Categories Top */
 
 .home .introduction-section .image-wrapper,
 .categories .introduction-section .image-wrapper{
@@ -1914,12 +1914,16 @@ nav .close-icon:focus-within
   font-size: 1.2rem;
   font-weight: 600;
 }
-.overlay .text-container h2:nth-child(1),
+/* .overlay .text-container h2:nth-child(1),
 .overlay .text-container h2:nth-child(3),
 .overlay .text-container h2:nth-child(4),
-.overlay .text-container h2:nth-child(6),
+.overlay .text-container h2:nth-child(6), */
+.overlay .text-container h2,
 .overlay ul li{
 	border-bottom: 1px solid #ededed;
+}
+.overlay .text-container h2:last-child{
+	border: none;
 }
 .overlay h2 + div{
   background: inherit;

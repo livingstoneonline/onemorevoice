@@ -2057,9 +2057,9 @@ footer p .site-detail:last-child:after{
 @media only screen and (min-width: 992px){
 	#topButton{
 		font-size: 1.1rem;
-		top: 50%;
+		top: unset;
 		right: 3rem;
-		transform: translate(0, -50%);
+		bottom: 6.5rem;
 	}
 }
 @media only screen and (min-width: 1200px){

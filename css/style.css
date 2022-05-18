@@ -1752,7 +1752,8 @@ nav.overlay-nav .close-icon.desktop{
 	}
 }
 nav.fallback .hamburger-menu{
-	display: block;
+	margin: 0 0.5rem 0 0;
+	display: flex;
 	visibility: visible;
 }
 nav .hamburger-menu .fa-bars,

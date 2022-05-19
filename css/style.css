@@ -2338,20 +2338,24 @@ img + p.caption-text,
 	line-height: 1.6rem;
 }
 
+
 /* Site Map */
 /* Take from https://stackoverflow.com/a/56758842 */
-details>summary{
+details > summary{
   list-style: none;
 }
 summary::-webkit-details-marker{
-  display: none
+  display: none;
 }
 summary::after{
-  content: ' ►';
+	font-family: "Font Awesome 6 Free";
+	content: " \f0da";
+	font-weight: 900;
 }
 details[open] > summary:after{
-  content: " ▼";
+  content: " \f0d7";
 }
+
 
 /* Site Sections */
 .essay .site-links{

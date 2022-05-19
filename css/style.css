@@ -2193,16 +2193,6 @@ ul.acknowledgments{
 		padding-left: 1.2em;
 	}
 }
-/* The following items are used on site_map.html */ 
-.site-map{
-	line-height: 1.7rem;
-}
-.site-map ol li:first-child{
-	margin-top: .5rem;
-}
-.site-map li{
-	margin-bottom: 1rem;
-}
 
 
 /* Thematic Collections Page Images */
@@ -2340,9 +2330,21 @@ img + p.caption-text,
 
 
 /* Site Map */
+.site-map{
+	line-height: 1.7rem;
+}
+.site-map ol li:first-child{
+	margin-top: .5rem;
+}
+.site-map li{
+	margin-bottom: 1rem;
+}
 /* Take from https://stackoverflow.com/a/56758842 */
 details > summary{
   list-style: none;
+}
+details[open] > summary{
+	padding-bottom: .25rem;
 }
 summary::-webkit-details-marker{
   display: none;
@@ -2921,6 +2923,9 @@ section.archival-text .no-image .content{
 
 .bold{
 	font-weight: 600;
+}
+.caps{
+	text-transform: uppercase;
 }
 .center{
 	text-align: center;

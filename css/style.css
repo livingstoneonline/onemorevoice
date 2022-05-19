@@ -1,3 +1,40 @@
+.essay .site-links{
+	margin: 0 0 1rem;
+	display: -webkit-flex;
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.essay .site-links  a.action-button{
+	font-size: 1rem;
+	text-transform: none;
+	white-space: nowrap;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	margin: 1.25rem 1rem;
+	padding: 10px 0;
+	width: 11rem;
+	display: -webkit-flex;
+  display: flex;
+	visibility: visible;
+	align-items: center;
+	justify-content: center;
+}
+.essay .site-links  a.action-button{
+	color: #212119;
+}
+.essay .site-links  a.action-button:hover,
+.essay .site-links  a.action-button:focus{
+	color: #fff;
+}
+.essay .site-links i{
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */

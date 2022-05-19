@@ -37,6 +37,7 @@ Random
 Page-Specific Coding
 Thematic Collections Page Images
 Visual Materials Object Gallery
+Site Map
 Site Sections
 404 Page
 */
@@ -2337,6 +2338,20 @@ img + p.caption-text,
 	line-height: 1.6rem;
 }
 
+/* Site Map */
+/* Take from https://stackoverflow.com/a/56758842 */
+details>summary{
+  list-style: none;
+}
+summary::-webkit-details-marker{
+  display: none
+}
+summary::after{
+  content: ' ►';
+}
+details[open] > summary:after{
+  content: " ▼";
+}
 
 /* Site Sections */
 .essay .site-links{

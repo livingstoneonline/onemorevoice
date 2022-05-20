@@ -2497,14 +2497,14 @@ img + p.caption-text,
 	.visuals.gallery figure{
 		flex: 0 0 calc(33% - 2rem);
 	}
-	.films.gallery div.wrapper{
-		margin: 0;
-		flex: 0 0 calc(50% - 1.5rem);
-	}
 }
 @media only screen and (min-width: 768px){
 	.gallery{
 		gap: 2rem 2rem;
+	}
+	.films.gallery div.wrapper{
+		margin: 0;
+		flex: 0 0 calc(50% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 1200px){

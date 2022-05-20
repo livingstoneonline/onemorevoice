@@ -1,42 +1,14 @@
 /* 1.14 Motion Pictures */
 
-#films{
-	font-size: .85em;
-	line-height: 1.6em;
-}
-@media only screen and (min-width: 768px){
-	#films{
-		font-size: .95em;
-		line-height: 1.5em;
-	}
-}
-#films h4{
-	font-size: 1.15em;
-	font-style: normal;
-	font-weight: 600;
-	color: white;
-	background: #902D27;
-	margin: 0 0 1.5em 0;
-	padding: 10px 14px;
+.films .wrapper{
+	border: 1px solid #858585;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	display: -webkit-flex;
-  display: flex;
-	justify-content: space-between;
+	margin: 0 auto 2em auto;
+	padding: 0;
 }
-#films section:first-child h4:first-child{
-	margin-top: 0;
-}
-/* #films h4 .return-top{
-	color: white;
-}
-#films h4 a.return-top:focus,
-#films h4 a.return-top:hover{
-	color: #a83c37;
-	background: #e3e3e3;
-} */
-#films h5{
+.films h4{
 	font-size: 1.05em;
 	background: #e3e3e3;
 	border-bottom: 1px solid #858585;
@@ -46,38 +18,22 @@
 	margin: 0;
 	padding: 10px 16px;
 }
-#films ul{
+.films ul{
 	font-size: .95em;
 	list-style: none;
 	border-top: 1px solid #858585;
 	margin: 0;
 	padding: 1em 1.5em;
 }
-#films li{
-	padding: 0 0 .6em 0;
-}
-#films li:last-child{
-	padding-bottom: 0;
-}
-#films p.warning{
+.films p.warning{
 	background: #e3e3e3;
 	border: 1px solid #902D27;
 	margin: 0 0 2em 0;
 	padding: 5px 7px;
 }
-#films section:last-of-type{
-	margin-bottom: 1em;
-}
+
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
-.wrapper{
-	border: 1px solid #858585;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 auto 2em auto;
-	padding: 0;
-}
 .youtube{
 	cursor: pointer;
 	border: 3px transparent solid;
@@ -226,7 +182,6 @@
 	display: block;
 	visibility: visible;
 }
-
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .screenshot{
 	border: 3px transparent solid;
@@ -261,6 +216,7 @@
 	border: none;
 	opacity: 0.6;
 }
+
 
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
@@ -2519,7 +2475,8 @@ img + p.caption-text,
 	justify-content: center;
 	gap: 2rem;
 }
-.gallery figure{
+.visuals.gallery figure,
+.films.gallery div.wrapper{
 	margin: 0;
 }
 @media only screen and (min-width: 480px){
@@ -2528,7 +2485,7 @@ img + p.caption-text,
 		flex-wrap: wrap;
 		gap: 2rem 1.5rem;
 	}
-	.gallery figure{
+	.visuals.gallery figure{
 		margin: 0;
 		flex: 0 0 calc(50% - 1.5rem);
 	}
@@ -2537,8 +2494,12 @@ img + p.caption-text,
 	.gallery{
 		gap: 2rem;
 	}
-	.gallery figure{
+	.visuals.gallery figure{
 		flex: 0 0 calc(33% - 2rem);
+	}
+	.films.gallery div.wrapper{
+		margin: 0;
+		flex: 0 0 calc(50% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 768px){
@@ -2550,20 +2511,31 @@ img + p.caption-text,
 	.gallery{
 		gap: 2rem 2rem;
 	}
-	.gallery figure{
+	.visuals.gallery figure{
 		flex: 0 0 calc(25% - 2rem);
 	}
 }
 @media only screen and (min-width: 1366px){
-	.gallery figure{
+	.visuals.gallery figure{
 		flex: 0 0 calc(20% - 2rem);
 	}
 }
 @media only screen and (min-width: 1600px){
-	.gallery figure{
+	.visuals.gallery figure{
 		flex: 0 0 calc(17% - 2rem);
 	}
 }
+
+		/* .films.gallery div.wrapper{
+		flex: 0 0 calc(33% - 2rem);
+	} */
+	/* .films.gallery div.wrapper{
+		flex: 0 0 calc(25% - 2rem);
+	} */
+	/* .films.gallery div.wrapper{
+		flex: 0 0 calc(20% - 2rem);
+	} */
+
 .gallery .image-container{
 	padding: 0;
 }

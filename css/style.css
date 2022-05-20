@@ -1,3 +1,267 @@
+/* 1.14 Motion Pictures */
+
+#films{
+	font-size: .85em;
+	line-height: 1.6em;
+}
+@media only screen and (min-width: 768px){
+	#films{
+		font-size: .95em;
+		line-height: 1.5em;
+	}
+}
+#films h4{
+	font-size: 1.15em;
+	font-style: normal;
+	font-weight: 600;
+	color: white;
+	background: #902D27;
+	margin: 0 0 1.5em 0;
+	padding: 10px 14px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	display: -webkit-flex;
+  display: flex;
+	justify-content: space-between;
+}
+#films section:first-child h4:first-child{
+	margin-top: 0;
+}
+/* #films h4 .return-top{
+	color: white;
+}
+#films h4 a.return-top:focus,
+#films h4 a.return-top:hover{
+	color: #a83c37;
+	background: #e3e3e3;
+} */
+#films h5{
+	font-size: 1.05em;
+	background: #e3e3e3;
+	border-bottom: 1px solid #858585;
+	border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	margin: 0;
+	padding: 10px 16px;
+}
+#films ul{
+	font-size: .95em;
+	list-style: none;
+	border-top: 1px solid #858585;
+	margin: 0;
+	padding: 1em 1.5em;
+}
+#films li{
+	padding: 0 0 .6em 0;
+}
+#films li:last-child{
+	padding-bottom: 0;
+}
+#films p.warning{
+	background: #e3e3e3;
+	border: 1px solid #902D27;
+	margin: 0 0 2em 0;
+	padding: 5px 7px;
+}
+#films section:last-of-type{
+	margin-bottom: 1em;
+}
+/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
+/* Review https://codepen.io/beardofprey/pen/MXmxXR */
+.wrapper{
+	border: 1px solid #858585;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: 0 auto 2em auto;
+	padding: 0;
+}
+.youtube{
+	cursor: pointer;
+	border: 3px transparent solid;
+	margin: .5em;
+	padding-top: 56.25%;
+	overflow: hidden;
+	position: relative;
+}
+.youtube:hover,
+.youtube:focus{
+	border: 3px #204A79 solid;
+}
+.youtube img{
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+}
+.youtube:hover img,
+.youtube:focus img{
+	opacity: 0.6;
+}
+.youtube .play-button,
+.screenshot .play-button{
+	background: #902D27;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	width: 60px;
+	height: 40px;
+	z-index: 2;
+}
+@media only screen and (min-width: 480px){
+	.youtube .play-button,
+	.screenshot .play-button{
+		width: 90px;
+		height: 60px;
+	}
+}
+.youtube .play-button:before,
+.screenshot .play-button:before{
+	content: "";
+	border-style: solid;
+	border-width: 10px 0 10px 18px;
+	border-color: transparent transparent transparent #fff;
+}
+@media only screen and (min-width: 480px){
+	.youtube .play-button:before,
+	.screenshot .play-button:before{
+		border-width: 15px 0 15px 26px;
+	}
+}
+.youtube:hover .play-button,
+.youtube:focus .play-button,
+.screenshot:hover .play-button,
+.screenshot:focus .play-button,
+.screenshot:focus-within .play-button{
+	background: #204A79;
+}
+.youtube img,
+.youtube .play-button,
+.screenshot .play-button{
+	cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before,
+.screenshot .play-button,
+.screenshot .play-button:before{
+	position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before,
+.screenshot .play-button,
+.screenshot .play-button:before{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.youtube iframe{
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3; /* Hides play button when iframe loads */
+}
+[id].youtube:target{
+	margin-top: 10px !important;
+	border-top: 3px transparent solid !important;
+	background-clip: unset !important;
+}
+[id].youtube:target:hover,
+[id].youtube:target:focus{
+	border-top: 3px #204A79 solid !important;
+}
+.skipcontrols a,
+.screenshot mark{
+	font-size: .8em;
+	font-family: Arial, Geneva, Tahoma, sans-serif;
+	color: #204A79;
+	background: #E3E3E3;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	padding: 4px 6px;
+	position: absolute;
+	left: 0px;
+	z-index: 10;
+	transition: top 1s ease-out;
+	-webkit-transition: top 1s ease-out;
+}
+@media only screen and (min-width: 768px){
+	.skipcontrols a,
+	.screenshot mark{
+		font-size: .9em;
+	}
+}
+.skipcontrols a{
+	border: 2px solid #204A79;
+	top: -44px;
+}
+.skipcontrols a:focus{
+	outline-color: transparent;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	transition: top .4s ease-in;
+	-webkit-transition: top .4s ease-in;
+}
+.screenshot mark{
+	border-right: 2px solid #204A79;
+	border-bottom: 2px solid #204A79;
+	top: 0px;
+}
+@media only screen and (min-width: 768px){
+	.screenshot mark{
+		display: none;
+		visibility: hidden;
+	}
+}
+.screenshot:hover mark,
+.screenshot:focus-within mark{
+	display: block;
+	visibility: visible;
+}
+
+/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+.screenshot{
+	border: 3px transparent solid;
+	margin: 0.5em;
+	position: relative;
+}
+.screenshot:after{
+	display: block;
+	content: '';
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+.screenshot:hover,
+.screenshot:focus-within{
+	border: 3px #204A79 solid;
+}
+.screenshot img{
+	border: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	object-position: top;
+	-o-object-position: top;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.screenshot:hover img,
+.screenshot:focus img,
+.screenshot a:hover img,
+.screenshot a:focus img{
+	border: none;
+	opacity: 0.6;
+}
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -2628,297 +2892,6 @@ section.archival-text .no-image .content{
 	margin-bottom: 1em;
 }
 
-
-/* 1.14 Motion Pictures */
-
-#films{
-	font-size: .85em;
-	line-height: 1.6em;
-}
-@media only screen and (min-width: 768px){
-	#films{
-		font-size: .95em;
-		line-height: 1.5em;
-	}
-}
-#films h4{
-	font-size: 1.15em;
-	font-style: normal;
-	font-weight: 600;
-	color: white;
-	background: #902D27;
-	margin: 0 0 1.5em 0;
-	padding: 10px 14px;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	display: -webkit-flex;
-  display: flex;
-	justify-content: space-between;
-}
-#films section:first-child h4:first-child{
-	margin-top: 0;
-}
-/* #films h4 .return-top{
-	color: white;
-}
-#films h4 a.return-top:focus,
-#films h4 a.return-top:hover{
-	color: #a83c37;
-	background: #e3e3e3;
-} */
-#films h5{
-	font-size: 1.05em;
-	background: #e3e3e3;
-	border-bottom: 1px solid #858585;
-	border-radius: 8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius: 8px 8px 0 0;
-	margin: 0;
-	padding: 10px 16px;
-}
-#films ul{
-	font-size: .95em;
-	list-style: none;
-	border-top: 1px solid #858585;
-	margin: 0;
-	padding: 1em 1.5em;
-}
-#films li{
-	padding: 0 0 .6em 0;
-}
-#films li:last-child{
-	padding-bottom: 0;
-}
-#films p.warning{
-	background: #e3e3e3;
-	border: 1px solid #902D27;
-	margin: 0 0 2em 0;
-	padding: 5px 7px;
-}
-#films section:last-of-type{
-	margin-bottom: 1em;
-}
-/* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
-/* Review https://codepen.io/beardofprey/pen/MXmxXR */
-.wrapper{
-	border: 1px solid #858585;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 auto 2em auto;
-	padding: 0;
-}
-.youtube{
-	cursor: pointer;
-	border: 3px transparent solid;
-	margin: .5em;
-	padding-top: 56.25%;
-	overflow: hidden;
-	position: relative;
-}
-.youtube:hover,
-.youtube:focus{
-	border: 3px #204A79 solid;
-}
-.youtube img{
-	width: 100%;
-	top: -16.82%;
-	left: 0;
-}
-.youtube:hover img,
-.youtube:focus img{
-	opacity: 0.6;
-}
-.youtube .play-button,
-.screenshot .play-button{
-	background: #902D27;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-	width: 60px;
-	height: 40px;
-	z-index: 2;
-}
-@media only screen and (min-width: 480px){
-	.youtube .play-button,
-	.screenshot .play-button{
-		width: 90px;
-		height: 60px;
-	}
-}
-.youtube .play-button:before,
-.screenshot .play-button:before{
-	content: "";
-	border-style: solid;
-	border-width: 10px 0 10px 18px;
-	border-color: transparent transparent transparent #fff;
-}
-@media only screen and (min-width: 480px){
-	.youtube .play-button:before,
-	.screenshot .play-button:before{
-		border-width: 15px 0 15px 26px;
-	}
-}
-.youtube:hover .play-button,
-.youtube:focus .play-button,
-.screenshot:hover .play-button,
-.screenshot:focus .play-button,
-.screenshot:focus-within .play-button{
-	background: #204A79;
-}
-.youtube img,
-.youtube .play-button,
-.screenshot .play-button{
-	cursor: pointer;
-}
-.youtube img,
-.youtube iframe,
-.youtube .play-button,
-.youtube .play-button:before,
-.screenshot .play-button,
-.screenshot .play-button:before{
-	position: absolute;
-}
-.youtube .play-button,
-.youtube .play-button:before,
-.screenshot .play-button,
-.screenshot .play-button:before{
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.youtube iframe{
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 3; /* Hides play button when iframe loads */
-}
-[id].youtube:target{
-	margin-top: 10px !important;
-	border-top: 3px transparent solid !important;
-	background-clip: unset !important;
-}
-[id].youtube:target:hover,
-[id].youtube:target:focus{
-	border-top: 3px #204A79 solid !important;
-}
-.skipcontrols a,
-.screenshot mark{
-	font-size: .8em;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #204A79;
-	background: #E3E3E3;
-	border-bottom-right-radius: 8px;
-	-webkit-border-bottom-right-radius: 8px;
-	-moz-border-bottom-right-radius: 8px;
-	padding: 4px 6px;
-	position: absolute;
-	left: 0px;
-	z-index: 10;
-	transition: top 1s ease-out;
-	-webkit-transition: top 1s ease-out;
-}
-@media only screen and (min-width: 768px){
-	.skipcontrols a,
-	.screenshot mark{
-		font-size: .9em;
-	}
-}
-.skipcontrols a{
-	border: 2px solid #204A79;
-	top: -44px;
-}
-.skipcontrols a:focus{
-	outline-color: transparent;
-	top: 0px;
-	left: 0px;
-	position: absolute;
-	transition: top .4s ease-in;
-	-webkit-transition: top .4s ease-in;
-}
-.screenshot mark{
-	border-right: 2px solid #204A79;
-	border-bottom: 2px solid #204A79;
-	top: 0px;
-}
-@media only screen and (min-width: 768px){
-	.screenshot mark{
-		display: none;
-		visibility: hidden;
-	}
-}
-.screenshot:hover mark,
-.screenshot:focus-within mark{
-	display: block;
-	visibility: visible;
-}
-
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
-.screenshot{
-	border: 3px transparent solid;
-	margin: 0.5em;
-	position: relative;
-}
-.screenshot:after{
-	display: block;
-	content: '';
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
-}
-.screenshot:hover,
-.screenshot:focus-within{
-	border: 3px #204A79 solid;
-}
-.screenshot img{
-	border: none;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	-o-object-fit: cover;
-	object-position: top;
-	-o-object-position: top;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-.screenshot:hover img,
-.screenshot:focus img,
-.screenshot a:hover img,
-.screenshot a:focus img{
-	border: none;
-	opacity: 0.6;
-}
-
-
-/* 1.15 Page Specific Coding */
-
-
-
-
-
-/* The following items are used on the coding_guidelines.html page. */
-.tag-blue{
-	font-size: .9em;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #204A79;
-}
-.attribute-red{
-	font-size: .9em;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #902D27;
-}
-
-/* The following is used in essays to create small text */
-.footnote{
-	font-size: .9em;
-	padding-top: 1.5em;
-}
-
-
 /* 1.17. Formatting */
 
 .bold{
@@ -3072,6 +3045,19 @@ url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
 	font-display: swap;
 } */
 
+/* 1.15 Page Specific Coding */
+
+/* The following items are used on the coding_guidelines.html page. */
+/* .tag-blue{
+	font-size: .9em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #204A79;
+}
+.attribute-red{
+	font-size: .9em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #902D27;
+} */
 
 /* Code to be deleted */
 

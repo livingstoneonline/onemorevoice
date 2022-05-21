@@ -24,10 +24,6 @@
 	top: -16.82%;
 	left: 0;
 }
-.youtube:hover img,
-.youtube:focus img{
-	opacity: 0.6;
-}
 .youtube .play-button,
 .screenshot .play-button{
 	background: #902D27;
@@ -93,7 +89,7 @@
 	height: 100%;
 	width: 100%;
 	top: 0;
-	left: 0;
+	left: 0;}
 	z-index: 3; /* Hides play button when iframe loads */
 }
 [id].youtube:target{
@@ -105,42 +101,14 @@
 [id].youtube:target:focus{
 	border-top: 3px #204A79 solid !important;
 }
-
-.skipcontrols a{
-	font-size: .8em;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	color: #204A79;
-	background: #E3E3E3;
-	border-bottom-right-radius: 8px;
-	-webkit-border-bottom-right-radius: 8px;
-	-moz-border-bottom-right-radius: 8px;
-	padding: 4px 6px;
-	position: absolute;
-	left: 0px;
-	z-index: 10;
-	transition: top 1s ease-out;
-	-webkit-transition: top 1s ease-out;
-}
-@media only screen and (min-width: 768px){
-	.skipcontrols a{
-		font-size: .9em;
-	}
-}
-.skipcontrols a{
-	border: 2px solid #204A79;
-	top: -44px;
-}
 .skipcontrols a:focus{
+	color: #fff;
 	outline-color: transparent;
-	top: 0px;
-	left: 0px;
-	position: absolute;
+	top: 0;
 	transition: top .4s ease-in;
 	-webkit-transition: top .4s ease-in;
-}
 
-
-/* Video on external site */
+/* Image for video on external site */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .screenshot{
 	position: relative;
@@ -152,7 +120,7 @@
 }
 .screenshot:hover,
 .screenshot:focus-within{
-	outline: 3px #305056 solid;
+	outline: 4px solid #305056
 }
 .screenshot img{
 	border: none;
@@ -173,15 +141,32 @@
 	border: none;
 	outline: none;
 }
-.screenshot mark.advisory,
-.screenshot mark.running-time{
+
+/* Overlay text */
+.skipcontrols a{
+	top: -44px;
+}
+.skipcontrols a:focus{
+	color: #fff;
+	outline-color: transparent;
+	top: 0;
+	transition: top .4s ease-in;
+	-webkit-transition: top .4s ease-in;
+
+mark.advisory{
+	top: 0;
+}
+.skipcontrols a,
+mark.advisory,
+mark.running-time{
 	font-size: .9em;
 	line-height: 1rem;
 	color: #fff;
 	position: absolute;
 	z-index: 10;
 }
-.screenshot mark.advisory{
+.skipcontrols a,
+mark.advisory{
 	background: #305056;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
@@ -189,12 +174,11 @@
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-right-radius: 8px;
 	padding: 8px;
-	top: 0;
 	left: 0;
 	transition: top 1s ease-out;
 	-webkit-transition: top 1s ease-out;
 }
-.screenshot mark.running-time{
+mark.running-time{
 	background: #212119;
 	border-top: 2px solid #fff;
 	border-right: 2px solid #fff;
@@ -206,32 +190,15 @@
 	left: 0;
 }
 @media only screen and (min-width: 768px){
-	.screenshot mark.advisory{
+	mark.advisory{
 		display: none;
 		visibility: hidden;
 	}
 }
-.screenshot:hover mark.advisory,
-.screenshot:focus-within mark.advisory{
+:hover > mark.advisory,
+:focus-within > mark.advisory{
 	display: block;
 	visibility: visible;
-}
-/* Screenshot image overlay adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
-.screenshot .screenshot-image-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: #8db7bf;
-	z-index: 100;
-}
-.screenshot:hover .screenshot-image-overlay,
-.screenshot:focus-within .screenshot-image-overlay{
-  opacity: .2;
 }
 
 
@@ -1082,22 +1049,7 @@ section.content:nth-child(3) > section:not(:first-child){
 	object-position: 50% 50%;
 	overflow: hidden;
 }
-/* Section image overlay adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
-.sections .section-container a .section-image .section-image-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: #8db7bf;
-}
-.sections .section-container:hover a .section-image .section-image-overlay,
-.sections .section-container:focus-within a .section-image .section-image-overlay{
-  opacity: .2;
-}
+
 
 /* End ratio box */
 /* text container */
@@ -1253,6 +1205,23 @@ a:focus img{
 }
 .image-border-dark{
 	border: 1px solid #737d73;
+}
+/* Image overlay adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #8db7bf;
+	z-index: 1;
+}
+:hover > .image-overlay,
+:focus-within > .image-overlay{
+  opacity: .2;
 }
 /* Used for XML files */
 .graphic a:hover,

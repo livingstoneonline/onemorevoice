@@ -164,15 +164,6 @@ mark.running-time{
 }
 
 
-
-.films p.warning{
-	background: #e3e3e3;
-	border: 1px solid #902D27;
-	margin: 0 0 2em 0;
-	padding: 5px 7px;
-}
-
-
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -2328,16 +2319,24 @@ section + hr.section-divider{
 
 
 /* Random */
-aside.text-box{
+aside.text-box,
+aside.warning{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
 	border-left: 6px solid #8db7bf;
 	padding: 1rem;
 	margin: 2rem 0;
 }
+aside.text-box{
+	border-left: 6px solid #8db7bf;
+}
+aside.warning{
+	border-left: 6px solid #85454B
+}
 .info-note{
-	font-size: 1rem;
+	font-size: 1em;
 	font-style: italic;
+	line-height: 1.875rem;
 	margin-bottom: 2.5rem;
 }
 .info-paragraph{
@@ -2533,18 +2532,20 @@ img + p.caption-text,
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: .75rem;
+	gap: .5rem;
 }
 .films.gallery figure figcaption h4{
   font-size: 1.3rem;
   font-family: 'Amaranth', sans-serif;
   font-weight: 400;
+	line-height: 1.875rem;
 	color: #305056;
   margin: 1rem 0 .5rem;
   padding: 0;
 }
 .films.gallery figure figcaption p{
 	margin: 0;
+	line-height: 1.6rem;
 }
 .films.gallery figure figcaption summary{
 	font-weight: 600;

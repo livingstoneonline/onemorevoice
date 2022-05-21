@@ -11,7 +11,7 @@
 }
 .youtube:hover,
 .youtube:focus{
-	outline: 3px #305056 solid;
+	outline: 4px #305056 solid;
 }
 .youtube iframe,
 .youtube img{
@@ -109,6 +109,7 @@
 }
 .skipcontrols a:focus{
 	color: #fff;
+	background: #305056;
 	outline-color: transparent;
 	top: 0;
 	transition: top .4s ease-in;
@@ -161,6 +162,7 @@ mark.running-time{
 	display: block;
 	visibility: visible;
 }
+
 
 
 .films p.warning{
@@ -2575,9 +2577,12 @@ img + p.caption-text,
 /* Take from https://stackoverflow.com/a/56758842 */
 details > summary{
   list-style: none;
+	cursor: pointer;
 }
-details[open] > summary{
-	padding-bottom: .25rem;
+details[open] > p:first-of-type,
+details[open] > ul:first-of-type,
+details[open] > ol:first-of-type{
+	padding-top: .25rem;
 }
 summary::-webkit-details-marker{
   display: none;
@@ -2590,6 +2595,14 @@ summary::after{
 details[open] > summary:after{
   content: " \f0d7";
 }
+summary:hover,
+summary:focus{
+	color: #212119;
+	background: #E7E9E7;
+	outline: 3px solid #e3b382;
+	display: inline-block;
+}
+
 
 /* Site Sections */
 .essay .site-links{

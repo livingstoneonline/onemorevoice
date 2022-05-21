@@ -11,15 +11,13 @@
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
 .youtube{
 	cursor: pointer;
-	border: 3px transparent solid;
-	margin: .5em;
 	padding-top: 56.25%;
 	overflow: hidden;
 	position: relative;
 }
 .youtube:hover,
 .youtube:focus{
-	border: 3px #204A79 solid;
+	outline: 3px #204A79 solid;
 }
 .youtube img{
 	width: 100%;
@@ -107,8 +105,8 @@
 [id].youtube:target:focus{
 	border-top: 3px #204A79 solid !important;
 }
-.skipcontrols a,
-.screenshot mark{
+
+.skipcontrols a{
 	font-size: .8em;
 	font-family: Arial, Geneva, Tahoma, sans-serif;
 	color: #204A79;
@@ -124,8 +122,7 @@
 	-webkit-transition: top 1s ease-out;
 }
 @media only screen and (min-width: 768px){
-	.skipcontrols a,
-	.screenshot mark{
+	.skipcontrols a{
 		font-size: .9em;
 	}
 }
@@ -141,26 +138,11 @@
 	transition: top .4s ease-in;
 	-webkit-transition: top .4s ease-in;
 }
-.screenshot mark{
-	border-right: 2px solid #204A79;
-	border-bottom: 2px solid #204A79;
-	top: 0px;
-}
-@media only screen and (min-width: 768px){
-	.screenshot mark{
-		display: none;
-		visibility: hidden;
-	}
-}
-.screenshot:hover mark,
-.screenshot:focus-within mark{
-	display: block;
-	visibility: visible;
-}
+
+
+/* Video on external site */
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 .screenshot{
-	border: 3px transparent solid;
-	margin: 0.5em;
 	position: relative;
 }
 .screenshot:after{
@@ -170,7 +152,7 @@
 }
 .screenshot:hover,
 .screenshot:focus-within{
-	border: 3px #204A79 solid;
+	outline: 3px #305056 solid;
 }
 .screenshot img{
 	border: none;
@@ -180,16 +162,76 @@
 	-o-object-fit: cover;
 	object-position: top;
 	-o-object-position: top;
-	left: 0;
 	top: 0;
+	left: 0;
 	position: absolute;
 }
-.screenshot:hover img,
-.screenshot:focus img,
+.screenshot a:hover,
+.screenshot a:focus,
 .screenshot a:hover img,
 .screenshot a:focus img{
 	border: none;
-	opacity: 0.6;
+	outline: none;
+}
+.screenshot mark.advisory,
+.screenshot mark.running-time{
+	font-size: .9em;
+	line-height: 1rem;
+	color: #fff;
+	position: absolute;
+	z-index: 10;
+}
+.screenshot mark.advisory{
+	background: #305056;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	padding: 8px;
+	top: 0;
+	left: 0;
+	transition: top 1s ease-out;
+	-webkit-transition: top 1s ease-out;
+}
+.screenshot mark.running-time{
+	background: #212119;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-top-right-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	padding: 6px 8px;
+	bottom: 0;
+	left: 0;
+}
+@media only screen and (min-width: 768px){
+	.screenshot mark.advisory{
+		display: none;
+		visibility: hidden;
+	}
+}
+.screenshot:hover mark.advisory,
+.screenshot:focus-within mark.advisory{
+	display: block;
+	visibility: visible;
+}
+/* Screenshot image overlay adapted from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.screenshot .screenshot-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #8db7bf;
+	z-index: 100;
+}
+.screenshot:hover .screenshot-image-overlay,
+.screenshot:focus-within .screenshot-image-overlay{
+  opacity: .2;
 }
 
 
@@ -631,6 +673,8 @@ main{
 		max-width: 1600px;
 	}
 }
+/* section.content:nth-child(3) > section:not(:first-child) 
+is for spacing gallery sections in middle of page */
 article > section:not(:first-child),
 section.content:nth-child(3) > section:not(:first-child){
 	margin-top: 3rem;
@@ -958,13 +1002,14 @@ section.content:nth-child(3) > section:not(:first-child){
 }
 /* single item container */
 .sections .section-container{
-	background: #ededed;
+		background: #ededed;
 		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
 		box-shadow: #697c6f 0px 3px 7px 0px;
 		border-radius: 6px;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
+		padding: 1rem;
 	}
 @media only screen and (min-width: 768px){
 	.sections .section-container{
@@ -1010,7 +1055,6 @@ section.content:nth-child(3) > section:not(:first-child){
 /* image container */
 .sections .section-container a .section-image{
 	border: 1px solid #737d73;
-	margin: 1.5rem 1rem 0;
 	padding: 0;
 	position: relative;
 }
@@ -1058,7 +1102,6 @@ section.content:nth-child(3) > section:not(:first-child){
 /* End ratio box */
 /* text container */
 .sections .section-container a div:nth-child(2){
-	padding: 1rem;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
@@ -1069,7 +1112,7 @@ section.content:nth-child(3) > section:not(:first-child){
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
 	font-weight: 400;
-	margin: 0;
+	margin: .5rem 0 0;
 	padding: 0;
 }
 /* paragraph of text */
@@ -2450,6 +2493,7 @@ img + p.caption-text,
 }
 .gallery figure{
 	margin: 0;
+	padding: 1rem;
 }
 .films.gallery figure{
   background: #ededed;
@@ -2532,7 +2576,7 @@ img + p.caption-text,
 .visuals.gallery figure a:focus{
 	outline: none;
 }
-.visuals.gallery figure a img:hover,
+.visuals.gallery figure a:hover img,
 .visuals.gallery figure a:focus img{
 	border: 4px #305056 solid;
 }
@@ -2541,6 +2585,42 @@ img + p.caption-text,
 	text-align: center;
 	line-height: 1.6rem;
 	margin-top: .5rem;
+}
+.films.gallery figure figcaption{
+	font-size: .95rem;
+	line-height: 1.6rem;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: .75rem;
+}
+.films.gallery figure figcaption h4{
+  font-size: 1.3rem;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 400;
+	color: #305056;
+  margin: 1rem 0 .5rem;
+  padding: 0;
+}
+.films.gallery figure figcaption p{
+	margin: 0;
+}
+.films.gallery figure figcaption summary{
+	font-weight: 600;
+}
+.films.gallery figure figcaption summary::after{
+	content: "expand";
+	font-size: .9em;
+	font-family: inherit;
+	font-weight: 400;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: #305056;
+	margin-left: .25rem;
+}
+.films.gallery figure figcaption details[open] > summary:after{
+	content: "collapse"
 }
 
 
@@ -2572,7 +2652,6 @@ summary::after{
 details[open] > summary:after{
   content: " \f0d7";
 }
-
 
 /* Site Sections */
 .essay .site-links{

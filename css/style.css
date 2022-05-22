@@ -1,4 +1,4 @@
-.content{
+/* .content{
 	padding: 0 1rem 1rem;
 }
 @media only screen and (min-width: 768px){	
@@ -39,7 +39,7 @@ article > .toc + section{
 	.materials .content.recovered article{
 		padding: 2rem 1rem;
 	}
-}
+} */
 
 
 
@@ -58,7 +58,7 @@ Principal Components
 Section-Specific Colors
 Headers
 Page Menus
-Main, Article, Section
+Main, Article, Section, Credits
 Home/Categories Top
 Essay Top
 Main Image Caption Button
@@ -468,7 +468,7 @@ section h4:not(:first-of-type){
 }
 
 
-/* Main, Article, Section */
+/* Main, Article, Section, Credits */
 
 main{
 	margin: 0 auto;
@@ -495,29 +495,55 @@ main{
 		max-width: 1600px;
 	}
 }
+.credits{
+	font-size: 1rem;
+}
+.credits a{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+}
+
 /* section.content:nth-child(3) > section:not(:first-child) 
 is for spacing gallery sections in middle of page */
 article > section:not(:first-child),
-section.content:nth-child(3) > section:not(:first-child){
+section.content:nth-child(3) > section:not(:first-child),
+.credits{
 	margin-top: 3rem;
 }
 @media only screen and (min-width: 480px){
 	article > section:not(:first-child),
-	section.content:nth-child(3) > section:not(:first-child){
+	section.content:nth-child(3) > section:not(:first-child),
+	.credits{
 		margin-top: 3.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	article > section:not(:first-child),
-	section.content:nth-child(3) > section:not(:first-child){
+	section.content:nth-child(3) > section:not(:first-child),
+	.credits{
 		margin-top: 4rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	article > section:not(:first-child),
-	section.content:nth-child(3) > section:not(:first-child){
+	section.content:nth-child(3) > section:not(:first-child),
+	.credits{
 		margin-top: 4.5rem;
 	}	
+}
+.home .credits:first-of-type{
+	margin-top: 0;
+}
+@media only screen and (min-width: 768px){
+	.home .credits:first-of-type,
+	.categories .credits:first-of-type{
+		margin-top: 2rem;
+	}
+	.content.recovered + .content .credits{
+		margin-top: 0;
+	}
 }
 
 
@@ -987,50 +1013,6 @@ article > .toc + section{
 	.materials .content.recovered article{
 		max-width: 1300px;
 	}
-}
-
- /* page credits */
-.credits{
-	font-size: 1rem;
-	margin-top: 3rem;
-}
-@media only screen and (min-width: 480px){
-	.credits{
-		margin-top: 3.5rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	.credits{
-		margin-top: 4rem;
-	}
-	.content.recovered + .content .credits{
-		margin-top: 0;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.credits{
-		margin-top: 4.5rem;
-	}
-}
-.home .credits:first-of-type{
-	margin-top: 0;
-}
-@media only screen and (min-width: 768px){
-	.home .credits:first-of-type,
-	.categories .credits:first-of-type{
-		margin-top: 2rem;
-	}
-}
-/* @media only screen and (min-width: 1200px){
-	section.content.recovered + section.content article aside.credits:first-child{
-		margin-top: 0rem;
-	}
-} */
-.credits a{
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	word-break: break-word;
-	-ms-word-break: break-all;
 }
 
 

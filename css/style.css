@@ -1,3 +1,49 @@
+.content{
+	padding: 0 1rem 1rem;
+}
+@media only screen and (min-width: 768px){	
+	.content{
+		padding: 0;
+		width: 100%;
+		display: -webkit-flex;
+    display: flex;
+	}
+	.content article{
+		margin: 0 2rem 1rem;		
+		padding: 0;
+		max-width: 700px;
+	}
+}
+article > .toc + section{
+	margin-top: 3rem;
+}
+@media only screen and (min-width: 992px){
+	.content{
+		padding: 1rem;
+	}
+	.content div.decoration{
+		margin: 0;
+		display: block;
+		visibility: visible;
+		flex-grow: 1;
+	}
+	.content article{
+		margin: 0 4rem;
+		padding-bottom: 1rem;
+	}
+}
+.content article section section:not(:first-of-type){
+	margin-top: 3rem;
+}
+@media only screen and (min-width: 992px){
+	.materials .content.recovered article{
+		padding: 2rem 1rem;
+	}
+}
+
+
+
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -109,6 +155,14 @@ also see 2.9 for manuscript colors
 .youtube .play-button/.screenshot .play-button - z-index: 2;
 .youtube iframe - z-index: 3;
 .skipcontrols a/.screenshot mark - z-index: 10;
+*/
+
+/* 
+Page types 
+.home
+.categories (gateway pages)
+.materials (primary materials)
+.documents (project documents)
 */
 
 /*--------------------------------------*/
@@ -850,8 +904,6 @@ section.content:nth-child(3) > section:not(:first-child){
 	object-position: 50% 50%;
 	overflow: hidden;
 }
-
-
 /* End ratio box */
 /* text container */
 .sections .section-container a div:nth-child(2){
@@ -878,7 +930,8 @@ section.content:nth-child(3) > section:not(:first-child){
 
 /* Home and Essay Bottom */
 
-.content{
+/* REVIEW */
+/* .content{
 	padding: 0 1rem 1rem;
 }
 @media only screen and (min-width: 768px){	
@@ -919,7 +972,7 @@ article > .toc + section{
 	.materials .content.recovered article{
 		padding: 2rem 1rem;
 	}
-}
+}*/
 @media only screen and (min-width: 1200px){
 	.materials .content.recovered article{
 		max-width: 900px;
@@ -935,6 +988,8 @@ article > .toc + section{
 		max-width: 1300px;
 	}
 }
+
+ /* page credits */
 .credits{
 	font-size: 1rem;
 	margin-top: 3rem;
@@ -966,11 +1021,11 @@ article > .toc + section{
 		margin-top: 2rem;
 	}
 }
-@media only screen and (min-width: 1200px){
+/* @media only screen and (min-width: 1200px){
 	section.content.recovered + section.content article aside.credits:first-child{
 		margin-top: 0rem;
 	}
-}
+} */
 .credits a{
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -2158,6 +2213,7 @@ section + hr.section-divider{
 
 
 /* Random */
+
 aside.text-box,
 aside.warning{
 	background: #E7E9E7;
@@ -2186,7 +2242,7 @@ aside.warning{
 
 /* Page-Specific Coding */
 
-/* The following is used on project_design.html and site_map.html */ 
+/* The following is used on project_design.html */ 
 .keycap{
 	font-size: .95em;
 	font-weight: bold;
@@ -2330,9 +2386,6 @@ img + p.caption-text,
 	}
 }
 @media only screen and (min-width: 1200px){
-	.gallery{
-		gap: 2rem 2rem;
-	}
 	.visuals.gallery figure{
 		flex: 0 0 calc(25% - 2rem);
 	}

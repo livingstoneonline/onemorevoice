@@ -1,40 +1,3 @@
-.content{
-	padding: 0 1rem;
-	width: 100%;
-}
-.content.recovered article{
-	padding-bottom: 1rem;
-}
-@media only screen and (min-width: 768px){	
-	.content{
-		margin: 0 0 2rem;
-		padding: 0;
-		display: -webkit-flex;
-    display: flex;
-	}
-	main .content:nth-child(2){
-		margin-top: 1rem;
-	}
-	.content article{
-		/* margin: 0 2rem 1rem;		 */
-		/* padding: 0; */
-		margin: 0 2rem;
-		max-width: 700px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.home main .content:nth-child(2){
-		margin-top: 2rem;
-	}
-	.content div.decoration{
-		margin: 0;
-		display: block;
-		visibility: visible;
-		flex-grow: 1;
-	}
-}
-
-
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -963,29 +926,33 @@ article > .toc + section{
 
 /* Home and Essay Bottom */
 
-/* REVIEW */
-/* .content{
-	padding: 0 1rem 1rem;
+.content{
+	padding: 0 1rem;
+	width: 100%;
+}
+.content.recovered article{
+	padding-bottom: 1rem;
 }
 @media only screen and (min-width: 768px){	
 	.content{
+		margin: 0 0 2rem;
 		padding: 0;
-		width: 100%;
 		display: -webkit-flex;
     display: flex;
 	}
+	main .content:nth-child(2){
+		margin-top: 1rem;
+	}
 	.content article{
-		margin: 0 2rem 1rem;		
-		padding: 0;
+		/* margin: 0 2rem 1rem;		 */
+		/* padding: 0; */
+		margin: 0 2rem;
 		max-width: 700px;
 	}
 }
-article > .toc + section{
-	margin-top: 3rem;
-}
 @media only screen and (min-width: 992px){
-	.content{
-		padding: 1rem;
+	.home main .content:nth-child(2){
+		margin-top: 2rem;
 	}
 	.content div.decoration{
 		margin: 0;
@@ -993,19 +960,7 @@ article > .toc + section{
 		visibility: visible;
 		flex-grow: 1;
 	}
-	.content article{
-		margin: 0 4rem;
-		padding-bottom: 1rem;
-	}
 }
-.content article section section:not(:first-of-type){
-	margin-top: 3rem;
-}
-@media only screen and (min-width: 992px){
-	.materials .content.recovered article{
-		padding: 2rem 1rem;
-	}
-}*/
 @media only screen and (min-width: 1200px){
 	.materials .content.recovered article{
 		max-width: 900px;

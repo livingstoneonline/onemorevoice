@@ -1,25 +1,30 @@
-/* .content{
-	padding: 0 1rem 1rem;
+.content{
+	padding: 0 1rem;
+	width: 100%;
+}
+.content.recovered article{
+	padding-bottom: 1rem;
 }
 @media only screen and (min-width: 768px){	
 	.content{
+		margin: 0 0 2rem;
 		padding: 0;
-		width: 100%;
 		display: -webkit-flex;
     display: flex;
 	}
+	main .content:nth-child(2){
+		margin-top: 1rem;
+	}
 	.content article{
-		margin: 0 2rem 1rem;		
-		padding: 0;
+		/* margin: 0 2rem 1rem;		 */
+		/* padding: 0; */
+		margin: 0 2rem;
 		max-width: 700px;
 	}
 }
-article > .toc + section{
-	margin-top: 3rem;
-}
 @media only screen and (min-width: 992px){
-	.content{
-		padding: 1rem;
+	.home main .content:nth-child(2){
+		margin-top: 2rem;
 	}
 	.content div.decoration{
 		margin: 0;
@@ -27,21 +32,7 @@ article > .toc + section{
 		visibility: visible;
 		flex-grow: 1;
 	}
-	.content article{
-		margin: 0 4rem;
-		padding-bottom: 1rem;
-	}
 }
-.content article section section:not(:first-of-type){
-	margin-top: 3rem;
-}
-@media only screen and (min-width: 992px){
-	.materials .content.recovered article{
-		padding: 2rem 1rem;
-	}
-} */
-
-
 
 
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
@@ -472,7 +463,7 @@ section h4:not(:first-of-type){
 
 main{
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 0 1rem;
 	display: -webkit-flex;
   display: flex;
 	flex-wrap: wrap;
@@ -480,7 +471,7 @@ main{
 }
 @media only screen and (min-width: 768px){
 	main{
-		padding-top: 1rem;
+		padding: 1rem 0 0;
 		max-width: 698px;
 	}
 	.home main,
@@ -512,26 +503,34 @@ section.content:nth-child(3) > section:not(:first-child),
 .credits{
 	margin-top: 3rem;
 }
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px){
+	article > section:not(:first-child),
+	section.content:nth-child(3) > section:not(:first-child),
+	.credits{
+		margin-top: 3.5rem;
+	}
+} */
+@media only screen and (min-width: 768px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
 	.credits{
 		margin-top: 3.5rem;
 	}
 }
-@media only screen and (min-width: 768px){
-	article > section:not(:first-child),
-	section.content:nth-child(3) > section:not(:first-child),
-	.credits{
-		margin-top: 4rem;
-	}
-}
 @media only screen and (min-width: 992px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
 	.credits{
-		margin-top: 4.5rem;
+		margin-top: 4rem;
 	}	
+}
+article > .toc + section{
+	margin-top: 2rem;
+}
+@media only screen and (min-width: 992px){
+	article > .toc + section{
+		margin-top: 3rem;
+	}
 }
 .home .credits:first-of-type{
 	margin-top: 0;
@@ -541,7 +540,7 @@ section.content:nth-child(3) > section:not(:first-child),
 	.categories .credits:first-of-type{
 		margin-top: 2rem;
 	}
-	.content.recovered + .content .credits{
+	.content.recovered + .content .credits:first-child{
 		margin-top: 0;
 	}
 }
@@ -559,22 +558,31 @@ section.content:nth-child(3) > section:not(:first-child),
 .categories .introduction-section img{
 	margin: 0 auto;
 	padding: 0;
-	width: 100vw;
+	width: calc(100vw - 2px);
 	max-width: 1600px;
 }
 .home .introduction-section .introduction-text,
 .categories .introduction-section .introduction-text{
+	margin: 0 auto;
 	display: -webkit-flex;
   display: flex;
 	flex-direction: column;
 }
 .home .introduction-section .introduction-text{
-	padding: 1.5rem 1rem 1rem;
+	padding: 0 1rem;
 }
 .categories .introduction-section .introduction-text{
 	padding: 2rem 1rem;
-	max-width: 700px;
 	gap: 1rem;
+}
+@media only screen and (min-width: 768px){
+	.home .introduction-section .introduction-text,
+	.categories .introduction-section .introduction-text{
+		max-width: 700px;
+	}
+	.home .introduction-section .introduction-text{
+		padding: 0;
+	}
 }
 @media only screen and (min-width: 992px){
 	.home .introduction-section,
@@ -831,15 +839,14 @@ section.content:nth-child(3) > section:not(:first-child),
 }
 @media only screen and (min-width: 768px){
 	.sections{
-		padding: 1rem 0 2rem;
+		padding: 2rem;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 1.5rem;
 	}
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px){
 	.sections{
-		gap: 2rem;
+		padding: 2rem 0 3rem;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -2118,7 +2125,7 @@ footer p .site-detail:last-child:after{
 		font-size: 1.1rem;
 		top: unset;
 		right: 3rem;
-		bottom: 6.5rem;
+		bottom: 5.5rem;
 	}
 }
 @media only screen and (min-width: 1200px){

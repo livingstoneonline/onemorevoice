@@ -1020,7 +1020,9 @@ a:focus img{
 	z-index: 1;
 }
 :hover > .image-overlay,
-:focus-within > .image-overlay{
+:focus-within > .image-overlay,
+.section-container:hover .image-overlay,
+.section-container:focus-within .image-overlay{
   opacity: .2;
 }
 /* Used for XML files */

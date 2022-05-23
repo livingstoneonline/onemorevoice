@@ -942,13 +942,14 @@ article > .toc + section{
 		margin-top: 1rem;
 	}
 	.content article{
-		/* margin: 0 2rem 1rem;		 */
-		/* padding: 0; */
 		margin: 0 2rem;
 		max-width: 700px;
 	}
 }
 @media only screen and (min-width: 992px){
+	.content{
+		padding: 0 1rem;
+	}
 	.home main .content:nth-child(2){
 		margin-top: 2rem;
 	}
@@ -957,6 +958,9 @@ article > .toc + section{
 		display: block;
 		visibility: visible;
 		flex-grow: 1;
+	}
+	.content article{
+		margin: 0 4rem;
 	}
 }
 @media only screen and (min-width: 1200px){

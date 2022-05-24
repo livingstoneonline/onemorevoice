@@ -1,6 +1,6 @@
 /* Book-Length Works */
 
-#books h4,
+/* #books h4,
 .published-author,
 .author-details,
 .works-list{
@@ -50,7 +50,7 @@
 }
 #books section:last-of-type section:last-of-type .works-list:last-of-type{
 	margin-bottom: 1em;
-}
+} */
 
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
@@ -518,7 +518,9 @@ section.content:nth-child(3) > section:not(:first-child),
 .credits{
 	margin-top: 3rem;
 }
-.content.recovered.full-page article > section:not(:first-child){
+/* spacing on motion pictures and  book-length works */
+.content.recovered.full-page article > section:not(:first-child),
+.content.recovered.full-page article > section > section:not(:first-child){
 	margin-top: 2rem;
 }
 @media only screen and (min-width: 768px){
@@ -848,16 +850,25 @@ article > .toc + section{
 	justify-content: center;	
 	gap: 2rem;
 }
+#books .sections{
+	padding: 0 1rem;
+}
 @media only screen and (min-width: 768px){
 	.sections{
 		padding: 2rem;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+	#books .sections{
+		padding: 0 2rem;
+	}
 }
 @media only screen and (min-width: 992px){
 	.sections{
 		padding: 2rem 0 3rem;
+	}
+	#books .sections{
+		padding: 0
 	}
 }
 @media only screen and (min-width: 1600px){

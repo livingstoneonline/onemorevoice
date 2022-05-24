@@ -464,13 +464,9 @@ section.content:nth-child(3) > section:not(:first-child),
 .credits{
 	margin-top: 3rem;
 }
-/* @media only screen and (min-width: 480px){
-	article > section:not(:first-child),
-	section.content:nth-child(3) > section:not(:first-child),
-	.credits{
-		margin-top: 3.5rem;
-	}
-} */
+.content.recovered.full-page article > section:not(:first-child){
+	margin-top: 2rem;
+}
 @media only screen and (min-width: 768px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
@@ -552,7 +548,7 @@ article > .toc + section{
 	}
 	.home .introduction-section .introduction-text,
 	.categories .introduction-section .introduction-text{
-		background: rgb(226, 228, 226, .9);
+		background: rgb(226, 228, 226, .94);
 		border-radius: 6px;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
@@ -928,6 +924,9 @@ article > .toc + section{
 	padding: 0 1rem;
 	width: 100%;
 }
+.content.recovered.full-page{
+	margin-top: 1rem;
+}
 .content.recovered article{
 	padding-bottom: 1rem;
 }
@@ -941,9 +940,15 @@ article > .toc + section{
 	main .content:nth-child(2){
 		margin-top: 1rem;
 	}
+	.content.recovered.full-page{
+		margin-top: 0;
+	}
 	.content article{
 		margin: 0 2rem;
 		max-width: 700px;
+	}
+	.content.recovered.full-page article{
+		margin: 0;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -959,22 +964,34 @@ article > .toc + section{
 		visibility: visible;
 		flex-grow: 1;
 	}
-	.content article{
-		margin: 0 4rem;
+	.content article,
+	.content.recovered.full-page article{
+		margin: 0 4rem
 	}
 }
 @media only screen and (min-width: 1200px){
-	.materials .content.recovered article{
+	.content.recovered.full-page{
+		padding: 0;
+	}
+	.content.full-page div.decoration{
+		display: none;
+		visibility: hidden;
+	}
+	.content.recovered article{
 		max-width: 900px;
+	}
+	.content.recovered.full-page article{
+		margin: 0;
+		max-width: 100%;
 	}
 }
 @media only screen and (min-width: 1366px){
-	.materials .content.recovered article{
+	.content.recovered article{
 		max-width: 1100px;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.materials .content.recovered article{
+	.content.recovered article{
 		max-width: 1300px;
 	}
 }
@@ -2292,7 +2309,7 @@ img + p.caption-text,
   -moz-border-radius: 6px;
 	padding: 1rem;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width:320px){
 	.films.gallery figure{
 		min-height: 356px;
 	}
@@ -2301,13 +2318,13 @@ img + p.caption-text,
 	.visuals.gallery{
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 2rem 1.5rem;
+		gap: 1.5rem;
 	}
 	.visuals.gallery figure{
 		flex: 0 0 calc(50% - 1.5rem);
 	}
 	.films.gallery figure{
-		min-height: 446px;
+		min-height: 436px;
 	}
 }
 @media only screen and (min-width: 624px){
@@ -2317,7 +2334,6 @@ img + p.caption-text,
 	.films.gallery{
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 2rem 1.5rem;
 	}
 	.visuals.gallery figure{
 		flex: 0 0 calc(33% - 2rem);
@@ -2332,13 +2348,10 @@ img + p.caption-text,
 		gap: 2rem 2rem;
 	}
 	.films.gallery figure{
-		min-height: 360px;
+		min-height: 378px;
 	}
 }
 @media only screen and (min-width: 992px){
-	.films.gallery{
-		gap: 2rem 2rem;
-	}
 	.films.gallery figure{
 		min-height: 390px;
 		flex: 0 0 calc(50% - 2rem);
@@ -2349,7 +2362,8 @@ img + p.caption-text,
 		flex: 0 0 calc(25% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 420px;
+		min-height: 392px;
+		flex: 0 0 calc(33% - 2rem);
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -2357,8 +2371,7 @@ img + p.caption-text,
 		flex: 0 0 calc(20% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 397px;
-		flex: 0 0 calc(33% - 2rem);
+		min-height: 422px;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -2366,7 +2379,8 @@ img + p.caption-text,
 		flex: 0 0 calc(17% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 434px;
+		min-height: 418px;
+		flex: 0 0 calc(25% - 2rem);
 	}
 }
 .visuals.gallery .image-container{
@@ -2420,6 +2434,14 @@ img + p.caption-text,
 	.films.gallery figure figcaption{
 		padding: 0 1rem 1rem;
 	}
+}
+.films.gallery figure.title-slide{
+	font-size: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 .films.gallery figure figcaption h4{
   font-size: 1.3rem;

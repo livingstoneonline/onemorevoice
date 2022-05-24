@@ -388,7 +388,7 @@ section h4:not(:first-of-type){
 	}
 }
 /* Heading adapted from https://stackoverflow.com/a/20478913 */
-.toc ol:first-child:before{
+.toc > ol:first-child:before{
 	content:attr(aria-label);
 	font-family: 'Merriweather', serif;
 	font-weight: 600;
@@ -396,7 +396,7 @@ section h4:not(:first-of-type){
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
 }
-.toc ol:first-child{
+.toc > ol:first-child{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
 	border-radius: 8px;
@@ -405,17 +405,17 @@ section h4:not(:first-of-type){
 	padding: 1.5rem 3rem 2rem;
 }
 @media only screen and (min-width: 480px){
-	.toc ol:first-child{
+	.toc > ol:first-child{
 		padding: 1.5rem 4rem 2rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.toc ol:first-child{
+	.toc > ol:first-child{
 		padding: 1.5rem 5rem 2rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	.toc ol:first-child{
+	.toc > ol:first-child{
 		padding: 2rem 6rem 3rem;
 	}
 }

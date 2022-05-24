@@ -2172,6 +2172,21 @@ hr.section-divider{
 section + hr.section-divider{
 	margin-top: 2.5rem;
 }
+.content.recovered.full-page section + hr.section-divider{
+	border-top: 2px solid #bdc2bd;
+	margin: 2.5rem auto 0;
+	width: calc(100% - 1rem);
+}
+@media only screen and (min-width: 992px){
+	.content.recovered.full-page section + hr.section-divider{
+		width: calc(100% - 2.5rem);
+	}
+}
+@media only screen and (min-width: 1200px){
+	.content.recovered.full-page section + hr.section-divider{
+		width: calc(100% - 3rem);
+	}
+}
 .title-hr{
 	margin: 2rem 0;
 }

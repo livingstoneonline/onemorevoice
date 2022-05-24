@@ -1,3 +1,57 @@
+/* Book-Length Works */
+
+#books h4,
+.published-author,
+.author-details,
+.works-list{
+	border: 1px solid #858585;
+}
+#books h4{
+	font-size: 1.15em;
+	font-style: normal;
+	font-weight: 600;
+	color: white;
+	background: #204a79;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin: 0 0 1.5em 0;
+	padding: 10px 14px;
+}
+.published-author{
+	font-size: 1.05em;
+	color: #262626;
+	background: #e3e3e3;
+	padding: 10px 16px;
+	margin: 0;
+	border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	display: -webkit-flex;
+  display: flex;
+	justify-content: space-between;
+}
+.author-details{
+	border-top: none;
+	border-bottom: none;
+	margin: 0;
+	padding: .8em 1.5em .2em 1.5em;
+}
+.works-list{
+	border-top: none;
+	border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	margin: 0 0 2em 0;
+	padding: 1em 1em .7em 2.5em;
+}
+.works-list li{
+	padding: 0 0 .6em 0;
+}
+#books section:last-of-type section:last-of-type .works-list:last-of-type{
+	margin-bottom: 1em;
+}
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -2893,76 +2947,6 @@ section.archival-text .no-image .content{
 		display: inline-block;
 		max-width: calc(75% - 1em);
 	}
-}
-
-
-/* 1.13. Book-Length Works */
-
-/* #books{
-	font-size: .85em;
-	line-height: 1.875em;
-}
-@media only screen and (min-width: 768px){
-	#books{
-		font-size: .95em;
-		line-height: 1.5em;
-	}
-} */
-#books h4,
-.published-author,
-.author-details,
-.works-list{
-	border: 1px solid #858585;
-}
-#books h4{
-	font-size: 1.15em;
-	font-style: normal;
-	font-weight: 600;
-	color: white;
-	background: #204a79;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 0 1.5em 0;
-	padding: 10px 14px;
-}
-.published-author{
-	font-size: 1.05em;
-	color: #262626;
-	background: #e3e3e3;
-	padding: 10px 16px;
-	margin: 0;
-	border-radius: 8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius: 8px 8px 0 0;
-	display: -webkit-flex;
-  display: flex;
-	justify-content: space-between;
-}
-/* .published-author a.return-top:hover,
-.published-author a.return-top:focus{
-	color: #a83c37;
-	background: whitesmoke;
-} */
-.author-details{
-	border-top: none;
-	border-bottom: none;
-	margin: 0;
-	padding: .8em 1.5em .2em 1.5em;
-}
-.works-list{
-	border-top: none;
-	border-radius: 0 0 8px 8px;
-	-webkit-border-radius: 0 0 8px 8px;
-	-moz-border-radius: 0 0 8px 8px;
-	margin: 0 0 2em 0;
-	padding: 1em 1em .7em 2.5em;
-}
-.works-list li{
-	padding: 0 0 .6em 0;
-}
-#books section:last-of-type section:last-of-type .works-list:last-of-type{
-	margin-bottom: 1em;
 }
 
 /* 1.17. Formatting */

@@ -261,6 +261,9 @@ body{
 .documents h3{
 	border-bottom: 8px solid #e3b382;
 }
+.materials .content.recovered.full-page h4{
+	border-bottom: 4px solid #a4b48b;
+}
 .home .toc ol:before,
 .documents .toc ol:before{
 	border-bottom: 4px solid #e3b382;
@@ -888,14 +891,24 @@ article > .toc + section{
 		-moz-border-radius: 6px;
 		padding: 1rem;
 	}
+	#books .sections .section-container{
+		gap: 1rem;
+	}
 @media only screen and (min-width: 768px){
-	.sections .section-container{
+	.sections .section-container,
+	#books .sections .section-container{
 		flex: 0 0 calc(50% - 1.5rem)
+	}
+	#books .sections .section-container{
+		padding: 2rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	.sections .section-container{
 		flex: 0 0 calc(33% - 2rem)
+	}
+	#books .sections .section-container{
+		flex: 0 0 calc(50% - 2rem)
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -907,10 +920,17 @@ article > .toc + section{
 	.sections .section-container{
 		flex: 0 0 calc(20% - 3rem)
 	}
+	#books .sections .section-container{
+		flex: 0 0 calc(33% - 3rem)
+	}
 }
 .sections .section-container:hover,
 .sections .section-container:focus-within{
 	outline: 4px solid #e3b382;
+}
+#books .sections .section-container:hover,
+#books .sections .section-container:focus-within{
+	outline: none;
 }
 /* main hyperlink */
 .sections .section-container a,
@@ -919,9 +939,20 @@ article > .toc + section{
 	text-decoration: none;
 	width: 100%;
 }
+#books .sections .section-container a, 
+#books .sections .section-container a:visited{
+	color: #305056;
+	text-decoration: underline;
+}
 .sections .section-container a:hover,
 .sections .section-container a:focus{
 	outline: none;
+}
+#books .sections .section-container a:hover,
+#books .sections .section-container a:focus{
+	color: #212119;
+	background: #E7E9E7;
+	outline: 3px solid #e3b382;
 }
 /* single item in hyperlink container */
 .sections .section-container a div{
@@ -968,18 +999,48 @@ article > .toc + section{
 	justify-content: center;
 }
 /* heading */
-.sections .section-container a div h3{
+.sections .section-container a div h3,
+#books .sections .section-container h4{
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
 	font-weight: 400;
 	margin: .5rem 0 0;
 	padding: 0;
 }
+#books .sections .section-container h4{
+	color: #305056;
+	margin: 0 0 1.5rem;
+}
 /* paragraph of text */
 .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
 	text-align: center;
+}
+#books .sections .section-container p,
+#books .sections .section-container ol{
+	line-height: 1.6rem;
+}
+/* list of works */
+#books .sections .section-container details[open]{
+	padding-bottom: 1rem;
+}
+#books .sections .section-container li:not(:last-child){
+	margin-bottom: .5rem;
+}
+#books .sections .section-container summary::after{
+	content: "expand";
+	font-size: .9em;
+	font-family: inherit;
+	font-weight: 400;
+	text-decoration: underline;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: #305056;
+	margin-left: .25rem;
+}
+#books .sections .section-container details[open] > summary:after{
+	content: "collapse";
 }
 
 
@@ -993,7 +1054,7 @@ article > .toc + section{
 	margin-top: 1rem;
 }
 .content.recovered article{
-	padding-bottom: 1rem;
+	padding: 1rem 0;
 }
 @media only screen and (min-width: 768px){	
 	.content{
@@ -2492,7 +2553,7 @@ img + p.caption-text,
 	margin-top: .5rem;
 }
 .films.gallery figure figcaption{
-	font-size: .95rem;
+	font-size: 1rem;
 	line-height: 1.5rem;
 	display: -webkit-flex;
 	display: flex;
@@ -2546,11 +2607,12 @@ img + p.caption-text,
 	font-weight: 400;
 	text-decoration: underline;
 	text-transform: uppercase;
+	white-space: nowrap;
 	color: #305056;
 	margin-left: .25rem;
 }
 .films.gallery figure figcaption details[open] > summary:after{
-	content: "collapse"
+	content: "collapse";
 }
 
 
@@ -2735,6 +2797,7 @@ mark.running-time{
 details > summary{
   list-style: none;
 	cursor: pointer;
+	display: inline;
 }
 details[open] > p:first-of-type,
 details[open] > ul:first-of-type,
@@ -2746,18 +2809,22 @@ summary::-webkit-details-marker{
 }
 summary::after{
 	font-family: "Font Awesome 6 Free";
-	content: " \f0da";
+	content: "\f0da";
 	font-weight: 900;
+	white-space: nowrap;
+	margin-left: .25rem;
 }
 details[open] > summary:after{
-  content: " \f0d7";
+  content: "\f0d7";
 }
 summary:hover,
 summary:focus{
 	color: #212119;
 	background: #E7E9E7;
 	outline: 3px solid #e3b382;
-	display: inline-block;
+}
+details:focus-within ::marker{
+	white-space: nowrap;
 }
 
 

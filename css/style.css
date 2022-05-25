@@ -1,3 +1,9 @@
+#books details li::before,
+#books details[open] li::before,
+#books details[open]:focus-within li::before{
+
+}
+
 /* Book-Length Works */
 
 /* #books h4,
@@ -2826,6 +2832,7 @@ details[open] > p:first-of-type,
 details[open] > ul:first-of-type,
 details[open] > ol:first-of-type{
 	padding-top: .25rem;
+	padding-bottom: .25rem;
 }
 summary::-webkit-details-marker{
   display: none;

@@ -2,21 +2,6 @@
 #books details[open] li::before,
 #books details[open]:focus-within li::before{
 }
-/* Book-Length Works */
-/* .works-list{
-	border-top: none;
-	border-radius: 0 0 8px 8px;
-	-webkit-border-radius: 0 0 8px 8px;
-	-moz-border-radius: 0 0 8px 8px;
-	margin: 0 0 2em 0;
-	padding: 1em 1em .7em 2.5em;
-}
-.works-list li{
-	padding: 0 0 .6em 0;
-}
-#books section:last-of-type section:last-of-type .works-list:last-of-type{
-	margin-bottom: 1em;
-} */
 
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
@@ -863,9 +848,11 @@ article > .toc + section{
 		padding: 1rem;
 }
 #books .sections .section-container{
-	font-size: 1.125rem;
-	gap: 1rem;
+	font-size: 1.05rem;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 #books .sections .section-container.title-slide{
 	display: flex;
@@ -876,12 +863,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 320px){
 	#books .sections .section-container{
-		min-height: 231px;
-	}
-}
-@media only screen and (min-width: 480px){
-	#books .sections .section-container{
-		min-height: 201px;
+		min-height: 306px;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -891,7 +873,7 @@ article > .toc + section{
 	}
 	#books .sections .section-container{
 		padding: 2rem;
-		min-height: 263px;
+		min-height: 338px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -899,13 +881,8 @@ article > .toc + section{
 		flex: 0 0 calc(33% - 2rem);
 	}
 	#books .sections .section-container{
-		min-height: 267px;
+		min-height: 306px;
 		flex: 0 0 calc(50% - 2rem);
-	}
-}
-@media only screen and (min-width: 1200px){
-	#books .sections .section-container{
-		min-height: 235px;
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -1006,7 +983,7 @@ article > .toc + section{
 }
 #books .sections .section-container h4{
 	color: #305056;
-	margin: 0 0 1.5rem;
+	margin: 0;
 	position: relative;
 }
 #books .sections .section-container h4:before{
@@ -1028,10 +1005,16 @@ article > .toc + section{
 	-webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 	position: absolute;
-	top: -1rem;
-	right: -1rem;
+	top: -.5rem;
+	right: -.5rem;
 }
-/* paragraph of text */
+@media only screen and (min-width: 768px){
+	#books .sections .section-container h4::after{
+		top: -1rem;
+	right: -1rem;
+	}
+}
+/* paragraph/list of text */
 .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
@@ -1042,10 +1025,10 @@ article > .toc + section{
 	line-height: 1.875rem;
 }
 #books .sections .section-container ul:first-of-type{
-	margin: 1rem 0;
+	margin-top: .5rem;
 }
 #books .sections .section-container ul:first-of-type li{
-	margin-bottom: .25rem;
+	margin-bottom: .2rem;
 }
 /* list of works */
 #books .sections .section-container details summary::before{
@@ -1056,8 +1039,8 @@ article > .toc + section{
 	color: #4d5b51;
 	margin-right: .5rem;
 }
-#books .sections .section-container details[open]{
-	padding-bottom: 1rem;
+#books .sections .section-container details{
+	margin-bottom: 2rem;
 }
 #books .sections .section-container summary::after{
 	content: "expand";
@@ -2494,7 +2477,7 @@ img + p.caption-text,
 }
 @media only screen and (min-width:320px){
 	.films.gallery figure{
-		min-height: 356px;
+		min-height: 380px;
 	}
 }
 @media only screen and (min-width: 480px){
@@ -2507,7 +2490,7 @@ img + p.caption-text,
 		flex: 0 0 calc(50% - 1.5rem);
 	}
 	.films.gallery figure{
-		min-height: 436px;
+		min-height: 460px;
 	}
 }
 @media only screen and (min-width: 624px){
@@ -2522,7 +2505,7 @@ img + p.caption-text,
 		flex: 0 0 calc(33% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 347px;
+		min-height: 371px;
 		flex: 0 0 calc(50% - 1.5rem);
 	}
 }
@@ -2531,12 +2514,12 @@ img + p.caption-text,
 		gap: 2rem 2rem;
 	}
 	.films.gallery figure{
-		min-height: 378px;
+		min-height: 402px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.films.gallery figure{
-		min-height: 390px;
+		min-height: 414px;
 		flex: 0 0 calc(50% - 2rem);
 	}
 }
@@ -2545,7 +2528,7 @@ img + p.caption-text,
 		flex: 0 0 calc(25% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 392px;
+		min-height: 439px;
 		flex: 0 0 calc(33% - 2rem);
 	}
 }
@@ -2554,7 +2537,7 @@ img + p.caption-text,
 		flex: 0 0 calc(20% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 422px;
+		min-height: 470px;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -2562,7 +2545,7 @@ img + p.caption-text,
 		flex: 0 0 calc(17% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 418px;
+		min-height: 442px;
 		flex: 0 0 calc(25% - 2rem);
 	}
 }
@@ -2601,7 +2584,7 @@ img + p.caption-text,
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: .5rem;
+	gap: .75rem;
 }
 @media only screen and (min-width: 480px){
 	.films.gallery figure figcaption{
@@ -2632,16 +2615,16 @@ img + p.caption-text,
   font-weight: 400;
 	line-height: 1.875rem;
 	color: #305056;
-  margin: 1rem 0 .5rem;
+  margin: 1.5rem 0 .5rem;
   padding: 0;
 }
-.films.gallery figure figcaption h4::before{
+/* .films.gallery figure figcaption h4::before{
 	content: "\f03d";
 	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	color: #4d5b51;
 	margin-right: .75rem;
-}
+} */
 .films.gallery figure figcaption p{
 	margin: 0;
 	line-height: 1.6rem;
@@ -2848,11 +2831,12 @@ details > summary{
 	cursor: pointer;
 	display: inline;
 }
-details[open] > p:first-of-type,
-details[open] > ul:first-of-type,
-details[open] > ol:first-of-type{
-	padding-top: .25rem;
-	padding-bottom: .25rem;
+details[open] > p:first-of-type{
+	padding: .5rem 0;
+}
+details[open] > ul,
+details[open] > ol{
+	padding: .25rem 0 .25rem 1rem;
 }
 summary::-webkit-details-marker{
   display: none;

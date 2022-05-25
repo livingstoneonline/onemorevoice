@@ -863,11 +863,11 @@ article > .toc + section{
 		padding: 1rem;
 }
 #books .sections .section-container{
+	font-size: 1.125rem;
 	gap: 1rem;
 	position: relative;
 }
 #books .sections .section-container.title-slide{
-	font-size: 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1021,14 +1021,12 @@ article > .toc + section{
 	content: "";
 	width: 1.25rem;
 	height: 1.25rem;
-	/* background: black; */
 	-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
   -moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
   box-shadow: #697c6f 1px 0px 5px 1px inset;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-	display: inline-block;
 	position: absolute;
 	top: -1rem;
 	right: -1rem;
@@ -1039,9 +1037,15 @@ article > .toc + section{
 	font-style: italic;
 	text-align: center;
 }
-#books .sections .section-container p,
+#books .sections .section-container ul,
 #books .sections .section-container ol{
 	line-height: 1.875rem;
+}
+#books .sections .section-container ul:first-of-type{
+	margin: 1rem 0;
+}
+#books .sections .section-container ul:first-of-type li{
+	margin-bottom: .25rem;
 }
 /* list of works */
 #books .sections .section-container details summary::before{
@@ -1069,13 +1073,12 @@ article > .toc + section{
 #books .sections .section-container details[open] > summary:after{
 	content: "collapse";
 }
-#books .sections .section-container li:not(:last-child){
+#books .sections .section-container details li:not(:last-child){
 	margin-bottom: .5rem;
 }
 #books .sections .section-container .location-info{
-	font-size: .8em;
+	font-size: .9em;
 	font-style: italic;
-	/* text-transform: uppercase; */
 	color: #4d5b51;
 	right: 1rem;
 	bottom: 0;
@@ -2434,7 +2437,7 @@ ul.acknowledgments{
 }
 img + p.caption-text,
 .double-image + p.caption-text{
-	font-size: .8em;
+	font-size: .9rem;
 	line-height: 1.6rem;
 	margin: 10px 0 2em 0;
 	padding: 0;

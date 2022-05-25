@@ -865,6 +865,14 @@ article > .toc + section{
 #books .sections .section-container{
 	gap: 1rem;
 }
+#books .sections .section-container.title-slide{
+	font-size: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 @media only screen and (min-width: 320px){
 	#books .sections .section-container{
 		min-height: 231px;

@@ -1006,6 +1006,7 @@ article > .toc + section{
 #books .sections .section-container h4{
 	color: #305056;
 	margin: 0 0 1.5rem;
+	position: relative;
 }
 #books .sections .section-container h4:before{
 	content: "\f304";
@@ -1014,6 +1015,22 @@ article > .toc + section{
 	color: #4d5b51;
 	white-space: nowrap;
 	margin-right: .75rem;
+}
+#books .sections .section-container h4::after{
+	content: "";
+	width: 1.25rem;
+	height: 1.25rem;
+	/* background: black; */
+	-webkit-box-shadow: #697c6f 0px 0px 4px 1px inset;
+  -moz-box-shadow: #697c6f 0px 0px 4px 1px inset;
+  box-shadow: #697c6f 0px 0px 4px 1px inset;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
 }
 /* paragraph of text */
 .sections .section-container a div p{

@@ -849,6 +849,7 @@ article > .toc + section{
 }
 #books .sections .section-container{
 	font-size: 1.05rem;
+	padding: 1rem 1.5rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -866,13 +867,18 @@ article > .toc + section{
 		min-height: 306px;
 	}
 }
+@media only screen and (min-width: 480px){
+	#books .sections .section-container{
+		padding: 1rem 2rem;
+	}
+}
 @media only screen and (min-width: 768px){
 	.sections .section-container,
 	#books .sections .section-container{
 		flex: 0 0 calc(50% - 1.5rem);
 	}
 	#books .sections .section-container{
-		padding: 2rem;
+		padding: 1.5rem;
 		min-height: 338px;
 	}
 }
@@ -1006,7 +1012,7 @@ article > .toc + section{
   -moz-border-radius: 50%;
 	position: absolute;
 	top: -.5rem;
-	right: -.5rem;
+	right: -1rem;
 }
 @media only screen and (min-width: 768px){
 	#books .sections .section-container h4::after{
@@ -1055,6 +1061,9 @@ article > .toc + section{
 }
 #books .sections .section-container details[open] > summary:after{
 	content: "collapse";
+}
+#books .sections .section-container details li{
+	padding-left: .25rem;
 }
 #books .sections .section-container details li:not(:last-child){
 	margin-bottom: .5rem;

@@ -1,49 +1,9 @@
 #books details li::before,
 #books details[open] li::before,
 #books details[open]:focus-within li::before{
-
 }
-
 /* Book-Length Works */
-
-/* #books h4,
-.published-author,
-.author-details,
-.works-list{
-	border: 1px solid #858585;
-}
-#books h4{
-	font-size: 1.15em;
-	font-style: normal;
-	font-weight: 600;
-	color: white;
-	background: #204a79;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	margin: 0 0 1.5em 0;
-	padding: 10px 14px;
-}
-.published-author{
-	font-size: 1.05em;
-	color: #262626;
-	background: #e3e3e3;
-	padding: 10px 16px;
-	margin: 0;
-	border-radius: 8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius: 8px 8px 0 0;
-	display: -webkit-flex;
-  display: flex;
-	justify-content: space-between;
-}
-.author-details{
-	border-top: none;
-	border-bottom: none;
-	margin: 0;
-	padding: .8em 1.5em .2em 1.5em;
-}
-.works-list{
+/* .works-list{
 	border-top: none;
 	border-radius: 0 0 8px 8px;
 	-webkit-border-radius: 0 0 8px 8px;
@@ -267,7 +227,7 @@ body{
 .documents h3{
 	border-bottom: 8px solid #e3b382;
 }
-.materials .content.recovered.full-page h4{
+.materials .content.recovered h4{
 	border-bottom: 4px solid #a4b48b;
 }
 .home .toc ol:before,
@@ -529,7 +489,7 @@ section.content:nth-child(3) > section:not(:first-child),
 }
 /* spacing on motion pictures and  book-length works */
 .content.recovered.full-page article > section:not(:first-child),
-.content.recovered.full-page article > section > section:not(:first-child){
+.content.recovered article > section > section:not(:first-child){
 	margin-top: 2rem;
 }
 @media only screen and (min-width: 768px){
@@ -872,6 +832,11 @@ article > .toc + section{
 		padding: 0 2rem;
 	}
 }
+@media only screen and (min-width: 768px){
+	#books .sections{
+		padding: 0;
+	}
+}
 @media only screen and (min-width: 992px){
 	.sections{
 		padding: 2rem 0 3rem;
@@ -896,38 +861,55 @@ article > .toc + section{
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
 		padding: 1rem;
-	}
+}
+#books .sections .section-container{
+	gap: 1rem;
+}
+@media only screen and (min-width: 320px){
 	#books .sections .section-container{
-		gap: 1rem;
+		min-height: 231px;
 	}
+}
+@media only screen and (min-width: 480px){
+	#books .sections .section-container{
+		min-height: 201px;
+	}
+}
 @media only screen and (min-width: 768px){
 	.sections .section-container,
 	#books .sections .section-container{
-		flex: 0 0 calc(50% - 1.5rem)
+		flex: 0 0 calc(50% - 1.5rem);
 	}
 	#books .sections .section-container{
 		padding: 2rem;
+		min-height: 263px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.sections .section-container{
-		flex: 0 0 calc(33% - 2rem)
+		flex: 0 0 calc(33% - 2rem);
 	}
 	#books .sections .section-container{
-		flex: 0 0 calc(50% - 2rem)
+		min-height: 267px;
+		flex: 0 0 calc(50% - 2rem);
+	}
+}
+@media only screen and (min-width: 1200px){
+	#books .sections .section-container{
+		min-height: 235px;
 	}
 }
 @media only screen and (min-width: 1366px){
 	.sections .section-container{
-		flex: 0 0 calc(25% - 2rem)
+		flex: 0 0 calc(25% - 2rem);
 	}
 }
 @media only screen and (min-width: 1600px){
 	.sections .section-container{
-		flex: 0 0 calc(20% - 3rem)
+		flex: 0 0 calc(20% - 3rem);
 	}
 	#books .sections .section-container{
-		flex: 0 0 calc(33% - 3rem)
+		flex: 0 0 calc(33% - 3rem);
 	}
 }
 .sections .section-container:hover,

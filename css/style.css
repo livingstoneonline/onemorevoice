@@ -389,7 +389,7 @@ h3.subtitle{
 }
 h3.subtitle:before{
 	content: "\f518";
-	font-family: var(--fa-style-family,"Font Awesome 6 Free");
+	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	margin-right: .75rem;
 }
@@ -1011,6 +1011,14 @@ article > .toc + section{
 	color: #305056;
 	margin: 0 0 1.5rem;
 }
+#books .sections .section-container h4:before{
+	content: "\f304";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	color: #4d5b51;
+	white-space: nowrap;
+	margin-right: .75rem;
+}
 /* paragraph of text */
 .sections .section-container a div p{
 	line-height: 1.6rem;
@@ -1019,14 +1027,19 @@ article > .toc + section{
 }
 #books .sections .section-container p,
 #books .sections .section-container ol{
-	line-height: 1.6rem;
+	line-height: 1.875rem;
 }
 /* list of works */
+#books .sections .section-container details summary::before{
+	content: "\f518";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	white-space: nowrap;
+	color: #4d5b51;
+	margin-right: .5rem;
+}
 #books .sections .section-container details[open]{
 	padding-bottom: 1rem;
-}
-#books .sections .section-container li:not(:last-child){
-	margin-bottom: .5rem;
 }
 #books .sections .section-container summary::after{
 	content: "expand";
@@ -1037,10 +1050,13 @@ article > .toc + section{
 	text-transform: uppercase;
 	white-space: nowrap;
 	color: #305056;
-	margin-left: .25rem;
+	margin-left: .5rem;
 }
 #books .sections .section-container details[open] > summary:after{
 	content: "collapse";
+}
+#books .sections .section-container li:not(:last-child){
+	margin-bottom: .5rem;
 }
 
 
@@ -2593,6 +2609,13 @@ img + p.caption-text,
   margin: 1rem 0 .5rem;
   padding: 0;
 }
+.films.gallery figure figcaption h4::before{
+	content: "\f03d";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 600;
+	color: #4d5b51;
+	margin-right: .75rem;
+}
 .films.gallery figure figcaption p{
 	margin: 0;
 	line-height: 1.6rem;
@@ -2808,8 +2831,8 @@ summary::-webkit-details-marker{
   display: none;
 }
 summary::after{
-	font-family: "Font Awesome 6 Free";
 	content: "\f0da";
+	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	white-space: nowrap;
 	margin-left: .25rem;

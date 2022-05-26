@@ -427,6 +427,9 @@ section h4:not(:first-of-type){
 		padding: 2rem 6rem 3rem;
 	}
 }
+.toc li{
+	padding-left: .125rem;
+}
 
 
 /* Main, Article, Section, Credits */
@@ -466,20 +469,24 @@ main{
 	-ms-word-break: break-all;
 }
 /* section.content:nth-child(3) > section:not(:first-child) 
-is for spacing gallery sections in middle of page */
+is for spacing gallery sections in middle of page;
+section.content article section section:not(:first-of-type)
+used especially on bibliography.html */x
 article > section:not(:first-child),
 section.content:nth-child(3) > section:not(:first-child),
+section.content:not(.recovered) article section section:not(:first-of-type),
 .credits{
 	margin-top: 3rem;
 }
 /* spacing on motion pictures and  book-length works */
 .content.recovered.full-page article > section:not(:first-child),
-.content.recovered article > section > section:not(:first-child){
+.content.recovered article > section > section:not(:first-of-type){
 	margin-top: 2rem;
 }
 @media only screen and (min-width: 768px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
+	section.content:not(.recovered) article section section:not(:first-of-type),
 	.credits{
 		margin-top: 3.5rem;
 	}
@@ -487,10 +494,12 @@ section.content:nth-child(3) > section:not(:first-child),
 @media only screen and (min-width: 992px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
+	section.content:not(.recovered) article section section:not(:first-of-type),
 	.credits{
 		margin-top: 4rem;
 	}	
 }
+/* Section after TOC spacing */
 article > .toc + section{
 	margin-top: 2rem;
 }
@@ -499,6 +508,7 @@ article > .toc + section{
 		margin-top: 3rem;
 	}
 }
+/* Credits spacing */
 .home .credits:first-of-type{
 	margin-top: 0;
 }
@@ -990,6 +1000,7 @@ article > .toc + section{
 #books .sections .section-container h4{
 	color: #305056;
 	margin: 0;
+	padding: 0 0 .5rem 0;
 	position: relative;
 }
 #books .sections .section-container h4:before{
@@ -2294,6 +2305,7 @@ ul{
 	padding: 0 0 0 1.4rem;
 }
 .bibliography article section:not(.toc) ol,
+.bibliography article section:not(.toc) ul,
 .bibliography article section ul{
 	list-style: none;
 	padding-left: 0;
@@ -2374,7 +2386,7 @@ aside.warning{
 	max-width: 700px;
 }
 .info-note{
-	font-size: 1em;
+	font-size: 1rem;
 	font-style: italic;
 	line-height: 1.875rem;
 	margin-bottom: 2.5rem;
@@ -2629,7 +2641,7 @@ img + p.caption-text,
 	line-height: 1.875rem;
 	color: #305056;
   margin: 1.5rem 0 .5rem;
-  padding: 0;
+  padding: 0 0 .5rem 0;
 }
 /* .films.gallery figure figcaption h4::before{
 	content: "\f03d";

@@ -20,6 +20,10 @@
 		margin-bottom: unset;
 	}
 }
+#texts.sections .section-container .creator-image a:hover,
+#texts.sections .section-container .creator-image a:focus{
+	outline: none;
+}
 #texts .no-image:after{
 	content: "";
 	background: #e3e3e3;

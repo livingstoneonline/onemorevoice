@@ -7,7 +7,7 @@
 
 
 /* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
-section.archival-text .creator-image{
+#texts .creator-image{
 	line-height: 0;
 	float: left;
 	margin: 0 1em .3em 0;
@@ -16,18 +16,18 @@ section.archival-text .creator-image{
 	position: relative;
 }
 @media only screen and (min-width: 768px){
-	section.archival-text .creator-image{
+	#texts .creator-image{
 		margin-bottom: unset;
 	}
 }
-section.archival-text .no-image:after{
+#texts .no-image:after{
 	content: "";
 	background: #e3e3e3;
 	border: 1px solid #858585;
 	padding-bottom: 100%;
 	display: block;
 }
-section.archival-text .no-image .content{
+#texts .no-image .content{
 	font-size: .95em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -35,17 +35,13 @@ section.archival-text .no-image .content{
 	text-align: center;
 	color: #404040;
 	width: 100%;
+	display: inline-block;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
-@media only screen and (min-width: 768px){
-	section.archival-text .biography{
-		display: inline-block;
-		max-width: calc(75% - 1em);
-	}
-}
+
 
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
@@ -853,6 +849,9 @@ article > .toc + section{
 
 /* Middle Categories Pages */
 /* main container */
+#books{
+	padding: 1rem 0;
+}
 .sections{
 	padding: 1rem;
 	width: 100%;
@@ -916,6 +915,8 @@ article > .toc + section{
 	position: relative;
 	display: flex;
 	flex-direction: column;
+}
+#books .sections .section-container{
 	gap: 1rem;
 }
 #books .sections .section-container.title-slide,
@@ -1123,14 +1124,16 @@ article > .toc + section{
 	margin-bottom: .2rem;
 }
 /* list of works */
-#books .sections .section-container details summary::before,
+#books .sections .section-container details summary::before
 #texts.sections .section-container details summary::before{
-	content: "\f518";
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	white-space: nowrap;
 	color: #4d5b51;
 	margin: 0 .5rem;
+}
+#books .sections .section-container details summary::before{
+	content: "\f518";
 }
 #books .sections .section-container details,
 #texts.sections .section-container details{
@@ -1179,9 +1182,6 @@ article > .toc + section{
 }
 .content.recovered.full-page{
 	margin-top: 1rem;
-}
-.content.recovered article{
-	padding: 1rem 0;
 }
 @media only screen and (min-width: 768px){	
 	.content{

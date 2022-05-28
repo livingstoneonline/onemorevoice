@@ -3,6 +3,50 @@
 #books details[open]:focus-within li::before{
 }
 
+/* 1.11. Archival Texts */
+
+
+/* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+section.archival-text .creator-image{
+	line-height: 0;
+	float: left;
+	margin: 0 1em .3em 0;
+	width: 25%;
+	min-width: 115px;
+	position: relative;
+}
+@media only screen and (min-width: 768px){
+	section.archival-text .creator-image{
+		margin-bottom: unset;
+	}
+}
+section.archival-text .no-image:after{
+	content: "";
+	background: #e3e3e3;
+	border: 1px solid #858585;
+	padding-bottom: 100%;
+	display: block;
+}
+section.archival-text .no-image .content{
+	font-size: .95em;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	line-height: 1.5em;
+	text-align: center;
+	color: #404040;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+@media only screen and (min-width: 768px){
+	section.archival-text .biography{
+		display: inline-block;
+		max-width: calc(75% - 1em);
+	}
+}
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -483,6 +527,10 @@ section.content:not(.recovered) article section section:not(:first-of-type),
 .content.recovered article > section > section:not(:first-of-type){
 	margin-top: 2rem;
 }
+/* spacing on texts */
+.content.recovered.full-page article > section#texts > section:not(:first-of-type){
+	margin-top: 0;
+}
 @media only screen and (min-width: 768px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
@@ -814,7 +862,8 @@ article > .toc + section{
 	justify-content: center;	
 	gap: 2rem;
 }
-#books .sections{
+#books .sections,
+#texts.sections{
 	padding: 0 1rem;
 }
 @media only screen and (min-width: 768px){
@@ -823,12 +872,14 @@ article > .toc + section{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	#books .sections{
+	#books .sections,
+	#texts.sections{
 		padding: 0 2rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	#books .sections{
+	#books .sections,
+	#texts.sections{
 		padding: 0;
 	}
 }
@@ -836,7 +887,8 @@ article > .toc + section{
 	.sections{
 		padding: 2rem 0 3rem;
 	}
-	#books .sections{
+	#books .sections,
+	#texts.sections{
 		padding: 0
 	}
 }
@@ -857,7 +909,8 @@ article > .toc + section{
 		-moz-border-radius: 6px;
 		padding: 1rem;
 }
-#books .sections .section-container{
+#books .sections .section-container,
+#texts.sections .section-container{
 	font-size: 1.05rem;
 	padding: 1rem 1.5rem;
 	position: relative;
@@ -865,7 +918,8 @@ article > .toc + section{
 	flex-direction: column;
 	gap: 1rem;
 }
-#books .sections .section-container.title-slide{
+#books .sections .section-container.title-slide,
+#texts.sections .section-container.title-slide{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -873,21 +927,25 @@ article > .toc + section{
 	align-content: center;
 }
 @media only screen and (min-width: 320px){
-	#books .sections .section-container{
+	#books .sections .section-container,
+	#texts.sections .section-container{
 		min-height: 306px;
 	}
 }
 @media only screen and (min-width: 480px){
-	#books .sections .section-container{
+	#books .sections .section-container,
+	#texts.sections .section-container{
 		padding: 1rem 2rem;
 	}
 }
 @media only screen and (min-width: 768px){
 	.sections .section-container,
-	#books .sections .section-container{
+	#books .sections .section-container,
+	#texts.sections .section-container{
 		flex: 0 0 calc(50% - 1.5rem);
 	}
-	#books .sections .section-container{
+	#books .sections .section-container,
+	#texts.sections .section-container{
 		padding: 1.5rem;
 		min-height: 338px;
 	}
@@ -896,7 +954,8 @@ article > .toc + section{
 	.sections .section-container{
 		flex: 0 0 calc(33% - 2rem);
 	}
-	#books .sections .section-container{
+	#books .sections .section-container,
+	#texts.sections .section-container{
 		min-height: 306px;
 		flex: 0 0 calc(50% - 2rem);
 	}
@@ -910,7 +969,8 @@ article > .toc + section{
 	.sections .section-container{
 		flex: 0 0 calc(20% - 3rem);
 	}
-	#books .sections .section-container{
+	#books .sections .section-container,
+	#texts.sections .section-container{
 		flex: 0 0 calc(33% - 3rem);
 	}
 }
@@ -919,7 +979,9 @@ article > .toc + section{
 	outline: 4px solid #e3b382;
 }
 #books .sections .section-container:hover,
-#books .sections .section-container:focus-within{
+#books .sections .section-container:focus-within,
+#texts.sections .section-container:hover,
+#texts.sections .section-container:focus-within{
 	outline: none;
 }
 /* main hyperlink */
@@ -930,7 +992,9 @@ article > .toc + section{
 	width: 100%;
 }
 #books .sections .section-container a, 
-#books .sections .section-container a:visited{
+#books .sections .section-container a:visited,
+#texts.sections .section-container a, 
+#texts.sections .section-container a:visited{
 	color: #305056;
 	text-decoration: underline;
 }
@@ -939,7 +1003,9 @@ article > .toc + section{
 	outline: none;
 }
 #books .sections .section-container a:hover,
-#books .sections .section-container a:focus{
+#books .sections .section-container a:focus,
+#texts.sections .section-container a:hover,
+#texts.sections .section-container a:focus{
 	color: #212119;
 	background: #E7E9E7;
 	outline: 3px solid #e3b382;
@@ -990,20 +1056,23 @@ article > .toc + section{
 }
 /* heading */
 .sections .section-container a div h3,
-#books .sections .section-container h4{
+#books .sections .section-container h4,
+#texts.sections .section-container h4{
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
 	font-weight: 400;
 	margin: .5rem 0 0;
 	padding: 0;
 }
-#books .sections .section-container h4{
+#books .sections .section-container h4,
+#texts.sections .section-container h4{
 	color: #305056;
 	margin: 0;
 	padding: 0 0 .5rem 0;
 	position: relative;
 }
-#books .sections .section-container h4:before{
+#books .sections .section-container h4:before
+/* #texts.sections .section-container h4:before */{
 	content: "\f304";
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
@@ -1011,7 +1080,8 @@ article > .toc + section{
 	white-space: nowrap;
 	margin-right: .75rem;
 }
-#books .sections .section-container h4::after{
+#books .sections .section-container h4::after
+/* #texts.sections .section-container h4::after */{
 	content: "";
 	width: 1.25rem;
 	height: 1.25rem;
@@ -1026,9 +1096,10 @@ article > .toc + section{
 	right: -1rem;
 }
 @media only screen and (min-width: 768px){
-	#books .sections .section-container h4::after{
+	#books .sections .section-container h4::after,
+	/* #texts.sections .section-container h4::after */{
 		top: -1rem;
-	right: -1rem;
+		right: -1rem;
 	}
 }
 /* paragraph/list of text */
@@ -1038,17 +1109,22 @@ article > .toc + section{
 	text-align: center;
 }
 #books .sections .section-container ul,
-#books .sections .section-container ol{
+#books .sections .section-container ol,
+#texts.sections .section-container ul,
+#texts.sections .section-container ol{
 	line-height: 1.875rem;
 }
-#books .sections .section-container ul:first-of-type{
+#books .sections .section-container ul:first-of-type,
+#texts.sections .section-container ul:first-of-type{
 	margin-top: .5rem;
 }
-#books .sections .section-container ul:first-of-type li{
+#books .sections .section-container ul:first-of-type li,
+#texts.sections .section-container ul:first-of-type li{
 	margin-bottom: .2rem;
 }
 /* list of works */
-#books .sections .section-container details summary::before{
+#books .sections .section-container details summary::before,
+#texts.sections .section-container details summary::before{
 	content: "\f518";
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
@@ -1056,10 +1132,12 @@ article > .toc + section{
 	color: #4d5b51;
 	margin: 0 .5rem;
 }
-#books .sections .section-container details{
+#books .sections .section-container details,
+#texts.sections .section-container details{
 	margin-bottom: 2rem;
 }
-#books .sections .section-container summary::after{
+#books .sections .section-container summary::after,
+#texts.sections .section-container summary::after{
 	content: "expand";
 	font-size: .9em;
 	font-family: inherit;
@@ -1070,16 +1148,20 @@ article > .toc + section{
 	color: #305056;
 	margin-left: .5rem;
 }
-#books .sections .section-container details[open] > summary:after{
+#books .sections .section-container details[open] > summary:after,
+#texts.sections .section-container details[open] > summary:after{
 	content: "collapse";
 }
-#books .sections .section-container details li{
+#books .sections .section-container details li,
+#texts.sections .section-container details li{
 	padding-left: .25rem;
 }
-#books .sections .section-container details li:not(:last-child){
+#books .sections .section-container details li:not(:last-child),
+#texts.sections .section-container details li:not(:last-child){
 	margin-bottom: .5rem;
 }
-#books .sections .section-container .location-info{
+#books .sections .section-container .location-info,
+#texts.sections .section-container .location-info{
 	font-size: .9em;
 	font-style: italic;
 	color: #4d5b51;
@@ -2973,118 +3055,6 @@ details:focus-within ::marker{
 /************* End of Vetted CSS ************/
 
 /* Remove extra code from Overlay, check colors, "em" */
-
-/* 1.11. Archival Texts */
-
-section.archival-text{
-	font-size: .8em;
-	line-height: 1.875em;
-	border: 1px solid #858585;
-	border-radius: 9px;
-	-webkit-border-radius: 9px;
-	-moz-border-radius: 9px;
-	border-spacing: 0;
-	margin: 2.5em 0;
-	width: 100%;
-}
-@media only screen and (min-width: 768px){
-	section.archival-text{
-		font-size: .9em;
-	}
-}
-section.archival-text:last-of-type{
-	margin: 2.5em 0 1em 0;
-}
-section.archival-text h4,
-section.archival-text p{
-	border-bottom: 1px solid #858585;
-	margin: 0;
-	padding: 12px;
-	overflow: hidden;
-}
-section.archival-text p:last-of-type{
-	border-bottom: none;
-}
-section.archival-text h4{
-	font-size: 1.15em;
-	font-weight: 600;
-	font-style: normal;
-	color: white;
-	background: #204A79;
-	border-radius: 8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
-	-moz-border-radius: 8px 8px 0 0;
-	display: -webkit-flex;
-  display: flex;
-	justify-content: space-between;
-}
-/* section.archival-text .return-top{
-	color: white;
-	line-height: 1.875em;
-}
-section.archival-text a.return-top:hover,
-section.archival-text a.return-top:focus{
-	color: #a83c37;
-	background: #e3e3e3;
-} */
-section.archival-text p:last-child{
-	border-bottom: none;
-}
-section.archival-text .item{
-	background: #DBE6F5;
-}
-section.archival-text .item a:hover,
-section.archival-text .item a:focus{
-	background: whitesmoke;
-}
-section.archival-text .details{
-	padding: 10px;
-}
-@media only screen and (min-width: 768px){
-	section.archival-text .details{
-		padding: 10px 10px 10px 38px;
-	}
-}
-/* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
-section.archival-text .creator-image{
-	line-height: 0;
-	float: left;
-	margin: 0 1em .3em 0;
-	width: 25%;
-	min-width: 115px;
-	position: relative;
-}
-@media only screen and (min-width: 768px){
-	section.archival-text .creator-image{
-		margin-bottom: unset;
-	}
-}
-section.archival-text .no-image:after{
-	content: "";
-	background: #e3e3e3;
-	border: 1px solid #858585;
-	padding-bottom: 100%;
-	display: block;
-}
-section.archival-text .no-image .content{
-	font-size: .95em;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	line-height: 1.5em;
-	text-align: center;
-	color: #404040;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-}
-@media only screen and (min-width: 768px){
-	section.archival-text .biography{
-		display: inline-block;
-		max-width: calc(75% - 1em);
-	}
-}
 
 /* 1.17. Formatting */
 

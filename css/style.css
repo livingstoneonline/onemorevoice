@@ -29,7 +29,6 @@
 }
 #texts .no-image .content{
 	font-size: .95em;
-	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	line-height: 1.5em;
 	text-align: center;
@@ -863,7 +862,7 @@ article > .toc + section{
 }
 #books .sections,
 #texts.sections{
-	padding: 0 1rem;
+	padding: 0;
 }
 @media only screen and (min-width: 768px){
 	.sections{
@@ -1124,7 +1123,7 @@ article > .toc + section{
 	margin-bottom: .2rem;
 }
 /* list of works */
-#books .sections .section-container details summary::before
+#books .sections .section-container details summary::before,
 #texts.sections .section-container details summary::before{
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;

@@ -3,8 +3,19 @@
 #books details[open]:focus-within li::before{
 } */
 
+/* @media only screen and (min-width: 480px) {
+  #books .sections .section-container, #texts.sections .section-container {
+    border-top: 12px solid #8db7bf;
+    border-bottom: 12px solid #8db7bf;
+  }
+} */
+/* .materials .content.recovered #texts h4 {
+  border-bottom: 4px solid #8db7bf;
+} */
+
 /*
 480+
+link bios on page
 Authors by region
 Region per card
 Author image sizes
@@ -222,8 +233,11 @@ body{
 .documents h3{
 	border-bottom: 8px solid #e3b382;
 }
-.materials .content.recovered h4{
+.materials .content.recovered #books h4{
 	border-bottom: 4px solid #a4b48b;
+}
+.materials .content.recovered #texts h4{
+	border-bottom: 4px solid #8db7bf;
 }
 .home .toc ol:before,
 .documents .toc ol:before{
@@ -886,11 +900,9 @@ article > .toc + section{
 	display: flex;
 	flex-direction: column;
 }
-#books .sections .section-container{
-	gap: 1rem;
-}
+#books .sections .section-container,
 #texts.sections .section-container{
-	gap: 1.5rem;
+	gap: 1rem;
 }
 #books .sections .section-container.title-slide,
 #texts.sections .section-container.title-slide{
@@ -1086,22 +1098,29 @@ article > .toc + section{
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
+	gap: 1.5rem;
+}
+@media only screen and (min-width: 480px){
+	#texts .image-biography{
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
 }
 
 /* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
 #texts .creator-image{
 	line-height: 0;
-	min-width: 115px;
+	min-height: 160px;
+	min-width: 160px;
 	position: relative;
-}
-@media only screen and (min-width: 768px){
-	#texts .creator-image{
-		margin-bottom: unset;
-	}
 }
 #texts.sections .creator-image a:hover,
 #texts.sections .creator-image a:focus{
-	outline: none;
+	outline: 3px solid #305056;
+}
+#texts .creator-image img{
+	border: none;
 }
 #texts .no-image:after{
 	content: "";
@@ -1125,6 +1144,11 @@ article > .toc + section{
 }
 #texts .image-biography p{
 	margin: 1rem .5rem 0;
+}
+@media only screen and (min-width: 480px){
+	#texts .image-biography p{
+		margin: 0 .5rem;
+	}
 }
 #texts p{
 	margin: 0 .5rem;
@@ -1150,6 +1174,12 @@ article > .toc + section{
 #books .sections .section-container ul:first-of-type li,
 #texts.sections .section-container ul:first-of-type li{
 	margin-bottom: .2rem;
+}
+#books .sections .section-container ul:first-of-type li:last-of-type,
+#texts.sections .section-container ul:first-of-type li:last-of-type,
+#books .sections .section-container ul:first-of-type li:only-of-type,
+#texts.sections .section-container ul:first-of-type li:only-of-type{
+	margin-bottom: 0;
 }
 /* list of works */
 #books .sections .section-container details summary::before,
@@ -1180,7 +1210,7 @@ article > .toc + section{
 	text-transform: uppercase;
 	white-space: nowrap;
 	color: #305056;
-	margin-left: .5rem;
+	margin: 0 .5rem;
 }
 #books .sections .section-container details[open] > summary:after,
 #texts.sections .section-container details[open] > summary:after{

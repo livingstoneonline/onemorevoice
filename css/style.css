@@ -846,17 +846,41 @@ article > .toc + section{
 
 /* Middle Categories Pages */
 /* main container */
+@media only screen and (min-width: 768px){
+	.categories .sections,
+	#books,
+	#texts,
+	#films,
+	#visuals{
+		padding: 0 0 1rem;
+	}
+}
 @media only screen and (min-width: 992px){
 	#books,
 	#texts,
 	#films{
 		padding: 1rem 0;
 	}
+	.categories .sections{
+		padding: 2rem 0;
+	}
 }
 @media only screen and (min-width: 1200px){
-	#texts,
-	#films{
-		padding: 0;
+	.content.recovered{
+		margin: 1em 0 2rem;
+	}
+	.content.recovered.content.full-page{
+		margin: 1rem 0;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.content.recovered.content.full-page{
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 1600px){
+	.content.recovered.content.full-page{
+		margin: 0 0 1rem;
 	}
 }
 /* flex institute */
@@ -878,19 +902,36 @@ article > .toc + section{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+	#texts .sections{
+		flex-direction: column;
+		justify-content: center;	
+	}
+}
+@media only screen and (min-width: 992px){
+	#texts .sections{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 /* padding and gaps */
 .sections{
 	padding: 1rem;
 	gap: 2rem;
 }
-#books .sections,
+#books .sections{
+	padding: 1rem 0 0;
+}
 #texts .sections{
 	padding: 0;
+}
+@media only screen and (min-width: 480px){
+	.sections{
+		padding: 1rem 1rem 0;
 }
 @media only screen and (min-width: 624px){
 	#books .sections{
 		gap: 1rem
+	}
 }
 @media only screen and (min-width: 768px){
 	.sections{
@@ -903,6 +944,9 @@ article > .toc + section{
 @media only screen and (min-width: 992px){
 	.sections{
 		padding: 2rem 0 3rem;
+	}
+	#books .sections{
+		padding: 0;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -983,9 +1027,6 @@ article > .toc + section{
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-}
-#texts .sections .section-container{
-	flex-grow: 1;
 }
 #books .sections .section-container.title-slide,
 #texts .sections .section-container.title-slide{
@@ -1289,7 +1330,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 768px){	
 	.content{
-		margin: 0 0 2rem;
+		margin: 0 0 1rem;
 		padding: 0;
 		display: -webkit-flex;
     display: flex;

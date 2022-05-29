@@ -862,7 +862,7 @@ article > .toc + section{
 		padding: 1rem 0;
 	}
 	.categories .sections{
-		padding: 2rem 0;
+		padding: 2rem 0 3rem;
 	}
 }
 /* flex institute */
@@ -1331,6 +1331,9 @@ article > .toc + section{
 @media only screen and (min-width: 992px){
 	.content{
 		padding: 0 1rem;
+	}
+	.content:last-of-type{
+		margin-bottom: 2rem;
 	}
 	.home main .content:nth-child(2){
 		margin-top: 2rem;

@@ -38,7 +38,9 @@ Principal Components
 Section-Specific Colors
 Headers
 Page Menus
-Main, Article, Section, Credits
+Main
+Credits
+Margin Tops
 Home/Categories Top
 Essay Top
 Main Image Caption Button
@@ -456,7 +458,7 @@ section h4:not(:first-of-type){
 }
 
 
-/* Main, Article, Section, Credits */
+/* Main */
 
 main{
 	margin: 0 auto;
@@ -483,6 +485,10 @@ main{
 		max-width: 1600px;
 	}
 }
+
+
+/* Credits */
+
 .credits{
 	font-size: 1rem;
 }
@@ -492,6 +498,10 @@ main{
 	word-break: break-word;
 	-ms-word-break: break-all;
 }
+
+
+/* Margin Tops */
+
 /* section.content:nth-child(3) > section:not(:first-child) 
 is for spacing gallery sections in middle of page;
 section.content article section section:not(:first-of-type)
@@ -844,19 +854,34 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 1200px){
-	#books,
 	#texts,
 	#films{
 		padding: 0;
 	}
 }
+/* flex institute */
 .sections{
-	padding: 1rem;
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;	
+}
+@media only screen and (min-width: 624px){
+	#books .sections{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (min-width: 768px){
+	.sections{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+/* padding and gaps */
+.sections{
+	padding: 1rem;
 	gap: 2rem;
 }
 #books .sections,
@@ -865,17 +890,14 @@ article > .toc + section{
 }
 @media only screen and (min-width: 624px){
 	#books .sections{
-		padding: 0;
-		flex-direction: row;
-		flex-wrap: wrap;
 		gap: 1rem
-	}
 }
 @media only screen and (min-width: 768px){
 	.sections{
 		padding: 0;
-		flex-direction: row;
-		flex-wrap: wrap;
+	}
+	#books .sections{
+		gap: 1.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -889,47 +911,10 @@ article > .toc + section{
 		gap: 3rem;
 	}
 }
-/* single item container */
-.sections .section-container{
-		background: #ededed;
-		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
-		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
-		box-shadow: #697c6f 0px 3px 7px 0px;
-		border-radius: 6px;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-		padding: 1rem;
-}
-#books .sections .section-container,
-#texts .sections .section-container{
-	font-size: 1.05rem;
-	padding: 1rem 1.5rem;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
-#texts .sections .section-container{
-	flex-grow: 1;
-}
-#books .sections .section-container.title-slide,
-#texts .sections .section-container.title-slide{
-	min-height: 167px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-}
+/* min-height and flex percentages */
 @media only screen and (min-width: 320px){
 	#books .sections .section-container{
 		min-height: 306px;
-	}
-}
-@media only screen and (min-width: 480px){
-	#books .sections .section-container,
-	#texts .sections .section-container{
-		padding: 1rem 2rem;
 	}
 }
 @media only screen and (min-width: 624px){
@@ -938,16 +923,9 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 768px){
-	#books .sections{
-		gap: 1.5rem;
-	}
 	.sections .section-container,
 	article:not(#texts) .sections .section-container{
 		flex: 0 0 calc(50% - 2rem);
-	}
-	#books .sections .section-container,
-	#texts .sections .section-container{
-		padding: 1.5rem;
 	}
 	#books .sections .section-container{
 		padding: 1.5rem;
@@ -984,6 +962,53 @@ article > .toc + section{
 		flex: 0 0 calc(33.33% - 3rem);
 	}
 }
+
+
+/* single item container */
+.sections .section-container{
+		background: #ededed;
+		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
+		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
+		box-shadow: #697c6f 0px 3px 7px 0px;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		padding: 1rem;
+}
+#books .sections .section-container,
+#texts .sections .section-container{
+	font-size: 1.05rem;
+	padding: 1rem 1.5rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+#texts .sections .section-container{
+	flex-grow: 1;
+}
+#books .sections .section-container.title-slide,
+#texts .sections .section-container.title-slide{
+	min-height: 167px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+@media only screen and (min-width: 480px){
+	#books .sections .section-container,
+	#texts .sections .section-container{
+		padding: 1rem 2rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	#books .sections .section-container,
+	#texts .sections .section-container{
+		padding: 1.5rem;
+	}
+}
+/* section-container hover/focus */
 .sections .section-container:hover,
 .sections .section-container:focus-within{
 	outline: 4px solid #e3b382;
@@ -1092,11 +1117,7 @@ article > .toc + section{
 #books .sections .section-container h4:before{
 	content: "\f304";
 }
-/* #texts .sections .section-container h4:before{
-	content: "\f234";
-} */
-#books .sections .section-container h4::after
-/* #texts .sections .section-container h4::after */{
+#books .sections .section-container h4::after{
 	content: "";
 	width: 1.25rem;
 	height: 1.25rem;
@@ -1111,8 +1132,7 @@ article > .toc + section{
 	right: -1rem;
 }
 @media only screen and (min-width: 768px){
-	#books .sections .section-container h4::after
-	/* #texts .sections .section-container h4::after */{
+	#books .sections .section-container h4::after{
 		top: -.5rem;
 		right: -.5rem;
 	}
@@ -1131,7 +1151,7 @@ article > .toc + section{
 		gap: 1rem;
 	}
 }
-
+/* texts: images */
 /* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
 #texts .creator-image{
 	line-height: 0;
@@ -1166,6 +1186,7 @@ article > .toc + section{
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
+/* texts biographical text */
 #texts .image-biography p{
 	margin: 1rem .5rem 0;
 }
@@ -1177,10 +1198,7 @@ article > .toc + section{
 #texts p{
 	margin: 0 .5rem;
 }
-/* #texts details{
-	margin: 0 .5rem;
-} */
-/* paragraph / list of texts */
+/* paragraphs / list of texts */
 .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
@@ -1205,7 +1223,7 @@ article > .toc + section{
 #texts .sections .section-container ul:first-of-type li:only-of-type{
 	margin-bottom: 0;
 }
-/* list of works */
+/* list of works: details/summary */
 #books .sections .section-container details summary::before,
 #texts .sections .section-container details summary::before{
 	font-family: "Font Awesome 6 Free";
@@ -1248,6 +1266,7 @@ article > .toc + section{
 #texts .sections .section-container details li:not(:last-child){
 	margin-bottom: .5rem;
 }
+/* location info */
 #books .sections .section-container .location-info,
 #texts .sections .section-container .location-info{
 	font-size: .9em;
@@ -1257,6 +1276,7 @@ article > .toc + section{
 	bottom: 0;
 	position: absolute;
 }
+
 
 /* Home and Essay Bottom */
 

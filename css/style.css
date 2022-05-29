@@ -1033,15 +1033,20 @@ article > .toc + section{
 	padding: 0 0 .5rem 0;
 	position: relative;
 }
-#books .sections .section-container h4:before
-/* #texts.sections .section-container h4:before */{
-	content: "\f304";
+#books .sections .section-container h4:before,
+#texts.sections .section-container h4:before{
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	color: #4d5b51;
 	white-space: nowrap;
 	margin-right: .75rem;
 }
+#books .sections .section-container h4:before{
+	content: "\f304";
+}
+/* #texts.sections .section-container h4:before{
+	content: "\f234";
+} */
 #books .sections .section-container h4::after
 /* #texts.sections .section-container h4::after */{
 	content: "";
@@ -1074,9 +1079,6 @@ article > .toc + section{
 /* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
 #texts .creator-image{
 	line-height: 0;
-	/* float: left; */
-	/* margin: 0 1em .3em 0; */
-	/* width: 25%; */
 	min-width: 115px;
 	position: relative;
 }
@@ -1115,9 +1117,9 @@ article > .toc + section{
 #texts p{
 	margin: 0 .5rem;
 }
-#texts details{
+/* #texts details{
 	margin: 0 .5rem;
-}
+} */
 /* paragraph / list of texts */
 .sections .section-container a div p{
 	line-height: 1.6rem;
@@ -1130,8 +1132,7 @@ article > .toc + section{
 #texts.sections .section-container ol{
 	line-height: 1.875rem;
 }
-#books .sections .section-container ul:first-of-type,
-#texts.sections .section-container ul:first-of-type{
+#books .sections .section-container ul:first-of-type{
 	margin-top: .5rem;
 }
 #books .sections .section-container ul:first-of-type li,
@@ -1149,6 +1150,9 @@ article > .toc + section{
 }
 #books .sections .section-container details summary::before{
 	content: "\f518";
+}
+#texts.sections .section-container details summary::before{
+	content: "\f279";
 }
 #books .sections .section-container details,
 #texts.sections .section-container details{

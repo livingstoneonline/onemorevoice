@@ -4,7 +4,7 @@
 } */
 
 /* @media only screen and (min-width: 480px) {
-  #books .sections .section-container, #texts.sections .section-container {
+  #books .sections .section-container, #texts .sections .section-container {
     border-top: 12px solid #8db7bf;
     border-bottom: 12px solid #8db7bf;
   }
@@ -341,7 +341,7 @@ h3{
 	line-height: 1.6em;
 	color: #305056;
 	margin: 1.5rem 0;
-	padding: 0 0 1rem 0;
+	padding: 0 0 .75rem 0;
 }
 @media only screen and (min-width: 480px){
 	h3{
@@ -508,7 +508,7 @@ section.content:not(.recovered) article section section:not(:first-of-type),
 	margin-top: 2rem;
 }
 /* spacing on texts */
-.content.recovered.full-page article > section#texts > section:not(:first-of-type){
+.content.recovered.full-page article#texts > section > section:not(:first-of-type){
 	margin-top: 0;
 }
 @media only screen and (min-width: 768px){
@@ -833,8 +833,19 @@ article > .toc + section{
 
 /* Middle Categories Pages */
 /* main container */
-#books{
-	padding: 1rem 0;
+@media only screen and (min-width: 992px){
+	#books,
+	#texts,
+	#films{
+		padding: 1rem 0;
+	}
+}
+@media only screen and (min-width: 1200px){
+	#books,
+	#texts,
+	#films{
+		padding: 0;
+	}
 }
 .sections{
 	padding: 1rem;
@@ -846,7 +857,7 @@ article > .toc + section{
 	gap: 2rem;
 }
 #books .sections,
-#texts.sections{
+#texts .sections{
 	padding: 0;
 }
 @media only screen and (min-width: 768px){
@@ -855,24 +866,10 @@ article > .toc + section{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	#books .sections,
-	#texts.sections{
-		padding: 0 2rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	#books .sections,
-	#texts.sections{
-		padding: 0;
-	}
 }
 @media only screen and (min-width: 992px){
 	.sections{
 		padding: 2rem 0 3rem;
-	}
-	#books .sections,
-	#texts.sections{
-		padding: 0
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -893,19 +890,20 @@ article > .toc + section{
 		padding: 1rem;
 }
 #books .sections .section-container,
-#texts.sections .section-container{
+#texts .sections .section-container{
 	font-size: 1.05rem;
 	padding: 1rem 1.5rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-}
-#books .sections .section-container,
-#texts.sections .section-container{
 	gap: 1rem;
 }
+#texts .sections .section-container{
+	flex-grow: 1;
+}
 #books .sections .section-container.title-slide,
-#texts.sections .section-container.title-slide{
+#texts .sections .section-container.title-slide{
+	min-height: 167px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -913,36 +911,41 @@ article > .toc + section{
 	align-content: center;
 }
 @media only screen and (min-width: 320px){
-	#books .sections .section-container,
-	#texts.sections .section-container{
+	#books .sections .section-container{
 		min-height: 306px;
 	}
 }
 @media only screen and (min-width: 480px){
 	#books .sections .section-container,
-	#texts.sections .section-container{
+	#texts .sections .section-container{
 		padding: 1rem 2rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.sections .section-container,
-	#books .sections .section-container,
-	#texts.sections .section-container{
+	article:not(#texts) .sections .section-container,
+	#books .sections .section-container{
 		flex: 0 0 calc(50% - 1.5rem);
 	}
 	#books .sections .section-container,
-	#texts.sections .section-container{
+	#texts .sections .section-container{
+		padding: 1.5rem;
+	}
+	#books .sections .section-container{
 		padding: 1.5rem;
 		min-height: 338px;
 	}
 }
 @media only screen and (min-width: 992px){
-	.sections .section-container{
-		flex: 0 0 calc(33% - 2rem);
+	article:not(#books):not(#texts) .sections .section-container{
+		flex: 0 0 calc(33.33% - 2rem);
 	}
-	#books .sections .section-container,
-	#texts.sections .section-container{
+	#books .sections .section-container{
 		min-height: 306px;
+		flex: 0 0 calc(50% - 2rem);
+	}
+}
+@media only screen and (min-width: 1200px){
+	#texts .sections .section-container{
 		flex: 0 0 calc(50% - 2rem);
 	}
 }
@@ -955,9 +958,9 @@ article > .toc + section{
 	.sections .section-container{
 		flex: 0 0 calc(20% - 3rem);
 	}
-	#books .sections .section-container,
-	#texts.sections .section-container{
-		flex: 0 0 calc(33% - 3rem);
+	article#books .sections .section-container,
+	article#texts .sections .section-container{
+		flex: 0 0 calc(33.33% - 3rem);
 	}
 }
 .sections .section-container:hover,
@@ -966,8 +969,8 @@ article > .toc + section{
 }
 #books .sections .section-container:hover,
 #books .sections .section-container:focus-within,
-#texts.sections .section-container:hover,
-#texts.sections .section-container:focus-within{
+#texts .sections .section-container:hover,
+#texts .sections .section-container:focus-within{
 	outline: none;
 }
 /* main hyperlink */
@@ -979,8 +982,8 @@ article > .toc + section{
 }
 #books .sections .section-container a, 
 #books .sections .section-container a:visited,
-#texts.sections .section-container a, 
-#texts.sections .section-container a:visited{
+#texts .sections .section-container a, 
+#texts .sections .section-container a:visited{
 	color: #305056;
 	text-decoration: underline;
 }
@@ -990,8 +993,8 @@ article > .toc + section{
 }
 #books .sections .section-container a:hover,
 #books .sections .section-container a:focus,
-#texts.sections .section-container a:hover,
-#texts.sections .section-container a:focus{
+#texts .sections .section-container a:hover,
+#texts .sections .section-container a:focus{
 	color: #212119;
 	background: #E7E9E7;
 	outline: 3px solid #e3b382;
@@ -1043,7 +1046,7 @@ article > .toc + section{
 /* heading */
 .sections .section-container a div h3,
 #books .sections .section-container h4,
-#texts.sections .section-container h4{
+#texts .sections .section-container h4{
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
 	font-weight: 400;
@@ -1051,14 +1054,14 @@ article > .toc + section{
 	padding: 0;
 }
 #books .sections .section-container h4,
-#texts.sections .section-container h4{
+#texts .sections .section-container h4{
 	color: #305056;
 	margin: 0;
 	padding: 0 0 .5rem 0;
 	position: relative;
 }
 #books .sections .section-container h4:before,
-#texts.sections .section-container h4:before{
+#texts .sections .section-container h4:before{
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	color: #4d5b51;
@@ -1068,11 +1071,11 @@ article > .toc + section{
 #books .sections .section-container h4:before{
 	content: "\f304";
 }
-/* #texts.sections .section-container h4:before{
+/* #texts .sections .section-container h4:before{
 	content: "\f234";
 } */
 #books .sections .section-container h4::after
-/* #texts.sections .section-container h4::after */{
+/* #texts .sections .section-container h4::after */{
 	content: "";
 	width: 1.25rem;
 	height: 1.25rem;
@@ -1088,7 +1091,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 768px){
 	#books .sections .section-container h4::after
-	/* #texts.sections .section-container h4::after */{
+	/* #texts .sections .section-container h4::after */{
 		top: -.5rem;
 		right: -.5rem;
 	}
@@ -1115,9 +1118,9 @@ article > .toc + section{
 	min-width: 160px;
 	position: relative;
 }
-#texts.sections .creator-image a:hover,
-#texts.sections .creator-image a:focus{
-	outline: 3px solid #305056;
+#texts .sections .creator-image a:hover,
+#texts .sections .creator-image a:focus{
+	outline: 4px solid #305056;
 }
 #texts .creator-image img{
 	border: none;
@@ -1164,26 +1167,26 @@ article > .toc + section{
 }
 #books .sections .section-container ul,
 #books .sections .section-container ol,
-#texts.sections .section-container ul,
-#texts.sections .section-container ol{
+#texts .sections .section-container ul,
+#texts .sections .section-container ol{
 	line-height: 1.875rem;
 }
 #books .sections .section-container ul:first-of-type{
 	margin-top: .5rem;
 }
 #books .sections .section-container ul:first-of-type li,
-#texts.sections .section-container ul:first-of-type li{
+#texts .sections .section-container ul:first-of-type li{
 	margin-bottom: .2rem;
 }
 #books .sections .section-container ul:first-of-type li:last-of-type,
-#texts.sections .section-container ul:first-of-type li:last-of-type,
+#texts .sections .section-container ul:first-of-type li:last-of-type,
 #books .sections .section-container ul:first-of-type li:only-of-type,
-#texts.sections .section-container ul:first-of-type li:only-of-type{
+#texts .sections .section-container ul:first-of-type li:only-of-type{
 	margin-bottom: 0;
 }
 /* list of works */
 #books .sections .section-container details summary::before,
-#texts.sections .section-container details summary::before{
+#texts .sections .section-container details summary::before{
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	white-space: nowrap;
@@ -1193,15 +1196,15 @@ article > .toc + section{
 #books .sections .section-container details summary::before{
 	content: "\f518";
 }
-#texts.sections .section-container details summary::before{
+#texts .sections .section-container details summary::before{
 	content: "\f279";
 }
 #books .sections .section-container details,
-#texts.sections .section-container details{
+#texts .sections .section-container details{
 	margin-bottom: 2rem;
 }
 #books .sections .section-container summary::after,
-#texts.sections .section-container summary::after{
+#texts .sections .section-container summary::after{
 	content: "expand";
 	font-size: .9em;
 	font-family: inherit;
@@ -1213,19 +1216,19 @@ article > .toc + section{
 	margin: 0 .5rem;
 }
 #books .sections .section-container details[open] > summary:after,
-#texts.sections .section-container details[open] > summary:after{
+#texts .sections .section-container details[open] > summary:after{
 	content: "collapse";
 }
 #books .sections .section-container details li,
-#texts.sections .section-container details li{
+#texts .sections .section-container details li{
 	padding-left: .25rem;
 }
 #books .sections .section-container details li:not(:last-child),
-#texts.sections .section-container details li:not(:last-child){
+#texts .sections .section-container details li:not(:last-child){
 	margin-bottom: .5rem;
 }
 #books .sections .section-container .location-info,
-#texts.sections .section-container .location-info{
+#texts .sections .section-container .location-info{
 	font-size: .9em;
 	font-style: italic;
 	color: #4d5b51;
@@ -1233,7 +1236,6 @@ article > .toc + section{
 	bottom: 0;
 	position: absolute;
 }
-
 
 /* Home and Essay Bottom */
 
@@ -1260,9 +1262,6 @@ article > .toc + section{
 	.content article{
 		margin: 0 2rem;
 		max-width: 700px;
-	}
-	.content.recovered.full-page article{
-		margin: 0;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -2671,7 +2670,7 @@ img + p.caption-text,
 		flex-wrap: wrap;
 	}
 	.visuals.gallery figure{
-		flex: 0 0 calc(33% - 2rem);
+		flex: 0 0 calc(33.33% - 2rem);
 	}
 	.films.gallery figure{
 		min-height: 371px;
@@ -2698,7 +2697,7 @@ img + p.caption-text,
 	}
 	.films.gallery figure{
 		min-height: 439px;
-		flex: 0 0 calc(33% - 2rem);
+		flex: 0 0 calc(33.33% - 2rem);
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -2772,6 +2771,7 @@ img + p.caption-text,
 }
 .films.gallery figure.title-slide{
 	font-size: 1rem;
+	min-height: 138px;
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;

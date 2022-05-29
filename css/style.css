@@ -20,6 +20,8 @@ Author image sizes
 Regen author image
 New header image
 Integrate tree into viz materials
+
+essays/doc/materials - lint/min-heights/gap calcs & materials pages
 */
 
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
@@ -575,7 +577,7 @@ article > .toc + section{
 	padding: 0 1rem;
 }
 .categories .introduction-section .introduction-text{
-	padding: 2rem 1rem;
+	padding: 2rem 1rem 1rem;
 	gap: 1rem;
 }
 @media only screen and (min-width: 768px){
@@ -585,6 +587,9 @@ article > .toc + section{
 	}
 	.home .introduction-section .introduction-text{
 		padding: 0;
+	}
+	.categories .introduction-section .introduction-text{
+		padding: 2rem 1rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -858,9 +863,17 @@ article > .toc + section{
 #texts .sections{
 	padding: 0;
 }
+@media only screen and (min-width: 624px){
+	#books .sections{
+		padding: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1rem
+	}
+}
 @media only screen and (min-width: 768px){
 	.sections{
-		padding: 2rem;
+		padding: 0;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -919,10 +932,18 @@ article > .toc + section{
 		padding: 1rem 2rem;
 	}
 }
-@media only screen and (min-width: 768px){
-	article:not(#texts) .sections .section-container,
+@media only screen and (min-width: 624px){
 	#books .sections .section-container{
-		flex: 0 0 calc(50% - 1.5rem);
+		flex: 0 0 calc(50% - 1rem);
+	}
+}
+@media only screen and (min-width: 768px){
+	#books .sections{
+		gap: 1.5rem;
+	}
+	.sections .section-container,
+	article:not(#texts) .sections .section-container{
+		flex: 0 0 calc(50% - 2rem);
 	}
 	#books .sections .section-container,
 	#texts .sections .section-container{
@@ -930,10 +951,12 @@ article > .toc + section{
 	}
 	#books .sections .section-container{
 		padding: 1.5rem;
-		min-height: 338px;
+		min-height: 295px;
+		flex: 0 0 calc(50% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 992px){
+	.sections .section-container,
 	article:not(#books):not(#texts) .sections .section-container{
 		flex: 0 0 calc(33.33% - 2rem);
 	}

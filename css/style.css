@@ -865,24 +865,6 @@ article > .toc + section{
 		padding: 2rem 0;
 	}
 }
-@media only screen and (min-width: 1200px){
-	.content.recovered{
-		margin: 1em 0 2rem;
-	}
-	.content.recovered.content.full-page{
-		margin: 1rem 0;
-	}
-}
-@media only screen and (min-width: 1366px){
-	.content.recovered.content.full-page{
-		margin: 0;
-	}
-}
-@media only screen and (min-width: 1600px){
-	.content.recovered.content.full-page{
-		margin: 0 0 1rem;
-	}
-}
 /* flex institute */
 .sections{
 	width: 100%;
@@ -1365,7 +1347,11 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 1200px){
+	.content.recovered{
+		margin: 1em 0 2rem;
+	}
 	.content.recovered.full-page{
+		margin: 0 0 1rem;
 		padding: 0;
 	}
 	.content.full-page div.decoration{
@@ -1381,11 +1367,17 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 1366px){
+	.content.recovered.content.full-page{
+		margin: 0;
+	}
 	.content.recovered article{
 		max-width: 1100px;
 	}
 }
 @media only screen and (min-width: 1600px){
+	.content.recovered.content.full-page{
+		margin: 0 0 1rem;
+	}
 	.content.recovered article{
 		max-width: 1300px;
 	}

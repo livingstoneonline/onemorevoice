@@ -3,6 +3,16 @@
 #books details[open]:focus-within li::before{
 } */
 
+/*
+480+
+Authors by region
+Region per card
+Author image sizes
+Regen author image
+New header image
+Integrate tree into viz materials
+*/
+
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
@@ -876,9 +886,11 @@ article > .toc + section{
 	display: flex;
 	flex-direction: column;
 }
-#books .sections .section-container,
-#texts.sections .section-container{
+#books .sections .section-container{
 	gap: 1rem;
+}
+#texts.sections .section-container{
+	gap: 1.5rem;
 }
 #books .sections .section-container.title-slide,
 #texts.sections .section-container.title-slide{
@@ -1099,7 +1111,7 @@ article > .toc + section{
 	display: block;
 }
 #texts .no-image .content{
-	font-size: .95em;
+	font-style: italic;
 	font-weight: 400;
 	line-height: 1.5em;
 	text-align: center;

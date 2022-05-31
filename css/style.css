@@ -996,7 +996,7 @@ article > .toc + section{
 
 
 /* single item container */
-.sections .section-container{
+.categories .sections .section-container{
 		background: #ededed;
 		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
@@ -1037,8 +1037,8 @@ article > .toc + section{
 	}
 }
 /* section-container hover/focus */
-.sections .section-container:hover,
-.sections .section-container:focus-within{
+.categories .sections .section-container:hover,
+.categories .sections .section-container:focus-within{
 	outline: 4px solid #e3b382;
 }
 #books .sections .section-container:hover,
@@ -1048,8 +1048,8 @@ article > .toc + section{
 	outline: none;
 }
 /* main hyperlink */
-.sections .section-container a,
-.sections .section-container a:visited{
+.categories .sections .section-container a,
+.categories .sections .section-container a:visited{
 	color: #212119;
 	text-decoration: none;
 	width: 100%;
@@ -1061,8 +1061,8 @@ article > .toc + section{
 	color: #305056;
 	text-decoration: underline;
 }
-.sections .section-container a:hover,
-.sections .section-container a:focus{
+.categories .sections .section-container a:hover,
+.categories .sections .section-container a:focus{
 	outline: none;
 }
 #books .sections .section-container a:hover,
@@ -1074,29 +1074,29 @@ article > .toc + section{
 	outline: 3px solid #e3b382;
 }
 /* single item in hyperlink container */
-.sections .section-container a div{
+.categories .sections .section-container a div{
 	flex: 1 0 calc(50% - 1rem)
 }
 /* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 /* image container */
-.sections .section-container a .section-image{
+.categories .sections .section-container a .section-image{
 	border: 1px solid #737d73;
 	padding: 0;
 	position: relative;
 }
-.sections .section-container a .section-image:hover,
-.sections .section-container a .section-image:focus-within{
+.categories .sections .section-container a .section-image:hover,
+.categories .sections .section-container a .section-image:focus-within{
 	overflow: hidden;
 	outline: none;
 }
-.sections .section-container a .section-image:after{
+.categories .sections .section-container a .section-image:after{
 	content: "";
 	display: block;
 	padding-bottom: 80%;
 }
 /* main image */
-.sections .section-container a .section-image img{
+.categories .sections .section-container a .section-image img{
 	background: #E7E9E7;
 	border: none;
 	width: 100%;
@@ -1111,14 +1111,14 @@ article > .toc + section{
 }
 /* End ratio box */
 /* text container */
-.sections .section-container a div:nth-child(2){
+.categories .sections .section-container a div:nth-child(2){
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 /* heading */
-.sections .section-container a div h3,
+.categories .sections .section-container a div h3,
 #books .sections .section-container h4,
 #texts .sections .section-container h4{
 	font-size: 1.3rem;
@@ -1230,7 +1230,7 @@ article > .toc + section{
 	margin: 1rem .5rem;
 }
 /* paragraphs / list of texts */
-.sections .section-container a div p{
+.categories .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
 	text-align: center;

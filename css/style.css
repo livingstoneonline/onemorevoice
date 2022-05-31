@@ -890,12 +890,16 @@ article > .toc + section{
 }
 #books .sections{
 	padding: 1rem 0 0;
+	gap: 2rem;
 }
 #texts .sections{
 	padding: 0;
+	gap: 2rem;
 }
 @media only screen and (min-width: 480px){
-	.sections{
+	.categories .sections,
+	#books .sections,
+	#texts .sections{
 		padding: 1rem 1rem 0;
 	}
 }
@@ -905,7 +909,9 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 768px){
-	.sections{
+	.categories .sections,
+	#books .sections,
+	#texts .sections{
 		padding: 0;
 	}
 	#books .sections{
@@ -913,7 +919,7 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 992px){
-	.sections{
+	.categories .sections{
 		padding: 2rem 0 3rem;
 	}
 	#books .sections{
@@ -928,7 +934,9 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 1600px){
-	.sections{
+	.categoies .sections,
+	#books .sections,
+	#texts .sections{
 		padding: 3rem 0;
 		gap: 3rem;
 	}
@@ -941,23 +949,22 @@ article > .toc + section{
 }
 @media only screen and (min-width: 624px){
 	#books .sections .section-container{
-		flex: 0 0 calc(50% - 1rem);
+		padding: 1rem 0;
+		flex: 0 0 calc(50% - .5rem);
 	}
 }
 @media only screen and (min-width: 768px){
-	.sections .section-container,
-	article:not(#texts) .sections .section-container{
-		flex: 0 0 calc(50% - 2rem);
+	.categories .sections .section-container{
+		flex: 0 0 calc(50% - 1em);
 	}
 	#books .sections .section-container{
 		padding: 1.5rem;
 		min-height: 295px;
-		flex: 0 0 calc(50% - 1.5rem);
+		flex: 0 0 calc(50% - .75rem);
 	}
 }
 @media only screen and (min-width: 992px){
-	.sections .section-container,
-	article:not(#books):not(#texts) .sections .section-container{
+	.categories .sections .section-container{
 		flex: 0 0 calc(33.33% - 2rem);
 	}
 	#books .sections .section-container{
@@ -971,16 +978,18 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 1366px){
-	.sections .section-container{
+	.categories .sections .section-container,
+	#books .categories .sections .section-container,
+	#texts .categories .sections .section-container{
 		flex: 0 0 calc(25% - 2rem);
 	}
 }
 @media only screen and (min-width: 1600px){
-	.sections .section-container{
+	.categories .sections .section-container{
 		flex: 0 0 calc(20% - 3rem);
 	}
-	article#books .sections .section-container,
-	article#texts .sections .section-container{
+	#books .categories .sections .section-container,
+	#texts .categories .sections .section-container{
 		flex: 0 0 calc(33.33% - 3rem);
 	}
 }

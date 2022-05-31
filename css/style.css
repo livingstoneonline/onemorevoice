@@ -900,10 +900,12 @@ sections appear on books & texts
 	gap: 2rem;
 }
 @media only screen and (min-width: 480px){
-	.categories .sections,
+	.categories .sections{
+		padding: 1rem 1rem 0;
+	}
 	#books .sections,
 	#texts .sections{
-		padding: 1rem 1rem 0;
+		padding: 1rem 0 0;
 	}
 }
 @media only screen and (min-width: 624px){
@@ -933,16 +935,25 @@ sections appear on books & texts
 @media only screen and (min-width: 1200px){
 	#texts .sections,
 	#films section{
-		padding: 0 1rem;
+		padding: 0;
 		gap: 2.5rem;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.categoies .sections,
+	.categories .sections,
 	#books .sections,
 	#texts .sections{
-		padding: 3rem 0;
 		gap: 3rem;
+	}
+	.categories .sections{
+		padding: 2rem 0;
+	}
+	#books .sections,
+	#texts .sections{
+		padding: 1rem 0;
+	}
+	#films > section{
+		padding: 0 1rem;
 	}
 }
 /* min-height and flex percentages */
@@ -982,8 +993,8 @@ sections appear on books & texts
 }
 @media only screen and (min-width: 1366px){
 	.categories .sections .section-container,
-	#books .categories .sections .section-container,
-	#texts .categories .sections .section-container{
+	#books .sections .section-container,
+	#texts .sections .section-container{
 		flex: 0 0 calc(25% - 2rem);
 	}
 }
@@ -991,8 +1002,8 @@ sections appear on books & texts
 	.categories .sections .section-container{
 		flex: 0 0 calc(20% - 3rem);
 	}
-	#books .categories .sections .section-container,
-	#texts .categories .sections .section-container{
+	#books .sections .section-container,
+	#texts .sections .section-container{
 		flex: 0 0 calc(33.33% - 3rem);
 	}
 }
@@ -2583,7 +2594,7 @@ section + hr.section-divider{
 }
 .content.recovered.full-page section + hr.section-divider{
 	border-top: 2px solid #bdc2bd;
-	margin: 2.5rem auto 0;
+	margin: 2.25rem auto 0;
 	width: calc(100% - 1rem);
 }
 @media only screen and (min-width: 992px){

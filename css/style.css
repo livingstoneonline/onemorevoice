@@ -886,56 +886,86 @@ sections appear on books & texts
 		flex-wrap: wrap;
 	}
 }
-/* padding and gaps */
+/* padding */
 .categories .sections{
-	padding: 1rem;
-	gap: 2rem;
+	/* padding: 1rem 1rem 0; */
 }
 #books .sections{
-	padding: 1rem 0 0;
-	gap: 2rem;
+	/* padding: 1rem 0 0; */
 }
 #texts .sections{
-	padding: 0;
-	gap: 2rem;
+	/* padding: 0; */
 }
 @media only screen and (min-width: 480px){
 	.categories .sections{
-		padding: 1rem 1rem 0;
+		/* padding: 1rem 1rem 0; */
 	}
-	#books .sections,
+	#books .sections{
+		/* padding: 1rem 0 0; */
+	}
 	#texts .sections{
-		padding: 1rem 0 0;
+		/* padding: 0; */
 	}
 }
 @media only screen and (min-width: 624px){
 	#books .sections{
-		padding: 1rem 0 0;
-		gap: 1rem
+		/* padding: 1rem 0 0; */
 	}
 }
 @media only screen and (min-width: 768px){
-	.categories .sections,
+	.categories .sections{
+		/* padding: 0 0 1rem; */
+	}
 	#books .sections,
 	#texts .sections{
-		padding: 0;
-	}
-	#books .sections{
-		gap: 1.5rem;
+		/* padding: 0; */
 	}
 }
 @media only screen and (min-width: 992px){
 	.categories .sections{
-		padding: 2rem 0 3rem;
+		/* padding: 2rem 0 3rem; */
 	}
 	#books .sections{
-		padding: 0;
+		/* padding: 0; */
 	}
 }
 @media only screen and (min-width: 1200px){
 	#texts .sections,
 	#films section{
-		padding: 0;
+		/* padding: 0; */
+	}
+}
+@media only screen and (min-width: 1600px){
+	.categories .sections{
+		/* padding: 2rem 0; */
+	}
+	#books .sections,
+	#texts .sections{
+		/* padding: 1rem 0; */
+	}
+	#films > section{
+		/* padding: 0 1rem; */
+	}
+}
+/* gap */
+.categories .sections,
+#books .sections,
+#texts .sections{
+	gap: 2rem;
+}
+@media only screen and (min-width: 624px){
+	#books .sections{
+		gap: 1rem
+	}
+}
+@media only screen and (min-width: 768px){
+	#books .sections{
+		gap: 1.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	#texts .sections,
+	#films section{
 		gap: 2.5rem;
 	}
 }
@@ -945,21 +975,10 @@ sections appear on books & texts
 	#texts .sections{
 		gap: 3rem;
 	}
-	.categories .sections{
-		padding: 2rem 0;
-	}
-	#books .sections,
-	#texts .sections{
-		padding: 1rem 0;
-	}
-	#films > section{
-		padding: 0 1rem;
-	}
-}
 /* min-height and flex percentages */
 @media only screen and (min-width: 320px){
 	#books .sections .section-container{
-		min-height: 306px;
+		/* min-height: 306px; */
 	}
 }
 @media only screen and (min-width: 624px){
@@ -973,7 +992,7 @@ sections appear on books & texts
 	}
 	#books .sections .section-container{
 		padding: 1.5rem;
-		min-height: 295px;
+		/* min-height: 295px; */
 		flex: 0 0 calc(50% - .75rem);
 	}
 }
@@ -982,7 +1001,7 @@ sections appear on books & texts
 		flex: 0 0 calc(33.33% - 2rem);
 	}
 	#books .sections .section-container{
-		min-height: 306px;
+		/* min-height: 306px; */
 		flex: 0 0 calc(50% - .75rem);
 	}
 }

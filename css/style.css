@@ -931,6 +931,13 @@ article > .toc + section{
 		padding: 0;
 	}
 }
+@media only screen and (min-width: 1200px){
+	#texts .sections,
+	#films section{
+		padding: 0 1rem;
+		gap: 2.5rem;
+	}
+}
 @media only screen and (min-width: 1600px){
 	.sections{
 		padding: 3rem 0;
@@ -971,7 +978,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 1200px){
 	#texts .sections .section-container{
-		flex: 0 0 calc(50% - 2rem);
+		flex: 0 0 calc(50% - 2.5rem);
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -2774,7 +2781,7 @@ img + p.caption-text,
 	}
 	.films.gallery figure{
 		min-height: 439px;
-		flex: 0 0 calc(33.33% - 2rem);
+		flex: 0 0 calc(33.33% - 2.5rem);
 	}
 }
 @media only screen and (min-width: 1366px){

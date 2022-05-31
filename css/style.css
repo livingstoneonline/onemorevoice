@@ -958,15 +958,9 @@ sections appear on books & texts
 		gap: 1rem
 	}
 }
-@media only screen and (min-width: 768px){
-	#books .sections{
-		gap: 1rem;
-	}
-}
 @media only screen and (min-width: 1200px){
-	#texts .sections,
-	#films section{
-		gap: 2.5rem;
+	#texts .sections{
+		gap: 2rem;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -975,40 +969,55 @@ sections appear on books & texts
 	#texts .sections{
 		gap: 3rem;
 	}
+}
 /* flex percentages */
+/* categories = 2
+books = 1
+texts = 2 */
 @media only screen and (min-width: 624px){
 	#books .sections .section-container{
 		flex: 0 0 calc(50% - .5rem);
 	}
 }
+/* categories = 2
+books = 1
+texts = 2 */
 @media only screen and (min-width: 768px){
 	.categories .sections .section-container{
 		flex: 0 0 calc(50% - 1em);
 	}
-	#books .sections .section-container{
-		flex: 0 0 calc(50% - .75rem);
-	}
 }
+/* categories = 2
+books = 1
+texts = 2 */
 @media only screen and (min-width: 992px){
 	.categories .sections .section-container{
 		flex: 0 0 calc(33.33% - 2rem);
 	}
 	#books .sections .section-container{
-		flex: 0 0 calc(50% - .75rem);
+		flex: 0 0 calc(50% - .5rem);
 	}
 }
+/* categories = 2
+books = 2
+texts = 2. */
 @media only screen and (min-width: 1200px){
 	#texts .sections .section-container{
-		flex: 0 0 calc(50% - 2.5rem);
+		flex: 0 0 calc(50% - 2rem);
 	}
 }
+/* categories = 2
+books = 2
+texts = 2 */
 @media only screen and (min-width: 1366px){
 	.categories .sections .section-container,
-	#books .sections .section-container,
-	#texts .sections .section-container{
+	#books .sections .section-container{
 		flex: 0 0 calc(25% - 2rem);
 	}
 }
+/* categories = 3
+books = 3
+texts = 3 */
 @media only screen and (min-width: 1600px){
 	.categories .sections .section-container{
 		flex: 0 0 calc(20% - 3rem);
@@ -2729,6 +2738,9 @@ img + p.caption-text,
 
 /* Object Gallery: Visual Materials & Motion Pictures */
 
+#films section{
+	gap: 2rem;
+}
 .gallery{
 	margin: 0;
   display: -webkit-flex;

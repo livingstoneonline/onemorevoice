@@ -905,6 +905,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 624px){
 	#books .sections{
+		padding: 1rem 0 0;
 		gap: 1rem
 	}
 }
@@ -949,7 +950,6 @@ article > .toc + section{
 }
 @media only screen and (min-width: 624px){
 	#books .sections .section-container{
-		padding: 1rem 0;
 		flex: 0 0 calc(50% - .5rem);
 	}
 }
@@ -969,7 +969,7 @@ article > .toc + section{
 	}
 	#books .sections .section-container{
 		min-height: 306px;
-		flex: 0 0 calc(50% - 2rem);
+		flex: 0 0 calc(50% - .75rem);
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -2759,7 +2759,7 @@ img + p.caption-text,
 	}
 	.films.gallery figure{
 		min-height: 371px;
-		flex: 0 0 calc(50% - 1.5rem);
+		flex: 0 0 calc(50% - 1rem);
 	}
 }
 @media only screen and (min-width: 768px){
@@ -2773,7 +2773,7 @@ img + p.caption-text,
 @media only screen and (min-width: 992px){
 	.films.gallery figure{
 		min-height: 414px;
-		flex: 0 0 calc(50% - 2rem);
+		flex: 0 0 calc(50% - 1rem);
 	}
 }
 @media only screen and (min-width: 1200px){

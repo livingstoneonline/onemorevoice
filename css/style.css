@@ -830,8 +830,11 @@ article > .toc + section{
 }
 
 
-/* Middle Categories Pages */
-/* main container */
+/* Middle Pages */
+/* main container:
+sections appear on books & texts
++ essays/materials/documents
+*/
 @media only screen and (min-width: 768px){
 	.categories .sections,
 	#books,
@@ -996,7 +999,9 @@ article > .toc + section{
 
 
 /* single item container */
-.categories .sections .section-container{
+.categories .sections .section-container,
+#books .sections .section-container,
+#texts .sections .section-container {
 		background: #ededed;
 		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
@@ -1007,7 +1012,7 @@ article > .toc + section{
 		padding: 1rem;
 }
 #books .sections .section-container,
-#texts .sections .section-container{
+#texts .sections .section-container {
 	font-size: 1.05rem;
 	padding: 1rem 1.5rem;
 	position: relative;

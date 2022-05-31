@@ -2019,7 +2019,7 @@ nav.overlay-nav .button-container{
 @media only screen and (min-width: 1200px){
 	nav .button-container,
 	nav.overlay-nav .button-container{
-		gap: 1rem;
+		gap: 2rem;
 	}
 }
 .overlay-content .button-container{
@@ -3083,7 +3083,11 @@ details[open] > p:first-of-type{
 }
 details[open] > ul,
 details[open] > ol{
+	margin: 0 0 0 1rem;
 	padding: .5rem 0 .25rem 1rem;
+}
+.toc details[open] > ol{
+	padding: 0 0 0 1rem;
 }
 summary::-webkit-details-marker{
   display: none;

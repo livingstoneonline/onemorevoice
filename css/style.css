@@ -2787,7 +2787,7 @@ img + p.caption-text,
 /* flex percentages: films */
 @media only screen and (min-width: 624px){
 	.films.gallery figure{
-		flex: 0 0 calc(50% -.75rem);
+		flex: 0 0 calc(50% - .75rem);
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -2863,6 +2863,7 @@ img + p.caption-text,
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
 	padding: 1rem;
+	width: 100%;
 }
 .visuals.gallery .image-container{
 	padding: 0;

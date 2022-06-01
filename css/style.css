@@ -888,7 +888,7 @@ sections appear on books & texts
 }
 /* padding */
 .categories .sections{
-	/* padding: 1rem 1rem 0; */
+	padding: 1rem 1rem 0;
 }
 #books .sections{
 	/* padding: 1rem 0 0; */
@@ -914,7 +914,7 @@ sections appear on books & texts
 }
 @media only screen and (min-width: 768px){
 	.categories .sections{
-		/* padding: 0 0 1rem; */
+		padding: 1rem;
 	}
 	#books .sections,
 	#texts .sections{
@@ -923,7 +923,7 @@ sections appear on books & texts
 }
 @media only screen and (min-width: 992px){
 	.categories .sections{
-		/* padding: 2rem 0 3rem; */
+		padding: 2rem 1rem;
 	}
 	#books .sections{
 		/* padding: 0; */
@@ -951,16 +951,20 @@ sections appear on books & texts
 .categories .sections,
 #books .sections,
 #texts .sections{
-	gap: 2rem;
-}
-@media only screen and (min-width: 624px){
-	#books .sections{
-		gap: 1rem
-	}
+	gap: 1.5rem;
 }
 @media only screen and (min-width: 1200px){
+	.categories .sections,
+	#books .sections,
 	#texts .sections{
 		gap: 2rem;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.categories .sections,
+	#books .sections,
+	#texts .sections{
+		gap: 2.5rem;
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -971,53 +975,42 @@ sections appear on books & texts
 	}
 }
 /* flex percentages */
-/* categories = 2
-books = 1
-texts = 2 */
 @media only screen and (min-width: 624px){
 	#books .sections .section-container{
-		flex: 0 0 calc(50% - .5rem);
+		flex: 0 0 calc(50% - .75rem);
 	}
 }
-/* categories = 2
-books = 1
-texts = 2 */
 @media only screen and (min-width: 768px){
 	.categories .sections .section-container{
-		flex: 0 0 calc(50% - 1em);
+		flex: 0 0 calc(50% - .75em);
 	}
 }
-/* categories = 2
-books = 1
-texts = 2 */
 @media only screen and (min-width: 992px){
+	.categories .sections .section-container{
+		flex: 0 0 calc(33.33% - 1.5rem);
+	}
+	#books .sections .section-container{
+		flex: 0 0 calc(50% -.75rem);
+	}
+}
+@media only screen and (min-width: 1200px){
 	.categories .sections .section-container{
 		flex: 0 0 calc(33.33% - 2rem);
 	}
-	#books .sections .section-container{
-		flex: 0 0 calc(50% - .5rem);
-	}
-}
-/* categories = 2
-books = 2
-texts = 2. */
-@media only screen and (min-width: 1200px){
+	#books .sections .section-container,
 	#texts .sections .section-container{
-		flex: 0 0 calc(50% - 2rem);
+		flex: 0 0 calc(50% - 1rem);
 	}
 }
-/* categories = 2
-books = 2
-texts = 2 */
 @media only screen and (min-width: 1366px){
 	.categories .sections .section-container,
 	#books .sections .section-container{
-		flex: 0 0 calc(25% - 2rem);
+		flex: 0 0 calc(25% - 2.5rem);
+	}
+	#texts .sections .section-container{
+		flex: 0 0 calc(50% - 1.25rem);
 	}
 }
-/* categories = 3
-books = 3
-texts = 3 */
 @media only screen and (min-width: 1600px){
 	.categories .sections .section-container{
 		flex: 0 0 calc(20% - 3rem);
@@ -1351,7 +1344,7 @@ texts = 3 */
 	padding: 0 1rem;
 	width: 100%;
 }
-.content.recovered.full-page{
+.content.recovered{
 	margin-top: 1rem;
 }
 @media only screen and (min-width: 768px){	
@@ -1364,7 +1357,7 @@ texts = 3 */
 	main .content:nth-child(2){
 		margin-top: 1rem;
 	}
-	.content.recovered.full-page{
+	.content.recovered{
 		margin-top: 0;
 	}
 	.content article{
@@ -2738,9 +2731,6 @@ img + p.caption-text,
 
 /* Object Gallery: Visual Materials & Motion Pictures */
 
-#films section{
-	gap: 2rem;
-}
 .gallery{
 	margin: 0;
   display: -webkit-flex;
@@ -2752,7 +2742,7 @@ img + p.caption-text,
 	gap: .5rem;
 }
 .films.gallery{
-	gap: 2rem;
+	gap: 1.5rem;
 }
 .gallery figure{
 	margin: 0;
@@ -2769,7 +2759,7 @@ img + p.caption-text,
 }
 @media only screen and (min-width:320px){
 	.films.gallery figure{
-		min-height: 380px;
+		/* min-height: 380px; */
 	}
 }
 @media only screen and (min-width: 480px){
@@ -2782,7 +2772,7 @@ img + p.caption-text,
 		flex: 0 0 calc(50% - 1.5rem);
 	}
 	.films.gallery figure{
-		min-height: 460px;
+		/* min-height: 460px; */
 	}
 }
 @media only screen and (min-width: 624px){
@@ -2797,7 +2787,7 @@ img + p.caption-text,
 		flex: 0 0 calc(33.33% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 371px;
+		/* min-height: 371px; */
 		flex: 0 0 calc(50% - 1rem);
 	}
 }
@@ -2806,12 +2796,12 @@ img + p.caption-text,
 		gap: 2rem 2rem;
 	}
 	.films.gallery figure{
-		min-height: 402px;
+		/* min-height: 402px; */
 	}
 }
 @media only screen and (min-width: 992px){
 	.films.gallery figure{
-		min-height: 414px;
+		/* min-height: 414px; */
 		flex: 0 0 calc(50% - 1rem);
 	}
 }
@@ -2829,7 +2819,7 @@ img + p.caption-text,
 		flex: 0 0 calc(20% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 470px;
+		/* min-height: 470px; */
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -2837,7 +2827,7 @@ img + p.caption-text,
 		flex: 0 0 calc(17% - 2rem);
 	}
 	.films.gallery figure{
-		min-height: 442px;
+		/* min-height: 442px; */
 		flex: 0 0 calc(25% - 2rem);
 	}
 }

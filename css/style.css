@@ -875,10 +875,6 @@ sections appear on books & texts
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	#texts .sections{
-		flex-direction: column;
-		justify-content: center;	
-	}
 }
 @media only screen and (min-width: 992px){
 	#texts .sections{
@@ -890,61 +886,14 @@ sections appear on books & texts
 .categories .sections{
 	padding: 1rem 1rem 0;
 }
-#books .sections{
-	/* padding: 1rem 0 0; */
-}
-#texts .sections{
-	/* padding: 0; */
-}
-@media only screen and (min-width: 480px){
-	.categories .sections{
-		/* padding: 1rem 1rem 0; */
-	}
-	#books .sections{
-		/* padding: 1rem 0 0; */
-	}
-	#texts .sections{
-		/* padding: 0; */
-	}
-}
-@media only screen and (min-width: 624px){
-	#books .sections{
-		/* padding: 1rem 0 0; */
-	}
-}
 @media only screen and (min-width: 768px){
 	.categories .sections{
 		padding: 1rem;
-	}
-	#books .sections,
-	#texts .sections{
-		/* padding: 0; */
 	}
 }
 @media only screen and (min-width: 992px){
 	.categories .sections{
 		padding: 2rem 1rem;
-	}
-	#books .sections{
-		/* padding: 0; */
-	}
-}
-@media only screen and (min-width: 1200px){
-	#texts .sections,
-	#films section{
-		/* padding: 0; */
-	}
-}
-@media only screen and (min-width: 1600px){
-	.categories .sections{
-		/* padding: 2rem 0; */
-	}
-	#books .sections,
-	#texts .sections{
-		/* padding: 1rem 0; */
-	}
-	#films > section{
-		/* padding: 0 1rem; */
 	}
 }
 /* gap */
@@ -982,9 +931,6 @@ sections appear on books & texts
 	.categories .sections .section-container{
 		flex: 0 0 calc(33.33% - 1.5rem);
 	}
-	#books .sections .section-container{
-		flex: 0 0 calc(50% -.75rem);
-	}
 }
 @media only screen and (min-width: 1200px){
 	.categories .sections .section-container{
@@ -1009,8 +955,6 @@ sections appear on books & texts
 		flex: 0 0 calc(33.33% - 2.5rem);
 	}
 }
-
-
 /* single item container */
 .categories .sections .section-container,
 #books .sections .section-container,
@@ -2800,7 +2744,6 @@ img + p.caption-text,
 		flex: 0 0 calc(25% - 2.5rem);
 	}
 }
-
 /* min height */
 @media only screen and (min-width:320px){
 	.films.gallery figure{
@@ -2842,8 +2785,6 @@ img + p.caption-text,
 		/* min-height: 442px; */
 	}
 }
-
-
 .gallery{
 	margin: 0;
   display: -webkit-flex;

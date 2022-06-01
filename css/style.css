@@ -2770,8 +2770,6 @@ img + p.caption-text,
 		flex: 0 0 calc(17% - 2rem);
 	}
 }
-
-
 /* films: gap */
 .films.gallery{
 	gap: 1.5rem;
@@ -2786,30 +2784,22 @@ img + p.caption-text,
 		gap: 2.5rem;
 	}
 }
-
-
 /* flex percentages: films */
 @media only screen and (min-width: 624px){
 	.films.gallery figure{
-		flex: 0 0 calc(50% - 1rem);
-	}
-}
-@media only screen and (min-width: 992px){
-	.films.gallery figure{
-		flex: 0 0 calc(50% - 1rem);
+		flex: 0 0 calc(50% -.75rem);
 	}
 }
 @media only screen and (min-width: 1200px){
 	.films.gallery figure{
-		flex: 0 0 calc(33.33% - 1rem);
+		flex: 0 0 calc(33.33% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 1600px){
 	.films.gallery figure{
-		flex: 0 0 calc(25% - 2rem);
+		flex: 0 0 calc(25% - 2.5rem);
 	}
 }
-
 
 /* min height */
 @media only screen and (min-width:320px){

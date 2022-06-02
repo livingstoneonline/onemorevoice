@@ -709,7 +709,7 @@ article > .toc + section{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
-		margin: 0;
+		margin: 0 auto;
 		padding: 0 1.5rem;
 		display: -webkit-flex;
   	display: flex;
@@ -717,7 +717,7 @@ article > .toc + section{
 		align-self: center;
 	}
 	.essay .page-details.vertical div{
-		margin: 7rem 2rem 0 0;
+		margin: 7rem auto 0;
 		padding: 0 1.5rem 0 3rem;
 		align-self: flex-start;
 	}

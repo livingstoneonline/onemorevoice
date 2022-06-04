@@ -52,7 +52,7 @@
 		</xsl:variable>
 		<html lang="en">
 			<head>
-				<meta charset="UTF-8"/>
+				<meta charset="UTF-8" />
 				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
@@ -65,69 +65,89 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="robots" content="index, follow"/>
 				<meta name="theme-color" content="#204A79"/>
-				<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
-				<meta http-equiv="pragma" content="no-cache" />
-				<meta http-equiv="expires" content="0" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
 				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
-				<link rel="preload" as="style" href="/css/critical.css?=newVers_0009" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0010" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/>
+				<!-- <link rel="preload" as="style" href="/css/critical.css?=newVers_0009" onload="this.rel='stylesheet'"/> -->
+				<!-- <link rel="preload" as="style" href="/css/style.css?=newVers_0010" onload="this.rel='stylesheet'"/> -->
+				<!-- <link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/> -->
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
 				</xsl:if>
-				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0010"/>
+				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+				<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0010"/>
+				<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
+				<link rel="preconnect" as="script" href="/js/tooltips.js"/>
 				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
-				<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0009"/>
-				<script>
-					// Hides fallback nav so that it only appears if Javascript disabled
-					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
-				</script>
-				<script>
-					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
-					// Reloads given page, keeps base URL, path, and any #, but removes random query string
-					// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
-				</script>			
+				<link rel="preconnect" href="https://fonts.googleapis.com"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+				<!-- <link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0009"/> -->
 				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
-		
-			<!--<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>-->
+
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
-		
-				<div data-include="nav"></div>
+			<body class="transcription materials" id="body">
 
-				<div class="text-container">
-		
-					<div class="sidebar-container" data-include="sidebar"></div>
-		
-					<div class="page-wrapper">
-						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ --><header id="header">
-							<div class="image-wrapper">		
-								<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1396px.jpg 1396w, /img/main-pages/liv_023005_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023005_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023005_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023005_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023005_0001_deriv-318px.jpg 318w" sizes="(min-width: 740px) 698px, 95.24vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
-							</div>
-						</header>
-						<xsl:apply-templates select="TEI"/>
+				<header>
+					<div class="nav-container" data-include="header">
+						<nav class="fallback">
+							<span class="logo-container">
+								<a href="/index.html">
+									<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+									<h1>One More Voice</h1>
+								</a>
+							</span>
+							<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
+								<i class="fa fa-bars"></i>
+							</a>
+						</nav>
 					</div>
+				</header>
 		
-				</div>
+				<main id="main" aria-labelledby="archival-material">
+					<!-- <section class="page-details horizontal">
+						<figure class="image-wrapper">
+							<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1396px.jpg 1396w, /img/main-pages/liv_023005_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023005_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023005_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023005_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023005_0001_deriv-318px.jpg 318w" sizes="(min-width: 1600px) 783px, (min-width: 1200px) calc(14.06vw + 529px), (min-width: 992px) 50vw, (min-width: 768px) 698px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
+							<figcaption class="caption-icon mobile">
+								<span class="tooltip-container">
+									<a class="caption" href="#caption" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger=""><i class="fa fa-info-circle"></i></a>
+									<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
+								</span>
+							</figcaption>
+						</figure>
+	
+						<div>
+							<h2 id="archival-material">Archival Materials</h2>
+							<p>Date (publication and updates): <strong>2020-22</strong></p>
+							<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+							<figcaption class="caption-icon desktop">
+								<span class="tooltip-container">
+									<a class="caption" href="#caption" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger=""><i class="fa fa-info-circle"></i></a>
+									<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
+								</span>
+							</figcaption>
+						</div>
+					</section> -->
 			
+					<section class="content">
+						<div class="decoration"></div>
+						<article id="content">
+							<xsl:apply-templates select="TEI"/>
+						</article>
+						<div class="decoration"></div>
+					</section>
+				</main>
+	
 				<div data-include="footer"></div>
-
-				<script>
-					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
-					// Adds CSS file and adds random string to end of CSS file.
-					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/rotate-toggle.css?="+randomString;document.head.appendChild(css);
-				</script>
-				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
+		
+				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
+		
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
@@ -143,12 +163,18 @@
 						<xsl:value-of select="//xenoData[@type='css']"/>
 					</style>
 				</xsl:if>
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0010"/>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
 				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 				<script>
-					// Adapted from https://stackoverflow.com/a/31837264
-					// Includes HTML snippets
+					// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
 					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
+				</script>
+				<script>
+					//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+					//Scroll to top button
+					var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>700||document.documentElement.scrollTop>700){mybutton.style.display="flex";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<script src="/js/manuscript-transform.js"></script>
@@ -166,17 +192,13 @@
 					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-180")}</script>
 				</xsl:if>
-				<!-- <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
-				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script>
-					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-					// Loads JS file only after rest of page has loaded; adds random string to end of file.
-					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
+					// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
 					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0010";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/tooltips.js";document.body.appendChild(element)});
 					$(window).on("load",function(){var element=document.createElement("script");element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="/js/scripts.js?=newVers_0010"></script> -->
 			</body>
 		</html>
 	</xsl:template>

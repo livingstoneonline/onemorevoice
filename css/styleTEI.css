@@ -1,3 +1,17 @@
+.transcription .content{
+	margin: 2rem 0;
+}
+.transcription #content{
+	text-align: center;
+}
+.transcription h2{
+	margin-top: 1rem;
+	display: inline-block;
+}
+.transcription .credits{
+	text-align: left;
+	margin-top: 2.5rem;
+}
 /* CSS TEI File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020-21 */
@@ -457,7 +471,7 @@ button::-moz-focus-inner{
 	display: inline-block;
 }
 .object .pb-title{
-	text-align: left;
+	/* text-align: left; */
 	width: 100%;
 	padding: 0;
 	display: inline-block;
@@ -971,6 +985,7 @@ u{
 }
 @media only screen and (min-width: 480px){
 	.object.vertical a img{
+		margin: 0 auto;
 		width: 70%;
 		box-sizing: border-box;
 	}

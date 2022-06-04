@@ -621,7 +621,6 @@
 				<main class="object" id="object-div"><!-- style="background:#{$body-color};" -->
 					<section class="TEI" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
-							<p class="image-enlarge">Click on image(s) to enlarge</p>
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
 								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -637,6 +636,7 @@
 									<xsl:apply-templates select="text/body"/>
 								</xsl:otherwise>
 							</xsl:choose>
+							<p class="image-enlarge">Click on image(s) to enlarge</p>
 						</div>
 					</section>
 				</main>

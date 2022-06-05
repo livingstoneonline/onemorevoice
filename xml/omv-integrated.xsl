@@ -29,8 +29,8 @@
 	<xsl:template match="/">
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Curated Historical Object</xsl:when>
-				<xsl:otherwise>Critically-Edited Archival Text</xsl:otherwise>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Visual Material</xsl:when>
+				<xsl:otherwise>Recovered Text</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="additional-authors-1">			
@@ -42,10 +42,10 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-creator">
-			<xsl:text>Colonial-era text by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
+			<xsl:text>Recovered text by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by One More Voice.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="object-creator">
-			<xsl:text>Colonial-era object by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
+			<xsl:text>Visual material by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
@@ -109,39 +109,16 @@
 					</div>
 				</header>
 		
-				<main id="main" aria-labelledby="archival-material">
-					<!-- <section class="page-details horizontal">
-						<figure class="image-wrapper">
-							<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1396px.jpg 1396w, /img/main-pages/liv_023005_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023005_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023005_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023005_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023005_0001_deriv-318px.jpg 318w" sizes="(min-width: 1600px) 783px, (min-width: 1200px) calc(14.06vw + 529px), (min-width: 992px) 50vw, (min-width: 768px) 698px, 100vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
-							<figcaption class="caption-icon mobile">
-								<span class="tooltip-container">
-									<a class="caption" href="#caption" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger=""><i class="fa fa-info-circle"></i></a>
-									<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
-								</span>
-							</figcaption>
-						</figure>
-	
-						<div>
-							<h2 id="archival-material">Archival Materials</h2>
-							<p>Date (publication and updates): <strong>2020-22</strong></p>
-							<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
-							<figcaption class="caption-icon desktop">
-								<span class="tooltip-container">
-									<a class="caption" href="#caption" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger=""><i class="fa fa-info-circle"></i></a>
-									<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
-								</span>
-							</figcaption>
-						</div>
-					</section> -->
+				<!-- <main id="main" aria-labelledby="archival-material">
 			
 					<section class="content">
 						<div class="decoration"></div>
-						<article id="content">
+						<article id="content"> -->
 							<xsl:apply-templates select="TEI"/>
-						</article>
+						<!-- </article>
 						<div class="decoration"></div>
 					</section>
-				</main>
+				</main>-->
 	
 				<div data-include="footer"></div>
 		
@@ -497,7 +474,7 @@
 
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<aside id="transcription-switches" class="manuscript-switches">
+				<section id="transcription-switches" class="manuscript-switches">
 					<label for="remove-color" class="md_switch" title="Color: On/Off">
 						<xsl:text>Remove Color</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color" id="remove-color" checked="" />
@@ -513,11 +490,11 @@
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-rotation" checked="" />
 						<span class="md_switch__toggle"></span>
 				 	</label>
-			 	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
+			 	</section>
+				<section class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
-				</aside>
-				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
+				</section>
+				<main class="manuscript" id="manuscript-div">
 					<section class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
 						<div class="ms-container" id="front-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -578,7 +555,7 @@
 				</main>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<aside id="transcription-switches" class="journal-switches">
+				<section id="transcription-switches" class="journal-switches">
 				 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
 						<xsl:text>Invert</xsl:text>
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
@@ -589,14 +566,14 @@
 						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-justification" checked="" />
 						<span class="md_switch__toggle"></span>
 				 	</label>
-			 	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
+			 	</section>
+				<section class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
-				</aside>
+				</section>
 				<xsl:variable name="narrow">
 					<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 				</xsl:variable>
-				<main class="journal {$narrow}" id="journal-div"><!-- style="background:#{$body-color};" -->
+				<main class="journal {$narrow}" id="journal-div">
 					<div class="TEI">
 						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 						<xsl:choose>
@@ -617,7 +594,7 @@
 				</main>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-				<main class="object" id="object-div"><!-- style="background:#{$body-color};" -->
+				<main class="object" id="object-div">
 					<section class="TEI" aria-labelledby="main-section">
 						<div class="ms-container" id="main-section">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -644,7 +621,7 @@
 
 		<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<aside class="credits" id="main">
+				<section>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -677,11 +654,11 @@
 						</p>
 					</xsl:if>
 					<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-				</aside>
+				</section>
 			</xsl:when>
 
 			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<aside class="credits" id="main">
+				<section>
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
@@ -708,11 +685,11 @@
 						</p>
 					</xsl:if>
 					<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-				</aside>
+				</section>
 			</xsl:when>
 
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
-				<aside class="credits" id="main">
+				<section>
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -747,12 +724,12 @@
 						</xsl:variable>-->
 						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
 					</xsl:if>
-				</aside>
+				</section>
 			</xsl:when>
 
 			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
 				<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
-				<aside class="credits" id="main">
+				<section>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -785,7 +762,7 @@
 						</xsl:variable>-->
 						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
 					</xsl:if>
-				</aside>
+				</section>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>

@@ -27,12 +27,6 @@
 	<xsl:variable name="isPaged" select="$paged"/>
 
 	<xsl:template match="/">
-		<xsl:variable name="subtitle">
-			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Visual Material</xsl:when>
-				<xsl:otherwise>Recovered Text</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
 		<xsl:variable name="additional-authors-1">			
 			<xsl:choose>
 				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
@@ -221,12 +215,6 @@
 					<xsl:value-of select="//teiHeader//revisionDesc/change/name[not(.=preceding::name)]" separator=", "/>
 				</xsl:otherwise>
 			</xsl:choose>
-		</xsl:variable>
-		<xsl:variable name="warning-violence">
-			<xsl:if test="/TEI/text[contains(@n,'warning-violence')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</p></xsl:if>
-		</xsl:variable>
-		<xsl:variable name="warning-language">
-			<xsl:if test="/TEI/text[contains(@n,'warning-language')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racist language.</p></xsl:if>
 		</xsl:variable>
 		<xsl:variable name="sortedDates" as="xs:string*">
 			<xsl:choose>
@@ -430,6 +418,18 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="subtitle">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Visual Material</xsl:when>
+				<xsl:otherwise>Recovered Text</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="subtitle-icon">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">visual-material</xsl:when>
+				<xsl:otherwise>recovered-text</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="editorial">
 			<xsl:if test="count(//teiHeader//respStmt) > 1">
 				<xsl:text>, eds. </xsl:text>
@@ -466,10 +466,18 @@
 				<xsl:otherwise>This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="text-object-details">
+		<xsl:variable name="warning">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-					<section>
+				<xsl:when test="/TEI/text[contains(@n,'warning-violence')]"><aside class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</aside></xsl:when>
+				<xsl:when test="/TEI/text[contains(@n,'warning-language')]"><aside class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racist language.</aside></xsl:when>
+				<xsl:otherwise><aside class="text-box">This historical item reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</aside></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="text-object-details">
+			<section id="text-object-details">
+				<xsl:copy-of select="$warning"/>
+				<xsl:choose>
+					<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 						<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 						<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -502,10 +510,8 @@
 							</p>
 						</xsl:if>
 						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-					</section>
-				</xsl:when>
-				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-					<section>
+					</xsl:when>
+					<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 						<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 						<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
@@ -532,10 +538,8 @@
 							</p>
 						</xsl:if>
 						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-					</section>
-				</xsl:when>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
-					<section>
+					</xsl:when>
+					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 						<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 						<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -569,12 +573,10 @@
 								<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
 							</xsl:variable>-->
 							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
-						</xsl:if>
-					</section>
-				</xsl:when>
-				<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
-					<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
-					<section>
+						</xsl:if>					
+					</xsl:when>
+					<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
+						<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
 						<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 						<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -607,9 +609,9 @@
 							</xsl:variable>-->
 							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
 						</xsl:if>
-					</section>
-				</xsl:when>
-			</xsl:choose>
+					</xsl:when>
+				</xsl:choose>
+			</section>
 		</xsl:variable>
 		<xsl:variable name="text-object">
 			<xsl:choose>
@@ -631,11 +633,11 @@
 							<span class="md_switch__toggle"></span>
 					 	</label>
 				 	</section>
-					<section class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
+					<section class="narrow-mobile" aria-labelledby="mobile">
 						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 					</section>
-					<section class="manuscript" id="manuscript-div">
-						<section class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
+					<section class="manuscript" id="text-object">
+						<div class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
 							<div class="ms-container" id="front-section">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 								<xsl:choose>
@@ -653,9 +655,9 @@
 									</xsl:otherwise>
 								</xsl:choose>
 							</div>
-						</section>
-						<section class="TEI" style="{$body-color}" aria-labelledby="main-section">
-							<div class="ms-container" id="main-section">
+						</div>
+						<div class="TEI" style="{$body-color}">
+							<div class="ms-container">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 								<xsl:choose>
 									<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -672,8 +674,8 @@
 									</xsl:otherwise>
 								</xsl:choose>
 							</div>
-						</section>
-						<section class="TEI back {$back}" style="{$body-color-back}" aria-labelledby="back-section">
+						</div>
+						<div class="TEI back {$back}" style="{$body-color-back}" aria-labelledby="back-section">
 							<div class="ms-container" id="back-section">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 								<xsl:choose>
@@ -691,7 +693,7 @@
 									</xsl:otherwise>
 								</xsl:choose>
 							</div>
-						</section>
+						</div>
 					</section>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
@@ -707,13 +709,13 @@
 							<span class="md_switch__toggle"></span>
 					 	</label>
 				 	</section>
-					<section class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
+					<section class="narrow-mobile" aria-labelledby="mobile">
 						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 					</section>
 					<xsl:variable name="narrow">
 						<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 					</xsl:variable>
-					<section class="journal {$narrow}" id="journal-div">
+					<section class="journal {$narrow}" id="text-object">
 						<div class="TEI">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -734,9 +736,9 @@
 					</section>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-					<section class="object" id="object-div">
-						<section class="TEI" aria-labelledby="main-section">
-							<div class="ms-container" id="main-section">
+					<section class="object" id="text-object">
+						<div class="TEI">
+							<div class="ms-container">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 								<xsl:choose>
 									<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
@@ -754,21 +756,20 @@
 								</xsl:choose>
 								<!-- <p class="image-enlarge">Click on image(s) to enlarge</p> -->
 							</div>
-						</section>
+						</div>
 					</section>
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-		<main id="main">
-			<h2><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
-			<p>This historical item reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-			<xsl:copy-of select="$warning-violence"/>
-			<xsl:copy-of select="$warning-language"/>
+		<main id="main" aria-labelledby="item-title">
+			<section class="title-section">
+				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+				<h3 class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></h3>
+			</section>
 			<xsl:copy-of select="$text-object-details"/>
 			<xsl:copy-of select="$text-object"/>
 		</main>
 	</xsl:template>
-
 
 	<!-- General match -->
 	<xsl:template match="*" priority="-10">

@@ -297,7 +297,7 @@ h2{
 }
 .introduction-text h2{
 	border: none;
-	margin-bottom: 0;
+	margin: 0;
 	padding: 0;
 	display: inline-block;
 }
@@ -1484,7 +1484,7 @@ a.action-button i{
 	margin-left: .5rem;
 }
 .home-buttons{
-	margin: 0 0 1rem;
+	margin: 1rem 0;
 	display: -webkit-flex;
   display: flex;
 	flex-wrap: wrap;
@@ -1510,7 +1510,7 @@ a.action-button i{
 }
 @media only screen and (min-width: 768px){
 	.home-buttons{
-		margin: 1rem 0 3rem;
+		margin: 2rem 0;
 	}
 	.home a.action-button{
 		font-size: 1.15rem;

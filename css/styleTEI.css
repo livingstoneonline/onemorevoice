@@ -4,14 +4,33 @@
 .transcription #content{
 	text-align: center;
 }
+.transcription main{
+	padding: 2rem 1rem;
+}
 .transcription h2{
-	margin-top: 1rem;
+	margin: 0;
 	display: inline-block;
 }
-.transcription .credits{
+.transcription h3.subtitle{
+	margin: 1rem 0;
+	padding: 0;
+}
+.transcription h3.subtitle.recovered-text::before{
+	content: "\f279";
+}
+.transcription h3.subtitle.visual-material::before{
+	content: "\f06e";
+}
+#text-object-details{
+	margin: 0 auto;
+}
+.transcription aside.text-box{
+	margin: 1rem auto 1.5rem;
+}
+/* .transcription .credits{
 	text-align: left;
 	margin-top: 2.5rem;
-}
+} */
 /* CSS TEI File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020-21 */
@@ -72,6 +91,7 @@ also see 2.9 for manuscript colors
 	text-align: center;
 	line-height: 1.875em;
 	margin: 0 auto;
+	width: 100%;
 	max-width: 700px;
 	display: block;
 	visibility: visible;
@@ -179,7 +199,7 @@ also see 2.9 for manuscript colors
 	border: 1px solid #902D27;
 	background: #e3e3e3;
 	padding: 5px 7px;
-	margin: 0 0 1.5em 0
+	margin: 0
 }
 /* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
@@ -596,10 +616,6 @@ button::-moz-focus-inner{
 	padding: 0;
 	margin: 0;
 }
-/* #object-div .p:first-of-type,
-.download + .p{
-	margin-top: 1.5em;
-} */
 .journal .p,
 .journal .ab{
 	display: block;

@@ -634,7 +634,7 @@
 					<section class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
 						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 					</section>
-					<main class="manuscript" id="manuscript-div">
+					<section class="manuscript" id="manuscript-div">
 						<section class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
 							<div class="ms-container" id="front-section">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -692,7 +692,7 @@
 								</xsl:choose>
 							</div>
 						</section>
-					</main>
+					</section>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 					<section id="transcription-switches" class="journal-switches">
@@ -713,7 +713,7 @@
 					<xsl:variable name="narrow">
 						<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 					</xsl:variable>
-					<main class="journal {$narrow}" id="journal-div">
+					<section class="journal {$narrow}" id="journal-div">
 						<div class="TEI">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -731,10 +731,10 @@
 								</xsl:otherwise>
 							</xsl:choose>
 						</div>
-					</main>
+					</section>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-					<main class="object" id="object-div">
+					<section class="object" id="object-div">
 						<section class="TEI" aria-labelledby="main-section">
 							<div class="ms-container" id="main-section">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -755,16 +755,18 @@
 								<!-- <p class="image-enlarge">Click on image(s) to enlarge</p> -->
 							</div>
 						</section>
-					</main>
+					</section>
 				</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
-		<h2><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
-		<p>This historical item reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-		<xsl:copy-of select="$warning-violence"/>
-		<xsl:copy-of select="$warning-language"/>
-		<xsl:copy-of select="$text-object-details"/>
-		<xsl:copy-of select="$text-object"/>
+		<main id="main">
+			<h2><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+			<p>This historical item reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
+			<xsl:copy-of select="$warning-violence"/>
+			<xsl:copy-of select="$warning-language"/>
+			<xsl:copy-of select="$text-object-details"/>
+			<xsl:copy-of select="$text-object"/>
+		</main>
 	</xsl:template>
 
 

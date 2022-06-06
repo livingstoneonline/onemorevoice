@@ -513,7 +513,9 @@ button::-moz-focus-inner{
 	/* text-align: left; */
 	width: 100%;
 	padding: 0;
-	display: inline-block;
+	/* display: inline-block; */
+	display: none;
+	visibility: hidden;
 }
 .manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,

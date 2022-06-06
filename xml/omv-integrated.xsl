@@ -996,14 +996,14 @@
 		<xsl:choose>
 			<!-- This option used for object images that can be rotated -->
 			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
-				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
-				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				<!--<br/><br/><br/>-->
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
 					</a>
 				</span>
+				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
+				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
 			</xsl:when>
 			<!-- This option used for all other object images -->

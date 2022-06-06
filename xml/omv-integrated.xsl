@@ -420,8 +420,8 @@
 		</xsl:variable>
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Visual Material</xsl:when>
-				<xsl:otherwise>Recovered Text</xsl:otherwise>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}">Visual Materials</a></xsl:when>
+				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}">Recovered Text</a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="subtitle-icon">

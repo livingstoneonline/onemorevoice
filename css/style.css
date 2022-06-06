@@ -310,6 +310,16 @@ h2{
 .page-details h2{
 	margin-bottom: 1.5rem;
 }
+@media only screen and (min-width: 768px){
+	.page-details h2{
+		margin-top: 1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.page-details h2{
+		margin-top: inherit;
+	}
+}
 @media only screen and (min-width: 992px){
 	.essay .page-details h2{
 		margin-bottom: .5rem;
@@ -1286,7 +1296,7 @@ sections appear on books & texts
     display: flex;
 	}
 	main .content:nth-child(2){
-		margin-top: 1rem;
+		margin-top: 0;
 	}
 	.content.recovered{
 		margin-top: 0;

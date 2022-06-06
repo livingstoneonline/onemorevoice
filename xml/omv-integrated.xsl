@@ -470,12 +470,12 @@
 			<xsl:choose>
 				<xsl:when test="/TEI/text[contains(@n,'warning-violence')]"><aside class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</aside></xsl:when>
 				<xsl:when test="/TEI/text[contains(@n,'warning-language')]"><aside class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racist language.</aside></xsl:when>
-				<xsl:otherwise><aside class="text-box">This historical item reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</aside></xsl:otherwise>
+				<xsl:otherwise><aside class="text-box">This historical item reflects the cultural beliefs and prejudices of its time and may contain material that will upset or distress some readers.</aside></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-object">
 			<xsl:copy-of select="$warning"/>
-			<a class="action-button" href="#text-object-details">Skip to Item Details</a>
+			<!-- <a class="action-button" href="#text-object-details">Skip to Item Details</a> -->
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 					<section id="transcription-switches" class="manuscript-switches">

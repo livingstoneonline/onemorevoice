@@ -7,6 +7,11 @@
 .transcription main{
 	padding: 2rem 1rem;
 }
+@media only screen and (min-width: 768px){
+	.transcription main{
+		justify-content: inherit;
+	}
+}
 .transcription h2{
 	margin: 0;
 	display: inline-block;
@@ -23,6 +28,11 @@
 }
 .transcription aside.text-box{
 	margin: 1rem auto;
+}
+@media only screen and (min-width: 480px){
+	.transcription aside.text-box{
+		margin: 1.5rem auto;
+	}	
 }
 .transcription a.action-button{
 	font-size: 1rem;

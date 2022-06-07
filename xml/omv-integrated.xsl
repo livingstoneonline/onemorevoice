@@ -474,7 +474,6 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-object">
-			<xsl:copy-of select="$warning"/>
 			<!-- <a class="action-button" href="#text-object-details">Skip to Item Details</a> -->
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
@@ -498,7 +497,7 @@
 					<section class="narrow-mobile" aria-labelledby="mobile">
 						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 					</section>
-					<section class="manuscript" id="text-object">
+					<section class="manuscript">
 						<div class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
 							<div class="ms-container" id="front-section">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -577,7 +576,7 @@
 					<xsl:variable name="narrow">
 						<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
 					</xsl:variable>
-					<section class="journal {$narrow}" id="text-object">
+					<section class="journal {$narrow}">
 						<div class="TEI">
 							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
 							<xsl:choose>
@@ -598,7 +597,7 @@
 					</section>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-					<section class="object" id="text-object">
+					<section class="object">
 						<div class="TEI">
 							<div class="ms-container">
 								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
@@ -624,152 +623,157 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-object-details">
-			<section id="text-object-details">
-				<h3>Item Details</h3>
-				<xsl:choose>
-					<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-						<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
-						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
-						<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
-							<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
+			<h3>Item Details</h3>
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
+					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
+						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
+					</xsl:if>
+					<xsl:copy-of select="$object-description"/>
+					<xsl:copy-of select="$repository"/>
+					<xsl:copy-of select="$collection"/>
+					<xsl:copy-of select="$shelfmark"/>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source-link1">
+							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
+						</xsl:variable>
+						<xsl:variable name="source-link2">
+							<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+						</xsl:variable>
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+						<xsl:if test="//publicationStmt/ref[2]">
+							<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 						</xsl:if>
-						<xsl:copy-of select="$object-description"/>
-						<xsl:copy-of select="$repository"/>
-						<xsl:copy-of select="$collection"/>
-						<xsl:copy-of select="$shelfmark"/>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-						<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-						<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
-						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source-link1">
-								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
-							</xsl:variable>
-							<xsl:variable name="source-link2">
-								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
-							</xsl:variable>
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
-							<xsl:if test="//publicationStmt/ref[2]">
-								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
-							</xsl:if>
-							</p>
+						</p>
+					</xsl:if>
+					<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
+					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
+					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source-link1">
+							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
+						</xsl:variable>
+						<xsl:variable name="source-link2">
+							<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+						</xsl:variable>
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+						<xsl:if test="//publicationStmt/ref[2]">
+							<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 						</xsl:if>
-						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-					</xsl:when>
-					<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-						<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
-						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
-						<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-						<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-						<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
-						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source-link1">
-								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
+						</p>
+					</xsl:if>
+					<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
+					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
+					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
+						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
+					</xsl:if>
+					<xsl:copy-of select="$repository"/>
+					<xsl:copy-of select="$collection"/>
+					<xsl:copy-of select="$shelfmark"/>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source">
+							<xsl:for-each select="//publicationStmt/ref">
+								<xsl:variable name="link" select="@target"/>
+								<xsl:variable name="source" select="node()"/>
+								<a href="{$link}"><xsl:value-of select="$source"/></a>
+							 	<xsl:if test="position() != last()">
+									<xsl:text>; </xsl:text>
+							 	</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+							<!--<xsl:variable name="link">
+								<xsl:value-of select="@target"/>
 							</xsl:variable>
-							<xsl:variable name="source-link2">
-								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+							<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
+						</xsl:variable>-->
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
+					</xsl:if>					
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
+					<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
+					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
+					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
+					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
+						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
+					</xsl:if>
+					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source">
+							<xsl:for-each select="//publicationStmt/ref">
+								<xsl:variable name="link" select="@target"/>
+								<xsl:variable name="source" select="node()"/>
+								<a href="{$link}"><xsl:value-of select="$source"/></a>
+							 	<xsl:if test="position() != last()">
+									<xsl:text>; </xsl:text>
+							 	</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+							<!--<xsl:variable name="link">
+								<xsl:value-of select="@target"/>
 							</xsl:variable>
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
-							<xsl:if test="//publicationStmt/ref[2]">
-								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
-							</xsl:if>
-							</p>
-						</xsl:if>
-						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-					</xsl:when>
-					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
-						<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
-						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
-						<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
-							<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
-						</xsl:if>
-						<xsl:copy-of select="$repository"/>
-						<xsl:copy-of select="$collection"/>
-						<xsl:copy-of select="$shelfmark"/>
-						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
-						<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source">
-								<xsl:for-each select="//publicationStmt/ref">
-									<xsl:variable name="link" select="@target"/>
-									<xsl:variable name="source" select="node()"/>
-									<a href="{$link}"><xsl:value-of select="$source"/></a>
-								 	<xsl:if test="position() != last()">
-										<xsl:text>; </xsl:text>
-								 	</xsl:if>
-								</xsl:for-each>
-							</xsl:variable>
-								<!--<xsl:variable name="link">
-									<xsl:value-of select="@target"/>
-								</xsl:variable>
-								<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
-							</xsl:variable>-->
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
-						</xsl:if>					
-					</xsl:when>
-					<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
-						<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
-						<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
-						<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
-						<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
-							<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
-						</xsl:if>
-						<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-						<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
-						<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source">
-								<xsl:for-each select="//publicationStmt/ref">
-									<xsl:variable name="link" select="@target"/>
-									<xsl:variable name="source" select="node()"/>
-									<a href="{$link}"><xsl:value-of select="$source"/></a>
-								 	<xsl:if test="position() != last()">
-										<xsl:text>; </xsl:text>
-								 	</xsl:if>
-								</xsl:for-each>
-							</xsl:variable>
-								<!--<xsl:variable name="link">
-									<xsl:value-of select="@target"/>
-								</xsl:variable>
-								<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
-							</xsl:variable>-->
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
-						</xsl:if>
-					</xsl:when>
-				</xsl:choose>
-			</section>
+							<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
+						</xsl:variable>-->
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
+					</xsl:if>
+				</xsl:when>
+			</xsl:choose>
 		</xsl:variable>
 		<main id="main" aria-labelledby="item-title">
 			<section class="title-section">
 				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
 				<h3 class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></h3>
 			</section>
-			<xsl:copy-of select="$text-object"/>
-			<xsl:copy-of select="$text-object-details"/>
+			<article>
+				<section class="text-object">
+					<xsl:copy-of select="$warning"/>
+					<xsl:copy-of select="$text-object"/>
+				</section>
+				<section class="text-object-details">
+					<xsl:copy-of select="$text-object-details"/>
+				</section>
+			</article>
 		</main>
 	</xsl:template>
 

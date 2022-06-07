@@ -16,6 +16,34 @@
 	margin: 0;
 	display: inline-block;
 }
+.transcription h2{
+	/* font-size: 1.5rem; */
+	font-size: 1.3rem;
+}
+@media only screen and (min-width: 480px){
+	.transcription h2{
+		/* font-size: 2.1rem; */
+		font-size: 1.9rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.transcription h2{
+		/* font-size: 2.3rem; */
+		font-size: 2.1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.transcription h2{
+		/* font-size: 2.5rem; */
+		font-size: 2.3rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.transcription h2{
+		/* font-size: 2.6rem; */
+		font-size: 2.4rem;
+	}
+}
 .transcription h3.subtitle{
 	margin: 1rem 0;
 	padding: 0;

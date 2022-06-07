@@ -1369,17 +1369,17 @@ img{
 	font-weight: 300;
 	color: transparent;
 	background: #E7E9E7;
-	border-style: none;
+	/* border-style: none; */
 	width: 100%;
 	height: auto;
 	display: block;
 }
 a img{
-	border: 3px transparent solid;
+	border: 4px transparent solid;
 }
 a:hover img,
 a:focus img{
-	border: 3px #395f65 solid;
+	border: 4px #395f65 solid;
 }
 .image-container{
 	padding: .5em;

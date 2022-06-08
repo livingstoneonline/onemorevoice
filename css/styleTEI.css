@@ -20,6 +20,14 @@
 		width: calc(45% - 1rem)
 	}
 }
+@media only screen and (min-width: 992px){
+	.transcription main .text-object{
+		width: calc(60% - 1rem); 
+	}
+	.transcription main .text-object-details{
+		width: calc(40% - 1rem)
+	}
+}
 @media only screen and (min-width: 768px){
 	.transcription main .text-object-details{
 		margin-top: 0;
@@ -27,7 +35,7 @@
 }
 @media only screen and (min-width: 992px){
 	.transcription main .text-object-details{
-		margin-top: 1rem;
+		margin-top: .5rem;
 		padding: 0 0 0 1.75rem;
 	}
 }
@@ -105,6 +113,7 @@
 	.manuscript,
 	.journal,
 	.object{
+		margin: 3rem 0 0;
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
 	}
@@ -1082,6 +1091,7 @@ u{
 }
 .object .figure{
 	clear: both;
+	line-height: 0;
 }
 @media only screen and (min-width: 480px){
 	.object .figure.vertical a img{

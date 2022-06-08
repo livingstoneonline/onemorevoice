@@ -35,9 +35,9 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if the figure n="hist-object" comes from a book or journal; otherwise delete it -->
+			<!-- Use this version of <sourceDesc> if the object comes from a book or journal; otherwise delete it -->
             <sourceDesc>
-				<biblStruct type="figure n="hist-object"-book-journal">
+				<biblStruct type="object-book-journal">
 					<monogr n="book-section"><!-- n="book-section" if journal/periodical article -->
 						<title>“When George Was King” and Other Poems</title><!-- Publication title: journal or book -->
 						<!-- Author here used only for books -->
@@ -101,7 +101,7 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_021034_0001" n="0001"/>
-	<figure n="figure n="hist-object"" rend="vertical" facs="/img/visual-materials/liv_021034_0001_deriv-968px.jpg">
+	<figure n="object" rend="vertical" facs="/img/visual-materials/liv_021034_0001_deriv-968px.jpg">
 		<graphic url="/img/visual-materials/liv_021034_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021034_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021034_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021034_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021034_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021034_0001_deriv-303px.jpg 303w, /img/visual-materials/liv_021034_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 484px, (min-width: 480px) 60.33vw, calc(100vw - 44px)"/>
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->

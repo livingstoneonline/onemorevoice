@@ -35,9 +35,9 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if the figure n="hist-object" comes from a book or journal; otherwise delete it -->
+			<!-- Use this version of <sourceDesc> if the object comes from a book or journal; otherwise delete it -->
             <sourceDesc>
-				<biblStruct type="figure n="hist-object"-book-journal">
+				<biblStruct type="object-book-journal">
 					<monogr n="book-section"><!-- n="book-section" if journal/periodical article -->
 						<title>When I Was a Child</title><!-- Publication title: journal or book -->
 						<!-- Author here used only for books -->
@@ -100,18 +100,18 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
 	<pb facs="liv_021080_0001" n="0001"/>
-	<!-- figure @facs provides the hyperlink for the figure n="hist-object" image to a larger version -->
+	<!-- figure @facs provides the hyperlink for the object image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
 	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
 
 	<!-- horiztonal image -->
-	<!-- <figure n="figure n="hist-object"" facs="/img/visual-materials/liv_021080_0001_deriv-1388px.jpg">
+	<!-- <figure n="object" facs="/img/visual-materials/liv_021080_0001_deriv-1388px.jpg">
 		<graphic url="/img/visual-materials/liv_021080_0001_deriv-1388px.jpg" facs="/img/visual-materials/liv_021080_0001_deriv-1388px.jpg 1388w, /img/visual-materials/liv_021080_0001_deriv-870px.jpg 870w, /img/visual-materials/liv_021080_0001_deriv-694px.jpg 694w, /img/visual-materials/liv_021080_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021080_0001_deriv-435px.jpg 435w, /img/visual-materials/liv_021080_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 694px, calc(100vw - 44px)"/> -->
 
 	<!-- vertical image -->
-	<figure n="figure n="hist-object"" rend="vertical" facs="/img/visual-materials/liv_021080_0001_deriv-968px.jpg">
+	<figure n="object" rend="vertical" facs="/img/visual-materials/liv_021080_0001_deriv-968px.jpg">
 		<graphic url="/img/visual-materials/liv_021080_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021080_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021080_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021080_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021080_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021080_0001_deriv-303px.jpg 303w, /img/visual-materials/liv_021080_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 484px, (min-width: 480px) 60.33vw, calc(100vw - 44px)"/>
 		<label>Anonymous, “Yoshio Markino (with Facsimile Signature),” 1912<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc>Yoshio Markino seated at desk in half profile and facing forward.<!-- Image alt text (max. 100 char with spaces) --></figDesc>

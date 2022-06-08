@@ -29,16 +29,16 @@
                 <idno type="LEAP-ID">liv_021086</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
-				<ref target="https://archives.yale.edu/repositories/4/archival_objects/2140330">Yale University. Divinity School. Library, New Haven, CT</ref>
+				<ref target="https://archives.yale.edu/repositories/4/archival_figure n="hist-object"s/2140330">Yale University. Divinity School. Library, New Haven, CT</ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
 					<p>Image courtesy of Yale Divinity Library Special Collection, Yale University Library.</p>
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if the object comes from an archive; otherwise delete it -->
+			<!-- Use this version of <sourceDesc> if the figure n="hist-object" comes from an archive; otherwise delete it -->
             <sourceDesc>
-                <msDesc type="object-archive">
+                <msDesc type="figure n="hist-object"-archive">
                     <msIdentifier>
                         <country>United States</country><!-- Repository country -->
                         <settlement>New Haven, CT</settlement><!-- Repository city -->
@@ -93,18 +93,18 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
 	<pb facs="liv_021086_0001" n="0001"/>
-	<!-- figure @facs provides the hyperlink for the object image to a larger version -->
+	<!-- figure @facs provides the hyperlink for the figure n="hist-object" image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
 	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
 
 	<!-- horiztonal image -->
-	<!-- <figure n="object" facs="/img/visual-materials/liv_021086_0001_deriv-1388px.jpg">
+	<!-- <figure n="figure n="hist-object"" facs="/img/visual-materials/liv_021086_0001_deriv-1388px.jpg">
 		<graphic url="/img/visual-materials/liv_021086_0001_deriv-1388px.jpg" facs="/img/visual-materials/liv_021086_0001_deriv-1388px.jpg 1388w, /img/visual-materials/liv_021086_0001_deriv-870px.jpg 870w, /img/visual-materials/liv_021086_0001_deriv-694px.jpg 694w, /img/visual-materials/liv_021086_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021086_0001_deriv-435px.jpg 435w, /img/visual-materials/liv_021086_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 694px, calc(100vw - 44px)"/> -->
 
 	<!-- vertical image -->
-	<figure n="object" rend="vertical" facs="/img/visual-materials/liv_021086_0001_deriv-968px.jpg">
+	<figure n="figure n="hist-object"" rend="vertical" facs="/img/visual-materials/liv_021086_0001_deriv-968px.jpg">
 		<graphic url="/img/visual-materials/liv_021086_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021086_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021086_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021086_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021086_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021086_0001_deriv-303px.jpg 303w, /img/visual-materials/liv_021086_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 484px, (min-width: 480px) 60.33vw, calc(100vw - 44px)"/>
 		<label>Henry Charles Goodyear, “‘[Abdullah] David Susi, Servant to Dr. Livingstone,’” 24 August 1886<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc>Abdullah Susi in traditional East African clothing, standing with body turned right and facing forward.<!-- Image alt text (max. 100 char with spaces) --></figDesc>
@@ -119,7 +119,7 @@
 <lb/><p rend="no-indent center bold"><seg rend="small caps">Baptized on St. Barholomew's Day, 1886, in the Slave Market Church, Zanzibar</seg>
 <lb/><seg rend="smallcaps">By Henry Charles Goodyear</seg></p>
 <lb/>
-<!--<lb/><p rend="no-indent center">[Below image, on object] 
+<!--<lb/><p rend="no-indent center">[Below image, on figure n="hist-object"] 
 <lb/><seg rend="small"><seg rend="large smallcaps">David Susi,</seg>
 <lb/><seg rend="caps">Servant to Dr. Livingstone;</seg>
 <lb/>Baptized on St. Barholomew's Day, 1886, in the Slave Market Church, 

@@ -29,7 +29,7 @@
                 <idno type="LEAP-ID">liv_021042</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
-				<ref target="https://africa.si.edu/collections/objects/9030/les-animaux-animals">Smithsonian Institution. National Museum of African Art</ref>
+				<ref target="https://africa.si.edu/collections/figure n="hist-object"s/9030/les-animaux-animals">Smithsonian Institution. National Museum of African Art</ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
 					<p>Used for education consistent with the principles of fair use under Section 108 of the U.S. Copyright Act.</p>
@@ -37,9 +37,9 @@
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if the object comes from an archive; otherwise delete it -->
+			<!-- Use this version of <sourceDesc> if the figure n="hist-object" comes from an archive; otherwise delete it -->
             <sourceDesc>
-                <msDesc type="object-archive">
+                <msDesc type="figure n="hist-object"-archive">
                     <msIdentifier>
                         <country>United States</country><!-- Repository country -->
                         <settlement>Washington, D.C.</settlement><!-- Repository city -->
@@ -94,10 +94,10 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_021042_0001" n="0001"/>
-	<!-- figure @facs provides the hyperlink for the object image to a larger version -->
+	<!-- figure @facs provides the hyperlink for the figure n="hist-object" image to a larger version -->
 		<!-- remove rend="vertical" for landscape images -->
 		<!-- add rend="gray" to add gray border to image -->
-	<figure n="object" facs="/img/visual-materials/liv_021042_0001_deriv-1388px.jpg">
+	<figure n="figure n="hist-object"" facs="/img/visual-materials/liv_021042_0001_deriv-1388px.jpg">
 		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
 		<graphic url="/img/visual-materials/liv_021042_0001_deriv-1388px.jpg" facs="/img/visual-materials/liv_021042_0001_deriv-1388px.jpg 1388w, /img/visual-materials/liv_021042_0001_deriv-870px.jpg 870w, /img/visual-materials/liv_021042_0001_deriv-694px.jpg 694w, /img/visual-materials/liv_021042_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021042_0001_deriv-435px.jpg 435w, /img/visual-materials/liv_021042_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 694px, calc(100vw - 44px)"/>
 		<!-- for vertical images use: (min-width: 1000px) 447px, (min-width: 780px) 489px, (min-width: 480px) calc(70vw - 22px), calc(100vw - 32px) -->

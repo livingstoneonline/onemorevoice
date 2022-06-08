@@ -1072,7 +1072,7 @@ u{
 		pointer-events: unset;
 	}
 }
-.object.figure{
+.object .figure{
 	clear: both;
 }
 @media only screen and (min-width: 480px){
@@ -1082,11 +1082,11 @@ u{
 		box-sizing: border-box;
 	}
 }
-.object.gray img{
+.object .figure.gray img{
 	border: 3px #E3E3E3 solid;
 }
-.object.gray a:hover img,
-.object.gray a:focus img{
+.object .figure.gray a:hover img,
+.object .figure.gray a:focus img{
 	border: 3px #204A79 solid;
 }
 .journal .image-small.inline-left{

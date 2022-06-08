@@ -6,7 +6,7 @@
 */
 
 .transcription main{
-	padding: 2rem 1rem;
+	padding: 1rem 1rem 2rem;
 	justify-content: inherit;
 }
 .transcription main article{
@@ -15,17 +15,17 @@
 }
 @media only screen and (min-width: 992px){
 	.transcription main article{
-		padding: 0 1rem;
+		/* padding: 0 1rem; */
 		flex-direction: row;
 		gap: 2rem;
 	}
 }
 .transcription main article .text-object-details{
-	margin: 0;
+	/* margin: 0; */
 }
 @media only screen and (min-width: 992px){
 	.transcription main .title-section{
-		padding: 0 1rem;
+		/* padding: 0 1rem; */
 		width: 75%;
 	}
 	.transcription main article .text-object{
@@ -33,15 +33,13 @@
 	}
 	.transcription main article .text-object-details{
 		font-size: 1rem;
-		margin: 0;
+		/* margin: 0; */
 		width: 45%;
 	}
 }
 .transcription h2{
-	margin: 0;
-}
-.transcription h2{
 	font-size: 1.5rem;
+	margin: 1.5rem 0;
 }
 @media only screen and (min-width: 480px){
 	.transcription h2{
@@ -69,8 +67,8 @@
 	}
 }
 .transcription h3.subtitle{
-	margin-top: 1rem;
-	padding: 0;
+	margin: 0;
+	/* padding: 0; */
 }
 .transcription h3.subtitle.recovered-text::before{
 	content: "\f279";
@@ -78,18 +76,18 @@
 .transcription h3.subtitle.visual-material::before{
 	content: "\f06e";
 }
-.transcription .text-box{
-	margin-top: 1rem;
+.transcription .warning-box{
+	/* margin-top: 1rem; */
 }
 @media only screen and (min-width: 768px){
-	.transcription .text-box{
-		margin-top: 1.5rem;
+	.transcription .warning-box{
+		/* margin-top: 1.5rem; */
 	}
 }
 @media only screen and (min-width: 992px){
-	.transcription .text-box{
+	.transcription .warning-box{
 		font-size: 1rem;
-		margin: 1rem 0 2rem;
+		/* margin: 1rem 0 2rem; */
 	}
 }
 .transcription a img{
@@ -99,6 +97,36 @@
 .transcription a:focus img{
 	border: none;
 	outline: 3px solid #305056;
+}
+.manuscript,
+.journal,
+.object{
+	/* font-size: 1.2em; */
+	text-align: center;
+	line-height: 1.875em;
+	margin: 1rem 0;
+	/* margin: 2rem auto 1rem; */
+	width: 100%;
+	max-width: 700px;
+	display: block;
+	visibility: visible;
+	/* overflow: hidden; */
+}
+@media only screen and (min-width: 768px){
+	.manuscript,
+	.journal,
+	.object{
+		/* margin: 2.5rem auto 1.5rem; */
+	}
+}
+@media only screen and (min-width: 992px){
+	.manuscript,
+	.journal,
+	.object{
+		/* margin: 0 auto 1rem; */
+		display: block !important; /* Tied to overlay */
+		visibility: visible !important;  /* Tied to overlay */
+	}
 }
 .text-object-details p:last-of-type{
 	margin-bottom: 0;
@@ -158,35 +186,7 @@ also see 2.9 for manuscript colors
 
 /* 2.1. Textual divisions */
 
-.manuscript,
-.journal,
-.object{
-	/* font-size: 1.2em; */
-	text-align: center;
-	line-height: 1.875em;
-	margin: 2rem auto 1rem;
-	width: 100%;
-	max-width: 700px;
-	display: block;
-	visibility: visible;
-	/* overflow: hidden; */
-}
-@media only screen and (min-width: 768px){
-	.manuscript,
-	.journal,
-	.object{
-		margin: 2.5rem auto 1.5rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	.manuscript,
-	.journal,
-	.object{
-		margin: 0 auto 1rem;
-		display: block !important; /* Tied to overlay */
-		visibility: visible !important;  /* Tied to overlay */
-	}
-}
+
 .journal{
 	color: #191716;
 	background-color: #ffffff;

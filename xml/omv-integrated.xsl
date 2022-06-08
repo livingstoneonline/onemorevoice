@@ -761,17 +761,15 @@
 			</xsl:choose>
 		</xsl:variable>
 		<main id="main" aria-labelledby="item-title">
-			<article>
-				<section class="text-object">
-					<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
-					<h3 class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></h3>
-					<xsl:copy-of select="$warning"/>
-					<xsl:copy-of select="$text-object"/>
-				</section>
-				<section class="text-object-details">
-					<xsl:copy-of select="$text-object-details"/>
-				</section>
-			</article>
+			<section class="text-object">
+				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+				<h3 class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></h3>
+				<xsl:copy-of select="$warning"/>
+				<xsl:copy-of select="$text-object"/>
+			</section>
+			<section class="text-object-details">
+				<xsl:copy-of select="$text-object-details"/>
+			</section>
 		</main>
 	</xsl:template>
 

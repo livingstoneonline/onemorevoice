@@ -987,10 +987,10 @@
 			<xsl:value-of select="self::node()/label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
-			<xsl:if test="self::node()[@n='object' and @change='rotate-90']">
+			<xsl:if test="self::node()[@n='hist-object' and @change='rotate-90']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
-			<xsl:if test="self::node()[@n='object' and @change='rotate-180']">
+			<xsl:if test="self::node()[@n='hist-object' and @change='rotate-180']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
 		</xsl:variable>
@@ -999,7 +999,7 @@
 		<!-- end of variables -->
 		<xsl:choose>
 			<!-- This option used for object images that can be rotated -->
-			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
+			<xsl:when test="contains(@n,'hist-object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
 				<!--<br/><br/><br/>-->
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
@@ -1011,7 +1011,7 @@
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
 			</xsl:when>
 			<!-- This option used for all other object images -->
-			<xsl:when test="contains(@n,'object')">
+			<xsl:when test="contains(@n,'hist-object')">
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>

@@ -2565,7 +2565,7 @@ section + hr.section-divider{
 /* Random */
 
 aside.text-box,
-aside.warning{
+aside.warning-box{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
 	border-left: 6px solid #8db7bf;
@@ -2575,7 +2575,8 @@ aside.warning{
 aside.text-box{
 	border-left: 6px solid #8db7bf;
 }
-aside.warning{
+aside.warning-box.violence,
+aside.warning-box.language{
 	border-left: 6px solid #85454B;
 	max-width: 700px;
 }

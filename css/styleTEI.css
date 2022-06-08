@@ -2,6 +2,11 @@
 	padding: 1rem 1rem 2rem;
 	justify-content: inherit;
 }
+@media only screen and (min-width: 992px){
+	.transcription main{
+		padding: 1rem 2rem 2rem;
+	}
+}
 .transcription main article{
 	display: flex;
 	flex-direction: column;
@@ -12,14 +17,9 @@
 		gap: 2rem;
 	}
 }
-@media only screen and (min-width: 768px){
-	.transcription main article section:not(:first-child){
-		margin-top: 0;
-	}
-}
 @media only screen and (min-width: 992px){
 	.transcription main .title-section{
-		width: 75%;
+		width:55%;
 	}
 	.transcription main article .text-object{
 		width: 55%;
@@ -27,6 +27,17 @@
 	.transcription main article .text-object-details{
 		font-size: 1rem;
 		width: 45%;
+	}
+}
+@media only screen and (min-width: 768px){
+	.transcription main article .text-object-details{
+		margin-top: 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.transcription main article .text-object-details{
+		margin-top: 1rem;
+		padding: 0 1rem 0 2rem;
 	}
 }
 .transcription h2{
@@ -54,12 +65,13 @@
 	}
 }
 @media only screen and (min-width: 992px){
-	.transcription h3{
-		margin-top: 1rem;
+	.transcription .text-object-details h3{
+		font-size: 1.4rem;
 	}
 }
 .transcription h3.subtitle{
 	margin: 0;
+	padding: 0;
 }
 .transcription h3.subtitle.recovered-text::before{
 	content: "\f279";

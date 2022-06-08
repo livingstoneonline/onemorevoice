@@ -90,21 +90,13 @@
 		/* margin: 1rem 0 2rem; */
 	}
 }
-.transcription a img{
-	border: none;
-}
-.transcription a:hover img,
-.transcription a:focus img{
-	border: none;
-	outline: 3px solid #305056;
-}
 .manuscript,
 .journal,
 .object{
 	/* font-size: 1.2em; */
 	text-align: center;
 	line-height: 1.875em;
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 	/* margin: 2rem auto 1rem; */
 	width: 100%;
 	max-width: 700px;
@@ -127,6 +119,19 @@
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
 	}
+}
+.object .TEI .ms-container .body .div{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.object a img{
+	border: none;
+}
+.object .figure a:hover img,
+.object .figure a:focus img{
+	border: none;
+	outline: 3px solid #305056;
 }
 .text-object-details p:last-of-type{
 	margin-bottom: 0;
@@ -1076,7 +1081,7 @@ u{
 	clear: both;
 }
 @media only screen and (min-width: 480px){
-	.object.vertical a img{
+	.object .figure.vertical a img{
 		margin: 0 auto;
 		width: 70%;
 		box-sizing: border-box;

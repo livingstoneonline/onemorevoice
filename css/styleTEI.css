@@ -113,7 +113,7 @@
 	.manuscript,
 	.journal,
 	.object{
-		margin: 2.5rem 0 0;
+		margin: 2.5rem 0 1rem;
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
 	}
@@ -132,7 +132,7 @@
 .object .figure a:hover img,
 .object .figure a:focus img{
 	border: none;
-	outline: 3px solid #305056;
+	outline: 4px solid #305056;
 }
 .text-object-details p:last-of-type{
 	margin-bottom: 0;
@@ -1097,7 +1097,8 @@ u{
 	margin-bottom: 0;
 }
 @media only screen and (min-width: 480px){
-	.object .figure.vertical a img{
+	.object .figure.vertical a img,
+	.image-overlay{
 		margin: 0 auto;
 		width: 70%;
 		box-sizing: border-box;

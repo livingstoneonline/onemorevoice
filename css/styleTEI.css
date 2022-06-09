@@ -113,7 +113,7 @@
 	.manuscript,
 	.journal,
 	.object{
-		margin: 3rem 0 0;
+		margin: 2.5rem 0 0;
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
 	}
@@ -121,17 +121,6 @@
 .object .TEI .ms-container .body .div{
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
-}
-@media only screen and (min-width: 480px){
-	.object .TEI .ms-container .body .div{
-		gap: 1.5rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	.object .TEI .ms-container .body .div{
-		gap: 2rem;
-	}
 }
 .object a img{
 	border: none;
@@ -1092,6 +1081,20 @@ u{
 .object .figure{
 	clear: both;
 	line-height: 0;
+	margin-bottom: 2rem;
+}
+@media only screen and (min-width: 480px){
+	.object .figure{
+		margin-bottom: 1.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.object .figure{
+		margin-bottom: 2rem;
+	}
+}
+.object .figure:last-of-type{
+	margin-bottom: 0;
 }
 @media only screen and (min-width: 480px){
 	.object .figure.vertical a img{
@@ -1099,6 +1102,22 @@ u{
 		width: 70%;
 		box-sizing: border-box;
 		display: inline-block;
+	}
+}
+.object .TEI .ms-container .body .div p{
+	margin: 1rem 0;
+}
+.object .TEI .ms-container .body .div p:first-of-type{
+	margin-top: 2rem;
+}
+@media only screen and (min-width: 480px){
+	.object .TEI .ms-container .body .div p:first-of-type{
+		margin-top: 1.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.object .TEI .ms-container .body .div p:first-of-type{
+		margin-top: 2rem;
 	}
 }
 /* .object .figure.gray img{

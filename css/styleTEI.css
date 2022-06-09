@@ -1082,6 +1082,7 @@ u{
 	clear: both;
 	line-height: 0;
 	margin-bottom: 2rem;
+	position: relative;
 }
 @media only screen and (min-width: 480px){
 	.object .figure{
@@ -1105,29 +1106,9 @@ u{
 		display: inline-block;
 	}
 }
-.object .TEI .ms-container .body .div p{
-	margin: 1rem 0;
-}
 .object .TEI .ms-container .body .div p:first-of-type{
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 }
-@media only screen and (min-width: 480px){
-	.object .TEI .ms-container .body .div p:first-of-type{
-		margin-top: 1.5rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	.object .TEI .ms-container .body .div p:first-of-type{
-		margin-top: 2rem;
-	}
-}
-/* .object .figure.gray img{
-	border: 3px #E3E3E3 solid;
-}
-.object .figure.gray a:hover img,
-.object .figure.gray a:focus img{
-	border: 3px #204A79 solid;
-} */
 .journal .image-small.inline-left{
 	float: left;
 	width: 4.5em;

@@ -1000,6 +1000,7 @@
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+						<div class="image-overlay"></div>
 					</a>
 				</span>
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
@@ -1011,6 +1012,7 @@
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+						<div class="image-overlay"></div>
 					</a>
 				</span>
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->

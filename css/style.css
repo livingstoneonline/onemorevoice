@@ -1438,7 +1438,8 @@ a:focus{
 
 /* Action button modified from a button created with https://buttonoptimizer.com/ and https://www.css-gradient.com */
 a.action-button,
-a.action-button:visited{
+a.action-button:visited,
+#rotate-button{
 	font-size: 1.1rem;
 	font-weight: 600;
 	text-decoration: none;
@@ -1457,7 +1458,8 @@ a.action-button:visited{
 }
 @media only screen and (min-width: 1200px){
 	a.action-button,
-	a.action-button:visited{
+	a.action-button:visited,
+	#rotate-button{
 		font-size: 1.25rem;
 		padding: 12px 30px;
 	}

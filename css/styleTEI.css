@@ -504,6 +504,12 @@ button::-moz-focus-inner{
 		-moz-box-shadow: #697c6f 0px 2px 5px 0px;
 		box-shadow: #697c6f 0px 2px 5px 0px;
 		margin: 1.5rem 0 0;
+		padding: 4px 22px;
+	}
+	@media only screen and (min-width: 1200px){
+		#rotate-button{
+			align-self: flex-end;
+		}
 	}
 	#rotate-button i{
 		margin-left: .25rem;

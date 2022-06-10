@@ -495,44 +495,27 @@ button::-moz-focus-inner{
 	border: 0;
 	border-style: none;
 }
-#rotate-button{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 768px){
 	#rotate-button{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 600;
-		font-size: .8em;
-		background-color: #E3E3E3;
-		border: 1px solid #858585;
-		border-radius: 7px;
-		-webkit-border-radius: 7px;
-		-moz-border-radius: 7px;
-		float: left;
-		margin: 1.5em .2em;
-		padding: 14px 8px;
-		height: 20px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		visibility: visible;
+		font-size: .9rem;
+		text-transform: none;
+		color: #212119;
+		background: #E7E9E7;
+		margin: 1.5rem 0 0;
 	}
-}
-#rotate-button:hover{
-	color: whitesmoke;
-	background-color: #858585;
-
+	#rotate-button i{
+		margin-left: .25rem;
+	}
+#rotate-button:hover,
+#rotate-button.click-color{
+	color: #fff;
+	background: #305056;
 }
 #rotate-button:focus{
-	outline: 2px #204A79 solid;
-}
-#rotate-button.click-color{
-	color: whitesmoke;
-	background-color: #424242;
+	outline: 3px solid #e3b382;
 }
 #rotate-button.click-color:hover{
-	background-color: #858585;
+	color: #212119;
+	background: #E7E9E7;
 }
 .rotate-90{
 	margin: 15em auto 9em;
@@ -1099,7 +1082,7 @@ u{
 }
 @media only screen and (min-width: 480px){
 	.object .figure.vertical a img,
-	.image-overlay{
+	.object .figure.vertical a .image-overlay{
 		margin: 0 auto;
 		width: 70%;
 		box-sizing: border-box;

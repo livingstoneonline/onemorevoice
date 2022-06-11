@@ -18,44 +18,44 @@
 	}
 }
 
-/* Distribution of Object Sections */
+/* Distribution of Object Sections (text-object & text-object-details) */
 @media only screen and (min-width: 992px){
-	.transcription main .text-object{
+	.text-object{
 		width: calc(55% - 1rem); 
 	}
-	.transcription main .text-object-details{
+	.text-object-details{
 		font-size: 1rem;
 		width: calc(45% - 1rem)
 	}
 }
 @media only screen and (min-width: 1200px){
-	.transcription main .text-object{
+	.text-object{
 		width: calc(60% - 1.5rem); 
 	}
-	.transcription main .text-object-details{
+	.text-object-details{
 		width: calc(40% - 1.5rem)
 	}
 }
 
 /* text-object-details styling */
 @media only screen and (min-width: 768px){
-	.transcription main .text-object-details{
+	.text-object-details{
 		margin-top: 0;
 	}
 }
 @media only screen and (min-width: 992px){
-	.transcription main .text-object-details{
+	.text-object-details{
 		background: #E3E5E3;
 		margin-top: .5rem;
 		padding: 0 1rem 1.5rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.transcription main .text-object-details{
+	.text-object-details{
 		padding: 0 1.5rem 1.5rem;
 	}
 }
-.transcription main .text-object-details p:last-of-type{
+.text-object-details p:last-of-type{
 	margin-bottom: 0;
 }
 
@@ -189,9 +189,12 @@
 		display: inline-block;
 	}
 }
-.object .figure.hist-object.gray a img{
+.object .figure.hist-object a img{
 	border: 1px solid #bdc2bd;
 }
+/* .object .figure.hist-object.gray a img{
+	border: 1px solid #bdc2bd;
+} */
 
 /* Original Image Captions */
 .object .TEI .ms-container .body .div p{

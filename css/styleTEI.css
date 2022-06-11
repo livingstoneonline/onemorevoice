@@ -1,3 +1,4 @@
+/* Main transcription page */
 .transcription main{
 	padding: 1rem 1rem 2rem;
 	display: flex;
@@ -11,6 +12,12 @@
 		gap: 2rem;
 	}
 }
+@media only screen and (min-width: 1200px){
+	.transcription main{
+		gap: 3rem;
+	}
+}
+/* Distribution of transcription sections */
 @media only screen and (min-width: 992px){
 	.transcription main .text-object{
 		width: calc(55% - 1rem); 
@@ -20,14 +27,15 @@
 		width: calc(45% - 1rem)
 	}
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 1200px){
 	.transcription main .text-object{
-		width: calc(60% - 1rem); 
+		width: calc(60% - 1.5rem); 
 	}
 	.transcription main .text-object-details{
-		width: calc(40% - 1rem)
+		width: calc(40% - 1.5rem)
 	}
 }
+/* text-object-details styling */
 @media only screen and (min-width: 768px){
 	.transcription main .text-object-details{
 		margin-top: 0;
@@ -35,10 +43,17 @@
 }
 @media only screen and (min-width: 992px){
 	.transcription main .text-object-details{
+		background: #E3E5E3;
 		margin-top: .5rem;
-		padding: 0 0 0 1.75rem;
+		padding: 0 1rem 1.5rem;
 	}
 }
+@media only screen and (min-width: 1200px){
+	.transcription main .text-object-details{
+		padding: 0 1.5rem 1.5rem;
+	}
+}
+/* transcription headings */
 .transcription h2{
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
@@ -66,6 +81,7 @@
 @media only screen and (min-width: 992px){
 	.transcription .text-object-details h3{
 		font-size: 1.4rem;
+		color: #2F4F55;
 	}
 }
 .transcription h3.subtitle{
@@ -78,11 +94,13 @@
 .transcription h3.subtitle.visual-material::before{
 	content: "\f06e";
 }
+/* warning box */
 @media only screen and (min-width: 992px){
 	.transcription .warning-box{
 		font-size: 1rem;
 	}
 }
+/* manuscript-journal-object styling */
 .manuscript,
 .journal,
 .object{
@@ -118,6 +136,7 @@
 		visibility: visible !important;  /* Tied to overlay */
 	}
 }
+/* object bits and pieces */
 .object .TEI .ms-container .body .div{
 	display: flex;
 	flex-direction: column;
@@ -504,7 +523,16 @@ button::-moz-focus-inner{
 		-moz-box-shadow: #697c6f 0px 2px 5px 0px;
 		box-shadow: #697c6f 0px 2px 5px 0px;
 		margin: 1.5rem 0 0;
-		padding: 4px 22px;
+		padding: 2px 22px;
+		align-self: flex-end;
+		display: none;
+		visibility: hidden;
+	}
+	@media only screen and (min-width: 992px){
+		#rotate-button{
+			display: block;
+			visibility: visible;
+		}
 	}
 	@media only screen and (min-width: 1200px){
 		#rotate-button{
@@ -527,7 +555,7 @@ button::-moz-focus-inner{
 	background: #E7E9E7;
 }
 .rotate-90{
-	margin: 15em auto 9em;
+	/* margin: 8rem auto 3.25rem !important; */
 	transform: rotate(90deg);
 	-ms-transform: rotate(90deg); /* IE 9 */
 	-moz-transform: rotate(90deg); /* Firefox */

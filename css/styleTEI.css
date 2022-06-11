@@ -17,7 +17,8 @@
 		gap: 3rem;
 	}
 }
-/* distribution of object sections */
+
+/* Distribution of Object Sections */
 @media only screen and (min-width: 992px){
 	.transcription main .text-object{
 		width: calc(55% - 1rem); 
@@ -35,6 +36,7 @@
 		width: calc(40% - 1.5rem)
 	}
 }
+
 /* text-object-details styling */
 @media only screen and (min-width: 768px){
 	.transcription main .text-object-details{
@@ -53,7 +55,48 @@
 		padding: 0 1.5rem 1.5rem;
 	}
 }
-/* transcription headings */
+.transcription main .text-object-details p:last-of-type{
+	margin-bottom: 0;
+}
+
+/* manuscript-journal-object styling */
+.manuscript,
+.journal,
+.object{
+	text-align: center;
+	line-height: 1.875em;
+	margin: 1.5rem 0;
+	width: 100%;
+	max-width: 700px;
+	display: block;
+	visibility: visible;
+	/* overflow: hidden; */
+}
+@media only screen and (min-width: 480px){
+	.manuscript,
+	.journal,
+	.object{
+		margin: 2rem 0 1rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.manuscript,
+	.journal,
+	.object{
+		margin: 3rem 0 2rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.manuscript,
+	.journal,
+	.object{
+		margin: 2.5rem 0 1rem;
+		display: block !important; /* Tied to overlay */
+		visibility: visible !important;  /* Tied to overlay */
+	}
+}
+
+/* Transcription Headings */
 .transcription h2{
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
@@ -94,49 +137,15 @@
 .transcription h3.subtitle.visual-material::before{
 	content: "\f06e";
 }
-/* warning box */
+
+/* Warning Box */
 @media only screen and (min-width: 992px){
 	.transcription .warning-box{
 		font-size: 1rem;
 	}
 }
-/* manuscript-journal-object styling */
-.manuscript,
-.journal,
-.object{
-	text-align: center;
-	line-height: 1.875em;
-	margin: 1.5rem 0;
-	width: 100%;
-	max-width: 700px;
-	display: block;
-	visibility: visible;
-	/* overflow: hidden; */
-}
-@media only screen and (min-width: 480px){
-	.manuscript,
-	.journal,
-	.object{
-		margin: 2rem 0 1rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	.manuscript,
-	.journal,
-	.object{
-		margin: 3rem 0 2rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	.manuscript,
-	.journal,
-	.object{
-		margin: 2.5rem 0 1rem;
-		display: block !important; /* Tied to overlay */
-		visibility: visible !important;  /* Tied to overlay */
-	}
-}
-/* The following used for object image containers, esp. spacing */
+
+/* Object Image Containers (especially spacing) */
 .object .TEI .ms-container .body .div{
 	display: flex;
 	flex-direction: column;
@@ -157,7 +166,8 @@
 		margin-bottom: 2rem;
 	}
 }
-/* The following used for object images */
+
+/* Object Images */
 .object a img{
 	border: none;
 }
@@ -182,7 +192,8 @@
 .object .figure.hist-object.gray a img{
 	border: 1px solid #bdc2bd;
 }
-/* The following all used for original image captions */
+
+/* Original Image Captions */
 .object .TEI .ms-container .body .div p{
 	margin-top: .5rem;
 }
@@ -212,10 +223,7 @@
 .object .TEI .ms-container .body .div p.metadata ~ p.metadata{
 	margin-top: 0;
 }
-/* text-object-details styling */
-.text-object-details p:last-of-type{
-	margin-bottom: 0;
-}
+
 
 /* Rotate Button */
 

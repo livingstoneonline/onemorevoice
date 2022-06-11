@@ -981,6 +981,7 @@ sections appear on books & texts
 	font-size: 1.05rem;
 	padding: 1rem 1.5rem;
 	position: relative;
+	display: -webkit-flex; 
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -988,6 +989,7 @@ sections appear on books & texts
 #books .sections .section-container.title-slide,
 #texts .sections .section-container.title-slide{
 	min-height: 167px;
+	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

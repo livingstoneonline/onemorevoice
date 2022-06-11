@@ -1,4 +1,4 @@
-/* Main transcription page */
+/* Main Transcription Page */
 .transcription main{
 	padding: 1rem 1rem 2rem;
 	display: flex;
@@ -17,7 +17,7 @@
 		gap: 3rem;
 	}
 }
-/* Distribution of transcription sections */
+/* distribution of object sections */
 @media only screen and (min-width: 992px){
 	.transcription main .text-object{
 		width: calc(55% - 1rem); 
@@ -136,11 +136,31 @@
 		visibility: visible !important;  /* Tied to overlay */
 	}
 }
-/* object bits and pieces */
+/* The following used for object image containers, esp. spacing */
 .object .TEI .ms-container .body .div{
 	display: flex;
 	flex-direction: column;
 }
+.object .figure{
+	clear: both;
+	line-height: 0;
+	margin-bottom: 2rem;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	.object .figure{
+		margin-bottom: 1.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.object .figure{
+		margin-bottom: 2rem;
+	}
+}
+/* .object .figure:last-of-type{
+	margin-bottom: 0;
+} */
+/* The following used for object images */
 .object a img{
 	border: none;
 }
@@ -153,8 +173,118 @@
 	border: none;
 	outline: 4px solid #305056;
 }
+@media only screen and (min-width: 480px){
+	.object .figure.vertical a img,
+	.object .figure.vertical a .image-overlay{
+		margin: 0 auto;
+		width: 70%;
+		box-sizing: border-box;
+		display: inline-block;
+	}
+}
+.object .figure.hist-object.gray a img{
+	border: 1px solid #bdc2bd;
+}
+/* The following all used for original image captions */
+.object .TEI .ms-container .body .div p{
+	margin-top: .5rem;
+}
+.object .TEI .ms-container .body .div p:first-of-type{
+	margin-top: 1.5rem;
+}
+.object .TEI .ms-container .body .div p + .pb-title + .figure.hist-object{
+	margin-top: 3rem;
+}
+.object .TEI .ms-container .body .div > p:first-child{
+	margin-top: 0;
+}
+.object .TEI .ms-container .body .div .figure + p{
+	margin-top: -.5rem;
+}
+/* .object .TEI .ms-container .body .div .figure:not(:last-of-type) + p{
+	margin-top: -.5rem;
+} */
+/* .metadata only used on liv_021097_ART.html currently */
+.object .TEI .ms-container .body .div p.metadata{
+	font-size: .9rem;
+	font-style: italic;
+	text-align: right;
+	display: inline-block;
+}
+/* The following two rules created via the example at https://stackoverflow.com/a/8539107 */
+.object .TEI .ms-container .body .div > p.metadata{
+	margin-top: 1rem;
+}
+.object .TEI .ms-container .body .div p.metadata ~ p.metadata{
+	margin-top: 0;
+}
+/* text-object-details styling */
 .text-object-details p:last-of-type{
 	margin-bottom: 0;
+}
+
+/* Rotate Button */
+
+/* #rotate button and .rotate-180 used for object images that need to be rotated */
+/* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
+button::-moz-focus-inner{
+	border: 0;
+	border-style: none;
+}
+	#rotate-button{
+		font-size: .9rem;
+		text-transform: none;
+		color: #212119;
+		background: #E7E9E7;
+		-webkit-box-shadow: #697c6f 0px 2px 5px 0px;
+		-moz-box-shadow: #697c6f 0px 2px 5px 0px;
+		box-shadow: #697c6f 0px 2px 5px 0px;
+		margin: 1.5rem 0 0;
+		padding: 2px 22px;
+		align-self: flex-end;
+		display: none;
+		visibility: hidden;
+	}
+	@media only screen and (min-width: 992px){
+		#rotate-button{
+			display: block;
+			visibility: visible;
+		}
+	}
+	@media only screen and (min-width: 1200px){
+		#rotate-button{
+			align-self: flex-end;
+		}
+	}
+	#rotate-button i{
+		margin-left: .25rem;
+	}
+#rotate-button:hover,
+#rotate-button.click-color{
+	color: #fff;
+	background: #305056;
+}
+#rotate-button:focus{
+	outline: 3px solid #e3b382;
+}
+#rotate-button.click-color:hover{
+	color: #212119;
+	background: #E7E9E7;
+}
+.rotate-90{
+	/* margin: 8rem auto 3.25rem !important; */
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-moz-transform: rotate(90deg); /* Firefox */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	-o-transform: rotate(90deg); /* Opera */
+}
+.rotate-180{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-moz-transform: rotate(180deg); /* Firefox */
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	-o-transform: rotate(180deg); /* Opera */
 }
 
 
@@ -186,27 +316,6 @@ Table of Contents
 
 /*--------------------------------------*/
 
-/** Main Site Colors **/
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
-/* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
-/* Color shades: https://mdigi.tools/color-shades/ */
-/*
-(white) #fff;
-(black) #000;
-(light blue 1) #c4d8ef
-(light blue 2) #dbe6f5;
-(site blue) #204A79;
-(light red) #b53831;
-(site red) #902D27;
-(light gray) #e3e3e3;
-(dark gray) #858585;
-(darker gray) #404040;
-(dark brown) #424242;
-(near black) #525252;
-(black) #0b0b0b; 
-also see 2.9 for manuscript colors
-*/
-
 /** 2.0 Transcription CSS **/
 
 /* 2.1. Textual divisions */
@@ -223,14 +332,6 @@ also see 2.9 for manuscript colors
 		max-width: 525px;
 	}
 }
-/* @media only screen and (min-width: 768px){
-	.div.narrow .pb-title,
-	.div.narrow .fw{
-		width: 154%;
-		margin-left: -27%;
-		margin-right: -27%;
-	}
-} */
 .TEI{
 	position: relative;
 }
@@ -505,70 +606,6 @@ label.md_switch{
 	text-align: left;
 }
 
-
-/* 2.3. Rotate Button */
-
-/* #rotate button and .rotate-180 used for object images that need to be rotated */
-/* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
-button::-moz-focus-inner{
-	border: 0;
-	border-style: none;
-}
-	#rotate-button{
-		font-size: .9rem;
-		text-transform: none;
-		color: #212119;
-		background: #E7E9E7;
-		-webkit-box-shadow: #697c6f 0px 2px 5px 0px;
-		-moz-box-shadow: #697c6f 0px 2px 5px 0px;
-		box-shadow: #697c6f 0px 2px 5px 0px;
-		margin: 1.5rem 0 0;
-		padding: 2px 22px;
-		align-self: flex-end;
-		display: none;
-		visibility: hidden;
-	}
-	@media only screen and (min-width: 992px){
-		#rotate-button{
-			display: block;
-			visibility: visible;
-		}
-	}
-	@media only screen and (min-width: 1200px){
-		#rotate-button{
-			align-self: flex-end;
-		}
-	}
-	#rotate-button i{
-		margin-left: .25rem;
-	}
-#rotate-button:hover,
-#rotate-button.click-color{
-	color: #fff;
-	background: #305056;
-}
-#rotate-button:focus{
-	outline: 3px solid #e3b382;
-}
-#rotate-button.click-color:hover{
-	color: #212119;
-	background: #E7E9E7;
-}
-.rotate-90{
-	/* margin: 8rem auto 3.25rem !important; */
-	transform: rotate(90deg);
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-moz-transform: rotate(90deg); /* Firefox */
-	-webkit-transform: rotate(90deg); /* Safari and Chrome */
-	-o-transform: rotate(90deg); /* Opera */
-}
-.rotate-180{
-	transform: rotate(180deg);
-	-ms-transform: rotate(180deg); /* IE 9 */
-	-moz-transform: rotate(180deg); /* Firefox */
-	-webkit-transform: rotate(180deg); /* Safari and Chrome */
-	-o-transform: rotate(180deg); /* Opera */
-}
 
 /* 2.4. Pagebreaks, linebreaks, linenumbers */
 
@@ -1097,72 +1134,6 @@ u{
 	.object .graphic{
 		pointer-events: unset;
 	}
-}
-/* The following used for object image containers, esp. spacing */
-.object .figure{
-	clear: both;
-	line-height: 0;
-	margin-bottom: 2rem;
-	position: relative;
-}
-@media only screen and (min-width: 480px){
-	.object .figure{
-		margin-bottom: 1.5rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	.object .figure{
-		margin-bottom: 2rem;
-	}
-}
-/* .object .figure:last-of-type{
-	margin-bottom: 0;
-} */
-/* The following used for object images */
-@media only screen and (min-width: 480px){
-	.object .figure.vertical a img,
-	.object .figure.vertical a .image-overlay{
-		margin: 0 auto;
-		width: 70%;
-		box-sizing: border-box;
-		display: inline-block;
-	}
-}
-.object .figure.hist-object.gray a img{
-	border: 1px solid #bdc2bd;
-}
-/* The following all used for original image captions */
-.object .TEI .ms-container .body .div p{
-	margin-top: .5rem;
-}
-.object .TEI .ms-container .body .div p:first-of-type{
-	margin-top: 1.5rem;
-}
-.object .TEI .ms-container .body .div p + .pb-title + .figure.hist-object{
-	margin-top: 3rem;
-}
-.object .TEI .ms-container .body .div > p:first-child{
-	margin-top: 0;
-}
-.object .TEI .ms-container .body .div .figure + p{
-	margin-top: -.5rem;
-}
-/* .object .TEI .ms-container .body .div .figure:not(:last-of-type) + p{
-	margin-top: -.5rem;
-} */
-/* .metadata only used on liv_021097_ART.html currently */
-.object .TEI .ms-container .body .div p.metadata{
-	font-size: .9rem;
-	font-style: italic;
-	text-align: right;
-	display: inline-block;
-}
-/* The following two rules created via the example at https://stackoverflow.com/a/8539107 */
-.object .TEI .ms-container .body .div > p.metadata{
-	margin-top: 1rem;
-}
-.object .TEI .ms-container .body .div p.metadata ~ p.metadata{
-	margin-top: 0;
 }
 .journal .image-small.inline-left{
 	float: left;

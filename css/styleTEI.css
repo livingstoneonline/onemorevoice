@@ -38,6 +38,12 @@
 }
 
 /* text-object-details styling */
+.text-object-details{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+}
 @media only screen and (min-width: 768px){
 	.text-object-details{
 		margin-top: 0;
@@ -166,6 +172,9 @@
 		margin-bottom: 2rem;
 	}
 }
+.object .figure:last-of-type{
+	margin-bottom: 0;
+}
 
 /* Object Images */
 .object a img{
@@ -198,7 +207,7 @@
 
 /* Original Image Captions */
 .object .TEI .ms-container .body .div p{
-	margin-top: .5rem;
+	margin-top: 1rem;
 }
 .object .TEI .ms-container .body .div p:first-of-type{
 	margin-top: 1.5rem;

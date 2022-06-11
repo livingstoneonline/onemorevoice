@@ -172,9 +172,9 @@
 		margin-bottom: 2rem;
 	}
 }
-.object .figure:last-of-type{
+/* .object .figure:last-of-type{
 	margin-bottom: 0;
-}
+} */
 
 /* Object Images */
 .object a img{
@@ -187,7 +187,7 @@
 .object .figure a:hover img,
 .object .figure a:focus img{
 	border: none;
-	outline: 4px solid #305056;
+	outline: 3px solid #305056;
 }
 @media only screen and (min-width: 480px){
 	.object .figure.vertical a img,
@@ -949,7 +949,8 @@ u{
 
 /* 2.8. Rend classes (except colors, lines, and up-down placement) */
 
-.caps{
+.transcription .caps,
+.transcription .smallcaps{
 	text-transform: uppercase;
 }
 .manuscript .center{
@@ -982,13 +983,13 @@ u{
 	text-indent: 25px;
 }
 .large{
-	font-size: 1.3em;
+	font-size: 1.2rem;
 }
 .larger{
-	font-size: 1.4em;
+	font-size: 1.3rem;
 }
 .largest{
-	font-size: 1.5em;
+	font-size: 1.4rem;
 }
 .journal .left{
 	float: left;
@@ -1025,13 +1026,13 @@ u{
 	float: right;
 }
 .small{
-	font-size: .85em;
+	font-size: .9rem;
 }
 .smaller{
-	font-size: .75em;
+	font-size: .8rem;
 }
 .smallest{
-	font-size: .65em;
+	font-size: .7rem;
 }
 
 

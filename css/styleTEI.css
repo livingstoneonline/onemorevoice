@@ -1098,6 +1098,7 @@ u{
 		pointer-events: unset;
 	}
 }
+/* The following used for object image containers, esp. spacing */
 .object .figure{
 	clear: both;
 	line-height: 0;
@@ -1114,9 +1115,10 @@ u{
 		margin-bottom: 2rem;
 	}
 }
-.object .figure:last-of-type{
+/* .object .figure:last-of-type{
 	margin-bottom: 0;
-}
+} */
+/* The following used for object images */
 @media only screen and (min-width: 480px){
 	.object .figure.vertical a img,
 	.object .figure.vertical a .image-overlay{
@@ -1126,8 +1128,41 @@ u{
 		display: inline-block;
 	}
 }
+.object .figure.hist-object.gray a img{
+	border: 1px solid #bdc2bd;
+}
+/* The following all used for original image captions */
+.object .TEI .ms-container .body .div p{
+	margin-top: .5rem;
+}
 .object .TEI .ms-container .body .div p:first-of-type{
 	margin-top: 1.5rem;
+}
+.object .TEI .ms-container .body .div p + .pb-title + .figure.hist-object{
+	margin-top: 3rem;
+}
+.object .TEI .ms-container .body .div > p:first-child{
+	margin-top: 0;
+}
+.object .TEI .ms-container .body .div .figure + p{
+	margin-top: -.5rem;
+}
+/* .object .TEI .ms-container .body .div .figure:not(:last-of-type) + p{
+	margin-top: -.5rem;
+} */
+/* .metadata only used on liv_021097_ART.html currently */
+.object .TEI .ms-container .body .div p.metadata{
+	font-size: .9rem;
+	font-style: italic;
+	text-align: right;
+	display: inline-block;
+}
+/* The following two rules created via the example at https://stackoverflow.com/a/8539107 */
+.object .TEI .ms-container .body .div > p.metadata{
+	margin-top: 1rem;
+}
+.object .TEI .ms-container .body .div p.metadata ~ p.metadata{
+	margin-top: 0;
 }
 .journal .image-small.inline-left{
 	float: left;

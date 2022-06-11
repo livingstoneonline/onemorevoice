@@ -1,6 +1,7 @@
 /* Main Transcription Page */
 .transcription main{
 	padding: 1rem 1rem 2rem;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: inherit;
@@ -153,6 +154,7 @@
 
 /* Object Image Containers (especially spacing) */
 .object .TEI .ms-container .body .div{
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 }
@@ -256,14 +258,17 @@ button::-moz-focus-inner{
 		margin: 1.5rem 0 0;
 		padding: 2px 22px;
 		align-self: flex-end;
-		display: none;
-		visibility: hidden;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		/* display: none;
+		visibility: hidden; */
 	}
 	@media only screen and (min-width: 992px){
-		#rotate-button{
+		/* #rotate-button{
 			display: block;
 			visibility: visible;
-		}
+		} */
 	}
 	@media only screen and (min-width: 1200px){
 		#rotate-button{
@@ -285,13 +290,45 @@ button::-moz-focus-inner{
 	color: #212119;
 	background: #E7E9E7;
 }
+#image-to-rotate{
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+}
+#image-to-rotate a{
+	width: 100%;
+}
 .rotate-90{
-	/* margin: 8rem auto 3.25rem !important; */
+	height: calc(100vw - 2rem);
 	transform: rotate(90deg);
 	-ms-transform: rotate(90deg); /* IE 9 */
 	-moz-transform: rotate(90deg); /* Firefox */
 	-webkit-transform: rotate(90deg); /* Safari and Chrome */
 	-o-transform: rotate(90deg); /* Opera */
+}
+.rotate-90 .image-overlay{
+	width: calc(100vw - 2rem);
+	display: flex;
+}
+@media only screen and (min-width: 768px){
+	.rotate-90{
+		height: 664px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.rotate-90{
+		height: calc(55vw - 54px);
+	}
+}
+@media only screen and (min-width: 1200px){
+	.rotate-90{
+		height: calc(11.58vw + 515px);
+	}
+}
+@media only screen and (min-width: 1600px){
+	.rotate-90{
+		height: 698px;	
+	}
 }
 .rotate-180{
 	transform: rotate(180deg);

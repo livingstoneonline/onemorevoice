@@ -360,6 +360,32 @@ button::-moz-focus-inner{
 }
 
 
+/* Recovered Texts: Journal */
+
+.journal{
+	color: #212119;
+	background-color: #ffffff;
+	border: 1px solid #bdc2bd;
+}
+@media only screen and (min-width: 768px){
+	.journal.narrow,
+	.journal .div.narrow{
+		margin: 0 auto;
+		max-width: 525px;
+	}
+}
+.TEI{
+	position: relative;
+}
+.journal .TEI{
+	text-align: justify;
+	color: #212119;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 2rem;
+	display: block;
+}
+
 /* CSS TEI File for One More Voice (https://onemorevoice.org/) */
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2020-21 */
@@ -392,22 +418,6 @@ Table of Contents
 
 /* 2.1. Textual divisions */
 
-
-.journal{
-	color: #212119;
-	background-color: #ffffff;
-	border: 1px solid #bdc2bd;
-}
-@media only screen and (min-width: 768px){
-	.journal.narrow,
-	.journal .div.narrow{
-		margin: 0 auto;
-		max-width: 525px;
-	}
-}
-.TEI{
-	position: relative;
-}
 .manuscript .TEI{
 	padding: 2em 0 3em 0;
 	margin: 0 1em;
@@ -434,14 +444,7 @@ Table of Contents
 .manuscript .TEI.front:not(.none) + .TEI{
 	margin-top: 2em;
 }
-.journal .TEI{
-	text-align: justify;
-	color: #191716;
-	background-color: #fff;
-	margin: 0 auto;
-	padding: 2rem;
-	display: block;
-}
+
 .warning{
 	border: 1px solid #902D27;
 	background: #e3e3e3;
@@ -460,14 +463,13 @@ Table of Contents
 	font-size: .9rem;
 	line-height: 0;
 	text-align: center;
-	margin: 0 auto;
+	margin: -.5rem auto 0;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 320px){
 	.manuscript-switches,
 	.journal-switches{
-		padding: .5rem 0 1rem;
 		display: block;
 		visibility: visible;
 	}
@@ -475,7 +477,7 @@ Table of Contents
 @media only screen and (min-width: 768px){
 	.manuscript-switches,
 	.journal-switches{
-		font-size: 1em;
+		font-size: 1rem;
 	}
 }
 /* This item turns off wide manuscript items and switches on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
@@ -501,34 +503,28 @@ label.md_switch::after{
 
 /* container specs */
 .md_switch{
-	margin: .5em;
-	padding: .5em;
-	height: 1.6em;
-	/* width: 12.8em; */
-	border: 1px #525252 solid;
+	background: #fff;
+	border: 1px solid #bdc2bd;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
+	margin: .5rem;
+	padding: 1rem;
+	height: 1.6rem;
 	align-items: center;
 	display: inline-flex;
 }
-
 /* label */
 label.md_switch{
-	font-size: .95em;
 	font-weight: 600;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	/* color: #525252; */
 	padding-left: 12px;
 }
-
 /* full toggle position/qualities */
 .md_switch .md_switch__toggle{
 	right: -6px;
 	cursor: pointer;
 	position: relative;
 }
-
 /* common: slider (before) & switch (after) */
 .md_switch .md_switch__toggle::before,
 .md_switch .md_switch__toggle::after{
@@ -542,8 +538,8 @@ label.md_switch{
 /* slider only */
 .md_switch .md_switch__toggle::before{
 	background-color: #525252;
-	height: 1.7em;
-	width: 3.5em;
+	height: 1.7rem;
+	width: 3.5rem;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -558,9 +554,9 @@ label.md_switch{
 .md_switch .md_switch__toggle::after{
 	background-color: white;
 	top: 50%;
-	left: 3px;
-	height: 1.45em;
-	width: 1.45em;
+	left: 5px;
+	height: 1.45rem;
+	width: 1.45rem;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -570,8 +566,8 @@ label.md_switch{
 .md_switch [type=checkbox]:checked + .md_switch__toggle::after{
 	content: "";
 	top: 50%;
-	height: 1.45em;
-	width: 1.45em;
+	height: 1.45rem;
+	width: 1.45rem;
 	transform: translate(calc(3.3em - 100%), -50%);
 }
 

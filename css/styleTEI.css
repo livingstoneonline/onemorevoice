@@ -261,14 +261,6 @@ button::-moz-focus-inner{
 		display: -webkit-flex;
 		display: flex;
 		align-items: center;
-		/* display: none;
-		visibility: hidden; */
-	}
-	@media only screen and (min-width: 992px){
-		/* #rotate-button{
-			display: block;
-			visibility: visible;
-		} */
 	}
 	@media only screen and (min-width: 1200px){
 		#rotate-button{
@@ -306,9 +298,6 @@ button::-moz-focus-inner{
 	-webkit-transform: rotate(90deg); /* Safari and Chrome */
 	-o-transform: rotate(90deg); /* Opera */
 }
-.rotate-90 .image-overlay{
-	display: flex;
-}
 @media only screen and (min-width: 768px){
 	.rotate-90{
 		height: 664px;
@@ -335,6 +324,14 @@ button::-moz-focus-inner{
 	-moz-transform: rotate(180deg); /* Firefox */
 	-webkit-transform: rotate(180deg); /* Safari and Chrome */
 	-o-transform: rotate(180deg); /* Opera */
+}
+.rotate-90 a:hover,
+.rotate-90 a:focus{
+	opacity: .7;
+}
+.rotate-90 .image-overlay{
+	display: none;
+	visibility: hidden;
 }
 
 

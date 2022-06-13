@@ -72,7 +72,7 @@
 .object{
 	text-align: center;
 	line-height: 1.875em;
-	margin: 1.5rem 0;
+	margin: 1.5rem auto;
 	width: 100%;
 	max-width: 700px;
 	display: block;
@@ -81,29 +81,35 @@
 }
 @media only screen and (min-width: 480px){
 	.object{
-		margin: 2rem 0 1rem;
+		margin: 2rem auto 1rem;
 	}
 	.manuscript,
 	.journal{
-		margin: 1rem 0;
+		margin: 1rem auto;
 	}
 }
 @media only screen and (min-width: 768px){
 	.object{
-		margin: 3rem 0 2rem;
+		margin: 3rem auto 2rem;
 	}
 	.manuscript,
 	.journal{
-		margin: 1.5rem 0 2rem;
+		margin: 1.5rem auto 2rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
 	.journal,
 	.object{
-		margin: 2.5rem 0 1rem;
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
+	}
+	.object{
+		margin: 2.5rem auto 1rem;
+	}
+	.manuscript,
+	.journal{
+		margin: 1.5rem auto 1rem;
 	}
 }
 /* This item turns off wide manuscript items on mobile. Also see corresponding narrow-mobile and switches coding plus XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
@@ -145,7 +151,17 @@
 		padding: 1.5rem;
 	}
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 768px){
+	.journal .TEI{
+		padding: 2.5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.journal .TEI{
+		padding: 1.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
 	.journal .TEI{
 		padding: 2.5rem;
 	}

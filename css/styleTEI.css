@@ -80,17 +80,21 @@
 	/* overflow: hidden; */
 }
 @media only screen and (min-width: 480px){
-	.manuscript,
-	.journal,
 	.object{
 		margin: 2rem 0 1rem;
 	}
+	.manuscript,
+	.journal{
+		margin: 1rem 0;
+	}
 }
 @media only screen and (min-width: 768px){
-	.manuscript,
-	.journal,
 	.object{
 		margin: 3rem 0 2rem;
+	}
+	.manuscript,
+	.journal{
+		margin: 1.5rem 0 2rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -110,6 +114,43 @@
 		visibility: hidden;
 	}
 }
+
+/* Recovered Texts: Journal */
+
+.journal{
+	color: #212119;
+	background-color: #ffffff;
+	border: 1px solid #bdc2bd;
+}
+@media only screen and (min-width: 768px){
+	.journal.narrow,
+	.journal .div.narrow{
+		margin: 0 auto;
+		max-width: 525px;
+	}
+}
+.TEI{
+	position: relative;
+}
+.journal .TEI{
+	text-align: justify;
+	color: #212119;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 1rem;
+	display: block;
+}
+@media only screen and (min-width: 480px){
+	.journal .TEI{
+		padding: 1.5rem;
+	}
+}
+@media only screen and (min-width: 480px){
+	.journal .TEI{
+		padding: 2.5rem;
+	}
+}
+
 
 /* Transcription Headings */
 .transcription h2{
@@ -360,31 +401,6 @@ button::-moz-focus-inner{
 }
 
 
-/* Recovered Texts: Journal */
-
-.journal{
-	color: #212119;
-	background-color: #ffffff;
-	border: 1px solid #bdc2bd;
-}
-@media only screen and (min-width: 768px){
-	.journal.narrow,
-	.journal .div.narrow{
-		margin: 0 auto;
-		max-width: 525px;
-	}
-}
-.TEI{
-	position: relative;
-}
-.journal .TEI{
-	text-align: justify;
-	color: #212119;
-	background-color: #fff;
-	margin: 0 auto;
-	padding: 2rem;
-	display: block;
-}
 
 /* CSS TEI File for One More Voice (https://onemorevoice.org/) */
 
@@ -414,6 +430,13 @@ Table of Contents
 
 /*--------------------------------------*/
 
+.warning{
+	border: 1px solid #902D27;
+	background: #e3e3e3;
+	padding: 5px 7px;
+	margin: 0
+}
+
 /** 2.0 Transcription CSS **/
 
 /* 2.1. Textual divisions */
@@ -421,7 +444,7 @@ Table of Contents
 .manuscript .TEI{
 	padding: 2em 0 3em 0;
 	margin: 0 1em;
-	border: 2px solid gainsboro;
+	border: 1px solid #bdc2bd;
 }
 @media only screen and (min-width: 768px){
 	.manuscript .TEI{
@@ -444,14 +467,6 @@ Table of Contents
 .manuscript .TEI.front:not(.none) + .TEI{
 	margin-top: 2em;
 }
-
-.warning{
-	border: 1px solid #902D27;
-	background: #e3e3e3;
-	padding: 5px 7px;
-	margin: 0
-}
-
 
 
 /* 2.2.1. Switches */
@@ -509,7 +524,7 @@ label.md_switch::after{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	margin: .5rem;
-	padding: 1rem;
+	padding: 1.3rem 1rem;
 	height: 1.6rem;
 	align-items: center;
 	display: inline-flex;
@@ -530,14 +545,14 @@ label.md_switch{
 .md_switch .md_switch__toggle::after{
 	content: '';
 	margin: 0 3px;
-	border: 1px solid #858585;
+	border: 1px solid #737d73;
 	transition: all 100ms;
 	display: block;
 }
 
 /* slider only */
 .md_switch .md_switch__toggle::before{
-	background-color: #525252;
+	background-color: #575757;
 	height: 1.7rem;
 	width: 3.5rem;
 	border-radius: 30px;
@@ -546,13 +561,18 @@ label.md_switch{
 	align-items: center;
 	display: inline-flex;
 }
+@media only screen and (min-width: 768px){
+	.md_switch .md_switch__toggle::before{
+		width: 3.9rem;
+	}
+}
 .md_switch [type=checkbox]:checked + .md_switch__toggle::before{
-	background-color: #E3E3E3;
+	background-color: #E7E9E7;
 }
 
 /* switch only */
 .md_switch .md_switch__toggle::after{
-	background-color: white;
+	background-color: #fff;
 	top: 50%;
 	left: 5px;
 	height: 1.45rem;
@@ -573,26 +593,26 @@ label.md_switch{
 
 /* focus */
 .md_switch [type=checkbox]:focus + .md_switch__toggle{
-	background: #4982c4;
-	padding: 3px 1px;
+	background: #e3b382;
+	padding: 3px 0;  
 }
 
 /* slider & hover */
 .md_switch .md_switch__toggle:hover::before{
-	background-color: #E3E3E3;
+	background-color: #E7E9E7;
 }
 /* switch & hover */
 .md_switch .md_switch__toggle:hover::after{
-	background-color: #858585;
+	background-color: #737d73;
 }
 
 /* slider:checked & hover */
 .md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
-	background-color: #858585;
+	background-color: #737d73;
 }
 /* switch:checked & hover */
 .md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
-	background-color: #E3E3E3;
+	background-color: #E7E9E7;
 	;
 }
 

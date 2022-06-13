@@ -623,7 +623,7 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-object-details">
-			<h3>Item Details</h3>
+			<h3 id="item-details">Item Details</h3>
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>

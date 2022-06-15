@@ -19,7 +19,7 @@
 	}
 }
 
-/* Distribution of Object Sections (text-object & text-object-details) */
+/* Distribution of Text-Object Sections (text-object & text-object-details) */
 @media only screen and (min-width: 992px){
 	.text-object{
 		width: calc(55% - 1rem); 
@@ -128,7 +128,6 @@
 }
 
 /* Recovered Texts: Journal */
-
 .journal{
 	color: #212119;
 	background-color: #ffffff;
@@ -174,7 +173,6 @@
 	}
 }
 
-
 /* Transcription Headings */
 .transcription h2{
 	font-size: 1.5rem;
@@ -216,6 +214,22 @@
 .transcription h3.subtitle.visual-material::before{
 	content: "\f06e";
 }
+.TEI .text .body .div h3,
+.TEI .text .body .div h4{
+		font-weight: normal;
+		font-variant: normal;
+		font-style: normal;
+		color: #212119;
+		border-bottom: none;
+		margin: 0;
+		padding: 0;
+}
+.TEI h3{
+	font-size: 1.1rem;
+}
+.TEI h4{
+	font-size: 1rem;
+}
 
 /* Narrow Mobile and Warning Box */
 @media only screen and (min-width: 992px){
@@ -239,6 +253,143 @@
 		display: block;
 		visibility: visible;
 	}
+}
+
+/* Switches */
+/* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
+.manuscript-switches,
+.journal-switches{
+	font-size: .9rem;
+	line-height: 0;
+	text-align: center;
+	margin: -.5rem auto 0;
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 320px){
+	.manuscript-switches,
+	.journal-switches{
+		display: block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 768px){
+	.manuscript-switches,
+	.journal-switches{
+		font-size: 1rem;
+	}
+}
+/* This item turns off wide manuscript items and switches on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+	.manuscript-switches,
+	.journal-switches{
+		display: none;
+		visibility: hidden;
+	}
+}
+/* hide regular checkbox */
+.md_switch [type=checkbox]{
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+}
+/* remove dropdown arrow */
+label.md_switch::after{
+	display: none;
+}
+/* container specs */
+.md_switch{
+	background: #fff;
+	border: 1px solid #bdc2bd;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: .5rem;
+	padding: 1.3rem 1rem;
+	height: 1.6rem;
+	align-items: center;
+	display: inline-flex;
+}
+/* label */
+label.md_switch{
+	font-weight: 600;
+	padding-left: 12px;
+}
+/* full toggle position/qualities */
+.md_switch .md_switch__toggle{
+	right: -6px;
+	cursor: pointer;
+	position: relative;
+}
+/* common: slider (before) & switch (after) */
+.md_switch .md_switch__toggle::before,
+.md_switch .md_switch__toggle::after{
+	content: '';
+	margin: 0 3px;
+	border: 1px solid #737d73;
+	transition: all 100ms;
+	display: block;
+}
+/* slider only */
+.md_switch .md_switch__toggle::before{
+	background-color: #575757;
+	height: 1.7rem;
+	width: 3.5rem;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	align-items: center;
+	display: inline-flex;
+}
+@media only screen and (min-width: 768px){
+	.md_switch .md_switch__toggle::before{
+		width: 3.9rem;
+	}
+}
+.md_switch [type=checkbox]:checked + .md_switch__toggle::before{
+	background-color: #E7E9E7;
+}
+/* switch only */
+.md_switch .md_switch__toggle::after{
+	background-color: #fff;
+	top: 50%;
+	left: 5px;
+	height: 1.45rem;
+	width: 1.45rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	transform: translate(0, -50%);
+	position: absolute;
+}
+.md_switch [type=checkbox]:checked + .md_switch__toggle::after{
+	content: "";
+	top: 50%;
+	height: 1.45rem;
+	width: 1.45rem;
+	transform: translate(calc(3.3em - 100%), -50%);
+}
+/* focus */
+.md_switch [type=checkbox]:focus + .md_switch__toggle{
+	background: #e3b382;
+	padding: 3px 0;  
+}
+/* slider & hover */
+.md_switch .md_switch__toggle:hover::before{
+	background-color: #E7E9E7;
+}
+/* switch & hover */
+.md_switch .md_switch__toggle:hover::after{
+	background-color: #737d73;
+}
+/* slider:checked & hover */
+.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
+	background-color: #737d73;
+}
+/* switch:checked & hover */
+.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
+	background-color: #E7E9E7;
+	;
 }
 
 /* Object Image Containers (especially spacing) */
@@ -285,7 +436,6 @@
 	.object .figure.vertical a .image-overlay{
 		margin: 0 auto;
 		width: 70%;
-		box-sizing: border-box;
 		display: inline-block;
 	}
 }
@@ -327,9 +477,7 @@
 	margin-top: 0;
 }
 
-
 /* Rotate Button */
-
 /* #rotate button and .rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
@@ -456,7 +604,6 @@ Table of Contents
 /** 2.0 Transcription CSS **/
 
 /* 2.1. Textual divisions */
-
 .manuscript .TEI{
 	padding: 2em 0 3em 0;
 	margin: 0 1em;
@@ -482,154 +629,6 @@ Table of Contents
 }
 .manuscript .TEI.front:not(.none) + .TEI{
 	margin-top: 2em;
-}
-
-
-/* 2.2.1. Switches */
-
-/* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
-
-.manuscript-switches,
-.journal-switches{
-	font-size: .9rem;
-	line-height: 0;
-	text-align: center;
-	margin: -.5rem auto 0;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 320px){
-	.manuscript-switches,
-	.journal-switches{
-		display: block;
-		visibility: visible;
-	}
-}
-@media only screen and (min-width: 768px){
-	.manuscript-switches,
-	.journal-switches{
-		font-size: 1rem;
-	}
-}
-/* This item turns off wide manuscript items and switches on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
-	.manuscript-switches,
-	.journal-switches{
-		display: none;
-		visibility: hidden;
-	}
-}
-
-/* hide regular checkbox */
-.md_switch [type=checkbox]{
-	pointer-events: none;
-	opacity: 0;
-	position: absolute;
-}
-
-/* remove dropdown arrow */
-label.md_switch::after{
-	display: none;
-}
-
-/* container specs */
-.md_switch{
-	background: #fff;
-	border: 1px solid #bdc2bd;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	margin: .5rem;
-	padding: 1.3rem 1rem;
-	height: 1.6rem;
-	align-items: center;
-	display: inline-flex;
-}
-/* label */
-label.md_switch{
-	font-weight: 600;
-	padding-left: 12px;
-}
-/* full toggle position/qualities */
-.md_switch .md_switch__toggle{
-	right: -6px;
-	cursor: pointer;
-	position: relative;
-}
-/* common: slider (before) & switch (after) */
-.md_switch .md_switch__toggle::before,
-.md_switch .md_switch__toggle::after{
-	content: '';
-	margin: 0 3px;
-	border: 1px solid #737d73;
-	transition: all 100ms;
-	display: block;
-}
-
-/* slider only */
-.md_switch .md_switch__toggle::before{
-	background-color: #575757;
-	height: 1.7rem;
-	width: 3.5rem;
-	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	align-items: center;
-	display: inline-flex;
-}
-@media only screen and (min-width: 768px){
-	.md_switch .md_switch__toggle::before{
-		width: 3.9rem;
-	}
-}
-.md_switch [type=checkbox]:checked + .md_switch__toggle::before{
-	background-color: #E7E9E7;
-}
-
-/* switch only */
-.md_switch .md_switch__toggle::after{
-	background-color: #fff;
-	top: 50%;
-	left: 5px;
-	height: 1.45rem;
-	width: 1.45rem;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	transform: translate(0, -50%);
-	position: absolute;
-}
-.md_switch [type=checkbox]:checked + .md_switch__toggle::after{
-	content: "";
-	top: 50%;
-	height: 1.45rem;
-	width: 1.45rem;
-	transform: translate(calc(3.3em - 100%), -50%);
-}
-
-/* focus */
-.md_switch [type=checkbox]:focus + .md_switch__toggle{
-	background: #e3b382;
-	padding: 3px 0;  
-}
-
-/* slider & hover */
-.md_switch .md_switch__toggle:hover::before{
-	background-color: #E7E9E7;
-}
-/* switch & hover */
-.md_switch .md_switch__toggle:hover::after{
-	background-color: #737d73;
-}
-
-/* slider:checked & hover */
-.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
-	background-color: #737d73;
-}
-/* switch:checked & hover */
-.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
-	background-color: #E7E9E7;
-	;
 }
 
 
@@ -768,22 +767,6 @@ label.md_switch{
 
 /* 2.5. Parts of the page */
 
-.TEI .text .body .div h3,
-.TEI .text .body .div h4{
-		font-weight: normal;
-		font-variant: normal;
-		font-style: normal;
-		color: #212119;
-		border-bottom: none;
-		margin: 0;
-		padding: 0;
-}
-.TEI h3{
-	font-size: 1.1rem;
-}
-.TEI h4{
-	font-size: 1rem;
-}
 .p,
 .ab{
 	text-indent: 25px;
@@ -830,6 +813,9 @@ label.md_switch{
 }
 .note{
 	text-align: left;
+}
+.footnote{
+	font-size: .9em;
 }
 .fw{
 	text-indent: 0;
@@ -1175,9 +1161,6 @@ u{
 }
 .manuscript .figure{
 	border-bottom: 1px #858585 dotted;
-}
-.object .figure a img{
-	box-sizing: border-box;
 }
 .object .graphic{
 	pointer-events: none;

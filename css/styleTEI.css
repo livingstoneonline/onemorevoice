@@ -137,6 +137,8 @@
 @media only screen and (min-width: 768px){
 	.journal.narrow,
 	.journal .div.narrow{
+		margin-right: auto;
+		margin-left: auto;
 		max-width: 525px;
 	}
 }
@@ -450,13 +452,6 @@ Table of Contents
 */
 
 /*--------------------------------------*/
-
-.warning{
-	border: 1px solid #902D27;
-	background: #e3e3e3;
-	padding: 5px 7px;
-	margin: 0
-}
 
 /** 2.0 Transcription CSS **/
 

@@ -469,7 +469,7 @@
 		<xsl:variable name="warning">
 			<xsl:choose>
 				<xsl:when test="/TEI/text[contains(@n,'warning-violence')]"><aside class="warning-box violence"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</aside></xsl:when>
-				<xsl:when test="/TEI/text[contains(@n,'warning-language')]"><aside class="warning-box language"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive language.</aside></xsl:when>
+				<xsl:when test="/TEI/text[contains(@n,'warning-language')]"><aside class="warning-box language"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racially-charged language.</aside></xsl:when>
 				<xsl:otherwise><aside class="warning-box">This historical item reflects the cultural beliefs and prejudices of its time and may contain material that will upset or distress some readers.</aside></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>

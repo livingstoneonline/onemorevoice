@@ -81,7 +81,7 @@ Site Sections
 (yellow) #dcd3a6;
 (lighter orange) #EECFA7; (contrast checked)
 (orange) #e3b382;
-(red) #85454B;
+(red) #743B41; (contrast checked)
 (dark brown) #7d4d1c; (contrast checked)
 (dark brown, for a links) #694017 (contrast checked)
 (super light gray) #ededed;
@@ -366,7 +366,7 @@ h3.subtitle:before{
 }
 @media only screen and (min-width: 768px){
 	h3.subtitle{
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 }
 .credits h3{
@@ -2614,7 +2614,7 @@ aside.warning-box.language{
   display: none;
 }
 .highlight{
-	color: #7d4d1c;
+	color: #743B41;
 }
 .italic{
 	font-style: italic;
@@ -2626,7 +2626,7 @@ aside.warning-box.language{
   text-align: right;
 }
 .site-red{
-	color: #7d4d1c;
+	color: #743B41;
 }
 .small{
 	font-size: .9em;
@@ -3251,7 +3251,7 @@ details:focus-within ::marker{
 .essay.error404 .horizontal a.action-button,
 .essay.error404 .horizontal a.action-button:visited{
 	color: #fff;
-	background: #85454B;
+	background: #743B41;
 	margin-bottom: 2rem;
 	display: inline-block;
 	visibility: visible;

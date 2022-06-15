@@ -127,52 +127,6 @@
 	}
 }
 
-/* Recovered Texts: Journal */
-.journal{
-	color: #212119;
-	background-color: #ffffff;
-	border: 1px solid #bdc2bd;
-}
-@media only screen and (min-width: 768px){
-	.journal.narrow,
-	.journal .div.narrow{
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 525px;
-	}
-}
-.TEI{
-	position: relative;
-}
-.journal .TEI{
-	text-align: justify;
-	color: #212119;
-	background-color: #fff;
-	margin: 0 auto;
-	padding: 1rem;
-	display: block;
-}
-@media only screen and (min-width: 480px){
-	.journal .TEI{
-		padding: 1.5rem;
-	}
-}
-@media only screen and (min-width: 768px){
-	.journal .TEI{
-		padding: 2.5rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	.journal .TEI{
-		padding: 1.5rem;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.journal .TEI{
-		padding: 2rem 2.5rem;
-	}
-}
-
 /* Transcription Headings */
 .transcription h2{
 	font-size: 1.5rem;
@@ -571,6 +525,127 @@ button::-moz-focus-inner{
 	visibility: hidden;
 }
 
+/* Recovered Texts: Journal */
+.journal{
+	color: #212119;
+	background-color: #ffffff;
+	border: 1px solid #bdc2bd;
+}
+@media only screen and (min-width: 768px){
+	.journal.narrow,
+	.journal .div.narrow{
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 525px;
+	}
+}
+.TEI{
+	position: relative;
+}
+.journal .TEI{
+	text-align: justify;
+	color: #212119;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 1rem;
+	display: block;
+}
+@media only screen and (min-width: 480px){
+	.journal .TEI{
+		padding: 1.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.journal .TEI{
+		padding: 2.5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.journal .TEI{
+		padding: 1.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.journal .TEI{
+		padding: 2rem 2.5rem;
+	}
+}
+.journal .image-small.inline-left{
+	float: left;
+	width: 4.5em;
+}
+.image-small{
+	width: 40%;
+	display: inline-block;
+}
+.image-medium{
+	width: 60%;
+	display: inline-block;
+}
+
+/* Misc */
+.none{
+	display: none;
+	visibility: hidden;
+}
+.figure{
+	font-size: .8em;
+	color: #666666;
+}
+.manuscript .figure{
+	border-bottom: 1px #858585 dotted;
+}
+
+/* Underline for Tagged Items - Not Used  */
+/* .metamark{
+	color:#666666;
+	border-bottom:1px #666666 dotted;
+} */
+/* .collective,
+.orgName,
+.placeName,
+.geogName,
+.bloc,
+.country,
+.region,
+.settlement{
+	border-bottom: 1px #204A79 dotted;
+} */
+
+/* Coding Review */
+/* .persName{
+	background-color: yellow;
+}
+.orgName{
+	background-color: orange;
+}
+.collective{
+	background-color: red;
+} */
+/* .geogName{
+	background-color: greenyellow;
+}
+.placeName{
+	background-color: blue;
+}
+.settlement{
+	background-color: purple;
+} */
+/* .region{
+	background-color: gray;
+}
+.country{
+	background-color: burlywood;
+}
+.bloc{
+	background-color: brown;
+} */
+
+ /* 
+ ***************
+ Vetted to here 
+ ***************
+ */
 
 
 /* CSS TEI File for One More Voice (https://onemorevoice.org/) */
@@ -680,8 +755,7 @@ Table of Contents
 }
 
 
-/* 2.4. Pagebreaks, linebreaks, linenumbers */
-
+/* page breaks and blank pages */
 .pb-title{
 	color: #204A79;
 	font-size: .9em;
@@ -722,20 +796,9 @@ Table of Contents
 	font-size: .9em;
 	font-style: italic;
 }
-.image-enlarge{
-	color: #65615b;
-	font-size: .85em;
-	font-style: italic;
-	margin: 0 auto;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 768px){
-	.image-enlarge{
-		display: block;
-		visibility: visible;
-	}
-}
+
+
+/* line numbers */
 .linenumber{
 	font-size: .8em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
@@ -765,8 +828,7 @@ Table of Contents
 }
 
 
-/* 2.5. Parts of the page */
-
+/* p and ab */
 .p,
 .ab{
 	text-indent: 25px;
@@ -804,6 +866,8 @@ Table of Contents
 	float: right;
 	position: unset;
 }
+
+/* head */
 .manuscript .head.center,
 .journal .head.center{
 	text-indent: 0;
@@ -811,12 +875,16 @@ Table of Contents
 	margin: 0;
 	display: block;
 }
+
+/* note and footnote */
 .note{
 	text-align: left;
 }
 .footnote{
 	font-size: .9em;
 }
+
+/* running headers */
 .fw{
 	text-indent: 0;
 	text-align: center;
@@ -834,6 +902,8 @@ Table of Contents
 .fw.pageno{
 	text-indent: 0;
 }
+
+/* Tables */
 table{
 	font-size: .9em;
 	border-style: none;
@@ -855,6 +925,8 @@ table .linenumber{
 	display: none;
 	visibility: hidden;
 }
+
+/* Lists */
 .TEI ul{
 	list-style: none;
 	padding: 0;
@@ -863,7 +935,6 @@ table .linenumber{
 .TEI ol{
 	padding: 0;
 }
-
 
 
 /* 2.6. Milestone and lines */
@@ -1147,82 +1218,3 @@ u{
 .yellow{
 	color: yellow;
 }
-
-
-/* 2.11. Misc */
-
-.none{
-	display: none;
-	visibility: hidden;
-}
-.figure{
-	font-size: .8em;
-	color: #666666;
-}
-.manuscript .figure{
-	border-bottom: 1px #858585 dotted;
-}
-.object .graphic{
-	pointer-events: none;
-	/* cursor: default; */
-}
-@media only screen and (min-width: 768px){
-	.object .graphic{
-		pointer-events: unset;
-	}
-}
-.journal .image-small.inline-left{
-	float: left;
-	width: 4.5em;
-}
-.image-small{
-	width: 40%;
-	display: inline-block;
-}
-.image-medium{
-	width: 60%;
-	display: inline-block;
-}
-/* .metamark{
-	color:#666666;
-	border-bottom:1px #666666 dotted;
-} */
-/* .collective,
-.orgName,
-.placeName,
-.geogName,
-.bloc,
-.country,
-.region,
-.settlement{
-	border-bottom: 1px #204A79 dotted;
-} */
-
-/* The following is useful for coding review */
-/* .persName{
-	background-color: yellow;
-}
-.orgName{
-	background-color: orange;
-}
-.collective{
-	background-color: red;
-} */
-/* .geogName{
-	background-color: greenyellow;
-}
-.placeName{
-	background-color: blue;
-}
-.settlement{
-	background-color: purple;
-} */
-/* .region{
-	background-color: gray;
-}
-.country{
-	background-color: burlywood;
-}
-.bloc{
-	background-color: brown;
-} */

@@ -381,7 +381,7 @@ h4{
 }
 section p + h4,
 section h4:not(:first-of-type){
-	margin-top: 3.5rem;
+	margin-top: 3rem;
 }
 
 
@@ -499,7 +499,7 @@ main{
 /* section.content:nth-child(3) > section:not(:first-child) 
 is for spacing gallery sections in middle of page;
 section.content article section section:not(:first-of-type)
-used especially on bibliography.html */x
+used especially on bibliography.html */
 article > section:not(:first-child),
 section.content:nth-child(3) > section:not(:first-child),
 section.content:not(.recovered) article section section:not(:first-of-type),

@@ -95,7 +95,7 @@
                 <language ident="en">English</language>
             </langUsage>
         </profileDesc>
-		<xenoData type="css">.clear.liv_020015_0002{clear:both}</xenoData>
+		<xenoData type="css">.headertitle.liv_020015_0001{font-size:1.9em;font-family:'UnifrakturMaguntia', cursive;}.headertitle.liv_020015_0002{font-size:1.1em;}.clear.liv_020015_0002{clear:both}</xenoData>
         <revisionDesc>
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
@@ -108,7 +108,7 @@
         </revisionDesc>
     </teiHeader>
 
-    <text>
+    <text n="unifrakturM">
 		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
 			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
 
@@ -127,7 +127,7 @@
 	</div>
 
 	<div>
-<p rend="center largest bold">Gleanings and Glances.</p>
+<p rend="center bold" n="header-title liv_020015_0001">Gleanings and Glances.</p>
 <milestone unit="section" rend="center quarter-line"/>
 <p rend="no-indent"><hi rend="caps"><hi rend="large">I</hi>n</hi> another part of our paper will be found a letter from a <term type="collective">Zulu</term> chieftain, <persName>Ncwadi Nkosi</persName>, paramount chief of the <term type="collective">Amangawani tribe</term>. This letter, charming in its originality and the spirit of gratitude and goodwill that it breathes, was sent to <persName>Mrs. Field</persName>, of <placeName><placeName>I, Cromwell Street</placeName>, <settlement>Ipswich</settlement></placeName>, who showed great kindness to the <orgName><term type="collective">Zulu</term> <term type="collective">Christian</term> Choir</orgName> when they were in <country>England</country> last year, took them to some of the religious societies and sent back 200 penny toys for the school-children of the chief. <persName>Mr. Gumede</persName> was first cousin to <persName>chief Ncwadi</persName>, and the latter was very unwilling to allow him to come to <country>England</country>; but when <persName>Mr. Gumede</persName> returned he was so pleased with the treatment his cousin had received and the little gift of the toys, that he is now quite anxious to visit the country himself and to send his sons to complete their education.</p>
 <milestone unit="section" rend="center quarter-line"/>
@@ -157,7 +157,7 @@
 
 	<div>
 <!-- from page 93 -->
-<p rend="caps center bold">Letter from an <term type="collective">African</term> Chief</p>
+<p rend="caps center bold" n="header-title liv_020015_0002">Letter from an <term type="collective">African</term> Chief</p>
 <p rend="center smallcaps"><settlement>Emangwaneni</settlement>, <settlement>Bethany</settlement>, 
 <lb/><seg rend="right"><placeName>Acton Homes</placeName>, near <settlement>Ladismith</settlement>, <space extent="1" unit="words"/></seg><!-- Adrian, not sure how to format this bit here? HB --><!-- Done. AW -->
 <lb/><seg rend="right"><date when="1893-06-12"><hi rend="italic">June</hi> 12<hi rend="italic">th</hi>, 1893</date>.<space extent="2" unit="chars"/></seg></p>

@@ -544,6 +544,9 @@ button::-moz-focus-inner{
 	padding: 1rem;
 	position: relative;
 }
+.manuscript .TEI{
+	padding-bottom: 2rem;
+}
 .journal .TEI{
 	text-align: justify;
 	color: #212119;
@@ -554,20 +557,32 @@ button::-moz-focus-inner{
 	.TEI{
 		padding: 1.5rem;
 	}
+	.manuscript .TEI{
+		padding-bottom: 2.5rem;
+	}
 }
 @media only screen and (min-width: 768px){
 	.TEI{
 		padding: 2.5rem;
+	}
+	.manuscript .TEI{
+		padding-bottom: 3.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
 	.TEI{
 		padding: 1.5rem;
 	}
+	.manuscript .TEI{
+		padding-bottom: 2.5rem;
+	}
 }
 @media only screen and (min-width: 1200px){
 	.TEI{
 		padding: 2rem 2.5rem;
+	}
+	.manuscript .TEI{
+		padding-bottom: 3rem;
 	}
 }
 .journal .image-small.inline-left{

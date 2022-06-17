@@ -540,33 +540,33 @@ button::-moz-focus-inner{
 	}
 }
 .TEI{
+	margin: 0 auto;
+	padding: 1rem;
 	position: relative;
 }
 .journal .TEI{
 	text-align: justify;
 	color: #212119;
 	background-color: #fff;
-	margin: 0 auto;
-	padding: 1rem;
 	display: block;
 }
 @media only screen and (min-width: 480px){
-	.journal .TEI{
+	.TEI{
 		padding: 1.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.journal .TEI{
+	.TEI{
 		padding: 2.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	.journal .TEI{
+	.TEI{
 		padding: 1.5rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.journal .TEI{
+	.TEI{
 		padding: 2rem 2.5rem;
 	}
 }
@@ -679,22 +679,24 @@ Table of Contents
 /** 2.0 Transcription CSS **/
 
 /* 2.1. Textual divisions */
-.manuscript .TEI{
+/* .manuscript .TEI{
 	padding: 2em 0 3em 0;
 	margin: 0 1em;
-	border: 1px solid #bdc2bd;
 }
 @media only screen and (min-width: 768px){
 	.manuscript .TEI{
 		margin: 0 auto;
 	}
+} */
+.manuscript .TEI{
+	border: 1px solid #bdc2bd;
 }
 .manuscript .ms-container{
 	display: inline-block;
-	/*white-space:nowrap;*/
 	text-align: left;
-	margin-left: .5em;
-	margin-right: .5em;
+	/*white-space:nowrap;*/
+	/* margin-left: .5em;
+	margin-right: .5em; */
 }
 .manuscript .front{
 	margin-bottom: -1em;
@@ -769,7 +771,7 @@ Table of Contents
 .journal .pb-title,
 .journal .TEI .text .body .div p + .pb-title:first-of-type{
 	padding-top: 1.5em;
-	margin: 1.5em 0 .5em 0;
+	margin: 1.5em 0 0 0;
 	border-top: 1px dotted #858585;
 	width: 100%;
 	display: inline-block;

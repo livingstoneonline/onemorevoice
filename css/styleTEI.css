@@ -81,27 +81,16 @@
 	visibility: visible;
 	/* overflow: hidden; */
 }
+@media only screen and (min-width: 992px){
+	.manuscript,
+	.journal,
+	.object{
+		margin: 1.5rem auto 0;
+	}
+}
 .manuscript,
 .journal{
 	font-family: Georgia, times new roman, Times, serif;
-}
-@media only screen and (min-width: 480px){
-	.object{
-		margin: 2rem auto 1rem;
-	}
-	.manuscript,
-	.journal{
-		margin: 1rem auto;
-	}
-}
-@media only screen and (min-width: 768px){
-	.object{
-		margin: 3rem auto 2rem;
-	}
-	.manuscript,
-	.journal{
-		margin: 1.5rem auto 2rem;
-	}
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
@@ -109,13 +98,6 @@
 	.object{
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
-	}
-	.object{
-		margin: 2.5rem auto 1rem;
-	}
-	.manuscript,
-	.journal{
-		margin: 1.5rem auto 0;
 	}
 }
 /* This item turns off wide manuscript items on mobile. Also see corresponding narrow-mobile and switches coding plus XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
@@ -232,14 +214,20 @@
 	font-size: .9rem;
 	line-height: 0;
 	text-align: center;
-	margin: -.5rem auto 0;
+	margin: 0 auto;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 320px){
 	.manuscript-switches,
 	.journal-switches{
-		display: block;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: .75rem;
 		visibility: visible;
 	}
 }
@@ -274,7 +262,6 @@ label.md_switch::after{
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	margin: .5rem;
 	padding: 1.3rem 1rem;
 	height: 1.6rem;
 	align-items: center;
@@ -491,6 +478,7 @@ button::-moz-focus-inner{
 }
 #image-to-rotate{
 	margin-bottom: 0;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 }
@@ -557,49 +545,67 @@ button::-moz-focus-inner{
 }
 .TEI{
 	margin: 0 auto;
-	padding: 1rem;
 	position: relative;
 }
-.manuscript .TEI{
-	border: 1px solid #bdc2bd;
-	padding-bottom: 2rem;
+.object .TEI{
+	padding: .5rem 1rem 0;
 }
 .journal .TEI{
 	text-align: justify;
 	color: #212119;
 	background-color: #fff;
+	padding: 1rem;
 	display: block;
 }
+.manuscript .TEI{
+	border: 1px solid #bdc2bd;
+	padding: 1rem 1rem 2rem;
+}
 @media only screen and (min-width: 480px){
-	.TEI{
+	.object .TEI{
+		padding: .5rem 1.5rem 0;
+	}
+	.journal .TEI{
 		padding: 1.5rem;
 	}
 	.manuscript .TEI{
-		padding-bottom: 2.5rem;
+		padding-bottom: 1.5rem 1.5rem 2.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.TEI{
-		padding: 2.5rem;
+	.object .TEI{
+		padding: .5rem 2.5rem 0;
+	}
+	.journal .TEI{
+		padding: 2.5rem
 	}
 	.manuscript .TEI{
-		padding-bottom: 3.5rem;
+		padding: 2.5rem 2.5rem 3.5rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	.TEI{
+	.object .TEI{
+		padding: .5rem 1.5rem 0;
+	}
+	.journal .TEI{
 		padding: 1.5rem;
 	}
 	.manuscript .TEI{
-		padding-bottom: 2.5rem;
+		padding: 1.5rem 1.5rem 2.5rem;
 	}
 }
 @media only screen and (min-width: 1200px){
 	.TEI{
 		padding: 2rem 2.5rem;
 	}
+	.object .TEI{
+		padding: .5rem 2.5rem 0;
+	}
+	.journal .TEI{
+		padding: 2rem 2.5rem;
+	}
 	.manuscript .TEI{
-		padding-bottom: 3rem;
+		padding: 2rem 2.5rem 3rem;
 	}
 }
 .manuscript .TEI.front:not(.none) + .TEI{

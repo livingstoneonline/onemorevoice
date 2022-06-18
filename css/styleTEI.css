@@ -184,6 +184,22 @@
 .TEI h4{
 	font-size: 1rem;
 }
+.manuscript .TEI .ms-container h3{
+	font-size: 1rem;
+	font-weight: inherit;
+	text-align: left;
+  color: inherit;
+  margin: inherit;
+  padding: inherit;
+	border-bottom: none;
+}
+.manuscript .head.center,
+.journal .head.center{
+	text-indent: 0;
+	text-align: center;
+	margin: 0;
+	display: block;
+}
 
 /* Narrow Mobile and Warning Box */
 @media only screen and (min-width: 992px){
@@ -525,7 +541,7 @@ button::-moz-focus-inner{
 	visibility: hidden;
 }
 
-/* Recovered Texts: Journal */
+/* Recovered Texts: Journal & Manuscript */
 .journal{
 	color: #212119;
 	background-color: #ffffff;
@@ -545,6 +561,7 @@ button::-moz-focus-inner{
 	position: relative;
 }
 .manuscript .TEI{
+	border: 1px solid #bdc2bd;
 	padding-bottom: 2rem;
 }
 .journal .TEI{
@@ -584,6 +601,19 @@ button::-moz-focus-inner{
 	.manuscript .TEI{
 		padding-bottom: 3rem;
 	}
+}
+.manuscript .TEI.front:not(.none) + .TEI{
+	margin-top: 2em;
+}
+.manuscript .ms-container{
+	display: inline-block;
+	text-align: left;
+}
+.manuscript .front{
+	margin-bottom: -1em;
+}
+.manuscript .back{
+	margin-top: 1em;
 }
 .journal .image-small.inline-left{
 	float: left;
@@ -688,49 +718,6 @@ Table of Contents
 2.10. Colors 
 2.11. Misc
 */
-
-/*--------------------------------------*/
-
-/** 2.0 Transcription CSS **/
-
-/* 2.1. Textual divisions */
-/* .manuscript .TEI{
-	padding: 2em 0 3em 0;
-	margin: 0 1em;
-}
-@media only screen and (min-width: 768px){
-	.manuscript .TEI{
-		margin: 0 auto;
-	}
-} */
-.manuscript .TEI{
-	border: 1px solid #bdc2bd;
-}
-.manuscript .ms-container{
-	display: inline-block;
-	text-align: left;
-	/*white-space:nowrap;*/
-	/* margin-left: .5em;
-	margin-right: .5em; */
-}
-.manuscript .front{
-	margin-bottom: -1em;
-}
-.manuscript .back{
-	margin-top: 1em;
-}
-.manuscript .TEI.front:not(.none) + .TEI{
-	margin-top: 2em;
-}
-.manuscript .TEI .ms-container h3{
-	font-size: 1rem;
-	font-weight: inherit;
-	text-align: left;
-  color: inherit;
-  margin: inherit;
-  padding: inherit;
-	border-bottom: none;
-}
 
 
 /* 2.2.2. Toggle Classes */
@@ -893,14 +880,6 @@ Table of Contents
 	position: unset;
 }
 
-/* head */
-.manuscript .head.center,
-.journal .head.center{
-	text-indent: 0;
-	text-align: center;
-	margin: 0;
-	display: block;
-}
 
 /* note and footnote */
 .note{
@@ -1155,7 +1134,6 @@ u{
 .TEI .smallest{
 	font-size: .8em;
 }
-
 
 
 /* 2.9. Page placement */

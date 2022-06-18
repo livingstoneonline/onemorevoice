@@ -608,18 +608,16 @@ button::-moz-focus-inner{
 		padding: 2rem 2.5rem 3rem;
 	}
 }
-.manuscript .TEI.front:not(.none) + .TEI{
-	margin-top: 2em;
+.manuscript .TEI.front:not(.none) + .TEI,
+.manuscript .back{
+	margin-top: 2rem;
+}
+.manuscript .TEI.back .back{
+	margin-top: 0;
 }
 .manuscript .ms-container{
 	display: inline-block;
 	text-align: left;
-}
-.manuscript .front{
-	margin-bottom: -1em;
-}
-.manuscript .back{
-	margin-top: 1em;
 }
 .journal .image-small.inline-left{
 	float: left;
@@ -957,6 +955,10 @@ table .linenumber{
 	height: 3px;
 	padding: 1px;
 }
+.manuscript p + .milestone{
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+}
 .line{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
@@ -979,7 +981,7 @@ table .linenumber{
 	width: 50%;
 }
 .manuscript .halfline{
-	margin: 1em auto -1em auto;
+	margin: 1em auto -1em;
 }
 .journal .halfline{
 	margin: 2em auto;
@@ -1056,10 +1058,6 @@ u{
 .manuscript .center{
 	margin: 0 auto;
 	display: block;
-}
-.manuscript .milestone.center{
-	text-indent: 0;
-	margin-left: 3.7em;
 }
 .journal .center{
 	text-align: center;

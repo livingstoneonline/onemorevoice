@@ -166,7 +166,7 @@
 .TEI h4{
 	font-size: 1rem;
 }
-.manuscript .TEI .ms-container h3{
+.manuscript .TEI h3{
 	font-size: 1rem;
 	font-weight: inherit;
 	text-align: left;
@@ -175,8 +175,8 @@
   padding: inherit;
 	border-bottom: none;
 }
-.manuscript .head.center,
-.journal .head.center{
+.journal .TEI .ms-container h3.head.center,
+.manuscript .TEI .ms-container h3.head.center{
 	text-indent: 0;
 	text-align: center;
 	margin: 0;
@@ -1083,13 +1083,13 @@ u{
 .indent{
 	text-indent: 25px;
 }
-.TEI .large{
+.TEI .ms-container .large{
 	font-size: 1.2em;
 }
-.TEI .larger{
+.TEI .ms-container .larger{
 	font-size: 1.3em;
 }
-.TEI .largest{
+.TEI .ms-container .largest{
 	font-size: 1.4em;
 }
 .journal .left{
@@ -1129,13 +1129,13 @@ u{
 .marginright{
 	float: right;
 }
-.TEI .small{
+.TEI .ms-container .small{
 	font-size: .9em;
 }
-.TEI .smaller{
+.TEI .ms-container .smaller{
 	font-size: .85em;
 }
-.TEI .smallest{
+.TEI .ms-container .smallest{
 	font-size: .8em;
 }
 

@@ -107,7 +107,7 @@
                 <language ident="en">English</language>
             </langUsage>
         </profileDesc>
-		<xenoData type="css">.metamark.liv_000023_0090{position:relative}.metamark.liv_000023_0090::before{content:'{';font-size:3.5em;transform:scale(.35, 1.7);transform:scale(.35, 1.7);-webkit-transform:scale(.35, 1.7);-moz-transform:scale(.35, 1.7);-ms-transform:scale(.35, 1.7);-o-transform:scale(.35, 1.7);right:-.2em;position:absolute}.columnLeft.liv_000023_0092{text-align:center;float:left;padding-right:2em}.columnRight.liv_000023_0092{float:right}.columnCenter.liv_000023_0092{padding:0 1em}.div-after-ul.liv_000023_0092{display:inline-block}.ab.liv_000023_0092{text-align:left}.milestone.center.line.liv_000023_0092{margin-left:6em}</xenoData>
+		<xenoData type="css">.metamark.liv_000023_0090{position:relative}.metamark.liv_000023_0090::before{content:'{';font-size:3.5em;transform:scale(.35, 1.7);transform:scale(.35, 1.7);-webkit-transform:scale(.35, 1.7);-moz-transform:scale(.35, 1.7);-ms-transform:scale(.35, 1.7);-o-transform:scale(.35, 1.7);right:-.2em;position:absolute}.manuscript .TEI .ms-container h3.columnTitle.liv_000023_0092{padding-left:4rem}.columns.liv_000023_0092{display:-webkit-flex;display:flex;flex-direction:row;flex-wrap:nowrap;gap:2rem}.columnLeft.liv_000023_0092{text-align:center}.div-after-ul.liv_000023_0092{display:inline-block}.ab.liv_000023_0092{text-align:left}.milestone.center.line.liv_000023_0092{margin-left:6em}</xenoData>
         <revisionDesc>
 			<!-- Use one <change> for each instance of revision -->
 			<!-- Always place most recent <change> at top -->
@@ -171,10 +171,12 @@
 <lb/><milestone unit="section" rend="line"/>
 	</div>
 	<div>
-<head rend="center"><region>Urundi</region> begins at <settlement>Ujiji</settlement></head>
+<head n="columnTitle liv_000023_0092"><region>Urundi</region> begins at <settlement>Ujiji</settlement></head>
+	
+	<div n="columns liv_000023_0092">
 	<div n="columnLeft liv_000023_0092">
 <list type="unordered">
-<lb/><item>First chief</item>
+<item>First chief</item>
 <item>2</item>
 <item>3</item>
 <item>4</item>
@@ -185,15 +187,44 @@
 <item>9</item>
 <item>10</item>
 <item>11</item>
-<item>12</item>
-<lb/>
-</list>
-<ab rend="no-indent" n="ab liv_000023_0092">chief of 
+<item>chief 12 of
 <lb/><term type="collective">Nzige</term> on 
-<lb/>both sides</ab>
+<lb/>both sides
+</item>
+</list>
 	</div>
+
+	<div n="columnCenter liv_000023_0092">
+<list type="unordered">
+<item><space extent="1" unit="chars"/><persName>Tamana</persName></item>
+<item><persName>Masonga</persName></item>
+<item><persName>Samize</persName></item>
+<item><space extent="1" unit="chars"/><persName>Kinoza</persName></item>
+<item><persName>Lowegoe</persName></item>
+<item><space extent="1" unit="chars"/><persName>Vikare</persName></item>
+<item><persName>Moasabikebwa</persName></item>
+<item><persName>Moyeio</persName></item>
+<item><persName>Magara</persName></item>
+<item><persName>Mokarianye</persName></item>
+<item><space extent="1" unit="chars"/><persName>Moguha</persName></item>
+<item><persName>Mokamba</persName></item>
+<item><space extent="1" unit="chars"/><persName>Tande</persName> underchief</item>
+<item><persName>Semovyei</persName></item>
+<item><persName>Rumashano</persName></item>
+<item><persName>Loshimba</persName></item>
+	</list>
+	</div>
+
 	<div n="columnRight liv_000023_0092">
-<lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/><lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
+<lb/>
 <lb/><ab rend="no-indent"><persName>Mzige</persName>
 <lb/>very great
 <lb/>chief
@@ -201,26 +232,8 @@
 <lb/>in river
 <lb/>Too</ab>
 	</div>
-	<div n="columnCenter liv_000023_0092">
-<list type="unordered">
-<item><persName>Tamana</persName></item>
-<item><persName>Masonga</persName></item>
-<item><persName>Samize</persName></item>
-<item><persName>Kinoza</persName></item>
-<item><persName>Lowegoe</persName></item>
-<item><persName>Vikare</persName></item>
-<item><persName>Moasabikebwa</persName></item>
-<item><persName>Moyeio</persName></item>
-<item><persName>Magara</persName></item>
-<item><persName>Mokarianye</persName></item>
-<item><persName>Moguha</persName></item>
-<item><persName>Mokamba</persName></item>
-<item><persName>Tande</persName> underchief</item>
-<item><persName>Semovyei</persName></item>
-<item><persName>Rumashano</persName></item>
-<item><persName>Loshimba</persName></item>
-	</list>
 	</div>
+
 	<div n="div-after-ul liv_000023_0092">
 <milestone unit="section" rend="center quarter-line" n="line liv_000023_0092"/>
 <p rend="no-indent"><space extent="1" unit="chars"/><seg rend="gray">The</seg> <region><term type="collective">Batusi</term> country</region> is North of <region>that

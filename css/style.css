@@ -691,6 +691,9 @@ article > .toc + section{
 		margin: 1rem;
 		position: relative;
 	}
+	.essay .page-details.vertical{
+		align-items: center;
+	}
 }
 @media only screen and (min-width: 1200px){
 	.essay .page-details{
@@ -712,19 +715,23 @@ article > .toc + section{
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
 		margin: 0 auto;
-		padding: 0;
+		padding: 0 1rem;
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: column;
-		/* align-self: center; */
 	}
+	@media only screen and (min-width: 1200px){
+		.essay .page-details div{
+			padding: 0;
+		}
 	/* paragraphs in text container */
 	@media only screen and (min-width: 992px){
 		.essay .page-details div p{
 			font-size: 1rem;
-			margin: .65rem 0;
+			margin: .5rem 0;
 		}
 	}
+	
 	@media only screen and (min-width: 1200px){
 		.essay .page-details div p{
 			font-size: 1.05rem;
@@ -738,11 +745,6 @@ article > .toc + section{
 	.essay .page-details.vertical figure{
 		width: 50%;
 		min-width: 488px;
-	}
-}
-@media only screen and (min-width: 768px){
-	.essay .page-details.vertical figure{
-		width: 668px;
 	}
 }
 @media only screen and (min-width: 1200px){	

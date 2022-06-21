@@ -667,6 +667,7 @@ article > .toc + section{
 
 /* Essay Top */
 
+/* main container */
 .essay .page-details{
 	display: -webkit-flex;
   display: flex;
@@ -683,9 +684,10 @@ article > .toc + section{
 		width: 100%;
 		display: -webkit-flex;
   	display: flex;
+		flex-direction: row-reverse;
 		align-items: flex-end;
 		justify-content: space-between;
-		flex-direction: row-reverse;
+		gap: 1.5rem;
 		margin: 1rem;
 		position: relative;
 	}
@@ -696,6 +698,7 @@ article > .toc + section{
 		margin: 1rem 1rem 2rem;
 	}
 }
+/* text container */
 .essay .page-details div{
 	margin: 1rem 0;
 	padding: 0 1rem;
@@ -705,24 +708,29 @@ article > .toc + section{
 		margin: 2rem 0 0;
 		padding: 0 2rem;
 	}
-	.essay .page-details.vertical figure{
-		width: 668px;
-	}
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
 		margin: 0 auto;
-		padding: 0 1.5rem;
+		padding: 0;
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: column;
-		align-self: center;
+		/* align-self: center; */
 	}
-	.essay .page-details.vertical div{
-		margin: 7rem auto 0;
-		padding: 0 1.5rem 0 3rem;
-		align-self: flex-start;
+	/* paragraphs in text container */
+	@media only screen and (min-width: 992px){
+		.essay .page-details div p{
+			font-size: 1rem;
+			margin: .65rem 0;
+		}
 	}
+	@media only screen and (min-width: 1200px){
+		.essay .page-details div p{
+			font-size: 1.05rem;
+		}
+	}
+	/* image container */
 	.essay .page-details.horizontal figure{
 		width: 50%;
 		min-width: 478px;
@@ -730,6 +738,11 @@ article > .toc + section{
 	.essay .page-details.vertical figure{
 		width: 50%;
 		min-width: 488px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.essay .page-details.vertical figure{
+		width: 668px;
 	}
 }
 @media only screen and (min-width: 1200px){	
@@ -743,17 +756,6 @@ article > .toc + section{
 @media only screen and (min-width: 1366px){	
 	.essay .page-details.vertical.alternative figure{
 		min-width: 636px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.essay .page-details div p{
-		font-size: 1rem;
-		margin: .65rem 0;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.essay .page-details div p{
-		font-size: inherit;
 	}
 }
 

@@ -720,10 +720,12 @@ article > .toc + section{
   	display: flex;
 		flex-direction: column;
 	}
-	@media only screen and (min-width: 1200px){
-		.essay .page-details div{
-			padding: 0;
-		}
+}
+@media only screen and (min-width: 1200px){
+	.essay .page-details div{
+		padding: 0 2rem;
+	}
+}
 	/* paragraphs in text container */
 	@media only screen and (min-width: 992px){
 		.essay .page-details div p{

@@ -701,6 +701,18 @@ article > .toc + section{
 		margin: 1rem 1rem 2rem;
 	}
 }
+@media only screen and (min-width: 992px) {
+	.essay .page-details.horizontal div{
+		width: calc(40% - 1.75rem);
+	}
+	.essay .page-details.horizontal figure{
+		width: calc(60% - 1.75rem);
+	}
+	.essay .page-details.vertical div,
+	.essay .page-details.vertical figure{
+		width: calc(50% - 1.75rem);
+	}
+}
 /* text container */
 .essay .page-details div{
 	margin: 1rem 0;
@@ -715,41 +727,39 @@ article > .toc + section{
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 0;
+		height: 100%;
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}
 }
-@media only screen and (min-width: 1200px){
+/* @media only screen and (min-width: 1200px){
 	.essay .page-details div{
 		padding: 0 2rem;
 	}
-}
-	/* paragraphs in text container */
-	@media only screen and (min-width: 992px){
-		.essay .page-details div p{
-			font-size: 1rem;
-			margin: .5rem 0;
-		}
-	}
-	
-	@media only screen and (min-width: 1200px){
-		.essay .page-details div p{
-			font-size: 1.05rem;
-		}
-	}
-	/* image container */
-	.essay .page-details.horizontal figure{
-		width: 50%;
-		min-width: 478px;
-	}
-	.essay .page-details.vertical figure{
-		width: 50%;
-		min-width: 488px;
+} */
+/* paragraphs in text container */
+@media only screen and (min-width: 992px){
+	.essay .page-details div p{
+		font-size: 1rem;
+		margin: .5rem 0;
 	}
 }
-@media only screen and (min-width: 1200px){	
+@media only screen and (min-width: 1200px){
+	.essay .page-details div p{
+		font-size: 1.05rem;
+	}
+}
+/* image container */
+.essay .page-details.horizontal figure{
+	min-width: 478px;
+}
+.essay .page-details.vertical figure{
+	min-width: 488px;
+}
+/* @media only screen and (min-width: 1200px){	
 	.essay .page-details.horizontal figure{
 		min-width: 698px;
 	}
@@ -761,7 +771,7 @@ article > .toc + section{
 	.essay .page-details.vertical.alternative figure{
 		min-width: 636px;
 	}
-}
+} */
 
 
 /* Main Image Caption Button */

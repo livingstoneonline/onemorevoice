@@ -436,9 +436,6 @@ section h4:not(:first-of-type){
 @media only screen and (min-width: 992px){
 	.toc > ol:first-child{
 		padding: 2rem 6rem 3rem;
-		/* -webkit-box-shadow: #697c6f 0px 3px 7px 0px;
-		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
-		box-shadow: #697c6f 0px 3px 7px 0px; */
 	}
 }
 .toc li{
@@ -3176,7 +3173,7 @@ details[open] > p:first-of-type{
 details[open] > ul,
 details[open] > ol{
 	margin: 0 0 0 1rem;
-	padding: .5rem 0 .25rem 1rem;
+	padding: .5rem 0 0 .5rem;
 }
 .toc details[open] > ol{
 	padding: 0 0 0 1rem;

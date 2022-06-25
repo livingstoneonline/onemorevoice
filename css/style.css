@@ -687,7 +687,7 @@ article > .toc + section{
 		flex-direction: row-reverse;
 		align-items: flex-end;
 		justify-content: space-between;
-		gap: 1.5rem;
+		gap: 1rem;
 		margin: 1rem;
 		position: relative;
 	}
@@ -703,16 +703,20 @@ article > .toc + section{
 }
 @media only screen and (min-width: 992px) {
 	.essay .page-details.horizontal div{
-		width: calc(40% - 2rem);
+		/* width: calc(40% - .5rem); */
+		width: 43%;
 	}
 	.essay .page-details.horizontal figure{
-		width: calc(60% - 2rem);
+		/* width: calc(60% - .5rem); */
+		width: 57%;
 	}
 	.essay .page-details.vertical div{
-		width: calc(50% - 2rem);
+		/* width: calc(50% - .5rem); */
+		width: 50%;
 	}
 	.essay .page-details.vertical figure{
-		width: calc(50% - 2rem);
+		/* width: calc(50% - .5rem); */
+		width: 50%;
 	}
 }
 /* text container */
@@ -728,20 +732,19 @@ article > .toc + section{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
-		margin: 0 auto;
+		margin: 0;
 		padding: 0;
 		height: 100%;
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: column;
 		justify-content: center;
+		border: 1px solid  #bdc2bd;
 	}
 }
-/* @media only screen and (min-width: 1200px){
-	.essay .page-details div{
-		padding: 0 2rem;
-	}
-} */
+.essay .page-details div span{
+	margin: 0 auto;
+}
 /* paragraphs in text container */
 @media only screen and (min-width: 992px){
 	.essay .page-details div p{

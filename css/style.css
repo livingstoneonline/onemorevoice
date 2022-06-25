@@ -436,6 +436,9 @@ section h4:not(:first-of-type){
 @media only screen and (min-width: 992px){
 	.toc > ol:first-child{
 		padding: 2rem 6rem 3rem;
+		/* -webkit-box-shadow: #697c6f 0px 3px 7px 0px;
+		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
+		box-shadow: #697c6f 0px 3px 7px 0px; */
 	}
 }
 .toc li{
@@ -687,7 +690,7 @@ article > .toc + section{
 		flex-direction: row-reverse;
 		align-items: flex-end;
 		justify-content: space-between;
-		gap: 1rem;
+		gap: 2rem;
 		margin: 1rem;
 		position: relative;
 	}
@@ -719,6 +722,13 @@ article > .toc + section{
 		width: 50%;
 	}
 }
+@media only screen and (min-width: 992px){
+	.essay .page-details div{
+		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
+		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
+		box-shadow: #697c6f 0px 1px 6px 0px;
+	}
+}
 /* text container */
 .essay .page-details div{
 	margin: 1rem 0;
@@ -733,13 +743,12 @@ article > .toc + section{
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
 		margin: 0;
-		padding: 0;
+		padding: 1rem 2.5rem;
 		height: 100%;
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: column;
 		justify-content: center;
-		border: 1px solid  #bdc2bd;
 	}
 }
 .essay .page-details div span{

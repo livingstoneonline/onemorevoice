@@ -418,9 +418,9 @@ section h4:not(:first-of-type){
 .toc > ol:first-child{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
-	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
+	border-radius: 8px;
 	padding: 1.5rem 3rem 2rem;
 }
 @media only screen and (min-width: 480px){
@@ -595,9 +595,9 @@ article > .toc + section{
 	.home .introduction-section .introduction-text,
 	.categories .introduction-section .introduction-text{
 		background: rgb(226, 228, 226, .94);
-		border-radius: 6px;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
+		border-radius: 6px;
 		padding: 2rem;
 		position: absolute;
     left: 50%;
@@ -812,9 +812,9 @@ article > .toc + section{
 	text-decoration: none;
 	background: #E7E9E7;
 	border: 2px solid #4d5b51;
-	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
+	border-radius: 4px;
 	padding: 4px 6px 2px;
 }
 @media screen and (min-width: 480px){
@@ -990,9 +990,9 @@ sections appear on books & texts
 		-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 		-moz-box-shadow: #697c6f 0px 3px 7px 0px;
 		box-shadow: #697c6f 0px 3px 7px 0px;
-		border-radius: 6px;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
+		border-radius: 6px;
 		padding: 1rem;
 }
 #books .sections .section-container,
@@ -1097,6 +1097,7 @@ sections appear on books & texts
 	left: 0;
 	-o-object-fit: cover;
 	object-fit:cover;
+	-o-object-position: 50% 50%;
 	object-position: 50% 50%;
 	overflow: hidden;
 }
@@ -1143,9 +1144,9 @@ sections appear on books & texts
 	-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
   -moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
   box-shadow: #697c6f 1px 0px 5px 1px inset;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+	border-radius: 50%;
 	position: absolute;
 	top: -.5rem;
 	right: -1rem;
@@ -1470,9 +1471,9 @@ a.action-button:visited,
 	-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 	-moz-box-shadow: #697c6f 0px 3px 7px 0px;
 	box-shadow: #697c6f 0px 3px 7px 0px;
-	border-radius: 16px;
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
+	border-radius: 16px;
 	margin: 2rem 0 0;
 	padding: 10px 30px;
 	align-self: center;
@@ -1528,9 +1529,9 @@ a.action-button i{
 	text-transform: none;
 	white-space: nowrap;
 	border: none;
-	border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
+	border-radius: 0;
 	margin: 1.25rem 1rem;
 	padding: 10px 0;
 	width: 11rem;
@@ -1641,6 +1642,8 @@ a.action-button i{
 	-webkit-box-shadow: #697c6f 0px 3px 10px 0px;
 	-moz-box-shadow: #697c6f 0px 3px 10px 0px;
 	box-shadow: #697c6f 0px 3px 10px 0px;
+	-webkit-border-radius: .25rem;
+	-moz-border-radius: .25rem;
 	border-radius: .25rem;
 	margin: 0;
   padding: .25rem .75rem;
@@ -1723,9 +1726,9 @@ header nav button,
 	background: #305056;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
-	border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	padding: .15rem .55rem;
 	position: absolute;
 	top: -58px;
@@ -1788,9 +1791,9 @@ nav .logo-container a:focus{
 /* OMV Icon */
 nav .logo-container a img{
 	border: none;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 nav .logo-container a img{
 	margin: 0;
@@ -1934,9 +1937,9 @@ div.skiptranslate.goog-te-gadget{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	border: 2px solid transparent;
-	border-radius: 7px;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
+	border-radius: 7px;
 	margin: 0 0 0 -3px;
 	padding: 1px;
 }
@@ -2471,9 +2474,9 @@ footer p .site-detail:last-child:after{
 	color: #fff;
 	background: #4d5b51;
 	border: 2px solid #fff;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+	border-radius: 50%
 	outline: none;
 	padding: 5px;
 	width: 50px;
@@ -2673,9 +2676,9 @@ strong{
 	background: #f1f1f1;
 	border: 1px solid #212119;
 	border-width: 1px 2px 2px 1px;
-	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
+	border-radius: 5px;
 	margin: 1px;
 	padding: 0 2px;
 	min-width: 17px;
@@ -2877,9 +2880,9 @@ img + p.caption-text,
   -webkit-box-shadow: #697c6f 0px 3px 7px 0px;
   -moz-box-shadow: #697c6f 0px 3px 7px 0px;
   box-shadow: #697c6f 0px 3px 7px 0px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
+	-webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+	border-radius: 6px;
 	padding: 1rem;
 	width: 100%;
 }
@@ -2888,13 +2891,13 @@ img + p.caption-text,
 }
 .visuals.gallery figure img{
 	border: 4px solid #E7E9E7;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+	border-radius: 50%;
 	width: 100%;
 	max-width: 100%;
-	object-fit: cover;
 	-o-object-fit: cover;
+	object-fit: cover;
 	overflow: hidden;
 }
 .visuals.gallery figure a:hover,
@@ -3025,12 +3028,12 @@ img + p.caption-text,
 }
 .play-button{
 	background: #902D27;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	width: 60px;
 	height: 40px;
 	z-index: 2;
@@ -3075,10 +3078,10 @@ img + p.caption-text,
 	border: none;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	-o-object-fit: cover;
-	object-position: top;
+	object-fit: cover;
 	-o-object-position: top;
+	object-position: top;
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -3119,9 +3122,9 @@ mark.advisory{
 	background: #305056;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
-	border-bottom-right-radius: 8px;
 	-webkit-border-bottom-right-radius: 8px;
 	-moz-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
 	padding: 8px;
 	left: 0;
 	transition: top 1s ease-out;
@@ -3131,9 +3134,9 @@ mark.running-time{
 	background: #212119;
 	border-top: 2px solid #fff;
 	border-right: 2px solid #fff;
-	border-top-right-radius: 8px;
 	-webkit-border-top-right-radius: 8px;
 	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
 	padding: 6px 8px;
 	bottom: 0;
 	left: 0;
@@ -3217,9 +3220,9 @@ details:focus-within ::marker{
 	text-transform: none;
 	white-space: nowrap;
 	border: none;
-	border-radius: 0;
-	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
 	margin: 1.25rem 1rem;
 	padding: 10px 0;
 	width: 11rem;

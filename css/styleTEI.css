@@ -21,14 +21,15 @@ Table of Contents
 11. p and ab
 12. note and footnote
 13. Lists and Tables
-14. Object Image Containers (especially spacing)
-15. Object Images
-16. Original Image Captions
-17. Rotate Button
-18. Recovered Texts: Journal & Manuscript
-19. Misc
+14. Milestone and Lines
+15. Object Image Containers (especially spacing)
+16. Object Images
+17. Original Image Captions
+18. Rotate Button
+19. Recovered Texts: Journal & Manuscript
+20. Misc
 
-Milestone and Lines
+
 Editorial Elements
 Rend Classes (except colors, lines, and page placement)
 Page Placement
@@ -624,7 +625,78 @@ td{
 }
 
 
-/* 14. Object Image Containers (especially spacing) */
+/* 14. Milestone and Lines */
+
+.milestone{
+	display: block;
+	text-align: left;
+	background: inherit;
+	height: 3px;
+	padding: 1px;
+}
+.manuscript p + .milestone{
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+}
+.line{
+	border-bottom: 1px solid #d0d0d0;
+	border: 0;
+	border-top: 1px solid #58484b;
+	width: 100%;
+}
+.doubleline,
+.quarterline.doubleline{
+	border-top: 4px double #8c8b8b !important;
+}
+.tripleline{
+	line-height: 1.9em;
+	border-top: 4px double #8c8b8b !important;
+}
+.halfline{
+	border-bottom: 1px solid #d0d0d0;
+	border: 0;
+	border-top: 1px solid #58484b;
+	padding: 0;
+	width: 50%;
+}
+.manuscript .halfline{
+	margin: 1em auto -1em;
+}
+.journal .halfline{
+	margin: 2em auto;
+}
+.halfline.quarterline{
+	border-bottom: 1px solid #d0d0d0;
+	border: 0;
+	border-top: 1px solid #58484b;
+	width: 12.5%;
+	margin: .7em auto;
+}
+.quarterline{
+	border-bottom: 1px solid #d0d0d0;
+	border: 0;
+	border-top: 1px solid #58484b;
+	width: 25%
+}
+.second-line{
+	border-bottom: 1px solid #d0d0d0;
+	border: 0;
+	border-top: 1px solid #58484b;
+	margin-top: -1em;
+	margin-bottom: 0em;
+}
+.third-line{
+	margin-top: 1.5em;
+	border-bottom: 1px solid #d0d0d0;
+	border: 0;
+	border-top: 1px solid #58484b;
+}
+.vertical.line{
+	display: none;
+	visibility: hidden;
+}
+
+/* 15. Object Image Containers (especially spacing) */
 
 .object .TEI .ms-container .body .div{
 	display: -webkit-flex;
@@ -652,7 +724,7 @@ td{
 }
 
 
-/* 15. Object Images */
+/* 16. Object Images */
 
 .object a img{
 	border: none;
@@ -682,7 +754,7 @@ td{
 } */
 
 
-/* 16. Original Image Captions */
+/* 17. Original Image Captions */
 
 .object .TEI .ms-container .body .div p{
 	margin-top: 1rem;
@@ -715,7 +787,7 @@ td{
 }
 
 
-/* 17. Rotate Button */
+/* 18. Rotate Button */
 
 /* #rotate button and .rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
@@ -812,7 +884,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 18. Recovered Texts: Journal & Manuscript */
+/* 19. Recovered Texts: Journal & Manuscript */
 
 .journal{
 	color: #212119;
@@ -917,7 +989,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 19. Misc */
+/* 20. Misc */
 
 .none{
 	display: none;
@@ -982,77 +1054,6 @@ button::-moz-focus-inner{
 
 
 /* ***Vetted to here*** */
-
-/* Milestone and Lines */
-
-.milestone{
-	display: block;
-	text-align: left;
-	background: inherit;
-	height: 3px;
-	padding: 1px;
-}
-.manuscript p + .milestone{
-	margin-top: 1rem;
-	padding-bottom: 1rem;
-}
-.line{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-	width: 100%;
-}
-.doubleline,
-.quarterline.doubleline{
-	border-top: 4px double #8c8b8b !important;
-}
-.tripleline{
-	line-height: 1.9em;
-	border-top: 4px double #8c8b8b !important;
-}
-.halfline{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-	padding: 0;
-	width: 50%;
-}
-.manuscript .halfline{
-	margin: 1em auto -1em;
-}
-.journal .halfline{
-	margin: 2em auto;
-}
-.halfline.quarterline{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-	width: 12.5%;
-	margin: .7em auto;
-}
-.quarterline{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-	width: 25%
-}
-.second-line{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-	margin-top: -1em;
-	margin-bottom: 0em;
-}
-.third-line{
-	margin-top: 1.5em;
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-}
-.vertical.line{
-	display: none;
-	visibility: hidden;
-}
 
 
 /* Editorial Elements */

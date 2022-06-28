@@ -859,6 +859,7 @@ article > .toc + section{
 
 
 /* 11. Middle of Pages */
+
 /* main container:
 sections appear on books & texts
 + essays/materials/documents
@@ -1571,8 +1572,8 @@ a.action-button i{
 
 
 /* 16. Tooltips */
-/* Adapted from https://github.com/ZoeBijl/apg-tooltip */
 
+/* Adapted from https://github.com/ZoeBijl/apg-tooltip */
 :root{
   --tooltip-thingy-height: .5rem;
 }
@@ -1845,8 +1846,8 @@ nav .logo-container a:focus h1{
 
 
 /* 17.3. Google Translate */
-/* Also see other styles marked "Google Translate" */
 
+/* Also see other styles marked "Google Translate" */
 .goog-te-banner-frame.skiptranslate{
 	display: none !important;
 	visibility: hidden !important;
@@ -2451,6 +2452,7 @@ footer p .site-detail:last-child:after{
 
 
 /* 20. Scroll to top button */
+
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
@@ -3139,6 +3141,7 @@ mark.running-time{
 
 
 /* 29. Site Map */
+
 .site-map{
 	line-height: 1.7rem;
 }
@@ -3191,6 +3194,7 @@ details:focus-within ::marker{
 
 
 /* 30. Site Sections */
+
 .essay .site-links{
 	margin: 0 0 1rem;
 	display: -webkit-flex;

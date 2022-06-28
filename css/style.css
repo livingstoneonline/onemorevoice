@@ -22,30 +22,30 @@ Table of Contents
 10. Main Image Caption Button
 11. Middle of  Pages
 12. Home and Essay Bottom
-Images and Related
-Links
-Action Buttons
-Tooltips
-Header and Nav
-1. Skip Nav
-2. Logo
-3. Google Translate
-4. Font-Awesome Buttons
-5. Hamburger Menu and Close
-Overlay
-Footer
-Scroll to Top Button
-Lists
-Lines
-Random
-General Formatting
-Page-Specific Coding
-Thematic Collections Page Images
-Object Gallery: Visual Materials & Motion Pictures
-Motion Pictures
-Site Map
-Site Sections
-404 Page
+13. Images and Related
+14. Links
+15. Action Buttons
+16. Tooltips
+17. Header and Nav
+17.1. Skip Nav
+17.2. Logo
+17.3. Google Translate
+17.4. Font-Awesome Buttons
+17.5. Hamburger Menu and Close
+18. Overlay
+19. Footer
+20. Scroll to Top Button
+21. Lists
+22. Lines
+23. Random
+24. General Formatting
+25. Page-Specific Coding
+26. Thematic Collections Page Images
+27. Object Gallery: Visual Materials & Motion Pictures
+28. Motion Pictures
+29. Site Map
+30. Site Sections
+31. 404 Page
 */
 
 /*--------------------------------------*/
@@ -1390,7 +1390,7 @@ sections appear on books & texts
 }
 
 
-/* Images and Related */
+/* 13. Images and Related */
 
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 img{
@@ -1444,7 +1444,7 @@ a:focus img{
 }
 
 
-/* Links */
+/* 14. Links */
 
 *:focus{
 	outline: 0 none;
@@ -1462,7 +1462,7 @@ a:focus{
 }
 
 
-/* Action Buttons */
+/* 15. Action Buttons */
 
 /* Action button modified from a button created with https://buttonoptimizer.com/ and https://www.css-gradient.com */
 a.action-button,
@@ -1581,7 +1581,7 @@ a.action-button i{
 }
 
 
-/* Tooltips */
+/* 16. Tooltips */
 /* Adapted from https://github.com/ZoeBijl/apg-tooltip */
 
 :root{
@@ -1666,7 +1666,7 @@ a.action-button i{
 }
 
 
-/* Header and Nav */
+/* 17. Header and Nav */
 
 header{
 	background: #212119;
@@ -1721,7 +1721,7 @@ header nav button,
 }
 
 
-/* 1.5.1 Skip Nav */
+/* 17.1. Skip Nav */
 
 /* Skip to main content */
 /* #skip adapted from https://webaim.org/techniques/skipnav/ */
@@ -1768,7 +1768,7 @@ header nav button,
 }
 
 
-/* 1.5.2 Logo */
+/* 17.2. Logo */
 
 nav .logo-container{
 	margin: 0;
@@ -1855,7 +1855,7 @@ nav .logo-container a:focus h1{
 }
 
 
-/* 1.5.2 Google Translate */
+/* 17.3. Google Translate */
 /* Also see other styles marked "Google Translate" */
 
 .goog-te-banner-frame.skiptranslate{
@@ -1991,7 +1991,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 }
 
 
-/* 1.5.3 Font-Awesome Buttons */
+/* 17.4. Font-Awesome Buttons */
 
 nav .button-container,
 nav.overlay-nav .button-container{
@@ -2129,7 +2129,7 @@ nav .button-container a.external:focus i{
 }
 
 
-/* 1.5.4 Hamburger Menu and Close */
+/* 17.5. Hamburger Menu and Close */
 
 nav .hamburger-menu,
 nav .close{
@@ -2221,7 +2221,7 @@ nav .close-icon:focus-within
 }
 
 
-/* 1.5.5. Overlay */
+/* 18. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 .overlay{
@@ -2412,7 +2412,7 @@ nav .close-icon:focus-within
 }
 
 
-/* 1.4. Footer */
+/* 19. Footer */
 
 footer{
 	font-weight: 400;
@@ -2471,7 +2471,7 @@ footer p .site-detail:last-child:after{
 }
 
 
-/* Scroll to top button */
+/* 20. Scroll to top button */
 /* Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topButton{
 	cursor: pointer;
@@ -2523,7 +2523,7 @@ footer p .site-detail:last-child:after{
 }
 
 
-/* Lists */
+/* 21. Lists */
 
 ol,
 ul{
@@ -2557,7 +2557,7 @@ ol li ol{
 }
 
 
-/* Lines */
+/* 22. Lines */
 
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 hr{
@@ -2594,7 +2594,7 @@ section + hr.section-divider{
 }
 
 
-/* Random */
+/* 23. Random */
 
 aside.text-box,
 aside.warning-box{
@@ -2623,7 +2623,7 @@ aside.warning-box.language{
 }
 
 
-/* General Formatting */
+/* 24. General Formatting */
 
 .bold{
 	font-weight: 600;
@@ -2669,7 +2669,7 @@ strong{
 }
 
 
-/* Page-Specific Coding */
+/* 25. Page-Specific Coding */
 
 /* The following is used on project_design.html */ 
 .keycap{
@@ -2701,7 +2701,7 @@ ul.acknowledgments{
 }
 
 
-/* Thematic Collections Page Images */
+/* 26. Thematic Collections Page Images */
 
 /* Also see https://stackoverflow.com/a/55557988 for the following */
 .double-image{
@@ -2745,7 +2745,7 @@ img + p.caption-text,
 }
 
 
-/* Object Gallery: Visual Materials & Motion Pictures */
+/* 27. Object Gallery: Visual Materials & Motion Pictures */
 
 /* flex institute */
 @media only screen and (min-width: 480px){
@@ -2993,7 +2993,7 @@ img + p.caption-text,
 }
 
 
-/* Motion Pictures */
+/* 28. Motion Pictures */
 
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
@@ -3160,7 +3160,7 @@ mark.running-time{
 }
 
 
-/* Site Map */
+/* 29. Site Map */
 .site-map{
 	line-height: 1.7rem;
 }
@@ -3212,7 +3212,7 @@ details:focus-within ::marker{
 }
 
 
-/* Site Sections */
+/* 30. Site Sections */
 .essay .site-links{
 	margin: 0 0 1rem;
 	display: -webkit-flex;
@@ -3251,7 +3251,7 @@ details:focus-within ::marker{
 }
 
 
-/* 404 Page */
+/* 31. 404 Page */
 
 @media only screen and (min-width: 992px){
 	.error404 main{

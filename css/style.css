@@ -1,25 +1,27 @@
 /* CSS Main File for One More Voice (https://onemorevoice.org/) */
 
-/* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). */
+/* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/), but since revised considerably. */
 
 /* 
 Table of Contents
 -----------------
 ** Main Site Colors **
+** Site Color Codes **
+** z-index **
 
-** 1.0. Main CSS **
-Principal Components 
-Section-Specific Colors
-Headers
-Page Menus
-Main
-Credits
-Margin Tops
-Home/Categories Top
-Essay Top
-Main Image Caption Button
-Middle Categories Pages
-Home and Essay Bottom
+** Main CSS **
+01. Principal Components 
+02. Section-Specific Colors
+03. Headers
+04. Page Menus
+05. Main
+06. Credits
+07. Margin Tops
+08. Home/Categories Top
+09. Essay Top
+10. Main Image Caption Button
+11. Middle of  Pages
+12. Home and Essay Bottom
 Images and Related
 Links
 Action Buttons
@@ -48,7 +50,7 @@ Site Sections
 
 /*--------------------------------------*/
 
-/** Main Site Colors **/
+/* Main Site Colors */
 /* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ and https://color.adobe.com/create/color-contrast-analyzer */
 /* Color shades: https://mdigi.tools/color-shades/ */
 /* Create a palette: https://coolors.co/ */
@@ -57,17 +59,20 @@ Site Sections
 /* Complementary color picker: https://giggster.com/guide/complementary-colors/ and https://www.canva.com/colors/color-wheel/ */
 /* Gradients via https://www.css-gradient.com/ */
 
+/* Site Color Codes */
 /* 
->>new colors
 (white) #fff
 (black) #212119;
+
 (lighter blue) #aeced9; (contrast checked)
 (light blue) #8db7bf;
 (dark blue) #315257;
 (darker blue) #305056; (contrast checked)
 (darkest blue) #243D42;
+
 (olive green) #a4b48b;
 (dark green) #3c5e58;
+
 (lighter yellow) #F1EACA; (contrast checked)
 (yellow) #dcd3a6;
 (lighter orange) #EECFA7; (contrast checked)
@@ -75,6 +80,7 @@ Site Sections
 (red) #743B41; (contrast checked)
 (dark brown) #7d4d1c; (contrast checked)
 (dark brown, for a links) #694017 (contrast checked)
+
 (super light gray) #ededed;
 (light gray) #E7E9E7;
 (light mid-gray) #bdc2bd;
@@ -82,51 +88,51 @@ Site Sections
 (mid-gray) #737d73;
 (dark blue in grayscale) #575757;
 (dark gray) #4d5b51; (contrast checked)
+also see styleTEI for manuscript colors
 */
 
-/*
-(white) #fff;
-(black) #000;
-(light blue 1) #c4d8ef;
-(light blue 2) #dbe6f5;
-(site blue) #204A79;
-(light red) #b53831;
-(site red) #902D27;
-(light gray) #e3e3e3;
-(dark gray) #858585;
-(darker gray) #404040;
-(dark brown) #424242;
-(near black) #525252;
-(black) #0b0b0b; 
-also see 2.9 for manuscript colors
-*/
-
+/* z-index  */
 /* 
->>z-index 
-.tooltip-container - z-index: 101;
-.caption-icon .tooltip-container:hover/.caption-icon .tooltip-container:focus-within - z-index: 99;
-.tooltip-container::before - z-index: 101;
-#skip a - z-index: 150;
-.overlay - z-index: 100;
-#topButton - z-index: 75;
-.youtube .play-button/.screenshot .play-button - z-index: 2;
-.youtube iframe - z-index: 3;
-.skipcontrols a/.screenshot mark - z-index: 10;
-*/
+.image-overlay
+z-index: 1;
 
-/* 
-Page types 
-.home
-.categories (gateway pages)
-.materials (primary materials)
-.documents (project documents)
+.play-button
+z-index: 2;
+
+.youtube iframe
+z-index: 3;
+
+.skipcontrols a,
+mark.advisory,
+mark.running-time
+z-index: 10;
+
+#topButton
+z-index: 75;
+
+.caption-icon .tooltip-container:hover,
+.caption-icon .tooltip-container:focus-within
+z-index: 99;
+
+.overlay
+z-index: 100;
+
+.tooltip-container:hover,
+.tooltip-container:focus-within
+z-index: 101;
+
+.tooltip-container::before
+z-index: 101;
+
+#skip a
+z-index: 150;
 */
 
 /*--------------------------------------*/
 
-/** 1.0 Main CSS **/
+/** Main CSS **/
 
-/* Principal Components */
+/* 01. Principal Components */
 
 *, *:before, *:after{
 	-webkit-box-sizing: border-box;
@@ -199,7 +205,7 @@ body{
 }
 
 
-/* Section-Specific Colors */
+/* 02. Section-Specific Colors */
 
 /* blue border left, organge bottom, yellow frame */
 .home h2,
@@ -246,7 +252,7 @@ body{
 }
 
 
-/* Headers */
+/* 03. Headers */
 
 h2{
 	font-size: 1.5rem;
@@ -376,7 +382,7 @@ section h4:not(:first-of-type){
 }
 
 
-/* Page Menus */
+/* 04. Page Menus */
 
 .toc{
 	line-height: 2.1rem;
@@ -443,7 +449,7 @@ section h4:not(:first-of-type){
 }
 
 
-/* Main */
+/* 05. Main */
 
 main{
 	margin: 0 auto;
@@ -472,7 +478,7 @@ main{
 }
 
 
-/* Credits */
+/* 06. Credits */
 
 .credits{
 	font-size: 1rem;
@@ -485,7 +491,7 @@ main{
 }
 
 
-/* Margin Tops */
+/* 07. Margin Tops */
 
 /* section.content:nth-child(3) > section:not(:first-child) 
 is for spacing gallery sections in middle of page;
@@ -546,7 +552,7 @@ article > .toc + section{
 }
 
 
-/* Home/Categories Top */
+/* 08. Home/Categories Top */
 
 .home .introduction-section .image-wrapper,
 .categories .introduction-section .image-wrapper{
@@ -665,7 +671,7 @@ article > .toc + section{
 }
 
 
-/* Essay Top */
+/* 09. Essay Top */
 
 /* main container */
 .essay .page-details{
@@ -785,7 +791,7 @@ article > .toc + section{
 } */
 
 
-/* Main Image Caption Button */
+/* 10. Main Image Caption Button */
 
 .image-wrapper{
 	line-height: 0;
@@ -857,7 +863,7 @@ article > .toc + section{
 }
 
 
-/* Middle Pages */
+/* 11. Middle of Pages */
 /* main container:
 sections appear on books & texts
 + essays/materials/documents
@@ -1301,7 +1307,7 @@ sections appear on books & texts
 }
 
 
-/* Home and Essay Bottom */
+/* 12. Home and Essay Bottom */
 
 .content{
 	padding: 0 1rem;
@@ -2476,7 +2482,7 @@ footer p .site-detail:last-child:after{
 	border: 2px solid #fff;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	border-radius: 50%
+	border-radius: 50%;
 	outline: none;
 	padding: 5px;
 	width: 50px;

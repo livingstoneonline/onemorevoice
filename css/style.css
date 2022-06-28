@@ -173,7 +173,6 @@ button{
   -webkit-appearance: button;
 }
 :root{
-	/* font: 16px Georgia, 'Times New Roman', Times, serif; */
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	line-height: 2rem;
@@ -709,19 +708,15 @@ article > .toc + section{
 }
 @media only screen and (min-width: 992px) {
 	.essay .page-details.horizontal div{
-		/* width: calc(40% - .5rem); */
 		width: 43%;
 	}
 	.essay .page-details.horizontal figure{
-		/* width: calc(60% - .5rem); */
 		width: 57%;
 	}
 	.essay .page-details.vertical div{
-		/* width: calc(50% - .5rem); */
 		width: 50%;
 	}
 	.essay .page-details.vertical figure{
-		/* width: calc(50% - .5rem); */
 		width: 50%;
 	}
 }
@@ -1227,7 +1222,7 @@ sections appear on books & texts
 #texts p.location-info{
 	margin: 1rem .5rem;
 }
-/* paragraphs / list of texts */
+/* paragraphs/list of texts */
 .categories .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
@@ -1397,7 +1392,6 @@ img{
 	font-weight: 300;
 	color: transparent;
 	background: #E7E9E7;
-	/* border-style: none; */
 	width: 100%;
 	height: auto;
 	display: block;
@@ -1436,11 +1430,6 @@ a:focus img{
 .section-container:hover .image-overlay,
 .section-container:focus-within .image-overlay{
   opacity: .2;
-}
-/* Used for XML files */
-.graphic a:hover,
-.graphic a:focus{
-	background: white;
 }
 
 
@@ -2253,12 +2242,6 @@ nav .close-icon:focus-within
 		height: calc(100% - 55.2px);
 	}
 }
-/* @media only screen and (min-width: 992px){
-	.overlay{
-		display: none !important;
-		visibility: hidden !important;
-	}
-} */
 @media only screen and (min-width: 480px){
 	.overlay div{
 		background: #DA9C5D;
@@ -2349,10 +2332,6 @@ nav .close-icon:focus-within
   font-size: 1.2rem;
   font-weight: 600;
 }
-/* .overlay .text-container h2:nth-child(1),
-.overlay .text-container h2:nth-child(3),
-.overlay .text-container h2:nth-child(4),
-.overlay .text-container h2:nth-child(6), */
 .overlay .text-container h2,
 .overlay ul li{
 	border-bottom: 1px solid #ededed;
@@ -2561,7 +2540,6 @@ ol li ol{
 
 /* hr from HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 hr{
-  /* display: block; */
   height: 1px;
   border: 0;
   border-top: 1px solid #bdc2bd;
@@ -3170,7 +3148,7 @@ mark.running-time{
 .site-map li{
 	margin-bottom: 1rem;
 }
-/* Take from https://stackoverflow.com/a/56758842 */
+/* Taken from https://stackoverflow.com/a/56758842 */
 details > summary{
   list-style: none;
 	cursor: pointer;

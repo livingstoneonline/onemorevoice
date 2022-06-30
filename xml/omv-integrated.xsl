@@ -1063,13 +1063,43 @@
 	</xsl:template>
 
 	<xsl:template match="gap[@extent][@unit]" priority="10">
-		<xsl:choose>
+		<!-- <xsl:choose>
 			<xsl:when test="@unit='chars'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
 			<xsl:when test="@unit='words'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
 			<xsl:when test="@unit='lines'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
 			<xsl:when test="@unit='pages'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
 			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
+		</xsl:choose> -->
+
+
+		<xsl:choose>
+			<xsl:when test="@unit='chars'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span>
+				</span>
+			</xsl:when>
+			<xsl:when test="@unit='words'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span>
+				</span>
+			</xsl:when>
+			<xsl:when test="@unit='lines'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span>
+				</span>
+			</xsl:when>
+			<xsl:when test="@unit='pages'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span>
+				</span>
+			</xsl:when>
+			<xsl:otherwise>
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span>
+				</span>
+			</xsl:otherwise>
 		</xsl:choose>
+		<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 	</xsl:template>
 
 	<!-- do not show graphic -->
@@ -1364,7 +1394,7 @@
 	</xsl:template>
 
 	<xsl:template match="unclear">
-		<span class="unclear">
+		<!-- <span class="unclear">
 				<xsl:choose>
 					<xsl:when test="@cert">
 						<xsl:attribute name="title">
@@ -1378,6 +1408,22 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			<xsl:apply-templates select="node()"/>
+		</span> -->
+		<xsl:variable name="unclear-cert">
+			<xsl:choose>
+				<xsl:when test="@cert">
+					<xsl:value-of select="concat('Text unclear; certainty of transcription: ', @cert)"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:text>Text unclear</xsl:text>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<span class="unclear tooltip-container">
+			<span aria-label="Text unclear" aria-describedby="text-unclear" data-tooltip-trigger="">
+				<xsl:apply-templates select="node()"/>
+			</span>
+            <span id="text-unclear" role="tooltip" class="hidden"><xsl:value-of select="$unclear-cert"/></span>
 		</span>
 	</xsl:template>
 

@@ -22,17 +22,16 @@ Table of Contents
 12. note and footnote
 13. Lists and Tables
 14. Milestone and Lines
-15. Object Image Containers (especially spacing)
-16. Object Images
-17. Original Image Captions
-18. Rotate Button
-19. Recovered Texts: Journal & Manuscript
-20. Misc
-
+15. Page Placement
+16. Object Image Containers (especially spacing)
+17. Object Images
+18. Original Image Captions
+19. Rotate Button
+20. Recovered Texts: Journal & Manuscript
+21. Misc
 
 Editorial Elements
 Rend Classes (except colors, lines, and page placement)
-Page Placement
 Colors
 
 Underline for Tagged Items (not used)
@@ -696,7 +695,47 @@ td{
 	visibility: hidden;
 }
 
-/* 15. Object Image Containers (especially spacing) */
+
+/* 15. Page Placement */
+
+.above,
+.below,
+.bottom,
+.sub,
+.sup,
+.top{
+	/* Specified in % so that the sup/sup is the
+	 right size relative to the surrounding text */
+	font-size: 80%;
+
+	/* Zero out the line-height so that it doesn't
+	 interfere with the positioning that follows */
+	line-height: 0;
+
+	/* Note that if you're using Eric Meyer's reset.css, this
+	 is already set and you can remove this rule */
+	 vertical-align: baseline;
+	}
+
+	/* Where the magic happens:makes all browsers position
+	 the sup/sup properly, relative to the surrounding text */
+	position: relative;
+.above,
+.sup,
+.top{
+	/* Move the superscripted text up */
+	top: -0.50em;
+}
+.below,
+.bottom,
+.sub{
+	/* Move the subscripted text down, but only
+	 half as far down as the superscript moved up */
+	bottom: -0.50em;
+}
+
+
+/* 16. Object Image Containers (especially spacing) */
 
 .object .TEI .ms-container .body .div{
 	display: -webkit-flex;
@@ -724,7 +763,7 @@ td{
 }
 
 
-/* 16. Object Images */
+/* 17. Object Images */
 
 .object a img{
 	border: none;
@@ -754,7 +793,7 @@ td{
 } */
 
 
-/* 17. Original Image Captions */
+/* 18. Original Image Captions */
 
 .object .TEI .ms-container .body .div p{
 	margin-top: 1rem;
@@ -787,7 +826,7 @@ td{
 }
 
 
-/* 18. Rotate Button */
+/* 19. Rotate Button */
 
 /* #rotate button and .rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
@@ -884,7 +923,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 19. Recovered Texts: Journal & Manuscript */
+/* 20. Recovered Texts: Journal & Manuscript */
 
 .journal{
 	color: #212119;
@@ -989,7 +1028,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 20. Misc */
+/* 21. Misc */
 
 .none{
 	display: none;
@@ -1175,45 +1214,6 @@ u{
 }
 .TEI .ms-container .smallest{
 	font-size: .8em;
-}
-
-
-/* Page Placement */
-
-.above,
-.below,
-.bottom,
-.sub,
-.sup,
-.top{
-	/* Specified in % so that the sup/sup is the
-	 right size relative to the surrounding text */
-	font-size: 80%;
-
-	/* Zero out the line-height so that it doesn't
-	 interfere with the positioning that follows */
-	line-height: 0;
-
-	/* Where the magic happens:makes all browsers position
-	 the sup/sup properly, relative to the surrounding text */
-	position: relative;
-
-	/* Note that if you're using Eric Meyer's reset.css, this
-	 is already set and you can remove this rule */
-	vertical-align: baseline;
-}
-.above,
-.sup,
-.top{
-	/* Move the superscripted text up */
-	top: -0.50em;
-}
-.below,
-.bottom,
-.sub{
-	/* Move the subscripted text down, but only
-	 half as far down as the superscript moved up */
-	bottom: -0.50em;
 }
 
 

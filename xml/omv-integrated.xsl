@@ -885,7 +885,13 @@
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>
+		<!--<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>-->
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))} tooltip-container">
+			<span aria-label="Addition written over existing text" aria-describedby="add-over-text" data-tooltip-trigger="">
+				<xsl:copy-of select="jc:addFE(.)"/>
+			</span>
+			<span id="add-over-text" role="tooltip" class="hidden">Addition written over existing text</span>
+		</ins>
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
@@ -893,14 +899,20 @@
 		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
-	<!-- app: show first rdg, offer alternatives in title -->
+	<!-- app: show first rdg, offer alternatives in tooltip -->
 	<xsl:template match="app">
 		<xsl:variable name="rdg-rdg">
 			<xsl:value-of select="../app/rdg" separator=" [or] "/>
 		</xsl:variable>
-		<span class="app">
+		<!-- <span class="app">
 			<xsl:attribute name="title">This passage can be read in alternate ways: <xsl:value-of select="$rdg-rdg"/></xsl:attribute>
 			<xsl:apply-templates select="rdg[1]"/>
+		</span> -->
+		<span class="app tooltip-container">
+			<span aria-label="Alternate reading" aria-describedby="alternate-reading" data-tooltip-trigger="">
+				<xsl:apply-templates select="rdg[1]"/>
+			</span>
+			<span id="alternate-reading" role="tooltip" class="hidden">This passage can be read in alternate ways:  <xsl:value-of select="$rdg-rdg"/></span>
 		</span>
 	</xsl:template>
 
@@ -933,9 +945,15 @@
 					</xsl:otherwise>
 				</xsl:choose>			
 			</xsl:variable>
-			<u class="sic diplomatic">
+			<!-- <u class="sic diplomatic">
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
 				<xsl:apply-templates/>
+			</u> -->
+			<u class="sic diplomatic tooltip-container">
+                <span aria-label="Correction" aria-describedby="correction" data-tooltip-trigger="">
+					<xsl:apply-templates/>
+                </span>
+                <span id="correction" role="tooltip" class="hidden">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></span>
 			</u>
 	</xsl:template>
 
@@ -953,7 +971,13 @@
 	</xsl:template>
 
 	<xsl:template match="del[following-sibling::add[1][@place='over-text']]" priority="10">
-		<del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del>
+		<!-- <del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del> -->
+		<del class="del-by-over-text tooltip-container">
+			<span aria-label="Text deleted by overwriting" aria-describedby="text-deleted-by-overwriting" data-tooltip-trigger="">
+			<xsl:apply-templates/>
+			</span>
+			<span id="text-deleted-by-overwriting" role="tooltip" class="hidden">Text deleted by over-writing</span>
+		</del>
 	</xsl:template>
 
 	<xsl:template match="figure">
@@ -1101,7 +1125,13 @@
 	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
-			<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
+		<!-- <ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins> -->
+		<ins class="metamark {@rend} {@function} {@place} tooltip-container">
+			<span aria-label="Editorial symbol, mark, or unusual character" aria-describedby="editorial-symbol" data-tooltip-trigger="">
+				#
+			</span>
+			<span id="editorial-symbol" role="tooltip" class="hidden">Editorial symbol, mark, or unusual character</span>
+		</ins>
 	</xsl:template>
 
 	<xsl:template match="milestone">

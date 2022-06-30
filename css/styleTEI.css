@@ -1212,6 +1212,15 @@ u{
 .rdg{
 	border-bottom: 1px dotted #858585;
 }
+.TEI .tooltip-container::before{
+	border-bottom-color: #fff;
+}
+.TEI .tooltip-container.top::before{
+	border-top-color: #fff;
+}
+.TEI [role="tooltip"]{
+	background: #fff;
+}
 
 
 /* App-A. Underline for Tagged Items (not used) */

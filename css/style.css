@@ -1250,26 +1250,44 @@ sections appear on books & texts
 	margin-bottom: 0;
 }
 /* list of works: details/summary */
-#books .sections .section-container details summary::before,
-#texts .sections .section-container details summary::before{
+#books details,
+#texts details{
+	margin-bottom: 2rem;
+}
+#texts summary,
+#books summary{
+	text-decoration: none;
+	-webkit-box-shadow: #697c6f 0px 2px 6px 0px;
+	-moz-box-shadow: #697c6f 0px 2px 6px 0px;
+	box-shadow: #697c6f 0px 2px 6px 0px;
+	margin: 0 0 0 .5rem;
+	padding: 6px 14px;
+}
+#texts summary{
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+}
+#books summary{
+	border-left: 4px dashed #bdc2bd;
+	margin-top: .25rem;
+}
+#books summary::before,
+#texts summary::before{
 	font-family: "Font Awesome 6 Free";
 	font-weight: 900;
 	white-space: nowrap;
 	color: #4d5b51;
 	margin: 0 .5rem;
 }
-#books .sections .section-container details summary::before{
+#books summary::before{
 	content: "\f518";
 }
-#texts .sections .section-container details summary::before{
+#texts summary::before{
 	content: "\f279";
 }
-#books .sections .section-container details,
-#texts .sections .section-container details{
-	margin-bottom: 2rem;
-}
-#books .sections .section-container summary::after,
-#texts .sections .section-container summary::after{
+#books summary::after,
+#texts summary::after{
 	content: "expand";
 	font-size: .9em;
 	font-family: inherit;
@@ -1280,21 +1298,21 @@ sections appear on books & texts
 	color: #305056;
 	margin: 0 .5rem;
 }
-#books .sections .section-container details[open] > summary:after,
-#texts .sections .section-container details[open] > summary:after{
+#books details[open] > summary:after,
+#texts details[open] > summary:after{
 	content: "collapse";
 }
-#books .sections .section-container details li,
-#texts .sections .section-container details li{
+#books details li,
+#texts details li{
 	padding-left: .25rem;
 }
-#books .sections .section-container details li:not(:last-child),
-#texts .sections .section-container details li:not(:last-child){
+#books details li:not(:last-child),
+#texts details li:not(:last-child){
 	margin-bottom: .5rem;
 }
 /* location info */
-#books .sections .section-container .location-info,
-#texts .sections .section-container .location-info{
+#books .location-info,
+#texts .location-info{
 	font-size: .9em;
 	font-style: italic;
 	color: #4d5b51;

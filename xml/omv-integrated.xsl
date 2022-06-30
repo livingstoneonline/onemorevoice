@@ -257,7 +257,7 @@
 		<xsl:variable name="object-description">
 			<xsl:choose>
 				<xsl:when test="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc">											
-					<p><strong>Object Description:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc/p" /></p>
+					<p><strong>Object description:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc/p"/></p>
 				</xsl:when>
 				<xsl:otherwise/>
 			</xsl:choose>

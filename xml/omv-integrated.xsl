@@ -1072,36 +1072,38 @@
 			<xsl:when test="@unit='pages'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
 			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
 		</xsl:choose> -->
-
-
 		<xsl:choose>
 			<xsl:when test="@unit='chars'">
 				<span class="gap tooltip-container">
 					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 				</span>
 			</xsl:when>
 			<xsl:when test="@unit='words'">
 				<span class="gap tooltip-container">
 					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 				</span>
 			</xsl:when>
 			<xsl:when test="@unit='lines'">
 				<span class="gap tooltip-container">
 					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 				</span>
 			</xsl:when>
 			<xsl:when test="@unit='pages'">
 				<span class="gap tooltip-container">
 					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 				</span>
 			</xsl:when>
 			<xsl:otherwise>
 				<span class="gap tooltip-container">
 					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 				</span>
 			</xsl:otherwise>
 		</xsl:choose>
-		<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 	</xsl:template>
 
 	<!-- do not show graphic -->
@@ -1154,7 +1156,17 @@
 		</xsl:if>
 	</xsl:template>
 
-	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
+	<xsl:template match="metamark">
+		<!-- <span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">
+			#
+		</span> -->
+		<span class="metamark {@rend} {@function} {@place}  tooltip-container">
+			<span aria-label="Editorial symbol, mark, or unusual character" aria-describedby="editorial-symbol" data-tooltip-trigger="">
+				#
+			</span>
+			<span id="editorial-symbol" role="tooltip" class="hidden">Editorial symbol, mark, or unusual character</span>
+		</span>
+	</xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
 		<!-- <ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins> -->
@@ -1365,7 +1377,13 @@
 	</xsl:template>
 
 	<xsl:template match="supplied">			
-		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
+		<!-- <span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
+		</span> -->
+		<span class="supplied tooltip-container">
+			<span aria-label="Supplied text" aria-describedby="supplied-text" data-tooltip-trigger="">
+				<xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
+			</span>
+			<span id="supplied-text" role="tooltip" class="hidden">Text supplied because the original text is illegible, not visible, or missing</span>
 		</span>
 	</xsl:template>
 	

@@ -28,14 +28,14 @@ Table of Contents
 18. Original Image Captions
 19. Rotate Button
 20. Recovered Texts: Journal & Manuscript
-21. Misc
+21. Rend Classes (except colors, lines, and page placement)
+22. Misc
+23. Colors
+24. Editorial Elements
+App-A. Underline for Tagged Items (not used)
+App-B. Coding Review
 
 Editorial Elements
-Rend Classes (except colors, lines, and page placement)
-Colors
-
-Underline for Tagged Items (not used)
-Coding Review
 */
 
 
@@ -461,14 +461,14 @@ label.md_switch{
 	font-style: normal;
 	text-decoration: none;
 	text-indent: 0;
-	color: #305056;
+	color: #315257;
 }
 .manuscript .pb-title,
 .journal .pb-title,
 .journal .TEI .text .body .div p + .pb-title:first-of-type{
 	border-top: 1px dotted #858585;
-	padding-top: 1.5em;
-	margin: 1.5em 0 .5em 0;
+	padding-top: 1.5rem;
+	margin: 1.5rem 0 .5rem 0;
 	width: 100%;
 	display: inline-block;
 }
@@ -498,14 +498,14 @@ label.md_switch{
 /* 10. Line Numbers (not used) */
 
 .linenumber{
-	font-size: .8em;
+	font-size: .9em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 400;
 	color: #4d5b51;
 	text-align: right;
 	float: left;
-	margin-left: -3em; /*!important removed*/
-	width: 1em;
+	margin-left: -3rem; /*!important removed*/
+	width: 1rem;
 	display: none;
 	visibility: hidden;
 }
@@ -513,13 +513,13 @@ label.md_switch{
 	text-indent: -1%;
 }
 .p.noindent.linenumber{
-	text-indent: 1em;
+	text-indent: 1rem;
 }
 .p.center .linenumber{
-	margin-left: -6.4em; /*!important removed*/
+	margin-left: -6.4rem; /*!important removed*/
 }
 .p.right .linenumber{
-	margin-left: -10.5em; /*!important removed*/
+	margin-left: -10.5rem; /*!important removed*/
 }
 .list .linenumber{
 	text-indent: 0;
@@ -580,8 +580,8 @@ label.md_switch{
 .fw{
 	text-indent: 0;
 	text-align: center;
-	line-height: 1.3em;
-	margin-bottom: .5em;
+	line-height: 1.5em;
+	margin-bottom: .5rem;
 	overflow: hidden;
 	position: relative;
 }
@@ -659,7 +659,7 @@ td{
 	width: 50%;
 }
 .manuscript .halfline{
-	margin: 1em auto -1em;
+	margin: 1rem auto -1rem;
 }
 .journal .halfline{
 	margin: 2em auto;
@@ -669,7 +669,7 @@ td{
 	border: 0;
 	border-top: 1px solid #58484b;
 	width: 12.5%;
-	margin: .7em auto;
+	margin: .7rem auto;
 }
 .quarterline{
 	border-bottom: 1px solid #d0d0d0;
@@ -681,11 +681,11 @@ td{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	margin-top: -1em;
-	margin-bottom: 0em;
+	margin-top: -1rem;
+	margin-bottom: 0;
 }
 .third-line{
-	margin-top: 1.5em;
+	margin-top: 1.5rem;
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
@@ -693,6 +693,22 @@ td{
 .vertical.line{
 	display: none;
 	visibility: hidden;
+}
+.dottedunderline{
+	border-bottom: 1px dashed;
+}
+.doubleunderline{
+	border-bottom: 4px double;
+}
+.tripleunderline{
+	border-bottom: 4px double;
+	text-decoration: underline;
+}
+.overline{
+	text-decoration: overline;
+}
+.overline.underline{
+	text-decoration: overline underline;
 }
 
 
@@ -724,14 +740,14 @@ td{
 .sup,
 .top{
 	/* Move the superscripted text up */
-	top: -0.50em;
+	top: -0.50rem;
 }
 .below,
 .bottom,
 .sub{
 	/* Move the subscripted text down, but only
 	 half as far down as the superscript moved up */
-	bottom: -0.50em;
+	bottom: -0.50rem;
 }
 
 
@@ -1028,105 +1044,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 21. Misc */
-
-.none{
-	display: none;
-	visibility: hidden;
-}
-.figure{
-	font-size: .8em;
-	color: #666666;
-}
-.manuscript .figure{
-	border-bottom: 1px #858585 dotted;
-}
-
-
-/* Underline for Tagged Items (not used) */
-
-/* .metamark{
-	color:#666666;
-	border-bottom:1px #666666 dotted;
-} */
-/* .collective,
-.orgName,
-.placeName,
-.geogName,
-.bloc,
-.country,
-.region,
-.settlement{
-	border-bottom: 1px #204A79 dotted;
-} */
-
-
-/* Coding Review */
-
-/* .persName{
-	background-color: yellow;
-}
-.orgName{
-	background-color: orange;
-}
-.collective{
-	background-color: red;
-} */
-/* .geogName{
-	background-color: greenyellow;
-}
-.placeName{
-	background-color: blue;
-}
-.settlement{
-	background-color: purple;
-} */
-/* .region{
-	background-color: gray;
-}
-.country{
-	background-color: burlywood;
-}
-.bloc{
-	background-color: brown;
-} */
-
-
-/* ***Vetted to here*** */
-
-
-/* Editorial Elements */
-
-.del,
-.del-by-over-text{
-	text-decoration: line-through;
-}
-.unclear{
-	color: #706f6a;
-	border-bottom: 1px dotted #858585;
-}
-.gap{
-	border-bottom: 1px dotted #858585;
-}
-ins,
-u{
-	text-decoration: none;
-}
-.sic,
-.corr{
-	border-bottom: 2px dotted #902D27;
-}
-.abbr,
-.expan{
-	display: none;
-	visibility: hidden;
-}
-.rdg{
-	border-bottom: 1px dotted #858585;
-}
-
-
-/* Rend Classes (except colors, lines, and page placement) */
+/* 21. Rend Classes (except colors, lines, and page placement) */
 
 .transcription .caps,
 .transcription .smallcaps{
@@ -1147,16 +1065,6 @@ u{
 .fw .center{
 	display: inline
 }
-.dottedunderline{
-	border-bottom: 1px dashed;
-}
-.doubleunderline{
-	border-bottom: 4px double;
-}
-.tripleunderline{
-	border-bottom: 4px double;
-	text-decoration: underline;
-}
 .indent{
 	text-indent: 25px;
 }
@@ -1176,19 +1084,13 @@ u{
 .TEI .normal{
 	font-size: 1rem;
 }
-.overline{
-	text-decoration: overline;
-}
-.overline.underline{
-	text-decoration: overline underline;
-}
 .journal .right{
 	text-align: left;
 	right: 0;
 	position: absolute;
 }
 .journal.narrow .right{
-	right: 1em;
+	right: 1rem;
 }
 .fw .right,
 .manuscript .right,
@@ -1217,22 +1119,37 @@ u{
 }
 
 
-/* Colors */
+/* 22. Misc */
+
+.none{
+	display: none;
+	visibility: hidden;
+}
+.figure{
+	font-size: .8em;
+	color: #666666;
+}
+.manuscript .figure{
+	border-bottom: 1px #858585 dotted;
+}
+
+
+/* 23. Colors */
 
 .black{
-	color: black;
+	color: #212119;
 }
 .black.gray{
-	color: #65615b;
+	color: #4d5b51;
 }
 .blue{
 	color: blue;
 }
 .blue.black{
-	color: #245a82;
+	color: #305056;
 }
 .brown{
-	color: #664d36;
+	color: #7d4d1c;
 }
 .brown.black{
 	color: #473225;
@@ -1256,13 +1173,91 @@ u{
 	color: purple;
 }
 .red{
-	color: #B33B24;
+	color: red;
 }
 .white{
-	color: #ffffff;
+	color: #fff;
 }
 .yellow{
 	color: yellow;
 }
 
 
+/* 24. Editorial Elements */
+
+.del,
+.del-by-over-text{
+	text-decoration: line-through;
+}
+.unclear{
+	color: #706f6a;
+	border-bottom: 1px dotted #4d5b51; 
+}
+.gap{
+	border-bottom: 1px dotted #4d5b51; 
+}
+ins,
+u{
+	text-decoration: none;
+}
+.sic,
+.corr{
+	border-bottom: 2px dotted #743B41;
+}
+.abbr,
+.expan{
+	display: none;
+	visibility: hidden;
+}
+.rdg{
+	border-bottom: 1px dotted #858585;
+}
+
+
+/* App-A. Underline for Tagged Items (not used) */
+
+/* .metamark{
+	color:#666666;
+	border-bottom:1px #666666 dotted;
+} */
+/* .collective,
+.orgName,
+.placeName,
+.geogName,
+.bloc,
+.country,
+.region,
+.settlement{
+	border-bottom: 1px #204A79 dotted;
+} */
+
+
+/* App-B. Coding Review */
+
+/* .persName{
+	background-color: yellow;
+}
+.orgName{
+	background-color: orange;
+}
+.collective{
+	background-color: red;
+} */
+/* .geogName{
+	background-color: greenyellow;
+}
+.placeName{
+	background-color: blue;
+}
+.settlement{
+	background-color: purple;
+} */
+/* .region{
+	background-color: gray;
+}
+.country{
+	background-color: burlywood;
+}
+.bloc{
+	background-color: brown;
+} */

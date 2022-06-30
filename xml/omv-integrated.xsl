@@ -631,7 +631,7 @@
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
-					<p><strong>Content form &amp; genealogy:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history"/></p>
+					<p><strong>Form &amp; transmission history:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history"/></p>
 					<xsl:copy-of select="$object-description"/>
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
@@ -663,7 +663,7 @@
 				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
-					<p><strong>Content form &amp; genealogy:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history"/></p>
+					<p><strong>Form &amp; transmission history:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history"/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>

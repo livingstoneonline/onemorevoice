@@ -887,13 +887,13 @@
 	</xsl:template>
 
 	<xsl:template match="add[@place='over-text']">
-		<!--<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>-->
-		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))} tooltip-container">
+		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>
+		<!--<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))} tooltip-container">
 			<span aria-label="Addition written over existing text" aria-describedby="add-over-text" data-tooltip-trigger="">
 				<xsl:copy-of select="jc:addFE(.)"/>
 			</span>
 			<span id="add-over-text" role="tooltip" class="hidden">Addition written over existing text</span>
-		</ins>
+		</ins>-->
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
@@ -906,16 +906,16 @@
 		<xsl:variable name="rdg-rdg">
 			<xsl:value-of select="../app/rdg" separator=" [or] "/>
 		</xsl:variable>
-		<!-- <span class="app">
+		<span class="app">
 			<xsl:attribute name="title">This passage can be read in alternate ways: <xsl:value-of select="$rdg-rdg"/></xsl:attribute>
 			<xsl:apply-templates select="rdg[1]"/>
-		</span> -->
-		<span class="app tooltip-container">
+		</span>
+		<!-- <span class="app tooltip-container">
 			<span aria-label="Alternate reading" aria-describedby="alternate-reading" data-tooltip-trigger="">
 				<xsl:apply-templates select="rdg[1]"/>
 			</span>
 			<span id="alternate-reading" role="tooltip" class="hidden">This passage can be read in alternate ways:  <xsl:value-of select="$rdg-rdg"/></span>
-		</span>
+		</span>-->
 	</xsl:template>
 
 	<xsl:template match="cb">
@@ -947,16 +947,16 @@
 					</xsl:otherwise>
 				</xsl:choose>			
 			</xsl:variable>
-			<!-- <u class="sic diplomatic">
+			<u class="sic diplomatic">
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
 				<xsl:apply-templates/>
-			</u> -->
-			<u class="sic diplomatic tooltip-container">
+			</u>
+			<!-- <u class="sic diplomatic tooltip-container">
                 <span aria-label="Correction" aria-describedby="correction" data-tooltip-trigger="">
 					<xsl:apply-templates/>
                 </span>
                 <span id="correction" role="tooltip" class="hidden">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></span>
-			</u>
+			</u> -->
 	</xsl:template>
 
 	<xsl:template match="corr|expan|reg"/>
@@ -973,13 +973,13 @@
 	</xsl:template>
 
 	<xsl:template match="del[following-sibling::add[1][@place='over-text']]" priority="10">
-		<!-- <del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del> -->
-		<del class="del-by-over-text tooltip-container">
+		<del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del>
+		<!-- <del class="del-by-over-text tooltip-container">
 			<span aria-label="Text deleted by overwriting" aria-describedby="text-deleted-by-overwriting" data-tooltip-trigger="">
 			<xsl:apply-templates/>
 			</span>
 			<span id="text-deleted-by-overwriting" role="tooltip" class="hidden">Text deleted by over-writing</span>
-		</del>
+		</del>-->
 	</xsl:template>
 
 	<xsl:template match="figure">
@@ -1065,14 +1065,14 @@
 	</xsl:template>
 
 	<xsl:template match="gap[@extent][@unit]" priority="10">
-		<!-- <xsl:choose>
-			<xsl:when test="@unit='chars'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
-			<xsl:when test="@unit='words'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
-			<xsl:when test="@unit='lines'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
-			<xsl:when test="@unit='pages'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
-			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
-		</xsl:choose> -->
 		<xsl:choose>
+			<xsl:when test="@unit='chars'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='words'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='lines'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
+			<xsl:when test="@unit='pages'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
+			<xsl:otherwise><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
+		</xsl:choose>
+		<!--<xsl:choose>
 			<xsl:when test="@unit='chars'">
 				<span class="gap tooltip-container">
 					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span>
@@ -1103,7 +1103,7 @@
 					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
 				</span>
 			</xsl:otherwise>
-		</xsl:choose>
+		</xsl:choose>-->
 	</xsl:template>
 
 	<!-- do not show graphic -->
@@ -1157,25 +1157,23 @@
 	</xsl:template>
 
 	<xsl:template match="metamark">
-		<!-- <span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">
-			#
-		</span> -->
-		<span class="metamark {@rend} {@function} {@place}  tooltip-container">
+		<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
+		<!-- <span class="metamark {@rend} {@function} {@place}  tooltip-container">
 			<span aria-label="Editorial symbol, mark, or unusual character" aria-describedby="editorial-symbol" data-tooltip-trigger="">
 				#
 			</span>
 			<span id="editorial-symbol" role="tooltip" class="hidden">Editorial symbol, mark, or unusual character</span>
-		</span>
+		</span> -->
 	</xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
-		<!-- <ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins> -->
-		<ins class="metamark {@rend} {@function} {@place} tooltip-container">
+		<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
+		<!-- <ins class="metamark {@rend} {@function} {@place} tooltip-container">
 			<span aria-label="Editorial symbol, mark, or unusual character" aria-describedby="editorial-symbol" data-tooltip-trigger="">
 				#
 			</span>
 			<span id="editorial-symbol" role="tooltip" class="hidden">Editorial symbol, mark, or unusual character</span>
-		</ins>
+		</ins> -->
 	</xsl:template>
 
 	<xsl:template match="milestone">
@@ -1376,15 +1374,15 @@
 		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
-	<xsl:template match="supplied">			
-		<!-- <span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
-		</span> -->
-		<span class="supplied tooltip-container">
+	<xsl:template match="supplied">	
+		<span class="supplied"><xsl:attribute name="title">Text supplied because the original text is illegible, not visible, or missing.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
+		</span>
+		<!-- <span class="supplied tooltip-container">
 			<span aria-label="Supplied text" aria-describedby="supplied-text" data-tooltip-trigger="">
 				<xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
 			</span>
 			<span id="supplied-text" role="tooltip" class="hidden">Text supplied because the original text is illegible, not visible, or missing</span>
-		</span>
+		</span> -->
 	</xsl:template>
 	
 	<!-- Beginning of elements that go with table -->
@@ -1414,22 +1412,22 @@
 	</xsl:template>
 
 	<xsl:template match="unclear">
-		<!-- <span class="unclear">
+		<span class="unclear">
 				<xsl:choose>
 					<xsl:when test="@cert">
 						<xsl:attribute name="title">
-							<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
+							<xsl:value-of select="concat('Text ', name(), '; certainty of transcription: ', @cert)"/>
 						</xsl:attribute>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:attribute name="title">
-							<xsl:value-of select="concat('word(s) ', name())"/>
+							<xsl:value-of select="concat('Text ', name())"/>
 						</xsl:attribute>
 					</xsl:otherwise>
 				</xsl:choose>
 			<xsl:apply-templates select="node()"/>
-		</span> -->
-		<xsl:variable name="unclear-cert">
+		</span>
+		<!-- <xsl:variable name="unclear-cert">
 			<xsl:choose>
 				<xsl:when test="@cert">
 					<xsl:value-of select="concat('Text unclear; certainty of transcription: ', @cert)"/>
@@ -1444,7 +1442,7 @@
 				<xsl:apply-templates select="node()"/>
 			</span>
             <span id="text-unclear" role="tooltip" class="hidden"><xsl:value-of select="$unclear-cert"/></span>
-		</span>
+		</span> -->
 	</xsl:template>
 
 	<xsl:template match="w">

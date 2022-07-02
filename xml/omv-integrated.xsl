@@ -64,7 +64,7 @@
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
 				<!-- <link rel="preload" as="style" href="/css/critical.css?=newVers_0010" onload="this.rel='stylesheet'"/> -->
-				<!-- <link rel="preload" as="style" href="/css/style.css?=newVers_0011" onload="this.rel='stylesheet'"/> -->
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0011" onload="this.rel='stylesheet'"/>
 				<!-- <link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/> -->
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
@@ -421,7 +421,7 @@
 		<xsl:variable name="subtitle">
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}">Visual Materials</a></xsl:when>
-				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}">Recovered Text</a></xsl:otherwise>
+				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}">Recovered Texts</a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="subtitle-icon">

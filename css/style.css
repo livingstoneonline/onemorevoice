@@ -554,6 +554,13 @@ article > .toc + section{
 
 /* 08. Home/Categories Top */
 
+.home .introduction-section, 
+.categories .introduction-section{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
 .home .introduction-section .image-wrapper,
 .categories .introduction-section .image-wrapper{
 	display: block;
@@ -587,10 +594,10 @@ article > .toc + section{
 		max-width: 700px;
 	}
 	.home .introduction-section .introduction-text{
-		padding: 0;
+		padding: 0 2rem;
 	}
 	.categories .introduction-section .introduction-text{
-		padding: 2rem 1rem;
+		padding: 2rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -606,9 +613,8 @@ article > .toc + section{
 		border-radius: 6px;
 		padding: 2rem;
 		position: absolute;
-    left: 50%;
 		top: 38%;
-    transform: translate(-50%, -38%);
+    transform: translate(0, -38%);
 	}
 	.home .introduction-section .introduction-text{
 		width: 700px;
@@ -766,11 +772,13 @@ article > .toc + section{
 	}
 }
 /* image container */
-.essay .page-details.horizontal figure{
-	min-width: 478px;
-}
-.essay .page-details.vertical figure{
-	min-width: 488px;
+@media only screen and (min-width: 768px){
+	.essay .page-details.horizontal figure{
+		min-width: 478px;
+	}
+	.essay .page-details.vertical figure{
+		min-width: 488px;
+	}
 }
 /* @media only screen and (min-width: 1200px){	
 	.essay .page-details.horizontal figure{

@@ -150,13 +150,13 @@ Editorial Elements
 	}
 }
 /* This item turns off wide manuscript items on mobile. Also see corresponding narrow-mobile and switches coding plus XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+/* @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	.manuscript,
 	.journal{
 		display: none;
 		visibility: hidden;
 	}
-}
+} */
 
 
 /* 05. Transcription Headings */
@@ -238,13 +238,19 @@ Editorial Elements
 	justify-content: flex-start;
 	gap: .25rem;
 }
+@media only screen and (min-width: 480px){
+	.transcription p.associated-links{
+		gap: .5rem;
+	}
+}
 .transcription p.associated-links a{
 	font-variant: normal;
 	text-decoration: none;
+	white-space: nowrap;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	padding: 1px 10px;
+	padding: 1px 5px;
 }
 @media only screen and (min-width: 992px){
 	.transcription p.associated-links a.item-details-link{
@@ -279,12 +285,12 @@ Editorial Elements
 	visibility: hidden;
 }
 /* This item turns on the narrow-mobile warning See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+/* @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	.narrow-mobile{
 		display: block;
 		visibility: visible;
 	}
-}
+} */
 
 
 /* 08. Switches */
@@ -319,13 +325,13 @@ Editorial Elements
 	}
 }
 /* This item turns off wide manuscript items and switches on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+/* @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	.manuscript-switches,
 	.journal-switches{
 		display: none;
 		visibility: hidden;
 	}
-}
+} */
 /* hide regular checkbox */
 .md_switch [type=checkbox]{
 	pointer-events: none;
@@ -350,7 +356,9 @@ label.md_switch::after{
 }
 /* label */
 label.md_switch{
-	font-weight: 600;
+	font-size: .85rem;
+	font-weight: 700;
+	font-family: 'Merriweather', serif;
 	padding-left: 12px;
 }
 /* full toggle position/qualities */
@@ -406,6 +414,11 @@ label.md_switch{
 	height: 1.45rem;
 	width: 1.45rem;
 	transform: translate(calc(3.3em - 100%), -50%);
+}
+@media only screen and (min-width: 768px){
+	.md_switch [type=checkbox]:checked + .md_switch__toggle::after{
+		transform: translate(calc(3.9em - 100%), -50%);
+	}
 }
 /* focus */
 .md_switch [type=checkbox]:focus + .md_switch__toggle{

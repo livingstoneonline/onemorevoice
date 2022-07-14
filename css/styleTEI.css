@@ -193,12 +193,33 @@ Editorial Elements
 .transcription h3.subtitle{
 	margin: 0;
 	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
 }
-.transcription h3.subtitle.recovered-text::before{
-	content: "\f279";
+.transcription h3.subtitle a{
+	font-size: .9rem;
+	font-variant: normal;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: #697c6f 0px 1px 4px 0px;
+	-moz-box-shadow: #697c6f 0px 1px 4px 0px;
+	box-shadow: #697c6f 0px 1px 4px 0px;
+	padding: 1px 10px;
 }
-.transcription h3.subtitle.visual-material::before{
-	content: "\f06e";
+@media only screen and (min-width: 992px){
+	.transcription h3.subtitle a.item-details-link{
+		display: none;
+		visibility: hidden;
+	}
+}
+.transcription h3.subtitle a i{
+	color: #4d5b51;
+	margin: 0 .25rem 0 0;
 }
 .TEI .text .body .div h3,
 .TEI .text .body .div h4{

@@ -13,25 +13,26 @@ Table of Contents
 03. text-object-details Styling
 04. manuscript-journal-object Styling
 05. Transcription Headings
-06. Narrow Mobile and Warning Box
-07. Switches
-08. Toggle Classes
-09. Page Breaks and Blank Pages
-10. Line Numbers (not used)
-11. p and ab
-12. note and footnote
-13. Lists and Tables
-14. Milestone and Lines
-15. Page Placement
-16. Object Image Containers (especially spacing)
-17. Object Images
-18. Original Image Captions
-19. Rotate Button
-20. Recovered Texts: Journal & Manuscript
-21. Rend Classes (except colors, lines, and page placement)
-22. Misc
-23. Colors
-24. Editorial Elements
+06. Associated Links
+07. Narrow Mobile and Warning Box
+08. Switches
+09. Toggle Classes
+10. Page Breaks and Blank Pages
+11. Line Numbers (not used)
+12. p and ab
+13. note and footnote
+14. Lists and Tables
+15. Milestone and Lines
+16. Page Placement
+17. Object Image Containers (especially spacing)
+18. Object Images
+19. Original Image Captions
+20. Rotate Button
+21. Recovered Texts: Journal & Manuscript
+22. Rend Classes (except colors, lines, and page placement)
+23. Misc
+24. Colors
+25. Editorial Elements
 App-A. Underline for Tagged Items (not used)
 App-B. Coding Review
 
@@ -190,37 +191,6 @@ Editorial Elements
 		color: #2F4F55;
 	}
 }
-.transcription h3.subtitle{
-	margin: 0;
-	padding: 0;
-	display: -webkit-flex;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-}
-.transcription h3.subtitle a{
-	font-size: .9rem;
-	font-variant: normal;
-	text-decoration: none;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	-webkit-box-shadow: #697c6f 0px 1px 4px 0px;
-	-moz-box-shadow: #697c6f 0px 1px 4px 0px;
-	box-shadow: #697c6f 0px 1px 4px 0px;
-	padding: 1px 10px;
-}
-@media only screen and (min-width: 992px){
-	.transcription h3.subtitle a.item-details-link{
-		display: none;
-		visibility: hidden;
-	}
-}
-.transcription h3.subtitle a i{
-	color: #4d5b51;
-	margin: 0 .25rem 0 0;
-}
 .TEI .text .body .div h3,
 .TEI .text .body .div h4{
 		font-weight: normal;
@@ -255,7 +225,43 @@ Editorial Elements
 }
 
 
-/* 06. Narrow Mobile and Warning Box */
+/* 06. Associated Links */
+
+.transcription p.associated-links{
+	font-size: .93rem;
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: .25rem;
+}
+.transcription p.associated-links a{
+	font-variant: normal;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 1px 10px;
+}
+@media only screen and (min-width: 992px){
+	.transcription p.associated-links a.item-details-link{
+		display: none;
+		visibility: hidden;
+	}
+}
+.transcription p.associated-links a i{
+	color: #4d5b51;
+	margin: 0 .35rem 0 0;
+}
+.transcription p.associated-links a span{
+	text-decoration: underline;
+}
+
+
+/* 07. Narrow Mobile and Warning Box */
 
 @media only screen and (min-width: 992px){
 	.warning-box{
@@ -281,7 +287,7 @@ Editorial Elements
 }
 
 
-/* 07. Switches */
+/* 08. Switches */
 
 /* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
 .manuscript-switches,
@@ -425,7 +431,7 @@ label.md_switch{
 }
 
 
-/*  08. Toggle Classes */
+/*  09. Toggle Classes */
 
 .change-color .manuscript .TEI{
 	border: 1px solid #212119;
@@ -473,7 +479,7 @@ label.md_switch{
 }
 
 
-/* 09. Page Breaks and Blank Pages */
+/* 10. Page Breaks and Blank Pages */
 
 .pb-title{
 	font-size: .9em;
@@ -516,7 +522,7 @@ label.md_switch{
 }
 
 
-/* 10. Line Numbers (not used) */
+/* 11. Line Numbers (not used) */
 
 .linenumber{
 	font-size: .9em;
@@ -547,7 +553,7 @@ label.md_switch{
 }
 
 
-/* 11. p and ab */
+/* 12. p and ab */
 
 .p,
 .ab{
@@ -588,7 +594,7 @@ label.md_switch{
 }
 
 
-/* 12. note and footnote */
+/* 13. note and footnote */
 
 .note{
 	text-align: left;
@@ -617,7 +623,7 @@ label.md_switch{
 }
 
 
-/* 13. Lists and Tables */
+/* 14. Lists and Tables */
 
 .TEI ol,
 .TEI ul{
@@ -645,7 +651,7 @@ td{
 }
 
 
-/* 14. Milestone and Lines */
+/* 15. Milestone and Lines */
 
 .milestone{
 	display: block;
@@ -733,7 +739,7 @@ td{
 }
 
 
-/* 15. Page Placement */
+/* 16. Page Placement */
 
 .above,
 .below,
@@ -772,7 +778,7 @@ td{
 }
 
 
-/* 16. Object Image Containers (especially spacing) */
+/* 17. Object Image Containers (especially spacing) */
 
 .object .TEI .ms-container .body .div{
 	display: -webkit-flex;
@@ -800,7 +806,7 @@ td{
 }
 
 
-/* 17. Object Images */
+/* 18. Object Images */
 
 .object a img{
 	border: none;
@@ -830,7 +836,7 @@ td{
 } */
 
 
-/* 18. Original Image Captions */
+/* 19. Original Image Captions */
 
 .object .TEI .ms-container .body .div p{
 	margin-top: 1rem;
@@ -863,7 +869,7 @@ td{
 }
 
 
-/* 19. Rotate Button */
+/* 20. Rotate Button */
 
 /* #rotate button and .rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
@@ -960,7 +966,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 20. Recovered Texts: Journal & Manuscript */
+/* 21. Recovered Texts: Journal & Manuscript */
 
 .journal{
 	color: #212119;
@@ -1065,7 +1071,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 21. Rend Classes (except colors, lines, and page placement) */
+/* 22. Rend Classes (except colors, lines, and page placement) */
 
 .transcription .caps,
 .transcription .smallcaps{
@@ -1140,7 +1146,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 22. Misc */
+/* 23. Misc */
 
 .none{
 	display: none;
@@ -1155,7 +1161,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 23. Colors */
+/* 24. Colors */
 
 .black{
 	color: #212119;
@@ -1204,7 +1210,7 @@ button::-moz-focus-inner{
 }
 
 
-/* 24. Editorial Elements */
+/* 25. Editorial Elements */
 
 .del,
 .del-by-over-text{

@@ -447,6 +447,9 @@ section h4:not(:first-of-type){
 .toc li{
 	padding-left: .125rem;
 }
+.toc details li a{
+	margin-left: .25rem;
+}
 
 
 /* 05. Main */
@@ -3200,7 +3203,7 @@ details[open] > p:first-of-type{
 }
 details[open] > ul,
 details[open] > ol{
-	margin: .75rem 0 0 1rem;
+	margin: 0 0 0 1rem;
 	padding: .5rem 0 0 .5rem;
 }
 .toc details[open] > ol{

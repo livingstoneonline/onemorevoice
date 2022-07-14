@@ -765,7 +765,7 @@
 		<main id="main" aria-labelledby="item-title">
 			<section class="text-object">
 				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
-				<p class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></p>
+				<p class="associated-links {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></p>
 				<xsl:copy-of select="$warning"/>
 				<xsl:copy-of select="$text-object"/>
 			</section>

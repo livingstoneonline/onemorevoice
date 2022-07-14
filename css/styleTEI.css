@@ -150,13 +150,13 @@ Editorial Elements
 	}
 }
 /* This item turns off wide manuscript items on mobile. Also see corresponding narrow-mobile and switches coding plus XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-/* @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	.manuscript,
 	.journal{
 		display: none;
 		visibility: hidden;
 	}
-} */
+}
 
 
 /* 05. Transcription Headings */
@@ -285,12 +285,12 @@ Editorial Elements
 	visibility: hidden;
 }
 /* This item turns on the narrow-mobile warning See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-/* @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	.narrow-mobile{
 		display: block;
 		visibility: visible;
 	}
-} */
+}
 
 
 /* 08. Switches */
@@ -325,13 +325,13 @@ Editorial Elements
 	}
 }
 /* This item turns off wide manuscript items and switches on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
-/* @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
 	.manuscript-switches,
 	.journal-switches{
 		display: none;
 		visibility: hidden;
 	}
-} */
+}
 /* hide regular checkbox */
 .md_switch [type=checkbox]{
 	pointer-events: none;

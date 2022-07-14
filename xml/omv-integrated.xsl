@@ -97,7 +97,7 @@
 								</a>
 							</span>
 							<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
-								<i class="fa fa-bars"></i>
+								<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
 							</a>
 						</nav>
 					</div>
@@ -420,8 +420,8 @@
 		</xsl:variable>
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}">Visual Materials</a></xsl:when>
-				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}">Recovered Texts</a></xsl:otherwise>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> Visual Materials</a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> Item Details</a></xsl:when>
+				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> Recovered Texts</a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> Item Details</a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="subtitle-icon">

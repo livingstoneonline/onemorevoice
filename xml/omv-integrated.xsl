@@ -420,8 +420,8 @@
 		</xsl:variable>
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> Visual Materials</a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> Item Details</a></xsl:when>
-				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> Recovered Texts</a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> Item Details</a></xsl:otherwise>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
+				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="subtitle-icon">
@@ -765,7 +765,7 @@
 		<main id="main" aria-labelledby="item-title">
 			<section class="text-object">
 				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
-				<h3 class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></h3>
+				<p class="subtitle {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></p>
 				<xsl:copy-of select="$warning"/>
 				<xsl:copy-of select="$text-object"/>
 			</section>

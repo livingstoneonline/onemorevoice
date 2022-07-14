@@ -890,6 +890,10 @@ nav.overlay-nav .button-container a.external.home-icon{
 	height: fit-content;
 	margin: 0;
 }
+[aria-describedby="zotero-icon-1"],
+[aria-describedby="zotero-icon-2"]{
+	margin-top: 0.15rem;
+}
 @media only screen and (min-width: 480px){
 	nav.overlay-nav .button-container a.external{
     display: -webkit-flex;

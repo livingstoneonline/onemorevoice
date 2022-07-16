@@ -1019,15 +1019,17 @@ sections appear on books & texts
 		padding: 1rem;
 }
 #books .sections .section-container,
-#texts .sections .section-container {
+#texts .sections .section-container{
 	font-size: 1.05rem;
 	padding: 1rem 1.5rem;
 	position: relative;
 	display: -webkit-flex; 
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
 	gap: 1.25rem;
+}
+#texts .sections .section-container{
+	flex-grow: 1;
 }
 #books .sections .section-container.title-slide,
 #texts .sections .section-container.title-slide{

@@ -531,6 +531,15 @@ section.content:not(.recovered) article section section:not(:first-of-type),
 		margin-top: 4rem;
 	}	
 }
+/* used on collections.html */
+section.content:not(.recovered) article section .section-divider + section:not(:first-of-type){
+	margin-top: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+	section.content:not(.recovered) article section .section-divider + section:not(:first-of-type){
+		margin-top: 2rem;
+	}	
+}
 /* Section after TOC spacing */
 article > .toc + section{
 	margin-top: 2rem;
@@ -2589,20 +2598,25 @@ hr.section-divider{
 	border-top: 4px solid #bdc2bd;
 }
 section + hr.section-divider{
-	margin-top: 2.5rem;
+	margin-top: 1.5rem;
 }
-.content.recovered.full-page section + hr.section-divider{
+@media only screen and (min-width: 768px){
+	section + hr.section-divider{
+		margin-top: 2rem;
+	}	
+}
+.content.recovered section + hr.section-divider{
 	border-top: 2px solid #bdc2bd;
 	margin: 2.25rem auto 0;
 	width: calc(100% - 1rem);
 }
 @media only screen and (min-width: 992px){
-	.content.recovered.full-page section + hr.section-divider{
+	.content.recovered section + hr.section-divider{
 		width: calc(100% - 2.5rem);
 	}
 }
 @media only screen and (min-width: 1200px){
-	.content.recovered.full-page section + hr.section-divider{
+	.content.recovered section + hr.section-divider{
 		width: calc(100% - 3rem);
 	}
 }

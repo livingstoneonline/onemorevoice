@@ -118,7 +118,7 @@ mogrify -format jpg -resize 968x -sampling-factor 4:2:0 -strip -quality 85 -inte
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;
 
 
-****Collections, Full****
+****Initiatives, Full****
 
 mogrify -format jpg -resize 286x286 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/286 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/286 && find . -exec rename 's|.jpg|-286px.jpg|' {} + && cd - && 
 
@@ -139,7 +139,7 @@ mogrify -format jpg -resize 1400x1400 -sampling-factor 4:2:0 -strip -quality 85 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 
 
-****Collections, Half****
+****Initiatives, Half****
 
 mogrify -format jpg -resize 218x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/218 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/218 && find . -exec rename 's|.jpg|-218px.jpg|' {} + && cd - && 
 

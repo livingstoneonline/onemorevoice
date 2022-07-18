@@ -138,8 +138,8 @@ $(function(){var includes=$('[data-include]');jQuery.each(includes,function(){va
 var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>700||document.documentElement.scrollTop>700){mybutton.style.display="flex";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
 </script><script src="/js/manuscript-transform.js"></script><script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script><script>
 // Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0011";document.body.appendChild(element)});
-$(window).on("load",function(){var element=document.createElement("script");element.src="/js/tooltips.js";document.body.appendChild(element)});
-$(window).on("load",function(){var element=document.createElement("script");element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
+$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0011";document.body.appendChild(element)});
+$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
+$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 </script></body>
 </html>

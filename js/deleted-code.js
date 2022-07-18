@@ -18,7 +18,7 @@
 
 // Loads JS file only after rest of page has loaded; adds random string to end of file.
 // Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
+// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
 
 
 // From JS file

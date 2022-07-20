@@ -494,6 +494,15 @@
 							<span class="md_switch__toggle"></span>
 					 	</label>
 				 	</section>
+					<div data-include="switches-buttons">
+						<style>
+						  .manuscript-switches,
+						  .journal-switches{
+						    display: none !important;
+						    visibility: hidden !important;
+						  }
+						</style>
+					</div>
 					<section class="narrow-mobile" aria-labelledby="mobile">
 						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 					</section>
@@ -570,6 +579,15 @@
 							<span class="md_switch__toggle"></span>
 					 	</label>
 				 	</section>
+					<div data-include="switches-buttons">
+						<style>
+						  .manuscript-switches,
+						  .journal-switches{
+						    display: none !important;
+						    visibility: hidden !important;
+						  }
+						</style>
+					</div>
 					<section class="narrow-mobile" aria-labelledby="mobile">
 						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 					</section>
@@ -1031,6 +1049,14 @@
 				</span>
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
+				<div data-include="switches-buttons">
+					<style>
+					  #rotate-button{
+					    display: none !important;
+					    visibility: hidden !important;
+					  }
+					</style>
+				</div>
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
 			</xsl:when>
 			<!-- This option used for all other object images -->

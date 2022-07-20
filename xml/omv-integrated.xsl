@@ -494,7 +494,7 @@
 							<span class="md_switch__toggle"></span>
 					 	</label>
 				 	</section>
-					<div data-include="switches-buttons">
+					<div data-include="empty-file">
 						<style>.manuscript-switches{display:none !important;visibility:hidden !important}</style>
 					</div>
 					<section class="narrow-mobile" aria-labelledby="mobile">
@@ -573,7 +573,7 @@
 							<span class="md_switch__toggle"></span>
 					 	</label>
 				 	</section>
-					<div data-include="switches-buttons">
+					<div data-include="empty-file">
 						<style>.journal-switches{display:none !important;visibility:hidden !important}</style>
 					</div>
 					<section class="narrow-mobile" aria-labelledby="mobile">
@@ -1037,7 +1037,7 @@
 				</span>
 				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
-				<div data-include="switches-buttons">
+				<div data-include="empty-file">
 					<style>#rotate-button{display: none !important;visibility: hidden !important;}</style>
 				</div>
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->

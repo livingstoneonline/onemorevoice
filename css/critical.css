@@ -128,6 +128,7 @@ h2{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details h2{
+		line-height: 1.55em;
 		margin-bottom: .5rem;
 	}
 }
@@ -406,11 +407,6 @@ main{
 	.essay .page-details div p{
 		font-size: 1rem;
 		margin: .5rem 0;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.essay .page-details div p{
-		font-size: 1.05rem;
 	}
 }
 /* image container */

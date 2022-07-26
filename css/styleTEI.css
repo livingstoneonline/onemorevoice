@@ -538,32 +538,32 @@ label.md_switch{
 /* 11. Line Numbers (not used) */
 
 .linenumber{
-	font-size: .9em;
+	/* font-size: .9em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 400;
 	color: #4d5b51;
 	text-align: right;
 	float: left;
-	margin-left: -3rem; /*!important removed*/
-	width: 1rem;
+	margin-left: -3rem;
+	width: 1rem; */
 	display: none;
 	visibility: hidden;
 }
-.p .linenumber{
+/* .p .linenumber{
 	text-indent: -1%;
 }
 .p.noindent.linenumber{
 	text-indent: 1rem;
 }
 .p.center .linenumber{
-	margin-left: -6.4rem; /*!important removed*/
+	margin-left: -6.4rem;
 }
 .p.right .linenumber{
-	margin-left: -10.5rem; /*!important removed*/
+	margin-left: -10.5rem;
 }
 .list .linenumber{
 	text-indent: 0;
-}
+} */
 
 
 /* 12. p and ab */
@@ -685,11 +685,11 @@ td{
 }
 .doubleline,
 .quarterline.doubleline{
-	border-top: 4px double #8c8b8b !important;
+	border-top: 4px double #858585 !important;
 }
 .tripleline{
 	line-height: 1.9em;
-	border-top: 4px double #8c8b8b !important;
+	border-top: 4px double #858585 !important;
 }
 .halfline{
 	border-bottom: 1px solid #d0d0d0;

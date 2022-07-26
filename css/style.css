@@ -812,7 +812,7 @@ article > .toc + section{
 	padding: 0;
 	position: relative;
 }
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
 	.image-wrapper{
 		position: inherit;
 	}
@@ -836,24 +836,24 @@ article > .toc + section{
 	border-radius: 4px;
 	padding: 4px 6px 2px;
 }
-@media screen and (min-width: 480px){
+@media only screen and (min-width: 480px){
 	 .caption{
 		font-size: 1.6rem;
 		padding: 5px 7px 3px;
 	}
 }
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 	 .caption{
 		font-size: 1.8rem;
 		padding: 6px 8px 4px;
 	}
 }
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
 	.caption-icon{
 		right: .75rem;
 	}
 }
-@media screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px){
 	.vertical .caption-icon{
 		bottom: 1.25rem;
 	}
@@ -1429,7 +1429,6 @@ sections appear on books & texts
 
 /* see https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/ */
 img{
-	font-weight: 300;
 	color: transparent;
 	background: #E7E9E7;
 	width: 100%;
@@ -2695,7 +2694,7 @@ aside.warning-box.language{
 	font-variant: small-caps;
 }
 strong{
-	font-weight: bolder;
+	font-weight: 600;
 }
 .underline{
 	text-decoration: underline;

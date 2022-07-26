@@ -64,7 +64,7 @@
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
 				<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0011" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
 				<!-- <link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/> -->
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
@@ -124,7 +124,7 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0011"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
 				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0004"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"/>

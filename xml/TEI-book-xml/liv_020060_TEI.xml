@@ -111,7 +111,11 @@
                     <date type="composition" when="1903">[1903]</date><!-- Can be type="composition" or type="publication" -->
                     <date type="publication" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
+                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				
+				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Q&amp;A with a series of unnamed individuals from the Congo Free State, as conveyed by two unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents.</p></history>
+				</msDesc>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -156,9 +160,9 @@
 <milestone unit="section" rend="half-line"/>
 <p rend="center">Inclosure 6 in No. 3.</p>
 
-<lb/><p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 56.)--></p>
+<p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 56.)--></p>
 
-<lb/><p rend="center italic">Note of Information taken in the Charge of Cutting off the boy <persName><persName>I I</persName></persName>’s hand, preferred to 
+<p rend="center italic">Note of Information taken in the Charge of Cutting off the boy <persName><persName>I I</persName></persName>’s hand, preferred to 
 <persName>Mr. Casement</persName> by the People of <settlement>E*</settlement>.</p>
 
 <lb/><p>AT village of <settlement>E*</settlement> in the <region>C D* country</region>, on left bank of <geogName>E D*</geogName>, tributary of the <geogName>X* River</geogName>.</p>

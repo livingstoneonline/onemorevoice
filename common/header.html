@@ -1,0 +1,164 @@
+  <!-- <span class="nav-container"> -->
+    <!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+    <div id="skip">
+        <a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+    </div>
+
+    <nav id="main-nav">
+        <span class="logo-container">
+            <span class="tooltip-container">
+                <a href="/index.html" aria-label="Go to Home Page" aria-describedby="logo-icon" data-tooltip-trigger>
+                    <img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+                    <h1 id="logo">One More Voice</h1>
+                </a>
+                <span id="logo-icon" role="tooltip" class="hidden">Link to Home Page</span>
+            </span>
+        </span>
+
+        <span class="button-container" id="button-container">
+            <div class="tooltip-container menu-icon desktop">
+                <button type="button" class="hamburger-menu" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="menu-1" data-tooltip-trigger>
+                    <i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+                </button>
+                <p id="menu-1" role="tooltip" class="hidden">Menu</p>
+            </div>
+
+            <div class="tooltip-container close-icon desktop">
+                <button type="button" class="close" onclick="closeNav()" tabindex="0" aria-label="Close menu" aria-describedby="close-1" data-tooltip-trigger>
+                    <i class="fa fa-times" aria-label="Close icon" aria-hidden="true"></i>
+                </button>
+                <p id="close-1" role="tooltip" class="hidden">Close</p>
+            </div>
+
+            <span class="tooltip-container">
+                <a class="external" href="/site_map.html" aria-label="Go to Site Map" aria-describedby="sitemap-icon" data-tooltip-trigger>
+                    <i class="fa fa-map-marker" aria-label="Site Map icon" aria-hidden="true"></i>
+                </a>
+                <span id="sitemap-icon" role="tooltip" class="hidden">Site Map</span>
+            </span>
+
+            <span class="tooltip-container home-icon">
+                <a class="external home-icon" href="/" aria-label="Go to Home Page" aria-describedby="home-icon" data-tooltip-trigger>
+                    <i class="fa fa-home" aria-label="Home Page icon" aria-hidden="true"></i>
+                </a>
+                <span id="home-icon" role="tooltip" class="hidden">Home</span>
+            </span>
+
+            <span class="tooltip-container">
+                <a class="external" href="mailto:awisnicki@yahoo.com" aria-label="Go to Email (external client)" aria-describedby="email-icon-1" data-tooltip-trigger>
+                    <i class="fas fa-envelope" aria-label="Email icon" aria-hidden="true"></i>
+                </a>
+                <span id="email-icon-1" role="tooltip" class="hidden">Email<br/><span style="font-size:.9em;">(external client)</span></span>
+            </span>
+            
+            <span class="tooltip-container">
+                <a class="external" href="https://github.com/livingstoneonline/onemorevoice/" aria-label="Go to GitHub Repo (external link)" aria-describedby="github-icon-1" data-tooltip-trigger>
+                    <i class="fa-brands fa-github-alt" aria-label="GitHub icon" aria-hidden="true"></i>
+                </a>
+                <span id="github-icon-1" role="tooltip" class="hidden">GitHub<br/><span style="font-size:.9em;">(external link)</span></span>
+            </span>
+
+            <span class="tooltip-container">
+                <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice" aria-label="Go to Zotero Library (external link)" aria-describedby="zotero-icon-1" data-tooltip-trigger>
+                    <i class="fa fa-zotero" aria-label="Zotero icon" aria-hidden="true"></i>
+                </a>
+                <span id="zotero-icon-1" role="tooltip" class="hidden">Zotero<br/><span style="font-size:.9em;">(external link)</span></span>
+            </span>
+
+            <!-- <a class="external" href="https://livingstoneonline.wordpress.com/" aria-label="Go to Wordpress Blog"><i class="fa-brands fa-wordpress" title="Wordpress" aria-label="Wordpress icon" aria-hidden="true"></i></a> -->
+
+            <!-- <a class="external" href=""><i class="fa fa-search" title="Search" aria-label="Search icon" aria-hidden="true"></i></a> -->
+
+            <span class="tooltip-container translate-widget">
+                <div class="translate" aria-describedby="translate-widget" data-tooltip-trigger>
+                    <span><img width="28" height="28"  src="/img/google.png" aria-label="Google icon" title="Google" alt="Google icon"/></span>
+                    <div id="google_translate_element"></div>
+                </div>
+                <span id="translate-widget" role="tooltip" class="hidden">Google Translate<br/><span style="font-size:.9em;">(machine-generated;<br/>rough translation only)</span></span>
+            </span>
+
+            <div class="tooltip-container menu-icon mobile">
+                <button type="button" class="hamburger-menu" onclick="openNav()" tabindex="0" aria-label="Show menu" aria-describedby="menu-2" data-tooltip-trigger>
+                    <i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+                </button>
+                <p id="menu-2" role="tooltip" class="hidden">Menu</p>
+            </div>
+
+            <div class="tooltip-container close-icon mobile">
+                <button type="button" class="close" onclick="closeNav()" tabindex="0" aria-label="Close menu" aria-describedby="close-2" data-tooltip-trigger>
+                    <i class="fa fa-times" aria-label="Close icon"  aria-hidden="true"></i>
+                </button>
+                <p id="close-2" role="tooltip" class="hidden">Close</p>
+            </div>
+        </span>
+     </nav>
+  <!-- </span> -->
+
+<!-- Overlay adapted from from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
+<div class="overlay" id="overlay-menu">
+    <div></div>
+    <section class="overlay-content">
+      <div class="button-container" id="mobile-icons">
+
+        <span class="tooltip-container">
+            <a class="external" href="https://github.com/livingstoneonline/onemorevoice/" aria-label="Go to GitHub Repo (external link)" aria-describedby="github-icon-2" data-tooltip-trigger>
+                <i class="fa-brands fa-github-alt" aria-label="GitHub icon" aria-hidden="true"></i>
+            </a>
+            <span id="github-icon-2" role="tooltip" class="hidden">GitHub<br/><span style="font-size:.9em;">(external link)</span></span>
+        </span>
+
+        <span class="tooltip-container">
+            <a class="external" href="https://www.zotero.org/groups/2578736/one_more_voice" aria-label="Go to Zotero Library (external link)" aria-describedby="zotero-icon-2" data-tooltip-trigger>
+                <i class="fa fa-zotero" aria-label="Zotero icon" aria-hidden="true"></i>
+            </a>
+            <span id="zotero-icon-2" role="tooltip" class="hidden">Zotero<br/><span style="font-size:.9em;">(external link)</span></span>
+        </span>
+
+        <span class="tooltip-container">
+            <a class="external" href="mailto:awisnicki@yahoo.com" aria-label="Go to Email (external client)" aria-describedby="email-icon-2" data-tooltip-trigger>
+                <i class="fas fa-envelope" aria-label="Email icon" aria-hidden="true"></i>
+            </a>
+            <span id="email-icon-2" role="tooltip" class="hidden">Email<br/><span style="font-size:.9em;">(external client)</span></span>
+        </span>
+      </div>
+      
+      <!--  Accodion adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ -->
+      <div class="text-container">
+        <h2><a href="/index.html"><i class="fa-lg fa fa-home" aria-label="Home Page icon" aria-hidden="true"></i> Home</a></h2>
+        <h2><a href="/materials.html"><i class="fa-solid fa-box-archive" aria-label="Historical Materials icon" aria-hidden="true"></i>  Historical Materials</a></h2>
+        <!-- <div class="accordion-container">
+          <h2>Historical Materials</h2>
+          <ul>
+            <li><a href="/materials.html">[Main Page]</a></li>
+            <li><a href="/texts.html">Recovered Texts</a></li>
+            <li><a href="/initiatives.html">Thematic Initiatives</a></li>
+            <li><a href="/visual_materials.html">Visual Materials</a></li>
+            <li><a href="/books.html">Book-Length Works</a></li>
+            <li><a href="/motion_pictures.html">Motion Pictures</a></li>
+          </ul>
+        </div> -->
+        <h2><a href="/essays.html"><i class="fa-solid fa-pen-clip" aria-label="Critical Essays icon" aria-hidden="true"></i> Critical Essays</a></h2>
+        <h2><a href="/bibliography.html"><i class="fa-solid fa-book-open-reader" aria-label="Bibliography icon" aria-hidden="true"></i> Bibliography</a></h2>
+        <h2><a href="/documents.html"><i class="fa-solid fa-folder-open" aria-label="Documents icon" aria-hidden="true"></i> Project Documents</a></h2>
+        <!-- <div class="accordion-container">
+          <h2>Project Documents</h2>
+          <ul>
+            <li><a href="/documents.html">[Main Page]</a></li>
+            <li><a href="/mission_statement.html">Mission Statement</a></li>
+            <li><a href="/analytical_priorities.html">Analytical Priorities</a></li>
+            <li><a href="/project_design.html">Project Design</a></li>
+            <li><a href="/collaboration.html">Collaboration</a></li>
+            <li><a href="/acknowledgments.html">Acknowledgments</a></li>
+          </ul>
+        </div> -->
+        <h2><a href="/contributors.html"><i class="fa-sm fa-solid fa-user-large" aria-label="Contributors icon" aria-hidden="true"></i> Contributors</a></h2>
+        <h2><a id="overlay-last" href="/site_map.html"><i class="fa-lg fa fa-map-marker" aria-label="Site Map icon" aria-hidden="true"></i> Site Map</a></h2>
+      </div>
+    </section>
+</div>
+
+<script src="/js/tooltips.js"></script>
+<!-- <script type="text/javascript" src="/js/accordion.js"></script> -->
+
+
+

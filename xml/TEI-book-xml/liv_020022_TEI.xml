@@ -84,6 +84,9 @@
                     <date type="publication" when="1867-02-14">14 February 1867</date>
                     <placeName type="compositionPlace">Brownlee’s station, King William’s Town</placeName>
                 </bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Original speech, as edited and published as part of an article in a British periodical.</p></history>
+				</msDesc>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -113,7 +116,7 @@
         </revisionDesc>
     </teiHeader>
 
-    <text>
+    <text n="warning-language">
 		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
 			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
 

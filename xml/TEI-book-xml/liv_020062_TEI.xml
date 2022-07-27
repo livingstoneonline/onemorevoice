@@ -132,6 +132,9 @@
 					<placeName type="compositionPlace">Camp, Platberg</placeName>
 					<!-- Can be "compositionPlace" or "focusRegion" -->
 				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Original letters, as translated (presumably), edited, and published in a British periodical.</p></history>
+				</msDesc>
 			</sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -157,7 +160,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+	<text n="warning-language"><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
@@ -170,7 +173,7 @@
 <!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 <!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_020062_0001" n="0001"/>
-<p rend="center caps large">The <term type="collective">Caffre</term> War.</p>
+<p rend="center caps larger">The <term type="collective">Caffre</term> War.</p>
 <p rend="center">&#8211;&#8212;&#8212;&#9670;&#8212;&#8212;&#8211;</p>
 <p>By the Indiana we have advices from <settlement>Cape 
 Town</settlement> to the <date when="1853-01-24">24th of January</date>, 39 days later 
@@ -415,7 +418,7 @@ good faith as before the fight, at <geogName>Platberg</geogName>, <w>to<!-- - --
 or next day, but I shall now send away the army, and go back
 to the <region>colony</region> in a few days' time.<seg rend="right">"G. C."<space extent="2" unit="chars"/></seg></p>
 
-<lb/><milestone unit="section" rend="half-line quarter-line"/>
+<milestone unit="section" rend="half-line quarter-line"/>
 
 <p rend="small center">"<seg rend="caps">Proclamation</seg>.</p>
 
@@ -454,9 +457,9 @@ in case of need.</p>
 <p rend="small">"Given under my hand and seal, at my <placeName>Camp, <geogName>Platberg</geogName></placeName>, 
 this <date when="1852-12-23">23d day of December, 1852</date>,</p> 
 
-<p rend="small right">"<persName><seg rend="caps">George Cathcart</seg></persName>,<space extent="1" unit="words"/></p>
+<p rend="small center">"<persName><seg rend="caps">George Cathcart</seg></persName>,<space extent="1" unit="words"/></p>
 
-<p rend="small right">"Governor and High Commissioner.<space extent="2" unit="chars"/></p> 
+<p rend="small center">"Governor and High Commissioner.<space extent="2" unit="chars"/></p> 
 
 <p rend="small">"By command of his Excellency the Governor and High 
 Commissioner, <seg rend="right">"<persName><seg rend="caps">John Ayliff</seg></persName>,</seg><space extent="1" unit="words"/></p>

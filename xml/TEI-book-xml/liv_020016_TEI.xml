@@ -88,6 +88,9 @@
 					<!-- Focus region (if known; otherwise leave blank) -->
                     <placeName type="focusRegion">England</placeName>
                 </bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Verbal quotations, as included in a section of a book by a British author.</p></history>
+				</msDesc>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -122,7 +125,8 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_020016_0001" n="0001"/>
-<head rend="large caps center">The Katikiro of <country>Uganda</country> and his Secretary.</head> <!-- Adrian, not sure if Katikiro (title of PM) Secretary get a persName/term type collective? HB --><!-- No, OK as is. AW -->
+<head rend="largest caps center">The Katikiro of <country>Uganda</country> 
+<lb/>and his Secretary.</head> <!-- Adrian, not sure if Katikiro (title of PM) Secretary get a persName/term type collective? HB --><!-- No, OK as is. AW -->
 
 <p><persName><hi rend="smallcaps">Apolo Kagwa</hi></persName>, Katikiro of <country>Uganda</country>, and his Secretary, <persName>Ham Mukasa</persName>, were among <persName>King Edward</persName>'s guests at the Coronation. <country>Uganda</country>, where <term type="animal">elephants</term> are still numerous and the <term type="plant">banana</term> grows in wild profusion, is under the administration of a <term type="collective">British</term> Commissioner. But it has its native King, and the Katikiro is his Chief Minister, being, at once, a sort of Premier and Chief Justice, the maker of laws and the righter of wrongs.</p>
 
@@ -131,7 +135,7 @@
 <p>He was asked what were his impressions of <country>England</country>. "First," he replied, "that you have no <term type="insect">mosquitoes</term>; second, that your roads are all good, and that you have many <term type="animal">horses</term> and carriages; thirdly, that your houses are large and well built; fourthly, that you live together in great crowds; and lastly, that you have a splendid <orgName>police force</orgName><!-- Not sure if this gets term or orgName, or not a tag at all? HB --><!-- orgName if anything, so I've put that in, but it could also go without anything since it's not a "formally-named group" in this instance. AW -->, which prevents fighting in the streets, and keeps order even when many have gathered together."</p>
 
     <pb facs="liv_020016_0002" n="0002"/>
-<p rend="center"><figure><graphic url="/img/tei/liv_020016_0002_image_deriv-1230px.jpg" facs="/img/tei/liv_020016_0002_image_deriv-1230px.jpg 1230w, /img/tei/liv_020016_0002_image_deriv-1086px.jpg 1086w, /img/tei/liv_020016_0002_image_deriv-615px.jpg 615w, /img/tei/liv_020016_0002_image_deriv-543px.jpg 543w" n="(min-width: 860px) 613px, (min-width: 740px) calc(-47vw + 1010px), calc(95.24vw - 24px)"/><figDesc>Portrait of Ham Mukasa and Apolo Kagwa, standing side by side in an archway and facing the viewer.</figDesc></figure></p>
+<p rend="center"><figure><graphic url="/img/tei/liv_020016_0002_image_deriv-1230px.jpg" facs="/img/tei/liv_020016_0002_image_deriv-1230px.jpg 1230w, /img/tei/liv_020016_0002_image_deriv-1086px.jpg 1086w, /img/tei/liv_020016_0002_image_deriv-615px.jpg 615w, /img/tei/liv_020016_0002_image_deriv-543px.jpg 543w" n="(min-width: 1200px) 618px, (min-width: 1000px) calc(55vw - 102px), (min-width: 780px) 584px, calc(90.87vw - 41px)"/><figDesc>Portrait of Ham Mukasa and Apolo Kagwa, standing side by side in an archway and facing the viewer.</figDesc></figure></p>
 			</div>
 		</body>	
 

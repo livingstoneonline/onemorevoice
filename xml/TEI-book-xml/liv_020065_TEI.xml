@@ -127,6 +127,9 @@
 					<placeName type="compositionPlace">London</placeName>
 					<!-- Can be "compositionPlace" or "focusRegion" -->
 				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  													<history><p>Evidentiary interview, as conducted by a series of British individuals and translated by a Khoe-English individual and as edited and published (alongside other evidentiary interviews) in a British government publication.</p></history>
+				</msDesc>
 			</sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -151,7 +154,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+	<text n="warning-language"><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->

@@ -1,195 +1,304 @@
 /* CSS TEI File for One More Voice (https://onemorevoice.org/) */
 
-/* Created and maintained by Adrian S. Wisnicki */ /* 2020-21 */
-
-/* This CSS file has been developed from the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/). The CSS code in the latter is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Please feel free to reuse the code in the file, just be sure to attribute it properly and publicly on your site. */
+/* Created and developed by Adrian S. Wisnicki, 2020-2022, and released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). Originally based on  the CSS file for Fieldwork of Empire (https://awisnicki.github.io/fieldwork_of_empire/), but since revised considerably. */
 
 /* 
 Table of Contents
 -----------------
 ** Main Site Colors **
 
-** 2.0 Transcription CSS **
-2.1. Textual divisions
-2.2.1. Switches
-2.2.2. Toggle Classes (also see rotate-toggle.css)
-2.3. Rotate Button
-2.4. Pagebreaks, linebreaks, linenumbers
-2.5. Parts of the page
-2.6. Milestone and lines
-2.7. Editorial elements
-2.8. Rend classes (except lines, page placement, colors) 
-2.9. Page placement 
-2.10. Colors 
-2.11. Misc
+** Transcription CSS **
+01. Main Transcription Page
+02. Distribution of Text-Object Sections
+03. text-object-details Styling
+04. manuscript-journal-object Styling
+05. Transcription Headings
+06. Associated Links
+07. Narrow Mobile and Warning Box
+08. Switches
+09. Toggle Classes
+10. Page Breaks and Blank Pages
+11. Line Numbers (not used)
+12. p and ab
+13. note and footnote
+14. Lists and Tables
+15. Milestone and Lines
+16. Page Placement
+17. Object Image Containers (especially spacing)
+18. Object Images
+19. Original Image Captions
+20. Rotate Button
+21. Recovered Texts: Journal & Manuscript
+22. Rend Classes (except colors, lines, and page placement)
+23. Misc
+24. Colors
+25. Editorial Elements
+App-A. Underline for Tagged Items (not used)
+App-B. Coding Review
+
+Editorial Elements
 */
 
-/*--------------------------------------*/
 
-/** Main Site Colors **/
-/* Colors chosen to be Color Blind Safe using https://color.adobe.com/create/color-accessibility */ /* Triad */
-/* As relevant, color contrast checked via https://webaim.org/resources/contrastchecker/ */
-/* Color shades: https://mdigi.tools/color-shades/ */
-/*
-(white) #fff;
-(black) #000;
-(light blue 1) #c4d8ef
-(light blue 2) #dbe6f5;
-(site blue) #204A79;
-(light red) #b53831;
-(site red) #902D27;
-(light gray) #e3e3e3;
-(dark gray) #858585;
-(darker gray) #404040;
-(dark brown) #424242;
-(near black) #525252;
-(black) #0b0b0b; 
-also see 2.9 for manuscript colors
-*/
+/* 01. Main Transcription Page */
 
-/** 2.0 Transcription CSS **/
+.transcription main{
+	padding: 1rem 1rem 2rem;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: inherit;
+}
+@media only screen and (min-width: 992px){
+	.transcription main{
+		padding: 1rem 2rem 2rem;
+		flex-direction: row;
+		gap: 2rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.transcription main{
+		gap: 2.5rem;
+	}
+}
 
-/* 2.1. Textual divisions */
+
+/* Distribution of Text-Object Sections (text-object & text-object-details) */
+
+@media only screen and (min-width: 992px){
+	.text-object{
+		width: calc(55% - 1rem); 
+	}
+	.text-object-details{
+		font-size: 1rem;
+		width: calc(45% - 1rem)
+	}
+}
+@media only screen and (min-width: 1200px){
+	.text-object{
+		width: calc(65% - 1.25rem); 
+		max-width: 700px;
+	}
+	.text-object-details{
+		width: calc(35% - 1.25rem);
+		flex-grow: 1;	
+	}
+}
+
+
+/* 03. text-object-details Styling */
+
+.text-object-details{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+}
+@media only screen and (min-width: 768px){
+	.text-object-details{
+		margin-top: 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.text-object-details{
+		background: #E3E5E3;
+		margin-top: .5rem;
+		padding: 0 1rem 1.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.text-object-details{
+		padding: 0 1.5rem 1.5rem;
+	}
+}
+.text-object-details p:last-of-type{
+	margin-bottom: 0;
+}
+
+
+/* 04. manuscript-journal-object Styling */
 
 .manuscript,
 .journal,
 .object{
-	font-size: 1.2em;
 	text-align: center;
 	line-height: 1.875em;
-	margin: 0 auto;
+	margin: 1.5rem auto;
+	width: 100%;
 	max-width: 700px;
 	display: block;
 	visibility: visible;
-	overflow: hidden;
-}
-@media only screen and (min-width: 768px){
-	.manuscript,
-	.journal,
-	.object{
-		font-size: 1.15em;
-	}
+	/* overflow: hidden; */
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
 	.journal,
 	.object{
-		font-size: 1.1em;
+		margin: 1.5rem auto 0;
+	}
+}
+.manuscript,
+.journal{
+	font-family: Georgia, times new roman, Times, serif;
+}
+@media only screen and (min-width: 992px){
+	.manuscript,
+	.journal,
+	.object{
 		display: block !important; /* Tied to overlay */
 		visibility: visible !important;  /* Tied to overlay */
 	}
 }
-.journal{
-	color: #191716;
-	background-color: #ffffff;
-}
-@media only screen and (min-width: 768px){
-	.journal.narrow,
-	.journal .div.narrow{
-		margin: 0 auto;
-		max-width: 525px;
-	}
-}
-/* @media only screen and (min-width: 768px){
-	.div.narrow .pb-title,
-	.div.narrow .fw{
-		width: 154%;
-		margin-left: -27%;
-		margin-right: -27%;
-	}
-} */
-.TEI{
-	position: relative;
-}
-.manuscript .TEI{
-	padding: 2em 0 3em 0;
-	margin: 0 1em;
-	border: 2px solid gainsboro;
-}
-@media only screen and (min-width: 768px){
-	.manuscript .TEI{
-		margin: 0 auto;
-	}
-}
-.manuscript .ms-container{
-	display: inline-block;
-	/*white-space:nowrap;*/
-	text-align: left;
-	margin-left: .5em;
-	margin-right: .5em;
-}
-.manuscript .front{
-	margin-bottom: -1em;
-}
-.manuscript .back{
-	margin-top: 1em;
-}
-.manuscript .TEI.front:not(.none) + .TEI{
-	margin-top: 2em;
-}
-.journal .TEI{
-	text-align: justify;
-	color: #191716;
-	background-color: #ffffff;
-	margin: 0 auto;
-	padding: 1em 1em 2em 1em;
-	display: block;
-}
-@media only screen and (min-width: 768px){
-	.journal .TEI{
-		padding: 1em 2.2em 2em 2.2em;
-		border: 2px solid #dcdcdc;
-	}
-}
-.narrow-mobile{
-	font-size: 1em;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	background-color: #E3E3E3;
-	line-height: 1.875em;
-	padding: 1em;
-	margin: 1em;
-	border: 1px solid black; /*#204A79*/ /*#902D27*/
-	display: none;
-	visibility: hidden;
-	overflow-wrap: initial;
-	word-wrap: initial;
-	word-break: initial;
-	hyphens: initial;
-	-ms-word-break: initial;
-	-ms-hyphens: initial;
-	-moz-hyphens: initial;
-	-webkit-hyphens: initial;
-}
-.warning{
-	border: 1px solid #902D27;
-	background: #e3e3e3;
-	padding: 5px 7px;
-	margin: 0 0 1.5em 0
-}
-/* This and the next item turn off wide manuscript items on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
+/* This item turns off wide manuscript items on mobile. Also see corresponding narrow-mobile and switches coding plus XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
 @media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
-	body .manuscript,
-	body .journal,
-	body .manuscript-switches,
-	body .journal-switches{
+	.manuscript,
+	.journal{
 		display: none;
 		visibility: hidden;
 	}
-	body .narrow-mobile{
+}
+
+
+/* 05. Transcription Headings */
+
+.transcription h2{
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+}
+@media only screen and (min-width: 480px){
+	.transcription h2{
+		font-size: 1.9rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.transcription h2{
+		font-size: 2.1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.transcription h2{
+		font-size: 2.25rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.transcription h2{
+		font-size: 2.3rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.transcription .text-object-details h3{
+		font-size: 1.4rem;
+		color: #2F4F55;
+	}
+}
+.TEI .text .body .div h3,
+.TEI .text .body .div h4{
+		font-weight: normal;
+		font-variant: normal;
+		font-style: normal;
+		color: #212119;
+		border-bottom: none;
+		margin: 0;
+		padding: 0;
+}
+.TEI h3{
+	font-size: 1.1rem;
+}
+.TEI h4{
+	font-size: 1rem;
+}
+.manuscript .TEI h3{
+	font-size: 1rem;
+	font-weight: inherit;
+	text-align: left;
+  color: inherit;
+  margin: inherit;
+  padding: inherit;
+	border-bottom: none;
+}
+.journal .TEI .ms-container h3.head.center,
+.manuscript .TEI .ms-container h3.head.center{
+	text-indent: 0;
+	text-align: center;
+	margin: 0;
+	display: block;
+}
+
+
+/* 06. Associated Links */
+
+.transcription p.associated-links{
+	font-size: .94rem;
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: .25rem;
+}
+@media only screen and (min-width: 480px){
+	.transcription p.associated-links{
+		gap: .5rem;
+	}
+}
+.transcription p.associated-links a{
+	font-variant: normal;
+	/* text-decoration: none; */
+	white-space: nowrap;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 1px 5px;
+}
+@media only screen and (min-width: 992px){
+	.transcription p.associated-links a.item-details-link{
+		display: none;
+		visibility: hidden;
+	}
+}
+.transcription p.associated-links a i{
+	color: #4d5b51;
+	margin: 0 .35rem 0 0;
+}
+/* .transcription p.associated-links a span{
+	text-decoration: underline;
+} */
+
+
+/* 07. Narrow Mobile and Warning Box */
+
+@media only screen and (min-width: 992px){
+	.warning-box{
+		font-size: 1rem;
+	}
+}
+.narrow-mobile{
+	font-size: 1rem;
+	background-color: #E7E9E7;
+	line-height: 1.875em;
+	padding: 1rem;
+	margin: 2rem 0 1rem;
+	border: 1px solid #737d73;
+	display: none;
+	visibility: hidden;
+}
+/* This item turns on the narrow-mobile warning See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+	.narrow-mobile{
 		display: block;
 		visibility: visible;
 	}
 }
 
 
-/* 2.2.1. Switches */
+/* 08. Switches */
 
 /* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
-
 .manuscript-switches,
 .journal-switches{
-	font-size: .92em;
+	font-size: .9rem;
 	line-height: 0;
 	text-align: center;
 	margin: 0 auto;
@@ -199,136 +308,146 @@ also see 2.9 for manuscript colors
 @media only screen and (min-width: 320px){
 	.manuscript-switches,
 	.journal-switches{
-		padding: .5em 0 1em;
-		display: block;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: .75rem;
 		visibility: visible;
 	}
 }
 @media only screen and (min-width: 768px){
 	.manuscript-switches,
 	.journal-switches{
-		font-size: 1em;
+		font-size: 1rem;
 	}
 }
-
+/* This item turns off wide manuscript items and switches on mobile. See corresponding XSL. Also see https://dev.to/ananyaneogi/useful-css-media-query-features-o7f */
+@media only screen and (max-aspect-ratio: 5/8) and (max-width: 580px), only screen and (orientation: portrait) and (max-width: 580px){
+	.manuscript-switches,
+	.journal-switches{
+		display: none;
+		visibility: hidden;
+	}
+}
 /* hide regular checkbox */
 .md_switch [type=checkbox]{
 	pointer-events: none;
 	opacity: 0;
 	position: absolute;
 }
-
 /* remove dropdown arrow */
 label.md_switch::after{
 	display: none;
 }
-
 /* container specs */
 .md_switch{
-	margin: .5em;
-	padding: .5em;
-	height: 1.6em;
-	/* width: 12.8em; */
-	border: 1px #525252 solid;
-	border-radius: 10px;
+	background: #fff;
+	border: 1px solid #bdc2bd;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 1.3rem 1rem;
+	height: 1.6rem;
 	align-items: center;
 	display: inline-flex;
 }
-
 /* label */
 label.md_switch{
-	font-size: .95em;
-	font-weight: 600;
-	font-family: Arial, Geneva, Tahoma, sans-serif;
-	/* color: #525252; */
+	font-size: .85rem;
+	font-weight: 700;
+	font-family: 'Merriweather', serif;
 	padding-left: 12px;
 }
-
 /* full toggle position/qualities */
 .md_switch .md_switch__toggle{
 	right: -6px;
 	cursor: pointer;
 	position: relative;
 }
-
 /* common: slider (before) & switch (after) */
 .md_switch .md_switch__toggle::before,
 .md_switch .md_switch__toggle::after{
 	content: '';
 	margin: 0 3px;
-	border: 1px solid #858585;
+	border: 1px solid #737d73;
 	transition: all 100ms;
 	display: block;
 }
-
 /* slider only */
 .md_switch .md_switch__toggle::before{
-	background-color: #525252;
-	height: 1.7em;
-	width: 3.5em;
-	border-radius: 30px;
+	background-color: #575757;
+	height: 1.7rem;
+	width: 3.5rem;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
+	border-radius: 30px;
 	align-items: center;
 	display: inline-flex;
 }
-.md_switch [type=checkbox]:checked + .md_switch__toggle::before{
-	background-color: #E3E3E3;
+@media only screen and (min-width: 768px){
+	.md_switch .md_switch__toggle::before{
+		width: 3.9rem;
+	}
 }
-
+.md_switch [type=checkbox]:checked + .md_switch__toggle::before{
+	background-color: #E7E9E7;
+}
 /* switch only */
 .md_switch .md_switch__toggle::after{
-	background-color: white;
+	background-color: #fff;
 	top: 50%;
-	left: 3px;
-	height: 1.45em;
-	width: 1.45em;
-	border-radius: 50%;
+	left: 5px;
+	height: 1.45rem;
+	width: 1.45rem;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+	border-radius: 50%;
 	transform: translate(0, -50%);
 	position: absolute;
 }
 .md_switch [type=checkbox]:checked + .md_switch__toggle::after{
 	content: "";
 	top: 50%;
-	height: 1.45em;
-	width: 1.45em;
+	height: 1.45rem;
+	width: 1.45rem;
 	transform: translate(calc(3.3em - 100%), -50%);
 }
-
+@media only screen and (min-width: 768px){
+	.md_switch [type=checkbox]:checked + .md_switch__toggle::after{
+		transform: translate(calc(3.9em - 100%), -50%);
+	}
+}
 /* focus */
 .md_switch [type=checkbox]:focus + .md_switch__toggle{
-	background: #4982c4;
-	padding: 3px 1px;
+	background: #e3b382;
+	padding: 3px 0;  
 }
-
 /* slider & hover */
 .md_switch .md_switch__toggle:hover::before{
-	background-color: #E3E3E3;
+	background-color: #E7E9E7;
 }
 /* switch & hover */
 .md_switch .md_switch__toggle:hover::after{
-	background-color: #858585;
+	background-color: #737d73;
 }
-
 /* slider:checked & hover */
 .md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
-	background-color: #858585;
+	background-color: #737d73;
 }
 /* switch:checked & hover */
 .md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
-	background-color: #E3E3E3;
+	background-color: #E7E9E7;
 	;
 }
 
 
-/* 2.2.2. Toggle Classes */
+/*  09. Toggle Classes */
 
 .change-color .manuscript .TEI{
-	border: 1px solid black;
+	border: 1px solid #212119;
 }
 .change-color .TEI{
 	background: #ffffff !important;
@@ -338,17 +457,17 @@ label.md_switch{
 }
 .change-color .manuscript .pb-title,
 .change-color .byline-divider{
-	border-top: 1px dotted black;
+	border-top: 1px dotted #212119;
 }
 .change-color .unclear,
 .change-color .gap,
 .change-color .rdg,
 .manuscript .figure{
-	border-bottom: 1px dotted black;
+	border-bottom: 1px dotted #212119;
 }
 .change-color .sic,
 .change-color .corr{
-	border-bottom: 2px dotted black;
+	border-bottom: 2px dotted #212119;
 }
 .invert-color .manuscript .TEI,
 .invert-color .journal .TEI{
@@ -359,7 +478,7 @@ label.md_switch{
 }
 .invert-color .journal .sic,
 .invert-color .journal .corr{
-	border-bottom: 2px dotted black;
+	border-bottom: 2px dotted #212119;
 }
 .rotate .TEI *:not(.exclude){
 	transform: rotate(0deg) !important;
@@ -373,86 +492,23 @@ label.md_switch{
 }
 
 
-/* 2.3. Rotate Button */
-
-/* #rotate button and .rotate-180 used for object images that need to be rotated */
-/* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
-button::-moz-focus-inner{
-	border: 0;
-	border-style: none;
-}
-#rotate-button{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 768px){
-	#rotate-button{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 600;
-		font-size: .8em;
-		background-color: #E3E3E3;
-		border: 1px solid #858585;
-		border-radius: 7px;
-		-webkit-border-radius: 7px;
-		-moz-border-radius: 7px;
-		float: left;
-		margin: 1.5em .2em;
-		padding: 14px 8px;
-		height: 20px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		visibility: visible;
-	}
-}
-#rotate-button:hover{
-	color: whitesmoke;
-	background-color: #858585;
-
-}
-#rotate-button:focus{
-	outline: 2px #204A79 solid;
-}
-#rotate-button.click-color{
-	color: whitesmoke;
-	background-color: #424242;
-}
-#rotate-button.click-color:hover{
-	background-color: #858585;
-}
-.rotate-90{
-	margin: 15em auto 9em;
-	transform: rotate(90deg);
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-moz-transform: rotate(90deg); /* Firefox */
-	-webkit-transform: rotate(90deg); /* Safari and Chrome */
-	-o-transform: rotate(90deg); /* Opera */
-}
-.rotate-180{
-	transform: rotate(180deg);
-	-ms-transform: rotate(180deg); /* IE 9 */
-	-moz-transform: rotate(180deg); /* Firefox */
-	-webkit-transform: rotate(180deg); /* Safari and Chrome */
-	-o-transform: rotate(180deg); /* Opera */
-}
-
-/* 2.4. Pagebreaks, linebreaks, linenumbers */
+/* 10. Page Breaks and Blank Pages */
 
 .pb-title{
-	color: #204A79;
 	font-size: .9em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	text-indent: 0;
+	color: #315257;
 }
 .manuscript .pb-title,
 .journal .pb-title,
 .journal .TEI .text .body .div p + .pb-title:first-of-type{
-	padding-top: 1.5em;
-	margin: 1.5em 0 .5em 0;
 	border-top: 1px dotted #858585;
+	padding-top: 1.5rem;
+	margin: 1.5rem 0 .5rem 0;
 	width: 100%;
 	display: inline-block;
 }
@@ -460,7 +516,8 @@ button::-moz-focus-inner{
 	text-align: left;
 	width: 100%;
 	padding: 0;
-	display: inline-block;
+	display: none;
+	visibility: hidden;
 }
 .manuscript .TEI.front .ms-container .div:first-of-type .pb-title:first-of-type,
 .manuscript .TEI .ms-container .body .div:first-of-type .pb-title:first-of-type,
@@ -472,99 +529,45 @@ button::-moz-focus-inner{
 	border-top: none;
 }
 .blank{
-	color: #65615b;
+	color: #4d5b51;
 	font-size: .9em;
 	font-style: italic;
 }
-.image-enlarge{
-	color: #65615b;
-	font-size: .85em;
-	font-style: italic;
-	margin: 0 auto;
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 768px){
-	.image-enlarge{
-		display: block;
-		visibility: visible;
-	}
-}
+
+
+/* 11. Line Numbers (not used) */
+
 .linenumber{
-	font-size: .8em;
+	/* font-size: .9em;
 	font-family: 'source_sans_proregular', Helvetica, sans-serif;
 	font-weight: 400;
-	color: #8c8b85;
+	color: #4d5b51;
 	text-align: right;
 	float: left;
-	margin-left: -3em; /*!important removed*/
-	width: 1em;
+	margin-left: -3rem;
+	width: 1rem; */
 	display: none;
 	visibility: hidden;
 }
-.p .linenumber{
+/* .p .linenumber{
 	text-indent: -1%;
 }
 .p.noindent.linenumber{
-	text-indent: 1em;
+	text-indent: 1rem;
 }
 .p.center .linenumber{
-	margin-left: -6.4em; /*!important removed*/
+	margin-left: -6.4rem;
 }
 .p.right .linenumber{
-	margin-left: -10.5em; /*!important removed*/
+	margin-left: -10.5rem;
 }
 .list .linenumber{
 	text-indent: 0;
-}
+} */
 
 
-/* 2.5. Parts of the page */
+/* 12. p and ab */
 
-.TEI h3,
-.TEI h4{
-	font-size: 1em;
-	font-weight: normal;
-	font-variant: normal;
-	font-style: normal;
-	margin: 0;
-}
-.TEI h3.large,
-.TEI h4.large{
-	font-size: 1.3em;
-}
-.TEI h3.larger,
-.TEI h4.larger{
-	font-size: 1.4em;
-}
-.TEI h3.largest,
-.TEI h4.largest{
-	font-size: 1.5em;
-}
-.TEI h3.small,
-.TEI h4.small{
-	font-size: .85em;
-}
-.TEI h3.smaller,
-.TEI h4.smaller{
-	font-size: .75em;
-}
-.TEI h3.smallest,
-.TEI h4.smallest{
-	font-size: .65em;
-}
-.TEI h3.bold,
-.TEI h4.bold{
-	font-weight: 600;
-}
-.TEI h3.smallcaps,
-.TEI h4.smallcaps{
-	font-variant: small-caps;
-}
-.TEI h3.italic,
-.TEI h4.italic{
-	font-style: italic;
-}
 .p,
 .ab{
 	text-indent: 25px;
@@ -582,10 +585,6 @@ button::-moz-focus-inner{
 	padding: 0;
 	margin: 0;
 }
-/* #object-div .p:first-of-type,
-.download + .p{
-	margin-top: 1.5em;
-} */
 .journal .p,
 .journal .ab{
 	display: block;
@@ -606,21 +605,23 @@ button::-moz-focus-inner{
 	float: right;
 	position: unset;
 }
-.manuscript .head.center,
-.journal .head.center{
-	text-indent: 0;
-	text-align: center;
-	margin: 0;
-	display: block;
-}
+
+
+/* 13. note and footnote */
+
 .note{
 	text-align: left;
 }
+.footnote{
+	font-size: .9em;
+}
+
+/* running headers */
 .fw{
 	text-indent: 0;
 	text-align: center;
-	line-height: 1.3em;
-	margin-bottom: .5em;
+	line-height: 1.5em;
+	margin-bottom: .5rem;
 	overflow: hidden;
 	position: relative;
 }
@@ -633,16 +634,27 @@ button::-moz-focus-inner{
 .fw.pageno{
 	text-indent: 0;
 }
+
+
+/* 14. Lists and Tables */
+
+.TEI ol,
+.TEI ul{
+	padding: 0;
+}
+.TEI ul{
+	list-style: none;	
+	position: relative;
+}
 table{
 	font-size: .9em;
+	line-height: 1.3em;
 	border-style: none;
 	margin: 0 auto;
-	line-height: 1.3em;
 }
 @media only screen and (min-width: 768px){
 	table{
 		font-size: 1em;
-
 	}
 }
 tr,
@@ -650,22 +662,9 @@ td{
 	text-align: left;
 	border-style: none;
 }
-table .linenumber{
-	display: none;
-	visibility: hidden;
-}
-.TEI ul{
-	list-style: none;
-	padding: 0;
-	position: relative;
-}
-.TEI ol{
-	padding: 0;
-}
 
 
-
-/* 2.6. Milestone and lines */
+/* 15. Milestone and Lines */
 
 .milestone{
 	display: block;
@@ -673,6 +672,10 @@ table .linenumber{
 	background: inherit;
 	height: 3px;
 	padding: 1px;
+}
+.manuscript p + .milestone{
+	margin-top: 1rem;
+	padding-bottom: 1rem;
 }
 .line{
 	border-bottom: 1px solid #d0d0d0;
@@ -682,11 +685,11 @@ table .linenumber{
 }
 .doubleline,
 .quarterline.doubleline{
-	border-top: 4px double #8c8b8b !important;
+	border-top: 4px double #858585 !important;
 }
 .tripleline{
 	line-height: 1.9em;
-	border-top: 4px double #8c8b8b !important;
+	border-top: 4px double #858585 !important;
 }
 .halfline{
 	border-bottom: 1px solid #d0d0d0;
@@ -696,7 +699,7 @@ table .linenumber{
 	width: 50%;
 }
 .manuscript .halfline{
-	margin: 1em auto -1em auto;
+	margin: 1rem auto -1rem;
 }
 .journal .halfline{
 	margin: 2em auto;
@@ -706,7 +709,7 @@ table .linenumber{
 	border: 0;
 	border-top: 1px solid #58484b;
 	width: 12.5%;
-	margin: .7em auto;
+	margin: .7rem auto;
 }
 .quarterline{
 	border-bottom: 1px solid #d0d0d0;
@@ -718,11 +721,11 @@ table .linenumber{
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
-	margin-top: -1em;
-	margin-bottom: 0em;
+	margin-top: -1rem;
+	margin-bottom: 0;
 }
 .third-line{
-	margin-top: 1.5em;
+	margin-top: 1.5rem;
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
@@ -730,60 +733,6 @@ table .linenumber{
 .vertical.line{
 	display: none;
 	visibility: hidden;
-}
-
-
-/* 2.7. Editorial elements */
-
-.del,
-.del-by-over-text{
-	text-decoration: line-through;
-}
-.unclear{
-	color: #706f6a;
-	border-bottom: 1px dotted #858585;
-}
-.gap{
-	border-bottom: 1px dotted #858585;
-}
-ins,
-u{
-	text-decoration: none;
-}
-.sic,
-.corr{
-	border-bottom: 2px dotted #902D27;
-}
-.abbr,
-.expan{
-	display: none;
-	visibility: hidden;
-}
-.rdg{
-	border-bottom: 1px dotted #858585;
-}
-
-
-/* 2.8. Rend classes (except colors, lines, and up-down placement) */
-
-.caps{
-	text-transform: uppercase;
-}
-.manuscript .center{
-	margin: 0 auto;
-	display: block;
-}
-.manuscript .milestone.center{
-	text-indent: 0;
-	margin-left: 3.7em;
-}
-.journal .center{
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-.fw .center{
-	display: inline
 }
 .dottedunderline{
 	border-bottom: 1px dashed;
@@ -795,27 +744,385 @@ u{
 	border-bottom: 4px double;
 	text-decoration: underline;
 }
-.indent{
-	text-indent: 25px;
-}
-.large{
-	font-size: 1.3em;
-}
-.larger{
-	font-size: 1.4em;
-}
-.largest{
-	font-size: 1.5em;
-}
-.journal .left{
-	float: left;
-	clear: both;
-}
 .overline{
 	text-decoration: overline;
 }
 .overline.underline{
 	text-decoration: overline underline;
+}
+
+
+/* 16. Page Placement */
+
+.above,
+.below,
+.bottom,
+.sub,
+.sup,
+.top{
+	/* Specified in % so that the sup/sup is the
+	 right size relative to the surrounding text */
+	font-size: 80%;
+
+	/* Zero out the line-height so that it doesn't
+	 interfere with the positioning that follows */
+	line-height: 0;
+
+	/* Note that if you're using Eric Meyer's reset.css, this
+	 is already set and you can remove this rule */
+	 vertical-align: baseline;
+
+	/* Where the magic happens:makes all browsers position
+	 the sup/sup properly, relative to the surrounding text */
+	position: relative;
+}
+.above,
+.sup,
+.top{
+	/* Move the superscripted text up */
+	top: -0.50rem;
+}
+.below,
+.bottom,
+.sub{
+	/* Move the subscripted text down, but only
+	 half as far down as the superscript moved up */
+	bottom: -0.50rem;
+}
+
+
+/* 17. Object Image Containers (especially spacing) */
+
+.object .TEI .ms-container .body .div{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+.object .figure{
+	clear: both;
+	line-height: 0;
+	margin-bottom: 2rem;
+	position: relative;
+}
+@media only screen and (min-width: 480px){
+	.object .figure{
+		margin-bottom: 1.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.object .figure{
+		margin-bottom: 2rem;
+	}
+}
+.object .TEI .ms-container .body .div .figure:last-child{
+	margin-bottom: 0;
+}
+
+
+/* 18. Object Images */
+
+.object a img{
+	border: none;
+}
+.object .figure a:hover,
+.object .figure a:focus{
+	outline: none;
+}
+.object .figure a:hover img,
+.object .figure a:focus img{
+	border: none;
+	outline: 3px solid #305056;
+}
+@media only screen and (min-width: 480px){
+	.object .figure.vertical a img,
+	.object .figure.vertical a .image-overlay{
+		margin: 0 auto;
+		width: 70%;
+		display: inline-block;
+	}
+}
+.object .figure.hist-object a img{
+	border: 1px solid #bdc2bd;
+}
+/* .object .figure.hist-object.gray a img{
+	border: 1px solid #bdc2bd;
+} */
+
+
+/* 19. Original Image Captions */
+
+.object .TEI .ms-container .body .div p{
+	margin-top: 1rem;
+}
+.object .TEI .ms-container .body .div p:first-of-type{
+	margin-top: 1.5rem;
+}
+.object .TEI .ms-container .body .div p + .pb-title + .figure.hist-object{
+	margin-top: 3rem;
+}
+.object .TEI .ms-container .body .div > p:first-child{
+	margin-top: 0;
+}
+.object .TEI .ms-container .body .div .figure + p{
+	margin-top: -.5rem;
+}
+/* .metadata only used on liv_021097_ART.html currently */
+.object .TEI .ms-container .body .div p.metadata{
+	font-size: .9rem;
+	font-style: italic;
+	text-align: right;
+	display: inline-block;
+}
+/* The following two rules created via the example at https://stackoverflow.com/a/8539107 */
+.object .TEI .ms-container .body .div > p.metadata{
+	margin-top: 1rem;
+}
+.object .TEI .ms-container .body .div p.metadata ~ p.metadata{
+	margin-top: 0;
+}
+
+
+/* 20. Rotate Button */
+
+/* #rotate button and .rotate-180 used for object images that need to be rotated */
+/* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
+button::-moz-focus-inner{
+	border: 0;
+	border-style: none;
+}
+	#rotate-button{
+		font-size: .9rem;
+		text-transform: none;
+		color: #212119;
+		background: #E7E9E7;
+		-webkit-box-shadow: #697c6f 0px 2px 5px 0px;
+		-moz-box-shadow: #697c6f 0px 2px 5px 0px;
+		box-shadow: #697c6f 0px 2px 5px 0px;
+		margin: 1.5rem 0 0;
+		padding: 2px 22px;
+		align-self: flex-end;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+	}
+	@media only screen and (min-width: 1200px){
+		#rotate-button{
+			align-self: flex-end;
+		}
+	}
+	#rotate-button i{
+		margin-left: .25rem;
+	}
+#rotate-button:hover,
+#rotate-button.click-color{
+	color: #fff;
+	background: #305056;
+}
+#rotate-button:focus{
+	outline: 3px solid #e3b382;
+}
+#rotate-button.click-color:hover{
+	color: #212119;
+	background: #E7E9E7;
+}
+#image-to-rotate{
+	margin-bottom: 0;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+}
+#image-to-rotate a{
+	width: 100%;
+}
+.rotate-90{
+	height: calc(100vw - 2rem);
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-moz-transform: rotate(90deg); /* Firefox */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	-o-transform: rotate(90deg); /* Opera */
+}
+@media only screen and (min-width: 768px){
+	.rotate-90{
+		height: 664px;
+	}
+}
+@media only screen and (min-width: 992px){
+	.rotate-90{
+		height: calc(55vw - 54px);
+	}
+}
+@media only screen and (min-width: 1200px){
+	.rotate-90{
+		height: calc(11.58vw + 515px);
+	}
+}
+@media only screen and (min-width: 1600px){
+	.rotate-90{
+		height: 698px;	
+	}
+}
+.rotate-180{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-moz-transform: rotate(180deg); /* Firefox */
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	-o-transform: rotate(180deg); /* Opera */
+}
+.rotate-90 a:hover,
+.rotate-90 a:focus{
+	opacity: .7;
+}
+.rotate-90 .image-overlay{
+	display: none;
+	visibility: hidden;
+}
+
+
+/* 21. Recovered Texts: Journal & Manuscript */
+
+.journal{
+	color: #212119;
+	background-color: #ffffff;
+	border: 1px solid #bdc2bd;
+}
+@media only screen and (min-width: 768px){
+	.journal.narrow,
+	.journal .div.narrow{
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 525px;
+	}
+}
+.TEI{
+	margin: 0 auto;
+	position: relative;
+}
+.object .TEI{
+	padding: .5rem 1rem 0;
+}
+.journal .TEI{
+	text-align: justify;
+	color: #212119;
+	background-color: #fff;
+	padding: 1rem;
+	display: block;
+}
+.manuscript .TEI{
+	border: 1px solid #bdc2bd;
+	padding: 1rem 1rem 2rem;
+}
+@media only screen and (min-width: 480px){
+	.object .TEI{
+		padding: .5rem 1.5rem 0;
+	}
+	.journal .TEI{
+		padding: 1.5rem;
+	}
+	.manuscript .TEI{
+		padding-bottom: 1.5rem 1.5rem 2.5rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.object .TEI{
+		padding: .5rem 2.5rem 0;
+	}
+	.journal .TEI{
+		padding: 2.5rem
+	}
+	.manuscript .TEI{
+		padding: 2.5rem 2.5rem 3.5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.object .TEI{
+		padding: .5rem 1.5rem 0;
+	}
+	.journal .TEI{
+		padding: 1.5rem;
+	}
+	.manuscript .TEI{
+		padding: 1.5rem 1.5rem 2.5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.TEI{
+		padding: 2rem 2.5rem;
+	}
+	.object .TEI{
+		padding: .5rem 2.5rem 0;
+	}
+	.journal .TEI{
+		padding: 2rem 2.5rem;
+	}
+	.manuscript .TEI{
+		padding: 2rem 2.5rem 3rem;
+	}
+}
+.manuscript .TEI.front:not(.none) + .TEI,
+.manuscript .back{
+	margin-top: 2rem;
+}
+.manuscript .TEI.back .back{
+	margin-top: 0;
+}
+.manuscript .ms-container{
+	display: inline-block;
+	text-align: left;
+}
+.journal .image-small.inline-left{
+	float: left;
+	width: 4.5em;
+}
+.image-small{
+	width: 40%;
+	display: inline-block;
+}
+.image-medium{
+	width: 60%;
+	display: inline-block;
+}
+
+
+/* 22. Rend Classes (except colors, lines, and page placement) */
+
+.transcription .caps,
+.transcription .smallcaps{
+	text-transform: uppercase;
+}
+.manuscript .center{
+	margin: 0 auto;
+	display: block;
+}
+.journal .center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.journal .cell.center{
+	text-align: left;
+}
+.fw .center{
+	display: inline
+}
+.indent{
+	text-indent: 25px;
+}
+.TEI .ms-container .large{
+	font-size: 1.2em;
+}
+.TEI .ms-container .larger{
+	font-size: 1.3em;
+}
+.TEI .ms-container .largest{
+	font-size: 1.4em;
+}
+.journal .left{
+	float: left;
+	clear: both;
+}
+.TEI .normal{
+	font-size: 1rem;
 }
 .journal .right{
 	text-align: left;
@@ -823,7 +1130,7 @@ u{
 	position: absolute;
 }
 .journal.narrow .right{
-	right: 1em;
+	right: 1rem;
 }
 .fw .right,
 .manuscript .right,
@@ -841,61 +1148,36 @@ u{
 .marginright{
 	float: right;
 }
-.small{
+.TEI .ms-container .small{
+	font-size: .9em;
+}
+.TEI .ms-container .smaller{
 	font-size: .85em;
 }
-.smaller{
-	font-size: .75em;
-}
-.smallest{
-	font-size: .65em;
+.TEI .ms-container .smallest{
+	font-size: .8em;
 }
 
 
+/* 23. Misc */
 
-/* 2.9. Page placement */
-
-.above,
-.below,
-.bottom,
-.sub,
-.sup,
-.top{
-	/* Specified in % so that the sup/sup is the
-	 right size relative to the surrounding text */
-	font-size: 80%;
-
-	/* Zero out the line-height so that it doesn't
-	 interfere with the positioning that follows */
-	line-height: 0;
-
-	/* Where the magic happens:makes all browsers position
-	 the sup/sup properly, relative to the surrounding text */
-	position: relative;
-
-	/* Note that if you're using Eric Meyer's reset.css, this
-	 is already set and you can remove this rule */
-	vertical-align: baseline;
+.none{
+	display: none;
+	visibility: hidden;
 }
-.above,
-.sup,
-.top{
-	/* Move the superscripted text up */
-	top: -0.50em;
+.figure{
+	font-size: .8em;
+	color: #666666;
 }
-.below,
-.bottom,
-.sub{
-	/* Move the subscripted text down, but only
-	 half as far down as the superscript moved up */
-	bottom: -0.50em;
+.manuscript .figure{
+	border-bottom: 1px #858585 dotted;
 }
 
 
-/* 2.10. Colors */
+/* 24. Colors */
 
 .black{
-	color: black;
+	color: #212119;
 }
 .black.gray{
 	color: #65615b;
@@ -934,66 +1216,46 @@ u{
 	color: #B33B24;
 }
 .white{
-	color: #ffffff;
+	color: #fff;
 }
 .yellow{
 	color: yellow;
 }
 
 
-/* 2.11. Misc */
+/* 25. Editorial Elements */
 
-.none{
+.del,
+.del-by-over-text{
+	text-decoration: line-through;
+}
+.unclear{
+	color: #706f6a;
+	border-bottom: 1px dotted #4d5b51; 
+}
+.gap{
+	border-bottom: 1px dotted #4d5b51; 
+}
+ins,
+u{
+	text-decoration: none;
+}
+.sic,
+.corr{
+	border-bottom: 2px dotted #743B41;
+}
+.abbr,
+.expan{
 	display: none;
 	visibility: hidden;
 }
-.figure{
-	font-size: .8em;
-	color: #666666;
+.rdg{
+	border-bottom: 1px dotted #858585;
 }
-.manuscript .figure{
-	border-bottom: 1px #858585 dotted;
-}
-.object .figure a img{
-	box-sizing: border-box;
-}
-.object .graphic{
-	pointer-events: none;
-	/* cursor: default; */
-}
-@media only screen and (min-width: 768px){
-	.object .graphic{
-		pointer-events: unset;
-	}
-}
-.object.figure{
-	clear: both;
-}
-@media only screen and (min-width: 480px){
-	.object.vertical a img{
-		width: 70%;
-		box-sizing: border-box;
-	}
-}
-.object.gray img{
-	border: 3px #E3E3E3 solid;
-}
-.object.gray a:hover img,
-.object.gray a:focus img{
-	border: 3px #204A79 solid;
-}
-.journal .image-small.inline-left{
-	float: left;
-	width: 4.5em;
-}
-.image-small{
-	width: 40%;
-	display: inline-block;
-}
-.image-medium{
-	width: 60%;
-	display: inline-block;
-}
+
+
+/* App-A. Underline for Tagged Items (not used) */
+
 /* .metamark{
 	color:#666666;
 	border-bottom:1px #666666 dotted;
@@ -1009,7 +1271,9 @@ u{
 	border-bottom: 1px #204A79 dotted;
 } */
 
-/* The following is useful for coding review */
+
+/* App-B. Coding Review */
+
 /* .persName{
 	background-color: yellow;
 }

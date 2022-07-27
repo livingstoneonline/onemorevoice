@@ -85,7 +85,11 @@
                     <date type="composition" when="1903">[1903]</date><!-- Can be type="composition" or type="publication" -->
                     <date type="publication" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				</bibl>
+                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				
+				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Statement by an unnamed individual from the Congo Free State, as conveyed by at least one unnamed translator from the Congo Free State to a British government officer and as edited for and published among official British government documents.</p></history>
+				</msDesc>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -130,9 +134,9 @@
 <milestone unit="section" rend="half-line"/>
 <p rend="center">Inclosure 4 in No. 3.</p>
 
-<lb/><p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 34.)--></p>
+<p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 34.)--></p>
 
-<lb/><p rend="center italic">Notes in the Case of <persName>V V</persName>, a Native of <settlement>L L*</settlement> in the <region>Mantumba District</region>, both of whose hands have been 
+<p rend="center italic">Notes in the Case of <persName>V V</persName>, a Native of <settlement>L L*</settlement> in the <region>Mantumba District</region>, both of whose hands have been 
 hacked or beaten off, and with reference to other similar cases of Mutilation in that <region>District</region>.</p>
 
 <lb/><p>I FOUND this man in the <placeName>. . . . . station</placeName> at <settlement>Q*</settlement> on<geogName><space extent="3" unit="words"/></geogName>, and learned that he had 

@@ -110,7 +110,11 @@
 					<!-- See item for composition place; remove if not given --> <placeName type="compositionPlace"
 					>[Graham's Town, South Africa]</placeName> <placeName type="compositionPlace">The Down's, South
 					Africa</placeName>
-					<!-- Can be "compositionPlace" or "focusRegion" --> </bibl>
+					<!-- Can be "compositionPlace" or "focusRegion" --> 
+				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Original letter, as edited and published (alongside another letter from a British missionary) in an essay in a British missionary periodical.</p></history>
+				</msDesc>
 			</sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -134,7 +138,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text>
+	<text n="warning-language">
 		<body>
 			<!-- Actual color of the MS page; AW will insert appropriate color -->
 			<div>
@@ -155,7 +159,7 @@
 					<!-- Text from previous article omitted here. MT -->
 					<lb/>
 					<lb/>
-					<milestone unit="section" rend="quarter-line"/>
+					<milestone unit="section" rend="quarter-line center"/>
 				</div>
 
 				<div>

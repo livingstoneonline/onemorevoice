@@ -7,364 +7,370 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="index, follow"/>
 		<meta name="theme-color" content="#204A79"/>
-		<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="pragma" content="no-cache" />
-		<meta http-equiv="expires" content="0" />		
 		<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0009" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0010" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0010"/>
-		<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0009"/>
-		<script>
-			// Hides fallback nav so that it only appears if Javascript disabled
-			function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
-		</script>
-		<script>
-			// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
-			// Reloads given page, keeps base URL, path, and any #, but removes random query string
-			// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
-		</script>			
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
+		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
+		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
+		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
+		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 	</head>
-
+		
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 	<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
-
-	<body class="essay" id="body">
-
-		<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
-
-		<div data-include="nav"></div>
-
-		<div class="text-container">
-
-			<div class="sidebar-container" data-include="sidebar"></div>
-
-			<div class="page-wrapper">
-				<header id="header">
-					<div class="image-wrapper">
-						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-						<img width="700" height="431" class="image-border" src="/img/essays/liv_021047_0001_deriv-1396px.jpg" srcset="/img/essays/liv_021047_0001_deriv-1396px.jpg 1396w, /img/essays/liv_021047_0001_deriv-956px.jpg 956w, /img/essays/liv_021047_0001_deriv-698px.jpg 698w, /img/essays/liv_021047_0001_deriv-636px.jpg 636w, /img/essays/liv_021047_0001_deriv-478px.jpg 478w, /img/essays/liv_021047_0001_deriv-318px.jpg 318w" sizes="(min-width: 740px) 698px, 95.24vw" alt="Half-body portrait of Kgosi Sechele and MmaKgari seated side by side." title="A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana [History of the Bechuana] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
-						<a id="information" class="caption" href="#caption" aria-label="Go to image caption"><i class="fa fa-info-circle" title="Image information"></i></a>
-					</div>
-				</header>
-			
-				<main class="main" id="main">
-					<div class="button-container">
-						<!--<div class="download"><div><a download>Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>-->
-						
-						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					</div>
-
-					<h2 class="title-with-subtitle" id="top">Sechele and the Record of Intercultural Encounter</h2>
-					<hr class="byline-divider"/>
-					<p class="byline">Justin D. Livingstone (Queen's University Belfast), Author</p>
-					<p class="editor-line">Adrian S. Wisnicki (University of Nebraska-Lincoln), Internal OMV Peer-Reviewing Editor</p>
-					<br />
-
-					<section class="toc" aria-labelledby="menu">
-						<ol id="menu">
-							<li class="toc-title">[Menu: Sections]</li>
-							<li><a href="#link-1">Introduction</a></li>
-							<li><a href="#link-2">Sechele and the Boers</a>
-								<ol style="list-style-type: lower-latin;">
-									<li><a href="#link-2.1">The BaTswana-Boer War</a></li>
-									<li><a href="#link-2.2">Sechele and diplomacy</a></li>
-								</ol>
-							</li>
-							<li><a href="#link-3">Sechele and intercultural engagement</a>
-								<ol style="list-style-type: lower-latin;">
-									<li><a href="#link-3.1">Sechele the “Rain Doctor”?</a></li>
-									<li><a href="#link-3.2">The complexity of Sechele’s Christian conversion</a></li>
-									<li><a href="#link-3.3">Christianity and Tswana culture</a></li>
-									<li><a href="#link-3.4">Sechele and the Bible</a></li>
-								</ol>
-							</li>
-							<li><a href="#link-4">Conclusion: Reflections on the record</a>
-								<ol style="list-style-type: lower-latin;">
-									<li><a href="#link-4.1">Note: Sechele’s letters in Dutch-Afrikaans</a></li>
-								</ol>
-							</li>
-							<li><a href="#link-5">Works cited</a></li>
-						</ol>
-					</section>
-
-					<hr class="title-hr" />
-
-					<section aria-labelledby="introduction" id="link-1">
-						<h3 class="black" id="introduction">Introduction</h3>
-
-						<p>Sechele I was <em>kgosi</em> (or ruler) of the BaKwena, one of the principal communities of the larger BaTswana ethnic group in southern Africa, for over fifty years in the mid to late-nineteenth century. After the murder of his father Kgosi Motswasele II in 1821, which precipitated the division of the BaKwena, Sechele spent much of his early life in exile. In the early 1830s, he returned to a portion of the BaKwena who proclaimed him leader, following which he set out to restore cohesion to the divided group (Morton 2012, 318-19).</p>
-
-						<p>Over the next few decades, Sechele established himself as a dominant figure in BaTswana politics. He secured the BaKwena’s power and consolidated their influence by developing trade routes for commerce in ivory across the Kalahari region. As a result of Sechele’s efforts, the BaKwena state (located in what is now Botswana) became politically and economically preeminent amongst BaTswana polities between the 1850s and the mid-1870s (Parsons 1998, 41).</p>
-
-						<p>This essay sets out to examine this significant southern African leader through the colonial archive. It draws on representations by contemporary missionary commentators who knew Sechele, but primarily engages with documents bearing his name. These include nineteenth-century English translations of Sechele’s letters and interpretive transcriptions of his spoken words&nbsp;– all of which are <a href="/texts.html#sechele-toc">published</a> by <em>One More Voice</em> – as well as some Tswana-language writings only recently translated.</p>
-
-						<p>The essay positions Sechele at the forefront of BaTswana-Boer political relations in the mid-nineteenth century by focussing particularly on his response to the 1852 Battle of Dimawe, a major conflict at the BaKwena capital that had long-lasting regional effects. The essay then locates him at the cultural interface between the BaTswana and British by examining his reception and interpretation of Christianity and the Bible. While Sechele emerges as a significant figure in the documentary record, the European mediation of much of the available source material raises questions about the voice to which we have access; the essay therefore closes with reflections on the record.</p>
-						<p></p>
-					</section>
-
-					<section aria-labelledby="boers" id="link-2">
-						<h3 class="subsection black" id="boers">Sechele and the Boers</h3>
-
-						<h4 id="link-2.1">The BaTswana-Boer War</h4>
-
-						<p>Sechele’s career coincided with the settlement of the Boers north of the Vaal River and the development of the South African Republic (also known as the Transvaal). In the “Great Trek” of the 1830s and 1840s, large numbers of Boers migrated from the British-controlled Cape Colony and established autonomous states in the southern African interior. A major political issue for Sechele was thus managing relations with the neighbouring Boers in the Transvaal, particularly after their independence was acknowledged in the Sand River Convention (1852). Although this relationship fluctuated throughout the period, a collision with the Boers shortly after this convention – the BaTswana-Boer War of 1852-53 – was a defining moment.</p>
-
-						<p>This encounter was the culmination of intensifying grievances over the previous decade (Ramsay 1991, 193-94). After settlement in the Transvaal, the Boers had attempted to extend their influence and – aware that their position depended on superior weaponry – compel local BaTswana groups to relinquish their armaments. Sechele’s trade activities, through which he built his munitions, were thus a source of concern. Relations deteriorated, moreover, when Sechele refused to prevent English traders from accessing the hunting grounds of Ngamiland, a region to the north-west of his state, and when he declined to enter into a treaty that would require him to provide the Transvaal with unpaid labour (Ramsay 1991, 194; 2014, 458-59).</p>
-
-						<p>Following British recognition of the South African Republic in the Sand River Convention, the Boers escalated efforts to consolidate their position in the western Transvaal (Ramsay 1991, 195). Military action against Sechele was triggered by events involving Mosielele, a <em>kgosi</em> of the BaKgatla (part of the larger BaTswana group), who lived on land granted by the Transvaal. In early 1852, Mosielele resisted renewed demands to supply labourers and refused to attend a summit with the Transvaal authorities in an attempt to repudiate his subordinate status (Grobler 1997, 244). A commando, under the leadership of Pieter Scholtz, was dispatched to discipline Mosielele, who retreated to find protection with the BaKwena, Sechele’s people. When Sechele denied the Boers’ request to surrender the fugitive, the BaKwena became the target of the offensive.</p>
-
-						<p>At the end of August 1852, the commando under Scholtz laid siege to Sechele’s residence, Dimawe. It is estimated that between 60 and 100 BaKwena were killed in the following confrontation and that hundreds of women and children – including Sechele’s son, Kgari – were returned to the Transvaal as prisoners (Morton 1992, 102). Although the BaKwena suffered major losses, they were not quelled by the defeat; Sechele instead began an effective campaign of reprisal in the Transvaal’s Marico District (which lies to the south and east of Dimawe) and strengthened his position by recruiting other BaTswana groups, before a ceasefire was agreed in January 1853. Sechele’s success in resisting the Boers’ ascendancy, not least by forming a “pan-Batswana alliance,” can be considered a “seminal event in Botswana’s birth as a nation state” (Ramsay 1991, 198-99, 193).</p>
-
-						<h4 class="subsection" id="link-2.2">Sechele and diplomacy</h4>
-
-						<p>The Battle of Dimawe and its aftermath provides context for several items published by <em>One More Voice</em>. One important document is a <a href="/html/transcriptions/liv_020021_TEI.html">public letter</a>, composed by Sechele, translated into English by the trader and explorer Samuel Edwards, and printed in the <em>Cape Town Mail</em> on 30 April 1853. At this stage, Sechele was present in Cape Town after having travelled there with the aim of proceeding to London to lodge a complaint with British authorities about the Boers’ activities. The letter therefore operates as part of a campaign to publicise his perspective on the invasion and the political situation north of the Vaal River.</p>
-
-						<p>In this public missive, Sechele places responsibility for the disintegration of relations between the BaTswana and the Transvaal Boers on the latter’s efforts to curb his political autonomy. They have attempted to compel him, he argues, to “give up all [his] guns” and restrict “the English from travelling into [his] country” on the basis of a claim to be “masters of the land.” Despite letters “threatening [him] with war,” Sechele insists that he “refused to comply with their demands” (Sechele and Edwards 1853).</p>
-						
-						<p>The letter, moreover, directly implicates British policy in the escalation of military activity. Echoing criticisms of the Sand River Convention expressed by the British explorer and abolitionist David Livingstone (see J. Livingstone 2019), Sechele blames the “treaty with Pretorius” for convincing the Boers “that the country had been given to them by the English” and that they had licence “to do as they pleased with the black people.” The consequence, the <em>kgosi</em> argues, was the 1852 incursion. Taking the opportunity to broadcast the full extent of his charges, Sechele accuses the commando of having “burnt [his] town” and taken as many as “one thousand children” and “two hundred women” captive (Sechele and Edwards 1853).</p>
-						
-						<p>Sechele’s journey to Cape Town to publicise his grievances and lobby officialdom highlights his prowess as a political operator. Central to his method was mobilising the support of the British missionary community. This much is detectable in the fact that Samuel Edwards – the son of Rogers Edwards, an employee of the London Missionary Society (LMS) – was responsible for transcribing both the <em>Cape Town Mail</em> piece and an <a href="/html/transcriptions/liv_020021_TEI.html">additional statement</a> by Sechele confirming the published account (dated 7 and 11 May 1853) (Schapera 1959, 2:28; Sechele, Edwards, and Thompson 1853). The latter, moreover, also bears a signature of witness by Rev. William Thompson, who was resident in Cape Town as the Agent for LMS missions in South Africa (Schapera 1974, 29).</p>
-						
-						<p>Sechele’s access to missionary networks was secured through personal connections. Shortly after the invasion, he sent a testimonial to one of southern Africa’s best-known missionaries, Robert Moffat. In this <a href="/html/transcriptions/liv_003027_TEI.html">letter of October 1852</a>, also published by <em>One More Voice</em>, the <em>kgosi</em> addresses Moffat as the “friend of my heart’s love” and describes his, Sechele’s, predicament in emotive terms: “I am undone by the Boers, who have attacked me (though) I had no guilt with them. They required that I should be in their kingdom, but I refused” (Sechele and Livingstone 1852).</p>
-						
-						<p>It was through such missionary channels that Sechele’s version of events gained a wider audience, including circulation in Britain. As yet <a href="/html/transcriptions/liv_020019_TEI.html">another letter</a> published by <em>One More Voice</em> shows, Moffat forwarded Sechele’s statement for the attention of the LMS (Sechele and Moffat 1852). A few years later, David Livingstone would ensure the widest possible dissemination by reprinting his translation of the letter in the bestselling narrative, <em>Missionary Travels</em> (Livingstone 1857, 118-19). While such activities reflect the publicity tactics of British missionaries, Sechele’s effort to circulate the BaTswana perspective and, effectively, publish by proxy while also marshalling support from influential individuals merits recognition as his own diplomatic strategy.</p>
-					</section>
-
-					<section aria-labelledby="intercultural" id="link-3">
-						<h3 class="subsection black" id="intercultural">Sechele and intercultural engagement</h3>
-
-						<h4 id="link-3.1">Sechele the “Rain Doctor”?</h4>
-
-						<p>Sechele’s missionary associations also placed him at the forefront of BaTswana-British cultural interactions in the mid-nineteenth century. His most famous connection was with David Livingstone, who had relocated from a mission amongst the BaKgatla to settle further north with the BaKwena in 1845 and who would later feature Sechele prominently in <em>Missionary Travels</em> (1857). Drawn initially by a conviction that the BaKwena <em>kgosi</em> was particularly receptive to Christianity and European culture, Livingstone would reside with the group for around five and a half years, first at Chonuane and later at Kolobeng. Sechele was, Livingstone told the LMS Home Secretary Arthur Tidman, “very fond of improvements and altogether a more likely subject than any I have seen” (Livingstone 1845).</p>
-
-						<p>The record of interaction between the two men is largely one-sided – having been written by Livingstone – but it indicates nevertheless that Sechele was a capable interlocutor. As early as 1843, Livingstone noted that in “private conversation” the BaKwena <em>kgosi</em> outlined “all his objections to the gospel we preach” and presented him with a number of “striking” questions. Sechele, for instance, challenged the sincerity of European conviction: “‘since it is true that all who die unforgiven are lost forever,’” he asked, “‘why did your nation not come to tell us of it before now?’” (Livingstone 1843). Reading between the lines, Livingstone’s record also intimates that debating the <em>kgosi</em> was no easy task. “The fellow does not want arguments” when advancing a position, he told Robert Moffat; Sechele “would beat many who look with contempt on savages as void of sophistry” (Livingstone 1846).</p>
-						
-						<p>Sechele’s skilful argumentation may also be reflected in a famous passage in <em>Missionary Travels</em>, known as the “dispute” with a rainmaker (1857, 23-25). In this reported conversation between a European “medical doctor” and an unnamed “rain doctor,” Livingstone attempts to communicate the rationale for one of the BaTswana’s central rituals to his domestic readership. The European medical voice opens the debate by challenging the rainmaker’s belief that “medicines” allow him to “command the clouds” and by arguing that such power belongs to “God alone.” The rainmaker responds to this objection by contesting the assumption that underlies it. In reality, he contends, “[w]e both believe the very same thing. It is God that makes the rain, but I pray to him by means of these medicines” (1857, 23).</p>
-						
-						<p>The medical doctor then proceeds to deny the power of BaTswana medicine, only to have the rainmaker chastise his presumptuous judgement. “<em>We</em> do not despise those things which you possess, though we are ignorant of them. […] <em>You</em> ought not to despise our little knowledge, though you are ignorant of it” (1857, 24, emphasis in original). In the course of the dialogue, the rainmaker even goes so far as to identify parallels between western biomedicine and the cures ­of BaTswana medical practice, which applied not only to physical maladies but – more holistically – to the health of the natural environment (Volz 2008, 126; Stanley 2014, 155). “[W]e are both doctors,” argues the rainmaker:</p>
-						
-						<blockquote>You give a patient medicine. Sometimes God is pleased to heal him by means of your medicine: sometimes not – he dies. When he is cured, you take the credit of what God does. I do the same. Sometimes God grants us rain, sometimes not. When he does, we take the credit of the charm. When a patient dies, you don’t give up trust in your medicine, neither do I when rain fails. (Livingstone 1857, 24-25)</blockquote>
-						
-						<p>Both forms of medicine, argues the rainmaker, require divine activity to ensure success. In both there is scope for failure, but this no more undermines rainmaking than it does the fallible treatments of the European doctor. Throughout the debate, the BaTswana practitioner thus identifies similarities between rainmaking and his opponent’s practices of both Christian prayer and European medicine, in order to claim parity between their respective cosmologies.</p>
-						
-						<p>Having recounted the arguments in support of rainmaking, Livingstone acknowledges that he “never succeeded in convincing a single individual of their fallacy” (1857, 25). Indeed, commentators have noted the surprising extent to which Livingstone engages with the BaTswana perspective, in spite of his conviction that it is mistaken. For example, John and Jean Comaroff argue that while other missionaries recorded their efforts to argue with rainmakers, Livingstone was unique in presenting a dialogue in which “there was little to choose between their positions” (1991, 210-11). Instead, in publishing this passage, Livingstone sought to convey the epistemological challenge of BaTswana rationale to his home audience (J. Livingstone 2014, 52-53), and as Brian Stanley puts it to “encourage in others a more discerning insight into the world view of the Tswana peoples” (2014, 156, 146-47).</p>
-						
-						<p>The dialogue is therefore best understood as an “artificial composite” that reflects conversations over a sustained period and possibly with multiple individuals (Stanley 2014, 148, 151). Indeed, Livingstone himself indicates that he is not recounting a single encounter with a BaKwena rainmaker, but is rather providing “a specimen of their way of reasoning” (1857, 25). There are of course various practitioners with whom Livingstone might have conversed while residing with the BaKwena; Stephen Volz suggests, for instance, that the noted <em>ngaka</em>, Lekalake, is a likely candidate (2008, 126).</p>
-						
-						<p>However, given that “[r]ainmaking was one of the primary ritual functions of the chief in Tswana society” (Stanley 2014, 149) and that Sechele was a “noted rain-doctor” (Livingstone 1857, 20), conversations between the two men almost certainly inflected Livingstone’s construction of the dialogue. That the BaKwena <em>kgosi</em> grappled with the requirement to abandon rainmaking as a condition of Christian conversion, as Livingstone notes (1857, 20), also suggests that Sechele was most likely a key source for the dialogue’s “rain doctor” (Stanley 2014, 150).</p>						
-
-						<h4 class="subsection" id="link-3.2">The complexity of Sechele’s Christian conversion</h4>
-
-						<p>Although Sechele was deeply invested in traditional BaTswana beliefs and practices, he did accept Christianity in the 1840s under the influence of David Livingstone. Before admitting Sechele into the church, Livingstone demanded a considerable period of suitable conduct, for as he wrote to his father-in-law Robert Moffat: “I feel my heart trembling when I think of the danger of receiving one who may not be a true believer or refusing one who is” (1848a). When Sechele was finally offered baptism in 1848, Livingstone reported that the BaKwena <em>kgosi</em> had “for a long time previous professed firm belief in the truth of Christianity” (Livingstone 1848b). Yet, in spite of Sechele’s clear affirmation of faith, the nature of his subsequent engagement with Christianity elicited a complicated reception amongst nineteenth-century missionaries (see Nkomazana 2000a, 227-28; 2000b).</p>
-
-						<p>LMS agents puzzled over Sechele, finding him simultaneously impressive and perturbing. John Mackenzie, a long-term missionary amongst the BaTswana, commended the <em>kgosi</em>’s expertise in scripture. “[T]here is no native in Bechuanaland,” Mackenzie suggested, “better acquainted with the Bible than Sechele.” But the missionary also bemoaned that Sechele’s “consistency was not kept up” after Livingstone’s departure from the BaKwena, when the <em>kgosi</em> “was left alone to pursue his course amid the querulous taunts of his own people” (MacKenzie 1871, 105-06).</p>
-						
-						<p>For Mackenzie, however, Sechele did not simply reject Christianity. Instead, he sought to combine BaKwena custom and the new religion, assisting in the “performance of heathen ceremonies,” while also remaining “most exact in the observance of private and family prayers.” “He would,” as Mackenzie put it, “use charms and incantations, washings and purifyings, according to the old rule, and yet profess faith in Him whose blood cleanest from all sin” (1871, 106).</p>
-						
-						<p>While MacKenzie considered Sechele’s position – that he could be both an “orthodox Mochuana [Motswana] and a good Christian” – to be misguided syncretism, others were more generous in their assessment (1871, 107). John Smith Moffat, who resided with the BaKwena from 1877-79, acknowledged that Sechele was “a very mixed character, full of inconsistencies,” but equally insisted that he had “from the outset of his association with David Livingstone, been an ardent adherent of the Christian faith” (qtd. in Moffat 1921, 144).</p>
-						
-						<p>Livingstone’s own opinion of Sechele fluctuated. In 1849, he was profoundly destabilised by events that seemed to call the <em>kgosi</em>’s sincerity into question. Livingstone had discovered that Sechele, who had rejected polygamy on conversion, had subsequently impregnated one of his former wives. The revelation, wrote the missionary, “loosened all my bones,” while Sechele’s assurances that he remained a believer “fell on the soul like drops of aqua fortis on an ulcerated surface” (Livingstone [1849] 1959). Nevertheless, Livingstone believed that the <em>kgosi</em> had not “apostatized completely” and that his “professions of sorrow were sincere” (Livingstone 1849).</p>
-						
-						<p>In 1852, reports that a travelling Englishman had been plundered by the BaKwena once again led Livingstone – in a letter to the LMS Home Secretary Arthur Tidman – “to mourn over the defection of Sechele now more apparent than ever.” Still, Livingstone’s opinion was far from fixed. In the letter to Tidman, he claimed to “believe Sechele is an apostate” (1852a), but he was less severe in correspondence six months later with another colleague, William Thompson: Sechele, Livingstone reflected, “was an entire backslider though not an apostate” (1852b).</p>
-						
-						<p>Livingstone remained preoccupied with the state of Sechele’s soul in later years. In his 1870 Field Diary, Livingstone offered a sympathetic reflection from a retrospective vantage. Although the BaKwena <em>kgosi</em> may have “given some cause for dissatisfaction by his weakness &amp; subsequent inconsistencies,” Livingstone was willing to “solemnly declare that I considered him to be a true Christian.” The missionary was convinced that in Sechele he had encountered authentic faith: “The first extempore prayer he uttered in my presence could not have been learned but from the Holy Spirit” (1870).</p>						
-
-						<h4 class="subsection" id="link-3.3">Christianity and Tswana culture</h4>
-
-						<p>The reactions that Sechele provoked indicate the complexity of his interaction with Christianity, as it was preached by European missionaries. The evidence that he enthusiastically embraced the new faith, while seeking accommodation with Tswana culture, has been interpreted by the Comaroffs as an instance of “‘particularization’, ‘hybridity,’ or bricolage” (Comaroffs 1997, 89; Ross 2002, 63). In fact, Sechele should be identified as an important figure in the transmission, reception and “inculturation of Christianity” in southern Africa (Ross 2002, 63). He was at the forefront of what Stephen Volz calls the “Tswana-ization of Christianity,” or the dialectic process by which Christianity was interpreted, shaped, and integrated into the Tswana context (Volz 2008, 114; cf. Nkomazana 2000a, 24-28).</p>
-
-						<p>While such a dynamic can be inferred from missionary commentary, there is also evidence of “Tswana-isation” in a letter that Sechele himself wrote to <em>Mahoko a Becwana</em> (which translates as “words of BaTswana”), an LMS magazine printed at Kuruman in SeTswana in the 1880s and 1890s. This magazine, parts of which have been translated by Part Mgadla and Stephen Volz, published some missionary-authored material but primarily printed letters from BaTswana Christians (Mgadla and Volz 2006, xv).</p>
-						
-						<p>Sechele’s letter appears in the context of an exchange on the subject of witchcraft. An anonymous contributor, who is emphatic in her or his rejection on the basis of Christianity, begins the exchange. “I no longer agree with the elders about such practices because I grew up in the Christian faith”; “let us throw away such childishness,” the author implores (Anon. [1883b] 2006, 193). The contributor is particularly concerned about “the continued killing of people in the name of witchcraft,” and directly implicates Sechele in the practice of executing suspected witches. The letter informs the magazine’s readership that the BaKwena leader is rumoured to have killed “five witches last month”; this is surprising, notes the author, for “some say Sechele is a person of Christian education” (Anon. [1883b] 2006, 193-95).</p>
-						
-						<p>This accusatory letter provoked Sechele to reply, but his response is not to deny killing the witches. Instead, in his own missive he insists that he had good grounds for his actions. To the charge that he had executed the witches following the testimony of a child informant, Sechele counters that he “would not have killed them based only on the words of the child if they were not generally known” to practice witchcraft. “Many people often saw them,” he contends, before going on to argue that his steps were appropriate since “people are dying, as is commonly known” from&nbsp; witches’ activities (Sechele [1883] 2006, 197).</p>
-						
-						<p>Sechele’s letter indicates that long after his conversion he had still not disavowed all the Tswana customs that had proven contentious to missionaries. Rather, he continued to believe in the reality of witchcraft and that he was required to exercise his judicial powers against it. Perhaps most strikingly, the letter shows that he was willing to admit publicly to witch killing in the LMS’s leading SeTswana publication. Put another way, thirty years after his baptism, he refused to hide his participation in traditional practices or to reassert his Christian credentials in reply to his interlocutor, a stance that underscores the complex ways in which he continued to negotiate the boundary between Tswana and European cultures.</p>						
-
-						<h4 class="subsection" id="link-3.4">Sechele and the Bible</h4>
-
-						<p>Sechele not only presented a Christian praxis that simultaneously integrated and complicated European norms; he also engaged actively with the Bible, used it to challenge European authority, and was willing to contend with missionaries on matters of scriptural interpretation. For example, in another letter to <em>Mahoko a Becwana</em>, Sechele ([1884] 2006) outlines major concerns that he had about the missionaries’ presumption of interpretative control.</p>
-
-						<p>On this occasion, the letter was prompted by comments from the magazine’s editor that query a literal interpretation of the Genesis flood narrative. In this piece, the editor argues that although “all Europeans” had once “considered the book of God to be literally true,” it was “known with certainty today that the flood at the time of Noah was not equal to the entire earth” (Anon. [1883a] 2006, 105). For Sechele, however, this departure from traditional understanding presents a problem with implications beyond the text in question. In assessing the editor’s attempt to guide the BaTswana in interpretation, Sechele detects and questions a shift in authority from the Bible to European testimony. “So, let us leave the writings of God and take advice from your mouth,” he writes with irony. “[We] speak of the writings as you have printed them. Is it that you are now taking us out of the secrecy of the writings, so that we should follow your advice more than the writings?” (Sechele [1884] 2006, 105-07; cf. Volz 2008, 129).</p>
-						
-						<p>Sechele could also use biblical and Christian discourse dynamically in order to deliver challenges to European missionaries and officials. This emerges particularly in a letter published by <em>One More Voice</em> that Sechele sent to Robert Moffat (addressed by the Ndebele name, Moshete) on 31 October 1865 in the hope that it would reach “the rulers of the English.” In this letter, transcribed by John Smith Moffat (Robert Moffat’s son), the BaKwena <em>kgosi</em> renews his complaints about the Boers and the British government.</p>
-						
-						<p>Sechele’s specific objective is to lobby for a British missionary, which he had been without since David Livingstone’s departure. He complains that he has been “disregarded” by the missionaries because the British had relinquished territory to the Boers: “It is this which has caused the teachers to forsake this country, because the Rulers have made a covenant with the Boers to give them this land” (Sechele and Moffat 1865).&nbsp; Although agents of the Hermannsburg Missionary Society had resided with the BaKwena between 1857 and 1864 (Grobler 1997, 251-52), Sechele claims that his “soul is grieved” at having been left with German missionaries and refused by the British (Sechele and Moffat 1865).</p>
-						
-						<p>The letter’s most striking quality is the religiously inflected language that Sechele deploys in making his case. In one comment, he adopts an almost prophetic voice to remind British officials of their accountability before God: “How will it be with you, rulers of the teachers, that you disregard the shedding of innocent blood, and the destruction of men’s souls? How will it be with you before God?” As well as cautioning his readers with the prospect of divine judgement, he also makes them the subject of prayerful petition: “let my prayer and my sorrowing with which I have besought you for missionaries reach onto God”; “May God hear me and turn your hearts!” (Sechele and Moffat 1865).</p>
-						
-						<p>Sechele’s words are thus an expression of how “one of the chiefs of these people laments and prays for his tribe” (Sechele and Moffat 1865). Biblical lament, as found in the Psalms or the Book of Lamentations, mourns the present and petitions God in a moment of crisis, and in Sechele’s letter the distinctive vocabulary of such mourning and crisis consistently surfaces. “I have despaired of this land”; “I am grieved”; “the affliction of this country continues”; “let my prayer and my sorrowing […] reach onto God.” At the end of his communication he is most explicit, calling the letter “My lamentations” before making a final divine appeal: “may God hear me!” (Sechele and Moffat 1865).</p>
-						
-						<p>Sechele’s scriptural language highlights his capacity to use the Bible for his own purposes; by echoing lament, he lends weight to his complaint about the Transvaal and his challenge to both British officials and missionaries. At the same time, the <em>kgosi</em>’s recourse to a biblical voice also reflects a sincere investment in scripture, particularly the Old Testament. Indeed, Livingstone remarked on Sechele’s enthusiasm for the prophet Isaiah (1857, 16), while Mackenzie commented on his astonishing “readiness in finding texts in both Old and New Testaments, but especially the former” (1871, 105).</p>
-						
-						<p>Although he defied missionary orthodoxies, Sechele nevertheless demonstrated his strong support for Christianity. He was even known to engage in evangelism beyond the BaTswana, apparently preaching regularly in Mzilikazi’s Ndebele kingdom (Mackenzie 1871, 319). Sechele’s sustained engagement with the new faith was thus matched by an effort to extend it, to the extent that one historian estimates that he “did more to propagate Christianity in nineteenth-century southern Africa than virtually any single European missionary” (Parsons 1998, 40).</p>						
-						
-					</section>
-
-					<section aria-labelledby="conclusion" id="link-4">
-						<h3 class="subsection black" id="conclusion">Conclusion: Reflections on the record</h3>
-
-						<p>This essay has examined Sechele’s efforts to navigate political change in nineteenth-century southern Africa, by highlighting his place at the forefront of BaTswana-Boer relations and exploring his campaign to publicise his grievances using missionary networks. The essay has also showcased Sechele’s position in brokering the cultural encounter between the BaTswana and Europeans, where he emerges as one who promoted Christianity in a Tswana context, actively interpreted the Bible, and was able to critically deploy its resources.</p>
-
-						<p>At the end of this discussion, however, a question remains, one especially significant in the context of <em>One More Voice</em>. To what extent does the record available actually provide access to Sechele’s voice? Investigating Sechele has involved drawing on several kinds of documents that incorporate different levels of external mediation. At one extreme is David Livingstone’s published dialogue with the rainmaker (1857, 23-25), a source explicitly shaped by a western intermediary in which the BaKwena <em>kgosi</em> (if, indeed, it is Sechele) does not appear directly by name. By emphasising the likely connection between Sechele’s interactions with Livingstone and the arguments attributed to the “rain doctor,” therefore, this essay participates in a critical effort to foreground the influence of non-western individuals on colonial records (see Wisnicki 2019), whether as interpreters, informants, or interlocutors.</p>
-						
-						<p>If a consciously constructed dialogue represents one end of the spectrum, nineteenth-century letters in SeTswana represent the other. The <em>Mahoko</em> letters (Sechele [1883] 2006; [1884] 2006), lately translated by linguistic experts, appear to be the most unmediated of the sources consulted; at present, these may well be the only known documents by Sechele in SeTswana. This is not to say that such materials are altogether free from external influence. The overarching editorial control of a European missionary society must be recognised, and as the translators acknowledge, the “lack of a standard written Setswana at the time of the newspaper” complicates the present-day task of translating historical Tswana expressions (Mgadla and Volz 2006, xxxv, xli).</p>
-						
-						<p>However, the majority of Sechele documents drawn on here – the items published by <em>One More Voice</em> – fall between the two poles of mediation. These are English language sources made available by nineteenth-century European intermediaries, who either translated a SeTswana original or interpreted Sechele’s spoken words and transcribed them in English. Given the direct involvement of Europeans in composing these documents, they could be regarded simply as instances of western ventriloquism that distort the African voice they purport to express (see Youngs 2002, 164). Yet although such sources present problems, it does seem that Sechele’s intermediaries aspired to convey his meaning faithfully. Livingstone describes Sechele’s 1852 letter to Moffat as “[n]early literally translated” (1857, 118) and notes that any “words added to bring out the meaning” were clearly demarcated “in parentheses” (Sechele and Livingstone 1852). Sechele’s 1853 “statement” following the Boer incursion, for that matter, is accompanied by signed declarations from Samuel Edwards and William Thompson that attest to its authenticity (Sechele, Edwards, and Thompson 1853).</p>
-						
-						<p>Claims of transparency, of course, are no guarantees of fidelity. Ultimately, it is impossible to determine just how much Sechele’s words were reshaped in the process of translation or interpretation (cf. Davis 2021). Still, given the evidence that his mediators at least aspired towards accuracy, there is little reason to assume, without corroboration, that they took considerable liberties with his words. In any case, the preservation of these varied source documents, including those <a href="/texts.html#sechele-toc">published</a> by <em>One More Voice</em>, allows for a fuller assessment of Sechele’s complex political and cultural position – at the interface of both BaTswana-Boer and BaTswana-British relations – than is possible for many other southern African leaders in the nineteenth century, whose original words appear to be absent from the colonial archive.</p>
-						
-						<h4 class="subsection" id="link-4.1">Note: Sechele’s letters in Dutch-Afrikaans</h4>
-
-						<p>J. E. H. Grobler (1997) discusses a set of letters from Sechele in Dutch-Afrikaans held in the Transvaal Archives Depot (now the National Archives of South Africa), Pretoria, but the present author was unable to consult them for this essay.</p>
-					</section>
-
-					<section aria-labelledby="works-cited" id="link-5">
-						<h3 class="subsection black" id="works-cited">Works cited</h3>
-
-						<p>Anonymous. (1883a) 2006. “The Flood.” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105. Cape Town: Van Riebeeck Society.</p>
-
-						<p>———. (1883b) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 193–97. Cape Town: Van Riebeeck Society.</p>
-						
-						<p>Comaroff, Jean, and John Comaroff. 1991. <em>Of Revelation and Revolution: Christianity, Colonialism, and Consciousness in South Africa</em>. Vol. 1. Chicago: University of Chicago Press.</p>
-						
-						<p>Comaroff, John L., and Jean Comaroff. 1997. <em>Of Revelation and Revolution: The Dialectics of Modernity on a South African Frontier</em>. Vol. 2. Chicago: University of Chicago Press.</p>
-						
-						<p>Grobler, J.E.H. 1997. “<a href="https://doi.org/10.1080/02582479708671277">Jan Viljoen, the South African Republic and the Bakwena, 1848-1882</a>.” <em>South African Historical Journal</em> 36 (1): 240–55.</p>
-						
-						<p>Livingstone, David. 1843. Letter to Arthur Tidman. 24 June 1843. Manuscript. CWM/LMS/Livingstone Wooden Box, item 23. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000531"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1845. Letter to Robert Moffat 1. 6 June 1845. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-04. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000587"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1846. Letter to Robert Moffat 1. 11 March 1846. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-10. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000611"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1848a. Letter to Robert Moffat 1. 2, [4, 5] September 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-18. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000656"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1848b. Letter to Robert Moffat 1. November 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-20. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000659"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1849. Letter to Robert Moffat 1. [4 May?] 1849. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-02. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000672"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1852a. Letter to Arthur Tidman. 26 April 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 63. University of London, School of Oriental and African Studies, London.<em> Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000750"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1852b. Letter to William Thompson. 12 October 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 71. University of London, School of Oriental and African Studies, London. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000772"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1857. <em>Missionary Travels and Researches in South Africa</em>. London: John Murray. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/missionary-travels-manuscript/two-versions-missionary-travels"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. 1870. Retrospect to Be Inserted in the Journal. 10 March 1870. Manuscript. MS.10703, ff. 40-43. National Library of Scotland, Edinburgh, Scotland. <em>Also see the </em><a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000211"><em>edition</em></a><em> published by</em> Livingstone Online.</p>
-						
-						<p>———. (1849) 1959. “Letter to Robert Moffat 1. 11 April 1849.” In <em>David Livingstone Family Letters</em>, edited by Isaac Schapera, 2:28–32. London: Chatto &amp; Windus.</p>
-						
-						<p>Livingstone, Justin D. 2014. <em>Livingstone’s “Lives”: A Metabiography of a Victorian Icon</em>. Manchester: Manchester University Press.</p>
-						
-						<p>Mackenzie, John. 1871. <em>Ten Years North of the Orange River</em>. Edinburgh: Edmonston and Douglas.</p>
-						
-						<p>Mgadla, Part T., and Stephen C. Volz, eds and trans. 2006. <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>. Cape Town: Van Riebeeck Society.</p>
-						
-						<p>Moffat, Robert U. 1921. <em>John Smith Moffat, C.M.G., Missionary, a Memoir</em>. London: John Murray.</p>
-						
-						<p>Morton, Fred. 1992. “<a href="https://doi.org/10.2307/3601632">Slave-Raiding and Slavery in the Western Transvaal After the Sand River Convention</a>.” <em>African Economic History</em> 20: 99–118.</p>
-						
-						<p>———. 2012. “Sechele I (c. 1810-1892).” In <em>Dictionary of African Biography</em>, edited by Emmanuel K. Akyeampong and Henry Louis Gates Jr., 5:318–19. Oxford; New York: Oxford University Press.</p>
-						
-						<p>Nkomazana, Fidelis. 2000a. “Earliest Southern African Biblical Interpretation: The Case of the Bakwena, Bakololo and Bangwato.” In <em>The Bible in Africa; Transactions, Trajectories, and Trends</em>, edited by Gerald O. West and Musa W. Dube, 223–35. Leiden: Brill.</p>
-						
-						<p>———. 2000b. “<a href="https://journals.co.za/action/doSearch?AllField=The+Story+of+King+Sechele+I+and+the+Missionaries">The Story of King Sechele I and the Missionaries</a>.” <em>Journal of Religion and Theology in Namibia</em> 2.1: 95–109.</p>
-						
-						<p>Parsons, Neil. 1998. <em>King Khama, Emperor Joe, and the Great White Queen: Victorian Britain through African Eyes</em>. Chicago; London: University of Chicago Press.</p>
-						
-						<p>Ramsay, Jeff. 1991. “<a href="https://www.jstor.org/stable/i40044016">The Batswana-Boer War of 1852-53: How the Batswana Achieved Victory</a>.” <em>Botswana Notes and Records</em> 23: 193–207.</p>
-						
-						<p>———. 2014. “<a href="https://doi.org/10.1080/02582473.2013.859169">Firearms in Nineteenth-Century Botswana: The Case of Livingstone’s 8-Bore Bullet</a>.” <em>South African Historical Journal</em> 66 (3): 440–69.</p>
-						
-						<p>Ross, Andrew. 2002. <em>David Livingstone: Mission and Empire</em>. London: Hambledon Continuum.</p>
-						
-						<p>Schapera, Isaac, ed. 1959. <em>David Livingstone: Family Letters, 1841-1856</em>. 2 vols. London: Chatto &amp; Windus.</p>
-						
-						<p>———. 1974. <em>David Livingstone: South African Papers 1849-1853</em>. Cape Town: Van Riebeeck Society.</p>
-						
-						<p>Sechele I. (1883) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 197. Cape Town: Van Riebeeck Society.</p>
-						
-						<p>———. (1884) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105–7. Cape Town: Van Riebeeck Society.</p>
-						
-						<p>Sechele I, and Samuel Edwards. 1853. “Statement of Sechele, Paramount Chief of the Bakwaina.” 21 April 1853; 30 April 1853. Publication. Cape Town. CWM/LMS/South Africa/Incoming Correspondence/Box 28/File 2/Jacket C. University of London. School of Oriental and African Studies. <em>Also see the </em><a href="/html/transcriptions/liv_020021_TEI.html"><em>edition</em></a><em> published by </em>One More Voice.</p>
-						
-						<p>Sechele I, Samuel Edwards, and William Thompson. 1853. Statement and Attestations. 7 May 1853, 11 May 1853, 11 May 1853, 11 May 1853. Unpublished manuscript. Cape Town. CWM/LMS/South Africa/Incoming Correspondence/Box 28/File 2/Jacket C. University of London. School of Oriental and African Studies. <em>Also see the </em><a href="/html/transcriptions/liv_020021_TEI.html"><em>edition</em></a><em> published by </em>One More Voice.</p>
-						
-						<p>Sechele I, and David Livingstone. 1852. Letter to Robert Moffat 1 with Speech. [October 1852]. Manuscript. CWM/LMS/Home/Livingstone Wooden Box/Item 71. University of London. School of Oriental and African Studies, London. <em>Also see the </em><a href="/html/transcriptions/liv_003027_TEI.html"><em>edition</em></a><em> published by </em>One More Voice.</p>
-						
-						<p>Sechele I, and John Smith Moffat. 1865. Letter to Robert Moffat 1. 31 October 1865. Unpublished manuscript. CWM/LMS/South Africa/Incoming Correspondence/Box 33/File 5/Jacket A. University of London. School of Oriental and African Studies, London. <em>Also see the </em><a href="/html/transcriptions/liv_020029_TEI.html"><em>edition</em></a><em> published by </em>One More Voice.</p>
-						
-						<p>Sechele I, and Robert Moffat 1. 1852. Letter to the London Missionary Society. [1852-53]. Unpublished manuscript. CWM/LMS/South Africa/Incoming Correspondence/Box 27/File 1/Jacket B. University of London. School of Oriental and African Studies. <em>Also see the </em><a href="/html/transcriptions/liv_020019_TEI.html"><em>edition</em></a><em> published by </em>One More Voice.</p>
-						
-						<p>Smith, Edwin William. 1957. <em>Great Lion of Bechuanaland: The Life and Times of Roger Price, Missionary</em>. London: Independent Press.</p>
-						
-						<p>Stanley, Brian. 2014. “<a href="https://doi.org/10.1163/18748945-02702003">The Missionary and the Rainmaker: David Livingstone, the Bakwena, and the Nature of Medicine</a>.” <em>Social Sciences and Missions</em> 27: 145–62.</p>
-						
-						<p>Volz, Stephen. 2008. “<a href="https://doi.org/10.1163/157006608X289657">Written on Our Hearts: Tswana and the ‘Word of God’ in the Mid-Nineteenth Century</a>.” <em>Journal of Religion in Africa</em> 38 (2): 112–40.</p>
-						
-						<p>Wisnicki, Adrian S. 2019. <em>Fieldwork of Empire, 1840–1900: Intercultural Dynamics in the Production of British Expeditionary Literature.</em> New York; Abingdon, Oxon: Routledge.</p>
-						
-						<p>Youngs, Tim. 2002. “Africa/The Congo: The Politics of Darkness.” In <em>The Cambridge Companion to Travel Writing</em>, edited by Peter Hulme and Tim Youngs, 156–73. Cambridge: Cambridge University Press.</p>						
-					</section>
-				</main>
-
-				<aside class="credits" id="credits-div">
-					<hr />
-
-					<p><strong>Cite page (MLA):</strong> Livingstone, Justin D. “Sechele and the Record of Intercultural Encounter.” Adrian S. Wisnicki, peer-rev. ed. <em>One More Voice</em>, an imprint of <em>Livingstone Online</em>. New dawn edition, 2021. Web. <a href="/html/essays/sechele_record_encounter.html">https://onemorevoice.org/html/essays/sechele_record_encounter.html</a>.</p>
-			
-					<p><strong>Terms of use:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
-				
-					<p id="caption"><strong>Header image caption</strong>: A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in <em>Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana</em> [<em>History of the Bechuana</em>] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.</p>
-					
-					<p><strong>Header image commentary</strong>: This is one of <a href="/visual_materials.html#liv_021057">several historical images</a> collected by <em>One More Voice</em> of Sechele I, <em>kgosi</em> of the BaKwena state between c.1830 and 1892 in what is now Botswana. It offers a good instance of how the project can bring together primary texts with relevant visual materials. Sechele is pictured here with his wife, MmaKgari, which translates from SeTswana as “mother of Kgari.” This individual is most likely the widow of Matsheng (former <em>kgosi</em> of the BaNgwato, a community within the larger BaTswana ethnic group in southern Africa), whom Sechele married later in life (see Edwards 1957, 286). Sechele was previously married to another individual bearing the name MmaKgari, whom he divorced following his conversion to Christianity in the late 1840s. One other former wife, Mokgokong, who was the mother of Sechele’s son Kgari, may also have been known by the same title (see Schapera 1960, 298-99). However, since this photograph dates from the late-nineteenth century, neither of these women could be the individual pictured. In the photograph, Sechele is attired in a combination of European and BaTswana dress. Such an amalgamation underscores his position at the meeting point of cultures in a period of change in nineteenth-century southern Africa. The clothing chosen for this portrait may also indicate that Sechele sought to represent himself, and his political authority, by combining items associated with both European and Tswana society (cf. Comaroff and Comaroff 1997, 244).</p>
-				</aside>
-			</div>
-
-		</div>
 	
+	<body class="essay materials critical" id="body">
+	
+		<header>
+			<div class="nav-container" data-include="header">
+				<nav class="fallback">
+					<span class="logo-container">
+						<a href="/index.html">
+							<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+							<h1>One More Voice</h1>
+						</a>
+					</span>
+					<button class="hamburger-menu" style="cursor:pointer" title="Menu" aria-label="Show site sections" onclick="openNav()" tabindex="0">
+						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+					</button>
+				</nav>
+			</div>
+		</header>
+		
+		<main id="main" aria-labelledby="sechele">
+				<section class="page-details horizontal">
+					<figure class="image-wrapper">
+						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+						<img width="700" height="431" class="image-border" src="/img/essays/liv_021047_0001_deriv-1396px.jpg" srcset="/img/essays/liv_021047_0001_deriv-1396px.jpg 1396w, /img/essays/liv_021047_0001_deriv-956px.jpg 956w, /img/essays/liv_021047_0001_deriv-698px.jpg 698w, /img/essays/liv_021047_0001_deriv-636px.jpg 636w, /img/essays/liv_021047_0001_deriv-478px.jpg 478w, /img/essays/liv_021047_0001_deriv-318px.jpg 318w" sizes="(min-width: 1700px) 875px, (min-width: 1000px) 50.59vw, (min-width: 780px) 698px, (min-width: 520px) 100vw, calc(10vw + 448px)" alt="Half-body portrait of Kgosi Sechele and MmaKgari seated side by side." title="A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana [History of the Bechuana] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
+						<figcaption class="caption-icon mobile">
+							<span class="tooltip-container">
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
+							</span>
+						</figcaption>
+					</figure>
+			
+					<div>
+						<span>
+							<h2 id="sechele">Sechele and the Record of Intercultural Encounter</h2>
+							<p class="byline">Author: <strong>Justin D. Livingstone</strong> (Queen's University Belfast)</p>
+							<p class="editor-line">Internal OMV Peer-Reviewing Editor: <strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</p>
+							<p>Date (publication and updates): <strong>2021</strong></p>
+							<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+							<figcaption class="caption-icon desktop">
+								<span class="tooltip-container">
+									<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+									<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
+								</span>
+							</figcaption>
+						</span>
+					</div>
+				</section>
+			
+				<section class="content">
+					<div class="decoration"></div>
+					<article id="content">
+			
+						<section class="toc">
+							<ol aria-label="Menu">	
+								<li><a href="#introduction">Introduction</a></li>
+								<li><a href="#boers">Sechele and the Boers</a>
+									<ol style="list-style-type: lower-latin;">
+										<li><a href="#war">The BaTswana-Boer War</a></li>
+										<li><a href="#diplomacy">Sechele and Diplomacy</a></li>
+									</ol>
+								</li>
+								<li><a href="#intercultural">Sechele and Intercultural Engagement</a>
+									<ol style="list-style-type: lower-latin;">
+										<li><a href="#rain">Sechele the “Rain Doctor”?</a></li>
+										<li><a href="#complexity">The Complexity of Sechele’s Christian Conversion</a></li>
+										<li><a href="#tswana">Christianity and Tswana Culture</a></li>
+										<li><a href="#bible">Sechele and the Bible</a></li>
+									</ol>
+								</li>
+								<li><a href="#conclusion">Conclusion: Reflections on the Record</a>
+									<ol style="list-style-type: lower-latin;">
+										<li><a href="#letters">Note: Sechele’s Letters in Dutch-Afrikaans</a></li>
+									</ol>
+								</li>
+								<li><a href="#works-cited">Works Cited</a></li>
+								<li><a href="#citation">Page Citation</a></li>
+								<li><a href="#image-details">Lead Image Details</a></li>
+							</ol>
+						</section>
+
+						<section aria-labelledby="introduction">
+							<h3 id="introduction">Introduction</h3>
+
+							<p>Sechele I was <em>kgosi</em> (or ruler) of the BaKwena, one of the principal communities of the larger BaTswana ethnic group in southern Africa, for over fifty years in the mid to late-nineteenth century. After the murder of his father Kgosi Motswasele II in 1821, which precipitated the division of the BaKwena, Sechele spent much of his early life in exile. In the early 1830s, he returned to a portion of the BaKwena who proclaimed him leader, following which he set out to restore cohesion to the divided group (Morton 2012, 318-19).</p>
+
+							<p>Over the next few decades, Sechele established himself as a dominant figure in BaTswana politics. He secured the BaKwena’s power and consolidated their influence by developing trade routes for commerce in ivory across the Kalahari region. As a result of Sechele’s efforts, the BaKwena state (located in what is now Botswana) became politically and economically preeminent amongst BaTswana polities between the 1850s and the mid-1870s (Parsons 1998, 41).</p>
+
+							<p>This essay sets out to examine this significant southern African leader through the colonial archive. It draws on representations by contemporary missionary commentators who knew Sechele, but primarily engages with documents bearing his name. These include nineteenth-century English translations of Sechele’s letters and interpretive transcriptions of his spoken words&nbsp;– all of which are <a href="/texts.html#sechele">published</a> by <em>One More Voice</em> – as well as some Tswana-language writings only recently translated.</p>
+
+							<p>The essay positions Sechele at the forefront of BaTswana-Boer political relations in the mid-nineteenth century by focussing particularly on his response to the 1852 Battle of Dimawe, a major conflict at the BaKwena capital that had long-lasting regional effects. The essay then locates him at the cultural interface between the BaTswana and British by examining his reception and interpretation of Christianity and the Bible. While Sechele emerges as a significant figure in the documentary record, the European mediation of much of the available source material raises questions about the voice to which we have access; the essay therefore closes with reflections on the record.</p>
+							<p></p>
+						</section>
+
+						<section aria-labelledby="boers">
+							<h3 id="boers">Sechele and the Boers</h3>
+
+							<h4 id="war">The BaTswana-Boer War</h4>
+
+							<p>Sechele’s career coincided with the settlement of the Boers north of the Vaal River and the development of the South African Republic (also known as the Transvaal). In the “Great Trek” of the 1830s and 1840s, large numbers of Boers migrated from the British-controlled Cape Colony and established autonomous states in the southern African interior. A major political issue for Sechele was thus managing relations with the neighbouring Boers in the Transvaal, particularly after their independence was acknowledged in the Sand River Convention (1852). Although this relationship fluctuated throughout the period, a collision with the Boers shortly after this convention – the BaTswana-Boer War of 1852-53 – was a defining moment.</p>
+
+							<p>This encounter was the culmination of intensifying grievances over the previous decade (Ramsay 1991, 193-94). After settlement in the Transvaal, the Boers had attempted to extend their influence and – aware that their position depended on superior weaponry – compel local BaTswana groups to relinquish their armaments. Sechele’s trade activities, through which he built his munitions, were thus a source of concern. Relations deteriorated, moreover, when Sechele refused to prevent English traders from accessing the hunting grounds of Ngamiland, a region to the north-west of his state, and when he declined to enter into a treaty that would require him to provide the Transvaal with unpaid labour (Ramsay 1991, 194; 2014, 458-59).</p>
+
+							<p>Following British recognition of the South African Republic in the Sand River Convention, the Boers escalated efforts to consolidate their position in the western Transvaal (Ramsay 1991, 195). Military action against Sechele was triggered by events involving Mosielele, a <em>kgosi</em> of the BaKgatla (part of the larger BaTswana group), who lived on land granted by the Transvaal. In early 1852, Mosielele resisted renewed demands to supply labourers and refused to attend a summit with the Transvaal authorities in an attempt to repudiate his subordinate status (Grobler 1997, 244). A commando, under the leadership of Pieter Scholtz, was dispatched to discipline Mosielele, who retreated to find protection with the BaKwena, Sechele’s people. When Sechele denied the Boers’ request to surrender the fugitive, the BaKwena became the target of the offensive.</p>
+
+							<p>At the end of August 1852, the commando under Scholtz laid siege to Sechele’s residence, Dimawe. It is estimated that between 60 and 100 BaKwena were killed in the following confrontation and that hundreds of women and children – including Sechele’s son, Kgari – were returned to the Transvaal as prisoners (Morton 1992, 102). Although the BaKwena suffered major losses, they were not quelled by the defeat; Sechele instead began an effective campaign of reprisal in the Transvaal’s Marico District (which lies to the south and east of Dimawe) and strengthened his position by recruiting other BaTswana groups, before a ceasefire was agreed in January 1853. Sechele’s success in resisting the Boers’ ascendancy, not least by forming a “pan-Batswana alliance,” can be considered a “seminal event in Botswana’s birth as a nation state” (Ramsay 1991, 198-99, 193).</p>
+
+							<h4 id="diplomacy">Sechele and Diplomacy</h4>
+
+							<p>The Battle of Dimawe and its aftermath provides context for several items published by <em>One More Voice</em>. One important document is a <a href="/html/transcriptions/liv_020021_TEI.html">public letter</a>, composed by Sechele, translated into English by the trader and explorer Samuel Edwards, and printed in the <em>Cape Town Mail</em> on 30 April 1853. At this stage, Sechele was present in Cape Town after having travelled there with the aim of proceeding to London to lodge a complaint with British authorities about the Boers’ activities. The letter therefore operates as part of a campaign to publicise his perspective on the invasion and the political situation north of the Vaal River.</p>
+
+							<p>In this public missive, Sechele places responsibility for the disintegration of relations between the BaTswana and the Transvaal Boers on the latter’s efforts to curb his political autonomy. They have attempted to compel him, he argues, to “give up all [his] guns” and restrict “the English from travelling into [his] country” on the basis of a claim to be “masters of the land.” Despite letters “threatening [him] with war,” Sechele insists that he “refused to comply with their demands” (Sechele and Edwards 1853).</p>
+							
+							<p>The letter, moreover, directly implicates British policy in the escalation of military activity. Echoing criticisms of the Sand River Convention expressed by the British explorer and abolitionist David Livingstone (see J. Livingstone 2019), Sechele blames the “treaty with Pretorius” for convincing the Boers “that the country had been given to them by the English” and that they had licence “to do as they pleased with the black people.” The consequence, the <em>kgosi</em> argues, was the 1852 incursion. Taking the opportunity to broadcast the full extent of his charges, Sechele accuses the commando of having “burnt [his] town” and taken as many as “one thousand children” and “two hundred women” captive (Sechele and Edwards 1853).</p>
+							
+							<p>Sechele’s journey to Cape Town to publicise his grievances and lobby officialdom highlights his prowess as a political operator. Central to his method was mobilising the support of the British missionary community. This much is detectable in the fact that Samuel Edwards – the son of Rogers Edwards, an employee of the London Missionary Society (LMS) – was responsible for transcribing both the <em>Cape Town Mail</em> piece and an <a href="/html/transcriptions/liv_020021_TEI.html">additional statement</a> by Sechele confirming the published account (dated 7 and 11 May 1853) (Schapera 1959, 2:28; Sechele, Edwards, and Thompson 1853). The latter, moreover, also bears a signature of witness by Rev. William Thompson, who was resident in Cape Town as the Agent for LMS missions in South Africa (Schapera 1974, 29).</p>
+							
+							<p>Sechele’s access to missionary networks was secured through personal connections. Shortly after the invasion, he sent a testimonial to one of southern Africa’s best-known missionaries, Robert Moffat. In this <a href="/html/transcriptions/liv_003027_TEI.html">letter of October 1852</a>, also published by <em>One More Voice</em>, the <em>kgosi</em> addresses Moffat as the “friend of my heart’s love” and describes his, Sechele’s, predicament in emotive terms: “I am undone by the Boers, who have attacked me (though) I had no guilt with them. They required that I should be in their kingdom, but I refused” (Sechele and Livingstone 1852).</p>
+							
+							<p>It was through such missionary channels that Sechele’s version of events gained a wider audience, including circulation in Britain. As yet <a href="/html/transcriptions/liv_020019_TEI.html">another letter</a> published by <em>One More Voice</em> shows, Moffat forwarded Sechele’s statement for the attention of the LMS (Sechele and Moffat 1852). A few years later, David Livingstone would ensure the widest possible dissemination by reprinting his translation of the letter in the bestselling narrative, <em>Missionary Travels</em> (Livingstone 1857, 118-19). While such activities reflect the publicity tactics of British missionaries, Sechele’s effort to circulate the BaTswana perspective and, effectively, publish by proxy while also marshalling support from influential individuals merits recognition as his own diplomatic strategy.</p>
+						</section>
+
+						<section aria-labelledby="intercultural" >
+							<h3 id="intercultural">Sechele and Intercultural Engagement</h3>
+
+							<h4 id="rain">Sechele the “Rain Doctor”?</h4>
+
+							<p>Sechele’s missionary associations also placed him at the forefront of BaTswana-British cultural interactions in the mid-nineteenth century. His most famous connection was with David Livingstone, who had relocated from a mission amongst the BaKgatla to settle further north with the BaKwena in 1845 and who would later feature Sechele prominently in <em>Missionary Travels</em> (1857). Drawn initially by a conviction that the BaKwena <em>kgosi</em> was particularly receptive to Christianity and European culture, Livingstone would reside with the group for around five and a half years, first at Chonuane and later at Kolobeng. Sechele was, Livingstone told the LMS Home Secretary Arthur Tidman, “very fond of improvements and altogether a more likely subject than any I have seen” (Livingstone 1845).</p>
+
+							<p>The record of interaction between the two men is largely one-sided – having been written by Livingstone – but it indicates nevertheless that Sechele was a capable interlocutor. As early as 1843, Livingstone noted that in “private conversation” the BaKwena <em>kgosi</em> outlined “all his objections to the gospel we preach” and presented him with a number of “striking” questions. Sechele, for instance, challenged the sincerity of European conviction: “‘since it is true that all who die unforgiven are lost forever,’” he asked, “‘why did your nation not come to tell us of it before now?’” (Livingstone 1843). Reading between the lines, Livingstone’s record also intimates that debating the <em>kgosi</em> was no easy task. “The fellow does not want arguments” when advancing a position, he told Robert Moffat; Sechele “would beat many who look with contempt on savages as void of sophistry” (Livingstone 1846).</p>
+							
+							<p>Sechele’s skilful argumentation may also be reflected in a famous passage in <em>Missionary Travels</em>, known as the “dispute” with a rainmaker (1857, 23-25). In this reported conversation between a European “medical doctor” and an unnamed “rain doctor,” Livingstone attempts to communicate the rationale for one of the BaTswana’s central rituals to his domestic readership. The European medical voice opens the debate by challenging the rainmaker’s belief that “medicines” allow him to “command the clouds” and by arguing that such power belongs to “God alone.” The rainmaker responds to this objection by contesting the assumption that underlies it. In reality, he contends, “[w]e both believe the very same thing. It is God that makes the rain, but I pray to him by means of these medicines” (1857, 23).</p>
+							
+							<p>The medical doctor then proceeds to deny the power of BaTswana medicine, only to have the rainmaker chastise his presumptuous judgement. “<em>We</em> do not despise those things which you possess, though we are ignorant of them. […] <em>You</em> ought not to despise our little knowledge, though you are ignorant of it” (1857, 24, emphasis in original). In the course of the dialogue, the rainmaker even goes so far as to identify parallels between western biomedicine and the cures ­of BaTswana medical practice, which applied not only to physical maladies but – more holistically – to the health of the natural environment (Volz 2008, 126; Stanley 2014, 155). “[W]e are both doctors,” argues the rainmaker:</p>
+							
+							<blockquote>You give a patient medicine. Sometimes God is pleased to heal him by means of your medicine: sometimes not – he dies. When he is cured, you take the credit of what God does. I do the same. Sometimes God grants us rain, sometimes not. When he does, we take the credit of the charm. When a patient dies, you don’t give up trust in your medicine, neither do I when rain fails. (Livingstone 1857, 24-25)</blockquote>
+							
+							<p>Both forms of medicine, argues the rainmaker, require divine activity to ensure success. In both there is scope for failure, but this no more undermines rainmaking than it does the fallible treatments of the European doctor. Throughout the debate, the BaTswana practitioner thus identifies similarities between rainmaking and his opponent’s practices of both Christian prayer and European medicine, in order to claim parity between their respective cosmologies.</p>
+							
+							<p>Having recounted the arguments in support of rainmaking, Livingstone acknowledges that he “never succeeded in convincing a single individual of their fallacy” (1857, 25). Indeed, commentators have noted the surprising extent to which Livingstone engages with the BaTswana perspective, in spite of his conviction that it is mistaken. For example, John and Jean Comaroff argue that while other missionaries recorded their efforts to argue with rainmakers, Livingstone was unique in presenting a dialogue in which “there was little to choose between their positions” (1991, 210-11). Instead, in publishing this passage, Livingstone sought to convey the epistemological challenge of BaTswana rationale to his home audience (J. Livingstone 2014, 52-53), and as Brian Stanley puts it to “encourage in others a more discerning insight into the world view of the Tswana peoples” (2014, 156, 146-47).</p>
+							
+							<p>The dialogue is therefore best understood as an “artificial composite” that reflects conversations over a sustained period and possibly with multiple individuals (Stanley 2014, 148, 151). Indeed, Livingstone himself indicates that he is not recounting a single encounter with a BaKwena rainmaker, but is rather providing “a specimen of their way of reasoning” (1857, 25). There are of course various practitioners with whom Livingstone might have conversed while residing with the BaKwena; Stephen Volz suggests, for instance, that the noted <em>ngaka</em>, Lekalake, is a likely candidate (2008, 126).</p>
+							
+							<p>However, given that “[r]ainmaking was one of the primary ritual functions of the chief in Tswana society” (Stanley 2014, 149) and that Sechele was a “noted rain-doctor” (Livingstone 1857, 20), conversations between the two men almost certainly inflected Livingstone’s construction of the dialogue. That the BaKwena <em>kgosi</em> grappled with the requirement to abandon rainmaking as a condition of Christian conversion, as Livingstone notes (1857, 20), also suggests that Sechele was most likely a key source for the dialogue’s “rain doctor” (Stanley 2014, 150).</p>						
+
+							<h4 id="complexity">The Complexity of Sechele’s Christian Conversion</h4>
+
+							<p>Although Sechele was deeply invested in traditional BaTswana beliefs and practices, he did accept Christianity in the 1840s under the influence of David Livingstone. Before admitting Sechele into the church, Livingstone demanded a considerable period of suitable conduct, for as he wrote to his father-in-law Robert Moffat: “I feel my heart trembling when I think of the danger of receiving one who may not be a true believer or refusing one who is” (1848a). When Sechele was finally offered baptism in 1848, Livingstone reported that the BaKwena <em>kgosi</em> had “for a long time previous professed firm belief in the truth of Christianity” (Livingstone 1848b). Yet, in spite of Sechele’s clear affirmation of faith, the nature of his subsequent engagement with Christianity elicited a complicated reception amongst nineteenth-century missionaries (see Nkomazana 2000a, 227-28; 2000b).</p>
+
+							<p>LMS agents puzzled over Sechele, finding him simultaneously impressive and perturbing. John Mackenzie, a long-term missionary amongst the BaTswana, commended the <em>kgosi</em>’s expertise in scripture. “[T]here is no native in Bechuanaland,” Mackenzie suggested, “better acquainted with the Bible than Sechele.” But the missionary also bemoaned that Sechele’s “consistency was not kept up” after Livingstone’s departure from the BaKwena, when the <em>kgosi</em> “was left alone to pursue his course amid the querulous taunts of his own people” (MacKenzie 1871, 105-06).</p>
+							
+							<p>For Mackenzie, however, Sechele did not simply reject Christianity. Instead, he sought to combine BaKwena custom and the new religion, assisting in the “performance of heathen ceremonies,” while also remaining “most exact in the observance of private and family prayers.” “He would,” as Mackenzie put it, “use charms and incantations, washings and purifyings, according to the old rule, and yet profess faith in Him whose blood cleanest from all sin” (1871, 106).</p>
+							
+							<p>While MacKenzie considered Sechele’s position – that he could be both an “orthodox Mochuana [Motswana] and a good Christian” – to be misguided syncretism, others were more generous in their assessment (1871, 107). John Smith Moffat, who resided with the BaKwena from 1877-79, acknowledged that Sechele was “a very mixed character, full of inconsistencies,” but equally insisted that he had “from the outset of his association with David Livingstone, been an ardent adherent of the Christian faith” (qtd. in Moffat 1921, 144).</p>
+							
+							<p>Livingstone’s own opinion of Sechele fluctuated. In 1849, he was profoundly destabilised by events that seemed to call the <em>kgosi</em>’s sincerity into question. Livingstone had discovered that Sechele, who had rejected polygamy on conversion, had subsequently impregnated one of his former wives. The revelation, wrote the missionary, “loosened all my bones,” while Sechele’s assurances that he remained a believer “fell on the soul like drops of aqua fortis on an ulcerated surface” (Livingstone [1849] 1959). Nevertheless, Livingstone believed that the <em>kgosi</em> had not “apostatized completely” and that his “professions of sorrow were sincere” (Livingstone 1849).</p>
+							
+							<p>In 1852, reports that a travelling Englishman had been plundered by the BaKwena once again led Livingstone – in a letter to the LMS Home Secretary Arthur Tidman – “to mourn over the defection of Sechele now more apparent than ever.” Still, Livingstone’s opinion was far from fixed. In the letter to Tidman, he claimed to “believe Sechele is an apostate” (1852a), but he was less severe in correspondence six months later with another colleague, William Thompson: Sechele, Livingstone reflected, “was an entire backslider though not an apostate” (1852b).</p>
+							
+							<p>Livingstone remained preoccupied with the state of Sechele’s soul in later years. In his 1870 Field Diary, Livingstone offered a sympathetic reflection from a retrospective vantage. Although the BaKwena <em>kgosi</em> may have “given some cause for dissatisfaction by his weakness &amp; subsequent inconsistencies,” Livingstone was willing to “solemnly declare that I considered him to be a true Christian.” The missionary was convinced that in Sechele he had encountered authentic faith: “The first extempore prayer he uttered in my presence could not have been learned but from the Holy Spirit” (1870).</p>						
+
+							<h4 id="tswana">Christianity and Tswana Culture</h4>
+
+							<p>The reactions that Sechele provoked indicate the complexity of his interaction with Christianity, as it was preached by European missionaries. The evidence that he enthusiastically embraced the new faith, while seeking accommodation with Tswana culture, has been interpreted by the Comaroffs as an instance of “‘particularization’, ‘hybridity,’ or bricolage” (Comaroffs 1997, 89; Ross 2002, 63). In fact, Sechele should be identified as an important figure in the transmission, reception and “inculturation of Christianity” in southern Africa (Ross 2002, 63). He was at the forefront of what Stephen Volz calls the “Tswana-ization of Christianity,” or the dialectic process by which Christianity was interpreted, shaped, and integrated into the Tswana context (Volz 2008, 114; cf. Nkomazana 2000a, 24-28).</p>
+
+							<p>While such a dynamic can be inferred from missionary commentary, there is also evidence of “Tswana-isation” in a letter that Sechele himself wrote to <em>Mahoko a Becwana</em> (which translates as “words of BaTswana”), an LMS magazine printed at Kuruman in SeTswana in the 1880s and 1890s. This magazine, parts of which have been translated by Part Mgadla and Stephen Volz, published some missionary-authored material but primarily printed letters from BaTswana Christians (Mgadla and Volz 2006, xv).</p>
+							
+							<p>Sechele’s letter appears in the context of an exchange on the subject of witchcraft. An anonymous contributor, who is emphatic in her or his rejection on the basis of Christianity, begins the exchange. “I no longer agree with the elders about such practices because I grew up in the Christian faith”; “let us throw away such childishness,” the author implores (Anon. [1883b] 2006, 193). The contributor is particularly concerned about “the continued killing of people in the name of witchcraft,” and directly implicates Sechele in the practice of executing suspected witches. The letter informs the magazine’s readership that the BaKwena leader is rumoured to have killed “five witches last month”; this is surprising, notes the author, for “some say Sechele is a person of Christian education” (Anon. [1883b] 2006, 193-95).</p>
+							
+							<p>This accusatory letter provoked Sechele to reply, but his response is not to deny killing the witches. Instead, in his own missive he insists that he had good grounds for his actions. To the charge that he had executed the witches following the testimony of a child informant, Sechele counters that he “would not have killed them based only on the words of the child if they were not generally known” to practice witchcraft. “Many people often saw them,” he contends, before going on to argue that his steps were appropriate since “people are dying, as is commonly known” from&nbsp; witches’ activities (Sechele [1883] 2006, 197).</p>
+							
+							<p>Sechele’s letter indicates that long after his conversion he had still not disavowed all the Tswana customs that had proven contentious to missionaries. Rather, he continued to believe in the reality of witchcraft and that he was required to exercise his judicial powers against it. Perhaps most strikingly, the letter shows that he was willing to admit publicly to witch killing in the LMS’s leading SeTswana publication. Put another way, thirty years after his baptism, he refused to hide his participation in traditional practices or to reassert his Christian credentials in reply to his interlocutor, a stance that underscores the complex ways in which he continued to negotiate the boundary between Tswana and European cultures.</p>						
+
+							<h4 id="bible">Sechele and the Bible</h4>
+
+							<p>Sechele not only presented a Christian praxis that simultaneously integrated and complicated European norms; he also engaged actively with the Bible, used it to challenge European authority, and was willing to contend with missionaries on matters of scriptural interpretation. For example, in another letter to <em>Mahoko a Becwana</em>, Sechele ([1884] 2006) outlines major concerns that he had about the missionaries’ presumption of interpretative control.</p>
+
+							<p>On this occasion, the letter was prompted by comments from the magazine’s editor that query a literal interpretation of the Genesis flood narrative. In this piece, the editor argues that although “all Europeans” had once “considered the book of God to be literally true,” it was “known with certainty today that the flood at the time of Noah was not equal to the entire earth” (Anon. [1883a] 2006, 105). For Sechele, however, this departure from traditional understanding presents a problem with implications beyond the text in question. In assessing the editor’s attempt to guide the BaTswana in interpretation, Sechele detects and questions a shift in authority from the Bible to European testimony. “So, let us leave the writings of God and take advice from your mouth,” he writes with irony. “[We] speak of the writings as you have printed them. Is it that you are now taking us out of the secrecy of the writings, so that we should follow your advice more than the writings?” (Sechele [1884] 2006, 105-07; cf. Volz 2008, 129).</p>
+							
+							<p>Sechele could also use biblical and Christian discourse dynamically in order to deliver challenges to European missionaries and officials. This emerges particularly in a letter published by <em>One More Voice</em> that Sechele sent to Robert Moffat (addressed by the Ndebele name, Moshete) on 31 October 1865 in the hope that it would reach “the rulers of the English.” In this letter, transcribed by John Smith Moffat (Robert Moffat’s son), the BaKwena <em>kgosi</em> renews his complaints about the Boers and the British government.</p>
+							
+							<p>Sechele’s specific objective is to lobby for a British missionary, which he had been without since David Livingstone’s departure. He complains that he has been “disregarded” by the missionaries because the British had relinquished territory to the Boers: “It is this which has caused the teachers to forsake this country, because the Rulers have made a covenant with the Boers to give them this land” (Sechele and Moffat 1865).&nbsp; Although agents of the Hermannsburg Missionary Society had resided with the BaKwena between 1857 and 1864 (Grobler 1997, 251-52), Sechele claims that his “soul is grieved” at having been left with German missionaries and refused by the British (Sechele and Moffat 1865).</p>
+							
+							<p>The letter’s most striking quality is the religiously inflected language that Sechele deploys in making his case. In one comment, he adopts an almost prophetic voice to remind British officials of their accountability before God: “How will it be with you, rulers of the teachers, that you disregard the shedding of innocent blood, and the destruction of men’s souls? How will it be with you before God?” As well as cautioning his readers with the prospect of divine judgement, he also makes them the subject of prayerful petition: “let my prayer and my sorrowing with which I have besought you for missionaries reach onto God”; “May God hear me and turn your hearts!” (Sechele and Moffat 1865).</p>
+							
+							<p>Sechele’s words are thus an expression of how “one of the chiefs of these people laments and prays for his tribe” (Sechele and Moffat 1865). Biblical lament, as found in the Psalms or the Book of Lamentations, mourns the present and petitions God in a moment of crisis, and in Sechele’s letter the distinctive vocabulary of such mourning and crisis consistently surfaces. “I have despaired of this land”; “I am grieved”; “the affliction of this country continues”; “let my prayer and my sorrowing […] reach onto God.” At the end of his communication he is most explicit, calling the letter “My lamentations” before making a final divine appeal: “may God hear me!” (Sechele and Moffat 1865).</p>
+							
+							<p>Sechele’s scriptural language highlights his capacity to use the Bible for his own purposes; by echoing lament, he lends weight to his complaint about the Transvaal and his challenge to both British officials and missionaries. At the same time, the <em>kgosi</em>’s recourse to a biblical voice also reflects a sincere investment in scripture, particularly the Old Testament. Indeed, Livingstone remarked on Sechele’s enthusiasm for the prophet Isaiah (1857, 16), while Mackenzie commented on his astonishing “readiness in finding texts in both Old and New Testaments, but especially the former” (1871, 105).</p>
+							
+							<p>Although he defied missionary orthodoxies, Sechele nevertheless demonstrated his strong support for Christianity. He was even known to engage in evangelism beyond the BaTswana, apparently preaching regularly in Mzilikazi’s Ndebele kingdom (Mackenzie 1871, 319). Sechele’s sustained engagement with the new faith was thus matched by an effort to extend it, to the extent that one historian estimates that he “did more to propagate Christianity in nineteenth-century southern Africa than virtually any single European missionary” (Parsons 1998, 40).</p>						
+							
+						</section>
+
+						<section aria-labelledby="conclusion">
+							<h3 id="conclusion">Conclusion: Reflections on the Record</h3>
+
+							<p>This essay has examined Sechele’s efforts to navigate political change in nineteenth-century southern Africa, by highlighting his place at the forefront of BaTswana-Boer relations and exploring his campaign to publicise his grievances using missionary networks. The essay has also showcased Sechele’s position in brokering the cultural encounter between the BaTswana and Europeans, where he emerges as one who promoted Christianity in a Tswana context, actively interpreted the Bible, and was able to critically deploy its resources.</p>
+
+							<p>At the end of this discussion, however, a question remains, one especially significant in the context of <em>One More Voice</em>. To what extent does the record available actually provide access to Sechele’s voice? Investigating Sechele has involved drawing on several kinds of documents that incorporate different levels of external mediation. At one extreme is David Livingstone’s published dialogue with the rainmaker (1857, 23-25), a source explicitly shaped by a western intermediary in which the BaKwena <em>kgosi</em> (if, indeed, it is Sechele) does not appear directly by name. By emphasising the likely connection between Sechele’s interactions with Livingstone and the arguments attributed to the “rain doctor,” therefore, this essay participates in a critical effort to foreground the influence of non-western individuals on colonial records (see Wisnicki 2019), whether as interpreters, informants, or interlocutors.</p>
+							
+							<p>If a consciously constructed dialogue represents one end of the spectrum, nineteenth-century letters in SeTswana represent the other. The <em>Mahoko</em> letters (Sechele [1883] 2006; [1884] 2006), lately translated by linguistic experts, appear to be the most unmediated of the sources consulted; at present, these may well be the only known documents by Sechele in SeTswana. This is not to say that such materials are altogether free from external influence. The overarching editorial control of a European missionary society must be recognised, and as the translators acknowledge, the “lack of a standard written Setswana at the time of the newspaper” complicates the present-day task of translating historical Tswana expressions (Mgadla and Volz 2006, xxxv, xli).</p>
+							
+							<p>However, the majority of Sechele documents drawn on here – the items published by <em>One More Voice</em> – fall between the two poles of mediation. These are English language sources made available by nineteenth-century European intermediaries, who either translated a SeTswana original or interpreted Sechele’s spoken words and transcribed them in English. Given the direct involvement of Europeans in composing these documents, they could be regarded simply as instances of western ventriloquism that distort the African voice they purport to express (see Youngs 2002, 164). Yet although such sources present problems, it does seem that Sechele’s intermediaries aspired to convey his meaning faithfully. Livingstone describes Sechele’s 1852 letter to Moffat as “[n]early literally translated” (1857, 118) and notes that any “words added to bring out the meaning” were clearly demarcated “in parentheses” (Sechele and Livingstone 1852). Sechele’s 1853 “statement” following the Boer incursion, for that matter, is accompanied by signed declarations from Samuel Edwards and William Thompson that attest to its authenticity (Sechele, Edwards, and Thompson 1853).</p>
+							
+							<p>Claims of transparency, of course, are no guarantees of fidelity. Ultimately, it is impossible to determine just how much Sechele’s words were reshaped in the process of translation or interpretation (cf. Davis 2021). Still, given the evidence that his mediators at least aspired towards accuracy, there is little reason to assume, without corroboration, that they took considerable liberties with his words. In any case, the preservation of these varied source documents, including those <a href="/texts.html#sechele">published</a> by <em>One More Voice</em>, allows for a fuller assessment of Sechele’s complex political and cultural position – at the interface of both BaTswana-Boer and BaTswana-British relations – than is possible for many other southern African leaders in the nineteenth century, whose original words appear to be absent from the colonial archive.</p>
+							
+							<h4 id="letters">Note: Sechele’s Letters in Dutch-Afrikaans</h4>
+
+							<p>J. E. H. Grobler (1997) discusses a set of letters from Sechele in Dutch-Afrikaans held in the Transvaal Archives Depot (now the National Archives of South Africa), Pretoria, but the present author was unable to consult them for this essay.</p>
+						</section>
+
+						<section aria-labelledby="works-cited">
+							<h3 id="works-cited">Works Cited</h3>
+
+							<p>Anonymous. (1883a) 2006. “The Flood.” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105. Cape Town: Van Riebeeck Society.</p>
+
+							<p>———. (1883b) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 193–97. Cape Town: Van Riebeeck Society.</p>
+							
+							<p>Comaroff, Jean, and John Comaroff. 1991. <em>Of Revelation and Revolution: Christianity, Colonialism, and Consciousness in South Africa</em>. Vol. 1. Chicago: University of Chicago Press.</p>
+							
+							<p>Comaroff, John L., and Jean Comaroff. 1997. <em>Of Revelation and Revolution: The Dialectics of Modernity on a South African Frontier</em>. Vol. 2. Chicago: University of Chicago Press.</p>
+							
+							<p>Grobler, J.E.H. 1997. “<a href="https://doi.org/10.1080/02582479708671277">Jan Viljoen, the South African Republic and the Bakwena, 1848-1882</a>.” <em>South African Historical Journal</em> 36 (1): 240–55.</p>
+							
+							<p>Livingstone, David. 1843. Letter to Arthur Tidman. 24 June 1843. Manuscript. CWM/LMS/Livingstone Wooden Box, item 23. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000531"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1845. Letter to Robert Moffat 1. 6 June 1845. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-04. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000587"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1846. Letter to Robert Moffat 1. 11 March 1846. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-10. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000611"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1848a. Letter to Robert Moffat 1. 2, [4, 5] September 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-18. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000656"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1848b. Letter to Robert Moffat 1. November 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-20. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000659"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1849. Letter to Robert Moffat 1. [4 May?] 1849. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-02. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000672"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1852a. Letter to Arthur Tidman. 26 April 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 63. University of London, School of Oriental and African Studies, London.<em> Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000750"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1852b. Letter to William Thompson. 12 October 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 71. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000772"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1857. <em>Missionary Travels and Researches in South Africa</em>. London: John Murray. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/missionary-travels-manuscript/two-versions-missionary-travels"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. 1870. Retrospect to Be Inserted in the Journal. 10 March 1870. Manuscript. MS.10703, ff. 40-43. National Library of Scotland, Edinburgh, Scotland. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000211"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							
+							<p>———. (1849) 1959. “Letter to Robert Moffat 1. 11 April 1849.” In <em>David Livingstone Family Letters</em>, edited by Isaac Schapera, 2:28–32. London: Chatto &amp; Windus.</p>
+							
+							<p>Livingstone, Justin D. 2014. <em>Livingstone’s “Lives”: A Metabiography of a Victorian Icon</em>. Manchester: Manchester University Press.</p>
+							
+							<p>Mackenzie, John. 1871. <em>Ten Years North of the Orange River</em>. Edinburgh: Edmonston and Douglas.</p>
+							
+							<p>Mgadla, Part T., and Stephen C. Volz, eds and trans. 2006. <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>. Cape Town: Van Riebeeck Society.</p>
+							
+							<p>Moffat, Robert U. 1921. <em>John Smith Moffat, C.M.G., Missionary, a Memoir</em>. London: John Murray.</p>
+							
+							<p>Morton, Fred. 1992. “<a href="https://doi.org/10.2307/3601632">Slave-Raiding and Slavery in the Western Transvaal After the Sand River Convention</a>.” <em>African Economic History</em> 20: 99–118.</p>
+							
+							<p>———. 2012. “Sechele I (c. 1810-1892).” In <em>Dictionary of African Biography</em>, edited by Emmanuel K. Akyeampong and Henry Louis Gates Jr., 5:318–19. Oxford; New York: Oxford University Press.</p>
+							
+							<p>Nkomazana, Fidelis. 2000a. “Earliest Southern African Biblical Interpretation: The Case of the Bakwena, Bakololo and Bangwato.” In <em>The Bible in Africa; Transactions, Trajectories, and Trends</em>, edited by Gerald O. West and Musa W. Dube, 223–35. Leiden: Brill.</p>
+							
+							<p>———. 2000b. “<a href="https://journals.co.za/action/doSearch?AllField=The+Story+of+King+Sechele+I+and+the+Missionaries">The Story of King Sechele I and the Missionaries</a>.” <em>Journal of Religion and Theology in Namibia</em> 2.1: 95–109.</p>
+							
+							<p>Parsons, Neil. 1998. <em>King Khama, Emperor Joe, and the Great White Queen: Victorian Britain through African Eyes</em>. Chicago; London: University of Chicago Press.</p>
+							
+							<p>Ramsay, Jeff. 1991. “<a href="https://www.jstor.org/stable/i40044016">The Batswana-Boer War of 1852-53: How the Batswana Achieved Victory</a>.” <em>Botswana Notes and Records</em> 23: 193–207.</p>
+							
+							<p>———. 2014. “<a href="https://doi.org/10.1080/02582473.2013.859169">Firearms in Nineteenth-Century Botswana: The Case of Livingstone’s 8-Bore Bullet</a>.” <em>South African Historical Journal</em> 66 (3): 440–69.</p>
+							
+							<p>Ross, Andrew. 2002. <em>David Livingstone: Mission and Empire</em>. London: Hambledon Continuum.</p>
+							
+							<p>Schapera, Isaac, ed. 1959. <em>David Livingstone: Family Letters, 1841-1856</em>. 2 vols. London: Chatto &amp; Windus.</p>
+							
+							<p>———. 1974. <em>David Livingstone: South African Papers 1849-1853</em>. Cape Town: Van Riebeeck Society.</p>
+							
+							<p>Sechele I. (1883) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 197. Cape Town: Van Riebeeck Society.</p>
+							
+							<p>———. (1884) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105–7. Cape Town: Van Riebeeck Society.</p>
+							
+							<p>Sechele I, and Samuel Edwards. 1853. “Statement of Sechele, Paramount Chief of the Bakwaina.” 21 April 1853; 30 April 1853. Publication. Cape Town. CWM/LMS/South Africa/Incoming Correspondence/Box 28/File 2/Jacket C. University of London. School of Oriental and African Studies. <em>Also see the</em> <a href="/html/transcriptions/liv_020021_TEI.html"><em>edition</em></a> <em>published by </em>One More Voice.</p>
+							
+							<p>Sechele I, Samuel Edwards, and William Thompson. 1853. Statement and Attestations. 7 May 1853, 11 May 1853, 11 May 1853, 11 May 1853. Unpublished manuscript. Cape Town. CWM/LMS/South Africa/Incoming Correspondence/Box 28/File 2/Jacket C. University of London. School of Oriental and African Studies. <em>Also see the</em> <a href="/html/transcriptions/liv_020021_TEI.html"><em>edition</em></a> <em>published by</em> One More Voice.</p>
+							
+							<p>Sechele I, and David Livingstone. 1852. Letter to Robert Moffat 1 with Speech. [October 1852]. Manuscript. CWM/LMS/Home/Livingstone Wooden Box/Item 71. University of London. School of Oriental and African Studies, London. <em>Also see the</em> <a href="/html/transcriptions/liv_003027_TEI.html"><em>edition</em></a> <em>published by </em>One More Voice.</p>
+							
+							<p>Sechele I, and John Smith Moffat. 1865. Letter to Robert Moffat 1. 31 October 1865. Unpublished manuscript. CWM/LMS/South Africa/Incoming Correspondence/Box 33/File 5/Jacket A. University of London. School of Oriental and African Studies, London. <em>Also see the</em> <a href="/html/transcriptions/liv_020029_TEI.html"><em>edition</em></a> <em>published by</em> One More Voice.</p>
+							
+							<p>Sechele I, and Robert Moffat 1. 1852. Letter to the London Missionary Society. [1852-53]. Unpublished manuscript. CWM/LMS/South Africa/Incoming Correspondence/Box 27/File 1/Jacket B. University of London. School of Oriental and African Studies. <em>Also see the</em> <a href="/html/transcriptions/liv_020019_TEI.html"><em>edition</em></a> <em>published by</em> One More Voice.</p>
+							
+							<p>Smith, Edwin William. 1957. <em>Great Lion of Bechuanaland: The Life and Times of Roger Price, Missionary</em>. London: Independent Press.</p>
+							
+							<p>Stanley, Brian. 2014. “<a href="https://doi.org/10.1163/18748945-02702003">The Missionary and the Rainmaker: David Livingstone, the Bakwena, and the Nature of Medicine</a>.” <em>Social Sciences and Missions</em> 27: 145–62.</p>
+							
+							<p>Volz, Stephen. 2008. “<a href="https://doi.org/10.1163/157006608X289657">Written on Our Hearts: Tswana and the ‘Word of God’ in the Mid-Nineteenth Century</a>.” <em>Journal of Religion in Africa</em> 38 (2): 112–40.</p>
+							
+							<p>Wisnicki, Adrian S. 2019. <em>Fieldwork of Empire, 1840–1900: Intercultural Dynamics in the Production of British Expeditionary Literature.</em> New York; Abingdon, Oxon: Routledge.</p>
+							
+							<p>Youngs, Tim. 2002. “Africa/The Congo: The Politics of Darkness.” In <em>The Cambridge Companion to Travel Writing</em>, edited by Peter Hulme and Tim Youngs, 156–73. Cambridge: Cambridge University Press.</p>						
+						</section>
+
+						<aside class="credits" aria-labelledby="citation">
+							<h3 id="citation">Page Citation</h3>
+
+						<p><strong>Cite (MLA):</strong> Livingstone, Justin D. “Sechele and the Record of Intercultural Encounter” (2021). Adrian S. Wisnicki, peer-rev. ed. <em>One More Voice</em>, solidarity edition, 2022. <a href="/html/essays/sechele_record_encounter.html">https://onemorevoice.org/html/essays/sechele_record_encounter.html</a>.</p>
+				
+						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+					</aside>
+
+					<aside id="credits"  class="credits" aria-labelledby="image-details">
+						<h3 id="image-details">Lead Image Details</h3>
+					
+						<p id="caption"><strong>Lead image caption:</strong> A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in <em>Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana</em> [<em>History of the Bechuana</em>] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.</p>
+						
+						<p><strong>Lead image commentary:</strong> This is one of <a href="/visual_materials.html#liv_021057">several historical images</a> documented and presented by <em>One More Voice</em> of Sechele I, <em>kgosi</em> of the BaKwena state between c.1830 and 1892 in what is now Botswana. It offers a good instance of how the project can bring together primary texts with relevant visual materials. Sechele is pictured here with his wife, MmaKgari, which translates from SeTswana as “mother of Kgari.” This individual is most likely the widow of Matsheng (former <em>kgosi</em> of the BaNgwato, a community within the larger BaTswana ethnic group in southern Africa), whom Sechele married later in life (see Edwards 1957, 286). Sechele was previously married to another individual bearing the name MmaKgari, whom he divorced following his conversion to Christianity in the late 1840s. One other former wife, Mokgokong, who was the mother of Sechele’s son Kgari, may also have been known by the same title (see Schapera 1960, 298-99). However, since this photograph dates from the late-nineteenth century, neither of these women could be the individual pictured. In the photograph, Sechele is attired in a combination of European and BaTswana dress. Such an amalgamation underscores his position at the meeting point of cultures in a period of change in nineteenth-century southern Africa. The clothing chosen for this portrait may also indicate that Sechele sought to represent himself, and his political authority, by combining items associated with both European and Tswana society (cf. Comaroff and Comaroff 1997, 244).</p>
+					</aside>
+				</article>
+				<div class="decoration"></div>
+			</section>
+		</main>
+
 		<div data-include="footer"></div>
 
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
-			// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
-			// Adds CSS file and adds random string to end of CSS file.
-			// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);
-		</script>
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@700;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"/>		
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0010"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-		<script>
-			// Adapted from https://stackoverflow.com/a/31837264
-			// Includes HTML snippets
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
+			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 			//Scroll to top button
-			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>600||document.documentElement.scrollTop>600){mybutton.style.display="block";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
+			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>700||document.documentElement.scrollTop>700){mybutton.style.display="flex";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
 		</script>
-		<!-- <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
-		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
-			// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			// Loads JS file only after rest of page has loaded; adds random string to end of file.
-			// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
-			$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0010";document.body.appendChild(element)});
-			$(window).on("load",function(){var element=document.createElement("script");element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
+			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>
-		<!-- <script src="/js/scripts.js?=newVers_0010"></script> -->
 	</body>
 </html>

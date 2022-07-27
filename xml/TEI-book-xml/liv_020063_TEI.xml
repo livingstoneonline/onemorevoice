@@ -118,6 +118,9 @@
 					<placeName type="compositionPlace">Camp, Caledon River</placeName>
 					<!-- Can be "compositionPlace" or "focusRegion" -->
 				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Discussions with a British colonial official and an original letter, as translated (presumably), edited, and published in a British periodical.</p></history>
+				</msDesc>
 			</sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -141,7 +144,7 @@
 		</revisionDesc>
 	</teiHeader>
 
-	<text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+	<text n="warning-language"><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
 		<!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color; also remove for publications -->
 		<body>
 			<!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color; also remove for publications -->
@@ -460,6 +463,8 @@ your sons, in the same friendly manner and in the same
 good faith as before the fight, at <geogName>Platberg</geogName>, to-morrow or 
 next day; but I shall now send away the army, and go back 
 to the <region>colony</region> in a few days' time."</p>
+
+<milestone unit="section" rend="double-line half-line"/>
 
 			</div>
 		</body>

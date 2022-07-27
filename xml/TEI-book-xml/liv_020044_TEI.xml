@@ -84,6 +84,9 @@
                     <date type="publication" when="1876-03-01">1 March 1876</date><!-- Can be type="composition" or type="publication" -->
                     <placeName type="compositionPlace">Antananarivo, Madagascar</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              				
 				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Funeral proclamation, as read by an anonymous representative and as transcribed, translated, and published as part of an obituary by a British writer in a British periodical.</p></history>
+				</msDesc>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -155,6 +158,7 @@ the missionaries of the <orgName><settlement>London</settlement> Missionary Soci
 country and people, thus declares <persName>Ranavalonamanjaka</persName>, <term type="collective"><persName>Queen of <!-- my people be enclosed in collective tag? HB -->
 <country>Madagascar</country></persName></term>, that great indeed has been the good done by <persName>Mr.
 <space extent="1" unit="chars"/>
+<lb/>
 
     <pb facs="liv_020043_0011" n="0011"/>
 <fw><seg rend="center italic">The Late <persName>Mr. James Cameron</persName> of <country>Madagascar</country>.</seg> <seg rend="right">179</seg></fw>
@@ -208,6 +212,7 @@ ever-lasting remembrance."<space extent="1" unit="chars"/>Psalm cxii, 6.</p>
 <p rend="right"><persName><seg rend="smallcaps">Chas. Fredk.</seg> Moss</persName>.<space extent="2" unit="chars"/></p> <!-- Should the name abbrs be expanded? HB --><!-- OK as is. AW -->
 <p><settlement>Antananarivo</settlement>, <country>Madagascar</country>.</p>
 <p rend="right small">N 2<space extent="1" unit="words"/></p>
+<lb/>
 	</div>
             </div>
         </body>   

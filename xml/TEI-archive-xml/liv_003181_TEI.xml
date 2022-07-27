@@ -42,7 +42,7 @@
                 <idno type="LEAP-ID">liv_003181</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
 				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
 				<!-- @target = URL of source -->
-				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181">Livingstone Online</ref>
+				<ref target="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_003181"><hi rend="italic">Livingstone Online</hi></ref>
 				<!-- Edit <availability> as relevant -->
 	            <availability>
 					<p>Critically-edited text copyright <hi rend="italic">One More Voice</hi>.</p>
@@ -68,6 +68,7 @@
                                 but thought not to be the author's.</handNote>
                         </handDesc>
                     </physDesc>
+					<history><p>Geographical data, as translated (possibly with the help of an intermediary) and written down on a map by a British explorer.</p></history>
                 </msDesc>
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
@@ -80,7 +81,7 @@
                     <author xml:id="DL">Livingstone, David, 1813-1873</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
-                    <date type="composition" when="1869">[c.1869].</date>
+                    <date type="composition" when="1869">[c.1869]</date>
 					<!-- See item for composition place; remove if not given -->
                     <placeName type="compositionPlace">[Central Africa]</placeName>
                 </bibl>

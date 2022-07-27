@@ -27,12 +27,6 @@
 	<xsl:variable name="isPaged" select="$paged"/>
 
 	<xsl:template match="/">
-		<xsl:variable name="subtitle">
-			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Curated Historical Object</xsl:when>
-				<xsl:otherwise>Critically-Edited Archival Text</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
 		<xsl:variable name="additional-authors-1">			
 			<xsl:choose>
 				<xsl:when test="//teiHeader//titleStmt/author[@role='normalized']">
@@ -42,17 +36,17 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-creator">
-			<xsl:text>Colonial-era text by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
+			<xsl:text>Recovered text by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by One More Voice.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="object-creator">
-			<xsl:text>Colonial-era object by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
+			<xsl:text>Visual material by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
 		</xsl:variable>
 		<html lang="en">
 			<head>
-				<meta charset="UTF-8"/>
+				<meta charset="UTF-8" />
 				<title><!--<xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/>, --><xsl:value-of select="//teiHeader//titleStmt/title[1]"/> | One More Voice</title>
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
@@ -65,75 +59,72 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="robots" content="index, follow"/>
 				<meta name="theme-color" content="#204A79"/>
-				<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
-				<meta http-equiv="pragma" content="no-cache" />
-				<meta http-equiv="expires" content="0" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
 				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
-				<link rel="preload" as="style" href="/css/critical.css?=newVers_0009" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0010" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
+				<!-- <link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/> -->
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
 				</xsl:if>
-				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<link rel="preload" as="script" href="/js/scripts.js?=newVers_0010"/>
-				<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
-				<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0009"/>
-				<script>
-					// Hides fallback nav so that it only appears if Javascript disabled
-					function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
-				</script>
-				<script>
-					// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
-					// Reloads given page, keeps base URL, path, and any #, but removes random query string
-					// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
-				</script>			
+				<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+				<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
+				<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
+				<link rel="preconnect" as="script" href="/js/tooltips.js"/>
+				<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+				<link rel="preconnect" href="https://fonts.googleapis.com"/>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
 				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
-		
-			<!--<xsl:comment>This HTML has been generated from an XML original. Do not manually modify this as a source.</xsl:comment>-->
+
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-			<body class="transcription " id="body"><!-- style="background:#{$body-color};" -->
-				<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
-		
-				<div data-include="nav"></div>
+			<body class="transcription materials" id="body">
 
-				<div class="text-container">
-		
-					<div class="sidebar-container" data-include="sidebar"></div>
-		
-					<div class="page-wrapper">
-						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ --><header id="header">
-							<div class="image-wrapper">		
-								<img class="image-border" width="700" height="174"  src="/img/main-pages/liv_023005_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023005_0001_deriv-1396px.jpg 1396w, /img/main-pages/liv_023005_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023005_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023005_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023005_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023005_0001_deriv-318px.jpg 318w" sizes="(min-width: 740px) 698px, 95.24vw" alt="Coded text from an XML file produced by One More Voice according to the TEI P5 guidelines." title="A segment of coded text from One More Voice." />
-							</div>
-						</header>
-						<xsl:apply-templates select="TEI"/>
+				<header>
+					<div class="nav-container" data-include="header">
+						<nav class="fallback">
+							<span class="logo-container">
+								<a href="/index.html">
+									<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+									<h1>One More Voice</h1>
+								</a>
+							</span>
+							<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
+								<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+							</a>
+						</nav>
 					</div>
+				</header>
 		
-				</div>
+				<!-- <main id="main" aria-labelledby="archival-material">
 			
+					<section class="content">
+						<div class="decoration"></div>
+						<article id="content"> -->
+							<xsl:apply-templates select="TEI"/>
+						<!-- </article>
+						<div class="decoration"></div>
+					</section>
+				</main>-->
+	
 				<div data-include="footer"></div>
-
-				<script>
-					// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
-					// Adds CSS file and adds random string to end of CSS file.
-					// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/styleTEI.css?="+randomString;document.head.appendChild(css);var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/rotate-toggle.css?="+randomString;document.head.appendChild(css);
-				</script>
-				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet"/>
+		
+				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
+		
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap" rel="stylesheet"/>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0010"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
 				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0004"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"/>
@@ -143,12 +134,17 @@
 						<xsl:value-of select="//xenoData[@type='css']"/>
 					</style>
 				</xsl:if>
-				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-				<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 				<script>
-					// Adapted from https://stackoverflow.com/a/31837264
-					// Includes HTML snippets
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
+					// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
+				</script>
+				<script>
+					//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+					//Scroll to top button
+					var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>700||document.documentElement.scrollTop>700){mybutton.style.display="flex";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
 				</script>
 				<xsl:if test="//sourceDesc/msDesc[@type='manuscript']">
 					<script src="/js/manuscript-transform.js"></script>
@@ -156,27 +152,23 @@
 				<xsl:if test="//sourceDesc/biblStruct [@type='journal']">
 					<script src="/js/journal-transform.js"></script>
 				</xsl:if>
-				<xsl:if test="//figure[@n='object' and @change='rotate-90']">
+				<xsl:if test="//figure[@n='hist-object' and @change='rotate-90']">
 					<!-- Image Rotation -->
 					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-90")}</script>
 				</xsl:if>
-				<xsl:if test="//figure[@n='object' and @change='rotate-180']">
+				<xsl:if test="//figure[@n='hist-object' and @change='rotate-180']">
 					<!-- Image Rotation -->
 					<!-- Adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
 					<script>function myFunction(){var element1=document.getElementById("rotate-button");var element2=document.getElementById("image-to-rotate");if(element1.getAttribute("aria-checked")=="true"){element1.setAttribute("aria-checked","false")}else{element1.setAttribute("aria-checked","true")}element1.classList.toggle("click-color");element2.classList.toggle("rotate-180")}</script>
 				</xsl:if>
-				<!-- <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
-				<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script>
-					// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-					// Loads JS file only after rest of page has loaded; adds random string to end of file.
-					// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0010";document.body.appendChild(element)});
-					$(window).on("load",function(){var element=document.createElement("script");element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
+					// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
+					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+					// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 				</script>
-				<!-- <script src="/js/scripts.js?=newVers_0010"></script> -->
 			</body>
 		</html>
 	</xsl:template>
@@ -224,12 +216,6 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="warning-violence">
-			<xsl:if test="/TEI/text[contains(@n,'warning-violence')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</p></xsl:if>
-		</xsl:variable>
-		<xsl:variable name="warning-language">
-			<xsl:if test="/TEI/text[contains(@n,'warning-language')]"><p class="warning"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racist language.</p></xsl:if>
-		</xsl:variable>
 		<xsl:variable name="sortedDates" as="xs:string*">
 			<xsl:choose>
 				<xsl:when test="//revisionDesc/change[@when]">
@@ -271,7 +257,7 @@
 		<xsl:variable name="object-description">
 			<xsl:choose>
 				<xsl:when test="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc">											
-					<p><strong>Object Description:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc/p" /></p>
+					<p><strong>Object description:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/physDesc/objectDesc/p"/></p>
 				</xsl:when>
 				<xsl:otherwise/>
 			</xsl:choose>
@@ -432,6 +418,18 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
+		<xsl:variable name="subtitle">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
+				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="subtitle-icon">
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">visual-material</xsl:when>
+				<xsl:otherwise>recovered-text</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="editorial">
 			<xsl:if test="count(//teiHeader//respStmt) > 1">
 				<xsl:text>, eds. </xsl:text>
@@ -451,7 +449,7 @@
 				<xsl:text>new dawn edition, 2021</xsl:text>
 			</xsl:if>
 			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2022')]">
-				<xsl:text>new dawn edition, 2022</xsl:text>
+				<xsl:text>solidarity edition, 2022</xsl:text>
 			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
@@ -464,64 +462,240 @@
 				<xsl:when test="//encodingDesc/projectDesc/p">
 					<xsl:copy-of select="$custom-note"/>
 				</xsl:when>
-				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">This digital edition duplicates as much as possible the textual and material characteristics of the original document. The editors produced the edition by using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/coding_guidelines.html">coding guidelines</a>. However, users are encouraged to consult the original document if possible.</xsl:when>
-				<xsl:otherwise>This digital edition duplicates as much as possible the textual, structural, and material characteristics of the original document. The editors produced the edition by transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/coding_guidelines.html">coding guidelines</a>. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">The editors produced this edition through a rigorous process that involved  using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF). However, users are encouraged to consult the original document if possible.</xsl:when>
+				<xsl:otherwise>The editors produced this edition through a rigorous process that involved transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF). Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="button-container">
-						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
-						<div class="download"><div><a href="/xml/TEI-archive-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>-->
-						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
+		<xsl:variable name="warning">
+			<xsl:choose>
+				<xsl:when test="/TEI/text[contains(@n,'warning-violence')]"><aside class="warning-box violence"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it depicts situations involving graphic violence.</aside></xsl:when>
+				<xsl:when test="/TEI/text[contains(@n,'warning-language')]"><aside class="warning-box language"><span class="bold site-red">Warning:</span> Readers are advised to proceed with exceptional caution when consulting this document because it contains highly-offensive, racially-charged language.</aside></xsl:when>
+				<xsl:otherwise><aside class="warning-box">This historical item reflects the cultural beliefs and prejudices of its time and may contain material that will upset or distress some readers.</aside></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="text-object">
+			<!-- <a class="action-button" href="#text-object-details">Skip to Item Details</a> -->
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
+					<section id="transcription-switches" class="manuscript-switches">
+						<label for="remove-color" class="md_switch" title="Color: On/Off">
+							<xsl:text>Remove Color</xsl:text>
+							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color" id="remove-color" checked="" />
+							<span class="md_switch__toggle"></span>
+					 	</label>
+					 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+							<xsl:text>Invert</xsl:text>
+							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
+							<span class="md_switch__toggle"></span>
+					 	</label>
+					 	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
+							<xsl:text>Remove Rotation</xsl:text>
+							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-rotation" checked="" />
+							<span class="md_switch__toggle"></span>
+					 	</label>
+				 	</section>
+					<div data-include="empty-file">
+						<style>.manuscript-switches{display:none !important;visibility:hidden !important}</style>
 					</div>
-					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+					<section class="narrow-mobile" aria-labelledby="mobile">
+						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
+					</section>
+					<section class="manuscript">
+						<div class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
+							<div class="ms-container" id="front-section">
+								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+								<xsl:choose>
+									<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:when test="$isPaged='false'">
+										<xsl:apply-templates select="text/front"/>
+									</xsl:when>
+									<xsl:when test="//jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:apply-templates select="text/front"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</div>
+						</div>
+						<div class="TEI" style="{$body-color}">
+							<div class="ms-container">
+								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+								<xsl:choose>
+									<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:when test="$isPaged='false'">
+										<xsl:apply-templates select="text/body"/>
+									</xsl:when>
+									<xsl:when test="//jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:apply-templates select="text/body"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</div>
+						</div>
+						<div class="TEI back {$back}" style="{$body-color-back}" aria-labelledby="back-section">
+							<div class="ms-container" id="back-section">
+								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+								<xsl:choose>
+									<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:when test="$isPaged='false'">
+										<xsl:apply-templates select="text/back"/>
+									</xsl:when>
+									<xsl:when test="//jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:apply-templates select="text/back"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</div>
+						</div>
+					</section>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
+					<section id="transcription-switches" class="journal-switches">
+					 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+							<xsl:text>Invert</xsl:text>
+							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
+							<span class="md_switch__toggle"></span>
+					 	</label>
+					 	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
+							<xsl:text>Remove Justification</xsl:text>
+							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-justification" checked="" />
+							<span class="md_switch__toggle"></span>
+					 	</label>
+				 	</section>
+					<div data-include="empty-file">
+						<style>.journal-switches{display:none !important;visibility:hidden !important}</style>
+					</div>
+					<section class="narrow-mobile" aria-labelledby="mobile">
+						<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
+					</section>
+					<xsl:variable name="narrow">
+						<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
+					</xsl:variable>
+					<section class="journal {$narrow}">
+						<div class="TEI">
+							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+							<xsl:choose>
+								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:when test="$isPaged='false'">
+									<xsl:apply-templates select="text"/>
+								</xsl:when>
+								<xsl:when test="//jc:page[@n=$pagenumber]">
+									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:apply-templates select="text"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</div>
+					</section>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
+					<section class="object">
+						<div class="TEI">
+							<div class="ms-container">
+								<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
+								<xsl:choose>
+									<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:when test="$isPaged='false'">
+										<xsl:apply-templates select="text/body"/>
+									</xsl:when>
+									<xsl:when test="//jc:page[@n=$pagenumber]">
+										<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:apply-templates select="text/body"/>
+									</xsl:otherwise>
+								</xsl:choose>
+								<!-- <p class="image-enlarge">Click on image(s) to enlarge</p> -->
+							</div>
+						</div>
+					</section>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="text-object-details">
+			<h3 id="item-details">Item Details</h3>
+			<xsl:choose>
+				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
+					<p><strong>Form &amp; transmission history:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history/p"/></p>
 					<xsl:copy-of select="$object-description"/>
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source-link1">
+							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
+						</xsl:variable>
+						<xsl:variable name="source-link2">
+							<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+						</xsl:variable>
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+						<xsl:if test="//publicationStmt/ref[2]">
+							<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
+						</xsl:if>
+						</p>
+					</xsl:if>
 					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
-					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning-violence"/>
-					<xsl:copy-of select="$warning-language"/>
-					<hr/>
-				</aside>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="button-container">
-						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>
-						<div class="download"><div><a href="/xml/TEI-book-xml/{$LEAP-ID}_TEI.xml" download="">Download XML File <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Used to generate current webpage</div></div>-->
-						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					</div>
-					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+					<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 					<p><strong>Author(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
+					<p><strong>Form &amp; transmission history:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history/p"/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source-link1">
+							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
+						</xsl:variable>
+						<xsl:variable name="source-link2">
+							<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
+						</xsl:variable>
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+						<xsl:if test="//publicationStmt/ref[2]">
+							<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
+						</xsl:if>
+						</p>
+					</xsl:if>
 					<p><strong>Accessibility:</strong><xsl:text> </xsl:text><em>One More Voice</em> digital facsimiles approximate the textual, structural, and material features of original documents. However, because such features may reduce accessibility, each facsimile allows users to toggle such features on and off as needed.</p>
-					<p><strong>Note:</strong> This historical document, published in unabridged form, reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning-violence"/>
-					<xsl:copy-of select="$warning-language"/>
-					<hr/>
-				</aside>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
-				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="button-container">
-						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image(s) not included – ideal for printing</div></div>-->
-						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					</div>
-					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+					<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
+				</xsl:when>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']">
 					<p><strong>Creator(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
@@ -530,271 +704,81 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Note:</strong> This historical object reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning-violence"/>
-					<xsl:copy-of select="$warning-language"/>
-					<hr/>
-				</aside>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
-				<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
-				<aside class="credits" id="main" aria-labelledby="opening-credits">
-					<div class="button-container">
-						<!--<div class="download"><div><a download="">Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Image(s) not included – ideal for printing</div></div>-->
-						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					</div>
-					<h2 id="opening-credits"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source">
+							<xsl:for-each select="//publicationStmt/ref">
+								<xsl:variable name="link" select="@target"/>
+								<xsl:variable name="source" select="node()"/>
+								<a href="{$link}"><xsl:value-of select="$source"/></a>
+							 	<xsl:if test="position() != last()">
+									<xsl:text>; </xsl:text>
+							 	</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+							<!--<xsl:variable name="link">
+								<xsl:value-of select="@target"/>
+							</xsl:variable>
+							<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
+						</xsl:variable>-->
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
+					</xsl:if>					
+				</xsl:when>
+				<xsl:when test="//sourceDesc/biblStruct[@type='object-book-journal']">
+					<xsl:variable name="image"><xsl:value-of select="//text//figure[@facs]"/></xsl:variable>
 					<p><strong>Creator(s) &amp; contributor(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/></p>
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<xsl:if test="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']">
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Note:</strong> This historical object reflects the cultural beliefs, distortions, and prejudices of its time and may contain material that will upset or distress some readers.</p>
-					<xsl:copy-of select="$warning-violence"/>
-					<xsl:copy-of select="$warning-language"/>
-					<hr/>
-				</aside>
-			</xsl:when>
-		</xsl:choose>
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<aside id="transcription-switches" class="manuscript-switches">
-					<label for="remove-color" class="md_switch" title="Color: On/Off">
-						<xsl:text>Remove Color</xsl:text>
-						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color" id="remove-color" checked="" />
-						<span class="md_switch__toggle"></span>
-				 	</label>
-				 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
-						<xsl:text>Invert</xsl:text>
-						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
-						<span class="md_switch__toggle"></span>
-				 	</label>
-				 	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
-						<xsl:text>Remove Rotation</xsl:text>
-						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-rotation" checked="" />
-						<span class="md_switch__toggle"></span>
-				 	</label>
-			 	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
-					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
-				</aside>
-				<main class="manuscript" id="manuscript-div"><!-- style="background:#{$body-color};" -->
-					<section class="TEI front {$front}" style="{$body-color-front}" aria-labelledby="front-section">
-						<div class="ms-container" id="front-section">
-							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-							<xsl:choose>
-								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:when test="$isPaged='false'">
-									<xsl:apply-templates select="text/front"/>
-								</xsl:when>
-								<xsl:when test="//jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:apply-templates select="text/front"/>
-								</xsl:otherwise>
-							</xsl:choose>
-						</div>
-					</section>
-					<section class="TEI" style="{$body-color}" aria-labelledby="main-section">
-						<div class="ms-container" id="main-section">
-							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-							<xsl:choose>
-								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:when test="$isPaged='false'">
-									<xsl:apply-templates select="text/body"/>
-								</xsl:when>
-								<xsl:when test="//jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:apply-templates select="text/body"/>
-								</xsl:otherwise>
-							</xsl:choose>
-						</div>
-					</section>
-					<section class="TEI back {$back}" style="{$body-color-back}" aria-labelledby="back-section">
-						<div class="ms-container" id="back-section">
-							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-							<xsl:choose>
-								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:when test="$isPaged='false'">
-									<xsl:apply-templates select="text/back"/>
-								</xsl:when>
-								<xsl:when test="//jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:apply-templates select="text/back"/>
-								</xsl:otherwise>
-							</xsl:choose>
-						</div>
-					</section>
-				</main>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<aside id="transcription-switches" class="journal-switches">
-				 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
-						<xsl:text>Invert</xsl:text>
-						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
-						<span class="md_switch__toggle"></span>
-				 	</label>
-				 	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
-						<xsl:text>Remove Justification</xsl:text>
-						<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-justification" checked="" />
-						<span class="md_switch__toggle"></span>
-				 	</label>
-			 	</aside>
-				<aside class="narrow-mobile" id="narrow-mobile-div" aria-labelledby="mobile">
-					<p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
-				</aside>
-				<xsl:variable name="narrow">
-					<xsl:if test="//sourceDesc/biblStruct/monogr[contains(@n,'narrow')]">narrow</xsl:if>
-				</xsl:variable>
-				<main class="journal {$narrow}" id="journal-div"><!-- style="background:#{$body-color};" -->
-					<div class="TEI">
-						<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-						<xsl:choose>
-							<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:when test="$isPaged='false'">
-								<xsl:apply-templates select="text"/>
-							</xsl:when>
-							<xsl:when test="//jc:page[@n=$pagenumber]">
-								<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:apply-templates select="text"/>
-							</xsl:otherwise>
-						</xsl:choose>
-					</div>
-				</main>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-				<main class="object" id="object-div"><!-- style="background:#{$body-color};" -->
-					<section class="TEI" aria-labelledby="main-section">
-						<div class="ms-container" id="main-section">
-							<p class="image-enlarge">Click on image(s) to enlarge</p>
-							<xsl:comment><xsl:value-of select="$isPaged"/></xsl:comment>
-							<xsl:choose>
-								<xsl:when test="$isPaged='true' and //jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:when test="$isPaged='false'">
-									<xsl:apply-templates select="text/body"/>
-								</xsl:when>
-								<xsl:when test="//jc:page[@n=$pagenumber]">
-									<xsl:apply-templates select="//jc:page[@n=$pagenumber]"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:apply-templates select="text/body"/>
-								</xsl:otherwise>
-							</xsl:choose>
-						</div>
-					</section>
-				</main>
-			</xsl:when>
-		</xsl:choose>
-		<xsl:choose>
-			<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
-				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
-					<div id="closing-credits">
-						<hr />
-						<!--<p class="back-button"><a class="trans-return" href="/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
-						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source-link1">
-								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
+					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
+					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
+					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
+					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
+					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<xsl:if test="//publicationStmt/ref">
+						<xsl:variable name="source">
+							<xsl:for-each select="//publicationStmt/ref">
+								<xsl:variable name="link" select="@target"/>
+								<xsl:variable name="source" select="node()"/>
+								<a href="{$link}"><xsl:value-of select="$source"/></a>
+							 	<xsl:if test="position() != last()">
+									<xsl:text>; </xsl:text>
+							 	</xsl:if>
+							</xsl:for-each>
+						</xsl:variable>
+							<!--<xsl:variable name="link">
+								<xsl:value-of select="@target"/>
 							</xsl:variable>
-							<xsl:variable name="source-link2">
-								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
-							</xsl:variable>
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
-							<xsl:if test="//publicationStmt/ref[2]">
-								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
-							</xsl:if>
-							</p>
-						</xsl:if>
-						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-					</div>
-				</aside>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
-				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
-					<div id="closing-credits">
-						<hr/>
-						<!--<p class="back-button"><a class="trans-return" href="/texts.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
-						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source-link1">
-								<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
-							</xsl:variable>
-							<xsl:variable name="source-link2">
-								<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
-							</xsl:variable>
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
-							<xsl:if test="//publicationStmt/ref[2]">
-								<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
-							</xsl:if>
-							</p>
-						</xsl:if>
-						<p><strong>Production note</strong><xsl:text>: </xsl:text><xsl:copy-of select="$prod-note"/></p>
-					</div>
-				</aside>
-			</xsl:when>
-			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-				<aside class="credits" id="credits2-div" aria-labelledby="closing-credits">
-					<div id="closing-credits">
-						<hr />
-						<!--<p class="back-button"><a class="art-return" href="/visual_materials.html#{$LEAP-ID}">&#11013;&#xFE0E; Back</a></p>-->
-						<p><strong>Terms of use:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-						<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, an imprint of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a>,<xsl:text> </xsl:text><xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
-						<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-						<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
-						<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
-						<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
-						<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
-						<em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
-						<xsl:if test="//publicationStmt/ref">
-							<xsl:variable name="source">
-								<xsl:for-each select="//publicationStmt/ref">
-									<xsl:variable name="link" select="@target"/>
-									<xsl:variable name="source" select="node()"/>
-									<a href="{$link}"><xsl:value-of select="$source"/></a>
-								 	<xsl:if test="position() != last()">
-										<xsl:text>; </xsl:text>
-								 	</xsl:if>
-								</xsl:for-each>
-							</xsl:variable>
-								<!--<xsl:variable name="link">
-									<xsl:value-of select="@target"/>
-								</xsl:variable>
-								<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
-							</xsl:variable>-->
-							<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
-						</xsl:if>
-					</div>
-				</aside>
-			</xsl:when>
-		</xsl:choose>
+							<a href="{$link}"><xsl:value-of select="" separator="; "/></a>
+						</xsl:variable>-->
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><xsl:copy-of select="$source"/></p>
+					</xsl:if>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<main id="main" aria-labelledby="item-title">
+			<section class="text-object">
+				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
+				<p class="associated-links {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></p>
+				<xsl:copy-of select="$warning"/>
+				<xsl:copy-of select="$text-object"/>
+			</section>
+			<section class="text-object-details">
+				<xsl:copy-of select="$text-object-details"/>
+			</section>
+		</main>
 	</xsl:template>
 
 	<!-- General match -->
@@ -910,6 +894,12 @@
 
 	<xsl:template match="add[@place='over-text']">
 		<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))}" title="Addition written over existing text"><xsl:copy-of select="jc:addFE(.)"/></ins>
+		<!--<ins class="{concat(name(), ' ', translate(@rend, '-', ''), ' ', translate(@place, '-', ''))} tooltip-container">
+			<span aria-label="Addition written over existing text" aria-describedby="add-over-text" data-tooltip-trigger="">
+				<xsl:copy-of select="jc:addFE(.)"/>
+			</span>
+			<span id="add-over-text" role="tooltip" class="hidden">Addition written over existing text</span>
+		</ins>-->
 	</xsl:template>
 
 	<xsl:template match="tei:addSpan[preceding-sibling::node()[1][name()='p']]|tei:addSpan[preceding-sibling::node()[2][name()='p']]|p/addSpan">
@@ -917,7 +907,7 @@
 		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
-	<!-- app: show first rdg, offer alternatives in title -->
+	<!-- app: show first rdg, offer alternatives in tooltip -->
 	<xsl:template match="app">
 		<xsl:variable name="rdg-rdg">
 			<xsl:value-of select="../app/rdg" separator=" [or] "/>
@@ -926,6 +916,12 @@
 			<xsl:attribute name="title">This passage can be read in alternate ways: <xsl:value-of select="$rdg-rdg"/></xsl:attribute>
 			<xsl:apply-templates select="rdg[1]"/>
 		</span>
+		<!-- <span class="app tooltip-container">
+			<span aria-label="Alternate reading" aria-describedby="alternate-reading" data-tooltip-trigger="">
+				<xsl:apply-templates select="rdg[1]"/>
+			</span>
+			<span id="alternate-reading" role="tooltip" class="hidden">This passage can be read in alternate ways:  <xsl:value-of select="$rdg-rdg"/></span>
+		</span>-->
 	</xsl:template>
 
 	<xsl:template match="cb">
@@ -961,6 +957,12 @@
 				<xsl:attribute name="title">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></xsl:attribute>
 				<xsl:apply-templates/>
 			</u>
+			<!-- <u class="sic diplomatic tooltip-container">
+                <span aria-label="Correction" aria-describedby="correction" data-tooltip-trigger="">
+					<xsl:apply-templates/>
+                </span>
+                <span id="correction" role="tooltip" class="hidden">The editors suggest a correction as follows: <xsl:value-of select="$choice-orig-sic"/></span>
+			</u> -->
 	</xsl:template>
 
 	<xsl:template match="corr|expan|reg"/>
@@ -978,6 +980,12 @@
 
 	<xsl:template match="del[following-sibling::add[1][@place='over-text']]" priority="10">
 		<del class="del-by-over-text" title="Text deleted by over-writing"><xsl:apply-templates/></del>
+		<!-- <del class="del-by-over-text tooltip-container">
+			<span aria-label="Text deleted by overwriting" aria-describedby="text-deleted-by-overwriting" data-tooltip-trigger="">
+			<xsl:apply-templates/>
+			</span>
+			<span id="text-deleted-by-overwriting" role="tooltip" class="hidden">Text deleted by over-writing</span>
+		</del>-->
 	</xsl:template>
 
 	<xsl:template match="figure">
@@ -1007,10 +1015,10 @@
 			<xsl:value-of select="self::node()/label"/><xsl:text>. </xsl:text><xsl:value-of select="//availability/p"/><xsl:text> </xsl:text><xsl:value-of select="//availability/licence"/><xsl:value-of select="$copyright"/>
 		</xsl:variable>
 		<xsl:variable name="rotate-id">
-			<xsl:if test="self::node()[@n='object' and @change='rotate-90']">
+			<xsl:if test="self::node()[@n='hist-object' and @change='rotate-90']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
-			<xsl:if test="self::node()[@n='object' and @change='rotate-180']">
+			<xsl:if test="self::node()[@n='hist-object' and @change='rotate-180']">
 				<xsl:text>image-to-rotate</xsl:text>
 			</xsl:if>
 		</xsl:variable>
@@ -1019,22 +1027,27 @@
 		<!-- end of variables -->
 		<xsl:choose>
 			<!-- This option used for object images that can be rotated -->
-			<xsl:when test="contains(@n,'object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
-				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
-				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
+			<xsl:when test="contains(@n,'hist-object') and contains(@change,'rotate-90') or contains(@change,'rotate-180')">
 				<!--<br/><br/><br/>-->
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+						<div class="image-overlay"></div>
 					</a>
 				</span>
+				<!-- Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role -->
+				<button role="switch" aria-checked="false" aria-label="Rotate image" id="rotate-button" onclick="myFunction()">Rotate <i class="fa fa-repeat" aria-hidden="true"></i></button>
+				<div data-include="empty-file">
+					<style>#rotate-button{display: none !important;visibility: hidden !important;}</style>
+				</div>
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
 			</xsl:when>
 			<!-- This option used for all other object images -->
-			<xsl:when test="contains(@n,'object')">
+			<xsl:when test="contains(@n,'hist-object')">
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
 						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+						<div class="image-overlay"></div>
 					</a>
 				</span>
 				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
@@ -1062,12 +1075,44 @@
 
 	<xsl:template match="gap[@extent][@unit]" priority="10">
 		<xsl:choose>
-			<xsl:when test="@unit='chars'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
-			<xsl:when test="@unit='words'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
-			<xsl:when test="@unit='lines'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
-			<xsl:when test="@unit='pages'"><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
-			<xsl:otherwise><span class="gap" title="{concat(name(), ', extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
+			<xsl:when test="@unit='chars'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='words'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:when>
+			<xsl:when test="@unit='lines'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
+			<xsl:when test="@unit='pages'"><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, '; reason: ', @agent)}">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span></xsl:when>
+			<xsl:otherwise><span class="gap" title="{concat('Gap, extent: ', @extent, ' ', @unit, 'reason: ', @agent)}">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span></xsl:otherwise>
 		</xsl:choose>
+		<!--<xsl:choose>
+			<xsl:when test="@unit='chars'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;</xsl:for-each>]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
+				</span>
+			</xsl:when>
+			<xsl:when test="@unit='words'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
+				</span>
+			</xsl:when>
+			<xsl:when test="@unit='lines'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
+				</span>
+			</xsl:when>
+			<xsl:when test="@unit='pages'">
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
+				</span>
+			</xsl:when>
+			<xsl:otherwise>
+				<span class="gap tooltip-container">
+					<span aria-label="Gap in text" aria-describedby="gap-in-text" data-tooltip-trigger="">[<xsl:for-each select="1 to @extent">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;</xsl:for-each>]</span>
+					<span id="gap-in-text" role="tooltip" class="hidden"><xsl:value-of select="concat('Gap; extent: ', @extent, ' ', @unit, '; reason: ', @agent)"/></span>
+				</span>
+			</xsl:otherwise>
+		</xsl:choose>-->
 	</xsl:template>
 
 	<!-- do not show graphic -->
@@ -1120,10 +1165,24 @@
 		</xsl:if>
 	</xsl:template>
 
-	<xsl:template match="metamark"><span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span></xsl:template>
+	<xsl:template match="metamark">
+		<span class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</span>
+		<!-- <span class="metamark {@rend} {@function} {@place}  tooltip-container">
+			<span aria-label="Editorial symbol, mark, or unusual character" aria-describedby="editorial-symbol" data-tooltip-trigger="">
+				#
+			</span>
+			<span id="editorial-symbol" role="tooltip" class="hidden">Editorial symbol, mark, or unusual character</span>
+		</span> -->
+	</xsl:template>
 
 	<xsl:template match="add[@place='marginleft']/metamark|add[@place='marginright']/metamark" priority="10">
-			<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
+		<ins class="metamark {@rend} {@function} {@place}" title="Editorial symbol, mark, or unusual character">#</ins>
+		<!-- <ins class="metamark {@rend} {@function} {@place} tooltip-container">
+			<span aria-label="Editorial symbol, mark, or unusual character" aria-describedby="editorial-symbol" data-tooltip-trigger="">
+				#
+			</span>
+			<span id="editorial-symbol" role="tooltip" class="hidden">Editorial symbol, mark, or unusual character</span>
+		</ins> -->
 	</xsl:template>
 
 	<xsl:template match="milestone">
@@ -1203,7 +1262,7 @@
 				</span>
 			</xsl:when>
 			<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">
-				<br/>
+				<!--<br/>-->
 				<span class="pb-title">
 					<xsl:value-of select="@n"/>
 				</span>
@@ -1324,9 +1383,15 @@
 		<xsl:copy-of select="jc:addFE(.)"/>
 	</xsl:template>
 
-	<xsl:template match="supplied">			
-		<span class="supplied"><xsl:attribute name="title">The editors have supplied this text because it is illegible, not visible in, or missing from the original item.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
+	<xsl:template match="supplied">	
+		<span class="supplied"><xsl:attribute name="title">Text supplied because the original text is illegible, not visible, or missing.</xsl:attribute><xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
 		</span>
+		<!-- <span class="supplied tooltip-container">
+			<span aria-label="Supplied text" aria-describedby="supplied-text" data-tooltip-trigger="">
+				<xsl:text>[</xsl:text><xsl:copy-of select="jc:addFE(.)"/><xsl:text>]</xsl:text>
+			</span>
+			<span id="supplied-text" role="tooltip" class="hidden">Text supplied because the original text is illegible, not visible, or missing</span>
+		</span> -->
 	</xsl:template>
 	
 	<!-- Beginning of elements that go with table -->
@@ -1360,17 +1425,33 @@
 				<xsl:choose>
 					<xsl:when test="@cert">
 						<xsl:attribute name="title">
-							<xsl:value-of select="concat('word(s) ', name(), '; certainty of transcription: ', @cert)"/>
+							<xsl:value-of select="concat('Text ', name(), '; certainty of transcription: ', @cert)"/>
 						</xsl:attribute>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:attribute name="title">
-							<xsl:value-of select="concat('word(s) ', name())"/>
+							<xsl:value-of select="concat('Text ', name())"/>
 						</xsl:attribute>
 					</xsl:otherwise>
 				</xsl:choose>
 			<xsl:apply-templates select="node()"/>
 		</span>
+		<!-- <xsl:variable name="unclear-cert">
+			<xsl:choose>
+				<xsl:when test="@cert">
+					<xsl:value-of select="concat('Text unclear; certainty of transcription: ', @cert)"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:text>Text unclear</xsl:text>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<span class="unclear tooltip-container">
+			<span aria-label="Text unclear" aria-describedby="text-unclear" data-tooltip-trigger="">
+				<xsl:apply-templates select="node()"/>
+			</span>
+            <span id="text-unclear" role="tooltip" class="hidden"><xsl:value-of select="$unclear-cert"/></span>
+		</span> -->
 	</xsl:template>
 
 	<xsl:template match="w">

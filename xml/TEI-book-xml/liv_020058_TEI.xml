@@ -99,7 +99,11 @@ Rubber Wars Which Began in 1893”</title>
                     <date type="composition" when="1903">[1903]</date><!-- Can be type="composition" or type="publication" -->
                     <date type="publication" when="1904">1904</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              </bibl>
+                    <placeName type="compositionPlace">Congo Free State</placeName><!-- Can be "compositionPlace" or "focusRegion" -->              
+				</bibl>
+				<msDesc>
+ 					<msIdentifier><repository>[ ]</repository></msIdentifier><!-- Only added so file validates -->  									<history><p>Statements by a series of unnamed individual from the Congo Free State, as conveyed by one or more unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents.</p></history>
+				</msDesc>
             </sourceDesc>
 			<!-- End of published text <sourceDesc> -->
 
@@ -145,9 +149,9 @@ Rubber Wars Which Began in 1893”</title>
 <milestone unit="section" rend="half-line"/>
 <p rend="center">Inclosure 3 in No. 3.</p>
 
-<lb/><p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 33.)--></p>
+<p rend="center"><gap extent="1" unit="lines" agent="omitted-text"/><!--(See p. 33.)--></p>
 
-<lb/><p rend="center italic">Statement in regard to the Condition of the <term type="collective">Natives in <region><geogName>Lake Mantumba</geogName> region</region></term> during the period of 
+<p rend="center italic">Statement in regard to the Condition of the <term type="collective">Natives in <region><geogName>Lake Mantumba</geogName> region</region></term> during the period of 
 the Rubber Wars which began in <date when="1893">1893</date>.</p>
 
 <lb/><p>THE disturbance consequent on the attempt to levy a rubber tax in this district, a tax which 
@@ -526,7 +530,7 @@ and they took me to the <term type="collective">white man</term>.</p>
     <pb facs="liv_020058_0073" n="0073"/>
 <fw><seg rend="center">73</seg></fw>
 
-<lb/><p rend="center italic"><persName>R R</persName>’s Statement.</p>
+<p rend="center italic"><persName>R R</persName>’s Statement.</p>
 
 <lb/><p>I, <persName>R R</persName>, came from <settlement>N N*</settlement>.<space extent="1" unit="chars"/><settlement>N N*</settlement> and <settlement>R*</settlement> fought, and they killed several <term type="collective"><settlement>R*</settlement> people</term>, 
 and one <term type="collective"><settlement>R*</settlement> man</term> <persName>O O O</persName> took a man and sent him to <settlement>L L L</settlement> to go and tell the <term type="collective">white man</term> 
@@ -691,12 +695,11 @@ to eat because he was bereaved of his wife and all his children.</p>
 <fw rend="small center"><note xml:id="note_01" rend="left">* Brass rods.</note> 
 <lb/><note xml:id="note_02" rend="left">&#8224; The name of the Military Officer in Command of the troops at that date.</note></fw>
 
-<!-- Coded to here -->
 
     <pb facs="liv_020058_0075" n="0075"/>
 <fw><seg rend="center">75</seg></fw>
 
-<lb/><p rend="center italic"><persName>T T</persName>’s Statement.</p>
+<p rend="center italic"><persName>T T</persName>’s Statement.</p>
 
 <lb/><p>States she belonged to the village of <settlement>R*</settlement>, where she lived with her grandmother.<space extent="1" unit="chars"/><settlement>R*</settlement> 
 was attacked by the <term type="collective"><orgName>State</orgName> soldiers</term> long ago.<space extent="1" unit="chars"/>It was in <persName>S T</persName>’s time.<space extent="1" unit="chars"/>She does not know if 
@@ -773,6 +776,7 @@ by myself; when I ran away I hid in the bush.<space extent="1" unit="chars"/>Whi
 was running from a soldier.<space extent="1" unit="chars"/>He (the soldier) fired a gun.<space extent="1" unit="chars"/>I was not hit, but the old man died.<space extent="1" unit="chars"/>
 Afterwards they caught me and two men.<space extent="1" unit="chars"/>The soldiers asked: “Have you a father and mother?”<space extent="1" unit="chars"/>
 I answered, “No.”<space extent="1" unit="chars"/>They said to me, “If you do not tell us we will kill you.”<space extent="1" unit="chars"/>I said:
+<lb/>
 
 
     <pb facs="liv_020058_0076" n="0076"/>

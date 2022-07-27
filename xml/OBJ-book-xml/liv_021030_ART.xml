@@ -65,8 +65,6 @@
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" from="1900" to="1903">[Early twentieth century]</date><!-- Can be type="composition" or type="publication" -->
-					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace"></placeName><!-- Can be "compositionPlace" or "focusRegion" -->
                 </bibl>
             </sourceDesc>
 			<!-- End of book/journal <sourceDesc> -->
@@ -101,8 +99,8 @@
 	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
 	<!-- @n = page number only, e.g., 0001 -->
     <pb facs="liv_021030_0001" n="0001"/>
-	<figure n="object" rend="vertical" facs="/img/visual-materials/liv_021030_0001_deriv-968px.jpg">
-		<graphic url="/img/visual-materials/liv_021030_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021030_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021030_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021030_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021030_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021030_0001_deriv-303px.jpg 303w, /img/visual-materials/liv_021030_0001_deriv-275px.jpg 275w" n="(min-width: 768px) 484px, (min-width: 480px) 60.33vw, calc(100vw - 44px)"/>
+	<figure n="hist-object" rend="vertical" facs="/img/visual-materials/liv_021030_0001_deriv-968px.jpg">
+		<graphic url="/img/visual-materials/liv_021030_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021030_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021030_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021030_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021030_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021030_0001_deriv-303px.jpg 303w, /img/visual-materials/liv_021030_0001_deriv-275px.jpg 275w" n="(min-width: 1580px) 488px, (min-width: 1200px) calc(8.61vw + 354px), (min-width: 1000px) calc(38.89vw - 43px), (min-width: 780px) 464px, (min-width: 480px) calc(61.07vw + 24px), 454px"/>
 		<!-- add rend="vertical" for portrait images -->
 		<!-- add rend="gray" to add gray border to image -->
 		<label>Anonymous, “E. Pauline Johnson (with Facsimile Signature),” [early twentieth century]<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
@@ -110,8 +108,8 @@
 	</figure>
 
 <!-- Use the following to repoduce any original image caption. -->
-<!--<lb/><p rend="left small center">[original caption]</p>
-<lb/><p rend="no-indent left small">[CAPTION GOES HERE]</p>-->
+<!--<p rend="small center">[original caption]</p>
+<p rend="no-indent left small">[CAPTION GOES HERE]</p>-->
 
 
             </div>

@@ -2,34 +2,26 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Archival Texts | One More Voice</title>
-		<meta name="description" content="Provides access to the critically-edited and encoded archival texts (manuscripts; articles) by non-European creators recovered and published by One More Voice."/>
+		<title>Recovered Texts | One More Voice</title>
+		<meta name="description" content="Enumerates the archival texts (manuscripts, periodical articles, etc.) recovered, critically edited, encoded, and published by One More Voice."/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="index, follow"/>
 		<meta name="theme-color" content="#204A79"/>
-		<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="pragma" content="no-cache" />
-		<meta http-equiv="expires" content="0" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0009" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0010" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0010"/>
-		<link rel="preconnect" as="script" href="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0009"/>
-		<script>
-			// Hides fallback nav so that it only appears if Javascript disabled
-			function addStyle(styles){var css=document.createElement('style');if(css.styleSheet){css.styleSheet.cssText=styles}else{css.appendChild(document.createTextNode(styles))}document.getElementsByTagName("head")[0].appendChild(css)}var styles='.fallback,.fallback a#nav10,.fallback a#nav11,.fallback a#nav12{display:none !important;visibility:hidden !important}';window.onload=function(){addStyle(styles)};
-		</script>
-		<script>
-			// Taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
-			// Reloads given page, keeps base URL, path, and any #, but removes random query string
-			// (function(){if(window.localStorage){if(!localStorage.getItem('firstLoad')){localStorage['firstLoad']=true;window.location.href=window.location.origin+window.location.pathname+window.location.hash;}else{localStorage.removeItem('firstLoad')}}})();
-		</script>			
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
+		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
+		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
+		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
+		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 	</head>
@@ -37,915 +29,1021 @@
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 	<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
-	<body class="essay" id="body">
+	<body class="essay materials" id="body">
 
-		<nav class="navigation fallback"><div class="nav-wrapper"><div class="subnav-wrapper"><a id="nav10" href="/index.html"><img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/></a><a id="nav11" href="/index.html"><h1>One More Voice</h1></a></div><a id="nav12" href="/site_sections.html"><i class="fa fa-bars"></i></a></div></nav>
-
-		<div data-include="nav"></div>
-
-		<div class="text-container">
-
-			<div class="sidebar-container" data-include="sidebar"></div>
-
-			<div class="page-wrapper">
-				<header id="header">
-					<div class="image-wrapper">
-						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-						<img class="responsive-image73" width="511" height="511" src="/img/main-pages/liv_020014_0001_deriv-1018px.jpg" srcset="/img/main-pages/liv_020014_0001_deriv-318px.jpg 318w, /img/main-pages/liv_020014_0001_deriv-348px.jpg 348w, /img/main-pages/liv_020014_0001_deriv-509px.jpg 509w, /img/main-pages/liv_020014_0001_deriv-636px.jpg 636w, /img/main-pages/liv_020014_0001_deriv-696px.jpg 696w, /img/main-pages/liv_020014_0001_deriv-1018px.jpg 1018w" sizes="(min-width: 760px) 509px, (min-width: 480px) calc(61.92vw + 51px), 100vw" alt="Tree segment with faded inscription on inner bark that begins “Dr. Livignston[e] / May 4, 18[73].”" title="Detail from Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c.1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
-						<a id="information" class="caption caption73" href="#caption" aria-label="Go to image caption"><i class="fa fa-info-circle" title="Image information"></i></a>
-					</div>
-				</header>
-				
-				<main class="main" id="main">
-					<div class="button-container">
-						<!--<div class="download"><div><a download>Download Webpage <i class="fa fa-arrow-down fa-.8x" title="Download Webpage"></i></a></div><div>Opens as plain file – ideal for printing</div></div>-->
-						
-						<div class="translate" id="translate"><div id="google_translate_element" title="Google Translate provides only a rough, machine-generated rendering of the text. Users should proceed with caution and are urged to consult the original site page alongside any generated translation."></div></div>
-					</div>
-
-					<h2>Archival Texts</h2>
-					
-					<section class="toc" aria-labelledby="menu">
-						<!-- Add "liv_" ids for new items on this page. -->
-						<!-- Use Chicago full note (bibliograpy), then edit to match format here. -->
-						<!-- New additions also need to be added to the Site Map.-->
-						<ol style="list-style-type: upper-alpha;">
-							<li class="toc-title" id="menu">[Menu: Sections]</li>
-							<li><a href="#summary">Overview</a></li>
-							<li>Authors &amp; Contributors
-								<ol>
-									<li><a href="#aga-toc">Selim Aga</a></li>
-									<li><a href="#bogharib-toc">Mohammed Bogharib</a></li>
-									<li><a href="#botha-toc">Andries Botha</a></li>
-									<li><a href="#chumah-toc">James Chumah</a></li>
-									<li><a href="#crowther-toc">Samuel Ajayi Crowther</a></li>
-									<li><a href="#dewring-toc">J.R. Dewring</a></li>
-									<li><a href="#douglass-toc">Frederick Douglass</a></li>
-									<li><a href="#far-toc">Sui Sin Far</a> (bonus texts)</li>
-									<li><a href="#farrar-toc">Caras Farrar</a></li>
-									<li><a href="#kagwa-toc">Apolo Kagwa</a></li>
-									<li><a href="#khama-toc">Semane Setlhoko Khama</a></li>
-									<li><a href="#labatt-toc">Philip Cohen Labatt</a></li>
-									<li><a href="#saeid-toc">Lief Ben Saeid</a></li>
-									<li><a href="#majwara-toc">Majwara</a></li>
-									<li><a href="#menelik-toc">Menelik II</a></li>
-									<li><a href="#moshoeshoe-toc">Moshoeshoe I</a></li>
-									<li><a href="#ncwadi-toc">Ncwadi</a></li>
-									<li><a href="#nehemiah-toc">Nehemiah Sekhonyana Moshoeshoe</a></li>
-									<li><a href="#ranavalonaII-toc">Ranavalona II</a></li>
-									<li><a href="#read-toc">James Read, Jr.</a></li>
-									<li><a href="#habib-toc">Said Bin Habib</a></li>
-									<li><a href="#osman-toc">Saleh Bin Osman</a></li>
-									<li><a href="#sechele-toc">Sechele I</a></li>
-									<li><a href="#nosuthu-toc">NoSuthu Soga Jotelo</a></li>			
-									<li><a href="#soga-toc">Tiyo Soga</a></li>
-									<li><a href="#stoffels-toc">Andries Stoffels</a></li>
-									<li><a href="#tause-toc">Tause</a></li>
-									<li><a href="#tippu-toc">Tippu Tip</a></li>
-									<li><a href="#tzatzoe-toc">Jan Tzatzoe</a></li>
-									<li><a href="#wainwright-toc">Jacob Wainwright</a></li>
-									<li><a href="#weah-toc">Bye Weah</a></li>
-									<li><a href="#wogga-toc">Thomas Wogga</a></li>
-									<li><a href="#informants-toc">Unnamed Central African Informants</a></li>
-									<li><a href="#cfs-informants-toc">Unnamed Congo Free State Informants</a></li>
-								</ol>
-							</li>
-						</ol>
-					</section>
-
-					<hr class="title-hr" />
-						
-					<section aria-labelledby="summary">
-						<h3 id="summary">Overview</h3>
-
-						<p><em>One More Voice</em> publishes a selection of critically-edited and encoded archival texts (manuscripts and periodical press articles) alongside a set of curated <a href="/visual_materials.html">visual materials</a>. Each edited text and object is presented in a form ready for educational use, as noted on our <a href="/index.html">home page</a>. Additionally, the project helps contextualize these primary materials by providing an <a href="/books.html">extended list</a> of Victorian-era, book-length published works by non-European authors (mostly Anglophone) and a small collection of relevant <a href="/motion_pictures.html">motion pictures</a>. Most recently, the project has also begun to include critical essays about key authors and archival texts.</p>
-						
-						<p>Each entry below provides dates for the non-European individual of interest, a link to the corresponding <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a> entry (if available), a short biographical statement, and links to one or more archival items published by <em>One More Voice</em> plus any associated critical essays published by the project. For each archival item, the entry provides the names of any British or other European co-creators and information on the material format of the item, including description of any layers of third-party remediation involved in the item's production. Finally, each entry also includes an image of the given creator or, if no image is known, the entry explictly marks the gap in the historical record with an empty image frame.</p>
-
-						<p>The archival texts are available for viewing online in facsimile versions that approximate the textual, structural, and material characteristics of the originals. Users can also download corresponding TEI XML files for all critically-edited archival texts from the <em>One More Voice</em> <a href="https://github.com/livingstoneonline/onemorevoice/tree/master/xml">GitHub repo</a>. Emphasis on materiality in the facsimiles seeks to establish a degree of continuity between the originals and their digital surrogates. This strategy of representation – alongside the overall format of the entries – is also rooted in an ethos of care that recognizes the individuality of each creator and seeks to overturn long-standing practices in western discourse of minimizing, eliding, or otherwise failing to acknowledge the work of such non-European creators.</p>
-						<span id="aga-toc"></span>
-					</section>
-
-					<hr class="title-hr"/>
-
-					<section>
-
-						<section class="archival-text" aria-labelledby="aga">
-							<h4 id="aga">Selim Aga</h4>
-							<p>c.1826-1875 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Selim_Aga">Wikipedia</a></p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Formerly enslaved person and traveler from Kordofan, Sudan; accompanied British explorer Richard Burton as a valet on various West African journeys in the 1860s; produced accounts of his life and travels.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020050"></span><strong><a href="/html/transcriptions/liv_020050_TEI.html">Incidents Connected with the Life of Selim Aga</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 1846</p>
-							<p class="details"><strong>Format:</strong> Self-published narrative in book form</p>
-						
-							<p class="item"><span id="liv_020017"></span>“<strong><a href="/html/transcriptions/liv_020017_TEI.html">The Niger Expedition</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 24 June 1858, 25 September 1858</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Original letters, as combined, edited, and published in a British periodical</p>
-						
-							<p class="item"><span id="liv_020027"></span>“<strong><a href="/html/transcriptions/liv_020027_TEI.html">Original Correspondence: West Africa</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 16 November 1863, 1 February 1864</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Louis-Alexis Chamerovzow</p>
-							<p class="details"><strong>Format:</strong> Original letter, as edited, contextualized, and published by a British writer in a British abolitionist periodical</p>
-							<span id="bogharib-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="bogharib">
-							<h4 id="bogharib">Mohammed Bogharib</h4>
-							<p>Dates unknown</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Swahili trader and formerly enslaved person; traveled widely in nineteenth-century East and Central Africa; although known for the violence of his followers, notably assisted explorer David Livingstone during the latter's final travels in Africa (1866-73).</span>
-							</p>
-							
-							<p class="item"><span id="liv_020040"></span>“<strong><a href="/html/transcriptions/liv_020040_TEI.html">History of Warori or Basango</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 16 July 1869</p>
-							<p class="details"><strong>Co-Creator(s):</strong> David Livingstone</p>
-							<p class="details"><strong>Format:</strong> Original narrative, as translated (possibly with the help of an intermediary) and written down in a notebook by a British explorer</p>
-							<span id="botha-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="botha">
-							<h4 id="botha">Andries Botha</h4>
-							<p>Dates unknown &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Andries_Botha">Wikipedia</a></p>
-							<p>
-								<span class="creator-image">
-									<!-- <a href="/img/essays/liv_023013_0001_deriv-490px.jpg"> -->
-										<img width="169" height="169" style="outline:1px solid gray;" loading="lazy" src="/img/visual-materials/thumbnails/liv_023013_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_023013_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_023013_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_023013_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_023013_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Andries Botha, looking to his left." />
-									<!-- </a> -->
-								</span>
-								<span class="biography"><strong>Biography:</strong> Gonaqua Khoe and appointed colonial official in South Africa's Kat River Settlement; served with British and Cape colonial forces against the amaXhosa in Hintsa's War (1834-35) and the War of the Axe (1846-47).</span>
-							</p>
-							
-							<p class="item"><span id="liv_020011"></span><strong><a href="/html/transcriptions/liv_020011_TEI.html">Letter to [Harry Smith]</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 23 June 1850</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Handwritten copy of original manuscript letter</p>
-						
-							<p class="item"><strong><a href="/html/essays/introduction_botha.html">Introduction to Andries Botha</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2020</p>
-							<p class="details"><strong>Author(s):</strong> Jared McDonald</p>
-							<span id="chumah-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="chumah">
-							<h4 id="chumah">James Chumah</h4>
-							<p>1834-1906 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Chuma_and_Susi">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/index.html">Home Page</a> (header image)</p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021036_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021036_0001_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_021036_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021036_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021036_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of James Chuma." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Traveler from the Yao of East Africa; formerly enslaved person who accompanied explorer David Livingstone on his final travels (1866-73); provided Horace Waller, editor of Livingstone's posthumous journals, with information related to those travels.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020012"></span>“<strong><a href="/html/transcriptions/liv_020012_TEI.html">To the Editor of the Times</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 9 April 1874, [1874], [1874]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Horace Waller; Lindesay Brine</p>
-							<p class="details"><strong>Format:</strong> Original letter, as edited and published (alongside a letter by another British author) in a letter by a British abolitionist in a British periodical</p>
-							<span id="crowther-toc"></span>
-						</section>
-
-				<section class="archival-text" aria-labelledby="crowther">
-					<h4 id="crowther">Samuel Ajayi Crowther</h4>
-					<p>c.1809-1891 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Samuel_Ajayi_Crowther">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/books.html#crowther">Book-Length Works</a></p>
-					<p>
-						<span class="creator-image">
-							<a href="/html/transcriptions/liv_021098_ART.html">
-								<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021098_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021098_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021098_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021098_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021098_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Samuel Ajayi Crowther in half profile, seated, looking slightly down and to his right." />
-							</a>
-						</span>
-						<span class="biography"><strong>Biography:</strong> Yoruba clergyman, linguist, and formerly enslaved person; ordained as the first African Anglican bishop; based in Lagos, Nigeria, but traveled extensively with his son Dandeson along the Niger River for missionary purposes.</span>
-					</p>
-					
-					<p class="item"><span id="liv_020055"></span><strong><a href="/html/transcriptions/liv_020055_TEI.html">Letter to Henry Venn</a></strong></p>
-					<p class="details"><strong>Dates(s):</strong> 27 February 1867</p>
-					<p class="details"><strong>Co-Creator(s):</strong> J.R. Dewring</p>
-					<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand with transcription of letter by another author</p>
-					<span id="dewring-toc"></span>
-				</section>
-
-				<section class="archival-text" aria-labelledby="dewring">
-					<h4 id="dewring">J.R. Dewring</h4>
-					<p>Dates Unknown</p>
-					<p>
-						<span class="creator-image no-image">
-							<span class="content">No<br/> known<br/> image</span>
-						</span>
-						<span class="biography"><strong>Biography:</strong> Native pastor and catechist; based at a station along the Nun River in Nigeria; visited Idzŏ communities for missionary purposes.</span>
-					</p>
-					
-					<p class="item"><strong><a href="/html/transcriptions/liv_020055_TEI.html">Letter to Samuel Ajayi Crowther</a></strong></p>
-					<p class="details"><strong>Dates(s):</strong> 4 December 1866</p>
-					<p class="details"><strong>Co-Creator(s):</strong> Samuel Ajayi Crowther</p>
-					<p class="details"><strong>Format:</strong> Handwritten copy by another author of original manuscript letter</p>
-					<span id="douglass-toc"></span>
-				</section>
-
-						<section class="archival-text" aria-labelledby="douglass">
-							<h4 id="douglass">Frederick Douglass</h4>
-							<p>1818-1895 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Frederick_Douglass">Wikipedia</a>&nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021065_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021065_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021065_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021065_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021065_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021065_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Frederick Douglass." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Abolitionist and civil rights activist; drew on his skills as a writer and orator and on his story as a formerly enslaved person to become one of the most renowned and politically influential Black Americans of the nineteenth century.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020031"></span><strong><a href="/html/transcriptions/liv_020031_TEI.html">Letter to John Scoble</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 9 May 1846</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-						
-							<p class="item"><span id="liv_020032"></span><strong><a href="/html/transcriptions/liv_020032_TEI.html">Letter to Catherine Impey</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 9 July 1888</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-							
-							<p class="item"><strong>“<a href="/html/essays/douglass_british_allies.html">Frederick Douglass and His British Allies</a>”</strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2021</p>
-							<p class="details"><strong>Author(s):</strong> Doug Kirshen</p>
-							<span id="far-toc"></span>
-
-							<p class="item"><strong>“<a href="/html/essays/douglass_beyond_us.html">Frederick Douglass Beyond the United States – Transatlantic Activism and Correspondence</a>”</strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2021</p>
-							<p class="details"><strong>Author(s):</strong> Rene H. Treviño</p>
-							<span id="far-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="far">
-							<h4 id="far">Sui Sin Far</h4>
-							<p>1865-1914 &nbsp;|&nbsp; Also <strong>Edith Maude Eaton</strong> &nbsp;|&nbsp; <a href="http://www.biographi.ca/en/bio/eaton_edith_maud_14E.html">Dictionary of Canadian Biography</a> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Sui_Sin_Far">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/books.html#far">Book-Length Works</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021071_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021071_0001_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_021071_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021071_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021071_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Edith Maude Eaton." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Chinese-Canadian author and journalist; daughter of a formerly enslaved Chinese mother and a British father; sister of recognized author <a href="/books.html#watanna">Onoto Watanna</a>; wrote widely, with her work focused on exploring and documenting the Chinese experience in North America.</span>
-							</p>
-						
-							<p style="background-color:#e3e3e3"><em>Bonus Texts:</em> <strong> <a href="https://digitalcollections.nypl.org/items/b75b4c40-d1ec-0134-a1a2-00505686d14e#/?uuid=b92fa280-d1ec-0134-8129-00505686d14e">Original Correspondence</a></strong> (New York Public Library site)</p>
-							<p class="details"><strong>Dates(s):</strong> 1903-1907</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Various</p>
-							<p class="details"><strong>Format:</strong> Correspondence collection that includes manuscript letters in author's hand and typewritten letters with signature in author's hand</p>
-							<span id="farrar-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="farrar">
-							<h4 id="farrar">Caras Farrar</h4>
-							<p>?-c.1906</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Traveler from the Yao of East Africa; accompanied explorer David Livingstone during the last two years (1872-73) of the latter's final African journey.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020061"></span>“<strong><a href="/html/transcriptions/liv_020061_TEI.html">The History of Caras Farrar of Finding Dr Livingstone, in Central Africa</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 9 September 1874</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Manuscript narrative in another hand with signature in author's hand</p>
-							<span id="kagwa-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="kagwa">
-							<h4 id="kagwa">Apolo Kagwa</h4>
-							<p>1864-1927 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Apollo_Kaggwa">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/books.html#kagwa">Book-Length Works</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_020016_TEI.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_020016_0002_image_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_020016_0002_image_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_020016_0002_image_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_020016_0002_image_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Apolo Kagwa." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Served as the chief minister (Katikiro) of Buganda (now part of Uganda) for over thirty years; also a prominent intellectual, ethnographer, and author.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020016"></span>“<strong><a href="/html/transcriptions/liv_020016_TEI.html">The Katikiro of Uganda and His Secretary</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 1906</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Benjamin Stone</p>
-							<p class="details"><strong>Format:</strong> Verbal quotations, as included in a section of a book by a British author</p>
-							<span id="khama-toc"></span>
-						</section>
-					
-						<section class="archival-text" aria-labelledby="khama">
-							<h4 id="khama">Semane Setlhoko Khama</h4>
-							<p>1881-1937 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Semane_Setlhoko_Khama">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> (including <a href="/visual_materials.html">header image</a>)</p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021022_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021022_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021022_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021022_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021022_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021022_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Semane Khama, facing to her right." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Queen or queen mother (“mohumagadi”) of the BaNgwato people of the Bechuanaland Protectorate (now Botswana); played a regional key role in promoting Christianity, advocating for temperance and women's education, and expanding the role of women in the church.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020024"></span><strong><a href="/html/transcriptions/liv_020024_TEI.html">Letter to A.M. Chirgwin</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 5 December 1934</p>
-							<p class="details"><strong>Format:</strong> Typewritten letter with signature in author's hand</p>
-							<span id="labatt-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="labatt">
-							<h4 id="labatt">Philip Cohen Labatt</h4>
-							<p>1823-1854 &nbsp;|&nbsp; <em>Also see:</em> <a href="/books.html#labatt">Book-Length Works</a></p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Jamaican-Jewish writer and editor from Kingston, Jamaica, founded <em>The Echo</em>, a weekly periodical and contributed to <em>The First Fruits of the West; and, Monthly Jewish Magazine</em> (1844) before serving as editor of the <em>Daily Gleaner</em>, a prominent Jamaican newspaper still published today.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020030"></span>“<strong><a href="/html/transcriptions/liv_020030_TEI.html">Curgy’s Funeral, Or The Old Time Busha</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 1855</p>
-							<p class="details"><strong>Format:</strong> Short story, as published in a posthumous collection of the author's works</p>
-						
-							<p class="item"><span id="liv_020036"></span>“<strong><a href="/html/transcriptions/liv_020036_TEI.html">An Incident in the Late Rebellion in Jamaica</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 1855</p>
-							<p class="details"><strong>Format:</strong> Short story, as published in a posthumous collection of the author's works</p>
-
-							<p class="item"><strong><a href="/html/essays/introduction_labatt.html">Introduction to Philip Cohen Labatt</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2021</p>
-							<p class="details"><strong>Author(s):</strong> Heidi Kaufman</p>
-							<span id="saeid-toc"></span>
-						</section>
-					
-						<section class="archival-text" aria-labelledby="saeid">
-							<h4 id="saeid">Lief Ben Saeid &nbsp;|&nbsp; Thomas Wogga</h4>
-							<p> (Lief) Dates unknown &nbsp;|&nbsp; (Wogga) Dates unknown</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> (Lief) Arab trader who traveled in nineteenth-century East Africa.</span> 
-							</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> (Wogga) African traveler and a formerly enslaved person who traveled in nineteenth-century West Africa.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020003"></span>“<strong><a href="/html/transcriptions/liv_020003_TEI.html">Notes on African Geography</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 1845</p>
-							<p class="details"><strong>Co-Creator(s):</strong> James MacQueen</p>
-							<p class="details"><strong>Format:</strong> Summarized data, as published in a British periodical article by a British geographer</p>
-							<span id="majwara-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="majwara">
-							<h4 id="majwara">Majwara</h4>
-							<p>c.1857-1886</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Traveler and formerly enslaved person from the Ndiga clan of the Baganda of East Africa; his father Namujulirwa was killed by Mutesa I, Kabaka of Buganda; accompanied British explorer Henry M. Stanley on two journeys (1871-72, 1874-77), and also traveled with and attended the deathbed of British explorer David Livingstone (1872-83).</span>
-							</p>
-							
-							<p class="item"><span id="liv_020053"></span>“<strong><a href="/html/transcriptions/liv_020053_TEI.html">Majwara's Account of the Last Journey and Death of Dr. Livingstone</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 14 March 1874; 13 April 1874</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Frederick Holmwood</p>
-							<p class="details"><strong>Format:</strong> Original narrative, as translated (possibly with the help of an intermediary) and written down in a British writer's letter, then published in a British geographical periodical</p>
-							<span id="menelik-toc"></span>
-						</section>						
-
-						<section class="archival-text" aria-labelledby="menelik">
-							<h4 id="menelik">Menelik II</h4>
-							<p>1844-1913 &nbsp;|&nbsp; Also <strong>Sahle Mariam</strong> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Menelik_II">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/motion_pictures.html#recordings">Motion Pictures</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021072_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021072_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021072_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021072_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021072_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021072_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Menelik II, facing to his left." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> King of Kings and Emperor of Ethiopia (1889-1913), a role in which he expanded Ethiopia's territory and engaged in large-scale modernization in the areas of economy, education, communication, and transportation; the defeat of Italian forces by his army at the Battle of Adwa (1896) marked a key milestone in the history of African resistance to European colonialism and led Italy and other European nations to recognize Ethiopia's independence.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020056"></span>“<strong><a href="/html/transcriptions/liv_020056_TEI.html">Treaties Between Great Britain and Ethiopia, and Between Great Britain, Italy, and Ethiopia, Relative to the Frontiers Between the Soudan, Ethiopia, and Eritrea. Signed at Adis Ababa, May 15, 1902</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 15 May 1902; 28 October 1902; 1905</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Edward VII; John Lane Harrington; Federico Ciccodicola; Victor Emmanuel III </p>
-							<p class="details"><strong>Format:</strong> Treaty drafted with British and Italian representatives and signed in Ethiopia, as as edited by two British individuals and published in a book by a British publisher</p>
-
-							<p class="item"><strong>“<a href="/html/essays/addis_ababa_treaties.html">The 1902 Addis Ababa Treaties and the <em>Ardhi Initiative</em></a>”</strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2021</p>
-							<p class="details"><strong>Author(s):</strong> Ng’ang’a Wahu-Mũchiri</p>
-							<span id="moshoeshoe-toc"></span>
-						</section>			
-					
-						<section class="archival-text" aria-labelledby="moshoeshoe">
-							<h4 id="moshoeshoe">Moshoeshoe I &nbsp;&#8226;&nbsp; Nehemiah Sekhonyana Moshoeshoe</h4>
-							<p>(Moshoeshoe I) c.1786-1870 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Moshoeshoe_I">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a> &nbsp;&#8226;&nbsp; (Nehemiah Sekhonyana Moshoeshoe) 1824-1906</p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021074_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021074_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021074_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021074_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021074_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021074_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Moshoeshoe I in tophat." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> (Moshoeshoe I) Son of a minor chief of the Koena clan of Southern Africa's Basotho people; rose to prominence as a strategic leader, diplomat, and military tactician; became the first king of Basutoland (modern-day Lesotho) in 1822.</span>
-							</p>
-						
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> (Nehemiah Sekhonyana Moshoeshoe) Son of Moshoeshoe I and Mosula ‘MaSekhonyana Molise Kata; served as secretary, envoy, and warrior for Moshoeshoe; tried and acquited of treason in 1877; published “A Little Light from Basutoland” in the <em>Cape Monthly Magazine</em> (1880) and detailed Basotho history and traditions in two letters to Joseph M. Orpen (1905).</span>
-							</p>
-
-							<p class="item"><span id="liv_020062"></span>“<strong><a href="/html/transcriptions/liv_020062_TEI.html">The Caffre War</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> [1852]; [1852]; 20 December 1852; 21 December 1852; 2 December 1852; 28 February 1853</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous; Abraham Josias Cloëté; William Eyre; George Thomas Napier; George Cathcart; John Ayliff</p>
-							<p class="details"><strong>Format:</strong> Original letter, as translated (presumably), edited, and published in a British periodical</p>
-
-							<p class="item"><span id="liv_020063"></span>“<strong><a href="/html/transcriptions/liv_020063_TEI.html">The General and the Caffre Chief</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 13 December 1852; 20 December 1852; 21 December 1852; 1 March 1853</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous; George Cathcart</p>
-							<p class="details"><strong>Format:</strong> Discussion with a British colonial official and an original letter, as translated (presumably), edited, and published in a British periodical</p>
-								
-							<p class="item"><span id="liv_020045"></span>“<strong><a href="/html/transcriptions/liv_020045_TEI.html">The Cape of Good Hope</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 5 October 1855, 22 January 1856</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous; Jacobus Nicolaas Boshoff; Thomas Arbousset; George Grey</p>
-							<p class="details"><strong>Format:</strong> Discussion with Dutch South African interlocutor and a British colonial official, as translated by a French interpreter and as edited and published in a British periodical</p>
-							<span id="ncwadi-toc"></span>
-						</section>			
-
-						<section class="archival-text" aria-labelledby="ncwadi">
-							<h4 id="ncwadi">Ncwadi</h4>
-							<p>Dates unknown</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Nineteenth-century leader (“ngkosi”) of the amaNgwane, a clan of the Zulu in South Africa.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020015"></span>“<strong><a href="/html/transcriptions/liv_020015_TEI.html">Gleanings and Glances</a></strong>” (excerpt), “<strong><a href="/html/transcriptions/liv_020015_TEI.html">Letter from an African Chief</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 12 June 1893, 1 June 1894</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Original letter, as edited and published in a British missionary periodical</p>
-							<span id="nehemiah-toc"></span>
-						</section>
-						
-						<section class="archival-text" aria-labelledby="nehemiah">
-							<h4 id="nehemiah">Nehemiah Sekhonyana Moshoeshoe</h4>
-							<p>See entry for <a href="#moshoeshoe-toc">Moshoeshoe I &#8226; Nehemiah Sekhonyana Moshoeshoe</a></p>
-							<span id="ranavalonaII-toc"></span>
-						</section>					
-
-						<section class="archival-text" aria-labelledby="ranavalonaII">
-							<h4 id="ranavalonaII">Ranavalona II</h4>
-							<p>1829-1883 &nbsp;|&nbsp; Also <strong>Ranavalonamanjaka</strong> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Ranavalona_II">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#manuscripts">Visual Materials</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021116_ART.html">
-										<img width="169" height="169" style="outline:1px solid gray;" loading="lazy" src="/img/visual-materials/thumbnails/liv_021116_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021116_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021116_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021116_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021116_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Ranavalona II in regal attire, facing to her right." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Queen of Madagascar (r.1868-83); played a central role in promulgating Christianity among the Malagasy people and in westernizing Madagascar through work with British missionaries.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020044"></span>“<strong><a href="/html/transcriptions/liv_020044_TEI.html">The Late Mr. James Cameron of Madagascar</a></strong>” (excerpt)</p>
-							<p class="details"><strong>Dates(s):</strong> 1875, 1 March 1876</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Charles Frederick Arrowsmith Moss</p>
-							<p class="details"><strong>Format:</strong> Funeral proclamation, as read by an anonymous representative and as transcribed, translated, and published as part of an obituary by a British writer in a British periodical</p>
-							<span id="read-toc"></span>
-						</section>
-					
-						<section class="archival-text" aria-labelledby="read">
-							<h4 id="read">James Read, Jr.</h4>
-							<p>c.1811-1894</p>
-							<p>
-								<span class="creator-image">
-									<!-- <a href="/img/essays/liv_023014_0001_deriv-1399px.jpg"> -->
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_023014_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_023014_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_023014_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_023014_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_023014_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of James Read, Jr. in half profile, facing to his right." />
-									<!-- </a> -->
-								</span>
-								<span class="biography"><strong>Biography:</strong> Eldest son of prominent London Missionary Society missionary James Read, Sr., and close associate of <a href="#tzatzoe">Jan Tzatzoe</a>; missionary and evangelical campaigner in the Cape Colony; vocal activist for Khoe civil rights and an influential figure in the establishment of schooling in South Africa's Kat River Settlement.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020033"></span>“<strong><a href="/html/transcriptions/liv_020033_TEI.html">Kat River Mission, South Africa</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 9 October 1838, 1 April 1839</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Original letter, as edited and published in a British missionary periodical</p>
-						
-							<p class="item"><span id="liv_020010"></span><strong><a href="/html/transcriptions/liv_020010_TEI.html">Letter to J.J. Freeman</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 23 May 1850</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-						
-							<p class="item"><strong><a href="/html/essays/introduction_read_jr.html">Introduction to James Read, Jr.</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2020</p>
-							<p class="details"><strong>Author(s):</strong> Jared McDonald</p>
-							<span id="habib-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="habib">
-							<h4 id="habib">Said Bin Habib</h4>
-							<p>Dates unknown &nbsp;|&nbsp; <em>Also see:</em> <a href="/bibliography.html">Bibliography</a> (header image)</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Arab trader who traveled widely in nineteenth-century East and Central Africa.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020001"></span>“<strong><a href="/html/transcriptions/liv_020001_TEI.html">Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 31 May 1860</p>
-							<p class="details"><strong>Co-Creator(s):</strong> [British] Government</p>
-							<p class="details"><strong>Format:</strong> Original narrative, as translated, written down, edited, and published in a British geographical journal</p>
-						
-							<p class="item"><span id="liv_020041"></span><strong><a href="/html/transcriptions/liv_020041_TEI.html">Lists of Headmen in Manyema and Urundi</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 4 July 1869, [c.1869]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> [Unnamed Arab and African Informants?]; David Livingstone</p>
-							<p class="details"><strong>Format:</strong> Headman list and narrative data, as translated (possibly with the help of an intermediary) and written down in a notebook by a British explorer</p>
-						
-							<p class="item"><span id="liv_003181"></span><strong><a href="/html/transcriptions/liv_003181_TEI.html">Central African Geographical Data</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> [c.1869]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> David Livingstone</p>
-							<p class="details"><strong>Format:</strong> Geographical data, as translated (possibly with the help of an intermediary) and written down on a map by a British explorer</p>
-							<span id="osman-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="osman">
-							<h4 id="osman">Saleh Bin Osman</h4>
-							<p>Dates unknown</p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021081_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021081_0001_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_021081_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021081_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021081_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Saleh bin Osman, looking down." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Arab traveler who worked as a personal assistant to explorer Henry M. Stanley during the Emin Pasha Relief Expedition (1886-89).</span>
-							</p>
-							
-							<p class="item"><span id="liv_012056"></span><strong><a href="/html/transcriptions/liv_012056_TEI.html">Testimony</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 12 November 1890</p>
-							<p class="details"><strong>Co-Creator(s):</strong> E.J. Glave</p>
-							<p class="details"><strong>Format:</strong> Testimony in manuscript form, as translated and written down by a British explorer</p>
-						
-							<p class="item"><span id="liv_020002"></span>“<strong><a href="/html/transcriptions/liv_020002_TEI.html">The Story of My Life</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> August 1891</p>
-							<p class="details"><strong>Co-Creator(s):</strong> E.J. Glave</p>
-							<p class="details"><strong>Format:</strong> Autobiographical narrative, as translated, written down, and published by a British explorer in collaboration with British publishers</p>
-							<span id="sechele-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="sechele">
-							<h4 id="sechele">Sechele I</h4>
-							<p>c.1810-1892 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Sechele_I">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021009_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021009_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021009_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021009_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021009_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021009_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Sechele I." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Leader of the BaKwena in southern Africa; played a key regional role in extending commercial routes, spreading Christianity, and forming the Bechuanaland Protectorate.</span>
-							</p>
-							
-							<p class="item"><span id="liv_003027"></span><strong><a href="/html/transcriptions/liv_003027_TEI.html">Letter to Robert Moffat 1</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> [October 1852]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> David Livingstone</p>
-							<p class="details"><strong>Format:</strong> Original letter, as translated, written down, and annotated by a British explorer</p>
-						
-							<p class="item"><span id="liv_020021"></span><strong><a href="/html/transcriptions/liv_020021_TEI.html">Statement and Attestations</a></strong>; “<strong><a href="/html/transcriptions/liv_020021_TEI.html">Statement of Sechele, Paramount Chief of the Bakwaina</a></strong>”; “<strong><a href="/html/transcriptions/liv_020021_TEI.html">The Attack on Sechele</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 7 May 1853, 11 May 1853; 21 April 1853, 30 April 1853; 1 December 1852.</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Samuel Edwards; Tom Thompson; Anonymous; William F. Webb</p>
-							<p class="details"><strong>Format:</strong> Statement with two original signatures, as translated and written down by a British individual and as attested by another British individual; also appended: published version of same statement with an additional letter from a British hunter provided for context</p>
-						
-							<p class="item"><span id="liv_020019"></span><strong><a href="/html/transcriptions/liv_020019_TEI.html">Letter to the London Missionary Society</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> [c.1852-1853]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Robert Moffat 1</p>
-							<p class="details"><strong>Format:</strong> Original letter, as translated, written down, and introduced by a British missionary</p>
-						
-							<p class="item"><span id="liv_020029"></span><strong><a href="/html/transcriptions/liv_020029_TEI.html">Letter to Robert Moffat 1</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 31 October 1865</p>
-							<p class="details"><strong>Co-Creator(s):</strong> John Smith Moffat</p>
-							<p class="details"><strong>Format:</strong> Original letter, as written down and translated by a British missionary</p>
-
-							<p class="item"><strong>“<a href="/html/essays/sechele_record_encounter.html">Sechele and the Record of Intercultural Encounter</a>”</strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2021</p>
-							<p class="details"><strong>Author(s):</strong> Justin D. Livingstone</p>
-							<span id="nosuthu-toc"></span>
-						</section>
-					
-						<section class="archival-text" aria-labelledby="nosuthu">
-							<h4 id="nosuthu">NoSuthu Soga Jotelo &nbsp;|&nbsp; Tause</h4>
-							<p>(NoSuthu Soga Jotelo) c.1805-1877 &nbsp;&#8226;&nbsp; (Tause) Dates unknown &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a></p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> (NoSuthu Soga Jotelo) Great Wife of Soga, counsellor to Ngqika (leader of the AmaGcaleka Xhosa); mother of six children, including the <a href="#soga-toc">Tiyo Soga</a> (ordained missionary of the United Presbyterian Church); after conversion to Christianity, lived in the Tyumi Valley at the Glasgow African Missionary Station run by William Chalmers.</span>
-							</p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021067_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021067_0001_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_021067_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021067_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021067_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Tausé Soga." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> (Tause) Daughter of NoSuthu.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020043"></span>“<strong><a href="/html/transcriptions/liv_020043_TEI.html">Nosutu, the Mother of Soga</a></strong>” (excerpt)</p>
-							<p class="details"><strong>Dates(s):</strong> October 1873, 2 March 1874</p>
-							<p class="details"><strong>Co-Creator(s):</strong> John Cumming</p>
-							<p class="details"><strong>Format:</strong> Original letter (NoSuthu Soga Jotelo) as dictated (to Tause), then conveyed to and translated by a British missionary and published as part of an essay in a British missionary periodical</p>
-						
-							<p class="item"><strong>“<a href="/html/essays/nosuthu_sends_thanks.html">NoSuthu Sends Thanks – Reading Voice in A Letter</a>”</strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2020</p>
-							<p class="details"><strong>Author(s):</strong> Joanne Ruth Davis</p>
-							<span id="soga-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="soga">
-							<h4 id="soga">Tiyo Soga</h4>
-							<p>c.1831-1871 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Tiyo_Soga">Wikipedia</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021070_ART.html">
-											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021070_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021070_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021070_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021070_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021070_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Tiyo Soga." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> First ordained Xhosa missionary to the Xhosa people in South Africa; educated at Glasgow University and ordained in the United Presbyterian Church; penned newspaper articles, letters, reports, and translations of <em>The Pilgrim’s Progress</em> and the Bible into Xhosa.</span>
-							</p>
-							<p class="item">“<strong><a href="/html/transcriptions/liv_020022_TEI.html">Jubilee of the Venerable Patriarch Brownlee</a></strong>”<span id="liv_020022"></span></p>
-							<p class="details"><strong>Dates(s):</strong> 17 January 1867, 14 February 1867</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Original speech, as edited and published as part of an article in a British periodical</p>
-							<span id="stoffels-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="stoffels">
-							<h4 id="stoffels">Andries Stoffels</h4>
-							<p>c.late 1770s-1837</p>
-							<p>
-								<span class="creator-image">
-									<!-- <a href="/html/transcriptions/liv_023029_ART.html"> -->
-										<img width="169" height="169" style="outline:1px solid gray;" loading="lazy" src="/img/visual-materials/thumbnails/liv_023029_0001_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_023029_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_023029_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_023029_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Andries Stoffels." />
-									<!-- </a> -->
-								</span>
-								<span class="biography"><strong>Biography:</strong> Gonaqua Khoe and deacon of the church at Philipton in the Kat River Settlement, South Africa; worked as a missionary and was closely connected to the superintendent of the London Missionary Society in southern Africa, John Philip.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020065"></span>“<strong><a href="/html/transcriptions/liv_020065_TEI.html">Minutes of Evidence</a></strong>” (excerpt)</p>
-							<p class="details"><strong>Dates(s):</strong> 27 June 1836; 5 August 1836</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Fowell Buxton; James Read, Jr.; Edward Baines; John Bagshawe; Charles Lushington; William Gladstone</p>
-							<p class="details"><strong>Format:</strong> Evidentiary interview, as conducted by a series of British individuals and translated by a Khoe-English individual and as edited and published (alongside other evidentiary interviews) in a British government publication</p>
-
-							<p class="item"><span id="liv_020064"></span>“<strong><a href="/html/transcriptions/liv_020064_TEI.html">Special General Meeting of the London Missionary Society</a></strong>” (excerpt)</p>
-							<p class="details"><strong>Dates(s):</strong> 10 August 1836; September 1836</p>
-							<p class="details"><strong>Co-Creator(s):</strong> William Alers Hankey; Jan Tzatzoe</p>
-							<p class="details"><strong>Format:</strong> Speech, as translated by a Khoe-English individual and as edited and published (alongside another translated speech) in a British missionary periodical</p>
-						
-							<p class="item"><strong>“<a href="/html/essays/introduction_stoffels.html">Introduction to Andries Stoffels</a>”</strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2022</p>
-							<p class="details"><strong>Author(s):</strong> Jared McDonald</p>
-							<span id="tause-toc"></span>
-						</section>
-						
-						<section class="archival-text" aria-labelledby="tause">
-							<h4 id="tause">Tause</h4>
-							<p>See entry for <a href="#nosuthu-toc">NoSuthu Soga Jotelo &#8226; Tause</a></p>
-							<span id="tippu-toc"></span>
-						</section>						
-
-						<section class="archival-text" aria-labelledby="tippu">
-							<h4 id="tippu">Tippu Tip</h4>
-							<p>1837-1905 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Tippu_Tip">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021077_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021077_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021077_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021077_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021077_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021077_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Tippu Tip." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Arab-African ivory and slave trader who traveled widely in nineteenth-century East and Central Africa; played a major role in shaping the history of the region; supported the work of explorers like David Livingstone and Henry M. Stanley; for a time served as Governor in the Stanley Falls District of the Congo Free State.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020028"></span>“<strong><a href="/html/transcriptions/liv_020028_TEI.html">Tippoo Tib</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 30 March 1887, 17 May 1887</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous</p>
-							<p class="details"><strong>Format:</strong> Q&A with an anonymous interlocutor, as translated, written down, edited, contextualized, and published by an anonymous British writer in a British periodical</p>
-							<span id="tzatzoe-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="tzatzoe">
-							<h4 id="tzatzoe">Jan Tzatzoe</h4>
-							<p>c.1792-1868 &nbsp;|&nbsp; <em>Also see:</em> <a href="/visual_materials.html#images">Visual Materials</a></p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021044_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021044_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021044_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021044_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021044_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021044_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Jan Tzatzoe (Dyani Tshatshu)." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Also Dyani Tshatshu; Xhosa leader who became a prize African convert of the London Missionary Society; had close connections to its missionary James Read, Sr., and his son <a href="#read">James Read, Jr.</a>; worked as a missionary and evangelical-humanitarian campaigner in the Cape Colony and the neighboring Xhosa chieftaincies.</span>
-							</p>
-							
-							<p class="item"><!--<span id="liv_020064"></span>-->“<strong><a href="/html/transcriptions/liv_020064_TEI.html">Special General Meeting of the London Missionary Society</a></strong>” (excerpt)</p>
-							<p class="details"><strong>Dates(s):</strong> 10 August 1836; September 1836</p>
-							<p class="details"><strong>Co-Creator(s):</strong> William Alers Hankey; Andries stoffels</p>
-							<p class="details"><strong>Format:</strong> Speech, as translated by a Khoe-English individual and as edited and published (alongside another translated speech) in a British missionary periodical</p>
-
-							<p class="item"><span id="liv_020035"></span>“<strong><a href="/html/transcriptions/liv_020035_TEI.html">Appeal on Behalf of the Hottentots</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> July 1837, 24 November 1837, 1 January 1838</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Anonymous; J. Monro; John Philip; James Read, Sr.</p>
-							<p class="details"><strong>Format:</strong> Original letter, as edited and published (alongside another letter from a British missionary) in an essay in a British missionary periodical</p>
-
-							<p class="item"><span id="liv_020025"></span><strong><a href="/html/transcriptions/liv_020025_TEI.html">Letter to Directors of the London Missionary Society</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 1 September 1838</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-
-							<p class="item"><span id="liv_020026"></span><strong><a href="/html/transcriptions/liv_020026_TEI.html">Letter to Directors of the London Missionary Society</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 8 October 1845</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-							<span id="wainwright-toc"></span>
-
-							<p class="item"><strong><a href="/html/essays/introduction_tzatzoe.html">Introduction to Jan Tzatzoe</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2021</p>
-							<p class="details"><strong>Author(s):</strong> Jared McDonald</p>
-						</section>
-
-						<section class="archival-text" aria-labelledby="wainwright">
-							<h4 id="wainwright">Jacob Wainwright</h4>
-							<p>c.1851/52-1892 &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Jacob_Wainwright">Wikipedia</a> &nbsp;|&nbsp; <em>Also see:</em> <a href="/texts.html">Archival Texts</a> (header image), <a href="/visual_materials.html#images">Visual Materials</a>, and <a href="/site_map.html">Site Map</a> (header image)</p>
-							<p>
-								<span class="creator-image">
-									<a href="/html/transcriptions/liv_021003_ART.html">
-										<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021003_0001_thumbnail-230px.jpg" srcset="/img/texts/thumbnails/liv_021003_0001_thumbnail-230px.jpg 230w, /img/texts/thumbnails/liv_021003_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021003_0001_thumbnail-115px.jpg 115w" sizes="(min-width: 800px) 169px, (min-width: 560px) calc(20.45vw + 9px), 110px" alt="Head and shoulders portrait of Jacob Wainwright." />
-									</a>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Traveler and explorer from the Yao of East Africa; accompanied explorer David Livingstone during the last two years (1872-73) of the latter's final African journey.</span>
-							</p>
-							
-							<p class="item"><span id="liv_000017"></span><strong><a href="/html/transcriptions/liv_000017_TEI.html">Addition to David Livingstone's Field Diary XVII</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 28 April 1873</p>
-							<p class="details"><strong>Format:</strong> Addition in author's hand to a manuscript diary by a British explorer</p>
-						
-							<p class="item"><span id="liv_020014"></span><strong><a href="/html/transcriptions/liv_020014_TEI.html">Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 4 May 1873</p>
-							<p class="details"><strong>Format:</strong> Original inscription in author’s hand</p>
-						
-							<p class="item"><span id="liv_000074"></span><strong><a href="/html/transcriptions/liv_000074_TEI.html">Extract from Diary</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> May-June 1873</p>
-							<p class="details"><strong>Co-Creator(s):</strong> James Christie; Jacob Wainwright; A. [?] Paterson</p>
-							<p class="details"><strong>Format:</strong> Manuscript diary in author’s hand</p>
-						
-							<p class="item"><span id="liv_000085"></span><strong><a href="/html/transcriptions/liv_000085_TEI.html">Letter to William O. Livingstone</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> October 1873</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-						
-							<p class="item"><span id="liv_000075"></span><strong><a href="/html/transcriptions/liv_000075_TEI.html">Extract from Diary</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> [November 1873-February 1874]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> James Christie; Jacob Wainwright</p>
-							<p class="details"><strong>Format:</strong> Manuscript diary in author’s hand</p>
-						
-							<p class="item"><span id="liv_000138"></span><strong><a href="/html/transcriptions/liv_000138_TEI.html">Letter to Joseph Moore</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 23 May 1874</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-						
-							<p class="item"><span id="liv_000139"></span><strong><a href="/html/transcriptions/liv_000139_TEI.html">Letter to Joseph Moore</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 10 July 1874</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-						
-							<p class="item"><span id="liv_020013"></span>“<strong><a href="/html/transcriptions/liv_020013_TEI.html">Jacob Wainwright</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 1 September 1874</p>
-							<p class="details"><strong>Format:</strong> Autobiographical narrative, as published in a British missionary periodical</p>
-						
-							<p class="item"><span id="liv_020051"></span><strong><a href="/html/transcriptions/liv_020051_TEI.html">Letter to [Horace Waller?]</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 15 September 1875</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-						
-							<p class="item"><span id="liv_020052"></span><strong><a href="/html/transcriptions/liv_020052_TEI.html">Letter to William Salter Price</a></strong></p>
-							<p class="details"><strong>Dates(s):</strong> 2 May 1876</p>
-							<p class="details"><strong>Format:</strong> Manuscript letter in author’s hand</p>
-							<span id="weah-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="weah">
-							<h4 id="weah">Bye Weah</h4>
-							<p>Dates unknown</p>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Ruler of the Grebo of Liberia.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020054"></span>“<strong><a href="/html/transcriptions/liv_020054_TEI.html">The Liberian War. To the Editor of the Times</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> 24 January 1876; 7 March 1876</p>
-							<p class="details"><strong>Format:</strong> Original letter, as edited and published in a British periodical</p>
-							<span id="wogga-toc"></span>
-						</section>		
-					
-						<section class="archival-text" aria-labelledby="wogga">
-							<h4 id="wogga">Thomas Wogga</h4>
-							<p>See entry for <a href="#saeid-toc">Lief Ben Saeid &#8226; Thomas Wogga</a></p>
-							<span id="informants-toc"></span>
-						</section>	
-					
-						<section class="archival-text" aria-labelledby="informants">
-							<h4 id="informants">Unnamed Central African Informants</h4>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Most likely from Manyema (today a region in the eastern part of the Democratic Republic of the Congo); assisted explorer David Livingstone during the latter's final travels in Africa (1866-73).</span>
-							</p>
-							
-							<p class="item"><span id="liv_020042"></span>“<strong><a href="/html/transcriptions/liv_020042_TEI.html">Central African Fables</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> [c.1868-70]</p>
-							<p class="details"><strong>Co-Creator(s):</strong> David Livingstone</p>
-							<p class="details"><strong>Format:</strong> Original stories, as translated (possibly with the help of an intermediary), edited, and written down in a notebook by a British explorer</p>
-							<span id="cfs-informants-toc"></span>
-						</section>
-
-						<section class="archival-text" aria-labelledby="cfs-informants">
-							<h4 id="cfs-informants">Unnamed Congo Free State Informants</h4>
-							<p>
-								<span class="creator-image no-image">
-									<span class="content">No<br/> known<br/> image</span>
-								</span>
-								<span class="biography"><strong>Biography:</strong> Conveyed their experiences of atrocities under Congo Free State officers and soldiers to Roger Casement, a British government official tasked with investigating Belgian-led conduct in the colony.</span>
-							</p>
-							
-							<p class="item"><span id="liv_020057"></span>“<strong><a href="/html/transcriptions/liv_020057_TEI.html">Notes on Refugee Tribes Encountered in July 1903</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> [1903], 1904</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Roger Casement</p>
-							<p class="details"><strong>Format:</strong> Q&A with and statements by a series of unnamed individuals and groups from the Congo Free State, as conveyed by one or more unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents</p>
-						
-							<p class="item"><span id="liv_020058"></span>“<strong><a href="/html/transcriptions/liv_020058_TEI.html">Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the Rubber Wars Which Began in 1893</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> [1903], 1904</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Roger Casement</p>
-							<p class="details"><strong>Format:</strong> Statements by a series of unnamed individual from the Congo Free State, as conveyed by one or more unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents</p>
-						
-							<p class="item"><span id="liv_020059"></span>“<strong><a href="/html/transcriptions/liv_020059_TEI.html">Notes in the Case of V V, a Native of L L* in the Mantumba District, both of whose Hands Have Been Hacked or Beaten Off, and with Reference to Other Similar Cases of Mutilation in that District</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> [1903], 1904</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Roger Casement</p>
-							<p class="details"><strong>Format:</strong> Statement by an unnamed individual from the Congo Free State, as conveyed by at least one unnamed translator from the Congo Free State to a British government officer and as edited for and published among official British government documents</p>
-						
-							<p class="item"><span id="liv_020060"></span>“<strong><a href="/html/transcriptions/liv_020060_TEI.html">Note of Information Taken in the Charge of Cutting Off the Boy I I’s Hand, Preferred to Mr. Casement by the People of E*</a></strong>”</p>
-							<p class="details"><strong>Dates(s):</strong> [1903], 1904</p>
-							<p class="details"><strong>Co-Creator(s):</strong> Roger Casement</p>
-							<p class="details"><strong>Format:</strong> Q&amp;A with a series of unnamed individuals from the Congo Free State, as conveyed by two unnamed translators from the Congo Free State to a British government officer and as edited for and published among official British government documents</p>
-						</section>
-					</section>	
-				</main>
-
-				<aside class="credits" id="credits-div">
-					<hr />
-					
-					<p><strong>Cite page (MLA):</strong> Wisnicki, Adrian S. “Archival Texts.” Heather F. Ball, Jared McDonald, and Mary Borgo Ton, eds., <em>One More Voice</em> (an imprint of <em>Livingstone Online</em>), new dawn edition, 2021, <a href="/texts.html">https://onemorevoice.org/texts.html</a>.</p>
-			
-					<p><strong>Terms of use:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
-
-					<p id="caption"><strong>Header image caption</strong>: Detail from Weatherly Poulett and [Jacob Wainwright], “<a href="https://search.wellcomelibrary.org/iii/encore/record/C__Rb1561464?lang=eng">Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried</a>” (Photograph, c.1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.</p>
-					
-					<p><strong>Header image commentary</strong>: Weatherly took this photograph just a few years before the original inscription was removed from the tree and transferred to the Royal Geographical Society in London. The inscription, one of the more unusual items <a href="/html/transcriptions/liv_020012_TEI.html">published</a> by the <em>One More Voice</em> project, underscores the fact that the non-European sources with which the project engages survive in a wide variety of forms and genres. Note: <em>Livingstone Online</em> publishes a version of this inscription, as reproduced in a <a href="https://livingstoneonline.org/in-his-own-words/the-aftermath-livingstones-death">magic lantern slide</a>.</p>
-				</aside>
+		<header>
+			<div class="nav-container" data-include="header">
+				<nav class="fallback">
+					<span class="logo-container">
+						<a href="/index.html">
+							<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+							<h1>One More Voice</h1>
+						</a>
+					</span>
+					<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
+						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+					</a>
+				</nav>
 			</div>
+		</header>
 
-		</div>
-	
+		<main id="main" aria-labelledby="recovered-texts">
+			<section class="page-details horizontal">
+				<figure class="image-wrapper">
+					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
+					<img width="511" height="511" src="/img/main-pages/liv_020014_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_020014_0001_deriv-318px.jpg 318w, /img/main-pages/liv_020014_0001_deriv-478px.jpg 478w, /img/main-pages/liv_020014_0001_deriv-636px.jpg 636w, /img/main-pages/liv_020014_0001_deriv-698px.jpg 698w, /img/main-pages/liv_020014_0001_deriv-956px.jpg 956w, /img/main-pages/liv_020014_0001_deriv-1396px.jpg 1396w" sizes="(min-width: 1700px) 875px, (min-width: 1000px) 50.59vw, (min-width: 780px) 698px, (min-width: 520px) 100vw, calc(10vw + 448px)" alt="Tree segment with faded inscription on inner bark that begins “Dr. Livignston[e] / May 4, 18[73].”" title="Detail from Weatherly Poulett and [Jacob Wainwright], “Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried” (Photograph, c.1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
+					<figcaption class="caption-icon mobile">
+						<span class="tooltip-container">
+							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+							<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
+						</span>
+					</figcaption>
+				</figure>
+
+				<div>
+					<span>
+						<h2 id="recovered-texts">Recovered Texts</h2>
+						<p>Date (publication and updates): <strong>2020-22</strong></p>
+						<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+						<figcaption class="caption-icon desktop">
+							<span class="tooltip-container">
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
+							</span>
+						</figcaption>
+					</span>
+				</div>
+			</section>
+
+			<section class="content">
+				<div class="decoration"></div>
+				<article id="content">
+
+					<section class="toc">
+						<ol aria-label="Menu">
+							<li><a href="#overview">Overview</a></li>
+								<li>Authors &amp; Contributors
+									<ol style="list-style: lower-alpha;">
+										<li>
+											<details>
+												<summary>Northern and Northern-Central Africa</summary>
+												<ol style="list-style: lower-roman;">
+													<li><a href="#aga">Selim Aga</a></li>
+													<li><a href="#kagwa">Apolo Kagwa</a></li>
+													<li><a href="#majwara">Majwara</a></li>
+													<li><a href="#menelik">Menelik II</a></li>
+													<li><a href="#osman">Saleh Bin Osman</a></li>
+												</ol>
+											</details>
+										</li>
+										<li>
+											<details>
+												<summary>Eastern and Central Africa</summary>
+												<ol style="list-style: lower-roman;">
+													<li><a href="#bogharib">Mohammed Bogharib</a></li>
+													<li><a href="#chumah">James Chumah</a></li>
+													<li><a href="#farrar">Caras Farrar</a></li>
+													<li><a href="#saeid">Lief Ben Saeid</a></li>
+													<li><a href="#ranavalonaII">Ranavalona II</a></li>
+													<li><a href="#habib">Said Bin Habib</a></li>
+													<li><a href="#tippu">Tippu Tip</a></li>
+													<li><a href="#wainwright">Jacob Wainwright</a></li>
+													<li><a href="#informants">Unnamed Central African Informants</a></li>
+													<li><a href="#cfs-informants">Unnamed Congo Free State Informants</a></li>
+												</ol>
+											</details>
+										</li>
+										<li>
+											<details>
+												<summary>Southern Africa</summary>
+												<ol style="list-style: lower-roman;">
+													<li><a href="#botha">Andries Botha</a></li>
+													<li><a href="#khama">Semane Setlhoko Khama</a></li>
+													<li><a href="#moshoeshoe">Moshoeshoe I</a></li>
+													<li><a href="#ncwadi">Ncwadi</a></li>
+													<li><a href="#nehemiah">Nehemiah Sekhonyana Moshoeshoe</a></li>
+													<li><a href="#read">James Read, Jr.</a></li>
+													<li><a href="#sechele">Sechele I</a></li>
+													<li><a href="#nosuthu">NoSuthu Soga Jotelo</a></li>			
+													<li><a href="#soga">Tiyo Soga</a></li>
+													<li><a href="#stoffels">Andries Stoffels</a></li>
+													<li><a href="#tause">Tause</a></li>
+													<li><a href="#tzatzoe">Jan Tzatzoe</a></li>
+												</ol>
+											</details>
+										</li>
+										<li>
+											<details>
+												<summary>Western Africa</summary>
+												<ol style="list-style: lower-roman;">
+													<li><a href="#crowther">Samuel Ajayi Crowther</a></li>
+													<li><a href="#dewring">J.R. Dewring</a></li>
+													<li><a href="#weah">Bye Weah</a></li>
+													<li><a href="#wogga">Thomas Wogga</a></li>
+												</ol>
+											</details>
+										</li>
+										<li>
+											<details>
+												<summary>North America and Caribbean</summary>
+												<ol style="list-style: lower-roman;">
+													<li><a href="#douglass">Frederick Douglass</a></li>
+													<li><a href="#labatt">Philip Cohen Labatt</a></li>
+													<li><a href="#far">Sui Sin Far</a></li>
+												</ol>
+											</details>		
+										</li>
+									</ol>						
+								</li>
+								<li><a href="#citation">Page Citation</a></li>
+								<li><a href="#image-details">Lead Image Details</a></li>
+							</ol>
+						</section>
+							
+						<section aria-labelledby="overview">
+							<h3 id="overview">Overview</h3>
+
+							<p><em>One More Voice</em> publishes a selection of critically-encoded recovered texts (manuscripts, periodical press articles, and other materials) alongside a set of curated <a href="/visual_materials.html">visual materials</a>. Each edited text and object is presented in a form ready for educational use, as noted on our <a href="/index.html">home page</a>. Additionally, the project helps contextualize these primary materials by providing an <a href="/books.html">extended list</a> of Victorian-era, book-length published works by authors of color (mostly Anglophone), a small collection of relevant <a href="/motion_pictures.html">motion pictures</a>, and a variety of <a href="/essays.htm">critical essays</a>.</p>
+							
+							<p>Each entry below provides dates for the individuals of interest to the project, a link to the corresponding <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a> entry (if available), a short biographical statement, and links to one or more recovered items published by <em>One More Voice</em> plus any associated visual materials, films, or critical essays published by the project. Finally, each entry also includes an image of the given creator or, if no image is known, the entry explicitly marks the gap in the historical record with an empty image frame.</p>
+
+							<p>The recovered texts are available for viewing online in facsimile versions that approximate the textual, structural, and material characteristics of the originals. Users can also download corresponding TEI XML files for all critically-edited recovered texts from the <em>One More Voice</em> <a href="https://github.com/livingstoneonline/onemorevoice/tree/master/xml">GitHub repo</a>. Emphasis on materiality in the facsimiles seeks to establish a degree of continuity between the originals and their digital surrogates. This strategy of representation – alongside the overall format of the entries – is also rooted in an ethos of care that recognizes the individuality of each creator and seeks to overturn long-standing practices in western discourse of minimizing, eliding, or otherwise failing to acknowledge the work of such individuals.</p>
+						</section>
+					</article>
+					<div class="decoration"></div>
+				</section>
+		
+				<section class="content recovered full-page">
+					<div class="decoration"></div>
+					<article id="texts">								
+						<section class="sections">
+
+							<section class="section-container" aria-labelledby="aga">
+								<h4 id="aga">Selim Aga</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>c.1826-1875</li>
+										<li><a href="https://en.wikipedia.org/wiki/Selim_Aga">Wikipedia</a></li>
+									</ul>
+								</div>
+								<p class="biography">Formerly enslaved person and traveler from Kordofan, Sudan; accompanied British explorer Richard Burton as a valet on various Western African journeys in the 1860s; produced autobiographical accounts and travelogues.</p>			
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020050"><em><a href="/html/transcriptions/liv_020050_TEI.html">Incidents Connected with the Life of Selim Aga</a></em> (1846)</li>
+							
+										<li id="liv_020017">“<a href="/html/transcriptions/liv_020017_TEI.html">The Niger Expedition</a>” (24 June 1858, 25 Sept. 1858)</li>
+							
+										<li id="liv_020027">“<a href="/html/transcriptions/liv_020027_TEI.html">Original Correspondence: West Africa</a>” (16 Nov. 1863, 1 Feb. 1864)</li>
+									</ol>
+								</details>
+								<p class="location-info">Northern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="kagwa">
+								<h4 id="kagwa">Apolo Kagwa</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_020016_TEI.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_020016_0002_image_thumbnail-238px.jpg" srcset="/img/texts/thumbnails/liv_020016_0002_image_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_020016_0002_image_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_020016_0002_image_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Apolo Kagwa." />
+										</a>
+									</span>
+									<ul>
+										<li>1864-1927</li>
+										<li><a href="https://en.wikipedia.org/wiki/Apollo_Kaggwa">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/books.html#kagwa">Book-Length Works</a></li>
+									</ul>
+								</div>
+								<p class="biography">Served as the chief minister (Katikiro) of Buganda (now part of Uganda) for over thirty years; also a prominent intellectual, ethnographer, and author.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020016">“<a href="/html/transcriptions/liv_020016_TEI.html">The Katikiro of Uganda and His Secretary</a>” (1906)</li>
+									</ol>
+								</details>
+								<p class="location-info">North-Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="majwara">
+								<h4 id="majwara">Majwara</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>c.1857-1886</li>
+									</ul>
+								</div>
+								<p class="biography">Traveler and formerly enslaved person from the Ndiga clan of the Baganda of Central Africa; his father Namujulirwa was killed by Mutesa I, Kabaka of Buganda; accompanied British traveler Henry M. Stanley on two journeys (1871-72, 1874-77), and also traveled with and attended the deathbed of British traveler David Livingstone (1872-83).</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020053">“<a href="/html/transcriptions/liv_020053_TEI.html">Majwara's Account of the Last Journey and Death of Dr. Livingstone</a>” (14 Mar. 1874; 13 Apr. 1874)</li>
+									</ol>
+								</details>
+								<p class="location-info">North-Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="menelik">
+								<h4 id="menelik">Menelik II</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021072_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021072_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021072_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021072_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021072_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021072_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021072_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021072_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Menelik II, facing to his left." />
+										</a>
+									</span>
+									<ul>
+										<li>Also: <strong>Sahle Mariam</strong></li>
+										<li>1844-1913</li>
+										<li><a href="https://en.wikipedia.org/wiki/Menelik_II">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a>, <a href="/motion_pictures.html#recordings">Motion Pictures</a>, and <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">King of Kings and Emperor of Ethiopia (1889-1913), a role in which he expanded Ethiopia's territory and engaged in large-scale modernization in the areas of economy, education, communication, and transportation; the defeat of Italian forces by his army at the Battle of Adwa (1896) marked a key milestone in the history of African resistance to European colonialism and led Italy and other European nations to recognize Ethiopia's independence.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020056">“<a href="/html/transcriptions/liv_020056_TEI.html">Treaties Between Great Britain and Ethiopia, and Between Great Britain, Italy, and Ethiopia, Relative to the Frontiers Between the Soudan, Ethiopia, and Eritrea. Signed at Adis Ababa, May 15, 1902</a>” (15 May 1902; 28 Oct. 1902; 1905)</li>
+									</ol>
+								</details>
+								<p class="location-info">Northern Africa</p>
+							</section>
+							
+							<section class="section-container" aria-labelledby="osman">
+								<h4 id="osman">Saleh Bin Osman</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021081_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021081_0001_thumbnail-238px.jpg" srcset="/img/texts/thumbnails/liv_021081_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021081_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021081_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Saleh bin Osman, looking down." />
+										</a>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">Arab traveler who worked as a personal assistant to British traveler Henry M. Stanley during the Emin Pasha Relief Expedition (1886-89).</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_012056"><a href="/html/transcriptions/liv_012056_TEI.html">Testimony</a> (12 Nov. 1890)</li>
+							
+										<li id="liv_020002">“<a href="/html/transcriptions/liv_020002_TEI.html">The Story of My Life</a>” (Aug. 1891)</li>
+									</ol>
+								</details>
+								<p class="location-info">North-Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="bogharib">
+								<h4 id="bogharib">Mohammed Bogharib</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">Swahili trader and formerly enslaved person; traveled widely in nineteenth-century Eastern and Central Africa; although known for the violence of his followers, notably assisted British traveler David Livingstone during the latter's final travels in Africa (1866-73).</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020040">“<a href="/html/transcriptions/liv_020040_TEI.html">History of Warori or Basango</a>” (16 July 1869)</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern and Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="chumah">
+								<h4 id="chumah">James Chumah</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021036_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021036_0001_thumbnail-320px.jpg" srcset="/img/texts/thumbnails/liv_021036_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021036_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021036_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021036_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of James Chuma." />
+										</a>
+									</span>
+									<ul>
+										<li>1834-1906</li>
+										<li><a href="https://en.wikipedia.org/wiki/Chuma_and_Susi">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/index.html">Home Page</a> (header image)</li>
+									</ul>
+								</div>
+								<p class="biography">Traveler from the Yao of Eastern Africa; formerly enslaved person who accompanied British traveler David Livingstone on his final travels (1866-73); provided Horace Waller, editor of Livingstone's posthumous journals, with information related to those travels.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020012">“<a href="/html/transcriptions/liv_020012_TEI.html">To the Editor of the Times</a>” (9 Apr. 1874, [1874], [1874])</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="farrar">
+								<h4 id="farrar">Caras Farrar</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>?-c.1906</li>
+									</ul>
+								</div>
+								<p class="biography">Traveler from the Yao of Eastern Africa; accompanied British traveler David Livingstone during the last two years (1872-73) of the latter's final African journey.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020061">“<a href="/html/transcriptions/liv_020061_TEI.html">The History of Caras Farrar of Finding Dr Livingstone, in Central Africa</a>” (9 Sept. 1874)</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="saeid">
+								<h4 id="saeid">Lief Ben Saeid</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">Arab trader who traveled in nineteenth-century Eastern Africa.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020003">“<a href="/html/transcriptions/liv_020003_TEI.html">Notes on African Geography</a>” (1845)</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern Africa</p>
+							</section>	
+
+							<section class="section-container" aria-labelledby="ranavalonaII">
+								<h4 id="ranavalonaII">Ranavalona II</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021116_ART.html">
+											<img width="169" height="169" style="outline:1px solid gray;" loading="lazy" src="/img/visual-materials/" srcset="/img/texts/thumbnails/liv_021116_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021116_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021116_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021116_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021116_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021116_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Ranavalona II in regal attire, facing to her right." />
+										</a>
+									</span>
+									<ul>
+										<li>Also: <strong>Ranavalonamanjaka</strong></li>
+										<li>1829-1883</li>
+										<li><a href="https://en.wikipedia.org/wiki/Ranavalona_II">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#manuscripts">Visual Materials</a></li>
+									</ul>
+								</div>
+								<p class="biography">Queen of Madagascar (r.1868-83); played a central role in promoting Christianity among the Malagasy people and in westernizing Madagascar through work with British missionaries.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020044">“<a href="/html/transcriptions/liv_020044_TEI.html">The Late Mr. James Cameron of Madagascar</a>” (excerpt) (1875, 1 Mar. 1876)</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="habib">
+								<h4 id="habib">Said Bin Habib</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+										<li>Also see: <a href="/bibliography.html">Bibliography</a> (header image)</li>
+									</ul>
+								</div>
+								<p class="biography">Arab trader who traveled widely in nineteenth-century Eastern and Central Africa.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020001">“<a href="/html/transcriptions/liv_020001_TEI.html">Narrative of Said Bin Habeeb, An Arab Inhabitant of Zanzibar</a>” (31 May 1860)</li>
+							
+										<li id="liv_020041"><a href="/html/transcriptions/liv_020041_TEI.html">Lists of Headmen in Manyema and Urundi</a> (4 July 1869, [c.1869])</li>
+							
+										<li id="liv_003181"><a href="/html/transcriptions/liv_003181_TEI.html">Central African Geographical Data</a> ([c.1869])</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern and Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="tippu">
+								<h4 id="tippu">Tippu Tip</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021077_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021077_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021077_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021077_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021077_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021077_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021077_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021077_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Tippu Tip." />
+										</a>
+									</span>
+									<ul>
+										<li>1837-1905</li>
+										<li><a href="https://en.wikipedia.org/wiki/Tippu_Tip">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a></li>
+									</ul>
+								</div>
+								<p class="biography">Arab-African ivory and slave trader who traveled widely in nineteenth-century Eastern and Central Africa; played a major role in shaping the history of the region; supported the work of British travelers like David Livingstone and Henry M. Stanley; for a time served as Governor in the Stanley Falls District of the Congo Free State.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020028">“<a href="/html/transcriptions/liv_020028_TEI.html">Tippoo Tib</a>” (30 Mar. 1887, 17 May 1887)</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern and Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="wainwright">
+								<h4 id="wainwright">Jacob Wainwright</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021003_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021003_0001_thumbnail-320px.jpg" srcset="/img/texts/thumbnails/liv_021003_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021003_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021003_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021003_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Jacob Wainwright." />
+										</a>
+									</span>
+									<ul>
+										<li>c.1851/52-1892</li>
+										<li><a href="https://en.wikipedia.org/wiki/Jacob_Wainwright">Wikipedia</a></li>
+										<li>Also see: <a href="/texts.html">Recovered Texts</a> (header image), <a href="/visual_materials.html#images">Visual Materials</a>, and <a href="/site_map.html">Site Map</a> (header image)</li>
+									</ul>
+								</div>
+								<p class="biography">Traveler and explorer from the Yao of Eastern Africa; accompanied British traveler David Livingstone during the last two years (1872-73) of the latter's final African journey.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_000017"><a href="/html/transcriptions/liv_000017_TEI.html">Addition to David Livingstone's Field Diary XVII</a> (28 Apr. 1873)</li>
+							
+										<li id="liv_020014"><a href="/html/transcriptions/liv_020014_TEI.html">Inscription on the Tree at the Foot of which David Livingstone's Heart was Buried</a> (4 May 1873)</li>
+							
+										<li id="liv_000074"><a href="/html/transcriptions/liv_000074_TEI.html">Extract from Diary</a> (May-June 1873)</li>
+							
+										<li id="liv_000085"><a href="/html/transcriptions/liv_000085_TEI.html">Letter to William O. Livingstone</a> (Oct. 1873)</li>
+							
+										<li id="liv_000075"><a href="/html/transcriptions/liv_000075_TEI.html">Extract from Diary</a> ([Nov. 1873-Feb. 1874])</li>
+							
+										<li id="liv_000138"><a href="/html/transcriptions/liv_000138_TEI.html">Letter to Joseph Moore</a> (23 May 1874)</li>
+							
+										<li id="liv_000139"><a href="/html/transcriptions/liv_000139_TEI.html">Letter to Joseph Moore</a> (10 July 1874)</li>
+							
+										<li id="liv_020013">“<a href="/html/transcriptions/liv_020013_TEI.html">Jacob Wainwright</a>” (1 Sept. 1874)</li>
+							
+										<li id="liv_020051"><a href="/html/transcriptions/liv_020051_TEI.html">Letter to [Horace Waller?]</a> (15 Sept. 1875)</li>
+							
+										<li id="liv_020052"><a href="/html/transcriptions/liv_020052_TEI.html">Letter to William Salter Price</a> (2 May 1876)</li>
+									</ol>
+								</details>
+								<p class="location-info">Eastern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="informants">
+								<h4 id="informants">Unnamed Central African Informants</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+								</div>
+								<p class="biography">Individuals most likely from Manyema (today a region in the eastern part of the Democratic Republic of the Congo); assisted British traveler David Livingstone during the latter's final travels in Africa (1866-73).</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020042">“<a href="/html/transcriptions/liv_020042_TEI.html">Central African Fables</a>” ([c.1868-70])</li>
+									</ol>
+								</details>
+								<p class="location-info">Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="cfs-informants">
+								<h4 id="cfs-informants">Unnamed Congo Free State Informants</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+								</div>
+								<p class="biography">Individuals that conveyed their experiences of atrocities under Congo Free State officers and soldiers to Roger Casement, a British government official tasked with investigating Belgian-led conduct in the colony.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020057">“<a href="/html/transcriptions/liv_020057_TEI.html">Notes on Refugee Tribes Encountered in July 1903</a>” ([1903], 1904)</li>
+							
+										<li id="liv_020058">“<a href="/html/transcriptions/liv_020058_TEI.html">Statement in Regard to the Condition of the Natives in Lake Mantumba Region During the Period of the Rubber Wars Which Began in 1893</a>([1903], 1904)</li>
+							
+										<li id="liv_020059">“<a href="/html/transcriptions/liv_020059_TEI.html">Notes in the Case of V V, a Native of L L* in the Mantumba District, both of whose Hands Have Been Hacked or Beaten Off, and with Reference to Other Similar Cases of Mutilation in that District</a>” ([1903], 1904)</li>
+							
+										<li id="liv_020060">“<a href="/html/transcriptions/liv_020060_TEI.html">Note of Information Taken in the Charge of Cutting Off the Boy I I’s Hand, Preferred to Mr. Casement by the People of E*</a>” ([1903], 1904)</li>
+									</ol>
+								</details>
+								<p class="location-info">Central Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="botha">
+								<h4 id="botha">Andries Botha</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<!-- <a href="/img/essays/liv_023013_0001_deriv-490px.jpg"> -->
+											<img width="169" height="169" style="outline:1px solid gray;" loading="lazy" src="/img/visual-materials/thumbnails/liv_023013_0001_thumbnail-238px.jpg" srcset="/img/texts/thumbnails/liv_023013_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_023013_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_023013_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Andries Botha, looking to his left." />
+										<!-- </a> -->
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+										<li><a href="https://en.wikipedia.org/wiki/Andries_Botha">Wikipedia</a></li>
+										<li>Also see: <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Gonaqua Khoe and appointed colonial official in South Africa's Kat River Settlement; served with British and Cape colonial forces against the amaXhosa in Hintsa's War (1834-35) and the War of the Axe (1846-47).</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020011"><a href="/html/transcriptions/liv_020011_TEI.html">Letter to [Harry Smith]</a> (23 June 1850)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="khama">
+								<h4 id="khama">Semane Setlhoko Khama</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021022_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021022_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021022_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021022_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021022_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021022_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021022_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021022_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Semane Khama, facing to her right." />
+										</a>
+									</span>
+									<ul>
+										<li>1881-1937</li>
+										<li><a href="https://en.wikipedia.org/wiki/Semane_Setlhoko_Khama">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> (including <a href="/visual_materials.html">header image</a>)</li>
+									</ul>
+								</div>
+								<p class="biography">Queen or queen mother (“mohumagadi”) of the BaNgwato people of the Bechuanaland Protectorate (now Botswana); played a regional key role in promoting Christianity, advocating for temperance and women's education, and expanding the role of women in the church.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020024"><a href="/html/transcriptions/liv_020024_TEI.html">Letter to A.M. Chirgwin</a> (5 Dec. 1934)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="moshoeshoe">
+								<h4 id="moshoeshoe">Moshoeshoe I</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021074_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021074_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021074_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021074_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021074_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021074_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021074_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021074_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Moshoeshoe I in tophat." />
+										</a>
+									</span>
+									<ul>
+										<li>c.1786-1870</li>
+										<li><a href="https://en.wikipedia.org/wiki/Moshoeshoe_I">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a></li>
+									</ul>
+								</div>
+								<p class="biography">Son of a minor chief of the Koena clan of Southern Africa's Basotho people; rose to prominence as a strategic leader, diplomat, and military tactician; became the first king of Basutoland (modern-day Lesotho) in 1822.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020062">“<a href="/html/transcriptions/liv_020062_TEI.html">The Caffre War</a>” ([1852]; [1852]; 20 Dec. 1852; 21 Dec. 1852; 2 Dec. 1852; 28 Feb. 1853)</li>
+
+										<li id="liv_020063">“<a href="/html/transcriptions/liv_020063_TEI.html">The General and the Caffre Chief</a>” (13 Dec. 1852; 20 Dec. 1852; 21 Dec. 1852; 1 Mar. 1853)</li>
+									
+										<li id="liv_020045">“<a href="/html/transcriptions/liv_020045_TEI.html">The Cape of Good Hope</a>” (5 Oct. 1855, 22 Jan. 1856)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+			
+							<section class="section-container" aria-labelledby="ncwadi">
+								<h4 id="ncwadi">Ncwadi</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">Nineteenth-century leader (“ngkosi”) of the amaNgwane, a clan of the Zulu in South Africa.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020015">“<a href="/html/transcriptions/liv_020015_TEI.html">Gleanings and Glances</a>” (excerpt), “<a href="/html/transcriptions/liv_020015_TEI.html">Letter from an African Chief</a>” (12 June 1893, 1 June 1894)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+							
+							<section class="section-container" aria-labelledby="nehemiah">
+								<h4 id="nehemiah">Nehemiah Sekhonyana Moshoeshoe</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>1824-1906</li>
+									</ul>
+								</div>
+								<p class="biography">Son of <a href="#moshoeshoe">Moshoeshoe I</a> and Mosula ‘MaSekhonyana Molise Kata; served as secretary, envoy, and warrior for Moshoeshoe; tried and acquited of treason in 1877; published “A Little Light from Basutoland” in the <em>Cape Monthly Magazine</em> (1880) and detailed Basotho history and traditions in two letters to Joseph M. Orpen (1905).</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li>“<a href="/html/transcriptions/liv_020062_TEI.html">The Caffre War</a>” ([1852]; [1852]; 20 Dec. 1852; 21 Dec. 1852; 2 Dec. 1852; 28 Feb. 1853)</li>
+
+										<li>“<a href="/html/transcriptions/liv_020063_TEI.html">The General and the Caffre Chief</a>” (13 Dec. 1852; 20 Dec. 1852; 21 Dec. 1852; 1 Mar. 1853)</li>
+									
+										<li>“<a href="/html/transcriptions/liv_020045_TEI.html">The Cape of Good Hope</a>” (5 Oct. 1855, 22 Jan. 1856)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>					
+					
+							<section class="section-container" aria-labelledby="read">
+								<h4 id="read">James Read, Jr.</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<!-- <a href="/img/essays/liv_023814_0001_deriv-1399px.jpg"> -->
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_023014_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_023014_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_023014_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_023014_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_023014_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_023014_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of James Read, Jr. in half profile, facing to his right." />
+										<!-- </a> -->
+									</span>
+									<ul>
+										<li>c.1811-1894</li>
+										<li>Also see: <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Eldest son of prominent London Missionary Society missionary James Read, Sr., and close associate of <a href="#tzatzoe">Jan Tzatzoe</a>; missionary and evangelical campaigner in the Cape Colony; vocal activist for Khoe civil rights and an influential figure in the establishment of schooling in South Africa's Kat River Settlement.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020033">“<a href="/html/transcriptions/liv_020033_TEI.html">Kat River Mission, South Africa</a>” (9 Oct. 1838, 1 Apr. 1839)</li>
+							
+										<li id="liv_020010"><a href="/html/transcriptions/liv_020010_TEI.html">Letter to J.J. Freeman</a> (23 May 1850)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="sechele">
+								<h4 id="sechele">Sechele I</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021009_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021009_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021009_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021009_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021009_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021009_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021009_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021009_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Sechele I." />
+										</a>
+									</span>
+									<ul>
+										<li>c.1810-1892</li>
+										<li><a href="https://en.wikipedia.org/wiki/Sechele_I">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Leader of the BaKwena in southern Africa; played a key regional role in extending commercial routes, spreading Christianity, and forming the Bechuanaland Protectorate.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_003027"><a href="/html/transcriptions/liv_003027_TEI.html">Letter to Robert Moffat 1</a> ([Oct. 1852])</li>
+							
+										<li id="liv_020021"><a href="/html/transcriptions/liv_020021_TEI.html">Statement and Attestations</a>; “<a href="/html/transcriptions/liv_020021_TEI.html">Statement of Sechele, Paramount Chief of the Bakwaina</a>”; “<a href="/html/transcriptions/liv_020021_TEI.html">The Attack on Sechele</a>” (7 May 1853, 11 May 1853; 21 Apr. 1853, 30 Apr. 1853; 1 Dec. 1852)</li>
+							
+										<li id="liv_020019"><a href="/html/transcriptions/liv_020019_TEI.html">Letter to the London Missionary Society</a> ([c.1852-53])</li>
+							
+										<li id="liv_020029"><a href="/html/transcriptions/liv_020029_TEI.html">Letter to Robert Moffat 1</a> (31 Oct. 1865)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+						
+							<section class="section-container" aria-labelledby="nosuthu">
+								<h4 id="nosuthu">NoSuthu Soga Jotelo</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>c.1805-1877</li>
+										<li>Also see: <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Great Wife of Soga, counsellor to Ngqika (leader of the AmaGcaleka Xhosa); mother of six children, including the <a href="#soga">Tiyo Soga</a> (ordained missionary of the United Presbyterian Church) and <a href="#tause">Tause</a>; after conversion to Christianity, lived in the Tyumi Valley at the Glasgow African Missionary Station run by William Chalmers.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020043">“<a href="/html/transcriptions/liv_020043_TEI.html">Nosutu, the Mother of Soga</a>” (excerpt) (Oct. 1873, 2 Mar. 1874)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="soga">
+								<h4 id="soga">Tiyo Soga</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021070_ART.html">
+												<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021070_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021070_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021070_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021070_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021070_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021070_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Tiyo Soga." />
+										</a>
+									</span>
+									<ul>
+										<li>c.1831-1871</li>
+										<li><a href="https://en.wikipedia.org/wiki/Tiyo_Soga">Wikipedia</a></li>
+									</ul>
+								</div>
+								<p class="biography">Son of <a href="#nosuthu">Nosuthu Soga Jotelo</a> and Soga; ordained Xhosa missionary to the Xhosa people in South Africa; educated at Glasgow University and ordained in the United Presbyterian Church; penned newspaper articles, letters, reports, and translations of <em>The Pilgrim’s Progress</em> and the Bible into Xhosa.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020022">“<a href="/html/transcriptions/liv_020022_TEI.html">Jubilee of the Venerable Patriarch Brownlee</a>” ( 17 Jan. 1867, 14 Feb. 1867)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="stoffels">
+								<h4 id="stoffels">Andries Stoffels</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<!-- <a href="/html/transcriptions/liv_023029_ART.html"> -->
+											<img width="169" height="169" style="outline:1px solid gray;" loading="lazy" src="/img/visual-materials/thumbnails/liv_023029_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_023029_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_023029_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_023029_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_023029_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_023029_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_023029_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Andries Stoffels." />
+										<!-- </a> -->
+									</span>
+									<ul>
+										<li>c.late 1770s-1837</li>
+										<li>Also see: <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Gonaqua Khoe and deacon of the church at Philipton in the Kat River Settlement, South Africa; worked as a missionary and was closely connected to the superintendent of the London Missionary Society in Southern Africa, John Philip.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020065">“<a href="/html/transcriptions/liv_020065_TEI.html">Minutes of Evidence</a>” (excerpt) (27 June 1836; 5 Aug. 1836)</li>
+
+										<li id="liv_020064">“<a href="/html/transcriptions/liv_020064_TEI.html">Special General Meeting of the London Missionary Society</a>” (excerpt) (10 Aug. 1836; Sept. 1836)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+							
+							<section class="section-container" aria-labelledby="tause">
+								<h4 id="tause">Tause</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021067_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021067_0001_thumbnail-238px.jpg" srcset="/img/texts/thumbnails/liv_021067_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021067_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021067_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Tausé Soga." />
+										</a>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a></li>
+										<li><a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Daughter of <a href="#nosuthu">Nosuthu Soga Jotelo</a> and Soga.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li>“<a href="/html/transcriptions/liv_020043_TEI.html">Nosutu, the Mother of Soga</a>” (excerpt) (Oct. 1873, 2 Mar. 1874)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="tzatzoe">
+								<h4 id="tzatzoe">Jan Tzatzoe</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021044_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021044_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021044_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021044_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021044_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021044_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021044_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021044_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Jan Tzatzoe (Dyani Tshatshu)." />
+										</a>
+									</span>
+									<ul>
+										<li>Also: <strong>Dyani Tshatshu</strong></li>
+										<li>c.1792-1868</li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Xhosa leader who became a prize African convert of the London Missionary Society; had close connections to its missionary James Read, Sr., and his son <a href="#read">James Read, Jr.</a>; worked as a missionary and evangelical-humanitarian campaigner in the Cape Colony and the neighboring Xhosa chieftaincies.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li>“<a href="/html/transcriptions/liv_020064_TEI.html">Special General Meeting of the London Missionary Society</a>” (excerpt) (10 Aug. 1836; Sept. 1836)</li>
+
+										<li id="liv_020035">“<a href="/html/transcriptions/liv_020035_TEI.html">Appeal on Behalf of the Hottentots</a>” (July 1837, 24 Nov. 1837, 1 Jan. 1838)</li>
+
+										<li id="liv_020025"><a href="/html/transcriptions/liv_020025_TEI.html">Letter to Directors of the London Missionary Society</a> (1 Sept. 1838)</li>
+
+										<li id="liv_020026"><a href="/html/transcriptions/liv_020026_TEI.html">Letter to Directors of the London Missionary Society</a> (8 Oct. 1845)</li>
+									</ol>
+								</details>
+								<p class="location-info">Southern Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="crowther">
+								<h4 id="crowther">Samuel Ajayi Crowther</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021098_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021098_0001_thumbnail-338px.jpg" srcset="/img/texts/thumbnails/liv_021098_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021098_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021098_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021098_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021098_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Samuel Ajayi Crowther in half profile, seated, looking slightly down and to his right." />
+										</a>
+									</span>
+									<ul>
+										<li>c.1809-1891</li>
+										<li><a href="https://en.wikipedia.org/wiki/Samuel_Ajayi_Crowther">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/books.html#crowther">Book-Length Works</a></li>
+									</ul>
+								</div>
+								<p class="biography">Yoruba clergyman, linguist, and formerly enslaved person; ordained as the first African Anglican bishop; based in Lagos, Nigeria, but traveled extensively with his son Dandeson along the Niger River for missionary purposes.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020055"><a href="/html/transcriptions/liv_020055_TEI.html">Letter to Henry Venn</a> (27 Feb. 1867)</li>
+									</ol>
+								</details>
+								<p class="location-info">Western Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="dewring">
+								<h4 id="dewring">J.R. Dewring</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">Native pastor and catechist; based at a station along the Nun River in Nigeria; visited Idzŏ communities for missionary purposes.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li><a href="/html/transcriptions/liv_020055_TEI.html">Letter to Samuel Ajayi Crowther</a> (4 Dec. 1866)</li>
+									</ol>
+								</details>
+								<p class="location-info">Western Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="weah">
+								<h4 id="weah">Bye Weah</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">Leader of the Grebo of Liberia.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020054">“<a href="/html/transcriptions/liv_020054_TEI.html">The Liberian War. To the Editor of the Times</a>” (24 Jan. 1876; 7 Mar. 1876)</li>
+									</ol>
+								</details>
+								<p class="location-info">Western Africa</p>
+							</section>		
+						
+							<section class="section-container" aria-labelledby="wogga">
+								<h4 id="wogga">Thomas Wogga</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>Dates unknown</li>
+									</ul>
+								</div>
+								<p class="biography">African traveler and a formerly enslaved person who traveled in nineteenth-century Western Africa.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li>“<a href="/html/transcriptions/liv_020003_TEI.html">Notes on African Geography</a>” (1845)</li>
+									</ol>
+								</details>
+								<p class="location-info">Western Africa</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="douglass">
+								<h4 id="douglass">Frederick Douglass</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021065_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021065_0001_thumbnail-476px.jpg" srcset="/img/texts/thumbnails/liv_021065_0001_thumbnail-476px.jpg 476w, /img/texts/thumbnails/liv_021065_0001_thumbnail-338px.jpg 338w, /img/texts/thumbnails/liv_021065_0001_thumbnail-320px.jpg 320w, /img/texts/thumbnails/liv_021065_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021065_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021065_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Frederick Douglass." />
+										</a>
+									</span>
+									<ul>
+										<li>1818-1895</li>
+										<li><a href="https://en.wikipedia.org/wiki/Frederick_Douglass">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Abolitionist and civil rights activist; drew on his skills as a writer and orator and on his story as a formerly enslaved person to become one of the most renowned and politically influential Black Americans of the nineteenth century.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020031"><a href="/html/transcriptions/liv_020031_TEI.html">Letter to John Scoble</a> (9 May 1846)</li>
+							
+										<li id="liv_020032"><a href="/html/transcriptions/liv_020032_TEI.html">Letter to Catherine Impey</a> (9 July 1888)</li>
+									</ol>
+								</details>
+								<p class="location-info">North America</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="far">
+								<h4 id="far">Sui Sin Far</h4>
+								<div class="image-biography">
+									<span class="creator-image">
+										<a href="/html/transcriptions/liv_021071_ART.html">
+											<img width="169" height="169" loading="lazy" src="/img/visual-materials/thumbnails/liv_021071_0001_thumbnail-238px.jpg" srcset="/img/texts/thumbnails/liv_021071_0001_thumbnail-238px.jpg 238w, /img/texts/thumbnails/liv_021071_0001_thumbnail-169px.jpg 169w, /img/texts/thumbnails/liv_021071_0001_thumbnail-160px.jpg 160w" sizes="(min-width: 1600px) 160px, (min-width: 480px) 156px, calc(100vw - 82px)" alt="Head and shoulders portrait of Edith Maude Eaton." />
+										</a>
+									</span>
+									<ul>
+										<li>Also: <strong>Edith Maude Eaton</strong></li>
+										<li>1865-1914</li>
+										<li><a href="http://www.biographi.ca/en/bio/eaton_edith_maud_14E.html">Dictionary of Canadian Biography</a></li>
+										<li><a href="https://en.wikipedia.org/wiki/Sui_Sin_Far">Wikipedia</a></li>
+										<li>Also see: <a href="/visual_materials.html#images">Visual Materials</a> and <a href="/books.html#far">Book-Length Works</a></li>
+									</ul>
+								</div>
+								<p class="biography">Chinese-Canadian author and journalist; daughter of a formerly enslaved Chinese mother and a British father; sister of recognized author <a href="/books.html#watanna">Onoto Watanna</a>; wrote widely, with her work focused on exploring and documenting the Chinese experience in North America.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li><em><a href="https://digitalcollections.nypl.org/items/b75b4c40-d1ec-0134-a1a2-00505686d14e#/?uuid=b92fa280-d1ec-0134-8129-00505686d14e">Original Correspondence</a></em> (New York Public Library site) (1903-07)</li>
+									</ol>
+								</details>
+								<p class="location-info">North America</p>
+							</section>
+
+							<section class="section-container" aria-labelledby="labatt">
+								<h4 id="labatt">Philip Cohen Labatt</h4>
+								<div class="image-biography">
+									<span class="creator-image no-image">
+										<span class="content">No<br/> known<br/> image</span>
+									</span>
+									<ul>
+										<li>1823-1854</li>
+										<li>Also see: <a href="/books.html#labatt">Book-Length Works</a> and <a href="/essays.html">Critical Essays</a></li>
+									</ul>
+								</div>
+								<p class="biography">Jamaican-Jewish writer and editor from Kingston, Jamaica, founded <em>The Echo</em>, a weekly periodical and contributed to <em>The First Fruits of the West; and, Monthly Jewish Magazine</em> (1844) before serving as editor of the <em>Daily Gleaner</em>, a prominent Jamaican newspaper still published today.</p>
+								<details>
+									<summary>Recovered Text(s)</summary>
+									<ol>
+										<li id="liv_020030">“<a href="/html/transcriptions/liv_020030_TEI.html">Curgy’s Funeral, Or The Old Time Busha</a>” (1855)</li>
+							
+										<li id="liv_020036">“<a href="/html/transcriptions/liv_020036_TEI.html">An Incident in the Late Rebellion in Jamaica</a>” (1855)</li>
+									</ol>
+								</details>
+								<p class="location-info">Caribbean</p>
+							</section>
+						</section>	
+					</article>
+					<div class="decoration"></div>
+				</section>
+
+				<section class="content">	
+					<div class="decoration"></div>
+					<article>
+						<aside class="credits" aria-labelledby="citation">
+							<h3 id="citation">Page Citation</h3>
+						
+							<p><strong>Cite (MLA):</strong> Wisnicki, Adrian S. “Recovered Texts.” <em>One More Voice</em>, solidarity edition, 2022, <a href="/texts.html">https://onemorevoice.org/texts.html</a>.</p>
+				
+						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+					</aside>
+
+					<aside id="credits"  class="credits" aria-labelledby="image-details">
+						<h3 id="image-details">Lead Image Details</h3>
+
+						<p id="caption"><strong>Lead image caption</strong>: Detail from Weatherly Poulett and [Jacob Wainwright], “<a href="https://search.wellcomelibrary.org/iii/encore/record/C__Rb1561464?lang=eng">Dr. Livingstone, May 4 1873; Inscription Carved by African Youths on the Tree in Central Africa at the Foot of Which Livingstone’s Heart Was Buried</a>” (Photograph, c.1895-1896), no. 561464i, Wellcome Library, London. Copyright Wellcome Library, London. <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.</p>
+						
+						<p><strong>Header image commentary</strong>: Weatherly took this photograph just a few years before the original inscription was removed from the tree and <a href="https://rgs.koha-ptfs.co.uk/cgi-bin/koha/opac-detail.pl?biblionumber=396&query_desc=kw%2Cwrdl%3A%20rgs700067">transferred</a> to the Royal Geographical Society in London. The inscription, one of the more unusual items <a href="/html/transcriptions/liv_020012_TEI.html">published</a> by the <em>One More Voice</em> project, underscores the fact that the non-European sources with which the project engages survive in a wide variety of forms and genres. Note: <em>Livingstone Online</em> publishes a version of this inscription, as reproduced in a <a href="https://livingstoneonline.org/in-his-own-words/the-aftermath-livingstones-death">magic lantern slide</a>.</p>
+					</aside>
+				</article>
+				<div class="decoration"></div>
+			</section>
+		</main>
+
 		<div data-include="footer"></div>
 
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
-			// Adapted from https://stackoverflow.com/a/22634359 and https://stackoverflow.com/a/39179486
-			// Adds CSS file and adds random string to end of CSS file.
-			// var randomString=Math.floor(Math.random()*1000000);var css=document.createElement("link");css.rel="stylesheet";css.type="text/css";css.href="/css/style.css?="+randomString;document.head.appendChild(css);
-		</script>
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@700;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"/>		
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0010"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-		<script>
-			// Adapted from https://stackoverflow.com/a/31837264
-			// Includes HTML snippets
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='common/'+$(this).data('include')+'.html?=newVers_0002';$(this).load(file)})});
+			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 			//Scroll to top button
-			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>600||document.documentElement.scrollTop>600){mybutton.style.display="block";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
+			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>700||document.documentElement.scrollTop>700){mybutton.style.display="flex";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
 		</script>
-		<!-- <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
-		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
-			// Adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			// Loads JS file only after rest of page has loaded; adds random string to end of file.
-			// $(window).on("load",function(){var randomString=Math.floor(Math.random()*1000000);var element=document.createElement("script");element.src="/js/scripts.js?="+randomString;document.body.appendChild(element)});
-			$(window).on("load",function(){var element=document.createElement("script");element.src="/js/scripts.js?=newVers_0010";document.body.appendChild(element)});
-			$(window).on("load",function(){var element=document.createElement("script");element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
+			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>
-		<!-- <script src="/js/scripts.js?=newVers_0010"></script> -->
 	</body>
 </html>

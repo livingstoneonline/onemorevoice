@@ -755,7 +755,7 @@ nav.overlay-nav .logo-container a h1#logo{
 		margin: .6rem .3rem;
 	}
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	.translate{
 		display: -webkit-flex;
   	display: flex;
@@ -866,7 +866,7 @@ nav.overlay-nav .button-container{
 	justify-content: center;
 	gap: 1rem;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
 		.overlay-content .button-container{
 			display: none;
 			visibility: hidden;
@@ -877,7 +877,9 @@ nav.overlay-nav .button-container{
 		gap: 1rem;
 	}
 }
-nav .button-container a.external{
+nav .button-container .home-icon,
+nav .button-container a.external,
+nav.overlay-nav .button-container a.external.home-icon{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
@@ -890,7 +892,7 @@ nav .button-container a.external{
 [aria-describedby="zotero-icon-2"]{
 	margin-top: 0.15rem;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
 	nav.overlay-nav .button-container a.external{
     display: -webkit-flex;
   	display: flex;
@@ -899,8 +901,18 @@ nav .button-container a.external{
     justify-content: center;
 	}
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	nav .button-container a.external{
+		display: -webkit-flex;
+  	display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav .button-container .home-icon,
+	nav.overlay-nav .button-container a.external.home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;

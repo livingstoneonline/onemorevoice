@@ -2349,9 +2349,14 @@ nav .close-icon:focus-within
   text-decoration: none;
 }
 .overlay .text-container h2{
-  /* all: unset; */
-  padding: 0;
-  height: 52px;
+  font-size: 1.1rem;
+	font-weight: 400;
+	font-style: inherit;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-left: none;
+	margin: 0;
+	padding: 0;
+  height: 53px;
 }
 .overlay .text-container h2 button{
   display: -webkit-flex;

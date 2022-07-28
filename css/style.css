@@ -2016,13 +2016,10 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 nav .button-container,
 nav.overlay-nav .button-container{
 	white-space: nowrap;
+	margin: 0;
 	display: -webkit-flex;
   display: flex;
 	align-items: center;
-}
-nav .button-container,
-nav.overlay-nav .button-container{
-	margin: 0;
 	justify-content: center;
 }
 @media only screen and (min-width: 480px){
@@ -2039,7 +2036,7 @@ nav.overlay-nav .button-container{
 	nav.overlay-nav .button-container{
 		min-width: calc(50% + .5rem);
 		justify-content: flex-end;
-		gap: .75rem;
+		gap: 1rem;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -2163,7 +2160,7 @@ nav .close{
 	cursor: pointer;
 }
 nav .menu-icon{
-	margin: 0 .5rem 0 0;
+	margin: 0;
 }
 nav .hamburger-menu{
 	padding: 6px 7px 4px;
@@ -2173,7 +2170,7 @@ nav.overlay-nav .menu-icon{
 	visibility: hidden;
 }
 nav .close-icon{
-	margin: 0 .5rem .1rem 0;
+	margin: 0 0 .1rem;
 	display: none;
 	visibility: hidden;
 }
@@ -2190,13 +2187,13 @@ nav.overlay-nav .close-icon.desktop{
 }
 @media only screen and (min-width: 768px){
 	nav .menu-icon{
-		margin-left: .3rem;
+		margin-left: .5rem;
 	}
 	nav .hamburger-menu{
 		padding: 6px 7px 5px;
 	}
 	nav .close-icon{
-		margin-left: .4rem;
+		margin-left: .5rem;
 	}
 }
 @media only screen and (min-width: 992px){

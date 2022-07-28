@@ -652,10 +652,7 @@ header nav{
 }
 header nav a,
 header nav a:visited,
-header nav button,
-.overlay-header nav a,
-.overlay-header nav a:visited,
-.overlay-header nav button{
+header nav button{
 	text-decoration: none;
 	color: #fff;
 }
@@ -708,10 +705,6 @@ nav .logo-container a h1{
 	white-space: nowrap;
 	margin: 0 0 0 .5rem;
 }
-nav.overlay-nav .logo-container a h1#logo{
-	display: none;
-	visibility: hidden;
-}
 @media only screen and (min-width: 480px){
 	nav .logo-container a h1{
 		font-size: 1.7rem;
@@ -720,10 +713,6 @@ nav.overlay-nav .logo-container a h1#logo{
 @media only screen and (min-width: 768px){
 	nav .logo-container a h1{
 		font-size: 1.8rem;
-	}
-	nav.overlay-nav .logo-container a h1#logo{
-		display: block;
-		visibility: visible;
 	}
 }
 /*********/
@@ -744,11 +733,6 @@ nav.overlay-nav .logo-container a h1#logo{
 	overflow: hidden;
 	display: none;
 	visibility: hidden;
-}
-.overlay-nav .translate{
-	display: -webkit-flex;
-  display: flex;
-	visibility: visible;
 }
 @media only screen and (min-width: 480px){
 	.translate-widget{
@@ -821,8 +805,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2){
 	color: #697c6f !important;
 }
 /*********/
-nav .button-container,
-nav.overlay-nav .button-container{
+nav .button-container{
 	white-space: nowrap;
 	margin: 0;
 	display: -webkit-flex;
@@ -835,71 +818,30 @@ nav.overlay-nav .button-container{
 		justify-content: flex-end;
 		width: 100%;
 	}
-	nav.overlay-nav .button-container{
-		justify-content: space-between;
-	}
 }
 @media only screen and (min-width: 768px){
-	nav .button-container,
-	nav.overlay-nav .button-container{
+	nav .button-container{
 		margin-left: 2rem;
 		min-width: calc(50% + .5rem);
 		justify-content: space-between;
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .button-container,
-	nav.overlay-nav .button-container{
+	nav .button-container{
 		margin-left: 0;
 		justify-content: flex-end;
 		gap: 2rem;
 	}
 }
-.overlay-content .button-container{
-	white-space: nowrap;
-	margin: 0 auto;
-	width: 200px;
-	height: 60px;
-	display: -webkit-flex;
-  display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-}
-@media only screen and (min-width: 624px){
-		.overlay-content .button-container{
-			display: none;
-			visibility: hidden;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.overlay-content .button-container{
-		gap: 1rem;
-	}
-}
 nav .button-container .home-icon,
-nav .button-container a.external,
-nav.overlay-nav .button-container a.external.home-icon{
+nav .button-container a.external{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
 }
-.overlay-content .button-container a.external{
-	height: fit-content;
-	margin: 0;
-}
 [aria-describedby="zotero-icon-1"],
 [aria-describedby="zotero-icon-2"]{
 	margin-top: 0.15rem;
-}
-@media only screen and (min-width: 624px){
-	nav.overlay-nav .button-container a.external{
-    display: -webkit-flex;
-  	display: flex;
-    visibility: visible;
-    align-items: center;
-    justify-content: center;
-	}
 }
 @media only screen and (min-width: 992px){
 	nav .button-container a.external{
@@ -911,8 +853,7 @@ nav.overlay-nav .button-container a.external.home-icon{
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .button-container .home-icon,
-	nav.overlay-nav .button-container a.external.home-icon{
+	nav .button-container .home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;
@@ -924,17 +865,9 @@ nav .button-container a.external i{
 	margin: 0 .15rem;
 	padding: .25rem .5rem;
 }
-.overlay-content .button-container a.external i{
-	margin: 0;
-	padding: .5rem .75rem;
-}
 nav .button-container a.external i{
 	font-size: 1.6rem;
 	color: #E7E9E7;
-}
-.overlay-content .button-container a.external i{
-	font-size: 1.8rem;
-	color: #fff;
 }
 /*********/
 nav .hamburger-menu,
@@ -950,10 +883,6 @@ nav .menu-icon{
 nav .hamburger-menu{
 	padding: 6px 7px 4px;
 }
-nav.overlay-nav .menu-icon{
-	display: none;
-	visibility: hidden;
-}
 nav .close-icon{
 	margin: 0 0 .1rem;
 	display: none;
@@ -961,14 +890,6 @@ nav .close-icon{
 }
 nav .close{
 	padding: 5px 9px;
-}
-nav.overlay-nav .close-icon.mobile{
-	display: block;
-	visibility: visible;
-}
-nav.overlay-nav .close-icon.desktop{
-	display: none;
-	visibility: hidden;
 }
 @media only screen and (min-width: 768px){
 	nav .menu-icon{
@@ -979,16 +900,6 @@ nav.overlay-nav .close-icon.desktop{
 	}
 	nav .close-icon{
 		margin-left: .5rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	nav.overlay-nav .close-icon.mobile{
-		display: none;
-		visibility: hidden;
-	}
-	nav.overlay-nav .close-icon.desktop{
-		display: block;
-		visibility: visible;
 	}
 }
 nav.fallback .hamburger-menu{

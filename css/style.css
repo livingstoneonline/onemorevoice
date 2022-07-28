@@ -2071,9 +2071,9 @@ nav.overlay-nav .button-container{
 		gap: 1rem;
 	}
 }
-nav .button-container .home-icon,
+nav .button-container .sitemap-icon,
 nav .button-container a.external,
-nav.overlay-nav .button-container a.external.home-icon{
+nav.overlay-nav .button-container a.external.sitemap-icon{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
@@ -2105,8 +2105,8 @@ nav.overlay-nav .button-container a.external.home-icon{
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .button-container .home-icon,
-	nav.overlay-nav .button-container a.external.home-icon{
+	nav .button-container .sitemap-icon,
+	nav.overlay-nav .button-container a.external.sitemap-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;

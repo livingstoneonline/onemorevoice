@@ -827,17 +827,19 @@ nav.overlay-nav .button-container{
 		justify-content: space-between;
 	}
 }
-@media only screen and (min-width: 624px){
+@media only screen and (min-width: 768px){
 	nav .button-container,
 	nav.overlay-nav .button-container{
+		margin-left: 2rem;
 		min-width: calc(50% + .5rem);
-		justify-content: flex-end;
-		gap: 1rem;
+		justify-content: space-between;
 	}
 }
 @media only screen and (min-width: 992px){
 	nav .button-container,
 	nav.overlay-nav .button-container{
+		margin-left: 0;
+		justify-content: flex-end;
 		gap: 2rem;
 	}
 }
@@ -863,9 +865,7 @@ nav.overlay-nav .button-container{
 		gap: 1rem;
 	}
 }
-nav .button-container .home-icon,
-nav .button-container a.external,
-nav.overlay-nav .button-container a.external.home-icon{
+nav .button-container a.external{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
@@ -889,16 +889,6 @@ nav.overlay-nav .button-container a.external.home-icon{
 }
 @media only screen and (min-width: 768px){
 	nav .button-container a.external{
-		display: -webkit-flex;
-  	display: flex;
-    visibility: visible;
-    align-items: center;
-    justify-content: center;
-	}
-}
-@media only screen and (min-width: 992px){
-	nav .button-container .home-icon,
-	nav.overlay-nav .button-container a.external.home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;

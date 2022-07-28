@@ -399,14 +399,26 @@ main{
 		justify-content: center;
 	}
 }
-.essay .page-details div span{
+.essay .page-details div > span{
 	margin: 0 auto;
 }
-/* paragraphs in text container */
+/* publication details in text container */
+.essay .page-details ul.publication-details{
+	list-style: none;
+	line-height: 1.6rem;
+	padding: 0;
+}	
+.essay .page-details ul.publication-details li{
+	margin: .5rem 0;
+}
+.essay .page-details ul.publication-details li span{
+	font-size: .9rem;
+	text-transform: uppercase;
+	margin-right: .15rem;
+}
 @media only screen and (min-width: 992px){
-	.essay .page-details div p{
+	.essay .page-details ul.publication-details li{
 		font-size: 1rem;
-		margin: .5rem 0;
 	}
 }
 /* image container */

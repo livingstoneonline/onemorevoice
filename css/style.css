@@ -820,7 +820,7 @@ article > .toc + section{
 .caption-icon{
 	margin: 0;
 	bottom: 1.25rem;
-	right: .5rem;
+	right: 1.25rem;
 	left: inherit;
 	position: absolute;
 }
@@ -835,6 +835,7 @@ article > .toc + section{
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	padding: 4px 6px 2px;
+	display: block;
 }
 @media only screen and (min-width: 480px){
 	 .caption{
@@ -846,16 +847,6 @@ article > .toc + section{
 	 .caption{
 		font-size: 1.8rem;
 		padding: 6px 8px 4px;
-	}
-}
-@media only screen and (min-width: 992px){
-	.caption-icon{
-		right: .75rem;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.vertical .caption-icon{
-		bottom: 1.25rem;
 	}
 }
 .caption-icon a:hover,
@@ -1551,7 +1542,7 @@ a.action-button i{
 	margin-left: .5rem;
 }
 .home-buttons{
-	margin: 1rem 0;
+	margin: .75rem 0 1.25rem;
 	display: -webkit-flex;
   display: flex;
 	flex-wrap: wrap;
@@ -2318,7 +2309,7 @@ nav .close-icon:focus-within
 }
 @media only screen and (min-width: 480px){
   .overlay .text-container{
-    padding: 1rem 0;
+    padding: .5rem 0;
   }
 }
 .overlay .text-container,

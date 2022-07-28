@@ -1906,7 +1906,7 @@ nav .logo-container a:focus h1{
 	text-align: unset !important;
 }
 .translate-widget{
-	margin: .4rem 1rem .5rem .3rem;
+	margin: .4rem auto .5rem;
 }
 .translate{
 	padding-right: 5px;
@@ -1923,10 +1923,15 @@ nav .logo-container a:focus h1{
 }
 @media only screen and (min-width: 480px){
 	.translate-widget{
+		margin: .6rem auto;
+	}
+}
+@media only screen and (min-width: 624px){
+	.translate-widget{
 		margin: .6rem 0;
 	}
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	.translate{
 		display: -webkit-flex;
   	display: flex;
@@ -2043,6 +2048,9 @@ nav.overlay-nav .button-container{
 	align-items: center;
 	justify-content: center;
 }
+nav.overlay-nav .button-container{
+	width: 100%;
+}
 @media only screen and (min-width: 480px){
 	nav .button-container{
 		justify-content: flex-end;
@@ -2052,10 +2060,15 @@ nav.overlay-nav .button-container{
 		justify-content: space-between;
 	}
 }
+@media only screen and (min-width: 624px){
+	nav.overlay-nav .button-container{
+		margin-left: 3rem;
+	}
+}
 @media only screen and (min-width: 768px){
 	nav .button-container,
 	nav.overlay-nav .button-container{
-		margin-left: 2rem;
+		margin-left: 2.5rem;
 		min-width: calc(50% + .5rem);
 		justify-content: space-between;
 	}
@@ -2079,7 +2092,7 @@ nav.overlay-nav .button-container{
 	justify-content: center;
 	gap: 1rem;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
 		.overlay-content .button-container{
 			display: none;
 			visibility: hidden;
@@ -2090,7 +2103,9 @@ nav.overlay-nav .button-container{
 		gap: 1rem;
 	}
 }
-nav .button-container a.external{
+nav .button-container .home-icon,
+nav .button-container a.external,
+nav.overlay-nav .button-container a.external.home-icon{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
@@ -2103,7 +2118,7 @@ nav .button-container a.external{
 [aria-describedby="zotero-icon-2"]{
 	margin-top: 0.15rem;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
 	nav.overlay-nav .button-container a.external{
     display: -webkit-flex;
   	display: flex;
@@ -2112,8 +2127,18 @@ nav .button-container a.external{
     justify-content: center;
 	}
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 	nav .button-container a.external{
+		display: -webkit-flex;
+  	display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+	}
+}
+@media only screen and (min-width: 992px){
+	nav .button-container .home-icon,
+	nav.overlay-nav .button-container a.external.home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;
@@ -2286,7 +2311,7 @@ nav .close-icon:focus-within
 		height: calc(100% - 55.2px);
 	}
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
 	.overlay div{
 		background: #DA9C5D;
     height: auto;
@@ -2299,23 +2324,24 @@ nav .close-icon:focus-within
 	white-space: nowrap;
 	background: #243D42;
 	margin: 0 auto;
-	padding: 1rem 1rem 2rem;
+	padding: .5rem 1rem 2rem;
 	width: 100%;
 	overflow: auto;
 	scrollbar-gutter: stable;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
 	.overlay-content{
+		padding: 1rem 1rem 2rem;
 		width: 50%;
 	}
 }
 /* Accodion adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ */
 .overlay .text-container{
   background: inherit;
-	margin: .5rem 0;
+	margin: 0;
   padding: 0 1rem;
 }
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 624px){
   .overlay .text-container{
     padding: .5rem 0;
   }

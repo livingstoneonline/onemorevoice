@@ -2786,12 +2786,7 @@ img + p.caption-text,
 }
 /* visuals: gap */
 .visuals.gallery{
-	gap: 1.5rem;
-}
-@media only screen and (min-width: 624px){
-	.visuals.gallery{
-		gap: 2rem;
-	}
+	gap: 2rem;
 }
 /* flex percentages: visuals */
 @media only screen and (min-width: 480px){

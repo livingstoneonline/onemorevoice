@@ -445,8 +445,16 @@ section h4:not(:first-of-type){
 		padding: 2rem 6rem 3rem;
 	}
 }
+.toc ol li ol{
+	margin-top: .6rem;
+}
 .toc li{
+	line-height: 1.75rem;
+	margin-bottom: .875rem;
 	padding-left: .125rem;
+}
+.toc li:last-child{
+	margin-bottom: 0;
 }
 .toc details li a{
 	margin-left: .25rem;

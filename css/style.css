@@ -170,7 +170,6 @@ z-index: 150;
 	}
 }
 button{
-	/* all: unset; */
   -webkit-appearance: button;
 }
 :root{
@@ -2162,9 +2161,6 @@ nav .close{
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 }
 nav .menu-icon{
 	margin: 0 .5rem 0 0;
@@ -2222,7 +2218,6 @@ nav.fallback .hamburger-menu{
 nav .hamburger-menu .fa-bars,
 nav .close .fa-times{
 	font-size: 1.5rem;
-	color: #fff;
 }
 @media only screen and (min-width: 480px){
 	nav .hamburger-menu .fa-bars,
@@ -2392,7 +2387,7 @@ nav .close-icon:focus-within
 .overlay div .hidden{ 
   display: none;
 }
-.accordion-panel{
+/* .accordion-panel{
   margin: 0;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -2419,7 +2414,7 @@ nav .close-icon:focus-within
   display: -webkit-flex;
   display: flex;
   align-items: center;
-}
+} */
 .overlay .text-container a,
 .overlay .text-container button{
   margin: .25rem 0;
@@ -2433,9 +2428,9 @@ nav .close-icon:focus-within
 .overlay .text-container a{
   width: 100%;
 }
-.overlay .text-container .accordion-container a{
+/* .overlay .text-container .accordion-container a{
 	padding-left: 1.25rem;
-}
+} */
 
 
 /* 19. Footer */
@@ -2526,7 +2521,6 @@ footer p .site-detail:last-child:after{
 }
 @media only screen and (min-width: 992px){
 	#topButton{
-		/* font-size: 1.1rem; */
 		top: unset;
 		right: 3rem;
 		bottom: 5.5rem;

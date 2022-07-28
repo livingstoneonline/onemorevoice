@@ -376,6 +376,7 @@ h4{
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
 	text-align: center;
+	margin-bottom: 1.5rem;
 }
 section p + h4,
 section h4:not(:first-of-type){
@@ -449,8 +450,8 @@ section h4:not(:first-of-type){
 	margin-top: .6rem;
 }
 .toc li{
-	line-height: 1.75rem;
-	margin-bottom: .875rem;
+	line-height: 1.6rem;
+	margin-bottom: .75rem;
 	padding-left: .125rem;
 }
 .toc li:last-child{
@@ -2499,8 +2500,8 @@ footer p .site-detail:last-child:after{
 	border-radius: 50%;
 	outline: none;
 	padding: 5px;
-	width: 64px;
-	height: 64px;
+	width: 60px;
+	height: 60px;
 	position: fixed;
 	top: .5rem;
 	right: .5rem;
@@ -2606,7 +2607,7 @@ section + hr.section-divider{
 		width: calc(100% - 3rem);
 	}
 }
-.title-hr{
+.wide-hr{
 	margin: 2rem 0;
 }
 

@@ -819,8 +819,8 @@ article > .toc + section{
 }
 .caption-icon{
 	margin: 0;
-	bottom: .75rem;
-	right: .75rem;
+	bottom: .5rem;
+	right: .5rem;
 	left: inherit;
 	position: absolute;
 }
@@ -1263,7 +1263,7 @@ sections appear on books & texts
 /* list of works: details/summary */
 #books details,
 #texts details{
-	margin-bottom: 2rem;
+	margin-bottom: 2.5rem;
 }
 #texts summary,
 #books summary{
@@ -1962,6 +1962,7 @@ div.skiptranslate.goog-te-gadget{
 	font-size: .95rem;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
+	color: #212119;
 	border: 2px solid transparent;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
@@ -2785,12 +2786,7 @@ img + p.caption-text,
 }
 /* visuals: gap */
 .visuals.gallery{
-	gap: 1.5rem;
-}
-@media only screen and (min-width: 624px){
-	.visuals.gallery{
-		gap: 2rem;
-	}
+	gap: 2rem;
 }
 /* flex percentages: visuals */
 @media only screen and (min-width: 480px){

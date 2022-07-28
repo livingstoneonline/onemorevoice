@@ -2314,19 +2314,6 @@ nav .close-icon:focus-within
   display: flex;
   flex-direction: column;
 }
-.overlay .text-container a,
-.overlay .text-container button{
-  cursor:pointer;
-  transition: .2s;
-}
-.overlay .text-container a:hover,
-.overlay .text-container a:focus,
-.overlay .text-container button:hover,
-.overlay .text-container button:focus{
-	color: #212119;
-	background: #E7E9E7;
-	outline: none;
-}
 .overlay .text-container i{
 	margin-right: .5rem;
 	width: 1.25rem;
@@ -2419,6 +2406,8 @@ nav .close-icon:focus-within
   display: -webkit-flex;
   display: flex;
   align-items: center;
+	cursor:pointer;
+  transition: .2s;
 }
 .overlay .text-container a{
   width: 100%;
@@ -2426,6 +2415,14 @@ nav .close-icon:focus-within
 /* .overlay .text-container .accordion-container a{
 	padding-left: 1.25rem;
 } */
+.overlay .text-container a:hover,
+.overlay .text-container a:focus,
+.overlay .text-container button:hover,
+.overlay .text-container button:focus{
+	color: #212119;
+	background: #E7E9E7;
+	outline: none;
+}
 
 
 /* 19. Footer */

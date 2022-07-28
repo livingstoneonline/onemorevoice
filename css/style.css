@@ -376,6 +376,7 @@ h4{
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
 	text-align: center;
+	margin-bottom: 1.5rem;
 }
 section p + h4,
 section h4:not(:first-of-type){
@@ -449,8 +450,8 @@ section h4:not(:first-of-type){
 	margin-top: .6rem;
 }
 .toc li{
-	line-height: 1.75rem;
-	margin-bottom: .875rem;
+	line-height: 1.6rem;
+	margin-bottom: .75rem;
 	padding-left: .125rem;
 }
 .toc li:last-child{
@@ -769,7 +770,7 @@ article > .toc + section{
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
 		margin: 0;
-		padding: 1rem 2.5rem;
+		padding: 1rem 2.25rem;
 		height: 100%;
 		display: -webkit-flex;
   	display: flex;
@@ -777,14 +778,26 @@ article > .toc + section{
 		justify-content: center;
 	}
 }
-.essay .page-details div span{
+.essay .page-details div > span{
 	margin: 0 auto;
 }
 /* paragraphs in text container */
+.essay .page-details ul.publication-details{
+	list-style: none;
+	line-height: 1.75rem;
+	padding: 0;
+}
+.essay .page-details ul.publication-details li{
+	margin: .55rem 0;
+}
+.essay .page-details ul.publication-details li span{
+	font-size: .9em;
+	text-transform: uppercase;
+	margin-right: .15rem;
+}
 @media only screen and (min-width: 992px){
-	.essay .page-details div p{
-		font-size: 1rem;
-		margin: .5rem 0;
+	.essay .page-details ul.publication-details li{
+		font-size: 1.05rem;
 	}
 }
 /* image container */
@@ -2499,8 +2512,8 @@ footer p .site-detail:last-child:after{
 	border-radius: 50%;
 	outline: none;
 	padding: 5px;
-	width: 64px;
-	height: 64px;
+	width: 60px;
+	height: 60px;
 	position: fixed;
 	top: .5rem;
 	right: .5rem;
@@ -2606,7 +2619,7 @@ section + hr.section-divider{
 		width: calc(100% - 3rem);
 	}
 }
-.title-hr{
+.wide-hr{
 	margin: 2rem 0;
 }
 

@@ -172,6 +172,10 @@ z-index: 150;
 button{
   -webkit-appearance: button;
 }
+/* @supports (-webkit-touch-callout: none) and (not (translate: none))
+in all instances below is for mobile Safari and iOS 14.5 (Safari below 14.1);
+adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 :root{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
@@ -610,6 +614,11 @@ article > .toc + section{
 	padding: 2rem 1rem 1rem;
 	gap: 1rem;
 }
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+	.categories .introduction-section .introduction-text > *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
 @media only screen and (min-width: 768px){
 	.home .introduction-section .introduction-text,
 	.categories .introduction-section .introduction-text{
@@ -724,6 +733,11 @@ article > .toc + section{
 		gap: 2rem;
 		margin: 1rem;
 		position: relative;
+	}
+	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+		.essay .page-details > *:not(:first-child) {
+			margin-right: 2rem;
+		}
 	}
 	.essay .page-details.vertical{
 		align-items: center;
@@ -959,6 +973,18 @@ sections appear on books & texts
 #books .sections,
 #texts .sections{
 	gap: 1.5rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+	.categories .sections,
+	#books .sections,
+	#texts .sections{
+		margin: -1.5rem;
+	}
+	.categories .sections > *,
+	#books .sections > *,
+	#texts .sections > *{
+		margin: 1.5rem;
+	}
 }
 @media only screen and (min-width: 1200px){
 	.categories .sections,
@@ -2789,12 +2815,8 @@ ul.acknowledgments{
 	justify-content: center;
 	gap: 10px;
 }
-	/* @supports (-webkit-touch-callout: none) and (not (translate: none))
-	is for mobile Safari and iOS 14.5 (Safari below 14.1);
-	adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
-	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.double-image img:not(:last-child) {
+	.double-image > *:not(:last-child) {
 		margin-bottom: 10px;
 	}
 }
@@ -2803,7 +2825,8 @@ ul.acknowledgments{
 		flex-direction: row;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		.double-image img:not(:last-child) {
+		.double-image > *:not(:last-child) {
+			margin-bottom: 0;
 			margin-right: 10px;
 		}
 	}

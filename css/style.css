@@ -978,13 +978,19 @@ sections appear on books & texts
 	.categories .sections,
 	#books .sections,
 	#texts .sections{
+		row-gap: 1.5rem;
+		column-gap: 1.5rem;
+	}
+	/* .categories .sections,
+	#books .sections,
+	#texts .sections{
 		margin: -.75rem;
 	}
 	.categories .sections > *,
 	#books .sections > *,
 	#texts .sections > *{
 		margin: .75rem;
-	}
+	} */
 }
 @media only screen and (min-width: 1200px){
 	.categories .sections,

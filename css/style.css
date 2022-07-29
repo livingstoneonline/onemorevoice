@@ -2789,9 +2789,23 @@ ul.acknowledgments{
 	justify-content: center;
 	gap: 10px;
 }
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none))
+	is for mobile Safari and iOS 14.5 (Safari below 14.1);
+	adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+	.double-image img:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
 @media only screen and (min-width: 480px){
 	.double-image{
 		flex-direction: row;
+	}
+	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+		.double-image img:not(:last-child) {
+			margin-right: 10px;
+		}
 	}
 }
 img + p.caption-text,

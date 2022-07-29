@@ -1923,7 +1923,7 @@ nav .logo-container a:focus h1{
 }
 @media only screen and (min-width: 480px){
 	.translate-widget{
-		margin: .6rem auto;
+		margin: .6rem auto .6rem 0;
 	}
 }
 @media only screen and (min-width: 624px){
@@ -2058,6 +2058,7 @@ nav.overlay-nav .button-container{
 	}
 	nav.overlay-nav .button-container{
 		justify-content: space-between;
+		gap: .5rem;
 	}
 }
 @media only screen and (min-width: 624px){
@@ -2092,7 +2093,7 @@ nav.overlay-nav .button-container{
 	justify-content: center;
 	gap: 1rem;
 }
-@media only screen and (min-width: 624px){
+@media only screen and (min-width: 480px){
 		.overlay-content .button-container{
 			display: none;
 			visibility: hidden;
@@ -2103,9 +2104,19 @@ nav.overlay-nav .button-container{
 		gap: 1rem;
 	}
 }
+@media only screen and (min-width: 480px){
+	.overlay-nav .button-container .tooltip-container:nth-child(5){
+		margin-left: auto;
+	}
+}
+@media only screen and (min-width: 624px){
+	.overlay-nav .button-container .tooltip-container:nth-child(5){
+		margin-left: 0;
+	}
+}
 nav .button-container .home-icon,
-nav .button-container a.external,
-nav.overlay-nav .button-container a.external.home-icon{
+nav .button-container .sitemap-icon,
+nav .button-container a.external{
 	height: fit-content;
 	display: none;
 	visibility: hidden;
@@ -2118,9 +2129,18 @@ nav.overlay-nav .button-container a.external.home-icon{
 [aria-describedby="zotero-icon-2"]{
 	margin-top: 0.15rem;
 }
-@media only screen and (min-width: 624px){
+@media only screen and (min-width: 480px){
 	nav.overlay-nav .button-container a.external{
     display: -webkit-flex;
+  	display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+	}
+}
+@media only screen and (min-width: 624px){
+	nav .button-container .sitemap-icon{
+		display: -webkit-flex;
   	display: flex;
     visibility: visible;
     align-items: center;
@@ -2137,8 +2157,7 @@ nav.overlay-nav .button-container a.external.home-icon{
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .button-container .home-icon,
-	nav.overlay-nav .button-container a.external.home-icon{
+	nav .button-container .home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;
@@ -2339,7 +2358,7 @@ nav .close-icon:focus-within
 .overlay .text-container{
   background: inherit;
 	margin: 0;
-  padding: 0 1rem;
+  padding: 0 1rem 1rem;
 }
 @media only screen and (min-width: 624px){
   .overlay .text-container{
@@ -2372,7 +2391,7 @@ nav .close-icon:focus-within
 	border-left: none;
 	margin: 0;
 	padding: 0;
-  height: 53px;
+  height: 60px;
 }
 .overlay .text-container h2 button{
   display: -webkit-flex;

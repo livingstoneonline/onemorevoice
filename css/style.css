@@ -735,7 +735,7 @@ article > .toc + section{
 		position: relative;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		.essay .page-details > *:not(:first-child) {
+		.essay .page-details > * + *{
 			margin-right: 2rem;
 		}
 	}
@@ -974,24 +974,9 @@ sections appear on books & texts
 #texts .sections{
 	gap: 1.5rem;
 }
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.categories .sections,
-	#books .sections,
-	#texts .sections{
-		row-gap: 1.5rem;
-		column-gap: 1.5rem;
-	}
-	/* .categories .sections,
-	#books .sections,
-	#texts .sections{
-		margin: -.75rem;
-	}
-	.categories .sections > *,
-	#books .sections > *,
-	#texts .sections > *{
-		margin: .75rem;
-	} */
-}
+/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 @media only screen and (min-width: 1200px){
 	.categories .sections,
 	#books .sections,
@@ -999,12 +984,18 @@ sections appear on books & texts
 		gap: 2rem;
 	}
 }
+/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 @media only screen and (min-width: 1600px){
 	.categories .sections,
 	#books .sections,
 	#texts .sections{
 		gap: 2.5rem;
 	}
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 }
 /* flex percentages */
 @media only screen and (min-width: 624px){
@@ -1067,6 +1058,12 @@ sections appear on books & texts
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+	#books .sections .section-container > * + *,
+	#texts .sections .section-container > * + *{
+		margin-top: 1.25rem;
+	}
 }
 #texts .sections .section-container{
 	flex-grow: 1;
@@ -1230,12 +1227,18 @@ sections appear on books & texts
 	flex-direction: column;
 	gap: 1.5rem;
 }
+/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 @media only screen and (min-width: 480px){
 	#texts .image-biography{
 		flex-direction: row;
 		align-items: center;
 		gap: 1rem;
 	}
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 }
 /* texts: images */
 /* Adapted from https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
@@ -2092,6 +2095,11 @@ nav.overlay-nav .button-container{
 		justify-content: space-between;
 		gap: .5rem;
 	}
+	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+		nav.overlay-nav .button-container > * + *{
+			margin-left: .5rem;
+		}
+	}
 }
 @media only screen and (min-width: 624px){
 	nav.overlay-nav .button-container{
@@ -2125,15 +2133,15 @@ nav.overlay-nav .button-container{
 	justify-content: center;
 	gap: 1rem;
 }
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+	.overlay-content .button-container > * + *{
+		margin-left: 1rem;
+	}
+}
 @media only screen and (min-width: 480px){
 		.overlay-content .button-container{
 			display: none;
 			visibility: hidden;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.overlay-content .button-container{
-		gap: 1rem;
 	}
 }
 @media only screen and (min-width: 480px){
@@ -2823,7 +2831,7 @@ ul.acknowledgments{
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
 	.double-image > *:not(:last-child) {
-		margin-bottom: 10px;
+		margin: 0 0 10px 0;
 	}
 }
 @media only screen and (min-width: 480px){
@@ -2833,7 +2841,7 @@ ul.acknowledgments{
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
 		.double-image > *:not(:last-child) {
 			margin-bottom: 0;
-			margin-right: 10px;
+			margin-right: 0 10px 0 0;
 		}
 	}
 }
@@ -2885,6 +2893,9 @@ img + p.caption-text,
 .visuals.gallery{
 	gap: 2rem;
 }
+/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 /* flex percentages: visuals */
 @media only screen and (min-width: 480px){
 	.visuals.gallery figure{
@@ -2915,15 +2926,24 @@ img + p.caption-text,
 .films.gallery{
 	gap: 1.5rem;
 }
+/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+} */
 @media only screen and (min-width: 1200px){
 	.films.gallery{
 		gap: 2rem;
 	}
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+	} */
 }
 @media only screen and (min-width: 1600px){
 	.films.gallery{
 		gap: 2.5rem;
 	}
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+
+	} */
 }
 /* flex percentages: films */
 @media only screen and (min-width: 624px){
@@ -3039,6 +3059,11 @@ img + p.caption-text,
 	flex-direction: column;
 	justify-content: center;
 	gap: .75rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+	.films.gallery figure figcaption > * + *{
+		margin-top: .75rem;
+	}
 }
 @media only screen and (min-width: 480px){
 	.films.gallery figure figcaption{

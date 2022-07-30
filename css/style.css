@@ -615,8 +615,8 @@ article > .toc + section{
 	gap: 1rem;
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.categories .introduction-section .introduction-text > *:not(:last-child) {
-		margin-bottom: 1rem;
+	.categories .introduction-section .introduction-text > *:not(:first-child) {
+		margin-top: 1rem;
 	}
 }
 @media only screen and (min-width: 768px){
@@ -735,8 +735,8 @@ article > .toc + section{
 		position: relative;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		.essay .page-details > * + *{
-			margin-right: 2rem;
+		.essay .page-details > *:not(:first-child){
+			margin-left: 2rem;
 		}
 	}
 	.essay .page-details.vertical{
@@ -1060,8 +1060,8 @@ sections appear on books & texts
 	gap: 1.25rem;
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	#books .sections .section-container > * + *,
-	#texts .sections .section-container > * + *{
+	#books .sections .section-container > *:not(:first-child),
+	#texts .sections .section-container > *:not(:first-child){
 		margin-top: 1.25rem;
 	}
 }
@@ -2096,7 +2096,7 @@ nav.overlay-nav .button-container{
 		gap: .5rem;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		nav.overlay-nav .button-container > * + *{
+		nav.overlay-nav .button-container > *:not(:first-child){
 			margin-left: .5rem;
 		}
 	}
@@ -2134,7 +2134,7 @@ nav.overlay-nav .button-container{
 	gap: 1rem;
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.overlay-content .button-container > * + *{
+	.overlay-content .button-container > *:not(:first-child){
 		margin-left: 1rem;
 	}
 }
@@ -2830,8 +2830,8 @@ ul.acknowledgments{
 	gap: 10px;
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.double-image > *:not(:last-child) {
-		margin: 0 0 10px 0;
+	.double-image > *:not(:first-child) {
+		margin: 10px 0 0 0;
 	}
 }
 @media only screen and (min-width: 480px){
@@ -2839,9 +2839,9 @@ ul.acknowledgments{
 		flex-direction: row;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		.double-image > *:not(:last-child) {
+		.double-image > *:not(:first-child) {
 			margin-bottom: 0;
-			margin-right: 0 10px 0 0;
+			margin-right: 0 0 0 10px;
 		}
 	}
 }
@@ -3061,7 +3061,7 @@ img + p.caption-text,
 	gap: .75rem;
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.films.gallery figure figcaption > * + *{
+	.films.gallery figure figcaption > *:not(:first-child){
 		margin-top: .75rem;
 	}
 }

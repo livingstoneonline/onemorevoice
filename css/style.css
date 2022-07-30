@@ -3378,65 +3378,58 @@ details:focus-within ::marker{
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 
-/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
-	.categories .introduction-section .introduction-text > *:not(:first-child){
-		margin-top: 1rem;
-	}
-} */
+@supports (-webkit-touch-callout: none) and (not (translate: none)){
 
-/* @media only screen and (min-width: 992px){
-	@supports (-webkit-touch-callout: none) and (not (translate: none)){
-		.essay .page-details > *:not(:last-child){
-			margin-left: 2rem;
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
+		.categories .introduction-section .introduction-text > *:not(:first-child){
+			margin-top: 1rem;
 		}
-	}
-} */
+	} */
 
-/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
-	#books .sections .section-container > *:not(:first-child),
-	#texts .sections .section-container > *:not(:first-child){
-		margin-top: 1.25rem;
-	}
-} */
-
-/* @media only screen and (min-width: 480px){
-	@supports (-webkit-touch-callout: none) and (not (translate: none)){
-		nav.overlay-nav .button-container > *:not(:first-child){
-			margin-left: .5rem;
+	/* @media only screen and (min-width: 992px){
+		@supports (-webkit-touch-callout: none) and (not (translate: none)){
+			.essay .page-details > *:not(:last-child){
+				margin-left: 2rem;
+			}
 		}
-	}
-} */
+	} */
 
-@media only screen and (min-width: 992px){
-	@supports (-webkit-touch-callout: none) and (not (translate: none)){
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
+		#books .sections .section-container > *:not(:first-child),
+		#texts .sections .section-container > *:not(:first-child){
+			margin-top: 1.25rem;
+		}
+	} */
+
+	/* @media only screen and (min-width: 480px){
+		@supports (-webkit-touch-callout: none) and (not (translate: none)){
+			nav.overlay-nav .button-container > *:not(:first-child){
+				margin-left: .5rem;
+			}
+		}
+	} */
+
+	@media only screen and (min-width: 992px){
 		nav .button-container  > *:not(:first-child),
 		nav.overlay-nav .button-container > *:not(:first-child){
 			margin-left: 2rem;
 		}
 	}
-}
 
-/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
-	.overlay-content .button-container > *:not(:first-child{
-		margin-left: 1rem;
-	}
-} */
-
-@supports (-webkit-touch-callout: none) and (not (translate: none)){
+	/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
+		.overlay-content .button-container > *:not(:first-child{
+			margin-left: 1rem;
+		}
+	} */
+	
 	.double-image > *:not(:first-child){
 		margin: 10px 0 0 0;
 	}
-}
-
-@media only screen and (min-width: 480px){
-	@supports (-webkit-touch-callout: none) and (not (translate: none)){
+	@media only screen and (min-width: 480px){
 		.double-image > *:not(:first-child){
 			margin: 0 0 0 10px;
 		}
 	}
-}
-
-@supports (-webkit-touch-callout: none) and (not (translate: none)){
 	.films.gallery figure figcaption > *:not(:first-child){
 		margin-top: .75rem;
 	}

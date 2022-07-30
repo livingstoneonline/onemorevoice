@@ -3395,6 +3395,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	#texts .sections .section-container > *{
 		margin-top: 1.25rem;
 	}
+	#books .sections .section-container > *:first-child,
+	#texts .sections .section-container > *:first-child{
+		margin-bottom: 2rem;
+	}
 	@media only screen and (min-width: 480px){
 		nav.overlay-nav .button-container > *:not(:first-child){
 			margin-left: .5rem !important;

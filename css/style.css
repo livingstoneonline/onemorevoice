@@ -735,7 +735,7 @@ article > .toc + section{
 		position: relative;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		.essay .page-details > *:not(:first-child){
+		.essay .page-details > *:not(:last-child){
 			margin-left: 2rem;
 		}
 	}

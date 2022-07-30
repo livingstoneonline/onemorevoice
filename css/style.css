@@ -608,7 +608,7 @@ article > .toc + section{
 }
 .categories .introduction-section .introduction-text{
 	padding: 2rem 1rem 1rem;
-	gap: 1rem;
+	gap: 1rem; /* See Safari Support */
 }
 @media only screen and (min-width: 768px){
 	.home .introduction-section .introduction-text,
@@ -721,7 +721,7 @@ article > .toc + section{
 		flex-direction: row-reverse;
 		align-items: flex-end;
 		justify-content: space-between;
-		gap: 2rem;
+		gap: 2rem; /* See Safari Support */
 		margin: 1rem;
 		position: relative;
 	}
@@ -1034,7 +1034,7 @@ sections appear on books & texts
 	display: -webkit-flex; 
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
+	gap: 1.25rem; /* See Safari Support */
 }
 #texts .sections .section-container{
 	flex-grow: 1;
@@ -2058,7 +2058,7 @@ nav.overlay-nav .button-container{
 	}
 	nav.overlay-nav .button-container{
 		justify-content: space-between;
-		gap: .5rem;
+		gap: .5rem; /* See Safari Support */
 	}
 }
 @media only screen and (min-width: 624px){
@@ -2079,7 +2079,7 @@ nav.overlay-nav .button-container{
 	nav.overlay-nav .button-container{
 		margin-left: 0;
 		justify-content: flex-end;
-		gap: 2rem;
+		gap: 2rem; /* See Safari Support */
 	}
 }
 .overlay-content .button-container{
@@ -2091,7 +2091,7 @@ nav.overlay-nav .button-container{
   display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: 1rem; /* See Safari Support */
 }
 @media only screen and (min-width: 480px){
 		.overlay-content .button-container{
@@ -3382,7 +3382,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	.categories .introduction-section .introduction-text > *:not(:first-child){
 		margin-top: 1rem;
 	}
-@media only screen and (min-width: 992px){
+	@media only screen and (min-width: 992px){
 		.essay .page-details > *:not(:last-child){
 			margin-left: 2rem;
 		}

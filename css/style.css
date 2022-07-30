@@ -2990,7 +2990,7 @@ img + p.caption-text,
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: .75rem;
+	gap: .75rem; /* See Safari Support */
 }
 @media only screen and (min-width: 480px){
 	.films.gallery figure figcaption{
@@ -3373,7 +3373,7 @@ details:focus-within ::marker{
 }
 
 
-/* Support for mobile Safari and iOS 14.5 (Safari below 14.1) */
+/* Safari Support: Mobile and iOS 14.5 (Safari below 14.1) */
 
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
@@ -3413,11 +3413,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 } */
 
-/* @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
 	.double-image > *:not(:first-child) {
 		margin: 10px 0 0 0;
 	}
-} */
+}
 
 /* @media only screen and (min-width: 480px){
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
@@ -3432,3 +3432,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		margin-top: .75rem;
 	}
 }
+
+/* See Safari Support */

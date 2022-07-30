@@ -3382,15 +3382,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	.categories .introduction-section .introduction-text > *:not(:first-child){
 		margin-top: 1rem;
 	}
-
-	/* @media only screen and (min-width: 992px){
-		@supports (-webkit-touch-callout: none) and (not (translate: none)){
-			.essay .page-details > *:not(:last-child){
-				margin-left: 2rem;
-			}
+@media only screen and (min-width: 992px){
+		.essay .page-details > *:not(:last-child){
+			margin-left: 2rem;
 		}
-	} */
-
+	}
 	#books .sections .section-container > *,
 	#texts .sections .section-container > *{
 		margin-top: 1.25rem;

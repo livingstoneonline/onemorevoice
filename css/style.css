@@ -920,7 +920,7 @@ sections appear on books & texts
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: space-between;	
 }
 @media only screen and (min-width: 624px){
 	#books .sections{
@@ -3383,6 +3383,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		margin-top: 1rem;
 	}
 	@media only screen and (min-width: 992px){
+		.home .introduction-section .introduction-text,
+		.categories .introduction-section .introduction-text{
+			background: #fff;
+		}
+	}
+	@media only screen and (min-width: 992px){
 		.essay .page-details > *:not(:last-child){
 			margin-left: 2rem;
 		}
@@ -3431,3 +3437,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 }
 
 /* See Safari Support */
+
+/* 
+https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 
+
+https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid
+*/

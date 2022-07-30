@@ -2840,8 +2840,7 @@ ul.acknowledgments{
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
 		.double-image > *:not(:first-child) {
-			margin-bottom: 0;
-			margin-right: 0 10px 0 0;
+			margin: 0 0 0 10px;
 		}
 	}
 }

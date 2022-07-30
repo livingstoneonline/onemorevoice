@@ -3393,7 +3393,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	#books .sections .section-container > *:first-child,
 	#texts .sections .section-container > *:first-child{
-		margin-bottom: 1.25rem;
+		margin-bottom: 1rem;
+	}
+	#texts .image-biography > *:not(:first-child){
+		margin-top: 1.5rem;
+	}
+	@media only screen and (min-width: 480px){
+		#texts .image-biography > *:not(:first-child){
+			margin-left: 1rem;
+		}
 	}
 	@media only screen and (min-width: 480px){
 		nav.overlay-nav .button-container > *:not(:first-child){

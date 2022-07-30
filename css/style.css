@@ -920,7 +920,7 @@ sections appear on books & texts
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;	
+	justify-content: center;	
 }
 @media only screen and (min-width: 624px){
 	#books .sections{
@@ -3442,4 +3442,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 
 
 https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid
+
+*******
+
+https://wpbeaches.com/centering-last-item-flexbox-container/
+
+.categories .sections:after,
+#books .sections:after,
+#texts .sections:after{
+	content: "";
+	flex: 0 0 calc(33.33% - 2rem);
+}
 */

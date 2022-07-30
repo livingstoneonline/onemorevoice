@@ -3411,7 +3411,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 
 	@media only screen and (min-width: 992px){
 		nav .button-container  > *:not(:first-child),
-		nav.overlay-nav .button-container > *:not(:first-child){
+		nav.overlay-nav .button-container > *:not(:first-child),
+		.overlay-nav .button-container .tooltip-container:nth-child(5){
 			margin-left: 2rem;
 		}
 	}
@@ -3421,7 +3422,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			margin-left: 1rem;
 		}
 	} */
-	
+
 	.double-image > *:not(:first-child){
 		margin: 10px 0 0 0;
 	}

@@ -3394,12 +3394,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		}
 	} */
 
-	/* @supports (-webkit-touch-callout: none) and (not (translate: none)){
-		#books .sections .section-container > *:not(:first-child),
-		#texts .sections .section-container > *:not(:first-child){
-			margin-top: 1.25rem;
-		}
-	} */
+	#books .sections .section-container > *:not(:first-child),
+	#texts .sections .section-container > *:not(:first-child){
+		margin-top: 1.25rem;
+	}
 	@media only screen and (min-width: 480px){
 		nav.overlay-nav .button-container > *:not(:first-child){
 			margin-left: .5rem !important;

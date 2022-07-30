@@ -2830,7 +2830,7 @@ ul.acknowledgments{
 	gap: 10px;
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-	.double-image > img:not(:first-child) {
+	.double-image > *:not(:first-child) {
 		margin: 10px 0 0 0;
 	}
 }
@@ -2839,9 +2839,9 @@ ul.acknowledgments{
 		flex-direction: row;
 	}
 	@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-		.double-image > img:not(:first-child) {
+		.double-image > *:not(:first-child) {
 			margin-bottom: 0;
-			margin-right: 0 0 0 10px;
+			margin-right: 0 10px 0 0;
 		}
 	}
 }

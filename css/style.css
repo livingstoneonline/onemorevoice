@@ -1196,13 +1196,13 @@ sections appear on books & texts
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
+	gap: 1.5rem; /* See Safari Support */
 }
 @media only screen and (min-width: 480px){
 	#texts .image-biography{
 		flex-direction: row;
 		align-items: center;
-		gap: 1rem;
+		gap: 1rem; /* See Safari Support */
 	}
 }
 /* texts: images */

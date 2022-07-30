@@ -3391,8 +3391,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		}
 	} */
 
-	#books .sections .section-container > *:not(:last-child),
-	#texts .sections .section-container > *:not(:last-child){
+	#books .sections .section-container > *,
+	#texts .sections .section-container > *{
 		margin-top: 1.25rem;
 	}
 	@media only screen and (min-width: 480px){

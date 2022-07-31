@@ -3521,55 +3521,49 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	/* spacing above cards & wrapper compensation */
 	.categories .sections > *,
-	#books .sections > *,
-	#texts .sections > *{
+	#books .sections > *{
 		margin: .75rem 0;
 	}
 	.categories .sections,
-	#books .sections,
-	#texts .sections{
+	#books .sections{
 		margin: -.75rem 0;
 	}
-	/* Books needs separate break out; not clear why */
-	#books .sections > *{
+	/* Texts needs separate break out; not clear why */
+	#texts .sections > *{
 		margin: 1.5rem 0;
 	}
-	#books .sections{
+	#texts .sections{
 		margin: -1.5rem 0;
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
-		#books .sections > *,
-		#texts .sections > *{
+		#books .sections > *{
 			margin: 1rem 0;
 		}
 		.categories .sections,
-		#books .sections,
-		#texts .sections{
+		#books .sections{
 			margin: -1rem 0;
 		}
-		#books .sections > *{
+		#texts .sections > *{
 			margin: 2rem 0;
 		}
-		#books .sections{
+		#texts .sections{
 			margin: -2rem 0;
 		}
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
-		#books .sections > *,
-		#texts .sections > *{
+		#books .sections > *{
 			margin: 1.25rem 0;
 		}
 		.categories .sections,
-		#books .sections,
-		#texts .sections{
+		#books .sections{
 			margin: -1.25rem 0;
 		}
-		#books .sections > *{
+		#texts .sections > *{
 			margin: 2.5rem 0;
 		}
-		#books .sections{
+		#texts .sections{
 			margin: -2.5rem 0;
 		}
 	}

@@ -893,26 +893,43 @@ article > .toc + section{
 sections appear on books & texts
 + essays/materials/documents
 */
+/* padding */
+.categories .sections{
+	padding: 1rem 1rem 0;
+}
 @media only screen and (min-width: 768px){
-	.categories .sections,
+	/* .categories .sections, */
 	#books,
 	#texts,
 	#films,
 	#visuals{
-		padding: 0 0 1rem;
+		padding: 1rem 0;
+	}
+	.categories .sections{
+		padding: 1rem;
 	}
 }
 @media only screen and (min-width: 992px){
+	.categories .sections{
+		padding: 2rem 1rem;
+	}
 	#books,
 	#texts,
 	#films{
 		padding: 1rem 0;
 	}
-	.categories .sections{
+	/* .categories .sections{
 		padding: 2rem 0 3rem;
+	} */
+}
+@media only screen and (min-width: 1200px){
+	#books,
+	#texts,
+	#films{
+		padding: 1rem 0 0;
 	}
 }
-/* flex institute */
+/* institute flex */
 .categories .sections,
 #books .sections,
 #texts .sections{
@@ -938,20 +955,6 @@ sections appear on books & texts
 	#texts .sections{
 		flex-direction: row;
 		flex-wrap: wrap;
-	}
-}
-/* padding */
-.categories .sections{
-	padding: 1rem 1rem 0;
-}
-@media only screen and (min-width: 768px){
-	.categories .sections{
-		padding: 1rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	.categories .sections{
-		padding: 2rem 1rem;
 	}
 }
 /* gap */
@@ -1283,6 +1286,7 @@ sections appear on books & texts
 /* list of works: details/summary */
 #books details,
 #texts details{
+	white-space: nowrap;
 	margin-bottom: 3rem;
 }
 #texts summary,
@@ -1295,6 +1299,7 @@ sections appear on books & texts
 	padding: 6px 14px;
 }
 #texts summary{
+	font-size: .9rem;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -1302,6 +1307,11 @@ sections appear on books & texts
 #books summary{
 	border-left: 4px dashed #bdc2bd;
 	margin-top: .25rem;
+}
+@media only screen and (min-width: 480px){
+	#texts summary{
+		font-size: inherit;
+	}
 }
 #books summary::before,
 #texts summary::before{
@@ -2821,7 +2831,7 @@ img + p.caption-text,
 
 /* 27. Object Gallery: Visual Materials & Motion Pictures */
 
-/* flex institute */
+/* institute flex */
 @media only screen and (min-width: 480px){
 	.visuals.gallery{
 		flex-direction: row;
@@ -3438,20 +3448,3 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 }
 
 /* See Safari Support */
-
-/* 
-https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 
-
-https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid
-
-*******
-
-https://wpbeaches.com/centering-last-item-flexbox-container/
-
-.categories .sections:after,
-#books .sections:after,
-#texts .sections:after{
-	content: "";
-	flex: 0 0 calc(33.33% - 2rem);
-}
-*/

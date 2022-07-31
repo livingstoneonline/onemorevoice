@@ -3530,6 +3530,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	#texts .sections{
 		margin: -.75rem 0;
 	}
+	/* Books needs separate break out; not clear why */
+	#books .sections > *{
+		margin: 1.5rem 0;
+	}
+	#books .sections{
+		margin: -1.5rem 0;
+	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
 		#books .sections > *,
@@ -3540,6 +3547,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		#books .sections,
 		#texts .sections{
 			margin: -1rem 0;
+		}
+		#books .sections > *{
+			margin: 2rem 0;
+		}
+		#books .sections{
+			margin: -2rem 0;
 		}
 	}
 	@media only screen and (min-width: 1600px){
@@ -3552,6 +3565,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		#books .sections,
 		#texts .sections{
 			margin: -1.25rem 0;
+		}
+		#books .sections > *{
+			margin: 2.5rem 0;
+		}
+		#books .sections{
+			margin: -2.5rem 0;
 		}
 	}
 	/* ruler compensation */

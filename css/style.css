@@ -2658,11 +2658,11 @@ hr.section-divider{
 	border-top: 4px solid #bdc2bd;
 }
 section + hr.section-divider{
-	margin-top: 1.5rem;
+	margin: 1.5rem auto 0;
 }
 @media only screen and (min-width: 768px){
 	section + hr.section-divider{
-		margin-top: 2rem;
+		margin: 2rem auto 0;
 	}	
 }
 .content.recovered section + hr.section-divider{
@@ -3554,6 +3554,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			margin: -1.25rem 0;
 		}
 	}
+	/* ruler compensation */
+	section + hr.section-divider{
+		margin: 1.5rem auto;
+	}
+	@media only screen and (min-width: 768px){
+		section + hr.section-divider{
+			margin: 2rem auto;
+		}	
+	}
+	.content.recovered section + hr.section-divider{
+		margin: 2.25rem auto;
+	}
 	/* padding adjustments, part 2 */
 	@media only screen and (min-width: 1200px){
 		.content.recovered.full-page{
@@ -3565,7 +3577,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.content.recovered.content.full-page{
 			margin: 0 2rem 2rem;
 		}
-}
+	}
 }
 
 /* See Safari Support */

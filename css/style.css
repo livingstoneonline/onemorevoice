@@ -960,28 +960,28 @@ sections appear on books & texts
 .categories .sections,
 #books .sections,
 #texts .sections{
-	gap: 1.5rem;
+	gap: 1.5rem; /* See Safari Support */
 }
 @media only screen and (min-width: 1200px){
 	.categories .sections,
 	#books .sections,
 	#texts .sections{
-		gap: 2rem;
+		gap: 2rem; /* See Safari Support */
 	}
 }
 @media only screen and (min-width: 1600px){
 	.categories .sections,
 	#books .sections,
 	#texts .sections{
-		gap: 2.5rem;
+		gap: 2.5rem; /* See Safari Support */
 	}
 }
+/* flex percentages and flex-grow */
 .categories .sections .section-container,
 #books .sections .section-container,
 #texts .sections .section-container{
 	flex-grow: 1;
 }
-/* flex percentages */
 @media only screen and (min-width: 624px){
 	#books .sections .section-container{
 		flex: 0 0 calc(50% - .75rem);
@@ -3394,12 +3394,11 @@ details:focus-within ::marker{
 }
 
 
-/* Safari Support: Mobile and iOS 14.5 (Safari below 14.1) */
-
+/* Safari Support: Mobile and Safari below 14.1 */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
-
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
+	/* Easy stuff */
 	.categories .introduction-section .introduction-text > *:not(:first-child){
 		margin-top: 1rem;
 	}
@@ -3455,6 +3454,118 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	.films.gallery figure figcaption > *:not(:first-child){
 		margin-top: .75rem;
 	}
+	/* Tricky stuff */
+	/* padding adjustments, part 1 */
+	@media only screen and (min-width: 1200px){
+		#books,
+		#texts,
+		#films{
+			padding: 1rem 0 0;
+		}
+	}
+	/* reposition cards */
+	.categories .sections,
+	#books .sections,
+	#texts .sections{
+		justify-content: space-between;
+	}
+	/* left-align last row */
+	/* Adapted from https://wpbeaches.com/centering-last-item-flexbox-container/ */
+	/* Also see https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 and https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid */
+	/* Still an issue in  that padding on full rows kicks out extra space below, but good enough for now */
+	@media only screen and (min-width: 624px){
+		#books .sections::after{
+			content: "";
+			flex: 0 0 calc(50% - .75rem);
+		}
+	}
+	@media only screen and (min-width: 768px){
+		.categories .sections::after{
+			content: "";
+			flex: 0 0 calc(50% - .75em);
+		}
+	}
+	@media only screen and (min-width: 992px){
+		.categories .sections::after{
+			content: "";
+			flex: 0 0 calc(33.33% - 1.5rem);
+		}
+	}
+	@media only screen and (min-width: 1200px){
+		.categories .sections:after{
+			content: "";
+			flex: 0 0 calc(33.33% - 2rem);
+		}
+		#books .sections::after,
+		#texts .sections::after{
+			content: "";
+			flex: 0 0 calc(50% - 1rem);
+		}
+	}
+	@media only screen and (min-width: 1366px){
+		#books .sections::after{
+			content: "";
+			flex: 0 0 calc(33.33% - 2rem);
+		}
+	}
+	@media only screen and (min-width: 1600px){
+		.categories .sections::after{
+			content: "";
+			flex: 0 0 calc(25% - 2.5rem);
+		}
+		#books .sections::after,
+		#texts .sections::after{
+			content: "";
+			flex: 0 0 calc(33.33% - 2.5rem);
+		}
+	}
+	/* spacing above cards & wrapper compensation */
+	.categories .sections > *,
+	#books .sections > *,
+	#texts .sections > *{
+		margin: .75rem 0;
+	}
+	.categories .sections,
+	#books .sections,
+	#texts .sections{
+		margin: -.75rem 0;
+	}
+	@media only screen and (min-width: 1200px){
+		.categories .sections > *,
+		#books .sections > *,
+		#texts .sections > *{
+			margin: 1rem 0;
+		}
+		.categories .sections,
+		#books .sections,
+		#texts .sections{
+			margin: -1rem 0;
+		}
+	}
+	@media only screen and (min-width: 1600px){
+		.categories .sections > *,
+		#books .sections > *,
+		#texts .sections > *{
+			margin: 1.25rem 0;
+		}
+		.categories .sections,
+		#books .sections,
+		#texts .sections{
+			margin: -1.25rem 0;
+		}
+	}
+	/* padding adjustments, part 2 */
+	@media only screen and (min-width: 1200px){
+		.content.recovered.full-page{
+			margin: 0 2rem;
+			padding: 0;
+		}
+	}
+	@media only screen and (min-width: 1600px){
+		.content.recovered.content.full-page{
+			margin: 0 2rem 2rem;
+		}
+}
 }
 
 /* See Safari Support */

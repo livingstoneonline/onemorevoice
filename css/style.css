@@ -917,6 +917,9 @@ sections appear on books & texts
 	#films{
 		padding: 1rem 0;
 	}
+	#visuals{
+		padding: 0 0 1rem
+	}
 	/* .categories .sections{
 		padding: 2rem 0 3rem;
 	} */
@@ -986,16 +989,10 @@ sections appear on books & texts
 	#books .sections .section-container{
 		flex: 0 0 calc(50% - .75rem);
 	}
-	#books .sections .section-container{
-	flex-grow: 0;
-}
 }
 @media only screen and (min-width: 768px){
 	.categories .sections .section-container{
 		flex: 0 0 calc(50% - .75em);
-	}
-	.categories .sections .section-container{
-		flex-grow: 0;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -1010,9 +1007,6 @@ sections appear on books & texts
 	#books .sections .section-container,
 	#texts .sections .section-container{
 		flex: 0 0 calc(50% - 1rem);
-	}
-	#texts .sections .section-container{
-		flex-grow: 0;
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -2861,22 +2855,22 @@ img + p.caption-text,
 /* flex percentages: visuals */
 @media only screen and (min-width: 480px){
 	.visuals.gallery figure{
-		flex: 0 0 calc(50% - .75rem);
+		flex: 0 0 calc(50% - 1rem);
 	}
 }
 @media only screen and (min-width: 624px){
 	.visuals.gallery figure{
-		flex: 0 0 calc(33.33% - 2rem);
+		flex: 0 0 calc(33.33% - 1.33333rem);
 	}
 }
 @media only screen and (min-width: 1200px){
 	.visuals.gallery figure{
-		flex: 0 0 calc(25% - 2rem);
+		flex: 0 0 calc(25% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 1366px){
 	.visuals.gallery figure{
-		flex: 0 0 calc(20% - 2rem);
+		flex: 0 0 calc(20% - 1.75rem);
 	}
 }
 @media only screen and (min-width: 1600px){
@@ -3466,57 +3460,80 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	/* reposition cards */
 	.categories .sections,
 	#books .sections,
-	#texts .sections{
+	#texts .sections,
+	.visuals.gallery{
 		justify-content: space-between;
 	}
 	/* left-align last row */
 	/* Adapted from https://wpbeaches.com/centering-last-item-flexbox-container/ */
 	/* Also see https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 and https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid */
 	/* Still an issue in  that padding on full rows kicks out extra space below, but good enough for now */
+	@media only screen and (min-width: 480px){
+		.visuals.gallery::after{
+			content: "";
+			flex: 1 0 calc(50% - 1rem);	
+		}
+	}
 	@media only screen and (min-width: 624px){
 		#books .sections::after{
 			content: "";
-			flex: 0 0 calc(50% - .75rem);
+			flex: 1 0 calc(50% - .75rem);
+		}
+		.visuals.gallery::after{
+			content: "";
+			flex: 1 0 calc(33.33% - 1.33333rem);
 		}
 	}
 	@media only screen and (min-width: 768px){
 		.categories .sections::after{
 			content: "";
-			flex: 0 0 calc(50% - .75em);
+			flex: 1 0 calc(50% - .75em);
 		}
 	}
 	@media only screen and (min-width: 992px){
 		.categories .sections::after{
 			content: "";
-			flex: 0 0 calc(33.33% - 1.5rem);
+			flex: 1 0 calc(33.33% - 1.5rem);
 		}
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections:after{
 			content: "";
-			flex: 0 0 calc(33.33% - 2rem);
+			flex: 1 0 calc(33.33% - 2rem);
 		}
 		#books .sections::after,
 		#texts .sections::after{
 			content: "";
-			flex: 0 0 calc(50% - 1rem);
+			flex: 1 0 calc(50% - 1rem);
+		}
+		.visuals.gallery::after{
+			content: "";
+			flex: 1 0 calc(25% - 1.5rem);
 		}
 	}
 	@media only screen and (min-width: 1366px){
 		#books .sections::after{
 			content: "";
-			flex: 0 0 calc(33.33% - 2rem);
+			flex: 1 0 calc(33.33% - 2rem);
+		}
+		.visuals.gallery::after{
+			content: "";
+			flex: 1 0 calc(20% - 1.75rem);
 		}
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections::after{
 			content: "";
-			flex: 0 0 calc(25% - 2.5rem);
+			flex: 1 0 calc(25% - 2.5rem);
 		}
 		#books .sections::after,
 		#texts .sections::after{
 			content: "";
-			flex: 0 0 calc(33.33% - 2.5rem);
+			flex: 1 0 calc(33.33% - 2.5rem);
+		}
+		.visuals.gallery::after{
+			content: "";
+			flex: 1 0 calc(17% - 2rem);
 		}
 	}
 	/* spacing above cards & wrapper compensation */
@@ -3534,6 +3551,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	#texts .sections{
 		margin: -1.5rem 0;
+	}
+	.visuals.gallery > *{
+		margin: 1rem 0;
+	}
+	.visuals.gallery{
+		margin: -1rem 0;
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,

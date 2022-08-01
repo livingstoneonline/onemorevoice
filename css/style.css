@@ -2850,7 +2850,7 @@ img + p.caption-text,
 }
 /* visuals: gap */
 .visuals.gallery{
-	gap: 2rem;
+	gap: 2rem; /* See Safari Support */
 }
 /* flex percentages: visuals */
 @media only screen and (min-width: 480px){
@@ -3190,7 +3190,7 @@ img + p.caption-text,
 	-webkit-transition: top .4s ease-in;
 }
 mark.advisory{
-	top: 0;
+	bottom: 0;
 }
 .skipcontrols a,
 mark.advisory,
@@ -3205,14 +3205,22 @@ mark.running-time{
 mark.advisory{
 	background: #305056;
 	border-right: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	-webkit-border-bottom-right-radius: 8px;
-	-moz-border-bottom-right-radius: 8px;
-	border-bottom-right-radius: 8px;
 	padding: 8px;
 	left: 0;
 	transition: top 1s ease-out;
 	-webkit-transition: top 1s ease-out;
+}
+.skipcontrols a{
+	border-bottom: 2px solid #fff;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+mark.advisory{
+	border-top: 2px solid #fff;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
 }
 mark.running-time{
 	background: #212119;
@@ -3461,7 +3469,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	.categories .sections,
 	#books .sections,
 	#texts .sections,
-	.visuals.gallery{
+	.visuals.gallery,
+	.films.gallery{
 		justify-content: space-between;
 	}
 	/* left-align last row */
@@ -3482,6 +3491,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.visuals.gallery::after{
 			content: "";
 			flex: 1 0 calc(33.33% - 1.33333rem);
+		}
+		.films.gallery::after{
+			content: "";
+			flex: 1 0 calc(50% - .75rem);
 		}
 	}
 	@media only screen and (min-width: 768px){
@@ -3510,6 +3523,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			content: "";
 			flex: 1 0 calc(25% - 1.5rem);
 		}
+		.films.gallery::after{
+			content: "";
+			flex: 1 0 calc(33.33% - 1.5rem);
+		}
 	}
 	@media only screen and (min-width: 1366px){
 		#books .sections::after{
@@ -3535,14 +3552,19 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			content: "";
 			flex: 1 0 calc(17% - 2rem);
 		}
+		.films.gallery::after{
+			flex: 1 0 calc(25% - 2.5rem);
+		}
 	}
 	/* spacing above cards & wrapper compensation */
 	.categories .sections > *,
-	#books .sections > *{
+	#books .sections > *,
+	.films.gallery > *{
 		margin: .75rem 0;
 	}
 	.categories .sections,
-	#books .sections{
+	#books .sections,
+	.films.gallery{
 		margin: -.75rem 0;
 	}
 	/* Texts needs separate break out; not clear why */
@@ -3560,11 +3582,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
-		#books .sections > *{
+		#books .sections > *,
+		.films.gallery > *{
 			margin: 1rem 0;
 		}
 		.categories .sections,
-		#books .sections{
+		#books .sections,
+		.films.gallery{
 			margin: -1rem 0;
 		}
 		#texts .sections > *{
@@ -3576,11 +3600,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
-		#books .sections > *{
+		#books .sections > *,
+		.films.gallery > *{
 			margin: 1.25rem 0;
 		}
 		.categories .sections,
-		#books .sections{
+		#books .sections,
+		.films.gallery{
 			margin: -1.25rem 0;
 		}
 		#texts .sections > *{

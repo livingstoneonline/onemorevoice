@@ -3573,64 +3573,64 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			flex: 1 0 calc(25% - 2.5rem);
 		}
 	} */
-	/* spacing above cards & wrapper compensation */
+	/* spacing around cards & wrapper compensation */
 	.categories .sections > *,
 	#books .sections > *,
 	.films.gallery > *{
-		margin: .75rem 0;
+		margin: .75rem;
 	}
 	.categories .sections,
 	#books .sections,
 	.films.gallery{
-		margin: -.75rem 0;
+		margin: -.75rem;
 	}
 	/* Texts needs separate break out; not clear why */
 	#texts .sections > *{
-		margin: 1.5rem 0;
+		margin: 1.5rem;
 	}
 	#texts .sections{
-		margin: -1.5rem 0;
+		margin: -1.5rem;
 	}
 	.visuals.gallery > *{
-		margin: 1rem 0;
+		margin: 1rem;
 	}
 	.visuals.gallery{
-		margin: -1rem 0;
+		margin: -1rem;
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
 		#books .sections > *,
 		.films.gallery > *{
-			margin: 1rem 0;
+			margin: 1rem;
 		}
 		.categories .sections,
 		#books .sections,
 		.films.gallery{
-			margin: -1rem 0;
+			margin: -1rem;
 		}
 		#texts .sections > *{
-			margin: 2rem 0;
+			margin: 2rem 1rem;
 		}
 		#texts .sections{
-			margin: -2rem 0;
+			margin: -2rem -1rem;
 		}
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
 		#books .sections > *,
 		.films.gallery > *{
-			margin: 1.25rem 0;
+			margin: 1.25rem;
 		}
 		.categories .sections,
 		#books .sections,
 		.films.gallery{
-			margin: -1.25rem 0;
+			margin: -1.25rem;
 		}
 		#texts .sections > *{
-			margin: 2.5rem 0;
+			margin: 2.5rem 1.25;
 		}
 		#texts .sections{
-			margin: -2.5rem 0;
+			margin: -2.5rem -1.25;
 		}
 	}
 	/* ruler compensation */

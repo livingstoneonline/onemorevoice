@@ -3468,18 +3468,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		}
 	}
 	/* reposition cards */
-	.categories .sections,
+	/* .categories .sections,
 	#books .sections,
 	#texts .sections,
 	.visuals.gallery,
 	.films.gallery{
 		justify-content: space-between;
-	}
+	} */
 	/* left-align last row */
 	/* Adapted from https://wpbeaches.com/centering-last-item-flexbox-container/ */
 	/* Also see https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 and https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid */
 	/* Still an issue in that any flexbox with more than two in a single row will have the last row misaligned */
-	@media only screen and (min-width: 480px){
+	/* @media only screen and (min-width: 480px){
 		.visuals.gallery::after{
 			content: "";
 			height: 0;
@@ -3572,7 +3572,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.films.gallery::after{
 			flex: 1 0 calc(25% - 2.5rem);
 		}
-	}
+	} */
 	/* spacing above cards & wrapper compensation */
 	.categories .sections > *,
 	#books .sections > *,

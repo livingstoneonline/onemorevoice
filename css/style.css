@@ -3468,64 +3468,63 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		}
 	}
 	/* spacing around cards & wrapper compensation */
-	/* l-r margins are 75% of what they should be as 100% doesn't work */
 	.categories .sections > *,
 	#books .sections > *,
 	.films.gallery > *{
-		margin: .75rem .5625rem;
+		margin: .75rem .375rem;
 	}
 	.categories .sections,
 	#books .sections,
 	.films.gallery{
-		margin: -.75rem -.5625rem;
+		margin: -.75rem -.375rem;
 	}
 	/* Texts needs separate break out; not clear why */
 	#texts .sections > *{
-		margin: 1.5rem .5625rem;
+		margin: 1.5rem .375rem;
 	}
 	#texts .sections{
-		margin: -1.5rem -.5625rem;
+		margin: -1.5rem -.375rem;
 	}
 	.visuals.gallery > *{
-		margin: 1rem .75rem;
+		margin: 1rem .5rem;
 	}
 	.visuals.gallery{
-		margin: -1rem -.75rem;
+		margin: -1rem -.5rem;
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
 		#books .sections > *,
 		.films.gallery > *{
-			margin: 1rem .75rem;
+			margin: 1rem .5rem;
 		}
 		.categories .sections,
 		#books .sections,
 		.films.gallery{
-			margin: -1rem -.75rem;
+			margin: -1rem -.5rem;
 		}
 		#texts .sections > *{
-			margin: 2rem .75rem;
+			margin: 2rem .5rem;
 		}
 		#texts .sections{
-			margin: -2rem -.75rem;
+			margin: -2rem -.5rem;
 		}
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
 		#books .sections > *,
 		.films.gallery > *{
-			margin: 1.25rem .9375rem;
+			margin: 1.25rem .625rem;
 		}
 		.categories .sections,
 		#books .sections,
 		.films.gallery{
-			margin: -1.25rem -.9375rem;
+			margin: -1.25rem -.625rem;
 		}
 		#texts .sections > *{
-			margin: 2.5rem .9375rem;
+			margin: 2.5rem .625rem;
 		}
 		#texts .sections{
-			margin: -2.5rem -.9375rem;
+			margin: -2.5rem -.625rem;
 		}
 	}
 	/* ruler compensation */

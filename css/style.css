@@ -3479,77 +3479,97 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	@media only screen and (min-width: 480px){
 		.visuals.gallery::after{
 			content: "";
-			flex: 1 0 calc(50% - 1rem);	
+			height: 0;
+			/* flex: 1 0 calc(50% - 1rem);	 */
+			flex: auto;
 		}
 	}
 	@media only screen and (min-width: 624px){
 		#books .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(50% - .75rem);
 		}
 		.visuals.gallery::after{
 			content: "";
-			flex: 1 0 calc(33.33% - 1.33333rem);
+			height: 0;
+			/* flex: 1 0 calc(33.33% - 1.33333rem); */
+			flex: auto;
 		}
 		.films.gallery::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(50% - .75rem);
 		}
 	}
 	@media only screen and (min-width: 768px){
 		.categories .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(50% - .75em);
 		}
 	}
 	@media only screen and (min-width: 992px){
 		.categories .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(33.33% - 1.5rem);
 		}
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections:after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(33.33% - 2rem);
 		}
 		#books .sections::after,
 		#texts .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(50% - 1rem);
 		}
 		.visuals.gallery::after{
 			content: "";
-			flex: 1 0 calc(25% - 1.5rem);
+			height: 0;
+			/* flex: 1 0 calc(25% - 1.5rem); */
+			flex: auto;
 		}
 		.films.gallery::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(33.33% - 1.5rem);
 		}
 	}
 	@media only screen and (min-width: 1366px){
 		#books .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(33.33% - 2rem);
 		}
 		.visuals.gallery::after{
 			content: "";
-			flex: 1 0 calc(20% - 1.75rem);
+			height: 0;
+			/* flex: 1 0 calc(20% - 1.75rem); */
+			flex: auto;
 		}
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(25% - 2.5rem);
 		}
 		#books .sections::after,
 		#texts .sections::after{
 			content: "";
+			height: 0;
 			flex: 1 0 calc(33.33% - 2.5rem);
 		}
 		.visuals.gallery::after{
 			content: "";
-			flex: 1 0 calc(17% - 2rem);
+			height: 0;
+			/* flex: 1 0 calc(17% - 2rem); */
+			flex: auto;
 		}
 		.films.gallery::after{
 			flex: 1 0 calc(25% - 2.5rem);

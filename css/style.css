@@ -737,16 +737,16 @@ article > .toc + section{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details.horizontal div{
-		width: 43%;
+		width: calc(43% - 1rem);
 	}
 	.essay .page-details.horizontal figure{
-		width: 57%;
+		width: calc(57% - 1rem);
 	}
 	.essay .page-details.vertical div{
-		width: 50%;
+		width: calc(50% - 1rem);
 	}
 	.essay .page-details.vertical figure{
-		width: 50%;
+		width: calc(50% - 1rem);
 	}
 }
 @media only screen and (min-width: 992px){
@@ -801,14 +801,14 @@ article > .toc + section{
 	}
 }
 /* image container */
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
 	.essay .page-details.horizontal figure{
 		min-width: 478px;
 	}
 	.essay .page-details.vertical figure{
 		min-width: 488px;
 	}
-}
+} */
 /* @media only screen and (min-width: 1200px){	
 	.essay .page-details.horizontal figure{
 		min-width: 698px;

@@ -357,18 +357,18 @@ main{
 		margin: 1rem 1rem 2rem;
 	}
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px){
 	.essay .page-details.horizontal div{
-		width: 43%;
+		width: calc(43% - 1rem);
 	}
 	.essay .page-details.horizontal figure{
-		width: 57%;
+		width: calc(57% - 1rem);
 	}
 	.essay .page-details.vertical div{
-		width: 50%;
+		width: calc(50% - 1rem);
 	}
 	.essay .page-details.vertical figure{
-		width: 50%;
+		width: calc(50% - 1rem);
 	}
 }
 @media only screen and (min-width: 992px){

@@ -325,6 +325,7 @@ main{
 }
 /*********/
 .essay .page-details{
+	width: 100%;
 	display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -337,7 +338,6 @@ main{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details{
-		width: 100%;
 		display: -webkit-flex;
   	display: flex;
 		flex-direction: row-reverse;
@@ -421,27 +421,29 @@ main{
 		font-size: 1.05rem;
 	}
 }
-/* image container */
-@media only screen and (min-width: 768px){
-	.essay .page-details.horizontal figure{
-		min-width: 478px;
-	}
-	.essay .page-details.vertical figure{
-		min-width: 488px;
-	}
-}
-/*********/
 .image-wrapper{
 	line-height: 0;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 	position: relative;
 }
-@media only screen and (min-width: 992px){
-	.image-wrapper{
-		position: inherit;
-	}
+.image-wrapper::after{
+	content: "";
+	display: block;
 }
+.image-wrapper img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	/* object-fit:cover;
+	-o-object-fit: cover;
+	object-position: 50% 50%; */
+}
+/*********/
 .caption-icon{
 	margin: 0;
 	bottom: .5rem;

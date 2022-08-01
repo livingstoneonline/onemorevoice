@@ -3478,13 +3478,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	/* left-align last row */
 	/* Adapted from https://wpbeaches.com/centering-last-item-flexbox-container/ */
 	/* Also see https://travishorn.com/some-ways-to-align-the-last-row-in-a-flexbox-grid-720f365dcb16 and https://stackoverflow.com/questions/18744164/flex-box-align-last-row-to-grid */
-	/* Still an issue in  that padding on full rows kicks out extra space below, but good enough for now */
+	/* Still an issue in that any flexbox with more than two in a single row will have the last row misaligned */
 	@media only screen and (min-width: 480px){
 		.visuals.gallery::after{
 			content: "";
 			height: 0;
-			/* flex: 1 0 calc(50% - 1rem);	 */
-			flex: auto;
+			flex: 1 0 calc(50% - 1rem);	
 		}
 	}
 	@media only screen and (min-width: 624px){
@@ -3496,8 +3495,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.visuals.gallery::after{
 			content: "";
 			height: 0;
-			/* flex: 1 0 calc(33.33% - 1.33333rem); */
-			flex: auto;
+			flex: 1 0 calc(33.33% - 1.33333rem);
 		}
 		.films.gallery::after{
 			content: "";
@@ -3534,8 +3532,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.visuals.gallery::after{
 			content: "";
 			height: 0;
-			/* flex: 1 0 calc(25% - 1.5rem); */
-			flex: auto;
+			flex: 1 0 calc(25% - 1.5rem);
 		}
 		.films.gallery::after{
 			content: "";
@@ -3552,8 +3549,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.visuals.gallery::after{
 			content: "";
 			height: 0;
-			/* flex: 1 0 calc(20% - 1.75rem); */
-			flex: auto;
+			flex: 1 0 calc(20% - 1.75rem);
 		}
 	}
 	@media only screen and (min-width: 1600px){
@@ -3571,8 +3567,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		.visuals.gallery::after{
 			content: "";
 			height: 0;
-			/* flex: 1 0 calc(17% - 2rem); */
-			flex: auto;
+			flex: 1 0 calc(17% - 2rem);
 		}
 		.films.gallery::after{
 			flex: 1 0 calc(25% - 2.5rem);

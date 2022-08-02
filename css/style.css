@@ -814,27 +814,6 @@ article > .toc + section{
 	/* padding-bottom: calc((height/width)*100%) */
 	/* supply padding-bottom hard-coded in html file */
 }
-/* @media only screen and (min-width: 768px){
-	.essay .page-details.horizontal figure{
-		min-width: 478px;
-	}
-	.essay .page-details.vertical figure{
-		min-width: 488px;
-	}
-} */
-/* @media only screen and (min-width: 1200px){	
-	.essay .page-details.horizontal figure{
-		min-width: 698px;
-	}
-	.essay .page-details.vertical.alternative figure{
-		min-width: 488px;
-	}
-}
-@media only screen and (min-width: 1366px){	
-	.essay .page-details.vertical.alternative figure{
-		min-width: 636px;
-	}
-} */
 /* image in image container */
 .image-wrapper img{
 	width: 100%;
@@ -843,9 +822,6 @@ article > .toc + section{
 	left: 0;
 	top: 0;
 	overflow: hidden;
-	/* object-fit:cover;
-	-o-object-fit: cover;
-	object-position: 50% 50%; */
 }
 
 

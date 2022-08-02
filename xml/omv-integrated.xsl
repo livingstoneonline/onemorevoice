@@ -463,7 +463,7 @@
 					<xsl:copy-of select="$custom-note"/>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">The editors produced this edition through a rigorous process that involved  using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF). However, users are encouraged to consult the original document if possible.</xsl:when>
-				<xsl:otherwise>The editors produced this edition through a rigorous process that involved transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF)re. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
+				<xsl:otherwise>The editors produced this edition through a rigorous process that involved transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF). Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="warning">

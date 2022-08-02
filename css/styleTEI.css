@@ -243,6 +243,19 @@ Editorial Elements
 		gap: .5rem;
 	}
 }
+.transcription p.associated-links .lead-in{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 480px){
+	.transcription p.associated-links .lead-in{
+		font-size: .9em;
+		text-transform: uppercase;
+		margin-right: -.25rem;
+		display: inline-block;
+		visibility: visible;
+	}
+}
 .transcription p.associated-links a{
 	font-variant: normal;
 	/* text-decoration: none; */

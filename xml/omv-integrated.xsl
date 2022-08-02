@@ -420,8 +420,8 @@
 		</xsl:variable>
 		<xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
-				<xsl:otherwise><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><span class="lead-in">Back to:</span><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
+				<xsl:otherwise><span class="lead-in">Back to:</span><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="subtitle-icon">
@@ -463,7 +463,7 @@
 					<xsl:copy-of select="$custom-note"/>
 				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">The editors produced this edition through a rigorous process that involved  using the following workflow: 1) Convert PDF of original document via OCR to Word; 2) Convert Word to XML; 3) Proofread XML against PDF of original document; and 4) Edit and encode XML using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF). However, users are encouraged to consult the original document if possible.</xsl:when>
-				<xsl:otherwise>The editors produced this edition through a rigorous process that involved transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF). Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
+				<xsl:otherwise>The editors produced this edition through a rigorous process that involved transcribing and encoding the text directly from images of the original document using the <em>One More Voice</em><xsl:text> </xsl:text><a href="/pdf/OMV-Coding-Guidelines.pdf">coding guidelines</a> (PDF)re. Users, however, are encouraged to consult the original document if possible.</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="warning">

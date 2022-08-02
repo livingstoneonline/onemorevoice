@@ -212,16 +212,11 @@ main{
  }
 .home .introduction-section .image-wrapper,
 .categories .introduction-section .image-wrapper{
+	width: calc(100vw - 2px);
+	max-width: 1600px;
 	display: block;
 	visibility: visible;
 	position: relative;
-}
-.home .introduction-section img,
-.categories .introduction-section img{
-	margin: 0 auto;
-	padding: 0;
-	width: calc(100vw - 2px);
-	max-width: 1600px;
 }
 .home .introduction-section .introduction-text,
 .categories .introduction-section .introduction-text{

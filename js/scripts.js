@@ -74,6 +74,20 @@ function RandomiseHref(){
 };
 
 
+// Prevents the title attribute from appearing in a tooltip on mouseover on images
+// Adapted from https://spigotdesign.com/hide-title-attribute-hover-dont-remove/
+$("img").hover(function(){
+	var title = $(this).attr("title");
+	$(this).attr("tmp_title", title);
+	$(this).attr("title","");	
+});
+
+$("img").click(function(){
+	var title = $(this).attr("tmp_title");
+	$(this).attr("title", title);
+});
+
+
 // Needed to prevent a "Best Practices" issue created by Google Translate
 // Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
 

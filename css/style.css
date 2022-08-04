@@ -32,6 +32,7 @@ Table of Contents
 17.3. Google Translate
 17.4. Font-Awesome Buttons
 17.5. Hamburger Menu and Close
+17.6. Breadcrumbs
 18. Overlay
 19. Footer
 20. Scroll to Top Button
@@ -1704,24 +1705,24 @@ a.action-button i{
 header{
 	background: #212119;
 	margin: 0 auto;
-	padding: .3rem 0;
-	height: 40.6px;
+	padding: 0 0 .3rem;
+	height: 64.4px;
 	width: 100%;
 	max-width: 1600px;
 	display: -webkit-flex;
   display: flex;
+	flex-direction: column;
   align-items: center;
 }
 @media only screen and (min-width: 480px){
 	header{
-		padding: .25rem 0;
-		height: 48px;
+		padding: 0;
+		height: 73.6px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		padding: .1rem .25rem;
-		height: 55.2px;
+		height: 76.6px;
 	}
 }
 .nav-container{
@@ -1899,7 +1900,7 @@ nav .logo-container a:focus h1{
 	text-align: unset !important;
 }
 .translate-widget{
-	margin: .4rem auto .5rem;
+	margin: 0 auto;
 }
 .translate{
 	padding-right: 5px;
@@ -1916,12 +1917,12 @@ nav .logo-container a:focus h1{
 }
 @media only screen and (min-width: 480px){
 	.translate-widget{
-		margin: .6rem auto .6rem 0;
+		margin: 0 auto 0 0;
 	}
 }
 @media only screen and (min-width: 624px){
 	.translate-widget{
-		margin: .6rem 0;
+		margin: 0;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -2286,15 +2287,56 @@ nav .close-icon:focus-within
 }
 
 
+/* 17.6. Breadcrumbs */
+
+header nav.breadcrumbs{
+	padding: 0;
+	width: 100%;
+}
+header nav.breadcrumbs ul{
+	font-size: .75rem;
+	color: #fff;
+	list-style: none;
+	line-height: 1rem;
+	padding:  .25rem .25rem .35rem;
+	display: -webkit-flex;
+	display: flex;
+}
+@media only screen and (min-width: 480px){
+	header nav.breadcrumbs ul{
+		padding:  .25rem .25rem .6rem;	
+	}
+}
+@media only screen and (min-width: 768px){
+	header nav.breadcrumbs ul{
+		font-size: .83rem;
+	}
+}
+header nav.breadcrumbs ul li:not(:last-child):after{
+	content: '>';
+	margin: 0 .5rem 0 .25rem;
+}
+header nav.breadcrumbs ul li a{
+	text-decoration: underline;
+	padding: .15rem .25rem;
+}
+header nav.breadcrumbs ul li a:hover,
+header nav.breadcrumbs ul li a:focus{
+	color: #fff;
+	background: #212119;
+	outline: 1px solid #fff;
+}
+
+
 /* 18. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
 .overlay{
 	font-size: 1.05rem;
 	text-align: center;
-	margin: 40.6px auto 0;
+	margin: 64.4px auto 0;
 	padding: 0;
-	height: calc(100% - 40.6px);
+	height: calc(100% - 64.4px);
 	width: 100%;
 	max-width: 1600px;
 	top: 0;
@@ -2307,15 +2349,15 @@ nav .close-icon:focus-within
 }
 @media only screen and (min-width: 480px){
 	.overlay{
-		margin-top: 48px;
-		height: calc(100% - 48px);
+		margin-top: 73.6px;
+		height: calc(100% - 73.6px);
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
-		margin-top: 55.2px;
-		height: calc(100% - 55.2px);
+		margin-top: 76.6px;
+		height: calc(100% - 76.6px);
 	}
 }
 @media only screen and (min-width: 624px){

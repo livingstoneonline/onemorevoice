@@ -85,9 +85,32 @@
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
 			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
+			<xsl:variable name="material-link">
+				<xsl:choose>
+					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">/visual_materials.html</xsl:when>
+					<xsl:otherwise>/texts.html</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+	
+			<xsl:variable name="material">
+				<xsl:choose>
+					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">Visual Materials</xsl:when>
+					<xsl:otherwise>Recovered Texts</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+
 			<body class="transcription materials" id="body">
 
 				<header>
+					<nav class="breadcrumbs">
+						<ul>
+							<li id="level-1"><a href="/">Home</a></li>
+							<li id="level-2" class="full-crumb"><a href="/materials.html">Historical Materials</a></li>
+							<li id="level-2" class="brief-crumb"><a href="/materials.html" title="Historical Materials">[...]</a></li>
+							<li id="level-3"><a href="{$material-link}"><xsl:value-of select="$material"/></a></li>
+							<li id="level-3">[This Page]</li>
+						</ul>
+					</nav>
 					<div class="nav-container" data-include="header">
 						<nav class="fallback">
 							<span class="logo-container">
@@ -418,12 +441,12 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:variable name="subtitle">
+		<!-- <xsl:variable name="subtitle">
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><span class="lead-in">Back to:</span><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
 				<xsl:otherwise><span class="lead-in">Back to:</span><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
 			</xsl:choose>
-		</xsl:variable>
+		</xsl:variable> -->
 		<xsl:variable name="subtitle-icon">
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">visual-material</xsl:when>
@@ -771,7 +794,8 @@
 		<main id="main" aria-labelledby="item-title">
 			<section class="text-object">
 				<h2 id="item-title"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></h2>
-				<p class="associated-links {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></p>
+				<!-- <p class="associated-links {$subtitle-icon}"><xsl:copy-of select="$subtitle"/></p> -->
+				<p class="associated-links {$subtitle-icon}"><a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-label="Information icon" aria-hidden="true"></i> <span>Item Details</span></a></p>
 				<xsl:copy-of select="$warning"/>
 				<xsl:copy-of select="$text-object"/>
 			</section>

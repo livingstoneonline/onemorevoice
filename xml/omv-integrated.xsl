@@ -108,7 +108,7 @@
 							<li id="level-2" class="full-crumb"><a href="/materials.html">Historical Materials</a></li>
 							<li id="level-2" class="brief-crumb"><a href="/materials.html" title="Historical Materials">[...]</a></li>
 							<li id="level-3"><a href="{$material-link}"><xsl:value-of select="$material"/></a></li>
-							<li id="level-3">[This Page]</li>
+							<li id="level-4">[This Page]</li>
 						</ul>
 					</nav>
 					<div class="nav-container" data-include="header">

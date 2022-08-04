@@ -87,6 +87,7 @@ Table of Contents
 (light mid-gray) #bdc2bd;
 (gray-green): #697c6f;
 (mid-gray) #737d73;
+(dark blue in grayscale, made lighter): #737373
 (dark blue in grayscale) #575757;
 (dark gray) #4d5b51; (contrast checked)
 
@@ -1705,8 +1706,8 @@ a.action-button i{
 header{
 	background: #212119;
 	margin: 0 auto;
-	padding: 0 0 .3rem;
-	height: 64.4px;
+	padding: 0;
+	height: 79.8px;
 	width: 100%;
 	max-width: 1600px;
 	display: -webkit-flex;
@@ -1717,20 +1718,35 @@ header{
 @media only screen and (min-width: 480px){
 	header{
 		padding: 0;
-		height: 73.6px;
+		height: 85px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		height: 76.6px;
+		height: 91.2px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	header{
+		height: 94.4px;
 	}
 }
 .nav-container{
-	padding: 0 .5rem;
+	padding: .4rem .5rem;
 	width: 100%;
 	display: -webkit-flex;
   display: flex;
 	justify-content: center;
+}
+@media only screen and (min-width: 480px){
+	.nav-container{
+		padding: .5rem .5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.nav-container{
+		padding: .6rem .5rem;
+	}
 }
 header nav{
 	width: 100%;
@@ -2290,7 +2306,8 @@ nav .close-icon:focus-within
 /* 17.6. Breadcrumbs */
 
 header nav.breadcrumbs{
-	padding: 0;
+	border-bottom: 1px solid #737373;
+	padding: .1rem 0;
 	width: 100%;
 }
 header nav.breadcrumbs ul{
@@ -2298,18 +2315,15 @@ header nav.breadcrumbs ul{
 	color: #fff;
 	list-style: none;
 	line-height: 1rem;
-	padding:  .25rem .25rem .35rem;
+	padding:  .4rem .5rem;
+	width: 100%;
 	display: -webkit-flex;
 	display: flex;
-}
-@media only screen and (min-width: 480px){
-	header nav.breadcrumbs ul{
-		padding:  .25rem .25rem .6rem;	
-	}
 }
 @media only screen and (min-width: 768px){
 	header nav.breadcrumbs ul{
 		font-size: .83rem;
+		padding: .5rem;
 	}
 }
 header nav.breadcrumbs ul li:not(:last-child):after{
@@ -2348,9 +2362,9 @@ header nav.breadcrumbs ul li a:focus{
 .overlay{
 	font-size: 1.05rem;
 	text-align: center;
-	margin: 64.4px auto 0;
+	margin: 79.8px auto 0;
 	padding: 0;
-	height: calc(100% - 64.4px);
+	height: calc(100% - 79.8px);
 	width: 100%;
 	max-width: 1600px;
 	top: 0;
@@ -2363,15 +2377,22 @@ header nav.breadcrumbs ul li a:focus{
 }
 @media only screen and (min-width: 480px){
 	.overlay{
-		margin-top: 73.6px;
-		height: calc(100% - 73.6px);
+		margin-top: 85px;
+		height: calc(100% - 85px);
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
-		margin-top: 76.6px;
-		height: calc(100% - 76.6px);
+		margin-top: 91.2px;
+		height: calc(100% - 91.2px);
+	}
+}
+@media only screen and (min-width: 1200px){
+	.overlay{
+		font-size: 1.1rem;
+		margin-top: 94.4px;
+		height: calc(100% - 94.4px);
 	}
 }
 @media only screen and (min-width: 624px){

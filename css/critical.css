@@ -603,8 +603,8 @@ a.action-button i{
 header{
 	background: #212119;
 	margin: 0 auto;
-	padding: 0 0 .3rem;
-	height: 64.4px;
+	padding: 0;
+	height: 79.8px;
 	width: 100%;
 	max-width: 1600px;
 	display: -webkit-flex;
@@ -615,20 +615,35 @@ header{
 @media only screen and (min-width: 480px){
 	header{
 		padding: 0;
-		height: 73.6px;
+		height: 85px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		height: 76.6px;
+		height: 91.2px;
+	}
+}
+@media only screen and (min-width: 1200px){
+	header{
+		height: 94.4px;
 	}
 }
 .nav-container{
-	padding: 0 .5rem;
+	padding: .4rem .5rem;
 	width: 100%;
 	display: -webkit-flex;
   display: flex;
 	justify-content: center;
+}
+@media only screen and (min-width: 480px){
+	.nav-container{
+		padding: .5rem .5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.nav-container{
+		padding: .6rem .5rem;
+	}
 }
 header nav{
 	width: 100%;
@@ -914,6 +929,50 @@ nav .close .fa-times{
 	nav .hamburger-menu .fa-bars,
 	nav .close .fa-times{
 		font-size: 1.7rem;
+	}
+}
+/*********/
+header nav.breadcrumbs{
+	border-bottom: 1px solid #575757;
+	padding: .1rem 0;
+	width: 100%;
+}
+header nav.breadcrumbs ul{
+	font-size: .75rem;
+	color: #fff;
+	list-style: none;
+	line-height: 1rem;
+	padding: .4rem .5rem;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+}
+@media only screen and (min-width: 768px){
+	header nav.breadcrumbs ul{
+		font-size: .83rem;
+		padding: .5rem;
+	}
+}
+header nav.breadcrumbs ul li:not(:last-child):after{
+	content: '>';
+	margin: 0 .5rem 0 .25rem;
+}
+header nav.breadcrumbs ul li a{
+	text-decoration: underline;
+	padding: .15rem .25rem;
+}
+.full-crumb{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 480px){
+	.brief-crumb{
+		display: none;
+		visibility: hidden;
+	}
+	.full-crumb{
+		display: block;
+		visibility: visible;
 	}
 }
 /*********/

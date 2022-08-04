@@ -2326,6 +2326,20 @@ header nav.breadcrumbs ul li a:focus{
 	background: #212119;
 	outline: 1px solid #fff;
 }
+.full-crumb{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 480px){
+	.brief-crumb{
+		display: none;
+		visibility: hidden;
+	}
+	.full-crumb{
+		display: block;
+		visibility: visible;
+	}
+}
 
 
 /* 18. Overlay */
@@ -2714,6 +2728,11 @@ aside.text-box{
 }
 aside.warning-box{
 	margin: 1.5rem auto 2.5rem;
+}
+@media only screen and (min-width: 992px){
+	aside.warning-box{
+		margin: 1rem auto 2.5rem;
+	}
 }
 aside.warning-box.violence,
 aside.warning-box.language{

@@ -1496,17 +1496,16 @@ a:focus{
 }
 a[aria-label="External Link"]:after{
 	content: "\f08e";
-	font: normal normal normal 14px/1 ForkAwesome;
-	margin: 0 .1rem 0 .15rem;
-	display: inline-block;
-	-moz-osx-font-smoothing: grayscale;
 }
 a[aria-label="External Client"]:after{
 	content: "\f003";
+}
+a[aria-label="External Link"]:after,
+a[aria-label="External Client"]:after{
 	font: normal normal normal 14px/1 ForkAwesome;
-	margin: 0 .1rem 0 .15rem;
-	display: inline-block;
 	-moz-osx-font-smoothing: grayscale;
+	margin: 0 .1rem 0 .15rem;
+	display: none;
 }
 footer a[aria-label="External Link"]:after,
 footer a[aria-label="External Client"]:after{

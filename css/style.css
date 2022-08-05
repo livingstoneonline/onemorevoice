@@ -1508,7 +1508,10 @@ a[aria-label="External Client"]:after{
 	display: inline-block;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+footer a[aria-label="External Link"]:after,
+footer a[aria-label="External Client"]:after{
+	margin: 0 .1rem 0 .2rem;
+}
 
 /* 15. Action Buttons */
 

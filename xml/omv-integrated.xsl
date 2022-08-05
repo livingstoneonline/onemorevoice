@@ -105,7 +105,7 @@
 					<nav class="breadcrumbs">
 						<ul>
 							<li id="level-1"><a href="/">Home</a></li>
-							<li id="level-2"><a href="/materials.html">Historical Materials</a></li>
+							<li id="level-2"c><a href="/materials.html">Historical Materials</a></li>
 							<li id="level-3"><a href="{$material-link}"><xsl:value-of select="$material"/></a></li>
 							<li id="level-4"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></li>
 						</ul>
@@ -308,7 +308,7 @@
 		<xsl:variable name="collection-spec">
 			<xsl:choose>
 			<xsl:when test="//sourceDesc/msDesc/msIdentifier/collection[@ref]">
-				<a href="{$collection-link}"><xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/></a>
+				<a aria-label="External Link" href="{$collection-link}"><xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/></a>
 			</xsl:when>
 			<xsl:when test="not(//sourceDesc/msDesc/msIdentifier/collection[@ref])">
 				<xsl:value-of select="//sourceDesc/msDesc/msIdentifier/collection"/>

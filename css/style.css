@@ -1494,7 +1494,7 @@ a:focus{
 	background: #E7E9E7;
 	outline: 3px solid #e3b382;
 }
-a.external-link:after{
+a[aria-label="External Link"]:after{
 	content: "\f08e";
 	font: normal normal normal 14px/1 ForkAwesome;
 	margin: 0 .1rem 0 .15rem;

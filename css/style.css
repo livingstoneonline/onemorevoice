@@ -1498,6 +1498,10 @@ a:focus{
 	background: #E7E9E7;
 	outline: 3px solid #e3b382;
 }
+a[aria-label="External Link"],
+a[aria-label="External Client"]{
+	margin-right: .15rem;
+}
 a[aria-label="External Link"]:after{
 	content: "\f08e";
 }
@@ -1508,11 +1512,11 @@ a[aria-label="External Link"]:after,
 a[aria-label="External Client"]:after{
 	font: normal normal normal 14px/1 ForkAwesome;
 	-moz-osx-font-smoothing: grayscale;
-	margin: 0 .1rem 0 .25rem;
+	padding-left: .15rem;
 }
 footer a[aria-label="External Link"]:after,
 footer a[aria-label="External Client"]:after{
-	margin: 0 .1rem 0 .2rem;
+	padding-left: .2rem;
 }
 
 /* 15. Action Buttons */

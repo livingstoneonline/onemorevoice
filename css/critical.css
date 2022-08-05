@@ -508,6 +508,26 @@ a:visited{
 	color: #305056;
 	background: transparent;
 }
+a[aria-label="External Link"],
+a[aria-label="External Client"]{
+	margin-right: .15rem;
+}
+a[aria-label="External Link"]:after{
+	content: "\f08e";
+}
+a[aria-label="External Client"]:after{
+	content: "\f003";
+}
+a[aria-label="External Link"]:after,
+a[aria-label="External Client"]:after{
+	font: normal normal normal 14px/1 ForkAwesome;
+	-moz-osx-font-smoothing: grayscale;
+	padding-left: .15rem;
+}
+footer a[aria-label="External Link"]:after,
+footer a[aria-label="External Client"]:after{
+	padding-left: .2rem;
+}
 /*********/
 a.action-button,
 a.action-button:visited,

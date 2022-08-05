@@ -345,9 +345,9 @@
 		<xsl:variable name="copyright">
 			<xsl:choose>
 			<xsl:when test="//availability/licence[@target]">
-				<xsl:copy-of select="$availP1"/><xsl:text> </xsl:text><a href="{$license1}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[1]"/></a>
+				<xsl:copy-of select="$availP1"/><xsl:text> </xsl:text><a aria-label="External Link"  href="{$license1}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[1]"/></a>
 				<xsl:if test="//availability/p[2]">
-					<xsl:text>. </xsl:text><xsl:copy-of select="$availP2"/><xsl:text> </xsl:text><a href="{$license2}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[2]"/></a>.
+					<xsl:text>. </xsl:text><xsl:copy-of select="$availP2"/><xsl:text> </xsl:text><a aria-label="External Link" href="{$license2}"><xsl:value-of select="//teiHeader//publicationStmt/availability/licence[2]"/></a>.
 				</xsl:if>
 			</xsl:when>
 			<xsl:when test="not(//availability/licence[@target])">
@@ -680,9 +680,9 @@
 						<xsl:variable name="source-link2">
 							<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
 						</xsl:variable>
-						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a aria-label="External Link" href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
 						<xsl:if test="//publicationStmt/ref[2]">
-							<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
+							<xsl:text>; </xsl:text><a aria-label="External Link" href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 						</xsl:if>
 						</p>
 					</xsl:if>
@@ -709,9 +709,9 @@
 						<xsl:variable name="source-link2">
 							<xsl:value-of select="//publicationStmt/ref[2]/@target"/>
 						</xsl:variable>
-						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
+						<p><strong>Explore complete/original item:</strong><xsl:text> </xsl:text><a aria-label="External Link" href="{$source-link1}"><xsl:value-of select="//publicationStmt/ref[1]"/></a>
 						<xsl:if test="//publicationStmt/ref[2]">
-							<xsl:text>; </xsl:text><a href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
+							<xsl:text>; </xsl:text><a aria-label="External Link" href="{$source-link2}"><xsl:value-of select="//publicationStmt/ref[2]"/></a>
 						</xsl:if>
 						</p>
 					</xsl:if>
@@ -740,7 +740,7 @@
 							<xsl:for-each select="//publicationStmt/ref">
 								<xsl:variable name="link" select="@target"/>
 								<xsl:variable name="source" select="node()"/>
-								<a href="{$link}"><xsl:value-of select="$source"/></a>
+								<a aria-label="External Link" href="{$link}"><xsl:value-of select="$source"/></a>
 							 	<xsl:if test="position() != last()">
 									<xsl:text>; </xsl:text>
 							 	</xsl:if>
@@ -775,7 +775,7 @@
 							<xsl:for-each select="//publicationStmt/ref">
 								<xsl:variable name="link" select="@target"/>
 								<xsl:variable name="source" select="node()"/>
-								<a href="{$link}"><xsl:value-of select="$source"/></a>
+								<a aria-label="External Link" href="{$link}"><xsl:value-of select="$source"/></a>
 							 	<xsl:if test="position() != last()">
 									<xsl:text>; </xsl:text>
 							 	</xsl:if>
@@ -1364,10 +1364,14 @@
 	</xsl:template>
 
 	<xsl:template match="//fileDesc/publicationStmt/availability/p/ref[@target]">
+		<xsl:variable name="aria-label">
+			<xsl:if test="starts-with(@target, 'mailto')">External Client</xsl:if>
+			<xsl:if test="starts-with(@target, 'http')">External Link</xsl:if>
+		</xsl:variable>
 		<xsl:variable name="link">
 			<xsl:value-of select="@target"/>
 		</xsl:variable>
-		<a href="{$link}"><xsl:apply-templates/></a>
+		<a aria-label="{$aria-label}" href="{$link}"><xsl:apply-templates/></a>
 	</xsl:template>
 
 	<xsl:template match="rdg">

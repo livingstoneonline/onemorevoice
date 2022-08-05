@@ -953,26 +953,43 @@ header nav.breadcrumbs ul{
 		padding: .5rem;
 	}
 }
-header nav.breadcrumbs ul li:not(:last-child):after{
+header nav.breadcrumbs ul li:not(:first-child):before{
 	content: '/';
-	margin: 0 .5rem 0 .25rem;
+	margin: 0 .25rem;
 }
 header nav.breadcrumbs ul li a{
 	text-decoration: underline;
 	padding: .15rem .25rem;
 }
-.full-crumb{
-	display: none;
-	visibility: hidden;
+#level-3,
+.transcription #level-2,
+.transcription #level-4{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#level-3{
+	max-width: 9rem;
+}
+.transcription #level-2{
+	max-width: 3rem;
+}
+.transcription #level-4{
+	max-width: 6rem;
 }
 @media only screen and (min-width: 480px){
-	.brief-crumb{
-		display: none;
-		visibility: hidden;
+	#level-3,
+	.transcription #level-2{
+		max-width: none;
+		overflow: inherit;
 	}
-	.full-crumb{
-		display: block;
-		visibility: visible;
+	.transcription #level-4{
+		max-width: 10rem;
+	}
+}
+@media only screen and (min-width: 768px){
+	.transcription #level-4{
+		max-width: 13rem;
 	}
 }
 /*********/

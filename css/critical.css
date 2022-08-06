@@ -35,7 +35,6 @@ html{
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 	overflow-x: hidden;
-	overflow-y: scroll;
 }
 body{
 	margin: 0 auto;
@@ -757,7 +756,7 @@ nav .logo-container a h1{
 	padding-right: 5px;
   width: 203px;
   height: 32px;
-	overflow: hidden;
+	overflow: hidden !important;
 	display: none;
 	visibility: hidden;
 }

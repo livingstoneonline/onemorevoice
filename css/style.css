@@ -2433,9 +2433,9 @@ header nav.breadcrumbs ul li a:focus{
 	width: 100%;
 	max-width: 1600px;
 	top: 0;
-	position: fixed; /* Stay in place */
-	z-index: 100; /* Sit on top */
-	overflow-x: hidden; /* Disable horizontal scroll */
+	position: fixed;
+	z-index: 100;
+	overflow-x: hidden;
 	overflow-y: scroll;
 	display: none;
 	visibility: hidden;
@@ -2455,7 +2455,6 @@ header nav.breadcrumbs ul li a:focus{
 }
 @media only screen and (min-width: 1200px){
 	.overlay{
-		font-size: 1.1rem;
 		margin-top: 94.4px;
 		height: calc(100% - 94.4px);
 	}

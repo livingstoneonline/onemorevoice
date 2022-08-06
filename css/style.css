@@ -193,7 +193,6 @@ html{
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 	overflow-x: hidden;
-	overflow-y: scroll;
 }
 body{
 	margin: 0 auto;
@@ -1945,7 +1944,7 @@ nav .logo-container a:focus h1{
 	padding-right: 5px;
   width: 203px;
   height: 32px;
-	overflow: hidden;
+	overflow: hidden !important;
 	display: none;
 	visibility: hidden;
 }
@@ -2436,7 +2435,6 @@ header nav.breadcrumbs ul li a:focus{
 	position: fixed;
 	z-index: 100;
 	overflow-x: hidden;
-	overflow-y: scroll;
 	display: none;
 	visibility: hidden;
 }

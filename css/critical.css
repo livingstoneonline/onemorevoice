@@ -750,7 +750,7 @@ nav .logo-container a h1{
 	text-align: unset !important;
 }
 .translate-widget{
-	margin: .4rem 1rem .5rem .3rem;
+	margin: 0 auto;
 }
 .translate{
 	padding-right: 5px;
@@ -762,7 +762,12 @@ nav .logo-container a h1{
 }
 @media only screen and (min-width: 480px){
 	.translate-widget{
-		margin: .6rem .3rem;
+		margin: 0 auto 0 0;
+	}
+}
+@media only screen and (min-width: 624px){
+	.translate-widget{
+		margin: 0;
 	}
 }
 @media only screen and (min-width: 992px){

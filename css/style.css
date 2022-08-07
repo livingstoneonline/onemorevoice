@@ -181,8 +181,22 @@ button{
 	color: #212119;
 }
 html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 	background: #ededed;
-	/* overflow-wrap: break-word;
+}
+body{
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: antialiased;
+	border: 1px solid #212119;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%; /* prevents overflow of frame */
+	overflow-x: hidden; /* prevents overflow of frame */
+	top: 0px !important; /* needed for Google Translate */
+}
+/* word break options; used only as needed */
+/* overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
 	-ms-word-break: break-all;
@@ -190,25 +204,11 @@ html{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto; */
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-	overflow-x: hidden;
-}
-body{
-	margin: 0 auto;
-	padding: 0;
-	border: 1px solid #212119;
-	max-width: 100%;
-	-moz-osx-font-smoothing: auto;
-	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden;
-	top: 0px !important; /* Needed for Google Translate */
-}
 
 
 /* 02. Section-Specific Colors */
 
-/* blue border left, organge bottom, yellow frame */
+/* primary materials: blue border left, organge bottom, yellow frame */
 .home h2,
 .documents h2{
 	border-left: 12px solid #8db7bf;
@@ -217,11 +217,14 @@ body{
 .documents h3{
 	border-bottom: 8px solid #e3b382;
 }
+.materials .content.recovered #texts h4{
+	border-bottom: 4px solid #dcd3a6;
+}
 .materials .content.recovered #books h4{
 	border-bottom: 4px solid #a4b48b;
 }
-.materials .content.recovered #texts h4{
-	border-bottom: 4px solid #dcd3a6;
+.content.recovered div.decoration{
+	background: #bdc2bd;
 }
 .home .toc ol:before,
 .documents .toc ol:before{
@@ -231,8 +234,7 @@ body{
 .documents .content div.decoration{
 	background: #dcd3a6;
 }
-
-/* yellow border left, yellow border bottom, blue frame */
+/* secondary materials: yellow border left, yellow border bottom, blue frame */
 .materials h2{
 	border-left: 12px solid #dcd3a6;
 }
@@ -245,11 +247,6 @@ body{
 .categories .content div.decoration,
 .materials .content div.decoration{
 	background: #8db7bf;
-}
-
-/* gray frame for recovered */
-.content.recovered div.decoration{
-	background: #bdc2bd;
 }
 
 

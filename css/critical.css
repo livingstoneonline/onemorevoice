@@ -31,20 +31,19 @@ button{
 	color: #212119;
 }
 html{
-	background: #ededed;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-	overflow-x: hidden;
+	background: #ededed;
 }
 body{
-	margin: 0 auto;
-	padding: 0;
-	border: 1px solid #212119;
-	max-width: 100%;
 	-moz-osx-font-smoothing: auto;
 	-webkit-font-smoothing: antialiased;
+	border: 1px solid #212119;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%;
 	overflow-x: hidden;
-	top: 0px !important; /* Needed for Google Translate */
+	top: 0px !important;
 }
 /*********/
 .home h2,

@@ -1536,8 +1536,6 @@ a.action-button:visited,
 #rotate-button{
 	font-weight: 600;
 	text-decoration: none;
-	text-transform: uppercase;
-	color: #305056;
 	background: #fff;
 	-webkit-box-shadow: #697c6f 0px 3px 7px 0px;
 	-moz-box-shadow: #697c6f 0px 3px 7px 0px;
@@ -1545,9 +1543,7 @@ a.action-button:visited,
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
 	border-radius: 16px;
-	margin: 2rem 0 0;
 	padding: 10px 30px;
-	align-self: center;
 }
 @media only screen and (min-width: 1200px){
 	a.action-button,
@@ -1561,12 +1557,10 @@ a.action-button:visited,
 	color: #212119;
 	background: #F1EACA;
 }
-.action-button.secondary,
 .home .action-button.secondary{
 	color: #212119;
 	background: #EECFA7;
 }
-.action-button.tertiary,
 .home .action-button.tertiary{
 	color: #212119;
 	background: #aeced9;
@@ -1661,9 +1655,11 @@ a.action-button i{
 .tooltip-container:focus-within{
 	z-index: 101;
 }
+/* logo-container for OMV icon on all pages */
 .logo-container .tooltip-container{
 	display: block;
 }
+/* caption-icon for main image info on all pages */
 .caption-icon .tooltip-container:hover,
 .caption-icon .tooltip-container:focus-within{
 	z-index: 99;

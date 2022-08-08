@@ -208,7 +208,7 @@ button{
 
 /* 02. Division-Specific Colors */
 
-/* primary materials: blue border left, organge bottom, yellow frame */
+/* combo #1: blue border left, organge bottom, yellow frame */
 .home h2,
 .documents h2{
 	border-left: 12px solid #8db7bf;
@@ -223,9 +223,6 @@ button{
 .materials .content.recovered #books h4{
 	border-bottom: 4px solid #a4b48b;
 }
-.content.recovered div.decoration{
-	background: #bdc2bd;
-}
 .home .toc ol:before,
 .documents .toc ol:before{
 	border-bottom: 4px solid #e3b382;
@@ -234,7 +231,7 @@ button{
 .documents .content div.decoration{
 	background: #dcd3a6;
 }
-/* secondary materials: yellow border left, yellow border bottom, blue frame */
+/* combo #@: yellow border left, yellow border bottom, blue frame */
 .materials h2{
 	border-left: 12px solid #dcd3a6;
 }
@@ -244,9 +241,12 @@ button{
 .materials .toc ol:before{
 	border-bottom: 4px solid #dcd3a6;
 }
-.categories .content div.decoration,
+.essays .content div.decoration,
 .materials .content div.decoration{
 	background: #8db7bf;
+}
+.content.recovered div.decoration{
+	background: #bdc2bd;
 }
 
 
@@ -866,6 +866,7 @@ article > .toc + section{
 }
 .caption i{
 	color: #4d5b51;
+}
 /* stopped here */
 
 

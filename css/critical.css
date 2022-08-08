@@ -3,27 +3,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.mobile{
-	display: inherit;
-	visibility: visible;
-}
-.desktop{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	.mobile{
-		display: none;
-		visibility: hidden;
-	}
-	.desktop{
-		display: inherit;
-		visibility: visible;
-	}
-}
-button{
-  -webkit-appearance: button;
-}
 :root{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
@@ -44,6 +23,27 @@ body{
 	max-width: 100%;
 	overflow-x: hidden;
 	top: 0px !important;
+}
+button{
+  -webkit-appearance: button;
+}
+.mobile{
+	display: inherit;
+	visibility: visible;
+}
+.desktop{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	.mobile{
+		display: none;
+		visibility: hidden;
+	}
+	.desktop{
+		display: inherit;
+		visibility: visible;
+	}
 }
 /*********/
 .home h2,
@@ -99,6 +99,26 @@ h2{
 		font-size: 2.6rem;
 	}
 }
+.page-details h2{
+	margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+	.page-details h2{
+		margin-top: 1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.page-details h2{
+		line-height: 1.55em;
+		margin-top: inherit;
+		margin-bottom: .5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.page-details h2{
+		margin-bottom: 1.5rem;
+	}
+}
 .introduction-text h2{
 	border: none;
 	margin: 0;
@@ -110,30 +130,6 @@ h2{
 		text-align: center;
 		margin: 1rem 0;
 	}	
-}
-.page-details h2{
-	margin-bottom: 1.5rem;
-}
-@media only screen and (min-width: 768px){
-	.page-details h2{
-		margin-top: 1rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	.page-details h2{
-		margin-top: inherit;
-	}
-}
-@media only screen and (min-width: 992px){
-	.essay .page-details h2{
-		line-height: 1.55em;
-		margin-bottom: .5rem;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.essay .page-details h2{
-		margin-bottom: 1.5rem;
-	}
 }
 h3{
 	font-size: 1.3rem;
@@ -163,7 +159,7 @@ h3.subtitle{
 	border-bottom: none;
 	margin: .5rem 0 1rem;
 }
-.essay h3.subtitle:before{
+h3.subtitle:before{
 	content: "\f518";
 	font-family: "Font Awesome 6 Free";
 	font-weight: 600;

@@ -231,7 +231,7 @@ button{
 .documents .content div.decoration{
 	background: #dcd3a6;
 }
-/* combo #@: yellow border left, yellow border bottom, blue frame */
+/* combo #2: yellow border left, yellow border bottom, blue frame */
 .materials h2{
 	border-left: 12px solid #dcd3a6;
 }
@@ -411,7 +411,7 @@ section h4:not(:first-of-type){
 		margin: 2rem 5rem 3rem;
 	}
 }
-/* menu heading adapted from https://stackoverflow.com/a/20478913 */
+/* menu heading; adapted from https://stackoverflow.com/a/20478913 */
 .toc > ol:first-child:before{
 	content:attr(aria-label);
 	font-family: 'Merriweather', serif;
@@ -444,7 +444,7 @@ section h4:not(:first-of-type){
 		padding: 2rem 6rem 3rem;
 	}
 }
-/* menu sublist */
+/* menu sublists */
 .toc ol li ol{
 	margin-top: .6rem;
 }
@@ -645,7 +645,7 @@ article > .toc + section{
 		width: fit-content;
 	}
 }
-/* see main headings section for introduction-text heading */
+/* introduction-text heading: see main headings section, above */
 /* paragraphs in text segment */
 .home .introduction-section p,
 .categories .introduction-section p{
@@ -665,7 +665,7 @@ article > .toc + section{
 		padding: 0 1.5rem;
 	}
 }
-/* Introduction text ordering */
+/* introduction text ordering: mobile v. desktop */
 .home .introduction-section .introduction-text h2,
 .categories .introduction-section .introduction-text h2{
 	order: 2;
@@ -730,7 +730,7 @@ article > .toc + section{
 		margin: 1rem 1rem 2rem;
 	}
 }
-/* segments within container on desktop rendering */
+/* sub-containers within container: desktop rendering */
 @media only screen and (min-width: 992px){
 	.essay .page-details.horizontal div{
 		width: calc(43% - 1rem);
@@ -745,7 +745,7 @@ article > .toc + section{
 		width: calc(50% - 1rem);
 	}
 }
-/* text container */
+/* text sub-container */
 .essay .page-details div{
 	margin: 1rem 0;
 	padding: 0 1rem;
@@ -773,7 +773,7 @@ article > .toc + section{
 .essay .page-details div > span{
 	margin: 0 auto;
 }
-/* paragraphs in text container */
+/* paragraphs in text sub-container */
 .essay .page-details ul.publication-details{
 	list-style: none;
 	line-height: 1.875rem;
@@ -792,7 +792,7 @@ article > .toc + section{
 		font-size: 1.05rem;
 	}
 }
-/* image container */
+/* image sub-container */
 .image-wrapper{
 	line-height: 0;
 	margin: 0;
@@ -804,9 +804,10 @@ article > .toc + section{
 	content: "";
 	display: block;
 	/* padding-bottom: calc((height/width)*100%) */
-	/* supply padding-bottom hard-coded in html file */
+	/* supply padding-bottom hard-coded in html file;
+	use coding in prior comment or see existing files */
 }
-/* image in image container */
+/* image in image subcontainer */
 .image-wrapper img{
 	width: 100%;
 	height: 100%;
@@ -826,10 +827,6 @@ article > .toc + section{
 	left: inherit;
 	position: absolute;
 }
-.caption-icon a:hover,
-.caption-icon a:focus{
-	outline: none;
-}
 .caption-icon:hover .caption,
 .caption-icon:focus-within .caption{
 	background: #4d5b51;
@@ -838,6 +835,10 @@ article > .toc + section{
 .caption-icon:hover .caption i,
 .caption-icon:focus-within .caption i{
 	color: #E7E9E7;
+}
+.caption-icon a:hover,
+.caption-icon a:focus{
+	outline: none;
 }
 .caption{
 	font-size: 1.4rem;
@@ -867,15 +868,12 @@ article > .toc + section{
 .caption i{
 	color: #4d5b51;
 }
-/* stopped here */
 
 
 /* 11. Middle of Pages */
 
-/* main container:
-sections appear on books & texts
-+ essays/materials/documents
-*/
+/* main container "sections" appear on:
+books & texts + essays/materials/documents */
 /* padding */
 .categories .sections{
 	padding: 1rem 1rem 0;
@@ -903,9 +901,6 @@ sections appear on books & texts
 	#visuals{
 		padding: 0 0 1rem
 	}
-	/* .categories .sections{
-		padding: 2rem 0 3rem;
-	} */
 }
 @media only screen and (min-width: 1200px){
 	#books,
@@ -1029,6 +1024,7 @@ sections appear on books & texts
 	flex-direction: column;
 	gap: 1.25rem; /* See Safari Support */
 }
+/* used for containers that have title & no other content */
 #books .sections .section-container.title-slide,
 #texts .sections .section-container.title-slide{
 	min-height: 167px;
@@ -1092,7 +1088,7 @@ sections appear on books & texts
 .categories .sections .section-container a div{
 	flex: 1 0 calc(50% - 1rem)
 }
-/* Ratio box adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
+/* Start ratio box; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 /* image container */
 .categories .sections .section-container a .section-image{
@@ -1100,15 +1096,15 @@ sections appear on books & texts
 	padding: 0;
 	position: relative;
 }
-.categories .sections .section-container a .section-image:hover,
-.categories .sections .section-container a .section-image:focus-within{
-	overflow: hidden;
-	outline: none;
-}
 .categories .sections .section-container a .section-image:after{
 	content: "";
 	display: block;
 	padding-bottom: 80%;
+}
+.categories .sections .section-container a .section-image:hover,
+.categories .sections .section-container a .section-image:focus-within{
+	overflow: hidden;
+	outline: none;
 }
 /* main image */
 .categories .sections .section-container a .section-image img{
@@ -1210,6 +1206,7 @@ sections appear on books & texts
 #texts .creator-image img{
 	border: none;
 }
+/* boxes for creators without images */
 #texts .no-image:after{
 	content: "";
 	background: #e3e3e3;
@@ -1230,7 +1227,7 @@ sections appear on books & texts
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
-/* texts biographical text */
+/* texts: biographical text */
 #texts .image-biography p{
 	margin: 1rem .5rem 0;
 }
@@ -1245,12 +1242,13 @@ sections appear on books & texts
 #texts p.location-info{
 	margin: 1rem .5rem;
 }
-/* paragraphs/list of texts */
+/* paragraphs of text */
 .categories .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
 	text-align: center;
 }
+/* lists of text */
 #books .sections .section-container ul,
 #books .sections .section-container ol,
 #texts .sections .section-container ul,
@@ -1260,6 +1258,7 @@ sections appear on books & texts
 #books .sections .section-container ul:first-of-type{
 	margin-top: .5rem;
 }
+/* list items of text */
 #books .sections .section-container ul:first-of-type li,
 #texts .sections .section-container ul:first-of-type li{
 	margin-bottom: .2rem;
@@ -1333,6 +1332,7 @@ sections appear on books & texts
 #texts details[open] > summary:after{
 	content: "collapse";
 }
+/* list of works: individual items in details/summary */
 #books details li,
 #texts details li{
 	padding-left: .25rem;
@@ -1351,6 +1351,7 @@ sections appear on books & texts
 	bottom: 0;
 	position: absolute;
 }
+/* done to here */
 
 
 /* 12. Home and Essay Bottom */

@@ -11,8 +11,8 @@ Table of Contents
 
 ** Main CSS **
 01. Principal Components 
-02. Section-Specific Colors
-03. Headers
+02. Division-Specific Colors
+03. Headings
 04. Page Menus
 05. Main
 06. Credits
@@ -153,27 +153,6 @@ z-index: 150;
 	background: #4d5b51;
   text-shadow: none;
 }
-.mobile{
-	display: inherit;
-	visibility: visible;
-}
-.desktop{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 992px){
-	.mobile{
-		display: none;
-		visibility: hidden;
-	}
-	.desktop{
-		display: inherit;
-		visibility: visible;
-	}
-}
-button{
-  -webkit-appearance: button;
-}
 :root{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
@@ -204,9 +183,30 @@ body{
 	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	-webkit-hyphens: auto; */
+button{
+	-webkit-appearance: button;
+}
+.mobile{
+	display: inherit;
+	visibility: visible;
+}
+.desktop{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 992px){
+	.mobile{
+		display: none;
+		visibility: hidden;
+	}
+	.desktop{
+		display: inherit;
+		visibility: visible;
+	}
+}
 
 
-/* 02. Section-Specific Colors */
+/* 02. Division-Specific Colors */
 
 /* primary materials: blue border left, organge bottom, yellow frame */
 .home h2,
@@ -250,8 +250,9 @@ body{
 }
 
 
-/* 03. Headers */
+/* 03. Headings */
 
+/* main page heading */
 h2{
 	font-size: 1.5rem;
 	font-family: 'Merriweather', serif;
@@ -290,6 +291,28 @@ h2{
 		font-size: 2.6rem;
 	}
 }
+/* main page heading spacing */
+.page-details h2{
+	margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+	.page-details h2{
+		margin-top: 1rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	.page-details h2{
+		line-height: 1.55em;
+		margin-top: inherit;
+		margin-bottom: .5rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.page-details h2{
+		margin-bottom: 1.5rem;
+	}
+}
+/* index and categories pages heading */
 .introduction-text h2{
 	border: none;
 	margin: 0;
@@ -302,30 +325,7 @@ h2{
 		margin: 1rem 0;
 	}	
 }
-.page-details h2{
-	margin-bottom: 1.5rem;
-}
-@media only screen and (min-width: 768px){
-	.page-details h2{
-		margin-top: 1rem;
-	}
-}
-@media only screen and (min-width: 992px){
-	.page-details h2{
-		margin-top: inherit;
-	}
-}
-@media only screen and (min-width: 992px){
-	.essay .page-details h2{
-		line-height: 1.55em;
-		margin-bottom: .5rem;
-	}
-}
-@media only screen and (min-width: 1200px){
-	.essay .page-details h2{
-		margin-bottom: 1.5rem;
-	}
-}
+/* subsection headings */
 h3{
 	font-size: 1.3rem;
 	font-family: 'Merriweather', serif;
@@ -345,6 +345,7 @@ h3{
 		font-size: 1.5rem;
 	}
 }
+/* subtitle heading on essays */
 h3.subtitle{
 	font-size: 1rem;
 	font-variant: small-caps;
@@ -354,17 +355,19 @@ h3.subtitle{
 	border-bottom: none;
 	margin: .5rem 0 1rem;
 }
-.credits h3{
-	font-size: 1.2rem;
-	text-align: center;
-	border-bottom: 6px solid #8db7bf;
-}
-.essay h3.subtitle:before{
+h3.subtitle:before{
 	content: "\f518";
 	font-family: "Font Awesome 6 Free";
 	font-weight: 600;
 	margin-right: .5rem;
 }
+/* credits heading */
+.credits h3{
+	font-size: 1.2rem;
+	text-align: center;
+	border-bottom: 6px solid #8db7bf;
+}
+/* sub-subsection headings */
 h4{
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
@@ -379,6 +382,7 @@ section h4:not(:first-of-type){
 
 /* 04. Page Menus */
 
+/* menu layout */
 .toc{
 	line-height: 2.1rem;
 	margin: .5rem auto;
@@ -407,7 +411,7 @@ section h4:not(:first-of-type){
 		margin: 2rem 5rem 3rem;
 	}
 }
-/* Heading adapted from https://stackoverflow.com/a/20478913 */
+/* menu heading adapted from https://stackoverflow.com/a/20478913 */
 .toc > ol:first-child:before{
 	content:attr(aria-label);
 	font-family: 'Merriweather', serif;
@@ -416,6 +420,7 @@ section h4:not(:first-of-type){
 	margin: 0 0 .5rem -1rem;
 	display: inline-block;
 }
+/* menu list */
 .toc > ol:first-child{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
@@ -439,9 +444,11 @@ section h4:not(:first-of-type){
 		padding: 2rem 6rem 3rem;
 	}
 }
+/* menu sublist */
 .toc ol li ol{
 	margin-top: .6rem;
 }
+/* menu items */
 .toc li{
 	line-height: 1.6rem;
 	margin-bottom: .65rem;
@@ -518,6 +525,15 @@ section.content:not(.recovered) article section section:not(:first-of-type),
 .content.recovered.full-page article#texts > section > section:not(:first-of-type){
 	margin-top: 0;
 }
+/* spacing on initiatives.html */
+section.content:not(.recovered) article section .section-divider + section:not(:first-of-type){
+	margin-top: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+	section.content:not(.recovered) article section .section-divider + section:not(:first-of-type){
+		margin-top: 2rem;
+	}	
+}
 @media only screen and (min-width: 768px){
 	article > section:not(:first-child),
 	section.content:nth-child(3) > section:not(:first-child),
@@ -534,16 +550,7 @@ section.content:not(.recovered) article section section:not(:first-of-type),
 		margin-top: 4rem;
 	}	
 }
-/* used on initiatives.html */
-section.content:not(.recovered) article section .section-divider + section:not(:first-of-type){
-	margin-top: 1.5rem;
-}
-@media only screen and (min-width: 768px){
-	section.content:not(.recovered) article section .section-divider + section:not(:first-of-type){
-		margin-top: 2rem;
-	}	
-}
-/* Section after TOC spacing */
+/* section after TOC spacing */
 article > .toc + section{
 	margin-top: 2rem;
 }
@@ -552,7 +559,7 @@ article > .toc + section{
 		margin-top: 3rem;
 	}
 }
-/* Credits spacing */
+/* credits spacing (also see above) */
 .home .credits:first-of-type{
 	margin-top: 0;
 }

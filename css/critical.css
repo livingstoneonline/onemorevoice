@@ -526,7 +526,6 @@ footer a[aria-label="External Client"]:after{
 a.action-button,
 a.action-button:visited,
 #rotate-button{
-	font-size: 1.1rem;
 	font-weight: 600;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -546,7 +545,6 @@ a.action-button:visited,
 	a.action-button,
 	a.action-button:visited,
 	#rotate-button{
-		font-size: 1.25rem;
 		padding: 12px 30px;
 	}
 }
@@ -609,9 +607,15 @@ a.action-button i{
 		justify-content: space-between;
 	}
 }
-.essay a.action-button{
-	display: none;
-	visibility: hidden;
+.error404 .horizontal a.action-button,
+.error404 .horizontal a.action-button:visited{
+	font-weight: 400;
+	text-transform: none;
+	color: #fff;
+	background: #743B41;
+	margin: 1rem 0;
+	display: inline-block;
+	visibility: visible;
 }
 /*********/
 header{
@@ -1133,13 +1137,4 @@ strong{
 }
 .error404 main span p:last-child{
 	margin-bottom: 0;
-}
-.essay.error404 .horizontal a.action-button,
-.essay.error404 .horizontal a.action-button:visited{
-	text-transform: none;
-	color: #fff;
-	background: #743B41;
-	margin-bottom: 2rem;
-	display: inline-block;
-	visibility: visible;
 }

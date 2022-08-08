@@ -2055,10 +2055,11 @@ nav .logo-container a:focus h1{
 	font-weight: normal !important;
 	color: #697c6f !important;
 }
-/* done to here */
+
 
 /* 17.4. Font-Awesome Buttons */
 
+/* main button container */
 nav .button-container,
 nav.overlay-nav .button-container{
 	white-space: nowrap;
@@ -2119,6 +2120,7 @@ nav.overlay-nav .button-container{
 			visibility: hidden;
 	}
 }
+/* email icon positioning */
 @media only screen and (min-width: 480px){
 	nav.overlay-nav .button-container .tooltip-container:nth-child(5){
 		margin-left: auto;
@@ -2129,6 +2131,7 @@ nav.overlay-nav .button-container{
 		margin-left: 0;
 	}
 }
+/* all icons icons */
 nav .button-container .home-icon,
 nav .button-container .sitemap-icon,
 nav .button-container a.external{
@@ -2163,16 +2166,14 @@ nav .button-container a.external{
 	}
 }
 @media only screen and (min-width: 992px){
-	nav .button-container a.external{
+	nav .button-container .home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;
     align-items: center;
     justify-content: center;
 	}
-}
-@media only screen and (min-width: 992px){
-	nav .button-container .home-icon{
+	nav .button-container a.external{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;
@@ -2187,6 +2188,7 @@ nav .button-container a.external:focus,
 	background: transparent;
 	outline: none;
 }
+/* font-awesome icons */
 nav .button-container a.external i{
 	margin: 0 .15rem;
 	padding: .25rem .5rem;
@@ -2208,6 +2210,7 @@ nav .button-container a.external:focus i{
 	color: #212119;
 	background: #fff;
 }
+/* tooltip hover/focus */
 .overlay-content .button-container .tooltip-container:hover,
 .overlay-content .button-container .tooltip-container:focus-within{
 	background: #E7E9E7;
@@ -2218,6 +2221,7 @@ nav .button-container a.external:focus i{
 	color: #212119;
 	transition: .2s;
 }
+/* done to here */
 
 
 /* 17.5. Hamburger Menu and Close */

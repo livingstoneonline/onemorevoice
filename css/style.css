@@ -826,6 +826,19 @@ article > .toc + section{
 	left: inherit;
 	position: absolute;
 }
+.caption-icon a:hover,
+.caption-icon a:focus{
+	outline: none;
+}
+.caption-icon:hover .caption,
+.caption-icon:focus-within .caption{
+	background: #4d5b51;
+	border: 2px solid #E7E9E7;
+}
+.caption-icon:hover .caption i,
+.caption-icon:focus-within .caption i{
+	color: #E7E9E7;
+}
 .caption{
 	font-size: 1.4rem;
 	font-weight: normal;
@@ -851,22 +864,8 @@ article > .toc + section{
 		padding: 6px 8px 4px;
 	}
 }
-.caption-icon a:hover,
-.caption-icon a:focus{
-	outline: none;
-}
 .caption i{
 	color: #4d5b51;
-}
-.caption-icon:hover .caption,
-.caption-icon:focus-within .caption{
-	background: #4d5b51;
-	border: 2px solid #E7E9E7;
-}
-.caption-icon:hover .caption i,
-.caption-icon:focus-within .caption i{
-	color: #E7E9E7;
-}
 /* stopped here */
 
 

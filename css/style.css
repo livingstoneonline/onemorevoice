@@ -314,6 +314,7 @@ h2{
 }
 /* index and categories pages heading */
 .introduction-text h2{
+	text-align: center;
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -321,7 +322,6 @@ h2{
 }
 @media only screen and (min-width: 768px){
 	.introduction-text h2{
-		text-align: center;
 		margin: 1rem 0;
 	}	
 }
@@ -576,6 +576,7 @@ article > .toc + section{
 
 /* 08. Home/Categories Top */
 
+/* set up section as a whole */
 .home .introduction-section, 
 .categories .introduction-section{
 	display: -webkit-flex;
@@ -583,6 +584,13 @@ article > .toc + section{
 	flex-direction: column;
 	align-items: center;
  }
+ @media only screen and (min-width: 992px){
+	.home .introduction-section,
+	.categories .introduction-section{
+		position: relative;
+	}
+}
+/* image segment */
 .home .introduction-section .image-wrapper,
 .categories .introduction-section .image-wrapper{
 	width: calc(100vw - 2px);
@@ -591,6 +599,7 @@ article > .toc + section{
 	visibility: visible;
 	position: relative;
 }
+/* text segment */
 .home .introduction-section .introduction-text,
 .categories .introduction-section .introduction-text{
 	margin: 0 auto;
@@ -618,10 +627,6 @@ article > .toc + section{
 	}
 }
 @media only screen and (min-width: 992px){
-	.home .introduction-section,
-	.categories .introduction-section{
-		position: relative;
-	}
 	.home .introduction-section .introduction-text,
 	.categories .introduction-section .introduction-text{
 		background: rgb(226, 228, 226, .94);
@@ -640,13 +645,8 @@ article > .toc + section{
 		width: fit-content;
 	}
 }
-.home .introduction-text h2,
-.categories .introduction-text h2{
-	text-align: center;
-}
-.categories .introduction-text h2{
-	margin: 0;
-}
+/* see main headings section for introduction-text heading */
+/* paragraphs in text segment */
 .home .introduction-section p,
 .categories .introduction-section p{
 	line-height: 1.875em;

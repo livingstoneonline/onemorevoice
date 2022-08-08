@@ -359,13 +359,6 @@ main{
 		width: calc(50% - 1rem);
 	}
 }
-@media only screen and (min-width: 992px){
-	.essay .page-details div{
-		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
-		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
-		box-shadow: #697c6f 0px 1px 6px 0px;
-	}
-}
 .essay .page-details div{
 	margin: 1rem 0;
 	padding: 0 1rem;
@@ -378,6 +371,9 @@ main{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
+		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
+		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
+		box-shadow: #697c6f 0px 1px 6px 0px;
 		margin: 0;
 		padding: 1rem 2.25rem;
 		height: 100%;

@@ -1731,6 +1731,7 @@ a.action-button i{
 
 /* 17. Header and Nav */
 
+/* main container */
 header{
 	background: #212119;
 	margin: 0 auto;
@@ -1759,6 +1760,7 @@ header{
 		height: 94.4px;
 	}
 }
+/* contains skip, logo, and icons */
 .nav-container{
 	padding: .4rem .5rem;
 	width: 100%;
@@ -1776,6 +1778,7 @@ header{
 		padding: .6rem .5rem;
 	}
 }
+/* applies to both breadcrumbs and logo/icons navs */
 header nav{
 	width: 100%;
 	display: -webkit-flex;
@@ -1801,8 +1804,7 @@ header nav button,
 
 /* 17.1. Skip Nav */
 
-/* Skip to main content */
-/* #skip adapted from https://webaim.org/techniques/skipnav/ */
+/* skip to main content; adapted from https://webaim.org/techniques/skipnav/ */
 #skip a{
 	font-weight: 600;
 	text-decoration: underline;
@@ -1872,7 +1874,7 @@ nav .logo-container a:focus{
 	background: transparent;
 	outline: none;
 }
-/* OMV Icon */
+/* OMV icon */
 nav .logo-container a img{
 	border: none;
 	-webkit-border-radius: 50%;
@@ -1901,7 +1903,7 @@ nav .logo-container a:focus img{
 	border: none;
 	outline: 2px solid #fff;
 }
-/* OMV Logo */
+/* OMV logo */
 nav .logo-container a h1{
 	font-family: 'Amaranth', sans-serif;
 	font-size: 1.5rem;
@@ -1935,13 +1937,10 @@ nav .logo-container a:focus h1{
 
 /* 17.3. Google Translate */
 
-/* Also see other styles marked "Google Translate" */
+/* also see body, above, for one key bit of coding */
 .goog-te-banner-frame.skiptranslate{
 	display: none !important;
 	visibility: hidden !important;
-}
-.original-text{
-	text-align: unset !important;
 }
 .translate-widget{
 	margin: -1px auto 0;
@@ -1991,33 +1990,16 @@ nav .logo-container a:focus h1{
   display: flex;
   align-items: center;
 }
-/* .translate a{
-	border: 2px solid transparent;
-	margin-right: 4px;
-	padding: 0 6px;
-	display: -webkit-flex;
-  display: flex;
-  align-items: center;
-}
-.translate a:hover,
-.translate a:focus{
-	background: transparent;
-	border: 2px solid #E7E9E7;
-} */
 .translate img{
 	background: none;
 	border: none;
 	width: 18px;
 	height: 18px;
 }
-/* .translate a:hover img,
-.translate a:focus img{
-	border: none;
-} */
 #google_translate_element > div > span > a > img{
 	width: 3.5rem;
 }
-div.skiptranslate.goog-te-gadget{
+.skiptranslate.goog-te-gadget{
 	background: #212119 !important;
 	color: #fff !important;
 }
@@ -2037,7 +2019,7 @@ div.skiptranslate.goog-te-gadget{
 #google_translate_element div.goog-te-gadget .goog-te-combo:focus{
 	outline: none;
 }
-div.skiptranslate:nth-child(1){
+.skiptranslate:nth-child(1){
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	color: #212119;
@@ -2045,15 +2027,15 @@ div.skiptranslate:nth-child(1){
 	line-height: 2.5em;
 	margin-top: .2rem;
 }
-div.skiptranslate:nth-child(1) > span:nth-child(2),
-div.skiptranslate:nth-child(1) > span:nth-child(2){
+.skiptranslate:nth-child(1) > span:nth-child(2),
+.skiptranslate:nth-child(1) > span:nth-child(2){
 	border: 2px transparent solid;
 	margin-left: -2px;
 	display: none;
 	visibility: hidden;
 }
-div.skiptranslate:nth-child(1) > span:nth-child(2):hover,
-div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
+.skiptranslate:nth-child(1) > span:nth-child(2):hover,
+.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 	border: 2px #305056 solid;
 	outline: none;
 }
@@ -2073,7 +2055,7 @@ div.skiptranslate:nth-child(1) > span:nth-child(2):focus-within{
 	font-weight: normal !important;
 	color: #697c6f !important;
 }
-
+/* done to here */
 
 /* 17.4. Font-Awesome Buttons */
 

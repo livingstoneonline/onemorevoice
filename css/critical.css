@@ -120,10 +120,14 @@ h2{
 	}
 }
 .introduction-text h2{
+	text-align: center;
 	border: none;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
+}
+.categories .introduction-text h2{
+	margin: 0;
 }
 @media only screen and (min-width: 768px){
 	.introduction-text h2{

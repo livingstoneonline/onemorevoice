@@ -496,7 +496,6 @@
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="text-object">
-			<!-- <a class="action-button" href="#text-object-details">Skip to Item Details</a> -->
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 					<section id="transcription-switches" class="manuscript-switches">

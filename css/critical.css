@@ -865,16 +865,14 @@ nav .button-container a.external{
 	margin-top: 0.15rem;
 }
 @media only screen and (min-width: 992px){
-	nav .button-container a.external{
+	nav .button-container .home-icon{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;
     align-items: center;
     justify-content: center;
 	}
-}
-@media only screen and (min-width: 992px){
-	nav .button-container .home-icon{
+	nav .button-container a.external{
 		display: -webkit-flex;
   	display: flex;
     visibility: visible;

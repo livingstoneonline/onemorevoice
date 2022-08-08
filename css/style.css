@@ -730,6 +730,7 @@ article > .toc + section{
 		margin: 1rem 1rem 2rem;
 	}
 }
+/* segments within container on desktop rendering */
 @media only screen and (min-width: 992px){
 	.essay .page-details.horizontal div{
 		width: calc(43% - 1rem);
@@ -742,13 +743,6 @@ article > .toc + section{
 	}
 	.essay .page-details.vertical figure{
 		width: calc(50% - 1rem);
-	}
-}
-@media only screen and (min-width: 992px){
-	.essay .page-details div{
-		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
-		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
-		box-shadow: #697c6f 0px 1px 6px 0px;
 	}
 }
 /* text container */
@@ -764,6 +758,9 @@ article > .toc + section{
 }
 @media only screen and (min-width: 992px){
 	.essay .page-details div{
+		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
+		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
+		box-shadow: #697c6f 0px 1px 6px 0px;
 		margin: 0;
 		padding: 1rem 2.25rem;
 		height: 100%;
@@ -870,6 +867,7 @@ article > .toc + section{
 .caption-icon:focus-within .caption i{
 	color: #E7E9E7;
 }
+/* stopped here */
 
 
 /* 11. Middle of Pages */

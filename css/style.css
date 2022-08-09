@@ -166,6 +166,7 @@ html{
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 	background: #ededed;
+	scrollbar-gutter: stable; /* reserves space for scrollbar when fixed overlay header appears */
 }
 body{
 	-moz-osx-font-smoothing: auto;
@@ -175,7 +176,6 @@ body{
 	padding: 0;
 	max-width: 100%; /* prevents overflow of frame */
 	overflow-x: hidden; /* prevents overflow of frame */
-	scrollbar-gutter: stable; /* reserves space for scrollbar when fixed overlay header appears */
 	top: 0px !important; /* needed for Google Translate */
 }
 /* word break options; used only as needed */

@@ -889,26 +889,17 @@ nav .button-container a.external i{
 	color: #E7E9E7;
 }
 /*********/
-nav .hamburger-menu,
-nav .close{
+nav .menu-icon{
+	margin: 0;
+}
+nav .hamburger-menu{
 	color: #fff;
 	background: transparent;
 	border: none;
 	cursor: pointer;
 }
-nav .menu-icon{
-	margin: 0;
-}
 nav .hamburger-menu{
 	padding: 6px 7px 4px;
-}
-nav .close-icon{
-	margin: 0 0 .1rem;
-	display: none;
-	visibility: hidden;
-}
-nav .close{
-	padding: 5px 9px;
 }
 @media only screen and (min-width: 768px){
 	nav .menu-icon{
@@ -917,9 +908,6 @@ nav .close{
 	nav .hamburger-menu{
 		padding: 6px 7px 5px;
 	}
-	nav .close-icon{
-		margin-left: .5rem;
-	}
 }
 nav.fallback .hamburger-menu{
 	margin: 0 0.5rem 0 0;
@@ -927,19 +915,16 @@ nav.fallback .hamburger-menu{
 	display: flex;
 	visibility: visible;
 }
-nav .hamburger-menu .fa-bars,
-nav .close .fa-times{
+nav .hamburger-menu .fa-bars{
 	font-size: 1.5rem;
 }
 @media only screen and (min-width: 480px){
-	nav .hamburger-menu .fa-bars,
-	nav .close .fa-times{
+	nav .hamburger-menu .fa-bars{
 		font-size: 1.6rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	nav .hamburger-menu .fa-bars,
-	nav .close .fa-times{
+	nav .hamburger-menu .fa-bars{
 		font-size: 1.7rem;
 	}
 }

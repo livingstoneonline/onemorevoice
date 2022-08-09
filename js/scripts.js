@@ -14,17 +14,15 @@ if ("serviceWorker" in navigator) {
 // Makes header sticky while overlay is open; freezes main and footer while overlay is open while also retaining scollbar; shows overlay
 
 function openNav() {
+	document.getElementById("body").style.cssText = "overflow: hidden;"
 	document.getElementById("header").style.cssText = "width: calc(100% - 2px); position: fixed; top: 0; z-index: 100;";
-	document.getElementById("main").style.cssText = "display: none;";
-	document.getElementById("footer").style.cssText = "display: none;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible;";
 };
 
 function closeNav() {
+	document.getElementById("body").style.cssText = "overflow: inherit;";
 	document.getElementById("header").style.cssText = "margin-top: -1px; width: 100%; position: unset;";
-	document.getElementById("main").style.cssText = "display: inherit";
-	document.getElementById("footer").style.cssText = "display: inherit";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
 };

@@ -38,7 +38,7 @@ Table of Contents
 20. Scroll to Top Button
 21. Lists
 22. Lines
-23. Warning Boxes & Info Notes
+23. Text/Warning Boxes & Info Notes
 24. General Formatting
 25. Page-Specific Coding
 26. Thematic Initiatives Page Images
@@ -2739,7 +2739,7 @@ section + hr.section-divider{
 }
 
 
-/* 23. Warning Boxes & Info Notes */
+/* 23. Text/Warning Boxes & Info Notes */
 
 aside.text-box,
 aside.warning-box{
@@ -2774,11 +2774,12 @@ aside.warning-box.language{
 .info-paragraph{
 	margin-bottom: 3rem;
 }
-/* done to here */
 
 
 /* 24. General Formatting */
 
+/* bold not really needed because OMV uses strong (see below);
+bold class only appears in a few TEI files and is auto-generated */
 .bold{
 	font-weight: 600;
 }
@@ -2812,8 +2813,11 @@ aside.warning-box.language{
 .small{
 	font-size: .9em;
 }
+/* smallcaps doesn't work in some browsers
+text-transform: uppercase would be betteer */
 .smallcaps{
 	font-variant: small-caps;
+	/* text-transform: uppercase; */
 }
 strong{
 	font-weight: 600;
@@ -2821,6 +2825,7 @@ strong{
 .underline{
 	text-decoration: underline;
 }
+/* done to here */
 
 
 /* 25. Page-Specific Coding */

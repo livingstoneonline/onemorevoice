@@ -2221,23 +2221,13 @@ nav .button-container a.external:focus i{
 	color: #212119;
 	transition: .2s;
 }
-/* done to here */
 
 
 /* 17.5. Hamburger Menu and Close */
 
-nav .hamburger-menu,
-nav .close{
-	color: #fff;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-}
+/* menu-icon/close-icon = tooltip container */
 nav .menu-icon{
 	margin: 0;
-}
-nav .hamburger-menu{
-	padding: 6px 7px 4px;
 }
 nav.overlay-nav .menu-icon{
 	display: none;
@@ -2248,9 +2238,6 @@ nav .close-icon{
 	display: none;
 	visibility: hidden;
 }
-nav .close{
-	padding: 5px 9px;
-}
 nav.overlay-nav .close-icon.mobile{
 	display: block;
 	visibility: visible;
@@ -2259,15 +2246,29 @@ nav.overlay-nav .close-icon.desktop{
 	display: none;
 	visibility: hidden;
 }
+/* hamburger-menu/close = button */
+nav .hamburger-menu,
+nav .close{
+	color: #fff;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+nav .hamburger-menu{
+	padding: 6px 7px 4px;
+}
+nav .close{
+	padding: 5px 9px;
+}
 @media only screen and (min-width: 768px){
 	nav .menu-icon{
 		margin-left: .5rem;
 	}
-	nav .hamburger-menu{
-		padding: 6px 7px 5px;
-	}
 	nav .close-icon{
 		margin-left: .5rem;
+	}
+	nav .hamburger-menu{
+		padding: 6px 7px 5px;
 	}
 }
 @media only screen and (min-width: 992px){
@@ -2280,12 +2281,21 @@ nav.overlay-nav .close-icon.desktop{
 		visibility: visible;
 	}
 }
+nav .menu-icon:hover,
+nav .menu-icon:focus-within,
+nav .close-icon:hover,
+nav .close-icon:focus-within
+{
+	background: #fff;
+}
+/* fallback nav; appears only when Javascript disabled */
 nav.fallback .hamburger-menu{
 	margin: 0 0.5rem 0 0;
 	display: -webkit-flex;
 	display: flex;
 	visibility: visible;
 }
+/* hamburger-menu/close icons */
 nav .hamburger-menu .fa-bars,
 nav .close .fa-times{
 	font-size: 1.5rem;
@@ -2308,22 +2318,17 @@ nav .close-icon:hover .fa-times,
 nav .close-icon:focus-within .fa-times{
 	color: #212119;
 }
-nav .menu-icon:hover,
-nav .menu-icon:focus-within,
-nav .close-icon:hover,
-nav .close-icon:focus-within
-{
-	background: #fff;
-}
 
 
 /* 17.6. Breadcrumbs */
 
+/* main container */
 header nav.breadcrumbs{
 	border-bottom: 1px solid #737373;
 	padding: .1rem 0;
 	width: 100%;
 }
+/* list of breadcrumbs */
 header nav.breadcrumbs ul{
 	font-size: .75rem;
 	color: #fff;
@@ -2340,6 +2345,7 @@ header nav.breadcrumbs ul{
 		padding: .5rem;
 	}
 }
+/* breadcrumb items */
 header nav.breadcrumbs ul li:not(:first-child):before{
 	content: '/';
 	margin: 0 .25rem;
@@ -2354,6 +2360,7 @@ header nav.breadcrumbs ul li a:focus{
 	background: #212119;
 	outline: 1px solid #fff;
 }
+/* items (plain levels) and historical material items (transcription levels) */
 #level-3,
 .transcription #level-2,
 .transcription #level-4{
@@ -2415,6 +2422,7 @@ header nav.breadcrumbs ul li a:focus{
 /* 18. Overlay */
 
 /* Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+/* main container */
 .overlay{
 	font-size: 1.05rem;
 	text-align: center;
@@ -2449,6 +2457,7 @@ header nav.breadcrumbs ul li a:focus{
 		height: calc(100% - 94.4px);
 	}
 }
+/* sub-container: colored background on left on larger devices */
 @media only screen and (min-width: 624px){
 	.overlay div{
 		background: #DA9C5D;
@@ -2458,6 +2467,7 @@ header nav.breadcrumbs ul li a:focus{
 		visibility: visible;
 	}
 }
+/* sub-container: button/text content container of overlay */
 .overlay-content{
 	white-space: nowrap;
 	background: #243D42;
@@ -2473,7 +2483,7 @@ header nav.breadcrumbs ul li a:focus{
 		width: 50%;
 	}
 }
-/* Accodion adapted from https://www.hassellinclusion.com/blog/accessible-accordion-pattern/ */
+/* text content container of overlay (cf. button container) */
 .overlay .text-container{
   background: inherit;
 	margin: 0;
@@ -2484,13 +2494,13 @@ header nav.breadcrumbs ul li a:focus{
     padding: .5rem 0;
   }
 }
-.overlay .text-container,
-.overlay .accordion-container{
+.overlay .text-container{
   text-align: left;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
 }
+/* icons, headings, links, buttons in overlay text content */
 .overlay .text-container i{
 	margin-right: .5rem;
 	width: 1.25rem;
@@ -2507,75 +2517,16 @@ header nav.breadcrumbs ul li a:focus{
 	font-weight: 400;
 	font-style: inherit;
 	font-family: 'Source Sans Pro', sans-serif;
+	border-bottom: 1px solid #ededed;
 	border-left: none;
 	margin: 0;
 	padding: 0;
   height: 60px;
 }
-.overlay .text-container h2 button{
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-}
-.overlay .text-container h2 button[aria-expanded=true]{
-  color: #212119;
-	background: #E7E9E7;
-}
-.overlay .text-container h2 button[aria-expanded=false]:after{
-  content: "+";
-  width: .5rem;
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.overlay .text-container h2 button[aria-expanded=true]:after{
-  content:"–";
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.overlay .text-container h2,
-.overlay ul li{
-	border-bottom: 1px solid #ededed;
-}
 .overlay .text-container h2:last-child{
 	border: none;
 }
-.overlay h2 + div{
-  background: inherit;
-}
-.overlay div .hidden{ 
-  display: none;
-}
-/* .accordion-panel{
-  margin: 0;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-}
-.accordion-panel:hover,
-.accordion-panel:focus{
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-}
-.accordion-container ul{
-  list-style-type: none;
-  background: #315257;
-	margin: 0;
-	padding: 0;
-	display: -webkit-flex;
-  display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.accordion-container li{
-  padding: 0 .25rem;
-  height: 52px; 
-  width: 100%;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-} */
-.overlay .text-container a,
-.overlay .text-container button{
+.overlay .text-container a{
   margin: .25rem 0;
   padding: 0 .5rem;
   width: calc(100% - 1rem);
@@ -2589,13 +2540,8 @@ header nav.breadcrumbs ul li a:focus{
 .overlay .text-container a{
   width: 100%;
 }
-/* .overlay .text-container .accordion-container a{
-	padding-left: 1.25rem;
-} */
 .overlay .text-container a:hover,
-.overlay .text-container a:focus,
-.overlay .text-container button:hover,
-.overlay .text-container button:focus{
+.overlay .text-container a:focus{
 	color: #212119;
 	background: #E7E9E7;
 	outline: none;

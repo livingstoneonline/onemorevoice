@@ -39,8 +39,8 @@ Table of Contents
 21. Lists
 22. Lines
 23. Text/Warning Boxes & Info Notes
-24. General Formatting
-25. Page-Specific Coding
+24. Keycap
+25. General Formatting
 26. Thematic Initiatives Page Images
 27. Object Gallery: Visual Materials & Motion Pictures
 28. Motion Pictures
@@ -375,7 +375,7 @@ h4{
 	font-weight: 600;
 	font-family: 'Merriweather', serif;
 	text-align: center;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 section p + h4,
 section h4:not(:first-of-type){
@@ -2670,11 +2670,6 @@ ul{
 	margin: 0;
 	padding: 0 0 0 1.4rem;
 }
-.bibliography article section:not(.toc) ol,
-.bibliography article section:not(.toc) ul{
-	list-style: none;
-	padding-left: 0;
-}
 ol li ol{
 	padding: 0 0 0 .6rem;
 }
@@ -2683,18 +2678,27 @@ ol li ol{
 		padding-left: 1.2rem;
 	}
 }
-/* list with spacing between items */
+.indented-list{
+	margin-left: 1.4rem;
+	padding-left: 0;
+}
+@media only screen and (min-width: 624px){
+	.indented-list{
+		padding-left: 1.4rem;	
+	}
+}
+.noindent-list{
+	margin-left: 0;
+	padding-left: 0;
+}
+.nostyle-list{
+	list-style: none;
+}
 .padded-list li{
 	padding-bottom: 1rem;
 }
 .padded-list li:last-child{
 	padding-bottom: 0;
-}
-/* only used on bibliography page */
-@media only screen and (min-width: 768px){
-	.indented-list{
-		margin-left: 1.4rem;
-	}
 }
 
 
@@ -2776,11 +2780,33 @@ aside.warning-box.language{
 }
 
 
-/* 24. General Formatting */
+/* 24. Keycap */
 
-/* bold not really needed because OMV uses strong (see below);
-bold class only appears in a few TEI files and is auto-generated */
-.bold{
+/* simulates keyboard key; only used on project_design */ 
+.keycap{
+	font-size: .95em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	text-align: center;
+	color: #212119;
+	background: #f1f1f1;
+	border: 1px solid #212119;
+	border-width: 1px 2px 2px 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 1px;
+	padding: 0 2px;
+	min-width: 17px;
+}
+
+
+/* 25. General Formatting */
+
+/* bold class only appears in a few TEI files and is auto-generated */
+.bold,
+strong{
 	font-weight: 600;
 }
 .caps{
@@ -2813,50 +2839,12 @@ bold class only appears in a few TEI files and is auto-generated */
 .small{
 	font-size: .9em;
 }
-/* smallcaps doesn't work in some browsers
-text-transform: uppercase would be betteer */
 .smallcaps{
+	font-size: .9em;
 	font-variant: small-caps;
-	/* text-transform: uppercase; */
-}
-strong{
-	font-weight: 600;
 }
 .underline{
 	text-decoration: underline;
-}
-/* done to here */
-
-
-/* 25. Page-Specific Coding */
-
-/* The following is used on project_design.html */ 
-.keycap{
-	font-size: .95em;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: normal;
-	text-align: center;
-	color: #212119;
-	background: #f1f1f1;
-	border: 1px solid #212119;
-	border-width: 1px 2px 2px 1px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	margin: 1px;
-	padding: 0 2px;
-	min-width: 17px;
-}
-/* The following items are used on acknowledgments.html */
-ul.acknowledgments{
-	padding-left: 0;
-	list-style: none;
-}
-@media only screen and (min-width: 480px){
-	ul.acknowledgments{
-		padding-left: 1.2em;
-	}
 }
 
 

@@ -15,14 +15,14 @@ if ("serviceWorker" in navigator) {
 
 function openNav() {
 	document.getElementById("body").style.cssText = "overflow: hidden;"
-	document.getElementById("header").style.cssText = "width: calc(100% - 2px); position: fixed; top: 0; z-index: 100;";
+	document.getElementById("header").style.cssText = "position: fixed; top: 0; z-index: 100;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible;";
 };
 
 function closeNav() {
 	document.getElementById("body").style.cssText = "overflow: inherit;";
-	document.getElementById("header").style.cssText = "margin-top: -1px; width: 100%; position: unset;";
+	document.getElementById("header").style.cssText = "margin-top: -1px; position: unset;";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
 };

@@ -175,6 +175,7 @@ body{
 	padding: 0;
 	max-width: 100%; /* prevents overflow of frame */
 	overflow-x: hidden; /* prevents overflow of frame */
+	scrollbar-gutter: stable; /* reserves space for scrollbar when fixed overlay header appears */
 	top: 0px !important; /* needed for Google Translate */
 }
 /* word break options; used only as needed */
@@ -278,7 +279,7 @@ h2{
 }
 @media only screen and (min-width: 992px){
 	h2{
-		font-size: 2.5rem;
+		font-size: 2.1rem;
 	}
 	.essay.critical h2{
 		font-size: 1.7em;
@@ -2846,6 +2847,7 @@ strong{
 .underline{
 	text-decoration: underline;
 }
+/* done to here */
 
 
 /* 26. Thematic Initiatives Page Images */

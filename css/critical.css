@@ -1021,10 +1021,18 @@ aside.warning-box{
 	border: 1px solid #bdc2bd;
 	border-left: 6px solid #8db7bf;
 	padding: 1rem;
-	margin: 1.5rem auto;
 }
 aside.text-box{
 	border-left: 6px solid #8db7bf;
+	margin: 1.5rem auto;
+}
+aside.warning-box{
+	margin: 1.5rem auto 2.5rem;
+}
+@media only screen and (min-width: 992px){
+	aside.warning-box{
+		margin: 1rem auto 2.5rem;
+	}
 }
 aside.warning-box.violence,
 aside.warning-box.language{

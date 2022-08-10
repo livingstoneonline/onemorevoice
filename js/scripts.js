@@ -14,15 +14,17 @@ if ("serviceWorker" in navigator) {
 // Makes header sticky while overlay is open; freezes main and footer while overlay is open while also retaining scollbar; shows overlay
 
 function openNav() {
-	document.getElementById("header").style.cssText = "border-right: 1px solid #212119; border-left: 1px solid #212119; margin: 1px 0 0; z-index: 100; position: fixed; top: 0; left: 0;";
+	document.getElementById("body").style.cssText = "overflow: hidden;";
+	document.getElementById("header").style.cssText = "z-index: 101; position: sticky; top: 0; left: 0; overflow-y: scroll; overflow-x: hidden;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible; border-left: 1px solid #DA9C5D;";
+	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible; overflow-y: scroll;";
 };
 
 function closeNav() {
-	document.getElementById("header").style.cssText = "position: inherit;";
+	document.getElementById("body").style.cssText = "overflow: inherit;";
+	document.getElementById("header").style.cssText = "position: inherit; overflow-y: inherit; overflow-x: inherit;";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
+	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden; overflow-y: inherit;";
 };
 
 

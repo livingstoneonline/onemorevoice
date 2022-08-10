@@ -14,15 +14,19 @@ if ("serviceWorker" in navigator) {
 // Makes header sticky while overlay is open; freezes main and footer while overlay is open while also retaining scollbar; shows overlay
 
 function openNav() {
-	document.getElementById("body").style.cssText = "overflow: hidden;"
-	document.getElementById("header").style.cssText = "position: fixed; top: 0; z-index: 100;";
+	// document.getElementById("html").style.cssText = "overflow: hidden;"
+	document.getElementById("header").style.cssText = "position: fixed; top: 0; left: 0; border-right: 1px solid #212119; border-left: 1px solid #212119; margin: 1px 0 0; z-index: 100;";
+	// document.getElementById("main").style.cssText = "display: none; visibility: hidden;";
+	// document.getElementById("footer").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible;";
+	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible; border-left: 1px solid #DA9C5D;";
 };
 
 function closeNav() {
-	document.getElementById("body").style.cssText = "overflow: inherit;";
-	document.getElementById("header").style.cssText = "margin-top: -1px; position: unset;";
+	// document.getElementById("html").style.cssText = "overflow: inherit;";
+	document.getElementById("header").style.cssText = "position: inherit;";
+	// document.getElementById("main").style.cssText = "display: inherit; visibility: inherit;";
+	// document.getElementById("footer").style.cssText = "display: inherit; visibility: inherit;";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
 };

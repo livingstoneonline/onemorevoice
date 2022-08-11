@@ -11,7 +11,6 @@ if ("serviceWorker" in navigator) {
 
 // Overlay
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
-// Makes header sticky while overlay is open; freezes main and footer while overlay is open while also retaining scollbar; shows overlay
 
 function openNav() {
 	document.getElementById("header").style.cssText = "border-right: 1px solid #212119; border-left: 1px solid #212119; margin: 1px 0 0; z-index: 100; position: fixed; top: 0; left: 0;";

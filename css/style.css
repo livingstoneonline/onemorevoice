@@ -2846,12 +2846,12 @@ strong{
 .underline{
 	text-decoration: underline;
 }
-/* done to here */
 
 
 /* 26. Thematic Initiatives Page Images */
 
 /* Also see https://stackoverflow.com/a/55557988 for the following */
+/* double image set up */
 .double-image{
 	display: -webkit-flex;
 	display: flex;
@@ -2864,6 +2864,7 @@ strong{
 		flex-direction: row;
 	}
 }
+/* captions for double images */
 img + p.caption-text,
 .double-image + p.caption-text{
 	font-size: .9rem;
@@ -2968,7 +2969,7 @@ img + p.caption-text,
 		flex: 0 0 calc(25% - 2.5rem);
 	}
 }
-/* min height */
+/* min height: films */
 @media only screen and (min-width:320px){
 	.films.gallery figure{
 		min-height: 384px;
@@ -2986,12 +2987,12 @@ img + p.caption-text,
 }
 @media only screen and (min-width: 768px){
 	.films.gallery figure{
-		min-height: 394px;
+		min-height: 393px;
 	}
 }
 @media only screen and (min-width: 992px){
 	.films.gallery figure{
-		min-height: 429px;
+		min-height: 428px;
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -3006,9 +3007,10 @@ img + p.caption-text,
 }
 @media only screen and (min-width: 1600px){
 	.films.gallery figure{
-		min-height: 441px;
+		min-height: 438px;
 	}
 }
+/* gallery set up: films and visuals */
 .gallery{
 	margin: 0;
   display: -webkit-flex;
@@ -3016,6 +3018,7 @@ img + p.caption-text,
   flex-direction: column;
 	justify-content: center;
 }
+/* main gallery containers (i.e., cards) for films and visuals */
 .gallery figure{
 	margin: 0;
 }
@@ -3030,6 +3033,7 @@ img + p.caption-text,
 	padding: 1rem;
 	width: 100%;
 }
+/* visuals image containers and images */
 .visuals.gallery .image-container{
 	padding: 0;
 }
@@ -3052,6 +3056,7 @@ img + p.caption-text,
 .visuals.gallery figure a:focus img{
 	border: 4px #305056 solid;
 }
+/* container for metadata: films and visuals */
 .visuals.gallery figure figcaption{
 	font-size: .95rem;
 	text-align: center;
@@ -3082,6 +3087,7 @@ img + p.caption-text,
 		padding: 0 1rem 1rem;
 	}
 }
+/* subsection title slides for films */
 .films.gallery figure.title-slide{
 	font-size: 1rem;
 	min-height: 138px;
@@ -3092,6 +3098,7 @@ img + p.caption-text,
 	align-items: center;
 	align-content: center;
 }
+/* metadata details for films */
 .films.gallery figure figcaption h4{
   font-size: 1.3rem;
   font-family: 'Amaranth', sans-serif;
@@ -3101,17 +3108,11 @@ img + p.caption-text,
   margin: 1.5rem 0 .5rem;
   padding: 0 0 .5rem 0;
 }
-/* .films.gallery figure figcaption h4::before{
-	content: "\f03d";
-	font-family: "Font Awesome 6 Free";
-	font-weight: 600;
-	color: #4d5b51;
-	margin-right: .75rem;
-} */
 .films.gallery figure figcaption p{
 	margin: 0;
 	line-height: 1.6rem;
 }
+/* expandable notes for films */
 .films.gallery figure figcaption summary{
 	font-weight: 600;
 }
@@ -3129,6 +3130,7 @@ img + p.caption-text,
 .films.gallery figure figcaption details[open] > summary:after{
 	content: "collapse";
 }
+/* done to here */
 
 
 /* 28. Motion Pictures */

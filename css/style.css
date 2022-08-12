@@ -3130,14 +3130,13 @@ img + p.caption-text,
 .films.gallery figure figcaption details[open] > summary:after{
 	content: "collapse";
 }
-/* done to here */
 
 
 /* 28. Motion Pictures */
 
 /* YouTube player taken from https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743 */
 /* Review https://codepen.io/beardofprey/pen/MXmxXR */
-/* YouTube frame */
+/* YouTube frame and image */
 .youtube{
 	cursor: pointer;
 	padding-top: 56.25%;
@@ -3315,6 +3314,7 @@ mark.running-time{
 .site-map{
 	line-height: 1.7rem;
 }
+/* lists */
 .site-map ol li:first-child{
 	margin-top: .5rem;
 }
@@ -3322,6 +3322,7 @@ mark.running-time{
 	margin-bottom: 1rem;
 	padding-left: .5rem;
 }
+/* sublists */
 /* Taken from https://stackoverflow.com/a/56758842 */
 details > summary{
   list-style: none;
@@ -3412,6 +3413,7 @@ details:focus-within ::marker{
 		margin-top: 1rem;
 	}
 }
+/* error text container */
 .error404 main div{
 	display: -webkit-flex;
 	display: flex;
@@ -3429,6 +3431,7 @@ details:focus-within ::marker{
 		min-width: 450px;
 	}
 }
+/* error text elements */
 .error404 main span{
 	text-align: center;
 }
@@ -3451,9 +3454,11 @@ details:focus-within ::marker{
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
 	/* Easy stuff */
+	/* Mainly spacing among elements where gap is used otherwise; in particular, see all the margin settings below; use parents elements to find items in the CSS above */
 	.categories .introduction-section .introduction-text > *:not(:first-child){
 		margin-top: 1rem;
 	}
+	/* needed as otherwise the text background on these pages doe not appear */
 	@media only screen and (min-width: 992px){
 		.home .introduction-section .introduction-text,
 		.categories .introduction-section .introduction-text{
@@ -3495,6 +3500,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	.overlay-content .button-container > *:not(:first-child){
 			margin-left: 1rem;
 	}
+	/* needed to that the image with Google translate is not bunched up */
 	.translate img{
 		width: auto;
 	}
@@ -3510,6 +3516,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 		margin-top: .75rem;
 	}
 	/* Tricky stuff */
+	/* mainly all related to gap spacing of cards/other items in various galleries */
 	/* padding adjustments, part 1 */
 	@media only screen and (min-width: 1200px){
 		#books,
@@ -3578,7 +3585,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			margin: -2.5rem -.625rem;
 		}
 	}
-	/* ruler compensation */
+	/* horizontal ruler compensation */
 	section + hr.section-divider{
 		margin: 1.5rem auto;
 	}

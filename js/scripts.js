@@ -14,6 +14,7 @@ if ("serviceWorker" in navigator) {
 
 function openNav() {
 	document.getElementById("body").style.cssText = "border: 0;";
+	// document.getElementById("header").style.cssText = "z-index: 100;";
 	document.getElementById("main").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("footer").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
@@ -22,6 +23,7 @@ function openNav() {
 
 function closeNav() {
 	document.getElementById("body").style.cssText = "border: inherit;";
+	// document.getElementById("header").style.cssText = "position: inherit;";
 	document.getElementById("main").style.cssText = "display: inherit; visibility: inherit;";
 	document.getElementById("footer").style.cssText = "display: inherit; visibility: inherit;";
 	document.getElementById("main-nav").classList.remove("overlay-nav");

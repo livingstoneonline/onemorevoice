@@ -22,7 +22,9 @@ body{
 	padding: 0;
 	max-width: 100%;
 	overflow-x: hidden;
-	top: 0px !important;
+	overflow-y: scroll;
+	scrollbar-gutter: stable;
+	top: 0 !important; /* needed for Google Translate */
 }
 button{
   -webkit-appearance: button;

@@ -181,7 +181,7 @@ body{
 	overflow-x: hidden; /* prevents overflow of frame */
 	overflow-y: scroll; /* needed to make overlay work */
 	scrollbar-gutter: stable; /* needed to make overlay work */
-	top: 0px !important; /* needed for Google Translate */
+	top: 0 !important; /* needed for Google Translate */
 }
 /* word break options; used only as needed */
 /* overflow-wrap: break-word;
@@ -2438,7 +2438,12 @@ header nav.breadcrumbs ul li a:focus{
 	min-height: calc(100vh - 79.8px);
 	width: 100%;
 	max-width: 1600px;
-	overflow-x: hidden;
+	/* overflow-x: hidden;
+	overflow-y: hidden; */
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
 	display: none;
 	visibility: hidden;
 }
@@ -2479,8 +2484,6 @@ header nav.breadcrumbs ul li a:focus{
 	margin: 0 auto;
 	padding: .5rem 1rem 2rem;
 	width: 100%;
-	/* overflow: auto;
-	scrollbar-gutter: stable; */
 }
 @media only screen and (min-width: 624px){
 	.overlay-content{

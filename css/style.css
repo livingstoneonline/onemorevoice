@@ -179,6 +179,8 @@ body{
 	padding: 0;
 	max-width: 100%; /* prevents overflow of frame */
 	overflow-x: hidden; /* prevents overflow of frame */
+	overflow-y: scroll; /* needed to make overlay work */
+	scrollbar-gutter: stable; /* needed to make overlay work */
 	top: 0px !important; /* needed for Google Translate */
 }
 /* word break options; used only as needed */
@@ -1770,6 +1772,7 @@ header{
 	width: 100%;
 	display: -webkit-flex;
   display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 @media only screen and (min-width: 480px){
@@ -2430,40 +2433,38 @@ header nav.breadcrumbs ul li a:focus{
 .overlay{
 	font-size: 1.05rem;
 	text-align: center;
-	margin: 79.8px auto 0;
+	margin: 0 auto;
 	padding: 0;
-	height: calc(100% - 79.8px);
+	min-height: calc(100vh - 79.8px);
 	width: 100%;
 	max-width: 1600px;
-	top: 0;
-	position: fixed;
-	z-index: 100;
 	overflow-x: hidden;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 480px){
 	.overlay{
-		margin-top: 85px;
-		height: calc(100% - 85px);
+		min-height: calc(100vh - 85px);
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
-		margin-top: 91.2px;
-		height: calc(100% - 91.2px);
+		min-height: calc(100vh - 91.2px);
 	}
 }
 @media only screen and (min-width: 1200px){
 	.overlay{
-		margin-top: 94.4px;
-		height: calc(100% - 94.4px);
+		min-height: calc(100vh - 94.4px);
 	}
 }
 /* sub-container: colored background on left on larger devices */
+.overlay > div{
+	display: none;
+	visibility: hidden;
+}
 @media only screen and (min-width: 624px){
-	.overlay div{
+	.overlay > div{
 		background: #DA9C5D;
     height: auto;
 		flex-grow: 1;
@@ -2478,8 +2479,8 @@ header nav.breadcrumbs ul li a:focus{
 	margin: 0 auto;
 	padding: .5rem 1rem 2rem;
 	width: 100%;
-	overflow: auto;
-	scrollbar-gutter: stable;
+	/* overflow: auto;
+	scrollbar-gutter: stable; */
 }
 @media only screen and (min-width: 624px){
 	.overlay-content{

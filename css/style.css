@@ -181,7 +181,7 @@ body{
 	overflow-x: hidden; /* prevents overflow of frame */
 	overflow-y: scroll; /* needed to make overlay work */
 	scrollbar-gutter: stable; /* needed to make overlay work */
-	top: 0 !important; /* needed for Google Translate */
+	top: 0px !important; /* needed for Google Translate */
 }
 /* word break options; used only as needed */
 /* overflow-wrap: break-word;
@@ -1742,7 +1742,7 @@ header{
 	background: #212119;
 	margin: 0 auto;
 	padding: 0;
-	height: 79.8px;
+	/* height: 79.8px; */
 	width: 100%;
 	max-width: 1600px;
 	display: -webkit-flex;
@@ -1753,17 +1753,17 @@ header{
 @media only screen and (min-width: 480px){
 	header{
 		padding: 0;
-		height: 85px;
+		/* height: 85px; */
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		height: 91.2px;
+		/* height: 91.2px; */
 	}
 }
 @media only screen and (min-width: 1200px){
 	header{
-		height: 94.4px;
+		/* height: 94.4px; */
 	}
 }
 /* contains skip, logo, and icons */
@@ -2433,33 +2433,37 @@ header nav.breadcrumbs ul li a:focus{
 .overlay{
 	font-size: 1.05rem;
 	text-align: center;
+	/* margin: 79.8px auto 0; */
 	margin: 0 auto;
 	padding: 0;
 	min-height: calc(100vh - 79.8px);
 	width: 100%;
 	max-width: 1600px;
-	/* overflow-x: hidden;
-	overflow-y: hidden; */
 	top: 0;
-	right: 0;
 	left: 0;
+	right: 0;
+	/* position: absolute; */
 	z-index: 100;
+	overflow-x: hidden;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 480px){
 	.overlay{
+		/* margin-top: 85px; */
 		min-height: calc(100vh - 85px);
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
+		/* margin-top: 91.2px; */
 		min-height: calc(100vh - 91.2px);
 	}
 }
 @media only screen and (min-width: 1200px){
 	.overlay{
+		/* margin-top: 94.4px; */
 		min-height: calc(100vh - 94.4px);
 	}
 }
@@ -2484,6 +2488,8 @@ header nav.breadcrumbs ul li a:focus{
 	margin: 0 auto;
 	padding: .5rem 1rem 2rem;
 	width: 100%;
+	/* overflow: auto;
+	scrollbar-gutter: stable; */
 }
 @media only screen and (min-width: 624px){
 	.overlay-content{

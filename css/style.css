@@ -1742,7 +1742,7 @@ header{
 	background: #212119;
 	margin: 0 auto;
 	padding: 0;
-	/* height: 79.8px; */
+	height: 81.4px;
 	width: 100%;
 	max-width: 1600px;
 	display: -webkit-flex;
@@ -1753,17 +1753,17 @@ header{
 @media only screen and (min-width: 480px){
 	header{
 		padding: 0;
-		/* height: 85px; */
+		height: 86.2px;
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		/* height: 91.2px; */
+		height: 91.2px;
 	}
 }
 @media only screen and (min-width: 1200px){
 	header{
-		/* height: 94.4px; */
+		height: 94.4px;
 	}
 }
 /* contains skip, logo, and icons */
@@ -2433,37 +2433,28 @@ header nav.breadcrumbs ul li a:focus{
 .overlay{
 	font-size: 1.05rem;
 	text-align: center;
-	/* margin: 79.8px auto 0; */
 	margin: 0 auto;
 	padding: 0;
-	min-height: calc(100vh - 79.8px);
+	min-height: calc(100vh - 81.4px);
 	width: 100%;
 	max-width: 1600px;
-	top: 0;
-	left: 0;
-	right: 0;
-	/* position: absolute; */
-	z-index: 100;
-	overflow-x: hidden;
+	overflow: hidden;
 	display: none;
 	visibility: hidden;
 }
 @media only screen and (min-width: 480px){
 	.overlay{
-		/* margin-top: 85px; */
-		min-height: calc(100vh - 85px);
+		min-height: calc(100vh - 86.2px);
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
-		/* margin-top: 91.2px; */
 		min-height: calc(100vh - 91.2px);
 	}
 }
 @media only screen and (min-width: 1200px){
 	.overlay{
-		/* margin-top: 94.4px; */
 		min-height: calc(100vh - 94.4px);
 	}
 }

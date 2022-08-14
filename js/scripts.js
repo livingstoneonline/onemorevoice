@@ -13,13 +13,17 @@ if ("serviceWorker" in navigator) {
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 function openNav() {
-	document.getElementById("header").style.cssText = "border-right: 1px solid #212119; border-left: 1px solid #212119; margin: 1px 0 0; z-index: 100; position: fixed; top: 0; left: 0;";
+	document.getElementById("body").style.cssText = "border: 0;";
+	document.getElementById("main").style.cssText = "display: none; visibility: hidden;";
+	document.getElementById("footer").style.cssText = "display: none; visibility: hidden;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible; border-left: 1px solid #DA9C5D;";
+	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible";
 };
 
 function closeNav() {
-	document.getElementById("header").style.cssText = "position: inherit;";
+	document.getElementById("body").style.cssText = "border: inherit;";
+	document.getElementById("main").style.cssText = "display: inherit; visibility: inherit;";
+	document.getElementById("footer").style.cssText = "display: inherit; visibility: inherit;";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
 };

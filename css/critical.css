@@ -22,9 +22,7 @@ body{
 	padding: 0;
 	max-width: 100%;
 	overflow-x: hidden;
-	overflow-y: scroll;
-	scrollbar-gutter: stable;
-	top: 0 !important; /* needed for Google Translate */
+	top: 0px !important;
 }
 button{
   -webkit-appearance: button;
@@ -618,7 +616,7 @@ header{
 	background: #212119;
 	margin: 0 auto;
 	padding: 0;
-	height: 79.8px;
+	/* height: 79.8px; */
 	width: 100%;
 	max-width: 1600px;
 	display: -webkit-flex;
@@ -629,17 +627,17 @@ header{
 @media only screen and (min-width: 480px){
 	header{
 		padding: 0;
-		height: 85px;
+		/* height: 85px; */
 	}
 }
 @media only screen and (min-width: 768px){
 	header{
-		height: 91.2px;
+		/* height: 91.2px; */
 	}
 }
 @media only screen and (min-width: 1200px){
 	header{
-		height: 94.4px;
+		/* height: 94.4px; */
 	}
 }
 .nav-container{

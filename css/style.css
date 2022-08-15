@@ -2435,7 +2435,8 @@ header nav.breadcrumbs ul li a:focus{
 	text-align: center;
 	margin: 0 auto;
 	padding: 0;
-	min-height: calc(100vh - 81.4px);
+	/* min-height needs to be 3px larger than header height or overlay exceeds window in Safari */
+	min-height: calc(100vh - 84px);
 	width: 100%;
 	max-width: 1600px;
 	overflow: hidden;
@@ -2444,18 +2445,18 @@ header nav.breadcrumbs ul li a:focus{
 }
 @media only screen and (min-width: 480px){
 	.overlay{
-		min-height: calc(100vh - 86.2px);
+		min-height: calc(100vh - 89px);
 	}
 }
 @media only screen and (min-width: 768px){
 	.overlay{
 		font-size: 1.1rem;
-		min-height: calc(100vh - 91.2px);
+		min-height: calc(100vh - 95px);
 	}
 }
 @media only screen and (min-width: 1200px){
 	.overlay{
-		min-height: calc(100vh - 94.4px);
+		min-height: calc(100vh - 98px);
 	}
 }
 /* sub-container: colored background on left on larger devices */

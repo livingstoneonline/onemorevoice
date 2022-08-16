@@ -1275,22 +1275,22 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
 	@media only screen and (min-width: 992px){
 		.transcription main{
-			margin-right: -1rem;
-			margin-left: -1rem;
+			margin-right: -.5rem;
+			margin-left: -.5rem;
 		}
 		.transcription main > *{
-			margin-right: 1rem;
-			margin-left: 1rem;
+			margin-right: .5rem;
+			margin-left: .5rem;
 		}
 	}
 	@media only screen and (min-width: 1200px){
 		.transcription main{
-			margin-right: -1.25rem;
-			margin-left: -1.25rem;
+			margin-right: -.625rem;
+			margin-left: -.625rem;
 		}
 		.transcription main > *{
-			margin-right: 1.25rem;
-			margin-left: 1.25rem;
+			margin-right: .625rem;
+			margin-left: .625rem;
 		}
 	}
 	@media only screen and (min-width: 320px){

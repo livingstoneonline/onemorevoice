@@ -10,8 +10,8 @@ Table of Contents
 ** Transcription CSS **
 01. Main Transcription Page
 02. Distribution of Text-Object Sections
-03. text-object-details Styling
-04. manuscript-journal-object Styling
+03. text-object-details Layout
+04. manuscript-journal-object Layout
 05. Transcription Headings
 06. Associated Links
 07. Narrow Mobile and Warning Box
@@ -42,6 +42,7 @@ Editorial Elements
 
 /* 01. Main Transcription Page */
 
+/* overall layout of page */
 .transcription main{
 	padding: 1rem 1rem 2rem;
 	display: -webkit-flex;
@@ -63,15 +64,17 @@ Editorial Elements
 }
 
 
-/* Distribution of Text-Object Sections (text-object & text-object-details) */
+/* 02. Distribution of Text-Object Sections (text-object & text-object-details) */
 
+/* text-object = encoded text or image; text-object-details = metadata */
 @media only screen and (min-width: 992px){
 	.text-object{
 		width: calc(55% - 1rem); 
 	}
 	.text-object-details{
 		font-size: 1rem;
-		width: calc(45% - 1rem)
+		width: calc(45% - 1rem);
+		flex-grow: 1;	
 	}
 }
 @media only screen and (min-width: 1200px){
@@ -81,13 +84,13 @@ Editorial Elements
 	}
 	.text-object-details{
 		width: calc(35% - 1.25rem);
-		flex-grow: 1;	
 	}
 }
 
 
-/* 03. text-object-details Styling */
+/* 03. text-object-details Layout */
 
+/* layout of metadata section */
 .text-object-details{
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -116,8 +119,9 @@ Editorial Elements
 }
 
 
-/* 04. manuscript-journal-object Styling */
+/* 04. manuscript-journal-object Layout */
 
+/* overall layout of encoded text or image */
 .manuscript,
 .journal,
 .object{
@@ -128,7 +132,6 @@ Editorial Elements
 	max-width: 700px;
 	display: block;
 	visibility: visible;
-	/* overflow: hidden; */
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
@@ -139,7 +142,7 @@ Editorial Elements
 }
 .manuscript,
 .journal{
-	font-family: Georgia, times new roman, Times, serif;
+	font-family: Georgia, Times new roman, Times, serif;
 }
 @media only screen and (min-width: 992px){
 	.manuscript,
@@ -157,6 +160,7 @@ Editorial Elements
 		visibility: hidden;
 	}
 }
+/* done to here */
 
 
 /* 05. Transcription Headings */

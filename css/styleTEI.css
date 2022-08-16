@@ -1269,6 +1269,40 @@ u{
 	border-bottom: 1px dotted #858585;
 }
 
+/* Safari Support: Mobile and Safari below 14.1 */
+/* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
+@supports (-webkit-touch-callout: none) and (not (translate: none)){
+	@media only screen and (min-width: 992px){
+		.transcription main{
+			margin-right: -1rem;
+			margin-left: -1rem;
+		}
+		.transcription main > *{
+			margin-right: 1rem;
+			margin-left: 1rem;
+		}
+	}
+	@media only screen and (min-width: 1200px){
+		.transcription main{
+			margin-right: -1.25rem;
+			margin-left: -1.25rem;
+		}
+		.transcription main > *{
+			margin-right: 1.25rem;
+			margin-left: 1.25rem;
+		}
+	}
+	@media only screen and (min-width: 320px){
+		.manuscript-switches,
+		.journal-switches{
+			margin: -.375rem;
+		}
+		.manuscript-switches > *,
+		.journal-switches > *{
+			margin: .375rem;
+		}
+}
 
 /* App-A. Underline for Tagged Items (not used) */
 

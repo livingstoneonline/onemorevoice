@@ -13,7 +13,7 @@ Table of Contents
 03. text-object-details Layout
 04. manuscript-journal-object Layout
 05. Transcription Headings
-06. Associated Links
+06. Item Details Link for Mobile
 07. Narrow Mobile and Warning Box
 08. Switches
 09. Toggle Classes
@@ -160,11 +160,11 @@ Editorial Elements
 		visibility: hidden;
 	}
 }
-/* done to here */
 
 
 /* 05. Transcription Headings */
 
+/* main page heading */
 .transcription h2{
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
@@ -189,12 +189,14 @@ Editorial Elements
 		font-size: 2.3rem;
 	}
 }
+/* item details heading */
 @media only screen and (min-width: 992px){
 	.transcription .text-object-details h3{
 		font-size: 1.4rem;
 		color: #2F4F55;
 	}
 }
+/* headings within transcriptions */
 .TEI .text .body .div h3,
 .TEI .text .body .div h4{
 		font-weight: normal;
@@ -229,8 +231,9 @@ Editorial Elements
 }
 
 
-/* 06. Associated Links */
+/* 06. Item Details Link for Mobile */
 
+/* container */
 .transcription p.associated-links{
 	font-size: .94rem;
 	font-family: 'Merriweather', serif;
@@ -238,31 +241,11 @@ Editorial Elements
 	padding: 0;
 	display: -webkit-flex;
 	display: flex;
-	align-items: center;
 	justify-content: flex-start;
-	gap: .25rem;
 }
-@media only screen and (min-width: 480px){
-	.transcription p.associated-links{
-		gap: .5rem;
-	}
-}
-.transcription p.associated-links .lead-in{
-	display: none;
-	visibility: hidden;
-}
-@media only screen and (min-width: 480px){
-	.transcription p.associated-links .lead-in{
-		font-size: .9em;
-		text-transform: uppercase;
-		margin-right: -.25rem;
-		display: inline-block;
-		visibility: visible;
-	}
-}
+/* link */
 .transcription p.associated-links a{
 	font-variant: normal;
-	/* text-decoration: none; */
 	white-space: nowrap;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -275,13 +258,11 @@ Editorial Elements
 		visibility: hidden;
 	}
 }
+/* icon */
 .transcription p.associated-links a i{
 	color: #4d5b51;
 	margin: 0 .35rem 0 0;
 }
-/* .transcription p.associated-links a span{
-	text-decoration: underline;
-} */
 
 
 /* 07. Narrow Mobile and Warning Box */
@@ -313,6 +294,7 @@ Editorial Elements
 /* 08. Switches */
 
 /* Switches adapted from https://dev.to/link2twenty/accessibility-first-toggle-switches-3obj x*/
+/* main container */
 .manuscript-switches,
 .journal-switches{
 	font-size: .9rem;
@@ -463,6 +445,7 @@ label.md_switch{
 
 /*  09. Toggle Classes */
 
+/* enable removal of colors */
 .change-color .manuscript .TEI{
 	border: 1px solid #212119;
 }
@@ -486,6 +469,7 @@ label.md_switch{
 .change-color .corr{
 	border-bottom: 2px dotted #212119;
 }
+/* enable color inversion */
 .invert-color .manuscript .TEI,
 .invert-color .journal .TEI{
 	filter: invert(1);
@@ -497,6 +481,7 @@ label.md_switch{
 .invert-color .journal .corr{
 	border-bottom: 2px dotted #212119;
 }
+/* remove rotation */
 .rotate .TEI *:not(.exclude){
 	transform: rotate(0deg) !important;
 	-ms-transform: rotate(0deg) !important; /* IE 9 */
@@ -504,6 +489,7 @@ label.md_switch{
 	-webkit-transform: rotate(0deg) !important; /* Safari and Chrome */
 	-o-transform: rotate(0deg) !important; /* Opera */
 }
+/* remove justification */
 .unjustify .journal .TEI{
 	text-align: left;
 }
@@ -511,6 +497,7 @@ label.md_switch{
 
 /* 10. Page Breaks and Blank Pages */
 
+/* page breaks */
 .pb-title{
 	font-size: .9em;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -545,6 +532,7 @@ label.md_switch{
 	padding-top: 0;
 	border-top: none;
 }
+/* blank pages */
 .blank{
 	color: #4d5b51;
 	font-size: .9em;
@@ -581,6 +569,7 @@ label.md_switch{
 .list .linenumber{
 	text-indent: 0;
 } */
+/* done to here */
 
 
 /* 12. p and ab */

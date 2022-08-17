@@ -569,11 +569,11 @@ label.md_switch{
 .list .linenumber{
 	text-indent: 0;
 } */
-/* done to here */
 
 
 /* 12. p and ab */
 
+/* p and ab general styles */
 .p,
 .ab{
 	text-indent: 25px;
@@ -595,6 +595,7 @@ label.md_switch{
 .journal .ab{
 	display: block;
 }
+/* p and ab positioning */
 .p.noindent,
 .p.center,
 .p.right,
@@ -786,15 +787,16 @@ td{
 .sup,
 .top{
 	/* Move the superscripted text up */
-	top: -0.50rem;
+	top: -.5rem;
 }
 .below,
 .bottom,
 .sub{
 	/* Move the subscripted text down, but only
 	 half as far down as the superscript moved up */
-	bottom: -0.50rem;
+	bottom: -.5rem;
 }
+/* done to here */
 
 
 /* 17. Object Image Containers (especially spacing) */

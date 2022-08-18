@@ -684,24 +684,29 @@ td{
 	margin-top: 1rem;
 	padding-bottom: 1rem;
 }
-.line{
+.line,
+.halfline,
+.quarterline
+.halfline.quarterline,
+.second-line,
+.third-line{	
 	border-bottom: 1px solid #d0d0d0;
 	border: 0;
 	border-top: 1px solid #58484b;
+	
+}
+.line{
 	width: 100%;
 }
 .doubleline,
-.quarterline.doubleline{
+.quarterline.doubleline,
+.tripleline{
 	border-top: 4px double #858585 !important;
 }
 .tripleline{
 	line-height: 1.9em;
-	border-top: 4px double #858585 !important;
 }
 .halfline{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
 	padding: 0;
 	width: 50%;
 }
@@ -711,31 +716,19 @@ td{
 .journal .halfline{
 	margin: 2em auto;
 }
+.quarterline{
+	width: 25%
+}
 .halfline.quarterline{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
 	width: 12.5%;
 	margin: .7rem auto;
 }
-.quarterline{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
-	width: 25%
-}
 .second-line{
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
 	margin-top: -1rem;
 	margin-bottom: 0;
 }
 .third-line{
 	margin-top: 1.5rem;
-	border-bottom: 1px solid #d0d0d0;
-	border: 0;
-	border-top: 1px solid #58484b;
 }
 .vertical.line{
 	display: none;
@@ -744,11 +737,11 @@ td{
 .dottedunderline{
 	border-bottom: 1px dashed;
 }
-.doubleunderline{
+.doubleunderline,
+.tripleunderline{
 	border-bottom: 4px double;
 }
 .tripleunderline{
-	border-bottom: 4px double;
 	text-decoration: underline;
 }
 .overline{

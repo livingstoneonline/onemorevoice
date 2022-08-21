@@ -24,7 +24,7 @@ Table of Contents
 14. Lists and Tables
 15. Milestone and Lines
 16. Page Placement
-17. Object Image Containers (especially spacing)
+17. Object Image Containers
 18. Object Images
 19. Original Image Captions
 20. Rotate Button
@@ -789,10 +789,9 @@ td{
 	 half as far down as the superscript moved up */
 	bottom: -.5rem;
 }
-/* done to here */
 
 
-/* 17. Object Image Containers (especially spacing) */
+/* 17. Object Image Containers */
 
 .object .TEI .ms-container .body .div{
 	display: -webkit-flex;
@@ -822,17 +821,12 @@ td{
 
 /* 18. Object Images */
 
-.object a img{
-	border: none;
-}
 .object .figure a:hover,
 .object .figure a:focus{
 	outline: none;
 }
-.object .figure a:hover img,
-.object .figure a:focus img{
+.object a img{
 	border: none;
-	outline: 3px solid #305056;
 }
 @media only screen and (min-width: 480px){
 	.object .figure.vertical a img,
@@ -845,13 +839,16 @@ td{
 .object .figure.hist-object a img{
 	border: 1px solid #bdc2bd;
 }
-/* .object .figure.hist-object.gray a img{
-	border: 1px solid #bdc2bd;
-} */
+.object .figure a:hover img,
+.object .figure a:focus img{
+	border: none;
+	outline: 3px solid #305056;
+}
 
 
 /* 19. Original Image Captions */
 
+/* nearly all the following used to sort out spacing */
 .object .TEI .ms-container .body .div p{
 	margin-top: 1rem;
 }
@@ -867,7 +864,7 @@ td{
 .object .TEI .ms-container .body .div .figure + p{
 	margin-top: -.5rem;
 }
-/* .metadata only used on liv_021097_ART.html currently */
+/* .metadata (as presented above image) only used on liv_021097_ART.html currently */
 .object .TEI .ms-container .body .div p.metadata{
 	font-size: .9rem;
 	font-style: italic;
@@ -885,7 +882,7 @@ td{
 
 /* 20. Rotate Button */
 
-/* #rotate button and .rotate-180 used for object images that need to be rotated */
+/* #rotate button and .rotate-90/.rotate-180 used for object images that need to be rotated */
 /* Button/rotation functionality adapted from https://www.w3schools.com/howto/howto_js_toggle_class.asp and https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Switch_role */
 button::-moz-focus-inner{
 	border: 0;
@@ -899,8 +896,9 @@ button::-moz-focus-inner{
 		-webkit-box-shadow: #697c6f 0px 2px 5px 0px;
 		-moz-box-shadow: #697c6f 0px 2px 5px 0px;
 		box-shadow: #697c6f 0px 2px 5px 0px;
+		border: none;
 		margin: 1.5rem 0 0;
-		padding: 2px 22px;
+		padding: 8px 22px;
 		align-self: flex-end;
 		display: -webkit-flex;
 		display: flex;
@@ -935,6 +933,7 @@ button::-moz-focus-inner{
 #image-to-rotate a{
 	width: 100%;
 }
+/* .rotate-90 currently only used on liv_021088 */
 .rotate-90{
 	height: calc(100vw - 2rem);
 	transform: rotate(90deg);
@@ -963,6 +962,7 @@ button::-moz-focus-inner{
 		height: 698px;	
 	}
 }
+/* .rotate-180 currently only used on liv_000003 */
 .rotate-180{
 	transform: rotate(180deg);
 	-ms-transform: rotate(180deg); /* IE 9 */
@@ -978,7 +978,7 @@ button::-moz-focus-inner{
 	display: none;
 	visibility: hidden;
 }
-
+/* done to here */
 
 /* 21. Recovered Texts: Journal & Manuscript */
 

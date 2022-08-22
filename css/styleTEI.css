@@ -28,7 +28,7 @@ Table of Contents
 18. Object Images
 19. Original Image Captions
 20. Rotate Button
-21. Recovered Texts: Journal & Manuscript
+21. Recovered Texts: Object, Journal, Manuscript
 22. Rend Classes (except colors, lines, and page placement)
 23. Misc
 24. Colors
@@ -978,15 +978,17 @@ button::-moz-focus-inner{
 	display: none;
 	visibility: hidden;
 }
-/* done to here */
 
-/* 21. Recovered Texts: Journal & Manuscript */
 
+/* 21. Recovered Texts: Object, Journal, Manuscript */
+
+/* regular width periodicals */
 .journal{
 	color: #212119;
 	background-color: #ffffff;
 	border: 1px solid #bdc2bd;
 }
+/* newspaper column width periodicals */
 @media only screen and (min-width: 768px){
 	.journal.narrow,
 	.journal .div.narrow{
@@ -995,6 +997,7 @@ button::-moz-focus-inner{
 		max-width: 525px;
 	}
 }
+/* .TEI = main frame for objects, manuscripts, and periodicals */
 .TEI{
 	margin: 0 auto;
 	position: relative;
@@ -1060,6 +1063,7 @@ button::-moz-focus-inner{
 		padding: 2rem 2.5rem 3rem;
 	}
 }
+/* manuscript front and back matter */
 .manuscript .TEI.front:not(.none) + .TEI,
 .manuscript .back{
 	margin-top: 2rem;
@@ -1071,15 +1075,16 @@ button::-moz-focus-inner{
 	display: inline-block;
 	text-align: left;
 }
+/* images in periodicals */
 .journal .image-small.inline-left{
 	float: left;
 	width: 4.5em;
 }
-.image-small{
+.journal .image-small{
 	width: 40%;
 	display: inline-block;
 }
-.image-medium{
+.journal .image-medium{
 	width: 60%;
 	display: inline-block;
 }
@@ -1261,6 +1266,7 @@ u{
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
+	/* overall layout of page */
 	@media only screen and (min-width: 992px){
 		.transcription main{
 			margin-right: -.5rem;
@@ -1281,6 +1287,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			margin-left: .625rem;
 		}
 	}
+	/* main switch container */
 	@media only screen and (min-width: 320px){
 		.manuscript-switches,
 		.journal-switches{

@@ -2705,7 +2705,11 @@ ol li ol{
 .padded-list li{
 	padding-bottom: 1rem;
 }
-.padded-list li:last-child{
+.double-padded-list li{
+	padding-bottom: 2rem;
+}
+.padded-list li:last-child,
+.double-padded-list li:last-child{
 	padding-bottom: 0;
 }
 

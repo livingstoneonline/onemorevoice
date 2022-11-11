@@ -1,0 +1,3 @@
+https://unix.stackexchange.com/questions/146201/list-all-the-html-tags-in-a-file
+
+perl -wlne 'print for(/<.*?>/g)' *.html > file.txt

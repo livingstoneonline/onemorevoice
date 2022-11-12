@@ -1,0 +1,45 @@
+/* formatting for "Item Details" section visible on mobile */
+.transcription p.associated-links{
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+}
+/* main headings in transcriptions */
+.materials .cove h3{
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.materials .cove p{
+  text-indent: 1rem;
+  margin: 0;
+}
+.materials .cove .noindent{
+  text-indent: 0;
+}
+/* adds margin above item */
+.materials .cove .topmargin{
+  margin-top: 1rem;
+}
+/* adds small margin to right of item */
+.materials .cove .smallrightmargin{
+  margin-right: 2%;
+}
+/* heading specific to liv_026001 */
+.kaikohe-paragraph{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+/* spacing about "Source Article Details" section heading */
+#source-article-details{
+  margin-top: 2.5rem;
+}
+@media only screen and (min-width: 768px){
+  #source-article-details{
+    margin-top: 3rem;
+  }
+}

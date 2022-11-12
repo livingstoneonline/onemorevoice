@@ -43,7 +43,8 @@
 
 <style>
   .transcription p.associated-links{
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;
   }
   .materials .cove h3{
     font-size: 1rem;
@@ -73,7 +74,12 @@
     margin-right: 2%;
   }
   #source-article-details{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+  }
+  @media only screen and (min-width: 768px){
+    #source-article-details{
+      margin-top: 3rem;
+    }
   }
 </style>
 
@@ -119,9 +125,7 @@
 <p id="mobile">Please turn your mobile device to <span class="highlight">landscape</span> or <span class="highlight">widen your browser window</span> for optimal viewing of this archival document.</p>
 </section>
 <section class="journal ">
-<div class="TEI"><!--true-->
-<div class="text ">
-<div class="body ">
+<div class="TEI">
 <!-- end seg 2 -->
 
 <div class="cove"><!-- style="font-size:1.125em;" --><!-- Change -->
@@ -219,8 +223,6 @@
 </div>
 
 <!-- start seg 3 -->
-</div>
-</div>
 </div>
 </section>
 </section>

@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   gap: .5rem 1rem;
 }
+/* padding on main container */
+.materials .cove{
+  padding: 1rem 0;
+}
 /* main headings in transcriptions */
 .materials .cove h3{
   font-size: 1rem;
@@ -10,6 +14,14 @@
   font-weight: 400;
   color: inherit;
   border: none;
+  margin: 0;
+  padding: 0;
+}
+.materials .cove h4{
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: inherit;
   margin: 0;
   padding: 0;
 }

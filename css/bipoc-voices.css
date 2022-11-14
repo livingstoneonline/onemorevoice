@@ -44,21 +44,38 @@
 .materials .cove .smallrightmargin{
   margin-right: 2%;
 }
+/* large sizes */
+.materials .cove .large{
+	font-size: 1.1rem;
+}
+.materials .cove .larger{
+	font-size: 1.2rem;
+}
+.materials .cove .largest{
+	font-size: 1.3rem;
+}
 /* small sizes */
 .materials .cove .small{
-	font-size: .9em;
+	font-size: .9rem;
 }
 .materials .cove .smaller{
-	font-size: .85em;
+	font-size: .85rem;
 }
 .materials .cove .smallest{
-	font-size: .8em;
+	font-size: .8rem;
 }
 /* heading specific to liv_026001 */
-.kaikohe-paragraph{
+p.liv_026001{
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.liv_026009 .poem{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 4rem;
 }
 /* spacing about "Source Article Details" section heading */
 #source-article-details{

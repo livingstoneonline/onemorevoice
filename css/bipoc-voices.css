@@ -56,15 +56,15 @@
 }
 /* small sizes */
 .materials .cove .small{
-	font-size: .9rem;
+	font-size: .95rem;
 }
 .materials .cove .smaller{
-	font-size: .85rem;
+	font-size: .9rem;
 }
 .materials .cove .smallest{
-	font-size: .8rem;
+	font-size: .85rem;
 }
-/* heading specific to liv_026001 */
+/* item specific coding */
 p.liv_026001{
   display: -webkit-flex;
   display: flex;
@@ -76,6 +76,9 @@ p.liv_026001{
   display: flex;
   flex-wrap: wrap;
   gap: 0 4rem;
+}
+.font.liv_026010{
+  font-family: 'UnifrakturMaguntia', cursive !important;
 }
 /* spacing about "Source Article Details" section heading */
 #source-article-details{

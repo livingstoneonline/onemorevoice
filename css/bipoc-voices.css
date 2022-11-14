@@ -5,7 +5,7 @@
 }
 /* padding on main container */
 .materials .cove{
-  padding: 1rem 0;
+  padding: 1rem;
 }
 /* main headings in transcriptions */
 .materials .cove h3{
@@ -29,6 +29,13 @@
   text-indent: 1rem;
   margin: 0;
   position: relative;
+}
+/* variants of indent */
+.materials .cove .indent{
+  text-indent: 1rem;
+}
+.materials .cove .doubleindent{
+  text-indent: 2rem;
 }
 .materials .cove .noindent{
   text-indent: 0;
@@ -70,6 +77,12 @@ p.liv_026001{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.liv_026005 .poem{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .liv_026009 .poem{
   display: -webkit-flex;

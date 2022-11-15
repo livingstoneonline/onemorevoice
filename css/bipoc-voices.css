@@ -93,6 +93,11 @@ p.liv_026001{
 .font.liv_026010{
   font-family: 'UnifrakturMaguntia', cursive !important;
 }
+p.liv_026015{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
 /* spacing about "Source Article Details" section heading */
 #source-article-details{
   margin-top: 2.5rem;

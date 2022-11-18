@@ -98,12 +98,6 @@ p.liv_026001{
   flex-direction: column;
   align-items: center;
 }
-.liv_026005 .poem{
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .liv_026009 .poem{
   display: -webkit-flex;
   display: flex;
@@ -124,6 +118,11 @@ p.liv_026015{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.liv_026037 .poem-container{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
 }
 /* spacing about "Source Article Details" section heading */
 #source-article-details{

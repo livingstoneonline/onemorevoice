@@ -26,6 +26,9 @@
   margin: 0;
   padding: 0;
 }
+.materials .cove h4.bold{
+  font-weight: 600;
+}
 .materials .cove h5{
   font-size: .95rem;
   font-weight: 400;
@@ -45,6 +48,9 @@
   position: relative;
 }
 /* variants of indent */
+.materials .cove .halfindent{
+  text-indent: .5rem;
+}
 .materials .cove .indent{
   text-indent: 1rem;
 }
@@ -122,6 +128,12 @@ p.liv_026015{
 .liv_026037 .poem-container{
   display: -webkit-flex;
   display: flex;
+  justify-content: center;
+}
+.liv_026046 .poem-container{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 /* spacing about "Source Article Details" section heading */

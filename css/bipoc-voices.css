@@ -52,6 +52,11 @@
   margin: .5rem auto;
   width: 15%;
 }
+.materials .cove .bv-hr-double{
+  text-align: center;
+  margin: .5rem auto;
+  width: 30%;
+}
 /* variants of indent */
 .materials .cove .halfindent{
   text-indent: .5rem;
@@ -67,6 +72,11 @@
 }
 .materials .cove .right{
   text-align: right;
+}
+/* indent all but first line */
+.materials .cove .overhang{
+  text-indent: -1rem; 
+  padding-left: 1rem;
 }
 /* adds margin above item */
 .materials .cove .topmargin{

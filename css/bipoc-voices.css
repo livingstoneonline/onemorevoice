@@ -19,7 +19,7 @@
   padding: 0;
 }
 .materials .cove h4{
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: inherit;
   font-weight: 400;
   color: inherit;
@@ -44,6 +44,7 @@
 }
 .materials .cove p{
   text-indent: 1rem;
+  clear: both;
   margin: 0;
   position: relative;
 }
@@ -69,6 +70,11 @@
 }
 .materials .cove .noindent{
   text-indent: 0;
+}
+/* align left and right */
+.materials .cove .left{
+  text-align: left;
+  float: none;
 }
 .materials .cove .right{
   text-align: right;
@@ -107,6 +113,12 @@
 	font-size: .85em;
 }
 /* item specific coding */
+.liv_025017 .stanza{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 p.liv_026001{
   display: -webkit-flex;
   display: flex;

@@ -46,7 +46,7 @@
   text-indent: 1rem;
   clear: both;
   margin: 0;
-  position: relative;
+  position: relative; /* Needed to override TEI coding*/
 }
 .materials .cove .bv-hr{
   text-align: center;
@@ -118,6 +118,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+h3.font.liv_025038{
+  font-family: 'UnifrakturMaguntia', cursive !important;
+  font-size: 1.7em;
+}
+.materials .cove p.liv_025038{
+  text-indent: 7rem;
 }
 p.liv_026001{
   display: -webkit-flex;

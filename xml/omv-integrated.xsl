@@ -78,7 +78,7 @@
 				<link rel="preconnect" href="https://fonts.googleapis.com"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
 				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0021"/>
-				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+				<script src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5" async=""></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 

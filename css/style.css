@@ -3465,18 +3465,15 @@ details:focus-within ::marker{
 /* 32. BIPOC Voices */
 
 /* bipoc voices project flag on all pages */
-#bv-project{
+#bv-project,
+#bv-details-project{
 	line-height: 1.5em;
-  background: #d9d9d9;
+	border: 1px solid #737d73; 
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-  margin: 0 0 0 -.5rem;
-  padding: .5rem;
-	display: inline-block;
-}
-#bv-project a{
-	color: #2A464B;
+	margin: .5rem -.5rem;
+	padding: .5rem;
 }
 
 

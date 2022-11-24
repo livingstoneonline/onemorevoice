@@ -171,6 +171,23 @@ mogrify -format jpg -resize 1500x1500 -sampling-factor 4:2:0 -strip -quality 85 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/motion-pictures \;
 
 
+***BIPOC Voices****
+
+mogrify -format jpg -resize 586x586 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/586 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/586 && find . -exec rename 's|.jpg|-586px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 552x552 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/552 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/552 && find . -exec rename 's|.jpg|-552px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 440x440 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/440 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/440 && find . -exec rename 's|.jpg|-440px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 411x411 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/411 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/411 && find . -exec rename 's|.jpg|-411px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 364x364 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/364 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/364 && find . -exec rename 's|.jpg|-364px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 220x220 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/220 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/220 && find . -exec rename 's|.jpg|-220px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/bipoc-voices \;
+
+
 **** liv_021003 ****
 
 mogrify -format jpg -resize 275x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/275 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/275 && find . -exec rename 's|.jpg|-275px.jpg|' {} + && cd - && 

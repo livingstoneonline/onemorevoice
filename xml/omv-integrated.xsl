@@ -39,7 +39,7 @@
 			<xsl:text>Recovered text by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by One More Voice.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="object-creator">
-			<xsl:text>Visual material by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
+			<xsl:text>Visual material by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice digital recovery project.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>

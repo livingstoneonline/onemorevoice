@@ -51,6 +51,10 @@
 .materials .cove img{
   margin: 1rem 0;
 }
+/* add border around image */
+.materials .cove img.outline{
+  border: 1px solid #bdc2bd;
+}
 .materials .cove .bv-hr{
   text-align: center;
   margin: .5rem auto;

@@ -3,21 +3,9 @@
 /* Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ */
 /* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
 
+/* override standard heading color */
 h3#timeline{
   border-bottom: 8px solid #bdc2bd;
-}
-
-.timeline-container a:hover,
-.timeline-container a:focus{
-  outline: 2px solid #315257;
-}
-
-/* hyperlinks for centuries */
-.timeline-dates{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .75rem;
 }
 /* box sizing */
 .timeline-container *{
@@ -38,9 +26,6 @@ h3#timeline{
     margin: 3rem auto;
   }
 } */
-section.content:not(.recovered) article section .timeline-container section:not(:first-of-type){
-  margin-top: 2rem;
-}
 /* vertical line for timeline */
 .timeline-container:before{
   content: '';
@@ -59,8 +44,13 @@ section.content:not(.recovered) article section .timeline-container section:not(
     left: 50%;
   }
 }
+/* override standard outline for links in timeline */
+.timeline-container a:hover,
+.timeline-container a:focus{
+  outline: 2px solid #315257;
+}
 /* individual timeline item */
-.timeline-block{
+section section .timeline-block{
   margin: 2rem 0;
   width: 100%;
   display: -webkit-box;
@@ -75,8 +65,7 @@ section.content:not(.recovered) article section .timeline-container section:not(
   clear: both;
 }
 @media only screen and (min-width: 624px){
-  .timeline-block{
-    margin: 1rem 0;
+  section section .timeline-block{
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
     width: calc(50% + 8px);

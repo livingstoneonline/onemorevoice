@@ -3,6 +3,15 @@
 /* Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ */
 /* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
 
+h3#timeline{
+  border-bottom: 8px solid #bdc2bd;
+}
+
+.timeline-container a:hover,
+.timeline-container a:focus{
+  outline: 2px solid #315257;
+}
+
 /* hyperlinks for centuries */
 .timeline-dates{
   display: flex;
@@ -123,11 +132,11 @@ section section .timeline-block-left{
   height: 16px;
   z-index: 19;
 }
-.timeline-block-right .marker{
-  background: #404A54;
+.timeline-block:nth-child(odd) .marker{
+  background: #315257;
 }
-.timeline-block-left .marker{
-  background: #8C2518;
+.timeline-block:nth-child(even) .marker{
+  background: #984d55;
 }
 /* container for timeline item date and text */
 .timeline-content{
@@ -151,13 +160,17 @@ section section .timeline-block-left{
   -moz-border-radius: 0 .5rem 0 .5rem;
   border-radius: 0 .5rem 0 .5rem; */
 }
-.timeline-block-right .timeline-content{
-  border-right: 3px solid #404A54;
-    border-left: 3px solid #404A54;
+.timeline-block:nth-child(odd) .timeline-content{
+  border-right: 4px solid #315257;
+  border-left: 4px solid #315257;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
-.timeline-block-left .timeline-content{
-  border-right: 3px solid #8C2518;
-  border-left: 3px solid #8C2518;
+.timeline-block:nth-child(even) .timeline-content{
+  border-right: 4px solid #984d55;
+  border-left: 4px solid #984d55;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 @media only screen and (min-width: 624px){
   .timeline-block-left .timeline-content{

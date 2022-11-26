@@ -59,7 +59,7 @@ h3#timeline::before{
 }
 /* individual timeline item */
 section section .timeline-block{
-  margin: 2rem 0;
+  margin: 1rem 0;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -137,7 +137,6 @@ section section .timeline-block:nth-child(even){
 }
 /* container for timeline item date and text */
 .timeline-content{
-  /* background: #e6e6e6; */
   margin: 0 .75rem;
   width: calc(100% - 15.9667px - 1.5rem); /* Needed for middle dot marker*/
   display: -webkit-flex;
@@ -173,12 +172,6 @@ section section .timeline-content h4{
   direction: ltr;
   margin: 0;
 }
-/* section section .timeline-block:nth-child(odd) h4 a{
-  color: #305056;
-}
-section section .timeline-block:nth-child(even) h4 a{
-  color: #743B41;
-} */
 /* text on timeline */
 .timeline-content p{
   word-spacing: 1px;
@@ -188,7 +181,7 @@ section section .timeline-block:nth-child(even) h4 a{
 }
 /* date and creator items on timeline */
 .timeline-content p.timeline-date{
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
 }
 .timeline-content p.timeline-date,
 .timeline-content p.timeline-creator{

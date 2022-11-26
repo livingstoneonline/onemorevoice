@@ -9,8 +9,8 @@
 /* warning box for timeline page */
 aside.warning-box.bv-pieces{
   font-size: 1.05rem;
-  border-top: 6px solid #85454B;
-  border-bottom: 6px solid #85454B;
+  border-top: 4px solid #85454B;
+  border-bottom: 4px solid #85454B;
   border-right: 1px solid #bdc2bd;
   border-left: 1px solid #bdc2bd;
   margin-top: 2rem;
@@ -56,11 +56,6 @@ h3#timeline::before{
     width: 2px;
     left: 50%;
   }
-}
-/* override standard outline for links in timeline */
-.timeline-container a:hover,
-.timeline-container a:focus{
-  outline: 2px solid #a1a1a1;
 }
 /* individual timeline item */
 section section .timeline-block{
@@ -135,14 +130,14 @@ section section .timeline-block:nth-child(even){
   z-index: 19;
 }
 .timeline-block:nth-child(odd) .marker{
-  background: #315257;
+  background: #8db7bf;
 }
 .timeline-block:nth-child(even) .marker{
-  background: #743B41;
+  background: #dcd3a6;
 }
 /* container for timeline item date and text */
 .timeline-content{
-  background: #e6e6e6;
+  /* background: #e6e6e6; */
   margin: 0 .75rem;
   width: calc(100% - 15.9667px - 1.5rem); /* Needed for middle dot marker*/
   display: -webkit-flex;
@@ -151,17 +146,17 @@ section section .timeline-block:nth-child(even){
   gap: .5rem;
 }
 .timeline-block:nth-child(odd) .timeline-content{
-  border-right: 4px solid #315257;
-  border-left: 4px solid #315257;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 6px solid #8db7bf;
+  border-bottom: 6px solid #8db7bf;
+  border-right: 1px solid #bdc2bd;
+  border-left: 1px solid #bdc2bd;
   padding: .5rem 1rem 1.25rem 1.5rem;
 }
 .timeline-block:nth-child(even) .timeline-content{
-  border-right: 4px solid #743B41;
-  border-left: 4px solid #743B41;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 6px solid #dcd3a6;
+  border-bottom: 6px solid #dcd3a6;
+  border-left: 1px solid #bdc2bd;
+  border-right: 1px solid #bdc2bd;
   padding: .5rem 1.5rem 1.25rem 1rem;
 }
 @media only screen and (min-width: 624px){
@@ -178,12 +173,12 @@ section section .timeline-content h4{
   direction: ltr;
   margin: 0;
 }
-section section .timeline-block:nth-child(odd) h4 a{
+/* section section .timeline-block:nth-child(odd) h4 a{
   color: #305056;
 }
 section section .timeline-block:nth-child(even) h4 a{
   color: #743B41;
-}
+} */
 /* text on timeline */
 .timeline-content p{
   word-spacing: 1px;
@@ -193,8 +188,10 @@ section section .timeline-block:nth-child(even) h4 a{
 }
 /* date, creator, and region items on timeline */
 .timeline-content p.timeline-date{
-  font-weight: 500;
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
+}
+.timeline-content p.timeline-region{
+  margin-top: 2rem;
 }
 .timeline-content p.timeline-date,
 .timeline-content p.timeline-creator,

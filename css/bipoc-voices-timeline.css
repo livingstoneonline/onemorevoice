@@ -24,15 +24,18 @@
   position: relative;
   overflow: hidden;
 }
-@media only screen and (min-width: 624px){
+/* @media only screen and (min-width: 624px){
   .timeline-container{
     margin: 3rem auto;
   }
+} */
+section.content:not(.recovered) article section .timeline-container section:not(:first-of-type){
+  margin-top: 2rem;
 }
 /* vertical line for timeline */
 .timeline-container:before{
   content: '';
-  background: #CCD1D9;
+  background: #bdc2bd;
   margin-left: -1px;
   width: 2px;
   height: 100%;
@@ -130,47 +133,69 @@ section section .timeline-block-left{
 .timeline-content{
   background: #e6e6e6;
   margin: 0 .75rem;
-  padding: .5rem 1rem 1rem;
-  width: calc(100% - 15.9667px - 1.5rem);
+  padding: .5rem 2rem 1.25rem;
+  width: calc(100% - 15.9667px - 1.5rem); /* Needed for middle dot marker*/
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
-@media only screen and (min-width: 624px){
+/* @media only screen and (min-width: 624px){
   .timeline-content{
     max-width: max-content;
   }
-}
+} */
 .timeline-content{
-  -webkit-border-radius: .5rem 0 .5rem 0;
-	-moz-border-radius: .5rem 0 .5rem 0;
-  border-radius: .5rem 0 .5rem 0;
+  /* border: 1px solid #bdc2bd; */
+  /* -webkit-border-radius: 0 .5rem 0 .5rem;
+  -moz-border-radius: 0 .5rem 0 .5rem;
+  border-radius: 0 .5rem 0 .5rem; */
+}
+.timeline-block-right .timeline-content{
+  border-right: 3px solid #404A54;
+    border-left: 3px solid #404A54;
+}
+.timeline-block-left .timeline-content{
+  border-right: 3px solid #8C2518;
+  border-left: 3px solid #8C2518;
 }
 @media only screen and (min-width: 624px){
   .timeline-block-left .timeline-content{
-    -webkit-border-radius: 0 .5rem 0 .5rem;
-    -moz-border-radius: 0 .5rem 0 .5rem;
-    border-radius: 0 .5rem 0 .5rem;
+    /* -webkit-border-radius: .5rem 0 .5rem 0;
+    -moz-border-radius: .5rem 0 .5rem 0;
+    border-radius: .5rem 0 .5rem 0; */
     margin-right: .75rem;
   }
 }
-/* date on timeline */
+/* title on timeline */
 section section .timeline-content h4{
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 500;
   text-align: inherit;
   text-transform: none;
   direction: ltr;
   margin: 0;
 }
-section section .timeline-block-right h4{
-  color: #404A54;
+/* section section .timeline-block-right h4{
+  color: #305056;
 }
 section section .timeline-block-left h4{
-  color: #8C2518;
-}
+  color: #743B41;
+} */
 /* text on timeline */
 .timeline-content p{
-  font-size: .95rem;
+  /* font-size: 1rem; */
   word-spacing: 1px;
   text-align: inherit;
   line-height: 1.5em;
   margin: .5rem 0 0;
+}
+.timeline-content p.timeline-date{
+  font-size: .95rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+.timeline-content p.timeline-creator,
+.timeline-content p.timeline-region{
+  font-size: 1.05rem;
 }

@@ -186,21 +186,16 @@ section section .timeline-block:nth-child(even) h4 a{
   line-height: 1.5em;
   margin: .5rem 0 0;
 }
-/* date, creator, and region items on timeline */
+/* date and creator items on timeline */
 .timeline-content p.timeline-date{
   margin-bottom: 1.5rem;
 }
-.timeline-content p.timeline-region{
-  margin-top: 2rem;
-}
 .timeline-content p.timeline-date,
-.timeline-content p.timeline-creator,
-.timeline-content p.timeline-region{
+.timeline-content p.timeline-creator{
   font-size: 1rem;
 }
 .timeline-content p.timeline-date::before,
-.timeline-content p.timeline-creator::before,
-.timeline-content p.timeline-region::before{
+.timeline-content p.timeline-creator::before{
 	font-family: "Font Awesome 6 Free";
 	margin-right: .25rem;
 }
@@ -210,9 +205,5 @@ section section .timeline-block:nth-child(even) h4 a{
 }
 .timeline-content p.timeline-creator::before{
   content: "\f500";
-  font-weight: 600;
-}
-.timeline-content p.timeline-region::before{
-  content: "\f0ac";
   font-weight: 600;
 }

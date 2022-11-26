@@ -1,11 +1,16 @@
-/* 1.7. Timeline */
-
 /* Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ */
 /* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
+/* Based on the timeline created for https://undiscipliningvc.org/html/lesson_plans/east_asia_timeline.html */
 
 /* override standard heading color */
 h3#timeline{
   border-bottom: 8px solid #bdc2bd;
+}
+h3#timeline::before{
+  content: "\f133";
+  font-weight: 400;
+	font-family: "Font Awesome 6 Free";
+	margin-right: .75rem;
 }
 /* box sizing */
 .timeline-container *{
@@ -21,11 +26,6 @@ h3#timeline{
   position: relative;
   overflow: hidden;
 }
-/* @media only screen and (min-width: 624px){
-  .timeline-container{
-    margin: 3rem auto;
-  }
-} */
 /* vertical line for timeline */
 .timeline-container:before{
   content: '';
@@ -125,7 +125,7 @@ section section .timeline-block:nth-child(even){
   background: #315257;
 }
 .timeline-block:nth-child(even) .marker{
-  background: #984d55;
+  background: #743B41;
 }
 /* container for timeline item date and text */
 .timeline-content{
@@ -145,8 +145,8 @@ section section .timeline-block:nth-child(even){
   border-bottom: 1px solid #d9d9d9;
 }
 .timeline-block:nth-child(even) .timeline-content{
-  border-right: 4px solid #984d55;
-  border-left: 4px solid #984d55;
+  border-right: 4px solid #743B41;
+  border-left: 4px solid #743B41;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -157,17 +157,17 @@ section section .timeline-block:nth-child(even){
 }
 /* title on timeline */
 section section .timeline-content h4{
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   text-align: inherit;
   text-transform: none;
   direction: ltr;
   margin: 0;
 }
-section section .timeline-block-right h4 a{
+section section .timeline-block:nth-child(odd) h4 a{
   color: #305056;
 }
-section section .timeline-block-left h4 a{
+section section .timeline-block:nth-child(even) h4 a{
   color: #743B41;
 }
 /* text on timeline */
@@ -177,14 +177,31 @@ section section .timeline-block-left h4 a{
   line-height: 1.5em;
   margin: .5rem 0 0;
 }
-/* date items on timeline */
+/* date, creator, and region items on timeline */
 .timeline-content p.timeline-date{
-  font-size: .95rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: .5rem;
 }
-/* creator and region items on timeline */
+.timeline-content p.timeline-date,
 .timeline-content p.timeline-creator,
 .timeline-content p.timeline-region{
-  font-size: 1.05rem;
+  font-size: 1rem;
+}
+.timeline-content p.timeline-date::before,
+.timeline-content p.timeline-creator::before,
+.timeline-content p.timeline-region::before{
+	font-family: "Font Awesome 6 Free";
+	margin-right: .25rem;
+}
+.timeline-content p.timeline-date::before{
+  content: "\f133";
+  font-weight: 400;
+}
+.timeline-content p.timeline-creator::before{
+  content: "\f500";
+  font-weight: 600;
+}
+.timeline-content p.timeline-region::before{
+  content: "\f0ac";
+  font-weight: 600;
 }

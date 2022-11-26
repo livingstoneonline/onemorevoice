@@ -90,22 +90,22 @@ section section .timeline-block:last-of-type{
   }
 }
 /* all timeline items on right side */
-section section .timeline-block-right{
+section section .timeline-block:nth-child(odd){
   float: none;
 }
 @media only screen and (min-width: 624px){
-  section section .timeline-block-right{
+  section section .timeline-block:nth-child(odd){
       float: right;
   }
 }
 /* all timeline items on left side */
-section section .timeline-block-left{
+section section .timeline-block:nth-child(even){
       direction: ltr;
       text-align: left;
       float: none;
 }
 @media only screen and (min-width: 624px){
-  section section .timeline-block-left{
+  section section .timeline-block:nth-child(even){
     direction: rtl;
     text-align: right;
     float: left;
@@ -138,17 +138,6 @@ section section .timeline-block-left{
   flex-direction: column;
   gap: .5rem;
 }
-/* @media only screen and (min-width: 624px){
-  .timeline-content{
-    max-width: max-content;
-  }
-} */
-.timeline-content{
-  /* border: 1px solid #bdc2bd; */
-  /* -webkit-border-radius: 0 .5rem 0 .5rem;
-  -moz-border-radius: 0 .5rem 0 .5rem;
-  border-radius: 0 .5rem 0 .5rem; */
-}
 .timeline-block:nth-child(odd) .timeline-content{
   border-right: 4px solid #315257;
   border-left: 4px solid #315257;
@@ -162,10 +151,7 @@ section section .timeline-block-left{
   border-bottom: 1px solid #d9d9d9;
 }
 @media only screen and (min-width: 624px){
-  .timeline-block-left .timeline-content{
-    /* -webkit-border-radius: .5rem 0 .5rem 0;
-    -moz-border-radius: .5rem 0 .5rem 0;
-    border-radius: .5rem 0 .5rem 0; */
+  .timeline-block:nth-child(even) .timeline-content{
     margin-right: .75rem;
   }
 }
@@ -178,25 +164,26 @@ section section .timeline-content h4{
   direction: ltr;
   margin: 0;
 }
-/* section section .timeline-block-right h4{
+section section .timeline-block-right h4 a{
   color: #305056;
 }
-section section .timeline-block-left h4{
+section section .timeline-block-left h4 a{
   color: #743B41;
-} */
+}
 /* text on timeline */
 .timeline-content p{
-  /* font-size: 1rem; */
   word-spacing: 1px;
   text-align: inherit;
   line-height: 1.5em;
   margin: .5rem 0 0;
 }
+/* date items on timeline */
 .timeline-content p.timeline-date{
   font-size: .95rem;
   font-weight: 600;
   margin-bottom: .5rem;
 }
+/* creator and region items on timeline */
 .timeline-content p.timeline-creator,
 .timeline-content p.timeline-region{
   font-size: 1.05rem;

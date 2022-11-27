@@ -59,7 +59,7 @@ h3#timeline::before{
 }
 /* individual timeline item */
 section section .timeline-block{
-  margin: -1.5rem 0;
+  margin: 1.5rem 0;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -74,9 +74,25 @@ section section .timeline-block{
 }
 @media only screen and (min-width: 624px){
   section section .timeline-block{
+    margin: -5rem 0;
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
     width: calc(50% + 8px);
+  }
+}
+@media only screen and (min-width: 768px){
+  section section .timeline-block{
+    margin: -4rem 0;
+  }
+}
+@media only screen and (min-width: 992px){
+  section section .timeline-block{
+    margin: -2.5rem 0;
+  }
+}
+@media only screen and (min-width: 1200px){
+  section section .timeline-block{
+    margin: -1.5rem 0;
   }
 }
 /* reduces margin at top of timeline */

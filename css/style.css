@@ -72,6 +72,7 @@ Table of Contents
 (darker blue) #305056; (contrast checked)
 (darkest blue) #243D42;
 
+(gray-green): #697c6f;
 (olive green) #a4b48b;
 (dark green) #3c5e58;
 
@@ -89,7 +90,6 @@ Table of Contents
 (lighter gray): #d9d9d9;
 (light mid-gray) #bdc2bd;
 (ligh mid-gray) #a1a1a1;
-(gray-green): #697c6f;
 (mid-gray) #737d73;
 (dark blue in grayscale, made lighter): #737373
 (dark blue in grayscale) #575757;
@@ -3467,17 +3467,51 @@ details:focus-within ::marker{
 
 /* 32. BIPOC Voices */
 
-/* bipoc voices project flag on all pages */
+/* bipoc voices project button on all pages */
 #bv-project,
 #bv-details-project{
-	line-height: 1.5em;
-	border: 1px solid #bdc2bd;
+	font-weight: 600;
+	white-space: nowrap;
+}
+#bv-project{
+	margin: 2.5rem 0 2rem -.5rem;
+}
+#bv-details-project{
+	margin: 1.5rem 0 1.5rem -.5rem;
+}
+#bv-project a,
+#bv-details-project a{
+	text-decoration: none;
+	text-align: center;
+	color: #243D42;
+	-webkit-box-shadow: #bdc2bd 1px 1px 3px 1px;
+	-moz-box-shadow: #bdc2bd 1px 1px 3px 1px;
+	box-shadow: #bdc2bd 1px 1px 3px 1px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	margin: .5rem -.5rem;
-	padding: .5rem;
-	display: inline-block;
+	padding: .5rem .75rem;
+}
+#bv-project a{
+	background: #d9d9d9;
+	-webkit-box-shadow: #bdc2bd 1px 1px 3px 1px;
+	-moz-box-shadow: #bdc2bd 1px 1px 3px 1px;
+	box-shadow: #bdc2bd 1px 1px 3px 1px;
+}
+#bv-details-project a{
+	background: #C9CCC9;
+	-webkit-box-shadow: #a1a1a1 1px 1px 2px 1px;
+	-moz-box-shadow: #a1a1a1 1px 1px 2px 1px;
+	box-shadow: #a1a1a1 1px 1px 2px 1px;
+}
+#bv-project a:hover,
+#bv-details-project a:hover,
+#bv-project a:focus,
+#bv-details-project a:focus{
+	color: #fff;
+	background: #305056;
+	border: 1px solid #305056;
+	outline: none;
 }
 
 

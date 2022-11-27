@@ -2,14 +2,22 @@
 
 /* Created and maintained by Adrian S. Wisnicki */ /* 2022 */
 
-/* formatting for "Item Details" section visible on mobile */
-.transcription p.associated-links{
-  flex-wrap: wrap;
-  gap: .5rem 1rem;
-}
+/********************/
+
+/* General Coding */
+
 /* formatting on main container */
 .materials .cove{
   padding: 1rem;
+}
+/* spacing above "Source Article Details" section heading */
+#source-article-details{
+  margin-top: 2.5rem;
+}
+@media only screen and (min-width: 768px){
+  #source-article-details{
+    margin-top: 3rem;
+  }
 }
 /* main headings in transcriptions */
 .materials .cove h3{
@@ -58,6 +66,7 @@
 .materials .cove img.outline{
   border: 1px solid #bdc2bd;
 }
+/* variants of horizontal rule */
 .materials .cove .bv-hr{
   text-align: center;
   margin: .5rem auto;
@@ -126,7 +135,6 @@
 }
 .materials .cove .large3{
   font-size: 2em;
-  /* background: #E7E9E7; */
   margin-right: .1rem;
   padding: 0 .15rem;
   border: 1px solid #212119;
@@ -142,7 +150,10 @@
 .materials .cove .smallest{
 	font-size: .85em;
 }
-/* item specific coding */
+
+
+/* Item-Specific Coding */
+
 .liv_025017 .stanza{
   display: -webkit-flex;
   display: flex;
@@ -210,13 +221,4 @@ p.liv_026015{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-/* spacing about "Source Article Details" section heading */
-#source-article-details{
-  margin-top: 2.5rem;
-}
-@media only screen and (min-width: 768px){
-  #source-article-details{
-    margin-top: 3rem;
-  }
 }

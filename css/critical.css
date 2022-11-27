@@ -1123,12 +1123,21 @@ strong{
 }
 #bv-project,
 #bv-details-project{
-	line-height: 1.5em;
-	border: 1px solid #bdc2bd;
+	font-weight: 600;
+	white-space: nowrap;
+	margin: 2.5rem 0 2rem -.5rem;
+}
+#bv-project a,
+#bv-details-project a{
+	text-decoration: none;
+	text-align: center;
+	color: #243D42;
+	background: #d9d9d9;
+	-webkit-box-shadow: #bdc2bd 1px 1px 3px 1px;
+	-moz-box-shadow: #bdc2bd 1px 1px 3px 1px;
+	box-shadow: #bdc2bd 1px 1px 3px 1px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	margin: .5rem -.5rem;
-	padding: .5rem;
-	display: inline-block;
+	padding: .5rem .75rem;
 }

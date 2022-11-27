@@ -1021,11 +1021,13 @@ aside.text-box,
 aside.warning-box{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
-	border-left: 6px solid #8db7bf;
+	border-top: 5px solid #8db7bf;
+	border-bottom: 5px solid #8db7bf;
 	padding: 1rem;
 }
 aside.text-box{
-	border-left: 6px solid #8db7bf;
+	border-top: 5px solid #8db7bf;
+	border-bottom: 5px solid #8db7bf;
 	margin: 1.5rem auto;
 }
 aside.warning-box{
@@ -1038,7 +1040,8 @@ aside.warning-box{
 }
 aside.warning-box.violence,
 aside.warning-box.language{
-	border-left: 6px solid #85454B;
+	border-top: 5px solid #85454B;
+	border-bottom: 5px solid #85454B;
 	max-width: 700px;
 }
 /*********/
@@ -1125,17 +1128,23 @@ strong{
 #bv-details-project{
 	font-weight: 600;
 	white-space: nowrap;
-	margin: 2.5rem 0 2rem -.5rem;
+}
+#bv-project{
+	margin: 0 0 3rem -.5rem;
+}
+#bv-details-project{
+	font-size: 1rem;
+	margin: 1rem 0 3rem -.5rem;
 }
 #bv-project a,
 #bv-details-project a{
+	color: #212119;
 	text-decoration: none;
 	text-align: center;
-	color: #243D42;
 	background: #d9d9d9;
-	-webkit-box-shadow: #bdc2bd 1px 1px 3px 1px;
-	-moz-box-shadow: #bdc2bd 1px 1px 3px 1px;
-	box-shadow: #bdc2bd 1px 1px 3px 1px;
+	-webkit-box-shadow: #bdc2bd 1px 1px 3px 2px;
+	-moz-box-shadow: #bdc2bd 1px 1px 3px 2px;
+	box-shadow: #bdc2bd 1px 1px 3px 2px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;

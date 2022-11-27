@@ -15,6 +15,22 @@ aside.warning-box.bv-pieces{
   border-left: 1px solid #bdc2bd;
   margin-top: 2rem;
 }
+/* override standard article width */
+@media only screen and (min-width: 1200px){
+	.content.recovered article#timeline-section{
+		max-width: 950px;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.content.recovered article#timeline-section{
+		max-width: 1150px;
+	}
+}
+@media only screen and (min-width: 1600px){
+	.content.recovered article#timeline-section{
+		max-width: 1350px;
+	}
+}
 
 /* override standard heading color */
 h3#timeline{
@@ -156,6 +172,7 @@ section section .timeline-block:nth-child(even){
 .timeline-content{
   margin: 0 .75rem;
   width: calc(100% - 15.9667px - 1.5rem); /* Needed for middle dot marker*/
+  padding: .5rem 1.5rem 1.25rem;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
@@ -166,14 +183,12 @@ section section .timeline-block:nth-child(even){
   border-bottom: 6px solid #8db7bf;
   border-right: 1px solid #bdc2bd;
   border-left: 1px solid #bdc2bd;
-  padding: .5rem 1rem 1.25rem 1.5rem;
 }
 .timeline-block:nth-child(even) .timeline-content{
   border-top: 6px solid #dcd3a6;
   border-bottom: 6px solid #dcd3a6;
   border-left: 1px solid #bdc2bd;
   border-right: 1px solid #bdc2bd;
-  padding: .5rem 1.5rem 1.25rem 1rem;
 }
 @media only screen and (min-width: 624px){
   .timeline-block:nth-child(even) .timeline-content{

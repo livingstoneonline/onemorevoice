@@ -59,7 +59,7 @@ h3#timeline::before{
 }
 /* individual timeline item */
 section section .timeline-block{
-  margin: 1rem 0;
+  margin: -1.5rem 0;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -165,7 +165,7 @@ section section .timeline-block:nth-child(even){
 }
 /* title on timeline */
 section section .timeline-content h4{
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 600;
   text-align: inherit;
   text-transform: none;
@@ -181,11 +181,19 @@ section section .timeline-content h4{
 }
 /* date and creator items on timeline */
 .timeline-content p.timeline-date{
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
+}
+.timeline-content p.timeline-teaser{
+  font-size: .9rem;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  direction: ltr;
+  line-height: 1.875rem;
+  margin-top: 1.5rem;
 }
 .timeline-content p.timeline-date,
 .timeline-content p.timeline-creator{
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 .timeline-content p.timeline-date::before,
 .timeline-content p.timeline-creator::before{

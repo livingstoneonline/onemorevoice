@@ -962,7 +962,8 @@ header nav.breadcrumbs ul li a{
 }
 #level-3,
 .transcription #level-2,
-.transcription #level-4{
+.transcription #level-4,
+.transcription #level-5{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -973,7 +974,8 @@ header nav.breadcrumbs ul li a{
 .transcription #level-2{
 	max-width: 3rem;
 }
-.transcription #level-4{
+.transcription #level-4,
+.transcription #level-5{
 	max-width: 6rem;
 }
 @media only screen and (min-width: 480px){
@@ -982,37 +984,44 @@ header nav.breadcrumbs ul li a{
 		max-width: none;
 		overflow: inherit;
 	}
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 9.5rem;
 	}
 }
 @media only screen and (min-width: 624px){
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 18.5rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 26rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 40rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 53rem;
 	}
 }
 @media only screen and (min-width: 1366px){
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 64rem;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.transcription #level-4{
+	.transcription #level-4,
+.transcription #level-5{
 		max-width: 70rem;
 	}
 }
@@ -1126,6 +1135,7 @@ strong{
 }
 #bv-project,
 #bv-details-project{
+	font-size: .9rem;
 	font-weight: 600;
 	white-space: nowrap;
 }
@@ -1133,8 +1143,13 @@ strong{
 	margin: 0 0 3rem -.5rem;
 }
 #bv-details-project{
-	font-size: 1rem;
 	margin: 1rem 0 3rem -.5rem;
+}
+@media only screen and (min-width: 480px){
+	#bv-project,
+	#bv-details-project{
+		font-size: 1rem;
+	}
 }
 #bv-project a,
 #bv-details-project a{

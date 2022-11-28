@@ -1,14 +1,14 @@
 # Corpus of BIPOC Voices in the Victorian Periodical Press
 
-**Page Author** Adrian S. Wisnicki (University of Nebraska-Lincoln), with Dino Franco Felluga (Purdue University)
+**Page Authors** Adrian S. Wisnicki (University of Nebraska-Lincoln), with Dino Franco Felluga (Purdue University)
 
 **Corpus Contributors:** Trevor Bleick (University of Nebraska-Lincoln), Thomas Coughlin (University of South Carolina), Kenneth C. Crowell (Auburn University), Dino Franco Felluga (Purdue University), Cassie Fletcher (University of Nebraska-Lincoln), Kayla Morgan (Purdue University), Kasey Peters (University of Nebraska-Lincoln), Malik Raymond (Purdue University), Jocelyn Spoor (University of Nebraska-Lincoln), Adrian S. Wisnicki (University of Nebraska-Lincoln)
 
 **Date:** 2022
 
-**Cite page and corpus (MLA):** Wisncki, Adrian S., and Corpus Contributors. *Corpus of BIPOC Voices in the Victorian Periodical Press*. *One More Voice*, Solidarity edition, 2022. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus).
-
 **Terms of use:**  [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+
+**Cite page and corpus (MLA):** Wisncki, Adrian S., Dino Franco Felluga, and Corpus Contributors. *Corpus of BIPOC Voices in the Victorian Periodical Press*. *One More Voice*, Solidarity edition, 2022. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus).
 
 <br>
 

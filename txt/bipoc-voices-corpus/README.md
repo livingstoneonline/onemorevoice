@@ -1,6 +1,6 @@
 # Corpus of BIPOC Voices in the Victorian Periodical Press
 
-**Page Author** Adrian S. Wisnicki (University of Nebraska-Lincoln)
+**Page Author** Adrian S. Wisnicki (University of Nebraska-Lincoln), with Dino Franco Felluga (Purdue University)
 
 **Corpus Contributors:** Trevor Bleick (University of Nebraska-Lincoln), Thomas Coughlin (University of South Carolina), Kenneth C. Crowell (Auburn University), Dino Franco Felluga (Purdue University), Cassie Fletcher (University of Nebraska-Lincoln), Kayla Morgan (Purdue University), Kasey Peters (University of Nebraska-Lincoln), Malik Raymond (Purdue University), Jocelyn Spoor (University of Nebraska-Lincoln), Adrian S. Wisnicki (University of Nebraska-Lincoln)
 
@@ -8,7 +8,7 @@
 
 **Cite page and corpus (MLA):** Wisncki, Adrian S., and Corpus Contributors. *Corpus of BIPOC Voices in the Victorian Periodical Press*. *One More Voice*, Solidarity edition, 2022. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus).
 
-**Terms of use:** (Individual files) Public domain; (Corpus) [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+**Terms of use:**  [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
 <br>
 
@@ -16,23 +16,23 @@
 
 The *Corpus of BIPOC Voices in the Victorian Periodical Press* brings together 64 short texts from Victorian periodicals and one related short book. The Corpus is an unexpected by-product of “[BIPOC Voices in the Victorian Periodical Press]( https://onemorevoice.org/html/bipoc-voices/bv-home.html)” (henceforth, “BIPOC Voices”), a 2021 and 2022 initiative by scholars and students from *[One More Voice]( https://onemorevoice.org/)* (OMV) and [COVE]( https://editions.covecollective.org/) in collaboration with [Special Collections, SOAS Library]( https://www.soas.ac.uk/research/library/special-collections) and [Adam Matthew Digital](https://www.amdigital.co.uk/) (AMD). This initiative sought to identify, document, encode, publish, and critically study a series of BIPOC voices from Victorian missionary periodicals. The initiative involved two branches of endeavor, one funded by the [University of Nebraska-Lincoln]( https://www.unl.edu/) (UNL) and centered on the physical print holdings of SOAS, the other funded by the [Research Society for Victorian Periodicals]( https://rs4vp.org/) (RSVP) and centered on the digital holdings of AMD. Both branches focused on missionary periodicals because such periodicals offer an excellent opportunity for engaging with a wide range of Victorian-era representations of BIPOC voices due to the global nature of missionary work.
 
-As part of the “BIPOC Voices” work, a set of graduate students at the University of Nebraska-Lincoln, Purdue University, and elsewhere encoded the 64 pieces gathered in the present corpus in HTML; advanced scholars on the project then developed the files further. As that work came to a conclusion, it emerged that the files might easily be stripped of their HTML coding and presented alongside the other corpus already pubished by *One More Voice*, [Corpus of Africa-Centered Literary Works, 1830-1930](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus). One of the “BIPOC Voices” Co-PIs Adrian S. Wisnicki, therefore, prepared the files for the corpus through a few simple steps: 
-1. He stripped out the HTML tags by using the following terminal command iteratively over all the files: `sed 's/<[^>]*>//g ; /^$/d' filename.html > filename.txt`
-2. He manually removed a few stray bits of coding not caught by the terminal command;
-3. He manually replaced a few HTML-coded characters;
-4. He stripped out unnecessary white space by adapting a [script](https://github.com/livingstoneonline/onemorevoice/blob/master/bash/del-meta%2BemptyLines%2BleadSpace.command) already developed for *One More Voice*; 
+As part of the “BIPOC Voices” project, a set of graduate students at the University of Nebraska-Lincoln, Purdue University, and elsewhere encoded the 64 pieces gathered in the present corpus in HTML; advanced scholars on the project then developed the files further. As that work came to a conclusion, it emerged that the files might easily be stripped of their HTML coding and presented alongside the other corpus already pubished by *One More Voice*, [Corpus of Africa-Centered Literary Works, 1830-1930](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus). One of the “BIPOC Voices” Co-PIs Adrian S. Wisnicki, therefore, prepared the files for the corpus through a few simple steps: 
+1. Strip out the HTML tags by using the following terminal command iteratively over all the files: `sed 's/<[^>]*>//g ; /^$/d' filename.html > filename.txt`
+2. Manually remove a few stray bits of coding not caught by the terminal command;
+3. Manually replace a few HTML-coded characters;
+4. Strip out unnecessary white space and empty lines by adapting a [script](https://github.com/livingstoneonline/onemorevoice/blob/master/bash/del-meta%2BemptyLines%2BleadSpace.command) already developed for *One More Voice*; 
 5. He switched the order of items in the files so that the metadata now comes before rather than after the main text of the periodical pieces.
 
-To support use of the files, Wisnicki also created an [integrated spreadsheet](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus/data/bipoc-voices-corpus-metadata.xlsx) that provides metadata for all the files in the corpus in a standalone fashion.
+To support use of the files, Wisnicki also created an [integrated spreadsheet](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus/data/bipoc-voices-corpus-metadata.xlsx) that provides metadata for all the files in the corpus. This spreadsheet derives from spreadsheets created for the projects [SOAS](https://docs.google.com/spreadsheets/d/12IU93UjaspiELkYCr5rAwaqVm6HxxZtjC2dla3Nonkg/edit?usp=sharing) and [AMD](https://docs.google.com/spreadsheets/d/19oeF0brZEt7hFUTf8H4Ot22r2j4h_LFf2TDABC4cvEg/edit?usp=sharing) files.
 
-The corpus is now published, like most of *One More Voice*'s files, under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) license in order to promote wide educational use. In engaging with the corpus and its texts, users are urged to exercise caution due to the possible inclusion of offensive or otherwise problematic historical language. Users should also take note that any racist or similar elements in the texts do not necessarily represent the real views of the BIPOC creator(s), but rather may be due to the (often silent) intervention of Victorian-era white British missionaries, editors, and publishers. The [home page](https://onemorevoice.org/html/bipoc-voices/bv-home.html) of the “BIPOC Voices” project provides access to the various critical materials produced by the initiative as a whole.
+The corpus is now published, like most of *One More Voice*'s files, under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) license in order to promote wide educational use. In engaging with the corpus and its texts, users are urged to exercise caution due to the possible inclusion of offensive or otherwise problematic historical language. Users should also take note that any racist or similar elements in the texts do not necessarily represent the real views of the BIPOC creator(s), but rather may be due to the (often silent) intervention of Victorian-era white British missionaries, editors, and publishers. The [home page](https://onemorevoice.org/html/bipoc-voices/bv-home.html) of the “BIPOC Voices” project provides further context for the development of the corpus as well as access to the various critical materials produced by the “BIPOC Voices” project as a whole.
 
 <br>
 
 ## List of Works
 
-1. A.E. Moule, and Dziao. 1874. “Praying for Rain in China. Plain Directions as to Prayer for Rain. *File name:* liv_026029.txt
-2. Aga, Selim. 1853. Africa Considered in Its Social and Political Condition with a Plan for the Amelioration of Its Inhabitants. By a Native of Darfour, Central Africa, and Originally a Slave. *File name:* liv_025997.txt
+1. A.E. Moule, and Dziao. 1874. “Praying for Rain in China. Plain Directions as to Prayer for Rain.” *File name:* liv_026029.txt
+2. Aga, Selim. 1853. *Africa Considered in Its Social and Political Condition with a Plan for the Amelioration of Its Inhabitants. By a Native of Darfour, Central Africa, and Originally a Slave*. *File name:* liv_025997.txt
 3. Aga, Selim. 1874. “My Parentage and Early Career as a Slave.” *File name:* liv_025998.txt
 4. Aga, Selim. 1875. “A Trip Up the Congo or Zaire River.” *File name:* liv_025999.txt
 5. Anonymous, [John Cain], and A.S. 1874. “A Hindu’s Narrative of His Own Conversion.” *File name:* liv_026036.txt
@@ -42,7 +42,7 @@ The corpus is now published, like most of *One More Voice*'s files, under a [Cre
 9. Anonymous, [W. Clarkson], Gungaram, and Native Catechist. 1852. “The Hindus.” *File name:* liv_026014.txt
 10. Anonymous, [W.J. Davis], and James Lewana. 1872. “South Africa. Graham’s Town District.” *File name:* liv_025194.txt
 11. Anonymous, Adam Kok, and Willem Uithaalder. 1851. “The Hottentot Rebellion.” *File name:* liv_025034.txt
-12. Anonymous, and Abdool Meseeh. 1856. “Abdool Meseeh’s Hymn.” *File name:* liv_026009.txt
+12. Anonymous, and [Abdul] Meseeh. 1856. “Abdool Meseeh’s Hymn.” *File name:* liv_026009.txt
 13. Anonymous, and Abdul Messeeh. 1875. “The First Native Clergyman in India.” *File name:* liv_026046.txt
 14. Anonymous, and Anonymous. 1851. “The Amazons.” *File name:* liv_026005.txt
 15. Anonymous, and Anonymous. 1852. “Indian Snake Catcher.” *File name:* liv_026012.txt
@@ -55,13 +55,13 @@ The corpus is now published, like most of *One More Voice*'s files, under a [Cre
 22. Anonymous, and G. Krishnayya. 1875. “Gleanings from Recent Letters. A Hindu Clergyman and His Heathen Father.” *File name:* liv_026044.txt
 23. Anonymous, and Henry Johnson. 1874. “A Negro Clergyman at Nazareth.” *File name:* liv_026042.txt
 24. Anonymous, and Imaduddin. 1874. “The Rev. Imadudden, of Umritsur.” *File name:* liv_026028.txt
-25. Anonymous, and Jacob Jacob Walker. 1874. “Jamaica—The Native Pastorate.” *File name:* liv_025049.txt
+25. Anonymous, and Jacob Walker. 1874. “Jamaica—The Native Pastorate.” *File name:* liv_025049.txt
 26. Anonymous, and Jagadishwar Bhattachargya. 1853. “Trials of Converts in India.” *File name:* liv_026024.txt
 27. Anonymous, and James White. 1875. “Gleanings from Recent Letters. A Conversation with Yoruba Market Women.” *File name:* liv_026043.txt
 28. Anonymous, and John Dennis Blonde. 1851. “The Outcast from China Brought Safely Home.” *File name:* liv_026011.txt
 29. Anonymous, and John Devasagayam. 1853. “Obituary of Arokkia Nadan.” *File name:* liv_026023.txt
 30. Anonymous, and John Huki. 1853. “The Native Institution at Waikato Heads, New Zealand.” *File name:* liv_026022.txt
-31. Anonymous, and King Thomas. 1851. “Stedfast Faith—Mark X. 29, 30.” *File name:* liv_026008.txt
+31. Anonymous, and Thomas King. 1851. “Stedfast Faith—Mark X. 29, 30.” *File name:* liv_026008.txt
 32. Anonymous, and Matiu Taupaki. 1874. “Gleanings from Recent Letters. Letter from a Maori Clergyman.” *File name:* liv_026034.txt
 33. Anonymous, and Narain Rao. 1851. “A Converted Brahmin’s Account of Himself.” *File name:* liv_026006.txt
 34. Anonymous, and Nathaniel M. Bull. 1874. “The ‘Gleaner’ in the Timneh Country.” *File name:* liv_026041.txt
@@ -71,10 +71,10 @@ The corpus is now published, like most of *One More Voice*'s files, under a [Cre
 38. Anonymous, and S[amuel] Crowther, Jr. 1854. “Confessions of an Idolater.” *File name:* liv_026027.txt
 39. Anonymous, and Sadaraka. 1870. “South Seas.—Mangaia.” *File name:* liv_025038.txt
 40. Anonymous, and T[homas] King. 1853. “Destructive Fire at Abbeokuta.” *File name:* liv_026025.txt
-41. Anonymous, and Tamehana Te Rauparaha. 1852a. “Tamahana Te Rauparaha.” *File name:* liv_026019.txt
-42. Anonymous, and Tamehana Te Rauparaha. 1852b. “Tamahana Te Rauparaha.” *File name:* liv_026020.txt
-43. Anonymous, and Tamehana Te Rauparaha. 1852c. “Tamahana Te Rauparaha.” *File name:* liv_026021.txt
-44. Anonymous, and Te Rauparaha. 1852. “Tamahana Te Rauparaha.” *File name:* liv_026018.txt
+41. Anonymous, and Tamehana Te Rauparaha. 1852a. “Tamahana Te Rauparaha.” *File name:* liv_026018.txt
+42. Anonymous, and Tamehana Te Rauparaha. 1852b. “Tamahana Te Rauparaha.” *File name:* liv_026019.txt
+43. Anonymous, and Tamehana Te Rauparaha. 1852c. “Tamahana Te Rauparaha.” *File name:* liv_026020.txt
+44. Anonymous, and Tamehana Te Rauparaha. 1852d. “Tamahana Te Rauparaha.” *File name:* liv_026021.txt
 45. Anonymous, and Trudo Audato. 1852. “The Dahomians.” *File name:* liv_026017.txt
 46. Anonymous, and Yonan. 1852. “Adult Sunday-Schools Among the Nestorians.” *File name:* liv_026016.txt
 47. Anonymous, Charles Pamla, and Boyce Mama. 1872. “South Africa. Graham’s Town District.” *File name:* liv_025195.txt

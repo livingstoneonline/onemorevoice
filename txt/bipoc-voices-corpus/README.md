@@ -21,7 +21,8 @@ As part of the “BIPOC Voices” project, a set of graduate students at the Uni
 2. Manually remove a few stray bits of coding not caught by the terminal command;
 3. Manually replace a few HTML-coded characters;
 4. Strip out unnecessary white space and empty lines by adapting a [script](https://github.com/livingstoneonline/onemorevoice/blob/master/bash/del-meta%2BemptyLines%2BleadSpace.command) already developed for *One More Voice*; 
-5. He switched the order of items in the files so that the metadata now comes before rather than after the main text of the periodical pieces.
+5. Switched the order of items in the files so that the metadata now comes before rather than after the main text of the periodical pieces;
+6. Change citation information in file to point to Corpus.
 
 To support use of the files, Wisnicki also created an [integrated spreadsheet](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus/data/bipoc-voices-corpus-metadata.xlsx) that provides metadata for all the files in the corpus. This spreadsheet derives from spreadsheets created for the projects [SOAS](https://docs.google.com/spreadsheets/d/12IU93UjaspiELkYCr5rAwaqVm6HxxZtjC2dla3Nonkg/edit?usp=sharing) and [AMD](https://docs.google.com/spreadsheets/d/19oeF0brZEt7hFUTf8H4Ot22r2j4h_LFf2TDABC4cvEg/edit?usp=sharing) files.
 

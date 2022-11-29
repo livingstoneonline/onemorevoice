@@ -8,7 +8,7 @@
 
 **Terms of use:**  [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
-**Cite page and corpus (MLA):** Wisncki, Adrian S., Dino Franco Felluga, and Corpus Contributors. *Corpus of BIPOC Voices in the Victorian Periodical Press*. *One More Voice*, Solidarity edition, 2022. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus).
+**Cite page and corpus (MLA):** Wisncki, Adrian S., Dino Franco Felluga, and Corpus Contributors. *Corpus of BIPOC Voices in the Victorian Periodical Press*. *One More Voice*, solidarity edition, 2022. Web. [https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus](https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus).
 
 <br>
 

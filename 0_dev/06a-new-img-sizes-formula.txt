@@ -48,6 +48,7 @@ mogrify -format jpg -resize 956x956 -sampling-factor 4:2:0 -strip -quality 85 -i
 
 mogrify -format jpg -resize 1396x1396 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/1396 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/1396 && find . -exec rename 's|.jpg|-1396px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/bipoc-voices \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays \;
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/visual-materials \;

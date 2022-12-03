@@ -91,7 +91,7 @@ Table of Contents
 (light mid-gray) #bdc2bd;
 (ligh mid-gray) #a1a1a1;
 (mid-gray) #737d73;
-(dark blue in grayscale, made lighter): #737373
+(dark blue in grayscale, made lighter): #737373;
 (dark blue in grayscale) #575757;
 (dark gray) #4d5b51; (contrast checked)
 
@@ -3480,6 +3480,17 @@ details:focus-within ::marker{
 
 /* 32. BIPOC Voices */
 
+/* increases size of bv essay titles */
+@media only screen and (min-width: 992px){
+	.essay.critical .bv-title h2{
+		font-size: 1.9em;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.essay.critical .bv-title h2{
+		font-size: 2.6rem;
+	}
+}
 /* bipoc voices project button on all pages */
 #bv-project,
 #bv-details-project{
@@ -3521,6 +3532,41 @@ details:focus-within ::marker{
 	background: #305056;
 	border: 1px solid #305056;
 	outline: none;
+}
+/* theming for authorship card */
+@media only screen and (min-width: 992px){
+	.production-details{
+		text-align: center;
+		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
+		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
+		box-shadow: #697c6f 0px 1px 6px 0px;
+		padding: .75rem 1.5rem;
+		margin-top: 1rem;
+		position: relative;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+	}
+}
+/* staples on authorship card */
+.production-details::before,
+.production-details::after{
+	content: "";
+	width: 2rem;
+	height: .25rem;
+	border-right: 6px solid;
+	border-left: 6px solid;
+	-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
+	-moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
+	box-shadow: #697c6f 1px 0px 5px 1px inset;
+	position: absolute;
+	top: 1rem;
+}
+.production-details::before{
+	left: 1rem;
+}
+.production-details::after{
+	right: 1rem;
 }
 
 

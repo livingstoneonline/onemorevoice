@@ -1134,6 +1134,16 @@ strong{
 .error404 main span p:last-child{
 	margin-bottom: 0;
 }
+@media only screen and (min-width: 992px){
+	.essay.critical .bv-title h2{
+		font-size: 1.9em;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.essay.critical .bv-title h2{
+		font-size: 2.6rem;
+	}
+}
 #bv-project,
 #bv-details-project{
 	font-size: .9rem;
@@ -1165,4 +1175,37 @@ strong{
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 	padding: .5rem .75rem;
+}
+@media only screen and (min-width: 992px){
+	.production-details{
+		text-align: center;
+		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
+		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
+		box-shadow: #697c6f 0px 1px 6px 0px;
+		padding: .75rem 1.5rem;
+		margin-top: 1rem;
+		position: relative;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+	}
+}
+.production-details::before,
+.production-details::after{
+	content: "";
+	width: 2rem;
+	height: .25rem;
+	border-right: 6px solid;
+	border-left: 6px solid;
+	-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
+	-moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
+	box-shadow: #697c6f 1px 0px 5px 1px inset;
+	position: absolute;
+	top: 1rem;
+}
+.production-details::before{
+	left: 1rem;
+}
+.production-details::after{
+	right: 1rem;
 }

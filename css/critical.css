@@ -1151,7 +1151,7 @@ strong{
 	white-space: nowrap;
 }
 #bv-project{
-	margin: 1.5rem 0 0 -.5rem;
+	margin: 1.5rem 0;
 }
 #bv-details-project{
 	margin: 2.5rem 0 1.5rem 0;
@@ -1179,6 +1179,9 @@ strong{
 @media only screen and (min-width: 992px){
 	.production-details{
 		text-align: center;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
 		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
 		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
 		box-shadow: #697c6f 0px 1px 6px 0px;

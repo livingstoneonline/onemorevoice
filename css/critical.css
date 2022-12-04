@@ -1165,9 +1165,11 @@ strong{
 	font-weight: 600;
 	white-space: nowrap;
 }
-#bv-project,
-#bv-details-project{
+#bv-project{
 	margin: 1.5rem 0;
+}
+#bv-details-project{
+	margin: 1.5rem 0 2.5rem;
 }
 @media only screen and (min-width: 480px){
 	#bv-project,
@@ -1175,7 +1177,12 @@ strong{
 		font-size: 1rem;
 	}
 	#bv-details-project{
-		margin: 2.5rem 0;
+		margin: 2rem 0 2.5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	#bv-details-project{
+		margin: 1rem 0 2.5rem;
 	}
 }
 #bv-project a,

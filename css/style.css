@@ -2375,69 +2375,74 @@ header nav.breadcrumbs ul li a:focus{
 	outline: 1px solid #fff;
 }
 /* items (plain levels) and historical material items (transcription levels) */
+#level-2,
 #level-3,
-.transcription #level-2,
-.transcription #level-4,
-.transcription #level-5{
+#level-4,
+#level-5{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-#level-3{
-	max-width: 9rem;
-}
-.transcription #level-2{
-	max-width: 3rem;
-}
-.transcription #level-4,
-.transcription #level-5{
-	max-width: 6rem;
+#level-2,
+#level-3,
+#level-4,
+#level-5{
+	max-width: 4rem;
 }
 @media only screen and (min-width: 480px){
+	#level-2,
 	#level-3,
-	.transcription #level-2{
-		max-width: none;
-		overflow: inherit;
-	}
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 9.5rem;
+	#level-4,
+	#level-5{
+		max-width: 6.5rem;
 	}
 }
 @media only screen and (min-width: 624px){
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 18.5rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 10rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 26rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 14rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 40rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 20rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 53rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 24rem;
 	}
 }
 @media only screen and (min-width: 1366px){
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 64rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 28rem;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.transcription #level-4,
-.transcription #level-5{
-		max-width: 70rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 32rem;
 	}
 }
 
@@ -3483,10 +3488,15 @@ details:focus-within ::marker{
 /* increases size of bv essay titles */
 @media only screen and (min-width: 992px){
 	.essay.critical .bv-title h2{
-		font-size: 1.8em;
+		font-size: 1.7rem;
 	}
 	.essay.critical .bv-title p{
 		font-size: 1.1rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.essay.critical .bv-title h2{
+		font-size: 2.1rem;
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -3497,7 +3507,7 @@ details:focus-within ::marker{
 /* bipoc voices project button on all pages */
 #bv-project,
 #bv-details-project{
-	font-size: .9rem;
+	font-size: .85rem;
 	font-weight: 600;
 	white-space: nowrap;
 }
@@ -3539,6 +3549,7 @@ details:focus-within ::marker{
 /* theming for authorship card */
 @media only screen and (min-width: 992px){
 	.production-details{
+		font-size: 1.1rem;
 		text-align: center;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
@@ -3555,24 +3566,37 @@ details:focus-within ::marker{
 	}
 }
 /* staples on authorship card */
-.production-details::before,
-.production-details::after{
-	content: "";
-	width: 2rem;
-	height: .25rem;
-	border-right: 6px solid;
-	border-left: 6px solid;
-	-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
-	-moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
-	box-shadow: #697c6f 1px 0px 5px 1px inset;
-	position: absolute;
-	top: 1rem;
+@media only screen and (min-width: 992px){
+	.production-details::before,
+	.production-details::after{
+		content: "";
+		width: 2rem;
+		height: .25rem;
+		border-right: 6px solid;
+		border-left: 6px solid;
+		-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
+		-moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
+		box-shadow: #697c6f 1px 0px 5px 1px inset;
+		position: absolute;
+		top: 1rem;
+	}
+	.production-details::before{
+		left: 1rem;
+	}
+	.production-details::after{
+		right: 1rem;
+	}
 }
-.production-details::before{
-	left: 1rem;
+.production-details span{
+	display: block;
 }
-.production-details::after{
-	right: 1rem;
+.production-details  + .toc{
+	margin-top: 1.5rem;
+}
+@media only screen and (min-width: 992px){
+	.production-details  + .toc{
+		margin-top: 4rem;
+	}
 }
 
 

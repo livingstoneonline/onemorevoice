@@ -103,6 +103,7 @@ h2{
 	}
 }
 .page-details h2{
+	margin-top: .5rem;
 	margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 768px){
@@ -1149,7 +1150,8 @@ strong{
 }
 @media only screen and (min-width: 1200px){
 	.essay.critical .bv-title h2{
-		font-size: 2.1rem;
+		font-size: 2rem;
+		margin-top: .5rem;
 	}
 }
 @media only screen and (min-width: 1366px){
@@ -1163,16 +1165,17 @@ strong{
 	font-weight: 600;
 	white-space: nowrap;
 }
-#bv-project{
-	margin: 1.5rem 0;
-}
+#bv-project,
 #bv-details-project{
-	margin: 2.5rem 0 1.5rem 0;
+	margin: 1.5rem 0;
 }
 @media only screen and (min-width: 480px){
 	#bv-project,
 	#bv-details-project{
 		font-size: 1rem;
+	}
+	#bv-details-project{
+		margin: 2.5rem 0;
 	}
 }
 #bv-project a,
@@ -1200,7 +1203,7 @@ strong{
 		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
 		box-shadow: #697c6f 0px 1px 6px 0px;
 		padding: 1rem 1.5rem;
-		margin-top: 1rem;
+		margin-top: 2rem;
 		position: relative;
 		display: -webkit-flex;
 		display: flex;
@@ -1228,7 +1231,7 @@ strong{
 		right: 1rem;
 	}
 }
-.production-details span{
+.production-details > span{
 	display: block;
 }
 .production-details  + .toc{

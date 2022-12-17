@@ -890,13 +890,15 @@ article > .toc + section{
 /* 11. Middle of Pages */
 
 /* main container "sections" appear on:
-books & texts + essays/materials/documents */
+books & texts + essays/materials/documents/editions */
 /* padding */
-.categories .sections{
+.categories .sections,
+.editions .sections{
 	padding: 1rem 1rem 0;
 }
 @media only screen and (min-width: 768px){
-	.categories .sections{
+	.categories .sections,
+	.editions .sections{
 		padding: 0 0 1rem;
 	}
 	#books,
@@ -908,7 +910,8 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 992px){
-	.categories .sections{
+	.categories .sections,
+	.editions .sections{
 		padding: 2rem 1rem;
 	}
 	#books,
@@ -931,6 +934,7 @@ books & texts + essays/materials/documents */
 }
 /* institute flex */
 .categories .sections,
+.editions .sections,
 #books .sections,
 #texts .sections{
 	width: 100%;
@@ -946,7 +950,8 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 768px){
-	.categories .sections{
+	.categories .sections,
+	.editions .sections{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -959,12 +964,14 @@ books & texts + essays/materials/documents */
 }
 /* gap */
 .categories .sections,
+.editions .sections,
 #books .sections,
 #texts .sections{
 	gap: 1.5rem; /* See Safari Support */
 }
 @media only screen and (min-width: 1200px){
 	.categories .sections,
+	.editions .sections,
 	#books .sections,
 	#texts .sections{
 		gap: 2rem; /* See Safari Support */
@@ -972,6 +979,7 @@ books & texts + essays/materials/documents */
 }
 @media only screen and (min-width: 1600px){
 	.categories .sections,
+	.editions .sections,
 	#books .sections,
 	#texts .sections{
 		gap: 2.5rem; /* See Safari Support */
@@ -979,6 +987,7 @@ books & texts + essays/materials/documents */
 }
 /* flex percentages and flex-grow */
 .categories .sections .section-container,
+.editions .sections .section-container,
 #books .sections .section-container,
 #texts .sections .section-container{
 	flex-grow: 1;
@@ -989,17 +998,20 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 768px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(50% - .75em);
 	}
 }
 @media only screen and (min-width: 992px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(33.33% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 1200px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(33.33% - 2rem);
 	}
 	#books .sections .section-container,
@@ -1013,7 +1025,8 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 1600px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(25% - 2.5rem);
 	}
 	#books .sections .section-container,
@@ -1023,6 +1036,7 @@ books & texts + essays/materials/documents */
 }
 /* single item container */
 .categories .sections .section-container,
+.editions .sections .section-container,
 #books .sections .section-container,
 #texts .sections .section-container{
 		background: #ededed;
@@ -1069,7 +1083,9 @@ books & texts + essays/materials/documents */
 }
 /* section-container hover/focus */
 .categories .sections .section-container:hover,
-.categories .sections .section-container:focus-within{
+.categories .sections .section-container:focus-within,
+.editions .sections .section-container:hover,
+.editions .sections .section-container:focus-within{
 	outline: 4px solid #e3b382;
 }
 #books .sections .section-container:hover,
@@ -1080,7 +1096,9 @@ books & texts + essays/materials/documents */
 }
 /* main hyperlink */
 .categories .sections .section-container a,
-.categories .sections .section-container a:visited{
+.categories .sections .section-container a:visited,
+.editions .sections .section-container a,
+.editions .sections .section-container a:visited{
 	color: #212119;
 	text-decoration: none;
 	width: 100%;
@@ -1093,7 +1111,9 @@ books & texts + essays/materials/documents */
 	text-decoration: underline;
 }
 .categories .sections .section-container a:hover,
-.categories .sections .section-container a:focus{
+.categories .sections .section-container a:focus,
+.editions .sections .section-container a:hover,
+.editions .sections .section-container a:focus{
 	outline: none;
 }
 #books .sections .section-container a:hover,
@@ -1105,29 +1125,35 @@ books & texts + essays/materials/documents */
 	outline: 3px solid #e3b382;
 }
 /* single item in hyperlink container */
-.categories .sections .section-container a div{
+.categories .sections .section-container a div,
+.editions .sections .section-container a div{
 	flex: 1 0 calc(50% - 1rem)
 }
 /* Start ratio box; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 /* image container */
-.categories .sections .section-container a .section-image{
+.categories .sections .section-container a .section-image,
+.editions .sections .section-container a .section-image{
 	border: 1px solid #737d73;
 	padding: 0;
 	position: relative;
 }
-.categories .sections .section-container a .section-image:after{
+.categories .sections .section-container a .section-image:after,
+.editions .sections .section-container a .section-image:after{
 	content: "";
 	display: block;
 	padding-bottom: 80%;
 }
 .categories .sections .section-container a .section-image:hover,
-.categories .sections .section-container a .section-image:focus-within{
+.categories .sections .section-container a .section-image:focus-within,
+.editions .sections .section-container a .section-image:hover,
+.editions .sections .section-container a .section-image:focus-within{
 	overflow: hidden;
 	outline: none;
 }
 /* main image */
-.categories .sections .section-container a .section-image img{
+.categories .sections .section-container a .section-image img,
+.editions .sections .section-container a .section-image img{
 	background: #E7E9E7;
 	border: none;
 	width: 100%;
@@ -1143,7 +1169,8 @@ books & texts + essays/materials/documents */
 }
 /* End ratio box */
 /* text container */
-.categories .sections .section-container a div:nth-child(2){
+.categories .sections .section-container a div:nth-child(2),
+.editions .sections .section-container a div:nth-child(2){
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
@@ -1151,6 +1178,7 @@ books & texts + essays/materials/documents */
 }
 /* heading */
 .categories .sections .section-container a div h3,
+.editions .sections .section-container a div h3,
 #books .sections .section-container h4,
 #texts .sections .section-container h4{
 	font-size: 1.3rem;
@@ -1263,7 +1291,8 @@ books & texts + essays/materials/documents */
 	margin: 1rem .5rem;
 }
 /* paragraphs of text */
-.categories .sections .section-container a div p{
+.categories .sections .section-container a div p,
+.editions .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
 	text-align: center;
@@ -3666,13 +3695,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
 	/* Easy stuff */
 	/* Mainly spacing among elements where gap is used otherwise; in particular, see all the margin settings below; use parents elements to find items in the CSS above */
-	.categories .introduction-section .introduction-text > *:not(:first-child){
+	.categories .introduction-section .introduction-text > *:not(:first-child),
+	.editions .introduction-section .introduction-text > *:not(:first-child){
 		margin-top: 1rem;
 	}
 	/* needed as otherwise the text background on these pages doe not appear */
 	@media only screen and (min-width: 992px){
 		.home .introduction-section .introduction-text,
-		.categories .introduction-section .introduction-text{
+		.categories .introduction-section .introduction-text,
+		.editions .introduction-section .introduction-text{
 			background: #ededed;
 		}
 	}
@@ -3740,12 +3771,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	/* spacing around cards & wrapper compensation */
 	.categories .sections > *,
+	.editions .sections > *,
 	#books .sections > *,
 	.films.gallery > *,
 	.editions.gallery > *{
 		margin: .75rem .375rem;
 	}
 	.categories .sections,
+	.editions .sections,
 	#books .sections,
 	.films.gallery,
 	.editions.gallery > *{
@@ -3766,12 +3799,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
+		.editions .sections > *,
 		#books .sections > *,
 		.films.gallery > *,
 		.editions.gallery > *{
 			margin: 1rem .5rem;
 		}
 		.categories .sections,
+		.editions .sections,
 		#books .sections,
 		.films.gallery,
 		.editions.gallery{
@@ -3786,12 +3821,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
+		.editions .sections > *,
 		#books .sections > *,
 		.films.gallery > *,
 		.editions.gallery > *{
 			margin: 1.25rem .625rem;
 		}
 		.categories .sections,
+		.editions .sections,
 		#books .sections,
 		.films.gallery,
 		.editions.gallery{

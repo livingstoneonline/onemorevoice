@@ -902,6 +902,7 @@ books & texts + essays/materials/documents */
 	#books,
 	#texts,
 	#films,
+	#editions,
 	#visuals{
 		padding: 0;
 	}
@@ -912,7 +913,8 @@ books & texts + essays/materials/documents */
 	}
 	#books,
 	#texts,
-	#films{
+	#films,
+	#editions{
 		padding: 1rem 0;
 	}
 	#visuals{
@@ -922,7 +924,8 @@ books & texts + essays/materials/documents */
 @media only screen and (min-width: 1200px){
 	#books,
 	#texts,
-	#films{
+	#films,
+	#editions{
 		padding: 1rem 0;
 	}
 }
@@ -1377,7 +1380,7 @@ books & texts + essays/materials/documents */
 	padding: 0 1rem;
 	width: 100%;
 }
-/* "recovered" = central section on books, films, texts, visuals;
+/* "recovered" = central section on books, films, editions, texts, visuals;
 either .recovered or .recovered.full-page which is wider */
 .content.recovered{
 	margin-top: 1rem;
@@ -2942,7 +2945,8 @@ img + p.caption-text,
 	}
 }
 @media only screen and (min-width: 624px){
-	.films.gallery{
+	.films.gallery,
+	.editions.gallery{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -2977,78 +2981,92 @@ img + p.caption-text,
 		flex: 0 0 calc(17% - 2rem);
 	}
 }
-/* films: gap */
-.films.gallery{
+/* films, editions: gap */
+.films.gallery,
+.editions.gallery{
 	gap: 1.5rem;
 }
 @media only screen and (min-width: 1200px){
-	.films.gallery{
+	.films.gallery,
+	.editions.gallery{
 		gap: 2rem;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.films.gallery{
+	.films.gallery,
+	.editions.gallery{
 		gap: 2.5rem;
 	}
 }
-/* flex percentages: films */
+/* flex percentages: films, editions */
 @media only screen and (min-width: 624px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		flex: 0 0 calc(50% - .75rem);
 	}
 }
 @media only screen and (min-width: 1200px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		flex: 0 0 calc(33.33% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 1600px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		flex: 0 0 calc(25% - 2.5rem);
 	}
 }
 /* min height: films */
 @media only screen and (min-width:320px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 384px;
 	}
 }
 @media only screen and (min-width: 480px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 464px;
 	}
 }
 @media only screen and (min-width: 624px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 382px;
 	}
 }
 @media only screen and (min-width: 768px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 393px;
 	}
 }
 @media only screen and (min-width: 992px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 428px;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 438px;
 	}
 }
 @media only screen and (min-width: 1366px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 469px;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.films.gallery figure{
+	.films.gallery figure,
+	.editions.gallery figure{
 		min-height: 438px;
 	}
 }
-/* gallery set up: films and visuals */
+/* gallery set up: films, editions, and visuals */
 .gallery{
 	margin: 0;
   display: -webkit-flex;
@@ -3056,11 +3074,12 @@ img + p.caption-text,
   flex-direction: column;
 	justify-content: center;
 }
-/* main gallery containers (i.e., cards) for films and visuals */
+/* main gallery containers (i.e., cards) for films, editions, and visuals */
 .gallery figure{
 	margin: 0;
 }
-.films.gallery figure{
+.films.gallery figure,
+.editions.gallery figure{
   background: #ededed;
   -webkit-box-shadow: #697c6f 0px 3px 7px 0px;
   -moz-box-shadow: #697c6f 0px 3px 7px 0px;
@@ -3094,14 +3113,15 @@ img + p.caption-text,
 .visuals.gallery figure a:focus img{
 	border: 4px #305056 solid;
 }
-/* container for metadata: films and visuals */
+/* container for metadata: films, editions, and visuals */
 .visuals.gallery figure figcaption{
 	font-size: .95rem;
 	text-align: center;
 	line-height: 1.6rem;
 	margin-top: .5rem;
 }
-.films.gallery figure figcaption{
+.films.gallery figure figcaption,
+.editions.gallery figure figcaption{
 	font-size: 1rem;
 	line-height: 1.5rem;
 	display: -webkit-flex;
@@ -3111,22 +3131,26 @@ img + p.caption-text,
 	gap: .75rem; /* See Safari Support */
 }
 @media only screen and (min-width: 480px){
-	.films.gallery figure figcaption{
+	.films.gallery figure figcaption,
+	.editions.gallery figure figcaption{
 		padding: 0 1rem 1rem;
 	}
 }
 @media only screen and (min-width: 624px){
-	.films.gallery figure figcaption{
+	.films.gallery figure figcaption,
+	.editions.gallery figure figcaption{
 		padding: 0;
 	}
 }
 @media only screen and (min-width: 992px){
-	.films.gallery figure figcaption{
+	.films.gallery figure figcaption,
+	.editions.gallery figure figcaption{
 		padding: 0 1rem 1rem;
 	}
 }
-/* subsection title slides for films */
-.films.gallery figure.title-slide{
+/* subsection title slides for films and editions */
+.films.gallery figure.title-slide,
+.editions.gallery figure.title-slide{
 	font-size: 1rem;
 	min-height: 138px;
 	display: -webkit-flex;
@@ -3136,8 +3160,9 @@ img + p.caption-text,
 	align-items: center;
 	align-content: center;
 }
-/* metadata details for films */
-.films.gallery figure figcaption h4{
+/* metadata details for films and editions */
+.films.gallery figure figcaption h4,
+.editions.gallery figure figcaption h4{
   font-size: 1.3rem;
   font-family: 'Amaranth', sans-serif;
   font-weight: 400;
@@ -3146,15 +3171,18 @@ img + p.caption-text,
   margin: 1.5rem 0 .5rem;
   padding: 0 0 .5rem 0;
 }
-.films.gallery figure figcaption p{
+.films.gallery figure figcaption p,
+.editions.gallery figure figcaption p{
 	margin: 0;
 	line-height: 1.6rem;
 }
-/* expandable notes for films */
-.films.gallery figure figcaption summary{
+/* expandable notes for films and editions */
+.films.gallery figure figcaption summary,
+.editions.gallery figure figcaption summary{
 	font-weight: 600;
 }
-.films.gallery figure figcaption summary::after{
+.films.gallery figure figcaption summary::after,
+.editions.gallery figure figcaption summary::after{
 	content: "expand";
 	font-size: .9em;
 	font-family: inherit;
@@ -3165,7 +3193,8 @@ img + p.caption-text,
 	color: #305056;
 	margin-left: .25rem;
 }
-.films.gallery figure figcaption details[open] > summary:after{
+.films.gallery figure figcaption details[open] > summary:after,
+.editions.gallery figure figcaption details[open] > summary:after{
 	content: "collapse";
 }
 
@@ -3694,7 +3723,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 			margin: 0 0 0 10px;
 		}
 	}
-	.films.gallery figure figcaption > *:not(:first-child){
+	.films.gallery figure figcaption > *:not(:first-child),
+	.editions.gallery figure figcaption > *:not(:first-child){
 		margin-top: .75rem;
 	}
 	/* Tricky stuff */
@@ -3703,19 +3733,22 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	@media only screen and (min-width: 1200px){
 		#books,
 		#texts,
-		#films{
+		#films,
+		#editions{
 			padding: 1rem 0 0;
 		}
 	}
 	/* spacing around cards & wrapper compensation */
 	.categories .sections > *,
 	#books .sections > *,
-	.films.gallery > *{
+	.films.gallery > *,
+	.editions.gallery > *{
 		margin: .75rem .375rem;
 	}
 	.categories .sections,
 	#books .sections,
-	.films.gallery{
+	.films.gallery,
+	.editions.gallery > *{
 		margin: -.75rem -.375rem;
 	}
 	/* Texts needs separate break out; not clear why */
@@ -3734,12 +3767,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
 		#books .sections > *,
-		.films.gallery > *{
+		.films.gallery > *,
+		.editions.gallery > *{
 			margin: 1rem .5rem;
 		}
 		.categories .sections,
 		#books .sections,
-		.films.gallery{
+		.films.gallery,
+		.editions.gallery{
 			margin: -1rem -.5rem;
 		}
 		#texts .sections > *{
@@ -3752,12 +3787,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
 		#books .sections > *,
-		.films.gallery > *{
+		.films.gallery > *,
+		.editions.gallery > *{
 			margin: 1.25rem .625rem;
 		}
 		.categories .sections,
 		#books .sections,
-		.films.gallery{
+		.films.gallery,
+		.editions.gallery{
 			margin: -1.25rem -.625rem;
 		}
 		#texts .sections > *{

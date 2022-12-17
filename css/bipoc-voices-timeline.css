@@ -207,18 +207,18 @@ section section .timeline-content h4{
   text-align: inherit;
   text-transform: none;
   direction: ltr;
-  margin: 0;
+  margin: 0; /* See Safari Support */
 }
 /* text on timeline */
 .timeline-content p{
   word-spacing: 1px;
   text-align: inherit;
   line-height: 1.5em;
-  margin: .5rem 0 0;
+  margin: .5rem 0 0; 
 }
 /* date and creator items on timeline */
 .timeline-content p.timeline-date{
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* See Safari Support */
 }
 .timeline-content p.timeline-teaser{
   font-size: .9rem;
@@ -226,7 +226,7 @@ section section .timeline-content h4{
   font-family: 'Merriweather', serif;
   direction: ltr;
   line-height: 1.875rem;
-  margin-top: 1.5rem;
+  margin-top: 1.5rem; /* See Safari Support */
 }
 .timeline-content p.timeline-date,
 .timeline-content p.timeline-creator{
@@ -245,4 +245,17 @@ section section .timeline-content h4{
 .timeline-content p.timeline-creator::before{
   content: "\f500";
   font-weight: 600;
+}
+
+/* Safari Support: Mobile and Safari below 14.1 */
+/* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
+@supports (-webkit-touch-callout: none) and (not (translate: none)){
+  .timeline-content h4{
+    padding-top: .5rem;
+  }
+  .timeline-content h4+p,
+  .timeline-content p+p{
+    padding-top: .5rem;
+  }
 }

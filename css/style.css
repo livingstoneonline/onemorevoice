@@ -253,6 +253,10 @@ button{
 .materials h3{
 	border-bottom: 8px solid #dcd3a6;
 }
+/* removes border on editions cards */
+.materials .editions .sections h3{
+	border-bottom: none;
+}
 .materials .toc ol:before{
 	border-bottom: 4px solid #dcd3a6;
 }
@@ -581,7 +585,8 @@ article > .toc + section{
 }
 @media only screen and (min-width: 768px){
 	.home .credits:first-of-type,
-	.categories .credits:first-of-type{
+	.categories .credits:first-of-type,
+	.editions .credits:first-of-type{
 		margin-top: 2rem;
 	}
 	.content.recovered + .content .credits:first-child{
@@ -895,10 +900,9 @@ books & texts + essays/materials/documents/editions */
 .categories .sections,
 .editions .sections{
 	padding: 1rem 1rem 0;
-}
+} 
 @media only screen and (min-width: 768px){
-	.categories .sections,
-	.editions .sections{
+	.categories .sections{
 		padding: 0 0 1rem;
 	}
 	#books,
@@ -909,9 +913,11 @@ books & texts + essays/materials/documents/editions */
 	}
 }
 @media only screen and (min-width: 992px){
-	.categories .sections,
-	.editions .sections{
+	.categories .sections{
 		padding: 2rem 1rem;
+	}
+	.editions .sections{
+		padding: 1rem 1rem 2rem;
 	}
 	#books,
 	#texts,
@@ -923,6 +929,9 @@ books & texts + essays/materials/documents/editions */
 	}
 }
 @media only screen and (min-width: 1200px){
+	.editions .sections{
+		padding: 0 1rem 2rem;
+	}
 	#books,
 	#texts,
 	#films{

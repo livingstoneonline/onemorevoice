@@ -253,10 +253,6 @@ button{
 .materials h3{
 	border-bottom: 8px solid #dcd3a6;
 }
-/* removes border on editions cards */
-.materials .editions .sections h3{
-	border-bottom: none;
-}
 .materials .toc ol:before{
 	border-bottom: 4px solid #dcd3a6;
 }
@@ -1065,6 +1061,7 @@ books & texts + essays/materials/documents/editions */
 	gap: 1.25rem; /* See Safari Support */
 }
 /* used for containers that have title & no other content */
+.editions .sections .section-container.title-slide,
 #books .sections .section-container.title-slide,
 #texts .sections .section-container.title-slide{
 	min-height: 167px;
@@ -1093,6 +1090,10 @@ books & texts + essays/materials/documents/editions */
 .editions .sections .section-container:focus-within{
 	outline: 4px solid #e3b382;
 }
+.editions .sections .section-container.title-slide:hover,
+.editions .sections .section-container.title-slide:focus-within{
+	outline: none;
+}
 #books .sections .section-container:hover,
 #books .sections .section-container:focus-within,
 #texts .sections .section-container:hover,
@@ -1107,6 +1108,7 @@ books & texts + essays/materials/documents/editions */
 	color: #212119;
 	text-decoration: none;
 	width: 100%;
+	height: 100%;
 }
 #books .sections .section-container a, 
 #books .sections .section-container a:visited,
@@ -1183,12 +1185,13 @@ books & texts + essays/materials/documents/editions */
 }
 /* heading */
 .categories .sections .section-container a div h3,
-.editions .sections .section-container a div h3,
+.editions .sections .section-container a div h4,
 #books .sections .section-container h4,
 #texts .sections .section-container h4{
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
 	font-weight: 400;
+	color: #305056;
 	margin: .5rem 0 0;
 	padding: 0;
 }

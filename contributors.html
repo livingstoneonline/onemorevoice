@@ -11,19 +11,20 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
-		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
-		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
-		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
-		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0022" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0018"/>
+		<!-- <link rel="preload" as="script" href="/js/accordion.js"/> -->
+		<!-- <link rel="preload" as="script" href="/js/tooltips.js"/> -->
+		<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
+		<style>.image-wrapper::after{padding-bottom:calc((584/700)*100%)}</style>
 	</head>
 
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
@@ -31,7 +32,18 @@
 
 	<body class="essay documents" id="body">
 
-		<header>
+		<header id="header">
+			<!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+			<div id="skip">
+				<a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+			</div>			
+			<nav class="breadcrumbs">
+				<ul>
+					<li id="level-1"><a href="/">Home</a></li>
+					<li id="level-2"><a href="/documents.html">Project Documents</a></li>
+					<li id="level-3">Contributors</li>
+				</ul>
+			</nav>
 			<div class="nav-container" data-include="header">
 				<nav class="fallback">
 					<span class="logo-container">
@@ -41,20 +53,21 @@
 						</a>
 					</span>
 					<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
-						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 				</nav>
 			</div>
+			<div id="overlay-menu" class="overlay" data-include="overlay"></div>
 		</header>
 		
 		<main id="main" aria-labelledby="contributors">
 			<section class="page-details horizontal">
 				<figure class="image-wrapper">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-					<img width="700" height="584" src="/img/main-pages/liv_000096_0004_ratio_by_0940_deriv-1396px.jpg" srcset="/img/main-pages/liv_000096_0004_ratio_by_0940_deriv-318px.jpg 318w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-478px.jpg 478w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-636px.jpg 636w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-698px.jpg 698w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-956px.jpg 956w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-1396px.jpg 1396w" sizes="(min-width: 1700px) 875px, (min-width: 1000px) 50.59vw, (min-width: 780px) 698px, (min-width: 520px) 100vw, calc(10vw + 448px)" alt="Spectral image of diary page with main text in English and segments in Arabic and Nagari." title="Detail of a processed spectral image of a page from David Livingstone, John Kirk, and Two Unknown Writers, “Fragment of 1871 Field Diary. 11 August 1871-9 September 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096. Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
+					<img width="700" height="584" src="/img/main-pages/liv_000096_0004_ratio_by_0940_deriv-1396px.jpg" srcset="/img/main-pages/liv_000096_0004_ratio_by_0940_deriv-318px.jpg 318w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-478px.jpg 478w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-636px.jpg 636w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-698px.jpg 698w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-956px.jpg 956w, /img/main-pages/liv_000096_0004_ratio_by_0940_deriv-1396px.jpg 1396w" sizes="(min-width: 1600px) 878px, (min-width: 992px) calc(50.44vw + 31px), (min-width: 768px) 698px, 100vw" alt="Spectral image of diary page with main text in English and segments in Arabic and Nagari." title="Detail of a processed spectral image of a page from David Livingstone, John Kirk, and Two Unknown Writers, “Fragment of 1871 Field Diary. 11 August 1871-9 September 1871,” in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096. Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. Creative Commons Attribution-NonCommercial 3.0 Unported (https://creativecommons.org/licenses/by-nc/3.0/)." />
 					<figcaption class="caption-icon mobile">
 						<span class="tooltip-container">
-							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 							<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
 						</span>
 					</figcaption>
@@ -63,11 +76,12 @@
 				<div>
 					<span>
 						<h2 id="contributors">Contributors</h2>
-						<p>Date (publication and updates): <strong>2020-22</strong></p>
-						<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+						<ul class="publication-details">
+							<li><span>Date (publication and updates):</span> <strong>2020-22</strong></li>
+						</ul>
 						<figcaption class="caption-icon desktop">
 							<span class="tooltip-container">
-								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 								<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
 							</span>
 						</figcaption>
@@ -92,15 +106,19 @@
 
 						<p><strong>Zarena Aslami</strong> (Michigan State University, USA) – Advisor</p>
 
-						<p><strong>Ava Bindas</strong> (University of California, Davis, USA) – Student Author</p> 
+						<p><strong>Ava K. Bindas</strong> (University of California, Davis, USA) – Student Author</p> 
 
 						<p><strong>Trevor Bleick</strong> (University of Nebraska-Lincoln, USA) – Student Author/Coder</p>
 
 						<p><strong>Pearl Chaozon Bauer </strong> (Nueva School, USA) – Advisor</p>
-						
-						<p><strong>Jo Davis</strong> (SOAS, University of London, UK; University of Johannesburg, South Africa) – Author/Researcher</p>
 
-						<p><strong>Hailey Fisher</strong> (University of Nebraska-Lincoln, USA) – Student Author</p>
+						<p><strong>Kenneth C. Crowell</strong> (Auburn University, USA) – Collaborating Program Manager/Coder</p>
+						
+						<p><strong>Adam Davis</strong> (Independent, UK) – Programmer</p>
+
+						<p><strong>Joanne Ruth Davis</strong> (SOAS, University of London, UK; Johannesburg Institute for Advanced Study, South Africa) – Author/Researcher</p>
+
+						<p><strong>Dino Franco Felluga</strong> (Purdue University, USA) – Collaborating Project Director</p>
 
 						<p><strong>Jun Yi Goh</strong> (University of Nebraska-Lincoln, USA) – Student Author</p>
 
@@ -113,6 +131,8 @@
 						<p><strong>Chao Tayiana Maina</strong> (African Digital Heritage Foundation; Museum of British Colonialism, Kenya) – Collaborating Archivist</p>
 
 						<p><strong>Hope McCaffrey</strong> (Northwestern University, USA) – Author</p>
+
+						<p><strong>Lucy McCann</strong> (Bodleian Libraries, Oxford University, UK) – Collaborating Archivist</p>
 
 						<p><strong>Jared McDonald</strong> (University of the Free State, South Africa) – Author</p>
 
@@ -132,7 +152,7 @@
 					<section aria-labelledby="prior">
 						<h3 id="prior">Prior Contributors</h3>
 
-						<p><strong>Philip Allfrey</strong> (Independent Researcher, Australia) – Programmer</p>
+						<p><strong>Philip Allfrey</strong> (Independent, Australia) – Programmer</p>
 
 						<p><strong>Heather F. Ball</strong> (St. John's University, USA) – Author/Coder</p>
 
@@ -170,16 +190,16 @@
 
 						<p><strong>Cite (MLA):</strong> “Contributors” (2020-22). <em>One More Voice</em>, solidarity edition, 2022, <a href="/contributors.html">https://onemorevoice.org/contributors.html</a>.</p>
 			
-						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+						<p><strong>Rights:</strong> <a aria-label="External Link" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 
 					</aside>
 
 					<aside id="credits"  class="credits" aria-labelledby="image-details">
 						<h3 id="image-details">Lead Image Details</h3>
 						
-						<p id="caption"><strong>Lead image caption:</strong> Detail of a processed spectral image of a page from David Livingstone, John Kirk, and Two Unknown Writers, “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096">Fragment of 1871 Field Diary. 11 August 1871-9 September 1871</a>,” in <em>Livingstone Online</em>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</p>
+						<p id="caption"><strong>Lead image caption:</strong> Detail of a processed spectral image of a page from David Livingstone, John Kirk, and Two Unknown Writers, “<a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000096">Fragment of 1871 Field Diary. 11 August 1871-9 September 1871</a>,” in <em>Livingstone Online</em>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland and, as relevant, Dr. Neil Imray Livingstone Wilson. <a aria-label="External Link" href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported</a>.</p>
 						
-						<p><strong>Lead image commentary:</strong> In addition to writing from Livingstone (throughout the page, rendered in various shades of blue) and the British Consul at Zanzibar John Kirk (at center of the page, rendered in black), this page contains an additional five lines of text (rendered in dark gray). Three of these are in Arabic and two in Nagari, the conventional script for Sanskrit as well as Hindi and Marathi. Further discussion of this page can be found <a href="https://livingstoneonline.org/spectral-imaging/livingstones-manuscript-structure#link9">among the critical materials</a> developed by the <a href="https://livingstoneonline.org/spectral-imaging">Livingstone Spectral Imaging Project</a>. The page offers a good example of how a manuscript produced within the context of the British Empire and normally attributed to a single author (in this case, David Livingstone) can in fact contain unattributed writing from others, including non-European individuals.</p>
+						<p><strong>Lead image commentary:</strong> In addition to writing from Livingstone (throughout the page, rendered in various shades of blue) and the British Consul at Zanzibar John Kirk (at center of the page, rendered in black), this page contains an additional five lines of text (rendered in dark gray). Three of these are in Arabic and two in Nagari, the conventional script for Sanskrit as well as Hindi and Marathi. Further discussion of this page can be found <a aria-label="External Link" href="https://livingstoneonline.org/spectral-imaging/livingstones-manuscript-structure#link9">among the critical materials</a> developed by the <a aria-label="External Link" href="https://livingstoneonline.org/spectral-imaging">Livingstone Spectral Imaging Project</a>. The page offers a good example of how a manuscript produced within the context of the British empire and normally attributed to a single author (in this case, David Livingstone) can in fact contain unattributed writing from others, including racialized individuals.</p>
 					</aside>
 				</article>
 				<div class="decoration"></div>
@@ -191,13 +211,13 @@
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
@@ -207,7 +227,7 @@
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
 			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0018";document.body.appendChild(element)});
 			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>

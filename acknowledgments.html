@@ -11,19 +11,20 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
-		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
-		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
-		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
-		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0022" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0018"/>
+		<!-- <link rel="preload" as="script" href="/js/accordion.js"/> -->
+		<!-- <link rel="preload" as="script" href="/js/tooltips.js"/> -->
+		<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
+		<style>.image-wrapper::after{padding-bottom:calc((500/700)*100%)}</style>
 	</head>
 
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
@@ -31,30 +32,42 @@
 
 	<body class="essay documents" id="body">
 
-		<header>
+		<header id="header">
+			<!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+			<div id="skip">
+				<a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+			</div>
+			<nav class="breadcrumbs">
+				<ul>
+					<li id="level-1"><a href="/">Home</a></li>
+					<li id="level-2"><a href="/documents.html">Project Documents</a></li>
+					<li id="level-3">Ackwnoledgments</li>
+				</ul>
+			</nav>
 			<div class="nav-container" data-include="header">
 				<nav class="fallback">
 					<span class="logo-container">
 						<a href="/index.html">
-							<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+							<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>
 							<h1>One More Voice</h1>
 						</a>
 					</span>
 					<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
-						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 				</nav>
 			</div>
+			<div id="overlay-menu" class="overlay" data-include="overlay"></div>
 		</header>
 
 		<main id="main" aria-labelledby="acknowledgments">
 			<section class="page-details horizontal">
 				<figure class="image-wrapper">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-					<img width="700" height="500" src="/img/main-pages/liv_023017_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023017_0001_deriv-318px.jpg 318w, /img/main-pages/liv_023017_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023017_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023017_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023017_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023017_0001_deriv-1396px.jpg 1396w" sizes="(min-width: 1700px) 875px, (min-width: 1000px) 50.59vw, (min-width: 780px) 698px, (min-width: 520px) 100vw, calc(10vw + 448px)" alt="Cloak in half-cricle shape facing down, with blue cloth body and gold fibre rows trimmed with red." title="Anonymous Artist from Rarotonga, “Cloak” (Textile [hibiscus bast fibre, wool], Cook Islands, circa 1870), Te Papa (FE000628), Museum of New Zealand | Te Papa Tongarewa. Gift of Te Aia Mataiapo, 1872. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/)." />
+					<img width="700" height="500" src="/img/main-pages/liv_023017_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_023017_0001_deriv-318px.jpg 318w, /img/main-pages/liv_023017_0001_deriv-478px.jpg 478w, /img/main-pages/liv_023017_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023017_0001_deriv-698px.jpg 698w, /img/main-pages/liv_023017_0001_deriv-956px.jpg 956w, /img/main-pages/liv_023017_0001_deriv-1396px.jpg 1396w" sizes="(min-width: 1600px) 878px, (min-width: 992px) calc(50.44vw + 31px), (min-width: 768px) 698px, 100vw" alt="Cloak in half-cricle shape facing down, with blue cloth body and gold fibre rows trimmed with red." title="Anonymous Artist from Rarotonga, “Cloak” (Textile [hibiscus bast fibre, wool], Cook Islands, circa 1870), Te Papa (FE000628), Museum of New Zealand | Te Papa Tongarewa. Gift of Te Aia Mataiapo, 1872. CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/)." />
 					<figcaption class="caption-icon mobile">
 						<span class="tooltip-container">
-							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 							<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
 						</span>
 					</figcaption>
@@ -63,11 +76,12 @@
 				<div>
 					<span>
 						<h2 id="acknowledgments">Acknowledgments</h2>
-						<p>Date (publication and updates): <strong>2020-22</strong></p>
-						<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+						<ul class="publication-details">
+							<li><span>Date (publication and updates):</span> <strong>2020-22</strong></li>
+						</ul>
 						<figcaption class="caption-icon desktop">
 							<span class="tooltip-container">
-								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 								<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
 							</span>
 						</figcaption>
@@ -92,7 +106,7 @@
 					<section aria-labelledby="land">
 						<h3 id="land">Land Acknowledgment</h3>
 
-						<p>The development of <em>One More Voice</em> is led from the <a href="https://www.unl.edu/">University of Nebraska-Lincoln</a>, a land-grant institution that was chartered in 1869 and made possible by the <a href="https://en.wikipedia.org/wiki/Morrill_Land-Grant_Acts">Morrill Act of 1862</a>. The institution is located on the traditional lands of the Očhéthi Šakówiŋ (Sioux), Pâri (Pawnee), and Jiwere (Otoe-Missouria) Tribes. The land upon which the university resides was acquired through a <a href="https://babel.hathitrust.org/cgi/pt?id=uc1.31210003349790&view=1up&seq=616">treaty</a> (<a href="https://archive.org/stream/annualreportofbu218smit#page/790/mode/2up">Land Cession Number 314</a>; also see <a href="https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=fe311f69cb1d43558227d73bc34f3a32&marker=-96.70313742217697%2C40.81981531256684%2C%2C%2C%2C&markertemplate=%7B%22title%22%3A%22314%22%2C%22longitude%22%3A-96.70313742217697%2C%22latitude%22%3A40.81981531256684%2C%22isIncludeShareUrl%22%3Atrue%7D&level=15">Tribal Connections</a>) made by the United States government with the Otoe and Missouria Tribes dated 15 March 1854.</p>
+						<p>The development of <em>One More Voice</em> is led from the <a aria-label="External Link" href="https://www.unl.edu/">University of Nebraska-Lincoln</a>, a land-grant institution that was chartered in 1869 and made possible by the <a aria-label="External Link" href="https://en.wikipedia.org/wiki/Morrill_Land-Grant_Acts">Morrill Act of 1862</a>. The institution is located on the traditional lands of the Očhéthi Šakówiŋ (Sioux), Pâri (Pawnee), and Jiwere (Otoe-Missouria) Tribes. The land upon which the university resides was acquired through a <a aria-label="External Link" href="https://babel.hathitrust.org/cgi/pt?id=uc1.31210003349790&view=1up&seq=616">treaty</a> (<a aria-label="External Link" href="https://archive.org/stream/annualreportofbu218smit#page/790/mode/2up">Land Cession Number 314</a>; also see <a aria-label="External Link" href="https://usfs.maps.arcgis.com/apps/webappviewer/index.html?id=fe311f69cb1d43558227d73bc34f3a32&marker=-96.70313742217697%2C40.81981531256684%2C%2C%2C%2C&markertemplate=%7B%22title%22%3A%22314%22%2C%22longitude%22%3A-96.70313742217697%2C%22latitude%22%3A40.81981531256684%2C%22isIncludeShareUrl%22%3Atrue%7D&level=15">Tribal Connections</a>) made by the United States government with the Otoe and Missouria Tribes dated 15 March 1854.</p>
 					</section>
 
 					<section aria-labelledby="individuals">
@@ -102,7 +116,7 @@
 
 						<p>To these individuals for assisting with project research, content development, site development, and/or project dissemination:</p>
 
-						<ul class="acknowledgments padded-list">
+						<ul class="nostyle-list indented-list padded-list">
 							<li>Nicole Allen (University of Birmingham)</li>
 							<li>Philip Allfrey</li>
 							<li>Hans Anders (Adam Matthew)</li>
@@ -127,7 +141,8 @@
 							<li>Heather Hind (University of Exeter)</li>
 							<li>Amy Kahrmann Huseby (Florida International University)</li>
 							<li>Kei Ichimura</li>
-							<li>Dr. Paola Ivanov (Ethnologisches Museum, Berlin)</li>
+							<li>Paola Ivanov (Ethnologisches Museum, Berlin)</li>
+							<li>Erich Kesse (SOAS University of London, London)</li>
 							<li>Graziano Krätli (Yale University)</li>
 							<li>Amanda E. Landis (John Wesley Powell Library of Anthropology, Smithsonian Libraries and Archives)</li>
 							<li>Amalia S. Levi (Heritedge Foundation)</li>
@@ -152,9 +167,11 @@
 							<li>Barbara Watanabe (National Museum of Natural History, Smithsonian Institution)</li>
 						</ul>
 
-						<p>To these students from Adrian S. Wisnicki's course at the University of Nebraska-Lincoln on “Digital Project Development” (Fall 2020) for providing feedback on the <em>One More Voice</em> site, as guided in part by their study of the <a href="http://criticaldh.roopikarisam.com/">Social Justice and Digital Humanities</a> project (itself a source of inspiration for the present site):</p>
+						<hr class="wide-hr"/>
 
-						<ul class="acknowledgments padded-list">
+						<p>To these students from Adrian S. Wisnicki's course at the University of Nebraska-Lincoln on “Digital Project Development” (Fall 2020) for providing feedback on the <em>One More Voice</em> site, as guided in part by their study of the <a aria-label="External Link" href="http://criticaldh.roopikarisam.com/">Social Justice and Digital Humanities</a> project (itself a source of inspiration for the present site):</p>
+
+						<ul class="nostyle-list indented-list padded-list">
 							<li>Carissa Dowden</li>
 							<li>Ella Durham</li>
 							<li>Anthony Engebretson</li>
@@ -178,61 +195,63 @@
 
 						<p>To these archives and institutions for providing support through the provision of digital materials, feedback, and/or other forms of assistance:</p>
 
-						<ul class="acknowledgments padded-list">
-							<li><a href="https://www.bodleian.ox.ac.uk/">Bodleian Libraries, University of Oxford</a> (Oxford, England)</li>
-							<li><a href="https://www.bristolmuseums.org.uk/bristol-archives/">Bristol Archives | Bristol Museums</a> (Bristol, England)</li>
-							<li><a href="https://churchmissionsociety.org/">Church Mission Society Archives</a> (Oxford, England)</li>
-							<li><a href="https://www.david-livingstone-birthplace.org/">David Livingstone Birthplace</a> (Blantyre, Scotland)</li>
-							<li><a href="https://www.smb.museum/en/museums-institutions/ethnologisches-museum/home/">Ethnologisches Museum</a> (Berlin, Germany)</li>
-							<li><a href="https://livingstonemuseum.org/">Livingstone Museum</a> (Livingstone, Zambia)</li>
-							<li><a href="https://www.nls.uk/">National Library of Scotland</a> (Edinburgh, Scotland)</li>
-							<li><a href="https://www.liverpoolmuseums.org.uk/">National Museums Liverpool</a> (Liverpool, England)</li>
-							<li><a href="https://naturalhistory.si.edu/">National Museum of Natural History, Smithsonian Institution</a> (Washington, D.C., USA)</li>
-							<li><a href="https://www.soas.ac.uk/library/">SOAS Library, SOAS University of London</a> (London, England)</li>
-							<li><a href="https://www.ufs.ac.za/">University of the Free State</a> (Bloemfontein, South Africa)</li>
-							<li><a href="https://web.library.yale.edu/divinity">Divinity School Library, Yale University</a> (New Haven, CT, USA)</li>
+						<ul class="nostyle-list indented-list padded-list">
+							<li><a aria-label="External Link" href="https://www.bodleian.ox.ac.uk/">Bodleian Libraries, University of Oxford</a> (Oxford, England)</li>
+							<li><a aria-label="External Link" href="https://www.bristolmuseums.org.uk/bristol-archives/">Bristol Archives | Bristol Museums</a> (Bristol, England)</li>
+							<li><a aria-label="External Link" href="https://churchmissionsociety.org/">Church Mission Society Archives</a> (Oxford, England)</li>
+							<li><a aria-label="External Link" href="https://www.david-livingstone-birthplace.org/">David Livingstone Birthplace</a> (Blantyre, Scotland)</li>
+							<li><a aria-label="External Link" href="https://www.smb.museum/en/museums-institutions/ethnologisches-museum/home/">Ethnologisches Museum</a> (Berlin, Germany)</li>
+							<li><a aria-label="External Link" href="https://livingstonemuseum.org/">Livingstone Museum</a> (Livingstone, Zambia)</li>
+							<li><a aria-label="External Link" href="https://www.nls.uk/">National Library of Scotland</a> (Edinburgh, Scotland)</li>
+							<li><a aria-label="External Link" href="https://www.liverpoolmuseums.org.uk/">National Museums Liverpool</a> (Liverpool, England)</li>
+							<li><a aria-label="External Link" href="https://naturalhistory.si.edu/">National Museum of Natural History, Smithsonian Institution</a> (Washington, D.C., USA)</li>
+							<li><a aria-label="External Link" href="https://www.soas.ac.uk/library/">SOAS Library, SOAS University of London</a> (London, England)</li>
+							<li><a aria-label="External Link" href="https://www.ufs.ac.za/">University of the Free State</a> (Bloemfontein, South Africa)</li>
+							<li><a aria-label="External Link" href="https://web.library.yale.edu/divinity">Divinity School Library, Yale University</a> (New Haven, CT, USA)</li>
 						</ul>
+
+						<hr class="wide-hr"/>
 
 						<p>To these archives and digital repositories for making their collections available online, thereby becoming important sources for <em>One More Voice</em> site content:</p>
 						
-						<ul class="acknowledgments padded-list">
+						<ul class="nostyle-list indented-list padded-list">
 							<li>Andafiavaratra Palace (Antananarivo, Madagascar)</li>
-							<li><a href="https://www.artic.edu/">Art Institute of Chicago</a> (Chicago, IL, USA)</li>
+							<li><a aria-label="External Link" href="https://www.artic.edu/">Art Institute of Chicago</a> (Chicago, IL, USA)</li>
 							<li>Bensusan Museum of Photography (Johannesburg, South Africa)</li>
-							<li><a href="https://www.britishmuseum.org/">British Museum</a></li>
-							<li><a href="https://dp.la/">Digital Public Library of America</a></li>
-							<li><a href="https://www.etnografiskamuseet.se/">Etnografiska Museet</a> (Stockholm, Sweeden)</li>
-							<li><a href="https://www.famsf.org/">Fine Arts Museums of San Francisco</a> (San Francisco, USA)</li>
-							<li><a href="https://www.hathitrust.org/">Hathi Trust</a></li>
-							<li><a href="https://www.archive.org/">Internet Archive</a></li>
-							<li><a href="https://www.loc.gov/">Library of Congress</a> (Washington, DC, USA)</li>
-							<li><a href="http://19thcenturyphotos.com/">The Library of Nineteenth-Century Photography</a></li>
-							<li><a href="https://www.tepapa.govt.nz/">Museum of New Zealand | Te Papa Tongarewa</a> (Wellington, New Zealand)</li>
-							<li><a href="https://www.nypl.org/">New York Public Library</a> (New York, NY, USA)</li>
+							<li><a aria-label="External Link" href="https://www.britishmuseum.org/">British Museum</a></li>
+							<li><a aria-label="External Link" href="https://dp.la/">Digital Public Library of America</a></li>
+							<li><a aria-label="External Link" href="https://www.etnografiskamuseet.se/">Etnografiska Museet</a> (Stockholm, Sweeden)</li>
+							<li><a aria-label="External Link" href="https://www.famsf.org/">Fine Arts Museums of San Francisco</a> (San Francisco, USA)</li>
+							<li><a aria-label="External Link" href="https://www.hathitrust.org/">Hathi Trust</a></li>
+							<li><a aria-label="External Link" href="https://www.archive.org/">Internet Archive</a></li>
+							<li><a aria-label="External Link" href="https://www.loc.gov/">Library of Congress</a> (Washington, DC, USA)</li>
+							<li><a aria-label="External Link" href="http://19thcenturyphotos.com/">The Library of Nineteenth-Century Photography</a></li>
+							<li><a aria-label="External Link" href="https://www.tepapa.govt.nz/">Museum of New Zealand | Te Papa Tongarewa</a> (Wellington, New Zealand)</li>
+							<li><a aria-label="External Link" href="https://www.nypl.org/">New York Public Library</a> (New York, NY, USA)</li>
 							<li>Pietermaritzburg Archives Repository (Pietermaritzburg, South Africa)</li>
-							<li><a href="https://www.rmg.co.uk/">Royal Museums Greenwich</a> (London, United Kingdom)</li>
-							<li><a href="https://africa.si.edu/">Smithsonian National Museum of African Art</a> (Washington, DC, USA)</li>
-							<li><a href="https://wellcomelibrary.org/">Wellcome Library</a> (London, England)</li>
-							<li><a href="https://commons.wikimedia.org/">Wikimedia Commons</a></li>
-							<li><a href="https://www.wdl.org/en/">World Digital Library</a></li>
+							<li><a aria-label="External Link" href="https://www.rmg.co.uk/">Royal Museums Greenwich</a> (London, United Kingdom)</li>
+							<li><a aria-label="External Link" href="https://africa.si.edu/">Smithsonian National Museum of African Art</a> (Washington, DC, USA)</li>
+							<li><a aria-label="External Link" href="https://wellcomelibrary.org/">Wellcome Library</a> (London, England)</li>
+							<li><a aria-label="External Link" href="https://commons.wikimedia.org/">Wikimedia Commons</a></li>
+							<li><a aria-label="External Link" href="https://www.wdl.org/en/">World Digital Library</a></li>
 						</ul>
 					</section>
 
 					<aside class="credits" aria-labelledby="citation">
 						<h3 id="citation">Page Citation</h3>
 
-						<p><strong>Cite (MLA):</strong> “Acknowledgments” (2020-22). <em>One More Voice</em>, solidarity edition, 2022, <a href="/contributors.html">https://onemorevoice.org/acknowledgments.html</a>.</p>
+						<p><strong>Cite (MLA):</strong> “Acknowledgments” (2020-22). <em>One More Voice</em>, solidarity edition, 2022, <a href="/acknowledgments.html">https://onemorevoice.org/acknowledgments.html</a>.</p>
 					
-						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+						<p><strong>Rights:</strong> <a aria-label="External Link" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 
 					</aside>
 
-					<aside id="credits"  class="credits" aria-labelledby="image-details">
+					<aside id="credits" class="credits" aria-labelledby="image-details">
 						<h3 id="image-details">Lead Image Details</h3>
 
-						<p id="caption"><strong>Lead image caption:</strong> Anonymous Artist from Rarotonga, “<a href="https://collections.tepapa.govt.nz/object/162334">Cloak</a>” (Textile [hibiscus bast fibre, wool], Cook Islands, circa 1870), Te Papa (FE000628), Museum of New Zealand | Te Papa Tongarewa. Gift of Te Aia Mataiapo, 1872. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
+						<p id="caption"><strong>Lead image caption:</strong> Anonymous Artist from Rarotonga, “<a aria-label="External Link" href="https://collections.tepapa.govt.nz/object/162334">Cloak</a>” (Textile [hibiscus bast fibre, wool], Cook Islands, circa 1870), Te Papa (FE000628), Museum of New Zealand | Te Papa Tongarewa. Gift of Te Aia Mataiapo, 1872. <a aria-label="External Link" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
 
-						<p><strong>Lead image commentary:</strong> The Museum of New Zealand | Te Papa Tongarewa <a href="https://collections.tepapa.govt.nz/object/162334">website</a> describes this cloak as follows: “This magnificent cloak once belonged to Teai'a Mata'iapo, a Rarotongan chief. In the Colonial Museum’s <em>Annual report</em>, it is noted that Teai'a Mata‘iapo presented a cloak and a number of other objects to the New Zealand government in gratitude for the hospitality he had received during a visit to Auckland.” Although <em>One More Voice</em> focuses on recovering nineteenth-century non-European written contributions from imperial and colonial archives, such writings represent only one form of expression by the individuals and communities taken up by the project. Material objects, such as this cloak, are equally important in this regard and, additionally, help place the written texts in wider intellectual and cultural contexts.</p>
+						<p><strong>Lead image commentary:</strong> The Museum of New Zealand | Te Papa Tongarewa <a aria-label="External Link" href="https://collections.tepapa.govt.nz/object/162334">website</a> describes this cloak as follows: “This magnificent cloak once belonged to Teai'a Mata'iapo, a Rarotongan chief. In the Colonial Museum’s <em>Annual report</em>, it is noted that Teai'a Mata‘iapo presented a cloak and a number of other objects to the New Zealand government in gratitude for the hospitality he had received during a visit to Auckland.” Although <em>One More Voice</em> focuses on recovering nineteenth-century written contributions from imperial and colonial archives, such writings, of course, represent only one form of expression from the racialized individuals and communities taken up by the project. Material objects, such as this cloak, are equally important in this regard and, additionally, help place the written texts in wider intellectual and cultural contexts.</p>
 					</aside>
 				</article>
 				<div class="decoration"></div>
@@ -244,13 +263,13 @@
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
@@ -260,7 +279,7 @@
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
 			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0018";document.body.appendChild(element)});
 			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>

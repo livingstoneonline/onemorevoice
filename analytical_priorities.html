@@ -11,19 +11,20 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
-		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
-		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
-		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
-		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0022" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0018"/>
+		<!-- <link rel="preload" as="script" href="/js/accordion.js"/> -->
+		<!-- <link rel="preload" as="script" href="/js/tooltips.js"/> -->
+		<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
+		<style>.image-wrapper::after{padding-bottom:calc((514/700)*100%)}</style>
 	</head>
 
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
@@ -31,7 +32,18 @@
 
 	<body class="essay documents" id="body">
 
-		<header>
+		<header id="header">
+			<!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+			<div id="skip">
+				<a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+			</div>			
+			<nav class="breadcrumbs">
+				<ul>
+					<li id="level-1"><a href="/">Home</a></li>
+					<li id="level-2"><a href="/documents.html">Project Documents</a></li>
+					<li id="level-3">Analytical Priorities</li>
+				</ul>
+			</nav>
 			<div class="nav-container" data-include="header">
 				<nav class="fallback">
 					<span class="logo-container">
@@ -41,20 +53,21 @@
 						</a>
 					</span>
 					<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
-						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 				</nav>
 			</div>
+			<div id="overlay-menu" class="overlay" data-include="overlay"></div>
 		</header>
 
 		<main id="main" aria-labelledby="analytical-priorities">
 			<section class="page-details horizontal">
 				<figure class="image-wrapper">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-					<img width="700" height="514" src="/img/main-pages/liv_014094_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_014094_0001_deriv-318px.jpg 318w, /img/main-pages/liv_014094_0001_deriv-478px.jpg 478w, /img/main-pages/liv_014094_0001_deriv-636px.jpg 636w, /img/main-pages/liv_014094_0001_deriv-698px.jpg 698w, /img/main-pages/liv_014094_0001_deriv-956px.jpg 956w, /img/main-pages/liv_014094_0001_deriv-1396px.jpg 1396w" sizes="(min-width: 1700px) 875px, (min-width: 1000px) 50.59vw, (min-width: 780px) 698px, (min-width: 520px) 100vw, calc(10vw + 448px)" alt="Individuals in African village. Two hold large plates; the others surround domestic implements." title="Detail from Charles Livingstone, “Photographic Scene in an African Village” ([1857-1865]), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_014094. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." />
+					<img width="700" height="514" src="/img/main-pages/liv_014094_0001_deriv-1396px.jpg" srcset="/img/main-pages/liv_014094_0001_deriv-318px.jpg 318w, /img/main-pages/liv_014094_0001_deriv-478px.jpg 478w, /img/main-pages/liv_014094_0001_deriv-636px.jpg 636w, /img/main-pages/liv_014094_0001_deriv-698px.jpg 698w, /img/main-pages/liv_014094_0001_deriv-956px.jpg 956w, /img/main-pages/liv_014094_0001_deriv-1396px.jpg 1396w" sizes="(min-width: 1600px) 878px, (min-width: 992px) calc(50.44vw + 31px), (min-width: 768px) 698px, 100vw" alt="Individuals in African village. Two hold large plates; the others surround domestic implements." title="Detail from Charles Livingstone, “Photographic Scene in an African Village” ([1857-1865]), in Livingstone Online, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020), https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_014094. Copyright National Library of Scotland. Creative Commons Share-alike 2.5 UK: Scotland (https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/)." />
 					<figcaption class="caption-icon mobile">
 						<span class="tooltip-container">
-							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 							<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
 						</span>
 					</figcaption>
@@ -63,16 +76,17 @@
 				<div>
 					<span>
 						<h2 id="analytical-priorities">Analytical Priorities</h2>
-						<p>Author:  <strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</p>
-						<p>Editors:  <strong>Heather F. Ball</strong> (St. John's University)
-						<br/><strong>Jared McDonald</strong> (University of the Free State)
-						<br/><strong>Mary Borgo Ton</strong> (University of Illinois Urbana-Champaign)</p>
-						<p>Date (publication and updates): <strong>2020-22</strong></p>
-						<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+						<ul class="publication-details">
+							<li><span>Author:</span> <strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</li>
+							<li><span>Editors:</span>  <strong>Heather F. Ball</strong> (St. John's University)
+							<br/><strong>Jared McDonald</strong> (University of the Free State)
+							<br/><strong>Mary Borgo Ton</strong> (University of Illinois Urbana-Champaign)</li>
+							<li><span>Date (publication and updates):</span> <strong>2020-22</strong></li>
+						</ul>
 
 						<figcaption class="caption-icon desktop">
 							<span class="tooltip-container">
-								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 								<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
 							</span>
 						</figcaption>
@@ -95,28 +109,28 @@
 					<section>
 						<h3 id="overview">Overview</h3>
 						
-						<p>The <em>One More Voice</em> project grows out of the fact that non-European contributions survive in abundance in nineteenth-century British imperial and colonial archives. By archives, we mean the total of imperial and colonial writing from the period, not just physical archives and not just manuscripts because many printed sources – especially those from the nineteenth-century periodical press – remain unstudied or understudied. As noted on our <a href="/index.html">home page</a>, the non-European contributions in these archives take multiple forms and appear in multiple genres. <em>One More Voice</em> attempts to critically interrogate this abundance in a systematic fashion. The project’s analytical priorities have evolved out of extensive previous research by the <a href="/contributors.html">project contributors</a>, including ten years of <a href="https://livingstoneonline.org/"><em>Livingstone Online</em></a> development and ideas set out in a variety of print publications (see <a href="/bibliography.html">Bibliography</a>).</p>
+						<p>The <em>One More Voice</em> project grows out of the fact that contributions from racialized creators survive in abundance in nineteenth-century British imperial and colonial archives. By archives, we mean the total of imperial and colonial writing from the period, not just physical archives and not just manuscripts because many printed sources – especially those from the nineteenth-century periodical press – remain unstudied or understudied. As noted in our <a href="/mission_statement.html">mission statement</a>, the  contributions from racialized creators in these archives take multiple forms and appear in multiple genres. <em>One More Voice</em> attempts to critically interrogate this abundance in a systematic fashion. The project’s analytical priorities have evolved out of extensive previous research by the <a href="/contributors.html">project contributors</a>, including ten years of <a aria-label="External Link" href="https://livingstoneonline.org/"><em>Livingstone Online</em></a> development and ideas set out in a variety of print publications (see <a href="/bibliography.html">Bibliography</a>).</p>
 
 						<p>The <em>One More Voice</em> materials necessitate a cautious, historically-sensitive, critical approach because the final form of these materials often took shape through the work of European authors, editors, interlocutors, and others. The materials have not been “authored” in the way that authorship is commonly understood, and, as a result, the materials may overtly and/or implicitly incorporate stereotypes, prejudices, and other distortions that reflect the reigning ideologies of the era’s European cultures. The abundance of these materials and the many alternate voices and perspectives that these materials provide, however, are important to our understanding of nineteenth-century intercultural interactions across the globe. The abundance also complicates a common argument among scholars that such perspectives and voices have been silenced in, or otherwise excluded from, the archives.</p>
 
 						<p>As a critical intervention, <em>One More Voice</em> engages with postcolonial studies and other related research by responding to broader disciplinary trends in reading colonial history “against the grain” (see Young 2001 and Loomba 2015 for summaries). Recent scholarship on postcolonial and Black digital humanities has likewise set the overall interpretive priorities of <em>One More Voice</em>. Such work calls for “innovative restructuring of the canon through recovery” efforts made possible by digital humanities methodologies (Earhart 2012); the concurrent “recovery of black authors’ humanity” which has been “lost and stolen through systemic global racialization” (Gallon 2016); and the development of “polyvocal” postcolonial digital archives (Risam 2015, 36–37). Finally, <em>One More Voice</em> also engages historical scholarship on Victorian-era expeditions. This includes studies that seek to address the practical realities of expeditionary data-gathering practices and the impact of these practices on British knowledge production (Bridges 1987, 1998; Driver 2013, 2017; Simpson 1976; Bontinck 1977, 1978; Reid 2012; Kennedy 2013)</p>
 
-						<p>Although previous scholarship identifies the presence of the contributions from non-European populations to imperial and colonial knowledge production, such research has significant limitations. The scholarship identifies non-European authors as contributors, but does not rigorously define the form(s) that such contributions take. As a result, the work does not discuss or develop a replicable methodology for identifying such contributions. Likewise there have been no full-scale critical attempts to identify, document, and/or theorize such contributions. Prior studies also fail to consider either how such non-European contributions might be digitally remediated or the intercultural implications involved in such remediation.</p>
+						<p>Although previous scholarship identifies the presence of the contributions from racialized groups to imperial and colonial knowledge production, such research has significant limitations. The scholarship sometimes identifies racialized authors as contributors, but does not rigorously define the form(s) that such contributions take. As a result, the work does not discuss or develop a replicable methodology for identifying such contributions. Likewise there have been no full-scale critical attempts to identify, document, and/or theorize such contributions. Prior studies also fail to consider either how such contributions from racialized groups might be digitally remediated or the intercultural implications involved in such remediation.</p>
 
 						<p>In response to such limitations, <em>One More Voice</em> seeks to:</p>
 
 						<ul class="padded-list">
-							<li><span class="highlight">Find</span> non-western discursive and material contributions and productions in nineteenth-century British imperial and colonial archives;</li>
-							<li><span class="highlight">Define</span> what constitutes such materials;</li>
-							<li><span class="highlight">Document and theorize</span> a general methodology by which to identify such materials;</li>
-							<li><span class="highlight">Digitally remediate</span> the materials through a robust critical strategy;</li>
-							<li><span class="highlight">Intervene in critical discourse</span> on Empire through thoughtful, intercultural analysis of the materials;</li>
-							<li><span class="highlight">Disseminate the materials</span> so that they are used in classrooms, particularly those in locations from which the writers might have originated.</li>
+							<li><em>Find</em> racialized discursive and material contributions and productions in nineteenth-century British imperial and colonial archives;</li>
+							<li><em>Define</em> what constitutes such materials;</li>
+							<li><em>Document and theorize</em> a general methodology by which to identify such materials;</li>
+							<li><em>Digitally remediate</em> the materials through a robust critical strategy;</li>
+							<li><em>Intervene in critical discourse</em> on empire through thoughtful, intercultural analysis of the materials;</li>
+							<li><em>Disseminate the materials</em> so that they are used in classrooms, particularly those in locations from which the writers might have originated.</li>
 						</ul>
 
-						<p>In taking this approach, <em>One More Voice</em> also helps highlight the challenges related to working with relevant materials. Such challenges include the fact that the materials exist in and as part of multiple genres, that surviving manuscripts are not always in the hands of non-European authors, and that some relevant texts exist only in published form, thereby raising difficult questions related to attribution, authorial control, editorial intervention, and publisher influence.</p>
+						<p>In taking this approach, <em>One More Voice</em> also helps highlight the challenges related to working with relevant materials. Such challenges include the fact that the materials exist in and as part of multiple genres, that surviving manuscripts are not always in the hands of the racialized creators, and that some relevant texts exist only in published form, thereby raising difficult questions related to attribution, authorial control, editorial intervention, and publisher influence.</p>
 
-						<p>There is also the issue of how to frame and unify these non-European contributions. Are these “imperial” and “colonial” materials or something else altogether? Is there a compelling reason why we should prioritize the imperial and colonial contexts of the materials over other non-European contexts? How do we account for the fact that the individuals who made the contributions did not always do so willingly, or with full knowledge of how their contributions would be used, or in a clear understanding that their own local and regional perspectives might be reappropriated into alien ideological frameworks? <em>One More Voice</em> does not necessarily provide answers to such questions, but our work in bringing together and engaging the relevant materials – even if in a preliminary way – gives scholars, students, and others at least <em>one more</em> vantage from which to take up these questions.</p>
+						<p>There is also the issue of how to frame and unify these contributions from racialized individuals. Are these “imperial” and “colonial” materials or something else altogether? Is there a compelling reason why we should prioritize the imperial and colonial contexts of the materials over other global contexts? How do we account for the fact that the individuals who made the contributions did not always do so willingly, or with full knowledge of how their contributions would be used, or in a clear understanding that their own local and regional perspectives might be reappropriated into alien ideological frameworks? <em>One More Voice</em> does not necessarily provide answers to such questions, but our work in bringing together and engaging the relevant materials – even if in a preliminary way – gives scholars, students, and others at least <em>one more</em> vantage from which to take up these questions.</p>
 					</section>
 
 					<section aria-labelledby="works-cited">
@@ -124,19 +138,19 @@
 
 						<p>Bontinck, François. 1977. “Le Diaire de Jacob Wainwright.” <em>Africa: Rivista Trimestrale Di Studi e Documentazione Dell’Istituto Italiano per l’Africa e l’Oriente</em> 32 (3): 399–434.</p>
 
-						<p>———. 1978. “Encore Sur Le Diaire de Jacob Wainwright: Corrigenda.” <em>Africa: Rivista Trimestrale Di Studi e Documentazione Dell’Istituto Italiano per l’Africa e l’Oriente</em> 33 (4): 603–4.</p>
+						<p>Bontinck, François. 1978. “Encore Sur Le Diaire de Jacob Wainwright: Corrigenda.” <em>Africa: Rivista Trimestrale Di Studi e Documentazione Dell’Istituto Italiano per l’Africa e l’Oriente</em> 33 (4): 603–4.</p>
 
 						<p>Bridges, Roy C. 1987. “Nineteenth-Century East African Travel Records with an Appendix on ‘Armchair Geographers’ and Cartography.” <em>Paideuma</em> 33: 179–96.</p>
 
-						<p>———. 1998. “Explorers’ Texts and the Problem of Reactions by Non-Literate Peoples: Some Nineteenth-Century East African Examples.” <em>Studies in Travel Writing</em> 2 (1): 65–84.</p>
+						<p>Bridges, Roy C. 1998. “Explorers’ Texts and the Problem of Reactions by Non-Literate Peoples: Some Nineteenth-Century East African Examples.” <em>Studies in Travel Writing</em> 2 (1): 65–84.</p>
 
 						<p>Driver, Felix. 2013. “Hidden Histories Made Visible? Reflections on a Geographical Exhibition.” <em>Transactions of the Institute of British Geographers</em> 38 (3): 420–35.</p>
 
-						<p>———. 2017. “Exploration as Knowledge Transfer: Exhibiting Hidden Histories.” In <em>Mobilities of Knowledge</em>, edited by Heike Jöns, Peter Meusburger, and Michael Heffernan. N.p.: Springer International Publishing.</p>
+						<p>Driver, Felix. 2017. “Exploration as Knowledge Transfer: Exhibiting Hidden Histories.” In <em>Mobilities of Knowledge</em>, edited by Heike Jöns, Peter Meusburger, and Michael Heffernan. N.p.: Springer International Publishing.</p>
 
-						<p>Earhart, Amy E. 2012. “<a href="https://dhdebates.gc.cuny.edu/debates/text/16">Can Information Be Unfettered? Race and the New Digital Humanities Canon</a>.” In <em>Debates in the Digital Humanities</em>, edited by Matthew K. Gold. Minneapolis, MN: University of Minnesota Press.</p>
+						<p>Earhart, Amy E. 2012. “<a aria-label="External Link" href="https://dhdebates.gc.cuny.edu/debates/text/16">Can Information Be Unfettered? Race and the New Digital Humanities Canon</a>.” In <em>Debates in the Digital Humanities</em>, edited by Matthew K. Gold. Minneapolis, MN: University of Minnesota Press.</p>
 
-						<p>Gallon, Kim. 2016. “<a href="https://dhdebates.gc.cuny.edu/debates/text/55">Making a Case for the Black Digital Humanities</a>.” In <em>Debates in the Digital Humanities 2016</em>, edited by Matthew K. Gold and Lauren F. Klein. Minneapolis, MN: University of Minnesota Press.</p>
+						<p>Gallon, Kim. 2016. “<a aria-label="External Link" href="https://dhdebates.gc.cuny.edu/debates/text/55">Making a Case for the Black Digital Humanities</a>.” In <em>Debates in the Digital Humanities 2016</em>, edited by Matthew K. Gold and Lauren F. Klein. Minneapolis, MN: University of Minnesota Press.</p>
 
 						<p>Kennedy, Dane. 2013. <em>The Last Blank Spaces: Exploring Africa and Australia.</em> Cambridge, MA; London: Harvard University Press.</p>
 
@@ -144,7 +158,7 @@
 
 						<p>Reid, Richard J. 2012. <em>A History of Modern Africa: 1800 to the Present</em>. Chichester, West Sussex, England: Wiley-Blackwell.</p>
 
-						<p>Risam, Roopika. 2015. “<a href="http://digitalcommons.salemstate.edu/english_facpub/1">Revising History and Re-Authouring the Left in the Postcolonial Digital Archive</a>.” <em>Digital Commons at Salem State University: English Faculty Publications</em>, Paper 1.</p>
+						<p>Risam, Roopika. 2015. “<a aria-label="External Link" href="http://digitalcommons.salemstate.edu/english_facpub/1">Revising History and Re-Authouring the Left in the Postcolonial Digital Archive</a>.” <em>Digital Commons at Salem State University: English Faculty Publications</em>, Paper 1.</p>
 
 						<p>Simpson, Donald. 1976. <em>Dark Companions: The African Contribution to the European Exploration of East Africa</em>. London: Paul Elek Ltd.</p>
 
@@ -156,14 +170,14 @@
 
 						<p><strong>Cite (MLA):</strong> Wisnicki, Adrian S. “Analytical Priorities” (2020-22). Heather F. Ball, Jared McDonald, and Mary Borgo Ton, eds., <em>One More Voice</em>, solidarity edition, 2022, <a href="/analytical_priorities.html">https://onemorevoice.org/analytical_priorities.html</a>.</p>
 		
-						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+						<p><strong>Rights:</strong> <a aria-label="External Link" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 
 					</aside>
 
 					<aside id="credits"  class="credits" aria-labelledby="image-details">
 						<h3 id="image-details">Lead Image Details</h3>
 					
-						<p id="caption"><strong>Lead image caption:</strong> Detail from Charles Livingstone, “<a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_014094">Photographic Scene in an African Village</a>” ([1857-1865]), in <em>Livingstone Online</em>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland. <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/">Creative Commons Share-alike 2.5 UK: Scotland</a>.</p>
+						<p id="caption"><strong>Lead image caption:</strong> Detail from Charles Livingstone, “<a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_014094">Photographic Scene in an African Village</a>” ([1857-1865]), in <em>Livingstone Online</em>, ed. Adrian S. Wisnicki and Megan Ward, new version, second edition (Lincoln, NE: University of Nebraska-Lincoln, 2020). Copyright National Library of Scotland. <a aria-label="External Link" href="https://creativecommons.org/licenses/by-nc-sa/2.5/scotland/">Creative Commons Share-alike 2.5 UK: Scotland</a>.</p>
 						
 						<p><strong>Lead image commentary:</strong> Although such images might purport to document nineteenth-century cultural and material realities in Africa, the images were in fact often highly staged by European photographers and so serve much more like documentary evidence about those photographers, their objectives, and the expectations of their audiences than about the African individuals who serve as the subjects of the images. Indeed, the images might be said to mute those African subjects rather than giving them any sort of voice.</p>
 					</aside>
@@ -177,13 +191,13 @@
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
@@ -193,7 +207,7 @@
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
 			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0018";document.body.appendChild(element)});
 			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>

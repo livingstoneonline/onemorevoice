@@ -13,17 +13,21 @@ if ("serviceWorker" in navigator) {
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 function openNav() {
-	document.getElementsByTagName("html")[0].style.overflowY = "hidden";
-	document.getElementsByTagName("body")[0].style.overflowY = "scroll";
+	document.getElementById("body").style.cssText = "border: 0;";
+	document.getElementById("header").style.cssText = "height: auto;";
 	document.getElementById("main-nav").classList.add("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible;";
+	document.getElementById("overlay-menu").style.cssText = "display: flex; visibility: visible";
+	document.getElementById("main").style.cssText = "display: none; visibility: hidden;";
+	document.getElementById("footer").style.cssText = "display: none; visibility: hidden;";
 };
 
 function closeNav() {
-	document.getElementsByTagName("html")[0].style.overflowY = "unset";
-	document.getElementsByTagName("body")[0].style.overflowY = "unset";
+	document.getElementById("body").style.cssText = "border: inherit;";
+	document.getElementById("header").style.cssText = "height: inherit;";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
 	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
+	document.getElementById("main").style.cssText = "display: inherit; visibility: inherit;";
+	document.getElementById("footer").style.cssText = "display: inherit; visibility: inherit;";
 };
 
 
@@ -72,6 +76,20 @@ function RandomiseHref(){
 			links[i].href = links[i].href;
 		}
 };
+
+
+// Prevents the title attribute from appearing in a tooltip on mouseover on images
+// Adapted from https://spigotdesign.com/hide-title-attribute-hover-dont-remove/
+$("img").hover(function(){
+	var title = $(this).attr("title");
+	$(this).attr("tmp_title", title);
+	$(this).attr("title","");	
+});
+
+$("img").click(function(){
+	var title = $(this).attr("tmp_title");
+	$(this).attr("title", title);
+});
 
 
 // Needed to prevent a "Best Practices" issue created by Google Translate

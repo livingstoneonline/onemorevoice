@@ -1,0 +1,261 @@
+/* "BIPOC" Voices Timeline CSS File for One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki */ /* 2022 */
+
+/* Adapted from https://codepen.io/hassan-kamal/pen/NNvYEQ */
+/* Also see https://onaircode.com/html-css-vertical-timeline-examples/ */
+/* Based on the timeline created for https://undiscipliningvc.org/html/lesson_plans/east_asia_timeline.html */
+
+/* warning box for timeline page */
+aside.warning-box.bv-pieces{
+  font-size: 1.05rem;
+  border-top: 4px solid #85454B;
+  border-bottom: 4px solid #85454B;
+  border-right: 1px solid #bdc2bd;
+  border-left: 1px solid #bdc2bd;
+  margin-top: 1.5rem;
+}
+@media only screen and (min-width: 992px){
+  aside.warning-box.bv-pieces{
+    margin-top: 4rem;
+  }
+}
+/* override standard article width */
+@media only screen and (min-width: 1200px){
+	.content.recovered article#timeline-section{
+		max-width: 950px;
+	}
+}
+@media only screen and (min-width: 1366px){
+	.content.recovered article#timeline-section{
+		max-width: 1150px;
+	}
+}
+@media only screen and (min-width: 1600px){
+	.content.recovered article#timeline-section{
+		max-width: 1350px;
+	}
+}
+
+/* override standard heading color */
+h3#timeline{
+  border-bottom: 8px solid #bdc2bd;
+}
+h3#timeline::before{
+  content: "\f133";
+  font-weight: 400;
+	font-family: "Font Awesome 6 Free";
+	margin-right: .75rem;
+}
+/* box sizing */
+.timeline-container *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+/* main container */
+.timeline-container{
+  margin: 2rem auto;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+/* vertical line for timeline */
+.timeline-container:before{
+  content: '';
+  background: #bdc2bd;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 8px;  
+  position: absolute;
+  z-index: 1;
+}
+@media only screen and (min-width: 624px){
+  .timeline-container:before{
+    width: 2px;
+    left: 50%;
+  }
+}
+/* individual timeline item */
+section section .timeline-block{
+  margin: 1.5rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: justify;
+  justify-content: flex-start;
+  align-items: center;
+  clear: both;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block{
+    margin: -5rem 0;
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+  }
+}
+@media only screen and (min-width: 768px){
+  section section .timeline-block{
+    margin: -4rem 0;
+  }
+}
+@media only screen and (min-width: 992px){
+  section section .timeline-block{
+    margin: -2.5rem 0;
+  }
+}
+@media only screen and (min-width: 1200px){
+  section section .timeline-block{
+    margin: -1.5rem 0;
+  }
+}
+/* reduces margin at top of timeline */
+section section .timeline-block:first-of-type{
+  margin-top: -2rem;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block:first-of-type{
+    margin-top: -1rem;
+  }
+}
+/* reduces margin at bottom of timeline */
+section section .timeline-block:last-of-type{
+  margin-bottom: -2rem;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block:last-of-type{
+    margin-bottom: -1rem;
+  }
+}
+/* all timeline items on right side */
+section section .timeline-block:nth-child(odd){
+  float: none;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block:nth-child(odd){
+      float: right;
+  }
+}
+/* all timeline items on left side */
+section section .timeline-block:nth-child(even){
+      direction: ltr;
+      text-align: left;
+      float: none;
+}
+@media only screen and (min-width: 624px){
+  section section .timeline-block:nth-child(even){
+    direction: rtl;
+    text-align: right;
+    float: left;
+  }
+}
+/* dot on timeline */
+.marker{
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  width: 16px;
+  height: 16px;
+  z-index: 19;
+}
+.timeline-block:nth-child(odd) .marker{
+  background: #8db7bf;
+}
+.timeline-block:nth-child(even) .marker{
+  background: #dcd3a6;
+}
+/* container for timeline item date and text */
+.timeline-content{
+  margin: 0 .75rem;
+  width: calc(100% - 15.9667px - 1.5rem); /* Needed for middle dot marker*/
+  padding: .5rem 1.5rem 1.25rem;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.timeline-block:nth-child(odd) .timeline-content{
+  border-top: 6px solid #8db7bf;
+  border-bottom: 6px solid #8db7bf;
+  border-right: 1px solid #bdc2bd;
+  border-left: 1px solid #bdc2bd;
+}
+.timeline-block:nth-child(even) .timeline-content{
+  border-top: 6px solid #dcd3a6;
+  border-bottom: 6px solid #dcd3a6;
+  border-left: 1px solid #bdc2bd;
+  border-right: 1px solid #bdc2bd;
+}
+@media only screen and (min-width: 624px){
+  .timeline-block:nth-child(even) .timeline-content{
+    margin-right: .75rem;
+  }
+}
+/* title on timeline */
+section section .timeline-content h4{
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: inherit;
+  text-transform: none;
+  direction: ltr;
+  margin: 0; /* See Safari Support */
+}
+/* text on timeline */
+.timeline-content p{
+  word-spacing: 1px;
+  text-align: inherit;
+  line-height: 1.5em;
+  margin: .5rem 0 0; 
+}
+/* date and creator items on timeline */
+.timeline-content p.timeline-date{
+  margin-bottom: 1.5rem; /* See Safari Support */
+}
+.timeline-content p.timeline-teaser{
+  font-size: .9rem;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  direction: ltr;
+  line-height: 1.875rem;
+  margin-top: 1.5rem; /* See Safari Support */
+}
+.timeline-content p.timeline-date,
+.timeline-content p.timeline-creator{
+  font-size: 1.05rem;
+  direction: ltr;
+}
+.timeline-content p.timeline-date::before,
+.timeline-content p.timeline-creator::before{
+	font-family: "Font Awesome 6 Free";
+	margin-right: .25rem;
+}
+.timeline-content p.timeline-date::before{
+  content: "\f133";
+  font-weight: 400;
+}
+.timeline-content p.timeline-creator::before{
+  content: "\f500";
+  font-weight: 600;
+}
+
+/* Safari Support: Mobile and Safari below 14.1 */
+/* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
+@supports (-webkit-touch-callout: none) and (not (translate: none)){
+  .timeline-content h4{
+    padding-top: .5rem;
+  }
+  .timeline-content h4+p,
+  .timeline-content p+p{
+    padding-top: .5rem;
+  }
+}

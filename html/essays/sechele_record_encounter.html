@@ -11,19 +11,20 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
-		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
-		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
-		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
-		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0022" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0018"/>
+		<!-- <link rel="preload" as="script" href="/js/accordion.js"/> -->
+		<!-- <link rel="preload" as="script" href="/js/tooltips.js"/> -->
+		<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
+		<style>.image-wrapper::after{padding-bottom:calc((431/700)*100%)}</style>
 	</head>
 		
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
@@ -31,7 +32,18 @@
 	
 	<body class="essay materials critical" id="body">
 	
-		<header>
+		<header id="header">
+			<!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+			<div id="skip">
+				<a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+			</div>			
+			<nav class="breadcrumbs">
+				<ul>
+					<li id="level-1"><a href="/">Home</a></li>
+					<li id="level-2"><a href="/essays.html">Critical Essays</a></li>
+					<li id="level-3">Sechele and the Record of Intercultural Encounter</li>
+				</ul>
+			</nav>
 			<div class="nav-container" data-include="header">
 				<nav class="fallback">
 					<span class="logo-container">
@@ -40,21 +52,22 @@
 							<h1>One More Voice</h1>
 						</a>
 					</span>
-					<button class="hamburger-menu" style="cursor:pointer" title="Menu" aria-label="Show site sections" onclick="openNav()" tabindex="0">
-						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
-					</button>
+					<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</a>
 				</nav>
 			</div>
+			<div id="overlay-menu" class="overlay" data-include="overlay"></div>
 		</header>
 		
 		<main id="main" aria-labelledby="sechele">
 				<section class="page-details horizontal">
 					<figure class="image-wrapper">
 						<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-						<img width="700" height="431" class="image-border" src="/img/essays/liv_021047_0001_deriv-1396px.jpg" srcset="/img/essays/liv_021047_0001_deriv-1396px.jpg 1396w, /img/essays/liv_021047_0001_deriv-956px.jpg 956w, /img/essays/liv_021047_0001_deriv-698px.jpg 698w, /img/essays/liv_021047_0001_deriv-636px.jpg 636w, /img/essays/liv_021047_0001_deriv-478px.jpg 478w, /img/essays/liv_021047_0001_deriv-318px.jpg 318w" sizes="(min-width: 1700px) 875px, (min-width: 1000px) 50.59vw, (min-width: 780px) 698px, (min-width: 520px) 100vw, calc(10vw + 448px)" alt="Half-body portrait of Kgosi Sechele and MmaKgari seated side by side." title="A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana [History of the Bechuana] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
+						<img width="700" height="431" class="image-border" src="/img/essays/liv_021047_0001_deriv-1396px.jpg" srcset="/img/essays/liv_021047_0001_deriv-1396px.jpg 1396w, /img/essays/liv_021047_0001_deriv-956px.jpg 956w, /img/essays/liv_021047_0001_deriv-698px.jpg 698w, /img/essays/liv_021047_0001_deriv-636px.jpg 636w, /img/essays/liv_021047_0001_deriv-478px.jpg 478w, /img/essays/liv_021047_0001_deriv-318px.jpg 318w" sizes="(min-width: 1600px) 878px, (min-width: 992px) calc(50.44vw + 31px), (min-width: 768px) 698px, 100vw" alt="Half-body portrait of Kgosi Sechele and MmaKgari seated side by side." title="A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana [History of the Bechuana] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)." />
 						<figcaption class="caption-icon mobile">
 							<span class="tooltip-container">
-								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 								<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
 							</span>
 						</figcaption>
@@ -63,13 +76,14 @@
 					<div>
 						<span>
 							<h2 id="sechele">Sechele and the Record of Intercultural Encounter</h2>
-							<p class="byline">Author: <strong>Justin D. Livingstone</strong> (Queen's University Belfast)</p>
-							<p class="editor-line">Internal OMV Peer-Reviewing Editor: <strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</p>
-							<p>Date (publication and updates): <strong>2021</strong></p>
-							<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+							<ul class="publication-details">
+								<li><span>Author:</span> <strong>Justin D. Livingstone</strong> (Queen's University Belfast)</li>
+								<li><span>Internal Peer-Reviewing Editor:</span> <strong>Adrian S. Wisnicki</strong> (University of Nebraska-Lincoln)</li>
+								<li><span>Date (publication and updates):</span> <strong>2021</strong></li>
+							</ul>
 							<figcaption class="caption-icon desktop">
 								<span class="tooltip-container">
-									<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+									<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 									<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
 								</span>
 							</figcaption>
@@ -226,7 +240,7 @@
 
 							<p>This essay has examined Sechele’s efforts to navigate political change in nineteenth-century southern Africa, by highlighting his place at the forefront of BaTswana-Boer relations and exploring his campaign to publicise his grievances using missionary networks. The essay has also showcased Sechele’s position in brokering the cultural encounter between the BaTswana and Europeans, where he emerges as one who promoted Christianity in a Tswana context, actively interpreted the Bible, and was able to critically deploy its resources.</p>
 
-							<p>At the end of this discussion, however, a question remains, one especially significant in the context of <em>One More Voice</em>. To what extent does the record available actually provide access to Sechele’s voice? Investigating Sechele has involved drawing on several kinds of documents that incorporate different levels of external mediation. At one extreme is David Livingstone’s published dialogue with the rainmaker (1857, 23-25), a source explicitly shaped by a western intermediary in which the BaKwena <em>kgosi</em> (if, indeed, it is Sechele) does not appear directly by name. By emphasising the likely connection between Sechele’s interactions with Livingstone and the arguments attributed to the “rain doctor,” therefore, this essay participates in a critical effort to foreground the influence of non-western individuals on colonial records (see Wisnicki 2019), whether as interpreters, informants, or interlocutors.</p>
+							<p>At the end of this discussion, however, a question remains, one especially significant in the context of <em>One More Voice</em>. To what extent does the record available actually provide access to Sechele’s voice? Investigating Sechele has involved drawing on several kinds of documents that incorporate different levels of external mediation. At one extreme is David Livingstone’s published dialogue with the rainmaker (1857, 23-25), a source explicitly shaped by a western intermediary in which the BaKwena <em>kgosi</em> (if, indeed, it is Sechele) does not appear directly by name. By emphasising the likely connection between Sechele’s interactions with Livingstone and the arguments attributed to the “rain doctor,” therefore, this essay participates in a critical effort to foreground the influence of racialized individuals on colonial records (see Wisnicki 2019), whether as interpreters, informants, or interlocutors.</p>
 							
 							<p>If a consciously constructed dialogue represents one end of the spectrum, nineteenth-century letters in SeTswana represent the other. The <em>Mahoko</em> letters (Sechele [1883] 2006; [1884] 2006), lately translated by linguistic experts, appear to be the most unmediated of the sources consulted; at present, these may well be the only known documents by Sechele in SeTswana. This is not to say that such materials are altogether free from external influence. The overarching editorial control of a European missionary society must be recognised, and as the translators acknowledge, the “lack of a standard written Setswana at the time of the newspaper” complicates the present-day task of translating historical Tswana expressions (Mgadla and Volz 2006, xxxv, xli).</p>
 							
@@ -244,35 +258,35 @@
 
 							<p>Anonymous. (1883a) 2006. “The Flood.” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105. Cape Town: Van Riebeeck Society.</p>
 
-							<p>———. (1883b) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 193–97. Cape Town: Van Riebeeck Society.</p>
+							<p>Anonymous. (1883b) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 193–97. Cape Town: Van Riebeeck Society.</p>
 							
 							<p>Comaroff, Jean, and John Comaroff. 1991. <em>Of Revelation and Revolution: Christianity, Colonialism, and Consciousness in South Africa</em>. Vol. 1. Chicago: University of Chicago Press.</p>
 							
 							<p>Comaroff, John L., and Jean Comaroff. 1997. <em>Of Revelation and Revolution: The Dialectics of Modernity on a South African Frontier</em>. Vol. 2. Chicago: University of Chicago Press.</p>
 							
-							<p>Grobler, J.E.H. 1997. “<a href="https://doi.org/10.1080/02582479708671277">Jan Viljoen, the South African Republic and the Bakwena, 1848-1882</a>.” <em>South African Historical Journal</em> 36 (1): 240–55.</p>
+							<p>Grobler, J.E.H. 1997. “<a aria-label="External Link" href="https://doi.org/10.1080/02582479708671277">Jan Viljoen, the South African Republic and the Bakwena, 1848-1882</a>.” <em>South African Historical Journal</em> 36 (1): 240–55.</p>
 							
-							<p>Livingstone, David. 1843. Letter to Arthur Tidman. 24 June 1843. Manuscript. CWM/LMS/Livingstone Wooden Box, item 23. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000531"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1843. Letter to Arthur Tidman. 24 June 1843. Manuscript. CWM/LMS/Livingstone Wooden Box, item 23. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000531"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1845. Letter to Robert Moffat 1. 6 June 1845. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-04. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000587"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1845. Letter to Robert Moffat 1. 6 June 1845. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-04. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000587"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1846. Letter to Robert Moffat 1. 11 March 1846. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-10. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000611"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1846. Letter to Robert Moffat 1. 11 March 1846. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-10. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000611"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1848a. Letter to Robert Moffat 1. 2, [4, 5] September 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-18. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000656"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1848a. Letter to Robert Moffat 1. 2, [4, 5] September 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-18. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000656"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1848b. Letter to Robert Moffat 1. November 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-20. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000659"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1848b. Letter to Robert Moffat 1. November 1848. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-20. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000659"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1849. Letter to Robert Moffat 1. [4 May?] 1849. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-02. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000672"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1849. Letter to Robert Moffat 1. [4 May?] 1849. Manuscript. CWM/LMS/Africa/Odds - Livingstone, Box 4-02. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000672"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1852a. Letter to Arthur Tidman. 26 April 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 63. University of London, School of Oriental and African Studies, London.<em> Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000750"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1852a. Letter to Arthur Tidman. 26 April 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 63. University of London, School of Oriental and African Studies, London.<em> Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000750"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1852b. Letter to William Thompson. 12 October 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 71. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000772"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1852b. Letter to William Thompson. 12 October 1852. Manuscript. CWM/LMS/Livingstone Wooden Box, item 71. University of London, School of Oriental and African Studies, London. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000772"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1857. <em>Missionary Travels and Researches in South Africa</em>. London: John Murray. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/missionary-travels-manuscript/two-versions-missionary-travels"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1857. <em>Missionary Travels and Researches in South Africa</em>. London: John Murray. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/missionary-travels-manuscript/two-versions-missionary-travels"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. 1870. Retrospect to Be Inserted in the Journal. 10 March 1870. Manuscript. MS.10703, ff. 40-43. National Library of Scotland, Edinburgh, Scotland. <em>Also see the</em> <a href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000211"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
+							<p>Livingstone, David. 1870. Retrospect to Be Inserted in the Journal. 10 March 1870. Manuscript. MS.10703, ff. 40-43. National Library of Scotland, Edinburgh, Scotland. <em>Also see the</em> <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/catalogue?query=liv_000211"><em>edition</em></a> <em>published by</em> Livingstone Online.</p>
 							
-							<p>———. (1849) 1959. “Letter to Robert Moffat 1. 11 April 1849.” In <em>David Livingstone Family Letters</em>, edited by Isaac Schapera, 2:28–32. London: Chatto &amp; Windus.</p>
+							<p>Livingstone, David. (1849) 1959. “Letter to Robert Moffat 1. 11 April 1849.” In <em>David Livingstone Family Letters</em>, edited by Isaac Schapera, 2:28–32. London: Chatto &amp; Windus.</p>
 							
 							<p>Livingstone, Justin D. 2014. <em>Livingstone’s “Lives”: A Metabiography of a Victorian Icon</em>. Manchester: Manchester University Press.</p>
 							
@@ -282,29 +296,29 @@
 							
 							<p>Moffat, Robert U. 1921. <em>John Smith Moffat, C.M.G., Missionary, a Memoir</em>. London: John Murray.</p>
 							
-							<p>Morton, Fred. 1992. “<a href="https://doi.org/10.2307/3601632">Slave-Raiding and Slavery in the Western Transvaal After the Sand River Convention</a>.” <em>African Economic History</em> 20: 99–118.</p>
+							<p>Morton, Fred. 1992. “<a aria-label="External Link" href="https://doi.org/10.2307/3601632">Slave-Raiding and Slavery in the Western Transvaal After the Sand River Convention</a>.” <em>African Economic History</em> 20: 99–118.</p>
 							
-							<p>———. 2012. “Sechele I (c. 1810-1892).” In <em>Dictionary of African Biography</em>, edited by Emmanuel K. Akyeampong and Henry Louis Gates Jr., 5:318–19. Oxford; New York: Oxford University Press.</p>
+							<p>Morton, Fred. 2012. “Sechele I (c. 1810-1892).” In <em>Dictionary of African Biography</em>, edited by Emmanuel K. Akyeampong and Henry Louis Gates Jr., 5:318–19. Oxford; New York: Oxford University Press.</p>
 							
 							<p>Nkomazana, Fidelis. 2000a. “Earliest Southern African Biblical Interpretation: The Case of the Bakwena, Bakololo and Bangwato.” In <em>The Bible in Africa; Transactions, Trajectories, and Trends</em>, edited by Gerald O. West and Musa W. Dube, 223–35. Leiden: Brill.</p>
 							
-							<p>———. 2000b. “<a href="https://journals.co.za/action/doSearch?AllField=The+Story+of+King+Sechele+I+and+the+Missionaries">The Story of King Sechele I and the Missionaries</a>.” <em>Journal of Religion and Theology in Namibia</em> 2.1: 95–109.</p>
+							<p>Nkomazana, Fidelis. 2000b. “<a aria-label="External Link" href="https://journals.co.za/action/doSearch?AllField=The+Story+of+King+Sechele+I+and+the+Missionaries">The Story of King Sechele I and the Missionaries</a>.” <em>Journal of Religion and Theology in Namibia</em> 2.1: 95–109.</p>
 							
 							<p>Parsons, Neil. 1998. <em>King Khama, Emperor Joe, and the Great White Queen: Victorian Britain through African Eyes</em>. Chicago; London: University of Chicago Press.</p>
 							
-							<p>Ramsay, Jeff. 1991. “<a href="https://www.jstor.org/stable/i40044016">The Batswana-Boer War of 1852-53: How the Batswana Achieved Victory</a>.” <em>Botswana Notes and Records</em> 23: 193–207.</p>
+							<p>Ramsay, Jeff. 1991. “<a aria-label="External Link" href="https://www.jstor.org/stable/i40044016">The Batswana-Boer War of 1852-53: How the Batswana Achieved Victory</a>.” <em>Botswana Notes and Records</em> 23: 193–207.</p>
 							
-							<p>———. 2014. “<a href="https://doi.org/10.1080/02582473.2013.859169">Firearms in Nineteenth-Century Botswana: The Case of Livingstone’s 8-Bore Bullet</a>.” <em>South African Historical Journal</em> 66 (3): 440–69.</p>
+							<p>Ramsay, Jeff. 2014. “<a aria-label="External Link" href="https://doi.org/10.1080/02582473.2013.859169">Firearms in Nineteenth-Century Botswana: The Case of Livingstone’s 8-Bore Bullet</a>.” <em>South African Historical Journal</em> 66 (3): 440–69.</p>
 							
 							<p>Ross, Andrew. 2002. <em>David Livingstone: Mission and Empire</em>. London: Hambledon Continuum.</p>
 							
 							<p>Schapera, Isaac, ed. 1959. <em>David Livingstone: Family Letters, 1841-1856</em>. 2 vols. London: Chatto &amp; Windus.</p>
 							
-							<p>———. 1974. <em>David Livingstone: South African Papers 1849-1853</em>. Cape Town: Van Riebeeck Society.</p>
+							<p>Schapera, Isaac, ed. 1974. <em>David Livingstone: South African Papers 1849-1853</em>. Cape Town: Van Riebeeck Society.</p>
 							
 							<p>Sechele I. (1883) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 197. Cape Town: Van Riebeeck Society.</p>
 							
-							<p>———. (1884) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105–7. Cape Town: Van Riebeeck Society.</p>
+							<p>Sechele I. (1884) 2006. “To the Editor of ‘News of the Batswana.’” In <em>Words of Batswana: Letters to Mahoko a Becwana, 1883-1896</em>, edited and translated by Part T. Mgadla and Stephen C. Volz, 105–7. Cape Town: Van Riebeeck Society.</p>
 							
 							<p>Sechele I, and Samuel Edwards. 1853. “Statement of Sechele, Paramount Chief of the Bakwaina.” 21 April 1853; 30 April 1853. Publication. Cape Town. CWM/LMS/South Africa/Incoming Correspondence/Box 28/File 2/Jacket C. University of London. School of Oriental and African Studies. <em>Also see the</em> <a href="/html/transcriptions/liv_020021_TEI.html"><em>edition</em></a> <em>published by </em>One More Voice.</p>
 							
@@ -318,9 +332,9 @@
 							
 							<p>Smith, Edwin William. 1957. <em>Great Lion of Bechuanaland: The Life and Times of Roger Price, Missionary</em>. London: Independent Press.</p>
 							
-							<p>Stanley, Brian. 2014. “<a href="https://doi.org/10.1163/18748945-02702003">The Missionary and the Rainmaker: David Livingstone, the Bakwena, and the Nature of Medicine</a>.” <em>Social Sciences and Missions</em> 27: 145–62.</p>
+							<p>Stanley, Brian. 2014. “<a aria-label="External Link" href="https://doi.org/10.1163/18748945-02702003">The Missionary and the Rainmaker: David Livingstone, the Bakwena, and the Nature of Medicine</a>.” <em>Social Sciences and Missions</em> 27: 145–62.</p>
 							
-							<p>Volz, Stephen. 2008. “<a href="https://doi.org/10.1163/157006608X289657">Written on Our Hearts: Tswana and the ‘Word of God’ in the Mid-Nineteenth Century</a>.” <em>Journal of Religion in Africa</em> 38 (2): 112–40.</p>
+							<p>Volz, Stephen. 2008. “<a aria-label="External Link" href="https://doi.org/10.1163/157006608X289657">Written on Our Hearts: Tswana and the ‘Word of God’ in the Mid-Nineteenth Century</a>.” <em>Journal of Religion in Africa</em> 38 (2): 112–40.</p>
 							
 							<p>Wisnicki, Adrian S. 2019. <em>Fieldwork of Empire, 1840–1900: Intercultural Dynamics in the Production of British Expeditionary Literature.</em> New York; Abingdon, Oxon: Routledge.</p>
 							
@@ -332,13 +346,13 @@
 
 						<p><strong>Cite (MLA):</strong> Livingstone, Justin D. “Sechele and the Record of Intercultural Encounter” (2021). Adrian S. Wisnicki, peer-rev. ed. <em>One More Voice</em>, solidarity edition, 2022. <a href="/html/essays/sechele_record_encounter.html">https://onemorevoice.org/html/essays/sechele_record_encounter.html</a>.</p>
 				
-						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+						<p><strong>Rights:</strong> <a aria-label="External Link" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 					</aside>
 
 					<aside id="credits"  class="credits" aria-labelledby="image-details">
 						<h3 id="image-details">Lead Image Details</h3>
 					
-						<p id="caption"><strong>Lead image caption:</strong> A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in <em>Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana</em> [<em>History of the Bechuana</em>] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.</p>
+						<p id="caption"><strong>Lead image caption:</strong> A.J. Wookey, “Kgosi Sechele Le MmaKgari,” in <em>Diñwaò Leha e Le Dipolèlò Kaga Dicò Tsa Secwana</em> [<em>History of the Bechuana</em>] (Vryburg, Cape Colony: The South African District Committee of the London Missionary Society at the Book Room Tiger Kloof Native Institution, 1913), frontispiece. Public domain image. Courtesy of University of London. School of Oriental and African Studies, London. <a aria-label="External Link" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.</p>
 						
 						<p><strong>Lead image commentary:</strong> This is one of <a href="/visual_materials.html#liv_021057">several historical images</a> documented and presented by <em>One More Voice</em> of Sechele I, <em>kgosi</em> of the BaKwena state between c.1830 and 1892 in what is now Botswana. It offers a good instance of how the project can bring together primary texts with relevant visual materials. Sechele is pictured here with his wife, MmaKgari, which translates from SeTswana as “mother of Kgari.” This individual is most likely the widow of Matsheng (former <em>kgosi</em> of the BaNgwato, a community within the larger BaTswana ethnic group in southern Africa), whom Sechele married later in life (see Edwards 1957, 286). Sechele was previously married to another individual bearing the name MmaKgari, whom he divorced following his conversion to Christianity in the late 1840s. One other former wife, Mokgokong, who was the mother of Sechele’s son Kgari, may also have been known by the same title (see Schapera 1960, 298-99). However, since this photograph dates from the late-nineteenth century, neither of these women could be the individual pictured. In the photograph, Sechele is attired in a combination of European and BaTswana dress. Such an amalgamation underscores his position at the meeting point of cultures in a period of change in nineteenth-century southern Africa. The clothing chosen for this portrait may also indicate that Sechele sought to represent himself, and his political authority, by combining items associated with both European and Tswana society (cf. Comaroff and Comaroff 1997, 244).</p>
 					</aside>
@@ -352,13 +366,13 @@
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
@@ -368,7 +382,7 @@
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
 			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0018";document.body.appendChild(element)});
 			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Site Map | One More Voice</title>
-		<meta name="description" content="Provides a skeletal list of the pages that constitute One More Voice, which focuses on recovering non-European contributions to 19th British colonial archives."/>
+		<meta name="description" content="Provides a skeletal list of the pages of One More Voice, a  project that focuses on recovering the work of racialized creators from British colonial archives."/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="index, follow"/>
 		<meta name="theme-color" content="#204A79"/>
@@ -11,19 +11,20 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 		<link rel="manifest" href="/site.webmanifest"/>
-		<link rel="preload" as="style" href="/css/critical.css?=newVers_0014" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="/css/style.css?=newVers_0013" onload="this.rel='stylesheet'"/>
-		<link rel="preconnect" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-		<link rel="preconnect" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
-		<link rel="preconnect" as="script" href="/js/scripts.js?=newVers_0012"/>
-		<!-- <link rel="preconnect" as="script" href="/js/accordion.js"/> -->
-		<link rel="preconnect" as="script" href="/js/tooltips.js"/>
-		<link rel="preconnect" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"/>
+		<link rel="preload" as="style" href="/css/critical.css?=newVers_0022" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="preload" as="script" href="/js/scripts.js?=newVers_0018"/>
+		<!-- <link rel="preload" as="script" href="/js/accordion.js"/> -->
+		<!-- <link rel="preload" as="script" href="/js/tooltips.js"/> -->
+		<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0014"/>
+		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
 		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
+		<style>.image-wrapper::after{padding-bottom:calc((586/490)*100%)}</style>
 	</head>
 
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
@@ -31,7 +32,17 @@
 
 	<body class="essay documents" id="body">
 
-		<header>
+		<header id="header">
+			<!-- #skip adapted from https://webaim.org/techniques/skipnav/ -->
+			<div id="skip">
+				<a href="#main" id="skiptocontent" tabindex="0">skip to main</a>
+			</div>			
+			<nav class="breadcrumbs">
+				<ul>
+					<li id="level-1"><a href="/">Home</a></li>
+					<li id="level-2">Site Map</li>
+				</ul>
+			</nav>
 			<div class="nav-container" data-include="header">
 				<nav class="fallback">
 					<span class="logo-container">
@@ -41,20 +52,21 @@
 						</a>
 					</span>
 					<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
-						<i class="fa fa-bars" aria-label="Menu icon" aria-hidden="true"></i>
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 				</nav>
 			</div>
+			<div id="overlay-menu" class="overlay" data-include="overlay"></div>
 		</header>
 
 		<main id="main" aria-labelledby="site-map">
 			<section class="page-details vertical">
 				<figure class="image-wrapper">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
-					<img width="490" height="586" src="/img/main-pages/liv_023011_0001_deriv-976px.jpg" srcset="/img/main-pages/liv_023011_0001_deriv-318px.jpg 318w, /img/main-pages/liv_023011_0001_deriv-334px.jpg 334w,	/img/main-pages/liv_023011_0001_deriv-488px.jpg 488w, /img/main-pages/liv_023011_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023011_0001_deriv-668px.jpg 668w, /img/main-pages/liv_023011_0001_deriv-976px.jpg 976w" sizes="(min-width: 1700px) 784px, (min-width: 1080px) calc(43.5vw + 53px), 478px" alt="Jacob Wainwright beside coffin; Livingstone’s tombstone; Livingstone’s funeral at Westminster Abbey." title="Anonymous, “Jacob Wainwright with David Livingstone’s Coffin and Some of Livingstone’s Travelling Trunks on Board the Ship ‘Malwa,’ 1874; Inscription from David Livingstone’s Tombstone in Westminster Abbey; David Livingstone’s Funeral at Westminster Abbey, 1874” (Magic lantern slide, c.1900), Library, LIB G/3, t0338, David Livingstone Centre, Blantyre. Copyright David Livingstone Centre. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust." />
+					<img width="490" height="586" src="/img/main-pages/liv_023011_0001_deriv-976px.jpg" srcset="/img/main-pages/liv_023011_0001_deriv-318px.jpg 318w, /img/main-pages/liv_023011_0001_deriv-334px.jpg 334w,	/img/main-pages/liv_023011_0001_deriv-488px.jpg 488w, /img/main-pages/liv_023011_0001_deriv-636px.jpg 636w, /img/main-pages/liv_023011_0001_deriv-668px.jpg 668w, /img/main-pages/liv_023011_0001_deriv-976px.jpg 976w" sizes="(min-width: 1600px) 768px, (min-width: 992px) calc(44.26vw + 24px), (min-width: 768px) 698px, 100vw" alt="Jacob Wainwright beside coffin; Livingstone’s tombstone; Livingstone’s funeral at Westminster Abbey." title="Anonymous, “Jacob Wainwright with David Livingstone’s Coffin and Some of Livingstone’s Travelling Trunks on Board the Ship ‘Malwa,’ 1874; Inscription from David Livingstone’s Tombstone in Westminster Abbey; David Livingstone’s Funeral at Westminster Abbey, 1874” (Magic lantern slide, c.1900), Library, LIB G/3, t0338, David Livingstone Centre, Blantyre. Copyright David Livingstone Centre. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust." />
 					<figcaption class="caption-icon mobile">
 						<span class="tooltip-container">
-							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+							<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-1" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 							<span id="caption-icon-1" role="tooltip" class="hidden">Image details</span>
 						</span>
 					</figcaption>
@@ -64,12 +76,12 @@
 					<span>	
 						<h2 id="site-map">Site Map</h2>
 						<p class="italic">A skeletal map of the entire <em>One More Voice</em> site</p>
-						<p>Date (publication and updates): <strong>2020-22</strong></p>
-						<!-- <p class="italic">The “Site Map” allows visitors to browse the site. Desktop visitors can use <span class="keycap">⌘</span> + <span class="keycap">F</span> (Mac) or <span class="keycap">Ctrl</span> + <span class="keycap">F</span> (PC/Linux) to carry out simple keyword searches on the page, while mobile visitors can carry out such searches using their browser's “Find in Page” feature.</p> -->
-						<a class="action-button" href="#content" aria-label="Go to main content">Read More <i class="fas fa-book-open" aria-label="Open book icon" aria-hidden="true"></i></a>
+						<ul class="publication-details">
+							<li><span>Date (publication and updates):</span> <strong>2020-22</strong></li>
+						</ul>
 						<figcaption class="caption-icon desktop">
 							<span class="tooltip-container">
-								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-label="Information icon" aria-hidden="true"></i></a>
+								<a class="caption" href="#credits" aria-label="Go to image details" aria-describedby="caption-icon-2" data-tooltip-trigger><i class="fa fa-info-circle" aria-hidden="true"></i></a>
 								<span id="caption-icon-2" role="tooltip" class="hidden">Image details</span>
 							</span>
 						</figcaption>
@@ -102,7 +114,193 @@
 									<summary>Historical Materials</summary>
 									<ol style="list-style: upper-alpha;">
 										<li>[<a href="/materials.html">Main Page</a>]</li>
-										
+
+										<li>
+											<details>
+												<summary>“BIPOC Voices in the Victorian Periodical Press”</summary>
+												<ol>
+													<li>[<a href="/html/bipoc-voices/bv-home.html">Main Page</a>]</li>
+
+													<li><a href="/html/bipoc-voices/bv-introduction.html">Project Introduction</a></li>
+
+													<li><a href="/html/bipoc-voices/bv-contributors.html">Project Contributors</a></li>
+
+													<li><a href="/html/bipoc-voices/bv-periodical-pieces.html">Periodical Pieces</a></li>
+
+													<li><a href="/html/bipoc-voices/bv-metadata.html">Metadata and Documentation</a></li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-bindas-1.html">Editing, Education, and Imitation in Indian Missionary Conversion Accounts</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-spoor-1.html">Representing Indigenous Perspectives on Missionary Education in Victorian Periodicals</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-goh.html">Manipulating Indian Voices in Victorian Missionary Periodicals</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-bleick.html">African Representation in Missionary Periodicals</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-spoor-2.html">Racialized “Authority” and “Civilization” in Victorian Missionary Periodicals</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-davis.html">Reading for BIPOC Creators in Victorian Missionary Periodicals</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-kwok.html">The Church Missionary Gleaner and the Multifaceted Portrayal of Colonial Christianity</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-essay-bindas-2.html">Visiting the Regenstein Library, Chicago, August 2022</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-sources-bleick.html">Sources on African Representation in Missionary Periodicals</a>”</li>
+
+													<li>“<a href="/html/bipoc-voices/essays/bv-sources-spoor-1.html">Sources on British Victorian Missionary Work and Periodicals</a>”</li>
+
+													<li>“Recommendations for Research on Racialized Voices in Colonial Archives”:
+														&nbsp; 
+														<a href="/pdf/bipoc-voices/SOAS-recommendations.pdf" title="This link opens a PDF document.">PDF</a>
+														&nbsp;|&nbsp;
+														<a href="/pdf/bipoc-voices/SOAS-recommendations.docx" title="This link opens a Word document.">Word</a>	
+													</li>
+
+													<li>“Recommendations for Publishing BIPOC Voices in Victorian Missionary Periodicals”:
+														&nbsp; 
+														<a href="pdf/bipoc-voices/AMD-recommendations.pdf" title="This link opens a PDF document.">PDF</a>
+														&nbsp;|&nbsp;
+														<a href="pdf/bipoc-voices/AMD-recommendations.docx" title="This link opens a Word document.">Word</a>	
+													</li>
+
+													<li><a aria-label="External Link" href="https://github.com/livingstoneonline/onemorevoice/tree/master/txt/bipoc-voices-corpus">Corpus of BIPOC Voices in the Victorian Periodical Press</a> (external site)</li>
+
+													<li>Periodical Pieces (Individual Pieces)
+														<ol style="list-style: lower-alpha;">
+															<li>Anonymous; [South African Missionary Society]; Jan; Karolus. “<a href="html/bipoc-voices/digital-editions-soas/liv_025087_HTML.html">South African Mission: Letter of a Bastard Hottentot | Letter of Another Bastard Hottentot</a>.” 1802</li>
+															
+															<li>[John Philip]; Brownlee. “<a href="html/bipoc-voices/digital-editions-soas/liv_025015_HTML.html">Caffres: Extract of a Letter From Mr. Brownlee, (Who Was Originally Sent Out by the London Missionary Society in 1816, but Who is Now a Missionary to the Caffres, Under the Direction of the Colonial Government) to Dr. Philip, Who Introduces It to the Secretary as Follows</a>.” July 1822</li>
+															
+															<li>[John] Philip; Edward Edwards; Anonymous. “<a href="html/bipoc-voices/digital-editions-soas/liv_025017_HTML.html">Africa: Character of Africaner</a>.” December 1823</li>
+															
+															<li>Anonymous; John Owen's Reader; Henry Venn's Reader; George Burder's Reader. “<a href="html/bipoc-voices/digital-editions-soas/liv_025019_HTML.html">Combooconum: Extracts From the Journals of Native Teachers, Employed in the Vicinity of Combooconum, From July to December; 1825 | From the Journal of John Owen's Reader | Journal of Henry Venn's Reader | Journal of George Burder's Reader</a>.” August 1826</li>
+															
+															<li>Anonymous; William Clapham's Reader; William Cooper's Reader; Inverkeithing's Reader. “<a href="html/bipoc-voices/digital-editions-soas/liv_025020_HTML.html">East Indies. Combooconum: Extracts From the Journals of Native Teachers, Employed in the Vicinity of Combooconum | From the Journal of William Clapham's Reader | From the Journal of William Cooper's Reader | Journal of the Inverkeithing's Reader</a>.” September 1826</li>
+															
+															<li>Anonymous; Chenjee; Tooloosee; Lutchmee. “<a href="html/bipoc-voices/digital-editions-soas/liv_025029_HTML.html">India. Native Female Education</a>.” September 1849</li>
+															
+															<li>Anonymous; Reweti Maika; David Taiwanga. “<a href="html/bipoc-voices/digital-editions-amd/liv_026001_HTML.html">New Zealand</a>.” April 1850</li>
+															
+															<li>Anoymous; Poonapun; Authautchee. “<a href="html/bipoc-voices/digital-editions-soas/liv_025032_HTML.html">India. Bellary: The Autobiography of Poonapun, a Heathen, Baptized on February 17, 1850, by the Name of Nathaniel | Autobiography of Authautchee, (Wife of Nathaniel,) Baptized on February 17, 1850</a>.” November 1850</li>
+															
+															<li>Anonymous; Adam Kok; Willem Uithaalder. “<a href="html/bipoc-voices/digital-editions-soas/liv_025034_HTML.html">The Hottentot Rebellion: Letter From Adam Kok to Major Warden | Letter From Uithaalder to Adam Kok | Reply of Adam Kok</a>.” December 1851</li>
+															
+															<li>Anonymous; R. Taylor; Tamehana Te Rauparaha; Matini Wiwi. “<a href="html/bipoc-voices/digital-editions-amd/liv_026003_HTML.html">New-Zealand Chiefs in Committee Drawing Up a Reply to the Society's Jubilee Letter</a>.” April 1851</li>
+															
+															<li>Anonymous; Anonymous. “<a href="html/bipoc-voices/digital-editions-amd/liv_026005_HTML.html">The Amazons: The Amazons Summon Gezo to the War | Gezo's Answer | The War Song of the Amazons | Abbeokuta's Resolution | The Native Christian's Prayer</a>.” May 1851</li>
+															
+															<li>Anonymous; Narain Rao. “<a href="html/bipoc-voices/digital-editions-amd/liv_026006_HTML.html">A Converted Brahmin's Account of Himself</a>.” May 1851</li>
+															
+															<li>Anonymous; W. Colenso; Anonymous. “<a href="html/bipoc-voices/digital-editions-amd/liv_026007_HTML.html">Karepa, of Te Hawera</a>.” August 1851</li>
+															
+															<li>Anonymous; Thomas King. “<a href="html/bipoc-voices/digital-editions-amd/liv_026008_HTML.html">Stedfast Faith—Mark X. 29, 30</a>.” September 1851</li>
+															
+															<li>Anonymous; John Dennis Blonde. “<a href="html/bipoc-voices/digital-editions-amd/liv_026011_HTML.html">The Outcast from China Brought Safely Home</a>.” October 1851</li>
+															
+															<li>Anonymous; [W. Clarkson]; Gungaram; "Native Catechist". “<a href="html/bipoc-voices/digital-editions-amd/liv_026014_HTML.html">The Hindus</a>.” April 1852</li>
+															
+															<li>Anoynymous; Anonymous. “<a href="html/bipoc-voices/digital-editions-amd/liv_026012_HTML.html">Indian Snake-Catcher</a>.” March 1852</li>
+															
+															<li>Philip Chunder Doss; Elijah Mudul; Nudia Chund Doss; Boistom Doss; Abraham Buxy; Gonesh Chundroo; Boycontoo Chundro; Thomas Christian; William Buckey; Timothy Christian. “<a href="html/bipoc-voices/digital-editions-amd/liv_026015_HTML.html">Letter to the Committee from the Bereaved Flock of the Rev. J.J. Weitbrecht</a>.” June 1852</li>
+															
+															<li>Anonymous; Tamahana Te Rauparaha. “<a href="html/bipoc-voices/digital-editions-amd/liv_026018_HTML.html">Tamahana Te Rauparaha</a>.” September 1852</li>
+															
+															<li>Anonymous; Yonan. “<a href="html/bipoc-voices/digital-editions-amd/liv_026016_HTML.html">Adult Sunday-Schools Among the Nestorians</a>.” October 1852</li>
+															
+															<li>Anonymous; Trudo Audato. “<a href="html/bipoc-voices/digital-editions-amd/liv_026017_HTML.html">The Dahomians</a>.” October 1852</li>
+															
+															<li>Anonymous; Tamahana Te Rauparaha. “<a href="html/bipoc-voices/digital-editions-amd/liv_026019_HTML.html">Tamahana Te Rauparaha</a>.” October 1852</li>
+															
+															<li>Anonymous; Tamahana Te Rauparaha. “<a href="html/bipoc-voices/digital-editions-amd/liv_026020_HTML.html">Tamahana Te Rauparaha</a>.” November 1852</li>
+															
+															<li>Anonymous; Tamahana Te Rauparaha. “<a href="html/bipoc-voices/digital-editions-amd/liv_026021_HTML.html">Tamahana Te Rauparaha</a>.” December 1852</li>
+															
+															<li>Selim Aga. “<a href="html/bipoc-voices/additional-texts/liv_025997_HTML.html">Africa Considered in its Social and Political Condition [...]: Africa Considered in Its Social and Political Condition With a Plan for the Amelioration of Its Inhabitants</a>.” May 1853</li>
+															
+															<li>Anonymous; John Huki. “<a href="html/bipoc-voices/digital-editions-amd/liv_026022_HTML.html">The Native Institution at Waikato Heads, New Zealand</a>.” June 1853</li>
+															
+															<li>Anonymous; John Devasagayam. “<a href="html/bipoc-voices/digital-editions-amd/liv_026023_HTML.html">Obituary of Arokkia Nadan</a>.” July 1853</li>
+															
+															<li>Anonymous; Jagadishwar Bhattachargya. “<a href="html/bipoc-voices/digital-editions-amd/liv_026024_HTML.html">Trials of Converts in India</a>.” September 1853</li>
+															
+															<li>Anonymous; T[homas] King. “<a href="html/bipoc-voices/digital-editions-amd/liv_026025_HTML.html">Destructive Fire at Abbeokuta</a>.” November 1853</li>
+															
+															<li>Anonymous; James White; C.A. Gollmer. “<a href="html/bipoc-voices/digital-editions-amd/liv_026026_HTML.html">"What Have I to Do Any More with Idols?"</a>.” June 1854</li>
+															
+															<li>Anonymous; S[amuel] Crowther, jun.. “<a href="html/bipoc-voices/digital-editions-amd/liv_026027_HTML.html">Confessions of an Idolater</a>.” July 1854</li>
+															
+															<li>Anonymous; Abdool Meseeh. “<a href="html/bipoc-voices/digital-editions-amd/liv_026009_HTML.html">Abdool Meseeh's Hymn</a>.” March 1856</li>
+															
+															<li>Anonymous; Sadaraka. “<a href="html/bipoc-voices/digital-editions-soas/liv_025038_HTML.html">South Seas.—Mangaia</a>.” January 1870</li>
+															
+															<li>Anonymous; [W.J. Davis]; James Lewana. “<a href="html/bipoc-voices/digital-editions-soas/liv_025194_HTML.html">Graham's Town District</a>.” September 1872</li>
+															
+															<li>Anonymous; Charles Pamla; Boyce Mama. “<a href="html/bipoc-voices/digital-editions-soas/liv_025195_HTML.html">South Africa. Graham's Town District: Extracts From Letters of the Rev. Charles Pamla, to the Rev. Robert Lamplough, Graham's Town, Dated May and July, 1872 | Letter From Rev. Charles Pamla to Rev. W. B. Boyce, Dated Fernley, Tsomo, July 26th, 1872</a>.” November 1872</li>
+															
+															<li>Anonymous; Imaduddin. “<a href="html/bipoc-voices/digital-editions-amd/liv_026028_HTML.html">The Rev. Imadudden, of Umritsur</a>.” March 1874</li>
+															
+															<li>A. E. Moule; Dziao. “<a href="html/bipoc-voices/digital-editions-amd/liv_026029_HTML.html">Praying for Rain in China: Plain Directions as to Prayer for Rain</a>.” April 1874</li>
+															
+															<li>[M.E.J.]; Henry Budd. “<a href="html/bipoc-voices/digital-editions-amd/liv_026030_HTML.html">Day-Spring in the Far West. Sketches of Mission Work in British North America: Extension of the Mission Westward</a>.” April 1874</li>
+															
+															<li>Selim Aga. “<a href="html/bipoc-voices/additional-texts/liv_025998_HTML.html">My Parentage and Early Career as a Slave</a>.” May 1874</li>
+															
+															<li>Sargent; Anonymous. “<a href="html/bipoc-voices/digital-editions-amd/liv_026032_HTML.html">The False and the True Vasanta Rayar. A Narrative of Religious Excitement in Southern India Ten Years Ago: Proclamation of Vasanta Rayar. Truth Victorious. Glorious News of the True Vasanta Rayar</a>.” May 1874</li>
+															
+															<li>Anonymous; F.J. de Rozario. “<a href="html/bipoc-voices/digital-editions-amd/liv_026035_HTML.html">Gleanings from Recent Letters. Preaching on a Tricycle</a>.” June 1874</li>
+															
+															<li>Anonymous; Daniel Olubi. “<a href="html/bipoc-voices/digital-editions-amd/liv_026033_HTML.html">Gleanings from Recent Letters. Baptism and Death of an Aged Yoruba Woman</a>.” July 1874</li>
+															
+															<li>Anonymous; Matiu Taupaki. “<a href="html/bipoc-voices/digital-editions-amd/liv_026034_HTML.html">Gleanings from Recent Letters. Letter from a Maori Clergyman</a>.” August 1874</li>
+															
+															<li>Anonymous; [John Cain]; A.S.. “<a href="html/bipoc-voices/digital-editions-amd/liv_026036_HTML.html">A Hindu's Narrative of His Own Conversion</a>.” September 1874</li>
+															
+															<li>Anonymous; [L. Nicholson]; Nathaniel Henry Boston. “<a href="html/bipoc-voices/digital-editions-amd/liv_026037_HTML.html">Henry Boston, African Native Pastor: A Brief Sketch of the Life and Death of the Late Rev. Henry Boston, First Native Minister of the Bullom Mission</a>.” November 1874</li>
+															
+															<li>[M.E.J.]; Henry Budd. “<a href="html/bipoc-voices/digital-editions-amd/liv_026038_HTML.html">Day-Spring in the Far West. Sketches of Mission Work in British North America: Results of the Work</a>.” November 1874</li>
+															
+															<li>Anonymous; Anonymous. “<a href="html/bipoc-voices/digital-editions-amd/liv_026040_HTML.html">The Missionary Bee-Hive</a>.” November 1874</li>
+															
+															<li>Anonymous; Jacob Walker. “<a href="html/bipoc-voices/digital-editions-soas/liv_025049_HTML.html">Jamaica—The Native Pastorate</a>.” December 1874</li>
+															
+															<li>Anonymous; Nathaniel M. Bull. “<a href="html/bipoc-voices/digital-editions-amd/liv_026041_HTML.html">The "Gleaner" in the Timneh Country</a>.” December 1874</li>
+															
+															<li>Anonymous; Henry Johnson. “<a href="html/bipoc-voices/digital-editions-amd/liv_026042_HTML.html">A Negro Clergyman at Nazareth</a>.” December 1874</li>
+															
+															<li>Anonymous; James White; Anonymous Yoruba Market Women. “<a href="html/bipoc-voices/digital-editions-amd/liv_026043_HTML.html">Gleanings from Recent Letters. A Conversation with Yoruba Market Women</a>.” January 1875</li>
+															
+															<li>Anonymous; Ranavolmanjaka; Rainilaiarivony. “<a href="html/bipoc-voices/digital-editions-soas/liv_025050_HTML.html">Rearrangements of the Madagascar Mission: Royal Proclamation on Slavery</a>.” February 1875</li>
+															
+															<li>Anonymous; G. Krishnayya. “<a href="html/bipoc-voices/digital-editions-amd/liv_026044_HTML.html">Gleanings from Recent Letters. A Hindu Clergyman and his Heathen Father</a>.” February 1875</li>
+															
+															<li>Anonymous; [Vaughan]; Anonymous. “<a href="html/bipoc-voices/digital-editions-amd/liv_026045_HTML.html">"Not Far From the Kingdom of God"</a>.” February 1875</li>
+															
+															<li>Anonymous; Abdul Messeeh. “<a href="html/bipoc-voices/digital-editions-amd/liv_026046_HTML.html">The First Native Clergyman in India</a>.” March 1875</li>
+															
+															<li>Anonymous; Daniel Olubi. “<a href="html/bipoc-voices/digital-editions-amd/liv_026047_HTML.html">Gleanings from Recent Letters. The Gospel Preached by a Captive Yoruba Girl</a>.” March 1875</li>
+															
+															<li>Anonymous; Samuel Johnson; Samuel Cole; T.B. Wright; Samuel Pearce; D. Williams. “<a href="html/bipoc-voices/digital-editions-amd/liv_026049_HTML.html">Sick and Dying Christians in Yoruba</a>.” April 1875</li>
+															
+															<li>Anonymous; D. Williams. “<a href="html/bipoc-voices/digital-editions-amd/liv_026052_HTML.html">Gleanings from Recent Letters. How Collections are Made at Abeokuta</a>.” April 1875</li>
+															
+															<li>Richard F. Burton; Selim Aga. “<a href="html/bipoc-voices/additional-texts/liv_025999_HTML.html">A Trip Up the Congo or Zaire River</a>.” 1 July 1875</li>
+															
+															<li>Anonymous; Nee Sima. “<a href="html/bipoc-voices/digital-editions-soas/liv_025052_HTML.html">Japan: Letter From a Native Missionary</a>.” January 1876</li>
+															
+															<li>J.M. Dwane. “<a href="html/bipoc-voices/digital-editions-soas/liv_025241_HTML.html">South Africa: Graham's Town District.—extract of a Letter From the Rev. J. M. Dwane, Dated Port Elizabeth, February 5th, 1877</a>.” May 1877</li>
+															
+															<li>Anonymous; Ranavolmanjaka. “<a href="html/bipoc-voices/digital-editions-soas/liv_025057_HTML.html">Madagascar: The Queen's Proclamation</a>.” October 1877</li>
+															
+															<li>Anonymous; Diphukwe. “<a href="html/bipoc-voices/digital-editions-soas/liv_025059_HTML.html">Central South Africa: Diphukwe's Address</a>.” February 1878</li>
+															
+															<li>Anonymous; Robert N. Mashaba. “<a href="html/bipoc-voices/digital-editions-soas/liv_025280_HTML.html">A Letter from Robert Mashaba</a>.” January 1904</li>
+														</ol>
+													</li>
+
+												</ol>
+											</details>
+										</li>
+
 										<li>
 											<details>
 												<summary>Recovered Texts</summary>
@@ -617,7 +815,7 @@
 												<summary>Thematic Initiatives</summary>
 												<ol style="list-style: lower-alpha;">
 													<li>[<a href="/initiatives.html">Main Page</a>]</li>
-													<li><a href="https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus">Corpus of Africa-Centered Literary Works, 1830-1930</a> (external site)</li>
+													<li><a aria-label="External Link" href="https://github.com/livingstoneonline/onemorevoice/tree/master/txt/africa-corpus">Corpus of Africa-Centered Literary Works, 1830-1930</a> (external site)</li>
 												</ol>
 											</details>
 										</li>
@@ -655,12 +853,11 @@
 									<li><a href="/analytical_priorities.html">Analytical Priorities</a></li>
 									<li><a href="/project_design.html">Project Design</a></li>
 									<li><a href="/collaboration.html">Collaboration</a></li>
+									<li><a href="/contributors.html">Contributors</a></li>
 									<li><a href="/acknowledgments.html">Acknowledgments</a></li>
 								</ol>
 								</details>
 							</li>
-
-							<li><a href="/contributors.html">Contributors</a></li>
 							
 							<li><a href="/site_map.html">Site Map</a></li>
 
@@ -705,9 +902,9 @@
 								<details>
 								<summary>External Sites</summary>
 								<ol style="list-style: upper-alpha;">
-									<li><a href="mailto:awisnicki@yahoo.com">Email/Contact</a></li>
-									<li><a href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a> </li>
-									<li><a href="https://www.zotero.org/groups/2578736/one_more_voice/library/">Zotero Library</a></li>
+									<li><a aria-label="External Client" href="mailto:awisnicki@yahoo.com">Email/Contact</a></li>
+									<li><a aria-label="External Link" href="https://github.com/livingstoneonline/onemorevoice/">Github Repo</a> </li>
+									<li><a aria-label="External Link" href="https://www.zotero.org/groups/2578736/one_more_voice/library">Zotero Library</a></li>
 								</ol>
 								</details>
 							</li>
@@ -719,7 +916,7 @@
 
 						<p><strong>Cite (MLA):</strong> “Site Map” (2020-22). <em>One More Voice</em>, solidarity edition, 2022, <a href="/site_map.html">https://onemorevoice.org/site_map.html</a>.</p>
 
-						<p><strong>Rights:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
+						<p><strong>Rights:</strong> <a aria-label="External Link" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></p>
 
 					</aside>
 
@@ -728,7 +925,7 @@
 
 						<p id="caption"><strong>Lead image caption:</strong> Anonymous, “Jacob Wainwright with David Livingstone’s Coffin and Some of Livingstone’s Travelling Trunks on Board the Ship ‘Malwa,’ 1874; Inscription from David Livingstone’s Tombstone in Westminster Abbey; David Livingstone’s Funeral at Westminster Abbey, 1874” (Magic lantern slide, c.1900), Library, LIB G/3, t0338, David Livingstone Centre, Blantyre. Copyright David Livingstone Centre. Object images used by permission. May not be reproduced without the express written consent of the National Trust for Scotland, on behalf of the Scottish National Memorial to David Livingstone Trust.</p>
 						
-						<p><strong>Lead image commentary:</strong> <em>One More Voice</em> publishes a <a href="/texts.html#wainwright">selection of textual items</a> associated with Wainwright, a British-educated African traveler who accompanied Livingstone during the last two years of the latter's <a href="https://livingstoneonline.org/in-his-own-words/livingstones-final-manuscripts-1865-1873">final journey.</a> These include an <a href="/html/transcriptions/liv_000017_TEI.html">item list</a> added to one of Livingstone’s diaries, a set of original diary pages (<a href="/html/transcriptions/liv_000074_TEI.html">first part</a>, <a href="/html/transcriptions/liv_000075_TEI.html">second part</a>) that <a href="https://www.theguardian.com/science/2019/apr/24/diary-of-explorer-david-livingstone-african-attendant-jacob-wainwright-published">only surfaced recently</a>, a handful of letters, an <a href="/html/transcriptions/liv_020014_TEI.html">inscription</a> carved in a tree trunk, and a previously overlooked <a href="/html/transcriptions/liv_020013_TEI.html">autobiographical narrative</a> from the Victorian periodical press. The items have never before been gathered in such a fashion and, in fact, represent a rare instance where such a set of African-authored texts, as produced by someone associated with a significant Victorian-era British explorer, <em>can</em> be assembled. The fact that most of the items survive in Wainwright’s hand makes them even more valuable as a historical resource, as comparable items are often found only in mediated, third-party versions.</p>
+						<p><strong>Lead image commentary:</strong> <em>One More Voice</em> publishes a <a href="/texts.html#wainwright">selection of textual items</a> associated with Wainwright, a British-educated African traveler who accompanied Livingstone during the last two years of the latter's <a aria-label="External Link" href="https://livingstoneonline.org/in-his-own-words/livingstones-final-manuscripts-1865-1873">final journey.</a> These include an <a href="/html/transcriptions/liv_000017_TEI.html">item list</a> added to one of Livingstone’s diaries, a set of original diary pages (<a href="/html/transcriptions/liv_000074_TEI.html">first part</a>, <a href="/html/transcriptions/liv_000075_TEI.html">second part</a>) that <a aria-label="External Link" href="https://www.theguardian.com/science/2019/apr/24/diary-of-explorer-david-livingstone-african-attendant-jacob-wainwright-published">only surfaced recently</a>, a handful of letters, an <a href="/html/transcriptions/liv_020014_TEI.html">inscription</a> carved in a tree trunk, and a previously overlooked <a href="/html/transcriptions/liv_020013_TEI.html">autobiographical narrative</a> from the Victorian periodical press. The items have never before been gathered in such a fashion and, in fact, represent a rare instance where such a set of African-authored texts, as produced by someone associated with a significant Victorian-era British explorer, <em>can</em> be assembled. The fact that most of the items survive in Wainwright’s hand makes them even more valuable as a historical resource, as comparable items are often found only in mediated, third-party versions.</p>
 					</aside>
 				</article>
 				<div class="decoration"></div>
@@ -740,13 +937,13 @@
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0013"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous"/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0003';$(this).load(file)})});
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
 		</script>
 		<script>
 			//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
@@ -756,7 +953,7 @@
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
 			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0012";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0018";document.body.appendChild(element)});
 			// $(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/tooltips.js";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>

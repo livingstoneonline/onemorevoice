@@ -2950,8 +2950,12 @@ img + p.caption-text,
 .double-image + p.caption-text{
 	font-size: .9rem;
 	line-height: 1.6rem;
-	margin: 10px 0 2em 0;
+	margin: 10px 0 1em 0;
 	padding: 0;
+}
+p.caption-text + p.caption-text{
+	font-size: .9rem;
+	line-height: 1.6rem;
 }
 /* adds margin to double image captions */
 .caption-text > span:not(:last-child){

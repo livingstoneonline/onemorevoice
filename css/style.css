@@ -47,6 +47,7 @@ Table of Contents
 29. Site Map
 30. Site Sections
 31. 404 Page
+32. BIPOC Voices
 */
 
 /*--------------------------------------*/
@@ -71,6 +72,7 @@ Table of Contents
 (darker blue) #305056; (contrast checked)
 (darkest blue) #243D42;
 
+(gray-green): #697c6f;
 (olive green) #a4b48b;
 (dark green) #3c5e58;
 
@@ -78,16 +80,18 @@ Table of Contents
 (yellow) #dcd3a6;
 (lighter orange) #F1D7B6; (contrast checked)
 (orange) #e3b382;
+(lighter red) #984d55;
 (red) #743B41; (contrast checked)
 (dark brown) #7d4d1c; (contrast checked)
 (dark brown, for a links) #694017 (contrast checked)
 
 (super light gray) #ededed;
 (light gray) #E7E9E7;
+(lighter gray): #d9d9d9;
 (light mid-gray) #bdc2bd;
-(gray-green): #697c6f;
+(ligh mid-gray) #a1a1a1;
 (mid-gray) #737d73;
-(dark blue in grayscale, made lighter): #737373
+(dark blue in grayscale, made lighter): #737373;
 (dark blue in grayscale) #575757;
 (dark gray) #4d5b51; (contrast checked)
 
@@ -195,6 +199,7 @@ body{
 button{
 	cursor: pointer;
 	-webkit-appearance: button;
+	appearance: button;
 }
 .mobile{
 	display: inherit;
@@ -319,6 +324,7 @@ h2{
 }
 @media only screen and (min-width: 1200px){
 	.page-details h2{
+		margin-top: .5rem;
 		margin-bottom: 1.5rem;
 	}
 }
@@ -575,7 +581,8 @@ article > .toc + section{
 }
 @media only screen and (min-width: 768px){
 	.home .credits:first-of-type,
-	.categories .credits:first-of-type{
+	.categories .credits:first-of-type,
+	.editions .credits:first-of-type{
 		margin-top: 2rem;
 	}
 	.content.recovered + .content .credits:first-child{
@@ -884,11 +891,12 @@ article > .toc + section{
 /* 11. Middle of Pages */
 
 /* main container "sections" appear on:
-books & texts + essays/materials/documents */
+books & texts + essays/materials/documents/editions */
 /* padding */
-.categories .sections{
+.categories .sections,
+.editions .sections{
 	padding: 1rem 1rem 0;
-}
+} 
 @media only screen and (min-width: 768px){
 	.categories .sections{
 		padding: 0 0 1rem;
@@ -904,6 +912,9 @@ books & texts + essays/materials/documents */
 	.categories .sections{
 		padding: 2rem 1rem;
 	}
+	.editions .sections{
+		padding: 1rem 1rem 2rem;
+	}
 	#books,
 	#texts,
 	#films{
@@ -914,6 +925,9 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 1200px){
+	.editions .sections{
+		padding: 0 1rem 2rem;
+	}
 	#books,
 	#texts,
 	#films{
@@ -922,6 +936,7 @@ books & texts + essays/materials/documents */
 }
 /* institute flex */
 .categories .sections,
+.editions .sections,
 #books .sections,
 #texts .sections{
 	width: 100%;
@@ -937,7 +952,8 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 768px){
-	.categories .sections{
+	.categories .sections,
+	.editions .sections{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -950,12 +966,14 @@ books & texts + essays/materials/documents */
 }
 /* gap */
 .categories .sections,
+.editions .sections,
 #books .sections,
 #texts .sections{
 	gap: 1.5rem; /* See Safari Support */
 }
 @media only screen and (min-width: 1200px){
 	.categories .sections,
+	.editions .sections,
 	#books .sections,
 	#texts .sections{
 		gap: 2rem; /* See Safari Support */
@@ -963,6 +981,7 @@ books & texts + essays/materials/documents */
 }
 @media only screen and (min-width: 1600px){
 	.categories .sections,
+	.editions .sections,
 	#books .sections,
 	#texts .sections{
 		gap: 2.5rem; /* See Safari Support */
@@ -970,6 +989,7 @@ books & texts + essays/materials/documents */
 }
 /* flex percentages and flex-grow */
 .categories .sections .section-container,
+.editions .sections .section-container,
 #books .sections .section-container,
 #texts .sections .section-container{
 	flex-grow: 1;
@@ -980,17 +1000,20 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 768px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(50% - .75em);
 	}
 }
 @media only screen and (min-width: 992px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(33.33% - 1.5rem);
 	}
 }
 @media only screen and (min-width: 1200px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(33.33% - 2rem);
 	}
 	#books .sections .section-container,
@@ -1004,7 +1027,8 @@ books & texts + essays/materials/documents */
 	}
 }
 @media only screen and (min-width: 1600px){
-	.categories .sections .section-container{
+	.categories .sections .section-container,
+	.editions .sections .section-container{
 		flex: 0 0 calc(25% - 2.5rem);
 	}
 	#books .sections .section-container,
@@ -1014,6 +1038,7 @@ books & texts + essays/materials/documents */
 }
 /* single item container */
 .categories .sections .section-container,
+.editions .sections .section-container,
 #books .sections .section-container,
 #texts .sections .section-container{
 		background: #ededed;
@@ -1036,6 +1061,7 @@ books & texts + essays/materials/documents */
 	gap: 1.25rem; /* See Safari Support */
 }
 /* used for containers that have title & no other content */
+.editions .sections .section-container.title-slide,
 #books .sections .section-container.title-slide,
 #texts .sections .section-container.title-slide{
 	min-height: 167px;
@@ -1044,7 +1070,6 @@ books & texts + essays/materials/documents */
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	align-content: center;
 }
 @media only screen and (min-width: 480px){
 	#books .sections .section-container,
@@ -1060,8 +1085,14 @@ books & texts + essays/materials/documents */
 }
 /* section-container hover/focus */
 .categories .sections .section-container:hover,
-.categories .sections .section-container:focus-within{
+.categories .sections .section-container:focus-within,
+.editions .sections .section-container:hover,
+.editions .sections .section-container:focus-within{
 	outline: 4px solid #e3b382;
+}
+.editions .sections .section-container.title-slide:hover,
+.editions .sections .section-container.title-slide:focus-within{
+	outline: none;
 }
 #books .sections .section-container:hover,
 #books .sections .section-container:focus-within,
@@ -1071,10 +1102,13 @@ books & texts + essays/materials/documents */
 }
 /* main hyperlink */
 .categories .sections .section-container a,
-.categories .sections .section-container a:visited{
+.categories .sections .section-container a:visited,
+.editions .sections .section-container a,
+.editions .sections .section-container a:visited{
 	color: #212119;
 	text-decoration: none;
 	width: 100%;
+	height: 100%;
 }
 #books .sections .section-container a, 
 #books .sections .section-container a:visited,
@@ -1084,7 +1118,9 @@ books & texts + essays/materials/documents */
 	text-decoration: underline;
 }
 .categories .sections .section-container a:hover,
-.categories .sections .section-container a:focus{
+.categories .sections .section-container a:focus,
+.editions .sections .section-container a:hover,
+.editions .sections .section-container a:focus{
 	outline: none;
 }
 #books .sections .section-container a:hover,
@@ -1096,29 +1132,35 @@ books & texts + essays/materials/documents */
 	outline: 3px solid #e3b382;
 }
 /* single item in hyperlink container */
-.categories .sections .section-container a div{
+.categories .sections .section-container a div,
+.editions .sections .section-container a div{
 	flex: 1 0 calc(50% - 1rem)
 }
 /* Start ratio box; adapted from https://pqina.nl/blog/presenting-images-in-an-aspect-ratio-with-css/ */
 /* 8/10 = 80 | 5/7 = 71.43 | 2/3 = 66.67 | 9/16 = 56.25 */
 /* image container */
-.categories .sections .section-container a .section-image{
+.categories .sections .section-container a .section-image,
+.editions .sections .section-container a .section-image{
 	border: 1px solid #737d73;
 	padding: 0;
 	position: relative;
 }
-.categories .sections .section-container a .section-image:after{
+.categories .sections .section-container a .section-image:after,
+.editions .sections .section-container a .section-image:after{
 	content: "";
 	display: block;
 	padding-bottom: 80%;
 }
 .categories .sections .section-container a .section-image:hover,
-.categories .sections .section-container a .section-image:focus-within{
+.categories .sections .section-container a .section-image:focus-within,
+.editions .sections .section-container a .section-image:hover,
+.editions .sections .section-container a .section-image:focus-within{
 	overflow: hidden;
 	outline: none;
 }
 /* main image */
-.categories .sections .section-container a .section-image img{
+.categories .sections .section-container a .section-image img,
+.editions .sections .section-container a .section-image img{
 	background: #E7E9E7;
 	border: none;
 	width: 100%;
@@ -1134,7 +1176,8 @@ books & texts + essays/materials/documents */
 }
 /* End ratio box */
 /* text container */
-.categories .sections .section-container a div:nth-child(2){
+.categories .sections .section-container a div:nth-child(2),
+.editions .sections .section-container a div:nth-child(2){
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
@@ -1142,11 +1185,13 @@ books & texts + essays/materials/documents */
 }
 /* heading */
 .categories .sections .section-container a div h3,
+.editions .sections .section-container a div h4,
 #books .sections .section-container h4,
 #texts .sections .section-container h4{
 	font-size: 1.3rem;
 	font-family: 'Amaranth', sans-serif;
 	font-weight: 400;
+	color: #305056;
 	margin: .5rem 0 0;
 	padding: 0;
 }
@@ -1254,7 +1299,8 @@ books & texts + essays/materials/documents */
 	margin: 1rem .5rem;
 }
 /* paragraphs of text */
-.categories .sections .section-container a div p{
+.categories .sections .section-container a div p,
+.editions .sections .section-container a div p{
 	line-height: 1.6rem;
 	font-style: italic;
 	text-align: center;
@@ -1552,6 +1598,9 @@ a.action-button:visited,
 	-moz-border-radius: 16px;
 	border-radius: 16px;
 	padding: 10px 30px;
+	 cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
 }
 @media only screen and (min-width: 1200px){
 	a.action-button,
@@ -2370,60 +2419,74 @@ header nav.breadcrumbs ul li a:focus{
 	outline: 1px solid #fff;
 }
 /* items (plain levels) and historical material items (transcription levels) */
+#level-2,
 #level-3,
-.transcription #level-2,
-.transcription #level-4{
+#level-4,
+#level-5{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-#level-3{
-	max-width: 9rem;
-}
-.transcription #level-2{
-	max-width: 3rem;
-}
-.transcription #level-4{
-	max-width: 6rem;
+#level-2,
+#level-3,
+#level-4,
+#level-5{
+	max-width: 4rem;
 }
 @media only screen and (min-width: 480px){
+	#level-2,
 	#level-3,
-	.transcription #level-2{
-		max-width: none;
-		overflow: inherit;
-	}
-	.transcription #level-4{
-		max-width: 9.5rem;
+	#level-4,
+	#level-5{
+		max-width: 6.5rem;
 	}
 }
 @media only screen and (min-width: 624px){
-	.transcription #level-4{
-		max-width: 18.5rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 10rem;
 	}
 }
 @media only screen and (min-width: 768px){
-	.transcription #level-4{
-		max-width: 26rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 14rem;
 	}
 }
 @media only screen and (min-width: 992px){
-	.transcription #level-4{
-		max-width: 40rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 20rem;
 	}
 }
 @media only screen and (min-width: 1200px){
-	.transcription #level-4{
-		max-width: 53rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 24rem;
 	}
 }
 @media only screen and (min-width: 1366px){
-	.transcription #level-4{
-		max-width: 64rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 28rem;
 	}
 }
 @media only screen and (min-width: 1600px){
-	.transcription #level-4{
-		max-width: 70rem;
+	#level-2,
+	#level-3,
+	#level-4,
+	#level-5{
+		max-width: 32rem;
 	}
 }
 
@@ -2705,7 +2768,11 @@ ol li ol{
 .padded-list li{
 	padding-bottom: 1rem;
 }
-.padded-list li:last-child{
+.double-padded-list li{
+	padding-bottom: 2rem;
+}
+.padded-list li:last-child,
+.double-padded-list li:last-child{
 	padding-bottom: 0;
 }
 
@@ -2757,11 +2824,13 @@ aside.text-box,
 aside.warning-box{
 	background: #E7E9E7;
 	border: 1px solid #bdc2bd;
-	border-left: 6px solid #8db7bf;
+	border-top: 5px solid #8db7bf;
+	border-bottom: 5px solid #8db7bf;
 	padding: 1rem;
 }
 aside.text-box{
-	border-left: 6px solid #8db7bf;
+	border-top: 5px solid #8db7bf;
+	border-bottom: 5px solid #8db7bf;
 	margin: 1.5rem auto;
 }
 aside.warning-box{
@@ -2774,7 +2843,8 @@ aside.warning-box{
 }
 aside.warning-box.violence,
 aside.warning-box.language{
-	border-left: 6px solid #85454B;
+	border-top: 5px solid #85454B;
+	border-bottom: 5px solid #85454B;
 	max-width: 700px;
 }
 .info-note{
@@ -2838,6 +2908,9 @@ strong{
 .left{
 	text-align: left;
 }
+.leftmargin{
+	margin-left: 1.5rem;
+}
 .right{
   text-align: right;
 }
@@ -2877,8 +2950,12 @@ img + p.caption-text,
 .double-image + p.caption-text{
 	font-size: .9rem;
 	line-height: 1.6rem;
-	margin: 10px 0 2em 0;
+	margin: 10px 0 1em 0;
 	padding: 0;
+}
+p.caption-text + p.caption-text{
+	font-size: .9rem;
+	line-height: 1.6rem;
 }
 /* adds margin to double image captions */
 .caption-text > span:not(:last-child){
@@ -3104,7 +3181,6 @@ img + p.caption-text,
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	align-content: center;
 }
 /* metadata details for films */
 .films.gallery figure figcaption h4{
@@ -3457,19 +3533,169 @@ details:focus-within ::marker{
 }
 
 
+/* 32. BIPOC Voices */
+
+/* increases size of bv essay titles */
+@media only screen and (min-width: 992px){
+	.essay.critical .bv-title h2{
+		font-size: 1.7rem;
+	}
+	.essay.critical .bv-title p{
+		font-size: 1.1rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.essay.critical .bv-title h2{
+		font-size: 2rem;
+		margin-top: .5rem;
+	}
+	.essay.critical .bv-title h2.large{
+		font-size: 2.1rem;
+	}
+	.essay.critical .bv-title h2.larger{
+		font-size: 2.2rem;
+	}
+	.essay.critical .bv-title h2.largest{
+		font-size: 2.3rem;
+	}
+	.essay.critical .bv-title h2.small{
+		font-size: 1.9rem;
+	}
+	.essay.critical .bv-title h2.smaller{
+		font-size: 1.8rem;
+	}
+	.essay.critical .bv-title h2.smallest{
+		font-size: 1.7rem;
+	}
+} 
+@media only screen and (min-width: 1366px){
+	.essay.critical .bv-title h2{
+		font-size: 2.6rem;
+	}
+}
+/* bipoc voices project button on all pages */
+#bv-project,
+#bv-details-project{
+	font-size: .85rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+#bv-project{
+	margin: 2rem 0 1.5rem;
+}
+#bv-details-project{
+	margin: 1.5rem 0 2.5rem;
+}
+@media only screen and (min-width: 480px){
+	#bv-project,
+	#bv-details-project{
+		font-size: 1rem;
+	}
+	#bv-details-project{
+		margin: 2rem 0 2.5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	#bv-details-project{
+		margin: 1rem 0 2.5rem;
+	}
+}
+#bv-project a,
+#bv-details-project a{
+	color: #212119;
+	text-decoration: none;
+	text-align: center;
+	background: #d9d9d9;
+	background-image: linear-gradient(#d9d9d9, #E7E9E7);
+	-webkit-box-shadow: #bdc2bd 0px 1px 3px 2px;
+	-moz-box-shadow: #bdc2bd 0px 1px 3px 2px;
+	box-shadow: #bdc2bd 0px 1px 3px 2px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: .5rem .75rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#bv-project a:hover,
+#bv-details-project a:hover,
+#bv-project a:focus,
+#bv-details-project a:focus{
+	color: #fff;
+	background: #305056;
+	border: 1px solid #305056;
+	/* outline: none; */
+}
+/* theming for authorship card */
+@media only screen and (min-width: 992px){
+	.production-details{
+		font-size: 1.1rem;
+		text-align: center;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		-webkit-box-shadow: #697c6f 0px 1px 6px 0px;
+		-moz-box-shadow: #697c6f 0px 1px 6px 0px;
+		box-shadow: #697c6f 0px 1px 6px 0px;
+		padding: 1rem 1.5rem;
+		margin-top: 2rem;
+		position: relative;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+	}
+}
+/* staples on authorship card */
+@media only screen and (min-width: 992px){
+	.production-details::before,
+	.production-details::after{
+		content: "";
+		width: 2rem;
+		height: .25rem;
+		border-right: 6px solid;
+		border-left: 6px solid;
+		-webkit-box-shadow: #697c6f 1px 0px 5px 1px inset;
+		-moz-box-shadow: #697c6f 1px 0px 5px 1px inset;
+		box-shadow: #697c6f 1px 0px 5px 1px inset;
+		position: absolute;
+		top: 1rem;
+	}
+	.production-details::before{
+		left: 1rem;
+	}
+	.production-details::after{
+		right: 1rem;
+	}
+}
+.production-details > span{
+	display: block;
+}
+.production-details  + .toc{
+	margin-top: 1.5rem;
+}
+@media only screen and (min-width: 992px){
+	.production-details  + .toc{
+		margin-top: 4rem;
+	}
+}
+
+
 /* Safari Support: Mobile and Safari below 14.1 */
 /* Adapted from  https://ppuzio.medium.com/flexbox-gap-workaround-for-safari-on-ios-14-13-and-lower-ffcae589eb69 and 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries */
 @supports (-webkit-touch-callout: none) and (not (translate: none)){
 	/* Easy stuff */
 	/* Mainly spacing among elements where gap is used otherwise; in particular, see all the margin settings below; use parents elements to find items in the CSS above */
-	.categories .introduction-section .introduction-text > *:not(:first-child){
+	.categories .introduction-section .introduction-text > *:not(:first-child),
+	.editions .introduction-section .introduction-text > *:not(:first-child){
 		margin-top: 1rem;
 	}
-	/* needed as otherwise the text background on these pages doe not appear */
+	/* needed as otherwise the text background on these pages does not appear */
 	@media only screen and (min-width: 992px){
 		.home .introduction-section .introduction-text,
-		.categories .introduction-section .introduction-text{
+		.categories .introduction-section .introduction-text,
+		.editions .introduction-section .introduction-text{
 			background: #ededed;
 		}
 	}
@@ -3535,11 +3761,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	/* spacing around cards & wrapper compensation */
 	.categories .sections > *,
+	.editions .sections > *,
 	#books .sections > *,
 	.films.gallery > *{
 		margin: .75rem .375rem;
 	}
 	.categories .sections,
+	.editions .sections,
 	#books .sections,
 	.films.gallery{
 		margin: -.75rem -.375rem;
@@ -3559,11 +3787,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	@media only screen and (min-width: 1200px){
 		.categories .sections > *,
+		.editions .sections > *,
 		#books .sections > *,
 		.films.gallery > *{
 			margin: 1rem .5rem;
 		}
 		.categories .sections,
+		.editions .sections,
 		#books .sections,
 		.films.gallery{
 			margin: -1rem -.5rem;
@@ -3577,11 +3807,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Fea
 	}
 	@media only screen and (min-width: 1600px){
 		.categories .sections > *,
+		.editions .sections > *,
 		#books .sections > *,
 		.films.gallery > *{
 			margin: 1.25rem .625rem;
 		}
 		.categories .sections,
+		.editions .sections,
 		#books .sections,
 		.films.gallery{
 			margin: -1.25rem -.625rem;

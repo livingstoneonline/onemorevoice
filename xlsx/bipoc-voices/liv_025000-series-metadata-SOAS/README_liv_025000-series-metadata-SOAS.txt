@@ -1,0 +1,3 @@
+The metadata file provided along with this README results from the “BIPOC Voices in the Victorian Periodical Press” (https://onemorevoice.org/html/bipoc-voices/bv-home.html) (2021-22) project. It is released under a CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) license. If you use this file in your own work, please be sure to cite it appropriately as follows:
+
+Joanne Ruth Davis, Dino Franco Felluga, Adrian S. Wisnicki. “‘BIPOC Voices’: Metadata for Items from Special Collections, SOAS Library” (2022). One More Voice, solidarity edition; Collaborative Organization for Virtual Education (COVE); 2022. https://docs.google.com/spreadsheets/d/12IU93UjaspiELkYCr5rAwaqVm6HxxZtjC2dla3Nonkg/edit?usp=sharing

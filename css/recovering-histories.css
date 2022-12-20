@@ -1,0 +1,67 @@
+/* "Recovering Histories" CSS File for One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki */ /* 2023 */
+
+/********************/
+
+/* General Coding */
+
+/* formatting on main container */
+.materials .recovering-histories{
+  padding: 1rem;
+}
+/* spacing above "Source Article Details" section heading */
+#source-article-details{
+  margin-top: 2.5rem;
+}
+@media only screen and (min-width: 768px){
+  #source-article-details{
+    margin-top: 3rem;
+  }
+}
+.materials .recovering-histories p{
+  text-indent: 1rem;
+  clear: both;
+  margin: 0;
+  position: relative; /* Needed to override TEI coding*/
+}
+/* align right */
+.materials .recovering-histories .right{
+  text-align: right;
+}
+/* adds small margin to right of item */
+.materials .recovering-histories .right1{
+  margin-right: .75rem;
+}
+.materials .recovering-histories .right2{
+  margin-right: 2rem;
+}
+.materials .recovering-histories .right4{
+  margin-right: 4rem;
+}
+.materials .recovering-histories .right6{
+  margin-right: 6rem;
+}
+.materials .recovering-histories .right7{
+  margin-right: 7rem;
+}
+.materials .recovering-histories .right9{
+  margin-right: 9rem;
+}
+.materials .recovering-histories .right10{
+  margin-right: 10rem;
+}
+/* adds margin to item */
+.materials .recovering-histories .topmargin{
+  margin-top: 1rem;
+}
+.materials .recovering-histories .leftmargin{
+  margin-left: 1rem;
+}
+.materials .recovering-histories .doubleleftmargin{
+  margin-left: 2rem;
+}
+/* variants of indent */
+.materials .recovering-histories .noindent{
+  text-indent: 0;
+}

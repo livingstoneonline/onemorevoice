@@ -39,7 +39,7 @@
 			<xsl:text>Recovered text by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by One More Voice.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="object-creator">
-			<xsl:text>Visual material by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice archival recovery project.</xsl:text>
+			<xsl:text>Visual material by </xsl:text><xsl:value-of select="//teiHeader//titleStmt/author[@role='first-normalized']"/><xsl:value-of select="$additional-authors-1"/> <xsl:text>; published by the One More Voice digital recovery project.</xsl:text>
 		</xsl:variable>
 		<xsl:variable name="LEAP-ID">
 			<xsl:value-of select="//idno[@type='LEAP-ID']"/>
@@ -63,8 +63,8 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
 				<link rel="manifest" href="/site.webmanifest"/>
-				<link rel="preload" as="style" href="/css/critical.css?=newVers_0021" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0020" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/critical.css?=newVers_0022" onload="this.rel='stylesheet'"/>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
 				<!-- <link rel="preload" as="style" href="/css/styleTEI.css?=newVers_0004" onload="this.rel='stylesheet'"/> -->
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="preload" as="style" href="/css/rotate-toggle.css?=newVers_0002" onload="this.rel='stylesheet'"/>
@@ -77,8 +77,8 @@
 				<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="preconnect" href="https://fonts.googleapis.com"/>
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0021"/>
-				<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
+				<script src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5" async=""></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 
@@ -151,7 +151,7 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0020"/>
+				<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
 				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0004"/>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"/>
@@ -166,7 +166,7 @@
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 				<script>
 					// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0008';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
 				</script>
 				<script>
 					//Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp

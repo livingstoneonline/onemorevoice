@@ -242,6 +242,8 @@ Editorial Elements
 	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
+  gap: .5rem 1rem;
 }
 /* link */
 .transcription p.associated-links a{
@@ -366,6 +368,11 @@ label.md_switch{
 	cursor: pointer;
 	position: relative;
 }
+/* full toggle hover/focus */
+.md_switch .md_switch__toggle:hover,
+.md_switch .md_switch__toggle:focus{
+	outline: 3px solid #e3b382;
+}
 /* common: slider (before) & switch (after) */
 .md_switch .md_switch__toggle::before,
 .md_switch .md_switch__toggle::after{
@@ -425,22 +432,22 @@ label.md_switch{
 	padding: 3px 0;  
 }
 /* slider & hover */
-.md_switch .md_switch__toggle:hover::before{
+/* .md_switch .md_switch__toggle:hover::before{
 	background-color: #E7E9E7;
-}
+} */
 /* switch & hover */
-.md_switch .md_switch__toggle:hover::after{
+/* .md_switch .md_switch__toggle:hover::after{
 	background-color: #737d73;
-}
+} */
 /* slider:checked & hover */
-.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
+/* .md_switch [type=checkbox]:checked + .md_switch__toggle:hover::before{
 	background-color: #737d73;
-}
+} */
 /* switch:checked & hover */
-.md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
+/* .md_switch [type=checkbox]:checked + .md_switch__toggle:hover::after{
 	background-color: #E7E9E7;
 	;
-}
+} */
 
 
 /*  09. Toggle Classes */

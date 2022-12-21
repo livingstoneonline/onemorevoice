@@ -1185,6 +1185,7 @@ books & texts + essays/materials/documents/editions */
 }
 /* heading */
 .categories .sections .section-container a div h3,
+.editions .sections .section-container a div h3, /* needed for bv-essays.html */
 .editions .sections .section-container a div h4,
 #books .sections .section-container h4,
 #texts .sections .section-container h4{
@@ -1194,6 +1195,10 @@ books & texts + essays/materials/documents/editions */
 	color: #305056;
 	margin: .5rem 0 0;
 	padding: 0;
+}
+/* needed for bv-essays.html */
+.editions .sections .section-container a div h3{
+	border-bottom: none;
 }
 #books .sections .section-container h4,
 #texts .sections .section-container h4{
@@ -2111,7 +2116,14 @@ nav .logo-container a:focus h1{
 .goog-logo-link:link{
 	font-size: 11px !important;
 	font-weight: normal !important;
-	color: #697c6f !important;
+	color: #4D5B53 !important;
+	background: #fff !important;
+}
+.original-text{
+	text-align: left !important; /* Needed to remove WAVE error */
+}
+h1.title.gray{
+	color: #575757 !important; /* Needed to remove WAVE error */
 }
 
 

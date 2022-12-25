@@ -59,21 +59,21 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<meta name="robots" content="index, follow"/>
 				<meta name="theme-color" content="#204A79"/>
-				<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"/>
-				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"/>
-				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"/>
-				<link rel="manifest" href="/site.webmanifest"/>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"/>
-				<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-				<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" onload="this.rel='stylesheet'" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png"></link>
+				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"></link>
+				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"></link>
+				<link rel="manifest" href="/site.webmanifest"></link>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0021" onload="this.rel='stylesheet'"></link>
+				<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
+				<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" onload="this.rel='stylesheet'" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 				<noscript>
-					<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"/>
-					<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-					<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+					<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0021"></link>
+					<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
+					<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 				</noscript>
-				<link rel="preconnect" href="https://fonts.googleapis.com"/>
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"/>
+				<link rel="preconnect" href="https://fonts.googleapis.com"></link>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""></link>
+				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0022"></link>
 				<script src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5" async=""></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
@@ -141,15 +141,15 @@
 		
 				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 		
-				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap" rel="stylesheet"/>
-				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"/></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0004"/>
+				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap" rel="stylesheet"></link>
+				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"></link></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"></link></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"></link></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"></link></xsl:if>
+				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"></link></xsl:if>
+				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0004"></link>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
-					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"/>
+					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"></link>
 				</xsl:if>
 				<xsl:if test="//xenoData[@type='css']">
 					<style>

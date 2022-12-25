@@ -73,6 +73,7 @@
 				</noscript>
 				<link rel="preconnect" href="https://fonts.googleapis.com"></link>
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""></link>
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap"></link>
 				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0023"></link>
 				<script src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5" async=""></script>
 				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
@@ -140,8 +141,6 @@
 				<div data-include="footer"></div>
 		
 				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
-		
-				<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap" rel="stylesheet"></link>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"></link></xsl:if>

@@ -2422,13 +2422,17 @@ header nav.breadcrumbs ul li:not(:first-child):before{
 }
 header nav.breadcrumbs ul li a{
 	text-decoration: underline;
+	line-height: 1rem;
 	padding: .15rem .25rem;
+}
+header nav.breadcrumbs ul li a:first-child{
+	padding: 0 .25rem;
 }
 header nav.breadcrumbs ul li a:hover,
 header nav.breadcrumbs ul li a:focus{
-	color: #fff;
-	background: #212119;
-	outline: 1px solid #fff;
+	color: #212119;
+  background: #fff;
+  outline: none;
 }
 /* items (plain levels) and historical material items (transcription levels) */
 #level-2,

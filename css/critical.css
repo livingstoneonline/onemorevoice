@@ -970,7 +970,11 @@ header nav.breadcrumbs ul li:not(:first-child):before{
 }
 header nav.breadcrumbs ul li a{
 	text-decoration: underline;
+	line-height: 1rem;
 	padding: .15rem .25rem;
+}
+header nav.breadcrumbs ul li a:first-child{
+	padding: 0 .25rem;
 }
 #level-2,
 #level-3,

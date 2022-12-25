@@ -140,8 +140,7 @@
 	
 				<div data-include="footer"></div>
 		
-				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
-		
+<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"></link></xsl:if>

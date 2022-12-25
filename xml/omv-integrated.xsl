@@ -147,7 +147,7 @@
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'pinyon')]"><link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'unifrakturM')]"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet"></link></xsl:if>
-				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0004"></link>
+				<link rel="stylesheet" type="text/css" href="/css/styleTEI.css?=newVers_0005"></link>
 				<xsl:if test="/TEI/text[contains(@n,'rotate-toggle')]">
 					<link rel="stylesheet" type="text/css" href="/css/rotate-toggle.css?=newVers_0002"></link>
 				</xsl:if>

@@ -1652,7 +1652,7 @@ a.action-button i{
 	justify-content: center;
 }
 .home a.action-button{
-	font-size: 1rem;
+	font-size: 1.05rem;
 	text-transform: none;
 	white-space: nowrap;
 	border: none;
@@ -1661,12 +1661,17 @@ a.action-button i{
 	border-radius: 0;
 	margin: 1.25rem 1rem;
 	padding: 10px 0;
-	width: 11rem;
+	width: 100%;
 	display: -webkit-flex;
   display: flex;
 	visibility: visible;
 	align-items: center;
 	justify-content: center;
+}
+@media only screen and (min-width: 480px){
+	.home a.action-button{
+		width: 11rem;
+	}
 }
 @media only screen and (min-width: 768px){
 	.home-buttons{
@@ -1675,7 +1680,6 @@ a.action-button i{
 	.home a.action-button{
 		font-size: 1.15rem;
 		margin: 0 1rem;
-		width: 11rem;
 	}
 }
 @media only screen and (min-width: 992px){

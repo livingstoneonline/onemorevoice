@@ -40,7 +40,7 @@ The corpus is now published, like most of *One More Voice*'s files, under a [Cre
 6. Anonymous, [L. Nicholson], and Nathaniel Henry Boston. 1874. “Henry Boston, African Native Pastor.” *File name:* liv_026037.txt
 7. Anonymous, [South African Missionary Society], Jan, and Karolus. 1804. “Letter of a Bastard Hottentot; Letter of Another Bastard Hottentot.” *File name:* liv_025087.txt
 8. Anonymous, [Vaughan], and Anonymous. 1875. “‘Not Far From the Kingdom of God.’” *File name:* liv_026045.txt
-9. Anonymous, [W. Clarkson], Gungaram, and Native Catechist. 1852. “The Hindus.” *File name:* liv_026014.txt
+9. Anonymous, [W. Clarkson], and Gungaram. 1852. “The Hindus.” *File name:* liv_026014.txt
 10. Anonymous, [W.J. Davis], and James Lewana. 1872. “South Africa. Graham’s Town District.” *File name:* liv_025194.txt
 11. Anonymous, Adam Kok, and Willem Uithaalder. 1851. “The Hottentot Rebellion.” *File name:* liv_025034.txt
 12. Anonymous, and [Abdul] Meseeh. 1856. “Abdool Meseeh’s Hymn.” *File name:* liv_026009.txt

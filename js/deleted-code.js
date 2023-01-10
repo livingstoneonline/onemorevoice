@@ -367,3 +367,14 @@
 //           localStorage.removeItem('firstLoad');
 //       }
 //   })();
+
+// Generates unique visitor number
+{/* <p>Unique visit number: <span id="uniqueVisit"></span></p>
+<script>
+window.onload = function(){
+    var randomString = Math.floor(Math.random() * 10000000);
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var letter = alphabet[Math.floor(Math.random() * alphabet.length)];
+    document.getElementById("uniqueVisit").innerHTML =  letter + randomString;
+}
+</script> */}

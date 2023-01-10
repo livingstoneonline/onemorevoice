@@ -355,3 +355,15 @@
 //			links[i].href = links[i].href + "?=Thanks_for_visiting_One_More_Voice";
 //		}
 //}
+
+// Loads given page, keeps base URL, path, any #, adds random query string; taken from https://stackoverflow.com/a/28840664 and https://stackoverflow.com/a/48542058
+// (function () {
+//   var randomString = Math.floor(Math.random() * 1000000);
+//   if (window.localStorage) {
+//       if (!localStorage.getItem('firstLoad')) {
+//           localStorage['firstLoad'] = true;
+//           window.location.href = window.location.origin + window.location.pathname + window.location.hash + "?=" + randomString;
+//       } else 
+//           localStorage.removeItem('firstLoad');
+//       }
+//   })();

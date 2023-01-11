@@ -92,6 +92,25 @@ $("img").click(function(){
 });
 
 
+// Creates unique page-visit stamp
+// Adapted from https://stackoverflow.com/a/4929629 and https://stackoverflow.com/a/10211214
+
+PageVisit();
+
+function PageVisit() {
+  var randomString = Math.floor(Math.random() * 1000000); 
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	var letter = alphabet[Math.floor(Math.random() * alphabet.length)];
+	var characters = "!@#$%&*";
+	var symbol1 = characters[Math.floor(Math.random() * characters.length)];
+	var symbol2 = characters[Math.floor(Math.random() * characters.length)];  
+	var today = new Date();
+	var currentdate = new Date();
+	var datetime = String(currentdate.getDate()).padStart(2, '0') + "/" + String(currentdate.getMonth() + 1).padStart(2, '0') + "/" + currentdate.getFullYear() + ", " + String(currentdate.getHours()).padStart(2, '0') + ":" + String(currentdate.getMinutes()).padStart(2, '0') + ":" + String(currentdate.getSeconds()).padStart(2, '0');
+	document.getElementById("page-visit").innerHTML = randomString + letter + symbol1 + symbol2 + ' (' + datetime + ')';
+}
+
+
 // Needed to prevent a "Best Practices" issue created by Google Translate
 // Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
 

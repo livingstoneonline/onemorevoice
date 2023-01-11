@@ -666,7 +666,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source-link1">
 							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -696,7 +696,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source-link1">
 							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -730,7 +730,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source">
 							<xsl:for-each select="//publicationStmt/ref">
@@ -766,7 +766,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source">
 							<xsl:for-each select="//publicationStmt/ref">

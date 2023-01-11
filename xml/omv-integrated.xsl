@@ -660,12 +660,12 @@
 					<xsl:copy-of select="$shelfmark"/>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source-link1">
@@ -690,12 +690,12 @@
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
-					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
 					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source-link1">
@@ -722,7 +722,6 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
@@ -730,6 +729,7 @@
 					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source">
@@ -758,7 +758,6 @@
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
@@ -766,6 +765,7 @@
 					<xsl:value-of select="$additional-authors-2"/><xsl:value-of select="$period-after-name"/><xsl:text> “</xsl:text>
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
+					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
 					<p><strong>Unique Page-Visit Stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source">

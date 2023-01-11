@@ -106,7 +106,7 @@ function PageVisit() {
 	var symbol2 = characters[Math.floor(Math.random() * characters.length)];  
 	var today = new Date();
 	var currentdate = new Date();
-	var datetime = String(currentdate.getDate()).padStart(2, '0') + "/" + String(currentdate.getMonth() + 1).padStart(2, '0') + "/" + currentdate.getFullYear() + ", " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+	var datetime = String(currentdate.getDate()).padStart(2, '0') + "/" + String(currentdate.getMonth() + 1).padStart(2, '0') + "/" + currentdate.getFullYear() + ", " + String(currentdate.getHours()).padStart(2, '0') + ":" + String(currentdate.getMinutes()).padStart(2, '0') + ":" + String(currentdate.getSeconds()).padStart(2, '0');
 	document.getElementById("page-visit").innerHTML = randomString + letter + symbol1 + symbol2 + ' (' + datetime + ')';
 }
 

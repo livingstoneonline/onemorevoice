@@ -369,12 +369,26 @@
 //   })();
 
 // Generates unique visitor number
-{/* <p>Unique visit number: <span id="uniqueVisit"></span></p>
-<script>
-window.onload = function(){
-    var randomString = Math.floor(Math.random() * 10000000);
-    var alphabet = "abcdefghijklmnopqrstuvwxyz";
-    var letter = alphabet[Math.floor(Math.random() * alphabet.length)];
-    document.getElementById("uniqueVisit").innerHTML =  letter + randomString;
-}
+{/* <p>Unique visit identifier: <span id="uniqueVisit"></span></p> */}
+{/* <script>
+    // https://stackoverflow.com/a/4929629
+    // https://stackoverflow.com/a/10211214
+    window.onload = function(){
+            var alphabet = "abcdefghijklmnopqrstuvwxyz";
+            var letter = alphabet[Math.floor(Math.random() * alphabet.length)];
+            var characters = "!@#$%^&*";
+            var symbol = characters[Math.floor(Math.random() * characters.length)];
+            var randomString = Math.floor(Math.random() * 10000000);
+            var alphabet = "abcdefghijklmnopqrstuvwxyz";
+            var letter = alphabet[Math.floor(Math.random() * alphabet.length)];
+            var today = new Date();
+            var currentdate = new Date(); 
+            var datetime = String(currentdate.getDate()).padStart(2, '0') + "/"
+                                            + String(currentdate.getMonth()+1).padStart(2, '0')  + "/" 
+                                            + currentdate.getFullYear() + ", "  
+                                            + currentdate.getHours() + ":"  
+                                            + currentdate.getMinutes() + ":" 
+                                            + currentdate.getSeconds();
+            document.getElementById("uniqueVisit").innerHTML =  letter + symbol + randomString + ' (' + datetime + ')';
+    }
 </script> */}

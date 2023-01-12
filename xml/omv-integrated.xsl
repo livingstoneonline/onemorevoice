@@ -183,7 +183,7 @@
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script>
 					// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0019";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0020";document.body.appendChild(element)});
 					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 				</script>
 			</body>
@@ -666,7 +666,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<!-- <p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p> -->
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source-link1">
 							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -696,7 +696,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<!-- <p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p> -->
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source-link1">
 							<xsl:value-of select="//publicationStmt/ref[1]/@target"/>
@@ -730,7 +730,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<!-- <p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p> -->
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source">
 							<xsl:for-each select="//publicationStmt/ref">
@@ -766,7 +766,7 @@
 					<xsl:value-of select="$normTitle"/><xsl:text>” (</xsl:text><xsl:value-of select="//sourceDesc/bibl/date" separator="; "/><xsl:text>). </xsl:text><!--<xsl:value-of select="$encoding"/><xsl:value-of select="$editorial"/>-->
 					<em>One More Voice</em>, <xsl:value-of select="$edition"/>, <a href="/html/transcriptions/{substring-before($filename, '.xml')}.html">https://onemorevoice.org/html/transcriptions/<xsl:value-of select="substring-before($filename, '.xml')"/>.html</a>.</p>
 					<p><strong>Rights:</strong><xsl:text> </xsl:text><xsl:copy-of select="$copyright"/></p>
-					<p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p>
+					<!-- <p><strong>Unique page-visit stamp:</strong><xsl:text> </xsl:text><span id="page-visit">[Not shown because Javascript disabled]</span></p> -->
 					<xsl:if test="//publicationStmt/ref">
 						<xsl:variable name="source">
 							<xsl:for-each select="//publicationStmt/ref">

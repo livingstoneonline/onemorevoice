@@ -3555,6 +3555,20 @@ details:focus-within ::marker{
 
 /* 32. BIPOC Voices */
 
+/* overrides default spacing on title slide */
+.essay .page-details .bv-title{
+	margin: 1rem 0 0;
+}
+@media only screen and (min-width: 768px){
+	.essay .page-details .bv-title{
+		margin: 2rem 0 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.essay .page-details .bv-title{
+		margin: 0;
+	}
+}
 /* increases size of bv essay titles */
 @media only screen and (min-width: 992px){
 	.essay.critical .bv-title h2{
@@ -3602,6 +3616,7 @@ details:focus-within ::marker{
 }
 #bv-project{
 	margin: 2rem 0 1.5rem;
+	text-align: center;
 }
 #bv-details-project{
 	margin: 1.5rem 0 2.5rem;
@@ -3616,6 +3631,9 @@ details:focus-within ::marker{
 	}
 }
 @media only screen and (min-width: 992px){
+	#bv-project{
+		text-align: left;
+	}
 	#bv-details-project{
 		margin: 1rem 0 2.5rem;
 	}

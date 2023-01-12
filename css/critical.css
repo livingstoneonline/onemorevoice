@@ -1161,6 +1161,19 @@ strong{
 .error404 main span p:last-child{
 	margin-bottom: 0;
 }
+.essay .page-details .bv-title{
+	margin: 1rem 0 0;
+}
+@media only screen and (min-width: 768px){
+	.essay .page-details .bv-title{
+		margin: 2rem 0 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	.essay .page-details .bv-title{
+		margin: 0;
+	}
+}
 @media only screen and (min-width: 992px){
 	.essay.critical .bv-title h2{
 		font-size: 1.7rem;

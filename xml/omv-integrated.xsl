@@ -468,6 +468,9 @@
 			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2022')]">
 				<xsl:text>solidarity edition, 2022</xsl:text>
 			</xsl:if>
+			<xsl:if test="//teiHeader//publicationStmt/date[contains(text(), '2023')]">
+				<xsl:text>solidarity edition, 2023</xsl:text>
+			</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="base-uri" select="base-uri(.)"/>
  		<xsl:variable name="filename" select="(tokenize($base-uri,'/'))[last()]"/>

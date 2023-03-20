@@ -115,11 +115,11 @@
 						<nav class="fallback">
 							<span class="logo-container">
 								<a href="/index.html">
-									<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field." title="Home"/>    
+									<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field."/>    
 									<h1>One More Voice</h1>
 								</a>
 							</span>
-							<a href="/site_sections.html" class="hamburger-menu" title="Menu" aria-label="Show site sections">
+							<a href="/site_sections.html" class="hamburger-menu" aria-label="Show site sections">
 								<i class="fa fa-bars" aria-hidden="true"></i>
 							</a>
 						</nav>
@@ -140,7 +140,7 @@
 	
 				<div data-include="footer"></div>
 		
-				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" title="Scroll to top" tabindex="0">Top</button>
+				<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" tabindex="0">Top</button>
 				<xsl:if test="/TEI/text[contains(@n,'cedarville')]"><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'dancing')]"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"></link></xsl:if>
 				<xsl:if test="/TEI/text[contains(@n,'parisienne')]"><link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet"></link></xsl:if>
@@ -497,17 +497,17 @@
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='manuscript']">
 					<section id="transcription-switches" class="manuscript-switches">
-						<label for="remove-color" class="md_switch" title="Color: On/Off">
+						<label for="remove-color" class="md_switch" aria-label="Color: On/Off">
 							<xsl:text>Remove Color</xsl:text>
 							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color" id="remove-color" checked="" />
 							<span class="md_switch__toggle"></span>
 					 	</label>
-					 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+					 	<label for="invert" class="md_switch" aria-label="Color Inversion: On/Off">
 							<xsl:text>Invert</xsl:text>
 							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
 							<span class="md_switch__toggle"></span>
 					 	</label>
-					 	<label for="remove-rotation" class="md_switch" title="Rotation: On/Off">
+					 	<label for="remove-rotation" class="md_switch" aria-label="Rotation: On/Off">
 							<xsl:text>Remove Rotation</xsl:text>
 							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-rotation" checked="" />
 							<span class="md_switch__toggle"></span>
@@ -581,12 +581,12 @@
 				</xsl:when>
 				<xsl:when test="//sourceDesc/biblStruct[@type='journal']">
 					<section id="transcription-switches" class="journal-switches">
-					 	<label for="invert" class="md_switch" title="Color Inversion: On/Off">
+					 	<label for="invert" class="md_switch" aria-label="Color Inversion: On/Off">
 							<xsl:text>Invert</xsl:text>
 							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle color inversion" id="invert" checked="" />
 							<span class="md_switch__toggle"></span>
 					 	</label>
-					 	<label for="remove-justification" class="md_switch" title="Justification: On/Off">
+					 	<label for="remove-justification" class="md_switch" aria-label="Justification: On/Off">
 							<xsl:text>Remove Justification</xsl:text>
 							<input type="checkbox" role="switch" data-toggle="button" aria-checked="true" aria-label="Toggle rotation" id="remove-justification" checked="" />
 							<span class="md_switch__toggle"></span>
@@ -1055,7 +1055,7 @@
 				<!--<br/><br/><br/>-->
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}"  id="{$rotate-id}">
 					<a href="{$figure-facs}">	
-						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/><!-- removed: title="{normalize-space($caption)}" -->
 						<div class="image-overlay"></div>
 					</a>
 				</span>
@@ -1064,17 +1064,17 @@
 				<div data-include="empty-file">
 					<style>#rotate-button{display: none !important;visibility: hidden !important;}</style>
 				</div>
-				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
+				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x"></i></a></div></div>--><!-- removed: title="Download Image (JPEG)" -->
 			</xsl:when>
 			<!-- This option used for all other object images -->
 			<xsl:when test="contains(@n,'hist-object')">
 				<span class="{concat(name(), ' ', @rend, ' ', @n)}">
 					<a href="{$figure-facs}">	
-						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}" title="{normalize-space($caption)}"/>
+						<img loading="lazy" src="{$graphic-url}" srcset="{$graphic-facs}" sizes="{$graphic-n}" alt="{$altText}"/><!-- removed:  title="{normalize-space($caption)}" -->
 						<div class="image-overlay"></div>
 					</a>
 				</span>
-				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x" title="Download Image (JPEG)"></i></a></div></div>-->
+				<!--<div class="download"><div><a href="{$graphic-url}" download="">Download Image (JPEG) <i class="fa fa-arrow-down fa-.8x"></i></a></div></div>--><!-- removed: title="Download Image (JPEG)" -->
 			</xsl:when>
 			<!-- The following used for images in TEI files. -->
 			<xsl:when test="'[child::graphic]'">

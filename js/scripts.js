@@ -78,20 +78,6 @@ function RandomiseHref(){
 };
 
 
-// Prevents the title attribute from appearing in a tooltip on mouseover on images
-// Adapted from https://spigotdesign.com/hide-title-attribute-hover-dont-remove/
-$("img").hover(function(){
-	var title = $(this).attr("title");
-	$(this).attr("tmp_title", title);
-	$(this).attr("title","");	
-});
-
-$("img").click(function(){
-	var title = $(this).attr("tmp_title");
-	$(this).attr("title", title);
-});
-
-
 // Creates unique page-visit stamp
 // Adapted from https://stackoverflow.com/a/4929629 and https://stackoverflow.com/a/10211214
 

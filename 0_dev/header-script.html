@@ -35,3 +35,19 @@
 				});
 			}
 		</script>
+
+
+<script>
+  const redirects = {
+    "/old-page-1": "https://your-new-url.com/new-page-1",
+    "/old-page-2": "https://your-new-url.com/new-page-2",
+    // Add more redirects as needed
+  };
+
+  const currentPath = window.location.pathname;
+  if (redirects[currentPath]) {
+    window.location.replace(redirects[currentPath]);
+  } else {
+    document.write("Page not found.");
+  }
+</script>

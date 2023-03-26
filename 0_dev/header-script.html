@@ -1,0 +1,37 @@
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				if (!isFontAwesomeLoaded()) {
+					replaceIconsWithText();
+				}
+			});
+		
+			function isFontAwesomeLoaded() {
+				const testElement = document.createElement('span');
+				testElement.className = 'fa';
+				document.body.appendChild(testElement);
+				const isLoaded = window.getComputedStyle(testElement).getPropertyValue('font-family') === 'FontAwesome';
+				document.body.removeChild(testElement);
+				return isLoaded;
+			}
+		
+			function replaceIconsWithText() {
+				const icons = [
+					{ selector: '.fa-bars', text: 'Menu' },
+					{ selector: '.fa-times', text: 'Close' },
+					{ selector: '.fa-map-marker', text: 'Site Map' },
+					{ selector: '.fa-home', text: 'Home' },
+					{ selector: '.fas.fa-envelope', text: 'Email' },
+					{ selector: '.fa-brands.fa-github-alt', text: 'GitHub' },
+					{ selector: '.fa.fa-zotero', text: 'Zotero' },
+					{ selector: '.fa-info-circle', text: 'Info' },
+				];
+		
+				icons.forEach(icon => {
+					const elements = document.querySelectorAll(icon.selector);
+					elements.forEach(element => {
+						const textNode = document.createTextNode(icon.text);
+						element.parentNode.replaceChild(textNode, element);
+					});
+				});
+			}
+		</script>

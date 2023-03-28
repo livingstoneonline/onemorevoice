@@ -35,35 +35,3 @@
 				});
 			}
 		</script>
-
-
-<script>
-	const redirects = {
-		// current pages
-		"/acknowledgments.html": "/html/documents/contributors.html",
-		"/analytical_priorities.html": "/html/documents/analytical_priorities.html",
-		"/bibliography.html": "/html/bibliography.html",
-		"/books.html": "/html/materials/books.html",
-		"/collaboration.html": "/html/documents/collaboration.html",
-		"/contributors.html": "/html/documents/contributors.html",
-		"/documents.html": "/html/documents.html",
-		"/essays.html": "/html/essays.html",
-		"/initiatives.html": "/html/materials/initiatives.html",
-		"/materials.html": "/html/materials.html",
-		"/mission_statement.html": "/html/documents/mission_statement.html",
-		"/motion_pictures.html": "/html/materials/motion_pictures.html",
-		"/project_design.html": "/html/documents/project_design.html",
-		"/texts.html": "/html/materials/texts.html",
-		"/visual_materials.html": "/html/materials/visual_materials.html",
-		// removed pages
-		"/artifacts.html": "/html/materials/visual_materials.html",
-		"/objects.html": "/html/materials/visual_materials.html",
-		"/collections.html": "/html/materials/initiatives.html",
-	};
-  const currentPath = window.location.pathname;
-  if (redirects[currentPath]) {
-    window.location.replace(redirects[currentPath]);
-  } else {
-    document.write("Page not found.");
-  }
-</script>

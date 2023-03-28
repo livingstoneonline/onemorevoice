@@ -106,7 +106,7 @@
 					<nav class="breadcrumbs">
 						<ul>
 							<li id="level-1"><a href="/">Home</a></li>
-							<li id="level-2"><a href="/materials.html">Historical Materials</a></li>
+							<li id="level-2"><a href="/html/materials.html">Historical Materials</a></li>
 							<li id="level-3"><a href="{$material-link}"><xsl:value-of select="$material"/></a></li>
 							<li id="level-4"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></li>
 						</ul>

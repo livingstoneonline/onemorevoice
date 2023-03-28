@@ -85,7 +85,7 @@
 			<xsl:variable name="material-link">
 				<xsl:choose>
 					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">/html/visual_materials.html</xsl:when>
-					<xsl:otherwise>/html/texts.html</xsl:otherwise>
+					<xsl:otherwise>/html/materials/texts.html</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
 	
@@ -438,7 +438,7 @@
 		<!-- <xsl:variable name="subtitle">
 			<xsl:choose>
 				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><span class="lead-in">Back to:</span><a href="/html/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
-				<xsl:otherwise><span class="lead-in">Back to:</span><a href="/html/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
+				<xsl:otherwise><span class="lead-in">Back to:</span><a href="/html/materials/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable> -->
 		<xsl:variable name="subtitle-icon">

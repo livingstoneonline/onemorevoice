@@ -14,6 +14,36 @@
 		<link rel="preload" as="style" href="/css/style.css?=newVers_0024" onload="this.rel='stylesheet'"/>
 		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" onload="this.rel='stylesheet'" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<script>
+			const redirects = {
+				// current pages
+				"/acknowledgments.html": "/html/documents/contributors.html",
+				"/analytical_priorities.html": "/html/documents/analytical_priorities.html",
+				"/bibliography.html": "/html/bibliography.html",
+				"/books.html": "/html/materials/books.html",
+				"/collaboration.html": "/html/documents/collaboration.html",
+				"/contributors.html": "/html/documents/contributors.html",
+				"/documents.html": "/html/documents.html",
+				"/essays.html": "/html/essays.html",
+				"/initiatives.html": "/html/materials/initiatives.html",
+				"/materials.html": "/html/materials.html",
+				"/mission_statement.html": "/html/documents/mission_statement.html",
+				"/motion_pictures.html": "/html/materials/motion_pictures.html",
+				"/project_design.html": "/html/documents/project_design.html",
+				"/texts.html": "/html/materials/texts.html",
+				"/visual_materials.html": "/html/materials/visual_materials.html",
+				// removed pages
+				"/artifacts.html": "/html/materials/visual_materials.html",
+				"/objects.html": "/html/materials/visual_materials.html",
+				"/collections.html": "/html/materials/initiatives.html",
+			};
+			const currentPath = window.location.pathname;
+			if (redirects[currentPath]) {
+				window.location.replace(redirects[currentPath]);
+			} else {
+				document.write("Page not found.");
+			}
+		</script>
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0024"/>
 			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -85,7 +115,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
 			// Created with ChatGPT (https://chat.openai.com/chat)
-			if(window.location.pathname==='/artifacts.html'){window.location.href('/html/materials/visual_materials.html')}if(window.location.pathname==='/objects.html'){window.location.href('/html/materials/visual_materials.html')}if(window.location.pathname==='/collections.html'){window.location.href('/html/materials/initiatives.html')}
+			// if(window.location.pathname==='/artifacts.html'){window.location.href('/html/materials/visual_materials.html')}if(window.location.pathname==='/objects.html'){window.location.href('/html/materials/visual_materials.html')}if(window.location.pathname==='/collections.html'){window.location.href('/html/materials/initiatives.html')}
 		</script>
 		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264

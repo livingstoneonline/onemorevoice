@@ -75,8 +75,6 @@
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""></link>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap"></link>
 				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0025"></link>
-				<script src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5" async=""></script>
-				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->

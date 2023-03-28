@@ -39,6 +39,7 @@
 
 <script>
 	const redirects = {
+		// current pages
 		"/acknowledgments.html": "/html/documents/contributors.html",
 		"/analytical_priorities.html": "/html/documents/analytical_priorities.html",
 		"/bibliography.html": "/html/bibliography.html",
@@ -54,6 +55,10 @@
 		"/project_design.html": "/html/documents/project_design.html",
 		"/texts.html": "/html/materials/texts.html",
 		"/visual_materials.html": "/html/materials/visual_materials.html",
+		// removed pages
+		"/artifacts.html": "/html/materials/visual_materials.html",
+		"/objects.html": "/html/materials/visual_materials.html",
+		"/collections.html": "/html/materials/initiatives.html",
 	};
   const currentPath = window.location.pathname;
   if (redirects[currentPath]) {

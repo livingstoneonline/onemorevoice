@@ -38,11 +38,11 @@
 
 
 <script>
-  const redirects = {
-    "/old-page-1": "https://your-new-url.com/new-page-1",
-    "/old-page-2": "https://your-new-url.com/new-page-2",
-    // Add more redirects as needed
-  };
+	const redirects = {
+		"/acknowledgments.html": "/html/acknowledgments.html",
+		"/old-page-2": "https://your-new-url.com/new-page-2",
+		// Add more redirects as needed
+	};
 
   const currentPath = window.location.pathname;
   if (redirects[currentPath]) {

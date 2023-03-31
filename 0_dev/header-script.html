@@ -1,10 +1,12 @@
 		<script>
+			// This code waits for the initial HTML document to load, and then checks if the FontAwesome font has been loaded. If it has not been loaded, the function to replace icons with text is called.
 			document.addEventListener('DOMContentLoaded', function() {
 				if (!isFontAwesomeLoaded()) {
 					replaceIconsWithText();
 				}
 			});
 		
+			// The isFontAwesomeLoaded() function is defined. This function checks if the FontAwesome font has been loaded on the webpage. If it hasn't been loaded, it returns false. Otherwise, it returns true.
 			function isFontAwesomeLoaded() {
 				const testElement = document.createElement('span');
 				testElement.className = 'fa';
@@ -14,6 +16,8 @@
 				return isLoaded;
 			}
 		
+			// The replaceIconsWithText() function is defined. This function replaces Font Awesome icons with their corresponding text equivalents or some other placeholder, so that the user still sees some indication of the intended icon even if the font fails to load.
+			// The replaceIconsWithText() function defines an array of objects called icons. Each object specifies a CSS selector that matches a Font Awesome icon and a corresponding text equivalent or some other placeholder.
 			function replaceIconsWithText() {
 				const icons = [
 					{ selector: '.fa-bars', text: 'Menu' },
@@ -25,12 +29,16 @@
 					{ selector: '.fa.fa-zotero', text: 'Zotero' },
 				];
 		
-				icons.forEach(icon => {
-					const elements = document.querySelectorAll(icon.selector);
-					elements.forEach(element => {
-						const textNode = document.createTextNode(icon.text);
-						element.parentNode.replaceChild(textNode, element);
+				// For each matching element, a new text node is created using the createTextNode() method and the corresponding text from the icons array. Then, the replaceChild() method is used to replace the Font Awesome icon element with the new text node.				
+				const navContainer = document.querySelector('.nav-container');
+				if (navContainer) {
+					icons.forEach(icon => {
+						const elements = navContainer.querySelectorAll(icon.selector);
+						elements.forEach(element => {
+							const textNode = document.createTextNode(icon.text);
+							element.parentNode.replaceChild(textNode, element);
+						});
 					});
-				});
+				}
 			}
 		</script>

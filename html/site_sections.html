@@ -162,5 +162,86 @@
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0022";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	// This script uses the fetch() API to send a network request to the Font Awesome and Fork Awesome CSS files URLs and check whether each exists and can be retrieved. If the request succeeds and the files can be retrieved, the script logs a positive the message. If the request fails due to a network error or other issue, the catch block logs a negative message.
+	// This script first checks for the Font Awesome CSS file using fetch() and logs a message if it succeeds or fails. Then it checks for the Fork Awesome CSS file using fetch() and logs a message if it succeeds or fails. The script checks each file independently and notes an error if either file fails to load.
+	// Note that this script does not rely on the browser's cache and does require a network connection to make the request and check the response status. If you're offline, the script will note that the files cannot be accessed.
+	const fontAwesomeUrl = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
+	const forkAwesomeUrl = "https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css";
+
+	fetch(fontAwesomeUrl, { method: "HEAD" })
+		.then(response => {
+			if (response.ok) {
+				console.log("Font Awesome CSS file has accessed.");
+			} else {
+				console.log("Font Awesome CSS file cannot be accessed.");
+			}
+		})
+		.catch(error => {
+			console.log("Font Awesome CSS file cannot be accessed.");
+		});
+
+	fetch(forkAwesomeUrl, { method: "HEAD" })
+		.then(response => {
+			if (response.ok) {
+				console.log("Fork Awesome CSS file has accessed.");
+			} else {
+				console.log("Fork Awesome CSS file cannot be accessed.");
+			}
+		})
+		.catch(error => {
+			console.log("Fork Awesome CSS file cannot be accessed.");
+		});
+
+	});
+	// This code waits for the initial HTML document to load, and then checks if the FontAwesome font has been loaded. If it has not been loaded, the function to replace icons with text is called.
+	// document.addEventListener('DOMContentLoaded', function() {
+	// 	if (!isFontAwesomeLoaded()) {
+	// 		replaceIconsWithText();
+	// 	}
+	// });
+
+	// The isFontAwesomeLoaded() function is defined. This function checks if the FontAwesome font has been loaded on the webpage. If it hasn't been loaded, it returns false. Otherwise, it returns true.
+	// function isFontAwesomeLoaded() {
+	// 	const testElement = document.createElement('span');
+	// 	testElement.className = 'fa';
+	// 	document.body.appendChild(testElement);
+	// 	const isLoaded = window.getComputedStyle(testElement).getPropertyValue('font-family') === 'FontAwesome';
+	// 	document.body.removeChild(testElement);
+	// 	return isLoaded;
+	// }
+
+	// The replaceIconsWithText() function is defined. This function replaces Font Awesome icons with their corresponding text equivalents or some other placeholder, so that the user still sees some indication of the intended icon even if the font fails to load.
+	// The replaceIconsWithText() function defines an array of objects called icons. Each object specifies a CSS selector that matches a Font Awesome icon and a corresponding text equivalent or some other placeholder.
+	// function replaceIconsWithText() {
+	// 	const icons = [
+	// 		{ selector: '.fa-bars', text: 'Menu' },
+	// 		{ selector: '.fa-times', text: 'Close' },
+	// 		{ selector: '.fa-map-marker', text: 'Site Map' },
+	// 		{ selector: '.fa-home', text: 'Home' },
+	// 		{ selector: '.fas.fa-envelope', text: 'Email' },
+	// 		{ selector: '.fa-brands.fa-github-alt', text: 'GitHub' },
+	// 		{ selector: '.fa.fa-zotero', text: 'Zotero' },
+	// 	];
+
+		// For each matching element, a new text node is created using the createTextNode() method and the corresponding text from the icons array. Then, the replaceChild() method is used to replace the Font Awesome icon element with the new text node.				
+	// 	const navContainer = document.querySelector('.nav-container');
+	// 	if (navContainer) {
+	// 		icons.forEach(icon => {
+	// 			const elements = navContainer.querySelectorAll(icon.selector);
+	// 			elements.forEach(element => {
+	// 				const textNode = document.createTextNode(icon.text);
+	// 				element.parentNode.replaceChild(textNode, element);
+	// 			});
+	// 		});
+	// 	}
+	// }
+
+	// $(document).ready(function(){loadScript("/js/scripts.js?=newVers_0007")});function loadScript(src){var script=document.createElement("script");script.src=src;document.body.appendChild(script)}
+</script>
+
+
 	</body>
 </html>

@@ -164,6 +164,7 @@
 		</script>
 
 <script>
+// replaces font awesome and fork awesome icons in nav with text equivalents if either script fails to load and hides such icons elsewhere on the page
 document.addEventListener('DOMContentLoaded', function() {
 	// This script uses the fetch() API to send a network request to the Font Awesome and Fork Awesome CSS files URLs and check whether each exists and can be retrieved. If the request succeeds and the files can be retrieved, the script logs a positive the message. If the request fails due to a network error or other issue, the catch block logs a negative message.
 	// This script first checks for the Font Awesome CSS file using fetch() and logs a message if it succeeds or fails. Then it checks for the Fork Awesome CSS file using fetch() and logs a message if it succeeds or fails. The script checks each file independently and notes an error if either file fails to load.
@@ -226,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// The function will loop through the array and query the document.body for each class name. For each matching element, the function sets the CSS display and visibility properties to none and hidden, respectively, to hide the element.
 	function hideElementsWithClasses() {
-		const classes = ['class1', 'class2', 'class3'];
+		const classes = ['fa-home', 'fa-box-archive', 'fa-pen-clip', 'fa-book-open-reader', 'fa-folder-open', 'fa-code-merge', 'fa-user-large', 'fa-map-marker', 'fa-github-alt', 'fa-zotero', 'fa-envelope', 'fa-info-circle', 'caption-icon'];
 		const bodyElements = document.querySelectorAll('body *:not(.nav-container)');
 		bodyElements.forEach(element => {
 			classes.forEach(className => {
@@ -237,7 +238,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		});
 	}
-
 });
 </script>
 

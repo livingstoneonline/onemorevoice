@@ -198,22 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-	// This code waits for the initial HTML document to load, and then checks if the FontAwesome font has been loaded. If it has not been loaded, the function to replace icons with text is called.
-	// document.addEventListener('DOMContentLoaded', function() {
-	// 	if (!isFontAwesomeLoaded()) {
-	// 		replaceIconsWithText();
-	// 	}
-	// });
 
-	// The isFontAwesomeLoaded() function is defined. This function checks if the FontAwesome font has been loaded on the webpage. If it hasn't been loaded, it returns false. Otherwise, it returns true.
-	// function isFontAwesomeLoaded() {
-	// 	const testElement = document.createElement('span');
-	// 	testElement.className = 'fa';
-	// 	document.body.appendChild(testElement);
-	// 	const isLoaded = window.getComputedStyle(testElement).getPropertyValue('font-family') === 'FontAwesome';
-	// 	document.body.removeChild(testElement);
-	// 	return isLoaded;
-	// }
 
 	// The replaceIconsWithText() function is defined. This function replaces Font Awesome icons with their corresponding text equivalents or some other placeholder, so that the user still sees some indication of the intended icon even if the font fails to load.
 	// The replaceIconsWithText() function defines an array of objects called icons. Each object specifies a CSS selector that matches a Font Awesome icon and a corresponding text equivalent or some other placeholder.
@@ -241,7 +226,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	// 	}
 	// }
 
-	// $(document).ready(function(){loadScript("/js/scripts.js?=newVers_0007")});function loadScript(src){var script=document.createElement("script");script.src=src;document.body.appendChild(script)}
 </script>
 
 

@@ -180,16 +180,18 @@ document.addEventListener('DOMContentLoaded', function() {
 				results.push(response.ok);
 				if (results.length === urls.length) {
 					if (results.every(result => result)) {
-						console.log("Both CSS files have been accessed.");
+						console.log("Both the Font Awesome and Fork Awesome CSS files have been accessed.");
 					} else {
-						console.log("Either one or both CSS files cannot be accessed.");
+						console.log("Either one or both of the the Font Awesome and Fork Awesome CSS files cannot be accessed.");
+						replaceIconsWithText();
 					}
 				}
 			})
 			.catch(error => {
 				results.push(false);
 				if (results.length === urls.length) {
-					console.log("Either one or both CSS files cannot be accessed.");
+					console.log("Either one or both of the the Font Awesome and Fork Awesome CSS files cannot be accessed.");
+					replaceIconsWithText();
 				}
 			});
 	});

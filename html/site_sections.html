@@ -164,7 +164,8 @@
 		</script>
 
 <script>
-// replaces font awesome and fork awesome icons in nav with text equivalents if either script fails to load and hides such icons elsewhere on the page
+// Replaces font awesome and fork awesome icons in nav with text if either CSS fails; hides such icons elsewhere on the page
+// Created in collaboration with ChatGPT (https://chat.openai.com/chat) through an extended Q&A process
 document.addEventListener('DOMContentLoaded', function() {
 	// This script uses the fetch() API to send a network request to the Font Awesome and Fork Awesome CSS files URLs and check whether each exists and can be retrieved. If the request succeeds and the files can be retrieved, the script logs a positive the message. If the request fails due to a network error or other issue, the catch block logs a negative message.
 	// This script first checks for the Font Awesome CSS file using fetch() and logs a message if it succeeds or fails. Then it checks for the Fork Awesome CSS file using fetch() and logs a message if it succeeds or fails. The script checks each file independently and notes an error if either file fails to load.

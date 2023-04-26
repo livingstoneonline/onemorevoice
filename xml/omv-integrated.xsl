@@ -75,17 +75,14 @@
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""></link>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&amp;family=Merriweather:wght@400;700;900&amp;family=Source+Sans+Pro:wght@400;600&amp;family=Amaranth:wght@400;700&amp;display=swap"></link>
 				<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0025"></link>
-				<script src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5" async=""></script>
-				<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 			</head>
 
 			<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
-			<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 			<xsl:variable name="material-link">
 				<xsl:choose>
-					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">/visual_materials.html</xsl:when>
-					<xsl:otherwise>/texts.html</xsl:otherwise>
+					<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']">/html/materials/visual_materials.html</xsl:when>
+					<xsl:otherwise>/html/materials/texts.html</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
 	
@@ -106,7 +103,7 @@
 					<nav class="breadcrumbs">
 						<ul>
 							<li id="level-1"><a href="/">Home</a></li>
-							<li id="level-2"><a href="/materials.html">Historical Materials</a></li>
+							<li id="level-2"><a href="/html/materials.html">Historical Materials</a></li>
 							<li id="level-3"><a href="{$material-link}"><xsl:value-of select="$material"/></a></li>
 							<li id="level-4"><xsl:value-of select="//teiHeader//titleStmt/title[1]"/></li>
 						</ul>
@@ -119,7 +116,7 @@
 									<h1>One More Voice</h1>
 								</a>
 							</span>
-							<a href="/site_sections.html" class="hamburger-menu" aria-label="Show site sections">
+							<a href="/html/site_sections.html" class="hamburger-menu" aria-label="Show site sections">
 								<i class="fa fa-bars" aria-hidden="true"></i>
 							</a>
 						</nav>
@@ -158,7 +155,7 @@
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 				<script>
 					// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
+					$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0010';$(this).load(file)})});
 				</script>
 				<script>
 					//Scroll to top button; adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
@@ -183,9 +180,10 @@
 				<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 				<script>
 					// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0021";document.body.appendChild(element)});
+					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0022";document.body.appendChild(element)});
 					$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 				</script>
+				<script src="/js/replace-fa-icons.js" async></script>
 			</body>
 		</html>
 	</xsl:template>
@@ -437,8 +435,8 @@
 		</xsl:variable>
 		<!-- <xsl:variable name="subtitle">
 			<xsl:choose>
-				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><span class="lead-in">Back to:</span><a href="/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
-				<xsl:otherwise><span class="lead-in">Back to:</span><a href="/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
+				<xsl:when test="//sourceDesc/msDesc[@type='object-archive']|//sourceDesc/biblStruct[@type='object-book-journal']"><span class="lead-in">Back to:</span><a href="/html/materials/visual_materials.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-eye" aria-label="Visual Materials icon" aria-hidden="true"></i> <span>Visual Materials</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:when>
+				<xsl:otherwise><span class="lead-in">Back to:</span><a href="/html/materials/texts.html#{$LEAP-ID}"><i class="fa-solid fa-lg fa-map" aria-label="Recovered Texts icon" aria-hidden="true"></i> <span>Recovered Texts</span></a> <a href="#item-details" class="item-details-link"><i class="fa fa-lg fa-info-circle" aria-hidden="true"></i> <span>Item Details</span></a></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable> -->
 		<xsl:variable name="subtitle-icon">

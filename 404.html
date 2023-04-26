@@ -14,6 +14,39 @@
 		<link rel="preload" as="style" href="/css/style.css?=newVers_0024" onload="this.rel='stylesheet'"/>
 		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" onload="this.rel='stylesheet'" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<script>
+			// Created with ChatGPT (https://chat.openai.com/chat)
+			const redirects = {
+				// current pages
+				"/acknowledgments.html": "/html/documents/contributors.html",
+				"/analytical_priorities.html": "/html/documents/analytical_priorities.html",
+				"/bibliography.html": "/html/bibliography.html",
+				"/books.html": "/html/materials/books.html",
+				"/collaboration.html": "/html/documents/collaboration.html",
+				"/contributors.html": "/html/documents/contributors.html",
+				"/documents.html": "/html/documents.html",
+				"/essays.html": "/html/essays.html",
+				"/initiatives.html": "/html/materials/initiatives.html",
+				"/materials.html": "/html/materials.html",
+				"/mission_statement.html": "/html/documents/mission_statement.html",
+				"/motion_pictures.html": "/html/materials/motion_pictures.html",
+				"/project_design.html": "/html/documents/project_design.html",
+				"/site_map.html.html": "/html/documents/sitemap.html",
+				"/site_sections.html.html": "/html/documents/site_sections.html",
+				"/texts.html": "/html/materials/texts.html",
+				"/visual_materials.html": "/html/materials/visual_materials.html",
+				// removed pages
+				"/artifacts.html": "/html/materials/visual_materials.html",
+				"/objects.html": "/html/materials/visual_materials.html",
+				"/collections.html": "/html/materials/initiatives.html",
+			};
+			const currentPath = window.location.pathname;
+			if (redirects[currentPath]) {
+				window.location.replace(redirects[currentPath]);
+			} else {
+				document.write("Page not found.");
+			}
+		</script>
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0024"/>
 			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -23,13 +56,10 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&family=Amaranth:wght@400;700&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" type="text/css" href="/css/critical.css?=newVers_0025"/>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
-		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-31768072-5');</script>
 		<style>.image-wrapper::after{padding-bottom:calc((393/698)*100%)}</style>
 	</head>
 
 	<!-- Site code first adapted from Adrian S. Wisnicki's Fieldwork of Empire website (https://awisnicki.github.io/fieldwork_of_empire/) which is released under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc/4.0/). -->
-	<!-- Informed throughout by https://w3c.github.io/aria-practices/examples/ -->
 
 	<body class="essay materials error404" id="body">
 
@@ -52,7 +82,7 @@
 							<h1>One More Voice</h1>
 						</a>
 					</span>
-					<a href="/site_sections.html" class="hamburger-menu" aria-label="Show site sections">
+					<a href="/html/site_sections.html" class="hamburger-menu" aria-label="Show site sections">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 				</nav>
@@ -71,7 +101,7 @@
 					<span>
 						<h2 id="error404">404 Error</h2>
 						<p>Page not found! Get some help:</p>
-						<a class="action-button primary" href="/site_map.html" aria-label="Go to Site Map">Site Map <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+						<a class="action-button primary" href="/html/sitemap.html" aria-label="Go to Site Map">Site Map <i class="fa fa-map-marker" aria-hidden="true"></i></a>
 						<p> ... or click on the Menu  <span><i class="fa fa-bars" aria-hidden="true"></i></span> above.</p>
 					</span>
 				</div>
@@ -84,22 +114,15 @@
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
-			// Created with ChatGPT (https://chat.openai.com/chat) using a form of the following command: "Create a series of permanent redirects in my 404 file using jQuery."
-			if(window.location.pathname==='/artifacts.html'){window.location.replace('/visual_materials.html', '301' )}if(window.location.pathname==='/objects.html'){window.location.replace('/visual_materials.html', '301')}if(window.location.pathname==='/collections.html'){window.location.replace('/initiatives.html', '301')}
-		</script>
-		<script>
 			// Includes HTML snippets; adapted from https://stackoverflow.com/a/31837264
-			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0009';$(this).load(file)})});
-		</script>
-		<script>
-			//Scroll to top button; adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-			var mybutton=document.getElementById("topButton");window.onscroll=function(){scrollFunction()};function scrollFunction(){if(document.body.scrollTop>700||document.documentElement.scrollTop>700){mybutton.style.display="flex";mybutton.style.visibility="visible"}else{mybutton.style.display="none";mybutton.style.visibility="hidden"}};function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0};
+			$(function(){var includes=$('[data-include]');jQuery.each(includes,function(){var file='/common/'+$(this).data('include')+'.html?=newVers_0010';$(this).load(file)})});
 		</script>
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en'},'google_translate_element')}</script>
 		<script>
 			// Loads scripts after page load; adapted from https://learn.jquery.com/using-jquery-core/document-ready/ and https://stackoverflow.com/a/39179486
-			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0021";document.body.appendChild(element)});
+			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="/js/scripts.js?=newVers_0022";document.body.appendChild(element)});
 			$(window).on("load",function(){var element=document.createElement("script");element.type="text/javascript";element.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";document.body.appendChild(element)});
 		</script>
+		<script src="/js/replace-fa-icons.js" async></script>
 	</body>
 </html>

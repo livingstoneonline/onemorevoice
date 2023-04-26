@@ -9,6 +9,36 @@ if ("serviceWorker" in navigator) {
 };
 
 
+// Scroll to top button
+// Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// Original coding improved by ChatGPT (https://chat.openai.com/chat) by making the scroll smooth instead of sudden.
+var mybutton = document.getElementById("topButton");
+window.onscroll = function () {
+		scrollFunction()
+};
+function scrollFunction() {
+		if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+				mybutton.style.display = "flex";
+				mybutton.style.visibility = "visible"
+		} else {
+				mybutton.style.display = "none";
+				mybutton.style.visibility = "hidden"
+		}
+};
+function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0
+};
+// When the user clicks on the button, smoothly scroll to the top of the document
+function topFunction() {
+  var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  if (currentScroll > 0) {
+    window.requestAnimationFrame(topFunction);
+    window.scrollTo(0, currentScroll - (currentScroll / 8));
+  }
+}
+
+
 // Overlay
 // Adapted from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
@@ -97,17 +127,34 @@ function RandomiseHref(){
 // }
 
 
+// Increases site security
 // Needed to prevent a "Best Practices" issue created by Google Translate
 // Adapted from https://social.technet.microsoft.com/Forums/en-US/809eaecb-fc3b-40e2-ae0b-f2d79feb58b0/need-easy-way-to-force-all-links-to-open-in-new-tab
+// Original coding improved by ChatGPT (https://chat.openai.com/chat) by implementing more security measures, such as using HTTPS, enabling Content Security Policy (CSP), and using secure cookies.
 
-AddRelNoopener();
+function AddRelNoopener() {
+  var links = document.querySelectorAll("a");
+  for (var i = 0; i < links.length; i++) {
+    // Set rel="noopener" to prevent the target page from accessing the window.opener object, which can be a security risk.
+    links[i].setAttribute("rel", "noopener");
 
-function AddRelNoopener(){
-		var links = document.querySelectorAll("a");
-		for(var i = 0; i < links.length; i++){
-				links[i].setAttribute("rel","noopener");
-		}
-};
+    // Set href to use HTTPS if it's not already.
+    var url = new URL(links[i].href);
+    if (url.protocol !== "https:") {
+      url.protocol = "https:";
+      links[i].href = url.toString();
+    }
+  }
+
+  // Enable Content Security Policy (CSP) to restrict which resources can be loaded on the page.
+  var csp = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';";
+  document.head.appendChild(document.createElement('meta')).setAttribute('http-equiv', 'Content-Security-Policy');
+  document.head.querySelector('[http-equiv="Content-Security-Policy"]').setAttribute('content', csp);
+
+  // Use secure cookies to prevent session hijacking.
+  var secureCookieOptions = { secure: true, sameSite: 'strict' };
+  document.cookie = "cookieName=cookieValue; " + Object.entries(secureCookieOptions).map(([k, v]) => `${k}=${v}`).join('; ');
+}
 
 
 // Removes unused Google script that also registers an unload listener

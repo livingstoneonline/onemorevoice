@@ -63,11 +63,11 @@
 				<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"></link>
 				<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"></link>
 				<link rel="manifest" href="/site.webmanifest"></link>
-				<link rel="preload" as="style" href="/css/style.css?=newVers_0024" onload="this.rel='stylesheet'"></link>
+				<link rel="preload" as="style" href="/css/style.css?=newVers_0025" onload="this.rel='stylesheet'"></link>
 				<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" onload="this.rel='stylesheet'" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 				<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" onload="this.rel='stylesheet'" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 				<noscript>
-					<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0024"></link>
+					<link rel="stylesheet" type="text/css" href="/css/style.css?=newVers_0025"></link>
 					<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 					<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
 				</noscript>

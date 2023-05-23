@@ -8,15 +8,16 @@
 
 /* warning box for timeline page */
 aside.warning-box.bv-pieces{
-  font-size: 1.05rem;
-  border-top: 4px solid #85454B;
-  border-bottom: 4px solid #85454B;
+  font-size: 1rem;
+  border-top: 5px solid #85454B;
+  border-bottom: 5px solid #85454B;
   border-right: 1px solid #bdc2bd;
   border-left: 1px solid #bdc2bd;
   margin-top: 1.5rem;
 }
 @media only screen and (min-width: 992px){
   aside.warning-box.bv-pieces{
+    font-size: 1.05rem;
     margin-top: 4rem;
   }
 }

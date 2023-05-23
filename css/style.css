@@ -3729,6 +3729,25 @@ details:focus-within ::marker{
 .authorship.mobile p{
 	margin: .75rem 0;
 }
+/* font-size and space above/below on warning box */
+aside.warning-box.bv-essay{
+	font-size: 1rem;
+	margin: 1.5rem auto .5rem;
+}
+@media only screen and (min-width: 768px){
+	aside.warning-box.bv-essay{
+		margin: 1.5rem auto 0;
+	}
+}
+@media only screen and (min-width: 992px){
+	aside.warning-box.bv-essay{
+		font-size: 1.05rem;
+		margin: 4rem auto 0;
+	}
+	aside.warning-box.bv-essay + .toc{
+		margin-top: 4rem;
+	}
+}
 
 
 /* Safari Support: Mobile and Safari below 14.1 */

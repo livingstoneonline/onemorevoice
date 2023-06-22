@@ -10,7 +10,7 @@ Blue: #43585A;
 Brown: #675542;
 */
 
-/* combo #2: yellow border left, yellow border bottom, blue frame */
+/* combo #2 variant: yellow border left, yellow border bottom, blue frame */
 .materials.ivens-craft h2{
 	border-left: 12px solid #dcd3a6;
 }
@@ -24,7 +24,17 @@ Brown: #675542;
 	background: #8db7bf;
 }
 
+/* text box on hover/focus */
 .ivens-craft a:hover,
 .ivens-craft a:focus{
 	outline: 3px solid #e3b382;
+}
+
+/* random blue elements */
+h2,
+h3,
+.toc > ol:first-child:before,
+a,
+a:visited{
+	color: #305056;
 }

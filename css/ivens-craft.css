@@ -4,30 +4,18 @@
 
 /********************/
 
-/* 
-Green: #3C5847; 
-Blue: #43585A;
-Brown: #675542;
-*/
-
 /* combo #2 variant: yellow border left, yellow border bottom, blue frame */
 .materials.ivens-craft h2{
-	border-left: 12px solid #dcd3a6;
+	border-left: 12px solid #9EB5E1;
 }
 .materials.ivens-craft h3{
-	border-bottom: 8px solid #dcd3a6;
+	border-bottom: 8px solid #9EB5E1;
 }
 .materials.ivens-craft .toc ol:before{
-	border-bottom: 4px solid #dcd3a6;
+	border-bottom: 4px solid #9EB5E1;
 }
 .materials.ivens-craft .content div.decoration{
-	background: #8db7bf;
-}
-
-/* text box on hover/focus */
-.ivens-craft a:hover,
-.ivens-craft a:focus{
-	outline: 3px solid #e3b382;
+	background: #e1ca9e;
 }
 
 /* random blue elements */
@@ -36,5 +24,11 @@ h3,
 .toc > ol:first-child:before,
 a,
 a:visited{
-	color: #305056;
+	color: #223c6e;
+}
+
+/* text box on hover/focus */
+.ivens-craft a:hover,
+.ivens-craft a:focus{
+	outline: 3px solid #c47880;
 }

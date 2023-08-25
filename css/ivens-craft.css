@@ -38,7 +38,7 @@ Light Gray: #808F85;
 
 /* text box on hover/focus */
 .ivens-craft main a:hover,
-.ivens-craft main  a:focus{
+.ivens-craft main a:focus{
 	outline: 3px solid #60103d;
 }
 
@@ -57,44 +57,61 @@ Light Gray: #808F85;
 	background: #212119;
 }
 
-.arrow-container {
-  display: flex;
+.ivens-craft .arrow-container {
+  display: none;
+	visibility: hidden;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: calc(50% - 40.7px);
   z-index: 9999;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 .5rem;
 	line-height: 0;
 }
 
 @media only screen and (min-width: 480px){
-	.arrow-container {
+	.ivens-craft .arrow-container {
 		top: calc(50% - 43.1px);
 	}
 }
 @media only screen and (min-width: 768px){
-	.arrow-container {
+	.ivens-craft .arrow-container {
 		top: calc(50% - 45.6px);
 	}
 }
 @media only screen and (min-width: 1200px){
-	.arrow-container {
+	.ivens-craft .arrow-container {
 		top: calc(50% - 47.2px);
 	}
 }
 
-.arrow-container a{
+.ivens-craft .arrow-container a{
 	padding: .8rem .1rem;
+	color: #212119;
 	background: #fff;
-	border: 1px solid #212119;
+	border: 1px solid #bdc2bd;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
 
-.arrow-button svg {
+.ivens-craft .arrow-container a:hover,
+.ivens-craft .arrow-container a:focus{
+	outline: 3px solid #60103d;
+	/* outline: none;
+	background: #212119;
+	color: #fff; */
+}
+
+.ivens-craft .arrow-container .arrow-button a svg {
   width: 26px;
   height: 26px;	
+}
+
+.ivens-craft div#arrow-container.arrow-container a#next-arrow.arrow-button
+
+ .ivens-craft .arrow-container .arrow-button a:hover svg,
+.ivens-craft .arrow-container .arrow-button a:focus svg {
+	stroke: #fff;
 }

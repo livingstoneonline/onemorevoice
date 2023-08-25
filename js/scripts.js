@@ -21,7 +21,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-	if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+	if (document.body.scrollTop > 425 || document.documentElement.scrollTop > 425) {
     myarrows.style.display = "flex";
     myarrows.style.visibility = "visible";
   } else {

@@ -9,11 +9,9 @@ Blue: #13135e;
 Yellow: #cac121;
 Dark Gray: #595959; 
 Light Gray: #808F85;
-
 */
-/********************/
 
-/* combo #2 variant: yellow border left, yellow border bottom, blue frame */
+/* Ivens Craft variant: yellow border left, yellow border bottom, red frame */
 .ivens-craft main h2{
 	border-left: 12px solid #cac121;
 }
@@ -27,7 +25,7 @@ Light Gray: #808F85;
 	background: #4f0d32;
 }
 
-/* random blue elements */
+/* blue for random elements */
 .ivens-craft main h2,
 .ivens-craft main h3,
 .ivens-craft main .toc > ol:first-child:before,
@@ -36,82 +34,98 @@ Light Gray: #808F85;
 	color: #13135e;
 }
 
-/* text box on hover/focus */
+/* text box coloring on hover/focus */
 .ivens-craft main a:hover,
 .ivens-craft main a:focus{
 	outline: 3px solid #60103d;
 }
 
+/* scroll to top button coloring */
 .ivens-craft #topbutton{
 	background: #595959;
 }
 
 .ivens-craft #topButton:hover, 
-.ivens-craft #topButton:focus {
+.ivens-craft #topButton:focus{
   color: #595959;
   background: #fff;
   border: 2px solid #595959;
 }
 
+/* footer background */
 .ivens-craft footer{
 	background: #212119;
 }
 
-.ivens-craft .arrow-container {
-  display: none;
+/* page side arrow containter */
+.ivens-craft .arrow-container{
+  line-height: 0;
+	padding: 0 .75rem;
+	width: 100%;
+	align-items: center;
+	position: fixed;
+	display: none;
 	visibility: hidden;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
   top: calc(50% - 40.7px);
-  z-index: 9999;
-  width: 100%;
-  padding: 0 .5rem;
-	line-height: 0;
+	left: 0;
+	right: 0;
+	z-index: 75;
 }
-
 @media only screen and (min-width: 480px){
-	.ivens-craft .arrow-container {
+	.ivens-craft .arrow-container{
+		padding: 0 1rem;
 		top: calc(50% - 43.1px);
 	}
 }
 @media only screen and (min-width: 768px){
-	.ivens-craft .arrow-container {
+	.ivens-craft .arrow-container{
+		padding: 0 1.25rem;
 		top: calc(50% - 45.6px);
 	}
 }
+@media only screen and (min-width: 992px){
+	.ivens-craft .arrow-container{
+		padding: 0 1.75rem;
+	}
+}
 @media only screen and (min-width: 1200px){
-	.ivens-craft .arrow-container {
+	.ivens-craft .arrow-container{
+		padding: 0 2.25rem;
 		top: calc(50% - 47.2px);
 	}
 }
 
+/* link on individual arrows */
 .ivens-craft .arrow-container a{
-	padding: .8rem .1rem;
 	color: #212119;
 	background: #fff;
 	border: 1px solid #bdc2bd;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+	padding: .8rem .1rem;
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft .arrow-container a{
+		border: 1px solid #212119;
+	}
 }
 
+/* individual arrows outline on hover/focus */
 .ivens-craft .arrow-container a:hover,
 .ivens-craft .arrow-container a:focus{
 	outline: 3px solid #60103d;
-	/* outline: none;
-	background: #212119;
-	color: #fff; */
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft .arrow-container a:hover,
+.ivens-craft .arrow-container a:focus{
+	outline: 3px solid #fff;
+}
 }
 
-.ivens-craft .arrow-container .arrow-button a svg {
+/* individual arrow graphic */
+.ivens-craft .arrow-container .arrow-button a svg{
   width: 26px;
   height: 26px;	
-}
-
-.ivens-craft div#arrow-container.arrow-container a#next-arrow.arrow-button
-
- .ivens-craft .arrow-container .arrow-button a:hover svg,
-.ivens-craft .arrow-container .arrow-button a:focus svg {
-	stroke: #fff;
 }

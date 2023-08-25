@@ -24,7 +24,6 @@ Light Gray: #808F85;
 .ivens-craft main .content div.decoration{
 	background: #4f0d32;
 }
-
 /* blue for random elements */
 .ivens-craft main h2,
 .ivens-craft main h3,
@@ -33,30 +32,28 @@ Light Gray: #808F85;
 .ivens-craft main a:visited{
 	color: #13135e;
 }
-
+/* Ivens Craft edition button on hover/focus */
+.ivens-craft #bv-project a:hover,
+.ivens-craft #bv-project a:focus{
+	background: #0f0f4c;
+	border: 1px solid #0f0f4c;
+}
 /* text box coloring on hover/focus */
 .ivens-craft main a:hover,
 .ivens-craft main a:focus{
 	outline: 3px solid #60103d;
 }
-
 /* scroll to top button coloring */
 .ivens-craft #topbutton{
 	background: #595959;
 }
-
+/* scroll to top button coloring on hover/focus */
 .ivens-craft #topButton:hover, 
 .ivens-craft #topButton:focus{
   color: #595959;
   background: #fff;
   border: 2px solid #595959;
 }
-
-/* footer background */
-.ivens-craft footer{
-	background: #212119;
-}
-
 /* page side arrow containter */
 .ivens-craft .arrow-container{
   line-height: 0;
@@ -95,7 +92,6 @@ Light Gray: #808F85;
 		top: calc(50% - 47.2px);
 	}
 }
-
 /* link on individual arrows */
 .ivens-craft .arrow-container a{
 	color: #212119;
@@ -111,8 +107,7 @@ Light Gray: #808F85;
 		border: 1px solid #212119;
 	}
 }
-
-/* individual arrows outline on hover/focus */
+/* individual arrows link outline on hover/focus */
 .ivens-craft .arrow-container a:hover,
 .ivens-craft .arrow-container a:focus{
 	outline: 3px solid #60103d;
@@ -123,9 +118,12 @@ Light Gray: #808F85;
 	outline: 3px solid #fff;
 }
 }
-
 /* individual arrow graphic */
 .ivens-craft .arrow-container .arrow-button a svg{
   width: 26px;
   height: 26px;	
+}
+/* footer background */
+.ivens-craft footer{
+	background: #212119;
 }

@@ -4,7 +4,8 @@
 
 /*
 Red: #4f0d32;
-Blue: #16176f;
+Red (slightly lighter): #60103d;
+Blue: #13135e;
 Yellow: #cac121;
 Dark Gray: #595959; 
 Light Gray: #808F85;
@@ -13,30 +14,45 @@ Light Gray: #808F85;
 /********************/
 
 /* combo #2 variant: yellow border left, yellow border bottom, blue frame */
-.materials.ivens-craft h2{
+.ivens-craft main h2{
 	border-left: 12px solid #cac121;
 }
-.materials.ivens-craft h3{
+.ivens-craft main h3{
 	border-bottom: 8px solid #cac121;
 }
-.materials.ivens-craft .toc ol:before{
+.ivens-craft main .toc ol:before{
 	border-bottom: 4px solid #cac121;
 }
-.materials.ivens-craft .content div.decoration{
+.ivens-craft main .content div.decoration{
 	background: #4f0d32;
 }
 
 /* random blue elements */
-h2,
-h3,
-.toc > ol:first-child:before,
-a,
-a:visited{
-	color: #16176f;
+.ivens-craft main h2,
+.ivens-craft main h3,
+.ivens-craft main .toc > ol:first-child:before,
+.ivens-craft main a,
+.ivens-craft main a:visited{
+	color: #13135e;
 }
 
 /* text box on hover/focus */
-.ivens-craft a:hover,
-.ivens-craft a:focus{
-	outline: 3px solid #08311A;
+.ivens-craft main a:hover,
+.ivens-craft main  a:focus{
+	outline: 3px solid #60103d;
+}
+
+.ivens-craft #topbutton{
+	background: #595959;
+}
+
+.ivens-craft #topButton:hover, 
+.ivens-craft #topButton:focus {
+  color: #595959;
+  background: #fff;
+  border: 2px solid #595959;
+}
+
+.ivens-craft footer{
+	background: #212119;
 }

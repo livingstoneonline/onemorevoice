@@ -9,26 +9,35 @@ if ("serviceWorker" in navigator) {
 };
 
 
-// Scroll to top button
+// Scroll to top button and side arrows on "William Ivens Craft and the Victorian Atlantic World"
 // Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // Original coding improved by ChatGPT (https://chat.openai.com/chat) by making the scroll smooth instead of sudden.
+// Coding further improved by Perplexity (https://www.perplexity.ai) to integrate the side arrows into the function
 var mybutton = document.getElementById("topButton");
-window.onscroll = function () {
-		scrollFunction()
+var myarrows = document.getElementById("arrow-container");
+
+window.onscroll = function() {
+  scrollFunction();
 };
+
 function scrollFunction() {
-		if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-				mybutton.style.display = "flex";
-				mybutton.style.visibility = "visible"
-		} else {
-				mybutton.style.display = "none";
-				mybutton.style.visibility = "hidden"
-		}
-};
-function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0
-};
+	if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    myarrows.style.display = "flex";
+    myarrows.style.visibility = "visible";
+  } else {
+    myarrows.style.display = "none";
+    myarrows.style.visibility = "hidden";
+  }
+
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    mybutton.style.display = "flex";
+    mybutton.style.visibility = "visible";
+  } else {
+    mybutton.style.display = "none";
+    mybutton.style.visibility = "hidden";
+  }
+}
+
 // When the user clicks on the button, smoothly scroll to the top of the document
 function topFunction() {
   var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;

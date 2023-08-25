@@ -2,20 +2,28 @@
 
 /* Created and maintained by Adrian S. Wisnicki, with Hope McCaffrey */ /* 2023 */
 
+/*
+Red: #4f0d32;
+Blue: #16176f;
+Yellow: #cac121;
+Dark Gray: #595959; 
+Light Gray: #808F85;
+
+*/
 /********************/
 
 /* combo #2 variant: yellow border left, yellow border bottom, blue frame */
 .materials.ivens-craft h2{
-	border-left: 12px solid #9EB5E1;
+	border-left: 12px solid #cac121;
 }
 .materials.ivens-craft h3{
-	border-bottom: 8px solid #9EB5E1;
+	border-bottom: 8px solid #cac121;
 }
 .materials.ivens-craft .toc ol:before{
-	border-bottom: 4px solid #9EB5E1;
+	border-bottom: 4px solid #cac121;
 }
 .materials.ivens-craft .content div.decoration{
-	background: #e1ca9e;
+	background: #4f0d32;
 }
 
 /* random blue elements */
@@ -24,11 +32,11 @@ h3,
 .toc > ol:first-child:before,
 a,
 a:visited{
-	color: #223c6e;
+	color: #16176f;
 }
 
 /* text box on hover/focus */
 .ivens-craft a:hover,
 .ivens-craft a:focus{
-	outline: 3px solid #c47880;
+	outline: 3px solid #08311A;
 }

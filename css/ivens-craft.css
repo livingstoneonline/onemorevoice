@@ -35,8 +35,49 @@ Light Gray: #808F85;
 /* Ivens Craft edition button on hover/focus */
 .ivens-craft #bv-project a:hover,
 .ivens-craft #bv-project a:focus{
-	background: #0f0f4c;
-	border: 1px solid #0f0f4c;
+	background: #0c0c3c;
+	border: 1px solid #0c0c3c;
+}
+/* Ivens Craft edition button alternate title for below and above 480px */
+@media only screen and (min-width: 480px){
+	.ivens-craft #bv-project a .brief-title{
+		display: none;
+		visibility: hidden;
+	}
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft #bv-project a .brief-title{
+		display: inline-block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.ivens-craft #bv-project a .brief-title{
+		display: none;
+		visibility: hidden;
+	}
+}
+.ivens-craft #bv-project a .regular-text{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 480px){
+	.ivens-craft #bv-project a .regular-text{
+		display: inline-block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft #bv-project a .regular-text{
+		display: none;
+		visibility: hidden;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.ivens-craft #bv-project a .regular-text{
+		display: inline-block;
+		visibility: visible;
+	}
 }
 /* text box coloring on hover/focus */
 .ivens-craft main a:hover,

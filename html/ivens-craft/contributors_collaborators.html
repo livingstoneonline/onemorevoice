@@ -62,19 +62,6 @@
 		
 		<main id="main" aria-labelledby="contributors-collaborators">
 
-			<div class="arrow-container">
-				<a id="previous-button" class="arrow-button" href="previous.html" aria-label="Previous">
-					<svg id="arrow-left" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-						<path d="M13 24L16.2 20.8L7.4 12L16.2 3.2L13 0L2 11Z" fill="black"/>
-					</svg>
-				</a>
-				<a id="next-button" class="arrow-button" href="next.html" aria-label="Next">
-					<svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-						<path d="M13 0L9.8 3.2L18.6 12L9.8 20.8L13 24L24 13Z" fill="black"/>
-					</svg>
-				</a>
-			</div>
-
 			<section class="page-details horizontal">
 				<figure class="image-wrapper">
 					<!-- img sizes calculated using https://ausi.github.io/respimagelint/ -->
@@ -179,6 +166,25 @@
 		</main>
 
 		<div data-include="footer"></div>
+
+		<div id="arrow-container" class="arrow-container">
+			<span class="tooltip-container">
+			<a id="previous-arrow" class="arrow-button caption" href="previous.html" aria-label="Previous" aria-describedby="previous-arrow" data-tooltip-trigger>
+				<svg  id="arrow-left"  xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#212119" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs">
+					<path d="M15 18l-6-6 6-6"></path>
+				</svg>
+				<span id="previous-arrow" role="tooltip" class="hidden">Previous page</span>
+			</a>
+			</span>
+			<span class="tooltip-container">
+			<a id="next-arrow" class="arrow-button caption" href="next.html" aria-label="Next" aria-describedby="next-arrow-" data-tooltip-trigger>
+				<svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#212119" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs">
+					<path d="M9 18l6-6-6-6"></path>
+				</svg>
+				<span id="next-arrow" role="tooltip" class="hidden">Next page</span>
+			</a>
+			</span>
+		</div>
 
 		<button onclick="topFunction()" ontouchend="topFunction()" id="topButton" aria-label="Scroll to top" tabindex="0">Top</button>
 		

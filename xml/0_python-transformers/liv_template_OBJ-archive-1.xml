@@ -109,7 +109,7 @@
 	<!-- vertical image -->
 	<!-- <figure n="hist-object" rend="vertical" facs="/img/visual-materials/{leap-id}_0001_deriv-968px.jpg">
 		<graphic url="/img/visual-materials/{leap-id}_0001_deriv-968px.jpg" facs="/img/visual-materials/{leap-id}_0001_deriv-968px.jpg 968w, /img/visual-materials/{leap-id}_0001_deriv-606px.jpg 606w, /img/visual-materials/{leap-id}_0001_deriv-550px.jpg 550w, /img/visual-materials/{leap-id}_0001_deriv-484px.jpg 484w, /img/visual-materials/{leap-id}_0001_deriv-303px.jpg 303w" n="(min-width: 1200px) 488px, (min-width: 1000px) calc(38.89vw - 43px), (min-width: 780px) 464px, (min-width: 480px) 63.57vw, calc(100vw - 36px)"/> -->
-		<label>{first-author-forename-surname}, {title-with-date}<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<label>{first-author-forename-surname}, “{title-without-date},” {composition-or-publication-day-month-year}<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc>{img-alt-text}<!-- Image alt text (max. 100 char with spaces) --></figDesc>
 	</figure>
 <!-- Use the following to repoduce any original image caption. -->
@@ -121,7 +121,7 @@
 					<figure class="gallery-item" id="{leap-id}">
 						<a href="/html/transcriptions/{leap-id}_ART.html">
 							<div class="image-container">
-								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/{leap-id}_thumbnail-572px.jpg" srcset="/img/visual-materials/thumbnails/{leap-id}_thumbnail-572px.jpg 572w, /img/visual-materials/thumbnails/{leap-id}_thumbnail-398px.jpg 398w, /img/visual-materials/thumbnails/{leap-id}_thumbnail-378px.jpg 378w, /img/visual-materials/thumbnails/{leap-id}_thumbnail-286px.jpg 286w, /img/visual-materials/thumbnails/{leap-id}_thumbnail-199px.jpg 199w, /img/visual-materials/thumbnails/{leap-id}_thumbnail-189px.jpg 189w" sizes="(min-width: 992px) 182px, (min-width: 768px) 169px, (min-width: 640px) calc(33.33vw - 53px), (min-width: 480px) calc(50vw - 49px), calc(100vw - 42px)" alt="{img-alt-text}" />
+								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-572px.jpg" srcset="/img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-572px.jpg 572w, /img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-398px.jpg 398w, /img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-378px.jpg 378w, /img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-286px.jpg 286w, /img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-199px.jpg 199w, /img/visual-materials/thumbnails/{leap-id}_0001_thumbnail-189px.jpg 189w" sizes="(min-width: 992px) 182px, (min-width: 768px) 169px, (min-width: 640px) calc(33.33vw - 53px), (min-width: 480px) calc(50vw - 49px), calc(100vw - 42px)" alt="{img-alt-text}" />
 							</div>
 						</a>
 						<figcaption>{figure-caption} ({figure-date})</figcaption>

@@ -8,14 +8,11 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>“James Chuma”</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="normalized"></title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
-                <title type="alternative">“James Chuma, [1874?]”</title><!-- Title, date -->
-                <author>Maull & Co.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
-				<author role="first">Maull & Co.</author><!-- First author only: Surname, Forename -->
-				<author role="first-normalized">Maull & Co.</author><!-- First author only: Forename Surname -->
-                <author></author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="normalized"></author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <title>James Chuma</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">James Chuma, [1874?]</title><!-- Title, date -->
+                <author>Maull &amp; Co.</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Maull &amp; Co.</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized">Maull &amp; Co.</author><!-- First author only: Forename Surname -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
@@ -52,11 +49,11 @@
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
-					<title>“James Chuma”</title>
+					<title>James Chuma</title>
 					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
 					<!-- Same as <author> above -->
 					<!-- xml:id = each author's initials -->
-                    <author xml:id="MC">Maull & Co.</author>
+                    <author xml:id="MC">Maull &amp; Co.</author>
 					<!-- Write out date: Day Month Year -->
 					<!-- @when = YYYY-MM-DD -->
                     <date type="composition" when="1874">[1874?]</date><!-- Can be type="composition" or type="publication" -->
@@ -109,7 +106,7 @@
 	<!-- vertical image -->
 	<figure n="hist-object" rend="vertical" facs="/img/visual-materials/liv_021123_0001_deriv-968px.jpg">
 		<graphic url="/img/visual-materials/liv_021123_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021123_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021123_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021123_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021123_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021123_0001_deriv-303px.jpg 303w" n="(min-width: 1200px) 488px, (min-width: 1000px) calc(38.89vw - 43px), (min-width: 780px) 464px, (min-width: 480px) 63.57vw, calc(100vw - 36px)"/>
-		<label>Maull & Co., “James Chuma, [1874?]”<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<label>Maull &amp; Co., “James Chuma, [1874?]”<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
 		<figDesc>Chuma, standing, in traditional waist covering, with long bow and arrow.<!-- Image alt text (max. 100 char with spaces) --></figDesc>
 	</figure>
 <!-- Use the following to repoduce any original image caption. -->
@@ -121,10 +118,10 @@
 					<figure class="gallery-item" id="liv_021123">
 						<a href="/html/transcriptions/liv_021123_ART.html">
 							<div class="image-container">
-								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/liv_021123_0001_thumbnail-370px.jpg" srcset="/img/visual-materials/thumbnails/liv_021123_0001_thumbnail-370px.jpg 370w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-340px.jpg 340w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-260px.jpg 260w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-185px.jpg 185w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-170px.jpg 170w" sizes="(min-width: 780px) 185px, (min-width: 480px) calc(50vw - 68px), calc(100vw - 53px)" alt="Chuma, standing, in traditional waist covering, with long bow and arrow." />
+								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/liv_021123_0001_thumbnail-572px.jpg" srcset="/img/visual-materials/thumbnails/liv_021123_0001_thumbnail-572px.jpg 572w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-398px.jpg 398w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-378px.jpg 378w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-286px.jpg 286w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-199px.jpg 199w, /img/visual-materials/thumbnails/liv_021123_0001_thumbnail-189px.jpg 189w" sizes="(min-width: 992px) 182px, (min-width: 768px) 169px, (min-width: 640px) calc(33.33vw - 53px), (min-width: 480px) calc(50vw - 49px), calc(100vw - 42px)" alt="Chuma, standing, in traditional waist covering, with long bow and arrow." />
 							</div>
 						</a>
-						<figcaption>Chuma (1874)</figcaption>
+						<figcaption>James Chuma (1874?)</figcaption>
 					</figure>
 -->
 

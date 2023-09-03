@@ -21,22 +21,23 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-	if (document.body.scrollTop > 425 || document.documentElement.scrollTop > 425) {
+  if (myarrows && (document.body.scrollTop > 425 || document.documentElement.scrollTop > 425)) {
     myarrows.style.display = "flex";
     myarrows.style.visibility = "visible";
-  } else {
+  } else if (myarrows) {
     myarrows.style.display = "none";
     myarrows.style.visibility = "hidden";
   }
 
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+  if (mybutton && (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)) {
     mybutton.style.display = "flex";
     mybutton.style.visibility = "visible";
-  } else {
+  } else if (mybutton) {
     mybutton.style.display = "none";
     mybutton.style.visibility = "hidden";
   }
 }
+
 
 // When the user clicks on the button, smoothly scroll to the top of the document
 function topFunction() {

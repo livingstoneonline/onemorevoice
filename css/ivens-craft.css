@@ -1,0 +1,171 @@
+/* "William Ivens Craft and the Transatlantic Victorian World" CSS File for One More Voice (https://onemorevoice.org/) */
+
+/* Created and maintained by Adrian S. Wisnicki, with Hope McCaffrey */ /* 2023 */
+
+/*
+Red: #4f0d32;
+Red (slightly lighter): #60103d;
+Blue: #13135e;
+Yellow: #cac121;
+Dark Gray: #595959; 
+Light Gray: #808F85;
+*/
+
+/* Ivens Craft variant: yellow border left, yellow border bottom, red frame */
+.ivens-craft main h2{
+	border-left: 12px solid #cac121;
+}
+.ivens-craft main h3{
+	border-bottom: 8px solid #cac121;
+}
+.ivens-craft main .toc ol:before{
+	border-bottom: 4px solid #cac121;
+}
+.ivens-craft main .content div.decoration{
+	background: #4f0d32;
+}
+/* blue for random elements */
+.ivens-craft main h2,
+.ivens-craft main h3,
+.ivens-craft main .toc > ol:first-child:before,
+.ivens-craft main a,
+.ivens-craft main a:visited{
+	color: #13135e;
+}
+/* Ivens Craft edition button on hover/focus */
+.ivens-craft #bv-project a:hover,
+.ivens-craft #bv-project a:focus{
+	background: #0c0c3c;
+	border: 1px solid #fff;
+}
+/* Ivens Craft edition button alternate title for below and above 480px */
+@media only screen and (min-width: 480px){
+	.ivens-craft #bv-project a .brief-title{
+		display: none;
+		visibility: hidden;
+	}
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft #bv-project a .brief-title{
+		display: inline-block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.ivens-craft #bv-project a .brief-title{
+		display: none;
+		visibility: hidden;
+	}
+}
+.ivens-craft #bv-project a .regular-text{
+	display: none;
+	visibility: hidden;
+}
+@media only screen and (min-width: 480px){
+	.ivens-craft #bv-project a .regular-text{
+		display: inline-block;
+		visibility: visible;
+	}
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft #bv-project a .regular-text{
+		display: none;
+		visibility: hidden;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.ivens-craft #bv-project a .regular-text{
+		display: inline-block;
+		visibility: visible;
+	}
+}
+/* text box coloring on hover/focus */
+.ivens-craft main a:hover,
+.ivens-craft main a:focus{
+	outline: 3px solid #60103d;
+}
+/* scroll to top button coloring */
+.ivens-craft #topbutton{
+	background: #595959;
+}
+/* scroll to top button coloring on hover/focus */
+.ivens-craft #topButton:hover, 
+.ivens-craft #topButton:focus{
+  color: #595959;
+  background: #fff;
+  border: 2px solid #595959;
+}
+/* page side arrows developed with assistance from ChatGPT (https://chat.openai.com/chat) and Perplexity AI (https://www.perplexity.ai) */
+/* page side arrow containter */
+.ivens-craft .arrow-container{
+  line-height: 0;
+	padding: 0 .75rem;
+	width: 100%;
+	align-items: center;
+	position: fixed;
+	display: none;
+	visibility: hidden;
+  justify-content: space-between;
+  top: calc(50% - 40.7px);
+	left: 0;
+	right: 0;
+	z-index: 75;
+}
+@media only screen and (min-width: 480px){
+	.ivens-craft .arrow-container{
+		padding: 0 1rem;
+		top: calc(50% - 43.1px);
+	}
+}
+@media only screen and (min-width: 768px){
+	.ivens-craft .arrow-container{
+		padding: 0 1.25rem;
+		top: calc(50% - 45.6px);
+	}
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft .arrow-container{
+		padding: 0 1.75rem;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.ivens-craft .arrow-container{
+		padding: 0 2.25rem;
+		top: calc(50% - 47.2px);
+	}
+}
+/* link on individual arrows */
+.ivens-craft .arrow-container a{
+	color: #212119;
+	background: #fff;
+	border: 1px solid #bdc2bd;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: .8rem .1rem;
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft .arrow-container a{
+		border: 1px solid #212119;
+	}
+}
+/* individual arrows link outline on hover/focus */
+.ivens-craft .arrow-container a:hover,
+.ivens-craft .arrow-container a:focus{
+	outline: 3px solid #60103d;
+}
+@media only screen and (min-width: 992px){
+	.ivens-craft .arrow-container a:hover,
+.ivens-craft .arrow-container a:focus{
+	outline: 3px solid #fff;
+}
+}
+/* individual arrow graphic */
+.ivens-craft .arrow-container .arrow-button a svg{
+  width: 26px;
+  height: 26px;	
+}
+/* footer background */
+.ivens-craft footer{
+	background: #212119;
+}

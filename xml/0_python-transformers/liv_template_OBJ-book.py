@@ -9,13 +9,13 @@ import os
 
 # Define the names of the CSV files and their columns
 csv_filenames = {
-    'home-1': 'liv_template_OBJ-archive-1.csv',
+    'home-1': 'liv_template_OBJ-book-1.csv',
 }
 csv_columns = ['placeholder', 'text']
 
 # Define the names of the HTML files to update
 html_filenames = {
-    'home-1': 'liv_template_OBJ-archive-1.xml', 
+    'home-1': 'liv_template_OBJ-book-1.xml', 
 }
 
 # Loop over the CSV files and update their corresponding HTML files

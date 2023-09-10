@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://livingstoneonline.github.io/LEAP-ODD/leap.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Next line points to online XSL; use red triangle button in oXygen when done to transform file and check encoding -->
+<?xml-stylesheet href="../omv-integrated.xsl" type="text/xsl"?>
+<!-- https://livingstoneonline.github.io/LEAP-XSLT/ -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="liv_021128"><!-- Insert LEAP ID, e.g. "liv_020010 -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Yone Noguchi</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
+                <title type="alternative">Yone Noguchi, 1915</title><!-- Title, date -->
+                <author>Markino, Yoshio, 1897-1942</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
+				<author role="first">Markino, Yoshio</author><!-- First author only: Surname, Forename -->
+				<author role="first-normalized"> Yoshio Markino</author><!-- First author only: Forename Surname -->
+                <principal>Adrian S. Wisnicki</principal>
+				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
+                <respStmt xml:id="AW">
+                    <name>Adrian S. Wisnicki</name>
+                    <resp>XML File Editing</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>One More Voice</authority>
+                <publisher>Livingstone Online</publisher>
+                <pubPlace>University of Nebraska-Lincoln, Lincoln, NE, USA</pubPlace>
+                <date>2023</date>
+                <idno type="LEAP-ID">liv_021128</idno><!-- Insert LEAP ID, e.g. "liv_020010 -->
+				<!-- <ref> takes the name of the source used for original, e.g., Internet Archive -->
+				<!-- @target = URL of source -->
+				<ref target="https://archive.org/details/storyofyonenoguc00nogurich/page/n7/mode/2up">Internet Archive</ref>
+				<!-- Edit <availability> as relevant -->
+	            <availability>
+					<p>Public domain.</p>
+				</availability>
+			</publicationStmt>
+
+			<!-- Use this version of <sourceDesc> if the object comes from a book or journal -->
+            <sourceDesc>
+				<biblStruct type="object-book-journal">
+					<monogr n="book-section"><!-- n="book-section" if journal/periodical article -->
+						<title>The Story of Yone Noguchi: Told by Himself</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author>Yone Noguchi</author>
+						<editor></editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="vol"></biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue"></biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">frontispiece</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>Philadelphia</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>George W. Jacobs &amp; Co.</publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date>1915</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
+                <bibl type="sourceMetadata">
+                	<!-- Title without date -->
+					<!-- Same as <title> above -->
+					<title>Yone Noguchi</title>
+					<!-- Each author: Surname, Forename, Dates (if known; otherwise nothing) -->
+					<!-- Same as <author> above -->
+					<!-- xml:id = each author's initials -->
+                    <author xml:id="YM">Markino, Yoshio, 1897-1942</author>
+					<!-- Write out date: Day Month Year -->
+					<!-- @when = YYYY-MM-DD -->
+                    <date type="publication" when="1915">1915</date><!-- Can be type="composition" or type="publication" -->
+					<!-- See item for composition place; remove if not given -->
+                </bibl>
+            </sourceDesc>
+			<!-- End of book/journal <sourceDesc> -->
+
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- For language abbreviations, see https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry -->
+                <!-- English should be first, then add all other languages in alphabetical order. -->
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+			<!-- Use one <change> for each instance of revision -->
+			<!-- Always place most recent <change> at top -->
+			<!-- Describe using one of the phrases associated with your name above -->
+			<!-- E.g., Transcription or TEI Encoding or Proofing, etc. -->
+			<!-- @when = YYYY-MM-DD -->
+			<!-- @who = #[your initials], e.g., #AW or #HB or #MBT -->
+			<change when="2023-09-10" who="#AW">XML File Editing</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text><!-- If file contains custom CSS with rotation, add n="rotate-toggle" -->
+		<body><!-- Actual color of the MS page; AW will insert appropriate color; remove @n if white because that's the default color -->
+			<div><!-- Acutal color of the writing; AW will use auto-suggested values; remove @rend if black because that's the default color -->
+
+	<!-- ndash: &#8211; -->
+	<!-- mdash: &#8212; -->
+
+	<!-- Put a <pb> at the beginning of each page -->
+	<!-- @facs = LEAP ID _ page number, e.g., liv_020010_0001 -->
+	<!-- @n = page number only, e.g., 0001 -->
+	<pb facs="liv_021128_0001" n="0001"/>
+	<!-- figure @facs provides the hyperlink for the object image to a larger version -->
+		<!-- remove rend="vertical" for landscape images -->
+		<!-- add rend="gray" to add gray border to image -->
+		<!-- graphic @url = img @src; @facs = @srcsect; @n = @sizes -->
+	<!-- Choose and take out of comments one of the following: horizontal or vertical -->
+
+	<!-- horiztonal image -->
+	<!-- <figure n="hist-object" facs="/img/visual-materials/liv_021128_0001_deriv-1388px.jpg">
+		<graphic url="/img/visual-materials/liv_021128_0001_deriv-1388px.jpg" facs="/img/visual-materials/liv_021128_0001_deriv-1388px.jpg 1388w, /img/visual-materials/liv_021128_0001_deriv-870px.jpg 870w, /img/visual-materials/liv_021128_0001_deriv-694px.jpg 694w, /img/visual-materials/liv_021128_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021128_0001_deriv-435px.jpg 435w, /img/visual-materials/liv_021128_0001_deriv-275px.jpg 275w" n="(min-width: 1200px) 698px, (min-width: 1000px) calc(55vw - 54px), (min-width: 780px) 664px, calc(94.35vw - 19px)"/> -->
+
+	<!-- vertical image -->
+	<figure n="hist-object" rend="vertical" facs="/img/visual-materials/liv_021128_0001_deriv-968px.jpg">
+		<graphic url="/img/visual-materials/liv_021128_0001_deriv-968px.jpg" facs="/img/visual-materials/liv_021128_0001_deriv-968px.jpg 968w, /img/visual-materials/liv_021128_0001_deriv-606px.jpg 606w, /img/visual-materials/liv_021128_0001_deriv-550px.jpg 550w, /img/visual-materials/liv_021128_0001_deriv-484px.jpg 484w, /img/visual-materials/liv_021128_0001_deriv-303px.jpg 303w" n="(min-width: 1200px) 488px, (min-width: 1000px) calc(38.89vw - 43px), (min-width: 780px) 464px, (min-width: 480px) 63.57vw, calc(100vw - 36px)"/>
+		<label> Yoshio Markino, “Yone Noguchi,” 1915<!-- authors (separated by comma), title type="alternative" [plus add curly quotes] --></label>
+		<figDesc>Head and shoulders portrait of Yone Noguchi in half profile, facing left.<!-- Image alt text (max. 100 char with spaces) --></figDesc>
+	</figure>
+<!-- Use the following to repoduce any original image caption. -->
+<!--<p rend="no-indent small center">[original caption]</p>
+<p rend="no-indent small center">[CAPTION GOES HERE]</p>-->
+
+<!-- Used for Visual Materials page -->
+<!-- 
+					<figure class="gallery-item" id="liv_021128">
+						<a href="/html/transcriptions/liv_021128_ART.html">
+							<div class="image-container">
+								<img width="187.125" height="187.125" loading="lazy" src="/img/visual-materials/thumbnails/liv_021128_0001_thumbnail-572px.jpg" srcset="/img/visual-materials/thumbnails/liv_021128_0001_thumbnail-572px.jpg 572w, /img/visual-materials/thumbnails/liv_021128_0001_thumbnail-398px.jpg 398w, /img/visual-materials/thumbnails/liv_021128_0001_thumbnail-378px.jpg 378w, /img/visual-materials/thumbnails/liv_021128_0001_thumbnail-286px.jpg 286w, /img/visual-materials/thumbnails/liv_021128_0001_thumbnail-199px.jpg 199w, /img/visual-materials/thumbnails/liv_021128_0001_thumbnail-189px.jpg 189w" sizes="(min-width: 992px) 182px, (min-width: 768px) 169px, (min-width: 640px) calc(33.33vw - 53px), (min-width: 480px) calc(50vw - 49px), calc(100vw - 42px)" alt="Head and shoulders portrait of Yone Noguchi in half profile, facing left." />
+							</div>
+						</a>
+						<figcaption>Yone Noguchi (1915)</figcaption>
+					</figure>
+-->
+
+            </div>
+        </body>   
+    </text>
+</TEI>

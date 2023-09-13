@@ -9,13 +9,13 @@
         <fileDesc>
             <titleStmt>
                 <title>{title-without-date}</title><!-- Title without date --><!-- Check https://onemorevoice.org/bibliography.html for "canonical" name. -->
-				<title type="normalized">{title-double-quotes-to-single}</title><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
+				<!--<title type="normalized">{title-double-quotes-to-single}</title>--><!-- If title surrounded by double quotations, then replace with single quotations here; otherwise remove -->
                 <title type="alternative">{title-with-date}</title><!-- Title, date -->
                 <author>{first-author-surname-forename-dates}</author><!-- First author: Surname, Forename, Dates (if known; otherwise nothing re: dates) -->
 				<author role="first">{first-author-surname-forename}</author><!-- First author only: Surname, Forename -->
 				<author role="first-normalized">{first-author-forename-surname}</author><!-- First author only: Forename Surname -->
-                <author>{second-author-surname-forename-dates}</author><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
-				<author role="normalized">{second-author-forename-surname}</author><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
+                <!--<author>{second-author-surname-forename-dates}</author>--><!-- Second author, etc.: Surname, Forename, Dates (if known; otherwise nothing re: dates); if no second author, remove this line -->
+				<!--<author role="normalized">{second-author-forename-surname}</author>--><!-- Second author, etc.: Forename Surname; if no second author, remove this line -->
                 <principal>Adrian S. Wisnicki</principal>
 				<!-- Only people involved in the actual transcription should be listed below; remove everyone else -->
                 <respStmt xml:id="AW">
@@ -35,20 +35,29 @@
 				<!-- Edit <availability> as relevant -->
 	            <availability>
 					<p>{license-statement}</p>
-                    <licence target="{license-url}">{license}</licence>
+                    <!--<licence target="{license-url}">{license}</licence>-->
 				</availability>
 			</publicationStmt>
 
-			<!-- Use this version of <sourceDesc> if the object comes from an archive -->
+			<!-- Use this version of <sourceDesc> if the object comes from a book or journal -->
             <sourceDesc>
-                <msDesc type="object-archive">
-                    <msIdentifier>
-                        <country>{repository-country}</country><!-- Repository country -->
-                        <settlement>{repository-city}</settlement><!-- Repository city -->
-                        <repository>{repository-name}</repository><!-- Repository name; find "offical" name here: https://bit.ly/3eSIPeD --><!-- Use <collection> if item owned by individual -->
-                        <idno type="shelfmark">{shelfmark}</idno><!-- Shelfmark/Identifier -->
-                    </msIdentifier>
-                </msDesc>
+				<biblStruct type="object-book-journal">
+					<monogr n="book-section"><!-- n="book-section" if journal/periodical article -->
+						<title>{source-book-or-journal-title}</title><!-- Publication title: journal or book -->
+						<!-- Author here used only for books -->
+						<!-- Forename Surname-->
+	                    <author>{source-author-forename-surname}</author>
+						<editor>{source-editor-forename-surname}</editor><!-- Editor (if known; otherwise leave blank -->
+						<imprint>
+							<biblScope unit="vol">{source-vol-no}</biblScope><!-- Volume (if known; otherwise leave blank) -->
+							<biblScope unit="issue">{source-issue-no}</biblScope><!-- Issue (if known; otherwise leave blank) -->
+							<biblScope unit="pages">{source-page-nos}</biblScope><!-- Pages (if known; otherwise leave blank) -->
+							<pubPlace>{source-publication-place}</pubPlace><!-- Publication place (if known; otherwise leave blank) -->
+							<publisher>{source-publisher}</publisher><!-- Publisher (if known; otherwise leave blank) -->
+							<date>{source-publication-date}</date><!-- Item date; same as date in <title type="alternative"> above -->
+						</imprint>
+					</monogr>
+				</biblStruct>
                 <bibl type="sourceMetadata">
                 	<!-- Title without date -->
 					<!-- Same as <title> above -->
@@ -61,10 +70,10 @@
 					<!-- @when = YYYY-MM-DD -->
                     <date type="{composition-or-publication}" when="{composition-or-publication-yyyy-mm-dd}">{composition-or-publication-day-month-year}</date><!-- Can be type="composition" or type="publication" -->
 					<!-- See item for composition place; remove if not given -->
-                    <placeName type="compositionPlace">{composition-place}</placeName><!-- Can be "compositionPlace" or "focusRegion" -->
+                    <!--<placeName type="compositionPlace">{composition-place}</placeName>--><!-- Can be "compositionPlace" or "focusRegion" -->
                 </bibl>
             </sourceDesc>
-			<!-- End of archival <sourceDesc> -->
+			<!-- End of book/journal <sourceDesc> -->
 
         </fileDesc>
         <profileDesc>

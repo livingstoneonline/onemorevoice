@@ -15,7 +15,7 @@ csv_columns = ['placeholder', 'text']
 
 # Define the names of the HTML files to update
 html_filenames = {
-    'home-1': 'liv_template_OBJ-archive-1.xml', 
+    'home-1': 'liv_template_OBJ-archive.xml', 
 }
 
 # Loop over the CSV files and update their corresponding HTML files

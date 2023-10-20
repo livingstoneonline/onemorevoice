@@ -28,7 +28,7 @@
 }
 /* running headers */
 .materials .recovering-histories fw{
-  margin-top: 2rem;
+  margin: 2rem 0 .5rem;
   display: block;
 }
 /* align right */
@@ -91,4 +91,18 @@
 	list-style-position: inside;
   margin: 0;
 	padding: 0 0 0 2.4rem;
+}
+/* remove margin top or bottom */
+.materials .recovering-histories .nomarginbottom{
+	margin-bottom: 0;
+}
+.materials .recovering-histories .nomargintop{
+	margin-top: 0;
+}
+/* sizing */
+.materials .recovering-histories .smaller{
+	font-size: .85em;
+}
+.materials .recovering-histories .smallest{
+	font-size: .8em;
 }

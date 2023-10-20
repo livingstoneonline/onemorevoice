@@ -19,11 +19,17 @@
     margin-top: 3rem;
   }
 }
+/* paragraphs */
 .materials .recovering-histories p{
   text-indent: 1rem;
   clear: both;
   margin: 0;
   position: relative; /* Needed to override TEI coding*/
+}
+/* running headers */
+.materials .recovering-histories fw{
+  margin-top: 2rem;
+  display: block;
 }
 /* align right */
 .materials .recovering-histories .right{
@@ -74,8 +80,15 @@
 .materials .recovering-histories .noindent{
   text-indent: 0;
 }
+/* overhang */
+.materials .recovering-histories .overhang{
+  text-indent: -2rem; 
+  padding-left: 2rem;
+}
 /* list with overhang */
-.materials .recovering-histories .overhanglist{
-	margin: 0;
+.materials .recovering-histories ol.overhang,
+.materials .recovering-histories ul.overhang{
+	list-style-position: inside;
+  margin: 0;
 	padding: 0 0 0 2.4rem;
 }

@@ -107,8 +107,24 @@
 	font-size: .8em;
 }
 /* first set of column itesm in specified item */
-.materials .recovering-histories .row.liv_022004-1{
+.materials .recovering-histories .row.liv_022004-1,
+.materials .recovering-histories .row.liv_022004-2{
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
+}
+.materials .recovering-histories .row.liv_022004-2{
+  font-size: .9em;
+  line-height: 1.5em;
+}
+.materials .recovering-histories .row.liv_022004-2 .item{
+  display: -webkit-flex;
+  display: flex;
+  align-content: center;
+}
+.materials .recovering-histories .row.liv_022004-2 .column:nth-child(3) .item,
+.materials .recovering-histories .row.liv_022004-2 .column:nth-child(6) .item{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
 }

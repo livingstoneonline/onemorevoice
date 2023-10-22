@@ -70,6 +70,12 @@
 .materials .recovering-histories .doubleleftmargin{
   margin-left: 2rem;
 }
+.materials .recovering-histories .left5{
+  margin-left: 5rem;
+}
+.materials .recovering-histories .left7{
+  margin-left: 7rem;
+}
 .materials .recovering-histories .bottommargin{
   margin-bottom: 1rem;
 }
@@ -106,14 +112,44 @@
 .materials .recovering-histories .smallest{
 	font-size: .8em;
 }
-/* first set of column itesm in specified item */
+
+
+/* Item-Specific Coding */
+
+/* columns on various pages in liv_022004 */
 .materials .recovering-histories .row.liv_022004-1,
 .materials .recovering-histories .row.liv_022004-2{
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
 }
-.materials .recovering-histories .row.liv_022004-2{
+.materials .recovering-histories .row.liv_022004-3,
+.materials .recovering-histories .row.liv_022004-4,
+.materials .recovering-histories .row.liv_022004-6{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+.materials .recovering-histories .row.liv_022004-5{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+.materials .recovering-histories .row.liv_022004-3{
+  margin-left: 1.5rem;
+}
+.materials .recovering-histories .row.liv_022004-4{
+  margin-left: 11rem;
+}
+.materials .recovering-histories .row.liv_022004-6{
+  margin-left: 20rem;
+}
+.materials .recovering-histories .row.liv_022004-2,
+.materials .recovering-histories .row.liv_022004-3,
+.materials .recovering-histories .row.liv_022004-4,
+.materials .recovering-histories .row.liv_022004-4,
+.materials .recovering-histories .row.liv_022004-5,
+.materials .recovering-histories .row.liv_022004-6{
   font-size: .9em;
   line-height: 1.5em;
 }
@@ -127,4 +163,10 @@
   display: -webkit-flex;
   display: flex;
   justify-content: flex-end;
+}
+.materials .recovering-histories .row.liv_022004-3 .item,
+.materials .recovering-histories .row.liv_022004-4 .item,
+.materials .recovering-histories .row.liv_022004-5 .item,
+.materials .recovering-histories .row.liv_022004-6 .item{
+  margin: 0 1.5rem;
 }

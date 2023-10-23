@@ -113,10 +113,37 @@
 	font-size: .8em;
 }
 
-
 /* Item-Specific Coding */
 
-/* columns on various pages in liv_022004 */
+/* item title in liv_022003 */
+.title.liv_022003{
+  font-size: 1.1rem;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  border: none;
+  margin: 0 0 .5rem;
+  padding: 0;
+}
+/* first work placement */
+.firstword.liv_022003{
+  margin-right: .6rem;
+  display: flex;
+  float: left;
+}
+/* capitalized first letter */
+.dropcap.liv_022003{
+  font-size: 3.7rem;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 992px){
+  .dropcap.liv_022003{
+    font-size: 4.2rem;
+    margin-top: 1.1rem;
+}
+
+/* column specs on various pages in liv_022004 */
 .row.liv_022004-1,
 .row.liv_022004-2{
   display: -webkit-flex;
@@ -179,6 +206,7 @@
 .row.liv_022004-7 .item{
   margin: 0 1.5rem;
 }
+/* closing halfline */
 .halfline.liv_022004{
   width: 38%;
   border-top: 3px solid #58484b;

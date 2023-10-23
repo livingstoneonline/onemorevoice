@@ -117,56 +117,65 @@
 /* Item-Specific Coding */
 
 /* columns on various pages in liv_022004 */
-.materials .recovering-histories .row.liv_022004-1,
-.materials .recovering-histories .row.liv_022004-2{
+.row.liv_022004-1,
+.row.liv_022004-2{
   display: -webkit-flex;
   display: flex;
   justify-content: space-around;
 }
-.materials .recovering-histories .row.liv_022004-3,
-.materials .recovering-histories .row.liv_022004-4,
-.materials .recovering-histories .row.liv_022004-6{
+.row.liv_022004-3,
+.row.liv_022004-4,
+.row.liv_022004-6{
   display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
 }
-.materials .recovering-histories .row.liv_022004-5{
+.row.liv_022004-5,
+.row.liv_022004-7{
   display: -webkit-flex;
   display: flex;
   justify-content: flex-end;
 }
-.materials .recovering-histories .row.liv_022004-3{
+.row.liv_022004-3{
   margin-left: 1.5rem;
 }
-.materials .recovering-histories .row.liv_022004-4{
+.row.liv_022004-4{
   margin-left: 11rem;
 }
-.materials .recovering-histories .row.liv_022004-6{
+.row.liv_022004-6{
   margin-left: 20rem;
 }
-.materials .recovering-histories .row.liv_022004-2,
-.materials .recovering-histories .row.liv_022004-3,
-.materials .recovering-histories .row.liv_022004-4,
-.materials .recovering-histories .row.liv_022004-4,
-.materials .recovering-histories .row.liv_022004-5,
-.materials .recovering-histories .row.liv_022004-6{
+.row.liv_022004-2,
+.row.liv_022004-3,
+.row.liv_022004-4,
+.row.liv_022004-4,
+.row.liv_022004-5,
+.row.liv_022004-6,
+.row.liv_022004-7{
   font-size: .9em;
   line-height: 1.5em;
 }
-.materials .recovering-histories .row.liv_022004-2 .item{
+.row.liv_022004-2 .item{
   display: -webkit-flex;
   display: flex;
   align-content: center;
 }
-.materials .recovering-histories .row.liv_022004-2 .column:nth-child(3) .item,
-.materials .recovering-histories .row.liv_022004-2 .column:nth-child(6) .item{
+.row.liv_022004-2 .column:nth-child(3) .item,
+.row.liv_022004-2 .column:nth-child(6) .item,
+.row.liv_022004-5 .column:nth-child(3) .item{
   display: -webkit-flex;
   display: flex;
   justify-content: flex-end;
 }
-.materials .recovering-histories .row.liv_022004-3 .item,
-.materials .recovering-histories .row.liv_022004-4 .item,
-.materials .recovering-histories .row.liv_022004-5 .item,
-.materials .recovering-histories .row.liv_022004-6 .item{
+.row.liv_022004-7 .column:nth-child(3) .item{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center; 
+}
+.row.liv_022004-3 .item,
+.row.liv_022004-4 .item,
+.row.liv_022004-5 .item,
+.row.liv_022004-6 .item,
+.row.liv_022004-7 .item{
   margin: 0 1.5rem;
 }

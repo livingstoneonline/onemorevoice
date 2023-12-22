@@ -81,6 +81,8 @@ mogrify -format jpg -resize 660x -sampling-factor 4:2:0 -strip -quality 85 -inte
 
 mogrify -format jpg -resize 824x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/824 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/824 && find . -exec rename 's|.jpg|-824px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
 
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/ivens-craft/tiles \;
+
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages/tiles \;
 
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/essays/tiles \;

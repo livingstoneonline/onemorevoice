@@ -79,6 +79,32 @@ Light Gray: #808F85;
 		visibility: visible;
 	}
 }
+/* object images */
+.ivens-craft .figure{
+	text-align: center;
+}
+.ivens-craft .figure a:hover,
+.ivens-craft .figure a:focus{
+	outline: none;
+}
+.ivens-craft a img{
+	border: none;
+}
+@media only screen and (min-width: 480px){
+	.ivens-craft .figure.vertical a img,
+	.ivens-craft .figure.vertical a .image-overlay{
+		margin: 0 auto;
+		width: 70%;
+		display: inline-block;
+	}
+}
+.ivens-craft .figure.hist-object a img{
+	border: 1px solid #bdc2bd;
+}
+.ivens-craft .figure a:hover img,
+.ivens-craft .figure a:focus img{
+	outline: 3px solid #305056;
+}
 /* text box coloring on hover/focus */
 .ivens-craft main a:hover,
 .ivens-craft main a:focus{

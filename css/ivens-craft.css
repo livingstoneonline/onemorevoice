@@ -80,9 +80,6 @@ Light Gray: #808F85;
 	}
 }
 /* object images */
-.ivens-craft .figure{
-	text-align: center;
-}
 .ivens-craft .figure a:hover,
 .ivens-craft .figure a:focus{
 	outline: none;
@@ -95,7 +92,6 @@ Light Gray: #808F85;
 	.ivens-craft .figure.vertical a .image-overlay{
 		margin: 0 auto;
 		width: 70%;
-		display: inline-block;
 	}
 }
 .ivens-craft .figure.hist-object a img{
@@ -104,6 +100,13 @@ Light Gray: #808F85;
 .ivens-craft .figure a:hover img,
 .ivens-craft .figure a:focus img{
 	outline: 3px solid #305056;
+}
+/* captions for double images */
+.ivens-craft span + p.caption-text{
+	font-size: .9rem;
+	line-height: 1.6rem;
+	margin: 10px 0 1em 0;
+	padding: 0;
 }
 /* text box coloring on hover/focus */
 .ivens-craft main a:hover,

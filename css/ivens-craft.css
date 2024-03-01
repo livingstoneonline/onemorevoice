@@ -80,32 +80,27 @@ Light Gray: #808F85;
 	}
 }
 /* object images */
-.ivens-craft .figure a:hover,
-.ivens-craft .figure a:focus{
-	outline: none;
-}
 .ivens-craft a img{
 	border: none;
 }
 @media only screen and (min-width: 480px){
-	.ivens-craft .figure.vertical a img,
-	.ivens-craft .figure.vertical a .image-overlay{
+	.ivens-craft .figure.vertical a img{
 		margin: 0 auto;
 		width: 70%;
 	}
 }
-.ivens-craft .figure.hist-object a img{
-	border: 1px solid #bdc2bd;
-}
-.ivens-craft .figure a:hover img,
-.ivens-craft .figure a:focus img{
-	outline: 3px solid #305056;
+/* captions for vertical images */
+@media only screen and (min-width: 480px){
+	.ivens-craft .figure.vertical + p.caption-text{
+		margin: 10px auto 1rem;
+		width: 70%;
+	}
 }
 /* captions for double images */
 .ivens-craft span + p.caption-text{
 	font-size: .9rem;
 	line-height: 1.6rem;
-	margin: 10px 0 1em 0;
+	margin: 10px 0 1rem 0;
 	padding: 0;
 }
 /* text box coloring on hover/focus */

@@ -81,24 +81,21 @@ Light Gray: #808F85;
 }
 /* vertical images */
 @media only screen and (min-width: 480px){
-	.ivens-craft .figure.vertical img{
+	.ivens-craft .vertical {
+		display: block;
+	}
+	.ivens-craft 	.vertical img {
 		margin: 0 auto;
 		width: 70%;
+		display: inline-block;
 	}
 }
 /* captions for vertical images */
 @media only screen and (min-width: 480px){
-	.ivens-craft .figure.vertical + p.caption-text{
+	.ivens-craft .vertical + p.caption-text{
 		margin: 10px auto 1rem;
 		width: 70%;
 	}
-}
-/* captions for double images */
-.ivens-craft span + p.caption-text{
-	font-size: .9rem;
-	line-height: 1.6rem;
-	margin: 10px 0 1rem 0;
-	padding: 0;
 }
 /* text box coloring on hover/focus */
 .ivens-craft main a:hover,

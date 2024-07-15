@@ -91,10 +91,15 @@ Light Gray: #808F85;
 	}
 }
 /* captions for vertical images */
+.ivens-craft .vertical + p.caption-text{
+	font-size: .9rem;
+	line-height: 1.6rem;
+	margin: 10px auto 1rem;
+
+}
 @media only screen and (min-width: 480px){
 	.ivens-craft .vertical + p.caption-text{
-		margin: 10px auto 1rem;
-		width: 70%;
+	width: 70%;
 	}
 }
 /* text box coloring on hover/focus */

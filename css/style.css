@@ -3770,6 +3770,18 @@ aside.warning-box.bv-essay{
 		display: inline-block;
 	}
 }
+/* captions for vertical images */
+.recovering-histories .vertical + p.caption-text{
+	font-size: .9rem;
+	line-height: 1.6rem;
+	margin: 10px auto 1rem;
+
+}
+@media only screen and (min-width: 480px){
+	.recovering-histories .vertical + p.caption-text{
+	width: 70%;
+	}
+}
 
 
 /* Safari Support: Mobile and Safari below 14.1 */

@@ -3753,12 +3753,6 @@ aside.warning-box.bv-essay{
 
 /* 33. Recovering Histories */
 
-/* headings for outcomes section */
-/* .recovering-histories h4{
-	font-weight: 400;
-	font-style: italic;
-	text-align: left;
-} */
  /* vertical images */
 @media only screen and (min-width: 480px){
 	.recovering-histories .vertical {
@@ -3781,6 +3775,20 @@ aside.warning-box.bv-essay{
 	.recovering-histories .vertical + p.caption-text{
 	width: 70%;
 	}
+}
+/* subsections in outcomes section */
+.recovering-histories section.content:not(.recovered) article section section:not(:first-of-type){
+	margin-top: 2.5rem;
+}
+@media only screen and (min-width: 768px){
+	.recovering-histories section.content:not(.recovered) article section section:not(:first-of-type){
+		margin-top: 3rem;
+	}	
+}
+@media only screen and (min-width: 992px){
+	.recovering-histories section.content:not(.recovered) article section section:not(:first-of-type){
+		margin-top: 3.5rem;
+	}	
 }
 
 

@@ -3754,10 +3754,21 @@ aside.warning-box.bv-essay{
 /* 33. Recovering Histories */
 
 /* headings for outcomes section */
-.recovering h4{
+/* .recovering-histories h4{
 	font-weight: 400;
 	font-style: italic;
 	text-align: left;
+} */
+ /* vertical images */
+@media only screen and (min-width: 480px){
+	.recovering-histories .vertical {
+		display: block;
+	}
+	.recovering-histories	.vertical img {
+		margin: 0 auto;
+		width: 70%;
+		display: inline-block;
+	}
 }
 
 

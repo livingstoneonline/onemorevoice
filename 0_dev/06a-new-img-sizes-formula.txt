@@ -162,6 +162,26 @@ mogrify -format jpg -resize 690x -sampling-factor 4:2:0 -strip -quality 85 -inte
 find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/main-pages \;
 
 
+****Recovering Histories/Ivens Craft 70%****
+
+mogrify -format jpg -resize 200x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/200 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/200 && find . -exec rename 's|.jpg|-200px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 312x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/312 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/312 && find . -exec rename 's|.jpg|-312px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 400x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/400 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/400 && find . -exec rename 's|.jpg|-400px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 444x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/444 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/444 && find . -exec rename 's|.jpg|-444px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 490x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/490 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/490 && find . -exec rename 's|.jpg|-490px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 624x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/624 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/624 && find . -exec rename 's|.jpg|-624px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 888x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/888 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/888 && find . -exec rename 's|.jpg|-888px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+mogrify -format jpg -resize 980x -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/980 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/980 && find . -exec rename 's|.jpg|-980px.jpg|' {} + && cd ~/GitHub/onemorevoice/0_dev/0_image-generating &&
+
+find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/onemorevoice/img/recovering-histories \;
+
 **** Motion Pictures ****
 
 mogrify -format jpg -resize 500x500 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path ~/GitHub/onemorevoice/0_dev/0_image-generating/500 *.tif && cd ~/GitHub/onemorevoice/0_dev/0_image-generating/500 && find . -exec rename 's|.jpg|-500px.jpg|' {} + && cd - && 

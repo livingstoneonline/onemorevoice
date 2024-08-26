@@ -79,6 +79,29 @@ Light Gray: #808F85;
 		visibility: visible;
 	}
 }
+/* vertical images */
+@media only screen and (min-width: 480px){
+	.ivens-craft .vertical {
+		display: block;
+	}
+	.ivens-craft 	.vertical img {
+		margin: 0 auto;
+		width: 70%;
+		display: inline-block;
+	}
+}
+/* captions for vertical images */
+.ivens-craft .vertical + p.caption-text{
+	font-size: .9rem;
+	line-height: 1.6rem;
+	margin: 10px auto 1rem;
+
+}
+@media only screen and (min-width: 480px){
+	.ivens-craft .vertical + p.caption-text{
+	width: 70%;
+	}
+}
 /* text box coloring on hover/focus */
 .ivens-craft main a:hover,
 .ivens-craft main a:focus{
@@ -88,6 +111,11 @@ Light Gray: #808F85;
 .ivens-craft aside.text-box{
 	border-top: 5px solid #2424b2;
 	border-bottom: 5px solid #2424b2;
+}
+/* breakout quote author citation */
+.ivens-craft .right
+{
+	display: inherit;
 }
 /* scroll to top button coloring */
 .ivens-craft #topbutton{

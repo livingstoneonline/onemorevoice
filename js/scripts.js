@@ -9,7 +9,7 @@ if ("serviceWorker" in navigator) {
 };
 
 
-// Scroll to top button and side arrows on "William Ivens Craft and the Victorian Atlantic World"
+// Scroll to top button and side arrows on "William Ivens Craft and the Transatlantic Victorian World"
 // Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // Original coding improved by ChatGPT (https://chat.openai.com/chat) by making the scroll smooth instead of sudden.
 // Coding further improved by Perplexity (https://www.perplexity.ai) to integrate the side arrows into the function

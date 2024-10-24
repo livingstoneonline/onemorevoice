@@ -1846,9 +1846,14 @@ header{
 		padding: .5rem .5rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	.nav-container{
+		padding: .5rem .8rem;
+	}
+}
 @media only screen and (min-width: 1200px){
 	.nav-container{
-		padding: .6rem .5rem;
+		padding: .6rem 1rem;
 	}
 }
 /* applies to both breadcrumbs and logo/icons navs */
@@ -2426,6 +2431,11 @@ header nav.breadcrumbs ul{
 	header nav.breadcrumbs ul{
 		font-size: .83rem;
 		padding: .5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	header nav.breadcrumbs ul{
+		padding: .5rem .8rem;
 	}
 }
 /* breadcrumb items */

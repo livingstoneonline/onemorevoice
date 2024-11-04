@@ -1,6 +1,6 @@
 # dev-hm to dev
 
-git fetch-all && git checkout dev-hm && git pull  && git push && git checkout dev && git merge dev-hm  && git pull  && git push 
+git fetch --all && git checkout dev-hm && git pull  && git push && git checkout dev && git merge dev-hm  && git pull  && git push 
 
 # publish and return to dev-hm
 
@@ -10,7 +10,7 @@ git checkout stage && git merge dev  && git pull && git push  && git checkout ma
 
 # full set of commands
 
-git fetch-all
+git fetch --all
 git checkout dev-hm 
 git pull 
 git push

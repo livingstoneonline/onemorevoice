@@ -668,9 +668,14 @@ header{
 		padding: .5rem .5rem;
 	}
 }
+@media only screen and (min-width: 992px){
+	.nav-container{
+		padding: .5rem .8rem;
+	}
+}
 @media only screen and (min-width: 1200px){
 	.nav-container{
-		padding: .6rem .5rem;
+		padding: .6rem 1rem;
 	}
 }
 header nav{
@@ -974,6 +979,11 @@ header nav.breadcrumbs ul{
 	header nav.breadcrumbs ul{
 		font-size: .83rem;
 		padding: .5rem;
+	}
+}
+@media only screen and (min-width: 992px){
+	header nav.breadcrumbs ul{
+		padding: .5rem .8rem;
 	}
 }
 header nav.breadcrumbs ul li:not(:first-child):before{

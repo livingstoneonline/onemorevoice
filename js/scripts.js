@@ -41,11 +41,7 @@ function scrollFunction() {
 
 // When the user clicks on the button, smoothly scroll to the top of the document
 function topFunction() {
-  var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  if (currentScroll > 0) {
-    window.requestAnimationFrame(topFunction);
-    window.scrollTo(0, currentScroll - (currentScroll / 8));
-  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 

@@ -57,13 +57,14 @@ function openNav() {
 	document.getElementById("footer").style.cssText = "display: none; visibility: hidden;";
 };
 
+// Clears the inline styles added by openNav() so the stylesheet applies again (setting "inherit" here overrode main's flex layout)
 function closeNav() {
-	document.getElementById("body").style.cssText = "border: inherit;";
-	document.getElementById("header").style.cssText = "height: inherit;";
+	document.getElementById("body").style.cssText = "";
+	document.getElementById("header").style.cssText = "";
 	document.getElementById("main-nav").classList.remove("overlay-nav");
-	document.getElementById("overlay-menu").style.cssText = "display: none; visibility: hidden;";
-	document.getElementById("main").style.cssText = "display: inherit; visibility: inherit;";
-	document.getElementById("footer").style.cssText = "display: inherit; visibility: inherit;";
+	document.getElementById("overlay-menu").style.cssText = "";
+	document.getElementById("main").style.cssText = "";
+	document.getElementById("footer").style.cssText = "";
 };
 
 

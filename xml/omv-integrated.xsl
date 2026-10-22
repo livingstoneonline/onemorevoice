@@ -111,7 +111,7 @@
 					<div class="nav-container" data-include="header">
 						<nav class="fallback">
 							<span class="logo-container">
-								<a href="/index.html">
+								<a href="/">
 									<img width="38" height="38" src="/img/logo/OMV-logo-87px.jpg" srcset="/img/logo/OMV-logo-87px.jpg 87w, /img/logo/OMV-logo-78px.jpg 78w, /img/logo/OMV-logo-72px.jpg 72w, /img/logo/OMV-logo-58px.jpg 58w, /img/logo/OMV-logo-39px.jpg 39w, /img/logo/OMV-logo-36px.jpg 36w, /img/logo/OMV-logo-29px.jpg 29w" sizes="(min-width: 768px) 39px, (min-width: 480px) 36px, 29px" alt="One More Voice logo in white on a blue field."/>    
 									<h1>One More Voice</h1>
 								</a>
@@ -659,7 +659,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -689,7 +689,7 @@
 					<p><strong>Date(s):</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/date" separator="; "/></p>
 					<p><strong>Form &amp; transmission history:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/msDesc/history/p"/></p>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Critical editing &amp; encoding</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -723,7 +723,7 @@
 					<xsl:copy-of select="$repository"/>
 					<xsl:copy-of select="$collection"/>
 					<xsl:copy-of select="$shelfmark"/>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>
@@ -759,7 +759,7 @@
 						<p><strong>Place(s) of creation:</strong><xsl:text> </xsl:text><xsl:value-of select="//teiHeader//sourceDesc/bibl[@type='sourceMetadata']/placeName[@type='compositionPlace']" separator="; "/></p>
 					</xsl:if>
 					<p><strong>Original publication details:</strong><xsl:text> </xsl:text><xsl:copy-of select="$pub-deets"/></p>
-					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/index.html"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
+					<p><strong>Digital edition &amp; date:</strong><xsl:text> </xsl:text><a href="/"><em><xsl:value-of select="//teiHeader//authority"/></em></a>, <xsl:value-of select="//teiHeader//publicationStmt/date"/></p>
 					<p><strong>Digital object curation</strong><xsl:text>: </xsl:text> <xsl:value-of select="$encoding"/></p>
 					<p><strong>Cite this digital edition (MLA)</strong><xsl:text>: </xsl:text>
 					<xsl:value-of select="//teiHeader//titleStmt/author[@role='first']"/>

@@ -2089,6 +2089,7 @@ nav .logo-container a:focus h1{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	color: #212119;
+	max-width: 160px; /* keeps the dropdown arrow inside the fixed-width .translate box */
 	border: 2px solid transparent;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;

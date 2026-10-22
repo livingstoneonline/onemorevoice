@@ -5,7 +5,7 @@
 # Included: index.html (as "/"), every html/**/*.html that has a self-referencing
 #           <link rel="canonical">, and every pdf/**/*.pdf.
 # Excluded: redirect stubs (pages with http-equiv="refresh"), 404.html, pages without a
-#           canonical (unpublished drafts/templates), and .docx/.xlsx files.
+#           canonical (unpublished drafts/templates), pages in UNLISTED, and .docx/.xlsx files.
 # lastmod:  date of the newest commit that touched the file, ignoring bulk commits (those
 #           touching BULK_N or more files under html/), so mechanical site-wide edits do not
 #           make every page look freshly changed. No such commit -> lastmod is left out.
@@ -15,7 +15,11 @@ import collections, datetime, os, re, subprocess, sys
 
 BASE = "https://onemorevoice.org/"
 BULK_N = 100
-root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Pages that exist but are deliberately not listed anywhere (commented out of the listing pages
+# and html/sitemap.html), so they are kept out of sitemap.xml too.
+UNLISTED = {"html/transcriptions/liv_" + n + "_ART.html" for n in
+            ("021002", "021007", "021033", "021066", "021068", "021075", "021090")}
+root =os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(root)
 dry = "--dry-run" in sys.argv
 
@@ -45,6 +49,9 @@ for d, _, fs in os.walk("html"):
 for p in sorted(candidates):
     text = open(p, encoding="utf-8", errors="replace").read()
     url = BASE if p == "index.html" else BASE + p
+    if p in UNLISTED:
+        skipped["intentionally unlisted"].append(p)
+        continue
     if 'http-equiv="refresh"' in text:
         skipped["redirect stub"].append(p)
         continue
